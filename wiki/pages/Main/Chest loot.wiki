@@ -1,0 +1,242 @@
+'''Chest loot''' is the set of items generated in containers of structures. [[Matcha Flavoured]] overrides every vanilla chest loot table and adds new ones for its own structures, so that chests contain the pack's items: [[Obol]]s instead of {{MCW|Emerald|emeralds}}, [[Raw Diamond|raw diamonds]] instead of cut diamonds, [[Crystal Heart]]s, [[Sacred texts]], [[Estus Ash]] and pack foods and equipment.
+
+This page lists every chest loot table in the pack. The tables are generated from the pack's code; "chance per table" is the chance that the item appears at least once in one container. Each structure article shows the tables that belong to it.
+
+== General changes ==
+Across the pack's tables:<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json}}</ref>
+* In many tables, cut [[diamond]]s are replaced by [[Raw Diamond]]s, which must be smelted in a [[Blast Furnace]]. Some tables still contain cut diamonds: bastion treasure, desert pyramid, end city, nether fortress, stronghold corridor, several Trial Chambers tables and the village toolsmith. The {{Version|1.12.2}} release notes say that no "naturally-occuring free diamonds" should appear in surface structures, but the desert pyramid table still has them.
+* Gold and iron ingots are mostly replaced by raw gold and raw iron.
+* Vanilla armor, tools and weapons are replaced by calls to shared equipment tables (see [[#Equipment tables]]) or to the pack's own equipment tables, which give the pack's versions of the items.
+* Vanilla foods such as bread, apples and golden apples are replaced by the pack's versions, so they stack with player-made food.
+* [[Crystal Heart]]s, [[Divine Fragment]]s and [[Sacred texts]] such as [[The Book of Enoch]], [[The Avesta]], [[The Quran]], [[The Tanakh]], [[The Divine Comedy]] and [[Paradise Lost]] appear in structure chests.
+* Most tables have a <code>quality</code> value on their entries, so the {{MCW|Luck}} attribute affects the results.<ref>{{Cite changelog|1.12.1-alpha|quote=Luck works, I've added the quality field to all chest loottables and even some other things.}}</ref>
+* Rotten flesh, redstone and experience bottles are removed from most tables.
+
+== Abbey ==
+{{Main|Abbey}}
+=== Tower ===
+{{Data/Loot/minecraft/chests/abbey/tower}}
+=== Barracks ===
+{{Data/Loot/minecraft/chests/abbey/barracks}}
+=== Decorated pots ===
+{{Data/Loot/minecraft/pots/abbey/common}}
+
+== Papal Outpost ==
+{{Main|Papal Outpost}}
+=== Watchtower chest ===
+{{Data/Loot/minecraft/chests/pillager_outpost}}
+
+== Ancient City ==
+{{Main|Ancient City}}
+=== Chests ===
+{{Data/Loot/minecraft/chests/ancient_city}}
+=== Ice box ===
+{{Data/Loot/minecraft/chests/ancient_city_ice_box}}
+
+== Bastion Remnant ==
+{{Main|Bastion Remnant}}
+=== Bridge ===
+{{Data/Loot/minecraft/chests/bastion_bridge}}
+=== Hoglin stable ===
+{{Data/Loot/minecraft/chests/bastion_hoglin_stable}}
+=== Generic ===
+{{Data/Loot/minecraft/chests/bastion_other}}
+=== Treasure ===
+{{Data/Loot/minecraft/chests/bastion_treasure}}
+
+== Bonus chest ==
+The bonus chest can be enabled when creating a world.
+=== Bonus chest ===
+{{Data/Loot/minecraft/chests/spawn_bonus_chest}}
+
+== Buried treasure ==
+{{Main|Buried treasure}}
+=== Chest ===
+{{Data/Loot/minecraft/chests/buried_treasure}}
+
+== Desert Pyramid ==
+{{Main|Desert Pyramid}}
+=== Chests ===
+{{Data/Loot/minecraft/chests/desert_pyramid}}
+
+== Dungeon ==
+{{Main|Dungeon}}
+=== Chests ===
+{{Data/Loot/minecraft/chests/simple_dungeon}}
+
+== End City ==
+{{Main|End City}}
+=== Chests ===
+{{Data/Loot/minecraft/chests/end_city_treasure}}
+
+== Igloo ==
+{{Main|Igloo}}
+=== Chest ===
+{{Data/Loot/minecraft/chests/igloo_chest}}
+
+== Jungle Pyramid ==
+{{Main|Jungle Pyramid}}
+=== Chest ===
+{{Data/Loot/minecraft/chests/jungle_temple}}
+=== Dispenser ===
+{{Data/Loot/minecraft/chests/jungle_temple_dispenser}}
+
+== Mineshaft ==
+{{Main|Mineshaft}}
+=== Minecart with chest ===
+{{Data/Loot/minecraft/chests/abandoned_mineshaft}}
+
+== Nether Fortress ==
+{{Main|Nether Fortress}}
+=== Chests ===
+{{Data/Loot/minecraft/chests/nether_bridge}}
+
+== Ocean ruins ==
+{{Main|Ocean ruins}}
+=== Big ruins ===
+{{Data/Loot/minecraft/chests/underwater_ruin_big}}
+=== Small ruins ===
+{{Data/Loot/minecraft/chests/underwater_ruin_small}}
+
+== Ruined Portal ==
+{{Main|Ruined Portal}}
+=== Chest ===
+{{Data/Loot/minecraft/chests/ruined_portal}}
+
+== Shipwreck ==
+{{Main|Shipwreck}}
+=== Map chest ===
+{{Data/Loot/minecraft/chests/shipwreck_map}}
+=== Supply chest ===
+{{Data/Loot/minecraft/chests/shipwreck_supply}}
+=== Treasure chest ===
+{{Data/Loot/minecraft/chests/shipwreck_treasure}}
+
+== Stronghold ==
+{{Main|Stronghold}}
+=== Altar chest (corridor) ===
+{{Data/Loot/minecraft/chests/stronghold_corridor}}
+=== Storeroom (crossing) ===
+{{Data/Loot/minecraft/chests/stronghold_crossing}}
+=== Library ===
+{{Data/Loot/minecraft/chests/stronghold_library}}
+
+== Trial Chambers ==
+{{Main|Trial Chambers}}
+=== Corridor ===
+{{Data/Loot/minecraft/chests/trial_chambers/corridor}}
+=== Entrance ===
+{{Data/Loot/minecraft/chests/trial_chambers/entrance}}
+=== Intersection ===
+{{Data/Loot/minecraft/chests/trial_chambers/intersection}}
+=== Intersection barrel ===
+{{Data/Loot/minecraft/chests/trial_chambers/intersection_barrel}}
+=== Supply ===
+{{Data/Loot/minecraft/chests/trial_chambers/supply}}
+=== Vault: common ===
+{{Data/Loot/minecraft/chests/trial_chambers/reward_common}}
+=== Vault: rare ===
+{{Data/Loot/minecraft/chests/trial_chambers/reward_rare}}
+=== Vault: unique ===
+{{Data/Loot/minecraft/chests/trial_chambers/reward_unique}}
+=== Ominous vault: common ===
+{{Data/Loot/minecraft/chests/trial_chambers/reward_ominous_common}}
+=== Ominous vault: rare ===
+{{Data/Loot/minecraft/chests/trial_chambers/reward_ominous_rare}}
+=== Ominous vault: unique ===
+{{Data/Loot/minecraft/chests/trial_chambers/reward_ominous_unique}}
+=== Decorated pots ===
+{{Data/Loot/minecraft/pots/trial_chambers/corridor}}
+
+== Village ==
+{{Main|Abandoned village}}
+The pack's [[abandoned village]]s have no loot-table chests, so these tables are not normally used.
+=== Armorer ===
+{{Data/Loot/minecraft/chests/village/village_armorer}}
+=== Butcher ===
+{{Data/Loot/minecraft/chests/village/village_butcher}}
+=== Cartographer ===
+{{Data/Loot/minecraft/chests/village/village_cartographer}}
+=== Desert house ===
+{{Data/Loot/minecraft/chests/village/village_desert_house}}
+=== Fisher ===
+{{Data/Loot/minecraft/chests/village/village_fisher}}
+=== Mason ===
+{{Data/Loot/minecraft/chests/village/village_mason}}
+=== Plains house ===
+{{Data/Loot/minecraft/chests/village/village_plains_house}}
+=== Savanna house ===
+{{Data/Loot/minecraft/chests/village/village_savanna_house}}
+=== Snowy house ===
+{{Data/Loot/minecraft/chests/village/village_snowy_house}}
+=== Taiga house ===
+{{Data/Loot/minecraft/chests/village/village_taiga_house}}
+=== Tannery ===
+{{Data/Loot/minecraft/chests/village/village_tannery}}
+=== Temple ===
+{{Data/Loot/minecraft/chests/village/village_temple}}
+=== Toolsmith ===
+{{Data/Loot/minecraft/chests/village/village_toolsmith}}
+=== Weaponsmith ===
+{{Data/Loot/minecraft/chests/village/village_weaponsmith}}
+
+== Woodland Mansion ==
+{{Main|Woodland Mansion}}
+=== Chests ===
+{{Data/Loot/minecraft/chests/woodland_mansion}}
+
+== Equipment tables ==
+Shared tables that other chest tables call to pick a random piece of equipment.
+=== Chainmail ===
+{{Data/Loot/minecraft/chests/equipment/chainmail}}
+=== Sturdy leather ===
+{{Data/Loot/minecraft/chests/equipment/sturdy_leather}}
+=== Iron ===
+{{Data/Loot/minecraft/chests/equipment/iron}}
+=== Iron tools ===
+{{Data/Loot/minecraft/chests/equipment/iron_tools}}
+=== Iron tools damaged ===
+{{Data/Loot/minecraft/chests/equipment/iron_tools_damaged}}
+=== Gold ===
+{{Data/Loot/minecraft/chests/equipment/gold}}
+=== Diamond ===
+{{Data/Loot/minecraft/chests/equipment/diamond}}
+=== Diamond tools ===
+{{Data/Loot/minecraft/chests/equipment/diamond_tools}}
+=== Diamond tools damaged ===
+{{Data/Loot/minecraft/chests/equipment/diamond_tools_damaged}}
+=== Special compass ===
+{{Data/Loot/minecraft/chests/equipment/special_compass}}
+
+== History ==
+{{History
+|{{History line|0.3-alpha|date=June 10, 2026|[[Crystal Heart]]s can be found in various loot chests.}}
+{{History line|0.4-alpha|date=June 17, 2026|All chest loot tables given compatible equipment and buffed.}}
+{{History line|0.5-alpha|date=June 29, 2026|All chest loot tables made translation-compatible.}}
+{{History line|1.0|date=July 24, 2026|Bread found in chests is the same as player-made bread.
+* Sweet Berry Jam removed from bastion chests.}}
+{{History line|1.03|date=July 27, 2026|Divine Fragments added to Trial Chambers; mace drop odds increased.}}
+{{History line|1.10|date=August 10, 2026|Added Abbey loot tables.
+* Nerfed bastion treasure, buried treasure and Trial Chamber loot.
+* Crystal Hearts added to mineshafts; The Avesta added to desert wells, and its chance in desert pyramids lowered from 50% to 33%.
+* Sweet Berry Mash removed from stronghold corridor chests.}}
+{{History line|1.12|date=August 12, 2026|Buffed buried treasure.}}
+{{History line|1.12.1-alpha|date=September 1, 2026|Added the quality field to all chest loot tables.
+* Nautilus shells added to buried treasure; the Abbey tower chest always has The Quran or The Tanakh.
+* Bonus chest added.}}
+{{History line|1.12.2|date=September 19, 2026|Many loot tables buffed; cut diamonds replaced by raw diamonds.
+* Silver added to ancient city chests and ominous vaults.
+* Ruined portal loot nerfed so gold cannot be obtained before iron.
+* The Quran and The Tanakh added to Trial Chamber loot.
+* Trash removed from trial spawners and vaults.}}
+}}
+
+== See also ==
+* [[Archaeology]]
+* [[Structures]]
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Loot]]

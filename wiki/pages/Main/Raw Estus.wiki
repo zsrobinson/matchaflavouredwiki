@@ -1,0 +1,53 @@
+{{Vanilla|Blaze Powder}}
+{{Infobox auto}}
+'''Raw Estus''' is an item dropped by undead [[mobs]]. It replaces {{MCW|Blaze Powder|blaze powder}}. Raw Estus cannot be kept: as soon as it enters a player's inventory it heals them and turns into [[Estus Ash]], the pack's main magic ingredient. It is the first form of [[estus]].
+
+== Obtaining ==
+=== Mob loot ===
+{{Sources}}
+The "Chance" column counts the loot pool being chosen. The chosen drop is then 0 or 1 Raw Estus with equal odds, so the real chance of a drop without Looting is half the listed value: 25% for zombies and drowned, about 31% for husks and about 45% for zombie villagers.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/zombie.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/husk.json}}</ref> Each level of Looting adds 0–1 Raw Estus when the pool is chosen. Only kills by a player count, and zombies and husks with the <code>NoDrops</code> tag drop nothing.
+
+=== Crafting ===
+The vanilla recipe that crafts blaze powder from a blaze rod is removed, so [[Stabilized Estus]] cannot be broken back down.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Blazes do not drop Raw Estus in the pack.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/blaze.json}}</ref>
+
+== Behavior ==
+Whenever a player's inventory changes, the pack checks whether it holds Raw Estus. If it does, and the player is not in Creative mode, one Raw Estus is removed and replaced with one Estus Ash, and the player gets:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/estus_effects.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/estus_obtained.json}}</ref>
+
+{| class="wikitable"
+! [[Difficulty]] !! Effects
+|-
+| Peaceful, Easy || {{EffectLink|Regeneration}} V for 4 seconds and {{EffectLink|Resistance}} I for 10 seconds
+|-
+| Normal, Hard || {{EffectLink|Regeneration}} V for 2 seconds and {{EffectLink|Resistance}} I for 5 seconds
+|}
+
+Orange dust particles appear around the player. Replacing the item changes the inventory again, so a stack of Raw Estus is converted one at a time until none is left; the effects are reapplied each time rather than stacking. The effects have no particles.
+
+As a dropped item, Raw Estus gives off smoke particles.<ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/item_particles.mcfunction}}</ref>
+
+Creative mode is excluded because the game refills items there, which would repeat the conversion forever.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/check_if_estus_should_be_processed.mcfunction}}</ref>
+
+Raw Estus does not work as fuel in a [[Chemistry Stand]]: the pack empties the <code>#minecraft:brewing_fuel</code> tag.<ref>{{Source|MF_datapack/data/minecraft/tags/item/brewing_fuel.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.5-alpha|No longer processed in Creative mode, as a workaround for a world-corrupting bug. Processing optimized.}}
+{{History line|1.10|Blazes no longer drop Raw Estus.<ref>{{Cite changelog|1.10|quote=Blaze no longer drop Raw Estus (They aren't undead, so it doesn't make sense for them to)}}</ref> Zombie drop rate lowered from about 50% to about 33%, according to the release notes. Fire and smoke particles added. New texture.}}
+{{History line|1.12.1-alpha|Can no longer be used as brewing fuel.}}
+{{History line|1.12.2|{{Upcoming}} After the 1.12.2 release, the repository fixed estus processing in multiplayer: the effects and the Estus Ash now go to the player who picked up the Raw Estus, where the released functions targeted the nearest player.}}
+}}
+
+== Notes ==
+* The {{Version|1.10}} release notes give the zombie drop rate as about 33%. The loot table gives 25% (a 50% chance to choose the pool, then 0–1 items).
+
+== See also ==
+* [[Estus]]
+* [[Estus Ash]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Items]]
+[[Category:Renamed items]]

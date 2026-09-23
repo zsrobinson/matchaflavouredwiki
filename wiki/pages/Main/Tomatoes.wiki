@@ -1,0 +1,42 @@
+{{Vanilla|Beetroot}}
+
+{{Infobox auto}}
+
+'''Tomatoes''' are a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Strength}}. They replace {{MCW|Beetroot|beetroots}}. Eaten raw, they heal {{Hp|2}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/tomato.json}}</ref>
+
+== Obtaining ==
+
+=== Farming ===
+Tomatoes grow from [[tomato seeds]] like beetroots. A fully grown crop drops 1 to 3 tomatoes and no seeds; an unripe one drops 1 seed.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref> Seeds are made by crafting a tomato into 3 seeds.
+
+{{Sources}}
+
+== Usage ==
+
+=== Food ===
+Eating tomatoes heals {{Hp|2}}.
+
+Picking up tomatoes unlocks [[grilled tomatoes]], [[sun-dried tomatoes]], [[bruschetta]] and [[Kontomire-Dandelion Stew]]. Tomatoes are also used in the three [[Pizza|pizzas]], [[paneer curry stock]] and 2 tomatoes make 2 red dye. The vanilla beetroot-to-red-dye recipe is removed.
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|0.6-alpha|Tomato soup renamed to grilled tomatoes, and pickled tomatoes to sun-dried tomatoes.}}
+{{History line|1.10|Tomato recipes unlock from raw tomatoes.}}
+{{History line|1.12.2|Fortune works on tomatoes.}}
+}}
+
+== Trivia ==
+* The loot table applies Fortune and the Electrum tool intrinsic and then sets the count to 1 to 3, which overrides both bonuses, so neither actually increases the harvest.
+
+== See also ==
+* [[Tomato Seeds]]
+* [[Intrinsic]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

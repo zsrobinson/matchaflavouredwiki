@@ -1,0 +1,286 @@
+{{About|the advancements in Matcha Flavoured|the fish catalogue|Angler's Almanac}}
+'''Advancements''' in [[Matcha Flavoured]] replace the whole vanilla advancement tree. They guide the player through the pack's [[progression]], reward [[obol]]s and [[Crystal Heart|crystal hearts]], and, for seven milestones, lower the player's minimum [[health]]. The pack also uses several hundred hidden advancements internally, to trigger mechanics and unlock recipes.
+
+When the pack loads, it tells players: "If you get lost or confused, check the advancements".<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> The README gives the same advice to players stuck in the early game.<ref>{{Source|README.md}}</ref>
+
+== Overview ==
+The datapack blocks the five vanilla advancement folders (<code>story</code>, <code>nether</code>, <code>end</code>, <code>adventure</code> and <code>husbandry</code>) through the filter in its <code>pack.mcmeta</code>, so none of the vanilla advancements exist.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> The pack's own advancements are in the <code>matcha</code> namespace, in four visible tabs:
+
+{| class="wikitable"
+! Tab !! Root !! Background !! Unlocked by !! Advancements
+|-
+| [[#Tutorial|Tutorial]] || {{Slot|Grass Block|link=none}} From Earth || Dirt || Joining the world || 61 (3 hidden)
+|-
+| [[#Hell|Hell]] || {{Slot|Hellstone|link=none}} Through Hell || Hellstone || Entering [[Hell]] || 8
+|-
+| [[#The End|The End]] || {{Slot|End Portal Frame|link=none}} To Dreams || Black concrete || Entering [[the End]] || 5
+|-
+| [[#Angler's Almanac|Angler's Almanac]] || {{Slot|Angler's Almanac|link=none}} Angler's Almanac || Barrel || Obtaining the [[Angler's Almanac]] || 104 (all hidden until earned)
+|}
+
+=== Rewards ===
+Many advancements give a reward, and their descriptions show it as a symbol before the text:
+* {{G|E00F}} Each coin symbol is one [[obol]], given as an item. Larger rewards are written as a number, such as "10 {{G|E00F}}".<ref>{{Source|MF_datapack/data/matcha/loot_table/advancement/obol_1.json}}</ref>
+* ❤ Each heart symbol is one [[Crystal Heart|crystal heart]], given as an item. Only the four "Canto" advancements give hearts.<ref>{{Source|MF_datapack/data/matcha/loot_table/advancement/crystal_heart_1.json}}</ref>
+* {{G|E010}} The broken heart symbol marks a milestone that lowers the player's '''minimum hearts''' by 1. Each player's minimum starts at 10 hearts and is the lowest their maximum health can fall through [[death]]. Seven milestones carry this symbol, so completing all of them lowers the minimum to 3 hearts, the floor for Hard. On Easy the minimum is always 10 hearts. On Normal, a player whose minimum falls below 6 hearts, which happens at the fifth milestone, switches the world to Hard. Each step prints an ominous message in chat, such as "The Dead grow restless...".<ref>{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/decrease_minimum_hearts.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+
+The broken-heart milestones are Brazier (copper), The Stalwart Metal (iron), The Resilient Mineral (diamond), A Zealous Alloy (electrum), A Divine Alloy (adamant), Orpheus (entering Hell) and The End of Dreams (finding a stronghold). The system rewards slow progress: a player who rushes for iron and diamonds makes their deaths more costly sooner. See [[Death]] and [[Difficulty]].
+
+=== Revocation on update ===
+When a player joins a world after it has been updated to a newer version of the pack, their recipe unlocks are reset, along with most advancements that give rewards or affect the heart system, so that they can be earned again under the new rules. "No More Fish in the Sea" and "Demonic Emissary" are deliberately kept, and the player's minimum hearts reset to 10.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref> See [[Updating items]].
+
+== Tutorial ==
+{{See also|Progression|Guide for new players}}
+The Tutorial tab, rooted in "From Earth", traces the pack's progression in several branches: the fire, kiln and metal line that ends with alloys and smithing; a cooking line; a warding and jewelry line; the four "Canto" gem hunts; and a trading and fishing line. "From Earth" is granted on the first tick a player is in the world and runs the pack's first-load setup.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/root.json}}</ref> The requirements below are the actual criteria in the code, which are sometimes broader than the in-game description.
+
+{| class="wikitable sortable"
+! Icon !! Advancement !! In-game description !! Parent !! Actual requirements !! Type !! Reward
+|-
+| {{Slot|Grass Block|link=none}} || '''From Earth''' || — || — || Be in the world. || Task (root) || —
+|-
+! colspan="7" | Fire, kilns and metals
+|-
+| {{Slot|Kindling|link=none}} || '''Prometheus be Damned''' || Light Kindling using Tinder or a Flint Firestarter || From Earth || Use a [[Fire Starter|fire starter]] or [[tinder]] on a [[Kindling|kindling]] (campfire). || Task || —
+|-
+| {{Slot|Tall Dry Grass|link=none}} || '''Harvester''' || Use a Hoe to harvest Grass and dry it on a Campfire || Prometheus be Damned || Have short dry grass or tall dry grass in the inventory. || Task || —
+|-
+| {{Slot|Mud Kiln|link=none}} || '''Ancient Technology''' || Construct a Kiln made from Packed Mud and Mudbricks || Harvester || Have a [[Mud Kiln|mud kiln]] in the inventory. || Task || —
+|-
+| {{Slot|Copper Ingot|link=none}} || '''Brazier''' || {{G|E010}} Use a Mud Kiln to Smelt Copper || Ancient Technology || Have a [[Copper Ingot|copper ingot]] in the inventory, from any source. || Task || Minimum hearts −1
+|-
+| {{Slot|Copper Dolabra|link=none}} || '''Two in One''' || {{G|E00F}} Mattocks and Dolabras work as two tools in one but mine slower than their base tools || Brazier || Craft a copper, iron or diamond [[mattock]] or [[dolabra]]. || Goal || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Brush|link=none}} || '''Archeologist in Training''' || Craft a Brush || Brazier || Craft a brush. || Task || —
+|-
+| {{Slot|Clay Fetish|link=none}} || '''A Miraculous Discovery!''' || {{G|E00F}}{{G|E00F}}{{G|E00F}} Find a Clay Fetish by searching abandoned Sites || Archeologist in Training || Have either [[Clay Fetish|clay fetish]] in the inventory. || Goal || 3 {{ItemLink|Obol}}
+|-
+| {{Slot|Smooth Stone|link=none}} || '''Mason''' || Kilns excel at processing Earthen Materials || Brazier || Have smooth stone in the inventory. || Task || —
+|-
+| {{Slot|Blast Furnace|link=none}} || '''Burgeoning Metallurge''' || Blast Furnaces burn hotter than Kilns, able to melt more durable Metals || Mason || Have a [[blast furnace]] in the inventory. || Task || —
+|-
+| {{Slot|Iron Ingot|link=none}} || '''The Stalwart Metal''' || {{G|E010}} Iron has no Intrinsic Properties and can only Host Steel || Burgeoning Metallurge || Have an [[Iron Ingot|iron ingot]] in the inventory. || Task || Minimum hearts −1
+|-
+| {{Slot|Carbon-Rich Iron|link=none}} || '''A Brittle Alloy?''' || Craft Carbon-Rich Iron with Iron and a Coal Block || The Stalwart Metal || Have [[Carbon-Rich Iron|carbon-rich iron]] in the inventory. || Task || —
+|-
+| {{Slot|Steel Alloy|link=none}} || '''A Tough Alloy''' || Made by blasting Carbon-Rich Iron, Steel grants Iron Equipment Knockback and greatly increased Durability || A Brittle Alloy? || Have [[Steel Alloy|steel alloy]] in the inventory. || Task || —
+|-
+| {{Slot|Anvil|link=none}} || '''Repair & Reuse''' || Anvils made from Steel can repair Any Equipment with its corresponding Base-Metal Ingot forever || A Tough Alloy || Have an [[anvil]] in the inventory. || Task || —
+|-
+| {{Slot|Smithing Table|link=none}} || '''Master Metallurge''' || Smithing Tables allow you to modify Base-Metal tools using Alloys || A Tough Alloy || Have a [[Smithing Table|smithing table]] in the inventory. || Task || —
+|-
+| {{Slot|Steel Pickaxe|link=none}} || '''Sturdy Steel''' || {{G|E00F}} Smith a piece of Steel Equipment from Iron with Steel Alloy || Master Metallurge || Smith any of 13 [[Steel equipment|steel]] items (tools, weapons, armor or shears). || Goal || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Hepatizon Pickaxe|link=none}} || '''Brilliant Bronze''' || {{G|E00F}} Smith a piece of Hepatizon Equipment from Copper with Hepatizon Alloy || Master Metallurge || Smith any of 12 [[Hepatizon equipment|hepatizon]] items. || Goal || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Shakudo Pickaxe|link=none}} || '''Palatinate Perfection''' || {{G|E00F}} Smith a piece of Shakudo Equipment from Copper with Shakudo Alloy || Master Metallurge || Smith any of 12 [[Shakudo equipment|shakudo]] items. || Goal || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Electrum Pickaxe|link=none}} || '''Evangelic Electrum''' || {{G|E00F}}{{G|E00F}}{{G|E00F}}{{G|E00F}} Smith a piece of Electrum Equipment from Diamond with Electrum Alloy || Master Metallurge || Smith any of 12 [[Electrum equipment|electrum]] items. || Challenge || 4 {{ItemLink|Obol}}
+|-
+| {{Slot|Adamant Pickaxe|link=none}} || '''Apocryphal Adamant''' || {{G|E00F}}{{G|E00F}}{{G|E00F}}{{G|E00F}} Smith a piece of Adamant Equipment from Diamond with Adamant Alloy || Master Metallurge || Smith any of 13 [[Adamant equipment|adamant]] items, including the claymore. || Challenge || 4 {{ItemLink|Obol}}
+|-
+| {{Slot|Smithing Template|link=none}} || '''Upgrades''' || Smithing Upgrades are used to Modify and Upgrade Mattocks and Dolabras || Master Metallurge || Have a [[Smithing Upgrade Template|smithing template]] in the inventory. || Task || —
+|-
+| {{Slot|Steel Dolabra|link=none}} || '''Three in One?''' || {{G|E00F}}{{G|E00F}} Upgrade a Mattock or Dolabra || Upgrades || Smith a steel, shakudo or electrum mattock or dolabra.{{#tag:ref|The criteria for hepatizon use the recipe IDs <code>matcha:smithing/bronze_dolabra</code> and <code>bronze_mattock</code>, which do not exist; the recipes are named <code>hepatizon_dolabra</code> and <code>hepatizon_mattock</code>. Smithing a hepatizon mattock or dolabra therefore does not grant this advancement ({{Source|MF_datapack/data/matcha/advancement/tutorial/upgrade_mattock.json}}).|group=note}} || Goal || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Gold Ingot|link=none}} || '''The Generous Metal''' || Gold has Fortune and Looting Intrinsics || Burgeoning Metallurge || Have a gold ingot in the inventory. || Task || —
+|-
+| {{Slot|Shakudo Alloy|link=none}} || '''A Gentle Alloy''' || Shakudo grants Copper Equipment Silk Touch and Cleansing Properties || The Generous Metal || Have [[Shakudo Alloy|shakudo alloy]] in the inventory. || Task || —
+|-
+| {{Slot|Adamant Alloy|link=none}} || '''A Divine Alloy''' || {{G|E010}} Adamant grants the wielder a Divine Constitution || The Generous Metal || Have [[Adamant Alloy|adamant alloy]] in the inventory. || Goal || Minimum hearts −1
+|-
+| {{Slot|Silver Bullion|link=none}} || '''The Warding Metal''' || {{G|E00F}} Silver, a once-common Apotropaic Metal is found most commonly in Mountains. Most deposits are now harboured in Abbeys || Burgeoning Metallurge || Have [[Raw Silver|raw silver]] or [[Silver Bullion|silver bullion]] in the inventory. || Goal || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Hepatizon Alloy|link=none}} || '''A Keen Alloy''' || Hepatizon grants Copper Equipment unrivaled Speed || The Warding Metal || Have [[Hepatizon Alloy|hepatizon alloy]] in the inventory. || Task || —
+|-
+| {{Slot|Electrum Alloy|link=none}} || '''A Zealous Alloy''' || {{G|E010}} Electrum enhances the Fortune and Looting Properties of Gold but only Diamond can host the Alloy || The Warding Metal || Have [[Electrum Alloy|electrum alloy]] in the inventory. || Goal || Minimum hearts −1
+|-
+| {{Slot|Diamond|link=none}} || '''The Resilient Mineral''' || {{G|E010}} Diamonds have no Intrinsics but are capable of Hosting Electrum and Adamant || Burgeoning Metallurge || Have a [[diamond]] in the inventory. || Task || Minimum hearts −1
+|-
+| {{Slot|Stabilized Estus|link=none}} || '''Orpheus''' || {{G|E010}} Descend into Hell || The Resilient Mineral || Enter [[Hell]]. || Goal || Minimum hearts −1
+|-
+| {{Slot|Eye of Ender|link=none}} || '''The End of Dreams''' || {{G|E010}} Their Time is Near || Orpheus || Enter a [[stronghold]]. || Goal || Minimum hearts −1
+|-
+! colspan="7" | Cooking
+|-
+| {{Slot|Grilled Melon|link=none}} || '''Powerful Flavors''' || Reveal the hidden aspect of a Food by cooking it on a Campfire or an Oven || Prometheus be Damned || Have any of 11 cooked [[ingredient]]s in the inventory, such as grilled melon, steamed carrots or baked apple. || Task || —
+|-
+| {{Slot|Golden Steamed Carrots|link=none}} || '''Hidden Flavors''' || {{G|E00F}} Cook a secret Ingredient || Powerful Flavors || Have golden steamed carrots, a baked golden apple, braised crimson fungus or braised warped fungus in the inventory. See [[Secret recipes]]. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Golden Carrot Cupcake|link=none}} || '''Wait, you can make that?''' || {{G|E00F}}{{G|E00F}} Cook a secret Meal || Hidden Flavors || Craft any of 11 secret meals. || Goal || 2 {{ItemLink|Obol}}
+|-
+| {{Slot|Oven|link=none}} || '''Now You're Cooking''' || Construct an Oven from Bricks and Iron || Powerful Flavors || Have an [[oven]] in the inventory. || Task || —
+|-
+| {{Slot|Sweet Berry Jam|link=none}} || '''Pickles & Jam''' || Preserve a food to boost its flavour profile || Now You're Cooking || Craft any of 15 preserves. || Task || —
+|-
+| {{Slot|Pickled Carrots|link=none}} || '''Doomsday Prepper''' || {{G|E00F}}{{G|E00F}}{{G|E00F}}{{G|E00F}} Preserve Everything! || Pickles & Jam || Craft all 15 preserves: canned apples, canned golden apples, glow jam, golden pickled carrots, mead, pickled carrots, pickled potatoes, sun-dried tomatoes, pumpkin jam, rind jam, sweet berry jam, pickled mushrooms, pickled toadstools, pickled warped fungus and pickled crimson fungus. || Challenge || 4 {{ItemLink|Obol}}
+|-
+| {{Slot|Bowl|link=none}} || '''Manners First''' || Make a Ceramic Bowl from Bricks || Now You're Cooking || Have a bowl in the inventory. || Task || —
+|-
+| {{Slot|Green Curry|link=none}} || '''Too Spicy!''' || {{G|E00F}} Make Green Curry || Manners First || Cook [[Green Curry|green curry]] in an oven. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Japanese Curry|link=none}} || '''Hearty Curry''' || {{G|E00F}} Make Japanese Curry || Manners First || Cook [[Japanese Curry|Japanese curry]] in an oven. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Paneer Makhani|link=none}} || '''Sweet and Spicy!''' || {{G|E00F}} Make Paneer Makhani. All Foods have viable Vegetarian Options || Manners First || Cook [[Paneer Makhani|paneer makhani]] in an oven. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Pumpkin Curry|link=none}} || '''Fortified Goodness''' || {{G|E00F}} Make Pumpkin Curry || Manners First || Cook [[Pumpkin Curry|pumpkin curry]] in an oven. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Tonkotsu Ramen|link=none}} || '''The Best Soup!''' || {{G|E00F}} Make Ramen || Manners First || Cook [[Tonkotsu Ramen|tonkotsu ramen]] in an oven. || Task || 1 {{ItemLink|Obol}}
+|-
+! colspan="7" | Warding and treasure
+|-
+| {{Slot|Estus Ash|link=none}} || '''Hellish Powder''' || It Radiates Holy Power. It kind of smells like Curry... maybe Cinnamon? || From Earth || Have [[Estus Ash|Estus ash]] in the inventory. ''Hidden.'' || Task || —
+|-
+| {{Slot|Nazar|link=none}} || '''Apotropaic Jewellery''' || {{G|E00F}} Holding a Lapis Nazar will Ward the Dead. It can also be attached to some Equipment || Hellish Powder || Craft a [[nazar]]. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Warding Sword|link=none}} || '''Fae-Slayer''' || Affix a Nazar to an Iron Sword in a Smithing Table || Apotropaic Jewellery || Smith a [[Warding Sword|warding sword]]. || Task || —
+|-
+| {{Slot|Silver Sword|link=none}} || '''Sabbatarian''' || {{G|E00F}} Affix a Nazar to an Iron Sword inlaid with Silver in a Smithing Table || Fae-Slayer || Smith a [[Silver Sword|silver sword]]. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Warding Shield|link=none}} || '''Convoymaster''' || {{G|E00F}} Affix a Nazar to an Shield inlaid with Silver in a Smithing Table || Sabbatarian || Smith a [[Warding Shield|warding shield]]. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Divine Fragment|link=none}} || '''A Vestige of Divinity''' || {{G|E00F}}{{G|E00F}} A Relic only obtained by breaking Spawners or vanquishing powerful Forces || Hellish Powder || Have a [[Divine Fragment|divine fragment]] in the inventory. || Goal || 2 {{ItemLink|Obol}}
+|-
+| {{Slot|Crystal Heart|link=none}} || '''Crystal Heart!''' || {{G|E00F}}{{G|E00F}} Crystal Hearts impart a piece of divinity onto Gods who devour them. Though mortals were only able to use their Undying properties. || A Vestige of Divinity || Have a [[Crystal Heart|crystal heart]] in the inventory. || Challenge || 3 {{ItemLink|Obol}}
+|-
+| {{Slot|Opal|link=none}} || '''Canto I''' || ❤ Defeat the Sea God || Hellish Powder || Have an [[opal]] in the inventory. Opals drop from elder guardians. || Task || 1 {{ItemLink|Crystal Heart}}
+|-
+| {{Slot|Ruby|link=none}} || '''Canto II''' || ❤ Pillage the Remnants of Pandaemonium || Canto I || Have a [[ruby]] in the inventory. Rubies are found in [[Bastion Remnant|bastion]] chests. || Task || 1 {{ItemLink|Crystal Heart}}
+|-
+| {{Slot|Amber|link=none}} || '''Canto III''' || ❤ Exhume the Pilgrim's Trails || Canto II || Have [[amber]] in the inventory. Amber comes from the rare [[archaeology]] loot of trail ruins. || Task || 1 {{ItemLink|Crystal Heart}}
+|-
+| {{Slot|Topaz|link=none}} || '''Canto IV''' || ❤❤ Raid Tartarus || Canto III || Have a [[topaz]] in the inventory. Topaz is found in [[Ancient City|ancient city]] chests. || Task || 2 {{ItemLink|Crystal Heart}}
+|-
+! colspan="7" | Trading and fishing
+|-
+| {{Slot|Obol|link=none}} || '''You're Rich!''' || Obtain an Obol || From Earth || Have an [[obol]] in the inventory. ''Hidden.'' || Task || —
+|-
+| {{Slot|Beacon Kindling|link=none}} || '''Bonfire Lit''' || {{G|E00F}} Use a Beacon Kindling to signal a Wandering Trader || You're Rich! || Use [[Beacon Kindling|beacon kindling]] on a block. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Asylum Seeker|link=none}} || '''A Good Samaritan''' || {{G|E00F}} Cover the Relocation costs for an Asylum Seeker, and make a home for them here || Bonfire Lit || Buy an [[Asylum Seeker|asylum seeker]] from a trader. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Wooden Cross|link=none}} || '''God help you...''' || Commit great evil || A Good Samaritan || Kill a villager or a wandering trader. ''Hidden.'' || Task || —
+|-
+| {{Slot|Carp|link=none}} || '''Fishmonger''' || {{G|E00F}} Sell caught fish to a Fisherman || A Good Samaritan || Receive an obol from a [[fisherman]] in a trade. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Obol|link=none}} || '''A True Community''' || 5 {{G|E00F}} Trade with (almost) every profession || Fishmonger || Trade with each of the 12 professions except the weaponsmith: [[Engineer|engineer]], [[Cook|cook]], [[Archaeologist|archaeologist]], [[Chemist|chemist]], [[Farmer|farmer]], [[fisherman]], [[Fletcher|fletcher]], [[Lumberjack|lumberjack]], [[Mouthpiece|mouthpiece]], [[Mason|mason]], [[Shepherd|shepherd]] and [[Jeweler|jeweler]]. || Challenge || 5 {{ItemLink|Obol}}
+|-
+| {{Slot|Carp|link=none}} || '''No More Fish in the Sea''' || 10 {{G|E00F}} Catch Everything! || Fishmonger || Catch all 47 [[fish]] with a fishing rod. || Challenge || 10 {{ItemLink|Obol}}
+|}
+
+== Hell ==
+The Hell tab appears when the player first enters [[Hell]]. Its main line follows the pack's magic: [[Benzene|benzene]], [[Stabilized Estus|stabilized Estus]], and then either a [[Warding Stone|warding stone]] or the [[Hell-Bound Book|hell-bound book]] used to craft [[blessing]]s.
+
+{| class="wikitable sortable"
+! Icon !! Advancement !! In-game description !! Parent !! Actual requirements !! Type !! Reward
+|-
+| {{Slot|Hellstone|link=none}} || '''Through Hell''' || — || — || Enter Hell. || Task (root) || —
+|-
+| {{Slot|Ancient Debris|link=none}} || '''Hidden in the Depths''' || Flesh from Long-Dead Gods || Through Hell || Have ancient debris or [[Adamant Scrap|adamant scrap]] in the inventory. || Task || —
+|-
+| {{Slot|Benzene|link=none}} || '''Forbidden Chemistry''' || {{G|E00F}} Synthesize Benzene: a Chemical Reagent Forbidden by the Old Laws || Through Hell || Have [[Benzene|benzene]] in the inventory. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Stabilized Estus|link=none}} || '''Hellish Bindings''' || {{G|E00F}} Tether Raw Estus into a Stable Form || Forbidden Chemistry || Craft [[Stabilized Estus|stabilized Estus]]. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Warding Stone|link=none}} || '''Holy Turret''' || {{G|E00F}}{{G|E00F}} Construct a Warding Stone || Hellish Bindings || Craft a [[Warding Stone|warding stone]]. || Goal || 2 {{ItemLink|Obol}}
+|-
+| {{Slot|Hell-Bound Book|link=none}} || '''Unholy Knowledge''' || {{G|E00F}} Craft a Hell-Bound Book || Hellish Bindings || Craft a [[Hell-Bound Book|hell-bound book]]. || Task || 1 {{ItemLink|Obol}}
+|-
+| {{Slot|Prayer of Prometheus|link=none}} || '''Apocrypha''' || {{G|E00F}}{{G|E00F}} Steal Prayers from a long-dead God || Unholy Knowledge || Craft any of 17 [[blessing]]s. || Goal || 2 {{ItemLink|Obol}}
+|-
+| {{Slot|Prayer of The Light|link=none}} || '''Demonic Emissary''' || 10 {{G|E00F}} Steal every prayer from every once-god || Apocrypha || Craft all 23 blessing recipes and the hell-bound book. || Challenge || 10 {{ItemLink|Obol}}
+|}
+
+== The End ==
+The End tab appears when the player first enters [[the End]].
+
+{| class="wikitable sortable"
+! Icon !! Advancement !! In-game description !! Parent !! Actual requirements !! Type !! Reward
+|-
+| {{Slot|End Portal Frame|link=none}} || '''To Dreams''' || — || — || Enter the End. || Task (root) || —
+|-
+| {{Slot|Divine Favor|link=none}} || '''Iconoclast''' || {{G|E00F}}{{G|E00F}}{{G|E00F}} Defile the Dead God's Dream || To Dreams || Kill the [[Ender Dragon]]. || Challenge || 3 {{ItemLink|Obol}}; a [[Divine Favor|divine favor]] and a safe [[Surface|surface]]{{#tag:ref|The reward function drops a divine favor at 0, 100, 0 in the End, announces "Evil has been banished from the surface." to every player, and turns on the safe-surface rule that stops hostile mobs spawning on the overworld surface. It runs once for each player who earns the advancement ({{Source|MF_datapack/data/matcha/function/mechanics/first_dragon_killed_reward.mcfunction}}).|group=note}}
+|-
+| {{Slot|Elytra|link=none}} || '''Wax Wings''' || {{G|E00F}}{{G|E00F}} Seize the work of Daedalus || Iconoclast || Have an elytra in the inventory. || Goal || 2 {{ItemLink|Obol}}
+|-
+| {{Slot|item.kleispack.hepatizon_elytra|link=none}} || '''Icarus' Folly''' || {{G|E00F}}{{G|E00F}}{{G|E00F}}{{G|E00F}} Smith Hepatizon Elytra || Wax Wings || Smith a [[Hepatizon Elytra|hepatizon elytra]]. || Goal || 4 {{ItemLink|Obol}}
+|-
+| {{Slot|Shakudo Elytra|link=none}} || '''Wings of Eros''' || {{G|E00F}}{{G|E00F}}{{G|E00F}}{{G|E00F}} Smith Shakudo Elytra || Wax Wings || Smith a [[Shakudo Elytra|shakudo elytra]]. || Goal || 4 {{ItemLink|Obol}}
+|}
+
+== Angler's Almanac ==
+{{Main|Angler's Almanac}}
+The Angler's Almanac tab is a catalogue of catches, added by imtlx in [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]]. Its root can never be completed by play. Obtaining the [[Angler's Almanac]] item runs a function that unlocks it, and every entry requires the root.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/get_almanac.json}}</ref> Each entry is hidden until the player hooks the matching item with a fishing rod, and its description gives the catch's rarity in stars. No entry gives a reward.
+
+{| class="wikitable"
+! Category !! Groups !! Entries
+|-
+| Freshwater || Cold, cool, temperate, hot wet, hot dry || 25 (5 each)
+|-
+| Saltwater || Cold, cool, temperate, warm, hot || 25 (5 each)
+|-
+| Swamps || — || 5
+|-
+| Deep dark || — || 3
+|-
+| Pale garden || — || 3
+|-
+| Sulfur caves || — || 2
+|-
+| Junk || — || 15
+|-
+| Treasure || — || 7
+|}
+The generated list of every entry is on the [[Angler's Almanac]] page.
+
+== Technical advancements ==
+Most of the pack's 414 advancement files have no display. They are invisible to players and act as event triggers, a common datapack technique. They are grouped by folder:<ref>{{Source|MF_datapack/data/matcha/advancement}}</ref>
+{| class="wikitable"
+! Folder !! Files !! Purpose
+|-
+| <code>recipe_unlocks</code> || 180 || Unlock recipes when the player obtains an item, for example logs unlock the kindling and chest recipes. The whole folder is revoked when the pack is updated.
+|-
+| <code>mechanics</code> || 25 || Trigger mechanics: using a [[Crystal Heart|crystal heart]], [[Amnestic|amnestic]], [[Asylum Seeker|asylum application]], [[Beacon Kindling|beacon kindling]], [[Bedrock Buster|bedrock buster]], clay fetishes or the happy ghast horn; eating glow berry foods (soul sight); sleeping; summoning the Wither; hitting a [[Copper Eye|copper eye]]; getting the Wither effect; entering a village or fortress; handling Estus and intrinsic enchantments.
+|-
+| <code>fishing_sounds</code> || 11 || Play a distinct sound for each kind of catch. See [[Fishing sounds]].
+|-
+| <code>update_old_items</code> || 8 || Replace old copies of the sacred texts and the "Golden" music disc with current ones. See [[Updating items]].
+|-
+| <code>cooking_recipes</code> || 4 || Unlock secret recipes (chorus mochi, gnocchi, sweet berry toast and warped stroganoff) when their recipe item is obtained.
+|-
+| <code>remove_vanilla_items</code> || 3 || Convert vanilla apples, sweet berries and turtle scutes, for example from other mods, into the pack's versions.
+|-
+| <code>particle</code> || 3 || Particles when boarding a boat, walking on sulfurous hellstone, or drinking from an Estus flask.
+|-
+| <code>item_contingencies</code>, <code>update_vanilla_item</code> || 2 || Turn unenchanted vanilla elytra and water bottles into the pack's versions.
+|-
+| <code>endless_repairs</code> namespace || 1 || Reset the repair cost of items so anvil repairs never become "Too Expensive".
+|}
+
+== History ==
+{{History
+|{{History line|0.5-alpha|Fixed the dragon-killing advancement.}}
+{{History line|0.6-alpha|Added "Catch Everything!" (now "No More Fish in the Sea").}}
+{{History line|0.7-alpha|Updated the preserving and cooking advancements.}}
+{{History line|1.0|Many last-minute advancement fixes.}}
+{{History line|1.02|Reworded the campfire, food, warding weapon and steel advancements, added a fishing advancement, and rearranged the tree to make progression clearer.}}
+{{History line|1.03|Added "A Brittle Alloy?", "Hidden Flavors" and "Wait, you can make that?".}}
+{{History line|1.10|Added "Demonic Emissary", "A True Community", "Icarus' Folly", "A Miraculous Discovery!", "Archeologist in Training" and "Wings of Eros". Advancements became translatable. Removed the Estus flask advancement.}}
+{{History line|1.12.1-alpha|Advancements began rewarding obols and crystal hearts and lowering minimum hearts. Added "Bonfire Lit" and the Angler's Almanac tab. Reward advancements are revoked on update so they can be earned again.}}
+{{History line|1.12.2|"Bonfire Lit" works. Fixed a fishing typo that made an advancement impossible. After release, fixes on <code>main</code> narrowed which tutorial advancements are revoked on update and fixed the crystal heart and pufferfish almanac entries.}}
+}}
+
+== Trivia ==
+* The titles "Brilliant Bronze" and "Palatinate Perfection" keep the old names of hepatizon and shakudo. The internal IDs of the hepatizon advancements still say "bronze".
+* The "Canto" titles follow ''The Divine Comedy'', and the Hell tab's root is "Through Hell". "Orpheus" refers to the musician who descended into the underworld.
+* The icon of "No More Fish in the Sea" uses a model called <code>gay_fish</code>, and "A True Community" uses a heart.
+* The Hepatizon Elytra's name uses the translation key <code>item.kleispack.hepatizon_elytra</code>, which is missing from the language file (only <code>item.kleispack.bronze_elytra</code> exists), so the smithed item shows its raw key in game.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_elytra.json}}</ref>
+
+== Notes ==
+{{reflist|group=note}}
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Advancements]]
+[[Category:Mechanics]]

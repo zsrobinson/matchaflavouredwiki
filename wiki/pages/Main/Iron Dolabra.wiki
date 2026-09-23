@@ -1,0 +1,69 @@
+{{Infobox auto
+|renewable=Yes
+}}
+
+An '''iron dolabra''' is the [[Iron equipment|iron]] [[dolabra]], crafted from [[Iron Ingot|iron ingots]]. It mines at speed 6 and has 500 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_dolabra.json}}</ref>
+
+As a [[dolabra]], it works as both a pickaxe and an axe, at a lower mining speed than the iron pickaxe or axe.
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+
+=== Loot ===
+{{Sources}}
+
+The loot table <code>matcha:equipment/iron/dolabra</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+
+== Usage ==
+
+=== Mining ===
+
+It mines both pickaxe and axe blocks at speed 6.
+
+Its tool rules have no obsidian restriction, so it mines obsidian with drops at its normal speed, although the [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] notes say only diamond, electrum and adamant tools can mine obsidian.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_dolabra.json}}</ref>
+
+The pack adds beds, candles, cactus and honeycomb blocks to the blocks axes mine quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+
+=== Combat ===
+
+It deals 6 damage with an attack speed of 0.9.
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+=== Smelting ===
+In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 500
+|-
+| Mining speed || 6
+|-
+| Attack damage || 6
+|-
+| Attack speed || 0.9
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added translation support for all armor and tools.}}
+{{History line|0.6-alpha|Added recipe unlocks for iron equipment.}}
+{{History line|1.03|The iron dolabra's real attack speed now matches its tooltip.}}
+{{History line|1.12.2|Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+}}
+
+== See also ==
+* [[Iron equipment]]
+* [[Tools]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Tools]]

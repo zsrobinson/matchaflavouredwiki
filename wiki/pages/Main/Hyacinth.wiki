@@ -1,0 +1,40 @@
+{{Vanilla|Allium}}
+{{Infobox auto}}
+A '''hyacinth''' is a purple flower. It is the vanilla {{MCW|Allium|allium}}, renamed and retextured as a cluster of purple flower spikes. It generates where alliums do in vanilla, gives magenta dye, and is the namesake ingredient of the [[Elegy of Hyacinthus]].
+
+== Obtaining ==
+=== Natural generation ===
+Hyacinths generate in flower forests and meadows, as alliums do in vanilla.
+
+=== Cloning ===
+{{Recipes}}
+Like most small flowers in the pack, a hyacinth can be cloned: one hyacinth, a [[Glass Bottle#Water bottle|water bottle]] and a piece of bone meal make 4 hyacinths, and the empty bottle is given back.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_allium.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref> The cloning recipes unlock when the player picks up bone meal.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/bonemeal.json}}</ref>
+
+The same recipe exists for the poppy, dandelion, blue orchid, azure bluet, the four tulips, oxeye daisy, cornflower, lily of the valley, wither rose, both eyeblossoms, spore blossom, small and big dripleaf, and the [[Lily Pad|lily pad]].
+
+=== Trading ===
+The [[Farmer]]'s Floral Bundle, sold for 1 [[obol]] at the novice level, contains 8 hyacinths among other flowers.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/1/floral_bundle.json}}</ref>
+
+== Usage ==
+{{Uses}}
+* A hyacinth crafts into 1 magenta [[Dyes|dye]], as in vanilla.
+* The [[Elegy of Hyacinthus]], the blessing for the [[Zephyr]] enchantment, uses one hyacinth with wind charges, feathers and a [[Hell-Bound Book|hell-bound book]].<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/zephyr.json}}</ref>
+
+== Appearance ==
+Placed hyacinths randomly use one of two models, so a field of them does not look uniform. The potted hyacinth has its own model.<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/allium.json}}</ref>
+
+== History ==
+{{History
+|{{History line|1.10|Flower cloning gives 4 flowers instead of 2.}}
+}}
+
+== Trivia ==
+* In Greek myth, the hyacinth grew from the blood of Hyacinthus, who was killed by a discus blown off course by Zephyrus, the west wind. The [[Zephyr]] enchantment's blessing is named after him.
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Plants]]
+[[Category:Flowers]]
+[[Category:Renamed items]]

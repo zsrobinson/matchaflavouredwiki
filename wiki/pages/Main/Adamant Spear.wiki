@@ -1,0 +1,76 @@
+{{Infobox auto
+|intrinsics=[[Sharpness]] I<br />[[Unbreaking]] II<br />{{G|Weakness}} Weakness
+|renewable=No
+}}
+
+An '''adamant spear''' is the [[Adamant equipment|adamant]] [[spear]], made by smithing a [[Diamond Spear|diamond spear]] with [[Adamant Alloy|adamant alloy]]. It deals 5 damage at an attack speed of 0.87 and has 5000 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_spear.json}}</ref>
+
+== Obtaining ==
+
+=== Smithing ===
+{{Recipes}}
+
+The upgrade uses no template: the template slot of the [[smithing table]] is left empty.
+
+Enchantments already on the base item are kept. Where the base and the new item share an enchantment, the higher level is used.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
+
+=== Loot ===
+{{Sources}}
+
+The loot table <code>matcha:equipment/adamant/spear</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+
+== Usage ==
+
+=== Combat ===
+
+It deals 5 damage with an attack speed of 0.87.
+
+=== Intrinsics ===
+
+* [[Sharpness]] I
+* [[Unbreaking]] II
+* {{G|Weakness}} Weakness: gives the target Weakness II for 8 to 12 seconds on every hit, which feeds adamant armor's [[Doom]].<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_weapon.json}}</ref>
+
+The intrinsics are stored on the item and applied when it enters an inventory. See [[Adamant equipment]] for how the tier's intrinsics work together.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}} or [[Adamant Scrap|adamant scrap]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+=== Smelting ===
+In a [[Blast Furnace|blast furnace]], it smelts into one [[Adamant Alloy|adamant alloy]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/netherite_ingot_from_blasting_netherite_materials.json}}</ref>
+
+=== Trading ===
+A [[Weaponsmith|weaponsmith]] of level 2 (Apprentice) buys it for one [[Adamant Alloy|adamant alloy]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/netherite_spear.json}}</ref>
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 5000
+|-
+| Attack damage || 5
+|-
+| Attack speed || 0.87
+|}
+
+The tooltip is written by hand and hides the real attributes. For this item it disagrees with the real values: it lists attack damage 4, but the item has 5; it lists attack speed 0.95, but the item has 0.87.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_spear.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added translation support for all armor and tools. Added the adamant spear texture.}}
+{{History line|1.03|The vanilla netherite recipes were blocked.}}
+{{History line|1.10|Alloy equipment can be traded to a [[Weaponsmith|weaponsmith]] for its alloy, so players can rebuild old items with updated stats.}}
+{{History line|1.12.1-alpha|Smithing no longer needs a base-metal ingot in the template slot; the slot is left empty. Smithing now keeps the enchantments already on the item. Added the "Repaired with" tooltip, and repair materials were made consistent across all alloys. [[Divinity]] was removed from adamant weapons and replaced with Sharpness.}}
+{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older items can be updated with <code>/trigger update_item</code>. Adamant weapons now inflict Weakness.}}
+}}
+
+== See also ==
+* [[Adamant equipment]]
+* [[Weapons]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Weapons]]

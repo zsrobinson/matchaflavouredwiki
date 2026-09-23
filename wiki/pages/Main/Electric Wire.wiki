@@ -1,0 +1,37 @@
+{{Vanilla|Redstone Dust}}
+{{Infobox auto}}
+'''Electric wire''' is a spool of copper wire used to build circuits. It replaces {{MCW|Redstone Dust|redstone dust}}: placed on the ground it behaves exactly like redstone dust, carrying a signal up to 15 blocks, but it is crafted from [[Copper Ingot|copper ingots]] instead of being mined. The whole redstone family is renamed to match: the [[Electric Inverter|electric inverter]] (redstone torch), [[Electric Repeater|electric repeater]], [[Electric Comparator|electric comparator]], [[Electric Block|electric block]] and [[Electric Lamp|electric lamp]].
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Two copper ingots, one above the other, make 8 electric wire.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_wire.json}}</ref> The recipe unlocks when the player picks up a copper ingot.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/copper_ingot.json}}</ref>
+
+Electric wire cannot be mined. Vanilla redstone ore is renamed [[Sulfurous Quartz Deposit|sulfurous quartz deposit]] and deepslate redstone ore [[Sulfur Deposit|sulfur deposit]], which drop [[Sulfur Chunk|sulfur chunks]] (and, from the former, [[quartz]]) instead. The vanilla recipes that smelt redstone ore and that break a block of redstone back into dust are removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+== Usage ==
+{{Uses}}
+Four electric wire can be crafted back into a copper ingot, so the conversion loses nothing.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_ingot_from_copper_wire.json}}</ref>
+
+Besides redstone circuits, electric wire replaces redstone dust in the pack's recipes, including:
+* [[Electric Inverter|electric inverters]] (wire on a stick, 8 per craft)
+* [[Electric Lamp|electric lamps]] (wire surrounded by glass, 8 per craft)
+* [[Electric Block|electric blocks]] (9 wire)
+* powered and detector rails, copper bulbs, the [[Compass|copper and golden compasses]] and the [[Copper Eye|copper eye]]
+* [[Chest#Trapped chest|trapped chests]] (a chest and a wire)
+
+== Behavior ==
+Placed wire works exactly like vanilla redstone dust. The pack's resource pack gives it a new item texture (a spool of copper wire) and removes the red particles that powered redstone gives off.<ref>{{Cite changelog|1.12.2|quote=Removed Redstone Particles}}</ref>
+
+== History ==
+{{History
+|{{History line|1.12.1-alpha|Trapped chests are crafted with electric wire instead of a tripwire hook.}}
+{{History line|1.12.2|Redstone particles were removed.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Redstone]]
+[[Category:Renamed items]]

@@ -1,0 +1,40 @@
+{{Vanilla}}
+
+{{Infobox auto}}
+
+'''Sweet berries''' are a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Health Boost}}. Eaten raw, they heal {{Hp|1}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/sweet_berries.json}}</ref> Cooked into [[sweet berry mash]], they make [[sweet berry jam]] and the [[sweet berry Danish]], which raise maximum health by 2 and 4 hearts.
+
+== Obtaining ==
+
+=== Harvesting ===
+Sweet berry bushes drop and give the pack's sweet berries when harvested or broken.<ref>{{Source|MF_datapack/data/minecraft/loot_table/harvest/sweet_berry_bush.json}}</ref>
+
+{{Sources}}
+
+=== Replacement ===
+Sweet berries without the pack's tooltip are replaced with the pack's version when they enter the inventory of a player who is not in Creative mode, one at a time.<ref>{{Source|MF_datapack/data/matcha/function/remove_vanilla_items/sweet_berries.mcfunction}}</ref>
+
+== Usage ==
+
+=== Food ===
+Eating sweet berries heals {{Hp|1}}.
+
+Picking up sweet berries unlocks sweet berry mash. They are also used raw in the [[cake]], [[mead]] and the secret [[sweet berry toast]].
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Sweet berry jam is no longer a honey bottle.}}
+{{History line|1.12.1-alpha|Plain sweet berries from other sources are replaced with the pack's version.}}
+}}
+
+== See also ==
+* [[Intrinsic]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

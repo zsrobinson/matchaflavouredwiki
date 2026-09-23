@@ -1,0 +1,33 @@
+{{Infobox auto
+|intrinsics={{G|Mining speed}} ∞
+|renewable=Yes
+}}
+'''Topaz earrings''' are [[jewelry]] that speed up mining. Worn in the head slot, they give permanent {{MCW|Haste}} II. They are the most expensive jewelry the [[Jeweler]] sells.
+
+== Obtaining ==
+=== Trading ===
+The [[Jeweler]] sells topaz earrings at Expert level for 14 [[Obol]]s and one [[Topaz]]. The trade can be used 999 times.<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/4/topaz_earrings.json}}</ref>
+
+== Usage ==
+=== Effect ===
+While worn by a player, topaz earrings give Haste II, reapplied every tick for 1 second with no particles.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/haste.mcfunction}}</ref> Haste II increases mining speed by 40% and attack speed by 20%, as in vanilla.
+
+=== Armor ===
+Topaz earrings are worn in the head slot and take the place of a helmet. They give 1 [[armor]] point and no armor toughness or knockback resistance. Like all jewelry, they are unbreakable and, being built on a netherite helmet, don't burn in fire or lava. See [[Jewelry]].
+
+== History ==
+{{History|
+{{History line|0.6-alpha|Jewelry became unbreakable.}}
+{{History line|1.12.2|Earrings no longer give knockback resistance.}}
+}}
+
+== See also ==
+* [[Jewelry]]
+* [[Topaz]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Armor]]
+[[Category:Jewelry]]

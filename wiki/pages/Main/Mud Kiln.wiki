@@ -1,0 +1,67 @@
+{{Vanilla|Smoker}}
+{{Infobox auto}}
+A '''mud kiln''' is a block that fires clay, sand and stone. It replaces the {{MCW|Smoker|smoker}} and works like one, with fuel, but instead of cooking food it is the pack's early kiln: it makes [[brick]]s, glass, terracotta and smooth stone before the player has an [[oven]] or a [[blast furnace]]. Food put in it comes out charred.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The mud kiln needs 4 mud bricks, 2 packed mud and a [[kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/mudkiln.json}}</ref> The vanilla smoker recipe is removed. Crafting one grants the advancement ''Ancient Technology''.
+
+Packed mud can be made from mud and [[straw]], or from dirt and short dry grass, so a mud kiln is reachable with only [[kindling]] and a hoe.
+
+== Usage ==
+=== Kilning ===
+All kiln recipes take 5 seconds, except raw copper (10 seconds) and wet sponges (2.5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json}}</ref>
+{| class="wikitable"
+! Input !! Output
+|-
+| Clay ball || Brick
+|-
+| Clay || Terracotta
+|-
+| Any dyed terracotta || The matching glazed terracotta
+|-
+| Sand, red sand or [[quartz]] || Glass
+|-
+| Amethyst shard || Tinted glass
+|-
+| Cobblestone or stone bricks || [[Limestone]]
+|-
+| Limestone || Smooth stone
+|-
+| Cobbled deepslate || Deepslate
+|-
+| Sandstone, red sandstone || Smooth sandstone, smooth red sandstone
+|-
+| Block of quartz || Smooth quartz block
+|-
+| Basalt || Smooth basalt
+|-
+| Any log or wood || Charcoal
+|-
+| Cactus || Green dye
+|-
+| Raw copper || Copper ingot
+|-
+| Wet sponge || Sponge
+|}
+
+=== Food ===
+The mud kiln cooks only four foods. [[Dough]] becomes [[naan]], and raw meat, fish and potatoes become [[charred meat]], [[Charred Fish|charred fish]] and [[charred potato]]es, which heal less than food cooked in an oven or on kindling.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref> See [[Cooking#Charring]].
+
+== Advancements ==
+* ''Ancient Technology'': construct a kiln from packed mud and mud bricks.
+
+== History ==
+{{History|
+{{History line|1.03|Charcoal and all glazed terracotta can be made in the kiln.}}
+{{History line|1.10|Quartz can be kilned into glass and amethyst into tinted glass.}}
+{{History line|1.12.1-alpha|Added stone, cobblestone, sand, sandstone, red sandstone, terracotta and sponge kilning.}}
+}}
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Utility blocks]]
+[[Category:Food]]

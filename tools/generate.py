@@ -118,6 +118,26 @@ def ench_name(eid):
     return eid.split(':')[-1].replace('_', ' ').title()
 
 
+INTRINSIC_PAGES = [('warding', 'Warding'), ('adamant', 'Doom'), ('shakudo', 'Divinity'), ('electrum_tool', 'Fortune'),
+                   ('electrum', 'Warding'), ('cleanse', 'Cleanse'), ('max_magic_protection', 'Magic protection'),
+                   ('magic_protection', 'Magic protection'), ('conduit_power', 'Conduit Power'), ('fire_proof', 'Fire Resistance'),
+                   ('haste', 'Haste'), ('regeneration', 'Regeneration')]
+
+
+def intrinsic_text(eid, lvl):
+    """Readable, correctly linked label for an enchantment used as an intrinsic."""
+    e = ENCH.get(eid) or {}
+    raw = e.get('name') or ''
+    plain = re.sub(r'⟦[^⟧]+⟧', '', raw).strip()
+    maxl = e.get('max_level') or 1
+    if plain and not re.fullmatch(r'[0-9+∞\-() :.]*', plain) and not eid.startswith('matcha:'):
+        return '[[%s]]%s' % (plain, (' ' + roman(lvl)) if maxl > 1 else '')
+    key = eid.split(':')[-1]
+    page = next((p for k, p in INTRINSIC_PAGES if key.startswith(k)), None) or key.replace('_', ' ').capitalize()
+    shown = glyphs(raw).strip() if raw else page
+    return '[[%s|%s]]' % (page, shown) if page else shown
+
+
 def ench_label(eid, lvl):
     e = ENCH.get(eid)
     name = ench_name(eid)
@@ -283,7 +303,8 @@ def infobox(item):
         f['attackspeed'] = fmt_num(4 + spd)
     tool = c.get('tool')
     if tool:
-        speeds = [r.get('speed') for r in tool.get('rules', []) if r.get('speed') and r.get('correct_for_drops') is not False]
+        speeds = [r.get('speed') for r in tool.get('rules', []) if r.get('speed') and r.get('correct_for_drops') is not False
+                  and r.get('speed') < 1000 and 'cobweb' not in json.dumps(r.get('blocks'))]
         if speeds:
             f['miningspeed'] = fmt_num(max(speeds))
     for attr, key in (('armor', 'armor'), ('armor_toughness', 'toughness'), ('knockback_resistance', 'knockbackres')):
@@ -291,7 +312,7 @@ def infobox(item):
         if has and v:
             f[key] = fmt_num(v if attr != 'knockback_resistance' else v * 10)
     rep = c.get('repairable')
-    if rep and rep.get('items'):
+    if rep and rep.get('items') and c.get('max_damage') and not c.get('unbreakable'):
         f['repair'] = item_link_list(rep['items'])
     ench = {}
     for k in ('enchantments', 'stored_enchantments'):
@@ -300,8 +321,7 @@ def infobox(item):
             v = v['levels']
         ench.update(v)
     if ench and item['base_id'] != 'minecraft:enchanted_book':
-        f['intrinsics'] = '<br />'.join('[[%s]]%s' % (ench_name(e), (' ' + roman(l)) if (ENCH.get(e, {}).get('max_level') or 1) > 1 else '')
-                                        for e, l in ench.items())
+        f['intrinsics'] = '<br />'.join(intrinsic_text(e, l) for e, l in ench.items())
     elif ench:
         f['effects'] = ('%s<br />' % f['effects'] if f.get('effects') else '') + 'Stores: ' + ', '.join(
             '[[%s]]%s' % (ench_name(e), (' ' + roman(l)) if (ENCH.get(e, {}).get('max_level') or 1) > 1 else '') for e, l in ench.items())
@@ -502,7 +522,9 @@ for _n, _it in ITEMS.items():
 for _n, _it in ITEMS.items():
     if not _it['renamed_vanilla']:
         _b = _BASE_NAME.get(_it['base_id'])
-        if _b and _b != _n:
+        # only when both are the same kind of thing (a fish is still food; a gem built on a
+        # renamed food item is not meant to be cooked), to avoid listing quirks as uses
+        if _b and _b != _n and item_type(_it, effective(_it)) == item_type(ITEMS[_b], effective(ITEMS[_b])):
             for r in USES.get(_b, []):
                 if r not in USES[_n] and r['output']['name'] != _n:
                     USES[_n].append(r)
@@ -676,6 +698,8 @@ def chance_at_least_one(p, rolls):
 
 def loot_category(lid):
     ns, p = lid.split(':')
+    if ns != 'minecraft':
+        return None  # matcha:* tables are item definitions and sub-tables, not world sources
     if p.startswith('chests/'):
         return 'Chest loot'
     if p.startswith('entities/'):

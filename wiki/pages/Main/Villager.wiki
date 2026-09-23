@@ -1,0 +1,87 @@
+{{Vanilla}}
+{{Infobox
+|title=Villager
+|type=Passive mob
+|vanilla={{MCW|Villager}}
+}}
+A '''villager''' is a passive mob that trades with the player. Matcha Flavoured keeps the vanilla villager but replaces all of its [[trading|trades]], renames seven of its professions, gives each villager a [[favorite food]], and changes where new villagers come from.
+
+== Spawning ==
+[[Village]]s in Matcha Flavoured generate [[Abandoned village|abandoned]] from the pack's own building set, which contains no villagers, so the world has no villagers of its own.<ref>{{Source|MF_datapack/data/minecraft/worldgen/structure/village_plains.json}}</ref> The developer wants the world to "feel abandoned until YOU come along", with villagers living at the player's base instead.<ref>{{Cite changelog|0.6-alpha|quote=I think the minecraft world should feel abandoned until YOU come along, so villagers at your base makes sense, it should feel alive. But the rest of the world shouldn't}}</ref>
+
+The main source of villagers is the [[Asylum Seeker]] application sold by the [[Wandering Trader]], which spawns an adult or child villager with a randomly chosen culture (villager type). Villagers can then breed as in vanilla ''Minecraft''. Curing a {{MCW|Zombie Villager|zombie villager}} also works as in vanilla.
+
+== Professions ==
+{{Main|Trading#Professions}}
+Villagers take a profession from the vanilla job site blocks. Seven professions have new names:
+{| class="wikitable"
+! Profession !! Vanilla name !! Job site block
+|-
+| [[Farmer]] || Farmer || Composter
+|-
+| [[Fisherman]] || Fisherman || Barrel
+|-
+| [[Shepherd]] || Shepherd || Loom
+|-
+| [[Fletcher]] || Fletcher || Fletching Table
+|-
+| [[Lumberjack]] || Leatherworker || Cauldron
+|-
+| [[Archaeologist]] || Cartographer || Cartography Table
+|-
+| [[Engineer]] || Armorer || Blast Furnace
+|-
+| [[Chemist]] || Cleric || [[Chemistry Stand]]
+|-
+| [[Jeweler]] || Toolsmith || [[Smithing Table]]
+|-
+| [[Cook]] || Butcher || [[Mud Kiln]]
+|-
+| [[Mouthpiece]] || Librarian || Lectern
+|-
+| [[Mason]] || Mason || [[Stonecutter]]
+|-
+| [[Weaponsmith]] || Weaponsmith || Grindstone
+|}
+The names come from the resource pack's language file.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Nitwits and unemployed villagers are unchanged.
+
+== Behavior ==
+=== Trading ===
+{{Main|Trading}}
+Villager trades can be used 999 times before restocking, and most sell goods in bulk for a single [[Obol]]. Apart from the [[Fisherman]], [[Jeweler]] and [[Weaponsmith]], villagers do not buy items from the player, except for one sale of their [[favorite food]].
+
+An [[Amnestic]] placed next to a villager makes it forget its profession and return to Novice, so it can take a new job and new trades.
+
+=== Favorite food ===
+{{Main|Favorite food}}
+Every employed villager that has been traded with at least once is given one extra trade: it buys 1 of a randomly chosen [[food]] (4 for chicken nuggets) for 1 obol, once.
+
+=== Daily schedule ===
+The pack stretches the vanilla villager schedule over a 72,000-tick cycle, three times the length of the vanilla 24,000-tick day, to match its longer [[Day and night|days]]. Adult villagers wake at tick 30, work from tick 6,000, meet from tick 27,000, idle from tick 33,000 and sleep from tick 36,000; every keyframe is exactly three times its vanilla value.<ref>{{Source|MF_datapack/data/minecraft/timeline/villager_schedule.json}}</ref>
+
+=== Protection ===
+Villagers are counted as "villager friends" together with wandering traders, iron and snow golems, wolves, cats, happy ghasts and players. A [[Warding Stone]] gives every villager friend within 16 blocks {{EffectLink|Regeneration}} I for 3 seconds whenever they do not already have it.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/effects.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/entity_type/villager_friends.json}}</ref> The developer describes this as a "band-aid fix" for villagers, who "tend not to survive for too long on their own".<ref>{{Cite video|quote=Villagers are famously pacifist. They tend not to survive for too long on their own, so I added a band-aid fix for this.}}</ref>
+
+== Advancements ==
+* '''A True Community''': trade with every profession except the Weaponsmith. Rewards 5 obols.
+* '''God help you...''' (hidden): "Commit great evil" by killing a villager or a wandering trader.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/kill_villager.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Zombie villager textures changed.}}
+{{History line|0.6-alpha|Villages generate abandoned.
+Warding stones heal villagers and other villager friends.}}
+{{History line|1.10|Added the Amnestic. Fixed the ''God help you...'' advancement.}}
+}}
+
+== See also ==
+* [[Trading]]
+* [[Wandering Trader]]
+* [[Asylum Seeker]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Mobs]]
+[[Category:Trading]]

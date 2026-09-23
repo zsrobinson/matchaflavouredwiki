@@ -1,0 +1,33 @@
+{{Infobox auto
+|intrinsics={{G|Fire}} ∞
+|renewable=Yes
+}}
+The '''ruby circlet''' is a piece of [[jewelry]] that makes the wearer immune to fire. Worn in the head slot, it gives permanent {{MCW|Fire Resistance}}, which makes it a natural companion for trips to [[Hell]].
+
+== Obtaining ==
+=== Trading ===
+The [[Jeweler]] sells the ruby circlet at Apprentice level for 4 [[Obol]]s and one [[Ruby]]. The trade can be used 999 times.<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/2/ruby_circlet.json}}</ref>
+
+== Usage ==
+=== Effect ===
+While worn by a player, the ruby circlet gives Fire Resistance, reapplied every tick for 1 second with no particles. The effect ends as soon as the circlet is taken off.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/fire_proof.mcfunction}}</ref>
+
+=== Armor ===
+The ruby circlet is worn in the head slot and takes the place of a helmet. It gives 1 [[armor]] point and no armor toughness or knockback resistance. Like all jewelry, it is unbreakable and, being built on a netherite helmet, doesn't burn in fire or lava. See [[Jewelry]].
+
+== History ==
+{{History|
+{{History line|0.6-alpha|Jewelry became unbreakable.}}
+{{History line|1.12.2|Earrings and circlets no longer give knockback resistance.}}
+}}
+
+== See also ==
+* [[Jewelry]]
+* [[Ruby]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Armor]]
+[[Category:Jewelry]]

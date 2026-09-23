@@ -1,0 +1,35 @@
+{{Vanilla|Butcher}}
+{{Infobox
+|title=Cook
+|type=[[Villager]] profession
+|vanilla={{MCW|Butcher}}
+|rarity_label=Job site block
+|rarity={{ItemLink|Mud Kiln}}
+}}
+The '''Cook''' is a [[villager]] profession that sells prepared [[food]], [[Cooking Recipe]]s and the [[Cleaver]]. It replaces the {{MCW|Butcher|butcher}}, and its job site block is the [[Mud Kiln]] (the renamed smoker). Unlike the vanilla butcher, it buys no meat.
+
+== Trades ==
+@@TABLE@@
+All trades can be used 999 times before restocking, and each level offers all of its trades.<ref>{{Source|MF_datapack/data/minecraft/trade_set/butcher/level_1.json}}</ref>
+
+* At each of the first three levels the cook sells one food and the [[Cooking Recipe]] for that food: [[Sweet Berry Toast]] at Novice, [[Warped Stroganoff]] at Apprentice and [[Chorus Mochi]] at Journeyman. A cooking recipe unlocks the crafting recipe for its food as soon as it is in the player's inventory.<ref>{{Source|MF_datapack/data/matcha/advancement/cooking_recipes/sweet_berry_toast_recipe.json}}</ref>
+* At Expert level the cook sells a [[Cleaver]] enchanted with [[Slaughter]] and Looting II.<ref>{{Source|MF_datapack/data/matcha/villager_trade/butcher/4/butcher_knife.json}}</ref> Trading is the only way to obtain a cleaver.
+* The cook has no Master trades.<ref>{{Source|MF_datapack/data/matcha/villager_trade/butcher/5/filler.json}}</ref>
+
+Like every villager, a cook that has been traded with also buys its [[favorite food]] once.
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|The cleaver (butcher's knife) can no longer be made by smithing.}}
+}}
+
+== Trivia ==
+* The cleaver's internal name is <code>butcher_knife</code>, after the vanilla profession it replaces.
+* Internally the profession is still <code>minecraft:butcher</code>; only its displayed name changes.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Villager professions]]
+[[Category:Trading]]

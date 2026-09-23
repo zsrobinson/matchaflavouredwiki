@@ -1,0 +1,57 @@
+{{Infobox auto
+|renewable=No
+}}
+
+A '''diamond boots''' is the [[Diamond equipment|diamond]] [[Armor#Boots|boots]], crafted from [[Diamond|diamonds]]. It gives 3 armor and 2 toughness and has 800 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_boots.json}}</ref>
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+
+The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
+
+=== Loot ===
+{{Sources}}
+
+The loot table <code>matcha:equipment/diamond/boots</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+
+== Usage ==
+
+=== Armor ===
+
+Worn, it gives 3 armor, 2 armor toughness. The vanilla item gives 3 armor with 429 durability.
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with [[Diamond|diamonds]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+=== Smelting ===
+In a [[Blast Furnace|blast furnace]], it smelts into one [[Diamond|diamond]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/diamond_from_blasting_diamond_materials.json}}</ref>
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 800
+|-
+| Armor || 3
+|-
+| Armor toughness || 2
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Added translation support for all armor and tools.}}
+{{History line|1.12.2|Diamond ores now drop [[Raw Diamond|raw diamonds]], which must be smelted in a [[Blast Furnace|blast furnace]].}}
+}}
+
+== See also ==
+* [[Diamond equipment]]
+* [[Armor]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Armor]]

@@ -1,0 +1,37 @@
+{{Infobox auto
+|type=Warding item
+|intrinsics={{G|Warding}} 1
+}}
+A '''wooden cross''' is a simple charm made of sticks and [[Estus Ash]] that gives {{G|Warding}} 1 while held. It is the cheapest [[warding]] item, and unlike the other warding items it stacks to 64.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The recipe unlocks together with the other [[Estus Ash]] recipes.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/estus_ash.json}}</ref>
+
+=== Archaeology ===
+Wooden crosses can be brushed out of the graves at an [[Abbey]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/archaeology/abbey/grave.json}}</ref>
+
+== Usage ==
+Held in the main hand or off hand, a wooden cross gives {{G|Warding}} 1: every second, undead mobs within 8 blocks get Slowness II and the nearest undead mob within 3 blocks takes {{Hp|1}} of damage that ignores armor. It never damages the [[Wither]].<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_1.mcfunction}}</ref> Its warding adds to that of an item in the other hand, so a wooden cross in the off hand raises a [[Warding Sword]] to {{G|Warding}} 2 or a [[Nazar]] to {{G|Warding}} 3. See [[Warding]].
+
+The wooden cross is built on a poisonous potato, but the pack removes its ability to be eaten.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_cross.json}}</ref>
+
+== Advancements ==
+The hidden advancement ''God help you...'' ("Commit great evil"), granted for killing a villager or wandering trader, uses the wooden cross as its icon.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/kill_villager.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added the wooden cross.}}
+{{History line|1.12.2|Warding from held items now stacks.}}
+}}
+
+== See also ==
+* [[Warding]]
+* [[Nazar]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Items]]

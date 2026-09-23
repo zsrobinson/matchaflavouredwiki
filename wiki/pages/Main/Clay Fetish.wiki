@@ -9,11 +9,11 @@ The chances above are for either variant; each variant is equally likely.<ref>{{
 == Usage ==
 A clay fetish is a {{MCW|Goat Horn|goat horn}} with its own sound. Using it plays a low, soul-sand-valley ambience sound that can be heard up to 16 blocks away, and 3 seconds later changes the weather:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/cheerful_clay_statue.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/mournful_clay_statue.mcfunction}}</ref>
 {| class="wikitable"
-! Variant !! Description !! Effect
+! Description !! Effect
 |-
-| {{Slot|Clay Fetish}} || Rejoice || Sets the weather to clear.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/set_clear_weather.mcfunction}}</ref>
+| Rejoice || Sets the weather to clear.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/set_clear_weather.mcfunction}}</ref>
 |-
-| || Lament || Sets the weather to rain.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/set_rain.mcfunction}}</ref>
+| Lament || Sets the weather to rain.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/set_rain.mcfunction}}</ref>
 |}
 The weather is changed with the <code>/weather</code> command, so it lasts a random, vanilla-length time. Like a goat horn, a clay fetish is not used up; after playing it, it has a 30-second cooldown.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/mournful_clay_statue.json}}</ref> It works for any player in multiplayer.
 

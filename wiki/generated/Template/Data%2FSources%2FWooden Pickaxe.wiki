@@ -6,12 +6,5 @@
 ! Source !! Stack size !! Chance !! Notes
 |-
 | Spawn bonus chest <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/spawn_bonus_chest.json|chests/spawn_bonus_chest}})</small> || 1 || 57.8% || 
-|}
-
-'''Structures'''
-{| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
-|-
-| Wood / tool <small>({{Source|MF_datapack/data/matcha/loot_table/equipment/wood/tool.json|equipment/wood/tool}})</small> || 1 || 25.0% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,0 +1,82 @@
+'''Jewelry''' is a group of wearable items sold by the [[Jeweler]]: earrings and a circlet, worn in the head slot. The four gem pieces each give a permanent status effect while worn, bought with [[Obol]]s and a gem from a structure or a boss. Three plain pairs of earrings are purely decorative.
+
+The developer deliberately gave jewelry no advancements explaining it, preferring that players find out what it does on their own.<ref>{{Cite changelog|1.03|quote=So, some things, I will not give advancements for (Jewellery, Special Books, Villages, Fetishes (that one im iffy on), etc.), and I think its cooler that way.}}</ref>
+
+== List of jewelry ==
+{| class="wikitable sortable"
+! Item !! Tooltip !! Effect while worn !! Price !! Jeweler level
+|-
+| {{ItemLink|Opal Earrings}} || {{G|Water}} ∞ || {{MCW|Dolphin's Grace}}; {{MCW|Conduit Power}} while in water || 4 × {{ItemLink|Obol}} + {{ItemLink|Opal}} || Novice
+|-
+| {{ItemLink|Ruby Circlet}} || {{G|Fire}} ∞ || {{MCW|Fire Resistance}} || 4 × {{ItemLink|Obol}} + {{ItemLink|Ruby}} || Apprentice
+|-
+| {{ItemLink|Amber Earrings}} || {{G|Health}} ∞ || {{MCW|Regeneration}} I || 8 × {{ItemLink|Obol}} + {{ItemLink|Amber}} || Journeyman
+|-
+| {{ItemLink|Topaz Earrings}} || {{G|Mining speed}} ∞ || {{MCW|Haste}} II || 14 × {{ItemLink|Obol}} + {{ItemLink|Topaz}} || Expert
+|-
+| {{ItemLink|Diamond Earrings}} || None || None || {{ItemLink|Obol}} + 2 × {{ItemLink|Diamond}} || Novice
+|-
+| {{ItemLink|Amethyst Earrings}} || None || None || {{ItemLink|Obol}} + 2 × {{MCW|Amethyst Shard|amethyst shards}} || Novice
+|-
+| {{ItemLink|Lapis Earrings}} || None || None || {{ItemLink|Obol}} + 2 × {{MCW|Lapis Lazuli|lapis lazuli}} || Novice
+|}
+<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/1/opal_earrings.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/4/topaz_earrings.json}}</ref> The jeweler's trades have 999 uses, so they don't run out.
+
+== Properties ==
+All jewelry is built on a netherite helmet, which gives it these properties:<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/2/ruby_circlet.json}}</ref>
+* It is worn in the '''head slot''', so it replaces a helmet. Only one piece of jewelry can be worn at a time, and wearing jewelry means giving up a helmet's armor and any helmet intrinsics.
+* It gives 1 [[armor]] point, with no armor toughness or knockback resistance.
+* It is '''unbreakable'''.
+* Like netherite, it doesn't burn in fire or lava when dropped.
+
+The gem effects are intrinsic enchantments that run every tick while the piece is worn by a player, reapplying a 1-second hidden effect. The effect therefore lasts exactly as long as the jewelry is worn.<ref>{{Source|MF_datapack/data/matcha/enchantment/conduit_power.json}}</ref>
+* '''Opal Earrings''' give Dolphin's Grace at all times and Conduit Power only while the wearer is in water.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/conduit_power.mcfunction}}</ref>
+* '''Ruby Circlet''' gives Fire Resistance.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/fire_proof.mcfunction}}</ref>
+* '''Amber Earrings''' give 3 seconds of Regeneration I whenever the wearer has no Regeneration, which amounts to constant Regeneration I.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/regeneration.mcfunction}}</ref> Since Matcha Flavoured has no [[natural regeneration]], this is one of the few ways to heal without eating.
+* '''Topaz Earrings''' give Haste II.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/haste.mcfunction}}</ref>
+
+== Gems ==
+Each gem comes from a different source and unlocks one piece of gem jewelry. The [[Jeweler]] buys gems back at Master level.
+{| class="wikitable"
+! Gem !! Source !! Jeweler pays !! Advancement
+|-
+| {{ItemLink|Opal}} || Killing an {{MCW|Elder Guardian}} || 4 × {{ItemLink|Obol}} || ''Canto I'': "Defeat the Sea God"
+|-
+| {{ItemLink|Ruby}} || [[Bastion Remnant]] chests || 8 × {{ItemLink|Obol}} || ''Canto II'': "Pillage the Remnants of Pandaemonium"
+|-
+| {{ItemLink|Amber}} || [[Archaeology|Brushing]] suspicious blocks in trail ruins || 4 × {{ItemLink|Obol}} || ''Canto III'': "Exhume the Pilgrim's Trails"
+|-
+| {{ItemLink|Topaz}} || [[Ancient City|Ancient city]] chests || 10 × {{ItemLink|Obol}} || ''Canto IV'': "Raid Tartarus"
+|}
+The four ''Canto'' advancements form a chain in the [[Advancements/Tutorial|Tutorial]] tab. The first three each reward a [[Crystal Heart]], and ''Canto IV'' rewards two.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_topaz.json}}</ref>
+
+== Nazar Circlet ==
+The resource pack contains a worn texture for a '''nazar circlet''', but there is no item, recipe or trade for it. It is not obtainable in the current version.<ref>{{Source|MF_resourcepack/assets/matcha/equipment/nazar_circlet.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Gems can now be sold to the Jeweler.}}
+{{History line|0.6-alpha|Jewelry is now unbreakable, so it never needs repairing.}}
+{{History line|1.10|Fixed Amber Earrings in multiplayer.}}
+{{History line|1.12|Amber Earrings could be crafted in a smithing table, a leftover from testing. This was removed.}}
+{{History line|1.12.1-alpha|All jewelry textures were redrawn at a higher resolution.}}
+{{History line|1.12.2|Added Diamond, Amethyst and Lapis Earrings, which have no effect.
+Opal Earrings now give Conduit Power only in water.
+Earrings no longer give knockback resistance.}}
+}}
+
+== Trivia ==
+* The developer on the plain earrings: "They don't do anything but they ARE very cute".<ref>{{Cite changelog|1.12.2|quote=Diamond, Amethyst, and Lapis Earrings (They don't do anything but they ARE very cute)}}</ref>
+* The jewelry textures for the amber and opal earrings were originally made by a community artist and edited by the developer.<ref>{{Cite changelog|1.12.1-alpha|quote=The amber earring and opal earring textures were orginally made by (INSERT NAME HERE). I edited them to my taste}}</ref>
+
+== See also ==
+* [[Jeweler]]
+* [[Nazar]]
+* [[Set bonus]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Armor]]
+[[Category:Jewelry]]

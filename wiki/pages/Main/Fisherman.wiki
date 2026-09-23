@@ -1,0 +1,159 @@
+{{Vanilla|Fisherman}}
+{{Infobox
+|title=Fisherman
+|type=[[Villager]] profession
+|vanilla={{MCW|Fisherman}}
+|rarity_label=Job site block
+|rarity={{ItemLink|Barrel}}
+}}
+The '''Fisherman''' is a [[villager]] profession that buys caught [[fish]] for [[Obol]]s. Its job site block is the {{ItemLink|Barrel}}. It is the main villager that pays the player, and the developer designed it as a reliable income for players who prefer [[fishing]] to other ways of earning obols.<ref>{{Cite video|quote=Fisherman are the only villager that will buy items from you and pay handsomely. So, even if you fish for a bit, fail to catch any treasure, you can still take home a few bucks when you get back to your base.}}</ref>
+
+== Trades ==
+{| class="wikitable"
+! Level !! Villager wants !! Villager gives !! Villager XP
+|-
+! rowspan="1" | Novice
+| {{ItemLink|Obol}} || {{ItemLink|Angler's Almanac}} || 10
+|-
+! rowspan="16" | Apprentice
+| 12 × {{ItemLink|Alaska Blackfish}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Anchovy}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Bluegill}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Bujurqui}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Cod}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Crappie}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Freshwater Puffer}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Guppy}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Humpback Whitefish}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Mediterranean Killifish}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Pufferfish}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Rainbow Wrasse}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Salmon}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Shad}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Striped Perch}} || {{ItemLink|Obol}} || 60
+|-
+| 12 × {{ItemLink|Tropical Fish}} || {{ItemLink|Obol}} || 60
+|-
+! rowspan="10" | Journeyman
+| 8 × {{ItemLink|Black Seabass}} || {{ItemLink|Obol}} || 120
+|-
+| 8 × {{ItemLink|Carp}} || {{ItemLink|Obol}} || 120
+|-
+| 8 × {{ItemLink|Flying Fish}} || {{ItemLink|Obol}} || 120
+|-
+| 8 × {{ItemLink|Gurnard}} || {{ItemLink|Obol}} || 120
+|-
+| 8 × {{ItemLink|Herring}} || {{ItemLink|Obol}} || 120
+|-
+| 8 × {{ItemLink|Lamprey}} || {{ItemLink|Obol}} || 120
+|-
+| 8 × {{ItemLink|Mahi mahi}} || {{ItemLink|Obol}} || 120
+|-
+| 8 × {{ItemLink|Piranha}} || {{ItemLink|Obol}} || 120
+|-
+| 8 × {{ItemLink|Spoonhead Sculpin}} || {{ItemLink|Obol}} || 120
+|-
+| 8 × {{ItemLink|Walleye}} || {{ItemLink|Obol}} || 120
+|-
+! rowspan="10" | Expert
+| 4 × {{ItemLink|Armoured Catfish}} || {{ItemLink|Obol}} || 160
+|-
+| 4 × {{ItemLink|Catfish}} || {{ItemLink|Obol}} || 160
+|-
+| 4 × {{ItemLink|Flounder}} || {{ItemLink|Obol}} || 160
+|-
+| 4 × {{ItemLink|Gar}} || {{ItemLink|Obol}} || 160
+|-
+| 4 × {{ItemLink|Monkfish}} || {{ItemLink|Obol}} || 160
+|-
+| 4 × {{ItemLink|Northern Pike}} || {{ItemLink|Obol}} || 160
+|-
+| 4 × {{ItemLink|Painted Moray}} || {{ItemLink|Obol}} || 160
+|-
+| 4 × {{ItemLink|Sturgeon}} || {{ItemLink|Obol}} || 160
+|-
+| 4 × {{ItemLink|Tunisian Barb}} || {{ItemLink|Obol}} || 160
+|-
+| 4 × {{ItemLink|Wolffish}} || {{ItemLink|Obol}} || 160
+|-
+! rowspan="11" | Master
+| {{ItemLink|Arapaima}} || {{ItemLink|Obol}} || 75
+|-
+| {{ItemLink|Bass}} || {{ItemLink|Obol}} || 75
+|-
+| {{ItemLink|European Eel}} || {{ItemLink|Obol}} || 75
+|-
+| {{ItemLink|Muskellunge}} || {{ItemLink|Obol}} || 75
+|-
+| {{ItemLink|Oarfish}} || {{ItemLink|Obol}} || 75
+|-
+| {{ItemLink|Siberian Sturgeon}} || {{ItemLink|Obol}} || 75
+|-
+| {{ItemLink|Skate}} || {{ItemLink|Obol}} || 75
+|-
+| {{ItemLink|Blue Marlin}} || {{ItemLink|Obol}} || 75
+|-
+| {{ItemLink|Echo Eel}} || {{ItemLink|Obol}} || 75
+|-
+| 2 × {{ItemLink|Creaking Fish}} || {{ItemLink|Obol}} || 75
+|-
+| {{ItemLink|Opah}} || {{ItemLink|Obol}} || 75
+|}
+All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/2/cod.json}}</ref> Every level offers all of its trades.
+
+=== Buying fish ===
+The fisherman buys each fish at the level that matches its rarity, so a fisherman has to be leveled up by selling common fish before it buys rarer ones:
+{| class="wikitable"
+! Level !! Fish rarity !! Fish per Obol !! Villager XP per trade
+|-
+| Apprentice || ⭐☆☆☆ common || 12 || 60
+|-
+| Journeyman || ⭐⭐☆☆ uncommon || 8 || 120
+|-
+| Expert || ⭐⭐⭐☆ rare || 4 || 160
+|-
+| Master || ⭐⭐⭐⭐ epic || 1 (2 for the [[Creaking Fish]]) || 75
+|}
+Only fish caught with a [[Fishing Rod|fishing rod]] are accepted. The trades require the rarity line that the fishing loot tables add to each catch, so cod, salmon, pufferfish or tropical fish dropped by killing a mob cannot be sold.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/2/anchovy.json}}</ref> Fish caught before {{Version|1.12.1-alpha}} have an older item format and no longer match the trades.<ref>{{Cite changelog|1.12.1-alpha|quote=Fishing updated to be ever-green (aka, post-1.13 fish will be able to stack with 1.13 fish...hopefully) But this means old fish won't be able to be traded with new fisherman trades}}</ref>
+
+The developer tied fish to levels to keep rarer fish from being "spoiled" in the trading screen before the player has caught them.<ref>{{Cite changelog|0.5-alpha|quote=The Fisherman selling system has been reworked so you have to sell lower-tier fish before you can sell higher tier fish, this was to prevent fish-related "spoilers"}}</ref>
+
+=== Angler's Almanac ===
+At Novice level the fisherman sells the [[Angler's Almanac]] for 1 obol.
+
+== Advancements ==
+* '''Fishmonger''': sell caught fish to a Fisherman. Rewards 1 obol.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/trade_fish.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Fishing overhauled; the fisherman buys fish by rarity, one rarity per level.}}
+{{History line|1.10|Fewer fish needed per obol: common 24 → 12, uncommon 12 → 8, rare 8 → 4.
+The fisherman buys the [[Opah]].}}
+{{History line|1.12.1-alpha|Sells the [[Angler's Almanac]].
+Fish caught in earlier versions can no longer be sold.}}
+}}
+
+== See also ==
+* [[Fishing]]
+* [[Fish]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Villager professions]]
+[[Category:Trading]]

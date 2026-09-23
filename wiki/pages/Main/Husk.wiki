@@ -1,0 +1,86 @@
+{{Vanilla}}
+{{Infobox
+|title=Husk
+|type=Hostile mob, undead
+|health=Easy: vanilla<br />Normal: {{Hp|30}}<br />Hard: {{Hp|40}}<br />Baby: {{Hp|4}} (Easy, Normal), {{Hp|7}} (Hard)
+|speedmob=Easy: vanilla<br />Normal: 0.25<br />Hard: 0.265
+|attack=Easy: vanilla<br />Normal: 10<br />Hard: 15
+|spawn=Every Overworld biome
+|drops={{ItemLink|Sturdy Leather}}, {{ItemLink|Raw Estus}}
+}}
+A '''husk''' in [[Matcha Flavoured]] is a slow, heavily armored undead "tank". While [[Zombie|zombies]] are fast and fragile, husks on Normal and Hard have up to 20 hearts, strong armor, full knockback resistance and very heavy hits. They spawn in every Overworld biome, not just deserts, and the resource pack makes them white to set them apart from zombies.
+
+== Spawning ==
+Husks are added to every Overworld biome that spawns monsters, with weight 75 in groups of 1–2. In deserts this replaces the vanilla weight of 80 in groups of 4.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/plains.json}}</ref> Like other undead, they can spawn on the open surface until the [[Ender Dragon]] is killed; see [[Spawning]] and [[Surface]].
+
+Husk jockeys are removed: a husk that spawns riding a camel husk is replaced by a husk on foot, and the camel husk is left alone.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/remove_camel_husk_jockey.mcfunction}}</ref> Husks also come from spawners in [[Abbey|abbeys]]; those husks drop nothing.
+
+== Drops ==
+{{Data/Loot/minecraft/entities/husk}}
+All drops require a player kill, and husks from the pack's spawners drop nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/husk.json}}</ref> Compared to vanilla, husks drop {{ItemLink|Sturdy Leather}} (1–2) instead of rotten flesh, and have a 10 in 16 chance of rolling {{ItemLink|Raw Estus}} (0–1) instead of the rare iron, carrot and potato drops.
+
+== Behavior ==
+On Normal and Hard, a husk moves slowly but steadily: it has full movement efficiency on land and in water, so slowing blocks such as soul sand and moving through water hold it back far less than other mobs, and it steps up full blocks without jumping. Its high knockback resistance means shields and knockback weapons barely push it back, and its follow range lets it track players from much further away than vanilla mobs.<ref name="n">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_husk.mcfunction}}</ref><ref name="h">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_husk.mcfunction}}</ref>
+
+Husks are undead and are affected by [[warding]].
+
+== Difficulty ==
+{| class="wikitable"
+! Attribute !! Easy !! Normal !! Hard
+|-
+! Max health (adult)
+| vanilla || {{Hp|30}} || {{Hp|40}}
+|-
+! Max health (baby)
+| {{Hp|4}} || {{Hp|4}} || {{Hp|7}}
+|-
+! Movement speed
+| vanilla || 0.25 || 0.265
+|-
+! Attack damage
+| vanilla || 10 || 15
+|-
+! Armor
+| vanilla || 12 || 14
+|-
+! Follow range
+| vanilla || 50 || 60
+|-
+! Knockback resistance
+| vanilla || 0.9 || 1
+|-
+! Movement efficiency (land and water)
+| vanilla || 1 || 1
+|-
+! Step height
+| vanilla || 1 || 1
+|-
+! Equipment drop chance
+| 0% || 0% || 0%
+|}
+<ref name="n" /><ref name="h" />
+
+== History ==
+{{History|
+{{History line|1.10|Husks spawn in all biomes and become tanks: very slow and very strong. Husk drop rates tweaked (obols about 10%).}}
+{{History line|1.12|Husks slowed a little on Normal. Spawn weight lowered from 80 to 50. Attack damage lowered from 15 to 10 on Normal and from 20 to 15 on Hard. Reinforcement rates lowered.}}
+{{History line|1.12.1-alpha|Husks made white to look different from zombies. Husk jockeys removed. Speed raised a little. Spawn weight raised with smaller groups. Health on Normal lowered from 40 to 30. Mandatory reinforcements removed. Obols no longer drop from undead. Baby husks have 2 hearts on Easy.}}
+{{History line|1.12.2|Hard husks slightly slower.}}
+}}
+
+== Trivia ==
+* The 1.10 release notes describe the design: "Zombies will try to distract you with smaller, quicker blows while the husk advances, and once he gets to you, its all over."<ref>{{Cite changelog|1.10|quote=Zombies will try to distract you with smaller, quicker blows while the husk advances, and once he gets to you, its all over.}}</ref>
+* The 1.12 notes add: "Husk does not have increased attack range to vanilla, im not sure why people thought they did".
+* The 1.12.2 notes recommend Easy or Normal to players who don't enjoy "getting one-tapped by husks".
+
+== See also ==
+* [[Zombie]]
+* [[Difficulty]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Hostile mobs]]
+[[Category:Undead mobs]]

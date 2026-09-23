@@ -1,0 +1,21 @@
+{{Vanilla|Block of Redstone}}
+{{Infobox auto}}
+An '''electric block''' is a permanent power source. It is the vanilla {{MCW|Block of Redstone|block of redstone}} under a new name, and it works the same way.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Nine [[Electric Wire|electric wire]] make an electric block.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/redstone_block.json}}</ref> Unlike in vanilla, the block cannot be crafted back into wire: the vanilla recipe that does so is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+=== Trading ===
+The [[Engineer]] sells 64 electric blocks for 1 [[obol]] at the novice level.<ref>{{Source|MF_datapack/data/matcha/villager_trade/armorer/1/redstone_block.json}}</ref>
+
+== Trivia ==
+* Because an electric block cannot be uncrafted, 64 electric blocks from the Engineer cannot be turned into wire or copper.
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Redstone]]
+[[Category:Renamed items]]

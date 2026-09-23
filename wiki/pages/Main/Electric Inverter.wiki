@@ -1,0 +1,19 @@
+{{Vanilla|Redstone Torch}}
+{{Infobox auto}}
+An '''electric inverter''' is a power source and signal inverter. It is the vanilla {{MCW|Redstone Torch|redstone torch}} under a new name that describes its role in circuits: it is on unless the block it is attached to is powered.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+A piece of [[Electric Wire|electric wire]] on a stick makes 8 electric inverters, where the vanilla recipe makes one.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/redstone_torch.json}}</ref> The vanilla recipe is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+== Usage ==
+{{Uses}}
+Electric inverters work exactly like vanilla redstone torches. They are used in the [[Electric Repeater|electric repeater]], [[Electric Comparator|electric comparator]], activator rails and copper bulbs.
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Redstone]]
+[[Category:Renamed items]]

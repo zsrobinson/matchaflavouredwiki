@@ -5,12 +5,12 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Slaughter]]<br />[[Looting]] II}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Slaughter|Slaughter]]<br />[[Looting]] II}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=1500
 |damage={{Hp|6}}
-|miningspeed=340282349999999991754788743781432688640
+|miningspeed=1.5
 |repair=[[Iron Ingot]]
 |tooltip={{G|Reach}} -1<br />🗡 6<br />🕒 1.6<br />Repaired with:<br />Iron Ingot
 |id=<code>matcha:butcher_knife</code>

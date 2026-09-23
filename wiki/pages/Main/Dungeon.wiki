@@ -1,0 +1,32 @@
+{{Vanilla|Monster Room}}
+A '''dungeon''' (monster room) is a small underground room with a spawner and chests. [[Matcha Flavoured]] makes dungeons more common, changes their spawners and changes their chest loot.
+
+== Generation ==
+Dungeons are placed by two features:<ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/monster_room.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/monster_room_deep.json}}</ref>
+{| class="wikitable"
+! Feature !! Attempts per chunk !! Vanilla !! Height range
+|-
+| <code>monster_room</code> || 15 || 10 || Y=0 to the top of the world
+|-
+| <code>monster_room_deep</code> || 8 || 4 || 6 blocks above the bottom of the world to Y=-1
+|}
+
+== Structure ==
+After the vanilla room is generated, the pack places a spawner template at its center, replacing the vanilla spawner.<ref>{{Source|MF_datapack/data/minecraft/worldgen/configured_feature/monster_room.json}}</ref> The spawner is a zombie, skeleton or spider spawner with equal chances (vanilla: zombies twice as likely). Its mobs carry the <code>NoDrops</code> tag and drop nothing. See [[Spawner]] for how spawners can be broken for [[Divine Fragment]]s.
+
+== Loot ==
+=== Chests ===
+{{Data/Loot/minecraft/chests/simple_dungeon}}
+
+== History ==
+{{History
+|{{History line|1.10|Dungeons generate more often (normal 10 → 15, deep 4 → 8 attempts per chunk).}}
+{{History line|1.12.2|Mobs from spawners no longer drop anything.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Structures]]
+[[Category:Generated structures]]

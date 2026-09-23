@@ -1,0 +1,38 @@
+{{Infobox auto|type=Explosive|renewable=Yes}}
+A '''bedrock buster''' is a special charge of [[TNT]] that destroys {{MCW|Bedrock|bedrock}}. Placed on a block, it becomes a glowing primed TNT, and just before it explodes it clears a 3×7×3 column of bedrock around itself, letting players break through the floor of the Overworld or the roof and floor of [[Hell]].
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Each bedrock buster costs a {{ItemLink|Divine Fragment}}, the pack's scarcest progression material.
+
+== Usage ==
+The bedrock buster is a spawn egg that holds a primed TNT entity.<ref name="item">{{Source|MF_datapack/data/matcha/recipe/crafting/bedrock_buster.json}}</ref> Using it on a block:
+# spawns a primed, glowing TNT with an 80-tick (4-second) fuse and explosion power 4;
+# 79 ticks later, removes every bedrock block in a 3×7×3 area centered on the nearest glowing TNT (1 block to each side horizontally, 3 blocks up and down) and releases a burst of end rod particles;<ref name="use">{{Source|MF_datapack/data/matcha/function/mechanics/bedrock_buster_use.mcfunction}}</ref>
+# the TNT then explodes normally one tick later, damaging the surrounding blocks and entities.
+
+The bedrock removal is triggered by an advancement when the buster is used on a block.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/bedrock_buster.mcfunction}}</ref> Only the bedrock around one glowing TNT is removed per activation: if several busters are used within 79 ticks, the scheduled removal is replaced and only runs once, at the glowing TNT nearest to the world spawn point.
+
+=== Spawners ===
+{{Main|Spawner#Spawn eggs}}
+Because it is a spawn egg, using a bedrock buster on a spawner counts as putting a spawn egg on it: every spawner within 16 blocks is destroyed and the player takes 20 damage.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/no_eggs_on_spawners.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Translation support added for the bedrock buster.}}
+}}
+
+== Trivia ==
+* The item is a chicken spawn egg with a custom model.
+* In the design video, bedrock busters are listed among the items that need a divine fragment, as part of the reasoning against building mob farms: "If you want to make an unbreaking book, Bedrock Busters, Crystal Hearts, or netherite, you need that fragment."<ref>{{Cite video|quote=If you want to make an unbreaking book, Bedrock Busters, Crystal Hearts, or netherite, you need that fragment.}}</ref>
+
+== See also ==
+* [[Divine Fragment]]
+* [[TNT]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Items]]

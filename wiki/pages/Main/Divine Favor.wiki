@@ -1,0 +1,39 @@
+{{Vanilla|Nether Star}}
+{{Infobox auto}}
+A '''Divine Favor''' is the rarest magic material in [[Matcha Flavoured]]. It replaces the {{MCW|Nether Star|nether star}}. A Divine Favor is worth nine [[Divine Fragment]]s and can be crafted to and from them. It is awarded for killing the {{MCW|Ender Dragon|Ender Dragon}} for the first time and for killing the [[Wither]].
+
+== Obtaining ==
+=== Ender Dragon ===
+The first time each player kills the [[Ender Dragon]], a Divine Favor appears at the center of [[The End]], at height 100 above the exit portal. The item never despawns.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/first_dragon_killed_reward.mcfunction}}</ref> The reward comes from the player's "Iconoclast" advancement, so each player can earn it once, and the killing blow must come from a player.<ref>{{Source|MF_datapack/data/matcha/advancement/end/kill_dragon.json}}</ref> The same kill makes the surface safe from hostile mobs; see [[Surface]].
+
+=== Wither ===
+The [[Wither]] drops a Divine Favor, as it drops a nether star in vanilla. Withers can only be spawned on the surface of the Overworld (in view of the sky and at height 63 or above); one spawned anywhere else is removed at once, along with any Divine Favor it would leave.<ref>{{Source|MF_datapack/data/matcha/predicate/wither/invalid_wither_spawn.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/forbid_wither.mcfunction}}</ref>
+
+=== Crafting ===
+{{Recipes}}
+
+== Usage ==
+{{Uses}}
+Besides the {{MCW|Beacon|beacon}}, a Divine Favor is needed for the two strongest [[blessing]]s: the [[Prayer of Daedalus]] (Efficiency III and Unbreaking III) and the [[Prayer of Lu Ban]] (Mending). It can also be broken into 9 Divine Fragments.
+
+== Behavior ==
+A Divine Favor lying on the ground floats: it has no gravity, sinks slowly while the block three below it is air, and rises while the block directly below it is not air. It gives off white flash particles.<ref>{{Source|MF_datapack/data/matcha/function/particle/item_particle_nether_star_motion.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/item_particles.mcfunction}}</ref>
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Each player who kills the Ender Dragon for the first time now creates a new Divine Favor, even if other players have killed it before.<ref>{{Cite changelog|0.5-alpha|quote=Each new player who kills the ender dragon for the first time will create a new Divine Favour.}}</ref>}}
+{{History line|1.10|Withers can no longer be spawned in the End.}}
+{{History line|1.12.2|Withers can only be spawned on the Overworld surface.}}
+}}
+
+== See also ==
+* [[Divine Fragment]]
+* [[Enchanting]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Items]]
+[[Category:Renamed items]]

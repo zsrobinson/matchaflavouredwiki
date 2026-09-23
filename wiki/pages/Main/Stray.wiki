@@ -1,0 +1,35 @@
+{{Vanilla}}
+{{Infobox
+|title=Stray
+|type=Hostile mob, undead
+|health=Easy, Normal: {{Hp|10}}<br />Hard: {{Hp|12}}
+|spawn=Snowy biomes
+|drops={{MCW|Bone}}, {{ItemLink|Tipped Arrow}}, {{ItemLink|Estus Ash}}
+}}
+A '''stray''' in [[Matcha Flavoured]] is a cold-biome [[skeleton]] variant. It gets the same health and bow changes as skeletons, drops {{ItemLink|Estus Ash}}, and no longer drops plain arrows.
+
+== Spawning ==
+Strays use the vanilla spawn rules and, as undead, can spawn on the open surface until the [[Ender Dragon]] is killed. See [[Surface]].
+
+== Drops ==
+{{Data/Loot/minecraft/entities/stray}}
+Compared to vanilla, strays don't drop plain arrows, and they add {{ItemLink|Estus Ash}} (0–1) when killed by a player. Bones drop on any kill; the tipped arrow of Slowness and Estus Ash need a player kill.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/stray.json}}</ref>
+
+== Behavior and difficulty ==
+Strays are in the <code>#minecraft:skeletons</code> tag, so they are modified like [[skeleton|skeletons]]: {{Hp|10}} on Easy and Normal and {{Hp|12}} on Hard, with a Punch I (Normal) or Punch II (Hard) bow. They don't drop their equipment.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_skeletons.mcfunction}}</ref> They are undead and hurt by [[warding]].
+
+== History ==
+{{History|
+{{History line|1.10|Stray loot table added.}}
+}}
+
+== See also ==
+* [[Skeleton]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Hostile mobs]]
+[[Category:Undead mobs]]

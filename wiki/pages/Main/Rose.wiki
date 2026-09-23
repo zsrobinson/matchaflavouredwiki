@@ -1,0 +1,26 @@
+{{Infobox|title=Rose|type=Decoration (resource pack model)|renewable=No|stackable=Yes (64)}}
+A '''rose''' is a decorative flower item. It comes in two colors, the red '''rose''' and the '''cyan rose'''. Both exist only in the resource pack: they have their own item models, textures and names, but the datapack has no recipe, loot table or trade that gives them, so in survival they can only be obtained with commands.
+
+== Obtaining ==
+The roses are defined as item models <code>matcha:rose_classic</code> and <code>matcha:cyan_rose_classic</code>.<ref>{{Source|MF_resourcepack/assets/matcha/items/rose_classic.json}}</ref><ref>{{Source|MF_resourcepack/assets/matcha/items/cyan_rose_classic.json}}</ref> Any item given that model shows as a rose, and the pack's language file names them "Rose" and "Cyan Rose" (<code>item.kleispack.rose_classic</code> and <code>item.kleispack.cyan_rose_classic</code>).<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> No part of the datapack references either model.
+
+== Usage ==
+Roses are purely decorative. In the inventory and in the hand they look like a flat flower icon. Placed in an [[Item Frame|item frame]], a rose switches to a crossed-plane model, so it stands in the frame like a planted flower instead of lying flat.<ref>{{Source|MF_resourcepack/assets/matcha/models/block/rose_classic.json}}</ref>
+
+== Cyan Rose ==
+The '''cyan rose''' is the same item in cyan, with its own texture and item-frame model.<ref>{{Source|MF_resourcepack/assets/matcha/models/block/cyan_rose_classic.json}}</ref>
+
+== History ==
+{{History
+|{{History line|1.12.2|Roses and cyan roses can be placed in item frames with their own models, contributed by Pepurion.}}
+}}
+
+== See also ==
+* [[Hyacinth]]
+* {{MCW|Rose Bush|Rose bush}}, a vanilla block the pack retextured in {{Version|0.5-alpha}}.
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Decoration]]

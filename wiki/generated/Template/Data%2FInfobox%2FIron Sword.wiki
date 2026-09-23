@@ -5,12 +5,12 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Anemos]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Anemos|Anemos]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=500
 |damage={{Hp|6}}
-|miningspeed=340282349999999991754788743781432688640
+|miningspeed=1.5
 |repair=<code>#minecraft:iron_tool_materials</code>
 |tooltip=🗡 6<br />🕒 1.6
 |id=<code>minecraft:iron_sword</code>

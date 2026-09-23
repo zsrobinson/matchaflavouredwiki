@@ -1,0 +1,31 @@
+{{Vanilla|Crafting Table}}
+{{Infobox auto}}
+The '''crafting table''' is the block used to craft most items with a 3×3 grid. Its recipe and function are the same as in vanilla ''Minecraft''; Matcha Flavoured changes its appearance and a few of the rules around crafting.
+
+== Obtaining ==
+{{Recipes}}
+Four planks of any wood make a crafting table, as in vanilla.
+
+== Usage ==
+The crafting table works as in vanilla. Nearly every custom item in the pack that is not cooked, smithed or cut is crafted on it; see Crafting for the full picture.
+
+Changes to crafting as a whole:
+* '''Repairing is disabled.''' The vanilla recipe that combines two damaged tools into one is removed; equipment is repaired in an [[anvil]] instead.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> See [[Repairing]].
+* '''Some crafts give back a glass bottle.''' Recipes that use a [[Glass Bottle#Water bottle|water bottle]], such as cloning flowers or making [[phosphor]], return the empty [[Glass Bottle|glass bottle]] to the player.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
+* '''Slabs craft back into blocks.''' Two slabs of almost any material craft into one full block, and chiseled blocks, which vanilla makes from slabs, move to the [[stonecutter]].<ref>{{Cite changelog|0.6-alpha|quote=All slabs can be crafted back into their original block}}</ref>
+
+== Appearance ==
+The resource pack retextures the block and its interface. The front of the table shows a small cabinet with drawers, and the top a round, pale work surface.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/block/crafting_table_front.png}}</ref> In the crafting screen the 3×3 grid sits on a pale plate decorated with small pictograms, and the "Crafting" title is removed.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/gui/container/crafting_table.png}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+== History ==
+{{History
+|{{History line|0.6-alpha|All slabs can be crafted back into their full block.}}
+{{History line|1.12.1-alpha|Repairing equipment in the crafting grid is disabled.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Utility blocks]]

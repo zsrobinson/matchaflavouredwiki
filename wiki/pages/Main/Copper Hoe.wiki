@@ -1,0 +1,66 @@
+{{Infobox auto
+|renewable=Yes
+}}
+
+A '''copper hoe''' is the [[Copper equipment|copper]] [[Tools#Hoe|hoe]], crafted from [[Copper Ingot|copper ingots]]. It mines at speed 6 and has 350 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_hoe.json}}</ref>
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+
+The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
+
+=== Loot ===
+{{Sources}}
+
+The loot table <code>matcha:equipment/copper/hoe</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+
+== Usage ==
+
+=== Mining ===
+
+It mines hoe blocks at speed 6 (vanilla: 5).
+
+In Matcha Flavoured, hoes also mine wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+
+=== Combat ===
+
+It deals 1 damage with an attack speed of 2.
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with [[Copper Ingot|copper ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+=== Smelting ===
+In a [[Blast Furnace|blast furnace]], it smelts into one [[Copper Ingot|copper ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/copper_ingot_from_blasting_copper_materials.json}}</ref>
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 350
+|-
+| Mining speed || 6
+|-
+| Attack damage || 1
+|-
+| Attack speed || 2
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added translation support for all armor and tools.}}
+{{History line|1.12.1-alpha|Copper can no longer be smelted in an oven; it needs a mud kiln or blast furnace.}}
+{{History line|1.12.2|The blast furnace recipe changed and diamonds now drop raw, which the release notes describe as extending the copper and iron ages.}}
+}}
+
+== See also ==
+* [[Copper equipment]]
+* [[Tools]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Tools]]

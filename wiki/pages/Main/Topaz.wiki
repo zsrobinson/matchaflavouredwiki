@@ -1,0 +1,43 @@
+{{Infobox auto
+|type=Gem
+}}
+'''Topaz''' is a gem found in [[Ancient City|ancient city]] chests. It is used to buy [[Topaz Earrings]] from the [[Jeweler]] and is the most valuable of the four gems.
+
+== Obtaining ==
+=== Chest loot ===
+Topaz is one of the weighted treasures in ancient city chests, alongside [[Crystal Heart]]s and [[Divine Fragment]]s.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/ancient_city.json}}</ref>
+{{Sources}}
+
+== Usage ==
+=== Trading ===
+{| class="wikitable"
+! Villager !! Level !! Wants !! Gives
+|-
+| [[Jeweler]] || Expert || 14 × {{ItemLink|Obol}} + {{ItemLink|Topaz}} || {{ItemLink|Topaz Earrings}}
+|-
+| [[Jeweler]] || Master || {{ItemLink|Topaz}} || 10 × {{ItemLink|Obol}}
+|}
+<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/5/sell_topaz.json}}</ref>
+Topaz can either be turned into [[jewelry]] or sold back to a Master-level Jeweler for 10 [[Obol]]s.
+
+== Advancements ==
+Obtaining topaz grants ''Canto IV'' ("Raid Tartarus") in the [[Advancements/Tutorial|Tutorial]] tab, which rewards two [[Crystal Heart]]s. It follows ''Canto III'' and is the last of the four.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_topaz.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Gems can now be sold to the Jeweler.}}
+}}
+
+== Trivia ==
+* Like the other gems, topaz is built on a fermented spider eye.
+
+== See also ==
+* [[Topaz Earrings]]
+* [[Jewelry]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Items]]
+[[Category:Jewelry]]

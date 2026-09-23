@@ -1,0 +1,68 @@
+{{Vanilla|Armorer}}
+{{Infobox
+|title=Engineer
+|type=[[Villager]] profession
+|vanilla={{MCW|Armorer}}
+|rarity_label=Job site block
+|rarity={{ItemLink|Blast Furnace}}
+}}
+The '''Engineer''' is a [[villager]] profession that sells redstone components in bulk. It replaces the {{MCW|Armorer|armorer}}, and its job site block is the {{ItemLink|Blast Furnace}}. It sells no armor and buys nothing.
+
+== Trades ==
+{| class="wikitable"
+! Level !! Villager wants !! Villager gives !! Villager XP
+|-
+! rowspan="5" | Novice
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Comparator}} || 20
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Composter}} || 20
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Note Block}} || 20
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Block}} || 20
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Repeater}} || 20
+|-
+! rowspan="3" | Apprentice
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Lamp}} || 40
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Copper Eye}} || 40
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Waxed Copper Bulb}} || 40
+|-
+! rowspan="4" | Journeyman
+| {{ItemLink|Obol}} || 32 × {{ItemLink|Dispenser}} || 40
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Dropper}} || 40
+|-
+| {{ItemLink|Obol}} || 32 × {{ItemLink|Hopper}} || 40
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Observer}} || 40
+|-
+! rowspan="3" | Expert
+| {{ItemLink|Obol}} || 32 × {{ItemLink|Crafter}} || 40
+|-
+| {{ItemLink|Obol}} || 32 × {{ItemLink|Piston}} || 40
+|-
+| {{ItemLink|Obol}} || 32 × {{ItemLink|Sticky Piston}} || 40
+|-
+! rowspan="1" | Master
+| {{ItemLink|Obol}} || {{ItemLink|Geothermal Bundle}} || 60
+|}
+All trades can be used 999 times before restocking, and every level offers all of its trades.<ref>{{Source|MF_datapack/data/minecraft/trade_set/armorer/level_1.json}}</ref>
+
+* From Novice to Expert the engineer sells stacks of 32 or 64 redstone components for 1 obol each, using the pack's names for the redstone blocks ([[Electric Comparator]], [[Electric Repeater]], [[Electric Block]], [[Electric Lamp]], [[Copper Eye]]).
+* At Master level it sells the [[Bundles#Geothermal Bundle|Geothermal Bundle]], a bundle holding 4 [[Flowstone|flowstone]], 4 [[Speleothem|speleothems]], 4 lava buckets, 4 cauldrons and 8 glass.<ref>{{Source|MF_datapack/data/matcha/villager_trade/armorer/5/lava_kit.json}}</ref>
+
+Like every villager, an engineer that has been traded with also buys its [[favorite food]] once.
+
+== Trivia ==
+* The Geothermal Bundle's internal name is <code>lava_kit</code>. Its contents are the blocks needed to fill cauldrons with lava from dripping speleothems, as in a vanilla {{MCW|Pointed Dripstone|pointed dripstone}} lava farm.
+* Internally the profession is still <code>minecraft:armorer</code>; only its displayed name changes.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Villager professions]]
+[[Category:Trading]]

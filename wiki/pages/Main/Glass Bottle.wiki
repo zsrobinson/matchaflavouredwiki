@@ -1,0 +1,59 @@
+{{Vanilla|Glass Bottle}}
+{{Infobox auto}}
+A '''glass bottle''' is a container for liquids. It is far cheaper to make in Matcha Flavoured than in vanilla ''Minecraft'', because the pack uses bottles in many recipes: every preserve and pickle in the [[Food|food system]], [[benzene]], [[Milk Bottle|milk bottles]] and [[oil]]. Filled with water it becomes a '''[[#Water bottle|water bottle]]''', which stacks to 64 and is used in crafting as a source of water.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+* Three [[glass]] in a V shape make 9 bottles, three times the vanilla output.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/glass_bottle.json}}</ref>
+* A single glass block makes 3 bottles on its own.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/glass_bottle_alternate.json}}</ref>
+Both give 3 bottles per glass. The vanilla recipe is removed. Picking up glass unlocks the V-shaped recipe.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/glass.json}}</ref>
+
+=== Returned from crafting ===
+Recipes that use up a water bottle give the empty bottle back to the player. This covers flower cloning, making [[mud]], clay from mud, concrete from concrete powder, aging copper, [[phosphor]], green [[Dyes|dye]], [[Stabilized Estus|stabilized estus]], the [[Hell-Bound Book|hell-bound book]] and a number of foods. The bottle is added to the inventory by a function when the recipe is crafted, not left in the crafting grid.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/advancement_glass_bottle_from_crafting.mcfunction}}</ref> Eating a jar of [[Glow Berry Jam|glow berry jam]] also leaves a bottle.
+
+=== Other sources ===
+{{Sources}}
+
+== Usage ==
+{{Uses}}
+
+== Water bottle ==
+{{Infobox auto|Potion|title=Water Bottle}}
+A '''water bottle''' is a glass bottle filled from a water source, as in vanilla. The pack changes it in two ways:
+* '''It stacks to 64.''' When a player who is not in Creative mode picks up or fills a water bottle, the pack swaps it for an identical water bottle that stacks to 64.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/water_bottle/process_water_bottle.mcfunction}}</ref> The check does not run in Creative mode, where the game refills items and the swap could duplicate bottles.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/water_bottle/check_if_water_bottle_should_be_processed.mcfunction}}</ref>
+* '''It is a crafting ingredient.''' Many of the pack's recipes use a water bottle as their water. The recipe book shows these ingredients as a plain, contentless potion, which vanilla names "Uncraftable Potion"; the pack renames it "Water Bottle" so the recipes read correctly.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> The recipes accept any potion in that slot.
+
+Recipes that use a water bottle include:
+{| class="wikitable"
+! Recipe !! Result
+|-
+| Water bottle + 8 [[dirt]] || 8 [[mud]]
+|-
+| Water bottle + 8 mud || 4 clay
+|-
+| Water bottle + 8 concrete powder || 8 concrete
+|-
+| Water bottle + a copper block (or copper item) || the next oxidation stage
+|-
+| Water bottle + flower + bone meal || 4 of that flower (see [[Hyacinth#Cloning]])
+|-
+| Water bottle + [[Sulfur Chunk|sulfur chunk]] + 4 [[Glow Lichen|glow lichen]] || 8 [[phosphor]]
+|-
+| Water bottle + raw copper + sulfur chunk || 2 green dye
+|}
+Water bottles can also be caught while [[fishing]]; the [[Angler's Almanac]] gives the chance as 9% of junk catches.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/junk/water_bottle.json}}</ref>
+
+== History ==
+{{History
+|{{History line|0.5-alpha|Glow berry jam leaves a glass bottle when eaten.}}
+{{History line|1.10|"Uncraftable Potion" was renamed "Water Bottle" to make recipes clearer.<br />The glass bottle recipe unlocks properly.}}
+{{History line|1.12.1-alpha|Cloning dripleaves and crafting mud give the glass bottle back.}}
+{{History line|1.12.2|Water bottles no longer duplicate in Creative mode.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Items]]

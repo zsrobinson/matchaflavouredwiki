@@ -1,0 +1,43 @@
+{{Infobox auto
+|type=Gem
+}}
+'''Ruby''' is a gem found in [[Bastion Remnant|bastion remnants]]. It is used to buy the [[Ruby Circlet]] from the [[Jeweler]].
+
+== Obtaining ==
+=== Chest loot ===
+One ruby is guaranteed in every bastion bridge, hoglin stable and treasure room chest.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_treasure.json}}</ref>
+{{Sources}}
+
+== Usage ==
+=== Trading ===
+{| class="wikitable"
+! Villager !! Level !! Wants !! Gives
+|-
+| [[Jeweler]] || Apprentice || 4 × {{ItemLink|Obol}} + {{ItemLink|Ruby}} || {{ItemLink|Ruby Circlet}}
+|-
+| [[Jeweler]] || Master || {{ItemLink|Ruby}} || 8 × {{ItemLink|Obol}}
+|}
+<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/5/sell_ruby.json}}</ref>
+A ruby can either be turned into [[jewelry]] or sold back to a Master-level Jeweler for 8 [[Obol]]s.
+
+== Advancements ==
+Obtaining a ruby grants ''Canto II'' ("Pillage the Remnants of Pandaemonium") in the [[Advancements/Tutorial|Tutorial]] tab, which rewards a [[Crystal Heart]]. It follows ''Canto I''.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_ruby.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Gems can now be sold to the Jeweler.}}
+}}
+
+== Trivia ==
+* Like the other gems, ruby is built on a fermented spider eye.
+
+== See also ==
+* [[Ruby Circlet]]
+* [[Jewelry]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Items]]
+[[Category:Jewelry]]

@@ -1,0 +1,51 @@
+{{Infobox auto
+|renewable=Yes
+}}
+
+A '''wooden spear''' is the [[Wooden equipment|wooden]] [[spear]], crafted from [[Planks|planks]]. It deals 1 damage at an attack speed of 1.538 and has 59 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_spear.json}}</ref>
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+
+The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
+
+=== Loot ===
+{{Sources}}
+
+== Usage ==
+
+=== Combat ===
+
+It deals 1 damage with an attack speed of 1.538.
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with {{MCW|Planks|planks}}. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 59
+|-
+| Attack damage || 1
+|-
+| Attack speed || 1.538
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added translation support for all armor and tools.}}
+}}
+
+== See also ==
+* [[Wooden equipment]]
+* [[Weapons]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Weapons]]

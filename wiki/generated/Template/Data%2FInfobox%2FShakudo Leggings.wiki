@@ -5,7 +5,7 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Armor}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Cleanses: Slowness]]<br />[[8]]<br />[[(00:30)]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Cleanse|{{G|Cleanse}} Cleanses: Slowness]]<br />[[Magic protection|{{G|Magic protection}} 8]]<br />[[Divinity|{{G|Half heart}} {{G|Cooldown}} (00:30)]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=500

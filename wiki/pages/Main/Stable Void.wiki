@@ -1,0 +1,32 @@
+{{Vanilla|Ender Pearl}}
+{{Infobox auto}}
+A '''Stable Void''' is the [[Matcha Flavoured]] name for the {{MCW|Ender Pearl|ender pearl}}. It still works as a throwable teleport item, and it is a magic ingredient: every [[Stabilized Estus]] needs one. The pack makes it much easier to get than in vanilla.<ref>{{Cite video|quote=Don't worry too much, ender pearls are not nearly as hard to get anymore. Most mob drops have been increased to reduce the need for mob grinders or tedium. If you find and kill an Enderman, you'll get a pearl.}}</ref>
+
+== Obtaining ==
+{{Sources}}
+An {{MCW|Enderman}} killed by a player always drops one Stable Void, plus 0–1 per level of Looting, and the dropped pearls stack to 64.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/enderman.json}}</ref> A novice [[Mouthpiece]] sells 16 Stable Voids for one [[Obol]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/1/ender_pearl.json}}</ref>
+
+== Usage ==
+=== Crafting ingredient ===
+{{Uses}}
+
+=== Throwing ===
+Throwing a Stable Void teleports the player as in vanilla. The pack adds ender pearl damage to the <code>#minecraft:is_magic</code> damage type tag, so [[Magic protection]] reduces it.<ref>{{Source|MF_datapack/data/minecraft/tags/damage_type/is_magic.json}}</ref> The pack also sets the <code>ender_pearls_vanish_on_death</code> game rule to false, so thrown pearls stay in flight when their thrower dies.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Stable Voids from trial chamber chests now stack to 64.}}
+{{History line|1.12.2|Fixed Stable Voids sometimes not stacking to 64.}}
+}}
+
+== See also ==
+* [[Stabilized Estus]]
+* [[Enchanting]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Items]]
+[[Category:Renamed items]]

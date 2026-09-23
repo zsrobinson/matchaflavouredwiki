@@ -1,0 +1,44 @@
+{{Vanilla}}
+
+{{Infobox auto|Melon Slice}}
+
+A '''melon''' is a block whose slices are a raw [[ingredient]] with the [[intrinsic]] {{EffectLink|Fire Resistance}}. A '''melon slice''' eaten raw heals {{Hp|1}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/melon_slice.json}}</ref> Cooked and prepared, it grants Fire Resistance for up to 10 minutes, which the developer suggests taking before a trip to [[Hell]].<ref>{{Cite video|quote=If they're planning a trip to hell, they'll want to find some melons first.}}</ref>
+
+== Obtaining ==
+
+=== Breaking ===
+A melon block drops the pack's melon slices, or itself with Silk Touch.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/melon.json}}</ref>
+
+=== Crafting ===
+{{Recipes|Melon Slice}}
+A melon block can be crafted back into 9 slices.
+
+{{Sources|Melon Slice}}
+
+== Usage ==
+
+=== Food ===
+Eating a melon slice heals {{Hp|1}}.
+
+Picking up a melon or a melon slice unlocks [[grilled melon]] (0:10), [[rind jam]] (5:00) and [[melon sorbet]] (10:00), the three Fire Resistance foods.
+
+{{Uses|Melon Slice}}
+
+== Behavior ==
+Endermen can only pick up melons, pumpkins and TNT.
+
+== History ==
+{{History|
+{{History line|0.6-alpha|Melon stem textures added.}}
+{{History line|1.10|Melon recipes unlock from raw melons.}}
+{{History line|1.12.1-alpha|Melons can be crafted into slices.}}
+}}
+
+== See also ==
+* [[Intrinsic]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

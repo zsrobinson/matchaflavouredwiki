@@ -1,0 +1,56 @@
+{{Vanilla|Anvil}}
+{{Infobox auto}}
+An '''anvil''' is a block used to repair equipment, rename items and apply enchanted books. In [[Matcha Flavoured]] it is the only way to apply [[blessing]]s and other [[enchanting|enchantments]], and the pack changes how experience and repair costs work with it so that repairs never become too expensive.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The pack adds a cheaper recipe that uses three [[Steel Alloy]] in place of the three blocks of iron.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/anvil.json}}</ref> The vanilla recipe with blocks of iron is still in the game, although the {{Version|1.03}} release notes say it was removed; see [[#Notes|Notes]].
+
+== Usage ==
+=== Applying enchantments ===
+Blessings, [[Ofuda]] and found books are combined with equipment in an anvil, as in vanilla. The pack lowers the anvil cost multiplier of every vanilla enchantment to 1 and of most of its own enchantments to 0, so combining books costs few levels.<ref>{{Source|MF_datapack/data/minecraft/enchantment/unbreaking.json}}</ref>
+
+=== Repairing ===
+{{Main|Repairing}}
+Equipment is repaired in the anvil with its base material. The "Repair & Reuse" advancement describes this: "Anvils made from Steel can repair Any Equipment with its corresponding Base-Metal Ingot forever". Repairing in the crafting grid is disabled.<ref>{{Cite changelog|1.12.1-alpha|quote=Repairing Equipment in the crafting menu is now disabled}}</ref>
+
+=== Experience ===
+The pack does not let the player keep experience: each tick it sets every player's level and points to 0. After a player opens an anvil, the next change to their inventory (such as placing an item in the anvil) gives them 100 levels and exempts them from the reset, so anvil use does not fail for lack of levels.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/set_xp.mcfunction}}</ref> The exemption ends when a shared 31-second timer runs out; the timer is restarted whenever a player's inventory changes, such as when taking an item out of the anvil.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/check_anvil_interaction.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction}}</ref> The release notes explain the reason: data packs cannot remove the experience requirement from anvil repairs, so the pack gives levels only while the anvil is in use.<ref>{{Cite changelog|0.6-alpha|quote=XP is not shown unless you interact with an anvil, since I can't remove XP requirements for anvil repairing}}</ref>
+
+=== Repair cost ===
+Every time the player's inventory changes, the prior-work penalty (the <code>repair_cost</code> component) of every item in the main inventory and hotbar is reset to 0. The penalty therefore never builds up, and items can be repaired and re-enchanted any number of times.<ref>{{Source|MF_datapack/data/endless_repairs/function/reset_breakable_repair_cost.mcfunction}}</ref> This part of the pack, in the <code>endless_repairs</code> namespace, is based on MiziraGamez's "Repair Cost Remover" data pack.<ref>{{Source|MF_datapack/data/endless_repairs/README.txt}}</ref> Items in the armor slots and offhand are not reset until they are moved into the inventory.
+
+== Appearance ==
+The pack retextures the anvil with a brick-red color. The developer confirmed this is intended, so that anvils can be used in brick builds.<ref>{{Cite changelog|1.12|quote=The Anvil texture thing isn't a bug, I did it so I could build with brick-coloured anvils}}</ref>
+
+== Advancements ==
+{| class="wikitable"
+! Advancement !! Description !! Requirement
+|-
+| Repair & Reuse || Anvils made from Steel can repair Any Equipment with its corresponding Base-Metal Ingot forever || Obtain an anvil.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_avil.json}}</ref>
+|}
+
+== History ==
+{{History|
+{{History line|0.6-alpha|Experience is hidden unless the player interacts with an anvil.}}
+{{History line|1.03|Added an error sprite for anvil smithing. The release notes say the anvil can no longer be crafted from blocks of iron.}}
+{{History line|1.10|Anvils and anvil experience work in multiplayer. The experience timer increased from 15 to 30 seconds, and the levels given from 50 to 100.<ref>{{Cite changelog|1.10|quote=Increased anvil xp timer from 15s to 30, and increased levels from 50 to 100}}</ref>}}
+}}
+
+== Notes ==
+* The vanilla anvil recipe (three blocks of iron and four iron ingots) is not blocked in the pack's <code>pack.mcmeta</code> filter, so it is still craftable despite the {{Version|1.03}} release notes.<ref>{{Cite changelog|1.03|quote=Anvil can no longer be crafted from iron blocks (I dont want players spending too many resources on stuff if they don't have to)}}</ref>
+* The experience timer is a single timer for all players, and the check that ends the exemption removes it from every player at once. In multiplayer, one player's inventory changes can extend another player's anvil time.
+
+== See also ==
+* [[Enchanting]]
+* [[Repairing]]
+* [[Grindstone]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Blocks]]
+[[Category:Utility blocks]]

@@ -1,0 +1,48 @@
+{{Vanilla|Fletcher}}
+{{Infobox
+|title=Fletcher
+|type=[[Villager]] profession
+|vanilla={{MCW|Fletcher}}
+|rarity_label=Job site block
+|rarity=[[File:Fletching Table.png|16px|link=]] Fletching Table
+}}
+The '''Fletcher''' is a [[villager]] profession that sells arrows by the stack and the [[Compound Bow]]. Its job site block is the Fletching Table. Unlike the vanilla fletcher, it buys no sticks, flint or string.
+
+== Trades ==
+{| class="wikitable"
+! Level !! Villager wants !! Villager gives !! Villager XP
+|-
+! rowspan="3" | Novice
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Arrow}} || 10
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Tipped Arrow|Apotropaic Arrow|link=Apotropaic Arrow}} || 10
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Tipped Arrow|Nightshade Arrow|link=Nightshade Arrow}} || 10
+|-
+! rowspan="1" | Apprentice
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Spectral Arrow}} || 40
+|-
+! rowspan="1" | Journeyman
+| {{ItemLink|Obol}} || {{ItemLink|Compound Bow}}<br /><small>Power II</small> || 80
+|-
+! Expert
+| colspan="3" style="text-align:center" | ''No trades''
+|-
+! Master
+| colspan="3" style="text-align:center" | ''No trades''
+|}
+All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fletcher/1/arrow.json}}</ref>
+
+* At Novice level the fletcher sells 64 arrows, 64 [[Apotropaic Arrow]]s or 64 [[Nightshade Arrow]]s for 1 obol each. The two tipped arrows carry the potion contents of Healing II and Poison II respectively.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fletcher/1/apotropaic_arrow.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/fletcher/1/nightshade_arrow.json}}</ref>
+* At Apprentice level it sells 64 spectral arrows.
+* At Journeyman level it sells a [[Compound Bow]] enchanted with Power II.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fletcher/3/compound_bow.json}}</ref>
+* The fletcher has no Expert or Master trades.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fletcher/4/filler.json}}</ref>
+
+Like every villager, a fletcher that has been traded with also buys its [[favorite food]] once.
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Villager professions]]
+[[Category:Trading]]

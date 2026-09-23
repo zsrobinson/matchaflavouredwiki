@@ -1,0 +1,57 @@
+{{Vanilla|Turtle Scute}}
+{{Infobox auto}}
+A '''Divine Fragment''' is a rare magic material that replaces the {{MCW|Turtle Scute|turtle scute}}. It comes from breaking [[spawner]]s and defeating powerful mobs, and is needed for late-game items: [[Adamant Alloy]], [[Electrum Alloy]], [[Crystal Heart]]s, [[Bedrock Buster]]s, [[Eye of Ender|eyes of ender]] and the [[Prayer of Prometheus]]. Nine fragments make a [[Divine Favor]].
+
+== Obtaining ==
+Divine fragments cannot be farmed from ordinary mobs. The developer's video describes them as the pack's main answer to mob grinders: every spawner broken gives one, so a spawner is worth more broken than built into a farm.<ref>{{Cite video|quote=I wanted to have a way to disincentivize mob grinders and I think this one mechanic does a lot of the heavy lifting. You could make a simple mob grinder, but the divine fragment is staring you in the face. If you want to get to the end, you need that fragment.}}</ref>
+
+=== Sources ===
+{{Sources}}
+Every source uses the same fragment, which has rare (aqua) rarity and an enchantment glint.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/divine_fragment.json}}</ref> Spawners always drop exactly one: Fortune has no effect on them.
+
+=== Crafting ===
+{{Recipes}}
+A Divine Favor can be broken down into 9 fragments, and 9 fragments craft a Divine Favor.
+
+=== Trading ===
+A master-level [[Mouthpiece]] sells one Divine Fragment for 2 [[Crystal Heart]]s and an echo shard.<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/5/crystal_heart.json}}</ref>
+
+== Usage ==
+{{Uses}}
+One fragment and one [[Stabilized Estus]] make 16 eyes of ender, enough to fill an {{MCW|End Portal|end portal}}. A fragment and a {{MCW|Trial Key|trial key}} make an {{MCW|Ominous Trial Key|ominous trial key}}.
+
+== Behavior ==
+A Divine Fragment lying on the ground gives off small electric spark particles.<ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/item_particles.mcfunction}}</ref>
+
+The fragment is a turtle scute with rare rarity. Ordinary turtle scutes, such as those shed by baby turtles, are not kept: when a player outside Creative mode picks up a common-rarity scute, it is replaced with a [[Turtle Shellmet]].<ref>{{Source|MF_datapack/data/matcha/function/remove_vanilla_items/turtle_scute.mcfunction}}</ref> The vanilla turtle shell recipe is removed.
+
+== Advancements ==
+{| class="wikitable"
+! Advancement !! Description !! Requirement
+|-
+| A Vestige of Divinity || A Relic only obtained by breaking Spawners or vanquishing powerful Forces || Obtain a Divine Fragment. Rewards [[Obol]]s.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_divine_fragment.json}}</ref>
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Piglin brutes now drop Divine Fragments.}}
+{{History line|0.5-alpha|Evokers now drop Divine Fragments.}}
+{{History line|0.6-alpha|Removed from the librarian's trades, to discourage mob farms.<ref>{{Cite changelog|0.6-alpha|quote=Removed Divine Fragment from Librarian Trade (done to disincentivise mob farms)}}</ref>}}
+{{History line|1.02|Fortune now works on spawners.}}
+{{History line|1.03|Fortune no longer works on spawners.<ref>{{Cite changelog|1.03|quote=Fortune NO LONGER works on spawners. I think early game should be defined by the rarity of this material. 4 Fragments per spawner is just too much.}}</ref> Added to trial chambers. [[Electrum Alloy]] now needs a Divine Fragment.}}
+{{History line|1.10|Papal outposts provide some early fragments, according to the release notes.}}
+{{History line|1.12.1-alpha|Can be bought from the Mouthpiece for Crystal Hearts and an echo shard. Turtle scutes that are not the pack's Divine Fragment are removed.}}
+}}
+
+== See also ==
+* [[Divine Favor]]
+* [[Enchanting]]
+* [[Spawner]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Items]]
+[[Category:Renamed items]]

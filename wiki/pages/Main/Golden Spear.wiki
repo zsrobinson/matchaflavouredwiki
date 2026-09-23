@@ -1,0 +1,64 @@
+{{Infobox auto
+|intrinsics={{MCW|Looting}} II
+|renewable=Yes
+}}
+
+A '''golden spear''' is the [[Golden equipment|golden]] [[spear]], crafted from [[Gold Ingot|gold ingots]]. It deals 1 damage at an attack speed of 1.053 and has 350 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_spear.json}}</ref>
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+
+The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
+
+=== Loot ===
+{{Sources}}
+
+The loot table <code>matcha:equipment/gold/spear</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+
+== Usage ==
+
+=== Combat ===
+
+It deals 1 damage with an attack speed of 1.053.
+
+=== Intrinsics ===
+
+* {{MCW|Looting}} II
+
+The intrinsics are stored on the item and applied when it enters an inventory. See [[Golden equipment]] for how the tier's intrinsics work together.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with [[Gold Ingot|gold ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+=== Smelting ===
+In a [[Blast Furnace|blast furnace]], it smelts into one [[Gold Ingot|gold ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/gold_ingot_from_blasting_gold_materials.json}}</ref>
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 350
+|-
+| Attack damage || 1
+|-
+| Attack speed || 1.053
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added translation support for all armor and tools.}}
+{{History line|1.12.2|Ruined portal loot was reduced so that gold cannot be obtained before iron.}}
+}}
+
+== See also ==
+* [[Golden equipment]]
+* [[Weapons]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Weapons]]

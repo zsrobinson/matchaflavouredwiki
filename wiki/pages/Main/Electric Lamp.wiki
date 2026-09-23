@@ -1,0 +1,22 @@
+{{Vanilla|Redstone Lamp}}
+{{Infobox auto}}
+An '''electric lamp''' is a light that turns on when powered. It is the vanilla {{MCW|Redstone Lamp|redstone lamp}} under a new name, and it works the same way, giving light level 15 while powered.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The pack adds a cheap recipe: eight [[glass]] around an [[Electric Wire|electric wire]] make 8 electric lamps, like an incandescent bulb.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/incandescent_lamp.json}}</ref> The vanilla recipe, four wire around [[Crystallized Estus|crystallized estus]] (the pack's glowstone), still works and makes one.
+
+=== Trading ===
+The [[Engineer]] sells 64 electric lamps for 1 [[obol]] at the apprentice level.<ref>{{Source|MF_datapack/data/matcha/villager_trade/armorer/2/redstone_lamp.json}}</ref>
+
+== Behavior ==
+The pack adds electric lamps to the pickaxe's mineable list, so pickaxes break them quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Redstone]]
+[[Category:Light sources]]
+[[Category:Renamed items]]

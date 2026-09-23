@@ -1,0 +1,18 @@
+{{Vanilla|Woodland Mansion}}
+A '''woodland mansion''' generates as in vanilla. [[Matcha Flavoured]] changes its chest loot and one of its rooms.
+
+== Structure ==
+The spider room <code>woodland_mansion/1x1_as2</code> is replaced. Its spider spawner spawns spiders tagged <code>NoDrops</code>, which drop nothing, like other spawner mobs in the pack (see [[Spawner]]).<ref>{{Source|MF_datapack/data/minecraft/structure/woodland_mansion/1x1_as2.nbt}}</ref>
+
+The [[Archaeologist]] sells Mansion Maps at level 5. See [[Explorer maps]].
+
+== Loot ==
+=== Chests ===
+{{Data/Loot/minecraft/chests/woodland_mansion}}
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Structures]]
+[[Category:Generated structures]]

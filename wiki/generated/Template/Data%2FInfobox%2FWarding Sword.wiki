@@ -5,13 +5,13 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[1]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Warding|{{G|Warding}} 1]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=500
 |damage={{Hp|5}}
 |attackspeed=1.6
-|miningspeed=340282349999999991754788743781432688640
+|miningspeed=1.5
 |repair=[[Nazar]], [[Block of Lapis Lazuli]]
 |tooltip={{G|Attack damage}} 5<br />{{G|Attack speed}} 1.6<br />Repaired with:<br />Nazar<br />Block of Lapis Lazuli
 |id=<code>matcha:warding_sword</code>

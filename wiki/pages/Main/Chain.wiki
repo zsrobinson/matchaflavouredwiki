@@ -1,0 +1,49 @@
+{{Vanilla|Chain}}
+{{Infobox auto|Iron Chain|title=Chain}}
+A '''chain''' is a thin decorative block that can be placed along any axis. Matcha Flavoured makes chains far cheaper to craft and lets players climb them like ladders. Both the '''iron chain''' and the '''copper chain''' (with its oxidized and waxed forms) are covered here.
+
+== Obtaining ==
+=== Crafting ===
+The vanilla recipe, an ingot between two nuggets for one chain, is replaced by recipes that use only one material:<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+{| class="wikitable"
+! Ingredients (3 in a column) !! Chains
+|-
+| 3 iron nuggets || 2 iron chains
+|-
+| 3 [[Iron Ingot|iron ingots]] || 18 iron chains
+|-
+| 3 [[Steel Alloy|steel alloy]] || 36 iron chains
+|-
+| 3 copper nuggets || 2 copper chains
+|}
+{{Recipes|Iron Chain}}
+
+=== Stonecutting ===
+A [[stonecutter]] gives 6 chains from an ingot, 12 from steel alloy and 54 from a block of iron or copper. Each oxidized and waxed copper block cuts into 54 of its matching chain.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_chain_from_stonecutting_iron_block.json}}</ref>
+
+Picking up iron nuggets or ingots unlocks the nugget recipe, and picking up steel alloy unlocks the steel recipe. The recipe from iron ingots never appears in the recipe book, because the unlock names a recipe ID (<code>iron_chain_from_iron</code>) that does not exist; the recipe still works when the ingots are placed in the grid by hand.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/iron_ingot.json}}</ref>
+
+== Usage ==
+{{Uses|Iron Chain}}
+* Iron chains are the material for [[Chainmail armor|chainmail armor]], crafted in the shape of vanilla armor.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/chainmail_chestplate.json}}</ref>
+* Copper chains can be aged with a [[Glass Bottle#Water bottle|water bottle]], like other copper blocks.
+
+== Behavior ==
+Chains are '''climbable''': every chain in the <code>#minecraft:chains</code> tag, iron or copper, waxed or not, works like a ladder when hung vertically.<ref>{{Source|MF_datapack/data/minecraft/tags/block/climbable.json}}</ref>
+
+== History ==
+{{History
+|{{History line|1.03|Iron chains unlock when the player picks up iron ingots.}}
+{{History line|1.10|Iron chains can be cut from iron ingots in a stonecutter.}}
+{{History line|1.12.2|Chains can be climbed.}}
+}}
+
+== Trivia ==
+* Iron golems drop iron ingots, which three at a time make 18 chains. The developer has said that iron farms built on this are left in on purpose: "I am aware of chain iron farms...Im leaving it in. If people aren't melting golems, I'm happy."<ref>{{Cite changelog|1.10|quote=I am aware of chain iron farms...Im leaving it in. If people aren't melting golems, I'm happy.}}</ref>
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Decoration]]

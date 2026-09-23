@@ -1,0 +1,58 @@
+{{Infobox auto
+|renewable=Yes
+}}
+
+A '''copper spear''' is the [[Copper equipment|copper]] [[spear]], crafted from [[Copper Ingot|copper ingots]]. It deals 2 damage at an attack speed of 1.176 and has 190 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_spear.json}}</ref>
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+
+The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
+
+=== Loot ===
+{{Sources}}
+
+The loot table <code>matcha:equipment/copper/spear</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+
+== Usage ==
+
+=== Combat ===
+
+It deals 2 damage with an attack speed of 1.176.
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with [[Copper Ingot|copper ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+=== Smelting ===
+In a [[Blast Furnace|blast furnace]], it smelts into one [[Copper Ingot|copper ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/copper_ingot_from_blasting_copper_materials.json}}</ref>
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 190
+|-
+| Attack damage || 2
+|-
+| Attack speed || 1.176
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added translation support for all armor and tools.}}
+{{History line|1.12.1-alpha|Copper can no longer be smelted in an oven; it needs a mud kiln or blast furnace.}}
+{{History line|1.12.2|The blast furnace recipe changed and diamonds now drop raw, which the release notes describe as extending the copper and iron ages.}}
+}}
+
+== See also ==
+* [[Copper equipment]]
+* [[Weapons]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Weapons]]

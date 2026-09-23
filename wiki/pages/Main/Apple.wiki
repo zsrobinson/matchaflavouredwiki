@@ -1,0 +1,41 @@
+{{Vanilla}}
+
+{{Infobox auto}}
+
+An '''apple''' is a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Regeneration}}. Eaten raw, it heals {{Hp|2}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/apple.json}}</ref> Cooked into a [[baked apple]], preserved as [[canned apples]] or baked into an [[apple empanada]], it grants Regeneration for 10 seconds, 1 minute and 3 minutes.
+
+== Obtaining ==
+
+=== Breaking ===
+Oak and dark oak leaves drop apples. The leaves' loot table has two independent apple rolls when broken without shears or Silk Touch, each with a 0.75% chance: one is increased by Fortune and the other by the Electrum tool [[intrinsic]], both to 0.9%, 1.5%, 2% and 4% at levels I to IV.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/oak_leaves.json}}</ref>
+
+{{Sources}}
+
+=== Replacement ===
+An apple without the pack's tooltip (for example one given by another mod or datapack) is replaced with the pack's apple when it enters the inventory of a player who is not in Creative mode, one at a time.<ref>{{Source|MF_datapack/data/matcha/function/remove_vanilla_items/apple.mcfunction}}</ref>
+
+== Usage ==
+
+=== Food ===
+Eating an apple heals {{Hp|2}}. It keeps its vanilla nutrition, which has no lasting effect because [[hunger]] is removed.
+
+Picking up an apple unlocks the [[baked apple]] recipe. Apples are cooked into baked apples before they can be preserved or baked, and are also used raw in [[golden apple]]s, [[apple cinnamon oatmeal]] and [[mead]].
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|1.03|Apples heal the amount shown in their tooltip.}}
+{{History line|1.12.1-alpha|Apple drop chance raised from 0.5% to 0.75% (4% at the highest level, up from 2.5%). Plain apples from other sources are replaced with the pack's version.}}
+}}
+
+== See also ==
+* [[Golden Apple]]
+* [[Intrinsic]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

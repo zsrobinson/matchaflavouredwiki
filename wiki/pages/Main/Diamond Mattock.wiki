@@ -1,0 +1,65 @@
+{{Infobox auto
+|renewable=No
+}}
+
+A '''diamond mattock''' is the [[Diamond equipment|diamond]] [[mattock]], crafted from [[Diamond|diamonds]]. It mines at speed 8 and has 2500 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_mattock.json}}</ref>
+
+As a [[mattock]], it works as both a shovel and a hoe, at a lower mining speed than the diamond shovel or hoe.
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+
+=== Loot ===
+{{Sources}}
+
+The loot table <code>matcha:equipment/diamond/mattock</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+
+== Usage ==
+
+=== Mining ===
+
+It mines both shovel and hoe blocks at speed 8.
+
+In Matcha Flavoured, hoes also mine wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+
+=== Combat ===
+
+It deals 4 damage with an attack speed of 3.
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with [[Diamond|diamonds]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+=== Smelting ===
+In a [[Blast Furnace|blast furnace]], it smelts into one [[Diamond|diamond]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/diamond_from_blasting_diamond_materials.json}}</ref>
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 2500
+|-
+| Mining speed || 8
+|-
+| Attack damage || 4
+|-
+| Attack speed || 3
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added translation support for all armor and tools.}}
+{{History line|1.12.2|Diamond ores now drop [[Raw Diamond|raw diamonds]], which must be smelted in a [[Blast Furnace|blast furnace]].}}
+}}
+
+== See also ==
+* [[Diamond equipment]]
+* [[Tools]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Tools]]

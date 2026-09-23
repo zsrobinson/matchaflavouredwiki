@@ -1,0 +1,36 @@
+{{Vanilla|Honey Bottle}}
+
+{{Infobox auto|Honey Bottle}}
+
+'''Honey''', collected as a '''honey bottle''', is a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Speed}}. The honey bottle itself is unchanged from vanilla; heated into [[honey ginger tea]], fermented into [[mead]] or poured on [[honied French toast]], it grants Speed for 30 seconds, 5 minutes and 3 minutes (Speed II).
+
+== Obtaining ==
+
+{{Recipes|Honey Bottle}}
+
+{{Sources|Honey Bottle}}
+
+== Usage ==
+
+=== Food ===
+A honey bottle is drunk as in vanilla and removes Poison. It doesn't heal, since it keeps the vanilla food values and the pack's healing comes from its own foods.
+
+Picking up a honey bottle unlocks honey ginger tea, mead, [[bubbling mead]], honied French toast and sugar. Honey bottles also go into [[apple cinnamon oatmeal]]. A honey bottle crafts into 3 [[sugar]], and 4 make a honey block; 4 [[molasses]] also make a honey block.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sugar_from_honey_bottle.json}}</ref>
+
+{{Uses|Honey Bottle}}
+
+== History ==
+{{History|
+{{History line|1.10|Honey recipes unlock from raw honey.}}
+{{History line|1.12.1-alpha|Sugar from honey raised from 2 to 3, the same as vanilla.}}
+}}
+
+== See also ==
+* [[Intrinsic]]
+* [[Molasses]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

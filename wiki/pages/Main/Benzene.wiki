@@ -1,0 +1,41 @@
+{{Infobox auto}}
+'''Benzene''' is a crafted chemical reagent used in magic. It is one of the two ingredients, with [[Stable Void]], that turn [[Estus Ash]] into [[Stabilized Estus]], and it is also needed for every [[Hell-Bound Book]]. Its item is the {{MCW|Endermite Spawn Egg|endermite spawn egg}}, renamed and retextured.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The recipe is shapeless: a [[Glass Bottle]], three [[Hellspore]] and a [[Sulfur Chunk]], so the first Benzene usually requires a trip to [[Hell]]. The crafted Benzene has its entity data removed, so it does not carry an endermite.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/benzene.json}}</ref>
+
+=== Chest loot ===
+{{Sources}}
+
+== Usage ==
+{{Uses}}
+A Hell-Bound Book takes one Benzene directly and one more through its Stabilized Estus, so each blessing costs two Benzene. Benzene is also crafted with an echo shard and two sculk veins into an {{MCW|Ominous Bottle|ominous bottle}}, which is needed for the [[Prayer of Midas]].<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/ominous_bottle.json}}</ref>
+
+== Behavior ==
+Benzene is still a spawn egg item. Like any spawn egg in the pack, using it on a [[spawner]] or trial spawner outside Creative mode destroys every spawner and trial spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
+
+== Advancements ==
+{| class="wikitable"
+! Advancement !! Description !! Requirement
+|-
+| Forbidden Chemistry || Synthesize Benzene: a Chemical Reagent Forbidden by the Old Laws || Obtain Benzene. First advancement of the Hell tab. Rewards [[Obol]]s.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/obtain_benzene.json}}</ref>
+|}
+
+== History ==
+{{History|
+{{History line|1.10|The recipe is unlocked by obtaining Benzene or Hellspore.}}
+{{History line|1.12.1-alpha|Witches no longer drop Benzene.}}
+}}
+
+== See also ==
+* [[Enchanting]]
+* [[Stabilized Estus]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Items]]

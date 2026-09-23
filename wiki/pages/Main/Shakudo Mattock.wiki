@@ -1,0 +1,80 @@
+{{Infobox auto
+|intrinsics={{MCW|Silk Touch}} I
+|renewable=Yes
+}}
+
+A '''shakudo mattock''' is the [[Shakudo equipment|shakudo]] [[mattock]], made by smithing a [[Copper Hoe|copper hoe]] with [[Shakudo Alloy|shakudo alloy]]. It mines at speed 8 and has 1000 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_mattock.json}}</ref>
+
+As a [[mattock]], it works as both a shovel and a hoe, at a lower mining speed than the shakudo shovel or hoe.
+
+== Obtaining ==
+
+=== Smithing ===
+{{Recipes}}
+
+This upgrade needs a [[Smithing Upgrade Template|smithing upgrade template]] in the template slot, which is not used up. The recipe matches the base by item ID, so a copper mattock works as the base as well as a copper hoe; without the template the same base and alloy make a [[Shakudo Hoe|shakudo hoe]] instead.
+
+Enchantments already on the base item are kept. Where the base and the new item share an enchantment, the higher level is used.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
+
+=== Loot ===
+{{Sources}}
+
+The loot table <code>matcha:equipment/shakudo/mattock</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+
+== Usage ==
+
+=== Mining ===
+
+It mines both shovel and hoe blocks at speed 8.
+
+In Matcha Flavoured, hoes also mine wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+
+=== Combat ===
+
+It deals 2 damage with an attack speed of 4.
+
+=== Intrinsics ===
+
+* {{MCW|Silk Touch}} I
+
+The intrinsics are stored on the item and applied when it enters an inventory. See [[Shakudo equipment]] for how the tier's intrinsics work together.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+=== Trading ===
+A [[Weaponsmith|weaponsmith]] of level 2 (Apprentice) buys it for one [[Shakudo Alloy|shakudo alloy]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/shakudo_mattock.json}}</ref>
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 1000
+|-
+| Mining speed || 8
+|-
+| Attack damage || 2
+|-
+| Attack speed || 4
+|}
+
+The tooltip is written by hand and hides the real attributes. For this item it disagrees with the real values: it lists attack damage 1, but the item has 2.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_mattock.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added translation support for all armor and tools. Shakudo armor could not be crafted; this was fixed.}}
+{{History line|1.10|Alloy equipment can be traded to a [[Weaponsmith|weaponsmith]] for its alloy, so players can rebuild old items with updated stats. Shakudo was renamed from "Palatinate" in the language file only, so existing items keep working. Shakudo alloy became more expensive: 3 gold and 6 copper ingots became 2 blocks of gold and 4 blocks of copper.}}
+{{History line|1.12.1-alpha|Smithing no longer needs a base-metal ingot in the template slot; the slot is left empty. Smithing now keeps the enchantments already on the item. Added the "Repaired with" tooltip, and repair materials were made consistent across all alloys. Shakudo intrinsics are now exclusive with the electrum and adamant intrinsics.}}
+{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older items can be updated with <code>/trigger update_item</code>.}}
+}}
+
+== See also ==
+* [[Shakudo equipment]]
+* [[Tools]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Tools]]

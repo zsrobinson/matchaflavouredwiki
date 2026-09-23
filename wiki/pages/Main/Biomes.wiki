@@ -1,0 +1,195 @@
+{{Vanilla|Biome}}
+'''Biomes''' generate in the same places as in vanilla ''Minecraft'', but [[Matcha Flavoured]] overrides 65 of them to change their mob spawns, ore and plant features, and colors. The pack's resource pack also replaces the grass and foliage color maps with its own gradated maps (made by Movpasd), which changes the color of plants in every biome.
+
+== General changes ==
+; Husks everywhere
+: Almost every overworld biome gains [[Husk]]s as a monster spawn (weight 75, groups of 1–2), and the [[Zombie]] weight is raised to 100. In deserts the husk weight is lowered from 80 to 75 and the zombie weight raised from 19 to 100. Husks act as slow, strong "tanks" next to fast zombies; see [[Husk]].<ref>{{Cite changelog|1.10|quote=Husks now spawn in all biomes}}</ref>
+; Silver
+: [[Native Silver]] replaces {{MCW|Emerald Ore|emerald ore}}. Nearly every overworld biome gains a deep silver feature: 3 veins per chunk, or 5 in mountain biomes, in a triangular distribution from 80 blocks below to 80 blocks above the bottom of the world (so most silver is found near Y=-64 and none above Y=16).<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/ore_emerald_deep.json}}</ref><ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/ore_emerald_deep_mountain.json}}</ref> The vanilla mountain emerald feature is kept, but with 50 attempts per chunk instead of 100.<ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/ore_emerald.json}}</ref> The Deep Dark gets both the mountain deep feature and the vanilla feature.
+; Quartz
+: [[Quartz Deposit]]s replace {{MCW|Lapis Lazuli Ore|lapis lazuli ore}}. Their main feature places 12 veins per chunk between Y=-32 and Y=96 (vanilla: 2 veins between Y=-32 and Y=32), so quartz is common at higher elevations and useful for glass.<ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/ore_lapis.json}}</ref>
+; Frozen biomes
+: Snowy and frozen biomes have pale sky and fog colors and drifting white ash particles. Stony Peaks is the only overworld biome override that does not gain a deep silver feature. Swimming in their water causes [[Freezing water|freezing]].
+; Pale Garden
+: The Pale Garden has no hostile mob spawns.
+; Hell
+: Gravel no longer generates in [[Hell]], and [[Hellspore]] (Nether wart) grows naturally on the surface of Nether Wastes and Soul Sand Valleys. See [[Hell#Generation]].
+
+== Changes by biome ==
+Spawn weights are given as (weight, minimum group – maximum group). Features marked + are added and − are removed. Colors are the new values.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/plains.json}}</ref>
+{| class="wikitable sortable"
+! Biome !! Monster and creature spawns !! Features !! Colors and effects
+|-
+| Badlands || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#92a296</code> (was <code>#3f76e4</code>)<br>Fog <code>#eccfbb</code><br>Sky <code>#a4cbdb</code><br>Water fog <code>#4b605a</code>
+|-
+| Bamboo jungle || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#7ebee5</code> (was <code>#3f76e4</code>)
+|-
+| Basalt deltas || — || — || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| Beach || +Husk (75, 1–2)<br>Zombie 95→100 || +Blue orchids and cornflowers<br>−Default flowers || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| Birch forest || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#aebfe2</code> (was <code>#3f76e4</code>)<br>Sky <code>#9ebbf8</code><br>Water fog <code>#2e304c</code>
+|-
+| Cherry grove || +Husk (75, 1–2)<br>Zombie 95→100, group 1–4 || +Deep [[Native Silver|silver]] (5/chunk) || Water <code>#a2c5dd</code> (was <code>#5db7ef</code>)<br>Sky <code>#9ebbf8</code>
+|-
+| Cold ocean || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#aebfe2</code> (was <code>#3d57d6</code>)
+|-
+| Crimson forest || — || −Gravel || Water <code>#941010</code> (was <code>#3f76e4</code>)<br>fewer crimson spores
+|-
+| Dark forest || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| Deep cold ocean || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#aebfe2</code> (was <code>#3d57d6</code>)
+|-
+| Deep dark || — || +Vanilla silver (emerald) ore feature<br>+Deep [[Native Silver|silver]] (5/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| Deep frozen ocean || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#bbcae8</code> (was <code>#3938c9</code>)<br>white ash<br>Fog <code>#c0d8ff</code><br>Sky <code>#c1cef0</code><br>Water fog <code>#272844</code>
+|-
+| Deep lukewarm ocean || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#96b9e0</code> (was <code>#45adf2</code>)
+|-
+| Deep ocean || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| Desert || Husk 80→75, group 1–2<br>Zombie 19→100 || +Deep [[Native Silver|silver]] (3/chunk)<br>+Large deep [[Coal Deposit|coal]] veins<br>−Default flowers || Water <code>#92a296</code> (was <code>#3f76e4</code>)<br>Fog <code>#ddd2b0</code><br>Sky <code>#adc3cc</code>
+|-
+| Dripstone caves || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| End barrens || — || — || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| End highlands || — || — || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| End midlands || — || — || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| Eroded badlands || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#92a296</code> (was <code>#3f76e4</code>)<br>Fog <code>#eccfbb</code><br>Sky <code>#a4cbdb</code><br>Water fog <code>#4b605a</code>
+|-
+| Flower forest || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)<br>Sky <code>#78a7ff</code><br>Water fog <code>#272844</code>
+|-
+| Forest || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)<br>Sky <code>#78a7ff</code><br>Water fog <code>#272844</code>
+|-
+| Frozen ocean || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#bbcae8</code> (was <code>#3938c9</code>)<br>white ash<br>Fog <code>#c0d8ff</code><br>Sky <code>#c1cef0</code><br>Water fog <code>#272844</code>
+|-
+| Frozen peaks || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (5/chunk) || Water <code>#bbcae8</code> (was <code>#3f76e4</code>)<br>white ash<br>Fog <code>#c0d8ff</code><br>Sky <code>#c1cef0</code><br>Water fog <code>#272844</code>
+|-
+| Frozen river || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#bbcae8</code> (was <code>#3938c9</code>)<br>white ash<br>Fog <code>#c0d8ff</code><br>Sky <code>#c1cef0</code><br>Water fog <code>#272844</code>
+|-
+| Grove || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (5/chunk) || Water <code>#bbcae8</code> (was <code>#3f76e4</code>)<br>white ash<br>Fog <code>#c0d8ff</code><br>Sky <code>#c1cef0</code><br>Water fog <code>#272844</code>
+|-
+| Ice spikes || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#bbcae8</code> (was <code>#3f76e4</code>)<br>white ash<br>Fog <code>#c0d8ff</code><br>Sky <code>#c1cef0</code><br>Water fog <code>#272844</code>
+|-
+| Jagged peaks || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (5/chunk) || Water <code>#bbcae8</code> (was <code>#3f76e4</code>)<br>white ash<br>Fog <code>#c0d8ff</code><br>Sky <code>#c1cef0</code><br>Water fog <code>#272844</code>
+|-
+| Jungle || +Husk (75, 1–2)<br>Zombie 95→100<br>+Cat (35, 1–2) || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#7ebee5</code> (was <code>#3f76e4</code>)
+|-
+| Lukewarm ocean || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#96b9e0</code> (was <code>#45adf2</code>)<br>Water fog <code>#28576b</code>
+|-
+| Lush caves || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#7ebee5</code> (was <code>#3f76e4</code>)
+|-
+| Mangrove swamp || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#7ebee5</code> (was <code>#3a7a6a</code>)
+|-
+| Meadow || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (5/chunk) || Water <code>#aebfe2</code> (was <code>#0e4ecf</code>)<br>Sky <code>#9ebbf8</code><br>Water fog <code>#2e304c</code>
+|-
+| Mushroom fields || — || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| Nether wastes || — || −Gravel<br>+[[Hellspore]] patches || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| Ocean || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| Old growth birch forest || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#aebfe2</code> (was <code>#3f76e4</code>)<br>Sky <code>#9ebbf8</code><br>Water fog <code>#2e304c</code>
+|-
+| Old growth pine taiga || +Husk (75, 1–2) || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#aebfe2</code> (was <code>#3f76e4</code>)<br>Sky <code>#9ebbf8</code><br>Water fog <code>#2e304c</code>
+|-
+| Old growth spruce taiga || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#aebfe2</code> (was <code>#3f76e4</code>)<br>Sky <code>#9ebbf8</code><br>Water fog <code>#2e304c</code>
+|-
+| Pale garden || −Creeper<br>−Enderman<br>−Skeleton<br>−Slime<br>−Spider<br>−Witch<br>−Zombie<br>−Zombie villager || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#9b9fa8</code> (was <code>#76889d</code>)
+|-
+| Plains || +Husk (75, 1–2)<br>Zombie 90→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)<br>Water fog <code>#272844</code>
+|-
+| River || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)<br>Sky <code>#78a7ff</code><br>Water fog <code>#272844</code>
+|-
+| Savanna || +Husk (75, 1–2)<br>Zombie 90→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#b4d8ce</code> (was <code>#3f76e4</code>)
+|-
+| Savanna plateau || +Husk (75, 1–2)<br>Zombie 90→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#b4d8ce</code> (was <code>#3f76e4</code>)
+|-
+| Small end islands || — || — || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| Snowy beach || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#bbcae8</code> (was <code>#3d57d6</code>)<br>white ash<br>Fog <code>#c0d8ff</code><br>Sky <code>#c1cef0</code><br>Water fog <code>#272844</code>
+|-
+| Snowy plains || +Husk (75, 1–2)<br>Zombie 90→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#bbcae8</code> (was <code>#3f76e4</code>)<br>white ash<br>Fog <code>#c0d8ff</code><br>Sky <code>#c1cef0</code><br>Water fog <code>#272844</code>
+|-
+| Snowy slopes || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (5/chunk) || Water <code>#bbcae8</code> (was <code>#3f76e4</code>)<br>white ash<br>Fog <code>#c0d8ff</code><br>Sky <code>#c1cef0</code><br>Water fog <code>#272844</code>
+|-
+| Snowy taiga || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#bbcae8</code> (was <code>#3d57d6</code>)<br>white ash<br>Fog <code>#c0d8ff</code><br>Sky <code>#c1cef0</code><br>Water fog <code>#272844</code>
+|-
+| Soul sand valley || — || −Gravel<br>+[[Hellspore]] patches || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)<br>Water evaporates <code>#000000</code><br>Fog <code>#061919</code><br>Sky <code>#030d0d</code>
+|-
+| Sparse jungle || +Husk (75, 1–2)<br>Zombie 95→100<br>+Cat (35, 1–2) || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#7ebee5</code> (was <code>#3f76e4</code>)
+|-
+| Stony peaks || +Husk (75, 1–2)<br>Zombie 95→100 || — || Water <code>#aebfe2</code> (was <code>#3f76e4</code>)<br>Sky <code>#9ebbf8</code><br>Water fog <code>#2e304c</code>
+|-
+| Stony shore || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)<br>Sky reset to default<br>Water fog <code>#2e304c</code>
+|-
+| Sunflower plains || +Husk (75, 1–2)<br>Zombie 90→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| Swamp || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || —
+|-
+| Taiga || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#aebfe2</code> (was <code>#3f76e4</code>)<br>Sky <code>#9ebbf8</code><br>Water fog <code>#2e304c</code>
+|-
+| The end || — || — || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| The void || — || — || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+|-
+| Warm ocean || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#7ebee5</code> (was <code>#43d5ee</code>)<br>Water fog <code>#28576b</code>
+|-
+| Warped forest || — || −Gravel || Fog <code>#a2b5dd</code>
+|-
+| Windswept forest || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (5/chunk) || Water <code>#aebfe2</code> (was <code>#3f76e4</code>)<br>Sky <code>#9ebbf8</code><br>Water fog <code>#2e304c</code>
+|-
+| Windswept gravelly hills || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (5/chunk) || Water <code>#a0a9ba</code> (was <code>#3f76e4</code>)<br>white ash<br>Fog <code>#c0d8ff</code><br>Sky <code>#c1cef0</code><br>Water fog <code>#3f4a5f</code>
+|-
+| Windswept hills || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (5/chunk) || Water <code>#aebfe2</code> (was <code>#3f76e4</code>)<br>Sky <code>#9ebbf8</code><br>Water fog <code>#2e304c</code>
+|-
+| Windswept savanna || +Husk (75, 1–2)<br>Zombie 90→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#b4d8ce</code> (was <code>#3f76e4</code>)
+|-
+| Wooded badlands || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#92a296</code> (was <code>#3f76e4</code>)<br>Fog <code>#eccfbb</code><br>Sky <code>#a4cbdb</code><br>Water fog <code>#4b605a</code>
+|}
+
+== Features ==
+{| class="wikitable"
+! Feature !! Biomes !! Details
+|-
+| <code>matcha:ore_emerald_deep</code> || Most overworld biomes || [[Native Silver]] (vanilla emerald ore vein, size 3); 3 per chunk, trapezoid from bottom−80 to bottom+80.
+|-
+| <code>matcha:ore_emerald_deep_mountain</code> || Cherry Grove, Deep Dark, Frozen Peaks, Grove, Jagged Peaks, Meadow, Snowy Slopes, Windswept Forest, Windswept Gravelly Hills, Windswept Hills || As above with 5 per chunk.
+|-
+| <code>matcha:ore_coal_deep_large</code> || Desert || [[Coal Deposit]] veins of size 17; 30 per chunk, uniformly from the bottom of the world to 64 blocks above it.<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/ore_coal_deep_large.json}}</ref>
+|-
+| <code>matcha:flower_beach</code> || Beach || Blue orchids (weight 2) and cornflowers (weight 1); a 1 in 32 chance per chunk of a patch of 64 attempts.<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/flower_beach.json}}</ref>
+|-
+| <code>matcha:nether_wart</code> || Nether Wastes, Soul Sand Valley || [[Hellspore]] patches of age 0–3 on soul sand. Uses a tree feature whose "trunk" is Nether wart and whose base block is soul sand.<ref>{{Source|MF_datapack/data/matcha/worldgen/configured_feature/nether_wart.json}}</ref>
+|}
+
+== Music ==
+The resource pack replaces the forest background music with the track "Abbey", so it plays in Forest, Birch Forest, Old Growth Birch Forest and Dark Forest. See [[Music]].
+
+== History ==
+{{History
+|{{History line|0.5-alpha|Freshwater and saltwater biomes grouped into five fishing climates each (see [[Fishing]]).}}
+{{History line|0.6-alpha|Sand, red sand and packed mud support vegetation.}}
+{{History line|1.0|Deserts no longer have flowers; desert and badlands sky and fog colors changed.}}
+{{History line|1.10|Husks spawn in all biomes.
+* Creepers no longer spawn in forests, only underground.
+* The Pale Garden no longer spawns hostile mobs.}}
+{{History line|1.12.1-alpha|Silver is less common on the surface, found rarely in every biome and more often deep in mountain biomes.
+* Large coal veins at deepslate level beneath deserts.
+* Quartz generates at higher elevations and in larger amounts.
+* Blue orchids and cornflowers on beaches.
+* Hellspore generates in Soul Sand Valleys and Nether Wastes; gravel removed from Hell.
+* Cats spawn in Jungles and Sparse Jungles.
+* Purple placeholder grass colors replaced by gradated color maps.}}
+{{History line|1.12.2|Taiga grass color changed.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Biomes]]
+[[Category:World generation]]

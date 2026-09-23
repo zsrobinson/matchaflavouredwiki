@@ -1,0 +1,61 @@
+{{Vanilla}}
+{{Infobox
+|title=Skeleton
+|type=Hostile mob, undead
+|health=Easy, Normal: {{Hp|10}}<br />Hard: {{Hp|12}}
+|spawn=Overworld, including the open surface
+|drops={{ItemLink|Arrow}}, {{MCW|Bone}}, {{ItemLink|Estus Ash}}
+}}
+A '''skeleton''' in [[Matcha Flavoured]] has about half the health it has in vanilla ''Minecraft'', but on Normal and Hard it carries a bow with Punch that knocks players back further. Skeletons drop {{ItemLink|Estus Ash}}, and only drop anything when killed by a player.
+
+== Spawning ==
+Skeletons use the vanilla biome spawn lists. As undead, they can spawn on the open surface until the [[Ender Dragon]] is killed; see [[Spawning]] and [[Surface]]. Skeletons also come from [[spawner|spawners]] in monster rooms and [[Abbey|abbeys]]; those skeletons drop nothing.
+
+== Drops ==
+{{Data/Loot/minecraft/entities/skeleton}}
+All drops require a player kill, and skeletons from the pack's spawners drop nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/skeleton.json}}</ref> The arrows and bones are as in vanilla. The pack adds {{ItemLink|Estus Ash}} (0–1). Skeletons don't drop the bow they carry or other equipment.
+
+== Behavior ==
+On Normal and Hard, a skeleton's bow is replaced with a bow enchanted with Punch I (Normal) or Punch II (Hard), with a 0% drop chance.<ref name="n">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_skeletons.mcfunction}}</ref><ref name="h">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_skeletons.mcfunction}}</ref> The new bow replaces any enchantments the skeleton spawned with. These changes apply to every mob in the <code>#minecraft:skeletons</code> tag that the pack checks: skeletons, [[Stray|strays]], [[Bogged|bogged]] and parched.
+
+Skeletons are undead, so [[warding]] hurts them.
+
+== Difficulty ==
+{| class="wikitable"
+! Attribute !! Easy !! Normal !! Hard
+|-
+! Max health
+| {{Hp|10}} || {{Hp|10}} || {{Hp|12}}
+|-
+! Bow
+| vanilla || Punch I || Punch II
+|-
+! Equipment drop chance
+| 0% || 0% || 0%
+|}
+<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/easy_modifications/modify_skeletons.mcfunction}}</ref><ref name="n" /><ref name="h" />
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Skeletons no longer drop armor or weapons they're holding.}}
+{{History line|1.10|Difficulty support: skeletons have half health on Normal and a little more than half on Hard. Obol drop rate lowered to match other mobs.}}
+{{History line|1.12.1-alpha|Fixed performance problems from skeletons having both Punch I and Punch II. Obols no longer drop from undead.}}
+{{History line|1.12.2|Skeletons from spawners drop nothing. New skeleton textures.}}
+}}
+
+== Trivia ==
+* In the design video: "All skeletons have had their max HP cut in half."<ref>{{Cite video|quote=All skeletons have had their max HP cut in half.}}</ref>
+* The 1.12.2 release notes list the new skeleton textures as "Skeletons (for Lore)".
+
+== See also ==
+* [[Stray]]
+* [[Bogged]]
+* [[Wither Skeleton]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Hostile mobs]]
+[[Category:Undead mobs]]

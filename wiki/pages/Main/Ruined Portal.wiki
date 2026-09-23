@@ -1,0 +1,18 @@
+{{Vanilla|Ruined Portal}}
+A '''ruined portal''' generates as in vanilla. [[Matcha Flavoured]] changes its chest loot: gold is given as raw gold, and gold blocks, ingots, tools and the bell are removed, so that gold is not easily available before iron.
+
+
+== Loot ==
+=== Chest ===
+{{Data/Loot/minecraft/chests/ruined_portal}}
+
+== History ==
+{{History
+|{{History line|1.10|Enchanted golden apples from ruined portals have the proper tooltip.}}
+{{History line|1.12.1-alpha|Enchanted golden apples have the correct loot table path.}}
+{{History line|1.12.2|Loot nerfed to prevent gold from being obtainable before iron.}}
+}}
+
+{{Navbox world}}
+[[Category:Structures]]
+[[Category:Generated structures]]

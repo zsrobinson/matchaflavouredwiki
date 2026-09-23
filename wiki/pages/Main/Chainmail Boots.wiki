@@ -1,0 +1,61 @@
+{{Infobox auto
+|intrinsics=[[Thorns]] III
+|renewable=Yes
+}}
+
+A '''chainmail boots''' is the [[Chainmail armor|chainmail]] [[Armor#Boots|boots]], crafted from {{MCW|Chain|iron chains}}. It gives 2 armor and has 300 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/chainmail_boots.json}}</ref>
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+
+The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
+
+=== Loot ===
+{{Sources}}
+
+The loot table <code>matcha:equipment/chainmail/boots</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+
+== Usage ==
+
+=== Armor ===
+
+Worn, it gives 2 armor. The vanilla item gives 1 armor with 195 durability.
+
+=== Intrinsics ===
+
+* [[Thorns]] III
+
+The intrinsics are stored on the item and applied when it enters an inventory. See [[Chainmail armor]] for how the tier's intrinsics work together.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+=== Smelting ===
+In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 300
+|-
+| Armor || 2
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Added translation support for all armor and tools. Chainmail armor became craftable.}}
+}}
+
+== See also ==
+* [[Chainmail armor]]
+* [[Armor]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Armor]]

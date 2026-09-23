@@ -1,0 +1,32 @@
+{{Vanilla|Petrified Oak Slab}}
+{{Infobox auto}}
+A '''dirt slab''' is a half-height block of dirt, used for paths and gentle slopes. It takes over the block ID of the vanilla {{MCW|Petrified Oak Slab|petrified oak slab}}, an otherwise unobtainable block, and gives it coarse dirt textures.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Three [[dirt]] or coarse dirt in a row make 6 dirt slabs, and a [[stonecutter]] cuts one dirt into 2.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/dirt_slab.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dirt_slab.json}}</ref> Picking up dirt unlocks the recipe.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/dirt.json}}</ref>
+
+== Usage ==
+{{Uses}}
+Two dirt slabs craft back into one block of dirt.
+
+== Behavior ==
+* Dirt slabs are mined fastest with a shovel.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/shovel.json}}</ref> As the vanilla petrified oak slab, they are also still mined quickly with a pickaxe.
+* They count as a path block for the [[Trailblaze]] enchantment, along with coarse dirt, gravel, dirt paths, packed mud and mud bricks.<ref>{{Source|MF_datapack/data/matcha/tags/block/is_path.json}}</ref>
+
+== Appearance ==
+Placed dirt slabs use four variations of the coarse dirt texture, each at a random rotation, so large areas do not tile visibly.<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/petrified_oak_slab.json}}</ref> A double dirt slab looks like a block of coarse dirt, which uses the same variations.
+
+== History ==
+{{History
+|{{History line|1.12.1-alpha|Dirt slabs are mineable with a shovel.<br />Trailblaze works on dirt slabs.<br />Recipe unlocks for dirt slabs, and for dirt from dirt slabs, were fixed.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Building blocks]]
+[[Category:Renamed items]]

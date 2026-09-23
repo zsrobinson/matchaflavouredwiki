@@ -1,0 +1,53 @@
+{{Vanilla|The Nether}}
+{{Infobox
+|title=Hell
+|type=Dimension
+|id=<code>minecraft:the_nether</code>
+}}
+'''Hell''' is the name [[Matcha Flavoured]] gives to {{MCW|The Nether|the Nether}}. The pack renames the dimension's blocks and items to match: netherrack is [[Hellstone]], Nether bricks are [[Hellbricks]], Nether wart is [[Hellspore]], Nether gold ore is [[Gilded Hellstone]] and Nether quartz ore is [[Sulfurous Hellstone]]. Entering it grants the advancement "Orpheus" ("Descend into Hell").
+
+In the pack's progression, Hell is where [[Blessing]]s and [[Hell-Bound Book]]s are made from stolen prayers, and where [[Adamant Scrap]] is found in [[Bastion Remnant]]s. The [[Wither effect]] is especially dangerous there, and the release notes urge players to "bring milk or bread to Hell".
+
+== Environment ==
+The pack overrides Hell's dimension type:<ref>{{Source|MF_datapack/data/minecraft/dimension_type/the_nether.json}}</ref>
+{| class="wikitable"
+! Property !! Matcha Flavoured !! Vanilla
+|-
+| Ambient light || 0.3 || 0.1
+|-
+| Fog start distance || 0 blocks || 10 blocks
+|-
+| Fog end distance || 300 blocks || 96 blocks
+|-
+| Water evaporates || No || Yes
+|}
+The higher ambient light makes dark areas less dark, while the fog starts at the player and reaches much farther.
+
+=== Water ===
+Although the dimension type no longer evaporates water, water cannot be kept inside Hell. Whenever a player empties a water bucket while in Hell between Y=0 and Y=127, all water within 20 blocks of the player is removed.<ref>{{Source|MF_datapack/data/matcha/function/environmental/nether_water.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/invalid_nether_water.json}}</ref> Water can be placed on the Nether roof (Y=128 and above). The developer disabled evaporation so that flowers and plants can grow in Hell.<ref>{{Cite changelog|1.10|quote=Water can no longer be placed *inside* of Hell (Guys please I just want flowers in the nether stop being naughty)}}</ref>
+
+== Generation ==
+* '''No gravel''': the Hell noise settings no longer place gravel on the surface of Nether Wastes, Soul Sand Valleys and Basalt Deltas, and the <code>ore_gravel_nether</code> feature is removed from Nether Wastes, Soul Sand Valleys, Crimson Forests and Warped Forests.<ref>{{Source|MF_datapack/data/minecraft/worldgen/noise_settings/nether.json}}</ref>
+* '''Hellspore''': patches of [[Hellspore]] at random growth stages generate on soul sand in Nether Wastes and Soul Sand Valleys.<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/nether_wart.json}}</ref>
+* Soul Sand Valleys have a darker fog (<code>#061919</code>) and sky (<code>#030d0d</code>). Crimson Forests have fewer floating spores, and Warped Forests have a pale blue fog (<code>#a2b5dd</code>). See [[Biomes#Changes by biome]].
+
+== Structures ==
+* [[Nether Fortress]]
+* [[Bastion Remnant]]
+* [[Ruined Portal]]
+
+== History ==
+{{History
+|{{History line|0.3-alpha|Fixed Hell's ambient light, which was 0.}}
+{{History line|0.7-alpha|All "Nether" names changed to "Hell".}}
+{{History line|1.10|Water can no longer be placed inside Hell.}}
+{{History line|1.12|Ambient light raised from 0.1 to 0.3 after players complained that Hell was too dark.}}
+{{History line|1.12.1-alpha|Gravel removed from Hell; Hellspore generates in Soul Sand Valleys and Nether Wastes.}}
+{{History line|1.12.2|Nether portals are purple.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Dimensions]]

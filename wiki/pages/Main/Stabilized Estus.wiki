@@ -1,0 +1,39 @@
+{{Vanilla|Blaze Rod}}
+{{Infobox auto}}
+'''Stabilized Estus''' is a crafted magic material that replaces the {{MCW|Blaze Rod|blaze rod}}. It is made by binding [[Estus Ash]] with [[Benzene]] and a [[Stable Void]], and is the core of the [[Hell-Bound Book]], the [[Eye of Ender]] and the [[Warding Stone]]. It has uncommon rarity and an enchantment glint.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Crafting is the only source. {{MCW|Blaze|Blazes}} drop fire charges instead of blaze rods in the pack, and no chest contains Stabilized Estus.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/blaze.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/stabilised_estus.json}}</ref>
+
+== Usage ==
+The developer's introduction video calls Stabilized Estus "a vital crafting component for most magic".<ref>{{Cite video|quote=Estus Ash, an ender pearl, and Benzene together can make stabilized Estus. This is a vital crafting component for most magic. Hellbound books use them, the warning stone has stabilized Estus at its center, and the Eye of Ender is crafted from this material.}}</ref>
+
+=== Crafting ingredient ===
+{{Uses}}
+One Stabilized Estus and one [[Divine Fragment]] make 16 eyes of ender. The vanilla recipes that use blaze rods (the {{MCW|Brewing Stand|brewing stand}}, blaze powder and the end rod) are removed or replaced, so these three recipes are its only uses.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+== Advancements ==
+{| class="wikitable"
+! Advancement !! Description !! Requirement
+|-
+| Hellish Bindings || Tether Raw Estus into a Stable Form || Craft Stabilized Estus. Rewards [[Obol]]s.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/obtain_stabilised_estus.json}}</ref>
+|}
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Nautilus shells no longer unlock the recipe.}}
+}}
+
+== See also ==
+* [[Estus]]
+* [[Enchanting]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Items]]
+[[Category:Renamed items]]

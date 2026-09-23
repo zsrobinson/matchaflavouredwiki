@@ -1,0 +1,59 @@
+{{Vanilla|Trial Chambers}}
+'''Trial Chambers''' generate as in vanilla. [[Matcha Flavoured]] changes their chest, vault, pot and trial spawner loot, and adds rules that also apply to the [[Abbey]].
+
+== Changes ==
+* A [[Warding Stone]] cannot be placed inside Trial Chambers or an Abbey; it explodes when placed.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/forbidden.mcfunction}}</ref>
+* After the [[Ender Dragon]] is killed, hostile mobs still spawn inside Trial Chambers and Abbeys, although they stop spawning on the rest of the surface (see [[Surface]]).<ref>{{Source|MF_datapack/data/matcha/predicate/in_dungeon.json}}</ref>
+* Trial spawners drop keys from <code>spawners/trial_chamber/key</code>, with an 80% chance of a {{MCW|Trial Key}} and a 20% chance of an {{MCW|Ominous Trial Key}}. Their consumable drops are the pack's foods.
+* Vaults contain [[Divine Fragment]]s, [[Sacred texts]], [[Crystal Heart]]s and pack equipment. Ominous vaults can give [[Silver Bullion]] and the "Elegy of the Abbey" [[Music Disc]].
+* The [[Archaeologist]] sells Trial Chamber Maps. See [[Explorer maps]].
+
+== Loot ==
+=== Corridor chest ===
+{{Data/Loot/minecraft/chests/trial_chambers/corridor}}
+=== Entrance chest ===
+{{Data/Loot/minecraft/chests/trial_chambers/entrance}}
+=== Intersection chest ===
+{{Data/Loot/minecraft/chests/trial_chambers/intersection}}
+=== Intersection barrel ===
+{{Data/Loot/minecraft/chests/trial_chambers/intersection_barrel}}
+=== Supply chest ===
+{{Data/Loot/minecraft/chests/trial_chambers/supply}}
+=== Decorated pots ===
+{{Data/Loot/minecraft/pots/trial_chambers/corridor}}
+=== Vault: common ===
+{{Data/Loot/minecraft/chests/trial_chambers/reward_common}}
+=== Vault: rare ===
+{{Data/Loot/minecraft/chests/trial_chambers/reward_rare}}
+=== Vault: unique ===
+{{Data/Loot/minecraft/chests/trial_chambers/reward_unique}}
+=== Ominous vault: common ===
+{{Data/Loot/minecraft/chests/trial_chambers/reward_ominous_common}}
+=== Ominous vault: rare ===
+{{Data/Loot/minecraft/chests/trial_chambers/reward_ominous_rare}}
+=== Ominous vault: unique ===
+{{Data/Loot/minecraft/chests/trial_chambers/reward_ominous_unique}}
+=== Trial spawner key ===
+{{Data/Loot/minecraft/spawners/trial_chamber/key}}
+=== Trial spawner consumables ===
+{{Data/Loot/minecraft/spawners/trial_chamber/consumables}}
+=== Ominous trial spawner consumables ===
+{{Data/Loot/minecraft/spawners/ominous/trial_chamber/consumables}}
+=== Dispensers ===
+{{Data/Loot/minecraft/dispensers/trial_chambers/chamber}}
+
+== History ==
+{{History
+|{{History line|1.03|Divine Fragments added to Trial Chambers; mace drop odds increased; Warding Stones cannot be placed in Trial Chambers.}}
+{{History line|1.10|Trial spawner loot tables changed; Trial Chamber loot nerfed (fewer Obols from pots).}}
+{{History line|1.12|Trial spawner key drops became 20% Ominous Trial Keys.}}
+{{History line|1.12.1-alpha|Stable Voids from Trial Chamber chests now stack to 64.}}
+{{History line|1.12.2|Silver added to ominous vault loot; trash removed from trial spawners and vaults; The Quran and The Tanakh added to Trial Chamber loot.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Structures]]
+[[Category:Generated structures]]

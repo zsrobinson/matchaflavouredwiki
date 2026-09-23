@@ -5,13 +5,13 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Unbreaking]] II<br />[[Adamant Weapon]]<br />[[Sharpness]] I}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Unbreaking]] II<br />[[Doom|{{G|Weakness}}]]<br />[[Sharpness]] I}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=3000
 |damage={{Hp|9}}
 |attackspeed=1
-|miningspeed=340282349999999991754788743781432688640
+|miningspeed=1.5
 |repair=[[Block of Diamond]], [[Adamant Scrap]]
 |tooltip={{G|Attack damage}} 9<br />{{G|Attack speed}} 1<br />When Blocking:<br />80% Melee Blocking<br />70% Projectile Blocking<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
 |id=<code>matcha:adamant_claymore</code>

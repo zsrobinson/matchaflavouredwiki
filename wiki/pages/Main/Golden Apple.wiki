@@ -1,0 +1,43 @@
+{{Vanilla}}
+
+{{Infobox auto}}
+
+A '''golden apple''' is an [[apple]] coated in gold nuggets. It heals {{Hp|4}} and grants {{EffectLink|Regeneration}} for 30 seconds and {{EffectLink|Absorption}} for 2 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_apple.json}}</ref> It is also a secret [[ingredient]] with its own dishes.
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+The pack's recipe uses 8 gold nuggets instead of gold ingots. It is unlocked by picking up a gold nugget.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/gold_nugget.json}}</ref>
+
+=== Chest loot ===
+{{Sources}}
+
+==== Enchanted variant ====
+Some chests (ancient cities, bastion treasure, desert pyramids, dungeons, mineshafts, ruined portals and woodland mansions) can instead contain a stronger golden apple, the pack's replacement for the {{MCW|Enchanted Golden Apple|enchanted golden apple}}. It has the same name and heals {{Hp|4}}, but grants Regeneration II for 30 seconds, Absorption IV for 2 minutes, and {{EffectLink|Fire Resistance}} and {{EffectLink|Resistance}} for 5 minutes each.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/enchanted_golden_apple.json}}</ref> The vanilla enchanted golden apple doesn't generate.
+
+== Usage ==
+
+=== Secret ingredient ===
+{{Spoiler}}
+Golden apples can be cooked into [[baked golden apple]]s, which make [[canned golden apples]] and the [[gilded empanada]]. None of these recipes appear in the recipe book. See [[Secret recipes]].
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Golden apples got a proper tooltip and texture. Golden apple foods buffed.}}
+{{History line|1.10|Fixed the golden apple in bastion chests. Enchanted golden apples from ruined portals got a proper tooltip.}}
+{{History line|1.12.1-alpha|Absorption now matches the tooltip. The golden apple in bastion hoglin stables is now the pack's version. Enchanted golden apples in ruined portals fixed.}}
+}}
+
+== See also ==
+* [[Apple]]
+* [[Secret recipes]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

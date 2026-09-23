@@ -1,0 +1,62 @@
+{{Infobox auto
+|intrinsics=[[Projectile Protection]] IV
+|renewable=Yes
+}}
+
+A '''sturdy leather gambeson''' is the [[Sturdy leather armor|sturdy leather]] [[Armor#Chestplate|chestplate]], crafted from [[Sturdy Leather|sturdy leather]]. It gives 5 armor and has 350 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sturdy_leather_chestplate.json}}</ref>
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+
+=== Loot ===
+{{Sources}}
+
+The loot table <code>matcha:equipment/sturdy_leather/chestplate</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+
+== Usage ==
+
+=== Armor ===
+
+Worn, it gives 5 armor.
+
+It adds 2 blocks of safe fall distance.
+
+=== Intrinsics ===
+
+* [[Projectile Protection]] IV
+
+The intrinsics are stored on the item and applied when it enters an inventory. See [[Sturdy leather armor]] for how the tier's intrinsics work together.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with [[Tattered Leather|tattered leather]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 350
+|-
+| Armor || 5
+|-
+| Safe fall distance || +2
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Added translation support for all armor and tools. Added sturdy leather armor.}}
+{{History line|1.10|Armor raised from 4 to 5, equal to the golden chestplate.}}
+{{History line|1.12.2|Safe fall distance raised from 1 to 2 per piece, and the armor can be repaired with tattered leather.}}
+}}
+
+== See also ==
+* [[Sturdy leather armor]]
+* [[Armor]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Armor]]

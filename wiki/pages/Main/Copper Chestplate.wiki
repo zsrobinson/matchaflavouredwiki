@@ -1,0 +1,57 @@
+{{Infobox auto
+|renewable=Yes
+}}
+
+A '''copper chestplate''' is the [[Copper equipment|copper]] [[Armor#Chestplate|chestplate]], crafted from [[Copper Ingot|copper ingots]]. It gives 4 armor and has 200 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_chestplate.json}}</ref>
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+
+The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
+
+=== Loot ===
+{{Sources}}
+
+The loot table <code>matcha:equipment/copper/chestplate</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+
+== Usage ==
+
+=== Armor ===
+
+Worn, it gives 4 armor. The vanilla item gives 4 armor with 176 durability.
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with [[Copper Ingot|copper ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+=== Smelting ===
+In a [[Blast Furnace|blast furnace]], it smelts into one [[Copper Ingot|copper ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/copper_ingot_from_blasting_copper_materials.json}}</ref>
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 200
+|-
+| Armor || 4
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Added translation support for all armor and tools.}}
+{{History line|1.10|Undead wearing copper armor are immune to [[Warding]].}}
+{{History line|1.12.1-alpha|Copper can no longer be smelted in an oven; it needs a mud kiln or blast furnace.}}
+{{History line|1.12.2|The blast furnace recipe changed and diamonds now drop raw, which the release notes describe as extending the copper and iron ages.}}
+}}
+
+== See also ==
+* [[Copper equipment]]
+* [[Armor]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Armor]]

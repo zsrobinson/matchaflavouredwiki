@@ -1,0 +1,43 @@
+{{Infobox auto
+|type=Gem
+}}
+'''Amber''' is a gem found by [[Archaeology|brushing]] suspicious blocks in trail ruins. It is used to buy [[Amber Earrings]] from the [[Jeweler]].
+
+== Obtaining ==
+=== Archaeology ===
+Amber is one of the rare finds in trail ruins suspicious gravel.<ref>{{Source|MF_datapack/data/minecraft/loot_table/archaeology/trail_ruins_rare.json}}</ref>
+{{Sources}}
+
+== Usage ==
+=== Trading ===
+{| class="wikitable"
+! Villager !! Level !! Wants !! Gives
+|-
+| [[Jeweler]] || Journeyman || 8 × {{ItemLink|Obol}} + {{ItemLink|Amber}} || {{ItemLink|Amber Earrings}}
+|-
+| [[Jeweler]] || Master || {{ItemLink|Amber}} || 4 × {{ItemLink|Obol}}
+|}
+<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/5/sell_amber.json}}</ref>
+Amber can either be turned into [[jewelry]] or sold back to a Master-level Jeweler for 4 [[Obol]]s.
+
+== Advancements ==
+Obtaining amber grants ''Canto III'' ("Exhume the Pilgrim's Trails") in the [[Advancements/Tutorial|Tutorial]] tab, which rewards a [[Crystal Heart]]. It follows ''Canto II''.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_amber.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Gems can now be sold to the Jeweler.}}
+}}
+
+== Trivia ==
+* Like the other gems, amber is built on a fermented spider eye.
+
+== See also ==
+* [[Amber Earrings]]
+* [[Jewelry]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Items]]
+[[Category:Jewelry]]

@@ -1,0 +1,26 @@
+{{Vanilla|Eye of Ender}}
+{{Infobox auto}}
+The '''Eye of Ender''' is used to find and activate the {{MCW|End Portal|end portal}}, as in vanilla. [[Matcha Flavoured]] replaces its recipe: instead of a blaze powder and an ender pearl per eye, a [[Stabilized Estus]] and a [[Divine Fragment]] craft 16 eyes at once.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The vanilla recipe is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> One craft gives more eyes than a portal needs (12), but it requires a Divine Fragment, so reaching [[The End]] means breaking a [[spawner]] or defeating a strong mob first.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/ender_eye.json}}</ref><ref>{{Cite video|quote=If you want to get to the end, you need that fragment.}}</ref>
+
+== Usage ==
+Eyes of ender are thrown to locate a [[Stronghold|stronghold]] and placed in end portal frames, as in vanilla. They are also used to craft end crystals:
+{{Uses}}
+
+== Behavior ==
+An eye of ender lying on the ground floats: it has no gravity, sinks slowly while the block three below it is air, and rises while the block half a block below it is not air. It gives off portal particles.<ref>{{Source|MF_datapack/data/matcha/function/particle/item_particle_ender_eye_motion.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/item_particles.mcfunction}}</ref>
+
+== See also ==
+* [[Stabilized Estus]]
+* [[Divine Fragment]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Items]]

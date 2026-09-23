@@ -1,0 +1,41 @@
+{{Infobox
+|title=Estus Flask
+|type=Drink (removed)
+|stackable=Yes (64)
+|heals={{Hp|4}}
+|effects={{EffectLink|Speed}} III (0:02)
+|base=<code>minecraft:potion</code>
+|added=Before {{Version|1.10}}
+}}
+The '''Estus Flask''' was a healing drink crafted from [[Estus Ash]]. It was removed in {{Version|1.12.2}} and can no longer be obtained.
+
+== Obtaining ==
+Until its removal, the flask was a shapeless crafting recipe: a [[Glass Bottle]] and two Estus Ash made one Estus Flask.<ref name="repo">Repository history of the pack: <code>MF_datapack/data/matcha/recipe/crafting/estus_flask.json</code>, deleted in the commit "Almost ready for next alpha release".</ref>
+
+== Usage ==
+The flask was drunk in 0.6 seconds, much faster than a potion. It healed {{Hp|4}} (Instant Health I) and gave Speed III for 2 seconds, shown in its tooltip as "❤❤" and "🏃 +60% (0:02)". It was a potion item with a gold name and stacked to 64.<ref name="repo" />
+
+== Removal ==
+The flask was listed as removed in the {{Version|1.10}} release notes, because players were using it too heavily:<ref>{{Cite changelog|1.10|quote=Estus Flasks (It was a cute reference but people were abusing it, maybe in the future Ill add a less OP version)}}</ref> The {{Version|1.12}} notes then said it would stay, as it was "really important for harder modes".<ref>{{Cite changelog|1.12|quote=Estus flasks are fine, they're really important for harder modes, so I'll leave them. But I won't add the advancement back since it doesn't lead into anything}}</ref> It was finally removed in {{Version|1.12.2}} so that food would be the main way to heal:
+<blockquote>Estus Flask, I want food to be most important, encourage players to actually make farms and ranches<ref>{{Cite changelog|1.12.2|quote=Estus Flask, I want food to be most important, encourage players to actually make farms and ranches}}</ref></blockquote>
+
+The pack still contains an advancement that plays particles when a player drinks an item named Estus Flask, and its language files still have the name, but it points to a function that no longer exists.<ref>{{Source|MF_datapack/data/matcha/advancement/particle/estus_flask.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.10|Listed as removed. Its "obtain Estus Flask" advancement is removed.}}
+{{History line|1.12|Kept in the pack.}}
+{{History line|1.12.2|Removed.}}
+}}
+
+== See also ==
+* [[Estus]]
+* [[Removed features]]
+* [[Food]], which replaced it as the way to heal
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Removed features]]
+[[Category:Enchanting]]

@@ -1,0 +1,28 @@
+{{Vanilla|Lily Pad}}
+{{Infobox auto}}
+A '''lily pad''' is a flat plant that floats on water and can be walked on. It works as in vanilla ''Minecraft''; Matcha Flavoured lets it be cloned like a flower and gives it new textures.
+
+== Obtaining ==
+=== Cloning ===
+{{Recipes}}
+One lily pad, a [[Glass Bottle#Water bottle|water bottle]] and a piece of bone meal make 4 lily pads, and the empty bottle is given back.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_lily_pad.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref> The recipe unlocks when the player picks up bone meal.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/bonemeal.json}}</ref>
+
+=== Fishing ===
+Lily pads are part of the [[Fishing junk|fishing junk]] pool and have an entry in the [[Angler's Almanac]].<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/junk/lily_pad.json}}</ref>
+
+=== Natural generation ===
+Lily pads generate in swamps as in vanilla.
+
+== Appearance ==
+A placed lily pad randomly uses one of four models, and the item has its own texture.<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/lily_pad.json}}</ref>
+
+== History ==
+{{History
+|{{History line|1.12.2|Lily pads can be cloned.<br />The lily pad item texture was fixed.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Plants]]

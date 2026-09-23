@@ -1,0 +1,43 @@
+{{Infobox auto
+|type=Gem
+}}
+'''Opal''' is a gem dropped by the {{MCW|Elder Guardian}}. It is used to buy [[Opal Earrings]] from the [[Jeweler]].
+
+== Obtaining ==
+=== Mob loot ===
+An {{MCW|Elder Guardian}} always drops one opal when killed by a player.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json}}</ref>
+{{Sources}}
+
+== Usage ==
+=== Trading ===
+{| class="wikitable"
+! Villager !! Level !! Wants !! Gives
+|-
+| [[Jeweler]] || Novice || 4 × {{ItemLink|Obol}} + {{ItemLink|Opal}} || {{ItemLink|Opal Earrings}}
+|-
+| [[Jeweler]] || Master || {{ItemLink|Opal}} || 4 × {{ItemLink|Obol}}
+|}
+<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/5/sell_opal.json}}</ref>
+An opal can either be turned into [[jewelry]] or sold back to a Master-level Jeweler for 4 [[Obol]]s.
+
+== Advancements ==
+Obtaining an opal grants ''Canto I'' ("Defeat the Sea God") in the [[Advancements/Tutorial|Tutorial]] tab, which rewards a [[Crystal Heart]]. It is the first of the four ''Canto'' advancements.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_opal.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Gems can now be sold to the Jeweler.}}
+}}
+
+== Trivia ==
+* Like the other gems, opal is built on a fermented spider eye.
+
+== See also ==
+* [[Opal Earrings]]
+* [[Jewelry]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Items]]
+[[Category:Jewelry]]

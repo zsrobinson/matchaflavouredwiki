@@ -5,7 +5,7 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Food}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[1]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Warding|{{G|Warding}} 1]]}}
 |renewable={{{renewable|}}}
 |stackable=Yes (64)
 |id=<code>matcha:wooden_cross</code>

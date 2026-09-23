@@ -1,0 +1,24 @@
+{{Vanilla|Bastion Remnant}}
+A '''bastion remnant''' generates in [[Hell]] as in vanilla. [[Matcha Flavoured]] changes its chest loot, adding [[Ruby|rubies]] and diamond equipment. Bastions are the main source of [[Adamant Scrap]]; the developer calls the [[Abbey]] the overworld's equivalent for silver.
+
+
+== Loot ==
+=== Bridge ===
+{{Data/Loot/minecraft/chests/bastion_bridge}}
+=== Hoglin stable ===
+{{Data/Loot/minecraft/chests/bastion_hoglin_stable}}
+=== Generic ===
+{{Data/Loot/minecraft/chests/bastion_other}}
+=== Treasure ===
+{{Data/Loot/minecraft/chests/bastion_treasure}}
+
+== History ==
+{{History
+|{{History line|1.0|Sweet Berry Jam removed from bastion chests.}}
+{{History line|1.10|Bastion treasure nerfed; golden apple in generic chests fixed.}}
+{{History line|1.12.1-alpha|The hoglin stable's golden apple is now the pack's golden apple.}}
+}}
+
+{{Navbox world}}
+[[Category:Structures]]
+[[Category:Generated structures]]

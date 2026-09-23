@@ -1,0 +1,70 @@
+{{Infobox auto
+|renewable=No
+}}
+
+A '''diamond dolabra''' is the [[Diamond equipment|diamond]] [[dolabra]], crafted from [[Diamond|diamonds]]. It mines at speed 8 and has 2500 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_dolabra.json}}</ref>
+
+As a [[dolabra]], it works as both a pickaxe and an axe, at a lower mining speed than the diamond pickaxe or axe.
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+
+=== Loot ===
+{{Sources}}
+
+The loot table <code>matcha:equipment/diamond/dolabra</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+
+== Usage ==
+
+=== Mining ===
+
+It mines both pickaxe and axe blocks at speed 8.
+
+It mines obsidian, crying obsidian and ender chests at speed 35, far faster than other blocks.
+
+The pack adds beds, candles, cactus and honeycomb blocks to the blocks axes mine quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+
+=== Combat ===
+
+It deals 7 damage with an attack speed of 1.
+
+=== Repairing ===
+
+It is repaired in an [[anvil]] with [[Diamond|diamonds]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+
+=== Smelting ===
+In a [[Blast Furnace|blast furnace]], it smelts into one [[Diamond|diamond]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/diamond_from_blasting_diamond_materials.json}}</ref>
+
+== Stats ==
+{| class="wikitable"
+! Stat !! Value
+|-
+| Durability || 2500
+|-
+| Mining speed || 8
+|-
+| Obsidian || 35
+|-
+| Attack damage || 7
+|-
+| Attack speed || 1
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added translation support for all armor and tools.}}
+{{History line|1.12.1-alpha|Obsidian mining speed raised to 35.}}
+{{History line|1.12.2|Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time. Diamond ores now drop [[Raw Diamond|raw diamonds]], which must be smelted in a [[Blast Furnace|blast furnace]].}}
+}}
+
+== See also ==
+* [[Diamond equipment]]
+* [[Tools]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Tools]]

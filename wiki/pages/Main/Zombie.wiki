@@ -1,0 +1,89 @@
+{{Vanilla}}
+{{Infobox
+|title=Zombie
+|type=Hostile mob, undead
+|health=Easy: vanilla<br />Normal: {{Hp|10}}<br />Hard: {{Hp|15}}<br />Baby: {{Hp|4}} (Easy, Normal), {{Hp|7}} (Hard)
+|speedmob=Easy: vanilla<br />Normal: 0.34<br />Hard: 0.38
+|attack=Easy, Normal: vanilla<br />Hard: 5
+|spawn=Overworld, including the open surface
+|drops={{ItemLink|Tattered Leather}}, {{ItemLink|Raw Estus}}
+}}
+A '''zombie''' in [[Matcha Flavoured]] is a fast, fragile undead mob. On Normal and Hard it runs much faster than in vanilla ''Minecraft'' but has less health, filling the role of a "striker" alongside the slow, heavily armored [[husk]]. Zombies drop {{ItemLink|Tattered Leather}} instead of rotten flesh, and often {{ItemLink|Raw Estus}}.
+
+== Spawning ==
+Zombies spawn in almost every Overworld biome with weight 100 (vanilla uses 90 or 95), including deserts, where vanilla zombies are rare.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/desert.json}}</ref> As undead, zombies are one of the few mobs that may appear under the open sky before the [[Ender Dragon]] is killed; after that they are removed if they appear on the [[surface]]. See [[Spawning]].
+
+Zombies also appear from [[spawner|spawners]] in monster rooms and [[Papal Outpost|papal outpost]] watchtowers. Those zombies drop nothing.
+
+== Drops ==
+{{Data/Loot/minecraft/entities/zombie}}
+All drops require the zombie to be killed by a player, and zombies from the pack's spawners drop nothing.<ref name="loot">{{Source|MF_datapack/data/minecraft/loot_table/entities/zombie.json}}</ref> Zombies don't drop the equipment they spawn with.
+
+Compared to vanilla:
+* {{ItemLink|Tattered Leather}} (1–2) replaces {{MCW|Rotten Flesh|rotten flesh}} (0–2), which no longer exists.
+* A 50% chance of {{ItemLink|Raw Estus}} (0–1) replaces the rare iron ingot, carrot and potato drops, so about 1 in 4 zombies drops Raw Estus without Looting.
+* Zombies riding zombie horses no longer drop red mushrooms.
+
+=== Zombie villagers ===
+Zombie villagers drop {{ItemLink|Tattered Leather}} (1–2) and one roll that gives {{ItemLink|Raw Estus}} (0–1) with a 10 in 11 chance or an {{ItemLink|Obol}} with a 1 in 11 chance, all only when killed by a player.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/zombie_villager.json}}</ref>
+{{Data/Loot/minecraft/entities/zombie_villager}}
+
+== Behavior ==
+Zombies are undead, so they are hurt by [[Warding|warding]] and burned by [[Warding Stone|warding stones]] and [[Electrum equipment|electrum]]. Undead wearing a [[Copper equipment|copper]] armor piece are immune to warding, except from warding stones and the electrum set bonus.
+
+When a zombie first appears, the pack changes its attributes according to the [[difficulty]]. On Normal and Hard it can step up full blocks without jumping, and on Hard it also jumps higher and hits harder.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_zombie.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_zombie.mcfunction}}</ref> Only adult zombies of the plain zombie type are made fast; husks, drowned, zombie villagers and baby zombies are handled separately.
+
+== Difficulty ==
+{| class="wikitable"
+! Attribute !! Easy !! Normal !! Hard
+|-
+! Max health (adult)
+| vanilla || {{Hp|10}} || {{Hp|15}}
+|-
+! Max health (baby zombie, husk, drowned or zombie villager)
+| {{Hp|4}} || {{Hp|4}} || {{Hp|7}}
+|-
+! Movement speed
+| vanilla || 0.34 || 0.38
+|-
+! Step height
+| vanilla || 1 || 1
+|-
+! Attack damage
+| vanilla || vanilla || 5
+|-
+! Jump strength
+| vanilla || vanilla || 0.6
+|-
+! Equipment drop chance
+| 0% || 0% || 0%
+|}
+<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_and_easy_modifications/modify_baby_zombies.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_baby_zombies.mcfunction}}</ref>
+
+== History ==
+{{History|
+{{History line|0.3-alpha|Zombies no longer drop crystal hearts.}}
+{{History line|0.4-alpha|Zombies no longer drop armor or weapons they're holding. New baby zombie and zombie villager textures.}}
+{{History line|0.6-alpha|Fixed zombies not dropping anything.}}
+{{History line|1.10|Difficulty support: zombies are fast on Normal (slower than before) and as fast as before on Hard, with less health. Baby zombies have less health. Raw Estus drop rate lowered from about 50% to about 33%. Undead wearing copper armor are immune to warding.}}
+{{History line|1.12.1-alpha|Obols no longer drop from undead mobs. Baby zombies, husks and drowned have 2 hearts on Easy.}}
+{{History line|1.12.2|Zombies from spawners drop nothing.}}
+}}
+
+== Trivia ==
+* In the design video: "Zombies are fast now, like really fast. It's actually pretty scary."<ref>{{Cite video|quote=Zombies are fast now, like really fast. It's actually pretty scary.}}</ref> Tattered leather was chosen as "an ethical way of sourcing a much-needed item".<ref>{{Cite video|quote=Zombies instead drop tattered leather, an ethical way of sourcing a much-needed item.}}</ref>
+* The 1.10 release notes call the zombie nerf the developer's "most controversial change". Zombies had filled "both the tank and striker niche", so the tank role was given to husks.<ref>{{Cite changelog|1.10|quote=My solution is to split them up into Tanks and Strikers.}}</ref>
+* The release notes for 1.12.1-alpha say obols no longer drop from undead, but zombie villagers can still drop them.
+
+== See also ==
+* [[Husk]]
+* [[Drowned]]
+* [[Difficulty]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Hostile mobs]]
+[[Category:Undead mobs]]

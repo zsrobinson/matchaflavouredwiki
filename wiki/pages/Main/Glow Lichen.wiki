@@ -1,0 +1,30 @@
+{{Vanilla|Glow Lichen}}
+{{Infobox auto}}
+'''Glow lichen''' is a dim light-emitting plant that grows on cave walls, floors and ceilings. It generates and spreads as in vanilla ''Minecraft''. In Matcha Flavoured it is the raw material for [[phosphor]], can be harvested with a hoe, and has new three-dimensional models.
+
+== Obtaining ==
+Glow lichen drops itself when broken with [[shears]] or any hoe; the pack adds hoes to the tools that collect it. Each face of the block drops one lichen, as in vanilla.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/glow_lichen.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/item/vegetation_mineable.json}}</ref> Glow lichen is also in the hoe's mineable list, so hoes break it quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+
+== Usage ==
+{{Uses}}
+Four glow lichen, a [[Glass Bottle#Water bottle|water bottle]] and a [[Sulfur Chunk|sulfur chunk]] make 8 [[phosphor]], the ingredient of [[Phosphor lamps|phosphor lamps]] and [[Phosphor Rod|phosphor rods]].<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/phosphor.json}}</ref> Picking up glow lichen unlocks the phosphor recipes.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/glow_lichen.json}}</ref>
+
+== Appearance ==
+The resource pack replaces the flat vanilla sheet with models that depend on where the lichen grows:
+* On '''walls''' it randomly uses one of two models.
+* On the '''floor''' it forms small fanned tufts that stick up from the ground.<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/glow_lichen_ground.json}}</ref>
+* On the '''ceiling''' it uses animated textures that look like hanging cave worms.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/block/glow_lichen_ceiling.png.mcmeta}}</ref><ref>{{Cite changelog|0.6-alpha|quote=Glow Lichen Textures (Cave-worm-like for ceiling!)}}</ref>
+
+== History ==
+{{History
+|{{History line|0.6-alpha|New glow lichen textures, with cave-worm-like textures on ceilings.}}
+{{History line|1.10|Phosphor recipes unlock when the player picks up glow lichen.}}
+{{History line|1.12.1-alpha|All hoes and shears can collect glow lichen.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Plants]]
+[[Category:Light sources]]

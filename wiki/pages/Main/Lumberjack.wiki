@@ -1,0 +1,64 @@
+{{Vanilla|Leatherworker}}
+{{Infobox
+|title=Lumberjack
+|type=[[Villager]] profession
+|vanilla={{MCW|Leatherworker}}
+|rarity_label=Job site block
+|rarity={{ItemLink|Cauldron}}
+}}
+The '''Lumberjack''' is a [[villager]] profession that sells logs and stems by the stack. It replaces the {{MCW|Leatherworker|leatherworker}}, and its job site block is the {{ItemLink|Cauldron}}. The profession lets players who do not enjoy cutting trees buy wood instead; in the developer's words, "if you don't like cutting down trees, go fish. You can come back to your base and trade your loot for logs."<ref>{{Cite video|quote=And if you don't like cutting down trees, go fish. You can come back to your base and trade your loot for logs.}}</ref>
+
+== Trades ==
+{| class="wikitable"
+! Level !! Villager wants !! Villager gives !! Villager XP
+|-
+! rowspan="3" | Novice
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Birch Log}} || 10
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Oak Log}} || 10
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Spruce Log}} || 10
+|-
+! rowspan="5" | Apprentice
+| {{ItemLink|Obol}} +<br />{{ItemLink|Acacia Sapling}} || 64 × {{ItemLink|Acacia Log}} || 30
+|-
+| {{ItemLink|Obol}} +<br />{{ItemLink|Cherry Sapling}} || 64 × {{ItemLink|Cherry Log}} || 30
+|-
+| {{ItemLink|Obol}} +<br />{{ItemLink|Dark Oak Sapling}} || 64 × {{ItemLink|Dark Oak Log}} || 30
+|-
+| {{ItemLink|Obol}} +<br />{{ItemLink|Jungle Sapling}} || 64 × {{ItemLink|Jungle Log}} || 30
+|-
+| {{ItemLink|Obol}} +<br />{{ItemLink|Mangrove Propagule}} || 64 × {{ItemLink|Mangrove Log}} || 30
+|-
+! rowspan="4" | Journeyman
+| {{ItemLink|Obol}} +<br />[[File:Crimson Fungus.png|16px|link=]] Crimson Fungus || 64 × {{ItemLink|Crimson Stem}} || 30
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Mushroom Stem}} || 30
+|-
+| {{ItemLink|Obol}} +<br />{{ItemLink|Pale Oak Sapling}} || 64 × {{ItemLink|Pale Oak Log}} || 30
+|-
+| {{ItemLink|Obol}} +<br />[[File:Warped Fungus.png|16px|link=]] Warped Fungus || 64 × {{ItemLink|Warped Stem}} || 30
+|-
+! rowspan="1" | Expert
+| {{ItemLink|Obol}} || {{ItemLink|Hatchet}}<br /><small>Bloodrage</small> || 60
+|-
+! Master
+| colspan="3" style="text-align:center" | ''No trades''
+|}
+All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/1/oak_log.json}}</ref>
+
+* Every log trade gives 64 logs or stems for 1 obol. Oak, birch and spruce cost only the obol. The other woods also cost one of their sapling (or propagule, or fungus for the Hell stems), so the player has to have found that tree before buying its wood.<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/2/cherry_log.json}}</ref> Mushroom stems need no extra item.
+* At Expert level the lumberjack sells a [[Hatchet]] enchanted with [[Bloodrage]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/4/hatchet.json}}</ref>
+* The lumberjack has no Master trades.<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/5/filler.json}}</ref>
+
+Like every villager, a lumberjack that has been traded with also buys its [[favorite food]] once.
+
+== Trivia ==
+* Internally the profession is still <code>minecraft:leatherworker</code>; only its displayed name changes.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Villager professions]]
+[[Category:Trading]]

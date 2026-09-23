@@ -1,0 +1,43 @@
+{{Vanilla|Dimension}}
+[[Matcha Flavoured]] keeps the three vanilla '''dimensions''' but overrides the dimension types of the Overworld and [[Hell]] (the Nether).
+
+== Overworld ==
+The pack's Overworld dimension type differs from vanilla in these ways:<ref>{{Source|MF_datapack/data/minecraft/dimension_type/overworld.json}}</ref>
+{| class="wikitable"
+! Property !! Matcha Flavoured !! Vanilla
+|-
+| Ambient light color || none ("true darkness") || <code>#0a0a0a</code>
+|-
+| Beds || Can always be slept in || Only when dark
+|-
+| Respawn anchors || Work || Do not work
+|}
+
+=== True darkness ===
+Without an ambient light color, unlit areas of the Overworld are completely dark. The pack ships an alternative file, <code>overworld_no_true_darkness.txt</code>, which is identical except that it sets the ambient light color to <code>#212631</code>. To turn true darkness off, a player deletes <code>overworld.json</code> in the datapack's <code>data/minecraft/dimension_type</code> folder, renames the <code>.txt</code> file to <code>overworld.json</code> and restarts the world.<ref>{{Source|MF_datapack/data/minecraft/dimension_type/I_HATE_TRUE_DARKNESS.txt}}</ref> See [[Darkness]].
+
+=== Time ===
+The Overworld's day timeline lasts 72,000 ticks (60 minutes) instead of 24,000, and the moon cycle and villager schedule are stretched to match. See [[Day and night]] and [[Moon]].<ref>{{Source|MF_datapack/data/minecraft/timeline/day.json}}</ref>
+
+== Hell ==
+{{Main|Hell}}
+The Nether is called Hell. Its ambient light is raised to 0.3, its fog reaches 300 blocks, and water cannot be placed below the roof.
+
+== The End ==
+{{Main|The End}}
+The End's dimension type is unchanged.
+
+== History ==
+{{History
+|{{History line|0.3-alpha|Fixed Hell's ambient light, which was 0.}}
+{{History line|1.03|Overworld darkness made less stark.}}
+{{History line|1.10|True darkness returned. Respawn anchors work in the Overworld.}}
+{{History line|1.12|True darkness kept, with instructions to turn it off; Hell's ambient light raised from 0.1 to 0.3.}}
+{{History line|1.12.2|The day and night length uses timelines.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Dimensions]]

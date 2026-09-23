@@ -1,0 +1,49 @@
+{{Infobox auto
+|type=Enchanted book
+}}
+An '''ofuda''' is a special enchanted book sold by the [[Mouthpiece]] in exchange for a [[Sacred texts|sacred text]] and a [[Crystal Heart]]. There are five ofuda, one for each sacred text, and each carries a fixed set of enchantments that is applied in an [[anvil]] like an enchanted book. Ofuda are one of the few ways to get enchantments such as [[Protection]], [[Sharpness]] and [[Mending]], which the pack otherwise makes rare.<ref>{{Cite video|quote=Enchantments are no longer random or use XP to receive. Instead, you craft them, and the rarest, most difficult enchantments to obtain efficiency, unbreaking, protection, sharpness, and mending.}}</ref>
+
+== Obtaining ==
+=== Trading ===
+{{Sources}}
+
+{| class="wikitable"
+! Sacred text !! Ofuda prayer !! Stored enchantments
+|-
+| {{ItemLink|The Avesta}} || Prayer of The God-King || [[Efficiency]] II, [[Unbreaking]] I
+|-
+| {{ItemLink|The Quran}} || Prayer of The Prophet || [[Protection]] II
+|-
+| {{ItemLink|The Tanakh}} || Prayer of Exodus || [[Loyalty]] III, [[Trailblaze]] III, [[Power]] II
+|-
+| {{ItemLink|The Book of Enoch}} || Prayer of Samyaza || [[Sharpness]] III
+|-
+| {{ItemLink|The Lesser Key of Solomon}} || Prayer of Belial || [[Mending]]
+|}
+<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/2/avesta.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/2/tanakh.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/4/solomon.json}}</ref>
+
+The prayer's name appears in dark gray under the item name, the same way as on a [[Blessing|blessing]].
+
+== Usage ==
+An ofuda is used in an [[anvil]] like an enchanted book, adding all of its enchantments to the item where they are compatible. Ofuda do not stack, so only one is used at a time.
+
+== History ==
+{{History|
+{{History line|1.10|Ofuda are no longer stackable, so that a whole stack isn't used at once in an anvil.
+Added The Tanakh and The Quran and their ofuda trades (Prayer of Exodus and Prayer of The Prophet).
+The Prayer of Ahura Mazda was renamed to Prayer of the God-King.}}
+{{History line|1.12.2|Ofuda trades now require a Crystal Heart.}}
+}}
+
+== See also ==
+* [[Sacred texts]]
+* [[Mouthpiece]]
+* [[Blessing]]
+* [[Enchanting]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Items]]
+[[Category:Enchanting]]

@@ -1,0 +1,37 @@
+{{Vanilla}}
+{{Infobox
+|title=Bogged
+|type=Hostile mob, undead
+|health=Easy, Normal: {{Hp|10}}<br />Hard: {{Hp|12}}
+|spawn=Swamps, mangrove swamps, trial chambers
+|drops={{MCW|Bone}}, {{ItemLink|Tipped Arrow}}, {{ItemLink|Estus Ash}}, {{ItemLink|Obol}}, mushrooms
+}}
+A '''bogged''' in [[Matcha Flavoured]] is a swamp [[skeleton]] variant with new drops: {{ItemLink|Estus Ash}} or a rare {{ItemLink|Obol}}, and a mushroom. It no longer drops plain arrows, and all of its drops require a player kill.
+
+== Drops ==
+{{Data/Loot/minecraft/entities/bogged}}
+All drops require a player kill.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/bogged.json}}</ref> Compared to vanilla:
+* plain arrows are removed, and the tipped arrow of Poison drops 0–2 instead of 0–1;
+* one roll gives {{ItemLink|Estus Ash}} (0–1) with a 10 in 11 chance, or an {{ItemLink|Obol}} with a 1 in 11 chance;
+* one roll gives a brown or red mushroom (0–1), with equal chances.
+
+== Behavior and difficulty ==
+Bogged are in the <code>#minecraft:skeletons</code> tag, so they are modified like [[skeleton|skeletons]]: {{Hp|10}} on Easy and Normal and {{Hp|12}} on Hard, with a Punch I (Normal) or Punch II (Hard) bow that replaces their normal one. They don't drop their equipment.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_skeletons.mcfunction}}</ref> They are undead and hurt by [[warding]], and can spawn on the open surface until the [[Ender Dragon]] is killed.
+
+== History ==
+{{History|
+{{History line|1.10|Bogged obol drop rate lowered to match other mobs.}}
+{{History line|1.12.1-alpha|Obols no longer drop from undead mobs.}}
+}}
+Despite the 1.12.1-alpha change, the bogged loot table can still drop an obol.
+
+== See also ==
+* [[Skeleton]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Hostile mobs]]
+[[Category:Undead mobs]]

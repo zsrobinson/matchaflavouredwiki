@@ -1,0 +1,39 @@
+{{Vanilla}}
+'''Weather''' in [[Matcha Flavoured]] works as in vanilla ''Minecraft'', but players have more control over it: [[Clay Fetish|clay fetishes]] set the weather to clear or rain, and waking up after a full [[sleeping|sleep]] clears it.
+
+== Changing the weather ==
+{| class="wikitable"
+! Method !! Result
+|-
+| {{ItemLink|Clay Fetish}} (Rejoice) || Clear weather, 3 seconds after use.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/cheerful_clay_statue.mcfunction}}</ref>
+|-
+| {{ItemLink|Clay Fetish}} (Lament) || Rain, 3 seconds after use.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/mournful_clay_statue.mcfunction}}</ref>
+|-
+| Waking up after a full sleep || Clear weather.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/wake_sleeping_player.mcfunction}}</ref>
+|}
+
+There is no item that starts a thunderstorm. Since beds can be used at any time in the pack, sleeping works as a way to clear the weather during the day as well.
+
+== Cold biomes ==
+In frozen biomes, being underwater is dangerous whatever the weather. See [[Freezing water]].
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Added the clay statues that set the weather to rain or clear.}}
+{{History line|1.10|Sleeping for any amount of time sets the weather to clear.}}
+{{History line|1.12.2|With the new sleeping system, the weather clears when a sleeping player wakes up.}}
+}}
+
+== Trivia ==
+* The developer left sleep weather-clearing out at first because "I like the rain", and added it in 1.10 after community feedback.<ref>{{Cite changelog|1.10|quote=Sleeping for any amount now sets the weather to clear (👥) (I like the rain so I didn't put this in originally)}}</ref>
+
+== See also ==
+* [[Clay Fetish]]
+* [[Sleeping]]
+* [[Day and night]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Environment]]

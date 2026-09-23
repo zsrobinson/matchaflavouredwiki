@@ -1,0 +1,23 @@
+{{Vanilla|Igloo}}
+An '''igloo''' generates as in vanilla, but [[Matcha Flavoured]] changes its basement and chest loot.
+
+== Structure ==
+The basement template (<code>igloo/bottom</code>) is replaced.<ref>{{Source|MF_datapack/data/minecraft/structure/igloo/bottom.nbt}}</ref> Its layout matches vanilla (stone-brick laboratory with a caged villager and zombie villager, a chest, a furnace and a cauldron), with these differences:
+* The brewing stand holds a splash [[Pickled Crimson Fungus]] instead of a potion of Weakness. The pack removes potions from the game, and the item hints at one of the pack's [[secret recipes]].<ref>{{Cite changelog|1.10|quote=Changed Igloo Structure to reflect no potions (And show off a secret recipe)}}</ref> The item gives Weakness II for 1:00 when thrown.
+* A potted crimson fungus stands in the room.
+
+== Loot ==
+=== Chest ===
+{{Data/Loot/minecraft/chests/igloo_chest}}
+
+== History ==
+{{History
+|{{History line|1.10|The basement brewing stand holds Pickled Crimson Fungus instead of a potion.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Structures]]
+[[Category:Generated structures]]

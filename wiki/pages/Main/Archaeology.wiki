@@ -1,0 +1,60 @@
+{{Vanilla|Archaeology}}
+'''Archaeology''' works as in vanilla ''Minecraft'': suspicious sand and suspicious gravel are brushed to reveal an item. [[Matcha Flavoured]] changes the vanilla archaeology loot tables and adds suspicious gravel with new tables to its own structures. The pack's brush is the [[Archeologist's Brush]].
+
+Many tables can give a [[Clay Fetish]] (through the table <code>matcha:archaeology/statues</code>) or one of the [[Sacred texts]].
+
+== Sites ==
+{| class="wikitable"
+! Site !! Block !! Loot table
+|-
+| [[Abandoned village]] houses || Suspicious gravel || <code>archaeology/village_plains</code>
+|-
+| [[Papal Outpost]] graves || Suspicious gravel || <code>archaeology/abbey/grave</code>
+|-
+| Desert wells || Suspicious sand || <code>archaeology/desert_well</code>
+|-
+| [[Desert Pyramid]]s || Suspicious sand || vanilla (<code>archaeology/desert_pyramid</code>)
+|-
+| [[Ocean ruins]] (cold) || Suspicious gravel || <code>archaeology/ocean_ruin_cold</code>
+|-
+| [[Ocean ruins]] (warm) || Suspicious sand || <code>archaeology/ocean_ruin_warm</code>
+|-
+| Trail ruins || Suspicious gravel || <code>archaeology/trail_ruins_common</code>, <code>archaeology/trail_ruins_rare</code>
+|}
+
+== Loot ==
+=== Abandoned village ===
+{{Data/Loot/minecraft/archaeology/village_plains}}
+
+=== Graves ===
+Used by the suspicious gravel in [[Papal Outpost]]s. Despite its name, the table is not used in the [[Abbey]] itself.
+{{Data/Loot/minecraft/archaeology/abbey/grave}}
+
+=== Desert well ===
+{{Data/Loot/minecraft/archaeology/desert_well}}
+
+=== Cold ocean ruins ===
+{{Data/Loot/minecraft/archaeology/ocean_ruin_cold}}
+
+=== Warm ocean ruins ===
+{{Data/Loot/minecraft/archaeology/ocean_ruin_warm}}
+
+=== Trail ruins (common) ===
+{{Data/Loot/minecraft/archaeology/trail_ruins_common}}
+
+=== Trail ruins (rare) ===
+{{Data/Loot/minecraft/archaeology/trail_ruins_rare}}
+
+=== Statues ===
+The helper table <code>matcha:archaeology/statues</code>, called from other tables:
+{{Data/Loot/matcha/archaeology/statues}}
+
+== History ==
+{{History
+|{{History line|0.6-alpha|Suspicious gravel added to abandoned village houses.}}
+{{History line|1.10|Nautilus shells added to archaeology; The Avesta added to desert wells; added grave loot in Papal Outposts.}}
+}}
+
+{{Navbox world}}
+[[Category:Loot]]
+[[Category:Mechanics]]

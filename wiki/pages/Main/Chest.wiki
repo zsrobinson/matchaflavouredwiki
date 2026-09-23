@@ -1,0 +1,38 @@
+{{Vanilla|Chest}}
+{{Infobox auto}}
+A '''chest''' is a block that stores 27 stacks of items, or 54 when two are placed side by side. It works as in vanilla ''Minecraft'', but Matcha Flavoured adds a cheaper recipe that makes chests directly from logs.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Eight logs (any log, wood, stem or hyphae, stripped or not) in a ring make 4 chests. Eight planks still make one chest, as in vanilla; both recipes share one entry in the recipe book.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/chest_from_logs.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/vanilla_chest_from_planks.json}}</ref> Picking up any log unlocks the log recipe.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/logs.json}}</ref>
+
+Since a log makes four planks, the log recipe costs half as much wood as the plank recipe. The design video names it among the recipe changes meant to be kinder to players.<ref>{{Cite video|quote=Six and chests can be made directly from logs.}}</ref>
+
+== Usage ==
+{{Uses}}
+A chest is an ingredient of the [[sack]] (with eight [[Sturdy Leather|sturdy leather]]) and of hoppers.
+
+=== Trapped chest ===
+A '''trapped chest''' is crafted from a chest and a piece of [[Electric Wire|electric wire]], instead of the vanilla tripwire hook.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/trapped_chest.json}}</ref> The change makes trapped chests cheap to use for their darker look.<ref>{{Cite changelog|1.12.1-alpha|quote=Trapped Chests are now crafted with Electric Wire instead of tripwire hooks (to make them cheaper if you just want the dark look, like me!)}}</ref>
+{{Recipes|Trapped Chest}}
+
+== Appearance ==
+The resource pack retextures chests and trapped chests, and the chest screen's title is shown in black.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/entity/chest/normal.png}}</ref>
+
+== History ==
+{{History
+|{{History line|1.02|The chest recipe unlocks properly.}}
+{{History line|1.03|The vanilla chest recipe was accidentally re-enabled, giving two plank recipes; there are now two chest recipes, from logs or from planks, in the same recipe-book group.}}
+{{History line|1.12.1-alpha|Trapped chests are crafted with electric wire.}}
+}}
+
+== Trivia ==
+* The auto-generated transcript of the design video reads "Six and chests can be made directly from logs", probably "sticks and chests": sticks can also be crafted from logs.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sticks_from_logs.json}}</ref>
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Utility blocks]]

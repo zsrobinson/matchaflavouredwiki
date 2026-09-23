@@ -1,0 +1,27 @@
+{{Vanilla|Soul Campfire}}
+{{Infobox auto}}
+'''Soul kindling''' is a variant of [[kindling]] made with soul sand or soul soil. It replaces the {{MCW|Soul Campfire|soul campfire}} and cooks exactly the same recipes as kindling.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Soul kindling is crafted from a kindling and any soul fire base block (soul sand or soul soil), and comes out unlit.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/soul_campfire.json}}</ref> The vanilla soul campfire recipe is removed.
+
+=== Breaking ===
+Soul kindling always drops itself, unlit.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/soul_campfire.json}}</ref>
+
+== Usage ==
+Soul kindling cooks all of kindling's recipes at the same speed. See [[Kindling#Cooking]] and [[Cooking]].
+
+== History ==
+{{History|
+{{History line|1.03|Soul lanterns, kindling and torches unlock from soul fire base blocks.}}
+{{History line|1.12.1-alpha|Soul kindling drops itself when broken.}}
+}}
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Utility blocks]]
+[[Category:Food]]

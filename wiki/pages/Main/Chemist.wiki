@@ -1,0 +1,56 @@
+{{Vanilla|Cleric}}
+{{Infobox
+|title=Chemist
+|type=[[Villager]] profession
+|vanilla={{MCW|Cleric}}
+|rarity_label=Job site block
+|rarity={{ItemLink|Chemistry Stand}}
+}}
+The '''Chemist''' is a [[villager]] profession that sells stacks of splash potions. It replaces the {{MCW|Cleric|cleric}}, and its job site block is the [[Chemistry Stand]] (the renamed brewing stand). All of its trades are at Novice level.
+
+== Trades ==
+@@TABLE@@
+All trades can be used 999 times before restocking, and a Novice chemist offers all seven.<ref>{{Source|MF_datapack/data/minecraft/trade_set/cleric/level_1.json}}</ref> The chemist has no trades above Novice.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/2/filler.json}}</ref>
+
+Each trade gives 16 splash potions, which stack to 64. The potions apply:<ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_pitch.json}}</ref>
+{| class="wikitable"
+! Potion !! Effects
+|-
+| Splash Potion of Infestation || {{EffectLink|Infested}} for 5:00
+|-
+| Splash Potion of Oozing || {{EffectLink|Oozing}} for 5:00
+|-
+| Darkness || {{EffectLink|Darkness}} for 1:00 and {{EffectLink|Blindness}} for 0:30
+|-
+| Splash Potion of Slowness || {{EffectLink|Slowness}} for 5:00
+|-
+| Splash Potion of Weaving || {{EffectLink|Weaving}} for 5:00
+|-
+| Splash Potion of Wind Charging || {{EffectLink|Wind Charged}} for 5:00
+|-
+| Wither || {{EffectLink|Wither}} for 2:00
+|}
+The durations are the full values in the potion; as with any splash potion, mobs further from the impact receive shorter effects.
+
+The developer describes the potions as placeholders: "ALL potions will eventually be removed from the cleric trade and he will serve a different function. The Potions were/are place holders before a corresponding food is added".<ref>{{Cite changelog|1.12.1-alpha|quote=ALL potions will eventually be removed from the cleric trade and he will serve a different function. The Potions were/are place holders before a corresponding food is added}}</ref>
+
+Like every villager, a chemist that has been traded with also buys its [[favorite food]] once.
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Removed the splash potions of Weakness, Invisibility and Poison.}}
+}}
+
+== Issues ==
+* The Darkness potion's tooltip lists Darkness and Blindness for 5:00 each, but the potion applies Darkness for 1:00 (1,200 ticks) and Blindness for 0:30 (600 ticks).<ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_pitch.json}}</ref>
+
+== Trivia ==
+* The Darkness potion's internal name is <code>splash_pitch</code>.
+* Internally the profession is still <code>minecraft:cleric</code>; only its displayed name changes.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Villager professions]]
+[[Category:Trading]]

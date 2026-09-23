@@ -1,0 +1,35 @@
+{{Infobox auto
+|intrinsics={{G|Health}} ∞
+|renewable=Yes
+}}
+'''Amber earrings''' are [[jewelry]] that slowly heal the wearer. Worn in the head slot, they give constant {{MCW|Regeneration}} I. In Matcha Flavoured, where there is no [[natural regeneration]], they are one of the few ways to regain health without eating.
+
+== Obtaining ==
+=== Trading ===
+The [[Jeweler]] sells amber earrings at Journeyman level for 8 [[Obol]]s and one [[Amber]]. The trade can be used 999 times.<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/3/amber_earrings.json}}</ref>
+
+== Usage ==
+=== Effect ===
+Every tick, if the wearer has no Regeneration effect, the earrings give 3 seconds of Regeneration I with no particles. As soon as one application runs out, the next begins, so the wearer regenerates continuously. If the player already has Regeneration from another source, such as [[food]], the earrings don't replace it.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/regeneration.mcfunction}}</ref> Regeneration I heals {{Hp|1}} every 2.5 seconds, as in vanilla.
+
+=== Armor ===
+Amber earrings are worn in the head slot and take the place of a helmet. They give 1 [[armor]] point and no armor toughness or knockback resistance. Like all jewelry, they are unbreakable and, being built on a netherite helmet, don't burn in fire or lava. See [[Jewelry]].
+
+== History ==
+{{History|
+{{History line|0.6-alpha|Jewelry became unbreakable.}}
+{{History line|1.10|Fixed Amber Earrings in multiplayer.}}
+{{History line|1.12|Amber Earrings could be crafted in a smithing table, a leftover from testing. This recipe was removed.}}
+{{History line|1.12.2|Earrings no longer give knockback resistance.}}
+}}
+
+== See also ==
+* [[Jewelry]]
+* [[Amber]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Armor]]
+[[Category:Jewelry]]

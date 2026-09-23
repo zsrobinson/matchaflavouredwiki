@@ -5,13 +5,13 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Sweeping Edge]] I<br />[[Shakudo Weapon]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Sweeping Edge]] I<br />[[Divinity|{{G|Health}}{{G|Attack damage}}]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=1000
 |damage={{Hp|6}}
 |attackspeed=1.6
-|miningspeed=340282349999999991754788743781432688640
+|miningspeed=1.5
 |repair=[[Block of Copper]]
 |tooltip={{G|Attack damage}} 6<br />{{G|Attack speed}} 1.6<br />Repaired with:<br />Block of Copper
 |id=<code>matcha:shakudo_sword</code>

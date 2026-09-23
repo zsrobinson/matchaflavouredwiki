@@ -1,0 +1,41 @@
+{{Vanilla}}
+
+{{Infobox auto|Brown Mushroom}}
+
+'''Mushrooms''' come in two kinds with different roles in [[cooking]]. The '''red mushroom''', called a toadstool in food names, is an [[ingredient]] whose [[intrinsic]] is {{EffectLink|Poison}}. The '''brown mushroom''' has no intrinsic and is the pack's pickling agent: every pickle and several other preserves need one.
+
+== Obtaining ==
+
+Mushrooms are found and farmed as in vanilla. A brown or red mushroom block can be crafted into 1 mushroom.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/brown_mushroom_from_mushroom_block.json}}</ref>
+
+{{Recipes|Brown Mushroom}}
+{{Recipes|Red Mushroom}}
+
+== Usage ==
+
+=== Brown mushroom ===
+Brown mushrooms are cooked into [[braised mushroom]]s, which make [[pickled mushrooms]] and [[stroganoff]] and top [[mushroom pizza]]. Raw brown mushrooms are the preservative in [[pickled carrots]], [[pickled potatoes]], [[sun-dried tomatoes]], [[pickled toadstools]], [[golden pickled carrots]], [[pickled crimson fungus]] and [[pickled warped fungus]], and are also used in [[cheese]], [[mead]] and [[ramen stock]].
+
+{{Uses|Brown Mushroom}}
+
+=== Red mushroom ===
+Red mushrooms are cooked into [[braised toadstool]]s (Poison, 0:30), pickled into [[pickled toadstools]] (a splash potion of Poison II, 1:00) and cooked into [[toadstool stroganoff]] (Poison, 5:00). These foods poison the player who eats them; the pickle can be thrown at mobs.
+
+{{Uses|Red Mushroom}}
+
+== History ==
+{{History|
+{{History line|0.7-alpha|Added braised mushrooms, stroganoff, pickled mushrooms, braised toadstools, toadstool stroganoff and pickled toadstools. New mushroom item textures.}}
+{{History line|1.12.1-alpha|Red and brown mushrooms can be crafted from their mushroom blocks.}}
+}}
+
+== See also ==
+* [[Crimson Fungus]]
+* [[Warped Fungus]]
+* [[Intrinsic]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

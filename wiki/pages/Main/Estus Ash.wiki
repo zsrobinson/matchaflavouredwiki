@@ -1,0 +1,48 @@
+{{Vanilla|Glowstone Dust}}
+{{Infobox auto}}
+'''Estus Ash''' is a magic material that replaces {{MCW|Glowstone Dust|glowstone dust}}. It is the most common form of [[estus]] and the pack's basic magic ingredient, used for [[blessing]]s, [[Stabilized Estus]] and many foods. Most Estus Ash comes from [[Raw Estus]], which turns into Estus Ash as soon as the player picks it up.
+
+== Obtaining ==
+=== Raw Estus ===
+Every Raw Estus that enters a player's inventory is replaced with one Estus Ash, and heals the player at the same time. See [[Raw Estus#Behavior]].<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/estus_effects.mcfunction}}</ref>
+
+=== Crystallized Estus ===
+[[Crystallized Estus]] (glowstone) generates naturally in [[Hell]]. Breaking it without Silk Touch drops 2–4 Estus Ash, as in vanilla; Fortune raises the count but it never exceeds 4. This vanilla block drop is not listed in the table below.
+
+=== Loot ===
+{{Sources}}
+For skeletons, strays and bogged, the chosen drop is 0 or 1 Estus Ash with equal odds, so the real chance of a drop is half the listed value: 50% for skeletons and strays, and about 45% for bogged.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/skeleton.json}}</ref> Witches always drop 4–8 Estus Ash, plus 0–1 per level of Looting.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json}}</ref> The fishing junk entry was added so that players on Peaceful can still get Estus Ash.<ref>{{Cite changelog|1.12.1-alpha|quote=Estus Ash added to Junk pool (For peaceful players)}}</ref>
+
+== Usage ==
+Estus Ash is used for [[Stabilized Estus]] (seven per piece), five [[blessing]]s, [[Crystallized Estus]], [[Spectral Arrow]]s and many foods, including the curry stocks and the empanadas and cupcakes.
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== Advancements ==
+{| class="wikitable"
+! Advancement !! Description !! Requirement
+|-
+| Hellish Powder || It Radiates Holy Power. It kind of smells like Curry... maybe Cinnamon? || Obtain Estus Ash. This advancement is hidden.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_estus.json}}</ref>
+|}
+
+== Trivia ==
+* The advancement's description mentions curry and cinnamon, and Estus Ash is an ingredient of the pack's curry stocks and of several sweet baked foods such as the [[Apple Empanada]] and [[French Toast]].
+* The [[Angler's Almanac]] entry for Estus Ash reads: "Though it appears to be soluble, estus ash precipitates out of solution over time. With no emulsifiers in the water, a sediment of ash forms on the bed. So why then, is the sediment so thin?"
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Added to the fishing junk pool.}}
+}}
+
+== See also ==
+* [[Estus]]
+* [[Raw Estus]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Items]]
+[[Category:Renamed items]]
