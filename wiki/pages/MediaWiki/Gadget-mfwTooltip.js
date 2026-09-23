@@ -9,8 +9,14 @@
 	'use strict';
 	var tip = null;
 	var current = null;
-	var touch = false;
+	var touchAt = 0;  // time of the last touch pointerdown
 	var tapped = null;
+
+	// The mouse events a tap fires come within a second of its touch pointerdown; a mouse move or a
+	// key press ends that (so keyboards and screen readers are never mistaken for taps)
+	function tapping() {
+		return Date.now() - touchAt < 1000;
+	}
 
 	function escapeHtml( s ) {
 		var span = document.createElement( 'span' );
@@ -48,6 +54,15 @@
 		top = Math.max( 0, Math.min( top, doc.clientHeight - h ) );
 		tip.style.left = left + 'px';
 		tip.style.top = top + 'px';
+	}
+
+	// Below the slot (above it near the bottom of the screen), so the finger doesn't hide either
+	function placeBy( r ) {
+		var doc = document.documentElement;
+		var w = tip.offsetWidth, h = tip.offsetHeight;
+		var top = r.bottom + h + 4 > doc.clientHeight ? r.top - h - 4 : r.bottom + 4;
+		tip.style.left = Math.max( 0, Math.min( r.left, doc.clientWidth - w ) ) + 'px';
+		tip.style.top = Math.max( 0, top ) + 'px';
 	}
 
 	function hide() {
@@ -95,7 +110,7 @@
 
 	document.addEventListener( 'mouseover', function ( e ) {
 		var item = slotItem( e.target );
-		if ( item === current || touch ) {
+		if ( item === current || tapping() ) {
 			return;
 		}
 		if ( !item ) {
@@ -107,18 +122,18 @@
 		}
 	} );
 	document.addEventListener( 'mousemove', function ( e ) {
-		if ( current ) {
+		if ( current && !tapping() ) {
 			place( e.clientX, e.clientY );
 		}
 	} );
 	document.addEventListener( 'mouseout', function ( e ) {
-		if ( current && !touch && !current.contains( e.relatedTarget ) && slotItem( e.relatedTarget ) !== current ) {
+		if ( current && !tapping() && !current.contains( e.relatedTarget ) && slotItem( e.relatedTarget ) !== current ) {
 			hide();
 		}
 	} );
 	// Keyboard users get the tooltip beside the focused slot
 	document.addEventListener( 'focusin', function ( e ) {
-		var item = !touch && slotItem( e.target );
+		var item = !tapping() && slotItem( e.target );
 		if ( item && show( item ) ) {
 			var r = item.getBoundingClientRect();
 			place( r.right - 11 + 4, r.top + 34 );
@@ -126,22 +141,30 @@
 	} );
 	document.addEventListener( 'focusout', hide );
 	// Touch screens have no hover, so the mouse events a tap fires are ignored: the first tap on a
-	// slot shows its tooltip beside it, a second tap follows the slot's link, a tap elsewhere hides it
-	document.addEventListener( 'pointerover', function ( e ) {
-		touch = e.pointerType === 'touch';
+	// slot shows its tooltip, a second tap follows the slot's link, a tap elsewhere hides it
+	document.addEventListener( 'pointerdown', function ( e ) {
+		touchAt = e.pointerType === 'touch' ? Date.now() : 0;
+	}, true );
+	document.addEventListener( 'pointermove', function ( e ) {
+		if ( e.pointerType === 'mouse' ) {
+			touchAt = 0;
+		}
+	}, true );
+	document.addEventListener( 'keydown', function () {
+		touchAt = 0;
 	}, true );
 	document.addEventListener( 'click', function ( e ) {
 		var item = slotItem( e.target );
-		if ( !touch ) {
+		if ( !tapping() ) {
 			return;
 		} else if ( !item ) {
 			hide();
 		} else if ( item !== tapped && show( item ) ) {
 			e.preventDefault();
 			tapped = item;
-			var r = item.getBoundingClientRect();
-			place( r.right - 11 + 4, r.top + 34 );
+			placeBy( item.getBoundingClientRect() );
 		}
 	}, true );
-	window.addEventListener( 'scroll', hide, { passive: true } );
+	// any scroll, including a wide table's sideways scroll (scroll events don't bubble)
+	window.addEventListener( 'scroll', hide, { capture: true, passive: true } );
 }() );
