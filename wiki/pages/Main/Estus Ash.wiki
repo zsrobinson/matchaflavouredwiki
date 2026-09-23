@@ -7,11 +7,11 @@
 Every Raw Estus that enters a player's inventory is replaced with one Estus Ash, and heals the player at the same time. See [[Raw Estus#Behavior]].<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/estus_effects.mcfunction}}</ref>
 
 === Crystallized Estus ===
-[[Crystallized Estus]] (glowstone) generates naturally in [[Hell]]. Breaking it without Silk Touch drops 2–4 Estus Ash, as in vanilla; Fortune raises the count but it never exceeds 4. This vanilla block drop is not listed in the table below.
+[[Crystallized Estus]] (glowstone) generates naturally in [[Hell]]. Breaking it without Silk Touch drops 2–4 Estus Ash, as in vanilla; Fortune raises the count but it never exceeds 4.
 
 === Loot ===
 {{Sources}}
-For skeletons, strays and bogged, the chosen drop is 0 or 1 Estus Ash with equal odds, so the real chance of a drop is half the listed value: 50% for skeletons and strays, and about 45% for bogged.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/skeleton.json}}</ref> Witches always drop 4–8 Estus Ash, plus 0–1 per level of Looting.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json}}</ref> The fishing junk entry was added so that players on Peaceful can still get Estus Ash.<ref>{{Cite changelog|1.12.1-alpha|quote=Estus Ash added to Junk pool (For peaceful players)}}</ref>
+For skeletons, strays and bogged, the chosen drop is 0 or 1 Estus Ash with equal odds; the "Chance" column already includes this, giving 50% for skeletons and strays and about 45% for bogged.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/skeleton.json}}</ref> Witches always drop 4–8 Estus Ash, plus 0–1 per level of Looting.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json}}</ref> The fishing junk entry was added so that players on Peaceful can still get Estus Ash.<ref>{{Cite changelog|1.12.1-alpha|quote=Estus Ash added to Junk pool (For peaceful players)}}</ref>
 
 == Usage ==
 Estus Ash is used for [[Stabilized Estus]] (seven per piece), five [[blessing]]s, [[Crystallized Estus]], [[Spectral Arrow]]s and many foods, including the curry stocks and the empanadas and cupcakes.

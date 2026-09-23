@@ -1,0 +1,5 @@
+<includeonly>{{#invoke:Tooltip|box|{{{1|{{PAGENAME}}}}}}}</includeonly><noinclude>
+An item's in-game tooltip: its name in the colour the game gives it and the pack's lore lines, with their colours and glyphs ([[Module:Tooltip]], generated from the pack's item components). Item infoboxes show it under the inventory slot; hovering any slot shows the same tooltip.
+
+<code><nowiki>{{Tooltip|Apple Empanada}}</nowiki></code> → {{Tooltip|Apple Empanada}} {{Tooltip|Adamant Sword}} {{Tooltip|Electrum Helmet}}
+[[Category:Templates]]</noinclude>

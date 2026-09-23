@@ -3,6 +3,6 @@
 |-
 | [[Charred Meat]]
 | [[Raw Flesh]] or [[Raw Chicken]] or [[Raw Beef]] or [[Raw Porkchop]] or [[Raw Mutton]]
-| {{Cooking|station=Mud Kiln|Input=Raw Flesh;Raw Chicken;Raw Beef;Raw Porkchop;Raw Mutton|Output=Charred Meat|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json|matcha:food/kiln/charred_meat}}</small>
+| {{Cooking|station=Mud Kiln|Input=Raw Flesh;Raw Chicken;Raw Beef;Raw Porkchop;Raw Mutton|Output=Charred Meat|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json|matcha:food/kiln/charred_meat}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -4,7 +4,7 @@
 == Obtaining ==
 Copper equipment is crafted from [[Copper Ingot|copper ingots]], which are smelted from raw copper in a [[Mud Kiln|mud kiln]] or [[Blast Furnace|blast furnace]]; an [[Oven|oven]] is not hot enough.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_pickaxe.json}}</ref> Copper also makes the [[Copper Dolabra|copper dolabra]], [[Copper Mattock|copper mattock]], [[Shears|copper shears]] and [[Compass|copper compass]].
 
-The developer wants players to spend time in the copper age: the 1.10 notes say "players who just start the world have no need for that much iron, I want them caving and using copper tools at first."{{Cite changelog|1.10|quote=I want them caving and using copper tools at first. Copper is cool, let them have more time with it.}}
+The developer wants players to spend time in the copper age: the 1.10 notes say "players who just start the world have no need for that much iron, I want them caving and using copper tools at first."<ref>{{Cite changelog|1.10|quote=I want them caving and using copper tools at first. Copper is cool, let them have more time with it.}}</ref>
 
 == Mining ==
 The copper pickaxe mines iron ([[Hematite|hematite]]) and silver, but cannot get drops from diamond ore, native gold or obsidian.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/copper.json}}</ref>

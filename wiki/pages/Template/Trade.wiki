@@ -1,0 +1,7 @@
+<includeonly>{{#invoke:Station|trade|{{{1|}}}|{{{2|}}}|{{{3|}}}}}</includeonly><noinclude>
+A villager's offer as the trading screen lists it, on the pack's own button ([[Module:Station]]): what the villager wants (one or two stacks, <code>Item,count</code>), then what it gives. Hover a slot for the item's tooltip.
+
+<code><nowiki>{{Trade|Obol,3||Cooking Recipe}}</nowiki></code> → {{Trade|Obol,3||Cooking Recipe}}
+
+<code><nowiki>{{Trade|Obol,12|Book|Angler's Almanac}}</nowiki></code> → {{Trade|Obol,12|Book|Angler's Almanac}}
+[[Category:Templates]]</noinclude>

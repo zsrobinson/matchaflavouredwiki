@@ -11,7 +11,7 @@
 |-
 | [[Cooked Porkchop]]
 | [[Raw Porkchop]]
-| {{Cooking|station=Kindling|Input=Raw Porkchop|Output=Cooked Porkchop|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_pork.json|matcha:food/campfire/cooked_pork}}</small>
+| {{Cooking|station=Kindling|Input=Raw Porkchop|Output=Cooked Porkchop|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_pork.json|matcha:food/campfire/cooked_pork}}</small>
 |-
 | [[Ramen Stock]]
 | [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Chicken]] or [[Seitan]] +<br />[[Bowl]]
@@ -19,10 +19,10 @@
 |-
 | [[Charred Meat]]
 | [[Raw Flesh]] or [[Raw Chicken]] or [[Raw Beef]] or [[Raw Porkchop]] or [[Raw Mutton]]
-| {{Cooking|station=Mud Kiln|Input=Raw Flesh;Raw Chicken;Raw Beef;Raw Porkchop;Raw Mutton|Output=Charred Meat|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json|matcha:food/kiln/charred_meat}}</small>
+| {{Cooking|station=Mud Kiln|Input=Raw Flesh;Raw Chicken;Raw Beef;Raw Porkchop;Raw Mutton|Output=Charred Meat|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json|matcha:food/kiln/charred_meat}}</small>
 |-
 | [[Cooked Porkchop]]
 | [[Raw Porkchop]]
-| {{Cooking|station=Oven|Input=Raw Porkchop|Output=Cooked Porkchop|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pork.json|matcha:food/oven/cooked_pork}}</small>
+| {{Cooking|station=Oven|Input=Raw Porkchop|Output=Cooked Porkchop|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pork.json|matcha:food/oven/cooked_pork}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

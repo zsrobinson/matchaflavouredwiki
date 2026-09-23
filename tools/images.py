@@ -6,6 +6,9 @@
   Glyph EXXX.png    each custom-font glyph from custom_emojis.png (used by {{G}})
   Texture <path>.png  raw textures listed in tools/extra_textures.txt (optional)
 
+and into site/assets/gui/: the pack's station screens, progress sprites, villager offer button,
+HUD hearts and glyph sheet at 2x, for Module:Station, Module:Tooltip and {{Hp}}.
+
 Icons are upscaled with nearest-neighbour to 128px so MediaWiki thumbnails stay crisp.
 Block items get a simple isometric cube render (slabs are half height).
 """
@@ -13,7 +16,7 @@ import json
 import os
 import re
 
-from PIL import Image
+from PIL import Image, ImageDraw
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'build', 'images')
@@ -181,8 +184,163 @@ def glyphs():
     return n
 
 
+# ---------------------------------------------------------------- GUI art
+# The pack reskins every container screen. Its station screens (Module:Station) are drawn from
+# these textures, so they are cut out here, at 2x (one texture pixel = 2 CSS pixels, the scale
+# of minecraft.wiki's 32px slot icons). Output: site/assets/gui/, served as /assets/gui/.
+GUI_OUT = os.path.join(ROOT, 'site', 'assets', 'gui')
+GUI = os.path.join(RP, 'minecraft', 'textures', 'gui')
+VANILLA_TEX = os.path.join(ROOT, 'source', 'vanilla-assets', 'assets', 'minecraft', 'textures')
+BAND = 77  # the themed top part of a station screen; the brown player inventory starts below it
+PANEL = {'outline': (13, 9, 3), 'light': (127, 102, 77), 'base': (96, 77, 58), 'shadow': (41, 31, 24),
+         'slot': (67, 54, 42), 'slot_shadow': (27, 21, 17)}
+
+
+def tex(*parts):
+    """A texture from the pack, falling back to vanilla."""
+    for base in (os.path.join(RP, 'minecraft', 'textures'), VANILLA_TEX):
+        p = os.path.join(base, *parts)
+        if os.path.exists(p):
+            return Image.open(p).convert('RGBA')
+    raise FileNotFoundError(os.path.join(*parts))
+
+
+def x2(im):
+    return im.resize((im.width * 2, im.height * 2), Image.NEAREST)
+
+
+def band(name):
+    """The station's own top panel (176x77), with its bottom corners rounded like the top ones."""
+    im = tex('gui', 'container', name + '.png').crop((0, 0, 176, BAND))
+    px = im.load()
+    outline = px[2, 0]
+    for y in range(3):
+        for dx in range(3):
+            for x_top, x in ((dx, dx), (175 - dx, 175 - dx)):
+                top = px[x_top, y]
+                if top[3] == 0:
+                    px[x, BAND - 1 - y] = (0, 0, 0, 0)
+                elif top == outline:
+                    px[x, BAND - 1 - y] = outline
+    for x in range(3, 173):
+        px[x, BAND - 1] = outline
+    return im
+
+
+def panel(w, h):
+    """A plain panel in the pack's inventory palette (vanilla's bevel, recoloured brown)."""
+    im = Image.new('RGBA', (w, h), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    c = {k: v + (255,) for k, v in PANEL.items()}
+    d.rectangle((1, 1, w - 2, h - 2), fill=c['base'])
+    d.line((2, 0, w - 4, 0), fill=c['outline']); d.line((2, h - 1, w - 3, h - 1), fill=c['outline'])
+    d.line((0, 2, 0, h - 4), fill=c['outline']); d.line((w - 1, 3, w - 1, h - 3), fill=c['outline'])
+    for p in ((1, 1), (w - 3, 1), (w - 2, 2), (1, h - 3), (2, h - 2), (w - 2, h - 2)):
+        im.putpixel(p, c['outline'])
+    d.rectangle((2, 1, w - 4, 2), fill=c['light']); d.rectangle((1, 2, 2, h - 4), fill=c['light'])
+    d.rectangle((3, h - 3, w - 3, h - 2), fill=c['shadow']); d.rectangle((w - 3, 3, w - 2, h - 3), fill=c['shadow'])
+    im.putpixel((3, 3), c['light'])
+    im.putpixel((w - 4, h - 4), c['shadow'])
+    return im
+
+
+def slot_frame(im, x, y, size=18):
+    """Draw an inventory slot frame whose item area starts at (x, y)."""
+    d = ImageDraw.Draw(im)
+    x0, y0, x1, y1 = x - 1, y - 1, x - 2 + size, y - 2 + size
+    d.rectangle((x0, y0, x1, y1), fill=PANEL['slot'] + (255,))
+    d.line((x0, y0, x1 - 1, y0), fill=PANEL['slot_shadow'] + (255,))
+    d.line((x0, y0, x0, y1 - 1), fill=PANEL['slot_shadow'] + (255,))
+    d.line((x0 + 1, y1, x1, y1), fill=PANEL['light'] + (255,))
+    d.line((x1, y0 + 1, x1, y1), fill=PANEL['light'] + (255,))
+
+
+def campfire_frames(soul=False):
+    """A lit campfire as a 2D icon: the pack's log icon in front of the animated fire, one frame
+    per fire frame, stacked vertically (animated with CSS steps())."""
+    logs = tex('item', 'soul_campfire.png' if soul else 'campfire.png')
+    fire = tex('block', ('soul_' if soul else '') + 'campfire_fire.png')
+    n = fire.height // fire.width
+    strip = Image.new('RGBA', (16, 16 * n), (0, 0, 0, 0))
+    for i in range(n):
+        f = fire.crop((0, i * 16, 16, i * 16 + 16)).resize((12, 12), Image.NEAREST)
+        strip.alpha_composite(f, (2, i * 16 + 1))
+        strip.alpha_composite(logs, (0, i * 16 + 3))
+    return strip, n
+
+
+def gui_assets():
+    os.makedirs(GUI_OUT, exist_ok=True)
+    out = {}
+
+    def save(im, name):
+        x2(im).save(os.path.join(GUI_OUT, name + '.png'))
+        out[name] = im.size
+
+    for station, texture in (('crafting', 'crafting_table'), ('oven', 'furnace'), ('kiln', 'smoker'),
+                             ('blast', 'blast_furnace'), ('smithing', 'smithing'), ('stonecutter', 'stonecutter')):
+        save(band(texture), station)
+    for station, sprites in (('oven', 'furnace'), ('kiln', 'smoker'), ('blast', 'blast_furnace')):
+        save(tex('gui', 'sprites', 'container', sprites, 'burn_progress.png'), station + '-progress')
+        save(tex('gui', 'sprites', 'container', sprites, 'lit_progress.png'), station + '-lit')
+    save(tex('gui', 'sprites', 'container', 'stonecutter', 'recipe_selected.png'), 'stonecutter-selected')
+    save(tex('gui', 'sprites', 'container', 'stonecutter', 'scroller.png'), 'stonecutter-scroller')
+
+    # Kindling has no screen in the game, so it gets one in the pack's own palette: the item rests
+    # on the lit campfire, with the villager screen's arrow (the pack's brown one) to the result.
+    k = panel(176, BAND)
+    slot_frame(k, 56, 17)
+    d = ImageDraw.Draw(k)
+    x0, y0 = 111, 30  # large output frame, as the furnace screens draw it
+    d.rectangle((x0, y0, x0 + 25, y0 + 25), fill=PANEL['slot'] + (255,))
+    d.line((x0, y0, x0 + 24, y0), fill=PANEL['slot_shadow'] + (255,))
+    d.line((x0, y0, x0, y0 + 24), fill=PANEL['slot_shadow'] + (255,))
+    d.line((x0 + 1, y0 + 25, x0 + 25, y0 + 25), fill=PANEL['light'] + (255,))
+    d.line((x0 + 25, y0 + 1, x0 + 25, y0 + 25), fill=PANEL['light'] + (255,))
+    arrow = tex('gui', 'container', 'villager.png').crop((186, 38, 208, 53))
+    k.alpha_composite(arrow, (80, 35))
+    save(k, 'kindling')
+    for soul in (False, True):
+        strip, n = campfire_frames(soul)
+        save(strip, 'soul-campfire' if soul else 'campfire')
+        out['campfire_frames'] = n
+
+    # a villager offer, as the trading screen lists it: the pack's button (a nine-slice sprite,
+    # border 3) cut to the offer width of 88, and the trade arrow
+    button = tex('gui', 'sprites', 'widget', 'button.png')
+    offer = Image.new('RGBA', (88, 20), (0, 0, 0, 0))
+    offer.alpha_composite(button.crop((0, 0, 85, 20)), (0, 0))
+    offer.alpha_composite(button.crop((button.width - 3, 0, button.width, 20)), (85, 0))
+    save(offer, 'trade-offer')
+    save(tex('gui', 'sprites', 'container', 'villager', 'trade_arrow.png'), 'trade-arrow')
+
+    # hearts from the pack's HUD (pink in this pack), for {{Hp}}
+    for h in ('full', 'half', 'container'):
+        save(tex('gui', 'sprites', 'hud', 'heart', h + '.png'), 'heart-' + h)
+
+    # the custom font's glyph sheet, white, for tooltips (tinted by CSS mask like the game tints text)
+    sheet = tex('font', 'custom_emojis.png')
+    x2(sheet).save(os.path.join(GUI_OUT, 'glyphs.png'))
+    return out
+
+
+def glyph_widths():
+    """Advance data for each glyph of the custom font: Minecraft uses the rightmost opaque
+    column + 1 as a bitmap glyph's width."""
+    sheet = tex('font', 'custom_emojis.png')
+    widths = {}
+    for r in range(sheet.size[1] // 8):
+        for c in range(16):
+            g = sheet.crop((c * 8, r * 8, c * 8 + 8, r * 8 + 8))
+            bb = g.getbbox()
+            if bb:
+                widths[0xE000 + r * 16 + c] = bb[2]
+    return widths
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
+    print('gui art', len(gui_assets()))
     data = json.load(open(os.path.join(ROOT, 'build', 'data.json'), encoding='utf-8'))
     done = skipped = 0
     for key, item in sorted(data['items'].items()):
@@ -205,9 +363,13 @@ def main():
                 continue
             path, _, name = line.partition('=')
             path, name = path.strip(), name.strip()
-            full = os.path.join(ROOT, path)
-            if os.path.exists(full):
-                upscale(Image.open(full)).save(os.path.join(OUT, name))
+            faces = [os.path.join(ROOT, x.strip()) for x in path.split('+')]
+            if not all(os.path.exists(f) for f in faces):
+                continue
+            if len(faces) == 3:  # top + left + right: an isometric block icon
+                iso_cube(*(first_frame(Image.open(f).convert('RGBA')) for f in faces)).save(os.path.join(OUT, name))
+            else:
+                upscale(Image.open(faces[0])).save(os.path.join(OUT, name))
     print('icons', done, 'no icon', skipped, 'glyphs', glyphs())
 
 

@@ -3,10 +3,10 @@
 |-
 | [[Cooked Flesh]]
 | [[Raw Flesh]]
-| {{Cooking|station=Kindling|Input=Raw Flesh|Output=Cooked Flesh|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_rabbit.json|matcha:food/campfire/cooked_rabbit}}</small>
+| {{Cooking|station=Kindling|Input=Raw Flesh|Output=Cooked Flesh|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_rabbit.json|matcha:food/campfire/cooked_rabbit}}</small>
 |-
 | [[Cooked Flesh]]
 | [[Raw Flesh]]
-| {{Cooking|station=Oven|Input=Raw Flesh|Output=Cooked Flesh|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_rabbit.json|matcha:food/oven/cooked_rabbit}}</small>
+| {{Cooking|station=Oven|Input=Raw Flesh|Output=Cooked Flesh|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_rabbit.json|matcha:food/oven/cooked_rabbit}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

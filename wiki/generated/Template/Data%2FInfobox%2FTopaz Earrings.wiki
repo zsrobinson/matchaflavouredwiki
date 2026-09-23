@@ -10,10 +10,10 @@
 |intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|{{G|Mining speed}} [[Haste|∞ Haste]]}}
 |renewable={{{renewable|}}}
 |stackable=No
-|durability=250
+|durability=Unbreakable
 |armor=1
 |repair=[[Adamant Alloy]]
-|tooltip={{G|Armor}} 1
+|tooltipbox={{Tooltip|Topaz Earrings}}
 |id=<code>matcha:topaz_earrings</code>
 |base=<code>minecraft:netherite_helmet</code>
 |source={{Source|MF_datapack/data/matcha/loot_table/equipment/misc/topaz_earrings.json|topaz_earrings.json}}

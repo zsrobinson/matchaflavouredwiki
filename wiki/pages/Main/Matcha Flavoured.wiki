@@ -5,31 +5,7 @@
 |caption=A crystal heart, one of the pack's signature items
 |type=Datapack and resource pack
 |type_label=Type
-|extrarows=
-{{!}}-
-! Developer
-{{!}} Klei Wright ("kleiwright")
-{{!}}-
-! First release
-{{!}} [[Matcha Flavoured 0.2-alpha|0.2-alpha]] (June 9, 2026)
-{{!}}-
-! Full release
-{{!}} [[Matcha Flavoured 1.0|1.0]] (July 24, 2026)
-{{!}}-
-! Latest version
-{{!}} [[Matcha Flavoured 1.12.2|1.12.2-beta]] (September 19, 2026)
-{{!}}-
-! ''Minecraft'' version
-{{!}} ''Java Edition'' 26.2
-{{!}}-
-! Pack format
-{{!}} Datapack 107.1, resource pack 88.0
-{{!}}-
-! Distribution
-{{!}} Modrinth, GitHub
-{{!}}-
-! License
-{{!}} [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]
+|extrarows=<tr><th>Developer</th><td>Klei Wright ("kleiwright")</td></tr><tr><th>First release</th><td>[[Matcha Flavoured 0.2-alpha|0.2-alpha]] (June 9, 2026)</td></tr><tr><th>Full release</th><td>[[Matcha Flavoured 1.0|1.0]] (July 24, 2026)</td></tr><tr><th>Latest version</th><td>[[Matcha Flavoured 1.12.2|1.12.2-beta]] (September 19, 2026)</td></tr><tr><th>''Minecraft'' version</th><td>''Java Edition'' 26.2</td></tr><tr><th>Pack format</th><td>Datapack 107.1, resource pack 88.0</td></tr><tr><th>Distribution</th><td>Modrinth, GitHub</td></tr><tr><th>License</th><td>[https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]</td></tr>
 }}
 '''Matcha Flavoured''' is a datapack and companion resource pack for ''Minecraft: Java Edition'' by Klei Wright. It reworks survival progression so that casual and non-technical players, who explore, farm, cook and build instead of building mob farms, can gather resources as efficiently as technical players do.<ref>{{Source|README.md}}</ref> It replaces hunger with a cooking system in which [[food]] takes over the role of potions, replaces item loss on [[death]] with the loss of maximum [[health]], adds four new [[alloy]]s and two hybrid tool types, makes [[enchanting]] a crafting process, and overhauls [[villager]] trading, [[fishing]] and [[world generation]].
 
@@ -105,7 +81,7 @@ Version [[Matcha Flavoured 1.0|1.0]], "Finally Done", was released on July 24, 2
 [[Matcha Flavoured 1.10|1.10]], "Abbey, Multiplayer and Update Support", was the first large update after release. It added the [[Abbey]] and [[Papal Outpost|papal outpost]], difficulty-dependent mob behavior, [[Multiplayer|multiplayer]] support, and tools for carrying worlds between versions. From this version, the release notes mark features requested by the community with 👥. Versions [[Matcha Flavoured 1.11|1.11]] and [[Matcha Flavoured 1.12|1.12]] were hotfixes for deleted recipes and for performance problems caused by alloy armor.
 
 === Open development ===
-With [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] ("Experimental: Death System"), the developer began publishing pre-releases for players willing to test. The pack moved to a public GitHub repository, adopted major.minor.patch version numbers and gained a translation project. The experimental death system, in which [[advancements]] lower a player's minimum hearts, was kept in [[Matcha Flavoured 1.12.2|1.12.2-beta]] after what the developer described as "so much positive feedback".<ref>{{Cite changelog|1.12.2|quote=There has been so much postitive feedback for it, that it is staying.}}</ref> 1.12.2-beta also moved nearly every item and function into the <code>matcha</code> namespace, which required the [[Updating items|item update trigger]], and credits eighteen community contributors. A port to ''Minecraft'' 26.3, which changes datapack syntax, was in progress at the time.
+With [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] ("Experimental: Death System"), the developer began publishing pre-releases for players willing to test. The pack moved to a public GitHub repository, adopted major.minor.patch version numbers and gained a translation project. The experimental death system, in which [[advancements]] lower a player's minimum hearts, was kept in [[Matcha Flavoured 1.12.2|1.12.2-beta]] after what the developer described as "so much positive feedback".<ref>{{Cite changelog|1.12.2|quote=There has been so much postitive feedback for it, that it is staying.}}</ref> 1.12.2-beta also moved nearly every item and function into the <code>matcha</code> namespace, which required the [[Updating items|item update trigger]], and credits seventeen named community contributors as well as the translation volunteers. A port to ''Minecraft'' 26.3, which changes datapack syntax, was in progress at the time.
 
 See [[Version history]] for the full list of releases and [[Upcoming features]] for work in progress.
 
@@ -116,7 +92,7 @@ The pack is distributed on Modrinth and GitHub. Up to 1.12.1-alpha, each release
 Matcha Flavoured is licensed under [https://creativecommons.org/licenses/by-nc-sa/4.0/ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International].<ref>{{Source|LICENSE}}</ref> In the video, the developer explains that anyone may reuse any part of the pack, such as its recipes or textures, in their own work, as long as they credit it, share it under the same license and do not sell it. The README adds that this includes the Bedrock Marketplace unless the result is free.<ref>{{Cite video|quote=it just means that anyone can use any part of this pack and make it their own.}}</ref> The music disc "Golden" and several background tracks were contributed by other artists; see [[Credits]].
 
 == Reception ==
-The release notes track the community's response to several features. Players who liked the fast zombies' ability to make night and caves "scary again" led to the 1.10 split of zombies into fast strikers and slow husks rather than a plain nerf.<ref>{{Cite changelog|1.10|quote=I think one reason in particular: it makes night and caves scary again.}}</ref> "True darkness" in the overworld was removed in 1.03 and brought back in 1.10 because "a lot of people said they liked it because it was scary". Since 1.12 it can be turned off by swapping a file in the datapack.<ref>{{Cite changelog|1.12}}</ref> The experimental death system of 1.12.1-alpha received enough positive feedback to become permanent in 1.12.2-beta. As of September 2026, the pack's Modrinth files had been downloaded about 403,000 times across all versions.<ref>Modrinth version data at the time of the wiki's last sync.</ref>
+The release notes track the community's response to several features. Players who liked the fast zombies' ability to make night and caves "scary again" led to the 1.10 split of zombies into fast strikers and slow husks rather than a plain nerf.<ref>{{Cite changelog|1.10|quote=I think one reason in particular: it makes night and caves scary again.}}</ref> "True darkness" in the overworld was removed in 1.03 and brought back in 1.10 because "a lot of people said they liked it because it was scary". Since 1.12 it can be turned off by swapping a file in the datapack.<ref>{{Cite changelog|1.12}}</ref> The experimental death system of 1.12.1-alpha received enough positive feedback to become permanent in 1.12.2-beta. As of September 2026, the pack's Modrinth files had been downloaded about 404,000 times across all versions.<ref>Modrinth version data at the time of the wiki's last sync.</ref>
 
 The developer responded to the reception in a second video, "How Criticism changed Matcha Flavoured", released on August 14, 2026, a few days after 1.10.<ref name="appendix">{{Cite video|id=wavOi0ULYpQ|title=How Criticism changed Matcha Flavoured|quote=it's important when I'm listening to feedback to distinguish between what someone's taste is and what's actually good um criticism.}}</ref> It separates complaints about taste from problems in the design. The developer kept the dark [[Hell]], the lenient [[death]] system and the unexplained [[advancements]] as matters of taste. Other complaints led to changes: [[difficulty]] support for players frustrated by fast zombies, cheaper [[Crystal Heart|crystal hearts]] so that more players would use the heart system, and silver in the new [[Abbey]] for players who could not find it. The developer also regretted shipping many full-release patches in quick succession, and said that pre-releases would have let players test fixes without feeling pressure to update.<ref>{{Cite video|id=wavOi0ULYpQ|title=How Criticism changed Matcha Flavoured|quote=I should have just released them as pre-releases or something similar, right? Snapshots essentially, so that I could get bug feedback, but people wouldn't feel pressured to update immediately.}}</ref> Later versions were published as 1.12.1-alpha and 1.12.2-beta.
 

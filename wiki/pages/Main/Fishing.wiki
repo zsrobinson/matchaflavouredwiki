@@ -59,7 +59,7 @@ Every caught fish has a rarity of 1 to 4 stars, shown as the first line of its t
 
 The two fish of the special biomes don't follow the table: the [[Creaking Fish]] (⭐⭐⭐☆) sells at 2 for 1 Obol and only once the Fisherman is a Master, and the [[Echo Eel]] (⭐⭐⭐⭐) sells like the other epic fish.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/5/pale_fish.json}}</ref>
 
-The developer grouped the fish this way so that every climate earns about the same amount of money.<ref>{{Cite changelog|0.5-alpha|quote=Each biome/water type have 5 fish, two common, one uncommon, one rare, and one epic. [...] This was done to better balance the selling system, so each biome will be just as "efficient" to fish in as any other}}</ref> The rarity is part of the item, so a fish only counts for trades and advancements when it was caught with a rod. A [[cod]] dropped by a mob doesn't carry the rarity line and can't be sold.<ref>{{Cite changelog|0.5-alpha|quote=Cod and Salmon cannot be killed and sold, only if caught will they be valid.}}</ref>
+The developer grouped the fish this way so that every climate earns about the same amount of money.<ref>{{Cite changelog|0.5-alpha|quote=Each biome/water type have 5 fish, two common, one uncommon, one rare, and one epic. [...] This was done to better balance the selling system, so each biome will be just as "efficient" to fish in as any other}}</ref> The rarity is part of the item and only the fishing loot tables add it, so only fish from those tables can be sold. A [[cod]] dropped by a mob doesn't carry the rarity line and can't be sold.<ref>{{Cite changelog|0.5-alpha|quote=Cod and Salmon cannot be killed and sold, only if caught will they be valid.}}</ref>
 
 === Fish are cod, salmon and pufferfish ===
 Every custom fish is a vanilla {{MCW|Raw Cod|cod}}, {{MCW|Raw Salmon|salmon}} or {{MCW|Pufferfish|pufferfish}} with its own name, texture and rarity line. Small fish are cod and cook into [[Cooked Fish|cooked fish]]. Large fish are salmon and cook into [[Cooked Large Fish|cooked large fish]]. The [[Freshwater Puffer]] is a pufferfish and cooks into [[Cooked Pufferfish|cooked pufferfish]]. See [[Fish]] for the full list.
@@ -175,9 +175,9 @@ The swamps have their own table, but no fish of their own. They take the guppy, 
 {| class="wikitable sortable"
 ! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
 |-
-| {{ItemLink|Raw Cod}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
+| {{ItemLink|Cod}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
 |-
-| {{ItemLink|Raw Salmon}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
+| {{ItemLink|Salmon}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
 |-
 | {{ItemLink|Herring}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
 |-
@@ -191,9 +191,9 @@ The swamps have their own table, but no fish of their own. They take the guppy, 
 {| class="wikitable sortable"
 ! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
 |-
-| {{ItemLink|Raw Cod}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
+| {{ItemLink|Cod}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
 |-
-| {{ItemLink|Raw Salmon}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
+| {{ItemLink|Salmon}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
 |-
 | {{ItemLink|Black Seabass}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
 |-
@@ -251,7 +251,7 @@ The swamps have their own table, but no fish of their own. They take the guppy, 
 |}
 
 === Special biomes ===
-Four biomes have small tables of their own. Pale Garden has one fish; the others mix a fish with biome items.
+Three biomes have small tables of their own. Pale Garden and Deep Dark mix one fish with biome items, and Sulfur Caves has no fish.
 
 {| class="wikitable"
 ! Biome !! Catch !! Weight !! Share of table !! Per catch (open water)
@@ -347,12 +347,10 @@ The Alaska Blackfish now counts for No More Fish in the Sea (its name was misspe
 {{History line|1.12.1-alpha|Added the [[Angler's Almanac]] and [[Fishing sounds|fishing sounds]].
 Fish changed to the current item format. Fish caught before this version can no longer be sold.
 Fish now make up 85 of 100 weight in their biomes (a previous patch gave junk about 50% of the time).
-Estus Ash added to junk, nautilus shells added to the fishing buried treasure, treasure tweaked.
+Estus Ash added to junk, treasure tweaked. The release notes say nautilus shells were added to the fishing buried treasure, but the current chest has none.
 Old Growth Spruce Taiga added to cool freshwater.}}
 {{History line|1.12.2|Fixed typos that made the Angler's Almanac entries for tropical fish impossible to unlock.}}
-|-
-! Upcoming
-| Fish Bones caught in Sulfur Caves now have the correct texture.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref> The Angler's Almanac entry for pufferfish in Hot Saltwater can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>
+{{History line|Upcoming|2=Fish Bones caught in Sulfur Caves now have the correct texture.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref> The Angler's Almanac entry for pufferfish in Hot Saltwater can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>}}
 }}
 <ref>{{Cite changelog|0.5-alpha|quote=Overhauled Fishing System}}</ref><ref>{{Cite changelog|1.10|quote=Fishing Balances}}</ref><ref>{{Cite changelog|1.12.1-alpha|quote=Fishing now gives 85/5 fish to junk in designated biomes (My patch made it worse and would give junk 50% of the time, sorry)}}</ref>
 

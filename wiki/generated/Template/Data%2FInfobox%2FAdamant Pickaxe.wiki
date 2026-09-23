@@ -15,7 +15,7 @@
 |attackspeed=1.2
 |miningspeed=15
 |repair=[[Block of Diamond]], [[Adamant Scrap]]
-|tooltip={{G|Mining speed}} 15<br />{{G|Attack damage}} 6<br />{{G|Attack speed}} 1.2<br />Set Bonus:<br />{{G|Health}}{{G|Health}} {{G|Cooldown}} (00:30)<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
+|tooltipbox={{Tooltip|Adamant Pickaxe}}
 |id=<code>minecraft:netherite_pickaxe</code>
 |base=<code>minecraft:netherite_pickaxe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/adamant_pickaxe.json|adamant_pickaxe.json}}

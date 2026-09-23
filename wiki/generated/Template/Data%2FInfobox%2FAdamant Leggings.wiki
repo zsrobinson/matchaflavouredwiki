@@ -15,7 +15,7 @@
 |toughness=3
 |knockbackres=1
 |repair=[[Block of Diamond]], [[Adamant Scrap]]
-|tooltip={{G|Armor}} 6<br />{{G|Armor toughness}} 3<br />{{G|Knockback resistance}} 1<br />Set Bonus:<br />{{G|Doom}} 4<br />{{G|Health}}{{G|Health}} {{G|Cooldown}} (00:30)<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
+|tooltipbox={{Tooltip|Adamant Leggings}}
 |id=<code>minecraft:netherite_leggings</code>
 |base=<code>minecraft:netherite_leggings</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/adamant_leggings.json|adamant_leggings.json}}

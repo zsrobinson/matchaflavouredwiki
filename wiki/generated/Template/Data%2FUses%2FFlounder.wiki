@@ -1,8 +1,8 @@
 <includeonly>
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Fisherman]] || Expert || 4 × {{ItemLink|Flounder}} || {{ItemLink|Obol}}
+| [[Fisherman]] || Expert || {{Trade|Flounder,4||Obol}} || 4 × {{ItemLink|Flounder}} || {{ItemLink|Obol}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

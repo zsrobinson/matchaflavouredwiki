@@ -15,7 +15,7 @@
 |attackspeed=2
 |miningspeed=8
 |repair=[[Iron Ingot]]
-|tooltip={{G|Mining speed}} 8<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 3<br />Repaired with:<br />Iron Ingot
+|tooltipbox={{Tooltip|Steel Hoe}}
 |id=<code>matcha:steel_hoe</code>
 |base=<code>minecraft:stone_hoe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_hoe.json|steel_hoe.json}}

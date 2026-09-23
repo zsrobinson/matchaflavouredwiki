@@ -39,18 +39,9 @@
 |-
 | Village / village desert house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_desert_house.json|chests/village/village_desert_house}})</small> || 1 || 14.3% || 
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 2.44% || open water
-|-
 | Village / village plains house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json|chests/village/village_plains_house}})</small> || 1 || 12.1% || 
 |-
 | Woodland mansion <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/woodland_mansion.json|chests/woodland_mansion}})</small> || 1 || 23.8% || 
-|}
-
-'''Mob drops'''
-{| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
-|-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 2.44% || open water
 |}
 
 '''Fishing'''
@@ -73,6 +64,6 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bookshelf <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/bookshelf.json|blocks/bookshelf}})</small> || 1 || 50.0% || 
+| Bookshelf <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/bookshelf.json|blocks/bookshelf}})</small> || 1 || 100% || without Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

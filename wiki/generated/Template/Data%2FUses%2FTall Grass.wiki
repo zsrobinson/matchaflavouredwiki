@@ -3,10 +3,10 @@
 |-
 | [[Tall Dry Grass]]
 | [[Tall Grass]] or [[Large Fern]]
-| {{Cooking|station=Kindling|Input=Tall Grass;Large Fern|Output=Tall Dry Grass|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/campfire/tall_dry_grass_campfire.json|matcha:campfire/tall_dry_grass_campfire}}</small>
+| {{Cooking|station=Kindling|Input=Tall Grass;Large Fern|Output=Tall Dry Grass|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/campfire/tall_dry_grass_campfire.json|matcha:campfire/tall_dry_grass_campfire}}</small>
 |-
 | [[Tall Dry Grass]]
 | [[Tall Grass]] or [[Large Fern]]
-| {{Cooking|station=Oven|Input=Tall Grass;Large Fern|Output=Tall Dry Grass|note=5 s, 0.01 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/tall_dry_grass.json|matcha:oven/tall_dry_grass}}</small>
+| {{Cooking|station=Oven|Input=Tall Grass;Large Fern|Output=Tall Dry Grass|time=5|note=5 s, 0.01 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/tall_dry_grass.json|matcha:oven/tall_dry_grass}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

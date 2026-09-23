@@ -1,6 +1,6 @@
 {{Vanilla|Iron Ore}}
 {{Infobox auto}}
-'''Hematite''' is the renamed iron ore.
+'''Hematite''' is the pack's name for iron ore.
 
 The deepslate variant is '''deepslate hematite'''.
 
@@ -9,7 +9,7 @@ The deepslate variant is '''deepslate hematite'''.
 As vanilla iron ore.
 
 === Breaking ===
-Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 1 raw iron (vanilla table; 2 from deepslate hematite, where adamant tools drop ingots). Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/iron_ore.json}}</ref>
+Mined with a pickaxe (see [[Tools#Mining levels]]), hematite uses the vanilla loot table: 1 raw iron, affected by Fortune, with no bonus from electrum or adamant tools. Deepslate hematite drops 2 raw iron, affected by Fortune and electrum, and adamant tools drop 2 iron ingots instead.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_iron_ore.json}}</ref> Silk Touch drops the block.
 
 == References ==
 {{reflist}}

@@ -15,7 +15,7 @@
 |toughness=1
 |knockbackres=2
 |repair=[[Iron Ingot]]
-|tooltip={{G|Armor}} 7<br />{{G|Armor toughness}} 1<br />{{G|Knockback resistance}} 2<br />Repaired with:<br />Iron Ingot
+|tooltipbox={{Tooltip|Steel Chestplate}}
 |id=<code>matcha:steel_chestplate</code>
 |base=<code>minecraft:iron_chestplate</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_chestplate.json|steel_chestplate.json}}

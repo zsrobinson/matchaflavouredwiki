@@ -1,8 +1,8 @@
 <includeonly>
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Electrum Boots}} || {{ItemLink|Electrum Alloy}}
+| [[Weaponsmith]] || Apprentice || {{Trade|Electrum Boots||Electrum Alloy}} || {{ItemLink|Electrum Boots}} || {{ItemLink|Electrum Alloy}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

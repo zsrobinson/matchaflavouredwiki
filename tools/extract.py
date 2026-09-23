@@ -113,6 +113,106 @@ def render_text(comp):
     return glyph_text(s)
 
 
+MC_COLORS = {
+    'black': '000000', 'dark_blue': '0000AA', 'dark_green': '00AA00', 'dark_aqua': '00AAAA',
+    'dark_red': 'AA0000', 'dark_purple': 'AA00AA', 'gold': 'FFAA00', 'gray': 'AAAAAA',
+    'dark_gray': '555555', 'blue': '5555FF', 'green': '55FF55', 'aqua': '55FFFF',
+    'red': 'FF5555', 'light_purple': 'FF55FF', 'yellow': 'FFFF55', 'white': 'FFFFFF',
+}
+CODE_COLORS = dict(zip('0123456789abcdef', MC_COLORS.values()))
+LORE_STYLE = {'color': 'AA00AA', 'italic': True}  # the game's default for lore lines
+
+
+def color_hex(c):
+    if not isinstance(c, str):
+        return None
+    if c.startswith('#'):
+        return c[1:].upper()
+    return MC_COLORS.get(c)
+
+
+def rich_text(comp, style=None):
+    """Render a JSON text component as styled runs for tooltips: [[text, 'RRGGBB' or '', 'i'/'b'
+    flags], ...]. Custom-font glyphs stay as their private-use characters; § codes are applied."""
+    style = dict(style or {})
+    out = []
+
+    def emit(text, st):
+        cur, buf, i = dict(st), '', 0
+        while i < len(text):
+            if text[i] == '§' and i + 1 < len(text):
+                code = text[i + 1].lower()
+                if buf:
+                    out.append((buf, dict(cur)))
+                    buf = ''
+                if code in CODE_COLORS:
+                    cur = {'color': CODE_COLORS[code]}  # a colour code also resets formatting
+                elif code == 'o':
+                    cur['italic'] = True
+                elif code == 'l':
+                    cur['bold'] = True
+                elif code == 'r':
+                    cur = dict(st)
+                i += 2
+                continue
+            buf += text[i]
+            i += 1
+        if buf:
+            out.append((buf, cur))
+
+    def walk(c, st):
+        if c is None:
+            return
+        if isinstance(c, str):
+            emit(c, st)
+            return
+        if isinstance(c, list):
+            # a list is a component whose first element is the parent of the rest
+            if c:
+                first = c[0] if isinstance(c[0], dict) else {'text': str(c[0])}
+                walk(dict(first, extra=list(first.get('extra', [])) + list(c[1:])), st)
+            return
+        st = dict(st)
+        if 'color' in c and color_hex(c['color']):
+            st['color'] = color_hex(c['color'])
+        for k in ('italic', 'bold'):
+            if k in c:
+                st[k] = bool(c[k])
+        if 'text' in c:
+            emit(str(c['text']), st)
+        if 'translate' in c:
+            key = c['translate']
+            tpl = LANG.get(key, c.get('fallback'))
+            if tpl is None:
+                tpl = key.split('.')[-1].replace('_', ' ').title() if key.startswith(('item.kleispack.', 'block.kleispack.')) else key
+            args = c.get('with', [])
+            n = 0
+            for part in re.split(r'(%(?:\d+\$)?s|%%)', tpl):
+                if part == '%%':
+                    emit('%', st)
+                elif part and part.startswith('%') and part.endswith('s'):
+                    m = re.match(r'%(\d+)\$s', part)
+                    idx = int(m.group(1)) - 1 if m else n
+                    n += 0 if m else 1
+                    if idx < len(args):
+                        walk(args[idx] if not isinstance(args[idx], (int, float)) else str(args[idx]), st)
+                elif part:
+                    emit(part, st)
+        for e in c.get('extra', []):
+            walk(e, st)
+
+    walk(comp, style)
+    runs = []
+    for text, st in out:
+        flags = ('i' if st.get('italic') else '') + ('b' if st.get('bold') else '')
+        run = [text, st.get('color') or '', flags]
+        if runs and runs[-1][1:] == run[1:]:
+            runs[-1][0] += text
+        else:
+            runs.append(run)
+    return runs
+
+
 def vname(item_id):
     """English name of a (possibly renamed) vanilla item id."""
     iid = item_id.split(':', 1)[-1] if ':' in item_id else item_id
@@ -197,7 +297,10 @@ def summarise_components(comps):
         k2 = k.split(':')[-1]
         if k2 == 'lore':
             s['lore'] = [render_text(x).strip() for x in v]
+            s['lore_rich'] = [rich_text(x, LORE_STYLE) for x in v]
         elif k2 in ('item_name', 'custom_name'):
+            if isinstance(v, dict) and color_hex(v.get('color')):
+                s['name_color'] = color_hex(v['color'])
             continue
         else:
             s[k2] = v
@@ -229,7 +332,9 @@ def register(stack, src, how):
     # The crafted item defines the item; loot and trade variants (e.g. the Abbey's enchanted iron
     # swords) must not override it. Among equal sources keep the richest component set.
     rank = {'recipe': 3, 'trade': 2, 'loot': 1}.get(how, 0)
-    if rank > rec.get('_rank', -1) or (rank == rec.get('_rank') and len(summ) > len(rec['components'])):
+    def richness(c):  # tooltip styling keys don't make a definition richer
+        return len([k for k in c if k not in ('lore_rich', 'name_color')])
+    if rank > rec.get('_rank', -1) or (rank == rec.get('_rank') and richness(summ) > richness(rec['components'])):
         rec['components'] = summ
         rec['_rank'] = rank
     if len(rec['sources']) < 40:
@@ -420,11 +525,22 @@ def walk_entries(entries, pool_ctx, out, src):
                         'conditions': e.get('conditions'), 'functions': [f.get('function') for f in e.get('functions', [])],
                         **pool_ctx})
         elif t == 'loot_table':
+            # set_count on a loot_table entry applies to every stack the nested table yields
+            count = next((fn.get('count') for fn in e.get('functions', [])
+                          if fn.get('function', '').split(':')[-1] == 'set_count' and not fn.get('add')), None)
             out.append({'loot_table': e.get('value') if isinstance(e.get('value'), str) else e.get('name'),
-                        'weight': e.get('weight', 1), 'quality': e.get('quality'),
+                        'count': count, 'weight': e.get('weight', 1), 'quality': e.get('quality'),
                         'conditions': e.get('conditions'), **pool_ctx})
         elif t in ('alternatives', 'group', 'sequence'):
+            # the children share the parent's single weighted slot in the pool (an alternatives entry
+            # gives only its first child whose conditions pass, e.g. Silk Touch or else the normal drop)
+            start = len(out)
             walk_entries(e.get('children', []), pool_ctx, out, src)
+            slot = '%s/%d' % (pool_ctx.get('pool'), start)
+            for child in out[start:]:  # nested alternatives flatten into the outer slot, in order
+                child['slot'], child['slot_kind'], child['weight'] = slot, t, e.get('weight', 1)
+                if e.get('conditions'):
+                    child['conditions'] = (e.get('conditions') or []) + (child.get('conditions') or [])
         elif t == 'tag':
             out.append({'tag': e.get('name'), 'weight': e.get('weight', 1), 'conditions': e.get('conditions'), **pool_ctx})
         elif t == 'empty':

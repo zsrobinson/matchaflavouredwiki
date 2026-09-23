@@ -17,7 +17,7 @@ The [[Wither]] drops a Divine Favor, as it drops a nether star in vanilla. Withe
 Besides the {{MCW|Beacon|beacon}}, a Divine Favor is needed for the two strongest [[blessing]]s: the [[Prayer of Daedalus]] (Efficiency III and Unbreaking III) and the [[Prayer of Lu Ban]] (Mending). It can also be broken into 9 Divine Fragments.
 
 == Behavior ==
-A Divine Favor lying on the ground floats: it has no gravity, sinks slowly while the block three below it is air, and rises while the block directly below it is not air. It gives off white flash particles.<ref>{{Source|MF_datapack/data/matcha/function/particle/item_particle_nether_star_motion.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/item_particles.mcfunction}}</ref>
+A Divine Favor lying on the ground floats: it has no gravity, sinks slowly while the block three below it is air, and rises while the block directly below it is not air. It gives off end rod and electric spark particles.<ref>{{Source|MF_datapack/data/matcha/function/particle/item_particle_nether_star_motion.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/item_particles_functions/item_particles_nether_star.mcfunction}}</ref>
 
 == History ==
 {{History|

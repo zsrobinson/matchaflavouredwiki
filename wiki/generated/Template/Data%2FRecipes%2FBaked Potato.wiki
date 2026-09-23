@@ -3,10 +3,10 @@
 |-
 | [[Baked Potato]]
 | [[Potato]]
-| {{Cooking|station=Kindling|Input=Potato|Output=Baked Potato|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/baked_potato.json|matcha:food/campfire/baked_potato}}</small>
+| {{Cooking|station=Kindling|Input=Potato|Output=Baked Potato|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/baked_potato.json|matcha:food/campfire/baked_potato}}</small>
 |-
 | [[Baked Potato]]
 | [[Potato]]
-| {{Cooking|station=Oven|Input=Potato|Output=Baked Potato|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_potato.json|matcha:food/oven/baked_potato}}</small>
+| {{Cooking|station=Oven|Input=Potato|Output=Baked Potato|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_potato.json|matcha:food/oven/baked_potato}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

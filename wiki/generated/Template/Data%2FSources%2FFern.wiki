@@ -12,9 +12,9 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Fern <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/fern.json|blocks/fern}})</small> || 1 || 50.0% || tool: Iron Shears
+| Fern <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/fern.json|blocks/fern}})</small> || 1 || 100% || tool: Iron Shears
 |-
-| Fern <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/fern.json|blocks/fern}})</small> || 1 || 50.0% || tool: #minecraft:hoes
+| Fern <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/fern.json|blocks/fern}})</small> || 1 || 100% || tool: #minecraft:hoes
 |-
 | Large fern <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/large_fern.json|blocks/large_fern}})</small> || 2 || 100% || block state property, location, tool: Iron Shears
 |-

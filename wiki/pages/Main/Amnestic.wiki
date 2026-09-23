@@ -1,10 +1,10 @@
 {{Infobox auto|type=Placeable item|renewable=Yes}}
-An '''Amnestic''' is an item that makes a [[villager]] forget its profession. Its tooltip reads "Causes a villager to forget who they are" and "Place on the ground next to them". It exists so that villagers can pick up new trades when an update of the pack changes them.<ref>{{Cite changelog|1.10|quote=Villager Amnestics reset villager trades, so they can change update-to-update when needed. If you already have a weaponsmith, pop him a little forget-me-not to unlock the new trades.}}</ref>
+An '''amnestic''' is an item that makes a [[villager]] forget its profession. Its tooltip reads "Causes a villager to forget who they are" and "Place on the ground next to them". It exists so that villagers can pick up new trades when an update of the pack changes them.<ref>{{Cite changelog|1.10|quote=Villager Amnestics reset villager trades, so they can change update-to-update when needed. If you already have a weaponsmith, pop him a little forget-me-not to unlock the new trades.}}</ref>
 
 == Obtaining ==
 === Crafting ===
 {{Recipes}}
-The recipe is unlocked by picking up glowstone dust.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/estus_ash.json}}</ref> Amnestics stack to 64.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/amnestic.json}}</ref>
+The recipe is unlocked by picking up [[Estus Ash|Estus ash]] (glowstone dust).<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/estus_ash.json}}</ref> Amnestics stack to 64.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/amnestic.json}}</ref>
 
 == Usage ==
 Using an Amnestic on a block places an invisible marker there. The pack then finds the villager nearest to that spot and:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic_wrapped.mcfunction}}</ref>

@@ -15,7 +15,7 @@
 |attackspeed=2
 |miningspeed=6
 |repair=[[Copper Ingot]]
-|tooltip={{G|Mining speed}} 6<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 2
+|tooltipbox={{Tooltip|Copper Hoe}}
 |id=<code>copper_hoe</code>
 |base=<code>minecraft:copper_hoe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_hoe.json|copper_hoe.json}}

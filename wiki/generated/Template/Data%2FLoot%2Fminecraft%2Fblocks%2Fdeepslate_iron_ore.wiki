@@ -2,10 +2,10 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Deepslate Hematite}} || 1 || 33.3% || 33.3% || Silk Touch
+| {{ItemLink|Deepslate Hematite}} || 1 || 100% || 100% || Silk Touch
 |-
-| {{ItemLink|Iron Ingot}} || 2 || 33.3% || 33.3% || specific tool
+| {{ItemLink|Iron Ingot}} || 2 || 100% || 100% || specific tool
 |-
-| {{ItemLink|Raw Iron|mcw=Raw Iron}} || 2 || 33.3% || 33.3% || 
+| {{ItemLink|Raw Iron|mcw=Raw Iron}} || 2 || 100% || 100% || without Silk Touch, specific tool
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

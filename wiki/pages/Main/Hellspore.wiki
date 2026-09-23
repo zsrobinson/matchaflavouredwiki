@@ -4,7 +4,7 @@
 
 == Obtaining ==
 === Natural generation ===
-Besides the vanilla patches in [[Nether Fortress|nether fortresses]], the pack adds its own hellspore patches to the nether wastes and soul sand valley biomes.<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/nether_wart.json}}</ref> Each patch is a scatter of up to 16 hellspore plants on hellstone, soul sand or soul soil, with soul sand placed under every plant so that it can keep growing. The plants generate at random growth stages, usually young ones.<ref>{{Source|MF_datapack/data/matcha/worldgen/configured_feature/nether_wart.json}}</ref> A patch is attempted on each layer of terrain with a 1 in 8 chance.
+Besides the vanilla patches in [[Nether Fortress|nether fortresses]], the pack adds its own hellspore patches to the nether wastes and soul sand valley biomes.<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/nether_wart.json}}</ref> Each patch is a scatter of up to 16 hellspore plants on hellstone, soul sand or soul soil, with soul sand placed under every plant so that it can keep growing. The plants generate at random growth stages, usually young ones.<ref>{{Source|MF_datapack/data/matcha/worldgen/configured_feature/nether_wart.json}}</ref> One to four patches (usually one) are attempted on each layer of terrain, each with a 1 in 8 chance.<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/nether_wart.json}}</ref>
 
 === Chest loot ===
 {{Sources}}

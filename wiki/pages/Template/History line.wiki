@@ -1,4 +1,5 @@
 <includeonly>
 |-
-! {{Version|{{{1}}}}}{{#if:{{{date|}}}|<br /><small>{{{date}}}</small>}}
-| {{{2|}}}</includeonly><noinclude>[[Category:Templates]]</noinclude>
+! {{#ifeq:{{{1}}}|Upcoming|[[Upcoming features|Upcoming]]|{{Version|{{{1}}}}}}}{{#if:{{{date|}}}|<br /><small>{{{date}}}</small>}}
+| {{{2|}}}</includeonly><noinclude>One row of a {{tl|History}} table: <code><nowiki>{{History line|1.10|text}}</nowiki></code>. Use <code>Upcoming</code> as the version for changes only on the development branch.
+[[Category:Templates]]</noinclude>

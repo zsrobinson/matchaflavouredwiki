@@ -1,0 +1,307 @@
+/* The pack's own look for the wiki's Minecraft widgets: station screens (Module:Station),
+   inventory slots and panels in the pack's brown inventory palette, the pack's hearts ({{Hp}})
+   and in-game tooltips (Module:Tooltip, Gadget-mfwTooltip.js). The art in /assets/gui/ is cut
+   from the resource pack by tools/images.py at 2x; see also Gadget-mcw-common.css, which this
+   builds on. */
+
+/* ---------------------------------------------------------------- palette
+   The pack recolours vanilla's grey inventory to brown (panel #604D3A, slot #43362A). */
+:root .invslot {
+	background-color: #43362A;
+	border-color: #1B1511 #7F664D #7F664D #1B1511;
+}
+:root .invslot::before,
+:root .invslot::after {
+	background-color: #43362A;
+}
+:root .invslot-plain {
+	background-color: transparent;
+	border: 0;
+}
+:root .mcui {
+	background-color: #604D3A;
+	border-color: #7F664D #291F18 #291F18 #7F664D;
+	box-shadow: 0 0 0 2px #0D0903;
+}
+
+/* ---------------------------------------------------------------- station screens */
+.mfui-figure {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0.5em 0.5em 0;
+	text-align: center;
+}
+.mfui {
+	position: relative;
+	display: inline-block;
+	width: 352px;
+	height: 154px;
+	background: no-repeat 0 0 / 352px 154px;
+	image-rendering: pixelated;
+	text-align: left;
+	vertical-align: bottom;
+	white-space: nowrap;
+	font-size: 16px;
+	line-height: 1;
+}
+.mfui-crafting { background-image: url('/assets/gui/crafting.png'); }
+.mfui-oven { background-image: url('/assets/gui/oven.png'); }
+.mfui-kiln { background-image: url('/assets/gui/kiln.png'); }
+.mfui-blast { background-image: url('/assets/gui/blast.png'); }
+.mfui-kindling { background-image: url('/assets/gui/kindling.png'); }
+.mfui-smithing { background-image: url('/assets/gui/smithing.png'); }
+.mfui-stonecutter { background-image: url('/assets/gui/stonecutter.png'); }
+
+/* Phones: the narrow layout leaves the content about 100vw - 58px wide, less than the 352px screen
+   below a 410px viewport. Scale the screens down to fit; zoom keeps the placed slots on the art. */
+@media screen and (max-width: 419px) { .mfui { zoom: 0.875; } }
+@media screen and (max-width: 374px) { .mfui { zoom: 0.8; } }
+@media screen and (max-width: 339px) { .mfui { zoom: 0.7; } }
+
+.mfui > span {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+/* The screen draws the slot frames itself: the slot only places the item. Positions are the
+   item's top-left; .invslot adds a 2px border around it. */
+.mfui > .mfui-slot {
+	margin: -2px 0 0 -2px;
+}
+:root .mfui .invslot {
+	background-color: transparent;
+	border-color: transparent;
+}
+:root .mfui .invslot::before,
+:root .mfui .invslot::after {
+	content: none;
+}
+
+/* The container title, as the game draws it (8, 6) */
+.mfui > .mfui-title {
+	font-family: Minecraft, sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	color: #404040;
+	margin-top: -1px;
+}
+.mfui > .mfui-title a,
+.mfui > .mfui-title a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+.mfui > .mfui-title a:hover,
+.mfui > .mfui-title a:focus {
+	text-decoration: underline;
+}
+
+/* Furnace-type screens: the lit flame and the progress arrow, which fills over the recipe's own
+   cooking time (Module:Station sets animation-duration) */
+.mfui > .mfui-lit {
+	width: 28px;
+	height: 28px;
+}
+.mfui-oven > .mfui-lit { background-image: url('/assets/gui/oven-lit.png'); }
+.mfui-kiln > .mfui-lit { background-image: url('/assets/gui/kiln-lit.png'); }
+.mfui-blast > .mfui-lit { background-image: url('/assets/gui/blast-lit.png'); }
+
+.mfui > .mfui-progress {
+	width: 48px;
+	height: 32px;
+	background-size: 48px 32px;
+	background-position: 0 0;
+	animation: mfui-progress 10s steps(24, jump-none) infinite;
+}
+.mfui > .mfui-progress-oven { background-image: url('/assets/gui/oven-progress.png'); }
+.mfui > .mfui-progress-kiln { background-image: url('/assets/gui/kiln-progress.png'); }
+.mfui > .mfui-progress-blast { background-image: url('/assets/gui/blast-progress.png'); }
+@keyframes mfui-progress {
+	from { width: 0; }
+	to { width: 48px; }
+}
+
+/* Kindling: the item rests on the lit campfire (8 animation frames, 2 ticks each) */
+.mfui > .mfui-campfire {
+	width: 32px;
+	height: 32px;
+	background-image: url('/assets/gui/campfire.png');
+	background-size: 32px 256px;
+	animation: mfui-fire 0.8s steps(8) infinite;
+}
+.mfui > .mfui-campfire-soul {
+	background-image: url('/assets/gui/soul-campfire.png');
+}
+@keyframes mfui-fire {
+	from { background-position: 0 0; }
+	to { background-position: 0 -256px; }
+}
+
+/* Stonecutter: the result selected in the recipe list, and the list's scroller */
+.mfui > .mfui-stonecutter-selected {
+	width: 32px;
+	height: 36px;
+	background-image: url('/assets/gui/stonecutter-selected.png');
+}
+.mfui > .mfui-stonecutter-scroller {
+	width: 24px;
+	height: 30px;
+	background-image: url('/assets/gui/stonecutter-scroller.png');
+}
+
+/* Crafting: minecraft.wiki's shapeless marker */
+.mfui > .mfui-shapeless {
+	width: 19px;
+	height: 15px;
+	background: url('/assets/mcw/Grid_layout_Shapeless.png') no-repeat;
+	cursor: help;
+}
+
+.mfui-caption {
+	font-size: 90%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.mfui > .mfui-progress,
+	.mfui > .mfui-campfire {
+		animation: none;
+	}
+}
+
+/* ---------------------------------------------------------------- hearts ({{Hp}})
+   The pack's HUD hearts (pink in this pack), 9x9 at 2x scale is 18px; shown at text size. */
+.mf-heart {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.125em;
+	background: url('/assets/gui/heart-full.png') no-repeat center / contain;
+	image-rendering: pixelated;
+}
+.mf-heart-half {
+	background-image: url('/assets/gui/heart-container.png');
+}
+.mf-heart-half::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url('/assets/gui/heart-half.png') no-repeat center / contain;
+}
+
+/* ---------------------------------------------------------------- tooltips
+   #minetip-tooltip (hover, Gadget-mfwTooltip.js) is styled in Gadget-mcw-common.css;
+   .mf-tooltip is the same frame drawn in place (infoboxes, {{Tooltip}}). */
+.mf-tip {
+	display: none;
+}
+#minetip-tooltip .minetip-line,
+.mf-tooltip .minetip-line {
+	display: block;
+}
+#minetip-tooltip .minetip-title,
+.mf-tooltip .minetip-title {
+	display: block;
+}
+#minetip-tooltip .minetip-title + .minetip-line,
+.mf-tooltip .minetip-title + .minetip-line {
+	margin-top: 0.25em;
+}
+.mf-tooltip {
+	display: inline-block;
+	position: relative;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0.375em 0.25em 0.125em;
+	padding: 0.375em;
+	background-color: rgba(16, 0, 16, 0.94);
+	color: #FBFBFB;
+	text-shadow: 0.125em 0.125em 0 #3E3E3E;
+	font-family: Minecraft, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.25em;
+	word-spacing: 4px;
+	text-align: left;
+	white-space: normal;
+	overflow-wrap: anywhere;
+}
+.mf-tooltip::before {
+	content: "";
+	position: absolute;
+	top: 0.125em;
+	right: -0.125em;
+	bottom: 0.125em;
+	left: -0.125em;
+	border: 0.15em solid rgba(16, 0, 16, 0.94);
+	border-style: none solid;
+	pointer-events: none;
+}
+.mf-tooltip::after {
+	content: "";
+	position: absolute;
+	top: 0.125em;
+	right: 0;
+	bottom: 0.125em;
+	left: 0;
+	border: 0.125em solid #2D0A63;
+	border-image: linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
+	pointer-events: none;
+}
+.infobox-tooltip {
+	margin-top: 0.25em;
+}
+
+/* Custom-font glyphs: a mask over the glyph sheet filled with the text colour, with the text's
+   shadow, sitting on the baseline as the font's ascent (7 of 8 pixels) puts them. */
+.mf-g {
+	display: inline-block;
+	margin-right: 2px;
+	vertical-align: -2px;
+	line-height: 0;
+	filter: drop-shadow(2px 2px 0 color-mix(in srgb, currentColor 25%, #000));
+}
+.mf-g > span {
+	display: inline-block;
+	height: 16px;
+	background-color: currentColor;
+	-webkit-mask-image: url('/assets/gui/glyphs.png');
+	mask-image: url('/assets/gui/glyphs.png');
+	-webkit-mask-size: 256px 256px;
+	mask-size: 256px 256px;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+}
+
+/* ---------------------------------------------------------------- villager offers ({{Trade}}) */
+.mfui-trade {
+	position: relative;
+	display: inline-block;
+	width: 176px;
+	height: 40px;
+	background: url('/assets/gui/trade-offer.png') no-repeat 0 0 / 176px 40px;
+	image-rendering: pixelated;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-align: left;
+	line-height: 1;
+}
+.mfui-trade > span {
+	position: absolute;
+}
+.mfui-trade > .mfui-slot {
+	margin: -2px 0 0 -2px;
+}
+:root .mfui-trade .invslot {
+	background-color: transparent;
+	border-color: transparent;
+}
+:root .mfui-trade .invslot::before,
+:root .mfui-trade .invslot::after {
+	content: none;
+}
+.mfui-trade > .mfui-trade-arrow {
+	width: 20px;
+	height: 18px;
+	background: url('/assets/gui/trade-arrow.png') no-repeat 0 0 / 20px 18px;
+}

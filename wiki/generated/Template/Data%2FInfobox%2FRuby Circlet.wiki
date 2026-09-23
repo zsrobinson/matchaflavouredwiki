@@ -10,10 +10,10 @@
 |intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|{{G|Fire resistance}} [[Fire Resistance|∞ Fire Resistance]]}}
 |renewable={{{renewable|}}}
 |stackable=No
-|durability=250
+|durability=Unbreakable
 |armor=1
 |repair=[[Adamant Alloy]]
-|tooltip={{G|Armor}} 1
+|tooltipbox={{Tooltip|Ruby Circlet}}
 |id=<code>matcha:ruby_circlet</code>
 |base=<code>minecraft:netherite_helmet</code>
 |source={{Source|MF_datapack/data/matcha/loot_table/equipment/misc/ruby_circlet.json|ruby_circlet.json}}

@@ -3,7 +3,7 @@
 |renewable=No
 }}
 
-An '''electrum dolabra''' is the [[Electrum equipment|electrum]] [[dolabra]], made by smithing a diamond axe with [[electrum alloy]] and a [[smithing upgrade template]]. It combines a pickaxe and axe with Fortune III.
+An '''electrum dolabra''' is a [[dolabra]] of the [[Electrum equipment|electrum]] tier, made by smithing a diamond axe with [[electrum alloy]] and a [[smithing upgrade template]]. It combines a pickaxe and axe with Fortune III.
 
 == Obtaining ==
 
@@ -28,12 +28,12 @@ It deals {{Hp|6}} damage at an attack speed of 1.2.
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-=== Crafting ingredient ===
-{{Uses}}
-
+=== Smelting ingredient ===
 In a [[blast furnace]] it melts down into an [[adamant alloy]], not electrum, because electrum shares the netherite item IDs. This makes melting electrum gear a way to turn an [[electrum alloy]] into an adamant alloy.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/netherite_ingot_from_blasting_netherite_materials.json}}</ref>
 
 === Trading ===
+{{Uses}}
+
 An apprentice [[weaponsmith]] buys it for one [[electrum alloy]], so the alloy can be reused.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/electrum_dolabra.json}}</ref>
 
 == Notes ==
@@ -43,7 +43,7 @@ An apprentice [[weaponsmith]] buys it for one [[electrum alloy]], so the alloy c
 {{History|
 {{History line|1.03|Electrum alloy now needs a [[divine fragment]].}}
 {{History line|1.10|Electrum was buffed. A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
-{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. Can only be repaired with blocks of diamond. Electrum became the only source of Fortune III.}}
+{{History line|1.12.1-alpha|The upgrade now keeps the base item's enchantments. Added the "Repaired with" tooltip. Can only be repaired with blocks of diamond. Electrum became the only source of Fortune III.}}
 {{History line|1.12.2|No longer burns in fire or lava. Warding was removed from electrum tools so that they focus on Fortune. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>. Dolabras began to shift from weapon hybrids to pure axe and pickaxe tools; the release notes say their damage and weapon intrinsics will be reduced over time.}}
 }}
 

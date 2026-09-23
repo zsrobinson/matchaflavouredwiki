@@ -12,7 +12,7 @@
 |stackable=Yes (64)
 |heals={{Hp|4}}
 |eat_time=1.6 seconds
-|tooltip={{G|Health}}{{G|Health}}<br />{{G|Aura}} Aura (0:30)
+|tooltipbox={{Tooltip|Glow Berry Jam}}
 |id=<code>matcha:glow_jam</code>
 |base=<code>minecraft:poisonous_potato</code>
 |source={{Source|MF_datapack/data/matcha/recipe/food/crafting/glow_jam.json|glow_jam.json}}

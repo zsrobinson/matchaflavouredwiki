@@ -3,10 +3,10 @@
 |-
 | [[Fried Egg]]
 | <span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span>
-| {{Cooking|station=Kindling|Input=Any Eggs|Output=Fried Egg|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/fried_egg.json|matcha:food/campfire/fried_egg}}</small>
+| {{Cooking|station=Kindling|Input=Any Eggs|Output=Fried Egg|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/fried_egg.json|matcha:food/campfire/fried_egg}}</small>
 |-
 | [[Fried Egg]]
 | <span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span>
-| {{Cooking|station=Oven|Input=Any Eggs|Output=Fried Egg|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/fried_egg.json|matcha:food/oven/fried_egg}}</small>
+| {{Cooking|station=Oven|Input=Any Eggs|Output=Fried Egg|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/fried_egg.json|matcha:food/oven/fried_egg}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -7,7 +7,7 @@
 |-
 | [[Braised Warped Fungus]]
 | [[Warped Fungus]]
-| {{Cooking|station=Kindling|Input=Warped Fungus|Output=Braised Warped Fungus|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/brasied_warped_fungus.json|matcha:food/campfire/brasied_warped_fungus}}</small>
+| {{Cooking|station=Kindling|Input=Warped Fungus|Output=Braised Warped Fungus|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/brasied_warped_fungus.json|matcha:food/campfire/brasied_warped_fungus}}</small>
 |-
 | [[Pickled Warped Fungus]]
 | [[Warped Fungus]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
@@ -23,7 +23,7 @@
 |-
 | [[Braised Warped Fungus]]
 | [[Warped Fungus]]
-| {{Cooking|station=Oven|Input=Warped Fungus|Output=Braised Warped Fungus|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/brasied_warped_fungus.json|matcha:food/oven/brasied_warped_fungus}}</small>
+| {{Cooking|station=Oven|Input=Warped Fungus|Output=Braised Warped Fungus|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/brasied_warped_fungus.json|matcha:food/oven/brasied_warped_fungus}}</small>
 |-
 | [[Warped Fungus on a Stick]] <small>(vanilla recipe)</small>
 | [[Fishing Rod]] +<br />[[Warped Fungus]]
@@ -31,9 +31,9 @@
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Lumberjack]] || Journeyman || {{ItemLink|Obol}} + {{ItemLink|Warped Fungus}} || 64 × {{ItemLink|Warped Stem}}
+| [[Lumberjack]] || Journeyman || {{Trade|Obol|Warped Fungus|Warped Stem,64}} || {{ItemLink|Obol}} + {{ItemLink|Warped Fungus}} || 64 × {{ItemLink|Warped Stem}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,5 +1,8 @@
-<includeonly><div style="display:inline-block;vertical-align:top;margin:0 0.5em 0.5em 0;text-align:center">{{#invoke:UI|furnace|Input={{{Input|}}}|Fuel={{{Fuel|}}}|Output={{{Output|}}}}}{{#if:{{{station|}}}{{{note|}}}|<div style="font-size:90%">{{#if:{{{station|}}}|[[{{{station}}}]]}}{{#if:{{{station|}}}|{{#if:{{{note|}}}|&#32;·&#32;}}}}{{{note|}}}</div>}}</div></includeonly><noinclude>
-Cooking interface (furnace layout, from Module:UI as on minecraft.wiki). <code>station</code> names the block used: [[Oven]], [[Mud Kiln]], [[Blast Furnace]] or [[Kindling]].
+<includeonly><div class="mfui-figure">{{#invoke:Station|screen|station={{{station|Oven}}}|Input={{{Input|}}}|Output={{{Output|}}}|time={{{time|}}}|note={{{note|}}}}}{{#if:{{{note|}}}{{#ifeq:{{lc:{{{station|}}}}}|kindling|1}}|<div class="mfui-caption">{{{note|}}}{{#ifeq:{{lc:{{{station|}}}}}|kindling|{{#if:{{{note|}}}|&#32;·&#32;}}also on [[Soul Kindling]]}}</div>}}</div></includeonly><noinclude>
+A cooking recipe, drawn with the station's own screen from the pack's resource pack ([[Module:Station]]). <code>station</code> is the block used: [[Oven]], [[Mud Kiln]], [[Blast Furnace]] or [[Kindling]] (a campfire has no screen, so kindling shows the item resting on the fire). <code>note</code> is shown underneath; its leading number of seconds also sets how fast the arrow fills.
 
 {{Cooking|station=Oven|Input=Pumpkin|Output=Baked Pumpkin|note=5 s}}
+{{Cooking|station=Kindling|Input=Potato|Output=Baked Potato|note=5 s, 0.35 XP}}
+{{Cooking|station=Mud Kiln|Input=Sand|Output=Glass|note=5 s}}
+{{Cooking|station=Blast Furnace|Input=Raw Iron|Output=Iron Ingot|note=5 s}}
 [[Category:Templates]]</noinclude>

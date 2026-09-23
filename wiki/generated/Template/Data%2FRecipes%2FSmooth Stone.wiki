@@ -12,6 +12,6 @@
 |-
 | [[Smooth Stone]]
 | [[Limestone]]
-| {{Cooking|station=Mud Kiln|Input=Limestone|Output=Smooth Stone|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/smooth_stone.json|matcha:kiln/smooth_stone}}</small>
+| {{Cooking|station=Mud Kiln|Input=Limestone|Output=Smooth Stone|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/smooth_stone.json|matcha:kiln/smooth_stone}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

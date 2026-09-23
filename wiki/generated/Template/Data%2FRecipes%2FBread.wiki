@@ -3,10 +3,10 @@
 |-
 | [[Bread]]
 | [[Dough]]
-| {{Cooking|station=Kindling|Input=Dough|Output=Bread|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/bread.json|matcha:food/campfire/bread}}</small>
+| {{Cooking|station=Kindling|Input=Dough|Output=Bread|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/bread.json|matcha:food/campfire/bread}}</small>
 |-
 | [[Bread]]
 | [[Dough]]
-| {{Cooking|station=Oven|Input=Dough|Output=Bread|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json|matcha:food/oven/bread}}</small>
+| {{Cooking|station=Oven|Input=Dough|Output=Bread|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json|matcha:food/oven/bread}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

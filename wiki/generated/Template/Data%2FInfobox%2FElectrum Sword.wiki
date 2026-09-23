@@ -6,7 +6,7 @@
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
-|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
 |intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Looting]] II<br />[[Smite]] III<br />{{G|Warding}} [[Warding|3 Warding]]}}
 |renewable={{{renewable|}}}
 |stackable=No
@@ -15,7 +15,7 @@
 |attackspeed=1.9
 |miningspeed=1.5
 |repair=[[Block of Diamond]]
-|tooltip={{G|Attack damage}} 7<br />{{G|Attack speed}} 1.9<br />Repaired with:<br />Block of Diamond
+|tooltipbox={{Tooltip|Electrum Sword}}
 |id=<code>matcha:electrum_sword</code>
 |base=<code>minecraft:netherite_sword</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_sword.json|electrum_sword.json}}

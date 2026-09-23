@@ -13,7 +13,7 @@
 |durability=1000
 |miningspeed=20
 |repair=[[Block of Copper]]
-|tooltip={{G|Mining speed}} 20<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 4<br />{{G|Speed}} +0.005<br />Repaired with:<br />Block of Copper
+|tooltipbox={{Tooltip|Hepatizon Hoe}}
 |id=<code>matcha:hepatizon_hoe</code>
 |base=<code>minecraft:stone_hoe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_hoe.json|hepatizon_hoe.json}}

@@ -12,13 +12,13 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Birch log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/birch_log.json|blocks/birch_log}})</small> || 1 || 50.0% || 
+| Birch log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/birch_log.json|blocks/birch_log}})</small> || 1 || 100% || without specific tool
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Lumberjack]] || Novice || {{ItemLink|Obol}} || 64
+| [[Lumberjack]] || Novice || {{Trade|Obol||Birch Log,64}} || {{ItemLink|Obol}} || 64
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -15,7 +15,7 @@
 |attackspeed=1.2
 |miningspeed=6
 |repair=[[Copper Ingot]]
-|tooltip={{G|Mining speed}} 6<br />{{G|Attack damage}} 3<br />{{G|Attack speed}} 1.2
+|tooltipbox={{Tooltip|Copper Pickaxe}}
 |id=<code>minecraft:copper_pickaxe</code>
 |base=<code>minecraft:copper_pickaxe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_pickaxe.json|copper_pickaxe.json}}

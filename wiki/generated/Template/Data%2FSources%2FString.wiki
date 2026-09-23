@@ -13,9 +13,9 @@
 |-
 | Simple dungeon <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json|chests/simple_dungeon}})</small> || 1–8 || 70.4% || 
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 1.69% || 
+| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 1.78% || 
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 13.8% || biome: #minecraft:unused
+| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 14.5% || only in [[Fishing#Other biomes|other biomes]]
 |-
 | Woodland mansion <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/woodland_mansion.json|chests/woodland_mansion}})</small> || 1–8 || 42.1% || 
 |}
@@ -28,9 +28,9 @@
 |-
 | Cave spider <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/cave_spider.json|entities/cave_spider}})</small> || 0–2 || 66.7% || 
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 1.69% || 
+| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 1.78% || 
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 13.8% || biome: #minecraft:unused
+| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 14.5% || only in [[Fishing#Other biomes|other biomes]]
 |-
 | Spider <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/spider.json|entities/spider}})</small> || 0–2 || 66.7% || 
 |-
@@ -43,7 +43,7 @@
 |-
 | Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 0.568% || 
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 4.83% || biome: #minecraft:unused
+| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 4.83% || only in [[Fishing#Other biomes|other biomes]]
 |}
 
 '''Archaeology'''
@@ -68,7 +68,7 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Cobweb <small>({{Source|vanilla:loot_table/blocks/cobweb.json|blocks/cobweb}})</small> || 1 || 50.0% || 
+| Cobweb <small>({{Source|vanilla:loot_table/blocks/cobweb.json|blocks/cobweb}})</small> || 1 || 100% || without tool: Iron Shears, Silk Touch
 |-
 | Tripwire <small>({{Source|vanilla:loot_table/blocks/tripwire.json|blocks/tripwire}})</small> || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

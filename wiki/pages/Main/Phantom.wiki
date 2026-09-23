@@ -9,7 +9,7 @@
 A '''phantom''' does not spawn naturally in [[Matcha Flavoured]]. The pack turns off the <code>spawn_phantoms</code> game rule, so players who don't sleep are never attacked by phantoms.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref>
 
 == Spawning ==
-The game rule is set when a player first joins the world, and again whenever a new player joins. Phantoms can still be summoned with commands or spawn eggs, or appear if the game rule is turned back on.
+The game rule is set when a player first joins the world, and again whenever a new player joins or a player first joins after the pack is updated. Phantoms can still be summoned with commands or spawn eggs, or appear if the game rule is turned back on.
 
 == Drops ==
 Phantoms use the vanilla loot table. Because the pack renames phantom membranes to {{ItemLink|Hepatizon Alloy}}, a phantom killed by a player drops hepatizon alloy (0–1, plus 0–1 per level of Looting).

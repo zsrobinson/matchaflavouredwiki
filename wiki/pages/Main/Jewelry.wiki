@@ -29,7 +29,7 @@ All jewelry is built on a netherite helmet, which gives it these properties:<ref
 * It is '''unbreakable'''.
 * Like netherite, it doesn't burn in fire or lava when dropped.
 
-The gem effects are intrinsic enchantments that run every tick while the piece is worn by a player, reapplying a 1-second hidden effect. The effect therefore lasts exactly as long as the jewelry is worn.<ref>{{Source|MF_datapack/data/matcha/enchantment/conduit_power.json}}</ref>
+The gem effects are intrinsic enchantments that run every tick while the piece is worn by a player, reapplying a 1-second hidden effect. The effect therefore lasts as long as the jewelry is worn and wears off shortly after it is taken off.<ref>{{Source|MF_datapack/data/matcha/enchantment/conduit_power.json}}</ref>
 * '''Opal Earrings''' give Dolphin's Grace at all times and Conduit Power only while the wearer is in water.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/conduit_power.mcfunction}}</ref>
 * '''Ruby Circlet''' gives Fire Resistance.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/fire_proof.mcfunction}}</ref>
 * '''Amber Earrings''' give 3 seconds of Regeneration I whenever the wearer has no Regeneration, which amounts to constant Regeneration I.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/regeneration.mcfunction}}</ref> Since Matcha Flavoured has no [[natural regeneration]], this is one of the few ways to heal without eating.

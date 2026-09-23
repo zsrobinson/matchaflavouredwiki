@@ -13,7 +13,7 @@ Skeletons use the vanilla biome spawn lists. As undead, they can spawn on the op
 
 == Drops ==
 {{Data/Loot/minecraft/entities/skeleton}}
-All drops require a player kill, and skeletons from the pack's spawners drop nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/skeleton.json}}</ref> The arrows and bones are as in vanilla. The pack adds {{ItemLink|Estus Ash}} (0–1). Skeletons don't drop the bow they carry or other equipment.
+All drops require a player kill, and skeletons from the pack's spawners drop nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/skeleton.json}}</ref> The arrows and bones are as in vanilla. The pack adds {{ItemLink|Estus Ash}} (0–1). On Normal and Hard, skeletons don't drop the bow they carry. The pack means to stop them dropping other equipment too, but a bug stops this from working reliably; see [[Spawning#Mob modifications]].
 
 == Behavior ==
 On Normal and Hard, a skeleton's bow is replaced with a bow enchanted with Punch I (Normal) or Punch II (Hard), with a 0% drop chance.<ref name="n">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_skeletons.mcfunction}}</ref><ref name="h">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_skeletons.mcfunction}}</ref> The new bow replaces any enchantments the skeleton spawned with. These changes apply to every mob in the <code>#minecraft:skeletons</code> tag that the pack checks: skeletons, [[Stray|strays]], [[Bogged|bogged]] and parched.
@@ -30,8 +30,8 @@ Skeletons are undead, so [[warding]] hurts them.
 ! Bow
 | vanilla || Punch I || Punch II
 |-
-! Equipment drop chance
-| 0% || 0% || 0%
+! Bow drop chance
+| vanilla || 0% || 0%
 |}
 <ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/easy_modifications/modify_skeletons.mcfunction}}</ref><ref name="n" /><ref name="h" />
 

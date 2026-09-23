@@ -1,11 +1,11 @@
 {{Vanilla|Blaze Powder}}
 {{Infobox auto}}
-'''Raw Estus''' is an item dropped by undead [[mobs]]. It replaces {{MCW|Blaze Powder|blaze powder}}. Raw Estus cannot be kept: as soon as it enters a player's inventory it heals them and turns into [[Estus Ash]], the pack's main magic ingredient. It is the first form of [[estus]].
+'''Raw Estus''' is an item dropped by [[zombie]]s, [[husk]]s, [[drowned]] and zombie villagers. It replaces {{MCW|Blaze Powder|blaze powder}}. Raw Estus cannot be kept: as soon as it enters a player's inventory it heals them and turns into [[Estus Ash]], the pack's main magic ingredient. It is the first form of [[estus]].
 
 == Obtaining ==
 === Mob loot ===
 {{Sources}}
-The "Chance" column counts the loot pool being chosen. The chosen drop is then 0 or 1 Raw Estus with equal odds, so the real chance of a drop without Looting is half the listed value: 25% for zombies and drowned, about 31% for husks and about 45% for zombie villagers.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/zombie.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/husk.json}}</ref> Each level of Looting adds 0–1 Raw Estus when the pool is chosen. Only kills by a player count, and zombies and husks with the <code>NoDrops</code> tag drop nothing.
+When the Raw Estus pool is chosen, the drop is 0 or 1 Raw Estus with equal odds; the "Chance" column already includes this, giving 25% for zombies and drowned, about 31% for husks and about 45% for zombie villagers without Looting.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/zombie.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/husk.json}}</ref> Each level of Looting adds 0–1 Raw Estus when the pool is chosen. Only kills by a player count, and zombies and husks with the <code>NoDrops</code> tag drop nothing.
 
 === Crafting ===
 The vanilla recipe that crafts blaze powder from a blaze rod is removed, so [[Stabilized Estus]] cannot be broken back down.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Blazes do not drop Raw Estus in the pack.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/blaze.json}}</ref>

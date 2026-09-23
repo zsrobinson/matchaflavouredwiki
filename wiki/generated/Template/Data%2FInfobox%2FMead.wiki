@@ -13,7 +13,7 @@
 |heals={{Hp|6}}
 |effects={{EffectLink|Speed}} (5:00)
 |eat_time=1.6 seconds
-|tooltip={{G|Health}}{{G|Health}}{{G|Health}}<br />{{G|Speed}} +20% (5:00)
+|tooltipbox={{Tooltip|Mead}}
 |id=<code>matcha:mead</code>
 |base=<code>minecraft:poisonous_potato</code>
 |source={{Source|MF_datapack/data/matcha/recipe/food/crafting/mead.json|mead.json}}

@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-A '''hepatizon spear''' is the [[Hepatizon equipment|hepatizon]] [[spear]], made by smithing a [[copper spear]] with [[hepatizon alloy]]. It carries {{MCW|Lunge}} III.
+A '''hepatizon spear''' is a [[spear]] of the [[Hepatizon equipment|hepatizon]] tier, made by smithing a [[copper spear]] with [[hepatizon alloy]]. It carries {{MCW|Lunge}} III.
 
 == Obtaining ==
 
@@ -22,11 +22,10 @@ Lunge III is stored on the item and applied when it enters a player's inventory.
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-=== Crafting ingredient ===
-{{Uses}}
-
 === Trading ===
 An apprentice [[weaponsmith]] buys it for one [[hepatizon alloy]], so the alloy can be reused.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_spear.json}}</ref>
+
+{{Uses}}
 
 == Notes ==
 * Hepatizon tools reuse the stone tools' item IDs, so they cannot be melted down in a blast furnace.

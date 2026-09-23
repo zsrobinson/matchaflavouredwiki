@@ -1,10 +1,10 @@
 <includeonly>
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Jeweler]] || Expert || 14 × {{ItemLink|Obol}} + {{ItemLink|Topaz}} || {{ItemLink|Topaz Earrings}}<br /><small>{{G|Mining speed}} [[Haste|∞ Haste]]</small>
+| [[Jeweler]] || Expert || {{Trade|Obol,14|Topaz|Topaz Earrings}} || 14 × {{ItemLink|Obol}} + {{ItemLink|Topaz}} || {{ItemLink|Topaz Earrings}}<br /><small>{{G|Mining speed}} [[Haste|∞ Haste]]</small>
 |-
-| [[Jeweler]] || Master || {{ItemLink|Topaz}} || 10 × {{ItemLink|Obol}}
+| [[Jeweler]] || Master || {{Trade|Topaz||Obol,10}} || {{ItemLink|Topaz}} || 10 × {{ItemLink|Obol}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

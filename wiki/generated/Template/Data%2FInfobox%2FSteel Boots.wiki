@@ -15,7 +15,7 @@
 |toughness=1
 |knockbackres=1
 |repair=[[Iron Ingot]]
-|tooltip={{G|Armor}} 2<br />{{G|Armor toughness}} 1<br />{{G|Knockback resistance}} 1<br />Repaired with:<br />Iron Ingot
+|tooltipbox={{Tooltip|Steel Boots}}
 |id=<code>matcha:steel_boots</code>
 |base=<code>minecraft:iron_boots</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_boots.json|steel_boots.json}}

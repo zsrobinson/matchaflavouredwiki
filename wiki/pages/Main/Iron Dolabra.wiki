@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-An '''iron dolabra''' is the [[Iron equipment|iron]] [[dolabra]], a combined pickaxe and axe crafted from four [[iron ingot]]s and two sticks.
+An '''iron dolabra''' is a [[dolabra]] of the [[Iron equipment|iron]] tier, a combined pickaxe and axe crafted from four [[iron ingot]]s and two sticks.
 
 == Obtaining ==
 
@@ -17,7 +17,7 @@ An '''iron dolabra''' is the [[Iron equipment|iron]] [[dolabra]], a combined pic
 === Mining ===
 It breaks pickaxe and axe blocks at speed 6, one slower than the [[iron pickaxe]] or [[iron axe]], and has 500 durability.
 
-Unlike the iron pickaxe, it has no obsidian restriction, so it harvests obsidian, crying obsidian and ender chests at its normal speed.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_dolabra.json}}</ref> This makes it the cheapest way to collect obsidian, although the 1.12.1-alpha notes say only diamond, electrum and adamant tools can.
+Unlike the iron pickaxe, it has no obsidian restriction, so it harvests obsidian, crying obsidian and ender chests at its normal speed.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_dolabra.json}}</ref> The [[copper dolabra]] can do the same, although the 1.12.1-alpha notes say only diamond, electrum and adamant tools can mine obsidian.
 
 Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 

@@ -36,6 +36,8 @@ p.i18n = i18n
 
 -- Global dependencies and constants
 local aliases = mw.loadData( i18n.moduleAliases )
+-- Matcha Flavoured: each slot carries its item's in-game tooltip (Module:Tooltip)
+local tooltip = require( [[Module:Tooltip]] )
 local pageName = mw.title.getCurrentTitle().text
 local vanilla = { v = 1, vanilla = 1, mc = 1, minecraft = 1 }
 
@@ -185,6 +187,11 @@ local function makeItem( frame, args )
 	-- Add the image
 	item:addClass( 'invslot-item-image' )
 		:wikitext( '[[File:', img, '|32x32px|link=', link or '', '|alt=', altText, '|', escapedTitle, ']]' )
+	
+	-- The in-game tooltip, shown on hover by MediaWiki:Gadget-mfwTooltip.js
+	if not formattedTitle and ( title == '' or title:lower() ~= 'none' ) then
+		item:wikitext( tooltip.slotTip( name ) )
+	end
 	
 	-- Add the stack number, if present and in 2-999 range
 	if num and num > 1 and num < 1000 then

@@ -1,4 +1,5 @@
 # path = File name (upscaled 8x, first animation frame)
+# top + left + right = File name   renders an isometric block icon from three face textures
 source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/gui/sprites/container/furnace/burn_progress.png = Grid burn_progress.png
 source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/gui/sprites/container/furnace/lit_progress.png = Grid lit_progress.png
 source/vanilla-assets/assets/minecraft/textures/mob_effect/absorption.png = Effect Absorption.png
@@ -43,3 +44,11 @@ source/vanilla-assets/assets/minecraft/textures/mob_effect/wind_charged.png = Ef
 source/vanilla-assets/assets/minecraft/textures/mob_effect/wither.png = Effect Wither.png
 site/assets/Wiki-background.png = Main page background.png
 site/assets/Wiki.png = Wiki.png
+source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/item/elytra.png = Elytra.png
+source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/item/netherite_upgrade_smithing_template.png = Smithing Upgrade Template.png
+source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/item/lava_bucket.png = Lava Bucket.png
+source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/item/milk_bucket.png = Milk Bucket.png
+source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/item/golden_apple.png = Enchanted Golden Apple.png
+source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/item/music_disc_13.png = Music Disc.png
+source/vanilla-assets/assets/minecraft/textures/block/command_block_side.png + source/vanilla-assets/assets/minecraft/textures/block/command_block_front.png + source/vanilla-assets/assets/minecraft/textures/block/command_block_side.png = Command Block.png
+source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/block/end_portal_frame_top.png + source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/block/end_portal_frame_side.png + source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/block/end_portal_frame_side.png = End Portal Frame.png

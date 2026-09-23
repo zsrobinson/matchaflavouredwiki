@@ -12,7 +12,7 @@
 |rarity=Rare
 |stackable=No
 |effects=Stores: {{G|Warding}} [[Warding|2 Warding]], [[Smite]] II
-|tooltip=Prayer of Man
+|tooltipbox={{Tooltip|Prayer of Man}}
 |id=<code>matcha:blessing_warding</code>
 |base=<code>minecraft:enchanted_book</code>
 |source={{Source|MF_datapack/data/matcha/recipe/blessing/warding.json|warding.json}}

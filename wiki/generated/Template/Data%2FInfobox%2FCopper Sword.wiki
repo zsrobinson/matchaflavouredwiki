@@ -6,7 +6,7 @@
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
-|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
 |stackable=No
@@ -15,7 +15,7 @@
 |attackspeed=1.6
 |miningspeed=1.5
 |repair=[[Copper Ingot]]
-|tooltip={{G|Attack damage}} 5<br />{{G|Attack speed}} 1.6
+|tooltipbox={{Tooltip|Copper Sword}}
 |id=<code>minecraft:copper_sword</code>
 |base=<code>minecraft:copper_sword</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_sword.json|copper_sword.json}}

@@ -2,13 +2,13 @@
 '''Iron equipment''' is the third tier of tools, weapons and armor, and the base for [[Steel equipment|steel]].
 
 == Obtaining ==
-Iron equipment is crafted from [[Iron Ingot|iron ingots]]. Raw iron can only be smelted in a [[Blast Furnace|blast furnace]]; the vanilla furnace recipes for iron are blocked.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_raw_iron.json}}</ref> Iron also makes the [[Iron Dolabra|iron dolabra]], [[Iron Mattock|iron mattock]], [[Shears|iron shears]] and [[Snow Shovel|snow shovel]].
+Iron equipment is crafted from [[Iron Ingot|iron ingots]]. Raw iron can only be smelted in a [[Blast Furnace|blast furnace]]; the vanilla furnace recipes for iron are blocked.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref> Iron also makes the [[Iron Dolabra|iron dolabra]], [[Iron Mattock|iron mattock]], [[Shears|iron shears]] and [[Snow Shovel|snow shovel]].
 
 == Mining ==
 The iron pickaxe mines every ore, including diamond, but cannot get drops from obsidian, crying obsidian or ender chests.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/iron.json}}</ref>
 
 == Differences from vanilla ==
-Iron tools have 500 durability instead of 250, and the axe, pickaxe and sword have pack-specific speeds. Iron armor has 350 durability for every piece.
+Iron tools have 500 durability instead of 250 and mine faster than vanilla's speed 6: 7 for the pickaxe and axe, 8 for the shovel and hoe. Iron armor has 350 durability for every piece.
 
 == Stats ==
 === Tools ===

@@ -3,7 +3,7 @@
 |renewable=No
 }}
 
-An '''adamant mattock''' is the [[Adamant equipment|adamant]] [[mattock]], made by smithing a diamond hoe with [[adamant alloy]] and a [[smithing upgrade template]].
+An '''adamant mattock''' is a [[mattock]] of the [[Adamant equipment|adamant]] tier, made by smithing a diamond hoe with [[adamant alloy]] and a [[smithing upgrade template]].
 
 == Obtaining ==
 
@@ -26,19 +26,19 @@ It deals {{Hp|1}} damage at an attack speed of 4.
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}} or [[adamant scrap]]. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-=== Crafting ingredient ===
-{{Uses}}
-
-In a [[blast furnace]] it melts down into one [[adamant alloy]], returning the alloy but losing the diamonds.
+=== Smelting ingredient ===
+In a [[blast furnace]] it melts down into one [[adamant alloy]], returning the alloy but losing the diamonds.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/netherite_ingot_from_blasting_netherite_materials.json}}</ref>
 
 === Trading ===
+{{Uses}}
+
 An apprentice [[weaponsmith]] buys it for one [[adamant alloy]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/netherite_mattock.json}}</ref>
 
 == History ==
 {{History|
 {{History line|1.03|The vanilla netherite recipes were blocked.}}
 {{History line|1.10|A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
-{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. [[Divinity]] was replaced with Efficiency.}}
+{{History line|1.12.1-alpha|The upgrade now keeps the base item's enchantments. Added the "Repaired with" tooltip. [[Divinity]] was replaced with Efficiency.}}
 {{History line|1.12.2|Now smelts the blocks it mines. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}
 

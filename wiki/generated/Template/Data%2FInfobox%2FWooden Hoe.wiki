@@ -15,7 +15,7 @@
 |attackspeed=1
 |miningspeed=2
 |repair=[[Oak Planks]], [[Spruce Planks]], [[Birch Planks]], [[Jungle Planks]], [[Acacia Planks]], [[Dark Oak Planks]], [[Pale Oak Planks]], [[Crimson Planks]], [[Warped Planks]], [[Mangrove Planks]], [[Bamboo Planks]], [[Cherry Planks]]
-|tooltip=⛏ 2<br />🗡 1<br />🕒 1
+|tooltipbox={{Tooltip|Wooden Hoe}}
 |id=<code>minecraft:wooden_hoe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/wooden_hoe.json|wooden_hoe.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

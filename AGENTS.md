@@ -13,9 +13,11 @@ debugging time.
   release notes (`source/changelogs`) and the developer's videos (`transcript.txt`, `sources/transcripts/`).
   Never other wikis, forks or third-party videos. Competitors may be read to find gaps (`wiki/AUDIT.md`),
   but every fact must be verified in the primary sources.
-- **Look and structure follow minecraft.wiki.** The skin is minecraft.wiki's own CSS, vendored in.
-  Templates emit its markup (infobox, navbox, `Module:UI` interfaces), and the main page uses its
-  main-page CSS and layout.
+- **Look and structure follow minecraft.wiki; the game's widgets look like the pack.** The skin is
+  minecraft.wiki's own CSS, vendored in. Templates emit its markup (infobox, navbox, inventory slots,
+  minetip tooltips), and the main page uses its main-page CSS and layout. Where the pack reskins
+  something the player sees (station screens, inventory colours, hearts, lore), the wiki shows the
+  pack's version: see "Pack look" below.
 - **Never hand-edit `wiki/generated/`.** It's rebuilt by `tools/generate.py` and committed on purpose:
   `git diff wiki/generated` shows exactly what changed in the data. Hand pages in `wiki/pages/` override
   generated pages of the same title.
@@ -44,13 +46,17 @@ the swap mid-way.
 - **No images inside link labels.** `[[Warding|{{G|Warding}} 1]]` renders as literal text. Put glyphs
   outside the link: `{{G|Warding}} [[Warding|1]]`. `check_site.py` catches this.
 - **`Module:UI` reads the parent template's parameters,** not the `#invoke` arguments. Wrap it in a
-  template whose parameter names match (`Template:Smithing` → `Template:Smithing Table` → `#invoke`),
-  or the slots render empty.
+  template whose parameter names match, or the slots render empty. (The recipe templates now use
+  `Module:Station`, which takes explicit `#invoke` arguments.)
 - **`{{About}}` wraps its link arguments in `[[ ]]`.** For external targets use `{{Hatnote|…}}`.
 - **Links are only first-letter case-insensitive.** `[[mud kiln]]` works only because `build_xml.py`
   synthesises a sentence-case redirect for every multi-word title.
 - **Titles to files:** the namespace is the folder, `/` becomes `%2F`, Module pages are `.lua`, the
   Project namespace is `Matcha Flavoured Wiki:`.
+
+- **Pages have a 2 MB include limit.** Past it MediaWiki stops expanding templates and prints a bare `Template:…` link
+  (crafting grids are the heavy part). `generate.py` drops the grids from recipe tables longer than `COMPACT_AFTER`,
+  and `check_site.py` / `preview.py` flag unexpanded templates and missing images.
 
 - **The local wiki never deletes pages.** A page the generator stopped producing still exists locally,
   so local checks can pass while CI, which builds from scratch, finds broken links. Trust the PR check.
@@ -89,12 +95,29 @@ the swap mid-way.
   - Foliage textures are tinted.
   - Tooltip glyphs are `File:Glyph E0xx.png`, named in `Template:G`, and explained on the "Tooltip" page.
 
+**Pack look** (`MediaWiki:Gadget-mfw-ui.css`)
+- **Station screens:** `{{Crafting}}`, `{{Cooking}}`, `{{Smithing}}` and `{{Stonecutter}}` call
+  `Module:Station`, which draws the pack's own screen art and places each slot at the game's pixel
+  coordinates (the pack moves no slot). `tools/images.py` cuts the art from the resource pack into
+  `site/assets/gui/` at 2× (committed; served as `/assets/gui/`). Each cooking station has its own
+  screen, title (the pack's names: Oven, Mud Kiln) and progress sprites; the arrow fills over the
+  recipe's cooking time. A campfire has no screen in the game, so Kindling gets one in the pack's
+  palette with the item resting on the animated fire. `{{Trade}}` draws a villager offer the same way.
+- **Tooltips:** every slot carries its item's in-game tooltip as a hidden `.mf-tip` (`Module:Tooltip`,
+  data generated into `Module:Tooltip/Data` from the item components: name colour or rarity, lore runs
+  with their colours, glyph widths). `MediaWiki:Gadget-mfwTooltip.js` shows it on hover, in the live
+  wiki and in the static export. `{{Tooltip|item}}` draws it in place (item infoboxes). Glyphs are CSS
+  masks over `glyphs.png` filled with the text colour, the way the game tints the font's white glyphs.
+- **Palette:** slots and panels use the pack's brown inventory colours, and `{{Hp}}` uses its HUD hearts.
+
 **Static export and deploy**
 - **Page files:** pages are `dist/w/<Title>.html`, with `html_handling: auto-trailing-slash` in `wrangler.jsonc`.
 - **The Worker (`src/worker.js`):**
   - 301s every other hostname to `https://matchaflavou.red`;
   - serves redirect pages and wrong-case URLs as real 301s from `src/redirects.json`, which the export writes.
 - **What the export keeps and strips:** it removes MediaWiki's scripts except the theme boot, and keeps the `ca-mfw-*` GitHub tabs.
+  It also replaces legacy Vector's fixed `width=1120` viewport with `device-width`, so phones get the vendored narrow-screen layout.
+  Its `site.js` is `Gadget-mfwShell.js` and `Gadget-mfwTooltip.js` (plain DOM, no jQuery) plus `SITE_JS`.
 - **Search** is Pagefind (Component UI searchbox and the `/search/` page).
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;

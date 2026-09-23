@@ -1,3 +1,5 @@
-<includeonly>{{#invoke:UI|stonecutter|Input={{{Input|}}}|Output={{{Output|}}}}}</includeonly><noinclude>
+<includeonly><div class="mfui-figure">{{#invoke:Station|screen|station=stonecutter|Input={{{Input|}}}|Output={{{Output|}}}}}{{#if:{{{note|}}}|<div class="mfui-caption">{{{note}}}</div>}}</div></includeonly><noinclude>
+A stonecutter recipe, drawn with the pack's stonecutter screen ([[Module:Station]]).
+
 {{Stonecutter|Input=Limestone|Output=Stone Bricks}}
 [[Category:Templates]]</noinclude>

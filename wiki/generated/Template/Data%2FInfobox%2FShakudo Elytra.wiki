@@ -14,7 +14,7 @@
 |durability=800
 |armor=1
 |repair=[[Honeycomb Block]], [[Block of Copper]]
-|tooltip={{G|Armor}} 1<br />Elytra Bonus:<br />{{G|Health}} {{G|Cooldown}} -(00:10)<br />Repaired with:<br />Honeycomb Block<br />item.minecraft.copper_block
+|tooltipbox={{Tooltip|Shakudo Elytra}}
 |id=<code>matcha:shakudo_elytra</code>
 |base=<code>minecraft:elytra</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_elytra.json|shakudo_elytra.json}}

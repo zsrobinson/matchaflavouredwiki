@@ -1,192 +1,145 @@
 <includeonly>{| class="wikitable recipe-table mw-collapsible"
-! Name !! Ingredients !! Recipe
+! Name !! Ingredients
 |-
 | [[Prayer of Talos]]
-| 7 × [[Block of Iron]] +<br />[[Steel Alloy]] +<br />[[Hell-Bound Book]]
-| {{Crafting|A1=Block of Iron|A2=Block of Iron|A3=Block of Iron|B1=Steel Alloy|B2=Hell-Bound Book|B3=Block of Iron|C1=Block of Iron|C2=Block of Iron|C3=Block of Iron|Output=Prayer of Talos}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/density_knockback_punch.json|matcha:blessing/density_knockback_punch}}</small>
+| 7 × [[Block of Iron]] +<br />[[Steel Alloy]] +<br />[[Hell-Bound Book]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/density_knockback_punch.json|matcha:blessing/density_knockback_punch}}</small>
 |-
 | [[Activator Rail]]
-| 6 × [[Steel Alloy]] +<br />2 × [[Stick]] +<br />[[Electric Inverter]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B1=Stick|B2=Electric Inverter|B3=Stick|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Activator Rail,32}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/activator_rail_from_steel.json|matcha:crafting/activator_rail_from_steel}}</small>
+| 6 × [[Steel Alloy]] +<br />2 × [[Stick]] +<br />[[Electric Inverter]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/activator_rail_from_steel.json|matcha:crafting/activator_rail_from_steel}}</small>
 |-
 | [[Anvil]]
-| 3 × [[Steel Alloy]] +<br />4 × [[Iron Ingot]]
-| {{Crafting|A1=Steel Alloy|A3=Iron Ingot|B1=Steel Alloy|B2=Iron Ingot|B3=Iron Ingot|C1=Steel Alloy|C3=Iron Ingot|Output=Anvil}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/anvil.json|matcha:crafting/anvil}}</small>
+| 3 × [[Steel Alloy]] +<br />4 × [[Iron Ingot]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/anvil.json|matcha:crafting/anvil}}</small>
 |-
 | [[Bucket]]
-| 3 × [[Steel Alloy]]
-| {{Crafting|A1=Steel Alloy|B2=Steel Alloy|C1=Steel Alloy|Output=Bucket,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bucket_from_steel.json|matcha:crafting/bucket_from_steel}}</small>
+| 3 × [[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bucket_from_steel.json|matcha:crafting/bucket_from_steel}}</small>
 |-
 | [[Cauldron]]
-| 7 × [[Steel Alloy]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B3=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Cauldron,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cauldron_from_steel.json|matcha:crafting/cauldron_from_steel}}</small>
+| 7 × [[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cauldron_from_steel.json|matcha:crafting/cauldron_from_steel}}</small>
 |-
 | [[Detector Rail]]
-| 6 × [[Steel Alloy]] +<br />[[Stone Pressure Plate]] +<br />[[Electric Wire]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B2=Stone Pressure Plate|B3=Electric Wire|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Detector Rail,32}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/detector_rail_from_steel.json|matcha:crafting/detector_rail_from_steel}}</small>
+| 6 × [[Steel Alloy]] +<br />[[Stone Pressure Plate]] +<br />[[Electric Wire]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/detector_rail_from_steel.json|matcha:crafting/detector_rail_from_steel}}</small>
 |-
 | [[Hopper]]
-| 5 × [[Steel Alloy]] +<br />[[Chest]] or [[Barrel]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|B2=Chest;Barrel|B3=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|Output=Hopper,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/hopper_from_steel.json|matcha:crafting/hopper_from_steel}}</small>
+| 5 × [[Steel Alloy]] +<br />[[Chest]] or [[Barrel]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/hopper_from_steel.json|matcha:crafting/hopper_from_steel}}</small>
 |-
 | [[Iron Bars]]
-| 6 × [[Steel Alloy]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|B1=Steel Alloy|B2=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|Output=Iron Bars,32}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_bars_from_steel.json|matcha:crafting/iron_bars_from_steel}}</small>
+| 6 × [[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_bars_from_steel.json|matcha:crafting/iron_bars_from_steel}}</small>
 |-
 | [[Iron Chain]]
-| 3 × [[Steel Alloy]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|Output=Iron Chain,36}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_chain_from_steel.json|matcha:crafting/iron_chain_from_steel}}</small>
+| 3 × [[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_chain_from_steel.json|matcha:crafting/iron_chain_from_steel}}</small>
 |-
 | [[Iron Door]]
-| 6 × [[Steel Alloy]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B1=Steel Alloy|B2=Steel Alloy|B3=Steel Alloy|Output=Iron Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_door_from_steel.json|matcha:crafting/iron_door_from_steel}}</small>
+| 6 × [[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_door_from_steel.json|matcha:crafting/iron_door_from_steel}}</small>
 |-
 | [[Iron Trapdoor]]
-| 4 × [[Steel Alloy]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|B1=Steel Alloy|B2=Steel Alloy|Output=Iron Trapdoor,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_trapdoor_from_steel.json|matcha:crafting/iron_trapdoor_from_steel}}</small>
+| 4 × [[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_trapdoor_from_steel.json|matcha:crafting/iron_trapdoor_from_steel}}</small>
 |-
 | [[Minecart]]
-| 5 × [[Steel Alloy]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|B2=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|Output=Minecart,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/minecart_from_steel.json|matcha:crafting/minecart_from_steel}}</small>
+| 5 × [[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/minecart_from_steel.json|matcha:crafting/minecart_from_steel}}</small>
 |-
 | [[Rail]]
-| 6 × [[Steel Alloy]] +<br />[[Stick]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B2=Stick|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Rail,64}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/rail_from_steel.json|matcha:crafting/rail_from_steel}}</small>
+| 6 × [[Steel Alloy]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/rail_from_steel.json|matcha:crafting/rail_from_steel}}</small>
 |-
 | [[Smithing Table]]
-| 2 × [[Steel Alloy]] +<br />4 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
-| {{Crafting|A1=Steel Alloy|A2=Any Planks|A3=Any Planks|B1=Steel Alloy|B2=Any Planks|B3=Any Planks|Output=Smithing Table}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/smithing_table.json|matcha:crafting/smithing_table}}</small>
+| 2 × [[Steel Alloy]] +<br />4 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span><br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/smithing_table.json|matcha:crafting/smithing_table}}</small>
 |-
 | [[Smithing Template]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Deepslate]] or [[Cobbled Deepslate]] or [[Blackstone]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Deepslate;Cobbled Deepslate;Blackstone|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Template}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/smithing_template.json|matcha:crafting/smithing_template}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Deepslate]] or [[Cobbled Deepslate]] or [[Blackstone]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/smithing_template.json|matcha:crafting/smithing_template}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Amethyst]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Amethyst|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_amethyst.json|matcha:crafting/trim_colour_amethyst}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Amethyst]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_amethyst.json|matcha:crafting/trim_colour_amethyst}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Cinnabar]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Cinnabar|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_cinnabar.json|matcha:crafting/trim_colour_cinnabar}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Cinnabar]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_cinnabar.json|matcha:crafting/trim_colour_cinnabar}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Diamond]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Diamond|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_diamond.json|matcha:crafting/trim_colour_diamond}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Diamond]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_diamond.json|matcha:crafting/trim_colour_diamond}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Electrum Alloy]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Electrum Alloy|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_electrum.json|matcha:crafting/trim_colour_electrum}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Electrum Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_electrum.json|matcha:crafting/trim_colour_electrum}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Gold]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Gold|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_gold.json|matcha:crafting/trim_colour_gold}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Gold]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_gold.json|matcha:crafting/trim_colour_gold}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Hepatizon Alloy]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Hepatizon Alloy|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_hepatizon.json|matcha:crafting/trim_colour_hepatizon}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Hepatizon Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_hepatizon.json|matcha:crafting/trim_colour_hepatizon}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Iron]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Iron|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_iron.json|matcha:crafting/trim_colour_iron}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Iron]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_iron.json|matcha:crafting/trim_colour_iron}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Lapis Lazuli]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Lapis Lazuli|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_lapis.json|matcha:crafting/trim_colour_lapis}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Lapis Lazuli]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_lapis.json|matcha:crafting/trim_colour_lapis}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Oxidized Copper]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Oxidized Copper|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_patina.json|matcha:crafting/trim_colour_patina}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Oxidized Copper]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_patina.json|matcha:crafting/trim_colour_patina}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Quartz]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Quartz|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_quartz.json|matcha:crafting/trim_colour_quartz}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Quartz]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_quartz.json|matcha:crafting/trim_colour_quartz}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Resin]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Resin|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_resin.json|matcha:crafting/trim_colour_resin}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Resin]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_resin.json|matcha:crafting/trim_colour_resin}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Shakudo Alloy]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Shakudo Alloy|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_shakudo.json|matcha:crafting/trim_colour_shakudo}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Shakudo Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_shakudo.json|matcha:crafting/trim_colour_shakudo}}</small>
 |-
 | [[Smithing Trim Color]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Steel Alloy]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Steel Alloy|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_steel.json|matcha:crafting/trim_colour_steel}}</small>
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_steel.json|matcha:crafting/trim_colour_steel}}</small>
 |-
 | [[Steel Axe]]
-| [[Iron Axe]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=|Base=Iron Axe|Addition=Steel Alloy|Output=Steel Axe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_axe.json|matcha:smithing/steel_axe}}</small>
+| [[Iron Axe]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_axe.json|matcha:smithing/steel_axe}}</small>
 |-
 | [[Steel Boots]]
-| [[Iron Boots]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=|Base=Iron Boots|Addition=Steel Alloy|Output=Steel Boots}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_boots.json|matcha:smithing/steel_boots}}</small>
+| [[Iron Boots]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_boots.json|matcha:smithing/steel_boots}}</small>
 |-
 | [[Steel Chestplate]]
-| [[Iron Chestplate]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=|Base=Iron Chestplate|Addition=Steel Alloy|Output=Steel Chestplate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_chestplate.json|matcha:smithing/steel_chestplate}}</small>
+| [[Iron Chestplate]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_chestplate.json|matcha:smithing/steel_chestplate}}</small>
 |-
 | [[Steel Claymore]]
-| [[Smithing Template]] +<br />[[Iron Sword]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=Smithing Template|Base=Iron Sword|Addition=Steel Alloy|Output=Steel Claymore}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_claymore.json|matcha:smithing/steel_claymore}}</small>
+| [[Smithing Template]] +<br />[[Iron Sword]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_claymore.json|matcha:smithing/steel_claymore}}</small>
 |-
 | [[Steel Dolabra]]
-| [[Smithing Template]] +<br />[[Iron Axe]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=Smithing Template|Base=Iron Axe|Addition=Steel Alloy|Output=Steel Dolabra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_dolabra.json|matcha:smithing/steel_dolabra}}</small>
+| [[Smithing Template]] +<br />[[Iron Axe]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_dolabra.json|matcha:smithing/steel_dolabra}}</small>
 |-
 | [[Steel Helmet]]
-| [[Iron Helmet]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=|Base=Iron Helmet|Addition=Steel Alloy|Output=Steel Helmet}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_helmet.json|matcha:smithing/steel_helmet}}</small>
+| [[Iron Helmet]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_helmet.json|matcha:smithing/steel_helmet}}</small>
 |-
 | [[Steel Hoe]]
-| [[Iron Hoe]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=|Base=Iron Hoe|Addition=Steel Alloy|Output=Steel Hoe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_hoe.json|matcha:smithing/steel_hoe}}</small>
+| [[Iron Hoe]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_hoe.json|matcha:smithing/steel_hoe}}</small>
 |-
 | [[Steel Leggings]]
-| [[Iron Leggings]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=|Base=Iron Leggings|Addition=Steel Alloy|Output=Steel Leggings}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_leggings.json|matcha:smithing/steel_leggings}}</small>
+| [[Iron Leggings]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_leggings.json|matcha:smithing/steel_leggings}}</small>
 |-
 | [[Steel Mattock]]
-| [[Smithing Template]] +<br />[[Iron Hoe]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=Smithing Template|Base=Iron Hoe|Addition=Steel Alloy|Output=Steel Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_mattock.json|matcha:smithing/steel_mattock}}</small>
+| [[Smithing Template]] +<br />[[Iron Hoe]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_mattock.json|matcha:smithing/steel_mattock}}</small>
 |-
 | [[Steel Pickaxe]]
-| [[Iron Pickaxe]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=|Base=Iron Pickaxe|Addition=Steel Alloy|Output=Steel Pickaxe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_pickaxe.json|matcha:smithing/steel_pickaxe}}</small>
+| [[Iron Pickaxe]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_pickaxe.json|matcha:smithing/steel_pickaxe}}</small>
 |-
 | [[Steel Shears]]
-| [[Iron Shears]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=|Base=Iron Shears|Addition=Steel Alloy|Output=Steel Shears}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_shears.json|matcha:smithing/steel_shears}}</small>
+| [[Iron Shears]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_shears.json|matcha:smithing/steel_shears}}</small>
 |-
 | [[Steel Shovel]]
-| [[Iron Shovel]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=|Base=Iron Shovel|Addition=Steel Alloy|Output=Steel Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_shovel.json|matcha:smithing/steel_shovel}}</small>
+| [[Iron Shovel]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_shovel.json|matcha:smithing/steel_shovel}}</small>
 |-
 | [[Steel Spear]]
-| [[Iron Spear]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=|Base=Iron Spear|Addition=Steel Alloy|Output=Steel Spear}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_spear.json|matcha:smithing/steel_spear}}</small>
+| [[Iron Spear]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_spear.json|matcha:smithing/steel_spear}}</small>
 |-
 | [[Steel Sword]]
-| [[Iron Sword]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=|Base=Iron Sword|Addition=Steel Alloy|Output=Steel Sword}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_sword.json|matcha:smithing/steel_sword}}</small>
+| [[Iron Sword]] +<br />[[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_sword.json|matcha:smithing/steel_sword}}</small>
 |-
 | [[Iron Bars]]
-| [[Steel Alloy]]
-| {{Stonecutter|Input=Steel Alloy|Output=Iron Bars,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_bars_from_stonecutting_steel.json|matcha:stonecutting/iron_bars_from_stonecutting_steel}}</small>
+| [[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_bars_from_stonecutting_steel.json|matcha:stonecutting/iron_bars_from_stonecutting_steel}}</small>
 |-
 | [[Cauldron]]
-| [[Steel Alloy]]
-| {{Stonecutter|Input=Steel Alloy|Output=Cauldron}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_cauldron_from_stonecutting_steel.json|matcha:stonecutting/iron_cauldron_from_stonecutting_steel}}</small>
+| [[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_cauldron_from_stonecutting_steel.json|matcha:stonecutting/iron_cauldron_from_stonecutting_steel}}</small>
 |-
 | [[Iron Chain]]
-| [[Steel Alloy]]
-| {{Stonecutter|Input=Steel Alloy|Output=Iron Chain,12}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_chain_from_stonecutting_steel.json|matcha:stonecutting/iron_chain_from_stonecutting_steel}}</small>
+| [[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_chain_from_stonecutting_steel.json|matcha:stonecutting/iron_chain_from_stonecutting_steel}}</small>
 |-
 | [[Iron Door]]
-| [[Steel Alloy]]
-| {{Stonecutter|Input=Steel Alloy|Output=Iron Door}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_door_from_stonecutting_steel.json|matcha:stonecutting/iron_door_from_stonecutting_steel}}</small>
+| [[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_door_from_stonecutting_steel.json|matcha:stonecutting/iron_door_from_stonecutting_steel}}</small>
 |-
 | [[Iron Trapdoor]]
-| [[Steel Alloy]]
-| {{Stonecutter|Input=Steel Alloy|Output=Iron Trapdoor,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_trapdoor_from_stonecutting_iron_block.json|matcha:stonecutting/iron_trapdoor_from_stonecutting_iron_block}}</small>
+| [[Steel Alloy]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_trapdoor_from_stonecutting_iron_block.json|matcha:stonecutting/iron_trapdoor_from_stonecutting_iron_block}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

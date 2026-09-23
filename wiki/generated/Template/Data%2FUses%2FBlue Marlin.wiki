@@ -1,8 +1,8 @@
 <includeonly>
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Fisherman]] || Master || {{ItemLink|Blue Marlin}} || {{ItemLink|Obol}}
+| [[Fisherman]] || Master || {{Trade|Blue Marlin||Obol}} || {{ItemLink|Blue Marlin}} || {{ItemLink|Obol}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

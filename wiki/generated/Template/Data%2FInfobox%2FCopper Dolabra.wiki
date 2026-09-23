@@ -15,7 +15,7 @@
 |attackspeed=0.8
 |miningspeed=5
 |repair=[[Copper Ingot]]
-|tooltip={{G|Mining speed}} 5<br />{{G|Attack damage}} 5<br />{{G|Attack speed}} 0.8
+|tooltipbox={{Tooltip|Copper Dolabra}}
 |id=<code>matcha:copper_dolabra</code>
 |base=<code>minecraft:copper_axe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_dolabra.json|copper_dolabra.json}}

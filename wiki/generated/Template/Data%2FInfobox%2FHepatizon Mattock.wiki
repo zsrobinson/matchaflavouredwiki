@@ -15,7 +15,7 @@
 |attackspeed=3
 |miningspeed=15
 |repair=[[Block of Copper]]
-|tooltip={{G|Mining speed}} 15<br />{{G|Attack damage}} 3.5<br />{{G|Attack speed}} 3<br />{{G|Speed}} +0.005<br />Repaired with:<br />Block of Copper
+|tooltipbox={{Tooltip|Hepatizon Mattock}}
 |id=<code>matcha:hepatizon_mattock</code>
 |base=<code>minecraft:stone_hoe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_mattock.json|hepatizon_mattock.json}}
