@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Deepslate Coal Deposit}}
+|image={{#if:{{{image|}}}|{{{image}}}|Deepslate Coal Deposit.png}}
+|imagesize=160px
 |invimage=Deepslate Coal Deposit
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

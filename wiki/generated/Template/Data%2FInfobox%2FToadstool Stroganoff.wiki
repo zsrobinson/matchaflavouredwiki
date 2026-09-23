@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Toadstool Stroganoff}}
+|image={{#if:{{{image|}}}|{{{image}}}|Toadstool Stroganoff.png}}
+|imagesize=160px
 |invimage=Toadstool Stroganoff
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

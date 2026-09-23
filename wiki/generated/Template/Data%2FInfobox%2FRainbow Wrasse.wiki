@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Rainbow Wrasse}}
+|image={{#if:{{{image|}}}|{{{image}}}|Rainbow Wrasse.png}}
+|imagesize=160px
 |invimage=Rainbow Wrasse
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

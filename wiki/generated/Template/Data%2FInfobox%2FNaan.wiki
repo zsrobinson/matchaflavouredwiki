@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Naan}}
+|image={{#if:{{{image|}}}|{{{image}}}|Naan.png}}
+|imagesize=160px
 |invimage=Naan
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

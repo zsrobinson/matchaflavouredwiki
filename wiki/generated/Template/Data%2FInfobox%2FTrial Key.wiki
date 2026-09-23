@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Trial Key}}
+|image={{#if:{{{image|}}}|{{{image}}}|Trial Key.png}}
+|imagesize=160px
 |invimage=Trial Key
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

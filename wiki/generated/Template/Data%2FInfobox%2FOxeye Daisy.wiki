@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Oxeye Daisy}}
+|image={{#if:{{{image|}}}|{{{image}}}|Oxeye Daisy.png}}
+|imagesize=160px
 |invimage=Oxeye Daisy
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

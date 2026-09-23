@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Heart Pottery Sherd}}
+|image={{#if:{{{image|}}}|{{{image}}}|Heart Pottery Sherd.png}}
+|imagesize=160px
 |invimage=Heart Pottery Sherd
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

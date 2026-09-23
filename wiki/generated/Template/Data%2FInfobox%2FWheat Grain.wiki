@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Wheat Grain}}
+|image={{#if:{{{image|}}}|{{{image}}}|Wheat Grain.png}}
+|imagesize=160px
 |invimage=Wheat Grain
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

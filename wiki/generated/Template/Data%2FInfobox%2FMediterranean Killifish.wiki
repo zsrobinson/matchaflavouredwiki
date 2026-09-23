@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Mediterranean Killifish}}
+|image={{#if:{{{image|}}}|{{{image}}}|Mediterranean Killifish.png}}
+|imagesize=160px
 |invimage=Mediterranean Killifish
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

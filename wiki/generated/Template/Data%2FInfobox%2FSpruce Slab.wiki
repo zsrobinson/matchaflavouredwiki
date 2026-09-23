@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Spruce Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Spruce Slab.png}}
+|imagesize=160px
 |invimage=Spruce Slab
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

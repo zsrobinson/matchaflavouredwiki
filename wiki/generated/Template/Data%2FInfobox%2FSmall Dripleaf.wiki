@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Small Dripleaf}}
+|image={{#if:{{{image|}}}|{{{image}}}|Small Dripleaf.png}}
+|imagesize=160px
 |invimage=Small Dripleaf
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

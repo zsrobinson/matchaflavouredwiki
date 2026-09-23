@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Hellbrick Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Hellbrick Slab.png}}
+|imagesize=160px
 |invimage=Hellbrick Slab
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

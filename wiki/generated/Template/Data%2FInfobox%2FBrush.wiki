@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Brush}}
+|image={{#if:{{{image|}}}|{{{image}}}|Brush.png}}
+|imagesize=160px
 |invimage=Brush
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

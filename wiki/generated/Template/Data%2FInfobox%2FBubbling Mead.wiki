@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Bubbling Mead}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bubbling Mead.png}}
+|imagesize=160px
 |invimage=Bubbling Mead
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

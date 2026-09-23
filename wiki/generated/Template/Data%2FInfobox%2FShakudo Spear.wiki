@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Shakudo Spear}}
+|image={{#if:{{{image|}}}|{{{image}}}|Shakudo Spear.png}}
+|imagesize=160px
 |invimage=Shakudo Spear
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

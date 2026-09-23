@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Canned Golden Apples}}
+|image={{#if:{{{image|}}}|{{{image}}}|Canned Golden Apples.png}}
+|imagesize=160px
 |invimage=Canned Golden Apples
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

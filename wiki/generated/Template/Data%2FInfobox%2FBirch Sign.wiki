@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Birch Sign}}
+|image={{#if:{{{image|}}}|{{{image}}}|Birch Sign.png}}
+|imagesize=160px
 |invimage=Birch Sign
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Buried Treasure Map}}
+|image={{#if:{{{image|}}}|{{{image}}}|Buried Treasure Map.png}}
+|imagesize=160px
 |invimage=Buried Treasure Map
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

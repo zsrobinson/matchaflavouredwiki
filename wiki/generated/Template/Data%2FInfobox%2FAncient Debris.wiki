@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Ancient Debris}}
+|image={{#if:{{{image|}}}|{{{image}}}|Ancient Debris.png}}
+|imagesize=160px
 |invimage=Ancient Debris
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

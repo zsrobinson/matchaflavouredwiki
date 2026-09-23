@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Mourner Pottery Sherd}}
+|image={{#if:{{{image|}}}|{{{image}}}|Mourner Pottery Sherd.png}}
+|imagesize=160px
 |invimage=Mourner Pottery Sherd
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

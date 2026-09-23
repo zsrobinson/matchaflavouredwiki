@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|The Quran}}
+|image={{#if:{{{image|}}}|{{{image}}}|The Quran.png}}
+|imagesize=160px
 |invimage=The Quran
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

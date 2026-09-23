@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Deepslate Brick Wall}}
+|image={{#if:{{{image|}}}|{{{image}}}|Deepslate Brick Wall.png}}
+|imagesize=160px
 |invimage=Deepslate Brick Wall
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

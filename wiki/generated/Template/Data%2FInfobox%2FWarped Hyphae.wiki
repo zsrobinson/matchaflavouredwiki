@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Warped Hyphae}}
+|image={{#if:{{{image|}}}|{{{image}}}|Warped Hyphae.png}}
+|imagesize=160px
 |invimage=Warped Hyphae
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

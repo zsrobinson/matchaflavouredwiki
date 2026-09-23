@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Dark Oak Hanging Sign}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dark Oak Hanging Sign.png}}
+|imagesize=160px
 |invimage=Dark Oak Hanging Sign
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

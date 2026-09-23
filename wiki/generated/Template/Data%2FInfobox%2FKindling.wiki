@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Kindling}}
+|image={{#if:{{{image|}}}|{{{image}}}|Kindling.png}}
+|imagesize=160px
 |invimage=Kindling
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

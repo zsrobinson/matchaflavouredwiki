@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Soul Sand}}
+|image={{#if:{{{image|}}}|{{{image}}}|Soul Sand.png}}
+|imagesize=160px
 |invimage=Soul Sand
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Calibrated Sculk Sensor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Calibrated Sculk Sensor.png}}
+|imagesize=160px
 |invimage=Calibrated Sculk Sensor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

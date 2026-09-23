@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Stripped Jungle Log}}
+|image={{#if:{{{image|}}}|{{{image}}}|Stripped Jungle Log.png}}
+|imagesize=160px
 |invimage=Stripped Jungle Log
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

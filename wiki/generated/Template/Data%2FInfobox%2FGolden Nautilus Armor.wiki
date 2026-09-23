@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Golden Nautilus Armor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Golden Nautilus Armor.png}}
+|imagesize=160px
 |invimage=Golden Nautilus Armor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

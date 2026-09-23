@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Stripped Mangrove Log}}
+|image={{#if:{{{image|}}}|{{{image}}}|Stripped Mangrove Log.png}}
+|imagesize=160px
 |invimage=Stripped Mangrove Log
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

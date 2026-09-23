@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Wax}}
+|image={{#if:{{{image|}}}|{{{image}}}|Wax.png}}
+|imagesize=160px
 |invimage=Wax
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Alaska Blackfish}}
+|image={{#if:{{{image|}}}|{{{image}}}|Alaska Blackfish.png}}
+|imagesize=160px
 |invimage=Alaska Blackfish
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

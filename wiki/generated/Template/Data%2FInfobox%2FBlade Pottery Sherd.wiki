@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Blade Pottery Sherd}}
+|image={{#if:{{{image|}}}|{{{image}}}|Blade Pottery Sherd.png}}
+|imagesize=160px
 |invimage=Blade Pottery Sherd
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

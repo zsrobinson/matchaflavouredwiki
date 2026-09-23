@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Mangrove Pressure Plate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Mangrove Pressure Plate.png}}
+|imagesize=160px
 |invimage=Mangrove Pressure Plate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,0 +1,23 @@
+{{Infobox auto|type=Tool|renewable=Yes}}
+'''Tinder''' is a single-use fire-lighting tool made from sticks and grass. It works like a [[Fire Starter]] (the renamed flint and steel) but breaks after one use, which makes it a cheap way to light fires before the player has iron.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The recipe accepts short grass, a fern or a bush, and is unlocked by picking up a stick.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/tinder.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/stick.json}}</ref>
+
+== Usage ==
+Tinder is a flint and steel with a durability of 1, so it can light one fire, [[Kindling]] or other block before it breaks.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/tinder.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.10|Can be crafted with a bush, fern or short grass.}}
+{{History line|1.12.1-alpha|Added the English name.}}
+}}
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Items]]
+[[Category:Tools]]

@@ -1,5 +1,5 @@
-<includeonly><div class="mcui-panel"><span class="mcui-title">{{{station|Oven}}}</span><span class="mcui-stack">{{Slot|{{{Input|}}}}}<span class="mcui-flame-img">[[File:Grid lit_progress.png|28px|link=]]</span>{{Slot|{{{Fuel|}}}}}</span><span class="mcui-cell mcui-arrow-img">[[File:Grid burn_progress.png|44px|link=]]</span><span class="mcui-cell mcui-output">{{Slot|{{{Output|}}}}}</span>{{#if:{{{note|}}}|<span class="mcui-note">{{{note}}}</span>}}</div></includeonly><noinclude>
-A cooking interface. <code>station</code> is shown as the title: [[Oven]], [[Mud Kiln]], [[Blast Furnace]] or [[Kindling]].
+<includeonly><div style="display:inline-block;vertical-align:top;margin:0 0.5em 0.5em 0;text-align:center">{{#invoke:UI|furnace|Input={{{Input|}}}|Fuel={{{Fuel|}}}|Output={{{Output|}}}}}{{#if:{{{station|}}}{{{note|}}}|<div style="font-size:90%">{{#if:{{{station|}}}|[[{{{station}}}]]}}{{#if:{{{station|}}}|{{#if:{{{note|}}}|&#32;·&#32;}}}}{{{note|}}}</div>}}</div></includeonly><noinclude>
+Cooking interface (furnace layout, from Module:UI as on minecraft.wiki). <code>station</code> names the block used: [[Oven]], [[Mud Kiln]], [[Blast Furnace]] or [[Kindling]].
 
-{{Cooking|station=Oven|Input=Pumpkin|Output=Baked Pumpkin|note=5 seconds}}
+{{Cooking|station=Oven|Input=Pumpkin|Output=Baked Pumpkin|note=5 s}}
 [[Category:Templates]]</noinclude>

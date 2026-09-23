@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Amethyst Earrings}}
+|image={{#if:{{{image|}}}|{{{image}}}|Amethyst Earrings.png}}
+|imagesize=160px
 |invimage=Amethyst Earrings
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

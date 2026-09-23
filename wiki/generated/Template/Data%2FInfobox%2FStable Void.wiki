@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Stable Void}}
+|image={{#if:{{{image|}}}|{{{image}}}|Stable Void.png}}
+|imagesize=160px
 |invimage=Stable Void
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

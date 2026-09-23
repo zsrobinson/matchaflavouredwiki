@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Observer}}
+|image={{#if:{{{image|}}}|{{{image}}}|Observer.png}}
+|imagesize=160px
 |invimage=Observer
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

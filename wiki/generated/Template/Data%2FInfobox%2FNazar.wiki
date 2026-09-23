@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Nazar}}
+|image={{#if:{{{image|}}}|{{{image}}}|Nazar.png}}
+|imagesize=160px
 |invimage=Nazar
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

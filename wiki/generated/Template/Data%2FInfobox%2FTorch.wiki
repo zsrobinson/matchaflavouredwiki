@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Torch}}
+|image={{#if:{{{image|}}}|{{{image}}}|Torch.png}}
+|imagesize=160px
 |invimage=Torch
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Honey Ginger Tea}}
+|image={{#if:{{{image|}}}|{{{image}}}|Honey Ginger Tea.png}}
+|imagesize=160px
 |invimage=Honey Ginger Tea
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

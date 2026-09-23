@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Hellspore}}
+|image={{#if:{{{image|}}}|{{{image}}}|Hellspore.png}}
+|imagesize=160px
 |invimage=Hellspore
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

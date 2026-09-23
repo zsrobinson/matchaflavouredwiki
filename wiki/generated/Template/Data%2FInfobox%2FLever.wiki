@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Lever}}
+|image={{#if:{{{image|}}}|{{{image}}}|Lever.png}}
+|imagesize=160px
 |invimage=Lever
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

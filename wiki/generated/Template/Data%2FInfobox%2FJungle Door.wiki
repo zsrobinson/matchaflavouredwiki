@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Jungle Door}}
+|image={{#if:{{{image|}}}|{{{image}}}|Jungle Door.png}}
+|imagesize=160px
 |invimage=Jungle Door
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

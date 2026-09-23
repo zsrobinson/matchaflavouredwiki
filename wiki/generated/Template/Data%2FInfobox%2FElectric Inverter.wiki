@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Electric Inverter}}
+|image={{#if:{{{image|}}}|{{{image}}}|Electric Inverter.png}}
+|imagesize=160px
 |invimage=Electric Inverter
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Rail}}
+|image={{#if:{{{image|}}}|{{{image}}}|Rail.png}}
+|imagesize=160px
 |invimage=Rail
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

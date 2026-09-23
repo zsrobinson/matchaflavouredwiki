@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Birch Leaves}}
+|image={{#if:{{{image|}}}|{{{image}}}|Birch Leaves.png}}
+|imagesize=160px
 |invimage=Birch Leaves
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

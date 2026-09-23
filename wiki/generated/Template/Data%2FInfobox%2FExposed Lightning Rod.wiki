@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Exposed Lightning Rod}}
+|image={{#if:{{{image|}}}|{{{image}}}|Exposed Lightning Rod.png}}
+|imagesize=160px
 |invimage=Exposed Lightning Rod
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

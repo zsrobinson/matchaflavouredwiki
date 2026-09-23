@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Block of Raw Iron}}
+|image={{#if:{{{image|}}}|{{{image}}}|Block of Raw Iron.png}}
+|imagesize=160px
 |invimage=Block of Raw Iron
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Copper Nautilus Armor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Copper Nautilus Armor.png}}
+|imagesize=160px
 |invimage=Copper Nautilus Armor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

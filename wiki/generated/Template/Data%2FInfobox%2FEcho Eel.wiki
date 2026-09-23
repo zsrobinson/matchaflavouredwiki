@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Echo Eel}}
+|image={{#if:{{{image|}}}|{{{image}}}|Echo Eel.png}}
+|imagesize=160px
 |invimage=Echo Eel
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Nautilus Shell}}
+|image={{#if:{{{image|}}}|{{{image}}}|Nautilus Shell.png}}
+|imagesize=160px
 |invimage=Nautilus Shell
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

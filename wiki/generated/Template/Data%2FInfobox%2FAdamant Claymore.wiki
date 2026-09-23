@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Adamant Claymore}}
+|image={{#if:{{{image|}}}|{{{image}}}|Adamant Claymore.png}}
+|imagesize=160px
 |invimage=Adamant Claymore
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

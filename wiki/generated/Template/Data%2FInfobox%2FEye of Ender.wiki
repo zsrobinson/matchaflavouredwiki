@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Eye of Ender}}
+|image={{#if:{{{image|}}}|{{{image}}}|Eye of Ender.png}}
+|imagesize=160px
 |invimage=Eye of Ender
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

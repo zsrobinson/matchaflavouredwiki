@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Spruce Pressure Plate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Spruce Pressure Plate.png}}
+|imagesize=160px
 |invimage=Spruce Pressure Plate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

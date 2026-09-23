@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Steel Claymore}}
+|image={{#if:{{{image|}}}|{{{image}}}|Steel Claymore.png}}
+|imagesize=160px
 |invimage=Steel Claymore
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

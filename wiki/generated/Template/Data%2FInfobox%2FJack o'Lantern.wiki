@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Jack o'Lantern}}
+|image={{#if:{{{image|}}}|{{{image}}}|Jack o'Lantern.png}}
+|imagesize=160px
 |invimage=Jack o'Lantern
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

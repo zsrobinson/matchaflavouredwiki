@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Crimson Stem}}
+|image={{#if:{{{image|}}}|{{{image}}}|Crimson Stem.png}}
+|imagesize=160px
 |invimage=Crimson Stem
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

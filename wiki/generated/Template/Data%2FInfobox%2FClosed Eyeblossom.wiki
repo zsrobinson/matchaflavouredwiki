@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Closed Eyeblossom}}
+|image={{#if:{{{image|}}}|{{{image}}}|Closed Eyeblossom.png}}
+|imagesize=160px
 |invimage=Closed Eyeblossom
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Red Hellbrick Stairs}}
+|image={{#if:{{{image|}}}|{{{image}}}|Red Hellbrick Stairs.png}}
+|imagesize=160px
 |invimage=Red Hellbrick Stairs
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

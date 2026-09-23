@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Seed Bundle}}
+|image={{#if:{{{image|}}}|{{{image}}}|Seed Bundle.png}}
+|imagesize=160px
 |invimage=Seed Bundle
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

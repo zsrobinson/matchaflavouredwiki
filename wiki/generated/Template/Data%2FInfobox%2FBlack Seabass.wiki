@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Black Seabass}}
+|image={{#if:{{{image|}}}|{{{image}}}|Black Seabass.png}}
+|imagesize=160px
 |invimage=Black Seabass
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

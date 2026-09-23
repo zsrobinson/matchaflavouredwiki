@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Weathered Copper Golem Statue}}
+|image={{#if:{{{image|}}}|{{{image}}}|Weathered Copper Golem Statue.png}}
+|imagesize=160px
 |invimage=Weathered Copper Golem Statue
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

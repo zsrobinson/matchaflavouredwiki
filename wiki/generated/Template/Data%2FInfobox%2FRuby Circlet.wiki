@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Ruby Circlet}}
+|image={{#if:{{{image|}}}|{{{image}}}|Ruby Circlet.png}}
+|imagesize=160px
 |invimage=Ruby Circlet
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

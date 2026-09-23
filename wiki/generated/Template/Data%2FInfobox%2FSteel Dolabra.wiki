@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Steel Dolabra}}
+|image={{#if:{{{image|}}}|{{{image}}}|Steel Dolabra.png}}
+|imagesize=160px
 |invimage=Steel Dolabra
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Fishing Rod}}
+|image={{#if:{{{image|}}}|{{{image}}}|Fishing Rod.png}}
+|imagesize=160px
 |invimage=Fishing Rod
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

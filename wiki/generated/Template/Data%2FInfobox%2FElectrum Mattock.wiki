@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Electrum Mattock}}
+|image={{#if:{{{image|}}}|{{{image}}}|Electrum Mattock.png}}
+|imagesize=160px
 |invimage=Electrum Mattock
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

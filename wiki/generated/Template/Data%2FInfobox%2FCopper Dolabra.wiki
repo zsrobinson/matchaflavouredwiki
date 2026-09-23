@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Copper Dolabra}}
+|image={{#if:{{{image|}}}|{{{image}}}|Copper Dolabra.png}}
+|imagesize=160px
 |invimage=Copper Dolabra
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

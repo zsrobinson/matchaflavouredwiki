@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Minecart with Hopper}}
+|image={{#if:{{{image|}}}|{{{image}}}|Minecart with Hopper.png}}
+|imagesize=160px
 |invimage=Minecart with Hopper
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

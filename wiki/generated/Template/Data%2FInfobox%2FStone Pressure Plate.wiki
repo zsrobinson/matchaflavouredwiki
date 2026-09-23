@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Stone Pressure Plate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Stone Pressure Plate.png}}
+|imagesize=160px
 |invimage=Stone Pressure Plate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

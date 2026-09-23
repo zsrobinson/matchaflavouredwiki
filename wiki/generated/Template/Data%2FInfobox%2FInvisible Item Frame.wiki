@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Invisible Item Frame}}
+|image={{#if:{{{image|}}}|{{{image}}}|Invisible Item Frame.png}}
+|imagesize=160px
 |invimage=Invisible Item Frame
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

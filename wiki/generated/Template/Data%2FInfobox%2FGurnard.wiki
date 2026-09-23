@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Gurnard}}
+|image={{#if:{{{image|}}}|{{{image}}}|Gurnard.png}}
+|imagesize=160px
 |invimage=Gurnard
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

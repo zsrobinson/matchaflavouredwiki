@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Glow Item Frame}}
+|image={{#if:{{{image|}}}|{{{image}}}|Glow Item Frame.png}}
+|imagesize=160px
 |invimage=Glow Item Frame
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

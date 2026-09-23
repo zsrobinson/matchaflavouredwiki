@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Fletching Table}}
+|image={{#if:{{{image|}}}|{{{image}}}|Fletching Table.png}}
+|imagesize=160px
 |invimage=Fletching Table
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

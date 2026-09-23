@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Brewer Pottery Sherd}}
+|image={{#if:{{{image|}}}|{{{image}}}|Brewer Pottery Sherd.png}}
+|imagesize=160px
 |invimage=Brewer Pottery Sherd
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Iron Nautilus Armor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Iron Nautilus Armor.png}}
+|imagesize=160px
 |invimage=Iron Nautilus Armor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

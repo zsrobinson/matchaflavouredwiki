@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Pale Moss Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Pale Moss Block.png}}
+|imagesize=160px
 |invimage=Pale Moss Block
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Pink Bed}}
+|image={{#if:{{{image|}}}|{{{image}}}|Pink Bed.png}}
+|imagesize=160px
 |invimage=Pink Bed
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

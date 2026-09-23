@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Dirt}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dirt.png}}
+|imagesize=160px
 |invimage=Dirt
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

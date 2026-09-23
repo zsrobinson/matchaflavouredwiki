@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Jukebox}}
+|image={{#if:{{{image|}}}|{{{image}}}|Jukebox.png}}
+|imagesize=160px
 |invimage=Jukebox
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

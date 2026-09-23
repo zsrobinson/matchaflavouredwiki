@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Black Wool}}
+|image={{#if:{{{image|}}}|{{{image}}}|Black Wool.png}}
+|imagesize=160px
 |invimage=Black Wool
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

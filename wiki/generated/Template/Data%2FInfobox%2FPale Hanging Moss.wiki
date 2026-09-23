@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Pale Hanging Moss}}
+|image={{#if:{{{image|}}}|{{{image}}}|Pale Hanging Moss.png}}
+|imagesize=160px
 |invimage=Pale Hanging Moss
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

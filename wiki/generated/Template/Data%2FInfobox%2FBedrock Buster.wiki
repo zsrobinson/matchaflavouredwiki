@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Bedrock Buster}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bedrock Buster.png}}
+|imagesize=160px
 |invimage=Bedrock Buster
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

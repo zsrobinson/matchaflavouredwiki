@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Azure Bluet}}
+|image={{#if:{{{image|}}}|{{{image}}}|Azure Bluet.png}}
+|imagesize=160px
 |invimage=Azure Bluet
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

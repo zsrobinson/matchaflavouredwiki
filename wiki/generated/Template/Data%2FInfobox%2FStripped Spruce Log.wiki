@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Stripped Spruce Log}}
+|image={{#if:{{{image|}}}|{{{image}}}|Stripped Spruce Log.png}}
+|imagesize=160px
 |invimage=Stripped Spruce Log
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

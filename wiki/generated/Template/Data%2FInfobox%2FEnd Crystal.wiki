@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|End Crystal}}
+|image={{#if:{{{image|}}}|{{{image}}}|End Crystal.png}}
+|imagesize=160px
 |invimage=End Crystal
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

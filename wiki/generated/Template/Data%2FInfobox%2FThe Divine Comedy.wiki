@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|The Divine Comedy}}
+|image={{#if:{{{image|}}}|{{{image}}}|The Divine Comedy.png}}
+|imagesize=160px
 |invimage=The Divine Comedy
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Dead Bush}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dead Bush.png}}
+|imagesize=160px
 |invimage=Dead Bush
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

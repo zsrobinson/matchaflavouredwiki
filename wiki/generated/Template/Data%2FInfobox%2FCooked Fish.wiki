@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Cooked Fish}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cooked Fish.png}}
+|imagesize=160px
 |invimage=Cooked Fish
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

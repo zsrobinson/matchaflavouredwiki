@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Topaz}}
+|image={{#if:{{{image|}}}|{{{image}}}|Topaz.png}}
+|imagesize=160px
 |invimage=Topaz
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

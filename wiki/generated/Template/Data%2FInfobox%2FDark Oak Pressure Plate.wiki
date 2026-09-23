@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Dark Oak Pressure Plate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dark Oak Pressure Plate.png}}
+|imagesize=160px
 |invimage=Dark Oak Pressure Plate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

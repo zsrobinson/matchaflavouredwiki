@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Electrum Dolabra}}
+|image={{#if:{{{image|}}}|{{{image}}}|Electrum Dolabra.png}}
+|imagesize=160px
 |invimage=Electrum Dolabra
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

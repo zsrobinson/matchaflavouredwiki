@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Pumpkin Jam}}
+|image={{#if:{{{image|}}}|{{{image}}}|Pumpkin Jam.png}}
+|imagesize=160px
 |invimage=Pumpkin Jam
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

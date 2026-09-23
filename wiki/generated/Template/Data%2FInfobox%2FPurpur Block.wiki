@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Purpur Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Purpur Block.png}}
+|imagesize=160px
 |invimage=Purpur Block
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

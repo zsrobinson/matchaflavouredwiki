@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Northern Pike}}
+|image={{#if:{{{image|}}}|{{{image}}}|Northern Pike.png}}
+|imagesize=160px
 |invimage=Northern Pike
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

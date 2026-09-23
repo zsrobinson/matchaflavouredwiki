@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Sulfurous Hellstone}}
+|image={{#if:{{{image|}}}|{{{image}}}|Sulfurous Hellstone.png}}
+|imagesize=160px
 |invimage=Sulfurous Hellstone
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

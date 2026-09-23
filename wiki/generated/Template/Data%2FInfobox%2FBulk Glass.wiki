@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Bulk Glass}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bulk Glass.png}}
+|imagesize=160px
 |invimage=Bulk Glass
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

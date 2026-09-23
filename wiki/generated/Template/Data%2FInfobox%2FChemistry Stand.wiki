@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Chemistry Stand}}
+|image={{#if:{{{image|}}}|{{{image}}}|Chemistry Stand.png}}
+|imagesize=160px
 |invimage=Chemistry Stand
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

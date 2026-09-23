@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Sturdy Leather Helmet}}
+|image={{#if:{{{image|}}}|{{{image}}}|Sturdy Leather Helmet.png}}
+|imagesize=160px
 |invimage=Sturdy Leather Helmet
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

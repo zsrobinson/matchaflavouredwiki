@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Trapped Chest}}
+|image={{#if:{{{image|}}}|{{{image}}}|Trapped Chest.png}}
+|imagesize=160px
 |invimage=Trapped Chest
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

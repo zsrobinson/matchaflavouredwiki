@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Crossbow}}
+|image={{#if:{{{image|}}}|{{{image}}}|Crossbow.png}}
+|imagesize=160px
 |invimage=Crossbow
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

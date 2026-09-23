@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Sponge}}
+|image={{#if:{{{image|}}}|{{{image}}}|Sponge.png}}
+|imagesize=160px
 |invimage=Sponge
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Opah}}
+|image={{#if:{{{image|}}}|{{{image}}}|Opah.png}}
+|imagesize=160px
 |invimage=Opah
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

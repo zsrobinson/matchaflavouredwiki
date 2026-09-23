@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Smithing Template}}
+|image={{#if:{{{image|}}}|{{{image}}}|Smithing Template.png}}
+|imagesize=160px
 |invimage=Smithing Template
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

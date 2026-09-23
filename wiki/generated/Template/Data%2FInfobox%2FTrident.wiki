@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Trident}}
+|image={{#if:{{{image|}}}|{{{image}}}|Trident.png}}
+|imagesize=160px
 |invimage=Trident
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

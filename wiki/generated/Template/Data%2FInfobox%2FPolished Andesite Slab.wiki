@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Polished Andesite Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Polished Andesite Slab.png}}
+|imagesize=160px
 |invimage=Polished Andesite Slab
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

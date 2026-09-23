@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Flounder}}
+|image={{#if:{{{image|}}}|{{{image}}}|Flounder.png}}
+|imagesize=160px
 |invimage=Flounder
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

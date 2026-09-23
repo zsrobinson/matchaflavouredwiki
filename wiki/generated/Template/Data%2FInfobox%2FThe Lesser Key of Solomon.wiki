@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|The Lesser Key of Solomon}}
+|image={{#if:{{{image|}}}|{{{image}}}|The Lesser Key of Solomon.png}}
+|imagesize=160px
 |invimage=The Lesser Key of Solomon
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

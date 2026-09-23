@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Dark Malachite}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dark Malachite.png}}
+|imagesize=160px
 |invimage=Dark Malachite
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

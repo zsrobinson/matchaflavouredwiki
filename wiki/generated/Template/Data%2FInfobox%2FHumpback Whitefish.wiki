@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Humpback Whitefish}}
+|image={{#if:{{{image|}}}|{{{image}}}|Humpback Whitefish.png}}
+|imagesize=160px
 |invimage=Humpback Whitefish
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

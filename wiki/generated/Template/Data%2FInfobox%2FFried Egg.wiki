@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Fried Egg}}
+|image={{#if:{{{image|}}}|{{{image}}}|Fried Egg.png}}
+|imagesize=160px
 |invimage=Fried Egg
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

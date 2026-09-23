@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Ruby}}
+|image={{#if:{{{image|}}}|{{{image}}}|Ruby.png}}
+|imagesize=160px
 |invimage=Ruby
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

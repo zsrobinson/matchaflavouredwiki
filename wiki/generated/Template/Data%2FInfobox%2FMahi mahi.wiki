@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Mahi mahi}}
+|image={{#if:{{{image|}}}|{{{image}}}|Mahi mahi.png}}
+|imagesize=160px
 |invimage=Mahi mahi
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

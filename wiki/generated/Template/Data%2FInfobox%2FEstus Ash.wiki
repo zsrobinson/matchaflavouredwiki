@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Estus Ash}}
+|image={{#if:{{{image|}}}|{{{image}}}|Estus Ash.png}}
+|imagesize=160px
 |invimage=Estus Ash
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Arms Up Pottery Sherd}}
+|image={{#if:{{{image|}}}|{{{image}}}|Arms Up Pottery Sherd.png}}
+|imagesize=160px
 |invimage=Arms Up Pottery Sherd
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

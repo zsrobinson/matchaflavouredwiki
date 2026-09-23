@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Armoured Catfish}}
+|image={{#if:{{{image|}}}|{{{image}}}|Armoured Catfish.png}}
+|imagesize=160px
 |invimage=Armoured Catfish
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Composter}}
+|image={{#if:{{{image|}}}|{{{image}}}|Composter.png}}
+|imagesize=160px
 |invimage=Composter
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

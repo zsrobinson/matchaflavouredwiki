@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Golden Chestplate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Golden Chestplate.png}}
+|imagesize=160px
 |invimage=Golden Chestplate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

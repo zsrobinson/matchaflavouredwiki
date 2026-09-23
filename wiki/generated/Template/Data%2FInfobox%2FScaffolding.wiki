@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Scaffolding}}
+|image={{#if:{{{image|}}}|{{{image}}}|Scaffolding.png}}
+|imagesize=160px
 |invimage=Scaffolding
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

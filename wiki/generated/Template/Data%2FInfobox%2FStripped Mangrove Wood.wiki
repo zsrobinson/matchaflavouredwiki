@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Stripped Mangrove Wood}}
+|image={{#if:{{{image|}}}|{{{image}}}|Stripped Mangrove Wood.png}}
+|imagesize=160px
 |invimage=Stripped Mangrove Wood
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

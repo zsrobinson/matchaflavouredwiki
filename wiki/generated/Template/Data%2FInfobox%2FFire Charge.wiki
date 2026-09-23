@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Fire Charge}}
+|image={{#if:{{{image|}}}|{{{image}}}|Fire Charge.png}}
+|imagesize=160px
 |invimage=Fire Charge
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

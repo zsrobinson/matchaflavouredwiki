@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Opal Earrings}}
+|image={{#if:{{{image|}}}|{{{image}}}|Opal Earrings.png}}
+|imagesize=160px
 |invimage=Opal Earrings
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

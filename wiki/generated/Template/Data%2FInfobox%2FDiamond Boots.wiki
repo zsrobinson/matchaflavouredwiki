@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Diamond Boots}}
+|image={{#if:{{{image|}}}|{{{image}}}|Diamond Boots.png}}
+|imagesize=160px
 |invimage=Diamond Boots
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

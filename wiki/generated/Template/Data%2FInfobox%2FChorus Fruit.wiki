@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Chorus Fruit}}
+|image={{#if:{{{image|}}}|{{{image}}}|Chorus Fruit.png}}
+|imagesize=160px
 |invimage=Chorus Fruit
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

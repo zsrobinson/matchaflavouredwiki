@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Shakudo Pickaxe}}
+|image={{#if:{{{image|}}}|{{{image}}}|Shakudo Pickaxe.png}}
+|imagesize=160px
 |invimage=Shakudo Pickaxe
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

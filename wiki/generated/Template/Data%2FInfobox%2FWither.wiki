@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Wither}}
+|image={{#if:{{{image|}}}|{{{image}}}|Wither.png}}
+|imagesize=160px
 |invimage=Wither
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

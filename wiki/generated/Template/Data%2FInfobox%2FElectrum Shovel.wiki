@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Electrum Shovel}}
+|image={{#if:{{{image|}}}|{{{image}}}|Electrum Shovel.png}}
+|imagesize=160px
 |invimage=Electrum Shovel
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

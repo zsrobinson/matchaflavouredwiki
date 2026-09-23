@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Crimson Nylium}}
+|image={{#if:{{{image|}}}|{{{image}}}|Crimson Nylium.png}}
+|imagesize=160px
 |invimage=Crimson Nylium
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

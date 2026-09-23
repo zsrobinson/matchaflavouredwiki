@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Item Frame}}
+|image={{#if:{{{image|}}}|{{{image}}}|Item Frame.png}}
+|imagesize=160px
 |invimage=Item Frame
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

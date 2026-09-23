@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Note Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Note Block.png}}
+|imagesize=160px
 |invimage=Note Block
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

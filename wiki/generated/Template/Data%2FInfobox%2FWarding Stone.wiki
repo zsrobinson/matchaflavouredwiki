@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Warding Stone}}
+|image={{#if:{{{image|}}}|{{{image}}}|Warding Stone.png}}
+|imagesize=160px
 |invimage=Warding Stone
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

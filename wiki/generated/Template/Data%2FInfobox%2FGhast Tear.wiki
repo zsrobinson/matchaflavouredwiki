@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Ghast Tear}}
+|image={{#if:{{{image|}}}|{{{image}}}|Ghast Tear.png}}
+|imagesize=160px
 |invimage=Ghast Tear
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

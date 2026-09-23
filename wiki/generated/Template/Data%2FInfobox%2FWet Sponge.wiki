@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Wet Sponge}}
+|image={{#if:{{{image|}}}|{{{image}}}|Wet Sponge.png}}
+|imagesize=160px
 |invimage=Wet Sponge
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

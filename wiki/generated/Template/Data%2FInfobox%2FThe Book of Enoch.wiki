@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|The Book of Enoch}}
+|image={{#if:{{{image|}}}|{{{image}}}|The Book of Enoch.png}}
+|imagesize=160px
 |invimage=The Book of Enoch
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

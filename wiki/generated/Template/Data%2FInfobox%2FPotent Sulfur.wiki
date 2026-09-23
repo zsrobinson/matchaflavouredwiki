@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Potent Sulfur}}
+|image={{#if:{{{image|}}}|{{{image}}}|Potent Sulfur.png}}
+|imagesize=160px
 |invimage=Potent Sulfur
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

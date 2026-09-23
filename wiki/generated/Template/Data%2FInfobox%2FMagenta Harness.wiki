@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Magenta Harness}}
+|image={{#if:{{{image|}}}|{{{image}}}|Magenta Harness.png}}
+|imagesize=160px
 |invimage=Magenta Harness
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Malachite Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Malachite Slab.png}}
+|imagesize=160px
 |invimage=Malachite Slab
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

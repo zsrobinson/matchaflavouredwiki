@@ -1,5 +1,9 @@
+==Skin==
+* mcw-common[ResourceLoader|type=styles|default|hidden]|mcw-common.css
+* mcw-vector[ResourceLoader|type=styles|skins=vector|default|hidden]|mcw-vector.css
+
 ==Core==
 * animatedIcons[ResourceLoader|type=general|default|hidden]|animatedIcons.js
 
 ==Appearance==
-* themeToggle[ResourceLoader|dependencies=mediawiki.util|type=general|skins=vector|default|hidden]|themeToggle.js|themeToggle.css
+* themeToggle[ResourceLoader|dependencies=mediawiki.util|type=general|skins=vector|default|hidden]|themeToggle.js

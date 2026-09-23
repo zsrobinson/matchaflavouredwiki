@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Ptero Chicken Nugget}}
+|image={{#if:{{{image|}}}|{{{image}}}|Ptero Chicken Nugget.png}}
+|imagesize=160px
 |invimage=Ptero Chicken Nugget
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

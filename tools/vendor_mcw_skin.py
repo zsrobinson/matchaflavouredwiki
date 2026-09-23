@@ -5,8 +5,8 @@ minecraft.wiki runs the same MediaWiki version and Vector legacy skin, so its si
 applies to our pages unchanged. This script downloads the readable CSS sources, resolves
 their `filepath://Name.png` references to local copies in site/assets/mcw/, and writes:
 
-  wiki/pages/MediaWiki/Mcw-common.css   MediaWiki:Common.css + Gadget-site-styles.css
-  wiki/pages/MediaWiki/Mcw-vector.css   MediaWiki:Vector.css + Vector-theme-dark.css + gadget CSS
+  wiki/pages/MediaWiki/Gadget-mcw-common.css   MediaWiki:Common.css + Gadget-site-styles.css
+  wiki/pages/MediaWiki/Gadget-mcw-vector.css   MediaWiki:Vector.css + Vector-theme-dark.css + gadget CSS
 
 MediaWiki:Common.css and MediaWiki:Vector.css in this repo @import these and then apply
 Matcha Flavoured's own branding and component styles on top. Rerun to pick up upstream
@@ -74,8 +74,8 @@ def localise(css):
 
 def main():
     parts = {
-        'Mcw-common.css': [('MediaWiki:Common.css', raw), ('MediaWiki:Gadget-site-styles.css', raw)],
-        'Mcw-vector.css': [('MediaWiki:Vector.css', raw), ('MediaWiki:Vector-theme-dark.css', raw),
+        'Gadget-mcw-common.css': [('MediaWiki:Common.css', raw), ('MediaWiki:Gadget-site-styles.css', raw)],
+        'Gadget-mcw-vector.css': [('MediaWiki:Vector.css', raw), ('MediaWiki:Vector-theme-dark.css', raw),
                            ('ext.gadget.darkmode', gadget_css), ('ext.gadget.stickyToc', gadget_css),
                            ('ext.gadget.sound-styles', gadget_css)],
     }

@@ -1,37 +1,3 @@
-<includeonly>{| class="navbox mw-collapsible{{#if:{{{collapsed|}}}| mw-collapsed}}"
-! class="navbox-title" colspan="2" | {{{title}}}{{#if:{{{group1|}}}|<nowiki/>
-{{!}}-
-! class="navbox-group" {{!}} {{{group1}}}
-{{!}} class="navbox-list" {{!}} {{{list1}}}}}{{#if:{{{group2|}}}|<nowiki/>
-{{!}}-
-! class="navbox-group" {{!}} {{{group2}}}
-{{!}} class="navbox-list" {{!}} {{{list2}}}}}{{#if:{{{group3|}}}|<nowiki/>
-{{!}}-
-! class="navbox-group" {{!}} {{{group3}}}
-{{!}} class="navbox-list" {{!}} {{{list3}}}}}{{#if:{{{group4|}}}|<nowiki/>
-{{!}}-
-! class="navbox-group" {{!}} {{{group4}}}
-{{!}} class="navbox-list" {{!}} {{{list4}}}}}{{#if:{{{group5|}}}|<nowiki/>
-{{!}}-
-! class="navbox-group" {{!}} {{{group5}}}
-{{!}} class="navbox-list" {{!}} {{{list5}}}}}{{#if:{{{group6|}}}|<nowiki/>
-{{!}}-
-! class="navbox-group" {{!}} {{{group6}}}
-{{!}} class="navbox-list" {{!}} {{{list6}}}}}{{#if:{{{group7|}}}|<nowiki/>
-{{!}}-
-! class="navbox-group" {{!}} {{{group7}}}
-{{!}} class="navbox-list" {{!}} {{{list7}}}}}{{#if:{{{group8|}}}|<nowiki/>
-{{!}}-
-! class="navbox-group" {{!}} {{{group8}}}
-{{!}} class="navbox-list" {{!}} {{{list8}}}}}{{#if:{{{group9|}}}|<nowiki/>
-{{!}}-
-! class="navbox-group" {{!}} {{{group9}}}
-{{!}} class="navbox-list" {{!}} {{{list9}}}}}{{#if:{{{group10|}}}|<nowiki/>
-{{!}}-
-! class="navbox-group" {{!}} {{{group10}}}
-{{!}} class="navbox-list" {{!}} {{{list10}}}}}{{#if:{{{list|}}}|<nowiki/>
-{{!}}-
-{{!}} class="navbox-list" colspan="2" {{!}} {{{list}}}}}
-|}</includeonly><noinclude>
+<includeonly><table class="navbox hlist collapsible mw-collapsible{{#if:{{{collapsed|}}}| collapsed mw-collapsed}} noresize"><tr><th class="navbox-top" colspan="2"><span class="navbox-title">{{{title}}}</span></th></tr>{{#if:{{{group1|}}}|<tr><th>{{{group1}}}</th><td><ul>{{{list1}}}</ul></td></tr>}}{{#if:{{{group2|}}}|<tr><th>{{{group2}}}</th><td><ul>{{{list2}}}</ul></td></tr>}}{{#if:{{{group3|}}}|<tr><th>{{{group3}}}</th><td><ul>{{{list3}}}</ul></td></tr>}}{{#if:{{{group4|}}}|<tr><th>{{{group4}}}</th><td><ul>{{{list4}}}</ul></td></tr>}}{{#if:{{{group5|}}}|<tr><th>{{{group5}}}</th><td><ul>{{{list5}}}</ul></td></tr>}}{{#if:{{{group6|}}}|<tr><th>{{{group6}}}</th><td><ul>{{{list6}}}</ul></td></tr>}}{{#if:{{{group7|}}}|<tr><th>{{{group7}}}</th><td><ul>{{{list7}}}</ul></td></tr>}}{{#if:{{{group8|}}}|<tr><th>{{{group8}}}</th><td><ul>{{{list8}}}</ul></td></tr>}}{{#if:{{{group9|}}}|<tr><th>{{{group9}}}</th><td><ul>{{{list9}}}</ul></td></tr>}}{{#if:{{{group10|}}}|<tr><th>{{{group10}}}</th><td><ul>{{{list10}}}</ul></td></tr>}}{{#if:{{{list|}}}|<tr><td colspan="2"><ul>{{{list}}}</ul></td></tr>}}</table></includeonly><noinclude>
 Generic collapsible navbox in the style of the Minecraft Wiki. Up to 10 <code>groupN</code>/<code>listN</code> pairs. Lists are usually {{tl|Nav item}}s.
 [[Category:Navbox templates]]</noinclude>

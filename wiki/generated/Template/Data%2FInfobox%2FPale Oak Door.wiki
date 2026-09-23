@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Pale Oak Door}}
+|image={{#if:{{{image|}}}|{{{image}}}|Pale Oak Door.png}}
+|imagesize=160px
 |invimage=Pale Oak Door
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

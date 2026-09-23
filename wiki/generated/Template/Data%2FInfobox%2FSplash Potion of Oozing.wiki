@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Splash Potion of Oozing}}
+|image={{#if:{{{image|}}}|{{{image}}}|Splash Potion of Oozing.png}}
+|imagesize=160px
 |invimage=Splash Potion of Oozing
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

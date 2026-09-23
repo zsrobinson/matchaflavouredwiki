@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Dropper}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dropper.png}}
+|imagesize=160px
 |invimage=Dropper
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

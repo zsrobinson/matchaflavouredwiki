@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|European Eel}}
+|image={{#if:{{{image|}}}|{{{image}}}|European Eel.png}}
+|imagesize=160px
 |invimage=European Eel
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

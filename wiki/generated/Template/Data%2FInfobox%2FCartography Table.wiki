@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Cartography Table}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cartography Table.png}}
+|imagesize=160px
 |invimage=Cartography Table
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

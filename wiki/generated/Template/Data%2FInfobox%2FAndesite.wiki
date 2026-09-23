@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Andesite}}
+|image={{#if:{{{image|}}}|{{{image}}}|Andesite.png}}
+|imagesize=160px
 |invimage=Andesite
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

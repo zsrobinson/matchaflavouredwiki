@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Cheese}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cheese.png}}
+|imagesize=160px
 |invimage=Cheese
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

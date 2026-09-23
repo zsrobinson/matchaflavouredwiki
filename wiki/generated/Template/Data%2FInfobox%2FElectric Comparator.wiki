@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Electric Comparator}}
+|image={{#if:{{{image|}}}|{{{image}}}|Electric Comparator.png}}
+|imagesize=160px
 |invimage=Electric Comparator
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

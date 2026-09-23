@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Clock}}
+|image={{#if:{{{image|}}}|{{{image}}}|Clock.png}}
+|imagesize=160px
 |invimage=Clock
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

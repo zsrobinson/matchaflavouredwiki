@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Copper Trapdoor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Copper Trapdoor.png}}
+|imagesize=160px
 |invimage=Copper Trapdoor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

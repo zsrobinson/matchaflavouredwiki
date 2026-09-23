@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Spruce Boat}}
+|image={{#if:{{{image|}}}|{{{image}}}|Spruce Boat.png}}
+|imagesize=160px
 |invimage=Spruce Boat
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

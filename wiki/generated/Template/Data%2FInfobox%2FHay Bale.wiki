@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Hay Bale}}
+|image={{#if:{{{image|}}}|{{{image}}}|Hay Bale.png}}
+|imagesize=160px
 |invimage=Hay Bale
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

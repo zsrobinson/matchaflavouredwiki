@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Arapaima}}
+|image={{#if:{{{image|}}}|{{{image}}}|Arapaima.png}}
+|imagesize=160px
 |invimage=Arapaima
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

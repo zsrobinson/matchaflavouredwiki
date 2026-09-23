@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Bag of Flour}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bag of Flour.png}}
+|imagesize=160px
 |invimage=Bag of Flour
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

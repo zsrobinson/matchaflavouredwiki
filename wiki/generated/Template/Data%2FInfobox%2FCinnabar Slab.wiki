@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Cinnabar Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cinnabar Slab.png}}
+|imagesize=160px
 |invimage=Cinnabar Slab
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

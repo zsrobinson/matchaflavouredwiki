@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Tadpole}}
+|image={{#if:{{{image|}}}|{{{image}}}|Tadpole.png}}
+|imagesize=160px
 |invimage=Tadpole
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

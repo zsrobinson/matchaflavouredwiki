@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Stripped Acacia Wood}}
+|image={{#if:{{{image|}}}|{{{image}}}|Stripped Acacia Wood.png}}
+|imagesize=160px
 |invimage=Stripped Acacia Wood
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

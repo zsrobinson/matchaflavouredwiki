@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Weathered Copper Grate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Weathered Copper Grate.png}}
+|imagesize=160px
 |invimage=Weathered Copper Grate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

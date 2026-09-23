@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Block of Bamboo}}
+|image={{#if:{{{image|}}}|{{{image}}}|Block of Bamboo.png}}
+|imagesize=160px
 |invimage=Block of Bamboo
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Gray Stained Glass Pane}}
+|image={{#if:{{{image|}}}|{{{image}}}|Gray Stained Glass Pane.png}}
+|imagesize=160px
 |invimage=Gray Stained Glass Pane
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

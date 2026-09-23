@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Electric Wire}}
+|image={{#if:{{{image|}}}|{{{image}}}|Electric Wire.png}}
+|imagesize=160px
 |invimage=Electric Wire
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

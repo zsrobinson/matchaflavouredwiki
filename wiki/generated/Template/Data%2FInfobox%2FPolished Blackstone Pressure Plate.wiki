@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Polished Blackstone Pressure Plate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Polished Blackstone Pressure Plate.png}}
+|imagesize=160px
 |invimage=Polished Blackstone Pressure Plate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

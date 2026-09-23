@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Benzene}}
+|image={{#if:{{{image|}}}|{{{image}}}|Benzene.png}}
+|imagesize=160px
 |invimage=Benzene
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

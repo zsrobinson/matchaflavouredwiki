@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Resin Brick Stairs}}
+|image={{#if:{{{image|}}}|{{{image}}}|Resin Brick Stairs.png}}
+|imagesize=160px
 |invimage=Resin Brick Stairs
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

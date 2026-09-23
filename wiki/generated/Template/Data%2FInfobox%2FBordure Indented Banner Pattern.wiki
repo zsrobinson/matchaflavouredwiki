@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Bordure Indented Banner Pattern}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bordure Indented Banner Pattern.png}}
+|imagesize=160px
 |invimage=Bordure Indented Banner Pattern
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

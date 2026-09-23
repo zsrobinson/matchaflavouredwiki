@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Smithing Table}}
+|image={{#if:{{{image|}}}|{{{image}}}|Smithing Table.png}}
+|imagesize=160px
 |invimage=Smithing Table
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

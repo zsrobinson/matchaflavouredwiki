@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Shakudo Dolabra}}
+|image={{#if:{{{image|}}}|{{{image}}}|Shakudo Dolabra.png}}
+|imagesize=160px
 |invimage=Shakudo Dolabra
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

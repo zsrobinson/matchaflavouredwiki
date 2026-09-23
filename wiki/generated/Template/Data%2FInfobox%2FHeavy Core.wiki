@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Heavy Core}}
+|image={{#if:{{{image|}}}|{{{image}}}|Heavy Core.png}}
+|imagesize=160px
 |invimage=Heavy Core
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

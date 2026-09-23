@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Armadillo Scute}}
+|image={{#if:{{{image|}}}|{{{image}}}|Armadillo Scute.png}}
+|imagesize=160px
 |invimage=Armadillo Scute
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Bulk Tuff}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bulk Tuff.png}}
+|imagesize=160px
 |invimage=Bulk Tuff
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

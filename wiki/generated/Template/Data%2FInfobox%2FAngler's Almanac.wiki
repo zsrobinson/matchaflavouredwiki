@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Angler's Almanac}}
+|image={{#if:{{{image|}}}|{{{image}}}|Angler's Almanac.png}}
+|imagesize=160px
 |invimage=Angler's Almanac
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

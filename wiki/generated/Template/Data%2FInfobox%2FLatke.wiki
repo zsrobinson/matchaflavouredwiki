@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Latke}}
+|image={{#if:{{{image|}}}|{{{image}}}|Latke.png}}
+|imagesize=160px
 |invimage=Latke
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

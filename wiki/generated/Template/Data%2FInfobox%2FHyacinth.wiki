@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Hyacinth}}
+|image={{#if:{{{image|}}}|{{{image}}}|Hyacinth.png}}
+|imagesize=160px
 |invimage=Hyacinth
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

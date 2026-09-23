@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Slime Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Slime Block.png}}
+|imagesize=160px
 |invimage=Slime Block
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

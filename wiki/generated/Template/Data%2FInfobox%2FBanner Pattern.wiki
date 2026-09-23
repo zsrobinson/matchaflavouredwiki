@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Banner Pattern}}
+|image={{#if:{{{image|}}}|{{{image}}}|Banner Pattern.png}}
+|imagesize=160px
 |invimage=Banner Pattern
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

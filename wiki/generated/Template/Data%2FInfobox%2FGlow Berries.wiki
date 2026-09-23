@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Glow Berries}}
+|image={{#if:{{{image|}}}|{{{image}}}|Glow Berries.png}}
+|imagesize=160px
 |invimage=Glow Berries
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

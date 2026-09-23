@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Splash Potion}}
+|image={{#if:{{{image|}}}|{{{image}}}|Splash Potion.png}}
+|imagesize=160px
 |invimage=Splash Potion
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Birch Pressure Plate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Birch Pressure Plate.png}}
+|imagesize=160px
 |invimage=Birch Pressure Plate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

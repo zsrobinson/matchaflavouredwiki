@@ -1,0 +1,75 @@
+{{Infobox
+|title=Sacred texts
+|invimage=The Quran;The Tanakh;The Avesta;The Book of Enoch;The Lesser Key of Solomon;Paradise Lost;The Divine Comedy
+|type=Treasure item
+|renewable=No
+|stackable=Yes (64)
+}}
+'''Sacred texts''' are seven rare books found as treasure in structures. They have no use on their own; the [[Mouthpiece]] trades them for [[Crystal Heart|crystal hearts]] and [[Ofuda]], and the [[Archaeologist]] trades two of them for a map to the [[Overgrown Abbey]].
+
+The books are religious scriptures, esoteric and apocryphal texts, and two epic poems:
+{| class="wikitable"
+! Book !! Tooltip !! Rarity !! Mouthpiece trade !! Archaeologist trade
+|-
+| {{ItemLink|The Quran}} || القرآن || Rare || With 1 crystal heart: Ofuda (Prayer of The Prophet, Protection II) || –
+|-
+| {{ItemLink|The Tanakh}} || התנך || Rare || With 1 crystal heart: Ofuda (Prayer of Exodus, Loyalty III, Trailblaze III, Power II) || –
+|-
+| {{ItemLink|The Avesta}} || – || Rare || With 1 crystal heart: Ofuda (Prayer of The God-King, Efficiency II, Unbreaking I) || –
+|-
+| {{ItemLink|The Book of Enoch}} || ספר חנוך || Rare || With 1 crystal heart: Ofuda (Prayer of Samyaza, Sharpness III) || –
+|-
+| {{ItemLink|The Lesser Key of Solomon}} || by King Solomon || Epic || With 2 crystal hearts: Ofuda (Prayer of Belial, Mending) || –
+|-
+| {{ItemLink|Paradise Lost}} || by John Milton || Uncommon || 1 crystal heart || Overgrown Abbey Map
+|-
+| {{ItemLink|The Divine Comedy}} || by Dante Alighieri || Uncommon || 1 crystal heart || Overgrown Abbey Map
+|}
+The Quran, the Tanakh and the Book of Enoch show their titles in Arabic and Hebrew in the tooltip.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> All seven are books underneath, with their own names and textures, and stack to 64.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/quran.json}}</ref> See [[Mouthpiece#Ofuda]] for the trades, which the Mouthpiece offers from Apprentice to Expert level.
+
+== The Quran ==
+{{Sources|The Quran}}
+The tower chest of the [[Abbey]] always holds either the Quran or the Tanakh, with equal chance.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/tower.json}}</ref><ref>{{Cite changelog|1.12.1-alpha|quote=Abbey Tower now guarantees Quran or Tanakh}}</ref>
+
+== The Tanakh ==
+{{Sources|The Tanakh}}
+
+== The Avesta ==
+{{Sources|The Avesta}}
+
+== The Book of Enoch ==
+{{Sources|The Book of Enoch}}
+
+== The Lesser Key of Solomon ==
+{{Sources|The Lesser Key of Solomon}}
+
+== Paradise Lost ==
+{{Sources|Paradise Lost}}
+Paradise Lost and the Divine Comedy are also found in the treasure chests that can be caught by [[fishing]] (listed above as "Fishing / treasure"); see [[Fishing treasure]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/treasure.json}}</ref>
+
+== The Divine Comedy ==
+{{Sources|The Divine Comedy}}
+
+== History ==
+{{History|
+{{History line|1.10|Added the Tanakh and the Quran, with their Mouthpiece trades.
+The Avesta can be found in desert wells; its chance in desert pyramids was lowered from 50% to 33%.
+Paradise Lost and the Divine Comedy can be traded to the Archaeologist for an Overgrown Abbey map.}}
+{{History line|1.12.1-alpha|Abbey towers always contain the Quran or the Tanakh.
+Paradise Lost and the Divine Comedy are rarer in fishing buried treasure.
+The books moved to a new item format; old copies are updated when picked up.}}
+{{History line|1.12.2|The Quran and the Tanakh are found in trial chamber reward chests.
+The Ofuda trades require crystal hearts as well as the book.}}
+}}
+
+== Trivia ==
+* Splash texts added in 1.10 call the Divine Comedy "Hashem's Favourite Fan Fiction" and Paradise Lost "Satan's Favourite Fan Fiction".<ref>{{Cite changelog|1.10|quote=Ft. The Divine Comedy! Hashem's Favourite Fan Fiction!}}</ref> The 1.12.1-alpha release notes refer to the two poems as "Christian Fan fiction".
+* The developer has described plans for sacred texts to be traded for maps that lead from one structure to the next: "The Moutpiece seeks wisdom, the Archaeologist seeks knowledge."<ref>{{Source|README.md}}</ref>
+* The release notes for 1.12.2 call adding the Quran and the Tanakh to trial chamber loot a "Temp fix".
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Items]]
+[[Category:Trading]]

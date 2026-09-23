@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Turtle Shellmet}}
+|image={{#if:{{{image|}}}|{{{image}}}|Turtle Shellmet.png}}
+|imagesize=160px
 |invimage=Turtle Shellmet
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

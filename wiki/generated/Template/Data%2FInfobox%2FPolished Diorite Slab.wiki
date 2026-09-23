@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Polished Diorite Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Polished Diorite Slab.png}}
+|imagesize=160px
 |invimage=Polished Diorite Slab
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Lily of the Valley}}
+|image={{#if:{{{image|}}}|{{{image}}}|Lily of the Valley.png}}
+|imagesize=160px
 |invimage=Lily of the Valley
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

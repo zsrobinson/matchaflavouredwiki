@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Honey Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Honey Block.png}}
+|imagesize=160px
 |invimage=Honey Block
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

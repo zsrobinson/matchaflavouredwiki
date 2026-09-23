@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Polished Deepslate Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Polished Deepslate Slab.png}}
+|imagesize=160px
 |invimage=Polished Deepslate Slab
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

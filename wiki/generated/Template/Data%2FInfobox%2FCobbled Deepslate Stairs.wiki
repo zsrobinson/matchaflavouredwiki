@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Cobbled Deepslate Stairs}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cobbled Deepslate Stairs.png}}
+|imagesize=160px
 |invimage=Cobbled Deepslate Stairs
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Beacon}}
+|image={{#if:{{{image|}}}|{{{image}}}|Beacon.png}}
+|imagesize=160px
 |invimage=Beacon
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Bone Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bone Block.png}}
+|imagesize=160px
 |invimage=Bone Block
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

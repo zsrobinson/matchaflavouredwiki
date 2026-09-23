@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Copper Eye Grate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Copper Eye Grate.png}}
+|imagesize=160px
 |invimage=Copper Eye Grate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

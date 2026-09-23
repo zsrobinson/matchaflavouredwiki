@@ -1,2 +1,2 @@
-<includeonly><span class="item"><span class="sprite-inline">[[File:{{{1}}}.png|16px|link={{{1}}}]]</span>&nbsp;[[{{{1}}}|{{{2|{{{1}}}}}}]]</span></includeonly><noinclude>An icon link inside a navbox.
+<includeonly><li><span class="nowrap"><span class="sprite-file">[[File:{{{1}}}.png|16x16px|link={{{1}}}|class=pixel-image]]</span>[[{{{1}}}|<span class="sprite-text">{{{2|{{{1}}}}}}</span>]]</span></li></includeonly><noinclude>An icon link inside a {{tl|Navbox}} list (minecraft.wiki markup).
 [[Category:Navbox templates]]</noinclude>

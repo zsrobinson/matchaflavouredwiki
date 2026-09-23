@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Chocolate Chip Cookie}}
+|image={{#if:{{{image|}}}|{{{image}}}|Chocolate Chip Cookie.png}}
+|imagesize=160px
 |invimage=Chocolate Chip Cookie
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

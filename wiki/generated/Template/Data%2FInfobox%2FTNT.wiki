@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|TNT}}
+|image={{#if:{{{image|}}}|{{{image}}}|TNT.png}}
+|imagesize=160px
 |invimage=TNT
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

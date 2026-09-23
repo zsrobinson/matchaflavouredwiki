@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Sticky Piston}}
+|image={{#if:{{{image|}}}|{{{image}}}|Sticky Piston.png}}
+|imagesize=160px
 |invimage=Sticky Piston
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

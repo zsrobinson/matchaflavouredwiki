@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Diamond Spear}}
+|image={{#if:{{{image|}}}|{{{image}}}|Diamond Spear.png}}
+|imagesize=160px
 |invimage=Diamond Spear
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

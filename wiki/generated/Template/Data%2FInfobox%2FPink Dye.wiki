@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Pink Dye}}
+|image={{#if:{{{image|}}}|{{{image}}}|Pink Dye.png}}
+|imagesize=160px
 |invimage=Pink Dye
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

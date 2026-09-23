@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Ender Chest}}
+|image={{#if:{{{image|}}}|{{{image}}}|Ender Chest.png}}
+|imagesize=160px
 |invimage=Ender Chest
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

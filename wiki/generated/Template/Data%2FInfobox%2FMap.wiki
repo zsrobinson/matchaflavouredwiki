@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Map}}
+|image={{#if:{{{image|}}}|{{{image}}}|Map.png}}
+|imagesize=160px
 |invimage=Map
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

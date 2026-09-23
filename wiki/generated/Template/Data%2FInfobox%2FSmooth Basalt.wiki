@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Smooth Basalt}}
+|image={{#if:{{{image|}}}|{{{image}}}|Smooth Basalt.png}}
+|imagesize=160px
 |invimage=Smooth Basalt
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

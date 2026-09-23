@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Music Disc}}
+|image={{#if:{{{image|}}}|{{{image}}}|Music Disc.png}}
+|imagesize=160px
 |invimage=Music Disc
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

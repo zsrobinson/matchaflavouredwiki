@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Compass}}
+|image={{#if:{{{image|}}}|{{{image}}}|Compass.png}}
+|imagesize=160px
 |invimage=Compass
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

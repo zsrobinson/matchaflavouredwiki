@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Paneer Makhani}}
+|image={{#if:{{{image|}}}|{{{image}}}|Paneer Makhani.png}}
+|imagesize=160px
 |invimage=Paneer Makhani
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

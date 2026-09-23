@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Sculk Vein}}
+|image={{#if:{{{image|}}}|{{{image}}}|Sculk Vein.png}}
+|imagesize=160px
 |invimage=Sculk Vein
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

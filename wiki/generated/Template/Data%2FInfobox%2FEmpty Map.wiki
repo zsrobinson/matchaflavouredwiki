@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Empty Map}}
+|image={{#if:{{{image|}}}|{{{image}}}|Empty Map.png}}
+|imagesize=160px
 |invimage=Empty Map
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

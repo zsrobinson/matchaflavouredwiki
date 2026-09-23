@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Paradise Lost}}
+|image={{#if:{{{image|}}}|{{{image}}}|Paradise Lost.png}}
+|imagesize=160px
 |invimage=Paradise Lost
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

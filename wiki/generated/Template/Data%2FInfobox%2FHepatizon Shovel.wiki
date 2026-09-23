@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Hepatizon Shovel}}
+|image={{#if:{{{image|}}}|{{{image}}}|Hepatizon Shovel.png}}
+|imagesize=160px
 |invimage=Hepatizon Shovel
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

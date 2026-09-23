@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Dried Kelp Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dried Kelp Block.png}}
+|imagesize=160px
 |invimage=Dried Kelp Block
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

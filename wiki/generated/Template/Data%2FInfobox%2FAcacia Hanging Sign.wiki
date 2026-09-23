@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Acacia Hanging Sign}}
+|image={{#if:{{{image|}}}|{{{image}}}|Acacia Hanging Sign.png}}
+|imagesize=160px
 |invimage=Acacia Hanging Sign
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

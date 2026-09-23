@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Clay Ball}}
+|image={{#if:{{{image|}}}|{{{image}}}|Clay Ball.png}}
+|imagesize=160px
 |invimage=Clay Ball
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

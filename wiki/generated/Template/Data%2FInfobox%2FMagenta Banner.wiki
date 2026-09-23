@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Magenta Banner}}
+|image={{#if:{{{image|}}}|{{{image}}}|Magenta Banner.png}}
+|imagesize=160px
 |invimage=Magenta Banner
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

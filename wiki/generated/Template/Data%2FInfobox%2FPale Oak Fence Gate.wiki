@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Pale Oak Fence Gate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Pale Oak Fence Gate.png}}
+|imagesize=160px
 |invimage=Pale Oak Fence Gate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

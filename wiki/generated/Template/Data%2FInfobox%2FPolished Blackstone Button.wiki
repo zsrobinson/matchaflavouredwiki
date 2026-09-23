@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Polished Blackstone Button}}
+|image={{#if:{{{image|}}}|{{{image}}}|Polished Blackstone Button.png}}
+|imagesize=160px
 |invimage=Polished Blackstone Button
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|The Avesta}}
+|image={{#if:{{{image|}}}|{{{image}}}|The Avesta.png}}
+|imagesize=160px
 |invimage=The Avesta
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

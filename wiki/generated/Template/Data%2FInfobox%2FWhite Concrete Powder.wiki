@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|White Concrete Powder}}
+|image={{#if:{{{image|}}}|{{{image}}}|White Concrete Powder.png}}
+|imagesize=160px
 |invimage=White Concrete Powder
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

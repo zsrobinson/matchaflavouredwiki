@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Sculk Shrieker}}
+|image={{#if:{{{image|}}}|{{{image}}}|Sculk Shrieker.png}}
+|imagesize=160px
 |invimage=Sculk Shrieker
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

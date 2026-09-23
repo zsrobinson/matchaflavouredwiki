@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Polished Tuff Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Polished Tuff Slab.png}}
+|imagesize=160px
 |invimage=Polished Tuff Slab
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

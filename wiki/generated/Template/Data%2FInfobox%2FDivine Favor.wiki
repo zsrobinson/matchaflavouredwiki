@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Divine Favor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Divine Favor.png}}
+|imagesize=160px
 |invimage=Divine Favor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

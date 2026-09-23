@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Creaking Heart}}
+|image={{#if:{{{image|}}}|{{{image}}}|Creaking Heart.png}}
+|imagesize=160px
 |invimage=Creaking Heart
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

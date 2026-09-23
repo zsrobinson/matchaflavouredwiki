@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Explorer Pottery Sherd}}
+|image={{#if:{{{image|}}}|{{{image}}}|Explorer Pottery Sherd.png}}
+|imagesize=160px
 |invimage=Explorer Pottery Sherd
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

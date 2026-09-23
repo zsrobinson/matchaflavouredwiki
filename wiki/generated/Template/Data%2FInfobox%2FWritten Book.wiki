@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Written Book}}
+|image={{#if:{{{image|}}}|{{{image}}}|Written Book.png}}
+|imagesize=160px
 |invimage=Written Book
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

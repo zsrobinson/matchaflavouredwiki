@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Sun-dried Tomatoes}}
+|image={{#if:{{{image|}}}|{{{image}}}|Sun-dried Tomatoes.png}}
+|imagesize=160px
 |invimage=Sun-dried Tomatoes
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

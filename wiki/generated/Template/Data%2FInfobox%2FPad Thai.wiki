@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Pad Thai}}
+|image={{#if:{{{image|}}}|{{{image}}}|Pad Thai.png}}
+|imagesize=160px
 |invimage=Pad Thai
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Spider Eye}}
+|image={{#if:{{{image|}}}|{{{image}}}|Spider Eye.png}}
+|imagesize=160px
 |invimage=Spider Eye
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Cherry Pressure Plate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cherry Pressure Plate.png}}
+|imagesize=160px
 |invimage=Cherry Pressure Plate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Diamond Nautilus Armor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Diamond Nautilus Armor.png}}
+|imagesize=160px
 |invimage=Diamond Nautilus Armor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

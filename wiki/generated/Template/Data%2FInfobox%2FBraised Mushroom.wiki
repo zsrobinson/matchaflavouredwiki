@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Braised Mushroom}}
+|image={{#if:{{{image|}}}|{{{image}}}|Braised Mushroom.png}}
+|imagesize=160px
 |invimage=Braised Mushroom
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

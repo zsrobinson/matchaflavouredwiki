@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Warped Pressure Plate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Warped Pressure Plate.png}}
+|imagesize=160px
 |invimage=Warped Pressure Plate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

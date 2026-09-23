@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Obol}}
+|image={{#if:{{{image|}}}|{{{image}}}|Obol.png}}
+|imagesize=160px
 |invimage=Obol
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

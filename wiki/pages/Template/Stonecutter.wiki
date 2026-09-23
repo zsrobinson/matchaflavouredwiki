@@ -1,3 +1,3 @@
-<includeonly><div class="mcui-panel"><span class="mcui-title">Stonecutter</span><span class="mcui-cell">{{Slot|{{{Input|}}}}}</span><span class="mcui-cell mcui-arrow-img">[[File:Grid burn_progress.png|44px|link=]]</span><span class="mcui-cell mcui-output">{{Slot|{{{Output|}}}}}</span></div></includeonly><noinclude>
+<includeonly>{{#invoke:UI|stonecutter|Input={{{Input|}}}|Output={{{Output|}}}}}</includeonly><noinclude>
 {{Stonecutter|Input=Limestone|Output=Stone Bricks}}
 [[Category:Templates]]</noinclude>

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Acacia Trapdoor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Acacia Trapdoor.png}}
+|imagesize=160px
 |invimage=Acacia Trapdoor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

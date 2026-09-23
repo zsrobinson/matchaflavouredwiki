@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Striped Perch}}
+|image={{#if:{{{image|}}}|{{{image}}}|Striped Perch.png}}
+|imagesize=160px
 |invimage=Striped Perch
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

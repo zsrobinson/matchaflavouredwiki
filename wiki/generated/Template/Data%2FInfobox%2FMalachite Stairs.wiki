@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Malachite Stairs}}
+|image={{#if:{{{image|}}}|{{{image}}}|Malachite Stairs.png}}
+|imagesize=160px
 |invimage=Malachite Stairs
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Conduit}}
+|image={{#if:{{{image|}}}|{{{image}}}|Conduit.png}}
+|imagesize=160px
 |invimage=Conduit
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

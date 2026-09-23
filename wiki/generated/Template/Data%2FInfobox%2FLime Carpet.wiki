@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Lime Carpet}}
+|image={{#if:{{{image|}}}|{{{image}}}|Lime Carpet.png}}
+|imagesize=160px
 |invimage=Lime Carpet
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

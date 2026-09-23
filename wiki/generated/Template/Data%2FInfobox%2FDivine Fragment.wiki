@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Divine Fragment}}
+|image={{#if:{{{image|}}}|{{{image}}}|Divine Fragment.png}}
+|imagesize=160px
 |invimage=Divine Fragment
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

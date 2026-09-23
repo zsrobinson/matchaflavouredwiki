@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Honied French Toast}}
+|image={{#if:{{{image|}}}|{{{image}}}|Honied French Toast.png}}
+|imagesize=160px
 |invimage=Honied French Toast
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

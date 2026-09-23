@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Hopper}}
+|image={{#if:{{{image|}}}|{{{image}}}|Hopper.png}}
+|imagesize=160px
 |invimage=Hopper
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

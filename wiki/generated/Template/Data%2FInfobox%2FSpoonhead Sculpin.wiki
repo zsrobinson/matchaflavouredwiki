@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Spoonhead Sculpin}}
+|image={{#if:{{{image|}}}|{{{image}}}|Spoonhead Sculpin.png}}
+|imagesize=160px
 |invimage=Spoonhead Sculpin
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

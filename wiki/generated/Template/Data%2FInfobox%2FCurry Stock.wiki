@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Curry Stock}}
+|image={{#if:{{{image|}}}|{{{image}}}|Curry Stock.png}}
+|imagesize=160px
 |invimage=Curry Stock
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Diamond Helmet}}
+|image={{#if:{{{image|}}}|{{{image}}}|Diamond Helmet.png}}
+|imagesize=160px
 |invimage=Diamond Helmet
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

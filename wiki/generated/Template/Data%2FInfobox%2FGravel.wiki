@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Gravel}}
+|image={{#if:{{{image|}}}|{{{image}}}|Gravel.png}}
+|imagesize=160px
 |invimage=Gravel
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

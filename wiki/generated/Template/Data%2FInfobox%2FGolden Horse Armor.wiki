@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Golden Horse Armor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Golden Horse Armor.png}}
+|imagesize=160px
 |invimage=Golden Horse Armor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

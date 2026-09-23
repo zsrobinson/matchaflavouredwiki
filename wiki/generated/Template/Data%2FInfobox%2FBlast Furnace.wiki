@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Blast Furnace}}
+|image={{#if:{{{image|}}}|{{{image}}}|Blast Furnace.png}}
+|imagesize=160px
 |invimage=Blast Furnace
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

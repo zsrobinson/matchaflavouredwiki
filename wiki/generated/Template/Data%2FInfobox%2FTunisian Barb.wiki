@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Tunisian Barb}}
+|image={{#if:{{{image|}}}|{{{image}}}|Tunisian Barb.png}}
+|imagesize=160px
 |invimage=Tunisian Barb
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Freshwater Puffer}}
+|image={{#if:{{{image|}}}|{{{image}}}|Freshwater Puffer.png}}
+|imagesize=160px
 |invimage=Freshwater Puffer
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

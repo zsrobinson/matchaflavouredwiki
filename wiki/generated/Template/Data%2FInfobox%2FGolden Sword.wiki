@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Golden Sword}}
+|image={{#if:{{{image|}}}|{{{image}}}|Golden Sword.png}}
+|imagesize=160px
 |invimage=Golden Sword
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

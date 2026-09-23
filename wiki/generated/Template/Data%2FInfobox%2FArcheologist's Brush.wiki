@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Archeologist's Brush}}
+|image={{#if:{{{image|}}}|{{{image}}}|Archeologist's Brush.png}}
+|imagesize=160px
 |invimage=Archeologist's Brush
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

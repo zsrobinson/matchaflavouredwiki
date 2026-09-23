@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Seitan}}
+|image={{#if:{{{image|}}}|{{{image}}}|Seitan.png}}
+|imagesize=160px
 |invimage=Seitan
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Adamant Dolabra}}
+|image={{#if:{{{image|}}}|{{{image}}}|Adamant Dolabra.png}}
+|imagesize=160px
 |invimage=Adamant Dolabra
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

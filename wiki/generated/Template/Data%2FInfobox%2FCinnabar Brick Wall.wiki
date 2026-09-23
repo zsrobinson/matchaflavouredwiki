@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Cinnabar Brick Wall}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cinnabar Brick Wall.png}}
+|imagesize=160px
 |invimage=Cinnabar Brick Wall
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Gray Terracotta}}
+|image={{#if:{{{image|}}}|{{{image}}}|Gray Terracotta.png}}
+|imagesize=160px
 |invimage=Gray Terracotta
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

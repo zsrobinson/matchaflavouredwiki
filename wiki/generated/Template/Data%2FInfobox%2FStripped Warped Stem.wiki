@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Stripped Warped Stem}}
+|image={{#if:{{{image|}}}|{{{image}}}|Stripped Warped Stem.png}}
+|imagesize=160px
 |invimage=Stripped Warped Stem
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Totem of Undying}}
+|image={{#if:{{{image|}}}|{{{image}}}|Totem of Undying.png}}
+|imagesize=160px
 |invimage=Totem of Undying
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Magenta Stained Glass}}
+|image={{#if:{{{image|}}}|{{{image}}}|Magenta Stained Glass.png}}
+|imagesize=160px
 |invimage=Magenta Stained Glass
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

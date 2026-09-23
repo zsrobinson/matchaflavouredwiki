@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Magma Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Magma Block.png}}
+|imagesize=160px
 |invimage=Magma Block
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

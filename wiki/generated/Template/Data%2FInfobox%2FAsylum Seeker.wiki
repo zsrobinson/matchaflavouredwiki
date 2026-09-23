@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Asylum Seeker}}
+|image={{#if:{{{image|}}}|{{{image}}}|Asylum Seeker.png}}
+|imagesize=160px
 |invimage=Asylum Seeker
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

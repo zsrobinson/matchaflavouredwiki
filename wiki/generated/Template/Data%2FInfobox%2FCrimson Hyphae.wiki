@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Crimson Hyphae}}
+|image={{#if:{{{image|}}}|{{{image}}}|Crimson Hyphae.png}}
+|imagesize=160px
 |invimage=Crimson Hyphae
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

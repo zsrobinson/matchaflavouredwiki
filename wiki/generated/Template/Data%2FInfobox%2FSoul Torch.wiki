@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Soul Torch}}
+|image={{#if:{{{image|}}}|{{{image}}}|Soul Torch.png}}
+|imagesize=160px
 |invimage=Soul Torch
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

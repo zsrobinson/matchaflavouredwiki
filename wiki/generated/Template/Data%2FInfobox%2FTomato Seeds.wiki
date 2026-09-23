@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Tomato Seeds}}
+|image={{#if:{{{image|}}}|{{{image}}}|Tomato Seeds.png}}
+|imagesize=160px
 |invimage=Tomato Seeds
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

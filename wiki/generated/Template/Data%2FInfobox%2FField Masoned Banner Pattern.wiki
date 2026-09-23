@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Field Masoned Banner Pattern}}
+|image={{#if:{{{image|}}}|{{{image}}}|Field Masoned Banner Pattern.png}}
+|imagesize=160px
 |invimage=Field Masoned Banner Pattern
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

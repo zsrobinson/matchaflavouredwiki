@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Acacia Pressure Plate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Acacia Pressure Plate.png}}
+|imagesize=160px
 |invimage=Acacia Pressure Plate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

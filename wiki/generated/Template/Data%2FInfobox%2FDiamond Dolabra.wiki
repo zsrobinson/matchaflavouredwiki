@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Diamond Dolabra}}
+|image={{#if:{{{image|}}}|{{{image}}}|Diamond Dolabra.png}}
+|imagesize=160px
 |invimage=Diamond Dolabra
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

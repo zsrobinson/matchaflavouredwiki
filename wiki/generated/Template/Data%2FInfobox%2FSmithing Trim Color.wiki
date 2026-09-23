@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Smithing Trim Color}}
+|image={{#if:{{{image|}}}|{{{image}}}|Smithing Trim Color.png}}
+|imagesize=160px
 |invimage=Smithing Trim Color
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

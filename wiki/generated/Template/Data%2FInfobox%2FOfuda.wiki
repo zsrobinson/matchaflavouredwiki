@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Ofuda}}
+|image={{#if:{{{image|}}}|{{{image}}}|Ofuda.png}}
+|imagesize=160px
 |invimage=Ofuda
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

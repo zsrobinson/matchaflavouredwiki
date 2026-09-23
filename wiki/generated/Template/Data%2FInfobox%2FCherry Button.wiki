@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Cherry Button}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cherry Button.png}}
+|imagesize=160px
 |invimage=Cherry Button
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

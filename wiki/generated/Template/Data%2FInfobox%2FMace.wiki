@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Mace}}
+|image={{#if:{{{image|}}}|{{{image}}}|Mace.png}}
+|imagesize=160px
 |invimage=Mace
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

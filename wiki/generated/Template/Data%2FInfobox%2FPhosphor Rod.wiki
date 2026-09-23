@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Phosphor Rod}}
+|image={{#if:{{{image|}}}|{{{image}}}|Phosphor Rod.png}}
+|imagesize=160px
 |invimage=Phosphor Rod
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

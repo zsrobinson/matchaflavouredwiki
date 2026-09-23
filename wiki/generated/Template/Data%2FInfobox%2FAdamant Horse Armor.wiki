@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Adamant Horse Armor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Adamant Horse Armor.png}}
+|imagesize=160px
 |invimage=Adamant Horse Armor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

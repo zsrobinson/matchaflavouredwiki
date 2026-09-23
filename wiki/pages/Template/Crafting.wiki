@@ -1,5 +1,5 @@
-<includeonly><div class="mcui-panel" style="padding:0;border:0;box-shadow:none;background:none">{{Crafting Table|A1={{{A1|}}}|B1={{{B1|}}}|C1={{{C1|}}}|A2={{{A2|}}}|B2={{{B2|}}}|C2={{{C2|}}}|A3={{{A3|}}}|B3={{{B3|}}}|C3={{{C3|}}}|Output={{{Output|}}}|shapeless={{{shapeless|}}}}}{{#if:{{{note|}}}|<span class="mcui-note">{{{note}}}</span>}}</div></includeonly><noinclude>
-Wrapper around [[Template:Crafting Table]] (from the Minecraft Wiki's Module:UI) that can sit side by side with other interfaces.
+<includeonly><div style="display:inline-block;vertical-align:top;margin:0 0.5em 0.5em 0">{{Crafting Table|A1={{{A1|}}}|B1={{{B1|}}}|C1={{{C1|}}}|A2={{{A2|}}}|B2={{{B2|}}}|C2={{{C2|}}}|A3={{{A3|}}}|B3={{{B3|}}}|C3={{{C3|}}}|Output={{{Output|}}}|shapeless={{{shapeless|}}}}}{{#if:{{{note|}}}|<div style="font-size:90%">{{{note}}}</div>}}</div></includeonly><noinclude>
+Crafting table interface ([[Template:Crafting Table]], minecraft.wiki's Module:UI).
 
 {{Crafting|A1=Diamond|B1=Diamond|C1=Diamond|A2=Diamond|B2=Divine Fragment|C2=Diamond|A3=Diamond|B3=Diamond|C3=Diamond|Output=Crystal Heart}}
 [[Category:Templates]]</noinclude>

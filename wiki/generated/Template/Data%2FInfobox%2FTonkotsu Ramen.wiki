@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Tonkotsu Ramen}}
+|image={{#if:{{{image|}}}|{{{image}}}|Tonkotsu Ramen.png}}
+|imagesize=160px
 |invimage=Tonkotsu Ramen
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

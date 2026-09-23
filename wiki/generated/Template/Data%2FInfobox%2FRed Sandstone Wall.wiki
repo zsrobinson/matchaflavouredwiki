@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Red Sandstone Wall}}
+|image={{#if:{{{image|}}}|{{{image}}}|Red Sandstone Wall.png}}
+|imagesize=160px
 |invimage=Red Sandstone Wall
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

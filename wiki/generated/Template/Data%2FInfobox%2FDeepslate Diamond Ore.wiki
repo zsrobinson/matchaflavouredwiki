@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Deepslate Diamond Ore}}
+|image={{#if:{{{image|}}}|{{{image}}}|Deepslate Diamond Ore.png}}
+|imagesize=160px
 |invimage=Deepslate Diamond Ore
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

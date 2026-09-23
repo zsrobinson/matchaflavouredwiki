@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Electric Repeater}}
+|image={{#if:{{{image|}}}|{{{image}}}|Electric Repeater.png}}
+|imagesize=160px
 |invimage=Electric Repeater
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

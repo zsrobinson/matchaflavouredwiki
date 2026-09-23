@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Respawn Anchor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Respawn Anchor.png}}
+|imagesize=160px
 |invimage=Respawn Anchor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

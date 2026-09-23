@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Malachite Bricks}}
+|image={{#if:{{{image|}}}|{{{image}}}|Malachite Bricks.png}}
+|imagesize=160px
 |invimage=Malachite Bricks
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

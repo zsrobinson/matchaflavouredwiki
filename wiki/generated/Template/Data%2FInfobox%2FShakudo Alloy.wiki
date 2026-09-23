@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Shakudo Alloy}}
+|image={{#if:{{{image|}}}|{{{image}}}|Shakudo Alloy.png}}
+|imagesize=160px
 |invimage=Shakudo Alloy
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

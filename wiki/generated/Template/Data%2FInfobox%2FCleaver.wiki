@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Cleaver}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cleaver.png}}
+|imagesize=160px
 |invimage=Cleaver
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

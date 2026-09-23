@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Weathered Copper Bulb}}
+|image={{#if:{{{image|}}}|{{{image}}}|Weathered Copper Bulb.png}}
+|imagesize=160px
 |invimage=Weathered Copper Bulb
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Painted Moray}}
+|image={{#if:{{{image|}}}|{{{image}}}|Painted Moray.png}}
+|imagesize=160px
 |invimage=Painted Moray
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

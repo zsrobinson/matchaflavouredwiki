@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Warped Shelf}}
+|image={{#if:{{{image|}}}|{{{image}}}|Warped Shelf.png}}
+|imagesize=160px
 |invimage=Warped Shelf
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

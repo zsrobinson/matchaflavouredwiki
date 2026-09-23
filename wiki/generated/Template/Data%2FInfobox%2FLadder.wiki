@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Ladder}}
+|image={{#if:{{{image|}}}|{{{image}}}|Ladder.png}}
+|imagesize=160px
 |invimage=Ladder
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

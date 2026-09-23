@@ -1,0 +1,87 @@
+{{Vanilla|Explorer Map}}
+{{Infobox
+|title=Explorer maps
+|invimage=Map
+|type=Map
+|renewable=Yes
+}}
+'''Explorer maps''' are filled maps that mark the location of a structure. In Matcha Flavoured they are sold by the [[Archaeologist]] and the [[Wandering Trader]] for a single [[Obol]] each, with no compass needed. The pack adds maps to many more structures than vanilla ''Minecraft'', including its own [[Overgrown Abbey]] and [[Papal Outpost]].
+
+== Obtaining ==
+=== Archaeologist ===
+The [[Archaeologist]] (the renamed cartographer) sells 12 maps across its five levels. Each map trade can be used 999 times.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/mineshaft.json}}</ref>
+{| class="wikitable sortable"
+! Map !! Leads to !! Level !! Price !! Map marker
+|-
+| Mineshaft Map || [[Mineshaft]] || Novice || 1 obol || Red X
+|-
+| Witch Hut Map || Swamp hut || Novice || 1 obol || Swamp hut
+|-
+| Papal Outpost Map || [[Papal Outpost]] || Novice || 1 obol || Red X
+|-
+| Shipwreck Map || [[Shipwreck]] || Novice || 1 obol || Red X
+|-
+| Desert Temple Map || [[Desert Pyramid]] || Apprentice || 1 obol || Desert village
+|-
+| Jungle Temple Map || [[Jungle Pyramid]] || Apprentice || 1 obol || Jungle temple
+|-
+| Trail Ruins Map || Trail ruins || Apprentice || 1 obol || Plains village
+|-
+| Ocean Monument Map || Ocean monument || Journeyman || 1 obol || Ocean monument
+|-
+| Trial Chamber Map || [[Trial Chambers]] || Journeyman || 1 obol || Trial chambers
+|-
+| Warm Ocean Ruin Map || Warm [[Ocean ruins|ocean ruin]] || Journeyman || 1 obol || Red X
+|-
+| Overgrown Abbey Map || [[Overgrown Abbey]] || Journeyman || [[Paradise Lost]] or [[The Divine Comedy]] || Red X
+|-
+| Ancient City Map || [[Ancient City]] || Expert || 1 obol || Red X
+|-
+| Mansion Map || [[Woodland Mansion]] || Master || 1 obol || Woodland mansion
+|}
+The Papal Outpost map searches for pillager outposts, because the papal outpost generates in their place.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/structure/on_papal_outpost_explorer_maps.json}}</ref> The Overgrown Abbey map is the only one bought with a book instead of an obol; there are two separate trades, one for each book.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_paradise_lost.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_divine_comedy.json}}</ref> The Papal Outpost and Overgrown Abbey maps have their own item textures.
+
+=== Wandering Trader ===
+A [[Wandering Trader]] offers 3 of these 6 maps, each for 1 obol and each usable once:<ref>{{Source|MF_datapack/data/matcha/tags/villager_trade/wandering_trader/maps.json}}</ref>
+{| class="wikitable"
+! Map !! Leads to !! Map marker
+|-
+| Abandoned Desert Village Map || Desert [[Abandoned village|village]] || Desert village
+|-
+| Abandoned Plains Village Map || Plains village || Plains village
+|-
+| Abandoned Savanna Village Map || Savanna village || Savanna village
+|-
+| Abandoned Snowy Village Map || Snowy village || Snowy village
+|-
+| Abandoned Taiga Village Map || Taiga village || Taiga village
+|-
+| Witch Hut Map || Swamp hut || Swamp hut
+|}
+
+=== Other maps ===
+Buried treasure maps are found in shipwreck map chests and ocean ruin chests, as in vanilla ''Minecraft''; see [[Buried treasure]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_map.json}}</ref>
+
+== Behavior ==
+When the villager reaches the level that offers a map, the game searches for the nearest structure of that type within 100 chunks. If one is found, the map is drawn with the structure's marker; if not, that trade is left out of the villager's offers.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/4/ancient_city.json}}</ref> Every copy bought from the same villager leads to the same structure.
+
+Compared with vanilla, where a cartographer's explorer maps cost 8 to 14 emeralds plus a compass and can be bought a few times before restocking, every Matcha Flavoured map costs a single obol.
+
+== History ==
+{{History|
+{{History line|1.10|The Archaeologist sells Overgrown Abbey and Papal Outpost maps, with new map textures.
+The names of all explorer maps were updated.}}
+}}
+
+== Trivia ==
+* The Desert Temple Map uses the desert village marker, and the Trail Ruins Map uses the plains village marker.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/2/trail_ruin.json}}</ref>
+* The language file also contains the name "Archive Map", for the planned [[Archive]], but no trade or loot table gives one.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+* The developer has described a plan in which sacred texts are traded for maps that lead from one structure to the next, with the Archaeologist buying sacred texts; the Overgrown Abbey map is the first trade of this kind.<ref>{{Source|README.md}}</ref>
+* The developer's to-do list includes making map trades require a secondary item, such as an empty map.<ref>{{Source|changelog.md}}</ref>
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Items]]
+[[Category:Trading]]

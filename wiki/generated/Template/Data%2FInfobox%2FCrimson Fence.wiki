@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Crimson Fence}}
+|image={{#if:{{{image|}}}|{{{image}}}|Crimson Fence.png}}
+|imagesize=160px
 |invimage=Crimson Fence
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

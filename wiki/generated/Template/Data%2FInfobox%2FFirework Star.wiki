@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Firework Star}}
+|image={{#if:{{{image|}}}|{{{image}}}|Firework Star.png}}
+|imagesize=160px
 |invimage=Firework Star
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

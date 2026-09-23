@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Warped Pizza}}
+|image={{#if:{{{image|}}}|{{{image}}}|Warped Pizza.png}}
+|imagesize=160px
 |invimage=Warped Pizza
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

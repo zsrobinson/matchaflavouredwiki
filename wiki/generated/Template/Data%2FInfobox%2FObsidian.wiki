@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Obsidian}}
+|image={{#if:{{{image|}}}|{{{image}}}|Obsidian.png}}
+|imagesize=160px
 |invimage=Obsidian
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Crimson Stroganoff}}
+|image={{#if:{{{image|}}}|{{{image}}}|Crimson Stroganoff.png}}
+|imagesize=160px
 |invimage=Crimson Stroganoff
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

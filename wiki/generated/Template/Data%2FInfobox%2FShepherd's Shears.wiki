@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Shepherd's Shears}}
+|image={{#if:{{{image|}}}|{{{image}}}|Shepherd's Shears.png}}
+|imagesize=160px
 |invimage=Shepherd's Shears
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

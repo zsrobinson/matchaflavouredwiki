@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Spectral Arrow}}
+|image={{#if:{{{image|}}}|{{{image}}}|Spectral Arrow.png}}
+|imagesize=160px
 |invimage=Spectral Arrow
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

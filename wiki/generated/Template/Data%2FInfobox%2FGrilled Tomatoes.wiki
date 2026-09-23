@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Grilled Tomatoes}}
+|image={{#if:{{{image|}}}|{{{image}}}|Grilled Tomatoes.png}}
+|imagesize=160px
 |invimage=Grilled Tomatoes
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

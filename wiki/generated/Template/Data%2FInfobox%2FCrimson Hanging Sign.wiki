@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Crimson Hanging Sign}}
+|image={{#if:{{{image|}}}|{{{image}}}|Crimson Hanging Sign.png}}
+|imagesize=160px
 |invimage=Crimson Hanging Sign
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

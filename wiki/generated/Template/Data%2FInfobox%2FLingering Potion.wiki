@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Lingering Potion}}
+|image={{#if:{{{image|}}}|{{{image}}}|Lingering Potion.png}}
+|imagesize=160px
 |invimage=Lingering Potion
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

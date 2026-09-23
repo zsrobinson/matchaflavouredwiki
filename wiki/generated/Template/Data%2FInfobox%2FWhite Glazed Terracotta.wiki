@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|White Glazed Terracotta}}
+|image={{#if:{{{image|}}}|{{{image}}}|White Glazed Terracotta.png}}
+|imagesize=160px
 |invimage=White Glazed Terracotta
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

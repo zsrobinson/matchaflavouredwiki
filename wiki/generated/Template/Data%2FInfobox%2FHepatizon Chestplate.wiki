@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Hepatizon Chestplate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Hepatizon Chestplate.png}}
+|imagesize=160px
 |invimage=Hepatizon Chestplate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

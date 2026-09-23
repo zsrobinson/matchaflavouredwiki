@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Steel Axe}}
+|image={{#if:{{{image|}}}|{{{image}}}|Steel Axe.png}}
+|imagesize=160px
 |invimage=Steel Axe
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

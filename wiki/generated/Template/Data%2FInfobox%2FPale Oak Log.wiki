@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Pale Oak Log}}
+|image={{#if:{{{image|}}}|{{{image}}}|Pale Oak Log.png}}
+|imagesize=160px
 |invimage=Pale Oak Log
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

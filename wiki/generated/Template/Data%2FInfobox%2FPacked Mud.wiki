@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Packed Mud}}
+|image={{#if:{{{image|}}}|{{{image}}}|Packed Mud.png}}
+|imagesize=160px
 |invimage=Packed Mud
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

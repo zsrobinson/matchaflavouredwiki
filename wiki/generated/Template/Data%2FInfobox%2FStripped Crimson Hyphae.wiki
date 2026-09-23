@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Stripped Crimson Hyphae}}
+|image={{#if:{{{image|}}}|{{{image}}}|Stripped Crimson Hyphae.png}}
+|imagesize=160px
 |invimage=Stripped Crimson Hyphae
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

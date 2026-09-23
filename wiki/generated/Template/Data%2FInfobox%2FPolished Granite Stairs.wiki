@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Polished Granite Stairs}}
+|image={{#if:{{{image|}}}|{{{image}}}|Polished Granite Stairs.png}}
+|imagesize=160px
 |invimage=Polished Granite Stairs
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

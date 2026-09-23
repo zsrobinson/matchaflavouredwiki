@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Baked Pumpkin}}
+|image={{#if:{{{image|}}}|{{{image}}}|Baked Pumpkin.png}}
+|imagesize=160px
 |invimage=Baked Pumpkin
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

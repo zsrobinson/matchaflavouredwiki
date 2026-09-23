@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Sculk Sensor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Sculk Sensor.png}}
+|imagesize=160px
 |invimage=Sculk Sensor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

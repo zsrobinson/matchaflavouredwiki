@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Copper Horse Armor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Copper Horse Armor.png}}
+|imagesize=160px
 |invimage=Copper Horse Armor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

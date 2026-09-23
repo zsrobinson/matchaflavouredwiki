@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Lily Pad}}
+|image={{#if:{{{image|}}}|{{{image}}}|Lily Pad.png}}
+|imagesize=160px
 |invimage=Lily Pad
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

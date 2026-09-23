@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Chiseled Cinnabar}}
+|image={{#if:{{{image|}}}|{{{image}}}|Chiseled Cinnabar.png}}
+|imagesize=160px
 |invimage=Chiseled Cinnabar
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

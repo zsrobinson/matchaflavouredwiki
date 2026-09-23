@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Adamant Nautilus Armor}}
+|image={{#if:{{{image|}}}|{{{image}}}|Adamant Nautilus Armor.png}}
+|imagesize=160px
 |invimage=Adamant Nautilus Armor
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

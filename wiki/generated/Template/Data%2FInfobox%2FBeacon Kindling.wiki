@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Beacon Kindling}}
+|image={{#if:{{{image|}}}|{{{image}}}|Beacon Kindling.png}}
+|imagesize=160px
 |invimage=Beacon Kindling
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

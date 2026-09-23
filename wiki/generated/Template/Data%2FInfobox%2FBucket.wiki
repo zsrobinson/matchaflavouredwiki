@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Bucket}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bucket.png}}
+|imagesize=160px
 |invimage=Bucket
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

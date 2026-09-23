@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Siberian Sturgeon}}
+|image={{#if:{{{image|}}}|{{{image}}}|Siberian Sturgeon.png}}
+|imagesize=160px
 |invimage=Siberian Sturgeon
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

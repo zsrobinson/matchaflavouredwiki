@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Geothermal Bundle}}
+|image={{#if:{{{image|}}}|{{{image}}}|Geothermal Bundle.png}}
+|imagesize=160px
 |invimage=Geothermal Bundle
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

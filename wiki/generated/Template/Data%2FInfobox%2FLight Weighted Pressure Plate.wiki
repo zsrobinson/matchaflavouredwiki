@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Light Weighted Pressure Plate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Light Weighted Pressure Plate.png}}
+|imagesize=160px
 |invimage=Light Weighted Pressure Plate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

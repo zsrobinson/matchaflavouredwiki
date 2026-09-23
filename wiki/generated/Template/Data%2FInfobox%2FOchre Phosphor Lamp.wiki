@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Ochre Phosphor Lamp}}
+|image={{#if:{{{image|}}}|{{{image}}}|Ochre Phosphor Lamp.png}}
+|imagesize=160px
 |invimage=Ochre Phosphor Lamp
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

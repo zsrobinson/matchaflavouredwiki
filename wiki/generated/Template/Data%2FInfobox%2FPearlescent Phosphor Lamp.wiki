@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Pearlescent Phosphor Lamp}}
+|image={{#if:{{{image|}}}|{{{image}}}|Pearlescent Phosphor Lamp.png}}
+|imagesize=160px
 |invimage=Pearlescent Phosphor Lamp
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

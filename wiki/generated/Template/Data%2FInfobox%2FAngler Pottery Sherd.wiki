@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Angler Pottery Sherd}}
+|image={{#if:{{{image|}}}|{{{image}}}|Angler Pottery Sherd.png}}
+|imagesize=160px
 |invimage=Angler Pottery Sherd
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

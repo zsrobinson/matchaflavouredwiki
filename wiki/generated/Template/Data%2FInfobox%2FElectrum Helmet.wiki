@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Electrum Helmet}}
+|image={{#if:{{{image|}}}|{{{image}}}|Electrum Helmet.png}}
+|imagesize=160px
 |invimage=Electrum Helmet
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

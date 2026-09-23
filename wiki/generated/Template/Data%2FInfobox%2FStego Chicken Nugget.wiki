@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Stego Chicken Nugget}}
+|image={{#if:{{{image|}}}|{{{image}}}|Stego Chicken Nugget.png}}
+|imagesize=160px
 |invimage=Stego Chicken Nugget
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

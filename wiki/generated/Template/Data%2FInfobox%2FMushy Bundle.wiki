@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Mushy Bundle}}
+|image={{#if:{{{image|}}}|{{{image}}}|Mushy Bundle.png}}
+|imagesize=160px
 |invimage=Mushy Bundle
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

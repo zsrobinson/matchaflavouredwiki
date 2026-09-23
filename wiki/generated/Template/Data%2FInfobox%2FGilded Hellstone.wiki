@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Gilded Hellstone}}
+|image={{#if:{{{image|}}}|{{{image}}}|Gilded Hellstone.png}}
+|imagesize=160px
 |invimage=Gilded Hellstone
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Crimson Shelf}}
+|image={{#if:{{{image|}}}|{{{image}}}|Crimson Shelf.png}}
+|imagesize=160px
 |invimage=Crimson Shelf
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

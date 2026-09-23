@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Shakudo Helmet}}
+|image={{#if:{{{image|}}}|{{{image}}}|Shakudo Helmet.png}}
+|imagesize=160px
 |invimage=Shakudo Helmet
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

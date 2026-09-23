@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Diorite Wall}}
+|image={{#if:{{{image|}}}|{{{image}}}|Diorite Wall.png}}
+|imagesize=160px
 |invimage=Diorite Wall
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

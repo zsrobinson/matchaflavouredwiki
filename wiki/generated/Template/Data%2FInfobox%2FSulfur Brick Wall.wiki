@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Sulfur Brick Wall}}
+|image={{#if:{{{image|}}}|{{{image}}}|Sulfur Brick Wall.png}}
+|imagesize=160px
 |invimage=Sulfur Brick Wall
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

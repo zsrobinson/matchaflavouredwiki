@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Mangalica Piglet}}
+|image={{#if:{{{image|}}}|{{{image}}}|Mangalica Piglet.png}}
+|imagesize=160px
 |invimage=Mangalica Piglet
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

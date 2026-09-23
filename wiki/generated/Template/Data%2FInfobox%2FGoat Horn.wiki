@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Goat Horn}}
+|image={{#if:{{{image|}}}|{{{image}}}|Goat Horn.png}}
+|imagesize=160px
 |invimage=Goat Horn
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

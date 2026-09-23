@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Mangrove Sign}}
+|image={{#if:{{{image|}}}|{{{image}}}|Mangrove Sign.png}}
+|imagesize=160px
 |invimage=Mangrove Sign
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

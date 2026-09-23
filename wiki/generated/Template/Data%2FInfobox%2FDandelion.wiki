@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Dandelion}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dandelion.png}}
+|imagesize=160px
 |invimage=Dandelion
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

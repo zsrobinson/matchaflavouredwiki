@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Cyan Bundle}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cyan Bundle.png}}
+|imagesize=160px
 |invimage=Cyan Bundle
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

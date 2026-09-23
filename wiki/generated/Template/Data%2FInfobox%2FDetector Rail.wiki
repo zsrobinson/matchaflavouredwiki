@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Detector Rail}}
+|image={{#if:{{{image|}}}|{{{image}}}|Detector Rail.png}}
+|imagesize=160px
 |invimage=Detector Rail
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

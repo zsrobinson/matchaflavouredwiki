@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Echo Shard}}
+|image={{#if:{{{image|}}}|{{{image}}}|Echo Shard.png}}
+|imagesize=160px
 |invimage=Echo Shard
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

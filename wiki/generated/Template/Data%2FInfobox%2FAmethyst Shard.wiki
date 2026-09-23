@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Amethyst Shard}}
+|image={{#if:{{{image|}}}|{{{image}}}|Amethyst Shard.png}}
+|imagesize=160px
 |invimage=Amethyst Shard
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

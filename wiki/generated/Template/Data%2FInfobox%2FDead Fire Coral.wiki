@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Dead Fire Coral}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dead Fire Coral.png}}
+|imagesize=160px
 |invimage=Dead Fire Coral
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Jungle Pressure Plate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Jungle Pressure Plate.png}}
+|imagesize=160px
 |invimage=Jungle Pressure Plate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

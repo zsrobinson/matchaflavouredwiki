@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Bamboo Stairs}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bamboo Stairs.png}}
+|imagesize=160px
 |invimage=Bamboo Stairs
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

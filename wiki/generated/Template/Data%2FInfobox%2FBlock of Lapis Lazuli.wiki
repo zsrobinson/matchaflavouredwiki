@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Block of Lapis Lazuli}}
+|image={{#if:{{{image|}}}|{{{image}}}|Block of Lapis Lazuli.png}}
+|imagesize=160px
 |invimage=Block of Lapis Lazuli
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

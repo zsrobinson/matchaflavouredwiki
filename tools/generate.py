@@ -340,6 +340,9 @@ def infobox(item):
         f['source'] = '{{Source|%s|%s}}' % (srcs[0], os.path.basename(srcs[0]))
     lines = ['{{Infobox', '|title={{#if:{{{title|}}}|{{{title}}}|%s}}' % name]
     if has_icon(item['name']):
+        # large render plus the inventory slot, like minecraft.wiki's item infoboxes
+        lines.append('|image={{#if:{{{image|}}}|{{{image}}}|%s.png}}' % safe(item['name']))
+        lines.append('|imagesize=160px')
         lines.append('|invimage=%s' % safe(item['name']))
     for k in ('caption', 'extrarows', 'bonus'):
         lines.append('|%s={{{%s|}}}' % (k, k))
@@ -900,8 +903,8 @@ def sources_page(name):
         parts.append('|}')
     if not parts:
         return None
-    return ('<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, '
-            'assuming no Looting, Luck or Fortune.</small>\n\n' + '\n'.join(parts) +
+    return ('<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, '
+            'assuming no Looting, Luck or Fortune.</div>\n' + '\n'.join(parts) +
             '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>')
 
 
@@ -1124,6 +1127,28 @@ def effect_pages(n):
     write('Template', 'Data/Effects', '<includeonly>' + '\n'.join(overview) + '</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
 
 
+# ------------------------------------------------------------------ case redirects
+def case_redirects(n):
+    """MediaWiki only ignores the case of a title's first letter, so prose links written in
+    lowercase ("[[mud kiln]]", as minecraft.wiki style asks) need "Mud kiln" -> "Mud Kiln"."""
+    titles = set()
+    for base in (os.path.join(GEN, 'Main'), os.path.join(HAND, 'Main')):
+        if os.path.isdir(base):
+            titles.update(f[:-5].replace('%2F', '/') for f in os.listdir(base) if f.endswith('.wiki'))
+    lower = {t.lower() for t in titles}
+    for t in sorted(titles):
+        if ' ' not in t or '/' in t:
+            continue
+        variant = t[0] + t[1:].lower()
+        if variant == t or variant in titles:
+            continue
+        if variant.lower() in lower and variant not in titles and sum(1 for x in titles if x.lower() == variant.lower()) > 1:
+            continue  # ambiguous: two pages differ only by case
+        write('Main', variant, '#REDIRECT [[%s]]\n[[Category:Redirects from other capitalisations]]' % t)
+        titles.add(variant)
+        n['case redirects'] += 1
+
+
 # ------------------------------------------------------------------ categories
 CATEGORY_TEXT = {
     'Generated data': 'Data pages generated from the pack source by <code>tools/generate.py</code>. They are transcluded into articles and are not meant to be read on their own.',
@@ -1202,6 +1227,7 @@ def main():
     lua.append('}\nreturn aliases')
     write('Module', 'Inventory slot/Aliases', '\n'.join(lua))
     effect_pages(n)
+    case_redirects(n)
     category_pages(n)
     # swap in the new tree in one step so concurrent readers never see a half-written folder
     old = GEN_FINAL + '.old'

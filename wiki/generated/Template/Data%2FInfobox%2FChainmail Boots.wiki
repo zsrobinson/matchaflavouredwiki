@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Chainmail Boots}}
+|image={{#if:{{{image|}}}|{{{image}}}|Chainmail Boots.png}}
+|imagesize=160px
 |invimage=Chainmail Boots
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

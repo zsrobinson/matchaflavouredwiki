@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Crystallized Estus}}
+|image={{#if:{{{image|}}}|{{{image}}}|Crystallized Estus.png}}
+|imagesize=160px
 |invimage=Crystallized Estus
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

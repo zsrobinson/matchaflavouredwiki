@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Yellow Concrete}}
+|image={{#if:{{{image|}}}|{{{image}}}|Yellow Concrete.png}}
+|imagesize=160px
 |invimage=Yellow Concrete
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Spyglass}}
+|image={{#if:{{{image|}}}|{{{image}}}|Spyglass.png}}
+|imagesize=160px
 |invimage=Spyglass
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

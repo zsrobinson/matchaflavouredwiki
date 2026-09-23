@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Skeleton Skull}}
+|image={{#if:{{{image|}}}|{{{image}}}|Skeleton Skull.png}}
+|imagesize=160px
 |invimage=Skeleton Skull
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

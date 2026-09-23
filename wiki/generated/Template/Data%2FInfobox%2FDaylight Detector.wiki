@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Daylight Detector}}
+|image={{#if:{{{image|}}}|{{{image}}}|Daylight Detector.png}}
+|imagesize=160px
 |invimage=Daylight Detector
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

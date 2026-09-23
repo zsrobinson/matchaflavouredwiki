@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Native Deepslate Gold}}
+|image={{#if:{{{image|}}}|{{{image}}}|Native Deepslate Gold.png}}
+|imagesize=160px
 |invimage=Native Deepslate Gold
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

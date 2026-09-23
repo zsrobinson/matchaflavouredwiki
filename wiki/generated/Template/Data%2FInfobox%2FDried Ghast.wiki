@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Dried Ghast}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dried Ghast.png}}
+|imagesize=160px
 |invimage=Dried Ghast
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

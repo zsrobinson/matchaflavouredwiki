@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Minecart with TNT}}
+|image={{#if:{{{image|}}}|{{{image}}}|Minecart with TNT.png}}
+|imagesize=160px
 |invimage=Minecart with TNT
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

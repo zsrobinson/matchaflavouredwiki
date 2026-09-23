@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Rind Jam}}
+|image={{#if:{{{image|}}}|{{{image}}}|Rind Jam.png}}
+|imagesize=160px
 |invimage=Rind Jam
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

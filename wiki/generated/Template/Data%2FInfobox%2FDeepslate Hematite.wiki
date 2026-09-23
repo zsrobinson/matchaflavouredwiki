@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Deepslate Hematite}}
+|image={{#if:{{{image|}}}|{{{image}}}|Deepslate Hematite.png}}
+|imagesize=160px
 |invimage=Deepslate Hematite
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

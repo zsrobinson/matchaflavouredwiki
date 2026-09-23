@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Tipped Arrow}}
+|image={{#if:{{{image|}}}|{{{image}}}|Tipped Arrow.png}}
+|imagesize=160px
 |invimage=Tipped Arrow
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

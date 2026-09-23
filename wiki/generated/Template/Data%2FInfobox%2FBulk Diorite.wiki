@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Bulk Diorite}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bulk Diorite.png}}
+|imagesize=160px
 |invimage=Bulk Diorite
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

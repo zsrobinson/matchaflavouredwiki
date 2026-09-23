@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Native Silver}}
+|image={{#if:{{{image|}}}|{{{image}}}|Native Silver.png}}
+|imagesize=160px
 |invimage=Native Silver
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

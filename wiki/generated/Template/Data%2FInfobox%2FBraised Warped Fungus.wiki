@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Braised Warped Fungus}}
+|image={{#if:{{{image|}}}|{{{image}}}|Braised Warped Fungus.png}}
+|imagesize=160px
 |invimage=Braised Warped Fungus
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

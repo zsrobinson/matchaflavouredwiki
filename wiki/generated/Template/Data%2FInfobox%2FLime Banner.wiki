@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Lime Banner}}
+|image={{#if:{{{image|}}}|{{{image}}}|Lime Banner.png}}
+|imagesize=160px
 |invimage=Lime Banner
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

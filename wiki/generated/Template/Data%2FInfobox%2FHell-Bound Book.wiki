@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Hell-Bound Book}}
+|image={{#if:{{{image|}}}|{{{image}}}|Hell-Bound Book.png}}
+|imagesize=160px
 |invimage=Hell-Bound Book
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

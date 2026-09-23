@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Cracked Hellbricks}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cracked Hellbricks.png}}
+|imagesize=160px
 |invimage=Cracked Hellbricks
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

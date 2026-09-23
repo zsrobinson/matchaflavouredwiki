@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Cherry Fence Gate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cherry Fence Gate.png}}
+|imagesize=160px
 |invimage=Cherry Fence Gate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

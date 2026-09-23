@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Crimson Pressure Plate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Crimson Pressure Plate.png}}
+|imagesize=160px
 |invimage=Crimson Pressure Plate
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

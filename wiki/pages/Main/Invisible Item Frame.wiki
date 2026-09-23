@@ -1,0 +1,23 @@
+{{Infobox auto|type=Decoration|renewable=Yes}}
+An '''Invisible Item Frame''' is an item frame whose frame is invisible once placed, so only the item inside it can be seen.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+It uses the same shape as the pack's item frame recipe, 4 sticks around a center item, but with a glass pane in the center instead of rabbit hide.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/item_frame.json}}</ref> The recipe is unlocked by picking up a glass pane or an item frame.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/invisible_item_frame.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/glass_pane.json}}</ref>
+
+== Usage ==
+Placing an Invisible Item Frame places an item frame with its frame hidden. An item put in it is shown on its own, floating against the block. It otherwise behaves like a vanilla {{MCW|Item Frame|item frame}}.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/invisible_item_frame.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Texture, recipe and recipe unlock fixed.}}
+{{History line|1.10|Recipe unlock fixed.}}
+}}
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Items]]
+[[Category:Decoration blocks]]

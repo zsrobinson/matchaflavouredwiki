@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Gimmari}}
+|image={{#if:{{{image|}}}|{{{image}}}|Gimmari.png}}
+|imagesize=160px
 |invimage=Gimmari
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

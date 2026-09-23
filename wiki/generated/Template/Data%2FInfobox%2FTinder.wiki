@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Tinder}}
+|image={{#if:{{{image|}}}|{{{image}}}|Tinder.png}}
+|imagesize=160px
 |invimage=Tinder
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

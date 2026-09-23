@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Water Bucket}}
+|image={{#if:{{{image|}}}|{{{image}}}|Water Bucket.png}}
+|imagesize=160px
 |invimage=Water Bucket
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

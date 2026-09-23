@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Flowering Azalea}}
+|image={{#if:{{{image|}}}|{{{image}}}|Flowering Azalea.png}}
+|imagesize=160px
 |invimage=Flowering Azalea
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Tuff Brick Wall}}
+|image={{#if:{{{image|}}}|{{{image}}}|Tuff Brick Wall.png}}
+|imagesize=160px
 |invimage=Tuff Brick Wall
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Crimson Fungus}}
+|image={{#if:{{{image|}}}|{{{image}}}|Crimson Fungus.png}}
+|imagesize=160px
 |invimage=Crimson Fungus
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

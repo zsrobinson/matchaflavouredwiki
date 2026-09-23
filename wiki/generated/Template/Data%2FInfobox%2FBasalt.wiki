@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Basalt}}
+|image={{#if:{{{image|}}}|{{{image}}}|Basalt.png}}
+|imagesize=160px
 |invimage=Basalt
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

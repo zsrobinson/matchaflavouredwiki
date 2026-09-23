@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Beehive}}
+|image={{#if:{{{image|}}}|{{{image}}}|Beehive.png}}
+|imagesize=160px
 |invimage=Beehive
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

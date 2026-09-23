@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Ramen Stock}}
+|image={{#if:{{{image|}}}|{{{image}}}|Ramen Stock.png}}
+|imagesize=160px
 |invimage=Ramen Stock
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

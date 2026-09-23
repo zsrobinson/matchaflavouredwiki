@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Chiseled Tuff Bricks}}
+|image={{#if:{{{image|}}}|{{{image}}}|Chiseled Tuff Bricks.png}}
+|imagesize=160px
 |invimage=Chiseled Tuff Bricks
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

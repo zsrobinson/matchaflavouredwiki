@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Glass Bottle}}
+|image={{#if:{{{image|}}}|{{{image}}}|Glass Bottle.png}}
+|imagesize=160px
 |invimage=Glass Bottle
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

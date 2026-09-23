@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Wind Charge}}
+|image={{#if:{{{image|}}}|{{{image}}}|Wind Charge.png}}
+|imagesize=160px
 |invimage=Wind Charge
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

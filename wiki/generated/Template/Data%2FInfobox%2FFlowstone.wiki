@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Flowstone}}
+|image={{#if:{{{image|}}}|{{{image}}}|Flowstone.png}}
+|imagesize=160px
 |invimage=Flowstone
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

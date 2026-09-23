@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Adamant Scrap}}
+|image={{#if:{{{image|}}}|{{{image}}}|Adamant Scrap.png}}
+|imagesize=160px
 |invimage=Adamant Scrap
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}

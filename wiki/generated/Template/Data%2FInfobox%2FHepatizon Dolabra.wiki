@@ -1,5 +1,7 @@
 <includeonly>{{Infobox
 |title={{#if:{{{title|}}}|{{{title}}}|Hepatizon Dolabra}}
+|image={{#if:{{{image|}}}|{{{image}}}|Hepatizon Dolabra.png}}
+|imagesize=160px
 |invimage=Hepatizon Dolabra
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
