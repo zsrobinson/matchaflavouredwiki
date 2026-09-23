@@ -41,6 +41,9 @@ jobs:
           marker = "tree " + os.environ["TREE"]
           print(next((v["id"] for v in json.load(sys.stdin) if (v.get("annotations") or {}).get("workers/message") == marker), ""))
           ') || id=
+          # wrangler reads wrangler.jsonc and refuses to run if assets.directory is missing, even for
+          # triggers deploy, which uploads nothing from it
+          mkdir -p dist
           if [[ -z "$id" ]]; then
             echo "No preview of tree $TREE: full build."
             echo "build=true" >> "$GITHUB_OUTPUT"
