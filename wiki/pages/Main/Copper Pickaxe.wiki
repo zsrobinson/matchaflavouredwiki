@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-A '''copper pickaxe''' is the [[Copper equipment|copper]] [[Tools#Pickaxe|pickaxe]], crafted from three [[copper ingot]]s and two sticks. In Matcha Flavoured it is the first pickaxe that can mine [[hematite]] (iron ore) and [[native silver]], and the one players are expected to use for most of the early game.
+A '''copper pickaxe''' is a [[Tools#Pickaxe|pickaxe]] of the [[Copper equipment|copper]] tier, crafted from three [[copper ingot]]s and two sticks. In Matcha Flavoured it is the first pickaxe that can mine [[hematite]] (iron ore) and [[native silver]], and the one players are expected to use for most of the early game.
 
 == Obtaining ==
 
@@ -14,7 +14,7 @@ A '''copper pickaxe''' is the [[Copper equipment|copper]] [[Tools#Pickaxe|pickax
 === Mining ===
 The copper pickaxe breaks pickaxe blocks at speed 6, faster than the vanilla copper pickaxe (5) and twice the speed of the [[wooden pickaxe]]. It has 350 durability.
 
-It cannot harvest diamond ore, [[native gold]], obsidian, crying obsidian or ender chests: those blocks break at speed 3 and drop nothing.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/copper.json}}</ref> An [[iron pickaxe]] is needed for gold and diamonds, and a [[diamond pickaxe]] for obsidian.
+It cannot harvest diamond ore, [[native gold]], obsidian, crying obsidian or ender chests: those blocks break at speed 3 and drop nothing.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/copper.json}}</ref> An [[iron pickaxe]] is needed for gold and diamonds, and a [[diamond pickaxe]] or [[steel pickaxe]] for obsidian.
 
 The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pickaxe blocks, so a pickaxe breaks them faster than a bare hand.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
 

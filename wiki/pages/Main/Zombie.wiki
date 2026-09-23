@@ -17,7 +17,7 @@ Zombies also appear from [[spawner|spawners]] in monster rooms and [[Papal Outpo
 
 == Drops ==
 {{Data/Loot/minecraft/entities/zombie}}
-All drops require the zombie to be killed by a player, and zombies from the pack's spawners drop nothing.<ref name="loot">{{Source|MF_datapack/data/minecraft/loot_table/entities/zombie.json}}</ref> Zombies don't drop the equipment they spawn with.
+All drops require the zombie to be killed by a player, and zombies from the pack's spawners drop nothing.<ref name="loot">{{Source|MF_datapack/data/minecraft/loot_table/entities/zombie.json}}</ref> The pack means to stop zombies dropping the equipment they spawn with, but a bug stops this from working reliably; see [[Spawning#Mob modifications]].
 
 Compared to vanilla:
 * {{ItemLink|Tattered Leather}} (1–2) replaces {{MCW|Rotten Flesh|rotten flesh}} (0–2), which no longer exists.
@@ -56,9 +56,6 @@ When a zombie first appears, the pack changes its attributes according to the [[
 |-
 ! Jump strength
 | vanilla || vanilla || 0.6
-|-
-! Equipment drop chance
-| 0% || 0% || 0%
 |}
 <ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_and_easy_modifications/modify_baby_zombies.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_baby_zombies.mcfunction}}</ref>
 

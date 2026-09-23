@@ -20,10 +20,10 @@ Several entries have a quality, so Luck of the Sea shifts the odds toward chests
 | {{ItemLink|Chest}} of buried treasure || 1 || 1 || +3 || 1.64% || 6.25% || 10.45% || 14.29%
 |}
 
-* The fishing rod is enchanted as if at level 30 and has 0–25% of its durability used up.
+* The fishing rod is enchanted as if at level 30 and has only 0–25% of its durability left.
 * The book is enchanted at level 30, giving a Hell-Bound Book.
 * The goat horn can be any of the regular goat horn sounds.
-* The chest is a chest item that holds a buried treasure loot table. When placed, it contains 2–4 [[Raw Diamond|raw diamonds]] (more with luck), 2 rolls of treasure ores (raw copper, raw gold, lapis lazuli, raw iron or raw diamonds in large stacks), a 1 in 6 chance of 2 coast armor trim templates, a chance of copper, iron, gold or diamond nautilus armor, and a 2 in 3 chance of a sacred text ([[Paradise Lost]] or [[The Divine Comedy]]).<ref>{{Source|MF_datapack/data/matcha/loot_table/chests/fishing/treasure.json}}</ref>
+* The chest is a chest item that holds a buried treasure loot table. When placed, it contains 2–4 [[Raw Diamond|raw diamonds]] (more with luck), 2 rolls of the treasure ores table, each giving 12–20 raw copper, 3–6 raw gold, 8–15 lapis lazuli, 8–15 raw iron and 1–3 raw diamonds<ref>{{Source|MF_datapack/data/matcha/loot_table/chests/common/treasure_ores.json}}</ref>, a 1 in 6 chance of 2 coast armor trim templates, a chance of copper, iron, gold or diamond nautilus armor, and a 2 in 3 chance of a sacred text ([[Paradise Lost]] or [[The Divine Comedy]]).<ref>{{Source|MF_datapack/data/matcha/loot_table/chests/fishing/treasure.json}}</ref>
 
 The developer made treasure rarer in 1.10 so that players who don't enjoy fishing don't feel pushed into it for loot.<ref>{{Cite changelog|1.10|quote=I want people who like fishing to be rewarded, I don't want people who don't enjoy fishing to put up with it just to get loot.}}</ref>
 
@@ -32,7 +32,7 @@ The developer made treasure rarer in 1.10 so that players who don't enjoy fishin
 {{History line|0.5-alpha|Added Crystal Hearts.}}
 {{History line|1.10|Chests and Crystal Hearts made rarer, enchanted fishing rods more common. Buried treasure nerfed.}}
 {{History line|1.12|Buried treasure buffed slightly.}}
-{{History line|1.12.1-alpha|Treasure tweaked. Nautilus shells added to the buried treasure, and sacred texts made rarer in it.}}
+{{History line|1.12.1-alpha|Treasure tweaked. Sacred texts made rarer in the buried treasure. The release notes also say nautilus shells were added to it, but the current fishing chest has none.}}
 }}
 
 == References ==

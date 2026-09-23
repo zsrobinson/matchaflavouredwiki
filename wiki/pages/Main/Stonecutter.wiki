@@ -1436,7 +1436,7 @@ The vanilla stonecutter recipes the pack does not block, listed under the pack's
 == Trivia ==
 * The 1.12.1-alpha release notes say poplar was added to the stonecutter, but poplar does not exist in the ''Minecraft'' version the pack targets and the current source has no poplar recipes. See [[Poplar]].
 * Birch is the only wood whose planks can be cut into a pressure plate; for the other woods, pressure plates only come from logs.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_pressure_plate_from_stonecutting_birch_planks.json}}</ref>
-* Exposed copper and waxed exposed copper each have two identical recipes for their trapdoors.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper_block.json}}</ref>
+* Exposed, weathered and oxidized copper and waxed exposed copper each have two identical recipes for their trapdoors, which is why the table lists 344 of the 348 recipes.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper_block.json}}</ref>
 
 == References ==
 {{reflist}}

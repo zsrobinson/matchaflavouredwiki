@@ -14,8 +14,6 @@ When a text component asks for a translation key that the resource pack's langua
 |-
 | Stored-enchantment line of adamant tools || <code>enchantment.kleispack.smelting</code> || The description of the <code>matcha:adamant_tool</code> smelting intrinsic, which every adamant tool carries as a stored enchantment.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_tool.json}}</ref> See [[Adamant equipment]].
 |-
-| Tooltip of the [[crook]] || <code><nowiki>\uE028 %s</nowiki></code> and <code><nowiki>\uE027 %s</nowiki></code> (the reach and safe-fall glyphs) || The reach and safe-fall lines use the glyph ''text'' as the key instead of <code>desc.kleispack.entity_interaction_range</code> and <code>desc.kleispack.fall_height_attribute</code>, so the lines show the glyph followed by a literal "%s" instead of the value.<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/3/crook.json}}</ref>
-|-
 | Nowhere in practice || <code>item.kleispack.fish.axolotl</code> || Used by the loot table <code>gameplay/fishing/fish/axolotl</code>, which no other table calls. Fished axolotls come from the junk table and use <code>item.kleispack.axolotl</code>, which exists.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/fish/axolotl.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
 |}
 
@@ -50,11 +48,13 @@ Most of the pack's equipment hides its real attributes and shows a hand-written 
 |-
 | [[Adamant Spear]] || Attack damage 4, attack speed 0.95 || 5 and 0.87
 |-
+| [[Cleaver]] || Attack speed 1.6 || 4
+|-
 | [[Crook]] || 5 damage, 3 reach || 2 damage; +2 reach in the main hand, +5 in the off hand
 |-
 | [[Baked Golden Apple]] || Regeneration for 0:30 || 1:00 (1,200 ticks)
 |-
-| Splash potion of darkness ([[Chemist]]) || Darkness and Blindness for 5:00 each || Darkness 1:00, Blindness 0:30
+| [[Splash Potion#Darkness|Splash potion of darkness]] || Darkness and Blindness for 5:00 each || Darkness 1:00, Blindness 0:30
 |}
 Each item's article cites the file. Other tooltip problems:
 * The [[Elytra#Shakudo Elytra|shakudo elytra]]'s tooltip promises an "Elytra Bonus" of 10 seconds off the shakudo regeneration timer, but the item carries the ordinary shakudo armor intrinsic, so it only counts as one more shakudo piece. A separate <code>matcha:shakudo_elytra</code> intrinsic exists but isn't on the item.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_elytra.json}}</ref> The in-development changelog lists "Shakudo Elytra Bonus was not working" as fixed.<ref>{{Cite changelog|quote=Shakudo Elytra Bonus was not working (not sure how this was deleted)}}</ref>
@@ -67,7 +67,9 @@ Each item's article cites the file. Other tooltip problems:
 * '''Incomplete Angler's Almanac.''' The junk category of the [[Angler's Almanac]] has entries for a bowl and a tripwire hook, but no fishing table can give either, so the tab can't be completed.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/junk/bowl.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
 * '''Iron chain recipe never unlocks.''' Picking up iron ingots is meant to unlock the recipe that turns 3 iron ingots into 18 [[chain]]s, but the unlock names <code>iron_chain_from_iron</code>, while the recipe is <code>iron_chain_from_ingot</code>. The recipe works when placed by hand but never appears in the recipe book.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/iron_ingot.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_chain_from_ingot.json}}</ref>
 * '''Early pickaxes mine ancient debris.''' The pack's pickaxes list <code>#minecraft:mineable/pickaxe</code> as correct for drops without a tier check, and the blocks each tier ''can't'' mine are listed by hand. Ancient debris isn't on any of those lists, so even a wooden pickaxe gets it. See [[Tools#Mining levels]].<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref>
-* '''Cut diamonds in desert pyramids.''' The 1.12.2 notes say no "naturally-occuring free diamonds" should appear in surface structures, but the desert pyramid chest table still contains cut diamonds.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/desert_pyramid.json}}</ref> See [[Chest loot]].
+* '''Cut diamonds in village chests.''' The 1.12.2 notes say no "naturally-occuring free diamonds" should appear in surface structures, but the village toolsmith and weaponsmith chest tables still contain cut diamonds. (The desert pyramid gives raw diamonds.)<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_toolsmith.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_weaponsmith.json}}</ref> See [[Chest loot]].
+* '''Mobs keep their spawn equipment drops.''' The pack means to set the drop chances of the armor and weapons that hostile mobs spawn with to 0, but the command targets <code>@n</code> (the nearest matching mob) from a function that runs as the new mob without running at its position, so it changes the matching mob nearest the world spawn point instead. Most mobs keep their vanilla chance to drop that gear. See [[Spawning]].<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/clear_drop_chances.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref>
+* '''Glass bottles lost when crafting cheese and stroganoff.''' The advancement that gives back a milk bottle's or oil's glass bottle after crafting lists cheese under its old recipe ID <code>main:food/crafting/cheese</code>, and doesn't list stroganoff, toadstool stroganoff or crimson stroganoff at all, so crafting any of these uses up the bottle. Warped stroganoff returns it.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
 
 == Other ==
 * The chat message shown when the pack loads reports "version 1.12.1", although the release is 1.12.2 and the internal version number is 1122.<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>

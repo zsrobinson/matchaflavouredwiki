@@ -8,7 +8,7 @@
 
 === Crafting ===
 {{Recipes}}
-Warped fungus, a [[steak]], dough, a milk bottle and a bowl. The recipe is taught by a [[Cooking Recipe]] sold by an Apprentice [[Cook]]. Unlike the other stroganoffs, crafting it returns the milk bottle's glass bottle.
+Warped fungus, a [[steak]], dough, a milk bottle and a bowl. The recipe is taught by a [[Cooking Recipe]] sold by an Apprentice [[Cook]], who also sells 4 warped stroganoff for 1 [[obol]]. Unlike the other stroganoffs, crafting it returns the milk bottle's glass bottle.
 {{Sources}}
 
 == Usage ==
@@ -16,11 +16,10 @@ Warped fungus, a [[steak]], dough, a milk bottle and a bowl. The recipe is taugh
 === Food ===
 Eating it takes 1.8 seconds, heals {{Hp|12}} and gives Invisibility for 10:00. Making it grants ''Wait, you can make that?'' The bowl is given back.
 
-=== Cook ===
-An Apprentice Cook sells 4 warped stroganoff for 1 [[obol]].
-
-=== Trading ===
-It is one of the foods a villager can ask for as its [[favorite food]].
+== History ==
+{{History|
+{{History line|Upcoming|2=Crafting warped stroganoff returns the milk bottle's glass bottle. In 1.12.2 the advancement behind this still used an old recipe ID, so the bottle was lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>}}
+}}
 
 == See also ==
 * [[Stroganoff]]

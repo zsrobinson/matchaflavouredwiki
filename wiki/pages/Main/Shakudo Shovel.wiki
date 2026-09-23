@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-A '''shakudo shovel''' is the [[Shakudo equipment|shakudo]] [[Tools#Shovel|shovel]], made by smithing a [[copper shovel]] with [[shakudo alloy]]. With [[Silk Touch]] it collects grass blocks, mycelium, snow blocks and similar blocks intact.
+A '''shakudo shovel''' is a [[Tools#Shovel|shovel]] of the [[Shakudo equipment|shakudo]] tier, made by smithing a [[copper shovel]] with [[shakudo alloy]]. With [[Silk Touch]] it collects grass blocks, mycelium, snow blocks and similar blocks intact.
 
 == Obtaining ==
 
@@ -25,11 +25,10 @@ It deals {{Hp|4.5}} damage at an attack speed of 1.
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-=== Crafting ingredient ===
-{{Uses}}
-
 === Trading ===
 An apprentice [[weaponsmith]] buys it for one [[shakudo alloy]], which lets the alloy be reused on a fresh copper item.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/shakudo_shovel.json}}</ref>
+
+{{Uses}}
 
 == Notes ==
 * Shakudo tools reuse the stone tools' item IDs, so they cannot be melted down in a blast furnace.

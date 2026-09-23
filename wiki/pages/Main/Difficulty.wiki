@@ -77,13 +77,10 @@ Each time one of the pack's "mundane hostile" mobs appears (zombie, husk, drowne
 |-
 ! [[Silverfish]]
 | Max health || {{Hp|2}} || {{Hp|2}} || {{Hp|4}}
-|-
-! All of the above
-| Equipment drop chance || 0% || 0% || 0%
 |}
 <ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/easy_modifications/check_type.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/check_type.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/check_type.mcfunction}}</ref>
 
-Easy is close to vanilla mob behavior: zombies, husks and spiders are left unchanged, and only skeletons, creepers, cave spiders, silverfish and baby zombies are weakened. The Normal and Hard skeleton changes replace the skeleton's bow with a new one that has only Punch.
+Easy is close to vanilla mob behavior: zombies, husks and spiders are left unchanged, and only skeletons, creepers, cave spiders, silverfish and baby zombies are weakened. The Normal and Hard skeleton changes replace the skeleton's bow with a new one that has only Punch and can't be dropped. The pack also means to set the equipment drop chances of all of these mobs to 0, but a targeting bug stops this from working reliably; see [[Spawning#Mob modifications]].
 
 == Summary ==
 {| class="wikitable"
@@ -120,7 +117,7 @@ Easy is close to vanilla mob behavior: zombies, husks and spiders are left uncha
 {{History line|1.10|Difficulty support added: the difficulty now changes mob behavior, health and damage. Easy is described as "essentially vanilla mob behaviour". Beating the Ender Dragon raises the difficulty.}}
 {{History line|1.12|Husks slowed on Normal; husk attack damage lowered from 15 to 10 on Normal and from 20 to 15 on Hard.}}
 {{History line|1.12.1-alpha|Killing the dragon no longer raises the difficulty on Normal; progression through advancements does instead. Baby zombies, husks and drowned have 2 hearts on Easy. Husk health on Normal lowered from 40 to 30.}}
-{{History line|1.12.2|Hard husks slowed slightly. The Wither effect takes hearts, except on Easy. Easy guarantees at least 10 hearts.}}
+{{History line|1.12.2|Hard husks slowed slightly. The Wither effect takes hearts, except on Easy.}}
 }}
 
 == Trivia ==

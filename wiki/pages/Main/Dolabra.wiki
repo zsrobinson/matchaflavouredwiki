@@ -1,13 +1,13 @@
 A '''dolabra''' is a hybrid [[Tools|tool]] that works as both a pickaxe and an axe, mining more slowly than a pickaxe or axe of the same tier. Its harvesting rules do not always match the pickaxe of its tier: several dolabras can mine obsidian that the matching pickaxe cannot (see below).
 
-The developer calls dolabras and mattocks "real tools with generalized niches" whose "base mining speed aren't as fast as their original counterparts.{{Cite video|quote=They're both real tools with generalized niches. Delabres work as a pickaxe and an axe combined. Maddox are a shovel hoe hybrid, but hybrid tools base mining speed aren't as fast as their original counterparts.}}
+The developer calls dolabras and mattocks "real tools with generalized niches" whose "base mining speed aren't as fast as their original counterparts."<ref>{{Cite video|quote=They're both real tools with generalized niches. Delabres work as a pickaxe and an axe combined. Maddox are a shovel hoe hybrid, but hybrid tools base mining speed aren't as fast as their original counterparts.}}</ref>
 
 == Obtaining ==
 Copper, iron and diamond dolabras are crafted (three ingots on top, one below on the left, two sticks). Alloy dolabras are smithed from an axe or dolabra of the base tier with the alloy and a [[Smithing Upgrade Template|smithing upgrade template]]. Dolabras use axe item IDs, so they strip logs like axes.
 
 == Usage ==
 * The copper dolabra has special rules: no drops from diamond ore or sulfur ores, but it mines native gold and obsidian with drops, unlike the copper pickaxe.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_dolabra.json}}</ref>
-* The iron, steel, shakudo and hepatizon dolabras have no obsidian rule.
+* The iron, steel, shakudo and hepatizon dolabras have no separate obsidian rule, so they mine obsidian at their normal speed and get drops, although the iron, shakudo and hepatizon pickaxes cannot.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_dolabra.json}}</ref>
 * Diamond (35), electrum and adamant (55) dolabras mine obsidian quickly.
 
 == Tiers ==
@@ -32,7 +32,7 @@ Copper, iron and diamond dolabras are crafted (three ingots on top, one below on
 |}
 
 == Design ==
-The 1.12.2 notes announce a shift: "Dolabras are shifting from being treated as an Axe (weapon), Axe (tool), and Pickaxe hyrbid to an Axe (tool) and Pickaxe hyrbid. So damage will go down for all of them, weapon-based enchants removed, and tool-based enchants improved."{{Cite changelog|1.12.2|quote=Dolabras are shifting from being treated as an Axe (weapon), Axe (tool), and Pickaxe hyrbid to an Axe (tool) and Pickaxe hyrbid.}} The adamant dolabra already lacks the weapon intrinsic that the adamant axe has.
+The 1.12.2 notes announce a shift: "Dolabras are shifting from being treated as an Axe (weapon), Axe (tool), and Pickaxe hyrbid to an Axe (tool) and Pickaxe hyrbid. So damage will go down for all of them, weapon-based enchants removed, and tool-based enchants improved."<ref>{{Cite changelog|1.12.2|quote=Dolabras are shifting from being treated as an Axe (weapon), Axe (tool), and Pickaxe hyrbid to an Axe (tool) and Pickaxe hyrbid.}}</ref> The adamant dolabra already lacks the weapon intrinsic that the adamant axe has.
 
 == History ==
 {{History|

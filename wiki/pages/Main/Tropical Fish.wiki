@@ -37,12 +37,12 @@ Raw fish can be eaten, but it heals nothing: Matcha Flavoured removes [[hunger]]
 The recipes match any <code>minecraft:tropical_fish</code>, so every tropical fish gives the same result.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_tropical_fish.json}}</ref> A [[Mud Kiln]] burns it into [[Charred Fish|charred fish]] instead.
 
 === Trading ===
-The [[Fisherman]] buys 12 caught tropical fish for 1 [[Obol]] once he reaches Apprentice level. Only fish caught by fishing (with the ⭐☆☆☆ line) are accepted.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/2/tropical_fish.json}}</ref>
+The [[Fisherman]] buys 12 caught tropical fish for 1 [[Obol]] once he reaches Apprentice level. Only fish with the ⭐☆☆☆ rarity line, which the fishing loot tables add, are accepted.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/2/tropical_fish.json}}</ref>
 
 {{Uses}}
 
 == Angler's Almanac ==
-The [[Angler's Almanac]] has an entry for the tropical fish under Hot Saltwater (listed chance 35.7%) and Warm Saltwater (listed chance 35.7%), unlocked by catching one while the almanac tab is open.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Its description reads:
+The [[Angler's Almanac]] has an entry for the tropical fish under Hot Saltwater (listed chance 35.7%) and Warm Saltwater (listed chance 35.7%), unlocked by catching one after the player has obtained the almanac.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Its description reads:
 <blockquote>''A brilliantly colorful reef fish available in more patterns than anyone reasonably needs.''</blockquote>
 
 == Advancements ==

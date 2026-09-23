@@ -2,7 +2,7 @@
 {{About|the list of enchantments|how enchantments are obtained and applied|Enchanting}}
 An '''enchantment''' is a modifier on a piece of equipment or a book. [[Matcha Flavoured]] keeps the vanilla enchantments, changes a few of them, and adds eight enchantments of its own. Enchantments come from crafted [[blessing]]s, [[Ofuda]], loot and some pre-enchanted equipment rather than from an enchanting table. See [[Enchanting]] for how the system works.
 
-The pack also uses enchantments for the fixed [[intrinsic]] effects of equipment ([[Warding]], [[Magic protection]], [[Cleanse]], [[Divinity]], [[Doom]] and the alloy intrinsics). Those have their own pages.
+The pack also uses enchantments for the fixed [[intrinsic]] effects of equipment ([[Warding]], [[Magic protection]], [[Cleanse]], [[Doom]] and the alloy intrinsics). Those have their own pages.
 
 == New enchantments ==
 {| class="wikitable sortable"
@@ -118,7 +118,7 @@ Every vanilla enchantment is still in the game. The pack sets the anvil cost mul
 | <span id="Wind Burst"></span>{{MCW|Wind Burst}} || III || Anvil cost 4 → 1 || [[Prayer of Aeolus]] (I) || —
 |}
 
-Blast Protection, Projectile Protection, Thorns, Sweeping Edge, Quick Charge and Curse of Vanishing have no blessing or trade, so they can only be found. Protection and Sharpness have no blessing: apart from loot, they come only from [[Ofuda]].
+Blast Protection, Projectile Protection, Thorns, Sweeping Edge, Quick Charge and Curse of Vanishing have no blessing or trade, so they can only be found, except that crafted [[Sturdy Leather Boots]] come with Projectile Protection II. Protection and Sharpness have no blessing: apart from loot, they come only from [[Ofuda]] and from [[Adamant equipment|adamant equipment]], which is smithed with Protection I or Sharpness I.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sturdy_leather_boots.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_sword.json}}</ref>
 
 == Generated data ==
 The table below is generated from the pack's enchantment files. It also lists the intrinsic enchantments, whose names are the tooltip glyphs they show in game, and five enchantments left in the old <code>main</code> namespace. Those exist only so that items from versions before {{Version|1.12.2}} can be converted: holding or wearing an item with a <code>main:</code> enchantment replaces it with the <code>matcha:</code> version.<ref>{{Source|MF_datapack/data/main/README.txt}}</ref><ref>{{Source|MF_datapack/data/main/item_modifier/update_reach.json}}</ref>

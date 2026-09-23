@@ -177,7 +177,7 @@ The tower's 20 decorated pots and every pot created by a processor use <code>pot
 |-
 | Decision puzzle || Trial spawner || [[Cave Spider]]
 |}
-The equipped mobs from trial spawners never drop their equipment, and have a safe fall distance of 16 blocks and a water movement efficiency of 0.8. Mobs from the monster spawners carry the <code>NoDrops</code> tag and drop nothing, like all spawner mobs in the pack (see [[Spawner]]).
+The equipped mobs from trial spawners never drop their equipment, and have a safe fall distance of 16 blocks and a water movement efficiency of 0.8. Mobs from the monster spawners carry the <code>NoDrops</code> tag and drop nothing, like all spawner mobs in the pack (see [[Spawner]]). Like any other skeleton, the trial spawner skeletons and strays have their bows replaced when they spawn on Normal or Hard, so they end up with a bow that has only Punch I or Punch II instead of the Power bows listed above (see [[Skeleton#Behavior]]).<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_skeletons.mcfunction}}</ref>
 
 Seven {{MCW|Allay|allays}} are placed in the tower when it generates, along with several bats in the dungeon.
 

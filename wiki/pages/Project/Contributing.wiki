@@ -14,7 +14,7 @@ If something is wrong but you don't want to write the fix yourself, open an issu
 == Writing ==
 Follow the style guide (<code>wiki/STYLE.md</code> in the repository). In short:
 * The wiki follows the [https://minecraft.wiki/ Minecraft Wiki]'s tone and layout: encyclopedic, third person, American English, item names exactly as they appear in game, lowercase in running text.
-* '''Every fact must be checkable''' against the pack's code, its official release notes or the developer's design video, in that order. Cite the file you used with <code><nowiki><ref>{{Source|MF_datapack/data/...}}</ref></nowiki></code>. Information from other wikis, forks or videos is not accepted.
+* '''Every fact must be checkable''' against the pack's code, its official release notes or the developer's design video, in that order. Cite the file you used with <code><nowiki><ref>{{Source|MF_datapack/data/...}}</ref></nowiki></code>. Information from other wikis, forks or third-party videos is not accepted.
 * Don't copy numbers that the pack's data already provides. Use the generated templates, which update themselves when the pack changes:
 ** <code><nowiki>{{Infobox auto}}</nowiki></code>: the item infobox;
 ** <code><nowiki>{{Recipes}}</nowiki></code>, <code><nowiki>{{Uses}}</nowiki></code>, <code><nowiki>{{Sources}}</nowiki></code>: how an item is made, used and found;

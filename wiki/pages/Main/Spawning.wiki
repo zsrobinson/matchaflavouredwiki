@@ -32,7 +32,7 @@ Because the check tests whether the mob can see the sky rather than its light le
 == Mob modifications ==
 {{Main|Difficulty#Mob modifications}}
 Each mob that passes the surface check is modified according to the difficulty the pack read when the world loaded:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/modify_mob.mcfunction}}</ref>
-* On every difficulty, the mob's equipment drop chances are set to 0, and skeletons, creepers, cave spiders, silverfish and baby zombies get new health values.
+* On every difficulty, skeletons, creepers, cave spiders, silverfish and baby zombies get new health values. The pack also tries to set the mob's equipment drop chances to 0, but the command picks the listed mob nearest the world spawn point instead of the mob being checked, because the check doesn't run at the mob's position. Most mobs therefore keep their vanilla chance of dropping the armor and weapons they spawn with.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/clear_drop_chances.mcfunction}}</ref>
 * On Normal and Hard, zombies become fast strikers, husks become slow, heavily armored tanks, spiders jump high and leave cobwebs, and skeletons get a Punch bow.
 
 This happens in every dimension, not just the Overworld.
