@@ -76,6 +76,13 @@ the swap mid-way.
   in `<head>` to avoid a light flash. `MediaWiki:Gadget-mfwShell.js` (theme toggle `#pt-dm-toggle`,
   collapsible sidebar) is shared by the live wiki and the static export. Glyph images are drawn dark and
   inverted in dark mode.
+- **Mobile is CSS on the same pages, not a second skin.** Up to 720px, the phone section at the end of
+  `MediaWiki:Vector.css` restyles Vector like minecraft.wiki's mobile site (its Minerva skin). You get the
+  grass header, the sidebar as a menu drawer, icon page actions beside the title, scrolling tables and a
+  stone footer. `Gadget-mfwShell.js` adds the header buttons and the drawer's dark-mode entry, and on
+  phones makes sections collapsible. Legacy Vector declares itself non-responsive, so without the
+  `$wgValidSkinNames` override in `LocalSettings.php` phones get `width=1120` and show the desktop page
+  zoomed out. Keep desktop (over 720px) pixel-identical: scope every mobile rule to the media query.
 - **Icons:**
   - Item icons are `File:<Item Name>.png`, upscaled 8× nearest-neighbour.
   - Blocks are rendered as true isometric cubes (horizontal step = cos 30°); don't go back to 2:1.

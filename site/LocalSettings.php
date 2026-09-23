@@ -114,6 +114,16 @@ wfLoadSkin( 'Vector' );
 wfLoadSkin( 'MinervaNeue' );
 $wgDefaultSkin = 'vector';
 $wgVectorResponsive = true;
+# Legacy Vector declares itself non-responsive, so MediaWiki sends phones a 1120px-wide viewport and
+# they show the desktop page zoomed out. Mark it responsive: phones get width=device-width and the
+# mobile layout in MediaWiki:Vector.css (modelled on minecraft.wiki's mobile site).
+$wgExtensionFunctions[] = static function () {
+	global $wgValidSkinNames;
+	if ( isset( $wgValidSkinNames['vector']['args'][0] ) ) {
+		$wgValidSkinNames['vector']['args'][0]['responsive'] = true;
+	}
+};
+$wgDefaultUserOptions['skin-responsive'] = 1;
 
 # Extensions — the same parser-side set the reference wiki uses where bundled.
 wfLoadExtensions( [

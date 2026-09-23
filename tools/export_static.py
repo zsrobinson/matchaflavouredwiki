@@ -196,9 +196,9 @@ SITE_CSS = r"""/* Pagefind Component UI, styled to sit in minecraft.wiki's searc
   width: 100%;
 }
 #p-search { width: 20vw; min-width: 16em; max-width: 26em; }
+/* Phones: the searchbox opens over the mobile header (MediaWiki:Vector.css); 16px text keeps iOS from zooming */
 @media screen and (max-width: 720px) {
-  #p-search { width: auto; min-width: 0; max-width: none; float: none; margin: 0.5em 1em 0 1em; }
-  #p-search pagefind-searchbox { width: 100%; }
+  #p-search pagefind-searchbox { --pf-input-height: 36px; --pf-input-font-size: 16px; --pf-border-radius: 2px; }
 }
 #mfw-search-page {
   --pf-font: inherit;
