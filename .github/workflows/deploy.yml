@@ -2,6 +2,10 @@
 # Runs on every push to main (and on demand). The pack source is fetched at the commit
 # pinned in tools/source.lock, so the output only changes when this repository changes.
 # Needs repository secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID.
+#
+# Fast path: when the pushed tree is exactly one that a PR check built, checked and uploaded as a
+# preview (check.yml), that version is deployed as-is instead of building it again. Manual runs
+# always rebuild.
 name: Build and deploy
 on:
   push:
@@ -10,40 +14,92 @@ on:
 concurrency:
   group: deploy
   cancel-in-progress: true
+env:
+  # one-shot build from an empty wiki: parser cache on, no page-view jobs (site/LocalSettings.php)
+  MFW_BUILD_MODE: ci
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          fetch-depth: 0  # every commit: the sitemap's lastmod comes from each page's git history
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Deploy a checked preview of this exact tree, if there is one
+        id: fast
+        if: github.event_name == 'push'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          # check.yml tags each upload with the tree it built ("tree <sha>"); wrangler lists the 10 newest
+          export TREE=$(git rev-parse 'HEAD^{tree}')
+          id=$(npx -y wrangler@4 versions list --json | python3 -c '
+          import json, os, sys
+          marker = "tree " + os.environ["TREE"]
+          print(next((v["id"] for v in json.load(sys.stdin) if (v.get("annotations") or {}).get("workers/message") == marker), ""))
+          ') || id=
+          # wrangler reads wrangler.jsonc and refuses to run if assets.directory is missing, even for
+          # triggers deploy, which uploads nothing from it
+          mkdir -p dist
+          if [[ -z "$id" ]]; then
+            echo "No preview of tree $TREE: full build."
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          elif npx -y wrangler@4 versions deploy "$id@100%" --yes --message "main ${GITHUB_SHA::7}" \
+               && npx -y wrangler@4 triggers deploy; then  # triggers: the custom domains in wrangler.jsonc
+            echo "Deployed preview version $id (tree $TREE)."
+            echo "build=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::Could not deploy preview version $id: full build."
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          fi
+      # Full build: no preview of this tree (a direct push, or main moved after the PR's last check)
+      - uses: actions/setup-python@v5
+        if: steps.fast.outputs.build != 'false'
+        with:
+          python-version: '3.12'
       - run: pip install pillow
+        if: steps.fast.outputs.build != 'false'
       - name: SEO regression tests
+        if: steps.fast.outputs.build != 'false'
         run: |
           python3 -m unittest discover -s tests -v
           node --test tests/worker.test.mjs
       - name: Fetch sources (pack at pinned commit, vanilla data)
+        if: steps.fast.outputs.build != 'false'
         run: tools/fetch_sources.sh
+      - name: Restore item icons
+        if: steps.fast.outputs.build != 'false'
+        uses: actions/cache@v4
+        with:
+          path: build/images
+          # tools/images.py redraws only if its inputs changed (build/images/.inputs), so an older cache is safe
+          key: images-${{ hashFiles('tools/images.py', 'tools/extract.py', 'tools/extra_textures.txt', 'tools/source.lock', 'tools/mc_version.txt') }}
+          restore-keys: images-
       - name: Start MediaWiki (build-time renderer)
+        if: steps.fast.outputs.build != 'false'
         run: |
           mkdir -p site/data site/images build
           docker compose up -d --build
           sleep 5
           docker exec matcha-wiki bash -c "chown -R www-data:www-data /var/www/data /var/www/html/images && php maintenance/run.php installPreConfigured"
       - name: Build wiki
+        if: steps.fast.outputs.build != 'false'
         run: tools/build.sh
       - name: Check pages
+        if: steps.fast.outputs.build != 'false'
         run: python3 tools/check_site.py
       - name: Export static site (HTML + Pagefind index)
+        if: steps.fast.outputs.build != 'false'
         run: python3 tools/export_static.py --out dist
       - name: Validate static SEO signals
+        if: steps.fast.outputs.build != 'false'
         run: python3 tools/check_seo.py dist
       - name: Deploy to Cloudflare Workers
-        run: npx -y wrangler@4 deploy
+        if: steps.fast.outputs.build != 'false'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx -y wrangler@4 deploy

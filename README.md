@@ -58,6 +58,9 @@ npx wrangler deploy
 
 `.github/workflows/deploy.yml` does all of this on every push to `main`: it fetches the sources at
 the pinned commit, builds the wiki in Docker, checks it, exports it and runs `wrangler deploy`.
+Pull requests get the same build from `check.yml`, uploaded as a preview version (not deployed). The link
+is posted on the PR: `https://pr-<number>-matcha-flavoured-wiki.<account>.workers.dev`. When a push to
+`main` has exactly the tree a PR check built, the deploy promotes that version instead of rebuilding.
 Add the repository secrets `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN`. The token is a custom token with
 Account › Workers Scripts: Edit, plus Zone › Workers Routes: Edit, Zone: Read and DNS: Edit for the three zones. Other static hosts
 (Cloudflare Pages, Netlify, GitHub Pages) can serve `dist/` as is (`_redirects` and `404.html` are included).

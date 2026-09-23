@@ -119,6 +119,9 @@ class Exporter:
         # item icon as the search result image: the first inventory slot image in the infobox
         doc = re.sub(r'(<div class="infobox-invimages">.*?<img )', r'\1data-pagefind-meta="image[src]" ', doc, count=1, flags=re.S)
         doc = doc.replace('class="client-nojs', 'class="client-js')
+        # CI builds serve pages from the parser cache, which stamps each one with a timestamp; with
+        # it gone (and the limit report off in LocalSettings.php) an unchanged page exports identically
+        doc = re.sub(r'<!-- Saved in parser cache with key [^>]*-->\n?', '', doc)
         # red links: keep the styling, remove the edit link
         doc = re.sub(r'<a href="[^"]*action=edit[^"]*redlink=1"([^>]*)>(.*?)</a>', r'<span class="new"\1>\2</span>', doc, flags=re.S)
         # legacy Vector forces a 1120px desktop viewport on phones; give them the device width, so they
