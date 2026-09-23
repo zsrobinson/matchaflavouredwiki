@@ -92,7 +92,14 @@ the swap mid-way.
 - **Icons:**
   - Item icons are `File:<Item Name>.png`, upscaled 8× nearest-neighbour.
   - Blocks are rendered as true isometric cubes (horizontal step = cos 30°); don't go back to 2:1.
-  - Foliage textures are tinted.
+  - **Orientation matches the game's inventory:** the model's north (front) face is on the right, east
+    on the left. That puts the chest latch, a carved pumpkin's face and a furnace front on the right.
+  - Each icon is drawn the way the inventory draws it: the `gui` node of the item definition, which
+    `extract.py` records. Flat items stack their layers with the game's tints; other block models
+    (stairs, fences, beds…) and items drawn by `minecraft:special` entity renderers (chests, sacks,
+    heads, banners, shields, decorated pots, copper golem statues) go through the small 3D renderer in
+    `images.py`. A special type it can't draw falls back to the base model and is listed in the output.
+  - Foliage and grass textures are tinted from the pack's colour maps.
   - Tooltip glyphs are `File:Glyph E0xx.png`, named in `Template:G`, and explained on the "Tooltip" page.
 
 **Pack look** (`MediaWiki:Gadget-mfw-ui.css`)
@@ -173,6 +180,32 @@ the swap mid-way.
   `vanilla-summary/item_components` gives each vanilla item's default components.
 - **Modrinth versions API** provides the release notes (`source/changelogs`).
   **The Modrinth description says there is no official wiki:** never present this site as official.
+
+## Show your work visually
+The user follows along in the chat and wants to *see* what changed, not just read about it. Any
+change to what a reader sees (icons, templates, CSS, station screens, generated tables, the mobile
+layout) gets pictures:
+- **Before and after, side by side.** Draw "before" from `main`'s build, not from memory:
+  - icons: a contact sheet, before row over after row, labelled with the item names, 8–16 per sheet
+    at 2× or more;
+  - pages: matching screenshots at desktop (1280px) and phone (390px, 320px) widths, light and dark
+    where it matters.
+  - A few telling images beat twenty. Say what to look at ("the latch is now on the right").
+- **Show them in the conversation.** Open the key PNGs with the file-reading tool so they render
+  inline, and send the best ones as files. Sub-agents can't show images to the user: they make the
+  sheets, list the paths in their final report, and the coordinator shows the best ones.
+- **Keep them out of git.** Scratch images go in the session's scratch folder, never in the repo.
+  PR descriptions link the preview (see "PRs" above) and list what was checked visually.
+- **Layout changes also get a pixel diff** of the pages they shouldn't affect. For example, phone CSS
+  must leave desktop byte-identical: compare screenshots of the same page before and after, and
+  report "30 of 30 identical", not "looks the same".
+- **Tooling notes:**
+  - Contact sheets are a few lines of PIL. Screenshots use Playwright (`/opt/node22/lib/node_modules/playwright/index.mjs`
+    in cloud sessions) against the local wiki or a static export served with `python3 -m http.server`.
+  - Behind an HTTPS-inspecting proxy, Chromium rejects external sites. Serve their requests through
+    Node instead: `page.route('**/*', async r => r.fulfill({ response: await r.fetch() }))`.
+  - minecraft.wiki's bot check needs curl, as in `vendor_mcw_skin.py`. Use it for look and layout
+    reference only, never for facts.
 
 ## Delegating to agents
 Writer and reviewer briefs are in `wiki/AGENT_BRIEF.md` and `wiki/REVIEW_BRIEF.md`, and the page plan
