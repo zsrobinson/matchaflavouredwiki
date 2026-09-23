@@ -15,7 +15,7 @@
 |-
 | {{ItemLink|Milk Bottle}} || {{MCW|Beetroot Soup}} || <code>beetroot_soup</code> || item
 |-
-| [[Black Sack]] || {{MCW|Black Shulker Box}} || <code>black_shulker_box</code> || block
+| {{ItemLink|Black Sack}} || {{MCW|Black Shulker Box}} || <code>black_shulker_box</code> || block
 |-
 | {{ItemLink|Raw Estus}} || {{MCW|Blaze Powder}} || <code>blaze_powder</code> || item
 |-
@@ -29,13 +29,13 @@
 |-
 | {{ItemLink|Electric Block}} || {{MCW|Block of Redstone}} || <code>redstone_block</code> || block
 |-
-| [[Blue Sack]] || {{MCW|Blue Shulker Box}} || <code>blue_shulker_box</code> || block
+| {{ItemLink|Blue Sack}} || {{MCW|Blue Shulker Box}} || <code>blue_shulker_box</code> || block
 |-
 | {{ItemLink|Baked Pumpkin}} || {{MCW|Breeze Rod}} || <code>breeze_rod</code> || item
 |-
 | {{ItemLink|Chemistry Stand}} || {{MCW|Brewing Stand}} || <code>brewing_stand</code> || block
 |-
-| [[Brown Sack]] || {{MCW|Brown Shulker Box}} || <code>brown_shulker_box</code> || block
+| {{ItemLink|Brown Sack}} || {{MCW|Brown Shulker Box}} || <code>brown_shulker_box</code> || block
 |-
 | [[Cook]] || {{MCW|Butcher}} || <code>villager.butcher</code> || villager profession
 |-
@@ -61,7 +61,7 @@
 |-
 | {{ItemLink|Cracked Hellbricks}} || {{MCW|Cracked Nether Bricks}} || <code>cracked_nether_bricks</code> || block
 |-
-| [[Cyan Sack]] || {{MCW|Cyan Shulker Box}} || <code>cyan_shulker_box</code> || block
+| {{ItemLink|Cyan Sack}} || {{MCW|Cyan Shulker Box}} || <code>cyan_shulker_box</code> || block
 |-
 | {{ItemLink|Dark Malachite}} || {{MCW|Dark Prismarine}} || <code>dark_prismarine</code> || block
 |-
@@ -99,7 +99,7 @@
 |-
 | {{ItemLink|Brown Sandstone Stairs}} || {{MCW|End Stone Brick Stairs}} || <code>end_stone_brick_stairs</code> || block
 |-
-| [[Brown Sandstone Wall]] || {{MCW|End Stone Brick Wall}} || <code>end_stone_brick_wall</code> || block
+| {{ItemLink|Brown Sandstone Wall}} || {{MCW|End Stone Brick Wall}} || <code>end_stone_brick_wall</code> || block
 |-
 | {{ItemLink|Brown Sandstone}} || {{MCW|End Stone Bricks}} || <code>end_stone_bricks</code> || block
 |-
@@ -129,9 +129,9 @@
 |-
 | {{ItemLink|Golden Crown}} || {{MCW|Golden Helmet}} || <code>golden_helmet</code> || item
 |-
-| [[Gray Sack]] || {{MCW|Gray Shulker Box}} || <code>gray_shulker_box</code> || block
+| {{ItemLink|Gray Sack}} || {{MCW|Gray Shulker Box}} || <code>gray_shulker_box</code> || block
 |-
-| [[Green Sack]] || {{MCW|Green Shulker Box}} || <code>green_shulker_box</code> || block
+| {{ItemLink|Green Sack}} || {{MCW|Green Shulker Box}} || <code>green_shulker_box</code> || block
 |-
 | {{ItemLink|Sulfur Chunk}} || {{MCW|Gunpowder}} || <code>gunpowder</code> || item
 |-
@@ -157,13 +157,13 @@
 |-
 | [[Mouthpiece]] || {{MCW|Librarian}} || <code>villager.librarian</code> || villager profession
 |-
-| [[Light Blue Sack]] || {{MCW|Light Blue Shulker Box}} || <code>light_blue_shulker_box</code> || block
+| {{ItemLink|Light Blue Sack}} || {{MCW|Light Blue Shulker Box}} || <code>light_blue_shulker_box</code> || block
 |-
-| [[Light Gray Sack]] || {{MCW|Light Gray Shulker Box}} || <code>light_gray_shulker_box</code> || block
+| {{ItemLink|Light Gray Sack}} || {{MCW|Light Gray Shulker Box}} || <code>light_gray_shulker_box</code> || block
 |-
-| [[Lime Sack]] || {{MCW|Lime Shulker Box}} || <code>lime_shulker_box</code> || block
+| {{ItemLink|Lime Sack}} || {{MCW|Lime Shulker Box}} || <code>lime_shulker_box</code> || block
 |-
-| [[Magenta Sack]] || {{MCW|Magenta Shulker Box}} || <code>magenta_shulker_box</code> || block
+| {{ItemLink|Magenta Sack}} || {{MCW|Magenta Shulker Box}} || <code>magenta_shulker_box</code> || block
 |-
 | {{ItemLink|Sweet Berry Mash}} || {{MCW|Magma Cream}} || <code>magma_cream</code> || item
 |-
@@ -181,7 +181,7 @@
 |-
 | {{ItemLink|Hellbrick Stairs}} || {{MCW|Nether Brick Stairs}} || <code>nether_brick_stairs</code> || block
 |-
-| [[Hellbrick Wall]] || {{MCW|Nether Brick Wall}} || <code>nether_brick_wall</code> || block
+| {{ItemLink|Hellbrick Wall}} || {{MCW|Nether Brick Wall}} || <code>nether_brick_wall</code> || block
 |-
 | {{ItemLink|Hellbricks}} || {{MCW|Nether Bricks}} || <code>nether_bricks</code> || block
 |-
@@ -235,7 +235,7 @@
 |-
 | {{ItemLink|Ochre Phosphor Lamp}} || {{MCW|Ochre Froglight}} || <code>ochre_froglight</code> || block
 |-
-| [[Orange Sack]] || {{MCW|Orange Shulker Box}} || <code>orange_shulker_box</code> || block
+| {{ItemLink|Orange Sack}} || {{MCW|Orange Shulker Box}} || <code>orange_shulker_box</code> || block
 |-
 | {{ItemLink|Pearlescent Phosphor Lamp}} || {{MCW|Pearlescent Froglight}} || <code>pearlescent_froglight</code> || block
 |-
@@ -247,7 +247,7 @@
 |-
 | {{ItemLink|Molasses}} || {{MCW|Piglin Spawn Egg}} || <code>piglin_spawn_egg</code> || item
 |-
-| [[Pink Sack]] || {{MCW|Pink Shulker Box}} || <code>pink_shulker_box</code> || block
+| {{ItemLink|Pink Sack}} || {{MCW|Pink Shulker Box}} || <code>pink_shulker_box</code> || block
 |-
 | [[Speleothem]] || {{MCW|Pointed Dripstone}} || <code>pointed_dripstone</code> || block
 |-
@@ -267,9 +267,9 @@
 |-
 | {{ItemLink|Malachite Stairs}} || {{MCW|Prismarine Stairs}} || <code>prismarine_stairs</code> || block
 |-
-| [[Malachite Wall]] || {{MCW|Prismarine Wall}} || <code>prismarine_wall</code> || block
+| {{ItemLink|Malachite Wall}} || {{MCW|Prismarine Wall}} || <code>prismarine_wall</code> || block
 |-
-| [[Purple Sack]] || {{MCW|Purple Shulker Box}} || <code>purple_shulker_box</code> || block
+| {{ItemLink|Purple Sack}} || {{MCW|Purple Shulker Box}} || <code>purple_shulker_box</code> || block
 |-
 | {{ItemLink|Tattered Leather}} || {{MCW|Rabbit Hide}} || <code>rabbit_hide</code> || item
 |-
@@ -285,11 +285,11 @@
 |-
 | {{ItemLink|Red Hellbrick Stairs}} || {{MCW|Red Nether Brick Stairs}} || <code>red_nether_brick_stairs</code> || block
 |-
-| [[Red Hellbrick Wall]] || {{MCW|Red Nether Brick Wall}} || <code>red_nether_brick_wall</code> || block
+| {{ItemLink|Red Hellbrick Wall}} || {{MCW|Red Nether Brick Wall}} || <code>red_nether_brick_wall</code> || block
 |-
 | {{ItemLink|Red Hellbricks}} || {{MCW|Red Nether Bricks}} || <code>red_nether_bricks</code> || block
 |-
-| [[Red Sack]] || {{MCW|Red Shulker Box}} || <code>red_shulker_box</code> || block
+| {{ItemLink|Red Sack}} || {{MCW|Red Shulker Box}} || <code>red_shulker_box</code> || block
 |-
 | {{ItemLink|Electric Comparator}} || {{MCW|Redstone Comparator}} || <code>comparator</code> || block
 |-
@@ -311,7 +311,7 @@
 |-
 | {{ItemLink|Iron Shears}} || {{MCW|Shears}} || <code>shears</code> || item
 |-
-| [[Sack]] || {{MCW|Shulker Box}} || <code>shulker_box</code> || block
+| {{ItemLink|Sack}} || {{MCW|Shulker Box}} || <code>shulker_box</code> || block
 |-
 | {{ItemLink|Shakudo Alloy}} || {{MCW|Shulker Shell}} || <code>shulker_shell</code> || item
 |-
@@ -343,11 +343,11 @@
 |-
 | {{ItemLink|Wheat Grain}} || {{MCW|Wheat Seeds}} || <code>wheat_seeds</code> || item
 |-
-| [[White Sack]] || {{MCW|White Shulker Box}} || <code>white_shulker_box</code> || block
+| {{ItemLink|White Sack}} || {{MCW|White Shulker Box}} || <code>white_shulker_box</code> || block
 |-
 | {{ItemLink|Ramen Stock}} || {{MCW|Wither Skeleton Spawn Egg}} || <code>wither_skeleton_spawn_egg</code> || item
 |-
-| [[Yellow Sack]] || {{MCW|Yellow Shulker Box}} || <code>yellow_shulker_box</code> || block
+| {{ItemLink|Yellow Sack}} || {{MCW|Yellow Shulker Box}} || <code>yellow_shulker_box</code> || block
 |-
 | {{ItemLink|Paneer Curry Stock}} || {{MCW|Zoglin Spawn Egg}} || <code>zoglin_spawn_egg</code> || item
 |-

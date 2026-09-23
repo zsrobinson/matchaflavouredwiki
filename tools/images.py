@@ -102,6 +102,31 @@ def iso_cube(top, left, right, height=1.0):
     return sq.resize((SIZE, SIZE), Image.LANCZOS)
 
 
+FOLIAGE = (72, 181, 24)   # plains grass/foliage colour, as the game tints grayscale textures
+GRASS = (145, 189, 89)
+
+
+def tint_if_foliage(im, faces, which):
+    path = ''
+    for k in ((which,) + ('top', 'all', 'side')):
+        if k in faces:
+            path = faces[k]
+            break
+    base = os.path.basename(getattr(im, 'filename', '') or path)
+    if not any(x in base for x in ('grass_block_top', 'leaves', 'vine', 'fern', 'short_grass', 'tall_grass', 'lily_pad')):
+        return im
+    if 'cherry' in base or 'azalea' in base or 'pale_oak' in base:
+        return im
+    col = GRASS if 'grass' in base or 'fern' in base else FOLIAGE
+    im = first_frame(im.convert('RGBA'))
+    px = im.load()
+    for y in range(im.size[1]):
+        for x in range(im.size[0]):
+            r, g, b, a = px[x, y]
+            px[x, y] = (r * col[0] // 255, g * col[1] // 255, b * col[2] // 255, a)
+    return im
+
+
 def safe(name):
     return re.sub(r'[\\/:*?"<>|#\[\]{}]', '', name).strip()
 
@@ -117,15 +142,17 @@ def item_icon(item):
     flat_keys = ('cross', 'plant', 'texture')
     for k in flat_keys:
         if k in faces and not any(x in faces for x in ('all', 'side', 'top', 'end')):
-            return upscale(Image.open(faces[k]))
+            return upscale(tint_if_foliage(Image.open(faces[k]), faces, k))
     def pick(*keys):
         for k in keys:
             if k in faces:
                 return Image.open(faces[k])
         return Image.open(next(iter(faces.values())))
-    top = pick('top', 'end', 'all', 'side', 'texture', 'particle')
-    side = pick('side', 'front', 'all', 'texture', 'particle', 'top')
-    front = pick('front', 'side', 'all', 'texture', 'particle')
+    top = pick('top', 'end', 'all', 'side', 'wall', 'wool', 'pattern', 'texture', 'particle')
+    side = pick('side', 'front', 'all', 'wall', 'wool', 'pattern', 'texture', 'particle', 'top')
+    front = pick('front', 'side', 'all', 'wall', 'wool', 'pattern', 'texture', 'particle')
+    top, side, front = (tint_if_foliage(top, faces, 'top'), tint_if_foliage(side, faces, 'side'),
+                        tint_if_foliage(front, faces, 'front'))
     height = 0.5 if name.endswith(' slab') else 1.0
     if any(name.endswith(s) for s in (' carpet', ' pressure plate')):
         height = 1 / 16

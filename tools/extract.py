@@ -498,8 +498,21 @@ def resolve_item_model(model_ref):
 
 def first_model(node):
     if isinstance(node, dict):
-        if node.get('type', '').endswith('model') and 'model' in node and isinstance(node['model'], str):
+        t = node.get('type', '')
+        if t.endswith('model') and 'model' in node and isinstance(node['model'], str):
             return node['model']
+        if t.endswith('special') and isinstance(node.get('base'), str):
+            return node['base']  # entity-rendered item: use its base model's particle texture
+        if t.endswith('select') and node.get('property', '').endswith('display_context'):
+            for case in node.get('cases', []):
+                when = case.get('when')
+                when = when if isinstance(when, list) else [when]
+                if 'gui' in when:
+                    m = first_model(case.get('model'))
+                    if m:
+                        return m
+            if node.get('fallback'):
+                return first_model(node['fallback'])
         for k in ('fallback', 'model', 'on_false', 'on_true', 'cases', 'entries'):
             if k in node:
                 m = first_model(node[k])
@@ -551,7 +564,7 @@ def icon_for(item):
         if not m:
             continue
         tex, parent = model_textures(m)
-        order = ['layer0', 'all', 'side', 'front', 'top', 'texture', 'particle', 'end', 'cross', 'plant']
+        order = ['layer0', 'all', 'side', 'front', 'top', 'wall', 'wool', 'pattern', 'texture', 'end', 'cross', 'plant', 'particle']
         for k in order:
             if k in tex and not tex[k].startswith('#'):
                 p = texture_path(tex[k])

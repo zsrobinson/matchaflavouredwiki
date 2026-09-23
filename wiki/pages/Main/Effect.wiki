@@ -1,0 +1,29 @@
+{{Vanilla|Effect}}
+{{Infobox
+|title=Effect
+|image=Effect Resistance.png
+|imagesize=64px
+|type=Mechanic
+}}
+'''Effects''', also called '''status effects''', are the timed modifiers that come from [[food]], [[intrinsic]]s and some items. Matcha Flavoured takes most vanilla potion effects out of [[Brewing|brewing]] and puts them into food instead. Each [[ingredient]] carries one effect, and cooking it into more elaborate dishes makes the effect last longer.<ref>{{Cite video|quote=I made the decision to offload most potion effects into foods.}}</ref>
+
+== Obtaining ==
+[[Food]] is the main source. The effect a food grants is shown in its tooltip as a line in blue, with the pack's icon for the effect and the duration (for example {{G|Armor}} Resistance (8:00) on a [[pumpkin empanada]]).<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_empanada.json}}</ref> Equipment [[intrinsic]]s such as [[Warding]] or [[Divinity]] apply their effects while the item is worn or held. See each effect's page for a full list of its sources.
+
+Healing from food is a hidden [[EffectLink|Regeneration]] III effect that doesn't appear on the HUD. The hearts at the top of a food's tooltip show how much it heals. See [[Health]].
+
+== List of effects ==
+The table counts the distinct foods, items and [[enchantment]]s that grant each effect in the current version. Hidden healing is not counted.
+
+{{Data/Effects}}
+
+== See also ==
+* [[Intrinsic]]
+* [[Food]]
+* [[Health]]
+
+== References ==
+{{Reflist}}
+
+[[Category:Effects]]
+[[Category:Mechanics]]

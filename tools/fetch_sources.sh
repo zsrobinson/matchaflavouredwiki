@@ -4,20 +4,29 @@
 #   source/vanilla-data      vanilla data for the pack's Minecraft version (misode/mcmeta), for diffs
 #   source/vanilla-assets    vanilla assets (lang, textures, models)
 #   source/changelogs/       official Modrinth release notes, one file per version
-# Usage: tools/fetch_sources.sh [minecraft-version]   (default: read from tools/mc_version.txt)
+# Usage:
+#   tools/fetch_sources.sh            check out the pack at the commit pinned in tools/source.lock
+#   tools/fetch_sources.sh --update   move to the latest origin/main and rewrite tools/source.lock
+# The Minecraft version for vanilla data is read from tools/mc_version.txt.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-MC="${1:-$(cat tools/mc_version.txt)}"
+UPDATE=0; [[ "${1:-}" == "--update" ]] && UPDATE=1
+MC="$(cat tools/mc_version.txt)"
 mkdir -p source source/changelogs
 
 if [[ -d source/matcha-flavoured/.git ]]; then
-  git -C source/matcha-flavoured fetch -q origin && git -C source/matcha-flavoured reset -q --hard origin/main
+  git -C source/matcha-flavoured fetch -q origin
 else
   git clone -q https://github.com/kleiwright/matcha-flavoured.git source/matcha-flavoured
 fi
-if [[ -n "${MATCHA_REF:-}" ]]; then git -C source/matcha-flavoured checkout -q "$MATCHA_REF"; fi
+if [[ $UPDATE == 1 ]]; then
+  git -C source/matcha-flavoured checkout -q --detach origin/main
+  git -C source/matcha-flavoured rev-parse HEAD > tools/source.lock
+else
+  git -C source/matcha-flavoured checkout -q --detach "$(cat tools/source.lock)"
+fi
 
-for kind in data-json:vanilla-data assets:vanilla-assets; do
+for kind in data-json:vanilla-data assets:vanilla-assets summary:vanilla-summary; do
   tag="$MC-${kind%%:*}"; dir="source/${kind##*:}"
   have="$(cat "$dir/.mcmeta-tag" 2>/dev/null || true)"
   if [[ "$have" != "$tag" ]]; then

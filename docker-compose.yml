@@ -7,10 +7,13 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./site/LocalSettings.php:/var/www/html/LocalSettings.php:ro
+      - ./site:/var/www/site:ro
       - ./site/apache-rewrite.conf:/etc/apache2/conf-enabled/matcha-rewrite.conf:ro
       - ./site/assets:/var/www/html/assets:ro
       - ./site/data:/var/www/data
       - ./site/images:/var/www/html/images
       - ./build:/build:ro
+    environment:
+      # Directory mount (not a single-file mount) so edits to LocalSettings.php are seen immediately
+      MW_CONFIG_FILE: /var/www/site/LocalSettings.php
     restart: unless-stopped

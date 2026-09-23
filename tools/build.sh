@@ -12,9 +12,28 @@ python3 tools/build_xml.py
 
 C=matcha-wiki
 docker exec "$C" php maintenance/run.php importDump --no-updates /build/import.xml
+mv build/import_hashes.json.pending build/import_hashes.json
 if [[ "${1:-}" != "--no-images" ]]; then
-  docker exec "$C" php maintenance/run.php importImages --skip-dupes --overwrite \
-    --comment "Texture from the Matcha Flavoured resource pack (CC BY-NC-SA 4.0)" /build/images png gif
+  # Upload only images whose bytes changed since the last upload (all of them the first time).
+  python3 - <<'PY'
+import hashlib, json, os, shutil
+src, dst, cache = 'build/images', 'build/images_changed', 'build/image_hashes.json'
+old = json.load(open(cache)) if os.path.exists(cache) else {}
+shutil.rmtree(dst, ignore_errors=True); os.makedirs(dst)
+new = {}
+for f in sorted(os.listdir(src)):
+    h = hashlib.sha1(open(os.path.join(src, f), 'rb').read()).hexdigest()
+    new[f] = h
+    if old.get(f) != h:
+        shutil.copy(os.path.join(src, f), os.path.join(dst, f))
+json.dump(new, open(cache + '.pending', 'w'))
+print('images to upload:', len(os.listdir(dst)))
+PY
+  if [[ -n "$(ls build/images_changed)" ]]; then
+    docker exec "$C" php maintenance/run.php importImages --overwrite \
+      --comment "Texture from the Matcha Flavoured resource pack (CC BY-NC-SA 4.0)" /build/images_changed png gif
+  fi
+  mv build/image_hashes.json.pending build/image_hashes.json
 fi
 docker exec "$C" php maintenance/run.php rebuildrecentchanges >/dev/null
 docker exec "$C" php maintenance/run.php initSiteStats --update >/dev/null

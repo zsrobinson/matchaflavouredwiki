@@ -28,7 +28,8 @@ from collections import defaultdict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = json.load(open(os.path.join(ROOT, 'build', 'data.json'), encoding='utf-8'))
 VSUM = json.load(open(os.path.join(ROOT, 'source', 'vanilla-summary', 'item_components', 'data.min.json')))
-GEN = os.path.join(ROOT, 'wiki', 'generated')
+GEN_FINAL = os.path.join(ROOT, 'wiki', 'generated')
+GEN = GEN_FINAL + '.tmp'
 HAND = os.path.join(ROOT, 'wiki', 'pages')
 IMAGES = os.path.join(ROOT, 'build', 'images')
 
@@ -994,6 +995,52 @@ def stub_article(name, item):
     return '\n'.join(body)
 
 
+# ------------------------------------------------------------------ status effects
+def effect_sources():
+    src = defaultdict(list)  # effect name -> [(kind, item/enchantment, level, duration text, sort)]
+    for name, it in ITEMS.items():
+        c = effective(it)
+        effs = consume_effects(c)
+        if effs:
+            hp, others = heal_from_effects(effs)
+            for e in others:
+                d = e.get('duration', 0)
+                src[effect_name(e['id'])].append(('Food' if item_type(it, c) == 'Food' else 'Consumable', name,
+                                                  e.get('amplifier', 0) + 1, ticks(d) if d >= 0 else '∞', d, e.get('probability', 1)))
+    for eid, e in ENCH.items():
+        blob = json.dumps(e.get('effects') or {})
+        for m in re.finditer(r'"to_apply": "([a-z_:]+)"', blob):
+            src[effect_name(m.group(1))].append(('Enchantment', ench_name(eid), None, 'while active', 10 ** 9, 1))
+    return src
+
+
+def effect_pages(n):
+    src = effect_sources()
+    overview = ['{| class="wikitable sortable"', '! Effect !! Sources in Matcha Flavoured']
+    for eff, rows in sorted(src.items()):
+        lines = ['{| class="wikitable sortable"', '! Source !! Kind !! Level !! Duration']
+        seen = set()
+        for kind, what, lvl, dur, sortv, prob in sorted(rows, key=lambda r: (r[0], -r[4], r[1])):
+            key = (kind, what, lvl, dur)
+            if key in seen:
+                continue
+            seen.add(key)
+            link = ('{{ItemLink|%s}}' % safe(what)) if kind != 'Enchantment' else '[[%s]]' % what
+            lines.append('|-\n| %s || %s || %s || data-sort-value="%d" | %s%s' % (
+                link, kind, roman(lvl) if lvl else '—', sortv, dur, (' (%d%% chance)' % round(prob * 100)) if prob < 1 else ''))
+        lines.append('|}')
+        write('Template', 'Data/Effect/' + eff, '<includeonly>' + '\n'.join(lines) + '</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+        overview.append('|-\n| {{EffectLink|%s}} || %d' % (eff, len(seen)))
+        n['effects'] += 1
+        if not hand_exists('Main', eff):
+            write('Main', eff, (
+                '{{Vanilla}}\n{{Stub}}\n{{Infobox|title=%s|image=Effect %s.png|imagesize=64px|type=[[Effect|Status effect]]}}\n'
+                "'''%s''' is a [[effect|status effect]]. In [[Matcha Flavoured]] it is granted by the following foods, "
+                'items and [[intrinsic]]s.\n\n== Sources ==\n{{Data/Effect/%s}}\n\n[[Category:Effects]]') % (eff, eff, eff, eff))
+    overview.append('|}')
+    write('Template', 'Data/Effects', '<includeonly>' + '\n'.join(overview) + '</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+
+
 # ------------------------------------------------------------------ main
 def main():
     if os.path.isdir(GEN):
@@ -1043,6 +1090,15 @@ def main():
         lua.append('\t[%s] = { %s },' % (json.dumps(k), ', '.join(json.dumps(safe(x)) for x in ALIASES[k])))
     lua.append('}\nreturn aliases')
     write('Module', 'Inventory slot/Aliases', '\n'.join(lua))
+    effect_pages(n)
+    # swap in the new tree in one step so concurrent readers never see a half-written folder
+    old = GEN_FINAL + '.old'
+    if os.path.isdir(old):
+        shutil.rmtree(old)
+    if os.path.isdir(GEN_FINAL):
+        os.rename(GEN_FINAL, old)
+    os.rename(GEN, GEN_FINAL)
+    shutil.rmtree(old, ignore_errors=True)
     print(dict(n))
 
 
