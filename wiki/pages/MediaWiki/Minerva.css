@@ -1,0 +1,36 @@
+/* Matcha Flavoured Wiki on the mobile site (MobileFrontend + Minerva), on top of minecraft.wiki's
+ * Minerva skin (Gadget-mcw-minerva.css). Template and page styles are shared with desktop
+ * (MediaWiki:Common.css). The static export also adds the header search and the sidebar's
+ * sections to the menu drawer (tools/export_static.py). */
+
+/* Logo next to the wiki name, as minecraft.wiki's header shows its logo */
+.minerva-header .branding-box a > span::before {
+	content: '';
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	margin-right: 0.4em;
+	vertical-align: middle;
+	background: url('/assets/Wiki.png') center / contain no-repeat;
+	image-rendering: pixelated;
+}
+.minerva-header .branding-box a > span { white-space: nowrap; font-weight: bold; }
+
+/* Git-managed wiki: no watchlist, accounts, mobile settings page or random page */
+#page-actions-watch, #pt-preferences, #p-personal, .menu__item--random, .menu__item--disclaimers,
+.mw-editsection { display: none !important; }
+
+/* Page actions (Edit on GitHub, View source, View history) sit together on the right */
+.page-actions-menu__list { justify-content: flex-end; gap: 4px; }
+.page-actions-menu__list-item:first-child { flex-grow: 0; }
+
+/* Menu drawer: the desktop sidebar's sections */
+.mfw-drawer-section .mfw-drawer-heading {
+	padding: 12px 16px 4px;
+	font-size: 0.8125rem;
+	font-weight: bold;
+	color: var(--color-subtle, #54595d);
+}
+
+/* Source-file line in the footer (site/GitLinks.php) */
+#footer-info-mfw-source code { background: none; border: 0; color: inherit; padding: 0; font-size: 95%; }

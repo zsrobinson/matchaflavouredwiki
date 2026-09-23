@@ -1,0 +1,703 @@
+/* Vendored from minecraft.wiki by tools/vendor_mcw_skin.py. Do not edit; rerun the script.
+ * Source pages: MediaWiki:Minerva.css, MediaWiki:Minerva-theme-dark.css, ext.gadget.darkmode, ext.gadget.mobileNavbox, MediaWiki:Gadget-mobileSidebar.css, ext.gadget.sound-styles. Licensed CC BY-NC-SA 3.0 by the Minecraft Wiki. */
+
+/* ===== MediaWiki:Minerva.css ===== */
+/* All CSS here will be loaded for users of the MinervaNeue skin */
+
+/**
+ * See [[MediaWiki:Common.css]] for desktop and mobile styles, e.g. templates.
+ *
+ * See [[MediaWiki:Vector.css]] for desktop theme related styles.
+ * See [[MediaWiki:Vector-theme-dark.css]] for desktop dark theme related styles.
+ *
+ * See [[MediaWiki:Minerva-theme-dark.css]] for mobile dark theme related styles.
+ */
+
+/* Default styles [[File:Mobile-header.png]] */
+:root {
+	--base-background: url('/assets/mcw/Background.png');
+	--header-background: url('/assets/mcw/Header-background.png');
+	--mobile-header-background: url('/assets/mcw/Mobile-header.png');
+	--mobile-header-background-color: #58B5FE;
+	--content-background-color: #E6EFF4;
+	--content-text-color: #202122;
+}
+
+/* Dungeons [[File:Mobile-header-dungeons.png]] */
+html body.rootpage-Minecraft_Dungeons,
+html body.rootpage-Talk_Minecraft_Dungeons,
+html body.ns-10000:not(.rootpage-Dungeons_Wiki),
+html body.ns-10001:not(.rootpage-Dungeons_talk_Wiki)  {
+	--header-background: url('/assets/mcw/Header-background-dungeons.png');
+	--mobile-header-background: url('/assets/mcw/Mobile-header-dungeons.png');
+	--mobile-header-background-color: #FEA158;
+	--content-background-color: #F2EEE7;
+}
+
+/* Dungeons 2 [[File:Mobile-header-dungeons2.png]] */
+html body.rootpage-Minecraft_Dungeons_II,
+html body.rootpage-Talk_Minecraft_Dungeons_II,
+html body.ns-10000.rootpage-Dungeons_Wiki,
+html body.ns-10001.rootpage-Dungeons_talk_Wiki,
+html body.ns-10014,
+html body.ns-10015  {
+	--header-background: url('/assets/mcw/Header-background-dungeons2.png');
+	--mobile-header-background: url('/assets/mcw/Mobile-header-dungeons2.png');
+	--mobile-header-background-color: #343434;
+	--content-background-color: #E3E8F1;
+}
+
+/* Earth [[File:Mobile-header-earth.png]] */
+html body.rootpage-Minecraft_Earth,
+html body.rootpage-Talk_Minecraft_Earth,
+html body.ns-10002,
+html body.ns-10003 {
+	--header-background: url('/assets/mcw/Header-background-earth.png');
+	--mobile-header-background: url('/assets/mcw/Mobile-header-earth.png');
+	--mobile-header-background-color: #58B5FE;
+	--content-background-color: #E5EDFF;
+}
+
+/* Legends [[File:Mobile-header-legends.png]] */
+html body.rootpage-Minecraft_Legends,
+html body.rootpage-Talk_Minecraft_Legends,
+html body.ns-10006,
+html body.ns-10007 {
+	--header-background: url('/assets/mcw/Header-background-legends.png');
+	--mobile-header-background: url('/assets/mcw/Mobile-header-legends.png');
+	--mobile-header-background-color: #58B5FE;
+	--content-background-color: #DAEAE9;
+}
+
+/* Story Mode [[File:Mobile-header-storymode.png]] */
+body.rootpage-Minecraft_Story_Mode,
+body.rootpage-Talk_Minecraft_Story_Mode,
+body.rootpage-Minecraft_Story_Mode_-_Season_Two,
+body.rootpage-Talk_Minecraft_Story_Mode_-_Season_Two,
+body.ns-10004,
+body.ns-10005 {
+	--header-background: url('/assets/mcw/Header-background-storymode.png');
+	--mobile-header-background: url('/assets/mcw/Mobile-header-storymode.png');
+	--mobile-header-background-color: #9E9AE4;
+	--content-background-color: #f9eddc;
+}
+
+/* Movie [[File:Mobile-header-movie.png]] */
+body.rootpage-A_Minecraft_Movie,
+body.rootpage-Talk_A_Minecraft_Movie,
+body.rootpage-A_Minecraft_Movie_Squared,
+body.rootpage-Talk_A_Minecraft_Movie_Squared,
+body.ns-10012,
+body.ns-10013 {
+	--header-background: url('/assets/mcw/Header-background-movie.png');
+	--mobile-header-background: url('/assets/mcw/Mobile-header-movie.png');
+    --mobile-header-background-color: #70A8E6;
+	--content-background-color: #E8E3E1;
+}
+
+/** Minecraft skin **/
+.overlay.search-overlay,
+.overlay.editor-overlay {
+	padding-top: 90px;
+}
+
+/* Grass header background */
+.skin-minerva #mw-mf-page-center .header-container,
+.skin-minerva .search-overlay .header-container {
+    position: relative;
+    background: var(--mobile-header-background) left bottom repeat-x,linear-gradient(0deg,var(--content-background-color) 50%,var(--mobile-header-background-color) 50%);
+    background-size: 48px auto;
+    right: 0;
+    left: 0;
+    height: 96px;
+}
+
+.skin-minerva .header-container {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.overlay-header,
+.minerva-header {
+	padding-top: 7px;
+}
+
+/* Hide grass when editing on small screens to maximise editing space */
+@media all and (max-width: 999px) {
+	.overlay-enabled .editor-overlay {
+		padding-top: 3.35em;
+	}
+	.overlay-enabled .overlay.editor-overlay .header-container:after {
+		bottom: 0;
+		background-position: left bottom -29px;
+	}
+}
+
+.overlay .overlay-header-container.header-container {
+	z-index: 2;
+}
+
+.minerva-header .branding-box {
+    opacity: 1;
+}
+
+.notification-count {
+	background: none;
+}
+
+/* Background color */
+.overlay-enabled,
+.overlay-content,
+.mw-body {
+	background-color: var(--content-background-color);
+}
+
+/* Fix editor colour */
+/*#wikitext-editor {*/
+/*	background-color: #FFF;*/
+/*}*/
+
+/* Give the footer the stone texture: [[File:Mobile-background.png]] */
+.minerva-footer {
+	background: url('/assets/mcw/Mobile-background.png') #202020;
+}
+
+footer,
+footer a:active,
+#footer,
+#footer a:active {
+	color: #FFF;
+}
+
+footer a,
+#footer a,
+footer a:visited,
+#footer a:visited {
+    color: #BFBFBF;
+}
+
+footer a.external,
+#footer a.external {
+	background: none !important;
+	padding: 0 !important;
+}
+
+.last-modified-bar {
+	background-color: #EAECF0;
+}
+
+/* Fix dumb default styling */
+/*.content code,*/
+/*.content pre {*/
+/*	background-color: #f9f9f9;*/
+/*	border: 1px solid #ddd;*/
+/*	color: black;*/
+/*}*/
+
+.content code {
+	border-radius: 2px;
+}
+
+@media all and (max-width: 768px) {
+	.gallerybox .thumb > div {
+		margin: 15px !important;
+		width: auto !important;
+	}
+}
+
+@media all and (max-width: 720px) {
+	.gallery.mw-gallery-traditional .gallerybox {
+		width: 155px !important;
+	}
+	.gallery.mw-gallery-traditional .gallerybox .thumb {
+		width: 150px !important;
+	}
+	.gallery.mw-gallery-nolines .gallerybox {
+		width: 125px !important;
+	}
+	.gallery.mw-gallery-nolines .gallerybox .thumb {
+		width: 120px !important;
+	}
+}
+
+/*.wikitable > tbody {*/
+/*	background-color: #f8f9fa;*/
+/*}*/
+
+/* Fix footer hlist separator colour */
+.footer-content .hlist-separated li:after {
+	color: #FFF;
+}
+
+/* Fix hlist gaps being too wide */
+.hlist > ul li {
+	margin-right: 0;
+}
+
+/* Fix changes autocollapsing in recent changes */
+.mw-changeslist-edit, .mw-changeslist-line {
+	display: table-row !important;
+}
+.mw-changeslist-line-inner {
+	padding-top: 1.5em;
+}
+.mw-enhanced-rc-nested {
+    padding-top: 0.5em;
+}
+
+/* Rollback link as a button */
+.mw-rollback-link a {
+	padding: 5px 12px;
+	border: 1px solid var(--border-color-base);
+	font-weight: bold;
+}
+
+/* Width is based on existing minerva calculations */
+@media all and (max-width: 639px) {
+	/* Display rollback button on own line to stop clipping */
+	.mw-rollback-link {
+	    display: block;
+	}
+}
+
+/* Alternating cell background */
+.alternatecells:nth-child(odd) {
+	background-color: #F9F9F9;
+}
+
+/* Alternating table rows, primarily used with [[Template:Infobox row]] */
+/* .alternaterows tr:nth-child(even),
+.infobox-rows tr:nth-child(even),
+.alternaterows tr:nth-child(even) td,
+.infobox-rows tr:nth-child(even) td {
+	background-color: #F9F9F9;
+} */
+
+/* Show TOC */
+@media (max-width: 512px) {
+	.skin-minerva .toc-mobile {
+		display: block;
+	}
+}
+
+/* Turn a list into a tree view style (See [[.minecraft]]) */
+.treeview {
+	margin-top: 0.3em;
+}
+
+.treeview .treeview-header {
+	padding-left: 3px;
+	font-weight: bold;
+}
+.treeview .treeview-header:last-child {
+	border-color: #636363 !important;
+	border-left-style: dotted;
+}
+.treeview .treeview-header:not(:last-child):before {
+	content: none;
+}
+.treeview .treeview-header:last-child:before {
+	border-bottom: 0;
+}
+
+.treeview ul,
+.treeview li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.treeview li li {
+	position: relative;
+	padding-left: 13px;
+	margin-left: 7px;
+	border-left: 1px solid #636363;
+}
+.treeview li li:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -1px;
+	width: 11px;
+	height: 11px;
+	border-bottom: 1px solid #636363;
+}
+
+.treeview li li:last-child:not(.treeview-continue) {
+	border-color: transparent;
+}
+.treeview li li:last-child:not(.treeview-continue):before {
+	border-left: 1px solid #636363;
+	width: 10px;
+}
+
+.nbttree-inherited {
+	background-color: #E6E6FA;
+}
+
+/* Try to use nearest neighbour scaling for pixelated images */
+.pixel-image,
+.invslot-item-image,
+.sprite {
+	image-rendering: optimizeSpeed;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: optimize-contrast;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+
+/* Hatnotes and disambiguation notices */
+.hatnote {
+	font-style: italic;
+}
+.hatnote i {
+	font-style: normal;
+}
+div.hatnote {
+    padding-left: 0;
+	margin-bottom: 0.5em;
+    font-size: 0.8125rem;
+}
+div.hatnote + div.hatnote {
+	margin-top: -0.5em;
+}
+div.msgbox {
+    font-size: 0.8125rem;
+    max-width: revert !important;
+}
+@media all and (min-width: 511px) {
+	div.msgbox-subtle {
+		max-width: 306px !important;
+	}
+}
+/* Different layout for msgbox */
+.msgbox {
+	display: block;
+}
+.msgbox .msgbox-icon {
+	float: right;
+}
+.msgbox .msgbox-image {
+	margin: 0;
+}
+
+/* Fix animated infobox images shifting the screen when images have different dimensions */
+.content span.animated a > img,
+.content span.animated a > .lazy-image-placeholder,
+.content noscript span.animated > img {
+    max-width: initial !important;
+}
+
+/* Fix infobox text being way too large */
+#mw-mf-viewport .notaninfobox p {
+	font-size: 100%;
+	padding: 0.2em 0;
+}
+
+body.page-Main_Page #firstHeading {
+    display: none;
+}
+
+/* Hide nomobile */
+.nomobile {
+	display: none;
+}
+
+/* Remove blank space when editing */
+.action-edit .overlay-header-container + .overlay-content {
+    padding-top: 0;
+}
+.editor-overlay .content {
+    margin-top: 0;
+}
+
+/* Add a background color to the overlay header and remove the padding */
+.overlay-header {
+    background-color: var(--content-background-color);
+    padding-top: 0;
+}
+
+.content li {
+    margin-bottom: 2px;
+}
+
+.content .mw-parser-output > h2, .content .section-heading {
+    border-bottom: 1px solid #c8ccd1;
+}
+
+dl {
+    margin-bottom: 5px;
+}
+
+.mcw-mainpage-icons {
+    padding: 0;
+}
+
+/* Force collapsed navbox headers to full width */
+.content table.navbox {
+	display: table;
+	border-collapse: separate;
+}
+
+/* Margin is too big */
+.page-heading {
+	margin-bottom: 0;
+}
+
+/* Hide page title on all main pages */
+body.rootpage-Minecraft_Wiki .page-heading,
+body.rootpage-Movie_Wiki .page-heading,
+body.rootpage-Dungeons_Wiki .page-heading,
+body.rootpage-Legends_Wiki .page-heading,
+body.rootpage-Story_Mode_Wiki .page-heading,
+body.rootpage-Earth_Wiki .page-heading {
+	display: none;
+}
+
+/* Hide page/talk and edit bar links to match normal main page */
+body.rootpage-Movie_Wiki .minerva__tab-container,
+body.rootpage-Movie_Wiki .page-actions-menu,
+body.rootpage-Dungeons_Wiki .minerva__tab-container,
+body.rootpage-Dungeons_Wiki .page-actions-menu,
+body.rootpage-Legends_Wiki .minerva__tab-container,
+body.rootpage-Legends_Wiki .page-actions-menu,
+body.rootpage-Story_Mode_Wiki .minerva__tab-container,
+body.rootpage-Story_Mode_Wiki .page-actions-menu,
+body.rootpage-Earth_Wiki .minerva__tab-container,
+body.rootpage-Earth_Wiki .page-actions-menu {
+	display: none;
+}
+
+/* re-add undo button */
+.mw-diff-undo {
+	display: inline !important;
+}
+
+/* Hide vanilla MW theme settings */
+#skin-client-prefs-skin-theme {
+	display: none;
+}
+
+.wgl-theme-dark img {
+	background-color: transparent !important;
+}
+
+/* Adjust display position of edit byte size on watchlist */
+.mw-plusminus-pos,
+.mw-plusminus-neg,
+.mw-plusminus-null {
+	position: static !important;
+	display: inline !important;
+	float: none !important;
+	margin-left: 0.4em;
+}
+
+.mw-changeslist-date {
+	position: static !important;
+	display: inline !important;
+	margin-left: 0.6em;
+}
+
+.mw-changeslist-line-inner {
+	position: relative !important;
+}
+
+/* Minerva defaults to inverting images used in references */
+.drawer.references-drawer img {
+    filter: invert(0);
+}
+
+@media print {
+	html {
+		color-scheme: light !important;
+	}
+}
+
+/* ===== MediaWiki:Minerva-theme-dark.css ===== */
+/* Mobile Dark Mode Theme for English Wiki
+/* Originally made by Corelakes, Eduaddad, Faariaz and LucasGameszYT for MCW-PT */
+
+html:has(body.wgl-theme-dark) {
+    color-scheme: dark;
+
+    --archive-box-background-color: #282828;
+	--archive-box-border-color: #444;
+}
+
+/* Default styles [[File:Dark-mobile-header.png]] */
+body.wgl-theme-dark {
+    --header-background: url('/assets/mcw/Dark-header-background.png');
+    --mobile-header-background: url('/assets/mcw/Dark-mobile-header.png');
+	--mobile-header-background-color: #011C31;
+	--content-text-color: #e6e6e6;
+	--content-background-color: #2b2f39;
+	--base-background-color: #13191c;
+	color: var(--content-text-color);
+}
+
+/* Dungeons [[File:Dark-mobile-header-dungeons.png]] */
+html body.wgl-theme-dark.rootpage-Minecraft_Dungeons,
+html body.wgl-theme-dark.rootpage-Talk_Minecraft_Dungeons,
+html body.wgl-theme-dark.ns-10000:not(.rootpage-Dungeons_Wiki),
+html body.wgl-theme-dark.ns-10001:not(.rootpage-Dungeons_talk_Wiki)  {
+	--header-background: url('/assets/mcw/Dark-header-background-dungeons.png');
+	--mobile-header-background: url('/assets/mcw/Dark-mobile-header-dungeons.png');
+    --mobile-header-background-color: #0e1d28;
+	--content-background-color: #433d3d;
+}
+
+/* Dungeons [[File:Dark-mobile-header-dungeons2.png]] */
+html body.wgl-theme-dark.rootpage-Minecraft_Dungeons_II,
+html body.wgl-theme-dark.rootpage-Talk_Minecraft_Dungeons_II,
+html body.wgl-theme-dark.ns-10000.rootpage-Dungeons_Wiki,
+html body.wgl-theme-dark.ns-10001.rootpage-Dungeons_talk_Wiki,
+html body.wgl-theme-dark.ns-10014,
+html body.wgl-theme-dark.ns-10015  {
+	--header-background: url('/assets/mcw/Dark-header-background-dungeons2.png');
+	--mobile-header-background: url('/assets/mcw/Dark-mobile-header-dungeons2.png');
+    --mobile-header-background-color: #111416;
+	--content-background-color: #2B3139;
+}
+
+/* Earth [[File:Dark-mobile-header-earth.png]] */
+html body.wgl-theme-dark.rootpage-Minecraft_Earth,
+html body.wgl-theme-dark.rootpage-Talk_Minecraft_Earth,
+html body.wgl-theme-dark.ns-10002,
+html body.wgl-theme-dark.ns-10003 {
+	--header-background: url('/assets/mcw/Dark-header-background-earth.png');
+	--mobile-header-background: url('/assets/mcw/Dark-mobile-header-earth.png');
+    --mobile-header-background-color: #011C31;
+	--content-background-color: #252b3c;
+}
+
+/* Story Mode [[File:Dark-mobile-header-storymode.png]] */
+html body.wgl-theme-dark.rootpage-Minecraft_Story_Mode,
+html body.wgl-theme-dark.rootpage-Talk_Minecraft_Story_Mode,
+html body.wgl-theme-dark.rootpage-Minecraft_Story_Mode_-_Season_Two,
+html body.wgl-theme-dark.rootpage-Talk_Minecraft_Story_Mode_-_Season_Two,
+html body.wgl-theme-dark.ns-10004,
+html body.wgl-theme-dark.ns-10005 {
+	--header-background: url('/assets/mcw/Dark-header-background-storymode.png');
+	--mobile-header-background: url('/assets/mcw/Dark-mobile-header-storymode.png');
+    --mobile-header-background-color: #44220F;
+	--content-background-color: #39342C;
+}
+
+/* Legends [[File:Dark-mobile-header-legends.png]] */
+html body.wgl-theme-dark.rootpage-Minecraft_Legends,
+html body.wgl-theme-dark.rootpage-Talk_Minecraft_Legends,
+html body.wgl-theme-dark.ns-10006,
+html body.wgl-theme-dark.ns-10007 {
+	--header-background: url('/assets/mcw/Dark-header-background-legends.png');
+	--mobile-header-background: url('/assets/mcw/Dark-mobile-header-legends.png');
+    --mobile-header-background-color:#011C31;
+	--content-background-color: #293344;
+}
+
+/* Movie [[File:Dark-mobile-header-movie.png]] */
+html body.wgl-theme-dark.rootpage-A_Minecraft_Movie,
+html body.wgl-theme-dark.rootpage-Talk_A_Minecraft_Movie,
+html body.wgl-theme-dark.rootpage-A_Minecraft_Movie_Squared,
+html body.wgl-theme-dark.rootpage-Talk_A_Minecraft_Movie_Squared,
+html body.wgl-theme-dark.ns-10012,
+html body.wgl-theme-dark.ns-10013 {
+	--header-background: url('/assets/mcw/Dark-header-background-movie.png');
+	--mobile-header-background: url('/assets/mcw/Dark-mobile-header-movie.png');
+    --mobile-header-background-color: #0E1D28;
+	--content-background-color: #36322E;
+}
+
+body.wgl-theme-dark :not(.infobox-title) a:not(.new,.mw-selflink,.menu2-text a),
+body.wgl-theme-dark .jslink,
+body.wgl-theme-dark .toctogglelabel,
+body.wgl-theme-dark .mw-collapsible-text,
+body.wgl-theme-dark .vector-menu-dropdown .mw-list-item a,
+body.wgl-theme-dark .mw-mmv-post-image a,
+body.wgl-theme-dark #mw-mf-page-left ul.hlist li a{
+    color: #90c0fe;
+}
+
+body.wgl-theme-dark .mw-body-content .hlist li:not(:last-child)::after {
+    background-color: #FFF;
+}
+
+body.wgl-theme-dark .mw-message-box,
+body.wgl-theme-dark .mw-body, h1, h2, h3, h4, h5, h6,
+body.wgl-theme-dark .mw-ui-input {
+    color: var(--content-text-color);
+}
+
+body.wgl-theme-dark .mw-body a.new, body.wgl-theme-dark .mw-mmv-post-image a.new {
+    color: #ffa4a4;
+}
+
+body.wgl-theme-dark .branding-box img,
+body.wgl-theme-dark .minerva-footer-logo img {
+	filter: revert;
+}
+
+/* [[File:Sort_both.svg]], [[File:Sort_down.svg]], [[File:Sort_up.svg]] */
+body.wgl-theme-dark .client-js .sortable:not(.jquery-tablesorter) > * > tr:first-child > th:not(.unsortable),
+body.wgl-theme-dark .jquery-tablesorter th.headerSort {
+	background-image: url('/assets/mcw/Sort_both.svg');
+}
+body.wgl-theme-dark .jquery-tablesorter th.headerSortDown {
+	background-image: url('/assets/mcw/Sort_down.svg');
+}
+body.wgl-theme-dark .jquery-tablesorter th.headerSortUp {
+	background-image: url('/assets/mcw/Sort_up.svg');
+}
+
+/* CodeEditor search color fixes for dark theme */
+body.wgl-theme-dark .ace_search {
+	background-color: #353535;
+	border: 1px solid var(--ooui-border);
+	border-top: 0;
+	border-right: 0;
+	color: #e6e6e6;
+}
+
+/* CodeEditor search input field color fixes for dark theme */
+body.wgl-theme-dark .ace_search_field {
+	border-radius: 3px 0 0 3px;
+	background-color: #414141;
+	color: #e6e6e6;
+	border: 1px solid var(--ooui-border);
+	border-right: 0;
+}
+
+/* CodeEditor search button color fixes for dark theme */
+body.wgl-theme-dark .ace_searchbtn {
+	border: 1px solid var(--ooui-border);
+	background: #414141;
+	color: #e6e6e6;
+	border-right: 0;
+	border-left: 1px solid var(--ooui-border);
+}
+body.wgl-theme-dark .ace_button {
+	border: 1px solid var(--ooui-border);
+	color: #e6e6e6;
+}
+
+/* ===== ext.gadget.darkmode ===== */
+#p-personal #pt-dm-toggle a{width:14px;height:14px;background-size:14px 14px;display:block;margin-bottom:-6px;background-image:linear-gradient(transparent,transparent),url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg height='21' viewBox='0 0 21 21' width='21' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m8.85464918.37900488c-1.91149353 1.51069427-3.13816124 3.84973402-3.13816124 6.47527736 0 4.55564936 3.69308349 8.24873286 8.24873286 8.24873286 2.5815709 0 4.8861545-1.1859235 6.3986798-3.0426994-.8206378 4.7389755-4.9523867 8.343122-9.9259291 8.343122-5.56375572 0-10.07407088-4.5103151-10.07407088-10.0740709 0-5.02506013 3.67919933-9.19079725 8.49074856-9.95036192z' fill='%23939392' fill-rule='evenodd'/%3E%3C/svg%3E")}.wgl-theme-dark #p-personal #pt-dm-toggle a{background-image:linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg fill='%23939392' fill-rule='evenodd' xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E%3Ctitle%3E bright %3C/title%3E%3Cpath d=%22M17.07 7.07V2.93h-4.14L10 0 7.07 2.93H2.93v4.14L0 10l2.93 2.93v4.14h4.14L10 20l2.93-2.93h4.14v-4.14L20 10zM10 16a6 6 0 1 1 6-6 6 6 0 0 1-6 6z%22/%3E%3Ccircle cx=%2210%22 cy=%2210%22 r=%224.5%22/%3E%3C/svg%3E")}.minerva-icon-portletlink-pt-dm-toggle{mask-image:linear-gradient(transparent,transparent),url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg height='21' viewBox='0 0 21 21' width='21' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m8.85464918.37900488c-1.91149353 1.510694-3.13816124 3.84973402-3.13816124 6.47527736 0 4.55564936 3.69308349 8.24873286 8.24873286 8.24873286 2.5815709 0 4.8861545-1.1859235 6.3986798-3.0426994-.8206378 4.7389755-4.9523867 8.343122-9.9259291 8.343122-5.56375572 0-10.07407088-4.5103151-10.07407088-10.0740709 0-5.02506013 3.67919933-9.19079725 8.49074856-9.95036192z' fill='%2354595d' fill-rule='evenodd'/%3E%3C/svg%3E")}.wgl-theme-dark .minerva-icon-portletlink-pt-dm-toggle{mask-image:linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg fill='%2354595d' fill-rule='evenodd' xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E%3Ctitle%3E bright %3C/title%3E%3Cpath d=%22M17.07 7.07V2.93h-4.14L10 0 7.07 2.93H2.93v4.14L0 10l2.93 2.93v4.14h4.14L10 20l2.93-2.93h4.14v-4.14L20 10zM10 16a6 6 0 1 1 6-6 6 6 0 0 1-6 6z%22/%3E%3Ccircle cx=%2210%22 cy=%2210%22 r=%224.5%22/%3E%3C/svg%3E")}
+
+/* ===== ext.gadget.mobileNavbox ===== */
+@media screen and (max-width:719px){.content .navbox .mw-collapsible,.content .navbox .navbox-top,.content .navbox tbody,.content .navbox th,.content .navbox tr,.content .navbox td,.content .navbox table,.content table.navbox tbody,.content table.navbox.navbox,.content th .navbox-top{display:block;overflow:hidden;width:100%;margin:0;padding:0}.content .navbox th:not(.navbox-top){text-align:left;padding-left:5px}.content .navbox tr > td > ul > li > a:only-of-type,.content .navbox tr > td > ul > li > span > a > span,.content .navbox tr > td > ul > li > :is(small,sup,i),.content .navbox tr > td ul > li > .sprite-text,.content .navbox tr > td ul > li > span.pixel-image + a,.content .navbox > tbody > tr > th.navbox-top > a,.content .navbox tr > th > span.navbox-title .sprite-text{white-space:normal}.content #mw-content-text .navbox tr td:not([colspan]) ul,.content #mw-content-text .navbox tr td:not([colspan]):has(span.sprite-file):not(:has(ul)){padding-left:3px;padding-right:3px}.content #mw-content-text .navbox ul{display:inherit}.content .navbox td[colspan] div{margin-right:0 !important}.content .navbox .navbox-title,.content .navbox th{display:block;overflow:hidden;text-overflow:ellipsis;overflow-wrap:normal;white-space:normal;text-wrap:balance}body:not(.mw-mf-amc-disabled) .navbox .navbox-navbar ~ .navbox-title{display:inline}.content table.navbox.navbox{border-collapse:collapse}}@media screen and (min-width:720px){.content table.navbox.navbox{border-collapse:separate}.content .navbox td > table{margin:0 0 0 -4px;border-collapse:separate}}.content table.navbox ~ table.navbox{margin-top:0.5em}.content .navbox ul li:has(a > img,a + a):not(:has(ul)),.content .navbox ul li:has(span.sprite-file,span.pixel-image):not(:has(ul)){white-space:nowrap}.content .navbox ul{overflow-wrap:anywhere}.content .navbox .navbox-navbar{padding-left:3px;margin-right:5px;position:initial}.content .navbox .navbox-title{padding:0;padding-left:3px}.content .navbox .collapsetoggle{min-width:55px;padding-right:3px}body.mw-mf-amc-disabled .navbox .navbox-navbar{display:none}
+
+/* ===== MediaWiki:Gadget-mobileSidebar.css ===== */
+.minerva-icon-portletlink-recentchanges {
+	mask-image: url('/load.php?format=original&image=recentChanges&modules=skins.minerva.mainMenu.advanced.icons&skin=minerva');
+}
+
+#p-interaction .mw-list-item-js .minerva-icon,
+#p-Franchise .minerva-icon {
+    display: none;
+}
+
+/* ===== ext.gadget.sound-styles ===== */
+.client-js .sound-audio{display:none}.client-js .sound-audio:has(.mw-broken-media){display:inline}.client-js .sound-title::after{content:'';display:inline-block;width:1.143em;height:1.143em;margin-left:0.286em;vertical-align:text-top}body.wgl-theme-dark .sound-title::after{filter:invert(1)}

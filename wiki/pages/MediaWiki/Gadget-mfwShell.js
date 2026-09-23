@@ -1,5 +1,6 @@
 // Shell behaviour shared by the live wiki (as a gadget) and the static export (copied into
-// /_static/site.js by tools/export_static.py): dark-mode toggle and collapsible sidebar sections.
+// /_static/site.js by tools/export_static.py): dark-mode toggle and collapsible sidebar sections
+// on desktop (Vector), the dark-mode toggle in the menu drawer on mobile (Minerva).
 // The theme class itself is applied before first paint by the inline head script
 // (site/theme-boot.js), so this only wires up the toggle.
 ( function () {
@@ -17,7 +18,17 @@
 		var b = document.body;
 		b.classList.remove( 'wgl-theme-light', 'wgl-theme-dark', 'wgl-lightmode', 'wgl-darkmode' );
 		b.classList.add( 'wgl-theme-' + t, 'wgl-' + t + 'mode' );
-		document.documentElement.style.colorScheme = t;
+		// Minerva's own night mode follows along, as on minecraft.wiki
+		var h = document.documentElement;
+		h.classList.remove( 'skin-theme-clientpref-day', 'skin-theme-clientpref-night', 'skin-theme-clientpref-os' );
+		h.classList.add( t === 'dark' ? 'skin-theme-clientpref-night' : 'skin-theme-clientpref-day' );
+		h.style.colorScheme = t;
+	}
+	function toggleTheme( e ) {
+		e.preventDefault();
+		var t = getTheme() === 'light' ? 'dark' : 'light';
+		try { localStorage.setItem( KEY, t ); } catch ( err ) {}
+		applyTheme( t );
 	}
 	function init() {
 		applyTheme( getTheme() );
@@ -32,18 +43,26 @@
 			a.href = '#';
 			a.title = 'Toggle dark mode';
 			a.setAttribute( 'aria-label', 'Toggle dark mode' );
-			a.addEventListener( 'click', function ( e ) {
-				e.preventDefault();
-				var t = getTheme() === 'light' ? 'dark' : 'light';
-				try { localStorage.setItem( KEY, t ); } catch ( err ) {}
-				applyTheme( t );
-			} );
+			a.addEventListener( 'click', toggleTheme );
 			li.appendChild( a );
 			personal.insertBefore( li, personal.firstChild );
 			var portlet = personal.closest( '.mw-portlet' );
 			if ( portlet ) {
 				portlet.classList.remove( 'emptyPortlet' );
 			}
+		}
+
+		// Mobile: "Toggle dark mode" in the menu drawer (minecraft.wiki's darkmode gadget puts it there too).
+		var mobileNav = document.querySelector( '#mw-mf-page-left #p-navigation' );
+		if ( mobileNav && !document.getElementById( 'pt-dm-toggle' ) ) {
+			var item = document.createElement( 'li' );
+			item.id = 'pt-dm-toggle';
+			item.className = 'toggle-list-item mw-list-item';
+			item.innerHTML = '<a class="toggle-list-item__anchor" href="#" role="button">' +
+				'<span class="minerva-icon minerva-icon-portletlink-pt-dm-toggle"></span>' +
+				'<span class="toggle-list-item__label">Toggle dark mode</span></a>';
+			item.firstChild.addEventListener( 'click', toggleTheme );
+			mobileNav.appendChild( item );
 		}
 
 		// Collapsible sidebar sections, remembered per section.

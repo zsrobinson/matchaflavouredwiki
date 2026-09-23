@@ -2,7 +2,8 @@
 * mcw-common[ResourceLoader|type=styles|default|hidden]|mcw-common.css
 * mcw-mainpage[ResourceLoader|type=styles|default|hidden]|mcw-mainpage.css
 * mcw-vector[ResourceLoader|type=styles|skins=vector|default|hidden]|mcw-vector.css
+* mcw-minerva[ResourceLoader|type=styles|skins=minerva|default|hidden]|mcw-minerva.css
 
 ==Core==
 * animatedIcons[ResourceLoader|type=general|default|hidden]|animatedIcons.js
-* mfwShell[ResourceLoader|type=general|skins=vector|default|hidden]|mfwShell.js
+* mfwShell[ResourceLoader|type=general|skins=vector,minerva|default|hidden]|mfwShell.js

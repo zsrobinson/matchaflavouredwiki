@@ -64,6 +64,15 @@ $wgHooks['SkinTemplateNavigation::Universal'][] = static function ( $skin, &$lin
 		$links['views']['mfw-source'] = [ 'text' => 'View source', 'href' => mfwGitHubUrl( 'blob', $path ) ];
 		$links['views']['mfw-history'] = [ 'text' => 'View history', 'href' => mfwGitHubUrl( 'commits', $path ) ];
 	}
+	if ( $skin->getSkinName() === 'minerva' ) {
+		// Mobile: Minerva shows view links that have an icon as page-action buttons under the title
+		$icons = [ 'mfw-edit' => 'edit', 'mfw-source' => 'wikiText', 'mfw-history' => 'history' ];
+		foreach ( $icons as $key => $icon ) {
+			if ( isset( $links['views'][$key] ) ) {
+				$links['views'][$key]['icon'] = $icon;
+			}
+		}
+	}
 };
 
 $wgHooks['SkinAddFooterLinks'][] = static function ( $skin, $key, &$footerItems ) {
