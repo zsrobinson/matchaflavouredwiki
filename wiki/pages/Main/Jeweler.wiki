@@ -9,38 +9,7 @@
 The '''Jeweler''' is a [[villager]] profession that sets gems into [[jewelry]] and buys gems back for [[Obol]]s. It replaces the {{MCW|Toolsmith|toolsmith}}, and its job site block is the [[Smithing Table]]. Trading with a jeweler is the only way to obtain earrings, the Ruby Circlet and the Hepatizon Laurel in survival: the pack's loot tables for these items are not used by any chest or mob.<ref>{{Source|MF_datapack/data/matcha/loot_table/equipment/misc/opal_earrings.json}}</ref>
 
 == Trades ==
-{| class="wikitable"
-! Level !! Villager wants !! Villager gives !! Villager XP
-|-
-! rowspan="4" | Novice
-| 4 × {{ItemLink|Obol}} +<br />{{ItemLink|Opal}} || {{ItemLink|Opal Earrings}} || 10
-|-
-| {{ItemLink|Obol}} +<br />2 × {{ItemLink|Diamond}} || {{ItemLink|Diamond Earrings}} || 10
-|-
-| {{ItemLink|Obol}} +<br />2 × {{ItemLink|Amethyst Shard}} || {{ItemLink|Amethyst Earrings}} || 10
-|-
-| {{ItemLink|Obol}} +<br />2 × [[File:Lapis Lazuli.png|16px|link=]] Lapis Lazuli || {{ItemLink|Lapis Earrings}} || 10
-|-
-! rowspan="1" | Apprentice
-| 4 × {{ItemLink|Obol}} +<br />{{ItemLink|Ruby}} || {{ItemLink|Ruby Circlet}} || 70
-|-
-! rowspan="1" | Journeyman
-| 8 × {{ItemLink|Obol}} +<br />{{ItemLink|Amber}} || {{ItemLink|Amber Earrings}} || 150
-|-
-! rowspan="2" | Expert
-| 10 × {{ItemLink|Obol}} +<br />2 × {{ItemLink|Hepatizon Alloy}} || {{ItemLink|Hepatizon Laurel}} || 250
-|-
-| 14 × {{ItemLink|Obol}} +<br />{{ItemLink|Topaz}} || {{ItemLink|Topaz Earrings}} || 200
-|-
-! rowspan="4" | Master
-| {{ItemLink|Topaz}} || 10 × {{ItemLink|Obol}} || 0
-|-
-| {{ItemLink|Opal}} || 4 × {{ItemLink|Obol}} || 0
-|-
-| {{ItemLink|Amber}} || 4 × {{ItemLink|Obol}} || 0
-|-
-| {{ItemLink|Ruby}} || 8 × {{ItemLink|Obol}} || 0
-|}
+{{Data/Trades/Jeweler}}
 All trades can be used 999 times before restocking, and each level offers all of its trades.<ref>{{Source|MF_datapack/data/minecraft/trade_set/toolsmith/level_1.json}}</ref>
 
 === Jewelry ===

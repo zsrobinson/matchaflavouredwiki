@@ -6,7 +6,7 @@
 |spawn=Overworld, away from the open sky
 |drops=String, spider eye
 }}
-A '''spider''' in [[Matcha Flavoured]] can't spawn under the open sky in the Overworld. On Normal and Hard, spiders jump twice as high, take no fall damage, and leave cobwebs behind when they die.
+A '''spider''' in [[Matcha Flavoured]] can't spawn under the open sky in the Overworld. On Normal and Hard, spiders jump much higher, take no fall damage, and leave cobwebs behind when they die.
 
 == Spawning ==
 Spiders use the vanilla biome spawn lists, but in the Overworld a spider that appears where it can see the sky is removed at once.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref> They still spawn in caves and under leaves or overhangs. After the [[Ender Dragon]] is killed, they are also removed at Y=63 or above; see [[Surface]].
@@ -18,7 +18,7 @@ Spiders come from [[spawner|spawners]] in monster rooms and one [[Woodland Mansi
 The drops are as in vanilla, except that spiders from the pack's spawners drop nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/spider.json}}</ref>
 
 == Behavior ==
-On Normal and Hard, a spider's jump strength is set to 0.85, it takes no fall damage, and it is given a permanent, hidden {{MCW|Weaving}} effect. Weaving makes a mob leave cobwebs where it dies, so killing a spider in a corridor can leave it blocked.<ref name="n">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_spider.mcfunction}}</ref><ref name="h">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_spider.mcfunction}}</ref>
+On Normal and Hard, a spider's jump strength is set to 0.85 (about twice the vanilla 0.42), it takes no fall damage, and it is given a permanent, hidden {{MCW|Weaving}} effect. Weaving makes a mob leave cobwebs where it dies, so killing a spider in a corridor can leave it blocked.<ref name="n">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_spider.mcfunction}}</ref><ref name="h">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_spider.mcfunction}}</ref>
 
 == Difficulty ==
 {| class="wikitable"

@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Music Disc (C418 - cat)}}
+|image={{#if:{{{image|}}}|{{{image}}}|Music Disc (C418 - cat).png}}
+|imagesize=160px
+|invimage=Music Disc (C418 - cat)
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Music Disc}}
+|rarity=Uncommon
+|stackable=No
+|id=<code>minecraft:music_disc_cat</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/music_disc_cat.json|music_disc_cat.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

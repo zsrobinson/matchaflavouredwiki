@@ -32,19 +32,32 @@ To preview single pages while writing: `python3 tools/preview.py "Title" ...`. I
 template errors and red links. `tools/screenshot.sh "Title" out.png` renders a PNG with
 headless Chrome.
 
-## Deploying (static)
+## Deploying (static, Cloudflare Workers)
 
-The public site doesn't need MediaWiki, PHP or a database. `python3 tools/export_static.py`
-renders every page into `dist/` as plain HTML (URLs unchanged: `/w/Page_title`), with static
-CSS, images, a small script for the interactive bits (animated recipe slots, dark mode,
-sortable and collapsible tables) and client-side search over `search.json`. Upload `dist/`
-to any static host.
+The public site doesn't need MediaWiki, PHP or a database. MediaWiki is only the renderer
+used at build time. `python3 tools/export_static.py` writes every page to `dist/` as plain HTML.
+URLs stay the same as on the live wiki (`/w/Page_title`, served from `dist/w/Page_title.html`).
+The export includes:
+- static CSS and images;
+- the same shell script the live wiki uses: dark mode (applied before first paint) and
+  collapsible sidebar sections;
+- small static replacements for animated recipe slots and sortable or collapsible tables;
+- **Pagefind** full-text search. The header search box is Pagefind's `<pagefind-searchbox>`
+  Component UI, and `/search/?q=…` is the full results page with category filters and item icons.
 
-`.github/workflows/deploy.yml` does this automatically: on every push to `main` it fetches the
-sources at the pinned commit, builds the wiki in Docker, exports it and publishes to GitHub
-Pages (enable Pages with source "GitHub Actions" in the repository settings). The same
-commands work for Cloudflare Pages or Netlify (`dist/_redirects` is included). Test locally
-with `python3 -m http.server -d dist 8090`.
+Deploy with Cloudflare Workers (static assets, no Worker script). The configuration is in
+`wrangler.jsonc`:
+
+```sh
+python3 tools/export_static.py        # needs the local wiki running and built
+npx wrangler dev                      # preview exactly as Cloudflare serves it (http://localhost:8787)
+npx wrangler deploy
+```
+
+`.github/workflows/deploy.yml` does all of this on every push to `main`: it fetches the sources at
+the pinned commit, builds the wiki in Docker, checks it, exports it and runs `wrangler deploy`.
+Add the repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. Other static hosts
+(Cloudflare Pages, Netlify, GitHub Pages) can serve `dist/` as is (`_redirects` and `404.html` are included).
 
 ## How it works
 

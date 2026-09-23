@@ -40,6 +40,10 @@
 			} );
 			li.appendChild( a );
 			personal.insertBefore( li, personal.firstChild );
+			var portlet = personal.closest( '.mw-portlet' );
+			if ( portlet ) {
+				portlet.classList.remove( 'emptyPortlet' );
+			}
 		}
 
 		// Collapsible sidebar sections, remembered per section.

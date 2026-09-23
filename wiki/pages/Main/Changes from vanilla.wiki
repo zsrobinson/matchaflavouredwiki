@@ -1,76 +1,83 @@
 {{See also|Renamed items|Removed features}}
-This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''Minecraft: Java Edition'' 26.2, with links to the detailed articles. Renamed items are listed on [[Renamed items]] and removed features on [[Removed features]].
+This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''Minecraft: Java Edition'' 26.2, with links to the detailed articles. Renamed items are listed on [[Renamed items]], removed features on [[Removed features]], and known problems in the pack on [[Known bugs]].
 
 == Health, death and survival ==
-* '''[[Hunger]]''' is effectively removed: the food bar is kept in a fixed range, so sprinting is never limited.
-* '''[[Natural regeneration]]''' is off. Health is restored by eating [[food]], by [[Crystal Heart|crystal hearts]], and by some equipment effects.
-* '''[[Death]]''' keeps the inventory but removes 1 heart of maximum health (2 on Hard), down to a per-player minimum that falls as the player progresses. See [[Advancements#Rewards]].
-* '''[[Health]]''' can be raised to 30 hearts with crystal hearts.
-* '''[[Difficulty]]''' changes mob speed, health and damage. Easy never lowers health below 10 hearts, and Normal can switch to Hard as a player progresses.
-* '''[[Freezing water]]''' damages and slows players in cold water unless protected by [[Frost Protection]].
-* '''[[Wither effect]]''' is much more dangerous (except on Easy) and must be [[Cleanse|cleansed]] with bread or milk.
-* '''[[Sleeping]]''' in multiplayer speeds up time according to the share of players asleep, and sleeping at night wakes players in the morning.
-* '''[[Day and night]]''' last three times as long (a 60-minute day). The [[Moon]] also behaves differently.
-* '''[[Darkness]]''': the overworld has "true darkness" and [[Hell]] is dim. True darkness can be turned off by swapping a file.
-* '''[[Weather]]''' can be set with [[Clay Fetish|clay fetishes]], and sleeping clears rain.
+* '''[[Hunger]]''' is effectively removed: the hunger bar is hidden and the food level is held just above the sprinting threshold, so sprinting is never limited and nobody starves.
+* '''[[Natural regeneration]]''' is off. Health is restored by eating [[food]], by picking up [[Raw Estus|raw Estus]], by [[Crystal Heart|crystal hearts]], near a [[Warding Stone|warding stone]] and by some equipment such as [[Shakudo equipment|shakudo]].
+* '''[[Death]]''' keeps the inventory and experience but permanently removes 1 heart of maximum health (2 on Hard). On Easy, maximum health never falls below 10 hearts; on Normal and Hard it falls to a per-player minimum that drops by a heart at each of seven progression milestones. See [[Death#Minimum hearts]].
+* '''[[Health]]''' starts at 10 hearts and can be raised to 30 hearts with crystal hearts.
+* '''[[Difficulty]]''' changes the health, speed and damage of common hostile mobs on every level, including Easy. Normal switches to Hard automatically once any player's minimum hearts falls to 5.
+* '''[[Wither effect|Wither]]''' that lasts 8 seconds removes maximum health as if the player had died (except on Easy). Milk and [[Cleanse|cleansing]] foods such as [[bread]] cure it in time.
+* '''[[Freezing water]]''' in frozen biomes slows, blinds and damages players whose head is underwater, unless their chestplate has [[Frost Protection]].
+* '''[[Day and night]]''' last three times as long: a full day is 72,000 ticks (60 minutes). The [[Moon]] has its own cycle.
+* '''[[Sleeping]]''' is possible at any time of day. Instead of skipping the night, time speeds up while players are in bed, faster the larger the share of players asleep, and waking up clears the weather.
+* '''[[Darkness]]''': the Overworld uses "true darkness", so unlit places are completely black. It can be turned off by swapping a file in the datapack. [[Hell]] is slightly brighter than in vanilla.
+* '''[[Weather]]''' can be set to clear or rain with [[Clay Fetish|clay fetishes]].
 
 == Mobs and spawning ==
-* Only [[undead]] mobs spawn in open areas of the overworld; [[creeper]]s and [[spider]]s spawn underground. See [[Spawning]].
-* After the [[Ender Dragon]] is first killed, no hostile mobs spawn on the [[Surface|surface]].
-* [[Zombie]]s are fast and fragile, and [[husk]]s are slow, strong tanks that spawn in every biome. [[Skeleton]]s have about half health, [[Cave Spider|cave spiders]] 2 hearts, and creepers 8 hearts.
-* [[Enderman|Endermen]] always drop a [[Stable Void|stable void]] and can only pick up melons, pumpkins and TNT.
-* Undead drop [[Raw Estus|raw Estus]] and [[Tattered Leather|tattered leather]] instead of rotten flesh; mobs no longer drop held equipment; mobs from spawners drop nothing.
-* [[Spawner]]s drop [[Divine Fragment|divine fragments]] when broken; so do some strong mobs.
-* The [[Wither]] can only be summoned on the overworld surface. See also [[Mobs]].
+* In the Overworld, only [[undead]] mobs can spawn under the open sky; [[creeper]]s, [[spider]]s and other hostile mobs are removed there. See [[Spawning]].
+* After the [[Ender Dragon]] is first killed, no common hostile mob can spawn under the open sky or at Y=63 or above in the Overworld. See [[Surface]].
+* [[Husk]]s spawn in every Overworld biome that has monsters. On Normal and Hard, [[zombie]]s are fast and fragile and husks are slow, armored tanks; [[skeleton]]s, creepers, [[Cave Spider|cave spiders]] and [[silverfish]] have less health, and [[spider]]s take no fall damage. See [[Difficulty#Mob modifications]].
+* {{MCW|Phantom}}s never spawn, and pillager patrols only start after 5 of the pack's longer days.
+* Zombie-type mobs drop [[Tattered Leather|tattered leather]] or [[Sturdy Leather|sturdy leather]] instead of rotten flesh, and most undead drop [[Raw Estus|raw Estus]] or [[Estus Ash|Estus ash]]. Hostile mobs don't drop the equipment they spawn with, and zombies, husks, skeletons and spiders from [[spawner]]s drop nothing. See [[Mobs]].
+* [[Enderman|Endermen]] killed by a player always drop a [[Stable Void|stable void]], and can only pick up melons, pumpkins and [[TNT]]. [[Blaze]]s drop fire charges instead of blaze rods.
+* [[Spawner]]s drop a [[Divine Fragment|divine fragment]] when broken; so do some strong mobs.
+* The [[Wither]] can only be summoned on the Overworld surface.
 
 == Food and cooking ==
-* About 50 new foods; twelve ingredients have hidden [[intrinsic]] effects that appear when cooked. See [[Food]].
-* New stations: [[Kindling|kindling]] (campfire), [[Mud Kiln|mud kiln]] (smoker) and [[oven]] (furnace), each with its own recipes. See [[Cooking]].
-* [[Secret recipes]] are found in chests and trades.
-* Meat has no special effects. Vanilla bread, cake, cookie, stew and pie recipes are replaced.
+* Over 90 new foods. Food heals through a hidden regeneration effect instead of filling a hunger bar, and grants the [[effect]]s that potions give in vanilla. See [[Food]].
+* Twelve [[ingredient]]s carry hidden [[intrinsic]] effects that are "awakened" by cooking; every dish made from them grants the same effect for longer.
+* The cooking stations are renamed and have separate roles: [[Kindling|kindling]] (campfire) and the [[oven]] (furnace) cook food, while the [[Mud Kiln|mud kiln]] (smoker) fires clay, glass and stone and only chars food. See [[Cooking]].
+* [[Secret recipes]] are hidden from the recipe book and found in chests, trades and by experiment.
+* Meat has no intrinsic and heals little. All vanilla food recipes, including every cooking recipe, are replaced by the pack's own.
 
 == Equipment ==
-* No stone tools. Tiers are wood, [[Copper equipment|copper]], [[Iron equipment|iron]], [[Golden equipment|gold]] and [[Diamond equipment|diamond]], each with its own mining limits.
-* Five [[alloy]]s, applied in the [[Smithing Table|smithing table]] without needing a template: [[Steel equipment|steel]], [[Hepatizon equipment|hepatizon]], [[Shakudo equipment|shakudo]], [[Electrum equipment|electrum]] and [[Adamant equipment|adamant]] (netherite). See [[Smithing]].
-* Equipment tiers have [[intrinsic]]s and [[set bonus]]es such as [[warding]], [[Doom|doom]] and [[Cleanse|cleansing]].
-* New tools and weapons: [[mattock]], [[dolabra]], [[claymore]], [[Compound Bow|compound bow]], [[cleaver]], [[crook]], [[Snow Shovel|snow shovel]], several [[shears]] and [[compass]]es. See [[Tools]] and [[Weapons]].
-* New armor: [[Sturdy leather armor|sturdy leather]], [[Turtle Shellmet|turtle shellmet]], [[Golden Crown|golden crown]], [[Hepatizon Laurel|hepatizon laurel]], alloy [[Elytra|elytra]]. See [[Armor]].
-* [[Jewelry]] from gems: earrings and circlets.
-* [[Repairing]] has no experience cap, and alloys are repaired with specific materials.
+* Stone tools are removed. The tiers are [[Wooden equipment|wood]], [[Copper equipment|copper]], [[Iron equipment|iron]] and [[Diamond equipment|diamond]], with [[Golden equipment|gold]] as a side tier with Fortune and Looting. Each tier has its own mining limits, and each metal needs a hotter furnace than the one before. See [[Progression]].
+* Diamond ore drops [[Raw Diamond|raw diamond]], which must be smelted in a [[Blast Furnace|blast furnace]].
+* Five [[alloy]]s are smithed onto base equipment at a [[Smithing Table|smithing table]]: [[Steel equipment|steel]] onto iron, [[Shakudo equipment|shakudo]] and [[Hepatizon equipment|hepatizon]] onto copper, and [[Electrum equipment|electrum]] and [[Adamant equipment|adamant]] (netherite) onto diamond. Only the hybrid tools need a [[Smithing Upgrade Template|smithing upgrade template]]. See [[Smithing]].
+* Alloy equipment has [[intrinsic]] enchantments, and the electrum and adamant armor sets have a [[set bonus]]: [[warding]], [[Doom|doom]], [[Divinity|divinity]], [[Cleanse|cleansing]], [[Magic protection|magic protection]] and others.
+* New tools and weapons: [[mattock]], [[dolabra]], [[claymore]], [[Compound Bow|compound bow]], [[hatchet]], [[cleaver]], [[crook]], [[Snow Shovel|snow shovel]], several [[shears]] and [[compass]]es. See [[Tools]] and [[Weapons]].
+* New armor: [[Sturdy leather armor|sturdy leather]], [[Turtle Shellmet|turtle shellmet]], [[Golden Crown|golden crown]], [[Hepatizon Laurel|hepatizon laurel]] and alloy [[Elytra|elytra]]. See [[Armor]].
+* [[Jewelry]] from gems: earrings and circlets worn in the head slot, each with a permanent effect.
+* [[Repairing]] has no cost cap, and experience is not spent on it. Alloys are repaired with specific materials.
 
 == Magic ==
-* No enchanting table. Enchantments are crafted as [[blessing]]s from [[Hell-Bound Book|hell-bound books]]. See [[Enchanting]].
-* [[Estus]] refined from undead drops replaces blaze powder and rods.
-* New enchantments: [[Anemos]], [[Bloodrage]], [[Frost Protection]], [[Reach]], [[Riposte]], [[Slaughter]], [[Trailblaze]] and [[Zephyr]]. Many vanilla enchantments are changed. See [[Enchantment]].
-* Fortune III only comes from electrum.
-* [[Warding Stone|Warding stones]] burn undead and heal friendly mobs nearby.
-* Most potions are gone; the [[Chemistry Stand|chemistry stand]] replaces the brewing stand. See [[Brewing]].
+* The enchanting table cannot be crafted. Enchantments are crafted as [[blessing]]s from [[Hell-Bound Book|hell-bound books]] and applied with an [[anvil]]. See [[Enchanting]].
+* [[Estus]], dropped by undead mobs, replaces blaze powder, blaze rods and glowstone as the core magic material.
+* New enchantments: [[Anemos]], [[Bloodrage]], [[Frost Protection]], [[Reach]], [[Riposte]], [[Slaughter]], [[Trailblaze]] and [[Zephyr]]. Several vanilla enchantments are changed, and Fortune is capped at level I; higher Fortune only comes from electrum tools. See [[Enchantment]].
+* [[Warding Stone|Warding stones]] burn undead and heal villagers, pets and players nearby.
+* [[Brewing]] is effectively removed: the [[Chemistry Stand|chemistry stand]] (brewing stand) cannot be fueled. The only potions are [[Splash Potion|splash potions]] from the [[Chemist]], tipped arrows from the [[Fletcher]] and vanilla potions in loot.
 
 == Villagers and trading ==
-* [[Obol]]s replace emeralds and are rare. Most villagers only sell; the [[fisherman]] buys fish and the weaponsmith buys some non-renewable resources.
-* Professions are renamed and have new trades usable 999 times. See [[Trading]] and [[Villager]].
-* [[Abandoned village|Villages are abandoned]]; villagers come as [[Asylum Seeker|asylum seekers]] from the [[Wandering Trader|wandering trader]], who can be summoned with [[Beacon Kindling|beacon kindling]].
-* [[Amnestic]]s reset a villager's trades. Villagers have a [[Favorite food|favorite food]].
-* [[Bulk blocks]] from the [[Mason|mason]] unpack into stacks of blocks.
+* [[Obol]]s replace emeralds and are rare. Villagers sell but mostly don't buy: only the [[fisherman]] (fish), the [[Jeweler|jeweler]] (gems) and the [[weaponsmith]] (diamonds, lapis blocks and hepatizon) pay obols, besides each villager's one-time purchase of its [[Favorite food|favorite food]].
+* Seven professions are renamed and every trade is replaced. Almost every trade can be used 999 times, and many sell in bulk. See [[Trading]] and [[Villager]].
+* Villages are [[Abandoned village|abandoned]]. Villagers come from [[Asylum Seeker|asylum seeker]] applications sold by the [[Wandering Trader|wandering trader]], who can be called with a [[Beacon Kindling|beacon kindling]] and buys music discs.
+* [[Amnestic]]s reset a villager's profession and trades.
+* [[Bulk blocks]] from the [[Mason|mason]] unpack into a stack of blocks.
 
 == World ==
-* New ores and ore distribution: [[Native Silver|native silver]], [[Coal Deposit|coal deposits]], [[Quartz Deposit|quartz]] and [[Sulfur Deposit|sulfur deposits]] in the overworld. See [[World generation]].
-* New structures: the [[Abbey]] and [[Papal Outpost|papal outpost]]; changed loot in vanilla structures. See [[Structures]] and [[Chest loot]].
-* The Nether is renamed [[Hell]]; water cannot be placed there, and gravel no longer generates.
-* Deserts have no flowers, beaches have blue flowers, and biome colors are changed.
-* New music discs and background tracks. See [[Music]].
+* Ores are renamed and redistributed: [[Native Silver|native silver]] (emerald ore) in almost every biome, [[Quartz Deposit|quartz deposits]] (lapis ore) far more common, [[Sulfurous Quartz Deposit|sulfurous quartz deposits]] (redstone ore) and large [[Coal Deposit|coal deposits]] under deserts. See [[Ores]] and [[World generation]].
+* New structure: the [[Abbey]], with its [[Copper Eye|copper eye]] doors and grates. Villages become [[Abandoned village|abandoned villages]] and are much rarer, and pillager outposts become [[Papal Outpost|papal outposts]]. Every chest loot table is changed. See [[Structures]] and [[Chest loot]].
+* The Nether is renamed [[Hell]]. Water only stays on its roof, gravel no longer generates, and [[Hellspore|hellspore]] grows naturally.
+* Husks spawn in every biome, deserts have no flowers, beaches have blue flowers, and grass and foliage colors are redrawn. See [[Biomes]].
+* The [[Archaeologist]] sells [[Explorer maps|maps]] to most structures, and [[archaeology]] loot includes clay fetishes and [[Sacred texts|sacred texts]].
+* New [[music disc]]s and a new forest background track. See [[Music]].
 
 == Fishing ==
-* [[Fishing]] catches depend on a climate group of biomes, with about 50 [[fish]] in four rarities, catalogued in the [[Angler's Almanac]]. Catches play distinct [[Fishing sounds|sounds]].
+* [[Fishing]] catches depend on which of 11 climate groups the water's biome belongs to. There are 47 [[fish]], each with a rarity of 1 to 4 stars, catalogued in the [[Angler's Almanac]], and fishing up [[Fishing junk|junk]] or treasure plays distinct [[Fishing sounds|sounds]].
 
 == Blocks and crafting ==
-* Recipes for cheap building: gravel and sand from blasting, many reverse recipes, cloning flowers with bone meal, more stonecutter recipes, chests from logs.
-* New or changed blocks such as [[Limestone|limestone]], [[Malachite|malachite]], [[Hellbricks|hellbricks]], [[Phosphor lamps|phosphor lamps]], [[Vertical slabs|vertical slabs]] and [[Large bricks|large bricks]]. See [[Blocks]].
-* [[Sack]]s (shulker boxes) are craftable from sturdy leather and a chest.
-* [[Electric Wire|Redstone]] is made from copper.
+* Many recipes make building cheaper and reversible: [[gravel]] from cobblestone and [[sand]] from gravel in a blast furnace, 4 [[chest]]s from 8 logs, 9 [[Glass Bottle|glass bottles]] from 3 glass, two slabs back into a block, and hundreds of added [[stonecutter]] recipes for wood, metal and glass. See [[Blocks]].
+* Stone, bricks, glass and terracotta are fired in the [[Mud Kiln|mud kiln]], not the oven.
+* Renamed and retextured blocks such as [[Limestone|limestone]] (stone), [[Malachite|malachite]] (prismarine, crafted from copper), [[Hellbricks|hellbricks]], [[Phosphor lamps|phosphor lamps]] (froglights) and [[Brown Sandstone|brown sandstone]]; resource-pack [[Vertical slabs|vertical slabs]] and [[Large bricks|large bricks]].
+* [[Sack]]s (shulker boxes) are crafted from sturdy leather and a chest.
+* Redstone is [[Electric Wire|electric wire]], crafted from copper ingots.
+* Small flowers and some plants can be cloned with bone meal and a water bottle.
+* Many blocks drop differently: leaves drop no saplings or sticks, grass needs a hoe, and gravel drops dirt and flint. See [[Blocks#Drop changes]].
 
 == Other ==
-* The vanilla advancement tree is replaced. See [[Advancements]].
+* The vanilla advancements are replaced by the pack's own tree, which teaches progression and rewards obols, crystal hearts and minimum-heart milestones. See [[Advancements]].
+* Items from older versions of the pack can be refreshed with <code>/trigger update_item</code>. See [[Updating items]].
 * Many textures are redrawn, with a custom title screen and splash texts.
 
 {{Navbox meta}}

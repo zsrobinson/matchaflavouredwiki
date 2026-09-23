@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Music Disc (Hyper Potions - Lava Chicken)}}
+|image={{#if:{{{image|}}}|{{{image}}}|Music Disc (Hyper Potions - Lava Chicken).png}}
+|imagesize=160px
+|invimage=Music Disc (Hyper Potions - Lava Chicken)
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Music Disc}}
+|rarity=Rare
+|stackable=No
+|id=<code>minecraft:music_disc_lava_chicken</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/entities/zombie.json|zombie.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

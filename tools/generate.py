@@ -858,7 +858,8 @@ def stack_cell(s):
 
 def trades_page(prof):
     levels = TRADES[prof]
-    names = {'level_1': 'Novice', 'level_2': 'Apprentice', 'level_3': 'Journeyman', 'level_4': 'Expert', 'level_5': 'Master'}
+    names = {'level_1': 'Novice', 'level_2': 'Apprentice', 'level_3': 'Journeyman', 'level_4': 'Expert', 'level_5': 'Master',
+             'buying': 'Buys', 'common': 'Common offers', 'uncommon': 'Uncommon offers'}
     lines = ['{| class="wikitable"', '! Level !! Villager wants !! Villager gives !! Uses !! Villager XP']
     for lk in sorted(k for k in levels if not k.endswith('_meta')):
         ts = levels[lk]
@@ -879,7 +880,7 @@ def trades_page(prof):
                 b = t['biome'] if isinstance(t['biome'], str) else ', '.join(t['biome'])
                 gives += '<br /><small>only in %s biomes</small>' % b.replace('#minecraft:', '').replace('spawns_', '').replace('_variant_farm_animals', '').replace('_', ' ')
             lines.append('|-\n%s| %s || %s || %s || %s' % (lvl, want, gives,
-                                         '∞' if uses and uses >= 999 else (uses or ''), t.get('xp') or ''))
+                                         uses or '', t.get('xp') or ''))
     lines.append('|}')
     return '<includeonly>' + '\n'.join(lines) + '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>'
 
@@ -897,7 +898,7 @@ for prof, levels in TRADES.items():
                 if t.get(k):
                     TRADE_WANTS[t[k]['name']].append((prof, lk, t))
 
-LEVEL_NAMES = {'level_1': 'Novice', 'level_2': 'Apprentice', 'level_3': 'Journeyman', 'level_4': 'Expert', 'level_5': 'Master'}
+LEVEL_NAMES = {'level_1': 'Novice', 'level_2': 'Apprentice', 'level_3': 'Journeyman', 'level_4': 'Expert', 'level_5': 'Master', 'buying': 'Buys', 'common': 'Common offer', 'uncommon': 'Uncommon offer'}
 
 
 def prof_link(prof):
@@ -1085,6 +1086,17 @@ def is_pack_relevant(name, item):
     return False
 
 
+def group_page(name):
+    """Article that documents a family of items together (the item gets a redirect)."""
+    if name.endswith(' Map'):
+        return 'Explorer maps'
+    if name.startswith('Bulk '):
+        return 'Bulk blocks'
+    if name.startswith('Music Disc ('):
+        return 'Music Disc'
+    return None
+
+
 def stub_article(name, item):
     c = effective(item)
     t = item_type(item, c)
@@ -1097,9 +1109,18 @@ def stub_article(name, item):
             name, article, t.lower(), '{{MCW|%s}}' % item['vanilla_name'])
         hat = '{{Vanilla|%s}}\n' % item['vanilla_name']
     elif item['renamed_vanilla']:
-        lead = "'''%s''' is a vanilla %s whose recipes or sources are changed by [[Matcha Flavoured]]." % (name, t.lower())
+        lead = ("'''%s''' is %s %s from vanilla ''Minecraft''. [[Matcha Flavoured]] keeps the item but adds or changes "
+                "how it is made or found; the tables below list the pack's recipes, sources and uses. See {{MCW|%s}} for everything else." % (
+                    name, article, t.lower(), item['vanilla_name'] or name))
         hat = '{{Vanilla}}\n'
-    body = [hat + '{{Stub}}\n{{Infobox auto}}', lead, '']
+        body = [hat + '{{Infobox auto}}', lead, '']
+        return finish_stub(name, item, t, body)
+    stub = '' if item['renamed_vanilla'] else '{{Stub}}\n'  # renamed vanilla items are fully described by the data
+    body = [hat + stub + '{{Infobox auto}}', lead, '']
+    return finish_stub(name, item, t, body)
+
+
+def finish_stub(name, item, t, body):
     if producing(name) or SOURCES.get(name) or TRADE_GIVES.get(name):
         body.append('== Obtaining ==')
         if producing(name):
@@ -1155,7 +1176,7 @@ def effect_pages(n):
         n['effects'] += 1
         if not hand_exists('Main', eff):
             write('Main', eff, (
-                '{{Vanilla}}\n{{Stub}}\n{{Infobox|title=%s|image=Effect %s.png|imagesize=64px|type=[[Effect|Status effect]]}}\n'
+                '{{Vanilla}}\n{{Infobox|title=%s|image=Effect %s.png|imagesize=64px|type=[[Effect|Status effect]]}}\n'
                 "'''%s''' is a [[effect|status effect]]. In [[Matcha Flavoured]] it is granted by the following foods, "
                 'items and [[intrinsic]]s.\n\n== Sources ==\n{{Data/Effect/%s}}\n\n[[Category:Effects]]') % (eff, eff, eff, eff))
     overview.append('|}')
@@ -1234,7 +1255,11 @@ def main():
         if p:
             write('Template', 'Data/Sources/' + title, p); n['sources'] += 1
         if is_pack_relevant(name, item) and not hand_exists('Main', title):
-            write('Main', title, stub_article(name, item)); n['stubs'] += 1
+            group = group_page(name)
+            if group and hand_exists('Main', group):
+                write('Main', title, '#REDIRECT [[%s]]\n[[Category:Redirects to lists]]' % group); n['group redirects'] += 1
+            else:
+                write('Main', title, stub_article(name, item)); n['stubs'] += 1
     # vanilla items the pack uses but doesn't change: a short page pointing at minecraft.wiki,
     # with the pack's own recipes and uses (so every link in a recipe table goes somewhere)
     for name, item in ITEMS.items():
@@ -1262,7 +1287,7 @@ def main():
     # redirects: vanilla name -> renamed item
     for name, item in ITEMS.items():
         vn = item['vanilla_name']
-        if item['renamed_vanilla'] and vn != name and safe(vn) and not hand_exists('Main', safe(vn)) and safe(vn) not in ITEMS:
+        if item['renamed_vanilla'] and vn != name and safe(vn) and safe(vn).lower() != safe(name).lower() and not hand_exists('Main', safe(vn)) and safe(vn) not in ITEMS:
             write('Main', safe(vn), '#REDIRECT [[%s]]\n[[Category:Redirects from vanilla names]]' % safe(name)); n['redirects'] += 1
     for prof in TRADES:
         write('Template', 'Data/Trades/' + PROF.get(prof, prof.replace('_', ' ').title()), trades_page(prof)); n['trades'] += 1

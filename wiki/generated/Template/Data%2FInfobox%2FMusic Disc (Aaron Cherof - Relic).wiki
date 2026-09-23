@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Music Disc (Aaron Cherof - Relic)}}
+|image={{#if:{{{image|}}}|{{{image}}}|Music Disc (Aaron Cherof - Relic).png}}
+|imagesize=160px
+|invimage=Music Disc (Aaron Cherof - Relic)
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Music Disc}}
+|rarity=Uncommon
+|stackable=No
+|id=<code>minecraft:music_disc_relic</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/archaeology/trail_ruins_rare.json|trail_ruins_rare.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

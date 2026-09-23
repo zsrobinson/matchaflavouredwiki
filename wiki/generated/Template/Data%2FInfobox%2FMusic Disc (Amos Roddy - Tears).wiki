@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Music Disc (Amos Roddy - Tears)}}
+|image={{#if:{{{image|}}}|{{{image}}}|Music Disc (Amos Roddy - Tears).png}}
+|imagesize=160px
+|invimage=Music Disc (Amos Roddy - Tears)
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Music Disc}}
+|rarity=Uncommon
+|stackable=No
+|id=<code>minecraft:music_disc_tears</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/entities/ghast.json|ghast.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

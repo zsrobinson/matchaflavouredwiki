@@ -1,30 +1,30 @@
-# Build the wiki from the repository and publish the static export to GitHub Pages.
+# Build the wiki from the repository and deploy the static export to Cloudflare Workers.
 # Runs on every push to main (and on demand). The pack source is fetched at the commit
 # pinned in tools/source.lock, so the output only changes when this repository changes.
+# Needs repository secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID.
 name: Build and deploy
 on:
   push:
     branches: [main]
   workflow_dispatch:
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 concurrency:
-  group: pages
+  group: deploy
   cancel-in-progress: true
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - run: pip install pillow
       - name: Fetch sources (pack at pinned commit, vanilla data)
         run: tools/fetch_sources.sh
-      - name: Start MediaWiki
+      - name: Start MediaWiki (build-time renderer)
         run: |
           mkdir -p site/data site/images build
           docker compose up -d --build
@@ -32,17 +32,12 @@ jobs:
           docker exec matcha-wiki bash -c "chown -R www-data:www-data /var/www/data /var/www/html/images && php maintenance/run.php installPreConfigured"
       - name: Build wiki
         run: tools/build.sh
-      - name: Export static site
+      - name: Check pages
+        run: python3 tools/check_site.py
+      - name: Export static site (HTML + Pagefind index)
         run: python3 tools/export_static.py --out dist
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to Cloudflare Workers
+        run: npx -y wrangler@4 deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Music Disc (fingerspit - Bounce)}}
+|image={{#if:{{{image|}}}|{{{image}}}|Music Disc (fingerspit - Bounce).png}}
+|imagesize=160px
+|invimage=Music Disc (fingerspit - Bounce)
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Music Disc}}
+|rarity=Uncommon
+|stackable=No
+|id=<code>minecraft:music_disc_bounce</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_mineshaft.json|abandoned_mineshaft.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

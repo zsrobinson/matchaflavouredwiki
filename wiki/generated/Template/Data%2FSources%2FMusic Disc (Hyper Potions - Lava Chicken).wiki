@@ -1,0 +1,12 @@
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+
+'''Mob drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Zombie <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/zombie.json|entities/zombie}})</small> || 1 || 100% || player kill, baby
+|-
+| Zombie villager <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/zombie_villager.json|entities/zombie_villager}})</small> || 1 || 100% || player kill, baby
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

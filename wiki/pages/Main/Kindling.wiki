@@ -1,6 +1,6 @@
 {{Vanilla|Campfire}}
 {{Infobox auto}}
-'''Kindling''' is a block used to cook [[food]] without fuel. It replaces the {{MCW|Campfire|campfire}} and is the first cooking station a player can build. It cooks every food an [[oven]] can except [[Pumpkin Curry|pumpkin curry]], [[Popped Chorus Fruit|popped chorus fruit]], [[Dried Kelp|dried kelp]] and [[molasses]], and it also dries grass and fires clay.
+'''Kindling''' is a block used to cook [[food]] without fuel. It replaces the {{MCW|Campfire|campfire}} and is the first cooking station a player can build. It cooks every food an [[oven]] can except [[Pumpkin Curry|pumpkin curry]], [[Popped Chorus Fruit|popped chorus fruit]] and [[Dried Kelp|dried kelp]], and it also dries grass and fires clay.
 
 == Obtaining ==
 === Crafting ===
@@ -17,7 +17,7 @@ Kindling has to be lit with [[tinder]] or a [[Fire Starter|fire starter]] before
 {{Main|Cooking}}
 Up to four items cook at once, each in 5 seconds (15 seconds for the oven meals), much faster than a vanilla campfire's 30 seconds. It cooks:
 * All simple preparations of [[intrinsic]] ingredients.
-* [[Bread]], [[Baked Potato|baked potato]]es, [[Fried Egg|fried egg]]s, [[nopales]] and cooked meat and fish.
+* [[Bread]], [[Baked Potato|baked potato]]es, [[Fried Egg|fried egg]]s, [[nopales]], [[molasses]] and cooked meat and fish.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/molasses.json}}</ref>
 * [[Green Curry|Green curry]], [[Japanese Curry|Japanese curry]], [[Paneer Makhani|paneer makhani]] and [[Tonkotsu Ramen|tonkotsu ramen]] from their [[stock]]s.
 
 It also turns short grass and ferns into short dry grass (10 seconds), tall grass and large ferns into tall dry grass, bushes into dead bushes and clay balls into bricks (5 seconds each).<ref>{{Source|MF_datapack/data/matcha/recipe/campfire/short_dry_grass_campfire.json}}</ref> Drying grass grants ''Harvester''.

@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Music Disc (Lena Raine - Pigstep)}}
+|image={{#if:{{{image|}}}|{{{image}}}|Music Disc (Lena Raine - Pigstep).png}}
+|imagesize=160px
+|invimage=Music Disc (Lena Raine - Pigstep)
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Music Disc}}
+|rarity=Rare
+|stackable=No
+|id=<code>minecraft:music_disc_pigstep</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_other.json|bastion_other.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,5 +1,12 @@
 {{Vanilla|Ruined Portal}}
-A '''ruined portal''' generates as in vanilla. [[Matcha Flavoured]] changes its chest loot: gold is given as raw gold, and gold blocks, ingots, tools and the bell are removed, so that gold is not easily available before iron.
+A '''ruined portal''' generates as in vanilla. [[Matcha Flavoured]] changes its chest loot so that gold is not easily available before iron.
+
+Compared to vanilla, the chest:<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/ruined_portal.json}}</ref>
+* rolls 10–12 times instead of 4–8;
+* gives 2–8 raw gold instead of gold ingots, and no longer contains gold nuggets, blocks of gold, glistering melon slices, light weighted pressure plates or a bell;
+* replaces the separate golden tools and armor with the pack's golden armor table (weight 80), enchanted randomly, so golden tools are no longer found;
+* no longer contains flint or iron nuggets;
+* uses the pack's own golden apple, golden carrot and enchanted golden apple.
 
 
 == Loot ==
@@ -12,6 +19,9 @@ A '''ruined portal''' generates as in vanilla. [[Matcha Flavoured]] changes its 
 {{History line|1.12.1-alpha|Enchanted golden apples have the correct loot table path.}}
 {{History line|1.12.2|Loot nerfed to prevent gold from being obtainable before iron.}}
 }}
+
+== References ==
+{{reflist}}
 
 {{Navbox world}}
 [[Category:Structures]]

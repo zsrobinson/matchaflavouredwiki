@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Bubbling Mead}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bubbling Mead.png}}
+|imagesize=160px
+|invimage=Bubbling Mead
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|tooltip={{G|Throwable}}<br />🏃 +40% (5:00)
+|id=<code>matcha:bubbling_mead</code>
+|base=<code>minecraft:splash_potion</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/bubbling_mead.json|bubbling_mead.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

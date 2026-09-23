@@ -139,15 +139,23 @@ ITEMS = {}  # key -> item record
 MODEL_OWNER = {}  # item_model -> key of the named (custom) item that uses it
 
 
+EFFECT_NAMES = {v for k, v in VANILLA_LANG.items() if k.startswith('effect.minecraft.') and k.count('.') == 2}
+
+
 def stack_name(stack):
     comps = stack.get('components', {}) or {}
     for key in ('minecraft:custom_name', 'minecraft:item_name'):
         if key in comps:
             n = render_text(comps[key]).strip()
             base = norm_id(stack['id']).split(':')[-1]
-            if base in ('splash_potion', 'lingering_potion', 'potion') and 'potion' not in n.lower():
+            if base in ('splash_potion', 'lingering_potion', 'potion') and n in EFFECT_NAMES:
                 n = '%s of %s' % (vname(base), n)  # e.g. the Chemist's "Darkness" splash potion
             return n
+    sid = norm_id(stack['id']).split(':')[-1]
+    if sid.startswith('music_disc_') and not comps:
+        song = LANG.get('jukebox_song.minecraft.' + sid[len('music_disc_'):])
+        if song:
+            return '%s (%s)' % (vname(sid), strip_codes(song).strip())  # vanilla discs all share one name
     pc = comps.get('minecraft:potion_contents')
     if isinstance(pc, dict) and pc.get('custom_name'):
         base = norm_id(stack['id']).split(':')[-1]

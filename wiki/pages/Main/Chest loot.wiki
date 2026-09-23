@@ -4,7 +4,7 @@ This page lists every chest loot table in the pack. The tables are generated fro
 
 == General changes ==
 Across the pack's tables:<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json}}</ref>
-* In many tables, cut [[diamond]]s are replaced by [[Raw Diamond]]s, which must be smelted in a [[Blast Furnace]]. Some tables still contain cut diamonds: bastion treasure, desert pyramid, end city, nether fortress, stronghold corridor, several Trial Chambers tables and the village toolsmith. The {{Version|1.12.2}} release notes say that no "naturally-occuring free diamonds" should appear in surface structures, but the desert pyramid table still has them.
+* In many tables, cut [[diamond]]s are replaced by [[Raw Diamond]]s, which must be smelted in a [[Blast Furnace]]. Some tables still contain cut diamonds: bastion treasure, desert pyramid, end city, nether fortress, stronghold corridor, several Trial Chambers tables, and the village toolsmith and weaponsmith. The {{Version|1.12.2}} release notes say that no "naturally-occuring free diamonds" should appear in surface structures, but the desert pyramid table still has them.
 * Gold and iron ingots are mostly replaced by raw gold and raw iron.
 * Vanilla armor, tools and weapons are replaced by calls to shared equipment tables (see [[#Equipment tables]]) or to the pack's own equipment tables, which give the pack's versions of the items.
 * Vanilla foods such as bread, apples and golden apples are replaced by the pack's versions, so they stack with player-made food.

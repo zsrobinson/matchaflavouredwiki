@@ -9,32 +9,7 @@
 The '''Mouthpiece''' is a [[villager]] profession that trades [[sacred texts]] for [[Crystal Heart|crystal hearts]] and [[Ofuda]]. It replaces the {{MCW|Librarian|librarian}}, and its job site block is the Lectern. It sells no enchanted books, since [[enchanting]] in Matcha Flavoured works through [[Blessing|blessings]] and Ofuda instead.
 
 == Trades ==
-{| class="wikitable"
-! Level !! Villager wants !! Villager gives !! Villager XP
-|-
-! rowspan="3" | Novice
-| {{ItemLink|Paradise Lost}} || {{ItemLink|Crystal Heart}} || 20
-|-
-| {{ItemLink|The Divine Comedy}} || {{ItemLink|Crystal Heart}} || 20
-|-
-| {{ItemLink|Obol}} || 16 × {{ItemLink|Stable Void}} || 5
-|-
-! rowspan="3" | Apprentice
-| {{ItemLink|The Avesta}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>Efficiency II, Unbreaking I</small> || 30
-|-
-| {{ItemLink|The Quran}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>Protection II</small> || 30
-|-
-| {{ItemLink|The Tanakh}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>Loyalty III, Trailblaze III, Power II</small> || 30
-|-
-! rowspan="1" | Journeyman
-| {{ItemLink|The Book of Enoch}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>Sharpness III</small> || 50
-|-
-! rowspan="1" | Expert
-| {{ItemLink|The Lesser Key of Solomon}} +<br />2 × {{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>Mending</small> || 80
-|-
-! rowspan="1" | Master
-| 2 × {{ItemLink|Crystal Heart}} +<br />[[File:Echo Shard.png|16px|link=]] Echo Shard || {{ItemLink|Divine Fragment}} || 80
-|}
+{{Data/Trades/Mouthpiece}}
 All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/1/paradise_lost.json}}</ref> Every level offers all of its trades.
 
 === Crystal hearts ===

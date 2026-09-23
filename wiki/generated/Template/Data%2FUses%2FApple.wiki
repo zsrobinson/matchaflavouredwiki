@@ -5,9 +5,9 @@
 | [[Apple]]
 | {{Cooking|station=Kindling|Input=Apple|Output=Baked Apple|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/baked_apple.json|matcha:food/campfire/baked_apple}}</small>
 |-
-| [[Splash Potion of Bubbling Mead]]
+| [[Bubbling Mead]]
 | [[Honey Bottle]] +<br />[[Brown Mushroom]] +<br />2 × [[Sugar]] +<br />[[Sweet Berries]] or [[Apple]] or [[Glow Berries]]
-| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sugar|B2=Sweet Berries;Apple;Glow Berries|Output=Splash Potion of Bubbling Mead|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bubbling_mead.json|matcha:food/crafting/bubbling_mead}}</small>
+| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sugar|B2=Sweet Berries;Apple;Glow Berries|Output=Bubbling Mead|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bubbling_mead.json|matcha:food/crafting/bubbling_mead}}</small>
 |-
 | [[Golden Apple]]
 | 8 × [[Gold Nugget]] +<br />[[Apple]]

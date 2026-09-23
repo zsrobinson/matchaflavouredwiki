@@ -9,60 +9,7 @@
 The '''Shepherd''' is a [[villager]] profession that sells wool by the stack, lambs and shepherding tools. Its job site block is the Loom. Unlike the vanilla shepherd, it buys no wool.
 
 == Trades ==
-{| class="wikitable"
-! Level !! Villager wants !! Villager gives !! Villager XP !! Notes
-|-
-! rowspan="16" | Novice
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Red Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Pink Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Orange Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Brown Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Yellow Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Lime Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Green Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Light Blue Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Blue Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Cyan Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Purple Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Magenta Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Black Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Gray Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Light Gray Wool}} || 5 || 
-|-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|White Wool}} || 5 || 
-|-
-! rowspan="4" | Apprentice<br /><small>2 of 4 offered</small>
-| 3 × {{ItemLink|Obol}} || {{ItemLink|Shepherd's Shears}}<br /><small>Looting III</small> || 20 || 
-|-
-| {{ItemLink|Obol}} || {{ItemLink|Brown Lamb}} || 30 || Warm biomes only
-|-
-| {{ItemLink|Obol}} || {{ItemLink|Black Lamb}} || 30 || Cold biomes only
-|-
-| {{ItemLink|Obol}} || {{ItemLink|White Lamb}} || 30 || Temperate biomes only
-|-
-! rowspan="1" | Journeyman
-| {{ItemLink|Obol}} || {{ItemLink|Crook}} || 50 || 
-|-
-! Expert
-| colspan="4" style="text-align:center" | ''No trades''
-|-
-! Master
-| colspan="4" style="text-align:center" | ''No trades''
-|}
+{{Data/Trades/Shepherd}}
 All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/1/white_wool.json}}</ref>
 
 * At Novice level the shepherd offers all 16 colors of wool, 64 blocks for 1 obol each.

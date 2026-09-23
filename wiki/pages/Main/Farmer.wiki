@@ -9,46 +9,7 @@
 The '''Farmer''' is a [[villager]] profession that sells seeds, flowers and young farm animals. Its job site block is the {{ItemLink|Composter}}. Unlike the vanilla farmer, it buys no crops.
 
 == Trades ==
-{| class="wikitable"
-! Level !! Villager wants !! Villager gives !! Villager XP !! Notes
-|-
-! rowspan="5" | Novice<br /><small>3 of 5 offered</small>
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Bone Meal}} || 10 || 
-|-
-| {{ItemLink|Obol}} +<br />{{ItemLink|Jungle Sapling}} || {{ItemLink|Exotic Seed Bundle}} || 10 || 
-|-
-| {{ItemLink|Obol}} || {{ItemLink|Floral Bundle}} || 10 || 
-|-
-| {{ItemLink|Obol}} || {{ItemLink|Mushy Bundle}} || 10 || 
-|-
-| {{ItemLink|Obol}} || {{ItemLink|Seed Bundle}} || 10 || 
-|-
-! rowspan="3" | Apprentice<br /><small>2 of 3 offered</small>
-| {{ItemLink|Obol}} || {{ItemLink|Fertilized Blue Egg}} || 30 || Cold biomes only
-|-
-| {{ItemLink|Obol}} || {{ItemLink|Fertilized Brown Egg}} || 30 || Warm biomes only
-|-
-| {{ItemLink|Obol}} || {{ItemLink|Fertilized Egg}} || 30 || Temperate biomes only
-|-
-! rowspan="6" | Journeyman<br /><small>3 of 6 offered</small>
-| {{ItemLink|Obol}} || {{ItemLink|Calf}} || 30 || Temperate biomes only
-|-
-| {{ItemLink|Obol}} || {{ItemLink|Highland Calf}} || 30 || Cold biomes only
-|-
-| {{ItemLink|Obol}} || {{ItemLink|Sindhi Calf}} || 30 || Warm biomes only
-|-
-| {{ItemLink|Obol}} || {{ItemLink|Bushpiglet}} || 30 || Warm biomes only
-|-
-| {{ItemLink|Obol}} || {{ItemLink|Mangalica Piglet}} || 30 || Cold biomes only
-|-
-| {{ItemLink|Obol}} || {{ItemLink|Piglet}} || 30 || Temperate biomes only
-|-
-! Expert
-| colspan="4" style="text-align:center" | ''No trades''
-|-
-! Master
-| colspan="4" style="text-align:center" | ''No trades''
-|}
+{{Data/Trades/Farmer}}
 All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/1/seed_bundle.json}}</ref>
 
 * The Novice trades sell pre-filled [[bundles]]: the [[Bundles#Seed Bundle|Seed Bundle]], [[Bundles#Floral Bundle|Floral Bundle]], [[Bundles#Mushy Bundle|Mushy Bundle]] and [[Bundles#Exotic Seed Bundle|Exotic Seed Bundle]]. The Exotic Seed Bundle also costs a jungle sapling.

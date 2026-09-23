@@ -3,40 +3,42 @@ This '''guide for new players''' explains how to begin a world in [[Matcha Flavo
 
 == Before starting ==
 * Install the pack as both a datapack and a resource pack. On loading, chat shows "Matcha Flavoured is now loaded". See [[Installation]].
-* Choose the [[difficulty]] with care. Easy is close to vanilla mob behavior and never lets maximum health fall below 10 hearts. Normal is the intended experience. Hard is, in the developer's words, "meant to be unfair".<ref>{{Cite changelog|1.12.2}}</ref> Changing difficulty takes effect after a reload.
-* Differences that matter immediately: there is no [[hunger]] and no [[Natural regeneration|natural regeneration]], so the player heals only by eating; the inventory is kept on death, but maximum health drops; [[zombie]]s are fast; nights last three times as long.
+* Choose the [[difficulty]] with care. On Easy, maximum health never falls below 10 hearts and the [[Wither effect]] takes no hearts. On Normal, deaths cost more as the player progresses, and the world switches to Hard once any player's minimum hearts reaches 5. Hard is, in the developer's words, "meant to be unfair".<ref>{{Cite changelog|1.12.2|quote=Dont play on Hard! Hard is meant to be unfair.}}</ref> The pack only reads the difficulty when the world loads, so a change takes effect after a reload.
+* Differences that matter immediately: there is no [[hunger]] and no [[Natural regeneration|natural regeneration]], so the player heals mainly by eating; the inventory is kept on [[death]], but maximum health drops by a heart (two on Hard); [[zombie]]s are fast; [[Day and night|days and nights]] last three times as long; unlit places are pitch black ([[Darkness|true darkness]]); and there are no stone tools.
 
 == Step by step ==
 === 1. Fire ===
-Punch a tree. Logs unlock sticks and the [[Kindling|kindling]] recipe (2 sticks above 2 logs). Kindling is placed unlit. Craft [[tinder]] from 2 sticks and a piece of short grass, fern or bush, and use it on the kindling. This grants '''Prometheus be Damned'''. Tinder breaks after one use; a [[Fire Starter|fire starter]] (2 flint) lasts longer.
+Punch a tree. Picking up logs unlocks the recipes for sticks, chests made from logs and [[Kindling|kindling]] (2 sticks above 2 logs of any kind).<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/logs.json}}</ref> Kindling is crafted and placed unlit.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json}}</ref> Craft [[tinder]] from 2 sticks and a piece of short grass, fern or bush, and use it on the kindling. This grants '''Prometheus be Damned'''. Tinder breaks after one use; a [[Fire Starter|fire starter]] (2 flint, which comes from [[gravel]]) lasts longer.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/tinder.json}}</ref>
 
 === 2. A wooden hoe and dry grass ===
-Craft a wooden hoe. Grass broken by hand drops nothing, but broken with a hoe it drops short grass and sometimes [[Wheat Grain|wheat grain]]. Cook the grass on the lit kindling to get short dry grass ('''Harvester'''). The kindling is also the first cooking station: many ingredients gain their [[intrinsic]] effects when cooked on it ('''Powerful Flavors'''). Food is the only way to heal, so cook early and often.
+Craft a wooden hoe. Grass broken by hand drops nothing. Broken with a hoe, it drops itself, or [[Wheat Grain|wheat grain]] instead 12.5% of the time; shears also collect it.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/short_grass.json}}</ref> Cook short grass or ferns on the lit kindling (10 seconds each) to get short dry grass ('''Harvester''').<ref>{{Source|MF_datapack/data/matcha/recipe/campfire/short_dry_grass_campfire.json}}</ref> The kindling is also the first cooking station: many ingredients gain their [[intrinsic]] effects when cooked on it ('''Powerful Flavors'''). Food is the only way to heal, so cook early and often.
 
 === 3. The mud kiln ===
-Craft short dry grass with dirt into [[Packed Mud|packed mud]], turn 4 packed mud into mud bricks, and build a [[Mud Kiln|mud kiln]] from 4 mud bricks, 2 packed mud and a kindling ('''Ancient Technology''').
+Craft short dry grass with dirt into [[Packed Mud|packed mud]] (one of each makes one), turn 4 packed mud into 4 mud bricks, and build a [[Mud Kiln|mud kiln]] from 4 mud bricks, 2 packed mud and a kindling ('''Ancient Technology''').
 
 === 4. Copper ===
-A wooden pickaxe mines stone and copper ore. Smelt raw copper in the kiln ('''Brazier''') and make copper tools and armor. Copper is the first real metal, and the developer wants players to spend time with it.<ref>{{Cite changelog|1.10|quote=Copper is cool, let them have more time with it.}}</ref> A copper [[mattock]] or [[dolabra]] saves hotbar space ('''Two in One'''). Obtaining copper also lowers the player's minimum hearts for the first time.
+A wooden pickaxe mines [[Limestone|limestone]], coal and [[Native Copper|native copper]], but gets nothing from deepslate or from iron, gold, silver, diamond or sulfur ores.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref> Smelt raw copper in the kiln ('''Brazier''') and make copper tools and armor. Copper is the first real metal, and the developer wants players to spend time with it.<ref>{{Cite changelog|1.10|quote=Copper is cool, let them have more time with it.}}</ref> A copper [[mattock]] or [[dolabra]] saves hotbar space ('''Two in One'''). Obtaining a copper ingot also lowers the player's minimum hearts for the first time (see [[Death#Minimum hearts]]).
 
 === 5. Stone and the blast furnace ===
-The kiln turns cobblestone into [[Limestone|limestone]] and limestone into smooth stone ('''Mason'''). With a copper pickaxe, mine deepslate and craft polished deepslate. A [[blast furnace]] takes 4 polished deepslate, 2 smooth stone and a kindling ('''Burgeoning Metallurge''').
+The kiln turns cobblestone into [[Limestone|limestone]] and limestone into smooth stone ('''Mason'''). With a copper pickaxe, mine deepslate and craft 4 cobbled deepslate into 4 polished deepslate. A [[blast furnace]] takes 4 polished deepslate, 2 smooth stone and a kindling ('''Burgeoning Metallurge''').
 
 === 6. Iron, gold, silver and diamonds ===
-Iron, gold, silver and diamond must be smelted in the blast furnace; diamond ore drops [[Raw Diamond|raw diamond]]. Each of iron and diamond lowers minimum hearts, so there is no need to rush them.
+Copper tools mine [[Hematite|hematite]] (iron) and [[Native Silver|native silver]], but not [[Native Gold|native gold]] or diamond ore; iron tools mine everything except obsidian.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/copper.json}}</ref> Raw iron, raw gold, [[Raw Silver|raw silver]] and [[Raw Diamond|raw diamond]] (what diamond ore drops) can only be smelted in the blast furnace. The first iron ingot and the first diamond each lower minimum hearts again, as do entering [[Hell]], finding a stronghold and obtaining [[Electrum Alloy|electrum]] or [[Adamant Alloy|adamant]] alloy. Progressing slowly keeps deaths cheaper, so there is no need to rush.
 
 === 7. The oven and meals ===
-Bricks from clay (cooked on the kindling or in the kiln) and 3 iron ingots make an [[oven]]. Bricks also make bowls, needed for the curries and ramen, the pack's strongest meals. See [[Food]] and [[Cooking]].
+Clay balls cooked on the kindling or in the kiln become bricks, and 4 bricks craft 2 blocks of bricks. An [[oven]] takes 4 blocks of bricks, 3 iron ingots and a kindling ('''Now You're Cooking''').<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/oven.json}}</ref> Five bricks also make 4 [[bowl]]s ('''Manners First'''), which the curries and ramen, the pack's strongest meals, are served in.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/bowl.json}}</ref> See [[Food]] and [[Cooking]].
 
 === 8. Steel and smithing ===
-Craft 4 iron ingots with a coal block into [[Carbon-Rich Iron|carbon-rich iron]] and blast it into [[Steel Alloy|steel]]. Steel makes the [[Smithing Table|smithing table]] and [[anvil]]. From here the player can apply [[alloy]]s to equipment. See [[Smithing]].
+Craft 4 iron ingots with a block of coal into 4 [[Carbon-Rich Iron|carbon-rich iron]] and blast each into a [[Steel Alloy|steel alloy]]. Two steel and 4 planks make the [[Smithing Table|smithing table]], and 3 steel and 4 iron ingots make the [[anvil]], which repairs equipment without limit.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/smithing_table.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/anvil.json}}</ref> From here the player can apply [[alloy]]s to equipment. See [[Smithing]].
 
 == Tips ==
-* [[Sack]]s (shulker boxes) are available early: 8 [[Sturdy Leather|sturdy leather]] around a chest.
-* [[Divine Fragment|Divine fragments]] come from breaking [[spawner]]s and defeating strong mobs. They are needed for eyes of ender and [[Crystal Heart|crystal hearts]], so break spawners rather than farming them. The README says simply: "Break Spawners!"
-* Only [[undead]] spawn on the open surface at night; creepers and spiders are underground. Warding weapons and a [[nazar]] burn the undead.
-* [[Obol]]s are rare. Most villagers do not buy anything, but the [[fisherman]] buys caught fish.
+* [[Sack]]s (shulker boxes) are available early: 8 [[Sturdy Leather|sturdy leather]] around a chest.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sack.json}}</ref>
+* [[Divine Fragment|Divine fragments]] come from breaking [[spawner]]s and defeating strong mobs. They are needed for [[Eye of Ender|eyes of ender]] (1 fragment and 1 stabilized Estus make 16) and [[Crystal Heart|crystal hearts]] (1 fragment and 8 diamonds), so break spawners rather than farming them. The README says simply: "Break Spawners!"
+* In the Overworld, only undead mobs can spawn under the open sky; creepers and spiders spawn underground. See [[Spawning]]. [[Warding]] items such as a held [[nazar]] hurt the undead.
+* [[Raw Estus|Raw Estus]], dropped by undead, heals the player the moment it is picked up.
+* [[Obol]]s are rare. Most villagers do not buy anything, but the [[fisherman]] buys caught [[fish]]. Villagers are not found in villages, which are [[Abandoned village|abandoned]]; they come from [[Asylum Seeker|asylum seeker]] applications sold by the [[Wandering Trader|wandering trader]].
 * Carry food suited to the trip: the developer suggests melons for [[Hell]], glow berries or carrots for caves, and chorus fruit for [[the End]].<ref>{{Cite video|quote=If they're planning a trip to hell, they'll want to find some melons first.}}</ref>
+* Cold water in snowy biomes is [[Freezing water|freezing]]: keep the head above it.
 * There is no rush to reach the End. After the dragon is killed, the surface becomes safe from hostile mobs.
 
 == References ==

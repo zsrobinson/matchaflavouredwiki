@@ -1,10 +1,20 @@
 {{Vanilla|End City}}
-An '''end city''' generates in [[The End]] as in vanilla. [[Matcha Flavoured]] changes its chest loot: vanilla diamond and iron equipment, horse armor and saddles are replaced by the shared diamond equipment table and blocks of iron.
+An '''end city''' generates in [[The End]] as in vanilla. [[Matcha Flavoured]] changes only its chest loot.
+
+Compared to vanilla, the treasure chest:<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/end_city_treasure.json}}</ref>
+* rolls 5–8 times instead of 2–6;
+* replaces the individual diamond and iron tools and armor with the pack's shared diamond equipment table (weight 20), enchanted randomly;
+* adds blocks of iron (5–12), and gives more diamonds (5–9 instead of 2–7) and iron ingots (12–16 instead of 4–8);
+* gives 1–3 {{ItemLink|Obol|obols}} instead of 2–6 emeralds;
+* drops beetroot seeds, saddles and copper and iron horse armor. Golden and diamond horse armor remain.
 
 
 == Loot ==
 === Chests ===
 {{Data/Loot/minecraft/chests/end_city_treasure}}
+
+== References ==
+{{reflist}}
 
 {{Navbox world}}
 [[Category:Structures]]
