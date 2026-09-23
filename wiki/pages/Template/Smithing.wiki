@@ -1,4 +1,4 @@
-<includeonly><div style="display:inline-block;vertical-align:top;margin:0 0.5em 0.5em 0;text-align:center">{{#invoke:UI|smithing|Input1={{{Template|}}}|Input2={{{Base|}}}|Input3={{{Addition|}}}|Output={{{Output|}}}}}{{#if:{{{note|}}}|<div style="font-size:90%">{{{note}}}</div>}}</div></includeonly><noinclude>
+<includeonly><div style="display:inline-block;vertical-align:top;margin:0 0.5em 0.5em 0;text-align:center">{{Smithing Table|Input1={{{Template|}}}|Input2={{{Base|}}}|Input3={{{Addition|}}}|Output={{{Output|}}}}}{{#if:{{{note|}}}|<div style="font-size:90%">{{{note}}}</div>}}</div></includeonly><noinclude>
 A smithing table transform. The template slot is left empty for alloy upgrades, which need no template in Matcha Flavoured.
 
 {{Smithing|Base=Iron Pickaxe|Addition=Steel Alloy|Output=Steel Pickaxe}}
