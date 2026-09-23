@@ -1483,9 +1483,9 @@ def main():
         if not (producing(name) or USES.get(name) or SOURCES.get(name) or TRADE_GIVES.get(name) or TRADE_WANTS.get(name)):
             continue
         body = ['{{Vanilla}}\n{{Infobox auto}}',
-                "'''%s''' is %s item from vanilla ''Minecraft'' that [[Matcha Flavoured]] does not change. "
+                "'''%s''' is an item from vanilla ''Minecraft'' that [[Matcha Flavoured]] does not change. "
                 "See {{MCW|%s}} on the Minecraft Wiki for everything about it; this page lists only where it appears in the pack." % (
-                    name, 'an' if name[0] in 'AEIOU' else 'a', item['vanilla_name'] or name), '']
+                    name, item['vanilla_name'] or name), '']
         if producing(name):
             body.append('== Obtaining ==\n{{Recipes}}\n')
         if SOURCES.get(name) or TRADE_GIVES.get(name):
