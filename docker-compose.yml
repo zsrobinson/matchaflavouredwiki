@@ -18,4 +18,6 @@ services:
     environment:
       # Directory mount (not a single-file mount) so edits to LocalSettings.php are seen immediately
       MW_CONFIG_FILE: /var/www/site/LocalSettings.php
+      # "ci" for one-shot builds from an empty database (parser cache on, see LocalSettings.php)
+      MFW_BUILD_MODE: ${MFW_BUILD_MODE:-}
     restart: unless-stopped

@@ -1,5 +1,7 @@
 # Validate a pull request: full build from the pinned sources, render every page, and fail on
 # template/Lua errors or broken links. The autopilot (AUTOPILOT.md) merges its PRs only when this passes.
+# A passing PR is also uploaded to Cloudflare as a preview (not deployed); deploy.yml promotes that
+# same upload when the merged tree is identical, instead of rebuilding.
 name: Check
 on:
   pull_request:
@@ -8,11 +10,19 @@ on:
 concurrency:
   group: check-${{ github.ref }}
   cancel-in-progress: true
+permissions:
+  contents: read
+  pull-requests: write  # the preview link comment
+env:
+  # one-shot build from an empty wiki: parser cache on, no page-view jobs (site/LocalSettings.php)
+  MFW_BUILD_MODE: ci
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # every commit: the sitemap's lastmod comes from each page's git history
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -26,6 +36,18 @@ jobs:
           node --test tests/worker.test.mjs
       - name: Fetch sources (pack at pinned commit, vanilla data)
         run: tools/fetch_sources.sh
+      - name: Generated pages are committed and current
+        run: |
+          python3 tools/extract.py
+          python3 tools/generate.py
+          git diff --stat --exit-code wiki/generated || (echo "::error::wiki/generated is out of date: run tools/generate.py and commit" && exit 1)
+      - name: Restore item icons
+        uses: actions/cache@v4
+        with:
+          path: build/images
+          # tools/images.py redraws only if its inputs changed (build/images/.inputs), so an older cache is safe
+          key: images-${{ hashFiles('tools/images.py', 'tools/extract.py', 'tools/extra_textures.txt', 'tools/source.lock', 'tools/mc_version.txt') }}
+          restore-keys: images-
       - name: Start MediaWiki (build-time renderer)
         run: |
           mkdir -p site/data site/images build
@@ -34,10 +56,6 @@ jobs:
           docker exec matcha-wiki bash -c "chown -R www-data:www-data /var/www/data /var/www/html/images && php maintenance/run.php installPreConfigured"
       - name: Build wiki
         run: tools/build.sh
-      - name: Generated pages are committed and current
-        run: |
-          python3 tools/generate.py
-          git diff --stat --exit-code wiki/generated || (echo "::error::wiki/generated is out of date: run tools/generate.py and commit" && exit 1)
       - name: Check every page (errors and broken links)
         run: |
           python3 tools/check_site.py | tee check.txt
@@ -46,3 +64,41 @@ jobs:
         run: python3 tools/export_static.py --out dist
       - name: Validate static SEO signals
         run: python3 tools/check_seo.py dist
+      - name: Upload preview
+        id: preview
+        if: github.event_name == 'pull_request'
+        continue-on-error: true  # a Cloudflare hiccup must not fail the check; deploy.yml then rebuilds
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [[ -z "$CLOUDFLARE_API_TOKEN" ]]; then
+            echo "No Cloudflare secrets (a PR from a fork): no preview."
+            exit 0
+          fi
+          # A version is uploaded but not deployed: production keeps serving the current one.
+          # The message names the tree (this PR merged into main), which deploy.yml looks for.
+          npx -y wrangler@4 versions upload --preview-alias "pr-${{ github.event.number }}" \
+            --message "tree $(git rev-parse 'HEAD^{tree}')" | tee upload.txt
+          url=$(grep -oE 'https://pr-${{ github.event.number }}-[a-z0-9.-]+\.workers\.dev' upload.txt | head -1)
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+      - name: Comment the preview link
+        if: steps.preview.outputs.url != ''
+        continue-on-error: true
+        uses: actions/github-script@v7
+        env:
+          PREVIEW_URL: ${{ steps.preview.outputs.url }}
+        with:
+          script: |
+            const marker = '<!-- mfw-preview -->';
+            const body = `${marker}\n**Preview:** ${process.env.PREVIEW_URL}\n\n` +
+              `Built from ${context.sha.slice(0, 7)} (this PR merged into \`main\`). Not indexed by search engines.`;
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const comments = await github.paginate(github.rest.issues.listComments, { owner, repo, issue_number });
+            const mine = comments.find(c => c.user.type === 'Bot' && c.body.includes(marker));
+            if (mine) {
+              await github.rest.issues.updateComment({ owner, repo, comment_id: mine.id, body });
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number, body });
+            }

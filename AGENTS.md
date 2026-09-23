@@ -32,8 +32,9 @@ python3 tools/check_site.py          # every hand-written page; also flags unpar
 tools/screenshot.sh "Title" out.png  # headless Chrome render; for dark mode or phone widths use Playwright
 python3 tools/export_static.py && npx wrangler dev   # the real static site on :8787
 ```
-`tools/build.sh` does a full rebuild (extract → images → generate → import → upload changed images), and
-`tools/sync.sh` imports only changed text. All three share the lock `build/.sync.lock`. `generate.py` has
+`tools/build.sh` does a full rebuild (extract → images → generate → import → upload changed images →
+render every page once, one process per core, with `site/renderPages.php`), and `tools/sync.sh` imports
+only changed text. `images.py` skips drawing when its inputs are unchanged (`--force` redraws). All three share the lock `build/.sync.lock`. `generate.py` has
 its own lock and swaps `wiki/generated` atomically, and `build_xml.collect()` retries if it catches
 the swap mid-way.
 
@@ -62,9 +63,15 @@ the swap mid-way.
   so local checks can pass while CI, which builds from scratch, finds broken links. Trust the PR check.
 
 **Caches and Docker**
-- **Parser cache is off** (`$wgParserCacheType = CACHE_NONE`). **APCu still caches rendered pages,
+- **Parser cache is off** locally (`$wgParserCacheType = CACHE_NONE`). **APCu still caches rendered pages,
   messages, gadget definitions and CSS**, so `sync.sh` and `build.sh` run `apache2ctl -k graceful`
   after importing. If a page looks stale, that's the fix. `purgeList` alone does not clear it.
+- **CI turns the parser cache on** (`MFW_BUILD_MODE=ci`, passed through `docker-compose.yml`). Its wiki is
+  new every run, so nothing can go stale. `site/renderPages.php` parses each page once to fill both the
+  links tables and the parser cache, and `check_site.py` and the export reuse that render. Before this,
+  every page was parsed three times and the build took about 15 minutes. Keep `purgeList`, `runJobs` and
+  page-view jobs (`$wgJobRunRate`) out of the CI path: they mark pages as changed and empty the cache.
+  `refreshLinks.php` is not a substitute, because it parses on one core and throws the result away.
 - **Mount directories, not single files.** A single-file bind mount keeps pointing at the old inode after
   `sed -i`. LocalSettings is loaded through `MW_CONFIG_FILE` from the mounted `site/` folder.
 - **Scribunto's bundled Lua is x86-only.** `site/Dockerfile` installs `lua5.1`, which makes it work on ARM Macs.
@@ -107,7 +114,11 @@ the swap mid-way.
 - **Page files:** pages are `dist/w/<Title>.html`, with `html_handling: auto-trailing-slash` in `wrangler.jsonc`.
 - **The Worker (`src/worker.js`):**
   - 301s every other hostname to `https://matchaflavou.red`;
-  - serves redirect pages and wrong-case URLs as real 301s from `src/redirects.json`, which the export writes.
+  - serves redirect pages and wrong-case URLs as real 301s from `src/redirects.json`, which the export writes;
+  - serves `*.workers.dev` (PR previews) in place, with `X-Robots-Tag: noindex`.
+  - asks the asset server for each path in its own encoding (`encodeURIComponent` per segment, so `:` is `%3A`).
+    Cloudflare's assets 307 any other form, and since the Worker 301s `%3A` back to `:`, every namespaced page
+    (`Category:`, `Template:`) once looped.
 - **What the export keeps and strips:** it removes MediaWiki's scripts except the theme boot, and keeps the `ca-mfw-*` GitHub tabs.
   It also replaces legacy Vector's fixed `width=1120` viewport with `device-width`, so phones get the vendored narrow-screen layout.
   Its `site.js` is `Gadget-mfwShell.js` and `Gadget-mfwTooltip.js` (plain DOM, no jQuery) plus `SITE_JS`.
@@ -115,8 +126,16 @@ the swap mid-way.
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;
   it becomes the search snippet.
-- **Deploy:** CI (`.github/workflows/deploy.yml`) builds everything and runs `wrangler deploy` on push
-  to `main`, which takes about 20 minutes. A newer push cancels a running deploy. PRs run `check.yml`.
+- **PRs** run `check.yml`: the full build and checks, then `wrangler versions upload` as a preview at
+  `https://pr-<number>-matcha-flavoured-wiki.<account>.workers.dev`, linked in a PR comment. The upload
+  isn't deployed, and its message is `tree <sha>`: the tree of the PR merged into `main`.
+- **Deploy:** on push to `main`, `deploy.yml` looks for an upload of the same tree among the 10 newest
+  versions. If it finds one, it deploys that version (`wrangler versions deploy`, about a minute). This
+  happens when `main` hasn't moved since the PR's last check. Otherwise it does the full build and runs
+  `wrangler deploy`. Manual runs always rebuild. A newer push cancels a running deploy.
+- **Exports are reproducible.** An unchanged page exports byte-for-byte the same, so a deploy uploads
+  only the files that changed. The export drops the parser cache's timestamp comment, and
+  `$wgEnableParserLimitReporting` is off. Don't add anything that varies from build to build to the pages.
 - **Cloudflare:** the account is `5ac179a21ac475108b47f1269748424b`. The zones are matchaflavou.red
   (primary), matchaflavo.red and matchaflavoured.org. After DNS changes, test with
   `curl --resolve host:443:$(dig +short @1.1.1.1 host)`, because local resolvers cache NXDOMAIN.

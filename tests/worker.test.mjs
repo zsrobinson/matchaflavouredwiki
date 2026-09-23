@@ -31,3 +31,14 @@ for (const path of ['/w/Mud_Kiln', '/w/Category:Food', '/w/Missing', '/w/%FF', '
     assert.equal((await worker.fetch(new Request('https://matchaflavou.red' + path), env)).status, 404);
   });
 }
+test('previews on workers.dev are served in place and kept out of search', async () => {
+  const response = await worker.fetch(new Request('https://pr-7-matcha-flavoured-wiki.example.workers.dev/w/mud_kiln'), env);
+  assert.equal(response.headers.get('location'), 'https://pr-7-matcha-flavoured-wiki.example.workers.dev/w/Mud_Kiln');
+  const page = await worker.fetch(new Request('https://pr-7-matcha-flavoured-wiki.example.workers.dev/w/Mud_Kiln'), env);
+  assert.equal(page.headers.get('x-robots-tag'), 'noindex');
+  assert.equal(page.status, 404);
+});
+test('the canonical host is indexable', async () => {
+  const response = await worker.fetch(new Request('https://matchaflavou.red/w/Mud_Kiln'), env);
+  assert.equal(response.headers.get('x-robots-tag'), null);
+});
