@@ -1,0 +1,25 @@
+{{Vanilla|Flint and Steel}}
+{{Infobox auto}}
+A '''fire starter''' is a tool used to light fires, [[Kindling|kindling]], candles, TNT and nether portals. It is the vanilla {{MCW|Flint and Steel|flint and steel}}, renamed and made from two pieces of flint instead of flint and an iron ingot, so it can be made before the player has any metal.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Two flint make a fire starter.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/fire_starter.json}}</ref> The vanilla recipe is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Picking up flint unlocks the recipe.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/flint.json}}</ref>
+
+=== Chest loot ===
+{{Sources}}
+
+== Usage ==
+The fire starter works exactly like vanilla flint and steel.
+
+== Trivia ==
+* The pack contains two identical fire starter recipes, <code>fire_starter</code> and <code>flint_and_steel</code>; only the first is unlocked in the recipe book.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/flint_and_steel.json}}</ref>
+* The item texture shows two pieces of flint rather than a steel striker.
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Tools]]
+[[Category:Renamed items]]

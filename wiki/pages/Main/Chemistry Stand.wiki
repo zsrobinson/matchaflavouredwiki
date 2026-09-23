@@ -1,0 +1,35 @@
+{{Vanilla|Brewing Stand}}
+{{Infobox auto}}
+A '''Chemistry Stand''' is the [[Matcha Flavoured]] name for the {{MCW|Brewing Stand|brewing stand}}. [[Brewing]] is effectively removed from the pack, so the Chemistry Stand serves mainly as the job site block of the [[Chemist]] (the pack's cleric) and as decoration.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The vanilla recipe, which needs a blaze rod, is replaced with one that uses an iron ingot and a [[copper ingot]] over three cobblestone, blackstone or cobbled deepslate.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/chemistry_stand.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+== Usage ==
+=== Job site ===
+The Chemistry Stand is the job site block of the [[Chemist]], who sells [[Splash Potion|splash potions]].
+
+=== Brewing ===
+{{Main|Brewing}}
+The Chemistry Stand opens the vanilla brewing interface, titled "Chemistry Stand", but it cannot be fueled: the pack empties the <code>#minecraft:brewing_fuel</code> item tag, which normally holds blaze powder ([[Raw Estus]]).<ref>{{Source|MF_datapack/data/minecraft/tags/item/brewing_fuel.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.10|Fixed the recipe unlock.}}
+{{History line|1.12.1-alpha|Raw Estus no longer works as fuel.<ref>{{Cite changelog|1.12.1-alpha|quote=Raw Estus can no longer be used in brewing stands (👥) (#minecraft:item/brewing_fuel)}}</ref>}}
+}}
+
+== See also ==
+* [[Brewing]]
+* [[Chemist]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Blocks]]
+[[Category:Utility blocks]]
+[[Category:Renamed items]]

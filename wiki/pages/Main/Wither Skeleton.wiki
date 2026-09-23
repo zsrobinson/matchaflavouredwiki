@@ -1,0 +1,47 @@
+{{Vanilla}}
+{{Infobox
+|title=Wither Skeleton
+|type=Hostile mob, undead
+|health=Vanilla
+|spawn=[[Nether Fortress|Fortresses]] in [[Hell]]
+|drops=Coal, bone, {{MCW|Wither Skeleton Skull|wither skeleton skull}}
+}}
+A '''wither skeleton''' in [[Matcha Flavoured]] is more dangerous than in vanilla ''Minecraft'' in two ways: it digs through blocks to reach a player in a fortress, and the [[Wither effect]] it inflicts can cost maximum [[health]]. In exchange, it drops its skull far more often.
+
+== Drops ==
+{{Data/Loot/minecraft/entities/wither_skeleton}}
+All drops require a player kill.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/wither_skeleton.json}}</ref> Coal and bones are as in vanilla. The skull drops with a 30% chance, plus 10% per level of Looting above the first (40% with Looting II, 50% with Looting III); vanilla's chance is 2.5%. Unlike other undead, wither skeletons don't drop {{ItemLink|Estus Ash}} or {{ItemLink|Raw Estus}}.
+
+== Behavior ==
+=== Breaking blocks ===
+About once a second while a player is inside a [[Nether Fortress|fortress]], every wither skeleton within 5 blocks of that player breaks the two blocks directly in front of it: the block at its eye level one block ahead, and the block below that.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/mob_behaviours/wither_skeleton/break_block.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/enter_fortress.json}}</ref> The blocks drop as items. This lets wither skeletons break through walls and stops players from safely attacking their feet through a one-block gap.
+
+The blocks are broken in the direction the skeleton is facing, whatever the block is, including blocks the player placed.
+
+=== Wither effect ===
+{{Main|Wither effect}}
+A wither skeleton's hit applies the Wither effect. Except on Easy, staying withered for 8 seconds costs the player 1 heart of maximum health (2 on Hard), so [[bread]] or milk should be carried in Hell.
+
+Wither skeletons are undead and hurt by [[warding]]. They are not one of the "mundane hostile" mobs, so their attributes are not changed by [[difficulty]].
+
+== History ==
+{{History|
+{{History line|1.03|Fixed Looting lowering the skull drop chance instead of raising it.}}
+{{History line|1.12.2|Wither skeletons break blocks in front of them in fortresses. The Wither effect takes hearts.}}
+}}
+
+== Trivia ==
+* The 1.12.2 release notes: "Wither skeleton feet stabbies won't work anymore, but you should try to do it anyways ;)".<ref>{{Cite changelog|1.12.2|quote=Wither skeleton feet stabbies won't work anymore, but you should try to do it anyways ;)}}</ref>
+
+== See also ==
+* [[Wither effect]]
+* [[Wither]]
+* [[Skeleton]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Hostile mobs]]
+[[Category:Undead mobs]]

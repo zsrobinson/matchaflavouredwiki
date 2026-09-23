@@ -1,0 +1,57 @@
+{{See also|Changes from vanilla}}
+This page lists vanilla features that [[Matcha Flavoured]] removes or disables, and features the pack itself once had but later removed. Most vanilla recipes the pack replaces are blocked through the filter in the datapack's <code>pack.mcmeta</code>, which hides 361 vanilla recipe files and the five vanilla advancement folders.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+== Removed vanilla features ==
+; Stone tools
+: The vanilla stone tool recipes are blocked. Progression goes from wood straight to copper.<ref>{{Source|README.md}}</ref> See [[Progression]].
+; Hunger
+: The food bar is held in a fixed range: the pack applies Hunger when it is full and Saturation when it falls to 6 or lower, so the player can always sprint and food matters only for healing and effects.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref> See [[Hunger]].
+; Natural regeneration
+: The <code>natural_health_regeneration</code> gamerule is set to false on first load. The player heals by eating.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref> See [[Natural regeneration]].
+; Item loss on death
+: Keep inventory is turned on when the world is first loaded and when new players join. Death costs maximum [[health]] instead. See [[Death]].
+; Phantoms
+: The <code>spawn_phantoms</code> gamerule is set to false.
+; Rotten flesh
+: Zombies drop [[Tattered Leather|tattered leather]] instead. The rotten flesh item ID is reused for [[Glow Berry Mash|glow berry mash]].<ref>{{Cite video|quote=Rotten flesh no longer exists.}}</ref>
+; Enchanting table and random enchanting
+: The enchanting table recipe is blocked; enchantments are crafted as [[blessing]]s. Removed in [[Matcha Flavoured 1.10|1.10]].
+; Potions and brewing
+: The vanilla brewing stand, fermented spider eye, glistering melon and magma cream recipes are blocked, and most potion effects come from [[food]] instead. See [[Brewing]].
+; Vanilla advancements
+: All five vanilla advancement tabs are blocked and replaced. See [[Advancements]].
+; Crafting-grid repair
+: The vanilla <code>repair_item</code> recipe is blocked; equipment is repaired in an [[anvil]], without the experience cap. See [[Repairing]].
+; Blocked vanilla recipes
+: Besides the above, the filter blocks the vanilla recipes for ore smelting (replaced by kiln and blast furnace recipes), the furnace, smoker, blast furnace, campfire and smithing table, iron, gold, diamond and netherite equipment, rails, hoppers, buckets, cauldrons and other iron items, food such as bread, cake, cookies, stews and pumpkin pie, dyes, carpets, banners, chiseled blocks, glazed terracotta, glass, the shulker box, bundle, TNT, ender eye, ender chest, mace, wind charge, recovery compass and more. Most have pack replacements with different ingredients.
+; Sapling and stick drops from leaves
+: Leaves drop neither; saplings are crafted from leaves, unlocked by the logs. Removed in [[Matcha Flavoured 0.5-alpha|0.5-alpha]].
+
+== Removed pack features ==
+{| class="wikitable"
+! Feature !! Removed in !! Notes
+|-
+| Heart containers || [[Matcha Flavoured 0.3-alpha|0.3-alpha]] || Replaced by [[Crystal Heart|crystal hearts]].
+|-
+| Electrum horse armor || [[Matcha Flavoured 0.4-alpha|0.4-alpha]] || Removed "for the time being".
+|-
+| Enchanting table and vanilla fire charge recipe || [[Matcha Flavoured 1.10|1.10]] ||
+|-
+| Old foods (squid ink pasta, golden pie, stuffed mushrooms, chicken noodle soup) || 1.10 || Leftover recipes from earlier versions.
+|-
+| Herobrine || 1.10 || Listed as a joke in the release notes.
+|-
+| Cleric splash potions of Weakness, Invisibility and Poison || [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] || The developer plans to remove all potion trades.
+|-
+| Butcher's knife smithing recipe || 1.12.1-alpha ||
+|-
+| [[Estus Flask]] || [[Matcha Flavoured 1.12.2|1.12.2]] || First removed in 1.10 because players were abusing it, kept in 1.12, and removed for good in 1.12.2 because the developer wanted food to matter most.<ref>{{Cite changelog|1.12.2|quote=Estus Flask, I want food to be most important}}</ref> A recipe unlock and particle trigger for it remain in the code, but the recipe no longer exists.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/estus_ash.json}}</ref>
+|-
+| Redstone particles || 1.12.2 ||
+|}
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Lists]]

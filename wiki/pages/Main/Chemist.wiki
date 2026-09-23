@@ -9,26 +9,55 @@
 The '''Chemist''' is a [[villager]] profession that sells stacks of splash potions. It replaces the {{MCW|Cleric|cleric}}, and its job site block is the [[Chemistry Stand]] (the renamed brewing stand). All of its trades are at Novice level.
 
 == Trades ==
-@@TABLE@@
+{| class="wikitable"
+! Level !! Villager wants !! Villager gives !! Villager XP
+|-
+! rowspan="7" | Novice
+| {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Infestation}} || 20
+|-
+| {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Oozing}} || 20
+|-
+| {{ItemLink|Obol}} || 16 × [[File:Darkness.png|16px|link=]] Darkness || 20
+|-
+| {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Slowness}} || 20
+|-
+| {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Weaving}} || 20
+|-
+| {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Wind Charging}} || 20
+|-
+| {{ItemLink|Obol}} || 16 × [[File:Wither.png|16px|link=]] Wither || 20
+|-
+! Apprentice
+| colspan="3" style="text-align:center" | ''No trades''
+|-
+! Journeyman
+| colspan="3" style="text-align:center" | ''No trades''
+|-
+! Expert
+| colspan="3" style="text-align:center" | ''No trades''
+|-
+! Master
+| colspan="3" style="text-align:center" | ''No trades''
+|}
 All trades can be used 999 times before restocking, and a Novice chemist offers all seven.<ref>{{Source|MF_datapack/data/minecraft/trade_set/cleric/level_1.json}}</ref> The chemist has no trades above Novice.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/2/filler.json}}</ref>
 
 Each trade gives 16 splash potions, which stack to 64. The potions apply:<ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_pitch.json}}</ref>
 {| class="wikitable"
 ! Potion !! Effects
 |-
-| Splash Potion of Infestation || {{EffectLink|Infested}} for 5:00
+| Splash Potion of Infestation || {{MCW|Infested}} for 5:00
 |-
-| Splash Potion of Oozing || {{EffectLink|Oozing}} for 5:00
+| Splash Potion of Oozing || {{MCW|Oozing}} for 5:00
 |-
-| Darkness || {{EffectLink|Darkness}} for 1:00 and {{EffectLink|Blindness}} for 0:30
+| Darkness || {{MCW|Darkness}} for 1:00 and {{MCW|Blindness}} for 0:30
 |-
-| Splash Potion of Slowness || {{EffectLink|Slowness}} for 5:00
+| Splash Potion of Slowness || {{MCW|Slowness}} for 5:00
 |-
-| Splash Potion of Weaving || {{EffectLink|Weaving}} for 5:00
+| Splash Potion of Weaving || {{MCW|Weaving}} for 5:00
 |-
-| Splash Potion of Wind Charging || {{EffectLink|Wind Charged}} for 5:00
+| Splash Potion of Wind Charging || {{MCW|Wind Charged}} for 5:00
 |-
-| Wither || {{EffectLink|Wither}} for 2:00
+| Wither || {{MCW|Wither}} for 2:00
 |}
 The durations are the full values in the potion; as with any splash potion, mobs further from the impact receive shorter effects.
 

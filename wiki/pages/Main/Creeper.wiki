@@ -1,0 +1,45 @@
+{{Vanilla}}
+{{Infobox
+|title=Creeper
+|type=Hostile mob
+|health=Easy: {{Hp|14}}<br />Normal: {{Hp|16}}<br />Hard: {{Hp|18}}
+|spawn=Overworld, underground below Y=63
+|drops={{ItemLink|Sulfur Chunk}}
+}}
+A '''creeper''' in [[Matcha Flavoured]] lives only underground. It can't spawn where it can see the sky or at sea level and above, so creepers are met in caves rather than on the surface. Creepers also have a little less health than in vanilla.
+
+== Spawning ==
+Creepers use the vanilla biome spawn lists, but any creeper that appears where it can see the sky, or at Y=63 or above, is removed at once, unless it is inside [[Trial Chambers|trial chambers]] or an [[Abbey|abbey]].<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/surface_spawn.json}}</ref> This rule applies from the start of the world, not only after the [[Ender Dragon]] is killed. See [[Spawning]].
+
+== Drops ==
+Creepers use the vanilla loot table. Their gunpowder is renamed {{ItemLink|Sulfur Chunk}}.
+
+== Difficulty ==
+{| class="wikitable"
+! Attribute !! Easy !! Normal !! Hard
+|-
+! Max health
+| {{Hp|14}} || {{Hp|16}} || {{Hp|18}}
+|}
+<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/easy_modifications/modify_creeper.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_creeper.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_creeper.mcfunction}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Creepers have 8 hearts.}}
+{{History line|0.6-alpha|Only the undead spawn in open areas of the Overworld.}}
+{{History line|1.10|Creepers no longer spawn in forests, only underground. Health depends on difficulty.}}
+}}
+
+== Trivia ==
+* The design video says "I gave creepers a little less health" and that creepers "prefer living in caves or forests".<ref>{{Cite video|quote=I gave creepers a little less health and cave spiders only two hearts.}}</ref> Since 1.10 they have been limited to caves.
+
+== See also ==
+* [[Spawning]]
+* [[Sulfur Chunk]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Hostile mobs]]

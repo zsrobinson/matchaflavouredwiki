@@ -1,0 +1,38 @@
+{{Vanilla}}
+{{Infobox
+|title=Enderman
+|type=Neutral mob
+|health=Vanilla
+|spawn=Overworld (away from the open sky), [[Hell]], the End
+|drops={{ItemLink|Stable Void}}
+}}
+An '''enderman''' in [[Matcha Flavoured]] always drops a {{ItemLink|Stable Void}} (the pack's name for the ender pearl) when killed by a player, so players don't need to farm endermen for pearls. Endermen can only pick up melons, pumpkins and TNT.
+
+== Spawning ==
+Endermen use the vanilla spawn lists, except that the pale garden spawns no monsters. In the Overworld, an enderman that appears where it can see the sky is removed at once, and after the [[Ender Dragon]] is killed it is also removed at Y=63 or above.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref> See [[Spawning]] and [[Surface]]. Spawning in Hell and the End is unchanged.
+
+== Drops ==
+{{Data/Loot/minecraft/entities/enderman}}
+An enderman killed by a player always drops 1 stable void, plus 0–1 more per level of Looting. Endermen that die any other way drop nothing. Vanilla endermen drop 0–1 pearls on any death.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/enderman.json}}</ref> The dropped stable voids stack to 64.
+
+== Behavior ==
+Endermen can only pick up {{MCW|Melon|melons}}, {{MCW|Pumpkin|pumpkins}} and [[TNT]]. The pack replaces the vanilla list of holdable blocks, so endermen no longer take grass, dirt, flowers or other terrain.<ref>{{Source|MF_datapack/data/minecraft/tags/block/enderman_holdable.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.2|Endermen can only pick up melons, pumpkins and TNT.}}
+}}
+
+== Trivia ==
+* The design video explains the guaranteed drop: "Most mob drops have been increased to reduce the need for mob grinders or tedium. If you find and kill an Enderman, you'll get a pearl."<ref>{{Cite video|quote=If you find and kill an Enderman, you'll get a pearl.}}</ref> Stable voids are an ingredient of {{ItemLink|Stabilized Estus}}.
+* The holdable-block change was contributed by Linkershim.
+
+== See also ==
+* [[Stable Void]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Neutral mobs]]

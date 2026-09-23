@@ -1,0 +1,49 @@
+{{Vanilla|Banner}}
+'''Banners''' work as in vanilla ''Minecraft''. [[Matcha Flavoured]] adds ten '''pride banner patterns''' that can be applied in a loom without a banner pattern item, and makes the Globe banner pattern craftable.
+
+== Pride patterns ==
+The pack adds ten banner patterns in the <code>matcha</code> namespace. All of them are in the <code>#minecraft:no_item_required</code> tag, so they appear in the loom like the basic vanilla patterns.<ref>{{Source|MF_datapack/data/minecraft/tags/banner_pattern/no_item_required.json}}</ref> The tag adds to the vanilla list rather than replacing it, so the vanilla patterns stay available.
+
+{| class="wikitable sortable"
+! Pattern !! ID
+|-
+| Classic Pride || <code>matcha:classic_pride</code>
+|-
+| Common Pride || <code>matcha:common_pride</code>
+|-
+| New Pride || <code>matcha:new_pride</code>
+|-
+| Inclusive Pride || <code>matcha:inclusive_pride</code>
+|-
+| Trans Pride || <code>matcha:trans_pride</code>
+|-
+| Non-Binary Pride || <code>matcha:nb_pride</code>
+|-
+| Ace Pride || <code>matcha:ace_pride</code>
+|-
+| Bi Pride || <code>matcha:bi_pride</code>
+|-
+| Lesbian Pride || <code>matcha:lesbian_pride</code>
+|-
+| Act Up || <code>matcha:actup</code>
+|}
+The patterns are full-color images. When applied with white dye a pattern keeps its plain name (for example "Trans Pride"); with any other dye it is named as a wash of that color (for example "Trans Pride Black Wash").<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> The textures are in the resource pack at <code>assets/matcha/textures/entity/banner</code>, and the patterns also render on shields.
+
+== Globe banner pattern ==
+The Globe banner pattern can be crafted from paper and a cornflower.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/globe_banner_pattern.json}}</ref>
+
+== Shields ==
+The [[Warding Shield]] carries a fixed banner design in light blue, black and blue.
+
+== History ==
+{{History
+|{{History line|1.10|The Globe banner pattern can be crafted with a cornflower and paper.}}
+{{History line|1.12.1-alpha|Pride flags render on shields. Banner recipe unlocks fixed.}}
+{{History line|1.12.2|Pride banners and shields fixed again.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Blocks]]

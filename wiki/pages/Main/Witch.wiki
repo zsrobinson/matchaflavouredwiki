@@ -1,0 +1,33 @@
+{{Vanilla}}
+{{Infobox
+|title=Witch
+|type=Hostile mob
+|health=Vanilla
+|spawn=Overworld (away from the open sky), witch huts
+|drops={{ItemLink|Estus Ash}}, mushrooms, spider eyes, {{ItemLink|Glass Bottle|glass bottles}}
+}}
+A '''witch''' in [[Matcha Flavoured]] is a reliable source of {{ItemLink|Estus Ash}}, dropping 4–8 when killed by a player. Like other non-undead mobs, witches can't spawn under the open sky in the Overworld.
+
+== Spawning ==
+Witches use the vanilla spawn lists, except that the pale garden spawns no monsters. A witch that appears in the Overworld where it can see the sky is removed at once, and after the [[Ender Dragon]] is killed it is also removed at Y=63 or above.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref> See [[Spawning]].
+
+== Drops ==
+{{Data/Loot/minecraft/entities/witch}}
+All drops require a player kill.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json}}</ref> Compared to vanilla:
+* the 1–3 random drops are red mushrooms, brown mushrooms (twice as likely), spider eyes or glass bottles, 0–2 each; sugar, sticks, gunpowder and glowstone dust are removed;
+* the guaranteed 4–8 redstone is replaced by 4–8 {{ItemLink|Estus Ash}}.
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Witch loot table fixed: sulfur chunks and benzene removed.}}
+}}
+
+== See also ==
+* [[Estus Ash]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Hostile mobs]]

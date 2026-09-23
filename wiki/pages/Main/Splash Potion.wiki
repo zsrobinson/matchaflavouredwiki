@@ -1,0 +1,66 @@
+{{Vanilla|Splash Potion}}
+{{Infobox
+|title=Splash Potion
+|invimage=Splash Potion of Slowness
+|invimage2=Splash Potion of Weaving
+|invimage3=Splash Potion of Oozing
+|invimage4=Splash Potion of Infestation
+|type=Throwable potion
+|stackable=Yes (64)
+|renewable=Yes
+|base=<code>minecraft:splash_potion</code>
+}}
+A '''splash potion''' is a potion that is thrown and applies its effects to mobs and players where it lands. Because [[brewing]] is effectively removed from [[Matcha Flavoured]], splash potions come almost only from the [[Chemist]] (the pack's cleric), who sells seven of them. They stack to 64, unlike vanilla potions.
+
+== Obtaining ==
+=== Trading ===
+A novice-level Chemist sells each of the following in stacks of 16 for one [[Obol]]. The trades can be used 999 times, so they never run out.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_slowness.json}}</ref> These seven trades are all the Chemist offers: the higher levels only have a placeholder trade.
+
+{| class="wikitable sortable"
+! Potion !! Effects !! Duration !! Tooltip
+|-
+| <span id="Slowness"></span>{{ItemLink|Splash Potion of Slowness}} || {{EffectLink|Slowness}} I || 5:00 || Slowness (5:00)
+|-
+| <span id="Weaving"></span>{{ItemLink|Splash Potion of Weaving}} || {{EffectLink|Weaving}} || 5:00 || Weaving (5:00)
+|-
+| <span id="Oozing"></span>{{ItemLink|Splash Potion of Oozing}} || {{EffectLink|Oozing}} || 5:00 || Oozing (5:00)
+|-
+| <span id="Infestation"></span>{{ItemLink|Splash Potion of Infestation}} || {{EffectLink|Infested}} || 5:00 || Infested (5:00)
+|-
+| <span id="Wind Charging"></span>{{ItemLink|Splash Potion of Wind Charging}} || {{EffectLink|Wind Charged}} || 5:00 || Wind-charged (5:00)
+|-
+| <span id="Wither"></span>"Wither" || {{EffectLink|Wither}} I || 2:00 || Wither (2:00)
+|-
+| <span id="Darkness"></span>"Darkness" || {{EffectLink|Darkness}} and {{EffectLink|Blindness}} || 1:00 and 0:30 || Darkness (5:00), Blindness (5:00)
+|}
+
+The durations are the full values; as with any splash potion, mobs farther from the point of impact receive a shorter effect. Each potion hides its vanilla effect list and shows the pack's own tooltip line instead. The Wither and Darkness potions are named after their effect rather than "Splash Potion of ...".<ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_pitch.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_wither.json}}</ref>
+
+=== Loot ===
+Vanilla splash potions of Slowness and Poison still appear in trial chamber dispensers.
+{{Sources}}
+
+== Usage ==
+Splash potions are thrown at mobs to apply their effects, as in vanilla. Undead mobs are immune to the Wither effect, so the Wither potion only harms other mobs.
+
+Some throwable foods behave like splash potions, such as Bubbling Mead and Pickled Warped Fungus.
+
+== Notes ==
+* The Darkness potion's tooltip gives 5:00 for both effects, but the potion applies Darkness for 1:00 and Blindness for 0:30.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_pitch.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|The Chemist no longer sells splash potions of Weakness and Poison or potions of Invisibility. The release notes say all potions will eventually leave the Chemist's trades.}}
+}}
+
+== See also ==
+* [[Brewing]]
+* [[Chemist]]
+* [[Apotropaic Arrow]] and [[Nightshade Arrow]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Potions]]
+[[Category:Enchanting]]

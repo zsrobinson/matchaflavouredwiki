@@ -1,0 +1,103 @@
+{{Vanilla|Cartographer}}
+{{Infobox
+|title=Archaeologist
+|type=[[Villager]] profession
+|vanilla={{MCW|Cartographer}}
+|rarity_label=Job site block
+|rarity=[[File:Cartography Table.png|16px|link=]] Cartography Table
+}}
+The '''Archaeologist''' is a [[villager]] profession that sells [[explorer maps]], pottery sherds and the [[Archeologist's Brush]]. It replaces the {{MCW|Cartographer|cartographer}}, and its job site block is the Cartography Table. It is the only villager that sells maps to the [[Overgrown Abbey]] and the [[Papal Outpost]].
+
+== Trades ==
+{| class="wikitable"
+! Level !! Villager wants !! Villager gives !! Villager XP
+|-
+! rowspan="5" | Novice
+| {{ItemLink|Obol}} || {{ItemLink|Map|Mineshaft Map|link=Explorer maps}} || 10
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Sheaf Pottery Sherd}} || 10
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Map|Witch Hut Map|link=Explorer maps}} || 10
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Map|Papal Outpost Map|link=Explorer maps}} || 40
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Map|Shipwreck Map|link=Explorer maps}} || 10
+|-
+! rowspan="5" | Apprentice
+| {{ItemLink|Obol}} || {{ItemLink|Map|Desert Temple Map|link=Explorer maps}} || 20
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Howl Pottery Sherd}} || 10
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Map|Jungle Temple Map|link=Explorer maps}} || 20
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Map|Trail Ruins Map|link=Explorer maps}} || 20
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Archeologist's Brush}} || 30
+|-
+! rowspan="6" | Journeyman
+| {{ItemLink|Obol}} || {{ItemLink|Map|Ocean Monument Map|link=Explorer maps}} || 40
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Snort Pottery Sherd}} || 10
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Map|Trial Chamber Map|link=Explorer maps}} || 40
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Map|Warm Ocean Ruin Map|link=Explorer maps}} || 40
+|-
+| {{ItemLink|Paradise Lost}} || {{ItemLink|Map|Overgrown Abbey Map|link=Explorer maps}} || 40
+|-
+| {{ItemLink|The Divine Comedy}} || {{ItemLink|Map|Overgrown Abbey Map|link=Explorer maps}} || 40
+|-
+! rowspan="2" | Expert
+| {{ItemLink|Obol}} || {{ItemLink|Map|Ancient City Map|link=Explorer maps}} || 40
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Mourner Pottery Sherd}} || 10
+|-
+! rowspan="4" | Master
+| {{ItemLink|Obol}} || {{ItemLink|Arms Up Pottery Sherd}} || 10
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Map|Mansion Map|link=Explorer maps}} || 60
+|-
+| {{ItemLink|Clay Fetish}}<br /><small>“Rejoice”</small> || {{ItemLink|Crystal Heart}} || 20
+|-
+| {{ItemLink|Clay Fetish}}<br /><small>“Lament”</small> || {{ItemLink|Crystal Heart}} || 20
+|}
+All trades can be used 999 times before restocking, and every level offers all of its trades.<ref>{{Source|MF_datapack/data/minecraft/trade_set/cartographer/level_1.json}}</ref>
+
+=== Maps ===
+{{Main|Explorer maps}}
+Every map costs a single obol, with no compass, compared with 8 to 14 emeralds and a compass for a vanilla cartographer's explorer map. The Overgrown Abbey map is the exception: it costs a copy of [[Paradise Lost]] or [[The Divine Comedy]] instead of an obol.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_paradise_lost.json}}</ref>
+
+Each map searches for the nearest structure of its type within a radius of 100 chunks when the archaeologist reaches that level. If there is none, the map trade is not offered.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/mineshaft.json}}</ref> The Papal Outpost map targets pillager outposts, since papal outposts replace them.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/structure/on_papal_outpost_explorer_maps.json}}</ref>
+
+=== Pottery sherds ===
+The archaeologist sells one pottery sherd per level for 1 obol: Sheaf, Howl, Snort, Mourner and Arms Up.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/sheaf_pottery_sherd.json}}</ref>
+
+=== Archeologist's Brush ===
+At Apprentice level it sells the [[Archeologist's Brush]], an unbreakable brush, for 1 obol.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/2/brush.json}}</ref>
+
+=== Clay fetishes ===
+At Master level the archaeologist exchanges either kind of [[Clay Fetish]] (the cheerful one, "Rejoice", or the mournful one, "Lament") for a [[Crystal Heart|crystal heart]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/5/cheerful_clay_statue.json}}</ref>
+
+Like every villager, an archaeologist that has been traded with also buys its [[favorite food]] once.
+
+== History ==
+{{History|
+{{History line|1.10|Sells Overgrown Abbey and Papal Outpost maps, with new map textures.
+Takes Clay Fetishes.}}
+}}
+
+== Trivia ==
+* The Desert Temple Map uses the desert village map marker, and the Trail Ruins Map uses the plains village marker.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/2/desert_temple.json}}</ref>
+* The developer has described plans for the archaeologist to buy [[sacred texts]] in exchange for maps to structures: "The Moutpiece seeks wisdom, the Archaeologist seeks knowledge."<ref>{{Source|README.md}}</ref> The Overgrown Abbey map is the first trade of this kind.
+* Internally the profession is still <code>minecraft:cartographer</code>; only its displayed name changes.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+== See also ==
+* [[Explorer maps]]
+* [[Archaeology]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Villager professions]]
+[[Category:Trading]]

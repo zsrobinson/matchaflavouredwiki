@@ -1,0 +1,22 @@
+{{Infobox auto}}
+'''Sulfur goo''' is a sticky yellow item dropped by sulfur cubes. It is a vanilla {{MCW|Slimeball|slimeball}} with its own name and texture, so it works everywhere a slimeball does.
+
+== Obtaining ==
+{{Sources}}
+A sulfur cube killed by a player drops 1–2 sulfur goo, along with 1–2 [[Sulfur Chunk|sulfur chunks]]. Sulfur cubes drop nothing in vanilla.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/sulfur_cube.json}}</ref>
+
+== Usage ==
+Sulfur goo is a slimeball with an <code>item_model</code> component, so every vanilla recipe that takes a slimeball accepts it: sticky pistons, leads and slime blocks, for example.
+
+It does not stack with ordinary slimeballs, because its components differ.
+
+== History ==
+{{History
+|{{History line|0.4-alpha|Added sulfur goo, a reskinned slimeball.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Items]]

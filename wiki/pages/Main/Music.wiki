@@ -1,0 +1,53 @@
+{{Vanilla|Music}}
+'''Music''' in [[Matcha Flavoured]] consists of vanilla background music, one new background track, and several [[music disc]]s by community musicians.
+
+== Background music ==
+The resource pack replaces the sound event <code>music.overworld.forest</code> with the track '''"Abbey"''' by Vee Vaicekauskas, at 40% volume.<ref>{{Source|MF_resourcepack/assets/minecraft/sounds.json}}</ref> Vanilla uses this sound event in the Forest, Birch Forest, Old Growth Birch Forest and Dark Forest, so "Abbey" replaces the vanilla music in these biomes, which are also where [[Abbey]]s generate. The same track is available as an (unobtainable) music disc.
+
+All other background music is vanilla.
+
+While a player is inside an [[abandoned village]], all music is stopped for them every tick. See [[Abandoned village#The inhabited house]].
+
+== Music discs ==
+{{Main|Music Disc}}
+{| class="wikitable sortable"
+! Song !! Artist !! Length
+|-
+| Crete || DeBlezyBestie || 1:22
+|-
+| Malachite || DeBlezyBestie || 1:31
+|-
+| Elegy of The Abbey || DeBlezyBestie || 3:35
+|-
+| Golden || Ciren || 3:08
+|-
+| Abbey || Vee Vaicekauskas || 2:20
+|-
+| Labyrinthine || Lena Raine || 5:24
+|-
+| Dry Hands || C418 || 1:09
+|}
+
+== Credits ==
+* '''Vee Vaicekauskas''': background music. The credits file names five tracks, "Refuge", "Abbey", "Ruby", "Through Hell" and "Estus", but only "Abbey" is in the resource pack.<ref>{{Source|MF_datapack/CREDITS.txt}}</ref>
+* '''DeBlezyBestie''': the Malachite, Crete and Elegy of The Abbey discs.
+* '''Ciren''': the Golden disc.
+* '''Imtlx''': [[Fishing sounds]].
+See [[Credits]].
+
+== Unused sounds ==
+The resource pack contains a sound event <code>matcha:custom.false_subwoofer_lullaby</code> that no disc or function uses, and an unused file <code>malachiteORG.ogg</code>.
+
+== History ==
+{{History
+|{{History line|0.6-alpha|Added the Dry Hands disc.}}
+{{History line|1.0|Added the Golden disc.}}
+{{History line|1.12.1-alpha|Added the "Abbey" background track and three discs by DeBlezyBestie.}}
+{{History line|1.12.2|Elegy of the Abbey and Crete updated to new versions.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Music]]

@@ -1,0 +1,34 @@
+{{Vanilla|TNT}}
+{{Infobox auto}}
+'''TNT''' is an explosive block. It explodes as in vanilla ''Minecraft'', but it is cheaper to craft, and it is the base of the [[Bedrock Buster|bedrock buster]].
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Four [[Sulfur Chunk|sulfur chunks]] alternating with five paper or [[sand]] make 2 TNT, where the vanilla recipe (gunpowder and sand) makes one.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/tnt.json}}</ref> The vanilla recipe is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Picking up a sulfur chunk or a block of sulfur unlocks the recipe.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/sulfur_chunk.json}}</ref>
+
+=== Chest loot ===
+{{Sources}}
+
+== Usage ==
+{{Uses}}
+Eight TNT around a [[Divine Fragment|divine fragment]] make a [[Bedrock Buster|bedrock buster]], a TNT that also clears bedrock when it explodes.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/bedrock_buster.json}}</ref>
+
+== Behavior ==
+[[Enderman|Endermen]] can pick up TNT. In Matcha Flavoured it is one of only three blocks they can carry, with melons and pumpkins.<ref>{{Source|MF_datapack/data/minecraft/tags/block/enderman_holdable.json}}</ref>
+
+Trying to place a [[Warding Stone|warding stone]] somewhere it is forbidden summons a lit TNT with no fuse at that spot.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/forbidden.mcfunction}}</ref>
+
+== History ==
+{{History
+|{{History line|1.12|TNT recipe unlocks were fixed.}}
+{{History line|1.12.1-alpha|TNT recipe unlocks were fixed again.}}
+{{History line|1.12.2|Endermen can pick up only melons, pumpkins and TNT.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Redstone]]

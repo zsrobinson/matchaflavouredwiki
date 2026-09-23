@@ -150,6 +150,9 @@ def variant_key(name, comps):
     lore = comps.get('minecraft:lore') or []
     if name == 'Blessing' and lore:
         return render_text(lore[0])
+    song = comps.get('minecraft:jukebox_playable')
+    if name == 'Music Disc' and isinstance(song, str):
+        return 'Music Disc (%s)' % song.split(':')[-1].replace('_', ' ').title()
     if name == 'Clay Fetish' and lore:
         return 'Clay Fetish (%s)' % render_text(lore[0])
     return name

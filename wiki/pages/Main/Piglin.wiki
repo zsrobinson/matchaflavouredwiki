@@ -1,0 +1,45 @@
+{{Vanilla}}
+{{Infobox
+|title=Piglin
+|type=Neutral mob
+|health=Vanilla
+|spawn=[[Hell]], [[Bastion Remnant|bastion remnants]]
+}}
+A '''piglin''' in [[Matcha Flavoured]] barters from a changed list of items, ignores players wearing [[Adamant equipment|adamant]] or [[Electrum equipment|electrum]] armor as it would gold, and no longer cares about bells. Piglin brutes drop {{ItemLink|Divine Fragment|divine fragments}} and {{ItemLink|Adamant Scrap}}.
+
+== Bartering ==
+{{Data/Loot/minecraft/gameplay/piglin_bartering}}
+Compared to vanilla, the bartering table no longer gives iron boots or potions, and Soul Speed books are twice as likely (weight 10 instead of 5).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/piglin_bartering.json}}</ref> Several items appear under their pack names: ender pearls are {{ItemLink|Stable Void|stable voids}}, leather is {{ItemLink|Sturdy Leather}}, nether bricks are {{ItemLink|Hellbrick|hellbricks}} and nether quartz is {{ItemLink|Quartz}}.
+
+== Behavior ==
+=== Armor ===
+The pack adds the four netherite armor pieces to the <code>#minecraft:piglin_safe_armor</code> tag.<ref>{{Source|MF_datapack/data/minecraft/tags/item/piglin_safe_armor.json}}</ref> Adamant armor is netherite armor renamed, and electrum armor is built on netherite armor items, so wearing either keeps piglins calm like golden armor.
+
+=== Loved items ===
+Piglins are attracted to the same gold items as in vanilla, except bells, which the pack removes from the <code>#minecraft:piglin_loved</code> tag.<ref>{{Source|MF_datapack/data/minecraft/tags/item/piglin_loved.json}}</ref>
+
+== Piglin brute ==
+Piglin brutes have their own loot table in the pack. When killed by a player, a brute drops:<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/piglin_brute.json}}</ref>
+* a {{ItemLink|Divine Fragment}} with a 15% chance, raised to 25% with Looting I and by 10% per further level;
+* {{ItemLink|Adamant Scrap}} with a 30% chance, raised to 35% with Looting I and by 5% per further level.
+{{Data/Loot/minecraft/entities/piglin_brute}}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Piglin bartering loot table added. Piglin brute adamant scrap drop rate nerfed slightly, and brutes drop divine fragments as well.}}
+{{History line|0.6-alpha|Piglins and zombified piglins no longer drop their armor or tools.}}
+{{History line|1.10|Piglin brute drop rates nerfed.}}
+{{History line|1.12.2|Netherite and electrum count as piglin-safe armor.}}
+}}
+
+== See also ==
+* [[Zombified Piglin]]
+* [[Adamant Scrap]]
+* [[Divine Fragment]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Neutral mobs]]

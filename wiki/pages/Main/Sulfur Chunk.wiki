@@ -1,0 +1,43 @@
+{{Vanilla|Gunpowder}}
+{{Infobox auto}}
+A '''sulfur chunk''' is a yellow mineral used for explosives, fire and alchemy. It replaces {{MCW|Gunpowder|gunpowder}}: it is mined from sulfur ores as well as dropped by creepers, and it links to the [[Sulfur blocks|sulfur blocks]] of the sulfur caves, which can be broken back down into chunks.
+
+== Obtaining ==
+=== Mining ===
+Sulfur chunks drop from the pack's sulfur ores: [[Sulfur Deposit|sulfur deposits]] and [[Sulfurous Hellstone|sulfurous hellstone]] (1–2 each), and [[Sulfurous Quartz Deposit|sulfurous quartz deposits]], which also drop [[quartz]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_redstone_ore.json}}</ref> See [[Ores]].
+
+=== Crafting ===
+{{Recipes}}
+* A block of [[Sulfur blocks|sulfur]] crafts into 1 sulfur chunk.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_chunk_from_sulfur.json}}</ref>
+* A block of potent sulfur crafts into 9.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_chunk_from_potent_sulfur.json}}</ref>
+
+=== Mob loot ===
+Creepers and ghasts drop sulfur chunks as they drop gunpowder in vanilla. Sulfur cubes, which drop nothing in vanilla, drop 1–2 sulfur chunks and 1–2 [[Sulfur Goo|sulfur goo]] when killed by a player.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/sulfur_cube.json}}</ref>
+
+=== Other sources ===
+{{Sources}}
+
+== Usage ==
+{{Uses}}
+Sulfur chunks keep every use of gunpowder, and add several of their own:
+* '''[[TNT]]''': four sulfur chunks with five paper or sand make 2 TNT.
+* '''[[Benzene]]''': one sulfur chunk with a glass bottle and three [[hellspore]].
+* '''[[Phosphor]]''': one sulfur chunk, a water bottle and four glow lichen make 8.
+* '''Fire charges''': a sulfur chunk, [[Estus Ash|estus ash]] and coal or charcoal make 4.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/fire_charge.json}}</ref>
+* '''Green dye''': a sulfur chunk, raw copper and a water bottle make 2.
+* '''Sulfur blocks''': four chunks make 4 blocks of sulfur, and nine chunks (or blocks of sulfur) make a block of potent sulfur.
+
+Picking up a sulfur chunk unlocks these recipes.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/sulfur_chunk.json}}</ref>
+
+== History ==
+{{History
+|{{History line|0.4-alpha|Sulfur was renamed sulfur chunk, with a slightly changed texture.<br />Sulfur chunks work with the new vanilla sulfur blocks.<br />Sulfurous quartz deposits drop both sulfur and quartz.}}
+{{History line|1.12.1-alpha|The witch loot table no longer drops sulfur chunks.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Items]]
+[[Category:Renamed items]]

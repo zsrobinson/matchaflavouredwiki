@@ -10,7 +10,7 @@ An '''electrum pickaxe''' is the [[Electrum equipment|electrum]] [[Tools#Pickaxe
 === Smithing ===
 {{Recipes}}
 
-The upgrade uses no template: the template slot of the [[smithing table]] is left empty.
+The upgrade uses no template: the template slot of the [[Smithing Table|smithing table]] is left empty.
 
 Enchantments already on the base item are kept. Where the base and the new item share an enchantment, the higher level is used.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
 
@@ -41,13 +41,13 @@ The intrinsics are stored on the item and applied when it enters an inventory. S
 
 It is repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}}. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
 
-=== Smelting ===
+=== Smelting ingredient ===
 In a [[Blast Furnace|blast furnace]], it smelts into one [[Adamant Alloy|adamant alloy]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/netherite_ingot_from_blasting_netherite_materials.json}}</ref>
 
 Because electrum equipment uses the same item IDs as adamant, the recipe returns an adamant alloy, not electrum.
 
 === Trading ===
-A [[Weaponsmith|weaponsmith]] of level 2 (Apprentice) buys it for one [[Electrum Alloy|electrum alloy]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/electrum_pickaxe.json}}</ref>
+An apprentice-level [[Weaponsmith|weaponsmith]] takes it in exchange for one [[Electrum Alloy|electrum alloy]], so the alloy can be reused.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/electrum_pickaxe.json}}</ref>
 
 == Stats ==
 {| class="wikitable"

@@ -1,0 +1,43 @@
+{{Infobox auto}}
+
+{{Spoiler}}
+
+A '''Cooking Recipe''' is a paper note that teaches one [[Secret recipes|secret recipe]]. Picking it up immediately adds the recipe to the recipe book.<ref>{{Source|MF_datapack/data/matcha/advancement/cooking_recipes/gnocchi_recipe.json}}</ref> There are four, each with its own texture and the dish's name in its tooltip.
+
+== Obtaining ==
+
+{| class="wikitable"
+! Recipe !! Source
+|-
+| [[Gnocchi]] || [[Mineshaft]] chests (8.9% per chest)<ref>{{Source|MF_datapack/data/matcha/loot_table/food/recipe/gnocchi.json}}</ref>
+|-
+| [[Sweet Berry Toast]] || Novice [[Cook]], 1 [[obol]]
+|-
+| [[Warped Stroganoff]] || Apprentice Cook, 1 obol
+|-
+| [[Chorus Mochi]] || Journeyman Cook, 1 obol
+|}
+{{Sources}}
+
+== Usage ==
+
+Having the paper in the inventory unlocks the recipe; the paper isn't consumed and has no other use. The recipes can also be crafted without it, since the pack doesn't limit crafting to known recipes.
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|0.6-alpha|Added a secret recipe found in a chest.}}
+}}
+
+== See also ==
+* [[Secret recipes]]
+* [[Cook]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]
+[[Category:Items]]

@@ -1,0 +1,39 @@
+{{Vanilla|Wheat Seeds}}
+
+{{Infobox auto}}
+
+'''Wheat grain''' is the seed of wheat and the base of [[flour]]. It replaces {{MCW|Wheat Seeds|wheat seeds}}: planting it grows wheat, and 3 grain grind into 1 flour.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/flour.json}}</ref> In the early game it is found by breaking grass with a hoe.
+
+== Obtaining ==
+
+=== Breaking grass ===
+Short grass broken with a hoe has a 1 in 8 chance to drop wheat grain, increased by Fortune; otherwise it drops itself. Without a hoe or shears it drops nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/short_grass.json}}</ref>
+
+=== Farming ===
+A fully grown wheat crop drops 1 [[straw]] and 0 to 3 grain, with more from Fortune or the Electrum tool intrinsic. An unripe crop drops 1 grain.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/wheat.json}}</ref>
+
+{{Sources}}
+
+== Usage ==
+
+Picking up wheat grain unlocks the [[flour]] recipe. Two grain also go into [[apple cinnamon oatmeal]]. Wheat grain can be planted and fed to chickens as in vanilla.
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|1.02|Wheat seeds drop when breaking grass with a hoe.}}
+{{History line|1.12.1-alpha|Wheat drops straw instead of tall dry grass.}}
+}}
+
+== See also ==
+* [[Straw]]
+* [[Flour]]
+* [[Cooking#Progression]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

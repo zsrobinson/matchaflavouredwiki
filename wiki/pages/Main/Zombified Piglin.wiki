@@ -1,0 +1,33 @@
+{{Vanilla}}
+{{Infobox
+|title=Zombified Piglin
+|type=Neutral mob, undead
+|health=Vanilla
+|spawn=[[Hell]]
+|drops={{ItemLink|Tattered Leather}}, gold nuggets, gold ingots
+}}
+A '''zombified piglin''' in [[Matcha Flavoured]] drops {{ItemLink|Tattered Leather}} instead of rotten flesh, and only drops anything when killed by a player.
+
+== Drops ==
+{{Data/Loot/minecraft/entities/zombified_piglin}}
+All drops require a player kill.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/zombified_piglin.json}}</ref> Tattered leather (0–1) replaces rotten flesh; the gold nuggets (0–1) and the rare gold ingot are as in vanilla. Zombified piglins don't drop {{ItemLink|Raw Estus}}.
+
+== Behavior ==
+Zombified piglins are undead, so [[warding]] hurts them. They are not one of the pack's "mundane hostile" mobs, so their spawning and attributes are not changed.
+
+== History ==
+{{History|
+{{History line|0.6-alpha|Zombified piglins and piglins no longer drop their armor or tools.}}
+}}
+
+== See also ==
+* [[Piglin]]
+* [[Tattered Leather]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Neutral mobs]]
+[[Category:Undead mobs]]

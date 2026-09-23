@@ -1,0 +1,38 @@
+{{Vanilla|Nether Quartz}}
+{{Infobox auto}}
+'''Quartz''' is a white mineral used for decoration, glass and circuits. It is the vanilla {{MCW|Nether Quartz|nether quartz}}, renamed because in Matcha Flavoured it is mainly an Overworld material: it is mined from quartz deposits and can be made from sand in a blast furnace.
+
+== Obtaining ==
+=== Mining ===
+Quartz drops from [[Quartz Deposit|quartz deposits]] (vanilla lapis lazuli ore) and [[Sulfurous Quartz Deposit|sulfurous quartz deposits]] (vanilla redstone ore), which generate in the Overworld. See [[Ores]]. [[Sulfurous Hellstone|Sulfurous hellstone]], the old nether quartz ore, drops [[Sulfur Chunk|sulfur chunks]] instead.
+
+=== Cooking and crafting ===
+{{Recipes}}
+* Blasting [[sand]] in a [[Blast Furnace|blast furnace]] gives 1 quartz in 5 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/quartz.json}}</ref>
+* Any quartz block (block of quartz, quartz bricks, quartz pillar, chiseled quartz block or smooth quartz block) crafts back into 4 quartz.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/quartz_from_quartz_blocks.json}}</ref>
+The vanilla recipes that smelt and blast nether quartz ore are removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Picking up sand or any quartz block unlocks these recipes.
+
+=== Other sources ===
+{{Sources}}
+
+== Usage ==
+{{Uses}}
+Besides the vanilla uses (quartz blocks, the [[Electric Comparator|electric comparator]], observers and daylight detectors), quartz is used in:
+* '''Glass''': a [[Mud Kiln|mud kiln]] fires quartz into [[glass]] (5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/glass_from_smoking_quartz.json}}</ref>
+* '''Clocks''': four gold ingots around a quartz, replacing the vanilla recipe's electric wire.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/clock.json}}</ref>
+* '''Diorite''': two cobblestone and two quartz make 4 diorite.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/diorite.json}}</ref>
+
+== History ==
+{{History
+|{{History line|0.4-alpha|Sulfurous quartz deposits drop both sulfur and quartz.}}
+{{History line|1.0|Picking up sand or quartz blocks unlocks the quartz recipes.}}
+{{History line|1.10|Quartz can be fired into glass in a mud kiln.}}
+{{History line|1.12.1-alpha|Quartz generates at higher elevations and in larger amounts.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Items]]
+[[Category:Renamed items]]

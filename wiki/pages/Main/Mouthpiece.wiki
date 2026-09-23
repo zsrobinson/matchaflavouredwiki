@@ -1,0 +1,87 @@
+{{Vanilla|Librarian}}
+{{Infobox
+|title=Mouthpiece
+|type=[[Villager]] profession
+|vanilla={{MCW|Librarian}}
+|rarity_label=Job site block
+|rarity=[[File:Lectern.png|16px|link=]] Lectern
+}}
+The '''Mouthpiece''' is a [[villager]] profession that trades [[sacred texts]] for [[Crystal Heart|crystal hearts]] and [[Ofuda]]. It replaces the {{MCW|Librarian|librarian}}, and its job site block is the Lectern. It sells no enchanted books, since [[enchanting]] in Matcha Flavoured works through [[Blessing|blessings]] and Ofuda instead.
+
+== Trades ==
+{| class="wikitable"
+! Level !! Villager wants !! Villager gives !! Villager XP
+|-
+! rowspan="3" | Novice
+| {{ItemLink|Paradise Lost}} || {{ItemLink|Crystal Heart}} || 20
+|-
+| {{ItemLink|The Divine Comedy}} || {{ItemLink|Crystal Heart}} || 20
+|-
+| {{ItemLink|Obol}} || 16 × {{ItemLink|Stable Void}} || 5
+|-
+! rowspan="3" | Apprentice
+| {{ItemLink|The Avesta}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>Efficiency II, Unbreaking I</small> || 30
+|-
+| {{ItemLink|The Quran}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>Protection II</small> || 30
+|-
+| {{ItemLink|The Tanakh}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>Loyalty III, Trailblaze III, Power II</small> || 30
+|-
+! rowspan="1" | Journeyman
+| {{ItemLink|The Book of Enoch}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>Sharpness III</small> || 50
+|-
+! rowspan="1" | Expert
+| {{ItemLink|The Lesser Key of Solomon}} +<br />2 × {{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>Mending</small> || 80
+|-
+! rowspan="1" | Master
+| 2 × {{ItemLink|Crystal Heart}} +<br />[[File:Echo Shard.png|16px|link=]] Echo Shard || {{ItemLink|Divine Fragment}} || 80
+|}
+All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/1/paradise_lost.json}}</ref> Every level offers all of its trades.
+
+=== Crystal hearts ===
+At Novice level the mouthpiece exchanges [[Paradise Lost]] or [[The Divine Comedy]] for a crystal heart, one book per heart. It also sells 16 [[Stable Void]]s for 1 obol.
+
+=== Ofuda ===
+The Apprentice, Journeyman and Expert trades turn a sacred text and one or two crystal hearts into an Ofuda, an enchanted book that carries a named prayer:<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/2/tanakh.json}}</ref>
+{| class="wikitable"
+! Level !! Sacred text !! Crystal hearts !! Prayer !! Enchantments
+|-
+| Apprentice || [[The Avesta]] || 1 || Prayer of The God-King || Efficiency II, Unbreaking I
+|-
+| Apprentice || [[The Quran]] || 1 || Prayer of The Prophet || Protection II
+|-
+| Apprentice || [[The Tanakh]] || 1 || Prayer of Exodus || Loyalty III, [[Trailblaze]] III, Power II
+|-
+| Journeyman || [[The Book of Enoch]] || 1 || Prayer of Samyaza || Sharpness III
+|-
+| Expert || [[The Lesser Key of Solomon]] || 2 || Prayer of Belial || Mending
+|}
+The Ofuda is applied to equipment with an [[anvil]], like a vanilla enchanted book; see [[Ofuda]].
+
+=== Divine Fragment ===
+At Master level the mouthpiece turns 2 crystal hearts and an echo shard into a [[Divine Fragment]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/5/crystal_heart.json}}</ref> The developer added this as a trade because divine fragments cannot be crafted directly.<ref>{{Cite changelog|1.12.1-alpha|quote=Divine Fragments can be bought from the Mouthpiece with a Crystal Heart and Echo Shard (Can't be done by crafting since they're poison potatoes)}}</ref>
+
+Like every villager, a mouthpiece that has been traded with also buys its [[favorite food]] once.
+
+== History ==
+{{History|
+{{History line|0.6-alpha|No longer sells Divine Fragments, to discourage mob farms.}}
+{{History line|1.10|Added the Ofuda trades for [[The Tanakh]] (Prayer of Exodus) and [[The Quran]] (Prayer of The Prophet).}}
+{{History line|1.12|Crystal hearts from trades can no longer be eaten.}}
+{{History line|1.12.1-alpha|Sells Divine Fragments for crystal hearts and an echo shard.}}
+{{History line|1.12.2|The Ofuda trades require crystal hearts.}}
+}}
+
+== Trivia ==
+* The 1.12.1-alpha release notes give the Divine Fragment price as one crystal heart and an echo shard, but the trade asks for 2 crystal hearts.<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/5/crystal_heart.json}}</ref>
+* Internally the profession is still <code>minecraft:librarian</code>; only its displayed name changes.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+== See also ==
+* [[Sacred texts]]
+* [[Ofuda]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Villager professions]]
+[[Category:Trading]]

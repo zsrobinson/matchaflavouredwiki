@@ -74,7 +74,7 @@ Blessings are not the Hell-Bound Book itself: the crafted book stores only the b
 == Appearance ==
 All blessings share the item name "Blessing". The prayer or elegy name is shown as a dark gray lore line, and each blessing has its own texture.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> The Prayer of Man and the Prayer of Talos have rare (aqua) rarity and the Prayer of Lu Ban has epic (purple) rarity; the others use the default rarity of an enchanted book.
 
-The three elegies are named after figures who die in their myths (Arachne, Hyacinthus and Icarus), while the prayers address gods, Titans, heroes and saints.
+The three elegies are named after tragic figures of Greek myth (Arachne, Hyacinthus and Icarus), while the prayers address gods, Titans, heroes and saints.
 
 == Advancements ==
 {| class="wikitable"
@@ -83,6 +83,8 @@ The three elegies are named after figures who die in their myths (Arachne, Hyaci
 | Unholy Knowledge || Craft a Hell-Bound Book || Craft a [[Hell-Bound Book]].
 |-
 | Apocrypha || Steal Prayers from a long-dead God || Craft any one of 17 blessings. The Prayers of Apollo, Ares, Artemis, Cronus, Glaucus and Talos do not count.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/craft_blessing.json}}</ref>
+|-
+| Demonic Emissary || Steal every prayer from every once-god || Craft a Hell-Bound Book and all 23 blessings. A challenge that rewards 10 [[Obol]]s.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json}}</ref>
 |}
 
 == History ==
@@ -90,7 +92,7 @@ The three elegies are named after figures who die in their myths (Arachne, Hyaci
 {{History line|0.4-alpha|The Prayer of Prometheus now gives Unbreaking II.}}
 {{History line|0.5-alpha|Added textures for all blessings and translation support. The Prayer of Icarus now gives Feather Falling II. The Prayer of St. Clement now works.}}
 {{History line|0.6-alpha|The Prayer of Demeter counts toward the blessing crafting advancement.}}
-{{History line|1.10|Buffed the Prayer of The Light recipe, nerfed the Prayer of Man recipe and changed the Prayer of Aeolus recipe. The blessing then called "Prayer of God-King" is renamed "Prayer of The Light" in the language file; its internal key stays <code>god_king</code>.<ref>{{Cite changelog|1.10|quote=Prayer of God-King, is still labeled as such in the Lang (to preserve update consistency) however the translation was changed to "Prayer of The Light"}}</ref>}}
+{{History line|1.10|Buffed the Prayer of The Light recipe, nerfed the Prayer of Man recipe and changed the Prayer of Aeolus recipe. The blessing then called "Prayer of God-King" is renamed "Prayer of The Light" in the language file; its internal key stays <code>god_king</code>.<ref>{{Cite changelog|1.10|quote=Prayer of God-King, is still labeled as such in the Lang (to preserve update consistency) however the translation was changed to "Prayer of The Light"}}</ref> Added the "Demonic Emissary" advancement.}}
 {{History line|1.12.1-alpha|Added the Prayer of Midas. Fixed blessing recipe unlocks.}}
 }}
 

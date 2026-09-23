@@ -1,0 +1,37 @@
+{{Vanilla|Brewing}}
+'''Brewing''' is effectively removed from [[Matcha Flavoured]]. The {{MCW|Brewing Stand|brewing stand}}, renamed the [[Chemistry Stand]], cannot be fueled, and the effects that potions gave in vanilla come from [[food]] instead. The only potions left are [[Splash Potion|splash potions]] sold by the [[Chemist]], tipped arrows sold by the [[Fletcher]], and the vanilla potions found in loot.
+
+== Removal ==
+The pack's introduction video explains that food takes the place of potions:
+<blockquote>I made the decision to offload most potion effects into foods. [...] Allowing foods to take over the niche once held by potions means that players will search for more diverse food intakes based on the potion effect they need. And because unlike potions, food stack, it makes obtaining potion effects far more accessible.<ref>{{Cite video|quote=I made the decision to offload most potion effects into foods.}}</ref></blockquote>
+Foods with potion-like effects are made from ingredients with [[intrinsic]]s; see [[Food]] and [[Cooking]].
+
+Brewing is disabled in several ways:
+* '''No fuel.''' The <code>#minecraft:brewing_fuel</code> tag is emptied, so nothing can fuel a Chemistry Stand.<ref>{{Source|MF_datapack/data/minecraft/tags/item/brewing_fuel.json}}</ref>
+* '''No blaze powder.''' Blaze powder is [[Raw Estus]], which turns into [[Estus Ash]] as soon as it is picked up, and its vanilla recipe from blaze rods is removed.
+* '''Ingredients repurposed.''' The recipes for the glistering melon slice, magma cream and fermented spider eye are removed, and those items are repurposed as foods: the [[Baked Golden Apple]], [[Sweet Berry Mash]] and [[Baked Apple]].<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Glowstone dust became Estus Ash, and gunpowder became the [[Sulfur Chunk]].
+* '''Water bottles.''' The "Uncraftable Potion" is renamed to "Water Bottle" for use in crafting recipes.<ref>{{Cite changelog|1.10|quote=Rennamed "Uncraftable Potion" to "Water Bottle" to help with crafting recipes for players}}</ref>
+
+== Potions in the pack ==
+* [[Splash Potion|Splash potions]] of Slowness, Weaving, Oozing, Infestation, Wind Charging, Wither and Darkness are sold by the Chemist.
+* [[Apotropaic Arrow]]s (Healing II) and [[Nightshade Arrow]]s (Poison II) are sold by the Fletcher.
+* Some throwable foods behave like splash potions, such as Bubbling Mead and Pickled Warped Fungus.<ref>{{Cite changelog|1.12.1-alpha|quote=Pickled Warped Fungus changed to be throwable (More splash potions coming in the future)}}</ref>
+
+== History ==
+{{History|
+{{History line|1.10|Removed the pack's custom potions (<code>data/potions</code>). The igloo structure was changed to reflect that there are no potions.}}
+{{History line|1.12|The leftover potion data was deleted.}}
+{{History line|1.12.1-alpha|Raw Estus can no longer be used as brewing fuel. The release notes say that all potions will eventually leave the Chemist's trades, as placeholders until corresponding foods are added.<ref>{{Cite changelog|1.12.1-alpha|quote=ALL potions will eventually be removed from the cleric trade and he will serve a different function. The Potions were/are place holders before a corresponding food is added}}</ref>}}
+}}
+
+== See also ==
+* [[Food]]
+* [[Intrinsic]]
+* [[Chemistry Stand]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Mechanics]]
+[[Category:Enchanting]]

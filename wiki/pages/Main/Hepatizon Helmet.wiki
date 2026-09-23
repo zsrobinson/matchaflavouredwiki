@@ -9,7 +9,7 @@ A '''hepatizon helmet''' is the [[Hepatizon equipment|hepatizon]] [[Armor#Helmet
 === Smithing ===
 {{Recipes}}
 
-The upgrade uses no template: the template slot of the [[smithing table]] is left empty.
+The upgrade uses no template: the template slot of the [[Smithing Table|smithing table]] is left empty.
 
 Enchantments already on the base item are kept. Where the base and the new item share an enchantment, the higher level is used.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
 
@@ -30,11 +30,11 @@ It adds 0.01 to the wearer's movement speed attribute; the player's base value i
 
 It is repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
 
-=== Smelting ===
+=== Smelting ingredient ===
 In a [[Blast Furnace|blast furnace]], it smelts into one [[Copper Ingot|copper ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/copper_ingot_from_blasting_copper_materials.json}}</ref>
 
 === Trading ===
-A [[Weaponsmith|weaponsmith]] of level 2 (Apprentice) buys it for one [[Hepatizon Alloy|hepatizon alloy]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_helmet.json}}</ref>
+An apprentice-level [[Weaponsmith|weaponsmith]] takes it in exchange for one [[Hepatizon Alloy|hepatizon alloy]], so the alloy can be reused.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_helmet.json}}</ref>
 
 == Stats ==
 {| class="wikitable"

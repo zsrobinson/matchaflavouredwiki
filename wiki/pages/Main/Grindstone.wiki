@@ -1,0 +1,26 @@
+{{Vanilla|Grindstone}}
+{{Infobox auto}}
+A '''grindstone''' is a block that repairs items and removes enchantments. [[Matcha Flavoured]] keeps its vanilla recipe and behavior. It is the job site block of the [[Weaponsmith]].
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+
+== Usage ==
+=== Removing enchantments ===
+As in vanilla, placing an item or [[Hell-Bound Book]] in a grindstone removes all its enchantments except curses. The grindstone normally returns some experience, but the pack resets every player's experience to 0 each tick, so that experience is lost.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction}}</ref> Because curses stay, a blank Hell-Bound Book keeps its Curse of Binding.
+
+=== Job site ===
+The grindstone is the job site block of the Weaponsmith, which the release notes call the "Grindstone Villager".<ref>{{Cite changelog|1.10|quote=IF YOU WANT THE NEW WEAPON/ARMOUR TWEAKS, use a WEAPONSMITH (Grindstone Villager)}}</ref>
+
+== See also ==
+* [[Anvil]]
+* [[Enchanting]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Blocks]]
+[[Category:Utility blocks]]

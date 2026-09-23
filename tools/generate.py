@@ -1169,4 +1169,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import fcntl
+    os.makedirs(os.path.join(ROOT, 'build'), exist_ok=True)
+    with open(os.path.join(ROOT, 'build', '.generate.lock'), 'w') as _lock:
+        fcntl.flock(_lock, fcntl.LOCK_EX)  # the dev watcher and manual runs must not overlap
+        main()

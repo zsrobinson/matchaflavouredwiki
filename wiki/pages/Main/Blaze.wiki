@@ -1,0 +1,32 @@
+{{Vanilla}}
+{{Infobox
+|title=Blaze
+|type=Hostile mob
+|health=Vanilla
+|spawn=[[Nether Fortress|Fortresses]] in [[Hell]]
+|drops={{ItemLink|Fire Charge}}
+}}
+A '''blaze''' in [[Matcha Flavoured]] drops {{ItemLink|Fire Charge|fire charges}} instead of blaze rods. Blaze rods are renamed {{ItemLink|Stabilized Estus}} in the pack and are crafted rather than dropped.
+
+== Drops ==
+{{Data/Loot/minecraft/entities/blaze}}
+A blaze killed by a player drops 2–4 fire charges, plus 0–1 per level of Looting.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/blaze.json}}</ref> Blazes don't drop {{ItemLink|Raw Estus}}, because they aren't undead.
+
+== History ==
+{{History|
+{{History line|1.03|Blaze drops nerfed slightly.}}
+{{History line|1.10|Blazes no longer drop Raw Estus, since they aren't undead.}}
+}}
+
+== Trivia ==
+* The blaze spawn egg is used as the base item for the [[Nazar]].
+
+== See also ==
+* [[Stabilized Estus]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Hostile mobs]]

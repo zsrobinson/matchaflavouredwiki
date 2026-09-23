@@ -1,0 +1,46 @@
+{{See also|Progression|Advancements}}
+This '''guide for new players''' explains how to begin a world in [[Matcha Flavoured]]. It follows the Tutorial [[Advancements|advancements]], which the pack itself recommends checking when lost: "If you get lost or confused, check the advancements". The README adds that stuck players should also look at the recipes they ''cannot'' craft yet, since recipes unlock as items are picked up.<ref>{{Source|README.md}}</ref>
+
+== Before starting ==
+* Install the pack as both a datapack and a resource pack. On loading, chat shows "Matcha Flavoured is now loaded". See [[Installation]].
+* Choose the [[difficulty]] with care. Easy is close to vanilla mob behavior and never lets maximum health fall below 10 hearts. Normal is the intended experience. Hard is, in the developer's words, "meant to be unfair".<ref>{{Cite changelog|1.12.2}}</ref> Changing difficulty takes effect after a reload.
+* Differences that matter immediately: there is no [[hunger]] and no [[Natural regeneration|natural regeneration]], so the player heals only by eating; the inventory is kept on death, but maximum health drops; [[zombie]]s are fast; nights last three times as long.
+
+== Step by step ==
+=== 1. Fire ===
+Punch a tree. Logs unlock sticks and the [[Kindling|kindling]] recipe (2 sticks above 2 logs). Kindling is placed unlit. Craft [[tinder]] from 2 sticks and a piece of short grass, fern or bush, and use it on the kindling. This grants '''Prometheus be Damned'''. Tinder breaks after one use; a [[Fire Starter|fire starter]] (2 flint) lasts longer.
+
+=== 2. A wooden hoe and dry grass ===
+Craft a wooden hoe. Grass broken by hand drops nothing, but broken with a hoe it drops short grass and sometimes [[Wheat Grain|wheat grain]]. Cook the grass on the lit kindling to get short dry grass ('''Harvester'''). The kindling is also the first cooking station: many ingredients gain their [[intrinsic]] effects when cooked on it ('''Powerful Flavors'''). Food is the only way to heal, so cook early and often.
+
+=== 3. The mud kiln ===
+Craft short dry grass with dirt into [[Packed Mud|packed mud]], turn 4 packed mud into mud bricks, and build a [[Mud Kiln|mud kiln]] from 4 mud bricks, 2 packed mud and a kindling ('''Ancient Technology''').
+
+=== 4. Copper ===
+A wooden pickaxe mines stone and copper ore. Smelt raw copper in the kiln ('''Brazier''') and make copper tools and armor. Copper is the first real metal, and the developer wants players to spend time with it.<ref>{{Cite changelog|1.10|quote=Copper is cool, let them have more time with it.}}</ref> A copper [[mattock]] or [[dolabra]] saves hotbar space ('''Two in One'''). Obtaining copper also lowers the player's minimum hearts for the first time.
+
+=== 5. Stone and the blast furnace ===
+The kiln turns cobblestone into [[Limestone|limestone]] and limestone into smooth stone ('''Mason'''). With a copper pickaxe, mine deepslate and craft polished deepslate. A [[blast furnace]] takes 4 polished deepslate, 2 smooth stone and a kindling ('''Burgeoning Metallurge''').
+
+=== 6. Iron, gold, silver and diamonds ===
+Iron, gold, silver and diamond must be smelted in the blast furnace; diamond ore drops [[Raw Diamond|raw diamond]]. Each of iron and diamond lowers minimum hearts, so there is no need to rush them.
+
+=== 7. The oven and meals ===
+Bricks from clay (cooked on the kindling or in the kiln) and 3 iron ingots make an [[oven]]. Bricks also make bowls, needed for the curries and ramen, the pack's strongest meals. See [[Food]] and [[Cooking]].
+
+=== 8. Steel and smithing ===
+Craft 4 iron ingots with a coal block into [[Carbon-Rich Iron|carbon-rich iron]] and blast it into [[Steel Alloy|steel]]. Steel makes the [[Smithing Table|smithing table]] and [[anvil]]. From here the player can apply [[alloy]]s to equipment. See [[Smithing]].
+
+== Tips ==
+* [[Sack]]s (shulker boxes) are available early: 8 [[Sturdy Leather|sturdy leather]] around a chest.
+* [[Divine Fragment|Divine fragments]] come from breaking [[spawner]]s and defeating strong mobs. They are needed for eyes of ender and [[Crystal Heart|crystal hearts]], so break spawners rather than farming them. The README says simply: "Break Spawners!"
+* Only [[undead]] spawn on the open surface at night; creepers and spiders are underground. Warding weapons and a [[nazar]] burn the undead.
+* [[Obol]]s are rare. Most villagers do not buy anything, but the [[fisherman]] buys caught fish.
+* Carry food suited to the trip: the developer suggests melons for [[Hell]], glow berries or carrots for caves, and chorus fruit for [[the End]].<ref>{{Cite video|quote=If they're planning a trip to hell, they'll want to find some melons first.}}</ref>
+* There is no rush to reach the End. After the dragon is killed, the surface becomes safe from hostile mobs.
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Guides]]

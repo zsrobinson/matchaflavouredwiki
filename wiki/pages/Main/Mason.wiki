@@ -1,0 +1,101 @@
+{{Vanilla|Mason}}
+{{Infobox
+|title=Mason
+|type=[[Villager]] profession
+|vanilla={{MCW|Mason}}
+|rarity_label=Job site block
+|rarity={{ItemLink|Stonecutter}}
+}}
+The '''Mason''' is a [[villager]] profession that sells building stone as [[bulk blocks]]. Its job site block is the [[Stonecutter]]. Every mason trade gives bulk blocks, each of which unpacks into 64 blocks, so one [[Obol]] buys between 64 and 384 blocks. It buys nothing.
+
+== Trades ==
+{| class="wikitable"
+! Level !! Villager wants !! Villager gives !! Villager XP
+|-
+! rowspan="5" | Novice
+| {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Limestone}} || 5
+|-
+| {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Diorite}} || 5
+|-
+| {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Andesite}} || 5
+|-
+| {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Granite}} || 5
+|-
+| {{ItemLink|Obol}} || 6 × {{ItemLink|Bulk Dirt}} || 5
+|-
+! rowspan="6" | Apprentice
+| {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Deepslate}} || 15
+|-
+| {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Smooth Red Sandstone}} || 15
+|-
+| {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Smooth Sandstone}} || 15
+|-
+| {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Tuff}} || 15
+|-
+| {{ItemLink|Obol}} || {{ItemLink|item.kleispack.trade.bulk_terracotta|Bulk Terracotta|link=Bulk blocks}} || 15
+|-
+| {{ItemLink|Obol}} || 3 × {{ItemLink|Bulk Glass}} || 15
+|-
+! rowspan="4" | Journeyman
+| {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Calcite}} || 15
+|-
+| {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Flowstone}} || 15
+|-
+| {{ItemLink|Obol}} || {{ItemLink|item.kleispack.trade.bulk_prismarine|Bulk Malachite|link=Bulk blocks}} || 25
+|-
+| {{ItemLink|Obol}} || {{ItemLink|item.kleispack.trade.bulk_cinnabar|Bulk Cinnabar|link=Bulk blocks}} || 25
+|-
+! rowspan="3" | Expert
+| {{ItemLink|Obol}} || {{ItemLink|item.kleispack.trade.bulk_blackstone|Bulk Blackstone|link=Bulk blocks}} || 30
+|-
+| {{ItemLink|Obol}} || {{ItemLink|item.kleispack.trade.bulk_smooth_basalt|Bulk Smooth Basalt|link=Bulk blocks}} || 30
+|-
+| {{ItemLink|Obol}} || {{ItemLink|item.kleispack.trade.bulk_smooth_quartz|Bulk Smooth Quartz|link=Bulk blocks}} || 30
+|-
+! Master
+| colspan="3" style="text-align:center" | ''No trades''
+|}
+All trades can be used 999 times before restocking, and every level offers all of its trades.<ref>{{Source|MF_datapack/data/minecraft/trade_set/mason/level_1.json}}</ref> The mason has no Master trades.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/5/filler.json}}</ref>
+
+=== Blocks per obol ===
+{| class="wikitable sortable"
+! Level !! Block !! Bulk blocks per obol !! Blocks per obol
+|-
+| Novice || [[Limestone]], diorite, andesite, granite || 4 || 256
+|-
+| Novice || Dirt || 6 || 384
+|-
+| Apprentice || Deepslate, smooth red sandstone, smooth sandstone, tuff || 2 || 128
+|-
+| Apprentice || Glass || 3 || 192
+|-
+| Apprentice || Terracotta || 1 || 64
+|-
+| Journeyman || Calcite, [[Flowstone|flowstone]] || 2 || 128
+|-
+| Journeyman || [[Malachite]], cinnabar || 1 || 64
+|-
+| Expert || Blackstone, smooth basalt, smooth quartz || 1 || 64
+|}
+A bulk block is used like food, instantly: using it replaces it with 64 of its block, which go straight into the inventory. See [[Bulk blocks]] for details.
+
+Like every villager, a mason that has been traded with also buys its [[favorite food]] once.
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Cinnabar added to the mason's trades.}}
+{{History line|1.12.2|All mason trades are bulk blocks, which unpack directly into the inventory and have their own models. Added Bulk Dirt.}}
+}}
+
+== Issues ==
+* Six of the bulk blocks (terracotta, malachite, cinnabar, blackstone, smooth basalt and smooth quartz) have no entry in the language file, so in game their name and tooltip show as raw keys such as <code>item.kleispack.trade.bulk_terracotta</code>.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/2/terracotta.json}}</ref>
+
+== Trivia ==
+* The data pack contains an unused Expert trade file, <code>mason/4/quartz_emerald</code>, which is a discarded placeholder and is not in the Expert trade list.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/4/quartz_emerald.json}}</ref>
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Villager professions]]
+[[Category:Trading]]

@@ -1,0 +1,30 @@
+{{Infobox auto}}
+
+'''Oil''' is a cooking [[ingredient]] pressed from sunflowers or [[cocoa beans]]. It is bottled and can't be eaten.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/oil.json}}</ref>
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+A glass bottle and any 3 sunflowers or cocoa beans make 1 oil. Picking up a glass bottle unlocks the recipe.
+
+== Usage ==
+
+Oil is used for frying and in every oven-meal [[stock]]. Obtaining oil unlocks the four [[Chicken Nugget|chicken nuggets]], [[Buñuelo|buñuelos]], [[fish and chips]] and [[lumpia]]. Crafting a recipe that uses oil gives the glass bottle back.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Added oil. Curries, ramen, gimmari and pupusas use it.}}
+}}
+
+== See also ==
+* [[Stock]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

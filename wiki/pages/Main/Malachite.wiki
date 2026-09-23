@@ -9,6 +9,9 @@ Two calcite and two raw copper, placed diagonally, make 4 malachite.<ref>{{Sourc
 
 The design video lists it among the recipe changes meant to be "kinder for players": "Prismarine is craftable from copper."<ref>{{Cite video|quote=I made a lot of tweaks to the recipes to make them kinder for players. Prismarine is craftable from copper.}}</ref>
 
+=== Trading ===
+The [[Mason]] sells a bulk block of malachite for 1 [[obol]] at the journeyman level; using it unpacks 64 malachite. The item's name, <code>item.kleispack.trade.bulk_prismarine</code>, has no English translation, so the game shows the raw key.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/3/malachite.json}}</ref> See [[Bulk blocks]].
+
 === Natural generation ===
 Blocks placed in ocean monuments keep their vanilla IDs, so monuments are built from malachite, malachite bricks, dark malachite and malachite lanterns.
 

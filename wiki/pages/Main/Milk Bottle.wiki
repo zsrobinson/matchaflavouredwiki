@@ -1,0 +1,37 @@
+{{Vanilla|Beetroot Soup}}
+
+{{Infobox auto}}
+
+A '''milk bottle''' is a stackable portion of milk. Drinking one removes all status effects, like a milk bucket, and gives the glass bottle back.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/milk_bottle.json}}</ref> It replaces {{MCW|Beetroot Soup|beetroot soup}}.
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+A milk bucket and 4 glass bottles make 4 milk bottles. Obtaining a milk bucket unlocks the recipe.
+
+== Usage ==
+
+=== Food ===
+Drinking a milk bottle takes 1.6 seconds and clears every effect, good or bad (the tooltip calls this "Cleanse"). Unlike the pack's other foods it has 2 nutrition and 1.2 saturation, and it doesn't heal. Milk bottles stack to 64, so they are a portable cure for the [[Wither effect|Wither]] effect and other maleffects; the developer asks players to bring milk or [[bread]] to [[Hell]].<ref>{{Cite changelog|1.12.2|quote=Please bring milk or bread to Hell, please its very important}}</ref>
+
+Milk bottles are used in [[cheese]], [[cake]], [[ice cream]], [[glow berry crumble]], [[latke]]s, [[chorus mochi]], [[apple cinnamon oatmeal]], [[stroganoff]] and the green curry, paneer and pumpkin curry [[stock]]s.
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|0.5-alpha|The milk bottle recipe unlocks when obtaining milk.}}
+{{History line|1.10|Milk got a new cleanse tooltip icon, so older milk bottles don't stack with new ones.}}
+}}
+
+== See also ==
+* [[Cheese]]
+* [[Bread]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

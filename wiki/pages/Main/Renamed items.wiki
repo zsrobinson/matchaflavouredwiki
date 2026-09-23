@@ -1,0 +1,31 @@
+{{See also|Changes from vanilla}}
+[[Matcha Flavoured]] renames many vanilla items, blocks and villager professions through its resource pack's language file. Datapacks cannot add new items, so the pack also gives most of its custom items the ID of an unused or repurposed vanilla item; for example [[Obol]]s are emeralds, [[Divine Fragment|divine fragments]] are turtle scutes and [[Benzene|benzene]] is an endermite spawn egg. Both kinds appear in the table below.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+The distinction matters for commands and mod compatibility: <code>/give @s minecraft:emerald</code> gives an obol, and a vanilla item the pack repurposes no longer exists under its vanilla name. Several vanilla items were renamed to fit the setting: everything "Nether" is "Hell", netherite is [[Adamant Alloy|adamant]], shulker boxes are [[Sack|sacks]] and redstone is [[Electric Wire|electric wire]].
+
+== Notable renames ==
+{| class="wikitable"
+! Theme !! Examples
+|-
+| Hell || Nether → [[Hell]], netherrack → [[Hellstone|hellstone]], nether bricks → [[Hellbricks|hellbricks]], nether wart → [[Hellspore|hellspore]], nether star → [[Divine Favor|divine favor]]
+|-
+| Metals and ores || Emerald → [[Obol|obol]]; emerald ore → [[Native Silver|native silver]]; iron ore → [[Hematite|hematite]]; netherite → [[Adamant Alloy|adamant]]; prismarine shard/crystals → [[Raw Silver|raw silver]]/[[Silver Bullion|silver bullion]]
+|-
+| Workstations || Campfire → [[Kindling|kindling]], smoker → [[Mud Kiln|mud kiln]], furnace → [[oven]], brewing stand → [[Chemistry Stand|chemistry stand]], stone → [[Limestone|limestone]]
+|-
+| Redstone || Redstone → [[Electric Wire|electric wire]], redstone torch → [[Electric Inverter|electric inverter]], repeater → [[Electric Repeater|electric repeater]]
+|-
+| Magic || Blaze powder/rod → [[Raw Estus|raw Estus]]/[[Stabilized Estus|stabilized Estus]], glowstone dust → [[Estus Ash|Estus ash]], ender pearl → [[Stable Void|stable void]], enchanted book → [[Hell-Bound Book|hell-bound book]]
+|-
+| Villagers || Armorer → [[Engineer]], butcher → [[Cook]], cartographer → [[Archaeologist]], cleric → [[Chemist]], leatherworker → [[Lumberjack]], librarian → [[Mouthpiece]], toolsmith → [[Jeweler]]
+|}
+
+== Full list ==
+The table is generated from the language file and the item data. It also includes a few interface strings for the smithing table that are renamed along with items.
+{{Data/Renamed items}}
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Lists]]

@@ -1,0 +1,95 @@
+{{Vanilla|Music Disc}}
+{{Infobox auto}}
+A '''music disc''' is an item that plays music in a [[jukebox]]. [[Matcha Flavoured]] makes almost every vanilla disc craftable from [[Disc Fragment]]s, and adds seven discs of its own: four by community musicians, one by the pack's background composer, and two vanilla tracks that have no disc in vanilla.
+
+== Obtaining ==
+=== Crafting ===
+Most discs are crafted from 8 [[Disc Fragment]]s surrounding a center item. Custom discs are vanilla disc items with a different song and model, so the generated tables below show them under their base disc.
+{{Recipes}}
+
+{| class="wikitable sortable"
+! Disc !! Center item
+|-
+| 11 || Disc Fragment (9 fragments in total)
+|-
+| 13 || Yellow Dye
+|-
+| 5 || [[Echo Shard]]
+|-
+| blocks || Orange Dye
+|-
+| cat || Lime Dye
+|-
+| chirp || Red Dye
+|-
+| far || Glow Ink Sac
+|-
+| mall || Blue Dye
+|-
+| mellohi || Purple Dye
+|-
+| stal || Black Dye
+|-
+| strad || White Dye
+|-
+| wait || Light Blue Dye
+|-
+| ward || Green Dye
+|-
+| Crete || [[Wax]]
+|-
+| Malachite || Wet Sponge
+|-
+| Golden || Sunflower
+|-
+| Labyrinthine || Mossy Stone Bricks
+|}
+Any music disc can be crafted back into 3 Disc Fragments, and "Tears" into 1.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/disc_fragment_from_disc.json}}</ref>
+
+=== Other sources ===
+{{Sources}}
+
+== Custom discs ==
+{| class="wikitable sortable"
+! Disc !! Artist !! Length !! How to obtain
+|-
+| Crete || DeBlezyBestie || 1:22 || Crafting (Wax)
+|-
+| Malachite || DeBlezyBestie || 1:31 || Crafting (Wet Sponge)
+|-
+| Elegy of The Abbey || DeBlezyBestie || 3:35 || Ominous vaults (<code>reward_ominous_unique</code>) in [[Trial Chambers]] and the [[Abbey]]<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_ominous_unique.json}}</ref>
+|-
+| Golden || Ciren || 3:08 || Crafting (Sunflower)
+|-
+| Labyrinthine || Lena Raine || 5:24 || Crafting (Mossy Stone Bricks); [[Stronghold]] altar chests
+|-
+| Dry Hands || C418 || 1:09 || Only found in the hopper of one house in [[abandoned village]]s
+|-
+| Abbey || Vee Vaicekauskas || 2:20 || Not obtainable in survival; its loot table is not used anywhere
+|}
+All custom discs give a comparator output of 1.<ref>{{Source|MF_datapack/data/matcha/jukebox_song/crete.json}}</ref> Labyrinthine and Dry Hands use vanilla sound files; the others use sounds added by the resource pack. The Golden disc plays a demo version of the song.
+
+== Usage ==
+Discs are played in a [[jukebox]]. The [[Wandering Trader]] buys music discs for [[Obol]]s.
+{{Uses}}
+
+== History ==
+{{History
+|{{History line|0.5-alpha|The Wandering Trader buys music discs. Chicken jockeys drop the "Lava Chicken" disc.}}
+{{History line|0.6-alpha|Added the Dry Hands disc. All vanilla discs made craftable, and disc fragment recipes fixed.}}
+{{History line|1.0|Added the "Golden" disc by Ciren, in memory of the developer's dog.}}
+{{History line|1.10|The Wandering Trader pays more for "Creator" (5 Obols) and buys up to 6 discs.}}
+{{History line|1.12.1-alpha|Added three discs by DeBlezyBestie.}}
+{{History line|1.12.2|Elegy of the Abbey and Crete updated to new versions. Elegy of the Abbey can no longer be crafted.}}
+}}
+
+== Trivia ==
+* "Golden" was composed by Ciren in memory of the developer's dog, Dakota.<ref>{{Source|MF_datapack/CREDITS.txt}}</ref>
+* The folder <code>data/custom_music</code> holds only a note asking musicians to contribute music for more craftable discs.
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Items]]
+[[Category:Music]]

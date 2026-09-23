@@ -10,7 +10,7 @@ A '''steel chestplate''' is the [[Steel equipment|steel]] [[Armor#Chestplate|che
 === Smithing ===
 {{Recipes}}
 
-The upgrade uses no template: the template slot of the [[smithing table]] is left empty.
+The upgrade uses no template: the template slot of the [[Smithing Table|smithing table]] is left empty.
 
 Enchantments already on the base item are kept. Where the base and the new item share an enchantment, the higher level is used.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
 
@@ -35,7 +35,7 @@ The intrinsics are stored on the item and applied when it enters an inventory. S
 
 It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
 
-=== Smelting ===
+=== Smelting ingredient ===
 In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
 
 == Stats ==

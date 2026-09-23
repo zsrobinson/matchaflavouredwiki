@@ -1,0 +1,31 @@
+{{Infobox
+|title=Apotropaic Arrow
+|invimage=Tipped Arrow
+|type=Tipped arrow
+|stackable=Yes (64)
+|renewable=Yes
+|effects={{EffectLink|Instant Health}} II
+|base=<code>minecraft:tipped_arrow</code>
+}}
+An '''Apotropaic Arrow''' is a tipped arrow of Healing II with its own name and texture. Instant Health harms undead mobs instead of healing them, so the arrow is a weapon against [[zombie]]s and [[skeleton]]s. "Apotropaic" means warding off evil, the same theme as the pack's [[Apotropaic|apotropaic]] equipment.
+
+== Obtaining ==
+=== Trading ===
+A novice-level [[Fletcher]] sells 64 Apotropaic Arrows for one [[Obol]]. The trade can be used 999 times.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fletcher/1/apotropaic_arrow.json}}</ref>
+
+== Usage ==
+The arrow is shot from a bow or crossbow. On hit it applies the vanilla <code>strong_healing</code> potion, Instant Health II: it deals 12 extra damage ({{Hp|12}}) to undead mobs and heals other mobs by {{Hp|8}}, as a vanilla Arrow of Healing II does. Instant effects on arrows are applied at full strength.
+
+The name "Apotropaic Arrow" comes from a custom potion name, so the arrow keeps it when shot and picked up again.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+== See also ==
+* [[Nightshade Arrow]]
+* [[Apotropaic]]
+* [[Warding]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Combat]]
+[[Category:Items]]

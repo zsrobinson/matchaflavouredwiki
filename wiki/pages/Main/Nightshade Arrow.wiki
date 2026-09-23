@@ -1,0 +1,26 @@
+{{Infobox
+|title=Nightshade Arrow
+|type=Tipped arrow
+|stackable=Yes (64)
+|renewable=Yes
+|effects={{EffectLink|Poison}} II
+|base=<code>minecraft:tipped_arrow</code>
+}}
+A '''Nightshade Arrow''' is a tipped arrow of Poison II with its own name and texture. It is named after the poisonous nightshade plant. Poison does not affect undead mobs, so it is used against living mobs such as [[spider]]s and [[creeper]]s.
+
+== Obtaining ==
+=== Trading ===
+A novice-level [[Fletcher]] sells 64 Nightshade Arrows for one [[Obol]]. The trade can be used 999 times.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fletcher/1/nightshade_arrow.json}}</ref>
+
+== Usage ==
+The arrow applies the vanilla <code>strong_poison</code> potion on hit. As with every tipped arrow, the effect lasts one eighth of the potion's duration: Poison II for 2.7 seconds (54 ticks), like a vanilla Arrow of Poison II.
+
+== See also ==
+* [[Apotropaic Arrow]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Combat]]
+[[Category:Items]]

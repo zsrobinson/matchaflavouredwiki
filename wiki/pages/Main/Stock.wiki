@@ -1,0 +1,55 @@
+{{Infobox auto|Curry Stock}}
+
+A '''stock''' is an uncooked soup base that is cooked into one of the five oven meals. There are five: '''curry stock''', '''green curry stock''', '''paneer curry stock''', '''pumpkin curry stock''' and '''ramen stock'''. Each is crafted in a [[bowl]] and then cooked for 15 seconds in an [[oven]]; all but pumpkin curry stock can also be cooked on [[kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref>
+
+== Obtaining ==
+
+=== Crafting ===
+Picking up a bowl unlocks all five stock recipes.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/bowl.json}}</ref> Crafting a stock returns the glass bottles of its [[oil]] and [[milk bottle]] (1 for curry and ramen stock, 2 for the others).
+{| class="wikitable"
+! Stock !! Ingredients !! Cooks into
+|-
+| {{ItemLink|Curry Stock}} || Estus ash, sugar, flour, oil, potato, carrot, raw beef, raw mutton, raw flesh or seitan, bowl || [[Japanese Curry]]
+|-
+| {{ItemLink|Green Curry Stock}} || Green dye, estus ash, sugar, milk bottle, oil, cod, salmon or seitan, bowl || [[Green Curry]]
+|-
+| {{ItemLink|Paneer Curry Stock}} || Estus ash, sugar, milk bottle, tomatoes, cheese, oil, bowl || [[Paneer Makhani]]
+|-
+| {{ItemLink|Pumpkin Curry Stock}} || Estus ash, sugar, baked pumpkin, oil, sunflower, milk bottle, carrot, bamboo, bowl || [[Pumpkin Curry]] (oven only)
+|-
+| {{ItemLink|Ramen Stock}} || Brown mushroom, dried kelp, egg, oil, dough, raw porkchop, raw chicken or seitan, bowl || [[Tonkotsu Ramen]]
+|}
+
+{{Recipes|Curry Stock}}
+{{Recipes|Green Curry Stock}}
+{{Recipes|Paneer Curry Stock}}
+{{Recipes|Pumpkin Curry Stock}}
+{{Recipes|Ramen Stock}}
+
+== Usage ==
+
+Obtaining a stock unlocks its oven meal. Stocks can't be eaten.
+
+=== Crafting ingredient ===
+{{Uses|Curry Stock}}
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Added pumpkin curry stock. All stocks use oil, and those with meat accept seitan.}}
+}}
+
+== Trivia ==
+* Stocks are renamed spawn eggs (strider, zombified piglin, zoglin, ghast and wither skeleton).
+
+== See also ==
+* [[Green Curry]]
+* [[Japanese Curry]]
+* [[Paneer Makhani]]
+* [[Pumpkin Curry]]
+* [[Tonkotsu Ramen]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]
