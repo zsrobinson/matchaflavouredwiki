@@ -1,0 +1,83 @@
+{{Infobox
+|title=Bulk blocks
+|invimage=Bulk Limestone;Bulk Andesite;Bulk Diorite;Bulk Granite;Bulk Dirt;Bulk Deepslate;Bulk Glass;Bulk Tuff;Bulk Calcite;Bulk Flowstone
+|type=Consumable item
+|renewable=Yes
+|stackable=Yes (64)
+}}
+'''Bulk blocks''' are packed stacks of building blocks sold by the [[Mason]]. Each one unpacks into 64 of its block when used. One [[Obol]] buys between 64 and 384 blocks this way.
+
+== Obtaining ==
+=== Trading ===
+Bulk blocks are only sold by the [[Mason]], which has no other trades. All trades cost 1 obol:<ref>{{Source|MF_datapack/data/matcha/tags/villager_trade/mason/custom_level_1.json}}</ref>
+{| class="wikitable sortable"
+! Bulk block !! Unpacks into !! Mason level !! Per obol !! Blocks per obol
+|-
+| {{ItemLink|Bulk Limestone}} || 64 [[Limestone|limestone]] || Novice || 4 || 256
+|-
+| {{ItemLink|Bulk Diorite}} || 64 diorite || Novice || 4 || 256
+|-
+| {{ItemLink|Bulk Andesite}} || 64 andesite || Novice || 4 || 256
+|-
+| {{ItemLink|Bulk Granite}} || 64 granite || Novice || 4 || 256
+|-
+| {{ItemLink|Bulk Dirt}} || 64 dirt || Novice || 6 || 384
+|-
+| {{ItemLink|Bulk Deepslate}} || 64 deepslate || Apprentice || 2 || 128
+|-
+| {{ItemLink|Bulk Smooth Red Sandstone}} || 64 smooth red sandstone || Apprentice || 2 || 128
+|-
+| {{ItemLink|Bulk Smooth Sandstone}} || 64 smooth sandstone || Apprentice || 2 || 128
+|-
+| {{ItemLink|Bulk Tuff}} || 64 tuff || Apprentice || 2 || 128
+|-
+| {{ItemLink|Bulk Glass}} || 64 glass || Apprentice || 3 || 192
+|-
+| [[File:item.kleispack.trade.bulk_terracotta.png|16px|link=]] ''Bulk terracotta'' || 64 terracotta || Apprentice || 1 || 64
+|-
+| {{ItemLink|Bulk Calcite}} || 64 calcite || Journeyman || 2 || 128
+|-
+| {{ItemLink|Bulk Flowstone}} || 64 [[Flowstone|flowstone]] || Journeyman || 2 || 128
+|-
+| [[File:item.kleispack.trade.bulk_prismarine.png|16px|link=]] ''Bulk malachite'' || 64 [[Malachite|malachite]] || Journeyman || 1 || 64
+|-
+| [[File:item.kleispack.trade.bulk_cinnabar.png|16px|link=]] ''Bulk cinnabar'' || 64 cinnabar || Journeyman || 1 || 64
+|-
+| [[File:item.kleispack.trade.bulk_blackstone.png|16px|link=]] ''Bulk blackstone'' || 64 blackstone || Expert || 1 || 64
+|-
+| [[File:item.kleispack.trade.bulk_smooth_basalt.png|16px|link=]] ''Bulk smooth basalt'' || 64 smooth basalt || Expert || 1 || 64
+|-
+| [[File:item.kleispack.trade.bulk_smooth_quartz.png|16px|link=]] ''Bulk smooth quartz'' || 64 smooth quartz || Expert || 1 || 64
+|}
+''Names in italics'' are descriptive: these six bulk blocks have no name in the language file, so in game they show their raw translation keys (for example <code>item.kleispack.trade.bulk_terracotta</code>). See [[#Issues|Issues]].
+
+== Usage ==
+Using a bulk block (pressing use while holding it) unpacks it instantly: one bulk block is used up and replaced by 64 of its block, which go straight into the inventory.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/1/andesite.json}}</ref> Unpacking takes no time and plays the sound of a stone block falling. The tooltip shows what the bulk block holds (for example "x64 Andesite") and "Use to unpack".
+
+== Behavior ==
+A bulk block is a poisonous potato with its food properties removed. It is made "consumable" with a use time of 0 seconds and no effects, and the unpacked blocks are its use remainder, the item left behind after it is consumed.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/1/andesite.json}}</ref> As with any use remainder, if the inventory is full the blocks are dropped instead.
+
+=== Loot tables ===
+The data pack also has a loot table for each bulk block except dirt, under <code>matcha:bulk_block/</code> (for example <code>/loot give @s loot matcha:bulk_block/andesite</code>). No chest, mob or trade uses them. The items they give unpack the same way, but use the vanilla block's model as their icon instead of the bulk block model.<ref>{{Source|MF_datapack/data/matcha/loot_table/bulk_block/andesite.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Cinnabar added to the Mason's trades.}}
+{{History line|1.12.2|Bulk blocks unpack directly into the inventory (contributed by Linkershim).
+All Mason trades are bulk blocks.
+Added Bulk Dirt.
+Bulk blocks have their own models.}}
+}}
+
+== Issues ==
+* Bulk terracotta, malachite, cinnabar, blackstone, smooth basalt and smooth quartz have no English name or tooltip, so they display their translation keys.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+== Trivia ==
+* Bulk limestone is internally <code>bulk_stone</code>, bulk flowstone is <code>bulk_dripstone</code>, and bulk malachite is <code>bulk_prismarine</code>, after the vanilla blocks the pack renames.
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Items]]
+[[Category:Trading]]

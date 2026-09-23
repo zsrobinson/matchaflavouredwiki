@@ -1,6 +1,6 @@
 {{Vanilla|Smoker}}
 {{Infobox auto}}
-A '''mud kiln''' is a block that fires clay, sand and stone. It replaces the {{MCW|Smoker|smoker}} and works like one, with fuel, but instead of cooking food it is the pack's early kiln: it makes [[brick]]s, glass, terracotta and smooth stone before the player has an [[oven]] or a [[blast furnace]]. Food put in it comes out charred.
+A '''mud kiln''' is a block that fires clay, sand and stone. It replaces the {{MCW|Smoker|smoker}} and works like one, with fuel, but instead of cooking food it is the pack's early kiln: it makes [[brick]]s, glass, terracotta and smooth stone before the player has an [[oven]] or a [[Blast Furnace|blast furnace]]. Food put in it comes out charred.
 
 == Obtaining ==
 === Crafting ===
@@ -47,7 +47,7 @@ All kiln recipes take 5 seconds, except raw copper (10 seconds) and wet sponges 
 |}
 
 === Food ===
-The mud kiln cooks only four foods. [[Dough]] becomes [[naan]], and raw meat, fish and potatoes become [[charred meat]], [[Charred Fish|charred fish]] and [[charred potato]]es, which heal less than food cooked in an oven or on kindling.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref> See [[Cooking#Charring]].
+The mud kiln cooks only four foods. [[Dough]] becomes [[naan]], and raw meat, fish and potatoes become [[Charred Meat|charred meat]], [[Charred Fish|charred fish]] and [[Charred Potato|charred potato]]es, which heal less than food cooked in an oven or on kindling.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref> See [[Cooking#Charring]].
 
 == Advancements ==
 * ''Ancient Technology'': construct a kiln from packed mud and mud bricks.

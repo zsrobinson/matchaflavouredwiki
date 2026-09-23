@@ -1,0 +1,3385 @@
+/* Vendored from minecraft.wiki by tools/vendor_mcw_skin.py. Do not edit; rerun the script.
+ * Source pages: MediaWiki:Common.css, MediaWiki:Gadget-site-styles.css. Licensed CC BY-NC-SA 3.0 by the Minecraft Wiki. */
+
+/* ===== MediaWiki:Common.css ===== */
+/* CSS placed here will be applied to all skins */
+
+/**
+ * See [[MediaWiki:Vector.css]] for desktop theme related styles.
+ * See [[MediaWiki:Vector-theme-dark.css]] for desktop dark theme related styles.
+ *
+ * See [[MediaWiki:Minerva.css]] for mobile theme related styles.
+ * See [[MediaWiki:Minerva-theme-dark.css]] for mobile dark theme related styles.
+ */
+
+/* Minecraft font
+ * [[File:Minecraft.woff2]] [[File:Minecraft.woff]]
+ */
+@font-face {
+	font-family: Minecraft;
+	src: url('/assets/mcw/Minecraft.woff2') format('woff2'),
+	     url('/assets/mcw/Minecraft.woff') format('woff');
+}
+
+body {
+	font-family: "Liberation Sans", Arial, Helvetica, FreeSans, sans-serif;
+}
+
+/* Codex Design tokens */
+:root,
+.skin-invert,
+.notheme {
+	--color-base: #202122;
+	--color-base-fixed: #202122;
+	--color-base--hover: #404244;
+	--color-emphasized: #101418;
+	--color-subtle: #54595d;
+	--color-placeholder: #72777d;
+	--color-disabled: #a2a9b1;
+	--color-disabled-emphasized: #a2a9b1;
+	--color-inverted: #fff;
+	--color-inverted-fixed: #fff; /* The same as color-inverted in light mode, but does not change in dark mode. Use this for things that should be white in both modes. */
+	--color-progressive: #36c; /* 'Progressive' Color and states */
+	--color-progressive--hover: #3056a9;
+	--color-progressive--active: #233566;
+	--color-progressive--focus: #36c;
+	--color-destructive: #bf3c2c; /* 'Destructive' Color and states */
+	--color-destructive--hover: #9f3526;
+	--color-destructive--active: #612419;
+	--color-destructive--focus: #36c;
+	--color-visited: #6a60b0; /* 'Visited' color. In combination with progressive. Used for default links. */
+	--color-visited--hover: #534fa3;
+	--color-visited--active: #353262;
+	--color-destructive--visited: #9f5555; /* Red link 'Visited' color. Used for visited red links. */
+	--color-destructive--visited--hover: #854848;
+	--color-destructive--visited--active: #512e2e;
+	--color-error: #bf3c2c;
+	--color-error--hover: #9f3526;
+	--color-error--active: #612419;
+	--color-warning: #886425;
+	--color-success: #177860;
+	--color-notice: #404244;
+	--color-icon-error: #f54739;
+	--color-icon-warning: #ab7f2a;
+	--color-icon-success: #099979;
+	--color-icon-notice: #72777d;
+	--color-content-added: #006400;
+	--color-content-removed: #8b0000;
+	--filter-invert-icon: 0;
+	--filter-invert-primary-button-icon: 1;
+	--box-shadow-color-base: #a2a9b1;
+	--box-shadow-color-progressive--active: #233566;
+	--box-shadow-color-progressive--focus: #36c;
+	--box-shadow-color-progressive-selected: #36c;
+	--box-shadow-color-progressive-selected--hover: #3056a9;
+	--box-shadow-color-progressive-selected--active: #233566;
+	--box-shadow-color-destructive--focus: #36c;
+	--box-shadow-color-inverted: #fff;
+	--box-shadow-color-alpha-base: rgba( 0, 0, 0, 0.06 );
+	--box-shadow-color-transparent: transparent;
+	--font-size-x-small: 0.75rem; /* `x` stands for extra. In this case extra small. */
+	--font-size-small: 0.875rem;
+	--font-size-medium: 1rem;
+	--font-size-large: 1.125rem;
+	--font-size-x-large: 1.25rem;
+	--font-size-xx-large: 1.5rem;
+	--font-size-xxx-large: 1.75rem;
+	--line-height-x-small: 1.25rem; /* `x` stands for extra. In this case extra small. */
+	--line-height-small: 1.375rem;
+	--line-height-medium: 1.625rem;
+	--line-height-large: 1.75rem;
+	--line-height-x-large: 1.875rem;
+	--line-height-xx-large: 2.125rem;
+	--line-height-xxx-large: 2.375rem;
+	--line-height-content: 1.625; /* Intended for user-generated content that comes from outside of the design system. Components and features should use the standard font-size and line-height tokens instead. */
+	--mix-blend-mode-base: normal;
+	--mix-blend-mode-blend: multiply;
+	--background-color-base: #fff; /* Background Colors for static elements (for page layout, sections, etc.) from here on. */
+	--background-color-base-fixed: #fff; /* The same as background-color-base in light mode, but does not change in dark mode. Use this for things that should be white in both modes. */
+	--background-color-neutral: #eaecf0;
+	--background-color-neutral-subtle: #f8f9fa;
+	--background-color-interactive: #eaecf0;
+	--background-color-interactive--hover: #dadde3;
+	--background-color-interactive--active: #c8ccd1;
+	--background-color-interactive-subtle: #f8f9fa;
+	--background-color-interactive-subtle--hover: #eaecf0;
+	--background-color-interactive-subtle--active: #dadde3;
+	--background-color-disabled: #dadde3; /* Components like Buttons, Checkboxes, Radios, ProgressBars…. */
+	--background-color-disabled-subtle: #eaecf0; /* Components like TextInputs, Selects…. */
+	--background-color-inverted: #101418;
+	--background-color-progressive: #36c;
+	--background-color-progressive--hover: #3056a9;
+	--background-color-progressive--active: #233566;
+	--background-color-progressive--focus: #36c;
+	--background-color-progressive-subtle: #e8eeff;
+	--background-color-progressive-subtle--hover: #d9e2ff;
+	--background-color-progressive-subtle--active: #b6d4fb;
+	--background-color-destructive: #bf3c2c;
+	--background-color-destructive--hover: #9f3526;
+	--background-color-destructive--active: #612419;
+	--background-color-destructive--focus: #36c;
+	--background-color-destructive-subtle: #ffe9e5;
+	--background-color-destructive-subtle--hover: #ffdad3;
+	--background-color-destructive-subtle--active: #ffc8bd;
+	--background-color-error: #f54739;
+	--background-color-error--hover: #d74032;
+	--background-color-error--active: #bf3c2c;
+	--background-color-error-subtle: #ffe9e5;
+	--background-color-error-subtle--hover: #ffdad3;
+	--background-color-error-subtle--active: #ffc8bd;
+	--background-color-warning-subtle: #fdf2d5;
+	--background-color-success-subtle: #dff2eb;
+	--background-color-notice-subtle: #eaecf0;
+	--background-color-content-added: #a3d3ff;
+	--background-color-content-removed: #ffe49c;
+	--background-color-content-moved: #d29cff;
+	--background-color-transparent: transparent;
+	--background-color-backdrop-light: rgba( 255, 255, 255, 0.65 ); /* Backdrop is the term used by CSS Fullscreen API and is used to dim the background when a modal Dialog is open. Also known as overlay mask. */
+	--background-color-backdrop-dark: rgba( 0, 0, 0, 0.65 );
+	--background-color-button-quiet--hover: rgba( 0, 24, 73, 0.027 );
+	--background-color-button-quiet--active: rgba( 0, 24, 73, 0.082 );
+	--background-color-input-binary--checked: #36c;
+	--background-color-tab-list-item-framed--hover: rgba( 255, 255, 255, 0.3 );
+	--background-color-tab-list-item-framed--active: rgba( 255, 255, 255, 0.65 );
+	--opacity-icon-base: 0.87;
+	--opacity-icon-base--hover: 0.74;
+	--opacity-icon-base--selected: 1;
+	--opacity-icon-base--disabled: 0.51;
+	--opacity-icon-placeholder: 0.51;
+	--opacity-icon-subtle: 0.67;
+	--border-color-base: #a2a9b1;
+	--border-color-emphasized: #202122;
+	--border-color-subtle: #c8ccd1;
+	--border-color-muted: #dadde3;
+	--border-color-interactive: #72777d;
+	--border-color-interactive--hover: #27292d;
+	--border-color-interactive--active: #202122;
+	--border-color-disabled: #c8ccd1;
+	--border-color-inverted: #fff;
+	--border-color-inverted-fixed: #fff; /* The same as color-inverted in light mode, but does not change in dark mode. Use this for things that should be white in both modes. */
+	--border-color-progressive: #6485d1;
+	--border-color-progressive--hover: #3056a9;
+	--border-color-progressive--active: #233566;
+	--border-color-progressive--focus: #36c;
+	--border-color-destructive: #f54739;
+	--border-color-destructive--hover: #9f3526;
+	--border-color-destructive--active: #612419;
+	--border-color-destructive--focus: #36c;
+	--border-color-error: #f54739;
+	--border-color-error--hover: #9f3526;
+	--border-color-error--active: #612419;
+	--border-color-warning: #ab7f2a;
+	--border-color-warning--hover: #735421;
+	--border-color-warning--active: #453217;
+	--border-color-success: #099979;
+	--border-color-notice: #72777d;
+	--border-color-content-added: #a3d3ff;
+	--border-color-content-removed: #ffe49c;
+	--border-color-transparent: transparent;
+	--border-color-divider: #a2a9b1;
+	--outline-color-progressive--focus: #36c; /* Use in places where no more customized focus styles are provided, for example on generic `:focus`. */
+	--color-link: var( --color-progressive ); /* Default Link color and states */
+	--color-link--hover: var( --color-progressive--hover );
+	--color-link--active: var( --color-progressive--active );
+	--color-link--focus: var( --color-progressive--focus );
+	--color-link--visited: var( --color-visited );
+	--color-link--visited--hover: var( --color-visited--hover );
+	--color-link--visited--active: var( --color-visited--active );
+	--color-link-red: var( --color-destructive ); /* Red ('new') Link color and states */
+	--color-link-red--hover: var( --color-destructive--hover );
+	--color-link-red--active: var( --color-destructive--active );
+	--color-link-red--focus: var( --color-destructive--focus );
+	--color-link-red--visited: var( --color-destructive--visited );
+	--color-link-red--visited--hover: var( --color-destructive--visited--hover );
+	--color-link-red--visited--active: var( --color-destructive--visited--active );
+	--accent-color-base: #36c;
+	--border-color-input--hover: var( --border-color-interactive );
+	--border-color-input-binary: var( --border-color-interactive );
+	--border-color-input-binary--hover: var( --border-color-progressive--hover );
+	--border-color-input-binary--active: var( --border-color-progressive--active );
+	--border-color-input-binary--focus: var( --border-color-progressive--focus );
+	--border-color-input-binary--checked: var( --border-color-progressive );
+	
+	/* DEPRECATED TOKENS */
+	/* Warning: the following token name is deprecated (Use `color-subtle` instead. Note, that `color-subtle` is using `color.gray600` instead of `color.gray500` now.) */
+	--color-base--subtle: #54595d;
+	/* Warning: the following token name is deprecated (Use `line-height-x-small` instead. Deprecated, part of old font-size/line-height system) */
+	--line-height-xxx-small: 1.4285714rem;
+	/* Warning: the following token name is deprecated (Use `line-height-small` instead. Deprecated, part of old font-size/line-height system) */
+	--line-height-xx-small: 1.5714285rem;
+}
+
+/* Codex Design tokens dark mode */
+body.wgl-theme-dark,
+.skin-vector .mw-notification {
+	--color-base: #eaecf0;
+	--color-base--hover: #f8f9fa;
+	--color-emphasized: #f8f9fa;
+	--color-subtle: #a2a9b1;
+	--color-disabled: #54595d;
+	--color-disabled-emphasized: #72777d;
+	--color-inverted: #101418;
+	--color-progressive: #88a3e8; /* 'Progressive' Color and states */
+	--color-progressive--hover: #a6bbf5;
+	--color-progressive--active: #b6d4fb;
+	--color-destructive: #fd7865; /* 'Destructive' Color and states */
+	--color-destructive--hover: #fea898;
+	--color-destructive--active: #ffc8bd;
+	--color-visited: #a799cd; /* 'Visited' color. In combination with progressive. Used for default links. */
+	--color-visited--hover: #c5b9dd;
+	--color-visited--active: #d9d0e9;
+	--color-destructive--visited: #c99391; /* Red link 'Visited' color. Used for visited red links. */
+	--color-destructive--visited--hover: #dcb5b3;
+	--color-destructive--visited--active: #e8cecd;
+	--color-error: #fd7865;
+	--color-error--hover: #fea898;
+	--color-error--active: #ffc8bd;
+	--color-warning: #ca982e;
+	--color-success: #2cb491;
+	--color-notice: #a2a9b1;
+	--color-content-added: #80cdb3;
+	--color-content-removed: #fd7865;
+	--color-base--subtle: #a2a9b1;
+	--box-shadow-color-base: #72777d;
+	--box-shadow-color-progressive--focus: #6485d1;
+	--box-shadow-color-progressive-selected: #88a3e8;
+	--box-shadow-color-progressive-selected--hover: #a6bbf5;
+	--box-shadow-color-progressive-selected--active: #b6d4fb;
+	--box-shadow-color-destructive--focus: #6485d1;
+	--box-shadow-color-inverted: #000;
+	--box-shadow-color-alpha-base: rgba( 0, 0, 0, 0.87 );
+	--mix-blend-mode-blend: screen;
+	--background-color-base: #101418; /* Background Colors for static elements (for page layout, sections, etc.) from here on. */
+	--background-color-neutral: #27292d;
+	--background-color-neutral-subtle: #202122;
+	--background-color-interactive: #27292d;
+	--background-color-interactive--hover: #404244;
+	--background-color-interactive--active: #54595d;
+	--background-color-interactive-subtle: #202122;
+	--background-color-interactive-subtle--hover: #27292d;
+	--background-color-interactive-subtle--active: #404244;
+	--background-color-disabled: #404244; /* Components like Buttons, Checkboxes, Radios, ProgressBars…. */
+	--background-color-disabled-subtle: #27292d; /* Components like TextInputs, Selects…. */
+	--background-color-inverted: #f8f9fa;
+	--background-color-progressive--focus: #6485d1;
+	--background-color-progressive-subtle: #1b223d;
+	--background-color-progressive-subtle--hover: #233566;
+	--background-color-progressive-subtle--active: #3056a9;
+	--background-color-destructive--focus: #6485d1;
+	--background-color-destructive-subtle: #3c1a13;
+	--background-color-destructive-subtle--hover: #612419;
+	--background-color-destructive-subtle--active: #9f3526;
+	--background-color-error-subtle: #3c1a13;
+	--background-color-error-subtle--hover: #612419;
+	--background-color-error-subtle--active: #9f3526;
+	--background-color-warning-subtle: #2d2212;
+	--background-color-success-subtle: #132821;
+	--background-color-notice-subtle: #27292d;
+	--background-color-content-added: #233566;
+	--background-color-content-removed: #453217;
+	--background-color-content-moved: #432366;
+	--background-color-backdrop-light: rgba( 0, 0, 0, 0.65 ); /* Backdrop is the term used by CSS Fullscreen API and is used to dim the background when a modal Dialog is open. Also known as overlay mask. */
+	--background-color-backdrop-dark: rgba( 255, 255, 255, 0.65 );
+	--border-color-base: #72777d;
+	--border-color-emphasized: #eaecf0;
+	--border-color-subtle: #54595d;
+	--border-color-muted: #404244;
+	--border-color-interactive--hover: #a2a9b1;
+	--border-color-interactive--active: #c8ccd1;
+	--border-color-disabled: #54595d;
+	--border-color-inverted: #101418;
+	--border-color-progressive--hover: #88a3e8;
+	--border-color-progressive--active: #a6bbf5;
+	--border-color-progressive--focus: #6485d1;
+	--border-color-destructive--hover: #fd7865;
+	--border-color-destructive--active: #fea898;
+	--border-color-destructive--focus: #6485d1;
+	--border-color-error--hover: #fd7865;
+	--border-color-error--active: #fea898;
+	--border-color-warning--hover: #ca982e;
+	--border-color-warning--active: #edb537;
+	--border-color-content-added: #233566;
+	--border-color-content-removed: #987027;
+}
+
+body.wgl-theme-dark .skin-invert-image img,
+body.wgl-theme-dark .skin-invert,
+body.wgl-theme-dark .oo-ui-iconElement-icon:not(.oo-ui-image-progressive):not(.oo-ui-image-destructive):not(.oo-ui-checkboxInputWidget-checkIcon):not(.oo-ui-image-invert):not(.mw-no-invert),
+body.wgl-theme-dark .oo-ui-indicatorElement-indicator {
+	color-scheme: light;
+	filter: invert(1) hue-rotate(180deg);
+}
+
+/** Color variables for tweaking by different themes **/
+:root {
+	--navbox-background-color: #FFF;
+	--navbox-border-color: #CCC;
+	--navbox-header-color: #CCC;
+	--navbox-secondary-header-color: #DDD;
+	--navbox-tertiary-header-color: #EEE;
+	--navbox-section-color: #EEE;
+
+	--list-bullet: url('/assets/mcw/List_bullet.svg');
+}
+
+body.wgl-theme-dark {
+	--navbox-background-color: #333;
+	--navbox-border-color: #444;
+	--navbox-header-color: #111;
+	--navbox-secondary-header-color: #181818;
+	--navbox-tertiary-header-color: #222;
+	--navbox-section-color: #222;
+
+	--list-bullet: url('/assets/mcw/List_bullet_dark.svg');
+}
+
+/* Page display title */
+.mw-page-title-separator::after {
+	content: ' ';
+}
+
+.ns-10000 .mw-page-title-namespace,
+.ns-10002 .mw-page-title-namespace,
+.ns-10004 .mw-page-title-namespace,
+.ns-10006 .mw-page-title-namespace,
+.ns-10012 .mw-page-title-namespace,
+.ns-10014 .mw-page-title-namespace {
+	font-style: italic;
+	margin-right: 1px;
+}
+
+/** Main page stylings **/
+/** Only used for styling of elements, main page layout is defined at [[Minecraft_Wiki/styles.css]] **/
+.fp-section {
+	background-color: var(--background-color-neutral-subtle);
+    border: 1px solid var(--border-color-base);
+	vertical-align: top;
+	margin: 1px;
+}
+
+.fp-banner-image {
+	margin: 0 auto;
+}
+
+.fp-banner-content {
+	display: flex;
+	gap: 10px;
+	margin: 10px 0;
+	flex-wrap: wrap;
+    align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+	.fp-banner-content {
+		flex-wrap: nowrap;
+	}
+
+	.fp-banner-image {
+		margin: 0;
+	}
+}
+
+#fp-header-file {
+	margin: auto;
+}
+@media screen and (min-width:990px) {
+	#fp-header-file {
+		margin: auto 0;
+	}
+}
+
+#fp-header-links {
+	margin: auto 0;
+}
+
+#fp-header-links ul {
+	-ms-columns: 160px;
+	-moz-columns: 160px;
+	-webkit-columns: 160px;
+	columns: 160px;
+	-ms-column-count: 3;
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+	margin-top: 0;
+}
+
+
+/** Main page stylings **/
+.mcw-mainpage-icons {
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 20px;
+	justify-content: center;
+}
+
+@media screen and (min-width:1400px) and (max-width:2400px) {
+	#fp-2 .mcw-mainpage-icons {
+		max-width: 750px;
+		margin: auto;
+	}
+}
+
+.mcw-mainpage-icon {
+	flex: 0 0 auto;
+	width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mcw-mainpage-icon-img {
+	height: 60px;
+	width: 60px;
+	/* Make sure icon is correctly centered */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mcw-mainpage-icon a {
+    word-wrap: normal;
+}
+
+.mcw-mainpage-platforms {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 5px;
+}
+
+.mcw-mainpage-platform {
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	padding: 5px;
+}
+
+@media screen and (max-width:989px) {
+	.mcw-mainpage-platform {
+	    flex: 1 1 200px;
+	}
+
+	.mcw-mainpage-platform {
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	}
+}
+
+/** Diff stylings **/
+.mw-diff-inline-moved {
+	background-color: var(--background-color-content-moved);
+}
+
+.mw-diff-inline-moved-upwards.mw-diff-inline-moved-source,
+.mw-diff-inline-moved-downwards.mw-diff-inline-moved-source {
+	position: relative;
+}
+.mw-diff-inline-moved-upwards.mw-diff-inline-moved-source {
+	margin-top: 5px;
+}
+.mw-diff-inline-moved-downwards.mw-diff-inline-moved-source {
+	margin-bottom: 5px;
+}
+
+.mw-diff-inline-moved-upwards.mw-diff-inline-moved-source::after,
+.mw-diff-inline-moved-downwards.mw-diff-inline-moved-source::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 10px;
+}
+.mw-diff-inline-moved-upwards.mw-diff-inline-moved-source::after {
+	top: -10px;
+	background: linear-gradient(-135deg, transparent 75%, var(--background-color-content-moved) 75%) 0 0,
+	            linear-gradient(135deg, transparent 75%, var(--background-color-content-moved) 75%) 0 0;
+	background-size: 10px 10px;
+}
+.mw-diff-inline-moved-downwards.mw-diff-inline-moved-source::after {
+	bottom: -10px;
+	background: linear-gradient(-45deg, transparent 75%, var(--background-color-content-moved) 75%) 0 0,
+	            linear-gradient(45deg, transparent 75%, var(--background-color-content-moved) 75%) 0 0;
+	background-size: 10px 10px;
+}
+
+/** Template stylings **/
+/* [[Template:Navbox]] */
+.navbox {
+	background: var(--navbox-background-color);
+	border: 1px solid var(--navbox-border-color);
+	margin: 1em auto 0;
+	width: 100%;
+}
+
+.navbox table {
+	background: var(--navbox-background-color);
+	margin-left: -4px;
+	margin-right: -2px;
+}
+
+.navbox table:first-child {
+	margin-top: -2px;
+}
+
+.navbox table:last-child {
+	margin-bottom: -2px;
+}
+
+.navbox .navbox-top {
+	white-space: nowrap;
+	background-color: var(--navbox-header-color);
+	padding: 0 3px;
+	text-align: center;
+}
+
+.navbox tr:not(:first-child) .navbox-top,
+.navbox .navbox .navbox-top {
+	background-color: var(--navbox-secondary-header-color);
+}
+
+.navbox .navbox tr:not(:first-child) .navbox-top {
+	background-color: var(--navbox-tertiary-header-color);
+}
+
+.navbox-navbar,
+.navbox-navbar-mini {
+	float: left;
+	font-size: 80%;
+	position: absolute;
+}
+
+.navbox-title {
+	padding: 0 10px;
+	font-size: 110%;
+}
+
+.navbox th {
+	background-color: var(--navbox-section-color);
+	padding: 0 10px;
+	white-space: nowrap;
+	text-align: right;
+}
+
+.navbox td {
+	width: 100%;
+	padding: 0 0 0 2px;
+}
+
+/* Clear before navboxes and their section */
+.mw-heading2:has(#Navigation):has(+ table.navbox) {
+    clear: both;
+}
+
+/* [[Template:LoadBox]]*/
+.load-page {
+	background-color: rgba(255, 255, 255, .5);
+	border: 1px solid #CCC;
+	margin-bottom: 0.5em;
+	padding: 0 0.5em;
+}
+body.wgl-theme-dark .load-page {
+	background-color: #222;
+	border-color: #111;
+}
+body.wgl-theme-dark .load-page .mw-spinner {
+	filter: invert(1);
+}
+
+/* Hatnotes and disambiguation notices */
+.hatnote {
+	font-style: italic;
+}
+
+.hatnote i {
+	font-style: normal;
+}
+
+div.hatnote {
+	padding-left: 1.6em;
+	margin-bottom: 0.5em;
+}
+
+div.hatnote + div.hatnote {
+	margin-top: -0.5em;
+}
+
+/* [[Template:Layered blueprint]] */
+@-webkit-keyframes layered-blueprint-fade-in {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	100% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@keyframes layered-blueprint-fade-in {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	100% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.layered-blueprint-layer {
+	-webkit-animation: layered-blueprint-fade-in 200ms;
+	animation: layered-blueprint-fade-in 200ms;
+}
+
+@-webkit-keyframes layered-blueprint-fade-out {
+	0% {
+		opacity: 1;
+		visibility: visible;
+	}
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes layered-blueprint-fade-out {
+	0% {
+		opacity: 1;
+		visibility: visible;
+	}
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.layered-blueprint-radio:checked + .layered-blueprint-tab + .layered-blueprint-layer ~ .layered-blueprint-layer {
+	-webkit-animation: layered-blueprint-fade-out 200ms;
+	animation: layered-blueprint-fade-out 200ms;
+}
+
+/* [[Template:YouTube]] */
+.youtube-video {
+	display: block;
+}
+
+/* Prevent page jump from the toolbar loading */
+.client-js #editform {
+	/* To disable margin collapsing */
+	overflow: hidden;
+}
+
+.client-js .mw-editform > #wpTextbox1 {
+    margin-top: 73px;
+}
+
+/*.wikiEditor-ui-toolbar .tabs span.tab a:before {*/
+/*	filter: invert(1);*/
+/*}*/
+
+.wikiEditor-ui-text {
+	background-color: var(--background-color-base);
+}
+
+.wikiEditor-ui-text textarea {
+	background-color: transparent;
+}
+
+/* Alternating cell background */
+.alternatecells:nth-child(odd) {
+	background-color: var(--background-color-neutral);
+}
+body.wgl-theme-dark .alternatecells:nth-child(odd) {
+	background-color: #222;
+}
+
+/* Alternating table rows, primarily used with [[Template:Infobox row]] */
+.alternaterows tr:nth-child(even),
+.infobox-rows tr:nth-child(odd) {
+	background-color: var(--background-color-neutral);
+}
+
+/* Scale file page image to the width of the page */
+.dynamic-video video,
+.dynamic-image img,
+#file video,
+#file img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Fix bad codex default styles */
+.cdx-message__content {
+	hyphens: manual !important;
+}
+
+/* Allow parts of toc to be hidden */
+/* Section levels */
+.toc-hidelevel2 .toclevel-1 ul,
+.toc-hidelevel3 .toclevel-2 ul,
+.toc-hidelevel4 .toclevel-3 ul,
+/* Numbers */
+.toc-nonumbers .tocnumber {
+	display: none;
+}
+
+/* Adjust styles for small screens */
+@media (max-width: 500px) {
+	#content div.thumb {
+		float: none;
+	}
+}
+
+/* Simulate link styling for JS only links */
+.jslink {
+	color: #0645AD;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.jslink:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.jslink:active {
+	color: #FAA700;
+}
+
+/* Try to use nearest neighbour scaling for pixelated images */
+.mcwiki-header-grass,
+.ns-special .gallerybox img,
+.ns-14 .gallerybox img,
+.filehistory a img,
+.pixel-image,
+.invslot-item-image,
+.sprite {
+	image-rendering: optimizeSpeed;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: optimize-contrast;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+
+/* User link icons */
+
+/* Weird Gloop */
+/* [[File:Weird Gloop.png]] light mode */
+.mw-userlink[href="/w/User:Alex4401"], .mw-userlink[href="/w/User:Alex4401?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Andmcadams"], .mw-userlink[href="/w/User:Andmcadams?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:BigDiesel2m"], .mw-userlink[href="/w/User:BigDiesel2m?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Cook_Me_Plox"], .mw-userlink[href="/w/User:Cook_Me_Plox?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Gaz_Lloyd"], .mw-userlink[href="/w/User:Gaz_Lloyd?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Isobel"], .mw-userlink[href="/w/User:Isobel?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Jayden"], .mw-userlink[href="/w/User:Jayden?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Mudscape"], .mw-userlink[href="/w/User:Mudscape?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:RheingoldRiver"], .mw-userlink[href="/w/User:RheingoldRiver?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:SomeRandomDeveloper"], .mw-userlink[href="/w/User:SomeRandomDeveloper?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:TehKittyCat"], .mw-userlink[href="/w/User:TehKittyCat?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Weird_Gloop"], .mw-userlink[href="/w/User:Weird_Gloop?action=edit&redlink=1"] {
+	padding-left: 17px;
+	background: url('/assets/mcw/Weird_Gloop.png') no-repeat left center;
+	background-size: 14px 14px;
+}
+
+/* [[File:Weird Gloop dark.png]] dark mode */
+.wgl-theme-dark .mw-userlink[href="/w/User:Alex4401"], .wgl-theme-dark .mw-userlink[href="/w/User:Alex4401?action=edit&redlink=1"],
+.wgl-theme-dark .mw-userlink[href="/w/User:Andmcadams"], .wgl-theme-dark .mw-userlink[href="/w/User:Andmcadams?action=edit&redlink=1"],
+.wgl-theme-dark .mw-userlink[href="/w/User:BigDiesel2m"], .wgl-theme-dark .mw-userlink[href="/w/User:BigDiesel2m?action=edit&redlink=1"],
+.wgl-theme-dark .mw-userlink[href="/w/User:Cook_Me_Plox"], .wgl-theme-dark .mw-userlink[href="/w/User:Cook_Me_Plox?action=edit&redlink=1"],
+.wgl-theme-dark .mw-userlink[href="/w/User:Gaz_Lloyd"], .wgl-theme-dark .mw-userlink[href="/w/User:Gaz_Lloyd?action=edit&redlink=1"],
+.wgl-theme-dark .mw-userlink[href="/w/User:Isobel"], .wgl-theme-dark .mw-userlink[href="/w/User:Isobel?action=edit&redlink=1"],
+.wgl-theme-dark .mw-userlink[href="/w/User:Jayden"], .wgl-theme-dark .mw-userlink[href="/w/User:Jayden?action=edit&redlink=1"],
+.wgl-theme-dark .mw-userlink[href="/w/User:Mudscape"], .wgl-theme-dark .mw-userlink[href="/w/User:Mudscape?action=edit&redlink=1"],
+.wgl-theme-dark .mw-userlink[href="/w/User:RheingoldRiver"], .wgl-theme-dark .mw-userlink[href="/w/User:RheingoldRiver?action=edit&redlink=1"],
+.wgl-theme-dark .mw-userlink[href="/w/User:SomeRandomDeveloper"], .wgl-theme-dark .mw-userlink[href="/w/User:SomeRandomDeveloper?action=edit&redlink=1"],
+.wgl-theme-dark .mw-userlink[href="/w/User:TehKittyCat"], .wgl-theme-dark .mw-userlink[href="/w/User:TehKittyCat?action=edit&redlink=1"],
+.wgl-theme-dark .mw-userlink[href="/w/User:Weird_Gloop"], .wgl-theme-dark .mw-userlink[href="/w/User:Weird_Gloop?action=edit&redlink=1"] {
+	background-image: url('/assets/mcw/Weird_Gloop_dark.png');
+}
+
+/* Mojang */
+/* Add [[File:Mojang logo.svg]] to known Mojang employee userlinks */
+.mw-userlink[href="/w/User:Dinnerbone-gpuser"], .mw-userlink[href="/w/User:Dinnerbone-gpuser?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Jeb_mojang"], .mw-userlink[href="/w/User:Jeb_mojang?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:MidnightEnforcer"], .mw-userlink[href="/w/User:MidnightEnforcer?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Minecraft_Staff"], .mw-userlink[href="/w/User:Minecraft_Staff?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Mojang_tommo"], .mw-userlink[href="/w/User:Mojang_tommo?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Slicedlime"], .mw-userlink[href="/w/User:Slicedlime?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:IP_Justice"], .mw-userlink[href="/w/User:IP_Justice?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Cornerhard"], .mw-userlink[href="/w/User:Cornerhard?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:CornerHard"], .mw-userlink[href="/w/User:CornerHard?action=edit&redlink=1"],
+
+/* legacy/deleted */
+.mw-userlink[href="/w/User:MidnightEnforcer43458@legacy41488102"], .mw-userlink[href="/w/User:MidnightEnforcer43458@legacy41488102?action=edit&redlink=1"],
+/* previously User:Jonkagstrom47437 */
+.mw-userlink[href="/w/User:@DeletedUser40286849"], .mw-userlink[href="/w/User:@DeletedUser40286849?action=edit&redlink=1"],
+/* previously User:shoghicp */
+.mw-userlink[href="/w/User:@DeletedUser40317681"], .mw-userlink[href="/w/User:@DeletedUser40317681?action=edit&redlink=1"] {
+	padding-left: 17px;
+	background: url('/assets/mcw/Mojang_logo.svg') no-repeat left center;
+	background-size: 14px 14px;
+}
+
+/* Add [[File:Grass Block JE7 BE6.png]] to known Minecraft/Mojang-related contractor employee userlinks */
+.mw-userlink[href="/w/User:C418bla"], .mw-userlink[href="/w/User:C418bla?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Jocopa3"], .mw-userlink[href="/w/User:Jocopa3?action=edit&redlink=1"] {
+	padding-left: 17px;
+	background: url('/assets/mcw/Grass_Block_JE7_BE6.png') no-repeat left center;
+	background-size: 14px 14px;
+}
+
+/* Add [[File:Gray Mojang Thing.png]] to known ex-Mojang employee userlinks */
+.mw-userlink[href="/w/User:EvilSeph"], .mw-userlink[href="/w/User:EvilSeph?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:ExcitedZe"], .mw-userlink[href="/w/User:ExcitedZe?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Neon_Master"], .mw-userlink[href="/w/User:Neon_Master?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:RazzleberryFox"], .mw-userlink[href="/w/User:RazzleberryFox?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Tahg"], .mw-userlink[href="/w/User:Tahg?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:Tamerjeison"], .mw-userlink[href="/w/User:Tamerjeison?action=edit&redlink=1"],
+.mw-userlink[href="/w/User:HelenAngel"], .mw-userlink[href="/w/User:HelenAngel?action=edit&redlink=1"],
+/* previously User:ProfMobius */
+.mw-userlink[href="/w/User:@DeletedUser40549330"], .mw-userlink[href="/w/User:@DeletedUser40549330?action=edit&redlink=1"] {
+	padding-left: 17px;
+	background: url('/assets/mcw/Gray_Mojang_Thing.png') no-repeat left center;
+}
+
+/* Make external links the same colour as internal links, the icon is enough to differentiate them */
+.mw-body a.external {
+	color: #0645ad;
+}
+
+.mw-body a.external:visited {
+	color: #0b0080;
+}
+
+.mw-body a.external:active {
+	color: #faa700;
+}
+
+/* Download icon 
+ * [[File:Download-minimalistic-icon.svg]] [[File:Dark-download-minimalistic-icon.svg]]
+ */
+.mw-body a:is(.external, .extiw):is([href$=".jar"], [href$=".exe"]) {
+	background-image: url(/assets/mcw/Download-minimalistic-icon.svg);
+	background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 0.857em;
+    padding-right: 1em;
+}
+
+body.wgl-theme-dark .mw-body a:is(.external, .extiw):is([href$=".jar"], [href$=".exe"]) {
+	background-image: url(/assets/mcw/Dark-download-minimalistic-icon.svg);
+}
+
+/* Make tabs the correct size */
+body {
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+}
+
+/* Classes corresponding to Minecraft formatting codes */
+.format-0 {
+	color: #000;
+	text-shadow: 0.125em 0.125em 0 #000;
+}
+.format-1 {
+	color: #0000A8;
+	text-shadow: 0.125em 0.125em 0 #00002A;
+}
+.format-2 {
+	color: #00A800;
+	text-shadow: 0.125em 0.125em 0 #002A00;
+}
+.format-3 {
+	color: #00A8A8;
+	text-shadow: 0.125em 0.125em 0 #002A2A;
+}
+.format-4 {
+	color: #A80000;
+	text-shadow: 0.125em 0.125em 0 #2A0000;
+}
+.format-5 {
+	color: #A800A8;
+	text-shadow: 0.125em 0.125em 0 #2A002A;
+}
+.format-6 {
+	color: #FBA800;
+	text-shadow: 0.125em 0.125em 0 #3E2A00;
+}
+.format-7 {
+	color: #A8A8A8;
+	text-shadow: 0.125em 0.125em 0 #2A2A2A;
+}
+.format-8 {
+	color: #545454;
+	text-shadow: 0.125em 0.125em 0 #151515;
+}
+.format-9 {
+	color: #5454FB;
+	text-shadow: 0.125em 0.125em 0 #15153E;
+}
+.format-a {
+	color: #54FB54;
+	text-shadow: 0.125em 0.125em 0 #153E15;
+}
+.format-b {
+	color: #54FBFB;
+	text-shadow: 0.125em 0.125em 0 #153E3E;
+}
+.format-c {
+	color: #FB5454;
+	text-shadow: 0.125em 0.125em 0 #3E1515;
+}
+.format-d {
+	color: #FB54FB;
+	text-shadow: 0.125em 0.125em 0 #3E153E;
+}
+.format-e {
+	color: #FBFB54;
+	text-shadow: 0.125em 0.125em 0 #3E3E15;
+}
+.format-f,
+#minetip-tooltip {
+	color: #FBFBFB;
+	text-shadow: 0.125em 0.125em 0 #3E3E3E;
+}
+.format-g {
+	color: #DDD605;
+	text-shadow: 0.125em 0.125em 0 #373501;
+}
+.format-h {
+	color: #E3D4D1;
+	text-shadow: 0.125em 0.125em 0 #383534;
+}
+.format-i {
+	color: #CECACA;
+	text-shadow: 0.125em 0.125em 0 #333232;
+}
+.format-j {
+	color: #443A3B;
+	text-shadow: 0.125em 0.125em 0 #110E0E;
+}
+.format-l {
+	font-weight: bold;
+	letter-spacing: 0.125em;
+}
+.format-m {
+	text-decoration: line-through;
+}
+.format-n {
+	text-decoration: underline;
+}
+.format-o {
+	font-style: italic;
+}
+.format-p {
+	color: #DEB12D;
+	text-shadow: 0.125em 0.125em 0 #372C0B;
+}
+.format-q {
+	color: #47A036;
+	text-shadow: 0.125em 0.125em 0 #04280D;
+}
+.format-s {
+	color: #2CBAA8;
+	text-shadow: 0.125em 0.125em 0 #0B2E2A;
+}
+.format-t {
+	color: #21497B;
+	text-shadow: 0.125em 0.125em 0 #08121E;
+}
+.format-u {
+	color: #9A5CC6;
+	text-shadow: 0.125em 0.125em 0 #261731;
+}
+.format-v {
+	color: #EB7114;
+	text-shadow: 0.125em 0.125em 0 #3B1D05;
+}
+/* Custom color codes because §m and §n are used twice. */
+.format-y {
+	color: #971607;
+	text-shadow: 0.125em 0.125em 0 #250501;
+}
+.format-z {
+	color: #B4684D;
+	text-shadow: 0.125em 0.125em 0 #2D1A13;
+}
+/* Class for &#123456 and &$123 adding custom hex colors. */
+.format-custom {
+	text-shadow: 0.125em 0.125em 0 color-mix(in srgb, currentColor 25%, #000 75%);
+}
+
+/* Styling for minecraft style tooltip */
+#minetip-tooltip {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #100010;
+	background-color: rgba(16, 0, 16, 0.94);
+	padding: 0.375em;
+	font-family: Minecraft, sans-serif;
+	font-size: 16px;
+	word-spacing: 4px;
+	white-space: nowrap;
+	line-height: 1.25em;
+	margin: 0.125em 0.25em;
+	pointer-events: none;
+	z-index: 9999;
+}
+
+#minetip-tooltip::before {
+	content: "";
+	position: absolute;
+	top: 0.125em;
+	right: -0.125em;
+	bottom: 0.125em;
+	left: -0.125em;
+	border: 0.15em solid #100010;
+	border-style: none solid;
+	border-color: rgba(16, 0, 16, 0.94);
+}
+
+#minetip-tooltip::after {
+	content: "";
+	position: absolute;
+	top: 0.125em;
+	right: 0;
+	bottom: 0.125em;
+	left: 0;
+	border: 0.125em solid #2D0A63;
+	border-image: -webkit-linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
+	border-image: linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
+}
+
+#minetip-tooltip > .description,
+#minetip-tooltip > .minetip-description {
+	display: block;
+	margin-top: 0.25em;
+}
+
+/* For adding alt text to icons for accessibility purposes */
+.hidden-alt-text {
+	font-size: 0;
+}
+
+/* prevent sitenotice show/hide toggle from moving page contents down after pageload */
+.globalNotice .globalNoticeDismiss {
+	float: right;
+}
+
+/* Prevent code from overflowing */
+code {
+    overflow-wrap: break-word;
+}
+
+/* Style code, pre and similar elements/classes with one common styling */
+@media screen {
+	pre, code, .mw-code {
+	    background-color: var(--background-color-neutral-subtle);
+	    color: var(--color-emphasized);
+	    border: 1px solid var(--border-color-muted);
+	}
+}
+body.mediawiki a > code {
+	color: inherit;
+}
+
+kbd, .kbd-color {
+	text-shadow: 0 1px 0 var(--background-color-base);
+	background-color: var(--background-color-neutral-subtle);
+	color: var(--color-emphasized);
+	box-shadow: 0 1px rgba(0,0,0,0.2), 0 0 0 2px var(--background-color-base) inset;
+	border-color: var(--border-color-muted);
+	font-size: smaller;
+}
+
+/* Fixes for small screens */
+@media screen and (max-width: 720px) {
+	#mw-head {
+		top: 13px;
+	}
+
+	div#mw-navigation div#mw-panel {
+		position: static !important; /* position: relative may be added to inline styles by built-in JS after page load; it needs an !important to override */
+	}
+}
+
+@media screen and (max-width: 500px) {
+	/* TOC fix */
+	#mw-content-text > .mw-parser-output > div[style*="float"] {
+		float: none !important;
+		margin: 0 !important;
+	}
+}
+
+/* presumable Discord link on comportal */
+.CPDiscord {
+	float: right;
+	margin-left: 1em;
+	clear: right;
+}
+
+/* Styling for tooltip */
+.explain {
+	border-bottom: 0;
+	text-decoration: underline dotted;
+	cursor: help;
+}
+
+/* Show help cursor when an abbr element has a title attribute */
+abbr[title] {
+	cursor: help;
+}
+
+/* [[Template:History]] */
+.historytable-experiment {
+	border-top: 1px solid;
+	border-color: inherit;
+	margin-top: 0.5em;
+	padding: 0 1em;
+	font-size: smaller;
+	line-height: 1;
+	background-color: inherit;
+}
+.historytable-experiment > div {
+	margin: -0.5em auto 0;
+	padding: 0 0.5em;
+	width: min-content;
+	background-color: inherit;
+}
+.historytable-experiment + span {
+	font-size: small;
+	line-height: 1.3;
+}
+
+/* Machine-readable extra template information */
+.history-json, .chest-json, .chestcontents-json, .sound-json, .spawntable-json, .advancements-json, .achievements-json {
+	display: none;
+}
+
+.mw-references-columns {
+	overflow-wrap: break-word;
+}
+
+#mw-imagepage-section-filehistory {
+	overflow: auto;
+}
+
+/* Enhance contrast for search highlight since we use a blue background */
+.mw-prefs-search-highlight {
+    background: var(--background-color-notice-subtle) !important; /* default style contains !important */
+    outline-color: var(--border-color-interactive) !important
+}
+
+/* [[Template:Colorlink]] */
+.colored-links a {
+  color: inherit !important;
+}
+
+body.ns-10008 #ca-talk,
+body.ns-10008 .minerva__tab[data-event-name="tabs.talk"] {
+	display: none;
+}
+
+/* DiscussionTools dark mode fix */
+body.wgl-theme-dark .ext-discussiontools-init-highlight {
+    mix-blend-mode: lighten;
+}
+
+body.wgl-theme-dark .ext-discussiontools-init-publishedcomment {
+    background-color: #6b5f29;
+}
+
+body.wgl-theme-dark .ext-discussiontools-init-targetcomment {
+    background-color: #1b1f29;
+}
+
+body.wgl-theme-dark .ext-discussiontools-ui-replyWidget-preview {
+    background: #222;
+}
+
+.sr-only:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* [[Template:Archive box]] */
+.archive-box {
+	background: var(--archive-box-background-color, #FFF);
+	text-align: left;
+	border: 1px solid var(--archive-box-border-color, #CCC);
+	margin-top: 3px;
+	width: 16em;
+	font-size: 90%;
+	padding: 2px;
+}
+
+/* Center archive box on small screen */
+@media (max-width: 500px) {
+    .archive-box {
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto;
+        clear: both;
+    }
+}
+
+.mw-indicator {
+	vertical-align: middle;
+}
+
+/* Fix for inputbox width */
+.mw-inputbox-form .cdx-text-input {
+	min-width: 0;
+}
+
+/* Fix for inputboxes contained in other boxes (e.g. archive boxes) */
+.mw-inputbox-input[size], .mw-inputbox-createbox[size] {
+	max-width: 100%;
+}
+
+/* Fix for visual editor adding whitespace around the <onlyinclude> at the top of version pages */
+.infobox + p > br:first-child, /*desktop*/
+.mf-section-0 > p:first-child > br:first-child /*mobile*/
+{
+	display: none;
+}
+
+/* Use black bullet points, instead of blue circles: [[File:List bullet.svg]] */
+ul {
+	list-style-image: var(--list-bullet);
+}
+
+/* Checkerboard pattern for transparent background of images on file pages */
+#bodyContent #file img {
+	--mcw-file-img-background-dark: #6661;
+	--mcw-file-img-background-light: #aaa1;
+	background: repeating-conic-gradient(var(--mcw-file-img-background-dark) 0 25%, var(--mcw-file-img-background-light) 0 50%) 50% / 16px 16px;
+}
+
+#bodyContent #file img:hover {
+	--mcw-file-img-background-dark: #6668;
+	--mcw-file-img-background-light: #aaa8;
+}
+
+table.mw-datatable.mw-blocklist td.TablePager_col_target,
+table.mw-datatable.mw-blocklist td.TablePager_col_by,
+table.mw-datatable.mw-blocklist td.TablePager_col_bl_reason {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+/* Extension:Bucket boolean theming, works in light and dark mode */
+.bucket__value-boolean.bucket__value-boolean-true {
+	background-color: var(--background-color-success-subtle);
+}
+
+.bucket__value-boolean.bucket__value-boolean-false {
+    background-color: var(--background-color-error-subtle);
+}
+
+.mw-protection-indicator-icon--lock {
+    width: 30px;
+    height: 30px;
+}
+
+#mw-indicator-protection-autoconfirmed .mw-protection-indicator-icon--lock {
+    mask: none;
+    background: url("/assets/mcw/Semi-protected_page_lock.svg");
+}
+
+#mw-indicator-protection-sysop-cascade .mw-protection-indicator-icon--lock,
+#mw-indicator-protection-sysop .mw-protection-indicator-icon--lock {
+    mask: none;
+    background: url("/assets/mcw/Fully-protected_page_lock.svg");
+}
+
+#mw-indicator-protection-directoreditprotected-cascade .mw-protection-indicator-icon--lock,
+#mw-indicator-protection-directoreditprotected .mw-protection-indicator-icon--lock {
+    mask: none;
+    background: url("/assets/mcw/Director-protected_page_lock.svg");
+}
+
+.mw-changeslist-user-newcomer .mw-thanks-thank-link {
+    font-weight: bold;
+}
+
+/* ===== MediaWiki:Gadget-site-styles.css ===== */
+/**
+ * @DEPRECATED
+ *
+ * Styles placed here are loaded on both desktop and mobile views. After the
+ * migration [[MediaWiki:Common.css]] is now both loaded on desktop and
+ * mobile, and rules here are being merged to Common.css.
+ *
+ * Minecraft-themed desktop-only styles should go in [[MediaWiki:Vector.css]].
+ * Mobile-only styles should go in [[MediaWiki:Minerva.css]].
+ */
+
+/* Infobox headers */
+:root {
+	--infobox-header-background-color: #729FCF;
+}
+
+body.rootpage-Minecraft_Dungeons,
+body.rootpage-Talk_Minecraft_Dungeons,
+body.ns-10000,
+body.ns-10001 {
+	--infobox-header-background-color: #C57537;
+}
+
+body.rootpage-Minecraft_Dungeons_II,
+body.rootpage-Talk_Minecraft_Dungeons_II,
+body.ns-10014,
+body.ns-10015 {
+ 	--infobox-header-background-color: #3395c2;
+}
+
+body.rootpage-Minecraft_Earth,
+body.rootpage-Talk_Minecraft_Earth,
+body.ns-10002,
+body.ns-10003 {
+	--infobox-header-background-color: #4D83FF;
+}
+
+body.rootpage-Minecraft_Legends,
+body.rootpage-Talk_Minecraft_Legends,
+body.ns-10006,
+body.ns-10007 {
+	--infobox-header-background-color: #11AAAA;
+}
+
+/** Template stylings **/
+/* [[Template:Inventory slot]] */
+.invslot {
+	position: relative;
+	display: inline-block;
+	background: #8B8B8B no-repeat center center / 32px 32px;
+	border: 2px solid;
+	border-color: #373737 #FFF #FFF #373737;
+	width: 32px;
+	height: 32px;
+	font-size: 16px;
+	line-height: 1;
+	text-align: left;
+	vertical-align: bottom;
+}
+.invslot::before,
+.invslot::after {
+	content: "";
+	position: absolute;
+	background-color: #8B8B8B;
+	height: 2px;
+	width: 2px;
+	pointer-events: none;
+}
+.invslot::before {
+	bottom: -2px;
+	left: -2px;
+}
+.invslot::after {
+	top: -2px;
+	right: -2px;
+}
+.invslot-large {
+	padding: 8px;
+}
+
+.invslot-item,
+.invslot-item a:first-child {
+	position: relative;
+	display: block;
+	margin: -2px;
+	padding: 2px;
+	width: 32px;
+	height: 32px;
+}
+
+/* [[File:Grid Unknown.png]] */
+.invslot-item-image a.new:first-child {
+	background: url('/assets/mcw/Grid_Unknown.png') no-repeat content-box;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.invslot-stacksize {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-family: Minecraft, sans-serif !important;
+	font-weight: normal !important;
+	color: #FFF !important;
+	text-shadow: 2px 2px 0 #3F3F3F;
+	filter: dropshadow(color=#3F3F3F, offx=2, offy=2);
+	z-index: 2;
+}
+
+/* Plain slot with no border or background */
+.invslot-plain {
+	background-color: transparent;
+	border: 0;
+}
+.invslot-plain::before,
+.invslot-plain::after {
+	content: none;
+}
+.invslot-plain > .invslot-item,
+.invslot-plain > .invslot-item a:first-child {
+	margin: 0;
+	padding: 0;
+}
+
+/* Default background images:
+   [[File:Grid layout Head Empty.png]],
+   [[File:Grid layout Chest Empty.png]],
+   [[File:Grid layout Legs Empty.png]],
+   [[File:Grid layout Feet Empty.png]],
+   [[File:Grid layout Offhand Empty.png]],
+   [[File:Grid layout Smithing Empty.png]],
+   [[File:Grid layout Brewing Empty.png]],
+   [[File:Grid layout Brewing Fuel Empty.png]] */
+.invslot-default-head {
+	background-image: url('/assets/mcw/Grid_layout_Head_Empty.png');
+}
+.invslot-default-chest {
+	background-image: url('/assets/mcw/Grid_layout_Chest_Empty.png');
+}
+.invslot-default-legs {
+	background-image: url('/assets/mcw/Grid_layout_Legs_Empty.png');
+}
+.invslot-default-feet {
+	background-image: url('/assets/mcw/Grid_layout_Feet_Empty.png');
+}
+.invslot-default-offhand {
+	background-image: url('/assets/mcw/Grid_layout_Offhand_Empty.png');
+}
+.invslot-default-smithing {
+	background-image: url('/assets/mcw/Grid_layout_Smithing_Empty.png');
+}
+.invslot-default-brewing {
+	background-image: url('/assets/mcw/Grid_layout_Brewing_Empty.png');
+}
+.invslot-default-brewing-fuel {
+	background-image: url('/assets/mcw/Grid_layout_Brewing_Fuel_Empty.png');
+}
+
+/* [[Template:hp]] */
+.mc-hearts::before {
+	content: ' (';
+}
+.mc-hearts::after {
+	content: ')';
+}
+
+/* Generic Minecraft interface styling: [[Module:UI]] */
+.mcui {
+	display: inline-block;
+	position: relative;
+	background-color: #C6C6C6;
+	border: 2px solid;
+	border-color: #DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+	padding: 6px;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: bottom;
+}
+
+.mcui-Crafting_Table > *,
+.mcui-Furnace > *,
+.mcui-Cartography_Table > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* [[Template:Crafting Table]]:
+   [[File:Grid layout Arrow (small).png]], [[File:Grid layout Shapeless.png]], [[File:Grid layout Fixed.png]] */
+.mcui-Crafting_Table .mcui-row {
+	display: block;
+}
+
+.mcui-Crafting_Table > .mcui-arrow {
+	background: url('/assets/mcw/Grid_layout_Arrow_%28small%29.png') no-repeat;
+	width: 32px;
+	height: 26px;
+	margin: 40px 4px 0;
+}
+
+.mcui-Crafting_Table > .mcui-output {
+	margin-top: 28px;
+}
+
+.mcui-Crafting_Table > .mcui-icons {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+}
+.mcui-Crafting_Table .mcui-shapeless,
+.mcui-Crafting_Table .mcui-fixed {
+	display: inline-block;
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 15px;
+	cursor: help;
+}
+.mcui-Crafting_Table .mcui-shapeless {
+	background-image: url('/assets/mcw/Grid_layout_Shapeless.png');
+}
+.mcui-Crafting_Table .mcui-fixed {
+	background-image: url('/assets/mcw/Grid_layout_Fixed.png');
+}
+
+
+/* [[Template:Furnace]]:
+   [[File:Grid layout Fire.png]], [[File:Grid layout Fire (in-active).png]]
+   [[File:Grid layout Furnace Progress.png]], [[File:Grid layout Furnace Progress (in-active).png]] */
+.mcui-Furnace .mcui-fuel {
+	display: block;
+	background: url('/assets/mcw/Grid_layout_Fire.png') no-repeat;
+	width: 36px;
+	height: 36px;
+}
+.mcui-Furnace .mcui-fuel.mcui-inactive {
+	background-image: url('/assets/mcw/Grid_layout_Fire_%28in-active%29.png');
+}
+
+.mcui-Furnace > .mcui-arrow {
+	background: url('/assets/mcw/Grid_layout_Furnace_Progress.png') no-repeat;
+	width: 44px;
+	height: 32px;
+	margin: 36px 18px 0 14px;
+}
+.mcui-Furnace > .mcui-arrow.mcui-inactive,
+.mcui-Inventory-Crafting_Table-arrow {
+	background-image: url('/assets/mcw/Grid_layout_Furnace_Progress_%28in-active%29.png');
+}
+
+.mcui-Furnace > .mcui-output,
+.mcui-Cartography_Table > .mcui-output {
+    margin-top: 28px;
+}
+
+.mcui-Furnace > .mcui-experience {
+	position: absolute;
+	top: 92px;
+	left: 108px;
+	text-align: center;
+	width: 70px;
+}
+
+.mcui-Furnace .mcui-experience-orb {
+	display: inline-block;
+	margin-top: 3px;
+	width: 16px;
+	height: 16px;
+	vertical-align: top;
+	background-size: 16px 16px;
+}
+
+.mcui-Furnace .mcui-experience-text {
+	display: inline-block;
+	vertical-align: top;
+	font-family: Minecraft, sans-serif;
+	font-size: 16px;
+	color: #404040;
+}
+
+/* [[Template:Brewing Stand]]:
+   [[File:Grid layout Brewing Bubbles.gif]], [[File:Grid layout Brewing Bubbles (In-active).png]],
+   [[File:Grid layout Brewing Arrow.png]], [[File:Grid layout Brewing Arrow (In-active).png]],
+   [[File:Grid layout Brewing Paths.png]], [[File:Grid layout Brewing Empty.png]],
+   [[File:Grid layout Arrow (small).png]] */
+.mcui-Brewing_Stand > * {
+	display: block;
+}
+
+.mcui-Brewing_Stand .invslot {
+	vertical-align: top;
+}
+
+.mcui-Brewing_Stand > .mcui-input {
+	text-align: center;
+}
+
+.mcui-Brewing_Stand > .mcui-input > .invslot {
+	margin-top: 3px;
+}
+
+.mcui-Brewing_Stand .mcui-bubbling,
+.mcui-Brewing_Stand .mcui-arrow {
+	display: inline-block;
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 57px;
+}
+
+.mcui-Brewing_Stand .mcui-bubbling,
+.mcui-Inventory-Brewing_Stand-bubbles {
+	background-image: url('/assets/mcw/Grid_layout_Brewing_Bubbles.gif');
+}
+.mcui-Brewing_Stand > .mcui-input.mcui-inactive > .mcui-bubbling,
+.mcui-Inventory-Brewing_Stand-bubbles-inactive {
+	background-image: url('/assets/mcw/Grid_layout_Brewing_Bubbles_%28In-active%29.png');
+}
+
+.mcui-Brewing_Stand .mcui-arrow,
+.mcui-Inventory-Brewing_Stand-arrow {
+	background-image: url('/assets/mcw/Grid_layout_Brewing_Arrow.png');
+}
+.mcui-Brewing_Stand > .mcui-input.mcui-inactive > .mcui-arrow,
+.mcui-Inventory-Brewing_Stand-arrow-inactive {
+	background-image: url('/assets/mcw/Grid_layout_Brewing_Arrow_%28In-active%29.png');
+}
+
+.mcui-Brewing_Stand > .mcui-paths {
+	position: relative;
+	background: url('/assets/mcw/Grid_layout_Brewing_Paths.png') no-repeat;
+	width: 60px;
+	height: 40px;
+	margin: -20px auto -16px;
+	z-index: 1;
+}
+
+.mcui-Brewing_Stand .mcui-output .invslot,
+.mcui-Brewing_Stand .mcui-base .invslot {
+	background-image: url('/assets/mcw/Grid_layout_Brewing_Empty.png');
+}
+.mcui-Brewing_Stand .mcui-output2,
+.mcui-Brewing_Stand .mcui-base2 {
+	margin: 14px 10px 0;
+}
+
+.mcui-Brewing_Stand .mcui-arrowDown {
+	margin: -7px 0;
+}
+.mcui-Brewing_Stand .mcui-arrowDown > * {
+	background: url('/assets/mcw/Grid_layout_Arrow_%28small%29.png') no-repeat;
+	width: 32px;
+	height: 26px;
+	margin: 0 2px;
+	display: inline-block;
+	transform: rotate(90deg);
+	vertical-align: top;
+}
+.mcui-Brewing_Stand .mcui-arrowDown2 {
+	margin: 14px 12px 0;
+}
+
+/* [[Template:Anvil]]:
+   [[File:Anvil Hammer.png]], [[File:Anvil Plus.png]],
+   [[File:Anvil_GUI_bar.png]], [[File:Anvil_GUI_bar_(in-active).png]],
+   [[File:Grid layout Anvil crossed.png]], [[File:Grid layout Furnace Progress (in-active).png]] */
+.mcui-Anvil > .mcui-hammer,
+.mcui-Inventory-Anvil-hammer {
+	background-image: url('/assets/mcw/Anvil_Hammer.png');
+}
+
+.mcui-Smithing_Table > .mcui-plus,
+.mcui-Anvil > .mcui-plus,
+.mcui-Inventory-Anvil-plus  {
+	background-image: url('/assets/mcw/Anvil_Plus.png');
+}
+
+.mcui-Anvil > .mcui-input,
+.mcui-Inventory-Anvil-input {
+	background-image: url('/assets/mcw/Anvil_GUI_bar.png');
+}
+.mcui-Anvil > .mcui-input.mcui-inactive,
+.mcui-Inventory-Anvil-input-inactive {
+	background-image: url('/assets/mcw/Anvil_GUI_bar_%28in-active%29.png');
+}
+
+.mcui-Smithing_Table > .mcui-arrow,
+.mcui-Anvil > .mcui-arrow,
+.mcui-Inventory-Anvil-arrow {
+	background-image: url('/assets/mcw/Grid_layout_Furnace_Progress_%28in-active%29.png');
+	background-position-y: -2px;
+}
+.mcui-Smithing_Table > .mcui-arrow.mcui-inactive,
+.mcui-Anvil > .mcui-arrow.mcui-inactive,
+.mcui-Inventory-Anvil-arrow-inactive {
+	background-image: url('/assets/mcw/Grid_layout_Anvil_crossed.png');
+	background-position-y: unset;
+}
+
+/* [[Template:Smithing Table]], [[Template:Legacy Smithing Table]]:
+   [[File:Smithing Table Hammer_JE2.png]] [[File:Smithing Table Hammer_JE1_BE1.png]] */
+.mcui-Smithing_Table > .mcui-hammer,
+.mcui-Inventory-Smithing_Table-hammer {
+	background-image: url('/assets/mcw/Smithing_Table_Hammer_JE2.png');
+}
+.mcui-Smithing_Table > .mcui-hammer-legacy {
+	background-image: url('/assets/mcw/Smithing_Table_Hammer_JE1_BE1.png');
+}
+
+/* [[Template:Hotbar]]:
+   [[File:Hotbar.png]], [[File:Hotbar selector.png]] */
+.mcui-Hotbar {
+	display: inline-block;
+	position: relative;
+	border: 0;
+	padding: 0;
+	background-color: transparent;
+}
+.mcui-Hotbar > .mcui-selector {
+	position: absolute;
+	top: -2px;
+	margin-left: -2px;
+}
+.mcui-Hotbar > .mcui-slots {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 2px;
+}
+.mcui-Hotbar .invslot {
+	margin: 4px;
+}
+.mcui-Hotbar-image {
+	background: url('/assets/mcw/Hotbar.png') no-repeat;
+}
+.mcui-Hotbar-image-selected {
+	background: url('/assets/mcw/Hotbar_selector.png') no-repeat;
+}
+
+/* [[Template:Loom]] */
+.mcui-Loom > * {
+    display: inline-block;
+    vertical-align: top;
+}
+.mcui-Loom > .mcui-tapestry {
+    background: url('/assets/mcw/Grid_layout_Loom.png') no-repeat;
+    width: 98px;
+    height: 108px;
+}
+.mcui-Loom > .mcui-loomArrow {
+    background: url('/assets/mcw/Grid_layout_Loom_Arrow.png') no-repeat;
+    width: 54px;
+    height: 54px;
+    margin: 28px 4px 0 4px;
+}
+.mcui-Loom > .mcui-output {
+    margin-top: 38px;
+}
+.mcui-Loom .mcui-inputBanner {
+    margin: 22px 10px;
+    position: absolute;
+}
+.mcui-Loom .mcui-inputDye {
+    margin: 22px 50px;
+    position: absolute;
+}
+.mcui-Loom .mcui-inputPattern {
+    margin: 60px 30px;
+    position: absolute;
+}
+.mcui-Loom .mcui-bannerSprite {
+    margin-left: 4px;
+}
+
+
+/* [[Template:Grindstone]] */
+.mcui-Grindstone > * {
+    display: inline-block;
+    vertical-align: top;
+}
+.mcui-Grindstone > .mcui-grindstone {
+    background: url('/assets/mcw/Grid_layout_Grindstone.png') no-repeat;
+    width: 108px;
+    height: 112px;
+}
+.mcui-Grindstone .mcui-input1 {
+    margin: 6px 36px;
+    position: absolute;
+}
+.mcui-Grindstone .mcui-input2 {
+    margin: 48px 36px;
+    position: absolute;
+}
+.mcui-Grindstone > .mcui-arrow {
+    background: url('/assets/mcw/Grid_layout_Furnace_Progress_%28in-active%29.png') no-repeat;
+    width: 44px;
+    height: 34px;
+    margin: 36px 22px 0 22px;
+}
+.mcui-Grindstone > .mcui-output {
+    margin-top: 34px;
+}
+
+
+/* [[Template:Stonecutter]] */
+.mcui-Stonecutter > * {
+    display: inline-block;
+    vertical-align: top;
+}
+.mcui-Stonecutter > .mcui-stonecutterArrow {
+    background: url('/assets/mcw/Grid_layout_Stonecutter_Arrow.png') no-repeat;
+    width: 58px;
+    height: 60px;
+    margin: 9px 4px 0 4px;
+}
+.mcui-Stonecutter > .mcui-output {
+    margin: 28px 0 28px 0;
+}
+.mcui-Stonecutter > .mcui-input {
+    margin-top: 36px;
+}
+.mcui-Stonecutter .mcui-stonecutterSprite {
+    margin: 4px 0 0 5px;
+}
+
+/* [[Template:Cartography Table]]:
+   [[File:Anvil Plus.png]], [[File:Grid layout Furnace Progress (in-active).png]] */
+.mcui-Cartography_Table .mcui-plus {
+    display: block;
+    background: url('/assets/mcw/Anvil_Plus.png') no-repeat;
+    width: 36px;
+    height: 36px;
+    background-position-x: 5px;
+    background-position-y: 5px;
+}
+
+.mcui-Cartography_Table > .mcui-arrow {
+    background: url('/assets/mcw/Grid_layout_Furnace_Progress_%28in-active%29.png') no-repeat;
+    width: 44px;
+    height: 32px;
+    margin: 36px 18px 0 14px;
+}
+
+/* [[Template:Inventory]]: [[File:Steve inventory.png]]
+   [[File:Grid layout Recipe Book Button.png]], [[File:Grid layout Arrow (small).png]],
+   [[File:Grid layout Fire.png]], [[File:Grid layout Fire (inactive).png]],
+   [[File:Grid layout Furnace Progress.png]], [[File:Grid layout Furnace Progress (inactive).png]],
+   [[File:Grid layout Brewing Pipes.png]], [[File:Grid layout Brewing Paths Long.png]],
+   [[File:Grid layout Brewing Fuel.png]], [[File:Inventory background.png]] */
+.mcui-Inventory-Player-Steve {
+    background-image: url('/assets/mcw/Steve_inventory.png');
+}
+.mcui-Inventory-Recipe_Book-button {
+    background-image: url('/assets/mcw/Grid_layout_Recipe_Book_Button.png');
+}
+.mcui-Inventory-Table-arrow {
+    background-image: url('/assets/mcw/Grid_layout_Arrow_%28small%29.png');
+}
+.mcui-Inventory-Furnace-fire {
+    background-image: url('/assets/mcw/Grid_layout_Fire.png');
+}
+.mcui-Inventory-Furnace-fire-inactive {
+    background-image: url('/assets/mcw/Grid_layout_Fire_%28in-active%29.png');
+}
+.mcui-Inventory-Furnace-progress {
+    background-image: url('/assets/mcw/Grid_layout_Furnace_Progress.png');
+}
+.mcui-Inventory-Furnace-progress-inactive {
+    background-image: url('/assets/mcw/Grid_layout_Furnace_Progress_%28in-active%29.png');
+}
+.mcui-Inventory-Brewing_Stand-pipes {
+    background-image: url('/assets/mcw/Grid_layout_Brewing_Pipes.png');
+}
+.mcui-Inventory-Brewing_Stand-paths {
+    background-image: url('/assets/mcw/Grid_layout_Brewing_Paths_Long.png');
+}
+.mcui-Inventory-Brewing_Stand-fuel {
+    background-image: url('/assets/mcw/Grid_layout_Brewing_Fuel.png');
+}
+.mcui-Inventory-border {
+    -webkit-border-image: url('/assets/mcw/Inventory_background.png') 4 fill repeat;
+    -moz-border-image: url('/assets/mcw/Inventory_background.png') 4 fill repeat;
+    -o-border-image: url('/assets/mcw/Inventory_background.png') 4 fill repeat;
+    border-image: url('/assets/mcw/Inventory_background.png') 4 fill repeat;
+}
+
+
+/* [[Template:Toast]]: [[File:Achievement_background.png]] */
+.toast-border {
+    -webkit-border-image: url('/assets/mcw/Achievement_background.png') 8 fill repeat;
+    -moz-border-image: url('/assets/mcw/Achievement_background.png') 8 fill repeat;
+    -o-border-image: url('/assets/mcw/Achievement_background.png') 8 fill repeat;
+    border-image: url('/assets/mcw/Achievement_background.png') 8 fill repeat;
+}
+
+/* [[Template:Director table]] */
+.directorstable {
+    background: #FFF;
+    text-align: center;
+    border: 1px solid #CCC;
+    width: 350px;
+    font-size: 90%;
+    padding: 2px;
+}
+
+/* [[Template:Infobox]], [[Template:Infobox row]] */
+.notaninfobox {
+	position: relative;
+	clear: right;
+	margin: 0 0 1em 1em;
+	width: 300px;
+	font-size: 90%;
+	float: right;
+	padding: 2px;
+	overflow: auto;
+	background-color: var(--background-color-neutral-subtle, #f8f9fa);
+	--infobox-header-background-color: var(--infobox-title-background-color);
+	border: 1px solid var(--infobox-border-color, var(--infobox-title-background-color)) !important;
+}
+
+.mw-content-rtl .notaninfobox {
+	clear: left;
+	float: left;
+	margin: 0 1em 1em 0;
+}
+@media all and (max-width: 511px) {
+	.notaninfobox {
+		float: none;
+		margin-left: 0;
+		width: auto;
+	}
+	.mw-content-rtl .notaninfobox {
+		float: none;
+		margin-right: 0;
+	}
+}
+@media all and (max-width: 337px) {
+	.notaninfobox {
+		margin-left: -16px;
+		margin-right: -16px;
+		border-left: none;
+		border-right: none;
+	}
+}
+
+.notaninfobox .infobox-title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 140%;
+	color: var(--color-inverted-fixed);
+	text-shadow: 2px 2px 0 var(--infobox-title-bottom-border-color);
+	margin: 1px 2px 0;
+	background-color: var(--infobox-title-background-color);
+	border-inline: 3px solid var(--infobox-title-border-inline-color) !important;
+	border-top: 3px solid var(--infobox-title-top-border-color) !important;
+	border-bottom: 3px solid var(--infobox-title-bottom-border-color) !important;
+}
+
+/* Removes infobox title text shadow for code blocks (ie: command infoboxes) */
+.notaninfobox .infobox-title > code {
+	text-shadow: none;
+}
+/* Better aligns sprite image to top of infobox title text */
+.notaninfobox .infobox-title .sprite-file {
+	--vertical-align: middle;
+}
+
+/* Collapse infobox rows (essential for row boarders) */
+.notaninfobox .infobox-rows {
+	border-collapse: collapse !important
+}
+
+/* Extra row padding (improves readability) */
+.notaninfobox .infobox-rows td {
+	padding-block: 6px;
+}
+
+/* Row borders */
+.infobox-rows tr {
+	border-top: 1px solid var(--border-color-base, #a2a9b1);
+}
+
+/* Makes infobox title text smaller on mobile */
+body.skin-minerva .notaninfobox .infobox-title {
+	font-size: 120%;
+}
+
+/* Fixes the infobox tab nav being too bright on dark mode */
+body.wgl-theme-dark ul.tabbernav {
+	border-color: #444;
+}
+
+/* Minecraft Light */
+:root {
+	--infobox-title-background-color: #6ea21e;
+	--infobox-title-top-border-color: #a8c778;
+	--infobox-title-border-inline-color: #618f1a;
+	--infobox-title-bottom-border-color: #537a17;
+}
+
+/* MCD Light */
+body.rootpage-Minecraft_Dungeons,
+body.rootpage-Talk_Minecraft_Dungeons,
+body.ns-10000,
+body.ns-10001 {
+	--infobox-title-background-color: #c26533;
+	--infobox-title-top-border-color: #daa385;
+	--infobox-title-border-inline-color: #b86030;
+	--infobox-title-bottom-border-color: #a5562b;
+}
+
+/* MCD2 Light */
+body.rootpage-Minecraft_Dungeons_II,
+body.rootpage-Talk_Minecraft_Dungeons_II,
+body.ns-10014,
+body.ns-10015 {
+ 	--infobox-title-background-color: #3395c2;
+	--infobox-title-top-border-color: #85beda;
+	--infobox-title-border-inline-color: #3073b8;
+	--infobox-title-bottom-border-color: #2b5ca5;
+}
+
+/* MCL Light */
+body.rootpage-Minecraft_Legends,
+body.rootpage-Talk_Minecraft_Legends,
+body.ns-10006,
+body.ns-10007 {
+	--infobox-title-background-color: #00bcaa;
+	--infobox-title-top-border-color: #6ed9cf;
+	--infobox-title-border-inline-color: #00b3a2;
+	--infobox-title-bottom-border-color: #00a091;
+}
+
+/* MCE Light */
+body.rootpage-Minecraft_Earth,
+body.rootpage-Talk_Minecraft_Earth,
+body.ns-10002,
+body.ns-10003 {
+	--infobox-title-background-color: #2eb06d;
+    --infobox-title-top-border-color: #82d0a7;
+    --infobox-title-border-inline-color: #2ca768;
+    --infobox-title-bottom-border-color: #27965d;
+}
+
+/* MCSM Light */
+body.rootpage-Minecraft_Story_Mode,
+body.rootpage-Talk_Minecraft_Story_Mode,
+body.rootpage-Minecraft_Story_Mode_-_Season_Two,
+body.rootpage-Talk_Minecraft_Story_Mode_-_Season_Two,
+body.ns-10004,
+body.ns-10005 {
+	--infobox-title-background-color: #aa8a34;
+    --infobox-title-top-border-color: #c8b37b;
+    --infobox-title-border-inline-color: #a28331;
+    --infobox-title-bottom-border-color: #886e2a;
+}
+
+/* AMCM Light */
+body.rootpage-A_Minecraft_Movie,
+body.rootpage-Talk_A_Minecraft_Movie,
+body.rootpage-A_Minecraft_Movie_Squared,
+body.rootpage-Talk_A_Minecraft_Movie_Squared,
+body.ns-10012,
+body.ns-10013 {
+	--infobox-title-background-color: #8C664D;
+    --infobox-title-top-border-color: #9E7F6A;
+    --infobox-title-border-inline-color: #926F57;
+    --infobox-title-bottom-border-color: #66442D;
+}
+
+/* Minecraft Dark */
+body.wgl-theme-dark {
+	--infobox-title-background-color: #0e6a3b;
+	--infobox-title-top-border-color: #328058;
+	--infobox-title-border-inline-color: #075032;
+	--infobox-title-bottom-border-color: #084023;
+}
+
+/* MCD Dark */
+body.wgl-theme-dark.rootpage-Minecraft_Dungeons,
+body.wgl-theme-dark.rootpage-Talk_Minecraft_Dungeons,
+body.wgl-theme-dark.ns-10000,
+body.wgl-theme-dark.ns-10001 {
+    --infobox-title-background-color: #833f20;
+    --infobox-title-top-border-color: #a14e27;
+    --infobox-title-border-inline-color: #6e351b;
+    --infobox-title-bottom-border-color: #5b2b16;
+}
+
+/* MCD2 Dark */
+body.wgl-theme-dark.rootpage-Minecraft_Dungeons_II,
+body.wgl-theme-dark.rootpage-Talk_Minecraft_Dungeons_II,
+body.wgl-theme-dark.ns-10014,
+body.wgl-theme-dark.ns-10015 {
+ 	--infobox-title-background-color: #12496D;
+	--infobox-title-top-border-color: #165B89;
+	--infobox-title-border-inline-color: #0E3956;
+	--infobox-title-bottom-border-color: #13374E;
+}
+
+/* MCL Dark */
+body.wgl-theme-dark.rootpage-Minecraft_Legends,
+body.wgl-theme-dark.rootpage-Talk_Minecraft_Legends,
+body.wgl-theme-dark.ns-10006,
+body.wgl-theme-dark.ns-10007 {
+	--infobox-title-background-color: #236964;
+    --infobox-title-top-border-color: #44807b;
+    --infobox-title-border-inline-color: #1e5955;
+    --infobox-title-bottom-border-color: #194a46;
+}
+
+/* MCE Dark */
+body.wgl-theme-dark.rootpage-Minecraft_Earth,
+body.wgl-theme-dark.rootpage-Talk_Minecraft_Earth,
+body.wgl-theme-dark.ns-10002,
+body.wgl-theme-dark.ns-10003 {
+	--infobox-title-background-color: #0a783f;
+    --infobox-title-top-border-color: #0d8b4a;
+    --infobox-title-border-inline-color: #076635;
+    --infobox-title-bottom-border-color: #05542a;
+}
+
+/* MCSM Dark */
+body.wgl-theme-dark.rootpage-Minecraft_Story_Mode,
+body.wgl-theme-dark.rootpage-Talk_Minecraft_Story_Mode,
+body.wgl-theme-dark.rootpage-Minecraft_Story_Mode_-_Season_Two,
+body.wgl-theme-dark.rootpage-Talk_Minecraft_Story_Mode_-_Season_Two,
+body.wgl-theme-dark.ns-10004,
+body.wgl-theme-dark.ns-10005 {
+	--infobox-title-background-color: #977c43;
+    --infobox-title-top-border-color: #a7905f;
+    --infobox-title-border-inline-color: #856d3b;
+    --infobox-title-bottom-border-color: #6a572f;
+}
+
+/* AMCM Dark */
+body.wgl-theme-dark.rootpage-A_Minecraft_Movie,
+body.wgl-theme-dark.rootpage-Talk_A_Minecraft_Movie,
+body.rootpage-A_Minecraft_Movie_Squared,
+body.rootpage-Talk_A_Minecraft_Movie_Squared,
+body.wgl-theme-dark.ns-10012,
+body.wgl-theme-dark.ns-10013 {
+	--infobox-title-background-color: #6B4A35;
+    --infobox-title-top-border-color: #836856;
+    --infobox-title-border-inline-color: #735540;
+    --infobox-title-bottom-border-color: #492C18;
+}
+
+.notaninfobox > .infobox-title {
+	font-weight: bold;
+	text-align: center;
+	font-size: 120%;
+	border: none;
+}
+.notaninfobox .infobox-rows .infobox-header {
+	text-align: center;
+	font-size: 100%;
+}
+.notaninfobox th + td > dl > dd,
+.notaninfobox th + td > ul {
+	list-style: none;
+	margin-left: unset
+}
+.infobox-imagearea {
+	text-align: center;
+	padding: 4px;
+}
+.infobox-imagearea > div:not(:first-child) {
+	padding-top: 1em;
+}
+/* Limit image size to infobox width */
+.infobox-imagearea img {
+	max-width: 100%;
+	height: auto;
+}
+/* Horizontally centre animated images */
+.mw-body-content .infobox-imagearea .animated {
+	display: inline-flex;
+	align-items: center;
+}
+
+/* Infoboxes with gallery */
+.infobox-imagearea li.gallerybox div.thumb {
+	background: none;
+	border: none;
+	margin: 0;
+}
+.infobox-imagearea ul.gallery,
+.infobox-imagearea li.gallerybox,
+.infobox-imagearea li.gallerybox div.thumb > div {
+	margin: 0 !important;
+}
+.infobox-imagearea li.gallerybox div.gallerytext {
+    font-weight: bold;
+    font-size: 100%;
+    padding: 0;
+}
+
+/* Infoboxes with tabber */
+.infobox-imagearea .tabber .tabbertab,
+.infobox-imagearea ul.tabbernav li a,
+.infobox-imagearea ul.tabbernav li.tabberactive a {
+    background: none;
+	border: none;
+}
+
+.infobox-imagearea ul.tabbernav {
+	font: inherit;
+	font-size: 100%;
+}
+
+.infobox-imagearea ul.tabbernav li a:hover,
+.infobox-imagearea ul.tabbernav li.tabberactive a:hover {
+    color: #000;
+}
+:where(body.wgl-theme-dark) .infobox-imagearea ul.tabbernav li a:hover,
+:where(body.wgl-theme-dark) .infobox-imagearea ul.tabbernav li.tabberactive a:hover {
+    color: #fff;
+}
+
+.infobox-imagearea ul.tabbernav > li {
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+.infobox-imagearea ul.tabbernav > li > a {
+    color: #595959;
+	padding-bottom: 1px;
+	display: block;
+}
+:where(body.wgl-theme-dark) .infobox-imagearea ul.tabbernav > li > a {
+    color: #a9a9a9;
+}
+
+/* To prevent the tabs from jumping around when they become active or inactive
+ * due to the font-weight changing from normal to bold and vice versa, add an
+ * invisible ::before which contains the same text as the tab's text, but
+ * bolded. This way the element in which unbolded text sits is sized according
+ * to the bolded text, preventing it from resizing upon being selected.
+ */
+.infobox-imagearea ul.tabbernav > li > a::before {
+	display: block;
+	content: attr(alt);
+	font-weight: bold;
+	height: 0;
+	color: transparent;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.infobox-imagearea ul.tabbernav > li.tabberactive {
+	border: none;
+}
+
+.infobox-imagearea ul.tabbernav > li.tabberactive > a {
+	font-weight: bold;
+	border-bottom: 2px solid var(--infobox-header-background-color);
+	color: var(--content-text-color);
+}
+
+.infobox-imagecaption {
+	overflow: hidden;
+	font-weight: bold;
+	word-wrap: break-word;
+}
+
+.notaninfobox .infobox-rows {
+	display: table;
+	margin: 0 !important;
+	width: 100% !important;
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+.infobox-rows > tbody > tr > th {
+	text-align: left;
+	white-space: nowrap;
+}
+.mw-body-content .infobox-rows p {
+	margin: 0;
+}
+
+/* Merge adjacent dls in the infobox (since they're usually supposed to be one, but the wiki screws up sometimes) */
+.infobox-rows dl + dl {
+	margin-top: -0.4em;
+}
+
+.infobox-rows dl:last-child {
+	margin-bottom: 0.2em;
+}
+
+.infobox-footer {
+	text-align: center;
+}
+
+/* Drop shadow for images */
+body.wgl-theme-light .drop-shadow-light img,
+body.wgl-theme-light img.drop-shadow-light,
+.drop-shadow img,
+img.drop-shadow {
+    -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+    background: none;
+}
+body.wgl-theme-dark .drop-shadow-dark img,
+body.wgl-theme-dark img.drop-shadow-dark,
+body.wgl-theme-dark .drop-shadow img,
+body.wgl-theme-dark img.drop-shadow {
+    -webkit-filter: drop-shadow(0 0 5px rgba(195, 195, 195, 0.4));
+    filter: drop-shadow(0 0 5px rgba(195, 195, 195, 0.4));
+    background: none;
+}
+
+/* [[Template:Sprite]] */
+.sprite {
+	display: inline-block;
+	vertical-align: text-top;
+	height: 16px;
+	width: 16px;
+	background-repeat: no-repeat;
+}
+.sprite-file {
+	--vertical-align: text-top;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+.sprite-file img {
+	vertical-align: var(--vertical-align);
+}
+.sprite-file + a > .sprite-text,
+.sprite-file + .sprite-text,
+.sprite + .sprite-text {
+	padding-left: 0.312em;
+}
+.sprite-file:has(a:hover:not(.new)) + a:has(> .sprite-text),
+.sprite-file:has(a:focus:not(.new)) + a:has(> .sprite-text) {
+	text-decoration: underline;
+}
+.wgl-theme-light .sprite-file:has(a:active:not(.new)) + a:has(> .sprite-text) {
+    color: #faa700;
+}
+/* [[File:Grid Unknown.png]] */
+.sprite-file a.new:first-child {
+	vertical-align: var(--vertical-align);
+	background-image: url('/assets/mcw/Grid_Unknown.png');
+    background-size: 100% 100%;
+	display: inline-block;
+	text-indent: -9999px;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+    image-rendering: optimizeSpeed;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+/* [[Template:AprilFoolsSprite]]: [[File:AprilFoolsSprite.png]] */
+.af-sprite {
+	background-image: url('/assets/mcw/AprilFoolsSprite.png');
+}
+
+/* [[Template:BlockLegacySprite]]: [[File:BlockLegacyCSS.png]] */
+.blocklegacy-sprite {
+	background-image: url('/assets/mcw/BlockLegacyCSS.png');
+}
+
+/* [[Template:ClockPhase]]: [[File:ClockSprite.png]] */
+.clock-sprite {
+	background-image: url('/assets/mcw/ClockSprite.png');
+}
+
+/* [[Template:CommentSprite]]: [[File:CommentCSS.png]] */
+.comment-sprite {
+	background-image: url('/assets/mcw/CommentCSS.png');
+}
+
+/* [[Template:Nbt/sprite]]: [[File:Nbtsheet.png]] */
+.nbt-sprite {
+	background-image: url('/assets/mcw/Nbtsheet.png');
+}
+
+/* [[Template:Schematic]]: [[File:SchematicSprite.png]] */
+.schematic-sprite {
+	background-image: url('/assets/mcw/SchematicSprite.png');
+	background-size: calc(32 * var(--schematic-sprite-size, 32px)) auto;
+	width: var(--schematic-sprite-size, 32px);
+	height: var(--schematic-sprite-size, 32px);
+}
+
+/* [[Template:TintSprite]]: [[File:TintSprite.png]] */
+.tint-sprite {
+	background-image: url('/assets/mcw/TintSprite.png');
+}
+.tint-sprite-mask {
+	-webkit-mask-image: url('/assets/mcw/TintSprite.png');
+	mask-image: url('/assets/mcw/TintSprite.png');
+}
+
+/* [[Template:Experience]]:
+   [[File:Experience Orb Value -32768-2.png]],
+   [[File:Experience Orb Value 3-6.png]],
+   [[File:Experience Orb Value 7-16.png]],
+   [[File:Experience Orb Value 17-36.png]],
+   [[File:Experience Orb Value 37-72.png]],
+   [[File:Experience Orb Value 73-148.png]],
+   [[File:Experience Orb Value 149-306.png]],
+   [[File:Experience Orb Value 307-616.png]],
+   [[File:Experience Orb Value 617-1236.png]],
+   [[File:Experience Orb Value 1237-2476.png]],
+   [[File:Experience Orb Value 2477-32767.png]] */
+.xp-2 {
+	background-image: url('/assets/mcw/Experience_Orb_Value_-32768-2.png');
+}
+.xp-6 {
+	background-image: url('/assets/mcw/Experience_Orb_Value_3-6.png');
+}
+.xp-16 {
+	background-image: url('/assets/mcw/Experience_Orb_Value_7-16.png');
+}
+.xp-36 {
+	background-image: url('/assets/mcw/Experience_Orb_Value_17-36.png');
+}
+.xp-72 {
+	background-image: url('/assets/mcw/Experience_Orb_Value_37-72.png');
+}
+.xp-148 {
+	background-image: url('/assets/mcw/Experience_Orb_Value_73-148.png');
+}
+.xp-306 {
+	background-image: url('/assets/mcw/Experience_Orb_Value_149-306.png');
+}
+.xp-616 {
+	background-image: url('/assets/mcw/Experience_Orb_Value_307-616.png');
+}
+.xp-1236 {
+	background-image: url('/assets/mcw/Experience_Orb_Value_617-1236.png');
+}
+.xp-2476 {
+	background-image: url('/assets/mcw/Experience_Orb_Value_1237-2476.png');
+}
+.xp-32767 {
+	background-image: url('/assets/mcw/Experience_Orb_Value_2477-32767.png');
+}
+
+
+/* [[Template:Schematic]] */
+.thumb .schematic {
+	margin: auto;
+}
+table.schematic {
+	border-collapse: collapse;
+	--schematic-sprite-size: 32px;
+	font-size: var(--schematic-sprite-size, 32px);
+}
+span.schematic {
+	display: inline-block;
+	--schematic-sprite-size: 32px;
+	font-size: var(--schematic-sprite-size, 32px);
+}
+
+table.schematic td {
+	vertical-align: top;
+}
+table.schematic td,
+span.schematic {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	padding: 0;
+	width: var(--schematic-sprite-size, 32px);
+	height: var(--schematic-sprite-size, 32px);
+	overflow: hidden;
+}
+table.schematic td > div,
+span.schematic {
+	position: relative;
+}
+table.schematic td > div .sprite,
+table.schematic td > div .text,
+span.schematic .sprite,
+span.schematic .text {
+	position: absolute;
+	left: 0;
+}
+
+.schematic .text {
+	line-height: 1.5em;
+	font-size: 75%;
+	width: 100%;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 0 2px #FFF;
+}
+
+/* [[Template:Layered blueprint]] */
+.layered-blueprint {
+	position: relative;
+}
+
+.layered-blueprint-radio {
+	display: none;
+}
+
+.layered-blueprint-tab {
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 100%;
+	border-left: 4px solid var(--content-text-color);
+	padding: 0.2em 0.5em;
+	white-space: nowrap;
+	transition: color 200ms, border-color 200ms;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+.layered-blueprint-tab:hover {
+	color: #80b640;
+}
+.layered-blueprint-radio:checked + .layered-blueprint-tab {
+	color: #80b640;
+	border-left-color: #80b640;
+}
+
+.layered-blueprint-layer {
+	position: absolute;
+	top: 0;
+	background-color: rgba(230, 239, 244, 0.6);
+	width: 100%;
+	height: 100%;
+}
+.wgl-theme-dark .layered-blueprint-layer {
+	background-color: rgba(34, 34, 34, 0.6);
+}
+
+.layered-blueprint-radio:checked + .layered-blueprint-tab + .layered-blueprint-layer ~ .layered-blueprint-layer {
+	visibility: hidden;
+}
+
+/* [[Template:Sound]] */
+.sound-audio {
+	display: block;
+}
+
+/** Misc stuff **/
+/* The blue header used throughout the wiki */
+.mcwiki-header {
+	background-color: var(--infobox-header-background-color);
+	border: 1px solid #CCC;
+	padding: 5px;
+    border-right: 4px groove #999;
+    border-bottom: 4px groove #999;
+}
+
+/* [[File:GrassBackground.png]] [[File:Dark-GrassBackground.png]] */
+.mcwiki-header-grass {
+    margin: 3px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    background-color: #6c4d34;
+    border: none;
+    border-top: 6px solid #81bb5b;
+    background-image: url('/assets/mcw/GrassBackground.png');
+}
+
+.mcwiki-header-grass .mw-heading {
+	margin: 0;
+	color: white;
+	border: none;
+	font-family: "Liberation Sans", Arial, Helvetica, FreeSans, sans-serif;
+	font-size: inherit;
+	font-weight: bold;
+}
+
+body.wgl-theme-dark .mcwiki-header-grass {
+    background-image: url('/assets/mcw/Dark-GrassBackground.png');
+    border-color: #0f6240 !important;
+}
+
+/* Fix treeview overlapping floating content */
+div.thumb {
+	position: relative;
+	z-index: 1;
+}
+
+/* Horizontal list */
+.mw-body-content .hlist ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+.mw-body-content .hlist li {
+	display: inline;
+}
+.mw-body-content .hlist li:not(:last-child) {
+	padding-right: 0.286em;
+}
+.mw-body-content .hlist li:not(:last-child)::after {
+	content: "";
+	display: inline-block;
+	position: relative;
+	left: 0.286em;
+	bottom: 0.214em;
+	background-color: #000;
+	height: 3px;
+	width: 3px;
+}
+.mw-body-content .hlist li li:first-child::before {
+	content: "(";
+	font-weight: normal;
+}
+.mw-body-content .hlist li li:last-child::after {
+	content: ")";
+	font-weight: normal;
+}
+.mw-body-content .hlist li li li {
+	font-size: x-small;
+}
+
+/* Element animator */
+.mw-body-content .animated > *:not(.animated-active),
+.mw-body-content .animated > .animated-subframe > *:not(.animated-active) {
+	display: none
+}
+.mw-body-content span.animated,
+.mw-body-content span.animated.animated-visible > *,
+.mw-body-content span.animated.animated-visible > .animated-subframe > * {
+	display: inline-block;
+}
+.mw-body-content div.animated.animated-visible > *,
+.mw-body-content div.animated.animated-visible > .animated-subframe > * {
+	display: block;
+}
+
+/* Generic nowrap class */
+.nowrap {
+	white-space: nowrap;
+}
+
+/* Hide noscript only elements */
+.client-js .noscript {
+	display: none;
+}
+
+/* Remove bullets/numbers from a list */
+.mw-body-content .list-style-none ul, .list-style-none ol {
+	list-style: none;
+	margin-left: 0;
+}
+
+/* Allow setting the text alignment of particular table columns */
+.col-1-left td:nth-child(1),
+.col-2-left td:nth-child(2),
+.col-3-left td:nth-child(3),
+.col-4-left td:nth-child(4),
+.col-5-left td:nth-child(5),
+.col-6-left td:nth-child(6),
+.col-7-left td:nth-child(7),
+.col-8-left td:nth-child(8),
+.col-9-left td:nth-child(9) {
+	text-align: left;
+}
+.col-1-center td:nth-child(1),
+.col-2-center td:nth-child(2),
+.col-3-center td:nth-child(3),
+.col-4-center td:nth-child(4),
+.col-5-center td:nth-child(5),
+.col-6-center td:nth-child(6),
+.col-7-center td:nth-child(7),
+.col-8-center td:nth-child(8),
+.col-9-center td:nth-child(9) {
+	text-align: center;
+}
+.col-1-right td:nth-child(1),
+.col-2-right td:nth-child(2),
+.col-3-right td:nth-child(3),
+.col-4-right td:nth-child(4),
+.col-5-right td:nth-child(5),
+.col-6-right td:nth-child(6),
+.col-7-right td:nth-child(7),
+.col-8-right td:nth-child(8),
+.col-9-right td:nth-child(9) {
+	text-align: right;
+}
+
+/* Centre lists in custom CE TOC */
+.toc.console-toc ul {
+	text-align: center;
+}
+
+/* Bold text in a table header cell shouldn't get extra bold */
+b,
+strong {
+	font-weight: bold;
+}
+
+/* Make the first heading row of a table stick to the top of the screen */
+/* Won't work properly with rowspan headers, or colspan rows in the table */
+.stikitable > * > tr:first-child > th {
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+	/* This fixes the borders for some reason */
+    background-clip: padding-box;
+}
+/* Add back the bottom border when stuck */
+.stikitable > * > tr:first-child > th::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+	left: 0;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-color: inherit;
+}
+
+/* Collapsible elements ([[MediaWiki:Gadget-site.js]]) */
+.client-js:not(.ve-active) .collapsible.collapsed > tr:not(:first-child),
+.client-js:not(.ve-active) .collapsible.collapsed > tbody > tr:not(:first-child),
+.client-js:not(.ve-active) .collapsible.collapsed > thead + tbody > tr:first-child,
+.client-js:not(.ve-active) .collapsible.collapsed > tbody + tbody > tr:first-child,
+.client-js:not(.ve-active) .collapsible.collapsed > tfoot > tr,
+.client-js:not(.ve-active) .collapsible.collapsed > .collapsible-content,
+.client-js:not(.ve-active) .collapsible.collapsible-rows ~ .collapsible-row.collapsed {
+	display: none;
+}
+
+.collapsetoggle {
+	display: inline-block;
+	font-weight: normal;
+	font-style: normal;
+	text-shadow: none;
+	float: right;
+	text-align: right;
+	margin-left: 0.8em;
+}
+.collapsetoggle-left > tr > * > .collapsetoggle,
+.collapsetoggle-left > * > tr > * > .collapsetoggle,
+.collapsetoggle-left > * > .collapsetoggle,
+.collapsetoggle-left > .collapsetoggle {
+	float: left;
+	text-align: left;
+	margin-right: 0.8em;
+	margin-left: 0;
+}
+.collapse-button-none > * > tr > * > .collapsetoggle,
+.collapsetoggle-inline > tr > * > .collapsetoggle,
+.collapsetoggle-inline > * > tr > * > .collapsetoggle,
+.collapsetoggle-inline > * > .collapsetoggle,
+.collapsetoggle-inline > .collapsetoggle {
+	float: none;
+	text-align:left;
+}
+
+.collapsetoggle-custom {
+	visibility: hidden;
+}
+
+/* Show abusefilter error footer only once at the end */
+.errorbox li:not(:last-child) .abusefilter-message-footer {
+    display: none;
+}
+
+/* Bulletless lists, for list semantics without the visuals */
+.bulletless ul {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0;
+}
+
+/* Various styling for message boxes */
+.msgbox {
+    display: flex;
+    background: #FCFCFC;
+    box-sizing: border-box;
+    align-items: center;
+    width: auto;
+    padding: .4em .8em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+.msgbox:not(.msgbox-subtle) + .msgbox:not(.msgbox-subtle),
+.msgbox-subtle + .msgbox-subtle {
+    border-top: none;
+    margin-top: -1em;
+}
+.msgbox-subtle:has(+ .msgbox-subtle),
+.msgbox-subtle + .msgbox-subtle {
+	width: 100%;
+}
+.msgbox .msgbox-iconimage,
+.msgbox .msgbox-image {
+    margin: 0 1.5em 0 .5em;
+}
+.msgbox-subtle {
+    float: right;
+    clear: right;
+    margin-left: 1em;
+    flex-direction: column;
+    font-size: 95%;
+}
+@media all and (max-width: 511px) {
+	.msgbox-subtle {
+		float: none;
+    	margin-left: auto;
+    }
+    .msgbox + .msgbox {
+        border-top: none;
+        margin-top: -1em;
+    }
+}
+.msgbox-mini {
+    padding: .4em .5em;
+    margin: 0 0;
+    margin-bottom: 1em;
+}
+.msgbox-mini .msgbox-icon {
+    align-self: flex-start;
+}
+.msgbox-mini .msgbox-iconimage,
+.msgbox-mini .msgbox-image {
+    margin: 0 .4em 0 .5em;
+}
+.msgbox-mini .msgbox-text {
+    font-size: small;
+}
+.msgbox-red {
+    background: hsl(0, 75%, 92%);
+    border-left: 4px solid hsl(0, 75%, 85%);
+}
+body.wgl-theme-dark .msgbox-red {
+	background-color: hsl(0, 25%, 8%);
+	border-left-color: hsl(0, 15%, 36%);
+}
+.msgbox-orange {
+    background: hsl(40, 75%, 92%);
+    border-left: 4px solid hsl(40, 75%, 85%);
+}
+body.wgl-theme-dark .msgbox-orange {
+	background-color: hsl(40, 25%, 8%);
+	border-left-color: hsl(40, 15%, 36%);
+}
+.msgbox-yellow {
+    background: hsl(60, 75%, 92%);
+    border-left: 4px solid hsl(60, 75%, 85%);
+}
+body.wgl-theme-dark .msgbox-yellow {
+	background-color: hsl(60, 25%, 8%);
+	border-left-color: hsl(60, 15%, 36%);
+}
+.msgbox-green {
+    background: hsl(120, 75%, 92%);
+    border-left: 4px solid hsl(120, 75%, 85%);
+}
+body.wgl-theme-dark .msgbox-green {
+	background-color: hsl(120, 25%, 8%);
+	border-left-color: hsl(120, 15%, 36%);
+}
+.msgbox-blue {
+    background: hsl(215, 75%, 92%);
+    border-left: 4px solid hsl(215, 75%, 85%);
+}
+body.wgl-theme-dark .msgbox-blue {
+	background-color: hsl(215, 25%, 8%);
+	border-left-color: hsl(215, 15%, 36%);
+}
+.msgbox-magenta {
+    background: hsl(310, 75%, 92%);
+    border-left: 4px solid hsl(310, 75%, 85%);
+}
+body.wgl-theme-dark .msgbox-magenta {
+	background-color: hsl(310, 25%, 8%);
+	border-left-color: hsl(310, 15%, 36%);
+}
+.msgbox-purple {
+    background: hsl(260, 75%, 92%);
+    border-left: 4px solid hsl(260, 75%, 85%);
+}
+body.wgl-theme-dark .msgbox-purple {
+	background-color: hsl(260, 25%, 8%);
+	border-left-color: hsl(260, 15%, 36%);
+}
+.msgbox-gray {
+	background: hsl(0, 0%, 92%);
+	border-left: 4px solid hsl(0, 0%, 85%);
+}
+body.wgl-theme-dark .msgbox-gray {
+	background-color: hsl(0, 0%, 8%);
+	border-left-color: hsl(0, 0%, 36%);
+}
+
+/* Key stylings */
+kbd,
+.kbd-color {
+    text-align: center;
+    font-size: 80%;
+    font-family: inherit;
+    font-weight: 500;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 0.1em 0.4em;
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+body.wgl-theme-light kbd,
+body.wgl-theme-light .kbd-color {
+    text-shadow: 0 1px 0 #fff;
+    color: #222;
+    background-color: #f8f9fa;
+    border-color: #c8ccd1;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+}
+body.wgl-theme-dark kbd,
+body.wgl-theme-dark .kbd-color {
+    text-shadow: 0 1px 0 #444;
+    color: #eee;
+    background-color: #383838;
+    border-color: #1E1E1E;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #444 inset;
+}
+
+/* [[Module:Renewable resource row]] */
+.mw-parser-output .renewableresourcetable td {
+	text-align: center;
+}
+.mw-parser-output .renewableresourcetable td:last-of-type {
+	text-align: left;
+}
+
+/* Table choice. Written by ItsPlantseed with some adjustments for contrast
+ * issues
+ */
+.tc-yes {
+	background: #c6efce !important;
+}
+body.wgl-theme-dark .tc-yes {
+	background: #3b533c !important;
+}
+.tc-always {
+	background: #5dcc5d !important;
+}
+body.wgl-theme-dark .tc-always {
+	background: #29542c !important;
+}
+.tc-no {
+	background: #ffc7ce !important;
+}
+body.wgl-theme-dark .tc-no {
+	background: #533b3b !important;
+}
+.tc-never {
+	background: #ff8787 !important;
+}
+body.wgl-theme-dark .tc-never {
+	background: #592c2c !important;
+}
+.tc-rarely {
+	background: #fdce5e !important;
+}
+body.wgl-theme-dark .tc-rarely {
+	background: #594f1e !important;
+}
+.tc-neutral {
+	background: #ffeb9c !important;
+}
+body.wgl-theme-dark .tc-neutral {
+	background: #5b573f !important;
+}
+.tc-partial {
+	background: #ffffdd !important;
+}
+body.wgl-theme-dark .tc-partial {
+	background: #3e3d31 !important;
+}
+.tc-planned {
+	background: #dfdfff !important;
+}
+body.wgl-theme-dark .tc-planned {
+	background: #242f2e !important;
+}
+.tc-unknown {
+	background: #ccc !important;
+}
+body.wgl-theme-dark .tc-unknown {
+	background: #364148 !important;
+}
+.tc-in {
+	color: #fff;
+	background: #040 !important;
+}
+body.wgl-theme-dark .tc-in {
+	background: #06450a !important;
+}
+.tc-inem {
+	color: #fff;
+	background: #080 !important;
+}
+body.wgl-theme-dark .tc-inem {
+	background: #266c29 !important;
+}
+.tc-out {
+	color: #fff;
+	background: #700 !important;
+}
+body.wgl-theme-dark .tc-out {
+	background: #4a0a0a !important;
+}
+.tc-outem {
+	color: #fff;
+	background: #c00 !important;
+}
+body.wgl-theme-dark .tc-outem {
+	background: #742a2a !important;
+}
+.tc-default {
+	color: inherit;
+	background: #fff !important;
+}
+body.wgl-theme-dark .tc-default {
+	color: inherit;
+	background: #373737 !important;
+}
+.tc-hyphen {
+	background: #ffc7ce !important;
+}
+body.wgl-theme-dark .tc-hyphen {
+	background: #352929 !important;
+}
+
+/* Even *more* background colors, such as for table cells.
+ * Written by TheSuperPlayer.
+ */
+.wgl-theme-light .page-content .general-background-gray {
+	background-color: #bdbdbd;
+}
+.wgl-theme-dark .page-content .general-background-gray {
+	background-color: #212121;
+}
+.wgl-theme-light .page-content .general-background-lime {
+	background-color: #c1f792;
+}
+.wgl-theme-dark .page-content .general-background-lime {
+	background-color: #405230;
+}
+.wgl-theme-light .page-content .general-background-yellow {
+	background-color: #fffca6;
+}
+.wgl-theme-dark .page-content .general-background-yellow {
+	background-color: #4d4c30;
+}
+.wgl-theme-light .page-content .general-background-cyan {
+	background-color: #97fcf9;
+}
+.wgl-theme-dark .page-content .general-background-cyan {
+	background-color: #426665;
+}
+.wgl-theme-light .page-content .general-background-magenta {
+	background-color: #ffbfff;
+}
+.wgl-theme-dark .page-content .general-background-magenta {
+	background-color: #4c374d;
+}
+
+/* Dark mode support for Template:Nbt_inherit */
+body.wgl-theme-dark .nbttree-inherited {
+	background: #323248;
+}
+
+/* Invert black images in dark mode */
+body.wgl-theme-dark .math-image,
+body.wgl-theme-dark img[data-image-name="Android.svg"],
+body.wgl-theme-dark img[data-image-name="Apple logo.svg"],
+body.wgl-theme-dark img[data-image-name="MacOS.svg"],
+body.wgl-theme-dark img[data-image-name="MacOS logo.svg"],
+body.wgl-theme-dark img[data-image-name="IOS.svg"],
+body.wgl-theme-dark img[data-image-name="IOS logo.svg"],
+body.wgl-theme-dark img[data-image-name="IPadOS.svg"],
+body.wgl-theme-dark img[data-image-name="IPadOS logo.svg"],
+body.wgl-theme-dark img[data-image-name="AppleTVLogo.svg"],
+body.wgl-theme-dark img[data-image-name="GearVR.svg"],
+body.wgl-theme-dark img[data-image-name="Playstation logo.svg"],
+body.wgl-theme-dark img[data-image-name="PS5.svg"],
+body.wgl-theme-dark img[data-image-name="PS4.svg"],
+body.wgl-theme-dark img[data-image-name="PS3.svg"],
+body.wgl-theme-dark img[data-image-name="PSVita.svg"],
+body.wgl-theme-dark img[data-image-name="Xbox Series.svg"],
+body.wgl-theme-dark img[data-image-name="New Nintendo 3DS.svg"],
+body.wgl-theme-dark img[data-image-name="OtherOceanLogo.png"],
+body.wgl-theme-dark .portable-infobox .pi-image img[data-image-name="OtherOceanLogo.png"],
+body.wgl-theme-dark img[data-image-name="Xbox Game Studios.svg"],
+body.wgl-theme-dark .portable-infobox .pi-image img[data-image-name="Xbox Game Studios.svg"],
+body.wgl-theme-dark img[data-image-name="Skyboxlabs.png"],
+body.wgl-theme-dark .portable-infobox .pi-image img[data-image-name="Skyboxlabs.png"] {
+	filter: hue-rotate(180deg) invert(100%) saturate(.6) brightness(2);
+}
+
+/* Turn a list into a tree view style (See [[.minecraft]]) */
+.treeview {
+	margin-top: 0.3em;
+	display: flow-root;
+}
+
+.treeview .treeview-header {
+	padding-left: 3px;
+	font-weight: bold;
+}
+.treeview .treeview-header:last-child {
+	border-color: #636363 !important;
+	border-left-style: dotted;
+}
+.treeview .treeview-header:not(:last-child)::before {
+	content: none;
+}
+.treeview .treeview-header:last-child::before {
+	border-bottom: 0;
+}
+
+.treeview ul,
+.treeview li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.treeview li li {
+	position: relative;
+	padding-left: 13px;
+	margin-left: 7px;
+	border-left: 1px solid #636363;
+}
+.treeview li li::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -1px;
+	width: 11px;
+	height: 11px;
+	border-bottom: 1px solid #636363;
+}
+
+.treeview li li:last-child:not(.treeview-continue) {
+	border-color: transparent;
+}
+.treeview li li:last-child:not(.treeview-continue)::before {
+	border-left: 1px solid #636363;
+	width: 10px;
+}
+
+.treeview dl,
+.treeview dt {
+	margin-bottom: 0;
+}
+
+.nbttree-inherited {
+	background-color: #E6E6FA;
+}
+
+/* [[Minecraft Wiki (website)#Timeline]] */
+body.wgl-theme-dark .timeline-wrapper > img {
+	filter: hue-rotate(180deg) invert(100%) saturate(.6) brightness(2);
+}
+
+/* [[Template:DungeonsScroll]] */
+div.DungeonsScroll {
+	position: relative;
+	width: 500px;
+	height: 364px;
+}
+
+div.DungeonsScroll > * {
+	position: absolute;
+}
+
+div.DungeonsScroll > img.DungeonsIconBack {
+	top: 64px;
+	right: 35px;
+}
+
+div.DungeonsScroll > img.DungeonsIcon {
+	top: 77px;
+	right: 48px;
+	z-index: 1;
+}
+
+div.DungeonsScroll > .DungeonsLevel1 {
+	bottom: 124px;
+	left: 44px;
+}
+
+div.DungeonsScroll > .DungeonsLevel2 {
+	bottom: 93px;
+	left: 44px;
+}
+
+div.DungeonsScroll > .DungeonsLevel3 {
+	bottom: 61px;
+	left: 44px;
+}
+
+div.DungeonsScroll > img.VisualplateLevel1 {
+	top: 90px;
+	right: 63px;
+	z-index: 2;
+}
+
+div.DungeonsScroll > img.VisualplateLevel2 {
+	top: 83px;
+	right: 60px;
+	z-index: 2;
+}
+
+div.DungeonsScroll > img.VisualplateLevel3 {
+	top: 80px;
+	right: 56px;
+	z-index: 2;
+}
+
+div.DungeonsScroll > img.DungeonsPowerfulIcon {
+	top: 54px;
+	left: 41px;
+}
+
+div.DungeonsScroll > .Dungeons_black {
+	color: #2a2d31;
+}
+
+div.DungeonsScroll > .Dungeons_gray {
+	color: #ac9882;
+}
+
+div.DungeonsScroll > .Dungeons_gray > img,
+div.DungeonsScroll > .Dungeons_black > img {
+	margin-right: 7px;
+}
+
+.DungeonsCheckmarkCurrent {
+	filter: brightness(0.2)
+}
+
+.DungeonsCheckmarkActive {
+	filter: brightness(0.2) opacity(0.3)
+}
+
+.DungeonsButton {
+	color: #fff;
+	width: 140px;
+	height: 40px;
+	background-color: #3f8e4f;
+	right: 50px;
+	bottom: 70px;
+	border: 6px solid transparent;
+	/* border-image: url(https://static.wikia.nocookie.net/magiczocker/images/5/58/Button_border_%28Dungeons%29.png/revision/latest?cb=20221120181344&format=original&path-prefix=de); */
+	border-image-slice: 7;
+	border-image-outset: 3px;
+	border-image-repeat: stretch;
+	line-height: 27px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.DungeonsButton:before {
+	content: '';
+	height: 120%;
+	position: absolute;
+	top: -10%;
+	left: 60%;
+	border: 1px solid;
+	border-color: transparent #48a15b transparent #3b864c;
+}
+
+.ButtonCost {
+	position: absolute;
+	right: 6px;
+	top: 0;
+}
+
+.DungeonsField {
+	width: 140px;
+	height: 40px;
+	right: 50px;
+	bottom: 70px;
+	border: 10px solid transparent;
+	/* border-image: url(https://static.wikia.nocookie.net/magiczocker/images/d/d9/Border_Field_%28Dungeons%29.png/revision/latest?cb=20221120195946&format=original&path-prefix=de); */
+	border-image-slice: 12;
+	border-image-outset: 3px;
+	border-image-repeat: stretch;
+	line-height: 23px;
+	font-size: 9px;
+	text-align: center;
+	font-weight: bold;
+	color: #A0866B;
+}
+
+/* [[Template:Userbox]]
+  Use this for styling:
+  --userbox-border--light
+  --userbox-border--dark
+  --userbox-icon-background--light
+  --userbox-icon-background--dark
+  --userbox-text-background--light
+  --userbox-text-background--dark
+  --userbox-text-color--light
+  --userbox-text-color--dark
+  --userbox-text-align
+*/
+table.mcw-userbox {
+	background-color: var(--userbox-text-background--light, #fff);
+	border: 1px solid var(--userbox-border--light, #bbc2c6);
+	border-spacing: 0;
+	float: left;
+	margin: 1px;
+	width: 238px;
+}
+
+table.mcw-userbox td:nth-child(1) {
+	background-color: var(--userbox-icon-background--light, #fff);
+	font-size: 18pt;
+	height: 45px;
+	line-height: 1.25em;
+	padding: 1px;
+	text-align: center;
+	vertical-align: middle;
+	width: 45px;
+}
+
+table.mcw-userbox td:nth-child(2) {
+	color: var(--userbox-text-color--light, #3a3a3a);
+	font-size: 8pt;
+	line-height: 1.25em;
+	padding: 4px;
+	text-align: var(--userbox-text-align, left);
+	vertical-align: middle;
+}
+
+.infobox-extratext {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* [[Template:Quote]] */
+blockquote.mcwiki-quote {
+    padding: 0;
+    border: none;
+}
+
+/* [[Module:Iconbar]] */
+.iconbar > :not(:first-child) {
+	margin-left: var(--icon-offset);
+}
+
+#mw-imagepage-section-globalusage li[class|="mw-gu-onwiki"]:is([class*="mirror"], [class*="staging"]) {
+	display: none;
+}

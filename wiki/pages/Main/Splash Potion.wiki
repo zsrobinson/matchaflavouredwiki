@@ -21,17 +21,17 @@ A novice-level Chemist sells each of the following in stacks of 16 for one [[Obo
 |-
 | <span id="Slowness"></span>{{ItemLink|Splash Potion of Slowness}} || {{EffectLink|Slowness}} I || 5:00 || Slowness (5:00)
 |-
-| <span id="Weaving"></span>{{ItemLink|Splash Potion of Weaving}} || {{EffectLink|Weaving}} || 5:00 || Weaving (5:00)
+| <span id="Weaving"></span>{{ItemLink|Splash Potion of Weaving}} || {{MCW|Weaving}} || 5:00 || Weaving (5:00)
 |-
-| <span id="Oozing"></span>{{ItemLink|Splash Potion of Oozing}} || {{EffectLink|Oozing}} || 5:00 || Oozing (5:00)
+| <span id="Oozing"></span>{{ItemLink|Splash Potion of Oozing}} || {{MCW|Oozing}} || 5:00 || Oozing (5:00)
 |-
-| <span id="Infestation"></span>{{ItemLink|Splash Potion of Infestation}} || {{EffectLink|Infested}} || 5:00 || Infested (5:00)
+| <span id="Infestation"></span>{{ItemLink|Splash Potion of Infestation}} || {{MCW|Infested}} || 5:00 || Infested (5:00)
 |-
-| <span id="Wind Charging"></span>{{ItemLink|Splash Potion of Wind Charging}} || {{EffectLink|Wind Charged}} || 5:00 || Wind-charged (5:00)
+| <span id="Wind Charging"></span>{{ItemLink|Splash Potion of Wind Charging}} || {{MCW|Wind Charged}} || 5:00 || Wind-charged (5:00)
 |-
-| <span id="Wither"></span>"Wither" || {{EffectLink|Wither}} I || 2:00 || Wither (2:00)
+| <span id="Wither"></span>"Wither" || {{EffectLink|Wither|link=Wither effect}} I || 2:00 || Wither (2:00)
 |-
-| <span id="Darkness"></span>"Darkness" || {{EffectLink|Darkness}} and {{EffectLink|Blindness}} || 1:00 and 0:30 || Darkness (5:00), Blindness (5:00)
+| <span id="Darkness"></span>"Darkness" || {{EffectLink|Darkness}} and {{MCW|Blindness}} || 1:00 and 0:30 || Darkness (5:00), Blindness (5:00)
 |}
 
 The durations are the full values; as with any splash potion, mobs farther from the point of impact receive a shorter effect. Each potion hides its vanilla effect list and shows the pack's own tooltip line instead. The Wither and Darkness potions are named after their effect rather than "Splash Potion of ...".<ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_pitch.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_wither.json}}</ref>

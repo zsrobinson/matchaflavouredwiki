@@ -4,7 +4,7 @@
 |invimage=Oven
 |type=Mechanic
 }}
-'''Cooking''' turns raw [[ingredient]]s into [[food]] that heals and grants [[effect]]s. Matcha Flavoured renames the vanilla cooking blocks and gives each one its own role: the [[oven]] (furnace) and [[kindling]] (campfire) cook food, while the [[mud kiln]] (smoker) fires clay, glass and stone and only chars food. Most complex dishes are then crafted at a [[crafting table]] from the cooked ingredients.
+'''Cooking''' turns raw [[ingredient]]s into [[food]] that heals and grants [[effect]]s. Matcha Flavoured renames the vanilla cooking blocks and gives each one its own role: the [[oven]] (furnace) and [[kindling]] (campfire) cook food, while the [[Mud Kiln|mud kiln]] (smoker) fires clay, glass and stone and only chars food. Most complex dishes are then crafted at a [[Crafting Table|crafting table]] from the cooked ingredients.
 
 == Stations ==
 {| class="wikitable"
@@ -14,7 +14,7 @@
 |-
 | {{BlockLink|Soul Kindling}} || {{MCW|Soul Campfire}} || Campfire cooking || The same as kindling.
 |-
-| {{BlockLink|Oven}} || {{MCW|Furnace}} || Smelting || Everything kindling cooks, plus [[popped chorus fruit]], [[dried kelp]], [[molasses]] and [[pumpkin curry]]. Needs fuel.
+| {{BlockLink|Oven}} || {{MCW|Furnace}} || Smelting || Everything kindling cooks, plus [[Popped Chorus Fruit|popped chorus fruit]], [[Dried Kelp|dried kelp]], [[molasses]] and [[Pumpkin Curry|pumpkin curry]]. Needs fuel.
 |-
 | {{BlockLink|Mud Kiln}} || {{MCW|Smoker}} || Smoking || Only [[naan]] and the charred foods. It is mainly a kiln for bricks, glass, terracotta and stone.
 |}
@@ -24,21 +24,21 @@ All food recipes take 5 seconds (100 ticks) and give 0.35 experience, on every s
 The pack removes every vanilla cooking recipe for food (meat, fish, potatoes, kelp) and replaces it with its own, so vanilla cooked food can't be made.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
 === Charring ===
-The mud kiln is not meant for food. Raw meat, raw fish and potatoes put in it come out as [[charred meat]], [[Charred Fish|charred fish]] and [[charred potato]]es, which heal less than the properly cooked versions ({{Hp|2}} instead of {{Hp|4}} for meat, {{Hp|1}} instead of {{Hp|5}} for a potato) and have no other use.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref> [[Dough]] is the exception: the kiln bakes it into [[naan]] instead of [[bread]].
+The mud kiln is not meant for food. Raw meat, raw fish and potatoes put in it come out as [[Charred Meat|charred meat]], [[Charred Fish|charred fish]] and [[Charred Potato|charred potato]]es, which heal less than the properly cooked versions ({{Hp|2}} instead of {{Hp|4}} for meat, {{Hp|1}} instead of {{Hp|5}} for a potato) and have no other use.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref> [[Dough]] is the exception: the kiln bakes it into [[naan]] instead of [[bread]].
 
 == Progression ==
 The README's advice for new players is to start with a campfire, a wooden hoe and grass.<ref>{{Source|README.md}}</ref> The stations unlock in this order:
-# '''Kindling''' is crafted from 2 sticks and 2 logs and is always placed unlit. It is lit with [[tinder]] or a [[fire starter]] (''Prometheus be Damned'').<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json}}</ref>
-# A hoe used on grass yields short grass, and 1 time in 8 [[wheat grain]] instead. Cooking grass on kindling dries it (''Harvester''). Dry grass, [[straw]] and mud make packed mud.
+# '''Kindling''' is crafted from 2 sticks and 2 logs and is always placed unlit. It is lit with [[tinder]] or a [[Fire Starter|fire starter]] (''Prometheus be Damned'').<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json}}</ref>
+# A hoe used on grass yields short grass, and 1 time in 8 [[Wheat Grain|wheat grain]] instead. Cooking grass on kindling dries it (''Harvester''). Dry grass, [[straw]] and mud make packed mud.
 # The '''mud kiln''' is crafted from 4 mud bricks, 2 packed mud and a kindling (''Ancient Technology''). It fires clay balls into bricks.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/mudkiln.json}}</ref>
-# The '''oven''' is crafted from 3 iron ingots, 5 blocks of bricks and a kindling (''Now You're Cooking'').<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/oven.json}}</ref> The oven can't smelt ores; that needs a [[blast furnace]].
+# The '''oven''' is crafted from 3 iron ingots, 5 blocks of bricks and a kindling (''Now You're Cooking'').<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/oven.json}}</ref> The oven can't smelt ores; that needs a [[Blast Furnace|blast furnace]].
 # Bricks also make [[bowl]]s (''Manners First''), which unlock the [[stock]]s for the oven meals.
 
 == Recipe unlocks ==
 Recipes appear in the recipe book through hidden advancements in <code>advancement/recipe_unlocks</code>. Each one fires when the player first has a certain item in their inventory and grants the recipes that use it:<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/baked_pumpkin.json}}</ref>
-* Picking up a raw ingredient unlocks its oven recipe. For example, a [[pumpkin]] unlocks [[baked pumpkin]], and [[carrot]]s unlock [[steamed carrots]], [[pickled carrots]], [[carrot cupcake]] and [[Pad Thai]].
-* Obtaining a cooked ingredient unlocks the preserves and meals made from it. For example, a baked pumpkin unlocks [[pumpkin jam]] and [[pumpkin empanada]].
-* Intermediates chain on: [[wheat grain]] unlocks [[flour]]; flour unlocks [[dough]], [[bag of flour]] and [[cake]]; dough unlocks [[bread]], [[naan]] and [[seitan]]; a [[bowl]] unlocks all five stocks; each stock unlocks its oven meal.
+* Picking up a raw ingredient unlocks its oven recipe. For example, a [[pumpkin]] unlocks [[Baked Pumpkin|baked pumpkin]], and [[carrot]]s unlock [[Steamed Carrots|steamed carrots]], [[Pickled Carrots|pickled carrots]], [[Carrot Cupcake|carrot cupcake]] and [[Pad Thai]].
+* Obtaining a cooked ingredient unlocks the preserves and meals made from it. For example, a baked pumpkin unlocks [[Pumpkin Jam|pumpkin jam]] and [[Pumpkin Empanada|pumpkin empanada]].
+* Intermediates chain on: [[Wheat Grain|wheat grain]] unlocks [[flour]]; flour unlocks [[dough]], [[Bag of Flour|bag of flour]] and [[cake]]; dough unlocks [[bread]], [[naan]] and [[seitan]]; a [[bowl]] unlocks all five stocks; each stock unlocks its oven meal.
 * A [[Cooking Recipe]] unlocks one secret dish.
 
 Campfire recipes are never added to the recipe book, but kindling doesn't use the recipe book, so they work regardless. Unlocks only affect the recipe book: the pack doesn't turn on the <code>limitedCrafting</code> game rule, so any recipe can be crafted by placing its ingredients by hand. Recipes that are never unlocked are the [[secret recipes]].

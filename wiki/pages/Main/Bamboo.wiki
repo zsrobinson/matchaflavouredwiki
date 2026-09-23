@@ -1,0 +1,39 @@
+{{Vanilla|Bamboo}}
+{{Infobox auto}}
+'''Bamboo''' is a fast-growing plant found in jungles. It grows and is harvested as in vanilla ''Minecraft''; Matcha Flavoured changes the recipes of its building blocks and adds ways to undo them.
+
+== Crafting ==
+{| class="wikitable"
+! Ingredients !! Result !! Vanilla
+|-
+| 9 bamboo || 1 block of bamboo || Same
+|-
+| 1 block of bamboo || 9 bamboo || Not possible
+|-
+| 4 blocks of bamboo in a square || 8 bamboo planks || 1 block (or stripped block) → 2 planks
+|-
+| 2 bamboo slabs, stacked || 1 bamboo planks || Not possible
+|-
+| 4 bamboo planks in a square || 4 bamboo mosaic || 2 bamboo slabs, stacked → 1 mosaic
+|-
+| 2 bamboo mosaic slabs || 1 bamboo mosaic || Not possible
+|}
+<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/bamboo_from_bamboo_block.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/bamboo_planks_from_bamboo_blocks.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/bamboo_mosaic.json}}</ref>
+The vanilla bamboo planks and bamboo mosaic recipes are removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> The crafting recipe for planks accepts only unstripped blocks of bamboo.
+
+=== Stonecutting ===
+A [[stonecutter]] cuts a block of bamboo or stripped bamboo into 2 planks, 2 mosaic, 4 slabs, 4 mosaic slabs, 2 stairs, 2 mosaic stairs, 2 fences, 2 trapdoors, 4 buttons, 2 pressure plates, a door, a fence gate, a sign or a shelf. Bamboo planks and mosaic give slabs and stairs, and stairs cut back into their block. See [[Stonecutter#Bamboo]].<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/bamboo_mosaic_from_stonecutting_bamboo_block.json}}</ref>
+
+== Appearance ==
+Doubled bamboo slabs show vertical planks; see [[Vertical slabs]].
+
+== History ==
+{{History
+|{{History line|1.12.1-alpha|Bamboo recipes were fixed up, mostly for bamboo mosaic, and their unlocks were fixed.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Plants]]

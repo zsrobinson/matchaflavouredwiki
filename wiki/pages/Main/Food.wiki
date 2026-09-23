@@ -8,7 +8,7 @@
 
 == Healing ==
 [[File:Pumpkin Empanada.png|32px|left]]
-Every food heals through a hidden {{EffectLink|Regeneration}} III effect that has no particles and no HUD icon. Regeneration III restores 1 health point every 12 ticks, so a food's healing is its duration divided by 12: a [[pumpkin empanada]] applies it for 96 ticks and heals {{Hp|8}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_empanada.json}}</ref> A few foods ([[steamed golden carrots]], [[charred meat]], [[Charred Fish|charred fish]]) use Regeneration IV for 15 ticks instead, which heals {{Hp|2}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref>
+Every food heals through a hidden {{EffectLink|Regeneration}} III effect that has no particles and no HUD icon. Regeneration III restores 1 health point every 12 ticks, so a food's healing is its duration divided by 12: a [[Pumpkin Empanada|pumpkin empanada]] applies it for 96 ticks and heals {{Hp|8}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_empanada.json}}</ref> A few foods ([[Steamed Golden Carrots|steamed golden carrots]], [[Charred Meat|charred meat]], [[Charred Fish|charred fish]]) use Regeneration IV for 15 ticks instead, which heals {{Hp|2}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref>
 
 The first line of a food's tooltip shows the healing as red hearts, one heart per 2 health points (a half heart for an odd point). The lines below it list the visible effects in the pack's tooltip style, for example {{G|Armor}} Resistance (8:00).
 
@@ -20,34 +20,34 @@ Most foods heal between {{Hp|2}} and {{Hp|12}}. The five [[#Oven meals|oven meal
 Foods give most of the effects that potions give in vanilla. The effect a food carries comes from its [[intrinsic]] ingredient: every dish made with [[pumpkin]] gives {{EffectLink|Resistance}}, every dish made with [[carrot]]s gives {{EffectLink|Night Vision}}, and so on. The more work goes into a dish, the longer the effect lasts. See [[Intrinsic]] for the full table.
 
 Some foods have other effects:
-* '''Cleanse maleffect''' ([[bread]], [[honey ginger tea]], [[ice cream]]): removes Poison, Mining Fatigue, Wither, Weakness, Bad Omen, Blindness, Darkness, Infested, Weaving, Nausea, Oozing and Slowness.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref>
-* '''Cleanse''' ([[milk bottle]]): removes all effects, like a milk bucket.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/milk_bottle.json}}</ref>
-* '''Aura''' ([[glow berry mash]], [[glow berry jam]], [[glow berry crumble]]): makes nearby creatures glow. See [[Glow Berries]].
-* '''Warping''' ([[chorus fruit]]): teleports the player randomly, as in vanilla.
-* '''Throwable''': [[bubbling mead]], [[pickled toadstools]], [[pickled crimson fungus]] and [[pickled warped fungus]] are splash potions instead of food, and apply their effect to everything they hit.
+* '''Cleanse maleffect''' ([[bread]], [[Honey Ginger Tea|honey ginger tea]], [[Ice Cream|ice cream]]): removes Poison, Mining Fatigue, Wither, Weakness, Bad Omen, Blindness, Darkness, Infested, Weaving, Nausea, Oozing and Slowness.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref>
+* '''Cleanse''' ([[Milk Bottle|milk bottle]]): removes all effects, like a milk bucket.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/milk_bottle.json}}</ref>
+* '''Aura''' ([[Glow Berry Mash|glow berry mash]], [[Glow Berry Jam|glow berry jam]], [[Glow Berry Crumble|glow berry crumble]]): makes nearby creatures glow. See [[Glow Berries]].
+* '''Warping''' ([[Chorus Fruit|chorus fruit]]): teleports the player randomly, as in vanilla.
+* '''Throwable''': [[Bubbling Mead|bubbling mead]], [[Pickled Toadstools|pickled toadstools]], [[Pickled Crimson Fungus|pickled crimson fungus]] and [[Pickled Warped Fungus|pickled warped fungus]] are splash potions instead of food, and apply their effect to everything they hit.
 
 == Kinds of food ==
 [[File:Canned Apples.png|32px|left]]
 The developer groups the dishes of each ingredient into three steps:<ref>{{Cite video|quote=All ingredients with intrinsics have at least three corresponding foods. Simple preparation, preservation, and a meal.}}</ref>
 ; Simple preparation
-: The ingredient cooked on its own in an [[oven]] or on [[kindling]], such as [[baked pumpkin]] or [[steamed carrots]]. It heals {{Hp|2}} to {{Hp|4}} and "awakens" the intrinsic for a few seconds, which mostly hints at what the ingredient does.
+: The ingredient cooked on its own in an [[oven]] or on [[kindling]], such as [[Baked Pumpkin|baked pumpkin]] or [[Steamed Carrots|steamed carrots]]. It heals {{Hp|2}} to {{Hp|4}} and "awakens" the intrinsic for a few seconds, which mostly hints at what the ingredient does.
 ; Preservation
-: A jam, pickle, can or drink crafted from the cooked ingredient, [[sugar]] or a [[Mushroom|brown mushroom]] and a [[glass bottle]], such as [[pumpkin jam]]. The effect lasts a few minutes. Eating it gives the glass bottle back.
+: A jam, pickle, can or drink crafted from the cooked ingredient, [[sugar]] or a [[Mushroom|brown mushroom]] and a [[Glass Bottle|glass bottle]], such as [[Pumpkin Jam|pumpkin jam]]. The effect lasts a few minutes. Eating it gives the glass bottle back.
 ; Meal
-: A crafted dish, usually with [[dough]], [[Estus Ash|estus ash]] and sugar, such as [[pumpkin empanada]]. The effect lasts 5 to 20 minutes and it heals more.
+: A crafted dish, usually with [[dough]], [[Estus Ash|estus ash]] and sugar, such as [[Pumpkin Empanada|pumpkin empanada]]. The effect lasts 5 to 20 minutes and it heals more.
 
 Beyond these, the pack has:
 ; Oven meals
-: [[Green curry]], [[Japanese curry]], [[paneer makhani]], [[tonkotsu ramen]] and [[pumpkin curry]]. Their [[stock]]s are crafted and then cooked for 15 seconds. They heal {{Hp|20}} and give an effect for 20 or 30 minutes.
+: [[Green Curry|Green curry]], [[Japanese Curry|Japanese curry]], [[Paneer Makhani|paneer makhani]], [[Tonkotsu Ramen|tonkotsu ramen]] and [[Pumpkin Curry|pumpkin curry]]. Their [[stock]]s are crafted and then cooked for 15 seconds. They heal {{Hp|20}} and give an effect for 20 or 30 minutes.
 ; Plain foods
-: Foods without an effect that are mostly healing: [[bread]], [[baked potato]], [[cheese]], [[Chicken Nugget|chicken nuggets]], [[stroganoff]], [[gnocchi]], [[latke]], [[fish and chips]] and cooked meat.
+: Foods without an effect that are mostly healing: [[bread]], [[Baked Potato|baked potato]], [[cheese]], [[Chicken Nugget|chicken nuggets]], [[stroganoff]], [[gnocchi]], [[latke]], [[Fish and Chips|fish and chips]] and cooked meat.
 ; Secret foods
 : Foods whose recipes never appear in the recipe book. See [[Secret recipes]].
 
 Meat has no intrinsic. Cooked meat heals {{Hp|4}} and has no effect, which is meant to discourage mob farms.<ref>{{Cite video|quote=And since animal flesh holds no special properties, players will be less incentivized to manufacture slaughterhouses.}}</ref>
 
 == Obtaining ==
-Most food is cooked in an [[oven]], on [[kindling]] or [[soul kindling]], or crafted at a [[crafting table]]. See [[Cooking]] for the stations, cooking times and how recipes are unlocked. Food also appears in chest loot, and the [[Cook]] villager sells a few secret dishes.
+Most food is cooked in an [[oven]], on [[kindling]] or [[Soul Kindling|soul kindling]], or crafted at a [[Crafting Table|crafting table]]. See [[Cooking]] for the stations, cooking times and how recipes are unlocked. Food also appears in chest loot, and the [[Cook]] villager sells a few secret dishes.
 
 Several vanilla foods are replaced by the pack's versions when they're obtained:
 * Apples dropped by leaves, carrots, tomatoes, glow berries, sweet berries, melon slices and chorus fruit from their crops, and food in chest loot, come from the pack's loot tables with its tooltips and healing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/carrots.json}}</ref>
@@ -61,7 +61,7 @@ Vanilla recipes for mushroom stew, rabbit stew, beetroot soup, suspicious stew, 
 Every employed [[villager]] that has traded at least once is given one extra trade: it buys 1 of a random food, chosen from 42 of the pack's dishes, for 1 [[obol]], once.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update.mcfunction}}</ref> The list covers most meals and all five oven meals.
 
 === Glass bottles and bowls ===
-Foods eaten from a bottle (jams, pickles, cans, [[mead]], [[melon sorbet]], [[honey ginger tea]], [[milk bottle]]s) give back a [[glass bottle]]. Stews, [[stroganoff]], [[gnocchi]], [[ice cream]] and the oven meals give back a [[bowl]]. Crafting most recipes that use a [[milk bottle]], [[oil]] or a [[Glass Bottle|water bottle]] also returns the glass bottles: a hidden advancement gives the player 1 glass bottle per craft, or 2 for the green curry, paneer and pumpkin curry [[stock]]s. The [[cheese]] recipe and the four [[stroganoff]] recipes aren't in the list, so their milk bottle's glass bottle is lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
+Foods eaten from a bottle (jams, pickles, cans, [[mead]], [[Melon Sorbet|melon sorbet]], [[Honey Ginger Tea|honey ginger tea]], [[Milk Bottle|milk bottle]]s) give back a [[Glass Bottle|glass bottle]]. Stews, [[stroganoff]], [[gnocchi]], [[Ice Cream|ice cream]] and the oven meals give back a [[bowl]]. Crafting most recipes that use a [[Milk Bottle|milk bottle]], [[oil]] or a [[Glass Bottle|water bottle]] also returns the glass bottles: a hidden advancement gives the player 1 glass bottle per craft, or 2 for the green curry, paneer and pumpkin curry [[stock]]s. The [[cheese]] recipe and three of the four [[stroganoff]] recipes aren't in the list, so their milk bottle's glass bottle is lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
 
 == List of foods ==
 The table lists every item with a food component, including [[Fish|fish]], which belong to the [[fishing]] system. "Heals" counts the hidden Regeneration III only.
@@ -78,12 +78,12 @@ The table lists every item with a food component, including [[Fish|fish]], which
 
 == History ==
 {{History|
-{{History line|0.5-alpha|Added [[cooked pufferfish]] and [[fried egg]]s. Golden apples got a proper tooltip and texture. Glow berry jam gives its glass bottle back when eaten.}}
-{{History line|0.6-alpha|Raw and cooked morsel renamed to raw and cooked flesh. Tomato soup renamed to [[grilled tomatoes]] and pickled tomatoes to [[sun-dried tomatoes]]. All foods now either always or never show consume particles.}}
-{{History line|0.7-alpha|Added six secret foods, [[flour]], [[bag of flour]], the brown and red mushroom foods and cake healing. Preserves and meals now use the cooked ingredient (for example baked apples instead of apples). All foods show their effect icon. Mushroom stew, suspicious stew and pumpkin pie recipes removed.}}
+{{History line|0.5-alpha|Added [[Cooked Pufferfish|cooked pufferfish]] and [[Fried Egg|fried egg]]s. Golden apples got a proper tooltip and texture. Glow berry jam gives its glass bottle back when eaten.}}
+{{History line|0.6-alpha|Raw and cooked morsel renamed to raw and cooked flesh. Tomato soup renamed to [[Grilled Tomatoes|grilled tomatoes]] and pickled tomatoes to [[Sun-dried Tomatoes|sun-dried tomatoes]]. All foods now either always or never show consume particles.}}
+{{History line|0.7-alpha|Added six secret foods, [[flour]], [[Bag of Flour|bag of flour]], the brown and red mushroom foods and cake healing. Preserves and meals now use the cooked ingredient (for example baked apples instead of apples). All foods show their effect icon. Mushroom stew, suspicious stew and pumpkin pie recipes removed.}}
 {{History line|1.0|Bread in chests is now the same as crafted bread.}}
 {{History line|1.10|Added [[Pizza|pizzas]], [[Kontomire-Dandelion Stew]], [[Pad Thai]] and a secret food. All food except curries cooks faster in the oven. Removed leftover recipes from earlier versions (squid ink pasta, golden pie and others).}}
-{{History line|1.12.1-alpha|Added [[pumpkin curry]], [[oil]], [[seitan]], [[Chicken Nugget|chicken nuggets]], [[nopales]], [[bubbling mead]], [[fish and chips]], [[ice cream]], [[lumpia]], [[apple cinnamon oatmeal]] and [[Buñuelo|buñuelos]]. All foods got translatable names and tooltips, so foods made before this version no longer stack with new ones. Curries and ramen got vegetarian options.}}
+{{History line|1.12.1-alpha|Added [[Pumpkin Curry|pumpkin curry]], [[oil]], [[seitan]], [[Chicken Nugget|chicken nuggets]], [[nopales]], [[Bubbling Mead|bubbling mead]], [[Fish and Chips|fish and chips]], [[Ice Cream|ice cream]], [[lumpia]], [[Apple Cinnamon Oatmeal|apple cinnamon oatmeal]] and [[Buñuelo|buñuelos]]. All foods got translatable names and tooltips, so foods made before this version no longer stack with new ones. Curries and ramen got vegetarian options.}}
 }}
 
 == Trivia ==

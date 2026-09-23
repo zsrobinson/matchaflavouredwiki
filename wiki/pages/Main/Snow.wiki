@@ -1,0 +1,39 @@
+{{Vanilla|Snow}}
+{{Infobox auto|Snow Block|title=Snow}}
+'''Snow''' comes as thin '''snow layers''' and full '''snow blocks'''. Matcha Flavoured makes snowballs stack to 64, adds recipes that convert between snow, ice and packed ice in both directions, and makes snow layers cheaper to craft.
+
+== Drops ==
+Snow layers and snow blocks drop snowballs as in vanilla: one per layer, or 4 from a snow block. The pack's loot tables give these snowballs a maximum stack size of 64 instead of 16.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/snow_block.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json}}</ref> Snowballs only drop when the snow is broken with a shovel, as in vanilla; some of the pack's shovels and [[Mattock|mattocks]] were fixed in {{Version|1.10}} to drop them.
+
+== Crafting ==
+{| class="wikitable"
+! Ingredients !! Result
+|-
+| 2 snow blocks side by side || 8 snow layers (vanilla: 3 blocks for 6 layers)
+|-
+| 4 snow layers in a square || 1 snow block
+|-
+| 1 ice || 9 snow blocks
+|-
+| 9 snow blocks || 1 ice
+|-
+| 1 packed ice || 9 ice
+|-
+| 1 blue ice || 9 packed ice
+|}
+<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/snow_layer_from_snow_block.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/snow_block_from_ice.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/ice_from_snow_block.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/packed_ice_from_blue_ice.json}}</ref>
+Together with the vanilla recipes (four snowballs to a snow block, nine ice to packed ice, nine packed ice to blue ice), every step can be undone, so a stack of snow can be compressed into ice and back without loss.
+
+== History ==
+{{History
+|{{History line|1.10|Snow works again, and snowballs stack to 64.<br />The pack's shovels and mattocks drop snowballs (only for newly made tools).}}
+{{History line|1.12.1-alpha|Recipe unlocks for turning ice into snow and back were fixed.}}
+{{History line|1.12.2|Fixed snowballs that sometimes did not stack to 64.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Natural blocks]]

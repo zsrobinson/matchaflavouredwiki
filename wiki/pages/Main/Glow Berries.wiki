@@ -16,14 +16,14 @@ Cave vines give and drop the pack's glow berries.<ref>{{Source|MF_datapack/data/
 === Food ===
 Eating glow berries heals {{Hp|1}}.
 
-Picking up glow berries unlocks [[glow berry mash]]. They can also replace sweet berries in [[mead]].
+Picking up glow berries unlocks [[Glow Berry Mash|glow berry mash]]. They can also replace sweet berries in [[mead]].
 
 === Crafting ingredient ===
 {{Uses}}
 
 == Behavior ==
 === Aura ===
-Aura isn't a status effect. Eating [[glow berry mash]], [[glow berry jam]] or [[glow berry crumble]] triggers an advancement that plays a resonating bell sound and, 2.4 seconds later, gives {{EffectLink|Glowing}} to every entity within 50 blocks of the player, excluding the player, for 3 seconds, 30 seconds or 1 minute.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_effect_30.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_30.mcfunction}}</ref> The functions are named after [[soul sight]].
+Aura isn't a status effect. Eating [[Glow Berry Mash|glow berry mash]], [[Glow Berry Jam|glow berry jam]] or [[Glow Berry Crumble|glow berry crumble]] triggers an advancement that plays a resonating bell sound and, 2.4 seconds later, gives {{MCW|Glowing}} to every entity within 50 blocks of the player, excluding the player, for 3 seconds, 30 seconds or 1 minute.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_effect_30.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_30.mcfunction}}</ref> The functions are named after [[soul sight]].
 
 
 == History ==

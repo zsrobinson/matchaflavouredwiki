@@ -1,0 +1,52 @@
+{{Vanilla|Sculk}}
+{{Infobox auto}}
+'''Sculk''' blocks are the dark, living blocks of the deep dark. Matcha Flavoured changes their drops so that sculk can be collected without {{MCW|Silk Touch}}, makes sculk sensors and shriekers drop echo shards, and lets all of them be crafted from sculk veins. This page covers sculk, sculk veins, sculk sensors, calibrated sculk sensors and sculk shriekers.
+
+== Drops ==
+{| class="wikitable"
+! Block !! Without Silk Touch !! Vanilla (without Silk Touch)
+|-
+| Sculk || 4 sculk veins || Nothing (experience only)
+|-
+| Sculk vein || 1 sculk vein, with any tool || Nothing
+|-
+| Sculk sensor || 1 echo shard || Nothing
+|-
+| Calibrated sculk sensor || 1 echo shard || Nothing
+|-
+| Sculk shrieker || 1 echo shard || Nothing
+|}
+With Silk Touch each block drops itself, as in vanilla.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sculk.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sculk_sensor.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sculk_shrieker.json}}</ref> A sculk vein always drops one item, even when it covers several faces of a block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sculk_vein.json}}</ref>
+
+== Crafting ==
+{| class="wikitable"
+! Result !! Recipe
+|-
+| Sculk || 4 sculk veins in a square<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sculk.json}}</ref>
+|-
+| Sculk sensor || 5 sculk veins in a U shape with an echo shard in the bottom middle<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sculk_sensor.json}}</ref>
+|-
+| Sculk shrieker || The sculk sensor shape with two bones on top<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sculk_shrieker.json}}</ref>
+|}
+{{Recipes|Sculk Sensor}}
+{{Recipes|Sculk Shrieker}}
+
+Breaking a sculk block gives 4 veins, exactly enough to craft it back.
+
+== Usage ==
+Echo shards from sensors and shriekers are used in the pack's [[Prayer of Cronus]], the "5" [[Music Disc|music disc]] and the ominous bottle.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/ominous_bottle.json}}</ref> Sculk blocks are also an ingredient of the Prayer of Cronus.
+
+== Appearance ==
+The resource pack retextures sculk veins and echo shards.<ref>{{Cite changelog|0.5-alpha|quote=Sculk Vein & Echo Shard textures}}</ref>
+
+== History ==
+{{History
+|{{History line|0.5-alpha|New sculk vein and echo shard textures.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Natural blocks]]

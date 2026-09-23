@@ -1,0 +1,45 @@
+{{Infobox
+|title=Bundles
+|invimage=Seed Bundle;Exotic Seed Bundle;Floral Bundle;Mushy Bundle;Geothermal Bundle
+|type=Container item
+|renewable=Yes
+|stackable=No
+}}
+'''Bundles''' are {{MCW|Bundle|bundles}} that villagers sell already filled. The [[Farmer]] sells four kinds full of seeds, flowers or mushrooms, and the [[Engineer]] sells the Geothermal Bundle. Once emptied, they work like an ordinary bundle.
+
+== Pre-filled bundles ==
+All pre-filled bundles cost 1 [[Obol]] and can be bought 999 times before the villager restocks.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/1/seed_bundle.json}}</ref>
+{| class="wikitable"
+! Bundle !! Seller !! Price !! Contents
+|-
+| <span id="Seed Bundle"></span>{{ItemLink|Seed Bundle}} || [[Farmer]] (Novice) || 1 obol || [[File:Wheat Grain.png|16px|link=Wheat Grain]] [[Wheat Grain]] × 16<br />[[File:Tomato Seeds.png|16px|link=Tomato Seeds]] [[Tomato Seeds]] × 16<br />[[File:Carrot.png|16px|link=Carrot]] [[Carrot]] × 4<br />[[File:Potato.png|16px|link=Potato]] [[Potato]] × 4
+|-
+| <span id="Exotic Seed Bundle"></span>{{ItemLink|Exotic Seed Bundle}} || [[Farmer]] (Novice) || 1 obol and 1 jungle sapling || [[File:Melon Seeds.png|16px|link=]] Melon Seeds × 16<br />[[File:Pumpkin Seeds.png|16px|link=]] Pumpkin Seeds × 16<br />[[File:Sweet Berries.png|16px|link=Sweet Berries]] [[Sweet Berries]] × 8<br />[[File:Glow Berries.png|16px|link=Glow Berries]] [[Glow Berries]] × 8
+|-
+| <span id="Floral Bundle"></span>{{ItemLink|Floral Bundle}} || [[Farmer]] (Novice) || 1 obol || [[File:Golden Dandelion.png|16px|link=]] Golden Dandelion × 1<br />[[File:Dandelion.png|16px|link=]] Dandelion × 3<br />Sunflower × 4<br />[[File:Poppy.png|16px|link=]] Poppy × 4<br />Rose Bush × 4<br />[[File:Cornflower.png|16px|link=]] Cornflower × 8<br />[[File:Hyacinth.png|16px|link=Hyacinth]] [[Hyacinth]] × 8<br />Lilac × 4<br />Peony × 4<br />[[File:Azure Bluet.png|16px|link=]] Azure Bluet × 8<br />[[File:Oxeye Daisy.png|16px|link=]] Oxeye Daisy × 8<br />[[File:Lily of the Valley.png|16px|link=]] Lily of the Valley × 8
+|-
+| <span id="Mushy Bundle"></span>{{ItemLink|Mushy Bundle}} || [[Farmer]] (Novice) || 1 obol || [[File:Red Mushroom.png|16px|link=Mushroom]] [[Mushroom|Red Mushroom]] × 21<br />[[File:Brown Mushroom.png|16px|link=Mushroom]] [[Mushroom|Brown Mushroom]] × 21<br />[[File:Glow Lichen.png|16px|link=]] Glow Lichen × 21
+|-
+| <span id="Geothermal Bundle"></span>{{ItemLink|Geothermal Bundle}} || [[Engineer]] (Master) || 1 obol || [[File:Flowstone.png|16px|link=Flowstone]] [[Flowstone]] × 4<br />[[Speleothem]] × 4<br />Lava Bucket × 4<br />[[File:Cauldron.png|16px|link=Cauldron]] [[Cauldron]] × 4<br />[[File:Glass.png|16px|link=Glass]] [[Glass]] × 8
+|}
+A Novice farmer offers 3 of its 5 trades, so not every farmer sells every bundle.<ref>{{Source|MF_datapack/data/minecraft/trade_set/farmer/level_1.json}}</ref>
+
+Notes:
+* The Seed Bundle holds the pack's renamed wheat seeds ([[Wheat Grain]]) and beetroot seeds ([[Tomato Seeds]]).
+* The Floral Bundle is exactly full: its 64 flowers fill a bundle's capacity.
+* The lava buckets in the Geothermal Bundle stack up to 64, unlike normal lava buckets.<ref>{{Source|MF_datapack/data/matcha/villager_trade/armorer/5/lava_kit.json}}</ref> The bundle holds the blocks for filling cauldrons with lava from dripping [[Speleothem|speleothems]].
+
+== Empty bundles ==
+An empty bundle is crafted from 1 string above 1 rabbit hide, instead of the vanilla leather.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/bundle.json}}</ref> Empty bundles can also be found in village chests.
+{{Recipes|Bundle}}
+
+== Trivia ==
+* The pre-filled bundles are vanilla bundles with a custom name and model. The Geothermal Bundle has no custom model and looks like an ordinary bundle; its internal name is <code>lava_kit</code>.<ref>{{Source|MF_datapack/data/matcha/villager_trade/armorer/5/lava_kit.json}}</ref>
+* The Mushy Bundle's internal name is <code>mushroom</code>.
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Items]]
+[[Category:Trading]]

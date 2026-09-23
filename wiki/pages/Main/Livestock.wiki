@@ -1,0 +1,85 @@
+{{Infobox
+|title=Livestock
+|invimage=Calf;Highland Calf;Sindhi Calf;Piglet;Mangalica Piglet;Bushpiglet;White Lamb;Black Lamb;Brown Lamb;Fertilized Egg;Fertilized Blue Egg;Fertilized Brown Egg
+|type=Summoning item
+|renewable=Yes
+}}
+'''Livestock''' items are young farm animals sold by the [[Farmer]] and the [[Shepherd]]. Each one is a spawn egg that places a baby chicken, cow, pig or sheep, so players can start a farm without finding the animals in the wild. Every animal comes in three breeds, and a villager only sells the breed that matches the climate of the biome it is in.
+
+== Obtaining ==
+=== Trading ===
+Every livestock item costs 1 [[Obol]] and can be bought 999 times before the villager restocks.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/3/baby_cold_cow.json}}</ref>
+{| class="wikitable"
+! Animal !! Temperate biomes !! Cold biomes !! Warm biomes !! Seller
+|-
+| <span id="Chickens"></span>Chicken || {{ItemLink|Fertilized Egg}} || {{ItemLink|Fertilized Blue Egg}} || {{ItemLink|Fertilized Brown Egg}} || [[Farmer]] (Apprentice)
+|-
+| <span id="Calves"></span>Cow || {{ItemLink|Calf}} || {{ItemLink|Highland Calf}} || {{ItemLink|Sindhi Calf}} || [[Farmer]] (Journeyman)
+|-
+| <span id="Piglets"></span>Pig || {{ItemLink|Piglet}} || {{ItemLink|Mangalica Piglet}} || {{ItemLink|Bushpiglet}} || [[Farmer]] (Journeyman)
+|-
+| <span id="Lambs"></span>Sheep || {{ItemLink|White Lamb}} || {{ItemLink|Black Lamb}} || {{ItemLink|Brown Lamb}} || [[Shepherd]] (Apprentice)
+|}
+An Apprentice farmer offers 2 of its 3 egg trades, a Journeyman farmer 3 of its 6 calf and piglet trades, and an Apprentice shepherd 2 of its 4 trades (the three lambs and the [[Shepherd's Shears]]).<ref>{{Source|MF_datapack/data/minecraft/trade_set/farmer/level_3.json}}</ref> Each livestock trade has a condition on the villager's biome, so only the breed of the villager's own climate can appear.<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/2/baby_warm_sheep.json}}</ref>
+
+=== Climates ===
+The climates are the biome tags that vanilla ''Minecraft'' uses to choose farm animal variants. The pack adds its own temperate list.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/spawns_temperate_variant_farm_animals.json}}</ref>
+{| class="wikitable"
+! Climate !! Biomes
+|-
+| Temperate || Plains, Sunflower Plains, Meadow, Forest, Flower Forest, Birch Forest, Old Growth Birch Forest, Dark Forest, Pale Garden, Cherry Grove, Swamp, Mangrove Swamp, Mushroom Fields, River, Beach, Stony Shore, Ocean, Deep Ocean, Dripstone Caves, Lush Caves, Deep Dark
+|-
+| Cold || Snowy Plains, Ice Spikes, Snowy Taiga, Snowy Beach, Snowy Slopes, Grove, Frozen Peaks, Jagged Peaks, Stony Peaks, Taiga, Old Growth Pine Taiga, Old Growth Spruce Taiga, Windswept Hills, Windswept Gravelly Hills, Windswept Forest, Frozen River, Frozen Ocean, Deep Frozen Ocean, Cold Ocean, Deep Cold Ocean, Deep Dark, The End biomes
+|-
+| Warm || Desert, all jungle, savanna and badlands biomes, Mangrove Swamp, Warm Ocean, Lukewarm Ocean, Deep Lukewarm Ocean, all [[Hell]] biomes
+|}
+The Mangrove Swamp (temperate and warm) and the Deep Dark (temperate and cold) are in two lists, so villagers there can offer two breeds. Villagers in the Sulfur Caves, which are in none of the lists, offer no livestock.
+
+== Usage ==
+Using a livestock item on a block spawns a baby animal of that breed, which grows up after 24,000 ticks (20 minutes) as usual:<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/2/blue_egg.json}}</ref>
+{| class="wikitable"
+! Item !! Spawns !! Stack size
+|-
+| Fertilized Egg || Baby temperate chicken (white egg) || 64
+|-
+| Fertilized Blue Egg || Baby cold chicken (blue egg) || 64
+|-
+| Fertilized Brown Egg || Baby warm chicken (brown egg) || 64
+|-
+| Calf || Baby temperate cow || 1
+|-
+| Highland Calf || Baby cold cow || 1
+|-
+| Sindhi Calf || Baby warm cow || 1
+|-
+| Piglet || Baby temperate pig || 1
+|-
+| Mangalica Piglet || Baby cold pig || 1
+|-
+| Bushpiglet || Baby warm pig || 1
+|-
+| White Lamb || Baby white sheep || 1
+|-
+| Black Lamb || Baby black sheep || 1
+|-
+| Brown Lamb || Baby brown sheep || 1
+|}
+The calves, piglets and lambs are shown as crates and do not stack. The fertilized eggs use the vanilla egg textures of their color.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/3/baby_warm_pig.json}}</ref>
+
+== Behavior ==
+Livestock items are spawn eggs. Using one on a [[spawner]] or trial spawner in Survival destroys every spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Summoning items such as baby animals can no longer be used on spawners.}}
+}}
+
+== Trivia ==
+* The developer has considered having the farmer trade cats as well.<ref>{{Source|changelog.md}}</ref>
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Items]]
+[[Category:Trading]]

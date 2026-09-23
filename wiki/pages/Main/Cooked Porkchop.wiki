@@ -1,0 +1,40 @@
+{{Vanilla}}
+
+{{Infobox auto}}
+
+'''Cooked porkchop''' is cooked meat. Like all meat in Matcha Flavoured, it has no [[intrinsic]]: it heals {{Hp|4}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pork.json}}</ref>
+
+== Obtaining ==
+
+=== Cooking ===
+{{Recipes}}
+Raw porkchop cooks in an [[oven]] or on [[kindling]] in 5 seconds. The vanilla recipes are replaced, and in a [[Mud Kiln|mud kiln]] it becomes [[Charred Meat|charred meat]] instead.
+{{Sources}}
+
+== Usage ==
+
+=== Food ===
+Eating it takes 1.6 seconds and heals {{Hp|4}}.
+
+Cooked porkchops are used in [[lumpia]] and [[pupusa]]s and can top a [[Pizza|meat pizza]]. Raw porkchops go into [[Ramen Stock|ramen stock]]. Cooked porkchops found in chests use the pack's loot table, with the same healing.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/cooked_porkchop.json}}</ref>
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== Raw Porkchop ==
+{{Vanilla|Raw Porkchop}}
+'''Raw Porkchop''' is dropped by animals as in vanilla. It keeps its vanilla food values and doesn't heal.
+{{Uses|Raw Porkchop}}
+
+== Trivia ==
+* The developer made meat plain so that players have less reason to build animal farms: "since animal flesh holds no special properties, players will be less incentivized to manufacture slaughterhouses".<ref>{{Cite video|quote=And since animal flesh holds no special properties, players will be less incentivized to manufacture slaughterhouses.}}</ref>
+
+== See also ==
+* [[Food]]
+* [[Charred Meat]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

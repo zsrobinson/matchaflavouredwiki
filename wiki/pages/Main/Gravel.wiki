@@ -1,6 +1,6 @@
 {{Vanilla|Gravel}}
 {{Infobox auto}}
-'''Gravel''' is a loose block affected by gravity. Matcha Flavoured makes it part of a chain that turns rock into sand without digging up deserts: [[Blast Furnace|blast]] [[cobblestone]] into gravel, and gravel into [[sand]]. Broken gravel also always drops both [[flint]] and [[dirt]].
+'''Gravel''' is a loose block affected by gravity. Matcha Flavoured makes it part of a chain that turns rock into sand without digging up deserts: [[Blast Furnace|blast]] [[cobblestone]] into gravel, and gravel into [[sand]]. Broken gravel also always drops both flint and [[dirt]].
 
 == Obtaining ==
 === Cooking and crafting ===
@@ -14,7 +14,7 @@ This was one of the first changes the developer made. The design video describes
 Gravel generates in the Overworld as in vanilla. The pack removes gravel from [[Hell]]'s terrain generation.<ref>{{Cite changelog|1.12.1-alpha|quote=Gravel removed from Hell (Made by HapppySpud!)}}</ref>
 
 == Drops ==
-Broken without {{MCW|Silk Touch}}, gravel always drops one [[dirt]] and one [[flint]]. With Silk Touch it drops itself. In vanilla it drops either gravel or, with a 10% chance, flint.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gravel.json}}</ref>
+Broken without {{MCW|Silk Touch}}, gravel always drops one [[dirt]] and one flint. With Silk Touch it drops itself. In vanilla it drops either gravel or, with a 10% chance, flint.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gravel.json}}</ref>
 
 Because the dirt-and-flint recipe turns 2 dirt and 2 flint back into 2 gravel, breaking gravel and recrafting it loses nothing.
 

@@ -27,7 +27,7 @@ The developer's design video presents early sacks as a deliberate quality-of-lif
 
 == Trivia ==
 * The introduction video opens by promising to explain "why being able to craft shulkers with a lever and a chest isn't overpowered, actually". The current recipe uses sturdy leather rather than a lever.<ref>{{Cite video|quote=why being able to craft shulkers with a lever and a chest isn't overpowered, actually}}</ref>
-* The block keeps the vanilla shulker box ID (<code>minecraft:shulker_box</code>), so it works with every mod and command that expects a shulker box.
+* The block keeps the vanilla shulker box ID (<code>minecraft:shulker_box</code>), so commands and other data treat it as a shulker box.
 
 == References ==
 {{reflist}}

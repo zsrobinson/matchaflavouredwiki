@@ -1,0 +1,44 @@
+'''Trims''' decorate armor as in vanilla, but the color comes from a [[Smithing Trim Color|smithing trim color]] instead of an ingot or gem. Trims work on the pack's custom armor too.
+
+{| class="wikitable"
+! Color !! Center ingredient !! Material shown
+|-
+| Amethyst || block of amethyst || Amethyst
+|-
+| Cinnabar || cinnabar || Cinnabar (redstone)
+|-
+| Diamond || block of diamond || Diamond
+|-
+| Electrum || electrum alloy || Electrum
+|-
+| Gold || block of gold || Gold
+|-
+| Hepatizon || hepatizon alloy || Hepatizon
+|-
+| Iron || block of iron || Iron (the netherite material)
+|-
+| Lapis || block of lapis lazuli || Lapis
+|-
+| Patina || oxidized copper || Patina (emerald)
+|-
+| Quartz || block of quartz || Quartz
+|-
+| Resin || block of resin || Resin
+|-
+| Shakudo || shakudo alloy || Shakudo
+|-
+| Steel || steel alloy || Steel (the iron material)
+|}
+Shakudo, hepatizon and electrum have their own trim materials, with darker variants on armor of the same alloy.<ref>{{Source|MF_datapack/data/matcha/trim_material/shakudo.json}}</ref> A silver material name exists in the language file but has no recipe. Most trim templates keep their vanilla duplication recipes.
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Fixed the flow armor trim.}}
+{{History line|1.12.2|Added trim colors; trims supported on custom armor.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Materials]]

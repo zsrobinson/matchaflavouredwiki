@@ -1,0 +1,70 @@
+{{Vanilla|Emerald}}
+{{Infobox auto|type=Currency|renewable=Yes}}
+An '''obol''' is the currency of [[trading]] in Matcha Flavoured. Obols replace {{MCW|Emerald|emeralds}}: they are the same item, renamed and retextured, but they are much rarer, because villagers no longer buy everyday goods.
+
+The developer explains the change in the introduction video: "Obols are the same as emeralds, but much harder to come across. Partially due to their overall rarity in chests, but also because villagers no longer buy anything from players. No mob grinders or fully automated melon farms can make you rich."<ref>{{Cite video|quote=Obols are the same as emeralds, but much harder to come across. Partially due to their overall rarity in chests, but also because villagers no longer buy anything from players. No mob grinders or fully automated melon farms can make you rich.}}</ref>
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+
+=== Advancements ===
+37 advancements reward obols, 85 in total. Most give 1 obol; the largest rewards are 10 obols.<ref>{{Source|MF_datapack/data/matcha/loot_table/advancement/obol_10.json}}</ref> Since {{Version|1.12.1-alpha}}, advancements that reward obols are revoked when the pack updates, so their rewards can be earned again.<ref>{{Cite changelog|1.12.1-alpha|quote=Advancemnts that give you rewards will be revoked from you on-update. (Except for fishing and Steal all prayers, becuase those are hard to get) That way, you can get the rewards}}</ref>
+
+=== Trading ===
+Only a few trades pay obols:
+* the [[Fisherman]] buys caught [[fish]] at every level from Apprentice to Master;
+* the [[Jeweler]] buys gems at Master level (4 to 10 obols each);
+* the [[Weaponsmith]] buys diamonds, blocks of lapis lazuli and [[Hepatizon Alloy]] at Novice level;
+* the [[Wandering Trader]] buys vanilla music discs (1 to 8 obols each);
+* every villager buys its [[favorite food]] once.
+See [[Trading#Who buys from the player]].
+
+=== Chest loot, mob drops, fishing and archaeology ===
+{{Sources}}
+
+== Usage ==
+Obols are the price of almost every villager and wandering trader trade. See [[Trading]] and the profession pages.
+
+=== Crafting ingredient ===
+{| class="wikitable"
+! Name !! Ingredients
+|-
+| {{ItemLink|Block of Obol}} || 9 obols
+|-
+| {{ItemLink|Beacon Kindling}} || Obol, [[Kindling]] and [[Hay Bale|hay bale]]
+|-
+| [[Prayer of St. Clement]] || 2 obols, leather boots, 2 wool and a [[Hell-Bound Book]]
+|}
+
+=== Trim material ===
+As an armor trim material, the obol is called "Patina Material".<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+== Advancements ==
+* '''You're Rich!''': "Obtain an Obol". It is the parent of the ''Bonfire Lit'' advancement for the [[Beacon Kindling]], whose recipe also unlocks on picking up an obol.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/light_beacon.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.0|Emeralds are renamed obols.}}
+{{History line|1.10|Husks drop obols about 10% of the time, compared with about 5% for zombies.
+Skeleton and bogged obol drop rates reduced to match other mobs.
+Trial chamber pots give fewer obols.}}
+{{History line|1.12.1-alpha|Obols no longer drop from undead mobs.
+Advancements reward obols.}}
+}}
+
+== Issues ==
+* The 1.12.1-alpha release notes say obols no longer drop from undead mobs, but the bogged and zombie villager loot tables still drop an obol about 9% of the time when killed by a player.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/bogged.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/zombie_villager.json}}</ref>
+
+== Trivia ==
+* The developer on the rename: "Emeralds have been renamed to obols because I like that more."<ref>{{Cite video|quote=Emeralds have been renamed to obols because I like that more.}}</ref>
+* The [[Angler's Almanac]] describes the obol as "An ancient coin dredged from the depths. Either treasure or someone's very expensive mistake."
+* Emerald ore is renamed Native Silver, so it no longer relates to obols by name.
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Items]]
+[[Category:Renamed items]]
+[[Category:Trading]]

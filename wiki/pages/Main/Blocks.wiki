@@ -1,0 +1,179 @@
+{{About|how Matcha Flavoured changes blocks and building materials|the full list of renamed items|Renamed items}}
+'''Blocks''' in Matcha Flavoured are mostly the vanilla ''Minecraft'' blocks, but the pack renames many of them, rewrites a large number of recipes to make building materials cheaper and easier to undo, changes what dozens of blocks drop, and retextures many of them in its resource pack. Datapacks cannot add new blocks, so every "new" block in the pack is a vanilla block with a new name, texture and recipe.
+
+This page summarizes those changes and links to the articles about each block.
+
+== Renamed blocks ==
+{{Main|Renamed items}}
+The pack's language file gives these blocks new names. Blocks that belong to other topics (ores, cooking stations, the Copper Eye) are covered in their own articles.
+{| class="wikitable sortable"
+! Matcha Flavoured !! Vanilla !! Notes
+|-
+| [[Limestone]] || Stone || Fired in a mud kiln instead of an oven
+|-
+| [[Malachite]] (and bricks, dark malachite, slabs, stairs, wall) || Prismarine || Crafted from calcite and raw copper
+|-
+| [[Malachite#Malachite Lantern|Malachite Lantern]] || Sea Lantern || Crafted from malachite and estus ash
+|-
+| [[Flowstone]] || Dripstone Block ||
+|-
+| [[Speleothem]] || Pointed Dripstone ||
+|-
+| [[Brown Sandstone]] (and slab, stairs, wall) || End Stone Bricks || Crafted from sandstone and red sandstone
+|-
+| [[Dirt Slab]] || Petrified Oak Slab || Crafted from dirt
+|-
+| [[Hellstone]] || Netherrack ||
+|-
+| [[Hellbricks]] (and cracked, chiseled, red, slabs, stairs, walls, fence) || Nether Bricks ||
+|-
+| [[Hellspore#Hellspore Block|Hellspore Block]] || Nether Wart Block ||
+|-
+| [[Phosphor lamps|Ochre, Verdant and Pearlescent Phosphor Lamp]] || Froglights || Crafted from phosphor and glass
+|-
+| [[Phosphor Rod]] || End Rod || Crafted from phosphor and glass panes
+|-
+| [[Electric Inverter]] || Redstone Torch ||
+|-
+| [[Electric Repeater]] || Redstone Repeater ||
+|-
+| [[Electric Comparator]] || Redstone Comparator ||
+|-
+| [[Electric Block]] || Block of Redstone ||
+|-
+| [[Electric Lamp]] || Redstone Lamp ||
+|-
+| [[Sack]] (and 16 colors) || Shulker Box || Crafted from sturdy leather and a chest
+|-
+| [[Hyacinth]] || Allium ||
+|-
+| [[Copper Eye]] || Target || See its own article
+|-
+| [[Oven]], [[Mud Kiln]], [[Kindling]], [[Soul Kindling]], [[Chemistry Stand]] || Furnace, Smoker, Campfire, Soul Campfire, Brewing Stand || Cooking and brewing stations
+|-
+| [[Ores|Ores]] || Every vanilla ore || See [[Ores]]
+|}
+Items renamed in this area include [[Electric Wire]] (redstone dust), [[Phosphor]] (glow ink sac), [[Hellbrick]] (nether brick), [[Hellspore]] (nether wart), [[Sulfur Chunk]] (gunpowder), [[Quartz]] (nether quartz), [[Fire Starter]] (flint and steel) and [[Glass Bottle#Water bottle|Water Bottle]] (the contentless potion shown in recipes).
+
+== Recipe changes ==
+The datapack removes over 350 vanilla recipes in its <code>pack.mcmeta</code> filter and adds its own.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> For blocks, the changes follow a few patterns:
+* '''Cheaper basics.''' [[Chest]]s can be crafted from 8 logs (4 chests), [[Glass Bottle|glass bottles]] come 3 per glass, [[Electric Inverter|electric inverters]] 8 per craft, ladders 8 per craft, [[TNT]] 2 per craft, and [[Chain|chains]] 18 from three iron ingots.
+* '''Early access.''' Blocks that vanilla locks behind late-game materials get recipes from common ones: [[Sack]]s from sturdy leather, [[Malachite|malachite]] from copper, [[Phosphor lamps|phosphor lamps]] and [[Phosphor Rod|phosphor rods]] from glow lichen, and [[Electric Wire|electric wire]] from copper ingots.
+* '''Everything can be undone.''' Two slabs of nearly any material craft back into the full block, stairs cut back into their block in the [[stonecutter]], and many compressed blocks can be uncrafted (bamboo, ice, sculk, melons, amethyst).<ref>{{Cite changelog|0.6-alpha|quote=All slabs can be crafted back into their original block}}</ref> Chiseled blocks move from the crafting grid to the stonecutter.
+* '''The stonecutter works with wood, metal and glass.''' See [[Stonecutter]] for the full list of 348 added recipes.
+* '''Firing moves to the right station.''' Stone, bricks, glass and terracotta are fired in a [[Mud Kiln|mud kiln]], and metal-like conversions (cobblestone to [[gravel]] to [[sand]], hellstone to [[hellbrick]], cracked bricks) happen in a [[Blast Furnace|blast furnace]]. Stone and copper can no longer be cooked in an [[oven]].<ref>{{Cite changelog|1.12.1-alpha|quote=Blocked Stone cooking (only kilning)}}</ref>
+* '''Cloning.''' Most small flowers, dripleaves, spore blossoms and [[Lily Pad|lily pad]]s can be multiplied fourfold with a water bottle and bone meal. See [[Hyacinth#Cloning]].
+
+The design video explains the intent: "I made a lot of tweaks to the recipes to make them kinder for players. Prismarine is craftable from copper. Stone cutters give you more bang for your buck. Can be used with almost all materials."<ref>{{Cite video|quote=I made a lot of tweaks to the recipes to make them kinder for players.}}</ref>
+
+== Drop changes ==
+The pack overrides the loot tables of 91 blocks.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks}}</ref> Apart from ores (see [[Ores]]) and crops (see the food articles), the changes are:
+{| class="wikitable sortable"
+! Block !! Change
+|-
+| [[Leaves]] (all kinds) || No saplings or sticks. Oak and dark oak drop apples more often, and also with the electrum tool intrinsic.
+|-
+| [[Gravel]] || Always drops 1 dirt and 1 flint instead of gravel or flint.
+|-
+| [[Short Grass|Short grass, tall grass, ferns]] || Wheat grain only drops when cut with a hoe; ferns never drop it. Hoes collect the plants themselves.
+|-
+| Bush, dead bush, dry grass, vines || Can be collected with a hoe as well as shears.
+|-
+| [[Glow Lichen]] || Collected with a hoe or shears.
+|-
+| [[Sculk|Sculk]] || Drops 4 sculk veins without Silk Touch.
+|-
+| Sculk vein || Drops itself with any tool.
+|-
+| Sculk sensor, calibrated sculk sensor, sculk shrieker || Drop an echo shard without Silk Touch.
+|-
+| [[Malachite#Malachite Lantern|Malachite lantern]] || Always drops itself.
+|-
+| Ender chest || Always drops itself, instead of 8 obsidian without Silk Touch.
+|-
+| [[Kindling]], [[Soul Kindling]] || Always drop themselves, unlit, instead of charcoal or soul soil.
+|-
+| [[Bookshelf]] || Drops 1 book instead of 3.
+|-
+| Enchanting table || Drops 2 diamonds, 4 obsidian and a [[Hell-Bound Book|hell-bound book]], refunding its parts; the pack removes enchanting tables.
+|-
+| Melon, sweet berry bush, cave vines, chorus plant, carrots, wheat, tomatoes || Drop the pack's food items; Fortune and the electrum tool intrinsic add to the drops of most of them. See [[Food]].
+|-
+| [[Snow]], snow block || Snowballs stack to 64.
+|-
+| [[Spawner]] || Drops a [[Divine Fragment|divine fragment]].
+|}
+Notes on the crop tables:
+* The 1.12.2 notes say Fortune now works on tomatoes, glow berry vines and chorus plants.<ref>{{Cite changelog|1.12.2|quote=Fortune now works on: Tomatoes, Glow berry vines, Chorus Plant}}</ref> In the tomato (beetroot) and chorus plant tables, however, a fixed count (1–3 tomatoes, 0–1 chorus fruit) is set ''after'' the Fortune bonus, which replaces it, so Fortune has no effect on those two.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/chorus_plant.json}}</ref> On cave vines it works.
+* The cave vine tables have no check for whether the vine is carrying berries, unlike vanilla, so every broken cave vine block drops glow berries.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/cave_vines.json}}</ref>
+
+=== Adamant auto-smelting ===
+A tool with the [[Adamant equipment|adamant]] tool intrinsic smelts some blocks as they are mined:<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/stone.json}}</ref>
+{| class="wikitable"
+! Block !! Drops
+|-
+| [[Limestone]] || Smooth stone
+|-
+| Cobblestone || Limestone
+|-
+| Cobbled deepslate || Deepslate
+|-
+| Mossy cobblestone || Cobblestone
+|-
+| Mossy stone bricks || Stone bricks
+|-
+| Sandstone || Smooth sandstone
+|-
+| Basalt || Smooth basalt
+|-
+| Sand, red sand || Glass (Fortune applies)
+|-
+| [[Hellstone]] || [[Hellbrick]] (Fortune applies)
+|-
+| Logs and stripped logs || Charcoal (Fortune applies)
+|-
+| Raw iron, copper and gold blocks || Blocks of iron, copper and gold
+|}
+Where "Fortune applies", both [[Fortune]] and the electrum tool intrinsic increase the drop, using the ore formula.
+
+== Tag changes ==
+The pack edits several block tags:<ref>{{Source|MF_datapack/data/minecraft/tags/block}}</ref>
+* '''Climbable''': every [[chain]] can be climbed like a ladder.
+* '''Endermen''' can only pick up melons, pumpkins and [[TNT]] (the tag is replaced, not extended).<ref>{{Source|MF_datapack/data/minecraft/tags/block/enderman_holdable.json}}</ref>
+* '''Mineable with a pickaxe''': glass and stained glass (blocks and panes), mob heads, the beacon, glowstone ([[Crystallized Estus|crystallized estus]]), [[Malachite#Malachite Lantern|malachite lanterns]], [[Electric Lamp|electric lamps]], [[Phosphor lamps|phosphor lamps]], the [[Copper Eye|copper eye]], levers and frosted ice.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
+* '''Mineable with a hoe''': wool, carpets, [[Glow Lichen|glow lichen]] and phosphor lamps.
+* '''Mineable with an axe''': beds, candles, cactus and honeycomb blocks.
+* '''Mineable with a shovel''': [[Dirt Slab|dirt slabs]].
+* '''Supports vegetation''': sand, red sand and packed mud, so grass and flowers can be placed on them.<ref>{{Source|MF_datapack/data/minecraft/tags/block/supports_vegetation.json}}</ref>
+* '''Nether portal frame''': crying obsidian counts as well as obsidian.<ref>{{Source|MF_datapack/data/minecraft/tags/block/nether_portal_frame.json}}</ref>
+The pack also defines its own tag of path blocks for the [[Trailblaze]] enchantment (coarse dirt, gravel, dirt paths, packed mud, mud bricks and their slabs and stairs, and dirt slabs), and tags of blocks that wooden, copper and iron tools cannot mine.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref>
+
+== Resource pack changes ==
+The resource pack retextures a large number of blocks. Changes with their own articles:
+* [[Vertical slabs]]: doubled wooden slabs show vertical planks.
+* [[Large bricks]]: doubled andesite, diorite, granite, cut sandstone and brick slabs show large bricks.
+* [[Poplar]]: textures prepared for a future wood type.
+* [[Glow Lichen]]: three-dimensional tufts on floors and worm-like strands on ceilings.
+* [[Rose]]: rose and cyan rose models for item frames.
+* Random texture variations for dirt, coarse dirt, [[Dirt Slab|dirt slabs]], gravel, rooted dirt, lily pads and several flowers.
+
+== History ==
+{{History
+|{{History line|0.5-alpha|Leaves no longer drop saplings or sticks.}}
+{{History line|0.6-alpha|All slabs can be crafted back into their full block; chiseled blocks move to the stonecutter.<br />Sand, red sand and packed mud support vegetation.}}
+{{History line|0.7-alpha|All "Nether" blocks renamed to "Hell".}}
+{{History line|1.0|End stone bricks became brown sandstone, and froglights became phosphor lamps.}}
+{{History line|1.12.1-alpha|Stone, terracotta, quartz and other blocks can no longer be cooked in an oven; they are kilned or blasted instead.<br />Crying obsidian counts as a nether portal frame.}}
+{{History line|1.12.2|Chains are climbable, and endermen can only pick up melons, pumpkins and TNT.<br />Vertical slab and poplar textures added.}}
+}}
+
+== See also ==
+* [[Renamed items]]
+* [[Changes from vanilla]]
+* [[Stonecutter]]
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
