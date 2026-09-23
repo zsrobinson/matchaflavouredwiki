@@ -117,8 +117,7 @@ The wiki is derived entirely from upstream sources, so a scheduled agent keeps i
 - Video transcripts are primary sources and are kept in `sources/transcripts/` (the first design
   video is also `transcript.txt`). `tools/fetch_transcripts.py` adds new ones.
 
-It runs as a daily Claude Code cloud routine with the prompt "Follow AUTOPILOT.md" and the environment
-setup script `pip install --quiet --upgrade pillow yt-dlp`.
+It runs as a daily Claude Code cloud routine with the prompt "Follow AUTOPILOT.md".
 
 ## Licence
 
