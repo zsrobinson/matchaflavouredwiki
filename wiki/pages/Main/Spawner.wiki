@@ -7,7 +7,7 @@
 A '''spawner''' (monster spawner) in [[Matcha Flavoured]] is worth breaking rather than farming. Breaking one drops a {{ItemLink|Divine Fragment}}, most mobs from the pack's spawners drop nothing, and putting a spawn egg on a spawner destroys every spawner nearby and hurts the player.
 
 == Obtaining ==
-Spawners can't be obtained as items in Survival. When broken, a spawner drops one {{ItemLink|Divine Fragment}} instead of experience.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/spawner.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/divine_fragment.json}}</ref> Fortune doesn't increase the drop.
+Spawners can't be obtained as items in Survival. When broken, a spawner drops one {{ItemLink|Divine Fragment}}.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/spawner.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/divine_fragment.json}}</ref> Fortune doesn't increase the drop.
 
 == Generation ==
 The pack generates its own spawners in several structures:<ref>{{Source|MF_datapack/data/minecraft/worldgen/configured_feature/monster_room.json}}</ref>

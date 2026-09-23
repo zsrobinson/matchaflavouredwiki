@@ -7,7 +7,7 @@ The '''Prayer of Man''' is a [[blessing]], a crafted enchanted book that stores 
 The book in the center must be a [[Hell-Bound Book]].<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/warding.json}}</ref> The crafted item is named "Blessing", with "Prayer of Man" as a dark gray lore line.
 
 == Usage ==
-The Prayer of Man is applied to equipment in an [[anvil]], like an {{MCW|Enchanted Book|enchanted book}}. Warding 2 is one of the pack's [[intrinsic]] enchantments, which burns nearby undead mobs; the warding enchantments are exclusive with each other and with the other alloy intrinsics. The book shows Warding as its glyph (✟) rather than a name. Smite applies to weapons. The book has rare rarity.
+The Prayer of Man is applied to equipment in an [[anvil]], like an {{MCW|Enchanted Book|enchanted book}}. Warding 2 is one of the pack's [[intrinsic]] enchantments, which damages and slows nearby undead mobs; the warding enchantments are exclusive with each other and with the other alloy intrinsics. The book shows Warding as its glyph (✟) rather than a name. Smite applies to weapons. The book has rare rarity.
 
 == History ==
 {{History|
@@ -16,7 +16,7 @@ The Prayer of Man is applied to equipment in an [[anvil]], like an {{MCW|Enchant
 }}
 
 == Trivia ==
-* Unlike the other prayers, it is not addressed to a deity. Its texture file is named <code>blessing_warding</code>.
+* Unlike most prayers, it is not named after a god or mythological figure. Its texture file is named <code>blessing_warding</code>.
 
 == See also ==
 * [[Blessing]], the full list

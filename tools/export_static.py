@@ -121,8 +121,17 @@ class Exporter:
         doc = doc.replace('class="client-nojs', 'class="client-js')
         # red links: keep the styling, remove the edit link
         doc = re.sub(r'<a href="[^"]*action=edit[^"]*redlink=1"([^>]*)>(.*?)</a>', r'<span class="new"\1>\2</span>', doc, flags=re.S)
+        # legacy Vector forces a 1120px desktop viewport on phones; the vendored minecraft.wiki CSS
+        # already has narrow-screen rules (sidebar below the content, scrolling tables), so let it apply
+        doc = doc.replace('<meta name="viewport" content="width=1120">',
+                          '<meta name="viewport" content="width=device-width, initial-scale=1">', 1)
         # absolute links back to the dev server -> site-relative
         doc = doc.replace(self.base + '/', '/')
+        # MediaWiki endpoints that don't exist on the static site: API discovery, the recent-changes
+        # feed, and the print footer's permanent link (point it at the page's public URL instead)
+        doc = re.sub(r'<link rel="(?:EditURI|alternate)" type="application/(?:rsd|atom)\+xml"[^>]*>\n?', '', doc)
+        doc = re.sub(r'<a dir="ltr" href="/index\.php\?title=([^"&]+)&amp;oldid=\d+">[^<]*</a>',
+                     lambda m: '<a dir="ltr" href="/w/%s">%s/w/%s</a>' % (m.group(1), seo.SITE, m.group(1)), doc)
         # links to capitalisation redirects go straight to the article (case-insensitive file
         # systems can't hold both "Mud_kiln.html" and "Mud_Kiln.html")
         def fix(m):

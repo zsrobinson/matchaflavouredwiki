@@ -2,7 +2,7 @@
 
 {{Spoiler}}
 
-A '''Cooking Recipe''' is a paper note that teaches one [[Secret recipes|secret recipe]]. Picking it up immediately adds the recipe to the recipe book.<ref>{{Source|MF_datapack/data/matcha/advancement/cooking_recipes/gnocchi_recipe.json}}</ref> There are four, each with its own texture and the dish's name in its tooltip.
+A '''cooking recipe''' is a paper note that teaches one [[Secret recipes|secret recipe]]. Picking it up immediately adds the recipe to the recipe book.<ref>{{Source|MF_datapack/data/matcha/advancement/cooking_recipes/gnocchi_recipe.json}}</ref> There are four, each with its own texture and the dish's name in its tooltip.
 
 == Obtaining ==
 
@@ -21,7 +21,7 @@ A '''Cooking Recipe''' is a paper note that teaches one [[Secret recipes|secret 
 
 == Usage ==
 
-Having the paper in the inventory unlocks the recipe; the paper isn't consumed and has no other use. The recipes can also be crafted without it, since the pack doesn't limit crafting to known recipes.
+Having the paper in the inventory unlocks the recipe; the paper isn't consumed. Because recipes match ingredients by item ID only, it can also be used as ordinary paper in crafting. The recipes can also be crafted without it, since the pack doesn't limit crafting to known recipes.
 
 === Crafting ingredient ===
 {{Uses}}

@@ -5,28 +5,28 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 93.9% || biome: minecraft:deep_dark
+| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 95.3% || only in Deep Dark
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 93.9% || biome: minecraft:deep_dark
+| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 95.3% || only in Deep Dark
 |}
 
 '''Fishing'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 60.7% || biome: minecraft:deep_dark
+| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 60.7% || only in Deep Dark
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Sculk <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/sculk.json|blocks/sculk}})</small> || 4 || 50.0% || 
+| Sculk <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/sculk.json|blocks/sculk}})</small> || 4 || 100% || without Silk Touch
 |-
 | Sculk vein <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/sculk_vein.json|blocks/sculk_vein}})</small> || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-'''Shakudo boots''' are the [[Shakudo equipment|shakudo]] [[Armor#Boots|boots]], made by smithing [[copper boots]] with [[shakudo alloy]]. They clear Levitation.
+'''Shakudo boots''' are [[Armor#Boots|boots]] of the [[Shakudo equipment|shakudo]] tier, made by smithing [[copper boots]] with [[shakudo alloy]]. They clear Levitation.
 
 == Obtaining ==
 
@@ -19,7 +19,7 @@ They give 3 armor with 500 durability, the same armor as the matching diamond pi
 === Intrinsics ===
 * '''[[Cleanse]]''': removes Levitation from the wearer whenever it is applied.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/cleanse_armor_feet.mcfunction}}</ref>
 * '''Magic protection''': [[Magic protection]] adds 8 protection points against magic damage, such as Poison and Instant Damage.<ref>{{Source|MF_datapack/data/matcha/enchantment/magic_protection.json}}</ref>
-* '''Regeneration''': Every worn piece of shakudo armor counts towards the tier's regeneration: with one piece the wearer gets Regeneration I for 3 seconds every 30 seconds, and each extra piece shortens the interval by 4 seconds, to 26, 22 and 18 seconds. The [[Elytra#Shakudo Elytra|shakudo elytra]] counts as one piece. The pack defines an elytra bonus that would count five and grant Regeneration II, but the elytra does not carry it, so four pieces is the most that can be reached (see [[Set bonus#Shakudo regeneration]]).<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
+* '''Regeneration''': Every worn piece of shakudo armor counts towards the tier's regeneration: with one piece the wearer gets Regeneration I for 3 seconds every 30 seconds, and each extra piece shortens the interval by 4 seconds, to 26, 22 and 18 seconds. The [[Elytra#Shakudo Elytra|shakudo elytra]] counts as one piece. The pack defines an elytra bonus that would count five and grant Regeneration II, but the elytra does not carry it, so four worn pieces is the most that can be reached. The intrinsic also counts in the main hand, so holding a fifth shakudo piece raises the count to five: Regeneration II every 20 seconds (see [[Set bonus#Shakudo regeneration]]).<ref>{{Source|MF_datapack/data/matcha/enchantment/shakudo_armour.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
 
 Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 

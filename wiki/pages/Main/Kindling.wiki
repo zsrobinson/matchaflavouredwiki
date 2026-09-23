@@ -11,12 +11,12 @@ Kindling is crafted from 2 sticks and 2 logs, and always comes out unlit.<ref>{{
 Kindling always drops itself, unlit, instead of charcoal.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/campfire.json}}</ref>
 
 == Usage ==
-Kindling has to be lit with [[tinder]] or a [[Fire Starter|fire starter]] before it can cook. Lighting it grants ''Prometheus be Damned''.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/light_campfire.json}}</ref>
+Kindling has to be lit, for example with [[tinder]] or a [[Fire Starter|fire starter]], before it can cook. Lighting it grants ''Prometheus be Damned''.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/light_campfire.json}}</ref>
 
 === Cooking ===
 {{Main|Cooking}}
 Up to four items cook at once, each in 5 seconds (15 seconds for the oven meals), much faster than a vanilla campfire's 30 seconds. It cooks:
-* All simple preparations of [[intrinsic]] ingredients.
+* The simple preparations of [[intrinsic]] ingredients, except popped chorus fruit and dried kelp.
 * [[Bread]], [[Baked Potato|baked potato]]es, [[Fried Egg|fried egg]]s, [[nopales]], [[molasses]] and cooked meat and fish.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/molasses.json}}</ref>
 * [[Green Curry|Green curry]], [[Japanese Curry|Japanese curry]], [[Paneer Makhani|paneer makhani]] and [[Tonkotsu Ramen|tonkotsu ramen]] from their [[stock]]s.
 

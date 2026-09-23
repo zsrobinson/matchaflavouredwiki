@@ -21,8 +21,8 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Lapis ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/lapis_ore.json|blocks/lapis_ore}})</small> || 2–5 || 33.3% || 
+| Lapis ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/lapis_ore.json|blocks/lapis_ore}})</small> || 2–5 || 100% || without Silk Touch, specific tool
 |-
-| Redstone ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/redstone_ore.json|blocks/redstone_ore}})</small> || 2–3 || 33.3% || 
+| Redstone ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/redstone_ore.json|blocks/redstone_ore}})</small> || 2–3 || 100% || without Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

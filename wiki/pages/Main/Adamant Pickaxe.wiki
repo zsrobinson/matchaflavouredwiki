@@ -3,7 +3,7 @@
 |renewable=No
 }}
 
-An '''adamant pickaxe''' is the [[Adamant equipment|adamant]] [[Tools#Pickaxe|pickaxe]], the pack's replacement for the netherite pickaxe. It is made by smithing a [[diamond pickaxe]] with [[adamant alloy]], and it smelts what it mines.
+An '''adamant pickaxe''' is a [[Tools#Pickaxe|pickaxe]] of the [[Adamant equipment|adamant]] tier, the pack's replacement for the netherite pickaxe. It is made by smithing a [[diamond pickaxe]] with [[adamant alloy]], and it smelts what it mines.
 
 == Obtaining ==
 
@@ -36,11 +36,14 @@ In a [[blast furnace]] it melts down into one [[adamant alloy]], returning the a
 === Trading ===
 An apprentice [[weaponsmith]] buys it for one [[adamant alloy]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/netherite_pickaxe.json}}</ref>
 
+== Notes ==
+* The tooltip includes the armor's "Set Bonus" line (two health glyphs every 30 seconds), but tools don't count toward the adamant set bonus.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_pickaxe.json}}</ref> See [[Known bugs]].
+
 == History ==
 {{History|
 {{History line|1.03|The vanilla netherite recipes were blocked.}}
 {{History line|1.10|A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
-{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. [[Divinity]] was replaced with Efficiency.}}
+{{History line|1.12.1-alpha|Smithing no longer needs a base-metal item in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. [[Divinity]] was replaced with Efficiency.}}
 {{History line|1.12.2|Now smelts the blocks it mines. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}
 

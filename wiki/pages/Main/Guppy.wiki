@@ -29,12 +29,12 @@ The recipes match any <code>minecraft:cod</code>, so every small fish gives the 
 Because it is a cod underneath, it can be used wherever a raw cod is accepted: the [[Green Curry Stock|green curry stock]] recipe takes any cod or salmon.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_green_curry.json}}</ref>
 
 === Trading ===
-The [[Fisherman]] buys 12 caught guppy for 1 [[Obol]] once he reaches Apprentice level. Only fish caught by fishing (with the ⭐☆☆☆ line) are accepted.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/2/guppy.json}}</ref>
+The [[Fisherman]] buys 12 caught guppy for 1 [[Obol]] once he reaches Apprentice level. Only fish with the ⭐☆☆☆ rarity line, which the fishing loot tables add, are accepted.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/2/guppy.json}}</ref>
 
 {{Uses}}
 
 == Angler's Almanac ==
-The [[Angler's Almanac]] has an entry for the guppy under Tropical Freshwater (listed chance 35.7%) and Brackish (listed chance 35.7%), unlocked by catching one while the almanac tab is open.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Its description reads:
+The [[Angler's Almanac]] has an entry for the guppy under Tropical Freshwater (listed chance 35.7%) and Brackish (listed chance 35.7%), unlocked by catching one after the player has obtained the almanac.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Its description reads:
 <blockquote>''A tiny colorful fish that can turn a peaceful aquarium into a rapidly expanding apartment complex.''</blockquote>
 
 == Advancements ==

@@ -43,7 +43,7 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 |-
 | Cleric splash potions of Weakness, Invisibility and Poison || [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] || The developer plans to remove all potion trades.
 |-
-| Butcher's knife smithing recipe || 1.12.1-alpha ||
+| [[Cleaver]] (butcher's knife) smithing recipe || 1.12.1-alpha ||
 |-
 | [[Estus Flask]] || [[Matcha Flavoured 1.12.2|1.12.2]] || First removed in 1.10 because players were abusing it, kept in 1.12, and removed for good in 1.12.2 because the developer wanted food to matter most.<ref>{{Cite changelog|1.12.2|quote=Estus Flask, I want food to be most important}}</ref> A recipe unlock and particle trigger for it remain in the code, but the recipe no longer exists.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/estus_ash.json}}</ref>
 |-

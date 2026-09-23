@@ -5,12 +5,12 @@
 Electrum alloy is crafted from four gold ingots, four silver bullion and a [[Divine Fragment|divine fragment]]. Diamond equipment is upgraded at a [[Smithing Table|smithing table]] ([[Smithing Upgrade Template|template]] for the dolabra and mattock). It can only be repaired with blocks of diamond, which the 1.12.1-alpha notes explain is meant to keep players from always wearing it.
 
 == Characteristics ==
-* Tools carry the electrum fortune intrinsic (level 3 on most, 2 on the mattock), which works exactly like Fortune and cannot be combined with Fortune or Silk Touch.
+* Tools carry the electrum fortune intrinsic (level 3 on most, 2 on the mattock), which the pack's block loot tables treat like Fortune; it cannot be combined with Fortune or Silk Touch.<ref>{{Source|MF_datapack/data/matcha/enchantment/electrum_tool.json}}</ref>
 * The sword has {{G|Warding}} 3, Smite III and Looting II; the axe and spear have {{G|Warding}} 2.
 * Each armor piece adds +1 to [[Warding]]; the full set adds the [[Set bonus|set bonus]].
 * Electrum items use the netherite item IDs, so they do not burn in fire or lava, and the armor counts as piglin-safe.
 
-The video says electrum has "maximum looting and fortune. Its armor and tools when worn or held burn nearby dead."{{Cite video|quote=Electrum, a silver gold alloy with a maximum looting and fortune. Its armor and tools when worn or held burn nearby dead.}}
+The video says electrum has "maximum looting and fortune. Its armor and tools when worn or held burn nearby dead."<ref>{{Cite video|quote=Electrum, a silver gold alloy with a maximum looting and fortune. Its armor and tools when worn or held burn nearby dead.}}</ref>
 
 == Trivia ==
 * Because electrum items use netherite IDs, smelting them in a blast furnace gives an [[Adamant Alloy|adamant alloy]].

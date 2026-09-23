@@ -5,32 +5,32 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 66.2% || biome: #minecraft:freshwater_cool
+| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 68.5% || only in [[Fishing#Cool freshwater|cool freshwater biomes]]
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 66.2% || biome: #minecraft:freshwater_temperate
+| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 68.5% || only in [[Fishing#Temperate freshwater|temperate freshwater biomes]]
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 66.2% || biome: minecraft:dripstone_caves, minecraft:lush_caves
+| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 68.5% || only in Dripstone Caves, Lush Caves
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 66.2% || biome: #minecraft:freshwater_cool
+| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 68.5% || only in [[Fishing#Cool freshwater|cool freshwater biomes]]
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 66.2% || biome: #minecraft:freshwater_temperate
+| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 68.5% || only in [[Fishing#Temperate freshwater|temperate freshwater biomes]]
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 66.2% || biome: minecraft:dripstone_caves, minecraft:lush_caves
+| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 68.5% || only in Dripstone Caves, Lush Caves
 |}
 
 '''Fishing'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || biome: #minecraft:freshwater_cool
+| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || only in [[Fishing#Cool freshwater|cool freshwater biomes]]
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || biome: #minecraft:freshwater_temperate
+| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || only in [[Fishing#Temperate freshwater|temperate freshwater biomes]]
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || biome: minecraft:dripstone_caves, minecraft:lush_caves
+| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || only in Dripstone Caves, Lush Caves
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

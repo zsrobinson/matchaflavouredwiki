@@ -32,7 +32,7 @@ Temporary extra health from {{EffectLink|Health Boost}} and {{EffectLink|Absorpt
 {{Main|Natural regeneration}}
 The <code>natural_health_regeneration</code> game rule is turned off, so a full hunger bar never heals the player.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref> Health has to be restored actively:
 * [[Food]]: most of the pack's foods heal through {{MCW|Instant Health}} or {{EffectLink|Regeneration}} instead of restoring hunger. See [[Hunger]].
-* {{ItemLink|Raw Estus}}, dropped by undead mobs, heals the player when picked up.
+* {{ItemLink|Raw Estus}}, dropped by zombies and their variants, heals the player when picked up.
 * A [[Warding Stone|warding stone]] heals players and other friends of villagers nearby.
 * Some equipment, such as [[Shakudo equipment]], restores health.
 * A [[Crystal Heart|crystal heart]], when used, sets health to 1 and then applies Regeneration XI for 3 seconds.

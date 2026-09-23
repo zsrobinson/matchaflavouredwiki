@@ -33,12 +33,20 @@ def render(title):
             for m in re.findall(r'class="(?:error|scribunto-error)[^"]*"[^>]*>(.*?)</(?:strong|span|div)>', body)]
     if 'Template loop detected' in body:
         errs.append('template loop')
+    # past the 2 MB include limit MediaWiki stops expanding templates and prints a bare link instead
+    # (category listings and template docs link templates by name on purpose)
+    unexpanded = [] if title.startswith(('Template:', 'Category:')) else re.findall(r'<a [^>]*title="(Template:[^"]+)"[^>]*>Template:', body)
+    for m in unexpanded[:3]:
+        errs.append('template not expanded (include size limit?): ' + html.unescape(m))
     # wikitext that failed to parse shows up as literal brackets (e.g. an image inside a link label)
     visible = re.sub(r'<(script|style|code|pre)[^>]*>.*?</\1>', '', body, flags=re.S)
     for m in re.findall(r'\[\[[^\]<]{1,80}\]\]|\{\{[^}<]{1,80}\}\}', re.sub(r'<[^>]+>', '', visible))[:3]:
         errs.append('unparsed wikitext: ' + m)
     red = set(html.unescape(m) for m in re.findall(r'class="new" title="([^"]+) \(page does not exist\)"', body))
     files = [r for r in red if r.startswith('File:')]
+    # a missing image links to Special:Upload instead of carrying the "(page does not exist)" title
+    files += sorted(set('File:' + html.unescape(urllib.parse.unquote(m)).replace('_', ' ')
+                        for m in re.findall(r'wpDestFile=([^"&]+)', body)) - set(files))
     red = [r for r in red if not r.startswith('File:')]
     return title, errs, red, files
 

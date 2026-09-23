@@ -36,7 +36,7 @@ Entries are completed by reeling in the matching item with a fishing rod, and on
 
 === Discrepancies ===
 * The junk category has entries for a bowl and a tripwire hook, but neither is in the current [[fishing junk]] table, so the tab can't be fully completed.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/junk/bowl.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
-* The listed chances don't always match the loot tables. The Creaking Fish is listed at 25% of Pale Garden catches but has 17.95%, and the junk percentages come from an older junk table.
+* The listed chances don't always match the loot tables. The Pale Garden entries list 25% for the Creaking Fish, 71.4% for pale hanging moss and 3.6% for resin clump, but the table gives 17.95%, 51.28% and 30.77%. The junk percentages don't match the current junk table either.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/pale_garden.json}}</ref>
 * The Cool Freshwater biome list leaves out Dark Forest and Old Growth Spruce Taiga, which are in the loot tag.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/freshwater/cool/root.json}}</ref>
 * Any bone reeled in completes the Fish Bones entries.
 
@@ -44,9 +44,7 @@ Entries are completed by reeling in the matching item with a fishing rod, and on
 {{History|
 {{History line|1.12.1-alpha|Added.}}
 {{History line|1.12.2|Fixed the tropical fish entries, which couldn't be unlocked.}}
-|-
-! Upcoming
-| Fixed the Hot Saltwater pufferfish entry, which couldn't be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>
+{{History line|Upcoming|2=Fixed the Hot Saltwater pufferfish entry, which couldn't be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>}}
 }}
 
 == See also ==

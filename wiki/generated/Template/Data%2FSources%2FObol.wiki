@@ -39,8 +39,6 @@
 |-
 | Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 45.6% || 
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1–2 || 5.79% || open water
-|-
 | Village / village fletcher <small>({{Source|vanilla:loot_table/chests/village/village_fletcher.json|chests/village/village_fletcher}})</small> || 1 || 12.3% || 
 |-
 | Village / village mason <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_mason.json|chests/village/village_mason}})</small> || 1 || 37.7% || 
@@ -65,8 +63,6 @@
 ! Source !! Stack size !! Chance !! Notes
 |-
 | Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/bogged.json|entities/bogged}})</small> || 1 || 9.09% || player kill
-|-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1–2 || 5.79% || open water
 |-
 | Evoker <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/evoker.json|entities/evoker}})</small> || 0–1 || 50.0% || player kill
 |-
@@ -101,7 +97,7 @@
 | Village plains <small>({{Source|MF_datapack/data/minecraft/loot_table/archaeology/village_plains.json|archaeology/village_plains}})</small> || 1 || 15.8% || 
 |}
 
-'''Structures'''
+'''Decorated pots'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-

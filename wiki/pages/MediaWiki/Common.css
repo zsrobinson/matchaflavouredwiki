@@ -67,3 +67,6 @@ body.page-Matcha_Flavoured_Wiki #firstHeading { display: none; }
 
 /* The pack's tooltip glyphs ({{G}}, {{Hp}}) are drawn dark for light pages: lighten them in dark mode */
 body.wgl-theme-dark .glyph img { filter: invert(1) brightness(0.92); }
+
+/* Phones: the longest main-page tile label ("Advancements") is wider than its tile at 12px */
+@media screen and (max-width: 480px) { .mp-icon-wrapper .mp-icon-link { font-size: 11px; } }

@@ -2,8 +2,8 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Grass Block|mcw=Grass Block}} || 1 || 50.0% || 50.0% || Silk Touch
+| {{ItemLink|Grass Block|mcw=Grass Block}} || 1 || 100% || 100% || Silk Touch
 |-
-| {{ItemLink|Dirt}} || 1 || 50.0% || 50.0% || 
+| {{ItemLink|Dirt}} || 1 || 100% || 100% || without Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -40,8 +40,9 @@ PY
   mv build/image_hashes.json.pending build/image_hashes.json
 fi
 docker exec "$C" php maintenance/run.php rebuildrecentchanges >/dev/null
-docker exec "$C" php maintenance/run.php initSiteStats --update >/dev/null
 docker exec "$C" php maintenance/run.php refreshLinks >/dev/null 2>&1 || true
+# after refreshLinks: the article count ($wgArticleCountMethod = link) reads the pagelinks table
+docker exec "$C" php maintenance/run.php initSiteStats --update >/dev/null
 docker exec "$C" php maintenance/run.php purgeList --all-namespaces >/dev/null 2>&1 || true
 docker exec "$C" php maintenance/run.php runJobs --quiet >/dev/null 2>&1 || true
 docker exec "$C" chown -R www-data:www-data /var/www/data /var/www/html/images

@@ -29,12 +29,12 @@ The recipes match any <code>minecraft:cod</code>, so every small fish gives the 
 Because it is a cod underneath, it can be used wherever a raw cod is accepted: the [[Green Curry Stock|green curry stock]] recipe takes any cod or salmon.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_green_curry.json}}</ref>
 
 === Trading ===
-The [[Fisherman]] buys 12 caught crappie for 1 [[Obol]] once he reaches Apprentice level. Only fish caught by fishing (with the ⭐☆☆☆ line) are accepted.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/2/crappie.json}}</ref>
+The [[Fisherman]] buys 12 caught crappie for 1 [[Obol]] once he reaches Apprentice level. Only fish with the ⭐☆☆☆ rarity line, which the fishing loot tables add, are accepted.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/2/crappie.json}}</ref>
 
 {{Uses}}
 
 == Angler's Almanac ==
-The [[Angler's Almanac]] has an entry for the crappie under Cool Freshwater (listed chance 35.7%) and Temperate Freshwater (listed chance 35.7%), unlocked by catching one while the almanac tab is open.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Its description reads:
+The [[Angler's Almanac]] has an entry for the crappie under Cool Freshwater (listed chance 35.7%) and Temperate Freshwater (listed chance 35.7%), unlocked by catching one after the player has obtained the almanac.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Its description reads:
 <blockquote>''A fish with an unfortunate name and the confidence to be delicious anyway.''</blockquote>
 
 == Advancements ==

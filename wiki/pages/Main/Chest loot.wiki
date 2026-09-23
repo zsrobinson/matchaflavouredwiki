@@ -9,7 +9,7 @@ Across the pack's tables:<ref>{{Source|MF_datapack/data/minecraft/loot_table/che
 * Vanilla armor, tools and weapons are replaced by calls to shared equipment tables (see [[#Equipment tables]]) or to the pack's own equipment tables, which give the pack's versions of the items.
 * Vanilla foods such as bread, apples and golden apples are replaced by the pack's versions, so they stack with player-made food.
 * [[Crystal Heart]]s, [[divine fragment]]s and [[sacred texts]] such as [[The Book of Enoch]], [[The Avesta]], [[The Quran]], [[The Tanakh]], [[The Divine Comedy]] and [[Paradise Lost]] appear in structure chests.
-* Most tables have a <code>quality</code> value on their entries, so the {{MCW|Luck}} attribute affects the results.<ref>{{Cite changelog|1.12.1-alpha|quote=Luck works, I've added the quality field to all chest loottables and even some other things.}}</ref>
+* Some entries have a <code>quality</code> value, so the {{MCW|Luck}} attribute affects them. The 1.12.1-alpha notes say the field was added to all chest tables, but in the current code only 14 chest tables use it, mostly on a few rare entries (the ancient city and bastion tables use it most).<ref>{{Cite changelog|1.12.1-alpha|quote=Luck works, I've added the quality field to all chest loottables and even some other things.}}</ref>
 * Rotten flesh, redstone and experience bottles are removed from most tables.
 
 == Abbey ==
@@ -221,7 +221,7 @@ Shared tables that other chest tables call to pick a random piece of equipment.
 * Crystal Hearts added to mineshafts; The Avesta added to desert wells, and its chance in desert pyramids lowered from 50% to 33%.
 * Sweet Berry Mash removed from stronghold corridor chests.}}
 {{History line|1.12|date=August 12, 2026|Buffed buried treasure.}}
-{{History line|1.12.1-alpha|date=September 1, 2026|Added the quality field to all chest loot tables.
+{{History line|1.12.1-alpha|date=September 1, 2026|Added the quality field to chest loot tables.
 * Nautilus shells added to buried treasure; the Abbey tower chest always has The Quran or The Tanakh.
 * Bonus chest added.}}
 {{History line|1.12.2|date=September 19, 2026|Many loot tables buffed; cut diamonds replaced by raw diamonds.

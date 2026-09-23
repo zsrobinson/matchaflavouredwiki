@@ -5,7 +5,7 @@ An '''oven''' is a block used to cook [[food]]. It replaces the {{MCW|Furnace|fu
 == Obtaining ==
 === Crafting ===
 {{Recipes}}
-The oven needs 3 iron ingots, 5 blocks of bricks and a [[kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/oven.json}}</ref> The vanilla furnace recipe is removed. Crafting one grants the advancement ''Now You're Cooking''.
+The oven needs 3 iron ingots, 4 blocks of bricks and a [[kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/oven.json}}</ref> The vanilla furnace recipe is removed. Crafting one grants the advancement ''Now You're Cooking''.
 
 == Usage ==
 === Cooking food ===
@@ -17,7 +17,7 @@ The oven cooks every food that [[kindling]] can, plus a few that only it can:<re
 * [[Popped Chorus Fruit|Popped chorus fruit]] and [[Dried Kelp|dried kelp]], which only the oven makes.
 * The oven meals: [[Green Curry|green curry]], [[Japanese Curry|Japanese curry]], [[Paneer Makhani|paneer makhani]], [[Tonkotsu Ramen|tonkotsu ramen]] and [[Pumpkin Curry|pumpkin curry]], cooked from their [[stock]]s. Pumpkin curry can only be cooked in an oven.
 
-Food takes 5 seconds and the oven meals 15 seconds. Each item gives 0.35 experience.
+Food takes 5 seconds and the oven meals 15 seconds. Each item gives 0.35 experience, except molasses (0.01).
 
 === Other smelting ===
 {| class="wikitable"

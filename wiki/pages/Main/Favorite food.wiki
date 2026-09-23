@@ -112,6 +112,9 @@ An [[Amnestic]] clears the villager's favorite food flag. Since the villager kee
 |}
 All 42 foods sell for 1 obol, including the curries and ramen, which take the most steps to cook.
 
+== History ==
+The favorite food was contributed by TankyAibem (pull request #193), as a rework of the "local flavors" add-on. It was merged into the repository's <code>main</code> branch about an hour and a half after [[Matcha Flavoured 1.12.2|1.12.2-beta]] was published on Modrinth, so the 1.12.2-beta download does not include it.<ref>[https://github.com/kleiwright/matcha-flavoured/commit/139f198a Merge of pull request #193] (2026-09-19 04:50 UTC; the beta was published at 03:20 UTC)</ref>
+
 == Trivia ==
 * The functions and tags use the internal names <code>favorite_food</code>, <code>trader_update</code> and <code>foodChecked</code>.
 * The favorite food trade is added with a data command rather than through the pack's trade sets, which is why it does not appear on the profession pages' trade tables.

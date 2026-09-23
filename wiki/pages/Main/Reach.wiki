@@ -9,7 +9,7 @@
 '''Reach''' is an [[enchantment]] added by [[Matcha Flavoured]] that lets the wearer place and break blocks from farther away.
 
 == Obtaining ==
-The [[Prayer of Will]], crafted from a [[Hell-Bound Book]] and four [[Stable Void]]s, stores Reach I. No source gives a higher level.
+The [[Prayer of Will]], crafted from a [[Hell-Bound Book]] and four [[Stable Void]]s, stores Reach I. No source gives a higher level, but as with any enchantment, two items with the same level can be combined in an [[anvil]] for the next level, up to Reach III.
 
 == Behavior ==
 A chestplate with Reach adds 2 blocks per level to the wearer's block interaction range (the <code>block_interaction_range</code> attribute), so Reach I raises it from the default 4.5 to 6.5 blocks. It does not change the range for attacking entities.<ref>{{Source|MF_datapack/data/matcha/enchantment/reach.json}}</ref>

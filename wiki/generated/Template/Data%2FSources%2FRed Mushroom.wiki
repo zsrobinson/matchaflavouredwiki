@@ -16,7 +16,7 @@
 |-
 | Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/shearing/bogged.json|shearing/bogged}})</small> || 1 || 75.0% || 
 |-
-| Mooshroom <small>({{Source|vanilla:loot_table/shearing/mooshroom.json|shearing/mooshroom}})</small> || 1 || 50.0% || entity condition
+| Mooshroom <small>({{Source|vanilla:loot_table/shearing/mooshroom.json|shearing/mooshroom}})</small> || 1 || 100% || entity condition
 |}
 
 '''Block drops'''
@@ -27,6 +27,6 @@
 |-
 | Red mushroom <small>({{Source|vanilla:loot_table/blocks/red_mushroom.json|blocks/red_mushroom}})</small> || 1 || 100% || 
 |-
-| Red mushroom block <small>({{Source|vanilla:loot_table/blocks/red_mushroom_block.json|blocks/red_mushroom_block}})</small> || -6–2 || 11.1% || 
+| Red mushroom block <small>({{Source|vanilla:loot_table/blocks/red_mushroom_block.json|blocks/red_mushroom_block}})</small> || -6–2 || 22.2% || without Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

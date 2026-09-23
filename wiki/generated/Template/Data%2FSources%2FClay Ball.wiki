@@ -14,6 +14,6 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Clay <small>({{Source|vanilla:loot_table/blocks/clay.json|blocks/clay}})</small> || 4 || 50.0% || 
+| Clay <small>({{Source|vanilla:loot_table/blocks/clay.json|blocks/clay}})</small> || 4 || 100% || without Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>
