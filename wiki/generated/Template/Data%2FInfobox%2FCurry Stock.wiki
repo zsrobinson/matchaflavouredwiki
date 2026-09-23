@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Curry Stock}}
+|invimage=Curry Stock
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Strider Spawn Egg}}
+|stackable=Yes (64)
+|id=<code>minecraft:strider_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_curry.json|uncooked_curry.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,27 @@
+<includeonly><small>Loot table <code>minecraft:archaeology/ocean_ruin_cold</code> ({{Source|MF_datapack/data/minecraft/loot_table/archaeology/ocean_ruin_cold.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Obol}} || 1 || 13.3% || 13.3% || 
+|-
+| {{ItemLink|Ink Sac}} || 1 || 13.3% || 13.3% || 
+|-
+| {{ItemLink|Coal}} || 1 || 13.3% || 13.3% || 
+|-
+| {{ItemLink|Gold Nugget}} || 1 || 13.3% || 13.3% || 
+|-
+| {{ItemLink|Blade Pottery Sherd}} || 1 || 6.67% || 6.67% || 
+|-
+| {{ItemLink|Explorer Pottery Sherd}} || 1 || 6.67% || 6.67% || 
+|-
+| {{ItemLink|Mourner Pottery Sherd}} || 1 || 6.67% || 6.67% || 
+|-
+| {{ItemLink|Plenty Pottery Sherd}} || 1 || 6.67% || 6.67% || 
+|-
+| {{ItemLink|Rusty Axe}} || 1 || 6.67% || 6.67% || 
+|-
+| {{ItemLink|Trident}} || 1 || 6.67% || 6.67% || 
+|-
+| {{ItemLink|Nautilus Shell}} || 1 || 6.67% || 6.67% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

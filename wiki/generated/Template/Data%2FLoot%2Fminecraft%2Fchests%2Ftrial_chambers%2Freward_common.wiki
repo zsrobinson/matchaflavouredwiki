@@ -1,0 +1,23 @@
+<includeonly><small>Loot table <code>minecraft:chests/trial_chambers/reward_common</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_common.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Arrow}} || 2–8 || 16.0% || 16.0% || 
+|-
+| {{ItemLink|Tipped Arrow}} || 2–8 || 16.0% || 16.0% || 
+|-
+| {{ItemLink|Obol}} || 1–2 || 16.0% || 16.0% || 
+|-
+| {{ItemLink|Wind Charge}} || 6–13 || 12.0% || 12.0% || 
+|-
+| {{ItemLink|Iron Ingot}} || 5–12 || 12.0% || 12.0% || 
+|-
+| {{ItemLink|Honey Bottle}} || 1–2 || 12.0% || 12.0% || 
+|-
+| {{ItemLink|Ominous Bottle}} || 1 || 8.00% || 8.00% || 
+|-
+| {{ItemLink|Wind Charge}} || 4–12 || 4.00% || 4.00% || 
+|-
+| {{ItemLink|Diamond}} || 2–4 || 4.00% || 4.00% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

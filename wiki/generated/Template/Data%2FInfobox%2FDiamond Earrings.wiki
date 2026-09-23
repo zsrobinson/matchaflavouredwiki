@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Diamond Earrings}}
+|invimage=Diamond Earrings
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=250
+|armor=1
+|repair=<code>#minecraft:repairs_netherite_armor</code>
+|tooltip={{G|Armor}} 1
+|id=<code>matcha:diamond_earrings</code>
+|base=<code>minecraft:netherite_helmet</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/toolsmith/1/diamond_earrings.json|diamond_earrings.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

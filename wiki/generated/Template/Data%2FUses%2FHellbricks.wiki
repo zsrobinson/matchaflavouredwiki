@@ -1,0 +1,44 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cracked Hellbricks]]
+| [[Hellbricks]]
+| {{Cooking|station=Blast Furnace|Input=Hellbricks|Output=Cracked Hellbricks|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/cracked_nether_bricks.json|matcha:blast/cracked_nether_bricks}}</small>
+|-
+| [[Hellbrick Fence]]
+| [[Hellbricks]]
+| {{Stonecutter|Input=Hellbricks|Output=Hellbrick Fence,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/nether_brick_fence_from_stonecutting_nether_bricks.json|matcha:stonecutting/nether_brick_fence_from_stonecutting_nether_bricks}}</small>
+|-
+| [[Chiseled Hellbricks]] <small>(vanilla recipe)</small>
+| [[Hellbricks]]
+| {{Stonecutter|Input=Hellbricks|Output=Chiseled Hellbricks}}
+|-
+| [[Hellbrick Fence]] <small>(vanilla recipe)</small>
+| 4 × [[Hellbricks]] +<br />2 × [[Hellbrick]]
+| {{Crafting|A1=Hellbricks|A2=Hellbricks|B1=Hellbrick|B2=Hellbrick|C1=Hellbricks|C2=Hellbricks|Output=Hellbrick Fence,6}}
+|-
+| [[Hellbrick Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Hellbricks]]
+| {{Crafting|A1=Hellbricks|B1=Hellbricks|C1=Hellbricks|Output=Hellbrick Slab,6}}
+|-
+| [[Hellbrick Slab]] <small>(vanilla recipe)</small>
+| [[Hellbricks]]
+| {{Stonecutter|Input=Hellbricks|Output=Hellbrick Slab,2}}
+|-
+| [[Hellbrick Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Hellbricks]]
+| {{Crafting|A1=Hellbricks|A2=Hellbricks|A3=Hellbricks|B2=Hellbricks|B3=Hellbricks|C3=Hellbricks|Output=Hellbrick Stairs,4}}
+|-
+| [[Hellbrick Stairs]] <small>(vanilla recipe)</small>
+| [[Hellbricks]]
+| {{Stonecutter|Input=Hellbricks|Output=Hellbrick Stairs}}
+|-
+| [[Hellbrick Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Hellbricks]]
+| {{Crafting|A1=Hellbricks|A2=Hellbricks|B1=Hellbricks|B2=Hellbricks|C1=Hellbricks|C2=Hellbricks|Output=Hellbrick Wall,6}}
+|-
+| [[Hellbrick Wall]] <small>(vanilla recipe)</small>
+| [[Hellbricks]]
+| {{Stonecutter|Input=Hellbricks|Output=Hellbrick Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

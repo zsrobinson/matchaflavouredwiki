@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oxidized Copper Trapdoor]]
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidised_copper.json|matcha:stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidised_copper}}</small>
+|-
+| [[Oxidized Copper Trapdoor]]
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidized_copper_block.json|matcha:stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidized_copper_block}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

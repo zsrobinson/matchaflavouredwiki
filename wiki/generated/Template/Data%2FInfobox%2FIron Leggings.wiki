@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Iron Leggings}}
+|invimage=Iron Leggings
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|armor=5
+|repair=<code>#minecraft:repairs_iron_armor</code>
+|tooltip={{G|Armor}} 5
+|id=<code>minecraft:iron_leggings</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/iron_leggings.json|iron_leggings.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Opal Earrings}}
+|invimage=Opal Earrings
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[∞]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=250
+|armor=1
+|repair=<code>#minecraft:repairs_netherite_armor</code>
+|tooltip={{G|Armor}} 1
+|id=<code>matcha:opal_earrings</code>
+|base=<code>minecraft:netherite_helmet</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/equipment/misc/opal_earrings.json|opal_earrings.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

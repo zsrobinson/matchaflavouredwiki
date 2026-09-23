@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Glass]]
+| [[Quartz]]
+| {{Cooking|station=Mud Kiln|Input=Quartz|Output=Glass|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/glass_from_smoking_quartz.json|matcha:kiln/glass_from_smoking_quartz}}</small>
+|-
+| [[Glass]]
+| [[Sand]] or [[Red Sand]]
+| {{Cooking|station=Mud Kiln|Input=Sand;Red Sand|Output=Glass|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/glass_from_smoking_sand.json|matcha:kiln/glass_from_smoking_sand}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

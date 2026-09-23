@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Chiseled Stone Bricks]] <small>(vanilla recipe)</small>
+| [[Stone Bricks]]
+| {{Stonecutter|Input=Stone Bricks|Output=Chiseled Stone Bricks}}
+|-
+| [[Chiseled Stone Bricks]] <small>(vanilla recipe)</small>
+| [[Limestone]]
+| {{Stonecutter|Input=Limestone|Output=Chiseled Stone Bricks}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

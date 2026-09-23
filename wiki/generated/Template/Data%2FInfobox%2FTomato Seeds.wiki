@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Tomato Seeds}}
+|invimage=Tomato Seeds
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Beetroot Seeds}}
+|stackable=Yes (64)
+|id=<code>minecraft:beetroot_seeds</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/tomato_seeds_from_tomato.json|tomato_seeds_from_tomato.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

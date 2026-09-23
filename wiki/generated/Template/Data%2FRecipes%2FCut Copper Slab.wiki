@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cut Copper Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Cut Copper]]
+| {{Crafting|A1=Cut Copper|B1=Cut Copper|C1=Cut Copper|Output=Cut Copper Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Cut Copper Slab,8}}
+|-
+| [[Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Cut Copper]]
+| {{Stonecutter|Input=Cut Copper|Output=Cut Copper Slab,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

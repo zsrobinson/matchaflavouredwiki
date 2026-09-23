@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Clay Ball]]
+| [[Clay]]
+| {{Crafting|A1=Clay|Output=Clay Ball,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clay_ball_from_clay.json|matcha:crafting/clay_ball_from_clay}}</small>
+|-
+| [[Terracotta]]
+| [[Clay]]
+| {{Cooking|station=Mud Kiln|Input=Clay|Output=Terracotta|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/terracotta.json|matcha:kiln/terracotta}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

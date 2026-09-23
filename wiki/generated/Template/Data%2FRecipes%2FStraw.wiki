@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Straw]]
+| [[Hay Bale]]
+| {{Crafting|A1=Hay Bale|Output=Straw,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wheat_from_hay_block.json|matcha:crafting/wheat_from_hay_block}}</small>
+|-
+| [[Straw]]
+| 2 × [[Tall Dry Grass]]
+| {{Crafting|A1=Tall Dry Grass|B1=Tall Dry Grass|Output=Straw|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wheat_from_tall_dry_grass.json|matcha:crafting/wheat_from_tall_dry_grass}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

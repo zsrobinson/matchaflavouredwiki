@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Chemistry Stand}}
+|invimage=Chemistry Stand
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Brewing Stand}}
+|stackable=Yes (64)
+|id=<code>minecraft:brewing_stand</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/chemistry_stand.json|chemistry_stand.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

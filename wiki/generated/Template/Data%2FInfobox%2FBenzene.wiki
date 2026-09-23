@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Benzene}}
+|invimage=Benzene
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Endermite Spawn Egg}}
+|stackable=Yes (64)
+|id=<code>minecraft:endermite_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/benzene.json|benzene.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

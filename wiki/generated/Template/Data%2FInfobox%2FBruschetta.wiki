@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Bruschetta}}
+|invimage=Bruschetta
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|8}}
+|effects={{EffectLink|Strength}} II (2:30)
+|eat_time=1.6 seconds
+|tooltip={{G|Health}}{{G|Health}}{{G|Health}}{{G|Health}}<br />{{G|Attack damage}} Strength II (2:30)
+|id=<code>matcha:bruschetta</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/bruschetta.json|bruschetta.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

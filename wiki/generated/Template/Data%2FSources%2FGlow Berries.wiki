@@ -1,0 +1,30 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Abandoned mineshaft <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_mineshaft.json|chests/abandoned_mineshaft}})</small> || 1 || 53.9% || 
+|-
+| Ancient city <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/ancient_city.json|chests/ancient_city}})</small> || 1 || 21.5% || 
+|-
+| Trial chambers / supply <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/supply.json|chests/trial_chambers/supply}})</small> || 1 || 48.3% || 
+|}
+
+'''Harvesting'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Cave vine <small>({{Source|MF_datapack/data/minecraft/loot_table/harvest/cave_vine.json|harvest/cave_vine}})</small> || 1 || 100% || 
+|}
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Cave vines <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/cave_vines.json|blocks/cave_vines}})</small> || 1 || 100% || 
+|-
+| Cave vines plant <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/cave_vines_plant.json|blocks/cave_vines_plant}})</small> || 1 || 100% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Ramen Stock}}
+|invimage=Ramen Stock
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Wither Skeleton Spawn Egg}}
+|stackable=Yes (64)
+|id=<code>minecraft:wither_skeleton_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_ramen.json|uncooked_ramen.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

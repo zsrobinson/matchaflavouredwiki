@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Oxidized Cut Copper Stairs}}
+|invimage=Oxidized Cut Copper Stairs
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:oxidized_cut_copper_stairs</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_cut_copper_stairs_from_patina.json|oxidized_cut_copper_stairs_from_patina.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

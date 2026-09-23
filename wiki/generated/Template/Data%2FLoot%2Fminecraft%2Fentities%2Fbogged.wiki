@@ -1,0 +1,17 @@
+<includeonly><small>Loot table <code>minecraft:entities/bogged</code> ({{Source|MF_datapack/data/minecraft/loot_table/entities/bogged.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Bone}} || 0–2 || 100% || 100% || player kill
+|-
+| {{ItemLink|Tipped Arrow}} || 0–2 || 100% || 100% || player kill
+|-
+| {{ItemLink|Estus Ash}} || 0–1 || 90.9% || 90.9% || player kill
+|-
+| {{ItemLink|Brown Mushroom}} || 0–1 || 50.0% || 50.0% || player kill
+|-
+| {{ItemLink|Red Mushroom}} || 0–1 || 50.0% || 50.0% || player kill
+|-
+| {{ItemLink|Obol}} || 1 || 9.09% || 9.09% || player kill
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

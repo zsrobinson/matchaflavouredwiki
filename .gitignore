@@ -1,0 +1,8 @@
+# Generated / runtime state — rebuilt by tools/build.sh
+/build/
+/site/data/
+/site/images/
+# Upstream sources, fetched by tools/fetch_sources.sh
+/source/
+.DS_Store
+__pycache__/

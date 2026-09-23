@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Tinted Glass}}
+|invimage=Tinted Glass
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:tinted_glass</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/tinted_glass.json|tinted_glass.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

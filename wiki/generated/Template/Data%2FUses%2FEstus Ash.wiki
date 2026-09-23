@@ -1,0 +1,116 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Prayer of The Light]]
+| 4 × [[Estus Ash]] +<br />3 × [[Silver Bullion]] +<br />[[Hell-Bound Book]] +<br />[[Gold Ingot]]
+| {{Crafting|A1=Estus Ash|A2=Silver Bullion|A3=Estus Ash|B1=Silver Bullion|B2=Hell-Bound Book|B3=Gold Ingot|C1=Estus Ash|C2=Silver Bullion|C3=Estus Ash|Output=Prayer of The Light}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/channeling_smite.json|matcha:blessing/channeling_smite}}</small>
+|-
+| [[Prayer of Daedalus]]
+| 4 × [[Estus Ash]] +<br />[[Divine Favor]] +<br />[[Diamond Pickaxe]] +<br />[[Hell-Bound Book]] +<br />[[Diamond Axe]] +<br />[[Diamond]]
+| {{Crafting|A1=Estus Ash|A2=Diamond Pickaxe|A3=Estus Ash|B1=Divine Favor|B2=Hell-Bound Book|B3=Diamond|C1=Estus Ash|C2=Diamond Axe|C3=Estus Ash|Output=Prayer of Daedalus}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/efficiency_unbreaking.json|matcha:blessing/efficiency_unbreaking}}</small>
+|-
+| [[Prayer of Midas]]
+| 4 × [[Estus Ash]] +<br />[[Ominous Bottle]] +<br />3 × [[Block of Gold]] +<br />[[Hell-Bound Book]]
+| {{Crafting|A1=Estus Ash|A2=Block of Gold|A3=Estus Ash|B1=Ominous Bottle|B2=Hell-Bound Book|B3=Block of Gold|C1=Estus Ash|C2=Block of Gold|C3=Estus Ash|Output=Prayer of Midas}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/looting_fortune.json|matcha:blessing/looting_fortune}}</small>
+|-
+| [[Prayer of Eros]]
+| 4 × [[Arrow]] +<br />[[Shakudo Alloy]] +<br />3 × [[Estus Ash]] +<br />[[Hell-Bound Book]]
+| {{Crafting|A1=Arrow|A2=Estus Ash|A3=Arrow|B1=Shakudo Alloy|B2=Hell-Bound Book|B3=Estus Ash|C1=Arrow|C2=Estus Ash|C3=Arrow|Output=Prayer of Eros}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/silk_touch.json|matcha:blessing/silk_touch}}</small>
+|-
+| [[Prayer of Prometheus]]
+| 4 × [[Estus Ash]] +<br />[[Divine Fragment]] +<br />3 × [[Diamond]] +<br />[[Hell-Bound Book]]
+| {{Crafting|A1=Estus Ash|A2=Diamond|A3=Estus Ash|B1=Divine Fragment|B2=Hell-Bound Book|B3=Diamond|C1=Estus Ash|C2=Diamond|C3=Estus Ash|Output=Prayer of Prometheus}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/unbreaking.json|matcha:blessing/unbreaking}}</small>
+|-
+| [[Amnestic]]
+| [[Azure Bluet]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Paper]]
+| {{Crafting|A1=Azure Bluet|B1=Sugar|C1=Estus Ash|A2=Paper|Output=Amnestic|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/amnestic.json|matcha:crafting/amnestic}}</small>
+|-
+| [[Fire Charge]]
+| [[Sulfur Chunk]] +<br />[[Estus Ash]] +<br />[[Coal]] or [[Charcoal]]
+| {{Crafting|A1=Sulfur Chunk|B1=Estus Ash|C1=Coal;Charcoal|Output=Fire Charge,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/fire_charge.json|matcha:crafting/fire_charge}}</small>
+|-
+| [[Nazar]]
+| 2 × [[Estus Ash]] +<br />6 × [[Lapis Lazuli]] +<br />[[White Dye]]
+| {{Crafting|A1=Estus Ash|A2=Lapis Lazuli|A3=Lapis Lazuli|B1=Lapis Lazuli|B2=White Dye|B3=Lapis Lazuli|C1=Lapis Lazuli|C2=Lapis Lazuli|C3=Estus Ash|Output=Nazar}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/nazar.json|matcha:crafting/nazar}}</small>
+|-
+| [[Malachite Lantern]]
+| 2 × [[Malachite]] +<br />2 × [[Estus Ash]]
+| {{Crafting|A1=Malachite|A2=Estus Ash|B1=Estus Ash|B2=Malachite|Output=Malachite Lantern,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sea_lantern.json|matcha:crafting/sea_lantern}}</small>
+|-
+| [[Stabilized Estus]]
+| 7 × [[Estus Ash]] +<br />[[Benzene]] +<br />[[Stable Void]]
+| {{Crafting|A1=Estus Ash|A2=Estus Ash|A3=Estus Ash|B1=Benzene|B2=Stable Void|B3=Estus Ash|C1=Estus Ash|C2=Estus Ash|C3=Estus Ash|Output=Stabilized Estus}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/stabilised_estus.json|matcha:crafting/stabilised_estus}}</small>
+|-
+| [[Wooden Cross]]
+| 4 × [[Stick]] +<br />[[Estus Ash]]
+| {{Crafting|A2=Stick|B1=Stick|B2=Estus Ash|B3=Stick|C2=Stick|Output=Wooden Cross}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_cross.json|matcha:crafting/wooden_cross}}</small>
+|-
+| [[Apple Empanada]]
+| [[Baked Apple]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Dough]]
+| {{Crafting|A1=Baked Apple|B1=Sugar|C1=Estus Ash|A2=Dough|Output=Apple Empanada|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/apple_empanada.json|matcha:food/crafting/apple_empanada}}</small>
+|-
+| [[Buñuelo]]
+| [[Dough]] +<br />[[Oil]] +<br />[[Estus Ash]] +<br />[[Sugar]]
+| {{Crafting|A1=Dough|B1=Oil|C1=Estus Ash|A2=Sugar|Output=Buñuelo|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bunuelo.json|matcha:food/crafting/bunuelo}}</small>
+|-
+| [[Carrot Cupcake]]
+| [[Carrot]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Cocoa Beans]] +<br />[[Dough]]
+| {{Crafting|A1=Carrot|B1=Sugar|C1=Estus Ash|A2=Cocoa Beans|B2=Dough|Output=Carrot Cupcake|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/carrot_cupcake.json|matcha:food/crafting/carrot_cupcake}}</small>
+|-
+| [[French Toast]]
+| Any [[eggs]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
+| {{Crafting|A1=Any Eggs|B1=Sugar|C1=Estus Ash|A2=Bread|Output=French Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/french_toast.json|matcha:food/crafting/french_toast}}</small>
+|-
+| [[Gilded Empanada]]
+| [[Baked Golden Apple]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Dough]]
+| {{Crafting|A1=Baked Golden Apple|B1=Sugar|C1=Estus Ash|A2=Dough|Output=Gilded Empanada|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_apple_empanada.json|matcha:food/crafting/golden_apple_empanada}}</small>
+|-
+| [[Golden Carrot Cupcake]]
+| [[Golden Carrot]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Cocoa Beans]] +<br />[[Dough]]
+| {{Crafting|A1=Golden Carrot|B1=Sugar|C1=Estus Ash|A2=Cocoa Beans|B2=Dough|Output=Golden Carrot Cupcake|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_carrot_cupcake.json|matcha:food/crafting/golden_carrot_cupcake}}</small>
+|-
+| [[Honied French Toast]]
+| [[Honey Bottle]] +<br />Any [[eggs]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
+| {{Crafting|A1=Honey Bottle|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Honied French Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/honied_french_toast.json|matcha:food/crafting/honied_french_toast}}</small>
+|-
+| [[Apple Cinnamon Oatmeal]]
+| [[Honey Bottle]] +<br />[[Milk Bottle]] +<br />[[Estus Ash]] +<br />[[Apple]] +<br />2 × [[Wheat Grain]] +<br />[[Bowl]]
+| {{Crafting|A1=Honey Bottle|B1=Milk Bottle|C1=Estus Ash|A2=Apple|B2=Wheat Grain|C2=Wheat Grain|A3=Bowl|Output=Apple Cinnamon Oatmeal|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/oatmeal.json|matcha:food/crafting/oatmeal}}</small>
+|-
+| [[Puerquito]]
+| [[Molasses]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Dough]]
+| {{Crafting|A1=Molasses|B1=Sugar|C1=Estus Ash|A2=Dough|Output=Puerquito,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/puerquito.json|matcha:food/crafting/puerquito}}</small>
+|-
+| [[Pumpkin Empanada]]
+| [[Baked Pumpkin]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Dough]]
+| {{Crafting|A1=Baked Pumpkin|B1=Sugar|C1=Estus Ash|A2=Dough|Output=Pumpkin Empanada|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_empanada.json|matcha:food/crafting/pumpkin_empanada}}</small>
+|-
+| [[Sweet Berry Toast]]
+| [[Sweet Berries]] +<br />Any [[eggs]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
+| {{Crafting|A1=Sweet Berries|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Sweet Berry Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sweet_berry_toast.json|matcha:food/crafting/sweet_berry_toast}}</small>
+|-
+| [[Curry Stock]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Flour]] +<br />[[Oil]] +<br />[[Potato]] +<br />[[Raw Beef]] or [[Raw Mutton]] or [[Raw Flesh]] or [[Seitan]] +<br />[[Carrot]] +<br />[[Bowl]]
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Flour|A2=Oil|B2=Potato|C2=Raw Beef;Raw Mutton;Raw Flesh;Seitan|A3=Carrot|B3=Bowl|Output=Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_curry.json|matcha:food/crafting/uncooked_curry}}</small>
+|-
+| [[Green Curry Stock]]
+| [[Green Dye]] +<br />[[Estus Ash]] +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Oil]] +<br />[[Cod]] or [[Salmon]] or [[Seitan]] +<br />[[Bowl]]
+| {{Crafting|A1=Green Dye|B1=Estus Ash|C1=Sugar|A2=Milk Bottle|B2=Oil|C2=Cod;Salmon;Seitan|A3=Bowl|Output=Green Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_green_curry.json|matcha:food/crafting/uncooked_green_curry}}</small>
+|-
+| [[Paneer Curry Stock]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Tomatoes]] +<br />[[Cheese]] +<br />[[Oil]] +<br />[[Bowl]]
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Milk Bottle|A2=Tomatoes|B2=Cheese|C2=Oil|A3=Bowl|Output=Paneer Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_paneer_makhani.json|matcha:food/crafting/uncooked_paneer_makhani}}</small>
+|-
+| [[Pumpkin Curry Stock]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Baked Pumpkin]] +<br />[[Oil]] +<br />[[Sunflower]] +<br />[[Milk Bottle]] +<br />[[Carrot]] +<br />[[Bamboo]] +<br />[[Bowl]]
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Baked Pumpkin|A2=Oil|B2=Sunflower|C2=Milk Bottle|A3=Carrot|B3=Bamboo|C3=Bowl|Output=Pumpkin Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_pumpkin_curry.json|matcha:food/crafting/uncooked_pumpkin_curry}}</small>
+|-
+| [[Crystallized Estus]] <small>(vanilla recipe)</small>
+| 4 × [[Estus Ash]]
+| {{Crafting|A1=Estus Ash|A2=Estus Ash|B1=Estus Ash|B2=Estus Ash|Output=Crystallized Estus}}
+|-
+| [[Spectral Arrow]] <small>(vanilla recipe)</small>
+| 4 × [[Estus Ash]] +<br />[[Arrow]]
+| {{Crafting|A2=Estus Ash|B1=Estus Ash|B2=Arrow|B3=Estus Ash|C2=Estus Ash|Output=Spectral Arrow,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

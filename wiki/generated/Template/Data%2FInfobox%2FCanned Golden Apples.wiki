@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Canned Golden Apples}}
+|invimage=Canned Golden Apples
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|8}}
+|effects={{EffectLink|Regeneration}} II (0:20)<br />{{EffectLink|Absorption}} II (2:00)
+|eat_time=1.6 seconds
+|tooltip=❤❤❤❤<br />❤❤❤❤ (2:00)<br />{{G|Health}} Regen II (0:20)
+|id=<code>matcha:canned_golden_apples</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/canned_golden_apples.json|canned_golden_apples.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

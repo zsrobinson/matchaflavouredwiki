@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Heavy Core}}
+|invimage=Heavy Core
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Epic
+|stackable=Yes (64)
+|id=<code>minecraft:heavy_core</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_ominous_unique.json|reward_ominous_unique.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

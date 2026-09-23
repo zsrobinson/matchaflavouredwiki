@@ -1,0 +1,40 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Bruschetta]]
+| [[Tomatoes]] +<br />[[Cheese]] +<br />[[Bread]]
+| {{Crafting|A1=Tomatoes|B1=Cheese|C1=Bread|Output=Bruschetta|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bruschetta.json|matcha:food/crafting/bruschetta}}</small>
+|-
+| [[Cheese Pizza]]
+| 3 × [[Cheese]] +<br />3 × [[Tomatoes]] +<br />3 × [[Dough]]
+| {{Crafting|A1=Cheese|A2=Tomatoes|A3=Dough|B1=Cheese|B2=Tomatoes|B3=Dough|C1=Cheese|C2=Tomatoes|C3=Dough|Output=Cheese Pizza,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cheese_pizza.json|matcha:food/crafting/cheese_pizza}}</small>
+|-
+| [[Gnocchi]]
+| [[Baked Potato]] +<br />[[Cheese]] +<br />Any [[eggs]] +<br />[[Flour]] +<br />[[Bowl]]
+| {{Crafting|A1=Baked Potato|B1=Cheese|C1=Any Eggs|A2=Flour|B2=Bowl|Output=Gnocchi|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gnocchi.json|matcha:food/crafting/gnocchi}}</small>
+|-
+| [[Meat Pizza]]
+| 2 × [[Cheese]] +<br />[[Cooked Flesh]] or [[Steak]] or [[Cooked Chicken]] or [[Cooked Porkchop]] or [[Cooked Mutton]] +<br />3 × [[Tomatoes]] +<br />3 × [[Dough]]
+| {{Crafting|A1=Cheese|A2=Tomatoes|A3=Dough|B1=Cooked Flesh;Steak;Cooked Chicken;Cooked Porkchop;Cooked Mutton|B2=Tomatoes|B3=Dough|C1=Cheese|C2=Tomatoes|C3=Dough|Output=Meat Pizza,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/meat_pizza.json|matcha:food/crafting/meat_pizza}}</small>
+|-
+| [[Mushroom Pizza]]
+| 2 × [[Braised Mushroom]] +<br />[[Cheese]] +<br />3 × [[Tomatoes]] +<br />3 × [[Dough]]
+| {{Crafting|A1=Braised Mushroom|A2=Tomatoes|A3=Dough|B1=Cheese|B2=Tomatoes|B3=Dough|C1=Braised Mushroom|C2=Tomatoes|C3=Dough|Output=Mushroom Pizza,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/mushroom_pizza.json|matcha:food/crafting/mushroom_pizza}}</small>
+|-
+| [[Pupusa]]
+| [[Dough]] +<br />[[Cheese]] +<br />[[Oil]] +<br />[[Cooked Porkchop]] or [[Cooked Chicken]]
+| {{Crafting|A1=Dough|B1=Cheese|C1=Oil|A2=Cooked Porkchop;Cooked Chicken|Output=Pupusa,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pupusa.json|matcha:food/crafting/pupusa}}</small>
+|-
+| [[Sweet Berry Danish]]
+| [[Sweet Berry Mash]] +<br />[[Sugar]] +<br />[[Cheese]] +<br />[[Dough]]
+| {{Crafting|A1=Sweet Berry Mash|B1=Sugar|C1=Cheese|A2=Dough|Output=Sweet Berry Danish|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sweet_berry_danish.json|matcha:food/crafting/sweet_berry_danish}}</small>
+|-
+| [[Paneer Curry Stock]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Tomatoes]] +<br />[[Cheese]] +<br />[[Oil]] +<br />[[Bowl]]
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Milk Bottle|A2=Tomatoes|B2=Cheese|C2=Oil|A3=Bowl|Output=Paneer Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_paneer_makhani.json|matcha:food/crafting/uncooked_paneer_makhani}}</small>
+|-
+| [[Warped Pizza]]
+| 2 × [[Warped Fungus]] +<br />[[Cheese]] +<br />3 × [[Tomatoes]] +<br />3 × [[Dough]]
+| {{Crafting|A1=Warped Fungus|A2=Tomatoes|A3=Dough|B1=Cheese|B2=Tomatoes|B3=Dough|C1=Warped Fungus|C2=Tomatoes|C3=Dough|Output=Warped Pizza,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/warped_pizza.json|matcha:food/crafting/warped_pizza}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

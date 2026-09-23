@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Melon Seeds}}
+|invimage=Melon Seeds
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:melon_seeds</code>
+|source={{Source|vanilla:recipe/melon_seeds.json|melon_seeds.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

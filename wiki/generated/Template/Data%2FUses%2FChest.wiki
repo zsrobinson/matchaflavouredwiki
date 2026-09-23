@@ -1,0 +1,68 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Hopper]]
+| 5 × [[Iron Ingot]] +<br />[[Chest]] or [[Barrel]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|B2=Chest;Barrel|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|Output=Hopper,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/hopper_from_iron.json|matcha:crafting/hopper_from_iron}}</small>
+|-
+| [[Hopper]]
+| 5 × [[Steel Alloy]] +<br />[[Chest]] or [[Barrel]]
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|B2=Chest;Barrel|B3=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|Output=Hopper,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/hopper_from_steel.json|matcha:crafting/hopper_from_steel}}</small>
+|-
+| [[Sack]]
+| 8 × [[Sturdy Leather]] +<br />[[Chest]]
+| {{Crafting|A1=Sturdy Leather|A2=Sturdy Leather|A3=Sturdy Leather|B1=Sturdy Leather|B2=Chest|B3=Sturdy Leather|C1=Sturdy Leather|C2=Sturdy Leather|C3=Sturdy Leather|Output=Sack}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sack.json|matcha:crafting/sack}}</small>
+|-
+| [[Trapped Chest]]
+| [[Chest]] +<br />[[Electric Wire]]
+| {{Crafting|A1=Chest|B1=Electric Wire|Output=Trapped Chest|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trapped_chest.json|matcha:crafting/trapped_chest}}</small>
+|-
+| [[Acacia Boat with Chest]] <small>(vanilla recipe)</small>
+| [[Chest]] +<br />[[Acacia Boat]]
+| {{Crafting|A1=Chest|B1=Acacia Boat|Output=Acacia Boat with Chest|shapeless=1}}
+|-
+| [[Bamboo Raft with Chest]] <small>(vanilla recipe)</small>
+| [[Chest]] +<br />[[Bamboo Raft]]
+| {{Crafting|A1=Chest|B1=Bamboo Raft|Output=Bamboo Raft with Chest|shapeless=1}}
+|-
+| [[Birch Boat with Chest]] <small>(vanilla recipe)</small>
+| [[Chest]] +<br />[[Birch Boat]]
+| {{Crafting|A1=Chest|B1=Birch Boat|Output=Birch Boat with Chest|shapeless=1}}
+|-
+| [[Cherry Boat with Chest]] <small>(vanilla recipe)</small>
+| [[Chest]] +<br />[[Cherry Boat]]
+| {{Crafting|A1=Chest|B1=Cherry Boat|Output=Cherry Boat with Chest|shapeless=1}}
+|-
+| [[Minecart with Chest]] <small>(vanilla recipe)</small>
+| [[Chest]] +<br />[[Minecart]]
+| {{Crafting|A1=Chest|B1=Minecart|Output=Minecart with Chest|shapeless=1}}
+|-
+| [[Copper Chest]] <small>(vanilla recipe)</small>
+| 8 × [[Copper Ingot]] +<br />[[Chest]]
+| {{Crafting|A1=Copper Ingot|A2=Copper Ingot|A3=Copper Ingot|B1=Copper Ingot|B2=Chest|B3=Copper Ingot|C1=Copper Ingot|C2=Copper Ingot|C3=Copper Ingot|Output=Copper Chest}}
+|-
+| [[Dark Oak Boat with Chest]] <small>(vanilla recipe)</small>
+| [[Chest]] +<br />[[Dark Oak Boat]]
+| {{Crafting|A1=Chest|B1=Dark Oak Boat|Output=Dark Oak Boat with Chest|shapeless=1}}
+|-
+| [[Jungle Boat with Chest]] <small>(vanilla recipe)</small>
+| [[Chest]] +<br />[[Jungle Boat]]
+| {{Crafting|A1=Chest|B1=Jungle Boat|Output=Jungle Boat with Chest|shapeless=1}}
+|-
+| [[Mangrove Boat with Chest]] <small>(vanilla recipe)</small>
+| [[Chest]] +<br />[[Mangrove Boat]]
+| {{Crafting|A1=Chest|B1=Mangrove Boat|Output=Mangrove Boat with Chest|shapeless=1}}
+|-
+| [[Oak Boat with Chest]] <small>(vanilla recipe)</small>
+| [[Chest]] +<br />[[Oak Boat]]
+| {{Crafting|A1=Chest|B1=Oak Boat|Output=Oak Boat with Chest|shapeless=1}}
+|-
+| [[Pale Oak Boat with Chest]] <small>(vanilla recipe)</small>
+| [[Chest]] +<br />[[Pale Oak Boat]]
+| {{Crafting|A1=Chest|B1=Pale Oak Boat|Output=Pale Oak Boat with Chest|shapeless=1}}
+|-
+| [[Spruce Boat with Chest]] <small>(vanilla recipe)</small>
+| [[Chest]] +<br />[[Spruce Boat]]
+| {{Crafting|A1=Chest|B1=Spruce Boat|Output=Spruce Boat with Chest|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

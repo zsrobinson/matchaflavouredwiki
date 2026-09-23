@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Mud Brick Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Mud Bricks]]
+| {{Crafting|A1=Mud Bricks|A2=Mud Bricks|A3=Mud Bricks|B2=Mud Bricks|B3=Mud Bricks|C3=Mud Bricks|Output=Mud Brick Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Mud Brick Stairs]]
+| [[Packed Mud]]
+| {{Stonecutter|Input=Packed Mud|Output=Mud Brick Stairs}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/mud_brick_stairs_from_stonecutting_packed_mud.json|matcha:stonecutting/mud_brick_stairs_from_stonecutting_packed_mud}}</small>
+|-
+| [[Mud Brick Stairs]] <small>(vanilla recipe)</small>
+| [[Mud Bricks]]
+| {{Stonecutter|Input=Mud Bricks|Output=Mud Brick Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

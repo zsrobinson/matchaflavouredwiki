@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Stone Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Limestone]]
+| {{Crafting|A1=Limestone|A2=Limestone|A3=Limestone|B2=Limestone|B3=Limestone|C3=Limestone|Output=Stone Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Stone Stairs]] <small>(vanilla recipe)</small>
+| [[Limestone]]
+| {{Stonecutter|Input=Limestone|Output=Stone Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|White Bed}}
+|invimage=White Bed
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|id=<code>minecraft:white_bed</code>
+|source={{Source|vanilla:recipe/dye_white_bed.json|dye_white_bed.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

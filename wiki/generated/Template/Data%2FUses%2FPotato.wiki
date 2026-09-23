@@ -1,0 +1,24 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Baked Potato]]
+| [[Potato]]
+| {{Cooking|station=Kindling|Input=Potato|Output=Baked Potato|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/baked_potato.json|matcha:food/campfire/baked_potato}}</small>
+|-
+| [[Seitan]]
+| [[Dough]] +<br />[[Potion]] +<br />[[Carrot]] or [[Potato]] or [[Dried Kelp]]
+| {{Crafting|A1=Dough|B1=Potion|C1=Carrot;Potato;Dried Kelp|Output=Seitan|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/seitan.json|matcha:food/crafting/seitan}}</small>
+|-
+| [[Curry Stock]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Flour]] +<br />[[Oil]] +<br />[[Potato]] +<br />[[Raw Beef]] or [[Raw Mutton]] or [[Raw Flesh]] or [[Seitan]] +<br />[[Carrot]] +<br />[[Bowl]]
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Flour|A2=Oil|B2=Potato|C2=Raw Beef;Raw Mutton;Raw Flesh;Seitan|A3=Carrot|B3=Bowl|Output=Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_curry.json|matcha:food/crafting/uncooked_curry}}</small>
+|-
+| [[Charred Potato]]
+| [[Potato]]
+| {{Cooking|station=Mud Kiln|Input=Potato|Output=Charred Potato|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_potato.json|matcha:food/kiln/charred_potato}}</small>
+|-
+| [[Baked Potato]]
+| [[Potato]]
+| {{Cooking|station=Oven|Input=Potato|Output=Baked Potato|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_potato.json|matcha:food/oven/baked_potato}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

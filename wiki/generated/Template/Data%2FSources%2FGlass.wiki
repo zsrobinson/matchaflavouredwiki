@@ -1,0 +1,14 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Lapis ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/lapis_ore.json|blocks/lapis_ore}})</small> || 2–5 || 33.3% || specific tool
+|-
+| Red sand <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/red_sand.json|blocks/red_sand}})</small> || 1 || 50.0% || specific tool
+|-
+| Sand <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/sand.json|blocks/sand}})</small> || 1 || 50.0% || specific tool
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

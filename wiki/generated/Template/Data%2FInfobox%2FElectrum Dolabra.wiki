@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Electrum Dolabra}}
+|invimage=Electrum Dolabra
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Electrum Tool]] III}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|damage={{Hp|6}}
+|attackspeed=1.2
+|miningspeed=55
+|repair=[[Block of Diamond]]
+|tooltip={{G|Mining speed}} 10<br />{{G|Attack damage}} 6<br />{{G|Attack speed}} 1.2<br />Repaired with:<br />Block of Diamond
+|id=<code>matcha:electrum_dolabra</code>
+|base=<code>minecraft:netherite_axe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_dolabra.json|electrum_dolabra.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

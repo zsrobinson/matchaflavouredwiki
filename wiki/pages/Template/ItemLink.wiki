@@ -1,0 +1,3 @@
+<includeonly><span class="sprite-inline">[[File:{{{1}}}.png|{{{size|16px}}}|link={{{link|{{{1}}}}}}|{{{1}}}]]</span>&nbsp;[[{{{link|{{{1}}}}}}|{{{2|{{{1}}}}}}]]</includeonly><noinclude>
+Inline icon and link. <code><nowiki>{{ItemLink|Obol}}</nowiki></code> → {{ItemLink|Obol}}; <code><nowiki>{{ItemLink|Obol|obols}}</nowiki></code> → {{ItemLink|Obol|obols}}.
+[[Category:Templates]]</noinclude>

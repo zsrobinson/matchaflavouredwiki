@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Dark Malachite}}
+|invimage=Dark Malachite
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Dark Prismarine}}
+|stackable=Yes (64)
+|id=<code>minecraft:dark_prismarine</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/dark_prismarine.json|dark_prismarine.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

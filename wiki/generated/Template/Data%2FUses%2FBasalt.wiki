@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Smooth Basalt]]
+| [[Basalt]]
+| {{Cooking|station=Mud Kiln|Input=Basalt|Output=Smooth Basalt|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/smooth_basalt.json|matcha:kiln/smooth_basalt}}</small>
+|-
+| [[Polished Basalt]] <small>(vanilla recipe)</small>
+| 4 × [[Basalt]]
+| {{Crafting|A1=Basalt|A2=Basalt|B1=Basalt|B2=Basalt|Output=Polished Basalt,4}}
+|-
+| [[Polished Basalt]] <small>(vanilla recipe)</small>
+| [[Basalt]]
+| {{Stonecutter|Input=Basalt|Output=Polished Basalt}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

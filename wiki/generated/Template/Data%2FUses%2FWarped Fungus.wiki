@@ -1,0 +1,39 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cyan Dye]]
+| [[Warped Fungus]]
+| {{Crafting|A1=Warped Fungus|Output=Cyan Dye,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cyan_dye_from_warped_fungus.json|matcha:crafting/cyan_dye_from_warped_fungus}}</small>
+|-
+| [[Braised Warped Fungus]]
+| [[Warped Fungus]]
+| {{Cooking|station=Kindling|Input=Warped Fungus|Output=Braised Warped Fungus|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/brasied_warped_fungus.json|matcha:food/campfire/brasied_warped_fungus}}</small>
+|-
+| [[Pickled Warped Fungus]]
+| [[Warped Fungus]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
+| {{Crafting|A1=Warped Fungus|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Warped Fungus|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_warped_fungus.json|matcha:food/crafting/pickled_warped_fungus}}</small>
+|-
+| [[Warped Pizza]]
+| 2 × [[Warped Fungus]] +<br />[[Cheese]] +<br />3 × [[Tomatoes]] +<br />3 × [[Dough]]
+| {{Crafting|A1=Warped Fungus|A2=Tomatoes|A3=Dough|B1=Cheese|B2=Tomatoes|B3=Dough|C1=Warped Fungus|C2=Tomatoes|C3=Dough|Output=Warped Pizza,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/warped_pizza.json|matcha:food/crafting/warped_pizza}}</small>
+|-
+| [[Warped Stroganoff]]
+| [[Warped Fungus]] +<br />[[Steak]] +<br />[[Dough]] +<br />[[Milk Bottle]] +<br />[[Bowl]]
+| {{Crafting|A1=Warped Fungus|B1=Steak|C1=Dough|A2=Milk Bottle|B2=Bowl|Output=Warped Stroganoff|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/warped_stroganoff.json|matcha:food/crafting/warped_stroganoff}}</small>
+|-
+| [[Braised Warped Fungus]]
+| [[Warped Fungus]]
+| {{Cooking|station=Oven|Input=Warped Fungus|Output=Braised Warped Fungus|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/brasied_warped_fungus.json|matcha:food/oven/brasied_warped_fungus}}</small>
+|-
+| [[Warped Fungus on a Stick]] <small>(vanilla recipe)</small>
+| [[Fishing Rod]] +<br />[[Warped Fungus]]
+| {{Crafting|A1=Fishing Rod|B2=Warped Fungus|Output=Warped Fungus on a Stick}}
+|}
+
+'''Trading'''
+{| class="wikitable"
+! Villager !! Level !! Wants !! Gives
+|-
+| [[Lumberjack]] || Journeyman || {{ItemLink|Obol}} + {{ItemLink|Warped Fungus}} || 64 × {{ItemLink|Warped Stem}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

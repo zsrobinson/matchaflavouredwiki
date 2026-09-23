@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Jungle Boat}}
+|invimage=Jungle Boat
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|id=<code>minecraft:jungle_boat</code>
+|source={{Source|vanilla:recipe/jungle_boat.json|jungle_boat.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

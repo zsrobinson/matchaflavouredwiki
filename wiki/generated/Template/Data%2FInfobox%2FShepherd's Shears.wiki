@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Shepherd's Shears}}
+|invimage=Shepherd's Shears
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Looting]] III}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|miningspeed=15
+|repair=[[Block of Copper]]
+|tooltip=Repaired with:<br />Block of Copper
+|id=<code>matcha:hepatizon_shears</code>
+|base=<code>minecraft:shears</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/shepherd/2/shepherds_shears.json|shepherds_shears.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

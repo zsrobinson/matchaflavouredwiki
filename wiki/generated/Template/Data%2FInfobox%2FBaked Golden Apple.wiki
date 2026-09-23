@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Baked Golden Apple}}
+|invimage=Baked Golden Apple
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|8}}
+|effects={{EffectLink|Absorption}} (2:00)<br />{{EffectLink|Regeneration}} (1:00)
+|eat_time=1.6 seconds
+|tooltip={{G|Health}}{{G|Health}}{{G|Health}}{{G|Health}}<br />{{G|Health}}{{G|Health}} (2:00)<br />{{G|Health}} Regen (0:30)
+|id=<code>matcha:baked_golden_apple</code>
+|base=<code>minecraft:glistering_melon_slice</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/baked_golden_apple.json|baked_golden_apple.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

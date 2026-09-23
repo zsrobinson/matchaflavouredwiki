@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Baked Apple}}
+|invimage=Baked Apple
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Fermented Spider Eye}}
+|stackable=Yes (64)
+|heals={{Hp|4}}
+|effects={{EffectLink|Regeneration}} (0:10)
+|eat_time=1.6 seconds
+|tooltip=❤❤<br />{{G|Health}} Regen (0:10)
+|id=<code>minecraft:fermented_spider_eye</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/baked_apple.json|baked_apple.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

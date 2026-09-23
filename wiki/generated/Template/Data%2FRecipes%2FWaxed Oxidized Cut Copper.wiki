@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Oxidized Cut Copper]]
+| 2 × [[Waxed Oxidized Cut Copper Slab]]
+| {{Crafting|A1=Waxed Oxidized Cut Copper Slab|B1=Waxed Oxidized Cut Copper Slab|Output=Waxed Oxidized Cut Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/waxed_oxidized_cut_copper_from_waxed_oxidized_cut_copper_slab.json|matcha:crafting/waxed_oxidized_cut_copper_from_waxed_oxidized_cut_copper_slab}}</small>
+|-
+| [[Waxed Oxidized Cut Copper]] <small>(vanilla recipe)</small>
+| 4 × [[Waxed Oxidized Copper]]
+| {{Crafting|A1=Waxed Oxidized Copper|A2=Waxed Oxidized Copper|B1=Waxed Oxidized Copper|B2=Waxed Oxidized Copper|Output=Waxed Oxidized Cut Copper,4}}
+|-
+| [[Waxed Oxidized Cut Copper]] <small>(vanilla recipe)</small>
+| [[Oxidized Cut Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Cut Copper|B1=Wax|Output=Waxed Oxidized Cut Copper|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Oxidized Cut Copper]] <small>(vanilla recipe)</small>
+| [[Waxed Oxidized Copper]]
+| {{Stonecutter|Input=Waxed Oxidized Copper|Output=Waxed Oxidized Cut Copper,4}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

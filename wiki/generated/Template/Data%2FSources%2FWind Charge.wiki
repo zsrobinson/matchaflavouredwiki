@@ -1,0 +1,21 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Trial chambers / reward common <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_common.json|chests/trial_chambers/reward_common}})</small> || 6–13 || 12.0% || 
+|-
+| Trial chambers / reward common <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_common.json|chests/trial_chambers/reward_common}})</small> || 4–12 || 4.00% || 
+|-
+| Trial chambers / reward ominous common <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_ominous_common.json|chests/trial_chambers/reward_ominous_common}})</small> || 16–24 || 26.7% || 
+|}
+
+'''Mob drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Breeze <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/breeze.json|entities/breeze}})</small> || 4–8 || 100% || player kill
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

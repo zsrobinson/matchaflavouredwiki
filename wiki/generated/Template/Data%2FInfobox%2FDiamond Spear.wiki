@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Diamond Spear}}
+|invimage=Diamond Spear
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=2500
+|damage={{Hp|4}}
+|attackspeed=0.95
+|repair=<code>#minecraft:diamond_tool_materials</code>
+|tooltip={{G|Attack damage}} 4<br />{{G|Attack speed}} 0.95
+|id=<code>minecraft:diamond_spear</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/diamond_spear.json|diamond_spear.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

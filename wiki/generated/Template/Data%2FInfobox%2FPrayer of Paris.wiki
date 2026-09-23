@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Rare
+|stackable=No
+|effects=Stores: [[Infinity]]
+|tooltip=Prayer of Paris
+|id=<code>matcha:blessing_paris</code>
+|base=<code>minecraft:enchanted_book</code>
+|source={{Source|MF_datapack/data/matcha/recipe/blessing/infinity.json|infinity.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

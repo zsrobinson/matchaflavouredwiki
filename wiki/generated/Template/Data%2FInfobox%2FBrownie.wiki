@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Brownie}}
+|invimage=Brownie
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|6}}
+|effects={{EffectLink|Haste}} II (2:30)
+|eat_time=1.6 seconds
+|tooltip=❤❤❤<br />{{G|Mining speed}} Haste II (2:30)
+|id=<code>matcha:brownie</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/brownie.json|brownie.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

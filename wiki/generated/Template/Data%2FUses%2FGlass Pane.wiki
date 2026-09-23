@@ -1,0 +1,76 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Invisible Item Frame]]
+| 4 × [[Stick]] +<br />[[Glass Pane]]
+| {{Crafting|A2=Stick|B1=Stick|B2=Glass Pane|B3=Stick|C2=Stick|Output=Invisible Item Frame}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/invisible_item_frame.json|matcha:crafting/invisible_item_frame}}</small>
+|-
+| [[Phosphor Rod]]
+| 6 × [[Glass Pane]] +<br />3 × [[Phosphor]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Phosphor|B2=Phosphor|B3=Phosphor|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Phosphor Rod,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/phosphor_rod.json|matcha:crafting/phosphor_rod}}</small>
+|-
+| [[Black Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Black Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Black Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Black Stained Glass Pane,8}}
+|-
+| [[Blue Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Blue Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Blue Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Blue Stained Glass Pane,8}}
+|-
+| [[Brown Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Brown Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Brown Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Brown Stained Glass Pane,8}}
+|-
+| [[Cyan Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Cyan Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Cyan Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Cyan Stained Glass Pane,8}}
+|-
+| [[Gray Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Gray Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Gray Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Gray Stained Glass Pane,8}}
+|-
+| [[Green Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Green Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Green Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Green Stained Glass Pane,8}}
+|-
+| [[Light Blue Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Light Blue Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Light Blue Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Light Blue Stained Glass Pane,8}}
+|-
+| [[Light Gray Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Light Gray Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Light Gray Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Light Gray Stained Glass Pane,8}}
+|-
+| [[Lime Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Lime Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Lime Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Lime Stained Glass Pane,8}}
+|-
+| [[Magenta Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Magenta Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Magenta Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Magenta Stained Glass Pane,8}}
+|-
+| [[Orange Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Orange Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Orange Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Orange Stained Glass Pane,8}}
+|-
+| [[Pink Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Pink Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Pink Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Pink Stained Glass Pane,8}}
+|-
+| [[Purple Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Purple Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Purple Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Purple Stained Glass Pane,8}}
+|-
+| [[Red Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Red Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Red Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Red Stained Glass Pane,8}}
+|-
+| [[White Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[White Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=White Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=White Stained Glass Pane,8}}
+|-
+| [[Yellow Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Yellow Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Yellow Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Yellow Stained Glass Pane,8}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,68 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Exposed Copper Bulb]]
+| 3 × [[Exposed Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
+| {{Crafting|A2=Exposed Copper|B1=Exposed Copper|B2=Electric Inverter|B3=Electric Wire|C2=Exposed Copper|Output=Exposed Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_bulb.json|matcha:crafting/exposed_copper_bulb}}</small>
+|-
+| [[Weathered Copper]]
+| [[Exposed Copper]] +<br />[[Potion]]
+| {{Crafting|A1=Exposed Copper|B1=Potion|Output=Weathered Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_from_patina.json|matcha:crafting/weathered_copper_from_patina}}</small>
+|-
+| [[Exposed Copper Bars]]
+| [[Exposed Copper]]
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Bars,36}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_bars_from_stonecutting_exposed_copper.json|matcha:stonecutting/exposed_copper_bars_from_stonecutting_exposed_copper}}</small>
+|-
+| [[Exposed Copper Chain]]
+| [[Exposed Copper]]
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_chain_from_stonecutting_exposed_copper.json|matcha:stonecutting/exposed_copper_chain_from_stonecutting_exposed_copper}}</small>
+|-
+| [[Exposed Copper Door]]
+| [[Exposed Copper]]
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_door_from_stonecutting_exposed_copper_block.json|matcha:stonecutting/exposed_copper_door_from_stonecutting_exposed_copper_block}}</small>
+|-
+| [[Exposed Copper Trapdoor]]
+| [[Exposed Copper]]
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper.json|matcha:stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper}}</small>
+|-
+| [[Exposed Copper Trapdoor]]
+| [[Exposed Copper]]
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper_block.json|matcha:stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper_block}}</small>
+|-
+| [[Exposed Lightning Rod]]
+| [[Exposed Copper]]
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Lightning Rod,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_lightning_rod_from_stonecutting_exposed_copper.json|matcha:stonecutting/exposed_lightning_rod_from_stonecutting_exposed_copper}}</small>
+|-
+| [[Exposed Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Exposed Copper]]
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Chiseled Copper,4}}
+|-
+| [[Exposed Copper Grate]] <small>(vanilla recipe)</small>
+| 4 × [[Exposed Copper]]
+| {{Crafting|A2=Exposed Copper|B1=Exposed Copper|B3=Exposed Copper|C2=Exposed Copper|Output=Exposed Copper Grate,4}}
+|-
+| [[Exposed Copper Grate]] <small>(vanilla recipe)</small>
+| [[Exposed Copper]]
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Grate,4}}
+|-
+| [[Exposed Cut Copper]] <small>(vanilla recipe)</small>
+| 4 × [[Exposed Copper]]
+| {{Crafting|A1=Exposed Copper|A2=Exposed Copper|B1=Exposed Copper|B2=Exposed Copper|Output=Exposed Cut Copper,4}}
+|-
+| [[Exposed Cut Copper]] <small>(vanilla recipe)</small>
+| [[Exposed Copper]]
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Cut Copper,4}}
+|-
+| [[Exposed Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Exposed Copper]]
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Cut Copper Slab,8}}
+|-
+| [[Exposed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Exposed Copper]]
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Cut Copper Stairs,4}}
+|-
+| [[Waxed Exposed Copper]] <small>(vanilla recipe)</small>
+| [[Exposed Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper|B1=Wax|Output=Waxed Exposed Copper|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

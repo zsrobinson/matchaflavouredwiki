@@ -1,0 +1,13 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Green Banner}}
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (16)
+|id=<code>minecraft:green_banner</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/green_banner.json|green_banner.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Gray Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 6 × [[Gray Stained Glass]]
+| {{Crafting|A1=Gray Stained Glass|A2=Gray Stained Glass|B1=Gray Stained Glass|B2=Gray Stained Glass|C1=Gray Stained Glass|C2=Gray Stained Glass|Output=Gray Stained Glass Pane,16}}
+|-
+| [[Gray Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Gray Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Gray Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Gray Stained Glass Pane,8}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Gray Stained Glass Pane]]
+| [[Gray Stained Glass]]
+| {{Stonecutter|Input=Gray Stained Glass|Output=Gray Stained Glass Pane,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/gray_stained_glass_pane.json|matcha:stonecutting/gray_stained_glass_pane}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

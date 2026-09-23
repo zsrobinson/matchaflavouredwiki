@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cyan Dye]]
+| [[Warped Fungus]]
+| {{Crafting|A1=Warped Fungus|Output=Cyan Dye,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cyan_dye_from_warped_fungus.json|matcha:crafting/cyan_dye_from_warped_fungus}}</small>
+|-
+| [[Cyan Dye]] <small>(vanilla recipe)</small>
+| [[Blue Dye]] +<br />[[Green Dye]]
+| {{Crafting|A1=Blue Dye|B1=Green Dye|Output=Cyan Dye,2|shapeless=1}}
+|-
+| [[Cyan Dye]] <small>(vanilla recipe)</small>
+| [[Pitcher Plant]]
+| {{Crafting|A1=Pitcher Plant|Output=Cyan Dye,2|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

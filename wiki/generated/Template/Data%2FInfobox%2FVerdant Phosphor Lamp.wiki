@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Verdant Phosphor Lamp}}
+|invimage=Verdant Phosphor Lamp
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Verdant Froglight}}
+|stackable=Yes (64)
+|id=<code>minecraft:verdant_froglight</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/verdant_froglight.json|verdant_froglight.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

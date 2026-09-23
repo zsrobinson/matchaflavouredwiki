@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Golden Spear}}
+|invimage=Golden Spear
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Looting]] II}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|damage={{Hp|1}}
+|attackspeed=1.05
+|repair=<code>#minecraft:gold_tool_materials</code>
+|tooltip={{G|Attack damage}} 1<br />{{G|Attack speed}} 1.05
+|id=<code>minecraft:golden_spear</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/golden_spear.json|golden_spear.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

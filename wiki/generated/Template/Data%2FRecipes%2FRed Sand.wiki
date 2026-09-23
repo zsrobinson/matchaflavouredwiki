@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Red Sand]]
+| [[Red Sandstone]]
+| {{Crafting|A1=Red Sandstone|Output=Red Sand,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/red_sand.json|matcha:crafting/red_sand}}</small>
+|-
+| [[Red Sand]]
+| 8 × [[Sand]] +<br />[[Iron Nugget]]
+| {{Crafting|A1=Sand|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Sand|A3=Sand|B3=Sand|C3=Iron Nugget|Output=Red Sand,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/red_sand_from_sand_and_iron.json|matcha:crafting/red_sand_from_sand_and_iron}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

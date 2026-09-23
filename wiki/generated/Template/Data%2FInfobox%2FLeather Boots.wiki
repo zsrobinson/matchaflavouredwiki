@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Leather Boots}}
+|invimage=Leather Boots
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Feather Falling]] II}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=200
+|armor=1
+|repair=<code>#minecraft:repairs_leather_armor</code>
+|tooltip={{G|Armor}} 1<br />{{G|Safe fall distance}} 1
+|id=<code>minecraft:leather_boots</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/leather_boots.json|leather_boots.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

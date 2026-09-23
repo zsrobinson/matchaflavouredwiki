@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Adamant Mattock]]
+| [[Smithing Template]] +<br />[[Diamond Hoe]] +<br />[[Adamant Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Diamond Hoe|Addition=Adamant Alloy|Output=Adamant Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_mattock.json|matcha:smithing/adamant_mattock}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

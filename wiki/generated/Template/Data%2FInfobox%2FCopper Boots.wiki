@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Copper Boots}}
+|invimage=Copper Boots
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=200
+|armor=1
+|repair=<code>#minecraft:repairs_copper_armor</code>
+|tooltip={{G|Armor}} 1
+|id=<code>matcha:hepatizon_boots</code>
+|base=<code>minecraft:copper_boots</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_boots.json|copper_boots.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

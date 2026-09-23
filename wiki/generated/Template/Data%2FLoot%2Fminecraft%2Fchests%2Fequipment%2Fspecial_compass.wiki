@@ -1,0 +1,11 @@
+<includeonly><small>Loot table <code>minecraft:chests/equipment/special_compass</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/special_compass.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Titanium Compass}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Golden Compass}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Copper Compass}} || 1 || 33.3% || 33.3% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

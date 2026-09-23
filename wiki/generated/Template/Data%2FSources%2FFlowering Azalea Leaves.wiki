@@ -1,0 +1,10 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Flowering azalea leaves <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/flowering_azalea_leaves.json|blocks/flowering_azalea_leaves}})</small> || 1 || 100% || tool: Iron Shears, Silk Touch
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

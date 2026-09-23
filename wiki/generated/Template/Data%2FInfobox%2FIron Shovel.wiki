@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Iron Shovel}}
+|invimage=Iron Shovel
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=500
+|damage={{Hp|4.5}}
+|attackspeed=1
+|miningspeed=8
+|repair=<code>#minecraft:iron_tool_materials</code>
+|tooltip={{G|Mining speed}} 8<br />{{G|Attack damage}} 4.5<br />{{G|Attack speed}} 1
+|id=<code>matcha:steel_pickaxe</code>
+|base=<code>minecraft:iron_shovel</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/iron_shovel.json|iron_shovel.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

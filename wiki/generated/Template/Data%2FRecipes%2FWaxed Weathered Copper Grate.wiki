@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Weathered Copper Grate]] <small>(vanilla recipe)</small>
+| 4 × [[Waxed Weathered Copper]]
+| {{Crafting|A2=Waxed Weathered Copper|B1=Waxed Weathered Copper|B3=Waxed Weathered Copper|C2=Waxed Weathered Copper|Output=Waxed Weathered Copper Grate,4}}
+|-
+| [[Waxed Weathered Copper Grate]] <small>(vanilla recipe)</small>
+| [[Weathered Copper Grate]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper Grate|B1=Wax|Output=Waxed Weathered Copper Grate|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Weathered Copper Grate]] <small>(vanilla recipe)</small>
+| [[Waxed Weathered Copper]]
+| {{Stonecutter|Input=Waxed Weathered Copper|Output=Waxed Weathered Copper Grate,4}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

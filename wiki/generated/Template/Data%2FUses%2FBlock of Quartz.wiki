@@ -1,0 +1,52 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Quartz]]
+| [[Block of Quartz]] or [[Quartz Bricks]] or [[Quartz Pillar]] or [[Chiseled Quartz Block]] or [[Smooth Quartz Block]]
+| {{Crafting|A1=Block of Quartz;Quartz Bricks;Quartz Pillar;Chiseled Quartz Block;Smooth Quartz Block|Output=Quartz,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/quartz_from_quartz_blocks.json|matcha:crafting/quartz_from_quartz_blocks}}</small>
+|-
+| [[Smithing Trim Color]]
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Quartz]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Quartz|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_quartz.json|matcha:crafting/trim_colour_quartz}}</small>
+|-
+| [[Smooth Quartz Block]]
+| [[Block of Quartz]]
+| {{Cooking|station=Mud Kiln|Input=Block of Quartz|Output=Smooth Quartz Block|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/smooth_quartz_from_smoking_quartz_block.json|matcha:kiln/smooth_quartz_from_smoking_quartz_block}}</small>
+|-
+| [[Chiseled Quartz Block]] <small>(vanilla recipe)</small>
+| [[Block of Quartz]]
+| {{Stonecutter|Input=Block of Quartz|Output=Chiseled Quartz Block}}
+|-
+| [[Quartz Bricks]] <small>(vanilla recipe)</small>
+| 4 × [[Block of Quartz]]
+| {{Crafting|A1=Block of Quartz|A2=Block of Quartz|B1=Block of Quartz|B2=Block of Quartz|Output=Quartz Bricks,4}}
+|-
+| [[Quartz Bricks]] <small>(vanilla recipe)</small>
+| [[Block of Quartz]]
+| {{Stonecutter|Input=Block of Quartz|Output=Quartz Bricks}}
+|-
+| [[Quartz Pillar]] <small>(vanilla recipe)</small>
+| 2 × [[Block of Quartz]]
+| {{Crafting|A1=Block of Quartz|A2=Block of Quartz|Output=Quartz Pillar,2}}
+|-
+| [[Quartz Pillar]] <small>(vanilla recipe)</small>
+| [[Block of Quartz]]
+| {{Stonecutter|Input=Block of Quartz|Output=Quartz Pillar}}
+|-
+| [[Quartz Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Chiseled Quartz Block]] or [[Block of Quartz]] or [[Quartz Pillar]]
+| {{Crafting|A1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|B1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|C1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|Output=Quartz Slab,6}}
+|-
+| [[Quartz Slab]] <small>(vanilla recipe)</small>
+| [[Block of Quartz]]
+| {{Stonecutter|Input=Block of Quartz|Output=Quartz Slab,2}}
+|-
+| [[Quartz Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Chiseled Quartz Block]] or [[Block of Quartz]] or [[Quartz Pillar]]
+| {{Crafting|A1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|A2=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|A3=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|B2=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|B3=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|C3=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|Output=Quartz Stairs,4}}
+|-
+| [[Quartz Stairs]] <small>(vanilla recipe)</small>
+| [[Block of Quartz]]
+| {{Stonecutter|Input=Block of Quartz|Output=Quartz Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

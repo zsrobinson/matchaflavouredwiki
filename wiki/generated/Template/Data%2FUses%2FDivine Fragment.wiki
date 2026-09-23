@@ -1,0 +1,36 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Prayer of Prometheus]]
+| 4 × [[Estus Ash]] +<br />[[Divine Fragment]] +<br />3 × [[Diamond]] +<br />[[Hell-Bound Book]]
+| {{Crafting|A1=Estus Ash|A2=Diamond|A3=Estus Ash|B1=Divine Fragment|B2=Hell-Bound Book|B3=Diamond|C1=Estus Ash|C2=Diamond|C3=Estus Ash|Output=Prayer of Prometheus}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/unbreaking.json|matcha:blessing/unbreaking}}</small>
+|-
+| [[Adamant Alloy]]
+| 4 × [[Adamant Scrap]] +<br />[[Divine Fragment]] +<br />4 × [[Gold Ingot]]
+| {{Crafting|A1=Adamant Scrap|B1=Adamant Scrap|C1=Adamant Scrap|A2=Adamant Scrap|B2=Divine Fragment|C2=Gold Ingot|A3=Gold Ingot|B3=Gold Ingot|C3=Gold Ingot|Output=Adamant Alloy|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/adamant.json|matcha:crafting/adamant}}</small>
+|-
+| [[Bedrock Buster]]
+| 8 × [[TNT]] +<br />[[Divine Fragment]]
+| {{Crafting|A1=TNT|A2=TNT|A3=TNT|B1=TNT|B2=Divine Fragment|B3=TNT|C1=TNT|C2=TNT|C3=TNT|Output=Bedrock Buster}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bedrock_buster.json|matcha:crafting/bedrock_buster}}</small>
+|-
+| [[Crystal Heart]]
+| 8 × [[Diamond]] +<br />[[Divine Fragment]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Diamond|B2=Divine Fragment|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Crystal Heart}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/crystal_heart.json|matcha:crafting/crystal_heart}}</small>
+|-
+| [[Divine Favor]]
+| 9 × [[Divine Fragment]]
+| {{Crafting|A1=Divine Fragment|A2=Divine Fragment|A3=Divine Fragment|B1=Divine Fragment|B2=Divine Fragment|B3=Divine Fragment|C1=Divine Fragment|C2=Divine Fragment|C3=Divine Fragment|Output=Divine Favor}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/divine_favour.json|matcha:crafting/divine_favour}}</small>
+|-
+| [[Electrum Alloy]]
+| 4 × [[Gold Ingot]] +<br />[[Divine Fragment]] +<br />4 × [[Silver Bullion]]
+| {{Crafting|A1=Gold Ingot|B1=Gold Ingot|C1=Gold Ingot|A2=Gold Ingot|B2=Divine Fragment|C2=Silver Bullion|A3=Silver Bullion|B3=Silver Bullion|C3=Silver Bullion|Output=Electrum Alloy|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/electrum_alloy.json|matcha:crafting/electrum_alloy}}</small>
+|-
+| [[Eye of Ender]]
+| [[Stabilized Estus]] +<br />[[Divine Fragment]]
+| {{Crafting|A1=Stabilized Estus|B1=Divine Fragment|Output=Eye of Ender,16|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ender_eye.json|matcha:crafting/ender_eye}}</small>
+|-
+| [[Ominous Trial Key]]
+| [[Trial Key]] +<br />[[Divine Fragment]]
+| {{Crafting|A1=Trial Key|B1=Divine Fragment|Output=Ominous Trial Key|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ominous_trial_key.json|matcha:crafting/ominous_trial_key}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

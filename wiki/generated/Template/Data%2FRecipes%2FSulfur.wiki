@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Sulfur]]
+| 4 × [[Sulfur Chunk]]
+| {{Crafting|A1=Sulfur Chunk|A2=Sulfur Chunk|B1=Sulfur Chunk|B2=Sulfur Chunk|Output=Sulfur,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_from_sulfur_chunk.json|matcha:crafting/sulfur_from_sulfur_chunk}}</small>
+|-
+| [[Sulfur]]
+| 2 × [[Sulfur Slab]]
+| {{Crafting|A1=Sulfur Slab|B1=Sulfur Slab|Output=Sulfur|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_from_sulfur_slabs.json|matcha:crafting/sulfur_from_sulfur_slabs}}</small>
+|-
+| [[Sulfur]] <small>(vanilla recipe)</small>
+| 4 × [[Sulfur Spike]]
+| {{Crafting|A1=Sulfur Spike|A2=Sulfur Spike|B1=Sulfur Spike|B2=Sulfur Spike|Output=Sulfur}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

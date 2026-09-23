@@ -1,0 +1,36 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Mud Kiln]]
+| 4 × [[Mud Bricks]] +<br />2 × [[Packed Mud]] +<br />[[Kindling]]
+| {{Crafting|A1=Mud Bricks|A2=Packed Mud|A3=Mud Bricks|B3=Kindling|C1=Mud Bricks|C2=Packed Mud|C3=Mud Bricks|Output=Mud Kiln}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/mudkiln.json|matcha:crafting/mudkiln}}</small>
+|-
+| [[Packed Mud]]
+| [[Mud Bricks]]
+| {{Stonecutter|Input=Mud Bricks|Output=Packed Mud}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/packed_mud_from_stonecutting_mud_bricks.json|matcha:stonecutting/packed_mud_from_stonecutting_mud_bricks}}</small>
+|-
+| [[Mud Brick Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Mud Bricks]]
+| {{Crafting|A1=Mud Bricks|B1=Mud Bricks|C1=Mud Bricks|Output=Mud Brick Slab,6}}
+|-
+| [[Mud Brick Slab]] <small>(vanilla recipe)</small>
+| [[Mud Bricks]]
+| {{Stonecutter|Input=Mud Bricks|Output=Mud Brick Slab,2}}
+|-
+| [[Mud Brick Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Mud Bricks]]
+| {{Crafting|A1=Mud Bricks|A2=Mud Bricks|A3=Mud Bricks|B2=Mud Bricks|B3=Mud Bricks|C3=Mud Bricks|Output=Mud Brick Stairs,4}}
+|-
+| [[Mud Brick Stairs]] <small>(vanilla recipe)</small>
+| [[Mud Bricks]]
+| {{Stonecutter|Input=Mud Bricks|Output=Mud Brick Stairs}}
+|-
+| [[Mud Brick Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Mud Bricks]]
+| {{Crafting|A1=Mud Bricks|A2=Mud Bricks|B1=Mud Bricks|B2=Mud Bricks|C1=Mud Bricks|C2=Mud Bricks|Output=Mud Brick Wall,6}}
+|-
+| [[Mud Brick Wall]] <small>(vanilla recipe)</small>
+| [[Mud Bricks]]
+| {{Stonecutter|Input=Mud Bricks|Output=Mud Brick Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,96 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Kindling]]
+| 2 × [[Stick]] +<br />2 × Any [[logs]]
+| {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json|matcha:crafting/campfire}}</small>
+|-
+| [[Chest]]
+| 8 × Any [[logs]]
+| {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/chest_from_logs.json|matcha:crafting/chest_from_logs}}</small>
+|-
+| [[Stick]]
+| 2 × Any [[logs]]
+| {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sticks_from_logs.json|matcha:crafting/sticks_from_logs}}</small>
+|-
+| [[Charcoal]]
+| Any [[logs that burn]]
+| {{Cooking|station=Mud Kiln|Input=Any Logs That Burn|Output=Charcoal|note=5 s, 0.15 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/charcoal.json|matcha:kiln/charcoal}}</small>
+|-
+| [[Barrel]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Barrel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/barrel_from_stonecutting_any_logs.json|matcha:stonecutting/barrel_from_stonecutting_any_logs}}</small>
+|-
+| [[Chiseled Bookshelf]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Chiseled Bookshelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/chiseled_bookshelf_from_stonecutting_any_logs.json|matcha:stonecutting/chiseled_bookshelf_from_stonecutting_any_logs}}</small>
+|-
+| [[Ladder]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Ladder,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/ladder_from_stonecutting_any_logs.json|matcha:stonecutting/ladder_from_stonecutting_any_logs}}</small>
+|-
+| [[Oak Button]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_button_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_button_from_stonecutting_oak_logs}}</small>
+|-
+| [[Oak Door]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Door,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_door_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_door_from_stonecutting_oak_logs}}</small>
+|-
+| [[Oak Fence]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Fence,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_fence_from_stonecutting_oak_log.json|matcha:stonecutting/oak_fence_from_stonecutting_oak_log}}</small>
+|-
+| [[Oak Fence Gate]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Fence Gate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_fence_gate_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_fence_gate_from_stonecutting_oak_logs}}</small>
+|-
+| [[Oak Log]]
+| [[Stripped Oak Log]] or [[Oak Wood]] or [[Stripped Oak Wood]]
+| {{Stonecutter|Input=Stripped Oak Log;Oak Wood;Stripped Oak Wood|Output=Oak Log}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_log_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_log_from_stonecutting_oak_logs}}</small>
+|-
+| [[Oak Planks]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_planks_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_planks_from_stonecutting_oak_logs}}</small>
+|-
+| [[Oak Pressure Plate]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Pressure Plate,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_pressure_plate_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_pressure_plate_from_stonecutting_oak_logs}}</small>
+|-
+| [[Oak Shelf]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_shelf_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_shelf_from_stonecutting_oak_logs}}</small>
+|-
+| [[Oak Sign]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Sign,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_sign_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_sign_from_stonecutting_oak_logs}}</small>
+|-
+| [[Oak Slab]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_slabs_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_slabs_from_stonecutting_oak_logs}}</small>
+|-
+| [[Oak Stairs]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Stairs,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_stairs_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_stairs_from_stonecutting_oak_logs}}</small>
+|-
+| [[Oak Trapdoor]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_trapoor_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_trapoor_from_stonecutting_oak_logs}}</small>
+|-
+| [[Stripped Oak Log]]
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Wood]]
+| {{Stonecutter|Input=Oak Log;Oak Wood;Stripped Oak Wood|Output=Stripped Oak Log}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_oak_log_from_stonecutting_oak_logs.json|matcha:stonecutting/stripped_oak_log_from_stonecutting_oak_logs}}</small>
+|-
+| [[Stripped Oak Wood]]
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]]
+| {{Stonecutter|Input=Oak Log;Oak Wood;Stripped Oak Log|Output=Stripped Oak Wood}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_oak_wood_from_stonecutting_oak_logs.json|matcha:stonecutting/stripped_oak_wood_from_stonecutting_oak_logs}}</small>
+|-
+| [[Charcoal]] <small>(vanilla recipe)</small>
+| Any [[logs that burn]]
+| {{Cooking|station=Oven|Input=Any Logs That Burn|Output=Charcoal|note=10 s, 0.15 XP}}
+|-
+| [[Oak Planks]] <small>(vanilla recipe)</small>
+| Any [[oak logs]]
+| {{Crafting|A1=Any Oak Logs|Output=Oak Planks,4|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,32 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Sandstone]]
+| [[Brown Sandstone]]
+| {{Crafting|A1=Brown Sandstone|Output=Sandstone,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sandstone_from_brown_sandstone.json|matcha:crafting/sandstone_from_brown_sandstone}}</small>
+|-
+| [[Brown Sandstone Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Brown Sandstone]]
+| {{Crafting|A1=Brown Sandstone|B1=Brown Sandstone|C1=Brown Sandstone|Output=Brown Sandstone Slab,6}}
+|-
+| [[Brown Sandstone Slab]] <small>(vanilla recipe)</small>
+| [[Brown Sandstone]]
+| {{Stonecutter|Input=Brown Sandstone|Output=Brown Sandstone Slab,2}}
+|-
+| [[Brown Sandstone Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Brown Sandstone]]
+| {{Crafting|A1=Brown Sandstone|A2=Brown Sandstone|A3=Brown Sandstone|B2=Brown Sandstone|B3=Brown Sandstone|C3=Brown Sandstone|Output=Brown Sandstone Stairs,4}}
+|-
+| [[Brown Sandstone Stairs]] <small>(vanilla recipe)</small>
+| [[Brown Sandstone]]
+| {{Stonecutter|Input=Brown Sandstone|Output=Brown Sandstone Stairs}}
+|-
+| [[Brown Sandstone Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Brown Sandstone]]
+| {{Crafting|A1=Brown Sandstone|A2=Brown Sandstone|B1=Brown Sandstone|B2=Brown Sandstone|C1=Brown Sandstone|C2=Brown Sandstone|Output=Brown Sandstone Wall,6}}
+|-
+| [[Brown Sandstone Wall]] <small>(vanilla recipe)</small>
+| [[Brown Sandstone]]
+| {{Stonecutter|Input=Brown Sandstone|Output=Brown Sandstone Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Electrum Boots]]
+| [[Diamond Boots]] +<br />[[Electrum Alloy]]
+| {{Smithing|Template=|Base=Diamond Boots|Addition=Electrum Alloy|Output=Electrum Boots}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/electrum_boots.json|matcha:smithing/electrum_boots}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

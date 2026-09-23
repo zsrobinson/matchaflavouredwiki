@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Polished Tuff Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Polished Tuff]]
+| {{Crafting|A1=Polished Tuff|A2=Polished Tuff|A3=Polished Tuff|B2=Polished Tuff|B3=Polished Tuff|C3=Polished Tuff|Output=Polished Tuff Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Polished Tuff Stairs]] <small>(vanilla recipe)</small>
+| [[Polished Tuff]]
+| {{Stonecutter|Input=Polished Tuff|Output=Polished Tuff Stairs}}
+|-
+| [[Polished Tuff Stairs]] <small>(vanilla recipe)</small>
+| [[Tuff]]
+| {{Stonecutter|Input=Tuff|Output=Polished Tuff Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

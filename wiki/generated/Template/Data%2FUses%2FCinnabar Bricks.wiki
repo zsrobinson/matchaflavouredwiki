@@ -1,0 +1,32 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Chiseled Cinnabar]]
+| 4 × [[Cinnabar Bricks]]
+| {{Crafting|A1=Cinnabar Bricks|A2=Cinnabar Bricks|B1=Cinnabar Bricks|B2=Cinnabar Bricks|Output=Chiseled Cinnabar,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/chiseled_cinnabar.json|matcha:crafting/chiseled_cinnabar}}</small>
+|-
+| [[Cinnabar Brick Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Cinnabar Bricks]]
+| {{Crafting|A1=Cinnabar Bricks|B1=Cinnabar Bricks|C1=Cinnabar Bricks|Output=Cinnabar Brick Slab,6}}
+|-
+| [[Cinnabar Brick Slab]] <small>(vanilla recipe)</small>
+| [[Cinnabar Bricks]]
+| {{Stonecutter|Input=Cinnabar Bricks|Output=Cinnabar Brick Slab,2}}
+|-
+| [[Cinnabar Brick Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Cinnabar Bricks]]
+| {{Crafting|A1=Cinnabar Bricks|A2=Cinnabar Bricks|A3=Cinnabar Bricks|B2=Cinnabar Bricks|B3=Cinnabar Bricks|C3=Cinnabar Bricks|Output=Cinnabar Brick Stairs,4}}
+|-
+| [[Cinnabar Brick Stairs]] <small>(vanilla recipe)</small>
+| [[Cinnabar Bricks]]
+| {{Stonecutter|Input=Cinnabar Bricks|Output=Cinnabar Brick Stairs}}
+|-
+| [[Cinnabar Brick Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Cinnabar Bricks]]
+| {{Crafting|A1=Cinnabar Bricks|A2=Cinnabar Bricks|B1=Cinnabar Bricks|B2=Cinnabar Bricks|C1=Cinnabar Bricks|C2=Cinnabar Bricks|Output=Cinnabar Brick Wall,6}}
+|-
+| [[Cinnabar Brick Wall]] <small>(vanilla recipe)</small>
+| [[Cinnabar Bricks]]
+| {{Stonecutter|Input=Cinnabar Bricks|Output=Cinnabar Brick Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,37 @@
+<includeonly><small>Loot table <code>minecraft:chests/village/village_toolsmith</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_toolsmith.json|source}}); pools roll 3–8 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Stick}} || 1–3 || 16.9% || 62.2% || 
+|-
+| {{ItemLink|Bread}} || 1 || 8.47% || 37.9% || 
+|-
+| {{ItemLink|Iron Helmet}} || 1 || 6.78% || 31.5% || 
+|-
+| {{ItemLink|Iron Chestplate}} || 1 || 6.78% || 31.5% || 
+|-
+| {{ItemLink|Iron Leggings}} || 1 || 6.78% || 31.5% || 
+|-
+| {{ItemLink|Iron Boots}} || 1 || 6.78% || 31.5% || 
+|-
+| {{ItemLink|Iron Sword}} || 1 || 6.78% || 31.5% || 
+|-
+| {{ItemLink|Iron Spear}} || 1 || 6.78% || 31.5% || 
+|-
+| {{ItemLink|Iron Pickaxe}} || 1 || 6.78% || 31.5% || 
+|-
+| {{ItemLink|Iron Axe}} || 1 || 6.78% || 31.5% || 
+|-
+| {{ItemLink|Iron Shovel}} || 1 || 6.78% || 31.5% || 
+|-
+| {{ItemLink|Iron Hoe}} || 1 || 6.78% || 31.5% || 
+|-
+| {{ItemLink|Iron Ingot}} || 1–5 || 4.24% || 21.0% || 
+|-
+| {{ItemLink|Diamond}} || 1–3 || 0.847% || 4.56% || 
+|-
+| {{ItemLink|Gold Ingot}} || 1–3 || 0.847% || 4.56% || 
+|-
+| {{ItemLink|Coal}} || 1–3 || 0.847% || 4.56% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

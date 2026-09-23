@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Sandstone Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Sandstone]]
+| {{Crafting|A1=Sandstone|A2=Sandstone|B1=Sandstone|B2=Sandstone|C1=Sandstone|C2=Sandstone|Output=Sandstone Wall,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Sandstone Wall]] <small>(vanilla recipe)</small>
+| [[Sandstone]]
+| {{Stonecutter|Input=Sandstone|Output=Sandstone Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

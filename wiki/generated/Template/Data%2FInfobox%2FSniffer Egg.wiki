@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Sniffer Egg}}
+|invimage=Sniffer Egg
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Uncommon
+|stackable=Yes (64)
+|id=<code>minecraft:sniffer_egg</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/archaeology/ocean_ruin_warm.json|ocean_ruin_warm.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

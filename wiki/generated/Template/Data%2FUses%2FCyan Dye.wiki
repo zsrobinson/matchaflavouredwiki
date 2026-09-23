@@ -1,0 +1,40 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cyan Candle]] <small>(vanilla recipe)</small>
+| [[Candle]] +<br />[[Cyan Dye]]
+| {{Crafting|A1=Candle|B1=Cyan Dye|Output=Cyan Candle|shapeless=1}}
+|-
+| [[Cyan Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Cyan Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Cyan Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Cyan Concrete Powder,8|shapeless=1}}
+|-
+| [[Cyan Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Cyan Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Cyan Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Cyan Stained Glass,8}}
+|-
+| [[Cyan Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Cyan Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Cyan Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Cyan Stained Glass Pane,8}}
+|-
+| [[Cyan Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Cyan Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Cyan Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Cyan Terracotta,8}}
+|-
+| [[Cyan Bed]] <small>(vanilla recipe)</small>
+| [[Cyan Dye]] +<br />[[White Bed]] or [[Orange Bed]] or [[Magenta Bed]] or [[Light Blue Bed]] or [[Yellow Bed]] or [[Lime Bed]] or [[Pink Bed]] or [[Gray Bed]] or [[Light Gray Bed]] or [[Purple Bed]] or [[Blue Bed]] or [[Brown Bed]] or [[Green Bed]] or [[Red Bed]] or [[Black Bed]]
+| {{Crafting|A1=Cyan Dye|B1=White Bed;Orange Bed;Magenta Bed;Light Blue Bed;Yellow Bed;Lime Bed;Pink Bed;Gray Bed;Light Gray Bed;Purple Bed;Blue Bed;Brown Bed;Green Bed;Red Bed;Black Bed|Output=Cyan Bed|shapeless=1}}
+|-
+| [[Cyan Carpet]] <small>(vanilla recipe)</small>
+| [[Cyan Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Cyan Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Cyan Carpet|shapeless=1}}
+|-
+| [[Cyan Harness]] <small>(vanilla recipe)</small>
+| [[Cyan Dye]] +<br />[[White Harness]] or [[Orange Harness]] or [[Magenta Harness]] or [[Light Blue Harness]] or [[Yellow Harness]] or [[Lime Harness]] or [[Pink Harness]] or [[Gray Harness]] or [[Light Gray Harness]] or [[Purple Harness]] or [[Blue Harness]] or [[Brown Harness]] or [[Green Harness]] or [[Red Harness]] or [[Black Harness]]
+| {{Crafting|A1=Cyan Dye|B1=White Harness;Orange Harness;Magenta Harness;Light Blue Harness;Yellow Harness;Lime Harness;Pink Harness;Gray Harness;Light Gray Harness;Purple Harness;Blue Harness;Brown Harness;Green Harness;Red Harness;Black Harness|Output=Cyan Harness|shapeless=1}}
+|-
+| [[Cyan Wool]] <small>(vanilla recipe)</small>
+| [[Cyan Dye]] +<br />[[White Wool]] or [[Orange Wool]] or [[Magenta Wool]] or [[Light Blue Wool]] or [[Yellow Wool]] or [[Lime Wool]] or [[Pink Wool]] or [[Gray Wool]] or [[Light Gray Wool]] or [[Purple Wool]] or [[Blue Wool]] or [[Brown Wool]] or [[Green Wool]] or [[Red Wool]] or [[Black Wool]]
+| {{Crafting|A1=Cyan Dye|B1=White Wool;Orange Wool;Magenta Wool;Light Blue Wool;Yellow Wool;Lime Wool;Pink Wool;Gray Wool;Light Gray Wool;Purple Wool;Blue Wool;Brown Wool;Green Wool;Red Wool;Black Wool|Output=Cyan Wool|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

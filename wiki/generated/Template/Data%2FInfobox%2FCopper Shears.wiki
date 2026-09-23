@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Copper Shears}}
+|invimage=Copper Shears
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=300
+|miningspeed=15
+|repair=[[Copper Ingot]]
+|id=<code>matcha:copper_shears</code>
+|base=<code>minecraft:shears</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_shears.json|copper_shears.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

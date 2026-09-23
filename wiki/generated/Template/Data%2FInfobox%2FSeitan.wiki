@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Seitan}}
+|invimage=Seitan
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Hoglin Spawn Egg}}
+|stackable=Yes (64)
+|id=<code>minecraft:hoglin_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/seitan.json|seitan.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

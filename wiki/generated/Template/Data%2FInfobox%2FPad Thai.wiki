@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Pad Thai}}
+|invimage=Pad Thai
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|10}}
+|effects={{EffectLink|Night Vision}} (10:00)
+|eat_time=1.6 seconds
+|tooltip=❤❤❤❤❤<br />{{G|Night vision}} Night Vision (10:00)
+|id=<code>matcha:pad_thai</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/pad_thai.json|pad_thai.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

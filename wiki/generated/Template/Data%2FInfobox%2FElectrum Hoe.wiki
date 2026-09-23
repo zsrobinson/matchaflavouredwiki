@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Electrum Hoe}}
+|invimage=Electrum Hoe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Electrum Tool]] III}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|damage={{Hp|1}}
+|attackspeed=4
+|miningspeed=12
+|repair=[[Block of Diamond]]
+|tooltip={{G|Mining speed}} 12<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 4<br />Repaired with:<br />Block of Diamond
+|id=<code>matcha:electrum_hoe</code>
+|base=<code>minecraft:netherite_hoe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_hoe.json|electrum_hoe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

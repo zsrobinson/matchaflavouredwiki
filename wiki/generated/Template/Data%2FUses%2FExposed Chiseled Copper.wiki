@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Weathered Chiseled Copper]]
+| [[Exposed Chiseled Copper]] +<br />[[Potion]]
+| {{Crafting|A1=Exposed Chiseled Copper|B1=Potion|Output=Weathered Chiseled Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_chiseled_copper_from_patina.json|matcha:crafting/weathered_chiseled_copper_from_patina}}</small>
+|-
+| [[Waxed Exposed Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Exposed Chiseled Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Chiseled Copper|B1=Wax|Output=Waxed Exposed Chiseled Copper|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

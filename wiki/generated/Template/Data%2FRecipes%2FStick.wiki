@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Stick]]
+| 2 × Any [[logs]]
+| {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sticks_from_logs.json|matcha:crafting/sticks_from_logs}}</small>
+|-
+| [[Stick]] <small>(vanilla recipe)</small>
+| 2 × Any [[planks]]
+| {{Crafting|A1=Any Planks|A2=Any Planks|Output=Stick,4}}
+|-
+| [[Stick]] <small>(vanilla recipe)</small>
+| 2 × [[Bamboo]]
+| {{Crafting|A1=Bamboo|A2=Bamboo|Output=Stick}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

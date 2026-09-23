@@ -1,0 +1,7 @@
+<includeonly><small>Loot table <code>minecraft:entities/nautilus</code> ({{Source|MF_datapack/data/minecraft/loot_table/entities/nautilus.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Nautilus Shell}} || 1 || 25.0% || 25.0% || player kill, Looting increases chance
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

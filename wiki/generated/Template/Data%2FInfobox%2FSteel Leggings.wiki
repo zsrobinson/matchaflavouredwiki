@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Steel Leggings}}
+|invimage=Steel Leggings
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Blast Protection]] III}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1000
+|armor=5
+|toughness=1
+|knockbackres=1
+|repair=[[Iron Ingot]]
+|tooltip={{G|Armor}} 5<br />{{G|Armor toughness}} 1<br />{{G|Knockback resistance}} 1<br />Repaired with:<br />Iron Ingot
+|id=<code>matcha:steel_leggings</code>
+|base=<code>minecraft:iron_leggings</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_leggings.json|steel_leggings.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

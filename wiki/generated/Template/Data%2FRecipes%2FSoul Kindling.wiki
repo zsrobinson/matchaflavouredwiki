@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Soul Kindling]]
+| [[Kindling]] +<br />Any [[soul fire base blocks]]
+| {{Crafting|A1=Kindling|B1=Any Soul Fire Base Blocks|Output=Soul Kindling|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/soul_campfire.json|matcha:crafting/soul_campfire}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

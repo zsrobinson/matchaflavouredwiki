@@ -1,0 +1,28 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Red Hellbrick Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Red Hellbricks]]
+| {{Crafting|A1=Red Hellbricks|B1=Red Hellbricks|C1=Red Hellbricks|Output=Red Hellbrick Slab,6}}
+|-
+| [[Red Hellbrick Slab]] <small>(vanilla recipe)</small>
+| [[Red Hellbricks]]
+| {{Stonecutter|Input=Red Hellbricks|Output=Red Hellbrick Slab,2}}
+|-
+| [[Red Hellbrick Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Red Hellbricks]]
+| {{Crafting|A1=Red Hellbricks|A2=Red Hellbricks|A3=Red Hellbricks|B2=Red Hellbricks|B3=Red Hellbricks|C3=Red Hellbricks|Output=Red Hellbrick Stairs,4}}
+|-
+| [[Red Hellbrick Stairs]] <small>(vanilla recipe)</small>
+| [[Red Hellbricks]]
+| {{Stonecutter|Input=Red Hellbricks|Output=Red Hellbrick Stairs}}
+|-
+| [[Red Hellbrick Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Red Hellbricks]]
+| {{Crafting|A1=Red Hellbricks|A2=Red Hellbricks|B1=Red Hellbricks|B2=Red Hellbricks|C1=Red Hellbricks|C2=Red Hellbricks|Output=Red Hellbrick Wall,6}}
+|-
+| [[Red Hellbrick Wall]] <small>(vanilla recipe)</small>
+| [[Red Hellbricks]]
+| {{Stonecutter|Input=Red Hellbricks|Output=Red Hellbrick Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

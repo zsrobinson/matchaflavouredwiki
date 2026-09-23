@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Cooked Fish}}
+|invimage=Cooked Fish
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Cooked Cod}}
+|stackable=Yes (64)
+|heals={{Hp|4}}
+|eat_time=1.6 seconds
+|tooltip=❤❤
+|id=<code>minecraft:cooked_cod</code>
+|base=<code>minecraft:cooked_cod</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_cod.json|cooked_cod.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Rind Jam}}
+|invimage=Rind Jam
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|4}}
+|effects={{EffectLink|Fire Resistance}} (5:00)
+|eat_time=1.6 seconds
+|tooltip=❤❤<br />{{G|Fire resistance}} Fire Resistance (5:00)
+|id=<code>matcha:rind_jam</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/rind_jam.json|rind_jam.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,15 @@
+<includeonly><small>Loot table <code>minecraft:gameplay/fishing/saltwater_temperate</code> ({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/saltwater_temperate.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Anchovy}} || 1 || 35.7% || 35.7% || 
+|-
+| {{ItemLink|Shad}} || 1 || 35.7% || 35.7% || 
+|-
+| {{ItemLink|Flying Fish}} || 1 || 19.0% || 19.0% || 
+|-
+| {{ItemLink|Sturgeon}} || 1 || 7.14% || 7.14% || 
+|-
+| {{ItemLink|Blue Marlin}} || 1 || 2.38% || 2.38% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

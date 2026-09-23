@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Brick]]
+| Any [[terracotta]]
+| {{Crafting|A1=Any Terracotta|Output=Brick,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/brick_from_terracottas.json|matcha:crafting/brick_from_terracottas}}</small>
+|-
+| [[Black Glazed Terracotta]]
+| [[Black Terracotta]]
+| {{Cooking|station=Mud Kiln|Input=Black Terracotta|Output=Black Glazed Terracotta|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/black_glazed_terracotta.json|matcha:kiln/black_glazed_terracotta}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

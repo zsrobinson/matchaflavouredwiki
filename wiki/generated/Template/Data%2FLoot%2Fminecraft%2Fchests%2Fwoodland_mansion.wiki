@@ -1,0 +1,69 @@
+<includeonly><small>Loot table <code>minecraft:chests/woodland_mansion</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/woodland_mansion.json|source}}); pools roll 1; 1–3; 1–4; 3 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Smithing Template}} || 1 || 50.0% || 50.0% || 
+|-
+| {{ItemLink|Music Disc}} || 1 || 39.0% || 59.7% || 
+|-
+| {{ItemLink|Resin Clump}} || 2–4 || 28.6% || 53.8% || 
+|-
+| {{ItemLink|Lead}} || 1 || 26.0% || 43.5% || 
+|-
+| {{ItemLink|Golden Apple}} || 1 || 22.1% || 38.0% || 
+|-
+| {{ItemLink|Bone}} || 1–8 || 16.7% || 42.1% || 
+|-
+| {{ItemLink|Sulfur Chunk}} || 1–8 || 16.7% || 42.1% || 
+|-
+| {{ItemLink|Tattered Leather}} || 1–8 || 16.7% || 42.1% || 
+|-
+| {{ItemLink|String}} || 1–8 || 16.7% || 42.1% || 
+|-
+| {{ItemLink|Book}} || 1 || 13.0% || 23.8% || 
+|-
+| {{ItemLink|Bread}} || 1 || 11.4% || 25.5% || 
+|-
+| {{ItemLink|Straw}} || 1–4 || 11.4% || 25.5% || 
+|-
+| {{ItemLink|Estus Ash}} || 1–4 || 8.57% || 19.7% || 
+|-
+| {{ItemLink|Coal}} || 1–4 || 8.57% || 19.7% || 
+|-
+| {{ItemLink|Iron Ingot}} || 1–4 || 5.71% || 13.5% || 
+|-
+| {{ItemLink|Bucket}} || 1 || 5.71% || 13.5% || 
+|-
+| {{ItemLink|Melon Seeds}} || 2–4 || 5.71% || 13.5% || 
+|-
+| {{ItemLink|Pumpkin Seeds}} || 2–4 || 5.71% || 13.5% || 
+|-
+| {{ItemLink|Tomato Seeds}} || 2–4 || 5.71% || 13.5% || 
+|-
+| {{ItemLink|Diamond Sword}} || 1 || 3.70% || 10.7% || 
+|-
+| {{ItemLink|Diamond Axe}} || 1 || 3.70% || 10.7% || 
+|-
+| {{ItemLink|Diamond Spear}} || 1 || 3.70% || 10.7% || 
+|-
+| {{ItemLink|Gold Ingot}} || 1–4 || 2.86% || 6.94% || 
+|-
+| {{ItemLink|Diamond Helmet}} || 1 || 2.78% || 8.10% || 
+|-
+| {{ItemLink|Diamond Chestplate}} || 1 || 2.78% || 8.10% || 
+|-
+| {{ItemLink|Diamond Leggings}} || 1 || 2.78% || 8.10% || 
+|-
+| {{ItemLink|Diamond Boots}} || 1 || 2.78% || 8.10% || 
+|-
+| {{ItemLink|Diamond Pickaxe}} || 1 || 2.22% || 6.52% || 
+|-
+| {{ItemLink|Diamond Shovel}} || 1 || 2.22% || 6.52% || 
+|-
+| {{ItemLink|Diamond Hoe}} || 1 || 2.22% || 6.52% || 
+|-
+| {{ItemLink|Diamond Mattock}} || 1 || 2.22% || 6.52% || 
+|-
+| {{ItemLink|Diamond Dolabra}} || 1 || 2.22% || 6.52% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

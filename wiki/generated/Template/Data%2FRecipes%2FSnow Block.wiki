@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Snow Block]]
+| [[Ice]]
+| {{Crafting|A1=Ice|Output=Snow Block,9|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/snow_block_from_ice.json|matcha:crafting/snow_block_from_ice}}</small>
+|-
+| [[Snow Block]]
+| 4 × [[Snow]]
+| {{Crafting|A1=Snow|A2=Snow|B1=Snow|B2=Snow|Output=Snow Block}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/snow_block_from_snow_layer.json|matcha:crafting/snow_block_from_snow_layer}}</small>
+|-
+| [[Snow Block]] <small>(vanilla recipe)</small>
+| 4 × [[Snowball]]
+| {{Crafting|A1=Snowball|A2=Snowball|B1=Snowball|B2=Snowball|Output=Snow Block}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

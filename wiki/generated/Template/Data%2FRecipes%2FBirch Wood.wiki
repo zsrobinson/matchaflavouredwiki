@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Birch Wood]] <small>(vanilla recipe)</small>
+| 4 × [[Birch Log]]
+| {{Crafting|A1=Birch Log|A2=Birch Log|B1=Birch Log|B2=Birch Log|Output=Birch Wood,3}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Birch Wood]]
+| [[Stripped Birch Log]] or [[Birch Log]] or [[Stripped Birch Wood]]
+| {{Stonecutter|Input=Stripped Birch Log;Birch Log;Stripped Birch Wood|Output=Birch Wood}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_wood_from_stonecutting_birch_log.json|matcha:stonecutting/birch_wood_from_stonecutting_birch_log}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

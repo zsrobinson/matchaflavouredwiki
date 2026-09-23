@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Apple Cinnamon Oatmeal]]
+| [[Honey Bottle]] +<br />[[Milk Bottle]] +<br />[[Estus Ash]] +<br />[[Apple]] +<br />2 × [[Wheat Grain]] +<br />[[Bowl]]
+| {{Crafting|A1=Honey Bottle|B1=Milk Bottle|C1=Estus Ash|A2=Apple|B2=Wheat Grain|C2=Wheat Grain|A3=Bowl|Output=Apple Cinnamon Oatmeal|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/oatmeal.json|matcha:food/crafting/oatmeal}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

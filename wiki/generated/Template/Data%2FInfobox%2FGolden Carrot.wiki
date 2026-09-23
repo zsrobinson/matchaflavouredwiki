@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Golden Carrot}}
+|invimage=Golden Carrot
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|2}}
+|effects={{EffectLink|Night Vision}} (0:30)
+|eat_time=1.6 seconds
+|tooltip={{G|Health}}<br />{{G|Night vision}} Night Vision (0:30)
+|id=<code>minecraft:golden_carrot</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_carrot.json|golden_carrot.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

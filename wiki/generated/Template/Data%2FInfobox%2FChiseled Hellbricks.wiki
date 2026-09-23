@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Chiseled Hellbricks}}
+|invimage=Chiseled Hellbricks
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Chiseled Nether Bricks}}
+|stackable=Yes (64)
+|id=<code>minecraft:chiseled_nether_bricks</code>
+|source={{Source|vanilla:recipe/chiseled_nether_bricks_from_nether_bricks_stonecutting.json|chiseled_nether_bricks_from_nether_bricks_stonecutting.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

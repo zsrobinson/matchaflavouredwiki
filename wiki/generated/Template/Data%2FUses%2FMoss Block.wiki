@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Moss Carpet]]
+| 2 × [[Moss Block]]
+| {{Crafting|A1=Moss Block|B1=Moss Block|Output=Moss Carpet,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/moss_carpet_generous.json|matcha:crafting/moss_carpet_generous}}</small>
+|-
+| [[Mossy Cobblestone]] <small>(vanilla recipe)</small>
+| [[Cobblestone]] +<br />[[Moss Block]]
+| {{Crafting|A1=Cobblestone|B1=Moss Block|Output=Mossy Cobblestone|shapeless=1}}
+|-
+| [[Mossy Stone Bricks]] <small>(vanilla recipe)</small>
+| [[Stone Bricks]] +<br />[[Moss Block]]
+| {{Crafting|A1=Stone Bricks|B1=Moss Block|Output=Mossy Stone Bricks|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

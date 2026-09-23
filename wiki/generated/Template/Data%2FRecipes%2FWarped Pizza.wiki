@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Warped Pizza]]
+| 2 × [[Warped Fungus]] +<br />[[Cheese]] +<br />3 × [[Tomatoes]] +<br />3 × [[Dough]]
+| {{Crafting|A1=Warped Fungus|A2=Tomatoes|A3=Dough|B1=Cheese|B2=Tomatoes|B3=Dough|C1=Warped Fungus|C2=Tomatoes|C3=Dough|Output=Warped Pizza,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/warped_pizza.json|matcha:food/crafting/warped_pizza}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

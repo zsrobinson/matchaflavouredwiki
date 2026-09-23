@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Resin Brick Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Resin Bricks]]
+| {{Crafting|A1=Resin Bricks|A2=Resin Bricks|B1=Resin Bricks|B2=Resin Bricks|C1=Resin Bricks|C2=Resin Bricks|Output=Resin Brick Wall,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Resin Brick Wall]] <small>(vanilla recipe)</small>
+| [[Resin Bricks]]
+| {{Stonecutter|Input=Resin Bricks|Output=Resin Brick Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

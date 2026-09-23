@@ -1,0 +1,25 @@
+<includeonly><small>Loot table <code>minecraft:chests/equipment/iron</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/iron.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Iron Helmet}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Iron Chestplate}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Iron Leggings}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Iron Boots}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Iron Sword}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Iron Spear}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Iron Pickaxe}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Iron Axe}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Iron Shovel}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Iron Hoe}} || 1 || 10.0% || 10.00% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

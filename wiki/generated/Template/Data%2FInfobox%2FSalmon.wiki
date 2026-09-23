@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Salmon}}
+|invimage=Salmon
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Raw Salmon}}
+|stackable=Yes (64)
+|tooltip=⭐☆☆☆
+|id=<code>matcha:northern_pike</code>
+|base=<code>minecraft:salmon</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/fish/salmon.json|salmon.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

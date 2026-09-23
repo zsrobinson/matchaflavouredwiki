@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Jungle Planks]]
+| [[Jungle Stairs]]
+| {{Stonecutter|Input=Jungle Stairs|Output=Jungle Planks}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_planks_from_stonecutting_jungle_stairs.json|matcha:stonecutting/jungle_planks_from_stonecutting_jungle_stairs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

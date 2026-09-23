@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Steel Chestplate]]
+| [[Iron Chestplate]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Chestplate|Addition=Steel Alloy|Output=Steel Chestplate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_chestplate.json|matcha:smithing/steel_chestplate}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

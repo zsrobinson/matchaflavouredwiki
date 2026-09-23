@@ -1,0 +1,355 @@
+<includeonly>{| class="wikitable sortable"
+! Matcha Flavoured name !! Vanilla name !! ID !! Kind
+|-
+| [[Add Alloy]] || {{MCW|Add Netherite Ingot}} || <code>smithing_template.netherite_upgrade.additions_slot_description</code> || item
+|-
+| [[Add armor weapon or tool]] || {{MCW|Add diamond armor, weapon, or tool}} || <code>smithing_template.netherite_upgrade.base_slot_description</code> || item
+|-
+| {{ItemLink|Hyacinth}} || {{MCW|Allium}} || <code>allium</code> || block
+|-
+| [[Engineer]] || {{MCW|Armorer}} || <code>villager.armorer</code> || villager profession
+|-
+| {{ItemLink|Tomatoes}} || {{MCW|Beetroot}} || <code>beetroot</code> || item
+|-
+| {{ItemLink|Tomato Seeds}} || {{MCW|Beetroot Seeds}} || <code>beetroot_seeds</code> || item
+|-
+| {{ItemLink|Milk Bottle}} || {{MCW|Beetroot Soup}} || <code>beetroot_soup</code> || item
+|-
+| [[Black Sack]] || {{MCW|Black Shulker Box}} || <code>black_shulker_box</code> || block
+|-
+| {{ItemLink|Raw Estus}} || {{MCW|Blaze Powder}} || <code>blaze_powder</code> || item
+|-
+| {{ItemLink|Stabilized Estus}} || {{MCW|Blaze Rod}} || <code>blaze_rod</code> || item
+|-
+| {{ItemLink|Nazar}} || {{MCW|Blaze Spawn Egg}} || <code>blaze_spawn_egg</code> || item
+|-
+| {{ItemLink|Block of Obol}} || {{MCW|Block of Emerald}} || <code>emerald_block</code> || block
+|-
+| {{ItemLink|Block of Adamant}} || {{MCW|Block of Netherite}} || <code>netherite_block</code> || block
+|-
+| {{ItemLink|Electric Block}} || {{MCW|Block of Redstone}} || <code>redstone_block</code> || block
+|-
+| [[Blue Sack]] || {{MCW|Blue Shulker Box}} || <code>blue_shulker_box</code> || block
+|-
+| {{ItemLink|Baked Pumpkin}} || {{MCW|Breeze Rod}} || <code>breeze_rod</code> || item
+|-
+| {{ItemLink|Chemistry Stand}} || {{MCW|Brewing Stand}} || <code>brewing_stand</code> || block
+|-
+| [[Brown Sack]] || {{MCW|Brown Shulker Box}} || <code>brown_shulker_box</code> || block
+|-
+| [[Cook]] || {{MCW|Butcher}} || <code>villager.butcher</code> || villager profession
+|-
+| {{ItemLink|Kindling}} || {{MCW|Campfire}} || <code>campfire</code> || block
+|-
+| [[Archaeologist]] || {{MCW|Cartographer}} || <code>villager.cartographer</code> || villager profession
+|-
+| {{ItemLink|Chiseled Hellbricks}} || {{MCW|Chiseled Nether Bricks}} || <code>chiseled_nether_bricks</code> || block
+|-
+| [[Chemist]] || {{MCW|Cleric}} || <code>villager.cleric</code> || villager profession
+|-
+| {{ItemLink|Coal Deposit}} || {{MCW|Coal Ore}} || <code>coal_ore</code> || block
+|-
+| {{ItemLink|Cooked Fish}} || {{MCW|Cooked Cod}} || <code>cooked_cod</code> || item
+|-
+| {{ItemLink|Cooked Flesh}} || {{MCW|Cooked Rabbit}} || <code>cooked_rabbit</code> || item
+|-
+| {{ItemLink|Cooked Large Fish}} || {{MCW|Cooked Salmon}} || <code>cooked_salmon</code> || item
+|-
+| {{ItemLink|Cheese}} || {{MCW|Cookie}} || <code>cookie</code> || item
+|-
+| {{ItemLink|Native Copper}} || {{MCW|Copper Ore}} || <code>copper_ore</code> || block
+|-
+| {{ItemLink|Cracked Hellbricks}} || {{MCW|Cracked Nether Bricks}} || <code>cracked_nether_bricks</code> || block
+|-
+| [[Cyan Sack]] || {{MCW|Cyan Shulker Box}} || <code>cyan_shulker_box</code> || block
+|-
+| {{ItemLink|Dark Malachite}} || {{MCW|Dark Prismarine}} || <code>dark_prismarine</code> || block
+|-
+| {{ItemLink|Dark Malachite Slab}} || {{MCW|Dark Prismarine Slab}} || <code>dark_prismarine_slab</code> || block
+|-
+| {{ItemLink|Dark Malachite Stairs}} || {{MCW|Dark Prismarine Stairs}} || <code>dark_prismarine_stairs</code> || block
+|-
+| {{ItemLink|Deepslate Coal Deposit}} || {{MCW|Deepslate Coal Ore}} || <code>deepslate_coal_ore</code> || block
+|-
+| {{ItemLink|Native Deepslate Copper}} || {{MCW|Deepslate Copper Ore}} || <code>deepslate_copper_ore</code> || block
+|-
+| {{ItemLink|Native Deepslate Silver}} || {{MCW|Deepslate Emerald Ore}} || <code>deepslate_emerald_ore</code> || block
+|-
+| {{ItemLink|Native Deepslate Gold}} || {{MCW|Deepslate Gold Ore}} || <code>deepslate_gold_ore</code> || block
+|-
+| {{ItemLink|Deepslate Hematite}} || {{MCW|Deepslate Iron Ore}} || <code>deepslate_iron_ore</code> || block
+|-
+| [[Natural Lapis Lazuli]] || {{MCW|Deepslate Lapis Lazuli Ore}} || <code>deepslate_lapis_ore</code> || block
+|-
+| {{ItemLink|Sulfur Deposit}} || {{MCW|Deepslate Redstone Ore}} || <code>deepslate_redstone_ore</code> || block
+|-
+| [[Base-metal Equipment]] || {{MCW|Diamond Equipment}} || <code>smithing_template.netherite_upgrade.applies_to</code> || item
+|-
+| {{ItemLink|Flowstone}} || {{MCW|Dripstone Block}} || <code>dripstone_block</code> || block
+|-
+| {{ItemLink|Obol}} || {{MCW|Emerald}} || <code>emerald</code> || item
+|-
+| {{ItemLink|Native Silver}} || {{MCW|Emerald Ore}} || <code>emerald_ore</code> || block
+|-
+| {{ItemLink|Hell-Bound Book}} || {{MCW|Enchanted Book}} || <code>enchanted_book</code> || item
+|-
+| {{ItemLink|Phosphor Rod}} || {{MCW|End Rod}} || <code>end_rod</code> || block
+|-
+| {{ItemLink|Brown Sandstone Slab}} || {{MCW|End Stone Brick Slab}} || <code>end_stone_brick_slab</code> || block
+|-
+| {{ItemLink|Brown Sandstone Stairs}} || {{MCW|End Stone Brick Stairs}} || <code>end_stone_brick_stairs</code> || block
+|-
+| [[Brown Sandstone Wall]] || {{MCW|End Stone Brick Wall}} || <code>end_stone_brick_wall</code> || block
+|-
+| {{ItemLink|Brown Sandstone}} || {{MCW|End Stone Bricks}} || <code>end_stone_bricks</code> || block
+|-
+| {{ItemLink|Stable Void}} || {{MCW|Ender Pearl}} || <code>ender_pearl</code> || item
+|-
+| {{ItemLink|Flour}} || {{MCW|Enderman Spawn Egg}} || <code>enderman_spawn_egg</code> || item
+|-
+| {{ItemLink|Benzene}} || {{MCW|Endermite Spawn Egg}} || <code>endermite_spawn_egg</code> || item
+|-
+| {{ItemLink|Baked Apple}} || {{MCW|Fermented Spider Eye}} || <code>fermented_spider_eye</code> || item
+|-
+| {{ItemLink|Fire Starter}} || {{MCW|Flint and Steel}} || <code>flint_and_steel</code> || item
+|-
+| {{ItemLink|Oven}} || {{MCW|Furnace}} || <code>furnace</code> || block
+|-
+| {{ItemLink|Pumpkin Curry Stock}} || {{MCW|Ghast Spawn Egg}} || <code>ghast_spawn_egg</code> || item
+|-
+| {{ItemLink|Baked Golden Apple}} || {{MCW|Glistering Melon Slice}} || <code>glistering_melon_slice</code> || item
+|-
+| {{ItemLink|Phosphor}} || {{MCW|Glow Ink Sac}} || <code>glow_ink_sac</code> || item
+|-
+| {{ItemLink|Crystallized Estus}} || {{MCW|Glowstone}} || <code>glowstone</code> || block
+|-
+| {{ItemLink|Estus Ash}} || {{MCW|Glowstone Dust}} || <code>glowstone_dust</code> || item
+|-
+| {{ItemLink|Native Gold}} || {{MCW|Gold Ore}} || <code>gold_ore</code> || block
+|-
+| {{ItemLink|Golden Crown}} || {{MCW|Golden Helmet}} || <code>golden_helmet</code> || item
+|-
+| [[Gray Sack]] || {{MCW|Gray Shulker Box}} || <code>gray_shulker_box</code> || block
+|-
+| [[Green Sack]] || {{MCW|Green Shulker Box}} || <code>green_shulker_box</code> || block
+|-
+| {{ItemLink|Sulfur Chunk}} || {{MCW|Gunpowder}} || <code>gunpowder</code> || item
+|-
+| {{ItemLink|Oil}} || {{MCW|Happy Ghast Spawn Egg}} || <code>happy_ghast_spawn_egg</code> || item
+|-
+| {{ItemLink|Electrum Alloy}} || {{MCW|Heart of the Sea}} || <code>heart_of_the_sea</code> || item
+|-
+| {{ItemLink|Seitan}} || {{MCW|Hoglin Spawn Egg}} || <code>hoglin_spawn_egg</code> || item
+|-
+| {{ItemLink|Wax}} || {{MCW|Honeycomb}} || <code>honeycomb</code> || item
+|-
+| [[Hematite]] || {{MCW|Iron Ore}} || <code>iron_ore</code> || block
+|-
+| {{ItemLink|Quartz Deposit}} || {{MCW|Lapis Lazuli Ore}} || <code>lapis_ore</code> || block
+|-
+| {{ItemLink|Sturdy Leather}} || {{MCW|Leather}} || <code>leather</code> || item
+|-
+| {{ItemLink|Leather Hood}} || {{MCW|Leather Cap}} || <code>leather_helmet</code> || item
+|-
+| {{ItemLink|Leather Pauldron}} || {{MCW|Leather Tunic}} || <code>leather_chestplate</code> || item
+|-
+| [[Lumberjack]] || {{MCW|Leatherworker}} || <code>villager.leatherworker</code> || villager profession
+|-
+| [[Mouthpiece]] || {{MCW|Librarian}} || <code>villager.librarian</code> || villager profession
+|-
+| [[Light Blue Sack]] || {{MCW|Light Blue Shulker Box}} || <code>light_blue_shulker_box</code> || block
+|-
+| [[Light Gray Sack]] || {{MCW|Light Gray Shulker Box}} || <code>light_gray_shulker_box</code> || block
+|-
+| [[Lime Sack]] || {{MCW|Lime Shulker Box}} || <code>lime_shulker_box</code> || block
+|-
+| [[Magenta Sack]] || {{MCW|Magenta Shulker Box}} || <code>magenta_shulker_box</code> || block
+|-
+| {{ItemLink|Sweet Berry Mash}} || {{MCW|Magma Cream}} || <code>magma_cream</code> || item
+|-
+| {{ItemLink|Bag of Flour}} || {{MCW|Magma Cube Spawn Egg}} || <code>magma_cube_spawn_egg</code> || item
+|-
+| {{ItemLink|Chocolate}} || {{MCW|Mushroom Stew}} || <code>mushroom_stew</code> || item
+|-
+| [[Used to craft Music Discs]] || {{MCW|Music Disc - 5}} || <code>disc_fragment_5.desc</code> || item
+|-
+| {{ItemLink|Hellbrick}} || {{MCW|Nether Brick}} || <code>nether_brick</code> || item
+|-
+| {{ItemLink|Hellbrick Fence}} || {{MCW|Nether Brick Fence}} || <code>nether_brick_fence</code> || block
+|-
+| {{ItemLink|Hellbrick Slab}} || {{MCW|Nether Brick Slab}} || <code>nether_brick_slab</code> || block
+|-
+| {{ItemLink|Hellbrick Stairs}} || {{MCW|Nether Brick Stairs}} || <code>nether_brick_stairs</code> || block
+|-
+| [[Hellbrick Wall]] || {{MCW|Nether Brick Wall}} || <code>nether_brick_wall</code> || block
+|-
+| {{ItemLink|Hellbricks}} || {{MCW|Nether Bricks}} || <code>nether_bricks</code> || block
+|-
+| {{ItemLink|Gilded Hellstone}} || {{MCW|Nether Gold Ore}} || <code>nether_gold_ore</code> || block
+|-
+| {{ItemLink|Quartz}} || {{MCW|Nether Quartz}} || <code>quartz</code> || item
+|-
+| {{ItemLink|Sulfurous Hellstone}} || {{MCW|Nether Quartz Ore}} || <code>nether_quartz_ore</code> || block
+|-
+| [[Warped Sprouts]] || {{MCW|Nether Sprouts}} || <code>nether_sprouts</code> || block
+|-
+| {{ItemLink|Divine Favor}} || {{MCW|Nether Star}} || <code>nether_star</code> || item
+|-
+| {{ItemLink|Hellspore}} || {{MCW|Nether Wart}} || <code>nether_wart</code> || item
+|-
+| {{ItemLink|Hellspore Block}} || {{MCW|Nether Wart Block}} || <code>nether_wart_block</code> || block
+|-
+| {{ItemLink|Adamant Axe}} || {{MCW|Netherite Axe}} || <code>netherite_axe</code> || item
+|-
+| {{ItemLink|Adamant Boots}} || {{MCW|Netherite Boots}} || <code>netherite_boots</code> || item
+|-
+| {{ItemLink|Adamant Chestplate}} || {{MCW|Netherite Chestplate}} || <code>netherite_chestplate</code> || item
+|-
+| {{ItemLink|Adamant Helmet}} || {{MCW|Netherite Helmet}} || <code>netherite_helmet</code> || item
+|-
+| {{ItemLink|Adamant Hoe}} || {{MCW|Netherite Hoe}} || <code>netherite_hoe</code> || item
+|-
+| {{ItemLink|Adamant Horse Armor}} || {{MCW|Netherite Horse Armor}} || <code>netherite_horse_armor</code> || item
+|-
+| [[Any Alloy]] || {{MCW|Netherite Ingot}} || <code>smithing_template.netherite_upgrade.ingredients</code> || item
+|-
+| {{ItemLink|Adamant Alloy}} || {{MCW|Netherite Ingot}} || <code>netherite_ingot</code> || item
+|-
+| {{ItemLink|Adamant Leggings}} || {{MCW|Netherite Leggings}} || <code>netherite_leggings</code> || item
+|-
+| {{ItemLink|Adamant Nautilus Armor}} || {{MCW|Netherite Nautilus Armor}} || <code>netherite_nautilus_armor</code> || item
+|-
+| {{ItemLink|Adamant Pickaxe}} || {{MCW|Netherite Pickaxe}} || <code>netherite_pickaxe</code> || item
+|-
+| {{ItemLink|Adamant Scrap}} || {{MCW|Netherite Scrap}} || <code>netherite_scrap</code> || item
+|-
+| {{ItemLink|Adamant Shovel}} || {{MCW|Netherite Shovel}} || <code>netherite_shovel</code> || item
+|-
+| {{ItemLink|Adamant Spear}} || {{MCW|Netherite Spear}} || <code>netherite_spear</code> || item
+|-
+| {{ItemLink|Adamant Sword}} || {{MCW|Netherite Sword}} || <code>netherite_sword</code> || item
+|-
+| [[Smithing Upgrade Template]] || {{MCW|Netherite Upgrade}} || <code>netherite_upgrade_smithing_template.new</code> || item
+|-
+| {{ItemLink|Hellstone}} || {{MCW|Netherrack}} || <code>netherrack</code> || block
+|-
+| {{ItemLink|Ochre Phosphor Lamp}} || {{MCW|Ochre Froglight}} || <code>ochre_froglight</code> || block
+|-
+| [[Orange Sack]] || {{MCW|Orange Shulker Box}} || <code>orange_shulker_box</code> || block
+|-
+| {{ItemLink|Pearlescent Phosphor Lamp}} || {{MCW|Pearlescent Froglight}} || <code>pearlescent_froglight</code> || block
+|-
+| {{ItemLink|Dirt Slab}} || {{MCW|Petrified Oak Slab}} || <code>petrified_oak_slab</code> || block
+|-
+| {{ItemLink|Hepatizon Alloy}} || {{MCW|Phantom Membrane}} || <code>phantom_membrane</code> || item
+|-
+| {{ItemLink|Carbon-Rich Iron}} || {{MCW|Piglin Brute Spawn Egg}} || <code>piglin_brute_spawn_egg</code> || item
+|-
+| {{ItemLink|Molasses}} || {{MCW|Piglin Spawn Egg}} || <code>piglin_spawn_egg</code> || item
+|-
+| [[Pink Sack]] || {{MCW|Pink Shulker Box}} || <code>pink_shulker_box</code> || block
+|-
+| [[Speleothem]] || {{MCW|Pointed Dripstone}} || <code>pointed_dripstone</code> || block
+|-
+| {{ItemLink|Malachite}} || {{MCW|Prismarine}} || <code>prismarine</code> || block
+|-
+| {{ItemLink|Malachite Brick Slab}} || {{MCW|Prismarine Brick Slab}} || <code>prismarine_brick_slab</code> || block
+|-
+| {{ItemLink|Malachite Brick Stairs}} || {{MCW|Prismarine Brick Stairs}} || <code>prismarine_brick_stairs</code> || block
+|-
+| {{ItemLink|Malachite Bricks}} || {{MCW|Prismarine Bricks}} || <code>prismarine_bricks</code> || block
+|-
+| {{ItemLink|Silver Bullion}} || {{MCW|Prismarine Crystals}} || <code>prismarine_crystals</code> || item
+|-
+| {{ItemLink|Raw Silver}} || {{MCW|Prismarine Shard}} || <code>prismarine_shard</code> || item
+|-
+| {{ItemLink|Malachite Slab}} || {{MCW|Prismarine Slab}} || <code>prismarine_slab</code> || block
+|-
+| {{ItemLink|Malachite Stairs}} || {{MCW|Prismarine Stairs}} || <code>prismarine_stairs</code> || block
+|-
+| [[Malachite Wall]] || {{MCW|Prismarine Wall}} || <code>prismarine_wall</code> || block
+|-
+| [[Purple Sack]] || {{MCW|Purple Shulker Box}} || <code>purple_shulker_box</code> || block
+|-
+| {{ItemLink|Tattered Leather}} || {{MCW|Rabbit Hide}} || <code>rabbit_hide</code> || item
+|-
+| {{ItemLink|Braised Mushroom}} || {{MCW|Rabbit's Foot}} || <code>rabbit_foot</code> || item
+|-
+| {{ItemLink|Cod}} || {{MCW|Raw Cod}} || <code>cod</code> || item
+|-
+| {{ItemLink|Raw Flesh}} || {{MCW|Raw Rabbit}} || <code>rabbit</code> || item
+|-
+| {{ItemLink|Salmon}} || {{MCW|Raw Salmon}} || <code>salmon</code> || item
+|-
+| {{ItemLink|Red Hellbrick Slab}} || {{MCW|Red Nether Brick Slab}} || <code>red_nether_brick_slab</code> || block
+|-
+| {{ItemLink|Red Hellbrick Stairs}} || {{MCW|Red Nether Brick Stairs}} || <code>red_nether_brick_stairs</code> || block
+|-
+| [[Red Hellbrick Wall]] || {{MCW|Red Nether Brick Wall}} || <code>red_nether_brick_wall</code> || block
+|-
+| {{ItemLink|Red Hellbricks}} || {{MCW|Red Nether Bricks}} || <code>red_nether_bricks</code> || block
+|-
+| [[Red Sack]] || {{MCW|Red Shulker Box}} || <code>red_shulker_box</code> || block
+|-
+| {{ItemLink|Electric Comparator}} || {{MCW|Redstone Comparator}} || <code>comparator</code> || block
+|-
+| {{ItemLink|Electric Wire}} || {{MCW|Redstone Dust}} || <code>redstone</code> || item
+|-
+| {{ItemLink|Electric Lamp}} || {{MCW|Redstone Lamp}} || <code>redstone_lamp</code> || block
+|-
+| {{ItemLink|Sulfurous Quartz Deposit}} || {{MCW|Redstone Ore}} || <code>redstone_ore</code> || block
+|-
+| {{ItemLink|Electric Repeater}} || {{MCW|Redstone Repeater}} || <code>repeater</code> || block
+|-
+| {{ItemLink|Electric Inverter}} || {{MCW|Redstone Torch}} || <code>redstone_torch</code> || block
+|-
+| {{ItemLink|Steel Alloy}} || {{MCW|Resin Brick}} || <code>resin_brick</code> || item
+|-
+| {{ItemLink|Glow Berry Mash}} || {{MCW|Rotten Flesh}} || <code>rotten_flesh</code> || item
+|-
+| {{ItemLink|Malachite Lantern}} || {{MCW|Sea Lantern}} || <code>sea_lantern</code> || block
+|-
+| {{ItemLink|Iron Shears}} || {{MCW|Shears}} || <code>shears</code> || item
+|-
+| [[Sack]] || {{MCW|Shulker Box}} || <code>shulker_box</code> || block
+|-
+| {{ItemLink|Shakudo Alloy}} || {{MCW|Shulker Shell}} || <code>shulker_shell</code> || item
+|-
+| {{ItemLink|Dough}} || {{MCW|Shulker Spawn Egg}} || <code>shulker_spawn_egg</code> || item
+|-
+| {{ItemLink|Mud Kiln}} || {{MCW|Smoker}} || <code>smoker</code> || block
+|-
+| {{ItemLink|Soul Kindling}} || {{MCW|Soul Campfire}} || <code>soul_campfire</code> || block
+|-
+| {{ItemLink|Limestone}} || {{MCW|Stone}} || <code>stone</code> || block
+|-
+| {{ItemLink|Curry Stock}} || {{MCW|Strider Spawn Egg}} || <code>strider_spawn_egg</code> || item
+|-
+| {{ItemLink|Copper Eye}} || {{MCW|Target}} || <code>target</code> || block
+|-
+| [[Jeweler]] || {{MCW|Toolsmith}} || <code>villager.toolsmith</code> || villager profession
+|-
+| {{ItemLink|Divine Fragment}} || {{MCW|Turtle Scute}} || <code>turtle_scute</code> || item
+|-
+| {{ItemLink|Turtle Shellmet}} || {{MCW|Turtle Shell}} || <code>turtle_helmet</code> || item
+|-
+| [[Water Bottle]] || {{MCW|Uncraftable Potion}} || <code>potion.effect.empty</code> || item
+|-
+| {{ItemLink|Verdant Phosphor Lamp}} || {{MCW|Verdant Froglight}} || <code>verdant_froglight</code> || block
+|-
+| {{ItemLink|Raw Diamond}} || {{MCW|Vindicator Spawn Egg}} || <code>vindicator_spawn_egg</code> || item
+|-
+| {{ItemLink|Straw}} || {{MCW|Wheat}} || <code>wheat</code> || item
+|-
+| {{ItemLink|Wheat Grain}} || {{MCW|Wheat Seeds}} || <code>wheat_seeds</code> || item
+|-
+| [[White Sack]] || {{MCW|White Shulker Box}} || <code>white_shulker_box</code> || block
+|-
+| {{ItemLink|Ramen Stock}} || {{MCW|Wither Skeleton Spawn Egg}} || <code>wither_skeleton_spawn_egg</code> || item
+|-
+| [[Yellow Sack]] || {{MCW|Yellow Shulker Box}} || <code>yellow_shulker_box</code> || block
+|-
+| {{ItemLink|Paneer Curry Stock}} || {{MCW|Zoglin Spawn Egg}} || <code>zoglin_spawn_egg</code> || item
+|-
+| {{ItemLink|Green Curry Stock}} || {{MCW|Zombified Piglin Spawn Egg}} || <code>zombified_piglin_spawn_egg</code> || item
+|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>

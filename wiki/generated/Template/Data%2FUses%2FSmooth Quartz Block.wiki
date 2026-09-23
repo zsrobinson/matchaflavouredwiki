@@ -1,0 +1,24 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Quartz]]
+| [[Block of Quartz]] or [[Quartz Bricks]] or [[Quartz Pillar]] or [[Chiseled Quartz Block]] or [[Smooth Quartz Block]]
+| {{Crafting|A1=Block of Quartz;Quartz Bricks;Quartz Pillar;Chiseled Quartz Block;Smooth Quartz Block|Output=Quartz,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/quartz_from_quartz_blocks.json|matcha:crafting/quartz_from_quartz_blocks}}</small>
+|-
+| [[Smooth Quartz Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Smooth Quartz Block]]
+| {{Crafting|A1=Smooth Quartz Block|B1=Smooth Quartz Block|C1=Smooth Quartz Block|Output=Smooth Quartz Slab,6}}
+|-
+| [[Smooth Quartz Slab]] <small>(vanilla recipe)</small>
+| [[Smooth Quartz Block]]
+| {{Stonecutter|Input=Smooth Quartz Block|Output=Smooth Quartz Slab,2}}
+|-
+| [[Smooth Quartz Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Smooth Quartz Block]]
+| {{Crafting|A1=Smooth Quartz Block|A2=Smooth Quartz Block|A3=Smooth Quartz Block|B2=Smooth Quartz Block|B3=Smooth Quartz Block|C3=Smooth Quartz Block|Output=Smooth Quartz Stairs,4}}
+|-
+| [[Smooth Quartz Stairs]] <small>(vanilla recipe)</small>
+| [[Smooth Quartz Block]]
+| {{Stonecutter|Input=Smooth Quartz Block|Output=Smooth Quartz Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

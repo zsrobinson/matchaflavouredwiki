@@ -1,0 +1,53 @@
+<includeonly><span class="glyph">[[File:Glyph {{#switch:{{lc:{{{1}}}}}
+|water|gills|conduit power = E001
+|warding = E002
+|electrum|fortune bonus = E003
+|cooldown = E004
+|apotropaic = E005
+|cleanse = E007
+|toughness|armor toughness = E008
+|step height = E00A
+|luck = E00B
+|nausea = E00C
+|slow falling|feather = E00D
+|attack speed|clock = E012
+|knockback = E013
+|fire resistance|fire = E014
+|night vision = E015
+|invisibility = E016
+|weakness = E017
+|weaving = E019
+|glowing = E01A
+|infested = E01B
+|dolphin's grace = E01C
+|slowness = E01E
+|matcha = E01F
+|oozing = E020
+|wind charged = E021
+|speed = E022
+|knockback resistance|darkness|blindness = E023
+|jump boost = E024
+|levitation = E025
+|safe fall distance = E027
+|reach = E028
+|smelting = E029
+|warping = E02A
+|health|heart = E030
+|empty heart = E031
+|half heart = E032
+|aura = E033
+|mining speed = E036
+|attack damage|strength = E037
+|throwable = E03C
+|armor|resistance = E03D
+|poison|wither|skull = E03E
+|fortune = E040
+|doom = E041
+|doom set = E042
+|magic protection = E043
+|#default = {{{1}}}
+}}.png|{{{size|12px}}}|link=|{{{1}}}]]</span></includeonly><noinclude>
+One of the pack's custom tooltip glyphs (from <code>font/custom_emojis.png</code>). Names follow the lore line that uses them.
+
+{{G|Health}} {{G|Warding}} {{G|Doom}} {{G|Cleanse}} {{G|Magic protection}} {{G|Mining speed}} {{G|Attack damage}} {{G|Armor}}
+[[Category:Templates]]</noinclude>

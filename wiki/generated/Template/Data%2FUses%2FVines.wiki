@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Bordure Indented Banner Pattern]] <small>(vanilla recipe)</small>
+| [[Paper]] +<br />[[Vines]]
+| {{Crafting|A1=Paper|B1=Vines|Output=Bordure Indented Banner Pattern|shapeless=1}}
+|-
+| [[Mossy Cobblestone]] <small>(vanilla recipe)</small>
+| [[Cobblestone]] +<br />[[Vines]]
+| {{Crafting|A1=Cobblestone|B1=Vines|Output=Mossy Cobblestone|shapeless=1}}
+|-
+| [[Mossy Stone Bricks]] <small>(vanilla recipe)</small>
+| [[Stone Bricks]] +<br />[[Vines]]
+| {{Crafting|A1=Stone Bricks|B1=Vines|Output=Mossy Stone Bricks|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Coarse Dirt]]
+| 6 × [[Dirt]] +<br />3 × [[Flint]]
+| {{Crafting|A1=Dirt|A2=Flint|A3=Dirt|B1=Flint|B2=Dirt|B3=Dirt|C1=Dirt|C2=Flint|C3=Dirt|Output=Coarse Dirt,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/coarse_dirt.json|matcha:crafting/coarse_dirt}}</small>
+|-
+| [[Coarse Dirt]] <small>(vanilla recipe)</small>
+| 2 × [[Dirt]] +<br />2 × [[Gravel]]
+| {{Crafting|A1=Dirt|A2=Gravel|B1=Gravel|B2=Dirt|Output=Coarse Dirt,4}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Shakudo Mattock}}
+|invimage=Shakudo Mattock
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Silk Touch]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1000
+|damage={{Hp|2}}
+|attackspeed=4
+|miningspeed=8
+|repair=[[Block of Copper]]
+|tooltip={{G|Mining speed}} 8<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 4<br />Repaired with:<br />Block of Copper
+|id=<code>matcha:shakudo_mattock</code>
+|base=<code>minecraft:stone_hoe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_mattock.json|shakudo_mattock.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

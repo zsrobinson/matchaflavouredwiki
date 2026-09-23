@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Mourner Pottery Sherd}}
+|invimage=Mourner Pottery Sherd
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Uncommon
+|stackable=Yes (64)
+|id=<code>minecraft:mourner_pottery_sherd</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/archaeology/ocean_ruin_cold.json|ocean_ruin_cold.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

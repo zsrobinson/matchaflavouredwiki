@@ -1,0 +1,44 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Andesite Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Andesite]]
+| {{Crafting|A1=Andesite|B1=Andesite|C1=Andesite|Output=Andesite Slab,6}}
+|-
+| [[Andesite Slab]] <small>(vanilla recipe)</small>
+| [[Andesite]]
+| {{Stonecutter|Input=Andesite|Output=Andesite Slab,2}}
+|-
+| [[Andesite Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Andesite]]
+| {{Crafting|A1=Andesite|A2=Andesite|A3=Andesite|B2=Andesite|B3=Andesite|C3=Andesite|Output=Andesite Stairs,4}}
+|-
+| [[Andesite Stairs]] <small>(vanilla recipe)</small>
+| [[Andesite]]
+| {{Stonecutter|Input=Andesite|Output=Andesite Stairs}}
+|-
+| [[Andesite Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Andesite]]
+| {{Crafting|A1=Andesite|A2=Andesite|B1=Andesite|B2=Andesite|C1=Andesite|C2=Andesite|Output=Andesite Wall,6}}
+|-
+| [[Andesite Wall]] <small>(vanilla recipe)</small>
+| [[Andesite]]
+| {{Stonecutter|Input=Andesite|Output=Andesite Wall}}
+|-
+| [[Polished Andesite]] <small>(vanilla recipe)</small>
+| 4 × [[Andesite]]
+| {{Crafting|A1=Andesite|A2=Andesite|B1=Andesite|B2=Andesite|Output=Polished Andesite,4}}
+|-
+| [[Polished Andesite]] <small>(vanilla recipe)</small>
+| [[Andesite]]
+| {{Stonecutter|Input=Andesite|Output=Polished Andesite}}
+|-
+| [[Polished Andesite Slab]] <small>(vanilla recipe)</small>
+| [[Andesite]]
+| {{Stonecutter|Input=Andesite|Output=Polished Andesite Slab,2}}
+|-
+| [[Polished Andesite Stairs]] <small>(vanilla recipe)</small>
+| [[Andesite]]
+| {{Stonecutter|Input=Andesite|Output=Polished Andesite Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

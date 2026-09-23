@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Bujurqui}}
+|invimage=Bujurqui
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|tooltip=⭐☆☆☆
+|id=<code>matcha:bujurqui</code>
+|base=<code>minecraft:cod</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/fish/bujurqui.json|bujurqui.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

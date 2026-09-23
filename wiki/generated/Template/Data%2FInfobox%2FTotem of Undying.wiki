@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Totem of Undying}}
+|invimage=Totem of Undying
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Uncommon
+|stackable=No
+|effects=Prevents death when held, like a [[Totem of Undying]]
+|id=<code>minecraft:totem_of_undying</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/entities/evoker.json|evoker.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

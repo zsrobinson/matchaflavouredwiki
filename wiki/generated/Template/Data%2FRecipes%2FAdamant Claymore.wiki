@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Adamant Claymore]]
+| [[Smithing Template]] +<br />[[Diamond Sword]] +<br />[[Adamant Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Diamond Sword|Addition=Adamant Alloy|Output=Adamant Claymore}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_claymore.json|matcha:smithing/adamant_claymore}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

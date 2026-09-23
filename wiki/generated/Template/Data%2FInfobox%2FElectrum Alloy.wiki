@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Electrum Alloy}}
+|invimage=Electrum Alloy
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Heart of the Sea}}
+|rarity=Uncommon
+|stackable=Yes (64)
+|id=<code>minecraft:heart_of_the_sea</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/electrum_alloy.json|electrum_alloy.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

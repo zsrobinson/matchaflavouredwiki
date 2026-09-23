@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Quartz]]
+| [[Block of Quartz]] or [[Quartz Bricks]] or [[Quartz Pillar]] or [[Chiseled Quartz Block]] or [[Smooth Quartz Block]]
+| {{Crafting|A1=Block of Quartz;Quartz Bricks;Quartz Pillar;Chiseled Quartz Block;Smooth Quartz Block|Output=Quartz,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/quartz_from_quartz_blocks.json|matcha:crafting/quartz_from_quartz_blocks}}</small>
+|-
+| [[Quartz Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Chiseled Quartz Block]] or [[Block of Quartz]] or [[Quartz Pillar]]
+| {{Crafting|A1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|B1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|C1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|Output=Quartz Slab,6}}
+|-
+| [[Quartz Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Chiseled Quartz Block]] or [[Block of Quartz]] or [[Quartz Pillar]]
+| {{Crafting|A1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|A2=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|A3=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|B2=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|B3=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|C3=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|Output=Quartz Stairs,4}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

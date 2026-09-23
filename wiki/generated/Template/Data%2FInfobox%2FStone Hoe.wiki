@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Stone Hoe}}
+|invimage=Stone Hoe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=131
+|damage={{Hp|1}}
+|attackspeed=2
+|miningspeed=4
+|repair=<code>#minecraft:stone_tool_materials</code>
+|id=<code>matcha:hepatizon_hoe</code>
+|base=<code>minecraft:stone_hoe</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_hoe.json|hepatizon_hoe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

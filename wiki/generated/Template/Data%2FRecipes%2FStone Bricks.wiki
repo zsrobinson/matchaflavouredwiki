@@ -1,0 +1,29 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Stone Bricks]]
+| 2 × [[Stone Brick Slab]]
+| {{Crafting|A1=Stone Brick Slab|B1=Stone Brick Slab|Output=Stone Bricks|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/stone_bricks_from_stone_brick_slabs.json|matcha:crafting/stone_bricks_from_stone_brick_slabs}}</small>
+|-
+| [[Stone Bricks]] <small>(vanilla recipe)</small>
+| 4 × [[Limestone]]
+| {{Crafting|A1=Limestone|A2=Limestone|B1=Limestone|B2=Limestone|Output=Stone Bricks,4}}
+|}
+'''Cooking'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Stone Bricks]]
+| [[Mossy Stone Bricks]]
+| {{Cooking|station=Oven|Input=Mossy Stone Bricks|Output=Stone Bricks|note=2.5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/stone_bricks_from_mossy_stone_bricks.json|matcha:oven/stone_bricks_from_mossy_stone_bricks}}</small>
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Stone Bricks]] <small>(vanilla recipe)</small>
+| [[Limestone]]
+| {{Stonecutter|Input=Limestone|Output=Stone Bricks}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

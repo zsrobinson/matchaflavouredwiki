@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Sulfur Chunk]]
+| [[Potent Sulfur]]
+| {{Crafting|A1=Potent Sulfur|Output=Sulfur Chunk,9|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_chunk_from_potent_sulfur.json|matcha:crafting/sulfur_chunk_from_potent_sulfur}}</small>
+|-
+| [[Sulfur Chunk]]
+| [[Sulfur]]
+| {{Crafting|A1=Sulfur|Output=Sulfur Chunk|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_chunk_from_sulfur.json|matcha:crafting/sulfur_chunk_from_sulfur}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

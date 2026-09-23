@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Grilled Melon}}
+|invimage=Grilled Melon
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|2}}
+|effects={{EffectLink|Fire Resistance}} (0:10)
+|eat_time=0.8 seconds
+|tooltip=❤<br />{{G|Fire resistance}} Fire Resistance (0:10)
+|id=<code>matcha:grilled_melon</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/grilled_melon.json|grilled_melon.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

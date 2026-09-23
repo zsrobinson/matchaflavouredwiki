@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Orange Wool]]
+| 4 × [[Orange Carpet]]
+| {{Crafting|A1=Orange Carpet|A2=Orange Carpet|B1=Orange Carpet|B2=Orange Carpet|Output=Orange Wool}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/orange_wool.json|matcha:crafting/orange_wool}}</small>
+|-
+| [[Orange Wool]] <small>(vanilla recipe)</small>
+| [[Orange Dye]] +<br />[[White Wool]] or [[Magenta Wool]] or [[Light Blue Wool]] or [[Yellow Wool]] or [[Lime Wool]] or [[Pink Wool]] or [[Gray Wool]] or [[Light Gray Wool]] or [[Cyan Wool]] or [[Purple Wool]] or [[Blue Wool]] or [[Brown Wool]] or [[Green Wool]] or [[Red Wool]] or [[Black Wool]]
+| {{Crafting|A1=Orange Dye|B1=White Wool;Magenta Wool;Light Blue Wool;Yellow Wool;Lime Wool;Pink Wool;Gray Wool;Light Gray Wool;Cyan Wool;Purple Wool;Blue Wool;Brown Wool;Green Wool;Red Wool;Black Wool|Output=Orange Wool|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

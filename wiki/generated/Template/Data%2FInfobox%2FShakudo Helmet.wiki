@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Shakudo Helmet}}
+|invimage=Shakudo Helmet
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Cleanses: Blindness, Darkness]]<br />[[8]]<br />[[(00:30)]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=500
+|armor=3
+|repair=[[Block of Copper]]
+|tooltip={{G|Armor}} 3<br />Per Equipment Bonus:<br />{{G|Half heart}} {{G|Cooldown}} -(00:04)<br />Repaired with:<br />Block of Copper
+|id=<code>matcha:shakudo_helmet</code>
+|base=<code>minecraft:copper_helmet</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_helmet.json|shakudo_helmet.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

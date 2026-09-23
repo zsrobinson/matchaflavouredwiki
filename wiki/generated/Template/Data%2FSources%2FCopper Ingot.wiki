@@ -1,0 +1,26 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Village / village armorer <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_armorer.json|chests/village/village_armorer}})</small> || 4–8 || 11.7% || 
+|}
+
+'''Structures'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Abbey / common <small>({{Source|MF_datapack/data/minecraft/loot_table/pots/abbey/common.json|pots/abbey/common}})</small> || 3–8 || 16.2% || 
+|}
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Copper ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/copper_ore.json|blocks/copper_ore}})</small> || 1–2 || 33.3% || specific tool
+|-
+| Deepslate copper ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_copper_ore.json|blocks/deepslate_copper_ore}})</small> || 2–5 || 33.3% || specific tool
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

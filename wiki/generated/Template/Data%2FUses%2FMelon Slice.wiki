@@ -1,0 +1,28 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Grilled Melon]]
+| [[Melon Slice]]
+| {{Cooking|station=Kindling|Input=Melon Slice|Output=Grilled Melon|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/grilled_melon.json|matcha:food/campfire/grilled_melon}}</small>
+|-
+| [[Melon Sorbet]]
+| [[Melon Slice]] +<br />[[Snowball]] +<br />[[Sugar]] +<br />[[Glass Bottle]]
+| {{Crafting|A1=Melon Slice|B1=Snowball|C1=Sugar|A2=Glass Bottle|Output=Melon Sorbet|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/melon_sorbet.json|matcha:food/crafting/melon_sorbet}}</small>
+|-
+| [[Rind Jam]]
+| [[Melon Slice]] +<br />[[Sugar]] +<br />[[Glass Bottle]]
+| {{Crafting|A1=Melon Slice|B1=Sugar|C1=Glass Bottle|Output=Rind Jam|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/rind_jam.json|matcha:food/crafting/rind_jam}}</small>
+|-
+| [[Grilled Melon]]
+| [[Melon Slice]]
+| {{Cooking|station=Oven|Input=Melon Slice|Output=Grilled Melon|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/grilled_melon.json|matcha:food/oven/grilled_melon}}</small>
+|-
+| [[Melon]] <small>(vanilla recipe)</small>
+| 9 × [[Melon Slice]]
+| {{Crafting|A1=Melon Slice|B1=Melon Slice|C1=Melon Slice|A2=Melon Slice|B2=Melon Slice|C2=Melon Slice|A3=Melon Slice|B3=Melon Slice|C3=Melon Slice|Output=Melon|shapeless=1}}
+|-
+| [[Melon Seeds]] <small>(vanilla recipe)</small>
+| [[Melon Slice]]
+| {{Crafting|A1=Melon Slice|Output=Melon Seeds|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

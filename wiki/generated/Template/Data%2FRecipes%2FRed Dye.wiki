@@ -1,0 +1,24 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Red Dye]]
+| [[Crimson Fungus]]
+| {{Crafting|A1=Crimson Fungus|Output=Red Dye,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/red_dye_from_crimson_fungus.json|matcha:crafting/red_dye_from_crimson_fungus}}</small>
+|-
+| [[Red Dye]]
+| 2 × [[Tomatoes]]
+| {{Crafting|A1=Tomatoes|B1=Tomatoes|Output=Red Dye,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/red_dye_from_tomato.json|matcha:crafting/red_dye_from_tomato}}</small>
+|-
+| [[Red Dye]] <small>(vanilla recipe)</small>
+| [[Poppy]]
+| {{Crafting|A1=Poppy|Output=Red Dye|shapeless=1}}
+|-
+| [[Red Dye]] <small>(vanilla recipe)</small>
+| [[Rose Bush]]
+| {{Crafting|A1=Rose Bush|Output=Red Dye,2|shapeless=1}}
+|-
+| [[Red Dye]] <small>(vanilla recipe)</small>
+| [[Red Tulip]]
+| {{Crafting|A1=Red Tulip|Output=Red Dye|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

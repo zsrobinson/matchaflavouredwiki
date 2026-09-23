@@ -1,0 +1,88 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Brick]]
+| Any [[terracotta]]
+| {{Crafting|A1=Any Terracotta|Output=Brick,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/brick_from_terracottas.json|matcha:crafting/brick_from_terracottas}}</small>
+|-
+| [[Black Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Black Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Black Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Black Terracotta,8}}
+|-
+| [[Blue Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Blue Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Blue Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Blue Terracotta,8}}
+|-
+| [[Brown Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Brown Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Brown Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Brown Terracotta,8}}
+|-
+| [[Cyan Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Cyan Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Cyan Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Cyan Terracotta,8}}
+|-
+| [[Gray Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Gray Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Gray Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Gray Terracotta,8}}
+|-
+| [[Green Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Green Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Green Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Green Terracotta,8}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Terracotta]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Light Blue Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Light Blue Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Light Blue Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Light Blue Terracotta,8}}
+|-
+| [[Light Gray Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Light Gray Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Light Gray Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Light Gray Terracotta,8}}
+|-
+| [[Lime Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Lime Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Lime Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Lime Terracotta,8}}
+|-
+| [[Magenta Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Magenta Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Magenta Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Magenta Terracotta,8}}
+|-
+| [[Orange Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Orange Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Orange Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Orange Terracotta,8}}
+|-
+| [[Pink Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Pink Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Pink Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Pink Terracotta,8}}
+|-
+| [[Purple Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Purple Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Purple Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Purple Terracotta,8}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Terracotta]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Red Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Red Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Red Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Red Terracotta,8}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Terracotta]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Terracotta]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[White Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[White Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=White Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=White Terracotta,8}}
+|-
+| [[Yellow Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Yellow Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Yellow Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Yellow Terracotta,8}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

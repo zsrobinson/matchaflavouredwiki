@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Hepatizon Shovel}}
+|invimage=Hepatizon Shovel
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1000
+|damage={{Hp|5}}
+|attackspeed=1
+|miningspeed=20
+|repair=[[Block of Copper]]
+|tooltip={{G|Mining speed}} 20<br />{{G|Attack damage}} 5<br />{{G|Attack speed}} 1<br />{{G|Speed}} +0.005<br />Repaired with:<br />Block of Copper
+|id=<code>matcha:hepatizon_shovel</code>
+|base=<code>minecraft:stone_shovel</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_shovel.json|hepatizon_shovel.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

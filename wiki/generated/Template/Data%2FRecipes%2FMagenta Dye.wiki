@@ -1,0 +1,24 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Magenta Dye]] <small>(vanilla recipe)</small>
+| [[Hyacinth]]
+| {{Crafting|A1=Hyacinth|Output=Magenta Dye|shapeless=1}}
+|-
+| [[Magenta Dye]] <small>(vanilla recipe)</small>
+| [[Blue Dye]] +<br />[[Red Dye]] +<br />[[Pink Dye]]
+| {{Crafting|A1=Blue Dye|B1=Red Dye|C1=Pink Dye|Output=Magenta Dye,3|shapeless=1}}
+|-
+| [[Magenta Dye]] <small>(vanilla recipe)</small>
+| [[Blue Dye]] +<br />2 × [[Red Dye]] +<br />[[White Dye]]
+| {{Crafting|A1=Blue Dye|B1=Red Dye|C1=Red Dye|A2=White Dye|Output=Magenta Dye,4|shapeless=1}}
+|-
+| [[Magenta Dye]] <small>(vanilla recipe)</small>
+| [[Lilac]]
+| {{Crafting|A1=Lilac|Output=Magenta Dye,2|shapeless=1}}
+|-
+| [[Magenta Dye]] <small>(vanilla recipe)</small>
+| [[Purple Dye]] +<br />[[Pink Dye]]
+| {{Crafting|A1=Purple Dye|B1=Pink Dye|Output=Magenta Dye,2|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

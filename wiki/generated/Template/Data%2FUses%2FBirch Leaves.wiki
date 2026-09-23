@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Birch Sapling]]
+| [[Birch Leaves]]
+| {{Crafting|A1=Birch Leaves|Output=Birch Sapling|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/birch_sapling_from_birch_leaves.json|matcha:crafting/birch_sapling_from_birch_leaves}}</small>
+|-
+| [[Leaf Litter]] <small>(vanilla recipe)</small>
+| Any [[leaves]]
+| {{Cooking|station=Oven|Input=Any Leaves|Output=Leaf Litter|note=10 s, 0.1 XP}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

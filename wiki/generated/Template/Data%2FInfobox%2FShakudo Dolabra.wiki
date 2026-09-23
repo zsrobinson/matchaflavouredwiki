@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Shakudo Dolabra}}
+|invimage=Shakudo Dolabra
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Silk Touch]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1000
+|miningspeed=7
+|repair=[[Block of Copper]]
+|tooltip={{G|Mining speed}} 7<br />{{G|Attack damage}} 7<br />{{G|Attack speed}} 1<br />Repaired with:<br />Block of Copper
+|id=<code>matcha:shakudo_dolabra</code>
+|base=<code>minecraft:stone_axe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_dolabra.json|shakudo_dolabra.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

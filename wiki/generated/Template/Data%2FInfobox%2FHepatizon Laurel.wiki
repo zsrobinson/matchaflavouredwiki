@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Hepatizon Laurel}}
+|invimage=Hepatizon Laurel
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=250
+|armor=1
+|repair=<code>#minecraft:repairs_netherite_armor</code>
+|tooltip={{G|Armor}} 1<br />{{G|Speed}} +0.1
+|id=<code>matcha:hepatizon_laurel</code>
+|base=<code>minecraft:netherite_helmet</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/equipment/hepatizon/laurel.json|laurel.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

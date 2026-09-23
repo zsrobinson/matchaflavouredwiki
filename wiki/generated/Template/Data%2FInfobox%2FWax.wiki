@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Wax}}
+|invimage=Wax
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Honeycomb}}
+|stackable=Yes (64)
+|id=<code>minecraft:honeycomb</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/honeycomb_from_honeycomb_block.json|honeycomb_from_honeycomb_block.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

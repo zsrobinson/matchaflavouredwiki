@@ -1,0 +1,37 @@
+<includeonly><small>Loot table <code>minecraft:chests/desert_pyramid</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/desert_pyramid.json|source}}); pools roll 1; 2–4; 4 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Bone}} || 1–3 || 33.3% || 80.2% || 
+|-
+| {{ItemLink|Sulfur Chunk}} || 1–4 || 33.3% || 80.2% || 
+|-
+| {{ItemLink|Sand}} || 1–4 || 33.3% || 80.2% || 
+|-
+| {{ItemLink|The Avesta}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Smithing Template}} || 2 || 14.3% || 14.3% || 
+|-
+| {{ItemLink|Golden Apple}} || 1 || 12.8% || 33.3% || 
+|-
+| {{ItemLink|Sturdy Leather}} || 1–5 || 11.6% || 30.6% || 
+|-
+| {{ItemLink|Book}} || 1 || 11.6% || 30.6% || 
+|-
+| {{ItemLink|Raw Iron}} || 1–5 || 8.72% || 23.7% || 
+|-
+| {{ItemLink|Raw Gold}} || 2–7 || 8.72% || 23.7% || 
+|-
+| {{ItemLink|Obol}} || 1–3 || 8.72% || 23.7% || 
+|-
+| {{ItemLink|Copper Horse Armor}} || 1 || 8.72% || 23.7% || 
+|-
+| {{ItemLink|Iron Horse Armor}} || 1 || 8.72% || 23.7% || 
+|-
+| {{ItemLink|Golden Horse Armor}} || 1 || 5.81% || 16.3% || 
+|-
+| {{ItemLink|Raw Diamond}} || 1 || 2.91% || 8.44% || 
+|-
+| {{ItemLink|Diamond Horse Armor}} || 1 || 2.91% || 8.44% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

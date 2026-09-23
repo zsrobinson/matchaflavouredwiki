@@ -1,0 +1,29 @@
+<includeonly><small>Loot table <code>minecraft:chests/village/village_taiga_house</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_taiga_house.json|source}}); pools roll 1; 5–8 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Bundle}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Potato}} || 1–7 || 17.2% || 70.1% || 
+|-
+| {{ItemLink|Sweet Berries}} || 1 || 17.2% || 70.1% || 
+|-
+| {{ItemLink|Bread}} || 1 || 17.2% || 70.1% || 
+|-
+| {{ItemLink|Spruce Log}} || 1–5 || 17.2% || 70.1% || 
+|-
+| {{ItemLink|Pumpkin Seeds}} || 1–5 || 8.62% || 44.1% || 
+|-
+| {{ItemLink|Spruce Sapling}} || 1–5 || 8.62% || 44.1% || 
+|-
+| {{ItemLink|Fern}} || 1 || 3.45% || 20.3% || 
+|-
+| {{ItemLink|Large Fern}} || 1 || 3.45% || 20.3% || 
+|-
+| {{ItemLink|Obol}} || 1–4 || 3.45% || 20.3% || 
+|-
+| {{ItemLink|Iron Nugget}} || 1–5 || 1.72% || 10.7% || 
+|-
+| {{ItemLink|Spruce Sign}} || 1 || 1.72% || 10.7% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

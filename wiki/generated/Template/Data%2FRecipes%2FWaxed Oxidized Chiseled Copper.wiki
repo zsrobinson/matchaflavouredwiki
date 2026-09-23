@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Oxidized Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Oxidized Chiseled Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Chiseled Copper|B1=Wax|Output=Waxed Oxidized Chiseled Copper|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Oxidized Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Waxed Oxidized Copper]]
+| {{Stonecutter|Input=Waxed Oxidized Copper|Output=Waxed Oxidized Chiseled Copper,4}}
+|-
+| [[Waxed Oxidized Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Waxed Oxidized Cut Copper]]
+| {{Stonecutter|Input=Waxed Oxidized Cut Copper|Output=Waxed Oxidized Chiseled Copper}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Copper Door]] <small>(vanilla recipe)</small>
+| 6 × [[Copper Ingot]]
+| {{Crafting|A1=Copper Ingot|A2=Copper Ingot|A3=Copper Ingot|B1=Copper Ingot|B2=Copper Ingot|B3=Copper Ingot|Output=Copper Door,3}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Copper Door]]
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Copper Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/copper_door_from_stonecutting_copper_block.json|matcha:stonecutting/copper_door_from_stonecutting_copper_block}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Tattered Leather}}
+|invimage=Tattered Leather
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Rabbit Hide}}
+|stackable=Yes (64)
+|id=<code>minecraft:rabbit_hide</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/rabbit_hide_from_leather.json|rabbit_hide_from_leather.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

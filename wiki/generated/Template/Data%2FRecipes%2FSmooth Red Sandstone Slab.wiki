@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Smooth Red Sandstone Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Smooth Red Sandstone]]
+| {{Crafting|A1=Smooth Red Sandstone|B1=Smooth Red Sandstone|C1=Smooth Red Sandstone|Output=Smooth Red Sandstone Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Smooth Red Sandstone Slab]] <small>(vanilla recipe)</small>
+| [[Smooth Red Sandstone]]
+| {{Stonecutter|Input=Smooth Red Sandstone|Output=Smooth Red Sandstone Slab,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

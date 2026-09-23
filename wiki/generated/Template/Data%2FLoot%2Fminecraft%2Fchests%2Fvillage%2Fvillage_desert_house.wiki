@@ -1,0 +1,23 @@
+<includeonly><small>Loot table <code>minecraft:chests/village/village_desert_house</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_desert_house.json|source}}); pools roll 1; 3–8 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Bundle}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Cactus}} || 1–4 || 27.8% || 80.6% || 
+|-
+| {{ItemLink|Straw}} || 1–7 || 27.8% || 80.6% || 
+|-
+| {{ItemLink|Bread}} || 1 || 27.8% || 80.6% || 
+|-
+| {{ItemLink|Dead Bush}} || 1–3 || 5.56% || 26.6% || 
+|-
+| {{ItemLink|Clay Ball}} || 1 || 2.78% || 14.3% || 
+|-
+| {{ItemLink|Green Dye}} || 1 || 2.78% || 14.3% || 
+|-
+| {{ItemLink|Book}} || 1 || 2.78% || 14.3% || 
+|-
+| {{ItemLink|Obol}} || 1–2 || 2.78% || 14.3% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

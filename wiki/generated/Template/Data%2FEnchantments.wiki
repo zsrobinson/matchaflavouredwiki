@@ -1,0 +1,161 @@
+<includeonly>{| class="wikitable sortable"
+! Enchantment !! ID !! Max level !! Slots !! Applies to !! Compared with vanilla
+|-
+| [[(00:30)]] || <code>matcha:shakudo_armour</code> || 1 || mainhand, armor || 5 items || '''New'''
+|-
+| [[+1]] || <code>matcha:electrum_armour</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
+|-
+| [[-(00:10)]] || <code>matcha:shakudo_elytra</code> || 1 || mainhand, armor || 1 items || '''New'''
+|-
+| [[1]] || <code>matcha:warding_1</code> || 1 || mainhand, offhand || 13 items || '''New'''
+|-
+| [[2]] || <code>matcha:warding_2</code> || 1 || mainhand, offhand || 12 items || '''New'''
+|-
+| [[20]] || <code>matcha:max_magic_protection</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
+|-
+| [[3]] || <code>matcha:adamant_armour</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
+|-
+| [[3]] || <code>matcha:warding_3</code> || 1 || mainhand, offhand || 12 items || '''New'''
+|-
+| [[4]] || <code>matcha:warding_4</code> || 1 || mainhand, offhand || 12 items || '''New'''
+|-
+| [[8]] || <code>matcha:magic_protection</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
+|-
+| [[Adamant Weapon]] || <code>matcha:adamant_weapon</code> || 1 || mainhand || <code>#minecraft:enchantable/weapon</code> || '''New'''
+|-
+| [[Anemos]] || <code>matcha:anemos</code> || 1 || mainhand || 7 items || '''New'''
+|-
+| [[Aqua Affinity]] || <code>minecraft:aqua_affinity</code> || 1 || head || <code>#minecraft:enchantable/head_armor</code> || Changed: anvil cost
+|-
+| [[Bane of Arthropods]] || <code>minecraft:bane_of_arthropods</code> || 5 || mainhand || <code>#minecraft:enchantable/weapon</code> || Changed: anvil cost
+|-
+| [[Blast Protection]] || <code>minecraft:blast_protection</code> || 4 || armor || <code>#minecraft:enchantable/armor</code> || Changed: anvil cost
+|-
+| [[Bloodrage]] || <code>matcha:bloodrage</code> || 1 || mainhand || <code>#minecraft:axes</code> || '''New'''
+|-
+| [[Breach]] || <code>minecraft:breach</code> || 4 || mainhand || <code>#minecraft:enchantable/mace</code> || Changed: anvil cost
+|-
+| [[Channeling]] || <code>minecraft:channeling</code> || 1 || mainhand || <code>#minecraft:enchantable/trident</code> || Changed: anvil cost
+|-
+| [[Cleanse Maleffect]] || <code>matcha:cleanse_armor_maleffect</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
+|-
+| [[Cleanses: Blindness, Darkness]] || <code>matcha:cleanse_armor_head</code> || 1 || armor || <code>#minecraft:enchantable/head_armor</code> || '''New'''
+|-
+| [[Cleanses: Levitation]] || <code>matcha:cleanse_armor_feet</code> || 1 || armor || <code>#minecraft:enchantable/foot_armor</code> || '''New'''
+|-
+| [[Cleanses: Poison]] || <code>matcha:cleanse_armor_chest</code> || 1 || armor || <code>#minecraft:enchantable/chest_armor</code> || '''New'''
+|-
+| [[Cleanses: Slowness]] || <code>matcha:cleanse_armor_legs</code> || 1 || armor || <code>#minecraft:enchantable/leg_armor</code> || '''New'''
+|-
+| [[Curse of Binding]] || <code>minecraft:binding_curse</code> || 1 || armor || <code>#minecraft:enchantable/equippable</code> || Changed: anvil cost
+|-
+| [[Curse of Vanishing]] || <code>minecraft:vanishing_curse</code> || 1 || any || <code>#minecraft:enchantable/vanishing</code> || Changed: anvil cost
+|-
+| [[Density]] || <code>minecraft:density</code> || 5 || mainhand || <code>#minecraft:enchantable/mace</code> || Changed: anvil cost
+|-
+| [[Depth Strider]] || <code>minecraft:depth_strider</code> || 3 || feet || <code>#minecraft:enchantable/foot_armor</code> || Changed: anvil cost
+|-
+| [[ERROR: Please hold me to update]] || <code>main:anemos</code> || 1 || mainhand || 6 items || '''New'''
+|-
+| [[ERROR: Please wear me to update]] || <code>main:freezing_protection</code> || 3 || armor || <code>#minecraft:enchantable/chest_armor</code> || '''New'''
+|-
+| [[ERROR: Please wear me to update]] || <code>main:reach</code> || 3 || chest || <code>#minecraft:enchantable/chest_armor</code> || '''New'''
+|-
+| [[ERROR: Please wear me to update]] || <code>main:traversal</code> || 3 || feet || <code>#minecraft:enchantable/foot_armor</code> || '''New'''
+|-
+| [[ERROR: Please wear me to update]] || <code>main:zephyr</code> || 1 || feet || <code>#minecraft:enchantable/foot_armor</code> || '''New'''
+|-
+| [[Efficiency]] || <code>minecraft:efficiency</code> || 5 || mainhand || <code>#minecraft:enchantable/mining</code> || Unchanged
+|-
+| [[Electrum Tool]] || <code>matcha:electrum_tool</code> || 3 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || '''New'''
+|-
+| [[Feather Falling]] || <code>minecraft:feather_falling</code> || 4 || armor || <code>#minecraft:enchantable/foot_armor</code> || Changed: anvil cost, effects
+|-
+| [[Fire Aspect]] || <code>minecraft:fire_aspect</code> || 2 || mainhand || <code>#minecraft:enchantable/fire_aspect</code> || Changed: anvil cost
+|-
+| [[Fire Protection]] || <code>minecraft:fire_protection</code> || 4 || armor || <code>#minecraft:enchantable/armor</code> || Changed: anvil cost
+|-
+| [[Flame]] || <code>minecraft:flame</code> || 1 || mainhand || <code>#minecraft:enchantable/bow</code> || Changed: anvil cost
+|-
+| [[Fortune]] || <code>minecraft:fortune</code> || 1 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || Changed: max level, anvil cost
+|-
+| [[Frost Protection]] || <code>matcha:freezing_protection</code> || 3 || armor || <code>#minecraft:enchantable/chest_armor</code> || '''New'''
+|-
+| [[Frost Walker]] || <code>minecraft:frost_walker</code> || 2 || feet || <code>#minecraft:enchantable/foot_armor</code> || Changed: anvil cost
+|-
+| [[Impaling]] || <code>minecraft:impaling</code> || 5 || mainhand || <code>#minecraft:enchantable/trident</code> || Changed: anvil cost
+|-
+| [[Infinity]] || <code>minecraft:infinity</code> || 1 || mainhand || <code>#minecraft:enchantable/bow</code> || Changed: anvil cost
+|-
+| [[Knockback]] || <code>minecraft:knockback</code> || 2 || mainhand || <code>#minecraft:enchantable/melee_weapon</code> || Changed: anvil cost
+|-
+| [[Looting]] || <code>minecraft:looting</code> || 3 || mainhand || <code>#minecraft:enchantable/looting_compatible</code> || Changed: anvil cost, supported items
+|-
+| [[Loyalty]] || <code>minecraft:loyalty</code> || 3 || mainhand || <code>#minecraft:enchantable/trident</code> || Changed: anvil cost
+|-
+| [[Luck of the Sea]] || <code>minecraft:luck_of_the_sea</code> || 3 || mainhand || <code>#minecraft:enchantable/fishing</code> || Changed: anvil cost
+|-
+| [[Lunge]] || <code>minecraft:lunge</code> || 3 || hand || <code>#minecraft:enchantable/lunge</code> || Changed: anvil cost
+|-
+| [[Lure]] || <code>minecraft:lure</code> || 3 || mainhand || <code>#minecraft:enchantable/fishing</code> || Changed: anvil cost
+|-
+| [[Mending]] || <code>minecraft:mending</code> || 1 || any || <code>#minecraft:enchantable/durability</code> || Changed: anvil cost
+|-
+| [[Multishot]] || <code>minecraft:multishot</code> || 1 || mainhand || <code>#minecraft:enchantable/crossbow</code> || Changed: anvil cost
+|-
+| [[Piercing]] || <code>minecraft:piercing</code> || 4 || mainhand || <code>#minecraft:enchantable/crossbow</code> || Unchanged
+|-
+| [[Power]] || <code>minecraft:power</code> || 5 || mainhand || <code>#minecraft:enchantable/bow</code> || Unchanged
+|-
+| [[Projectile Protection]] || <code>minecraft:projectile_protection</code> || 4 || armor || <code>#minecraft:enchantable/armor</code> || Changed: anvil cost
+|-
+| [[Protection]] || <code>minecraft:protection</code> || 4 || armor || <code>#minecraft:enchantable/armor</code> || Unchanged
+|-
+| [[Punch]] || <code>minecraft:punch</code> || 2 || mainhand || <code>#minecraft:enchantable/bow</code> || Changed: anvil cost
+|-
+| [[Quick Charge]] || <code>minecraft:quick_charge</code> || 3 || mainhand, offhand || <code>#minecraft:enchantable/crossbow</code> || Changed: anvil cost
+|-
+| [[Reach]] || <code>matcha:reach</code> || 3 || chest || <code>#minecraft:enchantable/chest_armor</code> || '''New'''
+|-
+| [[Respiration]] || <code>minecraft:respiration</code> || 3 || head || <code>#minecraft:enchantable/head_armor</code> || Changed: anvil cost
+|-
+| [[Riposte]] || <code>matcha:riposte</code> || 3 || hand || <code>minecraft:stone_sword</code> || '''New'''
+|-
+| [[Riptide]] || <code>minecraft:riptide</code> || 3 || hand || <code>#minecraft:enchantable/trident</code> || Changed: anvil cost
+|-
+| [[Shakudo Weapon]] || <code>matcha:shakudo_weapon</code> || 1 || mainhand || <code>#minecraft:enchantable/weapon</code> || '''New'''
+|-
+| [[Sharpness]] || <code>minecraft:sharpness</code> || 5 || mainhand || <code>#minecraft:enchantable/sharp_weapon</code> || Unchanged
+|-
+| [[Silk Touch]] || <code>minecraft:silk_touch</code> || 1 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || Changed: anvil cost
+|-
+| [[Slaughter]] || <code>matcha:slaughter</code> || 1 || mainhand || <code>#minecraft:enchantable/weapon</code> || '''New'''
+|-
+| [[Smite]] || <code>minecraft:smite</code> || 5 || mainhand || <code>#minecraft:enchantable/weapon</code> || Changed: anvil cost
+|-
+| [[Soul Speed]] || <code>minecraft:soul_speed</code> || 3 || feet || <code>#minecraft:enchantable/foot_armor</code> || Changed: anvil cost
+|-
+| [[Sweeping Edge]] || <code>minecraft:sweeping_edge</code> || 3 || mainhand || <code>#minecraft:enchantable/sweeping</code> || Changed: anvil cost
+|-
+| [[Swift Sneak]] || <code>minecraft:swift_sneak</code> || 3 || legs || <code>#minecraft:enchantable/leg_armor</code> || Changed: anvil cost
+|-
+| [[Thorns]] || <code>minecraft:thorns</code> || 3 || any || <code>#minecraft:enchantable/armor</code> || Changed: anvil cost
+|-
+| [[Trailblaze]] || <code>matcha:traversal</code> || 3 || feet || <code>#minecraft:enchantable/foot_armor</code> || '''New'''
+|-
+| [[Unbreaking]] || <code>minecraft:unbreaking</code> || 3 || any || <code>#minecraft:enchantable/durability</code> || Changed: anvil cost
+|-
+| [[Wind Burst]] || <code>minecraft:wind_burst</code> || 3 || mainhand || <code>#minecraft:enchantable/mace</code> || Changed: anvil cost
+|-
+| [[Zephyr]] || <code>matcha:zephyr</code> || 3 || feet || <code>#minecraft:enchantable/foot_armor</code> || '''New'''
+|-
+| [[enchantment.kleispack.smelting]] || <code>matcha:adamant_tool</code> || 1 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || '''New'''
+|-
+| [[∞]] || <code>matcha:conduit_power</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
+|-
+| [[∞]] || <code>matcha:fire_proof</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
+|-
+| [[∞]] || <code>matcha:haste</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
+|-
+| [[∞]] || <code>matcha:regeneration</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
+|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>

@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Dark Oak Planks]]
+| [[Dark Oak Stairs]]
+| {{Stonecutter|Input=Dark Oak Stairs|Output=Dark Oak Planks}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_planks_from_stonecutting_dark_oak_stairs.json|matcha:stonecutting/dark_oak_planks_from_stonecutting_dark_oak_stairs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

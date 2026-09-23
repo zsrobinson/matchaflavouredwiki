@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cooked Porkchop]]
+| [[Raw Porkchop]]
+| {{Cooking|station=Kindling|Input=Raw Porkchop|Output=Cooked Porkchop|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_pork.json|matcha:food/campfire/cooked_pork}}</small>
+|-
+| [[Cooked Porkchop]]
+| [[Raw Porkchop]]
+| {{Cooking|station=Oven|Input=Raw Porkchop|Output=Cooked Porkchop|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pork.json|matcha:food/oven/cooked_pork}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

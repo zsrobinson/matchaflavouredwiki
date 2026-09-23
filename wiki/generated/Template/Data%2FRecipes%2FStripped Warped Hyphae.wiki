@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Stripped Warped Hyphae]] <small>(vanilla recipe)</small>
+| 4 × [[Stripped Warped Stem]]
+| {{Crafting|A1=Stripped Warped Stem|A2=Stripped Warped Stem|B1=Stripped Warped Stem|B2=Stripped Warped Stem|Output=Stripped Warped Hyphae,3}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Stripped Warped Hyphae]]
+| [[Warped Hyphae]] or [[Warped Stem]] or [[Stripped Warped Stem]]
+| {{Stonecutter|Input=Warped Hyphae;Warped Stem;Stripped Warped Stem|Output=Stripped Warped Hyphae}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_warped_hyphae_from_stonecutting_warped_stems.json|matcha:stonecutting/stripped_warped_hyphae_from_stonecutting_warped_stems}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

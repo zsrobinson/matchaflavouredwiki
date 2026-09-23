@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Brick Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Bricks]]
+| {{Crafting|A1=Bricks|A2=Bricks|B1=Bricks|B2=Bricks|C1=Bricks|C2=Bricks|Output=Brick Wall,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Brick Wall]] <small>(vanilla recipe)</small>
+| [[Bricks]]
+| {{Stonecutter|Input=Bricks|Output=Brick Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

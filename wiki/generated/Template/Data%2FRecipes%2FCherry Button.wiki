@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cherry Button]] <small>(vanilla recipe)</small>
+| [[Cherry Planks]]
+| {{Crafting|A1=Cherry Planks|Output=Cherry Button|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cherry Button]]
+| Any [[cherry logs]]
+| {{Stonecutter|Input=Any Cherry Logs|Output=Cherry Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/cherry_button_from_stonecutting_cherry_logs.json|matcha:stonecutting/cherry_button_from_stonecutting_cherry_logs}}</small>
+|-
+| [[Cherry Button]]
+| [[Cherry Planks]]
+| {{Stonecutter|Input=Cherry Planks|Output=Cherry Button,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/cherry_button_from_stonecutting_cherry_planks.json|matcha:stonecutting/cherry_button_from_stonecutting_cherry_planks}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

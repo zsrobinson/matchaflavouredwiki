@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Copper Sword}}
+|invimage=Copper Sword
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|damage={{Hp|5}}
+|attackspeed=1.6
+|miningspeed=340282349999999991754788743781432688640
+|repair=<code>#minecraft:copper_tool_materials</code>
+|tooltip={{G|Attack damage}} 5<br />{{G|Attack speed}} 1.6
+|id=<code>minecraft:copper_sword</code>
+|base=<code>minecraft:copper_sword</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_sword.json|copper_sword.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

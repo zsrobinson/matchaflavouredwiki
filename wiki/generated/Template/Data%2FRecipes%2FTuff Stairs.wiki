@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Tuff Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Tuff]]
+| {{Crafting|A1=Tuff|A2=Tuff|A3=Tuff|B2=Tuff|B3=Tuff|C3=Tuff|Output=Tuff Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Tuff Stairs]] <small>(vanilla recipe)</small>
+| [[Tuff]]
+| {{Stonecutter|Input=Tuff|Output=Tuff Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

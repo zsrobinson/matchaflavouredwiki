@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Sweet Berry Mash}}
+|invimage=Sweet Berry Mash
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Magma Cream}}
+|stackable=Yes (64)
+|heals={{Hp|2}}
+|effects={{EffectLink|Health Boost}} (0:10)
+|eat_time=0.8 seconds
+|tooltip=❤<br />❤❤ (0:10)
+|id=<code>minecraft:magma_cream</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/sweet_berry_mash.json|sweet_berry_mash.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

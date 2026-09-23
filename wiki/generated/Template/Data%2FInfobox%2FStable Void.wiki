@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Stable Void}}
+|invimage=Stable Void
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Ender Pearl}}
+|stackable=Yes (64)
+|id=<code>minecraft:ender_pearl</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_corridor.json|stronghold_corridor.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

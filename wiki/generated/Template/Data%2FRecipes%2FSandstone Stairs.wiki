@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Sandstone Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Sandstone]] or [[Chiseled Sandstone]] or [[Cut Sandstone]]
+| {{Crafting|A1=Sandstone;Chiseled Sandstone;Cut Sandstone|A2=Sandstone;Chiseled Sandstone;Cut Sandstone|A3=Sandstone;Chiseled Sandstone;Cut Sandstone|B2=Sandstone;Chiseled Sandstone;Cut Sandstone|B3=Sandstone;Chiseled Sandstone;Cut Sandstone|C3=Sandstone;Chiseled Sandstone;Cut Sandstone|Output=Sandstone Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Sandstone Stairs]] <small>(vanilla recipe)</small>
+| [[Sandstone]]
+| {{Stonecutter|Input=Sandstone|Output=Sandstone Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

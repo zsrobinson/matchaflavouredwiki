@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Beacon Kindling]]
+| [[Obol]] +<br />[[Kindling]] +<br />[[Hay Bale]]
+| {{Crafting|B1=Obol|B2=Kindling|B3=Hay Bale|Output=Beacon Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/beacon_kindling.json|matcha:crafting/beacon_kindling}}</small>
+|-
+| [[Straw]]
+| [[Hay Bale]]
+| {{Crafting|A1=Hay Bale|Output=Straw,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wheat_from_hay_block.json|matcha:crafting/wheat_from_hay_block}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

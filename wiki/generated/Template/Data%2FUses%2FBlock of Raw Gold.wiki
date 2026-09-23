@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Block of Gold]]
+| [[Block of Raw Gold]]
+| {{Cooking|station=Blast Furnace|Input=Block of Raw Gold|Output=Block of Gold|note=10 s, 9 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/gold_block_from_blasting_raw_gold_block.json|matcha:blast/gold_block_from_blasting_raw_gold_block}}</small>
+|-
+| [[Raw Gold]] <small>(vanilla recipe)</small>
+| [[Block of Raw Gold]]
+| {{Crafting|A1=Block of Raw Gold|Output=Raw Gold,9|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

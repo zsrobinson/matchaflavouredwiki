@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Electric Lamp]] <small>(vanilla recipe)</small>
+| 4 × [[Electric Wire]] +<br />[[Crystallized Estus]]
+| {{Crafting|A2=Electric Wire|B1=Electric Wire|B2=Crystallized Estus|B3=Electric Wire|C2=Electric Wire|Output=Electric Lamp}}
+|-
+| [[Respawn Anchor]] <small>(vanilla recipe)</small>
+| 6 × [[Crying Obsidian]] +<br />3 × [[Crystallized Estus]]
+| {{Crafting|A1=Crying Obsidian|A2=Crystallized Estus|A3=Crying Obsidian|B1=Crying Obsidian|B2=Crystallized Estus|B3=Crying Obsidian|C1=Crying Obsidian|C2=Crystallized Estus|C3=Crying Obsidian|Output=Respawn Anchor}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

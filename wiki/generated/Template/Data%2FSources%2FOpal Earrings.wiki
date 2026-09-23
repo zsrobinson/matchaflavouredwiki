@@ -1,0 +1,17 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Structures'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Misc / opal earrings <small>({{Source|MF_datapack/data/matcha/loot_table/equipment/misc/opal_earrings.json|equipment/misc/opal_earrings}})</small> || 1 || 100% || 
+|}
+
+'''Trading'''
+{| class="wikitable"
+! Villager !! Level !! Price !! Quantity
+|-
+| [[Jeweler]] || Novice || 4 × {{ItemLink|Obol}} + {{ItemLink|Opal}} || 1
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

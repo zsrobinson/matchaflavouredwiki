@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Iron Spear}}
+|invimage=Iron Spear
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=500
+|damage={{Hp|3}}
+|attackspeed=1.05
+|repair=<code>#minecraft:iron_tool_materials</code>
+|tooltip={{G|Attack damage}} 3<br />{{G|Attack speed}} 1.05
+|id=<code>minecraft:iron_spear</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/iron_spear.json|iron_spear.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

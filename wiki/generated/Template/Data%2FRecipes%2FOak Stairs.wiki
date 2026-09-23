@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oak Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Oak Planks]]
+| {{Crafting|A1=Oak Planks|A2=Oak Planks|A3=Oak Planks|B2=Oak Planks|B3=Oak Planks|C3=Oak Planks|Output=Oak Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oak Stairs]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Stairs,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_stairs_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_stairs_from_stonecutting_oak_logs}}</small>
+|-
+| [[Oak Stairs]]
+| [[Oak Planks]]
+| {{Stonecutter|Input=Oak Planks|Output=Oak Stairs}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_stairs_from_stonecutting_oak_planks.json|matcha:stonecutting/oak_stairs_from_stonecutting_oak_planks}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

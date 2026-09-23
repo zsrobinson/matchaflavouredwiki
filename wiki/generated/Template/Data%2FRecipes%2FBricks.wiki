@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Bricks]]
+| 4 × [[Brick]]
+| {{Crafting|A1=Brick|A2=Brick|B1=Brick|B2=Brick|Output=Bricks,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bricks.json|matcha:crafting/bricks}}</small>
+|-
+| [[Bricks]]
+| 2 × [[Brick Slab]]
+| {{Crafting|A1=Brick Slab|B1=Brick Slab|Output=Bricks|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bricks_from_brick_slabs.json|matcha:crafting/bricks_from_brick_slabs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Malachite Brick Stairs}}
+|invimage=Malachite Brick Stairs
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Prismarine Brick Stairs}}
+|stackable=Yes (64)
+|id=<code>minecraft:prismarine_brick_stairs</code>
+|source={{Source|vanilla:recipe/prismarine_brick_stairs.json|prismarine_brick_stairs.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

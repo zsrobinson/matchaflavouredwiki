@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Bamboo Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Bamboo Planks]]
+| {{Crafting|A1=Bamboo Planks|B1=Bamboo Planks|C1=Bamboo Planks|Output=Bamboo Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Bamboo Slab]]
+| Any [[bamboo blocks]]
+| {{Stonecutter|Input=Any Bamboo Blocks|Output=Bamboo Slab,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/bamboo_slab_from_stonecutting_bamboo_block.json|matcha:stonecutting/bamboo_slab_from_stonecutting_bamboo_block}}</small>
+|-
+| [[Bamboo Slab]]
+| [[Bamboo Planks]]
+| {{Stonecutter|Input=Bamboo Planks|Output=Bamboo Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/bamboo_slab_from_stonecutting_bamboo_planks.json|matcha:stonecutting/bamboo_slab_from_stonecutting_bamboo_planks}}</small>
+|-
+| [[Bamboo Slab]]
+| [[Bamboo Trapdoor]]
+| {{Stonecutter|Input=Bamboo Trapdoor|Output=Bamboo Slab}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/bamboo_slab_from_stonecutting_bamboo_trapdoor.json|matcha:stonecutting/bamboo_slab_from_stonecutting_bamboo_trapdoor}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

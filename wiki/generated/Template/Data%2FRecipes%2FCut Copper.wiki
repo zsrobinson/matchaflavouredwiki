@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cut Copper]]
+| 2 × [[Cut Copper Slab]]
+| {{Crafting|A1=Cut Copper Slab|B1=Cut Copper Slab|Output=Cut Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cut_copper_from_cut_copper_slab.json|matcha:crafting/cut_copper_from_cut_copper_slab}}</small>
+|-
+| [[Cut Copper]] <small>(vanilla recipe)</small>
+| 4 × [[Block of Copper]]
+| {{Crafting|A1=Block of Copper|A2=Block of Copper|B1=Block of Copper|B2=Block of Copper|Output=Cut Copper,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cut Copper]] <small>(vanilla recipe)</small>
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Cut Copper,4}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

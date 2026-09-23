@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Paradise Lost}}
+|invimage=Paradise Lost
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Uncommon
+|stackable=Yes (64)
+|tooltip=by John Milton
+|id=<code>matcha:paradise_lost</code>
+|base=<code>minecraft:book</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/treasure/paradise_lost.json|paradise_lost.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

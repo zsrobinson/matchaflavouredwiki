@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Hepatizon Mattock]]
+| [[Smithing Template]] +<br />[[Copper Hoe]] +<br />[[Hepatizon Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Copper Hoe|Addition=Hepatizon Alloy|Output=Hepatizon Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_mattock.json|matcha:smithing/hepatizon_mattock}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

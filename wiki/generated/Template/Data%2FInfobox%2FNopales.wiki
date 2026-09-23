@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Nopales}}
+|invimage=Nopales
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|4}}
+|eat_time=1.2 seconds
+|tooltip=❤❤
+|id=<code>matcha:nopales</code>
+|base=<code>minecraft:green_dye</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/nopales.json|nopales.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

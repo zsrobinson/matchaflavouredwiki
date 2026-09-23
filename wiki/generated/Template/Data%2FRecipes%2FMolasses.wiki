@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Molasses]]
+| [[Sugar Cane]]
+| {{Cooking|station=Kindling|Input=Sugar Cane|Output=Molasses|note=5 s, 0.01 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/molasses.json|matcha:food/campfire/molasses}}</small>
+|-
+| [[Molasses]]
+| [[Sugar Cane]]
+| {{Cooking|station=Oven|Input=Sugar Cane|Output=Molasses|note=5 s, 0.01 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/molasses.json|matcha:food/oven/molasses}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

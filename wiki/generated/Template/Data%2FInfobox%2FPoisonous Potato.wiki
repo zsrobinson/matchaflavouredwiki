@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Poisonous Potato}}
+|invimage=Poisonous Potato
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|effects={{EffectLink|Poison}} (0:05) — 60% chance
+|eat_time=1.6 seconds
+|id=<code>matcha:heart_container</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_supply.json|shipwreck_supply.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

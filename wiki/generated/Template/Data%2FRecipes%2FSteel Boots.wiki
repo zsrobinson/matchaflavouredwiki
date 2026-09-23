@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Steel Boots]]
+| [[Iron Boots]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Boots|Addition=Steel Alloy|Output=Steel Boots}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_boots.json|matcha:smithing/steel_boots}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

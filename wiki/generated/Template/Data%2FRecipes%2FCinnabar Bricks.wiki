@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cinnabar Bricks]]
+| 2 × [[Cinnabar Brick Slab]]
+| {{Crafting|A1=Cinnabar Brick Slab|B1=Cinnabar Brick Slab|Output=Cinnabar Bricks|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cinnabar_bricks_from_cinnabar_brick_slabs.json|matcha:crafting/cinnabar_bricks_from_cinnabar_brick_slabs}}</small>
+|-
+| [[Cinnabar Bricks]] <small>(vanilla recipe)</small>
+| 4 × [[Polished Cinnabar]]
+| {{Crafting|A1=Polished Cinnabar|A2=Polished Cinnabar|B1=Polished Cinnabar|B2=Polished Cinnabar|Output=Cinnabar Bricks,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cinnabar Bricks]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Cinnabar Bricks}}
+|-
+| [[Cinnabar Bricks]] <small>(vanilla recipe)</small>
+| [[Polished Cinnabar]]
+| {{Stonecutter|Input=Polished Cinnabar|Output=Cinnabar Bricks}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

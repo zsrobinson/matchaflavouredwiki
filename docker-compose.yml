@@ -1,0 +1,16 @@
+# Local Matcha Flavoured Wiki. `docker compose up -d`, then `./tools/build.sh`.
+services:
+  wiki:
+    build: ./site
+    image: matcha-wiki:1.45
+    container_name: matcha-wiki
+    ports:
+      - "8080:80"
+    volumes:
+      - ./site/LocalSettings.php:/var/www/html/LocalSettings.php:ro
+      - ./site/apache-rewrite.conf:/etc/apache2/conf-enabled/matcha-rewrite.conf:ro
+      - ./site/assets:/var/www/html/assets:ro
+      - ./site/data:/var/www/data
+      - ./site/images:/var/www/html/images
+      - ./build:/build:ro
+    restart: unless-stopped

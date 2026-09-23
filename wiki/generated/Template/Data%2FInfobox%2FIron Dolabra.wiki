@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Iron Dolabra}}
+|invimage=Iron Dolabra
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=500
+|attackspeed=0.9
+|miningspeed=6
+|repair=<code>#minecraft:iron_tool_materials</code>
+|tooltip={{G|Mining speed}} 6<br />{{G|Attack damage}} 6<br />{{G|Attack speed}} 0.9
+|id=<code>matcha:iron_dolabra</code>
+|base=<code>minecraft:iron_axe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/iron_dolabra.json|iron_dolabra.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

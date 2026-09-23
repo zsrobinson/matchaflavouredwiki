@@ -1,0 +1,96 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Kindling]]
+| 2 × [[Stick]] +<br />2 × Any [[logs]]
+| {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json|matcha:crafting/campfire}}</small>
+|-
+| [[Chest]]
+| 8 × Any [[logs]]
+| {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/chest_from_logs.json|matcha:crafting/chest_from_logs}}</small>
+|-
+| [[Stick]]
+| 2 × Any [[logs]]
+| {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sticks_from_logs.json|matcha:crafting/sticks_from_logs}}</small>
+|-
+| [[Charcoal]]
+| Any [[logs that burn]]
+| {{Cooking|station=Mud Kiln|Input=Any Logs That Burn|Output=Charcoal|note=5 s, 0.15 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/charcoal.json|matcha:kiln/charcoal}}</small>
+|-
+| [[Acacia Button]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_button_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_button_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Acacia Door]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Door,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_door_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_door_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Acacia Fence]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Fence,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_fence_from_stonecutting_acacia_log.json|matcha:stonecutting/acacia_fence_from_stonecutting_acacia_log}}</small>
+|-
+| [[Acacia Fence Gate]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Fence Gate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_fence_gate_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_fence_gate_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Acacia Log]]
+| [[Stripped Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Wood]]
+| {{Stonecutter|Input=Stripped Acacia Log;Acacia Wood;Stripped Acacia Wood|Output=Acacia Log}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_log_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_log_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Acacia Planks]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_planks_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_planks_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Acacia Pressure Plate]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Pressure Plate,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_pressure_plate_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_pressure_plate_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Acacia Shelf]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_shelf_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_shelf_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Acacia Sign]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Sign,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_sign_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_sign_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Acacia Slab]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_slabs_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_slabs_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Acacia Stairs]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Stairs,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_stairs_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_stairs_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Acacia Trapdoor]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_trapoor_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_trapoor_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Barrel]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Barrel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/barrel_from_stonecutting_any_logs.json|matcha:stonecutting/barrel_from_stonecutting_any_logs}}</small>
+|-
+| [[Chiseled Bookshelf]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Chiseled Bookshelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/chiseled_bookshelf_from_stonecutting_any_logs.json|matcha:stonecutting/chiseled_bookshelf_from_stonecutting_any_logs}}</small>
+|-
+| [[Ladder]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Ladder,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/ladder_from_stonecutting_any_logs.json|matcha:stonecutting/ladder_from_stonecutting_any_logs}}</small>
+|-
+| [[Stripped Acacia Log]]
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Wood]]
+| {{Stonecutter|Input=Acacia Log;Acacia Wood;Stripped Acacia Wood|Output=Stripped Acacia Log}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_acacia_log_from_stonecutting_acacia_logs.json|matcha:stonecutting/stripped_acacia_log_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Stripped Acacia Wood]]
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]]
+| {{Stonecutter|Input=Acacia Log;Acacia Wood;Stripped Acacia Log|Output=Stripped Acacia Wood}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_acacia_wood_from_stonecutting_acacia_logs.json|matcha:stonecutting/stripped_acacia_wood_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Acacia Planks]] <small>(vanilla recipe)</small>
+| Any [[acacia logs]]
+| {{Crafting|A1=Any Acacia Logs|Output=Acacia Planks,4|shapeless=1}}
+|-
+| [[Charcoal]] <small>(vanilla recipe)</small>
+| Any [[logs that burn]]
+| {{Cooking|station=Oven|Input=Any Logs That Burn|Output=Charcoal|note=10 s, 0.15 XP}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

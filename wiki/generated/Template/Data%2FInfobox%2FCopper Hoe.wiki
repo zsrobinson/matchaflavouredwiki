@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Copper Hoe}}
+|invimage=Copper Hoe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|damage={{Hp|1}}
+|attackspeed=2
+|miningspeed=6
+|repair=[[Copper Ingot]]
+|tooltip={{G|Mining speed}} 6<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 2
+|id=<code>copper_hoe</code>
+|base=<code>minecraft:copper_hoe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_hoe.json|copper_hoe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

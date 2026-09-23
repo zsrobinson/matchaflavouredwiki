@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Sturdy Leather Leggings}}
+|invimage=Sturdy Leather Leggings
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Projectile Protection]] III}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|armor=3
+|repair=[[Tattered Leather]]
+|tooltip={{G|Armor}} 3<br />{{G|Safe fall distance}} 2<br />Repaired with:<br />Tattered Leather
+|id=<code>matcha:sturdy_leather_leggings</code>
+|base=<code>minecraft:leather_leggings</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/sturdy_leather_pants.json|sturdy_leather_pants.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Spruce Planks]]
+| 2 × [[Spruce Slab]]
+| {{Crafting|A1=Spruce Slab|B1=Spruce Slab|Output=Spruce Planks|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/spruce_planks_from_spruce_slabs.json|matcha:crafting/spruce_planks_from_spruce_slabs}}</small>
+|-
+| [[Spruce Planks]] <small>(vanilla recipe)</small>
+| Any [[spruce logs]]
+| {{Crafting|A1=Any Spruce Logs|Output=Spruce Planks,4|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Spruce Planks]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_planks_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_planks_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Spruce Planks]]
+| [[Spruce Stairs]]
+| {{Stonecutter|Input=Spruce Stairs|Output=Spruce Planks}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_planks_from_stonecutting_spruce_stairs.json|matcha:stonecutting/spruce_planks_from_stonecutting_spruce_stairs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

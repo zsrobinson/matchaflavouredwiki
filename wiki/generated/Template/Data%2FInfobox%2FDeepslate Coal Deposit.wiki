@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Deepslate Coal Deposit}}
+|invimage=Deepslate Coal Deposit
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Deepslate Coal Ore}}
+|stackable=Yes (64)
+|id=<code>minecraft:deepslate_coal_ore</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_coal_ore.json|deepslate_coal_ore.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

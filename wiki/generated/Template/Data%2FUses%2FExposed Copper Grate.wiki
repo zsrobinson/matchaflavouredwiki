@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Weathered Copper Grate]]
+| [[Exposed Copper Grate]] +<br />[[Potion]]
+| {{Crafting|A1=Exposed Copper Grate|B1=Potion|Output=Weathered Copper Grate|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_grate_from_patina.json|matcha:crafting/weathered_copper_grate_from_patina}}</small>
+|-
+| [[Waxed Exposed Copper Grate]] <small>(vanilla recipe)</small>
+| [[Exposed Copper Grate]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper Grate|B1=Wax|Output=Waxed Exposed Copper Grate|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

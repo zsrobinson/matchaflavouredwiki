@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Stripped Jungle Log}}
+|invimage=Stripped Jungle Log
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:stripped_jungle_log</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_jungle_log_from_stonecutting_jungle_logs.json|stripped_jungle_log_from_stonecutting_jungle_logs.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

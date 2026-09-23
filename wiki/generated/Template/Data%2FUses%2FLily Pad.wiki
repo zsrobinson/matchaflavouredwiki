@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Lily Pad]]
+| [[Lily Pad]] +<br />[[Potion]] +<br />[[Bone Meal]]
+| {{Crafting|A1=Lily Pad|B1=Potion|C1=Bone Meal|Output=Lily Pad,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_lily_pad.json|matcha:crafting/clone_lily_pad}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

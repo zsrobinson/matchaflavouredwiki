@@ -1,0 +1,36 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cobblestone]]
+| [[Mossy Cobblestone]]
+| {{Cooking|station=Oven|Input=Mossy Cobblestone|Output=Cobblestone|note=2.5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/cobblestone_from_mossy_cobblestone.json|matcha:oven/cobblestone_from_mossy_cobblestone}}</small>
+|-
+| [[Mossy Cobblestone Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Mossy Cobblestone]]
+| {{Crafting|A1=Mossy Cobblestone|B1=Mossy Cobblestone|C1=Mossy Cobblestone|Output=Mossy Cobblestone Slab,6}}
+|-
+| [[Mossy Cobblestone Slab]] <small>(vanilla recipe)</small>
+| [[Mossy Cobblestone]]
+| {{Stonecutter|Input=Mossy Cobblestone|Output=Mossy Cobblestone Slab,2}}
+|-
+| [[Mossy Cobblestone Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Mossy Cobblestone]]
+| {{Crafting|A1=Mossy Cobblestone|A2=Mossy Cobblestone|A3=Mossy Cobblestone|B2=Mossy Cobblestone|B3=Mossy Cobblestone|C3=Mossy Cobblestone|Output=Mossy Cobblestone Stairs,4}}
+|-
+| [[Mossy Cobblestone Stairs]] <small>(vanilla recipe)</small>
+| [[Mossy Cobblestone]]
+| {{Stonecutter|Input=Mossy Cobblestone|Output=Mossy Cobblestone Stairs}}
+|-
+| [[Mossy Cobblestone Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Mossy Cobblestone]]
+| {{Crafting|A1=Mossy Cobblestone|A2=Mossy Cobblestone|B1=Mossy Cobblestone|B2=Mossy Cobblestone|C1=Mossy Cobblestone|C2=Mossy Cobblestone|Output=Mossy Cobblestone Wall,6}}
+|-
+| [[Mossy Cobblestone Wall]] <small>(vanilla recipe)</small>
+| [[Mossy Cobblestone]]
+| {{Stonecutter|Input=Mossy Cobblestone|Output=Mossy Cobblestone Wall}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Mossy Cobblestone]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Mossy Cobblestone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

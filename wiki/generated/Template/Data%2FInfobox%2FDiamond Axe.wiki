@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Diamond Axe}}
+|invimage=Diamond Axe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=2500
+|damage={{Hp|9}}
+|attackspeed=1
+|miningspeed=9
+|repair=<code>#minecraft:diamond_tool_materials</code>
+|tooltip={{G|Mining speed}} 9<br />{{G|Attack damage}} 9<br />{{G|Attack speed}} 1
+|id=<code>minecraft:diamond_axe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/diamond_axe.json|diamond_axe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

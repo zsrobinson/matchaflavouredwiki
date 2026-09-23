@@ -1,0 +1,19 @@
+<includeonly><small>Loot table <code>minecraft:dispensers/trial_chambers/chamber</code> ({{Source|MF_datapack/data/minecraft/loot_table/dispensers/trial_chambers/chamber.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Snowball}} || 4–8 || 20.7% || 20.7% || 
+|-
+| {{ItemLink|Fire Charge}} || 4–8 || 20.7% || 20.7% || 
+|-
+| {{ItemLink|Water Bucket}} || 1 || 13.8% || 13.8% || 
+|-
+| {{ItemLink|Arrow}} || 4–8 || 13.8% || 13.8% || 
+|-
+| {{ItemLink|Lingering Potion}} || 2–5 || 13.8% || 13.8% || 
+|-
+| {{ItemLink|Splash Potion}} || 2–5 || 10.3% || 10.3% || 
+|-
+| {{ItemLink|Egg}} || 4–8 || 6.90% || 6.90% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

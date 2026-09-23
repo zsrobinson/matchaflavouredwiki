@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Paneer Makhani}}
+|invimage=Paneer Makhani
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|20}}
+|effects={{EffectLink|Regeneration}} (10:00)
+|eat_time=3 seconds
+|tooltip=❤❤❤❤❤❤❤❤❤❤<br />{{G|Health}} Regen (10:00)
+|id=<code>matcha:paneer_makhani</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/paneer_makhani.json|paneer_makhani.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

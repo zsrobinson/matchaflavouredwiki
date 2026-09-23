@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Weathered Cut Copper Stairs]]
+| [[Exposed Cut Copper Stairs]] +<br />[[Potion]]
+| {{Crafting|A1=Exposed Cut Copper Stairs|B1=Potion|Output=Weathered Cut Copper Stairs|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_cut_copper_stairs_from_patina.json|matcha:crafting/weathered_cut_copper_stairs_from_patina}}</small>
+|-
+| [[Waxed Exposed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Exposed Cut Copper Stairs]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Cut Copper Stairs|B1=Wax|Output=Waxed Exposed Cut Copper Stairs|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

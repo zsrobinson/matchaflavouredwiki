@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Smithing Template}}
+|invimage=Smithing Template
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Uncommon
+|stackable=Yes (64)
+|id=<code>minecraft:flow_armor_trim_smithing_template</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/flow_armor_trim_smithing_template.json|flow_armor_trim_smithing_template.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

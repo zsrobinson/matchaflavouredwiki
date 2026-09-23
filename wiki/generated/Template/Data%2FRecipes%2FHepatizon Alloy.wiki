@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Hepatizon Alloy]]
+| 7 × [[Copper Ingot]] +<br />[[Silver Bullion]] +<br />[[Gold Ingot]]
+| {{Crafting|A1=Copper Ingot|B1=Copper Ingot|C1=Copper Ingot|A2=Copper Ingot|B2=Copper Ingot|C2=Copper Ingot|A3=Copper Ingot|B3=Silver Bullion|C3=Gold Ingot|Output=Hepatizon Alloy|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bronze_alloy.json|matcha:crafting/bronze_alloy}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

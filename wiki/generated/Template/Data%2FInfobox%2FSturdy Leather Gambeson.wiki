@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Sturdy Leather Gambeson}}
+|invimage=Sturdy Leather Gambeson
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Projectile Protection]] IV}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|armor=5
+|repair=[[Tattered Leather]]
+|tooltip={{G|Armor}} 5<br />{{G|Safe fall distance}} 2<br />Repaired with:<br />Tattered Leather
+|id=<code>matcha:sturdy_leather_chestplate</code>
+|base=<code>minecraft:leather_chestplate</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/sturdy_leather_chestplate.json|sturdy_leather_chestplate.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

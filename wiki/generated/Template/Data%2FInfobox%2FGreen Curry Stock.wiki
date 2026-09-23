@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Green Curry Stock}}
+|invimage=Green Curry Stock
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Zombified Piglin Spawn Egg}}
+|stackable=Yes (64)
+|id=<code>minecraft:zombified_piglin_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_green_curry.json|uncooked_green_curry.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

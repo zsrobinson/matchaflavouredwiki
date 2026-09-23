@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Crimson Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Crimson Planks]]
+| {{Crafting|A1=Crimson Planks|B1=Crimson Planks|C1=Crimson Planks|Output=Crimson Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Crimson Slab]]
+| [[Crimson Planks]]
+| {{Stonecutter|Input=Crimson Planks|Output=Crimson Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_slab_from_stonecutting_crimson_planks.json|matcha:stonecutting/crimson_slab_from_stonecutting_crimson_planks}}</small>
+|-
+| [[Crimson Slab]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_slab_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_slab_from_stonecutting_crimson_stem}}</small>
+|-
+| [[Crimson Slab]]
+| [[Crimson Trapdoor]]
+| {{Stonecutter|Input=Crimson Trapdoor|Output=Crimson Slab}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_slab_from_stonecutting_crimson_trapdoor.json|matcha:stonecutting/crimson_slab_from_stonecutting_crimson_trapdoor}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

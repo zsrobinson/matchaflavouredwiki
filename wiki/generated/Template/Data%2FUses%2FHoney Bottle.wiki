@@ -1,0 +1,36 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Honey Block]]
+| 4 × [[Honey Bottle]]
+| {{Crafting|A1=Honey Bottle|A2=Honey Bottle|B1=Honey Bottle|B2=Honey Bottle|Output=Honey Block}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/honey_block.json|matcha:crafting/honey_block}}</small>
+|-
+| [[Honey Ginger Tea]]
+| [[Honey Bottle]]
+| {{Cooking|station=Kindling|Input=Honey Bottle|Output=Honey Ginger Tea|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/honey_ginger_tea.json|matcha:food/campfire/honey_ginger_tea}}</small>
+|-
+| [[Bubbling Mead]]
+| [[Honey Bottle]] +<br />[[Brown Mushroom]] +<br />2 × [[Sugar]] +<br />[[Sweet Berries]] or [[Apple]] or [[Glow Berries]]
+| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sugar|B2=Sweet Berries;Apple;Glow Berries|Output=Bubbling Mead|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bubbling_mead.json|matcha:food/crafting/bubbling_mead}}</small>
+|-
+| [[Honied French Toast]]
+| [[Honey Bottle]] +<br />Any [[eggs]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
+| {{Crafting|A1=Honey Bottle|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Honied French Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/honied_french_toast.json|matcha:food/crafting/honied_french_toast}}</small>
+|-
+| [[Mead]]
+| [[Honey Bottle]] +<br />[[Brown Mushroom]] +<br />[[Sugar]] +<br />[[Sweet Berries]] or [[Apple]] or [[Glow Berries]]
+| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sweet Berries;Apple;Glow Berries|Output=Mead|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/mead.json|matcha:food/crafting/mead}}</small>
+|-
+| [[Apple Cinnamon Oatmeal]]
+| [[Honey Bottle]] +<br />[[Milk Bottle]] +<br />[[Estus Ash]] +<br />[[Apple]] +<br />2 × [[Wheat Grain]] +<br />[[Bowl]]
+| {{Crafting|A1=Honey Bottle|B1=Milk Bottle|C1=Estus Ash|A2=Apple|B2=Wheat Grain|C2=Wheat Grain|A3=Bowl|Output=Apple Cinnamon Oatmeal|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/oatmeal.json|matcha:food/crafting/oatmeal}}</small>
+|-
+| [[Sugar]]
+| [[Honey Bottle]]
+| {{Crafting|A1=Honey Bottle|Output=Sugar,3|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sugar_from_honey_bottle.json|matcha:food/crafting/sugar_from_honey_bottle}}</small>
+|-
+| [[Honey Ginger Tea]]
+| [[Honey Bottle]]
+| {{Cooking|station=Oven|Input=Honey Bottle|Output=Honey Ginger Tea|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/honey_ginger_tea.json|matcha:food/oven/honey_ginger_tea}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

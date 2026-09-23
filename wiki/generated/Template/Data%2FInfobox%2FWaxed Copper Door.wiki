@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Waxed Copper Door}}
+|invimage=Waxed Copper Door
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:waxed_copper_door</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_copper_door_from_stonecutting_waxed_copper_block.json|waxed_copper_door_from_stonecutting_waxed_copper_block.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

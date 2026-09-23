@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Acacia Planks]]
+| [[Acacia Stairs]]
+| {{Stonecutter|Input=Acacia Stairs|Output=Acacia Planks}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_planks_from_stonecutting_acacia_stairs.json|matcha:stonecutting/acacia_planks_from_stonecutting_acacia_stairs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

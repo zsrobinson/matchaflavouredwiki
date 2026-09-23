@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Paneer Curry Stock}}
+|invimage=Paneer Curry Stock
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Zoglin Spawn Egg}}
+|stackable=Yes (64)
+|id=<code>minecraft:zoglin_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_paneer_makhani.json|uncooked_paneer_makhani.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Fire Starter}}
+|invimage=Fire Starter
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Flint and Steel}}
+|stackable=No
+|durability=64
+|id=<code>minecraft:flint_and_steel</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/fire_starter.json|fire_starter.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

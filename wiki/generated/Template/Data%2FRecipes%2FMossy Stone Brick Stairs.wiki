@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Mossy Stone Brick Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Mossy Stone Bricks]]
+| {{Crafting|A1=Mossy Stone Bricks|A2=Mossy Stone Bricks|A3=Mossy Stone Bricks|B2=Mossy Stone Bricks|B3=Mossy Stone Bricks|C3=Mossy Stone Bricks|Output=Mossy Stone Brick Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Mossy Stone Brick Stairs]] <small>(vanilla recipe)</small>
+| [[Mossy Stone Bricks]]
+| {{Stonecutter|Input=Mossy Stone Bricks|Output=Mossy Stone Brick Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

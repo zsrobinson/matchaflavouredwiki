@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Shakudo Boots}}
+|invimage=Shakudo Boots
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Cleanses: Levitation]]<br />[[8]]<br />[[(00:30)]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=500
+|armor=3
+|repair=[[Block of Copper]]
+|tooltip={{G|Armor}} 3<br />Per Equipment Bonus:<br />{{G|Half heart}} {{G|Cooldown}} -(00:04)<br />Repaired with:<br />Block of Copper
+|id=<code>matcha:shakudo_boots</code>
+|base=<code>minecraft:copper_boots</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_boots.json|shakudo_boots.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

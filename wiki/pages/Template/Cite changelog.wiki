@@ -1,0 +1,3 @@
+<includeonly>{{#if:{{{1|}}}|[[Matcha Flavoured {{{1}}}]] release notes|Unreleased changelog (<code>changelog.md</code>)}}{{#if:{{{quote|}}}|: "{{{quote}}}"}}</includeonly><noinclude>
+Cites official release notes. <code><nowiki><ref>{{Cite changelog|1.10|quote=...}}</ref></nowiki></code>
+[[Category:Templates]]</noinclude>

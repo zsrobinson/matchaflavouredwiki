@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Native Deepslate Copper}}
+|invimage=Native Deepslate Copper
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Deepslate Copper Ore}}
+|stackable=Yes (64)
+|id=<code>minecraft:deepslate_copper_ore</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_copper_ore.json|deepslate_copper_ore.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

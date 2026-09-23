@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Steel Claymore}}
+|invimage=Steel Claymore
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1500
+|damage={{Hp|8}}
+|attackspeed=0.7
+|miningspeed=340282349999999991754788743781432688640
+|repair=[[Iron Ingot]]
+|tooltip={{G|Attack damage}} 8<br />{{G|Attack speed}} 0.7<br />{{G|Knockback}} 2<br />When Blocking:<br />70% Melee Blocking<br />60% Projectile Blocking<br />Repaired with:<br />Iron Ingot
+|id=<code>matcha:steel_claymore</code>
+|base=<code>minecraft:stone_sword</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_claymore.json|steel_claymore.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,21 @@
+<includeonly><small>Loot table <code>minecraft:chests/village/village_mason</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_mason.json|source}}); pools roll 4–8 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Quartz}} || 1–4 || 30.8% || 87.4% || 
+|-
+| {{ItemLink|Limestone}} || 1 || 15.4% || 62.3% || 
+|-
+| {{ItemLink|Stone Bricks}} || 1 || 15.4% || 62.3% || 
+|-
+| {{ItemLink|Clay Ball}} || 1–3 || 7.69% || 37.7% || 
+|-
+| {{ItemLink|Flower Pot}} || 1 || 7.69% || 37.7% || 
+|-
+| {{ItemLink|Yellow Dye}} || 1 || 7.69% || 37.7% || 
+|-
+| {{ItemLink|Smooth Stone}} || 1 || 7.69% || 37.7% || 
+|-
+| {{ItemLink|Obol}} || 1 || 7.69% || 37.7% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

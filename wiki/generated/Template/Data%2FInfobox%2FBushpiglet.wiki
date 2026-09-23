@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Bushpiglet}}
+|invimage=Bushpiglet
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|id=<code>matcha:crate_warm_pig</code>
+|base=<code>minecraft:pig_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/farmer/3/baby_warm_pig.json|baby_warm_pig.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Cooked Pufferfish}}
+|invimage=Cooked Pufferfish
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|4}}
+|effects={{EffectLink|Conduit Power}} (0:30)
+|eat_time=1.6 seconds
+|tooltip=❤❤<br />{{G|Water}} Conduit Power (0:30)
+|id=<code>matcha:cooked_pufferfish</code>
+|base=<code>minecraft:cooked_cod</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_pufferfish.json|cooked_pufferfish.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

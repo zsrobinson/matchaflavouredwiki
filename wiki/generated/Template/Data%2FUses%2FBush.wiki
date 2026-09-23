@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Dead Bush]]
+| [[Bush]]
+| {{Cooking|station=Kindling|Input=Bush|Output=Dead Bush|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/campfire/dead_bush_campfire.json|matcha:campfire/dead_bush_campfire}}</small>
+|-
+| [[Tinder]]
+| 2 × [[Stick]] +<br />[[Short Grass]] or [[Fern]] or [[Bush]]
+| {{Crafting|A1=Stick|B1=Short Grass;Fern;Bush|C1=Stick|Output=Tinder|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/tinder.json|matcha:crafting/tinder}}</small>
+|-
+| [[Dead Bush]]
+| [[Bush]]
+| {{Cooking|station=Oven|Input=Bush|Output=Dead Bush|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/dead_bush.json|matcha:oven/dead_bush}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

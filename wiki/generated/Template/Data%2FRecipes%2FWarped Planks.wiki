@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Warped Planks]]
+| 2 × [[Warped Slab]]
+| {{Crafting|A1=Warped Slab|B1=Warped Slab|Output=Warped Planks|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/warped_planks_from_warped_slabs.json|matcha:crafting/warped_planks_from_warped_slabs}}</small>
+|-
+| [[Warped Planks]] <small>(vanilla recipe)</small>
+| Any [[warped stems]]
+| {{Crafting|A1=Any Warped Stems|Output=Warped Planks,4|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Warped Planks]]
+| [[Warped Stairs]]
+| {{Stonecutter|Input=Warped Stairs|Output=Warped Planks}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_planks_from_stonecutting_warped_stairs.json|matcha:stonecutting/warped_planks_from_stonecutting_warped_stairs}}</small>
+|-
+| [[Warped Planks]]
+| Any [[warped stems]]
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_planks_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_planks_from_stonecutting_warped_stem}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

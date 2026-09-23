@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Ochre Phosphor Lamp]]
+| 4 × [[Phosphor]] +<br />4 × [[Glass]] +<br />[[Yellow Dye]]
+| {{Crafting|A1=Phosphor|A2=Glass|A3=Phosphor|B1=Glass|B2=Yellow Dye|B3=Glass|C1=Phosphor|C2=Glass|C3=Phosphor|Output=Ochre Phosphor Lamp,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ochre_froglight.json|matcha:crafting/ochre_froglight}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

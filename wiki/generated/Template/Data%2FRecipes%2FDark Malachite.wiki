@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Dark Malachite]]
+| 8 × [[Malachite]] +<br />[[Black Dye]]
+| {{Crafting|A1=Malachite|A2=Malachite|A3=Malachite|B1=Malachite|B2=Black Dye|B3=Malachite|C1=Malachite|C2=Malachite|C3=Malachite|Output=Dark Malachite,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/dark_prismarine.json|matcha:crafting/dark_prismarine}}</small>
+|-
+| [[Dark Malachite]]
+| 2 × [[Dark Malachite Slab]]
+| {{Crafting|A1=Dark Malachite Slab|B1=Dark Malachite Slab|Output=Dark Malachite|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/dark_prismarine_from_dark_prismarine_slabs.json|matcha:crafting/dark_prismarine_from_dark_prismarine_slabs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

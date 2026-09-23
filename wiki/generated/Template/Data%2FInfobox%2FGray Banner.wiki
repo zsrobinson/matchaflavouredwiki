@@ -1,0 +1,13 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Gray Banner}}
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (16)
+|id=<code>minecraft:gray_banner</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/gray_banner.json|gray_banner.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

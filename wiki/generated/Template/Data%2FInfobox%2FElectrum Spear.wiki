@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Electrum Spear}}
+|invimage=Electrum Spear
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Smite]] IV<br />[[Looting]] II<br />[[2]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|damage={{Hp|4}}
+|repair=[[Block of Diamond]]
+|tooltip={{G|Attack damage}} 4<br />{{G|Attack speed}} 1.18<br />Repaired with:<br />Block of Diamond
+|id=<code>matcha:electrum_spear</code>
+|base=<code>minecraft:netherite_spear</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_spear.json|electrum_spear.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

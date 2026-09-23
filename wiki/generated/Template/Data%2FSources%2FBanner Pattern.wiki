@@ -1,0 +1,14 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Bastion other <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_other.json|chests/bastion_other}})</small> || 1 || 13.9% || 
+|-
+| Trial chambers / reward rare <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_rare.json|chests/trial_chambers/reward_rare}})</small> || 1 || 4.55% || 
+|-
+| Trial chambers / reward unique <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_unique.json|chests/trial_chambers/reward_unique}})</small> || 1 || 11.1% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

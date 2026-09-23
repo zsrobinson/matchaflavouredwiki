@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Pearlescent Phosphor Lamp}}
+|invimage=Pearlescent Phosphor Lamp
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Pearlescent Froglight}}
+|stackable=Yes (64)
+|id=<code>minecraft:pearlescent_froglight</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/pearlescent_froglight.json|pearlescent_froglight.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

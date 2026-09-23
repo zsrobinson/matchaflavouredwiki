@@ -1,0 +1,17 @@
+<includeonly><small>Loot table <code>minecraft:chests/village/village_butcher</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_butcher.json|source}}); pools roll 3–5 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Raw Porkchop}} || 1–3 || 21.4% || 61.1% || 
+|-
+| {{ItemLink|Bone}} || 1–3 || 21.4% || 61.1% || 
+|-
+| {{ItemLink|Raw Beef}} || 1–3 || 21.4% || 61.1% || 
+|-
+| {{ItemLink|Raw Mutton}} || 1–3 || 21.4% || 61.1% || 
+|-
+| {{ItemLink|Coal}} || 1–3 || 10.7% || 36.2% || 
+|-
+| {{ItemLink|Obol}} || 1 || 3.57% || 13.5% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

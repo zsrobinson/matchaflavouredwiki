@@ -1,0 +1,13 @@
+<includeonly><small>Loot table <code>matcha:equipment/iron/armour</code> ({{Source|MF_datapack/data/matcha/loot_table/equipment/iron/armour.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Iron Helmet}} || 1 || 25.0% || 25.0% || 
+|-
+| {{ItemLink|Iron Chestplate}} || 1 || 25.0% || 25.0% || 
+|-
+| {{ItemLink|Iron Leggings}} || 1 || 25.0% || 25.0% || 
+|-
+| {{ItemLink|Iron Boots}} || 1 || 25.0% || 25.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Red Tulip]]
+| [[Red Tulip]] +<br />[[Potion]] +<br />[[Bone Meal]]
+| {{Crafting|A1=Red Tulip|B1=Potion|C1=Bone Meal|Output=Red Tulip,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_red_tulip.json|matcha:crafting/clone_red_tulip}}</small>
+|-
+| [[Red Dye]] <small>(vanilla recipe)</small>
+| [[Red Tulip]]
+| {{Crafting|A1=Red Tulip|Output=Red Dye|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

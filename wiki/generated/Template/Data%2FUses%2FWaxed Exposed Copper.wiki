@@ -1,0 +1,60 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Exposed Copper Bulb]]
+| 3 × [[Waxed Exposed Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
+| {{Crafting|A2=Waxed Exposed Copper|B1=Waxed Exposed Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Exposed Copper|Output=Waxed Exposed Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/waxed_exposed_copper_bulb.json|matcha:crafting/waxed_exposed_copper_bulb}}</small>
+|-
+| [[Waxed Exposed Copper Bars]]
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Copper Bars,36}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_exposed_copper_bars_from_stonecutting_waxed_exposed_copper.json|matcha:stonecutting/waxed_exposed_copper_bars_from_stonecutting_waxed_exposed_copper}}</small>
+|-
+| [[Waxed Exposed Copper Chain]]
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Copper Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_exposed_copper_chain_from_stonecutting_waxed_exposed_copper.json|matcha:stonecutting/waxed_exposed_copper_chain_from_stonecutting_waxed_exposed_copper}}</small>
+|-
+| [[Waxed Exposed Copper Door]]
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Copper Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_exposed_copper_door_from_stonecutting_waxed_exposed_copper.json|matcha:stonecutting/waxed_exposed_copper_door_from_stonecutting_waxed_exposed_copper}}</small>
+|-
+| [[Waxed Exposed Copper Trapdoor]]
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_exposed_copper_trapdoor_from_stonecutting_waxed_exposed_copper.json|matcha:stonecutting/waxed_exposed_copper_trapdoor_from_stonecutting_waxed_exposed_copper}}</small>
+|-
+| [[Waxed Exposed Copper Trapdoor]]
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_exposed_copper_trapdoor_from_stonecutting_waxed_exposed_copper_block.json|matcha:stonecutting/waxed_exposed_copper_trapdoor_from_stonecutting_waxed_exposed_copper_block}}</small>
+|-
+| [[Waxed Exposed Lightning Rod]]
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Lightning Rod,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_exposed_lightning_rod_from_stonecutting_waxed_exposed_copper.json|matcha:stonecutting/waxed_exposed_lightning_rod_from_stonecutting_waxed_exposed_copper}}</small>
+|-
+| [[Waxed Exposed Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Chiseled Copper,4}}
+|-
+| [[Waxed Exposed Copper Grate]] <small>(vanilla recipe)</small>
+| 4 × [[Waxed Exposed Copper]]
+| {{Crafting|A2=Waxed Exposed Copper|B1=Waxed Exposed Copper|B3=Waxed Exposed Copper|C2=Waxed Exposed Copper|Output=Waxed Exposed Copper Grate,4}}
+|-
+| [[Waxed Exposed Copper Grate]] <small>(vanilla recipe)</small>
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Copper Grate,4}}
+|-
+| [[Waxed Exposed Cut Copper]] <small>(vanilla recipe)</small>
+| 4 × [[Waxed Exposed Copper]]
+| {{Crafting|A1=Waxed Exposed Copper|A2=Waxed Exposed Copper|B1=Waxed Exposed Copper|B2=Waxed Exposed Copper|Output=Waxed Exposed Cut Copper,4}}
+|-
+| [[Waxed Exposed Cut Copper]] <small>(vanilla recipe)</small>
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Cut Copper,4}}
+|-
+| [[Waxed Exposed Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Cut Copper Slab,8}}
+|-
+| [[Waxed Exposed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Cut Copper Stairs,4}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

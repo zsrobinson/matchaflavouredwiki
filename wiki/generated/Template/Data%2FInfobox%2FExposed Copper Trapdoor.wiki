@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Exposed Copper Trapdoor}}
+|invimage=Exposed Copper Trapdoor
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:exposed_copper_trapdoor</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper.json|exposed_copper_trapdoor_from_stonecutting_exposed_copper.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

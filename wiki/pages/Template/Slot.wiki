@@ -1,0 +1,5 @@
+<includeonly>{{#invoke:Inventory slot|slot|{{{1|}}}|link={{{link|}}}|title={{{title|}}}|class={{{class|}}}}}</includeonly><noinclude>
+Shows one inventory slot, using the icon <code>File:<item name>.png</code>. Several items separated by <code>;</code> cycle like an animation. Add <code>,N</code> for a stack size.
+
+<code><nowiki>{{Slot|Pumpkin Empanada}}</nowiki></code> → {{Slot|Pumpkin Empanada}}
+[[Category:Templates]]</noinclude>

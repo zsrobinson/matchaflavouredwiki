@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Block of Copper]]
+| [[Block of Raw Copper]]
+| {{Cooking|station=Blast Furnace|Input=Block of Raw Copper|Output=Block of Copper|note=10 s, 9 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/copper_block_from_blasting_raw_copper_block.json|matcha:blast/copper_block_from_blasting_raw_copper_block}}</small>
+|-
+| [[Raw Copper]] <small>(vanilla recipe)</small>
+| [[Block of Raw Copper]]
+| {{Crafting|A1=Block of Raw Copper|Output=Raw Copper,9|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

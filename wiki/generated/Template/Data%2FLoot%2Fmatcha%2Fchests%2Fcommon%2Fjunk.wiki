@@ -1,0 +1,23 @@
+<includeonly><small>Loot table <code>matcha:chests/common/junk</code> ({{Source|MF_datapack/data/matcha/loot_table/chests/common/junk.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Sturdy Leather}} || 1–3 || 50.0% || 50.0% || 
+|-
+| {{ItemLink|Tattered Leather}} || 2–8 || 50.0% || 50.0% || 
+|-
+| {{ItemLink|Flint}} || 2–4 || 50.0% || 50.0% || 
+|-
+| {{ItemLink|Quartz}} || 4–11 || 50.0% || 50.0% || 
+|-
+| {{ItemLink|Straw}} || 2–5 || 50.0% || 50.0% || 
+|-
+| {{ItemLink|Wheat Grain}} || 4–12 || 50.0% || 50.0% || 
+|-
+| {{ItemLink|Estus Ash}} || 2–6 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Bone}} || 2–4 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Arrow}} || 8–12 || 33.3% || 33.3% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

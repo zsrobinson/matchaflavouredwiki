@@ -1,0 +1,33 @@
+<includeonly><small>Loot table <code>minecraft:chests/trial_chambers/intersection</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/intersection.json|source}}); pools roll 1–3 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Cake}} || 1–4 || 14.7% || 26.6% || 
+|-
+| {{ItemLink|Amethyst Shard}} || 8–20 || 14.7% || 26.6% || 
+|-
+| {{ItemLink|Block of Iron}} || 1–2 || 14.7% || 26.6% || 
+|-
+| {{ItemLink|Diamond}} || 1–2 || 7.35% || 14.0% || 
+|-
+| {{ItemLink|Iron Pickaxe}} || 1 || 7.35% || 14.0% || 
+|-
+| {{ItemLink|Iron Axe}} || 1 || 7.35% || 14.0% || 
+|-
+| {{ItemLink|Iron Shovel}} || 1 || 7.35% || 14.0% || 
+|-
+| {{ItemLink|Iron Hoe}} || 1 || 7.35% || 14.0% || 
+|-
+| {{ItemLink|Obol}} || 1–3 || 3.68% || 7.17% || 
+|-
+| {{ItemLink|Diamond Pickaxe}} || 1 || 3.68% || 7.17% || 
+|-
+| {{ItemLink|Diamond Axe}} || 1 || 3.68% || 7.17% || 
+|-
+| {{ItemLink|Diamond Shovel}} || 1 || 3.68% || 7.17% || 
+|-
+| {{ItemLink|Diamond Hoe}} || 1 || 3.68% || 7.17% || 
+|-
+| {{ItemLink|Block of Diamond}} || 1 || 0.735% || 1.46% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

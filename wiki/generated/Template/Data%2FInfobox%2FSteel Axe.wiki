@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Steel Axe}}
+|invimage=Steel Axe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|damage={{Hp|10}}
+|attackspeed=0.7
+|miningspeed=8
+|repair=[[Iron Ingot]]
+|tooltip={{G|Mining speed}} 8<br />{{G|Attack damage}} 9<br />{{G|Attack speed}} 0.7<br />{{G|Knockback}} 2<br />Repaired with:<br />Iron Ingot
+|id=<code>matcha:steel_axe</code>
+|base=<code>minecraft:stone_axe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_axe.json|steel_axe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

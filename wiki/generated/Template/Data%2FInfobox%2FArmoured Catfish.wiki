@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Armoured Catfish}}
+|invimage=Armoured Catfish
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|tooltip=⭐⭐⭐☆
+|id=<code>matcha:armoured_catfish</code>
+|base=<code>minecraft:salmon</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/fish/armoured_catfish.json|armoured_catfish.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,76 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Potent Sulfur]]
+| 9 × [[Sulfur Chunk]] or [[Sulfur]]
+| {{Crafting|A1=Sulfur Chunk;Sulfur|A2=Sulfur Chunk;Sulfur|A3=Sulfur Chunk;Sulfur|B1=Sulfur Chunk;Sulfur|B2=Sulfur Chunk;Sulfur|B3=Sulfur Chunk;Sulfur|C1=Sulfur Chunk;Sulfur|C2=Sulfur Chunk;Sulfur|C3=Sulfur Chunk;Sulfur|Output=Potent Sulfur}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/potent_sulfur.json|matcha:crafting/potent_sulfur}}</small>
+|-
+| [[Sulfur Chunk]]
+| [[Sulfur]]
+| {{Crafting|A1=Sulfur|Output=Sulfur Chunk|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_chunk_from_sulfur.json|matcha:crafting/sulfur_chunk_from_sulfur}}</small>
+|-
+| [[Chiseled Sulfur]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Chiseled Sulfur}}
+|-
+| [[Polished Sulfur]] <small>(vanilla recipe)</small>
+| 4 × [[Sulfur]]
+| {{Crafting|A1=Sulfur|A2=Sulfur|B1=Sulfur|B2=Sulfur|Output=Polished Sulfur,4}}
+|-
+| [[Polished Sulfur]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Polished Sulfur}}
+|-
+| [[Polished Sulfur Slab]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Polished Sulfur Slab,2}}
+|-
+| [[Polished Sulfur Stairs]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Polished Sulfur Stairs}}
+|-
+| [[Polished Sulfur Wall]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Polished Sulfur Wall}}
+|-
+| [[Sulfur Brick Slab]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Sulfur Brick Slab,2}}
+|-
+| [[Sulfur Brick Stairs]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Sulfur Brick Stairs}}
+|-
+| [[Sulfur Brick Wall]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Sulfur Brick Wall}}
+|-
+| [[Sulfur Bricks]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Sulfur Bricks}}
+|-
+| [[Sulfur Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Sulfur]]
+| {{Crafting|A1=Sulfur|B1=Sulfur|C1=Sulfur|Output=Sulfur Slab,6}}
+|-
+| [[Sulfur Slab]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Sulfur Slab,2}}
+|-
+| [[Sulfur Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Sulfur]]
+| {{Crafting|A1=Sulfur|A2=Sulfur|A3=Sulfur|B2=Sulfur|B3=Sulfur|C3=Sulfur|Output=Sulfur Stairs,4}}
+|-
+| [[Sulfur Stairs]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Sulfur Stairs}}
+|-
+| [[Sulfur Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Sulfur]]
+| {{Crafting|A1=Sulfur|A2=Sulfur|B1=Sulfur|B2=Sulfur|C1=Sulfur|C2=Sulfur|Output=Sulfur Wall,6}}
+|-
+| [[Sulfur Wall]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Sulfur Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

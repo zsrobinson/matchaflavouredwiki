@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Sulfur Brick Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Sulfur Bricks]]
+| {{Crafting|A1=Sulfur Bricks|A2=Sulfur Bricks|A3=Sulfur Bricks|B2=Sulfur Bricks|B3=Sulfur Bricks|C3=Sulfur Bricks|Output=Sulfur Brick Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Sulfur Brick Stairs]] <small>(vanilla recipe)</small>
+| [[Polished Sulfur]]
+| {{Stonecutter|Input=Polished Sulfur|Output=Sulfur Brick Stairs}}
+|-
+| [[Sulfur Brick Stairs]] <small>(vanilla recipe)</small>
+| [[Sulfur Bricks]]
+| {{Stonecutter|Input=Sulfur Bricks|Output=Sulfur Brick Stairs}}
+|-
+| [[Sulfur Brick Stairs]] <small>(vanilla recipe)</small>
+| [[Sulfur]]
+| {{Stonecutter|Input=Sulfur|Output=Sulfur Brick Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

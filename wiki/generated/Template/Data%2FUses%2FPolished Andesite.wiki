@@ -1,0 +1,24 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Andesite]]
+| [[Polished Andesite]]
+| {{Cooking|station=Blast Furnace|Input=Polished Andesite|Output=Andesite|note=5 s, 1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/andesite_from_blasting_polished_andesite.json|matcha:blast/andesite_from_blasting_polished_andesite}}</small>
+|-
+| [[Polished Andesite Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Polished Andesite]]
+| {{Crafting|A1=Polished Andesite|B1=Polished Andesite|C1=Polished Andesite|Output=Polished Andesite Slab,6}}
+|-
+| [[Polished Andesite Slab]] <small>(vanilla recipe)</small>
+| [[Polished Andesite]]
+| {{Stonecutter|Input=Polished Andesite|Output=Polished Andesite Slab,2}}
+|-
+| [[Polished Andesite Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Polished Andesite]]
+| {{Crafting|A1=Polished Andesite|A2=Polished Andesite|A3=Polished Andesite|B2=Polished Andesite|B3=Polished Andesite|C3=Polished Andesite|Output=Polished Andesite Stairs,4}}
+|-
+| [[Polished Andesite Stairs]] <small>(vanilla recipe)</small>
+| [[Polished Andesite]]
+| {{Stonecutter|Input=Polished Andesite|Output=Polished Andesite Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

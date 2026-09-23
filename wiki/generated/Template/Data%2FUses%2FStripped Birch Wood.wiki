@@ -1,0 +1,96 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Kindling]]
+| 2 × [[Stick]] +<br />2 × Any [[logs]]
+| {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json|matcha:crafting/campfire}}</small>
+|-
+| [[Chest]]
+| 8 × Any [[logs]]
+| {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/chest_from_logs.json|matcha:crafting/chest_from_logs}}</small>
+|-
+| [[Stick]]
+| 2 × Any [[logs]]
+| {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sticks_from_logs.json|matcha:crafting/sticks_from_logs}}</small>
+|-
+| [[Charcoal]]
+| Any [[logs that burn]]
+| {{Cooking|station=Mud Kiln|Input=Any Logs That Burn|Output=Charcoal|note=5 s, 0.15 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/charcoal.json|matcha:kiln/charcoal}}</small>
+|-
+| [[Barrel]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Barrel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/barrel_from_stonecutting_any_logs.json|matcha:stonecutting/barrel_from_stonecutting_any_logs}}</small>
+|-
+| [[Birch Button]]
+| Any [[birch logs]]
+| {{Stonecutter|Input=Any Birch Logs|Output=Birch Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_button_from_stonecutting_birch_logs.json|matcha:stonecutting/birch_button_from_stonecutting_birch_logs}}</small>
+|-
+| [[Birch Door]]
+| Any [[birch logs]]
+| {{Stonecutter|Input=Any Birch Logs|Output=Birch Door,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_door_from_stonecutting_birch_logs.json|matcha:stonecutting/birch_door_from_stonecutting_birch_logs}}</small>
+|-
+| [[Birch Fence]]
+| Any [[birch logs]]
+| {{Stonecutter|Input=Any Birch Logs|Output=Birch Fence,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_fence_from_stonecutting_birch_log.json|matcha:stonecutting/birch_fence_from_stonecutting_birch_log}}</small>
+|-
+| [[Birch Fence Gate]]
+| Any [[birch logs]]
+| {{Stonecutter|Input=Any Birch Logs|Output=Birch Fence Gate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_fence_gate_from_stonecutting_birch_logs.json|matcha:stonecutting/birch_fence_gate_from_stonecutting_birch_logs}}</small>
+|-
+| [[Birch Log]]
+| [[Stripped Birch Log]] or [[Birch Wood]] or [[Stripped Birch Wood]]
+| {{Stonecutter|Input=Stripped Birch Log;Birch Wood;Stripped Birch Wood|Output=Birch Log}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_log_from_stonecutting_birch_logs.json|matcha:stonecutting/birch_log_from_stonecutting_birch_logs}}</small>
+|-
+| [[Birch Planks]]
+| Any [[birch logs]]
+| {{Stonecutter|Input=Any Birch Logs|Output=Birch Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_planks_from_stonecutting_birch_logs.json|matcha:stonecutting/birch_planks_from_stonecutting_birch_logs}}</small>
+|-
+| [[Birch Pressure Plate]]
+| Any [[birch logs]]
+| {{Stonecutter|Input=Any Birch Logs|Output=Birch Pressure Plate,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_pressure_plate_from_stonecutting_birch_logs.json|matcha:stonecutting/birch_pressure_plate_from_stonecutting_birch_logs}}</small>
+|-
+| [[Birch Shelf]]
+| Any [[birch logs]]
+| {{Stonecutter|Input=Any Birch Logs|Output=Birch Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_shelf_from_stonecutting_birch_logs.json|matcha:stonecutting/birch_shelf_from_stonecutting_birch_logs}}</small>
+|-
+| [[Birch Sign]]
+| Any [[birch logs]]
+| {{Stonecutter|Input=Any Birch Logs|Output=Birch Sign,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_sign_from_stonecutting_birch_logs.json|matcha:stonecutting/birch_sign_from_stonecutting_birch_logs}}</small>
+|-
+| [[Birch Slab]]
+| Any [[birch logs]]
+| {{Stonecutter|Input=Any Birch Logs|Output=Birch Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_slabs_from_stonecutting_birch_logs.json|matcha:stonecutting/birch_slabs_from_stonecutting_birch_logs}}</small>
+|-
+| [[Birch Stairs]]
+| Any [[birch logs]]
+| {{Stonecutter|Input=Any Birch Logs|Output=Birch Stairs,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_stairs_from_stonecutting_birch_logs.json|matcha:stonecutting/birch_stairs_from_stonecutting_birch_logs}}</small>
+|-
+| [[Birch Trapdoor]]
+| Any [[birch logs]]
+| {{Stonecutter|Input=Any Birch Logs|Output=Birch Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_trapoor_from_stonecutting_birch_logs.json|matcha:stonecutting/birch_trapoor_from_stonecutting_birch_logs}}</small>
+|-
+| [[Birch Wood]]
+| [[Stripped Birch Log]] or [[Birch Log]] or [[Stripped Birch Wood]]
+| {{Stonecutter|Input=Stripped Birch Log;Birch Log;Stripped Birch Wood|Output=Birch Wood}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_wood_from_stonecutting_birch_log.json|matcha:stonecutting/birch_wood_from_stonecutting_birch_log}}</small>
+|-
+| [[Chiseled Bookshelf]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Chiseled Bookshelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/chiseled_bookshelf_from_stonecutting_any_logs.json|matcha:stonecutting/chiseled_bookshelf_from_stonecutting_any_logs}}</small>
+|-
+| [[Ladder]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Ladder,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/ladder_from_stonecutting_any_logs.json|matcha:stonecutting/ladder_from_stonecutting_any_logs}}</small>
+|-
+| [[Stripped Birch Log]]
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Wood]]
+| {{Stonecutter|Input=Birch Log;Birch Wood;Stripped Birch Wood|Output=Stripped Birch Log}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_birch_log_from_stonecutting_birch_logs.json|matcha:stonecutting/stripped_birch_log_from_stonecutting_birch_logs}}</small>
+|-
+| [[Birch Planks]] <small>(vanilla recipe)</small>
+| Any [[birch logs]]
+| {{Crafting|A1=Any Birch Logs|Output=Birch Planks,4|shapeless=1}}
+|-
+| [[Charcoal]] <small>(vanilla recipe)</small>
+| Any [[logs that burn]]
+| {{Cooking|station=Oven|Input=Any Logs That Burn|Output=Charcoal|note=10 s, 0.15 XP}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

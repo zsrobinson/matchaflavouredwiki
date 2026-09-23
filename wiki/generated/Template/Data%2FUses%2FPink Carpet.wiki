@@ -1,0 +1,68 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Pink Wool]]
+| 4 × [[Pink Carpet]]
+| {{Crafting|A1=Pink Carpet|A2=Pink Carpet|B1=Pink Carpet|B2=Pink Carpet|Output=Pink Wool}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/pink_wool.json|matcha:crafting/pink_wool}}</small>
+|-
+| [[Black Carpet]] <small>(vanilla recipe)</small>
+| [[Black Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]]
+| {{Crafting|A1=Black Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet|Output=Black Carpet|shapeless=1}}
+|-
+| [[Blue Carpet]] <small>(vanilla recipe)</small>
+| [[Blue Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Blue Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Blue Carpet|shapeless=1}}
+|-
+| [[Brown Carpet]] <small>(vanilla recipe)</small>
+| [[Brown Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Brown Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Brown Carpet|shapeless=1}}
+|-
+| [[Cyan Carpet]] <small>(vanilla recipe)</small>
+| [[Cyan Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Cyan Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Cyan Carpet|shapeless=1}}
+|-
+| [[Gray Carpet]] <small>(vanilla recipe)</small>
+| [[Gray Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Gray Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Gray Carpet|shapeless=1}}
+|-
+| [[Green Carpet]] <small>(vanilla recipe)</small>
+| [[Green Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Green Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Red Carpet;Black Carpet|Output=Green Carpet|shapeless=1}}
+|-
+| [[Light Blue Carpet]] <small>(vanilla recipe)</small>
+| [[Light Blue Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Light Blue Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Light Blue Carpet|shapeless=1}}
+|-
+| [[Light Gray Carpet]] <small>(vanilla recipe)</small>
+| [[Light Gray Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Light Gray Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Light Gray Carpet|shapeless=1}}
+|-
+| [[Lime Carpet]] <small>(vanilla recipe)</small>
+| [[Lime Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Lime Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Lime Carpet|shapeless=1}}
+|-
+| [[Magenta Carpet]] <small>(vanilla recipe)</small>
+| [[Magenta Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Magenta Dye|B1=White Carpet;Orange Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Magenta Carpet|shapeless=1}}
+|-
+| [[Orange Carpet]] <small>(vanilla recipe)</small>
+| [[Orange Dye]] +<br />[[White Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Orange Dye|B1=White Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Orange Carpet|shapeless=1}}
+|-
+| [[Purple Carpet]] <small>(vanilla recipe)</small>
+| [[Purple Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Purple Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Purple Carpet|shapeless=1}}
+|-
+| [[Red Carpet]] <small>(vanilla recipe)</small>
+| [[Red Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Red Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Black Carpet|Output=Red Carpet|shapeless=1}}
+|-
+| [[White Carpet]] <small>(vanilla recipe)</small>
+| [[White Dye]] +<br />[[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=White Dye|B1=Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=White Carpet|shapeless=1}}
+|-
+| [[Yellow Carpet]] <small>(vanilla recipe)</small>
+| [[Yellow Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Yellow Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Yellow Carpet|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Wooden Hoe}}
+|invimage=Wooden Hoe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=200
+|damage={{Hp|1}}
+|attackspeed=1
+|miningspeed=2
+|repair=<code>#minecraft:wooden_tool_materials</code>
+|tooltip=⛏ 2<br />🗡 1<br />🕒 1
+|id=<code>minecraft:wooden_hoe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/wooden_hoe.json|wooden_hoe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

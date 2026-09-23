@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Bamboo Shelf}}
+|invimage=Bamboo Shelf
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:bamboo_shelf</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/bamboo_shelf_from_stonecutting_bamboo_blocks.json|bamboo_shelf_from_stonecutting_bamboo_blocks.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

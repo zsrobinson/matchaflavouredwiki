@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Turtle Shellmet}}
+|invimage=Turtle Shellmet
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Turtle Shell}}
+|stackable=No
+|durability=275
+|armor=2
+|repair=<code>#minecraft:repairs_turtle_helmet</code>
+|id=<code>minecraft:turtle_helmet</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/gameplay/turtle_grow.json|turtle_grow.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,151 @@
+<includeonly>{| class="mfw-infobox plainlinks" cellpadding="0" cellspacing="0"
+|-
+! class="infobox-header" colspan="2" | {{{title|{{PAGENAME}}}}}{{#if:{{{image|}}}{{{invimage|}}}|<nowiki/>
+{{!}}-
+{{!}} class="infobox-imagearea" colspan="2" {{!}} {{#if:{{{image|}}}|[[File:{{{image}}}|{{{imagesize|150px}}}|link=]]}}{{#if:{{{image2|}}}|&nbsp;[[File:{{{image2}}}|{{{imagesize|150px}}}|link=]]}}{{#if:{{{invimage|}}}|<div>{{Slot|{{{invimage}}}|link=none}}{{#if:{{{invimage2|}}}|{{Slot|{{{invimage2}}}|link=none}}}}{{#if:{{{invimage3|}}}|{{Slot|{{{invimage3}}}|link=none}}}}{{#if:{{{invimage4|}}}|{{Slot|{{{invimage4}}}|link=none}}}}</div>}}{{#if:{{{caption|}}}|<div class="infobox-caption">{{{caption}}}</div>}}}}{{#if:{{{type|}}}|<nowiki/>
+{{!}}-
+! {{{type_label|Type}}}
+{{!}} {{{type}}}}}{{#if:{{{vanilla|}}}|<nowiki/>
+{{!}}-
+! {{{vanilla_label|Replaces}}}
+{{!}} {{{vanilla}}}}}{{#if:{{{rarity|}}}|<nowiki/>
+{{!}}-
+! {{{rarity_label|Rarity}}}
+{{!}} {{{rarity}}}}}{{#if:{{{renewable|}}}|<nowiki/>
+{{!}}-
+! {{{renewable_label|Renewable}}}
+{{!}} {{{renewable}}}}}{{#if:{{{stackable|}}}|<nowiki/>
+{{!}}-
+! {{{stackable_label|Stackable}}}
+{{!}} {{{stackable}}}}}{{#if:{{{heals|}}}|<nowiki/>
+{{!}}-
+! {{{heals_label|Heals}}}
+{{!}} {{{heals}}}}}{{#if:{{{effects|}}}|<nowiki/>
+{{!}}-
+! {{{effects_label|Effects}}}
+{{!}} {{{effects}}}}}{{#if:{{{intrinsics|}}}|<nowiki/>
+{{!}}-
+! {{{intrinsics_label|Intrinsics}}}
+{{!}} {{{intrinsics}}}}}{{#if:{{{eat_time|}}}|<nowiki/>
+{{!}}-
+! {{{eat_time_label|Eating time}}}
+{{!}} {{{eat_time}}}}}{{#if:{{{durability|}}}|<nowiki/>
+{{!}}-
+! {{{durability_label|Durability}}}
+{{!}} {{{durability}}}}}{{#if:{{{damage|}}}|<nowiki/>
+{{!}}-
+! {{{damage_label|Attack damage}}}
+{{!}} {{{damage}}}}}{{#if:{{{attackspeed|}}}|<nowiki/>
+{{!}}-
+! {{{attackspeed_label|Attack speed}}}
+{{!}} {{{attackspeed}}}}}{{#if:{{{miningspeed|}}}|<nowiki/>
+{{!}}-
+! {{{miningspeed_label|Mining speed}}}
+{{!}} {{{miningspeed}}}}}{{#if:{{{armor|}}}|<nowiki/>
+{{!}}-
+! {{{armor_label|Armor}}}
+{{!}} {{{armor}}}}}{{#if:{{{toughness|}}}|<nowiki/>
+{{!}}-
+! {{{toughness_label|Armor toughness}}}
+{{!}} {{{toughness}}}}}{{#if:{{{knockbackres|}}}|<nowiki/>
+{{!}}-
+! {{{knockbackres_label|Knockback resistance}}}
+{{!}} {{{knockbackres}}}}}{{#if:{{{bonus|}}}|<nowiki/>
+{{!}}-
+! {{{bonus_label|Set bonus}}}
+{{!}} {{{bonus}}}}}{{#if:{{{repair|}}}|<nowiki/>
+{{!}}-
+! {{{repair_label|Repaired with}}}
+{{!}} {{{repair}}}}}{{#if:{{{tool|}}}|<nowiki/>
+{{!}}-
+! {{{tool_label|Tool}}}
+{{!}} {{{tool}}}}}{{#if:{{{blastres|}}}|<nowiki/>
+{{!}}-
+! {{{blastres_label|Blast resistance}}}
+{{!}} {{{blastres}}}}}{{#if:{{{hardness|}}}|<nowiki/>
+{{!}}-
+! {{{hardness_label|Hardness}}}
+{{!}} {{{hardness}}}}}{{#if:{{{luminous|}}}|<nowiki/>
+{{!}}-
+! {{{luminous_label|Luminous}}}
+{{!}} {{{luminous}}}}}{{#if:{{{health|}}}|<nowiki/>
+{{!}}-
+! {{{health_label|Health points}}}
+{{!}} {{{health}}}}}{{#if:{{{attack|}}}|<nowiki/>
+{{!}}-
+! {{{attack_label|Attack strength}}}
+{{!}} {{{attack}}}}}{{#if:{{{speedmob|}}}|<nowiki/>
+{{!}}-
+! {{{speedmob_label|Speed}}}
+{{!}} {{{speedmob}}}}}{{#if:{{{spawn|}}}|<nowiki/>
+{{!}}-
+! {{{spawn_label|Spawn}}}
+{{!}} {{{spawn}}}}}{{#if:{{{drops|}}}|<nowiki/>
+{{!}}-
+! {{{drops_label|Drops}}}
+{{!}} {{{drops}}}}}{{#if:{{{maxlevel|}}}|<nowiki/>
+{{!}}-
+! {{{maxlevel_label|Maximum level}}}
+{{!}} {{{maxlevel}}}}}{{#if:{{{slots|}}}|<nowiki/>
+{{!}}-
+! {{{slots_label|Slots}}}
+{{!}} {{{slots}}}}}{{#if:{{{items|}}}|<nowiki/>
+{{!}}-
+! {{{items_label|Applies to}}}
+{{!}} {{{items}}}}}{{#if:{{{exclusive|}}}|<nowiki/>
+{{!}}-
+! {{{exclusive_label|Incompatible with}}}
+{{!}} {{{exclusive}}}}}{{#if:{{{obtain|}}}|<nowiki/>
+{{!}}-
+! {{{obtain_label|Obtained from}}}
+{{!}} {{{obtain}}}}}{{#if:{{{biomes|}}}|<nowiki/>
+{{!}}-
+! {{{biomes_label|Biomes}}}
+{{!}} {{{biomes}}}}}{{#if:{{{generates|}}}|<nowiki/>
+{{!}}-
+! {{{generates_label|Generates in}}}
+{{!}} {{{generates}}}}}{{#if:{{{consists|}}}|<nowiki/>
+{{!}}-
+! {{{consists_label|Consists of}}}
+{{!}} {{{consists}}}}}{{#if:{{{workstation|}}}|<nowiki/>
+{{!}}-
+! {{{workstation_label|Job site block}}}
+{{!}} {{{workstation}}}}}{{#if:{{{duration|}}}|<nowiki/>
+{{!}}-
+! {{{duration_label|Duration}}}
+{{!}} {{{duration}}}}}{{#if:{{{level|}}}|<nowiki/>
+{{!}}-
+! {{{level_label|Level}}}
+{{!}} {{{level}}}}}{{#if:{{{parent|}}}|<nowiki/>
+{{!}}-
+! {{{parent_label|Parent}}}
+{{!}} {{{parent}}}}}{{#if:{{{requirements|}}}|<nowiki/>
+{{!}}-
+! {{{requirements_label|Requirements}}}
+{{!}} {{{requirements}}}}}{{#if:{{{reward|}}}|<nowiki/>
+{{!}}-
+! {{{reward_label|Reward}}}
+{{!}} {{{reward}}}}}{{#if:{{{added|}}}|<nowiki/>
+{{!}}-
+! {{{added_label|Added in}}}
+{{!}} {{{added}}}}}{{#if:{{{tooltip|}}}|<nowiki/>
+{{!}}-
+! {{{tooltip_label|Tooltip}}}
+{{!}} <small>{{{tooltip}}}</small>}}{{#if:{{{id|}}}|<nowiki/>
+{{!}}-
+! {{{id_label|Resource location}}}
+{{!}} {{{id}}}}}{{#if:{{{base|}}}|<nowiki/>
+{{!}}-
+! {{{base_label|Base item}}}
+{{!}} {{{base}}}}}{{#if:{{{source|}}}|<nowiki/>
+{{!}}-
+! {{{source_label|Defined in}}}
+{{!}} {{{source}}}}}{{#if:{{{extrarows|}}}|
+{{{extrarows}}}}}
+|}</includeonly><noinclude>
+Generic infobox. All fields are optional and appear in a fixed order; labels can be overridden with <code>FIELD_label</code>. Extra rows can be passed as raw table rows in <code>extrarows</code>.
+
+Fields: <code>type</code> (Type), <code>vanilla</code> (Replaces), <code>rarity</code> (Rarity), <code>renewable</code> (Renewable), <code>stackable</code> (Stackable), <code>heals</code> (Heals), <code>effects</code> (Effects), <code>intrinsics</code> (Intrinsics), <code>eat_time</code> (Eating time), <code>durability</code> (Durability), <code>damage</code> (Attack damage), <code>attackspeed</code> (Attack speed), <code>miningspeed</code> (Mining speed), <code>armor</code> (Armor), <code>toughness</code> (Armor toughness), <code>knockbackres</code> (Knockback resistance), <code>bonus</code> (Set bonus), <code>repair</code> (Repaired with), <code>tool</code> (Tool), <code>blastres</code> (Blast resistance), <code>hardness</code> (Hardness), <code>luminous</code> (Luminous), <code>health</code> (Health points), <code>attack</code> (Attack strength), <code>speedmob</code> (Speed), <code>spawn</code> (Spawn), <code>drops</code> (Drops), <code>maxlevel</code> (Maximum level), <code>slots</code> (Slots), <code>items</code> (Applies to), <code>exclusive</code> (Incompatible with), <code>obtain</code> (Obtained from), <code>biomes</code> (Biomes), <code>generates</code> (Generates in), <code>consists</code> (Consists of), <code>workstation</code> (Job site block), <code>duration</code> (Duration), <code>level</code> (Level), <code>parent</code> (Parent), <code>requirements</code> (Requirements), <code>reward</code> (Reward), <code>added</code> (Added in), <code>tooltip</code> (Tooltip lore), <code>id</code> (Resource location), <code>base</code> (Base item), <code>source</code> (Defined in)
+
+Most item pages use {{tl|Infobox auto}}, which fills this from the pack's data.
+[[Category:Infobox templates]]</noinclude>

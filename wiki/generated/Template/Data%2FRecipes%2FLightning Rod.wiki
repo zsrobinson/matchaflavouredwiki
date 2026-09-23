@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Lightning Rod]] <small>(vanilla recipe)</small>
+| 3 × [[Copper Ingot]]
+| {{Crafting|A1=Copper Ingot|A2=Copper Ingot|A3=Copper Ingot|Output=Lightning Rod}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Lightning Rod]]
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Lightning Rod,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/lightning_rod_from_stonecutting_copper_block.json|matcha:stonecutting/lightning_rod_from_stonecutting_copper_block}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

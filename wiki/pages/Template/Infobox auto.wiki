@@ -1,0 +1,3 @@
+<includeonly>{{#ifexist:Template:Data/Infobox/{{{1|{{PAGENAME}}}}}|{{Data/Infobox/{{{1|{{PAGENAME}}}}}|title={{{title|}}}|caption={{{caption|}}}|extrarows={{{extrarows|}}}|type={{{type|}}}|intrinsics={{{intrinsics|}}}|bonus={{{bonus|}}}|renewable={{{renewable|}}}}}|{{Infobox|title={{{title|{{PAGENAME}}}}}|invimage={{{1|{{PAGENAME}}}}}}}}}</includeonly><noinclude>
+Infobox filled automatically from the pack's source (see [[Template:Data/Infobox]]). Pass the item name if it differs from the page name. Fields given here override the generated ones where supported: <code>title</code>, <code>caption</code>, <code>type</code>, <code>intrinsics</code>, <code>bonus</code>, <code>renewable</code>, <code>extrarows</code>.
+[[Category:Infobox templates]]</noinclude>

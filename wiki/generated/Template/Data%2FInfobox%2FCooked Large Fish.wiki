@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Cooked Large Fish}}
+|invimage=Cooked Large Fish
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Cooked Salmon}}
+|stackable=Yes (64)
+|heals={{Hp|5}}
+|eat_time=1.6 seconds
+|tooltip=❤❤❣
+|id=<code>minecraft:cooked_salmon</code>
+|base=<code>minecraft:cooked_salmon</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_salmon.json|cooked_salmon.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

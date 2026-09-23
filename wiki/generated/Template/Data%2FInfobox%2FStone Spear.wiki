@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Stone Spear}}
+|invimage=Stone Spear
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=131
+|damage={{Hp|2}}
+|attackspeed=1.33
+|repair=<code>#minecraft:stone_tool_materials</code>
+|id=<code>matcha:hepatizon_spear</code>
+|base=<code>minecraft:stone_spear</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_spear.json|hepatizon_spear.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

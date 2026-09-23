@@ -1,0 +1,28 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Purpur Pillar]] <small>(vanilla recipe)</small>
+| [[Purpur Block]]
+| {{Stonecutter|Input=Purpur Block|Output=Purpur Pillar}}
+|-
+| [[Purpur Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Purpur Block]] or [[Purpur Pillar]]
+| {{Crafting|A1=Purpur Block;Purpur Pillar|B1=Purpur Block;Purpur Pillar|C1=Purpur Block;Purpur Pillar|Output=Purpur Slab,6}}
+|-
+| [[Purpur Slab]] <small>(vanilla recipe)</small>
+| [[Purpur Block]]
+| {{Stonecutter|Input=Purpur Block|Output=Purpur Slab,2}}
+|-
+| [[Purpur Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Purpur Block]] or [[Purpur Pillar]]
+| {{Crafting|A1=Purpur Block;Purpur Pillar|A2=Purpur Block;Purpur Pillar|A3=Purpur Block;Purpur Pillar|B2=Purpur Block;Purpur Pillar|B3=Purpur Block;Purpur Pillar|C3=Purpur Block;Purpur Pillar|Output=Purpur Stairs,4}}
+|-
+| [[Purpur Stairs]] <small>(vanilla recipe)</small>
+| [[Purpur Block]]
+| {{Stonecutter|Input=Purpur Block|Output=Purpur Stairs}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Purpur Block]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Purpur Block|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

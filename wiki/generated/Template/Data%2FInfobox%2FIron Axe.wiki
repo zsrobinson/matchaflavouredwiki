@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Iron Axe}}
+|invimage=Iron Axe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=500
+|damage={{Hp|9}}
+|attackspeed=0.9
+|miningspeed=7
+|repair=<code>#minecraft:iron_tool_materials</code>
+|tooltip={{G|Mining speed}} 7<br />{{G|Attack damage}} 9<br />{{G|Attack speed}} 0.9
+|id=<code>minecraft:iron_axe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/iron_axe.json|iron_axe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

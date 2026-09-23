@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Exposed Copper Trapdoor]] <small>(vanilla recipe)</small>
+| [[Exposed Copper Trapdoor]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper Trapdoor|B1=Wax|Output=Waxed Exposed Copper Trapdoor|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Exposed Copper Trapdoor]]
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_exposed_copper_trapdoor_from_stonecutting_waxed_exposed_copper.json|matcha:stonecutting/waxed_exposed_copper_trapdoor_from_stonecutting_waxed_exposed_copper}}</small>
+|-
+| [[Waxed Exposed Copper Trapdoor]]
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_exposed_copper_trapdoor_from_stonecutting_waxed_exposed_copper_block.json|matcha:stonecutting/waxed_exposed_copper_trapdoor_from_stonecutting_waxed_exposed_copper_block}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

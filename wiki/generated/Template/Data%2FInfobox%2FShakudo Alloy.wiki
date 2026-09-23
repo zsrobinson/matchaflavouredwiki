@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Shakudo Alloy}}
+|invimage=Shakudo Alloy
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Shulker Shell}}
+|stackable=Yes (64)
+|id=<code>minecraft:shulker_shell</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/shakudo_alloy.json|shakudo_alloy.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Baked Pumpkin]]
+| [[Pumpkin]]
+| {{Cooking|station=Kindling|Input=Pumpkin|Output=Baked Pumpkin|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/baked_pumpkin.json|matcha:food/campfire/baked_pumpkin}}</small>
+|-
+| [[Baked Pumpkin]]
+| [[Pumpkin]]
+| {{Cooking|station=Oven|Input=Pumpkin|Output=Baked Pumpkin|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_pumpkin.json|matcha:food/oven/baked_pumpkin}}</small>
+|-
+| [[Pumpkin Seeds]] <small>(vanilla recipe)</small>
+| [[Pumpkin]]
+| {{Crafting|A1=Pumpkin|Output=Pumpkin Seeds,4|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

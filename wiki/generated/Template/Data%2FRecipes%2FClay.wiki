@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Clay]]
+| [[Potion]] +<br />8 × [[Mud]]
+| {{Crafting|A1=Potion|A2=Mud|A3=Mud|B1=Mud|B2=Mud|B3=Mud|C1=Mud|C2=Mud|C3=Mud|Output=Clay,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clay_from_mud_and_potion.json|matcha:crafting/clay_from_mud_and_potion}}</small>
+|-
+| [[Clay]] <small>(vanilla recipe)</small>
+| 4 × [[Clay Ball]]
+| {{Crafting|A1=Clay Ball|A2=Clay Ball|B1=Clay Ball|B2=Clay Ball|Output=Clay}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

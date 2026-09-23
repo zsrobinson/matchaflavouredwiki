@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Magenta Stained Glass Pane]]
+| [[Magenta Stained Glass]]
+| {{Stonecutter|Input=Magenta Stained Glass|Output=Magenta Stained Glass Pane,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/magenta_stained_glass_pane.json|matcha:stonecutting/magenta_stained_glass_pane}}</small>
+|-
+| [[Magenta Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 6 × [[Magenta Stained Glass]]
+| {{Crafting|A1=Magenta Stained Glass|A2=Magenta Stained Glass|B1=Magenta Stained Glass|B2=Magenta Stained Glass|C1=Magenta Stained Glass|C2=Magenta Stained Glass|Output=Magenta Stained Glass Pane,16}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

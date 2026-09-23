@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Barrel]] <small>(vanilla recipe)</small>
+| 6 × Any [[planks]] +<br />2 × Any [[wooden slabs]]
+| {{Crafting|A1=Any Planks|A2=Any Planks|A3=Any Planks|B1=Any Wooden Slabs|B3=Any Wooden Slabs|C1=Any Planks|C2=Any Planks|C3=Any Planks|Output=Barrel}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Barrel]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Barrel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/barrel_from_stonecutting_any_logs.json|matcha:stonecutting/barrel_from_stonecutting_any_logs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

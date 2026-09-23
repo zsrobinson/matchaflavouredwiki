@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Stone Button]] <small>(vanilla recipe)</small>
+| [[Limestone]]
+| {{Crafting|A1=Limestone|Output=Stone Button|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Stone Button]]
+| [[Limestone]]
+| {{Stonecutter|Input=Limestone|Output=Stone Button,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stone_button_from_stonecutting_stone.json|matcha:stonecutting/stone_button_from_stonecutting_stone}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

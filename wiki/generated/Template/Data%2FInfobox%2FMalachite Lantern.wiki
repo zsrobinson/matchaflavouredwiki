@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Malachite Lantern}}
+|invimage=Malachite Lantern
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Sea Lantern}}
+|stackable=Yes (64)
+|id=<code>minecraft:sea_lantern</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/sea_lantern.json|sea_lantern.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

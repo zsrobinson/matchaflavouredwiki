@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[String]]
+| Any [[wool]]
+| {{Crafting|A1=Any Wool|Output=String,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/string_from_wool.json|matcha:crafting/string_from_wool}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

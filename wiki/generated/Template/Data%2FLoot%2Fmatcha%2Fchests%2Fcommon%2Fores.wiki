@@ -1,0 +1,11 @@
+<includeonly><small>Loot table <code>matcha:chests/common/ores</code> ({{Source|MF_datapack/data/matcha/loot_table/chests/common/ores.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Raw Copper}} || 3–8 || 100% || 100% || 
+|-
+| {{ItemLink|Raw Iron}} || 2–5 || 50.0% || 50.0% || 
+|-
+| {{ItemLink|Raw Gold}} || 1–3 || 50.0% || 50.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

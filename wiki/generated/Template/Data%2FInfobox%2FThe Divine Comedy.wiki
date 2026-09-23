@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|The Divine Comedy}}
+|invimage=The Divine Comedy
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Uncommon
+|stackable=Yes (64)
+|tooltip=by Dante Alighieri
+|id=<code>matcha:divine_comedy</code>
+|base=<code>minecraft:book</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/treasure/divine_comedy.json|divine_comedy.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

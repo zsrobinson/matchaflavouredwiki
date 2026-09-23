@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Shakudo Sword}}
+|invimage=Shakudo Sword
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Sweeping Edge]] I<br />[[Shakudo Weapon]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1000
+|damage={{Hp|6}}
+|attackspeed=1.6
+|miningspeed=340282349999999991754788743781432688640
+|repair=[[Block of Copper]]
+|tooltip={{G|Attack damage}} 6<br />{{G|Attack speed}} 1.6<br />Repaired with:<br />Block of Copper
+|id=<code>matcha:shakudo_sword</code>
+|base=<code>minecraft:stone_sword</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_sword.json|shakudo_sword.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

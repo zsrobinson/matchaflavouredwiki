@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Glow Berry Mash}}
+|invimage=Glow Berry Mash
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Rotten Flesh}}
+|stackable=Yes (64)
+|heals={{Hp|2}}
+|eat_time=0.8 seconds
+|tooltip=❤<br />{{G|Aura}} Aura (0:03)
+|id=<code>minecraft:rotten_flesh</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/glow_mash.json|glow_mash.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

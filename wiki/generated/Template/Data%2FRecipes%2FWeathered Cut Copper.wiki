@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Weathered Cut Copper]]
+| [[Exposed Cut Copper]] +<br />[[Potion]]
+| {{Crafting|A1=Exposed Cut Copper|B1=Potion|Output=Weathered Cut Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_cut_copper_from_patina.json|matcha:crafting/weathered_cut_copper_from_patina}}</small>
+|-
+| [[Weathered Cut Copper]]
+| 2 × [[Weathered Cut Copper Slab]]
+| {{Crafting|A1=Weathered Cut Copper Slab|B1=Weathered Cut Copper Slab|Output=Weathered Cut Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_cut_copper_from_weathered_cut_copper_slab.json|matcha:crafting/weathered_cut_copper_from_weathered_cut_copper_slab}}</small>
+|-
+| [[Weathered Cut Copper]] <small>(vanilla recipe)</small>
+| 4 × [[Weathered Copper]]
+| {{Crafting|A1=Weathered Copper|A2=Weathered Copper|B1=Weathered Copper|B2=Weathered Copper|Output=Weathered Cut Copper,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Weathered Cut Copper]] <small>(vanilla recipe)</small>
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Cut Copper,4}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

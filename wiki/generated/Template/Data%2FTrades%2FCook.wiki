@@ -1,0 +1,25 @@
+<includeonly>{| class="wikitable"
+! Level !! Villager wants !! Villager gives !! Uses !! Villager XP
+|-
+! rowspan="2" | Novice
+| {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}} || ∞ || 20
+|-
+| {{ItemLink|Obol}} || 8 × {{ItemLink|Sweet Berry Toast}} || ∞ || 20
+|-
+! rowspan="2" | Apprentice
+| {{ItemLink|Obol}} || 4 × {{ItemLink|Warped Stroganoff}} || ∞ || 20
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}} || ∞ || 20
+|-
+! rowspan="2" | Journeyman
+| {{ItemLink|Obol}} || 16 × {{ItemLink|Chorus Mochi}} || ∞ || 40
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}} || ∞ || 40
+|-
+! rowspan="1" | Expert
+| {{ItemLink|Obol}} || {{ItemLink|Cleaver}}<br /><small>Slaughter , Looting II</small> || ∞ || 80
+|-
+! rowspan="1" | Master
+| 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}} || 16 || 2
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

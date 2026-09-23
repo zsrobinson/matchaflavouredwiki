@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Prayer of Ares]]
+| [[Red Dye]] +<br />[[Iron Sword]] or [[Iron Spear]] +<br />[[Hell-Bound Book]] +<br />[[Shield]] +<br />[[Iron Helmet]]
+| {{Crafting|A2=Iron Sword;Iron Spear|B1=Red Dye|B2=Hell-Bound Book|B3=Iron Helmet|C2=Shield|Output=Prayer of Ares}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/lunge_breach.json|matcha:blessing/lunge_breach}}</small>
+|-
+| [[Warding Shield]]
+| [[Silver Bullion]] +<br />[[Shield]] +<br />[[Nazar]]
+| {{Smithing|Template=Silver Bullion|Base=Shield|Addition=Nazar|Output=Warding Shield}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/warding_shield.json|matcha:smithing/warding_shield}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

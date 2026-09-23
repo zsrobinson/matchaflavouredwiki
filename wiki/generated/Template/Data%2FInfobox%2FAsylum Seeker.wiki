@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Asylum Seeker}}
+|invimage=Asylum Seeker
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|tooltip=Click the ground to summon
+|id=<code>matcha:application</code>
+|base=<code>minecraft:villager_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/asylum_seeker.json|asylum_seeker.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

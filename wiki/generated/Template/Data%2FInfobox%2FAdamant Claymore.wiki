@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Adamant Claymore}}
+|invimage=Adamant Claymore
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Unbreaking]] II<br />[[Adamant Weapon]]<br />[[Sharpness]] I}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|damage={{Hp|9}}
+|attackspeed=1
+|miningspeed=340282349999999991754788743781432688640
+|repair=[[Block of Diamond]], [[Adamant Scrap]]
+|tooltip={{G|Attack damage}} 9<br />{{G|Attack speed}} 1<br />When Blocking:<br />80% Melee Blocking<br />70% Projectile Blocking<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
+|id=<code>matcha:adamant_claymore</code>
+|base=<code>minecraft:netherite_sword</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/adamant_claymore.json|adamant_claymore.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

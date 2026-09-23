@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Sturdy Leather Boots}}
+|invimage=Sturdy Leather Boots
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Projectile Protection]] II<br />[[Feather Falling]] II<br />[[Trailblaze]] I}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|armor=2
+|repair=[[Tattered Leather]]
+|tooltip={{G|Armor}} 2<br />{{G|Safe fall distance}} 2<br />{{G|Step height}} 1<br />Repaired with:<br />Tattered Leather
+|id=<code>matcha:sturdy_leather_boots</code>
+|base=<code>minecraft:leather_boots</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/sturdy_leather_boots.json|sturdy_leather_boots.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

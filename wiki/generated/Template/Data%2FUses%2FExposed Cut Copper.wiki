@@ -1,0 +1,32 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Weathered Cut Copper]]
+| [[Exposed Cut Copper]] +<br />[[Potion]]
+| {{Crafting|A1=Exposed Cut Copper|B1=Potion|Output=Weathered Cut Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_cut_copper_from_patina.json|matcha:crafting/weathered_cut_copper_from_patina}}</small>
+|-
+| [[Exposed Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Exposed Cut Copper]]
+| {{Stonecutter|Input=Exposed Cut Copper|Output=Exposed Chiseled Copper}}
+|-
+| [[Exposed Cut Copper Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Exposed Cut Copper]]
+| {{Crafting|A1=Exposed Cut Copper|B1=Exposed Cut Copper|C1=Exposed Cut Copper|Output=Exposed Cut Copper Slab,6}}
+|-
+| [[Exposed Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Exposed Cut Copper]]
+| {{Stonecutter|Input=Exposed Cut Copper|Output=Exposed Cut Copper Slab,2}}
+|-
+| [[Exposed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Exposed Cut Copper]]
+| {{Crafting|A1=Exposed Cut Copper|A2=Exposed Cut Copper|A3=Exposed Cut Copper|B2=Exposed Cut Copper|B3=Exposed Cut Copper|C3=Exposed Cut Copper|Output=Exposed Cut Copper Stairs,4}}
+|-
+| [[Exposed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Exposed Cut Copper]]
+| {{Stonecutter|Input=Exposed Cut Copper|Output=Exposed Cut Copper Stairs}}
+|-
+| [[Waxed Exposed Cut Copper]] <small>(vanilla recipe)</small>
+| [[Exposed Cut Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Cut Copper|B1=Wax|Output=Waxed Exposed Cut Copper|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

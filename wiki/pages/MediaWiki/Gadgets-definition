@@ -1,0 +1,5 @@
+==Core==
+* animatedIcons[ResourceLoader|type=general|default|hidden]|animatedIcons.js
+
+==Appearance==
+* themeToggle[ResourceLoader|dependencies=mediawiki.util|type=general|skins=vector|default|hidden]|themeToggle.js|themeToggle.css

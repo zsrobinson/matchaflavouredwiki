@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Adamant Hoe}}
+|invimage=Adamant Hoe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[enchantment.kleispack.smelting]]<br />[[Unbreaking]] II<br />[[Efficiency]] II}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=5000
+|damage={{Hp|1}}
+|attackspeed=4
+|miningspeed=15
+|repair=[[Block of Diamond]], [[Adamant Scrap]]
+|tooltip={{G|Mining speed}} 15<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 4<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
+|id=<code>matcha:electrum_hoe</code>
+|base=<code>minecraft:netherite_hoe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/adamant_hoe.json|adamant_hoe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

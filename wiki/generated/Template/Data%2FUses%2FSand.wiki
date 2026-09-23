@@ -1,0 +1,88 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Quartz]]
+| [[Sand]]
+| {{Cooking|station=Blast Furnace|Input=Sand|Output=Quartz|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/quartz.json|matcha:blast/quartz}}</small>
+|-
+| [[Red Sand]]
+| 8 × [[Sand]] +<br />[[Iron Nugget]]
+| {{Crafting|A1=Sand|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Sand|A3=Sand|B3=Sand|C3=Iron Nugget|Output=Red Sand,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/red_sand_from_sand_and_iron.json|matcha:crafting/red_sand_from_sand_and_iron}}</small>
+|-
+| [[Sandstone]]
+| 4 × [[Sand]]
+| {{Crafting|A1=Sand|A2=Sand|B1=Sand|B2=Sand|Output=Sandstone,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sandstone.json|matcha:crafting/sandstone}}</small>
+|-
+| [[TNT]]
+| 5 × [[Paper]] or [[Sand]] +<br />4 × [[Sulfur Chunk]]
+| {{Crafting|A1=Paper;Sand|A2=Sulfur Chunk|A3=Paper;Sand|B1=Sulfur Chunk|B2=Paper;Sand|B3=Sulfur Chunk|C1=Paper;Sand|C2=Sulfur Chunk|C3=Paper;Sand|Output=TNT,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/tnt.json|matcha:crafting/tnt}}</small>
+|-
+| [[Glass]]
+| [[Sand]] or [[Red Sand]]
+| {{Cooking|station=Mud Kiln|Input=Sand;Red Sand|Output=Glass|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/glass_from_smoking_sand.json|matcha:kiln/glass_from_smoking_sand}}</small>
+|-
+| [[Black Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Black Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Black Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Black Concrete Powder,8|shapeless=1}}
+|-
+| [[Blue Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Blue Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Blue Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Blue Concrete Powder,8|shapeless=1}}
+|-
+| [[Brown Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Brown Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Brown Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Brown Concrete Powder,8|shapeless=1}}
+|-
+| [[Cyan Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Cyan Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Cyan Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Cyan Concrete Powder,8|shapeless=1}}
+|-
+| [[Gray Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Gray Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Gray Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Gray Concrete Powder,8|shapeless=1}}
+|-
+| [[Green Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Green Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Green Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Green Concrete Powder,8|shapeless=1}}
+|-
+| [[Light Blue Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Light Blue Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Light Blue Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Light Blue Concrete Powder,8|shapeless=1}}
+|-
+| [[Light Gray Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Light Gray Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Light Gray Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Light Gray Concrete Powder,8|shapeless=1}}
+|-
+| [[Lime Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Lime Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Lime Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Lime Concrete Powder,8|shapeless=1}}
+|-
+| [[Magenta Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Magenta Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Magenta Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Magenta Concrete Powder,8|shapeless=1}}
+|-
+| [[Orange Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Orange Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Orange Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Orange Concrete Powder,8|shapeless=1}}
+|-
+| [[Pink Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Pink Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Pink Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Pink Concrete Powder,8|shapeless=1}}
+|-
+| [[Purple Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Purple Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Purple Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Purple Concrete Powder,8|shapeless=1}}
+|-
+| [[Red Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Red Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Red Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Red Concrete Powder,8|shapeless=1}}
+|-
+| [[White Concrete Powder]] <small>(vanilla recipe)</small>
+| [[White Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=White Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=White Concrete Powder,8|shapeless=1}}
+|-
+| [[Yellow Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Yellow Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Yellow Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Yellow Concrete Powder,8|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

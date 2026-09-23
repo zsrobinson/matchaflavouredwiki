@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Light Blue Dye]] <small>(vanilla recipe)</small>
+| [[Blue Orchid]]
+| {{Crafting|A1=Blue Orchid|Output=Light Blue Dye|shapeless=1}}
+|-
+| [[Light Blue Dye]] <small>(vanilla recipe)</small>
+| [[Blue Dye]] +<br />[[White Dye]]
+| {{Crafting|A1=Blue Dye|B1=White Dye|Output=Light Blue Dye,2|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

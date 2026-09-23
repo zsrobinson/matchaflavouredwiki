@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Block of Stripped Bamboo}}
+|invimage=Block of Stripped Bamboo
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:stripped_bamboo_block</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_bamboo_block_from_stonecutting_bamboo_block.json|stripped_bamboo_block_from_stonecutting_bamboo_block.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

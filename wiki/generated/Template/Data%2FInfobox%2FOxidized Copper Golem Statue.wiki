@@ -1,0 +1,13 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Oxidized Copper Golem Statue}}
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:oxidized_copper_golem_statue</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_golem_statue_from_statue.json|oxidized_copper_golem_statue_from_statue.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

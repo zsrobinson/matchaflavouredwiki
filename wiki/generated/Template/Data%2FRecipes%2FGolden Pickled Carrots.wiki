@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Golden Pickled Carrots]]
+| [[Golden Carrot]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
+| {{Crafting|A1=Golden Carrot|B1=Brown Mushroom|C1=Glass Bottle|Output=Golden Pickled Carrots|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_pickled_carrots.json|matcha:food/crafting/golden_pickled_carrots}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

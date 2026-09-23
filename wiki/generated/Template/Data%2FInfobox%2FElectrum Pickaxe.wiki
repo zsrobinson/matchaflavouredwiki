@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Electrum Pickaxe}}
+|invimage=Electrum Pickaxe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Electrum Tool]] III}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|damage={{Hp|5}}
+|attackspeed=1.2
+|miningspeed=55
+|repair=[[Block of Diamond]]
+|tooltip={{G|Mining speed}} 12<br />{{G|Attack damage}} 5<br />{{G|Attack speed}} 1.2<br />Repaired with:<br />Block of Diamond
+|id=<code>matcha:electrum_pickaxe</code>
+|base=<code>minecraft:netherite_pickaxe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_pickaxe.json|electrum_pickaxe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

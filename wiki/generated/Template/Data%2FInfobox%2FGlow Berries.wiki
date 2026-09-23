@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Glow Berries}}
+|invimage=Glow Berries
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|1}}
+|eat_time=1.6 seconds
+|tooltip={{G|Half heart}}
+|id=<code>minecraft:glow_berries</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/food/glow_berries.json|glow_berries.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

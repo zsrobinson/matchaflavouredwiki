@@ -1,0 +1,24 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Copper Chain]]
+| 3 × [[Copper Nugget]]
+| {{Crafting|A1=Copper Nugget|A2=Copper Nugget|A3=Copper Nugget|Output=Copper Chain,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_chain.json|matcha:crafting/copper_chain}}</small>
+|-
+| [[Copper Lantern]]
+| 3 × [[Copper Nugget]] +<br />[[Copper Torch]]
+| {{Crafting|A2=Copper Nugget|B1=Copper Nugget|B2=Copper Torch|C2=Copper Nugget|Output=Copper Lantern}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_lantern.json|matcha:crafting/copper_lantern}}</small>
+|-
+| [[Copper Torch]]
+| 8 × [[Stick]] +<br />[[Copper Nugget]]
+| {{Crafting|A1=Stick|A2=Stick|A3=Stick|B1=Stick|B2=Copper Nugget|B3=Stick|C1=Stick|C2=Stick|C3=Stick|Output=Copper Torch,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_torch.json|matcha:crafting/copper_torch}}</small>
+|-
+| [[Copper Ingot]] <small>(vanilla recipe)</small>
+| 9 × [[Copper Nugget]]
+| {{Crafting|A1=Copper Nugget|A2=Copper Nugget|A3=Copper Nugget|B1=Copper Nugget|B2=Copper Nugget|B3=Copper Nugget|C1=Copper Nugget|C2=Copper Nugget|C3=Copper Nugget|Output=Copper Ingot}}
+|-
+| [[Name Tag]] <small>(vanilla recipe)</small>
+| Any [[metal nuggets]] +<br />[[Paper]]
+| {{Crafting|A2=Paper|B1=Any Metal Nuggets|Output=Name Tag}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

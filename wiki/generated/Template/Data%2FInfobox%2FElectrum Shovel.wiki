@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Electrum Shovel}}
+|invimage=Electrum Shovel
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Electrum Tool]] III}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|damage={{Hp|6}}
+|attackspeed=1
+|miningspeed=12
+|repair=[[Block of Diamond]]
+|tooltip={{G|Mining speed}} 12<br />{{G|Attack damage}} 6<br />{{G|Attack speed}} 1<br />Repaired with:<br />Block of Diamond
+|id=<code>matcha:electrum_shovel</code>
+|base=<code>minecraft:netherite_shovel</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_shovel.json|electrum_shovel.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

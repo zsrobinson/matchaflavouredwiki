@@ -1,0 +1,21 @@
+<includeonly><small>Loot table <code>minecraft:archaeology/desert_well</code> ({{Source|MF_datapack/data/minecraft/loot_table/archaeology/desert_well.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Arms Up Pottery Sherd}} || 1 || 20.0% || 20.0% || 
+|-
+| {{ItemLink|Brewer Pottery Sherd}} || 1 || 20.0% || 20.0% || 
+|-
+| {{ItemLink|Brick}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Obol}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Stick}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|String}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Clay Fetish}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|The Avesta}} || 1 || 10.0% || 10.00% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

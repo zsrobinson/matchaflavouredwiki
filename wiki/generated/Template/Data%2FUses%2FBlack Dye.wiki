@@ -1,0 +1,56 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Dark Malachite]]
+| 8 × [[Malachite]] +<br />[[Black Dye]]
+| {{Crafting|A1=Malachite|A2=Malachite|A3=Malachite|B1=Malachite|B2=Black Dye|B3=Malachite|C1=Malachite|C2=Malachite|C3=Malachite|Output=Dark Malachite,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/dark_prismarine.json|matcha:crafting/dark_prismarine}}</small>
+|-
+| [[Music Disc]]
+| 8 × [[Disc Fragment]] +<br />[[Black Dye]]
+| {{Crafting|A1=Disc Fragment|A2=Disc Fragment|A3=Disc Fragment|B1=Disc Fragment|B2=Black Dye|B3=Disc Fragment|C1=Disc Fragment|C2=Disc Fragment|C3=Disc Fragment|Output=Music Disc}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/music_disc_stal.json|matcha:crafting/music_disc_stal}}</small>
+|-
+| [[Black Candle]] <small>(vanilla recipe)</small>
+| [[Candle]] +<br />[[Black Dye]]
+| {{Crafting|A1=Candle|B1=Black Dye|Output=Black Candle|shapeless=1}}
+|-
+| [[Black Concrete Powder]] <small>(vanilla recipe)</small>
+| [[Black Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
+| {{Crafting|A1=Black Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Black Concrete Powder,8|shapeless=1}}
+|-
+| [[Black Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Black Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Black Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Black Stained Glass,8}}
+|-
+| [[Black Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 8 × [[Glass Pane]] +<br />[[Black Dye]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Black Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Black Stained Glass Pane,8}}
+|-
+| [[Black Terracotta]] <small>(vanilla recipe)</small>
+| 8 × [[Terracotta]] +<br />[[Black Dye]]
+| {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Black Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Black Terracotta,8}}
+|-
+| [[Black Bed]] <small>(vanilla recipe)</small>
+| [[Black Dye]] +<br />[[White Bed]] or [[Orange Bed]] or [[Magenta Bed]] or [[Light Blue Bed]] or [[Yellow Bed]] or [[Lime Bed]] or [[Pink Bed]] or [[Gray Bed]] or [[Light Gray Bed]] or [[Cyan Bed]] or [[Purple Bed]] or [[Blue Bed]] or [[Brown Bed]] or [[Green Bed]] or [[Red Bed]]
+| {{Crafting|A1=Black Dye|B1=White Bed;Orange Bed;Magenta Bed;Light Blue Bed;Yellow Bed;Lime Bed;Pink Bed;Gray Bed;Light Gray Bed;Cyan Bed;Purple Bed;Blue Bed;Brown Bed;Green Bed;Red Bed|Output=Black Bed|shapeless=1}}
+|-
+| [[Black Carpet]] <small>(vanilla recipe)</small>
+| [[Black Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]]
+| {{Crafting|A1=Black Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet|Output=Black Carpet|shapeless=1}}
+|-
+| [[Black Harness]] <small>(vanilla recipe)</small>
+| [[Black Dye]] +<br />[[White Harness]] or [[Orange Harness]] or [[Magenta Harness]] or [[Light Blue Harness]] or [[Yellow Harness]] or [[Lime Harness]] or [[Pink Harness]] or [[Gray Harness]] or [[Light Gray Harness]] or [[Cyan Harness]] or [[Purple Harness]] or [[Blue Harness]] or [[Brown Harness]] or [[Green Harness]] or [[Red Harness]]
+| {{Crafting|A1=Black Dye|B1=White Harness;Orange Harness;Magenta Harness;Light Blue Harness;Yellow Harness;Lime Harness;Pink Harness;Gray Harness;Light Gray Harness;Cyan Harness;Purple Harness;Blue Harness;Brown Harness;Green Harness;Red Harness|Output=Black Harness|shapeless=1}}
+|-
+| [[Black Wool]] <small>(vanilla recipe)</small>
+| [[Black Dye]] +<br />[[White Wool]] or [[Orange Wool]] or [[Magenta Wool]] or [[Light Blue Wool]] or [[Yellow Wool]] or [[Lime Wool]] or [[Pink Wool]] or [[Gray Wool]] or [[Light Gray Wool]] or [[Cyan Wool]] or [[Purple Wool]] or [[Blue Wool]] or [[Brown Wool]] or [[Green Wool]] or [[Red Wool]]
+| {{Crafting|A1=Black Dye|B1=White Wool;Orange Wool;Magenta Wool;Light Blue Wool;Yellow Wool;Lime Wool;Pink Wool;Gray Wool;Light Gray Wool;Cyan Wool;Purple Wool;Blue Wool;Brown Wool;Green Wool;Red Wool|Output=Black Wool|shapeless=1}}
+|-
+| [[Gray Dye]] <small>(vanilla recipe)</small>
+| [[Black Dye]] +<br />[[White Dye]]
+| {{Crafting|A1=Black Dye|B1=White Dye|Output=Gray Dye,2|shapeless=1}}
+|-
+| [[Light Gray Dye]] <small>(vanilla recipe)</small>
+| [[Black Dye]] +<br />2 × [[White Dye]]
+| {{Crafting|A1=Black Dye|B1=White Dye|C1=White Dye|Output=Light Gray Dye,3|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

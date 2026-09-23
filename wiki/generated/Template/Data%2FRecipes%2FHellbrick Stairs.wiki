@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Hellbrick Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Hellbricks]]
+| {{Crafting|A1=Hellbricks|A2=Hellbricks|A3=Hellbricks|B2=Hellbricks|B3=Hellbricks|C3=Hellbricks|Output=Hellbrick Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Hellbrick Stairs]] <small>(vanilla recipe)</small>
+| [[Hellbricks]]
+| {{Stonecutter|Input=Hellbricks|Output=Hellbrick Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

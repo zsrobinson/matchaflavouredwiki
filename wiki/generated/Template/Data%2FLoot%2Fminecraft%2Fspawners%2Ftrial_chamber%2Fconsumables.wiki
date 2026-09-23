@@ -1,0 +1,17 @@
+<includeonly><small>Loot table <code>minecraft:spawners/trial_chamber/consumables</code> ({{Source|MF_datapack/data/minecraft/loot_table/spawners/trial_chamber/consumables.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Bread}} || 1 || 25.0% || 25.0% || 
+|-
+| {{ItemLink|Baked Potato}} || 1 || 25.0% || 25.0% || 
+|-
+| {{ItemLink|Pickled Carrots}} || 1 || 12.5% || 12.5% || 
+|-
+| {{ItemLink|Apple Empanada}} || 1 || 12.5% || 12.5% || 
+|-
+| {{ItemLink|Mead}} || 1 || 12.5% || 12.5% || 
+|-
+| {{ItemLink|Pumpkin Empanada}} || 1 || 12.5% || 12.5% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

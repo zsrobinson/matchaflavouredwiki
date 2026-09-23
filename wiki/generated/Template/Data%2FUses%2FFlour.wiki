@@ -1,0 +1,52 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Brachio Chicken Nugget]]
+| [[Seitan]] or [[Cooked Chicken]] +<br />[[Oil]] +<br />[[Flour]]
+| {{Crafting|A1=Seitan;Cooked Chicken|A2=Flour|B1=Oil|Output=Brachio Chicken Nugget,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/brachio_chicken_nugget.json|matcha:food/crafting/brachio_chicken_nugget}}</small>
+|-
+| [[Cake]]
+| 2 × [[Sweet Berries]] +<br />[[Milk Bottle]] +<br />2 × [[Sugar]] +<br />Any [[eggs]] +<br />3 × [[Flour]]
+| {{Crafting|A1=Sweet Berries|A2=Sugar|A3=Flour|B1=Milk Bottle|B2=Any Eggs|B3=Flour|C1=Sweet Berries|C2=Sugar|C3=Flour|Output=Cake}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cake.json|matcha:food/crafting/cake}}</small>
+|-
+| [[Dough]]
+| [[Egg]] or [[Blue Egg]] or [[Brown Egg]] +<br />2 × [[Flour]]
+| {{Crafting|A1=Egg;Blue Egg;Brown Egg|B1=Flour|C1=Flour|Output=Dough,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough.json|matcha:food/crafting/dough}}</small>
+|-
+| [[Dough]]
+| [[Potion]] +<br />[[Flour]]
+| {{Crafting|A1=Potion|B1=Flour|Output=Dough|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough_from_water.json|matcha:food/crafting/dough_from_water}}</small>
+|-
+| [[Fish and Chips]]
+| [[Baked Potato]] +<br />[[Cooked Large Fish]] or [[Cooked Fish]] +<br />[[Flour]] +<br />[[Oil]]
+| {{Crafting|A1=Baked Potato|B1=Cooked Large Fish;Cooked Fish|C1=Flour|A2=Oil|Output=Fish and Chips|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/fish_and_chips.json|matcha:food/crafting/fish_and_chips}}</small>
+|-
+| [[Bag of Flour]]
+| 9 × [[Flour]]
+| {{Crafting|A1=Flour|A2=Flour|A3=Flour|B1=Flour|B2=Flour|B3=Flour|C1=Flour|C2=Flour|C3=Flour|Output=Bag of Flour}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/flour_bag.json|matcha:food/crafting/flour_bag}}</small>
+|-
+| [[Gimmari]]
+| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Sugar]] +<br />Any [[eggs]] +<br />[[Flour]] +<br />[[Oil]]
+| {{Crafting|A1=Dried Kelp|B1=Carrot|C1=Sugar|A2=Any Eggs|B2=Flour|C2=Oil|Output=Gimmari|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gimmari.json|matcha:food/crafting/gimmari}}</small>
+|-
+| [[Gnocchi]]
+| [[Baked Potato]] +<br />[[Cheese]] +<br />Any [[eggs]] +<br />[[Flour]] +<br />[[Bowl]]
+| {{Crafting|A1=Baked Potato|B1=Cheese|C1=Any Eggs|A2=Flour|B2=Bowl|Output=Gnocchi|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gnocchi.json|matcha:food/crafting/gnocchi}}</small>
+|-
+| [[Ptero Chicken Nugget]]
+| [[Oil]] +<br />[[Flour]] +<br />[[Seitan]] or [[Cooked Chicken]]
+| {{Crafting|A1=Oil|A2=Seitan;Cooked Chicken|B1=Flour|Output=Ptero Chicken Nugget,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/ptero_chicken_nugget.json|matcha:food/crafting/ptero_chicken_nugget}}</small>
+|-
+| [[Stego Chicken Nugget]]
+| [[Oil]] +<br />[[Seitan]] or [[Cooked Chicken]] +<br />[[Flour]]
+| {{Crafting|A1=Oil|A2=Flour|B1=Seitan;Cooked Chicken|Output=Stego Chicken Nugget,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/stego_chicken_nugget.json|matcha:food/crafting/stego_chicken_nugget}}</small>
+|-
+| [[Tricero Chicken Nugget]]
+| [[Seitan]] or [[Cooked Chicken]] +<br />[[Flour]] +<br />[[Oil]]
+| {{Crafting|A1=Seitan;Cooked Chicken|A2=Oil|B1=Flour|Output=Tricero Chicken Nugget,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/tricero_chicken_nugget.json|matcha:food/crafting/tricero_chicken_nugget}}</small>
+|-
+| [[Curry Stock]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Flour]] +<br />[[Oil]] +<br />[[Potato]] +<br />[[Raw Beef]] or [[Raw Mutton]] or [[Raw Flesh]] or [[Seitan]] +<br />[[Carrot]] +<br />[[Bowl]]
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Flour|A2=Oil|B2=Potato|C2=Raw Beef;Raw Mutton;Raw Flesh;Seitan|A3=Carrot|B3=Bowl|Output=Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_curry.json|matcha:food/crafting/uncooked_curry}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

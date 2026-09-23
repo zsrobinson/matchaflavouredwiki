@@ -1,0 +1,36 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Music Disc]]
+| 8 × [[Disc Fragment]] +<br />[[Mossy Stone Bricks]]
+| {{Crafting|A1=Disc Fragment|A2=Disc Fragment|A3=Disc Fragment|B1=Disc Fragment|B2=Mossy Stone Bricks|B3=Disc Fragment|C1=Disc Fragment|C2=Disc Fragment|C3=Disc Fragment|Output=Music Disc}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/music_disc_labyrinthine.json|matcha:crafting/music_disc_labyrinthine}}</small>
+|-
+| [[Stone Bricks]]
+| [[Mossy Stone Bricks]]
+| {{Cooking|station=Oven|Input=Mossy Stone Bricks|Output=Stone Bricks|note=2.5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/stone_bricks_from_mossy_stone_bricks.json|matcha:oven/stone_bricks_from_mossy_stone_bricks}}</small>
+|-
+| [[Mossy Stone Brick Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Mossy Stone Bricks]]
+| {{Crafting|A1=Mossy Stone Bricks|B1=Mossy Stone Bricks|C1=Mossy Stone Bricks|Output=Mossy Stone Brick Slab,6}}
+|-
+| [[Mossy Stone Brick Slab]] <small>(vanilla recipe)</small>
+| [[Mossy Stone Bricks]]
+| {{Stonecutter|Input=Mossy Stone Bricks|Output=Mossy Stone Brick Slab,2}}
+|-
+| [[Mossy Stone Brick Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Mossy Stone Bricks]]
+| {{Crafting|A1=Mossy Stone Bricks|A2=Mossy Stone Bricks|A3=Mossy Stone Bricks|B2=Mossy Stone Bricks|B3=Mossy Stone Bricks|C3=Mossy Stone Bricks|Output=Mossy Stone Brick Stairs,4}}
+|-
+| [[Mossy Stone Brick Stairs]] <small>(vanilla recipe)</small>
+| [[Mossy Stone Bricks]]
+| {{Stonecutter|Input=Mossy Stone Bricks|Output=Mossy Stone Brick Stairs}}
+|-
+| [[Mossy Stone Brick Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Mossy Stone Bricks]]
+| {{Crafting|A1=Mossy Stone Bricks|A2=Mossy Stone Bricks|B1=Mossy Stone Bricks|B2=Mossy Stone Bricks|C1=Mossy Stone Bricks|C2=Mossy Stone Bricks|Output=Mossy Stone Brick Wall,6}}
+|-
+| [[Mossy Stone Brick Wall]] <small>(vanilla recipe)</small>
+| [[Mossy Stone Bricks]]
+| {{Stonecutter|Input=Mossy Stone Bricks|Output=Mossy Stone Brick Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,32 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oxidized Cut Copper]]
+| [[Weathered Cut Copper]] +<br />[[Potion]]
+| {{Crafting|A1=Weathered Cut Copper|B1=Potion|Output=Oxidized Cut Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_cut_copper_from_patina.json|matcha:crafting/oxidized_cut_copper_from_patina}}</small>
+|-
+| [[Waxed Weathered Cut Copper]] <small>(vanilla recipe)</small>
+| [[Weathered Cut Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Cut Copper|B1=Wax|Output=Waxed Weathered Cut Copper|shapeless=1}}
+|-
+| [[Weathered Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Weathered Cut Copper]]
+| {{Stonecutter|Input=Weathered Cut Copper|Output=Weathered Chiseled Copper}}
+|-
+| [[Weathered Cut Copper Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Weathered Cut Copper]]
+| {{Crafting|A1=Weathered Cut Copper|B1=Weathered Cut Copper|C1=Weathered Cut Copper|Output=Weathered Cut Copper Slab,6}}
+|-
+| [[Weathered Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Weathered Cut Copper]]
+| {{Stonecutter|Input=Weathered Cut Copper|Output=Weathered Cut Copper Slab,2}}
+|-
+| [[Weathered Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Weathered Cut Copper]]
+| {{Crafting|A1=Weathered Cut Copper|A2=Weathered Cut Copper|A3=Weathered Cut Copper|B2=Weathered Cut Copper|B3=Weathered Cut Copper|C3=Weathered Cut Copper|Output=Weathered Cut Copper Stairs,4}}
+|-
+| [[Weathered Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Weathered Cut Copper]]
+| {{Stonecutter|Input=Weathered Cut Copper|Output=Weathered Cut Copper Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

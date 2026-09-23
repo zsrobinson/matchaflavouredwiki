@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Adamant Sword}}
+|invimage=Adamant Sword
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Sharpness]] I<br />[[Adamant Weapon]]<br />[[Unbreaking]] II}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|damage={{Hp|8}}
+|attackspeed=1.6
+|miningspeed=340282349999999991754788743781432688640
+|repair=[[Block of Diamond]], [[Adamant Scrap]]
+|tooltip={{G|Attack damage}} 8<br />{{G|Attack speed}} 1.6<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
+|id=<code>matcha:electrum_sword</code>
+|base=<code>minecraft:netherite_sword</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/adamant_sword.json|adamant_sword.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

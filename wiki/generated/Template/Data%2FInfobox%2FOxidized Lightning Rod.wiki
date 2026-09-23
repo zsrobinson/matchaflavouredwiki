@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Oxidized Lightning Rod}}
+|invimage=Oxidized Lightning Rod
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:oxidized_lightning_rod</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_lightning_rod_from_stonecutting_oxidized_copper.json|oxidized_lightning_rod_from_stonecutting_oxidized_copper.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

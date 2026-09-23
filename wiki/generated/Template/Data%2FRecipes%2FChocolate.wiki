@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Chocolate]]
+| [[Cocoa Beans]]
+| {{Cooking|station=Kindling|Input=Cocoa Beans|Output=Chocolate|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/chocolate.json|matcha:food/campfire/chocolate}}</small>
+|-
+| [[Chocolate]]
+| [[Cocoa Beans]]
+| {{Cooking|station=Oven|Input=Cocoa Beans|Output=Chocolate|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/chocolate.json|matcha:food/oven/chocolate}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

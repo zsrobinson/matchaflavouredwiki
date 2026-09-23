@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Shakudo Spear}}
+|invimage=Shakudo Spear
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Shakudo Weapon]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1000
+|damage={{Hp|3}}
+|attackspeed=1.18
+|repair=[[Block of Copper]]
+|tooltip={{G|Attack damage}} 3<br />{{G|Attack speed}} 1.18<br />Repaired with:<br />Block of Copper
+|id=<code>matcha:shakudo_spear</code>
+|base=<code>minecraft:stone_spear</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_spear.json|shakudo_spear.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

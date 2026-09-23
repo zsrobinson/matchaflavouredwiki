@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Angler's Almanac}}
+|invimage=Angler's Almanac
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|tooltip=Discover the fish that inhabit this world
+|id=<code>matcha:anglers_almanac</code>
+|base=<code>minecraft:book</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/fisherman/1/anglers_almanac.json|anglers_almanac.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

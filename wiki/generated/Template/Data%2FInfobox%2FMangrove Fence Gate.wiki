@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Mangrove Fence Gate}}
+|invimage=Mangrove Fence Gate
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:mangrove_fence_gate</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/mangrove_fence_gate_from_stonecutting_mangrove_logs.json|mangrove_fence_gate_from_stonecutting_mangrove_logs.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

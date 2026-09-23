@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Cooked Mutton}}
+|invimage=Cooked Mutton
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|4}}
+|eat_time=1.6 seconds
+|tooltip=❤❤
+|id=<code>minecraft:cooked_mutton</code>
+|base=<code>minecraft:cooked_mutton</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_mutton.json|cooked_mutton.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

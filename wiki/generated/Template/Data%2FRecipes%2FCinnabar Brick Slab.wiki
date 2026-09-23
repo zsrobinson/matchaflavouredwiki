@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cinnabar Brick Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Cinnabar Bricks]]
+| {{Crafting|A1=Cinnabar Bricks|B1=Cinnabar Bricks|C1=Cinnabar Bricks|Output=Cinnabar Brick Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cinnabar Brick Slab]] <small>(vanilla recipe)</small>
+| [[Cinnabar Bricks]]
+| {{Stonecutter|Input=Cinnabar Bricks|Output=Cinnabar Brick Slab,2}}
+|-
+| [[Cinnabar Brick Slab]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Cinnabar Brick Slab,2}}
+|-
+| [[Cinnabar Brick Slab]] <small>(vanilla recipe)</small>
+| [[Polished Cinnabar]]
+| {{Stonecutter|Input=Polished Cinnabar|Output=Cinnabar Brick Slab,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

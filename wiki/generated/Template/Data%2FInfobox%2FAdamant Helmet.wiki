@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Adamant Helmet}}
+|invimage=Adamant Helmet
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[3]]<br />[[Unbreaking]] II<br />[[Protection]] I}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1000
+|armor=3
+|toughness=3
+|knockbackres=1
+|repair=[[Block of Diamond]], [[Adamant Scrap]]
+|tooltip={{G|Armor}} 3<br />{{G|Armor toughness}} 3<br />{{G|Knockback resistance}} 1<br />Set Bonus:<br />{{G|Doom}} 4<br />{{G|Health}}{{G|Health}} {{G|Cooldown}} (00:30)<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
+|id=<code>matcha:electrum_helmet</code>
+|base=<code>minecraft:netherite_helmet</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/adamant_helmet.json|adamant_helmet.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

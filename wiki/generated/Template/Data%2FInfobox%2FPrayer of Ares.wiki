@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Rare
+|stackable=No
+|effects=Stores: [[Lunge]] II, [[Breach]] II
+|tooltip=Prayer of Ares
+|id=<code>matcha:blessing_ares</code>
+|base=<code>minecraft:enchanted_book</code>
+|source={{Source|MF_datapack/data/matcha/recipe/blessing/lunge_breach.json|lunge_breach.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,9 @@
+<includeonly><small>Loot table <code>minecraft:gameplay/fishing/sulfur_caves</code> ({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Fish Bones}} || 1 || 90.9% || 90.9% || 
+|-
+| {{ItemLink|Sulfur Chunk}} || 3 || 9.09% || 9.09% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

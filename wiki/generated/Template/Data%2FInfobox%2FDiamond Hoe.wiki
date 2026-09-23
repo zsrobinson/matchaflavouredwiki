@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Diamond Hoe}}
+|invimage=Diamond Hoe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=2500
+|damage={{Hp|1}}
+|attackspeed=4
+|miningspeed=9
+|repair=<code>#minecraft:diamond_tool_materials</code>
+|tooltip={{G|Mining speed}} 9<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 4
+|id=<code>minecraft:diamond_hoe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/diamond_hoe.json|diamond_hoe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

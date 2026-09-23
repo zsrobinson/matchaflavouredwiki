@@ -1,0 +1,88 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Kindling]]
+| 2 × [[Stick]] +<br />2 × Any [[logs]]
+| {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json|matcha:crafting/campfire}}</small>
+|-
+| [[Chest]]
+| 8 × Any [[logs]]
+| {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/chest_from_logs.json|matcha:crafting/chest_from_logs}}</small>
+|-
+| [[Stick]]
+| 2 × Any [[logs]]
+| {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sticks_from_logs.json|matcha:crafting/sticks_from_logs}}</small>
+|-
+| [[Barrel]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Barrel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/barrel_from_stonecutting_any_logs.json|matcha:stonecutting/barrel_from_stonecutting_any_logs}}</small>
+|-
+| [[Chiseled Bookshelf]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Chiseled Bookshelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/chiseled_bookshelf_from_stonecutting_any_logs.json|matcha:stonecutting/chiseled_bookshelf_from_stonecutting_any_logs}}</small>
+|-
+| [[Crimson Button]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_button_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_button_from_stonecutting_crimson_stem}}</small>
+|-
+| [[Crimson Door]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Door,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_door_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_door_from_stonecutting_crimson_stem}}</small>
+|-
+| [[Crimson Fence]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Fence,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_fence_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_fence_from_stonecutting_crimson_stem}}</small>
+|-
+| [[Crimson Fence Gate]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Fence Gate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_gate_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_gate_from_stonecutting_crimson_stem}}</small>
+|-
+| [[Crimson Planks]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_planks_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_planks_from_stonecutting_crimson_stem}}</small>
+|-
+| [[Crimson Pressure Plate]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Pressure Plate,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_pressure_plate_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_pressure_plate_from_stonecutting_crimson_stem}}</small>
+|-
+| [[Crimson Shelf]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_shelf_from_stonecutting_crimson_stems.json|matcha:stonecutting/crimson_shelf_from_stonecutting_crimson_stems}}</small>
+|-
+| [[Crimson Sign]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Sign,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_sign_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_sign_from_stonecutting_crimson_stem}}</small>
+|-
+| [[Crimson Slab]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_slab_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_slab_from_stonecutting_crimson_stem}}</small>
+|-
+| [[Crimson Stairs]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Stairs,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_stairs_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_stairs_from_stonecutting_crimson_stem}}</small>
+|-
+| [[Crimson Stem]]
+| [[Crimson Hyphae]]
+| {{Stonecutter|Input=Crimson Hyphae|Output=Crimson Stem}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_stem_from_stonecutting_crimson_stems.json|matcha:stonecutting/crimson_stem_from_stonecutting_crimson_stems}}</small>
+|-
+| [[Crimson Trapdoor]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_trapdoor_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_trapdoor_from_stonecutting_crimson_stem}}</small>
+|-
+| [[Ladder]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Ladder,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/ladder_from_stonecutting_any_logs.json|matcha:stonecutting/ladder_from_stonecutting_any_logs}}</small>
+|-
+| [[Stripped Crimson Hyphae]]
+| [[Crimson Hyphae]] or [[Crimson Stem]] or [[Stripped Crimson Stem]]
+| {{Stonecutter|Input=Crimson Hyphae;Crimson Stem;Stripped Crimson Stem|Output=Stripped Crimson Hyphae}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_crimson_hyphae_from_stonecutting_crimson_stems.json|matcha:stonecutting/stripped_crimson_hyphae_from_stonecutting_crimson_stems}}</small>
+|-
+| [[Stripped Crimson Stem]]
+| [[Crimson Hyphae]] or [[Crimson Stem]] or [[Stripped Crimson Hyphae]]
+| {{Stonecutter|Input=Crimson Hyphae;Crimson Stem;Stripped Crimson Hyphae|Output=Stripped Crimson Stem}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_crimson_stem_from_stonecutting_crimson_stems.json|matcha:stonecutting/stripped_crimson_stem_from_stonecutting_crimson_stems}}</small>
+|-
+| [[Crimson Planks]] <small>(vanilla recipe)</small>
+| Any [[crimson stems]]
+| {{Crafting|A1=Any Crimson Stems|Output=Crimson Planks,4|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

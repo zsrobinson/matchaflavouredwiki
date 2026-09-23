@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cobblestone Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Cobblestone]]
+| {{Crafting|A1=Cobblestone|B1=Cobblestone|C1=Cobblestone|Output=Cobblestone Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cobblestone Slab]] <small>(vanilla recipe)</small>
+| [[Cobblestone]]
+| {{Stonecutter|Input=Cobblestone|Output=Cobblestone Slab,2}}
+|-
+| [[Cobblestone Slab]] <small>(vanilla recipe)</small>
+| [[Limestone]]
+| {{Stonecutter|Input=Limestone|Output=Cobblestone Slab,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

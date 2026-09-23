@@ -1,0 +1,64 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Ramen]]
+| [[Bowl]] +<br />[[Glow Berry Mash]] +<br />[[Egg]] or [[Blue Egg]] or [[Brown Egg]] +<br />[[Brown Mushroom]] or [[Raw Porkchop]] +<br />[[Dried Kelp]]
+| {{Crafting|A1=Bowl|B1=Glow Berry Mash|C1=Egg;Blue Egg;Brown Egg|A2=Brown Mushroom;Raw Porkchop|B2=Dried Kelp|Output=Ramen|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ramen.json|matcha:crafting/ramen}}</small>
+|-
+| [[Bokguk]]
+| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Pufferfish]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Braised Mushroom]] +<br />[[Bowl]]
+| {{Crafting|A1=Dried Kelp|B1=Carrot|C1=Pufferfish|A2=Cooked Fish;Cooked Large Fish|B2=Braised Mushroom|C2=Bowl|Output=Bokguk|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bokguk.json|matcha:food/crafting/bokguk}}</small>
+|-
+| [[Crimson Stroganoff]]
+| [[Crimson Fungus]] +<br />[[Steak]] +<br />[[Dough]] +<br />[[Milk Bottle]] +<br />[[Bowl]]
+| {{Crafting|A1=Crimson Fungus|B1=Steak|C1=Dough|A2=Milk Bottle|B2=Bowl|Output=Crimson Stroganoff|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/crimson_stroganoff.json|matcha:food/crafting/crimson_stroganoff}}</small>
+|-
+| [[Gnocchi]]
+| [[Baked Potato]] +<br />[[Cheese]] +<br />Any [[eggs]] +<br />[[Flour]] +<br />[[Bowl]]
+| {{Crafting|A1=Baked Potato|B1=Cheese|C1=Any Eggs|A2=Flour|B2=Bowl|Output=Gnocchi|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gnocchi.json|matcha:food/crafting/gnocchi}}</small>
+|-
+| [[Kontomire-Dandelion Stew]]
+| [[Tomatoes]] +<br />[[Dandelion]] +<br />[[Fern]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />Any [[eggs]] +<br />[[Bowl]]
+| {{Crafting|A1=Tomatoes|B1=Dandelion|C1=Fern|A2=Cooked Fish;Cooked Large Fish|B2=Any Eggs|C2=Bowl|Output=Kontomire-Dandelion Stew|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/kontomire_stew.json|matcha:food/crafting/kontomire_stew}}</small>
+|-
+| [[Apple Cinnamon Oatmeal]]
+| [[Honey Bottle]] +<br />[[Milk Bottle]] +<br />[[Estus Ash]] +<br />[[Apple]] +<br />2 × [[Wheat Grain]] +<br />[[Bowl]]
+| {{Crafting|A1=Honey Bottle|B1=Milk Bottle|C1=Estus Ash|A2=Apple|B2=Wheat Grain|C2=Wheat Grain|A3=Bowl|Output=Apple Cinnamon Oatmeal|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/oatmeal.json|matcha:food/crafting/oatmeal}}</small>
+|-
+| [[Pad Thai]]
+| [[Dough]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Sugar]] +<br />[[Carrot]] +<br />Any [[eggs]] +<br />[[Bowl]]
+| {{Crafting|A1=Dough|B1=Cooked Fish;Cooked Large Fish|C1=Sugar|A2=Carrot|B2=Any Eggs|C2=Bowl|Output=Pad Thai|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pad_thai.json|matcha:food/crafting/pad_thai}}</small>
+|-
+| [[Toadstool Stroganoff]]
+| [[Red Mushroom]] +<br />[[Steak]] +<br />[[Dough]] +<br />[[Milk Bottle]] +<br />[[Bowl]]
+| {{Crafting|A1=Red Mushroom|B1=Steak|C1=Dough|A2=Milk Bottle|B2=Bowl|Output=Toadstool Stroganoff|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/red_mushroom_stroganoff.json|matcha:food/crafting/red_mushroom_stroganoff}}</small>
+|-
+| [[Stroganoff]]
+| [[Braised Mushroom]] +<br />[[Steak]] +<br />[[Dough]] +<br />[[Milk Bottle]] +<br />[[Bowl]]
+| {{Crafting|A1=Braised Mushroom|B1=Steak|C1=Dough|A2=Milk Bottle|B2=Bowl|Output=Stroganoff|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/stroganoff.json|matcha:food/crafting/stroganoff}}</small>
+|-
+| [[Curry Stock]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Flour]] +<br />[[Oil]] +<br />[[Potato]] +<br />[[Raw Beef]] or [[Raw Mutton]] or [[Raw Flesh]] or [[Seitan]] +<br />[[Carrot]] +<br />[[Bowl]]
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Flour|A2=Oil|B2=Potato|C2=Raw Beef;Raw Mutton;Raw Flesh;Seitan|A3=Carrot|B3=Bowl|Output=Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_curry.json|matcha:food/crafting/uncooked_curry}}</small>
+|-
+| [[Green Curry Stock]]
+| [[Green Dye]] +<br />[[Estus Ash]] +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Oil]] +<br />[[Cod]] or [[Salmon]] or [[Seitan]] +<br />[[Bowl]]
+| {{Crafting|A1=Green Dye|B1=Estus Ash|C1=Sugar|A2=Milk Bottle|B2=Oil|C2=Cod;Salmon;Seitan|A3=Bowl|Output=Green Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_green_curry.json|matcha:food/crafting/uncooked_green_curry}}</small>
+|-
+| [[Paneer Curry Stock]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Tomatoes]] +<br />[[Cheese]] +<br />[[Oil]] +<br />[[Bowl]]
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Milk Bottle|A2=Tomatoes|B2=Cheese|C2=Oil|A3=Bowl|Output=Paneer Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_paneer_makhani.json|matcha:food/crafting/uncooked_paneer_makhani}}</small>
+|-
+| [[Pumpkin Curry Stock]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Baked Pumpkin]] +<br />[[Oil]] +<br />[[Sunflower]] +<br />[[Milk Bottle]] +<br />[[Carrot]] +<br />[[Bamboo]] +<br />[[Bowl]]
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Baked Pumpkin|A2=Oil|B2=Sunflower|C2=Milk Bottle|A3=Carrot|B3=Bamboo|C3=Bowl|Output=Pumpkin Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_pumpkin_curry.json|matcha:food/crafting/uncooked_pumpkin_curry}}</small>
+|-
+| [[Ramen Stock]]
+| [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br />Any [[eggs]] +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Chicken]] or [[Seitan]] +<br />[[Bowl]]
+| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_ramen.json|matcha:food/crafting/uncooked_ramen}}</small>
+|-
+| [[Warped Stroganoff]]
+| [[Warped Fungus]] +<br />[[Steak]] +<br />[[Dough]] +<br />[[Milk Bottle]] +<br />[[Bowl]]
+| {{Crafting|A1=Warped Fungus|B1=Steak|C1=Dough|A2=Milk Bottle|B2=Bowl|Output=Warped Stroganoff|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/warped_stroganoff.json|matcha:food/crafting/warped_stroganoff}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

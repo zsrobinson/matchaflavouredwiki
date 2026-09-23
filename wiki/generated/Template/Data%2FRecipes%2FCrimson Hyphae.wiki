@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Crimson Hyphae]] <small>(vanilla recipe)</small>
+| 4 × [[Crimson Stem]]
+| {{Crafting|A1=Crimson Stem|A2=Crimson Stem|B1=Crimson Stem|B2=Crimson Stem|Output=Crimson Hyphae,3}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Crimson Hyphae]]
+| [[Crimson Stem]]
+| {{Stonecutter|Input=Crimson Stem|Output=Crimson Hyphae}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_hyphae_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_hyphae_from_stonecutting_crimson_stem}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

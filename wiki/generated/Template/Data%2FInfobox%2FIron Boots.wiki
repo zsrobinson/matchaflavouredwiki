@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Iron Boots}}
+|invimage=Iron Boots
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|armor=2
+|repair=<code>#minecraft:repairs_iron_armor</code>
+|tooltip={{G|Armor}} 2
+|id=<code>minecraft:iron_boots</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/iron_boots.json|iron_boots.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

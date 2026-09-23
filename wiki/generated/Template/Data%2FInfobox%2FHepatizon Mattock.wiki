@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Hepatizon Mattock}}
+|invimage=Hepatizon Mattock
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1000
+|damage={{Hp|3}}
+|attackspeed=3
+|miningspeed=15
+|repair=[[Block of Copper]]
+|tooltip={{G|Mining speed}} 15<br />{{G|Attack damage}} 3.5<br />{{G|Attack speed}} 3<br />{{G|Speed}} +0.005<br />Repaired with:<br />Block of Copper
+|id=<code>matcha:hepatizon_mattock</code>
+|base=<code>minecraft:stone_hoe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_mattock.json|hepatizon_mattock.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

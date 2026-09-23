@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Minecart]]
+| 5 × [[Iron Ingot]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|B2=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|Output=Minecart}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/minecart_from_iron.json|matcha:crafting/minecart_from_iron}}</small>
+|-
+| [[Minecart]]
+| 5 × [[Steel Alloy]]
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|B2=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|Output=Minecart,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/minecart_from_steel.json|matcha:crafting/minecart_from_steel}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

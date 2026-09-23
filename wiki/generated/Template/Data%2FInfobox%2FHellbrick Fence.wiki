@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Hellbrick Fence}}
+|invimage=Hellbrick Fence
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Nether Brick Fence}}
+|stackable=Yes (64)
+|id=<code>minecraft:nether_brick_fence</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/nether_brick_fence_from_stonecutting_nether_bricks.json|nether_brick_fence_from_stonecutting_nether_bricks.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

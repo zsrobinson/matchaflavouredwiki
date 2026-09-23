@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Waxed Weathered Copper Bars}}
+|invimage=Waxed Weathered Copper Bars
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:waxed_weathered_copper_bars</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_weathered_copper_bars_from_stonecutting_waxed_weathered_copper.json|waxed_weathered_copper_bars_from_stonecutting_waxed_weathered_copper.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

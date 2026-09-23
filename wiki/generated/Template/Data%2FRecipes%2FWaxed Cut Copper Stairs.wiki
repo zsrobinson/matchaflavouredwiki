@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Waxed Cut Copper]]
+| {{Crafting|A1=Waxed Cut Copper|A2=Waxed Cut Copper|A3=Waxed Cut Copper|B2=Waxed Cut Copper|B3=Waxed Cut Copper|C3=Waxed Cut Copper|Output=Waxed Cut Copper Stairs,4}}
+|-
+| [[Waxed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Cut Copper Stairs]] +<br />[[Wax]]
+| {{Crafting|A1=Cut Copper Stairs|B1=Wax|Output=Waxed Cut Copper Stairs|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Waxed Block of Copper]]
+| {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Cut Copper Stairs,4}}
+|-
+| [[Waxed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Waxed Cut Copper]]
+| {{Stonecutter|Input=Waxed Cut Copper|Output=Waxed Cut Copper Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,1050 @@
+#!/usr/bin/env python3
+"""Generate data-driven wiki pages from build/data.json into wiki/generated/.
+
+Everything here is derived from the pack's source files and is regenerated on
+every build; hand-written articles transclude these pages through
+{{Infobox auto}}, {{Recipes}}, {{Uses}}, {{Sources}} and the table templates.
+
+Outputs (Template namespace unless noted):
+  Data/Infobox/<item>      infobox call with stats computed from item components
+  Data/Recipes/<item>      every recipe that produces the item, with interfaces
+  Data/Uses/<item>         every recipe/trade that consumes the item
+  Data/Sources/<item>      loot tables (chests, mobs, fishing, ...) and trades that give it
+  Data/Trades/<profession> full trade table per villager profession
+  Data/Loot/<table>        drop table for each loot table the pack defines
+  Data/Food table, Data/Renamed items, Data/Enchantments, Data/Advancements/<tab>
+  Data/Current version, Source/commit
+  Module:Inventory slot/Aliases   tag names ("Any Planks") for recipe slots
+  Main/<item>              stub article for every item that has no hand-written page
+  Main/<vanilla name>      redirect from each vanilla name to its renamed item
+"""
+import json
+import math
+import os
+import re
+import shutil
+from collections import defaultdict
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA = json.load(open(os.path.join(ROOT, 'build', 'data.json'), encoding='utf-8'))
+VSUM = json.load(open(os.path.join(ROOT, 'source', 'vanilla-summary', 'item_components', 'data.min.json')))
+GEN = os.path.join(ROOT, 'wiki', 'generated')
+HAND = os.path.join(ROOT, 'wiki', 'pages')
+IMAGES = os.path.join(ROOT, 'build', 'images')
+
+ITEMS = DATA['items']
+LANG = DATA['lang_pack']
+
+
+# ------------------------------------------------------------------ helpers
+def fname(title):
+    return title.replace('/', '%2F') + '.wiki'
+
+
+def write(ns, title, text):
+    d = os.path.join(GEN, ns)
+    os.makedirs(d, exist_ok=True)
+    with open(os.path.join(d, fname(title) if ns != 'Module' else title.replace('/', '%2F') + '.lua'), 'w',
+              encoding='utf-8') as f:
+        # Templates must not end in a newline: it would be transcluded with them.
+        f.write(text.rstrip() + ('' if ns in ('Template', 'Module') else '\n'))
+
+
+def hand_exists(ns, title):
+    return os.path.exists(os.path.join(HAND, ns, fname(title)))
+
+
+def has_icon(name):
+    return os.path.exists(os.path.join(IMAGES, safe(name) + '.png'))
+
+
+def safe(name):
+    return re.sub(r'[\\/:*?"<>|#\[\]{}]', '', name).strip()
+
+
+def glyphs(s):
+    return re.sub(r'⟦([^⟧]+)⟧', lambda m: '{{G|%s}}' % m.group(1), s)
+
+
+def esc(s):
+    return str(s).replace('|', '{{!}}')
+
+
+def ticks(t):
+    s = int(round(t / 20))
+    return '%d:%02d' % (s // 60, s % 60)
+
+
+def roman(n):
+    return {1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V', 6: 'VI', 7: 'VII', 8: 'VIII', 9: 'IX', 10: 'X'}.get(n, str(n))
+
+
+def pct(p):
+    if p >= 0.9995:
+        return '100%'
+    if p >= 0.1:
+        return '%.1f%%' % (p * 100)
+    if p >= 0.01:
+        return '%.2f%%' % (p * 100)
+    return '%.3f%%' % (p * 100)
+
+
+def title_case_effect(eid):
+    return eid.split(':')[-1].replace('_', ' ').title().replace("'S", "'s")
+
+
+EFFECT_NAMES = {'instant_health': 'Instant Health', 'instant_damage': 'Instant Damage', 'jump_boost': 'Jump Boost',
+                'fire_resistance': 'Fire Resistance', 'water_breathing': 'Water Breathing',
+                'night_vision': 'Night Vision', 'health_boost': 'Health Boost', 'slow_falling': 'Slow Falling',
+                'conduit_power': 'Conduit Power', 'dolphins_grace': "Dolphin's Grace", 'bad_omen': 'Bad Omen',
+                'hero_of_the_village': 'Hero of the Village', 'mining_fatigue': 'Mining Fatigue'}
+
+
+def effect_name(eid):
+    k = eid.split(':')[-1]
+    return EFFECT_NAMES.get(k, title_case_effect(k))
+
+
+ENCH = DATA['enchantments']
+VANILLA_ENCH_NAMES = {}
+
+
+def ench_name(eid):
+    e = ENCH.get(eid)
+    if e and e['name']:
+        n = re.sub(r'⟦[^⟧]+⟧', '', e['name']).strip()
+        return n or eid.split(':')[-1].replace('_', ' ').title()
+    return eid.split(':')[-1].replace('_', ' ').title()
+
+
+def ench_label(eid, lvl):
+    e = ENCH.get(eid)
+    name = ench_name(eid)
+    raw = e['name'] if e else name
+    if e and e.get('max_level', 1) == 1 and not eid.startswith('minecraft:'):
+        return glyphs(raw) if raw else name
+    return '%s %s' % (glyphs(raw) if raw and '⟦' in raw else name, roman(lvl) if (e and e.get('max_level', 1) > 1) or lvl > 1 else '')
+
+
+# ------------------------------------------------------------------ item stats
+def vdefaults(base_id):
+    return VSUM.get(base_id.split(':')[-1], {})
+
+
+def effective(item):
+    """Vanilla default components of the base item, overridden by the pack's components."""
+    comps = {k.split(':')[-1]: v for k, v in vdefaults(item['base_id']).items()}
+    for k, v in item['components'].items():
+        comps[k] = v
+    return comps
+
+
+def heal_from_effects(effects):
+    hp = 0
+    others = []
+    for e in effects:
+        eid = e['id'].split(':')[-1]
+        amp = e.get('amplifier', 0)
+        dur = e.get('duration', 0)
+        if eid == 'regeneration' and not e.get('show_icon', True):
+            interval = max(1, 50 >> amp)
+            hp += dur // interval
+        elif eid == 'instant_health':
+            hp += 4 << amp
+        else:
+            others.append(e)
+    return hp, others
+
+
+def consume_effects(comps):
+    out = []
+    cons = comps.get('consumable') or {}
+    for eff in cons.get('on_consume_effects', []) or []:
+        if eff.get('type', '').endswith('apply_effects'):
+            for e in eff.get('effects', []):
+                e = dict(e)
+                e['probability'] = eff.get('probability', 1)
+                out.append(e)
+    food = comps.get('food')
+    return out
+
+
+def effect_text(e):
+    s = '{{EffectLink|%s}}' % effect_name(e['id'])
+    amp = e.get('amplifier', 0)
+    if amp:
+        s += ' ' + roman(amp + 1)
+    dur = e.get('duration')
+    if dur is not None:
+        s += ' (%s)' % ('∞' if dur < 0 else ticks(dur))
+    if e.get('probability', 1) < 1:
+        s += ' — %d%% chance' % round(e['probability'] * 100)
+    return s
+
+
+def attr_sum(comps, attr, slot=None):
+    tot = 0
+    found = False
+    for m in comps.get('attribute_modifiers', []) or []:
+        if m.get('type', '').split(':')[-1] == attr and m.get('operation', 'add_value') == 'add_value':
+            if slot is None or m.get('slot') in (slot, 'any', 'hand', 'armor'):
+                tot += m.get('amount', 0)
+                found = True
+    return (tot, found)
+
+
+def fmt_num(x):
+    x = round(x, 2)
+    return str(int(x)) if x == int(x) else str(x)
+
+
+BLOCK_ITEMS = set()
+try:
+    BLOCKS = json.load(open(os.path.join(ROOT, 'source', 'vanilla-summary', 'blocks', 'data.min.json')))
+    BLOCK_ITEMS = set(BLOCKS.keys())
+except Exception:
+    BLOCKS = {}
+
+
+def item_type(item, comps):
+    if comps.get('food') or (comps.get('consumable') and consume_effects(comps) and 'death_protection' not in comps):
+        return 'Food'
+    eq = comps.get('equippable') or {}
+    if eq.get('slot') in ('head', 'chest', 'legs', 'feet') and ('armor' in json.dumps(comps.get('attribute_modifiers', [])) or 'elytra' in item['name'].lower() or eq.get('slot')):
+        return 'Armor' if 'elytra' not in item['name'].lower() else 'Equipment'
+    if comps.get('tool'):
+        return 'Tool'
+    if comps.get('weapon') or attr_sum(comps, 'attack_damage')[1]:
+        return 'Weapon'
+    if item['base_id'].split(':')[-1] in BLOCK_ITEMS:
+        return 'Block'
+    return 'Item'
+
+
+def item_link_list(ids_or_tag):
+    if isinstance(ids_or_tag, str):
+        if ids_or_tag.startswith('#'):
+            return '<code>%s</code>' % ids_or_tag
+        return link_for_id(ids_or_tag)
+    return ', '.join(link_for_id(i) for i in ids_or_tag)
+
+
+def id_name(i):
+    i = i if ':' in i else 'minecraft:' + i
+    k = i.split(':')[-1]
+    for key in ('item.minecraft.' + k, 'block.minecraft.' + k):
+        if key in LANG:
+            return re.sub('§.', '', LANG[key]).strip()
+    vl = VANILLA_LANG.get('item.minecraft.' + k) or VANILLA_LANG.get('block.minecraft.' + k)
+    return vl or k.replace('_', ' ').title()
+
+
+VANILLA_LANG = json.load(open(os.path.join(ROOT, 'source', 'vanilla-assets', 'assets', 'minecraft', 'lang', 'en_us.json')))
+
+
+def link_for_id(i):
+    return '[[%s]]' % id_name(i)
+
+
+def infobox(item):
+    c = effective(item)
+    name = item['name']
+    f = {}
+    t = item_type(item, c)
+    f['type'] = t
+    vn = item['vanilla_name']
+    if item['renamed_vanilla'] and vn != name:
+        f['vanilla'] = '{{MCW|%s}}' % vn
+    rar = c.get('rarity')
+    if rar and rar != 'common':
+        f['rarity'] = rar.title()
+    mss = c.get('max_stack_size', 64)
+    f['stackable'] = 'Yes (%d)' % mss if mss > 1 else 'No'
+    effs = consume_effects(c)
+    if effs:
+        hp, others = heal_from_effects(effs)
+        if hp:
+            f['heals'] = '{{Hp|%d}}' % hp
+        if others:
+            f['effects'] = '<br />'.join(effect_text(e) for e in others)
+        cs = (c.get('consumable') or {}).get('consume_seconds', 1.6)
+        f['eat_time'] = '%s seconds' % fmt_num(cs)
+    dp = c.get('death_protection')
+    if dp:
+        f['effects'] = (f.get('effects', '') + '<br />' if f.get('effects') else '') + "Prevents death when held, like a [[Totem of Undying]]"
+    if c.get('max_damage'):
+        f['durability'] = str(c['max_damage'])
+    dmg, has = attr_sum(c, 'attack_damage', 'mainhand')
+    if has:
+        f['damage'] = '%s ({{Hp|%s}})' % (fmt_num(1 + dmg), fmt_num(1 + dmg)) if False else '{{Hp|%s}}' % fmt_num(1 + dmg)
+    spd, has = attr_sum(c, 'attack_speed', 'mainhand')
+    if has:
+        f['attackspeed'] = fmt_num(4 + spd)
+    tool = c.get('tool')
+    if tool:
+        speeds = [r.get('speed') for r in tool.get('rules', []) if r.get('speed') and r.get('correct_for_drops') is not False]
+        if speeds:
+            f['miningspeed'] = fmt_num(max(speeds))
+    for attr, key in (('armor', 'armor'), ('armor_toughness', 'toughness'), ('knockback_resistance', 'knockbackres')):
+        v, has = attr_sum(c, attr)
+        if has and v:
+            f[key] = fmt_num(v if attr != 'knockback_resistance' else v * 10)
+    rep = c.get('repairable')
+    if rep and rep.get('items'):
+        f['repair'] = item_link_list(rep['items'])
+    ench = {}
+    for k in ('enchantments', 'stored_enchantments'):
+        v = c.get(k) or {}
+        if isinstance(v, dict) and 'levels' in v:
+            v = v['levels']
+        ench.update(v)
+    if ench and item['base_id'] != 'minecraft:enchanted_book':
+        f['intrinsics'] = '<br />'.join('[[%s]]%s' % (ench_name(e), (' ' + roman(l)) if (ENCH.get(e, {}).get('max_level') or 1) > 1 else '')
+                                        for e, l in ench.items())
+    elif ench:
+        f['effects'] = ('%s<br />' % f['effects'] if f.get('effects') else '') + 'Stores: ' + ', '.join(
+            '[[%s]]%s' % (ench_name(e), (' ' + roman(l)) if (ENCH.get(e, {}).get('max_level') or 1) > 1 else '') for e, l in ench.items())
+    lore = item['components'].get('lore')
+    if lore:
+        f['tooltip'] = '<br />'.join(glyphs(x) for x in lore if x.strip())
+    model = (item['models'] or [None])[0]
+    f['id'] = '<code>%s</code>' % (model or item['base_id'])
+    if model:
+        f['base'] = '<code>%s</code>' % item['base_id']
+    srcs = []
+    for s in item['sources']:
+        if s['src'] not in srcs and s['how'] in ('recipe', 'loot', 'trade'):
+            srcs.append(s['src'])
+    if srcs:
+        f['source'] = '{{Source|%s|%s}}' % (srcs[0], os.path.basename(srcs[0]))
+    lines = ['{{Infobox', '|title={{#if:{{{title|}}}|{{{title}}}|%s}}' % name]
+    if has_icon(item['name']):
+        lines.append('|invimage=%s' % safe(item['name']))
+    for k in ('caption', 'extrarows', 'bonus'):
+        lines.append('|%s={{{%s|}}}' % (k, k))
+    for k in ('type', 'intrinsics', 'renewable'):
+        if k in f:
+            lines.append('|%s={{#if:{{{%s|}}}|{{{%s}}}|%s}}' % (k, k, k, f.pop(k)))
+        else:
+            lines.append('|%s={{{%s|}}}' % (k, k))
+    for k, v in f.items():
+        lines.append('|%s=%s' % (k, v))
+    lines.append('}}')
+    return '<includeonly>' + '\n'.join(lines) + '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>'
+
+
+# ------------------------------------------------------------------ recipes
+ALIASES = {}
+
+
+def alias_for(tag, names):
+    pretty = tag.split(':')[-1].split('/')[-1].replace('_', ' ')
+    pretty = 'Any ' + pretty.title()
+    uniq = []
+    for n in names:
+        if n not in uniq:
+            uniq.append(n)
+    ALIASES[pretty] = uniq
+    return pretty
+
+
+def slot_text(ing):
+    if ing is None:
+        return ''
+    names = []
+    for n in ing['names']:
+        if n not in names:
+            names.append(n)
+    if ing.get('tag') and len(names) > 1:
+        return alias_for(ing['tag'], names)
+    return ';'.join(safe(n) for n in names)
+
+
+def ing_links(ing):
+    if ing is None:
+        return ''
+    if ing.get('tag') and len(set(ing['names'])) > 1:
+        return 'Any [[%s]]' % ing['tag'].split(':')[-1].split('/')[-1].replace('_', ' ')
+    names = []
+    for n in ing['names']:
+        if n not in names:
+            names.append(n)
+    return ' or '.join('[[%s]]' % n for n in names)
+
+
+def out_text(o):
+    return safe(o['name']) + (',%d' % o['count'] if o.get('count', 1) > 1 else '')
+
+
+def recipe_ui(r):
+    t = r['type'].split(':')[-1]
+    if t == 'crafting_shaped':
+        args = {}
+        pattern = r['pattern']
+        for y, row in enumerate(pattern):
+            for x, ch in enumerate(row):
+                if ch == ' ':
+                    continue
+                args['ABC'[x] + str(y + 1)] = slot_text(r['key'][ch])
+        a = '|'.join('%s=%s' % (k, v) for k, v in sorted(args.items()))
+        return '{{Crafting|%s|Output=%s}}' % (a, out_text(r['output']))
+    if t == 'crafting_shapeless':
+        slots = ['A1', 'B1', 'C1', 'A2', 'B2', 'C2', 'A3', 'B3', 'C3']
+        a = '|'.join('%s=%s' % (slots[i], slot_text(g)) for i, g in enumerate(r['ingredients'][:9]))
+        return '{{Crafting|%s|Output=%s|shapeless=1}}' % (a, out_text(r['output']))
+    if t in ('smelting', 'smoking', 'blasting', 'campfire_cooking'):
+        secs = (r.get('cookingtime') or {'smelting': 200, 'smoking': 100, 'blasting': 100, 'campfire_cooking': 600}[t]) / 20
+        note = '%s s' % fmt_num(secs)
+        if r.get('experience'):
+            note += ', %s XP' % fmt_num(r['experience'])
+        return '{{Cooking|station=%s|Input=%s|Output=%s|note=%s}}' % (
+            r['station'], slot_text(r['input']), out_text(r['output']), note)
+    if t == 'stonecutting':
+        return '{{Stonecutter|Input=%s|Output=%s}}' % (slot_text(r['input']), out_text(r['output']))
+    if t == 'smithing_transform':
+        return '{{Smithing|Template=%s|Base=%s|Addition=%s|Output=%s}}' % (
+            slot_text(r.get('template')), slot_text(r['base']), slot_text(r['addition']), out_text(r['output']))
+    return ''
+
+
+def recipe_ingredients(r):
+    t = r['type'].split(':')[-1]
+    counts = []
+    if t == 'crafting_shaped':
+        tally = defaultdict(int)
+        order = []
+        for row in r['pattern']:
+            for ch in row:
+                if ch != ' ':
+                    if ch not in order:
+                        order.append(ch)
+                    tally[ch] += 1
+        for ch in order:
+            counts.append((ing_links(r['key'][ch]), tally[ch]))
+    elif t == 'crafting_shapeless':
+        tally = defaultdict(int)
+        order = []
+        for g in r['ingredients']:
+            k = ing_links(g)
+            if k not in order:
+                order.append(k)
+            tally[k] += 1
+        counts = [(k, tally[k]) for k in order]
+    elif t in ('smelting', 'smoking', 'blasting', 'campfire_cooking', 'stonecutting'):
+        counts = [(ing_links(r['input']), 1)]
+    elif t == 'smithing_transform':
+        for k in ('template', 'base', 'addition'):
+            if r.get(k):
+                counts.append((ing_links(r[k]), 1))
+    return ' +<br />'.join(('%d × %s' % (n, s)) if n > 1 else s for s, n in counts)
+
+
+def all_ingredient_names(r):
+    t = r['type'].split(':')[-1]
+    ings = []
+    if t == 'crafting_shaped':
+        ings = [r['key'][ch] for row in r['pattern'] for ch in row if ch != ' ']
+    elif t == 'crafting_shapeless':
+        ings = r['ingredients']
+    elif t in ('smelting', 'smoking', 'blasting', 'campfire_cooking', 'stonecutting'):
+        ings = [r['input']]
+    elif t == 'smithing_transform':
+        ings = [r.get('template'), r['base'], r['addition']]
+    names = set()
+    for g in ings:
+        if g:
+            names.update(g['names'])
+    return names
+
+
+def recipe_table(recipes, first_col):
+    if not recipes:
+        return ''
+    rows = []
+    for r in recipes:
+        origin = '' if r['origin'] == 'pack' else ' <small>(vanilla recipe)</small>'
+        src = r['src'] if r['origin'] == 'pack' else None
+        cite = ('<br /><small>{{Source|%s|%s}}</small>' % (src, r['id'])) if src else ''
+        first = first_col(r)
+        rows.append('|-\n| %s%s\n| %s\n| %s%s' % (first, origin, recipe_ingredients(r), recipe_ui(r), cite))
+    collapsible = ' mw-collapsible' if len(recipes) > 12 else ''
+    head = '{| class="wikitable recipe-table%s"\n! %s !! Ingredients !! Recipe' % (collapsible, 'Name')
+    return head + '\n' + '\n'.join(rows) + '\n|}'
+
+
+def station_heading(r):
+    return {'Crafting Table': 'Crafting', 'Oven': 'Cooking', 'Mud Kiln': 'Cooking', 'Blast Furnace': 'Blasting',
+            'Kindling': 'Cooking', 'Stonecutter': 'Stonecutting', 'Smithing Table': 'Smithing'}.get(r['station'], r['station'])
+
+
+ALL_RECIPES = DATA['recipes']
+VANILLA_KEPT = DATA['vanilla_recipes_kept']
+PACK_OUTPUT_IDS = set(r['output']['id'] for r in ALL_RECIPES)
+
+
+def producing(name):
+    rs = [r for r in ALL_RECIPES if r['output']['name'] == name]
+    vs = [r for r in VANILLA_KEPT if r['output']['name'] == name]
+    return rs + vs
+
+
+USES = defaultdict(list)
+for r in ALL_RECIPES + VANILLA_KEPT:
+    for n in all_ingredient_names(r):
+        USES[n].append(r)
+
+
+def recipes_page(name):
+    rs = producing(name)
+    if not rs:
+        return None
+    groups = defaultdict(list)
+    for r in rs:
+        groups[station_heading(r)].append(r)
+    parts = []
+    for g in ('Crafting', 'Cooking', 'Blasting', 'Smithing', 'Stonecutting'):
+        if g in groups:
+            if len(groups) > 1:
+                parts.append("'''%s'''" % g)
+            parts.append(recipe_table(groups[g], lambda r: '[[%s]]' % r['output']['name']))
+    return '<includeonly>' + '\n'.join(parts) + '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>'
+
+
+# ------------------------------------------------------------------ loot
+LOOT = DATA['loot']
+
+
+def count_range(c):
+    if c is None:
+        return (1, 1)
+    if isinstance(c, (int, float)):
+        return (c, c)
+    if isinstance(c, dict):
+        t = c.get('type', '').split(':')[-1]
+        if t == 'uniform' or ('min' in c and 'max' in c):
+            lo = c.get('min', 1)
+            hi = c.get('max', 1)
+            lo = lo if isinstance(lo, (int, float)) else 1
+            hi = hi if isinstance(hi, (int, float)) else 1
+            return (lo, hi)
+        if t == 'constant':
+            return (c.get('value', 1), c.get('value', 1))
+        if t == 'binomial':
+            return (0, c.get('n', 1))
+    return (1, 1)
+
+
+def rolls_avg(r):
+    lo, hi = count_range(r)
+    return (lo + hi) / 2, lo, hi
+
+
+def cond_notes(conds):
+    notes = []
+    mult = 1.0
+    for c in conds or []:
+        t = c.get('condition', '').split(':')[-1]
+        if t == 'killed_by_player':
+            notes.append('player kill')
+        elif t == 'random_chance':
+            ch = c.get('chance', 1)
+            if isinstance(ch, (int, float)):
+                mult *= ch
+            else:
+                notes.append('random chance')
+        elif t == 'random_chance_with_enchanted_bonus':
+            ch = c.get('unenchanted_chance', 1)
+            if isinstance(ch, (int, float)):
+                mult *= ch
+            notes.append('Looting increases chance')
+        elif t == 'location_check':
+            b = (c.get('predicate') or {}).get('biomes') or (c.get('predicate') or {}).get('biome')
+            if b:
+                notes.append('biome: %s' % (b if isinstance(b, str) else ', '.join(b)))
+            else:
+                notes.append('location')
+        elif t == 'entity_properties':
+            pred = c.get('predicate') or {}
+            et = pred.get('entity_tags')
+            if et and et.get('none_of') == ['NoDrops'] and len(pred) == 1:
+                continue
+            if 'flags' in pred and pred['flags'].get('is_baby'):
+                notes.append('baby')
+            elif 'type_specific' in json.dumps(pred) and 'in_open_water' in json.dumps(pred):
+                notes.append('open water')
+            else:
+                notes.append('entity condition')
+        elif t == 'match_tool':
+            p = c.get('predicate') or {}
+            if 'enchantments' in json.dumps(p) and 'silk_touch' in json.dumps(p):
+                notes.append('Silk Touch')
+            elif 'items' in p:
+                it = p['items']
+                notes.append('tool: %s' % (id_name(it) if isinstance(it, str) and not it.startswith('#') else it))
+            else:
+                notes.append('specific tool')
+        elif t == 'inverted':
+            inner = cond_notes([c.get('term')])[1]
+            if inner:
+                notes.append('not ' + inner[0])
+        elif t == 'survives_explosion':
+            continue
+        elif t == 'table_bonus':
+            notes.append('Fortune affects chance')
+        elif t in ('any_of', 'all_of', 'alternative'):
+            m2, n2 = cond_notes(c.get('terms'))
+            notes += n2
+        elif t == 'reference':
+            notes.append('predicate %s' % c.get('name'))
+        elif t == 'weather_check':
+            notes.append('weather')
+        elif t == 'time_check':
+            notes.append('time of day')
+        elif t == 'value_check':
+            notes.append('scoreboard/value check')
+        elif t == 'entity_scores':
+            notes.append('score check')
+        elif t == 'damage_source_properties':
+            notes.append('damage source')
+        elif t == 'enchantment_active_check':
+            notes.append('enchantment active')
+        else:
+            notes.append(t.replace('_', ' '))
+    return mult, notes
+
+
+def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
+    """Yield (item, per-roll prob of this entry in context, count range, notes, rolls) for a table."""
+    t = LOOT.get(table_id)
+    out = []
+    if not t or depth > 6 or table_id in seen:
+        return out
+    pools = defaultdict(list)
+    for e in t['entries']:
+        pools[e['pool']].append(e)
+    for pi, ents in pools.items():
+        e0 = ents[0]
+        pmult, pnotes = cond_notes(e0.get('pool_conditions'))
+        # Entries gated by a location (biome) check are mutually exclusive: only one applies
+        # at a time, so each is weighed against the unconditioned entries alone.
+        def is_loc(e):
+            return any((c.get('condition', '').split(':')[-1] == 'location_check') for c in (e.get('conditions') or []))
+        uncond = sum(e['weight'] for e in ents if not is_loc(e))
+        locw = [e['weight'] for e in ents if is_loc(e)]
+        ravg, rlo, rhi = rolls_avg(e0['rolls'])
+        for e in ents:
+            emult, enotes = cond_notes(e.get('conditions'))
+            total = (uncond + e['weight']) if is_loc(e) else (uncond + (max(locw) if locw else 0))
+            p = e['weight'] / (total or 1) * emult * pmult
+            if e.get('empty'):
+                continue
+            n = list(notes) + pnotes + enotes
+            if 'loot_table' in e:
+                sub = e['loot_table']
+                if isinstance(sub, dict):
+                    continue
+                for (it, p2, cnt, n2, r2, tid) in flatten(sub, 1.0, (), depth + 1, seen + (table_id,)):
+                    # nested table: chance per roll of this entry times the nested chance (per nested roll)
+                    out.append((it, p * p2 * prob, cnt, n + n2, (rlo, rhi), table_id))
+            elif 'item' in e and e['item']:
+                out.append((e['item'], p * prob, count_range(e.get('count')), n, (rlo, rhi), table_id))
+    return out
+
+
+def chance_at_least_one(p, rolls):
+    lo, hi = rolls
+    lo, hi = int(lo), int(hi)
+    if hi < lo:
+        hi = lo
+    vals = [1 - (1 - min(p, 1)) ** n for n in range(lo, hi + 1)]
+    return sum(vals) / len(vals)
+
+
+def loot_category(lid):
+    ns, p = lid.split(':')
+    if p.startswith('chests/'):
+        return 'Chest loot'
+    if p.startswith('entities/'):
+        return 'Mob drops'
+    if p.startswith('gameplay/fishing'):
+        return 'Fishing'
+    if p.startswith('archaeology/'):
+        return 'Archaeology'
+    if p.startswith('blocks/'):
+        return 'Block drops'
+    if p.startswith('gameplay/'):
+        return 'Gameplay'
+    if p.startswith('shearing/'):
+        return 'Shearing'
+    if p.startswith('spawners/') or p.startswith('dispensers/') or p.startswith('pots/') or p.startswith('equipment/'):
+        return 'Structures'
+    if p.startswith('harvest/'):
+        return 'Harvesting'
+    return None  # matcha:* item definition tables and similar
+
+
+def loot_label(lid):
+    ns, p = lid.split(':')
+    base = p.split('/', 1)[-1]
+    return base.replace('/', ' / ').replace('_', ' ')
+
+
+def loot_table_page(lid):
+    rows = flatten(lid)
+    if not rows:
+        return None
+    agg = {}
+    for it, p, cnt, notes, rolls, src in rows:
+        key = (it, cnt, tuple(notes))
+        if key in agg:
+            agg[key][0] += p
+        else:
+            agg[key] = [p, rolls]
+    lines = ['{| class="wikitable sortable loot-table"', '! Item !! Stack size !! Chance per roll !! Chance per table !! Notes']
+    for (it, cnt, notes), (p, rolls) in sorted(agg.items(), key=lambda kv: -kv[1][0]):
+        c = ('%s–%s' % (fmt_num(cnt[0]), fmt_num(cnt[1]))) if cnt[0] != cnt[1] else fmt_num(cnt[0])
+        lines.append('|-\n| {{ItemLink|%s}} || %s || %s || %s || %s' % (
+            safe(it), c, pct(p), pct(chance_at_least_one(p, rolls)), ', '.join(dict.fromkeys(notes))))
+    lines.append('|}')
+    t = LOOT[lid]
+    rl = set()
+    for e in t['entries']:
+        lo, hi = count_range(e['rolls'])
+        rl.add((lo, hi))
+    rolls_txt = '; '.join(('%s–%s' % (fmt_num(a), fmt_num(b))) if a != b else fmt_num(a) for a, b in sorted(rl))
+    head = "<small>Loot table <code>%s</code> ({{Source|%s|source}}); pools roll %s time(s).%s</small>\n" % (
+        lid, t['src'], rolls_txt, ' Overrides the vanilla table.' if t.get('overrides_vanilla') else '')
+    return '<includeonly>' + head + '\n'.join(lines) + '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>'
+
+
+REFERENCED = set()  # tables rolled by another table of the same category (e.g. fishing -> fishing/treasure)
+for _lid, _t in LOOT.items():
+    for _e in _t['entries']:
+        _sub = _e.get('loot_table')
+        if isinstance(_sub, str) and _sub in LOOT and loot_category(_sub) == loot_category(_lid):
+            REFERENCED.add(_sub)
+SOURCES = defaultdict(list)  # item -> [(category, label, lid, p, cnt, notes, rolls)]
+for lid in LOOT:
+    cat = loot_category(lid)
+    if not cat or lid in REFERENCED:
+        continue  # sub-tables are counted through the table that rolls them
+    for it, p, cnt, notes, rolls, src in flatten(lid):
+        SOURCES[it].append((cat, loot_label(lid), lid, p, cnt, notes, rolls))
+
+
+# ------------------------------------------------------------------ trades
+TRADES = DATA['trades']
+PROF = DATA['professions']
+
+
+def stack_cell(s):
+    if not s:
+        return ''
+    ench = ''
+    if s.get('enchantments'):
+        ench = '<br /><small>%s</small>' % ', '.join('%s %s' % (ench_name(e), roman(l) if (ENCH.get(e, {}).get('max_level') or 1) > 1 else '')
+                                                     for e, l in s['enchantments'].items())
+    return '%s{{ItemLink|%s}}%s' % ('%d × ' % s['count'] if s.get('count', 1) > 1 else '', safe(s['name']), ench)
+
+
+def trades_page(prof):
+    levels = TRADES[prof]
+    names = {'level_1': 'Novice', 'level_2': 'Apprentice', 'level_3': 'Journeyman', 'level_4': 'Expert', 'level_5': 'Master'}
+    lines = ['{| class="wikitable"', '! Level !! Villager wants !! Villager gives !! Uses !! Villager XP']
+    for lk in sorted(k for k in levels if not k.endswith('_meta')):
+        ts = levels[lk]
+        meta = levels.get(lk + '_meta', {})
+        amt = meta.get('amount')
+        first = True
+        for t in ts:
+            want = stack_cell(t['wants'])
+            if t.get('additional_wants'):
+                want += ' +<br />' + stack_cell(t['additional_wants'])
+            lvl = ''
+            if first:
+                lvl = '! rowspan="%d" | %s%s\n' % (len(ts), names.get(lk, lk), ('<br /><small>%s of %d offered</small>' % (fmt_num(amt), len(ts))) if amt and amt < len(ts) else '')
+                first = False
+            uses = t.get('max_uses')
+            lines.append('|-\n%s| %s || %s || %s || %s' % (lvl, want, stack_cell(t['gives']),
+                                                           '∞' if uses and uses >= 999 else (uses or ''), t.get('xp') or ''))
+    lines.append('|}')
+    return '<includeonly>' + '\n'.join(lines) + '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>'
+
+
+TRADE_GIVES = defaultdict(list)
+TRADE_WANTS = defaultdict(list)
+for prof, levels in TRADES.items():
+    for lk, ts in levels.items():
+        if lk.endswith('_meta'):
+            continue
+        for t in ts:
+            if t['gives']:
+                TRADE_GIVES[t['gives']['name']].append((prof, lk, t))
+            for k in ('wants', 'additional_wants'):
+                if t.get(k):
+                    TRADE_WANTS[t[k]['name']].append((prof, lk, t))
+
+LEVEL_NAMES = {'level_1': 'Novice', 'level_2': 'Apprentice', 'level_3': 'Journeyman', 'level_4': 'Expert', 'level_5': 'Master'}
+
+
+def prof_link(prof):
+    n = PROF.get(prof, prof)
+    return '[[%s]]' % n if prof != 'wandering_trader' else '[[Wandering Trader]]'
+
+
+def sources_page(name):
+    parts = []
+    srcs = SOURCES.get(name, [])
+    if srcs:
+        by_cat = defaultdict(list)
+        for s in srcs:
+            by_cat[s[0]].append(s)
+        for cat in ('Chest loot', 'Mob drops', 'Fishing', 'Archaeology', 'Structures', 'Gameplay', 'Shearing', 'Harvesting', 'Block drops'):
+            if cat not in by_cat:
+                continue
+            parts.append("\n'''%s'''" % cat)
+            parts.append('{| class="wikitable sortable loot-table"\n! Source !! Stack size !! Chance !! Notes')
+            agg = {}
+            for _, label, lid, p, cnt, notes, rolls in by_cat[cat]:
+                k = (label, lid, cnt, tuple(notes))
+                agg.setdefault(k, [0, rolls])
+                agg[k][0] += p
+            for (label, lid, cnt, notes), (p, rolls) in sorted(agg.items(), key=lambda kv: kv[0][0]):
+                c = ('%s–%s' % (fmt_num(cnt[0]), fmt_num(cnt[1]))) if cnt[0] != cnt[1] else fmt_num(cnt[0])
+                parts.append('|-\n| %s <small>({{Source|%s|%s}})</small> || %s || %s || %s' % (
+                    label.capitalize(), LOOT[lid]['src'], lid.split(':')[-1], c, pct(chance_at_least_one(p, rolls)),
+                    ', '.join(dict.fromkeys(notes))))
+            parts.append('|}')
+    tg = TRADE_GIVES.get(name, [])
+    if tg:
+        parts.append("\n'''Trading'''")
+        parts.append('{| class="wikitable"\n! Villager !! Level !! Price !! Quantity')
+        for prof, lk, t in tg:
+            price = stack_cell(t['wants']) + ((' + ' + stack_cell(t['additional_wants'])) if t.get('additional_wants') else '')
+            parts.append('|-\n| %s || %s || %s || %d' % (prof_link(prof), LEVEL_NAMES.get(lk, '—'), price, t['gives'].get('count', 1)))
+        parts.append('|}')
+    if not parts:
+        return None
+    return ('<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, '
+            'assuming no Looting, Luck or Fortune.</small>\n\n' + '\n'.join(parts) +
+            '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>')
+
+
+def uses_page(name):
+    parts = []
+    rs = [r for r in USES.get(name, []) if r['output']['name'] != name or True]
+    if rs:
+        parts.append(recipe_table(rs, lambda r: '[[%s]]' % r['output']['name']))
+    tw = TRADE_WANTS.get(name, [])
+    if tw:
+        parts.append("\n'''Trading'''")
+        parts.append('{| class="wikitable"\n! Villager !! Level !! Wants !! Gives')
+        for prof, lk, t in tw:
+            want = stack_cell(t['wants']) + ((' + ' + stack_cell(t['additional_wants'])) if t.get('additional_wants') else '')
+            parts.append('|-\n| %s || %s || %s || %s' % (prof_link(prof), LEVEL_NAMES.get(lk, '—'), want, stack_cell(t['gives'])))
+        parts.append('|}')
+    if not parts:
+        return None
+    return '<includeonly>' + '\n'.join(parts) + '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>'
+
+
+# ------------------------------------------------------------------ tables
+def food_table():
+    rows = []
+    for name, it in sorted(ITEMS.items()):
+        c = effective(it)
+        if not c.get('food') and not (c.get('consumable') and consume_effects(c)):
+            continue
+        if item_type(it, c) != 'Food':
+            continue
+        effs = consume_effects(c)
+        hp, others = heal_from_effects(effs)
+        station = ', '.join(sorted(set(r['station'] for r in producing(name)))) or '—'
+        rows.append('|-\n| {{ItemLink|%s}} || data-sort-value="%d" | %s || %s || %s || %s' % (
+            safe(name), hp, '{{Hp|%d}}' % hp if hp else '—', '<br />'.join(effect_text(e) for e in others) or '—',
+            fmt_num((c.get('consumable') or {}).get('consume_seconds', 1.6)), station))
+    return ('<includeonly>{| class="wikitable sortable"\n! Food !! Heals !! Effects !! Eating time (s) !! Made with\n' +
+            '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+
+
+def renamed_table():
+    rows = []
+    seen = set()
+    for k, v in sorted(DATA['renames'].items(), key=lambda kv: kv[1]['vanilla'] or ''):
+        if not (k.startswith('item.minecraft.') or k.startswith('block.minecraft.') or k.startswith('entity.minecraft.')):
+            continue
+        van, pk = v['vanilla'], v['pack']
+        if not pk or (van, pk) in seen or not van:
+            continue
+        seen.add((van, pk))
+        kind = k.split('.')[0].replace('entity', 'villager profession')
+        icon = '{{ItemLink|%s}}' % safe(pk) if has_icon(pk) else '[[%s]]' % pk
+        rows.append('|-\n| %s || {{MCW|%s}} || <code>%s</code> || %s' % (icon, van, k.split('.', 2)[-1], kind))
+    return ('<includeonly>{| class="wikitable sortable"\n! Matcha Flavoured name !! Vanilla name !! ID !! Kind\n' +
+            '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+
+
+def enchantment_table():
+    rows = []
+    for eid, e in sorted(ENCH.items(), key=lambda kv: ench_name(kv[0])):
+        d = e['data']
+        van = e.get('vanilla')
+        changed = []
+        if van:
+            for k in ('max_level', 'weight', 'anvil_cost', 'supported_items', 'primary_items', 'exclusive_set', 'slots', 'effects', 'min_cost', 'max_cost'):
+                if json.dumps(van.get(k), sort_keys=True) != json.dumps(d.get(k), sort_keys=True):
+                    changed.append(k.replace('_', ' '))
+        items = d.get('supported_items')
+        items_t = ('<code>%s</code>' % items) if isinstance(items, str) else ('%d items' % len(items) if items else '—')
+        rows.append('|-\n| [[%s]] || <code>%s</code> || %s || %s || %s || %s' % (
+            ench_name(eid), eid, d.get('max_level'), ', '.join(d.get('slots', [])), items_t,
+            ('Changed: ' + ', '.join(changed)) if changed else ('Unchanged' if van else "'''New'''")))
+    return ('<includeonly>{| class="wikitable sortable"\n! Enchantment !! ID !! Max level !! Slots !! Applies to !! Compared with vanilla\n' +
+            '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+
+
+ADV = DATA['advancements']
+
+
+def adv_tab(aid):
+    ns, p = aid.split(':')
+    return p.split('/')[0]
+
+
+def advancement_tables():
+    tabs = defaultdict(list)
+    for aid, a in ADV.items():
+        if 'title' not in a:
+            continue
+        tabs[adv_tab(aid)].append(a)
+    pages = {}
+    for tab, advs in tabs.items():
+        byid = {a['id']: a for a in advs}
+
+        def depth(a, d=0):
+            p = a.get('parent')
+            return depth(byid[p], d + 1) if p in byid and d < 50 else d
+        rows = []
+        for a in sorted(advs, key=lambda a: (depth(a), a['title'])):
+            icon = a.get('icon') or {}
+            iname = safe(icon.get('name', '')) if icon else ''
+            parent = ADV.get(a.get('parent') or '', {}).get('title', '')
+            frame = a.get('frame', 'task')
+            rw = a.get('rewards') or {}
+            rtxt = []
+            if rw.get('loot'):
+                rtxt.append(', '.join('<code>%s</code>' % l for l in rw['loot']))
+            if rw.get('experience'):
+                rtxt.append('%d XP' % rw['experience'])
+            if rw.get('recipes'):
+                rtxt.append('%d recipe(s)' % len(rw['recipes']))
+            if rw.get('function'):
+                rtxt.append('runs <code>%s</code>' % rw['function'])
+            rows.append('|-\n| %s || %s || %s || %s || %s || %s || %s' % (
+                ('{{Slot|%s|link=none}}' % iname) if iname and has_icon(icon.get('name', '')) else '',
+                "'''%s'''" % esc(a['title']), esc(a['description']), esc(parent), frame.title(),
+                'Yes' if a.get('hidden') else '', '; '.join(rtxt)))
+        pages[tab] = ('<includeonly>{| class="wikitable sortable"\n! Icon !! Advancement !! Description !! Parent !! Frame !! Hidden !! Reward\n' +
+                      '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+    return pages
+
+
+# ------------------------------------------------------------------ stubs & redirects
+def is_pack_relevant(name, item):
+    comps = item['components']
+    if not item['renamed_vanilla']:
+        return True  # custom item defined by the pack
+    if item['vanilla_name'] != name:
+        return True  # renamed vanilla item
+    if any(r['origin'] == 'pack' for r in producing(name)):
+        return True
+    if TRADE_GIVES.get(name):
+        return True
+    return False
+
+
+def stub_article(name, item):
+    c = effective(item)
+    t = item_type(item, c)
+    article = 'an' if t[0] in 'AEIOU' else 'a'
+    lead = "'''%s''' is %s [[%s|%s]] added by [[Matcha Flavoured]]." % (name, article, {
+        'Food': 'Food', 'Armor': 'Armor', 'Tool': 'Tools', 'Weapon': 'Weapons', 'Block': 'Blocks', 'Equipment': 'Equipment', 'Item': 'Items'}[t], t.lower())
+    hat = ''
+    if item['renamed_vanilla'] and item['vanilla_name'] != name:
+        lead = "'''%s''' is %s %s. It is the vanilla %s, renamed by [[Matcha Flavoured]]." % (
+            name, article, t.lower(), '{{MCW|%s}}' % item['vanilla_name'])
+        hat = '{{Vanilla|%s}}\n' % item['vanilla_name']
+    elif item['renamed_vanilla']:
+        lead = "'''%s''' is a vanilla %s whose recipes or sources are changed by [[Matcha Flavoured]]." % (name, t.lower())
+        hat = '{{Vanilla}}\n'
+    body = [hat + '{{Stub}}\n{{Infobox auto}}', lead, '']
+    if producing(name) or SOURCES.get(name) or TRADE_GIVES.get(name):
+        body.append('== Obtaining ==')
+        if producing(name):
+            body.append('{{Recipes}}')
+        if SOURCES.get(name) or TRADE_GIVES.get(name):
+            body.append('{{Sources}}')
+        body.append('')
+    if USES.get(name) or TRADE_WANTS.get(name):
+        body.append('== Usage ==\n{{Uses}}\n')
+    cat = {'Food': 'Food', 'Armor': 'Armor', 'Tool': 'Tools', 'Weapon': 'Weapons', 'Block': 'Blocks', 'Equipment': 'Equipment', 'Item': 'Items'}[t]
+    body.append('[[Category:%s]]' % cat)
+    if item['renamed_vanilla'] and item['vanilla_name'] != name:
+        body.append('[[Category:Renamed items]]')
+    return '\n'.join(body)
+
+
+# ------------------------------------------------------------------ main
+def main():
+    if os.path.isdir(GEN):
+        shutil.rmtree(GEN)
+    os.makedirs(GEN)
+    n = defaultdict(int)
+    for name, item in ITEMS.items():
+        title = safe(name)
+        if not title or title.startswith('item.kleispack') or title.startswith('adv.'):
+            continue
+        write('Template', 'Data/Infobox/' + title, infobox(item)); n['infobox'] += 1
+        p = recipes_page(name)
+        if p:
+            write('Template', 'Data/Recipes/' + title, p); n['recipes'] += 1
+        p = uses_page(name)
+        if p:
+            write('Template', 'Data/Uses/' + title, p); n['uses'] += 1
+        p = sources_page(name)
+        if p:
+            write('Template', 'Data/Sources/' + title, p); n['sources'] += 1
+        if is_pack_relevant(name, item) and not hand_exists('Main', title):
+            write('Main', title, stub_article(name, item)); n['stubs'] += 1
+    # redirects: vanilla name -> renamed item
+    for name, item in ITEMS.items():
+        vn = item['vanilla_name']
+        if item['renamed_vanilla'] and vn != name and safe(vn) and not hand_exists('Main', safe(vn)) and safe(vn) not in ITEMS:
+            write('Main', safe(vn), '#REDIRECT [[%s]]\n[[Category:Redirects from vanilla names]]' % safe(name)); n['redirects'] += 1
+    for prof in TRADES:
+        write('Template', 'Data/Trades/' + PROF.get(prof, prof.replace('_', ' ').title()), trades_page(prof)); n['trades'] += 1
+    for lid in LOOT:
+        if loot_category(lid):
+            p = loot_table_page(lid)
+            if p:
+                write('Template', 'Data/Loot/' + lid.replace(':', '/'), p); n['loot'] += 1
+    write('Template', 'Data/Food table', food_table())
+    write('Template', 'Data/Renamed items', renamed_table())
+    write('Template', 'Data/Enchantments', enchantment_table())
+    for tab, page in advancement_tables().items():
+        write('Template', 'Data/Advancements/' + tab, page); n['advancement tabs'] += 1
+    m = DATA['meta']
+    ver = re.search(r'(\d+(?:\.\d+)+)', m['pack_description'].replace('Matcha Flavoured DP', ''))
+    write('Template', 'Data/Current version', '<includeonly>%s</includeonly><noinclude>Pack version in <code>pack.mcmeta</code> at the synced commit. Generated.</noinclude>' % (ver.group(1) if ver else '?'))
+    write('Template', 'Source/commit', '<includeonly>%s</includeonly><noinclude>Commit of kleiwright/matcha-flavoured this wiki was generated from (%s). Generated.</noinclude>' % (m['git_head'], m['git_date']))
+    # aliases module: static + tag aliases collected while rendering recipes
+    lua = ['-- Generated by tools/generate.py from item tags used in the pack\'s recipes. Do not edit.', 'local aliases = {']
+    for k in sorted(ALIASES):
+        lua.append('\t[%s] = { %s },' % (json.dumps(k), ', '.join(json.dumps(safe(x)) for x in ALIASES[k])))
+    lua.append('}\nreturn aliases')
+    write('Module', 'Inventory slot/Aliases', '\n'.join(lua))
+    print(dict(n))
+
+
+if __name__ == '__main__':
+    main()

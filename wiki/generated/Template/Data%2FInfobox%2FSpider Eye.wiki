@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Spider Eye}}
+|invimage=Spider Eye
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|effects={{EffectLink|Poison}} (0:05)
+|eat_time=1.6 seconds
+|id=<code>minecraft:spider_eye</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|village_fisher.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

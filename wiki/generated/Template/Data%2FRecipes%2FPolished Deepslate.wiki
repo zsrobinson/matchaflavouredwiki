@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Polished Deepslate]]
+| 2 × [[Polished Deepslate Slab]]
+| {{Crafting|A1=Polished Deepslate Slab|B1=Polished Deepslate Slab|Output=Polished Deepslate|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/polished_deepslate_from_polished_deepslate_slab.json|matcha:crafting/polished_deepslate_from_polished_deepslate_slab}}</small>
+|-
+| [[Polished Deepslate]] <small>(vanilla recipe)</small>
+| 4 × [[Cobbled Deepslate]]
+| {{Crafting|A1=Cobbled Deepslate|A2=Cobbled Deepslate|B1=Cobbled Deepslate|B2=Cobbled Deepslate|Output=Polished Deepslate,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Polished Deepslate]] <small>(vanilla recipe)</small>
+| [[Cobbled Deepslate]]
+| {{Stonecutter|Input=Cobbled Deepslate|Output=Polished Deepslate}}
+|-
+| [[Polished Deepslate]] <small>(vanilla recipe)</small>
+| [[Deepslate]]
+| {{Stonecutter|Input=Deepslate|Output=Polished Deepslate}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

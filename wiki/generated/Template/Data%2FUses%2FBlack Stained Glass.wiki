@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Black Stained Glass Pane]]
+| [[Black Stained Glass]]
+| {{Stonecutter|Input=Black Stained Glass|Output=Black Stained Glass Pane,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/black_stained_glass_pane.json|matcha:stonecutting/black_stained_glass_pane}}</small>
+|-
+| [[Black Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 6 × [[Black Stained Glass]]
+| {{Crafting|A1=Black Stained Glass|A2=Black Stained Glass|B1=Black Stained Glass|B2=Black Stained Glass|C1=Black Stained Glass|C2=Black Stained Glass|Output=Black Stained Glass Pane,16}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

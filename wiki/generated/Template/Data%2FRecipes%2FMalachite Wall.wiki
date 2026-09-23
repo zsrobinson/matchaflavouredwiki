@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Malachite Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Malachite]]
+| {{Crafting|A1=Malachite|A2=Malachite|B1=Malachite|B2=Malachite|C1=Malachite|C2=Malachite|Output=Malachite Wall,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Malachite Wall]] <small>(vanilla recipe)</small>
+| [[Malachite]]
+| {{Stonecutter|Input=Malachite|Output=Malachite Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

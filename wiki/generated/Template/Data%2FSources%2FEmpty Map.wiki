@@ -1,0 +1,59 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Shipwreck map <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_map.json|chests/shipwreck_map}})</small> || 1 || 7.89% || 
+|-
+| Stronghold library <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_library.json|chests/stronghold_library}})</small> || 1 || 10.9% || 
+|-
+| Village / village cartographer <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_cartographer.json|chests/village/village_cartographer}})</small> || 1–3 || 55.2% || 
+|}
+
+'''Trading'''
+{| class="wikitable"
+! Villager !! Level !! Price !! Quantity
+|-
+| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || 1
+|-
+| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || 1
+|-
+| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || 1
+|-
+| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || 1
+|-
+| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || 1
+|-
+| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || 1
+|-
+| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || 1
+|-
+| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || 1
+|-
+| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || 1
+|-
+| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || 1
+|-
+| [[Archaeologist]] || Journeyman || {{ItemLink|Paradise Lost}} || 1
+|-
+| [[Archaeologist]] || Journeyman || {{ItemLink|The Divine Comedy}} || 1
+|-
+| [[Archaeologist]] || Expert || {{ItemLink|Obol}} || 1
+|-
+| [[Archaeologist]] || Master || {{ItemLink|Obol}} || 1
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Obol}} || 1
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Obol}} || 1
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Obol}} || 1
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Obol}} || 1
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Obol}} || 1
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Obol}} || 1
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

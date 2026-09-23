@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Tinted Glass]]
+| 4 × [[Glass]] +<br />[[Amethyst Shard]]
+| {{Crafting|A2=Glass|B1=Glass|B2=Amethyst Shard|B3=Glass|C2=Glass|Output=Tinted Glass,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/tinted_glass.json|matcha:crafting/tinted_glass}}</small>
+|}
+'''Cooking'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Tinted Glass]]
+| [[Amethyst Shard]]
+| {{Cooking|station=Mud Kiln|Input=Amethyst Shard|Output=Tinted Glass|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/tinted_glass_from_smoking_amethyst.json|matcha:kiln/tinted_glass_from_smoking_amethyst}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

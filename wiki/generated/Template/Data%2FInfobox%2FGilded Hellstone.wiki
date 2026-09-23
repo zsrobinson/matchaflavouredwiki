@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Gilded Hellstone}}
+|invimage=Gilded Hellstone
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Nether Gold Ore}}
+|stackable=Yes (64)
+|id=<code>minecraft:nether_gold_ore</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/blocks/nether_gold_ore.json|nether_gold_ore.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

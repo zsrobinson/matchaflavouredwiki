@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Crying Obsidian]]
+| 4 × [[Amethyst Shard]] +<br />[[Obsidian]]
+| {{Crafting|A2=Amethyst Shard|B1=Amethyst Shard|B2=Obsidian|B3=Amethyst Shard|C2=Amethyst Shard|Output=Crying Obsidian,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/crying_obsidian.json|matcha:crafting/crying_obsidian}}</small>
+|-
+| [[Ender Chest]]
+| 8 × [[Obsidian]] +<br />[[Stable Void]]
+| {{Crafting|A1=Obsidian|A2=Obsidian|A3=Obsidian|B1=Obsidian|B2=Stable Void|B3=Obsidian|C1=Obsidian|C2=Obsidian|C3=Obsidian|Output=Ender Chest}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ender_chest.json|matcha:crafting/ender_chest}}</small>
+|-
+| [[Beacon]] <small>(vanilla recipe)</small>
+| 5 × [[Glass]] +<br />[[Divine Favor]] +<br />3 × [[Obsidian]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Obsidian|B1=Glass|B2=Divine Favor|B3=Obsidian|C1=Glass|C2=Glass|C3=Obsidian|Output=Beacon}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Electrum Mattock}}
+|invimage=Electrum Mattock
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Electrum Tool]] II<br />[[1]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|damage={{Hp|3}}
+|attackspeed=3
+|miningspeed=10
+|repair=[[Block of Diamond]]
+|tooltip={{G|Mining speed}} 10<br />{{G|Attack damage}} 3<br />{{G|Attack speed}} 3<br />Repaired with:<br />Block of Diamond
+|id=<code>matcha:electrum_mattock</code>
+|base=<code>minecraft:netherite_hoe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_mattock.json|electrum_mattock.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

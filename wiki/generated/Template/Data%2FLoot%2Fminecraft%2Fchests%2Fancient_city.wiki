@@ -1,0 +1,87 @@
+<includeonly><small>Loot table <code>minecraft:chests/ancient_city</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/ancient_city.json|source}}); pools roll 1; 5–10 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Raw Gold}} || 16–24 || 100% || 100% || 
+|-
+| {{ItemLink|Lapis Lazuli}} || 16–24 || 100% || 100% || 
+|-
+| {{ItemLink|Iron Ingot}} || 8–12 || 100% || 100% || 
+|-
+| {{ItemLink|Raw Iron}} || 8–25 || 100% || 100% || 
+|-
+| {{ItemLink|Raw Diamond}} || 1 || 100% || 100% || 
+|-
+| {{ItemLink|Raw Silver}} || 1–2 || 100% || 100% || 
+|-
+| {{ItemLink|Topaz}} || 1 || 45.5% || 45.5% || 
+|-
+| {{ItemLink|Smithing Template}} || 1 || 18.2% || 18.2% || 
+|-
+| {{ItemLink|Crystal Heart}} || 1 || 18.2% || 18.2% || 
+|-
+| {{ItemLink|Divine Fragment}} || 1 || 18.2% || 18.2% || 
+|-
+| {{ItemLink|Book}} || 1 || 13.8% || 66.2% || 
+|-
+| {{ItemLink|Coal}} || 6–15 || 7.45% || 43.5% || 
+|-
+| {{ItemLink|Book}} || 3–10 || 5.32% || 33.3% || 
+|-
+| {{ItemLink|Bone}} || 1–15 || 5.32% || 33.3% || 
+|-
+| {{ItemLink|Soul Torch}} || 1–15 || 5.32% || 33.3% || 
+|-
+| {{ItemLink|Music Disc}} || 1 || 5.32% || 33.3% || 
+|-
+| {{ItemLink|Echo Shard}} || 1–3 || 4.26% || 27.6% || 
+|-
+| {{ItemLink|Disc Fragment}} || 1–3 || 4.26% || 27.6% || 
+|-
+| {{ItemLink|Sculk}} || 4–10 || 3.19% || 21.5% || 
+|-
+| {{ItemLink|Sculk Sensor}} || 1–3 || 3.19% || 21.5% || 
+|-
+| {{ItemLink|Candle}} || 1–4 || 3.19% || 21.5% || 
+|-
+| {{ItemLink|Amethyst Shard}} || 1–15 || 3.19% || 21.5% || 
+|-
+| {{ItemLink|Glow Berries}} || 1 || 3.19% || 21.5% || 
+|-
+| {{ItemLink|Diamond Sword}} || 1 || 2.36% || 16.4% || 
+|-
+| {{ItemLink|Diamond Axe}} || 1 || 2.36% || 16.4% || 
+|-
+| {{ItemLink|Diamond Spear}} || 1 || 2.36% || 16.4% || 
+|-
+| {{ItemLink|Compass}} || 1 || 2.13% || 14.8% || 
+|-
+| {{ItemLink|Sculk Catalyst}} || 1–2 || 2.13% || 14.8% || 
+|-
+| {{ItemLink|Lead}} || 1 || 2.13% || 14.8% || 
+|-
+| {{ItemLink|Diamond Horse Armor}} || 1 || 2.13% || 14.8% || 
+|-
+| {{ItemLink|Sturdy Leather}} || 1–5 || 2.13% || 14.8% || 
+|-
+| {{ItemLink|Diamond Helmet}} || 1 || 1.77% || 12.5% || 
+|-
+| {{ItemLink|Diamond Chestplate}} || 1 || 1.77% || 12.5% || 
+|-
+| {{ItemLink|Diamond Leggings}} || 1 || 1.77% || 12.5% || 
+|-
+| {{ItemLink|Diamond Boots}} || 1 || 1.77% || 12.5% || 
+|-
+| {{ItemLink|Diamond Pickaxe}} || 1 || 1.42% || 10.1% || 
+|-
+| {{ItemLink|Diamond Shovel}} || 1 || 1.42% || 10.1% || 
+|-
+| {{ItemLink|Diamond Hoe}} || 1 || 1.42% || 10.1% || 
+|-
+| {{ItemLink|Diamond Mattock}} || 1 || 1.42% || 10.1% || 
+|-
+| {{ItemLink|Diamond Dolabra}} || 1 || 1.42% || 10.1% || 
+|-
+| {{ItemLink|Golden Apple}} || 1 || 1.06% || 7.69% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

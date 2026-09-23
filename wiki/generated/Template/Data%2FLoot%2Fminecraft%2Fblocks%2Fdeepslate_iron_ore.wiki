@@ -1,0 +1,11 @@
+<includeonly><small>Loot table <code>minecraft:blocks/deepslate_iron_ore</code> ({{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_iron_ore.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Deepslate Hematite}} || 1 || 33.3% || 33.3% || Silk Touch
+|-
+| {{ItemLink|Iron Ingot}} || 2 || 33.3% || 33.3% || specific tool
+|-
+| {{ItemLink|Raw Iron}} || 2 || 33.3% || 33.3% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

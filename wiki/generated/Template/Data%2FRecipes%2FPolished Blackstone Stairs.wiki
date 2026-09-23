@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Polished Blackstone Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Polished Blackstone]]
+| {{Crafting|A1=Polished Blackstone|A2=Polished Blackstone|A3=Polished Blackstone|B2=Polished Blackstone|B3=Polished Blackstone|C3=Polished Blackstone|Output=Polished Blackstone Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Polished Blackstone Stairs]] <small>(vanilla recipe)</small>
+| [[Blackstone]]
+| {{Stonecutter|Input=Blackstone|Output=Polished Blackstone Stairs}}
+|-
+| [[Polished Blackstone Stairs]] <small>(vanilla recipe)</small>
+| [[Polished Blackstone]]
+| {{Stonecutter|Input=Polished Blackstone|Output=Polished Blackstone Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

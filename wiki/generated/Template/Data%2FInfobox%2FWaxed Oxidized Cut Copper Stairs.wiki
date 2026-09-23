@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Waxed Oxidized Cut Copper Stairs}}
+|invimage=Waxed Oxidized Cut Copper Stairs
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:waxed_oxidized_cut_copper_stairs</code>
+|source={{Source|vanilla:recipe/waxed_oxidized_cut_copper_stairs.json|waxed_oxidized_cut_copper_stairs.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

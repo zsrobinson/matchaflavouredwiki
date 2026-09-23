@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Crimson Button]] <small>(vanilla recipe)</small>
+| [[Crimson Planks]]
+| {{Crafting|A1=Crimson Planks|Output=Crimson Button|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Crimson Button]]
+| [[Crimson Planks]]
+| {{Stonecutter|Input=Crimson Planks|Output=Crimson Button,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_button_from_stonecutting_crimson_planks.json|matcha:stonecutting/crimson_button_from_stonecutting_crimson_planks}}</small>
+|-
+| [[Crimson Button]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_button_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_button_from_stonecutting_crimson_stem}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

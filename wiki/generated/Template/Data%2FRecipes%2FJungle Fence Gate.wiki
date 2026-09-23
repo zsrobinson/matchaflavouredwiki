@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Jungle Fence Gate]] <small>(vanilla recipe)</small>
+| 4 × [[Stick]] +<br />2 × [[Jungle Planks]]
+| {{Crafting|A1=Stick|A2=Stick|B1=Jungle Planks|B2=Jungle Planks|C1=Stick|C2=Stick|Output=Jungle Fence Gate}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Jungle Fence Gate]]
+| Any [[jungle logs]]
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Fence Gate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_fence_gate_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_fence_gate_from_stonecutting_jungle_logs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

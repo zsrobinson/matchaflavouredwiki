@@ -1,0 +1,60 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Amnestic]]
+| [[Azure Bluet]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Paper]]
+| {{Crafting|A1=Azure Bluet|B1=Sugar|C1=Estus Ash|A2=Paper|Output=Amnestic|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/amnestic.json|matcha:crafting/amnestic}}</small>
+|-
+| [[Banner Pattern]]
+| [[Paper]] +<br />[[Cornflower]]
+| {{Crafting|A1=Paper|B1=Cornflower|Output=Banner Pattern|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/globe_banner_pattern.json|matcha:crafting/globe_banner_pattern}}</small>
+|-
+| [[TNT]]
+| 5 × [[Paper]] or [[Sand]] +<br />4 × [[Sulfur Chunk]]
+| {{Crafting|A1=Paper;Sand|A2=Sulfur Chunk|A3=Paper;Sand|B1=Sulfur Chunk|B2=Paper;Sand|B3=Sulfur Chunk|C1=Paper;Sand|C2=Sulfur Chunk|C3=Paper;Sand|Output=TNT,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/tnt.json|matcha:crafting/tnt}}</small>
+|-
+| [[Book]] <small>(vanilla recipe)</small>
+| 3 × [[Paper]] +<br />[[Sturdy Leather]]
+| {{Crafting|A1=Paper|B1=Paper|C1=Paper|A2=Sturdy Leather|Output=Book|shapeless=1}}
+|-
+| [[Bordure Indented Banner Pattern]] <small>(vanilla recipe)</small>
+| [[Paper]] +<br />[[Vines]]
+| {{Crafting|A1=Paper|B1=Vines|Output=Bordure Indented Banner Pattern|shapeless=1}}
+|-
+| [[Cartography Table]] <small>(vanilla recipe)</small>
+| 2 × [[Paper]] +<br />4 × Any [[planks]]
+| {{Crafting|A1=Paper|A2=Any Planks|A3=Any Planks|B1=Paper|B2=Any Planks|B3=Any Planks|Output=Cartography Table}}
+|-
+| [[Banner Pattern]] <small>(vanilla recipe)</small>
+| [[Paper]] +<br />[[Creeper Head]]
+| {{Crafting|A1=Paper|B1=Creeper Head|Output=Banner Pattern|shapeless=1}}
+|-
+| [[Field Masoned Banner Pattern]] <small>(vanilla recipe)</small>
+| [[Paper]] +<br />[[Bricks]]
+| {{Crafting|A1=Paper|B1=Bricks|Output=Field Masoned Banner Pattern|shapeless=1}}
+|-
+| [[Firework Rocket]] <small>(vanilla recipe)</small>
+| [[Sulfur Chunk]] +<br />[[Paper]]
+| {{Crafting|A1=Sulfur Chunk|B1=Paper|Output=Firework Rocket,3|shapeless=1}}
+|-
+| [[Banner Pattern]] <small>(vanilla recipe)</small>
+| [[Paper]] +<br />[[Oxeye Daisy]]
+| {{Crafting|A1=Paper|B1=Oxeye Daisy|Output=Banner Pattern|shapeless=1}}
+|-
+| [[Empty Map]] <small>(vanilla recipe)</small>
+| 8 × [[Paper]] +<br />[[Compass]]
+| {{Crafting|A1=Paper|A2=Paper|A3=Paper|B1=Paper|B2=Compass|B3=Paper|C1=Paper|C2=Paper|C3=Paper|Output=Empty Map}}
+|-
+| [[Banner Pattern]] <small>(vanilla recipe)</small>
+| [[Paper]] +<br />[[Enchanted Golden Apple]]
+| {{Crafting|A1=Paper|B1=Enchanted Golden Apple|Output=Banner Pattern|shapeless=1}}
+|-
+| [[Name Tag]] <small>(vanilla recipe)</small>
+| Any [[metal nuggets]] +<br />[[Paper]]
+| {{Crafting|A2=Paper|B1=Any Metal Nuggets|Output=Name Tag}}
+|-
+| [[Banner Pattern]] <small>(vanilla recipe)</small>
+| [[Paper]] +<br />[[Wither Skeleton Skull]]
+| {{Crafting|A1=Paper|B1=Wither Skeleton Skull|Output=Banner Pattern|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

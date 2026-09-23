@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Cleaver}}
+|invimage=Cleaver
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Slaughter]]<br />[[Looting]] II}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1500
+|damage={{Hp|6}}
+|miningspeed=340282349999999991754788743781432688640
+|repair=[[Iron Ingot]]
+|tooltip={{G|Reach}} -1<br />🗡 6<br />🕒 1.6<br />Repaired with:<br />Iron Ingot
+|id=<code>matcha:butcher_knife</code>
+|base=<code>minecraft:stone_sword</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/butcher/4/butcher_knife.json|butcher_knife.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

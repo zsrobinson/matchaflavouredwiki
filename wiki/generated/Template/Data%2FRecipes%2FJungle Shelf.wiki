@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Jungle Shelf]] <small>(vanilla recipe)</small>
+| 6 × [[Stripped Jungle Log]]
+| {{Crafting|A1=Stripped Jungle Log|A3=Stripped Jungle Log|B1=Stripped Jungle Log|B3=Stripped Jungle Log|C1=Stripped Jungle Log|C3=Stripped Jungle Log|Output=Jungle Shelf,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Jungle Shelf]]
+| Any [[jungle logs]]
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_shelf_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_shelf_from_stonecutting_jungle_logs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

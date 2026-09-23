@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Hellbrick Fence]] <small>(vanilla recipe)</small>
+| 4 × [[Hellbricks]] +<br />2 × [[Hellbrick]]
+| {{Crafting|A1=Hellbricks|A2=Hellbricks|B1=Hellbrick|B2=Hellbrick|C1=Hellbricks|C2=Hellbricks|Output=Hellbrick Fence,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Hellbrick Fence]]
+| [[Hellbricks]]
+| {{Stonecutter|Input=Hellbricks|Output=Hellbrick Fence,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/nether_brick_fence_from_stonecutting_nether_bricks.json|matcha:stonecutting/nether_brick_fence_from_stonecutting_nether_bricks}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

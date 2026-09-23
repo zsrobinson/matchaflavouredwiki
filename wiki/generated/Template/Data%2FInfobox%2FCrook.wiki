@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Crook}}
+|invimage=Crook
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=300
+|damage={{Hp|2}}
+|miningspeed=8
+|repair=[[Stick]]
+|tooltip={{G|Mining speed}} 8<br />{{G|Attack damage}} 5<br />{{G|Attack speed}} 4<br />{{G|Reach}} 3<br />{{G|Safe fall distance}} 1<br />Repaired with:<br />Stick
+|id=<code>matcha:crook</code>
+|base=<code>minecraft:wooden_sword</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/shepherd/3/crook.json|crook.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

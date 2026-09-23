@@ -1,0 +1,13 @@
+<includeonly><small>Loot table <code>minecraft:chests/trial_chambers/entrance</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/entrance.json|source}}); pools roll 2–3 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Wax}} || 2–8 || 38.5% || 69.4% || 
+|-
+| {{ItemLink|Arrow}} || 5–10 || 38.5% || 69.4% || 
+|-
+| {{ItemLink|Stick}} || 2–5 || 19.2% || 41.0% || 
+|-
+| {{ItemLink|Trial Key}} || 1 || 3.85% || 9.32% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

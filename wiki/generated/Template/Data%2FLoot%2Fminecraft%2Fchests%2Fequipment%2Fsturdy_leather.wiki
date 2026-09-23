@@ -1,0 +1,13 @@
+<includeonly><small>Loot table <code>minecraft:chests/equipment/sturdy_leather</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/sturdy_leather.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Sturdy Leather Helmet}} || 1 || 25.0% || 25.0% || 
+|-
+| {{ItemLink|Sturdy Leather Gambeson}} || 1 || 25.0% || 25.0% || 
+|-
+| {{ItemLink|Sturdy Leather Leggings}} || 1 || 25.0% || 25.0% || 
+|-
+| {{ItemLink|Sturdy Leather Boots}} || 1 || 25.0% || 25.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

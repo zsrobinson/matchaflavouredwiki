@@ -1,0 +1,184 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Glass Bottle]]
+| 3 × [[Glass]]
+| {{Crafting|A1=Glass|B2=Glass|C1=Glass|Output=Glass Bottle,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/glass_bottle.json|matcha:crafting/glass_bottle}}</small>
+|-
+| [[Glass Bottle]]
+| [[Glass]]
+| {{Crafting|A1=Glass|Output=Glass Bottle,3|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/glass_bottle_alternate.json|matcha:crafting/glass_bottle_alternate}}</small>
+|-
+| [[Electric Lamp]]
+| 8 × [[Glass]] +<br />[[Electric Wire]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Electric Wire|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Electric Lamp,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/incandescent_lamp.json|matcha:crafting/incandescent_lamp}}</small>
+|-
+| [[Ochre Phosphor Lamp]]
+| 4 × [[Phosphor]] +<br />4 × [[Glass]] +<br />[[Yellow Dye]]
+| {{Crafting|A1=Phosphor|A2=Glass|A3=Phosphor|B1=Glass|B2=Yellow Dye|B3=Glass|C1=Phosphor|C2=Glass|C3=Phosphor|Output=Ochre Phosphor Lamp,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ochre_froglight.json|matcha:crafting/ochre_froglight}}</small>
+|-
+| [[Pearlescent Phosphor Lamp]]
+| 4 × [[Phosphor]] +<br />4 × [[Glass]] +<br />[[Magenta Dye]]
+| {{Crafting|A1=Phosphor|A2=Glass|A3=Phosphor|B1=Glass|B2=Magenta Dye|B3=Glass|C1=Phosphor|C2=Glass|C3=Phosphor|Output=Pearlescent Phosphor Lamp,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/pearlescent_froglight.json|matcha:crafting/pearlescent_froglight}}</small>
+|-
+| [[Spyglass]]
+| [[Glass]] or [[Amethyst Shard]] +<br />2 × [[Copper Ingot]]
+| {{Crafting|B1=Glass;Amethyst Shard|B2=Copper Ingot|B3=Copper Ingot|Output=Spyglass}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/spyglass.json|matcha:crafting/spyglass}}</small>
+|-
+| [[Tinted Glass]]
+| 4 × [[Glass]] +<br />[[Amethyst Shard]]
+| {{Crafting|A2=Glass|B1=Glass|B2=Amethyst Shard|B3=Glass|C2=Glass|Output=Tinted Glass,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/tinted_glass.json|matcha:crafting/tinted_glass}}</small>
+|-
+| [[Verdant Phosphor Lamp]]
+| 4 × [[Phosphor]] +<br />4 × [[Glass]] +<br />[[Lime Dye]]
+| {{Crafting|A1=Phosphor|A2=Glass|A3=Phosphor|B1=Glass|B2=Lime Dye|B3=Glass|C1=Phosphor|C2=Glass|C3=Phosphor|Output=Verdant Phosphor Lamp,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/verdant_froglight.json|matcha:crafting/verdant_froglight}}</small>
+|-
+| [[Glass Pane]]
+| [[Glass]]
+| {{Stonecutter|Input=Glass|Output=Glass Pane,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/glass_pane.json|matcha:stonecutting/glass_pane}}</small>
+|-
+| [[Beacon]] <small>(vanilla recipe)</small>
+| 5 × [[Glass]] +<br />[[Divine Favor]] +<br />3 × [[Obsidian]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Obsidian|B1=Glass|B2=Divine Favor|B3=Obsidian|C1=Glass|C2=Glass|C3=Obsidian|Output=Beacon}}
+|-
+| [[Black Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Black Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Black Wool|C1=Sturdy Leather|C2=Glass|Output=Black Harness}}
+|-
+| [[Black Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Black Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Black Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Black Stained Glass,8}}
+|-
+| [[Blue Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Blue Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Blue Wool|C1=Sturdy Leather|C2=Glass|Output=Blue Harness}}
+|-
+| [[Blue Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Blue Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Blue Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Blue Stained Glass,8}}
+|-
+| [[Brown Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Brown Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Brown Wool|C1=Sturdy Leather|C2=Glass|Output=Brown Harness}}
+|-
+| [[Brown Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Brown Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Brown Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Brown Stained Glass,8}}
+|-
+| [[Cyan Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Cyan Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Cyan Wool|C1=Sturdy Leather|C2=Glass|Output=Cyan Harness}}
+|-
+| [[Cyan Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Cyan Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Cyan Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Cyan Stained Glass,8}}
+|-
+| [[Daylight Detector]] <small>(vanilla recipe)</small>
+| 3 × [[Glass]] +<br />3 × [[Quartz]] +<br />3 × Any [[wooden slabs]]
+| {{Crafting|A1=Glass|A2=Quartz|A3=Any Wooden Slabs|B1=Glass|B2=Quartz|B3=Any Wooden Slabs|C1=Glass|C2=Quartz|C3=Any Wooden Slabs|Output=Daylight Detector}}
+|-
+| [[End Crystal]] <small>(vanilla recipe)</small>
+| 7 × [[Glass]] +<br />[[Eye of Ender]] +<br />[[Ghast Tear]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Eye of Ender|B3=Ghast Tear|C1=Glass|C2=Glass|C3=Glass|Output=End Crystal}}
+|-
+| [[Glass Pane]] <small>(vanilla recipe)</small>
+| 6 × [[Glass]]
+| {{Crafting|A1=Glass|A2=Glass|B1=Glass|B2=Glass|C1=Glass|C2=Glass|Output=Glass Pane,16}}
+|-
+| [[Gray Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Gray Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Gray Wool|C1=Sturdy Leather|C2=Glass|Output=Gray Harness}}
+|-
+| [[Gray Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Gray Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Gray Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Gray Stained Glass,8}}
+|-
+| [[Green Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Green Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Green Wool|C1=Sturdy Leather|C2=Glass|Output=Green Harness}}
+|-
+| [[Green Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Green Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Green Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Green Stained Glass,8}}
+|-
+| [[Light Blue Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Light Blue Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Light Blue Wool|C1=Sturdy Leather|C2=Glass|Output=Light Blue Harness}}
+|-
+| [[Light Blue Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Light Blue Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Light Blue Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Light Blue Stained Glass,8}}
+|-
+| [[Light Gray Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Light Gray Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Light Gray Wool|C1=Sturdy Leather|C2=Glass|Output=Light Gray Harness}}
+|-
+| [[Light Gray Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Light Gray Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Light Gray Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Light Gray Stained Glass,8}}
+|-
+| [[Lime Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Lime Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Lime Wool|C1=Sturdy Leather|C2=Glass|Output=Lime Harness}}
+|-
+| [[Lime Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Lime Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Lime Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Lime Stained Glass,8}}
+|-
+| [[Magenta Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Magenta Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Magenta Wool|C1=Sturdy Leather|C2=Glass|Output=Magenta Harness}}
+|-
+| [[Magenta Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Magenta Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Magenta Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Magenta Stained Glass,8}}
+|-
+| [[Orange Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Orange Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Orange Wool|C1=Sturdy Leather|C2=Glass|Output=Orange Harness}}
+|-
+| [[Orange Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Orange Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Orange Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Orange Stained Glass,8}}
+|-
+| [[Pink Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Pink Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Pink Wool|C1=Sturdy Leather|C2=Glass|Output=Pink Harness}}
+|-
+| [[Pink Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Pink Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Pink Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Pink Stained Glass,8}}
+|-
+| [[Purple Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Purple Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Purple Wool|C1=Sturdy Leather|C2=Glass|Output=Purple Harness}}
+|-
+| [[Purple Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Purple Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Purple Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Purple Stained Glass,8}}
+|-
+| [[Red Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Red Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Red Wool|C1=Sturdy Leather|C2=Glass|Output=Red Harness}}
+|-
+| [[Red Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Red Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Red Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Red Stained Glass,8}}
+|-
+| [[White Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[White Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=White Wool|C1=Sturdy Leather|C2=Glass|Output=White Harness}}
+|-
+| [[White Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[White Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=White Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=White Stained Glass,8}}
+|-
+| [[Yellow Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Yellow Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Yellow Wool|C1=Sturdy Leather|C2=Glass|Output=Yellow Harness}}
+|-
+| [[Yellow Stained Glass]] <small>(vanilla recipe)</small>
+| 8 × [[Glass]] +<br />[[Yellow Dye]]
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Yellow Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Yellow Stained Glass,8}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

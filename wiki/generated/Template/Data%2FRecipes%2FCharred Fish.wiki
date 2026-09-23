@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Charred Fish]]
+| [[Tropical Fish]] or [[Pufferfish]] or [[Cod]] or [[Salmon]]
+| {{Cooking|station=Mud Kiln|Input=Tropical Fish;Pufferfish;Cod;Salmon|Output=Charred Fish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_fish.json|matcha:food/kiln/charred_fish}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

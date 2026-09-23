@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Waxed Weathered Lightning Rod}}
+|invimage=Waxed Weathered Lightning Rod
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:waxed_weathered_lightning_rod</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/waxed_weathered_lightning_rod_from_stoncutting_waxed_weathered_copper.json|waxed_weathered_lightning_rod_from_stoncutting_waxed_weathered_copper.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

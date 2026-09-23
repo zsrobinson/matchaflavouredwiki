@@ -1,0 +1,24 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Diorite]]
+| [[Polished Diorite]]
+| {{Cooking|station=Blast Furnace|Input=Polished Diorite|Output=Diorite|note=5 s, 1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/diorite_from_blasting_polished_diorite.json|matcha:blast/diorite_from_blasting_polished_diorite}}</small>
+|-
+| [[Polished Diorite Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Polished Diorite]]
+| {{Crafting|A1=Polished Diorite|B1=Polished Diorite|C1=Polished Diorite|Output=Polished Diorite Slab,6}}
+|-
+| [[Polished Diorite Slab]] <small>(vanilla recipe)</small>
+| [[Polished Diorite]]
+| {{Stonecutter|Input=Polished Diorite|Output=Polished Diorite Slab,2}}
+|-
+| [[Polished Diorite Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Polished Diorite]]
+| {{Crafting|A1=Polished Diorite|A2=Polished Diorite|A3=Polished Diorite|B2=Polished Diorite|B3=Polished Diorite|C3=Polished Diorite|Output=Polished Diorite Stairs,4}}
+|-
+| [[Polished Diorite Stairs]] <small>(vanilla recipe)</small>
+| [[Polished Diorite]]
+| {{Stonecutter|Input=Polished Diorite|Output=Polished Diorite Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

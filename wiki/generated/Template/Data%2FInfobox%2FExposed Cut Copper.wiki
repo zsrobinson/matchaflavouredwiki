@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Exposed Cut Copper}}
+|invimage=Exposed Cut Copper
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:exposed_cut_copper</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/exposed_cut_copper_from_exposed_cut_copper_slab.json|exposed_cut_copper_from_exposed_cut_copper_slab.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

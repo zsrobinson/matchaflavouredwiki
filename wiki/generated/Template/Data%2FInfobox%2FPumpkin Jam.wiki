@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Pumpkin Jam}}
+|invimage=Pumpkin Jam
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|4}}
+|effects={{EffectLink|Resistance}} (3:00)
+|eat_time=1.6 seconds
+|tooltip=❤❤<br />{{G|Armor}} Resistance (3:00)
+|id=<code>matcha:pumpkin_jam</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_jam.json|pumpkin_jam.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

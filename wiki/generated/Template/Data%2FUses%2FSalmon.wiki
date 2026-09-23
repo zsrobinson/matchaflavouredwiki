@@ -1,0 +1,27 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cooked Large Fish]]
+| [[Salmon]]
+| {{Cooking|station=Kindling|Input=Salmon|Output=Cooked Large Fish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_salmon.json|matcha:food/campfire/cooked_salmon}}</small>
+|-
+| [[Green Curry Stock]]
+| [[Green Dye]] +<br />[[Estus Ash]] +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Oil]] +<br />[[Cod]] or [[Salmon]] or [[Seitan]] +<br />[[Bowl]]
+| {{Crafting|A1=Green Dye|B1=Estus Ash|C1=Sugar|A2=Milk Bottle|B2=Oil|C2=Cod;Salmon;Seitan|A3=Bowl|Output=Green Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_green_curry.json|matcha:food/crafting/uncooked_green_curry}}</small>
+|-
+| [[Charred Fish]]
+| [[Tropical Fish]] or [[Pufferfish]] or [[Cod]] or [[Salmon]]
+| {{Cooking|station=Mud Kiln|Input=Tropical Fish;Pufferfish;Cod;Salmon|Output=Charred Fish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_fish.json|matcha:food/kiln/charred_fish}}</small>
+|-
+| [[Cooked Large Fish]]
+| [[Salmon]]
+| {{Cooking|station=Oven|Input=Salmon|Output=Cooked Large Fish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_salmon.json|matcha:food/oven/cooked_salmon}}</small>
+|}
+
+'''Trading'''
+{| class="wikitable"
+! Villager !! Level !! Wants !! Gives
+|-
+| [[Fisherman]] || Apprentice || 12 × {{ItemLink|Salmon}} || {{ItemLink|Obol}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

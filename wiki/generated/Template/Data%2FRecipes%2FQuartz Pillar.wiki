@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Quartz Pillar]] <small>(vanilla recipe)</small>
+| 2 × [[Block of Quartz]]
+| {{Crafting|A1=Block of Quartz|A2=Block of Quartz|Output=Quartz Pillar,2}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Quartz Pillar]] <small>(vanilla recipe)</small>
+| [[Block of Quartz]]
+| {{Stonecutter|Input=Block of Quartz|Output=Quartz Pillar}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

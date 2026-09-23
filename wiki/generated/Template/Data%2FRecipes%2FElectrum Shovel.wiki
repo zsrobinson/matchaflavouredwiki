@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Electrum Shovel]]
+| [[Diamond Shovel]] +<br />[[Electrum Alloy]]
+| {{Smithing|Template=|Base=Diamond Shovel|Addition=Electrum Alloy|Output=Electrum Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/electrum_shovel.json|matcha:smithing/electrum_shovel}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

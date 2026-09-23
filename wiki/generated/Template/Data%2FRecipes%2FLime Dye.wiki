@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Lime Dye]] <small>(vanilla recipe)</small>
+| [[Green Dye]] +<br />[[White Dye]]
+| {{Crafting|A1=Green Dye|B1=White Dye|Output=Lime Dye,2|shapeless=1}}
+|}
+'''Cooking'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Lime Dye]] <small>(vanilla recipe)</small>
+| [[Sea Pickle]]
+| {{Cooking|station=Oven|Input=Sea Pickle|Output=Lime Dye|note=10 s, 0.1 XP}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

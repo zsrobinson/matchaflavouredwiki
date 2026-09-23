@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Dark Oak Sign}}
+|invimage=Dark Oak Sign
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (16)
+|id=<code>minecraft:dark_oak_sign</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_sign_from_stonecutting_dark_oak_logs.json|dark_oak_sign_from_stonecutting_dark_oak_logs.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

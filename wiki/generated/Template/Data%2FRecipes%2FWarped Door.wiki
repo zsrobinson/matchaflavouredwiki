@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Warped Door]] <small>(vanilla recipe)</small>
+| 6 × [[Warped Planks]]
+| {{Crafting|A1=Warped Planks|A2=Warped Planks|A3=Warped Planks|B1=Warped Planks|B2=Warped Planks|B3=Warped Planks|Output=Warped Door,3}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Warped Door]]
+| Any [[warped stems]]
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Door,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_door_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_door_from_stonecutting_warped_stem}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

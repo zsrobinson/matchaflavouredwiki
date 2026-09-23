@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Exotic Seed Bundle}}
+|invimage=Exotic Seed Bundle
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|id=<code>matcha:exotic_seed_bundle</code>
+|base=<code>minecraft:bundle</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/farmer/1/exotic_seed_bundle.json|exotic_seed_bundle.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

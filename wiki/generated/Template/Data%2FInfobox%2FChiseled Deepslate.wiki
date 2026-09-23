@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Chiseled Deepslate}}
+|invimage=Chiseled Deepslate
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:chiseled_deepslate</code>
+|source={{Source|vanilla:recipe/chiseled_deepslate_from_cobbled_deepslate_stonecutting.json|chiseled_deepslate_from_cobbled_deepslate_stonecutting.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

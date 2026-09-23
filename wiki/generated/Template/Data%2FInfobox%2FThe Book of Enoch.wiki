@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|The Book of Enoch}}
+|invimage=The Book of Enoch
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Rare
+|stackable=Yes (64)
+|tooltip=ספר חנוך
+|id=<code>matcha:enoch</code>
+|base=<code>minecraft:book</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/treasure/enoch.json|enoch.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

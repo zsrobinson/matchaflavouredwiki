@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Stripped Oak Log}}
+|invimage=Stripped Oak Log
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:stripped_oak_log</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_oak_log_from_stonecutting_oak_logs.json|stripped_oak_log_from_stonecutting_oak_logs.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

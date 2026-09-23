@@ -1,0 +1,33 @@
+<includeonly><small>Loot table <code>minecraft:chests/shipwreck_map</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_map.json|source}}); pools roll 1; 3 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Buried Treasure Map}} || 1 || 100% || 100% || 
+|-
+| {{ItemLink|Copper Compass}} || 1 || 60.0% || 60.0% || 
+|-
+| {{ItemLink|Paper}} || 1–10 || 54.1% || 90.3% || 
+|-
+| {{ItemLink|Golden Compass}} || 1 || 30.0% || 30.0% || 
+|-
+| {{ItemLink|Feather}} || 1–5 || 27.0% || 61.1% || 
+|-
+| {{ItemLink|Smithing Template}} || 2 || 16.7% || 16.7% || 
+|-
+| {{ItemLink|Copper Nautilus Armor}} || 1 || 14.6% || 14.6% || 
+|-
+| {{ItemLink|Book}} || 1–5 || 13.5% || 35.3% || 
+|-
+| {{ItemLink|Titanium Compass}} || 1 || 10.0% || 10.00% || 
+|-
+| {{ItemLink|Iron Nautilus Armor}} || 1 || 7.30% || 7.30% || 
+|-
+| {{ItemLink|Golden Nautilus Armor}} || 1 || 3.65% || 3.65% || 
+|-
+| {{ItemLink|Empty Map}} || 1 || 2.70% || 7.89% || 
+|-
+| {{ItemLink|Clock}} || 1 || 2.70% || 7.89% || 
+|-
+| {{ItemLink|Diamond Nautilus Armor}} || 1 || 1.46% || 1.46% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

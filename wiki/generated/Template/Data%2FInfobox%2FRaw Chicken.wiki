@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Raw Chicken}}
+|invimage=Raw Chicken
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|effects={{EffectLink|Hunger}} (0:30) — 30% chance
+|eat_time=1.6 seconds
+|id=<code>minecraft:chicken</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/entities/parrot.json|parrot.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Cinnabar Bricks}}
+|invimage=Cinnabar Bricks
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:cinnabar_bricks</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/cinnabar_bricks_from_cinnabar_brick_slabs.json|cinnabar_bricks_from_cinnabar_brick_slabs.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

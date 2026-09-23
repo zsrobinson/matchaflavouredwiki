@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Ofuda}}
+|invimage=Ofuda
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Rare
+|stackable=No
+|effects=Stores: [[Efficiency]] II, [[Unbreaking]] I
+|tooltip=Prayer of The God-King
+|id=<code>matcha:ofuda</code>
+|base=<code>minecraft:enchanted_book</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/librarian/2/avesta.json|avesta.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

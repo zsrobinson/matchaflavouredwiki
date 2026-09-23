@@ -1,0 +1,9 @@
+<includeonly><small>Loot table <code>minecraft:entities/cave_spider</code> ({{Source|MF_datapack/data/minecraft/loot_table/entities/cave_spider.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|String}} || 0–2 || 100% || 100% || 
+|-
+| {{ItemLink|Spider Eye}} || -1–1 || 100% || 100% || player kill
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,11 @@
+<includeonly><small>Loot table <code>minecraft:blocks/tall_grass</code> ({{Source|MF_datapack/data/minecraft/loot_table/blocks/tall_grass.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Short Grass}} || 2 || 66.7% || 66.7% || block state property, location, tool: Iron Shears
+|-
+| {{ItemLink|Short Grass}} || 2 || 66.7% || 66.7% || block state property, location, tool: #minecraft:hoes
+|-
+| {{ItemLink|Wheat Grain}} || 1 || 8.33% || 8.33% || block state property, location, tool: #minecraft:hoes
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

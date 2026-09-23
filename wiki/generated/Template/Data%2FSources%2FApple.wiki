@@ -1,0 +1,25 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Spawn bonus chest <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/spawn_bonus_chest.json|chests/spawn_bonus_chest}})</small> || 1 || 100% || 
+|-
+| Stronghold crossing <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_crossing.json|chests/stronghold_crossing}})</small> || 1 || 53.9% || 
+|-
+| Village / village plains house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json|chests/village/village_plains_house}})</small> || 1 || 74.2% || 
+|-
+| Village / village weaponsmith <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_weaponsmith.json|chests/village/village_weaponsmith}})</small> || 1 || 33.9% || 
+|}
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Dark oak leaves <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/dark_oak_leaves.json|blocks/dark_oak_leaves}})</small> || 1 || 100% || not tool: Iron Shears, Fortune affects chance
+|-
+| Oak leaves <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/oak_leaves.json|blocks/oak_leaves}})</small> || 1 || 100% || not tool: Iron Shears, Fortune affects chance
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

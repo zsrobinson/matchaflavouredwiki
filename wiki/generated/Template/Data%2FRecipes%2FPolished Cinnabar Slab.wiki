@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Polished Cinnabar Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Polished Cinnabar]]
+| {{Crafting|A1=Polished Cinnabar|B1=Polished Cinnabar|C1=Polished Cinnabar|Output=Polished Cinnabar Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Polished Cinnabar Slab]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Polished Cinnabar Slab,2}}
+|-
+| [[Polished Cinnabar Slab]] <small>(vanilla recipe)</small>
+| [[Polished Cinnabar]]
+| {{Stonecutter|Input=Polished Cinnabar|Output=Polished Cinnabar Slab,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,15 @@
+<includeonly><small>Loot table <code>minecraft:entities/witch</code> ({{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json|source}}); pools roll 1; 1–3 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Estus Ash}} || 4–8 || 100% || 100% || player kill
+|-
+| {{ItemLink|Brown Mushroom}} || 0–2 || 40.0% || 60.8% || player kill
+|-
+| {{ItemLink|Red Mushroom}} || 0–2 || 20.0% || 34.9% || player kill
+|-
+| {{ItemLink|Spider Eye}} || 0–2 || 20.0% || 34.9% || player kill
+|-
+| {{ItemLink|Glass Bottle}} || 0–2 || 20.0% || 34.9% || player kill
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

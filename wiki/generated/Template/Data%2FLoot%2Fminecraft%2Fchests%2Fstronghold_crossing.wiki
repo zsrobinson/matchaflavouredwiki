@@ -1,0 +1,43 @@
+<includeonly><small>Loot table <code>minecraft:chests/stronghold_crossing</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_crossing.json|source}}); pools roll 3–5 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Iron Ingot}} || 1–5 || 17.9% || 53.9% || 
+|-
+| {{ItemLink|Coal}} || 3–8 || 17.9% || 53.9% || 
+|-
+| {{ItemLink|Bread}} || 1 || 17.9% || 53.9% || 
+|-
+| {{ItemLink|Apple}} || 1 || 17.9% || 53.9% || 
+|-
+| {{ItemLink|Gold Ingot}} || 1–3 || 8.93% || 31.0% || 
+|-
+| {{ItemLink|Estus Ash}} || 4–9 || 8.93% || 31.0% || 
+|-
+| {{ItemLink|Book}} || 1 || 1.79% || 6.94% || 
+|-
+| {{ItemLink|Diamond Sword}} || 1 || 0.992% || 3.91% || 
+|-
+| {{ItemLink|Diamond Axe}} || 1 || 0.992% || 3.91% || 
+|-
+| {{ItemLink|Diamond Spear}} || 1 || 0.992% || 3.91% || 
+|-
+| {{ItemLink|Diamond Helmet}} || 1 || 0.744% || 2.94% || 
+|-
+| {{ItemLink|Diamond Chestplate}} || 1 || 0.744% || 2.94% || 
+|-
+| {{ItemLink|Diamond Leggings}} || 1 || 0.744% || 2.94% || 
+|-
+| {{ItemLink|Diamond Boots}} || 1 || 0.744% || 2.94% || 
+|-
+| {{ItemLink|Diamond Pickaxe}} || 1 || 0.595% || 2.36% || 
+|-
+| {{ItemLink|Diamond Shovel}} || 1 || 0.595% || 2.36% || 
+|-
+| {{ItemLink|Diamond Hoe}} || 1 || 0.595% || 2.36% || 
+|-
+| {{ItemLink|Diamond Mattock}} || 1 || 0.595% || 2.36% || 
+|-
+| {{ItemLink|Diamond Dolabra}} || 1 || 0.595% || 2.36% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

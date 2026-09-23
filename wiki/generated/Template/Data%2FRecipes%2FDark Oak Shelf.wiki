@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Dark Oak Shelf]] <small>(vanilla recipe)</small>
+| 6 × [[Stripped Dark Oak Log]]
+| {{Crafting|A1=Stripped Dark Oak Log|A3=Stripped Dark Oak Log|B1=Stripped Dark Oak Log|B3=Stripped Dark Oak Log|C1=Stripped Dark Oak Log|C3=Stripped Dark Oak Log|Output=Dark Oak Shelf,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Dark Oak Shelf]]
+| Any [[dark oak logs]]
+| {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_shelf_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_shelf_from_stonecutting_dark_oak_logs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

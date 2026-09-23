@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Black Dye]]
+| [[Wither Rose]] or [[Ink Sac]]
+| {{Crafting|A1=Wither Rose;Ink Sac|Output=Black Dye,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/black_dye.json|matcha:crafting/black_dye}}</small>
+|-
+| [[Book and Quill]] <small>(vanilla recipe)</small>
+| [[Book]] +<br />[[Ink Sac]] +<br />[[Feather]]
+| {{Crafting|A1=Book|B1=Ink Sac|C1=Feather|Output=Book and Quill|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

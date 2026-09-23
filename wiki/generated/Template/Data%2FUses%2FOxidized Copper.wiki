@@ -1,0 +1,68 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oxidized Copper Bulb]]
+| 3 × [[Oxidized Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
+| {{Crafting|A2=Oxidized Copper|B1=Oxidized Copper|B2=Electric Inverter|B3=Electric Wire|C2=Oxidized Copper|Output=Oxidized Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_bulb.json|matcha:crafting/oxidized_copper_bulb}}</small>
+|-
+| [[Smithing Trim Color]]
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Oxidized Copper]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Oxidized Copper|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_patina.json|matcha:crafting/trim_colour_patina}}</small>
+|-
+| [[Oxidized Copper Bars]]
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Bars,36}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_copper_bars_from_stonecutting_oxidized_copper.json|matcha:stonecutting/oxidized_copper_bars_from_stonecutting_oxidized_copper}}</small>
+|-
+| [[Oxidized Copper Chain]]
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_copper_chain_from_stonecutting_oxidised_copper.json|matcha:stonecutting/oxidized_copper_chain_from_stonecutting_oxidised_copper}}</small>
+|-
+| [[Oxidized Copper Door]]
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_copper_door_from_stonecutting_oxidized_copper_block.json|matcha:stonecutting/oxidized_copper_door_from_stonecutting_oxidized_copper_block}}</small>
+|-
+| [[Oxidized Copper Trapdoor]]
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidised_copper.json|matcha:stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidised_copper}}</small>
+|-
+| [[Oxidized Copper Trapdoor]]
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidized_copper_block.json|matcha:stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidized_copper_block}}</small>
+|-
+| [[Oxidized Lightning Rod]]
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Lightning Rod,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_lightning_rod_from_stonecutting_oxidized_copper.json|matcha:stonecutting/oxidized_lightning_rod_from_stonecutting_oxidized_copper}}</small>
+|-
+| [[Oxidized Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Chiseled Copper,4}}
+|-
+| [[Oxidized Copper Grate]] <small>(vanilla recipe)</small>
+| 4 × [[Oxidized Copper]]
+| {{Crafting|A2=Oxidized Copper|B1=Oxidized Copper|B3=Oxidized Copper|C2=Oxidized Copper|Output=Oxidized Copper Grate,4}}
+|-
+| [[Oxidized Copper Grate]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Grate,4}}
+|-
+| [[Oxidized Cut Copper]] <small>(vanilla recipe)</small>
+| 4 × [[Oxidized Copper]]
+| {{Crafting|A1=Oxidized Copper|A2=Oxidized Copper|B1=Oxidized Copper|B2=Oxidized Copper|Output=Oxidized Cut Copper,4}}
+|-
+| [[Oxidized Cut Copper]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Cut Copper,4}}
+|-
+| [[Oxidized Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Cut Copper Slab,8}}
+|-
+| [[Oxidized Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Cut Copper Stairs,4}}
+|-
+| [[Waxed Oxidized Copper]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Copper|B1=Wax|Output=Waxed Oxidized Copper|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

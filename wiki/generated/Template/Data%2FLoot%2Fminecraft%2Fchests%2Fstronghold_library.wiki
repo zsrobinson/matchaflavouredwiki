@@ -1,0 +1,23 @@
+<includeonly><small>Loot table <code>minecraft:chests/stronghold_library</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_library.json|source}}); pools roll 0–1; 1; 2–10 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Smithing Template}} || 1 || 100% || 100% || 
+|-
+| {{ItemLink|The Lesser Key of Solomon}} || 1 || 100% || 50.0% || 
+|-
+| {{ItemLink|Book}} || 1–3 || 38.5% || 89.2% || 
+|-
+| {{ItemLink|Paper}} || 2–7 || 38.5% || 89.2% || 
+|-
+| {{ItemLink|Book}} || 1 || 19.2% || 67.8% || 
+|-
+| {{ItemLink|Empty Map}} || 1 || 1.92% || 10.9% || 
+|-
+| {{ItemLink|Copper Compass}} || 1 || 1.15% || 6.68% || 
+|-
+| {{ItemLink|Golden Compass}} || 1 || 0.577% || 3.40% || 
+|-
+| {{ItemLink|Titanium Compass}} || 1 || 0.192% || 1.15% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Sulfur Chunk}}
+|invimage=Sulfur Chunk
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Gunpowder}}
+|stackable=Yes (64)
+|id=<code>minecraft:gunpowder</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_chunk_from_potent_sulfur.json|sulfur_chunk_from_potent_sulfur.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,20 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Dandelion]]
+| [[Dandelion]] +<br />[[Potion]] +<br />[[Bone Meal]]
+| {{Crafting|A1=Dandelion|B1=Potion|C1=Bone Meal|Output=Dandelion,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_dandelion.json|matcha:crafting/clone_dandelion}}</small>
+|-
+| [[Kontomire-Dandelion Stew]]
+| [[Tomatoes]] +<br />[[Dandelion]] +<br />[[Fern]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />Any [[eggs]] +<br />[[Bowl]]
+| {{Crafting|A1=Tomatoes|B1=Dandelion|C1=Fern|A2=Cooked Fish;Cooked Large Fish|B2=Any Eggs|C2=Bowl|Output=Kontomire-Dandelion Stew|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/kontomire_stew.json|matcha:food/crafting/kontomire_stew}}</small>
+|-
+| [[Golden Dandelion]] <small>(vanilla recipe)</small>
+| 8 × [[Gold Nugget]] +<br />[[Dandelion]]
+| {{Crafting|A1=Gold Nugget|A2=Gold Nugget|A3=Gold Nugget|B1=Gold Nugget|B2=Dandelion|B3=Gold Nugget|C1=Gold Nugget|C2=Gold Nugget|C3=Gold Nugget|Output=Golden Dandelion}}
+|-
+| [[Yellow Dye]] <small>(vanilla recipe)</small>
+| [[Dandelion]]
+| {{Crafting|A1=Dandelion|Output=Yellow Dye|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,56 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Steamed Carrots]]
+| [[Carrot]]
+| {{Cooking|station=Kindling|Input=Carrot|Output=Steamed Carrots|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/steamed_carrots.json|matcha:food/campfire/steamed_carrots}}</small>
+|-
+| [[Bokguk]]
+| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Pufferfish]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Braised Mushroom]] +<br />[[Bowl]]
+| {{Crafting|A1=Dried Kelp|B1=Carrot|C1=Pufferfish|A2=Cooked Fish;Cooked Large Fish|B2=Braised Mushroom|C2=Bowl|Output=Bokguk|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bokguk.json|matcha:food/crafting/bokguk}}</small>
+|-
+| [[Carrot Cupcake]]
+| [[Carrot]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Cocoa Beans]] +<br />[[Dough]]
+| {{Crafting|A1=Carrot|B1=Sugar|C1=Estus Ash|A2=Cocoa Beans|B2=Dough|Output=Carrot Cupcake|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/carrot_cupcake.json|matcha:food/crafting/carrot_cupcake}}</small>
+|-
+| [[Gimmari]]
+| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Sugar]] +<br />Any [[eggs]] +<br />[[Flour]] +<br />[[Oil]]
+| {{Crafting|A1=Dried Kelp|B1=Carrot|C1=Sugar|A2=Any Eggs|B2=Flour|C2=Oil|Output=Gimmari|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gimmari.json|matcha:food/crafting/gimmari}}</small>
+|-
+| [[Golden Carrot]]
+| 8 × [[Gold Nugget]] +<br />[[Carrot]]
+| {{Crafting|A1=Gold Nugget|A2=Gold Nugget|A3=Gold Nugget|B1=Gold Nugget|B2=Carrot|B3=Gold Nugget|C1=Gold Nugget|C2=Gold Nugget|C3=Gold Nugget|Output=Golden Carrot}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_carrot.json|matcha:food/crafting/golden_carrot}}</small>
+|-
+| [[Lumpia]]
+| [[Cooked Porkchop]] or [[Seitan]] +<br />[[Dough]] +<br />[[Oil]] +<br />[[Dried Kelp]] +<br />[[Carrot]]
+| {{Crafting|A1=Cooked Porkchop;Seitan|B1=Dough|C1=Oil|A2=Dried Kelp|B2=Carrot|Output=Lumpia,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/lumpia.json|matcha:food/crafting/lumpia}}</small>
+|-
+| [[Pad Thai]]
+| [[Dough]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Sugar]] +<br />[[Carrot]] +<br />Any [[eggs]] +<br />[[Bowl]]
+| {{Crafting|A1=Dough|B1=Cooked Fish;Cooked Large Fish|C1=Sugar|A2=Carrot|B2=Any Eggs|C2=Bowl|Output=Pad Thai|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pad_thai.json|matcha:food/crafting/pad_thai}}</small>
+|-
+| [[Pickled Carrots]]
+| [[Carrot]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
+| {{Crafting|A1=Carrot|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Carrots|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_carrots.json|matcha:food/crafting/pickled_carrots}}</small>
+|-
+| [[Seitan]]
+| [[Dough]] +<br />[[Potion]] +<br />[[Carrot]] or [[Potato]] or [[Dried Kelp]]
+| {{Crafting|A1=Dough|B1=Potion|C1=Carrot;Potato;Dried Kelp|Output=Seitan|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/seitan.json|matcha:food/crafting/seitan}}</small>
+|-
+| [[Curry Stock]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Flour]] +<br />[[Oil]] +<br />[[Potato]] +<br />[[Raw Beef]] or [[Raw Mutton]] or [[Raw Flesh]] or [[Seitan]] +<br />[[Carrot]] +<br />[[Bowl]]
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Flour|A2=Oil|B2=Potato|C2=Raw Beef;Raw Mutton;Raw Flesh;Seitan|A3=Carrot|B3=Bowl|Output=Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_curry.json|matcha:food/crafting/uncooked_curry}}</small>
+|-
+| [[Pumpkin Curry Stock]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Baked Pumpkin]] +<br />[[Oil]] +<br />[[Sunflower]] +<br />[[Milk Bottle]] +<br />[[Carrot]] +<br />[[Bamboo]] +<br />[[Bowl]]
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Baked Pumpkin|A2=Oil|B2=Sunflower|C2=Milk Bottle|A3=Carrot|B3=Bamboo|C3=Bowl|Output=Pumpkin Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_pumpkin_curry.json|matcha:food/crafting/uncooked_pumpkin_curry}}</small>
+|-
+| [[Steamed Carrots]]
+| [[Carrot]]
+| {{Cooking|station=Oven|Input=Carrot|Output=Steamed Carrots|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/steamed_carrots.json|matcha:food/oven/steamed_carrots}}</small>
+|-
+| [[Carrot on a Stick]] <small>(vanilla recipe)</small>
+| [[Fishing Rod]] +<br />[[Carrot]]
+| {{Crafting|A1=Fishing Rod|B2=Carrot|Output=Carrot on a Stick}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Silver Sword]]
+| [[Silver Bullion]] +<br />[[Iron Sword]] +<br />[[Nazar]]
+| {{Smithing|Template=Silver Bullion|Base=Iron Sword|Addition=Nazar|Output=Silver Sword}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/silver_sword.json|matcha:smithing/silver_sword}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

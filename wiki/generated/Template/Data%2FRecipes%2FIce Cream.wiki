@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Ice Cream]]
+| [[Snowball]] +<br />[[Milk Bottle]] +<br />[[Sugar]] +<br />[[Blue Orchid]] +<br />[[Bread]]
+| {{Crafting|A1=Snowball|B1=Milk Bottle|C1=Sugar|A2=Blue Orchid|B2=Bread|Output=Ice Cream|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/ice_cream.json|matcha:food/crafting/ice_cream}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

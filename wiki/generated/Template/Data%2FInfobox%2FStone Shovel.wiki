@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Stone Shovel}}
+|invimage=Stone Shovel
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=131
+|damage={{Hp|3.5}}
+|attackspeed=1
+|miningspeed=4
+|repair=<code>#minecraft:stone_tool_materials</code>
+|id=<code>matcha:hepatizon_shovel</code>
+|base=<code>minecraft:stone_shovel</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_shovel.json|hepatizon_shovel.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

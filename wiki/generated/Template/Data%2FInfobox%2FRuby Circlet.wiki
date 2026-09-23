@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Ruby Circlet}}
+|invimage=Ruby Circlet
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[∞]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=250
+|armor=1
+|repair=<code>#minecraft:repairs_netherite_armor</code>
+|tooltip={{G|Armor}} 1
+|id=<code>matcha:ruby_circlet</code>
+|base=<code>minecraft:netherite_helmet</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/equipment/misc/ruby_circlet.json|ruby_circlet.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

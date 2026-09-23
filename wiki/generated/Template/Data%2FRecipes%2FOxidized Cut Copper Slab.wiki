@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oxidized Cut Copper Slab]]
+| [[Weathered Cut Copper Slab]] +<br />[[Potion]]
+| {{Crafting|A1=Weathered Cut Copper Slab|B1=Potion|Output=Oxidized Cut Copper Slab|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_cut_copper_slab_from_patina.json|matcha:crafting/oxidized_cut_copper_slab_from_patina}}</small>
+|-
+| [[Oxidized Cut Copper Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Oxidized Cut Copper]]
+| {{Crafting|A1=Oxidized Cut Copper|B1=Oxidized Cut Copper|C1=Oxidized Cut Copper|Output=Oxidized Cut Copper Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oxidized Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Cut Copper Slab,8}}
+|-
+| [[Oxidized Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Oxidized Cut Copper]]
+| {{Stonecutter|Input=Oxidized Cut Copper|Output=Oxidized Cut Copper Slab,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

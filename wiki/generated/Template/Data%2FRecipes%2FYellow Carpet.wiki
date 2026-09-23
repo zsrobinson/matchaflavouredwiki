@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Yellow Carpet]]
+| 2 × [[Yellow Wool]]
+| {{Crafting|A1=Yellow Wool|B1=Yellow Wool|Output=Yellow Carpet,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/yellow_carpet.json|matcha:crafting/yellow_carpet}}</small>
+|-
+| [[Yellow Carpet]] <small>(vanilla recipe)</small>
+| [[Yellow Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
+| {{Crafting|A1=Yellow Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Yellow Carpet|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

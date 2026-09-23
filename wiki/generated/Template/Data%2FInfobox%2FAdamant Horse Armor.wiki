@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Adamant Horse Armor}}
+|invimage=Adamant Horse Armor
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Netherite Horse Armor}}
+|stackable=No
+|armor=19
+|toughness=3
+|knockbackres=1
+|id=<code>minecraft:netherite_horse_armor</code>
+|source={{Source|vanilla:recipe/netherite_horse_armor_smithing.json|netherite_horse_armor_smithing.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

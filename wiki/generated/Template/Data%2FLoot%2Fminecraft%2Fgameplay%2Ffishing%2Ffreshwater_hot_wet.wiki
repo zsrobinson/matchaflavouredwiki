@@ -1,0 +1,15 @@
+<includeonly><small>Loot table <code>minecraft:gameplay/fishing/freshwater_hot_wet</code> ({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/freshwater_hot_wet.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Guppy}} || 1 || 35.7% || 35.7% || 
+|-
+| {{ItemLink|Bujurqui}} || 1 || 35.7% || 35.7% || 
+|-
+| {{ItemLink|Piranha}} || 1 || 19.0% || 19.0% || 
+|-
+| {{ItemLink|Armoured Catfish}} || 1 || 7.14% || 7.14% || 
+|-
+| {{ItemLink|Arapaima}} || 1 || 2.38% || 2.38% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

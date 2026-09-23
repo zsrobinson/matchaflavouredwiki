@@ -1,0 +1,20 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Glow Berry Mash]]
+| [[Glow Berries]]
+| {{Cooking|station=Kindling|Input=Glow Berries|Output=Glow Berry Mash|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/glow_mash.json|matcha:food/campfire/glow_mash}}</small>
+|-
+| [[Bubbling Mead]]
+| [[Honey Bottle]] +<br />[[Brown Mushroom]] +<br />2 × [[Sugar]] +<br />[[Sweet Berries]] or [[Apple]] or [[Glow Berries]]
+| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sugar|B2=Sweet Berries;Apple;Glow Berries|Output=Bubbling Mead|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bubbling_mead.json|matcha:food/crafting/bubbling_mead}}</small>
+|-
+| [[Mead]]
+| [[Honey Bottle]] +<br />[[Brown Mushroom]] +<br />[[Sugar]] +<br />[[Sweet Berries]] or [[Apple]] or [[Glow Berries]]
+| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sweet Berries;Apple;Glow Berries|Output=Mead|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/mead.json|matcha:food/crafting/mead}}</small>
+|-
+| [[Glow Berry Mash]]
+| [[Glow Berries]]
+| {{Cooking|station=Oven|Input=Glow Berries|Output=Glow Berry Mash|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/glow_mash.json|matcha:food/oven/glow_mash}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

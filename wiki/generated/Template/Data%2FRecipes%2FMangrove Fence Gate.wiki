@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Mangrove Fence Gate]] <small>(vanilla recipe)</small>
+| 4 × [[Stick]] +<br />2 × [[Mangrove Planks]]
+| {{Crafting|A1=Stick|A2=Stick|B1=Mangrove Planks|B2=Mangrove Planks|C1=Stick|C2=Stick|Output=Mangrove Fence Gate}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Mangrove Fence Gate]]
+| Any [[mangrove logs]]
+| {{Stonecutter|Input=Any Mangrove Logs|Output=Mangrove Fence Gate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/mangrove_fence_gate_from_stonecutting_mangrove_logs.json|matcha:stonecutting/mangrove_fence_gate_from_stonecutting_mangrove_logs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

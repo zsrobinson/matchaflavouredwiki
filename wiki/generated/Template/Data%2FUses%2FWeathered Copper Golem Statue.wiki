@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oxidized Copper Golem Statue]]
+| [[Weathered Copper Golem Statue]] +<br />[[Potion]]
+| {{Crafting|A1=Weathered Copper Golem Statue|B1=Potion|Output=Oxidized Copper Golem Statue|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_golem_statue_from_statue.json|matcha:crafting/oxidized_copper_golem_statue_from_statue}}</small>
+|-
+| [[Waxed Weathered Copper Golem Statue]] <small>(vanilla recipe)</small>
+| [[Weathered Copper Golem Statue]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper Golem Statue|B1=Wax|Output=Waxed Weathered Copper Golem Statue|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

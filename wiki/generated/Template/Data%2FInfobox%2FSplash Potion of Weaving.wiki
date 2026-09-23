@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Splash Potion of Weaving}}
+|invimage=Splash Potion of Weaving
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|tooltip={{G|Weaving}} Weaving (5:00)
+|id=<code>minecraft:splash_potion</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_weaving.json|splash_weaving.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

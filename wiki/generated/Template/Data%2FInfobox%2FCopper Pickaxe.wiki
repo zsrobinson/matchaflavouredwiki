@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Copper Pickaxe}}
+|invimage=Copper Pickaxe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|damage={{Hp|3}}
+|attackspeed=1.2
+|miningspeed=6
+|repair=<code>#minecraft:copper_tool_materials</code>
+|tooltip={{G|Mining speed}} 6<br />{{G|Attack damage}} 3<br />{{G|Attack speed}} 1.2
+|id=<code>minecraft:copper_pickaxe</code>
+|base=<code>minecraft:copper_pickaxe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_pickaxe.json|copper_pickaxe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

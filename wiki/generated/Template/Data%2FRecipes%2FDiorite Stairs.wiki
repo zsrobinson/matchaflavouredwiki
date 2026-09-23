@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Diorite Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Diorite]]
+| {{Crafting|A1=Diorite|A2=Diorite|A3=Diorite|B2=Diorite|B3=Diorite|C3=Diorite|Output=Diorite Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Diorite Stairs]] <small>(vanilla recipe)</small>
+| [[Diorite]]
+| {{Stonecutter|Input=Diorite|Output=Diorite Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

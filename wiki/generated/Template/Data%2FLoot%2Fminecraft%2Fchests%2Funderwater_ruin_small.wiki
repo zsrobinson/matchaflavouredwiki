@@ -1,0 +1,29 @@
+<includeonly><small>Loot table <code>minecraft:chests/underwater_ruin_small</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_small.json|source}}); pools roll 1; 2–8 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Fishing Rod}} || 1 || 41.7% || 41.7% || 
+|-
+| {{ItemLink|Buried Treasure Map}} || 1 || 41.7% || 41.7% || 
+|-
+| {{ItemLink|Coal}} || 1–4 || 38.5% || 86.4% || 
+|-
+| {{ItemLink|Straw}} || 2–3 || 38.5% || 86.4% || 
+|-
+| {{ItemLink|Tattered Leather}} || 1 || 19.2% || 62.4% || 
+|-
+| {{ItemLink|Copper Nautilus Armor}} || 1 || 10.8% || 10.8% || 
+|-
+| {{ItemLink|Sturdy Leather}} || 1 || 8.33% || 8.33% || 
+|-
+| {{ItemLink|Nautilus Shell}} || 1 || 8.33% || 8.33% || 
+|-
+| {{ItemLink|Iron Nautilus Armor}} || 1 || 5.41% || 5.41% || 
+|-
+| {{ItemLink|Obol}} || 1 || 3.85% || 17.6% || 
+|-
+| {{ItemLink|Golden Nautilus Armor}} || 1 || 2.70% || 2.70% || 
+|-
+| {{ItemLink|Diamond Nautilus Armor}} || 1 || 1.08% || 1.08% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

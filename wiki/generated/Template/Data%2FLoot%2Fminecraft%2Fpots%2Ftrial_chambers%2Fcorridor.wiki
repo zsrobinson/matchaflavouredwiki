@@ -1,0 +1,19 @@
+<includeonly><small>Loot table <code>minecraft:pots/trial_chambers/corridor</code> ({{Source|MF_datapack/data/minecraft/loot_table/pots/trial_chambers/corridor.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Arrow}} || 2–8 || 44.4% || 44.4% || 
+|-
+| {{ItemLink|Iron Ingot}} || 1–2 || 31.1% || 31.1% || 
+|-
+| {{ItemLink|Raw Estus}} || 1 || 13.3% || 13.3% || 
+|-
+| {{ItemLink|Trial Key}} || 1 || 4.44% || 4.44% || 
+|-
+| {{ItemLink|Obol}} || 1 || 2.22% || 2.22% || 
+|-
+| {{ItemLink|Music Disc}} || 1 || 2.22% || 2.22% || 
+|-
+| {{ItemLink|Diamond}} || 1–2 || 2.22% || 2.22% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,36 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Arrow]]
+| [[Flint]] +<br />[[Stick]] +<br />[[Feather]]
+| {{Crafting|A1=Flint|A2=Stick|A3=Feather|Output=Arrow,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/arrow.json|matcha:crafting/arrow}}</small>
+|-
+| [[Coarse Dirt]]
+| 6 × [[Dirt]] +<br />3 × [[Flint]]
+| {{Crafting|A1=Dirt|A2=Flint|A3=Dirt|B1=Flint|B2=Dirt|B3=Dirt|C1=Dirt|C2=Flint|C3=Dirt|Output=Coarse Dirt,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/coarse_dirt.json|matcha:crafting/coarse_dirt}}</small>
+|-
+| [[Cobbled Deepslate]]
+| 2 × [[Flint]] +<br />2 × [[Clay Ball]]
+| {{Crafting|A1=Flint|A2=Clay Ball|B1=Clay Ball|B2=Flint|Output=Cobbled Deepslate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cobbled_deepslate.json|matcha:crafting/cobbled_deepslate}}</small>
+|-
+| [[Cobblestone]]
+| 4 × [[Flint]]
+| {{Crafting|A1=Flint|A2=Flint|B1=Flint|B2=Flint|Output=Cobblestone}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cobblestone.json|matcha:crafting/cobblestone}}</small>
+|-
+| [[Fire Starter]]
+| 2 × [[Flint]]
+| {{Crafting|A1=Flint|B1=Flint|Output=Fire Starter|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/fire_starter.json|matcha:crafting/fire_starter}}</small>
+|-
+| [[Fire Starter]]
+| 2 × [[Flint]]
+| {{Crafting|A1=Flint|B1=Flint|Output=Fire Starter|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/flint_and_steel.json|matcha:crafting/flint_and_steel}}</small>
+|-
+| [[Gravel]]
+| 2 × [[Dirt]] +<br />2 × [[Flint]]
+| {{Crafting|A1=Dirt|A2=Flint|B1=Flint|B2=Dirt|Output=Gravel,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/gravel.json|matcha:crafting/gravel}}</small>
+|-
+| [[Fletching Table]] <small>(vanilla recipe)</small>
+| 2 × [[Flint]] +<br />4 × Any [[planks]]
+| {{Crafting|A1=Flint|A2=Any Planks|A3=Any Planks|B1=Flint|B2=Any Planks|B3=Any Planks|Output=Fletching Table}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Purple Harness]] <small>(vanilla recipe)</small>
+| [[Purple Dye]] +<br />[[White Harness]] or [[Orange Harness]] or [[Magenta Harness]] or [[Light Blue Harness]] or [[Yellow Harness]] or [[Lime Harness]] or [[Pink Harness]] or [[Gray Harness]] or [[Light Gray Harness]] or [[Cyan Harness]] or [[Blue Harness]] or [[Brown Harness]] or [[Green Harness]] or [[Red Harness]] or [[Black Harness]]
+| {{Crafting|A1=Purple Dye|B1=White Harness;Orange Harness;Magenta Harness;Light Blue Harness;Yellow Harness;Lime Harness;Pink Harness;Gray Harness;Light Gray Harness;Cyan Harness;Blue Harness;Brown Harness;Green Harness;Red Harness;Black Harness|Output=Purple Harness|shapeless=1}}
+|-
+| [[Purple Harness]] <small>(vanilla recipe)</small>
+| 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Purple Wool]]
+| {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Purple Wool|C1=Sturdy Leather|C2=Glass|Output=Purple Harness}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

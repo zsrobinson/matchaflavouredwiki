@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cornflower]]
+| [[Cornflower]] +<br />[[Potion]] +<br />[[Bone Meal]]
+| {{Crafting|A1=Cornflower|B1=Potion|C1=Bone Meal|Output=Cornflower,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_cornflower.json|matcha:crafting/clone_cornflower}}</small>
+|-
+| [[Banner Pattern]]
+| [[Paper]] +<br />[[Cornflower]]
+| {{Crafting|A1=Paper|B1=Cornflower|Output=Banner Pattern|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/globe_banner_pattern.json|matcha:crafting/globe_banner_pattern}}</small>
+|-
+| [[Blue Dye]] <small>(vanilla recipe)</small>
+| [[Cornflower]]
+| {{Crafting|A1=Cornflower|Output=Blue Dye|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

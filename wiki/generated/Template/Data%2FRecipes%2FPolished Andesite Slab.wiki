@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Polished Andesite Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Polished Andesite]]
+| {{Crafting|A1=Polished Andesite|B1=Polished Andesite|C1=Polished Andesite|Output=Polished Andesite Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Polished Andesite Slab]] <small>(vanilla recipe)</small>
+| [[Andesite]]
+| {{Stonecutter|Input=Andesite|Output=Polished Andesite Slab,2}}
+|-
+| [[Polished Andesite Slab]] <small>(vanilla recipe)</small>
+| [[Polished Andesite]]
+| {{Stonecutter|Input=Polished Andesite|Output=Polished Andesite Slab,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

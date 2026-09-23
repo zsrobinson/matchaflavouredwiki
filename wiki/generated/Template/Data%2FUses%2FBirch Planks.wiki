@@ -1,0 +1,216 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Jukebox]]
+| 8 × Any [[planks]] +<br />[[Hepatizon Alloy]]
+| {{Crafting|A1=Any Planks|A2=Any Planks|A3=Any Planks|B1=Any Planks|B2=Hepatizon Alloy|B3=Any Planks|C1=Any Planks|C2=Any Planks|C3=Any Planks|Output=Jukebox}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/jukebox.json|matcha:crafting/jukebox}}</small>
+|-
+| [[Smithing Table]]
+| 2 × [[Steel Alloy]] +<br />4 × Any [[planks]]
+| {{Crafting|A1=Steel Alloy|A2=Any Planks|A3=Any Planks|B1=Steel Alloy|B2=Any Planks|B3=Any Planks|Output=Smithing Table}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/smithing_table.json|matcha:crafting/smithing_table}}</small>
+|-
+| [[Chest]]
+| 8 × Any [[planks]]
+| {{Crafting|A1=Any Planks|A2=Any Planks|A3=Any Planks|B1=Any Planks|B3=Any Planks|C1=Any Planks|C2=Any Planks|C3=Any Planks|Output=Chest}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/vanilla_chest_from_planks.json|matcha:crafting/vanilla_chest_from_planks}}</small>
+|-
+| [[Wooden Axe]]
+| 3 × Any [[wooden tool materials]] +<br />2 × [[Stick]]
+| {{Crafting|A1=Any Wooden Tool Materials|A2=Any Wooden Tool Materials|B1=Any Wooden Tool Materials|B2=Stick|B3=Stick|Output=Wooden Axe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_axe.json|matcha:crafting/wooden_axe}}</small>
+|-
+| [[Wooden Hoe]]
+| 2 × Any [[wooden tool materials]] +<br />2 × [[Stick]]
+| {{Crafting|A1=Any Wooden Tool Materials|B1=Any Wooden Tool Materials|B2=Stick|B3=Stick|Output=Wooden Hoe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_hoe.json|matcha:crafting/wooden_hoe}}</small>
+|-
+| [[Wooden Pickaxe]]
+| 3 × Any [[wooden tool materials]] +<br />2 × [[Stick]]
+| {{Crafting|A1=Any Wooden Tool Materials|B1=Any Wooden Tool Materials|B2=Stick|B3=Stick|C1=Any Wooden Tool Materials|Output=Wooden Pickaxe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_pickaxe.json|matcha:crafting/wooden_pickaxe}}</small>
+|-
+| [[Wooden Shovel]]
+| Any [[wooden tool materials]] +<br />2 × [[Stick]]
+| {{Crafting|A1=Any Wooden Tool Materials|A2=Stick|A3=Stick|Output=Wooden Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_shovel.json|matcha:crafting/wooden_shovel}}</small>
+|-
+| [[Wooden Spear]]
+| Any [[wooden tool materials]] +<br />2 × [[Stick]]
+| {{Crafting|A3=Stick|B2=Stick|C1=Any Wooden Tool Materials|Output=Wooden Spear}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_spear.json|matcha:crafting/wooden_spear}}</small>
+|-
+| [[Wooden Sword]]
+| 2 × Any [[wooden tool materials]] +<br />[[Stick]]
+| {{Crafting|A1=Any Wooden Tool Materials|A2=Any Wooden Tool Materials|A3=Stick|Output=Wooden Sword}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_sword.json|matcha:crafting/wooden_sword}}</small>
+|-
+| [[Birch Button]]
+| [[Birch Planks]]
+| {{Stonecutter|Input=Birch Planks|Output=Birch Button,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_button_from_stonecutting_birch_planks.json|matcha:stonecutting/birch_button_from_stonecutting_birch_planks}}</small>
+|-
+| [[Birch Pressure Plate]]
+| [[Birch Planks]]
+| {{Stonecutter|Input=Birch Planks|Output=Birch Pressure Plate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_pressure_plate_from_stonecutting_birch_planks.json|matcha:stonecutting/birch_pressure_plate_from_stonecutting_birch_planks}}</small>
+|-
+| [[Birch Slab]]
+| [[Birch Planks]]
+| {{Stonecutter|Input=Birch Planks|Output=Birch Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_slabs_from_stonecutting_birch_planks.json|matcha:stonecutting/birch_slabs_from_stonecutting_birch_planks}}</small>
+|-
+| [[Birch Stairs]]
+| [[Birch Planks]]
+| {{Stonecutter|Input=Birch Planks|Output=Birch Stairs}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_stairs_from_stonecutting_birch_planks.json|matcha:stonecutting/birch_stairs_from_stonecutting_birch_planks}}</small>
+|-
+| [[Birch Trapdoor]]
+| [[Birch Planks]]
+| {{Stonecutter|Input=Birch Planks|Output=Birch Trapdoor}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_trapdoor_from_stonecutting_birch_planks.json|matcha:stonecutting/birch_trapdoor_from_stonecutting_birch_planks}}</small>
+|-
+| [[Barrel]] <small>(vanilla recipe)</small>
+| 6 × Any [[planks]] +<br />2 × Any [[wooden slabs]]
+| {{Crafting|A1=Any Planks|A2=Any Planks|A3=Any Planks|B1=Any Wooden Slabs|B3=Any Wooden Slabs|C1=Any Planks|C2=Any Planks|C3=Any Planks|Output=Barrel}}
+|-
+| [[Beehive]] <small>(vanilla recipe)</small>
+| 6 × Any [[planks]] +<br />3 × [[Wax]]
+| {{Crafting|A1=Any Planks|A2=Wax|A3=Any Planks|B1=Any Planks|B2=Wax|B3=Any Planks|C1=Any Planks|C2=Wax|C3=Any Planks|Output=Beehive}}
+|-
+| [[Birch Boat]] <small>(vanilla recipe)</small>
+| 5 × [[Birch Planks]]
+| {{Crafting|A1=Birch Planks|A2=Birch Planks|B2=Birch Planks|C1=Birch Planks|C2=Birch Planks|Output=Birch Boat}}
+|-
+| [[Birch Button]] <small>(vanilla recipe)</small>
+| [[Birch Planks]]
+| {{Crafting|A1=Birch Planks|Output=Birch Button|shapeless=1}}
+|-
+| [[Birch Door]] <small>(vanilla recipe)</small>
+| 6 × [[Birch Planks]]
+| {{Crafting|A1=Birch Planks|A2=Birch Planks|A3=Birch Planks|B1=Birch Planks|B2=Birch Planks|B3=Birch Planks|Output=Birch Door,3}}
+|-
+| [[Birch Fence]] <small>(vanilla recipe)</small>
+| 4 × [[Birch Planks]] +<br />2 × [[Stick]]
+| {{Crafting|A1=Birch Planks|A2=Birch Planks|B1=Stick|B2=Stick|C1=Birch Planks|C2=Birch Planks|Output=Birch Fence,3}}
+|-
+| [[Birch Fence Gate]] <small>(vanilla recipe)</small>
+| 4 × [[Stick]] +<br />2 × [[Birch Planks]]
+| {{Crafting|A1=Stick|A2=Stick|B1=Birch Planks|B2=Birch Planks|C1=Stick|C2=Stick|Output=Birch Fence Gate}}
+|-
+| [[Birch Pressure Plate]] <small>(vanilla recipe)</small>
+| 2 × [[Birch Planks]]
+| {{Crafting|A1=Birch Planks|B1=Birch Planks|Output=Birch Pressure Plate}}
+|-
+| [[Birch Sign]] <small>(vanilla recipe)</small>
+| 6 × [[Birch Planks]] +<br />[[Stick]]
+| {{Crafting|A1=Birch Planks|A2=Birch Planks|B1=Birch Planks|B2=Birch Planks|B3=Stick|C1=Birch Planks|C2=Birch Planks|Output=Birch Sign,3}}
+|-
+| [[Birch Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Birch Planks]]
+| {{Crafting|A1=Birch Planks|B1=Birch Planks|C1=Birch Planks|Output=Birch Slab,6}}
+|-
+| [[Birch Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Birch Planks]]
+| {{Crafting|A1=Birch Planks|A2=Birch Planks|A3=Birch Planks|B2=Birch Planks|B3=Birch Planks|C3=Birch Planks|Output=Birch Stairs,4}}
+|-
+| [[Birch Trapdoor]] <small>(vanilla recipe)</small>
+| 6 × [[Birch Planks]]
+| {{Crafting|A1=Birch Planks|A2=Birch Planks|B1=Birch Planks|B2=Birch Planks|C1=Birch Planks|C2=Birch Planks|Output=Birch Trapdoor,2}}
+|-
+| [[Black Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Black Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Black Wool|A2=Any Planks|B1=Black Wool|B2=Any Planks|C1=Black Wool|C2=Any Planks|Output=Black Bed}}
+|-
+| [[Blue Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Blue Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Blue Wool|A2=Any Planks|B1=Blue Wool|B2=Any Planks|C1=Blue Wool|C2=Any Planks|Output=Blue Bed}}
+|-
+| [[Brown Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Brown Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Brown Wool|A2=Any Planks|B1=Brown Wool|B2=Any Planks|C1=Brown Wool|C2=Any Planks|Output=Brown Bed}}
+|-
+| [[Cartography Table]] <small>(vanilla recipe)</small>
+| 2 × [[Paper]] +<br />4 × Any [[planks]]
+| {{Crafting|A1=Paper|A2=Any Planks|A3=Any Planks|B1=Paper|B2=Any Planks|B3=Any Planks|Output=Cartography Table}}
+|-
+| [[Chiseled Bookshelf]] <small>(vanilla recipe)</small>
+| 6 × Any [[planks]] +<br />3 × Any [[wooden slabs]]
+| {{Crafting|A1=Any Planks|A2=Any Wooden Slabs|A3=Any Planks|B1=Any Planks|B2=Any Wooden Slabs|B3=Any Planks|C1=Any Planks|C2=Any Wooden Slabs|C3=Any Planks|Output=Chiseled Bookshelf}}
+|-
+| [[Crafting Table]] <small>(vanilla recipe)</small>
+| 4 × Any [[planks]]
+| {{Crafting|A1=Any Planks|A2=Any Planks|B1=Any Planks|B2=Any Planks|Output=Crafting Table}}
+|-
+| [[Cyan Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Cyan Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Cyan Wool|A2=Any Planks|B1=Cyan Wool|B2=Any Planks|C1=Cyan Wool|C2=Any Planks|Output=Cyan Bed}}
+|-
+| [[Fletching Table]] <small>(vanilla recipe)</small>
+| 2 × [[Flint]] +<br />4 × Any [[planks]]
+| {{Crafting|A1=Flint|A2=Any Planks|A3=Any Planks|B1=Flint|B2=Any Planks|B3=Any Planks|Output=Fletching Table}}
+|-
+| [[Gray Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Gray Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Gray Wool|A2=Any Planks|B1=Gray Wool|B2=Any Planks|C1=Gray Wool|C2=Any Planks|Output=Gray Bed}}
+|-
+| [[Green Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Green Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Green Wool|A2=Any Planks|B1=Green Wool|B2=Any Planks|C1=Green Wool|C2=Any Planks|Output=Green Bed}}
+|-
+| [[Grindstone]] <small>(vanilla recipe)</small>
+| 2 × [[Stick]] +<br />[[Stone Slab]] +<br />2 × Any [[planks]]
+| {{Crafting|A1=Stick|A2=Any Planks|B1=Stone Slab|C1=Stick|C2=Any Planks|Output=Grindstone}}
+|-
+| [[Light Blue Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Light Blue Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Light Blue Wool|A2=Any Planks|B1=Light Blue Wool|B2=Any Planks|C1=Light Blue Wool|C2=Any Planks|Output=Light Blue Bed}}
+|-
+| [[Light Gray Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Light Gray Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Light Gray Wool|A2=Any Planks|B1=Light Gray Wool|B2=Any Planks|C1=Light Gray Wool|C2=Any Planks|Output=Light Gray Bed}}
+|-
+| [[Lime Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Lime Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Lime Wool|A2=Any Planks|B1=Lime Wool|B2=Any Planks|C1=Lime Wool|C2=Any Planks|Output=Lime Bed}}
+|-
+| [[Loom]] <small>(vanilla recipe)</small>
+| 2 × [[String]] +<br />2 × Any [[planks]]
+| {{Crafting|A1=String|A2=Any Planks|B1=String|B2=Any Planks|Output=Loom}}
+|-
+| [[Magenta Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Magenta Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Magenta Wool|A2=Any Planks|B1=Magenta Wool|B2=Any Planks|C1=Magenta Wool|C2=Any Planks|Output=Magenta Bed}}
+|-
+| [[Note Block]] <small>(vanilla recipe)</small>
+| 8 × Any [[planks]] +<br />[[Electric Wire]]
+| {{Crafting|A1=Any Planks|A2=Any Planks|A3=Any Planks|B1=Any Planks|B2=Electric Wire|B3=Any Planks|C1=Any Planks|C2=Any Planks|C3=Any Planks|Output=Note Block}}
+|-
+| [[Orange Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Orange Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Orange Wool|A2=Any Planks|B1=Orange Wool|B2=Any Planks|C1=Orange Wool|C2=Any Planks|Output=Orange Bed}}
+|-
+| [[Pink Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Pink Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Pink Wool|A2=Any Planks|B1=Pink Wool|B2=Any Planks|C1=Pink Wool|C2=Any Planks|Output=Pink Bed}}
+|-
+| [[Piston]] <small>(vanilla recipe)</small>
+| 3 × Any [[planks]] +<br />4 × [[Cobblestone]] +<br />[[Iron Ingot]] +<br />[[Electric Wire]]
+| {{Crafting|A1=Any Planks|A2=Cobblestone|A3=Cobblestone|B1=Any Planks|B2=Iron Ingot|B3=Electric Wire|C1=Any Planks|C2=Cobblestone|C3=Cobblestone|Output=Piston}}
+|-
+| [[Purple Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Purple Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Purple Wool|A2=Any Planks|B1=Purple Wool|B2=Any Planks|C1=Purple Wool|C2=Any Planks|Output=Purple Bed}}
+|-
+| [[Red Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Red Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Red Wool|A2=Any Planks|B1=Red Wool|B2=Any Planks|C1=Red Wool|C2=Any Planks|Output=Red Bed}}
+|-
+| [[Shield]] <small>(vanilla recipe)</small>
+| 6 × Any [[wooden tool materials]] +<br />[[Iron Ingot]]
+| {{Crafting|A1=Any Wooden Tool Materials|A2=Any Wooden Tool Materials|B1=Iron Ingot|B2=Any Wooden Tool Materials|B3=Any Wooden Tool Materials|C1=Any Wooden Tool Materials|C2=Any Wooden Tool Materials|Output=Shield}}
+|-
+| [[Stick]] <small>(vanilla recipe)</small>
+| 2 × Any [[planks]]
+| {{Crafting|A1=Any Planks|A2=Any Planks|Output=Stick,4}}
+|-
+| [[Tripwire Hook]] <small>(vanilla recipe)</small>
+| [[Iron Ingot]] +<br />[[Stick]] +<br />Any [[planks]]
+| {{Crafting|A1=Iron Ingot|A2=Stick|A3=Any Planks|Output=Tripwire Hook,2}}
+|-
+| [[White Bed]] <small>(vanilla recipe)</small>
+| 3 × [[White Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=White Wool|A2=Any Planks|B1=White Wool|B2=Any Planks|C1=White Wool|C2=Any Planks|Output=White Bed}}
+|-
+| [[Yellow Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Yellow Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Yellow Wool|A2=Any Planks|B1=Yellow Wool|B2=Any Planks|C1=Yellow Wool|C2=Any Planks|Output=Yellow Bed}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

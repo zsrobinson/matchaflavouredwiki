@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Acacia Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Acacia Planks]]
+| {{Crafting|A1=Acacia Planks|B1=Acacia Planks|C1=Acacia Planks|Output=Acacia Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Acacia Slab]]
+| [[Acacia Trapdoor]]
+| {{Stonecutter|Input=Acacia Trapdoor|Output=Acacia Slab}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_slab_from_stonecutting_acacia_trapdoor.json|matcha:stonecutting/acacia_slab_from_stonecutting_acacia_trapdoor}}</small>
+|-
+| [[Acacia Slab]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_slabs_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_slabs_from_stonecutting_acacia_logs}}</small>
+|-
+| [[Acacia Slab]]
+| [[Acacia Planks]]
+| {{Stonecutter|Input=Acacia Planks|Output=Acacia Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_slabs_from_stonecutting_acacia_planks.json|matcha:stonecutting/acacia_slabs_from_stonecutting_acacia_planks}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

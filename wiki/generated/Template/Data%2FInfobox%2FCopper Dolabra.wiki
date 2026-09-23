@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Copper Dolabra}}
+|invimage=Copper Dolabra
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|damage={{Hp|5}}
+|attackspeed=0.8
+|miningspeed=5
+|repair=<code>#minecraft:copper_tool_materials</code>
+|tooltip={{G|Mining speed}} 5<br />{{G|Attack damage}} 5<br />{{G|Attack speed}} 0.8
+|id=<code>matcha:copper_dolabra</code>
+|base=<code>minecraft:copper_axe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_dolabra.json|copper_dolabra.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

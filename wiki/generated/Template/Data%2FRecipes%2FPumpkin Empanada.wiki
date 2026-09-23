@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Pumpkin Empanada]]
+| [[Baked Pumpkin]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Dough]]
+| {{Crafting|A1=Baked Pumpkin|B1=Sugar|C1=Estus Ash|A2=Dough|Output=Pumpkin Empanada|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_empanada.json|matcha:food/crafting/pumpkin_empanada}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

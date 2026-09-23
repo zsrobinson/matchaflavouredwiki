@@ -1,0 +1,32 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Common / junk <small>({{Source|MF_datapack/data/matcha/loot_table/chests/common/junk.json|chests/common/junk}})</small> || 4–12 || 50.0% || 
+|-
+| Village / village savanna house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_savanna_house.json|chests/village/village_savanna_house}})</small> || 1–5 || 71.7% || 
+|}
+
+'''Archaeology'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Trail ruins common <small>({{Source|MF_datapack/data/minecraft/loot_table/archaeology/trail_ruins_common.json|archaeology/trail_ruins_common}})</small> || 1 || 2.27% || 
+|}
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Short grass <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/short_grass.json|blocks/short_grass}})</small> || 1 || 4.17% || tool: #minecraft:hoes
+|-
+| Tall grass <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/tall_grass.json|blocks/tall_grass}})</small> || 1 || 8.33% || block state property, location, tool: #minecraft:hoes
+|-
+| Wheat <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/wheat.json|blocks/wheat}})</small> || 1 || 50.0% || 
+|-
+| Wheat <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/wheat.json|blocks/wheat}})</small> || 1 || 100% || block state property
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

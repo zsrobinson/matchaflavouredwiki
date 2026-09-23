@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Shakudo Elytra}}
+|invimage=Shakudo Elytra
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Equipment}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[20]]<br />[[Cleanse Maleffect]]<br />[[(00:30)]]}}
+|renewable={{{renewable|}}}
+|rarity=Epic
+|stackable=No
+|durability=800
+|armor=1
+|repair=[[Honeycomb Block]], [[Block of Copper]]
+|tooltip={{G|Armor}} 1<br />Elytra Bonus:<br />{{G|Health}} {{G|Cooldown}} -(00:10)<br />Repaired with:<br />Honeycomb Block<br />item.minecraft.copper_block
+|id=<code>matcha:shakudo_elytra</code>
+|base=<code>minecraft:elytra</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_elytra.json|shakudo_elytra.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,100 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Kindling]]
+| 2 × [[Stick]] +<br />2 × Any [[logs]]
+| {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json|matcha:crafting/campfire}}</small>
+|-
+| [[Chest]]
+| 8 × Any [[logs]]
+| {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/chest_from_logs.json|matcha:crafting/chest_from_logs}}</small>
+|-
+| [[Stick]]
+| 2 × Any [[logs]]
+| {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sticks_from_logs.json|matcha:crafting/sticks_from_logs}}</small>
+|-
+| [[Charcoal]]
+| Any [[logs that burn]]
+| {{Cooking|station=Mud Kiln|Input=Any Logs That Burn|Output=Charcoal|note=5 s, 0.15 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/charcoal.json|matcha:kiln/charcoal}}</small>
+|-
+| [[Barrel]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Barrel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/barrel_from_stonecutting_any_logs.json|matcha:stonecutting/barrel_from_stonecutting_any_logs}}</small>
+|-
+| [[Chiseled Bookshelf]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Chiseled Bookshelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/chiseled_bookshelf_from_stonecutting_any_logs.json|matcha:stonecutting/chiseled_bookshelf_from_stonecutting_any_logs}}</small>
+|-
+| [[Ladder]]
+| Any [[logs]]
+| {{Stonecutter|Input=Any Logs|Output=Ladder,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/ladder_from_stonecutting_any_logs.json|matcha:stonecutting/ladder_from_stonecutting_any_logs}}</small>
+|-
+| [[Spruce Button]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_button_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_button_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Spruce Door]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Door,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_door_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_door_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Spruce Fence]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Fence,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_fence_from_stonecutting_spruce_log.json|matcha:stonecutting/spruce_fence_from_stonecutting_spruce_log}}</small>
+|-
+| [[Spruce Fence Gate]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Fence Gate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_fence_gate_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_fence_gate_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Spruce Planks]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_planks_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_planks_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Spruce Pressure Plate]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Pressure Plate,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_pressure_plate_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_pressure_plate_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Spruce Shelf]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_shelf_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_shelf_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Spruce Sign]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Sign,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_sign_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_sign_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Spruce Slab]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_slabs_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_slabs_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Spruce Stairs]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Stairs,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_stairs_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_stairs_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Spruce Trapdoor]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_trapoor_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_trapoor_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Spruce Wood]]
+| [[Stripped Spruce Log]] or [[Spruce Log]] or [[Stripped Spruce Wood]]
+| {{Stonecutter|Input=Stripped Spruce Log;Spruce Log;Stripped Spruce Wood|Output=Spruce Wood}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_wood_from_stonecutting_spruce_log.json|matcha:stonecutting/spruce_wood_from_stonecutting_spruce_log}}</small>
+|-
+| [[Stripped Spruce Log]]
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Wood]]
+| {{Stonecutter|Input=Spruce Log;Spruce Wood;Stripped Spruce Wood|Output=Stripped Spruce Log}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_spruce_log_from_stonecutting_spruce_logs.json|matcha:stonecutting/stripped_spruce_log_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Stripped Spruce Wood]]
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]]
+| {{Stonecutter|Input=Spruce Log;Spruce Wood;Stripped Spruce Log|Output=Stripped Spruce Wood}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_spruce_wood_from_stonecutting_spruce_logs.json|matcha:stonecutting/stripped_spruce_wood_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Charcoal]] <small>(vanilla recipe)</small>
+| Any [[logs that burn]]
+| {{Cooking|station=Oven|Input=Any Logs That Burn|Output=Charcoal|note=10 s, 0.15 XP}}
+|-
+| [[Spruce Planks]] <small>(vanilla recipe)</small>
+| Any [[spruce logs]]
+| {{Crafting|A1=Any Spruce Logs|Output=Spruce Planks,4|shapeless=1}}
+|-
+| [[Spruce Wood]] <small>(vanilla recipe)</small>
+| 4 × [[Spruce Log]]
+| {{Crafting|A1=Spruce Log|A2=Spruce Log|B1=Spruce Log|B2=Spruce Log|Output=Spruce Wood,3}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

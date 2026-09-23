@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Chiseled Copper,4}}
+|-
+| [[Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Cut Copper]]
+| {{Stonecutter|Input=Cut Copper|Output=Chiseled Copper}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

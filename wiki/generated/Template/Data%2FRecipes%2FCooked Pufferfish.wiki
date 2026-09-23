@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cooked Pufferfish]]
+| [[Pufferfish]]
+| {{Cooking|station=Kindling|Input=Pufferfish|Output=Cooked Pufferfish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_pufferfish.json|matcha:food/campfire/cooked_pufferfish}}</small>
+|-
+| [[Cooked Pufferfish]]
+| [[Pufferfish]]
+| {{Cooking|station=Oven|Input=Pufferfish|Output=Cooked Pufferfish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pufferfish.json|matcha:food/oven/cooked_pufferfish}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

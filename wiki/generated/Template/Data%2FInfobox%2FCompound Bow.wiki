@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Compound Bow}}
+|invimage=Compound Bow
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Power]] II}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=600
+|repair=[[Iron Ingot]], [[Iron Nugget]], [[Stick]], [[String]]
+|id=<code>matcha:compound_bow</code>
+|base=<code>minecraft:bow</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/barracks.json|barracks.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oak Button]] <small>(vanilla recipe)</small>
+| [[Oak Planks]]
+| {{Crafting|A1=Oak Planks|Output=Oak Button|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oak Button]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_button_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_button_from_stonecutting_oak_logs}}</small>
+|-
+| [[Oak Button]]
+| [[Oak Planks]]
+| {{Stonecutter|Input=Oak Planks|Output=Oak Button,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_button_from_stonecutting_oak_planks.json|matcha:stonecutting/oak_button_from_stonecutting_oak_planks}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

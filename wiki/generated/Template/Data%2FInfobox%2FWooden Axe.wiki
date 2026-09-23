@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Wooden Axe}}
+|invimage=Wooden Axe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=200
+|damage={{Hp|7}}
+|attackspeed=0.8
+|miningspeed=2
+|repair=<code>#minecraft:wooden_tool_materials</code>
+|tooltip=⛏ 2<br />🗡 7<br />🕒 0.8
+|id=<code>matcha:shakudo_pickaxe</code>
+|base=<code>minecraft:wooden_axe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/wooden_axe.json|wooden_axe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

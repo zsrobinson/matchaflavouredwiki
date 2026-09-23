@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Hepatizon Sword}}
+|invimage=Hepatizon Sword
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Riposte]] II}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1000
+|damage={{Hp|6}}
+|attackspeed=1.9
+|miningspeed=340282349999999991754788743781432688640
+|repair=[[Block of Copper]]
+|tooltip={{G|Attack damage}} 6<br />{{G|Attack speed}} 1.9<br />{{G|Speed}} +0.01<br />Repaired with:<br />Block of Copper
+|id=<code>matcha:hepatizon_sword</code>
+|base=<code>minecraft:stone_sword</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_sword.json|hepatizon_sword.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

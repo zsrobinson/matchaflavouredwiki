@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Lime Stained Glass Pane]]
+| [[Lime Stained Glass]]
+| {{Stonecutter|Input=Lime Stained Glass|Output=Lime Stained Glass Pane,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/lime_stained_glass_pane.json|matcha:stonecutting/lime_stained_glass_pane}}</small>
+|-
+| [[Lime Stained Glass Pane]] <small>(vanilla recipe)</small>
+| 6 × [[Lime Stained Glass]]
+| {{Crafting|A1=Lime Stained Glass|A2=Lime Stained Glass|B1=Lime Stained Glass|B2=Lime Stained Glass|C1=Lime Stained Glass|C2=Lime Stained Glass|Output=Lime Stained Glass Pane,16}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Hepatizon Boots}}
+|invimage=Hepatizon Boots
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=500
+|armor=3
+|repair=[[Block of Copper]]
+|tooltip={{G|Armor}} 3<br />{{G|Speed}} +0.01<br />Repaired with:<br />Block of Copper
+|id=<code>matcha:hepatizon_boots</code>
+|base=<code>minecraft:copper_boots</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_boots.json|hepatizon_boots.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

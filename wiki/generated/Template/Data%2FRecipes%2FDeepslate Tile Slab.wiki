@@ -1,0 +1,33 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Deepslate Tile Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Deepslate Tiles]]
+| {{Crafting|A1=Deepslate Tiles|B1=Deepslate Tiles|C1=Deepslate Tiles|Output=Deepslate Tile Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Deepslate Tile Slab]] <small>(vanilla recipe)</small>
+| [[Cobbled Deepslate]]
+| {{Stonecutter|Input=Cobbled Deepslate|Output=Deepslate Tile Slab,2}}
+|-
+| [[Deepslate Tile Slab]] <small>(vanilla recipe)</small>
+| [[Deepslate Bricks]]
+| {{Stonecutter|Input=Deepslate Bricks|Output=Deepslate Tile Slab,2}}
+|-
+| [[Deepslate Tile Slab]] <small>(vanilla recipe)</small>
+| [[Deepslate]]
+| {{Stonecutter|Input=Deepslate|Output=Deepslate Tile Slab,2}}
+|-
+| [[Deepslate Tile Slab]] <small>(vanilla recipe)</small>
+| [[Deepslate Tiles]]
+| {{Stonecutter|Input=Deepslate Tiles|Output=Deepslate Tile Slab,2}}
+|-
+| [[Deepslate Tile Slab]] <small>(vanilla recipe)</small>
+| [[Polished Deepslate]]
+| {{Stonecutter|Input=Polished Deepslate|Output=Deepslate Tile Slab,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

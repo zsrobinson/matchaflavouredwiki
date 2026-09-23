@@ -1,0 +1,48 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Polished Sulfur Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Polished Sulfur]]
+| {{Crafting|A1=Polished Sulfur|B1=Polished Sulfur|C1=Polished Sulfur|Output=Polished Sulfur Slab,6}}
+|-
+| [[Polished Sulfur Slab]] <small>(vanilla recipe)</small>
+| [[Polished Sulfur]]
+| {{Stonecutter|Input=Polished Sulfur|Output=Polished Sulfur Slab,2}}
+|-
+| [[Polished Sulfur Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Polished Sulfur]]
+| {{Crafting|A1=Polished Sulfur|A2=Polished Sulfur|A3=Polished Sulfur|B2=Polished Sulfur|B3=Polished Sulfur|C3=Polished Sulfur|Output=Polished Sulfur Stairs,4}}
+|-
+| [[Polished Sulfur Stairs]] <small>(vanilla recipe)</small>
+| [[Polished Sulfur]]
+| {{Stonecutter|Input=Polished Sulfur|Output=Polished Sulfur Stairs}}
+|-
+| [[Polished Sulfur Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Polished Sulfur]]
+| {{Crafting|A1=Polished Sulfur|A2=Polished Sulfur|B1=Polished Sulfur|B2=Polished Sulfur|C1=Polished Sulfur|C2=Polished Sulfur|Output=Polished Sulfur Wall,6}}
+|-
+| [[Polished Sulfur Wall]] <small>(vanilla recipe)</small>
+| [[Polished Sulfur]]
+| {{Stonecutter|Input=Polished Sulfur|Output=Polished Sulfur Wall}}
+|-
+| [[Sulfur Brick Slab]] <small>(vanilla recipe)</small>
+| [[Polished Sulfur]]
+| {{Stonecutter|Input=Polished Sulfur|Output=Sulfur Brick Slab,2}}
+|-
+| [[Sulfur Brick Stairs]] <small>(vanilla recipe)</small>
+| [[Polished Sulfur]]
+| {{Stonecutter|Input=Polished Sulfur|Output=Sulfur Brick Stairs}}
+|-
+| [[Sulfur Brick Wall]] <small>(vanilla recipe)</small>
+| [[Polished Sulfur]]
+| {{Stonecutter|Input=Polished Sulfur|Output=Sulfur Brick Wall}}
+|-
+| [[Sulfur Bricks]] <small>(vanilla recipe)</small>
+| 4 × [[Polished Sulfur]]
+| {{Crafting|A1=Polished Sulfur|A2=Polished Sulfur|B1=Polished Sulfur|B2=Polished Sulfur|Output=Sulfur Bricks,4}}
+|-
+| [[Sulfur Bricks]] <small>(vanilla recipe)</small>
+| [[Polished Sulfur]]
+| {{Stonecutter|Input=Polished Sulfur|Output=Sulfur Bricks}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

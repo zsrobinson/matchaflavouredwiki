@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Gray Dye]] <small>(vanilla recipe)</small>
+| [[Black Dye]] +<br />[[White Dye]]
+| {{Crafting|A1=Black Dye|B1=White Dye|Output=Gray Dye,2|shapeless=1}}
+|-
+| [[Gray Dye]] <small>(vanilla recipe)</small>
+| [[Closed Eyeblossom]]
+| {{Crafting|A1=Closed Eyeblossom|Output=Gray Dye|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

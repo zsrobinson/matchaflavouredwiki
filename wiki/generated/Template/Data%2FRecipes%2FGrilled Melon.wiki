@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Grilled Melon]]
+| [[Melon Slice]]
+| {{Cooking|station=Kindling|Input=Melon Slice|Output=Grilled Melon|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/grilled_melon.json|matcha:food/campfire/grilled_melon}}</small>
+|-
+| [[Grilled Melon]]
+| [[Melon Slice]]
+| {{Cooking|station=Oven|Input=Melon Slice|Output=Grilled Melon|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/grilled_melon.json|matcha:food/oven/grilled_melon}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

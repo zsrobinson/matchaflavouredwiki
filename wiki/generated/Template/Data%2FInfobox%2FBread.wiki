@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Bread}}
+|invimage=Bread
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|4}}
+|eat_time=1.6 seconds
+|tooltip={{G|Health}}{{G|Health}}<br />{{G|Cleanse}} Cleanse Maleffect
+|id=<code>minecraft:bread</code>
+|base=<code>minecraft:bread</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/bread.json|bread.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

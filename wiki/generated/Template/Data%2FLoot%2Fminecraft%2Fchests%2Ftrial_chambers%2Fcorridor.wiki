@@ -1,0 +1,23 @@
+<includeonly><small>Loot table <code>minecraft:chests/trial_chambers/corridor</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/corridor.json|source}}); pools roll 3–5 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Tuff}} || 8–20 || 20.0% || 58.4% || 
+|-
+| {{ItemLink|Stable Void}} || 1–2 || 13.3% || 43.2% || 
+|-
+| {{ItemLink|Scaffolding}} || 2–10 || 13.3% || 43.2% || 
+|-
+| {{ItemLink|Torch}} || 5–12 || 13.3% || 43.2% || 
+|-
+| {{ItemLink|Iron Pickaxe}} || 1 || 8.33% || 29.2% || 
+|-
+| {{ItemLink|Iron Axe}} || 1 || 8.33% || 29.2% || 
+|-
+| {{ItemLink|Iron Shovel}} || 1 || 8.33% || 29.2% || 
+|-
+| {{ItemLink|Iron Hoe}} || 1 || 8.33% || 29.2% || 
+|-
+| {{ItemLink|Wax}} || 2–8 || 6.67% || 24.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

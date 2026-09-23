@@ -1,0 +1,35 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Crying Obsidian]]
+| 4 × [[Amethyst Shard]] +<br />[[Obsidian]]
+| {{Crafting|A2=Amethyst Shard|B1=Amethyst Shard|B2=Obsidian|B3=Amethyst Shard|C2=Amethyst Shard|Output=Crying Obsidian,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/crying_obsidian.json|matcha:crafting/crying_obsidian}}</small>
+|-
+| [[Spyglass]]
+| [[Glass]] or [[Amethyst Shard]] +<br />2 × [[Copper Ingot]]
+| {{Crafting|B1=Glass;Amethyst Shard|B2=Copper Ingot|B3=Copper Ingot|Output=Spyglass}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/spyglass.json|matcha:crafting/spyglass}}</small>
+|-
+| [[Tinted Glass]]
+| 4 × [[Glass]] +<br />[[Amethyst Shard]]
+| {{Crafting|A2=Glass|B1=Glass|B2=Amethyst Shard|B3=Glass|C2=Glass|Output=Tinted Glass,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/tinted_glass.json|matcha:crafting/tinted_glass}}</small>
+|-
+| [[Tinted Glass]]
+| [[Amethyst Shard]]
+| {{Cooking|station=Mud Kiln|Input=Amethyst Shard|Output=Tinted Glass|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/tinted_glass_from_smoking_amethyst.json|matcha:kiln/tinted_glass_from_smoking_amethyst}}</small>
+|-
+| [[Block of Amethyst]] <small>(vanilla recipe)</small>
+| 4 × [[Amethyst Shard]]
+| {{Crafting|A1=Amethyst Shard|A2=Amethyst Shard|B1=Amethyst Shard|B2=Amethyst Shard|Output=Block of Amethyst}}
+|-
+| [[Calibrated Sculk Sensor]] <small>(vanilla recipe)</small>
+| 3 × [[Amethyst Shard]] +<br />[[Sculk Sensor]]
+| {{Crafting|A2=Amethyst Shard|B1=Amethyst Shard|B2=Sculk Sensor|C2=Amethyst Shard|Output=Calibrated Sculk Sensor}}
+|}
+
+'''Trading'''
+{| class="wikitable"
+! Villager !! Level !! Wants !! Gives
+|-
+| [[Jeweler]] || Novice || {{ItemLink|Obol}} + 2 × {{ItemLink|Amethyst Shard}} || {{ItemLink|Amethyst Earrings}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

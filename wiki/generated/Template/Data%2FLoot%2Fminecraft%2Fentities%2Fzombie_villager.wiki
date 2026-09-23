@@ -1,0 +1,13 @@
+<includeonly><small>Loot table <code>minecraft:entities/zombie_villager</code> ({{Source|MF_datapack/data/minecraft/loot_table/entities/zombie_villager.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Tattered Leather}} || 1–2 || 100% || 100% || player kill
+|-
+| {{ItemLink|Music Disc}} || 1 || 100% || 100% || player kill, baby
+|-
+| {{ItemLink|Raw Estus}} || 0–1 || 90.9% || 90.9% || player kill
+|-
+| {{ItemLink|Obol}} || 1 || 9.09% || 9.09% || player kill
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

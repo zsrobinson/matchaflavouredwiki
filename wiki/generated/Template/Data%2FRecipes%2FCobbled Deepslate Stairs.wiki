@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cobbled Deepslate Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Cobbled Deepslate]]
+| {{Crafting|A1=Cobbled Deepslate|A2=Cobbled Deepslate|A3=Cobbled Deepslate|B2=Cobbled Deepslate|B3=Cobbled Deepslate|C3=Cobbled Deepslate|Output=Cobbled Deepslate Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cobbled Deepslate Stairs]] <small>(vanilla recipe)</small>
+| [[Cobbled Deepslate]]
+| {{Stonecutter|Input=Cobbled Deepslate|Output=Cobbled Deepslate Stairs}}
+|-
+| [[Cobbled Deepslate Stairs]] <small>(vanilla recipe)</small>
+| [[Deepslate]]
+| {{Stonecutter|Input=Deepslate|Output=Cobbled Deepslate Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

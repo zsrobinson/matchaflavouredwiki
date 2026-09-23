@@ -1,0 +1,24 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Copper Ingot]]
+| [[Copper Pickaxe]] or [[Copper Shovel]] or [[Copper Axe]] or [[Copper Hoe]] or [[Copper Sword]] or [[Copper Spear]] or [[Copper Helmet]] or [[Copper Chestplate]] or [[Copper Leggings]] or [[Copper Boots]] or [[Raw Copper]] or [[Copper Horse Armor]] or [[Copper Nautilus Armor]]
+| {{Cooking|station=Blast Furnace|Input=Copper Pickaxe;Copper Shovel;Copper Axe;Copper Hoe;Copper Sword;Copper Spear;Copper Helmet;Copper Chestplate;Copper Leggings;Copper Boots;Raw Copper;Copper Horse Armor;Copper Nautilus Armor|Output=Copper Ingot|note=5 s, 0.2 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/copper_ingot_from_blasting_copper_materials.json|matcha:blast/copper_ingot_from_blasting_copper_materials}}</small>
+|-
+| [[Hepatizon Hoe]]
+| [[Copper Hoe]] +<br />[[Hepatizon Alloy]]
+| {{Smithing|Template=|Base=Copper Hoe|Addition=Hepatizon Alloy|Output=Hepatizon Hoe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_hoe.json|matcha:smithing/hepatizon_hoe}}</small>
+|-
+| [[Hepatizon Mattock]]
+| [[Smithing Template]] +<br />[[Copper Hoe]] +<br />[[Hepatizon Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Copper Hoe|Addition=Hepatizon Alloy|Output=Hepatizon Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_mattock.json|matcha:smithing/hepatizon_mattock}}</small>
+|-
+| [[Shakudo Hoe]]
+| [[Copper Hoe]] +<br />[[Shakudo Alloy]]
+| {{Smithing|Template=|Base=Copper Hoe|Addition=Shakudo Alloy|Output=Shakudo Hoe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_hoe.json|matcha:smithing/shakudo_hoe}}</small>
+|-
+| [[Shakudo Mattock]]
+| [[Smithing Template]] +<br />[[Copper Hoe]] +<br />[[Shakudo Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Copper Hoe|Addition=Shakudo Alloy|Output=Shakudo Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_mattock.json|matcha:smithing/shakudo_mattock}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,24 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Oxidized Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Waxed Oxidized Cut Copper]]
+| {{Stonecutter|Input=Waxed Oxidized Cut Copper|Output=Waxed Oxidized Chiseled Copper}}
+|-
+| [[Waxed Oxidized Cut Copper Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Waxed Oxidized Cut Copper]]
+| {{Crafting|A1=Waxed Oxidized Cut Copper|B1=Waxed Oxidized Cut Copper|C1=Waxed Oxidized Cut Copper|Output=Waxed Oxidized Cut Copper Slab,6}}
+|-
+| [[Waxed Oxidized Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Waxed Oxidized Cut Copper]]
+| {{Stonecutter|Input=Waxed Oxidized Cut Copper|Output=Waxed Oxidized Cut Copper Slab,2}}
+|-
+| [[Waxed Oxidized Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Waxed Oxidized Cut Copper]]
+| {{Crafting|A1=Waxed Oxidized Cut Copper|A2=Waxed Oxidized Cut Copper|A3=Waxed Oxidized Cut Copper|B2=Waxed Oxidized Cut Copper|B3=Waxed Oxidized Cut Copper|C3=Waxed Oxidized Cut Copper|Output=Waxed Oxidized Cut Copper Stairs,4}}
+|-
+| [[Waxed Oxidized Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Waxed Oxidized Cut Copper]]
+| {{Stonecutter|Input=Waxed Oxidized Cut Copper|Output=Waxed Oxidized Cut Copper Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

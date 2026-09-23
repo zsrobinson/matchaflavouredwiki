@@ -1,0 +1,25 @@
+<includeonly><small>Loot table <code>minecraft:chests/trial_chambers/supply</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/supply.json|source}}); pools roll 3–5 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Arrow}} || 4–14 || 15.4% || 48.3% || 
+|-
+| {{ItemLink|Baked Potato}} || 1 || 15.4% || 48.3% || 
+|-
+| {{ItemLink|Glow Berries}} || 1 || 15.4% || 48.3% || 
+|-
+| {{ItemLink|Spruce Planks}} || 3–6 || 7.69% || 27.2% || 
+|-
+| {{ItemLink|Moss Block}} || 2–5 || 7.69% || 27.2% || 
+|-
+| {{ItemLink|Bone Meal}} || 2–5 || 7.69% || 27.2% || 
+|-
+| {{ItemLink|Tuff}} || 5–10 || 7.69% || 27.2% || 
+|-
+| {{ItemLink|Torch}} || 3–6 || 7.69% || 27.2% || 
+|-
+| {{ItemLink|Apple Empanada}} || 1 || 7.69% || 27.2% || 
+|-
+| {{ItemLink|Milk Bottle}} || 1 || 7.69% || 27.2% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

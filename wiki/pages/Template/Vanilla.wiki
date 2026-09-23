@@ -1,0 +1,3 @@
+<includeonly><div class="hatnote">{{#if:{{{1|}}}|This is the Matcha Flavoured version of {{MCW|{{{1}}}|{{{2|{{{1}}}}}}}}, renamed or changed from vanilla ''Minecraft''.|For how this works in unmodified ''Minecraft'', see {{MCW|{{{2|{{PAGENAME}}}}}}} on the Minecraft Wiki.}}</div></includeonly><noinclude>
+Hatnote that links the vanilla article. <code><nowiki>{{Vanilla|Emerald}}</nowiki></code> on [[Obol]]; no argument links the page name.
+[[Category:Hatnote templates]]</noinclude>

@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Block of Iron]] <small>(vanilla recipe)</small>
+| 9 × [[Iron Ingot]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Iron Ingot|B2=Iron Ingot|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Block of Iron}}
+|}
+'''Blasting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Block of Iron]]
+| [[Block of Raw Iron]]
+| {{Cooking|station=Blast Furnace|Input=Block of Raw Iron|Output=Block of Iron|note=10 s, 6 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/iron_block_from_blasting_raw_iron_block.json|matcha:blast/iron_block_from_blasting_raw_iron_block}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

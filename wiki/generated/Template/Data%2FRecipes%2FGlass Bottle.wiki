@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Glass Bottle]]
+| 3 × [[Glass]]
+| {{Crafting|A1=Glass|B2=Glass|C1=Glass|Output=Glass Bottle,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/glass_bottle.json|matcha:crafting/glass_bottle}}</small>
+|-
+| [[Glass Bottle]]
+| [[Glass]]
+| {{Crafting|A1=Glass|Output=Glass Bottle,3|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/glass_bottle_alternate.json|matcha:crafting/glass_bottle_alternate}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

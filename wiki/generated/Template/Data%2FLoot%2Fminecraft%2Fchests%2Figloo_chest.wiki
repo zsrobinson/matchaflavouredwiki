@@ -1,0 +1,17 @@
+<includeonly><small>Loot table <code>minecraft:chests/igloo_chest</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/igloo_chest.json|source}}); pools roll 1; 5–8 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Golden Apple}} || 1 || 100% || 100% || 
+|-
+| {{ItemLink|Sturdy Leather}} || 1–3 || 29.4% || 88.8% || 
+|-
+| {{ItemLink|Tallow}} || 1–2 || 29.4% || 88.8% || 
+|-
+| {{ItemLink|Gold Nugget}} || 1–3 || 19.6% || 75.1% || 
+|-
+| {{ItemLink|Straw}} || 2–3 || 19.6% || 75.1% || 
+|-
+| {{ItemLink|Obol}} || 1 || 1.96% || 12.1% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

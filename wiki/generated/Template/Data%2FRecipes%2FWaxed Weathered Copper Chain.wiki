@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Weathered Copper Chain]] <small>(vanilla recipe)</small>
+| [[Weathered Copper Chain]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper Chain|B1=Wax|Output=Waxed Weathered Copper Chain|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Weathered Copper Chain]]
+| [[Waxed Weathered Copper]]
+| {{Stonecutter|Input=Waxed Weathered Copper|Output=Waxed Weathered Copper Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_weathered_copper_chain_from_stonecutting_waxed_weathered_copper.json|matcha:stonecutting/waxed_weathered_copper_chain_from_stonecutting_waxed_weathered_copper}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

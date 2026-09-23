@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Copper Mattock}}
+|invimage=Copper Mattock
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|damage={{Hp|1}}
+|attackspeed=2
+|miningspeed=5
+|repair=<code>#minecraft:copper_tool_materials</code>
+|tooltip={{G|Mining speed}} 5<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 2
+|id=<code>matcha:copper_mattock</code>
+|base=<code>minecraft:copper_hoe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_mattock.json|copper_mattock.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

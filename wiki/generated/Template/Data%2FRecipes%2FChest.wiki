@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Chest]]
+| 8 × Any [[logs]]
+| {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/chest_from_logs.json|matcha:crafting/chest_from_logs}}</small>
+|-
+| [[Chest]]
+| 8 × Any [[planks]]
+| {{Crafting|A1=Any Planks|A2=Any Planks|A3=Any Planks|B1=Any Planks|B3=Any Planks|C1=Any Planks|C2=Any Planks|C3=Any Planks|Output=Chest}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/vanilla_chest_from_planks.json|matcha:crafting/vanilla_chest_from_planks}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Adamant Shovel]]
+| [[Diamond Shovel]] +<br />[[Adamant Alloy]]
+| {{Smithing|Template=|Base=Diamond Shovel|Addition=Adamant Alloy|Output=Adamant Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_shovel.json|matcha:smithing/adamant_shovel}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Spruce Trapdoor]] <small>(vanilla recipe)</small>
+| 6 × [[Spruce Planks]]
+| {{Crafting|A1=Spruce Planks|A2=Spruce Planks|B1=Spruce Planks|B2=Spruce Planks|C1=Spruce Planks|C2=Spruce Planks|Output=Spruce Trapdoor,2}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Spruce Trapdoor]]
+| [[Spruce Planks]]
+| {{Stonecutter|Input=Spruce Planks|Output=Spruce Trapdoor}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_trapdoor_from_stonecutting_spruce_planks.json|matcha:stonecutting/spruce_trapdoor_from_stonecutting_spruce_planks}}</small>
+|-
+| [[Spruce Trapdoor]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_trapoor_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_trapoor_from_stonecutting_spruce_logs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

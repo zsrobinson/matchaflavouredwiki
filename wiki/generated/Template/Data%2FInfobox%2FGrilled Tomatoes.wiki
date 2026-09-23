@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Grilled Tomatoes}}
+|invimage=Grilled Tomatoes
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|4}}
+|effects={{EffectLink|Strength}} (0:10)
+|eat_time=1.6 seconds
+|tooltip=❤❤<br />{{G|Attack damage}} Strength (0:10)
+|id=<code>matcha:grilled_tomatoes</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/grilled_tomatoes.json|grilled_tomatoes.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

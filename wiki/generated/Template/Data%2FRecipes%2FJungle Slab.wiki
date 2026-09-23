@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Jungle Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Jungle Planks]]
+| {{Crafting|A1=Jungle Planks|B1=Jungle Planks|C1=Jungle Planks|Output=Jungle Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Jungle Slab]]
+| [[Jungle Trapdoor]]
+| {{Stonecutter|Input=Jungle Trapdoor|Output=Jungle Slab}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_slab_from_stonecutting_jungle_trapdoor.json|matcha:stonecutting/jungle_slab_from_stonecutting_jungle_trapdoor}}</small>
+|-
+| [[Jungle Slab]]
+| Any [[jungle logs]]
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_slabs_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_slabs_from_stonecutting_jungle_logs}}</small>
+|-
+| [[Jungle Slab]]
+| [[Jungle Planks]]
+| {{Stonecutter|Input=Jungle Planks|Output=Jungle Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_slabs_from_stonecutting_jungle_planks.json|matcha:stonecutting/jungle_slabs_from_stonecutting_jungle_planks}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

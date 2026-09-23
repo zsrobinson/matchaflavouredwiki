@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Wooden Cross}}
+|invimage=Wooden Cross
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[1]]}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>matcha:wooden_cross</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/wooden_cross.json|wooden_cross.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

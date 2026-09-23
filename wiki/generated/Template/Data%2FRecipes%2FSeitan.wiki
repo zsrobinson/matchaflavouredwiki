@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Seitan]]
+| [[Dough]] +<br />[[Potion]] +<br />[[Carrot]] or [[Potato]] or [[Dried Kelp]]
+| {{Crafting|A1=Dough|B1=Potion|C1=Carrot;Potato;Dried Kelp|Output=Seitan|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/seitan.json|matcha:food/crafting/seitan}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

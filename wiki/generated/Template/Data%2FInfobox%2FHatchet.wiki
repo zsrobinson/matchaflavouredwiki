@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Hatchet}}
+|invimage=Hatchet
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Bloodrage]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=250
+|damage={{Hp|9}}
+|attackspeed=1
+|miningspeed=10
+|repair=<code>#minecraft:iron_tool_materials</code>
+|tooltip=⛏ 10<br />🗡 9<br />🕒 1
+|id=<code>matcha:bloodrage_hatchet</code>
+|base=<code>minecraft:iron_axe</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/leatherworker/4/hatchet.json|hatchet.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

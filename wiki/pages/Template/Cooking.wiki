@@ -1,0 +1,5 @@
+<includeonly><div class="mcui-panel"><span class="mcui-title">{{{station|Oven}}}</span><span class="mcui-stack">{{Slot|{{{Input|}}}}}<span class="mcui-flame-img">[[File:Grid lit_progress.png|28px|link=]]</span>{{Slot|{{{Fuel|}}}}}</span><span class="mcui-cell mcui-arrow-img">[[File:Grid burn_progress.png|44px|link=]]</span><span class="mcui-cell mcui-output">{{Slot|{{{Output|}}}}}</span>{{#if:{{{note|}}}|<span class="mcui-note">{{{note}}}</span>}}</div></includeonly><noinclude>
+A cooking interface. <code>station</code> is shown as the title: [[Oven]], [[Mud Kiln]], [[Blast Furnace]] or [[Kindling]].
+
+{{Cooking|station=Oven|Input=Pumpkin|Output=Baked Pumpkin|note=5 seconds}}
+[[Category:Templates]]</noinclude>

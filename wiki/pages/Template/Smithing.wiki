@@ -1,0 +1,5 @@
+<includeonly><div class="mcui-panel"><span class="mcui-title">Smithing Table</span><span class="mcui-cell">{{Slot|{{{Template|}}}}}</span><span class="mcui-cell">{{Slot|{{{Base|}}}}}</span><span class="mcui-cell">{{Slot|{{{Addition|}}}}}</span><span class="mcui-cell mcui-arrow-img">[[File:Grid burn_progress.png|44px|link=]]</span><span class="mcui-cell mcui-output">{{Slot|{{{Output|}}}}}</span>{{#if:{{{note|}}}|<span class="mcui-note">{{{note}}}</span>}}</div></includeonly><noinclude>
+A smithing table transform. The template slot is left empty for alloy upgrades, which need no template in Matcha Flavoured.
+
+{{Smithing|Base=Iron Pickaxe|Addition=Steel Alloy|Output=Steel Pickaxe}}
+[[Category:Templates]]</noinclude>

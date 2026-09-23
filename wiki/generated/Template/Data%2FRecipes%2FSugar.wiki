@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Sugar]]
+| [[Honey Bottle]]
+| {{Crafting|A1=Honey Bottle|Output=Sugar,3|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sugar_from_honey_bottle.json|matcha:food/crafting/sugar_from_honey_bottle}}</small>
+|-
+| [[Sugar]]
+| [[Molasses]]
+| {{Crafting|A1=Molasses|Output=Sugar,3|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sugar_from_molasses.json|matcha:food/crafting/sugar_from_molasses}}</small>
+|-
+| [[Sugar]] <small>(vanilla recipe)</small>
+| [[Sugar Cane]]
+| {{Crafting|A1=Sugar Cane|Output=Sugar|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

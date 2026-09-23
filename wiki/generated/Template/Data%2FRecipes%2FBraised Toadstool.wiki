@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Braised Toadstool]]
+| [[Red Mushroom]]
+| {{Cooking|station=Kindling|Input=Red Mushroom|Output=Braised Toadstool|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/braised_red_mushroom.json|matcha:food/campfire/braised_red_mushroom}}</small>
+|-
+| [[Braised Toadstool]]
+| [[Red Mushroom]]
+| {{Cooking|station=Oven|Input=Red Mushroom|Output=Braised Toadstool|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/braised_red_mushroom.json|matcha:food/oven/braised_red_mushroom}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

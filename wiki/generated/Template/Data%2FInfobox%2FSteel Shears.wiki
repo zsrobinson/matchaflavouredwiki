@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Steel Shears}}
+|invimage=Steel Shears
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|miningspeed=15
+|repair=[[Iron Ingot]]
+|tooltip=Repaired with:<br />Iron Ingot
+|id=<code>matcha:steel_shears</code>
+|base=<code>minecraft:shears</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_shears.json|steel_shears.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

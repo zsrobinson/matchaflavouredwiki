@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Acacia Trapdoor]] <small>(vanilla recipe)</small>
+| 6 × [[Acacia Planks]]
+| {{Crafting|A1=Acacia Planks|A2=Acacia Planks|B1=Acacia Planks|B2=Acacia Planks|C1=Acacia Planks|C2=Acacia Planks|Output=Acacia Trapdoor,2}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Acacia Trapdoor]]
+| [[Acacia Planks]]
+| {{Stonecutter|Input=Acacia Planks|Output=Acacia Trapdoor}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_trapdoor_from_stonecutting_acacia_planks.json|matcha:stonecutting/acacia_trapdoor_from_stonecutting_acacia_planks}}</small>
+|-
+| [[Acacia Trapdoor]]
+| Any [[acacia logs]]
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_trapoor_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_trapoor_from_stonecutting_acacia_logs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

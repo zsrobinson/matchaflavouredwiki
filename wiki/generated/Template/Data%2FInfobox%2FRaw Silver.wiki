@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Raw Silver}}
+|invimage=Raw Silver
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Prismarine Shard}}
+|stackable=Yes (64)
+|id=<code>minecraft:prismarine_shard</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/chests/uncommon/treasure_ores.json|treasure_ores.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

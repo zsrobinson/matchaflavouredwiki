@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Baked Pumpkin}}
+|invimage=Baked Pumpkin
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Breeze Rod}}
+|stackable=Yes (64)
+|heals={{Hp|2}}
+|effects={{EffectLink|Resistance}} (0:30)
+|eat_time=1.6 seconds
+|tooltip=❤<br />{{G|Armor}} Resistance (0:30)
+|id=<code>minecraft:breeze_rod</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/campfire/baked_pumpkin.json|baked_pumpkin.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

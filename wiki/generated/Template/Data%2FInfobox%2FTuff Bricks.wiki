@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Tuff Bricks}}
+|invimage=Tuff Bricks
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:tuff_bricks</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/chiseled_tuff_bricks_from_chiseled_tuff_brick_slabs.json|chiseled_tuff_bricks_from_chiseled_tuff_brick_slabs.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

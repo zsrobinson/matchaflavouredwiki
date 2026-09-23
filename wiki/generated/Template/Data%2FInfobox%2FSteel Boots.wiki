@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Steel Boots}}
+|invimage=Steel Boots
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Blast Protection]] II}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1000
+|armor=2
+|toughness=1
+|knockbackres=1
+|repair=[[Iron Ingot]]
+|tooltip={{G|Armor}} 2<br />{{G|Armor toughness}} 1<br />{{G|Knockback resistance}} 1<br />Repaired with:<br />Iron Ingot
+|id=<code>matcha:steel_boots</code>
+|base=<code>minecraft:iron_boots</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_boots.json|steel_boots.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

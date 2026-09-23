@@ -1,0 +1,23 @@
+<includeonly><small>Loot table <code>minecraft:chests/trial_chambers/intersection_barrel</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/intersection_barrel.json|source}}); pools roll 4–7 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Spruce Planks}} || 5–15 || 30.3% || 85.1% || 
+|-
+| {{ItemLink|Baked Potato}} || 1 || 30.3% || 85.1% || 
+|-
+| {{ItemLink|Diamond Pickaxe}} || 1 || 7.58% || 34.9% || 
+|-
+| {{ItemLink|Diamond Axe}} || 1 || 7.58% || 34.9% || 
+|-
+| {{ItemLink|Diamond Shovel}} || 1 || 7.58% || 34.9% || 
+|-
+| {{ItemLink|Diamond Hoe}} || 1 || 7.58% || 34.9% || 
+|-
+| {{ItemLink|Diamond}} || 1–3 || 3.03% || 15.5% || 
+|-
+| {{ItemLink|Compass}} || 1 || 3.03% || 15.5% || 
+|-
+| {{ItemLink|Water Bucket}} || 1 || 3.03% || 15.5% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

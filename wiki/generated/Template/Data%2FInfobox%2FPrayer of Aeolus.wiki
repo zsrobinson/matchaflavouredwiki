@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Rare
+|stackable=No
+|effects=Stores: [[Anemos]], [[Wind Burst]] I
+|tooltip=Prayer of Aeolus
+|id=<code>matcha:blessing_aeolus</code>
+|base=<code>minecraft:enchanted_book</code>
+|source={{Source|MF_datapack/data/matcha/recipe/blessing/wind_burst_anemos.json|wind_burst_anemos.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

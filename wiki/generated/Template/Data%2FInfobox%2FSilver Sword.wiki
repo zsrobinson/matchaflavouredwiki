@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Silver Sword}}
+|invimage=Silver Sword
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Smite]] III<br />[[1]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=400
+|damage={{Hp|6}}
+|attackspeed=1.6
+|miningspeed=340282349999999991754788743781432688640
+|repair=[[Nazar]], [[Block of Lapis Lazuli]]
+|tooltip={{G|Attack damage}} 6<br />{{G|Attack speed}} 1.6<br />Repaired with:<br />Nazar<br />Block of Lapis Lazuli
+|id=<code>matcha:silver_sword</code>
+|base=<code>minecraft:stone_sword</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/silver_sword.json|silver_sword.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

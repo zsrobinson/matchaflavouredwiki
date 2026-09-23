@@ -1,0 +1,15 @@
+<includeonly><small>Loot table <code>matcha:chests/common/treasure_ores</code> ({{Source|MF_datapack/data/matcha/loot_table/chests/common/treasure_ores.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Raw Copper}} || 12–20 || 100% || 100% || 
+|-
+| {{ItemLink|Raw Gold}} || 3–6 || 100% || 100% || 
+|-
+| {{ItemLink|Lapis Lazuli}} || 8–15 || 100% || 100% || 
+|-
+| {{ItemLink|Raw Iron}} || 8–15 || 100% || 100% || 
+|-
+| {{ItemLink|Raw Diamond}} || 1 || 100% || 100% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

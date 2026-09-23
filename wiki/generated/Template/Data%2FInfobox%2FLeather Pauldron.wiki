@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Leather Pauldron}}
+|invimage=Leather Pauldron
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=200
+|armor=3
+|repair=<code>#minecraft:repairs_leather_armor</code>
+|tooltip={{G|Armor}} 3<br />{{G|Safe fall distance}} 1
+|id=<code>minecraft:leather_chestplate</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/leather_chestplate.json|leather_chestplate.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

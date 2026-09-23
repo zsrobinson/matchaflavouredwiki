@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Dark Oak Fence]] <small>(vanilla recipe)</small>
+| 4 × [[Dark Oak Planks]] +<br />2 × [[Stick]]
+| {{Crafting|A1=Dark Oak Planks|A2=Dark Oak Planks|B1=Stick|B2=Stick|C1=Dark Oak Planks|C2=Dark Oak Planks|Output=Dark Oak Fence,3}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Dark Oak Fence]]
+| Any [[dark oak logs]]
+| {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Fence,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_fence_from_stonecutting_dark_oak_log.json|matcha:stonecutting/dark_oak_fence_from_stonecutting_dark_oak_log}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

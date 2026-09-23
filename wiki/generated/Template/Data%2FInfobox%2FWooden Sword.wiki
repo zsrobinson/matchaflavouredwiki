@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Wooden Sword}}
+|invimage=Wooden Sword
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=200
+|damage={{Hp|4}}
+|attackspeed=1.6
+|miningspeed=340282349999999991754788743781432688640
+|repair=<code>#minecraft:wooden_tool_materials</code>
+|tooltip=🗡 4<br />🕒 1.6
+|id=<code>minecraft:wooden_sword</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/wooden_sword.json|wooden_sword.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

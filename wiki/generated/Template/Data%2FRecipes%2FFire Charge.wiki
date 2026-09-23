@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Fire Charge]]
+| [[Sulfur Chunk]] +<br />[[Estus Ash]] +<br />[[Coal]] or [[Charcoal]]
+| {{Crafting|A1=Sulfur Chunk|B1=Estus Ash|C1=Coal;Charcoal|Output=Fire Charge,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/fire_charge.json|matcha:crafting/fire_charge}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

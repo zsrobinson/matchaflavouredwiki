@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Warped Button]] <small>(vanilla recipe)</small>
+| [[Warped Planks]]
+| {{Crafting|A1=Warped Planks|Output=Warped Button|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Warped Button]]
+| [[Warped Planks]]
+| {{Stonecutter|Input=Warped Planks|Output=Warped Button,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_button_from_stonecutting_warped_planks.json|matcha:stonecutting/warped_button_from_stonecutting_warped_planks}}</small>
+|-
+| [[Warped Button]]
+| Any [[warped stems]]
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_button_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_button_from_stonecutting_warped_stem}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

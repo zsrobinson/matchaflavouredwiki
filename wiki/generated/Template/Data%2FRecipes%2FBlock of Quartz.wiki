@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Block of Quartz]]
+| 2 × [[Quartz Slab]]
+| {{Crafting|A1=Quartz Slab|B1=Quartz Slab|Output=Block of Quartz|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/quartz_from_quartz_slab.json|matcha:crafting/quartz_from_quartz_slab}}</small>
+|-
+| [[Block of Quartz]] <small>(vanilla recipe)</small>
+| 4 × [[Quartz]]
+| {{Crafting|A1=Quartz|A2=Quartz|B1=Quartz|B2=Quartz|Output=Block of Quartz}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

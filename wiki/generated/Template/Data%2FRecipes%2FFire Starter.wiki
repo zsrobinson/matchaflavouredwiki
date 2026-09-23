@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Fire Starter]]
+| 2 × [[Flint]]
+| {{Crafting|A1=Flint|B1=Flint|Output=Fire Starter|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/fire_starter.json|matcha:crafting/fire_starter}}</small>
+|-
+| [[Fire Starter]]
+| 2 × [[Flint]]
+| {{Crafting|A1=Flint|B1=Flint|Output=Fire Starter|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/flint_and_steel.json|matcha:crafting/flint_and_steel}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

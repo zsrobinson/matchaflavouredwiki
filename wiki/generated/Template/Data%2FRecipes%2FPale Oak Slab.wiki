@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Pale Oak Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Pale Oak Planks]]
+| {{Crafting|A1=Pale Oak Planks|B1=Pale Oak Planks|C1=Pale Oak Planks|Output=Pale Oak Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Pale Oak Slab]]
+| [[Pale Oak Trapdoor]]
+| {{Stonecutter|Input=Pale Oak Trapdoor|Output=Pale Oak Slab}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/pale_oak_slab_from_stonecutting_pale_oak_trapdoor.json|matcha:stonecutting/pale_oak_slab_from_stonecutting_pale_oak_trapdoor}}</small>
+|-
+| [[Pale Oak Slab]]
+| Any [[pale oak logs]]
+| {{Stonecutter|Input=Any Pale Oak Logs|Output=Pale Oak Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/pale_oak_slabs_from_stonecutting_pale_oak_logs.json|matcha:stonecutting/pale_oak_slabs_from_stonecutting_pale_oak_logs}}</small>
+|-
+| [[Pale Oak Slab]]
+| [[Pale Oak Planks]]
+| {{Stonecutter|Input=Pale Oak Planks|Output=Pale Oak Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/pale_oak_slabs_from_stonecutting_pale_oak_planks.json|matcha:stonecutting/pale_oak_slabs_from_stonecutting_pale_oak_planks}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

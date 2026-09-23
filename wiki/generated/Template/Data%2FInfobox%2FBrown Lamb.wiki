@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Brown Lamb}}
+|invimage=Brown Lamb
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|id=<code>matcha:crate_sheep_brown</code>
+|base=<code>minecraft:sheep_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/shepherd/2/baby_warm_sheep.json|baby_warm_sheep.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

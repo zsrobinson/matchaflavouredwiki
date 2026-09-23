@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Hepatizon Leggings}}
+|invimage=Hepatizon Leggings
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=500
+|armor=6
+|repair=[[Block of Copper]]
+|tooltip={{G|Armor}} 6<br />{{G|Speed}} +0.01<br />Repaired with:<br />Block of Copper
+|id=<code>matcha:hepatizon_leggings</code>
+|base=<code>minecraft:copper_leggings</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_leggings.json|hepatizon_leggings.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

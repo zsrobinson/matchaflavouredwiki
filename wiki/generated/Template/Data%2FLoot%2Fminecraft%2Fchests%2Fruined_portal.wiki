@@ -1,0 +1,31 @@
+<includeonly><small>Loot table <code>minecraft:chests/ruined_portal</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/ruined_portal.json|source}}); pools roll 1; 10–12 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Lodestone}} || 1–2 || 66.7% || 66.7% || 
+|-
+| {{ItemLink|Obsidian}} || 1–2 || 16.9% || 86.9% || 
+|-
+| {{ItemLink|Fire Starter}} || 1 || 16.9% || 86.9% || 
+|-
+| {{ItemLink|Fire Charge}} || 1 || 16.9% || 86.9% || 
+|-
+| {{ItemLink|Golden Crown}} || 1 || 8.47% || 62.1% || 
+|-
+| {{ItemLink|Golden Chestplate}} || 1 || 8.47% || 62.1% || 
+|-
+| {{ItemLink|Golden Leggings}} || 1 || 8.47% || 62.1% || 
+|-
+| {{ItemLink|Golden Boots}} || 1 || 8.47% || 62.1% || 
+|-
+| {{ItemLink|Golden Apple}} || 1 || 6.78% || 53.7% || 
+|-
+| {{ItemLink|Golden Horse Armor}} || 1 || 2.12% || 21.0% || 
+|-
+| {{ItemLink|Golden Carrot}} || 1 || 2.12% || 21.0% || 
+|-
+| {{ItemLink|Clock}} || 1 || 2.12% || 21.0% || 
+|-
+| {{ItemLink|Raw Gold}} || 2–8 || 2.12% || 21.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

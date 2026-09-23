@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Echo Eel}}
+|invimage=Echo Eel
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|tooltip=⭐⭐⭐⭐
+|id=<code>matcha:echo_fish</code>
+|base=<code>minecraft:salmon</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/fish/echo_fish.json|echo_fish.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

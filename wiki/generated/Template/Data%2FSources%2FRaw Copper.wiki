@@ -1,0 +1,25 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Buried treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/buried_treasure.json|chests/buried_treasure}})</small> || 12–20 || 100% || 
+|-
+| Common / ores <small>({{Source|MF_datapack/data/matcha/loot_table/chests/common/ores.json|chests/common/ores}})</small> || 3–8 || 100% || 
+|-
+| Fishing / treasure <small>({{Source|MF_datapack/data/matcha/loot_table/chests/fishing/treasure.json|chests/fishing/treasure}})</small> || 12–20 || 100% || 
+|-
+| Shipwreck treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_treasure.json|chests/shipwreck_treasure}})</small> || 12–20 || 100% || 
+|}
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Copper ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/copper_ore.json|blocks/copper_ore}})</small> || 1–2 || 33.3% || 
+|-
+| Deepslate copper ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_copper_ore.json|blocks/deepslate_copper_ore}})</small> || 2–5 || 33.3% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

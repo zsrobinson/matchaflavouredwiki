@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Warped Shelf]] <small>(vanilla recipe)</small>
+| 6 × [[Stripped Warped Stem]]
+| {{Crafting|A1=Stripped Warped Stem|A3=Stripped Warped Stem|B1=Stripped Warped Stem|B3=Stripped Warped Stem|C1=Stripped Warped Stem|C3=Stripped Warped Stem|Output=Warped Shelf,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Warped Shelf]]
+| Any [[warped stems]]
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_shelf_from_stonecutting_warped_stems.json|matcha:stonecutting/warped_shelf_from_stonecutting_warped_stems}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

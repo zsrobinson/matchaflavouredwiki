@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Waxed Exposed Copper Lantern}}
+|invimage=Waxed Exposed Copper Lantern
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:waxed_exposed_copper_lantern</code>
+|source={{Source|vanilla:recipe/waxed_exposed_copper_lantern_from_honeycomb.json|waxed_exposed_copper_lantern_from_honeycomb.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

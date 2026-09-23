@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Adamant Helmet]]
+| [[Diamond Helmet]] +<br />[[Adamant Alloy]]
+| {{Smithing|Template=|Base=Diamond Helmet|Addition=Adamant Alloy|Output=Adamant Helmet}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_helmet.json|matcha:smithing/adamant_helmet}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

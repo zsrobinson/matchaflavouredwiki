@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Copper Axe}}
+|invimage=Copper Axe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|damage={{Hp|9}}
+|attackspeed=0.8
+|miningspeed=6
+|repair=<code>#minecraft:copper_tool_materials</code>
+|tooltip={{G|Mining speed}} 6<br />{{G|Attack damage}} 9<br />{{G|Attack speed}} 0.8
+|id=<code>minecraft:copper_axe</code>
+|base=<code>minecraft:copper_axe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_axe.json|copper_axe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

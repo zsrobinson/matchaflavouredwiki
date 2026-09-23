@@ -1,0 +1,30 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Abandoned mineshaft <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_mineshaft.json|chests/abandoned_mineshaft}})</small> || 2–4 || 53.9% || 
+|-
+| Simple dungeon <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json|chests/simple_dungeon}})</small> || 2–4 || 18.5% || 
+|-
+| Village / village snowy house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_snowy_house.json|chests/village/village_snowy_house}})</small> || 1–5 || 67.0% || 
+|-
+| Woodland mansion <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/woodland_mansion.json|chests/woodland_mansion}})</small> || 2–4 || 13.5% || 
+|}
+
+'''Archaeology'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Trail ruins common <small>({{Source|MF_datapack/data/minecraft/loot_table/archaeology/trail_ruins_common.json|archaeology/trail_ruins_common}})</small> || 1 || 2.27% || 
+|}
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Beetroots <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json|blocks/beetroots}})</small> || 1 || 50.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

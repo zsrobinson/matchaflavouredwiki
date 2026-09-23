@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Oxidized Lightning Rod]] <small>(vanilla recipe)</small>
+| [[Oxidized Lightning Rod]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Lightning Rod|B1=Wax|Output=Waxed Oxidized Lightning Rod|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Oxidized Lightning Rod]]
+| [[Waxed Oxidized Copper]]
+| {{Stonecutter|Input=Waxed Oxidized Copper|Output=Waxed Oxidized Lightning Rod,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/waxed_oxidized_lightning_rod_from_waxed_oxidized_copper.json|matcha:crafting/waxed_oxidized_lightning_rod_from_waxed_oxidized_copper}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

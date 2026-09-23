@@ -1,0 +1,48 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cinnabar Brick Slab]] <small>(vanilla recipe)</small>
+| [[Polished Cinnabar]]
+| {{Stonecutter|Input=Polished Cinnabar|Output=Cinnabar Brick Slab,2}}
+|-
+| [[Cinnabar Brick Stairs]] <small>(vanilla recipe)</small>
+| [[Polished Cinnabar]]
+| {{Stonecutter|Input=Polished Cinnabar|Output=Cinnabar Brick Stairs}}
+|-
+| [[Cinnabar Brick Wall]] <small>(vanilla recipe)</small>
+| [[Polished Cinnabar]]
+| {{Stonecutter|Input=Polished Cinnabar|Output=Cinnabar Brick Wall}}
+|-
+| [[Cinnabar Bricks]] <small>(vanilla recipe)</small>
+| 4 × [[Polished Cinnabar]]
+| {{Crafting|A1=Polished Cinnabar|A2=Polished Cinnabar|B1=Polished Cinnabar|B2=Polished Cinnabar|Output=Cinnabar Bricks,4}}
+|-
+| [[Cinnabar Bricks]] <small>(vanilla recipe)</small>
+| [[Polished Cinnabar]]
+| {{Stonecutter|Input=Polished Cinnabar|Output=Cinnabar Bricks}}
+|-
+| [[Polished Cinnabar Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Polished Cinnabar]]
+| {{Crafting|A1=Polished Cinnabar|B1=Polished Cinnabar|C1=Polished Cinnabar|Output=Polished Cinnabar Slab,6}}
+|-
+| [[Polished Cinnabar Slab]] <small>(vanilla recipe)</small>
+| [[Polished Cinnabar]]
+| {{Stonecutter|Input=Polished Cinnabar|Output=Polished Cinnabar Slab,2}}
+|-
+| [[Polished Cinnabar Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Polished Cinnabar]]
+| {{Crafting|A1=Polished Cinnabar|A2=Polished Cinnabar|A3=Polished Cinnabar|B2=Polished Cinnabar|B3=Polished Cinnabar|C3=Polished Cinnabar|Output=Polished Cinnabar Stairs,4}}
+|-
+| [[Polished Cinnabar Stairs]] <small>(vanilla recipe)</small>
+| [[Polished Cinnabar]]
+| {{Stonecutter|Input=Polished Cinnabar|Output=Polished Cinnabar Stairs}}
+|-
+| [[Polished Cinnabar Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Polished Cinnabar]]
+| {{Crafting|A1=Polished Cinnabar|A2=Polished Cinnabar|B1=Polished Cinnabar|B2=Polished Cinnabar|C1=Polished Cinnabar|C2=Polished Cinnabar|Output=Polished Cinnabar Wall,6}}
+|-
+| [[Polished Cinnabar Wall]] <small>(vanilla recipe)</small>
+| [[Polished Cinnabar]]
+| {{Stonecutter|Input=Polished Cinnabar|Output=Polished Cinnabar Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

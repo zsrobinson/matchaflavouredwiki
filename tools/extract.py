@@ -1,0 +1,596 @@
+#!/usr/bin/env python3
+"""Extract Matcha Flavoured source data into build/data.json.
+
+Reads the official pack (source/matcha-flavoured) and vanilla 26.x data
+(source/vanilla-data, source/vanilla-assets) and normalises everything the
+wiki needs: an item registry keyed by English display name, recipes, villager
+trades, loot tables, enchantments and advancements.
+
+Every generated wiki fact traces back to a file path recorded here as `src`.
+"""
+import glob
+import json
+import os
+import re
+import sys
+from collections import defaultdict
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SRC = os.path.join(ROOT, 'source', 'matcha-flavoured')
+DP = os.path.join(SRC, 'MF_datapack', 'data')
+RP = os.path.join(SRC, 'MF_resourcepack', 'assets')
+VDATA = os.path.join(ROOT, 'source', 'vanilla-data', 'data', 'minecraft')
+VASSETS = os.path.join(ROOT, 'source', 'vanilla-assets', 'assets', 'minecraft')
+OUT = os.path.join(ROOT, 'build', 'data.json')
+
+
+def load(path):
+    with open(path, encoding='utf-8') as f:
+        return json.load(f)
+
+
+def rel(path):
+    return os.path.relpath(path, SRC)
+
+
+# ---------------------------------------------------------------- language
+VANILLA_LANG = load(os.path.join(VASSETS, 'lang', 'en_us.json'))
+PACK_LANG = load(os.path.join(RP, 'minecraft', 'lang', 'en_us.json'))
+LANG = dict(VANILLA_LANG)
+LANG.update(PACK_LANG)
+
+# Private-use glyphs from assets/minecraft/font/default.json (custom_emojis.png).
+# Named from the lang keys that use them, so lore renders as readable text.
+GLYPHS = {
+    '': 'Water', '': 'Warding', '': 'Fortune', '': 'Cooldown',
+    '': 'Apotropaic', '': 'Cleanse', '': 'Armor toughness',
+    '': 'Step height', '': 'Luck', '': 'Nausea', '': 'Slow falling',
+    '': 'Attack speed', '': 'Knockback', '': 'Fire resistance',
+    '': 'Night vision', '': 'Invisibility', '': 'Weakness',
+    '': 'Weaving', '': 'Glowing', '': 'Infested', '': "Dolphin's Grace",
+    '': 'Slowness', '': 'Matcha', '': 'Oozing', '': 'Wind charged',
+    '': 'Speed', '': 'Knockback resistance', '': 'Jump boost',
+    '': 'Levitation', '': 'Safe fall distance', '': 'Reach',
+    '': 'Smelting', '': 'Warping', '': 'Health', '': 'Half heart',
+    '': 'Aura', '': 'Mining speed', '': 'Attack damage',
+    '': 'Throwable', '': 'Armor', '': 'Poison', '': 'Fortune',
+    '': 'Doom', '': 'Doom', '': 'Magic protection',
+}
+
+
+def strip_codes(s):
+    return re.sub('§.', '', s)
+
+
+def glyph_text(s):
+    """Replace custom-font glyphs with {{G|name}} markers."""
+    out = []
+    for ch in s:
+        if 0xE000 <= ord(ch) <= 0xF8FF:
+            out.append('⟦%s⟧' % GLYPHS.get(ch, 'U+%04X' % ord(ch)))
+        else:
+            out.append(ch)
+    return strip_codes(''.join(out)).strip()
+
+
+def render_text(comp):
+    """Render a JSON text component to plain text (glyphs → ⟦name⟧)."""
+    if comp is None:
+        return ''
+    if isinstance(comp, str):
+        return glyph_text(comp)
+    if isinstance(comp, list):
+        return ''.join(render_text(c) for c in comp)
+    s = ''
+    if 'text' in comp:
+        s += comp['text']
+    if 'translate' in comp:
+        tpl = LANG.get(comp['translate'], comp.get('fallback', comp['translate']))
+        args = [render_text(w) for w in comp.get('with', [])]
+        tpl = tpl.replace('%%', '\x00')
+        i = 0
+
+        def sub(m):
+            nonlocal i
+            if m.group(1):
+                idx = int(m.group(1)) - 1
+            else:
+                idx = i
+                i += 1
+            return args[idx] if idx < len(args) else ''
+        tpl = re.sub(r'%(?:(\d+)\$)?s', sub, tpl).replace('\x00', '%')
+        s += tpl
+    for e in comp.get('extra', []):
+        s += render_text(e)
+    return glyph_text(s)
+
+
+def vname(item_id):
+    """English name of a (possibly renamed) vanilla item id."""
+    iid = item_id.split(':', 1)[-1] if ':' in item_id else item_id
+    for k in ('item.minecraft.' + iid, 'block.minecraft.' + iid):
+        if k in LANG:
+            return strip_codes(LANG[k]).strip()
+    return iid.replace('_', ' ').title()
+
+
+def vanilla_name(item_id):
+    iid = item_id.split(':', 1)[-1]
+    for k in ('item.minecraft.' + iid, 'block.minecraft.' + iid):
+        if k in VANILLA_LANG:
+            return VANILLA_LANG[k]
+    return iid.replace('_', ' ').title()
+
+
+def norm_id(i):
+    return i if ':' in i else 'minecraft:' + i
+
+
+# ---------------------------------------------------------------- items
+ITEMS = {}  # key -> item record
+
+
+def stack_name(stack):
+    comps = stack.get('components', {}) or {}
+    for key in ('minecraft:custom_name', 'minecraft:item_name'):
+        if key in comps:
+            return render_text(comps[key])
+    return vname(stack['id'])
+
+
+def item_key(stack):
+    comps = stack.get('components', {}) or {}
+    name = stack_name(stack)
+    model = comps.get('minecraft:item_model')
+    return name, model
+
+
+def variant_key(name, comps):
+    """Items that share one name in-game but are distinct (blessings, clay fetishes)."""
+    lore = comps.get('minecraft:lore') or []
+    if name == 'Blessing' and lore:
+        return render_text(lore[0])
+    if name == 'Clay Fetish' and lore:
+        return 'Clay Fetish (%s)' % render_text(lore[0])
+    return name
+
+
+def summarise_components(comps):
+    s = {}
+    if not comps:
+        return s
+    for k, v in comps.items():
+        k2 = k.split(':')[-1]
+        if k2 == 'lore':
+            s['lore'] = [render_text(x) for x in v]
+        elif k2 in ('item_name', 'custom_name'):
+            continue
+        else:
+            s[k2] = v
+    return s
+
+
+def register(stack, src, how):
+    """Record an item stack definition seen in the source."""
+    if not isinstance(stack, dict) or 'id' not in stack:
+        return None
+    sid = norm_id(stack['id'])
+    comps = stack.get('components', {}) or {}
+    name, model = item_key(stack)
+    key = variant_key(name, comps)
+    rec = ITEMS.get(key)
+    if rec is None:
+        rec = ITEMS[key] = {
+            'name': name, 'base_id': sid, 'models': [], 'vanilla_name': vanilla_name(sid),
+            'renamed_vanilla': not comps.get('minecraft:item_name') and not comps.get('minecraft:custom_name'),
+            'components': {}, 'sources': [],
+        }
+    if model and model not in rec['models']:
+        rec['models'].append(model)
+    summ = summarise_components(comps)
+    # keep the richest component set
+    if len(summ) > len(rec['components']):
+        rec['components'] = summ
+    if len(rec['sources']) < 40:
+        rec['sources'].append({'how': how, 'src': src})
+    return key
+
+
+def display_stack(stack):
+    if isinstance(stack, str):
+        return {'name': vname(stack), 'id': norm_id(stack), 'count': 1}
+    comps = stack.get('components') or {}
+    d = {'name': variant_key(stack_name(stack), comps), 'id': norm_id(stack['id']), 'count': stack.get('count', 1)}
+    if comps.get('minecraft:stored_enchantments'):
+        d['enchantments'] = comps['minecraft:stored_enchantments']
+    if comps.get('minecraft:enchantments'):
+        d['enchantments'] = comps['minecraft:enchantments']
+    return d
+
+
+# ---------------------------------------------------------------- tags
+def load_tags(kind):
+    tags = {}
+    for base, ns_root in ((VDATA, 'minecraft'),):
+        for f in glob.glob(os.path.join(base, 'tags', kind, '**', '*.json'), recursive=True):
+            t = 'minecraft:' + os.path.relpath(f, os.path.join(base, 'tags', kind))[:-5]
+            tags[t] = load(f)['values']
+    for f in glob.glob(os.path.join(DP, '*', 'tags', kind, '**', '*.json'), recursive=True):
+        ns = os.path.relpath(f, DP).split(os.sep)[0]
+        t = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'tags', kind))[:-5]
+        d = load(f)
+        vals = [v if isinstance(v, str) else v['id'] for v in d['values']]
+        if d.get('replace') or t not in tags:
+            tags[t] = vals
+        else:
+            tags[t] = tags[t] + vals
+    return tags
+
+
+ITEM_TAGS = load_tags('item')
+
+
+def expand_tag(tag, seen=None):
+    seen = seen or set()
+    out = []
+    for v in ITEM_TAGS.get(tag, []):
+        if isinstance(v, dict):
+            v = v['id']
+        if v.startswith('#'):
+            if v[1:] not in seen:
+                seen.add(v[1:])
+                out += expand_tag(v[1:], seen)
+        else:
+            out.append(norm_id(v))
+    return out
+
+
+def ingredient(ing):
+    """Normalise a recipe ingredient to {'names': [...], 'tag': ...}."""
+    if ing is None:
+        return None
+    if isinstance(ing, list):
+        names = []
+        for x in ing:
+            names += ingredient(x)['names']
+        return {'names': names}
+    if isinstance(ing, dict):
+        if 'item' in ing:
+            return {'names': [vname(ing['item'])]}
+        if 'tag' in ing:
+            ing = '#' + ing['tag']
+    if isinstance(ing, str):
+        if ing.startswith('#'):
+            ids = expand_tag(ing[1:])
+            return {'names': [vname(i) for i in ids], 'tag': ing[1:]}
+        return {'names': [vname(ing)]}
+    return {'names': ['?']}
+
+
+# ---------------------------------------------------------------- recipes
+STATION = {
+    'minecraft:crafting_shaped': 'Crafting Table', 'minecraft:crafting_shapeless': 'Crafting Table',
+    'minecraft:smelting': 'Oven', 'minecraft:smoking': 'Mud Kiln', 'minecraft:blasting': 'Blast Furnace',
+    'minecraft:campfire_cooking': 'Kindling', 'minecraft:stonecutting': 'Stonecutter',
+    'minecraft:smithing_transform': 'Smithing Table',
+}
+
+
+def blocked_vanilla_paths():
+    mc = load(os.path.join(SRC, 'MF_datapack', 'pack.mcmeta'))
+    out = set()
+    for b in mc.get('filter', {}).get('block', []):
+        if b.get('namespace') == 'minecraft':
+            out.add(b['path'])
+    return out
+
+
+BLOCKED = blocked_vanilla_paths()
+
+
+def is_blocked(path_in_ns):
+    for b in BLOCKED:
+        if path_in_ns == b or path_in_ns.startswith(b.rstrip('/') + '/'):
+            return True
+    return False
+
+
+def parse_recipe(d, src, origin):
+    t = d.get('type')
+    r = {'type': t, 'station': STATION.get(t, t), 'src': src, 'origin': origin, 'id': None}
+    res = d.get('result')
+    if isinstance(res, str):
+        res = {'id': res}
+    if res is None:
+        return None
+    r['output'] = display_stack(res)
+    register(res, src, 'recipe')
+    if t == 'minecraft:crafting_shaped':
+        key = {k: ingredient(v) for k, v in d['key'].items()}
+        r['pattern'] = d['pattern']
+        r['key'] = key
+        grid = []
+        for row in d['pattern']:
+            grid.append([key[c]['names'] if c != ' ' else None for c in row])
+        r['grid'] = grid
+    elif t == 'minecraft:crafting_shapeless':
+        r['ingredients'] = [ingredient(i) for i in d['ingredients']]
+    elif t in ('minecraft:smelting', 'minecraft:smoking', 'minecraft:blasting',
+               'minecraft:campfire_cooking'):
+        r['input'] = ingredient(d['ingredient'])
+        r['cookingtime'] = d.get('cookingtime')
+        r['experience'] = d.get('experience')
+    elif t == 'minecraft:stonecutting':
+        r['input'] = ingredient(d['ingredient'])
+    elif t == 'minecraft:smithing_transform':
+        r['template'] = ingredient(d.get('template')) if d.get('template') else None
+        r['base'] = ingredient(d['base'])
+        r['addition'] = ingredient(d['addition'])
+    else:
+        return None
+    return r
+
+
+RECIPES = []
+for f in sorted(glob.glob(os.path.join(DP, '*', 'recipe', '**', '*.json'), recursive=True)):
+    ns = os.path.relpath(f, DP).split(os.sep)[0]
+    d = load(f)
+    r = parse_recipe(d, rel(f), 'pack')
+    if r:
+        r['id'] = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'recipe'))[:-5]
+        r['folder'] = os.path.dirname(os.path.relpath(f, os.path.join(DP, ns, 'recipe')))
+        RECIPES.append(r)
+
+VANILLA_RECIPES_KEPT = []
+for f in sorted(glob.glob(os.path.join(VDATA, 'recipe', '*.json'))):
+    name = os.path.basename(f)
+    if is_blocked('recipe/' + name):
+        continue
+    d = load(f)
+    r = parse_recipe(d, 'vanilla:recipe/' + name, 'vanilla')
+    if r:
+        r['id'] = 'minecraft:' + name[:-5]
+        VANILLA_RECIPES_KEPT.append(r)
+
+BLOCKED_RECIPES = sorted(b[len('recipe/'):-5] for b in BLOCKED if b.startswith('recipe/'))
+
+# ---------------------------------------------------------------- loot tables
+def walk_entries(entries, pool_ctx, out, src):
+    for e in entries:
+        t = e.get('type', '').split(':')[-1]
+        if t == 'item':
+            stack = {'id': e['name'], 'components': {}}
+            count = None
+            for fn in e.get('functions', []):
+                fname = fn.get('function', '').split(':')[-1]
+                if fname == 'set_components':
+                    stack['components'].update(fn.get('components', {}))
+                elif fname == 'set_name':
+                    stack['components']['minecraft:item_name' if fn.get('target') == 'item_name' else 'minecraft:custom_name'] = fn.get('name')
+                elif fname == 'set_count':
+                    count = fn.get('count')
+                elif fname == 'set_lore':
+                    stack['components']['minecraft:lore'] = fn.get('lore')
+            key = register(stack, src, 'loot')
+            out.append({'item': key, 'id': norm_id(e['name']), 'weight': e.get('weight', 1),
+                        'quality': e.get('quality'), 'count': count,
+                        'conditions': e.get('conditions'), 'functions': [f.get('function') for f in e.get('functions', [])],
+                        **pool_ctx})
+        elif t == 'loot_table':
+            out.append({'loot_table': e.get('value') if isinstance(e.get('value'), str) else e.get('name'),
+                        'weight': e.get('weight', 1), 'quality': e.get('quality'),
+                        'conditions': e.get('conditions'), **pool_ctx})
+        elif t in ('alternatives', 'group', 'sequence'):
+            walk_entries(e.get('children', []), pool_ctx, out, src)
+        elif t == 'tag':
+            out.append({'tag': e.get('name'), 'weight': e.get('weight', 1), 'conditions': e.get('conditions'), **pool_ctx})
+        elif t == 'empty':
+            out.append({'empty': True, 'weight': e.get('weight', 1), 'conditions': e.get('conditions'), **pool_ctx})
+
+
+def parse_loot(d, src):
+    out = []
+    for i, p in enumerate(d.get('pools', [])):
+        ents = p.get('entries', [])
+        total = sum(e.get('weight', 1) for e in ents)
+        ctx = {'pool': i, 'rolls': p.get('rolls', 1), 'bonus_rolls': p.get('bonus_rolls', 0),
+               'pool_total_weight': total, 'pool_conditions': p.get('conditions')}
+        walk_entries(ents, ctx, out, src)
+    return out
+
+
+LOOT = {}
+for f in sorted(glob.glob(os.path.join(DP, '*', 'loot_table', '**', '*.json'), recursive=True)):
+    ns = os.path.relpath(f, DP).split(os.sep)[0]
+    lid = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'loot_table'))[:-5]
+    d = load(f)
+    LOOT[lid] = {'id': lid, 'src': rel(f), 'type': d.get('type'), 'entries': parse_loot(d, rel(f)),
+                 'overrides_vanilla': ns == 'minecraft' and os.path.exists(
+                     os.path.join(VDATA, 'loot_table', os.path.relpath(f, os.path.join(DP, ns, 'loot_table'))))}
+
+# ---------------------------------------------------------------- trades
+TRADES = defaultdict(lambda: defaultdict(list))
+PROF_NAME = {}
+for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.json'))):
+    prof = os.path.basename(os.path.dirname(f))
+    level = os.path.basename(f)[:-5]
+    d = load(f)
+    tag = d.get('trades', '')
+    ids = []
+    if isinstance(tag, str) and tag.startswith('#'):
+        ns, p = tag[1:].split(':')
+        tf = os.path.join(DP, ns, 'tags', 'villager_trade', p + '.json')
+        if os.path.exists(tf):
+            ids = load(tf)['values']
+    elif isinstance(tag, list):
+        ids = tag
+    for tid in ids:
+        ns, p = tid.split(':')
+        tfile = os.path.join(DP, ns, 'villager_trade', p + '.json')
+        if not os.path.exists(tfile):
+            continue
+        t = load(tfile)
+        for k in ('wants', 'gives', 'additional_wants'):
+            if k in t:
+                register(t[k], rel(tfile), 'trade')
+        TRADES[prof][level].append({
+            'id': tid, 'src': rel(tfile), 'amount_offered': d.get('amount'),
+            'wants': display_stack(t['wants']) if 'wants' in t else None,
+            'additional_wants': display_stack(t['additional_wants']) if 'additional_wants' in t else None,
+            'gives': display_stack(t['gives']) if 'gives' in t else None,
+            'max_uses': t.get('max_uses'), 'xp': t.get('xp'),
+            'price_multiplier': t.get('price_multiplier'), 'reputation_discount': t.get('reputation_discount'),
+        })
+    TRADES[prof][level + '_meta'] = {'amount': d.get('amount'), 'src': rel(f)}
+    PROF_NAME[prof] = strip_codes(LANG.get('entity.minecraft.villager.' + prof, prof.replace('_', ' ').title()))
+
+# ---------------------------------------------------------------- enchantments
+ENCH = {}
+for f in sorted(glob.glob(os.path.join(DP, '*', 'enchantment', '*.json'))):
+    ns = os.path.relpath(f, DP).split(os.sep)[0]
+    eid = ns + ':' + os.path.basename(f)[:-5]
+    d = load(f)
+    van = os.path.join(VDATA, 'enchantment', os.path.basename(f))
+    ENCH[eid] = {'id': eid, 'src': rel(f), 'name': render_text(d.get('description')),
+                 'max_level': d.get('max_level'), 'weight': d.get('weight'), 'anvil_cost': d.get('anvil_cost'),
+                 'slots': d.get('slots'), 'supported_items': d.get('supported_items'),
+                 'primary_items': d.get('primary_items'), 'exclusive_set': d.get('exclusive_set'),
+                 'effects': d.get('effects'), 'data': d,
+                 'vanilla': load(van) if ns == 'minecraft' and os.path.exists(van) else None}
+
+# ---------------------------------------------------------------- advancements
+ADV = {}
+for f in sorted(glob.glob(os.path.join(DP, '*', 'advancement', '**', '*.json'), recursive=True)):
+    ns = os.path.relpath(f, DP).split(os.sep)[0]
+    aid = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'advancement'))[:-5]
+    d = load(f)
+    disp = d.get('display')
+    rec = {'id': aid, 'src': rel(f), 'parent': d.get('parent'), 'criteria': list(d.get('criteria', {}).keys()),
+           'criteria_raw': d.get('criteria'), 'rewards': d.get('rewards'), 'requirements': d.get('requirements')}
+    if disp:
+        icon = disp.get('icon', {})
+        if icon:
+            register(icon, rel(f), 'advancement_icon')
+        rec.update({'title': render_text(disp.get('title')), 'description': render_text(disp.get('description')),
+                    'frame': disp.get('frame', 'task'), 'hidden': disp.get('hidden', False),
+                    'show_toast': disp.get('show_toast', True), 'announce': disp.get('announce_to_chat', True),
+                    'icon': display_stack(icon) if icon else None, 'background': disp.get('background')})
+    ADV[aid] = rec
+
+# ---------------------------------------------------------------- functions: /give and /loot item stacks
+GIVE_RE = re.compile(r'\b(?:give\s+\S+|item\s+replace\s+\S+\s+\S+\s+\S+\s+with)\s+([a-z0-9_:.]+)(\[[^\n]*\])?')
+FUNCTIONS = {}
+for f in sorted(glob.glob(os.path.join(DP, '*', 'function', '**', '*.mcfunction'), recursive=True)):
+    ns = os.path.relpath(f, DP).split(os.sep)[0]
+    fid = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'function'))[:-11]
+    with open(f, encoding='utf-8', errors='replace') as fh:
+        FUNCTIONS[fid] = {'src': rel(f), 'lines': sum(1 for _ in fh)}
+
+# ---------------------------------------------------------------- textures (item model -> png)
+def resolve_item_model(model_ref):
+    """matcha:foo -> path of an item definition json in the resource pack or vanilla."""
+    ns, p = model_ref.split(':') if ':' in model_ref else ('minecraft', model_ref)
+    for base in (os.path.join(RP, ns, 'items', p + '.json'), os.path.join(VASSETS, 'items', p + '.json') if ns == 'minecraft' else ''):
+        if base and os.path.exists(base):
+            return base
+    return None
+
+
+def first_model(node):
+    if isinstance(node, dict):
+        if node.get('type', '').endswith('model') and 'model' in node and isinstance(node['model'], str):
+            return node['model']
+        for k in ('fallback', 'model', 'on_false', 'on_true', 'cases', 'entries'):
+            if k in node:
+                m = first_model(node[k])
+                if m:
+                    return m
+        for v in node.values():
+            m = first_model(v)
+            if m:
+                return m
+    elif isinstance(node, list):
+        for v in node:
+            m = first_model(v)
+            if m:
+                return m
+    return None
+
+
+def model_textures(model_ref, depth=0):
+    ns, p = model_ref.split(':') if ':' in model_ref else ('minecraft', model_ref)
+    for base in (os.path.join(RP, ns, 'models', p + '.json'), os.path.join(VASSETS, 'models', p + '.json') if ns == 'minecraft' else ''):
+        if base and os.path.exists(base):
+            d = load(base)
+            tex = {k: (v.get('sprite') if isinstance(v, dict) else v) for k, v in d.get('textures', {}).items()}
+            tex = {k: v for k, v in tex.items() if isinstance(v, str)}
+            if 'parent' in d and depth < 8:
+                parent_tex, parent = model_textures(d['parent'], depth + 1)
+                parent_tex.update(tex)
+                tex = parent_tex
+                return tex, d.get('parent') if not parent else parent
+            return tex, d.get('parent')
+    return {}, None
+
+
+def texture_path(tex_ref):
+    ns, p = tex_ref.split(':') if ':' in tex_ref else ('minecraft', tex_ref)
+    for base in (os.path.join(RP, ns, 'textures', p + '.png'), os.path.join(VASSETS, 'textures', p + '.png') if ns == 'minecraft' else ''):
+        if base and os.path.exists(base):
+            return base
+    return None
+
+
+def icon_for(item):
+    refs = list(item['models']) or [item['base_id']]
+    for ref in refs:
+        f = resolve_item_model(ref)
+        if not f:
+            continue
+        m = first_model(load(f).get('model', {}))
+        if not m:
+            continue
+        tex, parent = model_textures(m)
+        order = ['layer0', 'all', 'side', 'front', 'top', 'texture', 'particle', 'end', 'cross', 'plant']
+        for k in order:
+            if k in tex and not tex[k].startswith('#'):
+                p = texture_path(tex[k])
+                if p:
+                    return {'texture': os.path.relpath(p, ROOT), 'kind': 'item' if k == 'layer0' else 'block',
+                            'faces': {kk: os.path.relpath(texture_path(v), ROOT) for kk, v in tex.items()
+                                      if not v.startswith('#') and texture_path(v)}}
+    return None
+
+
+# ---------------------------------------------------------------- write
+for k, it in ITEMS.items():
+    it['icon'] = icon_for(it)
+
+pack_meta = load(os.path.join(SRC, 'MF_datapack', 'pack.mcmeta'))
+version_text = render_text(pack_meta['pack']['description'])
+git_head = os.popen('git -C "%s" rev-parse HEAD' % SRC).read().strip()
+git_date = os.popen('git -C "%s" log -1 --format=%%cI' % SRC).read().strip()
+
+data = {
+    'meta': {'pack_description': version_text, 'git_head': git_head, 'git_date': git_date,
+             'pack_format': pack_meta['pack'].get('min_format')},
+    'lang_pack': PACK_LANG,
+    'renames': {k: {'vanilla': VANILLA_LANG.get(k), 'pack': strip_codes(v)} for k, v in PACK_LANG.items()
+                if k in VANILLA_LANG and VANILLA_LANG[k] != v},
+    'items': ITEMS,
+    'recipes': RECIPES,
+    'vanilla_recipes_kept': VANILLA_RECIPES_KEPT,
+    'blocked_vanilla': sorted(BLOCKED),
+    'loot': LOOT,
+    'trades': {p: dict(v) for p, v in TRADES.items()},
+    'professions': PROF_NAME,
+    'enchantments': ENCH,
+    'advancements': ADV,
+    'functions': FUNCTIONS,
+}
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
+with open(OUT, 'w', encoding='utf-8') as f:
+    json.dump(data, f, indent=1, ensure_ascii=False)
+print('items', len(ITEMS), 'recipes', len(RECIPES), 'vanilla kept', len(VANILLA_RECIPES_KEPT),
+      'loot', len(LOOT), 'enchantments', len(ENCH), 'advancements', len(ADV), 'functions', len(FUNCTIONS),
+      'no icon', sum(1 for i in ITEMS.values() if not i['icon']), file=sys.stderr)

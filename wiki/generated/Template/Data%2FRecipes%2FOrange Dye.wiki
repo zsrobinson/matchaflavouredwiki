@@ -1,0 +1,20 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Orange Dye]] <small>(vanilla recipe)</small>
+| [[Open Eyeblossom]]
+| {{Crafting|A1=Open Eyeblossom|Output=Orange Dye|shapeless=1}}
+|-
+| [[Orange Dye]] <small>(vanilla recipe)</small>
+| [[Orange Tulip]]
+| {{Crafting|A1=Orange Tulip|Output=Orange Dye|shapeless=1}}
+|-
+| [[Orange Dye]] <small>(vanilla recipe)</small>
+| [[Red Dye]] +<br />[[Yellow Dye]]
+| {{Crafting|A1=Red Dye|B1=Yellow Dye|Output=Orange Dye,2|shapeless=1}}
+|-
+| [[Orange Dye]] <small>(vanilla recipe)</small>
+| [[Torchflower]]
+| {{Crafting|A1=Torchflower|Output=Orange Dye|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

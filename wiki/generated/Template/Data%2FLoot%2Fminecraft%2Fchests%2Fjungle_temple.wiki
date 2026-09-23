@@ -1,0 +1,37 @@
+<includeonly><small>Loot table <code>minecraft:chests/jungle_temple</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/jungle_temple.json|source}}); pools roll 1; 3–4 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Raw Gold}} || 16–24 || 100% || 100% || 
+|-
+| {{ItemLink|Lapis Lazuli}} || 16–24 || 100% || 100% || 
+|-
+| {{ItemLink|Iron Ingot}} || 8–12 || 100% || 100% || 
+|-
+| {{ItemLink|Raw Iron}} || 8–25 || 100% || 100% || 
+|-
+| {{ItemLink|Raw Diamond}} || 1 || 100% || 100% || 
+|-
+| {{ItemLink|Raw Silver}} || 1–2 || 100% || 100% || 
+|-
+| {{ItemLink|Smithing Template}} || 1 || 100% || 100% || 
+|-
+| {{ItemLink|Bone}} || 4–6 || 41.7% || 84.3% || 
+|-
+| {{ItemLink|Bamboo}} || 1–3 || 31.2% || 72.6% || 
+|-
+| {{ItemLink|Obol}} || 1–3 || 10.4% || 31.9% || 
+|-
+| {{ItemLink|Sturdy Leather}} || 1–5 || 6.25% || 20.2% || 
+|-
+| {{ItemLink|Copper Horse Armor}} || 1 || 2.08% || 7.10% || 
+|-
+| {{ItemLink|Iron Horse Armor}} || 1 || 2.08% || 7.10% || 
+|-
+| {{ItemLink|Golden Horse Armor}} || 1 || 2.08% || 7.10% || 
+|-
+| {{ItemLink|Diamond Horse Armor}} || 1 || 2.08% || 7.10% || 
+|-
+| {{ItemLink|Book}} || 1 || 2.08% || 7.10% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

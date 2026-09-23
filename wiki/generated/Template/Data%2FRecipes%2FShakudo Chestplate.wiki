@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Shakudo Chestplate]]
+| [[Copper Chestplate]] +<br />[[Shakudo Alloy]]
+| {{Smithing|Template=|Base=Copper Chestplate|Addition=Shakudo Alloy|Output=Shakudo Chestplate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_chestplate.json|matcha:smithing/shakudo_chestplate}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,10 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Structures'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Trial chambers / chamber <small>({{Source|MF_datapack/data/minecraft/loot_table/dispensers/trial_chambers/chamber.json|dispensers/trial_chambers/chamber}})</small> || 2–5 || 10.3% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

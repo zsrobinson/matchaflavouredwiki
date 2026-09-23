@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cherry Trapdoor]] <small>(vanilla recipe)</small>
+| 6 × [[Cherry Planks]]
+| {{Crafting|A1=Cherry Planks|A2=Cherry Planks|B1=Cherry Planks|B2=Cherry Planks|C1=Cherry Planks|C2=Cherry Planks|Output=Cherry Trapdoor,2}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cherry Trapdoor]]
+| [[Cherry Planks]]
+| {{Stonecutter|Input=Cherry Planks|Output=Cherry Trapdoor}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/cherry_trapdoor_from_stonecutting_cherry_planks.json|matcha:stonecutting/cherry_trapdoor_from_stonecutting_cherry_planks}}</small>
+|-
+| [[Cherry Trapdoor]]
+| Any [[cherry logs]]
+| {{Stonecutter|Input=Any Cherry Logs|Output=Cherry Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/cherry_trapoor_from_stonecutting_cherry_logs.json|matcha:stonecutting/cherry_trapoor_from_stonecutting_cherry_logs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

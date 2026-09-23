@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Golden Leggings}}
+|invimage=Golden Leggings
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Fire Protection]] II}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=200
+|armor=3
+|repair=<code>#minecraft:repairs_gold_armor</code>
+|tooltip={{G|Armor}} 3
+|id=<code>minecraft:golden_leggings</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/golden_leggings.json|golden_leggings.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

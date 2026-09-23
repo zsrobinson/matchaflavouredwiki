@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Bag of Flour}}
+|invimage=Bag of Flour
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Magma Cube Spawn Egg}}
+|stackable=Yes (64)
+|id=<code>minecraft:magma_cube_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/flour_bag.json|flour_bag.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

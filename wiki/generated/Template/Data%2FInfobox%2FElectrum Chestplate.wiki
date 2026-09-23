@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Electrum Chestplate}}
+|invimage=Electrum Chestplate
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[+1]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=1000
+|armor=8
+|toughness=3
+|repair=[[Block of Diamond]]
+|tooltip={{G|Armor}} 8<br />{{G|Armor toughness}} 3<br />Set Bonus:<br />{{G|Apotropaic}} Max<br />{{G|Health}}{{G|Health}} {{G|Cooldown}} (00:30)<br />Repaired with:<br />Block of Diamond
+|id=<code>matcha:electrum_chestplate</code>
+|base=<code>minecraft:netherite_chestplate</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_chestplate.json|electrum_chestplate.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cyan Bed]] <small>(vanilla recipe)</small>
+| 3 × [[Cyan Wool]] +<br />3 × Any [[planks]]
+| {{Crafting|A1=Cyan Wool|A2=Any Planks|B1=Cyan Wool|B2=Any Planks|C1=Cyan Wool|C2=Any Planks|Output=Cyan Bed}}
+|-
+| [[Cyan Bed]] <small>(vanilla recipe)</small>
+| [[Cyan Dye]] +<br />[[White Bed]] or [[Orange Bed]] or [[Magenta Bed]] or [[Light Blue Bed]] or [[Yellow Bed]] or [[Lime Bed]] or [[Pink Bed]] or [[Gray Bed]] or [[Light Gray Bed]] or [[Purple Bed]] or [[Blue Bed]] or [[Brown Bed]] or [[Green Bed]] or [[Red Bed]] or [[Black Bed]]
+| {{Crafting|A1=Cyan Dye|B1=White Bed;Orange Bed;Magenta Bed;Light Blue Bed;Yellow Bed;Lime Bed;Pink Bed;Gray Bed;Light Gray Bed;Purple Bed;Blue Bed;Brown Bed;Green Bed;Red Bed;Black Bed|Output=Cyan Bed|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

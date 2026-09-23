@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Diamond Chestplate}}
+|invimage=Diamond Chestplate
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=800
+|armor=8
+|toughness=2
+|repair=<code>#minecraft:repairs_diamond_armor</code>
+|tooltip={{G|Armor}} 8<br />{{G|Armor toughness}} 2
+|id=<code>minecraft:diamond_chestplate</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/diamond_chestplate.json|diamond_chestplate.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

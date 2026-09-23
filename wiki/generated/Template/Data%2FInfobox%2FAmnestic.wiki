@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Amnestic}}
+|invimage=Amnestic
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|tooltip=Causes a villager to forget who they are<br />Place on the ground next to them
+|id=<code>matcha:amnestic_wrapped</code>
+|base=<code>minecraft:chicken_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/amnestic.json|amnestic.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

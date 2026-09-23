@@ -1,0 +1,58 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Abbey / barracks <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/barracks.json|chests/abbey/barracks}})</small> || 1–4 || 67.5% || 
+|-
+| Abbey / tower <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/tower.json|chests/abbey/tower}})</small> || 1–4 || 77.7% || 
+|-
+| Bastion treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_treasure.json|chests/bastion_treasure}})</small> || 3–8 || 37.2% || 
+|-
+| Common / junk <small>({{Source|MF_datapack/data/matcha/loot_table/chests/common/junk.json|chests/common/junk}})</small> || 2–6 || 33.3% || 
+|-
+| Pillager outpost <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/pillager_outpost.json|chests/pillager_outpost}})</small> || 1–4 || 67.5% || 
+|-
+| Simple dungeon <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json|chests/simple_dungeon}})</small> || 1–4 || 26.6% || 
+|-
+| Stronghold corridor <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_corridor.json|chests/stronghold_corridor}})</small> || 4–9 || 49.3% || 
+|-
+| Stronghold crossing <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_crossing.json|chests/stronghold_crossing}})</small> || 4–9 || 31.0% || 
+|-
+| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 5 || 3.37% || 
+|-
+| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 5 || 26.3% || biome: #minecraft:unused
+|-
+| Village / village temple <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_temple.json|chests/village/village_temple}})</small> || 1–4 || 88.0% || 
+|-
+| Woodland mansion <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/woodland_mansion.json|chests/woodland_mansion}})</small> || 1–4 || 19.7% || 
+|}
+
+'''Mob drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/bogged.json|entities/bogged}})</small> || 0–1 || 90.9% || player kill
+|-
+| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 5 || 3.37% || 
+|-
+| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 5 || 26.3% || biome: #minecraft:unused
+|-
+| Skeleton <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/skeleton.json|entities/skeleton}})</small> || 0–1 || 100% || player kill
+|-
+| Stray <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/stray.json|entities/stray}})</small> || 0–1 || 100% || player kill
+|-
+| Witch <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json|entities/witch}})</small> || 4–8 || 100% || player kill
+|}
+
+'''Fishing'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 5 || 1.14% || 
+|-
+| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 5 || 9.66% || biome: #minecraft:unused
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

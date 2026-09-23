@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Adamant Axe}}
+|invimage=Adamant Axe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Efficiency]] II<br />[[enchantment.kleispack.smelting]]<br />[[Adamant Weapon]]<br />[[Unbreaking]] II}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=5000
+|damage={{Hp|10}}
+|attackspeed=1
+|miningspeed=15
+|repair=[[Block of Diamond]], [[Adamant Scrap]]
+|tooltip={{G|Mining speed}} 15<br />{{G|Attack damage}} 10<br />{{G|Attack speed}} 1<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
+|id=<code>matcha:electrum_axe</code>
+|base=<code>minecraft:netherite_axe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/adamant_axe.json|adamant_axe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

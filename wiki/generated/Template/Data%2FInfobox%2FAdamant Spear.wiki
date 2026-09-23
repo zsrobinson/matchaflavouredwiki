@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Adamant Spear}}
+|invimage=Adamant Spear
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Sharpness]] I<br />[[Unbreaking]] II<br />[[Adamant Weapon]]}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=5000
+|damage={{Hp|5}}
+|attackspeed=0.87
+|repair=[[Block of Diamond]], [[Adamant Scrap]]
+|tooltip={{G|Attack damage}} 4<br />{{G|Attack speed}} 0.95<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
+|id=<code>matcha:electrum_spear</code>
+|base=<code>minecraft:netherite_spear</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/adamant_spear.json|adamant_spear.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

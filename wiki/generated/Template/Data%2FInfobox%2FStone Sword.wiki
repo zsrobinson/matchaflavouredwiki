@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Stone Sword}}
+|invimage=Stone Sword
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=131
+|damage={{Hp|5}}
+|attackspeed=1.6
+|miningspeed=340282349999999991754788743781432688640
+|repair=<code>#minecraft:stone_tool_materials</code>
+|id=<code>matcha:hepatizon_sword</code>
+|base=<code>minecraft:stone_sword</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_sword.json|hepatizon_sword.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

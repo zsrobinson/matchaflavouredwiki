@@ -1,0 +1,16 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Exposed Cut Copper]]
+| 2 × [[Exposed Cut Copper Slab]]
+| {{Crafting|A1=Exposed Cut Copper Slab|B1=Exposed Cut Copper Slab|Output=Exposed Cut Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_cut_copper_from_exposed_cut_copper_slab.json|matcha:crafting/exposed_cut_copper_from_exposed_cut_copper_slab}}</small>
+|-
+| [[Weathered Cut Copper Slab]]
+| [[Exposed Cut Copper Slab]] +<br />[[Potion]]
+| {{Crafting|A1=Exposed Cut Copper Slab|B1=Potion|Output=Weathered Cut Copper Slab|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_cut_copper_slab_from_patina.json|matcha:crafting/weathered_cut_copper_slab_from_patina}}</small>
+|-
+| [[Waxed Exposed Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Exposed Cut Copper Slab]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Cut Copper Slab|B1=Wax|Output=Waxed Exposed Cut Copper Slab|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

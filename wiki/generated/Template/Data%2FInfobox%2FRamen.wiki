@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Ramen}}
+|invimage=Ramen
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (16)
+|effects={{EffectLink|Regeneration}} (0:30)
+|eat_time=1.6 seconds
+|id=<code>minecraft:rabbit_stew</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/ramen.json|ramen.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

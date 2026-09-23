@@ -1,0 +1,28 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Bastion hoglin stable <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_hoglin_stable.json|chests/bastion_hoglin_stable}})</small> || 8–17 || 15.6% || 
+|}
+
+'''Mob drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/bogged.json|entities/bogged}})</small> || 0–1 || 50.0% || player kill
+|-
+| Witch <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json|entities/witch}})</small> || 0–2 || 60.8% || player kill
+|}
+
+'''Shearing'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/shearing/bogged.json|shearing/bogged}})</small> || 1 || 75.0% || 
+|-
+| Mooshroom / brown <small>({{Source|MF_datapack/data/minecraft/loot_table/shearing/mooshroom/brown.json|shearing/mooshroom/brown}})</small> || 1 || 100% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

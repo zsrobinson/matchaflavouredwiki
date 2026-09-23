@@ -1,0 +1,28 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Music Disc]]
+| 8 × [[Disc Fragment]] +<br />[[Phosphor]]
+| {{Crafting|A1=Disc Fragment|A2=Disc Fragment|A3=Disc Fragment|B1=Disc Fragment|B2=Phosphor|B3=Disc Fragment|C1=Disc Fragment|C2=Disc Fragment|C3=Disc Fragment|Output=Music Disc}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/music_disc_far.json|matcha:crafting/music_disc_far}}</small>
+|-
+| [[Ochre Phosphor Lamp]]
+| 4 × [[Phosphor]] +<br />4 × [[Glass]] +<br />[[Yellow Dye]]
+| {{Crafting|A1=Phosphor|A2=Glass|A3=Phosphor|B1=Glass|B2=Yellow Dye|B3=Glass|C1=Phosphor|C2=Glass|C3=Phosphor|Output=Ochre Phosphor Lamp,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ochre_froglight.json|matcha:crafting/ochre_froglight}}</small>
+|-
+| [[Pearlescent Phosphor Lamp]]
+| 4 × [[Phosphor]] +<br />4 × [[Glass]] +<br />[[Magenta Dye]]
+| {{Crafting|A1=Phosphor|A2=Glass|A3=Phosphor|B1=Glass|B2=Magenta Dye|B3=Glass|C1=Phosphor|C2=Glass|C3=Phosphor|Output=Pearlescent Phosphor Lamp,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/pearlescent_froglight.json|matcha:crafting/pearlescent_froglight}}</small>
+|-
+| [[Phosphor Rod]]
+| 6 × [[Glass Pane]] +<br />3 × [[Phosphor]]
+| {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Phosphor|B2=Phosphor|B3=Phosphor|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Phosphor Rod,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/phosphor_rod.json|matcha:crafting/phosphor_rod}}</small>
+|-
+| [[Verdant Phosphor Lamp]]
+| 4 × [[Phosphor]] +<br />4 × [[Glass]] +<br />[[Lime Dye]]
+| {{Crafting|A1=Phosphor|A2=Glass|A3=Phosphor|B1=Glass|B2=Lime Dye|B3=Glass|C1=Phosphor|C2=Glass|C3=Phosphor|Output=Verdant Phosphor Lamp,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/verdant_froglight.json|matcha:crafting/verdant_froglight}}</small>
+|-
+| [[Glow Item Frame]] <small>(vanilla recipe)</small>
+| [[Item Frame]] +<br />[[Phosphor]]
+| {{Crafting|A1=Item Frame|B1=Phosphor|Output=Glow Item Frame|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

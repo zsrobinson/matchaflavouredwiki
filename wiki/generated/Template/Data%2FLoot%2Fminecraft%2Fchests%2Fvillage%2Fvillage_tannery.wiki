@@ -1,0 +1,23 @@
+<includeonly><small>Loot table <code>minecraft:chests/village/village_tannery</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_tannery.json|source}}); pools roll 1; 5–8 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Bread}} || 1 || 58.8% || 99.5% || 
+|-
+| {{ItemLink|Bundle}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Sturdy Leather}} || 1–3 || 5.88% || 32.4% || 
+|-
+| {{ItemLink|Saddle}} || 1 || 5.88% || 32.4% || 
+|-
+| {{ItemLink|Obol}} || 1–2 || 5.88% || 32.4% || 
+|-
+| {{ItemLink|Sturdy Leather Helmet}} || 1 || 5.88% || 32.4% || 
+|-
+| {{ItemLink|Sturdy Leather Gambeson}} || 1 || 5.88% || 32.4% || 
+|-
+| {{ItemLink|Sturdy Leather Leggings}} || 1 || 5.88% || 32.4% || 
+|-
+| {{ItemLink|Sturdy Leather Boots}} || 1 || 5.88% || 32.4% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

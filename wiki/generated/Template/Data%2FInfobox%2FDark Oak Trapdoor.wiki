@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Dark Oak Trapdoor}}
+|invimage=Dark Oak Trapdoor
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:dark_oak_trapdoor</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_trapdoor_from_stonecutting_dark_oak_planks.json|dark_oak_trapdoor_from_stonecutting_dark_oak_planks.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

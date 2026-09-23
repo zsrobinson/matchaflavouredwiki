@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oak Fence Gate]] <small>(vanilla recipe)</small>
+| 4 × [[Stick]] +<br />2 × [[Oak Planks]]
+| {{Crafting|A1=Stick|A2=Stick|B1=Oak Planks|B2=Oak Planks|C1=Stick|C2=Stick|Output=Oak Fence Gate}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oak Fence Gate]]
+| Any [[oak logs]]
+| {{Stonecutter|Input=Any Oak Logs|Output=Oak Fence Gate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_fence_gate_from_stonecutting_oak_logs.json|matcha:stonecutting/oak_fence_gate_from_stonecutting_oak_logs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

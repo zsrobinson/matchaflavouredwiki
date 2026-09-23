@@ -1,0 +1,37 @@
+<includeonly>{| class="wikitable"
+! Level !! Villager wants !! Villager gives !! Uses !! Villager XP
+|-
+! rowspan="3" | Novice
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Birch Log}} || ∞ || 10
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Oak Log}} || ∞ || 10
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Spruce Log}} || ∞ || 10
+|-
+! rowspan="5" | Apprentice
+| {{ItemLink|Obol}} +<br />{{ItemLink|Acacia Sapling}} || 64 × {{ItemLink|Acacia Log}} || ∞ || 30
+|-
+| {{ItemLink|Obol}} +<br />{{ItemLink|Cherry Sapling}} || 64 × {{ItemLink|Cherry Log}} || ∞ || 30
+|-
+| {{ItemLink|Obol}} +<br />{{ItemLink|Dark Oak Sapling}} || 64 × {{ItemLink|Dark Oak Log}} || ∞ || 30
+|-
+| {{ItemLink|Obol}} +<br />{{ItemLink|Jungle Sapling}} || 64 × {{ItemLink|Jungle Log}} || ∞ || 30
+|-
+| {{ItemLink|Obol}} +<br />{{ItemLink|Mangrove Propagule}} || 64 × {{ItemLink|Mangrove Log}} || ∞ || 30
+|-
+! rowspan="4" | Journeyman
+| {{ItemLink|Obol}} +<br />{{ItemLink|Crimson Fungus}} || 64 × {{ItemLink|Crimson Stem}} || ∞ || 30
+|-
+| {{ItemLink|Obol}} || 64 × {{ItemLink|Mushroom Stem}} || ∞ || 30
+|-
+| {{ItemLink|Obol}} +<br />{{ItemLink|Pale Oak Sapling}} || 64 × {{ItemLink|Pale Oak Log}} || ∞ || 30
+|-
+| {{ItemLink|Obol}} +<br />{{ItemLink|Warped Fungus}} || 64 × {{ItemLink|Warped Stem}} || ∞ || 30
+|-
+! rowspan="1" | Expert
+| {{ItemLink|Obol}} || {{ItemLink|Hatchet}}<br /><small>Bloodrage </small> || ∞ || 60
+|-
+! rowspan="1" | Master
+| 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}} || 16 || 2
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Weathered Copper Chain]]
+| [[Exposed Copper Chain]] +<br />[[Potion]]
+| {{Crafting|A1=Exposed Copper Chain|B1=Potion|Output=Weathered Copper Chain|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_chain_from_patina.json|matcha:crafting/weathered_copper_chain_from_patina}}</small>
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Weathered Copper Chain]]
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Copper Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/weathered_copper_chain_from_stonecutting_weathered_copper.json|matcha:stonecutting/weathered_copper_chain_from_stonecutting_weathered_copper}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,264 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Elegy of Icarus]]
+| 4 × [[Wind Charge]] +<br />[[Wax]] +<br />3 × [[Feather]] +<br />[[Hell-Bound Book]]
+| {{Crafting|A1=Wind Charge|A2=Feather|A3=Wind Charge|B1=Wax|B2=Hell-Bound Book|B3=Feather|C1=Wind Charge|C2=Feather|C3=Wind Charge|Output=Elegy of Icarus}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/feather_falling.json|matcha:blessing/feather_falling}}</small>
+|-
+| [[Music Disc]]
+| 8 × [[Disc Fragment]] +<br />[[Wax]]
+| {{Crafting|A1=Disc Fragment|A2=Disc Fragment|A3=Disc Fragment|B1=Disc Fragment|B2=Wax|B3=Disc Fragment|C1=Disc Fragment|C2=Disc Fragment|C3=Disc Fragment|Output=Music Disc}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/music_disc_crete.json|matcha:crafting/music_disc_crete}}</small>
+|-
+| [[Beehive]] <small>(vanilla recipe)</small>
+| 6 × Any [[planks]] +<br />3 × [[Wax]]
+| {{Crafting|A1=Any Planks|A2=Wax|A3=Any Planks|B1=Any Planks|B2=Wax|B3=Any Planks|C1=Any Planks|C2=Wax|C3=Any Planks|Output=Beehive}}
+|-
+| [[Candle]] <small>(vanilla recipe)</small>
+| [[String]] +<br />[[Wax]]
+| {{Crafting|A1=String|A2=Wax|Output=Candle}}
+|-
+| [[Honeycomb Block]] <small>(vanilla recipe)</small>
+| 4 × [[Wax]]
+| {{Crafting|A1=Wax|A2=Wax|B1=Wax|B2=Wax|Output=Honeycomb Block}}
+|-
+| [[Waxed Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Chiseled Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Chiseled Copper|B1=Wax|Output=Waxed Chiseled Copper|shapeless=1}}
+|-
+| [[Waxed Copper Bars]] <small>(vanilla recipe)</small>
+| [[Copper Bars]] +<br />[[Wax]]
+| {{Crafting|A1=Copper Bars|B1=Wax|Output=Waxed Copper Bars|shapeless=1}}
+|-
+| [[Waxed Block of Copper]] <small>(vanilla recipe)</small>
+| [[Block of Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Block of Copper|B1=Wax|Output=Waxed Block of Copper|shapeless=1}}
+|-
+| [[Waxed Copper Bulb]] <small>(vanilla recipe)</small>
+| [[Copper Bulb]] +<br />[[Wax]]
+| {{Crafting|A1=Copper Bulb|B1=Wax|Output=Waxed Copper Bulb|shapeless=1}}
+|-
+| [[Waxed Copper Chain]] <small>(vanilla recipe)</small>
+| [[Copper Chain]] +<br />[[Wax]]
+| {{Crafting|A1=Copper Chain|B1=Wax|Output=Waxed Copper Chain|shapeless=1}}
+|-
+| [[Waxed Copper Chest]] <small>(vanilla recipe)</small>
+| [[Copper Chest]] +<br />[[Wax]]
+| {{Crafting|A1=Copper Chest|B1=Wax|Output=Waxed Copper Chest|shapeless=1}}
+|-
+| [[Waxed Copper Door]] <small>(vanilla recipe)</small>
+| [[Copper Door]] +<br />[[Wax]]
+| {{Crafting|A1=Copper Door|B1=Wax|Output=Waxed Copper Door|shapeless=1}}
+|-
+| [[Waxed Copper Golem Statue]] <small>(vanilla recipe)</small>
+| [[Copper Golem Statue]] +<br />[[Wax]]
+| {{Crafting|A1=Copper Golem Statue|B1=Wax|Output=Waxed Copper Golem Statue|shapeless=1}}
+|-
+| [[Waxed Copper Grate]] <small>(vanilla recipe)</small>
+| [[Copper Grate]] +<br />[[Wax]]
+| {{Crafting|A1=Copper Grate|B1=Wax|Output=Waxed Copper Grate|shapeless=1}}
+|-
+| [[Waxed Copper Lantern]] <small>(vanilla recipe)</small>
+| [[Copper Lantern]] +<br />[[Wax]]
+| {{Crafting|A1=Copper Lantern|B1=Wax|Output=Waxed Copper Lantern|shapeless=1}}
+|-
+| [[Waxed Copper Trapdoor]] <small>(vanilla recipe)</small>
+| [[Copper Trapdoor]] +<br />[[Wax]]
+| {{Crafting|A1=Copper Trapdoor|B1=Wax|Output=Waxed Copper Trapdoor|shapeless=1}}
+|-
+| [[Waxed Cut Copper]] <small>(vanilla recipe)</small>
+| [[Cut Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Cut Copper|B1=Wax|Output=Waxed Cut Copper|shapeless=1}}
+|-
+| [[Waxed Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Cut Copper Slab]] +<br />[[Wax]]
+| {{Crafting|A1=Cut Copper Slab|B1=Wax|Output=Waxed Cut Copper Slab|shapeless=1}}
+|-
+| [[Waxed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Cut Copper Stairs]] +<br />[[Wax]]
+| {{Crafting|A1=Cut Copper Stairs|B1=Wax|Output=Waxed Cut Copper Stairs|shapeless=1}}
+|-
+| [[Waxed Exposed Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Exposed Chiseled Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Chiseled Copper|B1=Wax|Output=Waxed Exposed Chiseled Copper|shapeless=1}}
+|-
+| [[Waxed Exposed Copper Bars]] <small>(vanilla recipe)</small>
+| [[Exposed Copper Bars]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper Bars|B1=Wax|Output=Waxed Exposed Copper Bars|shapeless=1}}
+|-
+| [[Waxed Exposed Copper Bulb]] <small>(vanilla recipe)</small>
+| [[Exposed Copper Bulb]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper Bulb|B1=Wax|Output=Waxed Exposed Copper Bulb|shapeless=1}}
+|-
+| [[Waxed Exposed Copper Chain]] <small>(vanilla recipe)</small>
+| [[Exposed Copper Chain]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper Chain|B1=Wax|Output=Waxed Exposed Copper Chain|shapeless=1}}
+|-
+| [[Waxed Exposed Copper Chest]] <small>(vanilla recipe)</small>
+| [[Exposed Copper Chest]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper Chest|B1=Wax|Output=Waxed Exposed Copper Chest|shapeless=1}}
+|-
+| [[Waxed Exposed Copper Door]] <small>(vanilla recipe)</small>
+| [[Exposed Copper Door]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper Door|B1=Wax|Output=Waxed Exposed Copper Door|shapeless=1}}
+|-
+| [[Waxed Exposed Copper]] <small>(vanilla recipe)</small>
+| [[Exposed Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper|B1=Wax|Output=Waxed Exposed Copper|shapeless=1}}
+|-
+| [[Waxed Exposed Copper Golem Statue]] <small>(vanilla recipe)</small>
+| [[Exposed Copper Golem Statue]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper Golem Statue|B1=Wax|Output=Waxed Exposed Copper Golem Statue|shapeless=1}}
+|-
+| [[Waxed Exposed Copper Grate]] <small>(vanilla recipe)</small>
+| [[Exposed Copper Grate]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper Grate|B1=Wax|Output=Waxed Exposed Copper Grate|shapeless=1}}
+|-
+| [[Waxed Exposed Copper Lantern]] <small>(vanilla recipe)</small>
+| [[Exposed Copper Lantern]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper Lantern|B1=Wax|Output=Waxed Exposed Copper Lantern|shapeless=1}}
+|-
+| [[Waxed Exposed Copper Trapdoor]] <small>(vanilla recipe)</small>
+| [[Exposed Copper Trapdoor]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper Trapdoor|B1=Wax|Output=Waxed Exposed Copper Trapdoor|shapeless=1}}
+|-
+| [[Waxed Exposed Cut Copper]] <small>(vanilla recipe)</small>
+| [[Exposed Cut Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Cut Copper|B1=Wax|Output=Waxed Exposed Cut Copper|shapeless=1}}
+|-
+| [[Waxed Exposed Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Exposed Cut Copper Slab]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Cut Copper Slab|B1=Wax|Output=Waxed Exposed Cut Copper Slab|shapeless=1}}
+|-
+| [[Waxed Exposed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Exposed Cut Copper Stairs]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Cut Copper Stairs|B1=Wax|Output=Waxed Exposed Cut Copper Stairs|shapeless=1}}
+|-
+| [[Waxed Exposed Lightning Rod]] <small>(vanilla recipe)</small>
+| [[Exposed Lightning Rod]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Lightning Rod|B1=Wax|Output=Waxed Exposed Lightning Rod|shapeless=1}}
+|-
+| [[Waxed Lightning Rod]] <small>(vanilla recipe)</small>
+| [[Lightning Rod]] +<br />[[Wax]]
+| {{Crafting|A1=Lightning Rod|B1=Wax|Output=Waxed Lightning Rod|shapeless=1}}
+|-
+| [[Waxed Oxidized Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Oxidized Chiseled Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Chiseled Copper|B1=Wax|Output=Waxed Oxidized Chiseled Copper|shapeless=1}}
+|-
+| [[Waxed Oxidized Copper Bars]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper Bars]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Copper Bars|B1=Wax|Output=Waxed Oxidized Copper Bars|shapeless=1}}
+|-
+| [[Waxed Oxidized Copper Bulb]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper Bulb]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Copper Bulb|B1=Wax|Output=Waxed Oxidized Copper Bulb|shapeless=1}}
+|-
+| [[Waxed Oxidized Copper Chain]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper Chain]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Copper Chain|B1=Wax|Output=Waxed Oxidized Copper Chain|shapeless=1}}
+|-
+| [[Waxed Oxidized Copper Chest]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper Chest]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Copper Chest|B1=Wax|Output=Waxed Oxidized Copper Chest|shapeless=1}}
+|-
+| [[Waxed Oxidized Copper Door]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper Door]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Copper Door|B1=Wax|Output=Waxed Oxidized Copper Door|shapeless=1}}
+|-
+| [[Waxed Oxidized Copper]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Copper|B1=Wax|Output=Waxed Oxidized Copper|shapeless=1}}
+|-
+| [[Waxed Oxidized Copper Golem Statue]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper Golem Statue]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Copper Golem Statue|B1=Wax|Output=Waxed Oxidized Copper Golem Statue|shapeless=1}}
+|-
+| [[Waxed Oxidized Copper Grate]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper Grate]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Copper Grate|B1=Wax|Output=Waxed Oxidized Copper Grate|shapeless=1}}
+|-
+| [[Waxed Oxidized Copper Lantern]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper Lantern]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Copper Lantern|B1=Wax|Output=Waxed Oxidized Copper Lantern|shapeless=1}}
+|-
+| [[Waxed Oxidized Copper Trapdoor]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper Trapdoor]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Copper Trapdoor|B1=Wax|Output=Waxed Oxidized Copper Trapdoor|shapeless=1}}
+|-
+| [[Waxed Oxidized Cut Copper]] <small>(vanilla recipe)</small>
+| [[Oxidized Cut Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Cut Copper|B1=Wax|Output=Waxed Oxidized Cut Copper|shapeless=1}}
+|-
+| [[Waxed Oxidized Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Oxidized Cut Copper Slab]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Cut Copper Slab|B1=Wax|Output=Waxed Oxidized Cut Copper Slab|shapeless=1}}
+|-
+| [[Waxed Oxidized Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Oxidized Cut Copper Stairs]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Cut Copper Stairs|B1=Wax|Output=Waxed Oxidized Cut Copper Stairs|shapeless=1}}
+|-
+| [[Waxed Oxidized Lightning Rod]] <small>(vanilla recipe)</small>
+| [[Oxidized Lightning Rod]] +<br />[[Wax]]
+| {{Crafting|A1=Oxidized Lightning Rod|B1=Wax|Output=Waxed Oxidized Lightning Rod|shapeless=1}}
+|-
+| [[Waxed Weathered Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Weathered Chiseled Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Chiseled Copper|B1=Wax|Output=Waxed Weathered Chiseled Copper|shapeless=1}}
+|-
+| [[Waxed Weathered Copper Bars]] <small>(vanilla recipe)</small>
+| [[Weathered Copper Bars]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper Bars|B1=Wax|Output=Waxed Weathered Copper Bars|shapeless=1}}
+|-
+| [[Waxed Weathered Copper Bulb]] <small>(vanilla recipe)</small>
+| [[Weathered Copper Bulb]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper Bulb|B1=Wax|Output=Waxed Weathered Copper Bulb|shapeless=1}}
+|-
+| [[Waxed Weathered Copper Chain]] <small>(vanilla recipe)</small>
+| [[Weathered Copper Chain]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper Chain|B1=Wax|Output=Waxed Weathered Copper Chain|shapeless=1}}
+|-
+| [[Waxed Weathered Copper Chest]] <small>(vanilla recipe)</small>
+| [[Weathered Copper Chest]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper Chest|B1=Wax|Output=Waxed Weathered Copper Chest|shapeless=1}}
+|-
+| [[Waxed Weathered Copper Door]] <small>(vanilla recipe)</small>
+| [[Weathered Copper Door]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper Door|B1=Wax|Output=Waxed Weathered Copper Door|shapeless=1}}
+|-
+| [[Waxed Weathered Copper]] <small>(vanilla recipe)</small>
+| [[Weathered Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper|B1=Wax|Output=Waxed Weathered Copper|shapeless=1}}
+|-
+| [[Waxed Weathered Copper Golem Statue]] <small>(vanilla recipe)</small>
+| [[Weathered Copper Golem Statue]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper Golem Statue|B1=Wax|Output=Waxed Weathered Copper Golem Statue|shapeless=1}}
+|-
+| [[Waxed Weathered Copper Grate]] <small>(vanilla recipe)</small>
+| [[Weathered Copper Grate]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper Grate|B1=Wax|Output=Waxed Weathered Copper Grate|shapeless=1}}
+|-
+| [[Waxed Weathered Copper Lantern]] <small>(vanilla recipe)</small>
+| [[Weathered Copper Lantern]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper Lantern|B1=Wax|Output=Waxed Weathered Copper Lantern|shapeless=1}}
+|-
+| [[Waxed Weathered Copper Trapdoor]] <small>(vanilla recipe)</small>
+| [[Weathered Copper Trapdoor]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper Trapdoor|B1=Wax|Output=Waxed Weathered Copper Trapdoor|shapeless=1}}
+|-
+| [[Waxed Weathered Cut Copper]] <small>(vanilla recipe)</small>
+| [[Weathered Cut Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Cut Copper|B1=Wax|Output=Waxed Weathered Cut Copper|shapeless=1}}
+|-
+| [[Waxed Weathered Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Weathered Cut Copper Slab]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Cut Copper Slab|B1=Wax|Output=Waxed Weathered Cut Copper Slab|shapeless=1}}
+|-
+| [[Waxed Weathered Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Weathered Cut Copper Stairs]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Cut Copper Stairs|B1=Wax|Output=Waxed Weathered Cut Copper Stairs|shapeless=1}}
+|-
+| [[Waxed Weathered Lightning Rod]] <small>(vanilla recipe)</small>
+| [[Weathered Lightning Rod]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Lightning Rod|B1=Wax|Output=Waxed Weathered Lightning Rod|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,7 @@
+<includeonly><small>Loot table <code>minecraft:blocks/bush</code> ({{Source|MF_datapack/data/minecraft/loot_table/blocks/bush.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Bush}} || 1 || 100% || 100% || tool: Iron Shears, Silk Touch, tool: #minecraft:hoes
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

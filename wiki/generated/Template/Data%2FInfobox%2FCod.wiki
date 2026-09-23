@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Cod}}
+|invimage=Cod
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Raw Cod}}
+|stackable=Yes (64)
+|tooltip=⭐☆☆☆
+|id=<code>matcha:echo_fish</code>
+|base=<code>minecraft:cod</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/entities/guardian.json|guardian.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

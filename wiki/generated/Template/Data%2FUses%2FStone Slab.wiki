@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Limestone]]
+| 2 × [[Stone Slab]]
+| {{Crafting|A1=Stone Slab|B1=Stone Slab|Output=Limestone|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/stone_from_stone_slabs.json|matcha:crafting/stone_from_stone_slabs}}</small>
+|-
+| [[Grindstone]] <small>(vanilla recipe)</small>
+| 2 × [[Stick]] +<br />[[Stone Slab]] +<br />2 × Any [[planks]]
+| {{Crafting|A1=Stick|A2=Any Planks|B1=Stone Slab|C1=Stick|C2=Any Planks|Output=Grindstone}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

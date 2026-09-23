@@ -1,0 +1,21 @@
+<includeonly><small>Loot table <code>minecraft:chests/trial_chambers/reward_unique</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_unique.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Golden Apple}} || 1 || 22.2% || 22.2% || 
+|-
+| {{ItemLink|Crystal Heart}} || 1 || 22.2% || 22.2% || 
+|-
+| {{ItemLink|Smithing Template}} || 1 || 16.7% || 16.7% || 
+|-
+| {{ItemLink|Banner Pattern}} || 1 || 11.1% || 11.1% || 
+|-
+| {{ItemLink|Music Disc}} || 1 || 11.1% || 11.1% || 
+|-
+| {{ItemLink|Trident}} || 1 || 5.56% || 5.56% || 
+|-
+| {{ItemLink|The Tanakh}} || 1 || 5.56% || 5.56% || 
+|-
+| {{ItemLink|The Quran}} || 1 || 5.56% || 5.56% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

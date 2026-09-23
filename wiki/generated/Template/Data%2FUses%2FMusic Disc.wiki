@@ -1,0 +1,59 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Disc Fragment]]
+| [[Music Disc]]
+| {{Crafting|A1=Music Disc|Output=Disc Fragment,3|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/disc_fragment_from_disc.json|matcha:crafting/disc_fragment_from_disc}}</small>
+|-
+| [[Disc Fragment]]
+| [[Music Disc]]
+| {{Crafting|A1=Music Disc|Output=Disc Fragment|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/disc_fragment_from_tears.json|matcha:crafting/disc_fragment_from_tears}}</small>
+|}
+
+'''Trading'''
+{| class="wikitable"
+! Villager !! Level !! Wants !! Gives
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 5 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 3 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 8 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|-
+| [[Wandering Trader]] || — || {{ItemLink|Music Disc}} || 2 × {{ItemLink|Obol}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

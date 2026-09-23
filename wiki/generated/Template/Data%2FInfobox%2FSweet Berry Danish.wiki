@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Sweet Berry Danish}}
+|invimage=Sweet Berry Danish
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|8}}
+|effects={{EffectLink|Health Boost}} II (8:00)
+|eat_time=1.6 seconds
+|tooltip=❤❤❤❤<br />❤❤❤❤ (8:00)
+|id=<code>matcha:sweet_berry_danish</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/sweet_berry_danish.json|sweet_berry_danish.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

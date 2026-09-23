@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Steel Hoe}}
+|invimage=Steel Hoe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|damage={{Hp|1}}
+|attackspeed=2
+|miningspeed=8
+|repair=[[Iron Ingot]]
+|tooltip={{G|Mining speed}} 8<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 3<br />Repaired with:<br />Iron Ingot
+|id=<code>matcha:steel_hoe</code>
+|base=<code>minecraft:stone_hoe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_hoe.json|steel_hoe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

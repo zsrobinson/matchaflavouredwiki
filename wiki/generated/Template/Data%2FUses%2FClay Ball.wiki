@@ -1,0 +1,20 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Brick]]
+| [[Clay Ball]]
+| {{Cooking|station=Kindling|Input=Clay Ball|Output=Brick|note=5 s, 0.3 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/campfire/brick_campfire.json|matcha:campfire/brick_campfire}}</small>
+|-
+| [[Cobbled Deepslate]]
+| 2 × [[Flint]] +<br />2 × [[Clay Ball]]
+| {{Crafting|A1=Flint|A2=Clay Ball|B1=Clay Ball|B2=Flint|Output=Cobbled Deepslate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cobbled_deepslate.json|matcha:crafting/cobbled_deepslate}}</small>
+|-
+| [[Brick]]
+| [[Clay Ball]]
+| {{Cooking|station=Mud Kiln|Input=Clay Ball|Output=Brick|note=5 s, 0.3 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json|matcha:kiln/brick_from_smoking_clay_ball}}</small>
+|-
+| [[Clay]] <small>(vanilla recipe)</small>
+| 4 × [[Clay Ball]]
+| {{Crafting|A1=Clay Ball|A2=Clay Ball|B1=Clay Ball|B2=Clay Ball|Output=Clay}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

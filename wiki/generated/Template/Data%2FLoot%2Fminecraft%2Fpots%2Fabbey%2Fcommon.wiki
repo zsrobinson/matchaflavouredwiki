@@ -1,0 +1,23 @@
+<includeonly><small>Loot table <code>minecraft:pots/abbey/common</code> ({{Source|MF_datapack/data/minecraft/loot_table/pots/abbey/common.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Arrow}} || 2–8 || 20.2% || 20.2% || 
+|-
+| {{ItemLink|Tattered Leather}} || 2–6 || 18.2% || 18.2% || 
+|-
+| {{ItemLink|Copper Ingot}} || 3–8 || 16.2% || 16.2% || 
+|-
+| {{ItemLink|Sturdy Leather}} || 1–3 || 16.2% || 16.2% || 
+|-
+| {{ItemLink|Iron Ingot}} || 3–5 || 14.1% || 14.1% || 
+|-
+| {{ItemLink|Sulfur Chunk}} || 2–4 || 8.08% || 8.08% || 
+|-
+| {{ItemLink|Raw Estus}} || 1 || 4.04% || 4.04% || 
+|-
+| {{ItemLink|Trial Key}} || 1 || 2.02% || 2.02% || 
+|-
+| {{ItemLink|Obol}} || 1 || 1.01% || 1.01% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

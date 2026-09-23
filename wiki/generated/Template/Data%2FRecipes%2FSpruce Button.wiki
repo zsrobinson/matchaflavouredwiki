@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Spruce Button]] <small>(vanilla recipe)</small>
+| [[Spruce Planks]]
+| {{Crafting|A1=Spruce Planks|Output=Spruce Button|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Spruce Button]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_button_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_button_from_stonecutting_spruce_logs}}</small>
+|-
+| [[Spruce Button]]
+| [[Spruce Planks]]
+| {{Stonecutter|Input=Spruce Planks|Output=Spruce Button,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_button_from_stonecutting_spruce_planks.json|matcha:stonecutting/spruce_button_from_stonecutting_spruce_planks}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

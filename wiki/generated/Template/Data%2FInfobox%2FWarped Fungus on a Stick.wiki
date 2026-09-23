@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Warped Fungus on a Stick}}
+|invimage=Warped Fungus on a Stick
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=100
+|id=<code>minecraft:warped_fungus_on_a_stick</code>
+|source={{Source|vanilla:recipe/warped_fungus_on_a_stick.json|warped_fungus_on_a_stick.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

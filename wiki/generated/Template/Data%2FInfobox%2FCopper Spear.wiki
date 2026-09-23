@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Copper Spear}}
+|invimage=Copper Spear
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=190
+|damage={{Hp|2}}
+|attackspeed=1.18
+|repair=<code>#minecraft:copper_tool_materials</code>
+|tooltip={{G|Attack damage}} 2<br />{{G|Attack speed}} 1.18
+|id=<code>minecraft:copper_spear</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_spear.json|copper_spear.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Dandelion]]
+| [[Dandelion]] +<br />[[Potion]] +<br />[[Bone Meal]]
+| {{Crafting|A1=Dandelion|B1=Potion|C1=Bone Meal|Output=Dandelion,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_dandelion.json|matcha:crafting/clone_dandelion}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,132 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Smithing Template]]
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Wind Charge]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Wind Charge|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/flow_armor_trim_smithing_template.json|matcha:crafting/flow_armor_trim_smithing_template}}</small>
+|-
+| [[Adamant Claymore]]
+| [[Smithing Template]] +<br />[[Diamond Sword]] +<br />[[Adamant Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Diamond Sword|Addition=Adamant Alloy|Output=Adamant Claymore}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_claymore.json|matcha:smithing/adamant_claymore}}</small>
+|-
+| [[Adamant Dolabra]]
+| [[Smithing Template]] +<br />[[Diamond Axe]] +<br />[[Adamant Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Diamond Axe|Addition=Adamant Alloy|Output=Adamant Dolabra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_dolabra.json|matcha:smithing/adamant_dolabra}}</small>
+|-
+| [[Adamant Mattock]]
+| [[Smithing Template]] +<br />[[Diamond Hoe]] +<br />[[Adamant Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Diamond Hoe|Addition=Adamant Alloy|Output=Adamant Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_mattock.json|matcha:smithing/adamant_mattock}}</small>
+|-
+| [[Electrum Dolabra]]
+| [[Smithing Template]] +<br />[[Diamond Axe]] +<br />[[Electrum Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Diamond Axe|Addition=Electrum Alloy|Output=Electrum Dolabra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/electrum_dolabra.json|matcha:smithing/electrum_dolabra}}</small>
+|-
+| [[Electrum Mattock]]
+| [[Smithing Template]] +<br />[[Diamond Hoe]] +<br />[[Electrum Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Diamond Hoe|Addition=Electrum Alloy|Output=Electrum Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/electrum_mattock.json|matcha:smithing/electrum_mattock}}</small>
+|-
+| [[Hepatizon Dolabra]]
+| [[Smithing Template]] +<br />[[Copper Axe]] +<br />[[Hepatizon Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Copper Axe|Addition=Hepatizon Alloy|Output=Hepatizon Dolabra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_dolabra.json|matcha:smithing/hepatizon_dolabra}}</small>
+|-
+| [[Hepatizon Mattock]]
+| [[Smithing Template]] +<br />[[Copper Hoe]] +<br />[[Hepatizon Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Copper Hoe|Addition=Hepatizon Alloy|Output=Hepatizon Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_mattock.json|matcha:smithing/hepatizon_mattock}}</small>
+|-
+| [[Shakudo Dolabra]]
+| [[Smithing Template]] +<br />[[Copper Axe]] +<br />[[Shakudo Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Copper Axe|Addition=Shakudo Alloy|Output=Shakudo Dolabra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_dolabra.json|matcha:smithing/shakudo_dolabra}}</small>
+|-
+| [[Shakudo Mattock]]
+| [[Smithing Template]] +<br />[[Copper Hoe]] +<br />[[Shakudo Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Copper Hoe|Addition=Shakudo Alloy|Output=Shakudo Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_mattock.json|matcha:smithing/shakudo_mattock}}</small>
+|-
+| [[Steel Claymore]]
+| [[Smithing Template]] +<br />[[Iron Sword]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Iron Sword|Addition=Steel Alloy|Output=Steel Claymore}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_claymore.json|matcha:smithing/steel_claymore}}</small>
+|-
+| [[Steel Dolabra]]
+| [[Smithing Template]] +<br />[[Iron Axe]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Iron Axe|Addition=Steel Alloy|Output=Steel Dolabra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_dolabra.json|matcha:smithing/steel_dolabra}}</small>
+|-
+| [[Steel Mattock]]
+| [[Smithing Template]] +<br />[[Iron Hoe]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Iron Hoe|Addition=Steel Alloy|Output=Steel Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_mattock.json|matcha:smithing/steel_mattock}}</small>
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Block of Copper]] or [[Waxed Block of Copper]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Block of Copper;Waxed Block of Copper|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Cobblestone]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Cobblestone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Sandstone]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Sandstone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[End Stone]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=End Stone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Terracotta]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Adamant Horse Armor]] <small>(vanilla recipe)</small>
+| [[Smithing Template]] +<br />[[Diamond Horse Armor]] +<br />[[Adamant Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Diamond Horse Armor|Addition=Adamant Alloy|Output=Adamant Horse Armor}}
+|-
+| [[Adamant Nautilus Armor]] <small>(vanilla recipe)</small>
+| [[Smithing Template]] +<br />[[Diamond Nautilus Armor]] +<br />[[Adamant Alloy]]
+| {{Smithing|Template=Smithing Template|Base=Diamond Nautilus Armor|Addition=Adamant Alloy|Output=Adamant Nautilus Armor}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Terracotta]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Hellstone]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Hellstone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Cobblestone]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Cobblestone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Terracotta]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Cobbled Deepslate]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Cobbled Deepslate|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Blackstone]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Blackstone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Purpur Block]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Purpur Block|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Malachite]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Malachite|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Cobblestone]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Cobblestone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Cobbled Deepslate]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Cobbled Deepslate|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Terracotta]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Mossy Cobblestone]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Mossy Cobblestone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

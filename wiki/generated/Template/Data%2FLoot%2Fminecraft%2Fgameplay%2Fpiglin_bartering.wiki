@@ -1,0 +1,35 @@
+<includeonly><small>Loot table <code>minecraft:gameplay/piglin_bartering</code> ({{Source|MF_datapack/data/minecraft/loot_table/gameplay/piglin_bartering.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Obsidian}} || 1 || 9.09% || 9.09% || 
+|-
+| {{ItemLink|Crying Obsidian}} || 1–3 || 9.09% || 9.09% || 
+|-
+| {{ItemLink|Fire Charge}} || 1 || 9.09% || 9.09% || 
+|-
+| {{ItemLink|Sturdy Leather}} || 2–4 || 9.09% || 9.09% || 
+|-
+| {{ItemLink|Soul Sand}} || 2–8 || 9.09% || 9.09% || 
+|-
+| {{ItemLink|Hellbrick}} || 2–8 || 9.09% || 9.09% || 
+|-
+| {{ItemLink|Spectral Arrow}} || 6–12 || 9.09% || 9.09% || 
+|-
+| {{ItemLink|Gravel}} || 8–16 || 9.09% || 9.09% || 
+|-
+| {{ItemLink|Blackstone}} || 8–16 || 9.09% || 9.09% || 
+|-
+| {{ItemLink|String}} || 3–9 || 4.55% || 4.55% || 
+|-
+| {{ItemLink|Quartz}} || 5–12 || 4.55% || 4.55% || 
+|-
+| {{ItemLink|Book}} || 1 || 2.27% || 2.27% || 
+|-
+| {{ItemLink|Iron Nugget}} || 10–36 || 2.27% || 2.27% || 
+|-
+| {{ItemLink|Stable Void}} || 2–4 || 2.27% || 2.27% || 
+|-
+| {{ItemLink|Dried Ghast}} || 1 || 2.27% || 2.27% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

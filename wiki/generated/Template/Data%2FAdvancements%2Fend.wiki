@@ -1,0 +1,13 @@
+<includeonly>{| class="wikitable sortable"
+! Icon !! Advancement !! Description !! Parent !! Frame !! Hidden !! Reward
+|-
+| {{Slot|End Portal Frame|link=none}} || '''To Dreams''' ||  ||  || Task ||  || 
+|-
+| {{Slot|Divine Favor|link=none}} || '''Iconoclast''' || ⟦U+E00F⟧⟦U+E00F⟧⟦U+E00F⟧Defile the Dead God's Dream || To Dreams || Challenge ||  || <code>matcha:advancement/obol_3</code>; runs <code>matcha:mechanics/first_dragon_killed_reward</code>
+|-
+| {{Slot|Elytra|link=none}} || '''Wax Wings''' || ⟦U+E00F⟧⟦U+E00F⟧Seize the work of Daedalus || Iconoclast || Goal ||  || <code>matcha:advancement/obol_2</code>
+|-
+| {{Slot|Elytra|link=none}} || '''Icarus' Folly''' || ⟦U+E00F⟧⟦U+E00F⟧⟦U+E00F⟧⟦U+E00F⟧Smith Hepatizon Elytra || Wax Wings || Goal ||  || <code>matcha:advancement/obol_4</code>
+|-
+| {{Slot|Elytra|link=none}} || '''Wings of Eros''' || ⟦U+E00F⟧⟦U+E00F⟧⟦U+E00F⟧⟦U+E00F⟧Smith Shakudo Elytra || Wax Wings || Goal ||  || <code>matcha:advancement/obol_4</code>
+|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>

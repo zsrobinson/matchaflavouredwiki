@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Cheese}}
+|invimage=Cheese
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Cookie}}
+|stackable=Yes (64)
+|heals={{Hp|3}}
+|eat_time=1.6 seconds
+|tooltip=❤❣
+|id=<code>minecraft:cookie</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/cheese.json|cheese.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

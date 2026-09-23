@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Wooden Spear}}
+|invimage=Wooden Spear
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=59
+|damage={{Hp|1}}
+|attackspeed=1.54
+|repair=<code>#minecraft:wooden_tool_materials</code>
+|tooltip=🗡 1<br />🕒 1.54
+|id=<code>minecraft:wooden_spear</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/wooden_spear.json|wooden_spear.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

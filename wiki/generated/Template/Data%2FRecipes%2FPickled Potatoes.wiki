@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Pickled Potatoes]]
+| [[Baked Potato]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
+| {{Crafting|A1=Baked Potato|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Potatoes|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_potatoes.json|matcha:food/crafting/pickled_potatoes}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

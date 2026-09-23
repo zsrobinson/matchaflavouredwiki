@@ -1,0 +1,3 @@
+<includeonly>{| class="messagebox info"
+| '''This {{{type|section}} describes content in development''' {{#if:{{{1|}}}|for {{{1}}} }}that is not in a released version of Matcha Flavoured yet, based on the repository's <code>changelog.md</code>. It may change before release.
+|}</includeonly><noinclude>[[Category:Message templates]]</noinclude>

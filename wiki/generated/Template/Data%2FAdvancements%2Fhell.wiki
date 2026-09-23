@@ -1,0 +1,19 @@
+<includeonly>{| class="wikitable sortable"
+! Icon !! Advancement !! Description !! Parent !! Frame !! Hidden !! Reward
+|-
+| {{Slot|Hellstone|link=none}} || '''Through Hell''' ||  ||  || Task ||  || 
+|-
+| {{Slot|Benzene|link=none}} || '''Forbidden Chemistry''' || ⟦U+E00F⟧Synthesize Benzene: a Chemical Reagent Forbidden by the Old Laws || Through Hell || Task ||  || <code>matcha:advancement/obol_1</code>
+|-
+| {{Slot|Ancient Debris|link=none}} || '''Hidden in the Depths''' || Flesh from Long-Dead Gods || Through Hell || Task ||  || 
+|-
+| {{Slot|Stabilized Estus|link=none}} || '''Hellish Bindings''' || ⟦U+E00F⟧Tether Raw Estus into a Stable Form || Forbidden Chemistry || Task ||  || <code>matcha:advancement/obol_1</code>
+|-
+| {{Slot|Chicken Spawn Egg|link=none}} || '''Holy Turret''' || ⟦U+E00F⟧⟦U+E00F⟧Construct a Warding Stone || Hellish Bindings || Goal ||  || <code>matcha:advancement/obol_2</code>
+|-
+| {{Slot|Hell-Bound Book|link=none}} || '''Unholy Knowledge''' || ⟦U+E00F⟧Craft a Hell-Bound Book || Hellish Bindings || Task ||  || <code>matcha:advancement/obol_1</code>
+|-
+| {{Slot|Hell-Bound Book|link=none}} || '''Apocrypha''' || ⟦U+E00F⟧⟦U+E00F⟧Steal Prayers from a long-dead God || Unholy Knowledge || Goal ||  || <code>matcha:advancement/obol_2</code>
+|-
+| {{Slot|Obol|link=none}} || '''Demonic Emissary''' || 10 ⟦U+E00F⟧Steal every prayer from every once-god || Apocrypha || Challenge ||  || <code>matcha:advancement/obol_10</code>
+|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>

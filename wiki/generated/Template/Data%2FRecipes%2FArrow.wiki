@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Arrow]]
+| [[Flint]] +<br />[[Stick]] +<br />[[Feather]]
+| {{Crafting|A1=Flint|A2=Stick|A3=Feather|Output=Arrow,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/arrow.json|matcha:crafting/arrow}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

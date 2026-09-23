@@ -1,0 +1,33 @@
+<includeonly><small>Loot table <code>minecraft:chests/village/village_armorer</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_armorer.json|source}}); pools roll 4–7 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Iron Helmet}} || 1 || 8.99% || 40.1% || 
+|-
+| {{ItemLink|Iron Chestplate}} || 1 || 8.99% || 40.1% || 
+|-
+| {{ItemLink|Iron Leggings}} || 1 || 8.99% || 40.1% || 
+|-
+| {{ItemLink|Iron Boots}} || 1 || 8.99% || 40.1% || 
+|-
+| {{ItemLink|Iron Sword}} || 1 || 8.99% || 40.1% || 
+|-
+| {{ItemLink|Iron Spear}} || 1 || 8.99% || 40.1% || 
+|-
+| {{ItemLink|Iron Pickaxe}} || 1 || 8.99% || 40.1% || 
+|-
+| {{ItemLink|Iron Axe}} || 1 || 8.99% || 40.1% || 
+|-
+| {{ItemLink|Iron Shovel}} || 1 || 8.99% || 40.1% || 
+|-
+| {{ItemLink|Iron Hoe}} || 1 || 8.99% || 40.1% || 
+|-
+| {{ItemLink|Iron Ingot}} || 2–4 || 4.49% || 22.2% || 
+|-
+| {{ItemLink|Copper Ingot}} || 4–8 || 2.25% || 11.7% || 
+|-
+| {{ItemLink|Bread}} || 1–2 || 2.25% || 11.7% || 
+|-
+| {{ItemLink|Obol}} || 1 || 1.12% || 6.02% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

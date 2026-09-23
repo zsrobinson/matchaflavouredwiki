@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Lumpia}}
+|invimage=Lumpia
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|6}}
+|effects={{EffectLink|Water Breathing}} (5:00)<br />{{EffectLink|Night Vision}} (5:00)
+|eat_time=1.2 seconds
+|tooltip=❤❤❤<br />{{G|Water}} Gills (5:00)<br />{{G|Night vision}} Night Vision (5:00)
+|id=<code>matcha:lumpia</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/lumpia.json|lumpia.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

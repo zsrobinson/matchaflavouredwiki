@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Cooking Recipe}}
+|invimage=Cooking Recipe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|tooltip=Gnocchi
+|id=<code>matcha:gnocchi_recipe</code>
+|base=<code>minecraft:paper</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/food/recipe/gnocchi.json|gnocchi.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

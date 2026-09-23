@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Snow Shovel}}
+|invimage=Snow Shovel
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=5000
+|damage={{Hp|4.5}}
+|attackspeed=1
+|miningspeed=15
+|repair=<code>#minecraft:iron_tool_materials</code>
+|tooltip=⛏ 1<br />🗡 4.5<br />🕒 1
+|id=<code>matcha:snow_shovel</code>
+|base=<code>minecraft:iron_shovel</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/snow_shovel.json|snow_shovel.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

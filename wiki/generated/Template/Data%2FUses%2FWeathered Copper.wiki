@@ -1,0 +1,68 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oxidized Copper]]
+| [[Weathered Copper]] +<br />[[Potion]]
+| {{Crafting|A1=Weathered Copper|B1=Potion|Output=Oxidized Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_from_patina.json|matcha:crafting/oxidized_copper_from_patina}}</small>
+|-
+| [[Weathered Copper Bulb]]
+| 3 × [[Weathered Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
+| {{Crafting|A2=Weathered Copper|B1=Weathered Copper|B2=Electric Inverter|B3=Electric Wire|C2=Weathered Copper|Output=Weathered Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_bulb.json|matcha:crafting/weathered_copper_bulb}}</small>
+|-
+| [[Weathered Copper Trapdoor]]
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_trapdoor_from_weathered_copper.json|matcha:crafting/weathered_copper_trapdoor_from_weathered_copper}}</small>
+|-
+| [[Weathered Copper Bars]]
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Copper Bars,36}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/weathered_copper_bars_from_stonecutting_weathered_copper.json|matcha:stonecutting/weathered_copper_bars_from_stonecutting_weathered_copper}}</small>
+|-
+| [[Weathered Copper Chain]]
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Copper Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/weathered_copper_chain_from_stonecutting_weathered_copper.json|matcha:stonecutting/weathered_copper_chain_from_stonecutting_weathered_copper}}</small>
+|-
+| [[Weathered Copper Door]]
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Copper Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/weathered_copper_door_from_stonecutting_weathered_copper_block.json|matcha:stonecutting/weathered_copper_door_from_stonecutting_weathered_copper_block}}</small>
+|-
+| [[Weathered Copper Trapdoor]]
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/weathered_copper_trapdoor_from_stonecutting_weathered_copper_block.json|matcha:stonecutting/weathered_copper_trapdoor_from_stonecutting_weathered_copper_block}}</small>
+|-
+| [[Weathered Lightning Rod]]
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Lightning Rod,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/weathered_lightning_rod_from_stonecutting_weathered_copper.json|matcha:stonecutting/weathered_lightning_rod_from_stonecutting_weathered_copper}}</small>
+|-
+| [[Waxed Weathered Copper]] <small>(vanilla recipe)</small>
+| [[Weathered Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Weathered Copper|B1=Wax|Output=Waxed Weathered Copper|shapeless=1}}
+|-
+| [[Weathered Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Chiseled Copper,4}}
+|-
+| [[Weathered Copper Grate]] <small>(vanilla recipe)</small>
+| 4 × [[Weathered Copper]]
+| {{Crafting|A2=Weathered Copper|B1=Weathered Copper|B3=Weathered Copper|C2=Weathered Copper|Output=Weathered Copper Grate,4}}
+|-
+| [[Weathered Copper Grate]] <small>(vanilla recipe)</small>
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Copper Grate,4}}
+|-
+| [[Weathered Cut Copper]] <small>(vanilla recipe)</small>
+| 4 × [[Weathered Copper]]
+| {{Crafting|A1=Weathered Copper|A2=Weathered Copper|B1=Weathered Copper|B2=Weathered Copper|Output=Weathered Cut Copper,4}}
+|-
+| [[Weathered Cut Copper]] <small>(vanilla recipe)</small>
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Cut Copper,4}}
+|-
+| [[Weathered Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Cut Copper Slab,8}}
+|-
+| [[Weathered Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Weathered Copper]]
+| {{Stonecutter|Input=Weathered Copper|Output=Weathered Cut Copper Stairs,4}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

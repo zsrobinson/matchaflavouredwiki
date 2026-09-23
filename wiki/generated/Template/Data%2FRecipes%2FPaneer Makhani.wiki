@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Paneer Makhani]]
+| [[Paneer Curry Stock]]
+| {{Cooking|station=Kindling|Input=Paneer Curry Stock|Output=Paneer Makhani|note=15 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/paneer_makhani.json|matcha:food/campfire/paneer_makhani}}</small>
+|-
+| [[Paneer Makhani]]
+| [[Paneer Curry Stock]]
+| {{Cooking|station=Oven|Input=Paneer Curry Stock|Output=Paneer Makhani|note=15 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/paneer_makhani.json|matcha:food/oven/paneer_makhani}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

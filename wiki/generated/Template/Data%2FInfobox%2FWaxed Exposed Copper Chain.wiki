@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Waxed Exposed Copper Chain}}
+|invimage=Waxed Exposed Copper Chain
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:waxed_exposed_copper_chain</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_exposed_copper_chain_from_stonecutting_waxed_exposed_copper.json|waxed_exposed_copper_chain_from_stonecutting_waxed_exposed_copper.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

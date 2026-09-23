@@ -1,0 +1,59 @@
+<includeonly><small>Loot table <code>minecraft:chests/bastion_bridge</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_bridge.json|source}}); pools roll 1; 2–4; 3–4 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Ruby}} || 1 || 100% || 100% || 
+|-
+| {{ItemLink|Lodestone}} || 1 || 100% || 100% || 
+|-
+| {{ItemLink|String}} || 1–6 || 20.0% || 47.9% || 
+|-
+| {{ItemLink|Sturdy Leather}} || 1–3 || 20.0% || 47.9% || 
+|-
+| {{ItemLink|Arrow}} || 5–17 || 20.0% || 47.9% || 
+|-
+| {{ItemLink|Iron Nugget}} || 2–6 || 20.0% || 47.9% || 
+|-
+| {{ItemLink|Gold Nugget}} || 2–6 || 20.0% || 47.9% || 
+|-
+| {{ItemLink|Smithing Template}} || 1 || 18.3% || 18.3% || 
+|-
+| {{ItemLink|Diamond Sword}} || 1 || 8.23% || 25.9% || 
+|-
+| {{ItemLink|Diamond Axe}} || 1 || 8.23% || 25.9% || 
+|-
+| {{ItemLink|Diamond Spear}} || 1 || 8.23% || 25.9% || 
+|-
+| {{ItemLink|Diamond Helmet}} || 1 || 6.17% || 19.9% || 
+|-
+| {{ItemLink|Diamond Chestplate}} || 1 || 6.17% || 19.9% || 
+|-
+| {{ItemLink|Diamond Leggings}} || 1 || 6.17% || 19.9% || 
+|-
+| {{ItemLink|Diamond Boots}} || 1 || 6.17% || 19.9% || 
+|-
+| {{ItemLink|Diamond Pickaxe}} || 1 || 4.94% || 16.2% || 
+|-
+| {{ItemLink|Diamond Shovel}} || 1 || 4.94% || 16.2% || 
+|-
+| {{ItemLink|Diamond Hoe}} || 1 || 4.94% || 16.2% || 
+|-
+| {{ItemLink|Diamond Mattock}} || 1 || 4.94% || 16.2% || 
+|-
+| {{ItemLink|Diamond Dolabra}} || 1 || 4.94% || 16.2% || 
+|-
+| {{ItemLink|Crossbow}} || 1 || 3.70% || 12.4% || 
+|-
+| {{ItemLink|Spectral Arrow}} || 10–28 || 3.70% || 12.4% || 
+|-
+| {{ItemLink|Gilded Blackstone}} || 8–12 || 3.70% || 12.4% || 
+|-
+| {{ItemLink|Crying Obsidian}} || 3–8 || 3.70% || 12.4% || 
+|-
+| {{ItemLink|Block of Gold}} || 1 || 3.70% || 12.4% || 
+|-
+| {{ItemLink|Gold Ingot}} || 4–9 || 3.70% || 12.4% || 
+|-
+| {{ItemLink|Iron Ingot}} || 4–9 || 3.70% || 12.4% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

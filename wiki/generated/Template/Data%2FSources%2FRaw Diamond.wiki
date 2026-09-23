@@ -1,0 +1,31 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Abandoned mineshaft <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_mineshaft.json|chests/abandoned_mineshaft}})</small> || 1 || 20.1% || 
+|-
+| Ancient city <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/ancient_city.json|chests/ancient_city}})</small> || 1 || 100% || 
+|-
+| Buried treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/buried_treasure.json|chests/buried_treasure}})</small> || 1 || 100% || 
+|-
+| Desert pyramid <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/desert_pyramid.json|chests/desert_pyramid}})</small> || 1 || 8.44% || 
+|-
+| Fishing / treasure <small>({{Source|MF_datapack/data/matcha/loot_table/chests/fishing/treasure.json|chests/fishing/treasure}})</small> || 1 || 100% || 
+|-
+| Jungle temple <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/jungle_temple.json|chests/jungle_temple}})</small> || 1 || 100% || 
+|-
+| Shipwreck treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_treasure.json|chests/shipwreck_treasure}})</small> || 1 || 100% || 
+|}
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Deepslate diamond ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_diamond_ore.json|blocks/deepslate_diamond_ore}})</small> || 1 || 50.0% || 
+|-
+| Diamond ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/diamond_ore.json|blocks/diamond_ore}})</small> || 1 || 50.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

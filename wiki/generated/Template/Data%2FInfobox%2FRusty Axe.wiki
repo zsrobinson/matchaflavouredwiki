@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Rusty Axe}}
+|invimage=Rusty Axe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=250
+|damage={{Hp|9}}
+|attackspeed=0.9
+|miningspeed=6
+|repair=<code>#minecraft:iron_tool_materials</code>
+|tooltip=⛏ 6<br />🗡 9<br />🕒 0.9
+|id=<code>matcha:rusty_axe</code>
+|base=<code>minecraft:iron_axe</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/archaeology/ocean_ruin_cold.json|ocean_ruin_cold.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

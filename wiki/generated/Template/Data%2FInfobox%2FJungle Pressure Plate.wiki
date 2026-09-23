@@ -1,0 +1,14 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Jungle Pressure Plate}}
+|invimage=Jungle Pressure Plate
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:jungle_pressure_plate</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_pressure_plate_from_stonecutting_jungle_logs.json|jungle_pressure_plate_from_stonecutting_jungle_logs.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,8 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Rind Jam]]
+| [[Melon Slice]] +<br />[[Sugar]] +<br />[[Glass Bottle]]
+| {{Crafting|A1=Melon Slice|B1=Sugar|C1=Glass Bottle|Output=Rind Jam|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/rind_jam.json|matcha:food/crafting/rind_jam}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oak Wood]] <small>(vanilla recipe)</small>
+| 4 × [[Oak Log]]
+| {{Crafting|A1=Oak Log|A2=Oak Log|B1=Oak Log|B2=Oak Log|Output=Oak Wood,3}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oak Wood]]
+| [[Stripped Oak Log]] or [[Oak Log]] or [[Stripped Oak Wood]]
+| {{Stonecutter|Input=Stripped Oak Log;Oak Log;Stripped Oak Wood|Output=Oak Wood}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oak_wood_from_stonecutting_oak_log.json|matcha:stonecutting/oak_wood_from_stonecutting_oak_log}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

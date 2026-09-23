@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Golden Axe}}
+|invimage=Golden Axe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Fortune]]<br />[[Looting]] I}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=350
+|damage={{Hp|7}}
+|attackspeed=1
+|miningspeed=12
+|repair=<code>#minecraft:gold_tool_materials</code>
+|tooltip={{G|Mining speed}} 12<br />{{G|Attack damage}} 7<br />{{G|Attack speed}} 1
+|id=<code>minecraft:golden_axe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/golden_axe.json|golden_axe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

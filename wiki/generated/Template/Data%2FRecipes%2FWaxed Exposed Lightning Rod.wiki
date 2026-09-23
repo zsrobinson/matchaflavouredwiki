@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Exposed Lightning Rod]] <small>(vanilla recipe)</small>
+| [[Exposed Lightning Rod]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Lightning Rod|B1=Wax|Output=Waxed Exposed Lightning Rod|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Exposed Lightning Rod]]
+| [[Waxed Exposed Copper]]
+| {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Lightning Rod,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_exposed_lightning_rod_from_stonecutting_waxed_exposed_copper.json|matcha:stonecutting/waxed_exposed_lightning_rod_from_stonecutting_waxed_exposed_copper}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

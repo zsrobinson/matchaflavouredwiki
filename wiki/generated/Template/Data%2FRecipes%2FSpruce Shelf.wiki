@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Spruce Shelf]] <small>(vanilla recipe)</small>
+| 6 × [[Stripped Spruce Log]]
+| {{Crafting|A1=Stripped Spruce Log|A3=Stripped Spruce Log|B1=Stripped Spruce Log|B3=Stripped Spruce Log|C1=Stripped Spruce Log|C3=Stripped Spruce Log|Output=Spruce Shelf,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Spruce Shelf]]
+| Any [[spruce logs]]
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_shelf_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_shelf_from_stonecutting_spruce_logs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

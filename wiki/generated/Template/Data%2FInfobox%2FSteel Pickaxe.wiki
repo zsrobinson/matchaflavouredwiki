@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Steel Pickaxe}}
+|invimage=Steel Pickaxe
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=3000
+|damage={{Hp|3}}
+|attackspeed=1.2
+|miningspeed=8
+|repair=[[Iron Ingot]]
+|tooltip={{G|Mining speed}} 8<br />{{G|Attack damage}} 4<br />{{G|Attack speed}} 1.2<br />Repaired with:<br />Iron Ingot
+|id=<code>matcha:steel_pickaxe</code>
+|base=<code>minecraft:stone_pickaxe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_pickaxe.json|steel_pickaxe.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

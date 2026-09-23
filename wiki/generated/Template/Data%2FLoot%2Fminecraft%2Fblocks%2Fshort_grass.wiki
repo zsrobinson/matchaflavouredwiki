@@ -1,0 +1,11 @@
+<includeonly><small>Loot table <code>minecraft:blocks/short_grass</code> ({{Source|MF_datapack/data/minecraft/loot_table/blocks/short_grass.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Short Grass}} || 1 || 33.3% || 33.3% || tool: Iron Shears
+|-
+| {{ItemLink|Short Grass}} || 1 || 33.3% || 33.3% || tool: #minecraft:hoes
+|-
+| {{ItemLink|Wheat Grain}} || 1 || 4.17% || 4.17% || tool: #minecraft:hoes
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

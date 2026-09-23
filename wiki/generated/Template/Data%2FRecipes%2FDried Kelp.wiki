@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Dried Kelp]]
+| [[Dried Kelp Block]]
+| {{Crafting|A1=Dried Kelp Block|Output=Dried Kelp,9|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dried_kelp_from_dried_kelp_block.json|matcha:food/crafting/dried_kelp_from_dried_kelp_block}}</small>
+|}
+'''Cooking'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Dried Kelp]]
+| [[Kelp]]
+| {{Cooking|station=Oven|Input=Kelp|Output=Dried Kelp|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dried_kelp.json|matcha:food/crafting/dried_kelp}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

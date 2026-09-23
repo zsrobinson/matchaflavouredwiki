@@ -1,0 +1,32 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Bookshelf]]
+| 6 × Any [[wooden slabs]] +<br />3 × [[Book]]
+| {{Crafting|A1=Any Wooden Slabs|A2=Book|A3=Any Wooden Slabs|B1=Any Wooden Slabs|B2=Book|B3=Any Wooden Slabs|C1=Any Wooden Slabs|C2=Book|C3=Any Wooden Slabs|Output=Bookshelf,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bookshelf.json|matcha:crafting/bookshelf}}</small>
+|-
+| [[Pale Oak Planks]]
+| 2 × [[Pale Oak Slab]]
+| {{Crafting|A1=Pale Oak Slab|B1=Pale Oak Slab|Output=Pale Oak Planks|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/pale_oak_planks_from_pale_oak_slabs.json|matcha:crafting/pale_oak_planks_from_pale_oak_slabs}}</small>
+|-
+| [[Barrel]] <small>(vanilla recipe)</small>
+| 6 × Any [[planks]] +<br />2 × Any [[wooden slabs]]
+| {{Crafting|A1=Any Planks|A2=Any Planks|A3=Any Planks|B1=Any Wooden Slabs|B3=Any Wooden Slabs|C1=Any Planks|C2=Any Planks|C3=Any Planks|Output=Barrel}}
+|-
+| [[Chiseled Bookshelf]] <small>(vanilla recipe)</small>
+| 6 × Any [[planks]] +<br />3 × Any [[wooden slabs]]
+| {{Crafting|A1=Any Planks|A2=Any Wooden Slabs|A3=Any Planks|B1=Any Planks|B2=Any Wooden Slabs|B3=Any Planks|C1=Any Planks|C2=Any Wooden Slabs|C3=Any Planks|Output=Chiseled Bookshelf}}
+|-
+| [[Composter]] <small>(vanilla recipe)</small>
+| 7 × Any [[wooden slabs]]
+| {{Crafting|A1=Any Wooden Slabs|A2=Any Wooden Slabs|A3=Any Wooden Slabs|B3=Any Wooden Slabs|C1=Any Wooden Slabs|C2=Any Wooden Slabs|C3=Any Wooden Slabs|Output=Composter}}
+|-
+| [[Daylight Detector]] <small>(vanilla recipe)</small>
+| 3 × [[Glass]] +<br />3 × [[Quartz]] +<br />3 × Any [[wooden slabs]]
+| {{Crafting|A1=Glass|A2=Quartz|A3=Any Wooden Slabs|B1=Glass|B2=Quartz|B3=Any Wooden Slabs|C1=Glass|C2=Quartz|C3=Any Wooden Slabs|Output=Daylight Detector}}
+|-
+| [[Lectern]] <small>(vanilla recipe)</small>
+| 4 × Any [[wooden slabs]] +<br />[[Bookshelf]]
+| {{Crafting|A1=Any Wooden Slabs|B1=Any Wooden Slabs|B2=Bookshelf|B3=Any Wooden Slabs|C1=Any Wooden Slabs|Output=Lectern}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

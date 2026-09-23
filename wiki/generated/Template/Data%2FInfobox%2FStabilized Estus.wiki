@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Stabilized Estus}}
+|invimage=Stabilized Estus
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Blaze Rod}}
+|rarity=Uncommon
+|stackable=Yes (64)
+|id=<code>minecraft:blaze_rod</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/stabilised_estus.json|stabilised_estus.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

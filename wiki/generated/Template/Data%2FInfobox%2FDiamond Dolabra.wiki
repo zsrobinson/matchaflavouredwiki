@@ -1,0 +1,21 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Diamond Dolabra}}
+|invimage=Diamond Dolabra
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=2500
+|damage={{Hp|7}}
+|attackspeed=1
+|miningspeed=35
+|repair=<code>#minecraft:diamond_tool_materials</code>
+|tooltip={{G|Mining speed}} 8<br />{{G|Attack damage}} 7<br />{{G|Attack speed}} 1
+|id=<code>matcha:diamond_dolabra</code>
+|base=<code>minecraft:diamond_axe</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/diamond_dolabra.json|diamond_dolabra.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

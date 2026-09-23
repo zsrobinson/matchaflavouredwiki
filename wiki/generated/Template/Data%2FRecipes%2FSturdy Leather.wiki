@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Sturdy Leather]]
+| [[Saddle]] or [[Leather Horse Armor]]
+| {{Crafting|A1=Saddle;Leather Horse Armor|Output=Sturdy Leather,3|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/leather_from_leather_materials.json|matcha:crafting/leather_from_leather_materials}}</small>
+|-
+| [[Sturdy Leather]] <small>(vanilla recipe)</small>
+| 4 × [[Tattered Leather]]
+| {{Crafting|A1=Tattered Leather|A2=Tattered Leather|B1=Tattered Leather|B2=Tattered Leather|Output=Sturdy Leather}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

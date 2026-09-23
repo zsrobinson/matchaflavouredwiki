@@ -1,0 +1,21 @@
+<includeonly><small>Loot table <code>minecraft:chests/village/village_temple</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_temple.json|source}}); pools roll 1; 5–8 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|The Tanakh}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|The Avesta}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|The Quran}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Estus Ash}} || 1–4 || 28.6% || 88.0% || 
+|-
+| {{ItemLink|Bread}} || 1 || 28.6% || 88.0% || 
+|-
+| {{ItemLink|Lapis Lazuli}} || 1–4 || 14.3% || 62.7% || 
+|-
+| {{ItemLink|Gold Ingot}} || 1–4 || 14.3% || 62.7% || 
+|-
+| {{ItemLink|Obol}} || 1–4 || 14.3% || 62.7% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

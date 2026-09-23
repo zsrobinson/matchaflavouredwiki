@@ -1,0 +1,17 @@
+<includeonly><small>Loot table <code>minecraft:archaeology/abbey/grave</code> ({{Source|MF_datapack/data/minecraft/loot_table/archaeology/abbey/grave.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Bone}} || 1 || 41.2% || 41.2% || 
+|-
+| {{ItemLink|Bone Meal}} || 1 || 23.5% || 23.5% || 
+|-
+| {{ItemLink|Skeleton Skull}} || 1 || 11.8% || 11.8% || 
+|-
+| {{ItemLink|Wooden Cross}} || 1 || 11.8% || 11.8% || 
+|-
+| {{ItemLink|Obol}} || 1 || 5.88% || 5.88% || 
+|-
+| {{ItemLink|Clay Fetish}} || 1 || 5.88% || 5.88% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

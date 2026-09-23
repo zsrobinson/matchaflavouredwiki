@@ -1,0 +1,9 @@
+<includeonly><small>Loot table <code>minecraft:blocks/carrots</code> ({{Source|MF_datapack/data/minecraft/loot_table/blocks/carrots.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Carrot}} || 1 || 100% || 100% || 
+|-
+| {{ItemLink|Carrot}} || 1 || 100% || 100% || block state property
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Crimson Door]] <small>(vanilla recipe)</small>
+| 6 × [[Crimson Planks]]
+| {{Crafting|A1=Crimson Planks|A2=Crimson Planks|A3=Crimson Planks|B1=Crimson Planks|B2=Crimson Planks|B3=Crimson Planks|Output=Crimson Door,3}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Crimson Door]]
+| Any [[crimson stems]]
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Door,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_door_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_door_from_stonecutting_crimson_stem}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

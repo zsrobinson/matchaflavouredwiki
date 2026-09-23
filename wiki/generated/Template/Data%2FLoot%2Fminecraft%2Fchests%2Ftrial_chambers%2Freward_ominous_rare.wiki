@@ -1,0 +1,45 @@
+<includeonly><small>Loot table <code>minecraft:chests/trial_chambers/reward_ominous_rare</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_ominous_rare.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Divine Fragment}} || 1 || 21.1% || 21.1% || 
+|-
+| {{ItemLink|Block of Obol}} || 1 || 13.2% || 13.2% || 
+|-
+| {{ItemLink|Book}} || 1 || 13.2% || 13.2% || 
+|-
+| {{ItemLink|Block of Iron}} || 6–9 || 10.5% || 10.5% || 
+|-
+| {{ItemLink|Crossbow}} || 1 || 10.5% || 10.5% || 
+|-
+| {{ItemLink|Golden Apple}} || 1 || 7.89% || 7.89% || 
+|-
+| {{ItemLink|Music Disc}} || 1 || 5.26% || 5.26% || 
+|-
+| {{ItemLink|Block of Diamond}} || 1 || 2.63% || 2.63% || 
+|-
+| {{ItemLink|Diamond Sword}} || 1 || 1.75% || 1.75% || 
+|-
+| {{ItemLink|Diamond Axe}} || 1 || 1.75% || 1.75% || 
+|-
+| {{ItemLink|Diamond Spear}} || 1 || 1.75% || 1.75% || 
+|-
+| {{ItemLink|Diamond Helmet}} || 1 || 1.32% || 1.32% || 
+|-
+| {{ItemLink|Diamond Chestplate}} || 1 || 1.32% || 1.32% || 
+|-
+| {{ItemLink|Diamond Leggings}} || 1 || 1.32% || 1.32% || 
+|-
+| {{ItemLink|Diamond Boots}} || 1 || 1.32% || 1.32% || 
+|-
+| {{ItemLink|Diamond Pickaxe}} || 1 || 1.05% || 1.05% || 
+|-
+| {{ItemLink|Diamond Shovel}} || 1 || 1.05% || 1.05% || 
+|-
+| {{ItemLink|Diamond Hoe}} || 1 || 1.05% || 1.05% || 
+|-
+| {{ItemLink|Diamond Mattock}} || 1 || 1.05% || 1.05% || 
+|-
+| {{ItemLink|Diamond Dolabra}} || 1 || 1.05% || 1.05% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

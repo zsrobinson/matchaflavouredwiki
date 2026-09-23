@@ -1,0 +1,44 @@
+<includeonly><small>Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</small>
+
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Acacia log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/acacia_log.json|blocks/acacia_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Birch log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/birch_log.json|blocks/birch_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Cherry log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/cherry_log.json|blocks/cherry_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Dark oak log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/dark_oak_log.json|blocks/dark_oak_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Jungle log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/jungle_log.json|blocks/jungle_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Mangrove log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/mangrove_log.json|blocks/mangrove_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Oak log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/oak_log.json|blocks/oak_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Pale oak log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/pale_oak_log.json|blocks/pale_oak_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Spruce log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/spruce_log.json|blocks/spruce_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Stripped acacia log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/stripped_acacia_log.json|blocks/stripped_acacia_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Stripped birch log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/stripped_birch_log.json|blocks/stripped_birch_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Stripped cherry log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/stripped_cherry_log.json|blocks/stripped_cherry_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Stripped dark oak log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/stripped_dark_oak_log.json|blocks/stripped_dark_oak_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Stripped jungle log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/stripped_jungle_log.json|blocks/stripped_jungle_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Stripped mangrove log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/stripped_mangrove_log.json|blocks/stripped_mangrove_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Stripped oak log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/stripped_oak_log.json|blocks/stripped_oak_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Stripped pale oak log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/stripped_pale_oak_log.json|blocks/stripped_pale_oak_log}})</small> || 1 || 50.0% || specific tool
+|-
+| Stripped spruce log <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/stripped_spruce_log.json|blocks/stripped_spruce_log}})</small> || 1 || 50.0% || specific tool
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Hellbricks]]
+| 2 × [[Hellbrick Slab]]
+| {{Crafting|A1=Hellbrick Slab|B1=Hellbrick Slab|Output=Hellbricks|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/nether_bricks_from_nether_brick_slab.json|matcha:crafting/nether_bricks_from_nether_brick_slab}}</small>
+|-
+| [[Hellbricks]] <small>(vanilla recipe)</small>
+| 4 × [[Hellbrick]]
+| {{Crafting|A1=Hellbrick|A2=Hellbrick|B1=Hellbrick|B2=Hellbrick|Output=Hellbricks}}
+|}
+'''Cooking'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Hellbricks]]
+| [[Hellstone]]
+| {{Cooking|station=Oven|Input=Hellstone|Output=Hellbricks|note=10 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/nether_bricks_from_smelting_netherrack.json|matcha:crafting/nether_bricks_from_smelting_netherrack}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

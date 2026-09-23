@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Wolf Armor}}
+|invimage=Wolf Armor
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|durability=64
+|armor=11
+|repair=<code>#minecraft:repairs_wolf_armor</code>
+|id=<code>minecraft:wolf_armor</code>
+|source={{Source|vanilla:recipe/wolf_armor.json|wolf_armor.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,17 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Mangrove Door]] <small>(vanilla recipe)</small>
+| 6 × [[Mangrove Planks]]
+| {{Crafting|A1=Mangrove Planks|A2=Mangrove Planks|A3=Mangrove Planks|B1=Mangrove Planks|B2=Mangrove Planks|B3=Mangrove Planks|Output=Mangrove Door,3}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Mangrove Door]]
+| Any [[mangrove logs]]
+| {{Stonecutter|Input=Any Mangrove Logs|Output=Mangrove Door,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/mangrove_door_from_stonecutting_mangrove_logs.json|matcha:stonecutting/mangrove_door_from_stonecutting_mangrove_logs}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

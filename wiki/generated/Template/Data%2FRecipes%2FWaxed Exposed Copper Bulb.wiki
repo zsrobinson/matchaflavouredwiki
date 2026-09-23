@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Waxed Exposed Copper Bulb]]
+| 3 × [[Waxed Exposed Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
+| {{Crafting|A2=Waxed Exposed Copper|B1=Waxed Exposed Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Exposed Copper|Output=Waxed Exposed Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/waxed_exposed_copper_bulb.json|matcha:crafting/waxed_exposed_copper_bulb}}</small>
+|-
+| [[Waxed Exposed Copper Bulb]] <small>(vanilla recipe)</small>
+| [[Exposed Copper Bulb]] +<br />[[Wax]]
+| {{Crafting|A1=Exposed Copper Bulb|B1=Wax|Output=Waxed Exposed Copper Bulb|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

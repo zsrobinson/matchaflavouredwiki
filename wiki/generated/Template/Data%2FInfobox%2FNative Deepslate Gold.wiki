@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Native Deepslate Gold}}
+|invimage=Native Deepslate Gold
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Deepslate Gold Ore}}
+|stackable=Yes (64)
+|id=<code>minecraft:deepslate_gold_ore</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_gold_ore.json|deepslate_gold_ore.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

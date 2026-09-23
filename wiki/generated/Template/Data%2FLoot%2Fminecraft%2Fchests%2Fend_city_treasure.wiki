@@ -1,0 +1,41 @@
+<includeonly><small>Loot table <code>minecraft:chests/end_city_treasure</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/end_city_treasure.json|source}}); pools roll 1; 5–8 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Gold Ingot}} || 2–7 || 24.2% || 82.7% || 
+|-
+| {{ItemLink|Iron Ingot}} || 12–16 || 16.1% || 67.5% || 
+|-
+| {{ItemLink|Block of Iron}} || 5–12 || 12.9% || 58.8% || 
+|-
+| {{ItemLink|Diamond}} || 5–9 || 8.06% || 41.8% || 
+|-
+| {{ItemLink|Smithing Template}} || 1 || 6.67% || 6.67% || 
+|-
+| {{ItemLink|Obol}} || 1–3 || 3.23% || 19.1% || 
+|-
+| {{ItemLink|Diamond Helmet}} || 1 || 3.23% || 19.1% || 
+|-
+| {{ItemLink|Diamond Chestplate}} || 1 || 3.23% || 19.1% || 
+|-
+| {{ItemLink|Diamond Leggings}} || 1 || 3.23% || 19.1% || 
+|-
+| {{ItemLink|Diamond Boots}} || 1 || 3.23% || 19.1% || 
+|-
+| {{ItemLink|Diamond Sword}} || 1 || 3.23% || 19.1% || 
+|-
+| {{ItemLink|Diamond Spear}} || 1 || 3.23% || 19.1% || 
+|-
+| {{ItemLink|Diamond Pickaxe}} || 1 || 3.23% || 19.1% || 
+|-
+| {{ItemLink|Diamond Axe}} || 1 || 3.23% || 19.1% || 
+|-
+| {{ItemLink|Diamond Shovel}} || 1 || 3.23% || 19.1% || 
+|-
+| {{ItemLink|Diamond Hoe}} || 1 || 3.23% || 19.1% || 
+|-
+| {{ItemLink|Golden Horse Armor}} || 1 || 1.61% || 10.0% || 
+|-
+| {{ItemLink|Diamond Horse Armor}} || 1 || 1.61% || 10.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oxidized Chiseled Copper]]
+| [[Weathered Chiseled Copper]] +<br />[[Potion]]
+| {{Crafting|A1=Weathered Chiseled Copper|B1=Potion|Output=Oxidized Chiseled Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_chiseled_copper_from_patina.json|matcha:crafting/oxidized_chiseled_copper_from_patina}}</small>
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Oxidized Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Oxidized Copper]]
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Chiseled Copper,4}}
+|-
+| [[Oxidized Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Oxidized Cut Copper]]
+| {{Stonecutter|Input=Oxidized Cut Copper|Output=Oxidized Chiseled Copper}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

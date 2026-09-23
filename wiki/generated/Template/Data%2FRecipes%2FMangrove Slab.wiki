@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Mangrove Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Mangrove Planks]]
+| {{Crafting|A1=Mangrove Planks|B1=Mangrove Planks|C1=Mangrove Planks|Output=Mangrove Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Mangrove Slab]]
+| [[Mangrove Trapdoor]]
+| {{Stonecutter|Input=Mangrove Trapdoor|Output=Mangrove Slab}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/mangrove_slab_from_stonecutting_mangrove_trapdoor.json|matcha:stonecutting/mangrove_slab_from_stonecutting_mangrove_trapdoor}}</small>
+|-
+| [[Mangrove Slab]]
+| Any [[mangrove logs]]
+| {{Stonecutter|Input=Any Mangrove Logs|Output=Mangrove Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/mangrove_slabs_from_stonecutting_mangrove_logs.json|matcha:stonecutting/mangrove_slabs_from_stonecutting_mangrove_logs}}</small>
+|-
+| [[Mangrove Slab]]
+| [[Mangrove Planks]]
+| {{Stonecutter|Input=Mangrove Planks|Output=Mangrove Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/mangrove_slabs_from_stonecutting_mangrove_planks.json|matcha:stonecutting/mangrove_slabs_from_stonecutting_mangrove_planks}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

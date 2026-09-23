@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|The Lesser Key of Solomon}}
+|invimage=The Lesser Key of Solomon
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Epic
+|stackable=Yes (64)
+|tooltip=by King Solomon
+|id=<code>matcha:solomon</code>
+|base=<code>minecraft:book</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/treasure/solomon.json|solomon.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

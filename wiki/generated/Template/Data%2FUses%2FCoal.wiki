@@ -1,0 +1,20 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Black Dye]]
+| 2 × [[Charcoal]] or [[Coal]]
+| {{Crafting|A1=Charcoal;Coal|B1=Charcoal;Coal|Output=Black Dye,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/black_dye_from_coals.json|matcha:crafting/black_dye_from_coals}}</small>
+|-
+| [[Block of Coal]]
+| 9 × Any [[coals]]
+| {{Crafting|A1=Any Coals|A2=Any Coals|A3=Any Coals|B1=Any Coals|B2=Any Coals|B3=Any Coals|C1=Any Coals|C2=Any Coals|C3=Any Coals|Output=Block of Coal}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/coal_alternate.json|matcha:crafting/coal_alternate}}</small>
+|-
+| [[Fire Charge]]
+| [[Sulfur Chunk]] +<br />[[Estus Ash]] +<br />[[Coal]] or [[Charcoal]]
+| {{Crafting|A1=Sulfur Chunk|B1=Estus Ash|C1=Coal;Charcoal|Output=Fire Charge,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/fire_charge.json|matcha:crafting/fire_charge}}</small>
+|-
+| [[Torch]]
+| [[Coal]] or [[Charcoal]] +<br />[[Stick]]
+| {{Crafting|A1=Coal;Charcoal|A2=Stick|Output=Torch,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/torch.json|matcha:crafting/torch}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

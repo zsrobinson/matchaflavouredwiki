@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Mace}}
+|invimage=Mace
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Epic
+|stackable=No
+|durability=800
+|damage={{Hp|6}}
+|attackspeed=0.6
+|repair=[[Iron Ingot]]
+|tooltip=🗡 6<br />🕒 0.6
+|id=<code>minecraft:mace</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/mace.json|mace.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

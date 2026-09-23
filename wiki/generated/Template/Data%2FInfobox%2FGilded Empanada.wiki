@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Gilded Empanada}}
+|invimage=Gilded Empanada
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|effects={{EffectLink|Regeneration}} II (0:45)<br />{{EffectLink|Absorption}} II (4:00)<br />{{EffectLink|Regeneration}} III (0:05)
+|eat_time=1.6 seconds
+|tooltip=❤❤❤❤<br />❤❤❤❤ (4:00)<br />{{G|Health}} Regen II (0:45)
+|id=<code>matcha:golden_apple_empanada</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_apple_empanada.json|golden_apple_empanada.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

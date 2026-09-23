@@ -1,0 +1,72 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Smithing Trim Color]]
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Cinnabar]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Cinnabar|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_cinnabar.json|matcha:crafting/trim_colour_cinnabar}}</small>
+|-
+| [[Chiseled Cinnabar]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Chiseled Cinnabar}}
+|-
+| [[Cinnabar Brick Slab]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Cinnabar Brick Slab,2}}
+|-
+| [[Cinnabar Brick Stairs]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Cinnabar Brick Stairs}}
+|-
+| [[Cinnabar Brick Wall]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Cinnabar Brick Wall}}
+|-
+| [[Cinnabar Bricks]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Cinnabar Bricks}}
+|-
+| [[Cinnabar Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Cinnabar]]
+| {{Crafting|A1=Cinnabar|B1=Cinnabar|C1=Cinnabar|Output=Cinnabar Slab,6}}
+|-
+| [[Cinnabar Slab]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Cinnabar Slab,2}}
+|-
+| [[Cinnabar Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Cinnabar]]
+| {{Crafting|A1=Cinnabar|A2=Cinnabar|A3=Cinnabar|B2=Cinnabar|B3=Cinnabar|C3=Cinnabar|Output=Cinnabar Stairs,4}}
+|-
+| [[Cinnabar Stairs]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Cinnabar Stairs}}
+|-
+| [[Cinnabar Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Cinnabar]]
+| {{Crafting|A1=Cinnabar|A2=Cinnabar|B1=Cinnabar|B2=Cinnabar|C1=Cinnabar|C2=Cinnabar|Output=Cinnabar Wall,6}}
+|-
+| [[Cinnabar Wall]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Cinnabar Wall}}
+|-
+| [[Polished Cinnabar]] <small>(vanilla recipe)</small>
+| 4 × [[Cinnabar]]
+| {{Crafting|A1=Cinnabar|A2=Cinnabar|B1=Cinnabar|B2=Cinnabar|Output=Polished Cinnabar,4}}
+|-
+| [[Polished Cinnabar]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Polished Cinnabar}}
+|-
+| [[Polished Cinnabar Slab]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Polished Cinnabar Slab,2}}
+|-
+| [[Polished Cinnabar Stairs]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Polished Cinnabar Stairs}}
+|-
+| [[Polished Cinnabar Wall]] <small>(vanilla recipe)</small>
+| [[Cinnabar]]
+| {{Stonecutter|Input=Cinnabar|Output=Polished Cinnabar Wall}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>
