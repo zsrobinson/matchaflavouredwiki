@@ -55,8 +55,16 @@ def hand_exists(ns, title):
     return os.path.exists(os.path.join(HAND, ns, fname(title)))
 
 
+_ICON_NAMES = None
+
+
 def has_icon(name):
-    return os.path.exists(os.path.join(IMAGES, safe(name) + '.png'))
+    """Whether tools/images.py produces an icon for this name. Decided from the data, not the file
+    system, so the output is identical on case-insensitive (macOS) and case-sensitive (CI) disks."""
+    global _ICON_NAMES
+    if _ICON_NAMES is None:
+        _ICON_NAMES = {safe(k) for k, it in ITEMS.items() if it.get('icon')}
+    return safe(name) in _ICON_NAMES
 
 
 def safe(name):
