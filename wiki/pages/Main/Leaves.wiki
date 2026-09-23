@@ -1,0 +1,47 @@
+{{Vanilla|Leaves}}
+{{Infobox auto|Oak Leaves|title=Leaves}}
+'''Leaves''' are the foliage blocks of trees. In Matcha Flavoured, broken leaves no longer drop saplings or sticks; saplings are crafted from leaves instead, and oak and dark oak leaves drop [[apple]]s more often than in vanilla.
+
+== Obtaining ==
+Leaves drop themselves when broken with [[shears]] or a {{MCW|Silk Touch}} tool, as in vanilla.
+
+== Drops ==
+Broken without shears or Silk Touch, leaves drop nothing except apples from oak and dark oak leaves.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/spruce_leaves.json}}</ref> The pack removed sapling and stick drops from every kind of leaves to reduce inventory clutter.<ref>{{Cite changelog|0.5-alpha|quote=Leaves no longer drop saplings or sticks, saplings are made from crafting instead (this was done to minimise inventory clutter)}}</ref>
+
+=== Apples ===
+Oak and dark oak leaves roll twice for an [[apple]], once for [[Fortune]] and once for the [[Electrum equipment|electrum]] tool intrinsic. Each roll uses the same chances:<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/oak_leaves.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/dark_oak_leaves.json}}</ref>
+{| class="wikitable"
+! Enchantment level !! Chance per roll !! Vanilla
+|-
+| None || 0.75% || 0.5%
+|-
+| I || 0.9% || 0.56%
+|-
+| II || 1.5% || 0.63%
+|-
+| III || 2% || 0.83%
+|-
+| IV or higher || 4% || 2.5%
+|}
+With no enchantment both rolls use the base chance, so an unenchanted tool has two 0.75% chances per block. The apples come from the pack's own apple loot table, so they carry the pack's apple properties.
+
+The 1.12.1-alpha notes describe the change as "base 0.5% -> 0.75% ; max fortune 2.5% -> 4%". The 4% chance applies at level IV or higher; Fortune III gives 2%.<ref>{{Cite changelog|1.12.1-alpha|quote=Apple drop rate is now higher than vanilla (base 0.5% -> 0.75% ; max fortune 2.5% -> 4%)}}</ref>
+
+== Usage ==
+=== Saplings ===
+Every kind of leaves can be crafted into one of its sapling (for mangrove leaves, a propagule; for azalea and flowering azalea leaves, the matching azalea).<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/oak_sapling_from_oak_leaves.json}}</ref> Each recipe unlocks when the player picks up the matching log, since players do not always collect leaves.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/oak_leaves.json}}</ref>
+
+== History ==
+{{History
+|{{History line|0.5-alpha|Leaves no longer drop saplings or sticks; saplings are crafted from leaves.}}
+{{History line|1.03|Sapling recipes unlock when the player picks up logs instead of leaves.}}
+{{History line|1.12.1-alpha|Apples drop more often: 0.75% base, up to 4%.}}
+{{History line|1.12.2|Oak and dark oak leaves also roll for apples with the electrum tool intrinsic.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Plants]]
+[[Category:Natural blocks]]

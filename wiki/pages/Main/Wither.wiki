@@ -1,0 +1,49 @@
+{{Vanilla}}
+{{Infobox
+|title=Wither
+|type=Boss mob, undead
+|health=Vanilla
+|spawn=Summoned; only on the Overworld surface
+|drops={{ItemLink|Divine Favor}}
+}}
+The '''Wither''' in [[Matcha Flavoured]] can only be summoned on the surface of the Overworld, in the open and at sea level or above. It drops a {{ItemLink|Divine Favor}} (the pack's name for the nether star), and the [[Wither effect]] it inflicts can permanently cost players maximum [[health]].
+
+== Summoning ==
+The Wither is built as in vanilla. Shortly after it is summoned, the pack checks where it is.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/schedule_check.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/check_wither_spawn.mcfunction}}</ref> The summon is invalid if any of these is true:<ref name="inv">{{Source|MF_datapack/data/matcha/predicate/wither/invalid_wither_spawn.json}}</ref>
+* it can't see the sky;
+* it is below Y=63;
+* it is in [[Hell]] or the End.
+
+An invalid Wither is killed 1 second later, and every player sees "The Wither can only be summoned on the surface of the overworld". To stop the kill from rewarding a divine favor, the next tick the pack deletes every dropped item stack of exactly one divine favor, as long as some player is standing in a place where a Wither couldn't be summoned.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/forbid_wither.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/kill_star.mcfunction}}</ref> The soul sand and skulls used to build it are lost.
+
+== Drops ==
+The Wither drops one {{ItemLink|Divine Favor}}, the vanilla nether star renamed. The Wither's drop can't be changed by a datapack, as the pack's code notes.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/kill_star.mcfunction}}</ref> Divine favors can be broken down into {{ItemLink|Divine Fragment|divine fragments}}.
+
+== Behavior ==
+The Wither's attacks apply the Wither effect. Except on Easy, a player who stays withered for 8 seconds loses 1 heart of maximum health (2 on Hard). See [[Wither effect]].
+
+The Wither is undead and a target of [[warding]]. Warding equipment attacks copper-armored mobs first, then the Wither, then the nearest other undead mob.
+
+== History ==
+{{History|
+{{History line|1.10|Withers can no longer be summoned in the End.}}
+{{History line|1.12.2|Withers can only be summoned on the surface of the Overworld. The Wither effect takes hearts. Warding prioritizes the Wither after copper-armored mobs.}}
+}}
+
+== Trivia ==
+* The 1.10 release notes explain the End ban: "Killing withers under the nest is boring".<ref>{{Cite changelog|1.10|quote=Withers can no longer be spawned in the End (Killing withers under the nest is boring)}}</ref>
+* The developer's plans describe a reworked Wither fight in which one attack removes a heart "WITHOUT killing them", like the Ganon fight in ''Tears of the Kingdom'', and considered either a special structure or a surface-and-height requirement for summoning. The height requirement is what the pack uses.<ref>{{Source|my_current_and_future_plans.md}}</ref>
+* In the design video: "The first time you kill the Ender Dragon, you'll be granted a divine favor. Of course, killing Withers will do the same."<ref>{{Cite video|quote=Of course, killing Withers will do the same.}}</ref>
+
+== See also ==
+* [[Wither effect]]
+* [[Wither Skeleton]]
+* [[Divine Favor]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Boss mobs]]
+[[Category:Undead mobs]]

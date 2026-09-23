@@ -1,0 +1,35 @@
+An '''alloy''' is a metal item smithed onto base equipment to create an alloy tier. All alloys are renamed vanilla items.
+
+{| class="wikitable"
+! Alloy !! Replaces !! Recipe !! Upgrades !! Repair
+|-
+| {{ItemLink|Steel Alloy}} || {{MCW|Resin Brick}} || Blast [[Carbon-Rich Iron|carbon-rich iron]] || Iron → [[Steel equipment|steel]] || Iron ingots
+|-
+| {{ItemLink|Shakudo Alloy}} || {{MCW|Shulker Shell}} || 4 blocks of copper, 2 blocks of gold || Copper → [[Shakudo equipment|shakudo]] || Blocks of copper
+|-
+| {{ItemLink|Hepatizon Alloy}} || {{MCW|Phantom Membrane}} || 7 copper ingots, silver bullion, gold ingot || Copper → [[Hepatizon equipment|hepatizon]] || Blocks of copper
+|-
+| {{ItemLink|Electrum Alloy}} || {{MCW|Heart of the Sea}} || 4 gold ingots, 4 silver bullion, divine fragment || Diamond → [[Electrum equipment|electrum]] || Blocks of diamond
+|-
+| {{ItemLink|Adamant Alloy}} || {{MCW|Netherite Ingot}} || 4 adamant scrap, 4 gold ingots, divine fragment || Diamond → [[Adamant equipment|adamant]] || Blocks of diamond, adamant scrap
+|}
+
+== Smithing ==
+{{Main|Smithing}}
+The base item goes in the base slot and the alloy in the addition slot of a [[Smithing Table|smithing table]]; the template slot stays empty, except for [[mattock]]s, [[dolabra]]s and [[claymore]]s, which need a [[Smithing Upgrade Template|smithing upgrade template]].
+
+== Design ==
+The alloys were inspired by the Raspberry Flavoured modpack, according to the README.<ref>{{Source|README.md}}</ref> In the video the developer explains that alloy tools are "repaired using their base metal components" so that "even in late game, you'll need to go mining for materials."{{Cite video|quote=All tools can be repaired forever. Alloy tools are repaired using their base metal components, except for adamant, which requires diamond blocks, gold blocks, or adamant scrap to repair. That means even in late game, you'll need to go mining for materials.}}
+
+== History ==
+{{History|
+{{History line|1.03|Added carbon-rich iron; electrum now needs a divine fragment.}}
+{{History line|1.10|"Palatinate" renamed to shakudo and "Bronze" to hepatizon. Shakudo alloy cost raised.}}
+{{History line|1.12.1-alpha|Smithing no longer needs base-metal ingots.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Materials]]

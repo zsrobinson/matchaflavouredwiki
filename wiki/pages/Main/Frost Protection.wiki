@@ -1,0 +1,41 @@
+{{Infobox
+|title=Frost Protection
+|maxlevel=III
+|slots=Armor
+|items=Chestplates
+|id=<code>matcha:freezing_protection</code>
+|source={{Source|MF_datapack/data/matcha/enchantment/freezing_protection.json|freezing_protection.json}}
+}}
+'''Frost Protection''' is an [[enchantment]] added by [[Matcha Flavoured]] for chestplates. It protects against freezing damage and makes the wearer immune to [[freezing water]].
+
+== Obtaining ==
+The [[Prayer of Demeter]] stores Frost Protection II along with Frost Walker II. It is the only source.
+
+== Behavior ==
+=== Freezing water ===
+In the pack, swimming in water in a frozen biome slows, blinds and damages the player (see [[Freezing water]]). A chestplate with Frost Protection at any level prevents this completely: the check only looks for the enchantment on the chest slot, not its level.<ref>{{Source|MF_datapack/data/matcha/predicate/armour_enchants/freezing_protection.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/environmental/check_freezing_water_conditions.mcfunction}}</ref>
+
+=== Freezing damage ===
+Against other freezing damage, such as from {{MCW|Powder Snow|powder snow}}, Frost Protection adds 24 points of protection per level. Protection from all sources is capped at 20 points (80% reduction), so level I already gives the maximum.<ref>{{Source|MF_datapack/data/matcha/enchantment/freezing_protection.json}}</ref>
+
+Its anvil cost multiplier is 2.
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Added.<ref>{{Cite changelog|0.5-alpha|quote=Frost Protection Enchantment (Grants immunity to frozen water at level III)}}</ref>}}
+{{History line|1.12.2|Moved from the <code>main</code> to the <code>matcha</code> namespace.}}
+}}
+
+== Notes ==
+* The {{Version|0.5-alpha}} release notes say that immunity to frozen water needs level III. The current code grants it at any level.
+
+== See also ==
+* [[Freezing water]]
+* [[Prayer of Demeter]]
+* [[Enchantment]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchantments]]

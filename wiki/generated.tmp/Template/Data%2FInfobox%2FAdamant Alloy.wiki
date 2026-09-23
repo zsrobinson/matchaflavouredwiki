@@ -1,0 +1,15 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Adamant Alloy}}
+|invimage=Adamant Alloy
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Netherite Ingot}}
+|stackable=Yes (64)
+|id=<code>minecraft:netherite_ingot</code>
+|source={{Source|MF_datapack/data/matcha/recipe/blast/netherite_ingot_from_blasting_netherite_materials.json|netherite_ingot_from_blasting_netherite_materials.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

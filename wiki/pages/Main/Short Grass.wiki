@@ -1,0 +1,44 @@
+{{Vanilla|Short Grass}}
+{{Infobox auto}}
+'''Short grass''' is the most common ground plant in the Overworld. Matcha Flavoured makes [[Wheat Grain|wheat grain]] (vanilla wheat seeds) drop from grass only when it is cut with a hoe, lets hoes collect grass and other plants the way shears do, and adds recipes that dry and combine grasses. This page also covers ferns, tall grass and the dry grasses, which follow the same rules.
+
+== Drops ==
+{| class="wikitable"
+! Plant !! Hand or other tool !! Hoe !! Shears
+|-
+| Short grass || Nothing || 12.5% chance of wheat grain (Fortune adds up to 2 per level); otherwise the grass itself || Itself
+|-
+| Tall grass || Nothing || 12.5% chance of wheat grain; otherwise 2 short grass || 2 short grass
+|-
+| Fern || Nothing || Itself || Itself
+|-
+| Large fern || Nothing || 2 ferns || 2 ferns
+|-
+| Bush, short dry grass, tall dry grass || Nothing || Itself || Itself
+|-
+| Dead bush || 0–2 sticks || Itself || Itself
+|-
+| Vines, [[Glow Lichen|glow lichen]] || Nothing || Itself || Itself
+|}
+<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/short_grass.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/tall_grass.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/fern.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/vine.json}}</ref>
+In vanilla, any tool or a bare hand gives the 12.5% seed chance from grass and ferns. In the pack only a hoe does, and ferns never drop seeds. Items and blocks that do not count as a hoe, including the [[Mattock|mattock]], use the "other tool" column. Bushes and dry grasses can also be collected with {{MCW|Silk Touch}}.
+
+== Usage ==
+{{Uses}}
+* Two short grass make a tall grass, and two ferns a large fern.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/tall_grass.json}}</ref>
+* Cooking short grass or a fern in an [[oven]] (5 seconds) or on [[Kindling|kindling]] (10 seconds) gives short dry grass, and tall grass or a large fern gives tall dry grass. A bush cooks into a dead bush.<ref>{{Source|MF_datapack/data/matcha/recipe/oven/short_dry_grass.json}}</ref>
+* Two short dry grass make a tall dry grass, and a tall dry grass splits back into 2 short. [[Straw]] crafts into 2 tall dry grass.
+* Short grass, a fern or a bush between two sticks makes [[Tinder|tinder]].<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/tinder.json}}</ref>
+
+== History ==
+{{History
+|{{History line|1.02|Wheat seeds drop when grass is broken with a hoe.}}
+{{History line|1.03|Short dry grass can be crafted from tall dry grass.}}
+{{History line|1.10|Tinder can be made with a bush, fern or short grass.<br />Tall grass and large fern recipes unlock properly.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Plants]]

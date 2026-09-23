@@ -1,0 +1,49 @@
+{{Infobox
+|title=Zephyr
+|maxlevel=III
+|slots=Feet
+|items=Boots
+|id=<code>matcha:zephyr</code>
+|source={{Source|MF_datapack/data/matcha/enchantment/zephyr.json|zephyr.json}}
+}}
+'''Zephyr''' is an [[enchantment]] added by [[Matcha Flavoured]] for boots that turns sneaking into a high jump. Higher levels add a slow descent and a charged updraft.
+
+== Obtaining ==
+The [[Elegy of Hyacinthus]] stores Zephyr I. No recipe, trade or loot table gives levels II or III.
+
+== Behavior ==
+All effects are checked every tick while the boots are worn.<ref>{{Source|MF_datapack/data/matcha/enchantment/zephyr.json}}</ref>
+
+{| class="wikitable"
+! Level !! Effect
+|-
+| I || While sneaking, the wearer has {{EffectLink|Jump Boost}} VII (renewed for 0.25 seconds each tick), and dust plume particles rise around their feet.
+|-
+| II || As level I, and the wearer also has {{EffectLink|Slow Falling}} II while sneaking.
+|-
+| III || As level II, and the wearer can charge an updraft. After sneaking for a total of 45 ticks (2.25 seconds), a dust burst and a chime mark the charge as ready. Releasing sneak while in the air and under Slow Falling then plays a wind burst sound and gives {{EffectLink|Levitation}} XIII for 1 second, launching the wearer upward.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/zephyr_execute.mcfunction}}</ref> Releasing sneak in the air without enough charge only plays the sound. Any release in the air resets the charge.
+|}
+
+The sneak time is counted with the player's <code>sneak_time</code> statistic, so it builds up across separate sneaks until it is reset by a release in the air.<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+
+Zephyr's anvil cost multiplier is 0.
+
+== History ==
+{{History|
+{{History line|0.3-alpha|Re-added the "ping" sound.}}
+{{History line|1.12.1-alpha|No longer spams its sound while under Slow Falling. The wind burst is quieter.}}
+{{History line|1.12.2|Reworked into three levels.<ref>{{Cite changelog|1.12.2|quote=Zephyr enchantment reworked so that its 3 levels}}</ref> Moved from the <code>main</code> to the <code>matcha</code> namespace.}}
+}}
+
+== Trivia ==
+* Zephyrus is the Greek god of the west wind. In myth, Hyacinthus was loved by both Zephyrus and Apollo, which is why the Zephyr blessing is the [[Elegy of Hyacinthus]].
+
+== See also ==
+* [[Elegy of Hyacinthus]]
+* [[Enchantment]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchantments]]

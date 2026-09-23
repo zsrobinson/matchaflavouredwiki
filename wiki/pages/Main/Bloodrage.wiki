@@ -1,0 +1,32 @@
+{{Infobox
+|title=Bloodrage
+|maxlevel=I
+|slots=Main hand
+|items=Axes
+|id=<code>matcha:bloodrage</code>
+|source={{Source|MF_datapack/data/matcha/enchantment/bloodrage.json|bloodrage.json}}
+}}
+'''Bloodrage''' is an [[enchantment]] added by [[Matcha Flavoured]] that makes an axe's wielder stronger and tougher when their health is low.
+
+== Obtaining ==
+Bloodrage comes on the [[Hatchet]], an iron axe sold by an expert-level [[Lumberjack]] for one [[Obol]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/4/hatchet.json}}</ref> No blessing or book gives it, and it cannot appear on random loot.
+
+== Behavior ==
+Every tick that a player holds an axe with Bloodrage in the main hand and has 10 health ({{Hp|10}}) or less, they receive {{EffectLink|Strength}} I and {{EffectLink|Resistance}} II for 1 second, and red dust particles appear around them. The effects keep being renewed until the player's health rises above 10.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/bloodrage.mcfunction}}</ref>
+
+Bloodrage can be applied to any axe. Its anvil cost multiplier is 0.
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|No longer applies to all players in multiplayer. Removed a "Bloodrage" message from the enchantment.<ref>{{Cite changelog|1.12.1-alpha|quote=Removed "Bloodrage" message from Enchant}}</ref>}}
+}}
+
+== See also ==
+* [[Enchantment]]
+* [[Hatchet]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchantments]]

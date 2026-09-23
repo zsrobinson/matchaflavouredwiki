@@ -1,0 +1,52 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Andesite]] <small>(vanilla recipe)</small>
+| [[Diorite]] +<br />[[Cobblestone]]
+| {{Crafting|A1=Diorite|B1=Cobblestone|Output=Andesite,2|shapeless=1}}
+|-
+| [[Diorite Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Diorite]]
+| {{Crafting|A1=Diorite|B1=Diorite|C1=Diorite|Output=Diorite Slab,6}}
+|-
+| [[Diorite Slab]] <small>(vanilla recipe)</small>
+| [[Diorite]]
+| {{Stonecutter|Input=Diorite|Output=Diorite Slab,2}}
+|-
+| [[Diorite Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Diorite]]
+| {{Crafting|A1=Diorite|A2=Diorite|A3=Diorite|B2=Diorite|B3=Diorite|C3=Diorite|Output=Diorite Stairs,4}}
+|-
+| [[Diorite Stairs]] <small>(vanilla recipe)</small>
+| [[Diorite]]
+| {{Stonecutter|Input=Diorite|Output=Diorite Stairs}}
+|-
+| [[Diorite Wall]] <small>(vanilla recipe)</small>
+| 6 × [[Diorite]]
+| {{Crafting|A1=Diorite|A2=Diorite|B1=Diorite|B2=Diorite|C1=Diorite|C2=Diorite|Output=Diorite Wall,6}}
+|-
+| [[Diorite Wall]] <small>(vanilla recipe)</small>
+| [[Diorite]]
+| {{Stonecutter|Input=Diorite|Output=Diorite Wall}}
+|-
+| [[Granite]] <small>(vanilla recipe)</small>
+| [[Diorite]] +<br />[[Quartz]]
+| {{Crafting|A1=Diorite|B1=Quartz|Output=Granite|shapeless=1}}
+|-
+| [[Polished Diorite]] <small>(vanilla recipe)</small>
+| 4 × [[Diorite]]
+| {{Crafting|A1=Diorite|A2=Diorite|B1=Diorite|B2=Diorite|Output=Polished Diorite,4}}
+|-
+| [[Polished Diorite]] <small>(vanilla recipe)</small>
+| [[Diorite]]
+| {{Stonecutter|Input=Diorite|Output=Polished Diorite}}
+|-
+| [[Polished Diorite Slab]] <small>(vanilla recipe)</small>
+| [[Diorite]]
+| {{Stonecutter|Input=Diorite|Output=Polished Diorite Slab,2}}
+|-
+| [[Polished Diorite Stairs]] <small>(vanilla recipe)</small>
+| [[Diorite]]
+| {{Stonecutter|Input=Diorite|Output=Polished Diorite Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,25 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cobbled Deepslate]]
+| 2 × [[Flint]] +<br />2 × [[Clay Ball]]
+| {{Crafting|A1=Flint|A2=Clay Ball|B1=Clay Ball|B2=Flint|Output=Cobbled Deepslate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cobbled_deepslate.json|matcha:crafting/cobbled_deepslate}}</small>
+|}
+'''Blasting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cobbled Deepslate]]
+| [[Deepslate]] or [[Cracked Deepslate Bricks]] or [[Cracked Deepslate Tiles]] or [[Polished Deepslate]]
+| {{Cooking|station=Blast Furnace|Input=Deepslate;Cracked Deepslate Bricks;Cracked Deepslate Tiles;Polished Deepslate|Output=Cobbled Deepslate|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/cobbled_deepslate.json|matcha:blast/cobbled_deepslate}}</small>
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Cobbled Deepslate]] <small>(vanilla recipe)</small>
+| [[Deepslate]]
+| {{Stonecutter|Input=Deepslate|Output=Cobbled Deepslate}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

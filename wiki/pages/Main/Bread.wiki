@@ -1,0 +1,39 @@
+{{Vanilla}}
+
+{{Infobox auto}}
+
+'''Bread''' is baked [[dough]]. It heals {{Hp|4}} and removes harmful effects ("Cleanse Maleffect"), which makes it a cheap cure for the [[Wither effect]] and poison.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref>
+
+== Obtaining ==
+
+=== Cooking ===
+{{Recipes}}
+Dough bakes into bread in an [[oven]] or on [[kindling]] in 5 seconds. The vanilla recipe from wheat is removed. In a [[mud kiln]], dough becomes [[naan]] instead.
+{{Sources}}
+
+== Usage ==
+
+=== Food ===
+Eating bread takes 1.6 seconds, heals {{Hp|4}} and removes Poison, Mining Fatigue, Wither, Weakness, Bad Omen, Blindness, Darkness, Infested, Weaving, Nausea, Oozing and Slowness.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref> The developer asks players to bring milk or bread to [[Hell]].<ref>{{Cite changelog|1.12.2|quote=Please bring milk or bread to Hell, please its very important}}</ref>
+
+Obtaining bread unlocks [[French toast]]. Bread is used in [[bruschetta]], [[French toast]], [[honied French toast]], [[sweet berry toast]], [[latke]]s and [[ice cream]]. [[Naan]] can be used in its place.
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|0.7-alpha|Bread is made from dough and cleanses maleffects.}}
+{{History line|1.0|Bread found in chests is the same as crafted bread.}}
+{{History line|1.10|New cleanse tooltip icon, so older bread doesn't stack with new bread. Chest bread updated to match.}}
+}}
+
+== See also ==
+* [[Dough]]
+* [[Naan]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

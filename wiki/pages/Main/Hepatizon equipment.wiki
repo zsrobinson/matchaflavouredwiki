@@ -1,0 +1,72 @@
+{{Main|Equipment}}
+'''Hepatizon equipment''' is [[Copper equipment|copper equipment]] upgraded with [[Hepatizon Alloy|hepatizon alloy]], a copper, silver and gold alloy. It has the fastest mining speeds in the pack, and every piece adds movement speed.
+
+== Obtaining ==
+Hepatizon alloy is crafted from seven copper ingots, a [[Silver Bullion|silver bullion]] and a gold ingot. Copper equipment is upgraded at a [[Smithing Table|smithing table]] with no template (a [[Smithing Upgrade Template|template]] for the dolabra and mattock). It is repaired with blocks of copper. See also the [[Hepatizon Laurel]] and [[Elytra#Hepatizon Elytra|hepatizon elytra]].
+
+== Characteristics ==
+Pickaxe, axe, shovel and hoe mine at speed 20, faster than adamant (15); the 1.12.1-alpha notes say the buff was "to make it worth using after obtaining Adamant". Each armor piece adds 0.01 movement speed (10% of the base 0.1), so the full set adds 40%. The sword has [[Riposte]] II and the spear Lunge III.
+
+The video describes hepatizon as "a gold-silver-copper alloy that has high base mining speed and when worn, makes you run faster."{{Cite video|quote=Hepatizon, a gold-silver-copper alloy that has high base mining speed and when worn, makes you run faster.}}
+
+== Trivia ==
+* Hepatizon was called "Bronze" until 1.10; internal IDs such as the alloy recipe <code>bronze_alloy</code> keep the old name. The developer still calls it bronze in the video.
+
+== Stats ==
+=== Tools ===
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Hepatizon Pickaxe}} || 1000 || 20 || 3 (no drops) || 4.5 || 1.2 || —
+|-
+| {{ItemLink|Hepatizon Axe}} || 1000 || 20 || — || 9 || 1.1 || —
+|-
+| {{ItemLink|Hepatizon Shovel}} || 1000 || 20 || — || 5 || 1 || —
+|-
+| {{ItemLink|Hepatizon Hoe}} || 1000 || 20 || — || 1 || 4 || —
+|-
+| {{ItemLink|Hepatizon Mattock}} || 1000 || 15 || — || 3 || 3 || —
+|-
+| {{ItemLink|Hepatizon Dolabra}} || 1000 || 15 || — || 7 || 1 || —
+|}
+
+=== Weapons ===
+{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Hepatizon Sword}} || 1000 || 6 || 1.9 || — || [[Riposte]] II
+|-
+| {{ItemLink|Hepatizon Spear}} || 1000 || 3 || 1.18 || — || [[Lunge]] III
+|}
+
+=== Armor ===
+{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Hepatizon Helmet}} || 500 || 3 || — || — || Speed +0.01 || —
+|-
+| {{ItemLink|Hepatizon Chestplate}} || 500 || 8 || — || — || Speed +0.01 || —
+|-
+| {{ItemLink|Hepatizon Leggings}} || 500 || 6 || — || — || Speed +0.01 || —
+|-
+| {{ItemLink|Hepatizon Boots}} || 500 || 3 || — || — || Speed +0.01 || —
+|- class="sortbottom"
+! Full set !! !! 20 !! 0 !! 0 !! colspan="2" |
+|}
+
+Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
+
+== History ==
+{{History|
+{{History line|0.4-alpha|The spear (then "bronze spear") was buffed to Lunge III.}}
+{{History line|1.10|Hepatizon was renamed from "Bronze" in the language file only, so existing items keep working. Buffed hepatizon equipment.}}
+{{History line|1.12|The spear's real attack speed now matches its tooltip.}}
+{{History line|1.12.1-alpha|Mining speed raised from about 13 to 20, so that hepatizon stays useful after adamant. Mining speed raised from about 13 to 20, so that hepatizon stays useful after adamant. Mining speed raised from about 13 to 20, so that hepatizon stays useful after adamant. Mining speed raised from about 13 to 20, so that hepatizon stays useful after adamant. Mining speed raised from about 12 to 15. Mining speed raised from about 12 to 15.}}
+{{History line|1.12.2|Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Equipment]]

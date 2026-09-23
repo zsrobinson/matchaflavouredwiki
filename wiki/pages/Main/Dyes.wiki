@@ -1,0 +1,62 @@
+{{Vanilla|Dye}}
+{{Infobox auto|White Dye|title=Dyes}}
+'''Dyes''' color wool, glass, terracotta, concrete, banners, beds, [[sack]]s and other blocks. The sixteen dyes work as in vanilla ''Minecraft''. Matcha Flavoured changes where several of them come from: most of the new recipes give more dye per ingredient, and several turn common or renamed materials into dye.
+
+== Obtaining ==
+The table lists every dye recipe that differs from vanilla. Dyes not listed are made only the vanilla way.
+{| class="wikitable"
+! Dye !! Recipe in Matcha Flavoured !! Vanilla recipe removed
+|-
+| White dye
+| 1 bone meal → 2<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/white_dye_from_bonemeal.json}}</ref><br />1 calcite → 4<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/white_dye_from_calcite.json}}</ref>
+| 1 bone meal → 1
+|-
+| Black dye
+| 1 ink sac or wither rose → 4<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/black_dye.json}}</ref><br />2 coal or charcoal, side by side → 4<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/black_dye_from_coals.json}}</ref>
+| 1 ink sac → 1; 1 wither rose → 1
+|-
+| Green dye
+| Cactus in a [[Mud Kiln|mud kiln]] (5 s) or [[Blast Furnace|blast furnace]] (2.5 s) → 1<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/green_dye.json}}</ref><br />[[Glass Bottle#Water bottle|Water bottle]] + raw copper + [[Sulfur Chunk|sulfur chunk]] → 2 (the bottle is returned)<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/green_dye_from_patina.json}}</ref>
+| Cactus in a furnace
+|-
+| Red dye
+| 2 [[tomatoes]] → 2<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/red_dye_from_tomato.json}}</ref><br />1 [[Crimson Fungus|crimson fungus]] → 2<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/red_dye_from_crimson_fungus.json}}</ref>
+| 1 beetroot → 1 (beetroot is renamed tomatoes)
+|-
+| Cyan dye
+| 1 [[Warped Fungus|warped fungus]] → 2<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/cyan_dye_from_warped_fungus.json}}</ref>
+| —
+|-
+| Blue dye
+| 1 lapis lazuli → 2<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/blue_dye.json}}</ref>
+| 1 lapis lazuli → 1
+|-
+| Light gray dye
+| 1 peony → 2<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/light_grey_dye_from_peony.json}}</ref>
+| 1 peony → 2 pink dye
+|}
+The vanilla recipes in the last column are blocked in the datapack's <code>pack.mcmeta</code>.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+Because many flowers can be cloned with a water bottle and bone meal (see [[Hyacinth#Cloning]]), flower dyes are also renewable in bulk.
+
+== Usage ==
+Dyes are used as in vanilla. In the pack's own recipes:
+* Black dye turns eight [[malachite]] into [[Malachite#Dark Malachite|dark malachite]].
+* Yellow, lime and magenta dye choose the color of [[Phosphor lamps|phosphor lamps]].
+* Lime dye and [[dough]] make 2 slimeballs.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/slime_ball_from_dough.json}}</ref>
+* Red dye is used in the [[Prayer of Ares]].
+
+== History ==
+{{History
+|{{History line|0.7-alpha|Crimson and warped fungus make red and cyan dye.}}
+{{History line|1.02|Picking up lapis lazuli unlocks the blue dye recipe.}}
+{{History line|1.10|The black dye recipe unlocks properly.}}
+{{History line|1.12.1-alpha|The black dye recipe was changed, and ink sacs and wither roses give more dye.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Items]]
+[[Category:Dyes]]

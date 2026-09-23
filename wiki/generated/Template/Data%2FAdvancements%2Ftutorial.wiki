@@ -9,117 +9,117 @@
 |-
 | {{Slot|Obol|link=none}} || '''You're Rich!''' || Obtain an Obol || From Earth || Task || Yes || 
 |-
-| {{Slot|Divine Fragment|link=none}} || '''A Vestige of Divinity''' || ⟦U+E00F⟧⟦U+E00F⟧ A Relic only obtained by breaking Spawners or vanquishing powerful Forces || Hellish Powder || Goal ||  || <code>matcha:advancement/obol_2</code>
+| {{Slot|Divine Fragment|link=none}} || '''A Vestige of Divinity''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}} A Relic only obtained by breaking Spawners or vanquishing powerful Forces || Hellish Powder || Goal ||  || <code>matcha:advancement/obol_2</code>
 |-
-| {{Slot|Nazar|link=none}} || '''Apotropaic Jewellery''' || ⟦U+E00F⟧ Holding a Lapis Nazar will Ward the Dead. It can also be attached to some Equipment || Hellish Powder || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Nazar|link=none}} || '''Apotropaic Jewellery''' || {{G{{!}}U+E00F}} Holding a Lapis Nazar will Ward the Dead. It can also be attached to some Equipment || Hellish Powder || Task ||  || <code>matcha:advancement/obol_1</code>
 |-
-| {{Slot|Obol|link=none}} || '''Bonfire Lit''' || ⟦U+E00F⟧ Use a Beacon Kindling to signal a Wandering Trader || You're Rich! || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Beacon Kindling|link=none}} || '''Bonfire Lit''' || {{G{{!}}U+E00F}} Use a Beacon Kindling to signal a Wandering Trader || You're Rich! || Task ||  || <code>matcha:advancement/obol_1</code>
 |-
-| {{Slot|Obol|link=none}} || '''Canto I''' || ❤ Defeat the Sea God || Hellish Powder || Task ||  || <code>matcha:advancement/crystal_heart_1</code>
+| {{Slot|Opal|link=none}} || '''Canto I''' || ❤ Defeat the Sea God || Hellish Powder || Task ||  || <code>matcha:advancement/crystal_heart_1</code>
 |-
 | {{Slot|Tall Dry Grass|link=none}} || '''Harvester''' || Use a Hoe to harvest Grass and dry it on a Campfire || Prometheus be Damned || Task ||  || 
 |-
-| {{Slot|Poisonous Potato|link=none}} || '''Powerful Flavors''' || Reveal the hidden aspect of a Food by cooking it on a Campfire or an Oven || Prometheus be Damned || Task ||  || 
+| {{Slot|Grilled Melon|link=none}} || '''Powerful Flavors''' || Reveal the hidden aspect of a Food by cooking it on a Campfire or an Oven || Prometheus be Damned || Task ||  || 
 |-
-| {{Slot|Obol|link=none}} || '''A Good Samaritan''' || ⟦U+E00F⟧ Cover the Relocation costs for an Asylum Seeker, and make a home for them here || Bonfire Lit || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Asylum Seeker|link=none}} || '''A Good Samaritan''' || {{G{{!}}U+E00F}} Cover the Relocation costs for an Asylum Seeker, and make a home for them here || Bonfire Lit || Task ||  || <code>matcha:advancement/obol_1</code>
 |-
 | {{Slot|Mud Kiln|link=none}} || '''Ancient Technology''' || Construct a Kiln made from Packed Mud and Mudbricks || Harvester || Task ||  || 
 |-
-| {{Slot|Obol|link=none}} || '''Canto II''' || ❤ Pillage the Remnants of Pandaemonium || Canto I || Task ||  || <code>matcha:advancement/crystal_heart_1</code>
+| {{Slot|Ruby|link=none}} || '''Canto II''' || ❤ Pillage the Remnants of Pandaemonium || Canto I || Task ||  || <code>matcha:advancement/crystal_heart_1</code>
 |-
-| {{Slot|Poisonous Potato|link=none}} || '''Crystal Heart!''' || ⟦U+E00F⟧⟦U+E00F⟧ Crystal Hearts impart a piece of divinity onto Gods who devour them. Though mortals were only able to use their Undying properties. || A Vestige of Divinity || Challenge ||  || <code>matcha:advancement/obol_3</code>
+| {{Slot|Crystal Heart|link=none}} || '''Crystal Heart!''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Crystal Hearts impart a piece of divinity onto Gods who devour them. Though mortals were only able to use their Undying properties. || A Vestige of Divinity || Challenge ||  || <code>matcha:advancement/obol_3</code>
 |-
-| {{Slot|Baked Golden Apple|link=none}} || '''Fae-Slayer''' || Affix a Nazar to an Iron Sword in a Smithing Table || Apotropaic Jewellery || Task ||  || 
+| {{Slot|Warding Sword|link=none}} || '''Fae-Slayer''' || Affix a Nazar to an Iron Sword in a Smithing Table || Apotropaic Jewellery || Task ||  || 
 |-
-| {{Slot|Poisonous Potato|link=none}} || '''Hidden Flavors''' || ⟦U+E00F⟧ Cook a secret Ingredient || Powerful Flavors || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Poisonous Potato|link=none}} || '''Hidden Flavors''' || {{G{{!}}U+E00F}} Cook a secret Ingredient || Powerful Flavors || Task ||  || <code>matcha:advancement/obol_1</code>
 |-
 | {{Slot|Oven|link=none}} || '''Now You're Cooking''' || Construct an Oven from Bricks and Iron || Powerful Flavors || Task ||  || 
 |-
-| {{Slot|Copper Ingot|link=none}} || '''Brazier''' || ⟦U+E010⟧ Use a Mud Kiln to Smelt Copper || Ancient Technology || Task ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Copper Ingot|link=none}} || '''Brazier''' || {{G{{!}}U+E010}} Use a Mud Kiln to Smelt Copper || Ancient Technology || Task ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
 |-
-| {{Slot|Obol|link=none}} || '''Canto III''' || ❤ Exhume the Pilgrim's Trails || Canto II || Task ||  || <code>matcha:advancement/crystal_heart_1</code>
+| {{Slot|Amber|link=none}} || '''Canto III''' || ❤ Exhume the Pilgrim's Trails || Canto II || Task ||  || <code>matcha:advancement/crystal_heart_1</code>
 |-
-| {{Slot|Obol|link=none}} || '''Fishmonger''' || ⟦U+E00F⟧ Sell caught fish to a Fisherman || A Good Samaritan || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Carp|link=none}} || '''Fishmonger''' || {{G{{!}}U+E00F}} Sell caught fish to a Fisherman || A Good Samaritan || Task ||  || <code>matcha:advancement/obol_1</code>
 |-
-| {{Slot|Obol|link=none}} || '''God help you...''' || Commit great evil || A Good Samaritan || Task || Yes || 
+| {{Slot|Wooden Cross|link=none}} || '''God help you...''' || Commit great evil || A Good Samaritan || Task || Yes || 
 |-
 | {{Slot|Bowl|link=none}} || '''Manners First''' || Make a Ceramic Bowl from Bricks || Now You're Cooking || Task ||  || 
 |-
-| {{Slot|Poisonous Potato|link=none}} || '''Pickles & Jam''' || Preserve a food to boost its flavour profile || Now You're Cooking || Task ||  || 
+| {{Slot|Sweet Berry Jam|link=none}} || '''Pickles & Jam''' || Preserve a food to boost its flavour profile || Now You're Cooking || Task ||  || 
 |-
-| {{Slot|Baked Golden Apple|link=none}} || '''Sabbatarian''' || ⟦U+E00F⟧ Affix a Nazar to an Iron Sword inlaid with Silver in a Smithing Table || Fae-Slayer || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Silver Sword|link=none}} || '''Sabbatarian''' || {{G{{!}}U+E00F}} Affix a Nazar to an Iron Sword inlaid with Silver in a Smithing Table || Fae-Slayer || Task ||  || <code>matcha:advancement/obol_1</code>
 |-
-| {{Slot|Poisonous Potato|link=none}} || '''Wait, you can make that?''' || ⟦U+E00F⟧⟦U+E00F⟧ Cook a secret Meal || Hidden Flavors || Goal ||  || <code>matcha:advancement/obol_2</code>
+| {{Slot|Poisonous Potato|link=none}} || '''Wait, you can make that?''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Cook a secret Meal || Hidden Flavors || Goal ||  || <code>matcha:advancement/obol_2</code>
 |-
-| {{Slot|Obol|link=none}} || '''A True Community''' || 5 ⟦U+E00F⟧ Trade with (almost) every profession || Fishmonger || Challenge ||  || <code>matcha:advancement/obol_5</code>
+| {{Slot|Obol|link=none}} || '''A True Community''' || 5 {{G{{!}}U+E00F}} Trade with (almost) every profession || Fishmonger || Challenge ||  || <code>matcha:advancement/obol_5</code>
 |-
 | {{Slot|Brush|link=none}} || '''Archeologist in Training''' || Craft a Brush || Brazier || Task ||  || 
 |-
-| {{Slot|Obol|link=none}} || '''Canto IV''' || ❤❤ Raid Tartarus || Canto III || Task ||  || <code>matcha:advancement/crystal_heart_2</code>
+| {{Slot|Topaz|link=none}} || '''Canto IV''' || ❤❤ Raid Tartarus || Canto III || Task ||  || <code>matcha:advancement/crystal_heart_2</code>
 |-
-| {{Slot|Shield|link=none}} || '''Convoymaster''' || ⟦U+E00F⟧ Affix a Nazar to an Shield inlaid with Silver in a Smithing Table || Sabbatarian || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Shield|link=none}} || '''Convoymaster''' || {{G{{!}}U+E00F}} Affix a Nazar to an Shield inlaid with Silver in a Smithing Table || Sabbatarian || Task ||  || <code>matcha:advancement/obol_1</code>
 |-
-| {{Slot|Poisonous Potato|link=none}} || '''Doomsday Prepper''' || ⟦U+E00F⟧⟦U+E00F⟧⟦U+E00F⟧⟦U+E00F⟧ Preserve Everything! || Pickles & Jam || Challenge ||  || <code>matcha:advancement/obol_4</code>
+| {{Slot|Poisonous Potato|link=none}} || '''Doomsday Prepper''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Preserve Everything! || Pickles & Jam || Challenge ||  || <code>matcha:advancement/obol_4</code>
 |-
-| {{Slot|Poisonous Potato|link=none}} || '''Fortified Goodness''' || ⟦U+E00F⟧ Make Pumpkin Curry || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Pumpkin Curry|link=none}} || '''Fortified Goodness''' || {{G{{!}}U+E00F}} Make Pumpkin Curry || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
 |-
-| {{Slot|Rabbit Stew|link=none}} || '''Hearty Curry''' || ⟦U+E00F⟧ Make Japanese Curry || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Japanese Curry|link=none}} || '''Hearty Curry''' || {{G{{!}}U+E00F}} Make Japanese Curry || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
 |-
 | {{Slot|Smooth Stone|link=none}} || '''Mason''' || Kilns excel at processing Earthen Materials || Brazier || Task ||  || 
 |-
-| {{Slot|Obol|link=none}} || '''No More Fish in the Sea''' || 10 ⟦U+E00F⟧ Catch Everything! || Fishmonger || Challenge ||  || <code>matcha:advancement/obol_10</code>
+| {{Slot|Obol|link=none}} || '''No More Fish in the Sea''' || 10 {{G{{!}}U+E00F}} Catch Everything! || Fishmonger || Challenge ||  || <code>matcha:advancement/obol_10</code>
 |-
-| {{Slot|Rabbit Stew|link=none}} || '''Sweet and Spicy!''' || ⟦U+E00F⟧ Make Paneer Makhani. All Foods have viable Vegetarian Options || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Paneer Makhani|link=none}} || '''Sweet and Spicy!''' || {{G{{!}}U+E00F}} Make Paneer Makhani. All Foods have viable Vegetarian Options || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
 |-
-| {{Slot|Rabbit Stew|link=none}} || '''The Best Soup!''' || ⟦U+E00F⟧ Make Ramen || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Tonkotsu Ramen|link=none}} || '''The Best Soup!''' || {{G{{!}}U+E00F}} Make Ramen || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
 |-
-| {{Slot|Rabbit Stew|link=none}} || '''Too Spicy!''' || ⟦U+E00F⟧ Make Green Curry || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Green Curry|link=none}} || '''Too Spicy!''' || {{G{{!}}U+E00F}} Make Green Curry || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
 |-
-| {{Slot|Stone Axe|link=none}} || '''Two in One''' || ⟦U+E00F⟧ Mattocks and Dolabras work as two tools in one but mine slower than their base tools || Brazier || Goal ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Copper Dolabra|link=none}} || '''Two in One''' || {{G{{!}}U+E00F}} Mattocks and Dolabras work as two tools in one but mine slower than their base tools || Brazier || Goal ||  || <code>matcha:advancement/obol_1</code>
 |-
-| {{Slot|Obol|link=none}} || '''A Miraculous Discovery!''' || ⟦U+E00F⟧⟦U+E00F⟧⟦U+E00F⟧ Find a Clay Fetish by searching abandoned Sites || Archeologist in Training || Goal ||  || <code>matcha:advancement/obol_3</code>
+| {{Slot|Clay Fetish|link=none}} || '''A Miraculous Discovery!''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Find a Clay Fetish by searching abandoned Sites || Archeologist in Training || Goal ||  || <code>matcha:advancement/obol_3</code>
 |-
 | {{Slot|Blast Furnace|link=none}} || '''Burgeoning Metallurge''' || Blast Furnaces burn hotter than Kilns, able to melt more durable Metals || Mason || Task ||  || 
 |-
 | {{Slot|Gold Ingot|link=none}} || '''The Generous Metal''' || Gold has Fortune and Looting Intrinsics || Burgeoning Metallurge || Task ||  || 
 |-
-| {{Slot|Diamond|link=none}} || '''The Resilient Mineral''' || ⟦U+E010⟧ Diamonds have no Intrinsics but are capable of Hosting Electrum and Adamant || Burgeoning Metallurge || Task ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Diamond|link=none}} || '''The Resilient Mineral''' || {{G{{!}}U+E010}} Diamonds have no Intrinsics but are capable of Hosting Electrum and Adamant || Burgeoning Metallurge || Task ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
 |-
-| {{Slot|Iron Ingot|link=none}} || '''The Stalwart Metal''' || ⟦U+E010⟧ Iron has no Intrinsic Properties and can only Host Steel || Burgeoning Metallurge || Task ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Iron Ingot|link=none}} || '''The Stalwart Metal''' || {{G{{!}}U+E010}} Iron has no Intrinsic Properties and can only Host Steel || Burgeoning Metallurge || Task ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
 |-
-| {{Slot|Silver Bullion|link=none}} || '''The Warding Metal''' || ⟦U+E00F⟧ Silver, a once-common Apotropaic Metal is found most commonly in Mountains. Most deposits are now harboured in Abbeys || Burgeoning Metallurge || Goal ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Silver Bullion|link=none}} || '''The Warding Metal''' || {{G{{!}}U+E00F}} Silver, a once-common Apotropaic Metal is found most commonly in Mountains. Most deposits are now harboured in Abbeys || Burgeoning Metallurge || Goal ||  || <code>matcha:advancement/obol_1</code>
 |-
 | {{Slot|Carbon-Rich Iron|link=none}} || '''A Brittle Alloy?''' || Craft Carbon-Rich Iron with Iron and a Coal Block || The Stalwart Metal || Task ||  || 
 |-
-| {{Slot|Adamant Alloy|link=none}} || '''A Divine Alloy''' || ⟦U+E010⟧ Adamant grants the wielder a Divine Constitution || The Generous Metal || Goal ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Adamant Alloy|link=none}} || '''A Divine Alloy''' || {{G{{!}}U+E010}} Adamant grants the wielder a Divine Constitution || The Generous Metal || Goal ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
 |-
 | {{Slot|Shakudo Alloy|link=none}} || '''A Gentle Alloy''' || Shakudo grants Copper Equipment Silk Touch and Cleansing Properties || The Generous Metal || Task ||  || 
 |-
 | {{Slot|Hepatizon Alloy|link=none}} || '''A Keen Alloy''' || Hepatizon grants Copper Equipment unrivaled Speed || The Warding Metal || Task ||  || 
 |-
-| {{Slot|Electrum Alloy|link=none}} || '''A Zealous Alloy''' || ⟦U+E010⟧ Electrum enhances the Fortune and Looting Properties of Gold but only Diamond can host the Alloy || The Warding Metal || Goal ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Electrum Alloy|link=none}} || '''A Zealous Alloy''' || {{G{{!}}U+E010}} Electrum enhances the Fortune and Looting Properties of Gold but only Diamond can host the Alloy || The Warding Metal || Goal ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
 |-
-| {{Slot|Stabilized Estus|link=none}} || '''Orpheus''' || ⟦U+E010⟧ Descend into Hell || The Resilient Mineral || Goal ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Stabilized Estus|link=none}} || '''Orpheus''' || {{G{{!}}U+E010}} Descend into Hell || The Resilient Mineral || Goal ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
 |-
 | {{Slot|Steel Alloy|link=none}} || '''A Tough Alloy''' || Made by blasting Carbon-Rich Iron, Steel grants Iron Equipment Knockback and greatly increased Durability || A Brittle Alloy? || Task ||  || 
 |-
-| {{Slot|Eye of Ender|link=none}} || '''The End of Dreams''' || ⟦U+E010⟧ Their Time is Near || Orpheus || Goal ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Eye of Ender|link=none}} || '''The End of Dreams''' || {{G{{!}}U+E010}} Their Time is Near || Orpheus || Goal ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
 |-
 | {{Slot|Smithing Table|link=none}} || '''Master Metallurge''' || Smithing Tables allow you to modify Base-Metal tools using Alloys || A Tough Alloy || Task ||  || 
 |-
 | {{Slot|Anvil|link=none}} || '''Repair & Reuse''' || Anvils made from Steel can repair Any Equipment with its corresponding Base-Metal Ingot forever || A Tough Alloy || Task ||  || 
 |-
-| {{Slot|Stone Sword|link=none}} || '''Apocryphal Adamant''' || ⟦U+E00F⟧⟦U+E00F⟧⟦U+E00F⟧⟦U+E00F⟧ Smith a piece of Adamant Equipment from Diamond with Adamant Alloy || Master Metallurge || Challenge ||  || <code>matcha:advancement/obol_4</code>
+| {{Slot|Adamant Pickaxe|link=none}} || '''Apocryphal Adamant''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Smith a piece of Adamant Equipment from Diamond with Adamant Alloy || Master Metallurge || Challenge ||  || <code>matcha:advancement/obol_4</code>
 |-
-| {{Slot|Wooden Pickaxe|link=none}} || '''Brilliant Bronze''' || ⟦U+E00F⟧ Smith a piece of Hepatizon Equipment from Copper with Hepatizon Alloy || Master Metallurge || Goal ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Hepatizon Pickaxe|link=none}} || '''Brilliant Bronze''' || {{G{{!}}U+E00F}} Smith a piece of Hepatizon Equipment from Copper with Hepatizon Alloy || Master Metallurge || Goal ||  || <code>matcha:advancement/obol_1</code>
 |-
-| {{Slot|Stone Sword|link=none}} || '''Evangelic Electrum''' || ⟦U+E00F⟧⟦U+E00F⟧⟦U+E00F⟧⟦U+E00F⟧ Smith a piece of Electrum Equipment from Diamond with Electrum Alloy || Master Metallurge || Challenge ||  || <code>matcha:advancement/obol_4</code>
+| {{Slot|Adamant Pickaxe|link=none}} || '''Evangelic Electrum''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Smith a piece of Electrum Equipment from Diamond with Electrum Alloy || Master Metallurge || Challenge ||  || <code>matcha:advancement/obol_4</code>
 |-
-| {{Slot|Wooden Axe|link=none}} || '''Palatinate Perfection''' || ⟦U+E00F⟧ Smith a piece of Shakudo Equipment from Copper with Shakudo Alloy || Master Metallurge || Goal ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Shakudo Pickaxe|link=none}} || '''Palatinate Perfection''' || {{G{{!}}U+E00F}} Smith a piece of Shakudo Equipment from Copper with Shakudo Alloy || Master Metallurge || Goal ||  || <code>matcha:advancement/obol_1</code>
 |-
-| {{Slot|Iron Shovel|link=none}} || '''Sturdy Steel''' || ⟦U+E00F⟧ Smith a piece of Steel Equipment from Iron with Steel Alloy || Master Metallurge || Goal ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Steel Pickaxe|link=none}} || '''Sturdy Steel''' || {{G{{!}}U+E00F}} Smith a piece of Steel Equipment from Iron with Steel Alloy || Master Metallurge || Goal ||  || <code>matcha:advancement/obol_1</code>
 |-
 | {{Slot|Smithing Template|link=none}} || '''Upgrades''' || Smithing Upgrades are used to Modify and Upgrade Mattocks and Dolabras || Master Metallurge || Task ||  || 
 |-
-| {{Slot|Wooden Axe|link=none}} || '''Three in One?''' || ⟦U+E00F⟧⟦U+E00F⟧ Upgrade a Mattock or Dolabra || Upgrades || Goal ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Steel Dolabra|link=none}} || '''Three in One?''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Upgrade a Mattock or Dolabra || Upgrades || Goal ||  || <code>matcha:advancement/obol_1</code>
 |}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>

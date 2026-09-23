@@ -1,0 +1,41 @@
+{{Vanilla|Fortune}}
+{{Infobox
+|title=Fortune
+|maxlevel=I
+|slots=Main hand
+|items=Pickaxes, shovels, axes, hoes and hybrid tools
+|exclusive=Silk Touch, the electrum tool intrinsic
+|id=<code>minecraft:fortune</code>
+|source={{Source|MF_datapack/data/minecraft/enchantment/fortune.json|fortune.json}}
+}}
+'''Fortune''' is an [[enchantment]] for mining tools that increases block drops. In [[Matcha Flavoured]] its maximum level is I; higher Fortune comes only from [[Electrum equipment|electrum]] tools, whose intrinsic works as Fortune up to level III.
+
+== Obtaining ==
+* The [[Prayer of Midas]], a crafted [[blessing]], stores Fortune I with Looting III.
+* Random enchanted books and trial chamber vaults. Because the maximum level is I, no book can hold more.
+
+== Behavior ==
+Fortune works as vanilla Fortune I. Its maximum level is lowered from III to I, so it cannot be raised by combining books in an [[anvil]].<ref>{{Source|MF_datapack/data/minecraft/enchantment/fortune.json}}</ref> The pack adds the electrum tool intrinsic to the same exclusive set as Fortune and Silk Touch, so a tool can have only one of the three.<ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/exclusive_set/mining.json}}</ref> The pack's block loot tables check for both Fortune and the electrum intrinsic.
+
+Fortune has no effect on [[spawner]]s: each gives exactly one [[Divine Fragment]].
+
+Its anvil cost multiplier is 1, down from 4.
+
+== History ==
+{{History|
+{{History line|1.02|Fortune works on spawners.}}
+{{History line|1.03|Fortune no longer works on spawners.<ref>{{Cite changelog|1.03|quote=Fortune NO LONGER works on spawners. I think early game should be defined by the rarity of this material. 4 Fragments per spawner is just too much.}}</ref>}}
+{{History line|1.12.1-alpha|Maximum level lowered from III to I; Fortune III only comes from electrum.<ref>{{Cite changelog|1.12.1-alpha|quote=Fortune III can now only be obtained from Electrum}}</ref> Added the Prayer of Midas.}}
+{{History line|1.12.2|Fortune now works on tomatoes, glow berry vines and chorus plants.}}
+}}
+
+== See also ==
+* [[Electrum equipment]]
+* [[Prayer of Midas]]
+* [[Enchantment]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchantments]]

@@ -1,0 +1,35 @@
+{{Vanilla}}
+
+{{Infobox auto}}
+
+'''Dried kelp''' is the simple preparation of kelp, whose [[intrinsic]] is {{EffectLink|Water Breathing}}. It heals {{Hp|1}}, grants Water Breathing for 10 seconds and is eaten in half a second.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dried_kelp.json}}</ref>
+
+== Obtaining ==
+
+=== Cooking ===
+{{Recipes}}
+Kelp dries in an [[oven]] in 5 seconds; there is no kindling recipe and the vanilla recipes are removed. A dried kelp block crafts back into 9 dried kelp with the same properties.
+
+== Usage ==
+
+=== Food ===
+Eating dried kelp takes 0.5 seconds, heals {{Hp|1}} and gives Water Breathing for 0:10.
+
+Obtaining dried kelp unlocks [[gimmari]]. It is also used in [[lumpia]], [[bokguk]], [[ramen stock]] and [[seitan]].
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|0.7-alpha|Dried kelp can be crafted into blocks and back while keeping its properties.}}
+}}
+
+== See also ==
+* [[Intrinsic]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

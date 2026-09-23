@@ -1,0 +1,39 @@
+A '''spear''' is the vanilla charging weapon, given pack stats and, for alloys, intrinsics. Steel spears add knockback, the hepatizon spear has Lunge III and speed, the shakudo spear steals life, the electrum spear has Smite IV, Looting II and {{G|Warding}} 2, and the adamant spear inflicts Weakness.
+
+{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Wooden Spear}} || 59 || 1 || 1.538 || — || —
+|-
+| {{ItemLink|Copper Spear}} || 190 || 2 || 1.176 || — || —
+|-
+| {{ItemLink|Iron Spear}} || 500 || 3 || 1.053 || — || —
+|-
+| {{ItemLink|Steel Spear}} || 3000 || 4 || 0.9 || +1 || —
+|-
+| {{ItemLink|Golden Spear}} || 350 || 1 || 1.053 || — || {{MCW|Looting}} II
+|-
+| {{ItemLink|Diamond Spear}} || 2500 || 4 || 0.952 || — || —
+|-
+| {{ItemLink|Shakudo Spear}} || 1000 || 3 || 1.18 || — || {{G|Health}}{{G|Attack damage}} Life steal
+|-
+| {{ItemLink|Hepatizon Spear}} || 1000 || 3 || 1.18 || — || [[Lunge]] III
+|-
+| {{ItemLink|Electrum Spear}} || 3000 || 4 || 4 || — || [[Smite]] IV<br />{{MCW|Looting}} II<br />[[Warding|{{G|Warding}} 2]]
+|-
+| {{ItemLink|Adamant Spear}} || 5000 || 5 || 0.87 || — || [[Sharpness]] I<br />[[Unbreaking]] II<br />{{G|Weakness}} Weakness
+|}
+
+The electrum and adamant spears carry no attack speed modifier matching their tooltips (1.18 and 0.95): the electrum spear's real attack speed is 4 and the adamant spear keeps the vanilla netherite spear's attributes (5 damage, 0.87).<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/electrum_spear.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added electrum and steel spears; the bronze (hepatizon) spear buffed to Lunge III.}}
+{{History line|1.12|Hepatizon and shakudo spear attack speeds match their tooltips.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Weapons]]

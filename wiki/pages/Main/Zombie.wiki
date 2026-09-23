@@ -23,9 +23,11 @@ Compared to vanilla:
 * {{ItemLink|Tattered Leather}} (1–2) replaces {{MCW|Rotten Flesh|rotten flesh}} (0–2), which no longer exists.
 * A 50% chance of {{ItemLink|Raw Estus}} (0–1) replaces the rare iron ingot, carrot and potato drops, so about 1 in 4 zombies drops Raw Estus without Looting.
 * Zombies riding zombie horses no longer drop red mushrooms.
+* As in vanilla, a baby zombie riding a chicken drops the Lava Chicken music disc; this is the "baby" row of the table.
 
 === Zombie villagers ===
 Zombie villagers drop {{ItemLink|Tattered Leather}} (1–2) and one roll that gives {{ItemLink|Raw Estus}} (0–1) with a 10 in 11 chance or an {{ItemLink|Obol}} with a 1 in 11 chance, all only when killed by a player.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/zombie_villager.json}}</ref>
+
 {{Data/Loot/minecraft/entities/zombie_villager}}
 
 == Behavior ==

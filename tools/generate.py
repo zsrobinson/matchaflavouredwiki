@@ -909,8 +909,13 @@ def renamed_table():
     rows = []
     seen = set()
     for k, v in sorted(DATA['renames'].items(), key=lambda kv: kv[1]['vanilla'] or ''):
-        if not (k.startswith('item.minecraft.') or k.startswith('block.minecraft.') or k.startswith('entity.minecraft.')):
+        if not (k.startswith('item.minecraft.') or k.startswith('block.minecraft.') or k.startswith('entity.minecraft.villager.')):
             continue
+        rid = k.split('.', 2)[-1]
+        if not k.startswith('entity.') and ('.' in rid or (rid not in VSUM and rid not in BLOCK_ITEMS)):
+            continue  # interface strings such as smithing-template slot descriptions
+        if rid.endswith('_spawn_egg'):
+            continue  # custom items that borrow a spawn egg id are not renames of the egg
         van, pk = v['vanilla'], v['pack']
         if not pk or (van, pk) in seen or not van:
             continue
@@ -966,6 +971,10 @@ def advancement_tables():
         for a in sorted(advs, key=lambda a: (depth(a), a['title'])):
             icon = a.get('icon') or {}
             iname = safe(icon.get('name', '')) if icon else ''
+            if icon.get('model'):  # icon drawn with a custom model: find the item that owns it
+                owner = next((k for k, it in ITEMS.items() if icon['model'] in it['models']), None)
+                if owner:
+                    iname = safe(owner)
             parent = ADV.get(a.get('parent') or '', {}).get('title', '')
             frame = a.get('frame', 'task')
             rw = a.get('rewards') or {}
@@ -980,7 +989,7 @@ def advancement_tables():
                 rtxt.append('runs <code>%s</code>' % rw['function'])
             rows.append('|-\n| %s || %s || %s || %s || %s || %s || %s' % (
                 ('{{Slot|%s|link=none}}' % iname) if iname and has_icon(icon.get('name', '')) else '',
-                "'''%s'''" % esc(a['title']), esc(a['description']), esc(parent), frame.title(),
+                "'''%s'''" % esc(glyphs(a['title'])), esc(glyphs(a['description']).replace('\n', ' ')), esc(parent), frame.title(),
                 'Yes' if a.get('hidden') else '', '; '.join(rtxt)))
         pages[tab] = ('<includeonly>{| class="wikitable sortable"\n! Icon !! Advancement !! Description !! Parent !! Frame !! Hidden !! Reward\n' +
                       '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')

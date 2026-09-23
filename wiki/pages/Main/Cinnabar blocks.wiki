@@ -1,0 +1,34 @@
+{{Vanilla|Cinnabar}}
+{{Infobox auto|Cinnabar|title=Cinnabar blocks}}
+'''Cinnabar blocks''' are the red stone blocks of the sulfur caves: '''cinnabar''', '''polished cinnabar''', '''cinnabar bricks''' and '''chiseled cinnabar''', with their slabs, stairs and walls. They are vanilla blocks. Matcha Flavoured changes the chiseled recipe, lets slabs be crafted back into blocks, sells cinnabar in bulk and uses it as an armor trim color.
+
+== Obtaining ==
+Cinnabar generates in sulfur caves as in vanilla.
+
+=== Crafting ===
+{{Recipes|Cinnabar Bricks}}
+* Four cinnabar bricks in a square make 4 '''chiseled cinnabar''', replacing the vanilla recipe of two stacked slabs. A [[stonecutter]] also cuts cinnabar into chiseled cinnabar.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/chiseled_cinnabar.json}}</ref> The vanilla recipe is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+* Polished cinnabar, cinnabar bricks and every slab, stairs and wall are made as in vanilla.
+* Two slabs of cinnabar, polished cinnabar or cinnabar bricks craft back into the full block.
+
+=== Trading ===
+The [[Mason]] sells a bulk block of cinnabar for 1 [[obol]] at the journeyman level; using it unpacks 64 cinnabar. The item's name, <code>item.kleispack.trade.bulk_cinnabar</code>, has no English translation, so the game shows the raw key.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/3/cinnabar.json}}</ref> See [[Bulk blocks]].
+
+== Usage ==
+{{Uses|Cinnabar}}
+A block of cinnabar is the ingredient of the cinnabar [[Trims|smithing trim color]], with iron ingots and steel alloy.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_cinnabar.json}}</ref> The pack also renames the vanilla redstone trim material to "Cinnabar Material".<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+== History ==
+{{History
+|{{History line|1.12.1-alpha|Cinnabar was added to the Mason's trades.}}
+}}
+
+== See also ==
+* [[Sulfur blocks]]
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Building blocks]]

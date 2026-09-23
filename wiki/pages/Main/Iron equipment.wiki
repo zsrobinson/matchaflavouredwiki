@@ -1,0 +1,70 @@
+{{Main|Equipment}}
+'''Iron equipment''' is the third tier of tools, weapons and armor, and the base for [[Steel equipment|steel]].
+
+== Obtaining ==
+Iron equipment is crafted from [[Iron Ingot|iron ingots]]. Raw iron can only be smelted in a [[Blast Furnace|blast furnace]]; the vanilla furnace recipes for iron are blocked.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_raw_iron.json}}</ref> Iron also makes the [[Iron Dolabra|iron dolabra]], [[Iron Mattock|iron mattock]], [[Shears|iron shears]] and [[Snow Shovel|snow shovel]].
+
+== Mining ==
+The iron pickaxe mines every ore, including diamond, but cannot get drops from obsidian, crying obsidian or ender chests.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/iron.json}}</ref>
+
+== Differences from vanilla ==
+Iron tools have 500 durability instead of 250, and the axe, pickaxe and sword have pack-specific speeds. Iron armor has 350 durability for every piece.
+
+== Stats ==
+=== Tools ===
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Iron Pickaxe}} || 500 || 7 || — || 4 || 1.2 || —
+|-
+| {{ItemLink|Iron Axe}} || 500 || 7 || — || 9 || 0.9 || —
+|-
+| {{ItemLink|Iron Shovel}} || 500 || 8 || — || 4.5 || 1 || —
+|-
+| {{ItemLink|Iron Hoe}} || 500 || 8 || — || 1 || 3 || —
+|-
+| {{ItemLink|Iron Mattock}} || 500 || 6 || — || 4 || 4 || —
+|-
+| {{ItemLink|Iron Dolabra}} || 500 || 6 || — || 6 || 0.9 || —
+|}
+
+=== Weapons ===
+{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Iron Sword}} || 500 || 6 || 1.6 || — || —
+|-
+| {{ItemLink|Iron Spear}} || 500 || 3 || 1.053 || — || —
+|}
+
+=== Armor ===
+{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Iron Helmet}} || 350 || 2 || 0 || — || — || —
+|-
+| {{ItemLink|Iron Chestplate}} || 350 || 6 || 0 || — || — || —
+|-
+| {{ItemLink|Iron Leggings}} || 350 || 5 || 0 || — || — || —
+|-
+| {{ItemLink|Iron Boots}} || 350 || 2 || 0 || — || — || —
+|- class="sortbottom"
+! Full set !! !! 15 !! 0 !! 0 !! colspan="2" |
+|}
+
+Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
+
+== History ==
+{{History|
+{{History line|0.6-alpha|Added recipe unlocks for iron equipment.}}
+{{History line|1.03|The iron dolabra's real attack speed now matches its tooltip.}}
+{{History line|1.10|Iron shovels now drop snowballs from snow (newly made tools only). Iron mattocks now drop snowballs from snow (newly made tools only).}}
+{{History line|1.12.1-alpha|The iron sword's attack speed now matches its tooltip. Iron pickaxes can no longer mine obsidian.}}
+{{History line|1.12.2|Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Equipment]]

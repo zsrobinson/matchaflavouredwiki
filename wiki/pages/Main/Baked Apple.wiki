@@ -1,0 +1,36 @@
+{{Vanilla|Fermented Spider Eye}}
+
+{{Infobox auto}}
+
+A '''baked apple''' is the simple preparation of the [[apple]]. It heals {{Hp|4}} and grants {{EffectLink|Regeneration}} for 10 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_apple.json}}</ref>
+
+== Obtaining ==
+
+=== Cooking ===
+{{Recipes}}
+Apples cook into baked apples in an [[oven]] or on [[kindling]] in 5 seconds. Picking up an apple unlocks the recipe.
+
+== Usage ==
+
+=== Food ===
+Eating a baked apple takes 1.6 seconds, heals {{Hp|4}} and gives Regeneration I for 0:10.
+
+Obtaining a baked apple unlocks [[canned apples]] and the [[apple empanada]], which need it.
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|0.7-alpha|Hot buttered apple renamed to baked apple, with a new texture. Canned apples and apple empanadas require it.}}
+}}
+
+== See also ==
+* [[Apple]]
+* [[Intrinsic]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

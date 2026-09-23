@@ -1,0 +1,86 @@
+{{Infobox auto|type=Summoning item|renewable=Yes}}
+An '''Asylum Seeker''' is an application sold by the [[Wandering Trader]] that brings a new [[villager]] to the player's base. Each application describes a villager who has had to leave their home, with their age, culture and cause of emigration, and using it on the ground summons that villager. It is the main way to get villagers, since the world's [[Abandoned village|villages]] are empty.
+
+The developer introduces the item as "Refugee applications. Villagers who need a home after something terrible has happened to them. Welcome the refugees in and make a place for them here."<ref>{{Cite video|quote=Refugee applications. Villagers who need a home after something terrible has happened to them. Welcome the refugees in and make a place for them here.}}</ref>
+
+== Obtaining ==
+=== Trading ===
+A wandering trader always offers 4 Asylum Seekers, each for 1 [[Obol]] and each usable once. Each of the 4 applications is rolled separately.<ref>{{Source|MF_datapack/data/minecraft/trade_set/wandering_trader/buying.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/asylum_seeker.json}}</ref> A wandering trader can be called with a [[Beacon Kindling]].
+
+== Usage ==
+Using an Asylum Seeker on a block spawns the villager described on the application, with a puff of smoke.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/application.mcfunction}}</ref> The villager arrives unemployed and takes a profession from a nearby job site block like any other villager.
+
+== Application ==
+The application's tooltip lists, from top to bottom, the applicant's age, culture and cause of emigration, followed by "Click the ground to summon". All three are chosen at random when the wandering trader's offer is created, so every application in a trader's stock can differ.<ref name="trade">{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/asylum_seeker.json}}</ref>
+
+=== Age ===
+{| class="wikitable"
+! Tooltip !! Chance !! Villager
+|-
+| Age: Adult || 7 in 9 (77.8%) || An adult villager
+|-
+| Age: Child || 2 in 9 (22.2%) || A baby villager that takes 216,000 ticks (3 hours) to grow up
+|}
+Vanilla baby animals and villagers normally grow up after 24,000 ticks (20 minutes); children from applications stay young nine times as long.<ref name="trade" />
+
+=== Culture ===
+The culture sets the villager's type, which decides its clothing. Each of the six cultures has a 1 in 6 chance:
+{| class="wikitable"
+! Tooltip !! Villager type
+|-
+| Culture: None || Not set; the game assigns the type as for any villager spawned from an egg
+|-
+| Culture: Desert || Desert
+|-
+| Culture: Swamp || Swamp
+|-
+| Culture: Plains || Plains
+|-
+| Culture: Taiga || Taiga
+|-
+| Culture: Jungle || Jungle
+|}
+There are no Snow or Savanna cultures.<ref name="trade" />
+
+=== Cause of emigration ===
+Every application has one of eight causes, each with a 1 in 8 (12.5%) chance:
+* Political Persecution
+* Religious Persecution
+* War
+* Ethnic Persecution
+* Natural Disaster
+* Refused to Disclose
+* The Dead God
+* Famine
+In addition, each child has a 1 in 9 chance of being "Orphaned", which is added as an extra cause line above its other cause. Adults are never orphaned. Overall, about 1 in 40 applications (2 in 81, or 2.5%) is an orphaned child.<ref name="trade" />
+
+The cause of emigration is descriptive only: it appears in the tooltip but does not change the villager that is summoned.
+
+== Behavior ==
+The Asylum Seeker is a villager spawn egg. The summoned villager is invisible for its first tick, so it appears together with the smoke.<ref name="trade" />
+
+Like other spawn eggs, using an Asylum Seeker on a [[spawner]] or trial spawner in Survival destroys every spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
+
+== Advancements ==
+* '''A Good Samaritan''': "Cover the Relocation costs for an Asylum Seeker, and make a home for them here". Buy an Asylum Seeker from a wandering trader. Rewards 1 obol.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/trade_for_asylum_seeker.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.0|Present as "refugee applications" sold by the wandering trader, as shown in the introduction video.}}
+{{History line|1.10|The wandering trader sells up to 4 applications.}}
+{{History line|1.12.1-alpha|Applications are random, with a randomly chosen age, culture and cause (contributed by HapppySpud).
+Summoning items can no longer be used on spawners.}}
+{{History line|1.12.2|"Orphaned" applicants are always children.}}
+}}
+
+== Trivia ==
+* The item's model is named <code>application</code>.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/application.json}}</ref>
+* "The Dead God" also appears in the End advancement ''Iconoclast'', "Defile the Dead God's Dream".
+* The developer lists "Variant Villages to match with villager stories" among possible future ideas.<ref>{{Source|changelog.md}}</ref>
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Items]]
+[[Category:Trading]]

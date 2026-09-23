@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Hell-Bound Book}}
+|invimage=Hell-Bound Book
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Enchanted Book}}
+|rarity=Rare
+|stackable=Yes (64)
+|effects=Stores: [[Curse of Binding]]
+|id=<code>minecraft:enchanted_book</code>
+|source={{Source|MF_datapack/data/matcha/recipe/blessing/hell_bound_book.json|hell_bound_book.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

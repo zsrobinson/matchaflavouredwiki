@@ -1,0 +1,51 @@
+{{Infobox
+|title=Trailblaze
+|maxlevel=III
+|slots=Feet
+|items=Boots
+|id=<code>matcha:traversal</code>
+|source={{Source|MF_datapack/data/matcha/enchantment/traversal.json|traversal.json}}
+}}
+'''Trailblaze''' is an [[enchantment]] added by [[Matcha Flavoured]] for boots that makes the wearer faster on paths, gravel and mud bricks. Its internal name is ''Traversal''.
+
+== Obtaining ==
+* [[Prayer of St. Clement]], a crafted [[blessing]] (Trailblaze III).
+* The Prayer of Exodus [[Ofuda]], traded from the [[Mouthpiece]] for [[The Tanakh]] (Trailblaze III, with Loyalty III and Power II).
+* [[Sturdy Leather Boots]] are crafted with Trailblaze I, and those found in chests have it too.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sturdy_leather_boots.json}}</ref>
+
+== Behavior ==
+=== Speed ===
+While the wearer walks on a path block, their movement speed increases by 0.0155 per level (added to the base player speed of 0.1), so Trailblaze III makes them about 46% faster. The bonus stays while they jump off the path and ends once they land on another block. It does not apply while riding or flying.<ref>{{Source|MF_datapack/data/matcha/enchantment/traversal.json}}</ref>
+
+The path blocks are the pack's <code>#matcha:is_path</code> tag:<ref>{{Source|MF_datapack/data/matcha/tags/block/is_path.json}}</ref>
+* {{MCW|Dirt Path|dirt path}} and {{MCW|Coarse Dirt|coarse dirt}}
+* {{MCW|Gravel|gravel}}
+* {{MCW|Packed Mud|packed mud}}, {{MCW|Mud Bricks|mud bricks}} and their slabs and stairs
+* [[Dirt Slab]]s
+
+=== Durability and particles ===
+Each time the wearer moves while on the ground on a path block, the boots have a 4% chance per level to lose 1 durability. Walking on a path block kicks up dirt particles every 5 ticks.
+
+Trailblaze's anvil cost multiplier is 0.
+
+== Issues ==
+The developer's notes record that the speed boost from mud brick slabs applies after a jump but not when running normally.<ref>{{Cite changelog|quote=When running on mud brick slabs with traversal boots, when I jump I get the speed boost, but when I just run on it normally I don't get the speed boost}}</ref>
+
+== History ==
+{{History|
+{{History line|0.5-alpha|The Prayer of St. Clement now works.}}
+{{History line|1.10|Renamed from Traversal to Trailblaze in the language files; the internal id is unchanged.<ref>{{Cite changelog|1.10|quote=Rennamed Traversal to Trailblaze (Only in Lang)}}</ref>}}
+{{History line|1.12.1-alpha|Now works on mud brick slabs and stairs and dirt slabs. Speed raised from 0.0105 to 0.0155 per level.<ref>{{Cite changelog|1.12.1-alpha|quote=Buffed Trailblaze speed (0.0105 / lvl -> 0.0155 / lvl)}}</ref>}}
+{{History line|1.12.2|Moved from the <code>main</code> to the <code>matcha</code> namespace.}}
+}}
+
+== See also ==
+* [[Prayer of St. Clement]]
+* [[Sturdy Leather Boots]]
+* [[Enchantment]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchantments]]

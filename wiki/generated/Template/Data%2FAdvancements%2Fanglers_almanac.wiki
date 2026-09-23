@@ -1,43 +1,19 @@
 <includeonly>{| class="wikitable sortable"
 ! Icon !! Advancement !! Description !! Parent !! Frame !! Hidden !! Reward
 |-
-| {{Slot|Fishing Rod|link=none}} || '''Angler's Almanac''' || Discover the fish that inhabit this world ||  || Task || Yes || 
+| {{Slot|Angler's Almanac|link=none}} || '''Angler's Almanac''' || Discover the fish that inhabit this world ||  || Task || Yes || 
 |-
-| {{Slot|Cactus|link=none}} || '''Arid Freshwater''' || Savanna
-Badlands
-Wooded Badlands
-Savanna Plateau
-Eroded Badlands
-Windswept Savanna || Angler's Almanac || Task || Yes || 
+| {{Slot|Cactus|link=none}} || '''Arid Freshwater''' || Savanna Badlands Wooded Badlands Savanna Plateau Eroded Badlands Windswept Savanna || Angler's Almanac || Task || Yes || 
 |-
-| {{Slot|Mud|link=none}} || '''Brackish''' || Mangrove Swamp
-Swamp || Angler's Almanac || Task || Yes || 
+| {{Slot|Mud|link=none}} || '''Brackish''' || Mangrove Swamp Swamp || Angler's Almanac || Task || Yes || 
 |-
-| {{Slot|Ice|link=none}} || '''Cold Freshwater''' || Jagged Peaks
-Frozen Peaks
-Grove
-Snowy Slopes
-Snowy Taiga
-Frozen River
-Snowy Plains
-Ice Spikes || Angler's Almanac || Task || Yes || 
+| {{Slot|Ice|link=none}} || '''Cold Freshwater''' || Jagged Peaks Frozen Peaks Grove Snowy Slopes Snowy Taiga Frozen River Snowy Plains Ice Spikes || Angler's Almanac || Task || Yes || 
 |-
-| {{Slot|Blue Ice|link=none}} || '''Cold Saltwater''' || Frozen Ocean
-Deep Frozen Ocean || Angler's Almanac || Task || Yes || 
+| {{Slot|Blue Ice|link=none}} || '''Cold Saltwater''' || Frozen Ocean Deep Frozen Ocean || Angler's Almanac || Task || Yes || 
 |-
-| {{Slot|Dirt|link=none}} || '''Cool Freshwater''' || Taiga
-Birch Forest
-Old Growth Birch Forest
-Meadow
-Stony Shore
-Old Growth Pine Taiga
-Windswept Hills
-Windswept Forest
-Windswept Gravelly Hills
-Stony Peaks || Angler's Almanac || Task || Yes || 
+| {{Slot|Dirt|link=none}} || '''Cool Freshwater''' || Taiga Birch Forest Old Growth Birch Forest Meadow Stony Shore Old Growth Pine Taiga Windswept Hills Windswept Forest Windswept Gravelly Hills Stony Peaks || Angler's Almanac || Task || Yes || 
 |-
-| {{Slot|Packed Ice|link=none}} || '''Cool Saltwater''' || Cold Ocean
-Deep Cold Ocean || Angler's Almanac || Task || Yes || 
+| {{Slot|Packed Ice|link=none}} || '''Cool Saltwater''' || Cold Ocean Deep Cold Ocean || Angler's Almanac || Task || Yes || 
 |-
 | {{Slot|Sculk|link=none}} || '''Deep Dark''' ||  || Angler's Almanac || Task || Yes || 
 |-
@@ -49,339 +25,183 @@ Deep Cold Ocean || Angler's Almanac || Task || Yes ||
 |-
 | {{Slot|Sulfur|link=none}} || '''Sulfur Caves''' ||  || Angler's Almanac || Task || Yes || 
 |-
-| {{Slot|Seagrass|link=none}} || '''Temperate Freshwater''' || Forest
-Plains
-River
-Sunflower Plains
-Flower Forest
-Cherry Grove || Angler's Almanac || Task || Yes || 
+| {{Slot|Seagrass|link=none}} || '''Temperate Freshwater''' || Forest Plains River Sunflower Plains Flower Forest Cherry Grove || Angler's Almanac || Task || Yes || 
 |-
-| {{Slot|Tube Coral|link=none}} || '''Temperate Saltwater''' || Ocean
-Deep Ocean
-Beach || Angler's Almanac || Task || Yes || 
+| {{Slot|Tube Coral|link=none}} || '''Temperate Saltwater''' || Ocean Deep Ocean Beach || Angler's Almanac || Task || Yes || 
 |-
 | {{Slot|Diamond|link=none}} || '''Treasure''' ||  || Angler's Almanac || Task || Yes || 
 |-
-| {{Slot|Mangrove Propagule|link=none}} || '''Tropical Freshwater''' || Jungle
-Sparse Jungle
-Bamboo Jungle || Angler's Almanac || Task || Yes || 
+| {{Slot|Mangrove Propagule|link=none}} || '''Tropical Freshwater''' || Jungle Sparse Jungle Bamboo Jungle || Angler's Almanac || Task || Yes || 
 |-
-| {{Slot|Brain Coral|link=none}} || '''Warm Saltwater''' || Lukewarm Ocean
-Deep Lukewarm Ocean || Angler's Almanac || Task || Yes || 
+| {{Slot|Brain Coral|link=none}} || '''Warm Saltwater''' || Lukewarm Ocean Deep Lukewarm Ocean || Angler's Almanac || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Alaska Blackfish''' || A tiny Alaskan survivor that treats freezing temperatures like a minor inconvenience.
-⭐☆☆☆
-Chance 35.7% || Cold Freshwater || Task || Yes || 
+| {{Slot|Alaska Blackfish|link=none}} || '''Alaska Blackfish''' || A tiny Alaskan survivor that treats freezing temperatures like a minor inconvenience. ⭐☆☆☆ Chance 35.7% || Cold Freshwater || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Anchovy''' || A tiny silver fish that travels in enormous schools and somehow manages to be both small and extremely important.
-⭐☆☆☆
-Chance 35.7% || Temperate Saltwater || Task || Yes || 
+| {{Slot|Anchovy|link=none}} || '''Anchovy''' || A tiny silver fish that travels in enormous schools and somehow manages to be both small and extremely important. ⭐☆☆☆ Chance 35.7% || Temperate Saltwater || Task || Yes || 
 |-
-| {{Slot|Bamboo|link=none}} || '''Bamboo''' || Not a fish. Not even remotely a fish. Your fishing rod is apparently branching into gardening.
-Chance 9%
-Only In: Jungle, Sparse Jungle, Bamboo Jungle || Junk || Task || Yes || 
+| {{Slot|Bamboo|link=none}} || '''Bamboo''' || Not a fish. Not even remotely a fish. Your fishing rod is apparently branching into gardening. Chance 9% Only In: Jungle, Sparse Jungle, Bamboo Jungle || Junk || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Bluegill''' || A colorful little sunfish that looks innocent right up until it steals your bait and leaves.
-⭐☆☆☆
-Chance 35.7% || Temperate Freshwater || Task || Yes || 
+| {{Slot|Bluegill|link=none}} || '''Bluegill''' || A colorful little sunfish that looks innocent right up until it steals your bait and leaves. ⭐☆☆☆ Chance 35.7% || Temperate Freshwater || Task || Yes || 
 |-
-| {{Slot|Bowl|link=none}} || '''Bowl''' || An empty bowl suggesting the fish either escaped or was never invited to dinner.
-Chance 9% || Junk || Task || Yes || 
+| {{Slot|Bowl|link=none}} || '''Bowl''' || An empty bowl suggesting the fish either escaped or was never invited to dinner. Chance 9% || Junk || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Cod''' || A cold-water classic that has been feeding people for centuries and still hasn't asked for a raise.
-⭐☆☆☆
-Chance 35.7% || Cold Saltwater || Task || Yes || 
+| {{Slot|Cod|link=none}} || '''Cod''' || A cold-water classic that has been feeding people for centuries and still hasn't asked for a raise. ⭐☆☆☆ Chance 35.7% || Cold Saltwater || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Cod''' || A cold-water classic that has been feeding people for centuries and still hasn't asked for a raise.
-⭐☆☆☆
-Chance 35.7% || Cool Saltwater || Task || Yes || 
+| {{Slot|Cod|link=none}} || '''Cod''' || A cold-water classic that has been feeding people for centuries and still hasn't asked for a raise. ⭐☆☆☆ Chance 35.7% || Cool Saltwater || Task || Yes || 
 |-
-| {{Slot|Bone|link=none}} || '''Fish Bones''' || The fish escaped. Its skeleton apparently wasn't fast enough.
-Chance 90.9% || Sulfur Caves || Task || Yes || 
+| {{Slot|Fish Bones|link=none}} || '''Fish Bones''' || The fish escaped. Its skeleton apparently wasn't fast enough. Chance 90.9% || Sulfur Caves || Task || Yes || 
 |-
-| {{Slot|Goat Horn|link=none}} || '''Goat Horn''' || Because when you go fishing, the first thing you need is a loud way to let everyone know that you've caught the wrong fish again.
-Chance 8.2% || Treasure || Task || Yes || 
+| {{Slot|Goat Horn|link=none}} || '''Goat Horn''' || Because when you go fishing, the first thing you need is a loud way to let everyone know that you've caught the wrong fish again. Chance 8.2% || Treasure || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Guppy''' || A tiny colorful fish that can turn a peaceful aquarium into a rapidly expanding apartment complex.
-⭐☆☆☆
-Chance 35.7% || Tropical Freshwater || Task || Yes || 
+| {{Slot|Guppy|link=none}} || '''Guppy''' || A tiny colorful fish that can turn a peaceful aquarium into a rapidly expanding apartment complex. ⭐☆☆☆ Chance 35.7% || Tropical Freshwater || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Guppy''' || A tiny colorful fish that can turn a peaceful aquarium into a rapidly expanding apartment complex.
-⭐☆☆☆
-Chance 35.7% || Brackish || Task || Yes || 
+| {{Slot|Guppy|link=none}} || '''Guppy''' || A tiny colorful fish that can turn a peaceful aquarium into a rapidly expanding apartment complex. ⭐☆☆☆ Chance 35.7% || Brackish || Task || Yes || 
 |-
-| {{Slot|Lily Pad|link=none}} || '''Lily Pad''' || A perfectly good lily pad. Not edible not a fish but excellent if you suddenly need pond furniture.
-Chance 15.2% || Junk || Task || Yes || 
+| {{Slot|Lily Pad|link=none}} || '''Lily Pad''' || A perfectly good lily pad. Not edible not a fish but excellent if you suddenly need pond furniture. Chance 15.2% || Junk || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Mediterranean Killifish''' || A tiny fish with a name that sounds like it has a very specific appointment with destiny.
-⭐☆☆☆
-Chance 35.7% || Arid Freshwater || Task || Yes || 
+| {{Slot|Mediterranean Killifish|link=none}} || '''Mediterranean Killifish''' || A tiny fish with a name that sounds like it has a very specific appointment with destiny. ⭐☆☆☆ Chance 35.7% || Arid Freshwater || Task || Yes || 
 |-
-| {{Slot|Obol|link=none}} || '''Obol''' || An ancient coin dredged from the depths. Either treasure or someone's very expensive mistake.
-Chance 39.3% || Treasure || Task || Yes || 
+| {{Slot|Obol|link=none}} || '''Obol''' || An ancient coin dredged from the depths. Either treasure or someone's very expensive mistake. Chance 39.3% || Treasure || Task || Yes || 
 |-
-| {{Slot|Pale Hanging Moss|link=none}} || '''Pale Hanging Moss''' || Pale Garden moss hanging overhead like the forest has grown an impressive collection of spooky curtains.
-Chance 71.4% || Pale Garden || Task || Yes || 
+| {{Slot|Pale Hanging Moss|link=none}} || '''Pale Hanging Moss''' || Pale Garden moss hanging overhead like the forest has grown an impressive collection of spooky curtains. Chance 71.4% || Pale Garden || Task || Yes || 
 |-
-| {{Slot|Sculk Vein|link=none}} || '''Sculk Vein''' || A strange Deep Dark growth that spreads across surfaces like living darkness with absolutely no respect for personal space.
-Chance 71.4% || Deep Dark || Task || Yes || 
+| {{Slot|Sculk Vein|link=none}} || '''Sculk Vein''' || A strange Deep Dark growth that spreads across surfaces like living darkness with absolutely no respect for personal space. Chance 71.4% || Deep Dark || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Striped Perch''' || A striped swimmer dressed for an underwater gala that nobody else was invited to.
-⭐☆☆☆
-Chance 35.7% || Cool Freshwater || Task || Yes || 
+| {{Slot|Striped Perch|link=none}} || '''Striped Perch''' || A striped swimmer dressed for an underwater gala that nobody else was invited to. ⭐☆☆☆ Chance 35.7% || Cool Freshwater || Task || Yes || 
 |-
-| {{Slot|Tropical Fish|link=none}} || '''Tropical Fish''' || A brilliantly colorful reef fish available in more patterns than anyone reasonably needs.
-⭐☆☆☆
-Chance 35.7% || Hot Saltwater || Task || Yes || 
+| {{Slot|Tropical Fish|link=none}} || '''Tropical Fish''' || A brilliantly colorful reef fish available in more patterns than anyone reasonably needs. ⭐☆☆☆ Chance 35.7% || Hot Saltwater || Task || Yes || 
 |-
-| {{Slot|Tropical Fish|link=none}} || '''Tropical Fish''' || A brilliantly colorful reef fish available in more patterns than anyone reasonably needs.
-⭐☆☆☆
-Chance 35.7% || Warm Saltwater || Task || Yes || 
+| {{Slot|Tropical Fish|link=none}} || '''Tropical Fish''' || A brilliantly colorful reef fish available in more patterns than anyone reasonably needs. ⭐☆☆☆ Chance 35.7% || Warm Saltwater || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Bujurqui''' || A South American cichlid proving once again that small fish can have absolutely enormous personalities.
-⭐☆☆☆
-Chance 35.7% || Guppy || Task || Yes || 
+| {{Slot|Bujurqui|link=none}} || '''Bujurqui''' || A South American cichlid proving once again that small fish can have absolutely enormous personalities. ⭐☆☆☆ Chance 35.7% || Guppy || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Bujurqui''' || A South American cichlid proving once again that small fish can have absolutely enormous personalities.
-⭐☆☆☆
-Chance 35.7% || Guppy || Task || Yes || 
+| {{Slot|Bujurqui|link=none}} || '''Bujurqui''' || A South American cichlid proving once again that small fish can have absolutely enormous personalities. ⭐☆☆☆ Chance 35.7% || Guppy || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Crappie''' || A fish with an unfortunate name and the confidence to be delicious anyway.
-⭐☆☆☆
-Chance 35.7% || Striped Perch || Task || Yes || 
+| {{Slot|Crappie|link=none}} || '''Crappie''' || A fish with an unfortunate name and the confidence to be delicious anyway. ⭐☆☆☆ Chance 35.7% || Striped Perch || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Crappie''' || A fish with an unfortunate name and the confidence to be delicious anyway.
-⭐☆☆☆
-Chance 35.7% || Bluegill || Task || Yes || 
+| {{Slot|Crappie|link=none}} || '''Crappie''' || A fish with an unfortunate name and the confidence to be delicious anyway. ⭐☆☆☆ Chance 35.7% || Bluegill || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Creaking Fish''' || A pale fish from the Pale Garden that looks like it hasn't seen sunlight since the beginning of time.
-⭐⭐⭐☆
-Chance 25% || Pale Hanging Moss || Task || Yes || 
+| {{Slot|Creaking Fish|link=none}} || '''Creaking Fish''' || A pale fish from the Pale Garden that looks like it hasn't seen sunlight since the beginning of time. ⭐⭐⭐☆ Chance 25% || Pale Hanging Moss || Task || Yes || 
 |-
-| {{Slot|Poisonous Potato|link=none}} || '''Crystal Heart''' || A mysterious crystal treasure that looks far too important to have been sitting at the bottom of a lake.
-Chance 3.3% || Goat Horn || Task || Yes || 
+| {{Slot|Crystal Heart|link=none}} || '''Crystal Heart''' || A mysterious crystal treasure that looks far too important to have been sitting at the bottom of a lake. Chance 3.3% || Goat Horn || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Echo Eel''' || A mysterious eel from the Deep Dark that seems perfectly happy living somewhere every noise sounds ten times scarier.
-⭐⭐⭐⭐
-Chance 25% || Sculk Vein || Task || Yes || 
+| {{Slot|Echo Eel|link=none}} || '''Echo Eel''' || A mysterious eel from the Deep Dark that seems perfectly happy living somewhere every noise sounds ten times scarier. ⭐⭐⭐⭐ Chance 25% || Sculk Vein || Task || Yes || 
 |-
-| {{Slot|Fishing Rod|link=none}} || '''Fishing Rod''' || An enchanted fishing rod recovered from the depths. Even legendary fishermen apparently lose their gear.
-Chance 23% || Obol || Task || Yes || 
+| {{Slot|Fishing Rod|link=none}} || '''Fishing Rod''' || An enchanted fishing rod recovered from the depths. Even legendary fishermen apparently lose their gear. Chance 23% || Obol || Task || Yes || 
 |-
-| {{Slot|Pufferfish|link=none}} || '''Freshwater Puffer''' || A tiny fish that responds to danger by becoming a spiky balloon. Honestly fair.
-⭐☆☆☆
-Chance 35.7% || Mediterranean Killifish || Task || Yes || 
+| {{Slot|Freshwater Puffer|link=none}} || '''Freshwater Puffer''' || A tiny fish that responds to danger by becoming a spiky balloon. Honestly fair. ⭐☆☆☆ Chance 35.7% || Mediterranean Killifish || Task || Yes || 
 |-
-| {{Slot|Frog Spawn Egg|link=none}} || '''Frog''' || You were aiming for a fish and somehow caught a frog. Fishing has become less specific.
-Chance 4.5%
-Only In: Swamp, Mangrove Swamp || Bamboo || Task || Yes || 
+| {{Slot|Frog Spawn Egg|link=none}} || '''Frog''' || You were aiming for a fish and somehow caught a frog. Fishing has become less specific. Chance 4.5% Only In: Swamp, Mangrove Swamp || Bamboo || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Humpback Whitefish''' || A chilly fish with a hump on its back and absolutely no plans to move somewhere warmer.
-⭐☆☆☆
-Chance 35.7% || Alaska Blackfish || Task || Yes || 
+| {{Slot|Humpback Whitefish|link=none}} || '''Humpback Whitefish''' || A chilly fish with a hump on its back and absolutely no plans to move somewhere warmer. ⭐☆☆☆ Chance 35.7% || Alaska Blackfish || Task || Yes || 
 |-
-| {{Slot|Pufferfish|link=none}} || '''Pufferfish''' || A normally small fish that turns into a spiky balloon the moment things get awkward.
-⭐☆☆☆
-Chance 35.7% || Tropical Fish || Task || Yes || 
+| {{Slot|Pufferfish|link=none}} || '''Pufferfish''' || A normally small fish that turns into a spiky balloon the moment things get awkward. ⭐☆☆☆ Chance 35.7% || Tropical Fish || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Rainbow Wrasse''' || A reef fish so colorful it looks like someone spilled an entire box of crayons into the ocean.
-⭐☆☆☆
-Chance 35.7% || Tropical Fish || Task || Yes || 
+| {{Slot|Rainbow Wrasse|link=none}} || '''Rainbow Wrasse''' || A reef fish so colorful it looks like someone spilled an entire box of crayons into the ocean. ⭐☆☆☆ Chance 35.7% || Tropical Fish || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Salmon''' || A determined fish that swims upstream fights rapids and refuses to accept that "going back" is a bad idea.
-⭐☆☆☆
-Chance 35.7% || Cod || Task || Yes || 
+| {{Slot|Salmon|link=none}} || '''Salmon''' || A determined fish that swims upstream fights rapids and refuses to accept that "going back" is a bad idea. ⭐☆☆☆ Chance 35.7% || Cod || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Salmon''' || A determined fish that swims upstream fights rapids and refuses to accept that "going back" is a bad idea.
-⭐☆☆☆
-Chance 35.7% || Cod || Task || Yes || 
+| {{Slot|Salmon|link=none}} || '''Salmon''' || A determined fish that swims upstream fights rapids and refuses to accept that "going back" is a bad idea. ⭐☆☆☆ Chance 35.7% || Cod || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Shad''' || A schooling fish famous for seasonal migrations and the stubborn determination to make the trip every year.
-⭐☆☆☆
-Chance 35.7% || Anchovy || Task || Yes || 
+| {{Slot|Shad|link=none}} || '''Shad''' || A schooling fish famous for seasonal migrations and the stubborn determination to make the trip every year. ⭐☆☆☆ Chance 35.7% || Anchovy || Task || Yes || 
 |-
-| {{Slot|Stick|link=none}} || '''Stick''' || The ultimate fishing treasure
-Chance 4.5% || Bowl || Task || Yes || 
+| {{Slot|Stick|link=none}} || '''Stick''' || The ultimate fishing treasure Chance 4.5% || Bowl || Task || Yes || 
 |-
-| {{Slot|Sturdy Leather|link=none}} || '''Sturdy Leather''' || Not a fish not treasure but apparently the ocean's idea of a participation prize.
-Chance 9% || Lily Pad || Task || Yes || 
+| {{Slot|Sturdy Leather|link=none}} || '''Sturdy Leather''' || Not a fish not treasure but apparently the ocean's idea of a participation prize. Chance 9% || Lily Pad || Task || Yes || 
 |-
-| {{Slot|Sulfur Chunk|link=none}} || '''Sulfur Chunk''' || A chunk that either means you're exploding into bits or getting sent up from a geyser. Or one step closer to crafting green dye. Not sure.
-Chance 9.1% || Fish Bones || Task || Yes || 
+| {{Slot|Sulfur Chunk|link=none}} || '''Sulfur Chunk''' || A chunk that either means you're exploding into bits or getting sent up from a geyser. Or one step closer to crafting green dye. Not sure. Chance 9.1% || Fish Bones || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Black Seabass''' || A sturdy coastal predator that spends its days hunting around reefs and rocky hideouts.
-⭐⭐☆☆
-Chance 19% || Salmon || Task || Yes || 
+| {{Slot|Black Seabass|link=none}} || '''Black Seabass''' || A sturdy coastal predator that spends its days hunting around reefs and rocky hideouts. ⭐⭐☆☆ Chance 19% || Salmon || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Carp''' || A hardy freshwater fish that survives almost anything including fishing attempts that should have worked.
-⭐⭐☆☆
-Chance 19% || Crappie || Task || Yes || 
+| {{Slot|Carp|link=none}} || '''Carp''' || A hardy freshwater fish that survives almost anything including fishing attempts that should have worked. ⭐⭐☆☆ Chance 19% || Crappie || Task || Yes || 
 |-
-| {{Slot|Chest|link=none}} || '''Chest''' || Someone buried a fortune down here and thought putting TNT next to the diamonds was perfectly reasonable.
-Chance 1.6% || Crystal Heart || Task || Yes || 
+| {{Slot|Chest|link=none}} || '''Chest''' || Someone buried a fortune down here and thought putting TNT next to the diamonds was perfectly reasonable. Chance 1.6% || Crystal Heart || Task || Yes || 
 |-
-| {{Slot|Echo Shard|link=none}} || '''Echo Shard''' || A mysterious shard from an Ancient City carrying the memories of what it used to be...and probably several bad decisions.
-Chance 3.6% || Echo Eel || Task || Yes || 
+| {{Slot|Echo Shard|link=none}} || '''Echo Shard''' || A mysterious shard from an Ancient City carrying the memories of what it used to be...and probably several bad decisions. Chance 3.6% || Echo Eel || Task || Yes || 
 |-
-| {{Slot|Bone|link=none}} || '''Fish Bones''' || The fish escaped. Its skeleton apparently wasn't fast enough.
-Chance 9% || Sturdy Leather || Task || Yes || 
+| {{Slot|Fish Bones|link=none}} || '''Fish Bones''' || The fish escaped. Its skeleton apparently wasn't fast enough. Chance 9% || Sturdy Leather || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Flying Fish''' || It doesn't technically fly but it launches out of the water and glides far enough to make the distinction feel petty.
-⭐⭐☆☆
-Chance 19% || Shad || Task || Yes || 
+| {{Slot|Flying Fish|link=none}} || '''Flying Fish''' || It doesn't technically fly but it launches out of the water and glides far enough to make the distinction feel petty. ⭐⭐☆☆ Chance 19% || Shad || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Gurnard''' || A strange bottom dweller with leg-like fins that make it look dangerously close to discovering walking.
-⭐⭐☆☆
-Chance 19% || Rainbow Wrasse || Task || Yes || 
+| {{Slot|Gurnard|link=none}} || '''Gurnard''' || A strange bottom dweller with leg-like fins that make it look dangerously close to discovering walking. ⭐⭐☆☆ Chance 19% || Rainbow Wrasse || Task || Yes || 
 |-
-| {{Slot|Hell-Bound Book|link=none}} || '''Hell-Bound Book''' || A mysterious enchanted book pulled from the water. Hopefully the magic works better when dry.
-Chance 16.4% || Fishing Rod || Task || Yes || 
+| {{Slot|Hell-Bound Book|link=none}} || '''Hell-Bound Book''' || A mysterious enchanted book pulled from the water. Hopefully the magic works better when dry. Chance 16.4% || Fishing Rod || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Herring''' || A small silver fish that travels in enormous groups because apparently personal space is overrated.
-⭐⭐☆☆
-Chance 19% || Salmon || Task || Yes || 
+| {{Slot|Herring|link=none}} || '''Herring''' || A small silver fish that travels in enormous groups because apparently personal space is overrated. ⭐⭐☆☆ Chance 19% || Salmon || Task || Yes || 
 |-
-| {{Slot|Ink Sac|link=none}} || '''Ink Sac''' || A suspiciously inky package from something that clearly wanted to leave no witnesses.
-Chance 0.9% || Stick || Task || Yes || 
+| {{Slot|Ink Sac|link=none}} || '''Ink Sac''' || A suspiciously inky package from something that clearly wanted to leave no witnesses. Chance 0.9% || Stick || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Lamprey''' || An ancient jawless fish with a mouth that looks like nature invented a suction cup and gave it teeth vibes.
-⭐⭐☆☆
-Chance 19% || Freshwater Puffer || Task || Yes || 
+| {{Slot|Lamprey|link=none}} || '''Lamprey''' || An ancient jawless fish with a mouth that looks like nature invented a suction cup and gave it teeth vibes. ⭐⭐☆☆ Chance 19% || Freshwater Puffer || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Lamprey''' || An ancient jawless fish with a mouth that looks like nature invented a suction cup and gave it teeth vibes.
-⭐⭐☆☆
-Chance 19% || Bujurqui || Task || Yes || 
+| {{Slot|Lamprey|link=none}} || '''Lamprey''' || An ancient jawless fish with a mouth that looks like nature invented a suction cup and gave it teeth vibes. ⭐⭐☆☆ Chance 19% || Bujurqui || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Mahi mahi''' || A fast colorful ocean predator that looks like it got dressed by a very enthusiastic artist.
-⭐⭐☆☆
-Chance 19% || Pufferfish || Task || Yes || 
+| {{Slot|Mahi mahi|link=none}} || '''Mahi mahi''' || A fast colorful ocean predator that looks like it got dressed by a very enthusiastic artist. ⭐⭐☆☆ Chance 19% || Pufferfish || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Piranha''' || A famous freshwater predator with terrifying teeth and a reputation that may be doing most of the work.
-⭐⭐☆☆
-Chance 19% || Bujurqui || Task || Yes || 
+| {{Slot|Piranha|link=none}} || '''Piranha''' || A famous freshwater predator with terrifying teeth and a reputation that may be doing most of the work. ⭐⭐☆☆ Chance 19% || Bujurqui || Task || Yes || 
 |-
-| {{Slot|Resin Clump|link=none}} || '''Resin Clump''' || A sticky orange clump of resin from the Pale Garden. Congratulations you caught tree goo.
-Chance 3.6% || Creaking Fish || Task || Yes || 
+| {{Slot|Resin Clump|link=none}} || '''Resin Clump''' || A sticky orange clump of resin from the Pale Garden. Congratulations you caught tree goo. Chance 3.6% || Creaking Fish || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Spoonhead Sculpin''' || A tiny bottom dweller with a head shaped like someone dropped a spoon on its face.
-⭐⭐☆☆
-Chance 19% || Humpback Whitefish || Task || Yes || 
+| {{Slot|Spoonhead Sculpin|link=none}} || '''Spoonhead Sculpin''' || A tiny bottom dweller with a head shaped like someone dropped a spoon on its face. ⭐⭐☆☆ Chance 19% || Humpback Whitefish || Task || Yes || 
 |-
-| {{Slot|Tadpole Spawn Egg|link=none}} || '''Tadpole''' || Tiny wiggly and very much not ready to become dinner. Give it a few upgrades first.
-Chance 9%
-Only In: Swamp, Mangrove Swamp || Frog || Task || Yes || 
+| {{Slot|Tadpole Spawn Egg|link=none}} || '''Tadpole''' || Tiny wiggly and very much not ready to become dinner. Give it a few upgrades first. Chance 9% Only In: Swamp, Mangrove Swamp || Frog || Task || Yes || 
 |-
-| {{Slot|Cod|link=none}} || '''Walleye''' || Those weird reflective eyes aren't a fashion statement. They're basically built-in night vision.
-⭐⭐☆☆
-Chance 19% || Crappie || Task || Yes || 
+| {{Slot|Walleye|link=none}} || '''Walleye''' || Those weird reflective eyes aren't a fashion statement. They're basically built-in night vision. ⭐⭐☆☆ Chance 19% || Crappie || Task || Yes || 
 |-
-| {{Slot|Angler Pottery Sherd|link=none}} || '''Angler Pottery Sherd''' || Makes you wonder whether it was already broken off before or if your fishing hook just ripped a pot into shreds...
-Chance 8.2% || Hell-Bound Book || Task || Yes || 
+| {{Slot|Angler Pottery Sherd|link=none}} || '''Angler Pottery Sherd''' || Makes you wonder whether it was already broken off before or if your fishing hook just ripped a pot into shreds... Chance 8.2% || Hell-Bound Book || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Armoured Catfish''' || A whiskered bottom dweller wearing natural armor like it expects a boss fight at any moment.
-⭐⭐⭐☆
-Chance 7.1% || Piranha || Task || Yes || 
+| {{Slot|Armoured Catfish|link=none}} || '''Armoured Catfish''' || A whiskered bottom dweller wearing natural armor like it expects a boss fight at any moment. ⭐⭐⭐☆ Chance 7.1% || Piranha || Task || Yes || 
 |-
-| {{Slot|Chicken Spawn Egg|link=none}} || '''Axolotl''' || You were fishing for fish. The axolotl has decided that technicalities are beneath it.
-Chance 9%
-Only In: Lush Caves, Dripstone Caves || Tadpole || Task || Yes || 
+| {{Slot|item.kleispack.fish.axolotl|link=none}} || '''Axolotl''' || You were fishing for fish. The axolotl has decided that technicalities are beneath it. Chance 9% Only In: Lush Caves, Dripstone Caves || Tadpole || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Catfish''' || A whiskered fish with no cat no interest in climbing trees and an excellent relationship with the bottom.
-⭐⭐⭐☆
-Chance 7.1% || Carp || Task || Yes || 
+| {{Slot|Catfish|link=none}} || '''Catfish''' || A whiskered fish with no cat no interest in climbing trees and an excellent relationship with the bottom. ⭐⭐⭐☆ Chance 7.1% || Carp || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Flounder''' || A fish that grows up to swim sideways and somehow ends up with both eyes on the same side. Problem solved apparently.
-⭐⭐⭐☆
-Chance 7.1% || Gurnard || Task || Yes || 
+| {{Slot|Flounder|link=none}} || '''Flounder''' || A fish that grows up to swim sideways and somehow ends up with both eyes on the same side. Problem solved apparently. ⭐⭐⭐☆ Chance 7.1% || Gurnard || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Flounder''' || A fish that grows up to swim sideways and somehow ends up with both eyes on the same side. Problem solved apparently.
-⭐⭐⭐☆
-Chance 7.1% || Lamprey || Task || Yes || 
+| {{Slot|Flounder|link=none}} || '''Flounder''' || A fish that grows up to swim sideways and somehow ends up with both eyes on the same side. Problem solved apparently. ⭐⭐⭐☆ Chance 7.1% || Lamprey || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Gar''' || An armored prehistoric fish that looks like it missed the memo about which millennium it lives in.
-⭐⭐⭐☆
-Chance 7.1% || Walleye || Task || Yes || 
+| {{Slot|Gar|link=none}} || '''Gar''' || An armored prehistoric fish that looks like it missed the memo about which millennium it lives in. ⭐⭐⭐☆ Chance 7.1% || Walleye || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Monkfish''' || An ugly ambush predator that waves a little lure around and lets dinner come to it. Peak laziness honestly.
-⭐⭐⭐☆
-Chance 7.1% || Black Seabass || Task || Yes || 
+| {{Slot|Monkfish|link=none}} || '''Monkfish''' || An ugly ambush predator that waves a little lure around and lets dinner come to it. Peak laziness honestly. ⭐⭐⭐☆ Chance 7.1% || Black Seabass || Task || Yes || 
 |-
-| {{Slot|Nautilus Shell|link=none}} || '''Nautilus Shell''' || A beautiful shell from the depths because the ocean apparently leaves souvenirs.
-Chance 9% || Tadpole || Task || Yes || 
+| {{Slot|Nautilus Shell|link=none}} || '''Nautilus Shell''' || A beautiful shell from the depths because the ocean apparently leaves souvenirs. Chance 9% || Tadpole || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Northern Pike''' || A patient ambush predator that can turn "just a peaceful pond" into a horror movie.
-⭐⭐⭐☆
-Chance 7.1% || Spoonhead Sculpin || Task || Yes || 
+| {{Slot|Northern Pike|link=none}} || '''Northern Pike''' || A patient ambush predator that can turn "just a peaceful pond" into a horror movie. ⭐⭐⭐☆ Chance 7.1% || Spoonhead Sculpin || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Painted Moray''' || A boldly patterned reef eel with a permanent expression of "Go ahead. Make my day."
-⭐⭐⭐☆
-Chance 7.1% || Mahi mahi || Task || Yes || 
+| {{Slot|Painted Moray|link=none}} || '''Painted Moray''' || A boldly patterned reef eel with a permanent expression of "Go ahead. Make my day." ⭐⭐⭐☆ Chance 7.1% || Mahi mahi || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Sturgeon''' || An ancient armored fish that grows enormous and looks like it was downloaded from the prehistoric DLC.
-⭐⭐⭐☆
-Chance 7.1% || Flying Fish || Task || Yes || 
+| {{Slot|Sturgeon|link=none}} || '''Sturgeon''' || An ancient armored fish that grows enormous and looks like it was downloaded from the prehistoric DLC. ⭐⭐⭐☆ Chance 7.1% || Flying Fish || Task || Yes || 
 |-
-| {{Slot|Tripwire Hook|link=none}} || '''Tripwire Hook''' || Someone lost a trap and your fishing rod apparently decided to become a detective.
-Chance 9% || Ink Sac || Task || Yes || 
+| {{Slot|Tripwire Hook|link=none}} || '''Tripwire Hook''' || Someone lost a trap and your fishing rod apparently decided to become a detective. Chance 9% || Ink Sac || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Tunisian Barb''' || A hardy little fish from North Africa that has mastered the ancient art of simply not dying.
-⭐⭐⭐☆
-Chance 7.1% || Lamprey || Task || Yes || 
+| {{Slot|Tunisian Barb|link=none}} || '''Tunisian Barb''' || A hardy little fish from North Africa that has mastered the ancient art of simply not dying. ⭐⭐⭐☆ Chance 7.1% || Lamprey || Task || Yes || 
 |-
-| {{Slot|Potion|link=none}} || '''Water Bottle''' || You went fishing and caught water. Technically a flawless catch. Nobody said it had to be interesting.
-Chance 9% || Fish Bones || Task || Yes || 
+| {{Slot|Potion|link=none}} || '''Water Bottle''' || You went fishing and caught water. Technically a flawless catch. Nobody said it had to be interesting. Chance 9% || Fish Bones || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Wolffish''' || A cold-water predator with jaws and teeth that make it look like it has unresolved business with the ocean.
-⭐⭐⭐☆
-Chance 7.1% || Herring || Task || Yes || 
+| {{Slot|Wolffish|link=none}} || '''Wolffish''' || A cold-water predator with jaws and teeth that make it look like it has unresolved business with the ocean. ⭐⭐⭐☆ Chance 7.1% || Herring || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Arapaima''' || One of the world's biggest freshwater fish because apparently regular-sized fish weren't impressive enough.
-⭐⭐⭐⭐
-Chance 2.4% || Armoured Catfish || Task || Yes || 
+| {{Slot|Arapaima|link=none}} || '''Arapaima''' || One of the world's biggest freshwater fish because apparently regular-sized fish weren't impressive enough. ⭐⭐⭐⭐ Chance 2.4% || Armoured Catfish || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Arapaima''' || One of the world's biggest freshwater fish because apparently regular-sized fish weren't impressive enough.
-⭐⭐⭐⭐
-Chance 2.4% || Flounder || Task || Yes || 
+| {{Slot|Arapaima|link=none}} || '''Arapaima''' || One of the world's biggest freshwater fish because apparently regular-sized fish weren't impressive enough. ⭐⭐⭐⭐ Chance 2.4% || Flounder || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Bass''' || A powerful freshwater predator and the reason many anglers can turn "just one cast" into an entire afternoon.
-⭐⭐⭐⭐
-Chance 2.4% || Catfish || Task || Yes || 
+| {{Slot|Bass|link=none}} || '''Bass''' || A powerful freshwater predator and the reason many anglers can turn "just one cast" into an entire afternoon. ⭐⭐⭐⭐ Chance 2.4% || Catfish || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Blue Marlin''' || A powerful ocean predator carrying a giant sword on its face because apparently subtlety was never an option.
-⭐⭐⭐⭐
-Chance 2.4% || Sturgeon || Task || Yes || 
+| {{Slot|Blue Marlin|link=none}} || '''Blue Marlin''' || A powerful ocean predator carrying a giant sword on its face because apparently subtlety was never an option. ⭐⭐⭐⭐ Chance 2.4% || Sturgeon || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Blue Marlin''' || A powerful ocean predator carrying a giant sword on its face because apparently subtlety was never an option.
-⭐⭐⭐⭐
-Chance 2.4% || Flounder || Task || Yes || 
+| {{Slot|Blue Marlin|link=none}} || '''Blue Marlin''' || A powerful ocean predator carrying a giant sword on its face because apparently subtlety was never an option. ⭐⭐⭐⭐ Chance 2.4% || Flounder || Task || Yes || 
 |-
-| {{Slot|Estus Ash|link=none}} || '''Estus Ash''' || Though it appears to be soluble, estus ash precipitates out of solution over time. With no emulsifiers in the water, a sediment of ash forms on the bed. So why then, is the sediment so thin?
-Chance 9% || Tripwire Hook || Task || Yes || 
+| {{Slot|Estus Ash|link=none}} || '''Estus Ash''' || Though it appears to be soluble, estus ash precipitates out of solution over time. With no emulsifiers in the water, a sediment of ash forms on the bed. So why then, is the sediment so thin? Chance 9% || Tripwire Hook || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''European Eel''' || A mysterious fish that spends its life traveling between rivers and oceans because apparently one neighborhood wasn't enough.
-⭐⭐⭐⭐
-Chance 2.4% || Tunisian Barb || Task || Yes || 
+| {{Slot|European Eel|link=none}} || '''European Eel''' || A mysterious fish that spends its life traveling between rivers and oceans because apparently one neighborhood wasn't enough. ⭐⭐⭐⭐ Chance 2.4% || Tunisian Barb || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Muskellunge''' || A freshwater predator so impressive that everyone just calls it a muskie because apparently its full name is too powerful.
-⭐⭐⭐⭐
-Chance 2.4% || Gar || Task || Yes || 
+| {{Slot|Muskellunge|link=none}} || '''Muskellunge''' || A freshwater predator so impressive that everyone just calls it a muskie because apparently its full name is too powerful. ⭐⭐⭐⭐ Chance 2.4% || Gar || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Oarfish''' || A giant ribbon-shaped deep-sea fish that looks less like dinner and more like something sailors invented after seeing a nightmare.
-⭐⭐⭐⭐
-Chance 2.4% || Painted Moray || Task || Yes || 
+| {{Slot|Oarfish|link=none}} || '''Oarfish''' || A giant ribbon-shaped deep-sea fish that looks less like dinner and more like something sailors invented after seeing a nightmare. ⭐⭐⭐⭐ Chance 2.4% || Painted Moray || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Opah''' || A brilliantly colored fish that can keep much of its body warmer than the surrounding water. Basically wearing its own heated blanket.
-⭐⭐⭐⭐
-Chance 2.4% || Monkfish || Task || Yes || 
+| {{Slot|Opah|link=none}} || '''Opah''' || A brilliantly colored fish that can keep much of its body warmer than the surrounding water. Basically wearing its own heated blanket. ⭐⭐⭐⭐ Chance 2.4% || Monkfish || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Siberian Sturgeon''' || An ancient Siberian giant that has been around so long it probably remembers when the water was new.
-⭐⭐⭐⭐
-Chance 2.4% || Northern Pike || Task || Yes || 
+| {{Slot|Siberian Sturgeon|link=none}} || '''Siberian Sturgeon''' || An ancient Siberian giant that has been around so long it probably remembers when the water was new. ⭐⭐⭐⭐ Chance 2.4% || Northern Pike || Task || Yes || 
 |-
-| {{Slot|Salmon|link=none}} || '''Skate''' || A flat relative of rays that glides along the seafloor like an aquatic carpet with somewhere to be.
-⭐⭐⭐⭐
-Chance 2.4% || Wolffish || Task || Yes || 
+| {{Slot|Skate|link=none}} || '''Skate''' || A flat relative of rays that glides along the seafloor like an aquatic carpet with somewhere to be. ⭐⭐⭐⭐ Chance 2.4% || Wolffish || Task || Yes || 
 |-
-| {{Slot|String|link=none}} || '''String''' || Either a very unlucky spider or a fisherman having an unusually successful day.
-Chance 4.5% || Water Bottle || Task || Yes || 
+| {{Slot|String|link=none}} || '''String''' || Either a very unlucky spider or a fisherman having an unusually successful day. Chance 4.5% || Water Bottle || Task || Yes || 
 |}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>

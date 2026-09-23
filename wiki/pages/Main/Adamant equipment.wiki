@@ -1,0 +1,76 @@
+{{Main|Equipment}}
+'''Adamant equipment''' replaces netherite. It is [[Diamond equipment|diamond equipment]] upgraded with [[Adamant Alloy|adamant alloy]]; its armor carries [[Doom]], its weapons inflict Weakness, and its tools smelt what they mine.
+
+== Obtaining ==
+Adamant alloy is crafted from four [[Adamant Scrap|adamant scrap]], four gold ingots and a [[Divine Fragment|divine fragment]]. Diamond equipment is upgraded at a [[Smithing Table|smithing table]] ([[Smithing Upgrade Template|template]] for the dolabra, mattock and claymore). It is repaired with blocks of diamond or adamant scrap.
+
+In the video the developer says adamant "requires diamond blocks, gold blocks, or adamant scrap to repair. That means even in late game, you'll need to go mining for materials."{{Cite video|quote=except for adamant, which requires diamond blocks, gold blocks, or adamant scrap to repair. That means even in late game, you'll need to go mining for materials.}} In the code only the canonical adamant leggings accept gold blocks.
+
+== Characteristics ==
+* Tools (and the axe) have the smelting intrinsic, Efficiency and Unbreaking II.
+* Sword, axe, spear and claymore inflict Weakness II for 8–12 seconds, which feeds [[Doom]].
+* Armor has Doom 3, Protection I and Unbreaking II; the full set adds the Doom and health [[Set bonus|set bonus]].
+
+The 1.12.2 notes say the Doom rework "fits Adamant's apocryphal title much more, and ties in with its hell-based theming".
+
+== Stats ==
+=== Tools ===
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Adamant Pickaxe}} || 5000 || 15 || 55 || 6 || 1.2 || [[Efficiency]] II<br />{{G|Smelting}} Smelting<br />[[Unbreaking]] II
+|-
+| {{ItemLink|Adamant Axe}} || 5000 || 15 || — || 10 || 1 || [[Efficiency]] II<br />{{G|Smelting}} Smelting<br />{{G|Weakness}} Weakness<br />[[Unbreaking]] II
+|-
+| {{ItemLink|Adamant Shovel}} || 5000 || 15 || — || 6.5 || 1 || {{G|Smelting}} Smelting<br />[[Efficiency]] II<br />[[Unbreaking]] II
+|-
+| {{ItemLink|Adamant Hoe}} || 5000 || 15 || — || 1 || 4 || {{G|Smelting}} Smelting<br />[[Unbreaking]] II<br />[[Efficiency]] II
+|-
+| {{ItemLink|Adamant Mattock}} || 5000 || 13 || — || 1 || 4 || [[Efficiency]] I<br />{{G|Smelting}} Smelting<br />[[Unbreaking]] II
+|-
+| {{ItemLink|Adamant Dolabra}} || 5000 || 13 || 55 || 7 || 1 || [[Unbreaking]] II<br />{{G|Smelting}} Smelting<br />[[Efficiency]] I
+|}
+
+=== Weapons ===
+{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Adamant Sword}} || 3000 || 8 || 1.6 || — || [[Sharpness]] I<br />{{G|Weakness}} Weakness<br />[[Unbreaking]] II
+|-
+| {{ItemLink|Adamant Spear}} || 5000 || 5 || 0.87 || — || [[Sharpness]] I<br />[[Unbreaking]] II<br />{{G|Weakness}} Weakness
+|-
+| {{ItemLink|Adamant Claymore}} || 3000 || 9 || 1 || — || [[Unbreaking]] II<br />{{G|Weakness}} Weakness<br />[[Sharpness]] I
+|}
+
+=== Armor ===
+{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Adamant Helmet}} || 1000 || 3 || 3 || 0.1 || — || [[Doom|{{G|Doom}} 3]]<br />[[Unbreaking]] II<br />[[Protection]] I
+|-
+| {{ItemLink|Adamant Chestplate}} || 1000 || 8 || 3 || 0.1 || — || [[Doom|{{G|Doom}} 3]]<br />[[Unbreaking]] II<br />[[Protection]] I
+|-
+| {{ItemLink|Adamant Leggings}} || 1000 || 6 || 3 || 0.1 || — || [[Doom|{{G|Doom}} 3]]<br />[[Unbreaking]] II<br />[[Protection]] I
+|-
+| {{ItemLink|Adamant Boots}} || 1000 || 3 || 3 || 0.1 || — || [[Doom|{{G|Doom}} 3]]<br />[[Unbreaking]] II<br />[[Protection]] I
+|- class="sortbottom"
+! Full set !! !! 20 !! 12 !! 0.4 !! colspan="2" |
+|}
+
+Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added item textures for adamant armor. Added the adamant spear texture.}}
+{{History line|1.03|The vanilla netherite recipes were blocked.}}
+{{History line|1.10|The set bonus was nerfed slightly.}}
+{{History line|1.12|Fixed severe multiplayer lag caused by adamant armor.}}
+{{History line|1.12.1-alpha|Reworked: each piece gives Health Boost hearts instead of soul hearts, and the set bonus gives 2 soul hearts. Durability lowered from 1500 to 1000. [[Divinity]] was removed from adamant tools and replaced with Efficiency. [[Divinity]] was removed from adamant weapons and replaced with Sharpness. Attack speed raised from 0.5 to 1.0. The real attack speed and damage now match the tooltip. The real attack speed and damage now match the tooltip.}}
+{{History line|1.12.2|The armor intrinsic was reworked into [[Doom]]. Adamant tools now smelt the blocks they mine. Adamant weapons now inflict Weakness. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Equipment]]

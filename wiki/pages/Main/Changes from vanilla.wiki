@@ -1,0 +1,77 @@
+{{See also|Renamed items|Removed features}}
+This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''Minecraft: Java Edition'' 26.2, with links to the detailed articles. Renamed items are listed on [[Renamed items]] and removed features on [[Removed features]].
+
+== Health, death and survival ==
+* '''[[Hunger]]''' is effectively removed: the food bar is kept in a fixed range, so sprinting is never limited.
+* '''[[Natural regeneration]]''' is off. Health is restored by eating [[food]], by [[Crystal Heart|crystal hearts]], and by some equipment effects.
+* '''[[Death]]''' keeps the inventory but removes 1 heart of maximum health (2 on Hard), down to a per-player minimum that falls as the player progresses. See [[Advancements#Rewards]].
+* '''[[Health]]''' can be raised to 30 hearts with crystal hearts.
+* '''[[Difficulty]]''' changes mob speed, health and damage. Easy never lowers health below 10 hearts, and Normal can switch to Hard as a player progresses.
+* '''[[Freezing water]]''' damages and slows players in cold water unless protected by [[Frost Protection]].
+* '''[[Wither effect]]''' is much more dangerous (except on Easy) and must be [[Cleanse|cleansed]] with bread or milk.
+* '''[[Sleeping]]''' in multiplayer speeds up time according to the share of players asleep, and sleeping at night wakes players in the morning.
+* '''[[Day and night]]''' last three times as long (a 60-minute day). The [[Moon]] also behaves differently.
+* '''[[Darkness]]''': the overworld has "true darkness" and [[Hell]] is dim. True darkness can be turned off by swapping a file.
+* '''[[Weather]]''' can be set with [[Clay Fetish|clay fetishes]], and sleeping clears rain.
+
+== Mobs and spawning ==
+* Only [[undead]] mobs spawn in open areas of the overworld; [[creeper]]s and [[spider]]s spawn underground. See [[Spawning]].
+* After the [[Ender Dragon]] is first killed, no hostile mobs spawn on the [[Surface|surface]].
+* [[Zombie]]s are fast and fragile, and [[husk]]s are slow, strong tanks that spawn in every biome. [[Skeleton]]s have about half health, [[Cave Spider|cave spiders]] 2 hearts, and creepers 8 hearts.
+* [[Enderman|Endermen]] always drop a [[Stable Void|stable void]] and can only pick up melons, pumpkins and TNT.
+* Undead drop [[Raw Estus|raw Estus]] and [[Tattered Leather|tattered leather]] instead of rotten flesh; mobs no longer drop held equipment; mobs from spawners drop nothing.
+* [[Spawner]]s drop [[Divine Fragment|divine fragments]] when broken; so do some strong mobs.
+* The [[Wither]] can only be summoned on the overworld surface. See also [[Mobs]].
+
+== Food and cooking ==
+* About 50 new foods; twelve ingredients have hidden [[intrinsic]] effects that appear when cooked. See [[Food]].
+* New stations: [[Kindling|kindling]] (campfire), [[Mud Kiln|mud kiln]] (smoker) and [[oven]] (furnace), each with its own recipes. See [[Cooking]].
+* [[Secret recipes]] are found in chests and trades.
+* Meat has no special effects. Vanilla bread, cake, cookie, stew and pie recipes are replaced.
+
+== Equipment ==
+* No stone tools. Tiers are wood, [[Copper equipment|copper]], [[Iron equipment|iron]], [[Golden equipment|gold]] and [[Diamond equipment|diamond]], each with its own mining limits.
+* Five [[alloy]]s, applied in the [[Smithing Table|smithing table]] without needing a template: [[Steel equipment|steel]], [[Hepatizon equipment|hepatizon]], [[Shakudo equipment|shakudo]], [[Electrum equipment|electrum]] and [[Adamant equipment|adamant]] (netherite). See [[Smithing]].
+* Equipment tiers have [[intrinsic]]s and [[set bonus]]es such as [[warding]], [[Doom|doom]] and [[Cleanse|cleansing]].
+* New tools and weapons: [[mattock]], [[dolabra]], [[claymore]], [[Compound Bow|compound bow]], [[cleaver]], [[crook]], [[Snow Shovel|snow shovel]], several [[shears]] and [[compass]]es. See [[Tools]] and [[Weapons]].
+* New armor: [[Sturdy leather armor|sturdy leather]], [[Turtle Shellmet|turtle shellmet]], [[Golden Crown|golden crown]], [[Hepatizon Laurel|hepatizon laurel]], alloy [[Elytra|elytra]]. See [[Armor]].
+* [[Jewelry]] from gems: earrings and circlets.
+* [[Repairing]] has no experience cap, and alloys are repaired with specific materials.
+
+== Magic ==
+* No enchanting table. Enchantments are crafted as [[blessing]]s from [[Hell-Bound Book|hell-bound books]]. See [[Enchanting]].
+* [[Estus]] refined from undead drops replaces blaze powder and rods.
+* New enchantments: [[Anemos]], [[Bloodrage]], [[Frost Protection]], [[Reach]], [[Riposte]], [[Slaughter]], [[Trailblaze]] and [[Zephyr]]. Many vanilla enchantments are changed. See [[Enchantment]].
+* Fortune III only comes from electrum.
+* [[Warding Stone|Warding stones]] burn undead and heal friendly mobs nearby.
+* Most potions are gone; the [[Chemistry Stand|chemistry stand]] replaces the brewing stand. See [[Brewing]].
+
+== Villagers and trading ==
+* [[Obol]]s replace emeralds and are rare. Most villagers only sell; the [[fisherman]] buys fish and the weaponsmith buys some non-renewable resources.
+* Professions are renamed and have new trades usable 999 times. See [[Trading]] and [[Villager]].
+* [[Abandoned village|Villages are abandoned]]; villagers come as [[Asylum Seeker|asylum seekers]] from the [[Wandering Trader|wandering trader]], who can be summoned with [[Beacon Kindling|beacon kindling]].
+* [[Amnestic]]s reset a villager's trades. Villagers have a [[Favorite food|favorite food]].
+* [[Bulk blocks]] from the [[Mason|mason]] unpack into stacks of blocks.
+
+== World ==
+* New ores and ore distribution: [[Native Silver|native silver]], [[Coal Deposit|coal deposits]], [[Quartz Deposit|quartz]] and [[Sulfur Deposit|sulfur deposits]] in the overworld. See [[World generation]].
+* New structures: the [[Abbey]] and [[Papal Outpost|papal outpost]]; changed loot in vanilla structures. See [[Structures]] and [[Chest loot]].
+* The Nether is renamed [[Hell]]; water cannot be placed there, and gravel no longer generates.
+* Deserts have no flowers, beaches have blue flowers, and biome colors are changed.
+* New music discs and background tracks. See [[Music]].
+
+== Fishing ==
+* [[Fishing]] catches depend on a climate group of biomes, with about 50 [[fish]] in four rarities, catalogued in the [[Angler's Almanac]]. Catches play distinct [[Fishing sounds|sounds]].
+
+== Blocks and crafting ==
+* Recipes for cheap building: gravel and sand from blasting, many reverse recipes, cloning flowers with bone meal, more stonecutter recipes, chests from logs.
+* New or changed blocks such as [[Limestone|limestone]], [[Malachite|malachite]], [[Hellbricks|hellbricks]], [[Phosphor lamps|phosphor lamps]], [[Vertical slabs|vertical slabs]] and [[Large bricks|large bricks]]. See [[Blocks]].
+* [[Sack]]s (shulker boxes) are craftable from sturdy leather and a chest.
+* [[Electric Wire|Redstone]] is made from copper.
+
+== Other ==
+* The vanilla advancement tree is replaced. See [[Advancements]].
+* Many textures are redrawn, with a custom title screen and splash texts.
+
+{{Navbox meta}}
+[[Category:Lists]]

@@ -1,0 +1,60 @@
+{{Vanilla|Weaponsmith}}
+{{Infobox
+|title=Weaponsmith
+|type=[[Villager]] profession
+|vanilla={{MCW|Weaponsmith}}
+|rarity_label=Job site block
+|rarity=[[File:Grindstone.png|16px|link=]] Grindstone
+}}
+The '''Weaponsmith''' is a [[villager]] profession that melts [[alloy]] equipment back into its alloy and buys non-renewable materials for [[Obol]]s. Its job site block is the Grindstone. It exists mainly to let players whose equipment predates a balance change rebuild it with the current stats.<ref>{{Cite changelog|1.10|quote=IF YOU WANT THE NEW WEAPON/ARMOUR TWEAKS, use a WEAPONSMITH (Grindstone Villager). You can trade with them to melt down your alloyed equipment into its component parts, and rebuild them.}}</ref>
+
+== Trades ==
+All trades can be used 999 times before restocking, give 10 villager XP each, and every level offers all of its trades.<ref>{{Source|MF_datapack/data/minecraft/trade_set/weaponsmith/level_2.json}}</ref> The weaponsmith has no trades above Apprentice.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/3/filler.json}}</ref>
+
+=== Novice ===
+{| class="wikitable"
+! Villager wants !! Villager gives
+|-
+| 4 × {{ItemLink|Diamond}} || {{ItemLink|Obol}}
+|-
+| {{ItemLink|Hepatizon Alloy}} || 2 × {{ItemLink|Obol}}
+|-
+| 24 × [[File:Block of Lapis Lazuli.png|16px|link=]] Block of Lapis Lazuli || {{ItemLink|Obol}}
+|-
+| {{ItemLink|Electrum Alloy}} || 2 × {{ItemLink|Silver Bullion}}
+|}
+The developer describes these as trades for non-renewable resources.<ref>{{Cite changelog|1.12.1-alpha|quote=The Weaponsmith (Grindstone) Villager now buys non-renewable resources (LMK if there are more, not copper or iron)}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/1/obol_from_diamond.json}}</ref>
+
+=== Apprentice ===
+At Apprentice level the weaponsmith offers 49 trades, one for each piece of alloy armor and each alloy tool or weapon. Each takes one piece of equipment and gives back one ingot of its alloy:<ref>{{Source|MF_datapack/data/matcha/tags/villager_trade/weaponsmith/custom_level_2.json}}</ref>
+{| class="wikitable"
+! Material !! Equipment accepted !! Villager gives
+|-
+| [[Electrum equipment|Electrum]] || Helmet, chestplate, leggings, boots, sword, axe, pickaxe, shovel, hoe, [[mattock]], [[dolabra]], [[spear]] || 1 {{ItemLink|Electrum Alloy}}
+|-
+| [[Adamant equipment|Adamant]] || Helmet, chestplate, leggings, boots, sword, [[claymore]], axe, pickaxe, shovel, hoe, mattock, dolabra, spear || 1 {{ItemLink|Adamant Alloy}}
+|-
+| [[Hepatizon equipment|Hepatizon]] || Helmet, chestplate, leggings, boots, sword, axe, pickaxe, shovel, hoe, mattock, dolabra, spear || 1 {{ItemLink|Hepatizon Alloy}}
+|-
+| [[Shakudo equipment|Shakudo]] || Helmet, chestplate, leggings, boots, sword, axe, pickaxe, shovel, hoe, mattock, dolabra, spear || 1 {{ItemLink|Shakudo Alloy}}
+|}
+The trades identify each item by its model, so any durability is accepted.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/electrum_dolabra.json}}</ref> Enchantments on the traded item are lost; the release notes suggest re-applying them with commands.<ref>{{Cite changelog|1.10|quote=It will NOT give you back any enchantments, so please, just cheat those in, if you can.}}</ref>
+
+Like every villager, a weaponsmith that has been traded with also buys its [[favorite food]] once.
+
+== History ==
+{{History|
+{{History line|1.10|Added the equipment melting trades, to let players update gear made in older versions.}}
+{{History line|1.12.1-alpha|Buys diamonds, blocks of lapis lazuli and Hepatizon Alloy for obols, and trades Electrum Alloy for Silver Bullion.}}
+}}
+
+== Trivia ==
+* The weaponsmith is the only profession not required for the ''A True Community'' advancement.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/trade_everything.json}}</ref>
+* The trade that gives Silver Bullion for Electrum Alloy is internally named <code>silver_from_electrum</code>.
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Villager professions]]
+[[Category:Trading]]

@@ -1,0 +1,16 @@
+Content on the '''Matcha Flavoured Wiki''' is managed in a git repository rather than edited through this website. Changes made in the browser are overwritten on the next import.
+
+== How the wiki is built ==
+* '''Hand-written pages''' live in <code>wiki/pages/&lt;Namespace&gt;/&lt;Title&gt;.wiki</code>. A <code>/</code> in a title is written as <code>%2F</code> in the file name.
+* '''Generated pages''' in <code>wiki/generated/</code> are rebuilt from the pack's source by <code>tools/generate.py</code>: item infoboxes, recipe, usage and source tables, loot, trades, enchantments and advancements. They should never be edited by hand; a hand-written page with the same title replaces the generated stub.
+* '''Sources''' are fetched at a pinned commit of the pack's repository, together with the Modrinth release notes and vanilla data for comparison.
+* <code>tools/preview.py</code> imports pages into a local wiki and reports template errors, red links and missing files.
+
+== Writing ==
+Follow the style guide (<code>wiki/STYLE.md</code>) and the page plan (<code>wiki/PAGES.md</code>). In short:
+* Match the Minecraft Wiki's tone and structure: encyclopedic, third person, American English, item names exactly as in game.
+* Every fact must be checkable against the pack's code, the release notes or the developer's video, in that order of priority. Cite files with <code><nowiki>{{Source|path}}</nowiki></code>.
+* Use the generated templates (<code><nowiki>{{Recipes}}</nowiki></code>, <code><nowiki>{{Uses}}</nowiki></code>, <code><nowiki>{{Sources}}</nowiki></code>, <code><nowiki>{{Data/...}}</nowiki></code>) instead of copying data by hand.
+* Mark secrets with <code><nowiki>{{Spoiler}}</nowiki></code> and unreleased content with <code><nowiki>{{Upcoming}}</nowiki></code> or <code><nowiki>{{Planned}}</nowiki></code>.
+
+[[Category:Matcha Flavoured Wiki]]

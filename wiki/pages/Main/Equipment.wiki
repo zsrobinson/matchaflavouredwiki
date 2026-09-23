@@ -1,0 +1,57 @@
+'''Equipment''' covers the [[tools]], [[weapons]] and [[armor]] of Matcha Flavoured. The pack rebuilds vanilla progression: stone tools are removed, diamonds must be smelted, and four alloys ([[Shakudo equipment|shakudo]], [[Hepatizon equipment|hepatizon]], [[Steel equipment|steel]] and [[Electrum equipment|electrum]]) join [[Adamant equipment|adamant]], the renamed netherite.
+
+== Progression ==
+# [[Wooden equipment|Wood]]: first tools.
+# [[Copper equipment|Copper]]: copper ingots from a [[Mud Kiln|mud kiln]].
+# [[Iron equipment|Iron]]: iron ingots from a [[Blast Furnace|blast furnace]].
+# [[Diamond equipment|Diamond]]: [[Raw Diamond|raw diamonds]] smelted in a blast furnace.
+Alloys are then smithed onto base gear at a [[Smithing Table|smithing table]] (see [[Alloy]]): steel onto iron, shakudo and hepatizon onto copper, electrum and adamant onto diamond. [[Golden equipment|Gold]] is a side tier with Fortune and Looting.
+
+The developer's goal is horizontal choice rather than a single best set: "I hope these alloys are tempting in their own right, and I hope too that you'll have trouble deciding on which alloys and equipment you choose to wear.{{Cite video|quote=I hope these alloys are tempting in their own right, and I hope too that you'll have trouble deciding on which alloys and equipment you choose to wear.}} The 1.12.1-alpha notes describe shakudo and hepatizon as "horizontal progression--VIABLE and interesting choices for the player, even in late-game."{{Cite changelog|1.12.1-alpha|quote=This was the original intent of having Shakudo and Hepatizon in the first place--horizontal progression--VIABLE and interesting choices for the player, even in late-game.}}
+
+== Tiers ==
+{| class="wikitable"
+! Tier !! Tools !! Weapons !! Armor !! Intrinsics
+|-
+| [[Wooden equipment|Wooden]] || Yes || Yes || — || Wooden tools are the first tier. Stone tools do not exist in Matcha Flavoured, so the next tier is [[Copper equipment|copper]].
+|-
+| [[Copper equipment|Copper]] || Yes || Yes || Yes || Copper is the second tier, between wood and iron. Its ingots are smelted in a [[Mud Kiln|mud kiln]], and copper gear is the base for the [[Shakudo equipment|shakudo]] and [[Hepatizon equipment|hepatizon]] alloys.
+|-
+| [[Iron equipment|Iron]] || Yes || Yes || Yes || Iron is the third tier. Iron ingots come from a [[Blast Furnace|blast furnace]], and iron gear is the base for [[Steel equipment|steel]].
+|-
+| [[Steel equipment|Steel]] || Yes || Yes || Yes || Steel is the alloy tier of iron: very durable, and its weapons and armor add knockback and blast resistance.
+|-
+| [[Golden equipment|Golden]] || Yes || Yes || Yes || Golden equipment carries [[Fortune]], [[Looting]] and [[Fire Protection]] as intrinsics.
+|-
+| [[Diamond equipment|Diamond]] || Yes || Yes || Yes || Diamond gear has no intrinsics of its own but is the only base that can take [[Electrum equipment|electrum]] or [[Adamant equipment|adamant]].
+|-
+| [[Shakudo equipment|Shakudo]] || Yes || Yes || Yes || Shakudo is a copper and gold alloy. Its tools have [[Silk Touch]], its weapons steal life and its armor regenerates health and cleanses effects.
+|-
+| [[Hepatizon equipment|Hepatizon]] || Yes || Yes || Yes || Hepatizon is a copper, silver and gold alloy. It has the highest mining speeds in the pack and every piece adds movement speed.
+|-
+| [[Electrum equipment|Electrum]] || Yes || Yes || Yes || Electrum is a silver and gold alloy smithed onto diamond gear. Its tools are the only source of Fortune III, and its armor and weapons carry [[Warding]].
+|-
+| [[Adamant equipment|Adamant]] || Yes || Yes || Yes || Adamant replaces netherite. Its armor carries [[Doom]], its weapons inflict Weakness and its tools smelt what they mine.
+|-
+| [[Leather armor|Leather]] || — || — || Yes || Leather armor is crafted from tattered leather, the item [[Zombie|zombies]] drop, and every piece adds safe fall distance.
+|-
+| [[Sturdy leather armor|Sturdy Leather]] || — || — || Yes || Sturdy leather armor is a stronger leather set with Projectile Protection and extra safe fall distance.
+|-
+| [[Chainmail armor|Chainmail]] || — || — || Yes || Chainmail armor is craftable from iron chains and every piece has Thorns III.
+|}
+
+== How pack equipment differs from vanilla ==
+* Vanilla tool and armor recipes are blocked by the data pack's filter and replaced with the pack's own recipes, which set durability, attributes, mining rules and intrinsics as item components.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Items crafted before an update keep their old stats.
+* Tooltips hide the real attribute lines and show hand-written values instead. A few disagree with the real values; the item pages note each case.
+* Intrinsics are stored as stored enchantments and moved onto the item when it enters an inventory, keeping the higher level of any enchantment already present.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
+* Every piece of equipment can be [[Repairing|repaired]] indefinitely.
+* The loot tables under <code>matcha:equipment/</code> define the canonical version of each item; chest loot and <code>/loot</code> use them.
+
+== See also ==
+* [[Alloy]] · [[Smithing]] · [[Repairing]] · [[Ores]]
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Equipment]]

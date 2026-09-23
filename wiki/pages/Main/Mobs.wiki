@@ -1,0 +1,139 @@
+{{Vanilla|Mob|Mobs}}
+'''Mobs''' in [[Matcha Flavoured]] are the vanilla ''Minecraft'' mobs, with changes to where hostile mobs spawn, how strong they are on each [[difficulty]], and what they drop. The pack's changes follow a few rules:
+* '''Only the undead roam the surface.''' In the Overworld, hostile mobs that aren't undead can't spawn under the open sky, and after the [[Ender Dragon]] is killed no common hostile mob can spawn above sea level. See [[Spawning]] and [[Surface]].
+* '''Difficulty reshapes mobs.''' Zombies become fast strikers, husks slow tanks, and skeletons, creepers, cave spiders and silverfish lose health. See [[Difficulty]].
+* '''Killing is rewarded, farming isn't.''' Many drops are raised, and most hostile drops need a player kill. Zombies, husks, skeletons and spiders from the pack's [[spawner|spawners]] drop nothing, and hostile mobs don't drop the equipment they spawn with.
+* '''No rotten flesh.''' Zombie-type mobs drop {{ItemLink|Tattered Leather}} or {{ItemLink|Sturdy Leather}} instead, and most undead drop {{ItemLink|Raw Estus}} or {{ItemLink|Estus Ash}}.
+* '''Animals drop meat.''' Several animals that drop nothing in vanilla now drop {{ItemLink|Raw Flesh}}.
+
+== Hostile mobs ==
+{{Main|Spawning|Difficulty}}
+The pack's "mundane hostile" mobs are checked once when they appear, removed if they are somewhere they aren't allowed, and otherwise modified for the difficulty.<ref>{{Source|MF_datapack/data/matcha/tags/entity_type/mundane_hostiles.json}}</ref>
+
+{| class="wikitable sortable"
+! Mob !! Undead !! Can spawn under the open sky (before the dragon) !! Main changes
+|-
+| [[Zombie]] || Yes || Yes || Fast and fragile on Normal and Hard; drops tattered leather and Raw Estus
+|-
+| [[Husk]] || Yes || Yes || Spawns in every biome; slow, armored tank on Normal and Hard; drops sturdy leather and Raw Estus
+|-
+| [[Drowned]] || Yes || Yes || Drops tattered leather and Raw Estus; stricter surface rule after the dragon
+|-
+| Zombie villager || Yes || Yes || Drops tattered leather, Raw Estus or an obol; see [[Zombie#Zombie villagers]]
+|-
+| [[Skeleton]] || Yes || Yes || Half health; Punch bow on Normal and Hard; drops Estus Ash
+|-
+| [[Stray]] || Yes || Yes || As skeleton; no plain arrows
+|-
+| [[Bogged]] || Yes || Yes || As skeleton; drops Estus Ash or an obol, and mushrooms
+|-
+| Parched || Yes || Yes || Modified as a skeleton
+|-
+| [[Creeper]] || No || No || Only below Y=63; less health
+|-
+| [[Spider]] || No || No || High jumps and cobwebs on Normal and Hard
+|-
+| [[Cave Spider]] || No || No || Faster, 1 to 3 hearts
+|-
+| [[Silverfish]] || No || No || 1 or 2 hearts
+|-
+| [[Enderman]] || No || No || Always drops a stable void; only picks up melons, pumpkins and TNT
+|-
+| [[Witch]] || No || No || Drops 4–8 Estus Ash
+|-
+| Slime || No || No || Surface rule only
+|}
+
+Other hostile mobs with changes:
+* [[Wither Skeleton]]: breaks blocks in fortresses; skull drop 30%.
+* [[Blaze]]: drops fire charges instead of blaze rods.
+* [[Phantom]]: doesn't spawn.
+* [[Wither]]: can only be summoned on the Overworld surface.
+* [[Ender Dragon]]: killing it makes the surface safe.
+
+=== Undead ===
+The undead ({{MCW|Undead|vanilla's <code>#minecraft:undead</code> tag}}) matter in the pack for two reasons: they are the only hostile mobs allowed to spawn under the open sky before the dragon is killed, and they are hurt by [[warding]].<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref> Undead mobs wearing a copper armor piece are immune to most warding. Most undead drop {{ItemLink|Raw Estus}} or {{ItemLink|Estus Ash}}; blazes, which aren't undead, no longer do.
+
+== Other mobs with changed drops ==
+The pack also overrides the loot tables of these mobs:<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json}}</ref>
+{| class="wikitable sortable"
+! Mob !! Drops in Matcha Flavoured !! Vanilla
+|-
+| Armadillo || 1 armadillo scute (+0–1 Looting); 1 {{ItemLink|Raw Flesh}} || nothing
+|-
+| Breeze || 4–8 wind charges (+1–4 Looting), player kill || 1–2 breeze rods
+|-
+| Camel husk || 2–3 {{ItemLink|Sturdy Leather}} || rotten flesh
+|-
+| Cat || string; 1 {{ItemLink|Raw Flesh}} || string
+|-
+| Creaking || 16–32 resin clumps || nothing
+|-
+| Elder guardian || 3 rolls of [[Fishing|fishing]] loot; 1–3 {{ItemLink|Divine Fragment|divine fragments}}, a tide armor trim, and an {{ItemLink|Opal}} (player kill) || prismarine, fish, wet sponge, a 20% trim
+|-
+| Evoker || totem of undying, 0–1 {{ItemLink|Obol}}; 25% {{ItemLink|Divine Fragment}} (35% with Looting I, +10% per level) || totem, emerald
+|-
+| Fox || 1 {{ItemLink|Raw Flesh}}; 1 [[Fox Pelt|fox pelt]] || held item only
+|-
+| Frog || 1 {{ItemLink|Raw Flesh}} || nothing
+|-
+| Ghast || 1 ghast tear (+0–1 Looting); sulfur chunks || 0–1 ghast tear
+|-
+| Guardian || 0–1 wet sponge (player kill); cod || prismarine, cod
+|-
+| Happy ghast || 1 ghast tear || nothing
+|-
+| Horse || 1–3 {{ItemLink|Sturdy Leather}}; 2–4 {{ItemLink|Raw Flesh}} || 0–2 leather
+|-
+| Magma cube || 1–4 {{ItemLink|Magma Block|magma blocks}} instead of magma cream || magma cream
+|-
+| Nautilus || nautilus shell, 25% (player kill) || 5%
+|-
+| Parrot || feathers; 1 raw chicken || feathers
+|-
+| [[Piglin#Piglin brute|Piglin brute]] || 15% {{ItemLink|Divine Fragment}}, 30% {{ItemLink|Adamant Scrap}} (player kill) || nothing
+|-
+| Rabbit || 1–2 {{ItemLink|Tattered Leather}}; raw flesh || 0–1 hide, rabbit's foot
+|-
+| Sheep || 1–3 {{ItemLink|Tattered Leather}}; mutton || wool, mutton
+|-
+| Shulker || 50% a {{ItemLink|Sack}} (player kill) || 50% shulker shell
+|-
+| Sulfur cube || 1–2 {{ItemLink|Sulfur Chunk|sulfur chunks}} and 1–2 {{ItemLink|Sulfur Goo}} (player kill) || nothing
+|-
+| Turtle || 1 {{ItemLink|Raw Flesh}}; bowl if killed by lightning || seagrass, bowl
+|-
+| Zoglin || 2–3 {{ItemLink|Sturdy Leather}} || rotten flesh
+|-
+| Zombie horse || 2–3 {{ItemLink|Sturdy Leather}} || rotten flesh
+|-
+| Zombie nautilus || nautilus shell, 50% (player kill) || rotten flesh
+|}
+The exact tables are generated on each mob's page, or as <code>Template:Data/Loot/minecraft/entities/''mob''</code>.
+
+Several vanilla drops also appear under the pack's names: creepers and ghasts drop {{ItemLink|Sulfur Chunk|sulfur chunks}} (gunpowder), phantoms drop {{ItemLink|Hepatizon Alloy}} (phantom membrane), and the Wither drops a {{ItemLink|Divine Favor}} (nether star). See [[Renamed items]].
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Skeletons and zombies no longer drop their armor or weapons. Cave spiders fast with 2 hearts; creepers have 8 hearts.}}
+{{History line|0.5-alpha|Overworld mobs no longer drop equipment. Ghast tear drop rate raised. Evokers drop divine fragments. Chicken jockeys drop the Lava Chicken disc.}}
+{{History line|0.6-alpha|Only the undead spawn in the open in the Overworld; after the dragon is killed, no hostile mobs spawn above sea level or in the open.}}
+{{History line|1.10|Difficulty support: mob behavior, health and damage depend on difficulty. Husks spawn in all biomes. Creepers only spawn underground. Magma cubes drop magma blocks. Nautilus shell drop rates raised. Zombie horses made consistent with other undead.}}
+{{History line|1.12.1-alpha|Obols no longer drop from undead mobs. Camel husks drop leather. The creaking drops resin. Snowy foxes drop their own pelt.}}
+{{History line|1.12.2|Mobs from spawners drop nothing.}}
+}}
+
+== Trivia ==
+* The developer made the monsters harder "because of the crazy buffs and tools I've given the players. The monsters deserve a fighting chance."<ref>{{Cite video|quote=I made these monster changes because of the crazy buffs and tools I've given the players. The monsters deserve a fighting chance.}}</ref>
+
+== See also ==
+* [[Spawning]]
+* [[Difficulty]]
+* [[Surface]]
+* [[Spawner]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]

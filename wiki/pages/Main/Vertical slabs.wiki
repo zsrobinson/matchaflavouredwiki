@@ -1,0 +1,43 @@
+{{Infobox|title=Vertical slabs|invimage=Oak Slab|type=Resource pack feature}}
+'''Vertical slabs''' is the resource pack's name for the look of doubled wooden slabs. When two slabs of the same wood are stacked into a full block, Matcha Flavoured shows the block with the planks running vertically instead of horizontally. Since a double slab is otherwise identical to a block of planks, this gives builders a second plank texture for every wood type at no cost.
+
+== Behavior ==
+Placing a second wooden slab on top of or beneath a first one creates a double slab, as in vanilla. The pack's resource pack gives every wooden double slab its own model, textured with a vertical version of that wood's planks.<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/oak_slab_double.json}}</ref> Single slabs, top and bottom, keep the normal plank texture.
+
+The change is purely visual. The double slab is still the vanilla <code>type=double</code> state of the slab block; it drops two slabs when broken and behaves like any other double slab. Two slabs can also be crafted back into one plank block, which uses the horizontal texture.
+
+Vertical textures exist for every wood that has slabs:
+{| class="wikitable"
+! Wood !! Texture
+|-
+| Oak, spruce, birch, jungle, acacia, dark oak, mangrove, cherry, pale oak || <code>&lt;wood&gt;_planks_vertical</code>
+|-
+| Crimson, warped || <code>crimson_planks_vertical</code>, <code>warped_planks_vertical</code>
+|-
+| Bamboo || <code>bamboo_planks_vertical</code>
+|-
+| [[Poplar]] (prepared for a future ''Minecraft'' version) || <code>poplar_planks_vertical</code>
+|}
+<ref>{{Source|MF_resourcepack/assets/minecraft/textures/block/oak_planks_vertical.png}}</ref>
+
+The same idea is used for stone: see [[Large bricks]].
+
+== History ==
+{{History
+|{{History line|1.12.2|Added vertical textures for all wooden double slabs, following community feedback.}}
+}}
+
+== Trivia ==
+* The release notes credit the idea to a video by the YouTubers "barce & fwhip".<ref>{{Cite changelog|1.12.2|quote=All Vertical Slab textures added (👥, specifically barce & fwhip's video)}}</ref>
+* The resource pack also has vertical textures for the sides and bottom of dispensers and droppers facing up or down.<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/dispenser_vertical.json}}</ref>
+
+== See also ==
+* [[Large bricks]]
+* [[Dirt Slab]]
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Resource pack features]]
+[[Category:Blocks]]

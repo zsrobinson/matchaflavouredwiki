@@ -1,0 +1,26 @@
+A '''claymore''' is a heavy sword that can block attacks like a shield. There are two: the [[Steel Claymore|steel claymore]] and the [[Adamant Claymore|adamant claymore]].
+
+== Obtaining ==
+Both are smithed with a [[Smithing Upgrade Template|smithing upgrade template]]: an iron sword with steel alloy, or a diamond sword with adamant alloy.
+
+== Usage ==
+Using a claymore raises it to block. The steel claymore blocks 70% of melee and 60% of projectile damage; the adamant claymore 80% and 70%. Blocking costs durability equal to a quarter of the blocked damage, and axes disable the steel claymore twice as long as a shield.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_claymore.json}}</ref>
+
+{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Steel Claymore}} || 1500 || 8 || 0.7 || +2 || —
+|-
+| {{ItemLink|Adamant Claymore}} || 3000 || 9 || 1 || — || [[Unbreaking]] II<br />{{G|Weakness}} Weakness<br />[[Sharpness]] I
+|}
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Added the steel claymore. The adamant claymore's attack speed raised from 0.5 to 1.0.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Weapons]]

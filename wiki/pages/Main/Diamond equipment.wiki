@@ -1,0 +1,67 @@
+{{Main|Equipment}}
+'''Diamond equipment''' is the highest base tier. It has no intrinsics of its own, but it is the only base that can take [[Electrum equipment|electrum]] or [[Adamant equipment|adamant]].
+
+== Obtaining ==
+Diamond ore drops [[Raw Diamond|raw diamonds]], which must be smelted in a [[Blast Furnace|blast furnace]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/diamond_from_blasting_diamond_materials.json}}</ref> The 1.12.2 notes explain that this stops free diamonds from surface structures and makes players "feel good to finally be able to USE the diamonds you collected".{{Cite changelog|1.12.2|quote=This should extend the copper and iron age a bit more, and when you finally have a blast furnace, feel good to finally be able to USE the diamonds you collected}}
+
+== Mining ==
+The diamond pickaxe and dolabra mine obsidian, crying obsidian and ender chests at speed 35.
+
+== Differences from vanilla ==
+Diamond tools have 2500 durability and diamond armor 800 for every piece.
+
+== Stats ==
+=== Tools ===
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Diamond Pickaxe}} || 2500 || 9 || 35 || 5 || 1.2 || —
+|-
+| {{ItemLink|Diamond Axe}} || 2500 || 9 || — || 9 || 1 || —
+|-
+| {{ItemLink|Diamond Shovel}} || 2500 || 9 || — || 5.5 || 1 || —
+|-
+| {{ItemLink|Diamond Hoe}} || 2500 || 9 || — || 1 || 4 || —
+|-
+| {{ItemLink|Diamond Mattock}} || 2500 || 8 || — || 4 || 3 || —
+|-
+| {{ItemLink|Diamond Dolabra}} || 2500 || 8 || 35 || 7 || 1 || —
+|}
+
+=== Weapons ===
+{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Diamond Sword}} || 2500 || 7 || 1.6 || — || —
+|-
+| {{ItemLink|Diamond Spear}} || 2500 || 4 || 0.952 || — || —
+|}
+
+=== Armor ===
+{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Diamond Helmet}} || 800 || 3 || 2 || — || — || —
+|-
+| {{ItemLink|Diamond Chestplate}} || 800 || 8 || 2 || — || — || —
+|-
+| {{ItemLink|Diamond Leggings}} || 800 || 6 || 2 || — || — || —
+|-
+| {{ItemLink|Diamond Boots}} || 800 || 3 || 2 || — || — || —
+|- class="sortbottom"
+! Full set !! !! 20 !! 8 !! 0 !! colspan="2" |
+|}
+
+Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Obsidian mining speed raised from 9 to 35. Obsidian mining speed raised to 35.}}
+{{History line|1.12.2|Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time. Diamond ores now drop [[Raw Diamond|raw diamonds]], which must be smelted in a [[Blast Furnace|blast furnace]].}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Equipment]]

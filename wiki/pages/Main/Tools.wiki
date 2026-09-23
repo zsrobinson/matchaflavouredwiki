@@ -1,0 +1,191 @@
+The '''tools''' of Matcha Flavoured are the vanilla pickaxe, axe, shovel and hoe, plus two hybrid tools, the [[mattock]] and the [[dolabra]], and several special tools. Stone tools are removed: the tiers run wood, copper, iron, then the alloys. Every tool's stats come from the pack's own recipes, which the pack uses instead of the blocked vanilla recipes.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+== Tiers ==
+{| class="wikitable"
+! Tier !! Made from !! Repaired with
+|-
+| [[Wooden equipment|Wood]] || Planks || Planks
+|-
+| [[Copper equipment|Copper]] || Copper ingots || Copper ingots
+|-
+| [[Iron equipment|Iron]] || Iron ingots || Iron ingots
+|-
+| [[Steel equipment|Steel]] || Iron tool + [[Steel Alloy|steel alloy]] || Iron ingots
+|-
+| [[Golden equipment|Gold]] || Gold ingots || Gold ingots
+|-
+| [[Diamond equipment|Diamond]] || Diamonds || Diamonds
+|-
+| [[Shakudo equipment|Shakudo]] || Copper tool + [[Shakudo Alloy|shakudo alloy]] || Blocks of copper
+|-
+| [[Hepatizon equipment|Hepatizon]] || Copper tool + [[Hepatizon Alloy|hepatizon alloy]] || Blocks of copper
+|-
+| [[Electrum equipment|Electrum]] || Diamond tool + [[Electrum Alloy|electrum alloy]] || Blocks of diamond
+|-
+| [[Adamant equipment|Adamant]] || Diamond tool + [[Adamant Alloy|adamant alloy]] || Blocks of diamond, adamant scrap
+|}
+
+== Mining levels ==
+Instead of the vanilla "incorrect tool" tags, pack pickaxes use their own block tags:<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref>
+* '''Wood''' gets no drops from hematite, native gold, native silver, diamond ore, sulfur ores, natural lapis lazuli, deepslate or obsidian.
+* '''Copper''' gets no drops from diamond ore, native gold or obsidian.
+* '''Iron''' gets no drops from obsidian, crying obsidian or ender chests.
+* '''Gold''', '''shakudo''' and '''hepatizon''' pickaxes break obsidian without drops.
+* '''Diamond''' (35), '''electrum''' and '''adamant''' (55) mine obsidian very fast.
+* The '''steel pickaxe''' and most dolabras have no obsidian rule and mine it normally.
+Because the pack's pickaxe rules list <code>#minecraft:mineable/pickaxe</code> as a correct tool without a tier check, any pickaxe not listed above gets drops from every other pickaxe block, including ancient debris.
+
+== Comparison ==
+=== Pickaxe ===
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Wooden Pickaxe}} || 200 || 3 || — || 2 || 1.2 || —
+|-
+| {{ItemLink|Copper Pickaxe}} || 350 || 6 || — || 3 || 1.2 || —
+|-
+| {{ItemLink|Iron Pickaxe}} || 500 || 7 || — || 4 || 1.2 || —
+|-
+| {{ItemLink|Steel Pickaxe}} || 3000 || 8 || — || 3 || 1.2 || —
+|-
+| {{ItemLink|Golden Pickaxe}} || 350 || 12 || 3 (no drops) || 2 || 1.2 || [[Fortune]] I
+|-
+| {{ItemLink|Diamond Pickaxe}} || 2500 || 9 || 35 || 5 || 1.2 || —
+|-
+| {{ItemLink|Shakudo Pickaxe}} || 1000 || 9 || 3 (no drops) || 4 || 4 || {{MCW|Silk Touch}} I
+|-
+| {{ItemLink|Hepatizon Pickaxe}} || 1000 || 20 || 3 (no drops) || 4.5 || 1.2 || —
+|-
+| {{ItemLink|Electrum Pickaxe}} || 3000 || 12 || 55 || 5 || 1.2 || {{G|Fortune}} III
+|-
+| {{ItemLink|Adamant Pickaxe}} || 5000 || 15 || 55 || 6 || 1.2 || [[Efficiency]] II<br />{{G|Smelting}} Smelting<br />[[Unbreaking]] II
+|}
+=== Axe ===
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Wooden Axe}} || 200 || 2 || — || 7 || 0.8 || —
+|-
+| {{ItemLink|Copper Axe}} || 350 || 6 || — || 9 || 0.8 || —
+|-
+| {{ItemLink|Iron Axe}} || 500 || 7 || — || 9 || 0.9 || —
+|-
+| {{ItemLink|Steel Axe}} || 3000 || 8 || — || 10 || 0.7 || —
+|-
+| {{ItemLink|Golden Axe}} || 350 || 12 || — || 7 || 1 || [[Fortune]] I<br />{{MCW|Looting}} I
+|-
+| {{ItemLink|Diamond Axe}} || 2500 || 9 || — || 9 || 1 || —
+|-
+| {{ItemLink|Shakudo Axe}} || 1000 || 9 || — || 9 || 1 || {{MCW|Silk Touch}} I<br />{{G|Health}}{{G|Attack damage}} Life steal
+|-
+| {{ItemLink|Hepatizon Axe}} || 1000 || 20 || — || 9 || 1.1 || —
+|-
+| {{ItemLink|Electrum Axe}} || 3000 || 12 || — || 9 || 1.2 || {{G|Fortune}} III<br />{{MCW|Looting}} II<br />[[Smite]] III<br />[[Warding|{{G|Warding}} 2]]
+|-
+| {{ItemLink|Adamant Axe}} || 5000 || 15 || — || 10 || 1 || [[Efficiency]] II<br />{{G|Smelting}} Smelting<br />{{G|Weakness}} Weakness<br />[[Unbreaking]] II
+|}
+=== Shovel ===
+See also the [[Snow Shovel|snow shovel]].
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Wooden Shovel}} || 200 || 2 || — || 2.5 || 1 || —
+|-
+| {{ItemLink|Copper Shovel}} || 350 || 6 || — || 3.5 || 1 || —
+|-
+| {{ItemLink|Iron Shovel}} || 500 || 8 || — || 4.5 || 1 || —
+|-
+| {{ItemLink|Steel Shovel}} || 3000 || 8 || — || 3.5 || 1 || —
+|-
+| {{ItemLink|Golden Shovel}} || 350 || 15 || — || 2.5 || 1 || [[Fortune]] I
+|-
+| {{ItemLink|Diamond Shovel}} || 2500 || 9 || — || 5.5 || 1 || —
+|-
+| {{ItemLink|Shakudo Shovel}} || 1000 || 9 || — || 4.5 || 1 || {{MCW|Silk Touch}} I
+|-
+| {{ItemLink|Hepatizon Shovel}} || 1000 || 20 || — || 5 || 1 || —
+|-
+| {{ItemLink|Electrum Shovel}} || 3000 || 12 || — || 6 || 1 || {{G|Fortune}} III
+|-
+| {{ItemLink|Adamant Shovel}} || 5000 || 15 || — || 6.5 || 1 || {{G|Smelting}} Smelting<br />[[Efficiency]] II<br />[[Unbreaking]] II
+|}
+=== Hoe ===
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Wooden Hoe}} || 200 || 2 || — || 1 || 1 || —
+|-
+| {{ItemLink|Copper Hoe}} || 350 || 6 || — || 1 || 2 || —
+|-
+| {{ItemLink|Iron Hoe}} || 500 || 8 || — || 1 || 3 || —
+|-
+| {{ItemLink|Steel Hoe}} || 3000 || 8 || — || 1 || 2 || —
+|-
+| {{ItemLink|Golden Hoe}} || 350 || 12 || — || 1 || 1 || [[Fortune]] I
+|-
+| {{ItemLink|Diamond Hoe}} || 2500 || 9 || — || 1 || 4 || —
+|-
+| {{ItemLink|Shakudo Hoe}} || 1000 || 9 || — || 1 || 7 || {{MCW|Silk Touch}} I
+|-
+| {{ItemLink|Hepatizon Hoe}} || 1000 || 20 || — || 1 || 4 || —
+|-
+| {{ItemLink|Electrum Hoe}} || 3000 || 12 || — || 1 || 4 || {{G|Fortune}} III
+|-
+| {{ItemLink|Adamant Hoe}} || 5000 || 15 || — || 1 || 4 || {{G|Smelting}} Smelting<br />[[Unbreaking]] II<br />[[Efficiency]] II
+|}
+=== Mattock ===
+{{Main|Mattock}}
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Copper Mattock}} || 350 || 5 || — || 1 || 2 || —
+|-
+| {{ItemLink|Iron Mattock}} || 500 || 6 || — || 4 || 4 || —
+|-
+| {{ItemLink|Steel Mattock}} || 3000 || 7 || — || 1 || 2 || —
+|-
+| {{ItemLink|Diamond Mattock}} || 2500 || 8 || — || 4 || 3 || —
+|-
+| {{ItemLink|Shakudo Mattock}} || 1000 || 8 || — || 2 || 4 || {{MCW|Silk Touch}} I
+|-
+| {{ItemLink|Hepatizon Mattock}} || 1000 || 15 || — || 3 || 3 || —
+|-
+| {{ItemLink|Electrum Mattock}} || 3000 || 10 || — || 3 || 3 || {{G|Fortune}} II<br />[[Warding|{{G|Warding}} 1]]
+|-
+| {{ItemLink|Adamant Mattock}} || 5000 || 13 || — || 1 || 4 || [[Efficiency]] I<br />{{G|Smelting}} Smelting<br />[[Unbreaking]] II
+|}
+=== Dolabra ===
+{{Main|Dolabra}}
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Copper Dolabra}} || 350 || 5 || — || 5 || 0.8 || —
+|-
+| {{ItemLink|Iron Dolabra}} || 500 || 6 || — || 6 || 0.9 || —
+|-
+| {{ItemLink|Steel Dolabra}} || 3000 || 7 || — || 6 || 0.9 || —
+|-
+| {{ItemLink|Diamond Dolabra}} || 2500 || 8 || 35 || 7 || 1 || —
+|-
+| {{ItemLink|Shakudo Dolabra}} || 1000 || 7 || — || 7 || 1 || {{MCW|Silk Touch}} I
+|-
+| {{ItemLink|Hepatizon Dolabra}} || 1000 || 15 || — || 7 || 1 || —
+|-
+| {{ItemLink|Electrum Dolabra}} || 3000 || 10 || 55 || 6 || 1.2 || {{G|Fortune}} III
+|-
+| {{ItemLink|Adamant Dolabra}} || 5000 || 13 || 55 || 7 || 1 || [[Unbreaking]] II<br />{{G|Smelting}} Smelting<br />[[Efficiency]] I
+|}
+
+=== Other tools ===
+* [[Shears]]: copper, iron, steel and [[Shepherd's Shears|shepherd's shears]].
+* [[Compass]]: copper, golden and titanium.
+* [[Archeologist's Brush]], [[Hatchet]], [[Rusty Axe]], [[Crook]].
+
+== Removed ==
+Stone tools cannot be crafted; their item IDs are reused for steel, shakudo and hepatizon tools.<ref>{{Source|README.md}}</ref>
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Tools]]

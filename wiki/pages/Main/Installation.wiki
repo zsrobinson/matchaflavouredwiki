@@ -1,0 +1,34 @@
+'''Installing''' [[Matcha Flavoured]] requires both its datapack and its resource pack, for ''Minecraft: Java Edition'' 26.2. The instructions below follow the README.<ref>{{Source|README.md}}</ref>
+
+== Files ==
+Up to [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]], the download was a single archive that works as both the datapack and the resource pack. From [[Matcha Flavoured 1.12.2|1.12.2-beta]] they are separate Modrinth files (<code>Matcha_DP_…zip</code> and <code>Matcha_RP_…zip</code>). The datapack targets pack format 107.1 and the resource pack 88.0.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref><ref>{{Source|MF_resourcepack/pack.mcmeta}}</ref>
+
+== New world ==
+# When creating the world, open the '''More''' tab, click '''Datapacks''' and then '''Open Pack Folder'''.
+# Copy the zipped datapack into that folder and move it to the '''Selected''' column.
+# Add the resource pack in '''Options → Resource Packs'''.
+# Create the world. If chat shows "Matcha Flavoured is now loaded on version …", the pack is working. If textures are missing, the resource pack is not active.
+
+== Existing world ==
+Select the world, click '''Edit''' and then '''Open World Folder''', and copy the datapack into the <code>datapacks</code> folder. The README advises against adding the pack to an existing world, because items have been "shuffled around"; players who do so should enable cheats to fix what breaks.
+
+== Modrinth launcher ==
+The Modrinth app installs the pack only as a resource pack, because datapacks are per-world. The datapack must still be added to each world by hand.
+
+== Servers ==
+Place the datapack in the world's <code>datapacks</code> folder and have players use the resource pack. The README notes a known problem on Purpur servers, where keep inventory is set per dimension and must be set manually. See [[Multiplayer]].
+
+== Options ==
+* '''Difficulty''': the pack reads the world difficulty on load. After changing it, reload the world (or run <code>/reload</code>). The load message confirms the difficulty. See [[Difficulty]].
+* '''True darkness''': to turn it off, delete <code>data/minecraft/dimension_type/overworld.json</code> in the datapack and rename <code>overworld_no_true_darkness.txt</code> to <code>overworld.json</code>, then restart the world.<ref>{{Source|MF_datapack/data/minecraft/dimension_type/overworld_no_true_darkness.txt}}</ref>
+* '''Accessibility''': the README links an accessible version of the resource pack and a community resource pack with vanilla-style textures.
+* '''Gamerules''' such as keep inventory are set only the first time the pack loads, so they can be changed afterward.<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction}}</ref>
+
+== Updating ==
+Replace both the datapack and resource pack files. Seeing a name such as <code>item.kleispack.filler</code> means only the datapack was updated. Items from before 1.12.2 may need <code>/trigger update_item</code>. See [[Updating items]].
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Guides]]

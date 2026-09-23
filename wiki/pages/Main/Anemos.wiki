@@ -1,0 +1,39 @@
+{{Infobox
+|title=Anemos
+|maxlevel=I
+|slots=Main hand
+|items=Wooden, stone, copper, iron, diamond and adamant swords; sticks
+|id=<code>matcha:anemos</code>
+|source={{Source|MF_datapack/data/matcha/enchantment/anemos.json|anemos.json}}
+}}
+'''Anemos''' is an [[enchantment]] added by [[Matcha Flavoured]] that makes a sword fire a {{MCW|Wind Charge|wind charge}} with every hit.
+
+== Obtaining ==
+* [[Prayer of Aeolus]], a crafted [[blessing]] that also stores Wind Burst I.
+* Iron swords in the tower and barracks chests of the [[Abbey]] come with Anemos.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/tower.json}}</ref>
+Anemos has a maximum level of I and cannot appear on random enchanted books.
+
+== Usage ==
+Anemos can be applied to wooden, stone, copper, iron, diamond and netherite (adamant) swords, and to sticks. Golden swords and {{MCW|Mace|maces}} cannot take it. Its anvil cost multiplier is 0.
+
+== Behavior ==
+When the wielder hits a mob, the enchantment runs a function that summons a wind charge in front of the player's eyes (0.75 blocks ahead) and launches it in the direction the player is looking at 2.5 blocks per tick.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/anemos.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/backend/apply_motion.mcfunction}}</ref> The same function is also attached to the enchantment's <code>hit_block</code> effect.
+
+After each wind charge, Anemos has a cooldown of 10 ticks (0.5 seconds), the same as throwing a wind charge; hits during the cooldown fire nothing. The wind charge is owned by the player, so kills with it are credited to the player, and [[Abbey]] advancements that check for the player's wind charges detect it.
+
+== History ==
+{{History|
+{{History line|1.10|Can no longer be applied to maces. The wind charge is now owned by the enchanted player, so kills with it count.<ref>{{Cite changelog|1.10|quote=Windcharges shot with Anemos now register enchanted player as the one who "Owns" it. (This means if you kill someone with Anemos, it will count)}}</ref>}}
+{{History line|1.12.1-alpha|Now affects only the wielder in multiplayer.}}
+{{History line|1.12.2|Moved from the <code>main</code> to the <code>matcha</code> namespace. Items with the old enchantment are converted when held.}}
+}}
+
+== See also ==
+* [[Enchantment]]
+* [[Prayer of Aeolus]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchantments]]

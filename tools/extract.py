@@ -204,6 +204,8 @@ def display_stack(stack):
         return {'name': vname(stack), 'id': norm_id(stack), 'count': 1}
     comps = stack.get('components') or {}
     d = {'name': variant_key(stack_name(stack), comps), 'id': norm_id(stack['id']), 'count': stack.get('count', 1)}
+    if comps.get('minecraft:item_model'):
+        d['model'] = comps['minecraft:item_model']
     if comps.get('minecraft:stored_enchantments'):
         d['enchantments'] = comps['minecraft:stored_enchantments']
     if comps.get('minecraft:enchantments'):

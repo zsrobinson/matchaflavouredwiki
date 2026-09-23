@@ -1,0 +1,40 @@
+{{Vanilla|Sulfur}}
+{{Infobox auto|Sulfur|title=Sulfur blocks}}
+'''Sulfur blocks''' are the yellow stone blocks of the sulfur caves: '''sulfur''', '''potent sulfur''', '''polished sulfur''', '''sulfur bricks''' and '''chiseled sulfur''', with their slabs, stairs and walls. They are vanilla blocks. Matcha Flavoured ties them to its [[Sulfur Chunk|sulfur chunk]] item (vanilla gunpowder), so sulfur can be broken down into chunks and built back up, and changes the recipes for the chiseled and potent forms.
+
+== Obtaining ==
+Sulfur blocks generate in sulfur caves as in vanilla.
+
+=== Crafting ===
+{{Recipes|Sulfur}}
+* Four sulfur chunks in a square make 4 blocks of sulfur.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_from_sulfur_chunk.json}}</ref>
+* Nine sulfur chunks or blocks of sulfur, in any mix, make one block of '''potent sulfur''', replacing the vanilla recipe that takes nine sulfur blocks.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/potent_sulfur.json}}</ref>
+* Four sulfur bricks in a square make 4 '''chiseled sulfur''', replacing the vanilla recipe of two stacked slabs. A [[stonecutter]] also cuts sulfur into chiseled sulfur.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/chiseled_sulfur.json}}</ref>
+* Polished sulfur, sulfur bricks and every slab, stairs and wall are made as in vanilla, by crafting or in a stonecutter.
+* Two slabs of sulfur, polished sulfur or sulfur bricks craft back into the full block.
+The vanilla recipes for chiseled sulfur and potent sulfur are removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Picking up a block of sulfur unlocks the pack's sulfur recipes.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/sulfur.json}}</ref>
+
+== Usage ==
+* A block of sulfur crafts into 1 [[Sulfur Chunk|sulfur chunk]], and a block of potent sulfur into 9.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_chunk_from_sulfur.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_chunk_from_potent_sulfur.json}}</ref>
+* Blocks of sulfur can stand in for sulfur chunks in the potent sulfur recipe.
+
+Four chunks make four blocks and each block gives back one chunk, so the conversion loses nothing. Potent sulfur is a compact way to store sulfur chunks, nine to a block.
+
+== Appearance ==
+The resource pack gives chiseled sulfur its own texture.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/block/chiseled_sulfur.png}}</ref> The pack's sulfur ores ([[Sulfur Deposit|sulfur deposit]], [[Sulfurous Quartz Deposit|sulfurous quartz deposit]] and [[Sulfurous Hellstone|sulfurous hellstone]]) were retextured to match the vanilla sulfur blocks.<ref>{{Cite changelog|0.4-alpha|quote=Sulfur ores changed to match vanilla sulfur blocks (including Sulfurous Hellstone)}}</ref>
+
+== History ==
+{{History
+|{{History line|0.4-alpha|Added support for the new vanilla sulfur blocks, connected to the existing sulfur chunks.}}
+{{History line|0.6-alpha|Chiseled blocks can no longer be crafted from slabs, and all slabs can be crafted back into their full block.}}
+}}
+
+== See also ==
+* [[Cinnabar blocks]], the red stone of the same caves
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Building blocks]]

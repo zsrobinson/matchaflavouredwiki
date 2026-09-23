@@ -1,0 +1,48 @@
+{{Main|Equipment}}
+'''Wooden equipment''' is the first tier of [[tools]] and [[weapons]] in Matcha Flavoured, crafted from planks and sticks.
+
+== Obtaining ==
+Wooden tools are crafted with the vanilla shapes; the vanilla recipes are blocked and replaced by the pack's own, which set the stats below.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_pickaxe.json}}</ref> Stone tools are removed entirely: the pack's README says players go from wood to copper to iron.<ref>{{Source|README.md}}</ref> The IDs of the stone tools are reused for [[Steel equipment|steel]], [[Shakudo equipment|shakudo]] and [[Hepatizon equipment|hepatizon]] items.
+
+The README advises starting with a [[Kindling|campfire]] and a wooden hoe, then cooking grass to reach the [[Mud Kiln|mud kiln]] and copper.<ref>{{Source|README.md}}</ref>
+
+== Mining ==
+The wooden pickaxe mines stone and the lower ores, but cannot get drops from hematite, native gold, native silver, diamond ore, sulfur ores, natural lapis lazuli or deepslate. Wooden axes, shovels and hoes keep the vanilla wooden mining tier.
+
+== Stats ==
+=== Tools ===
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Wooden Pickaxe}} || 200 || 3 || — || 2 || 1.2 || —
+|-
+| {{ItemLink|Wooden Axe}} || 200 || 2 || — || 7 || 0.8 || —
+|-
+| {{ItemLink|Wooden Shovel}} || 200 || 2 || — || 2.5 || 1 || —
+|-
+| {{ItemLink|Wooden Hoe}} || 200 || 2 || — || 1 || 1 || —
+|}
+
+=== Weapons ===
+{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Wooden Sword}} || 200 || 4 || 1.6 || — || —
+|-
+| {{ItemLink|Wooden Spear}} || 59 || 1 || 1.538 || — || —
+|}
+
+Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
+
+== History ==
+{{History|
+{{History line|1.10|The wooden pickaxe can now mine everything except higher-tier ores, and its durability was lowered from 600 to 200.}}
+{{History line|1.12.1-alpha|Removed a leftover item name component from the wooden pickaxe.}}
+{{History line|1.12.2|Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Equipment]]

@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Adamant Alloy]]
+| 4 × [[Adamant Scrap]] +<br />[[Divine Fragment]] +<br />4 × [[Gold Ingot]]
+| {{Crafting|A1=Adamant Scrap|B1=Adamant Scrap|C1=Adamant Scrap|A2=Adamant Scrap|B2=Divine Fragment|C2=Gold Ingot|A3=Gold Ingot|B3=Gold Ingot|C3=Gold Ingot|Output=Adamant Alloy|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/adamant.json|matcha:crafting/adamant}}</small>
+|-
+| [[Adamant Alloy]] <small>(vanilla recipe)</small>
+| [[Block of Adamant]]
+| {{Crafting|A1=Block of Adamant|Output=Adamant Alloy,9|shapeless=1}}
+|}
+'''Blasting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Adamant Alloy]]
+| [[Adamant Pickaxe]] or [[Adamant Shovel]] or [[Adamant Axe]] or [[Adamant Hoe]] or [[Adamant Sword]] or [[Adamant Helmet]] or [[Adamant Chestplate]] or [[Adamant Leggings]] or [[Adamant Boots]] or [[Adamant Horse Armor]] or [[Adamant Nautilus Armor]] or [[Adamant Spear]]
+| {{Cooking|station=Blast Furnace|Input=Adamant Pickaxe;Adamant Shovel;Adamant Axe;Adamant Hoe;Adamant Sword;Adamant Helmet;Adamant Chestplate;Adamant Leggings;Adamant Boots;Adamant Horse Armor;Adamant Nautilus Armor;Adamant Spear|Output=Adamant Alloy|note=5 s, 0.2 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/netherite_ingot_from_blasting_netherite_materials.json|matcha:blast/netherite_ingot_from_blasting_netherite_materials}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,70 @@
+{{Main|Equipment}}
+'''Copper equipment''' is the second tier of tools, weapons and armor, between [[Wooden equipment|wood]] and [[Iron equipment|iron]], and the base for the [[Shakudo equipment|shakudo]] and [[Hepatizon equipment|hepatizon]] alloys.
+
+== Obtaining ==
+Copper equipment is crafted from [[Copper Ingot|copper ingots]], which are smelted from raw copper in a [[Mud Kiln|mud kiln]] or [[Blast Furnace|blast furnace]]; an [[Oven|oven]] is not hot enough.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_pickaxe.json}}</ref> Copper also makes the [[Copper Dolabra|copper dolabra]], [[Copper Mattock|copper mattock]], [[Shears|copper shears]] and [[Compass|copper compass]].
+
+The developer wants players to spend time in the copper age: the 1.10 notes say "players who just start the world have no need for that much iron, I want them caving and using copper tools at first."{{Cite changelog|1.10|quote=I want them caving and using copper tools at first. Copper is cool, let them have more time with it.}}
+
+== Mining ==
+The copper pickaxe mines iron ([[Hematite|hematite]]) and silver, but cannot get drops from diamond ore, native gold or obsidian.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/copper.json}}</ref>
+
+== Warding ==
+Undead mobs wearing copper armor are immune to [[Warding]]; only warding level 4 (the [[Electrum equipment|electrum]] set bonus) and [[Warding Stone|warding stones]] bypass this.
+
+== Stats ==
+=== Tools ===
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Copper Pickaxe}} || 350 || 6 || — || 3 || 1.2 || —
+|-
+| {{ItemLink|Copper Axe}} || 350 || 6 || — || 9 || 0.8 || —
+|-
+| {{ItemLink|Copper Shovel}} || 350 || 6 || — || 3.5 || 1 || —
+|-
+| {{ItemLink|Copper Hoe}} || 350 || 6 || — || 1 || 2 || —
+|-
+| {{ItemLink|Copper Mattock}} || 350 || 5 || — || 1 || 2 || —
+|-
+| {{ItemLink|Copper Dolabra}} || 350 || 5 || — || 5 || 0.8 || —
+|}
+
+=== Weapons ===
+{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Copper Sword}} || 350 || 5 || 1.6 || — || —
+|-
+| {{ItemLink|Copper Spear}} || 190 || 2 || 1.176 || — || —
+|}
+
+=== Armor ===
+{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Copper Helmet}} || 200 || 2 || 0 || — || — || —
+|-
+| {{ItemLink|Copper Chestplate}} || 200 || 4 || 0 || — || — || —
+|-
+| {{ItemLink|Copper Leggings}} || 200 || 3 || 0 || — || — || —
+|-
+| {{ItemLink|Copper Boots}} || 200 || 1 || 0 || — || — || —
+|- class="sortbottom"
+! Full set !! !! 10 !! 0 !! 0 !! colspan="2" |
+|}
+
+Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
+
+== History ==
+{{History|
+{{History line|1.10|Copper mattocks now drop snowballs from snow (newly made tools only). Undead wearing copper armor are immune to [[Warding]].}}
+{{History line|1.12.1-alpha|Copper can no longer be smelted in an oven; it needs a mud kiln or blast furnace.}}
+{{History line|1.12.2|The blast furnace recipe changed and diamonds now drop raw, which the release notes describe as extending the copper and iron ages. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Equipment]]

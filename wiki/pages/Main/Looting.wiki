@@ -1,0 +1,35 @@
+{{Vanilla|Looting}}
+{{Infobox
+|title=Looting
+|maxlevel=III
+|slots=Main hand
+|items=Swords, spears and shears
+|id=<code>minecraft:looting</code>
+|source={{Source|MF_datapack/data/minecraft/enchantment/looting.json|looting.json}}
+}}
+'''Looting''' is an [[enchantment]] that increases mob drops. [[Matcha Flavoured]] also allows it on shears, where it increases the wool and other items gained by shearing.
+
+== Obtaining ==
+* The [[Prayer of Midas]], a crafted [[blessing]], stores Looting III with Fortune I.
+* The [[Butcher's Knife]] sold by the [[Cook]] has Looting II.
+* Random enchanted books in chests and fishing treasure.
+
+== Behavior ==
+Looting's supported items are changed from vanilla's swords and spears to the pack's <code>#minecraft:enchantable/looting_compatible</code> tag, which adds shears.<ref>{{Source|MF_datapack/data/minecraft/enchantment/looting.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/tags/item/enchantable/looting_compatible.json}}</ref> All of the pack's shears (Iron, Copper and the others) are shears items and can take it.
+
+The pack's shearing loot tables for sheep, mooshrooms and bogged use Looting: each item dropped from shearing a sheep gets 0 to 3 extra wool per level of Looting on the shears.<ref>{{Source|MF_datapack/data/minecraft/loot_table/shearing/sheep/white.json}}</ref>
+
+Many of the pack's mob loot tables use Looting, including the drops of [[Raw Estus]], [[Stable Void]]s and [[Divine Fragment]]s.
+
+Its anvil cost multiplier is 1, down from 4.
+
+== See also ==
+* [[Prayer of Midas]]
+* [[Shears]]
+* [[Enchantment]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchantments]]

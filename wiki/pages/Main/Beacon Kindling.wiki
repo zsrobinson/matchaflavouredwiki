@@ -1,0 +1,51 @@
+{{Infobox auto|type=Placeable item|renewable=Yes}}
+A '''Beacon Kindling''' is an item that lights a signal fire to call a [[Wandering Trader]] to the player. The trader arrives 10 minutes after the kindling is placed and leaves 5 minutes later.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The recipe is unlocked when the player obtains an [[Obol]].<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/obol.json}}</ref>
+
+== Usage ==
+Using a Beacon Kindling on a block places a lit signal-fire [[Kindling]] (campfire) there, with a burst of flame particles and the sound of a fire charge and a quieter Wither spawn sound.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/beacon_kindling_placed.mcfunction}}</ref> While the beacon is active, it gives off trial spawner detection particles every half second.<ref>{{Source|MF_datapack/data/matcha/function/particle/beacon_kindling.mcfunction}}</ref>
+
+The fire then summons a wandering trader:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/check_wandering_trader_timer_loop.mcfunction}}</ref>
+{| class="wikitable"
+! Time after placing !! Event !! Chat message
+|-
+| 0:00 || Beacon lit || A Wandering Trader has spotted your beacon, they will arrive in 10 minutes
+|-
+| 10:00 || Trader appears beside the fire || The Wandering Trader has arrived, they will depart in 5 minutes
+|-
+| 15:00 || Trader leaves and the fire goes out || The Wandering Trader has left
+|}
+The pack counts the time in 10-second steps (60 steps to arrive, 90 to leave), so each event can happen up to 10 seconds late.<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref> The messages are shown to players within 128 blocks of the fire.
+
+* If the fire stops being a lit campfire (put out with water, broken, or replaced), the beacon is cancelled with the message "The Wandering Trader has lost sight of your beacon...", and a trader that has already arrived is removed.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/kill_wandering_trader_early.mcfunction}}</ref>
+* A player can have one beacon waiting at a time. A second Beacon Kindling placed while the first is active is used up and leaves an ordinary lit signal fire, with the message "You have already summoned a Wandering Trader, please wait patiently while they travel".
+* Reloading the data pack cancels all active beacons and removes every summoned trader.
+* The summoned trader is invulnerable, and is removed without drops when it leaves.
+
+See [[Wandering Trader#Trades]] for what the trader sells and buys.
+
+== Behavior ==
+The Beacon Kindling is a chicken spawn egg that places an invisible marker instead of a chicken. As with other spawn eggs, using it on a [[spawner]] or trial spawner in Survival destroys every spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/no_eggs_on_spawners.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
+
+== Advancements ==
+* '''Bonfire Lit''': "Use a Beacon Kindling to signal a Wandering Trader". Rewards 1 obol.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/light_beacon.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.10|Added. The idea was requested by many players, particularly Josax.<ref>{{Cite changelog|1.10|quote=Beacon Kindling (Wandering Trader Summoner) (👥, largely requested, but Josax had this idea in particular, shout-out!)}}</ref>}}
+{{History line|1.12.1-alpha|Added the ''Bonfire Lit'' advancement.
+Summoning items can no longer be used on spawners.}}
+{{History line|1.12.2|Removed from the rooted dirt recipe group.
+The ''Bonfire Lit'' advancement can be completed.}}
+}}
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Items]]
+[[Category:Trading]]

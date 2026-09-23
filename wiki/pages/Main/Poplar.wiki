@@ -1,0 +1,27 @@
+{{Infobox|title=Poplar|invimage=Oak Log|type=Resource pack textures (not in game)}}
+'''Poplar''' is a wood type that the resource pack has textures for, in preparation for its arrival in a future version of ''Minecraft''. Poplar does not exist in ''Minecraft'' 26.2, the version Matcha Flavoured is built for, so none of these textures appear in game yet.
+
+== Textures ==
+The resource pack contains:<ref>{{Source|MF_resourcepack/assets/minecraft/textures/block/poplar_log.png}}</ref>
+* '''Poplar log''' (side and top), with dark brown bark, and the top of the '''stripped poplar log'''.
+* '''Poplar planks''' in a pale grey, and a vertical version used for doubled poplar slabs (see [[Vertical slabs]]).<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/poplar_slab.json}}</ref>
+* '''Poplar leaves''' in three autumn colors, '''red''', '''orange''' and '''yellow''', each with textures for the outer top and bottom of a leaf block.<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/yellow_poplar_leaves.json}}</ref>
+
+The leaf models also point at a main texture for each color (<code>block/red_poplar_leaves</code> and so on) that is not in the pack yet.
+
+== History ==
+The release notes of 1.12.1-alpha say that poplar was added to the [[stonecutter]] and that a poplar sapling recipe was added, but the current source has no poplar recipes. The developer's to-do list for the ''Minecraft'' 26.3 port still lists poplar leaf crafting and loot tables as work to be done.<ref>{{Source|changelog.md}}</ref>
+{{History
+|{{History line|1.12.1-alpha|Poplar added to the stonecutter and a poplar sapling recipe added (according to the release notes; not present in the current source).}}
+{{History line|1.12.2|Added poplar leaf, log and plank textures.}}
+}}
+
+== Trivia ==
+* The developer wrote in the 1.12.2-beta notes, about the 26.3 port: "No one is more excited about yellow leaves than me, trust."<ref>{{Cite changelog|1.12.2|quote=No one is more excited about yellow leaves than me, trust.}}</ref>
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Resource pack features]]
+[[Category:Planned features]]

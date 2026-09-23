@@ -1,0 +1,31 @@
+{{Infobox
+|title=Fox Pelt
+|type=Crafting material
+|base=<code>minecraft:rabbit_hide</code>
+|renewable=Yes
+}}
+A '''fox pelt''' is dropped by foxes. It comes in two textures, red and snowy, to match the fox it came from. It is the same item as {{ItemLink|Tattered Leather}} (a rabbit hide) with its own name and look, so it can be used anywhere tattered leather is.
+
+== Obtaining ==
+=== Mob loot ===
+Every fox drops one fox pelt when it dies: red foxes drop the red pelt and snow foxes the snowy pelt. Foxes also drop 1 raw flesh (cooked if the fox was burning), plus 0–1 per level of Looting.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref> In vanilla, foxes drop nothing but their held item.
+
+== Usage ==
+Recipes that take tattered leather accept fox pelts, because recipes check the item type, not its name. See [[Tattered Leather#Usage]].
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Snowy foxes drop their own snowy pelt instead of the red one.}}
+}}
+
+== Trivia ==
+* The loot table gives the pelts the item models <code>fox_pelt</code> and <code>fox_pelt_snowy</code> without a namespace, which the game reads as <code>minecraft:fox_pelt</code>. The resource pack defines the models under the <code>matcha</code> namespace, so the pelt's texture may not display correctly.<ref>{{Source|MF_resourcepack/assets/matcha/items/fox_pelt.json}}</ref>
+
+== See also ==
+* [[Tattered Leather]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Items]]

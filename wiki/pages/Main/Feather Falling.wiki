@@ -1,0 +1,51 @@
+{{Vanilla|Feather Falling}}
+{{Infobox
+|title=Feather Falling
+|maxlevel=IV
+|slots=Armor
+|items=Boots
+|id=<code>minecraft:feather_falling</code>
+|source={{Source|MF_datapack/data/minecraft/enchantment/feather_falling.json|feather_falling.json}}
+}}
+'''Feather Falling''' is an [[enchantment]] for boots that reduces fall damage. [[Matcha Flavoured]] doubles its effect compared with vanilla ''Minecraft''.
+
+== Obtaining ==
+* The [[Elegy of Icarus]], a crafted [[blessing]], stores Feather Falling II.
+* [[Sturdy Leather Boots]] are crafted with Feather Falling II, and those found in chests have Feather Falling III.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sturdy_leather_boots.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/sturdy_leather.json}}</ref>
+* Random enchanted books in chests and fishing treasure, and trial chamber vaults.
+
+== Behavior ==
+Each level of Feather Falling gives 6 points of protection against fall damage, where vanilla gives 3. Each point reduces the damage by 4%, and protection from all enchantments is capped at 20 points (80%).<ref>{{Source|MF_datapack/data/minecraft/enchantment/feather_falling.json}}</ref>
+
+{| class="wikitable"
+! Level !! Matcha Flavoured !! Vanilla
+|-
+| I || 24% || 12%
+|-
+| II || 48% || 24%
+|-
+| III || 72% || 36%
+|-
+| IV || 80% (capped; 96% before the cap) || 48%
+|}
+
+Its anvil cost multiplier is 1, down from 2.
+
+== History ==
+{{History|
+{{History line|0.5-alpha|The Elegy of Icarus now gives Feather Falling II.}}
+{{History line|1.12.2|Protection per level doubled from 3 to 6 points.<ref>{{Cite changelog|1.12.2|quote=Feather Falling is better now (base damage reduction 12% -> 24%; max damage reduction 48% -> 72%)}}</ref>}}
+}}
+
+== Notes ==
+* The {{Version|1.12.2}} release notes give the new maximum reduction as 72%, the value for level III. Feather Falling IV exists and reaches the 80% cap.
+
+== See also ==
+* [[Elegy of Icarus]]
+* [[Enchantment]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchantments]]

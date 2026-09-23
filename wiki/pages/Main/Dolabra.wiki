@@ -1,0 +1,48 @@
+A '''dolabra''' is a hybrid [[Tools|tool]] that works as both a pickaxe and an axe, mining more slowly than a pickaxe or axe of the same tier. It follows the same tiers and obsidian rules as the pickaxe of its tier, with a few exceptions noted below.
+
+The developer calls dolabras and mattocks "real tools with generalized niches" whose "base mining speed aren't as fast as their original counterparts.{{Cite video|quote=They're both real tools with generalized niches. Delabres work as a pickaxe and an axe combined. Maddox are a shovel hoe hybrid, but hybrid tools base mining speed aren't as fast as their original counterparts.}}
+
+== Obtaining ==
+Copper, iron and diamond dolabras are crafted (three ingots on top, one below on the left, two sticks). Alloy dolabras are smithed from an axe or dolabra of the base tier with the alloy and a [[Smithing Upgrade Template|smithing upgrade template]]. Dolabras use axe item IDs, so they strip logs like axes.
+
+== Usage ==
+* The copper dolabra has special rules: no drops from diamond ore or sulfur ores, but it mines native gold and obsidian with drops, unlike the copper pickaxe.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_dolabra.json}}</ref>
+* The iron, steel, shakudo and hepatizon dolabras have no obsidian rule.
+* Diamond (35), electrum and adamant (55) dolabras mine obsidian quickly.
+
+== Tiers ==
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Copper Dolabra}} || 350 || 5 || — || 5 || 0.8 || —
+|-
+| {{ItemLink|Iron Dolabra}} || 500 || 6 || — || 6 || 0.9 || —
+|-
+| {{ItemLink|Steel Dolabra}} || 3000 || 7 || — || 6 || 0.9 || —
+|-
+| {{ItemLink|Diamond Dolabra}} || 2500 || 8 || 35 || 7 || 1 || —
+|-
+| {{ItemLink|Shakudo Dolabra}} || 1000 || 7 || — || 7 || 1 || {{MCW|Silk Touch}} I
+|-
+| {{ItemLink|Hepatizon Dolabra}} || 1000 || 15 || — || 7 || 1 || —
+|-
+| {{ItemLink|Electrum Dolabra}} || 3000 || 10 || 55 || 6 || 1.2 || {{G|Fortune}} III
+|-
+| {{ItemLink|Adamant Dolabra}} || 5000 || 13 || 55 || 7 || 1 || [[Unbreaking]] II<br />{{G|Smelting}} Smelting<br />[[Efficiency]] I
+|}
+
+== Design ==
+The 1.12.2 notes announce a shift: "Dolabras are shifting from being treated as an Axe (weapon), Axe (tool), and Pickaxe hyrbid to an Axe (tool) and Pickaxe hyrbid. So damage will go down for all of them, weapon-based enchants removed, and tool-based enchants improved."{{Cite changelog|1.12.2|quote=Dolabras are shifting from being treated as an Axe (weapon), Axe (tool), and Pickaxe hyrbid to an Axe (tool) and Pickaxe hyrbid.}} The adamant dolabra already lacks the weapon intrinsic that the adamant axe has.
+
+== History ==
+{{History|
+{{History line|1.03|Steel and iron dolabras' real attack speed now matches the tooltip.}}
+{{History line|1.12.1-alpha|Hepatizon dolabra mining speed raised to 15; diamond and better dolabras mine obsidian much faster; the adamant dolabra's stats match its tooltip.}}
+{{History line|1.12.2|Dolabras redefined as tool-only hybrids.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Tools]]

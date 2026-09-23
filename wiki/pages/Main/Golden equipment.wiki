@@ -1,0 +1,61 @@
+{{Main|Equipment}}
+'''Golden equipment''' is crafted from [[Gold Ingot|gold ingots]]. Each piece carries an intrinsic: golden tools have [[Fortune]] I, golden weapons [[Looting]], and golden armor [[Fire Protection]].
+
+== Obtaining ==
+Gold ingots come from [[Native Gold|native gold]], which needs an iron pickaxe, and from [[Gilded Hellstone|gilded hellstone]]. The golden helmet is named the [[Golden Crown|golden crown]].
+
+== Mining ==
+Golden tools mine fast (speed 12) but break quickly, and the golden pickaxe cannot get drops from obsidian.
+
+== Stats ==
+=== Tools ===
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Golden Pickaxe}} || 350 || 12 || 3 (no drops) || 2 || 1.2 || [[Fortune]] I
+|-
+| {{ItemLink|Golden Axe}} || 350 || 12 || — || 7 || 1 || [[Fortune]] I<br />{{MCW|Looting}} I
+|-
+| {{ItemLink|Golden Shovel}} || 350 || 15 || — || 2.5 || 1 || [[Fortune]] I
+|-
+| {{ItemLink|Golden Hoe}} || 350 || 12 || — || 1 || 1 || [[Fortune]] I
+|}
+
+=== Weapons ===
+{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Golden Sword}} || 350 || 4 || 1.6 || — || {{MCW|Looting}} I
+|-
+| {{ItemLink|Golden Spear}} || 350 || 1 || 1.053 || — || {{MCW|Looting}} II
+|}
+
+=== Armor ===
+{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Golden Crown}} || 200 || 2 || 0 || — || — || [[Fire Protection]] II
+|-
+| {{ItemLink|Golden Chestplate}} || 200 || 5 || 0 || — || — || [[Fire Protection]] III
+|-
+| {{ItemLink|Golden Leggings}} || 200 || 3 || 0 || — || — || [[Fire Protection]] II
+|-
+| {{ItemLink|Golden Boots}} || 200 || 2 || — || — || — || [[Fire Protection]] II
+|- class="sortbottom"
+! Full set !! !! 12 !! 0 !! 0 !! colspan="2" |
+|}
+
+Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Gold armor names are shown in white.}}
+{{History line|1.10|Golden shovels now drop snowballs from snow (newly made tools only).}}
+{{History line|1.12.2|Ruined portal loot was reduced so that gold cannot be obtained before iron. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Equipment]]

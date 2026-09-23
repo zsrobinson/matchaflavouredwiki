@@ -1,0 +1,45 @@
+{{Vanilla|Rabbit Hide}}
+{{Infobox auto|renewable=Yes}}
+'''Tattered leather''' is a common crafting material, the pack's name for the {{MCW|Rabbit Hide|rabbit hide}}. It replaces {{MCW|Rotten Flesh|rotten flesh}} as the main drop of [[Zombie|zombies]], and is used to make leather armor and to craft {{ItemLink|Sturdy Leather}}, so players can get leather without raising cattle.
+
+== Obtaining ==
+=== Mob loot ===
+Tattered leather is dropped by [[Zombie|zombies]], [[Drowned|drowned]], zombie villagers and [[Zombified Piglin|zombified piglins]] (only when killed by a player), and by rabbits and sheep. Sheep drop 1–3 tattered leather instead of wool.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/sheep.json}}</ref>
+
+=== Crafting ===
+{{Recipes}}
+One piece of sturdy leather can be cut back into 4 tattered leather.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/rabbit_hide_from_leather.json}}</ref>
+
+=== Other sources ===
+{{Sources}}
+
+== Usage ==
+=== Crafting ingredient ===
+{{Uses}}
+As in vanilla, 4 tattered leather make 1 sturdy leather. The pack's leather armor (the Leather Hood, Leather Pauldron, Leather Pants and Leather Boots) is crafted directly from tattered leather.
+
+=== Repairing ===
+[[Sturdy leather armor]] can be repaired with tattered leather.
+
+A [[Fox Pelt|fox pelt]] is the same item with a different name and texture, so it works in all of these recipes.
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Tattered leather gives proper recipe unlocks.}}
+{{History line|1.12.2|Sturdy leather can be repaired with tattered leather.}}
+}}
+
+== Trivia ==
+* In the design video: "Rotten flesh no longer exists. Zombies instead drop tattered leather, an ethical way of sourcing a much-needed item."<ref>{{Cite video|quote=Rotten flesh no longer exists. Zombies instead drop tattered leather, an ethical way of sourcing a much-needed item.}}</ref> The rotten flesh item itself is reused as {{ItemLink|Glow Berry Mash}}.
+
+== See also ==
+* [[Sturdy Leather]]
+* [[Leather armor]]
+* [[Fox Pelt]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Items]]
+[[Category:Renamed items]]

@@ -1,0 +1,74 @@
+{{Main|Equipment}}
+'''Shakudo equipment''' is [[Copper equipment|copper equipment]] upgraded with [[Shakudo Alloy|shakudo alloy]], a copper and gold alloy. Its tools have [[Silk Touch]], its axe, sword and spear steal life, and its armor regenerates health, [[Cleanse|cleanses]] effects and gives [[Magic protection|magic protection]].
+
+== Obtaining ==
+Shakudo alloy is crafted from four blocks of copper and two blocks of gold. Copper equipment is upgraded at a [[Smithing Table|smithing table]] with no template ([[Smithing Upgrade Template|template]] for the dolabra and mattock). It is repaired with blocks of copper. There is also a [[Elytra#Shakudo Elytra|shakudo elytra]].
+
+== Intrinsics ==
+* '''Tools''' have Silk Touch.
+* '''Axe, sword and spear''' give the wielder Regeneration III for 1 second on each hit.
+* '''Armor''': each piece cleanses one kind of effect (helmet: Blindness and Darkness; chestplate: Poison; leggings: Slowness; boots: Levitation), gives magic protection 8, and counts towards the regeneration bonus: Regeneration I for 3 seconds every 30, 26, 22 or 18 seconds with one to four pieces.<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
+
+The video describes shakudo as "a gold-copper alloy that cleanses malefic, steals life from mobs, and whose tools have silk touch as an intrinsic."{{Cite video|quote=Shikudo, a gold-copper alloy that cleanses malefic, steals life from mobs, and whose tools have silk touch as an intrinsic.}}
+
+== Trivia ==
+* Shakudo was called "Palatinate" until 1.10; the rename happened only in the language file, and the advancement for smithing it is still called "Palatinate Perfection".
+
+== Stats ==
+=== Tools ===
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Shakudo Pickaxe}} || 1000 || 9 || 3 (no drops) || 4 || 4 || {{MCW|Silk Touch}} I
+|-
+| {{ItemLink|Shakudo Axe}} || 1000 || 9 || — || 9 || 1 || {{MCW|Silk Touch}} I<br />{{G|Health}}{{G|Attack damage}} Life steal
+|-
+| {{ItemLink|Shakudo Shovel}} || 1000 || 9 || — || 4.5 || 1 || {{MCW|Silk Touch}} I
+|-
+| {{ItemLink|Shakudo Hoe}} || 1000 || 9 || — || 1 || 7 || {{MCW|Silk Touch}} I
+|-
+| {{ItemLink|Shakudo Mattock}} || 1000 || 8 || — || 2 || 4 || {{MCW|Silk Touch}} I
+|-
+| {{ItemLink|Shakudo Dolabra}} || 1000 || 7 || — || 7 || 1 || {{MCW|Silk Touch}} I
+|}
+
+=== Weapons ===
+{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Shakudo Sword}} || 1000 || 6 || 1.6 || — || [[Sweeping Edge]] I<br />{{G|Health}}{{G|Attack damage}} Life steal
+|-
+| {{ItemLink|Shakudo Spear}} || 1000 || 3 || 1.18 || — || {{G|Health}}{{G|Attack damage}} Life steal
+|}
+
+=== Armor ===
+{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Shakudo Helmet}} || 500 || 3 || — || — || — || [[Cleanse|{{G|Cleanse}} Blindness, Darkness]]<br />[[Magic protection|{{G|Magic protection}} 8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
+|-
+| {{ItemLink|Shakudo Chestplate}} || 500 || 8 || — || — || — || [[Cleanse|{{G|Cleanse}} Poison]]<br />[[Magic protection|{{G|Magic protection}} 8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
+|-
+| {{ItemLink|Shakudo Leggings}} || 500 || 6 || — || — || — || [[Cleanse|{{G|Cleanse}} Slowness]]<br />[[Magic protection|{{G|Magic protection}} 8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
+|-
+| {{ItemLink|Shakudo Boots}} || 500 || 3 || — || — || — || [[Cleanse|{{G|Cleanse}} Levitation]]<br />[[Magic protection|{{G|Magic protection}} 8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
+|- class="sortbottom"
+! Full set !! !! 20 !! 0 !! 0 !! colspan="2" |
+|}
+
+Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Shakudo armor could not be crafted; this was fixed. Fixed the shakudo sword; its life steal no longer works on armor stands.}}
+{{History line|1.10|Shakudo was renamed from "Palatinate" in the language file only, so existing items keep working. Shakudo alloy became more expensive: 3 gold and 6 copper ingots became 2 blocks of gold and 4 blocks of copper. Buffed shakudo armor: added the regeneration ability and the per-piece bonus.}}
+{{History line|1.12|Fixed severe multiplayer lag caused by shakudo armor. The shakudo spear's real attack speed now matches its tooltip.}}
+{{History line|1.12.1-alpha|Shakudo intrinsics are now exclusive with the electrum and adamant intrinsics. Shakudo armor was nerfed.}}
+{{History line|1.12.2|The shakudo chestplate no longer cleanses the [[Wither effect|Wither effect]]. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Equipment]]

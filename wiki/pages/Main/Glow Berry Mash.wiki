@@ -1,0 +1,37 @@
+{{Vanilla|Rotten Flesh}}
+
+{{Infobox auto}}
+
+'''Glow berry mash''' is the simple preparation of [[glow berries]]. It heals {{Hp|2}} and grants the Aura intrinsic for 3 seconds, making every other creature within 50 blocks glow.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/glow_mash.json}}</ref>
+
+== Obtaining ==
+
+=== Cooking ===
+{{Recipes}}
+
+== Usage ==
+
+=== Food ===
+Eating glow berry mash takes 0.8 seconds and heals {{Hp|2}}. A bell sound plays, and 2.4 seconds later every other entity within 50 blocks glows for 3 seconds.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_3.mcfunction}}</ref> See [[Glow Berries#Aura]].
+
+Obtaining glow berry mash unlocks [[glow berry jam]] and [[glow berry crumble]].
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|1.10|Glow berry mash works.}}
+}}
+
+== Trivia ==
+* Glow berry mash is a renamed rotten flesh, and the aura is triggered by eating anything with the rotten flesh model, so vanilla rotten flesh (for example from chests that still contain it) also triggers it.
+
+== See also ==
+* [[Glow Berries]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

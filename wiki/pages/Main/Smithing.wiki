@@ -1,0 +1,31 @@
+'''Smithing''' in Matcha Flavoured upgrades base equipment into [[alloy]] equipment at a [[Smithing Table|smithing table]]. The vanilla netherite recipes are blocked.
+
+== Alloy upgrades ==
+Each upgrade is a smithing transform with an empty template slot: base item + alloy → alloy item.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_pickaxe.json}}</ref> The smithing table's template slot tooltip is renamed "Add Smithing Template or Leave Empty".
+* Iron gear + [[Steel Alloy|steel alloy]] → [[Steel equipment|steel]]
+* Copper gear + [[Shakudo Alloy|shakudo]] or [[Hepatizon Alloy|hepatizon alloy]] → [[Shakudo equipment|shakudo]] or [[Hepatizon equipment|hepatizon]]
+* Diamond gear + [[Electrum Alloy|electrum]] or [[Adamant Alloy|adamant alloy]] → [[Electrum equipment|electrum]] or [[Adamant equipment|adamant]]
+* Elytra + shakudo or hepatizon alloy → [[Elytra|alloy elytra]]
+
+=== Hybrid upgrades ===
+[[Mattock]]s, [[dolabra]]s and [[claymore]]s need a [[Smithing Upgrade Template|smithing upgrade template]]. The recipes check only the item ID of the base, so the template, not the base, decides the result: a diamond axe with the template becomes a dolabra, and a diamond dolabra without it becomes an axe.
+
+=== Other smithing ===
+* [[Silver Sword]], [[Warding Sword]] and [[Warding Shield]].
+* Armor [[Trims|trims]], using [[Smithing Trim Color|smithing trim colors]].
+
+== Enchantments ==
+The result keeps the base item's enchantments; the alloy's intrinsics are added, and where both have the same enchantment the higher level is kept.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/select_higher_level.mcfunction}}</ref> The tier stats are replaced by the new item's.
+
+== History ==
+{{History|
+{{History line|1.03|The smithing table texture was changed to make the system clearer.}}
+{{History line|1.12.1-alpha|Alloy smithing no longer needs a base-metal ingot as template. Smithing no longer removes existing enchantments (contributed by HapppySpud).}}
+{{History line|1.12.2|Trims supported on custom armor.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Mechanics]]

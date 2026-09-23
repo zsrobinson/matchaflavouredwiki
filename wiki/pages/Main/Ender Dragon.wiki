@@ -1,0 +1,47 @@
+{{Vanilla}}
+{{Infobox
+|title=Ender Dragon
+|type=Boss mob
+|health=Vanilla
+|spawn=The End
+|drops={{ItemLink|Divine Favor}} (first kill per player)
+}}
+The '''Ender Dragon''' in [[Matcha Flavoured]] is fought as in vanilla, but killing it changes the Overworld: evil is "banished from the surface", and from then on the common hostile mobs can no longer spawn above sea level or under the open sky. Each player's first kill also drops a {{ItemLink|Divine Favor}}.
+
+== Rewards ==
+The first time each player kills the dragon, they earn the challenge advancement '''Iconoclast''' ("Defile the Dead God's Dream"). The advancement's reward:<ref name="adv">{{Source|MF_datapack/data/matcha/advancement/end/kill_dragon.json}}</ref><ref name="rew">{{Source|MF_datapack/data/matcha/function/mechanics/first_dragon_killed_reward.mcfunction}}</ref>
+* drops a {{ItemLink|Divine Favor}} at X=0, Y=100, Z=0 in the End, above the exit portal; the item never despawns;
+* tells every player "Evil has been banished from the surface.";
+* turns on the pack's safe-surface spawning for the whole world (see [[Surface]]);
+* gives 3 {{ItemLink|Obol|obols}}.
+
+The divine favor is given once per player, so every player on a server can earn one by joining a dragon kill. The safe surface only needs to be turned on once.
+
+== Surface after the dragon ==
+{{Main|Surface}}
+After the first kill, zombies, skeletons, creepers, spiders and the pack's other common hostile mobs are removed as soon as they appear in the Overworld if they can see the sky or are at Y=63 or above, except inside trial chambers and abbeys. Caves below sea level keep their normal spawning.
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Fixed the dragon-kill advancement. Killing the dragon banishes evil even if the player who killed it isn't on the server; each new player who kills the dragon for the first time creates a new divine favor. Fixed a major performance problem in the End.}}
+{{History line|0.6-alpha|After the dragon is killed, no hostile mobs spawn above sea level or in open areas.}}
+{{History line|1.10|Beating the Ender Dragon raises the difficulty.}}
+{{History line|1.12.1-alpha|Killing the dragon no longer changes the difficulty on Normal.}}
+{{History line|1.12.2|Fixed massive lag spikes after the dragon is killed.}}
+}}
+
+== Trivia ==
+* The pack treats the dragon as a god. In the design video: "You did what you were supposed to. You killed a god. You freed the end from her reign. You freed the world from her control. You deserve a reward. A big one."<ref>{{Cite video|quote=You killed a god. You freed the end from her reign. You freed the world from her control.}}</ref>
+* The flavor messages of the [[Death#Minimum hearts|minimum hearts]] system speak of a "Dead God", matching the advancement's "Dead God's Dream".
+
+== See also ==
+* [[Surface]]
+* [[Divine Favor]]
+* [[Wither]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mobs]]
+[[Category:Boss mobs]]

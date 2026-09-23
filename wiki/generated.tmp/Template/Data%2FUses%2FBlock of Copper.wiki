@@ -1,0 +1,76 @@
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
+! Name !! Ingredients !! Recipe
+|-
+| [[Copper Bulb]]
+| 3 × [[Block of Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
+| {{Crafting|A2=Block of Copper|B1=Block of Copper|B2=Electric Inverter|B3=Electric Wire|C2=Block of Copper|Output=Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_bulb.json|matcha:crafting/copper_bulb}}</small>
+|-
+| [[Exposed Copper]]
+| [[Block of Copper]] +<br />[[Potion]]
+| {{Crafting|A1=Block of Copper|B1=Potion|Output=Exposed Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_from_patina.json|matcha:crafting/exposed_copper_from_patina}}</small>
+|-
+| [[Shakudo Alloy]]
+| 4 × [[Block of Copper]] +<br />2 × [[Block of Gold]]
+| {{Crafting|A1=Block of Copper|B1=Block of Copper|C1=Block of Copper|A2=Block of Copper|B2=Block of Gold|C2=Block of Gold|Output=Shakudo Alloy|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/shakudo_alloy.json|matcha:crafting/shakudo_alloy}}</small>
+|-
+| [[Copper Bars]]
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Copper Bars,36}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/copper_bars_from_stonecutting_copper_block.json|matcha:stonecutting/copper_bars_from_stonecutting_copper_block}}</small>
+|-
+| [[Copper Chain]]
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Copper Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/copper_chain_from_stonecutting_copper_block.json|matcha:stonecutting/copper_chain_from_stonecutting_copper_block}}</small>
+|-
+| [[Copper Door]]
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Copper Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/copper_door_from_stonecutting_copper_block.json|matcha:stonecutting/copper_door_from_stonecutting_copper_block}}</small>
+|-
+| [[Copper Trapdoor]]
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/copper_trapdoor_from_stonecutting_copper_block.json|matcha:stonecutting/copper_trapdoor_from_stonecutting_copper_block}}</small>
+|-
+| [[Lightning Rod]]
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Lightning Rod,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/lightning_rod_from_stonecutting_copper_block.json|matcha:stonecutting/lightning_rod_from_stonecutting_copper_block}}</small>
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Block of Copper]] or [[Waxed Block of Copper]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Block of Copper;Waxed Block of Copper|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|-
+| [[Chiseled Copper]] <small>(vanilla recipe)</small>
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Chiseled Copper,4}}
+|-
+| [[Copper Grate]] <small>(vanilla recipe)</small>
+| 4 × [[Block of Copper]]
+| {{Crafting|A2=Block of Copper|B1=Block of Copper|B3=Block of Copper|C2=Block of Copper|Output=Copper Grate,4}}
+|-
+| [[Copper Grate]] <small>(vanilla recipe)</small>
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Copper Grate,4}}
+|-
+| [[Copper Ingot]] <small>(vanilla recipe)</small>
+| [[Block of Copper]]
+| {{Crafting|A1=Block of Copper|Output=Copper Ingot,9|shapeless=1}}
+|-
+| [[Cut Copper]] <small>(vanilla recipe)</small>
+| 4 × [[Block of Copper]]
+| {{Crafting|A1=Block of Copper|A2=Block of Copper|B1=Block of Copper|B2=Block of Copper|Output=Cut Copper,4}}
+|-
+| [[Cut Copper]] <small>(vanilla recipe)</small>
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Cut Copper,4}}
+|-
+| [[Cut Copper Slab]] <small>(vanilla recipe)</small>
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Cut Copper Slab,8}}
+|-
+| [[Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| [[Block of Copper]]
+| {{Stonecutter|Input=Block of Copper|Output=Cut Copper Stairs,4}}
+|-
+| [[Waxed Block of Copper]] <small>(vanilla recipe)</small>
+| [[Block of Copper]] +<br />[[Wax]]
+| {{Crafting|A1=Block of Copper|B1=Wax|Output=Waxed Block of Copper|shapeless=1}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

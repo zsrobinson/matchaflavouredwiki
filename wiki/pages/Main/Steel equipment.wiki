@@ -1,0 +1,74 @@
+{{Main|Equipment}}
+'''Steel equipment''' is iron equipment upgraded with [[Steel Alloy|steel alloy]]. It is very durable, its weapons add knockback, and its armor has knockback resistance and Blast Protection.
+
+== Obtaining ==
+Steel alloy is blasted from [[Carbon-Rich Iron|carbon-rich iron]] (four iron ingots and a block of coal make four). Each piece of iron equipment is then upgraded at a [[Smithing Table|smithing table]] with no template; the [[Steel Claymore|steel claymore]] and [[Steel Dolabra|dolabra]] and [[Steel Mattock|mattock]] also need a [[Smithing Upgrade Template|smithing upgrade template]]. Steel is repaired with plain iron ingots.
+
+In the video the developer describes steel as "processed iron that can make iron doubly efficient. It's very durable, knockback and blast resistant, and its tools have a knockback intrinsic."{{Cite video|quote=Steel, processed iron that can make iron doubly efficient. It's very durable, knockback and blast resistant, and its tools have a knockback intrinsic.}}
+
+== Notes ==
+* The 1.10 notes warn against wearing steel in the [[Abbey]]: "Blast resistance makes the dungeon boring."
+* Steel pickaxes and dolabras have no obsidian restriction and mine obsidian with drops.
+
+== Stats ==
+=== Tools ===
+{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Steel Pickaxe}} || 3000 || 8 || — || 3 || 1.2 || —
+|-
+| {{ItemLink|Steel Axe}} || 3000 || 8 || — || 10 || 0.7 || —
+|-
+| {{ItemLink|Steel Shovel}} || 3000 || 8 || — || 3.5 || 1 || —
+|-
+| {{ItemLink|Steel Hoe}} || 3000 || 8 || — || 1 || 2 || —
+|-
+| {{ItemLink|Steel Mattock}} || 3000 || 7 || — || 1 || 2 || —
+|-
+| {{ItemLink|Steel Dolabra}} || 3000 || 7 || — || 6 || 0.9 || —
+|}
+
+=== Weapons ===
+{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Steel Sword}} || 3000 || 6 || 1.4 || +1 || —
+|-
+| {{ItemLink|Steel Spear}} || 3000 || 4 || 0.9 || +1 || —
+|-
+| {{ItemLink|Steel Claymore}} || 1500 || 8 || 0.7 || +2 || —
+|}
+
+=== Armor ===
+{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Steel Helmet}} || 1000 || 2 || 1 || 0.1 || — || [[Blast Protection]] II
+|-
+| {{ItemLink|Steel Chestplate}} || 1000 || 7 || 1 || 0.2 || — || [[Blast Protection]] IV
+|-
+| {{ItemLink|Steel Leggings}} || 1000 || 5 || 1 || 0.1 || — || [[Blast Protection]] III
+|-
+| {{ItemLink|Steel Boots}} || 1000 || 2 || 1 || 0.1 || — || [[Blast Protection]] II
+|- class="sortbottom"
+! Full set !! !! 16 !! 4 !! 0.5 !! colspan="2" |
+|}
+
+Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added the steel spear. Steel armor names are shown in white.}}
+{{History line|0.6-alpha|Added recipe unlocks for steel equipment.}}
+{{History line|1.02|Steel alloy takes less time to blast.}}
+{{History line|1.03|Steel alloy is now blasted from [[Carbon-Rich Iron|carbon-rich iron]] instead of directly from iron. The steel dolabra's real attack speed now matches its tooltip.}}
+{{History line|1.10|Armor raised from 6 to 7 and toughness lowered from 2 to 1, to match the rest of the set.}}
+{{History line|1.12.1-alpha|Added the steel claymore. Smithing steel shears now grants the "Sturdy Steel" advancement.}}
+{{History line|1.12.2|Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Equipment]]

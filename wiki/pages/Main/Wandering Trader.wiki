@@ -1,0 +1,137 @@
+{{Vanilla}}
+{{Infobox
+|title=Wandering Trader
+|type=Passive mob
+|vanilla={{MCW|Wandering Trader}}
+}}
+The '''Wandering Trader''' is a passive trading mob. In Matcha Flavoured it can be called to the player's base with a [[Beacon Kindling]], and it has new trades: it sells [[Asylum Seeker]] applications and village maps, and buys music discs. The developer wanted to make wandering traders "a bit more" useful: "They'll buy music discs, carry maps to nearby villages, but they also have a new item."<ref>{{Cite video|quote=I tried to make wandering traders a bit more They'll buy music discs, carry maps to nearby villages, but they also have a new item. Refugee applications.}}</ref>
+
+== Spawning ==
+=== Beacon Kindling ===
+{{Main|Beacon Kindling}}
+Placing a [[Beacon Kindling]] lights a signal fire and summons a wandering trader next to it:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/check_wandering_trader_timer_loop.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+# When the kindling is placed, players within 128 blocks see "A Wandering Trader has spotted your beacon, they will arrive in 10 minutes".
+# The pack checks every 10 seconds. After 10 minutes (60 checks) the trader appears 1 block beside the fire, and nearby players see "The Wandering Trader has arrived, they will depart in 5 minutes".
+# After 15 minutes in total (90 checks), 5 minutes after arriving, the trader leaves in a puff of smoke, the fire goes out, and players see "The Wandering Trader has left".
+The summoned trader is invulnerable.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/summon_wandering_trader.mcfunction}}</ref> When it leaves it is teleported 1,000 blocks down rather than killed, so it drops nothing.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/kill_wandering_trader.mcfunction}}</ref>
+
+If the fire is put out or broken before the time is up, players see "The Wandering Trader has lost sight of your beacon..." and the summon is cancelled; a trader that has already arrived is removed.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/kill_wandering_trader_early.mcfunction}}</ref> Reloading the data pack (by restarting the world or running <code>/reload</code>) does the same to every active beacon, and removes every summoned trader.
+
+Each player can have only one trader on the way at a time. Placing a second kindling while waiting shows "You have already summoned a Wandering Trader, please wait patiently while they travel"; the second fire stays lit but summons nothing.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/beacon_kindling_placed.mcfunction}}</ref>
+
+=== Natural spawning ===
+The pack does not change the vanilla game rules for wandering trader spawning, so wandering traders can also appear on their own as in vanilla ''Minecraft''. They use the same trades.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref>
+
+== Trades ==
+A wandering trader rolls three sets of trades when it spawns:<ref>{{Source|MF_datapack/data/minecraft/trade_set/wandering_trader/buying.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/trade_set/wandering_trader/common.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/trade_set/wandering_trader/uncommon.json}}</ref>
+* 4 Asylum Seeker applications;
+* 6 of the 21 music disc trades;
+* 3 of the 6 map trades.
+Wandering trader trades give no villager XP.
+
+=== Asylum Seekers ===
+{| class="wikitable"
+! Wants !! Gives !! Uses
+|-
+| {{ItemLink|Obol}} || {{ItemLink|Asylum Seeker}} || 1
+|}
+Each of the 4 offers is rolled separately, so every application has its own randomly chosen age, culture and cause of emigration.<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/asylum_seeker.json}}</ref> See [[Asylum Seeker]] for the odds.
+
+=== Music discs ===
+The trader buys vanilla music discs for obols. Each trade can be used 999 times.<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/music_disc_pigstep.json}}</ref>
+{| class="wikitable sortable"
+! Music disc !! Obols
+|-
+| Lena Raine – Pigstep || 8
+|-
+| Lena Raine – Creator || 5
+|-
+| Hyper Potions – Lava Chicken || 3
+|-
+| Aaron Cherof – Precipice || 2
+|-
+| Aaron Cherof – Relic || 2
+|-
+| C418 – blocks || 2
+|-
+| C418 – cat || 2
+|-
+| C418 – chirp || 2
+|-
+| C418 – far || 2
+|-
+| C418 – mall || 2
+|-
+| C418 – mellohi || 2
+|-
+| C418 – stal || 2
+|-
+| C418 – strad || 2
+|-
+| C418 – wait || 2
+|-
+| C418 – ward || 2
+|-
+| Lena Raine – Creator (Music Box) || 2
+|-
+| Lena Raine – otherside || 2
+|-
+| Amos Roddy – Tears || 1
+|-
+| C418 – 11 || 1
+|-
+| C418 – 13 || 1
+|-
+| Samuel Åberg – 5 || 1
+|}
+The trades check only the disc's item type. The pack's own [[Music Disc|music discs]] are vanilla disc items underneath (most of them disc 11), so the trader buys them at the price of the vanilla disc they are built on.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/music_disc_golden.json}}</ref>
+
+=== Maps ===
+{{Main|Explorer maps}}
+Each map costs 1 obol and can be bought once.<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/village_plains.json}}</ref>
+{| class="wikitable"
+! Map !! Leads to
+|-
+| {{ItemLink|Map|Abandoned Desert Village Map|link=Explorer maps}} || Desert [[Abandoned village|village]]
+|-
+| {{ItemLink|Map|Abandoned Plains Village Map|link=Explorer maps}} || Plains village
+|-
+| {{ItemLink|Map|Abandoned Savanna Village Map|link=Explorer maps}} || Savanna village
+|-
+| {{ItemLink|Map|Abandoned Snowy Village Map|link=Explorer maps}} || Snowy village
+|-
+| {{ItemLink|Map|Abandoned Taiga Village Map|link=Explorer maps}} || Taiga village
+|-
+| {{ItemLink|Map|Witch Hut Map|link=Explorer maps}} || Swamp hut
+|}
+A map trade is dropped if no such structure lies within 100 chunks.
+
+== Advancements ==
+* '''Bonfire Lit''': use a Beacon Kindling to signal a Wandering Trader. Rewards 1 obol.
+* '''A Good Samaritan''': "Cover the Relocation costs for an Asylum Seeker, and make a home for them here" by buying an Asylum Seeker. Rewards 1 obol.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/trade_for_asylum_seeker.json}}</ref>
+* '''God help you...''' (hidden): kill a villager or a wandering trader.
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Buys music discs.}}
+{{History line|0.6-alpha|Warding stones heal wandering traders.}}
+{{History line|1.10|Added the [[Beacon Kindling]] to summon it.
+Pays 5 obols for the Creator disc.
+Buys up to 6 discs and sells up to 4 Asylum Seekers.}}
+{{History line|1.12.1-alpha|Asylum Seeker applications are randomized.}}
+}}
+
+== Trivia ==
+* The pack reuses the vanilla trade set names: the "buying" set holds the Asylum Seekers the trader sells, and the "common" set holds the discs it buys.
+
+== See also ==
+* [[Beacon Kindling]]
+* [[Asylum Seeker]]
+* [[Villager]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Mobs]]
+[[Category:Trading]]

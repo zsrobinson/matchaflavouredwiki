@@ -1,0 +1,36 @@
+{{Main|Equipment}}
+'''Sturdy leather armor''' is a stronger leather set crafted from [[Sturdy Leather|sturdy leather]]. It has Projectile Protection, 2 safe fall distance per piece, and the boots add step height and [[Trailblaze]].
+
+== Obtaining ==
+The pieces are the [[Sturdy Leather Helmet|helmet]], [[Sturdy Leather Gambeson|gambeson]], [[Sturdy Leather Leggings|leggings]] and [[Sturdy Leather Boots|boots]]. They are repaired with tattered leather.
+
+== Stats ==
+=== Armor ===
+{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Sturdy Leather Helmet}} || 350 || 2 || — || — || Safe fall +2 || [[Projectile Protection]] III
+|-
+| {{ItemLink|Sturdy Leather Gambeson}} || 350 || 5 || — || — || Safe fall +2 || [[Projectile Protection]] IV
+|-
+| {{ItemLink|Sturdy Leather Leggings}} || 350 || 3 || — || — || Safe fall +2 || [[Projectile Protection]] III
+|-
+| {{ItemLink|Sturdy Leather Boots}} || 350 || 2 || — || — || Safe fall +2<br />Step height +1 || [[Projectile Protection]] II<br />[[Feather Falling]] II<br />[[Trailblaze]] I
+|- class="sortbottom"
+! Full set !! !! 12 !! 0 !! 0 !! colspan="2" |
+|}
+
+Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added sturdy leather armor.}}
+{{History line|1.10|Armor raised from 4 to 5, equal to the golden chestplate.}}
+{{History line|1.12.2|Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time. Safe fall distance raised from 1 to 2 per piece, and the armor can be repaired with tattered leather. Added the step height intrinsic.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Equipment]]
