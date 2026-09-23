@@ -49,7 +49,6 @@ Grates placed by a mechanism are plain (unwaxed) copper grates, while the grates
 * Copper eye door: command block, iron bars and copper eye.
 * Copper eye grate: command block, waxed copper grate and copper eye.
 * Copper eye lantern: command block, lantern and copper eye.
-The item names are written without spaces ("CopperEyeDoor", "CopperEyeGrate", "CopperEyeLantern").
 
 A newly placed marker is set up the next time any copper eye is shot: it places a copper eye at its own position and, depending on its type, waxed weathered copper grates on either side (grates), or a chain and a hanging lantern below it (lanterns).<ref>{{Source|MF_datapack/data/matcha/function/abbey/setup_copper_eye_grate.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/abbey/setup_copper_eye_lantern.mcfunction}}</ref>
 
