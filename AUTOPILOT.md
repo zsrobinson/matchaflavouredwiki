@@ -1,34 +1,38 @@
 # Autopilot: keep the wiki current, unattended
 
-This file is the complete instruction set for a scheduled agent (for example a daily Claude Code
-routine). Run it from the repository root. It must be safe to run every day: when nothing
-changed upstream it finishes in under a minute without touching anything.
+This file is the complete instruction set for the daily Claude Code routine (a cloud session). Run it
+from the repository root. It must be safe to run every day: when nothing changed upstream it finishes
+in under a minute without touching anything.
 
 The wiki is derived entirely from upstream sources: the pack's code, its release notes and the
 developer's videos. The job is to notice when they change and bring the wiki back in line.
 
-## Requirements
-`git`, `gh` (authenticated, with push rights to this repo), `python3` + `pillow`, `yt-dlp`, `node`/`npx`.
-Docker is optional: without it the agent can't render pages locally, and the **Check** workflow on
-the pull request does the rendering and validation instead.
+## Environment
+- The routine's environment setup script is `pip install --quiet --upgrade pillow yt-dlp`.
+  `git`, `python3` and `node` are preinstalled.
+- There is no `gh` CLI. Do everything on GitHub (listing, opening, labelling and merging PRs, reading
+  check runs) with the GitHub connector tools.
+- The session assigns one branch to push to. Use it for the PR; never push anywhere else.
+- Rendering and link checks happen in the **Check** workflow on the PR, not locally.
 
 ## Step 0: is there anything to do?
 ```sh
 git checkout main && git pull --ff-only
 python3 tools/check_upstream.py > /tmp/upstream.json; status=$?
 ```
-- `status = 0`: nothing changed. **Stop here.** Don't commit, don't open a PR.
-- `status = 2`: a source couldn't be reached. Stop and try again tomorrow.
+- `status = 0`: nothing changed. On Mondays (`date -u +%u` is 1), first run
+  `python3 tools/fetch_transcripts.py --all`, which catches videos whose captions appeared late; if it saved
+  a new transcript, continue as for a new video. Otherwise **stop here.** Don't commit, don't open a PR,
+  don't notify.
+- `status = 2`: a source couldn't be checked (network, or `yt-dlp` missing from the setup script).
+  Stop and notify with the error from `/tmp/upstream.json`.
 - `status = 10`: read `/tmp/upstream.json` and continue. It lists `new_commits` (with `from_commit`/`to_commit`),
   `new_releases` (Modrinth) and `new_videos` (YouTube).
 
-Also stop if an open pull request from a previous autopilot run exists
-(`gh pr list --label autopilot --state open`), and report it instead of stacking a second one.
+Also stop if a PR labelled `autopilot` is still open, and notify about it instead of stacking a second one.
 
 ## Step 1: branch
-```sh
-git checkout -b autopilot/$(date -u +%Y-%m-%d)
-```
+Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> origin/main`.
 
 ## Step 2: bring in the new sources
 - **New commits or releases:** `tools/fetch_sources.sh --update`. This moves the pack to the latest `main`,
@@ -37,7 +41,7 @@ git checkout -b autopilot/$(date -u +%Y-%m-%d)
   delete the matching `source/vanilla-*` folders and run `tools/fetch_sources.sh` again.
 - **New videos:** `python3 tools/fetch_transcripts.py <ids from new_videos>`. It saves transcripts of
   videos about the pack to `sources/transcripts/` and ignores unrelated ones.
-- Regenerate the data: `python3 tools/extract.py && python3 tools/images.py && python3 tools/generate.py`.
+- After new commits or releases, regenerate the data: `python3 tools/extract.py && python3 tools/images.py && python3 tools/generate.py`.
   If extraction fails or misreads a new format (a new component, recipe type or file layout), fix
   `tools/extract.py` or `tools/generate.py` properly. Never hand-edit `wiki/generated/`.
 
@@ -85,24 +89,17 @@ Read `wiki/STYLE.md`, `wiki/AGENT_BRIEF.md` and `wiki/PAGES.md` first; they are 
 ```sh
 python3 tools/check_upstream.py --record          # the wiki now matches upstream
 python3 tools/build_xml.py >/dev/null             # sanity check that every page file parses into a title
-git add -A
+git add -A && git status --short                  # source/ and build/ are gitignored; nothing else unexpected
 git commit -m "Autopilot: update for <what changed: commit range / release / video>"
 git push -u origin HEAD
-gh pr create --fill --label autopilot --body "<summary of upstream changes and of the pages you changed>"
 ```
-If Docker is available, run `tools/build.sh && python3 tools/check_site.py` before pushing and fix every
-error and red link.
+No AI attribution in the commit message or PR (CLAUDE.md). Open a PR to `main` with the connector, with a
+body summarising the upstream changes and the pages you changed, add the `autopilot` label, and notify
+with the PR link.
 
 ## Step 6: merge when the check passes
-```sh
-gh pr checks --watch --fail-fast
-```
-- **Green:** `gh pr merge --squash --delete-branch`. The **Build and deploy** workflow then publishes to
-  https://matchaflavou.red automatically.
-- **Red:** read the failing log (`gh run view --log-failed`), fix the pages or tools, push again and watch
-  again. After three failed attempts, leave the PR open and comment with what's failing.
-
-## Periodically (weekly is enough)
-- `python3 tools/fetch_transcripts.py --all` catches videos whose captions appeared late.
-- `python3 tools/check_site.py` against a fresh build, to confirm nothing has rotted.
-- Re-read `wiki/AUDIT.md` (the competitor audit) and its "prevention" checks.
+Subscribe to the PR's activity and end the turn; the **Check** workflow result wakes the session.
+- **Green:** squash-merge with the connector. Keep the branch; the routine reuses it. The
+  **Build and deploy** workflow then publishes to https://matchaflavou.red.
+- **Red:** read the failing job log, fix the pages or tools, push again. After three failed attempts,
+  leave the PR open, comment with what's failing, and notify.
