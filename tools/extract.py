@@ -867,6 +867,34 @@ def first_model(node):
     return None
 
 
+def gui_node(node):
+    """The node of an item definition that the game draws in the inventory: the `gui` case of a
+    display_context select, otherwise the default branch (as first_model). Returns a `model`,
+    `special` or `composite` node, which tools/images.py renders."""
+    if not isinstance(node, dict):
+        return None
+    t = node.get('type', '').replace('minecraft:', '')
+    if t in ('model', 'special'):
+        return node
+    if t == 'composite':
+        return dict(node, models=[m for m in (gui_node(x) for x in node.get('models', [])) if m])
+    if t == 'select' and node.get('property', '').endswith('display_context'):
+        for case in node.get('cases', []):
+            when = case.get('when')
+            if 'gui' in (when if isinstance(when, list) else [when]):
+                return gui_node(case.get('model'))
+    for k in ('fallback', 'on_false', 'on_true'):
+        m = gui_node(node.get(k))
+        if m:
+            return m
+    for k in ('cases', 'entries'):
+        for case in node.get(k, []):
+            m = gui_node(case.get('model'))
+            if m:
+                return m
+    return None
+
+
 def model_textures(model_ref, depth=0):
     ns, p = model_ref.split(':') if ':' in model_ref else ('minecraft', model_ref)
     for base in (os.path.join(RP, ns, 'models', p + '.json'), os.path.join(VASSETS, 'models', p + '.json') if ns == 'minecraft' else ''):
@@ -893,11 +921,16 @@ def texture_path(tex_ref):
 
 def icon_for(item):
     refs = list(item['models']) or [item['base_id']]
+    own = item['components'].get('item_model')  # the model the item really wears comes first
+    if isinstance(own, str) and own in refs:
+        refs.remove(own)
+        refs.insert(0, own)
     for ref in refs:
         f = resolve_item_model(ref)
         if not f:
             continue
-        m = first_model(load(f).get('model', {}))
+        definition = load(f).get('model', {})
+        m = first_model(definition)
         if not m:
             continue
         tex, parent = model_textures(m)
@@ -908,7 +941,8 @@ def icon_for(item):
                 if p:
                     return {'texture': os.path.relpath(p, ROOT), 'kind': 'item' if k == 'layer0' else 'block',
                             'faces': {kk: os.path.relpath(texture_path(v), ROOT) for kk, v in tex.items()
-                                      if not v.startswith('#') and texture_path(v)}}
+                                      if not v.startswith('#') and texture_path(v)},
+                            'model': m, 'gui': gui_node(definition)}
     return None
 
 
