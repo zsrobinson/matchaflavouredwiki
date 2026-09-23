@@ -127,6 +127,7 @@ Easy is close to vanilla mob behavior: zombies, husks and spiders are left uncha
 * The 1.10 release notes warn: "If you are playing on HARD, SET IT BACK TO NORMAL, unless you want to be angry".<ref>{{Cite changelog|1.10|quote=If you are playing on HARD, SET IT BACK TO NORMAL, unless you want to be angry}}</ref>
 * The chat message calls the difficulty the "gamemode".
 * An unused function would give Normal baby zombies {{Hp|5}}; Normal actually uses the shared Easy and Normal function, which gives {{Hp|4}}.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_baby_zombies.mcfunction}}</ref>
+* The developer added difficulty support after watching a video of a player new to Java Edition who was frustrated by the fast zombies. Having promised a pack for casual players, the developer made Easy close to vanilla while keeping the harder zombies on Normal and Hard for players who liked them.<ref>{{Cite video|id=wavOi0ULYpQ|title=How Criticism changed Matcha Flavoured|quote=I made it so that the game scans the world, and as it's scanning, it detects the difficulty level, and it'll change the mob modifications depending on what that difficulty mode is. I did that specifically because of that one player that I watched who was becoming frustrated.}}</ref> The developer also regretted the word "casual" in the pack's first video, where it was chosen as the opposite of "technical" players.
 
 == See also ==
 * [[Death]]

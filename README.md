@@ -100,59 +100,25 @@ changed in the data.
 Editing: change files under `wiki/pages/`, run `tools/sync.sh`, check the page, and commit.
 Title ↔ file name: the namespace is the folder, and a `/` in a title is written as `%2F`.
 
-## Updating the wiki after a new Matcha Flavoured release
+## Keeping the wiki current (autopilot)
 
-Give the following prompt to a coding agent in this repository, or follow it yourself.
+The wiki is derived entirely from upstream sources, so a scheduled agent keeps it current:
 
-````text
-Matcha Flavoured has released a new version. Update this wiki (a git repo; read README.md,
-wiki/STYLE.md, wiki/PAGES.md and wiki/AGENT_BRIEF.md first) so that it documents the new
-version completely and accurately. Use only the pack's source code, its official release
-notes and transcript.txt as sources.
+- `tools/check_upstream.py` compares three sources with `tools/upstream.json`: the pack's GitHub
+  commits, Modrinth releases and the developer's YouTube uploads. It exits `0` when nothing changed,
+  which is the usual case and takes seconds.
+- When something changed, the agent follows **[AUTOPILOT.md](AUTOPILOT.md)**:
+  1. fetch the sources and transcripts;
+  2. regenerate the data pages;
+  3. read the code diff, release notes and new transcripts;
+  4. update the written pages;
+  5. open a pull request labelled `autopilot`;
+  6. merge it once the **Check** workflow passes. **Build and deploy** then publishes the site.
+- Video transcripts are primary sources and are kept in `sources/transcripts/` (the first design
+  video is also `transcript.txt`). `tools/fetch_transcripts.py` adds new ones.
 
-1. Refresh the sources.
-   - Note the old pinned commit: OLD=$(cat tools/source.lock)
-   - Run tools/fetch_sources.sh --update. It moves the pack to origin/main, rewrites
-     tools/source.lock and refetches the release notes into source/changelogs/.
-   - If MF_datapack/pack.mcmeta now names a new Minecraft version ("x for 26.y"), put that
-     version in tools/mc_version.txt, delete the matching source/vanilla-* folders and rerun
-     tools/fetch_sources.sh so vanilla diffs use the right version. (Check that misode/mcmeta
-     has the "<ver>-data-json", "<ver>-assets" and "<ver>-summary" tags.)
-2. Understand what changed.
-   - Read every new file in source/changelogs/ and the diff of the pack's changelog.md.
-   - Run git -C source/matcha-flavoured log --oneline $OLD..HEAD and
-     git -C source/matcha-flavoured diff --stat $OLD..HEAD, then read the actual diffs of
-     changed functions, recipes, loot tables, enchantments, advancements, trades, worldgen and lang.
-     Changelogs are incomplete; the code diff is the truth.
-3. Regenerate and see the data diff.
-   - docker compose up -d, then tools/build.sh.
-   - git diff --stat wiki/generated, then git diff wiki/generated: new, removed and changed items,
-     recipes, drops, trades, stats and advancements.
-   - If the extractor or generator fails or misreads a new data format (e.g. a new component
-     or recipe type), fix tools/extract.py or tools/generate.py rather than working around it.
-4. Update the hand-written pages (wiki/pages/Main).
-   - For every change found in step 2 or 3, find the affected pages (grep -ril "<item or mechanic>" wiki/pages)
-     and update the prose: numbers, behavior, progression advice, tables written by hand.
-     Grep for old values that changed (durations, damage, chances) to catch stale mentions.
-   - New items, mechanics, structures or mobs: write full articles following STYLE.md
-     (replacing the generated stubs) and add them to wiki/PAGES.md, the relevant overview
-     pages and the navboxes.
-   - Removed features: keep the article, mark the item as removed in the lead ("was an item
-     … removed in <version>"), add it to "Removed features", and keep its History.
-     Redirect only if it was renamed or merged.
-   - Add a {{History line|<version>|...}} to the History section of every affected page.
-5. Version pages.
-   - Create "Matcha Flavoured <version>" (wiki/pages/Main/Matcha Flavoured <version>.wiki), modeled on
-     the existing version pages, add it to "Version history", update "Upcoming features"
-     (move shipped items out), and update "Changes from vanilla" and "Matcha Flavoured" if anything
-     major changed. {{Current version}} updates itself from pack.mcmeta.
-6. Check.
-   - tools/sync.sh --all, then python3 tools/check_site.py. Fix every template or Lua error, and
-     every red link that isn't a planned page.
-   - Screenshot the main page and a few changed pages with tools/screenshot.sh and look at them.
-7. Commit: git add -A && git commit -m "Update for Matcha Flavoured <version>". Include the
-   pinned commit in the message.
-````
+To run it on a schedule, point a daily agent (for example a Claude Code scheduled routine) at this
+repository with the prompt "Follow AUTOPILOT.md". To update by hand, follow the same file.
 
 ## Licence
 

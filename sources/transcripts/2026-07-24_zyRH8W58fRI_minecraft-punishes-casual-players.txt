@@ -1,0 +1,666 @@
+# Minecraft punishes casual players. I made a datapack to fix it.
+# https://www.youtube.com/watch?v=zyRH8W58fRI (uploaded 2026-07-24 by Klei_Wright)
+# Auto-generated captions: names are often misspelled; the pack's code is authoritative.
+
+Why is following a YouTube tutorial,
+sitting for hours AFK, why is that so
+much more efficient than playing the
+game?
+Iron golems, an artificial being held
+together with Jewish magic, created to
+protect people.
+Why do we melt them down for ingots?
+Do cows deserve to be confined to a
+small space, bred for their children to
+be killed?
+Am I silly
+for giving empathy to a fictional
+creature?
+Am I playing this game
+wrong?
+Technical players, those who like to
+build mob farms, are rewarded over and
+over and over again. Their machines,
+their ideas are so efficient that we are
+expected
+to find a tutorial to copy. Mojang
+designs the game around this knowledge.
+They expect you to make mob farms.
+Instead of playing the game, exploring
+caves, having fun with TNT, plundering
+dungeons and trial chambers, Minecraft
+keeps telling us over and over that what
+the correct answer is. That what we
+should be doing is following a tutorial
+to a machine we didn't design
+and sit at it.
+This game isn't made for people like us.
+Minecraft punishes us, makes us work 10
+times hard for 1/10 the resources
+technical players get. Mojang is letting
+players optimize the fun out of their
+games, punishes people who want to treat
+this fictional world like a real one,
+punishes its casual players for wanting
+to have fun.
+How can we change that?
+This video is about the design of Matcha
+Flavored, a data pack I created, [music]
+the reasons I made the changes I did,
+and the explanations for why I made
+them. If you just want to try it out, I
+have a trailer video with some cool
+features highlighted. [music]
+Download it, use it, see if it's for
+you. But if you want an expansion on
+some of Minecraft's design flaws, if you
+want to know why being able to craft
+shulkers with a lever and a chest isn't
+overpowered, actually, then I encourage
+you to stick around.
+When When started my forever world, I
+just came off of playing Raspberry
+Flavored, a mod pack [music] so good
+that I didn't want to leave.
+My only problem with it was that it was
+a mod pack.
+I didn't want my Forever World to be a
+modded one, so I had to settle things
+myself. I needed a ton of sand, and I
+didn't want to tear up my desert. I
+added a recipe that let me blast [music]
+cobble into gravel and gravel into sand.
+Really simple, really silly, but it
+worked. One little change stopped me
+from demolishing an entire biome.
+And after that, I thought,
+"What else? What other changes could I
+make that would let me never touch
+another mob grinder again? And how much
+of Raspberry Flavored's great design
+could I implement into my own data
+pack?"
+I started adding a bunch of foods and
+items, some functional blocks, and a ton
+of tweaks to the resource economy. I
+found myself able to make big builds.
+Big builds for me, at least. I've never
+made so much stuff. I've never made
+things so big in this game.
+And the only farm I ever made
+was for moss.
+&gt;&gt; [music]
+&gt;&gt; In Matcha Flavored, most ingredients
+special abilities. I call them
+intrinsics. Cooking an ingredient can
+awaken whatever intrinsic is hidden in
+the raw [music] food. Pumpkin, for
+example, does nothing on its own, but
+grill it in an oven or a campfire, and
+[music] you'll find that it gives a very
+short amount of resistance. This can
+give you some ideas. [music] Preserve
+the pumpkin into pumpkin jam for more
+potent resistance, or bake it with sugar
+and spice to make a delicious empanada.
+Breath of the Wild had something
+similar. I love that game. [music] Being
+able to predict and anticipate the
+effects of certain ingredients I found
+really fun.
+All ingredients with intrinsics have at
+least three corresponding foods. Simple
+preparation, preservation, and a meal.
+Simple preparation isn't very useful
+[music] in terms of effect, but can give
+you an idea of what these foods might
+look like at their full potential. Berry
+mash isn't something most people will
+make in droves,
+but sweet berry Danish?
+Now, there's something we can all get
+behind.
+I made the decision to offload most
+potion effects into foods. I've always
+found that Minecraft's hunger system
+isn't very fun or engaging for me.
+The sprinting limitation is good in
+theory, but in practice only serves to
+frustrate me. The punishment is not
+severe enough to be interesting and the
+remedy is not difficult enough [music]
+to be engaging.
+I do think though that the hunger system
+in beta was really fun. So, for Matcha
+[music] Flavored, I decided that the
+hunger and healing should be thrown out
+entirely. Instead, I tried to mimic the
+magic that previous system had.
+No hunger bar and no natural
+regeneration. You have to eat to heal
+and you're never given a limitation on
+sprinting.
+I know that might be controversial for
+some. If you can always sprint, doesn't
+that mean hostile mobs won't be a
+threat?
+But, put a pin in that. We'll come back
+to it later.
+Allowing foods to take over the niche
+once held by potions [music] means that
+players will search for more diverse
+food intakes based on the potion effect
+they need. And because unlike potions,
+food stack, it makes obtaining potion
+effects far more accessible.
+If they're planning a trip to hell,
+they'll want to find some melons first.
+If they're caving, they should probably
+grab some glow berries or carrots. As
+soon as they get to the end, they'll
+make sure they stock up on chorus fruit.
+Players who progress slowly, invest
+their time into cooking and farming are
+rewarded for their efforts.
+And since animal flesh holds no special
+properties, [music] players will be less
+incentivized to manufacture
+slaughterhouses. Instead, cultivating
+the small amount of crops they would
+need according to their play style.
+There are 12 ingredients with unique
+effects [music] plus two more that act
+as secret ingredients, a few secret
+foods and four special meals that
+[music] have to be cooked in an oven to
+make. Green curry, Japanese curry,
+paneer makhani, and ramen. Some of my
+[music] favorite foods and all of their
+effects are so good and long-lasting, I
+think everyone will find them useful.
+Right now, there's [music] about 51
+different foods, not including meat or
+bread, and about seven of those are
+secret recipes.
+I'd love to add more in the future, but
+&gt;&gt; [music]
+&gt;&gt; I wanted to get the pack out first.
+So, feel free to sprint forever and eat
+only when you think you should.
+Have fun experimenting [music] with each
+ingredient and discovering what
+properties each food holds.
+&gt;&gt; [music]
+&gt;&gt; In Matcha flavored when exploring, when
+finding rare books or fighting powerful
+[music] mobs, you'll be rewarded with a
+few unique items.
+Divine fragments, divine [music] favors,
+and crystal hearts.
+We'll talk about divine fragments and
+favors later, but crystal hearts do
+something quite [music] special.
+Crystal hearts, when collected,
+permanently increase the amount of
+health you have. [music] And at any
+time, you can have up to 30 hearts
+total. And when you die, if you die, you
+won't lose your items. Instead, you lose
+a single heart.
+I've always found Minecraft's death
+system to be really punishing. [music]
+I know for a lot of people it works.
+Losing items is fun for them, but it
+isn't too fun for me. I grow attached to
+my tools. Sometimes I like being a
+little stupid and taking risks, [music]
+but when I lose all of my items to lava,
+it can be really demoralizing.
+It's so punishing that I don't really
+want to play anymore.
+&gt;&gt; [music]
+&gt;&gt; My solution to this was just to turn
+keep inventory on, but that creates a
+new problem. If death has no [music]
+punishment at all, if there are no
+stakes, no reason to stop from dying,
+I'll find myself just tempted to jump
+off a cliff so I can teleport back home.
+I needed a solution to this.
+Thus, crystal hearts.
+I found that the system lets me get away
+with doing something stupid every now
+and then, but if I play too recklessly,
+[music] I'll lose so much health that
+I'll be beating myself up trying to be
+more careful.
+This, I think, is a good punishment for
+players like me [music] who enjoy
+playing more casually and more
+recklessly. And it puts players in an
+interesting position. Do you spend all
+of your hard-earned diamonds making
+[music] crystals, or do you save them
+for your tools?
+Do you blow through 30 diamond blocks
+just to get the edge on the upcoming
+bastion, or do you instead spend your
+time fishing and exploring to make up
+for the hearts you need?
+I want to give players options, and I
+want each option to be as rewarding as
+the other. This is a game about what you
+want to do.
+And each mechanic should reinforce that.
+&gt;&gt; [music]
+&gt;&gt; I tried to make wandering traders a bit
+more They'll buy music discs, carry maps
+to nearby villages, but they also
+[music] have a new item.
+Refugee applications. Villagers who need
+a home after something terrible has
+happened to them. Welcome the refugees
+in and make a place for them [music]
+here. Villagers are famously pacifist.
+They tend not to survive for too long on
+their own, so I added a band-aid fix for
+this.
+Warding stones can protect your base
+when you aren't there, burning any
+undead within range. Plus, warding
+stones heal all nearby friends of
+villagers. Once you put them down, they
+can't be picked back up. They'll
+shatter, revert to their raw unstable
+form. So, place them carefully.
+Villager trades have been overhauled and
+with [music] unlimited trades, there's
+no need to keep them locked in a closet
+with their workbench to restock.
+Emeralds have been renamed [music] to
+obols because
+I like that more. I I know it's stupid,
+shut up. Obols are the same as emeralds,
+but much harder to come across.
+Partially due to their overall rarity in
+chests, but also because villagers no
+longer buy anything from players. No mob
+grinders or fully automated melon farms
+can make you rich. Fisherman are the
+only villager that will buy items from
+you and pay [music] handsomely. So, even
+if you fish for a bit, fail to catch any
+treasure, you can still take home a few
+bucks when you get back to your base.
+At the end of the day, I hope I can
+allow players to substitute one form of
+grinding for another. If you don't feel
+like mining, go explore instead. You'll
+still be able to get the stone materials
+you need. And if you don't like cutting
+down trees, go fish. You can come back
+to your base and trade your loot for
+logs.
+&gt;&gt; [music]
+&gt;&gt; Zombies are fast now, like really fast.
+It's actually pretty scary. Their
+pre-existing pack mechanics [music]
+combined with their new speed makes
+nighttime a really risky proposition.
+On top [music] of that, only undead
+spawn on the surface now. Creepers and
+spiders, they prefer living in caves or
+forests, [music]
+but not everything is harder. All
+skeletons have had their max HP cut in
+half. I gave creepers a little less
+health and cave spiders only two hearts.
+[music]
+But, I I also made them very fast, so
+they're pretty nasty now.
+Rotten flesh no longer exists. Zombies
+[music] instead drop tattered leather,
+an ethical way of sourcing a much-needed
+item. In addition, all undead mobs drop
+raw [music] Estus or Estus Ash, an ode
+to a brilliant game, of course.
+If collected, [music] raw Estus heals
+the player and turns into Estus Ash, a
+powerful magic component which we'll get
+[music] back to later.
+I made these monster changes because of
+the crazy buffs and tools I've given the
+players. The monsters deserve a fighting
+chance.
+But, this means early game is much more
+difficult than late game. In the
+beginning, you'll have to strategize and
+plan your moves carefully.
+You just [music] found a dungeon, got a
+crystal heart and a divine fragment. You
+have to be careful getting out because
+one wrong step and you'll lose the heart
+you've been looking for [music] for so
+long.
+Did you bring carrot cupcakes? Did you
+think about making a sweet berry Danish
+or pumpkin jam? Minecraft is a survival
+game, yes, but late game should feel
+markedly different from early game. And
+I think it's a shame that in Minecraft,
+we always [music] end up skipping the
+night.
+The night is peaceful.
+Should be sometimes, right?
+You have full netherite gear. You killed
+the Ender Dragon. You shouldn't have to
+contend with zombies when you just want
+to finish your back porch.
+That's why, after you kill the Ender
+Dragon,
+something changes.
+&gt;&gt; [music]
+&gt;&gt; No zombies anymore. No more skeletons or
+creepers. You did what you were supposed
+to.
+You killed a god.
+You freed the end from her reign. You
+freed the world from her control.
+&gt;&gt; [music]
+&gt;&gt; You deserve a reward.
+A big one.
+Nothing here now to distract you from
+building.
+Of course, it's it's not peaceful mode.
+Deep in the earth, evil still walks.
+But, here,
+up here, it's safe.
+And it should be.
+&gt;&gt; [music]
+&gt;&gt; I love Minecraft's early game, but often
+when I start a new world, I find myself
+frustrated with inventory management,
+slow tools, and a lack of enchantments I
+feel I need to play the game. In an
+effort to curb my end-game ambitions, I
+thought it would be better to make the
+quality of life kinder for early game
+and encourage players to take their
+time.
+Make them feel like the end is something
+they should do only when they're ready,
+when they want the rewards,
+&gt;&gt; [music]
+&gt;&gt; not when they feel like they need it to
+build a house.
+Shulkers are the player's best tool to
+combat inventory management. I don't
+think something that useful and that
+necessary should be locked behind
+end-game content. I know for me it made
+me feel like before I could even build,
+I'd have to finish the game first.
+So, I added craftable shulkers, and I
+made them pretty cheap.
+Many people might say that's
+overpowered, but I don't think something
+being overpowered is actually a problem.
+The mace is overpowered. It can one-shot
+a warden,
+but it isn't broken, is it?
+Overpowered isn't the question you
+should be asking.
+&gt;&gt; [music]
+&gt;&gt; Instead, ask is it fun?
+Does having access to shulkers in the
+early game ruin the player experience?
+Does it make it less fun?
+No,
+it doesn't.
+For me, it only makes early game more
+fun.
+Delabres and Maddox are two new tool
+types that function as hybrid tools.
+[music]
+They're both real tools with generalized
+niches. Delabres work as a pickaxe and
+an axe combined. Maddox are a shovel hoe
+hybrid, but hybrid tools base mining
+speed aren't as fast as their original
+counterparts.
+If you find yourself frustrated that
+your hot bar is always full of tools and
+don't mind mining a little slower, the
+delabre and madic are a good choice for
+you.
+It seems silly, but a small change like
+this really helps with Minecraft's
+inventory management system, and it
+makes interacting with it a lot less
+frustrating.
+I also added four new metals. Hepatizon,
+a gold-silver-copper alloy that has high
+base mining speed and when worn, makes
+you run faster.
+Shikudo, a gold-copper alloy that
+cleanses malefic, steals life from mobs,
+and whose tools have silk touch as an
+intrinsic.
+Steel, processed iron that can make iron
+doubly efficient. It's very durable,
+knockback and blast resistant, and its
+tools have a knockback intrinsic.
+Electrum, a silver gold alloy with a
+maximum looting and fortune. Its armor
+and tools when worn or held burn nearby
+dead.
+I've also given intrinsics to a couple
+of pre-existing armor sets, but I guess
+you'll have to play to find out what
+those are.
+I hope these alloys are tempting in
+their own right, and I hope too that
+you'll have trouble deciding on which
+alloys and equipment you choose to wear.
+The goal with these sets was to make
+each option enticing enough that every
+player will have a different idea on
+what the best set and combination is.
+That every player, even after they kill
+the dragon, will choose different armor
+depending on their preferences.
+For me, it's bronze hands down, but I
+still find myself making and wearing
+different armor for different [music]
+situations.
+I know when I go after the Wither, I'll
+need a palatinate chestplate, and when
+I'm caving, adamant always trumps my
+bronze. [music]
+Actually, I should I should also mention
+I've removed the XP and repairing cap.
+All tools can be repaired forever. Alloy
+tools are repaired using their base
+metal components, except for adamant,
+which requires diamond blocks, gold
+blocks, or adamant scrap to repair. That
+means even in late game, you'll need to
+go mining for materials.
+All right. Finally, let's talk about
+enchantments.
+&gt;&gt; [music]
+&gt;&gt; Estus Ash and Benzene, the rare divine
+gifts. These are powerful magic
+artifacts that you'll need in order to
+engage with the new enchanting system.
+Enchantments are no longer random or use
+XP to receive. Instead, you craft them,
+and the rarest, most difficult
+enchantments to obtain
+efficiency, unbreaking, protection,
+sharpness, and mending.
+All the enchantments everyone wants.
+Estus Ash, an ender pearl, and Benzene
+together can make stabilized Estus. This
+is a vital crafting component for most
+magic.
+Hellbound books use them, the warning
+stone has stabilized Estus at its
+center, and the Eye of Ender is crafted
+from this material. Don't worry too
+much, ender pearls are not nearly as
+hard to get anymore. Most mob drops have
+been increased to reduce the need for
+mob grinders or tedium. If you find and
+kill an Enderman, you'll get a pearl.
+But this system is why divine fragments
+are so useful and why divine [music]
+favors are so much more so.
+Divine fragments can be reverse crafted
+from a divine favor and vice [music]
+versa. Both are found by vanquishing
+powerful forces or breaking spawners.
+The first time you kill the Ender
+Dragon, you'll be granted a divine
+favor. Of course, killing Withers will
+do the same. I wanted to have a way to
+disincentivize mob grinders and I think
+this one mechanic does a lot of the
+heavy lifting. You could make a simple
+mob grinder, but the divine fragment is
+staring you in the face. If you want to
+get to the end, you need that fragment.
+If you want to make an unbreaking book,
+Bedrock Busters, Crystal Hearts, or
+netherite, you need that fragment.
+What are you going to choose?
+Is a mob grinder really worth it?
+I added a couple of new enchantments, no
+spoilers, of course. More secret recipes
+for food, tools, armor, and shields. I
+made a lot of tweaks to the recipes to
+make them kinder for players. Prismarine
+is craftable from copper. Stone cutters
+give you more bang for your buck. Can be
+used with almost all materials. Six and
+chests can be made directly from logs. I
+even added little statues that let you
+change the weather. Almost 50 different
+fish you can catch, including frogs. I
+even went through and made small changes
+to visuals no one else would care about
+but me.
+I made the moon work correctly. I mean,
+how cool is that? I put my heart into
+this thing. Even though I'm terrible at
+computer science, even though I'm just a
+guy who loves this game to the point of
+endless criticism.
+I really tried.
+And I'm happy I did.
+But all of this design, all of it isn't
+worth anything if you can't test it
+[music] yourself.
+So, I suppose now it's time for me to
+ask you for a favor.
+I want you to play this pack. Tell me
+what you like and what you wish was
+different. This whole pack, all the
+textures and data, I put it under the
+Creative Commons [music] the BY-NC-SA
+4.0 license. Okay, okay, it just means
+it just means that anyone can use any
+part of this pack [music] and make it
+their own. Do you like the food recipes
+but think everything else is stupid?
+Fair enough, man. Take the recipes, take
+the textures, go make your own pack with
+my stuff and see what you can do with
+it.
+The only thing you can't do is sell it.
+I want this to be a collaborative
+effort, something we can all work on
+together.
+There are a lot of textures I'm not
+happy with. The bread and naan, for
+example, they don't look as good as I
+hoped they would. Maybe you can make
+something better.
+I want there to be a mutual
+understanding with people who make
+offshoots of this [music] pack that all
+of our work is shared between each
+other.
+No one person owns these textures and if
+you have a texture I think is really
+cool, I want to be able to put it into
+my own.
+I mean, with your credit, of course.
+I'm happy to take feedback and
+criticism. As long as you aren't an
+about it, I'm all ears.
+Maybe some of the armor is too
+overpowered. Maybe it isn't overpowered
+enough. That's the kind of stuff I want
+to hear from you all.
+On the Modernth page, there's a feedback
+[music] form. Go check it out. Tell me
+what you think after you play it. I'm
+going to make an appendix video to this,
+hopefully in like a week. I want to give
+you all a time to play the pack. Tell me
+what you think of it and hopefully by
+then, we can have a discussion, you and
+I. A chance for me to elaborate, to
+defend or revise certain changes and
+design decisions.
+I'll pick out some comments I find
+particularly inspiring and we can
+discuss more then.
+Thank you, though. Really. Thank you.
+This data pack, when I started making it
+over a year ago, it was cobbled together
+and really sloppy.
+Maybe it still is.
+But you, all of you, gave me the
+motivation and inspiration I needed to
+really polish this thing up.
+I wouldn't have made this if it weren't
+for you.
+I actually used Jermsy Boy's textures
+for a long time before the ecology
+video. That video, the reaction to the
+textures made me redo everything from
+scratch. I learned a lot in that
+process.
+I wanted to to it so that anyone could
+use it, so that everyone could take it
+for free and use it however they want.
+That was the goal.
+And I made it.
+And I'm really happy about that.
+I can't believe I've been making videos
+for more than a year now.
+Time has gone so fast. I don't [music]
+think you all realize how important you
+were for me.
+When I was going through my depression,
+it was hard to get out of bed
+to do something for me.
+But I don't know.
+Now Now it feels like maybe I'm doing it
+for you, too.
+And maybe that promise made it easier to
+get up in the morning.
+And maybe that promise
+maybe that promise convinced me to
+finally start living again.
+&gt;&gt; [music]
+&gt;&gt; Dang it.
+Don't touch that.
+Don't.
+You'll get tetanus.
+Coda.
+Tetanus.
+Well, look here.
+Coda, look.

@@ -9,7 +9,8 @@ of minecraft.wiki. The repository root is `/Users/zsrobinson/code/matcha-wiki`.
    minecraft.wiki's tone and organization is the most important requirement after accuracy.
 2. `wiki/PAGES.md`: the page plan and which area owns what. Write only your area's pages.
    Link to other areas' pages by their planned titles.
-3. `transcript.txt`: the developer's introduction video (design intent, history).
+3. `transcript.txt` and `sources/transcripts/*.txt`: the developer's videos about the pack (design
+   intent, history). Cite them with `{{Cite video|id=<video id>|title=<title>|quote=...}}`.
 
 ## Sources (only these)
 - `source/matcha-flavoured/`: the official repository, checked out at the synced commit.

@@ -1,0 +1,42 @@
+# Validate a pull request: full build from the pinned sources, render every page, and fail on
+# template/Lua errors or broken links. The autopilot (AUTOPILOT.md) merges its PRs only when this passes.
+name: Check
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install pillow
+      - name: Fetch sources (pack at pinned commit, vanilla data)
+        run: tools/fetch_sources.sh
+      - name: Start MediaWiki (build-time renderer)
+        run: |
+          mkdir -p site/data site/images build
+          docker compose up -d --build
+          sleep 5
+          docker exec matcha-wiki bash -c "chown -R www-data:www-data /var/www/data /var/www/html/images && php maintenance/run.php installPreConfigured"
+      - name: Build wiki
+        run: tools/build.sh
+      - name: Generated pages are committed and current
+        run: |
+          python3 tools/generate.py
+          git diff --stat --exit-code wiki/generated || (echo "::error::wiki/generated is out of date: run tools/generate.py and commit" && exit 1)
+      - name: Check every page (errors and broken links)
+        run: |
+          python3 tools/check_site.py | tee check.txt
+          grep -q "^0 distinct red-link targets" check.txt || (echo "::error::broken links, see above" && exit 1)
+      - name: Static export works
+        run: python3 tools/export_static.py --out dist

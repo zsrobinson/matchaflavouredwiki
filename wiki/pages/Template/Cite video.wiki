@@ -1,3 +1,6 @@
-<includeonly>Klei Wright, [https://www.youtube.com/watch?v=0yf9G_vfi-U "Matcha Flavoured" design video] (YouTube){{#if:{{{quote|}}}|: "{{{quote}}}"}}</includeonly><noinclude>
-Cites the developer's introduction video, which explains the pack's design. Use inside <code><nowiki><ref></nowiki></code>.
+<includeonly>Klei Wright, [https://www.youtube.com/watch?v={{{id|zyRH8W58fRI}}} "{{{title|Minecraft punishes casual players. I made a datapack to fix it.}}}"] (YouTube{{#if:{{{time|}}}|, at {{{time}}}}}){{#if:{{{quote|}}}|: "{{{quote}}}"}}</includeonly><noinclude>
+Cites one of the developer's videos. Use inside <code><nowiki><ref></nowiki></code>. Transcripts of every Matcha Flavoured video are kept in the repository under <code>sources/transcripts/</code> (the first one is <code>transcript.txt</code>).
+
+* Default: the design video (<code>zyRH8W58fRI</code>).
+* <code><nowiki>{{Cite video|id=wavOi0ULYpQ|title=How Criticism changed Matcha Flavoured|quote=...}}</nowiki></code>: the appendix video.
 [[Category:Templates]]</noinclude>

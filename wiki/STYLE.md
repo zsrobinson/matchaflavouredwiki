@@ -14,7 +14,7 @@ Every statement has to be checkable against a primary source. In priority order:
    files, resource pack lang and models). This always wins.
 2. **Official release notes**: `source/changelogs/*.md` (Modrinth) and
    `source/matcha-flavoured/changelog.md` (the in-development changelog).
-3. **The developer's introduction video**: `transcript.txt` in the repo root. Use it
+3. **The developer's videos**: `transcript.txt` (the design video) and `sources/transcripts/`. Use it
    for intent, design reasoning and history, never for numbers the code contradicts.
    The transcript is auto-generated, so names in it are misspelled ("Shikudo" is
    Shakudo, "delabre/Maddox" are dolabra/mattock, "Benzene" is correct).
