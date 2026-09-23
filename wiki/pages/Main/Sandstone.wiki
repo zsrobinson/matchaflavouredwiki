@@ -1,0 +1,25 @@
+{{Vanilla|Sandstone}}
+{{Infobox auto}}
+'''Sandstone''' is a stone made of compressed [[sand]]. [[Matcha Flavoured]] doubles its recipe output and adds ways to take it apart.
+
+== Obtaining ==
+{{Recipes}}
+* Four sand make 2 sandstone, where vanilla makes one; the vanilla recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sandstone.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+* A block of [[Brown Sandstone|brown sandstone]] crafts into 4 sandstone.
+* A [[Blast Furnace|blast furnace]] turns smooth sandstone back into sandstone, and two sandstone slabs craft back into a block.
+* Mined with the [[Adamant equipment|adamant]] tool intrinsic, sandstone drops smooth sandstone.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sandstone.json}}</ref>
+
+== Usage ==
+{{Uses}}
+A sandstone crafts back into 2 sand. Two sandstone and two red sandstone make 4 [[Brown Sandstone|brown sandstone]]. Doubled cut sandstone slabs show a large-brick texture; see [[Large bricks]].
+
+== History ==
+{{History
+|{{History line|1.0|Brown sandstone can be crafted back into sandstone.}}
+}}
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Natural blocks]]

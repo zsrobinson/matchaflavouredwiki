@@ -1,0 +1,24 @@
+{{Vanilla|Mud}}
+{{Infobox auto}}
+'''Mud''' is a soft, wet block. [[Matcha Flavoured]] lets it be made from [[dirt]] and a water bottle, and turned into clay.
+
+== Obtaining ==
+{{Recipes}}
+Eight dirt around a [[Glass Bottle#Water bottle|water bottle]] make 8 mud; the empty bottle is given back.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/mud.json}}</ref> Mud still forms when a water bottle is used on dirt, as in vanilla.
+
+== Usage ==
+{{Uses}}
+* Eight mud and a water bottle make 4 [[clay]].<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/clay_from_mud_and_potion.json}}</ref>
+* Eight mud and a piece of [[straw]] make 8 [[Packed Mud|packed mud]].<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/packed_mud_from_wheat.json}}</ref>
+
+== History ==
+{{History
+|{{History line|1.10|The bulk mud recipe unlocks properly.}}
+{{History line|1.12.1-alpha|Crafting mud gives the glass bottle back.}}
+}}
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Natural blocks]]

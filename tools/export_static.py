@@ -127,7 +127,7 @@ class Exporter:
             return 'href="%s%s"' % (href_for(tgt), m.group(2) or '') if tgt else m.group(0)
         doc = re.sub(r'href="/w/([^"#?]+)(#[^"]*)?"', fix, doc)
         # links a static site can't serve
-        doc = re.sub(r'<li id="(?:t-|ca-|pt-|n-recentchanges|n-randompage)[^"]*"[^>]*>.*?</li>', '', doc, flags=re.S)
+        doc = re.sub(r'<li id="(?:t-|ca-(?!mfw-)|pt-|n-recentchanges|n-randompage)[^"]*"[^>]*>.*?</li>', '', doc, flags=re.S)
         doc = re.sub(r'href="/index\.php\?title=Special:Search[^"]*"', 'href="/search/"', doc)
         doc = re.sub(r'<a href="/w/Special:[^"]*"[^>]*>(.*?)</a>', r'\1', doc, flags=re.S)
         doc = re.sub(r'<form action="/index\.php" id="searchform".*?</form>',

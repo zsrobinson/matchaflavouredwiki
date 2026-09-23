@@ -13,6 +13,8 @@ services:
       - ./site/data:/var/www/data
       - ./site/images:/var/www/html/images
       - ./build:/build:ro
+      # page sources, so each page can link to its own file on GitHub
+      - ./wiki:/var/www/wiki:ro
     environment:
       # Directory mount (not a single-file mount) so edits to LocalSettings.php are seen immediately
       MW_CONFIG_FILE: /var/www/site/LocalSettings.php

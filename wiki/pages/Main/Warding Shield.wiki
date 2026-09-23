@@ -1,5 +1,4 @@
 {{Infobox auto
-|intrinsics={{G|Warding}} 1
 |renewable=Yes
 }}
 The '''warding shield''' is a {{MCW|Shield|shield}} inlaid with silver and painted with a [[Nazar]]. It carries {{G|Warding}} 1, which works from the off hand, so it adds warding on top of whatever weapon the player holds.
@@ -7,7 +6,7 @@ The '''warding shield''' is a {{MCW|Shield|shield}} inlaid with silver and paint
 == Obtaining ==
 === Smithing ===
 {{Recipes}}
-The shield's face shows a fixed nazar pattern (a light blue circle with a black flower on white, with a blue border), whose banner layers are hidden from the tooltip.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/warding_shield.json}}</ref> Enchantments on the original shield are kept (see [[Set bonus#Intrinsic enchantments|intrinsic enchantments]]).
+A [[silver bullion]] goes in the template slot, a shield in the base slot and a Nazar in the addition slot. The shield's face shows a fixed nazar pattern (a light blue circle with a black flower on white, with a blue border), whose banner layers are hidden from the tooltip.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/warding_shield.json}}</ref> Enchantments on the original shield are kept (see [[Set bonus#Intrinsic enchantments|intrinsic enchantments]]).
 
 == Usage ==
 === Blocking ===

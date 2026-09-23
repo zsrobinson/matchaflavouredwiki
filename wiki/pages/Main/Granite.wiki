@@ -1,0 +1,24 @@
+{{Vanilla|Granite}}
+{{Infobox auto}}
+'''Granite''' is a stone that generates in large blobs underground, as in vanilla ''Minecraft''. [[Matcha Flavoured]] sells it in bulk, lets its polished and slab forms be turned back into the raw stone, and gives its doubled slabs a large-brick look.
+
+== Obtaining ==
+=== Natural generation ===
+Granite generates as in vanilla.
+
+=== Crafting and smelting ===
+{{Recipes}}
+The vanilla recipe (a diorite and a [[quartz]] make granite) is kept. Two granite slabs craft back into a block, and a [[Blast Furnace|blast furnace]] turns polished granite back into granite (5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/blast/granite_from_blasting_polished_granite.json}}</ref>
+
+=== Trading ===
+The [[Mason]] sells 4 [[Bulk blocks|bulk granite]] for 1 [[obol]] at the novice level; each unpacks into 64 granite.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/1/granite.json}}</ref>
+
+== Usage ==
+{{Uses}}
+Doubled granite and polished granite slabs show a large-brick texture; see [[Large bricks]].
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Natural blocks]]

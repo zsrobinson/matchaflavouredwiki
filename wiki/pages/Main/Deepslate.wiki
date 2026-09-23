@@ -1,0 +1,29 @@
+{{Vanilla|Deepslate}}
+{{Infobox auto}}
+'''Deepslate''' is the hard stone that makes up the Overworld below Y=0. As in vanilla ''Minecraft'', it drops cobbled deepslate when mined. In [[Matcha Flavoured]], cobbled deepslate is fired back into deepslate in a [[Mud Kiln|mud kiln]] rather than a furnace, and a wooden pickaxe cannot mine it at all.
+
+== Obtaining ==
+=== Breaking ===
+Deepslate and cobbled deepslate need at least a copper pickaxe: the pack's wooden pickaxe gets nothing from deepslate, cobbled deepslate or polished deepslate.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref> A tool with the [[Adamant equipment|adamant]] tool intrinsic smelts cobbled deepslate as it is mined, so it drops deepslate.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/cobbled_deepslate.json}}</ref>
+
+=== Smelting ===
+{{Recipes}}
+Cobbled deepslate is fired into deepslate in a [[Mud Kiln|mud kiln]] (5 seconds); the vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/deepslate.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+=== Trading ===
+The [[Mason]] sells 2 [[Bulk blocks|bulk deepslate]] for 1 [[obol]] at the apprentice level; each unpacks into 64 deepslate.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/2/deepslate.json}}</ref>
+
+== Usage ==
+{{Uses}}
+Cobbled deepslate, like cobblestone, can be blasted into [[gravel]]. Four cobbled deepslate make 4 polished deepslate, the main ingredient of the [[Blast Furnace|blast furnace]]; see [[Progression]].
+
+== History ==
+{{History
+|{{History line|1.12.1-alpha|Deepslate recipes and their unlocks were reworked; cracked deepslate bricks can be blasted into cobbled deepslate.}}
+}}
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Natural blocks]]

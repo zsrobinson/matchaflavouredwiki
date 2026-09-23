@@ -1,0 +1,33 @@
+{{Vanilla|Glass}}
+{{Infobox auto}}
+'''Glass''' is a transparent block. In [[Matcha Flavoured]] it is fired in a [[Mud Kiln|mud kiln]] from [[sand]], red sand or [[quartz]], sold in bulk, and used for cheap [[Glass Bottle|glass bottles]] and light blocks.
+
+== Obtaining ==
+{{Recipes}}
+Sand, red sand or quartz fired in a mud kiln becomes glass (5 seconds); the vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/glass_from_smoking_sand.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+=== Other sources ===
+{{Sources}}
+Mining sand, red sand or a [[Quartz Deposit|quartz deposit]] with the [[Adamant equipment|adamant]] tool intrinsic drops glass directly.
+
+=== Trading ===
+The [[Mason]] sells 3 bulk glass for 1 [[obol]] at the apprentice level; each unpacks into 64 glass.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/2/glass.json}}</ref>
+
+== Usage ==
+{{Uses}}
+* One glass makes 3 [[Glass Bottle|glass bottles]].
+* A [[stonecutter]] cuts glass into 4 glass panes, and stained glass into stained panes.
+* Glass is used in [[Phosphor lamps|phosphor lamps]], [[Electric Lamp|electric lamps]] and the spyglass.
+* Glass is in the pickaxe's mineable list.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
+
+== History ==
+{{History
+|{{History line|1.10|Quartz can be kilned into glass.}}
+{{History line|1.12.1-alpha|Glass can be cut in a stonecutter.}}
+}}
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Building blocks]]

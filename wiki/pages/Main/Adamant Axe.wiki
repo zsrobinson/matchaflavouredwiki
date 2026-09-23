@@ -1,56 +1,45 @@
 {{Infobox auto
-|intrinsics=[[Efficiency]] II<br />{{G|Smelting}} Smelting<br />{{G|Weakness}} Weakness<br />[[Unbreaking]] II
+|intrinsics=[[Efficiency]] II<br />[[Adamant equipment|{{G|Smelting}} Smelting]]<br />[[Doom|{{G|Weakness}} Weakness]]<br />[[Unbreaking]] II
 |renewable=No
 }}
 
-An '''adamant axe''' is the [[Adamant equipment|adamant]] [[Tools#Axe|axe]], made by smithing a [[Diamond Axe|diamond axe]] with [[Adamant Alloy|adamant alloy]]. It mines at speed 15 and has 5000 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_axe.json}}</ref>
+An '''adamant axe''' is the [[Adamant equipment|adamant]] [[Tools#Axe|axe]], made by smithing a [[diamond axe]] with [[adamant alloy]]. It has both the adamant tool intrinsics and the weapon's Weakness effect.
 
 == Obtaining ==
 
 === Smithing ===
 {{Recipes}}
 
-The upgrade uses no template: the template slot of the [[Smithing Table|smithing table]] is left empty.
-
-Enchantments already on the base item are kept. Where the base and the new item share an enchantment, the higher level is used.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
+The upgrade needs no template, and enchantments on the diamond item carry over; where both have the same enchantment, the higher level is kept.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
 
 == Usage ==
 
-=== Mining ===
-
-It mines axe blocks at speed 15.
-
-The pack adds beds, candles, cactus and honeycomb blocks to the blocks axes mine quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+=== Woodcutting ===
+It breaks axe blocks at speed 15 and has 5000 durability. Logs it cuts drop charcoal. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-
-It deals 10 damage with an attack speed of 1.
+It deals {{Hp|10}} damage at an attack speed of 1, tying the [[steel axe]] for damage with a faster swing. The adamant weapon intrinsic inflicts Weakness II for 8 to 12 seconds on every hit. Weakened mobs are what the [[Doom]] intrinsic of adamant armor detonates.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_weapon.json}}</ref>
 
 === Intrinsics ===
-
-* [[Efficiency]] II
-* {{G|Smelting}} Smelting: makes mined blocks drop their smelted form where the block's loot table supports it: ores drop ingots or [[Silver Bullion|silver bullion]], logs drop charcoal, sand drops glass and cobblestone drops stone.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sand.json}}</ref>
-* {{G|Weakness}} Weakness: gives the target Weakness II for 8 to 12 seconds on every hit, which feeds adamant armor's [[Doom]].<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_weapon.json}}</ref>
-* [[Unbreaking]] II
-
-The intrinsics are stored on the item and applied when it enters an inventory. See [[Adamant equipment]] for how the tier's intrinsics work together.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+Efficiency II, Unbreaking II, smelting and Weakness. The smelting intrinsic makes mined blocks drop their smelted form where the block's loot table supports it: ores drop ingots or [[silver bullion]], logs drop charcoal, sand drops glass and cobblestone drops stone.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sand.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 === Repairing ===
-
-It is repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}} or [[Adamant Scrap|adamant scrap]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+It can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}} or [[adamant scrap]]. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
 === Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Adamant Alloy|adamant alloy]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/netherite_ingot_from_blasting_netherite_materials.json}}</ref>
+{{Uses}}
+
+In a [[blast furnace]] it melts down into one [[adamant alloy]], returning the alloy but losing the diamonds.
 
 === Trading ===
-An apprentice-level [[Weaponsmith|weaponsmith]] takes it in exchange for one [[Adamant Alloy|adamant alloy]], so the alloy can be reused.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/netherite_axe.json}}</ref>
+An apprentice [[weaponsmith]] buys it for one [[adamant alloy]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/netherite_axe.json}}</ref>
 
 == History ==
 {{History|
 {{History line|1.03|The vanilla netherite recipes were blocked.}}
-{{History line|1.10|Alloy equipment can be traded to a [[Weaponsmith|weaponsmith]] for its alloy, so players can rebuild old items with updated stats.}}
-{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot and keeps the base item's enchantments. Added the "Repaired with" tooltip. [[Divinity]] was removed from adamant tools and replaced with Efficiency.}}
-{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older items can be updated with <code>/trigger update_item</code>. Adamant tools now smelt the blocks they mine.}}
+{{History line|1.10|A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
+{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. [[Divinity]] was replaced with Efficiency.}}
+{{History line|1.12.2|Now smelts the blocks it mines. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>. Now inflicts Weakness.}}
 }}
 
 == References ==

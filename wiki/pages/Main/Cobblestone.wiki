@@ -1,0 +1,31 @@
+{{Vanilla|Cobblestone}}
+{{Infobox auto}}
+'''Cobblestone''' is the rough stone that [[limestone]] (stone) drops when mined. In [[Matcha Flavoured]] it is the start of the pack's rock-processing chain: a [[Mud Kiln|mud kiln]] fires it into limestone and a [[Blast Furnace|blast furnace]] breaks it down into [[gravel]].
+
+== Obtaining ==
+=== Breaking ===
+Limestone drops cobblestone when mined without Silk Touch, as in vanilla.
+
+=== Crafting and smelting ===
+{{Recipes}}
+* Four flint in a square make 1 cobblestone.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/cobblestone.json}}</ref>
+* A blast furnace turns limestone back into cobblestone (5 seconds).
+* An [[oven]] turns mossy cobblestone into cobblestone.
+* Two cobblestone slabs craft back into a block.
+
+== Usage ==
+{{Uses}}
+* Fired in a mud kiln, cobblestone becomes limestone; the vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+* Blasted, it becomes gravel (5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/blast/gravel.json}}</ref>
+* Two cobblestone and two [[quartz]] make 4 [[diorite]].
+
+== History ==
+{{History
+|{{History line|1.12.1-alpha|Added the flint recipe; cobblestone can be blasted and kilned, and mossy cobblestone returns to cobblestone.}}
+}}
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Natural blocks]]

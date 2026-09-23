@@ -33,8 +33,7 @@ An apprentice [[weaponsmith]] buys it for one [[hepatizon alloy]], so the alloy 
 
 == History ==
 {{History|
-{{History line|1.10|Renamed from "Bronze" in the language file only, so existing items keep working. Hepatizon equipment was buffed.}}
-{{History line|1.10|A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
+{{History line|1.10|Renamed from "Bronze" in the language file only, so existing items keep working. Hepatizon equipment was buffed. A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
 {{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip.}}
 {{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}

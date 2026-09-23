@@ -1,4 +1,4 @@
-'''Armor''' in Matcha Flavoured comes in thirteen sets. Base-metal sets are crafted; alloy sets are smithed onto copper, iron or diamond armor. Several sets have intrinsics, and the [[Electrum equipment|electrum]] and [[Adamant equipment|adamant]] sets have a [[Set bonus|set bonus]].
+'''Armor''' in Matcha Flavoured comes in twelve sets. Base-metal sets are crafted; alloy sets are smithed onto copper, iron or diamond armor. Several sets have intrinsics, and the [[Electrum equipment|electrum]] and [[Adamant equipment|adamant]] sets have a [[Set bonus|set bonus]].
 
 In the video, the developer wanted every set to be "enticing enough that every player will have a different idea on what the best set and combination is."{{Cite video|quote=The goal with these sets was to make each option enticing enough that every player will have a different idea on what the best set and combination is.}}
 
@@ -30,8 +30,6 @@ In the video, the developer wanted every set to be "enticing enough that every p
 | {{ItemLink|Sturdy Leather Helmet}} || 350 || 2 || — || — || Safe fall +2 || [[Projectile Protection]] III
 |-
 | {{ItemLink|Chainmail Helmet}} || 300 || 2 || — || — || — || [[Thorns]] III
-|- class="sortbottom"
-! Full set !! !! 28 !! 9 !! 0.2 !! colspan="2" |
 |}
 === Chestplate ===
 {| class="wikitable sortable"
@@ -60,8 +58,6 @@ In the video, the developer wanted every set to be "enticing enough that every p
 | {{ItemLink|Sturdy Leather Gambeson}} || 350 || 5 || — || — || Safe fall +2 || [[Projectile Protection]] IV
 |-
 | {{ItemLink|Chainmail Chestplate}} || 300 || 6 || — || — || — || [[Thorns]] III
-|- class="sortbottom"
-! Full set !! !! 76 !! 9 !! 0.3 !! colspan="2" |
 |}
 === Leggings ===
 {| class="wikitable sortable"
@@ -90,8 +86,6 @@ In the video, the developer wanted every set to be "enticing enough that every p
 | {{ItemLink|Sturdy Leather Leggings}} || 350 || 3 || — || — || Safe fall +2 || [[Projectile Protection]] III
 |-
 | {{ItemLink|Chainmail Leggings}} || 300 || 5 || — || — || — || [[Thorns]] III
-|- class="sortbottom"
-! Full set !! !! 56 !! 9 !! 0.2 !! colspan="2" |
 |}
 === Boots ===
 {| class="wikitable sortable"
@@ -120,8 +114,6 @@ In the video, the developer wanted every set to be "enticing enough that every p
 | {{ItemLink|Sturdy Leather Boots}} || 350 || 2 || — || — || Safe fall +2<br />Step height +1 || [[Projectile Protection]] II<br />[[Feather Falling]] II<br />[[Trailblaze]] I
 |-
 | {{ItemLink|Chainmail Boots}} || 300 || 2 || — || — || — || [[Thorns]] III
-|- class="sortbottom"
-! Full set !! !! 27 !! 9 !! 0.2 !! colspan="2" |
 |}
 
 === Other armor ===
@@ -133,29 +125,29 @@ In the video, the developer wanted every set to be "enticing enough that every p
 {| class="wikitable sortable"
 ! Set !! Armor !! Toughness !! Notes
 |-
-| [[Copper equipment|Copper]] || 10 || 0 || 
+| [[Copper equipment|Copper]] || 10 || 0 || The cheapest metal set; plain copper armor protects undead from [[Warding]].
 |-
-| [[Iron equipment|Iron]] || 15 || 0 || 
+| [[Iron equipment|Iron]] || 15 || 0 || Vanilla armor values with 350 durability per piece.
 |-
-| [[Steel equipment|Steel]] || 16 || 4 || Steel is the alloy tier of iron: very durable, and its weapons and armor add knockback and blast resistance.
+| [[Steel equipment|Steel]] || 16 || 4 || Knockback resistance (0.5 for the full set) and [[Blast Protection]] on every piece.
 |-
-| [[Golden equipment|Golden]] || 12 || 0 || Golden equipment carries [[Fortune]], [[Looting]] and [[Fire Protection]] as intrinsics.
+| [[Golden equipment|Golden]] || 12 || 0 || [[Fire Protection]] on every piece.
 |-
-| [[Diamond equipment|Diamond]] || 20 || 8 || 
+| [[Diamond equipment|Diamond]] || 20 || 8 || 800 durability per piece; the base for electrum and adamant.
 |-
-| [[Shakudo equipment|Shakudo]] || 20 || 0 || Its tools have [[Silk Touch]], its weapons steal life and its armor regenerates health and cleanses effects.
+| [[Shakudo equipment|Shakudo]] || 20 || 0 || [[Cleanse]], [[magic protection]] and a regeneration effect that grows with each piece worn.
 |-
-| [[Hepatizon equipment|Hepatizon]] || 20 || 0 || It has the highest mining speeds in the pack and every piece adds movement speed.
+| [[Hepatizon equipment|Hepatizon]] || 20 || 0 || Each piece adds 10% movement speed.
 |-
-| [[Electrum equipment|Electrum]] || 20 || 12 || Its tools are the only source of Fortune III, and its armor and weapons carry [[Warding]].
+| [[Electrum equipment|Electrum]] || 20 || 12 || Each piece adds a level of [[Warding]]; the full set reaches warding 4 and grants Absorption.
 |-
-| [[Adamant equipment|Adamant]] || 20 || 12 || Its armor carries [[Doom]], its weapons inflict Weakness and its tools smelt what they mine.
+| [[Adamant equipment|Adamant]] || 20 || 12 || [[Doom]] on every piece, plus Protection I, Unbreaking II and knockback resistance.
 |-
-| [[Leather armor|Leather]] || 7 || 0 || Leather armor is crafted from tattered leather, the item [[Zombie|zombies]] drop, and every piece adds safe fall distance.
+| [[Leather armor|Leather]] || 7 || 0 || Every piece adds 1 block of safe fall distance.
 |-
-| [[Sturdy leather armor|Sturdy Leather]] || 12 || 0 || Sturdy leather armor is a stronger leather set with Projectile Protection and extra safe fall distance.
+| [[Sturdy leather armor|Sturdy Leather]] || 12 || 0 || Projectile Protection and 2 blocks of safe fall distance per piece; the boots add step height.
 |-
-| [[Chainmail armor|Chainmail]] || 15 || 0 || Chainmail armor is craftable from iron chains and every piece has Thorns III.
+| [[Chainmail armor|Chainmail]] || 15 || 0 || Craftable from iron chains; every piece has Thorns III.
 |}
 
 == References ==

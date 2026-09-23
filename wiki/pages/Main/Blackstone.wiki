@@ -1,0 +1,26 @@
+{{Vanilla|Blackstone}}
+{{Infobox auto}}
+'''Blackstone''' is a dark stone found in [[Hell]], mainly in basalt deltas and [[Bastion Remnant|bastion remnants]]. [[Matcha Flavoured]] sells it in bulk and lets its slabs be crafted back into full blocks.
+
+== Obtaining ==
+=== Natural generation ===
+Blackstone generates in Hell as in vanilla.
+
+=== Crafting ===
+{{Recipes}}
+Two blackstone slabs craft back into a block.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/blackstone_from_blackstone_slabs.json}}</ref>
+
+=== Trading ===
+The [[Mason]] sells 1 bulk blackstone for 1 [[obol]] at the expert level; it unpacks into 64 blackstone. The item has no English name, so the game shows its translation key, <code>item.kleispack.trade.bulk_blackstone</code>.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/4/blackstone.json}}</ref> See [[Bulk blocks]] and [[Known bugs]].
+
+=== Bartering ===
+{{Sources}}
+
+== Usage ==
+{{Uses}}
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Natural blocks]]

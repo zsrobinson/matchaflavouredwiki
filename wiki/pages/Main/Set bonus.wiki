@@ -96,7 +96,7 @@ Each category of intrinsic is exclusive within itself, so an [[anvil]] can't put
 == History ==
 {{History|
 {{History line|1.10|Added the "Set Bonus", "Per Equipment Bonus" and "Elytra Bonus" tooltip headers. Shakudo gained per-piece regeneration, the electrum set bonus was buffed and made clearer, and the adamant set bonus was slightly nerfed.}}
-{{History line|1.11|Fixed electrum, adamant and shakudo armor causing severe lag in multiplayer.}}
+{{History line|1.12|Fixed electrum, adamant and shakudo armor causing severe lag in multiplayer.}}
 {{History line|1.12.1-alpha|The electrum, shakudo and adamant intrinsics became exclusive with each other.
 Fixed enchantments being overwritten when smithing, by applying intrinsics after the item is made.
 Adamant and electrum intrinsics no longer apply to every player on a server.

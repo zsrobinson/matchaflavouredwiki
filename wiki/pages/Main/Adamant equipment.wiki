@@ -4,7 +4,7 @@
 == Obtaining ==
 Adamant alloy is crafted from four [[Adamant Scrap|adamant scrap]], four gold ingots and a [[Divine Fragment|divine fragment]]. Diamond equipment is upgraded at a [[Smithing Table|smithing table]] ([[Smithing Upgrade Template|template]] for the dolabra, mattock and claymore). It is repaired with blocks of diamond or adamant scrap.
 
-In the video the developer says adamant "requires diamond blocks, gold blocks, or adamant scrap to repair. That means even in late game, you'll need to go mining for materials."{{Cite video|quote=except for adamant, which requires diamond blocks, gold blocks, or adamant scrap to repair. That means even in late game, you'll need to go mining for materials.}} In the code only the canonical adamant leggings accept gold blocks.
+In the video the developer says adamant "requires diamond blocks, gold blocks, or adamant scrap to repair. That means even in late game, you'll need to go mining for materials."{{Cite video|quote=except for adamant, which requires diamond blocks, gold blocks, or adamant scrap to repair. That means even in late game, you'll need to go mining for materials.}} In the current code only the adamant leggings from the <code>matcha:equipment/adamant/leggings</code> loot table accept gold blocks; smithed adamant gear does not.
 
 == Characteristics ==
 * Tools (and the axe) have the smelting intrinsic, Efficiency and Unbreaking II.

@@ -58,8 +58,9 @@ def iso_cube(top, left, right, height=1.0):
         right = right.crop((0, n - hpx, n, n))
     s = 8  # output scale per texel
     W = 2 * n * s
-    canvas = Image.new('RGBA', (W, W), (0, 0, 0, 0))
-    ox, oy = W // 2, int(W * 0.25) + int((n - hpx) * s * 0.5)
+    # the cube spans 2*n*k vertically (top face n*k + side faces n*k): leave room for all of it
+    canvas = Image.new('RGBA', (W, W + 16), (0, 0, 0, 0))
+    ox, oy = W // 2, 4
     # half-extents of a texel step in screen space
     ux, uy = s * 0.866 * 1.155 / 1.0, s * 0.5 * 1.155
 

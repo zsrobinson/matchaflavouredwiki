@@ -1,0 +1,29 @@
+{{Vanilla|Dirt}}
+{{Infobox auto}}
+'''Dirt''' is the most common surface block. [[Matcha Flavoured]] sells it in bulk, makes it the base of [[Dirt Slab|dirt slabs]], [[mud]] and early [[Packed Mud|packed mud]], and adds it to the drops of [[gravel]].
+
+== Obtaining ==
+{{Recipes}}
+* Broken gravel always drops 1 dirt along with 1 flint.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gravel.json}}</ref>
+* Two dirt slabs craft back into dirt, and a grass block cooked in an [[oven]] becomes dirt (5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/oven/dirt_from_smelting_grass_block.json}}</ref>
+
+=== Trading ===
+The [[Mason]] sells 6 bulk dirt for 1 [[obol]] at the novice level; each unpacks into 64 dirt.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/1/dirt.json}}</ref> See [[Bulk blocks]].
+
+== Usage ==
+{{Uses}}
+* One dirt and one short dry grass make [[Packed Mud|packed mud]], the material of the [[Mud Kiln|mud kiln]].<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/packed_mud_from_dirt.json}}</ref>
+* Eight dirt and a water bottle make 8 [[mud]].
+* Two dirt and two flint make 2 [[gravel]].
+* Three dirt make 6 [[Dirt Slab|dirt slabs]].
+
+== History ==
+{{History
+|{{History line|1.12.2|Bulk dirt added to the Mason trades.}}
+}}
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Natural blocks]]

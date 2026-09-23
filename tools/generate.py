@@ -1261,6 +1261,19 @@ def main():
                 write('Main', title, '#REDIRECT [[%s]]\n[[Category:Redirects to lists]]' % group); n['group redirects'] += 1
             else:
                 write('Main', title, stub_article(name, item)); n['stubs'] += 1
+    # ingredients that only ever appear inside recipes (never as an item stack) still get a Uses table
+    for name in list(USES):
+        title = safe(name)
+        if name in ITEMS or not title or title.startswith(('Any ', 'item.')):
+            continue
+        p = uses_page(name)
+        if p:
+            write('Template', 'Data/Uses/' + title, p); n['ingredient-only uses'] += 1
+            if not hand_exists('Main', title):
+                write('Main', title, '{{Vanilla}}\n' + ("'''%s''' is an item from vanilla ''Minecraft'' that [[Matcha Flavoured]] does not change. "
+                      "See {{MCW|%s}} on the Minecraft Wiki; this page lists only where the pack uses it.\n\n== Usage ==\n{{Uses}}\n\n[[Category:Vanilla items]]") % (name, name))
+                n['vanilla pages'] += 1
+
     # vanilla items the pack uses but doesn't change: a short page pointing at minecraft.wiki,
     # with the pack's own recipes and uses (so every link in a recipe table goes somewhere)
     for name, item in ITEMS.items():

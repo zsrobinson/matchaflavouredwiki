@@ -1,46 +1,37 @@
 {{Infobox auto
-|intrinsics=[[Thorns]] III
 |renewable=Yes
 }}
 
-A '''chainmail chestplate''' is the [[Chainmail armor|chainmail]] [[Armor#Chestplate|chestplate]], crafted from {{MCW|Chain|iron chains}}. It gives 6 armor and has 300 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/chainmail_chestplate.json}}</ref>
+A '''chainmail chestplate''' is a piece of [[chainmail armor]], crafted from 8 {{MCW|Chain|iron chains}}. Unlike in vanilla, chainmail can be crafted, and every piece carries Thorns III.
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
-
-=== Chest loot ===
+=== Loot ===
 {{Sources}}
 
 == Usage ==
 
 === Armor ===
+It gives 6 armor (up from 5 in vanilla) and has 300 durability (vanilla: 240). A full set gives 15 armor, the same as iron.
 
-Worn, it gives 6 armor. The vanilla item gives 5 armor with 240 durability.
-
-=== Intrinsics ===
-
-* [[Thorns]] III
-
-The intrinsics are stored on the item and applied when it enters an inventory. See [[Chainmail armor]] for how the tier's intrinsics work together.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+=== Enchantments ===
+Thorns III is an ordinary enchantment on the item: attackers take damage, at the cost of extra durability.
 
 === Repairing ===
-
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
 === Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
+{{Uses}}
+
+It melts down into one iron ingot in a [[blast furnace]].
 
 == History ==
 {{History|
-{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Chainmail armor became craftable.}}
+{{History line|0.4-alpha|Chainmail armor became craftable.}}
 }}
-
-== References ==
-{{reflist}}
 
 {{Navbox equipment}}
 [[Category:Armor]]

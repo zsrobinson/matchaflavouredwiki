@@ -10,3 +10,5 @@
 #pt-anonuserpage, #pt-anontalk, #pt-anoncontribs, #footer-icons .footer-copyrightico, .mw-editsection { display: none !important; }
 /* The toolbox only links to special pages, which the static site doesn't have */
 #p-tb { display: none !important; }
+/* Source-file line in the footer (site/GitLinks.php) */
+#footer-info-mfw-source code { background: none; border: 0; color: inherit; padding: 0; font-size: 95%; }

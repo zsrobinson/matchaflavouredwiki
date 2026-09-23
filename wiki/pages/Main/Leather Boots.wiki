@@ -1,43 +1,33 @@
 {{Infobox auto
-|intrinsics=[[Feather Falling]] II
 |renewable=Yes
 }}
 
-A '''leather boots''' is the [[Leather armor|leather]] [[Armor#Boots|boots]], crafted from [[Tattered Leather|tattered leather]]. It gives 1 armor and has 200 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/leather_boots.json}}</ref>
+'''leather boots''' are the [[Leather armor|leather]] [[Armor#Boots|boots]], crafted from 4 [[tattered leather]]. Matcha Flavoured renames the vanilla leather boots; leather armor is the cheapest armor and softens falls.
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
-
 == Usage ==
 
 === Armor ===
+They give 1 armor and have 200 durability, against 65 for the vanilla item. They also add 1 block of safe fall distance, so the full set takes 4 blocks off every fall. They also carry Feather Falling II, the only leather piece with an enchantment.
 
-Worn, it gives 1 armor. The vanilla item gives 1 armor with 65 durability.
-
-It adds 1 block of safe fall distance.
-
-=== Intrinsics ===
-
-* [[Feather Falling]] II
-
-The intrinsics are stored on the item and applied when it enters an inventory. See [[Leather armor]] for how the tier's intrinsics work together.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+=== Dyeing ===
+Like vanilla leather armor, they can be dyed.
 
 === Repairing ===
+They can be repaired in an [[anvil]] with [[sturdy leather]]. The pack resets repair costs to zero, so they can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with [[Sturdy Leather|sturdy leather]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Crafting ingredient ===
+{{Uses}}
 
 == History ==
 {{History|
-{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Added item textures for leather armor; its names are shown in white.}}
-{{History line|1.12.1-alpha|Leather armor now actually gives armor points, and uses its own safe fall distance icon.}}
+{{History line|0.4-alpha|Added item textures. Leather armor names are shown in white.}}
+{{History line|1.12.1-alpha|Now actually gives armor points, and shows its own safe fall distance icon.}}
 }}
-
-== References ==
-{{reflist}}
 
 {{Navbox equipment}}
 [[Category:Armor]]

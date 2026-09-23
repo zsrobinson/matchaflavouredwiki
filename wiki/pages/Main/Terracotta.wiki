@@ -1,0 +1,26 @@
+{{Vanilla|Terracotta}}
+{{Infobox auto}}
+'''Terracotta''' is fired [[clay]]. In [[Matcha Flavoured]] it is made in a [[Mud Kiln|mud kiln]] rather than a furnace, and it can be broken down into [[brick]]s.
+
+== Obtaining ==
+{{Recipes}}
+A clay block fired in a mud kiln becomes terracotta (5 seconds); the vanilla furnace recipe is removed. Glazed terracotta is also made in the kiln.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/terracotta.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+=== Trading ===
+The [[Mason]] sells 1 bulk terracotta for 1 [[obol]] at the apprentice level; it unpacks into 64 terracotta. The item has no English name, so the game shows its translation key.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/2/terracotta.json}}</ref> See [[Bulk blocks]] and [[Known bugs]].
+
+== Usage ==
+{{Uses}}
+Terracotta (plain, white or orange) crafts into 4 [[brick]]s.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/brick_from_terracottas.json}}</ref>
+
+== History ==
+{{History
+|{{History line|1.03|Glazed terracotta is made in the mud kiln.}}
+{{History line|1.12.1-alpha|Terracotta can no longer be made in an oven; it is only kilned.}}
+}}
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Building blocks]]

@@ -151,3 +151,6 @@ $wgShowExceptionDetails = true;
 $wgHooks['BeforePageDisplay'][] = static function ( $out, $skin ) {
 	$out->addHeadItem( 'mfw-theme-boot', '<script>' . trim( file_get_contents( __DIR__ . '/theme-boot.js' ) ) . '</script>' );
 };
+
+# Links from every page to its source file on GitHub (see site/GitLinks.php)
+require_once __DIR__ . "/GitLinks.php";

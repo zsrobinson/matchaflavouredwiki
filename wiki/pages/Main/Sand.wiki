@@ -1,0 +1,30 @@
+{{Vanilla|Sand}}
+{{Infobox auto}}
+'''Sand''' is a gravity-affected block found in deserts and on beaches. [[Matcha Flavoured]] lets it be made from [[gravel]] in a [[Blast Furnace|blast furnace]], so players need not dig up deserts, and lets plants grow on it.
+
+== Obtaining ==
+{{Recipes}}
+* Blasting gravel gives sand (5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/blast/sand.json}}</ref>
+* A block of [[sandstone]] crafts back into 2 sand.
+* Eight sand around an iron nugget make 8 red sand.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/red_sand_from_sand_and_iron.json}}</ref>
+
+=== Other sources ===
+{{Sources}}
+Mined with a tool that has the [[Adamant equipment|adamant]] tool intrinsic, sand drops [[glass]] instead, increased by Fortune.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sand.json}}</ref>
+
+== Usage ==
+{{Uses}}
+* Fired in a [[Mud Kiln|mud kiln]], sand becomes [[glass]]; blasted, it becomes [[quartz]].
+* Sand and red sand support vegetation, so grass and flowers can be planted on them.<ref>{{Source|MF_datapack/data/minecraft/tags/block/supports_vegetation.json}}</ref>
+
+== History ==
+{{History
+|{{History line|0.6-alpha|Sand and red sand support vegetation.}}
+{{History line|1.0|Picking up sand unlocks the quartz recipe.}}
+}}
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Natural blocks]]

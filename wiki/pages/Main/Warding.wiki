@@ -123,7 +123,7 @@ Warding changed from a constant effect to pulses: once per second at levels 1 an
 Added the targeting order: copper-wearing mobs, then the Wither, then the nearest undead.
 Separate particles for slowing and damage, and the particles now work on baby mobs.
 The Warding Shield was reduced from {{G|Warding}} 2 to {{G|Warding}} 1.
-Warding was removed from electrum tools.{{#tag:ref|The release notes say warding was removed from electrum tools, but the electrum axe ({{G|Warding}} 2) and electrum mattock ({{G|Warding}} 1) still carry it in the code ({{Source|MF_datapack/data/matcha/recipe/smithing/electrum_axe.json}}, {{Source|MF_datapack/data/matcha/recipe/smithing/electrum_mattock.json}}). Only the electrum pickaxe and shovel have none.|group=note}}
+Warding was removed from electrum tools.{{#tag:ref|The release notes say warding was removed from electrum tools, but the electrum axe ({{G|Warding}} 2) and electrum mattock ({{G|Warding}} 1) still carry it in the code ({{Source|MF_datapack/data/matcha/recipe/smithing/electrum_axe.json}}, {{Source|MF_datapack/data/matcha/recipe/smithing/electrum_mattock.json}}). The electrum pickaxe, shovel, hoe and dolabra have none.|group=note}}
 Fixed warding effects being inconsistent between levels.}}
 }}
 
