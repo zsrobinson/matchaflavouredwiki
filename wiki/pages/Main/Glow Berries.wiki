@@ -7,7 +7,7 @@
 == Obtaining ==
 
 === Harvesting ===
-Cave vines give and drop the pack's glow berries.<ref>{{Source|MF_datapack/data/minecraft/loot_table/harvest/cave_vine.json}}</ref>
+Cave vines give and drop the pack's glow berries.<ref>{{Source|MF_datapack/data/minecraft/loot_table/harvest/cave_vine.json}}</ref> Unlike vanilla, the pack's loot table for breaking cave vines has no check for berries, so every cave vine block drops a glow berry when broken, whether or not it is bearing fruit. Fortune and the Electrum tool [[intrinsic]] each add 0 to 1 extra berry per level.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/cave_vines.json}}</ref>
 
 {{Sources}}
 
@@ -29,6 +29,7 @@ Aura isn't a status effect. Eating [[Glow Berry Mash|glow berry mash]], [[Glow B
 == History ==
 {{History|
 {{History line|1.10|Glow berry mash works.}}
+{{History line|1.12.2|Fortune works on glow berry vines.}}
 }}
 
 == See also ==

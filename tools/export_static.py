@@ -185,6 +185,10 @@ SITE_CSS = r"""/* Pagefind Component UI, styled to sit in minecraft.wiki's searc
   width: 100%;
 }
 #p-search { width: 20vw; min-width: 16em; max-width: 26em; }
+@media screen and (max-width: 720px) {
+  #p-search { width: auto; min-width: 0; max-width: none; float: none; margin: 0.5em 1em 0 1em; }
+  #p-search pagefind-searchbox { width: 100%; }
+}
 #mfw-search-page {
   --pf-font: inherit;
   --pf-border-radius: 2px;

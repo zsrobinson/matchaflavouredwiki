@@ -10,12 +10,10 @@ A '''golden boots''' is the [[Golden equipment|golden]] [[Armor#Boots|boots]], c
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
+The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
 
-=== Loot ===
+=== Chest loot ===
 {{Sources}}
-
-The loot table <code>matcha:equipment/gold/boots</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
 
 == Usage ==
 
@@ -31,29 +29,16 @@ The intrinsics are stored on the item and applied when it enters an inventory. S
 
 === Repairing ===
 
-It is repaired in an [[anvil]] with [[Gold Ingot|gold ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+It is repaired in an [[anvil]] with [[Gold Ingot|gold ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
 
 === Smelting ingredient ===
 In a [[Blast Furnace|blast furnace]], it smelts into one [[Gold Ingot|gold ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/gold_ingot_from_blasting_gold_materials.json}}</ref>
 
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 200
-|-
-| Armor || 2
-|}
-
 == History ==
 {{History|
-{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Added translation support for all armor and tools. Gold armor names are shown in white.}}
+{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Gold armor names are shown in white.}}
 {{History line|1.12.2|Ruined portal loot was reduced so that gold cannot be obtained before iron.}}
 }}
-
-== See also ==
-* [[Golden equipment]]
-* [[Armor]]
 
 == References ==
 {{reflist}}

@@ -57,6 +57,8 @@ Every caught fish has a rarity of 1 to 4 stars, shown as the first line of its t
 | ⭐⭐⭐⭐ || 1 || 1 of 42 || 2.02% || 1 || Master
 |}
 
+The two fish of the special biomes don't follow the table: the [[Creaking Fish]] (⭐⭐⭐☆) sells at 2 for 1 Obol and only once the Fisherman is a Master, and the [[Echo Eel]] (⭐⭐⭐⭐) sells like the other epic fish.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/5/pale_fish.json}}</ref>
+
 The developer grouped the fish this way so that every climate earns about the same amount of money.<ref>{{Cite changelog|0.5-alpha|quote=Each biome/water type have 5 fish, two common, one uncommon, one rare, and one epic. [...] This was done to better balance the selling system, so each biome will be just as "efficient" to fish in as any other}}</ref> The rarity is part of the item, so a fish only counts for trades and advancements when it was caught with a rod. A [[cod]] dropped by a mob doesn't carry the rarity line and can't be sold.<ref>{{Cite changelog|0.5-alpha|quote=Cod and Salmon cannot be killed and sold, only if caught will they be valid.}}</ref>
 
 === Fish are cod, salmon and pufferfish ===
@@ -350,7 +352,7 @@ Old Growth Spruce Taiga added to cool freshwater.}}
 {{History line|1.12.2|Fixed typos that made the Angler's Almanac entries for tropical fish impossible to unlock.}}
 |-
 ! Upcoming
-| Fish Bones caught in Sulfur Caves now have the correct texture.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
+| Fish Bones caught in Sulfur Caves now have the correct texture.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref> The Angler's Almanac entry for pufferfish in Hot Saltwater can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>
 }}
 <ref>{{Cite changelog|0.5-alpha|quote=Overhauled Fishing System}}</ref><ref>{{Cite changelog|1.10|quote=Fishing Balances}}</ref><ref>{{Cite changelog|1.12.1-alpha|quote=Fishing now gives 85/5 fish to junk in designated biomes (My patch made it worse and would give junk 50% of the time, sorry)}}</ref>
 

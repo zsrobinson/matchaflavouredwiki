@@ -1,10 +1,10 @@
 {{Vanilla|Music Disc}}
 {{Infobox auto}}
-A '''music disc''' is an item that plays music in a [[jukebox]]. [[Matcha Flavoured]] makes almost every vanilla disc craftable from [[Disc Fragment]]s, and adds seven discs of its own: four by community musicians, one by the pack's background composer, and two vanilla tracks that have no disc in vanilla.
+A '''music disc''' is an item that plays music in a [[jukebox]]. [[Matcha Flavoured]] makes almost every vanilla disc craftable from [[disc fragment]]s, and adds seven discs of its own: four by community musicians, one by the pack's background composer, and two vanilla tracks that have no disc in vanilla.
 
 == Obtaining ==
 === Crafting ===
-Most discs are crafted from 8 [[Disc Fragment]]s surrounding a center item. Custom discs are vanilla disc items with a different song and model, so the generated tables below show them under their base disc.
+Most discs are crafted from 8 [[disc fragment]]s surrounding a center item. Custom discs are vanilla disc items with a different song and model, so the generated tables below show them under their base disc.
 {{Recipes}}
 
 {| class="wikitable sortable"
@@ -44,7 +44,7 @@ Most discs are crafted from 8 [[Disc Fragment]]s surrounding a center item. Cust
 |-
 | Labyrinthine || Mossy Stone Bricks
 |}
-Any music disc can be crafted back into 3 Disc Fragments, and "Tears" into 1.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/disc_fragment_from_disc.json}}</ref>
+Any music disc can be crafted back into 3 disc fragments, and "Tears" into 1.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/disc_fragment_from_disc.json}}</ref>
 
 === Other sources ===
 {{Sources}}
@@ -70,7 +70,7 @@ Any music disc can be crafted back into 3 Disc Fragments, and "Tears" into 1.<re
 All custom discs give a comparator output of 1.<ref>{{Source|MF_datapack/data/matcha/jukebox_song/crete.json}}</ref> Labyrinthine and Dry Hands use vanilla sound files; the others use sounds added by the resource pack. The Golden disc plays a demo version of the song.
 
 == Usage ==
-Discs are played in a [[jukebox]]. The [[Wandering Trader]] buys music discs for [[Obol]]s.
+Discs are played in a [[jukebox]]. The [[Wandering Trader]] buys music discs for [[obol]]s.
 {{Uses}}
 
 == History ==

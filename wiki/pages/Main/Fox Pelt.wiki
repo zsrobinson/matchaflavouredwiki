@@ -11,7 +11,7 @@ A '''fox pelt''' is dropped by foxes. It comes in two textures, red and snowy, t
 Every fox drops one fox pelt when it dies: red foxes drop the red pelt and snow foxes the snowy pelt. Foxes also drop 1 raw flesh (cooked if the fox was burning), plus 0–1 per level of Looting.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref> In vanilla, foxes drop nothing but their held item.
 
 == Usage ==
-Recipes that take tattered leather accept fox pelts, because recipes check the item type, not its name. See [[Tattered Leather#Usage]].
+Recipes that take tattered leather accept fox pelts, because recipes check the item type, not its name. See [[tattered leather#Usage]].
 
 == History ==
 {{History|

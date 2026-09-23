@@ -11,10 +11,8 @@ As a [[dolabra]], it works as both a pickaxe and an axe, at a lower mining speed
 === Crafting ===
 {{Recipes}}
 
-=== Loot ===
+=== Chest loot ===
 {{Sources}}
-
-The loot table <code>matcha:equipment/iron/dolabra</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
 
 == Usage ==
 
@@ -32,35 +30,17 @@ It deals 6 damage with an attack speed of 0.9.
 
 === Repairing ===
 
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
 
 === Smelting ingredient ===
 In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
 
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 500
-|-
-| Mining speed || 6
-|-
-| Attack damage || 6
-|-
-| Attack speed || 0.9
-|}
-
 == History ==
 {{History|
-{{History line|0.4-alpha|Added translation support for all armor and tools.}}
 {{History line|0.6-alpha|Added recipe unlocks for iron equipment.}}
 {{History line|1.03|The iron dolabra's real attack speed now matches its tooltip.}}
 {{History line|1.12.2|Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
 }}
-
-== See also ==
-* [[Iron equipment]]
-* [[Tools]]
 
 == References ==
 {{reflist}}

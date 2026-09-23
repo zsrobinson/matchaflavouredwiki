@@ -9,40 +9,17 @@ A '''wooden sword''' is the [[Wooden equipment|wooden]] [[Weapons#Sword|sword]],
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
-
-=== Loot ===
-{{Sources}}
+The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
 
 == Usage ==
 
-=== Combat ===
-
-It deals 4 damage with an attack speed of 1.6.
-
 === Repairing ===
 
-It is repaired in an [[anvil]] with {{MCW|Planks|planks}}. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
-
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 200
-|-
-| Attack damage || 4
-|-
-| Attack speed || 1.6
-|}
+It is repaired in an [[anvil]] with {{MCW|Planks|planks}}. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
 
 == History ==
 {{History|
-{{History line|0.4-alpha|Added translation support for all armor and tools.}}
 }}
-
-== See also ==
-* [[Wooden equipment]]
-* [[Weapons]]
 
 == References ==
 {{reflist}}

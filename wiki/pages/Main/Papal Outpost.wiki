@@ -8,14 +8,14 @@
 |id=<code>minecraft:pillager_outpost</code>
 |added={{Version|1.10}}
 }}
-A '''Papal Outpost''' is the pack's replacement for the vanilla {{MCW|Pillager Outpost|pillager outpost}}: a ruined stone watchtower surrounded by graves and small camps, with no pillagers. It gives easy early-game access to a small amount of [[Divine Fragment]]s and [[Crystal Heart]]s, as well as potatoes and carrots.<ref>{{Cite changelog|1.10|quote=Easy early-game access to a small amount of divine fragments and crystal hearts. They also provide potatoes and carrots}}</ref> Papal Outposts are much more common than [[Abbey]]s.
+A '''Papal Outpost''' is the pack's replacement for the vanilla {{MCW|Pillager Outpost|pillager outpost}}: a ruined stone watchtower surrounded by graves and small camps, with no pillagers. It gives easy early-game access to a small amount of [[divine fragment]]s and [[crystal heart]]s, as well as potatoes and carrots.<ref>{{Cite changelog|1.10|quote=Easy early-game access to a small amount of divine fragments and crystal hearts. They also provide potatoes and carrots}}</ref> Papal Outposts are much more common than [[Abbey]]s.
 
 The structure keeps the vanilla ID <code>minecraft:pillager_outpost</code>, so it appears as a pillager outpost in commands such as <code>/locate</code>.<ref>{{Cite changelog|1.10|quote=Papal outposts will register as Pillager Outposts (I got lazy, it was crunch time, leave me alone)}}</ref>
 
 == Generation ==
 Papal Outposts generate in the same biomes and with the same spacing as vanilla pillager outposts; the pack does not change the structure set or the biome tag. The structure no longer has a spawn override, so {{MCW|Pillager|pillagers}} do not spawn in it.<ref>{{Source|MF_datapack/data/minecraft/worldgen/structure/pillager_outpost.json}}</ref> Pillager patrols are also delayed; see [[Day and night]].
 
-A Papal Outpost Map can be bought from the [[Archaeologist]] at level 1 for one [[Obol]]. See [[Explorer maps]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/papal_outpost.json}}</ref>
+A Papal Outpost Map can be bought from the [[Archaeologist]] at level 1 for one [[obol]]. See [[Explorer maps]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/papal_outpost.json}}</ref>
 
 == Structure ==
 The pack replaces the vanilla outpost templates while keeping the vanilla layout: a base plate, a watchtower, and a feature plate on which small features are placed.
@@ -33,7 +33,7 @@ The feature plate holds 17 suspicious gravel graves (grave loot) and connectors 
 {| class="wikitable"
 ! Feature !! Weight !! Contents
 |-
-| cage1 || 1 || A camp with a campfire, two brown wall banners and a trapped chest with fixed contents: 9 oak planks, 3 sticks, 4 [[Copper Ingot]]s, 12 raw copper, 2 [[Sturdy Leather]], 5 [[Estus Ash]], 18 torches, 1 arrow, 7 [[Tattered Leather]] and 6 bones.
+| cage1 || 1 || A camp with a campfire, two brown wall banners and a trapped chest with fixed contents: 9 oak planks, 3 sticks, 4 [[Copper Ingot]]s, 12 raw copper, 2 [[sturdy leather]], 5 [[estus ash]], 18 torches, 1 arrow, 7 [[tattered leather]] and 6 bones.
 |-
 | cage2 || 3 || A small ruin with an empty barrel.
 |-

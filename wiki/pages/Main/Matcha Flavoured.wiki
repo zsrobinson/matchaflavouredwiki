@@ -39,7 +39,7 @@ The pack was first published on Modrinth in June 2026 and reached version 1.0 on
 The developer's introduction video sets out the pack's reasoning. It argues that vanilla ''Minecraft'' rewards technical play, such as copying mob farm designs from tutorials and leaving them running, far more than exploration and building, and that casual players "work 10 times hard for 1/10 the resources technical players get".<ref>{{Cite video|quote=Minecraft punishes us, makes us work 10 times hard for 1/10 the resources technical players get.}}</ref> The README describes the goal as letting "casual players, who like to play slowly, [...] gather the same amount of resources technical players do in the same amount of time".<ref>{{Source|README.md}}</ref> Most features follow from a few principles:
 
 ; No mob grinders
-: Mob drops are increased so that killing a single mob is worth it: every [[enderman]] drops a [[Stable Void|stable void]] (the pack's ender pearl), and [[zombie]]s drop [[tattered leather]] instead of rotten flesh. The key progression items, [[Divine Fragment|divine fragments]], come only from breaking [[spawner]]s and defeating powerful mobs, so turning a spawner into a grinder costs the player the fragment they need for [[Eye of Ender|eyes of ender]], [[Crystal Heart|crystal hearts]], [[Bedrock Buster|bedrock busters]] and several [[blessing]]s.<ref>{{Cite video|quote=You could make a simple mob grinder, but the divine fragment is staring you in the face.}}</ref> [[Villager]]s no longer buy goods, except the [[fisherman]], so automated farms cannot be turned into currency.
+: Mob drops are increased so that killing a single mob is worth it: every [[enderman]] drops a [[Stable Void|stable void]] (the pack's ender pearl), and [[zombie]]s drop [[tattered leather]] instead of rotten flesh. The key progression items, [[Divine Fragment|divine fragments]], come only from breaking [[spawner]]s and defeating powerful mobs, so turning a spawner into a grinder costs the player the fragment they need for [[Eye of Ender|eyes of ender]], [[Crystal Heart|crystal hearts]], [[Bedrock Buster|bedrock busters]] and several [[blessing]]s.<ref>{{Cite video|quote=You could make a simple mob grinder, but the divine fragment is staring you in the face.}}</ref> [[Villager]]s no longer buy everyday goods (only the [[fisherman]], [[Jeweler|jeweler]] and [[weaponsmith]] buy a few things), so automated farms cannot be turned into currency.
 ; Food over potions
 : Twelve ingredients have hidden [[intrinsic]]s, potion effects that appear once the ingredient is cooked. Every such ingredient has at least three dishes (a simple preparation, a preserve and a meal), and four oven-cooked meals give long, strong effects. Because food stacks and potions largely do not exist, planning a trip means cooking the right food: melons before going to [[Hell]], glow berries or carrots for caving, chorus fruit for [[the End]].<ref>{{Cite video|quote=If they're planning a trip to hell, they'll want to find some melons first.}}</ref> Meat has no intrinsics, which the developer intended to make slaughterhouses unattractive.
 ; No hunger, no natural regeneration
@@ -62,18 +62,18 @@ The following is a summary. [[Changes from vanilla]] lists every change.
 * '''[[Difficulty]]''': Each difficulty changes mob behavior, health and damage. On Normal, a player whose heart minimum falls below 6 hearts switches the world to Hard.
 * '''[[Mobs]]''': [[Zombie]]s are fast and fragile, [[husk]]s are slow, heavily armored "tanks" that spawn in every biome, [[skeleton]]s have about half their vanilla health, and [[creeper]]s and [[spider]]s live underground.
 * '''[[Surface]]''': Only undead spawn in the open overworld. After the first Ender Dragon kill, no hostile mobs spawn above ground. The chat message reads "Evil has been banished from the surface."
-* '''[[Darkness]]''': The overworld has "true darkness", and [[Hell]] (the renamed Nether) is dim.
+* '''[[Darkness]]''': The overworld has "true darkness", while [[Hell]] (the renamed Nether) is slightly brighter than in vanilla.
 * '''[[Day and night]]''': A full day lasts 72,000 ticks (one hour), three times as long as vanilla.<ref>{{Source|MF_datapack/data/minecraft/timeline/day.json}}</ref>
 
 === Food and cooking ===
-* About 50 new foods, including secret recipes, built around twelve ingredients with [[intrinsic]]s, such as apples, carrots, glow berries, melons, pumpkins, sweet berries and tomatoes.<ref>{{Cite video|quote=There are 12 ingredients with unique effects plus two more that act as secret ingredients}}</ref>
+* Dozens of new foods (the README counts about 50; the wiki lists over 90 food items), including secret recipes, built around twelve ingredients with [[intrinsic]]s, such as apples, carrots, glow berries, melons, pumpkins, sweet berries and tomatoes.<ref>{{Cite video|quote=There are 12 ingredients with unique effects plus two more that act as secret ingredients}}</ref>
 * Cooking stations: the [[Kindling|kindling]] (campfire), the [[Mud Kiln|mud kiln]] (smoker) and the [[oven]] (furnace). See [[Cooking]].
 
 === Equipment and materials ===
 * Stone tools are removed. Equipment goes from wood to [[Copper equipment|copper]], [[Iron equipment|iron]] and [[Diamond equipment|diamond]], with each metal needing a better furnace: copper is smelted in a mud kiln, while iron, gold, silver and diamond need a [[blast furnace]].
 * Five alloys are applied to base equipment in a [[Smithing Table|smithing table]]: [[Steel equipment|steel]] on iron, [[Hepatizon equipment|hepatizon]] and [[Shakudo equipment|shakudo]] on copper, and [[Electrum equipment|electrum]] and [[Adamant equipment|adamant]] (netherite) on diamond. Each tier has its own [[intrinsic]] effects and [[set bonus]]es.
 * New tool types: the [[mattock]], [[dolabra]], [[claymore]], [[Compound Bow|compound bow]], [[Snow Shovel|snow shovel]] and more. See [[Tools]] and [[Weapons]].
-* [[Jewelry]] made from gems found in dungeons, and [[warding]] equipment that burns the undead.
+* [[Jewelry]] made from gems found in structures and dropped by bosses, and [[warding]] equipment that burns the undead.
 
 === Magic ===
 * The enchanting table is removed. Enchantments are crafted as [[blessing]]s ("prayers") from [[Hell-Bound Book|hell-bound books]], which are made with [[Estus]] refined from the ash that undead mobs drop. See [[Enchanting]].
@@ -85,8 +85,8 @@ The following is a summary. [[Changes from vanilla]] lists every change.
 
 === World ===
 * New structures: the [[Abbey]] and [[Papal Outpost|papal outpost]]. Villages are [[Abandoned village|abandoned]].
-* New ores and stones, including [[Native Silver|native silver]], [[Limestone|limestone]] and [[Malachite|malachite]].
-* About 50 fish sorted by climate and biome, catalogued in the [[Angler's Almanac]]. See [[Fishing]].
+* Renamed and redistributed ores and stones, including [[Native Silver|native silver]], [[Limestone|limestone]] and [[Malachite|malachite]].
+* 47 fish sorted by climate and rarity, catalogued in the [[Angler's Almanac]]. See [[Fishing]].
 * New music discs and background tracks. See [[Music]].
 
 == Development ==
@@ -110,7 +110,7 @@ With [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] ("Experimental: Death System
 See [[Version history]] for the full list of releases and [[Upcoming features]] for work in progress.
 
 == Distribution ==
-The pack is distributed on Modrinth and GitHub as a single archive that works as both the datapack and the resource pack, and must be installed in both places. See [[Installation]]. An accessible version of the resource pack and a community resource pack with vanilla-style textures are linked from the README.<ref>{{Source|README.md}}</ref> A Fabric mod manifest (<code>fabric.mod.json</code>) is included with the datapack.<ref>{{Source|MF_datapack/fabric.mod.json}}</ref>
+The pack is distributed on Modrinth and GitHub. Up to 1.12.1-alpha, each release was a single archive that worked as both the datapack and the resource pack; from 1.12.2-beta the two are separate files. Both must be installed. See [[Installation]]. An accessible version of the resource pack and a community resource pack with vanilla-style textures are linked from the README.<ref>{{Source|README.md}}</ref> A Fabric mod manifest (<code>fabric.mod.json</code>) is included with the datapack.<ref>{{Source|MF_datapack/fabric.mod.json}}</ref>
 
 === License ===
 Matcha Flavoured is licensed under [https://creativecommons.org/licenses/by-nc-sa/4.0/ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International].<ref>{{Source|LICENSE}}</ref> In the video, the developer explains that anyone may reuse any part of the pack, such as its recipes or textures, in their own work, as long as they credit it, share it under the same license and do not sell it. The README adds that this includes the Bedrock Marketplace unless the result is free.<ref>{{Cite video|quote=it just means that anyone can use any part of this pack and make it their own.}}</ref> The music disc "Golden" and several background tracks were contributed by other artists; see [[Credits]].

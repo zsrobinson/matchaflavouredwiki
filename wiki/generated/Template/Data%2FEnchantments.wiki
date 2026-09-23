@@ -1,11 +1,11 @@
 <includeonly>{| class="wikitable sortable"
 ! Enchantment !! ID !! Max level !! Slots !! Applies to !! Compared with vanilla
 |-
-| [[Divinity|{{G|Half heart}} {{G|Cooldown}} (00:30)]] || <code>matcha:shakudo_armour</code> || 1 || mainhand, armor || 5 items || '''New'''
+| [[Set bonus#Shakudo regeneration|{{G|Half heart}} {{G|Cooldown}} (00:30)]] || <code>matcha:shakudo_armour</code> || 1 || mainhand, armor || 5 items || '''New'''
 |-
 | [[Warding|{{G|Fortune}} +1]] || <code>matcha:electrum_armour</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
 |-
-| [[Divinity|{{G|Health}} {{G|Cooldown}} -(00:10)]] || <code>matcha:shakudo_elytra</code> || 1 || mainhand, armor || 1 items || '''New'''
+| [[Set bonus#Shakudo regeneration|{{G|Health}} {{G|Cooldown}} -(00:10)]] || <code>matcha:shakudo_elytra</code> || 1 || mainhand, armor || 1 items || '''New'''
 |-
 | [[Warding|{{G|Warding}} 1]] || <code>matcha:warding_1</code> || 1 || mainhand, offhand || 13 items || '''New'''
 |-
@@ -123,7 +123,7 @@
 |-
 | [[Riptide]] I || <code>minecraft:riptide</code> || 3 || hand || <code>#minecraft:enchantable/trident</code> || Changed: anvil cost
 |-
-| [[Divinity|{{G|Health}}{{G|Attack damage}}]] || <code>matcha:shakudo_weapon</code> || 1 || mainhand || <code>#minecraft:enchantable/weapon</code> || '''New'''
+| [[Shakudo equipment|{{G|Health}}{{G|Attack damage}}]] || <code>matcha:shakudo_weapon</code> || 1 || mainhand || <code>#minecraft:enchantable/weapon</code> || '''New'''
 |-
 | [[Sharpness]] I || <code>minecraft:sharpness</code> || 5 || mainhand || <code>#minecraft:enchantable/sharp_weapon</code> || Unchanged
 |-
@@ -149,7 +149,7 @@
 |-
 | [[Zephyr]] I || <code>matcha:zephyr</code> || 3 || feet || <code>#minecraft:enchantable/foot_armor</code> || '''New'''
 |-
-| [[Doom|enchantment.kleispack.smelting]] || <code>matcha:adamant_tool</code> || 1 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || '''New'''
+| [[Adamant equipment|enchantment.kleispack.smelting]] || <code>matcha:adamant_tool</code> || 1 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || '''New'''
 |-
 | [[Conduit Power|{{G|Water}} ∞]] || <code>matcha:conduit_power</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
 |-

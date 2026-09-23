@@ -12,7 +12,7 @@ A '''phantom''' does not spawn naturally in [[Matcha Flavoured]]. The pack turns
 The game rule is set when a player first joins the world, and again whenever a new player joins. Phantoms can still be summoned with commands or spawn eggs, or appear if the game rule is turned back on.
 
 == Drops ==
-Phantoms use the vanilla loot table. Because the pack renames phantom membranes to {{ItemLink|Hepatizon Alloy}}, a phantom killed by a player drops Hepatizon Alloy (0–1, plus 0–1 per level of Looting).
+Phantoms use the vanilla loot table. Because the pack renames phantom membranes to {{ItemLink|Hepatizon Alloy}}, a phantom killed by a player drops hepatizon alloy (0–1, plus 0–1 per level of Looting).
 
 == Behavior ==
 Phantoms are undead, and they are listed among the targets of [[warding]].<ref>{{Source|MF_datapack/data/matcha/tags/entity_type/warding_targets.json}}</ref>

@@ -2,10 +2,10 @@
 '''Trial Chambers''' generate as in vanilla. [[Matcha Flavoured]] changes their chest, vault, pot and trial spawner loot, and adds rules that also apply to the [[Abbey]].
 
 == Changes ==
-* A [[Warding Stone]] cannot be placed inside Trial Chambers or an Abbey; it explodes when placed.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/forbidden.mcfunction}}</ref>
+* A [[warding stone]] cannot be placed inside Trial Chambers or an Abbey; it explodes when placed.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/forbidden.mcfunction}}</ref>
 * After the [[Ender Dragon]] is killed, hostile mobs still spawn inside Trial Chambers and Abbeys, although they stop spawning on the rest of the surface (see [[Surface]]).<ref>{{Source|MF_datapack/data/matcha/predicate/in_dungeon.json}}</ref>
 * Trial spawners drop keys from <code>spawners/trial_chamber/key</code>, with an 80% chance of a {{MCW|Trial Key}} and a 20% chance of an {{MCW|Ominous Trial Key}}. Their consumable drops are the pack's foods.
-* Vaults contain [[Divine Fragment]]s, [[Sacred texts]], [[Crystal Heart]]s and pack equipment. Ominous vaults can give [[Silver Bullion]] and the "Elegy of the Abbey" [[Music Disc]].
+* Vaults contain [[divine fragment]]s, [[sacred texts]], [[crystal heart]]s and pack equipment. Ominous vaults can give [[silver bullion]] and the "Elegy of the Abbey" [[music disc]].
 * The [[Archaeologist]] sells Trial Chamber Maps. See [[Explorer maps]].
 
 == Loot ==

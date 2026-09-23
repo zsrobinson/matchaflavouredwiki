@@ -9,12 +9,10 @@ A '''wooden shovel''' is the [[Wooden equipment|wooden]] [[Tools#Shovel|shovel]]
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
+The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
 
-=== Loot ===
+=== Chest loot ===
 {{Sources}}
-
-The loot table <code>matcha:equipment/wood/shovel</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
 
 == Usage ==
 
@@ -28,29 +26,11 @@ It deals 2.5 damage with an attack speed of 1.
 
 === Repairing ===
 
-It is repaired in an [[anvil]] with {{MCW|Planks|planks}}. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
-
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 200
-|-
-| Mining speed || 2
-|-
-| Attack damage || 2.5
-|-
-| Attack speed || 1
-|}
+It is repaired in an [[anvil]] with {{MCW|Planks|planks}}. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
 
 == History ==
 {{History|
-{{History line|0.4-alpha|Added translation support for all armor and tools.}}
 }}
-
-== See also ==
-* [[Wooden equipment]]
-* [[Tools]]
 
 == References ==
 {{reflist}}

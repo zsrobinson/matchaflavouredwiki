@@ -3,11 +3,11 @@
 |type=Jigsaw structure
 |biomes=[[Biomes#Changes by biome|Forest]], [[Biomes#Changes by biome|Dark Forest]]
 |generates=Overworld, partly underground
-|consists=Stone, tuff bricks, andesite, cobblestone, moss, copper grates, [[Copper Eye]]s
+|consists=Stone, tuff bricks, andesite, cobblestone, moss, copper grates, [[copper eye]]s
 |id=<code>minecraft:abbey_overgrown</code>
 |added={{Version|1.10}}
 }}
-The '''Abbey''' is a large ruined dungeon structure added by [[Matcha Flavoured]]. It consists of an overgrown tower on the surface and a maze of trial rooms, puzzle rooms and reward rooms deep underground, connected by doors and grates that open when a [[Copper Eye]] is shot. The developer describes it as "the bastion of the overworld": where the {{MCW|Bastion Remnant}} supplies [[Adamant Scrap]], the Abbey supplies [[Silver Bullion|silver]].<ref>{{Cite changelog|1.10|quote=Abbeys are the bastion of the overworld (hopefully). Bastions provide adamant scrap, Abbeys provide silver.}}</ref>
+The '''Abbey''' is a large ruined dungeon structure added by [[Matcha Flavoured]]. It consists of an overgrown tower on the surface and a maze of trial rooms, puzzle rooms and reward rooms deep underground, connected by doors and grates that open when a [[copper eye]] is shot. The developer describes it as "the bastion of the overworld": where the {{MCW|Bastion Remnant}} supplies [[adamant scrap]], the Abbey supplies [[Silver Bullion|silver]].<ref>{{Cite changelog|1.10|quote=Abbeys are the bastion of the overworld (hopefully). Bastions provide adamant scrap, Abbeys provide silver.}}</ref>
 
 The Abbey is a late-mid to late-game dungeon. The release notes recommend full [[Diamond equipment|diamond gear]] and good food, and advise against [[Steel equipment|steel armor]] because its blast resistance "makes the dungeon boring".<ref>{{Cite changelog|1.10|quote=Abbeys are late-mid to late-game dungeon, so be prepared [...] DONT WEAR STEEL! Blast resistance makes the dungeon boring}}</ref>
 
@@ -43,7 +43,7 @@ An Abbey is assembled from template pieces joined by jigsaw blocks. The pieces a
 
 The layout follows this chain:
 # The '''tower''' (21 × 48 × 23 blocks) stands on the surface. Its bottom jigsaw connects down to the entrance shaft.
-# The '''entrance''' (30 × 48 × 13) is a 48-block-deep shaft with a bubble column over {{MCW|Soul Sand|soul sand}} to carry the player back up, and a [[Copper Eye]] door and several Copper Eye grates. A [[Crystal Heart]] lies on a ledge inside it.
+# The '''entrance''' (30 × 48 × 13) is a 48-block-deep shaft with a bubble column over {{MCW|Soul Sand|soul sand}} to carry the player back up, and a [[copper eye]] door and several copper eye grates. A [[crystal heart]] lies on a ledge inside it.
 # The '''tutorial room''' (35 × 16 × 35) is the hub of the dungeon. It holds five trial spawners, connects to reward rooms on its east and west sides, to puzzle rooms on its upper east and west sides, and to a combat room to the south.
 # '''Combat rooms''' connect onward to puzzle rooms and reward rooms, and '''puzzle rooms''' connect back to combat rooms, so the dungeon branches until the depth limit or the 116-block radius is reached.
 # '''Reward rooms''' ("boons") are 5 × 7 × 7 dead ends.
@@ -56,35 +56,35 @@ Several jigsaw blocks in the combat rooms point to a pool named <code>abbey/defa
 |-
 | Tower || 21 × 48 × 23 || 3 trapped chests (barracks loot) on the barracks floor, 1 trapped chest (tower loot) at the top, 20 decorated pots, a soul campfire, 12 brown beds, 4 infested cobblestone, 7 [[#Mobs|allays]].
 |-
-| Entrance || 30 × 48 × 13 || Bubble-column shaft, 2 Copper Eye doors, 6 Copper Eye grates, a [[Crystal Heart]] item.
+| Entrance || 30 × 48 × 13 || Bubble-column shaft, 2 copper eye doors, 6 copper eye grates, a [[crystal heart]] item.
 |-
-| Tutorial || 35 × 16 × 35 || 5 trial spawners, 4 Copper Eye lanterns, 6 Copper Eye doors, 6 Copper Eye grates, a vault placeholder, 4 skeleton skulls.
+| Tutorial || 35 × 16 × 35 || 5 trial spawners, 4 copper eye lanterns, 6 copper eye doors, 6 copper eye grates, a vault placeholder, 4 skeleton skulls.
 |-
-| Waterfall || 48 × 24 × 33 || 8 monster spawners (6 skeleton, 2 husk), a large waterfall, many Copper Eye grates.
+| Waterfall || 48 × 24 × 33 || 8 monster spawners (6 skeleton, 2 husk), a large waterfall, many copper eye grates.
 |-
-| Quad spawn walkways || 22 × 11 × 22 || 2 trial spawners (skeleton and armored skeleton), Copper Eye doors and grates.
+| Quad spawn walkways || 22 × 11 × 22 || 2 trial spawners (skeleton and armored skeleton), copper eye doors and grates.
 |-
-| Spider triple walkway || 27 × 11 × 22 || 2 spider trial spawners, 1 cave spider monster spawner, 1 vault (Trial Key), bats.
+| Spider triple walkway || 27 × 11 × 22 || 2 spider trial spawners, 1 cave spider monster spawner, 1 vault (trial key), bats.
 |-
-| Drawbridge || 31 × 14 × 19 || 5 trial spawners (cave spider, skeleton, 3 zombie including an armored one), TNT, Copper Eye doors, grates and lanterns.
+| Drawbridge || 31 × 14 × 19 || 5 trial spawners (cave spider, skeleton, 3 zombie including an armored one), TNT, copper eye doors, grates and lanterns.
 |-
 | Water and lava || 22 × 13 × 35 || 2 trial spawners (armored skeleton, blaze), water and lava, blackstone.
 |-
-| Hallway pitfall || 19 × 10 × 13 || Pointed dripstone pit, ladders, a Copper Eye door and grates.
+| Hallway pitfall || 19 × 10 × 13 || Pointed dripstone pit, ladders, a copper eye door and grates.
 |-
-| Lantern drop || 17 × 37 × 13 || A zombie trial spawner, 2 chipped anvils, TNT, a Copper Eye lantern, bubble column.
+| Lantern drop || 17 × 37 × 13 || A zombie trial spawner, 2 chipped anvils, TNT, a copper eye lantern, bubble column.
 |-
 | Decision puzzle || 19 × 10 × 17 || A cave spider trial spawner, a dispenser with 3 {{MCW|Tipped Arrow|tipped arrows}} of Poison (long), bats.
 |-
-| Bath || 19 × 10 × 13 || A water pool and vertical Copper Eye grates.
+| Bath || 19 × 10 × 13 || A water pool and vertical copper eye grates.
 |-
-| Jump puzzle || 26 × 31 × 17 || A parkour climb over infested cobblestone, vertical Copper Eye grates, an ominous vault at the top.
+| Jump puzzle || 26 × 31 × 17 || A parkour climb over infested cobblestone, vertical copper eye grates, an ominous vault at the top.
 |-
-| Boon: checkpoint || 5 × 7 × 7 || A [[Silver Bullion]] item and blocks that can become [[Native Silver]] ore.
+| Boon: checkpoint || 5 × 7 × 7 || A [[silver bullion]] item and blocks that can become [[Native Silver]] ore.
 |-
 | Boon: vault || 5 × 7 × 7 || An ominous vault.
 |-
-| Boon: heart || 5 × 7 × 7 || A [[Crystal Heart]] item.
+| Boon: heart || 5 × 7 × 7 || A [[crystal heart]] item.
 |}
 
 === Block processors ===
@@ -114,16 +114,16 @@ Placeholder blocks in the templates are replaced when the structure generates. E
 
 Vaults created by a processor have no configuration, so they use the vanilla default: they open with a {{MCW|Trial Key}} and give <code>chests/trial_chambers/reward</code> loot. The two ominous vaults placed in the templates (boon vault and jump puzzle) open with an {{MCW|Ominous Trial Key}} and give <code>chests/trial_chambers/reward_ominous</code> loot. See [[Trial Chambers#Loot]] for these tables.
 
-=== Copper Eyes ===
+=== Copper eyes ===
 {{Main|Copper Eye}}
-The dungeon's doors, grates and hanging lanterns are controlled by [[Copper Eye]]s (target blocks). Shooting a Copper Eye with any projectile opens the iron-bar door below it, slides or lifts its copper grate, or drops its lantern. Each Copper Eye works once.
+The dungeon's doors, grates and hanging lanterns are controlled by [[copper eye]]s (target blocks). Shooting a copper eye with any projectile opens the iron-bar door below it, slides or lifts its copper grate, or drops its lantern. Each copper eye works once.
 
-=== Warding Stones ===
-A [[Warding Stone]] cannot be placed in an Abbey (or in [[Trial Chambers]]). If a player tries, the stone explodes like TNT with no fuse.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/forbidden.mcfunction}}</ref>
+=== Warding stones ===
+A [[warding stone]] cannot be placed in an Abbey (or in [[Trial Chambers]]). If a player tries, the stone explodes like TNT with no fuse.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/forbidden.mcfunction}}</ref>
 
 == Loot ==
 === Tower chests ===
-The trapped chest at the top of the tower uses <code>chests/abbey/tower</code>. It always contains [[The Tanakh]] or [[The Quran]] and has a 50% chance of a [[Crystal Heart]].
+The trapped chest at the top of the tower uses <code>chests/abbey/tower</code>. It always contains [[The Tanakh]] or [[The Quran]] and has a 50% chance of a [[crystal heart]].
 {{Data/Loot/minecraft/chests/abbey/tower}}
 
 === Barracks chests ===
@@ -136,8 +136,8 @@ The tower's 20 decorated pots and every pot created by a processor use <code>pot
 
 === Other ===
 * Vaults: see [[Trial Chambers#Loot]].
-* Trial spawners drop keys from <code>spawners/trial_chamber/key</code>: an 80% chance of a Trial Key and a 20% chance of an Ominous Trial Key per key drop.<ref>{{Source|MF_datapack/data/minecraft/loot_table/spawners/trial_chamber/key.json}}</ref>
-* A [[Crystal Heart]] item lies in the entrance shaft and in the heart boon room; [[Silver Bullion]] lies in the checkpoint boon room.
+* Trial spawners drop keys from <code>spawners/trial_chamber/key</code>: an 80% chance of a trial key and a 20% chance of an ominous trial key per key drop.<ref>{{Source|MF_datapack/data/minecraft/loot_table/spawners/trial_chamber/key.json}}</ref>
+* A [[crystal heart]] item lies in the entrance shaft and in the heart boon room; [[silver bullion]] lies in the checkpoint boon room.
 
 == Mobs ==
 [[Warding]] has no effect on undead wearing copper armor, which makes the armored skeletons and zombies of the Abbey dangerous even to warded players.
@@ -194,7 +194,7 @@ The track "Abbey" by Vee Vaicekauskas replaces the forest background music, so i
 {{History line|1.12.1-alpha|date=September 1, 2026|Warding Stones can no longer be placed in Abbeys.
 * The tower chest now always contains The Quran or The Tanakh.
 * Added the "Abbey" background track.
-* The Copper Eye scan now runs when a target is hit, instead of every tick.}}
+* The copper eye scan now runs when a target is hit, instead of every tick.}}
 {{History line|1.12.2|date=September 19, 2026|Allays now generate with the structure; previously they did not spawn.
 * Abbey mobs no longer vanish after the Ender Dragon is killed, and Abbeys keep spawning mobs after the dragon.
 * Spawner mobs no longer drop anything.}}
@@ -205,7 +205,7 @@ The track "Abbey" by Vee Vaicekauskas replaces the forest background music, so i
 * The developer originally made Abbeys "as rare as woodland mansions (accidentally)", then made them more common.
 * The trial spawner for strays is named "Buff Stay", a misspelling of "stray".
 * The advancement description for [[Silver Bullion|silver]] says that most silver deposits "are now harboured in Abbeys".
-* The developer's notes plan a full redesign with more surrounding buildings, a proper downstairs entrance and more uses for the Copper Eye.
+* The developer's notes plan a full redesign with more surrounding buildings, a proper downstairs entrance and more uses for the copper eye.
 
 == See also ==
 * [[Papal Outpost]], whose watchtower uses the Abbey's loot tables

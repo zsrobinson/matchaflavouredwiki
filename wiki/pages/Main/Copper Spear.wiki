@@ -2,57 +2,25 @@
 |renewable=Yes
 }}
 
-A '''copper spear''' is the [[Copper equipment|copper]] [[spear]], crafted from [[Copper Ingot|copper ingots]]. It deals 2 damage at an attack speed of 1.176 and has 190 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_spear.json}}</ref>
+A '''copper spear''' is the [[Copper equipment|copper]] [[spear]], crafted from [[copper ingot]]s and sticks. It is the cheapest metal spear and the base for the [[Shakudo Spear|shakudo]] and [[hepatizon spear]]s.
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
-
-=== Loot ===
-{{Sources}}
-
-The loot table <code>matcha:equipment/copper/spear</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
-
 == Usage ==
 
 === Combat ===
-
-It deals 2 damage with an attack speed of 1.176.
+The copper spear deals {{Hp|2}} damage at an attack speed of 1.18. Unlike the other copper tools it keeps the vanilla copper spear's durability of 190. Otherwise it works like a vanilla {{MCW|spear}}.
 
 === Repairing ===
+It can be repaired in an [[anvil]] with [[copper ingot]]s. As with all equipment in the pack, the repair cost never grows, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with [[Copper Ingot|copper ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+=== Smelting and smithing ===
+{{Uses}}
 
-=== Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Copper Ingot|copper ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/copper_ingot_from_blasting_copper_materials.json}}</ref>
-
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 190
-|-
-| Attack damage || 2
-|-
-| Attack speed || 1.176
-|}
-
-== History ==
-{{History|
-{{History line|0.4-alpha|Added translation support for all armor and tools.}}
-{{History line|1.12.1-alpha|Copper can no longer be smelted in an oven; it needs a mud kiln or blast furnace.}}
-{{History line|1.12.2|The blast furnace recipe changed and diamonds now drop raw, which the release notes describe as extending the copper and iron ages.}}
-}}
-
-== See also ==
-* [[Copper equipment]]
-* [[Weapons]]
-
-== References ==
-{{reflist}}
+It melts down into one copper ingot in a [[blast furnace]], and is upgraded to a shakudo or hepatizon spear at a [[smithing table]].
 
 {{Navbox equipment}}
 [[Category:Weapons]]

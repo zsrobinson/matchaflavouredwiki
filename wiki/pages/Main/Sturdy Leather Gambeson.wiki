@@ -10,10 +10,8 @@ A '''sturdy leather gambeson''' is the [[Sturdy leather armor|sturdy leather]] [
 === Crafting ===
 {{Recipes}}
 
-=== Loot ===
+=== Chest loot ===
 {{Sources}}
-
-The loot table <code>matcha:equipment/sturdy_leather/chestplate</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
 
 == Usage ==
 
@@ -31,29 +29,14 @@ The intrinsics are stored on the item and applied when it enters an inventory. S
 
 === Repairing ===
 
-It is repaired in an [[anvil]] with [[Tattered Leather|tattered leather]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
-
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 350
-|-
-| Armor || 5
-|-
-| Safe fall distance || +2
-|}
+It is repaired in an [[anvil]] with [[Tattered Leather|tattered leather]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
 
 == History ==
 {{History|
-{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Added translation support for all armor and tools. Added sturdy leather armor.}}
+{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Added sturdy leather armor.}}
 {{History line|1.10|Armor raised from 4 to 5, equal to the golden chestplate.}}
 {{History line|1.12.2|Safe fall distance raised from 1 to 2 per piece, and the armor can be repaired with tattered leather.}}
 }}
-
-== See also ==
-* [[Sturdy leather armor]]
-* [[Armor]]
 
 == References ==
 {{reflist}}

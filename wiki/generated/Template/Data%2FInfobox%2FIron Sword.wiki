@@ -7,14 +7,15 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Anemos]]}}
+|intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=500
 |damage={{Hp|6}}
+|attackspeed=1.6
 |miningspeed=1.5
 |repair=[[Iron Ingot]]
-|tooltip=🗡 6<br />🕒 1.6
+|tooltip={{G|Attack damage}} 6<br />{{G|Attack speed}} 1.6
 |id=<code>minecraft:iron_sword</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/iron_sword.json|iron_sword.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

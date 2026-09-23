@@ -12,7 +12,7 @@ Dungeons are placed by two features:<ref>{{Source|MF_datapack/data/minecraft/wor
 |}
 
 == Structure ==
-After the vanilla room is generated, the pack places a spawner template at its center, replacing the vanilla spawner.<ref>{{Source|MF_datapack/data/minecraft/worldgen/configured_feature/monster_room.json}}</ref> The spawner is a zombie, skeleton or spider spawner with equal chances (vanilla: zombies twice as likely). Its mobs carry the <code>NoDrops</code> tag and drop nothing. See [[Spawner]] for how spawners can be broken for [[Divine Fragment]]s.
+After the vanilla room is generated, the pack places a spawner template at its center, replacing the vanilla spawner.<ref>{{Source|MF_datapack/data/minecraft/worldgen/configured_feature/monster_room.json}}</ref> The spawner is a zombie, skeleton or spider spawner with equal chances (vanilla: zombies twice as likely). Its mobs carry the <code>NoDrops</code> tag and drop nothing. See [[Spawner]] for how spawners can be broken for [[divine fragment]]s.
 
 == Loot ==
 === Chests ===

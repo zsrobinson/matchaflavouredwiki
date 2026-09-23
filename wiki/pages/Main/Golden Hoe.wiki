@@ -10,12 +10,10 @@ A '''golden hoe''' is the [[Golden equipment|golden]] [[Tools#Hoe|hoe]], crafted
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
+The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
 
-=== Loot ===
+=== Chest loot ===
 {{Sources}}
-
-The loot table <code>matcha:equipment/gold/hoe</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
 
 == Usage ==
 
@@ -37,33 +35,15 @@ The intrinsics are stored on the item and applied when it enters an inventory. S
 
 === Repairing ===
 
-It is repaired in an [[anvil]] with [[Gold Ingot|gold ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+It is repaired in an [[anvil]] with [[Gold Ingot|gold ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
 
 === Smelting ingredient ===
 In a [[Blast Furnace|blast furnace]], it smelts into one [[Gold Ingot|gold ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/gold_ingot_from_blasting_gold_materials.json}}</ref>
 
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 350
-|-
-| Mining speed || 12
-|-
-| Attack damage || 1
-|-
-| Attack speed || 1
-|}
-
 == History ==
 {{History|
-{{History line|0.4-alpha|Added translation support for all armor and tools.}}
 {{History line|1.12.2|Ruined portal loot was reduced so that gold cannot be obtained before iron.}}
 }}
-
-== See also ==
-* [[Golden equipment]]
-* [[Tools]]
 
 == References ==
 {{reflist}}

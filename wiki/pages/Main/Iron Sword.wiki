@@ -1,4 +1,5 @@
 {{Infobox auto
+|intrinsics=None
 |renewable=Yes
 }}
 
@@ -9,47 +10,27 @@ An '''iron sword''' is the [[Iron equipment|iron]] [[Weapons#Sword|sword]], craf
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
+The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
 
-=== Loot ===
+=== Chest loot ===
 {{Sources}}
 
-The loot table <code>matcha:equipment/iron/sword</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+The iron swords in [[Abbey]] barracks and tower chests are a different variant: they carry [[Anemos]] I and set only an attack damage modifier, so they have no attack cooldown (attack speed 4) even though their tooltip shows 1.6.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/barracks.json}}</ref>
 
 == Usage ==
 
-=== Combat ===
-
-It deals 6 damage with an attack speed of 1.6.
-
 === Repairing ===
 
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
 
 === Smelting ingredient ===
 In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
 
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 500
-|-
-| Attack damage || 6
-|-
-| Attack speed || 1.6
-|}
-
 == History ==
 {{History|
-{{History line|0.4-alpha|Added translation support for all armor and tools.}}
 {{History line|0.6-alpha|Added recipe unlocks for iron equipment.}}
 {{History line|1.12.1-alpha|The iron sword's attack speed now matches its tooltip.}}
 }}
-
-== See also ==
-* [[Iron equipment]]
-* [[Weapons]]
 
 == References ==
 {{reflist}}

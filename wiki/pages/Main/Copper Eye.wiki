@@ -1,6 +1,6 @@
 {{Vanilla|Target}}
 {{Infobox auto}}
-A '''Copper Eye''' is a block that replaces the vanilla {{MCW|Target|target}}. It works as a redstone target as in vanilla, and in the [[Abbey]] it is the trigger for the dungeon's mechanisms: shooting a Copper Eye opens a door, moves a copper grate or drops a hanging lantern.
+A '''copper eye''' is a block that replaces the vanilla {{MCW|Target|target}}. It works as a redstone target as in vanilla, and in the [[Abbey]] it is the trigger for the dungeon's mechanisms: shooting a copper eye opens a door, moves a copper grate or drops a hanging lantern.
 
 == Obtaining ==
 === Crafting ===
@@ -13,16 +13,16 @@ A '''Copper Eye''' is a block that replaces the vanilla {{MCW|Target|target}}. I
 Copper Eyes generate in every room of the [[Abbey]], usually above an iron-bar door, beside a copper grate or above a hanging lantern.
 
 == Usage ==
-Outside the Abbey, the Copper Eye behaves like a vanilla target block and emits a redstone signal when hit by a projectile.
+Outside the Abbey, the copper eye behaves like a vanilla target block and emits a redstone signal when hit by a projectile.
 {{Uses}}
 
 == Behavior ==
 === Abbey mechanisms ===
-Each mechanism in the Abbey is an invisible marker entity placed inside a Copper Eye, tagged with the kind of mechanism it controls. The marker's facing sets the direction the mechanism works in.
+Each mechanism in the Abbey is an invisible marker entity placed inside a copper eye, tagged with the kind of mechanism it controls. The marker's facing sets the direction the mechanism works in.
 
-When a player hits any Copper Eye (or target) with any projectile, the advancement <code>matcha:mechanics/hit_copper_eye</code> is granted and runs the Copper Eye check. The check does not run on a timer.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/hit_copper_eye.json}}</ref> The check:<ref>{{Source|MF_datapack/data/matcha/function/abbey/copper_eye_check.mcfunction}}</ref>
-# Removes every mechanism whose Copper Eye has been broken. A lantern mechanism is also removed when its lantern is gone, and a retracting grate is also removed when any of the six copper grates around it is gone.<ref>{{Source|MF_datapack/data/matcha/function/abbey/check_if_copper_eye_should_be_killed.mcfunction}}</ref>
-# Runs the action of every mechanism whose Copper Eye is currently powered, which is the one just hit.
+When a player hits any copper eye (or target) with any projectile, the advancement <code>matcha:mechanics/hit_copper_eye</code> is granted and runs the copper eye check. The check does not run on a timer.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/hit_copper_eye.json}}</ref> The check:<ref>{{Source|MF_datapack/data/matcha/function/abbey/copper_eye_check.mcfunction}}</ref>
+# Removes every mechanism whose copper eye has been broken. A lantern mechanism is also removed when its lantern is gone, and a retracting grate is also removed when any of the six copper grates around it is gone.<ref>{{Source|MF_datapack/data/matcha/function/abbey/check_if_copper_eye_should_be_killed.mcfunction}}</ref>
+# Runs the action of every mechanism whose copper eye is currently powered, which is the one just hit.
 # Revokes the advancement, so the next hit triggers it again.
 
 Every action plays an enchanting table sound for the shooter, shows trial spawner detection particles and an iron golem hurt sound, and then removes the marker. '''Each mechanism works only once.'''
@@ -30,27 +30,27 @@ Every action plays an enchanting table sound for the shooter, shows trial spawne
 {| class="wikitable"
 ! Mechanism !! Marker tag !! Effect when shot
 |-
-| Door || <code>copper_eye_door</code> || Removes all iron bars in a 3 × 2 × 3 area 2–3 blocks below the Copper Eye, opening the passage.<ref>{{Source|MF_datapack/data/matcha/function/abbey/open_copper_eye_door.mcfunction}}</ref>
+| Door || <code>copper_eye_door</code> || Removes all iron bars in a 3 × 2 × 3 area 2–3 blocks below the copper eye, opening the passage.<ref>{{Source|MF_datapack/data/matcha/function/abbey/open_copper_eye_door.mcfunction}}</ref>
 |-
-| Lantern || <code>copper_eye_lantern</code> || Removes the lantern and chain hanging below the Copper Eye and drops a small fireball straight down from the lantern's position.<ref>{{Source|MF_datapack/data/matcha/function/abbey/break_copper_eye_lantern.mcfunction}}</ref>
+| Lantern || <code>copper_eye_lantern</code> || Removes the lantern and chain hanging below the copper eye and drops a small fireball straight down from the lantern's position.<ref>{{Source|MF_datapack/data/matcha/function/abbey/break_copper_eye_lantern.mcfunction}}</ref>
 |-
-| Grate || <code>copper_eye_grate</code> || Extends a 3 × 3 floor of copper grates forward from the Copper Eye, and moves the Copper Eye to the far end. Used to build bridges.<ref>{{Source|MF_datapack/data/matcha/function/abbey/push_copper_eye_grate.mcfunction}}</ref>
+| Grate || <code>copper_eye_grate</code> || Extends a 3 × 3 floor of copper grates forward from the copper eye, and moves the copper eye to the far end. Used to build bridges.<ref>{{Source|MF_datapack/data/matcha/function/abbey/push_copper_eye_grate.mcfunction}}</ref>
 |-
 | Vertical grate || <code>copper_eye_grate_vertical</code> || Pushes a 3-wide column of copper grates 2 blocks upward. Any player standing on the three grates is teleported 3 blocks up, and three wind charges are fired downward. Used as lifts.<ref>{{Source|MF_datapack/data/matcha/function/abbey/push_vertical_copper_eye_grate.mcfunction}}</ref>
 |-
-| Retracting grate || <code>copper_eye_grate_horizontal_retract</code> || Removes the 3 × 2 wall of grates at the Copper Eye and rebuilds a single row of grates 2 blocks back, with the Copper Eye in its center. Used to open walls.<ref>{{Source|MF_datapack/data/matcha/function/abbey/pull_horizontal_copper_eye_grate.mcfunction}}</ref>
+| Retracting grate || <code>copper_eye_grate_horizontal_retract</code> || Removes the 3 × 2 wall of grates at the copper eye and rebuilds a single row of grates 2 blocks back, with the copper eye in its center. Used to open walls.<ref>{{Source|MF_datapack/data/matcha/function/abbey/pull_horizontal_copper_eye_grate.mcfunction}}</ref>
 |-
 | Retracting vertical grate || <code>copper_eye_grate_vertical_retract</code> || The same as the retracting grate, but along the vertical axis, lowering a grate.<ref>{{Source|MF_datapack/data/matcha/function/abbey/pull_vertical_copper_eye_grate.mcfunction}}</ref>
 |}
 Grates placed by a mechanism are plain (unwaxed) copper grates, while the grates the Abbey generates with are waxed weathered copper grates.
 
-=== Copper Eye Door, Grate and Lantern ===
-'''Copper Eye Door''', '''Copper Eye Grate''' and '''Copper Eye Lantern''' are developer items used to build Abbey rooms. They are spawn eggs that place a mechanism marker. Their recipes are in the <code>debug</code> namespace and require a {{MCW|Command Block}}, so they cannot be crafted in survival:<ref>{{Source|MF_datapack/data/debug/recipe/copper_eye_door.json}}</ref>
-* Copper Eye Door: command block, iron bars and Copper Eye.
-* Copper Eye Grate: command block, waxed copper grate and Copper Eye.
-* Copper Eye Lantern: command block, lantern and Copper Eye. Its item name is written without spaces ("CopperEyeLantern").
+=== Copper eye door, grate and lantern ===
+'''Copper eye doors''', '''copper eye grates''' and '''copper eye lanterns''' are developer items used to build Abbey rooms. They are spawn eggs that place a mechanism marker. Their recipes are in the <code>debug</code> namespace and require a {{MCW|Command Block}}, so they cannot be crafted in survival:<ref>{{Source|MF_datapack/data/debug/recipe/copper_eye_door.json}}</ref>
+* Copper eye door: command block, iron bars and copper eye.
+* Copper eye grate: command block, waxed copper grate and copper eye.
+* Copper eye lantern: command block, lantern and copper eye. Its item name is written without spaces ("CopperEyeLantern").
 
-A newly placed marker is set up the next time any Copper Eye is shot: it places a Copper Eye at its own position and, depending on its type, waxed weathered copper grates on either side (grates), or a chain and a hanging lantern below it (lanterns).<ref>{{Source|MF_datapack/data/matcha/function/abbey/setup_copper_eye_grate.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/abbey/setup_copper_eye_lantern.mcfunction}}</ref>
+A newly placed marker is set up the next time any copper eye is shot: it places a copper eye at its own position and, depending on its type, waxed weathered copper grates on either side (grates), or a chain and a hanging lantern below it (lanterns).<ref>{{Source|MF_datapack/data/matcha/function/abbey/setup_copper_eye_grate.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/abbey/setup_copper_eye_lantern.mcfunction}}</ref>
 
 == History ==
 {{History
@@ -60,7 +60,7 @@ A newly placed marker is set up the next time any Copper Eye is shot: it places 
 }}
 
 == Trivia ==
-* The developer cited the Copper Eye system as a model for the pack's code: using an advancement triggered by shooting a target, instead of a function that runs every tick.<ref>{{Cite changelog|1.12.1-alpha|quote=When I made the abbey, I managed to use the player shooting target advancement in order to trigger the marker scans. This is the kind of thing I want to keep doing.}}</ref>
+* The developer cited the copper eye system as a model for the pack's code: using an advancement triggered by shooting a target, instead of a function that runs every tick.<ref>{{Cite changelog|1.12.1-alpha|quote=When I made the abbey, I managed to use the player shooting target advancement in order to trigger the marker scans. This is the kind of thing I want to keep doing.}}</ref>
 
 == References ==
 {{reflist}}

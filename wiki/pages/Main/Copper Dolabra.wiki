@@ -2,64 +2,40 @@
 |renewable=Yes
 }}
 
-A '''copper dolabra''' is the [[Copper equipment|copper]] [[dolabra]], crafted from [[Copper Ingot|copper ingots]]. It mines at speed 5 and has 350 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_dolabra.json}}</ref>
-
-As a [[dolabra]], it works as both a pickaxe and an axe, at a lower mining speed than the copper pickaxe or axe.
+A '''copper dolabra''' is the [[Copper equipment|copper]] [[dolabra]], a pickaxe and axe in one tool. It is crafted from [[copper ingot]]s and sticks.
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-=== Loot ===
-{{Sources}}
-
-The loot table <code>matcha:equipment/copper/dolabra</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
-
 == Usage ==
 
 === Mining ===
+The copper dolabra breaks both pickaxe and axe blocks at speed 5, one slower than the [[copper pickaxe]] or [[copper axe]], and has 350 durability.
 
-It mines both pickaxe and axe blocks at speed 5.
+Its harvesting rules differ from the copper pickaxe's. It gets no drops from diamond ore (which it breaks at speed 4) or from [[sulfurous quartz deposit]]s and [[sulfur deposit]]s, but, unlike the copper pickaxe, it harvests [[native gold]], [[native silver]] and obsidian.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_dolabra.json}}</ref> This makes it the only copper tool that can mine obsidian.
 
-The copper dolabra has its own rules instead of the copper pickaxe's: it gets no drops from diamond ore (speed 4) or from [[Sulfurous Quartz Deposit|sulfurous quartz]] and [[Sulfur Deposit|sulfur deposits]], but, unlike the copper pickaxe, it can mine [[Native Gold|native gold]] and obsidian with drops.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_dolabra.json}}</ref>
-
-The pack adds beds, candles, cactus and honeycomb blocks to the blocks axes mine quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-
-It deals 5 damage with an attack speed of 0.8.
+It deals {{Hp|5}} damage at an attack speed of 0.8.
 
 === Repairing ===
+It can be repaired in an [[anvil]] with [[copper ingot]]s. As with all equipment in the pack, the repair cost never grows, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with [[Copper Ingot|copper ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+=== Smelting and smithing ===
+{{Uses}}
 
-=== Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Copper Ingot|copper ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/copper_ingot_from_blasting_copper_materials.json}}</ref>
+In a [[blast furnace]] it melts down into a copper ingot. It uses the copper axe's item ID, so it also works as the base of the shakudo and hepatizon axe and dolabra smithing recipes.
 
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 350
-|-
-| Mining speed || 5
-|-
-| Attack damage || 5
-|-
-| Attack speed || 0.8
-|}
+== Notes ==
+* The 1.12.1-alpha notes say only diamond, electrum and adamant tools can mine obsidian, but the copper dolabra's rules still harvest it.
 
 == History ==
 {{History|
-{{History line|0.4-alpha|Added translation support for all armor and tools.}}
-{{History line|1.12.1-alpha|Copper can no longer be smelted in an oven; it needs a mud kiln or blast furnace.}}
-{{History line|1.12.2|The blast furnace recipe changed and diamonds now drop raw, which the release notes describe as extending the copper and iron ages. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+{{History line|1.12.2|Dolabras began to shift from weapon hybrids to pure axe and pickaxe tools; the release notes say their damage and weapon intrinsics will be reduced over time.}}
 }}
-
-== See also ==
-* [[Copper equipment]]
-* [[Tools]]
 
 == References ==
 {{reflist}}

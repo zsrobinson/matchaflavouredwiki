@@ -1,0 +1,90 @@
+{{See also|Upcoming features|Matcha Flavoured 1.12.2#Post-release fixes}}
+This page lists '''known bugs''' in [[Matcha Flavoured]]: places where the pack's code does something it evidently isn't meant to, such as text that shows a raw translation key, tooltips that disagree with an item's real values, and mechanics that don't match the release notes. Each entry was found by reading the pack's source at the documented version ({{Current version}}, with the fixes on the <code>main</code> branch). The README asks players to report bugs through the feedback form it links.<ref>{{Source|README.md}}</ref> Bugs fixed in earlier versions are listed in each article's History section and on the [[Version history|version pages]].
+
+== Untranslated text ==
+When a text component asks for a translation key that the resource pack's language file doesn't define, the game shows the key itself. The following keys are used by the datapack but missing from <code>en_us.json</code>:<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+{| class="wikitable"
+! Where it shows !! Missing key !! Notes
+|-
+| Name of the [[Elytra#Hepatizon Elytra|hepatizon elytra]] || <code>item.kleispack.hepatizon_elytra</code> || The language file names the item under the older key <code>item.kleispack.bronze_elytra</code> ("Hepatizon Elytra"), which the recipe and loot table no longer use.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_elytra.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/equipment/hepatizon/elytra.json}}</ref>
+|-
+| "Repaired with" line of the [[Elytra#Shakudo Elytra|shakudo elytra]] || <code>item.minecraft.copper_block</code> || The vanilla key is <code>block.minecraft.copper_block</code>, which the hepatizon elytra uses correctly.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_elytra.json}}</ref>
+|-
+| Name and tooltip of six [[bulk blocks]] (terracotta, malachite, cinnabar, blackstone, smooth basalt, smooth quartz) || <code>item.kleispack.trade.bulk_terracotta</code>, <code>…bulk_prismarine</code>, <code>…bulk_cinnabar</code>, <code>…bulk_blackstone</code>, <code>…bulk_smooth_basalt</code>, <code>…bulk_smooth_quartz</code> and their <code>.desc</code> keys || Sold by the [[Mason]]. The other bulk blocks have names.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/2/terracotta.json}}</ref>
+|-
+| Stored-enchantment line of adamant tools || <code>enchantment.kleispack.smelting</code> || The description of the <code>matcha:adamant_tool</code> smelting intrinsic, which every adamant tool carries as a stored enchantment.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_tool.json}}</ref> See [[Adamant equipment]].
+|-
+| Tooltip of the [[crook]] || <code><nowiki>\uE028 %s</nowiki></code> and <code><nowiki>\uE027 %s</nowiki></code> (the reach and safe-fall glyphs) || The reach and safe-fall lines use the glyph ''text'' as the key instead of <code>desc.kleispack.entity_interaction_range</code> and <code>desc.kleispack.fall_height_attribute</code>, so the lines show the glyph followed by a literal "%s" instead of the value.<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/3/crook.json}}</ref>
+|-
+| Nowhere in practice || <code>item.kleispack.fish.axolotl</code> || Used by the loot table <code>gameplay/fishing/fish/axolotl</code>, which no other table calls. Fished axolotls come from the junk table and use <code>item.kleispack.axolotl</code>, which exists.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/fish/axolotl.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
+|}
+
+== Tooltips that disagree with the item ==
+Most of the pack's equipment hides its real attributes and shows a hand-written tooltip instead. In these items the two differ; the real values are the ones that apply.
+{| class="wikitable sortable"
+! Item !! Tooltip says !! Real value
+|-
+| [[Golden Shovel]] || Mining speed 12 || 15
+|-
+| [[Steel Pickaxe]] || Attack damage 4 || 3
+|-
+| [[Steel Axe]] || Attack damage 9 || 10
+|-
+| [[Steel Shovel]] || Attack damage 4.5 || 3.5
+|-
+| [[Steel Hoe]] || Attack speed 3 || 2
+|-
+| [[Steel Mattock]] || Attack speed 3 || 2
+|-
+| [[Iron Mattock]] || Attack speed 3 || 4
+|-
+| [[Shakudo Pickaxe]] || Attack speed 1.2 || 4
+|-
+| [[Shakudo Hoe]] || Attack speed 4 || 7
+|-
+| [[Shakudo Mattock]] || Attack damage 1 || 2
+|-
+| [[Hepatizon Mattock]] || Attack damage 3.5 || 3
+|-
+| [[Electrum Spear]] || Attack speed 1.18 || 4
+|-
+| [[Adamant Spear]] || Attack damage 4, attack speed 0.95 || 5 and 0.87
+|-
+| [[Crook]] || 5 damage, 3 reach || 2 damage; +2 reach in the main hand, +5 in the off hand
+|-
+| [[Baked Golden Apple]] || Regeneration for 0:30 || 1:00 (1,200 ticks)
+|-
+| Splash potion of darkness ([[Chemist]]) || Darkness and Blindness for 5:00 each || Darkness 1:00, Blindness 0:30
+|}
+Each item's article cites the file. Other tooltip problems:
+* The [[Elytra#Shakudo Elytra|shakudo elytra]]'s tooltip promises an "Elytra Bonus" of 10 seconds off the shakudo regeneration timer, but the item carries the ordinary shakudo armor intrinsic, so it only counts as one more shakudo piece. A separate <code>matcha:shakudo_elytra</code> intrinsic exists but isn't on the item.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_elytra.json}}</ref> The in-development changelog lists "Shakudo Elytra Bonus was not working" as fixed.<ref>{{Cite changelog|quote=Shakudo Elytra Bonus was not working (not sure how this was deleted)}}</ref>
+* The [[Adamant Pickaxe|adamant pickaxe]] lists [[divinity]] under "Set Bonus:", but tools don't count toward the set bonus. See [[Divinity]].
+
+== Mechanics ==
+* '''Fortune on tomatoes and chorus plants.''' The {{Version|1.12.2}} notes say Fortune now works on tomatoes, glow berry vines and chorus plants.<ref>{{Cite changelog|1.12.2|quote=Fortune now works on: Tomatoes, Glow berry vines, Chorus Plant}}</ref> In the tomato and chorus plant tables, a fixed count is set ''after'' the Fortune and electrum bonuses, which replaces them, so neither has any effect there. It does work on cave vines.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/chorus_plant.json}}</ref>
+* '''Glow berries from bare vines.''' The cave vine tables have no check for whether the vine carries berries, unlike vanilla, so every broken cave vine block drops glow berries.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/cave_vines.json}}</ref>
+* '''Silent fished crystal hearts.''' The treasure sound checks for the item model <code>matcha:crystal_heart</code>, but fished [[Crystal Heart|crystal hearts]] use <code>matcha:heart_container</code>, so catching one plays no sound. See [[Fishing sounds#Bugs]].<ref>{{Source|MF_datapack/data/matcha/advancement/fishing_sounds/treasure.json}}</ref>
+* '''Early pickaxes mine ancient debris.''' The pack's pickaxes list <code>#minecraft:mineable/pickaxe</code> as correct for drops without a tier check, and the blocks each tier ''can't'' mine are listed by hand. Ancient debris isn't on any of those lists, so even a wooden pickaxe gets it. See [[Tools#Mining levels]].<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref>
+* '''Cut diamonds in desert pyramids.''' The 1.12.2 notes say no "naturally-occuring free diamonds" should appear in surface structures, but the desert pyramid chest table still contains cut diamonds.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/desert_pyramid.json}}</ref> See [[Chest loot]].
+
+== Other ==
+* The chat message shown when the pack loads reports "version 1.12.1", although the release is 1.12.2 and the internal version number is 1122.<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+
+== Acknowledged by the developer ==
+The README lists one major known bug: on Purpur servers, and possibly others, <code>keep_inventory</code> is handled per dimension, so it has to be set by command in each dimension or items are lost on death.<ref>{{Source|README.md}}</ref> See [[Multiplayer]].
+
+The in-development changelog lists these as low-priority bugs that aren't fixed yet:<ref>{{Cite changelog|quote=Add predicate for surface spawn that excludes structures}}</ref>
+* The post-dragon [[Surface|safe-surface]] check doesn't exclude structures in general (only trial chambers and the [[Abbey]] are exempt).
+* [[Trailblaze]] boots give their speed boost on mud brick slabs when jumping, but not when simply running on them.
+* The toolsmith's hero-of-the-village gift is still stone tools, which the pack otherwise removes.
+
+== See also ==
+* [[Upcoming features]]
+* [[Removed features]]
+* [[Updating items]]
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Lists]]

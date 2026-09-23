@@ -9,12 +9,10 @@ A '''wooden pickaxe''' is the [[Wooden equipment|wooden]] [[Tools#Pickaxe|pickax
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
+The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
 
-=== Loot ===
+=== Chest loot ===
 {{Sources}}
-
-The loot table <code>matcha:equipment/wood/pickaxe</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
 
 == Usage ==
 
@@ -30,31 +28,13 @@ It deals 2 damage with an attack speed of 1.2.
 
 === Repairing ===
 
-It is repaired in an [[anvil]] with {{MCW|Planks|planks}}. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
-
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 200
-|-
-| Mining speed || 3
-|-
-| Attack damage || 2
-|-
-| Attack speed || 1.2
-|}
+It is repaired in an [[anvil]] with {{MCW|Planks|planks}}. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
 
 == History ==
 {{History|
-{{History line|0.4-alpha|Added translation support for all armor and tools.}}
 {{History line|1.10|The wooden pickaxe can now mine everything except higher-tier ores, and its durability was lowered from 600 to 200.}}
 {{History line|1.12.1-alpha|Removed a leftover item name component from the wooden pickaxe.}}
 }}
-
-== See also ==
-* [[Wooden equipment]]
-* [[Tools]]
 
 == References ==
 {{reflist}}

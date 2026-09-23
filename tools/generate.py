@@ -118,7 +118,8 @@ def ench_name(eid):
     return eid.split(':')[-1].replace('_', ' ').title()
 
 
-INTRINSIC_PAGES = [('warding', 'Warding'), ('adamant', 'Doom'), ('shakudo', 'Divinity'), ('electrum_tool', 'Fortune'),
+INTRINSIC_PAGES = [('warding', 'Warding'), ('adamant_tool', 'Adamant equipment'), ('adamant', 'Doom'),
+                   ('shakudo_weapon', 'Shakudo equipment'), ('shakudo', 'Set bonus#Shakudo regeneration'), ('electrum_tool', 'Fortune'),
                    ('electrum', 'Warding'), ('cleanse', 'Cleanse'), ('max_magic_protection', 'Magic protection'),
                    ('magic_protection', 'Magic protection'), ('conduit_power', 'Conduit Power'), ('fire_proof', 'Fire Resistance'),
                    ('haste', 'Haste'), ('regeneration', 'Regeneration')]
@@ -213,7 +214,7 @@ def attr_sum(comps, attr, slot=None):
     found = False
     for m in comps.get('attribute_modifiers', []) or []:
         if m.get('type', '').split(':')[-1] == attr and m.get('operation', 'add_value') == 'add_value':
-            if slot is None or m.get('slot') in (slot, 'any', 'hand', 'armor'):
+            if slot is None or m.get('slot') in (slot, 'any', 'hand', 'armor', None):  # no slot means any slot
                 tot += m.get('amount', 0)
                 found = True
     return (tot, found)

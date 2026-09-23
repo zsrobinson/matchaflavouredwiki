@@ -11,10 +11,8 @@ As a [[mattock]], it works as both a shovel and a hoe, at a lower mining speed t
 === Crafting ===
 {{Recipes}}
 
-=== Loot ===
+=== Chest loot ===
 {{Sources}}
-
-The loot table <code>matcha:equipment/iron/mattock</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
 
 == Usage ==
 
@@ -30,36 +28,19 @@ It deals 4 damage with an attack speed of 4.
 
 === Repairing ===
 
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
 
 === Smelting ingredient ===
 In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
 
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 500
-|-
-| Mining speed || 6
-|-
-| Attack damage || 4
-|-
-| Attack speed || 4
-|}
-
-The tooltip is written by hand and hides the real attributes. For this item it disagrees with the real values: it lists attack speed 3, but the item has 4.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_mattock.json}}</ref>
+== Notes ==
+* The hand-written tooltip hides the real attributes and shows attack speed 3 (real value 4).<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_mattock.json}}</ref>
 
 == History ==
 {{History|
-{{History line|0.4-alpha|Added translation support for all armor and tools.}}
 {{History line|0.6-alpha|Added recipe unlocks for iron equipment.}}
 {{History line|1.10|Iron mattocks now drop snowballs from snow (newly made tools only).}}
 }}
-
-== See also ==
-* [[Iron equipment]]
-* [[Tools]]
 
 == References ==
 {{reflist}}

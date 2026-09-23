@@ -226,9 +226,12 @@ def register(stack, src, how):
     if model and model not in rec['models'] and (named or not rec['models']) and MODEL_OWNER.get(model, key) == key:
         rec['models'].append(model)
     summ = summarise_components(comps)
-    # keep the richest component set
-    if len(summ) > len(rec['components']):
+    # The crafted item defines the item; loot and trade variants (e.g. the Abbey's enchanted iron
+    # swords) must not override it. Among equal sources keep the richest component set.
+    rank = {'recipe': 3, 'trade': 2, 'loot': 1}.get(how, 0)
+    if rank > rec.get('_rank', -1) or (rank == rec.get('_rank') and len(summ) > len(rec['components'])):
         rec['components'] = summ
+        rec['_rank'] = rank
     if len(rec['sources']) < 40:
         rec['sources'].append({'how': how, 'src': src})
     return key

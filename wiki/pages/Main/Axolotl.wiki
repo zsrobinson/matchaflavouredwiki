@@ -6,7 +6,7 @@ An '''axolotl''' is a [[fishing junk]] item caught in Dripstone Caves and Lush C
 It is 10 of 88 junk weight in those biomes: 11.36% of junk, about 1.14% of all catches.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref> Catching one plays its own [[fishing sounds|sound]].
 
 == Usage ==
-Placing it spawns an axolotl. Using it on a [[spawner]] destroys every spawner within 16 blocks and deals 20 damage to the player (outside Creative).<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
+Placing it spawns an axolotl. Using it on a [[spawner]] destroys every spawner and trial spawner within 16 blocks and deals 20 damage to the player (outside Creative).<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
 
 == Trivia ==
 * It is a chicken spawn egg with its entity data set to an axolotl.

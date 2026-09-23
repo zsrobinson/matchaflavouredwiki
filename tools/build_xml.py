@@ -43,6 +43,17 @@ def model_of(ns, title):
 
 
 def collect():
+    # wiki/generated is swapped atomically by tools/generate.py; retry if we catch it mid-swap
+    import time
+    for attempt in range(20):
+        try:
+            return _collect()
+        except FileNotFoundError:
+            time.sleep(1)
+    return _collect()
+
+
+def _collect():
     pages = {}
     for layer in ('generated', 'pages'):  # later layer overrides
         base = os.path.join(ROOT, 'wiki', layer)

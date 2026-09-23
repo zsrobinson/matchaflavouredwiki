@@ -20,6 +20,16 @@ Obtaining chocolate unlocks the [[Chocolate Chip Cookie|chocolate chip cookie]] 
 === Crafting ingredient ===
 {{Uses}}
 
+== Advancements ==
+* ''Powerful Flavors'': cook an intrinsic ingredient. Obtaining any of the 11 simple preparations of the ordinary intrinsic ingredients completes it.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/cook_food.json}}</ref>
+
+== History ==
+{{History|
+|-
+! Upcoming
+| Fixed the chocolate item model, which was in the wrong namespace so chocolate didn't show its texture.
+}}
+
 == See also ==
 * [[Cocoa Beans]]
 * [[Intrinsic]]

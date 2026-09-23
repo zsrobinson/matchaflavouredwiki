@@ -2,62 +2,38 @@
 |renewable=Yes
 }}
 
-A '''copper pickaxe''' is the [[Copper equipment|copper]] [[Tools#Pickaxe|pickaxe]], crafted from [[Copper Ingot|copper ingots]]. It mines at speed 6 and has 350 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_pickaxe.json}}</ref>
+A '''copper pickaxe''' is the [[Copper equipment|copper]] [[Tools#Pickaxe|pickaxe]], crafted from three [[copper ingot]]s and two sticks. In Matcha Flavoured it is the first pickaxe that can mine [[hematite]] (iron ore) and [[native silver]], and the one players are expected to use for most of the early game.
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
-
-=== Loot ===
-{{Sources}}
-
-The loot table <code>matcha:equipment/copper/pickaxe</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
-
 == Usage ==
 
 === Mining ===
+The copper pickaxe breaks pickaxe blocks at speed 6, faster than the vanilla copper pickaxe (5) and twice the speed of the [[wooden pickaxe]]. It has 350 durability.
 
-It mines pickaxe blocks at speed 6 (vanilla: 5).
+It cannot harvest diamond ore, [[native gold]], obsidian, crying obsidian or ender chests: those blocks break at speed 3 and drop nothing.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/copper.json}}</ref> An [[iron pickaxe]] is needed for gold and diamonds, and a [[diamond pickaxe]] for obsidian.
 
-It cannot get drops from diamond ore, [[Native Gold|native gold]] or obsidian-based blocks (obsidian, crying obsidian and ender chests), which it breaks at speed 3 without dropping anything.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/copper.json}}</ref>
+The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pickaxe blocks, so a pickaxe breaks them faster than a bare hand.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
 
 === Combat ===
-
-It deals 3 damage with an attack speed of 1.2.
+As a weapon it deals {{Hp|3}} damage at an attack speed of 1.2.
 
 === Repairing ===
+It can be repaired in an [[anvil]] with [[copper ingot]]s. As with all equipment in the pack, the repair cost never grows, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with [[Copper Ingot|copper ingots]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
+=== Smelting and smithing ===
+{{Uses}}
 
-=== Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Copper Ingot|copper ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/copper_ingot_from_blasting_copper_materials.json}}</ref>
-
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 350
-|-
-| Mining speed || 6
-|-
-| Attack damage || 3
-|-
-| Attack speed || 1.2
-|}
+In a [[blast furnace]], it can be melted down into a single copper ingot. The copper pickaxe is also the base item for the [[Shakudo equipment|shakudo]] and [[Hepatizon equipment|hepatizon]] upgrades at a [[smithing table]].
 
 == History ==
 {{History|
-{{History line|0.4-alpha|Added translation support for all armor and tools.}}
-{{History line|1.12.1-alpha|Copper can no longer be smelted in an oven; it needs a mud kiln or blast furnace.}}
-{{History line|1.12.2|The blast furnace recipe changed and diamonds now drop raw, which the release notes describe as extending the copper and iron ages.}}
+{{History line|1.10|The release notes set out to lengthen the copper age: "I want them caving and using copper tools at first."}}
+{{History line|1.12.1-alpha|Can no longer mine obsidian; only diamond, electrum and adamant pickaxes can.}}
 }}
-
-== See also ==
-* [[Copper equipment]]
-* [[Tools]]
 
 == References ==
 {{reflist}}

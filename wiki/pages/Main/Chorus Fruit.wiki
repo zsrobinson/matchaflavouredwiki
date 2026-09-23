@@ -7,7 +7,7 @@
 == Obtaining ==
 
 === Breaking ===
-Chorus plants drop the pack's chorus fruit.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/chorus_plant.json}}</ref>
+Chorus plants drop 0 or 1 of the pack's chorus fruit, as in vanilla.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/chorus_plant.json}}</ref> The loot table applies Fortune and the Electrum tool [[intrinsic]] first and then sets the count to 0–1, which overrides both bonuses, so neither increases the drop.
 
 {{Sources}}
 

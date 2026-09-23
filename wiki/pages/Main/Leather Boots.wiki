@@ -10,12 +10,7 @@ A '''leather boots''' is the [[Leather armor|leather]] [[Armor#Boots|boots]], cr
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which gives the item the stats listed below.
-
-=== Loot ===
-{{Sources}}
-
-The loot table <code>matcha:equipment/leather/boots</code> gives the item exactly as crafted; it is used by <code>/loot</code> and by the [[Updating items|item update system]].
+The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
 
 == Usage ==
 
@@ -33,28 +28,13 @@ The intrinsics are stored on the item and applied when it enters an inventory. S
 
 === Repairing ===
 
-It is repaired in an [[anvil]] with [[Sturdy Leather|sturdy leather]]. Matcha Flavoured removes the repair cost limit, so it can be repaired indefinitely; see [[Repairing]].
-
-== Stats ==
-{| class="wikitable"
-! Stat !! Value
-|-
-| Durability || 200
-|-
-| Armor || 1
-|-
-| Safe fall distance || +1
-|}
+It is repaired in an [[anvil]] with [[Sturdy Leather|sturdy leather]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
 
 == History ==
 {{History|
-{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Added translation support for all armor and tools. Added item textures for leather armor; its names are shown in white.}}
+{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Added item textures for leather armor; its names are shown in white.}}
 {{History line|1.12.1-alpha|Leather armor now actually gives armor points, and uses its own safe fall distance icon.}}
 }}
-
-== See also ==
-* [[Leather armor]]
-* [[Armor]]
 
 == References ==
 {{reflist}}

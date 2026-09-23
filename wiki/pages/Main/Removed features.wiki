@@ -5,7 +5,7 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 ; Stone tools
 : The vanilla stone tool recipes are blocked. Progression goes from wood straight to copper.<ref>{{Source|README.md}}</ref> See [[Progression]].
 ; Hunger
-: The food bar is held in a fixed range: the pack applies Hunger when it is full and Saturation when it falls to 6 or lower, so the player can always sprint and food matters only for healing and effects.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref> See [[Hunger]].
+: The food bar is hidden and held in a fixed range: the pack applies Hunger when the food level is 10 or more and Saturation when it falls to 6 or lower, so the player can always sprint and food matters only for healing and effects.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref> See [[Hunger]].
 ; Natural regeneration
 : The <code>natural_health_regeneration</code> gamerule is set to false on first load. The player heals by eating.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref> See [[Natural regeneration]].
 ; Item loss on death
@@ -15,7 +15,7 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 ; Rotten flesh
 : Zombies drop [[Tattered Leather|tattered leather]] instead. The rotten flesh item ID is reused for [[Glow Berry Mash|glow berry mash]].<ref>{{Cite video|quote=Rotten flesh no longer exists.}}</ref>
 ; Enchanting table and random enchanting
-: The enchanting table recipe is blocked; enchantments are crafted as [[blessing]]s. Removed in [[Matcha Flavoured 1.10|1.10]].
+: The enchanting table recipe is blocked; enchantments are crafted as [[blessing]]s. A broken enchanting table drops its parts. The recipe was blocked in [[Matcha Flavoured 1.10|1.10]]; the developer had thought it was already blocked.<ref>{{Cite changelog|1.10|quote=Enchanting Table (I thought this was blocked, I feel it may have made a lot of people confused)}}</ref>
 ; Potions and brewing
 : The vanilla brewing stand, fermented spider eye, glistering melon and magma cream recipes are blocked, and most potion effects come from [[food]] instead. See [[Brewing]].
 ; Vanilla advancements
@@ -25,7 +25,7 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 ; Blocked vanilla recipes
 : Besides the above, the filter blocks the vanilla recipes for ore smelting (replaced by kiln and blast furnace recipes), the furnace, smoker, blast furnace, campfire and smithing table, iron, gold, diamond and netherite equipment, rails, hoppers, buckets, cauldrons and other iron items, food such as bread, cake, cookies, stews and pumpkin pie, dyes, carpets, banners, chiseled blocks, glazed terracotta, glass, the shulker box, bundle, TNT, ender eye, ender chest, mace, wind charge, recovery compass and more. Most have pack replacements with different ingredients.
 ; Sapling and stick drops from leaves
-: Leaves drop neither; saplings are crafted from leaves, unlocked by the logs. Removed in [[Matcha Flavoured 0.5-alpha|0.5-alpha]].
+: Leaves drop neither; each sapling is crafted from one of its leaves, a recipe unlocked by picking up the leaves.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/oak_leaves.json}}</ref> Removed in [[Matcha Flavoured 0.5-alpha|0.5-alpha]].
 
 == Removed pack features ==
 {| class="wikitable"
