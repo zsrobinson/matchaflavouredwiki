@@ -1,53 +1,47 @@
 {{Infobox auto
-|intrinsics=[[Silk Touch]] I
 |renewable=Yes
 }}
 
-A '''shakudo hoe''' is the [[Shakudo equipment|shakudo]] [[Tools#Hoe|hoe]], made by smithing a [[Copper Hoe|copper hoe]] with [[Shakudo Alloy|shakudo alloy]]. It mines at speed 9 and has 1000 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_hoe.json}}</ref>
+A '''shakudo hoe''' is the [[Shakudo equipment|shakudo]] [[Tools#Hoe|hoe]], made by smithing a [[copper hoe]] with [[shakudo alloy]]. Its [[Silk Touch]] is useful for collecting leaves.
 
 == Obtaining ==
 
 === Smithing ===
 {{Recipes}}
 
-The upgrade uses no template: the template slot of the [[Smithing Table|smithing table]] is left empty.
-
-Enchantments already on the base item are kept. Where the base and the new item share an enchantment, the higher level is used.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
+The upgrade needs no template. Enchantments on the copper item carry over; where both items have the same enchantment, the higher level is kept.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
 
 == Usage ==
 
-=== Mining ===
-
-It mines hoe blocks at speed 9.
-
-In Matcha Flavoured, hoes also mine wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
-
-=== Combat ===
-
-It deals 1 damage with an attack speed of 7.
+=== Farming and mining ===
+It breaks hoe blocks at speed 9 and has 1000 durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Intrinsics ===
+Its [[Silk Touch]] intrinsic makes blocks drop themselves. Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
-* [[Silk Touch]] I
-
-The intrinsics are stored on the item and applied when it enters an inventory. See [[Shakudo equipment]] for how the tier's intrinsics work together.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+=== Combat ===
+It deals {{Hp|1}} damage at an attack speed of 7, because the item adds 3 to the base attack speed of 4.
 
 === Repairing ===
+It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Crafting ingredient ===
+{{Uses}}
 
 === Trading ===
-An apprentice-level [[Weaponsmith|weaponsmith]] takes it in exchange for one [[Shakudo Alloy|shakudo alloy]], so the alloy can be reused.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/shakudo_hoe.json}}</ref>
+An apprentice [[weaponsmith]] buys it for one [[shakudo alloy]], which lets the alloy be reused on a fresh copper item.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/shakudo_hoe.json}}</ref>
 
 == Notes ==
 * The hand-written tooltip hides the real attributes and shows attack speed 4 (real value 7).<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_hoe.json}}</ref>
+* Shakudo tools reuse the stone tools' item IDs, so they cannot be melted down in a blast furnace.
 
 == History ==
 {{History|
-{{History line|0.4-alpha|Shakudo armor could not be crafted; this was fixed.}}
-{{History line|1.10|Alloy equipment can be traded to a [[Weaponsmith|weaponsmith]] for its alloy, so players can rebuild old items with updated stats. Shakudo was renamed from "Palatinate" in the language file only, so existing items keep working. Shakudo alloy became more expensive: 3 gold and 6 copper ingots became 2 blocks of gold and 4 blocks of copper.}}
-{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot and keeps the base item's enchantments. Added the "Repaired with" tooltip. Shakudo intrinsics are now exclusive with the electrum and adamant intrinsics.}}
-{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older items can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.10|Renamed from "Palatinate" in the language file only, so existing items keep working. Shakudo alloy became more expensive (2 blocks of gold and 4 blocks of copper instead of 3 gold and 6 copper ingots).}}
+{{History line|1.10|A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
+{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip.}}
+{{History line|1.12.1-alpha|Shakudo intrinsics are now exclusive with the electrum and adamant intrinsics.}}
+{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}
 
 == References ==

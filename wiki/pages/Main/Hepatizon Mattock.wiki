@@ -2,48 +2,43 @@
 |renewable=Yes
 }}
 
-A '''hepatizon mattock''' is the [[Hepatizon equipment|hepatizon]] [[mattock]], made by smithing a [[Copper Hoe|copper hoe]] with [[Hepatizon Alloy|hepatizon alloy]]. It mines at speed 15 and has 1000 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_mattock.json}}</ref>
-
-As a [[mattock]], it works as both a shovel and a hoe, at a lower mining speed than the hepatizon shovel or hoe.
+A '''hepatizon mattock''' is the [[Hepatizon equipment|hepatizon]] [[mattock]], made by smithing a [[copper hoe]] or [[copper mattock]] with [[hepatizon alloy]] and a [[smithing upgrade template]].
 
 == Obtaining ==
 
 === Smithing ===
 {{Recipes}}
 
-This upgrade needs a [[Smithing Upgrade Template|smithing upgrade template]] in the template slot. The recipe matches the base by item ID, so a [[Copper Mattock|copper mattock]] works as the base as well as a copper hoe. Without the template, the same base and alloy make a [[Hepatizon Hoe|hepatizon hoe]] instead.
-
-Enchantments already on the base item are kept. Where the base and the new item share an enchantment, the higher level is used.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
+This upgrade needs a [[smithing upgrade template]]; without one, the same copper hoe and alloy make a [[hepatizon hoe]].
 
 == Usage ==
 
 === Mining ===
-
-It mines both shovel and hoe blocks at speed 15. Hepatizon has the highest base mining speeds of any tier.
-
-In Matcha Flavoured, hoes also mine wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+It breaks shovel and hoe blocks at speed 15 and has 1000 durability. That is slower than the hepatizon shovel and hoe (20) and the same as the golden and adamant shovels. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Combat ===
-
-It deals 3 damage with an attack speed of 3.
-
-Held in the main hand, it adds 0.005 to movement speed (5% of the base speed).
+It deals {{Hp|3}} damage at an attack speed of 3. While held in the main hand it adds 0.005 to movement speed, 5% of the player's base speed.
 
 === Repairing ===
+It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Crafting ingredient ===
+{{Uses}}
 
 === Trading ===
-An apprentice-level [[Weaponsmith|weaponsmith]] takes it in exchange for one [[Hepatizon Alloy|hepatizon alloy]], so the alloy can be reused.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_mattock.json}}</ref>
+An apprentice [[weaponsmith]] buys it for one [[hepatizon alloy]], so the alloy can be reused.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_mattock.json}}</ref>
 
 == Notes ==
 * The hand-written tooltip hides the real attributes and shows attack damage 3.5 (real value 3).<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_mattock.json}}</ref>
+* Hepatizon tools reuse the stone tools' item IDs, so they cannot be melted down in a blast furnace.
 
 == History ==
 {{History|
-{{History line|1.10|Alloy equipment can be traded to a [[Weaponsmith|weaponsmith]] for its alloy, so players can rebuild old items with updated stats. Hepatizon was renamed from "Bronze" in the language file only, so existing items keep working. Buffed hepatizon equipment.}}
-{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot and keeps the base item's enchantments. Added the "Repaired with" tooltip. Mining speed raised from about 12 to 15.}}
-{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older items can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.10|Renamed from "Bronze" in the language file only, so existing items keep working. Hepatizon equipment was buffed.}}
+{{History line|1.10|A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
+{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip.}}
+{{History line|1.12.1-alpha|Mining speed raised from about 12 to 15.}}
+{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}
 
 == References ==

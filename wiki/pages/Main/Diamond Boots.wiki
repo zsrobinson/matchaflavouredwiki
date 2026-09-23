@@ -2,39 +2,28 @@
 |renewable=No
 }}
 
-A '''diamond boots''' is the [[Diamond equipment|diamond]] [[Armor#Boots|boots]], crafted from [[Diamond|diamonds]]. It gives 3 armor and 2 toughness and has 800 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_boots.json}}</ref>
+'''Diamond boots''' are the [[Diamond equipment|diamond]] [[Armor#Boots|boots]], crafted from four [[diamond]]s.
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
-
-=== Chest loot ===
+=== Loot ===
 {{Sources}}
 
 == Usage ==
 
 === Armor ===
-
-Worn, it gives 3 armor, 2 armor toughness. The vanilla item gives 3 armor with 429 durability.
+They give 3 armor and 2 toughness, with 800 durability instead of vanilla's 363 to 528. Every diamond piece gets the same durability. Diamond armor has the same armor values as [[Electrum equipment|electrum]] and [[Adamant equipment|adamant]]; the alloys add toughness, durability and intrinsics.
 
 === Repairing ===
+They can be repaired in an [[anvil]] with [[diamond]]s. The pack resets repair costs to zero, so they can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with [[Diamond|diamonds]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Smelting and smithing ===
+{{Uses}}
 
-=== Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Diamond|diamond]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/diamond_from_blasting_diamond_materials.json}}</ref>
-
-== History ==
-{{History|
-{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Added translation support for all armor and tools.}}
-{{History line|1.12.2|Diamond ores now drop [[Raw Diamond|raw diamonds]], which must be smelted in a [[Blast Furnace|blast furnace]].}}
-}}
-
-== References ==
-{{reflist}}
+They melt down into one diamond in a blast furnace and are the base for the electrum and adamant upgrades.
 
 {{Navbox equipment}}
 [[Category:Armor]]

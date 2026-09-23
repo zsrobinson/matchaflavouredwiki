@@ -54,6 +54,20 @@ def collect():
 
 
 def _collect():
+    pages = _collect_files()
+    # Capitalisation redirects ("Mud kiln" -> "Mud Kiln") so lowercase prose links resolve.
+    # Built in memory: as files they would collide on case-insensitive file systems (macOS).
+    main = [t for t, p in pages.items() if p[0] == 'Main']
+    for t in main:
+        if ' ' not in t or '/' in t:
+            continue
+        variant = t[0] + t[1:].lower()
+        if variant != t and variant not in pages:
+            pages[variant] = ('Main', '#REDIRECT [[%s]]\n[[Category:Redirects from other capitalisations]]' % t, 'generated')
+    return pages
+
+
+def _collect_files():
     pages = {}
     for layer in ('generated', 'pages'):  # later layer overrides
         base = os.path.join(ROOT, 'wiki', layer)

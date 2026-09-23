@@ -12,7 +12,7 @@ A '''blessing''' is an enchanted book crafted from a [[Hell-Bound Book]] and a s
 
 == Obtaining ==
 === Crafting ===
-Every blessing is a shaped [[Crafting Table|crafting]] recipe with a Hell-Bound Book in the center slot. The eight surrounding slots hold ingredients tied to the enchantment and the figure it is named after. The recipes are in the pack's <code>recipe/blessing</code> folder.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/unbreaking.json}}</ref>
+Every blessing is a shaped [[Crafting Table|crafting]] recipe with a Hell-Bound Book in the center slot. The surrounding slots (up to eight) hold ingredients tied to the enchantment and the figure it is named after. The recipes are in the pack's <code>recipe/blessing</code> folder.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/unbreaking.json}}</ref>
 
 {| class="wikitable sortable"
 ! Blessing !! Stored enchantments !! Ingredients around the book

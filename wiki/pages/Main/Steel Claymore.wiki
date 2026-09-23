@@ -2,38 +2,33 @@
 |renewable=Yes
 }}
 
-A '''steel claymore''' is the [[Steel equipment|steel]] [[claymore]], made by smithing an [[Iron Sword|iron sword]] with [[Steel Alloy|steel alloy]]. It deals 8 damage at an attack speed of 0.7 and has 1500 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_claymore.json}}</ref>
-
-As a [[claymore]], it is a slow, heavy sword that can also be held up to block attacks like a shield.
+A '''steel claymore''' is the [[Steel equipment|steel]] [[claymore]], a two-handed sword that can also block like a shield. It is made by smithing an [[iron sword]] with [[steel alloy]] and a [[smithing upgrade template]].
 
 == Obtaining ==
 
 === Smithing ===
 {{Recipes}}
 
-This upgrade needs a [[Smithing Upgrade Template|smithing upgrade template]] in the template slot. Without the template, the same base and alloy make a [[Steel Sword|steel sword]] instead.
-
-Enchantments already on the base item are kept. Where the base and the new item share an enchantment, the higher level is used.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
+This upgrade needs a [[smithing upgrade template]] in the template slot; without one, the same iron sword and alloy make a [[steel sword]]. Enchantments on the base item carry over.
 
 == Usage ==
 
 === Combat ===
+It deals {{Hp|8}} damage at an attack speed of 0.7 and adds 2 attack knockback. It has 1500 durability, half that of the other steel weapons.
 
-It deals 8 damage with an attack speed of 0.7, and adds 2 knockback to each hit.
-
-Held up with the use button, it blocks 70% of melee damage and 60% of arrow and mob projectile damage, taking a quarter of the blocked damage as durability. Axes disable it for 2 times as long as a shield.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_claymore.json}}</ref>
+=== Blocking ===
+Holding the use button raises the claymore like a shield. It blocks 70% of melee damage and 60% of arrow and mob projectile damage, and loses durability equal to a quarter of the damage it blocks. An axe disables it for twice as long as a shield.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_claymore.json}}</ref> The [[adamant claymore]] blocks more.
 
 === Repairing ===
-
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
 == History ==
 {{History|
-{{History line|0.6-alpha|Added recipe unlocks for steel equipment.}}
+{{History line|0.6-alpha|Added a recipe unlock.}}
 {{History line|1.02|Steel alloy takes less time to blast.}}
-{{History line|1.03|Steel alloy is now blasted from [[Carbon-Rich Iron|carbon-rich iron]] instead of directly from iron.}}
-{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot and keeps the base item's enchantments. Added the "Repaired with" tooltip. Added the steel claymore.}}
-{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older items can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.03|Steel alloy is now blasted from [[carbon-rich iron]].}}
+{{History line|1.12.1-alpha|Added, with a request for feedback: "I'll add more claymores if people like them."}}
+{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}
 
 == References ==

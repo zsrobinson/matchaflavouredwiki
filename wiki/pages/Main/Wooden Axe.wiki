@@ -2,37 +2,26 @@
 |renewable=Yes
 }}
 
-A '''wooden axe''' is the [[Wooden equipment|wooden]] [[Tools#Axe|axe]], crafted from {{MCW|Planks|planks}}. It mines at speed 2 and has 200 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_axe.json}}</ref>
+A '''wooden axe''' is the [[Wooden equipment|wooden]] [[Tools#Axe|axe]], crafted from three planks and two sticks. It is the first woodcutting tool and, at {{Hp|7}} per hit, the hardest-hitting early weapon.
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
-
 === Chest loot ===
 {{Sources}}
 
 == Usage ==
 
-=== Mining ===
-
-It mines axe blocks at speed 2.
-
-The pack adds beds, candles, cactus and honeycomb blocks to the blocks axes mine quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+=== Woodcutting ===
+It keeps the vanilla wooden axe's mining speed of 2, but its durability is raised from 59 to 200. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-
-It deals 7 damage with an attack speed of 0.8.
+It deals {{Hp|7}} damage at an attack speed of 0.8.
 
 === Repairing ===
-
-It is repaired in an [[anvil]] with {{MCW|Planks|planks}}. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
-
-== History ==
-{{History|
-}}
+It can be repaired in an [[anvil]] with planks. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
 == References ==
 {{reflist}}

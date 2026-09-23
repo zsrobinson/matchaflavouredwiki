@@ -860,7 +860,7 @@ def stack_cell(s):
 def trades_page(prof):
     levels = TRADES[prof]
     names = {'level_1': 'Novice', 'level_2': 'Apprentice', 'level_3': 'Journeyman', 'level_4': 'Expert', 'level_5': 'Master',
-             'buying': 'Buys', 'common': 'Common offers', 'uncommon': 'Uncommon offers'}
+             'buying': 'Special offers', 'common': 'Common offers', 'uncommon': 'Uncommon offers'}
     lines = ['{| class="wikitable"', '! Level !! Villager wants !! Villager gives !! Uses !! Villager XP']
     for lk in sorted(k for k in levels if not k.endswith('_meta')):
         ts = levels[lk]
@@ -899,7 +899,7 @@ for prof, levels in TRADES.items():
                 if t.get(k):
                     TRADE_WANTS[t[k]['name']].append((prof, lk, t))
 
-LEVEL_NAMES = {'level_1': 'Novice', 'level_2': 'Apprentice', 'level_3': 'Journeyman', 'level_4': 'Expert', 'level_5': 'Master', 'buying': 'Buys', 'common': 'Common offer', 'uncommon': 'Uncommon offer'}
+LEVEL_NAMES = {'level_1': 'Novice', 'level_2': 'Apprentice', 'level_3': 'Journeyman', 'level_4': 'Expert', 'level_5': 'Master', 'buying': 'Special offer', 'common': 'Common offer', 'uncommon': 'Uncommon offer'}
 
 
 def prof_link(prof):
@@ -1319,8 +1319,7 @@ def main():
                 write('Main', t, '#REDIRECT [[%s]]\n[[Category:Redirects from item tags]]' % safe(members[0]))
                 n['tag redirects'] += 1
     effect_pages(n)
-    case_redirects(n)
-    category_pages(n)
+    category_pages(n)  # (capitalisation redirects are synthesised by build_xml.collect, not written as files)
     # swap in the new tree in one step so concurrent readers never see a half-written folder
     old = GEN_FINAL + '.old'
     if os.path.isdir(old):

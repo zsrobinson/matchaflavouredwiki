@@ -1,41 +1,42 @@
 {{Infobox auto
-|intrinsics=[[Riposte]] II
 |renewable=Yes
 }}
 
-A '''hepatizon sword''' is the [[Hepatizon equipment|hepatizon]] [[Weapons#Sword|sword]], made by smithing a [[Copper Sword|copper sword]] with [[Hepatizon Alloy|hepatizon alloy]]. It deals 6 damage at an attack speed of 1.9 and has 1000 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_sword.json}}</ref>
+A '''hepatizon sword''' is the [[Hepatizon equipment|hepatizon]] [[Weapons#Sword|sword]], made by smithing a [[copper sword]] with [[hepatizon alloy]]. It is a fast, light sword with [[Riposte]] II.
 
 == Obtaining ==
 
 === Smithing ===
 {{Recipes}}
 
-The upgrade uses no template: the template slot of the [[Smithing Table|smithing table]] is left empty.
-
-Enchantments already on the base item are kept. Where the base and the new item share an enchantment, the higher level is used.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
+The upgrade needs no template, and enchantments on the copper item carry over.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
 
 == Usage ==
 
-Held in the main hand, it adds 0.011 to movement speed (10.5% of the base speed).
+=== Combat ===
+It deals {{Hp|6}} damage at an attack speed of 1.9, faster than any sword except the [[electrum sword]], which it ties. It has 1000 durability. While held in the main hand it adds 0.0105 to movement speed, 10.5% of the player's base speed.
 
 === Intrinsics ===
-
-* [[Riposte]] II
-
-The intrinsics are stored on the item and applied when it enters an inventory. See [[Hepatizon equipment]] for how the tier's intrinsics work together.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+[[Riposte]] II is an intrinsic: it is stored on the item and applied when the sword enters a player's inventory.
 
 === Repairing ===
+It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Crafting ingredient ===
+{{Uses}}
 
 === Trading ===
-An apprentice-level [[Weaponsmith|weaponsmith]] takes it in exchange for one [[Hepatizon Alloy|hepatizon alloy]], so the alloy can be reused.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_sword.json}}</ref>
+An apprentice [[weaponsmith]] buys it for one [[hepatizon alloy]], so the alloy can be reused.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_sword.json}}</ref>
+
+== Notes ==
+* Hepatizon tools reuse the stone tools' item IDs, so they cannot be melted down in a blast furnace.
 
 == History ==
 {{History|
-{{History line|1.10|Alloy equipment can be traded to a [[Weaponsmith|weaponsmith]] for its alloy, so players can rebuild old items with updated stats. Hepatizon was renamed from "Bronze" in the language file only, so existing items keep working. Buffed hepatizon equipment.}}
-{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot and keeps the base item's enchantments. Added the "Repaired with" tooltip.}}
-{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older items can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.10|Renamed from "Bronze" in the language file only, so existing items keep working. Hepatizon equipment was buffed.}}
+{{History line|1.10|A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
+{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip.}}
+{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}
 
 == References ==

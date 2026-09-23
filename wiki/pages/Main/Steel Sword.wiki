@@ -2,34 +2,30 @@
 |renewable=Yes
 }}
 
-A '''steel sword''' is the [[Steel equipment|steel]] [[Weapons#Sword|sword]], made by smithing an [[Iron Sword|iron sword]] with [[Steel Alloy|steel alloy]]. It deals 6 damage at an attack speed of 1.4 and has 3000 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_sword.json}}</ref>
+A '''steel sword''' is the [[Steel equipment|steel]] [[Weapons#Sword|sword]], made by smithing an [[iron sword]] with [[steel alloy]]. It trades a little attack speed for knockback and very high durability.
 
 == Obtaining ==
 
 === Smithing ===
 {{Recipes}}
 
-The upgrade uses no template: the template slot of the [[Smithing Table|smithing table]] is left empty.
-
-Enchantments already on the base item are kept. Where the base and the new item share an enchantment, the higher level is used.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
+The upgrade needs no template. Enchantments on the iron item carry over; where both items have the same enchantment, the higher level is kept.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
 
 == Usage ==
 
 === Combat ===
-
-It deals 6 damage with an attack speed of 1.4, and adds 1 knockback to each hit.
+It deals {{Hp|6}} damage, the same as the iron sword, at an attack speed of 1.4 instead of 1.6. Each hit adds 1 attack knockback. It has 3000 durability.
 
 === Repairing ===
-
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
 == History ==
 {{History|
-{{History line|0.6-alpha|Added recipe unlocks for steel equipment.}}
+{{History line|0.6-alpha|Added a recipe unlock.}}
 {{History line|1.02|Steel alloy takes less time to blast.}}
-{{History line|1.03|Steel alloy is now blasted from [[Carbon-Rich Iron|carbon-rich iron]] instead of directly from iron.}}
-{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot and keeps the base item's enchantments. Added the "Repaired with" tooltip.}}
-{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older items can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.03|Steel alloy is now blasted from [[carbon-rich iron]].}}
+{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip.}}
+{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}
 
 == References ==

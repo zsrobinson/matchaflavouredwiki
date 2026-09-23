@@ -1,57 +1,49 @@
 {{Infobox auto
-|intrinsics=[[Silk Touch]] I
 |renewable=Yes
 }}
 
-A '''shakudo dolabra''' is the [[Shakudo equipment|shakudo]] [[dolabra]], made by smithing a [[Copper Axe|copper axe]] with [[Shakudo Alloy|shakudo alloy]]. It mines at speed 7 and has 1000 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_dolabra.json}}</ref>
-
-As a [[dolabra]], it works as both a pickaxe and an axe, at a lower mining speed than the shakudo pickaxe or axe.
+A '''shakudo dolabra''' is the [[Shakudo equipment|shakudo]] [[dolabra]], made by smithing a [[copper axe]] or [[copper dolabra]] with [[shakudo alloy]] and a [[smithing upgrade template]]. It is a pickaxe and axe with [[Silk Touch]], but without the axe's life steal.
 
 == Obtaining ==
 
 === Smithing ===
 {{Recipes}}
 
-This upgrade needs a [[Smithing Upgrade Template|smithing upgrade template]] in the template slot. The recipe matches the base by item ID, so a [[Copper Dolabra|copper dolabra]] works as the base as well as a copper axe. Without the template, the same base and alloy make a [[Shakudo Axe|shakudo axe]] instead.
-
-Enchantments already on the base item are kept. Where the base and the new item share an enchantment, the higher level is used.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
+This upgrade needs a [[smithing upgrade template]]; without one, the same copper axe and alloy make a [[shakudo axe]].
 
 == Usage ==
 
 === Mining ===
+It breaks pickaxe and axe blocks at speed 7 and has 1000 durability. Unlike the shakudo pickaxe it has no obsidian rule, so it harvests obsidian too.
 
-It mines both pickaxe and axe blocks at speed 7.
-
-Its tool rules have no obsidian restriction, so it mines obsidian with drops at its normal speed, although the [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] notes say only diamond, electrum and adamant tools can mine obsidian.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_dolabra.json}}</ref>
-
-The pack adds beds, candles, cactus and honeycomb blocks to the blocks axes mine quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
-
-=== Combat ===
-
-It deals 7 damage with an attack speed of 1.
+Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Intrinsics ===
+Its [[Silk Touch]] intrinsic makes blocks drop themselves. Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
-* [[Silk Touch]] I
-
-The intrinsics are stored on the item and applied when it enters an inventory. See [[Shakudo equipment]] for how the tier's intrinsics work together.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+=== Combat ===
+It deals {{Hp|7}} damage at an attack speed of 1.
 
 === Repairing ===
+It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Crafting ingredient ===
+{{Uses}}
 
 === Trading ===
-An apprentice-level [[Weaponsmith|weaponsmith]] takes it in exchange for one [[Shakudo Alloy|shakudo alloy]], so the alloy can be reused.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/shakudo_dolabra.json}}</ref>
+An apprentice [[weaponsmith]] buys it for one [[shakudo alloy]], which lets the alloy be reused on a fresh copper item.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/shakudo_dolabra.json}}</ref>
 
 == Notes ==
-* Its attack modifiers have no slot set, so they also apply while the dolabra is held in the off hand.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_dolabra.json}}</ref>
+* Shakudo tools reuse the stone tools' item IDs, so they cannot be melted down in a blast furnace.
 
 == History ==
 {{History|
-{{History line|0.4-alpha|Shakudo armor could not be crafted; this was fixed.}}
-{{History line|1.10|Alloy equipment can be traded to a [[Weaponsmith|weaponsmith]] for its alloy, so players can rebuild old items with updated stats. Shakudo was renamed from "Palatinate" in the language file only, so existing items keep working. Shakudo alloy became more expensive: 3 gold and 6 copper ingots became 2 blocks of gold and 4 blocks of copper.}}
-{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot and keeps the base item's enchantments. Added the "Repaired with" tooltip. Shakudo intrinsics are now exclusive with the electrum and adamant intrinsics.}}
-{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older items can be updated with <code>/trigger update_item</code>. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+{{History line|1.10|Renamed from "Palatinate" in the language file only, so existing items keep working. Shakudo alloy became more expensive (2 blocks of gold and 4 blocks of copper instead of 3 gold and 6 copper ingots).}}
+{{History line|1.10|A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
+{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip.}}
+{{History line|1.12.1-alpha|Shakudo intrinsics are now exclusive with the electrum and adamant intrinsics.}}
+{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.12.2|Dolabras began to shift from weapon hybrids to pure axe and pickaxe tools; the release notes say their damage and weapon intrinsics will be reduced over time.}}
 }}
 
 == References ==
