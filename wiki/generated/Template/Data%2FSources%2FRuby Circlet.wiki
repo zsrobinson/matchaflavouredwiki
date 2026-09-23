@@ -1,9 +1,9 @@
 <includeonly>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Jeweler]] || Apprentice || 4 × {{ItemLink|Obol}} + {{ItemLink|Ruby}} || 1
+| [[Jeweler]] || Apprentice || {{Trade|Obol,4|Ruby|Ruby Circlet}} || 4 × {{ItemLink|Obol}} + {{ItemLink|Ruby}} || 1
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

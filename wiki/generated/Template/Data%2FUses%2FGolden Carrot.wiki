@@ -3,7 +3,7 @@
 |-
 | [[Steamed Golden Carrots]]
 | [[Golden Carrot]]
-| {{Cooking|station=Kindling|Input=Golden Carrot|Output=Steamed Golden Carrots|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/golden_steamed_carrots.json|matcha:food/campfire/golden_steamed_carrots}}</small>
+| {{Cooking|station=Kindling|Input=Golden Carrot|Output=Steamed Golden Carrots|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/golden_steamed_carrots.json|matcha:food/campfire/golden_steamed_carrots}}</small>
 |-
 | [[Golden Carrot Cupcake]]
 | [[Golden Carrot]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Cocoa Beans]] +<br />[[Dough]]
@@ -15,6 +15,6 @@
 |-
 | [[Steamed Golden Carrots]]
 | [[Golden Carrot]]
-| {{Cooking|station=Oven|Input=Golden Carrot|Output=Steamed Golden Carrots|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/golden_steamed_carrots.json|matcha:food/oven/golden_steamed_carrots}}</small>
+| {{Cooking|station=Oven|Input=Golden Carrot|Output=Steamed Golden Carrots|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/golden_steamed_carrots.json|matcha:food/oven/golden_steamed_carrots}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

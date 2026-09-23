@@ -1,27 +1,27 @@
-<includeonly>{| class="wikitable"
-! Level !! Villager wants !! Villager gives !! Uses !! Villager XP
+<includeonly>{| class="wikitable trade-table"
+! Level !! Offer !! Villager wants !! Villager gives !! Uses !! Villager XP
 |-
 ! rowspan="3" | Novice
-| {{ItemLink|Paradise Lost}} || {{ItemLink|Crystal Heart}} || 999 || 20
+| {{Trade|Paradise Lost||Crystal Heart}} || {{ItemLink|Paradise Lost}} || {{ItemLink|Crystal Heart}} || 999 || 20
 |-
-| {{ItemLink|The Divine Comedy}} || {{ItemLink|Crystal Heart}} || 999 || 20
+| {{Trade|The Divine Comedy||Crystal Heart}} || {{ItemLink|The Divine Comedy}} || {{ItemLink|Crystal Heart}} || 999 || 20
 |-
-| {{ItemLink|Obol}} || 16 × {{ItemLink|Stable Void}} || 999 || 5
+| {{Trade|Obol||Stable Void,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Stable Void}} || 999 || 5
 |-
 ! rowspan="3" | Apprentice
-| {{ItemLink|The Avesta}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Efficiency]] II, [[Unbreaking]] I</small> || 999 || 30
+| {{Trade|The Avesta|Crystal Heart|Ofuda}} || {{ItemLink|The Avesta}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Efficiency]] II, [[Unbreaking]] I</small> || 999 || 30
 |-
-| {{ItemLink|The Quran}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Protection]] II</small> || 999 || 30
+| {{Trade|The Quran|Crystal Heart|Ofuda}} || {{ItemLink|The Quran}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Protection]] II</small> || 999 || 30
 |-
-| {{ItemLink|The Tanakh}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Loyalty]] III, [[Trailblaze]] III, [[Power]] II</small> || 999 || 30
+| {{Trade|The Tanakh|Crystal Heart|Ofuda}} || {{ItemLink|The Tanakh}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Loyalty]] III, [[Trailblaze]] III, [[Power]] II</small> || 999 || 30
 |-
 ! rowspan="1" | Journeyman
-| {{ItemLink|The Book of Enoch}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Sharpness]] III</small> || 999 || 50
+| {{Trade|The Book of Enoch|Crystal Heart|Ofuda}} || {{ItemLink|The Book of Enoch}} +<br />{{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Sharpness]] III</small> || 999 || 50
 |-
 ! rowspan="1" | Expert
-| {{ItemLink|The Lesser Key of Solomon}} +<br />2 × {{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Mending]]</small> || 999 || 80
+| {{Trade|The Lesser Key of Solomon|Crystal Heart,2|Ofuda}} || {{ItemLink|The Lesser Key of Solomon}} +<br />2 × {{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Mending]]</small> || 999 || 80
 |-
 ! rowspan="1" | Master
-| 2 × {{ItemLink|Crystal Heart}} +<br />{{ItemLink|Echo Shard|mcw=Echo Shard}} || {{ItemLink|Divine Fragment}} || 999 || 80
+| {{Trade|Crystal Heart,2|Echo Shard|Divine Fragment}} || 2 × {{ItemLink|Crystal Heart}} +<br />{{ItemLink|Echo Shard|mcw=Echo Shard}} || {{ItemLink|Divine Fragment}} || 999 || 80
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

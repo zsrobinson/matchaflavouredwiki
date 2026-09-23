@@ -63,11 +63,11 @@
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Jeweler]] || Expert || 10 × {{ItemLink|Obol}} + 2 × {{ItemLink|Hepatizon Alloy}} || {{ItemLink|Hepatizon Laurel}}
+| [[Jeweler]] || Expert || {{Trade|Obol,10|Hepatizon Alloy,2|Hepatizon Laurel}} || 10 × {{ItemLink|Obol}} + 2 × {{ItemLink|Hepatizon Alloy}} || {{ItemLink|Hepatizon Laurel}}
 |-
-| [[Weaponsmith]] || Novice || {{ItemLink|Hepatizon Alloy}} || 2 × {{ItemLink|Obol}}
+| [[Weaponsmith]] || Novice || {{Trade|Hepatizon Alloy||Obol,2}} || {{ItemLink|Hepatizon Alloy}} || 2 × {{ItemLink|Obol}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,8 +1,8 @@
 <includeonly>
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Fisherman]] || Master || {{ItemLink|Siberian Sturgeon}} || {{ItemLink|Obol}}
+| [[Fisherman]] || Master || {{Trade|Siberian Sturgeon||Obol}} || {{ItemLink|Siberian Sturgeon}} || {{ItemLink|Obol}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

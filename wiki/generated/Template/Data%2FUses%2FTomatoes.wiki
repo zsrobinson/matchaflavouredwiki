@@ -11,7 +11,7 @@
 |-
 | [[Grilled Tomatoes]]
 | [[Tomatoes]]
-| {{Cooking|station=Kindling|Input=Tomatoes|Output=Grilled Tomatoes|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/grilled_tomatoes.json|matcha:food/campfire/grilled_tomatoes}}</small>
+| {{Cooking|station=Kindling|Input=Tomatoes|Output=Grilled Tomatoes|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/grilled_tomatoes.json|matcha:food/campfire/grilled_tomatoes}}</small>
 |-
 | [[Bruschetta]]
 | [[Tomatoes]] +<br />[[Cheese]] +<br />[[Bread]]
@@ -47,6 +47,6 @@
 |-
 | [[Grilled Tomatoes]]
 | [[Tomatoes]]
-| {{Cooking|station=Oven|Input=Tomatoes|Output=Grilled Tomatoes|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/grilled_tomatoes.json|matcha:food/oven/grilled_tomatoes}}</small>
+| {{Cooking|station=Oven|Input=Tomatoes|Output=Grilled Tomatoes|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/grilled_tomatoes.json|matcha:food/oven/grilled_tomatoes}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -15,7 +15,7 @@
 |attackspeed=1
 |miningspeed=9
 |repair=[[Block of Copper]]
-|tooltip={{G|Mining speed}} 9<br />{{G|Attack damage}} 9<br />{{G|Attack speed}} 1<br />Repaired with:<br />Block of Copper
+|tooltipbox={{Tooltip|Shakudo Axe}}
 |id=<code>matcha:shakudo_axe</code>
 |base=<code>minecraft:stone_axe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_axe.json|shakudo_axe.json}}

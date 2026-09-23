@@ -6,7 +6,7 @@
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
-|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
 |intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|{{G|Warding}} [[Warding|1 Warding]]}}
 |renewable={{{renewable|}}}
 |stackable=No
@@ -15,7 +15,7 @@
 |attackspeed=1.6
 |miningspeed=1.5
 |repair=[[Nazar]], [[Block of Lapis Lazuli]]
-|tooltip={{G|Attack damage}} 5<br />{{G|Attack speed}} 1.6<br />Repaired with:<br />Nazar<br />Block of Lapis Lazuli
+|tooltipbox={{Tooltip|Warding Sword}}
 |id=<code>matcha:warding_sword</code>
 |base=<code>minecraft:stone_sword</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/warding_sword.json|warding_sword.json}}

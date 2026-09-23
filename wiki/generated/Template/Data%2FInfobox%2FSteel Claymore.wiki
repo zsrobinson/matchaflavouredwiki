@@ -6,7 +6,7 @@
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
-|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
 |stackable=No
@@ -15,7 +15,7 @@
 |attackspeed=0.7
 |miningspeed=1.5
 |repair=[[Iron Ingot]]
-|tooltip={{G|Attack damage}} 8<br />{{G|Attack speed}} 0.7<br />{{G|Knockback}} 2<br />When Blocking:<br />70% Melee Blocking<br />60% Projectile Blocking<br />Repaired with:<br />Iron Ingot
+|tooltipbox={{Tooltip|Steel Claymore}}
 |id=<code>matcha:steel_claymore</code>
 |base=<code>minecraft:stone_sword</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_claymore.json|steel_claymore.json}}

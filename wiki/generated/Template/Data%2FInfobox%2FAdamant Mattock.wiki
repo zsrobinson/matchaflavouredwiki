@@ -15,7 +15,7 @@
 |attackspeed=4
 |miningspeed=13
 |repair=[[Block of Diamond]], [[Adamant Scrap]]
-|tooltip={{G|Mining speed}} 13<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 4<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
+|tooltipbox={{Tooltip|Adamant Mattock}}
 |id=<code>matcha:adamant_mattock</code>
 |base=<code>minecraft:netherite_hoe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/adamant_mattock.json|adamant_mattock.json}}

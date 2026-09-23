@@ -1,33 +1,33 @@
 <includeonly>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Helmet}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Helmet||Adamant Alloy}} || {{ItemLink|Adamant Helmet}} || 1
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Chestplate}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Chestplate||Adamant Alloy}} || {{ItemLink|Adamant Chestplate}} || 1
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Leggings}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Leggings||Adamant Alloy}} || {{ItemLink|Adamant Leggings}} || 1
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Boots}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Boots||Adamant Alloy}} || {{ItemLink|Adamant Boots}} || 1
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Sword}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Sword||Adamant Alloy}} || {{ItemLink|Adamant Sword}} || 1
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Axe}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Axe||Adamant Alloy}} || {{ItemLink|Adamant Axe}} || 1
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Pickaxe}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Pickaxe||Adamant Alloy}} || {{ItemLink|Adamant Pickaxe}} || 1
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Shovel}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Shovel||Adamant Alloy}} || {{ItemLink|Adamant Shovel}} || 1
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Hoe}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Hoe||Adamant Alloy}} || {{ItemLink|Adamant Hoe}} || 1
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Mattock}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Mattock||Adamant Alloy}} || {{ItemLink|Adamant Mattock}} || 1
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Dolabra}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Dolabra||Adamant Alloy}} || {{ItemLink|Adamant Dolabra}} || 1
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Spear}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Spear||Adamant Alloy}} || {{ItemLink|Adamant Spear}} || 1
 |-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Adamant Claymore}} || 1
+| [[Weaponsmith]] || Apprentice || {{Trade|Adamant Claymore||Adamant Alloy}} || {{ItemLink|Adamant Claymore}} || 1
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -15,7 +15,7 @@
 |attackspeed=0.9
 |miningspeed=7
 |repair=[[Iron Ingot]]
-|tooltip={{G|Mining speed}} 7<br />{{G|Attack damage}} 6<br />{{G|Attack speed}} 0.9<br />Repaired with:<br />Iron Ingot
+|tooltipbox={{Tooltip|Steel Dolabra}}
 |id=<code>matcha:steel_dolabra</code>
 |base=<code>minecraft:stone_axe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_dolabra.json|steel_dolabra.json}}

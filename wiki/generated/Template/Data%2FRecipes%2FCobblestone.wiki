@@ -16,7 +16,7 @@
 |-
 | [[Cobblestone]]
 | [[Mossy Cobblestone]]
-| {{Cooking|station=Oven|Input=Mossy Cobblestone|Output=Cobblestone|note=2.5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/cobblestone_from_mossy_cobblestone.json|matcha:oven/cobblestone_from_mossy_cobblestone}}</small>
+| {{Cooking|station=Oven|Input=Mossy Cobblestone|Output=Cobblestone|time=2.5|note=2.5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/cobblestone_from_mossy_cobblestone.json|matcha:oven/cobblestone_from_mossy_cobblestone}}</small>
 |}
 '''Blasting'''
 {| class="wikitable recipe-table"
@@ -24,7 +24,7 @@
 |-
 | [[Cobblestone]]
 | [[Limestone]]
-| {{Cooking|station=Blast Furnace|Input=Limestone|Output=Cobblestone|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/cobblestone_from_blasting_stone.json|matcha:blast/cobblestone_from_blasting_stone}}</small>
+| {{Cooking|station=Blast Furnace|Input=Limestone|Output=Cobblestone|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/cobblestone_from_blasting_stone.json|matcha:blast/cobblestone_from_blasting_stone}}</small>
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"

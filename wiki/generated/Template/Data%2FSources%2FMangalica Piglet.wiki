@@ -1,9 +1,9 @@
 <includeonly>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Farmer]] || Journeyman || {{ItemLink|Obol}} || 1
+| [[Farmer]] || Journeyman || {{Trade|Obol||Mangalica Piglet}} || {{ItemLink|Obol}} || 1
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

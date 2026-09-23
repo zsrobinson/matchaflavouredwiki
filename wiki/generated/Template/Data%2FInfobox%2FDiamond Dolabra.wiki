@@ -15,7 +15,7 @@
 |attackspeed=1
 |miningspeed=8
 |repair=[[Diamond]]
-|tooltip={{G|Mining speed}} 8<br />{{G|Attack damage}} 7<br />{{G|Attack speed}} 1
+|tooltipbox={{Tooltip|Diamond Dolabra}}
 |id=<code>matcha:diamond_dolabra</code>
 |base=<code>minecraft:diamond_axe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/diamond_dolabra.json|diamond_dolabra.json}}

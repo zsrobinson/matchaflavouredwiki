@@ -1,9 +1,9 @@
 <includeonly>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Wandering Trader]] || Uncommon offer || {{ItemLink|Obol}} || 1
+| [[Wandering Trader]] || Uncommon offer || {{Trade|Obol||Abandoned Taiga Village Map}} || {{ItemLink|Obol}} || 1
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

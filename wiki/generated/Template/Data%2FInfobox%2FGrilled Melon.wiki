@@ -13,7 +13,7 @@
 |heals={{Hp|2}}
 |effects={{EffectLink|Fire Resistance}} (0:10)
 |eat_time=0.8 seconds
-|tooltip=❤<br />{{G|Fire resistance}} Fire Resistance (0:10)
+|tooltipbox={{Tooltip|Grilled Melon}}
 |id=<code>matcha:grilled_melon</code>
 |base=<code>minecraft:poisonous_potato</code>
 |source={{Source|MF_datapack/data/matcha/recipe/food/campfire/grilled_melon.json|grilled_melon.json}}

@@ -1,5 +1,5 @@
-<includeonly><div style="display:inline-block;vertical-align:top;margin:0 0.5em 0.5em 0">{{Crafting Table|A1={{{A1|}}}|B1={{{B1|}}}|C1={{{C1|}}}|A2={{{A2|}}}|B2={{{B2|}}}|C2={{{C2|}}}|A3={{{A3|}}}|B3={{{B3|}}}|C3={{{C3|}}}|Output={{{Output|}}}|shapeless={{{shapeless|}}}}}{{#if:{{{note|}}}|<div style="font-size:90%">{{{note}}}</div>}}</div></includeonly><noinclude>
-Crafting table interface ([[Template:Crafting Table]], minecraft.wiki's Module:UI).
+<includeonly><div class="mfui-figure">{{#invoke:Station|screen|station=crafting|A1={{{A1|}}}|B1={{{B1|}}}|C1={{{C1|}}}|A2={{{A2|}}}|B2={{{B2|}}}|C2={{{C2|}}}|A3={{{A3|}}}|B3={{{B3|}}}|C3={{{C3|}}}|Output={{{Output|}}}|shapeless={{{shapeless|}}}}}{{#if:{{{note|}}}|<div class="mfui-caption">{{{note}}}</div>}}</div></includeonly><noinclude>
+A crafting recipe, drawn with the pack's crafting table screen ([[Module:Station]]). Slots <code>A1</code>–<code>C3</code> are the grid by column and row; <code>shapeless=1</code> marks a shapeless recipe.
 
 {{Crafting|A1=Diamond|B1=Diamond|C1=Diamond|A2=Diamond|B2=Divine Fragment|C2=Diamond|A3=Diamond|B3=Diamond|C3=Diamond|Output=Crystal Heart}}
 [[Category:Templates]]</noinclude>

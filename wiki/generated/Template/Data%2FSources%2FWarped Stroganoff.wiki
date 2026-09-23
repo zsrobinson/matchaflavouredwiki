@@ -1,9 +1,9 @@
 <includeonly>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Cook]] || Apprentice || {{ItemLink|Obol}} || 4
+| [[Cook]] || Apprentice || {{Trade|Obol||Warped Stroganoff,4}} || {{ItemLink|Obol}} || 4
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

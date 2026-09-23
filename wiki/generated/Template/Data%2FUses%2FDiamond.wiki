@@ -143,11 +143,11 @@
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Jeweler]] || Novice || {{ItemLink|Obol}} + 2 × {{ItemLink|Diamond}} || {{ItemLink|Diamond Earrings}}
+| [[Jeweler]] || Novice || {{Trade|Obol|Diamond,2|Diamond Earrings}} || {{ItemLink|Obol}} + 2 × {{ItemLink|Diamond}} || {{ItemLink|Diamond Earrings}}
 |-
-| [[Weaponsmith]] || Novice || 4 × {{ItemLink|Diamond}} || {{ItemLink|Obol}}
+| [[Weaponsmith]] || Novice || {{Trade|Diamond,4||Obol}} || 4 × {{ItemLink|Diamond}} || {{ItemLink|Obol}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -3,7 +3,7 @@
 |-
 | [[Steamed Carrots]]
 | [[Carrot]]
-| {{Cooking|station=Kindling|Input=Carrot|Output=Steamed Carrots|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/steamed_carrots.json|matcha:food/campfire/steamed_carrots}}</small>
+| {{Cooking|station=Kindling|Input=Carrot|Output=Steamed Carrots|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/steamed_carrots.json|matcha:food/campfire/steamed_carrots}}</small>
 |-
 | [[Bokguk]]
 | [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Pufferfish]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Braised Mushroom]] +<br />[[Bowl]]
@@ -47,7 +47,7 @@
 |-
 | [[Steamed Carrots]]
 | [[Carrot]]
-| {{Cooking|station=Oven|Input=Carrot|Output=Steamed Carrots|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/steamed_carrots.json|matcha:food/oven/steamed_carrots}}</small>
+| {{Cooking|station=Oven|Input=Carrot|Output=Steamed Carrots|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/steamed_carrots.json|matcha:food/oven/steamed_carrots}}</small>
 |-
 | [[Carrot on a Stick]] <small>(vanilla recipe)</small>
 | [[Fishing Rod]] +<br />[[Carrot]]

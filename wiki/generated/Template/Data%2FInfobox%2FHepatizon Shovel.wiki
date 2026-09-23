@@ -15,7 +15,7 @@
 |attackspeed=1
 |miningspeed=20
 |repair=[[Block of Copper]]
-|tooltip={{G|Mining speed}} 20<br />{{G|Attack damage}} 5<br />{{G|Attack speed}} 1<br />{{G|Speed}} +0.005<br />Repaired with:<br />Block of Copper
+|tooltipbox={{Tooltip|Hepatizon Shovel}}
 |id=<code>matcha:hepatizon_shovel</code>
 |base=<code>minecraft:stone_shovel</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_shovel.json|hepatizon_shovel.json}}

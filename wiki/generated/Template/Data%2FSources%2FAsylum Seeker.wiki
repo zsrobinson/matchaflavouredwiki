@@ -1,9 +1,9 @@
 <includeonly>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Wandering Trader]] || Special offer || {{ItemLink|Obol}} || 1
+| [[Wandering Trader]] || Special offer || {{Trade|Obol||Asylum Seeker}} || {{ItemLink|Obol}} || 1
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -13,7 +13,7 @@
 |heals={{Hp|8}}
 |effects={{EffectLink|Regeneration}} (3:00)
 |eat_time=1.6 seconds
-|tooltip={{G|Health}}{{G|Health}}{{G|Health}}{{G|Health}}<br />{{G|Health}} Regen (3:00)
+|tooltipbox={{Tooltip|Apple Empanada}}
 |id=<code>matcha:apple_empanada</code>
 |base=<code>minecraft:poisonous_potato</code>
 |source={{Source|MF_datapack/data/matcha/recipe/food/crafting/apple_empanada.json|apple_empanada.json}}

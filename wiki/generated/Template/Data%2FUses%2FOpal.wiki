@@ -1,10 +1,10 @@
 <includeonly>
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Jeweler]] || Novice || 4 × {{ItemLink|Obol}} + {{ItemLink|Opal}} || {{ItemLink|Opal Earrings}}<br /><small>{{G|Water}} [[Conduit Power|∞ Conduit Power]]</small>
+| [[Jeweler]] || Novice || {{Trade|Obol,4|Opal|Opal Earrings}} || 4 × {{ItemLink|Obol}} + {{ItemLink|Opal}} || {{ItemLink|Opal Earrings}}<br /><small>{{G|Water}} [[Conduit Power|∞ Conduit Power]]</small>
 |-
-| [[Jeweler]] || Master || {{ItemLink|Opal}} || 4 × {{ItemLink|Obol}}
+| [[Jeweler]] || Master || {{Trade|Opal||Obol,4}} || {{ItemLink|Opal}} || 4 × {{ItemLink|Obol}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

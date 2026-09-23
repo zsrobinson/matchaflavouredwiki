@@ -15,7 +15,7 @@
 |attackspeed=1
 |miningspeed=12
 |repair=[[Block of Diamond]]
-|tooltip={{G|Mining speed}} 12<br />{{G|Attack damage}} 6<br />{{G|Attack speed}} 1<br />Repaired with:<br />Block of Diamond
+|tooltipbox={{Tooltip|Electrum Shovel}}
 |id=<code>matcha:electrum_shovel</code>
 |base=<code>minecraft:netherite_shovel</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_shovel.json|electrum_shovel.json}}

@@ -1,9 +1,9 @@
 <includeonly>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Mason]] || Apprentice || {{ItemLink|Obol}} || 3
+| [[Mason]] || Apprentice || {{Trade|Obol||Bulk Glass,3}} || {{ItemLink|Obol}} || 3
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

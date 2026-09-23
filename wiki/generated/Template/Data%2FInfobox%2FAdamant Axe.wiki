@@ -15,7 +15,7 @@
 |attackspeed=1
 |miningspeed=15
 |repair=[[Block of Diamond]], [[Adamant Scrap]]
-|tooltip={{G|Mining speed}} 15<br />{{G|Attack damage}} 10<br />{{G|Attack speed}} 1<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
+|tooltipbox={{Tooltip|Adamant Axe}}
 |id=<code>minecraft:netherite_axe</code>
 |base=<code>minecraft:netherite_axe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/adamant_axe.json|adamant_axe.json}}

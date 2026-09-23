@@ -1,41 +1,41 @@
-<includeonly>{| class="wikitable"
-! Level !! Villager wants !! Villager gives !! Uses !! Villager XP
+<includeonly>{| class="wikitable trade-table"
+! Level !! Offer !! Villager wants !! Villager gives !! Uses !! Villager XP
 |-
 ! rowspan="5" | Novice
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Comparator}} || 999 || 20
+| {{Trade|Obol||Electric Comparator,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Comparator}} || 999 || 20
 |-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Composter}} || 999 || 20
+| {{Trade|Obol||Composter,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Composter}} || 999 || 20
 |-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Note Block}} || 999 || 20
+| {{Trade|Obol||Note Block,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Note Block}} || 999 || 20
 |-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Block}} || 999 || 20
+| {{Trade|Obol||Electric Block,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Block}} || 999 || 20
 |-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Repeater}} || 999 || 20
+| {{Trade|Obol||Electric Repeater,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Repeater}} || 999 || 20
 |-
 ! rowspan="3" | Apprentice
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Lamp}} || 999 || 40
+| {{Trade|Obol||Electric Lamp,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Lamp}} || 999 || 40
 |-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Copper Eye}} || 999 || 40
+| {{Trade|Obol||Copper Eye,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Copper Eye}} || 999 || 40
 |-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Waxed Copper Bulb}} || 999 || 40
+| {{Trade|Obol||Waxed Copper Bulb,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Waxed Copper Bulb}} || 999 || 40
 |-
 ! rowspan="4" | Journeyman
-| {{ItemLink|Obol}} || 32 × {{ItemLink|Dispenser}} || 999 || 40
+| {{Trade|Obol||Dispenser,32}} || {{ItemLink|Obol}} || 32 × {{ItemLink|Dispenser}} || 999 || 40
 |-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Dropper}} || 999 || 40
+| {{Trade|Obol||Dropper,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Dropper}} || 999 || 40
 |-
-| {{ItemLink|Obol}} || 32 × {{ItemLink|Hopper}} || 999 || 40
+| {{Trade|Obol||Hopper,32}} || {{ItemLink|Obol}} || 32 × {{ItemLink|Hopper}} || 999 || 40
 |-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Observer}} || 999 || 40
+| {{Trade|Obol||Observer,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Observer}} || 999 || 40
 |-
 ! rowspan="3" | Expert
-| {{ItemLink|Obol}} || 32 × {{ItemLink|Crafter}} || 999 || 40
+| {{Trade|Obol||Crafter,32}} || {{ItemLink|Obol}} || 32 × {{ItemLink|Crafter}} || 999 || 40
 |-
-| {{ItemLink|Obol}} || 32 × {{ItemLink|Piston}} || 999 || 40
+| {{Trade|Obol||Piston,32}} || {{ItemLink|Obol}} || 32 × {{ItemLink|Piston}} || 999 || 40
 |-
-| {{ItemLink|Obol}} || 32 × {{ItemLink|Sticky Piston}} || 999 || 40
+| {{Trade|Obol||Sticky Piston,32}} || {{ItemLink|Obol}} || 32 × {{ItemLink|Sticky Piston}} || 999 || 40
 |-
 ! rowspan="1" | Master
-| {{ItemLink|Obol}} || {{ItemLink|Geothermal Bundle}} || 999 || 60
+| {{Trade|Obol||Geothermal Bundle}} || {{ItemLink|Obol}} || {{ItemLink|Geothermal Bundle}} || 999 || 60
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

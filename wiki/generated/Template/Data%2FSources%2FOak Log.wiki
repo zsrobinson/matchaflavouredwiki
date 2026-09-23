@@ -16,9 +16,9 @@
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Lumberjack]] || Novice || {{ItemLink|Obol}} || 64
+| [[Lumberjack]] || Novice || {{Trade|Obol||Oak Log,64}} || {{ItemLink|Obol}} || 64
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

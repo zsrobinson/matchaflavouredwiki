@@ -15,7 +15,7 @@
 |attackspeed=1
 |miningspeed=15
 |repair=[[Block of Diamond]], [[Adamant Scrap]]
-|tooltip={{G|Mining speed}} 15<br />{{G|Attack damage}} 6.5<br />{{G|Attack speed}} 1<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
+|tooltipbox={{Tooltip|Adamant Shovel}}
 |id=<code>minecraft:netherite_shovel</code>
 |base=<code>minecraft:netherite_shovel</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/adamant_shovel.json|adamant_shovel.json}}

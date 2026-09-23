@@ -14,7 +14,7 @@
 |damage={{Hp|4}}
 |attackspeed=0.9
 |repair=[[Iron Ingot]]
-|tooltip={{G|Attack damage}} 4<br />{{G|Attack speed}} 0.9<br />{{G|Knockback}} 1<br />Repaired with:<br />Iron Ingot
+|tooltipbox={{Tooltip|Steel Spear}}
 |id=<code>matcha:steel_spear</code>
 |base=<code>minecraft:stone_spear</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_spear.json|steel_spear.json}}

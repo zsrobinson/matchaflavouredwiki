@@ -15,279 +15,279 @@
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Engineer]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Comparator}}
+| [[Engineer]] || Novice || {{Trade|Obol||Electric Comparator,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Comparator}}
 |-
-| [[Engineer]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Composter}}
+| [[Engineer]] || Novice || {{Trade|Obol||Composter,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Composter}}
 |-
-| [[Engineer]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Note Block}}
+| [[Engineer]] || Novice || {{Trade|Obol||Note Block,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Note Block}}
 |-
-| [[Engineer]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Block}}
+| [[Engineer]] || Novice || {{Trade|Obol||Electric Block,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Block}}
 |-
-| [[Engineer]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Repeater}}
+| [[Engineer]] || Novice || {{Trade|Obol||Electric Repeater,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Repeater}}
 |-
-| [[Engineer]] || Apprentice || {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Lamp}}
+| [[Engineer]] || Apprentice || {{Trade|Obol||Electric Lamp,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Electric Lamp}}
 |-
-| [[Engineer]] || Apprentice || {{ItemLink|Obol}} || 64 × {{ItemLink|Copper Eye}}
+| [[Engineer]] || Apprentice || {{Trade|Obol||Copper Eye,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Copper Eye}}
 |-
-| [[Engineer]] || Apprentice || {{ItemLink|Obol}} || 64 × {{ItemLink|Waxed Copper Bulb}}
+| [[Engineer]] || Apprentice || {{Trade|Obol||Waxed Copper Bulb,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Waxed Copper Bulb}}
 |-
-| [[Engineer]] || Journeyman || {{ItemLink|Obol}} || 32 × {{ItemLink|Dispenser}}
+| [[Engineer]] || Journeyman || {{Trade|Obol||Dispenser,32}} || {{ItemLink|Obol}} || 32 × {{ItemLink|Dispenser}}
 |-
-| [[Engineer]] || Journeyman || {{ItemLink|Obol}} || 64 × {{ItemLink|Dropper}}
+| [[Engineer]] || Journeyman || {{Trade|Obol||Dropper,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Dropper}}
 |-
-| [[Engineer]] || Journeyman || {{ItemLink|Obol}} || 32 × {{ItemLink|Hopper}}
+| [[Engineer]] || Journeyman || {{Trade|Obol||Hopper,32}} || {{ItemLink|Obol}} || 32 × {{ItemLink|Hopper}}
 |-
-| [[Engineer]] || Journeyman || {{ItemLink|Obol}} || 64 × {{ItemLink|Observer}}
+| [[Engineer]] || Journeyman || {{Trade|Obol||Observer,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Observer}}
 |-
-| [[Engineer]] || Expert || {{ItemLink|Obol}} || 32 × {{ItemLink|Crafter}}
+| [[Engineer]] || Expert || {{Trade|Obol||Crafter,32}} || {{ItemLink|Obol}} || 32 × {{ItemLink|Crafter}}
 |-
-| [[Engineer]] || Expert || {{ItemLink|Obol}} || 32 × {{ItemLink|Piston}}
+| [[Engineer]] || Expert || {{Trade|Obol||Piston,32}} || {{ItemLink|Obol}} || 32 × {{ItemLink|Piston}}
 |-
-| [[Engineer]] || Expert || {{ItemLink|Obol}} || 32 × {{ItemLink|Sticky Piston}}
+| [[Engineer]] || Expert || {{Trade|Obol||Sticky Piston,32}} || {{ItemLink|Obol}} || 32 × {{ItemLink|Sticky Piston}}
 |-
-| [[Engineer]] || Master || {{ItemLink|Obol}} || {{ItemLink|Geothermal Bundle}}
+| [[Engineer]] || Master || {{Trade|Obol||Geothermal Bundle}} || {{ItemLink|Obol}} || {{ItemLink|Geothermal Bundle}}
 |-
-| [[Cook]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}}
+| [[Cook]] || Novice || {{Trade|Obol||Cooking Recipe}} || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}}
 |-
-| [[Cook]] || Novice || {{ItemLink|Obol}} || 8 × {{ItemLink|Sweet Berry Toast}}
+| [[Cook]] || Novice || {{Trade|Obol||Sweet Berry Toast,8}} || {{ItemLink|Obol}} || 8 × {{ItemLink|Sweet Berry Toast}}
 |-
-| [[Cook]] || Apprentice || {{ItemLink|Obol}} || 4 × {{ItemLink|Warped Stroganoff}}
+| [[Cook]] || Apprentice || {{Trade|Obol||Warped Stroganoff,4}} || {{ItemLink|Obol}} || 4 × {{ItemLink|Warped Stroganoff}}
 |-
-| [[Cook]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}}
+| [[Cook]] || Apprentice || {{Trade|Obol||Cooking Recipe}} || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}}
 |-
-| [[Cook]] || Journeyman || {{ItemLink|Obol}} || 16 × {{ItemLink|Chorus Mochi}}
+| [[Cook]] || Journeyman || {{Trade|Obol||Chorus Mochi,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Chorus Mochi}}
 |-
-| [[Cook]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}}
+| [[Cook]] || Journeyman || {{Trade|Obol||Cooking Recipe}} || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}}
 |-
-| [[Cook]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Cleaver}}<br /><small>[[Slaughter]], [[Looting]] II</small>
+| [[Cook]] || Expert || {{Trade|Obol||Cleaver}} || {{ItemLink|Obol}} || {{ItemLink|Cleaver}}<br /><small>[[Slaughter]], [[Looting]] II</small>
 |-
-| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Mineshaft Map}}
+| [[Archaeologist]] || Novice || {{Trade|Obol||Mineshaft Map}} || {{ItemLink|Obol}} || {{ItemLink|Mineshaft Map}}
 |-
-| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Sheaf Pottery Sherd}}
+| [[Archaeologist]] || Novice || {{Trade|Obol||Sheaf Pottery Sherd}} || {{ItemLink|Obol}} || {{ItemLink|Sheaf Pottery Sherd}}
 |-
-| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Witch Hut Map}}
+| [[Archaeologist]] || Novice || {{Trade|Obol||Witch Hut Map}} || {{ItemLink|Obol}} || {{ItemLink|Witch Hut Map}}
 |-
-| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Papal Outpost Map}}
+| [[Archaeologist]] || Novice || {{Trade|Obol||Papal Outpost Map}} || {{ItemLink|Obol}} || {{ItemLink|Papal Outpost Map}}
 |-
-| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Shipwreck Map}}
+| [[Archaeologist]] || Novice || {{Trade|Obol||Shipwreck Map}} || {{ItemLink|Obol}} || {{ItemLink|Shipwreck Map}}
 |-
-| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Desert Temple Map}}
+| [[Archaeologist]] || Apprentice || {{Trade|Obol||Desert Temple Map}} || {{ItemLink|Obol}} || {{ItemLink|Desert Temple Map}}
 |-
-| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Howl Pottery Sherd}}
+| [[Archaeologist]] || Apprentice || {{Trade|Obol||Howl Pottery Sherd}} || {{ItemLink|Obol}} || {{ItemLink|Howl Pottery Sherd}}
 |-
-| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Jungle Temple Map}}
+| [[Archaeologist]] || Apprentice || {{Trade|Obol||Jungle Temple Map}} || {{ItemLink|Obol}} || {{ItemLink|Jungle Temple Map}}
 |-
-| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Trail Ruins Map}}
+| [[Archaeologist]] || Apprentice || {{Trade|Obol||Trail Ruins Map}} || {{ItemLink|Obol}} || {{ItemLink|Trail Ruins Map}}
 |-
-| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Archeologist's Brush}}
+| [[Archaeologist]] || Apprentice || {{Trade|Obol||Archeologist's Brush}} || {{ItemLink|Obol}} || {{ItemLink|Archeologist's Brush}}
 |-
-| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Ocean Monument Map}}
+| [[Archaeologist]] || Journeyman || {{Trade|Obol||Ocean Monument Map}} || {{ItemLink|Obol}} || {{ItemLink|Ocean Monument Map}}
 |-
-| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Snort Pottery Sherd}}
+| [[Archaeologist]] || Journeyman || {{Trade|Obol||Snort Pottery Sherd}} || {{ItemLink|Obol}} || {{ItemLink|Snort Pottery Sherd}}
 |-
-| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Trial Chamber Map}}
+| [[Archaeologist]] || Journeyman || {{Trade|Obol||Trial Chamber Map}} || {{ItemLink|Obol}} || {{ItemLink|Trial Chamber Map}}
 |-
-| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Warm Ocean Ruin Map}}
+| [[Archaeologist]] || Journeyman || {{Trade|Obol||Warm Ocean Ruin Map}} || {{ItemLink|Obol}} || {{ItemLink|Warm Ocean Ruin Map}}
 |-
-| [[Archaeologist]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Ancient City Map}}
+| [[Archaeologist]] || Expert || {{Trade|Obol||Ancient City Map}} || {{ItemLink|Obol}} || {{ItemLink|Ancient City Map}}
 |-
-| [[Archaeologist]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Mourner Pottery Sherd}}
+| [[Archaeologist]] || Expert || {{Trade|Obol||Mourner Pottery Sherd}} || {{ItemLink|Obol}} || {{ItemLink|Mourner Pottery Sherd}}
 |-
-| [[Archaeologist]] || Master || {{ItemLink|Obol}} || {{ItemLink|Arms Up Pottery Sherd}}
+| [[Archaeologist]] || Master || {{Trade|Obol||Arms Up Pottery Sherd}} || {{ItemLink|Obol}} || {{ItemLink|Arms Up Pottery Sherd}}
 |-
-| [[Archaeologist]] || Master || {{ItemLink|Obol}} || {{ItemLink|Mansion Map}}
+| [[Archaeologist]] || Master || {{Trade|Obol||Mansion Map}} || {{ItemLink|Obol}} || {{ItemLink|Mansion Map}}
 |-
-| [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Infestation}}
+| [[Chemist]] || Novice || {{Trade|Obol||Splash Potion of Infestation,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Infestation}}
 |-
-| [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Oozing}}
+| [[Chemist]] || Novice || {{Trade|Obol||Splash Potion of Oozing,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Oozing}}
 |-
-| [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Darkness}}
+| [[Chemist]] || Novice || {{Trade|Obol||Splash Potion of Darkness,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Darkness}}
 |-
-| [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Slowness}}
+| [[Chemist]] || Novice || {{Trade|Obol||Splash Potion of Slowness,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Slowness}}
 |-
-| [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Weaving}}
+| [[Chemist]] || Novice || {{Trade|Obol||Splash Potion of Weaving,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Weaving}}
 |-
-| [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Wind Charging}}
+| [[Chemist]] || Novice || {{Trade|Obol||Splash Potion of Wind Charging,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Wind Charging}}
 |-
-| [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Wither}}
+| [[Chemist]] || Novice || {{Trade|Obol||Splash Potion of Wither,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Wither}}
 |-
-| [[Farmer]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Bone Meal}}
+| [[Farmer]] || Novice || {{Trade|Obol||Bone Meal,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Bone Meal}}
 |-
-| [[Farmer]] || Novice || {{ItemLink|Obol}} + {{ItemLink|Jungle Sapling}} || {{ItemLink|Exotic Seed Bundle}}
+| [[Farmer]] || Novice || {{Trade|Obol|Jungle Sapling|Exotic Seed Bundle}} || {{ItemLink|Obol}} + {{ItemLink|Jungle Sapling}} || {{ItemLink|Exotic Seed Bundle}}
 |-
-| [[Farmer]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Floral Bundle}}
+| [[Farmer]] || Novice || {{Trade|Obol||Floral Bundle}} || {{ItemLink|Obol}} || {{ItemLink|Floral Bundle}}
 |-
-| [[Farmer]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Mushy Bundle}}
+| [[Farmer]] || Novice || {{Trade|Obol||Mushy Bundle}} || {{ItemLink|Obol}} || {{ItemLink|Mushy Bundle}}
 |-
-| [[Farmer]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Seed Bundle}}
+| [[Farmer]] || Novice || {{Trade|Obol||Seed Bundle}} || {{ItemLink|Obol}} || {{ItemLink|Seed Bundle}}
 |-
-| [[Farmer]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Fertilized Blue Egg}}
+| [[Farmer]] || Apprentice || {{Trade|Obol||Fertilized Blue Egg}} || {{ItemLink|Obol}} || {{ItemLink|Fertilized Blue Egg}}
 |-
-| [[Farmer]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Fertilized Brown Egg}}
+| [[Farmer]] || Apprentice || {{Trade|Obol||Fertilized Brown Egg}} || {{ItemLink|Obol}} || {{ItemLink|Fertilized Brown Egg}}
 |-
-| [[Farmer]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Fertilized Egg}}
+| [[Farmer]] || Apprentice || {{Trade|Obol||Fertilized Egg}} || {{ItemLink|Obol}} || {{ItemLink|Fertilized Egg}}
 |-
-| [[Farmer]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Calf}}
+| [[Farmer]] || Journeyman || {{Trade|Obol||Calf}} || {{ItemLink|Obol}} || {{ItemLink|Calf}}
 |-
-| [[Farmer]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Highland Calf}}
+| [[Farmer]] || Journeyman || {{Trade|Obol||Highland Calf}} || {{ItemLink|Obol}} || {{ItemLink|Highland Calf}}
 |-
-| [[Farmer]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Sindhi Calf}}
+| [[Farmer]] || Journeyman || {{Trade|Obol||Sindhi Calf}} || {{ItemLink|Obol}} || {{ItemLink|Sindhi Calf}}
 |-
-| [[Farmer]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Bushpiglet}}
+| [[Farmer]] || Journeyman || {{Trade|Obol||Bushpiglet}} || {{ItemLink|Obol}} || {{ItemLink|Bushpiglet}}
 |-
-| [[Farmer]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Mangalica Piglet}}
+| [[Farmer]] || Journeyman || {{Trade|Obol||Mangalica Piglet}} || {{ItemLink|Obol}} || {{ItemLink|Mangalica Piglet}}
 |-
-| [[Farmer]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Piglet}}
+| [[Farmer]] || Journeyman || {{Trade|Obol||Piglet}} || {{ItemLink|Obol}} || {{ItemLink|Piglet}}
 |-
-| [[Fisherman]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Angler's Almanac}}
+| [[Fisherman]] || Novice || {{Trade|Obol||Angler's Almanac}} || {{ItemLink|Obol}} || {{ItemLink|Angler's Almanac}}
 |-
-| [[Fletcher]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Arrow}}
+| [[Fletcher]] || Novice || {{Trade|Obol||Arrow,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Arrow}}
 |-
-| [[Fletcher]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Apotropaic Arrow}}
+| [[Fletcher]] || Novice || {{Trade|Obol||Apotropaic Arrow,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Apotropaic Arrow}}
 |-
-| [[Fletcher]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Nightshade Arrow}}
+| [[Fletcher]] || Novice || {{Trade|Obol||Nightshade Arrow,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Nightshade Arrow}}
 |-
-| [[Fletcher]] || Apprentice || {{ItemLink|Obol}} || 64 × {{ItemLink|Spectral Arrow}}
+| [[Fletcher]] || Apprentice || {{Trade|Obol||Spectral Arrow,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Spectral Arrow}}
 |-
-| [[Fletcher]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Compound Bow}}<br /><small>[[Power]] II</small>
+| [[Fletcher]] || Journeyman || {{Trade|Obol||Compound Bow}} || {{ItemLink|Obol}} || {{ItemLink|Compound Bow}}<br /><small>[[Power]] II</small>
 |-
-| [[Lumberjack]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Birch Log}}
+| [[Lumberjack]] || Novice || {{Trade|Obol||Birch Log,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Birch Log}}
 |-
-| [[Lumberjack]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Oak Log}}
+| [[Lumberjack]] || Novice || {{Trade|Obol||Oak Log,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Oak Log}}
 |-
-| [[Lumberjack]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Spruce Log}}
+| [[Lumberjack]] || Novice || {{Trade|Obol||Spruce Log,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Spruce Log}}
 |-
-| [[Lumberjack]] || Apprentice || {{ItemLink|Obol}} + {{ItemLink|Acacia Sapling}} || 64 × {{ItemLink|Acacia Log}}
+| [[Lumberjack]] || Apprentice || {{Trade|Obol|Acacia Sapling|Acacia Log,64}} || {{ItemLink|Obol}} + {{ItemLink|Acacia Sapling}} || 64 × {{ItemLink|Acacia Log}}
 |-
-| [[Lumberjack]] || Apprentice || {{ItemLink|Obol}} + {{ItemLink|Cherry Sapling}} || 64 × {{ItemLink|Cherry Log}}
+| [[Lumberjack]] || Apprentice || {{Trade|Obol|Cherry Sapling|Cherry Log,64}} || {{ItemLink|Obol}} + {{ItemLink|Cherry Sapling}} || 64 × {{ItemLink|Cherry Log}}
 |-
-| [[Lumberjack]] || Apprentice || {{ItemLink|Obol}} + {{ItemLink|Dark Oak Sapling}} || 64 × {{ItemLink|Dark Oak Log}}
+| [[Lumberjack]] || Apprentice || {{Trade|Obol|Dark Oak Sapling|Dark Oak Log,64}} || {{ItemLink|Obol}} + {{ItemLink|Dark Oak Sapling}} || 64 × {{ItemLink|Dark Oak Log}}
 |-
-| [[Lumberjack]] || Apprentice || {{ItemLink|Obol}} + {{ItemLink|Jungle Sapling}} || 64 × {{ItemLink|Jungle Log}}
+| [[Lumberjack]] || Apprentice || {{Trade|Obol|Jungle Sapling|Jungle Log,64}} || {{ItemLink|Obol}} + {{ItemLink|Jungle Sapling}} || 64 × {{ItemLink|Jungle Log}}
 |-
-| [[Lumberjack]] || Apprentice || {{ItemLink|Obol}} + {{ItemLink|Mangrove Propagule}} || 64 × {{ItemLink|Mangrove Log}}
+| [[Lumberjack]] || Apprentice || {{Trade|Obol|Mangrove Propagule|Mangrove Log,64}} || {{ItemLink|Obol}} + {{ItemLink|Mangrove Propagule}} || 64 × {{ItemLink|Mangrove Log}}
 |-
-| [[Lumberjack]] || Journeyman || {{ItemLink|Obol}} + {{ItemLink|Crimson Fungus}} || 64 × {{ItemLink|Crimson Stem}}
+| [[Lumberjack]] || Journeyman || {{Trade|Obol|Crimson Fungus|Crimson Stem,64}} || {{ItemLink|Obol}} + {{ItemLink|Crimson Fungus}} || 64 × {{ItemLink|Crimson Stem}}
 |-
-| [[Lumberjack]] || Journeyman || {{ItemLink|Obol}} || 64 × {{ItemLink|Mushroom Stem}}
+| [[Lumberjack]] || Journeyman || {{Trade|Obol||Mushroom Stem,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Mushroom Stem}}
 |-
-| [[Lumberjack]] || Journeyman || {{ItemLink|Obol}} + {{ItemLink|Pale Oak Sapling}} || 64 × {{ItemLink|Pale Oak Log}}
+| [[Lumberjack]] || Journeyman || {{Trade|Obol|Pale Oak Sapling|Pale Oak Log,64}} || {{ItemLink|Obol}} + {{ItemLink|Pale Oak Sapling}} || 64 × {{ItemLink|Pale Oak Log}}
 |-
-| [[Lumberjack]] || Journeyman || {{ItemLink|Obol}} + {{ItemLink|Warped Fungus}} || 64 × {{ItemLink|Warped Stem}}
+| [[Lumberjack]] || Journeyman || {{Trade|Obol|Warped Fungus|Warped Stem,64}} || {{ItemLink|Obol}} + {{ItemLink|Warped Fungus}} || 64 × {{ItemLink|Warped Stem}}
 |-
-| [[Lumberjack]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Hatchet}}<br /><small>[[Bloodrage]]</small>
+| [[Lumberjack]] || Expert || {{Trade|Obol||Hatchet}} || {{ItemLink|Obol}} || {{ItemLink|Hatchet}}<br /><small>[[Bloodrage]]</small>
 |-
-| [[Mouthpiece]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Stable Void}}
+| [[Mouthpiece]] || Novice || {{Trade|Obol||Stable Void,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Stable Void}}
 |-
-| [[Mason]] || Novice || {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Limestone}}
+| [[Mason]] || Novice || {{Trade|Obol||Bulk Limestone,4}} || {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Limestone}}
 |-
-| [[Mason]] || Novice || {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Diorite}}
+| [[Mason]] || Novice || {{Trade|Obol||Bulk Diorite,4}} || {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Diorite}}
 |-
-| [[Mason]] || Novice || {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Andesite}}
+| [[Mason]] || Novice || {{Trade|Obol||Bulk Andesite,4}} || {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Andesite}}
 |-
-| [[Mason]] || Novice || {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Granite}}
+| [[Mason]] || Novice || {{Trade|Obol||Bulk Granite,4}} || {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Granite}}
 |-
-| [[Mason]] || Novice || {{ItemLink|Obol}} || 6 × {{ItemLink|Bulk Dirt}}
+| [[Mason]] || Novice || {{Trade|Obol||Bulk Dirt,6}} || {{ItemLink|Obol}} || 6 × {{ItemLink|Bulk Dirt}}
 |-
-| [[Mason]] || Apprentice || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Deepslate}}
+| [[Mason]] || Apprentice || {{Trade|Obol||Bulk Deepslate,2}} || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Deepslate}}
 |-
-| [[Mason]] || Apprentice || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Smooth Red Sandstone}}
+| [[Mason]] || Apprentice || {{Trade|Obol||Bulk Smooth Red Sandstone,2}} || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Smooth Red Sandstone}}
 |-
-| [[Mason]] || Apprentice || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Smooth Sandstone}}
+| [[Mason]] || Apprentice || {{Trade|Obol||Bulk Smooth Sandstone,2}} || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Smooth Sandstone}}
 |-
-| [[Mason]] || Apprentice || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Tuff}}
+| [[Mason]] || Apprentice || {{Trade|Obol||Bulk Tuff,2}} || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Tuff}}
 |-
-| [[Mason]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Bulk Terracotta}}
+| [[Mason]] || Apprentice || {{Trade|Obol||Bulk Terracotta}} || {{ItemLink|Obol}} || {{ItemLink|Bulk Terracotta}}
 |-
-| [[Mason]] || Apprentice || {{ItemLink|Obol}} || 3 × {{ItemLink|Bulk Glass}}
+| [[Mason]] || Apprentice || {{Trade|Obol||Bulk Glass,3}} || {{ItemLink|Obol}} || 3 × {{ItemLink|Bulk Glass}}
 |-
-| [[Mason]] || Journeyman || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Calcite}}
+| [[Mason]] || Journeyman || {{Trade|Obol||Bulk Calcite,2}} || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Calcite}}
 |-
-| [[Mason]] || Journeyman || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Flowstone}}
+| [[Mason]] || Journeyman || {{Trade|Obol||Bulk Flowstone,2}} || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Flowstone}}
 |-
-| [[Mason]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Bulk Prismarine}}
+| [[Mason]] || Journeyman || {{Trade|Obol||Bulk Prismarine}} || {{ItemLink|Obol}} || {{ItemLink|Bulk Prismarine}}
 |-
-| [[Mason]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Bulk Cinnabar}}
+| [[Mason]] || Journeyman || {{Trade|Obol||Bulk Cinnabar}} || {{ItemLink|Obol}} || {{ItemLink|Bulk Cinnabar}}
 |-
-| [[Mason]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Bulk Blackstone}}
+| [[Mason]] || Expert || {{Trade|Obol||Bulk Blackstone}} || {{ItemLink|Obol}} || {{ItemLink|Bulk Blackstone}}
 |-
-| [[Mason]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Basalt}}
+| [[Mason]] || Expert || {{Trade|Obol||Bulk Smooth Basalt}} || {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Basalt}}
 |-
-| [[Mason]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Quartz}}
+| [[Mason]] || Expert || {{Trade|Obol||Bulk Smooth Quartz}} || {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Quartz}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Red Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Red Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Red Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Pink Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Pink Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Pink Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Orange Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Orange Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Orange Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Brown Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Brown Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Brown Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Yellow Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Yellow Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Yellow Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Lime Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Lime Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Lime Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Green Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Green Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Green Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Light Blue Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Light Blue Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Light Blue Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Blue Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Blue Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Blue Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Cyan Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Cyan Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Cyan Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Purple Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Purple Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Purple Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Magenta Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Magenta Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Magenta Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Black Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Black Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Black Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Gray Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Gray Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Gray Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Light Gray Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||Light Gray Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Light Gray Wool}}
 |-
-| [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|White Wool}}
+| [[Shepherd]] || Novice || {{Trade|Obol||White Wool,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|White Wool}}
 |-
-| [[Shepherd]] || Apprentice || 3 × {{ItemLink|Obol}} || {{ItemLink|Shepherd's Shears}}<br /><small>[[Looting]] III</small>
+| [[Shepherd]] || Apprentice || {{Trade|Obol,3||Shepherd's Shears}} || 3 × {{ItemLink|Obol}} || {{ItemLink|Shepherd's Shears}}<br /><small>[[Looting]] III</small>
 |-
-| [[Shepherd]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Brown Lamb}}
+| [[Shepherd]] || Apprentice || {{Trade|Obol||Brown Lamb}} || {{ItemLink|Obol}} || {{ItemLink|Brown Lamb}}
 |-
-| [[Shepherd]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Black Lamb}}
+| [[Shepherd]] || Apprentice || {{Trade|Obol||Black Lamb}} || {{ItemLink|Obol}} || {{ItemLink|Black Lamb}}
 |-
-| [[Shepherd]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|White Lamb}}
+| [[Shepherd]] || Apprentice || {{Trade|Obol||White Lamb}} || {{ItemLink|Obol}} || {{ItemLink|White Lamb}}
 |-
-| [[Shepherd]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Crook}}
+| [[Shepherd]] || Journeyman || {{Trade|Obol||Crook}} || {{ItemLink|Obol}} || {{ItemLink|Crook}}
 |-
-| [[Jeweler]] || Novice || 4 × {{ItemLink|Obol}} + {{ItemLink|Opal}} || {{ItemLink|Opal Earrings}}<br /><small>{{G|Water}} [[Conduit Power|∞ Conduit Power]]</small>
+| [[Jeweler]] || Novice || {{Trade|Obol,4|Opal|Opal Earrings}} || 4 × {{ItemLink|Obol}} + {{ItemLink|Opal}} || {{ItemLink|Opal Earrings}}<br /><small>{{G|Water}} [[Conduit Power|∞ Conduit Power]]</small>
 |-
-| [[Jeweler]] || Novice || {{ItemLink|Obol}} + 2 × {{ItemLink|Diamond}} || {{ItemLink|Diamond Earrings}}
+| [[Jeweler]] || Novice || {{Trade|Obol|Diamond,2|Diamond Earrings}} || {{ItemLink|Obol}} + 2 × {{ItemLink|Diamond}} || {{ItemLink|Diamond Earrings}}
 |-
-| [[Jeweler]] || Novice || {{ItemLink|Obol}} + 2 × {{ItemLink|Amethyst Shard}} || {{ItemLink|Amethyst Earrings}}
+| [[Jeweler]] || Novice || {{Trade|Obol|Amethyst Shard,2|Amethyst Earrings}} || {{ItemLink|Obol}} + 2 × {{ItemLink|Amethyst Shard}} || {{ItemLink|Amethyst Earrings}}
 |-
-| [[Jeweler]] || Novice || {{ItemLink|Obol}} + 2 × {{ItemLink|Lapis Lazuli|mcw=Lapis Lazuli}} || {{ItemLink|Lapis Earrings}}
+| [[Jeweler]] || Novice || {{Trade|Obol|Lapis Lazuli,2|Lapis Earrings}} || {{ItemLink|Obol}} + 2 × {{ItemLink|Lapis Lazuli|mcw=Lapis Lazuli}} || {{ItemLink|Lapis Earrings}}
 |-
-| [[Jeweler]] || Apprentice || 4 × {{ItemLink|Obol}} + {{ItemLink|Ruby}} || {{ItemLink|Ruby Circlet}}<br /><small>{{G|Fire resistance}} [[Fire Resistance|∞ Fire Resistance]]</small>
+| [[Jeweler]] || Apprentice || {{Trade|Obol,4|Ruby|Ruby Circlet}} || 4 × {{ItemLink|Obol}} + {{ItemLink|Ruby}} || {{ItemLink|Ruby Circlet}}<br /><small>{{G|Fire resistance}} [[Fire Resistance|∞ Fire Resistance]]</small>
 |-
-| [[Jeweler]] || Journeyman || 8 × {{ItemLink|Obol}} + {{ItemLink|Amber}} || {{ItemLink|Amber Earrings}}<br /><small>{{G|Health}} [[Regeneration|∞ Regeneration]]</small>
+| [[Jeweler]] || Journeyman || {{Trade|Obol,8|Amber|Amber Earrings}} || 8 × {{ItemLink|Obol}} + {{ItemLink|Amber}} || {{ItemLink|Amber Earrings}}<br /><small>{{G|Health}} [[Regeneration|∞ Regeneration]]</small>
 |-
-| [[Jeweler]] || Expert || 10 × {{ItemLink|Obol}} + 2 × {{ItemLink|Hepatizon Alloy}} || {{ItemLink|Hepatizon Laurel}}
+| [[Jeweler]] || Expert || {{Trade|Obol,10|Hepatizon Alloy,2|Hepatizon Laurel}} || 10 × {{ItemLink|Obol}} + 2 × {{ItemLink|Hepatizon Alloy}} || {{ItemLink|Hepatizon Laurel}}
 |-
-| [[Jeweler]] || Expert || 14 × {{ItemLink|Obol}} + {{ItemLink|Topaz}} || {{ItemLink|Topaz Earrings}}<br /><small>{{G|Mining speed}} [[Haste|∞ Haste]]</small>
+| [[Jeweler]] || Expert || {{Trade|Obol,14|Topaz|Topaz Earrings}} || 14 × {{ItemLink|Obol}} + {{ItemLink|Topaz}} || {{ItemLink|Topaz Earrings}}<br /><small>{{G|Mining speed}} [[Haste|∞ Haste]]</small>
 |-
-| [[Wandering Trader]] || Special offer || {{ItemLink|Obol}} || {{ItemLink|Asylum Seeker}}
+| [[Wandering Trader]] || Special offer || {{Trade|Obol||Asylum Seeker}} || {{ItemLink|Obol}} || {{ItemLink|Asylum Seeker}}
 |-
-| [[Wandering Trader]] || Uncommon offer || {{ItemLink|Obol}} || {{ItemLink|Abandoned Desert Village Map}}
+| [[Wandering Trader]] || Uncommon offer || {{Trade|Obol||Abandoned Desert Village Map}} || {{ItemLink|Obol}} || {{ItemLink|Abandoned Desert Village Map}}
 |-
-| [[Wandering Trader]] || Uncommon offer || {{ItemLink|Obol}} || {{ItemLink|Abandoned Plains Village Map}}
+| [[Wandering Trader]] || Uncommon offer || {{Trade|Obol||Abandoned Plains Village Map}} || {{ItemLink|Obol}} || {{ItemLink|Abandoned Plains Village Map}}
 |-
-| [[Wandering Trader]] || Uncommon offer || {{ItemLink|Obol}} || {{ItemLink|Abandoned Savanna Village Map}}
+| [[Wandering Trader]] || Uncommon offer || {{Trade|Obol||Abandoned Savanna Village Map}} || {{ItemLink|Obol}} || {{ItemLink|Abandoned Savanna Village Map}}
 |-
-| [[Wandering Trader]] || Uncommon offer || {{ItemLink|Obol}} || {{ItemLink|Abandoned Snowy Village Map}}
+| [[Wandering Trader]] || Uncommon offer || {{Trade|Obol||Abandoned Snowy Village Map}} || {{ItemLink|Obol}} || {{ItemLink|Abandoned Snowy Village Map}}
 |-
-| [[Wandering Trader]] || Uncommon offer || {{ItemLink|Obol}} || {{ItemLink|Abandoned Taiga Village Map}}
+| [[Wandering Trader]] || Uncommon offer || {{Trade|Obol||Abandoned Taiga Village Map}} || {{ItemLink|Obol}} || {{ItemLink|Abandoned Taiga Village Map}}
 |-
-| [[Wandering Trader]] || Uncommon offer || {{ItemLink|Obol}} || {{ItemLink|Witch Hut Map}}
+| [[Wandering Trader]] || Uncommon offer || {{Trade|Obol||Witch Hut Map}} || {{ItemLink|Obol}} || {{ItemLink|Witch Hut Map}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

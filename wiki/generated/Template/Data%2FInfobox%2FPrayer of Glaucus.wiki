@@ -12,7 +12,7 @@
 |rarity=Rare
 |stackable=No
 |effects=Stores: [[Luck of the Sea]] III, [[Lure]] III, [[Loyalty]] I
-|tooltip=Prayer of Glaucus
+|tooltipbox={{Tooltip|Prayer of Glaucus}}
 |id=<code>matcha:blessing_glaucus</code>
 |base=<code>minecraft:enchanted_book</code>
 |source={{Source|MF_datapack/data/matcha/recipe/blessing/lure_luck_of_the_sea.json|lure_luck_of_the_sea.json}}

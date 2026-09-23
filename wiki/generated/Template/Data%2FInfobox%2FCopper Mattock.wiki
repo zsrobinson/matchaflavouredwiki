@@ -15,7 +15,7 @@
 |attackspeed=2
 |miningspeed=5
 |repair=[[Copper Ingot]]
-|tooltip={{G|Mining speed}} 5<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 2
+|tooltipbox={{Tooltip|Copper Mattock}}
 |id=<code>matcha:copper_mattock</code>
 |base=<code>minecraft:copper_hoe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_mattock.json|copper_mattock.json}}

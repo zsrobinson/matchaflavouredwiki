@@ -1,9 +1,9 @@
 <includeonly>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Jeweler]] || Expert || 14 × {{ItemLink|Obol}} + {{ItemLink|Topaz}} || 1
+| [[Jeweler]] || Expert || {{Trade|Obol,14|Topaz|Topaz Earrings}} || 14 × {{ItemLink|Obol}} + {{ItemLink|Topaz}} || 1
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

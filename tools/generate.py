@@ -15,6 +15,7 @@ Outputs (Template namespace unless noted):
   Data/Food table, Data/Renamed items, Data/Enchantments, Data/Advancements/<tab>
   Data/Current version, Source/commit
   Module:Inventory slot/Aliases   tag names ("Any Planks") for recipe slots
+  Module:Tooltip/Data     each item's in-game tooltip (name colour, lore runs) and glyph widths
   Main/<item>              stub article for every item that has no hand-written page
   Main/<vanilla name>      redirect from each vanilla name to its renamed item
 """
@@ -260,8 +261,13 @@ def item_type(item, comps):
     eq = comps.get('equippable') or {}
     if eq.get('slot') in ('head', 'chest', 'legs', 'feet') and ('armor' in json.dumps(comps.get('attribute_modifiers', [])) or 'elytra' in item['name'].lower() or eq.get('slot')):
         return 'Armor' if 'elytra' not in item['name'].lower() else 'Equipment'
-    if comps.get('tool'):
-        return 'Tool'
+    tool = comps.get('tool')
+    if tool:
+        # swords, maces and tridents carry a tool component too (for cobwebs and bamboo), but
+        # it mines nothing a tool would; they are weapons
+        blocks = json.dumps([r.get('blocks') for r in tool.get('rules', [])])
+        if 'mineable/' in blocks or 'shears' in blocks or 'weapon' not in comps:
+            return 'Tool'
     if comps.get('weapon') or attr_sum(comps, 'attack_damage')[1]:
         return 'Weapon'
     if item['base_id'].split(':')[-1] in BLOCK_ITEMS:
@@ -369,9 +375,9 @@ def infobox(item):
     elif ench:
         f['effects'] = ('%s<br />' % f['effects'] if f.get('effects') else '') + 'Stores: ' + ', '.join(
             intrinsic_text(e, l) for e, l in ench.items())
-    lore = item['components'].get('lore')
-    if lore:
-        f['tooltip'] = '<br />'.join(glyphs(x) for x in lore if x.strip())
+    if any(item['components'].get('lore_rich') or []):
+        # the item's in-game tooltip, drawn under its inventory slot (Module:Tooltip)
+        f['tooltipbox'] = '{{Tooltip|%s}}' % safe(name)
     model = (item['models'] or [None])[0]
     f['id'] = '<code>%s</code>' % (model or item['base_id'])
     if model:
@@ -470,8 +476,8 @@ def recipe_ui(r):
         note = '%s s' % fmt_num(secs)
         if r.get('experience'):
             note += ', %s XP' % fmt_num(r['experience'])
-        return '{{Cooking|station=%s|Input=%s|Output=%s|note=%s}}' % (
-            r['station'], slot_text(r['input']), out_text(r['output']), note)
+        return '{{Cooking|station=%s|Input=%s|Output=%s|time=%s|note=%s}}' % (
+            r['station'], slot_text(r['input']), out_text(r['output']), fmt_num(secs), note)
     if t == 'stonecutting':
         return '{{Stonecutter|Input=%s|Output=%s}}' % (slot_text(r['input']), out_text(r['output']))
     if t == 'smithing_transform':
@@ -939,11 +945,18 @@ def stack_cell(s):
     return '%s%s%s' % ('%d × ' % s['count'] if s.get('count', 1) > 1 else '', il(s['name']), ench)
 
 
+def trade_ui(t):
+    """The offer as the villager's trading screen lists it ({{Trade}})."""
+    def st(s):
+        return (safe(s['name']) + (',%d' % s['count'] if s.get('count', 1) > 1 else '')) if s else ''
+    return '{{Trade|%s|%s|%s}}' % (st(t.get('wants')), st(t.get('additional_wants')), st(t.get('gives')))
+
+
 def trades_page(prof):
     levels = TRADES[prof]
     names = {'level_1': 'Novice', 'level_2': 'Apprentice', 'level_3': 'Journeyman', 'level_4': 'Expert', 'level_5': 'Master',
              'buying': 'Special offers', 'common': 'Common offers', 'uncommon': 'Uncommon offers'}
-    lines = ['{| class="wikitable"', '! Level !! Villager wants !! Villager gives !! Uses !! Villager XP']
+    lines = ['{| class="wikitable trade-table"', '! Level !! Offer !! Villager wants !! Villager gives !! Uses !! Villager XP']
     for lk in sorted(k for k in levels if not k.endswith('_meta')):
         ts = levels[lk]
         meta = levels.get(lk + '_meta', {})
@@ -962,7 +975,7 @@ def trades_page(prof):
             if t.get('biome'):
                 b = t['biome'] if isinstance(t['biome'], str) else ', '.join(t['biome'])
                 gives += '<br /><small>only in %s biomes</small>' % b.replace('#minecraft:', '').replace('spawns_', '').replace('_variant_farm_animals', '').replace('_', ' ')
-            lines.append('|-\n%s| %s || %s || %s || %s' % (lvl, want, gives,
+            lines.append('|-\n%s| %s || %s || %s || %s || %s' % (lvl, trade_ui(t), want, gives,
                                          uses or '', t.get('xp') or ''))
     lines.append('|}')
     return '<includeonly>' + '\n'.join(lines) + '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>'
@@ -1015,10 +1028,10 @@ def sources_page(name):
     tg = TRADE_GIVES.get(name, [])
     if tg:
         parts.append("\n'''Trading'''")
-        parts.append('{| class="wikitable"\n! Villager !! Level !! Price !! Quantity')
+        parts.append('{| class="wikitable trade-table"\n! Villager !! Level !! Offer !! Price !! Quantity')
         for prof, lk, t in tg:
             price = stack_cell(t['wants']) + ((' + ' + stack_cell(t['additional_wants'])) if t.get('additional_wants') else '')
-            parts.append('|-\n| %s || %s || %s || %d' % (prof_link(prof), LEVEL_NAMES.get(lk, '—'), price, t['gives'].get('count', 1)))
+            parts.append('|-\n| %s || %s || %s || %s || %d' % (prof_link(prof), LEVEL_NAMES.get(lk, '—'), trade_ui(t), price, t['gives'].get('count', 1)))
         parts.append('|}')
     if not parts:
         return None
@@ -1036,10 +1049,10 @@ def uses_page(name):
     tw = TRADE_WANTS.get(name, [])
     if tw:
         parts.append("\n'''Trading'''")
-        parts.append('{| class="wikitable"\n! Villager !! Level !! Wants !! Gives')
+        parts.append('{| class="wikitable trade-table"\n! Villager !! Level !! Offer !! Wants !! Gives')
         for prof, lk, t in tw:
             want = stack_cell(t['wants']) + ((' + ' + stack_cell(t['additional_wants'])) if t.get('additional_wants') else '')
-            parts.append('|-\n| %s || %s || %s || %s' % (prof_link(prof), LEVEL_NAMES.get(lk, '—'), want, stack_cell(t['gives'])))
+            parts.append('|-\n| %s || %s || %s || %s || %s' % (prof_link(prof), LEVEL_NAMES.get(lk, '—'), trade_ui(t), want, stack_cell(t['gives'])))
         parts.append('|}')
     if not parts:
         return None
@@ -1322,6 +1335,55 @@ def category_pages(n):
         n['categories'] += 1
 
 
+# ------------------------------------------------------------------ tooltips
+RARITY_COLORS = {'uncommon': 'FFFF55', 'rare': '55FFFF', 'epic': 'FF55FF'}
+
+
+def lua_str(s):
+    return json.dumps(s, ensure_ascii=False)
+
+
+def tooltip_data():
+    """Module:Tooltip/Data: what each item's in-game tooltip shows. Name colour (explicit, else the
+    rarity's), the in-game name where it differs from the page, and the lore lines as styled runs,
+    glyphs included. Plus each custom-font glyph's width, as the game measures bitmap glyphs."""
+    import images  # the glyph metrics come from the same font texture the images are cut from
+    entries = {}
+    for key, it in ITEMS.items():
+        c = effective(it)
+        own = it['components']
+        color = own.get('name_color') or RARITY_COLORS.get(c.get('rarity'), '')
+        lines = [[r for r in line if r[0]] for line in own.get('lore_rich') or []]
+        title = it['name'] if it['name'] != key else ''
+        if color or title or any(lines):
+            entries[safe(key)] = (title, color, lines)
+    for iid, comps in VSUM.items():
+        color = RARITY_COLORS.get(comps.get('minecraft:rarity'), '')
+        name = safe(id_name(iid))
+        if color and name not in entries:
+            entries[name] = ('', color, [])
+    out = ['-- Generated by tools/generate.py from item components in the pack\'s source. Do not edit.',
+           '-- items[name] = { t = in-game name if not the page name, c = name colour, l = lore lines of',
+           '--   { text, colour, flags } runs }; glyphs[codepoint] = width in font pixels.',
+           'return {', '\titems = {']
+    for name in sorted(entries):
+        title, color, lines = entries[name]
+        parts = []
+        if title:
+            parts.append('t = %s' % lua_str(title))
+        if color:
+            parts.append('c = %s' % lua_str(color))
+        if lines:
+            parts.append('l = { %s }' % ', '.join(
+                '{ %s }' % ', '.join('{ %s, %s, %s }' % (lua_str(t), lua_str(col), lua_str(fl)) for t, col, fl in line)
+                for line in lines))
+        out.append('\t\t[%s] = { %s },' % (lua_str(name), ', '.join(parts)))
+    out.append('\t},')
+    out.append('\tglyphs = { %s },' % ', '.join('[%d] = %d' % kv for kv in sorted(images.glyph_widths().items())))
+    out.append('}')
+    return '\n'.join(out)
+
+
 # ------------------------------------------------------------------ main
 def main():
     if os.path.isdir(GEN):
@@ -1415,6 +1477,7 @@ def main():
         lua.append('\t[%s] = { %s },' % (json.dumps(k), ', '.join(json.dumps(safe(x)) for x in ALIASES[k])))
     lua.append('}\nreturn aliases')
     write('Module', 'Inventory slot/Aliases', '\n'.join(lua))
+    write('Module', 'Tooltip/Data', tooltip_data())
     # One redirect per tag; the sentence-case variant is synthesised by build_xml.collect. Existence is
     # checked case-insensitively so Linux and macOS (case-insensitive) produce the same files.
     taken = {f.lower() for f in os.listdir(os.path.join(GEN, 'Main'))} | {f.lower() for f in os.listdir(os.path.join(HAND, 'Main'))}

@@ -16,9 +16,9 @@
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Lumberjack]] || Apprentice || {{ItemLink|Obol}} + {{ItemLink|Dark Oak Sapling}} || 64
+| [[Lumberjack]] || Apprentice || {{Trade|Obol|Dark Oak Sapling|Dark Oak Log,64}} || {{ItemLink|Obol}} + {{ItemLink|Dark Oak Sapling}} || 64
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

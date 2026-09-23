@@ -1,4 +1,5 @@
 {{Vanilla|Tooltip}}
+<div style="float:right;clear:right;margin:0 0 1em 1em;text-align:right">{{Tooltip|Electrum Helmet}}<br />{{Tooltip|Apple Empanada}}</div>
 The '''tooltip''' of a [[Matcha Flavoured]] item is rewritten to be read at a glance. The pack hides the vanilla attribute lines ("When in Main Hand: …") and replaces them with short lore lines that start with a symbol, such as {{G|Attack damage}} 6 or {{G|Armor}} 3.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_helmet.json}}</ref> The symbols are characters of the resource pack's font, drawn in <code>font/custom_emojis.png</code>.<ref>{{Source|MF_resourcepack/assets/minecraft/font/default.json}}</ref> This page lists what each symbol means.
 
 == Equipment stats ==

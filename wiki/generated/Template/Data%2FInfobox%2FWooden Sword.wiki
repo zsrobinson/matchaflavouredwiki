@@ -6,7 +6,7 @@
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
-|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
 |stackable=No
@@ -15,7 +15,7 @@
 |attackspeed=1.6
 |miningspeed=1.5
 |repair=[[Oak Planks]], [[Spruce Planks]], [[Birch Planks]], [[Jungle Planks]], [[Acacia Planks]], [[Dark Oak Planks]], [[Pale Oak Planks]], [[Crimson Planks]], [[Warped Planks]], [[Mangrove Planks]], [[Bamboo Planks]], [[Cherry Planks]]
-|tooltip=🗡 4<br />🕒 1.6
+|tooltipbox={{Tooltip|Wooden Sword}}
 |id=<code>minecraft:wooden_sword</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/wooden_sword.json|wooden_sword.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

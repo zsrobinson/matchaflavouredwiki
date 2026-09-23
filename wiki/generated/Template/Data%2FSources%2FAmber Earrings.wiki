@@ -1,9 +1,9 @@
 <includeonly>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Jeweler]] || Journeyman || 8 × {{ItemLink|Obol}} + {{ItemLink|Amber}} || 1
+| [[Jeweler]] || Journeyman || {{Trade|Obol,8|Amber|Amber Earrings}} || 8 × {{ItemLink|Obol}} + {{ItemLink|Amber}} || 1
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

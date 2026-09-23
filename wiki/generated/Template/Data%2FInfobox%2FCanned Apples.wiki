@@ -13,7 +13,7 @@
 |heals={{Hp|6}}
 |effects={{EffectLink|Regeneration}} (1:00)
 |eat_time=1.6 seconds
-|tooltip=❤❤❤<br />{{G|Health}} Regen (1:00)
+|tooltipbox={{Tooltip|Canned Apples}}
 |id=<code>matcha:canned_apples</code>
 |base=<code>minecraft:poisonous_potato</code>
 |source={{Source|MF_datapack/data/matcha/recipe/food/crafting/canned_apples.json|canned_apples.json}}

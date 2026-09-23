@@ -16,9 +16,9 @@
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Lumberjack]] || Apprentice || {{ItemLink|Obol}} + {{ItemLink|Mangrove Propagule}} || 64
+| [[Lumberjack]] || Apprentice || {{Trade|Obol|Mangrove Propagule|Mangrove Log,64}} || {{ItemLink|Obol}} + {{ItemLink|Mangrove Propagule}} || 64
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

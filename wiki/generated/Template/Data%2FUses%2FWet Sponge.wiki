@@ -7,10 +7,10 @@
 |-
 | [[Sponge]]
 | [[Wet Sponge]]
-| {{Cooking|station=Mud Kiln|Input=Wet Sponge|Output=Sponge|note=2.5 s, 0.15 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/sponge.json|matcha:kiln/sponge}}</small>
+| {{Cooking|station=Mud Kiln|Input=Wet Sponge|Output=Sponge|time=2.5|note=2.5 s, 0.15 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/sponge.json|matcha:kiln/sponge}}</small>
 |-
 | [[Sponge]]
 | [[Wet Sponge]]
-| {{Cooking|station=Oven|Input=Wet Sponge|Output=Sponge|note=2.5 s, 0.15 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/sponge.json|matcha:oven/sponge}}</small>
+| {{Cooking|station=Oven|Input=Wet Sponge|Output=Sponge|time=2.5|note=2.5 s, 0.15 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/sponge.json|matcha:oven/sponge}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

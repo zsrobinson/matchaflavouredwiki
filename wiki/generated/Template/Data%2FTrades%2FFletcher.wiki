@@ -1,17 +1,17 @@
-<includeonly>{| class="wikitable"
-! Level !! Villager wants !! Villager gives !! Uses !! Villager XP
+<includeonly>{| class="wikitable trade-table"
+! Level !! Offer !! Villager wants !! Villager gives !! Uses !! Villager XP
 |-
 ! rowspan="3" | Novice
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Arrow}} || 999 || 10
+| {{Trade|Obol||Arrow,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Arrow}} || 999 || 10
 |-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Apotropaic Arrow}} || 999 || 10
+| {{Trade|Obol||Apotropaic Arrow,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Apotropaic Arrow}} || 999 || 10
 |-
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Nightshade Arrow}} || 999 || 10
+| {{Trade|Obol||Nightshade Arrow,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Nightshade Arrow}} || 999 || 10
 |-
 ! rowspan="1" | Apprentice
-| {{ItemLink|Obol}} || 64 × {{ItemLink|Spectral Arrow}} || 999 || 40
+| {{Trade|Obol||Spectral Arrow,64}} || {{ItemLink|Obol}} || 64 × {{ItemLink|Spectral Arrow}} || 999 || 40
 |-
 ! rowspan="1" | Journeyman
-| {{ItemLink|Obol}} || {{ItemLink|Compound Bow}}<br /><small>[[Power]] II</small> || 999 || 80
+| {{Trade|Obol||Compound Bow}} || {{ItemLink|Obol}} || {{ItemLink|Compound Bow}}<br /><small>[[Power]] II</small> || 999 || 80
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

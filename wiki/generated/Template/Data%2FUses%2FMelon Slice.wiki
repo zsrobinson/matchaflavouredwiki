@@ -3,7 +3,7 @@
 |-
 | [[Grilled Melon]]
 | [[Melon Slice]]
-| {{Cooking|station=Kindling|Input=Melon Slice|Output=Grilled Melon|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/grilled_melon.json|matcha:food/campfire/grilled_melon}}</small>
+| {{Cooking|station=Kindling|Input=Melon Slice|Output=Grilled Melon|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/grilled_melon.json|matcha:food/campfire/grilled_melon}}</small>
 |-
 | [[Melon Sorbet]]
 | [[Melon Slice]] +<br />[[Snowball]] +<br />[[Sugar]] +<br />[[Glass Bottle]]
@@ -15,7 +15,7 @@
 |-
 | [[Grilled Melon]]
 | [[Melon Slice]]
-| {{Cooking|station=Oven|Input=Melon Slice|Output=Grilled Melon|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/grilled_melon.json|matcha:food/oven/grilled_melon}}</small>
+| {{Cooking|station=Oven|Input=Melon Slice|Output=Grilled Melon|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/grilled_melon.json|matcha:food/oven/grilled_melon}}</small>
 |-
 | [[Melon]] <small>(vanilla recipe)</small>
 | 9 × [[Melon Slice]]

@@ -6,7 +6,7 @@
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
-|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
 |rarity=Epic
@@ -15,7 +15,7 @@
 |damage={{Hp|6}}
 |attackspeed=0.6
 |repair=[[Iron Ingot]]
-|tooltip=🗡 6<br />🕒 0.6
+|tooltipbox={{Tooltip|Mace}}
 |id=<code>minecraft:mace</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/mace.json|mace.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
