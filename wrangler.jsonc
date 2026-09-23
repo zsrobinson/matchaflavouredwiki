@@ -1,12 +1,23 @@
-// Cloudflare Workers (static assets only; no Worker script needed).
-// Build dist/ first: see README "Deploying (static)". Then: npx wrangler deploy
+// Cloudflare Workers: static assets from dist/ behind a tiny Worker (src/worker.js) that
+// 301-redirects the alternate hostnames to https://matchaflavo.red.
+// Build dist/ first: see README "Deploying". Then: npx wrangler deploy
 {
   "name": "matcha-flavoured-wiki",
+  "main": "src/worker.js",
   "compatibility_date": "2026-09-01",
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
+    // Run the Worker for every request so alternate hostnames redirect even when the path is an asset
+    "run_worker_first": true,
     // /w/Page_title is served from dist/w/Page_title.html without a redirect
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
-  }
+  },
+  "routes": [
+    { "pattern": "matchaflavo.red", "custom_domain": true },
+    { "pattern": "www.matchaflavo.red", "custom_domain": true },
+    { "pattern": "matchaflavoured.org", "custom_domain": true },
+    { "pattern": "www.matchaflavoured.org", "custom_domain": true }
+  ]
 }

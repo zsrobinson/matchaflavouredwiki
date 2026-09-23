@@ -118,11 +118,16 @@ def ench_name(eid):
     return eid.split(':')[-1].replace('_', ' ').title()
 
 
-INTRINSIC_PAGES = [('warding', 'Warding'), ('adamant_tool', 'Adamant equipment'), ('adamant', 'Doom'),
+INTRINSIC_PAGES = [('warding', 'Warding'), ('adamant_tool', 'Adamant equipment'), ('adamant_weapon', 'Adamant equipment'),
+                   ('adamant', 'Doom'), ('electrum_armour', 'Electrum equipment'),
                    ('shakudo_weapon', 'Shakudo equipment'), ('shakudo', 'Set bonus#Shakudo regeneration'), ('electrum_tool', 'Fortune'),
                    ('electrum', 'Warding'), ('cleanse', 'Cleanse'), ('max_magic_protection', 'Magic protection'),
                    ('magic_protection', 'Magic protection'), ('conduit_power', 'Conduit Power'), ('fire_proof', 'Fire Resistance'),
                    ('haste', 'Haste'), ('regeneration', 'Regeneration')]
+
+
+INTRINSIC_LABELS = {'adamant_tool': 'Auto-smelting', 'adamant_weapon': 'Weakness', 'shakudo_weapon': 'Life steal',
+                    'electrum_armour': 'Electrum bonus', 'electrum_tool': 'Fortune bonus'}
 
 
 def intrinsic_text(eid, lvl):
@@ -134,7 +139,12 @@ def intrinsic_text(eid, lvl):
     key = eid.split(':')[-1]
     page = next((p for k, p in INTRINSIC_PAGES if key.startswith(k)), None) if eid.startswith('matcha:') else None
     if page:
-        return '[[%s|%s]]' % (page, glyphs(raw).strip() or page)
+        label = glyphs(raw).strip()
+        if not raw or 'kleispack.' in raw:  # untranslated key (pack bug): name it from the id
+            label = INTRINSIC_LABELS.get(key, key.replace('_', ' ').capitalize())
+        elif not re.sub(r'\{\{G\|[^}]*\}\}', '', label).strip(' ()+-:0123456789∞'):
+            label = (label + ' ' + INTRINSIC_LABELS.get(key, page.split('#')[-1])).strip()  # glyph-only: add a readable name
+        return '[[%s|%s]]' % (page, label)
     if plain and not re.fullmatch(r'[0-9+∞\-() :.]*', plain) and not plain.startswith(('ERROR', 'enchantment.')):
         return '[[%s]]%s' % (plain, (' ' + roman(lvl)) if maxl > 1 else '')
     return key.replace('_', ' ').capitalize()

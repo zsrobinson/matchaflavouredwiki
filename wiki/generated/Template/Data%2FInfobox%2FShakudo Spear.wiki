@@ -7,7 +7,7 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Shakudo equipment|{{G|Health}}{{G|Attack damage}}]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Shakudo equipment|{{G|Health}}{{G|Attack damage}} Life steal]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=1000

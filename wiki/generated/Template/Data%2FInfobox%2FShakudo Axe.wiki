@@ -7,7 +7,7 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Silk Touch]]<br />[[Shakudo equipment|{{G|Health}}{{G|Attack damage}}]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Silk Touch]]<br />[[Shakudo equipment|{{G|Health}}{{G|Attack damage}} Life steal]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=1000

@@ -1,15 +1,18 @@
 var __defProp = Object.defineProperty;
 var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
 
-// ../../.npm/_npx/c943b712072b77c4/node_modules/wrangler/templates/no-op-worker.js
-var no_op_worker_default = {
-  fetch() {
-    return new Response("Not found", {
-      status: 404,
-      headers: {
-        "Content-Type": "text/html"
-      }
-    });
+// src/worker.js
+var CANONICAL = "matchaflavo.red";
+var worker_default = {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    if (url.hostname !== CANONICAL && !url.hostname.endsWith(".workers.dev") && url.hostname !== "localhost") {
+      url.protocol = "https:";
+      url.hostname = CANONICAL;
+      url.port = "";
+      return Response.redirect(url.toString(), 301);
+    }
+    return env.ASSETS.fetch(request);
   }
 };
 
@@ -60,12 +63,12 @@ var jsonError = /* @__PURE__ */ __name(async (request, env, _ctx, middlewareCtx)
 }, "jsonError");
 var middleware_miniflare3_json_error_default = jsonError;
 
-// .wrangler/tmp/bundle-FMej4w/middleware-insertion-facade.js
+// .wrangler/tmp/bundle-EgRKr6/middleware-insertion-facade.js
 var __INTERNAL_WRANGLER_MIDDLEWARE__ = [
   middleware_ensure_req_body_drained_default,
   middleware_miniflare3_json_error_default
 ];
-var middleware_insertion_facade_default = no_op_worker_default;
+var middleware_insertion_facade_default = worker_default;
 
 // ../../.npm/_npx/c943b712072b77c4/node_modules/wrangler/templates/middleware/common.ts
 var __facade_middleware__ = [];
@@ -92,7 +95,7 @@ function __facade_invoke__(request, env, ctx, dispatch, finalMiddleware) {
 }
 __name(__facade_invoke__, "__facade_invoke__");
 
-// .wrangler/tmp/bundle-FMej4w/middleware-loader.entry.ts
+// .wrangler/tmp/bundle-EgRKr6/middleware-loader.entry.ts
 var __Facade_ScheduledController__ = class ___Facade_ScheduledController__ {
   constructor(scheduledTime, cron, noRetry) {
     this.scheduledTime = scheduledTime;
@@ -194,4 +197,4 @@ export {
   __INTERNAL_WRANGLER_MIDDLEWARE__,
   middleware_loader_entry_default as default
 };
-//# sourceMappingURL=no-op-worker.js.map
+//# sourceMappingURL=worker.js.map

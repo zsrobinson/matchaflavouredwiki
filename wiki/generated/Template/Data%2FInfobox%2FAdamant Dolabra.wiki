@@ -7,7 +7,7 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Unbreaking]] II<br />[[Adamant equipment|enchantment.kleispack.smelting]]<br />[[Efficiency]] I}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Unbreaking]] II<br />[[Adamant equipment|Auto-smelting]]<br />[[Efficiency]] I}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=5000

@@ -42,7 +42,7 @@ LANG.update(PACK_LANG)
 # Private-use glyphs from assets/minecraft/font/default.json (custom_emojis.png).
 # Named from the lang keys that use them, so lore renders as readable text.
 GLYPHS = {
-    '': 'Water', '': 'Warding', '': 'Fortune', '': 'Cooldown',
+    '': 'Water', '': 'Warding', '': 'Electrum', '': 'Cooldown',
     '': 'Apotropaic', '': 'Cleanse', '': 'Armor toughness',
     '': 'Step height', '': 'Luck', '': 'Nausea', '': 'Slow falling',
     '': 'Attack speed', '': 'Knockback', '': 'Fire resistance',
