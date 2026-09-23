@@ -7,17 +7,13 @@ their `filepath://Name.png` references to local copies in site/assets/mcw/, and 
 
   wiki/pages/MediaWiki/Gadget-mcw-common.css   MediaWiki:Common.css + Gadget-site-styles.css
   wiki/pages/MediaWiki/Gadget-mcw-vector.css   MediaWiki:Vector.css + Vector-theme-dark.css + gadget CSS
-  wiki/pages/MediaWiki/Gadget-mcw-minerva.css  MediaWiki:Minerva.css + Minerva-theme-dark.css + mobile gadget CSS
-                                               (the mobile site: MobileFrontend with the Minerva skin)
 
 MediaWiki:Common.css and MediaWiki:Vector.css in this repo @import these and then apply
-Matcha Flavoured's own branding and component styles on top (MediaWiki:Minerva.css does the
-same for the mobile site). Rerun to pick up upstream changes; the result is committed. Pass file
-names to refresh only those (e.g. `tools/vendor_mcw_skin.py Gadget-mcw-minerva.css`). minecraft.wiki content is CC BY-NC-SA 3.0.
+Matcha Flavoured's own branding and component styles on top. Rerun to pick up upstream
+changes; the result is committed. minecraft.wiki content is CC BY-NC-SA 3.0.
 """
 import os
 import re
-import sys
 import urllib.parse
 import urllib.request
 
@@ -41,12 +37,8 @@ def raw(title):
     return get(BASE + '/index.php?title=' + urllib.parse.quote(title) + '&action=raw')
 
 
-def gadget_css(module, skin='vector'):
-    return get(BASE + '/load.php?lang=en&only=styles&skin=%s&modules=%s' % (skin, module))
-
-
-def minerva_gadget_css(module):
-    return gadget_css(module, 'minerva')
+def gadget_css(module):
+    return get(BASE + '/load.php?lang=en&only=styles&skin=vector&modules=' + module)
 
 
 def localise(css):
@@ -89,14 +81,8 @@ def main():
         'Gadget-mcw-vector.css': [('MediaWiki:Vector.css', raw), ('MediaWiki:Vector-theme-dark.css', raw),
                            ('ext.gadget.darkmode', gadget_css), ('ext.gadget.stickyToc', gadget_css),
                            ('ext.gadget.sound-styles', gadget_css)],
-        'Gadget-mcw-minerva.css': [('MediaWiki:Minerva.css', raw), ('MediaWiki:Minerva-theme-dark.css', raw),
-                            ('ext.gadget.darkmode', minerva_gadget_css), ('ext.gadget.mobileNavbox', minerva_gadget_css),
-                            ('MediaWiki:Gadget-mobileSidebar.css', raw), ('ext.gadget.sound-styles', minerva_gadget_css)],
     }
-    only = set(sys.argv[1:])
     for out, sources in parts.items():
-        if only and out not in only:
-            continue
         chunks = ['/* Vendored from minecraft.wiki by tools/vendor_mcw_skin.py. Do not edit; rerun the script.\n'
                   ' * Source pages: %s. Licensed CC BY-NC-SA 3.0 by the Minecraft Wiki. */' % ', '.join(s for s, _ in sources)]
         for src, fn in sources:

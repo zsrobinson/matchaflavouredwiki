@@ -115,27 +115,6 @@ wfLoadSkin( 'MinervaNeue' );
 $wgDefaultSkin = 'vector';
 $wgVectorResponsive = true;
 
-# Mobile: MobileFrontend with the Minerva skin, as on minecraft.wiki. Phones get the mobile view
-# (collapsible sections, the lead paragraph above the infobox, a menu drawer); the static site
-# serves it by user agent from src/worker.js. Styled by minecraft.wiki's Minerva CSS
-# (Gadget-mcw-minerva.css) and MediaWiki:Minerva.css.
-wfLoadExtension( 'MobileFrontend' );
-$wgDefaultMobileSkin = 'minerva';
-$wgMFAutodetectMobileView = true;
-# Same URL for both views: the static export's canonical links and the Worker decide, not MF
-$wgMFNoindexPages = false;
-# minecraft.wiki keeps navboxes on mobile (restyled by its mobileNavbox CSS)
-$wgMFRemovableClasses = [ 'base' => [ '.nomobile' ], 'beta' => [] ];
-$wgMFEnableBeta = false;
-$wgMFEnableManifest = false;
-$wgMFEnableFontChanger = [ 'base' => false, 'beta' => false ];
-$wgMFEnableWikidataDescriptions = [ 'base' => false, 'beta' => false ];
-$wgMFAdvancedMobileContributions = false;
-# Dark mode is minecraft.wiki's wgl-theme-dark toggle (MediaWiki:Gadget-mfwShell.js), which also flips
-# Minerva's own night-mode class (skin-theme-clientpref-night) so the skin chrome follows it.
-$wgMinervaAlwaysShowLanguageButton = false;
-$wgMinervaShowCategories = [ 'base' => true, 'loggedin' => true, 'amc' => true ];
-
 # Extensions — the same parser-side set the reference wiki uses where bundled.
 wfLoadExtensions( [
 	'CategoryTree',
