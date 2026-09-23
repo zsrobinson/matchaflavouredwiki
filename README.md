@@ -45,8 +45,10 @@ The export includes:
 - **Pagefind** full-text search. The header search box is Pagefind's `<pagefind-searchbox>`
   Component UI, and `/search/?q=…` is the full results page with category filters and item icons.
 
-Deploy with Cloudflare Workers (static assets, no Worker script). The configuration is in
-`wrangler.jsonc`:
+Deploy with Cloudflare Workers. The configuration is in `wrangler.jsonc`: static assets from `dist/`
+behind a tiny Worker (`src/worker.js`). The site is served at **https://matchaflavou.red**, and
+`www.matchaflavou.red`, `matchaflavo.red` and `matchaflavoured.org` (plus their `www`) 301-redirect to it,
+keeping the path and query:
 
 ```sh
 python3 tools/export_static.py        # needs the local wiki running and built
@@ -56,7 +58,8 @@ npx wrangler deploy
 
 `.github/workflows/deploy.yml` does all of this on every push to `main`: it fetches the sources at
 the pinned commit, builds the wiki in Docker, checks it, exports it and runs `wrangler deploy`.
-Add the repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. Other static hosts
+Add the repository secrets `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN`. The token is a custom token with
+Account › Workers Scripts: Edit, plus Zone › Workers Routes: Edit, Zone: Read and DNS: Edit for the three zones. Other static hosts
 (Cloudflare Pages, Netlify, GitHub Pages) can serve `dist/` as is (`_redirects` and `404.html` are included).
 
 ## How it works

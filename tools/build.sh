@@ -4,6 +4,10 @@
 #   ./tools/build.sh --no-images  skip image upload (faster when only text changed)
 set -euo pipefail
 cd "$(dirname "$0")/.."
+# serialise with tools/sync.sh and the dev watcher (they share build/import.xml)
+mkdir -p build
+until mkdir build/.sync.lock 2>/dev/null; do sleep 1; done
+trap 'rmdir build/.sync.lock' EXIT
 
 python3 tools/extract.py
 python3 tools/images.py

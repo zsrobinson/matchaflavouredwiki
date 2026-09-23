@@ -27,6 +27,7 @@ from concurrent.futures import ThreadPoolExecutor
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import build_xml  # noqa: E402
+import seo  # noqa: E402
 
 
 def fetch(url, binary=False):
@@ -55,6 +56,9 @@ class Exporter:
         self.out = out
         self.assets = {}  # load.php url -> static path
         self.case_redirects = {}  # title -> target, for redirects that only change capitalisation
+        self.redirects = {}  # 'Old_title' -> '/w/Target#anchor' (served as 301 by the Worker)
+        self.indexed = {}  # title -> lastmod, for the sitemap
+        self.dates = seo.git_dates()
 
     # --- stylesheets from load.php -------------------------------------------------
     def static_css(self, href):
@@ -126,6 +130,7 @@ class Exporter:
             tgt = self.case_redirects.get(t)
             return 'href="%s%s"' % (href_for(tgt), m.group(2) or '') if tgt else m.group(0)
         doc = re.sub(r'href="/w/([^"#?]+)(#[^"]*)?"', fix, doc)
+        doc = doc.replace('href="/w/Matcha_Flavoured_Wiki"', 'href="/"')  # the main page is served at /
         # links a static site can't serve
         doc = re.sub(r'<li id="(?:t-|ca-(?!mfw-)|pt-|n-recentchanges|n-randompage)[^"]*"[^>]*>.*?</li>', '', doc, flags=re.S)
         doc = re.sub(r'href="/index\.php\?title=Special:Search[^"]*"', 'href="/search/"', doc)
@@ -141,22 +146,28 @@ class Exporter:
         doc = re.sub(r'<a href="/w/File:[^"]*" class="mw-file-description"[^>]*>(.*?)</a>', r'\1', doc, flags=re.S)
         return doc
 
-    def export_page(self, title, text):
+    def export_page(self, title, text, ns='Main'):
         if title in self.case_redirects:
             return 'case'  # served by link rewriting and the 404 fallback, not a file
         dest = page_path(self.out, title)
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         m = re.match(r'\s*#REDIRECT\s*\[\[([^\]|#]+)(#[^\]|]*)?', text, re.I)
         if m:
-            target = href_for(m.group(1).strip()) + (m.group(2) or '').replace(' ', '_')
-            with open(dest, 'w', encoding='utf-8') as f:
-                f.write('<!doctype html><html><head><meta charset="utf-8"><title>Redirect</title>'
-                        '<link rel="canonical" href="%s"><meta http-equiv="refresh" content="0; url=%s"></head>'
-                        '<body data-pagefind-ignore="all"><a href="%s">Redirect</a></body></html>' % (target, target, target))
+            # real 301 from the Worker (src/redirects.json), no stub file
+            self.redirects[url_title(title)] = href_for(m.group(1).strip()) + (m.group(2) or '').replace(' ', '_')
             return 'redirect'
-        doc = fetch(self.base + '/w/' + urllib.parse.quote(url_title(title)))
+        doc = self.rewrite(fetch(self.base + '/w/' + urllib.parse.quote(url_title(title))))
+        src, layer = seo.source_file(title, ns)
+        is_main = title == 'Matcha Flavoured Wiki'
+        info = {'layer': layer, 'lastmod': self.dates.get(src), 'categories': seo.categories(doc),
+                'image': seo.infobox_image(doc), 'is_main': is_main,
+                # generated pages (vanilla items, data-only pages) are thin: keep them out of the index
+                'noindex': layer == 'generated' and not is_main}
+        doc = seo.apply(doc, title, info)
+        if not info['noindex']:
+            self.indexed[title] = info['lastmod']
         with open(dest, 'w', encoding='utf-8') as f:
-            f.write(self.rewrite(doc))
+            f.write(doc)
         return 'page'
 
 
@@ -309,7 +320,7 @@ def main():
     def job(item):
         title, (ns, text, layer) = item
         try:
-            return ex.export_page(title, text)
+            return ex.export_page(title, text, ns)
         except Exception as e:
             print('!! %s: %s' % (title, e), file=sys.stderr)
             return 'error'
@@ -349,7 +360,8 @@ def main():
     root_redirect = ('<!doctype html><meta charset="utf-8"><title>Matcha Flavoured Wiki</title>'
                      '<meta http-equiv="refresh" content="0; url=/w/Matcha_Flavoured_Wiki">'
                      '<a href="/w/Matcha_Flavoured_Wiki">Matcha Flavoured Wiki</a>')
-    open(os.path.join(out, 'index.html'), 'w').write(root_redirect)
+    # the main page is served at / (its canonical URL); /w/Matcha_Flavoured_Wiki stays as an alias
+    shutil.copy(page_path(out, 'Matcha Flavoured Wiki'), os.path.join(out, 'index.html'))
     # 404 page: the main page's shell with a not-found message and a case-insensitive redirect
     nf = re.sub(r'(<div id="mw-content-text"[^>]*>).*?(<div[^>]*class="printfooter")',
                 lambda m: '<div id="mw-content-text"><p>There is no page with this title. Try the search box above.</p>' + m.group(2),
@@ -361,7 +373,8 @@ def main():
                     'for(var i=0;i<ts.length;i++){if(ts[i].toLowerCase()===want){location.replace("/w/"+encodeURIComponent(ts[i].replace(/ /g,"_")));return}}})})();</script></head>', 1)
     open(os.path.join(out, '404.html'), 'w', encoding='utf-8').write(nf)
     # host hints: Netlify/Cloudflare Pages redirects, and disable Jekyll on GitHub Pages
-    open(os.path.join(out, '_redirects'), 'w').write('/w/Main_Page  /w/Matcha_Flavoured_Wiki  301\n')
+    ex.redirects['Main_Page'] = '/w/Matcha_Flavoured_Wiki'
+    seo.write_site_files(out, ex.indexed, ex.redirects, titles)
     open(os.path.join(out, '.nojekyll'), 'w').close()
     # full-text search index (Pagefind); the component UI is served from /pagefind/
     import subprocess

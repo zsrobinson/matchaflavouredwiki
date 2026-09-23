@@ -88,12 +88,13 @@ def iso_cube(top, left, right, height=1.0):
                                 if 0 <= xi + dx < W and 0 <= yi + dy < W:
                                     cp[xi + dx, yi + dy] = c
     k = s * 0.95
+    h = k * 0.866  # true isometric: horizontal step is cos(30°) of the edge length (Minecraft's GUI block render)
     # top face: u -> down-right, v -> down-left
-    blit(top, (ox, oy), k, k * 0.5, -k, k * 0.5, 1.0)
+    blit(top, (ox, oy), h, k * 0.5, -h, k * 0.5, 1.0)
     # left face
-    blit(left, (ox - k * n, oy + k * n * 0.5), k, k * 0.5, 0, k, 0.8)
+    blit(left, (ox - h * n, oy + k * n * 0.5), h, k * 0.5, 0, k, 0.8)
     # right face
-    blit(right, (ox, oy + k * n), k, -k * 0.5, 0, k, 0.62)
+    blit(right, (ox, oy + k * n), h, -k * 0.5, 0, k, 0.62)
     bbox = canvas.getbbox()
     if bbox:
         canvas = canvas.crop(bbox)

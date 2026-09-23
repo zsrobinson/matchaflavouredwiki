@@ -1,5 +1,5 @@
 // Cloudflare Workers: static assets from dist/ behind a tiny Worker (src/worker.js) that
-// 301-redirects the alternate hostnames to https://matchaflavo.red.
+// 301-redirects the alternate hostnames to https://matchaflavou.red.
 // Build dist/ first: see README "Deploying". Then: npx wrangler deploy
 {
   "name": "matcha-flavoured-wiki",
@@ -15,6 +15,8 @@
     "not_found_handling": "404-page"
   },
   "routes": [
+    { "pattern": "matchaflavou.red", "custom_domain": true },
+    { "pattern": "www.matchaflavou.red", "custom_domain": true },
     { "pattern": "matchaflavo.red", "custom_domain": true },
     { "pattern": "www.matchaflavo.red", "custom_domain": true },
     { "pattern": "matchaflavoured.org", "custom_domain": true },
