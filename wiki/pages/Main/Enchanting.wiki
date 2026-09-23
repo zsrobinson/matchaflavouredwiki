@@ -73,7 +73,7 @@ A blessing is crafted by surrounding a Hell-Bound Book with themed ingredients. 
 |}
 
 === Ofuda ===
-The [[Mouthpiece]] (the pack's librarian) trades an [[Ofuda]], an enchanted book with its own prayer, for each [[Sacred texts|sacred text]] plus one or two [[Crystal Heart]]s. These are the only way to get {{MCW|Protection}} and {{MCW|Sharpness}} as a book, and the second way to get Efficiency and Mending.<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/2/quran.json}}</ref>
+The [[Mouthpiece]] (the pack's librarian) trades an [[Ofuda]], an enchanted book with its own prayer, for each [[Sacred texts|sacred text]] plus one or two [[Crystal Heart]]s. Apart from loot, these are the only source of {{MCW|Protection}} and {{MCW|Sharpness}}, and the only source of Efficiency and Mending besides the [[Prayer of Daedalus]] and the [[Prayer of Lu Ban]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/2/quran.json}}</ref>
 
 {| class="wikitable"
 ! Level !! Book traded !! Prayer !! Stored enchantments
@@ -100,16 +100,16 @@ Enchantments can still be found rather than crafted:
 Blessings are applied like any enchanted book: combine the item and the book in an anvil. The pack lowers the anvil cost multiplier of every vanilla enchantment to 1, the lowest value, so combining books costs few levels.<ref>{{Source|MF_datapack/data/minecraft/enchantment/mending.json}}</ref> The pack's own enchantments have an anvil cost of 0, except [[Frost Protection]] and [[Riposte]] (2).
 
 === Experience ===
-The player cannot keep {{MCW|Experience|experience}}. Every tick, the pack sets the experience level and points of each player to 0.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction}}</ref> After a player opens an anvil, the next change to their inventory gives them 100 levels and are exempt from the reset until a shared 31-second timer runs out, so anvil work never lacks levels.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/set_xp.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/check_anvil_interaction.mcfunction}}</ref> The timer restarts whenever any player's inventory changes, and the check that ends the exemption applies to all players at once.
+The player cannot keep {{MCW|Experience|experience}}. Every tick, the pack sets the experience level and points of each player to 0.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction}}</ref> After a player opens an anvil, the next change to their inventory gives them 100 levels and exempts them from the reset until a shared 31-second timer runs out, so anvil work never lacks levels.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/set_xp.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/check_anvil_interaction.mcfunction}}</ref> The timer restarts whenever any player's inventory changes, and the check that ends the exemption applies to all players at once.
 
 === Repair cost ===
 Whenever the player's inventory changes, every item in the main inventory and hotbar has its prior-work penalty ({{MCW|Anvil mechanics#Prior work penalty|repair cost}}) reset to 0, so the penalty never builds up with repeated anvil use.<ref>{{Source|MF_datapack/data/endless_repairs/function/reset_breakable_repair_cost.mcfunction}}</ref> This part of the pack is based on MiziraGamez's "Repair Cost Remover" data pack.<ref>{{Source|MF_datapack/data/endless_repairs/README.txt}}</ref>
 
 === Exclusivity ===
 Besides the vanilla rules, the pack adds some incompatibilities:
-* Silk Touch, Fortune and the [[Electrum equipment|electrum]] tool intrinsic are mutually exclusive.<ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/exclusive_set/mining.json}}</ref>
+* Silk Touch, Fortune and the [[Electrum equipment|electrum]] tool intrinsic are mutually exclusive.<ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/exclusive_set/mining.json}}</ref> The [[Adamant equipment|adamant]] tool intrinsic is exclusive with Silk Touch.<ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_mining.json}}</ref>
 * [[Slaughter]] is exclusive with the vanilla damage enchantments (Sharpness, Smite, Bane of Arthropods, Impaling, Density and Breach).
-* The [[intrinsic]] enchantments of alloy equipment (warding, [[Shakudo equipment|shakudo]], [[Adamant equipment|adamant]], electrum) are exclusive with each other.
+* The [[intrinsic]] enchantments of alloy equipment are exclusive with the other intrinsics for the same kind of item: the armor intrinsics (adamant, electrum, shakudo and the shakudo elytra) with each other, and the weapon intrinsics (adamant, shakudo and the four [[Warding]] levels) with each other.<ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_armor.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_weapon.json}}</ref>
 
 == Enchanting table ==
 The enchanting table's crafting recipe is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> The pack also replaces the <code>#minecraft:in_enchanting_table</code> tag with curses only, so a table obtained in other ways can only offer Curse of Binding or Curse of Vanishing.<ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/in_enchanting_table.json}}</ref> Breaking an enchanting table drops 2 [[diamond]]s, 4 {{MCW|obsidian}} and a Hell-Bound Book with no enchantments.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/enchanting_table.json}}</ref>

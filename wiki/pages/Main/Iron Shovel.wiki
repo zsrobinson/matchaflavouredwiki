@@ -2,43 +2,36 @@
 |renewable=Yes
 }}
 
-An '''iron shovel''' is the [[Iron equipment|iron]] [[Tools#Shovel|shovel]], crafted from [[Iron Ingot|iron ingots]]. It mines at speed 8 and has 500 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_shovel.json}}</ref>
+An '''iron shovel''' is the [[Iron equipment|iron]] [[Tools#Shovel|shovel]], crafted from an [[iron ingot]] and two sticks. At speed 8 it digs faster than the iron pickaxe or axe mine.
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
-
-=== Chest loot ===
+=== Loot ===
 {{Sources}}
 
 == Usage ==
 
-=== Mining ===
-
-It mines shovel blocks at speed 8 (vanilla: 6).
+=== Digging ===
+It breaks shovel blocks at speed 8 and has 500 durability, and it collects snowballs from snow.
 
 === Combat ===
-
-It deals 4.5 damage with an attack speed of 1.
+It deals {{Hp|4.5}} damage at an attack speed of 1.
 
 === Repairing ===
+It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Smelting and smithing ===
+{{Uses}}
 
-=== Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
+In a [[blast furnace]] it melts down into a single iron ingot, and at a [[smithing table]] it takes [[steel alloy]] to become its [[Steel equipment|steel]] counterpart.
 
 == History ==
 {{History|
-{{History line|0.6-alpha|Added recipe unlocks for iron equipment.}}
-{{History line|1.10|Iron shovels now drop snowballs from snow (newly made tools only).}}
+{{History line|1.10|Now drops snowballs from snow (newly made shovels only).}}
 }}
-
-== References ==
-{{reflist}}
 
 {{Navbox equipment}}
 [[Category:Tools]]

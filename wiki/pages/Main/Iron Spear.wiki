@@ -2,34 +2,28 @@
 |renewable=Yes
 }}
 
-An '''iron spear''' is the [[Iron equipment|iron]] [[spear]], crafted from [[Iron Ingot|iron ingots]]. It deals 3 damage at an attack speed of 1.053 and has 500 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_spear.json}}</ref>
+An '''iron spear''' is the [[Iron equipment|iron]] [[spear]], crafted from an [[iron ingot]] and two sticks. It is the base for the [[steel spear]].
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
-
-=== Chest loot ===
+=== Loot ===
 {{Sources}}
 
 == Usage ==
 
+=== Combat ===
+It deals {{Hp|3}} damage at an attack speed of 1.05 and has 500 durability, far more than the [[copper spear]]'s 190. Its charge and jab attacks work as in vanilla.
+
 === Repairing ===
+It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Smelting and smithing ===
+{{Uses}}
 
-=== Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
-
-== History ==
-{{History|
-{{History line|0.6-alpha|Added recipe unlocks for iron equipment.}}
-}}
-
-== References ==
-{{reflist}}
+In a [[blast furnace]] it melts down into a single iron ingot, and at a [[smithing table]] it takes [[steel alloy]] to become its [[Steel equipment|steel]] counterpart.
 
 {{Navbox equipment}}
 [[Category:Weapons]]

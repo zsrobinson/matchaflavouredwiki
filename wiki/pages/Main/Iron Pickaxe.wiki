@@ -2,41 +2,40 @@
 |renewable=Yes
 }}
 
-An '''iron pickaxe''' is the [[Iron equipment|iron]] [[Tools#Pickaxe|pickaxe]], crafted from [[Iron Ingot|iron ingots]]. It mines at speed 7 and has 500 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_pickaxe.json}}</ref>
+An '''iron pickaxe''' is the [[Iron equipment|iron]] [[Tools#Pickaxe|pickaxe]], crafted from three [[iron ingot]]s and two sticks. It is the first pickaxe that can harvest every ore in the pack, including diamond ore and [[native gold]], but not obsidian.
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
-
-=== Chest loot ===
+=== Loot ===
 {{Sources}}
 
 == Usage ==
 
 === Mining ===
+The iron pickaxe breaks pickaxe blocks at speed 7, one faster than the [[copper pickaxe]] and the vanilla iron pickaxe, and has 500 durability, twice vanilla's 250.
 
-It mines pickaxe blocks at speed 7 (vanilla: 6).
+Obsidian, crying obsidian and ender chests break at speed 3 and drop nothing.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/iron.json}}</ref> A [[diamond pickaxe]] (or an iron or [[steel dolabra]]) is needed to collect them.
 
-It mines every ore but cannot get drops from obsidian, crying obsidian or ender chests, which it breaks at speed 3.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/iron.json}}</ref>
+The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pickaxe blocks.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
 
 === Combat ===
-
-It deals 4 damage with an attack speed of 1.2.
+It deals {{Hp|4}} damage at an attack speed of 1.2.
 
 === Repairing ===
+It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Smelting and smithing ===
+{{Uses}}
 
-=== Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
+In a [[blast furnace]] it melts down into a single iron ingot, and at a [[smithing table]] it takes [[steel alloy]] to become its [[Steel equipment|steel]] counterpart.
 
 == History ==
 {{History|
-{{History line|0.6-alpha|Added recipe unlocks for iron equipment.}}
-{{History line|1.12.1-alpha|Iron pickaxes can no longer mine obsidian.}}
+{{History line|0.6-alpha|Added a recipe unlock.}}
+{{History line|1.12.1-alpha|Can no longer mine obsidian.}}
 }}
 
 == References ==

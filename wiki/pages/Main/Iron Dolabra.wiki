@@ -2,9 +2,7 @@
 |renewable=Yes
 }}
 
-An '''iron dolabra''' is the [[Iron equipment|iron]] [[dolabra]], crafted from [[Iron Ingot|iron ingots]]. It mines at speed 6 and has 500 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_dolabra.json}}</ref>
-
-As a [[dolabra]], it works as both a pickaxe and an axe, at a lower mining speed than the iron pickaxe or axe.
+An '''iron dolabra''' is the [[Iron equipment|iron]] [[dolabra]], a combined pickaxe and axe crafted from four [[iron ingot]]s and two sticks.
 
 == Obtaining ==
 
@@ -17,29 +15,27 @@ As a [[dolabra]], it works as both a pickaxe and an axe, at a lower mining speed
 == Usage ==
 
 === Mining ===
+It breaks pickaxe and axe blocks at speed 6, one slower than the [[iron pickaxe]] or [[iron axe]], and has 500 durability.
 
-It mines both pickaxe and axe blocks at speed 6.
+Unlike the iron pickaxe, it has no obsidian restriction, so it harvests obsidian, crying obsidian and ender chests at its normal speed.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_dolabra.json}}</ref> This makes it the cheapest way to collect obsidian, although the 1.12.1-alpha notes say only diamond, electrum and adamant tools can.
 
-Its tool rules have no obsidian restriction, so it mines obsidian with drops at its normal speed, although the [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] notes say only diamond, electrum and adamant tools can mine obsidian.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_dolabra.json}}</ref>
-
-The pack adds beds, candles, cactus and honeycomb blocks to the blocks axes mine quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-
-It deals 6 damage with an attack speed of 0.9.
+It deals {{Hp|6}} damage at an attack speed of 0.9.
 
 === Repairing ===
+It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Smelting and smithing ===
+{{Uses}}
 
-=== Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
+It melts down into an iron ingot. As an iron axe by item ID, it works as the base for the [[steel axe]] and [[steel dolabra]].
 
 == History ==
 {{History|
-{{History line|0.6-alpha|Added recipe unlocks for iron equipment.}}
-{{History line|1.03|The iron dolabra's real attack speed now matches its tooltip.}}
-{{History line|1.12.2|Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+{{History line|1.03|The real attack speed now matches the tooltip.}}
+{{History line|1.12.2|Dolabras began to shift from weapon hybrids to pure axe and pickaxe tools; the release notes say their damage and weapon intrinsics will be reduced over time.}}
 }}
 
 == References ==

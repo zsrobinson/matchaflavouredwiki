@@ -2,33 +2,35 @@
 |renewable=Yes
 }}
 
-An '''iron sword''' is the [[Iron equipment|iron]] [[Weapons#Sword|sword]], crafted from [[Iron Ingot|iron ingots]]. It deals 6 damage at an attack speed of 1.6 and has 500 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_sword.json}}</ref>
+An '''iron sword''' is the [[Iron equipment|iron]] [[Weapons#Sword|sword]], crafted from two [[iron ingot]]s and a stick. It deals {{Hp|6}} damage and is the base for the [[steel sword]], [[steel claymore]], [[silver sword]] and [[warding sword]].
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
-
-=== Chest loot ===
+=== Loot ===
 {{Sources}}
 
-The iron swords in [[Abbey]] barracks and tower chests are a different variant: they carry [[Anemos]] I and set only an attack damage modifier, so they have no attack cooldown (attack speed 4) even though their tooltip shows 1.6.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/barracks.json}}</ref>
+The iron swords in [[Abbey]] barracks and tower chests are a separate variant: they carry [[Anemos]] I and set only an attack damage modifier, so they have no attack cooldown even though their tooltip shows 1.6.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/barracks.json}}</ref>
 
 == Usage ==
 
+=== Combat ===
+It deals {{Hp|6}} damage at an attack speed of 1.6 and has 500 durability. It hits one harder than the [[copper sword]] and one softer than the [[diamond sword]].
+
 === Repairing ===
+It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Smelting and smithing ===
+{{Uses}}
 
-=== Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
+In a [[blast furnace]] it melts down into a single iron ingot, and at a [[smithing table]] it takes [[steel alloy]] to become its [[Steel equipment|steel]] counterpart.
 
 == History ==
 {{History|
-{{History line|0.6-alpha|Added recipe unlocks for iron equipment.}}
-{{History line|1.12.1-alpha|The iron sword's attack speed now matches its tooltip.}}
+{{History line|0.6-alpha|Added a recipe unlock.}}
+{{History line|1.12.1-alpha|The real attack speed now matches the tooltip.}}
 }}
 
 == References ==

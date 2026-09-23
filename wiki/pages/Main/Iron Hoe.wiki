@@ -2,41 +2,31 @@
 |renewable=Yes
 }}
 
-An '''iron hoe''' is the [[Iron equipment|iron]] [[Tools#Hoe|hoe]], crafted from [[Iron Ingot|iron ingots]]. It mines at speed 8 and has 500 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_hoe.json}}</ref>
+An '''iron hoe''' is the [[Iron equipment|iron]] [[Tools#Hoe|hoe]], crafted from two [[iron ingot]]s and two sticks.
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
-
-=== Chest loot ===
+=== Loot ===
 {{Sources}}
 
 == Usage ==
 
-=== Mining ===
-
-It mines hoe blocks at speed 8 (vanilla: 6).
-
-In Matcha Flavoured, hoes also mine wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+=== Farming and mining ===
+It breaks hoe blocks at speed 8, two faster than the [[copper hoe]], and has 500 durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Combat ===
-
-It deals 1 damage with an attack speed of 3.
+It deals {{Hp|1}} damage at an attack speed of 3.
 
 === Repairing ===
+It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Smelting and smithing ===
+{{Uses}}
 
-=== Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
-
-== History ==
-{{History|
-{{History line|0.6-alpha|Added recipe unlocks for iron equipment.}}
-}}
+In a [[blast furnace]] it melts down into a single iron ingot, and at a [[smithing table]] it takes [[steel alloy]] to become its [[Steel equipment|steel]] counterpart. With a [[smithing upgrade template]] it becomes a [[steel mattock]].
 
 == References ==
 {{reflist}}

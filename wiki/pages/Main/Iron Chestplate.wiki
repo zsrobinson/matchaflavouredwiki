@@ -2,39 +2,28 @@
 |renewable=Yes
 }}
 
-An '''iron chestplate''' is the [[Iron equipment|iron]] [[Armor#Chestplate|chestplate]], crafted from [[Iron Ingot|iron ingots]]. It gives 6 armor and has 350 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_chestplate.json}}</ref>
+An '''iron chestplate''' is the [[Iron equipment|iron]] [[Armor#Chestplate|chestplate]], crafted from eight [[iron ingot]]s. Its 6 armor points are two more than the [[copper chestplate]].
 
 == Obtaining ==
 
 === Crafting ===
 {{Recipes}}
 
-The vanilla recipe is blocked and replaced by the pack's own, which sets the stats shown in the infobox.
-
-=== Chest loot ===
+=== Loot ===
 {{Sources}}
 
 == Usage ==
 
 === Armor ===
-
-Worn, it gives 6 armor. The vanilla item gives 6 armor with 240 durability.
+It gives 6 armor and has 350 durability (vanilla: 240). Iron armor has 350 durability per piece and the vanilla armor values, 15 points for the full set. It is the base for [[Steel equipment|steel armor]].
 
 === Repairing ===
+It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-It is repaired in an [[anvil]] with [[Iron Ingot|iron ingots]]. The pack keeps the repair cost at zero, so it can be repaired indefinitely (see [[Repairing]]).
+=== Smelting and smithing ===
+{{Uses}}
 
-=== Smelting ingredient ===
-In a [[Blast Furnace|blast furnace]], it smelts into one [[Iron Ingot|iron ingot]].<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_ingot_from_blasting_iron_materials.json}}</ref>
-
-== History ==
-{{History|
-{{History line|0.4-alpha|Armor durability and protection were made consistent across tiers (leather < copper < gold, sturdy leather < iron, shakudo, hepatizon, steel < diamond, electrum < adamant). Added translation support for all armor and tools.}}
-{{History line|0.6-alpha|Added recipe unlocks for iron equipment.}}
-}}
-
-== References ==
-{{reflist}}
+It melts down into one iron ingot in a [[blast furnace]], and take [[steel alloy]] at a [[smithing table]].
 
 {{Navbox equipment}}
 [[Category:Armor]]

@@ -26,20 +26,20 @@ The pack also uses enchantments for the fixed [[intrinsic]] effects of equipment
 |}
 
 == Vanilla enchantments ==
-Every vanilla enchantment is still in the game. The pack sets the anvil cost multiplier of all of them to 1 (the five that were already 1 are unchanged), which makes combining books in an [[anvil]] cheap. The substantive changes are to [[Feather Falling]], [[Fortune]] and [[Looting]].<ref>{{Source|MF_datapack/data/minecraft/enchantment/feather_falling.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/enchantment/fortune.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/enchantment/looting.json}}</ref> "Random chest and fishing books" means books rolled from <code>#minecraft:on_random_loot</code> in dungeon, mineshaft, pyramid, stronghold, mansion, ocean ruin and ancient city chests and in fishing treasure (see [[Enchanting#Other sources]]).
+Every vanilla enchantment is still in the game. The pack sets the anvil cost multiplier of all of them to 1 (the five that were already 1 are unchanged), which makes combining books in an [[anvil]] cheap. The substantive changes are to [[Feather Falling]], [[Fortune]] and [[Looting]].<ref>{{Source|MF_datapack/data/minecraft/enchantment/feather_falling.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/enchantment/fortune.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/enchantment/looting.json}}</ref> "Random chest and fishing books" means books rolled from <code>#minecraft:on_random_loot</code> in dungeon, mineshaft, pyramid, stronghold, mansion, ocean ruin and ancient city chests and in fishing treasure (see [[Enchanting#Other sources]]). "Trial chamber vaults" means the fixed list of books in normal trial chamber reward vaults.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_rare.json}}</ref>
 
 {| class="wikitable sortable"
 ! Enchantment !! Max level !! Changes from vanilla !! Crafted or traded as !! Found as
 |-
 | <span id="Aqua Affinity"></span>{{MCW|Aqua Affinity}} || I || Anvil cost 4 → 1 || [[Prayer of Yamm]] (I) || Random chest and fishing books
 |-
-| <span id="Bane of Arthropods"></span>{{MCW|Bane of Arthropods}} || V || Anvil cost 2 → 1 || [[Elegy of Arachnae]] (V) || Random chest and fishing books
+| <span id="Bane of Arthropods"></span>{{MCW|Bane of Arthropods}} || V || Anvil cost 2 → 1 || [[Elegy of Arachnae]] (V) || Random chest and fishing books<br />Trial chamber vaults
 |-
 | <span id="Blast Protection"></span>{{MCW|Blast Protection}} || IV || Anvil cost 4 → 1 || ''None'' || Random chest and fishing books
 |-
 | <span id="Breach"></span>{{MCW|Breach}} || IV || Anvil cost 4 → 1 || [[Prayer of Ares]] (II) || Random chest and fishing books
 |-
-| <span id="Channeling"></span>{{MCW|Channeling}} || I || Anvil cost 8 → 1 || [[Prayer of The Light]] (I) || Random chest and fishing books
+| <span id="Channeling"></span>{{MCW|Channeling}} || I || Anvil cost 8 → 1 || [[Prayer of The Light]] (I) || Random chest and fishing books<br />Trial chamber vaults
 |-
 | <span id="Curse of Binding"></span>[[Curse of Binding]] || I || Anvil cost 8 → 1<br />'''Stored on every crafted Hell-Bound Book''' || ''None'' || Random chest and fishing books<br />Ominous vaults
 |-
@@ -49,9 +49,9 @@ Every vanilla enchantment is still in the game. The pack sets the anvil cost mul
 |-
 | <span id="Depth Strider"></span>{{MCW|Depth Strider}} || III || Anvil cost 4 → 1 || [[Prayer of Yamm]] (II) || Random chest and fishing books
 |-
-| <span id="Efficiency"></span>{{MCW|Efficiency}} || V || None || [[Prayer of Daedalus]] (III)<br />[[Ofuda]]: Prayer of The God-King (II) || Random chest and fishing books
+| <span id="Efficiency"></span>{{MCW|Efficiency}} || V || None || [[Prayer of Daedalus]] (III)<br />[[Ofuda]]: Prayer of The God-King (II) || Random chest and fishing books<br />Trial chamber vaults
 |-
-| <span id="Feather Falling"></span>[[Feather Falling]] || IV || Anvil cost 2 → 1<br />'''Fall damage reduction doubled''' || [[Elegy of Icarus]] (II) || Random chest and fishing books
+| <span id="Feather Falling"></span>[[Feather Falling]] || IV || Anvil cost 2 → 1<br />'''Fall damage reduction doubled''' || [[Elegy of Icarus]] (II) || Random chest and fishing books<br />Trial chamber vaults
 |-
 | <span id="Fire Aspect"></span>{{MCW|Fire Aspect}} || II || Anvil cost 4 → 1 || [[Prayer of Yama]] (I) || Random chest and fishing books
 |-
@@ -59,11 +59,11 @@ Every vanilla enchantment is still in the game. The pack sets the anvil cost mul
 |-
 | <span id="Flame"></span>{{MCW|Flame}} || I || Anvil cost 4 → 1 || [[Prayer of Yama]] (I) || Random chest and fishing books
 |-
-| <span id="Fortune"></span>[[Fortune]] || I || Anvil cost 4 → 1<br />'''Maximum level III → I'''<br />'''Exclusive with the electrum tool intrinsic''' || [[Prayer of Midas]] (I) || Random chest and fishing books
+| <span id="Fortune"></span>[[Fortune]] || I || Anvil cost 4 → 1<br />'''Maximum level III → I'''<br />'''Exclusive with the electrum tool intrinsic''' || [[Prayer of Midas]] (I) || Random chest and fishing books<br />Trial chamber vaults
 |-
 | <span id="Frost Walker"></span>{{MCW|Frost Walker}} || II || Anvil cost 4 → 1 || [[Prayer of Demeter]] (II) || Random chest and fishing books
 |-
-| <span id="Impaling"></span>{{MCW|Impaling}} || V || Anvil cost 4 → 1 || [[Prayer of Apollo]] (III) || Random chest and fishing books
+| <span id="Impaling"></span>{{MCW|Impaling}} || V || Anvil cost 4 → 1 || [[Prayer of Apollo]] (III) || Random chest and fishing books<br />Trial chamber vaults
 |-
 | <span id="Infinity"></span>{{MCW|Infinity}} || I || Anvil cost 8 → 1 || [[Prayer of Paris]] (I) || Random chest and fishing books
 |-
@@ -71,7 +71,7 @@ Every vanilla enchantment is still in the game. The pack sets the anvil cost mul
 |-
 | <span id="Looting"></span>[[Looting]] || III || Anvil cost 4 → 1<br />'''Also applies to shears''' || [[Prayer of Midas]] (III) || Random chest and fishing books
 |-
-| <span id="Loyalty"></span>{{MCW|Loyalty}} || III || Anvil cost 2 → 1 || [[Prayer of Glaucus]] (I)<br />[[Ofuda]]: Prayer of Exodus (III) || Random chest and fishing books
+| <span id="Loyalty"></span>{{MCW|Loyalty}} || III || Anvil cost 2 → 1 || [[Prayer of Glaucus]] (I)<br />[[Ofuda]]: Prayer of Exodus (III) || Random chest and fishing books<br />Trial chamber vaults
 |-
 | <span id="Luck of the Sea"></span>{{MCW|Luck of the Sea}} || III || Anvil cost 4 → 1 || [[Prayer of Glaucus]] (III) || Random chest and fishing books
 |-
@@ -79,7 +79,7 @@ Every vanilla enchantment is still in the game. The pack sets the anvil cost mul
 |-
 | <span id="Lure"></span>{{MCW|Lure}} || III || Anvil cost 4 → 1 || [[Prayer of Glaucus]] (III) || Random chest and fishing books
 |-
-| <span id="Mending"></span>[[Mending]] || I || Anvil cost 4 → 1 || [[Prayer of Lu Ban]] (I)<br />[[Ofuda]]: Prayer of Belial (I) || Random chest and fishing books
+| <span id="Mending"></span>[[Mending]] || I || Anvil cost 4 → 1 || [[Prayer of Lu Ban]] (I)<br />[[Ofuda]]: Prayer of Belial (I) || Random chest and fishing books<br />Trial chamber vaults
 |-
 | <span id="Multishot"></span>{{MCW|Multishot}} || I || Anvil cost 4 → 1 || [[Prayer of Artemis]] (I) || Random chest and fishing books
 |-
@@ -97,11 +97,11 @@ Every vanilla enchantment is still in the game. The pack sets the anvil cost mul
 |-
 | <span id="Respiration"></span>{{MCW|Respiration}} || III || Anvil cost 4 → 1 || [[Prayer of Yamm]] (II) || Random chest and fishing books
 |-
-| <span id="Riptide"></span>{{MCW|Riptide}} || III || Anvil cost 4 → 1 || [[Prayer of Yamm]] (I) || Random chest and fishing books
+| <span id="Riptide"></span>{{MCW|Riptide}} || III || Anvil cost 4 → 1 || [[Prayer of Yamm]] (I) || Random chest and fishing books<br />Trial chamber vaults
 |-
-| <span id="Sharpness"></span>{{MCW|Sharpness}} || V || None || [[Ofuda]]: Prayer of Samyaza (III) || Random chest and fishing books
+| <span id="Sharpness"></span>{{MCW|Sharpness}} || V || None || [[Ofuda]]: Prayer of Samyaza (III) || Random chest and fishing books<br />Trial chamber vaults
 |-
-| <span id="Silk Touch"></span>[[Silk Touch]] || I || Anvil cost 8 → 1<br />'''Exclusive with the electrum tool intrinsic''' || [[Prayer of Eros]] (I) || Random chest and fishing books
+| <span id="Silk Touch"></span>[[Silk Touch]] || I || Anvil cost 8 → 1<br />'''Exclusive with the electrum tool intrinsic''' || [[Prayer of Eros]] (I) || Random chest and fishing books<br />Trial chamber vaults
 |-
 | <span id="Smite"></span>{{MCW|Smite}} || V || Anvil cost 2 → 1 || [[Prayer of The Light]] (IV)<br />[[Prayer of Man]] (II) || Random chest and fishing books
 |-
@@ -118,7 +118,7 @@ Every vanilla enchantment is still in the game. The pack sets the anvil cost mul
 | <span id="Wind Burst"></span>{{MCW|Wind Burst}} || III || Anvil cost 4 → 1 || [[Prayer of Aeolus]] (I) || —
 |}
 
-Blast Protection, Projectile Protection, Thorns, Sweeping Edge, Quick Charge and Curse of Vanishing have no blessing or trade, so they can only be found. Protection and Sharpness are only traded, as Ofuda.
+Blast Protection, Projectile Protection, Thorns, Sweeping Edge, Quick Charge and Curse of Vanishing have no blessing or trade, so they can only be found. Protection and Sharpness have no blessing: apart from loot, they come only from [[Ofuda]].
 
 == Generated data ==
 The table below is generated from the pack's enchantment files. It also lists the intrinsic enchantments, whose names are the tooltip glyphs they show in game, and five enchantments left in the old <code>main</code> namespace. Those exist only so that items from versions before {{Version|1.12.2}} can be converted: holding or wearing an item with a <code>main:</code> enchantment replaces it with the <code>matcha:</code> version.<ref>{{Source|MF_datapack/data/main/README.txt}}</ref><ref>{{Source|MF_datapack/data/main/item_modifier/update_reach.json}}</ref>
