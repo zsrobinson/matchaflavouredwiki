@@ -71,6 +71,16 @@ Read `wiki/STYLE.md`, `wiki/AGENT_BRIEF.md` and `wiki/PAGES.md` first; they are 
 - Add newly found pack bugs to "Known bugs".
 - Sources are only the pack's code, its release notes and the developer's videos. Never other wikis.
 
+## Step 4b: coverage checks (from the competitor audit, wiki/AUDIT.md)
+- Every transcript in `sources/transcripts/` is cited at least once (`grep -rl "<video id>" wiki/pages`).
+  If one isn't, mine it for design reasoning and history.
+- New kinds of source files: `git -C source/matcha-flavoured diff --stat <from>..HEAD` shows a directory
+  that `tools/extract.py` doesn't read (as `texts/` splash texts once was)? Extend the extractor.
+- New tooltip glyphs in the lang file or lore get a name in `Template:G` and a row on the "Tooltip" page.
+- New progression steps (new tutorial advancements, new tiers) are reflected in "Guide for new players"
+  and "Progression".
+- New visible advancements get an anchor and a redirect, as the existing ones have (see "Advancements").
+
 ## Step 5: record, commit, pull request
 ```sh
 python3 tools/check_upstream.py --record          # the wiki now matches upstream

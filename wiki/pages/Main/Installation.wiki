@@ -27,6 +27,21 @@ Place the datapack in the world's <code>datapacks</code> folder and have players
 == Updating ==
 Replace both the datapack and resource pack files. Seeing a name such as <code>item.kleispack.filler</code> means only the datapack was updated. Items from before 1.12.2 may need <code>/trigger update_item</code>. See [[Updating items]].
 
+== Troubleshooting ==
+{| class="wikitable"
+! Symptom !! Likely cause
+|-
+| No "Matcha Flavoured is now loaded" message in chat || The datapack is not enabled in this world. The message is printed by the pack's load function, so it appears on every world load and <code>/reload</code> once the datapack is active.<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction}}</ref> See [[#Existing world]].
+|-
+| The message appears, but items show plain vanilla textures or raw names such as <code>item.kleispack.…</code> || The resource pack is not active. Names and textures come from the resource pack, so both halves are needed.
+|-
+| Textures work, but the pack's recipes, items and advancements are missing || Only the resource pack is installed; add the datapack to the world.
+|-
+| Mobs behave differently from what the wiki describes || The pack reads the [[difficulty]] only when it loads. Reload the world or run <code>/reload</code> after changing it.
+|-
+| Everything works, but it is unclear what to do next || See [[Guide for new players]] and the [[advancements]].
+|}
+
 == References ==
 {{reflist}}
 

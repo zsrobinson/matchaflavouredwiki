@@ -13,7 +13,8 @@ Matcha Flavoured · Guide for new players · Progression · Installation · Chan
 Renamed items · Removed features · Version history · Matcha Flavoured 0.2-alpha … Matcha Flavoured 1.12.2
 (one page per release: 0.2-alpha, 0.3-alpha, 0.4-alpha, 0.5-alpha, 0.6-alpha, 0.7-alpha, 1.0, 1.01,
 1.02, 1.03, 1.10, 1.11, 1.12, 1.12.1-alpha, 1.12.2) · Upcoming features · Credits ·
-Multiplayer · Updating items (the /trigger update_item system) · Advancements ·
+Multiplayer · Updating items (the /trigger update_item system) · Tooltip (the symbol legend) ·
+Splash texts · Advancements ·
 Advancements/Tutorial, Advancements/Mechanics, Advancements/Hell, Advancements/End,
 Advancements/Recipes (as needed by the tab structure) · Matcha Flavoured Wiki:About ·
 Matcha Flavoured Wiki:Contributing

@@ -1,0 +1,108 @@
+{{Vanilla|Tooltip}}
+The '''tooltip''' of a [[Matcha Flavoured]] item is rewritten to be read at a glance. The pack hides the vanilla attribute lines ("When in Main Hand: …") and replaces them with short lore lines that start with a symbol, such as {{G|Attack damage}} 6 or {{G|Armor}} 3.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_helmet.json}}</ref> The symbols are characters of the resource pack's font, drawn in <code>font/custom_emojis.png</code>.<ref>{{Source|MF_resourcepack/assets/minecraft/font/default.json}}</ref> This page lists what each symbol means.
+
+== Equipment stats ==
+Weapons, tools and armor list their stats as dark green lines. Each is a symbol followed by a number.<ref name="lang">{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+{| class="wikitable"
+! Symbol !! Meaning !! Example
+|-
+| {{G|Attack damage|size=16px}} || Attack damage || [[Copper Sword|copper sword]]
+|-
+| {{G|Attack speed|size=16px}} || Attack cooldown, in seconds between full-strength hits || weapons
+|-
+| {{G|Mining speed|size=16px}} || Mining speed || tools
+|-
+| {{G|Armor|size=16px}} || Armor points || armor
+|-
+| {{G|Toughness|size=16px}} || Armor toughness || [[Diamond equipment|diamond]] and better armor
+|-
+| {{G|Knockback resistance|size=16px}} || Knockback resistance || [[Steel equipment|steel]] and [[Adamant equipment|adamant]] armor
+|-
+| {{G|Knockback|size=16px}} || Extra attack knockback || steel weapons
+|-
+| {{G|Speed|size=16px}} || Movement speed while held or worn || [[Hepatizon equipment|hepatizon]] equipment
+|-
+| {{G|Reach|size=16px}} || Extra interaction range || [[Butcher's Knife|butcher's knife]]; the [[crook]]'s line is broken, see [[Known bugs]]
+|-
+| {{G|Safe fall distance|size=16px}} || Extra safe fall distance || [[Leather armor|leather]] and [[Sturdy leather armor|sturdy leather]] armor
+|-
+| {{G|Step height|size=16px}} || Extra step height || sturdy leather boots
+|-
+| {{G|Throwable|size=16px}} || The item can be thrown || [[Pickled Warped Fungus|pickled fungi]] and [[Bubbling Mead|bubbling mead]]
+|}
+[[Claymore]]s add "When Blocking:" and percentages for "Melee Blocking" and "Projectile Blocking". The last lines, "Repaired with:" and an item name, give the material an [[anvil]] accepts for [[repairing]].
+
+== Intrinsics ==
+Lines in color below the stats are [[intrinsic]] enchantments, which the pack stores on the item and shows by symbol instead of by name.<ref name="lang" /> "∞" means the effect lasts as long as the item is worn or held; a number is a level; a time in brackets is how often the effect repeats.
+{| class="wikitable"
+! Symbol !! Meaning !! Found on
+|-
+| {{G|Warding|size=16px}} 1–3 || [[Warding]] level || [[Warding Sword|warding sword]], [[Warding Shield|warding shield]], [[jewelry]]
+|-
+| {{G|Electrum|size=16px}} +1 || One more level of warding per piece || [[Electrum equipment|electrum]] armor
+|-
+| {{G|Apotropaic|size=16px}} Max || [[Apotropaic]]: maximum warding || full electrum set
+|-
+| {{G|Magic protection|size=16px}} 8 / 20 || [[Magic protection]] || [[Shakudo equipment|shakudo]] armor (8), [[Elytra#Shakudo Elytra|shakudo elytra]] (20)
+|-
+| {{G|Cleanse|size=16px}} Cleanses: … || [[Cleanse]]: removes the listed effects || shakudo armor
+|-
+| {{G|Half heart|size=16px}} {{G|Cooldown|size=16px}} (00:30) || Heals half a heart every 30 seconds; the set bonus line shortens the interval || shakudo armor
+|-
+| {{G|Health|size=16px}}{{G|Health|size=16px}} {{G|Cooldown|size=16px}} (00:30) || [[Divinity]]: 2 hearts of Absorption every 30 seconds || full adamant or electrum set
+|-
+| {{G|Doom|size=16px}} 3, {{G|Doom set|size=16px}} 4 || [[Doom]] per piece and as a set bonus || adamant armor
+|-
+| {{G|Health|size=16px}}{{G|Attack damage|size=16px}} || Life steal: regeneration after each hit || shakudo weapons
+|-
+| {{G|Weakness|size=16px}} || Inflicts Weakness II on hit || adamant weapons and axe
+|-
+| {{G|Smelting|size=16px}} || Smelts mined blocks || adamant tools
+|-
+| {{G|Fortune|size=16px}} || Fortune III || electrum tools
+|-
+| {{G|Health|size=16px}} ∞, {{G|Mining speed|size=16px}} ∞, {{G|Fire|size=16px}} ∞, {{G|Water|size=16px}} ∞ || Constant Regeneration, Haste, Fire Resistance, Conduit Power || [[jewelry]]
+|}
+"Set Bonus:" introduces lines that need all four armor pieces, and "Per Equipment Bonus:" lines that stack with each piece worn. See [[Set bonus]]. "Elytra Bonus:" marks the bonus of the [[Elytra#Shakudo Elytra|shakudo elytra]].
+
+== Food and potions ==
+The first line of a [[food]]'s tooltip shows the healing as red hearts, one heart per 2 health points. The lines below list the effects with their symbol and duration, for example {{G|Armor}} Resistance (20:00) on a [[Pumpkin Curry|pumpkin curry]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref> Several effects share a symbol:
+{| class="wikitable"
+! Symbol !! Effects
+|-
+| {{G|Armor|size=16px}} || Resistance
+|-
+| {{G|Attack damage|size=16px}} || Strength
+|-
+| {{G|Mining speed|size=16px}} || Haste
+|-
+| {{G|Speed|size=16px}} || Speed, written as "+20%" or "+40%"
+|-
+| {{G|Darkness|size=16px}} || Darkness, Blindness
+|-
+| {{G|Poison|size=16px}} || Poison, Wither
+|-
+| {{G|Water|size=16px}} || Water Breathing (shown as "Gills"), Conduit Power
+|-
+| {{G|Fire|size=16px}} || Fire Resistance
+|-
+| {{G|Luck|size=16px}} || Luck, Bad Luck
+|-
+| {{G|Night vision|size=16px}} {{G|Invisibility|size=16px}} {{G|Weakness|size=16px}} {{G|Slowness|size=16px}} {{G|Jump boost|size=16px}} {{G|Levitation|size=16px}} {{G|Slow falling|size=16px}} {{G|Nausea|size=16px}} || Night Vision, Invisibility, Weakness, Slowness, Jump Boost, Levitation, Slow Falling, Nausea
+|-
+| {{G|Glowing|size=16px}} {{G|Weaving|size=16px}} {{G|Oozing|size=16px}} {{G|Infested|size=16px}} {{G|Wind charged|size=16px}} {{G|Dolphin's grace|size=16px}} {{G|Aura|size=16px}} || Glowing, Weaving, Oozing, Infested, Wind Charged, Dolphin's Grace, [[Aura]]
+|}
+
+== Advancements and chat ==
+In [[advancements]], {{G|Obol}} is one [[obol]] of reward and {{G|Broken heart}} marks a milestone that lowers the player's minimum hearts; see [[Advancements#Rewards]]. {{G|Matcha}} starts the message "Matcha Flavoured is now loaded" shown when the datapack loads.<ref name="lang" />
+
+== See also ==
+* [[Intrinsic]]
+* [[Set bonus]]
+* [[Food]]
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Resource pack features]]
