@@ -5,18 +5,18 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 66.2% || biome: #minecraft:saltwater_warm
+| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 68.5% || only in [[Fishing#Warm saltwater|warm saltwater biomes]]
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 66.2% || biome: #minecraft:saltwater_hot
+| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 68.5% || only in [[Fishing#Hot saltwater|hot saltwater biomes]]
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 66.2% || biome: #minecraft:saltwater_warm
+| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 68.5% || only in [[Fishing#Warm saltwater|warm saltwater biomes]]
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 66.2% || biome: #minecraft:saltwater_hot
+| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 68.5% || only in [[Fishing#Hot saltwater|hot saltwater biomes]]
 |-
 | Tropical fish <small>({{Source|vanilla:loot_table/entities/tropical_fish.json|entities/tropical_fish}})</small> || 1 || 100% || 
 |}
@@ -25,10 +25,8 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || biome: #minecraft:saltwater_warm
+| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || only in [[Fishing#Warm saltwater|warm saltwater biomes]]
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || biome: #minecraft:saltwater_hot
-|-
-| Fishing / fish <small>({{Source|vanilla:loot_table/gameplay/fishing/fish.json|gameplay/fishing/fish}})</small> || 1 || 2.00% || 
+| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || only in [[Fishing#Hot saltwater|hot saltwater biomes]]
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

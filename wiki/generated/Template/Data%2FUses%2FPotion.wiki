@@ -1,288 +1,217 @@
 <includeonly>{| class="wikitable recipe-table mw-collapsible"
-! Name !! Ingredients !! Recipe
+! Name !! Ingredients
 |-
 | [[Black Concrete]]
-| [[Potion]] +<br />8 × [[Black Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Black Concrete Powder|C1=Black Concrete Powder|A2=Black Concrete Powder|B2=Black Concrete Powder|C2=Black Concrete Powder|A3=Black Concrete Powder|B3=Black Concrete Powder|C3=Black Concrete Powder|Output=Black Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/black_concrete_from_concrete_powder.json|matcha:crafting/black_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Black Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/black_concrete_from_concrete_powder.json|matcha:crafting/black_concrete_from_concrete_powder}}</small>
 |-
 | [[Blue Concrete]]
-| [[Potion]] +<br />8 × [[Blue Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Blue Concrete Powder|C1=Blue Concrete Powder|A2=Blue Concrete Powder|B2=Blue Concrete Powder|C2=Blue Concrete Powder|A3=Blue Concrete Powder|B3=Blue Concrete Powder|C3=Blue Concrete Powder|Output=Blue Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/blue_concrete_from_concrete_powder.json|matcha:crafting/blue_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Blue Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/blue_concrete_from_concrete_powder.json|matcha:crafting/blue_concrete_from_concrete_powder}}</small>
 |-
 | [[Brown Concrete]]
-| [[Potion]] +<br />8 × [[Brown Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Brown Concrete Powder|C1=Brown Concrete Powder|A2=Brown Concrete Powder|B2=Brown Concrete Powder|C2=Brown Concrete Powder|A3=Brown Concrete Powder|B3=Brown Concrete Powder|C3=Brown Concrete Powder|Output=Brown Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/brown_concrete_from_concrete_powder.json|matcha:crafting/brown_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Brown Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/brown_concrete_from_concrete_powder.json|matcha:crafting/brown_concrete_from_concrete_powder}}</small>
 |-
 | [[Clay]]
-| [[Potion]] +<br />8 × [[Mud]]
-| {{Crafting|A1=Potion|A2=Mud|A3=Mud|B1=Mud|B2=Mud|B3=Mud|C1=Mud|C2=Mud|C3=Mud|Output=Clay,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clay_from_mud_and_potion.json|matcha:crafting/clay_from_mud_and_potion}}</small>
+| [[Potion]] +<br />8 × [[Mud]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clay_from_mud_and_potion.json|matcha:crafting/clay_from_mud_and_potion}}</small>
 |-
 | [[Hyacinth]]
-| [[Hyacinth]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Hyacinth|B1=Potion|C1=Bone Meal|Output=Hyacinth,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_allium.json|matcha:crafting/clone_allium}}</small>
+| [[Hyacinth]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_allium.json|matcha:crafting/clone_allium}}</small>
 |-
 | [[Azure Bluet]]
-| [[Azure Bluet]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Azure Bluet|B1=Potion|C1=Bone Meal|Output=Azure Bluet,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_azure_bluet.json|matcha:crafting/clone_azure_bluet}}</small>
+| [[Azure Bluet]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_azure_bluet.json|matcha:crafting/clone_azure_bluet}}</small>
 |-
 | [[Big Dripleaf]]
-| [[Big Dripleaf]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Big Dripleaf|B1=Potion|C1=Bone Meal|Output=Big Dripleaf,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_big_dripleaf.json|matcha:crafting/clone_big_dripleaf}}</small>
+| [[Big Dripleaf]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_big_dripleaf.json|matcha:crafting/clone_big_dripleaf}}</small>
 |-
 | [[Blue Orchid]]
-| [[Blue Orchid]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Blue Orchid|B1=Potion|C1=Bone Meal|Output=Blue Orchid,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_blue_orchid.json|matcha:crafting/clone_blue_orchid}}</small>
+| [[Blue Orchid]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_blue_orchid.json|matcha:crafting/clone_blue_orchid}}</small>
 |-
 | [[Closed Eyeblossom]]
-| [[Closed Eyeblossom]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Closed Eyeblossom|B1=Potion|C1=Bone Meal|Output=Closed Eyeblossom,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_closed_eyeblossom.json|matcha:crafting/clone_closed_eyeblossom}}</small>
+| [[Closed Eyeblossom]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_closed_eyeblossom.json|matcha:crafting/clone_closed_eyeblossom}}</small>
 |-
 | [[Cornflower]]
-| [[Cornflower]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Cornflower|B1=Potion|C1=Bone Meal|Output=Cornflower,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_cornflower.json|matcha:crafting/clone_cornflower}}</small>
+| [[Cornflower]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_cornflower.json|matcha:crafting/clone_cornflower}}</small>
 |-
 | [[Dandelion]]
-| [[Dandelion]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Dandelion|B1=Potion|C1=Bone Meal|Output=Dandelion,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_dandelion.json|matcha:crafting/clone_dandelion}}</small>
+| [[Dandelion]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_dandelion.json|matcha:crafting/clone_dandelion}}</small>
 |-
 | [[Lily of the Valley]]
-| [[Lily of the Valley]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Lily of the Valley|B1=Potion|C1=Bone Meal|Output=Lily of the Valley,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_lily_of_the_valley.json|matcha:crafting/clone_lily_of_the_valley}}</small>
+| [[Lily of the Valley]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_lily_of_the_valley.json|matcha:crafting/clone_lily_of_the_valley}}</small>
 |-
 | [[Lily Pad]]
-| [[Lily Pad]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Lily Pad|B1=Potion|C1=Bone Meal|Output=Lily Pad,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_lily_pad.json|matcha:crafting/clone_lily_pad}}</small>
+| [[Lily Pad]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_lily_pad.json|matcha:crafting/clone_lily_pad}}</small>
 |-
 | [[Open Eyeblossom]]
-| [[Open Eyeblossom]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Open Eyeblossom|B1=Potion|C1=Bone Meal|Output=Open Eyeblossom,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_open_eyeblossom.json|matcha:crafting/clone_open_eyeblossom}}</small>
+| [[Open Eyeblossom]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_open_eyeblossom.json|matcha:crafting/clone_open_eyeblossom}}</small>
 |-
 | [[Orange Tulip]]
-| [[Orange Tulip]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Orange Tulip|B1=Potion|C1=Bone Meal|Output=Orange Tulip,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_orange_tulip.json|matcha:crafting/clone_orange_tulip}}</small>
+| [[Orange Tulip]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_orange_tulip.json|matcha:crafting/clone_orange_tulip}}</small>
 |-
 | [[Oxeye Daisy]]
-| [[Oxeye Daisy]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Oxeye Daisy|B1=Potion|C1=Bone Meal|Output=Oxeye Daisy,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_oxeye_daisy.json|matcha:crafting/clone_oxeye_daisy}}</small>
+| [[Oxeye Daisy]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_oxeye_daisy.json|matcha:crafting/clone_oxeye_daisy}}</small>
 |-
 | [[Pink Tulip]]
-| [[Pink Tulip]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Pink Tulip|B1=Potion|C1=Bone Meal|Output=Pink Tulip,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_pink_tulip.json|matcha:crafting/clone_pink_tulip}}</small>
+| [[Pink Tulip]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_pink_tulip.json|matcha:crafting/clone_pink_tulip}}</small>
 |-
 | [[Poppy]]
-| [[Poppy]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Poppy|B1=Potion|C1=Bone Meal|Output=Poppy,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_poppy.json|matcha:crafting/clone_poppy}}</small>
+| [[Poppy]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_poppy.json|matcha:crafting/clone_poppy}}</small>
 |-
 | [[Red Tulip]]
-| [[Red Tulip]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Red Tulip|B1=Potion|C1=Bone Meal|Output=Red Tulip,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_red_tulip.json|matcha:crafting/clone_red_tulip}}</small>
+| [[Red Tulip]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_red_tulip.json|matcha:crafting/clone_red_tulip}}</small>
 |-
 | [[Small Dripleaf]]
-| [[Small Dripleaf]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Small Dripleaf|B1=Potion|C1=Bone Meal|Output=Small Dripleaf,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_small_dripleaf.json|matcha:crafting/clone_small_dripleaf}}</small>
+| [[Small Dripleaf]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_small_dripleaf.json|matcha:crafting/clone_small_dripleaf}}</small>
 |-
 | [[Spore Blossom]]
-| [[Spore Blossom]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Spore Blossom|B1=Potion|C1=Bone Meal|Output=Spore Blossom,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_spore_blossom.json|matcha:crafting/clone_spore_blossom}}</small>
+| [[Spore Blossom]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_spore_blossom.json|matcha:crafting/clone_spore_blossom}}</small>
 |-
 | [[White Tulip]]
-| [[White Tulip]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=White Tulip|B1=Potion|C1=Bone Meal|Output=White Tulip,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_white_tulip.json|matcha:crafting/clone_white_tulip}}</small>
+| [[White Tulip]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_white_tulip.json|matcha:crafting/clone_white_tulip}}</small>
 |-
 | [[Wither Rose]]
-| [[Wither Rose]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Wither Rose|B1=Potion|C1=Bone Meal|Output=Wither Rose,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_wither_rose.json|matcha:crafting/clone_wither_rose}}</small>
+| [[Wither Rose]] +<br />[[Potion]] +<br />[[Bone Meal]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_wither_rose.json|matcha:crafting/clone_wither_rose}}</small>
 |-
 | [[Cyan Concrete]]
-| [[Potion]] +<br />8 × [[Cyan Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Cyan Concrete Powder|C1=Cyan Concrete Powder|A2=Cyan Concrete Powder|B2=Cyan Concrete Powder|C2=Cyan Concrete Powder|A3=Cyan Concrete Powder|B3=Cyan Concrete Powder|C3=Cyan Concrete Powder|Output=Cyan Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cyan_concrete_from_concrete_powder.json|matcha:crafting/cyan_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Cyan Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cyan_concrete_from_concrete_powder.json|matcha:crafting/cyan_concrete_from_concrete_powder}}</small>
 |-
 | [[Exposed Chiseled Copper]]
-| [[Chiseled Copper]] +<br />[[Potion]]
-| {{Crafting|A1=Chiseled Copper|B1=Potion|Output=Exposed Chiseled Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_chiseled_copper_from_patina.json|matcha:crafting/exposed_chiseled_copper_from_patina}}</small>
+| [[Chiseled Copper]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_chiseled_copper_from_patina.json|matcha:crafting/exposed_chiseled_copper_from_patina}}</small>
 |-
 | [[Exposed Copper Bars]]
-| [[Copper Bars]] +<br />[[Potion]]
-| {{Crafting|A1=Copper Bars|B1=Potion|Output=Exposed Copper Bars|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_bars_from_patina.json|matcha:crafting/exposed_copper_bars_from_patina}}</small>
+| [[Copper Bars]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_bars_from_patina.json|matcha:crafting/exposed_copper_bars_from_patina}}</small>
 |-
 | [[Exposed Copper Chain]]
-| [[Copper Chain]] +<br />[[Potion]]
-| {{Crafting|A1=Copper Chain|B1=Potion|Output=Exposed Copper Chain|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_chain_from_patina.json|matcha:crafting/exposed_copper_chain_from_patina}}</small>
+| [[Copper Chain]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_chain_from_patina.json|matcha:crafting/exposed_copper_chain_from_patina}}</small>
 |-
 | [[Exposed Copper Door]]
-| [[Copper Door]] +<br />[[Potion]]
-| {{Crafting|A1=Copper Door|B1=Potion|Output=Exposed Copper Door|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_door_from_patina.json|matcha:crafting/exposed_copper_door_from_patina}}</small>
+| [[Copper Door]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_door_from_patina.json|matcha:crafting/exposed_copper_door_from_patina}}</small>
 |-
 | [[Exposed Copper]]
-| [[Block of Copper]] +<br />[[Potion]]
-| {{Crafting|A1=Block of Copper|B1=Potion|Output=Exposed Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_from_patina.json|matcha:crafting/exposed_copper_from_patina}}</small>
+| [[Block of Copper]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_from_patina.json|matcha:crafting/exposed_copper_from_patina}}</small>
 |-
 | [[Exposed Copper Golem Statue]]
-| [[Copper Golem Statue]] +<br />[[Potion]]
-| {{Crafting|A1=Copper Golem Statue|B1=Potion|Output=Exposed Copper Golem Statue|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_golem_statue_from_patina.json|matcha:crafting/exposed_copper_golem_statue_from_patina}}</small>
+| [[Copper Golem Statue]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_golem_statue_from_patina.json|matcha:crafting/exposed_copper_golem_statue_from_patina}}</small>
 |-
 | [[Exposed Copper Grate]]
-| [[Copper Grate]] +<br />[[Potion]]
-| {{Crafting|A1=Copper Grate|B1=Potion|Output=Exposed Copper Grate|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_grate_from_patina.json|matcha:crafting/exposed_copper_grate_from_patina}}</small>
+| [[Copper Grate]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_grate_from_patina.json|matcha:crafting/exposed_copper_grate_from_patina}}</small>
 |-
 | [[Exposed Cut Copper]]
-| [[Cut Copper]] +<br />[[Potion]]
-| {{Crafting|A1=Cut Copper|B1=Potion|Output=Exposed Cut Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_cut_copper_from_patina.json|matcha:crafting/exposed_cut_copper_from_patina}}</small>
+| [[Cut Copper]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_cut_copper_from_patina.json|matcha:crafting/exposed_cut_copper_from_patina}}</small>
 |-
 | [[Exposed Cut Copper Slab]]
-| [[Cut Copper Slab]] +<br />[[Potion]]
-| {{Crafting|A1=Cut Copper Slab|B1=Potion|Output=Exposed Cut Copper Slab|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_cut_copper_slab_from_patina.json|matcha:crafting/exposed_cut_copper_slab_from_patina}}</small>
+| [[Cut Copper Slab]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_cut_copper_slab_from_patina.json|matcha:crafting/exposed_cut_copper_slab_from_patina}}</small>
 |-
 | [[Exposed Cut Copper Stairs]]
-| [[Cut Copper Stairs]] +<br />[[Potion]]
-| {{Crafting|A1=Cut Copper Stairs|B1=Potion|Output=Exposed Cut Copper Stairs|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_cut_copper_stairs_from_patina.json|matcha:crafting/exposed_cut_copper_stairs_from_patina}}</small>
+| [[Cut Copper Stairs]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_cut_copper_stairs_from_patina.json|matcha:crafting/exposed_cut_copper_stairs_from_patina}}</small>
 |-
 | [[Gray Concrete]]
-| [[Potion]] +<br />8 × [[Gray Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Gray Concrete Powder|C1=Gray Concrete Powder|A2=Gray Concrete Powder|B2=Gray Concrete Powder|C2=Gray Concrete Powder|A3=Gray Concrete Powder|B3=Gray Concrete Powder|C3=Gray Concrete Powder|Output=Gray Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/gray_concrete_from_concrete_powder.json|matcha:crafting/gray_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Gray Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/gray_concrete_from_concrete_powder.json|matcha:crafting/gray_concrete_from_concrete_powder}}</small>
 |-
 | [[Green Concrete]]
-| [[Potion]] +<br />8 × [[Green Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Green Concrete Powder|C1=Green Concrete Powder|A2=Green Concrete Powder|B2=Green Concrete Powder|C2=Green Concrete Powder|A3=Green Concrete Powder|B3=Green Concrete Powder|C3=Green Concrete Powder|Output=Green Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/green_concrete_from_concrete_powder.json|matcha:crafting/green_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Green Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/green_concrete_from_concrete_powder.json|matcha:crafting/green_concrete_from_concrete_powder}}</small>
 |-
 | [[Green Dye]]
-| [[Potion]] +<br />[[Raw Copper]] +<br />[[Sulfur Chunk]]
-| {{Crafting|A1=Potion|B1=Raw Copper|C1=Sulfur Chunk|Output=Green Dye,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/green_dye_from_patina.json|matcha:crafting/green_dye_from_patina}}</small>
+| [[Potion]] +<br />[[Raw Copper]] +<br />[[Sulfur Chunk]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/green_dye_from_patina.json|matcha:crafting/green_dye_from_patina}}</small>
 |-
 | [[Light Blue Concrete]]
-| [[Potion]] +<br />8 × [[Light Blue Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Light Blue Concrete Powder|C1=Light Blue Concrete Powder|A2=Light Blue Concrete Powder|B2=Light Blue Concrete Powder|C2=Light Blue Concrete Powder|A3=Light Blue Concrete Powder|B3=Light Blue Concrete Powder|C3=Light Blue Concrete Powder|Output=Light Blue Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/light_blue_concrete_from_concrete_powder.json|matcha:crafting/light_blue_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Light Blue Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/light_blue_concrete_from_concrete_powder.json|matcha:crafting/light_blue_concrete_from_concrete_powder}}</small>
 |-
 | [[Light Gray Concrete]]
-| [[Potion]] +<br />8 × [[Light Gray Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Light Gray Concrete Powder|C1=Light Gray Concrete Powder|A2=Light Gray Concrete Powder|B2=Light Gray Concrete Powder|C2=Light Gray Concrete Powder|A3=Light Gray Concrete Powder|B3=Light Gray Concrete Powder|C3=Light Gray Concrete Powder|Output=Light Gray Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/light_gray_concrete_from_concrete_powder.json|matcha:crafting/light_gray_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Light Gray Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/light_gray_concrete_from_concrete_powder.json|matcha:crafting/light_gray_concrete_from_concrete_powder}}</small>
 |-
 | [[Lime Concrete]]
-| [[Potion]] +<br />8 × [[Lime Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Lime Concrete Powder|C1=Lime Concrete Powder|A2=Lime Concrete Powder|B2=Lime Concrete Powder|C2=Lime Concrete Powder|A3=Lime Concrete Powder|B3=Lime Concrete Powder|C3=Lime Concrete Powder|Output=Lime Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/lime_concrete_from_concrete_powder.json|matcha:crafting/lime_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Lime Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/lime_concrete_from_concrete_powder.json|matcha:crafting/lime_concrete_from_concrete_powder}}</small>
 |-
 | [[Magenta Concrete]]
-| [[Potion]] +<br />8 × [[Magenta Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Magenta Concrete Powder|C1=Magenta Concrete Powder|A2=Magenta Concrete Powder|B2=Magenta Concrete Powder|C2=Magenta Concrete Powder|A3=Magenta Concrete Powder|B3=Magenta Concrete Powder|C3=Magenta Concrete Powder|Output=Magenta Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/magenta_concrete_from_concrete_powder.json|matcha:crafting/magenta_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Magenta Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/magenta_concrete_from_concrete_powder.json|matcha:crafting/magenta_concrete_from_concrete_powder}}</small>
 |-
 | [[Mud]]
-| [[Potion]] +<br />8 × [[Dirt]]
-| {{Crafting|A1=Potion|B1=Dirt|C1=Dirt|A2=Dirt|B2=Dirt|C2=Dirt|A3=Dirt|B3=Dirt|C3=Dirt|Output=Mud,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/mud.json|matcha:crafting/mud}}</small>
+| [[Potion]] +<br />8 × [[Dirt]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/mud.json|matcha:crafting/mud}}</small>
 |-
 | [[Orange Concrete]]
-| [[Potion]] +<br />8 × [[Orange Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Orange Concrete Powder|C1=Orange Concrete Powder|A2=Orange Concrete Powder|B2=Orange Concrete Powder|C2=Orange Concrete Powder|A3=Orange Concrete Powder|B3=Orange Concrete Powder|C3=Orange Concrete Powder|Output=Orange Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/orange_concrete_from_concrete_powder.json|matcha:crafting/orange_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Orange Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/orange_concrete_from_concrete_powder.json|matcha:crafting/orange_concrete_from_concrete_powder}}</small>
 |-
 | [[Oxidized Chiseled Copper]]
-| [[Weathered Chiseled Copper]] +<br />[[Potion]]
-| {{Crafting|A1=Weathered Chiseled Copper|B1=Potion|Output=Oxidized Chiseled Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_chiseled_copper_from_patina.json|matcha:crafting/oxidized_chiseled_copper_from_patina}}</small>
+| [[Weathered Chiseled Copper]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_chiseled_copper_from_patina.json|matcha:crafting/oxidized_chiseled_copper_from_patina}}</small>
 |-
 | [[Oxidized Copper Bars]]
-| [[Weathered Copper Bars]] +<br />[[Potion]]
-| {{Crafting|A1=Weathered Copper Bars|B1=Potion|Output=Oxidized Copper Bars|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_bars_from_patina.json|matcha:crafting/oxidized_copper_bars_from_patina}}</small>
+| [[Weathered Copper Bars]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_bars_from_patina.json|matcha:crafting/oxidized_copper_bars_from_patina}}</small>
 |-
 | [[Oxidized Copper Chain]]
-| [[Weathered Copper Chain]] +<br />[[Potion]]
-| {{Crafting|A1=Weathered Copper Chain|B1=Potion|Output=Oxidized Copper Chain|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_chain_from_patina.json|matcha:crafting/oxidized_copper_chain_from_patina}}</small>
+| [[Weathered Copper Chain]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_chain_from_patina.json|matcha:crafting/oxidized_copper_chain_from_patina}}</small>
 |-
 | [[Oxidized Copper Door]]
-| [[Weathered Copper Door]] +<br />[[Potion]]
-| {{Crafting|A1=Weathered Copper Door|B1=Potion|Output=Oxidized Copper Door|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_door_from_patina.json|matcha:crafting/oxidized_copper_door_from_patina}}</small>
+| [[Weathered Copper Door]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_door_from_patina.json|matcha:crafting/oxidized_copper_door_from_patina}}</small>
 |-
 | [[Oxidized Copper]]
-| [[Weathered Copper]] +<br />[[Potion]]
-| {{Crafting|A1=Weathered Copper|B1=Potion|Output=Oxidized Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_from_patina.json|matcha:crafting/oxidized_copper_from_patina}}</small>
+| [[Weathered Copper]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_from_patina.json|matcha:crafting/oxidized_copper_from_patina}}</small>
 |-
 | [[Oxidized Copper Golem Statue]]
-| [[Weathered Copper Golem Statue]] +<br />[[Potion]]
-| {{Crafting|A1=Weathered Copper Golem Statue|B1=Potion|Output=Oxidized Copper Golem Statue|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_golem_statue_from_statue.json|matcha:crafting/oxidized_copper_golem_statue_from_statue}}</small>
+| [[Weathered Copper Golem Statue]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_golem_statue_from_statue.json|matcha:crafting/oxidized_copper_golem_statue_from_statue}}</small>
 |-
 | [[Oxidized Copper Grate]]
-| [[Weathered Copper Grate]] +<br />[[Potion]]
-| {{Crafting|A1=Weathered Copper Grate|B1=Potion|Output=Oxidized Copper Grate|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_grate_from_patina.json|matcha:crafting/oxidized_copper_grate_from_patina}}</small>
+| [[Weathered Copper Grate]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_grate_from_patina.json|matcha:crafting/oxidized_copper_grate_from_patina}}</small>
 |-
 | [[Oxidized Cut Copper]]
-| [[Weathered Cut Copper]] +<br />[[Potion]]
-| {{Crafting|A1=Weathered Cut Copper|B1=Potion|Output=Oxidized Cut Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_cut_copper_from_patina.json|matcha:crafting/oxidized_cut_copper_from_patina}}</small>
+| [[Weathered Cut Copper]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_cut_copper_from_patina.json|matcha:crafting/oxidized_cut_copper_from_patina}}</small>
 |-
 | [[Oxidized Cut Copper Slab]]
-| [[Weathered Cut Copper Slab]] +<br />[[Potion]]
-| {{Crafting|A1=Weathered Cut Copper Slab|B1=Potion|Output=Oxidized Cut Copper Slab|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_cut_copper_slab_from_patina.json|matcha:crafting/oxidized_cut_copper_slab_from_patina}}</small>
+| [[Weathered Cut Copper Slab]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_cut_copper_slab_from_patina.json|matcha:crafting/oxidized_cut_copper_slab_from_patina}}</small>
 |-
 | [[Oxidized Cut Copper Stairs]]
-| [[Weathered Cut Copper Stairs]] +<br />[[Potion]]
-| {{Crafting|A1=Weathered Cut Copper Stairs|B1=Potion|Output=Oxidized Cut Copper Stairs|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_cut_copper_stairs_from_patina.json|matcha:crafting/oxidized_cut_copper_stairs_from_patina}}</small>
+| [[Weathered Cut Copper Stairs]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_cut_copper_stairs_from_patina.json|matcha:crafting/oxidized_cut_copper_stairs_from_patina}}</small>
 |-
 | [[Phosphor]]
-| [[Potion]] +<br />[[Sulfur Chunk]] +<br />4 × [[Glow Lichen]]
-| {{Crafting|A1=Potion|B1=Sulfur Chunk|C1=Glow Lichen|A2=Glow Lichen|B2=Glow Lichen|C2=Glow Lichen|Output=Phosphor,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/phosphor.json|matcha:crafting/phosphor}}</small>
+| [[Potion]] +<br />[[Sulfur Chunk]] +<br />4 × [[Glow Lichen]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/phosphor.json|matcha:crafting/phosphor}}</small>
 |-
 | [[Pink Concrete]]
-| [[Potion]] +<br />8 × [[Pink Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Pink Concrete Powder|C1=Pink Concrete Powder|A2=Pink Concrete Powder|B2=Pink Concrete Powder|C2=Pink Concrete Powder|A3=Pink Concrete Powder|B3=Pink Concrete Powder|C3=Pink Concrete Powder|Output=Pink Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/pink_concrete_from_concrete_powder.json|matcha:crafting/pink_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Pink Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/pink_concrete_from_concrete_powder.json|matcha:crafting/pink_concrete_from_concrete_powder}}</small>
 |-
 | [[Purple Concrete]]
-| [[Potion]] +<br />8 × [[Purple Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Purple Concrete Powder|C1=Purple Concrete Powder|A2=Purple Concrete Powder|B2=Purple Concrete Powder|C2=Purple Concrete Powder|A3=Purple Concrete Powder|B3=Purple Concrete Powder|C3=Purple Concrete Powder|Output=Purple Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/purple_concrete_from_concrete_powder.json|matcha:crafting/purple_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Purple Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/purple_concrete_from_concrete_powder.json|matcha:crafting/purple_concrete_from_concrete_powder}}</small>
 |-
 | [[Red Concrete]]
-| [[Potion]] +<br />8 × [[Red Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Red Concrete Powder|C1=Red Concrete Powder|A2=Red Concrete Powder|B2=Red Concrete Powder|C2=Red Concrete Powder|A3=Red Concrete Powder|B3=Red Concrete Powder|C3=Red Concrete Powder|Output=Red Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/red_concrete_from_concrete_powder.json|matcha:crafting/red_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Red Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/red_concrete_from_concrete_powder.json|matcha:crafting/red_concrete_from_concrete_powder}}</small>
 |-
 | [[Weathered Chiseled Copper]]
-| [[Exposed Chiseled Copper]] +<br />[[Potion]]
-| {{Crafting|A1=Exposed Chiseled Copper|B1=Potion|Output=Weathered Chiseled Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_chiseled_copper_from_patina.json|matcha:crafting/weathered_chiseled_copper_from_patina}}</small>
+| [[Exposed Chiseled Copper]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_chiseled_copper_from_patina.json|matcha:crafting/weathered_chiseled_copper_from_patina}}</small>
 |-
 | [[Weathered Copper Bars]]
-| [[Exposed Copper Bars]] +<br />[[Potion]]
-| {{Crafting|A1=Exposed Copper Bars|B1=Potion|Output=Weathered Copper Bars|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_bars_from_patina.json|matcha:crafting/weathered_copper_bars_from_patina}}</small>
+| [[Exposed Copper Bars]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_bars_from_patina.json|matcha:crafting/weathered_copper_bars_from_patina}}</small>
 |-
 | [[Weathered Copper Chain]]
-| [[Exposed Copper Chain]] +<br />[[Potion]]
-| {{Crafting|A1=Exposed Copper Chain|B1=Potion|Output=Weathered Copper Chain|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_chain_from_patina.json|matcha:crafting/weathered_copper_chain_from_patina}}</small>
+| [[Exposed Copper Chain]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_chain_from_patina.json|matcha:crafting/weathered_copper_chain_from_patina}}</small>
 |-
 | [[Weathered Copper Door]]
-| [[Exposed Copper Door]] +<br />[[Potion]]
-| {{Crafting|A1=Exposed Copper Door|B1=Potion|Output=Weathered Copper Door|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_door_from_patina.json|matcha:crafting/weathered_copper_door_from_patina}}</small>
+| [[Exposed Copper Door]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_door_from_patina.json|matcha:crafting/weathered_copper_door_from_patina}}</small>
 |-
 | [[Weathered Copper]]
-| [[Exposed Copper]] +<br />[[Potion]]
-| {{Crafting|A1=Exposed Copper|B1=Potion|Output=Weathered Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_from_patina.json|matcha:crafting/weathered_copper_from_patina}}</small>
+| [[Exposed Copper]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_from_patina.json|matcha:crafting/weathered_copper_from_patina}}</small>
 |-
 | [[Weathered Copper Golem Statue]]
-| [[Exposed Copper Golem Statue]] +<br />[[Potion]]
-| {{Crafting|A1=Exposed Copper Golem Statue|B1=Potion|Output=Weathered Copper Golem Statue|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_golem_statue_from_patina.json|matcha:crafting/weathered_copper_golem_statue_from_patina}}</small>
+| [[Exposed Copper Golem Statue]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_golem_statue_from_patina.json|matcha:crafting/weathered_copper_golem_statue_from_patina}}</small>
 |-
 | [[Weathered Copper Grate]]
-| [[Exposed Copper Grate]] +<br />[[Potion]]
-| {{Crafting|A1=Exposed Copper Grate|B1=Potion|Output=Weathered Copper Grate|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_grate_from_patina.json|matcha:crafting/weathered_copper_grate_from_patina}}</small>
+| [[Exposed Copper Grate]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_grate_from_patina.json|matcha:crafting/weathered_copper_grate_from_patina}}</small>
 |-
 | [[Weathered Cut Copper]]
-| [[Exposed Cut Copper]] +<br />[[Potion]]
-| {{Crafting|A1=Exposed Cut Copper|B1=Potion|Output=Weathered Cut Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_cut_copper_from_patina.json|matcha:crafting/weathered_cut_copper_from_patina}}</small>
+| [[Exposed Cut Copper]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_cut_copper_from_patina.json|matcha:crafting/weathered_cut_copper_from_patina}}</small>
 |-
 | [[Weathered Cut Copper Slab]]
-| [[Exposed Cut Copper Slab]] +<br />[[Potion]]
-| {{Crafting|A1=Exposed Cut Copper Slab|B1=Potion|Output=Weathered Cut Copper Slab|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_cut_copper_slab_from_patina.json|matcha:crafting/weathered_cut_copper_slab_from_patina}}</small>
+| [[Exposed Cut Copper Slab]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_cut_copper_slab_from_patina.json|matcha:crafting/weathered_cut_copper_slab_from_patina}}</small>
 |-
 | [[Weathered Cut Copper Stairs]]
-| [[Exposed Cut Copper Stairs]] +<br />[[Potion]]
-| {{Crafting|A1=Exposed Cut Copper Stairs|B1=Potion|Output=Weathered Cut Copper Stairs|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_cut_copper_stairs_from_patina.json|matcha:crafting/weathered_cut_copper_stairs_from_patina}}</small>
+| [[Exposed Cut Copper Stairs]] +<br />[[Potion]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_cut_copper_stairs_from_patina.json|matcha:crafting/weathered_cut_copper_stairs_from_patina}}</small>
 |-
 | [[White Concrete]]
-| [[Potion]] +<br />8 × [[White Concrete Powder]]
-| {{Crafting|A1=Potion|B1=White Concrete Powder|C1=White Concrete Powder|A2=White Concrete Powder|B2=White Concrete Powder|C2=White Concrete Powder|A3=White Concrete Powder|B3=White Concrete Powder|C3=White Concrete Powder|Output=White Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/white_concrete_from_concrete_powder.json|matcha:crafting/white_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[White Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/white_concrete_from_concrete_powder.json|matcha:crafting/white_concrete_from_concrete_powder}}</small>
 |-
 | [[Yellow Concrete]]
-| [[Potion]] +<br />8 × [[Yellow Concrete Powder]]
-| {{Crafting|A1=Potion|B1=Yellow Concrete Powder|C1=Yellow Concrete Powder|A2=Yellow Concrete Powder|B2=Yellow Concrete Powder|C2=Yellow Concrete Powder|A3=Yellow Concrete Powder|B3=Yellow Concrete Powder|C3=Yellow Concrete Powder|Output=Yellow Concrete,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/yellow_concrete_from_concrete_powder.json|matcha:crafting/yellow_concrete_from_concrete_powder}}</small>
+| [[Potion]] +<br />8 × [[Yellow Concrete Powder]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/yellow_concrete_from_concrete_powder.json|matcha:crafting/yellow_concrete_from_concrete_powder}}</small>
 |-
 | [[Dough]]
-| [[Potion]] +<br />[[Flour]]
-| {{Crafting|A1=Potion|B1=Flour|Output=Dough|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough_from_water.json|matcha:food/crafting/dough_from_water}}</small>
+| [[Potion]] +<br />[[Flour]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough_from_water.json|matcha:food/crafting/dough_from_water}}</small>
 |-
 | [[Seitan]]
-| [[Dough]] +<br />[[Potion]] +<br />[[Carrot]] or [[Potato]] or [[Dried Kelp]]
-| {{Crafting|A1=Dough|B1=Potion|C1=Carrot;Potato;Dried Kelp|Output=Seitan|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/seitan.json|matcha:food/crafting/seitan}}</small>
+| [[Dough]] +<br />[[Potion]] +<br />[[Carrot]] or [[Potato]] or [[Dried Kelp]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/seitan.json|matcha:food/crafting/seitan}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

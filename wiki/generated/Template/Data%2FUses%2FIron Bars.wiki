@@ -1,8 +1,0 @@
-<includeonly>{| class="wikitable recipe-table"
-! Name !! Ingredients !! Recipe
-|-
-| [[Copper Eye Door]]
-| [[Command Block]] +<br />[[Iron Bars]] +<br />[[Copper Eye]]
-| {{Crafting|A1=Command Block|B1=Iron Bars|C1=Copper Eye|Output=Copper Eye Door|shapeless=1}}<br /><small>{{Source|MF_datapack/data/debug/recipe/copper_eye_door.json|debug:copper_eye_door}}</small>
-|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
-[[Category:Generated data]]</noinclude>

@@ -79,11 +79,15 @@ def check(title):
     problems = []
     for pat, label in ((r'class="(?:error|scribunto-error)[^"]*"[^>]*>(.*?)</', 'error'),
                        (r'Template loop detected', 'template loop'),
-                       (r'Expansion depth limit', 'expansion depth')):
+                       (r'Expansion depth limit', 'expansion depth'),
+                       (r'<a [^>]*title="(Template:[^"]+)"[^>]*>Template:', 'template not expanded (include size limit?)')):
         for m in re.finditer(pat, body):
             problems.append('%s: %s' % (label, html.unescape(re.sub('<[^>]+>', '', m.group(1) if m.groups() else m.group(0)))[:160]))
     red = sorted(set(html.unescape(m) for m in re.findall(r'class="new" title="([^"]+) \(page does not exist\)"', body)))
     files = [r for r in red if r.startswith('File:')]
+    # a missing image links to Special:Upload instead of carrying the "(page does not exist)" title
+    files += sorted(set('File:' + html.unescape(urllib.parse.unquote(m)).replace('_', ' ')
+                        for m in re.findall(r'wpDestFile=([^"&]+)', body)) - set(files))
     red = [r for r in red if not r.startswith('File:')]
     print('== %s: %d problem(s), %d red link(s), %d missing file(s), %d bytes' % (title, len(problems), len(red), len(files), len(body)))
     for p in problems[:20]:

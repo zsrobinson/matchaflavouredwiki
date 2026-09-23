@@ -2,10 +2,10 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Native Deepslate Copper}} || 1 || 33.3% || 33.3% || Silk Touch
+| {{ItemLink|Native Deepslate Copper}} || 1 || 100% || 100% || Silk Touch
 |-
-| {{ItemLink|Copper Ingot}} || 2–5 || 33.3% || 33.3% || specific tool
+| {{ItemLink|Copper Ingot}} || 2–5 || 100% || 100% || specific tool
 |-
-| {{ItemLink|Raw Copper|mcw=Raw Copper}} || 2–5 || 33.3% || 33.3% || 
+| {{ItemLink|Raw Copper|mcw=Raw Copper}} || 2–5 || 100% || 100% || without Silk Touch, specific tool
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

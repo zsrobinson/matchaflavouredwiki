@@ -5,10 +5,10 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Crimson nylium <small>({{Source|vanilla:loot_table/blocks/crimson_nylium.json|blocks/crimson_nylium}})</small> || 1 || 50.0% || 
+| Crimson nylium <small>({{Source|vanilla:loot_table/blocks/crimson_nylium.json|blocks/crimson_nylium}})</small> || 1 || 100% || without Silk Touch
 |-
-| Netherrack <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/netherrack.json|blocks/netherrack}})</small> || 1 || 50.0% || 
+| Netherrack <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/netherrack.json|blocks/netherrack}})</small> || 1 || 100% || without specific tool
 |-
-| Warped nylium <small>({{Source|vanilla:loot_table/blocks/warped_nylium.json|blocks/warped_nylium}})</small> || 1 || 50.0% || 
+| Warped nylium <small>({{Source|vanilla:loot_table/blocks/warped_nylium.json|blocks/warped_nylium}})</small> || 1 || 100% || without Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

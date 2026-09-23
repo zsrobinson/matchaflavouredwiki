@@ -5,18 +5,18 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 1 || 6.25% || entity condition, block state property
+| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 1 || 100% || entity condition, block state property
 |-
-| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 2 || 6.25% || entity condition, block state property
+| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 2 || 100% || entity condition, block state property
 |-
-| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 3 || 6.25% || entity condition, block state property
+| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 3 || 100% || entity condition, block state property
 |-
-| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 4 || 6.25% || entity condition, block state property
+| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 4 || 100% || entity condition, block state property
 |-
-| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 5 || 6.25% || entity condition, block state property
+| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 5 || 100% || entity condition, block state property
 |-
-| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 6 || 6.25% || entity condition, block state property
+| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 6 || 100% || entity condition, block state property
 |-
-| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 7 || 6.25% || entity condition, block state property
+| Snow <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/snow.json|blocks/snow}})</small> || 7 || 100% || entity condition, block state property
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

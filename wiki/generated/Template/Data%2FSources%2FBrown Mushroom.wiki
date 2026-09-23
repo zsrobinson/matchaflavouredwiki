@@ -23,7 +23,7 @@
 |-
 | Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/shearing/bogged.json|shearing/bogged}})</small> || 1 || 75.0% || 
 |-
-| Mooshroom <small>({{Source|vanilla:loot_table/shearing/mooshroom.json|shearing/mooshroom}})</small> || 1 || 50.0% || entity condition
+| Mooshroom <small>({{Source|vanilla:loot_table/shearing/mooshroom.json|shearing/mooshroom}})</small> || 1 || 100% || entity condition
 |}
 
 '''Block drops'''
@@ -32,7 +32,7 @@
 |-
 | Brown mushroom <small>({{Source|vanilla:loot_table/blocks/brown_mushroom.json|blocks/brown_mushroom}})</small> || 1 || 100% || 
 |-
-| Brown mushroom block <small>({{Source|vanilla:loot_table/blocks/brown_mushroom_block.json|blocks/brown_mushroom_block}})</small> || -6–2 || 11.1% || 
+| Brown mushroom block <small>({{Source|vanilla:loot_table/blocks/brown_mushroom_block.json|blocks/brown_mushroom_block}})</small> || -6–2 || 22.2% || without Silk Touch
 |-
 | Potted brown mushroom <small>({{Source|vanilla:loot_table/blocks/potted_brown_mushroom.json|blocks/potted_brown_mushroom}})</small> || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

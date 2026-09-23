@@ -52,6 +52,10 @@ the swap mid-way.
 - **Titles to files:** the namespace is the folder, `/` becomes `%2F`, Module pages are `.lua`, the
   Project namespace is `Matcha Flavoured Wiki:`.
 
+- **Pages have a 2 MB include limit.** Past it MediaWiki stops expanding templates and prints a bare `Template:…` link
+  (crafting grids are the heavy part). `generate.py` drops the grids from recipe tables longer than `COMPACT_AFTER`,
+  and `check_site.py` / `preview.py` flag unexpanded templates and missing images.
+
 - **The local wiki never deletes pages.** A page the generator stopped producing still exists locally,
   so local checks can pass while CI, which builds from scratch, finds broken links. Trust the PR check.
 
@@ -88,6 +92,7 @@ the swap mid-way.
   - 301s every other hostname to `https://matchaflavou.red`;
   - serves redirect pages and wrong-case URLs as real 301s from `src/redirects.json`, which the export writes.
 - **What the export keeps and strips:** it removes MediaWiki's scripts except the theme boot, and keeps the `ca-mfw-*` GitHub tabs.
+  It also replaces legacy Vector's fixed `width=1120` viewport with `device-width`, so phones get the vendored narrow-screen layout.
 - **Search** is Pagefind (Component UI searchbox and the `/search/` page).
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;

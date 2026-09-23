@@ -25,6 +25,6 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Beetroots <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json|blocks/beetroots}})</small> || 1 || 50.0% || 
+| Beetroots <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json|blocks/beetroots}})</small> || 1 || 100% || without block state property
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

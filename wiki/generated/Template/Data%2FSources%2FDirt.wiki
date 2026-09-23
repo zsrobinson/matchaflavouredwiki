@@ -11,12 +11,12 @@
 |-
 | Farmland <small>({{Source|vanilla:loot_table/blocks/farmland.json|blocks/farmland}})</small> || 1 || 100% || 
 |-
-| Grass block <small>({{Source|vanilla:loot_table/blocks/grass_block.json|blocks/grass_block}})</small> || 1 || 50.0% || 
+| Grass block <small>({{Source|vanilla:loot_table/blocks/grass_block.json|blocks/grass_block}})</small> || 1 || 100% || without Silk Touch
 |-
 | Gravel <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/gravel.json|blocks/gravel}})</small> || 1 || 100% || not Silk Touch
 |-
-| Mycelium <small>({{Source|vanilla:loot_table/blocks/mycelium.json|blocks/mycelium}})</small> || 1 || 50.0% || 
+| Mycelium <small>({{Source|vanilla:loot_table/blocks/mycelium.json|blocks/mycelium}})</small> || 1 || 100% || without Silk Touch
 |-
-| Podzol <small>({{Source|vanilla:loot_table/blocks/podzol.json|blocks/podzol}})</small> || 1 || 50.0% || 
+| Podzol <small>({{Source|vanilla:loot_table/blocks/podzol.json|blocks/podzol}})</small> || 1 || 100% || without Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

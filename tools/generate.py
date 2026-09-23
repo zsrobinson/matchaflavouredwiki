@@ -334,7 +334,9 @@ def infobox(item):
     dp = c.get('death_protection')
     if dp:
         f['effects'] = (f.get('effects', '') + '<br />' if f.get('effects') else '') + "Prevents death when held, like a [[Totem of Undying]]"
-    if c.get('max_damage'):
+    if 'unbreakable' in c:
+        f['durability'] = 'Unbreakable'
+    elif c.get('max_damage'):
         f['durability'] = str(c['max_damage'])
     dmg, has = attr_sum(c, 'attack_damage', 'mainhand')
     if has:
@@ -528,18 +530,27 @@ def all_ingredient_names(r):
     return names
 
 
+COMPACT_AFTER = 40
+
+
 def recipe_table(recipes, first_col):
     if not recipes:
         return ''
+    # Past ~40 recipes the crafting grids push the page over MediaWiki's 2 MB include limit (the table
+    # then doesn't render at all) and make it very heavy, so long lists name the ingredients only.
+    grids = len(recipes) <= COMPACT_AFTER
     rows = []
     for r in recipes:
         origin = '' if r['origin'] == 'pack' else ' <small>(vanilla recipe)</small>'
         src = r['src'] if r['origin'] == 'pack' else None
         cite = ('<br /><small>{{Source|%s|%s}}</small>' % (src, r['id'])) if src else ''
         first = first_col(r)
-        rows.append('|-\n| %s%s\n| %s\n| %s%s' % (first, origin, recipe_ingredients(r), recipe_ui(r), cite))
+        if grids:
+            rows.append('|-\n| %s%s\n| %s\n| %s%s' % (first, origin, recipe_ingredients(r), recipe_ui(r), cite))
+        else:
+            rows.append('|-\n| %s%s\n| %s%s' % (first, origin, recipe_ingredients(r), cite))
     collapsible = ' mw-collapsible' if len(recipes) > 12 else ''
-    head = '{| class="wikitable recipe-table%s"\n! %s !! Ingredients !! Recipe' % (collapsible, 'Name')
+    head = '{| class="wikitable recipe-table%s"\n! %s !! Ingredients%s' % (collapsible, 'Name', ' !! Recipe' if grids else '')
     return head + '\n' + '\n'.join(rows) + '\n|}'
 
 
@@ -561,6 +572,8 @@ def producing(name):
 
 USES = defaultdict(list)
 for r in ALL_RECIPES + VANILLA_KEPT:
+    if r['id'].startswith('debug:'):
+        continue  # developer recipes (they need a command block); shown only on the debug items' own pages
     for n in all_ingredient_names(r):
         USES[n].append(r)
 # Recipes match ingredients by item id only, so a custom item also works in every recipe
@@ -625,6 +638,28 @@ def rolls_avg(r):
     return (lo + hi) / 2, lo, hi
 
 
+# The pack's fishing biome tags, named as the Fishing article's sections (and the Angler's Almanac) name them
+BIOME_GROUPS = {'freshwater_cold': 'Cold freshwater', 'freshwater_cool': 'Cool freshwater',
+                'freshwater_temperate': 'Temperate freshwater', 'freshwater_hot_dry': 'Arid freshwater',
+                'freshwater_hot_wet': 'Tropical freshwater', 'swamps': 'Brackish water',
+                'saltwater_cold': 'Cold saltwater', 'saltwater_cool': 'Cool saltwater',
+                'saltwater_temperate': 'Temperate saltwater', 'saltwater_warm': 'Warm saltwater',
+                'saltwater_hot': 'Hot saltwater', 'unused': 'Other biomes'}
+
+
+def biome_note(b):
+    """Readable biome condition: "#minecraft:saltwater_warm" -> "warm saltwater biomes", ids -> in-game names."""
+    out = []
+    for x in ([b] if isinstance(b, str) else b):
+        key = x.split(':')[-1]
+        if x.startswith('#') and key in BIOME_GROUPS:
+            g = BIOME_GROUPS[key]
+            out.append('[[Fishing#%s|%s]]' % (g, g[0].lower() + g[1:] + ('' if key == 'unused' else ' biomes')))
+        else:
+            out.append(key.replace('_', ' ').title().replace(' Of ', ' of ').replace(' The ', ' the '))
+    return 'only in ' + ', '.join(out)
+
+
 def cond_notes(conds):
     notes = []
     mult = 1.0
@@ -646,7 +681,7 @@ def cond_notes(conds):
         elif t == 'location_check':
             b = (c.get('predicate') or {}).get('biomes') or (c.get('predicate') or {}).get('biome')
             if b:
-                notes.append('biome: %s' % (b if isinstance(b, str) else ', '.join(b)))
+                notes.append(biome_note(b))
             else:
                 notes.append('location')
         elif t == 'entity_properties':
@@ -708,7 +743,11 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
     if not t or depth > 6 or table_id in seen:
         return out
     pools = defaultdict(list)
+    root = (seen or (table_id,))[0]
     for e in t['entries']:
+        # "caught in open water" needs a fishing hook: never true when a chest or mob rolls the fishing table
+        if not root.startswith('minecraft:gameplay/fishing') and 'in_open_water' in json.dumps(e.get('conditions') or []):
+            continue
         pools[e['pool']].append(e)
     for pi, ents in pools.items():
         e0 = ents[0]
@@ -717,11 +756,21 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
         # at a time, so each is weighed against the unconditioned entries alone.
         def is_loc(e):
             return any((c.get('condition', '').split(':')[-1] == 'location_check') for c in (e.get('conditions') or []))
-        uncond = sum(e['weight'] for e in ents if not is_loc(e))
-        locw = [e['weight'] for e in ents if is_loc(e)]
+        # children of one alternatives/group entry share that entry's single weighted slot
+        slots = {}
+        for e in ents:
+            slots.setdefault(e.get('slot') or id(e), e)
+        uncond = sum(e['weight'] for e in slots.values() if not is_loc(e))
+        locw = [e['weight'] for e in slots.values() if is_loc(e)]
+        earlier = defaultdict(list)  # alternatives slot -> condition notes of the children before this one
         ravg, rlo, rhi = rolls_avg(e0['rolls'])
         for e in ents:
             emult, enotes = cond_notes(e.get('conditions'))
+            if e.get('slot_kind') == 'alternatives':
+                prior = earlier[e['slot']]
+                earlier[e['slot']] = prior + enotes
+                if prior and not enotes:
+                    enotes = ['without ' + ', '.join(dict.fromkeys(prior))]  # the fallback branch
             total = (uncond + e['weight']) if is_loc(e) else (uncond + (max(locw) if locw else 0))
             p = e['weight'] / (total or 1) * emult * pmult
             if e.get('empty'):
@@ -731,8 +780,11 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
                 sub = e['loot_table']
                 if isinstance(sub, dict):
                     continue
+                override = count_range(e['count']) if e.get('count') is not None else None
                 for (it, p2, cnt, n2, r2, tid) in flatten(sub, 1.0, (), depth + 1, seen + (table_id,)):
                     # nested table: chance per roll of this entry times the nested chance (per nested roll)
+                    if override:
+                        cnt, p2 = override, p2 * positive_share(override)
                     out.append((it, p * p2 * prob, cnt, n + n2, (rlo, rhi), table_id))
             elif 'item' in e and e['item']:
                 cr = count_range(e.get('count'))
@@ -777,8 +829,14 @@ def loot_category(lid):
         return 'Gameplay'
     if p.startswith('shearing/'):
         return 'Shearing'
-    if p.startswith('spawners/') or p.startswith('dispensers/') or p.startswith('pots/') or p.startswith('equipment/'):
-        return 'Structures'
+    if p.startswith('spawners/'):
+        return 'Trial spawners'
+    if p.startswith('dispensers/'):
+        return 'Dispensers'
+    if p.startswith('pots/'):
+        return 'Decorated pots'
+    if p.startswith('equipment/'):
+        return 'Mob equipment'
     if p.startswith('harvest/'):
         return 'Harvesting'
     return None  # matcha:* item definition tables and similar
@@ -825,10 +883,13 @@ for _lid, _t in LOOT.items():
         if isinstance(_sub, str) and _sub in LOOT and loot_category(_sub) == loot_category(_lid):
             REFERENCED.add(_sub)
 SOURCES = defaultdict(list)  # item -> [(category, label, lid, p, cnt, notes, rolls)]
+ROLLED = {_e['loot_table'] for _t in LOOT.values() for _e in _t['entries'] if isinstance(_e.get('loot_table'), str)}
 for lid in LOOT:
     cat = loot_category(lid)
     if not cat or lid in REFERENCED:
         continue  # sub-tables are counted through the table that rolls them
+    if lid.startswith('minecraft:gameplay/fishing/') and lid not in ROLLED:
+        continue  # vanilla fishing sub-table the pack's fishing table no longer rolls
     for it, p, cnt, notes, rolls, src in flatten(lid):
         SOURCES[it].append((cat, loot_label(lid), lid, p, cnt, notes, rolls))
 
@@ -935,7 +996,7 @@ def sources_page(name):
         by_cat = defaultdict(list)
         for s in srcs:
             by_cat[s[0]].append(s)
-        for cat in ('Chest loot', 'Mob drops', 'Fishing', 'Archaeology', 'Structures', 'Gameplay', 'Shearing', 'Harvesting', 'Block drops'):
+        for cat in ('Chest loot', 'Mob drops', 'Fishing', 'Archaeology', 'Trial spawners', 'Dispensers', 'Decorated pots', 'Mob equipment', 'Gameplay', 'Shearing', 'Harvesting', 'Block drops'):
             if cat not in by_cat:
                 continue
             parts.append("\n'''%s'''" % cat)
@@ -961,8 +1022,9 @@ def sources_page(name):
         parts.append('|}')
     if not parts:
         return None
-    return ('<includeonly>\n<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, '
-            'assuming no Looting, Luck or Fortune.</div>\n' + '\n'.join(parts) +
+    note = ('<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, '
+            'assuming no Looting, Luck or Fortune.</div>\n') if srcs else ''  # loot tables only, not for trades
+    return ('<includeonly>\n' + note + '\n'.join(parts) +
             '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>')
 
 
@@ -1123,8 +1185,9 @@ def stub_article(name, item):
     c = effective(item)
     t = item_type(item, c)
     article = 'an' if t[0] in 'AEIOU' else 'a'
-    lead = "'''%s''' is %s [[%s|%s]] added by [[Matcha Flavoured]]." % (name, article, {
-        'Food': 'Food', 'Armor': 'Armor', 'Tool': 'Tools', 'Weapon': 'Weapons', 'Block': 'Blocks', 'Equipment': 'Equipment', 'Item': 'Items'}[t], t.lower())
+    kind = ('[[%s|%s]]' % ({'Food': 'Food', 'Armor': 'Armor', 'Tool': 'Tools', 'Weapon': 'Weapons', 'Block': 'Blocks',
+                            'Equipment': 'Equipment'}[t], t.lower())) if t != 'Item' else 'item'  # there is no "Items" page
+    lead = "'''%s''' is %s %s added by [[Matcha Flavoured]]." % (name, article, kind)
     hat = ''
     if item['renamed_vanilla'] and item['vanilla_name'] != name:
         lead = "'''%s''' is %s %s. It is the vanilla %s, renamed by [[Matcha Flavoured]]." % (
@@ -1174,7 +1237,11 @@ def effect_sources():
     for eid, e in ENCH.items():
         blob = json.dumps(e.get('effects') or {})
         for m in re.finditer(r'"to_apply": "([a-z_:]+)"', blob):
-            src[effect_name(m.group(1))].append(('Enchantment', ench_name(eid), None, 'while active', 10 ** 9, 1))
+            key = eid.split(':')[-1]
+            intrinsic = eid.startswith('matcha:') and any(key.startswith(k) for k, _ in INTRINSIC_PAGES)
+            # intrinsics have glyph-only names and no page of their own: link them like the infobox does
+            src[effect_name(m.group(1))].append(('Intrinsic' if intrinsic else 'Enchantment', intrinsic_text(eid, 1) if intrinsic else '[[%s]]' % ench_name(eid),
+                                                 None, 'while active', 10 ** 9, 1))
     return src
 
 
@@ -1189,7 +1256,7 @@ def effect_pages(n):
             if key in seen:
                 continue
             seen.add(key)
-            link = ('{{ItemLink|%s}}' % safe(what)) if kind != 'Enchantment' else '[[%s]]' % what
+            link = what if kind in ('Enchantment', 'Intrinsic') else '{{ItemLink|%s}}' % safe(what)
             lines.append('|-\n| %s || %s || %s || data-sort-value="%d" | %s%s' % (
                 link, kind, roman(lvl) if lvl else '—', sortv, dur, (' (%d%% chance)' % round(prob * 100)) if prob < 1 else ''))
         lines.append('|}')
@@ -1348,12 +1415,15 @@ def main():
         lua.append('\t[%s] = { %s },' % (json.dumps(k), ', '.join(json.dumps(safe(x)) for x in ALIASES[k])))
     lua.append('}\nreturn aliases')
     write('Module', 'Inventory slot/Aliases', '\n'.join(lua))
-    for k, members in ALIASES.items():
-        target = k[len('Any '):]
-        for t in {target, target[0] + target[1:].lower()}:
-            if not hand_exists('Main', t) and members and not os.path.exists(os.path.join(GEN, 'Main', fname(t))):
-                write('Main', t, '#REDIRECT [[%s]]\n[[Category:Redirects from item tags]]' % safe(members[0]))
-                n['tag redirects'] += 1
+    # One redirect per tag; the sentence-case variant is synthesised by build_xml.collect. Existence is
+    # checked case-insensitively so Linux and macOS (case-insensitive) produce the same files.
+    taken = {f.lower() for f in os.listdir(os.path.join(GEN, 'Main'))} | {f.lower() for f in os.listdir(os.path.join(HAND, 'Main'))}
+    for k, members in sorted(ALIASES.items()):
+        t = k[len('Any '):]
+        if members and fname(t).lower() not in taken:
+            write('Main', t, '#REDIRECT [[%s]]\n[[Category:Redirects from item tags]]' % safe(members[0]))
+            taken.add(fname(t).lower())
+            n['tag redirects'] += 1
     effect_pages(n)
     category_pages(n)  # (capitalisation redirects are synthesised by build_xml.collect, not written as files)
     # swap in the new tree in one step so concurrent readers never see a half-written folder
