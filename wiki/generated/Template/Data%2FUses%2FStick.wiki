@@ -1,468 +1,352 @@
 <includeonly>{| class="wikitable recipe-table mw-collapsible"
-! Name !! Ingredients !! Recipe
+! Name !! Ingredients
 |-
 | [[Activator Rail]]
-| 6 × [[Iron Ingot]] +<br />2 × [[Stick]] +<br />[[Electric Inverter]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Stick|B2=Electric Inverter|B3=Stick|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Activator Rail,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/activator_rail_from_iron.json|matcha:crafting/activator_rail_from_iron}}</small>
+| 6 × [[Iron Ingot]] +<br />2 × [[Stick]] +<br />[[Electric Inverter]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/activator_rail_from_iron.json|matcha:crafting/activator_rail_from_iron}}</small>
 |-
 | [[Activator Rail]]
-| 6 × [[Steel Alloy]] +<br />2 × [[Stick]] +<br />[[Electric Inverter]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B1=Stick|B2=Electric Inverter|B3=Stick|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Activator Rail,32}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/activator_rail_from_steel.json|matcha:crafting/activator_rail_from_steel}}</small>
+| 6 × [[Steel Alloy]] +<br />2 × [[Stick]] +<br />[[Electric Inverter]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/activator_rail_from_steel.json|matcha:crafting/activator_rail_from_steel}}</small>
 |-
 | [[Arrow]]
-| [[Flint]] +<br />[[Stick]] +<br />[[Feather]]
-| {{Crafting|A1=Flint|A2=Stick|A3=Feather|Output=Arrow,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/arrow.json|matcha:crafting/arrow}}</small>
+| [[Flint]] +<br />[[Stick]] +<br />[[Feather]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/arrow.json|matcha:crafting/arrow}}</small>
 |-
 | [[Black Banner]]
-| 6 × [[Black Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Black Wool|A2=Black Wool|B1=Black Wool|B2=Black Wool|B3=Stick|C1=Black Wool|C2=Black Wool|Output=Black Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/black_banner.json|matcha:crafting/black_banner}}</small>
+| 6 × [[Black Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/black_banner.json|matcha:crafting/black_banner}}</small>
 |-
 | [[Blue Banner]]
-| 6 × [[Blue Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Blue Wool|A2=Blue Wool|B1=Blue Wool|B2=Blue Wool|B3=Stick|C1=Blue Wool|C2=Blue Wool|Output=Blue Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/blue_banner.json|matcha:crafting/blue_banner}}</small>
+| 6 × [[Blue Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/blue_banner.json|matcha:crafting/blue_banner}}</small>
 |-
 | [[Brown Banner]]
-| 6 × [[Brown Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Brown Wool|A2=Brown Wool|B1=Brown Wool|B2=Brown Wool|B3=Stick|C1=Brown Wool|C2=Brown Wool|Output=Brown Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/brown_banner.json|matcha:crafting/brown_banner}}</small>
+| 6 × [[Brown Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/brown_banner.json|matcha:crafting/brown_banner}}</small>
 |-
 | [[Kindling]]
-| 2 × [[Stick]] +<br />2 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json|matcha:crafting/campfire}}</small>
+| 2 × [[Stick]] +<br />2 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span><br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json|matcha:crafting/campfire}}</small>
 |-
 | [[Copper Axe]]
-| 3 × [[Copper Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Copper Ingot|A2=Copper Ingot|B1=Copper Ingot|B2=Stick|B3=Stick|Output=Copper Axe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_axe.json|matcha:crafting/copper_axe}}</small>
+| 3 × [[Copper Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_axe.json|matcha:crafting/copper_axe}}</small>
 |-
 | [[Copper Dolabra]]
-| 4 × [[Copper Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Copper Ingot|A2=Copper Ingot|B1=Copper Ingot|B2=Stick|B3=Stick|C1=Copper Ingot|Output=Copper Dolabra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_dolabra.json|matcha:crafting/copper_dolabra}}</small>
+| 4 × [[Copper Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_dolabra.json|matcha:crafting/copper_dolabra}}</small>
 |-
 | [[Copper Hoe]]
-| 2 × [[Copper Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Copper Ingot|B1=Copper Ingot|B2=Stick|B3=Stick|Output=Copper Hoe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_hoe.json|matcha:crafting/copper_hoe}}</small>
+| 2 × [[Copper Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_hoe.json|matcha:crafting/copper_hoe}}</small>
 |-
 | [[Copper Mattock]]
-| 3 × [[Copper Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Copper Ingot|B1=Copper Ingot|B2=Stick|B3=Stick|C2=Copper Ingot|Output=Copper Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_mattock.json|matcha:crafting/copper_mattock}}</small>
+| 3 × [[Copper Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_mattock.json|matcha:crafting/copper_mattock}}</small>
 |-
 | [[Copper Pickaxe]]
-| 3 × [[Copper Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Copper Ingot|B1=Copper Ingot|B2=Stick|B3=Stick|C1=Copper Ingot|Output=Copper Pickaxe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_pickaxe.json|matcha:crafting/copper_pickaxe}}</small>
+| 3 × [[Copper Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_pickaxe.json|matcha:crafting/copper_pickaxe}}</small>
 |-
 | [[Copper Shovel]]
-| [[Copper Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Copper Ingot|A2=Stick|A3=Stick|Output=Copper Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_shovel.json|matcha:crafting/copper_shovel}}</small>
+| [[Copper Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_shovel.json|matcha:crafting/copper_shovel}}</small>
 |-
 | [[Copper Spear]]
-| [[Copper Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A3=Stick|B2=Stick|C1=Copper Ingot|Output=Copper Spear}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_spear.json|matcha:crafting/copper_spear}}</small>
+| [[Copper Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_spear.json|matcha:crafting/copper_spear}}</small>
 |-
 | [[Copper Sword]]
-| 2 × [[Copper Ingot]] +<br />[[Stick]]
-| {{Crafting|A1=Copper Ingot|A2=Copper Ingot|A3=Stick|Output=Copper Sword}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_sword.json|matcha:crafting/copper_sword}}</small>
+| 2 × [[Copper Ingot]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_sword.json|matcha:crafting/copper_sword}}</small>
 |-
 | [[Copper Torch]]
-| 8 × [[Stick]] +<br />[[Copper Nugget]]
-| {{Crafting|A1=Stick|A2=Stick|A3=Stick|B1=Stick|B2=Copper Nugget|B3=Stick|C1=Stick|C2=Stick|C3=Stick|Output=Copper Torch,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_torch.json|matcha:crafting/copper_torch}}</small>
+| 8 × [[Stick]] +<br />[[Copper Nugget]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_torch.json|matcha:crafting/copper_torch}}</small>
 |-
 | [[Cyan Banner]]
-| 6 × [[Cyan Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Cyan Wool|A2=Cyan Wool|B1=Cyan Wool|B2=Cyan Wool|B3=Stick|C1=Cyan Wool|C2=Cyan Wool|Output=Cyan Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cyan_banner.json|matcha:crafting/cyan_banner}}</small>
+| 6 × [[Cyan Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cyan_banner.json|matcha:crafting/cyan_banner}}</small>
 |-
 | [[Diamond Axe]]
-| 3 × [[Diamond]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Diamond|A2=Diamond|B1=Diamond|B2=Stick|B3=Stick|Output=Diamond Axe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_axe.json|matcha:crafting/diamond_axe}}</small>
+| 3 × [[Diamond]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_axe.json|matcha:crafting/diamond_axe}}</small>
 |-
 | [[Diamond Dolabra]]
-| 4 × [[Diamond]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Diamond|A2=Diamond|B1=Diamond|B2=Stick|B3=Stick|C1=Diamond|Output=Diamond Dolabra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_dolabra.json|matcha:crafting/diamond_dolabra}}</small>
+| 4 × [[Diamond]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_dolabra.json|matcha:crafting/diamond_dolabra}}</small>
 |-
 | [[Diamond Hoe]]
-| 2 × [[Diamond]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Diamond|B1=Diamond|B2=Stick|B3=Stick|Output=Diamond Hoe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_hoe.json|matcha:crafting/diamond_hoe}}</small>
+| 2 × [[Diamond]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_hoe.json|matcha:crafting/diamond_hoe}}</small>
 |-
 | [[Diamond Mattock]]
-| 3 × [[Diamond]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Diamond|B1=Diamond|B2=Stick|B3=Stick|C2=Diamond|Output=Diamond Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_mattock.json|matcha:crafting/diamond_mattock}}</small>
+| 3 × [[Diamond]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_mattock.json|matcha:crafting/diamond_mattock}}</small>
 |-
 | [[Diamond Pickaxe]]
-| 3 × [[Diamond]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Diamond|B1=Diamond|B2=Stick|B3=Stick|C1=Diamond|Output=Diamond Pickaxe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_pickaxe.json|matcha:crafting/diamond_pickaxe}}</small>
+| 3 × [[Diamond]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_pickaxe.json|matcha:crafting/diamond_pickaxe}}</small>
 |-
 | [[Diamond Shovel]]
-| [[Diamond]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Diamond|A2=Stick|A3=Stick|Output=Diamond Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_shovel.json|matcha:crafting/diamond_shovel}}</small>
+| [[Diamond]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_shovel.json|matcha:crafting/diamond_shovel}}</small>
 |-
 | [[Diamond Spear]]
-| [[Diamond]] +<br />2 × [[Stick]]
-| {{Crafting|A3=Stick|B2=Stick|C1=Diamond|Output=Diamond Spear}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_spear.json|matcha:crafting/diamond_spear}}</small>
+| [[Diamond]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_spear.json|matcha:crafting/diamond_spear}}</small>
 |-
 | [[Diamond Sword]]
-| 2 × [[Diamond]] +<br />[[Stick]]
-| {{Crafting|A1=Diamond|A2=Diamond|A3=Stick|Output=Diamond Sword}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_sword.json|matcha:crafting/diamond_sword}}</small>
+| 2 × [[Diamond]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diamond_sword.json|matcha:crafting/diamond_sword}}</small>
 |-
 | [[Golden Axe]]
-| 3 × [[Gold Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Gold Ingot|A2=Gold Ingot|B1=Gold Ingot|B2=Stick|B3=Stick|Output=Golden Axe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_axe.json|matcha:crafting/golden_axe}}</small>
+| 3 × [[Gold Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_axe.json|matcha:crafting/golden_axe}}</small>
 |-
 | [[Golden Hoe]]
-| 2 × [[Gold Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Gold Ingot|B1=Gold Ingot|B2=Stick|B3=Stick|Output=Golden Hoe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_hoe.json|matcha:crafting/golden_hoe}}</small>
+| 2 × [[Gold Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_hoe.json|matcha:crafting/golden_hoe}}</small>
 |-
 | [[Golden Pickaxe]]
-| 3 × [[Gold Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Gold Ingot|B1=Gold Ingot|B2=Stick|B3=Stick|C1=Gold Ingot|Output=Golden Pickaxe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_pickaxe.json|matcha:crafting/golden_pickaxe}}</small>
+| 3 × [[Gold Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_pickaxe.json|matcha:crafting/golden_pickaxe}}</small>
 |-
 | [[Golden Shovel]]
-| [[Gold Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Gold Ingot|A2=Stick|A3=Stick|Output=Golden Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_shovel.json|matcha:crafting/golden_shovel}}</small>
+| [[Gold Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_shovel.json|matcha:crafting/golden_shovel}}</small>
 |-
 | [[Golden Spear]]
-| [[Gold Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A3=Stick|B2=Stick|C1=Gold Ingot|Output=Golden Spear}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_spear.json|matcha:crafting/golden_spear}}</small>
+| [[Gold Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_spear.json|matcha:crafting/golden_spear}}</small>
 |-
 | [[Golden Sword]]
-| 2 × [[Gold Ingot]] +<br />[[Stick]]
-| {{Crafting|A1=Gold Ingot|A2=Gold Ingot|A3=Stick|Output=Golden Sword}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_sword.json|matcha:crafting/golden_sword}}</small>
+| 2 × [[Gold Ingot]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_sword.json|matcha:crafting/golden_sword}}</small>
 |-
 | [[Gray Banner]]
-| 6 × [[Gray Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Gray Wool|A2=Gray Wool|B1=Gray Wool|B2=Gray Wool|B3=Stick|C1=Gray Wool|C2=Gray Wool|Output=Gray Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/gray_banner.json|matcha:crafting/gray_banner}}</small>
+| 6 × [[Gray Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/gray_banner.json|matcha:crafting/gray_banner}}</small>
 |-
 | [[Green Banner]]
-| 6 × [[Green Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Green Wool|A2=Green Wool|B1=Green Wool|B2=Green Wool|B3=Stick|C1=Green Wool|C2=Green Wool|Output=Green Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/green_banner.json|matcha:crafting/green_banner}}</small>
+| 6 × [[Green Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/green_banner.json|matcha:crafting/green_banner}}</small>
 |-
 | [[Invisible Item Frame]]
-| 4 × [[Stick]] +<br />[[Glass Pane]]
-| {{Crafting|A2=Stick|B1=Stick|B2=Glass Pane|B3=Stick|C2=Stick|Output=Invisible Item Frame}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/invisible_item_frame.json|matcha:crafting/invisible_item_frame}}</small>
+| 4 × [[Stick]] +<br />[[Glass Pane]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/invisible_item_frame.json|matcha:crafting/invisible_item_frame}}</small>
 |-
 | [[Iron Axe]]
-| 3 × [[Iron Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|B1=Iron Ingot|B2=Stick|B3=Stick|Output=Iron Axe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_axe.json|matcha:crafting/iron_axe}}</small>
+| 3 × [[Iron Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_axe.json|matcha:crafting/iron_axe}}</small>
 |-
 | [[Iron Dolabra]]
-| 4 × [[Iron Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|B1=Iron Ingot|B2=Stick|B3=Stick|C1=Iron Ingot|Output=Iron Dolabra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_dolabra.json|matcha:crafting/iron_dolabra}}</small>
+| 4 × [[Iron Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_dolabra.json|matcha:crafting/iron_dolabra}}</small>
 |-
 | [[Iron Hoe]]
-| 2 × [[Iron Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Iron Ingot|B1=Iron Ingot|B2=Stick|B3=Stick|Output=Iron Hoe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_hoe.json|matcha:crafting/iron_hoe}}</small>
+| 2 × [[Iron Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_hoe.json|matcha:crafting/iron_hoe}}</small>
 |-
 | [[Iron Mattock]]
-| 3 × [[Iron Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Iron Ingot|B1=Iron Ingot|B2=Stick|B3=Stick|C2=Iron Ingot|Output=Iron Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_mattock.json|matcha:crafting/iron_mattock}}</small>
+| 3 × [[Iron Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_mattock.json|matcha:crafting/iron_mattock}}</small>
 |-
 | [[Iron Pickaxe]]
-| 3 × [[Iron Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Iron Ingot|B1=Iron Ingot|B2=Stick|B3=Stick|C1=Iron Ingot|Output=Iron Pickaxe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_pickaxe.json|matcha:crafting/iron_pickaxe}}</small>
+| 3 × [[Iron Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_pickaxe.json|matcha:crafting/iron_pickaxe}}</small>
 |-
 | [[Iron Shovel]]
-| [[Iron Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Iron Ingot|A2=Stick|A3=Stick|Output=Iron Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_shovel.json|matcha:crafting/iron_shovel}}</small>
+| [[Iron Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_shovel.json|matcha:crafting/iron_shovel}}</small>
 |-
 | [[Iron Spear]]
-| [[Iron Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A3=Stick|B2=Stick|C1=Iron Ingot|Output=Iron Spear}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_spear.json|matcha:crafting/iron_spear}}</small>
+| [[Iron Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_spear.json|matcha:crafting/iron_spear}}</small>
 |-
 | [[Iron Sword]]
-| 2 × [[Iron Ingot]] +<br />[[Stick]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Stick|Output=Iron Sword}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_sword.json|matcha:crafting/iron_sword}}</small>
+| 2 × [[Iron Ingot]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_sword.json|matcha:crafting/iron_sword}}</small>
 |-
 | [[Item Frame]]
-| 4 × [[Stick]] +<br />[[Tattered Leather]]
-| {{Crafting|A2=Stick|B1=Stick|B2=Tattered Leather|B3=Stick|C2=Stick|Output=Item Frame}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/item_frame.json|matcha:crafting/item_frame}}</small>
+| 4 × [[Stick]] +<br />[[Tattered Leather]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/item_frame.json|matcha:crafting/item_frame}}</small>
 |-
 | [[Ladder]]
-| 7 × [[Stick]]
-| {{Crafting|A1=Stick|A2=Stick|A3=Stick|B2=Stick|C1=Stick|C2=Stick|C3=Stick|Output=Ladder,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ladder.json|matcha:crafting/ladder}}</small>
+| 7 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ladder.json|matcha:crafting/ladder}}</small>
 |-
 | [[Light Blue Banner]]
-| 6 × [[Light Blue Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Light Blue Wool|A2=Light Blue Wool|B1=Light Blue Wool|B2=Light Blue Wool|B3=Stick|C1=Light Blue Wool|C2=Light Blue Wool|Output=Light Blue Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/light_blue_banner.json|matcha:crafting/light_blue_banner}}</small>
+| 6 × [[Light Blue Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/light_blue_banner.json|matcha:crafting/light_blue_banner}}</small>
 |-
 | [[Light Gray Banner]]
-| 6 × [[Light Gray Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Light Gray Wool|A2=Light Gray Wool|B1=Light Gray Wool|B2=Light Gray Wool|B3=Stick|C1=Light Gray Wool|C2=Light Gray Wool|Output=Light Gray Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/light_grey_banner.json|matcha:crafting/light_grey_banner}}</small>
+| 6 × [[Light Gray Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/light_grey_banner.json|matcha:crafting/light_grey_banner}}</small>
 |-
 | [[Lime Banner]]
-| 6 × [[Lime Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Lime Wool|A2=Lime Wool|B1=Lime Wool|B2=Lime Wool|B3=Stick|C1=Lime Wool|C2=Lime Wool|Output=Lime Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/lime_banner.json|matcha:crafting/lime_banner}}</small>
+| 6 × [[Lime Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/lime_banner.json|matcha:crafting/lime_banner}}</small>
 |-
 | [[Mace]]
-| [[Heavy Core]] +<br />[[Stick]] +<br />[[Iron Ingot]]
-| {{Crafting|A1=Heavy Core|A2=Stick|A3=Iron Ingot|Output=Mace}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/mace.json|matcha:crafting/mace}}</small>
+| [[Heavy Core]] +<br />[[Stick]] +<br />[[Iron Ingot]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/mace.json|matcha:crafting/mace}}</small>
 |-
 | [[Magenta Banner]]
-| 6 × [[Magenta Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Magenta Wool|A2=Magenta Wool|B1=Magenta Wool|B2=Magenta Wool|B3=Stick|C1=Magenta Wool|C2=Magenta Wool|Output=Magenta Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/magenta_banner.json|matcha:crafting/magenta_banner}}</small>
+| 6 × [[Magenta Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/magenta_banner.json|matcha:crafting/magenta_banner}}</small>
 |-
 | [[Orange Banner]]
-| 6 × [[Orange Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Orange Wool|A2=Orange Wool|B1=Orange Wool|B2=Orange Wool|B3=Stick|C1=Orange Wool|C2=Orange Wool|Output=Orange Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/orange_banner.json|matcha:crafting/orange_banner}}</small>
+| 6 × [[Orange Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/orange_banner.json|matcha:crafting/orange_banner}}</small>
 |-
 | [[Pink Banner]]
-| 6 × [[Pink Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Pink Wool|A2=Pink Wool|B1=Pink Wool|B2=Pink Wool|B3=Stick|C1=Pink Wool|C2=Pink Wool|Output=Pink Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/pink_banner.json|matcha:crafting/pink_banner}}</small>
+| 6 × [[Pink Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/pink_banner.json|matcha:crafting/pink_banner}}</small>
 |-
 | [[Powered Rail]]
-| 6 × [[Copper Ingot]] +<br />[[Stick]] +<br />[[Electric Wire]]
-| {{Crafting|A1=Copper Ingot|A2=Copper Ingot|A3=Copper Ingot|B2=Stick|B3=Electric Wire|C1=Copper Ingot|C2=Copper Ingot|C3=Copper Ingot|Output=Powered Rail,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/powered_rail_from_copper.json|matcha:crafting/powered_rail_from_copper}}</small>
+| 6 × [[Copper Ingot]] +<br />[[Stick]] +<br />[[Electric Wire]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/powered_rail_from_copper.json|matcha:crafting/powered_rail_from_copper}}</small>
 |-
 | [[Powered Rail]]
-| 6 × [[Gold Ingot]] +<br />[[Stick]] +<br />[[Electric Wire]]
-| {{Crafting|A1=Gold Ingot|A2=Gold Ingot|A3=Gold Ingot|B2=Stick|B3=Electric Wire|C1=Gold Ingot|C2=Gold Ingot|C3=Gold Ingot|Output=Powered Rail,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/powered_rail_from_gold.json|matcha:crafting/powered_rail_from_gold}}</small>
+| 6 × [[Gold Ingot]] +<br />[[Stick]] +<br />[[Electric Wire]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/powered_rail_from_gold.json|matcha:crafting/powered_rail_from_gold}}</small>
 |-
 | [[Purple Banner]]
-| 6 × [[Purple Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Purple Wool|A2=Purple Wool|B1=Purple Wool|B2=Purple Wool|B3=Stick|C1=Purple Wool|C2=Purple Wool|Output=Purple Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/purple_banner.json|matcha:crafting/purple_banner}}</small>
+| 6 × [[Purple Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/purple_banner.json|matcha:crafting/purple_banner}}</small>
 |-
 | [[Rail]]
-| 6 × [[Iron Ingot]] +<br />[[Stick]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B2=Stick|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Rail,32}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/rail_from_iron.json|matcha:crafting/rail_from_iron}}</small>
+| 6 × [[Iron Ingot]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/rail_from_iron.json|matcha:crafting/rail_from_iron}}</small>
 |-
 | [[Rail]]
-| 6 × [[Steel Alloy]] +<br />[[Stick]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B2=Stick|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Rail,64}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/rail_from_steel.json|matcha:crafting/rail_from_steel}}</small>
+| 6 × [[Steel Alloy]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/rail_from_steel.json|matcha:crafting/rail_from_steel}}</small>
 |-
 | [[Red Banner]]
-| 6 × [[Red Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Red Wool|A2=Red Wool|B1=Red Wool|B2=Red Wool|B3=Stick|C1=Red Wool|C2=Red Wool|Output=Red Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/red_banner.json|matcha:crafting/red_banner}}</small>
+| 6 × [[Red Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/red_banner.json|matcha:crafting/red_banner}}</small>
 |-
 | [[Electric Inverter]]
-| [[Electric Wire]] +<br />[[Stick]]
-| {{Crafting|A1=Electric Wire|A2=Stick|Output=Electric Inverter,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/redstone_torch.json|matcha:crafting/redstone_torch}}</small>
+| [[Electric Wire]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/redstone_torch.json|matcha:crafting/redstone_torch}}</small>
 |-
 | [[Snow Shovel]]
-| 5 × [[Iron Ingot]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|B1=Iron Ingot|B2=Stick|B3=Stick|C1=Iron Ingot|C2=Iron Ingot|Output=Snow Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/snow_shovel.json|matcha:crafting/snow_shovel}}</small>
+| 5 × [[Iron Ingot]] +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/snow_shovel.json|matcha:crafting/snow_shovel}}</small>
 |-
 | [[Tinder]]
-| 2 × [[Stick]] +<br />[[Short Grass]] or [[Fern]] or [[Bush]]
-| {{Crafting|A1=Stick|B1=Short Grass;Fern;Bush|C1=Stick|Output=Tinder|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/tinder.json|matcha:crafting/tinder}}</small>
+| 2 × [[Stick]] +<br />[[Short Grass]] or [[Fern]] or [[Bush]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/tinder.json|matcha:crafting/tinder}}</small>
 |-
 | [[Torch]]
-| [[Coal]] or [[Charcoal]] +<br />[[Stick]]
-| {{Crafting|A1=Coal;Charcoal|A2=Stick|Output=Torch,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/torch.json|matcha:crafting/torch}}</small>
+| [[Coal]] or [[Charcoal]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/torch.json|matcha:crafting/torch}}</small>
 |-
 | [[Torch]]
-| [[Short Dry Grass]] +<br />[[Stick]]
-| {{Crafting|A1=Short Dry Grass|A2=Stick|Output=Torch,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/torch_from_short_dry_grass.json|matcha:crafting/torch_from_short_dry_grass}}</small>
+| [[Short Dry Grass]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/torch_from_short_dry_grass.json|matcha:crafting/torch_from_short_dry_grass}}</small>
 |-
 | [[White Banner]]
-| 6 × [[White Wool]] +<br />[[Stick]]
-| {{Crafting|A1=White Wool|A2=White Wool|B1=White Wool|B2=White Wool|B3=Stick|C1=White Wool|C2=White Wool|Output=White Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/white_banner.json|matcha:crafting/white_banner}}</small>
+| 6 × [[White Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/white_banner.json|matcha:crafting/white_banner}}</small>
 |-
 | [[Wooden Axe]]
-| 3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]
-| {{Crafting|A1=Any Wooden Tool Materials|A2=Any Wooden Tool Materials|B1=Any Wooden Tool Materials|B2=Stick|B3=Stick|Output=Wooden Axe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_axe.json|matcha:crafting/wooden_axe}}</small>
+| 3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_axe.json|matcha:crafting/wooden_axe}}</small>
 |-
 | [[Wooden Cross]]
-| 4 × [[Stick]] +<br />[[Estus Ash]]
-| {{Crafting|A2=Stick|B1=Stick|B2=Estus Ash|B3=Stick|C2=Stick|Output=Wooden Cross}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_cross.json|matcha:crafting/wooden_cross}}</small>
+| 4 × [[Stick]] +<br />[[Estus Ash]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_cross.json|matcha:crafting/wooden_cross}}</small>
 |-
 | [[Wooden Hoe]]
-| 2 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]
-| {{Crafting|A1=Any Wooden Tool Materials|B1=Any Wooden Tool Materials|B2=Stick|B3=Stick|Output=Wooden Hoe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_hoe.json|matcha:crafting/wooden_hoe}}</small>
+| 2 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_hoe.json|matcha:crafting/wooden_hoe}}</small>
 |-
 | [[Wooden Pickaxe]]
-| 3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]
-| {{Crafting|A1=Any Wooden Tool Materials|B1=Any Wooden Tool Materials|B2=Stick|B3=Stick|C1=Any Wooden Tool Materials|Output=Wooden Pickaxe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_pickaxe.json|matcha:crafting/wooden_pickaxe}}</small>
+| 3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_pickaxe.json|matcha:crafting/wooden_pickaxe}}</small>
 |-
 | [[Wooden Shovel]]
-| <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]
-| {{Crafting|A1=Any Wooden Tool Materials|A2=Stick|A3=Stick|Output=Wooden Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_shovel.json|matcha:crafting/wooden_shovel}}</small>
+| <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_shovel.json|matcha:crafting/wooden_shovel}}</small>
 |-
 | [[Wooden Spear]]
-| <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]
-| {{Crafting|A3=Stick|B2=Stick|C1=Any Wooden Tool Materials|Output=Wooden Spear}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_spear.json|matcha:crafting/wooden_spear}}</small>
+| <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_spear.json|matcha:crafting/wooden_spear}}</small>
 |-
 | [[Wooden Sword]]
-| 2 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />[[Stick]]
-| {{Crafting|A1=Any Wooden Tool Materials|A2=Any Wooden Tool Materials|A3=Stick|Output=Wooden Sword}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_sword.json|matcha:crafting/wooden_sword}}</small>
+| 2 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_sword.json|matcha:crafting/wooden_sword}}</small>
 |-
 | [[Yellow Banner]]
-| 6 × [[Yellow Wool]] +<br />[[Stick]]
-| {{Crafting|A1=Yellow Wool|A2=Yellow Wool|B1=Yellow Wool|B2=Yellow Wool|B3=Stick|C1=Yellow Wool|C2=Yellow Wool|Output=Yellow Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/yellow_banner.json|matcha:crafting/yellow_banner}}</small>
+| 6 × [[Yellow Wool]] +<br />[[Stick]]<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/yellow_banner.json|matcha:crafting/yellow_banner}}</small>
 |-
 | [[Acacia Fence]] <small>(vanilla recipe)</small>
 | 4 × [[Acacia Planks]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Acacia Planks|A2=Acacia Planks|B1=Stick|B2=Stick|C1=Acacia Planks|C2=Acacia Planks|Output=Acacia Fence,3}}
 |-
 | [[Acacia Fence Gate]] <small>(vanilla recipe)</small>
 | 4 × [[Stick]] +<br />2 × [[Acacia Planks]]
-| {{Crafting|A1=Stick|A2=Stick|B1=Acacia Planks|B2=Acacia Planks|C1=Stick|C2=Stick|Output=Acacia Fence Gate}}
 |-
 | [[Acacia Sign]] <small>(vanilla recipe)</small>
 | 6 × [[Acacia Planks]] +<br />[[Stick]]
-| {{Crafting|A1=Acacia Planks|A2=Acacia Planks|B1=Acacia Planks|B2=Acacia Planks|B3=Stick|C1=Acacia Planks|C2=Acacia Planks|Output=Acacia Sign,3}}
 |-
 | [[Armor Stand]] <small>(vanilla recipe)</small>
 | 6 × [[Stick]] +<br />[[Smooth Stone Slab]]
-| {{Crafting|A1=Stick|A3=Stick|B1=Stick|B2=Stick|B3=Smooth Stone Slab|C1=Stick|C3=Stick|Output=Armor Stand}}
 |-
 | [[Bamboo Fence]] <small>(vanilla recipe)</small>
 | 4 × [[Bamboo Planks]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Bamboo Planks|A2=Bamboo Planks|B1=Stick|B2=Stick|C1=Bamboo Planks|C2=Bamboo Planks|Output=Bamboo Fence,3}}
 |-
 | [[Bamboo Fence Gate]] <small>(vanilla recipe)</small>
 | 4 × [[Stick]] +<br />2 × [[Bamboo Planks]]
-| {{Crafting|A1=Stick|A2=Stick|B1=Bamboo Planks|B2=Bamboo Planks|C1=Stick|C2=Stick|Output=Bamboo Fence Gate}}
 |-
 | [[Bamboo Sign]] <small>(vanilla recipe)</small>
 | 6 × [[Bamboo Planks]] +<br />[[Stick]]
-| {{Crafting|A1=Bamboo Planks|A2=Bamboo Planks|B1=Bamboo Planks|B2=Bamboo Planks|B3=Stick|C1=Bamboo Planks|C2=Bamboo Planks|Output=Bamboo Sign,3}}
 |-
 | [[Birch Fence]] <small>(vanilla recipe)</small>
 | 4 × [[Birch Planks]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Birch Planks|A2=Birch Planks|B1=Stick|B2=Stick|C1=Birch Planks|C2=Birch Planks|Output=Birch Fence,3}}
 |-
 | [[Birch Fence Gate]] <small>(vanilla recipe)</small>
 | 4 × [[Stick]] +<br />2 × [[Birch Planks]]
-| {{Crafting|A1=Stick|A2=Stick|B1=Birch Planks|B2=Birch Planks|C1=Stick|C2=Stick|Output=Birch Fence Gate}}
 |-
 | [[Birch Sign]] <small>(vanilla recipe)</small>
 | 6 × [[Birch Planks]] +<br />[[Stick]]
-| {{Crafting|A1=Birch Planks|A2=Birch Planks|B1=Birch Planks|B2=Birch Planks|B3=Stick|C1=Birch Planks|C2=Birch Planks|Output=Birch Sign,3}}
 |-
 | [[Bow]] <small>(vanilla recipe)</small>
 | 3 × [[Stick]] +<br />3 × [[String]]
-| {{Crafting|A2=Stick|B1=Stick|B3=Stick|C1=String|C2=String|C3=String|Output=Bow}}
 |-
 | [[Brush]] <small>(vanilla recipe)</small>
 | [[Feather]] +<br />[[Copper Ingot]] +<br />[[Stick]]
-| {{Crafting|A1=Feather|A2=Copper Ingot|A3=Stick|Output=Brush}}
 |-
 | [[Cherry Fence]] <small>(vanilla recipe)</small>
 | 4 × [[Cherry Planks]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Cherry Planks|A2=Cherry Planks|B1=Stick|B2=Stick|C1=Cherry Planks|C2=Cherry Planks|Output=Cherry Fence,3}}
 |-
 | [[Cherry Fence Gate]] <small>(vanilla recipe)</small>
 | 4 × [[Stick]] +<br />2 × [[Cherry Planks]]
-| {{Crafting|A1=Stick|A2=Stick|B1=Cherry Planks|B2=Cherry Planks|C1=Stick|C2=Stick|Output=Cherry Fence Gate}}
 |-
 | [[Cherry Sign]] <small>(vanilla recipe)</small>
 | 6 × [[Cherry Planks]] +<br />[[Stick]]
-| {{Crafting|A1=Cherry Planks|A2=Cherry Planks|B1=Cherry Planks|B2=Cherry Planks|B3=Stick|C1=Cherry Planks|C2=Cherry Planks|Output=Cherry Sign,3}}
 |-
 | [[Crimson Fence]] <small>(vanilla recipe)</small>
 | 4 × [[Crimson Planks]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Crimson Planks|A2=Crimson Planks|B1=Stick|B2=Stick|C1=Crimson Planks|C2=Crimson Planks|Output=Crimson Fence,3}}
 |-
 | [[Crimson Fence Gate]] <small>(vanilla recipe)</small>
 | 4 × [[Stick]] +<br />2 × [[Crimson Planks]]
-| {{Crafting|A1=Stick|A2=Stick|B1=Crimson Planks|B2=Crimson Planks|C1=Stick|C2=Stick|Output=Crimson Fence Gate}}
 |-
 | [[Crimson Sign]] <small>(vanilla recipe)</small>
 | 6 × [[Crimson Planks]] +<br />[[Stick]]
-| {{Crafting|A1=Crimson Planks|A2=Crimson Planks|B1=Crimson Planks|B2=Crimson Planks|B3=Stick|C1=Crimson Planks|C2=Crimson Planks|Output=Crimson Sign,3}}
 |-
 | [[Crossbow]] <small>(vanilla recipe)</small>
 | 3 × [[Stick]] +<br />[[Iron Ingot]] +<br />2 × [[String]] +<br />[[Tripwire Hook]]
-| {{Crafting|A1=Stick|A2=String|B1=Iron Ingot|B2=Tripwire Hook|B3=Stick|C1=Stick|C2=String|Output=Crossbow}}
 |-
 | [[Dark Oak Fence]] <small>(vanilla recipe)</small>
 | 4 × [[Dark Oak Planks]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Dark Oak Planks|A2=Dark Oak Planks|B1=Stick|B2=Stick|C1=Dark Oak Planks|C2=Dark Oak Planks|Output=Dark Oak Fence,3}}
 |-
 | [[Dark Oak Fence Gate]] <small>(vanilla recipe)</small>
 | 4 × [[Stick]] +<br />2 × [[Dark Oak Planks]]
-| {{Crafting|A1=Stick|A2=Stick|B1=Dark Oak Planks|B2=Dark Oak Planks|C1=Stick|C2=Stick|Output=Dark Oak Fence Gate}}
 |-
 | [[Dark Oak Sign]] <small>(vanilla recipe)</small>
 | 6 × [[Dark Oak Planks]] +<br />[[Stick]]
-| {{Crafting|A1=Dark Oak Planks|A2=Dark Oak Planks|B1=Dark Oak Planks|B2=Dark Oak Planks|B3=Stick|C1=Dark Oak Planks|C2=Dark Oak Planks|Output=Dark Oak Sign,3}}
 |-
 | [[Fishing Rod]] <small>(vanilla recipe)</small>
 | 3 × [[Stick]] +<br />2 × [[String]]
-| {{Crafting|A3=Stick|B2=Stick|C1=Stick|C2=String|C3=String|Output=Fishing Rod}}
 |-
 | [[Grindstone]] <small>(vanilla recipe)</small>
 | 2 × [[Stick]] +<br />[[Stone Slab]] +<br />2 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
-| {{Crafting|A1=Stick|A2=Any Planks|B1=Stone Slab|C1=Stick|C2=Any Planks|Output=Grindstone}}
 |-
 | [[Jungle Fence]] <small>(vanilla recipe)</small>
 | 4 × [[Jungle Planks]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Jungle Planks|A2=Jungle Planks|B1=Stick|B2=Stick|C1=Jungle Planks|C2=Jungle Planks|Output=Jungle Fence,3}}
 |-
 | [[Jungle Fence Gate]] <small>(vanilla recipe)</small>
 | 4 × [[Stick]] +<br />2 × [[Jungle Planks]]
-| {{Crafting|A1=Stick|A2=Stick|B1=Jungle Planks|B2=Jungle Planks|C1=Stick|C2=Stick|Output=Jungle Fence Gate}}
 |-
 | [[Jungle Sign]] <small>(vanilla recipe)</small>
 | 6 × [[Jungle Planks]] +<br />[[Stick]]
-| {{Crafting|A1=Jungle Planks|A2=Jungle Planks|B1=Jungle Planks|B2=Jungle Planks|B3=Stick|C1=Jungle Planks|C2=Jungle Planks|Output=Jungle Sign,3}}
 |-
 | [[Lever]] <small>(vanilla recipe)</small>
 | [[Stick]] +<br />[[Cobblestone]]
-| {{Crafting|A1=Stick|A2=Cobblestone|Output=Lever}}
 |-
 | [[Mangrove Fence]] <small>(vanilla recipe)</small>
 | 4 × [[Mangrove Planks]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Mangrove Planks|A2=Mangrove Planks|B1=Stick|B2=Stick|C1=Mangrove Planks|C2=Mangrove Planks|Output=Mangrove Fence,3}}
 |-
 | [[Mangrove Fence Gate]] <small>(vanilla recipe)</small>
 | 4 × [[Stick]] +<br />2 × [[Mangrove Planks]]
-| {{Crafting|A1=Stick|A2=Stick|B1=Mangrove Planks|B2=Mangrove Planks|C1=Stick|C2=Stick|Output=Mangrove Fence Gate}}
 |-
 | [[Mangrove Sign]] <small>(vanilla recipe)</small>
 | 6 × [[Mangrove Planks]] +<br />[[Stick]]
-| {{Crafting|A1=Mangrove Planks|A2=Mangrove Planks|B1=Mangrove Planks|B2=Mangrove Planks|B3=Stick|C1=Mangrove Planks|C2=Mangrove Planks|Output=Mangrove Sign,3}}
 |-
 | [[Oak Fence]] <small>(vanilla recipe)</small>
 | 4 × [[Oak Planks]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Oak Planks|A2=Oak Planks|B1=Stick|B2=Stick|C1=Oak Planks|C2=Oak Planks|Output=Oak Fence,3}}
 |-
 | [[Oak Fence Gate]] <small>(vanilla recipe)</small>
 | 4 × [[Stick]] +<br />2 × [[Oak Planks]]
-| {{Crafting|A1=Stick|A2=Stick|B1=Oak Planks|B2=Oak Planks|C1=Stick|C2=Stick|Output=Oak Fence Gate}}
 |-
 | [[Oak Sign]] <small>(vanilla recipe)</small>
 | 6 × [[Oak Planks]] +<br />[[Stick]]
-| {{Crafting|A1=Oak Planks|A2=Oak Planks|B1=Oak Planks|B2=Oak Planks|B3=Stick|C1=Oak Planks|C2=Oak Planks|Output=Oak Sign,3}}
 |-
 | [[Painting]] <small>(vanilla recipe)</small>
 | 8 × [[Stick]] +<br /><span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
-| {{Crafting|A1=Stick|A2=Stick|A3=Stick|B1=Stick|B2=Any Wool|B3=Stick|C1=Stick|C2=Stick|C3=Stick|Output=Painting}}
 |-
 | [[Pale Oak Fence]] <small>(vanilla recipe)</small>
 | 4 × [[Pale Oak Planks]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Pale Oak Planks|A2=Pale Oak Planks|B1=Stick|B2=Stick|C1=Pale Oak Planks|C2=Pale Oak Planks|Output=Pale Oak Fence,3}}
 |-
 | [[Pale Oak Fence Gate]] <small>(vanilla recipe)</small>
 | 4 × [[Stick]] +<br />2 × [[Pale Oak Planks]]
-| {{Crafting|A1=Stick|A2=Stick|B1=Pale Oak Planks|B2=Pale Oak Planks|C1=Stick|C2=Stick|Output=Pale Oak Fence Gate}}
 |-
 | [[Pale Oak Sign]] <small>(vanilla recipe)</small>
 | 6 × [[Pale Oak Planks]] +<br />[[Stick]]
-| {{Crafting|A1=Pale Oak Planks|A2=Pale Oak Planks|B1=Pale Oak Planks|B2=Pale Oak Planks|B3=Stick|C1=Pale Oak Planks|C2=Pale Oak Planks|Output=Pale Oak Sign,3}}
 |-
 | [[Spruce Fence]] <small>(vanilla recipe)</small>
 | 4 × [[Spruce Planks]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Spruce Planks|A2=Spruce Planks|B1=Stick|B2=Stick|C1=Spruce Planks|C2=Spruce Planks|Output=Spruce Fence,3}}
 |-
 | [[Spruce Fence Gate]] <small>(vanilla recipe)</small>
 | 4 × [[Stick]] +<br />2 × [[Spruce Planks]]
-| {{Crafting|A1=Stick|A2=Stick|B1=Spruce Planks|B2=Spruce Planks|C1=Stick|C2=Stick|Output=Spruce Fence Gate}}
 |-
 | [[Spruce Sign]] <small>(vanilla recipe)</small>
 | 6 × [[Spruce Planks]] +<br />[[Stick]]
-| {{Crafting|A1=Spruce Planks|A2=Spruce Planks|B1=Spruce Planks|B2=Spruce Planks|B3=Stick|C1=Spruce Planks|C2=Spruce Planks|Output=Spruce Sign,3}}
 |-
 | [[Tripwire Hook]] <small>(vanilla recipe)</small>
 | [[Iron Ingot]] +<br />[[Stick]] +<br /><span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
-| {{Crafting|A1=Iron Ingot|A2=Stick|A3=Any Planks|Output=Tripwire Hook,2}}
 |-
 | [[Warped Fence]] <small>(vanilla recipe)</small>
 | 4 × [[Warped Planks]] +<br />2 × [[Stick]]
-| {{Crafting|A1=Warped Planks|A2=Warped Planks|B1=Stick|B2=Stick|C1=Warped Planks|C2=Warped Planks|Output=Warped Fence,3}}
 |-
 | [[Warped Fence Gate]] <small>(vanilla recipe)</small>
 | 4 × [[Stick]] +<br />2 × [[Warped Planks]]
-| {{Crafting|A1=Stick|A2=Stick|B1=Warped Planks|B2=Warped Planks|C1=Stick|C2=Stick|Output=Warped Fence Gate}}
 |-
 | [[Warped Sign]] <small>(vanilla recipe)</small>
 | 6 × [[Warped Planks]] +<br />[[Stick]]
-| {{Crafting|A1=Warped Planks|A2=Warped Planks|B1=Warped Planks|B2=Warped Planks|B3=Stick|C1=Warped Planks|C2=Warped Planks|Output=Warped Sign,3}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -2,13 +2,13 @@
 '''Natural regeneration''' is turned off in [[Matcha Flavoured]]. A player's [[health]] never recovers on its own, however full they are; it has to be restored with [[food]] and other healing sources.
 
 == Mechanics ==
-When a player first joins a world, the pack sets the game rule <code>natural_health_regeneration</code> to <code>false</code>.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref> The rule is set from the reward of the root advancement, so it can be turned back on with <code>/gamerule</code>, but it is set to <code>false</code> again whenever a new player joins.<ref>{{Source|MF_datapack/data/matcha/function/setup/first_load.mcfunction}}</ref>
+When a player first joins a world, the pack sets the game rule <code>natural_health_regeneration</code> to <code>false</code>.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref> The rule is set from the reward of the root advancement, so it can be turned back on with <code>/gamerule</code>, but it is set to <code>false</code> again whenever a new player joins or a player first joins after the pack is updated.<ref>{{Source|MF_datapack/data/matcha/function/setup/first_load.mcfunction}}</ref>
 
 The [[hunger]] bar is also hidden and held just above the sprinting threshold, so even with the game rule on, the food level would not reach the level vanilla needs for regeneration.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
 
 === Healing instead ===
 * Most [[food]] heals through {{MCW|Instant Health}} or {{EffectLink|Regeneration}}.
-* {{ItemLink|Raw Estus}}, dropped by undead mobs, heals the player when picked up.
+* {{ItemLink|Raw Estus}}, dropped by zombies and their variants, heals the player when picked up.
 * [[Warding Stone|Warding stones]] heal nearby players.
 * A [[Crystal Heart|crystal heart]] heals with Regeneration XI when used.
 

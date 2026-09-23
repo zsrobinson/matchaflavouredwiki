@@ -2,8 +2,8 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Cobweb|mcw=Cobweb}} || 1 || 50.0% || 50.0% || tool: Iron Shears, Silk Touch
+| {{ItemLink|Cobweb|mcw=Cobweb}} || 1 || 100% || 100% || tool: Iron Shears, Silk Touch
 |-
-| {{ItemLink|String}} || 1 || 50.0% || 50.0% || 
+| {{ItemLink|String}} || 1 || 100% || 100% || without tool: Iron Shears, Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,8 +1,6 @@
 <includeonly>{| class="wikitable sortable"
 ! Source !! Kind !! Level !! Duration
 |-
-| [[Shakudo Weapon]] || Enchantment || — || data-sort-value="1000000000" | while active
-|-
 | {{ItemLink|Paneer Makhani}} || Food || I || data-sort-value="12000" | 10:00
 |-
 | {{ItemLink|Apple Empanada}} || Food || I || data-sort-value="3600" | 3:00
@@ -26,4 +24,6 @@
 | {{ItemLink|Canned Golden Apples}} || Food || II || data-sort-value="400" | 0:20
 |-
 | {{ItemLink|Baked Apple}} || Food || I || data-sort-value="200" | 0:10
+|-
+| {{G|Health}}{{G|Attack damage}} [[Shakudo equipment|Life steal]] || Intrinsic || — || data-sort-value="1000000000" | while active
 |}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>

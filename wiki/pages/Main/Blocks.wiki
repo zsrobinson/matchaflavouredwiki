@@ -53,13 +53,13 @@ The pack's language file gives these blocks new names. Blocks that belong to oth
 |-
 | [[Ores|Ores]] || Every vanilla ore || See [[Ores]]
 |}
-Items renamed in this area include [[Electric Wire]] (redstone dust), [[Phosphor]] (glow ink sac), [[Hellbrick]] (nether brick), [[Hellspore]] (nether wart), [[Sulfur Chunk]] (gunpowder), [[Quartz]] (nether quartz), [[Fire Starter]] (flint and steel) and [[Glass Bottle#Water bottle|Water Bottle]] (the contentless potion shown in recipes).
+Items renamed in this area include [[Electric Wire]] (redstone dust), [[Phosphor]] (glow ink sac), [[Hellbrick]] (nether brick), [[Hellspore]] (nether wart), [[Sulfur Chunk]] (gunpowder), [[Quartz]] (nether quartz), [[Fire Starter]] (flint and steel) and [[Glass Bottle#Water bottle|water bottle]] (the contentless potion shown in recipes).
 
 == Recipe changes ==
 The datapack removes over 350 vanilla recipes in its <code>pack.mcmeta</code> filter and adds its own.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> For blocks, the changes follow a few patterns:
 * '''Cheaper basics.''' [[Chest]]s can be crafted from 8 logs (4 chests), [[Glass Bottle|glass bottles]] come 3 per glass, [[Electric Inverter|electric inverters]] 8 per craft, ladders 8 per craft, [[TNT]] 2 per craft, and [[Chain|chains]] 18 from three iron ingots.
 * '''Early access.''' Blocks that vanilla locks behind late-game materials get recipes from common ones: [[Sack]]s from sturdy leather, [[Malachite|malachite]] from copper, [[Phosphor lamps|phosphor lamps]] and [[Phosphor Rod|phosphor rods]] from glow lichen, and [[Electric Wire|electric wire]] from copper ingots.
-* '''Everything can be undone.''' Two slabs of nearly any material craft back into the full block, stairs cut back into their block in the [[stonecutter]], and many compressed blocks can be uncrafted (bamboo, ice, sculk, melons, amethyst).<ref>{{Cite changelog|0.6-alpha|quote=All slabs can be crafted back into their original block}}</ref> Chiseled blocks move from the crafting grid to the stonecutter.
+* '''Everything can be undone.''' Two slabs of nearly any material craft back into the full block, stairs cut back into their block in the [[stonecutter]], and many compressed blocks can be uncrafted (bamboo, ice, melons, amethyst).<ref>{{Cite changelog|0.6-alpha|quote=All slabs can be crafted back into their original block}}</ref> Chiseled blocks move from the crafting grid to the stonecutter.
 * '''The stonecutter works with wood, metal and glass.''' See [[Stonecutter]] for the full list of 348 added recipes.
 * '''Firing moves to the right station.''' Stone, bricks, glass and terracotta are fired in a [[Mud Kiln|mud kiln]], and metal-like conversions (cobblestone to [[gravel]] to [[sand]], hellstone to [[hellbrick]], cracked bricks) happen in a [[Blast Furnace|blast furnace]]. Stone and copper can no longer be cooked in an [[oven]].<ref>{{Cite changelog|1.12.1-alpha|quote=Blocked Stone cooking (only kilning)}}</ref>
 * '''Cloning.''' Most small flowers, dripleaves, spore blossoms and [[Lily Pad|lily pad]]s can be multiplied fourfold with a water bottle and bone meal. See [[Hyacinth#Cloning]].

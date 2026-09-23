@@ -26,7 +26,7 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Sheep <small>({{Source|vanilla:loot_table/shearing/sheep.json|shearing/sheep}})</small> || 1 || 6.25% || entity condition
+| Sheep <small>({{Source|vanilla:loot_table/shearing/sheep.json|shearing/sheep}})</small> || 1 || 100% || entity condition
 |}
 
 '''Block drops'''

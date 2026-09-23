@@ -35,6 +35,6 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Wheat <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/wheat.json|blocks/wheat}})</small> || 1 || 50.0% || block state property
+| Wheat <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/wheat.json|blocks/wheat}})</small> || 1 || 100% || block state property
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

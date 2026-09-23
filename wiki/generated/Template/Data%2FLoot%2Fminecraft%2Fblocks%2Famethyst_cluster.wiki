@@ -2,10 +2,10 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Amethyst Cluster|mcw=Amethyst Cluster}} || 1 || 33.3% || 33.3% || Silk Touch
+| {{ItemLink|Amethyst Cluster|mcw=Amethyst Cluster}} || 1 || 100% || 100% || Silk Touch
 |-
-| {{ItemLink|Amethyst Shard}} || 4 || 33.3% || 33.3% || tool: #minecraft:cluster_max_harvestables
+| {{ItemLink|Amethyst Shard}} || 4 || 100% || 100% || tool: #minecraft:cluster_max_harvestables
 |-
-| {{ItemLink|Amethyst Shard}} || 2 || 33.3% || 33.3% || 
+| {{ItemLink|Amethyst Shard}} || 2 || 100% || 100% || without Silk Touch, tool: #minecraft:cluster_max_harvestables
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

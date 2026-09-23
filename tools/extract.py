@@ -525,11 +525,22 @@ def walk_entries(entries, pool_ctx, out, src):
                         'conditions': e.get('conditions'), 'functions': [f.get('function') for f in e.get('functions', [])],
                         **pool_ctx})
         elif t == 'loot_table':
+            # set_count on a loot_table entry applies to every stack the nested table yields
+            count = next((fn.get('count') for fn in e.get('functions', [])
+                          if fn.get('function', '').split(':')[-1] == 'set_count' and not fn.get('add')), None)
             out.append({'loot_table': e.get('value') if isinstance(e.get('value'), str) else e.get('name'),
-                        'weight': e.get('weight', 1), 'quality': e.get('quality'),
+                        'count': count, 'weight': e.get('weight', 1), 'quality': e.get('quality'),
                         'conditions': e.get('conditions'), **pool_ctx})
         elif t in ('alternatives', 'group', 'sequence'):
+            # the children share the parent's single weighted slot in the pool (an alternatives entry
+            # gives only its first child whose conditions pass, e.g. Silk Touch or else the normal drop)
+            start = len(out)
             walk_entries(e.get('children', []), pool_ctx, out, src)
+            slot = '%s/%d' % (pool_ctx.get('pool'), start)
+            for child in out[start:]:  # nested alternatives flatten into the outer slot, in order
+                child['slot'], child['slot_kind'], child['weight'] = slot, t, e.get('weight', 1)
+                if e.get('conditions'):
+                    child['conditions'] = (e.get('conditions') or []) + (child.get('conditions') or [])
         elif t == 'tag':
             out.append({'tag': e.get('name'), 'weight': e.get('weight', 1), 'conditions': e.get('conditions'), **pool_ctx})
         elif t == 'empty':

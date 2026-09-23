@@ -18,9 +18,7 @@ Oil is used for frying and in every oven-meal [[stock]]. Obtaining oil unlocks t
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Added oil. Curries, ramen, gimmari and pupusas use it.}}
-|-
-! Upcoming
-| The advancement that returns glass bottles after crafting was updated to the pack's current recipe IDs. In 1.12.2 it still used the old <code>main:</code> namespace for most food recipes, so crafting them didn't give the glass bottle back.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
+{{History line|Upcoming|2=The advancement that returns glass bottles after crafting was updated to the pack's current recipe IDs. In 1.12.2 it still used the old <code>main:</code> namespace for most food recipes, so crafting them didn't give the glass bottle back.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>}}
 }}
 
 == See also ==

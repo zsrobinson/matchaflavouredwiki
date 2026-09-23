@@ -2,25 +2,7 @@
 |title={{{title|Matcha Flavoured {{{version}}}}}}
 |type={{{type}}}
 |type_label=Release type
-|extrarows=
-{{!}}-
-! Release name
-{{!}} {{{name|—}}}
-{{!}}-
-! Release date
-{{!}} {{{date}}}
-{{!}}-
-! ''Minecraft'' version
-{{!}} ''Java Edition'' {{{game|26.2}}}{{#if:{{{files|}}}|<nowiki/>
-{{!}}-
-! Files
-{{!}} {{{files}}}}}{{#if:{{{prev|}}}|<nowiki/>
-{{!}}-
-! Previous
-{{!}} {{Version|{{{prev}}}}}}}{{#if:{{{next|}}}|<nowiki/>
-{{!}}-
-! Next
-{{!}} {{Version|{{{next}}}}}}}
+|extrarows=<tr><th>Release name</th><td>{{{name|—}}}</td></tr><tr><th>Release date</th><td>{{{date}}}</td></tr><tr><th>''Minecraft'' version</th><td>''Java Edition'' {{{game|26.2}}}</td></tr>{{#if:{{{files|}}}|<tr><th>Files</th><td>{{{files}}}</td></tr>}}{{#if:{{{prev|}}}|<tr><th>Previous</th><td>{{Version|{{{prev}}}}}</td></tr>}}{{#if:{{{next|}}}|<tr><th>Next</th><td>{{Version|{{{next}}}}}</td></tr>}}
 }}</includeonly><noinclude>
 Infobox for a release page (meta area). Parameters: <code>version</code>, <code>name</code> (the Modrinth release title), <code>type</code> (Alpha, Release, Beta), <code>date</code>, <code>game</code> (''Minecraft'' version, default 26.2), <code>files</code>, <code>prev</code>, <code>next</code>.
 

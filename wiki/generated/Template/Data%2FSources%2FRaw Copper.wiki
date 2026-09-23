@@ -14,8 +14,8 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Copper ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/copper_ore.json|blocks/copper_ore}})</small> || 1–2 || 33.3% || 
+| Copper ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/copper_ore.json|blocks/copper_ore}})</small> || 1–2 || 100% || without Silk Touch, specific tool
 |-
-| Deepslate copper ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_copper_ore.json|blocks/deepslate_copper_ore}})</small> || 2–5 || 33.3% || 
+| Deepslate copper ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_copper_ore.json|blocks/deepslate_copper_ore}})</small> || 2–5 || 100% || without Silk Touch, specific tool
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

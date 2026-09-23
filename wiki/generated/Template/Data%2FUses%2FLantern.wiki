@@ -1,8 +1,0 @@
-<includeonly>{| class="wikitable recipe-table"
-! Name !! Ingredients !! Recipe
-|-
-| [[Copper Eye Lantern]]
-| [[Command Block]] +<br />[[Lantern]] +<br />[[Copper Eye]]
-| {{Crafting|A1=Command Block|B1=Lantern|C1=Copper Eye|Output=Copper Eye Lantern|shapeless=1}}<br /><small>{{Source|MF_datapack/data/debug/recipe/copper_eye_lantern.json|debug:copper_eye_lantern}}</small>
-|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
-[[Category:Generated data]]</noinclude>

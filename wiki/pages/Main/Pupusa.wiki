@@ -15,8 +15,9 @@ Eating a pupusa takes 1.6 seconds and heals {{Hp|3}}.
 
 == History ==
 {{History|
-{{History line|1.10|Pupusa recipe unlock and translatable name added.}}
+{{History line|1.10|Pupusa recipe unlock listed as fixed and translatable name added.}}
 {{History line|1.12.1-alpha|Pupusas use oil.}}
+{{History line|Upcoming|2=Crafting pupusas returns the oil's glass bottle. In 1.12.2 the advancement behind this still used an old recipe ID, so the bottle was lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>}}
 }}
 
 == See also ==

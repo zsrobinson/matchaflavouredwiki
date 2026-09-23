@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-A '''wooden hoe''' is the [[Wooden equipment|wooden]] [[Tools#Hoe|hoe]], crafted from two planks and two sticks. The pack's README recommends it as one of the first tools: with a [[Kindling|campfire]], it starts the path to [[food]] and the [[mud kiln]].
+A '''wooden hoe''' is a [[Tools#Hoe|hoe]] of the [[Wooden equipment|wooden]] tier, crafted from two planks and two sticks. The pack's README recommends it as one of the first tools: with a [[Kindling|campfire]], it starts the path to [[food]] and the [[mud kiln]].
 
 == Obtaining ==
 
@@ -15,7 +15,7 @@ A '''wooden hoe''' is the [[Wooden equipment|wooden]] [[Tools#Hoe|hoe]], crafted
 == Usage ==
 
 === Farming ===
-It tills soil and breaks hoe blocks at the vanilla speed of 2, with 200 durability (vanilla: 59). Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref> Using a hoe on grass can drop wheat seeds.
+It tills soil and breaks hoe blocks at the vanilla speed of 2, with 200 durability (vanilla: 59). Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref> Breaking short grass with a hoe has a 12.5% chance to drop wheat seeds.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/short_grass.json}}</ref>
 
 === Combat ===
 It deals {{Hp|1}} damage at an attack speed of 1.

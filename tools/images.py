@@ -363,9 +363,13 @@ def main():
                 continue
             path, _, name = line.partition('=')
             path, name = path.strip(), name.strip()
-            full = os.path.join(ROOT, path)
-            if os.path.exists(full):
-                upscale(Image.open(full)).save(os.path.join(OUT, name))
+            faces = [os.path.join(ROOT, x.strip()) for x in path.split('+')]
+            if not all(os.path.exists(f) for f in faces):
+                continue
+            if len(faces) == 3:  # top + left + right: an isometric block icon
+                iso_cube(*(first_frame(Image.open(f).convert('RGBA')) for f in faces)).save(os.path.join(OUT, name))
+            else:
+                upscale(Image.open(faces[0])).save(os.path.join(OUT, name))
     print('icons', done, 'no icon', skipped, 'glyphs', glyphs())
 
 

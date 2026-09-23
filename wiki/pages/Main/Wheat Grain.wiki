@@ -7,7 +7,7 @@
 == Obtaining ==
 
 === Breaking grass ===
-Short grass broken with a hoe has a 1 in 8 chance to drop wheat grain, increased by Fortune; otherwise it drops itself. Without a hoe or shears it drops nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/short_grass.json}}</ref>
+Short grass broken with a hoe has a 1 in 8 chance to drop wheat grain (Fortune adds to the count, not the chance); otherwise it drops itself. Without a hoe or shears it drops nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/short_grass.json}}</ref>
 
 === Farming ===
 A fully grown wheat crop drops 1 [[straw]] and 0 to 3 grain, with more from Fortune or the Electrum tool intrinsic. An unripe crop drops 1 grain.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/wheat.json}}</ref>

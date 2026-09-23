@@ -5,7 +5,7 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bubble coral block <small>({{Source|vanilla:loot_table/blocks/bubble_coral_block.json|blocks/bubble_coral_block}})</small> || 1 || 50.0% || 
+| Bubble coral block <small>({{Source|vanilla:loot_table/blocks/bubble_coral_block.json|blocks/bubble_coral_block}})</small> || 1 || 100% || without Silk Touch
 |-
 | Dead bubble coral block <small>({{Source|vanilla:loot_table/blocks/dead_bubble_coral_block.json|blocks/dead_bubble_coral_block}})</small> || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

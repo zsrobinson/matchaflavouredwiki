@@ -25,7 +25,7 @@ When a player hits any copper eye (or target) with any projectile, the advanceme
 # Runs the action of every mechanism whose copper eye is currently powered, which is the one just hit.
 # Revokes the advancement, so the next hit triggers it again.
 
-Every action plays an enchanting table sound for the shooter, shows trial spawner detection particles and an iron golem hurt sound, and then removes the marker. '''Each mechanism works only once.'''
+Every action plays an enchanting table sound for the shooter, shows trial spawner detection particles and plays an iron golem hurt sound (a chain breaking sound for lanterns), and then removes the marker. '''Each mechanism works only once.'''
 
 {| class="wikitable"
 ! Mechanism !! Marker tag !! Effect when shot
@@ -48,7 +48,7 @@ Grates placed by a mechanism are plain (unwaxed) copper grates, while the grates
 '''Copper eye doors''', '''copper eye grates''' and '''copper eye lanterns''' are developer items used to build Abbey rooms. They are spawn eggs that place a mechanism marker. Their recipes are in the <code>debug</code> namespace and require a {{MCW|Command Block}}, so they cannot be crafted in survival:<ref>{{Source|MF_datapack/data/debug/recipe/copper_eye_door.json}}</ref>
 * Copper eye door: command block, iron bars and copper eye.
 * Copper eye grate: command block, waxed copper grate and copper eye.
-* Copper eye lantern: command block, lantern and copper eye. Its item name is written without spaces ("CopperEyeLantern").
+* Copper eye lantern: command block, lantern and copper eye.
 
 A newly placed marker is set up the next time any copper eye is shot: it places a copper eye at its own position and, depending on its type, waxed weathered copper grates on either side (grates), or a chain and a hanging lantern below it (lanterns).<ref>{{Source|MF_datapack/data/matcha/function/abbey/setup_copper_eye_grate.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/abbey/setup_copper_eye_lantern.mcfunction}}</ref>
 

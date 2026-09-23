@@ -20,6 +20,10 @@ jobs:
         with:
           node-version: '22'
       - run: pip install pillow
+      - name: SEO regression tests
+        run: |
+          python3 -m unittest discover -s tests -v
+          node --test tests/worker.test.mjs
       - name: Fetch sources (pack at pinned commit, vanilla data)
         run: tools/fetch_sources.sh
       - name: Start MediaWiki (build-time renderer)
@@ -40,3 +44,5 @@ jobs:
           grep -q "^0 distinct red-link targets" check.txt || (echo "::error::broken links, see above" && exit 1)
       - name: Static export works
         run: python3 tools/export_static.py --out dist
+      - name: Validate static SEO signals
+        run: python3 tools/check_seo.py dist

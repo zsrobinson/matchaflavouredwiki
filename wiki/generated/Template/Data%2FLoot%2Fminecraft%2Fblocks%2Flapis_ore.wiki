@@ -2,10 +2,10 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Quartz Deposit}} || 1 || 33.3% || 33.3% || Silk Touch
+| {{ItemLink|Quartz Deposit}} || 1 || 100% || 100% || Silk Touch
 |-
-| {{ItemLink|Glass}} || 2–5 || 33.3% || 33.3% || specific tool
+| {{ItemLink|Glass}} || 2–5 || 100% || 100% || specific tool
 |-
-| {{ItemLink|Quartz}} || 2–5 || 33.3% || 33.3% || 
+| {{ItemLink|Quartz}} || 2–5 || 100% || 100% || without Silk Touch, specific tool
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

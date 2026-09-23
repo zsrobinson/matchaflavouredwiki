@@ -3,7 +3,7 @@
 |renewable=No
 }}
 
-An '''adamant claymore''' is the [[Adamant equipment|adamant]] [[claymore]], made by smithing a [[diamond sword]] with [[adamant alloy]] and a [[smithing upgrade template]]. It is the strongest melee weapon in the pack and blocks better than the [[steel claymore]].
+An '''adamant claymore''' is a [[claymore]] of the [[Adamant equipment|adamant]] tier, made by smithing a [[diamond sword]] with [[adamant alloy]] and a [[smithing upgrade template]]. It hits harder and blocks better than the [[steel claymore]].
 
 == Obtaining ==
 
@@ -26,19 +26,19 @@ Sharpness I, Unbreaking II and Weakness. Intrinsics are stored on the item and a
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}} or [[adamant scrap]]. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-=== Crafting ingredient ===
-{{Uses}}
-
-In a [[blast furnace]] it melts down into one [[adamant alloy]], returning the alloy but losing the diamonds.
+=== Smelting ingredient ===
+In a [[blast furnace]] it melts down into one [[adamant alloy]], returning the alloy but losing the diamonds.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/netherite_ingot_from_blasting_netherite_materials.json}}</ref>
 
 === Trading ===
+{{Uses}}
+
 An apprentice [[weaponsmith]] buys it for one [[adamant alloy]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/netherite_claymore.json}}</ref>
 
 == History ==
 {{History|
 {{History line|1.03|The vanilla netherite recipes were blocked.}}
 {{History line|1.10|A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
-{{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. Attack speed raised from 0.5 to 1.0. [[Divinity]] was replaced with Sharpness.}}
+{{History line|1.12.1-alpha|The upgrade now keeps the base item's enchantments. Added the "Repaired with" tooltip. Attack speed raised from 0.5 to 1.0. [[Divinity]] was replaced with Sharpness.}}
 {{History line|1.12.2|Now inflicts Weakness. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}
 

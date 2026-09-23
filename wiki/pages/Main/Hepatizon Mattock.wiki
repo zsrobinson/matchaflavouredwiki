@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-A '''hepatizon mattock''' is the [[Hepatizon equipment|hepatizon]] [[mattock]], made by smithing a [[copper hoe]] or [[copper mattock]] with [[hepatizon alloy]] and a [[smithing upgrade template]].
+A '''hepatizon mattock''' is a [[mattock]] of the [[Hepatizon equipment|hepatizon]] tier, made by smithing a [[copper hoe]] or [[copper mattock]] with [[hepatizon alloy]] and a [[smithing upgrade template]].
 
 == Obtaining ==
 
@@ -22,11 +22,10 @@ It deals {{Hp|3}} damage at an attack speed of 3. While held in the main hand it
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
-=== Crafting ingredient ===
-{{Uses}}
-
 === Trading ===
 An apprentice [[weaponsmith]] buys it for one [[hepatizon alloy]], so the alloy can be reused.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_mattock.json}}</ref>
+
+{{Uses}}
 
 == Notes ==
 * The hand-written tooltip hides the real attributes and shows attack damage 3.5 (real value 3).<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_mattock.json}}</ref>

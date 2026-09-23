@@ -4,7 +4,7 @@ This page collects features of [[Matcha Flavoured]] that are in development or p
 == In development ==
 {{Upcoming|type=section}}
 === Post-release fixes ===
-The <code>main</code> branch already contains bug fixes made after 1.12.2-beta, including improvements to the [[Updating items|item update trigger]], fixes for Fortune on gold ore, empty bottles from crafting, the freezing water effect on spectators, and several namespace errors. They are listed in full on the [[Matcha Flavoured 1.12.2#Post-release fixes|1.12.2 page]].
+The <code>main</code> branch already contains the [[favorite food]] trade and bug fixes made after 1.12.2-beta, including improvements to the [[Updating items|item update trigger]], fixes for Fortune on gold ore, empty bottles from crafting, the freezing water effect on spectators, and several namespace errors. They are listed in full on the [[Matcha Flavoured 1.12.2#Post-release fixes|1.12.2 page]].
 
 === Minecraft 26.3 ===
 26.3 changes datapack syntax, and a port was in progress at the time of 1.12.2-beta.<ref>{{Cite changelog|1.12.2}}</ref> The docket lists work still needed for it: poplar leaves need a crafting advancement and loot tables.<ref>{{Cite changelog||quote=Poplar leaves crafting needs to be added to adv}}</ref>

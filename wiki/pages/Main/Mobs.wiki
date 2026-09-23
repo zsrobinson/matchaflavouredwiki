@@ -2,7 +2,7 @@
 '''Mobs''' in [[Matcha Flavoured]] are the vanilla ''Minecraft'' mobs, with changes to where hostile mobs spawn, how strong they are on each [[difficulty]], and what they drop. The pack's changes follow a few rules:
 * '''Only the undead roam the surface.''' In the Overworld, hostile mobs that aren't undead can't spawn under the open sky, and after the [[Ender Dragon]] is killed no common hostile mob can spawn above sea level. See [[Spawning]] and [[Surface]].
 * '''Difficulty reshapes mobs.''' Zombies become fast strikers, husks slow tanks, and skeletons, creepers, cave spiders and silverfish lose health. See [[Difficulty]].
-* '''Killing is rewarded, farming isn't.''' Many drops are raised, and most hostile drops need a player kill. Zombies, husks, skeletons and spiders from the pack's [[spawner|spawners]] drop nothing, and hostile mobs don't drop the equipment they spawn with.
+* '''Killing is rewarded, farming isn't.''' Many drops are raised, and most hostile drops need a player kill. Zombies, husks, skeletons and spiders from the pack's [[spawner|spawners]] drop nothing, and the pack tries to stop hostile mobs dropping the equipment they spawn with, though a bug stops this from working reliably.
 * '''No rotten flesh.''' Zombie-type mobs drop {{ItemLink|Tattered Leather}} or {{ItemLink|Sturdy Leather}} instead, and most undead drop {{ItemLink|Raw Estus}} or {{ItemLink|Estus Ash}}.
 * '''Animals drop meat.''' Several animals that drop nothing in vanilla now drop {{ItemLink|Raw Flesh}}.
 
@@ -37,7 +37,7 @@ The pack's "mundane hostile" mobs are checked once when they appear, removed if 
 |-
 | [[Silverfish]] || No || No || 1 or 2 hearts
 |-
-| [[Enderman]] || No || No || Always drops a stable void; only picks up melons, pumpkins and TNT
+| [[Enderman]] || No || No || Always drops a stable void when killed by a player; only picks up melons, pumpkins and TNT
 |-
 | [[Witch]] || No || No || Drops 4–8 estus ash
 |-
@@ -119,7 +119,7 @@ Several vanilla drops also appear under the pack's names: creepers and ghasts dr
 {{History line|0.5-alpha|Overworld mobs no longer drop equipment. Ghast tear drop rate raised. Evokers drop divine fragments. Chicken jockeys drop the Lava Chicken disc.}}
 {{History line|0.6-alpha|Only the undead spawn in the open in the Overworld; after the dragon is killed, no hostile mobs spawn above sea level or in the open.}}
 {{History line|1.10|Difficulty support: mob behavior, health and damage depend on difficulty. Husks spawn in all biomes. Creepers only spawn underground. Magma cubes drop magma blocks. Nautilus shell drop rates raised. Zombie horses made consistent with other undead.}}
-{{History line|1.12.1-alpha|Obols no longer drop from undead mobs. Camel husks drop leather. The creaking drops resin. Snowy foxes drop their own pelt.}}
+{{History line|1.12.1-alpha|Obols no longer drop from most undead mobs (bogged and zombie villagers still drop them). Camel husks drop leather. The creaking drops resin. Snowy foxes drop their own pelt.}}
 {{History line|1.12.2|Mobs from spawners drop nothing.}}
 }}
 
