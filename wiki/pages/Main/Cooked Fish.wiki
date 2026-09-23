@@ -1,0 +1,20 @@
+{{Vanilla|Cooked Cod}}
+{{Infobox auto}}
+'''Cooked fish''' is a [[food]] item made by cooking any small fish or a [[Tropical Fish|tropical fish]]. It heals {{Hp|4}}. It replaces {{MCW|Cooked Cod|cooked cod}}.
+
+== Obtaining ==
+=== Cooking ===
+Every cod-based fish cooks into cooked fish, since the recipe matches any <code>minecraft:cod</code>. That includes [[Cod|cod]] and 19 custom fish (see [[Fish]]), plus the tropical fish. Cooking takes 5 seconds in an [[Oven]] or on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_cod.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_tropical_fish.json}}</ref>
+{{Recipes}}
+
+== Usage ==
+=== Food ===
+Eating it gives a hidden Regeneration III for 48 ticks (2.4 seconds), which heals {{Hp|4}}. It can be eaten at any time.
+=== Crafting ingredient ===
+{{Uses}}
+
+== References ==
+{{Reflist}}
+
+{{Navbox fishing}}
+[[Category:Food]]

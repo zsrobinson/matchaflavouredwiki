@@ -1,0 +1,167 @@
+{{Meta version infobox
+|version=1.12.1-alpha
+|name=Experimental: Death System
+|type=Alpha (experimental pre-release)
+|date=September 1, 2026
+|files=<code>Matcha_Flavoured_1_12_1.zip</code>
+|prev=1.12
+|next=1.12.2
+}}
+'''Matcha Flavoured 1.12.1-alpha''', "Experimental: Death System", is an experimental pre-release of [[Matcha Flavoured]], published on September 1, 2026. It introduced the progress-based [[death]] system, in which [[advancements]] reward [[Crystal Heart|crystal hearts]], [[obol]]s or a lower heart minimum. It also added major translation support and the [[Angler's Almanac]], ended the need for base metals in [[smithing]], reworked [[Adamant equipment|adamant]], and began moving the pack into the <code>matcha</code> namespace.<ref>{{Cite changelog|1.12.1-alpha}}</ref>
+
+The developer described the "experimental" label as a new approach: pre-releases for players who do not mind bugs, instead of full releases followed by hotfixes. The death system was the main experiment and might not have made it into the final update. The notes asked for feedback on it, especially from players who liked it, and on whether the new spawning code had fixed performance problems. The death system was kept in [[Matcha Flavoured 1.12.2|1.12.2]].
+
+== Credits ==
+The release notes credit:
+* Hashiru: optimizations.
+* NamelessJu: coding help and translations.
+* Nat (natroute): translation project lead.
+* imtlx: the new Angler's Almanac, fishing sounds, translation and GitHub help.
+* Vee Vaicekauskas: background music.
+* DeBlezyBestie: music discs.
+* Bingbongbooper: food ideas.
+* HapppySpud: removal of gravel from Hell's world generation, keeping enchantments after smithing, and random asylum seekers.
+* All translation volunteers.
+
+== Additions ==
+=== Death system and progression ===
+{{Main|Death|Health}}
+* Hearts can fall below 10. The lowest a player can go is set by the progress they have made. Easy is exempt.
+* [[Advancements]] reward hearts, obols or a lower heart minimum. The notes warn that grabbing every diamond, iron and silver ore right after spawning may put the player into a difficulty they are not ready for.
+* Killing the [[Ender Dragon]] no longer raises the difficulty on Normal. Difficulty now follows the player's progress.
+* Advancements that give rewards are revoked when a player's world updates, so the rewards can be earned again. "No More Fish in the Sea" and "Demonic Emissary" are exempt.
+* Undead mobs no longer drop obols.
+* The weaponsmith (grindstone villager) buys non-renewable resources.
+* Hardcore hearts.
+
+=== Content ===
+* The [[Angler's Almanac]] (made by imtlx).
+* Distinct [[Fishing sounds|fishing sounds]] for different catches (imtlx). Their volume follows the music disc (record) volume slider.
+* Three new music discs by DeBlezyBestie and a background track, "Abbey", by Vee Vaicekauskas. See [[Music]].
+* The [[Prayer of Midas]], a craftable Looting blessing (community request).
+* The "Bonfire Lit" advancement.
+* The [[Steel equipment|steel]] [[claymore]].
+* A bonus chest (community request).
+* Craftable Bad Omen.
+* Cat morning gift loot table.
+* Cats spawn in jungles and sparse jungles (community request).
+
+=== Foods ===
+{{Main|Food}}
+* [[Pumpkin Curry|Pumpkin curry]] and its stock (community request).
+* [[Oil]], made from sunflowers or cocoa beans.
+* [[Seitan]], as a substitute for soybeans.
+* Dino nuggets: [[Ptero Chicken Nugget|ptero]], [[Stego Chicken Nugget|stego]], [[Brachio Chicken Nugget|brachio]] and [[Tricero Chicken Nugget|tricero]] (community request).
+* [[Nopales]].
+* [[Bubbling Mead|Bubbling mead]], a throwable Speed potion (community request).
+* [[Fish and Chips|Fish and chips]], [[Ice Cream|ice cream]], [[Lumpia|lumpia]] and [[Apple Cinnamon Oatmeal|apple cinnamon oatmeal]], suggested by Bingbongbooper (community request).
+* [[Buñuelo]]s. Luck now affects every chest loot table.
+* Vegetarian (seitan) versions of all curries and ramen.
+
+== Changes ==
+=== Smithing and equipment ===
+* '''Smithing no longer needs base metals.''' A shakudo hoe, which had needed a copper ingot, a copper hoe and shakudo alloy, now needs only the copper hoe and the alloy; the template slot can be left empty.
+* Smithing enchanted equipment keeps its existing enchantments (made by HapppySpud).
+* '''Adamant rework''': each piece gives Health Boost instead of soul hearts, and the set bonus gives only 2 soul hearts. [[Divinity]] was removed from all tools and weapons and replaced with Sharpness or Efficiency. Adamant armor durability fell from 1500 to 1000. The adamant claymore's attack speed rose from 0.5 to 1.0.
+* The electrum set bonus was slightly nerfed.
+* Only diamond, electrum and adamant tools can mine obsidian, and they mine it much faster.
+* Hepatizon mining speed buffed so that it stays worth using after adamant.
+* Crafting-grid repairs are disabled.
+* Electrum, shakudo and adamant intrinsics are mutually exclusive.
+* The silver sword, warding sword and warding shield can only be repaired with nazars or lapis.
+* '''Fortune III can only come from electrum''': Fortune caps at I when combined in an anvil, and Fortune III books no longer appear in chests.
+* [[Warding]] enchantments are mutually exclusive.
+* Shakudo armor was nerfed.
+* Every alloyed item has a "Repaired With" tooltip, and repair materials were made consistent and mostly more expensive. Electrum and adamant are repaired with diamond blocks, so that players will not always wear them. The developer described the intent as "horizontal progression".
+* The butcher's knife was removed from smithing.
+* Bloodrage no longer shows a message.
+* [[Trailblaze]] works on mud brick slabs and stairs and dirt slabs, and is faster (0.0105 to 0.0155 per level).
+
+=== Death, mobs and spawning ===
+* Husks look more distinct from zombies and are white. Husk jockeys were removed, although camel husks still spawn at night (community request). Husks are a little faster, spawn more often in smaller groups, have 25% less health on Normal (40 to 30), and no longer always call reinforcements.
+* [[Drowned]] need to be below Y 43, rather than sea level, to spawn once the surface is safe (community request).
+* Baby zombies, husks and drowned have 2 hearts on Easy.
+* Snowy foxes drop their own snowy pelt.
+* Mobs removed by the [[Surface|surface]] spawning rules are now made sure to die rather than only despawn, to address performance problems.
+
+=== World generation ===
+These changes only affect newly generated chunks.
+* [[Raw Silver|Silver]] is rarer on the surface but found in every biome, and is two to three times more common in mountain biomes, increasingly so at depth (community request).
+* Large amounts of coal generate at deepslate level beneath deserts.
+* Quartz generates higher up and in larger amounts (community request).
+* Beaches have blue orchids and cornflowers.
+* [[Hellspore]] generates in soul sand valleys and nether wastes (made by HapppySpud, community request).
+* Gravel no longer generates in [[Hell]] (made by HapppySpud).
+
+=== Recipes ===
+* New recipes for cobblestone and cobbled deepslate. Arrows yield 8 instead of 4, and ladders 8 instead of 3. Crying obsidian yields 2 instead of 1.
+* Sponges can be dried in a [[Mud Kiln|kiln]] or oven.
+* Dandelions (community request) can be cloned, and melons can be crafted back into slices (community request).
+* Glass can be stonecut (community request). Chiseled bookshelves are made by stonecutting. Poplar can be stonecut and poplar saplings crafted.
+* Wheat drops [[Straw|straw]] instead of tall dry grass, so that villagers can pick it up (community request).
+* The black dye recipe changed and gives more from ink sacs and wither roses (community request).
+* Trapped chests use [[Electric Wire|electric wire]] instead of tripwire hooks.
+* Concrete mass recipes unlock from concrete powder instead of a water bottle.
+* The ender chest recipe changed.
+
+=== Other ===
+* Major translation support for foods, their effect tooltips, loot tables, recipes and trades. As a consequence, most foods do not stack with copies made in earlier versions.
+* Items began moving from the <code>main</code> and <code>minecraft</code> namespaces to <code>matcha</code>. Moved items such as the "Golden" disc and the books appear broken until picked up. See [[Updating items]].
+* Fish were changed so that fish caught in later versions should stack with them, although older fish cannot be traded under the new fisherman trades.
+* Mod compatibility: apples and sweet berries from mods are converted into the pack's versions, and divine fragments from other sources are removed.
+* Apples drop more often from leaves (0.75% base instead of 0.5%, 4% instead of 2.5% with maximum Fortune; community request).
+* Divine fragments can be bought from the [[Mouthpiece|mouthpiece]] for a crystal heart and an echo shard (community request).
+* Throwable foods show an icon and have proper colors and particles. Pickled warped fungus became throwable.
+* Several foods rebalanced: gimmari (Water Breathing 8:00 to 10:00, healing 3 to 5 hearts), pad thai (5:00 to 10:00, community request), baked pumpkin (10 to 30 seconds) and latke (8 to 6 hearts). Curries, ramen, gimmari and pupusa need oil.
+* Crying obsidian counts as a portal block.
+* [[Warding Stone|Warding stones]] can no longer be placed in [[Abbey]]s, and the abbey tower always contains the Quran or the Tanakh. The notes told players living in an abbey with warding stones to remove them before updating.
+* Asylum seeker applications produce a random villager (made by HapppySpud).
+* Cinnabar added to [[Mason|mason]] trades (community request).
+* Estus ash added to the fishing junk pool for peaceful players (community request). Nautilus shells added to buried treasure, and the chance of fishing up The Divine Comedy and Paradise Lost from buried treasure reduced.
+* Leather armor has its own safe fall distance icon (community request).
+* Wearing an unenchanted, unsmithed vanilla elytra turns it into the pack's elytra (community request).
+* Added the <code>#main:life_steal_exceptions</code> tag, so the shakudo sword no longer heals from hitting boats and minecarts (community request).
+* Old growth spruce taiga added to the fishing biomes (community request).
+* Textures: new lapis lazuli, lapis block and nazar (based on work by Zergologist), a new smithing table interface, a gradated biome color map by Movpasd that removes placeholder purple grass (community request), higher-resolution jewelry, Axiom and Easy Shulkers interface textures by roliuu, a new ender chest texture, a laminated coal texture, and a copper eye that closes when shot.
+* The cleric (chemist) no longer sells weakness, invisibility and poison splash potions. The developer plans to remove all potion trades.
+
+== Fixes ==
+* Multiplayer: clay fetishes work for every player; bloodrage, [[Anemos]], and adamant and electrum effects apply only to the wearer or wielder.
+* Pride flags render on shields (community request).
+* Fixed the "Canto I" title and description, and the swapped title and description of "You're Rich!" (community request).
+* Zombie nautiluses removed from warding targets (community request).
+* [[Raw Estus|Raw Estus]] can no longer be used as brewing fuel (community request).
+* Removed outdated recipes for morsel stew, green curry and paneer makhani (community request).
+* Dripleaf cloning and mud crafting return the glass bottle (community request).
+* The golden apple in bastion stables is a proper pack golden apple (community request).
+* Smithing steel shears grants "Sturdy Steel" (community request).
+* The iron sword's attack speed matches its tooltip, as do the adamant sword and dolabra (community request).
+* The golden apple's Absorption matches its tooltip (community request).
+* Cactus can be cooked again (community request).
+* Fishing in designated biomes gives fish and junk at 85 to 5, after a patch had made junk 50% of catches.
+* Sugar from honey gives 3, as in vanilla.
+* Fixed the flow armor trim, camel husk leather drops, cracked stone brick blasting, gold from gilded hellstone (community request), enchanted golden apples in ruined portals (community request), zephyr sounds under Slow Falling (community request), soul kindling loot (community request), the sweet berry danish recipe and trade (community request), stable void stacking in trial chambers, magma cubes dropping phosphor lamps when killed by frogs (community request), pink concrete mass crafting (community request), witch loot (community request), and stick crafting groups (community request).
+* Skeletons could have both Punch I and Punch II, which hurt performance (community request).
+* All hoes and shears mine glow lichen (community request).
+* Leather armor gives armor points.
+* Ancient debris can no longer be cooked in an oven (community request), and copper can no longer be smelted in one. Stone can only be kilned.
+* Summoning items such as asylum applications and warding stones can no longer be used on spawners (community request).
+* The creaking drops resin when killed.
+* Many recipe unlocks were fixed, and all kilning, blasting and cooking recipes were reviewed.
+
+== Technical changes ==
+* All recipes moved into subfolders of <code>main:recipes</code>.
+* Gamerules are set only on first load, so players can change them afterward. Keep inventory is set on first load or when a new player joins.
+* The namespace <code>matcha</code> is to hold only new content, and <code>minecraft</code> only overrides, a convention the developer credited Kanoarob with explaining.
+* Ticking functions are to be avoided. The abbey's ticking function was replaced by the "hit_copper_eye" advancement trigger, and Hashiru reworked armor, particles, the warding stone and crystal hearts to run without ticking functions. The spawning code uses predicates.
+* The developer adopted major.minor.patch version numbers, but judged "major" and "minor" by how much a change affects players rather than the code.
+
+== Denied and postponed requests ==
+The notes list requests the developer declined or postponed: invisible armor stands, updates to trim materials, choosing when to use crystal hearts (reversed in [[Matcha Flavoured 1.12.2|1.12.2]]), more explanation of enchantments, and a new coal ore texture.
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Alpha versions]]

@@ -1,0 +1,47 @@
+{{Vanilla|Prismarine}}
+{{Infobox auto}}
+'''Malachite''' is a green decorative stone. It replaces {{MCW|Prismarine|prismarine}}, and instead of coming from ocean monuments it is crafted from calcite and raw copper, which makes the whole prismarine family of blocks available early in the game. Malachite has the same variants as vanilla prismarine: [[#Malachite Bricks|malachite bricks]], [[#Dark Malachite|dark malachite]] and the [[#Malachite Lantern|malachite lantern]], plus slabs, stairs and a wall.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Two calcite and two raw copper, placed diagonally, make 4 malachite.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/prismarine.json}}</ref> The recipe unlocks when the player picks up calcite.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/calcite.json}}</ref> The vanilla recipes for prismarine, prismarine bricks, dark prismarine and sea lanterns, which use prismarine shards and crystals, are removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Prismarine shards and crystals are renamed [[Raw Silver|raw silver]] and [[Silver Bullion|silver bullion]] in the pack.
+
+The design video lists it among the recipe changes meant to be "kinder for players": "Prismarine is craftable from copper."<ref>{{Cite video|quote=I made a lot of tweaks to the recipes to make them kinder for players. Prismarine is craftable from copper.}}</ref>
+
+=== Natural generation ===
+Blocks placed in ocean monuments keep their vanilla IDs, so monuments are built from malachite, malachite bricks, dark malachite and malachite lanterns.
+
+== Usage ==
+{{Uses}}
+
+== Variants ==
+=== Malachite Bricks ===
+Four malachite in a square make 4 malachite bricks.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/prismarine_bricks.json}}</ref>
+{{Recipes|Malachite Bricks}}
+
+=== Dark Malachite ===
+Eight malachite around a [[Dyes|black dye]] make 8 dark malachite.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/dark_prismarine.json}}</ref>
+{{Recipes|Dark Malachite}}
+
+=== Malachite Lantern ===
+The '''malachite lantern''' replaces the {{MCW|Sea Lantern|sea lantern}}. Two malachite and two [[Estus Ash|estus ash]], placed diagonally, make 2 lanterns.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sea_lantern.json}}</ref> Broken with any tool, it always drops itself, where a vanilla sea lantern needs {{MCW|Silk Touch}} and otherwise drops prismarine crystals.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sea_lantern.json}}</ref> It is also in the pickaxe's mineable list, so pickaxes break it quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
+{{Recipes|Malachite Lantern}}
+
+=== Slabs, stairs and wall ===
+Malachite, malachite bricks and dark malachite each have a slab and stairs, and malachite also has a wall. They are made the vanilla way or in the [[stonecutter]]. Two slabs of any of the three can be crafted back into the full block.
+
+== History ==
+{{History
+|{{History line|1.01|Dark malachite stairs can be crafted in a crafting table.}}
+{{History line|1.02|The malachite recipe unlocks when the player picks up calcite.}}
+{{History line|1.10|The malachite recipe gives 4 blocks instead of 2.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Building blocks]]
+[[Category:Renamed items]]

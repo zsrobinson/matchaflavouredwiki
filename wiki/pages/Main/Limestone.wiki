@@ -1,0 +1,33 @@
+{{Vanilla|Stone}}
+{{Infobox auto}}
+'''Limestone''' is the Overworld's most common rock. It is the vanilla {{MCW|Stone|stone}} block under a new name; its texture, generation and hardness are unchanged. What changes is how it is processed: limestone is baked in a [[Mud Kiln|mud kiln]] instead of an [[oven]], and a [[Blast Furnace|blast furnace]] breaks it back down into [[cobblestone]].
+
+== Obtaining ==
+=== Breaking ===
+Limestone drops [[cobblestone]] when mined with a pickaxe, and itself when mined with {{MCW|Silk Touch}}, as in vanilla. A tool with the [[Adamant equipment|adamant]] tool intrinsic smelts it as it is mined and drops [[Smooth Stone|smooth stone]] instead.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/stone.json}}</ref>
+
+=== Cooking and crafting ===
+{{Recipes}}
+The vanilla recipe that smelts cobblestone into stone in a furnace is removed, so cobblestone must be fired in a mud kiln.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> The kiln also bakes [[Stone Bricks|stone bricks]] back into limestone, and a blast furnace turns smooth stone and cracked stone bricks back into limestone. Two stone slabs can be crafted back into a block of limestone.
+
+=== Trading ===
+The [[Mason]] sells limestone in 64-block lots as [[Bulk blocks|Bulk Limestone]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/1/stone.json}}</ref>
+
+== Usage ==
+{{Uses}}
+Limestone is used in the vanilla recipes that call for stone, including the [[stonecutter]], [[Electric Repeater|electric repeater]] and [[Electric Comparator|electric comparator]]. In the stonecutter it also gives 4 [[Stone Button|stone button]]s or 4 [[Stone Pressure Plate|stone pressure plates]], more than the crafting recipes.
+
+A [[Blast Furnace|blast furnace]] turns limestone into cobblestone, which can then be blasted into [[gravel]] and [[sand]] (see [[Gravel]]).
+
+== History ==
+{{History
+|{{History line|1.12.1-alpha|Stone can no longer be smelted in an oven; it is only kilned. Recipe unlocks for stone blasting and kilning were fixed.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Natural blocks]]
+[[Category:Renamed items]]

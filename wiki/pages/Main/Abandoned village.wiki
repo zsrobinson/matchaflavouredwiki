@@ -1,0 +1,133 @@
+{{Vanilla|Village}}
+{{Infobox
+|title=Abandoned village
+|type=Jigsaw structure
+|biomes=Plains, Sunflower Plains, Desert, Savanna, Snowy Plains, Taiga, Old Growth Pine Taiga, Old Growth Spruce Taiga
+|generates=Overworld surface
+|consists=Oak planks, cobblestone, mossy cobblestone, glass, gravel, suspicious gravel
+|id=<code>minecraft:village_plains</code>, <code>village_desert</code>, <code>village_savanna</code>, <code>village_snowy</code>, <code>village_taiga</code>
+|added={{Version|0.6-alpha}}
+}}
+An '''abandoned village''' is the pack's replacement for the vanilla {{MCW|Village|village}}. Every village generates as a small cluster of empty, overgrown houses around a well, with no villagers, no job site blocks and no loot chests. The houses' gravel floors contain suspicious gravel that can be brushed for loot.
+
+The developer's intent is that "the minecraft world should feel abandoned until YOU come along": villagers belong at the player's base, which should feel alive, but the rest of the world should not.<ref>{{Cite changelog|0.6-alpha|quote=I think the minecraft world should feel abandoned until YOU come along, so villagers at your base makes sense, it should feel alive. But the rest of the world shouldn't}}</ref> Villagers are obtained instead through [[Asylum Seeker]] applications (see [[Villager]]).
+
+== Generation ==
+The five vanilla village structures are kept, but all of them now use the same abandoned "village_beta" pieces, whatever the biome.<ref>{{Source|MF_datapack/data/minecraft/worldgen/structure/village_plains.json}}</ref>
+
+{| class="wikitable"
+! Structure !! Biomes
+|-
+| <code>village_plains</code> || Plains, Sunflower Plains
+|-
+| <code>village_desert</code> || Desert
+|-
+| <code>village_savanna</code> || Savanna
+|-
+| <code>village_snowy</code> || Snowy Plains
+|-
+| <code>village_taiga</code> || Taiga, Old Growth Pine Taiga, Old Growth Spruce Taiga
+|}
+Each structure lists its biomes directly instead of using the vanilla <code>has_structure</code> biome tags. Compared with vanilla, villages no longer generate in Meadows, and taiga villages can also generate in Old Growth Pine and Old Growth Spruce Taigas and plains villages in Sunflower Plains.
+
+The <code>minecraft:villages</code> structure set uses a random spread with a spacing of '''80 chunks''' and a separation of '''50 chunks''', compared with 34 and 8 in vanilla, making villages much rarer.<ref>{{Source|MF_datapack/data/minecraft/worldgen/structure_set/villages.json}}</ref> [[Abbey]]s cannot generate within 16 chunks of a village.
+
+Each village is a jigsaw structure with a maximum depth of 5 pieces and a maximum distance of 116 blocks from its center, using <code>beard_box</code> terrain adaptation.
+
+== Structure ==
+* '''Well''' (6 × 9 × 6): the start piece, built from cobblestone and mossy cobblestone around water. A gravity processor sinks it 8 blocks relative to the surface. Roads branch out from its four sides.<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/village_beta/town_centers.json}}</ref>
+* '''Roads''': invisible connector pieces with no blocks of their own, chosen from end (weight 3), straight (2), T-junction (1) and L-junction (1). Straight and end pieces have a connector for a house.<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/village_beta/roads.json}}</ref>
+* '''Houses''', chosen from the <code>village_beta/buildings</code> pool:<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/village_beta/buildings.json}}</ref>
+
+{| class="wikitable"
+! House !! Weight !! Size !! Suspicious gravel !! Notes
+|-
+| small_1 || 1 || 12 × 8 × 8 || 3 ||
+|-
+| medium_1 || 2 || 14 × 8 × 10 || 4 ||
+|-
+| medium_2 || 3 || 14 × 8 × 10 || 3 ||
+|-
+| large_1 || 2 || 12 × 9 × 10 || 6 ||
+|-
+| extra_large_1 || 4 || 15 × 10 × 14 || 8 || A chest containing one [[Cyan Rose]].
+|-
+| extra_large_2 || 5 || 15 × 10 × 14 || 8 ||
+|-
+| extra_large_3 || 2 || 15 × 10 × 14 || 8 ||
+|-
+| extra_large_4 || 1 || 15 × 11 × 13 || 1 || The [[#The inhabited house|inhabited house]].
+|-
+| extra_large_5 || 4 || 18 × 10 × 13 || 8 ||
+|}
+All houses are built from oak planks, cobblestone and mossy cobblestone with glass windows and an oak door, and are decorated with cobwebs and pale hanging moss. Two unused templates, <code>indev_normal</code> and <code>indev_mossy</code>, are in the pack but are not in any pool.
+
+== Loot ==
+=== Archaeology ===
+Suspicious gravel in village houses uses <code>archaeology/village_plains</code>:
+{{Data/Loot/minecraft/archaeology/village_plains}}
+
+=== Chests ===
+Village houses have no loot-table chests. The pack still overrides the vanilla village chest loot tables (<code>chests/village/*</code>); they are listed on [[Chest loot#Village]].
+
+== Maps ==
+The [[Wandering Trader]] sells maps to abandoned villages, named "Abandoned Plains Village Map", "Abandoned Desert Village Map" and so on. See [[Explorer maps]].
+
+== The inhabited house ==
+{{Spoiler|this section reveals a secret in abandoned villages}}
+One house, <code>extra_large_4</code>, is different. It has no suspicious gravel floor. Inside are torches, a crafting table, two chests, a jukebox, a hopper, a redstone block, and a '''mannequin''' tagged <code>haunted</code> that uses the skin <code>entity/player/wide/him</code>.<ref>{{Source|MF_datapack/data/minecraft/structure/village_beta/buildings/extra_large_4.nbt}}</ref> That skin texture exists in neither the pack nor vanilla. The house has a weight of 1 out of 24 in the house pool.
+
+The chests contain:
+* 3 [[Diamond]]s, 6 [[Hematite]], 11 [[Coal]], 14 cobblestone and a damaged wooden pickaxe.
+* 3 old-style porkchops, 6 dirt, 3 [[Rose]]s, an oak door, 3 oak planks and 1 mossy cobblestone. These porkchops are unstackable, restore no hunger, can always be eaten, are eaten in 0.1 seconds and give Regeneration III for 1.8 seconds, like food in old versions of ''Minecraft''.
+
+The hopper holds a [[Music Disc]] of '''Dry Hands''' by C418, locked by the redstone block beside it.
+
+=== Behavior ===
+The scene is run by functions that check every tick:<ref>{{Source|MF_datapack/data/matcha/function/environmental/village_eerie_sound.mcfunction}}</ref>
+* Entering any village structure grants the hidden advancement <code>matcha:mechanics/enter_village</code>, which sets the player's <code>eerie</code> score to 1. Leaving the village resets the score and the advancement.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/enter_village.json}}</ref>
+* While a player's <code>eerie</code> score is 1, all background [[music]] is stopped for that player.
+* The mannequin turns to face the nearest player.<ref>{{Source|MF_datapack/data/matcha/function/environmental/village_entity_movement.mcfunction}}</ref>
+* When a survival player in the village comes within 30 blocks of the mannequin, the redstone block is removed. The hopper unlocks and pushes Dry Hands into the jukebox, which starts playing. Two ticks later the hopper disappears. This happens only once per mannequin.<ref>{{Source|MF_datapack/data/matcha/function/environmental/play_village_jukebox.mcfunction}}</ref>
+* The mannequin vanishes (it is teleported 1000 blocks down) when a survival player comes within 5 blocks of it, within 2 blocks of the jukebox, or opens an oak door while within 11 blocks of it.<ref>{{Source|MF_datapack/data/matcha/function/environmental/check_if_entity_should_die.mcfunction}}</ref>
+
+=== Eerie sounds ===
+Players in a village also hear sounds that seem to come from nowhere. A 150-second stopwatch restarts continuously; shortly after each restart, and again 100 seconds in, a player hears a sound that depends on the block they are standing on:<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
+{| class="wikitable"
+! Standing on !! Sounds
+|-
+| Coarse dirt || Four wooden footsteps passing overhead, 4 blocks above the player.
+|-
+| Oak planks || Grass breaking 5 blocks to the side (twice), and a cave ambience sound.
+|-
+| Gravel || Gravel breaking 3 blocks below, then later a stone block being placed.
+|-
+| Suspicious gravel || A wooden door opening 3 blocks behind the player.
+|-
+| Grass block || Grass breaking 4 blocks below, followed by four stone blocks being placed beneath the player.
+|}
+Because the stopwatch only matches for a fraction of a second, whether a player hears the sound depends on tick timing; the code notes that this "makes it kinda random".
+
+== History ==
+{{History
+|{{History line|0.6-alpha|date=July 17, 2026|Villages replaced with abandoned villages ("Villages! But not what you would expect").
+* Added the Dry Hands music disc.
+* Added "a new secret recipe found in a chest somewhere".}}
+{{History line|1.10|date=August 10, 2026|Removed the old village predicates (<code>in_village_on_oak_*</code>).}}
+}}
+
+== Trivia ==
+* The pieces are named "village_beta", and the inhabited house's porkchops, roses and cyan rose use "classic" models, a reference to early versions of ''Minecraft''.
+* The developer wants "all structures given the villager treatment", including redone pillager towers; see [[Papal Outpost]].
+
+== See also ==
+* [[Villager]]
+* [[Archaeology]]
+* [[Music Disc]]
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Structures]]
+[[Category:Generated structures]]

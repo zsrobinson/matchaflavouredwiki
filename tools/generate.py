@@ -493,6 +493,19 @@ USES = defaultdict(list)
 for r in ALL_RECIPES + VANILLA_KEPT:
     for n in all_ingredient_names(r):
         USES[n].append(r)
+# Recipes match ingredients by item id only, so a custom item also works in every recipe
+# that accepts its base item (e.g. custom fish are cod or salmon underneath).
+_BASE_NAME = {}
+for _n, _it in ITEMS.items():
+    if _it['renamed_vanilla'] and _it['vanilla_name']:
+        _BASE_NAME.setdefault(_it['base_id'], _n)
+for _n, _it in ITEMS.items():
+    if not _it['renamed_vanilla']:
+        _b = _BASE_NAME.get(_it['base_id'])
+        if _b and _b != _n:
+            for r in USES.get(_b, []):
+                if r not in USES[_n] and r['output']['name'] != _n:
+                    USES[_n].append(r)
 
 
 def recipes_page(name):

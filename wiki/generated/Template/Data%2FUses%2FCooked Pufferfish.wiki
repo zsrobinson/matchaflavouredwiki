@@ -1,0 +1,20 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Bokguk]]
+| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Pufferfish]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Braised Mushroom]] +<br />[[Bowl]]
+| {{Crafting|A1=Dried Kelp|B1=Carrot|C1=Pufferfish|A2=Cooked Fish;Cooked Large Fish|B2=Braised Mushroom|C2=Bowl|Output=Bokguk|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bokguk.json|matcha:food/crafting/bokguk}}</small>
+|-
+| [[Fish and Chips]]
+| [[Baked Potato]] +<br />[[Cooked Large Fish]] or [[Cooked Fish]] +<br />[[Flour]] +<br />[[Oil]]
+| {{Crafting|A1=Baked Potato|B1=Cooked Large Fish;Cooked Fish|C1=Flour|A2=Oil|Output=Fish and Chips|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/fish_and_chips.json|matcha:food/crafting/fish_and_chips}}</small>
+|-
+| [[Kontomire-Dandelion Stew]]
+| [[Tomatoes]] +<br />[[Dandelion]] +<br />[[Fern]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />Any [[eggs]] +<br />[[Bowl]]
+| {{Crafting|A1=Tomatoes|B1=Dandelion|C1=Fern|A2=Cooked Fish;Cooked Large Fish|B2=Any Eggs|C2=Bowl|Output=Kontomire-Dandelion Stew|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/kontomire_stew.json|matcha:food/crafting/kontomire_stew}}</small>
+|-
+| [[Pad Thai]]
+| [[Dough]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Sugar]] +<br />[[Carrot]] +<br />Any [[eggs]] +<br />[[Bowl]]
+| {{Crafting|A1=Dough|B1=Cooked Fish;Cooked Large Fish|C1=Sugar|A2=Carrot|B2=Any Eggs|C2=Bowl|Output=Pad Thai|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pad_thai.json|matcha:food/crafting/pad_thai}}</small>
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

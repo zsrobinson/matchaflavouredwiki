@@ -1,0 +1,58 @@
+{{Vanilla|Wither (effect)|Wither}}
+{{Infobox
+|title=Wither
+|image=Effect Wither.png
+|imagesize=36px
+|type=Status effect
+|caption=Harmful; takes maximum health
+}}
+The '''Wither effect''' in [[Matcha Flavoured]] still deals vanilla damage over time, but a player who stays withered for 8 seconds also loses maximum [[health]], exactly as if they had [[death|died]]. Easy difficulty is exempt. The effect is applied by [[Wither Skeleton|wither skeletons]], the [[Wither]] and wither roses, so [[Hell]] fortresses and the Wither fight can cost hearts without the player dying.
+
+== Mechanics ==
+Whenever a player's effects change, the pack starts tracking them unless the world is on Easy.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/has_wither.mcfunction}}</ref> Once a second, for each tracked player:<ref name="timer">{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/check_wither_timer.mcfunction}}</ref>
+* If they no longer have the Wither effect, tracking stops and the count resets.
+* If they are still withered, the count goes up by 1, an experience pickup sound plays, and a meter in the action bar fills up.
+* When the count reaches 8, the Wither effect is removed, the player loses maximum health as if they had died, a quiet totem sound plays, and the player takes a tiny amount of damage (0.1) so the hit registers.
+
+The meter is shown with the pack's own glyphs: a Wither icon followed by a bar that fills over the 8 seconds.
+
+=== Hearts lost ===
+The heart loss uses the same function as a death:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/hpdown.mcfunction}}</ref>
+{| class="wikitable"
+! Difficulty !! Maximum health lost
+|-
+| Easy || none (not tracked)
+|-
+| Normal (and Peaceful) || {{Hp|2}}
+|-
+| Hard || {{Hp|4}}
+|}
+The loss is limited by the player's minimum hearts, like any death. See [[Death#Minimum hearts]].
+
+=== Curing ===
+The meter resets as soon as the effect is gone, so any cure used before the eighth second prevents the heart loss:
+* {{MCW|Milk Bucket|Milk}} removes all effects.
+* [[Bread]] and other foods with the {{G|Cleanse}} Cleanse Maleffect tooltip remove Wither along with other harmful effects.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref>
+
+The 1.12.2 release notes ask players to "bring milk or bread to Hell, please its very important".<ref>{{Cite changelog|1.12.2|quote=Please bring milk or bread to Hell, please its very important}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.2|The Wither effect now takes hearts after 8 seconds, except on Easy. The [[Shakudo equipment|Shakudo chestplate]] no longer cleanses Wither.}}
+}}
+
+== Trivia ==
+* The developer's plans describe this as "Wither removing hearts on hit", part of making hearts easier to lose late in the game for experienced players, inspired by an attack in the Ganon fight in ''Tears of the Kingdom'' that removes a heart "WITHOUT killing them".<ref>{{Source|my_current_and_future_plans.md}}</ref>
+* The pack's code calls this mechanic "Heartbreaker".<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+
+== See also ==
+* [[Death]]
+* [[Wither Skeleton]]
+* [[Wither]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Effects]]
+[[Category:Mechanics]]

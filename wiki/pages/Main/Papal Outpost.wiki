@@ -1,0 +1,82 @@
+{{Vanilla|Pillager Outpost}}
+{{Infobox
+|title=Papal Outpost
+|type=Jigsaw structure
+|biomes=Same as the vanilla pillager outpost
+|generates=Overworld surface
+|consists=Stone, andesite, tuff, cobblestone, pale moss, gravel, suspicious gravel
+|id=<code>minecraft:pillager_outpost</code>
+|added={{Version|1.10}}
+}}
+A '''Papal Outpost''' is the pack's replacement for the vanilla {{MCW|Pillager Outpost|pillager outpost}}: a ruined stone watchtower surrounded by graves and small camps, with no pillagers. It gives easy early-game access to a small amount of [[Divine Fragment]]s and [[Crystal Heart]]s, as well as potatoes and carrots.<ref>{{Cite changelog|1.10|quote=Easy early-game access to a small amount of divine fragments and crystal hearts. They also provide potatoes and carrots}}</ref> Papal Outposts are much more common than [[Abbey]]s.
+
+The structure keeps the vanilla ID <code>minecraft:pillager_outpost</code>, so it appears as a pillager outpost in commands such as <code>/locate</code>.<ref>{{Cite changelog|1.10|quote=Papal outposts will register as Pillager Outposts (I got lazy, it was crunch time, leave me alone)}}</ref>
+
+== Generation ==
+Papal Outposts generate in the same biomes and with the same spacing as vanilla pillager outposts; the pack does not change the structure set or the biome tag. The structure no longer has a spawn override, so {{MCW|Pillager|pillagers}} do not spawn in it.<ref>{{Source|MF_datapack/data/minecraft/worldgen/structure/pillager_outpost.json}}</ref> Pillager patrols are also delayed; see [[Day and night]].
+
+A Papal Outpost Map can be bought from the [[Archaeologist]] at level 1 for one [[Obol]]. See [[Explorer maps]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/papal_outpost.json}}</ref>
+
+== Structure ==
+The pack replaces the vanilla outpost templates while keeping the vanilla layout: a base plate, a watchtower, and a feature plate on which small features are placed.
+
+=== Watchtower ===
+The watchtower (15 × 21 × 15) is placed together with an overgrown copy of itself, which uses the <code>outpost_rot</code> processor: only 5% of its blocks are kept, and its magenta glazed terracotta becomes cobweb (30%) or air.<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/pillager_outpost/towers.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/processor_list/outpost_rot.json}}</ref> The tower contains:<ref>{{Source|MF_datapack/data/minecraft/structure/pillager_outpost/watchtower.nbt}}</ref>
+* A [[Zombie]] monster spawner (see [[Spawner]]).
+* 3 trapped chests: two with [[Abbey]] barracks loot and one with Papal Outpost loot.
+* 7 decorated pots with Abbey pot loot.
+* 12 suspicious gravel blocks with grave loot.
+* 6 brown beds, flower pots and spruce trapdoors.
+
+=== Feature plate ===
+The feature plate holds 17 suspicious gravel graves (grave loot) and connectors for features.<ref>{{Source|MF_datapack/data/minecraft/structure/pillager_outpost/feature_plate.nbt}}</ref> Features are chosen from the pool below. All use the <code>cobwebs</code> processor, which turns magenta glazed terracotta into cobweb (30%) or air.<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/pillager_outpost/features.json}}</ref>
+{| class="wikitable"
+! Feature !! Weight !! Contents
+|-
+| cage1 || 1 || A camp with a campfire, two brown wall banners and a trapped chest with fixed contents: 9 oak planks, 3 sticks, 4 [[Copper Ingot]]s, 12 raw copper, 2 [[Sturdy Leather]], 5 [[Estus Ash]], 18 torches, 1 arrow, 7 [[Tattered Leather]] and 6 bones.
+|-
+| cage2 || 3 || A small ruin with an empty barrel.
+|-
+| cage_with_allays || 3 || A small ruin. Despite its name, it contains no allays.
+|-
+| logs || 3 || Stone and pale moss rubble.
+|-
+| tent1 || 3 || Stone and cobblestone slabs.
+|-
+| tent2 || 5 || A garden of pumpkins, potatoes and carrots.
+|-
+| targets || 3 || Andesite and cobblestone rubble.
+|-
+| ''(empty)'' || 6 || Nothing.
+|}
+
+== Loot ==
+=== Outpost chest ===
+{{Data/Loot/minecraft/chests/pillager_outpost}}
+
+=== Barracks chests ===
+{{Data/Loot/minecraft/chests/abbey/barracks}}
+
+=== Decorated pots ===
+{{Data/Loot/minecraft/pots/abbey/common}}
+
+=== Graves ===
+Suspicious gravel in the outpost uses <code>archaeology/abbey/grave</code>. The overgrown copy of the tower has suspicious gravel with no loot table.
+{{Data/Loot/minecraft/archaeology/abbey/grave}}
+
+== History ==
+{{History
+|{{History line|1.10|date=August 10, 2026|Pillager outposts replaced with Papal Outposts.
+* The Archaeologist sells Papal Outpost maps.}}
+}}
+
+== Trivia ==
+* The developer hopes to use the outposts "as a way to reverse-engineer how my structures could look in the future".
+* The developer's notes list "Polish up papal outpost, give barrel a LT" as future work.
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Structures]]
+[[Category:Generated structures]]

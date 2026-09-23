@@ -1,0 +1,47 @@
+{{Meta version infobox
+|version=1.12
+|name=Armour Performance Issue Hotfix
+|type=Release
+|date=August 12, 2026
+|files=<code>Matcha_Flavoured_1_12.zip</code>
+|prev=1.11
+|next=1.12.1-alpha
+}}
+'''Matcha Flavoured 1.12''', the "Armour Performance Issue Hotfix", is a hotfix published on August 12, 2026. It fixed severe multiplayer lag caused by alloy armor, toned down [[husk]]s, made "true darkness" optional and brightened [[Hell]] slightly. The next version, [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]], began a cycle of pre-releases. It was also the first version marked on Modrinth as a resource pack as well as a datapack.<ref>{{Cite changelog|1.12}}</ref>
+
+== Changes ==
+=== Husks ===
+* On Normal, husks move a little more slowly.
+* Husk spawn rate lowered from 80 to 50.
+* Husk base damage lowered: 15 to 10 on Normal and 20 to 15 on Hard.
+* Husks call for reinforcements less often; the rate had been set far too high by mistake.
+* The notes clarify that husks never had a longer attack range than in vanilla.
+
+=== Darkness ===
+* "True darkness" stays in the overworld, but can now be turned off: delete <code>data/minecraft/dimension_type/overworld.json</code> from the datapack, rename <code>overworld_no_true_darkness.txt</code> to <code>overworld.json</code>, and restart the world. See [[Darkness]].
+* Hell's ambient light raised from 0.1 to 0.3, so that its darkest areas are less dark.
+
+=== Other ===
+* Buffed buried treasure, both natural and from fishing, after the nerf in 1.10.
+* The [[Estus Flask|Estus flask]], removed in 1.10, was kept after all because it is important on harder difficulties, but its advancement was not restored. The flask was removed for good in [[Matcha Flavoured 1.12.2|1.12.2]].
+* The <code>en_us</code> language file is again copied to the other English variants.
+
+== Fixes ==
+* [[Electrum equipment|Electrum]], [[Adamant equipment|adamant]] and [[Shakudo equipment|shakudo]] armor caused severe performance problems in [[Multiplayer|multiplayer]].
+* Ominous trial keys did not drop from the ominous spawners in the [[Abbey]]. As a stopgap, spawners have a 20% chance to drop one when choosing a key item, and the ominous trial key became craftable.
+* The <code>potions</code> folder had not actually been deleted.
+* TNT recipe unlocks.
+* A typo stopped [[Crystal Heart|crystal hearts]] from being removed properly.
+* The bronze (hepatizon) and shakudo [[spear]] cooldowns match their tooltips.
+* Amber earrings could be crafted in a smithing table, left over from testing.
+* Crystal hearts bought from villagers can no longer be eaten.
+
+== Trivia ==
+* The notes point out that the brick-colored anvil texture is deliberate, so that the developer could build with brick-colored anvils.
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Releases]]

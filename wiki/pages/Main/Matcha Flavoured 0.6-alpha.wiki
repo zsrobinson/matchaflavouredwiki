@@ -1,0 +1,48 @@
+{{Meta version infobox
+|version=0.6-alpha
+|name=Polish
+|type=Alpha
+|date=July 17, 2026
+|files=<code>Matcha_Flavoured.zip</code>
+|prev=0.5-alpha
+|next=0.7-alpha
+}}
+'''Matcha Flavoured 0.6-alpha''', "Polish", is a release of [[Matcha Flavoured]], published on July 17, 2026. It introduced [[Abandoned village|abandoned villages]] and the rules that limit surface spawning to [[undead]] mobs and stop it entirely after the [[Ender Dragon]] is killed.<ref>{{Cite changelog|0.6-alpha}}</ref>
+
+== Additions ==
+* [[Village]]s were reworked: "Villages! But not what you would expect". The developer wanted the world to feel abandoned until the player arrives, so only villages at the player's base should feel alive. See [[Abandoned village]].
+* The "Dry Hands" [[Music Disc|music disc]].
+* Recipes and recipe unlocks for all craftable music discs, and fixed disc fragments.
+* Experience is only shown while the player is using an [[anvil]], because datapacks cannot remove the experience cost of anvil repairs.
+* The "Catch Everything!" [[Advancements|advancement]] (now "No More Fish in the Sea").
+* [[Warding Stone|Warding stones]] heal "villager friends": wolves, cats, villagers, wandering traders, players, and iron and snow golems. Their healing range increased from 10 to 16 blocks.
+* Sand, red sand and packed mud support vegetation, so grass can be placed on sand.
+* Iron and steel recipe unlocks.
+* A new secret recipe, found in a chest. See [[Secret recipes]].
+* Chiseled blocks can no longer be crafted from slabs and must be made in a [[stonecutter]].
+* All slabs can be crafted back into their full block.
+* New textures: pumpkin and melon stems, glow lichen (worm-like on ceilings), flower pots, some baby armor, and the iron golem.
+
+== Changes ==
+* The eye of ender is purple when placed in an End portal frame.
+* The [[Divine Fragment|divine fragment]] trade was removed from the librarian (now the [[Mouthpiece|mouthpiece]]), to discourage mob farms.
+* [[Jewelry]] is unbreakable, so it never needs repairing.
+* Raw and cooked morsel renamed to [[Raw Flesh|raw flesh]] and [[Cooked Flesh|cooked flesh]], with new textures.
+* Tomato soup became [[Grilled Tomatoes|grilled tomatoes]], and pickled tomatoes became [[Sun-dried Tomatoes|sun-dried tomatoes]].
+* Texture changes: the red glazed terracotta texture removed, native silver ore changed, diamond deepslate ore made consistent with other deepslate ores, improved bars, fixed beds, redone nether bricks, flower and decorated pots recolored to match the pack's bricks, spruce painting frames, a darker frame for "Match", and fences, signs and boats made consistent with their planks.
+
+== Fixes ==
+* The broken bronze (now [[Hepatizon Elytra|hepatizon]]) elytra had no texture, and the bronze elytra had no translation.
+* The [[Prayer of Demeter]] counts for the crafting advancement.
+* Golden carrot cupcakes heal properly.
+* [[Zombie]]s were dropping nothing. All mob loot tables were checked.
+* All foods have consistent consume particles.
+* The new hostile mob spawning rules work: in the overworld, only undead spawn in open areas; after the dragon is killed, no hostile mobs spawn above sea level or in open areas; other dimensions use normal spawning. See [[Spawning]] and [[Surface]].
+* Zombified piglins and piglins no longer drop their armor or tools.
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Alpha versions]]

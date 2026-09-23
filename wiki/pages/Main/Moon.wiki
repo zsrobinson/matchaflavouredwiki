@@ -1,0 +1,47 @@
+{{Vanilla}}
+The '''moon''' in [[Matcha Flavoured]] moves independently of the sun, as the real moon does. Each day it falls a little further behind the sun, so its position in the sky matches its phase: a full moon rises at sunset opposite the sun, and a new moon travels next to the sun. The lunar cycle lasts 8 of the pack's [[Day and night|days]], as in vanilla, but because the pack's days are three times longer, a full cycle takes 8 hours of real time.
+
+== Mechanics ==
+In vanilla, the moon angle is part of the day timeline and the moon is always opposite the sun. The pack removes it from the day timeline and drives it from the moon timeline instead.<ref name="moon">{{Source|MF_datapack/data/minecraft/timeline/moon.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/timeline/day.json}}</ref>
+
+* The moon timeline repeats every 576,000 ticks (8 days of 72,000 ticks).
+* The moon's angle rises steadily from 90° to 2,610° over the cycle, 315° per day, while the sun turns a full 360° per day. The moon therefore falls 45° further behind the sun every day and comes back into line after 8 days.
+* At the start of the cycle the moon is at 90° and the sun at 270°, directly opposite: the full moon.
+
+=== Phases ===
+Each phase is centered on the day when the moon's position fits it, and changes halfway through the day.<ref name="moon" />
+{| class="wikitable"
+! Phase !! Starts at tick !! Day of the cycle
+|-
+| Full moon || 540,000 || 7.5 (centered on day 0)
+|-
+| Waning gibbous || 36,000 || 0.5
+|-
+| First quarter || 108,000 || 1.5
+|-
+| Waning crescent || 180,000 || 2.5
+|-
+| New moon || 252,000 || 3.5
+|-
+| Waxing crescent || 324,000 || 4.5
+|-
+| Third quarter || 396,000 || 5.5
+|-
+| Waxing gibbous || 468,000 || 6.5
+|}
+The phase names are those used in the timeline file. Compared to vanilla's order, the pack uses the "first quarter" and "third quarter" names the other way around. The resource pack also replaces the moon phase textures.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/environment/celestial/moon/full_moon.png}}</ref>
+
+=== Slimes ===
+The chance of slimes spawning in swamps follows the phase, as in vanilla, stretched over the longer cycle: 50% at full moon, falling by 12.5% each day to 0% at new moon, and rising again.<ref name="moon" />
+
+== Trivia ==
+* In the design video, the developer lists it among the small visual changes: "I made the moon work correctly. I mean, how cool is that?"<ref>{{Cite video|quote=I made the moon work correctly. I mean, how cool is that?}}</ref>
+
+== See also ==
+* [[Day and night]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Environment]]

@@ -1,0 +1,123 @@
+{{About|equipment intrinsics and set bonuses|the intrinsics of food|Intrinsic}}
+A '''set bonus''' is an extra effect that some [[armor]] gives when several pieces of the same material are worn together. Set bonuses belong to a wider family of '''equipment intrinsics''': built-in abilities of the pack's [[alloy]] equipment and [[jewelry]] that are shown in the tooltip as glyphs rather than words, such as {{G|Warding}}, {{G|Doom}} and {{G|Cleanse}}.
+
+The developer designed the alloys so that "every player, even after they kill the dragon, will choose different armor depending on their preferences", and later wrote that each tier's armor, tool and weapon intrinsics should be "more varied and distinct".<ref>{{Cite video|quote=The goal with these sets was to make each option enticing enough that every player will have a different idea on what the best set and combination is.}}</ref><ref>{{Cite changelog|1.12.2|quote=A tier's armour, tool, and weapon intriniscs should be more varried and distinct. This will be the ethos going forward.}}</ref>
+
+== Tooltips ==
+Intrinsics appear as colored lines in the item's tooltip, made of the pack's custom glyphs. The developer chose symbols over text on purpose, so that players have to experiment and ask each other what they mean.<ref>{{Cite changelog|1.12.1-alpha|quote=I want players to ask their friends "What the cross symbol mean?" I think that stuff is fun.}}</ref> A tooltip can contain these sections:
+* '''Per-piece lines''' directly under the armor values, for effects every piece has on its own.
+* '''Set Bonus:''' for effects that need the full set of four pieces.
+* '''Per Equipment Bonus:''' for effects that grow with each extra piece (shakudo).
+* '''Elytra Bonus:''' for effects of an alloy elytra.
+* '''When Blocking:''' for weapons that can block (claymores).
+
+{| class="wikitable"
+! Glyph !! Name !! Meaning
+|-
+| {{G|Warding|size=16px}} || [[Warding]] || Slows and burns nearby undead. The number is the level.
+|-
+| {{G|Apotropaic|size=16px}} || [[Apotropaic]] || Maximum warding ({{G|Warding}} 4), from the full electrum set.
+|-
+| {{G|Electrum|size=16px}} || Electrum || On armor, +1 warding per piece. On tools, [[Fortune]].
+|-
+| {{G|Doom|size=16px}} / {{G|Doom set|size=16px}} || [[Doom]] || Damages nearby creatures that have Weakness.
+|-
+| {{G|Health|size=16px}}{{G|Cooldown|size=16px}} || Healing on a timer || Hearts gained every so many seconds, such as [[Divinity|divinity]]'s absorption hearts.
+|-
+| {{G|Cleanse|size=16px}} || [[Cleanse]] || Removes harmful effects.
+|-
+| {{G|Magic protection|size=16px}} || [[Magic protection]] || Protection points against magic damage.
+|-
+| {{G|Weakness|size=16px}} || Weakness || The weapon inflicts Weakness (adamant weapons).
+|-
+| {{G|Smelting|size=16px}} || Smelting || The tool smelts what it mines (adamant tools).
+|-
+| {{G|Water|size=16px}} ∞, {{G|Fire|size=16px}} ∞, {{G|Mining speed|size=16px}} ∞, {{G|Health|size=16px}} ∞ || Permanent effect || An effect that lasts while the item is worn, as on [[jewelry]].
+|}
+
+== Set bonuses ==
+{| class="wikitable"
+! Set !! Per piece !! Set bonus (all four pieces)
+|-
+! [[Electrum equipment|Electrum armor]]
+| {{G|Electrum}} +1: each piece adds one level of [[warding]] || {{G|Apotropaic}} Max: {{G|Warding}} 4<br />[[Divinity]]: {{G|Health}}{{G|Health}} {{G|Cooldown}} (00:30)
+|-
+! [[Adamant equipment|Adamant armor]]
+| {{G|Doom}} 3: [[Doom]] grows with each piece || {{G|Doom set}} 4: full-strength Doom<br />[[Divinity]]: {{G|Health}}{{G|Health}} {{G|Cooldown}} (00:30)
+|-
+! [[Shakudo equipment|Shakudo armor]]
+| A different [[Cleanse|cleanse]] on each piece, {{G|Magic protection}} 8 each, and regeneration that improves with each piece (see below) || None; the bonus is per piece
+|}
+The electrum and adamant set bonuses are only active when all four pieces of the same material are worn.<ref>{{Source|MF_datapack/data/matcha/function/timers/divinity/on_restart.mcfunction}}</ref> Only players benefit from armor intrinsics that run on timers; the pieces are counted with per-player scores that are reset every tick.<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
+
+=== Shakudo regeneration ===
+Each shakudo armor piece, including the [[Shakudo Elytra]], adds 1 to the wearer's shakudo count. Depending on the count, the wearer receives {{MCW|Regeneration}} for 3 seconds on a repeating timer:<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/shakudo_armour.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/shakudo_regen_1/shakudo_regen.mcfunction}}</ref>
+{| class="wikitable"
+! Count !! Effect !! Every
+|-
+| 1 || Regeneration I || 30 s
+|-
+| 2 || Regeneration I || 26 s
+|-
+| 3 || Regeneration I || 22 s
+|-
+| 4 || Regeneration I || 18 s
+|-
+| 5 || Regeneration II || 20 s
+|-
+| 6 || Regeneration II || 16 s
+|-
+| 7 || Regeneration II || 12 s
+|-
+| 8 || Regeneration II || 8 s
+|}
+The tooltip shows this as {{G|Half heart}} {{G|Cooldown}} (00:30) on each piece, with a Per Equipment Bonus of {{G|Half heart}} {{G|Cooldown}} -(00:04). The shakudo elytra's tooltip promises an Elytra Bonus of {{G|Health}} {{G|Cooldown}} -(00:10), and the pack has an enchantment, <code>matcha:shakudo_elytra</code>, that adds 5 to the count. However, the shakudo elytra itself carries the ordinary per-piece intrinsic, which adds only 1. Since the elytra takes the chest slot, a player can wear at most four shakudo pieces, and counts 5 to 8 are not reached.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_elytra.json}}</ref><ref>{{Source|MF_datapack/data/matcha/enchantment/shakudo_elytra.json}}</ref>
+
+== Intrinsic enchantments ==
+Under the hood, every equipment intrinsic is a custom enchantment in the pack's <code>matcha</code> namespace, such as <code>matcha:warding_1</code>, <code>matcha:adamant_armour</code> or <code>matcha:cleanse_armor_chest</code>. Their descriptions are the glyph lines, which is why the tooltip shows symbols in place of an enchantment name and level.<ref>{{Source|MF_datapack/data/matcha/enchantment/warding_1.json}}</ref> Most of them run a function every tick while the item is in the right slot. Some apply an effect straight away, and others add to a score that a timer reads later (every 0.5, 1, 3 or 30 seconds, or on shakudo's own timers).
+
+=== Applying intrinsics after smithing ===
+Alloy equipment is made in a [[Smithing Table|smithing table]] by upgrading a base item, and the upgraded item keeps the base item's enchantments. To keep those enchantments and add the alloy's intrinsics without one overwriting the other, smithed items leave the table with their intrinsics stored the way an enchanted book stores enchantments, plus a <code>has_intrinsic_enchants</code> marker. The intrinsics are then applied as soon as the item enters the player's inventory:<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/intrinsic_enchants_obtained.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
+# Picking up or crafting a marked item triggers a hidden advancement, which runs the processing function.
+# The function takes the first marked item in the player's inventory and copies its current enchantments.
+# For each of the pack's intrinsics and each vanilla enchantment, it compares the level already on the item with the stored level, and keeps the higher one.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/select_higher_level.mcfunction}}</ref>
+# The item's enchantments are replaced with the merged set, the stored copy is deleted and the marker is cleared.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+# If another marked item is still in the inventory, the process repeats.
+
+For example, smithing an iron sword with Sharpness II and Unbreaking III into a [[Silver Sword]] gives a sword with Sharpness II, Unbreaking III, [[Smite]] III and {{G|Warding}} 1. Because the merge writes the enchantments directly, it is not limited by the usual rules about incompatible enchantments.
+
+Jewelry and a few other items, such as the [[Nazar]], have their intrinsics as ordinary enchantments from the start and skip this step.
+
+=== Exclusivity ===
+Each category of intrinsic is exclusive within itself, so an [[anvil]] can't put two on one item:<ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_weapon.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_armor.json}}</ref>
+* Weapon intrinsics: the four warding levels, the shakudo life steal and the adamant Weakness.
+* Armor intrinsics: electrum, shakudo and adamant armor.
+
+== History ==
+{{History|
+{{History line|1.10|Added the "Set Bonus", "Per Equipment Bonus" and "Elytra Bonus" tooltip headers. Shakudo gained per-piece regeneration, the electrum set bonus was buffed and made clearer, and the adamant set bonus was slightly nerfed.}}
+{{History line|1.11|Fixed electrum, adamant and shakudo armor causing severe lag in multiplayer.}}
+{{History line|1.12.1-alpha|The electrum, shakudo and adamant intrinsics became exclusive with each other.
+Fixed enchantments being overwritten when smithing, by applying intrinsics after the item is made.
+Adamant and electrum intrinsics no longer apply to every player on a server.
+Intrinsic enchantments became glyph-only in the tooltip.}}
+{{History line|1.12.2|Added new intrinsic and effect glyphs, made by Voxybuns.
+Adamant's intrinsic was reworked into [[Doom]], and the full electrum set was given {{G|Warding}} 4.
+Fixed the shakudo elytra bonus not working.<ref group="note">The shakudo elytra still only counts as one shakudo piece in the current code; see [[#Shakudo regeneration|Shakudo regeneration]].</ref>}}
+}}
+
+== See also ==
+* [[Armor]]
+* [[Alloy]]
+* [[Jewelry]]
+* [[Intrinsic]] (food)
+
+== Notes ==
+<references group="note" />
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Mechanics]]
+[[Category:Intrinsics]]

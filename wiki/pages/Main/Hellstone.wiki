@@ -1,0 +1,30 @@
+{{Vanilla|Netherrack}}
+{{Infobox auto}}
+'''Hellstone''' is the dark rock that makes up most of [[Hell]]. It is the vanilla {{MCW|Netherrack|netherrack}}, renamed along with the rest of the dimension and given a near-black texture. It can be fired into [[hellbricks]] and [[Hellbrick|hellbrick]] items.
+
+== Obtaining ==
+=== Breaking ===
+Hellstone drops itself when mined with a pickaxe. A tool with the [[Adamant equipment|adamant]] tool intrinsic smelts it as it is mined and drops a [[hellbrick]] instead; this drop is increased by [[Fortune]] and by the [[Electrum equipment|electrum]] tool intrinsic, using the same formula as ore drops.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/netherrack.json}}</ref>
+
+=== Natural generation ===
+Hellstone generates throughout Hell as in vanilla. Two ores are variants of it: [[Gilded Hellstone|gilded hellstone]] (vanilla nether gold ore) and [[Sulfurous Hellstone|sulfurous hellstone]] (vanilla nether quartz ore).
+
+== Usage ==
+{{Uses}}
+Hellstone has two cooking recipes, and they give different amounts:
+* In an [[oven]], one hellstone becomes a full block of [[hellbricks]] in 10 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/nether_bricks_from_smelting_netherrack.json}}</ref>
+* In a [[Blast Furnace|blast furnace]], one hellstone becomes a single [[hellbrick]] item in 5 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/nether_brick.json}}</ref>
+The vanilla furnace recipe for nether brick is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+== History ==
+{{History
+|{{History line|0.7-alpha|Netherrack and other "Nether" names were renamed to "Hell".}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Natural blocks]]
+[[Category:Renamed items]]

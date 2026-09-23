@@ -1,0 +1,33 @@
+{{Vanilla|Glow Ink Sac}}
+{{Infobox auto}}
+'''Phosphor''' is a glowing material used to make light sources. It replaces the {{MCW|Glow Ink Sac|glow ink sac}}, and unlike its vanilla counterpart it can be made in quantity from [[Glow Lichen|glow lichen]], so the pack's light blocks, [[Phosphor lamps|phosphor lamps]] and [[Phosphor Rod|phosphor rods]], do not depend on hunting glow squids.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+A [[Glass Bottle#Water bottle|water bottle]], a [[Sulfur Chunk|sulfur chunk]] and four glow lichen make 8 phosphor.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/phosphor.json}}</ref> The empty [[Glass Bottle|glass bottle]] is given back after crafting.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref> The recipe unlocks when the player picks up glow lichen or phosphor.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/phosphor.json}}</ref>
+
+The recipe accepts any potion in the bottle slot, not only water; the pack renames the plain, contentless potion shown in the recipe book "Water Bottle" so that the ingredient reads correctly.
+
+=== Mob loot ===
+Glow squids drop phosphor as in vanilla.
+
+== Usage ==
+{{Uses}}
+* [[Phosphor Rod|Phosphor rods]]: three phosphor between six glass panes make 6.
+* [[Phosphor lamps]]: four phosphor, four glass and a dye make 4 lamps.
+* Glow item frames and glowing signs, as in vanilla.
+* The "far" [[Music Disc|music disc]]: eight disc fragments around a phosphor.
+
+== History ==
+{{History
+|{{History line|1.0|Phosphor recipes unlock properly.}}
+{{History line|1.10|Phosphor recipes unlock when the player picks up glow lichen, and the phosphor recipe also unlocks when picking up phosphor.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Items]]
+[[Category:Renamed items]]

@@ -1,0 +1,41 @@
+{{Vanilla|Froglight}}
+{{Infobox auto|Ochre Phosphor Lamp|title=Phosphor lamps}}
+'''Phosphor lamps''' are light-emitting blocks in three colors: '''ochre''', '''verdant''' and '''pearlescent'''. They are the vanilla {{MCW|Froglight|froglights}} under new names, and they can be crafted from [[phosphor]] and [[glass]], so they no longer require leading frogs to magma cubes. They give light level 15, as in vanilla.
+
+== Obtaining ==
+=== Crafting ===
+Four phosphor and four glass around a dye make 4 lamps. The dye sets the color:<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/ochre_froglight.json}}</ref>
+{| class="wikitable"
+! Lamp !! Dye
+|-
+| [[Ochre Phosphor Lamp]] || [[Dyes|Yellow dye]]
+|-
+| [[Verdant Phosphor Lamp]] || [[Dyes|Lime dye]]
+|-
+| [[Pearlescent Phosphor Lamp]] || [[Dyes|Magenta dye]]
+|}
+{{Recipes|Ochre Phosphor Lamp}}
+{{Recipes|Verdant Phosphor Lamp}}
+{{Recipes|Pearlescent Phosphor Lamp}}
+The recipes unlock when the player picks up phosphor or glow lichen.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/phosphor.json}}</ref>
+
+=== Mob loot ===
+As in vanilla, a [[frog]] that eats a small magma cube produces a lamp: a temperate frog gives ochre, a cold frog verdant and a warm frog pearlescent.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/magma_cube.json}}</ref>
+
+== Behavior ==
+Phosphor lamps are mined fastest with a hoe or a pickaxe; the pack adds them to both tools' mineable lists.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
+
+== History ==
+{{History
+|{{History line|0.3-alpha|Hoes can mine froglights.}}
+{{History line|1.0|Froglights were renamed phosphor lamps.}}
+{{History line|1.12.1-alpha|Magma cubes killed by frogs drop phosphor lamps.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Light sources]]
+[[Category:Renamed items]]

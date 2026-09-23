@@ -1,0 +1,52 @@
+{{Infobox
+|title=Surface
+|invimage=Divine Favor
+|type=Mechanic
+|caption=Killing the Ender Dragon also drops a divine favor.
+}}
+The '''surface''' of the Overworld becomes safe from hostile [[mobs]] once the [[Ender Dragon]] has been killed in [[Matcha Flavoured]]. From then on, no zombies, skeletons, creepers or other common hostile mobs can appear under the open sky or above sea level, while caves below sea level stay as dangerous as before.
+
+== Mechanics ==
+=== Banishing evil ===
+The first time each player kills the Ender Dragon, they earn the advancement '''Iconoclast''' ("Defile the Dead God's Dream"). Its reward:<ref name="reward">{{Source|MF_datapack/data/matcha/function/mechanics/first_dragon_killed_reward.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/end/kill_dragon.json}}</ref>
+* announces "Evil has been banished from the surface." to every player;
+* switches the whole world to the safe-surface spawning rules below, permanently;
+* drops a {{ItemLink|Divine Favor}} at the center of the End, at X=0, Y=100, Z=0, which never despawns;
+* gives 3 {{ItemLink|Obol|obols}}.
+
+The spawning change is stored for the world, so it stays in effect for every player once anyone has killed the dragon. The divine favor is given again for every other player who kills the dragon for the first time.
+
+=== Safe-surface spawning ===
+After the dragon is killed, every new "mundane hostile" mob (zombie, husk, drowned, zombie villager, skeleton, stray, bogged, parched, creeper, spider, cave spider, slime, enderman, witch, silverfish) in the Overworld is removed if either of these is true:<ref name="safe">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/safe_surface.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/surface_spawn.json}}</ref>
+* it can see the sky;
+* it is at Y=63 or above, unless it is inside [[Trial Chambers|trial chambers]] or an [[Abbey|abbey]].
+
+Drowned are removed if they can see the sky or are at Y=63 or above, including inside those structures.<ref>{{Source|MF_datapack/data/matcha/predicate/drowned_surface_spawn.json}}</ref>
+
+Removed mobs are teleported 1,000 blocks down and killed, so they drop nothing. The rule applies to every way a mob can appear, including spawn eggs and spawners, and only to mobs that appear after the dragon's death; mobs already in the world are not removed. Mobs that are not on the list, such as [[Phantom|phantoms]], pillagers and the [[Wither]], are not affected, and [[Hell]] and the End keep their normal spawning.
+
+Trial chambers and abbeys are exempt from the height rule, so their spawners can keep working below the open sky, but any mob in them that can see the sky is still removed.
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Killing the Ender Dragon banishes evil even if the player who killed it is not on the server. Each new player who kills the dragon for the first time creates a new divine favor.}}
+{{History line|0.6-alpha|After the dragon is killed, no hostile mobs spawn above sea level or in open areas.}}
+{{History line|1.10|Killing the dragon also raises the difficulty.}}
+{{History line|1.12.1-alpha|Removed mobs are killed as well as moved. Drowned rules changed for the safe surface. Killing the dragon no longer changes the difficulty on Normal.}}
+{{History line|1.12.2|Abbeys can still spawn mobs after the dragon is killed, and abbey mobs no longer vanish. Fixed massive lag spikes after the dragon is killed.}}
+}}
+
+== Trivia ==
+* In the design video, the developer describes the change as a reward for finishing the game: "You have full netherite gear. You killed the Ender Dragon. You shouldn't have to contend with zombies when you just want to finish your back porch." They stress that it is not peaceful mode: "Deep in the earth, evil still walks. But, here, up here, it's safe."<ref>{{Cite video|quote=You shouldn't have to contend with zombies when you just want to finish your back porch.}}</ref>
+* The dragon is treated as a god throughout the pack: the video says "You killed a god. You freed the end from her reign."<ref>{{Cite video|quote=You killed a god. You freed the end from her reign. You freed the world from her control.}}</ref>
+
+== See also ==
+* [[Spawning]]
+* [[Ender Dragon]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mechanics]]
+[[Category:Mobs]]

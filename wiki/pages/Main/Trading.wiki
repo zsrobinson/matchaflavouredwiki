@@ -1,0 +1,115 @@
+{{Vanilla|Trading}}
+'''Trading''' is the exchange of items with [[villager]]s and the [[Wandering Trader]]. Matcha Flavoured replaces every vanilla trade with its own: villagers sell goods for [[Obol]]s, every trade can be used almost without limit, and only a few villagers buy anything from the player.
+
+== Currency ==
+{{Main|Obol}}
+The currency of trading is the [[Obol]], which replaces the {{MCW|Emerald|emerald}}. Obols are much harder to come by than emeralds are in vanilla ''Minecraft'', because villagers no longer buy the everyday goods (crops, sticks, coal, paper) that made emeralds easy to farm.<ref>{{Cite video|quote=Obols are the same as emeralds, but much harder to come across. Partially due to their overall rarity in chests, but also because villagers no longer buy anything from players. No mob grinders or fully automated melon farms can make you rich.}}</ref> The main ways to earn obols are [[chest loot]], [[advancements]], [[fishing]] and selling caught fish to a [[Fisherman]].
+
+== Mechanics ==
+=== Unlimited trades ===
+Almost every villager trade can be used 999 times before it needs to restock, so in practice trades never lock.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/1/bonemeal.json}}</ref> The only limited trades are those of the Wandering Trader (1 use each) and a villager's [[favorite food]] (1 use). The developer's stated aim is that there is "no need to keep them locked in a closet with their workbench to restock".<ref>{{Cite video|quote=Villager trades have been overhauled and with unlimited trades, there's no need to keep them locked in a closet with their workbench to restock.}}</ref>
+
+Most trades are also bulk trades. A single obol buys a full stack of logs, wool, bone meal, arrows or redstone components, 4 [[bulk blocks]] (256 stone), or a bundle of seeds.
+
+=== Who buys from the player ===
+In vanilla ''Minecraft'' every profession buys something. In Matcha Flavoured, the only trades that pay obols are:
+* the [[Fisherman]], who buys fish caught with a fishing rod at every level from Apprentice to Master;
+* the [[Jeweler]], who buys back {{ItemLink|Topaz}}, {{ItemLink|Opal}}, {{ItemLink|Amber}} and {{ItemLink|Ruby}} at Master level;
+* the [[Weaponsmith]], who buys diamonds, blocks of lapis lazuli and {{ItemLink|Hepatizon Alloy}} at Novice level;
+* the [[Wandering Trader]], who buys vanilla music discs;
+* every villager once, for its [[favorite food]].
+The [[Archaeologist]] and [[Mouthpiece]] also take [[Clay Fetish]]es and [[sacred texts]], but pay in [[Crystal Heart|crystal hearts]], maps and [[Ofuda]] instead of obols.
+
+=== How offers are chosen ===
+Trades are defined as data in the pack: each profession has one trade set per level, and each trade set picks a number of trades at random from a list when the villager reaches that level.<ref>{{Source|MF_datapack/data/minecraft/trade_set/farmer/level_1.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/villager_trade/farmer/custom_level_1.json}}</ref> When a level has more possible trades than it offers, the profession page shows it as, for example, "3 of 5 offered".
+
+Some trades only appear in certain biomes: the [[Farmer]] and [[Shepherd]] sell the [[livestock]] breed that matches the villager's climate (cold, temperate or warm).<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/3/baby_cold_cow.json}}</ref> Map trades are skipped when no matching structure is found within the search radius.
+
+Many professions have no trades at their higher levels. Those levels use a placeholder trade that the game always discards, so the villager gains no new offers there.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/4/filler.json}}</ref>
+
+=== Changing a villager's trades ===
+Because trade lists change between versions of the pack, an existing villager can be reset with an [[Amnestic]]. It makes the nearest villager forget its profession and return to Novice, so it picks new trades from the current lists the next time it takes a job.
+
+== Professions ==
+Seven professions are renamed, and every profession has new trades. The job site blocks are the vanilla ones, several of which the pack also renames.
+{| class="wikitable sortable"
+! Profession !! Vanilla profession !! Job site block !! Main goods
+|-
+| [[Farmer]] || Farmer || {{ItemLink|Composter}} || [[Bundles|seed and flower bundles]], [[livestock]], bone meal
+|-
+| [[Fisherman]] || Fisherman || {{ItemLink|Barrel}} || Buys caught [[fish]]; sells the [[Angler's Almanac]]
+|-
+| [[Shepherd]] || Shepherd || {{ItemLink|Loom}} || Wool, lambs, [[Shepherd's Shears]], [[Crook]]
+|-
+| [[Fletcher]] || Fletcher || {{ItemLink|Fletching Table}} || Arrows, [[Apotropaic Arrow|apotropaic]] and [[Nightshade Arrow|nightshade arrows]], [[Compound Bow]]
+|-
+| [[Lumberjack]] || Leatherworker || {{ItemLink|Cauldron}} || Logs and stems, [[Hatchet]]
+|-
+| [[Archaeologist]] || Cartographer || {{ItemLink|Cartography Table}} || [[Explorer maps]], pottery sherds, [[Archeologist's Brush]]
+|-
+| [[Engineer]] || Armorer || {{ItemLink|Blast Furnace}} || Redstone components, [[Bundles#Geothermal Bundle|Geothermal Bundle]]
+|-
+| [[Chemist]] || Cleric || {{ItemLink|Chemistry Stand}} || Splash potions
+|-
+| [[Jeweler]] || Toolsmith || {{ItemLink|Smithing Table}} || [[Jewelry]]
+|-
+| [[Cook]] || Butcher || {{ItemLink|Mud Kiln}} || Foods, [[Cooking Recipe]]s, [[Cleaver]]
+|-
+| [[Mouthpiece]] || Librarian || {{ItemLink|Lectern}} || [[Ofuda]], [[Crystal Heart|crystal hearts]], [[Divine Fragment]]
+|-
+| [[Mason]] || Mason || {{ItemLink|Stonecutter}} || [[Bulk blocks]]
+|-
+| [[Weaponsmith]] || Weaponsmith || {{ItemLink|Grindstone}} || Melts alloy equipment back into [[alloy]]s
+|}
+
+The [[Wandering Trader]] has no profession. It sells [[Asylum Seeker]] applications and village maps, and buys music discs.
+
+== Advancements ==
+{| class="wikitable"
+! Advancement !! Description !! Reward
+|-
+| You're Rich! || Obtain an Obol || None
+|-
+| Bonfire Lit || Use a Beacon Kindling to signal a Wandering Trader || 1 obol
+|-
+| A Good Samaritan || Cover the Relocation costs for an Asylum Seeker, and make a home for them here || 1 obol
+|-
+| Fishmonger || Sell caught fish to a Fisherman || 1 obol
+|-
+| A True Community || Trade with (almost) every profession || 5 obols
+|}
+''A True Community'' requires a trade with each of the 12 professions other than the Weaponsmith.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/trade_everything.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.2-alpha|Villager trades fixed.}}
+{{History line|0.4-alpha|The Jeweler buys gems.}}
+{{History line|0.5-alpha|The Wandering Trader buys music discs.
+The Fisherman must be leveled up through lower-tier fish before buying higher-tier fish.}}
+{{History line|0.6-alpha|The Mouthpiece no longer sells [[Divine Fragment]]s.}}
+{{History line|1.10|Added the [[Beacon Kindling]], the [[Amnestic]], Weaponsmith trades, [[The Tanakh]] and [[The Quran]] trades, and Overgrown Abbey and Papal Outpost maps.
+The Fisherman needs fewer fish per obol.
+The Archaeologist takes Clay Fetishes.
+The Wandering Trader buys up to 6 discs and sells up to 4 Asylum Seekers.
+Added the ''A True Community'' advancement.}}
+{{History line|1.12.1-alpha|The Weaponsmith buys non-renewable resources.
+The Mouthpiece sells Divine Fragments again, for crystal hearts and an echo shard.
+Cinnabar added to the Mason's trades.
+Asylum Seeker applications became random.
+Removed the Chemist's weakness, invisibility and poison splash potions.}}
+{{History line|1.12.2|All Mason trades are now [[bulk blocks]], which unpack directly into the inventory; Bulk Dirt added.
+[[Ofuda]] trades require crystal hearts.
+Amnestics no longer reset a villager's experience.}}
+}}
+
+== See also ==
+* [[Villager]]
+* [[Wandering Trader]]
+* [[Favorite food]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Mechanics]]
+[[Category:Trading]]

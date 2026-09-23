@@ -1,0 +1,20 @@
+{{Vanilla|Cooked Salmon}}
+{{Infobox auto}}
+'''Cooked large fish''' is a [[food]] item made by cooking any large fish. It heals {{Hp|5}}. It replaces {{MCW|Cooked Salmon|cooked salmon}}.
+
+== Obtaining ==
+=== Cooking ===
+Every salmon-based fish cooks into cooked large fish, since the recipe matches any <code>minecraft:salmon</code>. That includes [[salmon]] and 21 custom fish (see [[Fish]]). Cooking takes 5 seconds in an [[Oven]] or on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_salmon.json}}</ref>
+{{Recipes}}
+
+== Usage ==
+=== Food ===
+Eating it gives a hidden Regeneration III for 60 ticks (3 seconds), which heals {{Hp|5}}.
+=== Crafting ingredient ===
+{{Uses}}
+
+== References ==
+{{Reflist}}
+
+{{Navbox fishing}}
+[[Category:Food]]

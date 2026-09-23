@@ -1,0 +1,75 @@
+{{Infobox
+|title=Doom
+|image=Glyph E041.png
+|imagesize=64px
+|type=[[Set bonus|Armor intrinsic]]
+|items=[[Adamant equipment|Adamant armor]]
+|tooltip={{G|Doom}} 3 per piece<br />Set bonus: {{G|Doom set}} 4
+|id=<code>matcha:adamant_armour</code>
+|added=[[Matcha Flavoured 1.12.2|1.12.2]]
+}}
+'''Doom''' ({{G|Doom}}) is the [[Set bonus|intrinsic]] of [[Adamant equipment|adamant armor]]. Every three seconds it looks for creatures near the wearer that have {{MCW|Weakness}}, removes the Weakness, and deals damage that ignores armor. Each piece of adamant armor worn makes Doom stronger and wider, and the full set adds a bonus on top.
+
+Doom pairs with the adamant weapons, which apply Weakness on every hit: the weapon marks a target, and the armor finishes it.
+
+== Mechanics ==
+=== Level ===
+Each adamant armor piece the player wears raises their Doom level by 1, from 1 to 4. Only players count.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_armour.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_armour.mcfunction}}</ref> The tooltip shows {{G|Doom}} 3 on each piece and {{G|Doom set}} 4 as the set bonus, so a full set adds up to 3 × 4 + 4 = 16, which is the damage the full set deals.
+
+=== Effect ===
+Every 3 seconds, for each player wearing adamant armor:<ref>{{Source|MF_datapack/data/matcha/function/timers/3s/adamant_armour.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/check_doom_4.mcfunction}}</ref>
+# Every entity within the radius that has Weakness and is not wearing any adamant armor becomes a Doom target.
+# If there is at least one target, a high-pitched raid omen sound plays at the player.
+# Each target shows a burst of flame particles, takes damage and has its Weakness removed.
+
+The damage is of the <code>out_of_world</code> type, so it ignores armor and {{MCW|Resistance}}.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/apply_doom_4.mcfunction}}</ref>
+
+{| class="wikitable"
+! Pieces worn !! Tooltip total !! Radius !! Damage per target
+|-
+! 1
+| {{G|Doom}} 3 || 12 blocks || {{Hp|3}}
+|-
+! 2
+| {{G|Doom}} 6 || 16 blocks || {{Hp|6}}
+|-
+! 3
+| {{G|Doom}} 9 || 20 blocks || {{Hp|9}}
+|-
+! 4 (full set)
+| {{G|Doom}} 12 + {{G|Doom set}} 4 || 28 blocks || {{Hp|16}}
+|}
+<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/check_doom_1.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/apply_doom_1.mcfunction}}</ref>
+
+Unlike [[warding]], Doom hits '''every''' target in range at once, not just the nearest.
+
+=== Targets ===
+Doom does not check the type of entity. Anything with Weakness in range is hit, including passive mobs, [[villager]]s and other players, as long as it isn't wearing an adamant armor piece.<ref>{{Source|MF_datapack/data/matcha/predicate/not_wearing_adamant.json}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/effects/has_weakness.json}}</ref> The wearer is never hurt by their own Doom, and adamant armor also protects other players from it. A {{MCW|Zombie Villager|zombie villager}} that has been given Weakness to be cured will be damaged by Doom, and its Weakness is removed.
+
+Since removing the Weakness is part of the effect, each application of Weakness triggers Doom only once.
+
+=== Applying Weakness ===
+* The adamant weapons carry the {{G|Weakness}} intrinsic, which gives the target {{MCW|Weakness}} II for 8 to 12 seconds on every hit.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_weapon.json}}</ref>
+* Arrows of Weakness and other sources of Weakness work too. The developer noted that tipped weakness arrows are "a really useful thing now".<ref>{{Cite changelog|1.12.2|quote=Yes, this means using tipped weakness arrows is a really useful thing now}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.2|Added Doom, replacing adamant armor's earlier per-piece [[Divinity|divinity]] hearts. The release notes give {{G|Doom}} 3 as {{Hp|3}} and the full set's 16 as {{Hp|16}}.
+The adamant weapon intrinsic now applies Weakness, and the adamant tool intrinsic smelts mined blocks.}}
+}}
+
+== Trivia ==
+* The developer wrote that Doom "fits Adamant's apocryphal title much more, and ties in with its hell-based theming".<ref>{{Cite changelog|1.12.2|quote=I think this fits Adamant's apocryphal title much more, and ties in with its hell-based theming}}</ref>
+* The developer's plans include an advancement named ''Child of Moros'' for smithing the full adamant set.<ref>{{Cite changelog||quote=Child of Moros: Smith Full Adamant Set}}</ref>
+
+== See also ==
+* [[Warding]]
+* [[Divinity]]
+* [[Set bonus]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Mechanics]]
+[[Category:Intrinsics]]

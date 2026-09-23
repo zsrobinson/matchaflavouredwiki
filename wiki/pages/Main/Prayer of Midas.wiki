@@ -1,0 +1,29 @@
+{{Infobox auto|title=Prayer of Midas|type=[[Blessing]]}}
+The '''Prayer of Midas''' is a [[blessing]], a crafted enchanted book that stores [[Looting]] III and [[Fortune]] I. It is crafted from an {{MCW|Ominous Bottle|ominous bottle}}, three {{MCW|Block of Gold|blocks of gold}} and four [[Estus Ash]].
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The book in the center must be a [[Hell-Bound Book]].<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/looting_fortune.json}}</ref> The crafted item is named "Blessing", with "Prayer of Midas" as a dark gray lore line.
+
+== Usage ==
+The Prayer of Midas is applied to equipment in an [[anvil]], like an {{MCW|Enchanted Book|enchanted book}}. Looting applies to swords, spears and shears in the pack. Fortune applies to mining tools, but its maximum level is I in Matcha Flavoured; higher Fortune comes only from [[Electrum equipment|electrum]] tools. The ominous bottle is itself crafted with [[Benzene]].
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Added.<ref>{{Cite changelog|1.12.1-alpha|quote=Blessing: Prayer of Midas (Craftable Looting)}}</ref>}}
+}}
+
+== Trivia ==
+* King Midas turned everything he touched to gold, fitting enchantments that increase drops.
+
+== See also ==
+* [[Blessing]], the full list
+* [[Enchanting]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Blessings]]
+[[Category:Enchanting]]

@@ -1,0 +1,56 @@
+{{About|the family of estus items|the first form dropped by mobs|Raw Estus}}
+{{Infobox
+|title=Estus
+|invimage=Raw Estus
+|invimage2=Estus Ash
+|invimage3=Stabilized Estus
+|invimage4=Crystallized Estus
+|type=Magic material
+}}
+'''Estus''' is the magic substance at the center of [[enchanting]] in [[Matcha Flavoured]]. It is dropped by undead [[mobs]] and passes through several forms: [[Raw Estus]] heals the player when picked up and turns into [[Estus Ash]], which is crafted into [[Stabilized Estus]] or [[Crystallized Estus]]. The name is a reference to the healing estus of the ''Dark Souls'' series.<ref>{{Cite video|quote=In addition, all undead mobs drop raw Estus or Estus Ash, an ode to a brilliant game, of course. If collected, raw Estus heals the player and turns into Estus Ash, a powerful magic component which we'll get back to later.}}</ref>
+
+The estus items replace the {{MCW|Blaze|blaze}}-related items and glowstone of vanilla ''Minecraft''.
+
+{| class="wikitable"
+! Form !! Replaces !! Obtained from !! Used for
+|-
+| {{ItemLink|Raw Estus}} || {{MCW|Blaze Powder}} || Zombies, husks, drowned and zombie villagers; decorated pots || Turns into Estus Ash when picked up, healing the player
+|-
+| {{ItemLink|Estus Ash}} || {{MCW|Glowstone Dust}} || Picking up Raw Estus; skeletons, strays, bogged and witches; many chests; fishing || [[Blessing]]s, Stabilized Estus, many foods, [[Spectral Arrow]]s
+|-
+| {{ItemLink|Stabilized Estus}} || {{MCW|Blaze Rod}} || Crafting only || [[Hell-Bound Book]]s, [[Eye of Ender|eyes of ender]], [[Warding Stone]]s
+|-
+| {{ItemLink|Crystallized Estus}} || {{MCW|Glowstone}} || Crafting from 4 Estus Ash; bastion chests || Light source, [[Electric Lamp]]s, respawn anchors
+|-
+| [[Estus Flask]] || — || ''Removed in {{Version|1.12.2}}'' || A healing drink
+|}
+
+== Mechanics ==
+=== Healing ===
+{{Main|Raw Estus#Behavior}}
+When a player who is not in Creative mode gets Raw Estus in their inventory, each piece is used up at once: it grants a burst of Regeneration V and Resistance I, and is replaced with one Estus Ash.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/estus_effects.mcfunction}}</ref> Killing zombies is therefore a way to heal in a fight, since the pack has no [[natural regeneration]].
+
+=== Magic ===
+Estus Ash is the most common magic ingredient. Seven of them, a [[Benzene]] and a [[Stable Void]] make one Stabilized Estus, which is the core of every Hell-Bound Book and of the eye of ender.<ref>{{Cite video|quote=Estus Ash, an ender pearl, and Benzene together can make stabilized Estus. This is a vital crafting component for most magic. Hellbound books use them, the warning stone has stabilized Estus at its center, and the Eye of Ender is crafted from this material.}}</ref>
+
+Blazes, which are not undead, do not drop any estus; they drop {{MCW|Fire Charge|fire charges}} instead.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/blaze.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Raw Estus is no longer processed in Creative mode. Estus processing optimized.}}
+{{History line|1.10|Blazes no longer drop Raw Estus. Raw Estus gets fire and smoke particles and a new texture. The release notes list the Estus Flask as removed.}}
+{{History line|1.12|The release notes state that the Estus Flask stays in the pack.}}
+{{History line|1.12.1-alpha|Raw Estus can no longer fuel brewing stands. Estus Ash added to the fishing junk pool.}}
+{{History line|1.12.2|The Estus Flask is removed.}}
+}}
+
+== See also ==
+* [[Enchanting]]
+* [[Divine Fragment]] and [[Divine Favor]], the other rare magic materials
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Items]]

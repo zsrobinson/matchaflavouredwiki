@@ -1,0 +1,220 @@
+{{Infobox
+|title=Abbey
+|type=Jigsaw structure
+|biomes=[[Biomes#Changes by biome|Forest]], [[Biomes#Changes by biome|Dark Forest]]
+|generates=Overworld, partly underground
+|consists=Stone, tuff bricks, andesite, cobblestone, moss, copper grates, [[Copper Eye]]s
+|id=<code>minecraft:abbey_overgrown</code>
+|added={{Version|1.10}}
+}}
+The '''Abbey''' is a large ruined dungeon structure added by [[Matcha Flavoured]]. It consists of an overgrown tower on the surface and a maze of trial rooms, puzzle rooms and reward rooms deep underground, connected by doors and grates that open when a [[Copper Eye]] is shot. The developer describes it as "the bastion of the overworld": where the {{MCW|Bastion Remnant}} supplies [[Adamant Scrap]], the Abbey supplies [[Silver Bullion|silver]].<ref>{{Cite changelog|1.10|quote=Abbeys are the bastion of the overworld (hopefully). Bastions provide adamant scrap, Abbeys provide silver.}}</ref>
+
+The Abbey is a late-mid to late-game dungeon. The release notes recommend full [[Diamond equipment|diamond gear]] and good food, and advise against [[Steel equipment|steel armor]] because its blast resistance "makes the dungeon boring".<ref>{{Cite changelog|1.10|quote=Abbeys are late-mid to late-game dungeon, so be prepared [...] DONT WEAR STEEL! Blast resistance makes the dungeon boring}}</ref>
+
+== Generation ==
+The only Abbey variant is the '''Overgrown Abbey''' (structure ID <code>minecraft:abbey_overgrown</code>, map name "Overgrown Abbey Map"). The pack's code also contains the pieces for a "default" abbey, but these are used only as the underground part of the overgrown one.
+
+Abbeys generate in [[Biomes|Forest and Dark Forest]] biomes.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/has_structure/abbey_overgrown.json}}</ref> Placement uses the structure set <code>minecraft:abbey</code>:<ref>{{Source|MF_datapack/data/minecraft/worldgen/structure_set/abbey.json}}</ref>
+* Random spread with a spacing of 60 chunks and a separation of 40 chunks (salt 10187261). At most one Abbey can generate in each 60 × 60 chunk (960 × 960 block) region, and two Abbeys are always at least 40 chunks apart.
+* An exclusion zone keeps Abbeys at least 16 chunks away from any [[Abandoned village|village]].
+
+The structure is a jigsaw structure with a maximum depth of 20 pieces, a maximum horizontal distance of 116 blocks from its start and <code>beard_thin</code> terrain adaptation.<ref>{{Source|MF_datapack/data/minecraft/worldgen/structure/abbey_overgrown.json}}</ref> Its first piece, the tower, is placed 10 blocks below the surface (the <code>MOTION_BLOCKING_NO_LEAVES</code> heightmap), so its lower floors are buried.
+
+Abbeys can be found with an Overgrown Abbey Map, which the [[Archaeologist]] sells at level 3 in exchange for [[The Divine Comedy]] or [[Paradise Lost]]. See [[Explorer maps]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_paradise_lost.json}}</ref> They can also be located with <code>/locate structure minecraft:abbey_overgrown</code>.
+
+== Structure ==
+An Abbey is assembled from template pieces joined by jigsaw blocks. The pieces are chosen from these template pools:<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/abbey/default/rooms.json}}</ref>
+
+{| class="wikitable"
+! Pool !! Pieces (weight) !! Role
+|-
+| <code>abbey/overgrown/tower</code> || tower || Surface tower; the structure's start.
+|-
+| <code>abbey/default/entrances</code> || entrance_0 || Shaft from the bottom of the tower to the dungeon.
+|-
+| <code>abbey/default/entrance_rooms</code> || tutorial || First room of the dungeon.
+|-
+| <code>abbey/default/dungeon_rooms</code> || waterfall (1), quad_spawn_walkways (3), spider_triple_walkway (3), drawbridge (3), water_and_lava (3) || Combat rooms.
+|-
+| <code>abbey/default/puzzle_rooms</code> || hallway_pitfall, lantern_drop, decision_puzzle, bath, jump_puzzle (1 each) || Puzzle rooms.
+|-
+| <code>abbey/default/boon_rooms</code> || boon_checkpoint, boon_vault, boon_heart (1 each) || Small dead-end reward rooms.
+|}
+
+The layout follows this chain:
+# The '''tower''' (21 × 48 × 23 blocks) stands on the surface. Its bottom jigsaw connects down to the entrance shaft.
+# The '''entrance''' (30 × 48 × 13) is a 48-block-deep shaft with a bubble column over [[soul sand]] to carry the player back up, and a [[Copper Eye]] door and several Copper Eye grates. A [[Crystal Heart]] lies on a ledge inside it.
+# The '''tutorial room''' (35 × 16 × 35) is the hub of the dungeon. It holds five trial spawners, connects to reward rooms on its east and west sides, to puzzle rooms on its upper east and west sides, and to a combat room to the south.
+# '''Combat rooms''' connect onward to puzzle rooms and reward rooms, and '''puzzle rooms''' connect back to combat rooms, so the dungeon branches until the depth limit or the 116-block radius is reached.
+# '''Reward rooms''' ("boons") are 5 × 7 × 7 dead ends.
+
+Several jigsaw blocks in the combat rooms point to a pool named <code>abbey/default/dungeon</code>, and the tutorial room's entrance connector points to <code>abbey/default/entrace_rooms</code>. Neither pool exists, so those connectors never generate anything.<ref>{{Source|MF_datapack/data/minecraft/structure/abbey/default/rooms/drawbridge.nbt}}</ref>
+
+=== Rooms ===
+{| class="wikitable"
+! Room !! Size !! Contents
+|-
+| Tower || 21 × 48 × 23 || 3 trapped chests (barracks loot) on the barracks floor, 1 trapped chest (tower loot) at the top, 20 decorated pots, a soul campfire, 12 brown beds, 4 infested cobblestone, 7 [[#Mobs|allays]].
+|-
+| Entrance || 30 × 48 × 13 || Bubble-column shaft, 2 Copper Eye doors, 6 Copper Eye grates, a [[Crystal Heart]] item.
+|-
+| Tutorial || 35 × 16 × 35 || 5 trial spawners, 4 Copper Eye lanterns, 6 Copper Eye doors, 6 Copper Eye grates, a vault placeholder, 4 skeleton skulls.
+|-
+| Waterfall || 48 × 24 × 33 || 8 monster spawners (6 skeleton, 2 husk), a large waterfall, many Copper Eye grates.
+|-
+| Quad spawn walkways || 22 × 11 × 22 || 2 trial spawners (skeleton and armored skeleton), Copper Eye doors and grates.
+|-
+| Spider triple walkway || 27 × 11 × 22 || 2 spider trial spawners, 1 cave spider monster spawner, 1 vault (Trial Key), bats.
+|-
+| Drawbridge || 31 × 14 × 19 || 5 trial spawners (cave spider, skeleton, 3 zombie including an armored one), TNT, Copper Eye doors, grates and lanterns.
+|-
+| Water and lava || 22 × 13 × 35 || 2 trial spawners (armored skeleton, blaze), water and lava, blackstone.
+|-
+| Hallway pitfall || 19 × 10 × 13 || Pointed dripstone pit, ladders, a Copper Eye door and grates.
+|-
+| Lantern drop || 17 × 37 × 13 || A zombie trial spawner, 2 chipped anvils, TNT, a Copper Eye lantern, bubble column.
+|-
+| Decision puzzle || 19 × 10 × 17 || A cave spider trial spawner, a dispenser with 3 [[tipped arrow]]s of Poison (long), bats.
+|-
+| Bath || 19 × 10 × 13 || A water pool and vertical Copper Eye grates.
+|-
+| Jump puzzle || 26 × 31 × 17 || A parkour climb over infested cobblestone, vertical Copper Eye grates, an ominous vault at the top.
+|-
+| Boon: checkpoint || 5 × 7 × 7 || A [[Silver Bullion]] item and blocks that can become [[Native Silver]] ore.
+|-
+| Boon: vault || 5 × 7 × 7 || An ominous vault.
+|-
+| Boon: heart || 5 × 7 × 7 || A [[Crystal Heart]] item.
+|}
+
+=== Block processors ===
+Placeholder blocks in the templates are replaced when the structure generates. Each placeholder's rules are checked in order and the first one that succeeds is used, so the effective chances are lower than the listed chance for later rules.<ref>{{Source|MF_datapack/data/minecraft/worldgen/processor_list/abbey_dungeon.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/processor_list/abbey_tower.json}}</ref>
+
+{| class="wikitable"
+! Placeholder !! Underground rooms (<code>abbey_dungeon</code>) !! Tower (<code>abbey_tower</code>)
+|-
+| Magenta glazed terracotta || 30% cobweb, otherwise air || Same
+|-
+| Yellow glazed terracotta || 25% cracked decorated pot (Abbey pot loot); 25% flower pot; 6.25% vault; 25% cobweb; otherwise air. Effective: pot 25%, flower pot 18.8%, vault 3.5%, cobweb 13.2%, air 39.5%. || 20.3% cracked decorated pot; 20.3% flower pot; 12.5% skeleton skull; 6.25% vault; 20.3% cobweb; otherwise air
+|-
+| Brown glazed terracotta || 50% cracked decorated pot; 30% flower pot; otherwise air (effective 50%, 15%, 35%) || 33% cracked decorated pot; 21% flower pot; otherwise air
+|-
+| Tuff bricks || 65% stone bricks; 15% cracked stone bricks; otherwise mossy stone bricks || Stone
+|-
+| Polished tuff || Andesite || Andesite
+|-
+| Orange glazed terracotta || Vault || —
+|-
+| Cyan glazed terracotta || Ominous vault || —
+|-
+| Blue glazed terracotta || 30% [[Native Silver|Native Deepslate Silver]], otherwise deepslate || —
+|-
+| Pink glazed terracotta || 30% [[Native Silver]], otherwise stone || —
+|}
+
+Vaults created by a processor have no configuration, so they use the vanilla default: they open with a {{MCW|Trial Key}} and give <code>chests/trial_chambers/reward</code> loot. The two ominous vaults placed in the templates (boon vault and jump puzzle) open with an {{MCW|Ominous Trial Key}} and give <code>chests/trial_chambers/reward_ominous</code> loot. See [[Trial Chambers#Loot]] for these tables.
+
+=== Copper Eyes ===
+{{Main|Copper Eye}}
+The dungeon's doors, grates and hanging lanterns are controlled by [[Copper Eye]]s (target blocks). Shooting a Copper Eye with any projectile opens the iron-bar door below it, slides or lifts its copper grate, or drops its lantern. Each Copper Eye works once.
+
+=== Warding Stones ===
+A [[Warding Stone]] cannot be placed in an Abbey (or in [[Trial Chambers]]). If a player tries, the stone explodes like TNT with no fuse.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/forbidden.mcfunction}}</ref>
+
+== Loot ==
+=== Tower chests ===
+The trapped chest at the top of the tower uses <code>chests/abbey/tower</code>. It always contains [[The Tanakh]] or [[The Quran]] and has a 50% chance of a [[Crystal Heart]].
+{{Data/Loot/minecraft/chests/abbey/tower}}
+
+=== Barracks chests ===
+The three trapped chests on the barracks floor use <code>chests/abbey/barracks</code>.
+{{Data/Loot/minecraft/chests/abbey/barracks}}
+
+=== Decorated pots ===
+The tower's 20 decorated pots and every pot created by a processor use <code>pots/abbey/common</code>.
+{{Data/Loot/minecraft/pots/abbey/common}}
+
+=== Other ===
+* Vaults: see [[Trial Chambers#Loot]].
+* Trial spawners drop keys from <code>spawners/trial_chamber/key</code>: an 80% chance of a Trial Key and a 20% chance of an Ominous Trial Key per key drop.<ref>{{Source|MF_datapack/data/minecraft/loot_table/spawners/trial_chamber/key.json}}</ref>
+* A [[Crystal Heart]] item lies in the entrance shaft and in the heart boon room; [[Silver Bullion]] lies in the checkpoint boon room.
+
+== Mobs ==
+[[Warding]] has no effect on undead wearing copper armor, which makes the armored skeletons and zombies of the Abbey dangerous even to warded players.
+
+{| class="wikitable"
+! Room !! Spawner !! Mob
+|-
+| rowspan=3 | Tutorial || Trial spawner "Buff Copper Skeletons" (×2) || [[Skeleton]] in a full copper armor set with a bow with Power I and Punch I
+|-
+| Trial spawner "Buff Stay" || [[Stray]] with an iron helmet, copper chestplate, leggings and boots and a bow with Power II and Punch I
+|-
+| Trial spawner (×2) || [[Spider]]
+|-
+| rowspan=2 | Quad spawn walkways || Trial spawner || [[Skeleton]]
+|-
+| Trial spawner || Copper-armored skeleton (Power I, Punch I bow)
+|-
+| rowspan=2 | Spider triple walkway || Trial spawner (×2) || [[Spider]]
+|-
+| Monster spawner || [[Cave Spider]]
+|-
+| rowspan=4 | Drawbridge || Trial spawner || [[Cave Spider]]
+|-
+| Trial spawner || [[Skeleton]]
+|-
+| Trial spawner (×2) || [[Zombie]]
+|-
+| Trial spawner || [[Zombie]] in a full copper armor set with an iron [[spear]]
+|-
+| rowspan=2 | Water and lava || Trial spawner || Copper-armored skeleton
+|-
+| Trial spawner || [[Blaze]]
+|-
+| Waterfall || Monster spawner (×8) || 6 [[Skeleton]], 2 [[Husk]]
+|-
+| Lantern drop || Trial spawner || [[Zombie]]
+|-
+| Decision puzzle || Trial spawner || [[Cave Spider]]
+|}
+The equipped mobs from trial spawners never drop their equipment, and have a safe fall distance of 16 blocks and a water movement efficiency of 0.8. Mobs from the monster spawners carry the <code>NoDrops</code> tag and drop nothing, like all spawner mobs in the pack (see [[Spawner]]).
+
+Seven {{MCW|Allay|allays}} are placed in the tower when it generates, along with several bats in the dungeon.
+
+After the [[Ender Dragon]] is killed, hostile mobs stop spawning on the surface (see [[Surface]]). Abbeys and Trial Chambers are exempt, so mobs keep spawning inside them.<ref>{{Source|MF_datapack/data/matcha/predicate/surface_spawn.json}}</ref>
+
+== Music ==
+The track "Abbey" by Vee Vaicekauskas replaces the forest background music, so it plays in Forest, Birch Forest, Old Growth Birch Forest and Dark Forest biomes. See [[Music]].
+
+== History ==
+{{History
+|{{History line|1.10|date=August 10, 2026|Added the Abbey (Overgrown Abbey).
+* The [[Archaeologist]] sells Abbey maps.}}
+{{History line|1.12|date=August 12, 2026|Ominous Trial Keys did not drop from the Abbey's spawners. As a fix, key drops became 20% Ominous Trial Keys.}}
+{{History line|1.12.1-alpha|date=September 1, 2026|Warding Stones can no longer be placed in Abbeys.
+* The tower chest now always contains The Quran or The Tanakh.
+* Added the "Abbey" background track.
+* The Copper Eye scan now runs when a target is hit, instead of every tick.}}
+{{History line|1.12.2|date=September 19, 2026|Allays now generate with the structure; previously they did not spawn.
+* Abbey mobs no longer vanish after the Ender Dragon is killed, and Abbeys keep spawning mobs after the dragon.
+* Spawner mobs no longer drop anything.}}
+}}
+
+== Trivia ==
+* The developer called the Abbey "my first real structure" and said future structures would each revolve "around their own special mechanics. Classic Zelda nonsense."<ref>{{Cite changelog|1.10|quote=The Abbey is my first real structure [...] I hope to add more structures like this in the future, all revolving around their own special mechanics. Classic Zelda nonsense.}}</ref>
+* The developer originally made Abbeys "as rare as woodland mansions (accidentally)", then made them more common.
+* The trial spawner for strays is named "Buff Stay", a misspelling of "stray".
+* The advancement description for [[Silver Bullion|silver]] says that most silver deposits "are now harboured in Abbeys".
+* The developer's notes plan a full redesign with more surrounding buildings, a proper downstairs entrance and more uses for the Copper Eye.
+
+== See also ==
+* [[Papal Outpost]], whose watchtower uses the Abbey's loot tables
+* [[Copper Eye]]
+* [[Trial Chambers]]
+
+== References ==
+{{reflist}}
+
+{{Navbox world}}
+[[Category:Structures]]
+[[Category:Generated structures]]

@@ -4,12 +4,12 @@
 |invimage=Fishing Rod
 |type=Mechanic
 }}
-'''Fishing''' is the act of catching items with a [[fishing rod]]. Matcha Flavoured replaces the vanilla fishing loot with a biome-based system: the water's biome decides which of 11 climate tables a catch comes from, and each climate has 5 fish of different rarity. With the [[Fisherman]] paying [[Obol]]s for fish, fishing is one of the few ways to earn money in the pack.<ref>{{Cite video|quote=Fisherman are the only villager that will buy items from you and pay handsomely. So, even if you fish for a bit, fail to catch any treasure, you can still take home a few bucks when you get back to your base.}}</ref>
+'''Fishing''' is the act of catching items with a [[Fishing Rod|fishing rod]]. Matcha Flavoured replaces the vanilla fishing loot with a biome-based system: the water's biome decides which of 11 climate tables a catch comes from, and each climate has 5 fish of different rarity. With the [[Fisherman]] paying [[Obol]]s for fish, fishing is one of the few ways to earn money in the pack.<ref>{{Cite video|quote=Fisherman are the only villager that will buy items from you and pay handsomely. So, even if you fish for a bit, fail to catch any treasure, you can still take home a few bucks when you get back to your base.}}</ref>
 
 The pack has 47 different [[fish]] to catch, not counting the frogs, tadpoles and axolotls that can turn up as [[fishing junk]].
 
 == Mechanics ==
-Casting, waiting, bite timing, [[Lure]] and the "open water" check all work as in vanilla. Only the loot tables are changed.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
+Casting, waiting, bite timing, {{MCW|Lure}} and the "open water" check all work as in vanilla. Only the loot tables are changed.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
 
 === Choosing the catch ===
 Each catch rolls the <code>gameplay/fishing</code> loot table once. It picks one of three categories:
@@ -26,7 +26,7 @@ Each catch rolls the <code>gameplay/fishing</code> loot table once. It picks one
 
 If the bobber isn't in open water, treasure can't be caught, and fish make up 85 of the remaining 95 weight (89.47%).
 
-Each level of [[Luck of the Sea]] adds the entry's quality to its weight, as in vanilla. The pack doesn't change what the enchantment does, only its anvil cost.<ref>{{Source|MF_datapack/data/minecraft/enchantment/luck_of_the_sea.json}}</ref>
+Each level of {{MCW|Luck of the Sea}} adds the entry's quality to its weight, as in vanilla. The pack doesn't change what the enchantment does, only its anvil cost.<ref>{{Source|MF_datapack/data/minecraft/enchantment/luck_of_the_sea.json}}</ref>
 
 {| class="wikitable"
 ! Luck of the Sea !! Junk !! Treasure !! Fish
@@ -60,7 +60,7 @@ Every caught fish has a rarity of 1 to 4 stars, shown as the first line of its t
 The developer grouped the fish this way so that every climate earns about the same amount of money.<ref>{{Cite changelog|0.5-alpha|quote=Each biome/water type have 5 fish, two common, one uncommon, one rare, and one epic. [...] This was done to better balance the selling system, so each biome will be just as "efficient" to fish in as any other}}</ref> The rarity is part of the item, so a fish only counts for trades and advancements when it was caught with a rod. A [[cod]] dropped by a mob doesn't carry the rarity line and can't be sold.<ref>{{Cite changelog|0.5-alpha|quote=Cod and Salmon cannot be killed and sold, only if caught will they be valid.}}</ref>
 
 === Fish are cod, salmon and pufferfish ===
-Every custom fish is a vanilla {{MCW|Raw Cod|cod}}, {{MCW|Raw Salmon|salmon}} or {{MCW|Pufferfish|pufferfish}} with its own name, texture and rarity line. Small fish are cod and cook into [[cooked fish]]. Large fish are salmon and cook into [[cooked large fish]]. The [[Freshwater Puffer]] is a pufferfish and cooks into [[cooked pufferfish]]. See [[Fish]] for the full list.
+Every custom fish is a vanilla {{MCW|Raw Cod|cod}}, {{MCW|Raw Salmon|salmon}} or {{MCW|Pufferfish|pufferfish}} with its own name, texture and rarity line. Small fish are cod and cook into [[Cooked Fish|cooked fish]]. Large fish are salmon and cook into [[Cooked Large Fish|cooked large fish]]. The [[Freshwater Puffer]] is a pufferfish and cooks into [[Cooked Pufferfish|cooked pufferfish]]. See [[Fish]] for the full list.
 
 == Climates ==
 The climate table is chosen by the biome at the bobber. Each table below lists the fish, the rarity, the weight inside the table and the chance of that fish per cast with no Luck of the Sea. "Open water" is the normal case. "Other water" is a small or enclosed pool, where treasure can't be caught.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/freshwater_cold.json}}</ref>
@@ -284,7 +284,7 @@ Snowy Beach is in no biome tag at all, so only the base junk (10) and treasure (
 
 == Junk and treasure ==
 {{Main|Fishing junk|Fishing treasure}}
-Junk is mostly lily pads, [[Sturdy Leather|leather]], [[fish bones]], water bottles, [[Estus Ash]] and nautilus shells. Some biomes add their own junk: [[bamboo]] in jungles, [[Frog|frogs]] and [[Tadpole|tadpoles]] in swamps, and [[Axolotl|axolotls]] in Dripstone Caves and Lush Caves.
+Junk is mostly lily pads, [[Sturdy Leather|leather]], [[Fish Bones|fish bones]], water bottles, [[Estus Ash]] and nautilus shells. Some biomes add their own junk: [[bamboo]] in jungles, [[Frog|frogs]] and [[Tadpole|tadpoles]] in swamps, and [[Axolotl|axolotls]] in Dripstone Caves and Lush Caves.
 
 Treasure is [[Obol]]s, enchanted fishing rods, [[Hell-Bound Book]]s, goat horns, angler pottery sherds, [[Crystal Heart]]s and rarely a chest of buried treasure.
 
@@ -331,7 +331,7 @@ The [[Angler's Almanac]] adds its own advancement tab with an entry for every ca
 {{History line|0.2-alpha|Fixed fishing and "added a few more" catches.}}
 {{History line|0.5-alpha|Fishing overhauled: freshwater and saltwater climates, 5 fish per climate with star rarities, fish selling to the Fisherman by rarity tier.
 Swamps get their own table and junk.
-Added [[cooked pufferfish]].
+Added [[Cooked Pufferfish|cooked pufferfish]].
 Crystal Hearts added to fishing treasure.}}
 {{History line|1.02|Added a fishing advancement.}}
 {{History line|1.10|Fish needed per Obol lowered: ⭐ 24 → 12, ⭐⭐ 12 → 8, ⭐⭐⭐ 8 → 4, ⭐⭐⭐⭐ unchanged at 1.
@@ -342,7 +342,7 @@ Fixed tropical freshwater being overridden by arid freshwater.
 The Opah can now be sold.
 The Alaska Blackfish now counts for No More Fish in the Sea (its name was misspelled in the advancement).}}
 {{History line|1.12|Fishing buried treasure buffed slightly.}}
-{{History line|1.12.1-alpha|Added the [[Angler's Almanac]] and [[fishing sounds]].
+{{History line|1.12.1-alpha|Added the [[Angler's Almanac]] and [[Fishing sounds|fishing sounds]].
 Fish changed to the current item format. Fish caught before this version can no longer be sold.
 Fish now make up 85 of 100 weight in their biomes (a previous patch gave junk about 50% of the time).
 Estus Ash added to junk, nautilus shells added to the fishing buried treasure, treasure tweaked.

@@ -1,0 +1,107 @@
+{{Infobox
+|title=Blessing
+|invimage=Prayer of Prometheus
+|invimage2=Prayer of Lu Ban
+|invimage3=Elegy of Icarus
+|type=Enchanted book
+|stackable=No
+|renewable=Yes
+|base=<code>minecraft:enchanted_book</code>
+}}
+A '''blessing''' is an enchanted book crafted from a [[Hell-Bound Book]] and a set of themed ingredients. Blessings are the main way to get [[enchantment]]s in [[Matcha Flavoured]], replacing the enchanting table. Each one stores a fixed set of enchantments at fixed levels and is named, in its tooltip, as a prayer or elegy to a deity or mythological figure: the [[Prayer of Prometheus]] grants Unbreaking, the [[Elegy of Icarus]] grants Feather Falling.
+
+== Obtaining ==
+=== Crafting ===
+Every blessing is a shaped [[Crafting Table|crafting]] recipe with a Hell-Bound Book in the center slot. The eight surrounding slots hold ingredients tied to the enchantment and the figure it is named after. The recipes are in the pack's <code>recipe/blessing</code> folder.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/unbreaking.json}}</ref>
+
+{| class="wikitable sortable"
+! Blessing !! Stored enchantments !! Ingredients around the book
+|-
+| {{ItemLink|Prayer of Aeolus}} || [[Anemos]], {{MCW|Wind Burst}} I || 7 wind charges, block of gold
+|-
+| {{ItemLink|Prayer of Apollo}} || {{MCW|Impaling}} III, {{MCW|Piercing}} II || 4 [[Spectral Arrow]]s, 3 gold ingots, disc fragment
+|-
+| {{ItemLink|Prayer of Ares}} || {{MCW|Lunge}} II, {{MCW|Breach}} II || Iron sword or iron spear, shield, iron helmet, red dye
+|-
+| {{ItemLink|Prayer of Artemis}} || {{MCW|Power}} II, {{MCW|Multishot}} || 4 spectral arrows, 3 raw porkchops, [[Silver Bullion]]
+|-
+| {{ItemLink|Prayer of Cronus}} || {{MCW|Swift Sneak}} II, {{MCW|Soul Speed}} II || 4 sculk, 3 echo shards, iron hoe
+|-
+| {{ItemLink|Prayer of Daedalus}} || {{MCW|Efficiency}} III, [[Unbreaking]] III || [[Divine Favor]], diamond pickaxe, diamond axe, 4 [[Estus Ash]], diamond
+|-
+| {{ItemLink|Prayer of Demeter}} || {{MCW|Frost Walker}} II, [[Frost Protection]] II || 4 golden apples, 3 blue ice, golden hoe
+|-
+| {{ItemLink|Prayer of Eros}} || [[Silk Touch]] || [[Shakudo Alloy]], 4 arrows, 3 Estus Ash
+|-
+| {{ItemLink|Prayer of Glaucus}} || {{MCW|Luck of the Sea}} III, {{MCW|Lure}} III, {{MCW|Loyalty}} I || 3 nautilus shells, azure bluet
+|-
+| {{ItemLink|Prayer of Lu Ban}} || [[Mending]] || Divine Favor, block of diamond, 6 diamonds
+|-
+| {{ItemLink|Prayer of Man}} || [[Warding]] 2, {{MCW|Smite}} II || 4 [[Baked Golden Apple]]s, 3 lapis lazuli, Silver Bullion
+|-
+| {{ItemLink|Prayer of Midas}} || [[Looting]] III, [[Fortune]] I || Ominous bottle, 3 blocks of gold, 4 Estus Ash
+|-
+| {{ItemLink|Prayer of Paris}} || {{MCW|Infinity}} || 7 spectral arrows, [[Stable Void]]
+|-
+| {{ItemLink|Prayer of Prometheus}} || [[Unbreaking]] II || [[Divine Fragment]], 3 diamonds, 4 Estus Ash
+|-
+| {{ItemLink|Prayer of St. Clement}} || [[Trailblaze]] III || Leather boots, 2 wool, 2 [[Obol]]s
+|-
+| {{ItemLink|Prayer of Talos}} || {{MCW|Density}} II, {{MCW|Knockback}} II, {{MCW|Punch}} II || 7 blocks of iron, [[Steel Alloy]]
+|-
+| {{ItemLink|Prayer of The Light}} || {{MCW|Smite}} IV, {{MCW|Channeling}} || 3 Silver Bullion, 4 Estus Ash, gold ingot
+|-
+| {{ItemLink|Prayer of Will}} || [[Reach]] I || 4 Stable Voids
+|-
+| {{ItemLink|Prayer of Yama}} || {{MCW|Flame}}, {{MCW|Fire Aspect}} I, {{MCW|Fire Protection}} III || 4 fire charges, 4 gold ingots
+|-
+| {{ItemLink|Prayer of Yamm}} || {{MCW|Depth Strider}} II, {{MCW|Riptide}} I, {{MCW|Aqua Affinity}}, {{MCW|Respiration}} II || 4 nautilus shells
+|-
+| {{ItemLink|Elegy of Arachnae}} || {{MCW|Bane of Arthropods}} V || 4 spider eyes
+|-
+| {{ItemLink|Elegy of Hyacinthus}} || [[Zephyr]] I || 4 wind charges, 3 feathers, [[Hyacinth]]
+|-
+| {{ItemLink|Elegy of Icarus}} || [[Feather Falling]] II || 4 wind charges, 3 feathers, [[Wax]]
+|}
+
+The Prayer of Daedalus and the Prayer of Lu Ban need a [[Divine Favor]], and the Prayer of Prometheus needs a [[Divine Fragment]], which makes Unbreaking, Efficiency and Mending the most expensive enchantments to craft. {{MCW|Protection}} and {{MCW|Sharpness}} have no blessing at all and come only from [[Ofuda]] or loot.
+
+== Usage ==
+A blessing is combined with a piece of equipment in an [[anvil]], like any {{MCW|Enchanted Book|enchanted book}}. Blessings do not stack. Because the pack sets every anvil cost multiplier to 1 and gives the player experience while they use an anvil, applying a blessing is cheap; see [[Enchanting#Applying enchantments]].
+
+Blessings are not the Hell-Bound Book itself: the crafted book stores only the blessing's enchantments, not the Curse of Binding that a blank Hell-Bound Book carries.
+
+== Appearance ==
+All blessings share the item name "Blessing". The prayer or elegy name is shown as a dark gray lore line, and each blessing has its own texture.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> The Prayer of Man and the Prayer of Talos have rare (aqua) rarity and the Prayer of Lu Ban has epic (purple) rarity; the others use the default rarity of an enchanted book.
+
+The three elegies are named after figures who die in their myths (Arachne, Hyacinthus and Icarus), while the prayers address gods, Titans, heroes and saints.
+
+== Advancements ==
+{| class="wikitable"
+! Advancement !! Description !! Requirement
+|-
+| Unholy Knowledge || Craft a Hell-Bound Book || Craft a [[Hell-Bound Book]].
+|-
+| Apocrypha || Steal Prayers from a long-dead God || Craft any one of 17 blessings. The Prayers of Apollo, Ares, Artemis, Cronus, Glaucus and Talos do not count.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/craft_blessing.json}}</ref>
+|}
+
+== History ==
+{{History|
+{{History line|0.4-alpha|The Prayer of Prometheus now gives Unbreaking II.}}
+{{History line|0.5-alpha|Added textures for all blessings and translation support. The Prayer of Icarus now gives Feather Falling II. The Prayer of St. Clement now works.}}
+{{History line|0.6-alpha|The Prayer of Demeter counts toward the blessing crafting advancement.}}
+{{History line|1.10|Buffed the Prayer of The Light recipe, nerfed the Prayer of Man recipe and changed the Prayer of Aeolus recipe. The blessing then called "Prayer of God-King" is renamed "Prayer of The Light" in the language file; its internal key stays <code>god_king</code>.<ref>{{Cite changelog|1.10|quote=Prayer of God-King, is still labeled as such in the Lang (to preserve update consistency) however the translation was changed to "Prayer of The Light"}}</ref>}}
+{{History line|1.12.1-alpha|Added the Prayer of Midas. Fixed blessing recipe unlocks.}}
+}}
+
+== See also ==
+* [[Enchanting]]
+* [[Enchantment]]
+* [[Ofuda]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Items]]

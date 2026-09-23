@@ -1,0 +1,70 @@
+{{Vanilla|Tropical Fish}}
+{{Infobox
+|title=Tropical Fish
+|invimage=Tropical Fish
+|type=[[Fish]], [[Food]]
+|vanilla={{MCW|Tropical Fish}}
+|stackable=Yes (64)
+|renewable=Yes
+|tooltip=⭐☆☆☆ (when caught by fishing)
+|id=<code>minecraft:tropical_fish</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/fish/tropical_fish.json|tropical_fish.json}}
+}}
+A '''tropical fish''' is a common ⭐☆☆☆ [[fish]] caught by [[fishing]] in [[Fishing#Warm saltwater|warm]] and [[Fishing#Hot saltwater|hot saltwater]]. It is the vanilla {{MCW|Tropical Fish|tropical fish}} with a rarity line. Unlike in vanilla, it can be cooked, into [[Cooked Fish|cooked fish]], and a [[Fisherman]] buys 12 caught tropical fish for an [[Obol]].
+
+== Obtaining ==
+=== Fishing ===
+The tropical fish can be caught in these climate tables.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/saltwater_warm.json}}</ref> <ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/saltwater_hot.json}}</ref> The chances are per cast of a [[Fishing Rod|fishing rod]] and include the junk and treasure rolls.
+{| class="wikitable"
+! Climate !! Biomes !! Weight !! Per catch (open water) !! Per catch (other water) !! Per catch ({{MCW|Luck of the Sea}} III)
+|-
+| [[Fishing#Warm saltwater|Warm saltwater]] || Lukewarm Ocean, Deep Lukewarm Ocean || 15 of 42 || 30.36% || 31.95% || 30.19%
+|-
+| [[Fishing#Hot saltwater|Hot saltwater]] || Warm Ocean || 15 of 42 || 30.36% || 31.95% || 30.19%
+|}
+
+The same tables are also rolled by the fisherman's house chest in [[Village|villages]] and by the {{MCW|Elder Guardian|elder guardian}}'s drops, using the biome at the chest or where the elder guardian dies.
+
+{{Sources}}
+
+== Usage ==
+=== Food ===
+Raw fish can be eaten, but it heals nothing: Matcha Flavoured removes [[hunger]], and food only heals through the hearts shown on its tooltip. Cooked, it becomes [[Cooked Fish|cooked fish]], which heals {{Hp|4}}.
+
+=== Cooking ===
+{{Cooking|station=Oven|Input=Tropical Fish|Output=Cooked Fish|note=5 s, 0.35 XP}} {{Cooking|station=Kindling|Input=Tropical Fish|Output=Cooked Fish|note=5 s, 0.35 XP}} {{Cooking|station=Mud Kiln|Input=Tropical Fish|Output=Charred Fish|note=5 s, 0.35 XP}}
+
+The recipes match any <code>minecraft:tropical_fish</code>, so every tropical fish gives the same result.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_tropical_fish.json}}</ref> A [[Mud Kiln]] burns it into [[Charred Fish|charred fish]] instead.
+
+=== Trading ===
+The [[Fisherman]] buys 12 caught tropical fish for 1 [[Obol]] once he reaches Apprentice level. Only fish caught by fishing (with the ⭐☆☆☆ line) are accepted.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/2/tropical_fish.json}}</ref>
+
+{{Uses}}
+
+== Angler's Almanac ==
+The [[Angler's Almanac]] has an entry for the tropical fish under Hot Saltwater (listed chance 35.7%) and Warm Saltwater (listed chance 35.7%), unlocked by catching one while the almanac tab is open.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Its description reads:
+<blockquote>''A brilliantly colorful reef fish available in more patterns than anyone reasonably needs.''</blockquote>
+
+== Advancements ==
+* '''No More Fish in the Sea''' – catch every fish, including this one. Rewards 10 [[Obol]]s.
+* '''Fishmonger''' – sell caught fish to a Fisherman.
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Fishing overhauled into climates with star-rated fish.}}
+{{History line|1.10|The Fisherman now buys 12 instead of 24.}}
+{{History line|1.12.1-alpha|Added an Angler's Almanac entry and a catch sound.
+The item format changed; fish caught before this version can no longer be sold.}}
+{{History line|1.12.2|Fixed the Angler's Almanac entries, which couldn't be unlocked.}}
+}}
+
+== See also ==
+* [[Fish]]
+* [[Fishing]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox fishing}}
+[[Category:Fish]]
+[[Category:Food]]

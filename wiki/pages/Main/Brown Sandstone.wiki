@@ -1,0 +1,34 @@
+{{Vanilla|End Stone Bricks}}
+{{Infobox auto}}
+'''Brown sandstone''' is a decorative brick block made by combining [[sandstone]] and [[Red Sandstone|red sandstone]]. It takes over the block ID of vanilla {{MCW|End Stone Bricks|end stone bricks}}, with a new tan brick texture, and so it also has slab, stairs and wall forms.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Two sandstone and two red sandstone, placed diagonally, make 4 brown sandstone.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/brown_sandstone.json}}</ref> The recipe unlocks when the player picks up either kind of sandstone.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/sandstones.json}}</ref> The vanilla recipe that crafts end stone bricks from end stone is removed,<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> but the vanilla [[stonecutter]] recipe is not, so a stonecutter still turns one end stone into one brown sandstone.
+
+=== Natural generation ===
+Structures that use end stone bricks in vanilla, such as [[End City|End cities]], are built from brown sandstone, because the block keeps its vanilla ID.
+
+== Usage ==
+{{Uses}}
+A single block of brown sandstone crafts into 4 [[sandstone]].<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sandstone_from_brown_sandstone.json}}</ref>
+
+=== Slab, stairs and wall ===
+Brown sandstone slabs, stairs and walls are the vanilla end stone brick slab, stairs and wall. They are crafted the vanilla way or in the stonecutter, and two slabs craft back into a block of brown sandstone.
+
+== History ==
+{{History
+|{{History line|1.0|End stone bricks were renamed brown sandstone, and their vanilla recipe was blocked.<br />Brown sandstone can be crafted back into sandstone.}}
+}}
+
+== Trivia ==
+* Because 4 blocks of sandstone and red sandstone make 4 brown sandstone, and each brown sandstone gives back 4 sandstone, the two recipes together turn 2 sandstone and 2 red sandstone into 16 sandstone.
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Building blocks]]
+[[Category:Renamed items]]

@@ -1,0 +1,50 @@
+{{Infobox
+|title=Aura
+|image=Glyph E033.png
+|imagesize=64px
+|type=Food [[intrinsic]]
+|items=[[Glow Berry Mash]], [[Glow Berry Jam]], [[Glow Berry Crumble]]
+|tooltip={{G|Aura}} Aura (0:30)
+|duration=0:03 to 1:00
+}}
+'''Aura''' ({{G|Aura}}), called '''soul sight''' in the pack's code, is the [[intrinsic]] of [[Glow Berries|glow berries]]. Shortly after a glow berry dish is eaten, a bell rings and every creature within 50 blocks receives the {{MCW|Glowing}} effect, which outlines it through walls. It is meant for caving: the developer suggests bringing glow berries along when exploring caves.<ref>{{Cite video|quote=If they're caving, they should probably grab some glow berries or carrots.}}</ref>
+
+== Obtaining ==
+{| class="wikitable"
+! Food !! Tooltip !! Glowing duration
+|-
+| {{ItemLink|Glow Berry Mash}} || {{G|Aura}} Aura (0:03) || 3 seconds
+|-
+| {{ItemLink|Glow Berry Jam}} || {{G|Aura}} Aura (0:30) || 30 seconds
+|-
+| {{ItemLink|Glow Berry Crumble}} || {{G|Aura}} Aura (1:00) || 60 seconds
+|}
+Each food also heals the player; see its page.
+
+== Mechanics ==
+Aura is not a status effect on the player. Eating one of the foods triggers a hidden advancement, which runs the soul sight function:<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glow_jam_eaten.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_effect_30.mcfunction}}</ref>
+# A bell resonating sound plays at the player.
+# After 48 ticks (2.4 seconds), every entity within 50 blocks of the player, except the player, receives {{MCW|Glowing}} for the food's duration, with no particles.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_30.mcfunction}}</ref>
+# The advancement is revoked, so it can trigger again.
+
+The glow is applied to every living entity in range: hostile and passive mobs, villagers and other players. Status effects can't be given to items, arrows or other non-living entities, so they don't glow. Entities that move into range after the pulse do not start glowing, and glowing entities keep their outline even if they move away.
+
+=== Behavior in multiplayer ===
+The glow is applied by a scheduled function, which runs from the server rather than from the player. It is centered on the player nearest to the world spawn point, which in multiplayer is not necessarily the player who ate the food.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_60.mcfunction}}</ref> Eating the same aura food twice within 2.4 seconds replaces the pending pulse instead of adding a second one.
+
+== History ==
+{{History|
+{{History line|1.10|Fixed Glow Berry Mash not working.}}
+{{History line|1.12.2|Aura received its tooltip glyph with the new effect icons.}}
+}}
+
+== See also ==
+* [[Glow Berries]]
+* [[Intrinsic]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Mechanics]]
+[[Category:Effects]]

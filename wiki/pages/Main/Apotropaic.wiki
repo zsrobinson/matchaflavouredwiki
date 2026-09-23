@@ -1,0 +1,45 @@
+'''Apotropaic''' ({{G|Apotropaic}}) means "turning away evil". Matcha Flavoured uses the word for things that protect against the undead: [[warding]] charms, [[Silver Bullion|silver]], holy weapons and the healing arrows sold by the fletcher. In tooltips, the {{G|Apotropaic}} glyph marks the maximum level of warding.
+
+== Apotropaic Max ==
+The full set of [[Electrum equipment|electrum armor]] lists {{G|Apotropaic}} Max under its set bonus. This is {{G|Warding}} 4, the highest warding level, which held items can't reach on their own.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/electrum_helmet.json}}</ref> At {{G|Warding}} 4 the wearer:<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_4.mcfunction}}</ref>
+* gives every undead mob within 24 blocks Slowness III every 0.5 seconds, husks included,
+* deals {{Hp|2}} every 0.5 seconds to the nearest undead mob within 12 blocks, or to the [[Wither]] within 16 blocks,
+* pierces the protection of mobs wearing copper armor, dealing {{Hp|1}} to them.
+See [[Warding]] for the full comparison of levels.
+
+== Apotropaic things ==
+{| class="wikitable"
+! Thing !! Protection against the undead
+|-
+| {{ItemLink|Nazar}} || {{G|Warding}} 2 while held. The advancement for crafting it is called ''Apotropaic Jewellery''.
+|-
+| {{ItemLink|Wooden Cross}} || {{G|Warding}} 1 while held.
+|-
+| {{ItemLink|Warding Sword}}, {{ItemLink|Silver Sword}}, {{ItemLink|Warding Shield}} || {{G|Warding}} 1, and [[Smite]] III on the silver sword.
+|-
+| {{ItemLink|Warding Stone}} || A placed turret that burns undead within 24 blocks.
+|-
+| [[Electrum equipment]] || Warding on armor and weapons, and [[Smite]] on the weapons.
+|-
+| [[Silver Bullion|Silver]] || Used as the smithing template for the silver sword and warding shield. Its advancement calls it "a once-common Apotropaic Metal".
+|-
+| [[Apotropaic Arrow]] || A tipped arrow of Instant Health II, which harms undead mobs instead of healing them. The [[Fletcher]] sells 64 for one [[Obol]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/fletcher/1/apotropaic_arrow.json}}</ref>
+|-
+| [[Prayer of Man]] || A blessing that stores {{G|Warding}} 2 and Smite II.
+|}
+
+== History ==
+{{History|
+{{History line|1.12.2|The full electrum set bonus was given {{G|Warding}} 4, shown as {{G|Apotropaic}} Max.}}
+}}
+
+== See also ==
+* [[Warding]]
+* [[Doom]]
+* [[Set bonus]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Mechanics]]

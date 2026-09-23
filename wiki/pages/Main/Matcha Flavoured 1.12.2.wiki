@@ -1,0 +1,144 @@
+{{Meta version infobox
+|version=1.12.2
+|title=Matcha Flavoured 1.12.2-beta
+|name=Progression, Polish, Prerelease
+|type=Beta (pre-release)
+|date=September 19, 2026
+|files=<code>Matcha_DP_1_12_2_pre.zip</code> (datapack), <code>Matcha_RP_1_12_2_pre.zip</code> (resource pack)
+|prev=1.12.1-alpha
+}}
+'''Matcha Flavoured 1.12.2-beta''', "Progression, Polish, Prerelease", is the current version of [[Matcha Flavoured]], published on September 19, 2026. It made the experimental [[death]] system from [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] permanent, moved almost all of the pack into the <code>matcha</code> namespace, reworked [[Electrum equipment|electrum]], [[warding]] and [[Adamant equipment|adamant]] (whose intrinsic became [[Doom]]), added [[Raw Diamond|raw diamonds]] that need a [[blast furnace]], and made the [[Wither effect|Wither effect]] far more dangerous.<ref>{{Cite changelog|1.12.2}}</ref>
+
+It is the first version released as two separate Modrinth files: a datapack and a companion resource pack, whose release notes only say "See DP Changelog for details".<ref>{{Cite changelog|1.12.2|quote=See DP Changelog for details}}</ref> The pack's <code>pack.mcmeta</code> files report the version as "1.12.2 for 26.2", and the internal version number is 1122.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+
+== Credits ==
+The release notes credit, in addition to those credited in 1.12.1-alpha:
+* Linkershim: optimizations, [[Multiplayer|multiplayer]] support and other code.
+* Pepurion: optimizations and the rose models.
+* Fayranchia: bug fixes.
+* ReinIsNOTaDev: optimizations and the GitHub workflow.
+* Fpekal: bug fixes, optimizations and work on the 26.3 port.
+* FloofShade: the item update trigger.
+* EastMonster: bug fixes.
+* Voxybuns: the custom effect icons and their implementation.
+* milo256: dynamic multiplayer sleep.
+The notes also mark contributions from community coders (💻) and artists (🖌️), including HapppySpud, Tralomine, MrHatsy, LambS0up and imtlx. These are credited inline below.
+
+== Namespace migration ==
+{{Main|Updating items}}
+To make the pack easier for other developers to work with, almost every item, model and function moved from the <code>minecraft</code> and <code>main</code> namespaces into <code>matcha</code>. Items from earlier versions can therefore appear broken. The notes give three remedies:
+* Hold the item and run <code>/trigger update_item</code> (made by FloofShade), which rebuilds it with its current data.
+* Throw the item away and get a fresh copy with <code>/loot give @s loot matcha:...</code>, for example <code>matcha:treasure/divine_comedy</code>.
+* Load the previous resource pack underneath the new one, which hides broken textures, although enchantments stay broken without the trigger.
+
+== Additions ==
+* [[Raw Diamond|Raw diamonds]], which must be smelted in a [[blast furnace]]. Surface structures no longer contain free diamonds, which extends the copper and iron stages of [[progression]].
+* The <code>/trigger update_item</code> system (FloofShade).
+* New intrinsic and effect icons (Voxybuns).
+* Diamond, amethyst and lapis [[Jewelry|earrings]], which are decorative (community request).
+* [[Trims|Trim colors]], with trims supported on the pack's custom armor (Tralomine). Electrum, shakudo, hepatizon and silver colors were not yet added.
+* Chains can be climbed.
+* Lily pads can be cloned (community request).
+* Bulk Dirt added to [[Mason|mason]] trades. All mason trades are now [[Bulk blocks|bulk blocks]] (Linkershim), which unpack straight into the inventory (Linkershim) and have their own models.
+* Silver is found in the deep dark (community request), in ancient city chests and in ominous vault loot.
+* The Quran and the Tanakh were added to trial chamber loot as a temporary measure.
+* Roses and cyan roses have their own models in item frames (Pepurion).
+* Textures for poplar leaves, logs and planks, all [[Vertical slabs|vertical slabs]] (community request, prompted by barce and fwhip's video), chiseled sandstone (MrHatsy), a purple Nether portal (LambS0up, community request from Cosmoxnautica), and skeletons.
+
+== Changes ==
+=== Death and hearts ===
+* The experimental death system is permanent. The notes advise players who dislike it to progress more slowly, to play on Easy (where hearts never drop below 10), and to avoid Hard, which "is meant to be unfair".
+* [[Crystal Heart|Crystal hearts]] are used by the player rather than applied immediately. At maximum health they work as a cheap totem of undying, and below it they heal.
+* Heart loss is tracked per player rather than per world.
+
+=== Electrum and warding ===
+* Netherite and electrum armor count as gold armor for [[Piglin|piglins]] (community request).
+* Electrum equipment no longer burns in lava or fire.
+* [[Warding]] now stacks between items of the same kind: holding a ✟ 1 item in one hand and a ✟ 2 item in the other gives a ✟ 3 effect. Equipment cannot exceed ✟ 3; ✟ 4 is reserved for the electrum [[set bonus]], and it slows husks and pierces the warding immunity of copper armor. Worn armor takes priority over held items.
+* Warding runs on a timer: once per second at ✟ 1 and 2, twice per second at ✟ 3 and 4, with separate particles for slowness and damage.
+* Warding removed from electrum tools, whose focus is Fortune.
+* The [[Warding Shield|warding shield]] reduced from ✟ 2 to ✟ 1, since warding now stacks.
+* Warding targets, in order: mobs wearing copper armor (including armor stands, which act as a "magic lightning rod" that nullifies it), then the Wither, then the nearest undead mob (Linkershim).
+
+=== Adamant and Doom ===
+* Adamant armor's intrinsic became [[Doom]] (community request). Doom clears Weakness from nearby mobs every three seconds and deals armor-piercing damage when it does. One point of Doom deals 1.5 hearts, and the full set with its bonus deals 8 hearts.
+* Adamant weapons inflict Weakness, and adamant tools smelt the blocks they mine.
+
+=== Mobs and dangers ===
+* The [[Wither effect|Wither effect]] is much more dangerous, except on Easy. The shakudo chestplate no longer cleanses it, and the notes urge players to take milk or bread into [[Hell]].
+* Withers can only be spawned on the overworld's surface.
+* [[Enderman|Endermen]] can only pick up melons, pumpkins and TNT (Linkershim).
+* Mobs from [[spawner]]s drop nothing (HapppySpud).
+* [[Abbey]]s can still spawn mobs after the Ender Dragon is killed.
+* Husks on Hard are slightly slower, but still faster than on Normal (community request).
+
+=== Equipment ===
+* [[Sturdy leather armor|Sturdy leather]]: safe fall distance increased from 1 to 2, repairable with tattered leather, and the boots gain a step height intrinsic (community request).
+* [[Feather Falling]]: base damage reduction increased from 12% to 24%, and maximum from 48% to 72%.
+* [[Opal Earrings|Opal earrings]] only give Conduit Power in water.
+* [[Zephyr]] reworked into three levels (suggested by freshdoktor, implemented by imtlx).
+* [[Dolabra]]s are treated as axe-pickaxe tools rather than weapons: less damage, no weapon enchantments, better tool enchantments.
+* [[Ofuda]] trades require crystal hearts.
+
+=== Progression and loot ===
+* The blast furnace recipe changed.
+* Many loot tables were buffed again, since diamonds are now raw.
+* [[Ruined Portal|Ruined portal]] loot reduced, so that gold cannot be obtained before iron.
+* Trash removed from trial spawners and vaults.
+
+=== Other ===
+* Sleeping at night wakes the player in the morning, while sleeping during the day still skips 12 hours (milo256). The day and night extender uses timelines (ReinIsNOTaDev). See [[Sleeping]].
+* [[Amnestic]]s no longer reset villager experience. Villagers only unlock new trades after being traded with at each level again.
+* Elegy of the Abbey and Crete updated to their final versions. See [[Music]].
+* Taiga grass is a slightly different color.
+* Redstone particles removed.
+
+== Fixes ==
+* Orphaned villagers can only be children (HapppySpud).
+* Fortune works on tomatoes, glow berry vines and chorus plants.
+* Warding effects were inconsistent at some levels.
+* Earrings no longer give knockback resistance.
+* Elegy of the Abbey can no longer be crafted.
+* The shakudo elytra bonus works again.
+* Water bottles no longer duplicate in Creative mode.
+* Oak and dark oak leaf loot supports electrum Fortune.
+* Fixed the lily pad item texture and the warding stone particles.
+* Spawners only kill a player who uses a spawn egg on them, not one who places a block on them (HapppySpud).
+* Copper torches are consistent with soul torches (MrHatsy).
+* Allays spawn in the Abbey when it generates.
+* The "Bonfire Lit" advancement works.
+* Abbey mobs no longer vanish after the Ender Dragon is killed.
+* Snowballs and stable voids always stack to 64 (HapppySpud).
+* Fixed massive lag spikes after the Ender Dragon is killed (HapppySpud).
+* Many crystal heart and Doom bugs (Linkershim).
+* Beacon kindling removed from the rooted dirt recipe group (fpekal).
+* A fishing typo that made an advancement impossible (Tralomine).
+* Pride banners and shields (Fayranchia).
+
+== Removals ==
+* The [[Estus Flask|Estus flask]], because the developer wanted food to be most important and to encourage farming. See [[Removed features]].
+* The <code>main</code> namespace, apart from what enchantment updates still need.
+
+== Post-release fixes ==
+The repository's <code>main</code> branch received the following fixes after the beta was published. They are not in the Modrinth download, but this wiki describes them as current.<ref>{{Source|changelog.md}}</ref>
+* The update trigger no longer tries to identify items by ID and exits with a message when an item has no translation key. It supports villager trades, applied [[Trims|armor trims]] and lodestone compass targets (FloofShade).
+* Fixed the trim material of steel armor recipes and the steel armor loot tables.
+* The update function revokes a narrower set of tutorial advancements, so fewer rewards are re-earned.
+* The Wither's heart effect was shared with every player, blessings used the old namespace for custom enchantments, and the igloo's pickled crimson fungus used the old namespace (Pepurion).
+* Fixed item lore on some steel and adamant items and the shepherd's shears trade (EastMonster).
+* Fortune and electrum worked incorrectly on normal gold ore, and the pufferfish [[Angler's Almanac]] entry did not unlock (Pepurion).
+* Crafts not returning empty bottles, the chocolate texture, spectators getting the freezing water effect, the fish bones loot in sulfur caves, raw Estus processing, the water bottle fix, and the crystal heart advancement (Pepurion).
+* Bells removed from the items piglins love (tadorituki).
+* New textures: red sandstone bottom, granite and polished granite bricks, new double-slab textures for large bricks, and beds with spruce frames (IrrelevantGaymer).
+
+== Trivia ==
+* The notes explain that 26.3 support was delayed because that ''Minecraft'' version changes datapack syntax, and that fpekal was working on the port.
+* The notes admit that "a lot got lost in the crossfire" during the namespace move, so some changes and fixes were not recorded.
+* The chat message shown when the pack loads reports version 1.12.1.<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction}}</ref>
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Beta versions]]

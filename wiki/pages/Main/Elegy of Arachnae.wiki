@@ -1,0 +1,29 @@
+{{Infobox auto|title=Elegy of Arachnae|type=[[Blessing]]}}
+The '''Elegy of Arachnae''' is a [[blessing]], a crafted enchanted book that stores {{MCW|Bane of Arthropods}} V. It is crafted from four spider eyes. Bane of Arthropods V is the highest enchantment level stored on any blessing.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The book in the center must be a [[Hell-Bound Book]].<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/bane_of_arthopods.json}}</ref> The crafted item is named "Blessing", with "Elegy of Arachnae" as a dark gray lore line.
+
+== Usage ==
+The Elegy of Arachnae is applied to equipment in an [[anvil]], like an {{MCW|Enchanted Book|enchanted book}}. Bane of Arthropods applies to weapons. It is exclusive with the other damage enchantments (Sharpness, Smite, Impaling, Density and Breach) and with [[Slaughter]].
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Texture added.<ref>{{Cite changelog|0.5-alpha|quote=All blessing textures}}</ref>}}
+}}
+
+== Trivia ==
+* Arachne is the weaver of Greek myth whom Athena turned into a spider. The pack spells the name "Arachnae", and the recipe file is spelled <code>bane_of_arthopods</code>.
+
+== See also ==
+* [[Blessing]], the full list
+* [[Enchanting]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Blessings]]
+[[Category:Enchanting]]

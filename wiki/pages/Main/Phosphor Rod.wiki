@@ -1,0 +1,27 @@
+{{Vanilla|End Rod}}
+{{Infobox auto}}
+A '''phosphor rod''' is a thin light source. It is the vanilla {{MCW|End Rod|end rod}}, renamed and given a new recipe that uses [[phosphor]] instead of materials from [[The End]] and [[Hell]], so it can be made early. It gives light level 14 and can be placed facing any direction, as in vanilla.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Three phosphor in the middle column, with glass panes on both sides, make 6 phosphor rods.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/phosphor_rod.json}}</ref> The vanilla recipe, a blaze rod on popped chorus fruit, is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> The recipe unlocks with the other phosphor recipes.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/phosphor.json}}</ref>
+
+=== Natural generation ===
+[[End City|End cities]] contain phosphor rods, since they keep the vanilla end rod ID.
+
+== Usage ==
+Phosphor rods are used as lighting, as in vanilla.
+
+== History ==
+{{History
+|{{History line|0.5-alpha|The vanilla end rod recipe was blocked.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Light sources]]
+[[Category:Renamed items]]

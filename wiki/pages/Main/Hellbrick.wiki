@@ -1,0 +1,28 @@
+{{Vanilla|Nether Brick}}
+{{Infobox auto}}
+A '''hellbrick''' is a single brick made from [[hellstone]]. It is the vanilla {{MCW|Nether Brick|nether brick}} item under a new name. Four make a block of [[hellbricks]].
+
+== Obtaining ==
+=== Cooking ===
+{{Recipes}}
+Hellbricks are made by cooking hellstone in a [[Blast Furnace|blast furnace]] for 5 seconds. The vanilla furnace recipe is removed, so an [[oven]] cannot make them; cooking hellstone in an oven instead gives a whole block of hellbricks at once.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/nether_brick.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/nether_bricks_from_smelting_netherrack.json}}</ref>
+
+=== Other sources ===
+{{Sources}}
+* Mining hellstone with a tool that has the [[Adamant equipment|adamant]] tool intrinsic drops hellbricks directly, affected by [[Fortune]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/netherrack.json}}</ref>
+* [[Piglin]]s can barter 2–8 hellbricks.
+
+== Usage ==
+{{Uses}}
+
+== History ==
+{{History
+|{{History line|0.7-alpha|Nether brick was renamed hellbrick.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Items]]
+[[Category:Renamed items]]

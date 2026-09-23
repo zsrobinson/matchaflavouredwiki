@@ -1,0 +1,66 @@
+{{Vanilla|Spawn|Spawning}}
+'''Spawning''' in [[Matcha Flavoured]] follows vanilla rules, with three layers of changes: the biome spawn lists are edited so that [[Husk|husks]] appear everywhere, a check run on every new hostile mob keeps everything but the undead off the open surface of the Overworld, and every hostile mob's attributes are adjusted for the [[difficulty]]. After the [[Ender Dragon]] is killed, the surface becomes safe from hostile mobs altogether; see [[Surface]].
+
+== Biome spawn lists ==
+The pack overrides the spawn lists of the Overworld biomes.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/plains.json}}</ref> Compared to vanilla:
+* '''Husks''' are added to every Overworld biome that spawns monsters, with weight 75 in groups of 1–2. In deserts, where husks already spawned, their vanilla weight of 80 in groups of 4 becomes 75 in groups of 1–2.
+* '''Zombies''' have weight 100 in almost every biome (vanilla uses 90 or 95). In deserts, zombie weight goes from 19 to 100. Cherry groves spawn zombies in groups of 1–4 instead of 4.
+* The '''pale garden''' spawns no monsters at all.
+* '''Cats''' spawn as creatures in jungles and sparse jungles, with weight 35 in groups of 1–2.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/jungle.json}}</ref>
+
+The Hell and End biomes keep their vanilla spawn lists.
+
+Other changes to natural spawning:
+* '''Phantoms''' never spawn, because the <code>spawn_phantoms</code> game rule is turned off.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref>
+* '''Pillager patrols''' can't spawn until 360,000 ticks have passed on the Overworld clock, 5 of the pack's longer days (vanilla waits 5 days of 24,000 ticks).<ref>{{Source|MF_datapack/data/minecraft/timeline/early_game.json}}</ref>
+* '''Monster rooms''' spawn their spawners from structure templates, and the mobs from these spawners drop nothing. See [[Spawner]].
+
+== Surface check ==
+Every tick, the pack looks for "mundane hostile" mobs it hasn't checked yet: zombies, husks, drowned, zombie villagers, skeletons, strays, bogged, parched, creepers, spiders, cave spiders, slimes, endermen, witches and silverfish.<ref>{{Source|MF_datapack/data/matcha/tags/entity_type/mundane_hostiles.json}}</ref> Each one is checked once and then tagged so it isn't checked again.<ref name="tick">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/ticking.mcfunction}}</ref> The check applies to any way the mob appeared, including spawners, spawn eggs and zombie reinforcements, not only natural spawns.
+
+Before the Ender Dragon has been killed, the following mobs are removed as soon as they appear:<ref name="check">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref>
+* In the Overworld, any listed mob that is not [[Mobs#Undead|undead]] and can see the sky. Only zombies, husks, drowned, zombie villagers, skeletons, strays, bogged and parched can appear under the open sky.
+* Any creeper that can see the sky, or that is at Y=63 or above, unless it is inside [[Trial Chambers|trial chambers]] or an [[Abbey|abbey]].<ref>{{Source|MF_datapack/data/matcha/predicate/surface_spawn.json}}</ref> Creepers are therefore limited to caves below sea level.
+* A husk riding a camel husk is replaced by a new husk on foot, leaving the camel husk alone.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/remove_camel_husk_jockey.mcfunction}}</ref>
+
+After the dragon has been killed, a stricter check replaces this one. See [[Surface]].
+
+Removed mobs are teleported 1,000 blocks down and then killed, so they drop nothing and leave no trace.<ref name="check" />
+
+Because the check tests whether the mob can see the sky rather than its light level, spiders, endermen, witches and the other non-undead mobs can still appear on the surface wherever the sky is blocked, for example under dense leaves or overhangs. Creepers can't, because of their additional height limit.
+
+== Mob modifications ==
+{{Main|Difficulty#Mob modifications}}
+Each mob that passes the surface check is modified according to the difficulty the pack read when the world loaded:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/modify_mob.mcfunction}}</ref>
+* On every difficulty, the mob's equipment drop chances are set to 0, and skeletons, creepers, cave spiders, silverfish and baby zombies get new health values.
+* On Normal and Hard, zombies become fast strikers, husks become slow, heavily armored tanks, spiders jump high and leave cobwebs, and skeletons get a Punch bow.
+
+This happens in every dimension, not just the Overworld.
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Cave spiders fast with 2 hearts; creepers have 8 hearts.}}
+{{History line|0.5-alpha|Overworld mobs no longer drop equipment they're holding.}}
+{{History line|0.6-alpha|Hostile mob spawning reworked: only the undead spawn in open areas in the Overworld; after the dragon is killed, no hostile mobs spawn above sea level or in open areas.}}
+{{History line|1.10|Creepers no longer spawn in forests, only underground. Husks spawn in all biomes. The pale garden no longer spawns hostile mobs. Spawn rate of monster rooms increased.}}
+{{History line|1.12|Husk spawn weight lowered from 80 to 50.}}
+{{History line|1.12.1-alpha|Removed mobs are now killed as well as moved, to reduce lag. Husk spawn weight raised and group size lowered. Husk jockeys removed. Cats spawn in jungles. Drowned must be below Y=43 to spawn after the dragon is killed.}}
+{{History line|1.12.2|Mobs spawned from spawners no longer drop anything.}}
+}}
+
+== Trivia ==
+* The developer's reasoning: "Creepers and spiders, they prefer living in caves or forests", while "only undead spawn on the surface now", which together with fast zombies makes night "a really risky proposition".<ref>{{Cite video|quote=On top of that, only undead spawn on the surface now. Creepers and spiders, they prefer living in caves or forests}}</ref>
+* The 1.12.1-alpha notes say drowned need Y=43, but the current code uses Y=63, the same height as the other surface rules.<ref>{{Source|MF_datapack/data/matcha/predicate/drowned_surface_spawn.json}}</ref>
+
+== See also ==
+* [[Surface]]
+* [[Difficulty]]
+* [[Mobs]]
+* [[Spawner]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mechanics]]
+[[Category:Mobs]]

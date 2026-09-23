@@ -1,0 +1,50 @@
+'''Fishing junk''' is the least valuable category of [[fishing]] loot. A catch is junk 10% of the time in most biomes, less with {{MCW|Luck of the Sea}}, and 95% of the time in biomes without fish.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
+
+== Loot ==
+All biomes share the base items. Three groups of biomes add one or two items of their own, which changes every item's share.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
+
+{| class="wikitable sortable"
+! Item !! Count !! Weight !! Share (most biomes, of 78) !! Jungles (of 88) !! Swamps (of 93) !! Dripstone and Lush Caves (of 88)
+|-
+| {{MCW|Lily Pad}} || 1 || 17 || 21.79% || 19.32% || 18.28% || 19.32%
+|-
+| {{ItemLink|Sturdy Leather}} || 1 || 10 || 12.82% || 11.36% || 10.75% || 11.36%
+|-
+| {{ItemLink|Fish Bones}} || 1 || 10 || 12.82% || 11.36% || 10.75% || 11.36%
+|-
+| Water Bottle || 1 || 10 || 12.82% || 11.36% || 10.75% || 11.36%
+|-
+| {{ItemLink|Estus Ash}} || 5 || 10 || 12.82% || 11.36% || 10.75% || 11.36%
+|-
+| {{MCW|Nautilus Shell}} || 1 || 10 || 12.82% || 11.36% || 10.75% || 11.36%
+|-
+| {{ItemLink|String}} || 1 || 5 || 6.41% || 5.68% || 5.38% || 5.68%
+|-
+| {{ItemLink|Stick}} || 1 || 5 || 6.41% || 5.68% || 5.38% || 5.68%
+|-
+| {{MCW|Ink Sac}} || 10 || 1 || 1.28% || 1.14% || 1.08% || 1.14%
+|-
+| {{ItemLink|Bamboo}} || 1 || 10 || — || 11.36% || — || —
+|-
+| {{ItemLink|Frog}} || 1 || 5 || — || — || 5.38% || —
+|-
+| {{ItemLink|Tadpole}} || 1 || 10 || — || — || 10.75% || —
+|-
+| {{ItemLink|Axolotl}} || 1 || 10 || — || — || — || 11.36%
+|}
+Jungles are Jungle, Sparse Jungle and Bamboo Jungle. Swamps are Swamp and Mangrove Swamp. Multiply a share by 0.1 for its chance per catch in a fish biome (for example, a lily pad is 2.18% of all catches).
+
+Estus Ash was added to junk so that players on Peaceful can get it.<ref>{{Cite changelog|1.12.1-alpha|quote=Estus Ash added to Junk pool (For peaceful players)}}</ref> Most junk plays the junk [[fishing sounds|catch sound]]. Fish bones, nautilus shells, axolotls, frogs and tadpoles have their own.
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Swamps get their own junk.}}
+{{History line|1.10|Biomes without fish fall back to junk at weight 85.}}
+{{History line|1.12.1-alpha|Added Estus Ash.}}
+}}
+
+== References ==
+{{Reflist}}
+
+{{Navbox fishing}}
+[[Category:Fishing]]

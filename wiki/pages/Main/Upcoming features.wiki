@@ -1,0 +1,64 @@
+{{About|features that are not yet in a release|released versions|Version history}}
+This page collects features of [[Matcha Flavoured]] that are in development or planned, as recorded in the repository's in-development <code>changelog.md</code>, the developer's <code>my_current_and_future_plans.md</code> and the README. None of it is in the current release, {{Version|{{Current version}}|{{Current version}}-beta}}, and plans may change or be dropped.
+
+== In development ==
+{{Upcoming|type=section}}
+=== Post-release fixes ===
+The <code>main</code> branch already contains bug fixes made after 1.12.2-beta, including improvements to the [[Updating items|item update trigger]], fixes for Fortune on gold ore, empty bottles from crafting, the freezing water effect on spectators, and several namespace errors. They are listed in full on the [[Matcha Flavoured 1.12.2#Post-release fixes|1.12.2 page]].
+
+=== Minecraft 26.3 ===
+26.3 changes datapack syntax, and a port was in progress at the time of 1.12.2-beta.<ref>{{Cite changelog|1.12.2}}</ref> The docket lists work still needed for it: poplar leaves need a crafting advancement and loot tables.<ref>{{Cite changelog||quote=Poplar leaves crafting needs to be added to adv}}</ref>
+
+== Next update ==
+{{Planned|type=section}}
+The in-development changelog lists these as planned for the update after 1.12.2:<ref>{{Cite changelog}}</ref>
+; Aspects
+: Post-End enchanting that extracts an alloy's intrinsic as an "aspect", using a withered heart and dragon's breath. Planned pairings: bronze ([[Hepatizon equipment|hepatizon]]) gives Efficiency, [[Steel equipment|steel]] Unbreaking, [[Electrum equipment|electrum]] Fortune III, netherite ([[Adamant equipment|adamant]]) smelting, and [[Shakudo equipment|shakudo]] Silk Touch or life steal. An Unbreaking enchantment from the Wither's heart is also planned, and Protection may be replaced by more specific protections.
+; Copper intrinsic
+: A "conductive" intrinsic for copper armor that draws aura-based effects such as [[warding]] onto itself and nullifies them. The notes suggest players may need more pieces than zombies for full immunity.
+; Difficulty scaling
+: The number of hearts lost on [[death]] would depend on how many hearts the player has: 1 heart at 10 or more, 2 at 20 or more, 3 at the maximum, plus one more on Hard.
+; World generation
+: Rarer diamonds, portal structures by TankyAibem and Linkershim, polished villages, and a better [[Abbey]].
+; Advancements
+: "Echoes" (restore an echo shard's memory), "Child of Moros" (smith a full adamant set) and "Harbinger of Fate" (smith adamant elytra).
+; Low-priority bugs
+: Keep structures out of the safe-surface spawning check, fix Trailblaze's speed boost on mud brick slabs while running, and replace the toolsmith's gift of stone tools.
+; Language
+: Descriptions for each difficulty in the options menu.
+
+== Stretch goals ==
+{{Planned|type=section}}
+The changelog's back-burner list includes:<ref>{{Cite changelog}}</ref>
+* Foods: potatoes with molasses, French fries, jam bread, a secret meal using fermented spider eyes, and a bag of sugar.
+* Craftable Thorns.
+* More fishing junk from specific biomes (cinnabar, sulfur, dripstone, raw copper, raw gold, disc fragments), more resin from pale garden fishing, and varied goat horns from fishing.
+* Alloy shields: steel with high durability, shakudo blocking splash potions, hepatizon without the movement penalty, electrum damaging undead attackers, and adamant damaging any attacker.
+* Better loot in cold biomes and oceans to balance freezing water, and fewer obols in chests, especially in trial chambers.
+* Recipes or hints in abandoned camp loot, cats traded by farmers, and a wandering trader that sells more than village maps.
+* Copper horns re-added, using sheet music found as treasure.
+* Dense poplar forests and swampier swamps.
+* Advancements for reaching full health and for crafting a secret weapon.
+* Textures: beds, boats with chests, an eye-themed ender chest, and biome sprites for the pale garden, deep dark and sulfur caves.
+* Villages that match villager stories, knowledge books, pottery sherds for enchantments, archaeologist maps based on books (such as Paradise Lost leading to the Abbey), upgraded horns, and a redesigned Abbey and papal outpost.
+* Ore generation: more coal in swamps, sulfur in sulfur caves and iron in cold biomes.
+
+== Longer-term plans ==
+{{Planned|type=section|source=my_current_and_future_plans.md}}
+The developer's plans file describes 1.12.2 as a user-experience update centered on the death system, with further features moved to later updates. It lists as done: the Wither removing hearts on hit, nastier wither skeletons, Wither spawn requirements, and [[Sacred texts|Paradise Lost and The Divine Comedy]] no longer giving hearts. Dynamic heart loss was postponed.<ref>{{Source|my_current_and_future_plans.md}}</ref> The developer planned a break after this update to work on videos, art and a new Abbey.
+
+Further ideas in the file:
+* A reworked [[Wither]] fight, modelled on a boss that summons allies, with an attack that removes a heart without killing the player. The Wither would be summonable only in one structure, or only under open sky above a certain height.
+* [[Hell]] locked behind a structure, possibly the revamped Abbey, after which all portals would work. The aim is to slow progression and give players reasons to stay in Hell longer.
+* Enchantments: removing Protection and Sharpness in favor of specific, mutually compatible alternatives, and an Unbreaking enchantment crafted from the Wither's heart.
+
+The README's queue adds:<ref>{{Source|README.md}}</ref>
+* All enchantments working like warding, so that two books of the same level cannot be combined into a higher level.
+* Reworks of electrum and adamant, including removing Divinity from adamant tools (done in 1.12.1-alpha), and possibly splitting electrum into two alloys.
+* An adventure rework in which reaching [[the End]] requires visiting every main overworld structure, each leading to the next through a [[Sacred texts|sacred text]] traded for a map. The [[Mouthpiece|mouthpiece]] and [[Archaeologist|archaeologist]] would both trade sacred texts. The developer asked for feedback on this idea.
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]

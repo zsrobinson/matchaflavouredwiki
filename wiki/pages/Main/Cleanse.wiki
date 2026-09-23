@@ -1,0 +1,58 @@
+{{Infobox
+|title=Cleanse
+|image=Glyph E007.png
+|imagesize=64px
+|type=[[Set bonus|Intrinsic]]
+|items=[[Shakudo equipment|Shakudo armor]], [[Shakudo Elytra]], [[Bread]], [[Honey Ginger Tea]], [[Ice Cream]], [[Milk Bottle]]
+|tooltip={{G|Cleanse}} Cleanses: …<br />{{G|Cleanse}} Cleanse Maleffect<br />{{G|Cleanse}} Cleanse
+}}
+'''Cleanse''' ({{G|Cleanse}}) is an [[Set bonus|intrinsic]] that removes harmful status effects. On [[Shakudo equipment|shakudo armor]] it works constantly, making the wearer immune to certain effects, and on a few [[food]]s it removes them once when eaten.
+
+The developer describes shakudo as the alloy that "cleanses malefic".<ref>{{Cite video|quote=Shikudo, a gold-copper alloy that cleanses malefic, steals life from mobs, and whose tools have silk touch as an intrinsic.}}</ref>
+
+== Equipment ==
+Each shakudo armor piece cleanses a different set of effects. The effect is removed every tick, so while the piece is worn the effect can never take hold.<ref>{{Source|MF_datapack/data/matcha/enchantment/cleanse_armor_chest.json}}</ref>
+{| class="wikitable"
+! Item !! Tooltip !! Effects removed
+|-
+| {{ItemLink|Shakudo Helmet}} || {{G|Cleanse}} Cleanses: Blindness, Darkness || {{MCW|Blindness}}, {{MCW|Darkness}}<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/cleanse_armor_head.mcfunction}}</ref>
+|-
+| {{ItemLink|Shakudo Chestplate}} || {{G|Cleanse}} Cleanses: Poison || {{MCW|Poison}}<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/cleanse_armor_chest.mcfunction}}</ref>
+|-
+| {{ItemLink|Shakudo Leggings}} || {{G|Cleanse}} Cleanses: Slowness || {{MCW|Slowness}}<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/cleanse_armor_legs.mcfunction}}</ref>
+|-
+| {{ItemLink|Shakudo Boots}} || {{G|Cleanse}} Cleanses: Levitation || {{MCW|Levitation}}<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/cleanse_armor_feet.mcfunction}}</ref>
+|-
+| {{ItemLink|Shakudo Elytra}} || {{G|Cleanse}} Cleanse Maleffect || Poison, [[Wither effect|Wither]], Mining Fatigue, Weakness, Blindness, Darkness, Infested, Weaving, Nausea, Oozing and Slowness<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/cleanse_armor_maleffect.mcfunction}}</ref>
+|}
+The shakudo elytra is the only equipment that cleanses the [[Wither effect]], which is especially dangerous in [[Hell]].
+
+== Food ==
+{| class="wikitable"
+! Food !! Tooltip !! Effects removed when eaten
+|-
+| {{ItemLink|Bread}}, {{ItemLink|Honey Ginger Tea}}, {{ItemLink|Ice Cream}} || {{G|Cleanse}} Cleanse Maleffect || Poison, Mining Fatigue, Wither, Weakness, Bad Omen, Blindness, Darkness, Infested, Weaving, Nausea, Oozing and Slowness
+|-
+| {{ItemLink|Milk Bottle}} || {{G|Cleanse}} Cleanse || All effects, good and bad
+|}
+Food cleansing is a one-time removal, not an immunity. The food version of Cleanse Maleffect also removes {{MCW|Bad Omen}}, which the shakudo elytra does not.
+
+== History ==
+{{History|
+{{History line|0.7-alpha|Bread now cleanses maleffects.}}
+{{History line|1.10|Added the Cleanse and Cleanse Maleffect tooltip glyphs. Bread, milk and honey ginger tea were given the new glyphs, so old copies no longer stack with new ones.
+Shakudo armor was buffed with a new ability and per-piece bonuses.}}
+{{History line|1.12.2|The Shakudo Chestplate no longer cleanses the Wither effect. The release notes told players to bring milk or bread to Hell.}}
+}}
+
+== See also ==
+* [[Shakudo equipment]]
+* [[Magic protection]]
+* [[Wither effect]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Mechanics]]
+[[Category:Intrinsics]]

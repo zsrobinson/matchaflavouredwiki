@@ -1,0 +1,45 @@
+{{Infobox auto
+|intrinsics={{G|Warding}} 1
+|renewable=Yes
+}}
+The '''warding sword''' is an [[Iron equipment|iron sword]] with a [[Nazar]] set into it. It carries {{G|Warding}} 1, so while held it slows nearby undead and burns the closest one.
+
+== Obtaining ==
+=== Smithing ===
+{{Recipes}}
+Unlike the [[Silver Sword]] and [[Warding Shield]], the warding sword needs no smithing template, only an iron sword and a nazar. Enchantments already on the iron sword are kept: the sword's warding is stored on the result and merged with the old enchantments once it enters the inventory (see [[Set bonus#Intrinsic enchantments|intrinsic enchantments]]).<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/warding_sword.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
+
+== Usage ==
+=== Weapon ===
+The warding sword deals {{Hp|5}} of damage with an attack speed of 1.6 and has 500 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/warding_sword.json}}</ref>
+
+=== Warding ===
+Held in either hand, the sword gives {{G|Warding}} 1: every second it gives undead within 8 blocks Slowness II and deals {{Hp|1}} of armor-ignoring damage to the nearest one within 3 blocks. It never damages the [[Wither]] on its own.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_1.mcfunction}}</ref> Its warding adds to the warding of the item in the other hand, up to {{G|Warding}} 3: with a [[Nazar]] or a second {{G|Warding}} 2 item in the off hand the player has {{G|Warding}} 3, and with a [[Warding Shield]] {{G|Warding}} 2. See [[Warding]].
+
+Because warding is exclusive with other weapon intrinsics, a warding sword can't also carry a [[Shakudo equipment|shakudo]] or [[Adamant equipment|adamant]] weapon intrinsic.
+
+=== Repairing ===
+The warding sword can only be repaired with a [[Nazar]] or a {{MCW|Block of Lapis Lazuli|block of lapis lazuli}}.
+
+== Advancements ==
+Smithing the warding sword grants ''Fae-Slayer'' ("Affix a Nazar to an Iron Sword in a Smithing Table") in the [[Advancements/Tutorial|Tutorial]] tab. It follows ''Apotropaic Jewellery'' and leads to ''Sabbatarian''.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/smith_warding_sword.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added the warding sword.}}
+{{History line|1.02|The warding weapons advancement was reworded to make it clearer.}}
+{{History line|1.03|The warding sword was nerfed.}}
+{{History line|1.12.1-alpha|The warding sword can now only be repaired with Nazars or lapis.}}
+{{History line|1.12.2|Warding from held items now stacks.}}
+}}
+
+== See also ==
+* [[Silver Sword]]
+* [[Warding Shield]]
+* [[Warding]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Weapons]]

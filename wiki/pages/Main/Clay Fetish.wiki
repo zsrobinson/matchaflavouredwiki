@@ -1,0 +1,46 @@
+{{Infobox auto|type=Weather item|renewable=No}}
+A '''clay fetish''' is a small clay statue that changes the [[weather]] when it is played like a horn. It comes in two variants with the same name, told apart by their description: '''Rejoice''', which clears the weather, and '''Lament''', which brings rain. Clay fetishes are found by brushing suspicious blocks.
+
+== Obtaining ==
+=== Archaeology ===
+{{Sources}}
+The chances above are for either variant; each variant is equally likely.<ref>{{Source|MF_datapack/data/matcha/loot_table/archaeology/statues.json}}</ref>
+
+== Usage ==
+A clay fetish is a {{MCW|Goat Horn|goat horn}} with its own sound. Using it plays a low, soul-sand-valley ambience sound that can be heard up to 16 blocks away, and 3 seconds later changes the weather:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/cheerful_clay_statue.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/mournful_clay_statue.mcfunction}}</ref>
+{| class="wikitable"
+! Variant !! Description !! Effect
+|-
+| {{Slot|Clay Fetish}} || Rejoice || Sets the weather to clear.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/set_clear_weather.mcfunction}}</ref>
+|-
+| || Lament || Sets the weather to rain.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/set_rain.mcfunction}}</ref>
+|}
+The weather is changed with the <code>/weather</code> command, so it lasts a random, vanilla-length time. Like a goat horn, a clay fetish is not used up; after playing it, it has a 30-second cooldown.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/mournful_clay_statue.json}}</ref> It works for any player in multiplayer.
+
+=== Trading ===
+{{Uses}}
+
+== Advancements ==
+Finding either variant grants '''A Miraculous Discovery!''' ("Find a Clay Fetish by searching abandoned Sites"), which rewards 3 {{ItemLink|Obol|obols}}.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_fetish.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Added the Mournful Clay Statue (sets the weather to rain) and the Cheerful Clay Statue (sets the weather to clear).}}
+{{History line|1.10|Clay fetishes can be traded with the [[Archaeologist]]. Added the advancement "A Miraculous Discovery!".}}
+{{History line|1.12.1-alpha|Clay fetishes work for all players in multiplayer.}}
+}}
+
+== Trivia ==
+* The items' internal names are still "cheerful clay statue" and "mournful clay statue", from their names when added in 0.5-alpha.
+* The developer chose not to explain fetishes in the advancements: "some things, I will not give advancements for (Jewellery, Special Books, Villages, Fetishes (that one im iffy on), etc.)". An advancement for finding one was added in 1.10, but it doesn't say what they do.<ref>{{Cite changelog|1.03|quote=So, some things, I will not give advancements for (Jewellery, Special Books, Villages, Fetishes (that one im iffy on), etc.), and I think its cooler that way.}}</ref>
+* The design video mentions them in passing: "I even added little statues that let you change the weather."<ref>{{Cite video|quote=I even added little statues that let you change the weather.}}</ref>
+
+== See also ==
+* [[Weather]]
+* [[Archaeology]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Items]]

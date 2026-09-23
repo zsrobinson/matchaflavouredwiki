@@ -1,0 +1,15 @@
+{{Infobox auto}}
+A '''tadpole''' is a [[fishing junk]] item caught in Swamp and Mangrove Swamp. It is a renamed {{MCW|Tadpole Spawn Egg|tadpole spawn egg}} that stacks to 8.
+
+== Obtaining ==
+=== Fishing ===
+It is 10 of 93 junk weight in swamps: 10.75% of junk, about 1.08% of all catches.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref> It plays the frog [[fishing sounds|catch sound]].
+
+== Usage ==
+Placing it spawns a tadpole, which grows into a frog. Using it on a [[spawner]] destroys every spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
+
+== References ==
+{{Reflist}}
+
+{{Navbox fishing}}
+[[Category:Fishing]]

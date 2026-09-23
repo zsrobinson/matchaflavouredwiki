@@ -1,0 +1,46 @@
+{{Vanilla|Enchanted Book}}
+{{Infobox auto}}
+A '''Hell-Bound Book''' is the [[Matcha Flavoured]] name for the {{MCW|Enchanted Book|enchanted book}}. A crafted Hell-Bound Book is the base of every [[blessing]]: it is surrounded with themed ingredients to make a book with fixed [[enchantment]]s. The name applies to every enchanted book, so blessings, [[Ofuda]] and enchanted books found in chests are all Hell-Bound Books underneath.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The crafted book stacks to 64 and stores [[Curse of Binding]] I.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hell_bound_book.json}}</ref> Both other ingredients are magic materials: [[Stabilized Estus]] is itself crafted from seven [[Estus Ash]], a [[Benzene]] and a [[Stable Void]], so one book costs two Benzene in total.
+
+=== Chest loot and fishing ===
+Books with random enchantments are still found in many chests and in fishing treasure. These are ordinary enchanted books, so they also show the name "Hell-Bound Book". See [[Enchanting#Other sources]] for the list.
+
+=== Block drops ===
+{{Sources}}
+The enchanting table, which cannot be crafted in the pack, drops a Hell-Bound Book with no stored enchantments when broken, along with 2 [[diamond]]s and 4 obsidian.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/enchanting_table.json}}</ref>
+
+== Usage ==
+=== Crafting ingredient ===
+{{Uses}}
+Every blessing recipe places the Hell-Bound Book in the center of the grid. The blessing that comes out stores only its own enchantments, not the Curse of Binding.
+
+=== Anvil ===
+A blank Hell-Bound Book can be combined with equipment in an [[anvil]] like any enchanted book, which applies its Curse of Binding to wearable equipment.
+
+== Advancements ==
+{| class="wikitable"
+! Advancement !! Description !! Requirement
+|-
+| Unholy Knowledge || Craft a Hell-Bound Book || Craft a Hell-Bound Book. Rewards [[Obol]]s.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/craft_hell_bound_book.json}}</ref>
+|}
+
+== Trivia ==
+* The pack's English language file writes the name in red (the <code>§c</code> formatting code), so every enchanted book's name shows in red.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+* An enchanted book pulled up while fishing plays a custom "Caught a Hell-Bound Book" sound, and the [[Angler's Almanac]] has an entry for it: "A mysterious enchanted book pulled from the water. Hopefully the magic works better when dry."
+
+== See also ==
+* [[Blessing]]
+* [[Enchanting]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Items]]
+[[Category:Renamed items]]

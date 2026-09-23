@@ -1,0 +1,53 @@
+{{About|the list of Matcha Flavoured releases|features in development|Upcoming features}}
+This page lists every published version of [[Matcha Flavoured]]. Each version has its own page describing its changes, based on the official release notes. The current version is {{Version|{{Current version}}|{{Current version}}-beta}}.
+
+Versions are published on Modrinth. Until 1.12.1-alpha the datapack and resource pack were one archive, and from 1.12.2-beta they are published as two files. Since [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] the developer uses major.minor.patch numbers, with the caveat that "major" and "minor" reflect how much an update changes the player's experience rather than how much code changed. Alpha and beta versions are pre-releases for players willing to test unfinished features.<ref>{{Cite changelog|1.12.1-alpha}}</ref>
+
+== Releases ==
+{| class="wikitable sortable"
+! Version !! Name !! Type !! Release date !! ''Minecraft'' version !! Summary
+|-
+| {{Version|0.2-alpha}} || v0.2-alpha || Alpha || 2026-06-09 || 26.1.2 || Earliest surviving upload; fixed trades and fishing.
+|-
+| {{Version|0.3-alpha}} || v0.3-alpha || Alpha || 2026-06-10 || 26.1.2 || Added [[Crystal Heart|crystal hearts]].
+|-
+| {{Version|0.4-alpha}} || Sulfur Update! || Alpha || 2026-06-17 || 26.2 || Sulfur blocks, sturdy leather and chainmail armor, warding weapons.
+|-
+| {{Version|0.5-alpha}} || Fishing Overhaul || Alpha || 2026-06-29 || 26.2 || Climate-based [[fishing]], Frost Protection, clay fetishes.
+|-
+| {{Version|0.6-alpha}} || Polish || Alpha || 2026-07-17 || 26.2 || [[Abandoned village]]s, surface spawning rules.
+|-
+| {{Version|0.7-alpha}} || Food System Polish & Bug Fixes || Alpha || 2026-07-20 || 26.2 || Food recipes use cooked ingredients; "Nether" renamed "Hell".
+|-
+| {{Version|1.0}} || Finally Done || Release || 2026-07-24 || 26.2 || First full release; "Golden" music disc.
+|-
+| {{Version|1.01}} || Desert Hotfix || Release || 2026-07-26 || 26.2 || Deserts fixed.
+|-
+| {{Version|1.02}} || Tutorialisation Hotfix || Release || 2026-07-26 || 26.2 || Clearer tutorial advancements.
+|-
+| {{Version|1.03}} || Steel, Electrum, and Trial Chambers || Release || 2026-07-27 || 26.2 || Carbon-rich iron; electrum made endgame.
+|-
+| 1.04 || — || Release || — || 26.2 || Deleted before 1.10 because of bugs, especially in multiplayer.<ref>{{Cite changelog|1.10}}</ref>
+|-
+| {{Version|1.10}} || Abbey, Multiplayer and Update Support || Release || 2026-08-10 || 26.2 || The [[Abbey]], difficulty support, multiplayer.
+|-
+| {{Version|1.11}} || Recipe Hotfix || Release || 2026-08-11 || 26.2 || Restored recipes missing from 1.10.
+|-
+| {{Version|1.12}} || Armour Performance Issue Hotfix || Release || 2026-08-12 || 26.2 || Armor performance, husk balance, optional true darkness.
+|-
+| {{Version|1.12.1-alpha}} || Experimental: Death System || Alpha || 2026-09-01 || 26.2 || Progress-based [[death]] system, translations, Angler's Almanac.
+|-
+| {{Version|1.12.2|1.12.2-beta}} || Progression, Polish, Prerelease || Beta || 2026-09-19 || 26.2 || Namespace move, [[Doom]], raw diamonds, update trigger.
+|}
+
+The resource pack of 1.12.2-beta was published as a separate Modrinth version with the same number, titled "See DP (This is the Resource Pack)".
+
+== In development ==
+{{Main|Upcoming features}}
+The repository's <code>main</code> branch contains bug fixes made after 1.12.2-beta, listed on the [[Matcha Flavoured 1.12.2|1.12.2]] page. A port to ''Minecraft'' 26.3 was in progress.
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]

@@ -1,0 +1,61 @@
+{{Infobox auto}}
+The '''Angler's Almanac''' is a book sold by the [[Fisherman]]. Having it unlocks the '''Angler's Almanac''' advancement tab: a catalog of everything that can be caught by [[fishing]], sorted by climate. Each entry appears when its catch is first reeled in. The item and the tab were made by the community contributor Imtlx.<ref>{{Cite changelog|1.12.1-alpha|quote=Angler's Almanac (Made by Imtlx!)}}</ref>
+
+== Obtaining ==
+=== Trading ===
+A Novice Fisherman sells the almanac for 1 [[Obol]]. The trade has 999 uses and gives the Fisherman 10 experience.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/1/anglers_almanac.json}}</ref>
+{{Sources}}
+
+== Usage ==
+The almanac is a vanilla {{MCW|Book|book}} with its own name, texture and tooltip ("Discover the fish that inhabit this world"). It does nothing when used. As soon as it enters the player's inventory, the hidden advancement <code>anglers_almanac/get_almanac</code> fires and grants the root of the almanac tab.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/get_almanac.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/anglers_almanac/unlock_anglers_almanac.mcfunction}}</ref> The tab stays unlocked afterward, even if the book is lost.
+
+=== The advancement tab ===
+The tab's root can't be earned any other way (its criterion is <code>minecraft:impossible</code>). Once it is granted, the category pages unlock on the next tick. Every entry is hidden until completed and doesn't announce in chat, but shows a toast.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/root.json}}</ref>
+
+Entries are completed by reeling in the matching item with a fishing rod, and only count while the player already has the tab. Catches from before the almanac was obtained aren't recorded. Each fish entry shows the almanac's flavor description, the fish's rarity and a listed chance within its category. A category's entries are chained from the most common catch to the rarest.
+
+{| class="wikitable"
+! Category !! Contents
+|-
+| Cold, Cool, Temperate, Arid and Tropical Freshwater || 5 fish each. The category's description lists its biomes.
+|-
+| Cold, Cool, Temperate, Warm and Hot Saltwater || 5 fish each
+|-
+| Brackish || The 5 swamp fish
+|-
+| Pale Garden || [[Creaking Fish]], pale hanging moss, resin clump
+|-
+| Deep Dark || [[Echo Eel]], sculk vein, echo shard
+|-
+| Sulfur Caves || [[Fish Bones]], [[Sulfur Chunk]]
+|-
+| Junk || 15 junk items, including [[Axolotl]], [[Frog]] and [[Tadpole]]
+|-
+| Treasure || [[Obol]], enchanted fishing rod, [[Hell-Bound Book]], goat horn, angler pottery sherd, [[Crystal Heart]], chest
+|}
+
+=== Discrepancies ===
+* The junk category has entries for a bowl and a tripwire hook, but neither is in the current [[fishing junk]] table, so the tab can't be fully completed.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/junk/bowl.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
+* The listed chances don't always match the loot tables. The Creaking Fish is listed at 25% of Pale Garden catches but has 17.95%, and the junk percentages come from an older junk table.
+* The Cool Freshwater biome list leaves out Dark Forest and Old Growth Spruce Taiga, which are in the loot tag.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/freshwater/cool/root.json}}</ref>
+* Any bone reeled in completes the Fish Bones entries.
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Added.}}
+{{History line|1.12.2|Fixed the tropical fish entries, which couldn't be unlocked.}}
+|-
+! Upcoming
+| Fixed the Hot Saltwater pufferfish entry, which couldn't be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>
+}}
+
+== See also ==
+* [[Fish]]
+* [[Fishing sounds]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox fishing}}
+[[Category:Fishing]]
+[[Category:Advancements]]

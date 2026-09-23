@@ -1,0 +1,146 @@
+{{Vanilla|Enchanting#Enchantments|Enchantment}}
+{{About|the list of enchantments|how enchantments are obtained and applied|Enchanting}}
+An '''enchantment''' is a modifier on a piece of equipment or a book. [[Matcha Flavoured]] keeps the vanilla enchantments, changes a few of them, and adds eight enchantments of its own. Enchantments come from crafted [[blessing]]s, [[Ofuda]], loot and some pre-enchanted equipment rather than from an enchanting table. See [[Enchanting]] for how the system works.
+
+The pack also uses enchantments for the fixed [[intrinsic]] effects of equipment ([[Warding]], [[Magic protection]], [[Cleanse]], [[Divinity]], [[Doom]] and the alloy intrinsics). Those have their own pages.
+
+== New enchantments ==
+{| class="wikitable sortable"
+! Enchantment !! Max level !! Applies to !! Effect !! Obtained from
+|-
+| [[Anemos]] || I || Swords and sticks || Each attack fires a {{MCW|Wind Charge|wind charge}}, with a 0.5-second cooldown || [[Prayer of Aeolus]]; iron swords in [[Abbey]] chests
+|-
+| [[Bloodrage]] || I || Axes || Strength I and Resistance II while at 5 hearts or less || [[Hatchet]] from the [[Lumberjack]]
+|-
+| [[Frost Protection]] || III || Chestplates || Reduces freezing damage; any level prevents [[freezing water]] damage || [[Prayer of Demeter]] (II)
+|-
+| [[Reach]] || III || Chestplates || +2 block interaction range per level || [[Prayer of Will]] (I)
+|-
+| [[Riposte]] || III || Stone-sword-based weapons || Pushes the wielder backward after each hit || [[Hepatizon Sword]] (II)
+|-
+| [[Slaughter]] || I || Weapons || +40 damage against livestock and slows nearby livestock || [[Butcher's Knife]] from the [[Cook]]
+|-
+| [[Trailblaze]] || III || Boots || Faster movement on paths, gravel and mud bricks || [[Prayer of St. Clement]] (III), [[Ofuda]]: Prayer of Exodus (III), [[Sturdy Leather Boots]] (I)
+|-
+| [[Zephyr]] || III || Boots || Sneaking gives Jump Boost VII; higher levels add Slow Falling and a charged updraft || [[Elegy of Hyacinthus]] (I)
+|}
+
+== Vanilla enchantments ==
+Every vanilla enchantment is still in the game. The pack sets the anvil cost multiplier of all of them to 1 (the five that were already 1 are unchanged), which makes combining books in an [[anvil]] cheap. The substantive changes are to [[Feather Falling]], [[Fortune]] and [[Looting]].<ref>{{Source|MF_datapack/data/minecraft/enchantment/feather_falling.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/enchantment/fortune.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/enchantment/looting.json}}</ref> "Random chest and fishing books" means books rolled from <code>#minecraft:on_random_loot</code> in dungeon, mineshaft, pyramid, stronghold, mansion, ocean ruin and ancient city chests and in fishing treasure (see [[Enchanting#Other sources]]).
+
+{| class="wikitable sortable"
+! Enchantment !! Max level !! Changes from vanilla !! Crafted or traded as !! Found as
+|-
+| <span id="Aqua Affinity"></span>{{MCW|Aqua Affinity}} || I || Anvil cost 4 → 1 || [[Prayer of Yamm]] (I) || Random chest and fishing books
+|-
+| <span id="Bane of Arthropods"></span>{{MCW|Bane of Arthropods}} || V || Anvil cost 2 → 1 || [[Elegy of Arachnae]] (V) || Random chest and fishing books
+|-
+| <span id="Blast Protection"></span>{{MCW|Blast Protection}} || IV || Anvil cost 4 → 1 || ''None'' || Random chest and fishing books
+|-
+| <span id="Breach"></span>{{MCW|Breach}} || IV || Anvil cost 4 → 1 || [[Prayer of Ares]] (II) || Random chest and fishing books
+|-
+| <span id="Channeling"></span>{{MCW|Channeling}} || I || Anvil cost 8 → 1 || [[Prayer of The Light]] (I) || Random chest and fishing books
+|-
+| <span id="Curse of Binding"></span>[[Curse of Binding]] || I || Anvil cost 8 → 1<br />'''Stored on every crafted Hell-Bound Book''' || ''None'' || Random chest and fishing books<br />Ominous vaults
+|-
+| <span id="Curse of Vanishing"></span>{{MCW|Curse of Vanishing}} || I || Anvil cost 8 → 1 || ''None'' || Random chest and fishing books<br />Ominous vaults
+|-
+| <span id="Density"></span>{{MCW|Density}} || V || Anvil cost 2 → 1 || [[Prayer of Talos]] (II) || Random chest and fishing books
+|-
+| <span id="Depth Strider"></span>{{MCW|Depth Strider}} || III || Anvil cost 4 → 1 || [[Prayer of Yamm]] (II) || Random chest and fishing books
+|-
+| <span id="Efficiency"></span>{{MCW|Efficiency}} || V || None || [[Prayer of Daedalus]] (III)<br />[[Ofuda]]: Prayer of The God-King (II) || Random chest and fishing books
+|-
+| <span id="Feather Falling"></span>[[Feather Falling]] || IV || Anvil cost 2 → 1<br />'''Fall damage reduction doubled''' || [[Elegy of Icarus]] (II) || Random chest and fishing books
+|-
+| <span id="Fire Aspect"></span>{{MCW|Fire Aspect}} || II || Anvil cost 4 → 1 || [[Prayer of Yama]] (I) || Random chest and fishing books
+|-
+| <span id="Fire Protection"></span>{{MCW|Fire Protection}} || IV || Anvil cost 2 → 1 || [[Prayer of Yama]] (III) || Random chest and fishing books
+|-
+| <span id="Flame"></span>{{MCW|Flame}} || I || Anvil cost 4 → 1 || [[Prayer of Yama]] (I) || Random chest and fishing books
+|-
+| <span id="Fortune"></span>[[Fortune]] || I || Anvil cost 4 → 1<br />'''Maximum level III → I'''<br />'''Exclusive with the electrum tool intrinsic''' || [[Prayer of Midas]] (I) || Random chest and fishing books
+|-
+| <span id="Frost Walker"></span>{{MCW|Frost Walker}} || II || Anvil cost 4 → 1 || [[Prayer of Demeter]] (II) || Random chest and fishing books
+|-
+| <span id="Impaling"></span>{{MCW|Impaling}} || V || Anvil cost 4 → 1 || [[Prayer of Apollo]] (III) || Random chest and fishing books
+|-
+| <span id="Infinity"></span>{{MCW|Infinity}} || I || Anvil cost 8 → 1 || [[Prayer of Paris]] (I) || Random chest and fishing books
+|-
+| <span id="Knockback"></span>{{MCW|Knockback}} || II || Anvil cost 2 → 1 || [[Prayer of Talos]] (II) || Random chest and fishing books
+|-
+| <span id="Looting"></span>[[Looting]] || III || Anvil cost 4 → 1<br />'''Also applies to shears''' || [[Prayer of Midas]] (III) || Random chest and fishing books
+|-
+| <span id="Loyalty"></span>{{MCW|Loyalty}} || III || Anvil cost 2 → 1 || [[Prayer of Glaucus]] (I)<br />[[Ofuda]]: Prayer of Exodus (III) || Random chest and fishing books
+|-
+| <span id="Luck of the Sea"></span>{{MCW|Luck of the Sea}} || III || Anvil cost 4 → 1 || [[Prayer of Glaucus]] (III) || Random chest and fishing books
+|-
+| <span id="Lunge"></span>{{MCW|Lunge}} || III || Anvil cost 2 → 1 || [[Prayer of Ares]] (II) || Random chest and fishing books
+|-
+| <span id="Lure"></span>{{MCW|Lure}} || III || Anvil cost 4 → 1 || [[Prayer of Glaucus]] (III) || Random chest and fishing books
+|-
+| <span id="Mending"></span>[[Mending]] || I || Anvil cost 4 → 1 || [[Prayer of Lu Ban]] (I)<br />[[Ofuda]]: Prayer of Belial (I) || Random chest and fishing books
+|-
+| <span id="Multishot"></span>{{MCW|Multishot}} || I || Anvil cost 4 → 1 || [[Prayer of Artemis]] (I) || Random chest and fishing books
+|-
+| <span id="Piercing"></span>{{MCW|Piercing}} || IV || None || [[Prayer of Apollo]] (II) || Random chest and fishing books
+|-
+| <span id="Power"></span>{{MCW|Power}} || V || None || [[Prayer of Artemis]] (II)<br />[[Ofuda]]: Prayer of Exodus (II) || Random chest and fishing books
+|-
+| <span id="Projectile Protection"></span>{{MCW|Projectile Protection}} || IV || Anvil cost 2 → 1 || ''None'' || Random chest and fishing books
+|-
+| <span id="Protection"></span>{{MCW|Protection}} || IV || None || [[Ofuda]]: Prayer of The Prophet (II) || Random chest and fishing books
+|-
+| <span id="Punch"></span>{{MCW|Punch}} || II || Anvil cost 4 → 1 || [[Prayer of Talos]] (II) || Random chest and fishing books
+|-
+| <span id="Quick Charge"></span>{{MCW|Quick Charge}} || III || Anvil cost 2 → 1 || ''None'' || Random chest and fishing books
+|-
+| <span id="Respiration"></span>{{MCW|Respiration}} || III || Anvil cost 4 → 1 || [[Prayer of Yamm]] (II) || Random chest and fishing books
+|-
+| <span id="Riptide"></span>{{MCW|Riptide}} || III || Anvil cost 4 → 1 || [[Prayer of Yamm]] (I) || Random chest and fishing books
+|-
+| <span id="Sharpness"></span>{{MCW|Sharpness}} || V || None || [[Ofuda]]: Prayer of Samyaza (III) || Random chest and fishing books
+|-
+| <span id="Silk Touch"></span>[[Silk Touch]] || I || Anvil cost 8 → 1<br />'''Exclusive with the electrum tool intrinsic''' || [[Prayer of Eros]] (I) || Random chest and fishing books
+|-
+| <span id="Smite"></span>{{MCW|Smite}} || V || Anvil cost 2 → 1 || [[Prayer of The Light]] (IV)<br />[[Prayer of Man]] (II) || Random chest and fishing books
+|-
+| <span id="Soul Speed"></span>{{MCW|Soul Speed}} || III || Anvil cost 8 → 1 || [[Prayer of Cronus]] (II) || [[Bastion Remnant|Bastion]] chests, piglin bartering
+|-
+| <span id="Sweeping Edge"></span>{{MCW|Sweeping Edge}} || III || Anvil cost 4 → 1 || ''None'' || Random chest and fishing books
+|-
+| <span id="Swift Sneak"></span>{{MCW|Swift Sneak}} || III || Anvil cost 8 → 1 || [[Prayer of Cronus]] (II) || [[Ancient City|Ancient city]] chests
+|-
+| <span id="Thorns"></span>{{MCW|Thorns}} || III || Anvil cost 8 → 1 || ''None'' || Random chest and fishing books
+|-
+| <span id="Unbreaking"></span>[[Unbreaking]] || III || Anvil cost 2 → 1 || [[Prayer of Daedalus]] (III)<br />[[Prayer of Prometheus]] (II)<br />[[Ofuda]]: Prayer of The God-King (I) || Random chest and fishing books
+|-
+| <span id="Wind Burst"></span>{{MCW|Wind Burst}} || III || Anvil cost 4 → 1 || [[Prayer of Aeolus]] (I) || —
+|}
+
+Blast Protection, Projectile Protection, Thorns, Sweeping Edge, Quick Charge and Curse of Vanishing have no blessing or trade, so they can only be found. Protection and Sharpness are only traded, as Ofuda.
+
+== Generated data ==
+The table below is generated from the pack's enchantment files. It also lists the intrinsic enchantments, whose names are the tooltip glyphs they show in game, and five enchantments left in the old <code>main</code> namespace. Those exist only so that items from versions before {{Version|1.12.2}} can be converted: holding or wearing an item with a <code>main:</code> enchantment replaces it with the <code>matcha:</code> version.<ref>{{Source|MF_datapack/data/main/README.txt}}</ref><ref>{{Source|MF_datapack/data/main/item_modifier/update_reach.json}}</ref>
+
+{{Data/Enchantments}}
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Added [[Frost Protection]].}}
+{{History line|1.10|Traversal renamed to [[Trailblaze]] in the language files.}}
+{{History line|1.12.1-alpha|Fortune's maximum level lowered to I. Warding enchantments made mutually exclusive.}}
+{{History line|1.12.2|Feather Falling's damage reduction doubled. [[Zephyr]] reworked into three levels. The pack's enchantments moved from the <code>main</code> to the <code>matcha</code> namespace.}}
+}}
+
+== See also ==
+* [[Enchanting]]
+* [[Blessing]]
+* [[Intrinsic]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchanting]]
+[[Category:Lists]]

@@ -1,0 +1,63 @@
+{{Infobox auto|type=[[Fish]]}}
+A '''freshwater puffer''' is a common ⭐☆☆☆ [[fish]] caught by [[fishing]] in [[Fishing#Arid freshwater|arid freshwater]]. It cooks into [[Cooked Pufferfish|cooked pufferfish]], and a [[Fisherman]] buys 12 of them for an [[Obol]].
+
+== Obtaining ==
+=== Fishing ===
+The freshwater puffer can be caught in this table.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/freshwater_hot_dry.json}}</ref> The chances are per cast of a [[Fishing Rod|fishing rod]] and include the junk and treasure rolls.
+{| class="wikitable"
+! Climate !! Biomes !! Weight !! Per catch (open water) !! Per catch (other water) !! Per catch ({{MCW|Luck of the Sea}} III)
+|-
+| [[Fishing#Arid freshwater|Arid freshwater]] || Savanna, Desert, Badlands, Wooded Badlands, Savanna Plateau, Eroded Badlands, Windswept Savanna || 15 of 42 || 30.36% || 31.95% || 30.19%
+|}
+
+The same tables are also rolled by the fisherman's house chest in [[Village|villages]] and by the {{MCW|Elder Guardian|elder guardian}}'s drops, using the biome at the chest or where the elder guardian dies.
+
+{{Sources}}
+
+== Usage ==
+=== Food ===
+The freshwater puffer keeps the vanilla pufferfish's effects when eaten raw: {{EffectLink|Poison}} II for 1:00, {{EffectLink|Hunger}} III for 0:15 and {{EffectLink|Nausea}} for 0:15. It heals nothing. Cooking it into [[Cooked Pufferfish|cooked pufferfish]] removes the poison and adds [[Conduit Power]].
+
+=== Cooking ===
+{{Cooking|station=Oven|Input=Freshwater Puffer|Output=Cooked Pufferfish|note=5 s, 0.35 XP}} {{Cooking|station=Kindling|Input=Freshwater Puffer|Output=Cooked Pufferfish|note=5 s, 0.35 XP}} {{Cooking|station=Mud Kiln|Input=Freshwater Puffer|Output=Charred Fish|note=5 s, 0.35 XP}}
+
+The recipes match any <code>minecraft:pufferfish</code>, so every pufferfish gives the same result.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pufferfish.json}}</ref> A [[Mud Kiln]] burns it into [[Charred Fish|charred fish]] instead.
+
+=== Crafting ingredient ===
+Because it is a pufferfish underneath, it can be used in [[Bokguk|bokguk]], which takes any pufferfish.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bokguk.json}}</ref>
+
+=== Trading ===
+The [[Fisherman]] buys 12 caught freshwater puffer for 1 [[Obol]] once he reaches Apprentice level. Only fish caught by fishing (with the ⭐☆☆☆ line) are accepted.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/2/freshwater_pufferfish.json}}</ref>
+
+{{Uses}}
+
+== Angler's Almanac ==
+The [[Angler's Almanac]] has an entry for the freshwater puffer under Arid Freshwater (listed chance 35.7%), unlocked by catching one while the almanac tab is open.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Its description reads:
+<blockquote>''A tiny fish that responds to danger by becoming a spiky balloon. Honestly fair.''</blockquote>
+
+== Advancements ==
+* '''No More Fish in the Sea''' – catch every fish, including this one. Rewards 10 [[Obol]]s.
+* '''Fishmonger''' – sell caught fish to a Fisherman.
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Fishing overhauled into climates with star-rated fish.}}
+{{History line|1.10|The Fisherman now buys 12 instead of 24.}}
+{{History line|1.12.1-alpha|Added an Angler's Almanac entry and a catch sound.
+The item format changed; fish caught before this version can no longer be sold.}}
+}}
+
+== Trivia ==
+* The fish is a <code>minecraft:pufferfish</code> item with the name, texture (<code>matcha:freshwater_pufferfish</code>) and rarity line set by its loot table.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/fish/freshwater_pufferfish.json}}</ref>
+* Its internal ID is <code>freshwater_pufferfish</code>.
+
+== See also ==
+* [[Fish]]
+* [[Fishing]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox fishing}}
+[[Category:Fish]]
+[[Category:Food]]

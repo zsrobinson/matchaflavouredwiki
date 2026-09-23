@@ -1,0 +1,54 @@
+{{About|the lighting changes (true darkness)|the status effect|{{MCW|Darkness (effect)|Darkness}}}}
+'''Darkness''' in [[Matcha Flavoured]] refers to the pack's changes to how dark unlit places look. The Overworld uses "true darkness": areas with no light are fully black, with none of the faint ambient glow vanilla ''Minecraft'' adds. [[Hell]], on the other hand, is made slightly brighter than vanilla.
+
+== Overworld ==
+The pack's Overworld dimension type leaves out the <code>ambient_light_color</code> attribute, which vanilla sets to a very dark gray (<code>#0a0a0a</code>). Without it, a block at light level 0 is drawn completely black.<ref name="ow">{{Source|MF_datapack/data/minecraft/dimension_type/overworld.json}}</ref> Caves, the inside of unlit buildings and moonless nights are much darker than in vanilla, and torches matter more.
+
+=== Turning it off ===
+The datapack ships an alternative file, <code>overworld_no_true_darkness.txt</code>, which is identical except that it sets the ambient light color to <code>#212631</code>, a dim blue-gray.<ref>{{Source|MF_datapack/data/minecraft/dimension_type/overworld_no_true_darkness.txt}}</ref> The pack's instructions for using it are:<ref>{{Source|MF_datapack/data/minecraft/dimension_type/I_HATE_TRUE_DARKNESS.txt}}</ref>
+# Open the datapack and go to <code>data/minecraft/dimension_type</code>.
+# Delete <code>overworld.json</code>.
+# Rename <code>overworld_no_true_darkness.txt</code> to <code>overworld.json</code>.
+# Restart the world or server.
+
+The instruction file is named <code>I_HATE_TRUE_DARKNESS.txt</code> and begins "Thats okay."
+
+=== Other Overworld changes ===
+The same file also lets players [[Sleeping|sleep]] at any time of day and makes respawn anchors work in the Overworld.<ref name="ow" />
+
+== Hell ==
+Hell's dimension type is changed to be easier to see in:<ref>{{Source|MF_datapack/data/minecraft/dimension_type/the_nether.json}}</ref>
+{| class="wikitable"
+! Setting !! Matcha Flavoured !! Vanilla
+|-
+| Ambient light || 0.3 || 0.1
+|-
+| Fog start distance || 0 || 10
+|-
+| Fog end distance || 300 || 96
+|-
+| Water evaporates || No || Yes
+|}
+Fog starts right at the player but reaches much further, so distant terrain stays visible. For the water change, see [[Freezing water#Water in Hell]].
+
+== History ==
+{{History|
+{{History line|0.3-alpha|Fixed Hell light levels (its ambient light was 0).}}
+{{History line|1.03|Overworld darkness, which had made dark areas very dark, was fixed.}}
+{{History line|1.10|True darkness restored in the Overworld, since many players liked it being scary.}}
+{{History line|1.12|True darkness kept, with instructions for turning it off. Hell's ambient light raised from 0.1 to 0.3.}}
+}}
+
+== Trivia ==
+* On keeping true darkness in 1.12, the developer wrote: "I'm keeping True Darkness, I like it, and it doesn't stop my videos from being hard to see".<ref>{{Cite changelog|1.12|quote=I'm keeping True Darkness, I like it, and it doesn't stop my videos from being hard to see, imo, BUT IF YOU DON'T}}</ref>
+* The README suggests players who find true darkness too dark follow the instructions in the dimension type folder, or use an accessible version of the resource pack.<ref>{{Source|README.md}}</ref>
+
+== See also ==
+* [[Day and night]]
+* [[Moon]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Environment]]

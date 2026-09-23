@@ -1,0 +1,69 @@
+{{Vanilla|Raw Salmon}}
+{{Infobox
+|title=Salmon
+|invimage=Salmon
+|type=[[Fish]], [[Food]]
+|vanilla={{MCW|Raw Salmon}}
+|stackable=Yes (64)
+|renewable=Yes
+|tooltip=⭐☆☆☆ (when caught by fishing)
+|id=<code>minecraft:salmon</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/fish/salmon.json|salmon.json}}
+}}
+'''Salmon''' is a common ⭐☆☆☆ [[fish]] caught by [[fishing]] in cold and cool [[Fishing#Cold saltwater|saltwater]]. It is vanilla {{MCW|Raw Salmon|raw salmon}}, renamed. It cooks into [[Cooked Large Fish|cooked large fish]], and a [[Fisherman]] buys 12 caught salmon for an [[Obol]].
+
+== Obtaining ==
+=== Fishing ===
+The Salmon can be caught in these climate tables.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/saltwater_cold.json}}</ref> <ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/saltwater_cool.json}}</ref> The chances are per cast of a [[Fishing Rod|fishing rod]] and include the junk and treasure rolls.
+{| class="wikitable"
+! Climate !! Biomes !! Weight !! Per catch (open water) !! Per catch (other water) !! Per catch ({{MCW|Luck of the Sea}} III)
+|-
+| [[Fishing#Cold saltwater|Cold saltwater]] || Frozen Ocean, Deep Frozen Ocean || 15 of 42 || 30.36% || 31.95% || 30.19%
+|-
+| [[Fishing#Cool saltwater|Cool saltwater]] || Cold Ocean, Deep Cold Ocean || 15 of 42 || 30.36% || 31.95% || 30.19%
+|}
+
+The same tables are also rolled by the fisherman's house chest in [[Village|villages]] and by the {{MCW|Elder Guardian|elder guardian}}'s drops, using the biome at the chest or where the elder guardian dies.
+
+{{Sources}}
+
+== Usage ==
+=== Food ===
+Raw fish can be eaten, but it heals nothing: Matcha Flavoured removes [[hunger]], and food only heals through the hearts shown on its tooltip. Cooked, it becomes [[Cooked Large Fish|cooked large fish]], which heals {{Hp|5}}.
+
+=== Cooking ===
+{{Cooking|station=Oven|Input=Salmon|Output=Cooked Large Fish|note=5 s, 0.35 XP}} {{Cooking|station=Kindling|Input=Salmon|Output=Cooked Large Fish|note=5 s, 0.35 XP}} {{Cooking|station=Mud Kiln|Input=Salmon|Output=Charred Fish|note=5 s, 0.35 XP}}
+
+The recipes match any <code>minecraft:salmon</code>, so every large fish gives the same result.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_salmon.json}}</ref> A [[Mud Kiln]] burns it into [[Charred Fish|charred fish]] instead.
+
+=== Trading ===
+The [[Fisherman]] buys 12 caught Salmon for 1 [[Obol]] once he reaches Apprentice level. Only fish caught by fishing (with the ⭐☆☆☆ line) are accepted.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/2/salmon.json}}</ref>
+
+{{Uses}}
+
+== Angler's Almanac ==
+The [[Angler's Almanac]] has an entry for the Salmon under Cold Saltwater (listed chance 35.7%) and Cool Saltwater (listed chance 35.7%), unlocked by catching one while the almanac tab is open.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Its description reads:
+<blockquote>''A determined fish that swims upstream fights rapids and refuses to accept that "going back" is a bad idea.''</blockquote>
+
+== Advancements ==
+* '''No More Fish in the Sea''' – catch every fish, including this one. Rewards 10 [[Obol]]s.
+* '''Fishmonger''' – sell caught fish to a Fisherman.
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Fishing overhauled into climates with star-rated fish.}}
+{{History line|1.10|The Fisherman now buys 12 instead of 24.}}
+{{History line|1.12.1-alpha|Added an Angler's Almanac entry and a catch sound.
+The item format changed; fish caught before this version can no longer be sold.}}
+}}
+
+== See also ==
+* [[Fish]]
+* [[Fishing]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox fishing}}
+[[Category:Fish]]
+[[Category:Food]]

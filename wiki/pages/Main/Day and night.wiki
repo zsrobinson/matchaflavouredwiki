@@ -1,0 +1,62 @@
+{{Vanilla|Daylight cycle|Day and night}}
+The '''day and night''' cycle in [[Matcha Flavoured]] is three times as long as in vanilla ''Minecraft''. A full day lasts 72,000 ticks, 60 minutes of real time, instead of 24,000 ticks (20 minutes). Everything tied to the time of day, such as sky light, monster burning, villager schedules and the [[moon]], is stretched to match.
+
+== Mechanics ==
+The pack replaces the Overworld's day timeline with one whose period is 72,000 ticks. Every keyframe is at three times its vanilla tick.<ref name="day">{{Source|MF_datapack/data/minecraft/timeline/day.json}}</ref>
+
+{| class="wikitable"
+! Time marker !! Tick !! Vanilla tick !! Real time into the day
+|-
+| <code>day</code> || 3,000 || 1,000 || 2:30
+|-
+| <code>noon</code> || 18,000 || 6,000 || 15:00
+|-
+| <code>night</code> || 39,000 || 13,000 || 32:30
+|-
+| <code>midnight</code> || 54,000 || 18,000 || 45:00
+|}
+These markers are used by commands such as <code>/time set night</code>.
+
+{| class="wikitable"
+! Event !! Ticks !! Real time
+|-
+| Full daylight || 399–35,601 || about 29.3 minutes
+|-
+| Full darkness (sky light at 4/15) || 41,010–66,990 || about 21.7 minutes
+|-
+| Undead don't burn in sunlight || 37,626–70,380 || about 27.3 minutes
+|-
+| Eyeblossoms open, creakings active, firefly bushes chirp || 37,800–70,203 || about 27 minutes
+|}
+<ref name="day" />
+
+Other timelines are stretched in the same way:
+* '''Villager schedules''' repeat every 72,000 ticks: villagers work from 6,000, meet at 27,000, idle from 33,000 and rest from 36,000.<ref>{{Source|MF_datapack/data/minecraft/timeline/villager_schedule.json}}</ref>
+* '''Pillager patrols''' can only spawn after 360,000 ticks, 5 of the pack's days.<ref>{{Source|MF_datapack/data/minecraft/timeline/early_game.json}}</ref>
+* The '''moon''' has its own 8-day cycle and moves independently of the sun. See [[Moon]].
+
+The sun moves at a steady rate through the whole day, from an angle of 270° at tick 0 to 630° at tick 72,000.<ref name="day" />
+
+== Nights ==
+Nights last longer in real time, and the pack's [[Zombie|zombies]] are fast, so the night is dangerous early in the game. [[Sleeping]] speeds time up until morning, and after the [[Ender Dragon]] is killed the [[Surface|surface]] becomes safe.
+
+== History ==
+{{History|
+{{History line|1.12.2|The day and night extender now uses timelines.}}
+}}
+
+== Trivia ==
+* The developer said that it's "a shame that in Minecraft, we always end up skipping the night".<ref>{{Cite video|quote=And I think it's a shame that in Minecraft, we always end up skipping the night.}}</ref>
+* The timeline rework was contributed by ReinIsNOTaDev.<ref>{{Cite changelog|1.12.2|quote=Day/Night extender now uses timelines}}</ref>
+
+== See also ==
+* [[Moon]]
+* [[Sleeping]]
+* [[Darkness]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mechanics]]
+[[Category:Environment]]

@@ -1,0 +1,59 @@
+{{Meta version infobox
+|version=1.03
+|name=Steel, Electrum, and Trial Chambers
+|type=Release
+|date=July 27, 2026
+|files=<code>Matcha_Flavoured_1_03.zip</code>
+|prev=1.02
+|next=1.10
+}}
+'''Matcha Flavoured 1.03''', "Steel, Electrum, and Trial Chambers", is a release of [[Matcha Flavoured]], published on July 27, 2026. It added [[Carbon-Rich Iron|carbon-rich iron]] as a step in making [[Steel Alloy|steel]], moved [[Electrum Alloy|electrum]] to the end of progression, and improved [[Trial Chambers|trial chamber]] loot.<ref>{{Cite changelog|1.03}}</ref>
+
+The notes explain that the developer enjoyed watching players experiment and would deliberately leave some features without advancements, such as [[jewelry]], special books, villages and fetishes, while making steel and smithing "as intuitive as possible".
+
+== Additions ==
+* [[Carbon-Rich Iron|Carbon-rich iron]] and its advancement ("A Brittle Alloy?").
+* The "Hidden Flavors" (secret ingredient) and "Wait, you can make that?" (secret meal) advancements.
+* [[Warding Stone|Warding stones]] cannot be placed in [[Trial Chambers|trial chambers]].
+* Clay can be cooked on a [[Kindling|kindling]].
+* [[Mud Kiln|Kiln]] recipes for charcoal and all glazed terracotta.
+
+== Changes ==
+=== Steel and electrum ===
+* Steel now has an intermediate item, carbon-rich iron. The developer had originally represented the cost of carbon with a long cooking time, but found waiting unfun, so the carbon cost moved into a recipe that uses a coal block, which can also be made from charcoal.
+* Electrum is crafted with [[Divine Fragment|divine fragments]], like [[Adamant Alloy|adamant]], to mark it as endgame, and has the enchantment glint.
+
+=== Other ===
+* Blaze drops reduced slightly.
+* [[Freezing water]] no longer causes Blindness, and its Darkness and Slowness last less time.
+* The [[Silver Sword|silver sword]], [[Warding Sword|warding sword]] and [[Warding Shield|warding shield]] were nerfed.
+* The [[Smithing Table|smithing table]] texture was changed to make smithing clearer.
+* Sapling recipes unlock when the player gets the logs, not the leaves, because players who never picked up leaves could not find them.
+* Fortune no longer affects spawners. The developer found four fragments per spawner "just too much", especially with elytra and [[Nether Fortress|nether fortresses]] making spawners easy to reach.
+* Removed one splash text that the developer thought some people might find hurtful, and added others.
+* Steel and iron [[Dolabra|dolabras]] have their intended attack speed.
+* The [[anvil]] can no longer be crafted from iron blocks.
+
+== Fixes ==
+* The overworld's darkness was stark and very dark. This was fixed, although the developer asked players which they preferred. "True darkness" returned in [[Matcha Flavoured 1.10|1.10]].
+* The vanilla chest recipe had been unblocked, creating a duplicate. There are now two chest recipes, from logs and from planks, in the same group.
+* Sticks from logs unlock properly.
+* Short dry grass can be crafted from tall dry grass.
+* Wool can be crafted back from carpet.
+* Yellow beds and carpets can no longer be made from hay bales.
+* Fixed the name of golden steamed carrots.
+* Added the anvil smithing error sprite.
+* Blocked the vanilla netherite recipes.
+* Looting made [[Wither Skeleton|wither skeletons]] drop their heads less often. This was fixed.
+* Iron lanterns and chains unlock on obtaining ingots, and soul lanterns, [[Soul Kindling|soul kindling]] and soul torches unlock on obtaining soul fire base blocks.
+* Divine fragments appear in trial chambers.
+* Increased the chance of maces from trial chambers.
+* Apples heal as much as their tooltip says.
+* Bruschetta works.
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Releases]]

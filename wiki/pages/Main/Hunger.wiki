@@ -1,0 +1,48 @@
+{{Vanilla}}
+{{Infobox
+|title=Hunger
+|invimage=Bread
+|type=Mechanic
+}}
+'''Hunger''' is effectively removed in [[Matcha Flavoured]]. The hunger bar is hidden, the player's food level is held at a value where sprinting is always possible, and [[food]] is eaten for its healing and status effects rather than to fill a bar.
+
+== Mechanics ==
+=== Food level ===
+Every tick, the pack checks each player's food level (0 to 20, where vanilla shows 2 points per drumstick):<ref name="mh">{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
+* At 10 or above, the player is given {{EffectLink|Hunger}} CCLVI (level 256) for 1 second, which drains the food level quickly.
+* At 6 or below, the player is given {{MCW|Saturation}} II for 1 second, which refills it.
+
+The food level therefore stays a little above 6, the vanilla threshold for sprinting, and never gets high enough for vanilla natural regeneration or low enough to cause starvation. Both effects are hidden from the HUD.
+
+=== Hunger bar ===
+The resource pack replaces every food icon on the HUD with a blank texture, so the hunger bar isn't shown.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/gui/sprites/hud/food_full.png}}</ref>
+
+=== Eating ===
+The pack's foods use the <code>can_always_eat</code> option and restore no hunger. For example, [[bread]] has 0 nutrition and 0 saturation, and instead grants {{EffectLink|Regeneration}} and removes harmful effects.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref> What a food does is described by its [[intrinsic]] and its tooltip. See [[Food]] and [[Cooking]].
+
+Because the food level never reaches 20, vanilla foods that are not flagged <code>can_always_eat</code> can still be eaten at any time.
+
+=== Natural regeneration ===
+{{Main|Natural regeneration}}
+Natural regeneration is turned off with a game rule, so a high food level wouldn't heal the player even if it were reached.
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Removed the "You cannot eat right now" warning.}}
+}}
+
+== Trivia ==
+* The developer found vanilla hunger "isn't very fun or engaging": "The punishment is not severe enough to be interesting and the remedy is not difficult enough to be engaging." They preferred the old Beta hunger system, where food healed directly.<ref>{{Cite video|quote=The sprinting limitation is good in theory, but in practice only serves to frustrate me. The punishment is not severe enough to be interesting and the remedy is not difficult enough to be engaging.}}</ref>
+* The developer addressed the worry that unlimited sprinting makes mobs harmless by making [[Zombie|zombies]] much faster.<ref>{{Cite video|quote=If you can always sprint, doesn't that mean hostile mobs won't be a threat? But, put a pin in that. We'll come back to it later.}}</ref>
+
+== See also ==
+* [[Health]]
+* [[Natural regeneration]]
+* [[Food]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mechanics]]
+[[Category:Health]]

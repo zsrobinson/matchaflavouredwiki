@@ -1,0 +1,48 @@
+{{Infobox
+|title=Divinity
+|image=Glyph E030.png
+|imagesize=64px
+|type=[[Set bonus]]
+|items=Full [[Adamant equipment|adamant]] or [[Electrum equipment|electrum]] armor
+|tooltip={{G|Health}}{{G|Health}} {{G|Cooldown}} (00:30)
+}}
+'''Divinity''' is the [[set bonus]] shared by full sets of [[Adamant equipment|adamant]] and [[Electrum equipment|electrum]] armor. Every 30 seconds it gives the wearer 2 hearts of {{MCW|Absorption}}, a shield of extra health that is refilled for as long as the set is worn.
+
+== Mechanics ==
+Every 30 seconds, every player wearing all four pieces of adamant armor or all four pieces of electrum armor receives {{MCW|Absorption}} I for 31 seconds, with no particles.<ref>{{Source|MF_datapack/data/matcha/function/timers/divinity/adamant_armour.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/divinity/electrum_armour.mcfunction}}</ref> Absorption I gives {{Hp|4}} of absorption health. Because the effect lasts one second longer than the interval, it never runs out while the set is worn, and whatever absorption was lost is restored on the next 30-second pulse.
+
+The tooltip line {{G|Health}}{{G|Health}} {{G|Cooldown}} (00:30) appears in aqua under "Set Bonus:" on every piece. The timer is shared by the whole server and does not start when the set is put on, so the first refill after equipping can take anywhere up to 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
+
+Mixing sets doesn't work: the pieces are counted per material, and a set of two adamant and two electrum pieces gives no divinity.
+
+=== Adamant pickaxe ===
+The [[Adamant Pickaxe]] also lists the divinity line under "Set Bonus:" in its tooltip. Tools are not counted by the set bonus, so the line has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_pickaxe.json}}</ref>
+
+=== Unused per-piece divinity ===
+The pack still contains a per-piece divinity counter that would give {{MCW|Health Boost}} I to IV for one to four pieces, left over from the [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] adamant rework.<ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/divinity_health_boost.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/divinity.mcfunction}}</ref> No <code>matcha:divinity</code> enchantment is defined any more, so nothing raises the counter and this part never runs.
+
+== History ==
+{{History|
+{{History line|1.10|Adamant's set bonus was nerfed slightly.}}
+{{History line|1.12.1-alpha|Adamant was reworked. Each adamant piece now gave Health Boost hearts instead of absorption ("soul") hearts, and the set bonus was reduced to 2 absorption hearts.
+The electrum set bonus was reduced from 4 hearts to 2.
+The divinity enchantment was removed from all tools and weapons and replaced with Sharpness or Efficiency.}}
+{{History line|1.12.2|The per-piece health boost of adamant armor was replaced by [[Doom]]. Only the set bonus remains.}}
+}}
+
+== Trivia ==
+* The release notes call absorption hearts "soul hearts".<ref>{{Cite changelog|1.12.1-alpha|quote=The Set bonus still gives soul hearts, but only 2}}</ref> The developer reduced them because "while the soul heart buffer is great for minimising small amounts of damage, it won't be so much that the player never needs to bother with eating".<ref>{{Cite changelog|1.12.1-alpha|quote=The hope is that, while the soul heart buffer is great for minimising small amounts of damage, it won't be so much that the player never needs to bother with eating}}</ref>
+* The advancement for adamant reads "Adamant grants the wielder a Divine Constitution".
+
+== See also ==
+* [[Set bonus]]
+* [[Doom]]
+* [[Warding]]
+* [[Health]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Mechanics]]
+[[Category:Intrinsics]]

@@ -1,0 +1,80 @@
+{{Vanilla|Smelting}}
+{{Infobox
+|title=Cooking
+|invimage=Oven
+|type=Mechanic
+}}
+'''Cooking''' turns raw [[ingredient]]s into [[food]] that heals and grants [[effect]]s. Matcha Flavoured renames the vanilla cooking blocks and gives each one its own role: the [[oven]] (furnace) and [[kindling]] (campfire) cook food, while the [[mud kiln]] (smoker) fires clay, glass and stone and only chars food. Most complex dishes are then crafted at a [[crafting table]] from the cooked ingredients.
+
+== Stations ==
+{| class="wikitable"
+! Station !! Replaces !! Recipe type !! Food it cooks
+|-
+| {{BlockLink|Kindling}} || {{MCW|Campfire}} || Campfire cooking || All simple preparations, cooked meat, bread and four of the oven meals. Needs no fuel and cooks up to four items at once.
+|-
+| {{BlockLink|Soul Kindling}} || {{MCW|Soul Campfire}} || Campfire cooking || The same as kindling.
+|-
+| {{BlockLink|Oven}} || {{MCW|Furnace}} || Smelting || Everything kindling cooks, plus [[popped chorus fruit]], [[dried kelp]], [[molasses]] and [[pumpkin curry]]. Needs fuel.
+|-
+| {{BlockLink|Mud Kiln}} || {{MCW|Smoker}} || Smoking || Only [[naan]] and the charred foods. It is mainly a kiln for bricks, glass, terracotta and stone.
+|}
+
+All food recipes take 5 seconds (100 ticks) and give 0.35 experience, on every station. The oven meals take 15 seconds (300 ticks).<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_pumpkin.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref> Kindling therefore cooks food much faster than a vanilla campfire (30 seconds), and the oven twice as fast as a vanilla furnace.
+
+The pack removes every vanilla cooking recipe for food (meat, fish, potatoes, kelp) and replaces it with its own, so vanilla cooked food can't be made.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+=== Charring ===
+The mud kiln is not meant for food. Raw meat, raw fish and potatoes put in it come out as [[charred meat]], [[Charred Fish|charred fish]] and [[charred potato]]es, which heal less than the properly cooked versions ({{Hp|2}} instead of {{Hp|4}} for meat, {{Hp|1}} instead of {{Hp|5}} for a potato) and have no other use.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref> [[Dough]] is the exception: the kiln bakes it into [[naan]] instead of [[bread]].
+
+== Progression ==
+The README's advice for new players is to start with a campfire, a wooden hoe and grass.<ref>{{Source|README.md}}</ref> The stations unlock in this order:
+# '''Kindling''' is crafted from 2 sticks and 2 logs and is always placed unlit. It is lit with [[tinder]] or a [[fire starter]] (''Prometheus be Damned'').<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json}}</ref>
+# A hoe used on grass yields short grass, and 1 time in 8 [[wheat grain]] instead. Cooking grass on kindling dries it (''Harvester''). Dry grass, [[straw]] and mud make packed mud.
+# The '''mud kiln''' is crafted from 4 mud bricks, 2 packed mud and a kindling (''Ancient Technology''). It fires clay balls into bricks.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/mudkiln.json}}</ref>
+# The '''oven''' is crafted from 3 iron ingots, 5 blocks of bricks and a kindling (''Now You're Cooking'').<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/oven.json}}</ref> The oven can't smelt ores; that needs a [[blast furnace]].
+# Bricks also make [[bowl]]s (''Manners First''), which unlock the [[stock]]s for the oven meals.
+
+== Recipe unlocks ==
+Recipes appear in the recipe book through hidden advancements in <code>advancement/recipe_unlocks</code>. Each one fires when the player first has a certain item in their inventory and grants the recipes that use it:<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/baked_pumpkin.json}}</ref>
+* Picking up a raw ingredient unlocks its oven recipe. For example, a [[pumpkin]] unlocks [[baked pumpkin]], and [[carrot]]s unlock [[steamed carrots]], [[pickled carrots]], [[carrot cupcake]] and [[Pad Thai]].
+* Obtaining a cooked ingredient unlocks the preserves and meals made from it. For example, a baked pumpkin unlocks [[pumpkin jam]] and [[pumpkin empanada]].
+* Intermediates chain on: [[wheat grain]] unlocks [[flour]]; flour unlocks [[dough]], [[bag of flour]] and [[cake]]; dough unlocks [[bread]], [[naan]] and [[seitan]]; a [[bowl]] unlocks all five stocks; each stock unlocks its oven meal.
+* A [[Cooking Recipe]] unlocks one secret dish.
+
+Campfire recipes are never added to the recipe book, but kindling doesn't use the recipe book, so they work regardless. Unlocks only affect the recipe book: the pack doesn't turn on the <code>limitedCrafting</code> game rule, so any recipe can be crafted by placing its ingredients by hand. Recipes that are never unlocked are the [[secret recipes]].
+
+When a player joins a world whose pack version is newer than the one they last played with, all their recipe unlocks are revoked so that changed recipes are re-learned.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref>
+
+== Other cooking recipes ==
+Kindling and the oven also dry plants: grass and ferns become short or tall dry grass, and bushes become dead bushes. Kindling fires clay balls into bricks. The oven cleans mossy cobblestone and mossy stone bricks, dries wet sponges and turns grass blocks into dirt.<ref>{{Source|MF_datapack/data/matcha/recipe/campfire/brick_campfire.json}}</ref> See each station's page.
+
+== Advancements ==
+* ''Prometheus be Damned'': light kindling.
+* ''Harvester'': dry grass on kindling.
+* ''Ancient Technology'': craft a mud kiln.
+* ''Powerful Flavors'': cook any intrinsic ingredient.
+* ''Now You're Cooking'': craft an oven.
+* ''Manners First'': make a bowl.
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Cooking food on a campfire gives the matching recipe unlocks. The golden carrot recipe unlocks with a gold nugget, and the milk bottle recipe with milk.}}
+{{History line|0.7-alpha|Dough and bread give the proper recipes.}}
+{{History line|1.02|Grass drops wheat seeds when broken with a hoe. Campfire and food advancements reworded.}}
+{{History line|1.03|Clay can be cooked on kindling. Charcoal and glazed terracotta moved to the kiln.}}
+{{History line|1.10|Tomato, melon, honey and carrot recipes unlock from the raw food. All food except curries cooks faster in the oven. Quartz and amethyst can be kilned.}}
+{{History line|1.12.1-alpha|Cactus can be cooked again. Copper, ancient debris and stone can no longer be smelted in the oven. Cooking, kilning and blasting recipes reorganized.}}
+}}
+
+== See also ==
+* [[Food]]
+* [[Intrinsic]]
+* [[Secret recipes]]
+* [[Smithing]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Mechanics]]
+[[Category:Food]]

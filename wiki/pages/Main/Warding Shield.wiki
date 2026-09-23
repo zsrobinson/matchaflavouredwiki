@@ -1,0 +1,42 @@
+{{Infobox auto
+|intrinsics={{G|Warding}} 1
+|renewable=Yes
+}}
+The '''warding shield''' is a {{MCW|Shield|shield}} inlaid with silver and painted with a [[Nazar]]. It carries {{G|Warding}} 1, which works from the off hand, so it adds warding on top of whatever weapon the player holds.
+
+== Obtaining ==
+=== Smithing ===
+{{Recipes}}
+The shield's face shows a fixed nazar pattern (a light blue circle with a black flower on white, with a blue border), whose banner layers are hidden from the tooltip.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/warding_shield.json}}</ref> Enchantments on the original shield are kept (see [[Set bonus#Intrinsic enchantments|intrinsic enchantments]]).
+
+== Usage ==
+=== Blocking ===
+The warding shield blocks like an ordinary shield and has the same 336 durability.
+
+=== Warding ===
+Held in either hand, the shield gives {{G|Warding}} 1. Its warding is added to that of the item in the other hand, up to {{G|Warding}} 3: a [[Warding Sword]] or [[Silver Sword]] with the shield gives {{G|Warding}} 2, and a [[Nazar]] or [[Electrum Axe]] with the shield gives {{G|Warding}} 3. See [[Warding]].
+
+=== Repairing ===
+The warding shield can only be repaired with a [[Nazar]] or a {{MCW|Block of Lapis Lazuli|block of lapis lazuli}}.
+
+== Advancements ==
+Smithing the warding shield grants ''Convoymaster'' ("Affix a Nazar to an Shield inlaid with Silver in a Smithing Table") in the [[Advancements/Tutorial|Tutorial]] tab, which rewards an [[Obol]].<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/smith_warding_shield.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added the warding shield.}}
+{{History line|1.03|The warding shield was nerfed.}}
+{{History line|1.12.1-alpha|The warding shield can now only be repaired with Nazars or lapis.}}
+{{History line|1.12.2|Reduced from {{G|Warding}} 2 to {{G|Warding}} 1, since warding from both hands now stacks.}}
+}}
+
+== See also ==
+* [[Warding Sword]]
+* [[Silver Sword]]
+* [[Warding]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Combat]]

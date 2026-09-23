@@ -1,0 +1,114 @@
+{{About|the hidden effects of food ingredients|the special abilities of equipment|Warding|Set bonus}}
+{{Infobox
+|title=Intrinsic
+|invimage=Baked Pumpkin
+|type=Mechanic
+}}
+An '''intrinsic''' is a special ability hidden in an item. For [[food]], it is the status [[effect]] that an [[ingredient]] carries: raw, the ingredient does nothing special, but cooking it "awakens" the intrinsic, and every dish made from it grants the same effect for longer the more work goes into it.<ref>{{Cite video|quote=In Matcha Flavored, most ingredients have special abilities. I call them intrinsics. Cooking an ingredient can awaken whatever intrinsic is hidden in the raw food.}}</ref> [[Pumpkin]], for example, has no effect on its own, but [[baked pumpkin]] gives {{EffectLink|Resistance}} for 30 seconds, [[pumpkin jam]] for 3 minutes and a [[pumpkin empanada]] for 8 minutes.
+
+The pack also uses the word for the built-in abilities of equipment, such as the [[Warding|warding]] of silver weapons or the knockback of [[Mattock|mattocks]]. Those are covered on the pages of the equipment and on [[Set bonus]]; this page covers ingredients.
+
+== Mechanics ==
+Each intrinsic ingredient has at least three dishes:<ref>{{Cite video|quote=All ingredients with intrinsics have at least three corresponding foods. Simple preparation, preservation, and a meal.}}</ref>
+* A '''simple preparation''': the ingredient cooked alone in an [[oven]] or on [[kindling]]. Its effect lasts 3 to 30 seconds, and it mostly tells the player what the ingredient does.
+* A '''preservation''': a jam, pickle, can or drink crafted from the ingredient and a [[glass bottle]]. Its effect lasts 3 to 5 minutes.
+* A '''meal''': a crafted dish, which lasts longest and heals the most.
+
+Some ingredients have further dishes, and pumpkin is also the key ingredient of an [[#Oven meals|oven meal]] that lasts 20 minutes. The effect doesn't depend on anything else in the recipe: meat, [[bread]], [[cheese]], [[dough]] and the other base ingredients have no intrinsic, so a dish only gains an effect from its intrinsic ingredients. A few dishes combine two, such as [[lumpia]] ([[carrot]] and [[Dried Kelp|kelp]]) or [[warped pizza]] ([[warped fungus]] and [[tomatoes]]).
+
+The pack's README counts "12 food ingredients" with intrinsics, and the developer described two more as "secret ingredients" whose foods are hidden from the recipe book.<ref>{{Source|README.md}}</ref><ref>{{Cite video|quote=There are 12 ingredients with unique effects plus two more that act as secret ingredients, a few secret foods and four special meals that have to be cooked in an oven to make.}}</ref> The golden versions of [[Golden Apple|apples]] and [[Golden Carrot|carrots]] are hidden variants of their ingredients.
+
+== Ingredients ==
+Durations are the effect's duration at level I unless a level is given. Every dish also heals; see each page or the [[Food#List of foods|food table]].
+
+{| class="wikitable"
+! Ingredient !! Intrinsic !! Simple preparation !! Preservation !! Meal !! Other dishes
+|-
+| {{ItemLink|Pumpkin}} || {{EffectLink|Resistance}} || {{ItemLink|Baked Pumpkin}} (0:30) || {{ItemLink|Pumpkin Jam}} (3:00) || {{ItemLink|Pumpkin Empanada}} (8:00) || {{ItemLink|Pumpkin Curry}} (20:00)
+|-
+| {{ItemLink|Apple}} || {{EffectLink|Regeneration}} || {{ItemLink|Baked Apple}} (0:10) || {{ItemLink|Canned Apples}} (1:00) || {{ItemLink|Apple Empanada}} (3:00) || {{ItemLink|Apple Cinnamon Oatmeal}} (2:00, plus Speed 10:00)
+|-
+| {{ItemLink|Carrot}} || {{EffectLink|Night Vision}} || {{ItemLink|Steamed Carrots}} (0:10) || {{ItemLink|Pickled Carrots}} (5:00) || {{ItemLink|Carrot Cupcake}} (10:00) || {{ItemLink|Pad Thai}} (10:00), {{ItemLink|Lumpia}} (5:00)
+|-
+| {{ItemLink|Tomatoes}} || {{EffectLink|Strength}} || {{ItemLink|Grilled Tomatoes}} (0:10) || {{ItemLink|Sun-dried Tomatoes}} (5:00) || {{ItemLink|Bruschetta}} (II, 2:30) || {{ItemLink|Cheese Pizza}}, {{ItemLink|Mushroom Pizza}}, {{ItemLink|Meat Pizza}} (3:00), {{ItemLink|Kontomire-Dandelion Stew}} (5:00)
+|-
+| {{ItemLink|Melon Slice|Melon}} || {{EffectLink|Fire Resistance}} || {{ItemLink|Grilled Melon}} (0:10) || {{ItemLink|Rind Jam}} (5:00) || {{ItemLink|Melon Sorbet}} (10:00) ||
+|-
+| {{ItemLink|Sweet Berries}} || {{EffectLink|Health Boost}} || {{ItemLink|Sweet Berry Mash}} (0:10) || {{ItemLink|Sweet Berry Jam}} (3:00) || {{ItemLink|Sweet Berry Danish}} (II, 8:00) || {{ItemLink|Sweet Berry Toast}} (II, 8:00)
+|-
+| {{ItemLink|Glow Berries}} || Aura (nearby creatures glow) || {{ItemLink|Glow Berry Mash}} (0:03) || {{ItemLink|Glow Berry Jam}} (0:30) || {{ItemLink|Glow Berry Crumble}} (1:00) ||
+|-
+| {{ItemLink|Honey Bottle|Honey}} || {{EffectLink|Speed}} || {{ItemLink|Honey Ginger Tea}} (0:30, also cleanses) || {{ItemLink|Mead}} (5:00) || {{ItemLink|Honied French Toast}} (II, 3:00) || {{ItemLink|Bubbling Mead}} (II, 5:00, splash)
+|-
+| {{ItemLink|Cocoa Beans}} || {{EffectLink|Haste}} || {{ItemLink|Chocolate}} (0:30) || — || {{ItemLink|Chocolate Chip Cookie}} (5:00), {{ItemLink|Brownie}} (II, 2:30) ||
+|-
+| {{ItemLink|Dried Kelp|Kelp}} || {{EffectLink|Water Breathing}} || {{ItemLink|Dried Kelp}} (0:10) || — || {{ItemLink|Gimmari}} (8:00) || {{ItemLink|Lumpia}} (5:00)
+|-
+| {{ItemLink|Chorus Fruit}} || {{EffectLink|Levitation}} || {{ItemLink|Popped Chorus Fruit}} (III, 0:03) || — || {{ItemLink|Chorus Mochi}} (XXX, 0:01) ||
+|-
+| {{ItemLink|Red Mushroom}} || {{EffectLink|Poison}} || {{ItemLink|Braised Toadstool}} (0:30) || {{ItemLink|Pickled Toadstools}} (II, 1:00, splash) || {{ItemLink|Toadstool Stroganoff}} (5:00) ||
+|}
+
+Two more ingredients with effects:
+* [[Pufferfish]] gives {{EffectLink|Conduit Power}}: [[cooked pufferfish]] (0:30) and [[bokguk]] (8:00). See [[Fish]].
+* [[Honey Bottle|Honey]]'s simple preparation and [[bread]] also have the cleansing effect; see [[Food#Effects|Food]].
+
+Ingredients without an intrinsic are used for healing and as bases: [[potato]]es, [[Mushroom|brown mushrooms]], [[egg]]s, [[Wheat Grain|wheat]], [[Nopales|cactus]], [[sugar]] and meat. Brown mushrooms are the pickling agent of every pickle.
+
+=== Secret ingredients ===
+{{Spoiler}}
+These ingredients' dishes never appear in the recipe book; see [[Secret recipes]].
+
+{| class="wikitable"
+! Ingredient !! Intrinsic !! Simple preparation !! Preservation !! Meal !! Other dishes
+|-
+| {{ItemLink|Crimson Fungus}} || {{EffectLink|Weakness}} || {{ItemLink|Braised Crimson Fungus}} (0:30) || {{ItemLink|Pickled Crimson Fungus}} (II, 1:00, splash) || {{ItemLink|Crimson Stroganoff}} (5:00) ||
+|-
+| {{ItemLink|Warped Fungus}} || {{EffectLink|Invisibility}} || {{ItemLink|Braised Warped Fungus}} (0:30) || {{ItemLink|Pickled Warped Fungus}} (5:00, splash) || {{ItemLink|Warped Stroganoff}} (10:00) || {{ItemLink|Warped Pizza}} (5:00, plus Strength 3:00)
+|-
+| {{ItemLink|Golden Apple}} || {{EffectLink|Absorption}} and {{EffectLink|Regeneration}} || {{ItemLink|Baked Golden Apple}} (Absorption 2:00, Regeneration 1:00) || {{ItemLink|Canned Golden Apples}} (Absorption II 2:00, Regeneration II 0:20) || {{ItemLink|Gilded Empanada}} (Absorption II 4:00, Regeneration II 0:45) ||
+|-
+| {{ItemLink|Golden Carrot}} || {{EffectLink|Night Vision}} || {{ItemLink|Steamed Golden Carrots}} (1:00) || {{ItemLink|Golden Pickled Carrots}} (10:00) || {{ItemLink|Golden Carrot Cupcake}} (20:00) ||
+|}
+
+== Oven meals ==
+There are five oven meals. Each is crafted as a [[stock]] and cooked for 15 seconds, heals {{Hp|20}} and gives the strongest version of its effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref>
+
+{| class="wikitable"
+! Meal !! Stock !! Intrinsic ingredients in the stock !! Effect
+|-
+| {{ItemLink|Green Curry}} || [[Green Curry Stock]] || — || {{EffectLink|Speed}} II (30:00)
+|-
+| {{ItemLink|Japanese Curry}} || [[Curry Stock]] || [[Carrot]] || {{EffectLink|Strength}} (30:00)
+|-
+| {{ItemLink|Paneer Makhani}} || [[Paneer Curry Stock]] || [[Tomatoes]] || {{EffectLink|Regeneration}} (10:00)
+|-
+| {{ItemLink|Tonkotsu Ramen}} || [[Ramen Stock]] || [[Dried Kelp|Kelp]] || {{EffectLink|Haste}} II (30:00)
+|-
+| {{ItemLink|Pumpkin Curry}} || [[Pumpkin Curry Stock]] || [[Baked Pumpkin]], [[carrot]] || {{EffectLink|Resistance}} (20:00)
+|}
+Unlike other dishes, the oven meals' effects are set per meal rather than by their ingredients: only pumpkin curry's effect matches an ingredient's intrinsic. Japanese curry contains carrots but gives Strength, paneer makhani contains tomatoes but gives Regeneration, and tonkotsu ramen contains kelp but gives Haste.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_curry.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.7-alpha|Preserves and meals now require the cooked ingredient (for example baked apples instead of apples).}}
+{{History line|1.12.1-alpha|Baked pumpkin's Resistance extended from 10 seconds to 30 seconds. Pad Thai's Night Vision extended from 5:00 to 10:00. Pickled warped fungus became throwable.}}
+}}
+
+== Trivia ==
+* The developer took the idea of predictable ingredient effects from ''The Legend of Zelda: Breath of the Wild''.<ref>{{Cite video|quote=Breath of the Wild had something similar. I love that game.}}</ref>
+* The developer's examples of planning with intrinsics: melons before a trip to [[Hell]], glow berries or carrots for caving, and chorus fruit for [[The End]].<ref>{{Cite video|quote=If they're planning a trip to hell, they'll want to find some melons first. If they're caving, they should probably grab some glow berries or carrots.}}</ref>
+
+== See also ==
+* [[Food]]
+* [[Ingredient]]
+* [[Cooking]]
+* [[Secret recipes]]
+* [[Effect]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]
+[[Category:Mechanics]]

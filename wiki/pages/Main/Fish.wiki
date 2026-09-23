@@ -1,0 +1,117 @@
+{{About|the list of fish items|the activity|Fishing}}
+'''Fish''' are the items caught by [[fishing]]. Matcha Flavoured has 47 of them: the four vanilla fish ([[cod]], [[salmon]], [[pufferfish]] and [[Tropical Fish|tropical fish]]) and 43 new ones. Each has a star rarity, is caught in one or two climates, cooks into a cooked fish and can be sold to the [[Fisherman]] for [[Obol]]s.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing}}</ref>
+
+Every new fish is a vanilla cod, salmon or pufferfish item with its own name and texture, so it cooks like that fish: small fish into [[Cooked Fish|cooked fish]], large fish into [[Cooked Large Fish|cooked large fish]], and puffers into [[Cooked Pufferfish|cooked pufferfish]]. Raw fish heal nothing.
+
+== List ==
+"Sells for" is the number of caught fish the Fisherman takes for 1 Obol, and the level he needs.
+{| class="wikitable sortable"
+! Fish !! Rarity !! Climates !! Cooks into !! Sells for
+|-
+| {{ItemLink|Alaska Blackfish}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Cold freshwater|Cold freshwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Anchovy}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Temperate saltwater|Temperate saltwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Arapaima}} || data-sort-value="4" | ⭐⭐⭐⭐ || [[Fishing#Tropical freshwater|Tropical freshwater]]<br />[[Fishing#Brackish water|Brackish water]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="1" | 1 (Master)
+|-
+| {{ItemLink|Armoured Catfish}} || data-sort-value="3" | ⭐⭐⭐☆ || [[Fishing#Tropical freshwater|Tropical freshwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="4" | 4 (Expert)
+|-
+| {{ItemLink|Bass}} || data-sort-value="4" | ⭐⭐⭐⭐ || [[Fishing#Temperate freshwater|Temperate freshwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="1" | 1 (Master)
+|-
+| {{ItemLink|Black Seabass}} || data-sort-value="2" | ⭐⭐☆☆ || [[Fishing#Cool saltwater|Cool saltwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="8" | 8 (Journeyman)
+|-
+| {{ItemLink|Blue Marlin}} || data-sort-value="4" | ⭐⭐⭐⭐ || [[Fishing#Temperate saltwater|Temperate saltwater]]<br />[[Fishing#Warm saltwater|Warm saltwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="1" | 1 (Master)
+|-
+| {{ItemLink|Bluegill}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Temperate freshwater|Temperate freshwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Bujurqui}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Tropical freshwater|Tropical freshwater]]<br />[[Fishing#Brackish water|Brackish water]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Carp}} || data-sort-value="2" | ⭐⭐☆☆ || [[Fishing#Temperate freshwater|Temperate freshwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="8" | 8 (Journeyman)
+|-
+| {{ItemLink|Catfish}} || data-sort-value="3" | ⭐⭐⭐☆ || [[Fishing#Temperate freshwater|Temperate freshwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="4" | 4 (Expert)
+|-
+| {{ItemLink|Cod}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Cold saltwater|Cold saltwater]]<br />[[Fishing#Cool saltwater|Cool saltwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Crappie}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Cool freshwater|Cool freshwater]]<br />[[Fishing#Temperate freshwater|Temperate freshwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Creaking Fish}} || data-sort-value="3" | ⭐⭐⭐☆ || [[Fishing#Special biomes|Pale Garden]] || {{ItemLink|Cooked Fish}} || data-sort-value="2" | 2 (Master)
+|-
+| {{ItemLink|Echo Eel}} || data-sort-value="4" | ⭐⭐⭐⭐ || [[Fishing#Special biomes|Deep Dark]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="1" | 1 (Master)
+|-
+| {{ItemLink|European Eel}} || data-sort-value="4" | ⭐⭐⭐⭐ || [[Fishing#Arid freshwater|Arid freshwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="1" | 1 (Master)
+|-
+| {{ItemLink|Flounder}} || data-sort-value="3" | ⭐⭐⭐☆ || [[Fishing#Brackish water|Brackish water]]<br />[[Fishing#Warm saltwater|Warm saltwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="4" | 4 (Expert)
+|-
+| {{ItemLink|Flying Fish}} || data-sort-value="2" | ⭐⭐☆☆ || [[Fishing#Temperate saltwater|Temperate saltwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="8" | 8 (Journeyman)
+|-
+| {{ItemLink|Freshwater Puffer}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Arid freshwater|Arid freshwater]] || {{ItemLink|Cooked Pufferfish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Gar}} || data-sort-value="3" | ⭐⭐⭐☆ || [[Fishing#Cool freshwater|Cool freshwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="4" | 4 (Expert)
+|-
+| {{ItemLink|Guppy}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Tropical freshwater|Tropical freshwater]]<br />[[Fishing#Brackish water|Brackish water]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Gurnard}} || data-sort-value="2" | ⭐⭐☆☆ || [[Fishing#Warm saltwater|Warm saltwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="8" | 8 (Journeyman)
+|-
+| {{ItemLink|Herring}} || data-sort-value="2" | ⭐⭐☆☆ || [[Fishing#Cold saltwater|Cold saltwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="8" | 8 (Journeyman)
+|-
+| {{ItemLink|Humpback Whitefish}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Cold freshwater|Cold freshwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Lamprey}} || data-sort-value="2" | ⭐⭐☆☆ || [[Fishing#Arid freshwater|Arid freshwater]]<br />[[Fishing#Brackish water|Brackish water]] || {{ItemLink|Cooked Fish}} || data-sort-value="8" | 8 (Journeyman)
+|-
+| {{ItemLink|Mahi mahi}} || data-sort-value="2" | ⭐⭐☆☆ || [[Fishing#Hot saltwater|Hot saltwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="8" | 8 (Journeyman)
+|-
+| {{ItemLink|Mediterranean Killifish}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Arid freshwater|Arid freshwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Monkfish}} || data-sort-value="3" | ⭐⭐⭐☆ || [[Fishing#Cool saltwater|Cool saltwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="4" | 4 (Expert)
+|-
+| {{ItemLink|Muskellunge}} || data-sort-value="4" | ⭐⭐⭐⭐ || [[Fishing#Cool freshwater|Cool freshwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="1" | 1 (Master)
+|-
+| {{ItemLink|Northern Pike}} || data-sort-value="3" | ⭐⭐⭐☆ || [[Fishing#Cold freshwater|Cold freshwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="4" | 4 (Expert)
+|-
+| {{ItemLink|Oarfish}} || data-sort-value="4" | ⭐⭐⭐⭐ || [[Fishing#Hot saltwater|Hot saltwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="1" | 1 (Master)
+|-
+| {{ItemLink|Opah}} || data-sort-value="4" | ⭐⭐⭐⭐ || [[Fishing#Cool saltwater|Cool saltwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="1" | 1 (Master)
+|-
+| {{ItemLink|Painted Moray}} || data-sort-value="3" | ⭐⭐⭐☆ || [[Fishing#Hot saltwater|Hot saltwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="4" | 4 (Expert)
+|-
+| {{ItemLink|Piranha}} || data-sort-value="2" | ⭐⭐☆☆ || [[Fishing#Tropical freshwater|Tropical freshwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="8" | 8 (Journeyman)
+|-
+| {{ItemLink|Pufferfish}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Hot saltwater|Hot saltwater]] || {{ItemLink|Cooked Pufferfish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Rainbow Wrasse}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Warm saltwater|Warm saltwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Salmon}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Cold saltwater|Cold saltwater]]<br />[[Fishing#Cool saltwater|Cool saltwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Shad}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Temperate saltwater|Temperate saltwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Siberian Sturgeon}} || data-sort-value="4" | ⭐⭐⭐⭐ || [[Fishing#Cold freshwater|Cold freshwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="1" | 1 (Master)
+|-
+| {{ItemLink|Skate}} || data-sort-value="4" | ⭐⭐⭐⭐ || [[Fishing#Cold saltwater|Cold saltwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="1" | 1 (Master)
+|-
+| {{ItemLink|Spoonhead Sculpin}} || data-sort-value="2" | ⭐⭐☆☆ || [[Fishing#Cold freshwater|Cold freshwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="8" | 8 (Journeyman)
+|-
+| {{ItemLink|Striped Perch}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Cool freshwater|Cool freshwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Sturgeon}} || data-sort-value="3" | ⭐⭐⭐☆ || [[Fishing#Temperate saltwater|Temperate saltwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="4" | 4 (Expert)
+|-
+| {{ItemLink|Tropical Fish}} || data-sort-value="1" | ⭐☆☆☆ || [[Fishing#Warm saltwater|Warm saltwater]]<br />[[Fishing#Hot saltwater|Hot saltwater]] || {{ItemLink|Cooked Fish}} || data-sort-value="12" | 12 (Apprentice)
+|-
+| {{ItemLink|Tunisian Barb}} || data-sort-value="3" | ⭐⭐⭐☆ || [[Fishing#Arid freshwater|Arid freshwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="4" | 4 (Expert)
+|-
+| {{ItemLink|Walleye}} || data-sort-value="2" | ⭐⭐☆☆ || [[Fishing#Cool freshwater|Cool freshwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="8" | 8 (Journeyman)
+|-
+| {{ItemLink|Wolffish}} || data-sort-value="3" | ⭐⭐⭐☆ || [[Fishing#Cold saltwater|Cold saltwater]] || {{ItemLink|Cooked Large Fish}} || data-sort-value="4" | 4 (Expert)
+|}
+
+Catching all 47 grants the challenge '''No More Fish in the Sea''' (10 Obols).<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/catch_everything.json}}</ref> [[Axolotl]]s, [[Frog]]s and [[Tadpole]]s can also be fished up, but they are [[fishing junk]], not fish.
+
+== See also ==
+* [[Fishing]]
+* [[Angler's Almanac]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox fishing}}
+[[Category:Fish]]
+[[Category:Fishing]]

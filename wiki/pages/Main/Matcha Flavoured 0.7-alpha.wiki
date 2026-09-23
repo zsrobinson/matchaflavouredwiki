@@ -1,0 +1,45 @@
+{{Meta version infobox
+|version=0.7-alpha
+|name=Food System Polish & Bug Fixes
+|type=Alpha
+|date=July 20, 2026
+|files=<code>Matcha_Flavoured.zip</code>
+|prev=0.6-alpha
+|next=1.0
+}}
+'''Matcha Flavoured 0.7-alpha''', "Food System Polish & Bug Fixes", is the last alpha before [[Matcha Flavoured 1.0|1.0]], published on July 20, 2026. It reworked many recipes so that complex [[food]]s use the cooked form of their ingredient, and renamed every "Nether" item to "Hell".<ref>{{Cite changelog|0.7-alpha}}</ref>
+
+Late in development, the developer changed complex foods to use the cooked ingredients from the simple dishes. Some custom foods were spawn eggs, which cannot be made edible even without entity data, so many items had to be moved to other base items. The developer then decided not to add more food ingredients "until Mojang allows us to just add our own items and blocks with datapacks".
+
+== Additions ==
+* A title screen, panorama and splash texts.
+* Six new secret foods. See [[Secret recipes]].
+* [[Flour]] and the [[Bag of Flour|bag of flour]].
+* [[Braised Mushroom|Braised mushrooms]], [[Stroganoff|stroganoff]] and pickled mushrooms.
+* [[Braised Toadstool|Braised toadstools]], [[Toadstool Stroganoff|toadstool stroganoff]] and [[Pickled Toadstools|pickled toadstools]].
+* New item textures for crimson, warped, red and brown mushrooms.
+* [[Crimson Fungus|Crimson]] and [[Warped Fungus|warped fungus]] can be made into red and cyan dye.
+* Cakes heal when eaten, and the cake recipe changed.
+
+== Changes ==
+* Buffed all French toasts.
+* The glow berry, sweet berry, apple, pumpkin, popped chorus and chocolate recipes use the cooked ingredient. For example, apples are baked before they are canned, and pumpkin is baked before it goes into an empanada.
+* The hot buttered apple became the [[Baked Apple|baked apple]], with a new texture.
+* New steamed carrot texture.
+* Bread cleanses harmful effects. See [[Cleanse]].
+* [[Dough]] can no longer be eaten.
+
+== Fixes ==
+* Removed every mushroom stew, suspicious stew and pumpkin pie recipe.
+* Dough and bread unlock the right recipes.
+* Everything called "Nether" is renamed "Hell". See [[Hell]].
+* All foods show their effect icon when eaten.
+* Dried kelp can be crafted into blocks and back without losing its properties.
+* Updated the "Preserve Everything" and "Cook Food" [[Advancements|advancements]].
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Alpha versions]]

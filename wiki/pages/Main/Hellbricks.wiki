@@ -1,0 +1,47 @@
+{{Vanilla|Nether Bricks}}
+{{Infobox auto}}
+'''Hellbricks''' are a dark brick block from [[Hell]]. They are the vanilla {{MCW|Nether Bricks|nether bricks}} under a new name, with a near-black texture. The family also includes [[#Variants|cracked, chiseled and red hellbricks]] and the slabs, stairs, walls and fence of the vanilla set.
+
+== Obtaining ==
+=== Cooking and crafting ===
+{{Recipes}}
+Hellbricks can be made two ways:
+* Four [[Hellbrick|hellbrick]] items in a square, as in vanilla.
+* By cooking one [[hellstone]] in an [[oven]] for 10 seconds. This gives a full block from a single hellstone, where the crafting route needs four blast-furnace hellbricks.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/nether_bricks_from_smelting_netherrack.json}}</ref>
+
+=== Natural generation ===
+[[Nether Fortress|Nether fortresses]] are built from hellbricks, hellbrick fences and stairs, because the blocks keep their vanilla IDs.
+
+== Usage ==
+{{Uses}}
+
+== Variants ==
+=== Cracked Hellbricks ===
+Cracked hellbricks are made by cooking hellbricks in a [[Blast Furnace|blast furnace]] (5 seconds). The vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/cracked_nether_bricks.json}}</ref>
+{{Recipes|Cracked Hellbricks}}
+
+=== Chiseled Hellbricks ===
+Chiseled hellbricks can only be made in a [[stonecutter]]. The vanilla recipe from two slabs is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+{{Recipes|Chiseled Hellbricks}}
+
+=== Red Hellbricks ===
+Red hellbricks are made from two [[Hellbrick|hellbricks]] and two [[hellspore]], as in vanilla.
+{{Recipes|Red Hellbricks}}
+
+=== Slabs, stairs, walls and fence ===
+Hellbricks and red hellbricks each have a slab, stairs and a wall, and hellbricks also have a fence. A stonecutter cuts one block of hellbricks into 3 hellbrick fences.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/nether_brick_fence_from_stonecutting_nether_bricks.json}}</ref> Two slabs of either kind craft back into the full block.
+
+== History ==
+{{History
+|{{History line|0.6-alpha|Hellbrick textures were revised.}}
+{{History line|0.7-alpha|Nether bricks were renamed hellbricks.}}
+{{History line|1.12.1-alpha|Recipe unlocks for hellbricks were fixed.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Building blocks]]
+[[Category:Renamed items]]

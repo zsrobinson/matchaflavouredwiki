@@ -1,0 +1,32 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Bundle]]
+| [[String]] +<br />[[Tattered Leather]]
+| {{Crafting|A1=String|A2=Tattered Leather|Output=Bundle}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bundle.json|matcha:crafting/bundle}}</small>
+|-
+| [[Item Frame]]
+| 4 × [[Stick]] +<br />[[Tattered Leather]]
+| {{Crafting|A2=Stick|B1=Stick|B2=Tattered Leather|B3=Stick|C2=Stick|Output=Item Frame}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/item_frame.json|matcha:crafting/item_frame}}</small>
+|-
+| [[Leather Boots]]
+| 4 × [[Tattered Leather]]
+| {{Crafting|A1=Tattered Leather|A2=Tattered Leather|C1=Tattered Leather|C2=Tattered Leather|Output=Leather Boots}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/leather_boots.json|matcha:crafting/leather_boots}}</small>
+|-
+| [[Leather Pauldron]]
+| 8 × [[Tattered Leather]]
+| {{Crafting|A1=Tattered Leather|A2=Tattered Leather|A3=Tattered Leather|B2=Tattered Leather|B3=Tattered Leather|C1=Tattered Leather|C2=Tattered Leather|C3=Tattered Leather|Output=Leather Pauldron}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/leather_chestplate.json|matcha:crafting/leather_chestplate}}</small>
+|-
+| [[Leather Hood]]
+| 5 × [[Tattered Leather]]
+| {{Crafting|A1=Tattered Leather|A2=Tattered Leather|B1=Tattered Leather|C1=Tattered Leather|C2=Tattered Leather|Output=Leather Hood}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/leather_helmet.json|matcha:crafting/leather_helmet}}</small>
+|-
+| [[Leather Pants]]
+| 7 × [[Tattered Leather]]
+| {{Crafting|A1=Tattered Leather|A2=Tattered Leather|A3=Tattered Leather|B1=Tattered Leather|C1=Tattered Leather|C2=Tattered Leather|C3=Tattered Leather|Output=Leather Pants}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/leather_pants.json|matcha:crafting/leather_pants}}</small>
+|-
+| [[Sturdy Leather]] <small>(vanilla recipe)</small>
+| 4 × [[Tattered Leather]]
+| {{Crafting|A1=Tattered Leather|A2=Tattered Leather|B1=Tattered Leather|B2=Tattered Leather|Output=Sturdy Leather}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,42 @@
+{{Infobox auto
+|intrinsics=[[Smite]] III<br />{{G|Warding}} 1
+|renewable=Yes
+}}
+The '''silver sword''' is an [[Iron equipment|iron sword]] inlaid with silver and fitted with a [[Nazar]]. It combines [[Smite]] III with {{G|Warding}} 1, making it a weapon built against the undead.
+
+== Obtaining ==
+=== Smithing ===
+{{Recipes}}
+[[Silver Bullion]] serves as the smithing template. Silver is found mainly in mountains and [[Abbey]]s. Enchantments already on the iron sword are kept; where the old sword and the silver sword share an enchantment, the higher level is used (see [[Set bonus#Intrinsic enchantments|intrinsic enchantments]]).<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/select_higher_level.mcfunction}}</ref>
+
+== Usage ==
+=== Weapon ===
+The silver sword deals {{Hp|6}} of damage with an attack speed of 1.6 and has 400 durability, one more point of damage than the [[Warding Sword]] but less durability. Its [[Smite]] III adds damage against undead mobs.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/silver_sword.json}}</ref>
+
+=== Warding ===
+Held in either hand, the sword gives {{G|Warding}} 1, the same as the warding sword, and stacks with warding in the other hand up to {{G|Warding}} 3. See [[Warding]].
+
+=== Repairing ===
+The silver sword can only be repaired with a [[Nazar]] or a {{MCW|Block of Lapis Lazuli|block of lapis lazuli}}.
+
+== Advancements ==
+Smithing the silver sword grants ''Sabbatarian'' ("Affix a Nazar to an Iron Sword inlaid with Silver in a Smithing Table") in the [[Advancements/Tutorial|Tutorial]] tab, which rewards an [[Obol]].<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/smith_silver_sword.json}}</ref> Collecting silver grants ''The Warding Metal'': "Silver, a once-common Apotropaic Metal is found most commonly in Mountains. Most deposits are now harboured in Abbeys."
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Added the silver sword.}}
+{{History line|1.03|The silver sword was nerfed.}}
+{{History line|1.12.1-alpha|The silver sword can now only be repaired with Nazars or lapis.}}
+{{History line|1.12.2|Warding from held items now stacks.}}
+}}
+
+== See also ==
+* [[Warding Sword]]
+* [[Warding Shield]]
+* [[Silver Bullion]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Weapons]]

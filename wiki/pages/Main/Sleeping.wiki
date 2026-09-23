@@ -1,0 +1,58 @@
+{{Vanilla|Bed|Sleeping}}
+'''Sleeping''' in [[Matcha Flavoured]] uses the pack's own system instead of the vanilla night skip. Players can sleep at any time of day. Instead of jumping to morning, time speeds up while players are in bed, faster the larger the share of players asleep, until the sleepers wake: in the morning if they went to bed at night, or 12 hours later if they went to bed by day.
+
+== Mechanics ==
+=== Going to bed ===
+Beds in the Overworld can be used at any time, not only at night or during thunderstorms.<ref>{{Source|MF_datapack/data/minecraft/dimension_type/overworld.json}}</ref> The vanilla skip is disabled by setting the <code>players_sleeping_percentage</code> game rule to 200, which can never be reached.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref>
+
+When a player lies down, the pack works out how long they will sleep:<ref name="dur">{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/calculate_sleep_duration.mcfunction}}</ref>
+* If the time of day is between 36,000 and 69,000 (night, on the pack's [[Day and night|72,000-tick day]]), the player sleeps until the time reaches 72,000, the start of the next day.
+* At any other time, the player sleeps for 36,000 ticks, half a day ("12 hours").
+
+The vanilla "No amount of rest can pass this night" message is cleared, and every sleeping player sees how many players are asleep in the action bar, for example "1/2 players sleeping".<ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/on_player_sleep.mcfunction}}</ref>
+
+=== Passing time ===
+While at least one player is asleep, the time is advanced every tick by:<ref name="rate">{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/calculate_sleep_rate.mcfunction}}</ref>
+
+: ticks skipped per tick = 300 × (players sleeping ÷ players in the Overworld)²
+
+The result is rounded down. Each sleeping player's remaining sleep goes down by the same amount; when it runs out, they are woken up and the weather is set to clear.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/wake_sleeping_player.mcfunction}}</ref> The rate is recalculated whenever someone gets into or out of bed.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/tick_sleeping_player.mcfunction}}</ref>
+
+{| class="wikitable"
+! Players asleep !! Ticks skipped per tick !! Real time to sleep 12 hours (36,000 ticks)
+|-
+| All || 300 || 6 seconds
+|-
+| 3 of 4 || 168 || about 11 seconds
+|-
+| 1 of 2 || 75 || 24 seconds
+|-
+| 1 of 3 || 33 || about 55 seconds
+|-
+| 1 of 4 || 18 || 100 seconds
+|}
+
+A single player alone in the Overworld always sleeps at the full rate. In multiplayer, time still passes while only some players sleep, just more slowly, and players in [[Hell]] or the End count as neither sleeping nor awake.
+
+=== Weather ===
+Waking up at the end of a full sleep sets the [[weather]] to clear. Leaving the bed early does not.
+
+== History ==
+{{History|
+{{History line|1.10|Beds work on first load-in. Sleeping for any amount of time sets the weather to clear.}}
+{{History line|1.12.2|Dynamic multiplayer sleep: sleeping at night wakes the player in the morning, while sleeping in the day still skips 12 hours.}}
+}}
+
+== Trivia ==
+* The dynamic multiplayer sleep system was contributed by milo256.<ref>{{Cite changelog|1.12.2|quote=Sleeping at night will wake you up in morning, but sleeping in the day still skips 12 hours}}</ref>
+* The code notes that all of its numbers were multiplied by 3 to match the pack's longer day.<ref name="dur" />
+
+== See also ==
+* [[Day and night]]
+* [[Weather]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mechanics]]

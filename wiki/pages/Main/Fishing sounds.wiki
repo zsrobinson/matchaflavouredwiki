@@ -1,0 +1,46 @@
+'''Fishing sounds''' are custom sounds that play when a catch is reeled in. The sound depends on what was caught. They were made by the community contributor Imtlx.<ref>{{Cite changelog|1.12.1-alpha|quote=Fishing different items gives different sounds! (Made by Imtlx!)}}</ref>
+
+== Mechanics ==
+Each sound is an advancement with a <code>fishing_rod_hooked</code> trigger. Its reward function plays the sound to that player alone and revokes the advancement so it can fire again.<ref>{{Source|MF_datapack/data/matcha/function/sound_fx/1_star.mcfunction}}</ref> The sounds use the '''Jukebox/Note Blocks''' volume slider.
+
+{| class="wikitable"
+! Sound !! Subtitle !! Caught items
+|-
+| <code>matcha:fishing.1_star</code> || Caught a ⭐☆☆☆ fish || All ⭐☆☆☆ fish
+|-
+| <code>matcha:fishing.2_star</code> || Caught a ⭐⭐☆☆ fish || All ⭐⭐☆☆ fish
+|-
+| <code>matcha:fishing.3_star</code> || Caught a ⭐⭐⭐☆ fish || ⭐⭐⭐☆ fish except the [[Creaking Fish]]
+|-
+| <code>matcha:fishing.4_star</code> || Caught a ⭐⭐⭐⭐ fish || All ⭐⭐⭐⭐ fish and the Creaking Fish
+|-
+| <code>matcha:fishing.junk</code> || Caught junk || Lily pad, leather, water bottle, Estus Ash, stick, string, ink sac, bamboo, sculk vein, echo shard, pale hanging moss, resin clump
+|-
+| <code>matcha:fishing.treasure</code> || Caught treasure || Obol, fishing rod, goat horn, angler pottery sherd, chest, Crystal Heart (see below)
+|-
+| <code>matcha:fishing.fish_bones</code> || Caught fish bones || [[Fish Bones]] (any bone)
+|-
+| <code>matcha:fishing.axolotl</code> || Caught an axolotl || [[Axolotl]]
+|-
+| <code>matcha:fishing.frog</code> || Caught a frog || [[Frog]], [[Tadpole]]
+|-
+| <code>matcha:fishing.nautilus_shell</code> || Caught a nautilus shell || Nautilus shell
+|-
+| <code>matcha:fishing.enchanted_book</code> || Caught a Hell-Bound Book || [[Hell-Bound Book]]
+|}
+Sulfur Chunks from Sulfur Caves have no sound.<ref>{{Source|MF_datapack/data/matcha/advancement/fishing_sounds/junk.json}}</ref>
+
+=== Bugs ===
+The treasure sound checks the Crystal Heart for the item model <code>matcha:crystal_heart</code>, but fished Crystal Hearts use <code>matcha:heart_container</code>. A fished Crystal Heart therefore plays no sound.<ref>{{Source|MF_datapack/data/matcha/advancement/fishing_sounds/treasure.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/crystal_heart.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Added.}}
+}}
+
+== References ==
+{{Reflist}}
+
+{{Navbox fishing}}
+[[Category:Fishing]]
+[[Category:Sounds]]

@@ -70,7 +70,7 @@ def glyph_text(s):
             out.append('⟦%s⟧' % GLYPHS.get(ch, 'U+%04X' % ord(ch)))
         else:
             out.append(ch)
-    return strip_codes(''.join(out)).strip()
+    return strip_codes(''.join(out))
 
 
 def render_text(comp):
@@ -134,7 +134,7 @@ def stack_name(stack):
     comps = stack.get('components', {}) or {}
     for key in ('minecraft:custom_name', 'minecraft:item_name'):
         if key in comps:
-            return render_text(comps[key])
+            return render_text(comps[key]).strip()
     return vname(stack['id'])
 
 
@@ -162,7 +162,7 @@ def summarise_components(comps):
     for k, v in comps.items():
         k2 = k.split(':')[-1]
         if k2 == 'lore':
-            s['lore'] = [render_text(x) for x in v]
+            s['lore'] = [render_text(x).strip() for x in v]
         elif k2 in ('item_name', 'custom_name'):
             continue
         else:
@@ -469,9 +469,8 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'advancement', '**', '*.json'), 
            'criteria_raw': d.get('criteria'), 'rewards': d.get('rewards'), 'requirements': d.get('requirements')}
     if disp:
         icon = disp.get('icon', {})
-        if icon:
-            register(icon, rel(f), 'advancement_icon')
-        rec.update({'title': render_text(disp.get('title')), 'description': render_text(disp.get('description')),
+        # icons are display-only: don't register them (they would add foreign models to items)
+        rec.update({'title': render_text(disp.get('title')).strip(), 'description': render_text(disp.get('description')).strip(),
                     'frame': disp.get('frame', 'task'), 'hidden': disp.get('hidden', False),
                     'show_toast': disp.get('show_toast', True), 'announce': disp.get('announce_to_chat', True),
                     'icon': display_stack(icon) if icon else None, 'background': disp.get('background')})

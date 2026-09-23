@@ -1,0 +1,166 @@
+{{Meta version infobox
+|version=1.10
+|name=Abbey, Multiplayer and Update Support
+|type=Release
+|date=August 10, 2026
+|files=<code>Matcha_Flavoured_1_10.zip</code>
+|prev=1.03
+|next=1.11
+}}
+'''Matcha Flavoured 1.10''', "Abbey, Multiplayer and Update Support", is the first major update after [[Matcha Flavoured 1.0|1.0]], published on August 10, 2026. It added the [[Abbey]] and [[Papal Outpost|papal outpost]], made mob behavior depend on [[difficulty]], added [[Multiplayer|multiplayer]] support and ways to carry worlds between versions, and brought back "true darkness".<ref>{{Cite changelog|1.10}}</ref>
+
+A version 1.04 had been published before this one and deleted, because it had too many bugs and multiplayer was badly broken. From 1.10 on, the release notes mark changes made in response to community feedback with 👥. These are noted as "(community request)" below.
+
+== Additions ==
+=== Structures ===
+{{Main|Abbey|Papal Outpost}}
+* '''The [[Abbey]]''', the developer's first custom structure (community request). It is meant to be "the bastion of the overworld": where bastions provide [[Adamant Scrap|adamant scrap]], abbeys provide [[Raw Silver|silver]]. Abbeys are uncommon, late-mid to late-game dungeons, and the [[Archaeologist|archaeologist]] sells maps to them. The notes recommend full diamond gear and good food, and advise against [[Steel equipment|steel]] armor because its blast resistance "makes the dungeon boring". An early build had made abbeys as rare as woodland mansions, and they were made more common before release.
+* '''The [[Papal Outpost|papal outpost]]''', a much more common structure that gives early access to a few [[Divine Fragment|divine fragments]] and [[Crystal Heart|crystal hearts]], plus potatoes and carrots. It registers as a pillager outpost.
+
+=== Gameplay ===
+* '''Difficulty support''' (community request). Each difficulty changes mob behavior, health and damage, and the change applies after relogging, restarting the server or running <code>/reload</code>. See [[Difficulty]].
+** Easy: essentially vanilla mob behavior, with weaker silverfish, spiders and skeletons.
+** Normal: fast but weak zombies, very tough husks, web-spinning spiders, skeletons with half health.
+** Hard: the original fast zombies, even tougher husks, web-spinning spiders, skeletons with a little more than half health.
+** Beating the [[Ender Dragon]] raises the world's difficulty. The player can change it back.
+* '''Zombies split into strikers and tanks'''. The developer argued that zombies were filling "both the tank and striker niche". [[Zombie]]s keep their speed but have less health, and [[husk]]s now spawn in every biome as slow, very strong tanks. Baby zombies have less health (community request).
+* '''[[Multiplayer]] support''', with fixes for crystal hearts, anvils and anvil experience, and amber earrings in multiplayer.
+* '''Player update support''' (see below).
+
+=== Items ===
+* [[Beacon Kindling|Beacon kindling]], which summons the [[Wandering Trader|wandering trader]] (community request, an idea credited to Josax).
+* The villager [[Amnestic|amnestic]], which resets a villager's trades so that they can change between versions.
+* The Tanakh and the Quran, with their villager trades for the [[Prayer of Exodus]] and the [[Prayer of The Prophet]]. See [[Sacred texts]].
+* The [[Shakudo Elytra|shakudo elytra]].
+* Five new foods: three [[Cheese Pizza|pizzas]] (cheese, mushroom and meat; community request), [[Kontomire-Dandelion Stew|kontomire stew]], [[Pad Thai|pad thai]] (community request, Josax) and one new secret food.
+* Weaponsmith trades (see below).
+* The Abbey and papal outpost maps from the archaeologist, with new map textures.
+
+=== Advancements ===
+* "Demonic Emissary" (community request), "A True Community" (community request), "Icarus' Folly" (community request), "A Miraculous Discovery!", "Archeologist in Training" and "Wings of Eros". See [[Advancements]].
+
+== Changes ==
+=== Equipment ===
+* Undead mobs wearing copper armor are immune to [[warding]]. The [[Warding Stone|warding stone]] and the electrum [[set bonus]] bypass this.
+* Warding stones target pillagers.
+* Buffed [[Electrum equipment|electrum]] and clarified its set bonus.
+* Buffed [[Shakudo equipment|shakudo]], which gained a new ability and per-piece bonuses. Shakudo became more expensive: 18 gold and 36 copper instead of 3 and 6.
+* Buffed [[Hepatizon equipment|hepatizon]], the [[Hepatizon Laurel|hepatizon laurel]] and the [[Hepatizon Elytra|hepatizon elytra]].
+* Slightly nerfed the [[Adamant equipment|adamant]] set bonus.
+* [[Crystal Heart|Crystal hearts]] cost 8 diamonds instead of 27, so that more players engage with the [[death]] system.
+* Buffed the [[Sturdy leather armor|sturdy leather]] gambeson to equal the gold chestplate (4 to 5 armor).
+* The [[Steel equipment|steel]] chestplate made consistent with the other steel armor.
+* [[Ofuda]] no longer stack, so that they are not all used at once in an anvil (community request).
+* Wooden pickaxes mine everything except the higher-tier ores, and their durability is 200 instead of 600.
+* Shovels and mattocks drop snowballs from snow (newly made tools only).
+* [[Anemos]] cannot be applied to a mace.
+* The anvil experience timer increased from 15 to 30 seconds, and the level cap from 50 to 100.
+* The traversal enchantment renamed "[[Trailblaze]]" in the language file (community request).
+
+=== Mobs ===
+* Withers can no longer be spawned in [[the End]].
+* [[Creeper]]s no longer spawn in forests, only underground (community request).
+* Zombie horses, skeleton horses and camel husks removed from warding targets (community request). Zombie horses are otherwise treated like other undead (community request).
+* Nautilus and zombie nautilus shell drops increased; zombie nautiluses drop more (community request).
+* [[Piglin|Piglin brute]] drops reduced.
+* Blazes no longer drop [[Raw Estus|raw Estus]], since they are not undead.
+* Zombie raw Estus drop chance reduced from about 50% to about 33%.
+* [[Husk]]s drop [[obol]]s about 10% of the time, compared with about 5% for zombies. Skeleton and bogged obol drops reduced to match other mobs.
+* The pale garden no longer spawns hostile mobs.
+
+=== Fishing ===
+* The [[fisherman]] needs fewer fish per trade (community request): 12 instead of 24 for one-star fish, 8 instead of 12 for two-star, 4 instead of 8 for three-star, and still 1 for four-star.
+* Echo eels and pale fish were buffed, since lakes do not generate in their biomes (community request).
+* Buried treasure, from chests and fishing alike, was heavily nerfed.
+* Fishing outside the designated biomes falls back to a junk pool at weight 85 instead of giving large amounts of loot.
+* Fishing treasure chests and hearts are rarer, and enchanted fishing rods more common.
+* The developer explained that fishing should reward players who enjoy it without forcing others to fish, and that new players should spend longer with copper before getting iron.
+
+=== World and blocks ===
+* "True darkness" returned to the overworld, because many players liked that it was scary (community request).
+* Monster rooms (dungeons) generate more often: the deep placement count rose from 4 to 8 and the normal one from 10 to 15.
+* The Avesta appears in desert well loot, and its chance in desert pyramids dropped from 50% to 33%.
+* The igloo was changed to reflect the absence of potions and to show off a secret recipe.
+* Nautilus shells can be found through archaeology.
+* Bastion treasure was nerfed.
+* Coal deposits drop more: 1–2 from stone, 2–4 from deepslate.
+* Respawn anchors work in the overworld.
+* Sleeping for any length of time sets the weather to clear (community request).
+* The [[Blast Furnace|blast furnace]] has a new interface.
+
+=== Recipes ===
+* [[Tinder]] can be made with bush, fern or short grass (community request).
+* Small and big dripleaf can be cloned (community request). All cloning recipes give 4 instead of 2.
+* Quartz can be kilned into glass (community request), and amethyst into tinted glass.
+* Rooted dirt can be made from hanging roots and dirt (community request).
+* The globe banner pattern can be crafted from a cornflower and paper (community request).
+* Malachite recipe output raised from 2 to 4.
+* Bookshelves are cheaper and drop fewer books (community request).
+* Buffed the Prayer of The Light recipe, nerfed the [[Prayer of Man]] recipe and changed the [[Prayer of Aeolus]] recipe.
+* Buffed egg-based dough (community request).
+* Tomato, melon, honey and carrot recipes unlock from the raw food, not only the cooked one (community request).
+* Every food except the curries cooks faster in the [[oven]].
+
+=== Other ===
+* Some enchantments are shown only as symbols. Bread, milk and honey ginger tea use a new, translatable "cleanse" symbol, so older copies do not stack with new ones.
+* The [[Wandering Trader|wandering trader]] can buy up to 6 music discs and sell up to 4 asylum seekers (community request), and pays more (5) for the "Creator" disc.
+* Fetishes can be traded with the archaeologist.
+* Raw Estus gives off fire and smoke particles, and fire and soul fire particle variants were added.
+* Several splash texts added, including "Check out Waxmuffin!", and some removed.
+* Some advancements were reordered.
+
+== Player update support ==
+The update added tools for players continuing a world from an older version:
+* The pack records which version each player last played. When a player joins on a newer version, their recipe unlock advancements are revoked, so obtaining a material again unlocks any new or changed recipes. See [[Updating items]].
+* The weaponsmith (grindstone villager) can melt down alloyed equipment into its components so it can be rebuilt with the new stats. Enchantments are not returned.
+* The [[Amnestic|amnestic]] resets a villager's trades so that existing villagers can gain new ones.
+
+== Fixes ==
+* Beds work on the first load of a world. The notes thank the community member who found the cause.
+* Snow works, and snowballs stack to 64.
+* The hot wet fishing climate had been overridden by hot dry.
+* Added missing names for the puerquito, pupusa, gnocchi and bruschetta.
+* The iron chain can be made from iron ingots in a [[stonecutter]].
+* Fixed the golden apple in bastion loot and the enchanted golden apple tooltip in ruined portals.
+* Added the stray loot table and trial chamber spawner loot tables. Trial chamber pot loot, which gave far too many obols, was nerfed.
+* Acacia and oak wood can be crafted.
+* The electrum advancement mentioned titanium instead of diamond.
+* Pickled potatoes no longer give Resistance.
+* Glow berry mash works, cake effects work, and cake has a proper tooltip.
+* Magma cubes drop magma blocks.
+* Water can no longer be placed inside [[Hell]].
+* The Alaska blackfish counted toward "Catch Everything!" only with a typo, now fixed.
+* Wind charges from [[Anemos]] count as owned by the player who fired them.
+* The opah can be traded with the fisherman.
+* Sweet berry mash is no longer in stronghold corridor chests.
+* Removed leftover recipes for old foods such as squid ink pasta and golden pie.
+* Fixed recipe unlocks for the glass bottle, tinted glass, spyglass, item frame, jukebox, gravel, [[Chemistry Stand|chemistry stand]], mass mud and concrete, tall grass, large fern, black dye, invisible item frame, puerquito, pupusa, phosphor, cheese, saddle and leather horse armor uncrafting, and [[Benzene|benzene]].
+
+== Removals ==
+* The enchanting table and vanilla enchanting. See [[Removed features]].
+* The vanilla fire charge recipe.
+* The [[Estus Flask|Estus flask]]. In [[Matcha Flavoured 1.12|1.12]] the developer reversed this decision; the flask was removed for good in [[Matcha Flavoured 1.12.2|1.12.2]].
+* Herobrine, according to the notes.
+
+== Language changes ==
+* Translation support for all advancements, the axolotl, the amnestic, explorer maps, the set bonus and shakudo regeneration texts, and more. The developer announced a shared translation spreadsheet.
+* "Palatinate" renamed "Shakudo" and "Bronze" renamed "Hepatizon", in the language file only, so that existing items would not break.
+* The "Prayer of God-King" displays as "Prayer of The Light", and the Prayer of Ahura Mazda became the "Prayer of The God-King".
+* "Uncraftable Potion" renamed "Water Bottle", and the turtle shell renamed "Turtle Shellmet".
+* Fixed the spellings of "Pearlescent", "Crystallised" and "Black Seabass".
+
+== Technical changes ==
+* Removed unused files, including old predicates, the player stepping sound and "initial stalking" functions, the old treasure fishing loot tables, the potions folder and the Estus flask advancement.
+* Mechanics reorganized into folders such as <code>function/mechanic/estus</code> and <code>function/mechanic/warding_stone</code>.
+* The gamerule <code>commandBlockOutput</code> is set to false.
+
+== Known issues ==
+* The notes acknowledge chain-based iron golem farms and say they were left in, since they do not melt golems. A future change might require steel.
+* Some players reported being able to eat crystal hearts, which the developer could not reproduce. Crystal hearts traded from villagers were made inedible in [[Matcha Flavoured 1.12|1.12]].
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Releases]]

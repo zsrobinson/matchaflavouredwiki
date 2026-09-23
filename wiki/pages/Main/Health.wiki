@@ -1,0 +1,77 @@
+{{Vanilla}}
+{{Infobox
+|title=Health
+|invimage=Crystal Heart
+|type=Mechanic
+}}
+'''Health''' in [[Matcha Flavoured]] works as in vanilla ''Minecraft'', except that it never regenerates on its own and the player's maximum health changes over the course of a world. Players start with 10 hearts ({{Hp|20}}), can raise this to 30 hearts with [[Crystal Heart|crystal hearts]], and lose maximum health when they [[death|die]].
+
+== Mechanics ==
+=== Maximum health ===
+The pack stores each player's maximum health in a scoreboard and sets the player's <code>max_health</code> attribute from it.<ref name="set">{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/set_max_hp.mcfunction}}</ref>
+
+{| class="wikitable"
+! Value !! Health !! Notes
+|-
+| Starting health || {{Hp|20}} || Taken from the player's attribute when they first join.<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/player_setup.mcfunction}}</ref>
+|-
+| Maximum || {{Hp|60}} || 30 hearts; crystal hearts can't be used beyond this.<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+|-
+| Floor on Easy || {{Hp|20}} || Death never lowers maximum health below 10 hearts.
+|-
+| Floor on Normal and Hard || {{Hp|20}} down to {{Hp|6}} || The player's ''minimum hearts'', lowered by progression. See [[Death#Minimum hearts]].
+|}
+
+* Each [[death]] lowers maximum health by 1 heart (2 on Hard).
+* Each [[Crystal Heart|crystal heart]] used raises it by 1 heart.
+* Staying withered for 8 seconds lowers it like a death; see [[Wither effect]].
+
+Temporary extra health from {{EffectLink|Health Boost}} and {{EffectLink|Absorption}} works as in vanilla and isn't counted.
+
+=== Healing ===
+{{Main|Natural regeneration}}
+The <code>natural_health_regeneration</code> game rule is turned off, so a full hunger bar never heals the player.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref> Health has to be restored actively:
+* [[Food]]: most of the pack's foods heal through {{MCW|Instant Health}} or {{EffectLink|Regeneration}} instead of restoring hunger. See [[Hunger]].
+* {{ItemLink|Raw Estus}}, dropped by undead mobs, heals the player when picked up.
+* A [[Warding Stone|warding stone]] heals players and other friends of villagers nearby.
+* Some equipment, such as [[Shakudo equipment]], restores health.
+* A [[Crystal Heart|crystal heart]], when used, sets health to 1 and then applies Regeneration XI for 3 seconds.
+
+=== Hunger ===
+{{Main|Hunger}}
+The hunger bar is hidden and held at a level where the player can always sprint. It has no effect on health.
+
+== Difficulty ==
+{| class="wikitable"
+! !! Peaceful !! Easy !! Normal !! Hard
+|-
+! Maximum health lost per death
+| {{Hp|2}} || {{Hp|2}} || {{Hp|2}} || {{Hp|4}}
+|-
+! Lowest maximum health after deaths
+| no floor || {{Hp|20}} || {{Hp|20}} to {{Hp|6}} || {{Hp|20}} to {{Hp|6}}
+|}
+<ref name="set" />
+
+== History ==
+{{History|
+{{History line|0.3-alpha|Heart containers replaced by crystal hearts; health system refined.}}
+{{History line|1.12.1-alpha|Maximum health can fall below 10 hearts on Normal and Hard. Hardcore-style heart textures added.}}
+{{History line|1.12.2|Minimum hearts tracked per player.}}
+}}
+
+== Trivia ==
+* The developer removed natural regeneration so that food takes over the role of potions: "You have to eat to heal and you're never given a limitation on sprinting."<ref>{{Cite video|quote=No hunger bar and no natural regeneration. You have to eat to heal and you're never given a limitation on sprinting.}}</ref>
+
+== See also ==
+* [[Death]]
+* [[Crystal Heart]]
+* [[Hunger]]
+* [[Natural regeneration]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mechanics]]
+[[Category:Health]]

@@ -1,0 +1,36 @@
+{{Vanilla|Nether Wart}}
+{{Infobox auto}}
+'''Hellspore''' is a fungus that grows on soul sand in [[Hell]]. It is the vanilla {{MCW|Nether Wart|nether wart}} under a new name. In Matcha Flavoured it grows wild in Hell's wastes and soul sand valleys, and its main use is making [[benzene]], one of the ingredients of the pack's [[Enchanting|magic]].
+
+== Obtaining ==
+=== Natural generation ===
+Besides the vanilla patches in [[Nether Fortress|nether fortresses]], the pack adds its own hellspore patches to the nether wastes and soul sand valley biomes.<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/nether_wart.json}}</ref> Each patch is a scatter of up to 16 hellspore plants on hellstone, soul sand or soul soil, with soul sand placed under every plant so that it can keep growing. The plants generate at random growth stages, usually young ones.<ref>{{Source|MF_datapack/data/matcha/worldgen/configured_feature/nether_wart.json}}</ref> A patch is attempted on each layer of terrain with a 1 in 8 chance.
+
+=== Chest loot ===
+{{Sources}}
+
+=== Farming ===
+Hellspore is planted on soul sand and harvested as in vanilla.
+
+== Usage ==
+{{Uses}}
+* '''Benzene''': a [[Glass Bottle|glass bottle]], three hellspore and a [[Sulfur Chunk|sulfur chunk]] make [[benzene]].<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/benzene.json}}</ref> Picking up hellspore unlocks the recipe.
+* '''Building''': nine hellspore make a [[#Hellspore Block|hellspore block]], and two hellspore with two [[Hellbrick|hellbricks]] make [[Hellbricks#Red Hellbricks|red hellbricks]].
+
+=== Hellspore Block ===
+{{Recipes|Hellspore Block}}
+The '''hellspore block''' is the vanilla {{MCW|Nether Wart Block|nether wart block}} under a new name. It generates in crimson forests as in vanilla.
+
+== History ==
+{{History
+|{{History line|0.7-alpha|Nether wart was renamed hellspore.}}
+{{History line|1.10|The benzene recipe unlocks when the player picks up benzene or hellspore.}}
+{{History line|1.12.1-alpha|Hellspore patches generate in nether wastes and soul sand valleys.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Plants]]
+[[Category:Renamed items]]

@@ -1,0 +1,48 @@
+{{Infobox
+|title=Magic protection
+|image=Glyph E043.png
+|imagesize=64px
+|type=[[Set bonus|Armor intrinsic]]
+|items=[[Shakudo equipment|Shakudo armor]], [[Shakudo Elytra]]
+|tooltip={{G|Magic protection}} 8<br />{{G|Magic protection}} 20
+|id=<code>matcha:magic_protection</code><br /><code>matcha:max_magic_protection</code>
+}}
+'''Magic protection''' ({{G|Magic protection}}) is an [[Set bonus|intrinsic]] of [[Shakudo equipment|shakudo armor]] that reduces damage from magic. It works like a stronger {{MCW|Protection}} enchantment that applies only to magic damage.
+
+== Mechanics ==
+Magic protection adds enchantment protection points against any damage in the <code>minecraft:is_magic</code> damage type tag, which the pack defines itself:<ref>{{Source|MF_datapack/data/matcha/enchantment/magic_protection.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/tags/damage_type/is_magic.json}}</ref>
+* <code>magic</code> and <code>indirect_magic</code>, such as {{MCW|Poison}} and Instant Damage from potions,
+* <code>dragon_breath</code>,
+* <code>bad_respawn_point</code>, the explosion of a bed or respawn anchor used in the wrong dimension,
+* <code>ender_pearl</code>, the damage from landing an ender pearl,
+* <code>sonic_boom</code>, the Warden's ranged attack. The Warden's sonic boom ignores enchantments in vanilla, so magic protection does nothing against it in practice.
+
+The points are added to those from Protection and the other protection enchantments. As in vanilla, each point reduces the damage by 4%, and the total is capped at 20 points (80%).
+{| class="wikitable"
+! Item !! Tooltip !! Points !! Reduction on its own
+|-
+| {{ItemLink|Shakudo Helmet}}, {{ItemLink|Shakudo Chestplate}}, {{ItemLink|Shakudo Leggings}}, {{ItemLink|Shakudo Boots}} || {{G|Magic protection}} 8 || 8 each || 32%
+|-
+| {{ItemLink|Shakudo Elytra}} || {{G|Magic protection}} 20 || 20 || 80%
+|}
+<ref>{{Source|MF_datapack/data/matcha/enchantment/max_magic_protection.json}}</ref>
+
+Two shakudo armor pieces give 16 points (64%), and three or more pieces, or the shakudo elytra alone, reach the 80% cap. The [[Wither effect]] deals its own damage type, not magic, so magic protection does not reduce it.
+
+Both versions count as armor protection enchantments, so they can't be combined with Protection, Fire Protection, Blast Protection or Projectile Protection on the same piece.<ref>{{Source|MF_datapack/data/matcha/enchantment/magic_protection.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.2|Intrinsics, including magic protection, received new tooltip glyphs.}}
+}}
+
+== See also ==
+* [[Cleanse]]
+* [[Shakudo equipment]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Mechanics]]
+[[Category:Intrinsics]]
