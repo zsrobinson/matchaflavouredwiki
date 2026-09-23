@@ -108,16 +108,23 @@ Title ↔ file name: the namespace is the folder, and a `/` in a title is writte
 
 The wiki is derived entirely from upstream sources, so a scheduled agent keeps it current:
 
-- `tools/check_upstream.py` compares three sources with `tools/upstream.json`: the pack's GitHub
-  commits, Modrinth releases and the developer's YouTube uploads. It exits `0` when nothing changed,
-  which is the usual case and takes seconds.
+- `tools/check_upstream.py` compares three sources with what the wiki was built from: the pack's GitHub
+  commits (against `tools/source.lock`), Modrinth releases and the developer's YouTube uploads (against
+  `tools/upstream.json`). It exits `0` when nothing changed, which is the usual case and takes seconds.
 - When something changed, the agent follows **[AUTOPILOT.md](AUTOPILOT.md)**:
   1. fetch the sources and transcripts;
   2. regenerate the data pages;
-  3. read the code diff, release notes and new transcripts;
-  4. update the written pages;
+  3. write the checklist with `tools/update_report.py`: every data change and every changed source file
+     the generator doesn't read, each with the hand-written pages that depend on it;
+  4. update the written pages, line by line, then have a second agent review them;
   5. open a pull request labelled `autopilot`;
   6. merge it once the **Check** workflow passes. **Build and deploy** then publishes the site.
+- Three safety nets catch what an agent could miss:
+  - `tools/extract.py` stops (exit 3) when the source uses a key, type or function it doesn't know,
+    instead of quietly dropping data, and when the vanilla data is for the wrong Minecraft version;
+  - `tools/lint_pages.py` (in the **Check** workflow) fails when a hand-written page describes an item
+    that no longer exists or cites a source file that is gone;
+  - `tools/dry_run.sh <branch>` rehearses a port to the next Minecraft version before it reaches `main`.
 - Video transcripts are primary sources and are kept in `sources/transcripts/` (the first design
   video is also `transcript.txt`). `tools/fetch_transcripts.py` adds new ones.
 

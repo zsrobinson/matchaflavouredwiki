@@ -21,6 +21,8 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Sweet berry bush <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/sweet_berry_bush.json|blocks/sweet_berry_bush}})</small> || 1 || 100% || block state property
+| Sweet berry bush <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/sweet_berry_bush.json|blocks/sweet_berry_bush}})</small> || 2–3 || 100% || block state property
+|-
+| Sweet berry bush <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/sweet_berry_bush.json|blocks/sweet_berry_bush}})</small> || 1–2 || 100% || block state property
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

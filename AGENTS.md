@@ -29,6 +29,7 @@ docker compose up -d                 # MediaWiki on :8080 (image built from site
 nohup tools/watch.sh > build/watch.log &   # dev server: imports changed pages every 5 s
 python3 tools/preview.py "Title"     # import + check specific pages (errors, red links, missing files)
 python3 tools/check_site.py          # every hand-written page; also flags unparsed [[..]] / {{..}}
+python3 tools/lint_pages.py          # no wiki needed: pages naming vanished items, dead {{Source}} paths
 tools/screenshot.sh "Title" out.png  # headless Chrome render; for dark mode or phone widths use Playwright
 python3 tools/export_static.py && npx wrangler dev   # the real static site on :8787
 ```
@@ -58,6 +59,11 @@ the swap mid-way.
 - **Pages have a 2 MB include limit.** Past it MediaWiki stops expanding templates and prints a bare `Template:…` link
   (crafting grids are the heavy part). `generate.py` drops the grids from recipe tables longer than `COMPACT_AFTER`,
   and `check_site.py` / `preview.py` flag unexpanded templates and missing images.
+
+- **The extractor fails on formats it doesn't know** (exit 3, `KNOWN` in `extract.py`). Before it did,
+  a format change dropped data silently: the 26.3 port renames loot `functions` to `modifier`, which
+  would have removed every drop count and condition, and custom items named by loot, with no error.
+  Handle new keys; list one in `KNOWN` only if the wiki really doesn't need it.
 
 - **The local wiki never deletes pages.** A page the generator stopped producing still exists locally,
   so local checks can pass while CI, which builds from scratch, finds broken links. Trust the PR check.

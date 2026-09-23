@@ -7,6 +7,9 @@ wiki needs: an item registry keyed by English display name, recipes, villager
 trades, loot tables, enchantments and advancements.
 
 Every generated wiki fact traces back to a file path recorded here as `src`.
+
+Exits 3 when the source uses a format this file doesn't know (see "format guard" below), or when the
+vanilla data is for a different Minecraft version than the pack. --allow-unknown reports and continues.
 """
 import glob
 import json
@@ -31,6 +34,87 @@ def load(path):
 
 def rel(path):
     return os.path.relpath(path, SRC)
+
+
+# ---------------------------------------------------------------- format guard
+# This file reads specific keys. When the pack or a new Minecraft version changes a file format
+# (26.3 renames loot "functions" to "modifier" and "conditions" to "condition"), the new keys would be
+# skipped without a word and the wiki would quietly lose drop counts, conditions and item identities.
+# So every key, type and function name read below is checked against this list of what the extractor
+# knows. Anything new fails the run (exit 3). Handle it, or add it here if it really doesn't matter.
+KNOWN = {
+    'loot table': {'type', 'pools', 'random_sequence', 'functions'},
+    'loot pool': {'rolls', 'bonus_rolls', 'entries', 'conditions', 'functions'},
+    'loot entry': {'type', 'name', 'weight', 'quality', 'functions', 'conditions', 'children', 'value', 'expand',
+                   ''},  # '': a stray empty key in the pack's redstone_ore.json
+    'loot entry type': {'minecraft:item', 'minecraft:loot_table', 'minecraft:empty', 'minecraft:alternatives',
+                        'minecraft:group', 'minecraft:sequence', 'minecraft:tag', 'minecraft:dynamic'},
+    # functions the wiki doesn't show (enchanting, damage, map decorations) are known and ignored
+    'loot function': {'minecraft:set_count', 'minecraft:set_components', 'minecraft:set_name', 'minecraft:set_lore',
+                      'minecraft:set_potion', 'minecraft:enchant_with_levels', 'minecraft:enchant_randomly',
+                      'minecraft:exploration_map', 'minecraft:set_damage', 'minecraft:set_ominous_bottle_amplifier',
+                      'minecraft:set_instrument', 'minecraft:set_contents', 'minecraft:apply_bonus',
+                      'minecraft:explosion_decay', 'minecraft:set_enchantments', 'minecraft:limit_count',
+                      'minecraft:enchanted_count_increase', 'minecraft:furnace_smelt', 'minecraft:set_stew_effect',
+                      'minecraft:copy_components', 'minecraft:copy_state', 'minecraft:filtered', 'minecraft:discard'},
+    # generate.py: cond_notes() turns these into drop-table notes and chances
+    'condition': {'minecraft:location_check', 'minecraft:entity_properties', 'minecraft:block_state_property',
+                  'minecraft:match_tool', 'minecraft:survives_explosion', 'minecraft:random_chance',
+                  'minecraft:any_of', 'minecraft:all_of', 'minecraft:inverted', 'minecraft:table_bonus',
+                  'minecraft:killed_by_player', 'minecraft:random_chance_with_enchanted_bonus',
+                  'minecraft:damage_source_properties', 'minecraft:reference', 'minecraft:weather_check',
+                  'minecraft:time_check', 'minecraft:value_check', 'minecraft:entity_scores'},
+    'recipe type': {'minecraft:crafting_shaped', 'minecraft:crafting_shapeless', 'minecraft:smelting',
+                    'minecraft:smoking', 'minecraft:blasting', 'minecraft:campfire_cooking',
+                    'minecraft:stonecutting', 'minecraft:smithing_transform',
+                    # special recipes with no fixed output: not listed on the wiki
+                    'minecraft:crafting_dye', 'minecraft:crafting_imbue', 'minecraft:crafting_transmute',
+                    'minecraft:crafting_decorated_pot', 'minecraft:smithing_trim',
+                    'minecraft:crafting_special_bookcloning', 'minecraft:crafting_special_mapextending',
+                    'minecraft:crafting_special_firework_rocket', 'minecraft:crafting_special_shielddecoration',
+                    'minecraft:crafting_special_bannerduplicate', 'minecraft:crafting_special_firework_star',
+                    'minecraft:crafting_special_firework_star_fade', 'minecraft:crafting_special_repairitem'},
+    'recipe': {'type', 'category', 'group', 'result', 'show_notification', 'key', 'pattern', 'ingredients',
+               'ingredient', 'cookingtime', 'experience', 'template', 'base', 'addition'},
+    'item stack': {'id', 'count', 'components'},
+    # summarise_components() keeps these for the infoboxes, tooltips and tables
+    'component': {'minecraft:' + c for c in (
+        'attribute_modifiers', 'banner_patterns', 'block_state', 'blocks_attacks', 'bundle_contents', 'consumable',
+        'custom_data', 'custom_model_data', 'custom_name', 'damage', 'death_protection', 'enchantment_glint_override',
+        'enchantments', 'entity_data', 'equippable', 'food', 'instrument', 'item_model', 'item_name',
+        'jukebox_playable', 'lore', 'max_damage', 'max_stack_size', 'potion_contents', 'provides_trim_material',
+        'rarity', 'repairable', 'stored_enchantments', 'tool', 'tooltip_display', 'unbreakable', 'use_remainder')},
+    'villager trade': {'wants', 'additional_wants', 'gives', 'given_item_modifiers', 'max_uses', 'xp',
+                       'reputation_discount', 'price_multiplier', 'merchant_predicate'},
+    'trade set': {'amount', 'random_sequence', 'trades', 'allow_duplicates'},
+    'enchantment': {'description', 'max_level', 'weight', 'anvil_cost', 'slots', 'supported_items', 'primary_items',
+                    'exclusive_set', 'effects', 'min_cost', 'max_cost'},
+    'advancement': {'parent', 'criteria', 'display', 'requirements', 'rewards', 'sends_telemetry_event'},
+    'advancement display': {'title', 'description', 'icon', 'frame', 'hidden', 'announce_to_chat', 'show_toast',
+                            'background'},
+}
+UNKNOWN = defaultdict(set)  # (kind, key) -> files it was seen in
+
+
+def expect(kind, keys, src):
+    for k in keys:
+        if k not in KNOWN[kind]:
+            UNKNOWN[(kind, k)].add(src)
+
+
+def expect_conditions(conds, src):
+    for c in conds or []:
+        if not isinstance(c, dict) or 'condition' not in c:
+            UNKNOWN[('condition', 'without a "condition" key')].add(src)
+            continue
+        expect('condition', [norm_ns(c['condition'])], src)
+        expect_conditions(c.get('terms'), src)
+        if c.get('term'):
+            expect_conditions([c['term']], src)
+
+
+def norm_ns(i):
+    return i if ':' in i else 'minecraft:' + i
 
 
 # ---------------------------------------------------------------- language
@@ -311,8 +395,10 @@ def register(stack, src, how):
     """Record an item stack definition seen in the source."""
     if not isinstance(stack, dict) or 'id' not in stack:
         return None
+    expect('item stack', stack, src)
     sid = norm_id(stack['id'])
     comps = stack.get('components', {}) or {}
+    expect('component', (norm_ns(k.lstrip('!')) for k in comps), src)
     name, model = item_key(stack)
     key = variant_key(name, comps)
     rec = ITEMS.get(key)
@@ -445,12 +531,15 @@ def is_blocked(path_in_ns):
 
 def parse_recipe(d, src, origin):
     t = d.get('type')
+    expect('recipe type', [t], src)
+    if t in STATION:
+        expect('recipe', d, src)
     r = {'type': t, 'station': STATION.get(t, t), 'src': src, 'origin': origin, 'id': None}
     res = d.get('result')
     if isinstance(res, str):
         res = {'id': res}
-    if res is None:
-        return None
+    if res is None or (isinstance(res, dict) and 'id' not in res):
+        return None  # special recipes (26.3's smithing_trim has an empty result)
     r['output'] = display_stack(res)
     register(res, src, 'recipe')
     if t == 'minecraft:crafting_shaped':
@@ -505,6 +594,12 @@ BLOCKED_RECIPES = sorted(b[len('recipe/'):-5] for b in BLOCKED if b.startswith('
 # ---------------------------------------------------------------- loot tables
 def walk_entries(entries, pool_ctx, out, src):
     for e in entries:
+        expect('loot entry', e, src)
+        expect('loot entry type', [norm_ns(e.get('type', ''))], src)
+        expect('loot function', (norm_ns(fn.get('function', '')) for fn in e.get('functions', [])), src)
+        for fn in e.get('functions', []):
+            expect_conditions(fn.get('conditions'), src)
+        expect_conditions(e.get('conditions'), src)
         t = e.get('type', '').split(':')[-1]
         if t == 'item':
             stack = {'id': e['name'], 'components': {}}
@@ -549,12 +644,24 @@ def walk_entries(entries, pool_ctx, out, src):
 
 def parse_loot(d, src):
     out = []
+    expect('loot table', d, src)
+    expect('loot function', (norm_ns(fn.get('function', '')) for fn in d.get('functions', [])), src)
     for i, p in enumerate(d.get('pools', [])):
+        expect('loot pool', p, src)
+        expect('loot function', (norm_ns(fn.get('function', '')) for fn in p.get('functions', [])), src)
+        expect_conditions(p.get('conditions'), src)
         ents = p.get('entries', [])
         total = sum(e.get('weight', 1) for e in ents)
         ctx = {'pool': i, 'rolls': p.get('rolls', 1), 'bonus_rolls': p.get('bonus_rolls', 0),
                'pool_total_weight': total, 'pool_conditions': p.get('conditions')}
+        start = len(out)
         walk_entries(ents, ctx, out, src)
+        # a set_count on the pool applies to every item it yields (e.g. sweet berry bushes)
+        count = next((fn.get('count') for fn in p.get('functions', [])
+                      if fn.get('function', '').split(':')[-1] == 'set_count' and not fn.get('add')), None)
+        for e in out[start:]:
+            if count is not None and ('item' in e or 'loot_table' in e) and e.get('count') is None:
+                e['count'] = count
     return out
 
 
@@ -583,6 +690,7 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
     prof = os.path.basename(os.path.dirname(f))
     level = os.path.basename(f)[:-5]
     d = load(f)
+    expect('trade set', d, rel(f))
     tag = d.get('trades', '')
     ids = []
     if isinstance(tag, str) and tag.startswith('#'):
@@ -598,7 +706,10 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
         if not os.path.exists(tfile):
             continue
         t = load(tfile)
+        expect('villager trade', t, rel(tfile))
         mods = t.get('given_item_modifiers') or []
+        expect('loot function', (norm_ns(m.get('function', '')) for m in mods), rel(tfile))
+        expect_conditions([t['merchant_predicate']] if t.get('merchant_predicate') else [], rel(tfile))
         if any(m.get('function', '').split(':')[-1] == 'discard' for m in mods):
             continue  # placeholder trade the game throws away (levels with no real trades)
         for m in mods:
@@ -629,6 +740,7 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'enchantment', '*.json'))):
     ns = os.path.relpath(f, DP).split(os.sep)[0]
     eid = ns + ':' + os.path.basename(f)[:-5]
     d = load(f)
+    expect('enchantment', d, rel(f))
     van = os.path.join(VDATA, 'enchantment', os.path.basename(f))
     ENCH[eid] = {'id': eid, 'src': rel(f), 'name': render_text(d.get('description')),
                  'max_level': d.get('max_level'), 'weight': d.get('weight'), 'anvil_cost': d.get('anvil_cost'),
@@ -643,6 +755,8 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'advancement', '**', '*.json'), 
     ns = os.path.relpath(f, DP).split(os.sep)[0]
     aid = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'advancement'))[:-5]
     d = load(f)
+    expect('advancement', d, rel(f))
+    expect('advancement display', d.get('display') or {}, rel(f))
     disp = d.get('display')
     rec = {'id': aid, 'src': rel(f), 'parent': d.get('parent'), 'criteria': list(d.get('criteria', {}).keys()),
            'criteria_raw': d.get('criteria'), 'rewards': d.get('rewards'), 'requirements': d.get('requirements')}
@@ -786,3 +900,25 @@ with open(OUT, 'w', encoding='utf-8') as f:
 print('items', len(ITEMS), 'recipes', len(RECIPES), 'vanilla kept', len(VANILLA_RECIPES_KEPT),
       'loot', len(LOOT), 'enchantments', len(ENCH), 'advancements', len(ADV), 'functions', len(FUNCTIONS),
       'no icon', sum(1 for i in ITEMS.values() if not i['icon']), file=sys.stderr)
+
+# ---------------------------------------------------------------- is the input what this file understands?
+problems = []
+# the vanilla data must be the Minecraft version the pack is written for (tools/mc_version.txt)
+vanilla_version = load(os.path.join(ROOT, 'source', 'vanilla-data', 'version.json'))
+vanilla_format = [vanilla_version['data_pack_version'] + vanilla_version.get('data_pack_version_minor', 0) / 10]
+pack_min, pack_max = pack_meta['pack'].get('min_format'), pack_meta['pack'].get('max_format')
+if pack_min and not (pack_min <= vanilla_format <= (pack_max or pack_min)):
+    problems.append('The pack targets data pack format %s-%s ("%s"), but source/vanilla-data is Minecraft %s '
+                    '(format %s). Put the pack\'s Minecraft version in tools/mc_version.txt and rerun '
+                    'tools/fetch_sources.sh.' % (pack_min, pack_max, version_text.strip().splitlines()[-1],
+                                                 vanilla_version['id'], vanilla_format))
+if UNKNOWN:
+    problems.append('The source uses keys, types or functions this extractor has never seen. It would skip '
+                    'them silently, so handle each one (or list it in KNOWN if it really doesn\'t matter):')
+    for (kind, key), files in sorted(UNKNOWN.items()):
+        ex = sorted(files)
+        problems.append('  %-20s %-40r in %d file(s), e.g. %s' % (kind, key, len(ex), ex[0]))
+if problems:
+    print('\n'.join(['', 'extract.py: the source format changed.'] + problems), file=sys.stderr)
+    if '--allow-unknown' not in sys.argv:  # still wrote data.json, for inspection
+        sys.exit(3)
