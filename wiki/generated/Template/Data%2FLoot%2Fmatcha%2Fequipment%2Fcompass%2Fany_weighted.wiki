@@ -1,0 +1,11 @@
+<includeonly><small>Loot table <code>matcha:equipment/compass/any_weighted</code> ({{Source|MF_datapack/data/matcha/loot_table/equipment/compass/any_weighted.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Copper Compass}} || 1 || 60.0% || 60.0% || 
+|-
+| {{ItemLink|Golden Compass}} || 1 || 30.0% || 30.0% || 
+|-
+| {{ItemLink|Titanium Compass}} || 1 || 10.0% || 10.00% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

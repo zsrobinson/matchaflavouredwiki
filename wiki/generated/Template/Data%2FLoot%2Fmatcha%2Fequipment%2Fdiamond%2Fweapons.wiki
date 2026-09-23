@@ -1,0 +1,11 @@
+<includeonly><small>Loot table <code>matcha:equipment/diamond/weapons</code> ({{Source|MF_datapack/data/matcha/loot_table/equipment/diamond/weapons.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Diamond Sword}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Diamond Axe}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Diamond Spear}} || 1 || 33.3% || 33.3% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

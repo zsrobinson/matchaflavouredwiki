@@ -1327,7 +1327,9 @@ def main():
     for prof in TRADES:
         write('Template', 'Data/Trades/' + PROF.get(prof, prof.replace('_', ' ').title()), trades_page(prof)); n['trades'] += 1
     for lid in LOOT:
-        if loot_category(lid):
+        # every table gets a data page (articles may show any of them); only the Sources lists
+        # are limited to world sources by loot_category()
+        if True:
             p = loot_table_page(lid)
             if p:
                 write('Template', 'Data/Loot/' + lid.replace(':', '/'), p); n['loot'] += 1
