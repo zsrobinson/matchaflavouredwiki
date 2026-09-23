@@ -80,7 +80,8 @@ def check(title):
     for pat, label in ((r'class="(?:error|scribunto-error)[^"]*"[^>]*>(.*?)</', 'error'),
                        (r'Template loop detected', 'template loop'),
                        (r'Expansion depth limit', 'expansion depth'),
-                       (r'<a [^>]*title="(Template:[^"]+)"[^>]*>Template:', 'template not expanded (include size limit?)')):
+                       (r'<a [^>]*title="(Template:[^"]+)"[^>]*>Template:' if not title.startswith(('Template:', 'Category:')) else r'(?!)',
+                        'template not expanded (include size limit?)')):
         for m in re.finditer(pat, body):
             problems.append('%s: %s' % (label, html.unescape(re.sub('<[^>]+>', '', m.group(1) if m.groups() else m.group(0)))[:160]))
     red = sorted(set(html.unescape(m) for m in re.findall(r'class="new" title="([^"]+) \(page does not exist\)"', body)))

@@ -34,7 +34,9 @@ def render(title):
     if 'Template loop detected' in body:
         errs.append('template loop')
     # past the 2 MB include limit MediaWiki stops expanding templates and prints a bare link instead
-    for m in re.findall(r'<a [^>]*title="(Template:[^"]+)"[^>]*>Template:', body)[:3]:
+    # (category listings and template docs link templates by name on purpose)
+    unexpanded = [] if title.startswith(('Template:', 'Category:')) else re.findall(r'<a [^>]*title="(Template:[^"]+)"[^>]*>Template:', body)
+    for m in unexpanded[:3]:
         errs.append('template not expanded (include size limit?): ' + html.unescape(m))
     # wikitext that failed to parse shows up as literal brackets (e.g. an image inside a link label)
     visible = re.sub(r'<(script|style|code|pre)[^>]*>.*?</\1>', '', body, flags=re.S)
