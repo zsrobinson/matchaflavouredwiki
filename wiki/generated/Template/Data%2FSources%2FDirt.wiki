@@ -1,9 +1,22 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
+| Dirt <small>({{Source|vanilla:loot_table/blocks/dirt.json|blocks/dirt}})</small> || 1 || 100% || 
+|-
+| Dirt path <small>({{Source|vanilla:loot_table/blocks/dirt_path.json|blocks/dirt_path}})</small> || 1 || 100% || 
+|-
+| Farmland <small>({{Source|vanilla:loot_table/blocks/farmland.json|blocks/farmland}})</small> || 1 || 100% || 
+|-
+| Grass block <small>({{Source|vanilla:loot_table/blocks/grass_block.json|blocks/grass_block}})</small> || 1 || 50.0% || 
+|-
 | Gravel <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/gravel.json|blocks/gravel}})</small> || 1 || 100% || not Silk Touch
+|-
+| Mycelium <small>({{Source|vanilla:loot_table/blocks/mycelium.json|blocks/mycelium}})</small> || 1 || 50.0% || 
+|-
+| Podzol <small>({{Source|vanilla:loot_table/blocks/podzol.json|blocks/podzol}})</small> || 1 || 50.0% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

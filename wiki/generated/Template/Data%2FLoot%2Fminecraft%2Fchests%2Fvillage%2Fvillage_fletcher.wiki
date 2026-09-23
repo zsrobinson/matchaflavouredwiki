@@ -1,0 +1,17 @@
+<includeonly><small>Loot table <code>minecraft:chests/village/village_fletcher</code> ({{Source|vanilla:loot_table/chests/village/village_fletcher.json|source}}); pools roll 1–5 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Feather|mcw=Feather}} || 1–3 || 26.1% || 55.8% || 
+|-
+| {{ItemLink|Flint|mcw=Flint}} || 1–3 || 26.1% || 55.8% || 
+|-
+| {{ItemLink|Stick}} || 1–3 || 26.1% || 55.8% || 
+|-
+| {{ItemLink|Arrow}} || 1–3 || 8.70% || 23.3% || 
+|-
+| {{ItemLink|Egg}} || 1–3 || 8.70% || 23.3% || 
+|-
+| {{ItemLink|Obol}} || 1 || 4.35% || 12.3% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

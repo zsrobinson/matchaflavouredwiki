@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Medium Amethyst Bud}}
+|image={{#if:{{{image|}}}|{{{image}}}|Medium Amethyst Bud.png}}
+|imagesize=160px
+|invimage=Medium Amethyst Bud
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:medium_amethyst_bud</code>
+|source={{Source|vanilla:loot_table/blocks/medium_amethyst_bud.json|medium_amethyst_bud.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

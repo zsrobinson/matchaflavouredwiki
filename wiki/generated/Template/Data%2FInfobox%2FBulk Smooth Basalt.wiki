@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Bulk Smooth Basalt}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bulk Smooth Basalt.png}}
+|imagesize=160px
+|invimage=Bulk Smooth Basalt
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|tooltip=Desc<br />Use to unpack
+|id=<code>minecraft:smooth_basalt</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/bulk_block/smooth_basalt.json|smooth_basalt.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -8,5 +8,12 @@
 | [[Shakudo Chestplate]]
 | [[Copper Chestplate]] +<br />[[Shakudo Alloy]]
 | {{Smithing|Template=|Base=Copper Chestplate|Addition=Shakudo Alloy|Output=Shakudo Chestplate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_chestplate.json|matcha:smithing/shakudo_chestplate}}</small>
+|}
+
+'''Trading'''
+{| class="wikitable"
+! Villager !! Level !! Wants !! Gives
+|-
+| [[Weaponsmith]] || Apprentice || {{ItemLink|Hepatizon Chestplate}} || {{ItemLink|Hepatizon Alloy}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

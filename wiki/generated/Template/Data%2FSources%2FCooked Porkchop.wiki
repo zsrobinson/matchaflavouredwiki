@@ -1,9 +1,17 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
 | Bastion hoglin stable <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_hoglin_stable.json|chests/bastion_hoglin_stable}})</small> || 1 || 24.4% || 
+|}
+
+'''Gameplay'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Hero of the village / butcher gift <small>({{Source|vanilla:loot_table/gameplay/hero_of_the_village/butcher_gift.json|gameplay/hero_of_the_village/butcher_gift}})</small> || 1 || 20.0% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

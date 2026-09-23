@@ -1,0 +1,24 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Brown Sandstone Slab]] <small>(vanilla recipe)</small>
+| [[End Stone]]
+| {{Stonecutter|Input=End Stone|Output=Brown Sandstone Slab,2}}
+|-
+| [[Brown Sandstone Stairs]] <small>(vanilla recipe)</small>
+| [[End Stone]]
+| {{Stonecutter|Input=End Stone|Output=Brown Sandstone Stairs}}
+|-
+| [[Brown Sandstone Wall]] <small>(vanilla recipe)</small>
+| [[End Stone]]
+| {{Stonecutter|Input=End Stone|Output=Brown Sandstone Wall}}
+|-
+| [[Brown Sandstone]] <small>(vanilla recipe)</small>
+| [[End Stone]]
+| {{Stonecutter|Input=End Stone|Output=Brown Sandstone}}
+|-
+| [[Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[End Stone]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=End Stone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

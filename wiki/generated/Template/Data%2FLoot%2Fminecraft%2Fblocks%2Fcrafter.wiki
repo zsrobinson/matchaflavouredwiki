@@ -1,0 +1,7 @@
+<includeonly><small>Loot table <code>minecraft:blocks/crafter</code> ({{Source|vanilla:loot_table/blocks/crafter.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Crafter}} || 1 || 100% || 100% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

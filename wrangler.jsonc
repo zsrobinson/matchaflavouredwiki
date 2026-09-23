@@ -1,0 +1,12 @@
+// Cloudflare Workers (static assets only; no Worker script needed).
+// Build dist/ first: see README "Deploying (static)". Then: npx wrangler deploy
+{
+  "name": "matcha-flavoured-wiki",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./dist",
+    // /w/Page_title is served from dist/w/Page_title.html without a redirect
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

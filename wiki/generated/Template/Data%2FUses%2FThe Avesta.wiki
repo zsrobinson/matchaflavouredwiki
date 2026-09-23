@@ -6,7 +6,7 @@
 | {{Crafting|A1=Benzene|A2=Stabilized Estus|A3=Book|Output=Hell-Bound Book}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/hell_bound_book.json|matcha:blessing/hell_bound_book}}</small>
 |-
 | [[Bookshelf]]
-| 6 × Any [[wooden slabs]] +<br />3 × [[Book]]
+| 6 × <span class="explain" title="Oak Slab, Spruce Slab, Birch Slab, Jungle Slab, Acacia Slab, Dark Oak Slab, Pale Oak Slab, Crimson Slab, Warped Slab, Mangrove Slab, Bamboo Slab, Cherry Slab">Any wooden slabs</span> +<br />3 × [[Book]]
 | {{Crafting|A1=Any Wooden Slabs|A2=Book|A3=Any Wooden Slabs|B1=Any Wooden Slabs|B2=Book|B3=Any Wooden Slabs|C1=Any Wooden Slabs|C2=Book|C3=Any Wooden Slabs|Output=Bookshelf,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bookshelf.json|matcha:crafting/bookshelf}}</small>
 |-
 | [[Book and Quill]] <small>(vanilla recipe)</small>
@@ -18,6 +18,6 @@
 {| class="wikitable"
 ! Villager !! Level !! Wants !! Gives
 |-
-| [[Mouthpiece]] || Apprentice || {{ItemLink|The Avesta}} + {{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>Efficiency II, Unbreaking I</small>
+| [[Mouthpiece]] || Apprentice || {{ItemLink|The Avesta}} + {{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Efficiency]] II, [[Unbreaking]] I</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

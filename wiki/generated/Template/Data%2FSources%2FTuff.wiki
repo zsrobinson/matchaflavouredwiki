@@ -1,4 +1,5 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
@@ -7,5 +8,12 @@
 | Trial chambers / corridor <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/corridor.json|chests/trial_chambers/corridor}})</small> || 8–20 || 58.4% || 
 |-
 | Trial chambers / supply <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/supply.json|chests/trial_chambers/supply}})</small> || 5–10 || 27.2% || 
+|}
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Tuff <small>({{Source|vanilla:loot_table/blocks/tuff.json|blocks/tuff}})</small> || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

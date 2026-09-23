@@ -22,145 +22,11 @@
 .messagebox.spoiler { border-left-color: #B03A2E; }
 .messagebox.info { border-left-color: #2E6DB0; }
 
-/* Main Page */
-body.page-Matcha_Flavoured_Wiki .mw-parser-output,
-body.rootpage-Template_Matcha_Flavoured_Wiki .mw-parser-output {
-    max-width: 75em;
-    margin: 0 auto;
-}
-
-body.page-Matcha_Flavoured_Wiki.action-view .catlinks {
-    display: none;
-}
-
-.mainpage-header {
-    display: flex;
-    margin: 2.6em 1.75em 1.5em;
-}
-
-.mainpage-header .header-intro {
-	text-align: center;
-    flex: 2;
-}
-
-.mainpage-header .header-intro > h1,
-.mainpage-header .header-intro .mw-heading1 {
-    font-size: 2.5em;
-    border: none;
-    margin: 0 0 0.15em;
-}
-
-.mainpage-header .header-intro p {
-    font-size: 1.1em;
-    line-height: 1.7em;
-}
-
-.mainpage-header .header-stats ul {
-    display: flex;
-    justify-content: center;
-}
-
-.mainpage-header .header-stats li {
-    display: inline;
-}
-
-.mainpage-header .header-stats li:not(:last-child) {
-    padding-right: 0.6em;
-}
-
-.mainpage-header .header-stats li:not(:last-child)::after {
-    content: "";
-    display: inline-block;
-    position: relative;
-    left: 0.286em;
-    bottom: 0.214em;
-    background-color: #000;
-    height: 3px;
-    width: 3px;
-}
-
-.tile-row {
-    display: flex;
-    flex-flow: row wrap;
-    margin-bottom: 1em;
-}
-
-.tile {
-    display: flex;
-    flex-flow: row wrap;
-    border: 1px solid var(--body-border);
-    background: #fff;
-    padding: 1.3rem 1.5rem 1rem;
-}
-
-.tile h2,
-.tile .mw-heading2 {
-    font-size: 1.4em;
-    font-weight: bold;
-    border: none;
-    margin: 0;
-    word-break: normal;
-}
-
-.tile .byline + h2,
-.tile .byline + .mw-heading2 {
-    margin-top: -0.5em;
-}
-
-.tile .link-button {
-    padding: 0;
-}
-
-.tile .link-button a {
-    color: inherit;
-    display: block;
-    padding: 1.25em 1.5em 1.2em;
-    text-decoration: none;
-}
-
-.mainpage-body {
-    display: grid;
-    grid-template-areas:
-"content content content" 
-"left    left    right  ";
-    gap: 0.9rem;
-    grid-template-columns: repeat(3,1fr);
-}
-
-.mainpage-body .tile-row {
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.mainpage-body .tile-row {
-    display: grid;
-    gap: 0.9rem;
-    grid-template-columns: repeat(4,1fr);
-    grid-area: content;
-}
-
-.mainpage-body .tile-row .tile {
-    text-align: center;
-    padding: 0;
-}
-
-.mainpage-body .tile-row .tile .link-button {
-    width: 100%;
-}
-
-.mainpage-body .mainpage-left {
-	grid-area: left;
-}
-
-.mainpage-body .mainpage-right {
-	grid-area: right;
-}
-
-/* Message boxes (Template:Stub, Template:Spoiler, Template:Unofficial ...) */
-.messagebox td { padding: 0.35em 0.6em; }
-.messagebox.stub { border-color: #6f8f4e; }
-.messagebox.spoiler { border-color: #7a3b3b; }
-.messagebox.info { border-color: #156441; }
+/* Main page: layout and tiles come from minecraft.wiki's main page CSS (Gadget-mcw-mainpage.css) */
+body.page-Matcha_Flavoured_Wiki.action-view .catlinks { display: none; }
+body.page-Matcha_Flavoured_Wiki #firstHeading { display: none; }
+.mp-icon-img img { image-rendering: pixelated; }
+.mp-highlight-image img { object-fit: cover; }
 
 /* Inline sprites: {{ItemLink}}, {{EffectLink}}, {{G}} */
 .sprite-inline img { image-rendering: pixelated; vertical-align: text-bottom; }
@@ -184,22 +50,17 @@ body.page-Matcha_Flavoured_Wiki.action-view .catlinks {
 /* Collapsible sections */
 .mw-collapsible .mw-collapsible-toggle { font-size: 0.9em; }
 
-/* Main page: extra tiles */
-.mainpage-body .mainpage-left .tile, .mainpage-body .mainpage-right .tile { display: block; margin-bottom: 0.9rem; }
-.mainpage-body .tile ul { margin-left: 1.2em; }
-.mainpage-body .tile .gallery-icons img { image-rendering: pixelated; }
-.mainpage-body .tile h2 { margin-bottom: 0.4em; }
-@media (max-width: 800px) {
-	.mainpage-body { display: block; }
-	.mainpage-body .tile-row { grid-template-columns: repeat(2, 1fr); margin-bottom: 0.9rem; }
-	.mfw-infobox { float: none; margin: 0 auto 1em; width: 100%; }
-}
-
 /* Tables of items with icons */
 .wikitable img { image-rendering: pixelated; }
 .wikitable.sortable th { white-space: nowrap; }
 
 
 /* Infobox tweaks for this wiki's data rows */
-.notaninfobox .infobox-rows code { word-break: break-all; white-space: normal; }
+.notaninfobox .infobox-rows code { overflow-wrap: anywhere; white-space: normal; font-size: 85%; }
 .notaninfobox .infobox-imagearea img { image-rendering: pixelated; }
+
+/* Collapsible sidebar sections (behaviour: MediaWiki:Gadget-mfwShell.js) */
+#mw-panel nav.vector-menu-portal:not(#p-navigation) .vector-menu-heading { cursor: pointer; user-select: none; }
+#mw-panel nav.vector-menu-portal.collapsed .vector-menu-content { display: none; }
+.mp-highlight-image, .mp-highlight-image span, .mp-highlight-image a { position: absolute; inset: 0; display: block; }
+.mp-highlight-image img { width: 100%; height: 100%; object-fit: cover; }

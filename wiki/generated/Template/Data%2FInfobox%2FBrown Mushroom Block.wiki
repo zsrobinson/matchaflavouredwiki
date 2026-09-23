@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Brown Mushroom Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Brown Mushroom Block.png}}
+|imagesize=160px
+|invimage=Brown Mushroom Block
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:brown_mushroom_block</code>
+|source={{Source|vanilla:loot_table/blocks/brown_mushroom_block.json|brown_mushroom_block.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

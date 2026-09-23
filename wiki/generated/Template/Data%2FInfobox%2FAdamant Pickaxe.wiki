@@ -13,10 +13,10 @@
 |durability=5000
 |damage={{Hp|6}}
 |attackspeed=1.2
-|miningspeed=55
+|miningspeed=15
 |repair=[[Block of Diamond]], [[Adamant Scrap]]
 |tooltip={{G|Mining speed}} 15<br />{{G|Attack damage}} 6<br />{{G|Attack speed}} 1.2<br />Set Bonus:<br />{{G|Health}}{{G|Health}} {{G|Cooldown}} (00:30)<br />Repaired with:<br />Block of Diamond<br />Adamant Scrap
-|id=<code>matcha:electrum_pickaxe</code>
+|id=<code>minecraft:netherite_pickaxe</code>
 |base=<code>minecraft:netherite_pickaxe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/adamant_pickaxe.json|adamant_pickaxe.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

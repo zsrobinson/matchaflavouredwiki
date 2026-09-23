@@ -6,13 +6,11 @@
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
-|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
 |rarity=Uncommon
 |stackable=Yes (64)
-|effects={{EffectLink|Poison}} (0:05) — 60% chance
-|eat_time=1.6 seconds
 |tooltip=Amethyst Material
 |id=<code>matcha:trim_colour_amethyst</code>
 |base=<code>minecraft:poisonous_potato</code>

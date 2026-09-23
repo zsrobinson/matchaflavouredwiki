@@ -2,8 +2,8 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Apple}} || 1 || 100% || 100% || not tool: Iron Shears, Fortune affects chance
-|-
 | {{ItemLink|Oak Leaves}} || 1 || 100% || 100% || tool: Iron Shears, Silk Touch
+|-
+| {{ItemLink|Apple}} || 1 || 1.50% || 1.50% || not tool: Iron Shears, Fortune increases chance
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

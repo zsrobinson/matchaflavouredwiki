@@ -1,0 +1,12 @@
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Dead horn coral block <small>({{Source|vanilla:loot_table/blocks/dead_horn_coral_block.json|blocks/dead_horn_coral_block}})</small> || 1 || 100% || 
+|-
+| Horn coral block <small>({{Source|vanilla:loot_table/blocks/horn_coral_block.json|blocks/horn_coral_block}})</small> || 1 || 50.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -10,7 +10,7 @@
 | {{Crafting|A1=Cheese|A2=Tomatoes|A3=Dough|B1=Cheese|B2=Tomatoes|B3=Dough|C1=Cheese|C2=Tomatoes|C3=Dough|Output=Cheese Pizza,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cheese_pizza.json|matcha:food/crafting/cheese_pizza}}</small>
 |-
 | [[Gnocchi]]
-| [[Baked Potato]] +<br />[[Cheese]] +<br />Any [[eggs]] +<br />[[Flour]] +<br />[[Bowl]]
+| [[Baked Potato]] +<br />[[Cheese]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Flour]] +<br />[[Bowl]]
 | {{Crafting|A1=Baked Potato|B1=Cheese|C1=Any Eggs|A2=Flour|B2=Bowl|Output=Gnocchi|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gnocchi.json|matcha:food/crafting/gnocchi}}</small>
 |-
 | [[Meat Pizza]]

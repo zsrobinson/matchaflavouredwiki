@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Red Mushroom Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Red Mushroom Block.png}}
+|imagesize=160px
+|invimage=Red Mushroom Block
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:red_mushroom_block</code>
+|source={{Source|vanilla:loot_table/blocks/red_mushroom_block.json|red_mushroom_block.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

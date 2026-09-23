@@ -1,4 +1,5 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
@@ -12,6 +13,8 @@
 ! Source !! Stack size !! Chance !! Notes
 |-
 | Cobblestone <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/cobblestone.json|blocks/cobblestone}})</small> || 1 || 50.0% || specific tool
+|-
+| Infested stone <small>({{Source|vanilla:loot_table/blocks/infested_stone.json|blocks/infested_stone}})</small> || 1 || 100% || Silk Touch
 |-
 | Stone <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/stone.json|blocks/stone}})</small> || 1 || 33.3% || Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

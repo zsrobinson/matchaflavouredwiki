@@ -26,6 +26,11 @@ Because the food level never reaches 20, vanilla foods that are not flagged <cod
 {{Main|Natural regeneration}}
 Natural regeneration is turned off with a game rule, so a high food level wouldn't heal the player even if it were reached.
 
+== Hunger effect ==
+The {{EffectLink|Hunger}} status effect still exists and is used internally to drain the food level (above). Some foods and items also apply it as a side effect:
+
+{{Data/Effect/Hunger}}
+
 == History ==
 {{History|
 {{History line|0.4-alpha|Removed the "You cannot eat right now" warning.}}

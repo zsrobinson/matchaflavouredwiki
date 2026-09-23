@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Mangrove Roots}}
+|image={{#if:{{{image|}}}|{{{image}}}|Mangrove Roots.png}}
+|imagesize=160px
+|invimage=Mangrove Roots
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:mangrove_roots</code>
+|source={{Source|vanilla:loot_table/blocks/mangrove_roots.json|mangrove_roots.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Hematite}}
+|image={{#if:{{{image|}}}|{{{image}}}|Hematite.png}}
+|imagesize=160px
+|invimage=Hematite
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Iron Ore}}
+|stackable=Yes (64)
+|id=<code>minecraft:iron_ore</code>
+|source={{Source|vanilla:loot_table/blocks/iron_ore.json|iron_ore.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

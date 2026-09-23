@@ -1,0 +1,14 @@
+<includeonly><div class="mp-section mp-highlight {{{class|}}}">
+<div class="mp-highlight-image">[[File:{{{bg|Main page background.png}}}|640px|link=|alt=]]</div>
+<div class="mp-highlight-top-description">
+<div class="mp-highlight-top-description-title">
+<h3 class="mp-title">{{{name|}}}</h3>
+{{#if: {{{tag|}}} | <div class="mp-highlight-top-description-tag mp-highlight-top-description-tag-{{{tagtype|progressive}}}">{{{tag}}}</div> }}
+</div>
+<div class="hlist">
+{{{features|}}}
+</div>
+</div>
+<div class="mp-highlight-bottom-description">{{{bottom|}}}</div>
+</div></includeonly><noinclude>A main page release highlight (after minecraft.wiki's <code>mainpage named update</code>).
+[[Category:Main page templates]]</noinclude>

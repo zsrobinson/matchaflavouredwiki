@@ -1,5 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|title={{#if:{{{title|}}}|{{{title}}}|Prayer of Will}}
+|image={{#if:{{{image|}}}|{{{image}}}|Prayer of Will.png}}
+|imagesize=160px
+|invimage=Prayer of Will
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}

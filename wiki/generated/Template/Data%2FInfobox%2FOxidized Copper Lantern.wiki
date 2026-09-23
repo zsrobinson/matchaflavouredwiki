@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Oxidized Copper Lantern}}
+|image={{#if:{{{image|}}}|{{{image}}}|Oxidized Copper Lantern.png}}
+|imagesize=160px
+|invimage=Oxidized Copper Lantern
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:oxidized_copper_lantern</code>
+|source={{Source|vanilla:loot_table/blocks/oxidized_copper_lantern.json|oxidized_copper_lantern.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,26 +1,131 @@
-{{Matcha Flavoured Wiki/Header}}
+__NOTOC__<div class="mp-wrapper plainlinks">
+<div class="mp-inline-sections">
 
-<div class="mainpage-body">
+<div id="mp-section-site" class="mp-section">
+<h2 class="mp-title">[[File:Wiki.png|120px|link=Matcha Flavoured Wiki:About|alt=Matcha Flavoured Wiki|class=pixel-image]]</h2>
 
-{{Matcha Flavoured Wiki/Contents}}
+Welcome to the encyclopedia of '''[[Matcha Flavoured]]''', the ''Minecraft'' datapack by Klei Wright that rewards casual players. Every page is written from the pack's own source code and release notes.
 
-<div class="mainpage-left">
-
-{{Matcha Flavoured Wiki/About}}
-
-{{Matcha Flavoured Wiki/Topics}}
-
+<div id="mp-statistics" class="hlist">
+* <span style="white-space: nowrap">'''{{NUMBEROFARTICLES}}''' articles</span>
+* <span style="white-space: nowrap">'''{{NUMBEROFFILES}}''' files</span>
+* <span style="white-space: nowrap">version '''[[Matcha Flavoured {{Current version}}|{{Current version}}]]'''</span>
 </div>
 
-<div class="mainpage-right">
+<div class="mp-button-wrapper">
+{{Mainpage button|progressive=1|https://modrinth.com/datapack/matcha-flavoured|Download}}
+{{Mainpage button|https://github.com/kleiwright/matcha-flavoured|Source}}
+{{Mainpage button|1=https://www.youtube.com/watch?v=0yf9G_vfi-U|2=Design video}}
+</div>
+</div>
 
-{{Matcha Flavoured Wiki/Version}}
+<div class="mp-left">
 
-{{Matcha Flavoured Wiki/Links}}
+<div class="mp-highlight-wrapper">
+<h2 class="sr-only">Latest release</h2>
+{{Mainpage update
+| name = [[Matcha Flavoured {{Current version}}|Progression, Polish, Prerelease]]
+| tag = Latest
+| features =
+* {{ItemLink|Crystal Heart}}
+* {{ItemLink|Raw Diamond}}
+* {{ItemLink|Electrum Alloy}}
+* {{ItemLink|Adamant Alloy}}
+| bottom = Matcha Flavoured <b class="mp-highlight-version">{{Current version}}</b> for ''Minecraft'' <b class="mp-highlight-version">26.2</b>
+}}
+</div>
 
+<div class="mp-section">
+<div class="mp-icon-wrapper mp-main-icons">
+{{Mainpage icon|Food|image=Pumpkin Empanada}}
+{{Mainpage icon|Intrinsic|Intrinsics|image=Sweet Berry Danish}}
+{{Mainpage icon|Cooking|image=Oven}}
+{{Mainpage icon|Equipment|image=Shakudo Chestplate}}
+{{Mainpage icon|Tools|image=Steel Mattock}}
+{{Mainpage icon|Alloy|Alloys|image=Electrum Alloy}}
+{{Mainpage icon|Enchanting|image=Prayer of Daedalus}}
+{{Mainpage icon|Estus|image=Estus Ash}}
+{{Mainpage icon|Death|Death|image=Crystal Heart}}
+{{Mainpage icon|Mobs|image=Tattered Leather}}
+{{Mainpage icon|Trading|image=Obol}}
+{{Mainpage icon|Fishing|image=Bluegill}}
+{{Mainpage icon|Structures|image=Copper Eye}}
+{{Mainpage icon|Blocks|image=Limestone}}
+{{Mainpage icon|Warding|image=Warding Stone}}
+{{Mainpage icon|Smithing|image=Smithing Table}}
+{{Mainpage icon|Effect|Effects|image=Effect Resistance}}
+{{Mainpage icon|Advancements|image=Angler's Almanac}}
+{{Mainpage icon|Version history|History|image=Cooking Recipe}}
+{{Mainpage icon|Guide for new players|New players|image=Divine Fragment}}
+</div>
+</div>
+
+<div class="mp-left-row" style="display: flex; gap: 8px; flex-wrap: wrap">
+
+<div class="mp-section" style="flex: 1 1 0; min-width: 300px; display: flex; flex-direction: column;">
+<div style="flex: 1 1 0">
+<h2 class="mp-title">About the pack</h2>
+'''[[Matcha Flavoured]]''' is a datapack and resource pack for ''Minecraft'' Java Edition, designed so that slower, non-technical players gather as much as players who build farms. [[Hunger]] and [[natural regeneration]] are gone: [[food]] heals and carries potion-like [[intrinsic]]s. A [[death]] costs a [[Crystal Heart|heart]] rather than the player's items. Villagers stop buying goods, new [[alloy]]s and hybrid [[tools]] reshape progression, and [[enchanting]] is crafted instead of random.
+</div>
+<div class="mp-button-wrapper" style="flex: 0 0 0; margin-top: 12px">
+{{Mainpage button|progressive=1|Matcha Flavoured|About the pack}}
+{{Mainpage button|Guide for new players|New player guide}}
+{{Mainpage button|Changes from vanilla|Changes from vanilla}}
+</div>
+</div>
+
+<div class="mp-section" style="flex: 1 1 0; min-width: 300px; display: flex; flex-direction: column;">
+<div style="flex: 1 1 0">
+<h2 class="mp-title">Getting started</h2>
+The pack's own [[advancements]] double as a tutorial. A new world starts with [[Kindling|kindling]], a [[Wooden Hoe|wooden hoe]] and cooked grass, then leads through the [[Mud Kiln|mud kiln]], [[Copper equipment|copper]] and [[Iron equipment|iron]], to the [[Blast Furnace|blast furnace]] and [[Raw Diamond|raw diamonds]]. See [[progression]] for the full path.
+</div>
+<div class="mp-button-wrapper" style="flex: 0 0 0; margin-top: 12px">
+{{Mainpage button|progressive=1|Progression|Progression}}
+{{Mainpage button|Installation|Installation}}
+</div>
 </div>
 
 </div>
+</div>
 
-__NOTOC__
+<div class="mp-right">
+
+<div class="mp-section">
+<h2 class="mp-title">Did you know…</h2>
+* … that [[Death|dying]] costs a heart of maximum health rather than the player's items?
+* … that there are 47 [[fish]] to catch, each rated from one to four stars in the [[Angler's Almanac]]?
+* … that defeating the [[Ender Dragon]] [[Surface|banishes monsters from the surface]]?
+* … that [[Sack]]s, the pack's shulker boxes, can be crafted long before [[The End]]?
+</div>
+
+<div class="mp-section">
+<h2 class="mp-title">Browse</h2>
+<div class="hlist">
+* [[Health]]
+* [[Difficulty]]
+* [[Spawning]]
+* [[Armor]]
+* [[Weapons]]
+* [[Blessing]]s
+* [[Villager]]s
+* [[Biomes]]
+* [[Chest loot]]
+* [[Renamed items]]
+* [[Removed features]]
+* [[Credits]]
+</div>
+</div>
+
+<div class="mp-section">
+<h2 class="mp-title">About this wiki</h2>
+This is an unofficial fan wiki. Its content is kept in a git repository and rebuilt from the pack's code whenever the pack updates.
+<div class="mp-button-wrapper" style="margin-top: 12px">
+{{Mainpage button|Matcha Flavoured Wiki:About|About}}
+{{Mainpage button|Matcha Flavoured Wiki:Contributing|Contributing}}
+</div>
+</div>
+
+</div>
+</div>
+</div>
 [[Category:Matcha Flavoured Wiki| ]]

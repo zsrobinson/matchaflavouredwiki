@@ -2,7 +2,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Prayer of St. Clement]]
-| 2 × [[Obol]] +<br />[[Leather Boots]] +<br />2 × Any [[wool]] +<br />[[Hell-Bound Book]]
+| 2 × [[Obol]] +<br />[[Leather Boots]] +<br />2 × <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span> +<br />[[Hell-Bound Book]]
 | {{Crafting|A1=Obol|A2=Any Wool|B1=Leather Boots|B2=Hell-Bound Book|C1=Obol|C2=Any Wool|Output=Prayer of St. Clement}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/traversal.json|matcha:blessing/traversal}}</small>
 |-
 | [[Beacon Kindling]]
@@ -62,49 +62,49 @@
 |-
 | [[Cook]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}}
 |-
-| [[Cook]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Cleaver}}<br /><small>Slaughter , Looting II</small>
+| [[Cook]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Cleaver}}<br /><small>[[Slaughter]], [[Looting]] II</small>
 |-
-| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Mineshaft Map}}
 |-
 | [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Sheaf Pottery Sherd}}
 |-
-| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Witch Hut Map}}
 |-
-| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Papal Outpost Map}}
 |-
-| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || {{ItemLink|Shipwreck Map}}
 |-
-| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Desert Temple Map}}
 |-
 | [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Howl Pottery Sherd}}
 |-
-| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Jungle Temple Map}}
 |-
-| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Trail Ruins Map}}
 |-
 | [[Archaeologist]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Archeologist's Brush}}
 |-
-| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Ocean Monument Map}}
 |-
 | [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Snort Pottery Sherd}}
 |-
-| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Trial Chamber Map}}
 |-
-| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Archaeologist]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Warm Ocean Ruin Map}}
 |-
-| [[Archaeologist]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Archaeologist]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Ancient City Map}}
 |-
 | [[Archaeologist]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Mourner Pottery Sherd}}
 |-
 | [[Archaeologist]] || Master || {{ItemLink|Obol}} || {{ItemLink|Arms Up Pottery Sherd}}
 |-
-| [[Archaeologist]] || Master || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Archaeologist]] || Master || {{ItemLink|Obol}} || {{ItemLink|Mansion Map}}
 |-
 | [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Infestation}}
 |-
 | [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Oozing}}
 |-
-| [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Darkness}}
+| [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Darkness}}
 |-
 | [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Slowness}}
 |-
@@ -112,7 +112,7 @@
 |-
 | [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Wind Charging}}
 |-
-| [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Wither}}
+| [[Chemist]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Wither}}
 |-
 | [[Farmer]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Bone Meal}}
 |-
@@ -146,13 +146,13 @@
 |-
 | [[Fletcher]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Arrow}}
 |-
-| [[Fletcher]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Tipped Arrow}}
+| [[Fletcher]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Apotropaic Arrow}}
 |-
-| [[Fletcher]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Tipped Arrow}}
+| [[Fletcher]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Nightshade Arrow}}
 |-
 | [[Fletcher]] || Apprentice || {{ItemLink|Obol}} || 64 × {{ItemLink|Spectral Arrow}}
 |-
-| [[Fletcher]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Compound Bow}}<br /><small>Power II</small>
+| [[Fletcher]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Compound Bow}}<br /><small>[[Power]] II</small>
 |-
 | [[Lumberjack]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Birch Log}}
 |-
@@ -178,7 +178,7 @@
 |-
 | [[Lumberjack]] || Journeyman || {{ItemLink|Obol}} + {{ItemLink|Warped Fungus}} || 64 × {{ItemLink|Warped Stem}}
 |-
-| [[Lumberjack]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Hatchet}}<br /><small>Bloodrage </small>
+| [[Lumberjack]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Hatchet}}<br /><small>[[Bloodrage]]</small>
 |-
 | [[Mouthpiece]] || Novice || {{ItemLink|Obol}} || 16 × {{ItemLink|Stable Void}}
 |-
@@ -200,7 +200,7 @@
 |-
 | [[Mason]] || Apprentice || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Tuff}}
 |-
-| [[Mason]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|item.kleispack.trade.bulk_terracotta}}
+| [[Mason]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Bulk Terracotta}}
 |-
 | [[Mason]] || Apprentice || {{ItemLink|Obol}} || 3 × {{ItemLink|Bulk Glass}}
 |-
@@ -208,15 +208,15 @@
 |-
 | [[Mason]] || Journeyman || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Flowstone}}
 |-
-| [[Mason]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|item.kleispack.trade.bulk_prismarine}}
+| [[Mason]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Bulk Prismarine}}
 |-
-| [[Mason]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|item.kleispack.trade.bulk_cinnabar}}
+| [[Mason]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Bulk Cinnabar}}
 |-
-| [[Mason]] || Expert || {{ItemLink|Obol}} || {{ItemLink|item.kleispack.trade.bulk_blackstone}}
+| [[Mason]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Bulk Blackstone}}
 |-
-| [[Mason]] || Expert || {{ItemLink|Obol}} || {{ItemLink|item.kleispack.trade.bulk_smooth_basalt}}
+| [[Mason]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Basalt}}
 |-
-| [[Mason]] || Expert || {{ItemLink|Obol}} || {{ItemLink|item.kleispack.trade.bulk_smooth_quartz}}
+| [[Mason]] || Expert || {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Quartz}}
 |-
 | [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|Red Wool}}
 |-
@@ -250,7 +250,7 @@
 |-
 | [[Shepherd]] || Novice || {{ItemLink|Obol}} || 64 × {{ItemLink|White Wool}}
 |-
-| [[Shepherd]] || Apprentice || 3 × {{ItemLink|Obol}} || {{ItemLink|Shepherd's Shears}}<br /><small>Looting III</small>
+| [[Shepherd]] || Apprentice || 3 × {{ItemLink|Obol}} || {{ItemLink|Shepherd's Shears}}<br /><small>[[Looting]] III</small>
 |-
 | [[Shepherd]] || Apprentice || {{ItemLink|Obol}} || {{ItemLink|Brown Lamb}}
 |-
@@ -260,7 +260,7 @@
 |-
 | [[Shepherd]] || Journeyman || {{ItemLink|Obol}} || {{ItemLink|Crook}}
 |-
-| [[Jeweler]] || Novice || 4 × {{ItemLink|Obol}} + {{ItemLink|Opal}} || {{ItemLink|Opal Earrings}}<br /><small>∞ </small>
+| [[Jeweler]] || Novice || 4 × {{ItemLink|Obol}} + {{ItemLink|Opal}} || {{ItemLink|Opal Earrings}}<br /><small>[[Conduit Power|{{G|Water}} ∞]]</small>
 |-
 | [[Jeweler]] || Novice || {{ItemLink|Obol}} + 2 × {{ItemLink|Diamond}} || {{ItemLink|Diamond Earrings}}
 |-
@@ -268,26 +268,26 @@
 |-
 | [[Jeweler]] || Novice || {{ItemLink|Obol}} + 2 × {{ItemLink|Lapis Lazuli|mcw=Lapis Lazuli}} || {{ItemLink|Lapis Earrings}}
 |-
-| [[Jeweler]] || Apprentice || 4 × {{ItemLink|Obol}} + {{ItemLink|Ruby}} || {{ItemLink|Ruby Circlet}}<br /><small>∞ </small>
+| [[Jeweler]] || Apprentice || 4 × {{ItemLink|Obol}} + {{ItemLink|Ruby}} || {{ItemLink|Ruby Circlet}}<br /><small>[[Fire Resistance|{{G|Fire resistance}} ∞]]</small>
 |-
-| [[Jeweler]] || Journeyman || 8 × {{ItemLink|Obol}} + {{ItemLink|Amber}} || {{ItemLink|Amber Earrings}}<br /><small>∞ </small>
+| [[Jeweler]] || Journeyman || 8 × {{ItemLink|Obol}} + {{ItemLink|Amber}} || {{ItemLink|Amber Earrings}}<br /><small>[[Regeneration|{{G|Health}} ∞]]</small>
 |-
 | [[Jeweler]] || Expert || 10 × {{ItemLink|Obol}} + 2 × {{ItemLink|Hepatizon Alloy}} || {{ItemLink|Hepatizon Laurel}}
 |-
-| [[Jeweler]] || Expert || 14 × {{ItemLink|Obol}} + {{ItemLink|Topaz}} || {{ItemLink|Topaz Earrings}}<br /><small>∞ </small>
+| [[Jeweler]] || Expert || 14 × {{ItemLink|Obol}} + {{ItemLink|Topaz}} || {{ItemLink|Topaz Earrings}}<br /><small>[[Haste|{{G|Mining speed}} ∞]]</small>
 |-
 | [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Asylum Seeker}}
 |-
-| [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Abandoned Desert Village Map}}
 |-
-| [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Abandoned Plains Village Map}}
 |-
-| [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Abandoned Savanna Village Map}}
 |-
-| [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Abandoned Snowy Village Map}}
 |-
-| [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Abandoned Taiga Village Map}}
 |-
-| [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Empty Map}}
+| [[Wandering Trader]] || — || {{ItemLink|Obol}} || {{ItemLink|Witch Hut Map}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

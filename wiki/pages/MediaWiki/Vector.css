@@ -8,3 +8,5 @@
 /* Git-managed wiki: no talk pages, editing, history or accounts */
 #ca-talk, #ca-history, #ca-viewsource, #ca-edit, #ca-ve-edit, #pt-login, #pt-login-2, #pt-createaccount,
 #pt-anonuserpage, #pt-anontalk, #pt-anoncontribs, #footer-icons .footer-copyrightico, .mw-editsection { display: none !important; }
+/* The toolbox only links to special pages, which the static site doesn't have */
+#p-tb { display: none !important; }

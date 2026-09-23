@@ -12,10 +12,9 @@
 |stackable=No
 |durability=200
 |armor=3
-|repair=<code>#minecraft:repairs_copper_armor</code>
+|repair=[[Copper Ingot]]
 |tooltip={{G|Armor}} 3
-|id=<code>matcha:hepatizon_leggings</code>
-|base=<code>minecraft:copper_leggings</code>
+|id=<code>minecraft:copper_leggings</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/copper_leggings.json|copper_leggings.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

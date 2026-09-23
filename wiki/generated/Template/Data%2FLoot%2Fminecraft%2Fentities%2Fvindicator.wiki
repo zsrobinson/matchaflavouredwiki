@@ -1,0 +1,7 @@
+<includeonly><small>Loot table <code>minecraft:entities/vindicator</code> ({{Source|vanilla:loot_table/entities/vindicator.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Obol}} || 0–1 || 50.0% || 50.0% || player kill
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Dead Horn Coral}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dead Horn Coral.png}}
+|imagesize=160px
+|invimage=Dead Horn Coral
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:dead_horn_coral</code>
+|source={{Source|vanilla:loot_table/blocks/dead_horn_coral.json|dead_horn_coral.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

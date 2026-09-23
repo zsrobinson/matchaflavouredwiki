@@ -2,7 +2,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Wooden Sword]]
-| 2 × Any [[wooden tool materials]] +<br />[[Stick]]
+| 2 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />[[Stick]]
 | {{Crafting|A1=Any Wooden Tool Materials|A2=Any Wooden Tool Materials|A3=Stick|Output=Wooden Sword}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_sword.json|matcha:crafting/wooden_sword}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Horn Coral Fan}}
+|image={{#if:{{{image|}}}|{{{image}}}|Horn Coral Fan.png}}
+|imagesize=160px
+|invimage=Horn Coral Fan
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:horn_coral_fan</code>
+|source={{Source|vanilla:loot_table/blocks/horn_coral_fan.json|horn_coral_fan.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

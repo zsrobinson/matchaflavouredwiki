@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Abandoned Plains Village Map}}
+|image={{#if:{{{image|}}}|{{{image}}}|Abandoned Plains Village Map.png}}
+|imagesize=160px
+|invimage=Abandoned Plains Village Map
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:map</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/village_plains.json|village_plains.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

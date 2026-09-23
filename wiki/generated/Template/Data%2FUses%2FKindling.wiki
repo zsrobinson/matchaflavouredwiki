@@ -18,7 +18,7 @@
 | {{Crafting|A1=Iron Ingot|A2=Bricks|A3=Bricks|B1=Iron Ingot|B3=Kindling|C1=Iron Ingot|C2=Bricks|C3=Bricks|Output=Oven}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oven.json|matcha:crafting/oven}}</small>
 |-
 | [[Soul Kindling]]
-| [[Kindling]] +<br />Any [[soul fire base blocks]]
+| [[Kindling]] +<br /><span class="explain" title="Soul Sand, Soul Soil">Any soul fire base blocks</span>
 | {{Crafting|A1=Kindling|B1=Any Soul Fire Base Blocks|Output=Soul Kindling|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/soul_campfire.json|matcha:crafting/soul_campfire}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,5 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|title={{#if:{{{title|}}}|{{{title}}}|Prayer of Eros}}
+|image={{#if:{{{image|}}}|{{{image}}}|Prayer of Eros.png}}
+|imagesize=160px
+|invimage=Prayer of Eros
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}

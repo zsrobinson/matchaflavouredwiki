@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Dragon Egg}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dragon Egg.png}}
+|imagesize=160px
+|invimage=Dragon Egg
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Epic
+|stackable=Yes (64)
+|id=<code>minecraft:dragon_egg</code>
+|source={{Source|vanilla:loot_table/blocks/dragon_egg.json|dragon_egg.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

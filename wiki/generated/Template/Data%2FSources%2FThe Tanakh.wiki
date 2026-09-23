@@ -1,4 +1,5 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
@@ -6,9 +7,9 @@
 |-
 | Abbey / tower <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/tower.json|chests/abbey/tower}})</small> || 1 || 50.0% || 
 |-
-| Trial chambers / reward ominous unique <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_ominous_unique.json|chests/trial_chambers/reward_ominous_unique}})</small> || 1 || 16.7% || 
+| Trial chambers / reward <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward.json|chests/trial_chambers/reward}})</small> || 1 || 1.39% || 
 |-
-| Trial chambers / reward unique <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_unique.json|chests/trial_chambers/reward_unique}})</small> || 1 || 5.56% || 
+| Trial chambers / reward ominous <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward_ominous.json|chests/trial_chambers/reward_ominous}})</small> || 1 || 12.5% || 
 |-
 | Village / village temple <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_temple.json|chests/village/village_temple}})</small> || 1 || 33.3% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

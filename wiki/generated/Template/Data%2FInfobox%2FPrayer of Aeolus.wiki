@@ -1,5 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|title={{#if:{{{title|}}}|{{{title}}}|Prayer of Aeolus}}
+|image={{#if:{{{image|}}}|{{{image}}}|Prayer of Aeolus.png}}
+|imagesize=160px
+|invimage=Prayer of Aeolus
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}

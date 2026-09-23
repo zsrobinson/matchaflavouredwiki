@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Exposed Copper Lantern}}
+|image={{#if:{{{image|}}}|{{{image}}}|Exposed Copper Lantern.png}}
+|imagesize=160px
+|invimage=Exposed Copper Lantern
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:exposed_copper_lantern</code>
+|source={{Source|vanilla:loot_table/blocks/exposed_copper_lantern.json|exposed_copper_lantern.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

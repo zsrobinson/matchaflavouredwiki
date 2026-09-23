@@ -1,0 +1,7 @@
+<includeonly><small>Loot table <code>minecraft:blocks/nether_sprouts</code> ({{Source|vanilla:loot_table/blocks/nether_sprouts.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Warped Sprouts}} || 1 || 100% || 100% || tool: Iron Shears
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

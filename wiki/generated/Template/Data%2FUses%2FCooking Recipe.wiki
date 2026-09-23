@@ -22,7 +22,7 @@
 | {{Crafting|A1=Paper|B1=Vines|Output=Bordure Indented Banner Pattern|shapeless=1}}
 |-
 | [[Cartography Table]] <small>(vanilla recipe)</small>
-| 2 × [[Paper]] +<br />4 × Any [[planks]]
+| 2 × [[Paper]] +<br />4 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
 | {{Crafting|A1=Paper|A2=Any Planks|A3=Any Planks|B1=Paper|B2=Any Planks|B3=Any Planks|Output=Cartography Table}}
 |-
 | [[Banner Pattern]] <small>(vanilla recipe)</small>
@@ -50,7 +50,7 @@
 | {{Crafting|A1=Paper|B1=Enchanted Golden Apple|Output=Banner Pattern|shapeless=1}}
 |-
 | [[Name Tag]] <small>(vanilla recipe)</small>
-| Any [[metal nuggets]] +<br />[[Paper]]
+| <span class="explain" title="Copper Nugget, Iron Nugget, Gold Nugget">Any metal nuggets</span> +<br />[[Paper]]
 | {{Crafting|A2=Paper|B1=Any Metal Nuggets|Output=Name Tag}}
 |-
 | [[Banner Pattern]] <small>(vanilla recipe)</small>

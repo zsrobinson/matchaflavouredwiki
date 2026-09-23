@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Large Amethyst Bud}}
+|image={{#if:{{{image|}}}|{{{image}}}|Large Amethyst Bud.png}}
+|imagesize=160px
+|invimage=Large Amethyst Bud
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:large_amethyst_bud</code>
+|source={{Source|vanilla:loot_table/blocks/large_amethyst_bud.json|large_amethyst_bud.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -58,6 +58,9 @@ GLYPHS = {
 }
 
 
+MISSING_LANG = set()
+
+
 def strip_codes(s):
     return re.sub('§.', '', s)
 
@@ -85,7 +88,12 @@ def render_text(comp):
     if 'text' in comp:
         s += comp['text']
     if 'translate' in comp:
-        tpl = LANG.get(comp['translate'], comp.get('fallback', comp['translate']))
+        key = comp['translate']
+        tpl = LANG.get(key, comp.get('fallback'))
+        if tpl is None:
+            # untranslated pack key (a bug in the pack's lang file): use a readable form of the id
+            tpl = key.split('.')[-1].replace('_', ' ').title() if key.startswith(('item.kleispack.', 'block.kleispack.')) else key
+            MISSING_LANG.add(key)
         args = [render_text(w) for w in comp.get('with', [])]
         tpl = tpl.replace('%%', '\x00')
         i = 0
@@ -128,19 +136,34 @@ def norm_id(i):
 
 # ---------------------------------------------------------------- items
 ITEMS = {}  # key -> item record
+MODEL_OWNER = {}  # item_model -> key of the named (custom) item that uses it
 
 
 def stack_name(stack):
     comps = stack.get('components', {}) or {}
     for key in ('minecraft:custom_name', 'minecraft:item_name'):
         if key in comps:
-            return render_text(comps[key]).strip()
+            n = render_text(comps[key]).strip()
+            base = norm_id(stack['id']).split(':')[-1]
+            if base in ('splash_potion', 'lingering_potion', 'potion') and 'potion' not in n.lower():
+                n = '%s of %s' % (vname(base), n)  # e.g. the Chemist's "Darkness" splash potion
+            return n
+    pc = comps.get('minecraft:potion_contents')
+    if isinstance(pc, dict) and pc.get('custom_name'):
+        base = norm_id(stack['id']).split(':')[-1]
+        k = 'item.minecraft.%s.effect.%s' % (base, pc['custom_name'])
+        if k in LANG:
+            return strip_codes(LANG[k]).strip()
     return vname(stack['id'])
 
 
 def item_key(stack):
     comps = stack.get('components', {}) or {}
     name = stack_name(stack)
+    named = comps.get('minecraft:item_name') or comps.get('minecraft:custom_name')
+    model = comps.get('minecraft:item_model')
+    if not named and model and model in MODEL_OWNER:
+        name = MODEL_OWNER[model]  # model-only stack (e.g. a trade asking for an electrum item)
     model = comps.get('minecraft:item_model')
     return name, model
 
@@ -188,7 +211,11 @@ def register(stack, src, how):
             'renamed_vanilla': not comps.get('minecraft:item_name') and not comps.get('minecraft:custom_name'),
             'components': {}, 'sources': [],
         }
-    if model and model not in rec['models']:
+    named = comps.get('minecraft:item_name') or comps.get('minecraft:custom_name')
+    if model and named and model not in MODEL_OWNER:
+        MODEL_OWNER[model] = key
+    # only attach a model if this stack is really this item (not a vanilla item wearing another item's model)
+    if model and model not in rec['models'] and (named or not rec['models']) and MODEL_OWNER.get(model, key) == key:
         rec['models'].append(model)
     summ = summarise_components(comps)
     # keep the richest component set
@@ -203,7 +230,7 @@ def display_stack(stack):
     if isinstance(stack, str):
         return {'name': vname(stack), 'id': norm_id(stack), 'count': 1}
     comps = stack.get('components') or {}
-    d = {'name': variant_key(stack_name(stack), comps), 'id': norm_id(stack['id']), 'count': stack.get('count', 1)}
+    d = {'name': variant_key(item_key(stack)[0], comps), 'id': norm_id(stack['id']), 'count': stack.get('count', 1)}
     if comps.get('minecraft:item_model'):
         d['model'] = comps['minecraft:item_model']
     if comps.get('minecraft:stored_enchantments'):
@@ -413,6 +440,15 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'loot_table', '**', '*.json'), r
                  'overrides_vanilla': ns == 'minecraft' and os.path.exists(
                      os.path.join(VDATA, 'loot_table', os.path.relpath(f, os.path.join(DP, ns, 'loot_table'))))}
 
+# vanilla loot tables the pack leaves alone still produce renamed items (glowstone -> Estus Ash)
+for f in sorted(glob.glob(os.path.join(VDATA, 'loot_table', '**', '*.json'), recursive=True)):
+    rp = os.path.relpath(f, os.path.join(VDATA, 'loot_table'))[:-5]
+    lid = 'minecraft:' + rp
+    if lid in LOOT or not rp.startswith(('entities/', 'blocks/', 'chests/', 'gameplay/', 'archaeology/', 'shearing/')):
+        continue
+    LOOT[lid] = {'id': lid, 'src': 'vanilla:loot_table/' + rp + '.json', 'type': None, 'vanilla': True,
+                 'entries': parse_loot(load(f), 'vanilla:loot_table/' + rp + '.json'), 'overrides_vanilla': False}
+
 # ---------------------------------------------------------------- trades
 TRADES = defaultdict(lambda: defaultdict(list))
 PROF_NAME = {}
@@ -435,6 +471,16 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
         if not os.path.exists(tfile):
             continue
         t = load(tfile)
+        mods = t.get('given_item_modifiers') or []
+        if any(m.get('function', '').split(':')[-1] == 'discard' for m in mods):
+            continue  # placeholder trade the game throws away (levels with no real trades)
+        for m in mods:
+            if m.get('function', '').split(':')[-1] == 'set_name' and 'gives' in t:
+                t['gives'].setdefault('components', {})['minecraft:item_name' if m.get('target') == 'item_name' else 'minecraft:custom_name'] = m.get('name')
+        biome = None
+        mp = t.get('merchant_predicate') or {}
+        if mp.get('condition', '').endswith('location_check'):
+            biome = (mp.get('predicate') or {}).get('biomes')
         for k in ('wants', 'gives', 'additional_wants'):
             if k in t:
                 register(t[k], rel(tfile), 'trade')
@@ -445,6 +491,7 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
             'gives': display_stack(t['gives']) if 'gives' in t else None,
             'max_uses': t.get('max_uses'), 'xp': t.get('xp'),
             'price_multiplier': t.get('price_multiplier'), 'reputation_discount': t.get('reputation_discount'),
+            'biome': biome,
         })
     TRADES[prof][level + '_meta'] = {'amount': d.get('amount'), 'src': rel(f)}
     PROF_NAME[prof] = strip_codes(LANG.get('entity.minecraft.villager.' + prof, prof.replace('_', ' ').title()))
@@ -604,6 +651,7 @@ data = {
     'enchantments': ENCH,
     'advancements': ADV,
     'functions': FUNCTIONS,
+    'missing_lang': sorted(MISSING_LANG),
 }
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 with open(OUT, 'w', encoding='utf-8') as f:

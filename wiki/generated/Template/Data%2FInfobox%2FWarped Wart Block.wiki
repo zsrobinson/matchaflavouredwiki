@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Warped Wart Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Warped Wart Block.png}}
+|imagesize=160px
+|invimage=Warped Wart Block
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:warped_wart_block</code>
+|source={{Source|vanilla:loot_table/blocks/warped_wart_block.json|warped_wart_block.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

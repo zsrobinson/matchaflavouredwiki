@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Dead Bubble Coral Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dead Bubble Coral Block.png}}
+|imagesize=160px
+|invimage=Dead Bubble Coral Block
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:dead_bubble_coral_block</code>
+|source={{Source|vanilla:loot_table/blocks/bubble_coral_block.json|bubble_coral_block.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

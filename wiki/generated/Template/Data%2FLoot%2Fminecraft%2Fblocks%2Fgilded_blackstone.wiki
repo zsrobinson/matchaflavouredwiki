@@ -1,0 +1,11 @@
+<includeonly><small>Loot table <code>minecraft:blocks/gilded_blackstone</code> ({{Source|vanilla:loot_table/blocks/gilded_blackstone.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Gilded Blackstone|mcw=Gilded Blackstone}} || 1 || 33.3% || 33.3% || Silk Touch
+|-
+| {{ItemLink|Gilded Blackstone|mcw=Gilded Blackstone}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Gold Nugget|mcw=Gold Nugget}} || 2–5 || 3.33% || 3.33% || Fortune increases chance
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

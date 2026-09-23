@@ -1,0 +1,12 @@
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Azure bluet <small>({{Source|vanilla:loot_table/blocks/azure_bluet.json|blocks/azure_bluet}})</small> || 1 || 100% || 
+|-
+| Potted azure bluet <small>({{Source|vanilla:loot_table/blocks/potted_azure_bluet.json|blocks/potted_azure_bluet}})</small> || 1 || 100% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

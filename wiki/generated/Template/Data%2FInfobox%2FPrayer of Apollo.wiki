@@ -1,5 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|title={{#if:{{{title|}}}|{{{title}}}|Prayer of Apollo}}
+|image={{#if:{{{image|}}}|{{{image}}}|Prayer of Apollo.png}}
+|imagesize=160px
+|invimage=Prayer of Apollo
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}

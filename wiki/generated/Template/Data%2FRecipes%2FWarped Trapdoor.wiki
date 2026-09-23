@@ -15,7 +15,7 @@
 | {{Stonecutter|Input=Warped Planks|Output=Warped Trapdoor}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_trapdoor_from_stonecutting_warped_planks.json|matcha:stonecutting/warped_trapdoor_from_stonecutting_warped_planks}}</small>
 |-
 | [[Warped Trapdoor]]
-| Any [[warped stems]]
+| <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
 | {{Stonecutter|Input=Any Warped Stems|Output=Warped Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_trapdoor_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_trapdoor_from_stonecutting_warped_stem}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

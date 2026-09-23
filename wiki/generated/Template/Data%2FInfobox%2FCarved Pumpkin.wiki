@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Carved Pumpkin}}
+|image={{#if:{{{image|}}}|{{{image}}}|Carved Pumpkin.png}}
+|imagesize=160px
+|invimage=Carved Pumpkin
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:carved_pumpkin</code>
+|source={{Source|vanilla:loot_table/blocks/carved_pumpkin.json|carved_pumpkin.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,7 @@
+<includeonly><small>Loot table <code>minecraft:blocks/barrel</code> ({{Source|vanilla:loot_table/blocks/barrel.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Barrel}} || 1 || 100% || 100% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

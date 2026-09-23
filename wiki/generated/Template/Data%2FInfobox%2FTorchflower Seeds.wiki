@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Torchflower Seeds}}
+|image={{#if:{{{image|}}}|{{{image}}}|Torchflower Seeds.png}}
+|imagesize=160px
+|invimage=Torchflower Seeds
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:torchflower_seeds</code>
+|source={{Source|vanilla:loot_table/blocks/torchflower_crop.json|torchflower_crop.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

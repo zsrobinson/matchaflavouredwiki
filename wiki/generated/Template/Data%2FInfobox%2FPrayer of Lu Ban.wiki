@@ -1,5 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|title={{#if:{{{title|}}}|{{{title}}}|Prayer of Lu Ban}}
+|image={{#if:{{{image|}}}|{{{image}}}|Prayer of Lu Ban.png}}
+|imagesize=160px
+|invimage=Prayer of Lu Ban
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}

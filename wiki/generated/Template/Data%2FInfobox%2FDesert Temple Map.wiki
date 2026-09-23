@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Desert Temple Map}}
+|image={{#if:{{{image|}}}|{{{image}}}|Desert Temple Map.png}}
+|imagesize=160px
+|invimage=Desert Temple Map
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:map</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/cartographer/2/desert_temple.json|desert_temple.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

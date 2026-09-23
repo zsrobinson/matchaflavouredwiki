@@ -1,4 +1,5 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
@@ -6,9 +7,9 @@
 |-
 | Jungle temple dispenser <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/jungle_temple_dispenser.json|chests/jungle_temple_dispenser}})</small> || 1 || 99.3% || 
 |-
-| Trial chambers / reward common <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_common.json|chests/trial_chambers/reward_common}})</small> || 2–8 || 16.0% || 
+| Trial chambers / reward <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward.json|chests/trial_chambers/reward}})</small> || 2–8 || 19.2% || 
 |-
-| Trial chambers / reward ominous common <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_ominous_common.json|chests/trial_chambers/reward_ominous_common}})</small> || 4–12 || 20.0% || 
+| Trial chambers / reward ominous <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward_ominous.json|chests/trial_chambers/reward_ominous}})</small> || 4–12 || 24.0% || 
 |}
 
 '''Mob drops'''
@@ -17,15 +18,15 @@
 |-
 | Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/bogged.json|entities/bogged}})</small> || 0–2 || 66.7% || player kill
 |-
+| Parched <small>({{Source|vanilla:loot_table/entities/parched.json|entities/parched}})</small> || 0–1 || 50.0% || player kill
+|-
 | Stray <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/stray.json|entities/stray}})</small> || 0–1 || 50.0% || player kill
 |}
 
-'''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+'''Gameplay'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
 |-
-| [[Fletcher]] || Novice || {{ItemLink|Obol}} || 64
-|-
-| [[Fletcher]] || Novice || {{ItemLink|Obol}} || 64
+| Hero of the village / fletcher gift <small>({{Source|vanilla:loot_table/gameplay/hero_of_the_village/fletcher_gift.json|gameplay/hero_of_the_village/fletcher_gift}})</small> || 0–1 || 16.7% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

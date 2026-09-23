@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Abandoned Taiga Village Map}}
+|image={{#if:{{{image|}}}|{{{image}}}|Abandoned Taiga Village Map.png}}
+|imagesize=160px
+|invimage=Abandoned Taiga Village Map
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:map</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/village_taiga.json|village_taiga.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

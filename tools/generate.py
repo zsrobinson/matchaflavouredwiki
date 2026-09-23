@@ -125,17 +125,18 @@ INTRINSIC_PAGES = [('warding', 'Warding'), ('adamant', 'Doom'), ('shakudo', 'Div
 
 
 def intrinsic_text(eid, lvl):
-    """Readable, correctly linked label for an enchantment used as an intrinsic."""
+    """Readable, correctly linked label for an enchantment (including glyph-named intrinsics)."""
     e = ENCH.get(eid) or {}
     raw = e.get('name') or ''
     plain = re.sub(r'⟦[^⟧]+⟧', '', raw).strip()
     maxl = e.get('max_level') or 1
-    if plain and not re.fullmatch(r'[0-9+∞\-() :.]*', plain) and not eid.startswith('matcha:'):
-        return '[[%s]]%s' % (plain, (' ' + roman(lvl)) if maxl > 1 else '')
     key = eid.split(':')[-1]
-    page = next((p for k, p in INTRINSIC_PAGES if key.startswith(k)), None) or key.replace('_', ' ').capitalize()
-    shown = glyphs(raw).strip() if raw else page
-    return '[[%s|%s]]' % (page, shown) if page else shown
+    page = next((p for k, p in INTRINSIC_PAGES if key.startswith(k)), None) if eid.startswith('matcha:') else None
+    if page:
+        return '[[%s|%s]]' % (page, glyphs(raw).strip() or page)
+    if plain and not re.fullmatch(r'[0-9+∞\-() :.]*', plain) and not plain.startswith(('ERROR', 'enchantment.')):
+        return '[[%s]]%s' % (plain, (' ' + roman(lvl)) if maxl > 1 else '')
+    return key.replace('_', ' ').capitalize()
 
 
 def ench_label(eid, lvl):
@@ -155,6 +156,10 @@ def vdefaults(base_id):
 def effective(item):
     """Vanilla default components of the base item, overridden by the pack's components."""
     comps = {k.split(':')[-1]: v for k, v in vdefaults(item['base_id']).items()}
+    if not item['renamed_vanilla']:
+        for k in ('food', 'consumable'):
+            if k not in item['components']:
+                comps.pop(k, None)
     for k, v in item['components'].items():
         comps[k] = v
     return comps
@@ -167,7 +172,7 @@ def heal_from_effects(effects):
         eid = e['id'].split(':')[-1]
         amp = e.get('amplifier', 0)
         dur = e.get('duration', 0)
-        if eid == 'regeneration' and not e.get('show_icon', True):
+        if eid == 'regeneration' and (not e.get('show_icon', True) or amp >= 2):
             interval = max(1, 50 >> amp)
             hp += dur // interval
         elif eid == 'instant_health':
@@ -242,10 +247,24 @@ def item_type(item, comps):
     return 'Item'
 
 
+def vanilla_tag(tag):
+    ns, p = tag.lstrip('#').split(':') if ':' in tag else ('minecraft', tag.lstrip('#'))
+    for base in (os.path.join(ROOT, 'source', 'matcha-flavoured', 'MF_datapack', 'data', ns, 'tags', 'item', p + '.json'),
+                 os.path.join(ROOT, 'source', 'vanilla-data', 'data', ns, 'tags', 'item', p + '.json')):
+        if os.path.exists(base):
+            out = []
+            for v in json.load(open(base))['values']:
+                v = v if isinstance(v, str) else v['id']
+                out += vanilla_tag(v) if v.startswith('#') else [v]
+            return out
+    return []
+
+
 def item_link_list(ids_or_tag):
     if isinstance(ids_or_tag, str):
         if ids_or_tag.startswith('#'):
-            return '<code>%s</code>' % ids_or_tag
+            ids = vanilla_tag(ids_or_tag)
+            return ', '.join(link_for_id(i) for i in ids) if ids else '<code>%s</code>' % ids_or_tag
         return link_for_id(ids_or_tag)
     return ', '.join(link_for_id(i) for i in ids_or_tag)
 
@@ -269,7 +288,7 @@ def link_for_id(i):
 
 def infobox(item):
     c = effective(item)
-    name = item['name']
+    name = item.get('_key', item['name'])
     f = {}
     t = item_type(item, c)
     f['type'] = t
@@ -303,8 +322,9 @@ def infobox(item):
         f['attackspeed'] = fmt_num(4 + spd)
     tool = c.get('tool')
     if tool:
-        speeds = [r.get('speed') for r in tool.get('rules', []) if r.get('speed') and r.get('correct_for_drops') is not False
-                  and r.get('speed') < 1000 and 'cobweb' not in json.dumps(r.get('blocks'))]
+        rules = [r for r in tool.get('rules', []) if r.get('speed') and r.get('correct_for_drops') is not False and r.get('speed') < 1000]
+        mineable = [r['speed'] for r in rules if isinstance(r.get('blocks'), str) and 'mineable/' in r['blocks']]
+        speeds = mineable or [r['speed'] for r in rules if 'cobweb' not in json.dumps(r.get('blocks'))]
         if speeds:
             f['miningspeed'] = fmt_num(max(speeds))
     for attr, key in (('armor', 'armor'), ('armor_toughness', 'toughness'), ('knockback_resistance', 'knockbackres')):
@@ -324,7 +344,7 @@ def infobox(item):
         f['intrinsics'] = '<br />'.join(intrinsic_text(e, l) for e, l in ench.items())
     elif ench:
         f['effects'] = ('%s<br />' % f['effects'] if f.get('effects') else '') + 'Stores: ' + ', '.join(
-            '[[%s]]%s' % (ench_name(e), (' ' + roman(l)) if (ENCH.get(e, {}).get('max_level') or 1) > 1 else '') for e, l in ench.items())
+            intrinsic_text(e, l) for e, l in ench.items())
     lore = item['components'].get('lore')
     if lore:
         f['tooltip'] = '<br />'.join(glyphs(x) for x in lore if x.strip())
@@ -339,11 +359,11 @@ def infobox(item):
     if srcs:
         f['source'] = '{{Source|%s|%s}}' % (srcs[0], os.path.basename(srcs[0]))
     lines = ['{{Infobox', '|title={{#if:{{{title|}}}|{{{title}}}|%s}}' % name]
-    if has_icon(item['name']):
+    if has_icon(name):
         # large render plus the inventory slot, like minecraft.wiki's item infoboxes
-        lines.append('|image={{#if:{{{image|}}}|{{{image}}}|%s.png}}' % safe(item['name']))
+        lines.append('|image={{#if:{{{image|}}}|{{{image}}}|%s.png}}' % safe(name))
         lines.append('|imagesize=160px')
-        lines.append('|invimage=%s' % safe(item['name']))
+        lines.append('|invimage=%s' % safe(name))
     for k in ('caption', 'extrarows', 'bonus'):
         lines.append('|%s={{{%s|}}}' % (k, k))
     for k in ('type', 'intrinsics', 'renewable'):
@@ -388,7 +408,12 @@ def ing_links(ing):
     if ing is None:
         return ''
     if ing.get('tag') and len(set(ing['names'])) > 1:
-        return 'Any [[%s]]' % ing['tag'].split(':')[-1].split('/')[-1].replace('_', ' ')
+        members = []
+        for n in ing['names']:
+            if n not in members:
+                members.append(n)
+        return '<span class="explain" title="%s">Any %s</span>' % (
+            ', '.join(members).replace('"', ''), ing['tag'].split(':')[-1].split('/')[-1].replace('_', ' '))
     names = []
     for n in ing['names']:
         if n not in names:
@@ -629,7 +654,9 @@ def cond_notes(conds):
         elif t == 'survives_explosion':
             continue
         elif t == 'table_bonus':
-            notes.append('Fortune affects chance')
+            ch = c.get('chances') or [1]
+            mult *= ch[0]
+            notes.append('Fortune increases chance')
         elif t in ('any_of', 'all_of', 'alternative'):
             m2, n2 = cond_notes(c.get('terms'))
             notes += n2
@@ -807,6 +834,11 @@ def page_exists(name):
     return safe(name) in PAGES_HERE
 
 
+def PAGES_HERE_RESET():
+    global PAGES_HERE
+    PAGES_HERE = None
+
+
 def il(name):
     """{{ItemLink}} that falls back to minecraft.wiki for vanilla items without a page here."""
     if page_exists(name):
@@ -820,8 +852,7 @@ def stack_cell(s):
         return ''
     ench = ''
     if s.get('enchantments'):
-        ench = '<br /><small>%s</small>' % ', '.join('%s %s' % (ench_name(e), roman(l) if (ENCH.get(e, {}).get('max_level') or 1) > 1 else '')
-                                                     for e, l in s['enchantments'].items())
+        ench = '<br /><small>%s</small>' % ', '.join(intrinsic_text(e, l) for e, l in s['enchantments'].items())
     return '%s%s%s' % ('%d × ' % s['count'] if s.get('count', 1) > 1 else '', il(s['name']), ench)
 
 
@@ -843,8 +874,12 @@ def trades_page(prof):
                 lvl = '! rowspan="%d" | %s%s\n' % (len(ts), names.get(lk, lk), ('<br /><small>%s of %d offered</small>' % (fmt_num(amt), len(ts))) if amt and amt < len(ts) else '')
                 first = False
             uses = t.get('max_uses')
-            lines.append('|-\n%s| %s || %s || %s || %s' % (lvl, want, stack_cell(t['gives']),
-                                                           '∞' if uses and uses >= 999 else (uses or ''), t.get('xp') or ''))
+            gives = stack_cell(t['gives'])
+            if t.get('biome'):
+                b = t['biome'] if isinstance(t['biome'], str) else ', '.join(t['biome'])
+                gives += '<br /><small>only in %s biomes</small>' % b.replace('#minecraft:', '').replace('spawns_', '').replace('_variant_farm_animals', '').replace('_', ' ')
+            lines.append('|-\n%s| %s || %s || %s || %s' % (lvl, want, gives,
+                                         '∞' if uses and uses >= 999 else (uses or ''), t.get('xp') or ''))
     lines.append('|}')
     return '<includeonly>' + '\n'.join(lines) + '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>'
 
@@ -903,7 +938,7 @@ def sources_page(name):
         parts.append('|}')
     if not parts:
         return None
-    return ('<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, '
+    return ('<includeonly>\n<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, '
             'assuming no Looting, Luck or Fortune.</div>\n' + '\n'.join(parts) +
             '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>')
 
@@ -979,8 +1014,8 @@ def enchantment_table():
                     changed.append(k.replace('_', ' '))
         items = d.get('supported_items')
         items_t = ('<code>%s</code>' % items) if isinstance(items, str) else ('%d items' % len(items) if items else '—')
-        rows.append('|-\n| [[%s]] || <code>%s</code> || %s || %s || %s || %s' % (
-            ench_name(eid), eid, d.get('max_level'), ', '.join(d.get('slots', [])), items_t,
+        rows.append('|-\n| %s || <code>%s</code> || %s || %s || %s || %s' % (
+            intrinsic_text(eid, 1), eid, d.get('max_level'), ', '.join(d.get('slots', [])), items_t,
             ('Changed: ' + ', '.join(changed)) if changed else ('Unchanged' if van else "'''New'''")))
     return ('<includeonly>{| class="wikitable sortable"\n! Enchantment !! ID !! Max level !! Slots !! Applies to !! Compared with vanilla\n' +
             '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
@@ -1187,6 +1222,7 @@ def main():
         title = safe(name)
         if not title or title.startswith('item.kleispack') or title.startswith('adv.'):
             continue
+        item['_key'] = name
         write('Template', 'Data/Infobox/' + title, infobox(item)); n['infobox'] += 1
         p = recipes_page(name)
         if p:
@@ -1199,6 +1235,30 @@ def main():
             write('Template', 'Data/Sources/' + title, p); n['sources'] += 1
         if is_pack_relevant(name, item) and not hand_exists('Main', title):
             write('Main', title, stub_article(name, item)); n['stubs'] += 1
+    # vanilla items the pack uses but doesn't change: a short page pointing at minecraft.wiki,
+    # with the pack's own recipes and uses (so every link in a recipe table goes somewhere)
+    for name, item in ITEMS.items():
+        title = safe(name)
+        if not title or hand_exists('Main', title) or is_pack_relevant(name, item) or title.startswith(('item.', 'adv.')):
+            continue
+        if not (producing(name) or USES.get(name) or SOURCES.get(name) or TRADE_GIVES.get(name) or TRADE_WANTS.get(name)):
+            continue
+        body = ['{{Vanilla}}\n{{Infobox auto}}',
+                "'''%s''' is %s item from vanilla ''Minecraft'' that [[Matcha Flavoured]] does not change. "
+                "See {{MCW|%s}} on the Minecraft Wiki for everything about it; this page lists only where it appears in the pack." % (
+                    name, 'an' if name[0] in 'AEIOU' else 'a', item['vanilla_name'] or name), '']
+        if producing(name):
+            body.append('== Obtaining ==\n{{Recipes}}\n')
+        if SOURCES.get(name) or TRADE_GIVES.get(name):
+            if not producing(name):
+                body.append('== Obtaining ==')
+            body.append('{{Sources}}\n')
+        if USES.get(name) or TRADE_WANTS.get(name):
+            body.append('== Usage ==\n{{Uses}}\n')
+        body.append('[[Category:Vanilla items]]')
+        write('Main', title, '\n'.join(body)); n['vanilla pages'] += 1
+    PAGES_HERE_RESET()
+
     # redirects: vanilla name -> renamed item
     for name, item in ITEMS.items():
         vn = item['vanilla_name']
@@ -1226,6 +1286,12 @@ def main():
         lua.append('\t[%s] = { %s },' % (json.dumps(k), ', '.join(json.dumps(safe(x)) for x in ALIASES[k])))
     lua.append('}\nreturn aliases')
     write('Module', 'Inventory slot/Aliases', '\n'.join(lua))
+    for k, members in ALIASES.items():
+        target = k[len('Any '):]
+        for t in {target, target[0] + target[1:].lower()}:
+            if not hand_exists('Main', t) and members and not os.path.exists(os.path.join(GEN, 'Main', fname(t))):
+                write('Main', t, '#REDIRECT [[%s]]\n[[Category:Redirects from item tags]]' % safe(members[0]))
+                n['tag redirects'] += 1
     effect_pages(n)
     case_redirects(n)
     category_pages(n)

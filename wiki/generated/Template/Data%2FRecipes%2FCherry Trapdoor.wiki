@@ -15,7 +15,7 @@
 | {{Stonecutter|Input=Cherry Planks|Output=Cherry Trapdoor}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/cherry_trapdoor_from_stonecutting_cherry_planks.json|matcha:stonecutting/cherry_trapdoor_from_stonecutting_cherry_planks}}</small>
 |-
 | [[Cherry Trapdoor]]
-| Any [[cherry logs]]
+| <span class="explain" title="Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood">Any cherry logs</span>
 | {{Stonecutter|Input=Any Cherry Logs|Output=Cherry Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/cherry_trapoor_from_stonecutting_cherry_logs.json|matcha:stonecutting/cherry_trapoor_from_stonecutting_cherry_logs}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

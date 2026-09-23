@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Dead Brain Coral Fan}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dead Brain Coral Fan.png}}
+|imagesize=160px
+|invimage=Dead Brain Coral Fan
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:dead_brain_coral_fan</code>
+|source={{Source|vanilla:loot_table/blocks/dead_brain_coral_fan.json|dead_brain_coral_fan.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

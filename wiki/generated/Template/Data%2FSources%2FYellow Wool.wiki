@@ -1,10 +1,32 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+
+'''Mob drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Sheep / yellow <small>({{Source|vanilla:loot_table/entities/sheep/yellow.json|entities/sheep/yellow}})</small> || 1 || 100% || 
+|}
+
+'''Gameplay'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Hero of the village / shepherd gift <small>({{Source|vanilla:loot_table/gameplay/hero_of_the_village/shepherd_gift.json|gameplay/hero_of_the_village/shepherd_gift}})</small> || 1 || 6.25% || 
+|}
 
 '''Shearing'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Sheep / yellow <small>({{Source|MF_datapack/data/minecraft/loot_table/shearing/sheep/yellow.json|shearing/sheep/yellow}})</small> || 1 || 100% || 
+| Sheep <small>({{Source|vanilla:loot_table/shearing/sheep.json|shearing/sheep}})</small> || 1 || 6.25% || entity condition
+|}
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Yellow wool <small>({{Source|vanilla:loot_table/blocks/yellow_wool.json|blocks/yellow_wool}})</small> || 1 || 100% || 
 |}
 
 '''Trading'''

@@ -63,6 +63,8 @@ def localise(css):
         name = None
         if url.startswith('filepath://'):
             name = url[len('filepath://'):]
+        elif url.startswith('https://minecraft.wiki/images/'):
+            name = url.split('?')[0].rsplit('/', 1)[-1]
         elif url.startswith('/images/'):
             name = url.split('?')[0].rsplit('/', 1)[-1]
         if not name:
@@ -75,6 +77,7 @@ def localise(css):
 def main():
     parts = {
         'Gadget-mcw-common.css': [('MediaWiki:Common.css', raw), ('MediaWiki:Gadget-site-styles.css', raw)],
+        'Gadget-mcw-mainpage.css': [('Minecraft Wiki/styles.css', raw)],
         'Gadget-mcw-vector.css': [('MediaWiki:Vector.css', raw), ('MediaWiki:Vector-theme-dark.css', raw),
                            ('ext.gadget.darkmode', gadget_css), ('ext.gadget.stickyToc', gadget_css),
                            ('ext.gadget.sound-styles', gadget_css)],

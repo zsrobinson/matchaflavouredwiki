@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Overgrown Abbey Map}}
+|image={{#if:{{{image|}}}|{{{image}}}|Overgrown Abbey Map.png}}
+|imagesize=160px
+|invimage=Overgrown Abbey Map
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>matcha:abbey_map</code>
+|base=<code>minecraft:map</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_paradise_lost.json|abbey_paradise_lost.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

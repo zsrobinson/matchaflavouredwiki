@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Splash Potion of Darkness}}
+|image={{#if:{{{image|}}}|{{{image}}}|Splash Potion of Darkness.png}}
+|imagesize=160px
+|invimage=Splash Potion of Darkness
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|tooltip={{G|Knockback resistance}} Darkness (5:00)<br />{{G|Knockback resistance}} Blindness (5:00)
+|id=<code>minecraft:splash_potion</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_pitch.json|splash_pitch.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

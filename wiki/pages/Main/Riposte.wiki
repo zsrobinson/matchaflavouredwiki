@@ -12,7 +12,7 @@
 The [[Hepatizon Sword]] gets Riposte II when it is smithed, and Hepatizon Swords found as loot have it too.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_sword.json}}</ref> No blessing or book gives it.
 
 == Usage ==
-Riposte only applies to items whose base item is the stone sword. The pack builds some of its own weapons on that item, including the Hepatizon Sword and the [[Butcher's Knife]], while the vanilla stone sword recipe is removed.
+Riposte only applies to items whose base item is the stone sword. The pack builds some of its own weapons on that item, including the Hepatizon Sword and the [[Cleaver]], while the vanilla stone sword recipe is removed.
 
 == Behavior ==
 After the wielder hits a mob, they are pushed straight backward, away from the direction they face, with a horizontal impulse of 0.458 per level (0.916 at level II). A spear lunge sound plays, and the weapon loses 1 extra point of durability.<ref>{{Source|MF_datapack/data/matcha/enchantment/riposte.json}}</ref>

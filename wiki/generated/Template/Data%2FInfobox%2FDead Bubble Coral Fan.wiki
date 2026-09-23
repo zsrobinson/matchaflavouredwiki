@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Dead Bubble Coral Fan}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dead Bubble Coral Fan.png}}
+|imagesize=160px
+|invimage=Dead Bubble Coral Fan
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:dead_bubble_coral_fan</code>
+|source={{Source|vanilla:loot_table/blocks/dead_bubble_coral_fan.json|dead_bubble_coral_fan.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

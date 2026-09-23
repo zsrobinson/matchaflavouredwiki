@@ -1,5 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|title={{#if:{{{title|}}}|{{{title}}}|Prayer of Glaucus}}
+|image={{#if:{{{image|}}}|{{{image}}}|Prayer of Glaucus.png}}
+|imagesize=160px
+|invimage=Prayer of Glaucus
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}

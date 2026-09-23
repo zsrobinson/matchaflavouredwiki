@@ -43,7 +43,7 @@ An Abbey is assembled from template pieces joined by jigsaw blocks. The pieces a
 
 The layout follows this chain:
 # The '''tower''' (21 × 48 × 23 blocks) stands on the surface. Its bottom jigsaw connects down to the entrance shaft.
-# The '''entrance''' (30 × 48 × 13) is a 48-block-deep shaft with a bubble column over [[soul sand]] to carry the player back up, and a [[Copper Eye]] door and several Copper Eye grates. A [[Crystal Heart]] lies on a ledge inside it.
+# The '''entrance''' (30 × 48 × 13) is a 48-block-deep shaft with a bubble column over {{MCW|Soul Sand|soul sand}} to carry the player back up, and a [[Copper Eye]] door and several Copper Eye grates. A [[Crystal Heart]] lies on a ledge inside it.
 # The '''tutorial room''' (35 × 16 × 35) is the hub of the dungeon. It holds five trial spawners, connects to reward rooms on its east and west sides, to puzzle rooms on its upper east and west sides, and to a combat room to the south.
 # '''Combat rooms''' connect onward to puzzle rooms and reward rooms, and '''puzzle rooms''' connect back to combat rooms, so the dungeon branches until the depth limit or the 116-block radius is reached.
 # '''Reward rooms''' ("boons") are 5 × 7 × 7 dead ends.
@@ -74,7 +74,7 @@ Several jigsaw blocks in the combat rooms point to a pool named <code>abbey/defa
 |-
 | Lantern drop || 17 × 37 × 13 || A zombie trial spawner, 2 chipped anvils, TNT, a Copper Eye lantern, bubble column.
 |-
-| Decision puzzle || 19 × 10 × 17 || A cave spider trial spawner, a dispenser with 3 [[tipped arrow]]s of Poison (long), bats.
+| Decision puzzle || 19 × 10 × 17 || A cave spider trial spawner, a dispenser with 3 {{MCW|Tipped Arrow|tipped arrows}} of Poison (long), bats.
 |-
 | Bath || 19 × 10 × 13 || A water pool and vertical Copper Eye grates.
 |-

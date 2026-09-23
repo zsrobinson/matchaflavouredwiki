@@ -1,4 +1,5 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
@@ -13,5 +14,12 @@
 | Village / village tannery <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_tannery.json|chests/village/village_tannery}})</small> || 1 || 32.4% || 
 |-
 | Village / village weaponsmith <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_weaponsmith.json|chests/village/village_weaponsmith}})</small> || 1 || 11.6% || 
+|}
+
+'''Mob drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Ravager <small>({{Source|vanilla:loot_table/entities/ravager.json|entities/ravager}})</small> || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

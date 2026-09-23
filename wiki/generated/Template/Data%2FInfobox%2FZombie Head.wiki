@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Zombie Head}}
+|image={{#if:{{{image|}}}|{{{image}}}|Zombie Head.png}}
+|imagesize=160px
+|invimage=Zombie Head
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Armor}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Uncommon
+|stackable=Yes (64)
+|id=<code>minecraft:zombie_head</code>
+|source={{Source|vanilla:loot_table/blocks/zombie_head.json|zombie_head.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

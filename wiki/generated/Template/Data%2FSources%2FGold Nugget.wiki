@@ -1,4 +1,5 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
@@ -38,6 +39,8 @@
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
+|-
+| Gilded blackstone <small>({{Source|vanilla:loot_table/blocks/gilded_blackstone.json|blocks/gilded_blackstone}})</small> || 2–5 || 3.33% || Fortune increases chance
 |-
 | Nether gold ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/nether_gold_ore.json|blocks/nether_gold_ore}})</small> || 2–6 || 33.3% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

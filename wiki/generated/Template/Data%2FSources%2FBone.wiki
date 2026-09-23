@@ -1,4 +1,5 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
@@ -31,7 +32,11 @@
 |-
 | Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/bogged.json|entities/bogged}})</small> || 0–2 || 66.7% || player kill
 |-
+| Parched <small>({{Source|vanilla:loot_table/entities/parched.json|entities/parched}})</small> || 0–2 || 66.7% || 
+|-
 | Skeleton <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/skeleton.json|entities/skeleton}})</small> || 0–2 || 66.7% || player kill
+|-
+| Skeleton horse <small>({{Source|vanilla:loot_table/entities/skeleton_horse.json|entities/skeleton_horse}})</small> || 0–2 || 66.7% || 
 |-
 | Stray <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/stray.json|entities/stray}})</small> || 0–2 || 66.7% || 
 |-

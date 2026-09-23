@@ -1,0 +1,22 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Hepatizon Elytra}}
+|image={{#if:{{{image|}}}|{{{image}}}|Hepatizon Elytra.png}}
+|imagesize=160px
+|invimage=Hepatizon Elytra
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Equipment}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Epic
+|stackable=No
+|durability=800
+|armor=1
+|repair=[[Honeycomb Block]], [[Block of Copper]]
+|tooltip={{G|Armor}} 1<br />{{G|Speed}} +0.02<br />Repaired with:<br />Honeycomb Block<br />Block of Copper
+|id=<code>matcha:hepatizon_elytra</code>
+|base=<code>minecraft:elytra</code>
+|source={{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_elytra.json|hepatizon_elytra.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

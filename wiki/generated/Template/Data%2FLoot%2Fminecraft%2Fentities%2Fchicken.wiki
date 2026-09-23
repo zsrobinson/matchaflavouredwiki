@@ -1,0 +1,9 @@
+<includeonly><small>Loot table <code>minecraft:entities/chicken</code> ({{Source|vanilla:loot_table/entities/chicken.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Raw Chicken}} || 1 || 100% || 100% || 
+|-
+| {{ItemLink|Feather|mcw=Feather}} || 0–2 || 66.7% || 66.7% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

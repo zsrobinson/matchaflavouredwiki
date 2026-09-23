@@ -1,5 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|title={{#if:{{{title|}}}|{{{title}}}|Elegy of Hyacinthus}}
+|image={{#if:{{{image|}}}|{{{image}}}|Elegy of Hyacinthus.png}}
+|imagesize=160px
+|invimage=Elegy of Hyacinthus
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}

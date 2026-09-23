@@ -1,4 +1,5 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
@@ -32,6 +33,8 @@
 | Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 13.8% || biome: #minecraft:unused
 |-
 | Spider <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/spider.json|entities/spider}})</small> || 0–2 || 66.7% || 
+|-
+| Strider <small>({{Source|vanilla:loot_table/entities/strider.json|entities/strider}})</small> || 2–5 || 100% || 
 |}
 
 '''Fishing'''
@@ -59,5 +62,14 @@
 | Cat morning gift <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/cat_morning_gift.json|gameplay/cat_morning_gift}})</small> || 1 || 20.0% || 
 |-
 | Piglin bartering <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/piglin_bartering.json|gameplay/piglin_bartering}})</small> || 3–9 || 4.55% || 
+|}
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Cobweb <small>({{Source|vanilla:loot_table/blocks/cobweb.json|blocks/cobweb}})</small> || 1 || 50.0% || 
+|-
+| Tripwire <small>({{Source|vanilla:loot_table/blocks/tripwire.json|blocks/tripwire}})</small> || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

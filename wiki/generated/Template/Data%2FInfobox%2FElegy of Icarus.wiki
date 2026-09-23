@@ -1,5 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|title={{#if:{{{title|}}}|{{{title}}}|Elegy of Icarus}}
+|image={{#if:{{{image|}}}|{{{image}}}|Elegy of Icarus.png}}
+|imagesize=160px
+|invimage=Elegy of Icarus
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}

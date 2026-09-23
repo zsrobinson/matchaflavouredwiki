@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Bulk Blackstone}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bulk Blackstone.png}}
+|imagesize=160px
+|invimage=Bulk Blackstone
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|tooltip=Desc<br />Use to unpack
+|id=<code>minecraft:blackstone</code>
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/bulk_block/blackstone.json|blackstone.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

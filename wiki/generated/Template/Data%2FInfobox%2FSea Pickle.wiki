@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Sea Pickle}}
+|image={{#if:{{{image|}}}|{{{image}}}|Sea Pickle.png}}
+|imagesize=160px
+|invimage=Sea Pickle
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:sea_pickle</code>
+|source={{Source|vanilla:loot_table/blocks/sea_pickle.json|sea_pickle.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

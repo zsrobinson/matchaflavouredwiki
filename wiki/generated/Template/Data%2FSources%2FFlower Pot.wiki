@@ -1,4 +1,5 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
@@ -12,5 +13,88 @@
 ! Source !! Stack size !! Chance !! Notes
 |-
 | Trail ruins common <small>({{Source|MF_datapack/data/minecraft/loot_table/archaeology/trail_ruins_common.json|archaeology/trail_ruins_common}})</small> || 1 || 2.27% || 
+|}
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Flower pot <small>({{Source|vanilla:loot_table/blocks/flower_pot.json|blocks/flower_pot}})</small> || 1 || 100% || 
+|-
+| Potted acacia sapling <small>({{Source|vanilla:loot_table/blocks/potted_acacia_sapling.json|blocks/potted_acacia_sapling}})</small> || 1 || 100% || 
+|-
+| Potted allium <small>({{Source|vanilla:loot_table/blocks/potted_allium.json|blocks/potted_allium}})</small> || 1 || 100% || 
+|-
+| Potted azalea bush <small>({{Source|vanilla:loot_table/blocks/potted_azalea_bush.json|blocks/potted_azalea_bush}})</small> || 1 || 100% || 
+|-
+| Potted azure bluet <small>({{Source|vanilla:loot_table/blocks/potted_azure_bluet.json|blocks/potted_azure_bluet}})</small> || 1 || 100% || 
+|-
+| Potted bamboo <small>({{Source|vanilla:loot_table/blocks/potted_bamboo.json|blocks/potted_bamboo}})</small> || 1 || 100% || 
+|-
+| Potted birch sapling <small>({{Source|vanilla:loot_table/blocks/potted_birch_sapling.json|blocks/potted_birch_sapling}})</small> || 1 || 100% || 
+|-
+| Potted blue orchid <small>({{Source|vanilla:loot_table/blocks/potted_blue_orchid.json|blocks/potted_blue_orchid}})</small> || 1 || 100% || 
+|-
+| Potted brown mushroom <small>({{Source|vanilla:loot_table/blocks/potted_brown_mushroom.json|blocks/potted_brown_mushroom}})</small> || 1 || 100% || 
+|-
+| Potted cactus <small>({{Source|vanilla:loot_table/blocks/potted_cactus.json|blocks/potted_cactus}})</small> || 1 || 100% || 
+|-
+| Potted cherry sapling <small>({{Source|vanilla:loot_table/blocks/potted_cherry_sapling.json|blocks/potted_cherry_sapling}})</small> || 1 || 100% || 
+|-
+| Potted closed eyeblossom <small>({{Source|vanilla:loot_table/blocks/potted_closed_eyeblossom.json|blocks/potted_closed_eyeblossom}})</small> || 1 || 100% || 
+|-
+| Potted cornflower <small>({{Source|vanilla:loot_table/blocks/potted_cornflower.json|blocks/potted_cornflower}})</small> || 1 || 100% || 
+|-
+| Potted crimson fungus <small>({{Source|vanilla:loot_table/blocks/potted_crimson_fungus.json|blocks/potted_crimson_fungus}})</small> || 1 || 100% || 
+|-
+| Potted crimson roots <small>({{Source|vanilla:loot_table/blocks/potted_crimson_roots.json|blocks/potted_crimson_roots}})</small> || 1 || 100% || 
+|-
+| Potted dandelion <small>({{Source|vanilla:loot_table/blocks/potted_dandelion.json|blocks/potted_dandelion}})</small> || 1 || 100% || 
+|-
+| Potted dark oak sapling <small>({{Source|vanilla:loot_table/blocks/potted_dark_oak_sapling.json|blocks/potted_dark_oak_sapling}})</small> || 1 || 100% || 
+|-
+| Potted dead bush <small>({{Source|vanilla:loot_table/blocks/potted_dead_bush.json|blocks/potted_dead_bush}})</small> || 1 || 100% || 
+|-
+| Potted fern <small>({{Source|vanilla:loot_table/blocks/potted_fern.json|blocks/potted_fern}})</small> || 1 || 100% || 
+|-
+| Potted flowering azalea bush <small>({{Source|vanilla:loot_table/blocks/potted_flowering_azalea_bush.json|blocks/potted_flowering_azalea_bush}})</small> || 1 || 100% || 
+|-
+| Potted golden dandelion <small>({{Source|vanilla:loot_table/blocks/potted_golden_dandelion.json|blocks/potted_golden_dandelion}})</small> || 1 || 100% || 
+|-
+| Potted jungle sapling <small>({{Source|vanilla:loot_table/blocks/potted_jungle_sapling.json|blocks/potted_jungle_sapling}})</small> || 1 || 100% || 
+|-
+| Potted lily of the valley <small>({{Source|vanilla:loot_table/blocks/potted_lily_of_the_valley.json|blocks/potted_lily_of_the_valley}})</small> || 1 || 100% || 
+|-
+| Potted mangrove propagule <small>({{Source|vanilla:loot_table/blocks/potted_mangrove_propagule.json|blocks/potted_mangrove_propagule}})</small> || 1 || 100% || 
+|-
+| Potted oak sapling <small>({{Source|vanilla:loot_table/blocks/potted_oak_sapling.json|blocks/potted_oak_sapling}})</small> || 1 || 100% || 
+|-
+| Potted open eyeblossom <small>({{Source|vanilla:loot_table/blocks/potted_open_eyeblossom.json|blocks/potted_open_eyeblossom}})</small> || 1 || 100% || 
+|-
+| Potted orange tulip <small>({{Source|vanilla:loot_table/blocks/potted_orange_tulip.json|blocks/potted_orange_tulip}})</small> || 1 || 100% || 
+|-
+| Potted oxeye daisy <small>({{Source|vanilla:loot_table/blocks/potted_oxeye_daisy.json|blocks/potted_oxeye_daisy}})</small> || 1 || 100% || 
+|-
+| Potted pale oak sapling <small>({{Source|vanilla:loot_table/blocks/potted_pale_oak_sapling.json|blocks/potted_pale_oak_sapling}})</small> || 1 || 100% || 
+|-
+| Potted pink tulip <small>({{Source|vanilla:loot_table/blocks/potted_pink_tulip.json|blocks/potted_pink_tulip}})</small> || 1 || 100% || 
+|-
+| Potted poppy <small>({{Source|vanilla:loot_table/blocks/potted_poppy.json|blocks/potted_poppy}})</small> || 1 || 100% || 
+|-
+| Potted red mushroom <small>({{Source|vanilla:loot_table/blocks/potted_red_mushroom.json|blocks/potted_red_mushroom}})</small> || 1 || 100% || 
+|-
+| Potted red tulip <small>({{Source|vanilla:loot_table/blocks/potted_red_tulip.json|blocks/potted_red_tulip}})</small> || 1 || 100% || 
+|-
+| Potted spruce sapling <small>({{Source|vanilla:loot_table/blocks/potted_spruce_sapling.json|blocks/potted_spruce_sapling}})</small> || 1 || 100% || 
+|-
+| Potted torchflower <small>({{Source|vanilla:loot_table/blocks/potted_torchflower.json|blocks/potted_torchflower}})</small> || 1 || 100% || 
+|-
+| Potted warped fungus <small>({{Source|vanilla:loot_table/blocks/potted_warped_fungus.json|blocks/potted_warped_fungus}})</small> || 1 || 100% || 
+|-
+| Potted warped roots <small>({{Source|vanilla:loot_table/blocks/potted_warped_roots.json|blocks/potted_warped_roots}})</small> || 1 || 100% || 
+|-
+| Potted white tulip <small>({{Source|vanilla:loot_table/blocks/potted_white_tulip.json|blocks/potted_white_tulip}})</small> || 1 || 100% || 
+|-
+| Potted wither rose <small>({{Source|vanilla:loot_table/blocks/potted_wither_rose.json|blocks/potted_wither_rose}})</small> || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

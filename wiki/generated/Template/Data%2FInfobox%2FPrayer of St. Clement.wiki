@@ -1,5 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|title={{#if:{{{title|}}}|{{{title}}}|Prayer of St. Clement}}
+|image={{#if:{{{image|}}}|{{{image}}}|Prayer of St. Clement.png}}
+|imagesize=160px
+|invimage=Prayer of St. Clement
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}

@@ -2,43 +2,43 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Kindling]]
-| 2 × [[Stick]] +<br />2 × Any [[logs]]
+| 2 × [[Stick]] +<br />2 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
 | {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json|matcha:crafting/campfire}}</small>
 |-
 | [[Chest]]
-| 8 × Any [[logs]]
+| 8 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
 | {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/chest_from_logs.json|matcha:crafting/chest_from_logs}}</small>
 |-
 | [[Stick]]
-| 2 × Any [[logs]]
+| 2 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
 | {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sticks_from_logs.json|matcha:crafting/sticks_from_logs}}</small>
 |-
 | [[Charcoal]]
-| Any [[logs that burn]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood">Any logs that burn</span>
 | {{Cooking|station=Mud Kiln|Input=Any Logs That Burn|Output=Charcoal|note=5 s, 0.15 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/charcoal.json|matcha:kiln/charcoal}}</small>
 |-
 | [[Barrel]]
-| Any [[logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
 | {{Stonecutter|Input=Any Logs|Output=Barrel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/barrel_from_stonecutting_any_logs.json|matcha:stonecutting/barrel_from_stonecutting_any_logs}}</small>
 |-
 | [[Chiseled Bookshelf]]
-| Any [[logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
 | {{Stonecutter|Input=Any Logs|Output=Chiseled Bookshelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/chiseled_bookshelf_from_stonecutting_any_logs.json|matcha:stonecutting/chiseled_bookshelf_from_stonecutting_any_logs}}</small>
 |-
 | [[Dark Oak Button]]
-| Any [[dark oak logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
 | {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_button_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_button_from_stonecutting_dark_oak_logs}}</small>
 |-
 | [[Dark Oak Door]]
-| Any [[dark oak logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
 | {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Door,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_door_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_door_from_stonecutting_dark_oak_logs}}</small>
 |-
 | [[Dark Oak Fence]]
-| Any [[dark oak logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
 | {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Fence,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_fence_from_stonecutting_dark_oak_log.json|matcha:stonecutting/dark_oak_fence_from_stonecutting_dark_oak_log}}</small>
 |-
 | [[Dark Oak Fence Gate]]
-| Any [[dark oak logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
 | {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Fence Gate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_fence_gate_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_fence_gate_from_stonecutting_dark_oak_logs}}</small>
 |-
 | [[Dark Oak Log]]
@@ -46,31 +46,31 @@
 | {{Stonecutter|Input=Stripped Dark Oak Log;Dark Oak Wood;Stripped Dark Oak Wood|Output=Dark Oak Log}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_log_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_log_from_stonecutting_dark_oak_logs}}</small>
 |-
 | [[Dark Oak Planks]]
-| Any [[dark oak logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
 | {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_planks_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_planks_from_stonecutting_dark_oak_logs}}</small>
 |-
 | [[Dark Oak Pressure Plate]]
-| Any [[dark oak logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
 | {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Pressure Plate,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_pressure_plate_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_pressure_plate_from_stonecutting_dark_oak_logs}}</small>
 |-
 | [[Dark Oak Shelf]]
-| Any [[dark oak logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
 | {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_shelf_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_shelf_from_stonecutting_dark_oak_logs}}</small>
 |-
 | [[Dark Oak Sign]]
-| Any [[dark oak logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
 | {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Sign,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_sign_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_sign_from_stonecutting_dark_oak_logs}}</small>
 |-
 | [[Dark Oak Slab]]
-| Any [[dark oak logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
 | {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_slabs_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_slabs_from_stonecutting_dark_oak_logs}}</small>
 |-
 | [[Dark Oak Stairs]]
-| Any [[dark oak logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
 | {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Stairs,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_stairs_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_stairs_from_stonecutting_dark_oak_logs}}</small>
 |-
 | [[Dark Oak Trapdoor]]
-| Any [[dark oak logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
 | {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_trapoor_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_trapoor_from_stonecutting_dark_oak_logs}}</small>
 |-
 | [[Dark Oak Wood]]
@@ -78,7 +78,7 @@
 | {{Stonecutter|Input=Stripped Dark Oak Log;Dark Oak Log;Stripped Dark Oak Wood|Output=Dark Oak Wood}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_wood_from_stonecutting_dark_oak_log.json|matcha:stonecutting/dark_oak_wood_from_stonecutting_dark_oak_log}}</small>
 |-
 | [[Ladder]]
-| Any [[logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
 | {{Stonecutter|Input=Any Logs|Output=Ladder,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/ladder_from_stonecutting_any_logs.json|matcha:stonecutting/ladder_from_stonecutting_any_logs}}</small>
 |-
 | [[Stripped Dark Oak Log]]
@@ -86,11 +86,11 @@
 | {{Stonecutter|Input=Dark Oak Log;Dark Oak Wood;Stripped Dark Oak Wood|Output=Stripped Dark Oak Log}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_dark_oak_log_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/stripped_dark_oak_log_from_stonecutting_dark_oak_logs}}</small>
 |-
 | [[Charcoal]] <small>(vanilla recipe)</small>
-| Any [[logs that burn]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood">Any logs that burn</span>
 | {{Cooking|station=Oven|Input=Any Logs That Burn|Output=Charcoal|note=10 s, 0.15 XP}}
 |-
 | [[Dark Oak Planks]] <small>(vanilla recipe)</small>
-| Any [[dark oak logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
 | {{Crafting|A1=Any Dark Oak Logs|Output=Dark Oak Planks,4|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

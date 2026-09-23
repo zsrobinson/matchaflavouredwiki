@@ -26,7 +26,7 @@
 | {{Crafting|A1=Brown Wool|A2=Brown Wool|B1=Brown Wool|B2=Brown Wool|B3=Stick|C1=Brown Wool|C2=Brown Wool|Output=Brown Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/brown_banner.json|matcha:crafting/brown_banner}}</small>
 |-
 | [[Kindling]]
-| 2 × [[Stick]] +<br />2 × Any [[logs]]
+| 2 × [[Stick]] +<br />2 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
 | {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json|matcha:crafting/campfire}}</small>
 |-
 | [[Copper Axe]]
@@ -254,7 +254,7 @@
 | {{Crafting|A1=White Wool|A2=White Wool|B1=White Wool|B2=White Wool|B3=Stick|C1=White Wool|C2=White Wool|Output=White Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/white_banner.json|matcha:crafting/white_banner}}</small>
 |-
 | [[Wooden Axe]]
-| 3 × Any [[wooden tool materials]] +<br />2 × [[Stick]]
+| 3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]
 | {{Crafting|A1=Any Wooden Tool Materials|A2=Any Wooden Tool Materials|B1=Any Wooden Tool Materials|B2=Stick|B3=Stick|Output=Wooden Axe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_axe.json|matcha:crafting/wooden_axe}}</small>
 |-
 | [[Wooden Cross]]
@@ -262,23 +262,23 @@
 | {{Crafting|A2=Stick|B1=Stick|B2=Estus Ash|B3=Stick|C2=Stick|Output=Wooden Cross}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_cross.json|matcha:crafting/wooden_cross}}</small>
 |-
 | [[Wooden Hoe]]
-| 2 × Any [[wooden tool materials]] +<br />2 × [[Stick]]
+| 2 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]
 | {{Crafting|A1=Any Wooden Tool Materials|B1=Any Wooden Tool Materials|B2=Stick|B3=Stick|Output=Wooden Hoe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_hoe.json|matcha:crafting/wooden_hoe}}</small>
 |-
 | [[Wooden Pickaxe]]
-| 3 × Any [[wooden tool materials]] +<br />2 × [[Stick]]
+| 3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]
 | {{Crafting|A1=Any Wooden Tool Materials|B1=Any Wooden Tool Materials|B2=Stick|B3=Stick|C1=Any Wooden Tool Materials|Output=Wooden Pickaxe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_pickaxe.json|matcha:crafting/wooden_pickaxe}}</small>
 |-
 | [[Wooden Shovel]]
-| Any [[wooden tool materials]] +<br />2 × [[Stick]]
+| <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]
 | {{Crafting|A1=Any Wooden Tool Materials|A2=Stick|A3=Stick|Output=Wooden Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_shovel.json|matcha:crafting/wooden_shovel}}</small>
 |-
 | [[Wooden Spear]]
-| Any [[wooden tool materials]] +<br />2 × [[Stick]]
+| <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />2 × [[Stick]]
 | {{Crafting|A3=Stick|B2=Stick|C1=Any Wooden Tool Materials|Output=Wooden Spear}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_spear.json|matcha:crafting/wooden_spear}}</small>
 |-
 | [[Wooden Sword]]
-| 2 × Any [[wooden tool materials]] +<br />[[Stick]]
+| 2 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />[[Stick]]
 | {{Crafting|A1=Any Wooden Tool Materials|A2=Any Wooden Tool Materials|A3=Stick|Output=Wooden Sword}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/wooden_sword.json|matcha:crafting/wooden_sword}}</small>
 |-
 | [[Yellow Banner]]
@@ -378,7 +378,7 @@
 | {{Crafting|A3=Stick|B2=Stick|C1=Stick|C2=String|C3=String|Output=Fishing Rod}}
 |-
 | [[Grindstone]] <small>(vanilla recipe)</small>
-| 2 × [[Stick]] +<br />[[Stone Slab]] +<br />2 × Any [[planks]]
+| 2 × [[Stick]] +<br />[[Stone Slab]] +<br />2 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
 | {{Crafting|A1=Stick|A2=Any Planks|B1=Stone Slab|C1=Stick|C2=Any Planks|Output=Grindstone}}
 |-
 | [[Jungle Fence]] <small>(vanilla recipe)</small>
@@ -422,7 +422,7 @@
 | {{Crafting|A1=Oak Planks|A2=Oak Planks|B1=Oak Planks|B2=Oak Planks|B3=Stick|C1=Oak Planks|C2=Oak Planks|Output=Oak Sign,3}}
 |-
 | [[Painting]] <small>(vanilla recipe)</small>
-| 8 × [[Stick]] +<br />Any [[wool]]
+| 8 × [[Stick]] +<br /><span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
 | {{Crafting|A1=Stick|A2=Stick|A3=Stick|B1=Stick|B2=Any Wool|B3=Stick|C1=Stick|C2=Stick|C3=Stick|Output=Painting}}
 |-
 | [[Pale Oak Fence]] <small>(vanilla recipe)</small>
@@ -450,7 +450,7 @@
 | {{Crafting|A1=Spruce Planks|A2=Spruce Planks|B1=Spruce Planks|B2=Spruce Planks|B3=Stick|C1=Spruce Planks|C2=Spruce Planks|Output=Spruce Sign,3}}
 |-
 | [[Tripwire Hook]] <small>(vanilla recipe)</small>
-| [[Iron Ingot]] +<br />[[Stick]] +<br />Any [[planks]]
+| [[Iron Ingot]] +<br />[[Stick]] +<br /><span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
 | {{Crafting|A1=Iron Ingot|A2=Stick|A3=Any Planks|Output=Tripwire Hook,2}}
 |-
 | [[Warped Fence]] <small>(vanilla recipe)</small>

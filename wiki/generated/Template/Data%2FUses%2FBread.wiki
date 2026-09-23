@@ -6,11 +6,11 @@
 | {{Crafting|A1=Tomatoes|B1=Cheese|C1=Bread|Output=Bruschetta|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bruschetta.json|matcha:food/crafting/bruschetta}}</small>
 |-
 | [[French Toast]]
-| Any [[eggs]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
+| <span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
 | {{Crafting|A1=Any Eggs|B1=Sugar|C1=Estus Ash|A2=Bread|Output=French Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/french_toast.json|matcha:food/crafting/french_toast}}</small>
 |-
 | [[Honied French Toast]]
-| [[Honey Bottle]] +<br />Any [[eggs]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
+| [[Honey Bottle]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
 | {{Crafting|A1=Honey Bottle|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Honied French Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/honied_french_toast.json|matcha:food/crafting/honied_french_toast}}</small>
 |-
 | [[Ice Cream]]
@@ -18,11 +18,11 @@
 | {{Crafting|A1=Snowball|B1=Milk Bottle|C1=Sugar|A2=Blue Orchid|B2=Bread|Output=Ice Cream|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/ice_cream.json|matcha:food/crafting/ice_cream}}</small>
 |-
 | [[Latke]]
-| [[Baked Potato]] +<br />Any [[eggs]] +<br />[[Bread]] +<br />[[Milk Bottle]]
+| [[Baked Potato]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Bread]] +<br />[[Milk Bottle]]
 | {{Crafting|A1=Baked Potato|B1=Any Eggs|C1=Bread|A2=Milk Bottle|Output=Latke|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/latke.json|matcha:food/crafting/latke}}</small>
 |-
 | [[Sweet Berry Toast]]
-| [[Sweet Berries]] +<br />Any [[eggs]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
+| [[Sweet Berries]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
 | {{Crafting|A1=Sweet Berries|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Sweet Berry Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sweet_berry_toast.json|matcha:food/crafting/sweet_berry_toast}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

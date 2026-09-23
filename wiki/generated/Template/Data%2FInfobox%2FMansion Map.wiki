@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Mansion Map}}
+|image={{#if:{{{image|}}}|{{{image}}}|Mansion Map.png}}
+|imagesize=160px
+|invimage=Mansion Map
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:map</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/cartographer/5/woodland_mansion.json|woodland_mansion.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

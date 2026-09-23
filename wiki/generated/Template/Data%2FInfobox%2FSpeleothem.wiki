@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Speleothem}}
+|image={{#if:{{{image|}}}|{{{image}}}|Speleothem.png}}
+|imagesize=160px
+|invimage=Speleothem
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Pointed Dripstone}}
+|stackable=Yes (64)
+|id=<code>minecraft:pointed_dripstone</code>
+|source={{Source|vanilla:loot_table/blocks/pointed_dripstone.json|pointed_dripstone.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

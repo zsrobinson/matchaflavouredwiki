@@ -1,14 +1,15 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Music Disc}}
-|image={{#if:{{{image|}}}|{{{image}}}|Music Disc.png}}
+|title={{#if:{{{title|}}}|{{{title}}}|Music Disc (Abbey)}}
+|image={{#if:{{{image|}}}|{{{image}}}|Music Disc (Abbey).png}}
 |imagesize=160px
-|invimage=Music Disc
+|invimage=Music Disc (Abbey)
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Item}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
+|vanilla={{MCW|Music Disc}}
 |rarity=Uncommon
 |stackable=No
 |id=<code>matcha:music_disc_abbey</code>

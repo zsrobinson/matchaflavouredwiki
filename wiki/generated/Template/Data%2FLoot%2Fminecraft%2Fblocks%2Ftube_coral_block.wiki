@@ -1,0 +1,9 @@
+<includeonly><small>Loot table <code>minecraft:blocks/tube_coral_block</code> ({{Source|vanilla:loot_table/blocks/tube_coral_block.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Tube Coral Block|mcw=Tube Coral Block}} || 1 || 50.0% || 50.0% || Silk Touch
+|-
+| {{ItemLink|Dead Tube Coral Block|mcw=Dead Tube Coral Block}} || 1 || 50.0% || 50.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

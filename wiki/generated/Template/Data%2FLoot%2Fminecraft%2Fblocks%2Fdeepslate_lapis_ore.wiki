@@ -1,0 +1,9 @@
+<includeonly><small>Loot table <code>minecraft:blocks/deepslate_lapis_ore</code> ({{Source|vanilla:loot_table/blocks/deepslate_lapis_ore.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Natural Lapis Lazuli}} || 1 || 50.0% || 50.0% || Silk Touch
+|-
+| {{ItemLink|Lapis Lazuli|mcw=Lapis Lazuli}} || 4–9 || 50.0% || 50.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

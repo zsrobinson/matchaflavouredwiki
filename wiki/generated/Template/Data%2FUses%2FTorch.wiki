@@ -6,7 +6,7 @@
 | {{Crafting|A2=Iron Nugget|B1=Iron Nugget|B2=Torch|C2=Iron Nugget|Output=Lantern}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/lantern.json|matcha:crafting/lantern}}</small>
 |-
 | [[Soul Torch]]
-| 8 × [[Torch]] +<br />Any [[soul fire base blocks]]
+| 8 × [[Torch]] +<br /><span class="explain" title="Soul Sand, Soul Soil">Any soul fire base blocks</span>
 | {{Crafting|A1=Torch|A2=Torch|A3=Torch|B1=Torch|B2=Any Soul Fire Base Blocks|B3=Torch|C1=Torch|C2=Torch|C3=Torch|Output=Soul Torch,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/soul_torch.json|matcha:crafting/soul_torch}}</small>
 |-
 | [[Jack o'Lantern]] <small>(vanilla recipe)</small>

@@ -1,0 +1,13 @@
+<includeonly><small>Loot table <code>minecraft:gameplay/hero_of_the_village/armorer_gift</code> ({{Source|vanilla:loot_table/gameplay/hero_of_the_village/armorer_gift.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Chainmail Helmet}} || 1 || 25.0% || 25.0% || 
+|-
+| {{ItemLink|Chainmail Chestplate}} || 1 || 25.0% || 25.0% || 
+|-
+| {{ItemLink|Chainmail Leggings}} || 1 || 25.0% || 25.0% || 
+|-
+| {{ItemLink|Chainmail Boots}} || 1 || 25.0% || 25.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

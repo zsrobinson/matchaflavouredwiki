@@ -12,14 +12,5 @@
 | [[Shakudo Leggings]]
 | [[Copper Leggings]] +<br />[[Shakudo Alloy]]
 | {{Smithing|Template=|Base=Copper Leggings|Addition=Shakudo Alloy|Output=Shakudo Leggings}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_leggings.json|matcha:smithing/shakudo_leggings}}</small>
-|}
-
-'''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
-|-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Copper Leggings}} || {{ItemLink|Hepatizon Alloy}}
-|-
-| [[Weaponsmith]] || Apprentice || {{ItemLink|Copper Leggings}} || {{ItemLink|Shakudo Alloy}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

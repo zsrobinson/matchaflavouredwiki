@@ -3,7 +3,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Barrel]] <small>(vanilla recipe)</small>
-| 6 × Any [[planks]] +<br />2 × Any [[wooden slabs]]
+| 6 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span> +<br />2 × <span class="explain" title="Oak Slab, Spruce Slab, Birch Slab, Jungle Slab, Acacia Slab, Dark Oak Slab, Pale Oak Slab, Crimson Slab, Warped Slab, Mangrove Slab, Bamboo Slab, Cherry Slab">Any wooden slabs</span>
 | {{Crafting|A1=Any Planks|A2=Any Planks|A3=Any Planks|B1=Any Wooden Slabs|B3=Any Wooden Slabs|C1=Any Planks|C2=Any Planks|C3=Any Planks|Output=Barrel}}
 |}
 '''Stonecutting'''
@@ -11,7 +11,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Barrel]]
-| Any [[logs]]
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
 | {{Stonecutter|Input=Any Logs|Output=Barrel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/barrel_from_stonecutting_any_logs.json|matcha:stonecutting/barrel_from_stonecutting_any_logs}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

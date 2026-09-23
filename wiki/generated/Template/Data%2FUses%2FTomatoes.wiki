@@ -22,7 +22,7 @@
 | {{Crafting|A1=Cheese|A2=Tomatoes|A3=Dough|B1=Cheese|B2=Tomatoes|B3=Dough|C1=Cheese|C2=Tomatoes|C3=Dough|Output=Cheese Pizza,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cheese_pizza.json|matcha:food/crafting/cheese_pizza}}</small>
 |-
 | [[Kontomire-Dandelion Stew]]
-| [[Tomatoes]] +<br />[[Dandelion]] +<br />[[Fern]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />Any [[eggs]] +<br />[[Bowl]]
+| [[Tomatoes]] +<br />[[Dandelion]] +<br />[[Fern]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Bowl]]
 | {{Crafting|A1=Tomatoes|B1=Dandelion|C1=Fern|A2=Cooked Fish;Cooked Large Fish|B2=Any Eggs|C2=Bowl|Output=Kontomire-Dandelion Stew|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/kontomire_stew.json|matcha:food/crafting/kontomire_stew}}</small>
 |-
 | [[Meat Pizza]]

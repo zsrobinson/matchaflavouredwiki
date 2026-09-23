@@ -13,16 +13,16 @@
 | 2 × [[Chocolate]] +<br />[[Sugar]] +<br />[[Dough]]
 | {{Crafting|A1=Chocolate|B1=Chocolate|C1=Sugar|A2=Dough|Output=Brownie|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/brownie.json|matcha:food/crafting/brownie}}</small>
 |-
-| [[Bubbling Mead]]
+| [[Splash Potion of Bubbling Mead]]
 | [[Honey Bottle]] +<br />[[Brown Mushroom]] +<br />2 × [[Sugar]] +<br />[[Sweet Berries]] or [[Apple]] or [[Glow Berries]]
-| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sugar|B2=Sweet Berries;Apple;Glow Berries|Output=Bubbling Mead|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bubbling_mead.json|matcha:food/crafting/bubbling_mead}}</small>
+| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sugar|B2=Sweet Berries;Apple;Glow Berries|Output=Splash Potion of Bubbling Mead|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bubbling_mead.json|matcha:food/crafting/bubbling_mead}}</small>
 |-
 | [[Buñuelo]]
 | [[Dough]] +<br />[[Oil]] +<br />[[Estus Ash]] +<br />[[Sugar]]
 | {{Crafting|A1=Dough|B1=Oil|C1=Estus Ash|A2=Sugar|Output=Buñuelo|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bunuelo.json|matcha:food/crafting/bunuelo}}</small>
 |-
 | [[Cake]]
-| 2 × [[Sweet Berries]] +<br />[[Milk Bottle]] +<br />2 × [[Sugar]] +<br />Any [[eggs]] +<br />3 × [[Flour]]
+| 2 × [[Sweet Berries]] +<br />[[Milk Bottle]] +<br />2 × [[Sugar]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />3 × [[Flour]]
 | {{Crafting|A1=Sweet Berries|A2=Sugar|A3=Flour|B1=Milk Bottle|B2=Any Eggs|B3=Flour|C1=Sweet Berries|C2=Sugar|C3=Flour|Output=Cake}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cake.json|matcha:food/crafting/cake}}</small>
 |-
 | [[Canned Apples]]
@@ -50,11 +50,11 @@
 | {{Crafting|A1=Popped Chorus Fruit|B1=Snowball|C1=Sugar|A2=Milk Bottle|B2=Dough|Output=Chorus Mochi,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/chorus_mochi.json|matcha:food/crafting/chorus_mochi}}</small>
 |-
 | [[French Toast]]
-| Any [[eggs]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
+| <span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
 | {{Crafting|A1=Any Eggs|B1=Sugar|C1=Estus Ash|A2=Bread|Output=French Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/french_toast.json|matcha:food/crafting/french_toast}}</small>
 |-
 | [[Gimmari]]
-| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Sugar]] +<br />Any [[eggs]] +<br />[[Flour]] +<br />[[Oil]]
+| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Sugar]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Flour]] +<br />[[Oil]]
 | {{Crafting|A1=Dried Kelp|B1=Carrot|C1=Sugar|A2=Any Eggs|B2=Flour|C2=Oil|Output=Gimmari|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gimmari.json|matcha:food/crafting/gimmari}}</small>
 |-
 | [[Glow Berry Crumble]]
@@ -74,7 +74,7 @@
 | {{Crafting|A1=Golden Carrot|B1=Sugar|C1=Estus Ash|A2=Cocoa Beans|B2=Dough|Output=Golden Carrot Cupcake|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_carrot_cupcake.json|matcha:food/crafting/golden_carrot_cupcake}}</small>
 |-
 | [[Honied French Toast]]
-| [[Honey Bottle]] +<br />Any [[eggs]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
+| [[Honey Bottle]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
 | {{Crafting|A1=Honey Bottle|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Honied French Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/honied_french_toast.json|matcha:food/crafting/honied_french_toast}}</small>
 |-
 | [[Ice Cream]]
@@ -90,7 +90,7 @@
 | {{Crafting|A1=Melon Slice|B1=Snowball|C1=Sugar|A2=Glass Bottle|Output=Melon Sorbet|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/melon_sorbet.json|matcha:food/crafting/melon_sorbet}}</small>
 |-
 | [[Pad Thai]]
-| [[Dough]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Sugar]] +<br />[[Carrot]] +<br />Any [[eggs]] +<br />[[Bowl]]
+| [[Dough]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Sugar]] +<br />[[Carrot]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Bowl]]
 | {{Crafting|A1=Dough|B1=Cooked Fish;Cooked Large Fish|C1=Sugar|A2=Carrot|B2=Any Eggs|C2=Bowl|Output=Pad Thai|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pad_thai.json|matcha:food/crafting/pad_thai}}</small>
 |-
 | [[Puerquito]]
@@ -118,7 +118,7 @@
 | {{Crafting|A1=Sweet Berry Mash|B1=Sugar|C1=Glass Bottle|Output=Sweet Berry Jam|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sweet_berry_jam.json|matcha:food/crafting/sweet_berry_jam}}</small>
 |-
 | [[Sweet Berry Toast]]
-| [[Sweet Berries]] +<br />Any [[eggs]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
+| [[Sweet Berries]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
 | {{Crafting|A1=Sweet Berries|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Sweet Berry Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sweet_berry_toast.json|matcha:food/crafting/sweet_berry_toast}}</small>
 |-
 | [[Curry Stock]]

@@ -1,9 +1,24 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
 | Ancient city <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/ancient_city.json|chests/ancient_city}})</small> || 1–2 || 14.8% || 
+|}
+
+'''Mob drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Warden <small>({{Source|vanilla:loot_table/entities/warden.json|entities/warden}})</small> || 1 || 100% || 
+|}
+
+'''Block drops'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Sculk catalyst <small>({{Source|vanilla:loot_table/blocks/sculk_catalyst.json|blocks/sculk_catalyst}})</small> || 1 || 100% || Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

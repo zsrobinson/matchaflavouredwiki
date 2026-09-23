@@ -40,7 +40,9 @@ def url_title(title):
 
 
 def page_path(out, title):
-    return os.path.join(out, 'w', url_title(title), 'index.html')
+    # /w/Title -> w/Title.html: Cloudflare (html_handling), GitHub Pages and Netlify all serve
+    # extensionless URLs from .html files without a redirect.
+    return os.path.join(out, 'w', url_title(title) + '.html')
 
 
 def href_for(title):
@@ -52,6 +54,7 @@ class Exporter:
         self.base = base.rstrip('/')
         self.out = out
         self.assets = {}  # load.php url -> static path
+        self.case_redirects = {}  # title -> target, for redirects that only change capitalisation
 
     # --- stylesheets from load.php -------------------------------------------------
     def static_css(self, href):
@@ -95,19 +98,41 @@ class Exporter:
         doc = re.sub(r'<link rel="stylesheet" href="(/load\.php\?[^"]+)"',
                      lambda m: '<link rel="stylesheet" href="%s"' % self.static_css(m.group(1)), doc)
         # drop all MediaWiki scripts (the startup module loads more code dynamically)
-        doc = re.sub(r'<script[^>]*>.*?</script>', '', doc, flags=re.S)
+        doc = re.sub(r'<script[^>]*>.*?</script>', lambda m: m.group(0) if 'mfw-theme' in m.group(0) else '', doc, flags=re.S)
         doc = re.sub(r'<script[^>]*src="[^"]*"[^>]*></script>', '', doc)
+        doc = doc.replace('</head>', HEAD_EXTRA + '</head>', 1)
+        doc = re.sub(r'(<body[^>]*>)', r'\1' + THEME_BOOT, doc, count=1)
         doc = doc.replace('</body>', '<script src="/_static/site.js"></script>\n</body>')
+        # Pagefind: index only the article body; title, categories and item icon as metadata
+        doc = doc.replace('<div id="mw-content-text"', '<div id="mw-content-text" data-pagefind-body', 1)
+        doc = re.sub(r'<h1 id="firstHeading"', '<h1 id="firstHeading" data-pagefind-meta="title"', doc, count=1)
+        doc = re.sub(r'<table class="navbox', '<table data-pagefind-ignore class="navbox', doc)
+        doc = re.sub(r'<div id="toc"', '<div data-pagefind-ignore id="toc"', doc)
+        for pat in (r'<div class="printfooter"', r'<ol class="references"', r'<div class="mcui', r'<span class="mcui'):
+            doc = re.sub(pat, lambda m: m.group(0).replace(' ', ' data-pagefind-ignore ', 1), doc)
+        doc = re.sub(r'(<div id="catlinks".*?</div></div>)', lambda m: re.sub(r'<a href="/w/Category:[^"]*" title="Category:[^"]*">([^<]*)</a>',
+                     lambda a: a.group(0).replace('<a ', '<a data-pagefind-filter="category" ', 1), m.group(1)), doc, flags=re.S)
+        # item icon as the search result image: the first inventory slot image in the infobox
+        doc = re.sub(r'(<div class="infobox-invimages">.*?<img )', r'\1data-pagefind-meta="image[src]" ', doc, count=1, flags=re.S)
         doc = doc.replace('class="client-nojs', 'class="client-js')
         # red links: keep the styling, remove the edit link
         doc = re.sub(r'<a href="[^"]*action=edit[^"]*redlink=1"([^>]*)>(.*?)</a>', r'<span class="new"\1>\2</span>', doc, flags=re.S)
         # absolute links back to the dev server -> site-relative
         doc = doc.replace(self.base + '/', '/')
+        # links to capitalisation redirects go straight to the article (case-insensitive file
+        # systems can't hold both "Mud_kiln.html" and "Mud_Kiln.html")
+        def fix(m):
+            t = urllib.parse.unquote(m.group(1)).replace('_', ' ')
+            tgt = self.case_redirects.get(t)
+            return 'href="%s%s"' % (href_for(tgt), m.group(2) or '') if tgt else m.group(0)
+        doc = re.sub(r'href="/w/([^"#?]+)(#[^"]*)?"', fix, doc)
         # links a static site can't serve
         doc = re.sub(r'<li id="(?:t-|ca-|pt-|n-recentchanges|n-randompage)[^"]*"[^>]*>.*?</li>', '', doc, flags=re.S)
         doc = re.sub(r'href="/index\.php\?title=Special:Search[^"]*"', 'href="/search/"', doc)
         doc = re.sub(r'<a href="/w/Special:[^"]*"[^>]*>(.*?)</a>', r'\1', doc, flags=re.S)
-        doc = re.sub(r'<form action="/index\.php" id="searchform"', '<form action="/search/" id="searchform"', doc)
+        doc = re.sub(r'<form action="/index\.php" id="searchform".*?</form>',
+                     '<pagefind-searchbox id="mfw-searchbox" instance="header" placeholder="Search Matcha Flavoured Wiki" max-results="8" '
+                     'show-sub-results shortcut="/"></pagefind-searchbox>', doc, flags=re.S)
         doc = re.sub(r'<nav id="p-tb".*?</nav>', '', doc, flags=re.S)
         doc = re.sub(r'<ul id="footer-icons".*?</ul>', '', doc, flags=re.S)
         doc = re.sub(r'<li id="footer-info-lastmod".*?</li>', '', doc, flags=re.S)
@@ -117,21 +142,72 @@ class Exporter:
         return doc
 
     def export_page(self, title, text):
+        if title in self.case_redirects:
+            return 'case'  # served by link rewriting and the 404 fallback, not a file
         dest = page_path(self.out, title)
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         m = re.match(r'\s*#REDIRECT\s*\[\[([^\]|#]+)(#[^\]|]*)?', text, re.I)
         if m:
             target = href_for(m.group(1).strip()) + (m.group(2) or '').replace(' ', '_')
             with open(dest, 'w', encoding='utf-8') as f:
-                f.write('<!doctype html><meta charset="utf-8"><title>Redirect</title>'
-                        '<link rel="canonical" href="%s"><meta http-equiv="refresh" content="0; url=%s">'
-                        '<a href="%s">Redirect</a>' % (target, target, target))
+                f.write('<!doctype html><html><head><meta charset="utf-8"><title>Redirect</title>'
+                        '<link rel="canonical" href="%s"><meta http-equiv="refresh" content="0; url=%s"></head>'
+                        '<body data-pagefind-ignore="all"><a href="%s">Redirect</a></body></html>' % (target, target, target))
             return 'redirect'
         doc = fetch(self.base + '/w/' + urllib.parse.quote(url_title(title)))
         with open(dest, 'w', encoding='utf-8') as f:
             f.write(self.rewrite(doc))
         return 'page'
 
+
+HEAD_EXTRA = ('<link rel="stylesheet" href="/pagefind/pagefind-component-ui.css">'
+              '<link rel="stylesheet" href="/_static/site.css">'
+              '<script type="module" src="/pagefind/pagefind-component-ui.js"></script>')
+THEME_BOOT = ''  # the head script from site/theme-boot.js is already in the page (added by LocalSettings.php)
+
+SITE_CSS = r"""/* Pagefind Component UI, styled to sit in minecraft.wiki's search slot and palette. */
+#p-search pagefind-searchbox, #mfw-searchbox {
+  --pf-font: inherit;
+  --pf-border-radius: 0;
+  --pf-input-height: 28px;
+  --pf-input-font-size: 13px;
+  --pf-searchbox-max-width: 100%;
+  --pf-background: #fff;
+  --pf-border: #888;
+  --pf-border-focus: #6BA41E;
+  --pf-text: #202122;
+  --pf-text-secondary: #54595d;
+  --pf-text-muted: #72777d;
+  --pf-hover: #eaf3dd;
+  --pf-mark: #3d7a0e;
+  --pf-dropdown-z-index: 1000;
+  display: block;
+  width: 100%;
+}
+#p-search { width: 20vw; min-width: 16em; max-width: 26em; }
+#mfw-search-page {
+  --pf-font: inherit;
+  --pf-border-radius: 2px;
+  --pf-border-focus: #6BA41E;
+  --pf-mark: #3d7a0e;
+  --pf-image-width: 48px;
+  --pf-image-height: 48px;
+}
+#mfw-search-page .mfw-search-layout { display: grid; grid-template-columns: 14em minmax(0, 1fr); gap: 1.5em; margin-top: 1em; }
+#mfw-search-page .mfw-search-layout > div { min-width: 0; overflow: hidden; }
+#mfw-search-page mark, #mfw-searchbox mark { font-weight: bold; background: none; }
+@media (max-width: 800px) { #mfw-search-page .mfw-search-layout { grid-template-columns: 1fr; } }
+#mfw-search-page img, #mfw-searchbox img { image-rendering: pixelated; }
+body.wgl-theme-dark #p-search pagefind-searchbox, body.wgl-theme-dark #mfw-searchbox, body.wgl-theme-dark #mfw-search-page {
+  --pf-background: #1f1f1f;
+  --pf-border: #555;
+  --pf-text: #e6e6e6;
+  --pf-text-secondary: #c0c0c0;
+  --pf-text-muted: #9a9a9a;
+  --pf-hover: #2f3a24;
+  --pf-mark: #9ed36a;
+}
+"""
 
 SITE_JS = r"""// Static replacement for the MediaWiki scripts the wiki uses.
 (function () {
@@ -146,31 +222,6 @@ SITE_JS = r"""// Static replacement for the MediaWiki scripts the wiki uses.
       if (next) next.classList.add('animated-active');
     });
   }, 2000);
-
-  // Light/dark theme toggle (Gadget-themeToggle).
-  var KEY = 'mfw-theme';
-  function getTheme() { try { return localStorage.getItem(KEY) || 'light'; } catch (e) { return 'light'; } }
-  function applyTheme(t) {
-    document.body.classList.remove('mfw-theme-light', 'mfw-theme-dark');
-    document.body.classList.add('mfw-theme-' + t);
-  }
-  applyTheme(getTheme());
-  var personal = document.querySelector('#p-personal ul');
-  if (personal) {
-    var li = document.createElement('li');
-    li.id = 'pt-theme-toggle';
-    li.className = 'mw-list-item';
-    var a = document.createElement('a');
-    a.href = '#'; a.title = 'Change theme'; a.className = 'oo-ui-icon-advanced';
-    a.addEventListener('click', function (e) {
-      e.preventDefault();
-      var t = getTheme() === 'light' ? 'dark' : 'light';
-      try { localStorage.setItem(KEY, t); } catch (err) {}
-      applyTheme(t);
-    });
-    li.appendChild(a);
-    personal.insertBefore(li, personal.firstChild);
-  }
 
   // Collapsible tables (mw-collapsible).
   document.querySelectorAll('table.mw-collapsible').forEach(function (tbl) {
@@ -215,52 +266,12 @@ SITE_JS = r"""// Static replacement for the MediaWiki scripts the wiki uses.
     });
   });
 
-  // Client-side title search.
-  var form = document.getElementById('searchform');
-  var input = document.getElementById('searchInput');
-  var index = null;
-  function load(cb) {
-    if (index) return cb(index);
-    fetch('/search.json').then(function (r) { return r.json(); }).then(function (d) { index = d; cb(d); });
-  }
-  function norm(s) { return s.toLowerCase().replace(/_/g, ' ').trim(); }
-  function go(q) {
-    load(function (titles) {
-      var n = norm(q);
-      var exact = titles.filter(function (t) { return norm(t) === n; })[0];
-      if (exact) { location.href = '/w/' + encodeURIComponent(exact.replace(/ /g, '_')); return; }
-      location.href = '/search/?q=' + encodeURIComponent(q);
-    });
-  }
-  if (form && input) {
-    form.addEventListener('submit', function (e) { e.preventDefault(); go(input.value); });
-    var list = document.createElement('datalist');
-    list.id = 'mfw-titles';
-    input.setAttribute('list', 'mfw-titles');
-    input.addEventListener('focus', function () {
-      load(function (titles) {
-        if (list.childElementCount) return;
-        titles.forEach(function (t) { var o = document.createElement('option'); o.value = t; list.appendChild(o); });
-      });
-    }, { once: true });
-    document.body.appendChild(list);
-  }
-  var results = document.getElementById('mfw-search-results');
-  if (results) {
-    var q = new URLSearchParams(location.search).get('q') || '';
-    if (input) input.value = q;
-    load(function (titles) {
-      var n = norm(q), words = n.split(/\s+/).filter(Boolean);
-      var hits = titles.filter(function (t) { var s = norm(t); return words.every(function (w) { return s.indexOf(w) !== -1; }); });
-      hits.sort(function (a, b) { return (norm(a).indexOf(n) === 0 ? 0 : 1) - (norm(b).indexOf(n) === 0 ? 0 : 1) || a.length - b.length; });
-      results.innerHTML = '<p>' + hits.length + ' page(s) matching <b></b>.</p><ul></ul>';
-      results.querySelector('b').textContent = q;
-      var ul = results.querySelector('ul');
-      hits.slice(0, 300).forEach(function (t) {
-        var li = document.createElement('li'); var a = document.createElement('a');
-        a.href = '/w/' + encodeURIComponent(t.replace(/ /g, '_')); a.textContent = t;
-        li.appendChild(a); ul.appendChild(li);
-      });
+  // Search page: prefill from ?q= so the header searchbox's "see all results" lands here.
+  var q = new URLSearchParams(location.search).get('q');
+  if (q && document.getElementById('mfw-search-page')) {
+    customElements.whenDefined('pagefind-input').then(function () {
+      var input = document.querySelector('#mfw-search-page pagefind-input input');
+      if (input) { input.value = q; input.dispatchEvent(new Event('input', { bubbles: true })); }
     });
   }
 })();
@@ -281,11 +292,15 @@ def main():
 
     pages = build_xml.collect()
     exportable = {t: p for t, p in pages.items() if p[0] in ('Main', 'Category', 'Project', 'Help')}
+    for t, p in exportable.items():
+        m = re.match(r'\s*#REDIRECT\s*\[\[([^\]|#]+)\]\]', p[1], re.I)
+        if m and m.group(1).strip().lower() == t.lower() and m.group(1).strip() != t:
+            ex.case_redirects[t] = m.group(1).strip()
     # MediaWiki needs each stylesheet URL fetched once before threads race on it
     first = next(iter(sorted(exportable)))
     ex.export_page('Matcha Flavoured Wiki', exportable.get('Matcha Flavoured Wiki', ('Main', '', ''))[1])
 
-    done = {'page': 0, 'redirect': 0, 'error': 0}
+    done = {'page': 0, 'redirect': 0, 'error': 0, 'case': 0}
 
     def job(item):
         title, (ns, text, layer) = item
@@ -301,18 +316,27 @@ def main():
     # site furniture
     os.makedirs(os.path.join(out, '_static'), exist_ok=True)
     with open(os.path.join(out, '_static', 'site.js'), 'w') as f:
+        # the same shell script the live wiki runs as a gadget, then the static-only behaviours
+        f.write(open(os.path.join(ROOT, 'wiki', 'pages', 'MediaWiki', 'Gadget-mfwShell.js'), encoding='utf-8').read())
+        f.write('\n')
         f.write(SITE_JS)
+    with open(os.path.join(out, '_static', 'site.css'), 'w') as f:
+        f.write(SITE_CSS)
     for d in ('assets', 'images'):
         src = os.path.join(ROOT, 'site', d)
         if os.path.isdir(src):
             shutil.copytree(src, os.path.join(out, d), dirs_exist_ok=True)
     titles = sorted(t for t, p in exportable.items() if not re.match(r'\s*#REDIRECT', p[1], re.I))
+    # search.json: canonical titles, used by the 404 page's case-insensitive lookup
     with open(os.path.join(out, 'search.json'), 'w', encoding='utf-8') as f:
-        json.dump(titles + sorted(t for t, p in exportable.items() if re.match(r'\s*#REDIRECT', p[1], re.I)), f)
+        json.dump(titles + sorted(t for t, p in exportable.items() if re.match(r'\s*#REDIRECT', p[1], re.I) and t not in ex.case_redirects), f)
     # search page and root index, built from the main page's skin
     main_html = open(page_path(out, 'Matcha Flavoured Wiki'), encoding='utf-8').read()
-    search = re.sub(r'(<div id="mw-content-text"[^>]*>).*?(<div class="printfooter")',
-                    r'\1<div id="mfw-search-results"><p>Searching…</p></div>\2', main_html, flags=re.S)
+    search_body = ('<div id="mfw-search-page"><pagefind-input autofocus placeholder="Search Matcha Flavoured Wiki"></pagefind-input>'
+                   '<div class="mfw-search-layout"><div><pagefind-filter-pane></pagefind-filter-pane></div>'
+                   '<div><pagefind-summary></pagefind-summary><pagefind-results show-images show-sub-results></pagefind-results></div></div></div>')
+    search = re.sub(r'(<div id="mw-content-text"[^>]*>).*?(<div[^>]*class="printfooter")',
+                    lambda m: '<div id="mw-content-text">' + search_body + m.group(2), main_html, flags=re.S)
     search = re.sub(r'<h1 id="firstHeading"[^>]*>.*?</h1>', '<h1 id="firstHeading" class="firstHeading">Search results</h1>', search, flags=re.S)
     search = re.sub(r'<title>.*?</title>', '<title>Search - Matcha Flavoured Wiki</title>', search)
     search = re.sub(r'<div id="catlinks".*?</div></div>', '', search, flags=re.S)
@@ -322,10 +346,22 @@ def main():
                      '<meta http-equiv="refresh" content="0; url=/w/Matcha_Flavoured_Wiki">'
                      '<a href="/w/Matcha_Flavoured_Wiki">Matcha Flavoured Wiki</a>')
     open(os.path.join(out, 'index.html'), 'w').write(root_redirect)
-    shutil.copy(page_path(out, 'Matcha Flavoured Wiki'), os.path.join(out, '404.html'))
+    # 404 page: the main page's shell with a not-found message and a case-insensitive redirect
+    nf = re.sub(r'(<div id="mw-content-text"[^>]*>).*?(<div[^>]*class="printfooter")',
+                lambda m: '<div id="mw-content-text"><p>There is no page with this title. Try the search box above.</p>' + m.group(2),
+                main_html, flags=re.S)
+    nf = re.sub(r'<h1 id="firstHeading"[^>]*>.*?</h1>', '<h1 id="firstHeading" class="firstHeading">Page not found</h1>', nf, flags=re.S)
+    nf = nf.replace('</head>', '<script>(function(){var m=location.pathname.match(/^\\/w\\/(.+)$/);if(!m)return;'
+                    'fetch("/search.json").then(function(r){return r.json()}).then(function(ts){'
+                    'var want=decodeURIComponent(m[1]).replace(/_/g," ").toLowerCase();'
+                    'for(var i=0;i<ts.length;i++){if(ts[i].toLowerCase()===want){location.replace("/w/"+encodeURIComponent(ts[i].replace(/ /g,"_")));return}}})})();</script></head>', 1)
+    open(os.path.join(out, '404.html'), 'w', encoding='utf-8').write(nf)
     # host hints: Netlify/Cloudflare Pages redirects, and disable Jekyll on GitHub Pages
-    open(os.path.join(out, '_redirects'), 'w').write('/  /w/Matcha_Flavoured_Wiki  302\n/w/Main_Page  /w/Matcha_Flavoured_Wiki  301\n')
+    open(os.path.join(out, '_redirects'), 'w').write('/w/Main_Page  /w/Matcha_Flavoured_Wiki  301\n')
     open(os.path.join(out, '.nojekyll'), 'w').close()
+    # full-text search index (Pagefind); the component UI is served from /pagefind/
+    import subprocess
+    subprocess.run(['npx', '-y', 'pagefind@1.5.2', '--site', out, '--quiet'], check=True)
     print('exported %(page)d pages, %(redirect)d redirects, %(error)d errors -> ' % done + out)
 
 

@@ -2,11 +2,11 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Prayer of St. Clement]]
-| 2 × [[Obol]] +<br />[[Leather Boots]] +<br />2 × Any [[wool]] +<br />[[Hell-Bound Book]]
+| 2 × [[Obol]] +<br />[[Leather Boots]] +<br />2 × <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span> +<br />[[Hell-Bound Book]]
 | {{Crafting|A1=Obol|A2=Any Wool|B1=Leather Boots|B2=Hell-Bound Book|C1=Obol|C2=Any Wool|Output=Prayer of St. Clement}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/traversal.json|matcha:blessing/traversal}}</small>
 |-
 | [[String]]
-| Any [[wool]]
+| <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
 | {{Crafting|A1=Any Wool|Output=String,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/string_from_wool.json|matcha:crafting/string_from_wool}}</small>
 |-
 | [[Yellow Banner]]
@@ -78,11 +78,11 @@
 | {{Crafting|A1=White Dye|B1=Orange Wool;Magenta Wool;Light Blue Wool;Yellow Wool;Lime Wool;Pink Wool;Gray Wool;Light Gray Wool;Cyan Wool;Purple Wool;Blue Wool;Brown Wool;Green Wool;Red Wool;Black Wool|Output=White Wool|shapeless=1}}
 |-
 | [[Painting]] <small>(vanilla recipe)</small>
-| 8 × [[Stick]] +<br />Any [[wool]]
+| 8 × [[Stick]] +<br /><span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
 | {{Crafting|A1=Stick|A2=Stick|A3=Stick|B1=Stick|B2=Any Wool|B3=Stick|C1=Stick|C2=Stick|C3=Stick|Output=Painting}}
 |-
 | [[Yellow Bed]] <small>(vanilla recipe)</small>
-| 3 × [[Yellow Wool]] +<br />3 × Any [[planks]]
+| 3 × [[Yellow Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
 | {{Crafting|A1=Yellow Wool|A2=Any Planks|B1=Yellow Wool|B2=Any Planks|C1=Yellow Wool|C2=Any Planks|Output=Yellow Bed}}
 |-
 | [[Yellow Harness]] <small>(vanilla recipe)</small>

@@ -1,0 +1,21 @@
+<includeonly><small>Loot table <code>minecraft:chests/village/village_shepherd</code> ({{Source|vanilla:loot_table/chests/village/village_shepherd.json|source}}); pools roll 1–5 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|White Wool}} || 1–8 || 26.1% || 55.8% || 
+|-
+| {{ItemLink|Straw}} || 1–6 || 26.1% || 55.8% || 
+|-
+| {{ItemLink|Black Wool}} || 1–3 || 13.0% || 33.0% || 
+|-
+| {{ItemLink|Gray Wool}} || 1–3 || 8.70% || 23.3% || 
+|-
+| {{ItemLink|Brown Wool}} || 1–3 || 8.70% || 23.3% || 
+|-
+| {{ItemLink|Light Gray Wool}} || 1–3 || 8.70% || 23.3% || 
+|-
+| {{ItemLink|Obol}} || 1 || 4.35% || 12.3% || 
+|-
+| {{ItemLink|Iron Shears}} || 1 || 4.35% || 12.3% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

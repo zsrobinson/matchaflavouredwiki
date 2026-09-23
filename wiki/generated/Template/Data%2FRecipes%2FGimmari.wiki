@@ -2,7 +2,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Gimmari]]
-| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Sugar]] +<br />Any [[eggs]] +<br />[[Flour]] +<br />[[Oil]]
+| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Sugar]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Flour]] +<br />[[Oil]]
 | {{Crafting|A1=Dried Kelp|B1=Carrot|C1=Sugar|A2=Any Eggs|B2=Flour|C2=Oil|Output=Gimmari|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gimmari.json|matcha:food/crafting/gimmari}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,0 +1,9 @@
+<includeonly><small>Loot table <code>minecraft:entities/slime</code> ({{Source|vanilla:loot_table/entities/slime.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Slimeball}} || 1 || 50.0% || 50.0% || entity condition, damage source
+|-
+| {{ItemLink|Slimeball}} || 0–2 || 33.3% || 33.3% || entity condition, not damage source
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

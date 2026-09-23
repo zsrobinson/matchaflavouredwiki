@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Cocoa Beans}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cocoa Beans.png}}
+|imagesize=160px
+|invimage=Cocoa Beans
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:cocoa_beans</code>
+|source={{Source|vanilla:loot_table/blocks/cocoa.json|cocoa.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

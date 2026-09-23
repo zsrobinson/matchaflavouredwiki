@@ -1,0 +1,11 @@
+<includeonly><small>Loot table <code>minecraft:gameplay/hero_of_the_village/weaponsmith_gift</code> ({{Source|vanilla:loot_table/gameplay/hero_of_the_village/weaponsmith_gift.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Stone Axe}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Golden Axe}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Iron Axe}} || 1 || 33.3% || 33.3% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

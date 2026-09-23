@@ -1,0 +1,9 @@
+<includeonly><small>Loot table <code>minecraft:blocks/iron_ore</code> ({{Source|vanilla:loot_table/blocks/iron_ore.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Hematite}} || 1 || 50.0% || 50.0% || Silk Touch
+|-
+| {{ItemLink|Raw Iron|mcw=Raw Iron}} || 1 || 50.0% || 50.0% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

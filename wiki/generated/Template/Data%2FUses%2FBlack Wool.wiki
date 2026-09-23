@@ -2,7 +2,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Prayer of St. Clement]]
-| 2 × [[Obol]] +<br />[[Leather Boots]] +<br />2 × Any [[wool]] +<br />[[Hell-Bound Book]]
+| 2 × [[Obol]] +<br />[[Leather Boots]] +<br />2 × <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span> +<br />[[Hell-Bound Book]]
 | {{Crafting|A1=Obol|A2=Any Wool|B1=Leather Boots|B2=Hell-Bound Book|C1=Obol|C2=Any Wool|Output=Prayer of St. Clement}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/traversal.json|matcha:blessing/traversal}}</small>
 |-
 | [[Black Banner]]
@@ -14,11 +14,11 @@
 | {{Crafting|A1=Black Wool|B1=Black Wool|Output=Black Carpet,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/black_carpet.json|matcha:crafting/black_carpet}}</small>
 |-
 | [[String]]
-| Any [[wool]]
+| <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
 | {{Crafting|A1=Any Wool|Output=String,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/string_from_wool.json|matcha:crafting/string_from_wool}}</small>
 |-
 | [[Black Bed]] <small>(vanilla recipe)</small>
-| 3 × [[Black Wool]] +<br />3 × Any [[planks]]
+| 3 × [[Black Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
 | {{Crafting|A1=Black Wool|A2=Any Planks|B1=Black Wool|B2=Any Planks|C1=Black Wool|C2=Any Planks|Output=Black Bed}}
 |-
 | [[Black Harness]] <small>(vanilla recipe)</small>
@@ -86,44 +86,7 @@
 | {{Crafting|A1=Yellow Dye|B1=White Wool;Orange Wool;Magenta Wool;Light Blue Wool;Lime Wool;Pink Wool;Gray Wool;Light Gray Wool;Cyan Wool;Purple Wool;Blue Wool;Brown Wool;Green Wool;Red Wool;Black Wool|Output=Yellow Wool|shapeless=1}}
 |-
 | [[Painting]] <small>(vanilla recipe)</small>
-| 8 × [[Stick]] +<br />Any [[wool]]
+| 8 × [[Stick]] +<br /><span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
 | {{Crafting|A1=Stick|A2=Stick|A3=Stick|B1=Stick|B2=Any Wool|B3=Stick|C1=Stick|C2=Stick|C3=Stick|Output=Painting}}
-|}
-
-'''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
-|-
-| [[Cook]] || Master || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Chemist]] || Apprentice || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Chemist]] || Journeyman || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Chemist]] || Expert || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Chemist]] || Master || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Farmer]] || Expert || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Farmer]] || Master || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Fletcher]] || Expert || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Fletcher]] || Master || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Lumberjack]] || Master || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Mason]] || Master || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Shepherd]] || Expert || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Shepherd]] || Master || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Weaponsmith]] || Journeyman || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Weaponsmith]] || Expert || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
-|-
-| [[Weaponsmith]] || Master || 18 × {{ItemLink|Black Wool}} || {{ItemLink|Obol}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

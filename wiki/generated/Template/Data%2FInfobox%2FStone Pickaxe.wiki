@@ -14,9 +14,8 @@
 |damage={{Hp|3}}
 |attackspeed=1.2
 |miningspeed=4
-|repair=<code>#minecraft:stone_tool_materials</code>
-|id=<code>matcha:hepatizon_pickaxe</code>
-|base=<code>minecraft:stone_pickaxe</code>
-|source={{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/hepatizon_pickaxe.json|hepatizon_pickaxe.json}}
+|repair=[[Cobblestone]], [[Blackstone]], [[Cobbled Deepslate]]
+|id=<code>minecraft:stone_pickaxe</code>
+|source={{Source|vanilla:loot_table/gameplay/hero_of_the_village/toolsmith_gift.json|toolsmith_gift.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

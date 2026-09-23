@@ -7,7 +7,7 @@
 | {{Crafting|A1=Jungle Slab|B1=Jungle Slab|Output=Jungle Planks|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/jungle_planks_from_jungle_slabs.json|matcha:crafting/jungle_planks_from_jungle_slabs}}</small>
 |-
 | [[Jungle Planks]] <small>(vanilla recipe)</small>
-| Any [[jungle logs]]
+| <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
 | {{Crafting|A1=Any Jungle Logs|Output=Jungle Planks,4|shapeless=1}}
 |}
 '''Stonecutting'''
@@ -15,7 +15,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Jungle Planks]]
-| Any [[jungle logs]]
+| <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
 | {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_planks_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_planks_from_stonecutting_jungle_logs}}</small>
 |-
 | [[Jungle Planks]]

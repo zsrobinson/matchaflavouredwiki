@@ -1,5 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Blessing}}
+|title={{#if:{{{title|}}}|{{{title}}}|Prayer of Man}}
+|image={{#if:{{{image|}}}|{{{image}}}|Prayer of Man.png}}
+|imagesize=160px
+|invimage=Prayer of Man
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
@@ -8,7 +11,7 @@
 |renewable={{{renewable|}}}
 |rarity=Rare
 |stackable=No
-|effects=Stores: [[2]], [[Smite]] II
+|effects=Stores: [[Warding|{{G|Warding}} 2]], [[Smite]] II
 |tooltip=Prayer of Man
 |id=<code>matcha:blessing_warding</code>
 |base=<code>minecraft:enchanted_book</code>

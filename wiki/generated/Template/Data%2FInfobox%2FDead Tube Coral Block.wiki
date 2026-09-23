@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Dead Tube Coral Block}}
+|image={{#if:{{{image|}}}|{{{image}}}|Dead Tube Coral Block.png}}
+|imagesize=160px
+|invimage=Dead Tube Coral Block
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:dead_tube_coral_block</code>
+|source={{Source|vanilla:loot_table/blocks/dead_tube_coral_block.json|dead_tube_coral_block.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

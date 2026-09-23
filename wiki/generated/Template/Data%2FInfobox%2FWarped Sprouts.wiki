@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Warped Sprouts}}
+|image={{#if:{{{image|}}}|{{{image}}}|Warped Sprouts.png}}
+|imagesize=160px
+|invimage=Warped Sprouts
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Nether Sprouts}}
+|stackable=Yes (64)
+|id=<code>minecraft:nether_sprouts</code>
+|source={{Source|vanilla:loot_table/blocks/nether_sprouts.json|nether_sprouts.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

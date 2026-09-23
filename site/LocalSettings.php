@@ -69,7 +69,8 @@ $wgResourceLoaderUseObjectCacheForDeps = true;
 
 $wgMainCacheType = CACHE_ACCEL;
 $wgMemCachedServers = [];
-$wgParserCacheType = CACHE_DB;
+# Build-time renderer: always render fresh so template and data changes show immediately.
+$wgParserCacheType = CACHE_NONE;
 $wgJobRunRate = 1;
 
 $wgEnableUploads = true;
@@ -145,3 +146,8 @@ $wgExternalLinkTarget = false;
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgRestrictDisplayTitle = false;
 $wgShowExceptionDetails = true;
+
+# Apply the saved light/dark theme before first paint (no flash of the light theme).
+$wgHooks['BeforePageDisplay'][] = static function ( $out, $skin ) {
+	$out->addHeadItem( 'mfw-theme-boot', '<script>' . trim( file_get_contents( __DIR__ . '/theme-boot.js' ) ) . '</script>' );
+};

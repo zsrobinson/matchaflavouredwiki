@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Hanging Roots}}
+|image={{#if:{{{image|}}}|{{{image}}}|Hanging Roots.png}}
+|imagesize=160px
+|invimage=Hanging Roots
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:hanging_roots</code>
+|source={{Source|vanilla:loot_table/blocks/hanging_roots.json|hanging_roots.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

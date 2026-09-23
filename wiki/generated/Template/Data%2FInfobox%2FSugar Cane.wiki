@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Sugar Cane}}
+|image={{#if:{{{image|}}}|{{{image}}}|Sugar Cane.png}}
+|imagesize=160px
+|invimage=Sugar Cane
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:sugar_cane</code>
+|source={{Source|vanilla:loot_table/blocks/sugar_cane.json|sugar_cane.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

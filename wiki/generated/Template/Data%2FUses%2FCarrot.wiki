@@ -14,7 +14,7 @@
 | {{Crafting|A1=Carrot|B1=Sugar|C1=Estus Ash|A2=Cocoa Beans|B2=Dough|Output=Carrot Cupcake|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/carrot_cupcake.json|matcha:food/crafting/carrot_cupcake}}</small>
 |-
 | [[Gimmari]]
-| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Sugar]] +<br />Any [[eggs]] +<br />[[Flour]] +<br />[[Oil]]
+| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Sugar]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Flour]] +<br />[[Oil]]
 | {{Crafting|A1=Dried Kelp|B1=Carrot|C1=Sugar|A2=Any Eggs|B2=Flour|C2=Oil|Output=Gimmari|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gimmari.json|matcha:food/crafting/gimmari}}</small>
 |-
 | [[Golden Carrot]]
@@ -26,7 +26,7 @@
 | {{Crafting|A1=Cooked Porkchop;Seitan|B1=Dough|C1=Oil|A2=Dried Kelp|B2=Carrot|Output=Lumpia,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/lumpia.json|matcha:food/crafting/lumpia}}</small>
 |-
 | [[Pad Thai]]
-| [[Dough]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Sugar]] +<br />[[Carrot]] +<br />Any [[eggs]] +<br />[[Bowl]]
+| [[Dough]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Sugar]] +<br />[[Carrot]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Bowl]]
 | {{Crafting|A1=Dough|B1=Cooked Fish;Cooked Large Fish|C1=Sugar|A2=Carrot|B2=Any Eggs|C2=Bowl|Output=Pad Thai|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pad_thai.json|matcha:food/crafting/pad_thai}}</small>
 |-
 | [[Pickled Carrots]]

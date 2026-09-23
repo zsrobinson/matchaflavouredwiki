@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Natural Lapis Lazuli}}
+|image={{#if:{{{image|}}}|{{{image}}}|Natural Lapis Lazuli.png}}
+|imagesize=160px
+|invimage=Natural Lapis Lazuli
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Deepslate Lapis Lazuli Ore}}
+|stackable=Yes (64)
+|id=<code>minecraft:deepslate_lapis_ore</code>
+|source={{Source|vanilla:loot_table/blocks/deepslate_lapis_ore.json|deepslate_lapis_ore.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

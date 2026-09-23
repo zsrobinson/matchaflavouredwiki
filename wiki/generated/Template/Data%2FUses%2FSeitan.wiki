@@ -30,7 +30,7 @@
 | {{Crafting|A1=Green Dye|B1=Estus Ash|C1=Sugar|A2=Milk Bottle|B2=Oil|C2=Cod;Salmon;Seitan|A3=Bowl|Output=Green Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_green_curry.json|matcha:food/crafting/uncooked_green_curry}}</small>
 |-
 | [[Ramen Stock]]
-| [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br />Any [[eggs]] +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Chicken]] or [[Seitan]] +<br />[[Bowl]]
+| [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Chicken]] or [[Seitan]] +<br />[[Bowl]]
 | {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_ramen.json|matcha:food/crafting/uncooked_ramen}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

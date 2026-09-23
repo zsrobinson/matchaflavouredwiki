@@ -1,4 +1,5 @@
-<includeonly><div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
+<includeonly>
+<div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
@@ -14,9 +15,9 @@
 |-
 | Stronghold crossing <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_crossing.json|chests/stronghold_crossing}})</small> || 1 || 2.36% || 
 |-
-| Trial chambers / reward ominous rare <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_ominous_rare.json|chests/trial_chambers/reward_ominous_rare}})</small> || 1 || 1.05% || 
+| Trial chambers / reward <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward.json|chests/trial_chambers/reward}})</small> || 1 || 0.242% || 
 |-
-| Trial chambers / reward rare <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_rare.json|chests/trial_chambers/reward_rare}})</small> || 1 || 0.303% || 
+| Trial chambers / reward ominous <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward_ominous.json|chests/trial_chambers/reward_ominous}})</small> || 1 || 0.842% || 
 |-
 | Woodland mansion <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/woodland_mansion.json|chests/woodland_mansion}})</small> || 1 || 6.52% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

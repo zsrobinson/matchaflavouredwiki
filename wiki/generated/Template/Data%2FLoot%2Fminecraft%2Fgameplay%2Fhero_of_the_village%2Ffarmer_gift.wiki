@@ -1,0 +1,11 @@
+<includeonly><small>Loot table <code>minecraft:gameplay/hero_of_the_village/farmer_gift</code> ({{Source|vanilla:loot_table/gameplay/hero_of_the_village/farmer_gift.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Bread}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Pumpkin Pie|mcw=Pumpkin Pie}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Cheese}} || 1 || 33.3% || 33.3% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

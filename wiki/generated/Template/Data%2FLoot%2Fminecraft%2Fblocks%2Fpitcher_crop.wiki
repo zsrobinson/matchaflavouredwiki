@@ -1,0 +1,9 @@
+<includeonly><small>Loot table <code>minecraft:blocks/pitcher_crop</code> ({{Source|vanilla:loot_table/blocks/pitcher_crop.json|source}}); pools roll 1 time(s).</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Pitcher Pod|mcw=Pitcher Pod}} || 1 || 80.0% || 80.0% || block state property
+|-
+| {{ItemLink|Pitcher Plant|mcw=Pitcher Plant}} || 1 || 20.0% || 20.0% || block state property
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

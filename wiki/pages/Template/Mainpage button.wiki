@@ -1,0 +1,2 @@
+<includeonly><div class="mp-button {{{class|}}} {{#if: {{{progressive|}}} | mp-button-progressive}}">{{#if: {{#pos: {{{1}}} | // }} | [{{{1}}} <span>{{{2|{{{1}}}}}}</span>] | [[:{{{1}}}|<span>{{{2|{{{1}}}}}}</span>]] }}</div></includeonly><noinclude>A main page button (minecraft.wiki's <code>mainpage button</code>). Internal page or URL, then label; <code>progressive=1</code> for the green style.
+[[Category:Main page templates]]</noinclude>

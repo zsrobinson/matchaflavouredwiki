@@ -7,13 +7,13 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Anemos|Anemos]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Anemos]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=500
 |damage={{Hp|6}}
 |miningspeed=1.5
-|repair=<code>#minecraft:iron_tool_materials</code>
+|repair=[[Iron Ingot]]
 |tooltip=🗡 6<br />🕒 1.6
 |id=<code>minecraft:iron_sword</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/iron_sword.json|iron_sword.json}}
