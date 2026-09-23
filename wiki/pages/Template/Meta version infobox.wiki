@@ -1,0 +1,28 @@
+<includeonly>{{Infobox
+|title={{{title|Matcha Flavoured {{{version}}}}}}
+|type={{{type}}}
+|type_label=Release type
+|extrarows=
+{{!}}-
+! Release name
+{{!}} {{{name|—}}}
+{{!}}-
+! Release date
+{{!}} {{{date}}}
+{{!}}-
+! ''Minecraft'' version
+{{!}} ''Java Edition'' {{{game|26.2}}}{{#if:{{{files|}}}|<nowiki/>
+{{!}}-
+! Files
+{{!}} {{{files}}}}}{{#if:{{{prev|}}}|<nowiki/>
+{{!}}-
+! Previous
+{{!}} {{Version|{{{prev}}}}}}}{{#if:{{{next|}}}|<nowiki/>
+{{!}}-
+! Next
+{{!}} {{Version|{{{next}}}}}}}
+}}</includeonly><noinclude>
+Infobox for a release page (meta area). Parameters: <code>version</code>, <code>name</code> (the Modrinth release title), <code>type</code> (Alpha, Release, Beta), <code>date</code>, <code>game</code> (''Minecraft'' version, default 26.2), <code>files</code>, <code>prev</code>, <code>next</code>.
+
+{{Meta version infobox|version=1.0|name=Finally Done|type=Release|date=July 24, 2026|prev=0.7-alpha|next=1.01}}
+[[Category:Infobox templates]]</noinclude>

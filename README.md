@@ -23,10 +23,28 @@ tools/build.sh                    # extract → images → generate → import (
 
 Then open <http://localhost:8080/w/Main_Page>.
 
+**Live preview while editing:** run `tools/watch.sh` (e.g. `nohup tools/watch.sh > build/watch.log &`).
+It polls `wiki/pages` every 5 seconds and imports whatever changed, so http://localhost:8080
+tracks the working tree.
+
 When you only changed text: `tools/sync.sh` imports just the pages that changed (seconds).
 To preview single pages while writing: `python3 tools/preview.py "Title" ...`. It reports
 template errors and red links. `tools/screenshot.sh "Title" out.png` renders a PNG with
 headless Chrome.
+
+## Deploying (static)
+
+The public site doesn't need MediaWiki, PHP or a database. `python3 tools/export_static.py`
+renders every page into `dist/` as plain HTML (URLs unchanged: `/w/Page_title`), with static
+CSS, images, a small script for the interactive bits (animated recipe slots, dark mode,
+sortable and collapsible tables) and client-side search over `search.json`. Upload `dist/`
+to any static host.
+
+`.github/workflows/deploy.yml` does this automatically: on every push to `main` it fetches the
+sources at the pinned commit, builds the wiki in Docker, exports it and publishes to GitHub
+Pages (enable Pages with source "GitHub Actions" in the repository settings). The same
+commands work for Cloudflare Pages or Netlify (`dist/_redirects` is included). Test locally
+with `python3 -m http.server -d dist 8090`.
 
 ## How it works
 

@@ -1041,6 +1041,34 @@ def effect_pages(n):
     write('Template', 'Data/Effects', '<includeonly>' + '\n'.join(overview) + '</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
 
 
+# ------------------------------------------------------------------ categories
+CATEGORY_TEXT = {
+    'Generated data': 'Data pages generated from the pack source by <code>tools/generate.py</code>. They are transcluded into articles and are not meant to be read on their own.',
+    'Stubs': 'Articles generated from the pack data that have no written description yet.',
+    'Redirects from vanilla names': 'Vanilla names that redirect to the renamed item in Matcha Flavoured.',
+    'Renamed items': 'Vanilla items and blocks that Matcha Flavoured renames.',
+}
+
+
+def category_pages(n):
+    cats = set()
+    for base in (GEN, HAND):
+        for root, _, files in os.walk(base):
+            for f in files:
+                try:
+                    txt = open(os.path.join(root, f), encoding='utf-8').read()
+                except Exception:
+                    continue
+                for m in re.finditer(r'\[\[Category:([^\]|]+)', txt):
+                    cats.add(m.group(1).strip())
+    for c in sorted(cats):
+        if '{' in c or hand_exists('Category', c):
+            continue
+        text = CATEGORY_TEXT.get(c, 'This category contains pages about %s in [[Matcha Flavoured]].' % (c[0].lower() + c[1:]))
+        write('Category', c, text + '\n__EXPECTUNUSEDCATEGORY__')
+        n['categories'] += 1
+
+
 # ------------------------------------------------------------------ main
 def main():
     if os.path.isdir(GEN):
@@ -1091,6 +1119,7 @@ def main():
     lua.append('}\nreturn aliases')
     write('Module', 'Inventory slot/Aliases', '\n'.join(lua))
     effect_pages(n)
+    category_pages(n)
     # swap in the new tree in one step so concurrent readers never see a half-written folder
     old = GEN_FINAL + '.old'
     if os.path.isdir(old):

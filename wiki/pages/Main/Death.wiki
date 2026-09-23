@@ -1,0 +1,135 @@
+{{About|dying and the heart penalty|the item that restores hearts|Crystal Heart}}
+{{Vanilla}}
+{{Infobox
+|title=Death
+|invimage=Crystal Heart
+|type=Mechanic
+|caption=Crystal hearts raise the maximum health that death takes away.
+}}
+'''Death''' in [[Matcha Flavoured]] costs the player a heart of maximum [[health]] instead of their items. The pack turns on {{MCW|Game rule|keepInventory}}, so everything in the inventory is kept, and in exchange each death permanently lowers the player's maximum health, down to a floor that depends on the [[difficulty]] and on how far the player has progressed.
+
+Lost hearts are regained with [[Crystal Heart|crystal hearts]], which raise maximum health up to 30 hearts.
+
+== Mechanics ==
+=== Keeping items ===
+When a player joins a world for the first time, the pack sets the game rules <code>keep_inventory</code> to <code>true</code> and <code>ender_pearls_vanish_on_death</code> to <code>false</code>.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref> The rules are set by the reward of the root [[Advancements|advancement]], so they can be changed afterwards and stay changed until another new player joins.<ref>{{Source|MF_datapack/data/matcha/function/setup/first_load.mcfunction}}</ref> Players keep their items and experience, and thrown {{ItemLink|Stable Void|stable voids}} don't vanish when the thrower dies.
+
+=== Heart loss ===
+The pack checks every tick for players whose death count has gone up. For each one it lowers the player's stored heart count and sets their maximum health to match, usually while they are still on the death screen.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/detect_death.mcfunction}}</ref>
+
+{| class="wikitable"
+! [[Difficulty]] !! Maximum health lost per death<ref>{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/hpdown.mcfunction}}</ref>
+|-
+| Peaceful, Easy, Normal || {{Hp|2}}
+|-
+| Hard || {{Hp|4}}
+|}
+
+Maximum health can't fall below a floor:<ref name="setmax">{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/set_max_hp.mcfunction}}</ref>
+* On '''Easy''', the floor is always 10 hearts ({{Hp|20}}), the vanilla starting health.
+* On '''Normal''' and '''Hard''', the floor is the player's own ''minimum hearts'' (see below).
+* On '''Peaceful''', the code applies no floor.
+
+Maximum health can never be higher than 30 hearts ({{Hp|60}}).<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+
+Because the minimum starts at 10 hearts, a new player who has not used any crystal hearts loses nothing by dying. Deaths only start to cost health once the player has gained hearts above their minimum, or once progression has lowered the minimum.
+
+The same heart loss is triggered by the [[Wither effect]]: a player who stays withered for 8 seconds loses hearts exactly as if they had died.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/check_wither_timer.mcfunction}}</ref>
+
+=== Minimum hearts ===
+Every player has their own minimum, which starts at 10 hearts.<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/player_setup.mcfunction}}</ref> Seven milestones in the tutorial [[Advancements|advancement]] tab each lower it by 1 heart, whatever order they are earned in:<ref name="dec">{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/decrease_minimum_hearts.mcfunction}}</ref>
+
+{| class="wikitable"
+! Advancement !! Requirement
+|-
+| Brazier || Obtain a {{ItemLink|Copper Ingot}}
+|-
+| The Stalwart Metal || Obtain an {{ItemLink|Iron Ingot}}
+|-
+| The Resilient Mineral || Obtain a {{ItemLink|Diamond}}
+|-
+| Orpheus || Enter [[Hell]]
+|-
+| The End of Dreams || Enter a [[stronghold]]
+|-
+| A Zealous Alloy || Obtain an {{ItemLink|Electrum Alloy}}
+|-
+| A Divine Alloy || Obtain an {{ItemLink|Adamant Alloy}}
+|}
+
+Each time the minimum drops, the player receives a red flavor message. On every difficulty except Easy, a gray message follows: "Minimum Hearts is now set to ''N''", where ''N'' is the new minimum in hearts. On Easy only the flavor message appears, since the floor there stays at 10 hearts.<ref name="dec" />
+
+{| class="wikitable"
+! Milestones earned !! Minimum hearts !! Flavor message
+|-
+| 0 || 10 || –
+|-
+| 1 || 9 || ''A terrible chill runs up your spine...''
+|-
+| 2 || 8 || ''The Dead grow restless...''
+|-
+| 3 || 7 || ''The Underworld screams...''
+|-
+| 4 || 6 || ''Chthonic Gods swear fealty to a terrible Force...''
+|-
+| 5 || 5 || ''Armies gather beneath the Earth...'' (sent to every player)
+|-
+| 6 || 4 || ''The Dead fear your Power...''
+|-
+| 7 || 3 || ''The Dead God fears its undoing...''
+|}
+
+The minimum never goes below 3 hearts ({{Hp|6}}).<ref name="dec" />
+
+On '''Normal''', when a player's minimum drops below 6 hearts (their fifth milestone), the world's difficulty is raised to Hard and every player is told "Game is now set to '''Hard'''". This affects the whole world, not just that player, and it can be set back in the world settings.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/difficulty_scaling/increase_difficulty.mcfunction}}</ref>
+
+The minimum is tracked per player, so one player's progress doesn't lower anyone else's floor. When a player first joins on a newer version of the pack, their minimum is reset to 10 hearts. Orpheus, The End of Dreams, A Zealous Alloy and A Divine Alloy are revoked at the same time so they can be earned again, but Brazier, The Stalwart Metal and The Resilient Mineral are not, so a player who had already earned those three can only bring their minimum down to 6 hearts after updating. The code marks the reset as temporary, meant for players coming from 1.12.1-alpha.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref>
+
+=== Regaining hearts ===
+{{Main|Crystal Heart}}
+Using a crystal heart raises maximum health by 1 heart, up to 30. Crystal hearts are crafted from diamonds and a {{ItemLink|Divine Fragment}}, found in chests, fished up, and given by four advancements: Canto I, II and III give one each, and Canto IV gives two.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_topaz.json}}</ref>
+
+== Difficulty ==
+{| class="wikitable"
+! !! Peaceful !! Easy !! Normal !! Hard
+|-
+! Hearts lost per death
+| 1 || 1 || 1 || 2
+|-
+! Lowest maximum health
+| no floor || 10 hearts || minimum hearts (10 to 3) || minimum hearts (10 to 3)
+|-
+! "Minimum Hearts" message
+| yes || no || yes || yes
+|-
+! Hearts lost to the [[Wither effect]]
+| 1 || none || 1 || 2
+|}
+
+The difficulty the pack uses is read when the world loads, so after changing difficulty the world has to be reloaded (for example with <code>/reload</code> or by rejoining).<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction}}</ref>
+
+== History ==
+{{History|
+{{History line|0.3-alpha|Heart containers renamed to crystal hearts and the health system refined. Crystal hearts can be crafted, no longer drop from zombies, and are found in chests.}}
+{{History line|1.10|Crystal hearts work in multiplayer. Killing the Ender Dragon raises the difficulty.}}
+{{History line|1.12|Fixed a typo that stopped crystal hearts being removed properly.}}
+{{History line|1.12.1-alpha|New experimental death system. Maximum health can go below 10 hearts, with the floor set by the player's progress through advancements; Easy is exempt. Killing the dragon no longer changes the difficulty on Normal; progress does instead. Hardcore-style hearts added to the resource pack.}}
+{{History line|1.12.2|The new death system is kept. Minimum hearts are tracked per player instead of per world. The [[Wither effect]] now takes hearts.}}
+}}
+
+== Trivia ==
+* The developer turned on keep inventory because losing items "can be really demoralizing", but found that with no penalty at all they were tempted to "jump off a cliff so I can teleport back home". Crystal hearts were the compromise.<ref>{{Cite video|quote=If death has no punishment at all, if there are no stakes, no reason to stop from dying, I'll find myself just tempted to jump off a cliff so I can teleport back home.}}</ref>
+* The flavor messages describe a "Dead God" growing afraid of the player. The Ender Dragon advancement is called "Iconoclast", described as "Defile the Dead God's Dream".
+* The 1.12.2 release notes still say "difficulty is still set at 5 hearts", meaning the Normal-to-Hard switch at a minimum of 5 hearts.<ref>{{Cite changelog|1.12.2|quote=Heart Decrementing is now only local not global (Per player not per world ...), difficulty is still set at 5 hearts}}</ref>
+
+== See also ==
+* [[Health]]
+* [[Crystal Heart]]
+* [[Difficulty]]
+* [[Wither effect]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Mechanics]]

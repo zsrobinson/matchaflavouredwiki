@@ -1,0 +1,73 @@
+{{Infobox auto|type=Health item|renewable=Yes}}
+A '''crystal heart''' is a rare item that permanently raises the player's maximum [[health]] by 1 heart, up to 30 hearts. It is the only way to regain hearts lost to [[death]], and while held it also saves the player from dying, like a {{MCW|Totem of Undying|totem of undying}}.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The recipe needs a {{ItemLink|Divine Fragment}}, so every crafted heart competes with the other uses of fragments, such as [[Bedrock Buster|bedrock busters]] and alloys.
+
+=== Advancements ===
+Four advancements in the tutorial tab reward crystal hearts:<ref>{{Source|MF_datapack/data/matcha/loot_table/advancement/crystal_heart_2.json}}</ref>
+{| class="wikitable"
+! Advancement !! Requirement !! Reward
+|-
+| Canto I || Obtain an {{ItemLink|Opal}} || 1 crystal heart
+|-
+| Canto II || Obtain a {{ItemLink|Ruby}} || 1 crystal heart
+|-
+| Canto III || Obtain an {{ItemLink|Amber}} || 1 crystal heart
+|-
+| Canto IV || Obtain a {{ItemLink|Topaz}} || 2 crystal hearts
+|}
+
+=== Chest loot, fishing and trading ===
+{{Sources}}
+
+== Usage ==
+=== Raising maximum health ===
+Using a crystal heart (pressing use while holding it) consumes it and raises maximum health by 1 heart ({{Hp|2}}).<ref name="use">{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/use_crystal_heart.mcfunction}}</ref> The heart takes effect on the first tick of use, even though the item's use time is 60 seconds and it plays the spyglass animation.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/crystal_heart.json}}</ref> Internally, the pack deals the player 999 magic damage and lets the heart's own death protection absorb it, which consumes the heart and plays the totem animation. The player is then given:
+* {{EffectLink|Regeneration}} XI for 3 seconds
+* {{EffectLink|Resistance}} V for 1 second
+Because the player is left at 1 health before the Regeneration heals them, a crystal heart also works as a strong emergency heal when below maximum health.
+
+Using a crystal heart does nothing if:<ref name="use" />
+* the player is already at 30 hearts;
+* the player used one less than 1 second (20 ticks) ago;
+* the player is holding a {{MCW|Totem of Undying|totem of undying}} in the main hand, which would otherwise be used up instead of the heart.
+
+In all three cases the heart is not consumed.
+
+=== Totem of undying ===
+A crystal heart held in either hand saves the player from any death a totem of undying would prevent, even at 30 hearts. It is consumed, and the player gets Regeneration XI for 3 ticks and Resistance V for 1 tick. Used this way, it does not add a heart.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/crystal_heart.json}}</ref> The 1.12.2 release notes describe hearts as "cheap totems (at max hearts)".<ref>{{Cite changelog|1.12.2|quote=They also double as cheap totems (at max hearts), and great healing items when < max health}}</ref>
+
+=== Trading ===
+{{Uses}}
+
+== Advancements ==
+Obtaining a crystal heart for the first time grants '''Crystal Heart!''', which rewards 3 {{ItemLink|Obol|obols}}.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.3-alpha|Heart containers renamed to crystal hearts. They can be crafted, no longer drop from zombies, and are found in chests.}}
+{{History line|0.5-alpha|Added to fishing loot.}}
+{{History line|1.10|Recipe made cheaper, from 27 diamonds to 8. Added to mineshaft loot. Fixed crystal hearts in multiplayer.}}
+{{History line|1.12|Crystal hearts bought from villagers can no longer be eaten. Fixed a typo that stopped hearts being removed properly.}}
+{{History line|1.12.1-alpha|Can be traded to the Mouthpiece, with an echo shard, for a divine fragment. Advancements now reward crystal hearts.}}
+{{History line|1.12.2|Crystal hearts are now used by the player instead of being applied as soon as they are picked up, and work as totems of undying. [[Ofuda]] trades now require crystal hearts.}}
+}}
+
+== Trivia ==
+* The item is a {{MCW|Poisonous Potato|poisonous potato}} with a custom model, which is why its model is still called <code>heart_container</code>, from its original name.
+* Before 1.12.2, hearts were applied the moment they entered the inventory. The developer explained that this was so players "feel the pressure to make it out of whatever dungeon/cave alive".<ref>{{Cite changelog|1.12.1-alpha|quote=Crystal hearts are used as soon as the player gets it so that they feel the pressure to make it out of whatever dungeon/cave alive.}}</ref> In 1.12.2 they were changed to be used, "since the new death system provides enough incentive".
+* The advancement description reads: "Crystal Hearts impart a piece of divinity onto Gods who devour them. Though mortals were only able to use their Undying properties."
+
+== See also ==
+* [[Death]]
+* [[Health]]
+
+== References ==
+{{reflist}}
+
+{{Navbox survival}}
+[[Category:Items]]
+[[Category:Health]]

@@ -1,0 +1,48 @@
+# Build the wiki from the repository and publish the static export to GitHub Pages.
+# Runs on every push to main (and on demand). The pack source is fetched at the commit
+# pinned in tools/source.lock, so the output only changes when this repository changes.
+name: Build and deploy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow
+      - name: Fetch sources (pack at pinned commit, vanilla data)
+        run: tools/fetch_sources.sh
+      - name: Start MediaWiki
+        run: |
+          mkdir -p site/data site/images build
+          docker compose up -d --build
+          sleep 5
+          docker exec matcha-wiki bash -c "chown -R www-data:www-data /var/www/data /var/www/html/images && php maintenance/run.php installPreConfigured"
+      - name: Build wiki
+        run: tools/build.sh
+      - name: Export static site
+        run: python3 tools/export_static.py --out dist
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

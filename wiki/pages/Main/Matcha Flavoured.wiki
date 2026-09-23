@@ -1,0 +1,140 @@
+{{About|the datapack|this wiki|Matcha Flavoured Wiki:About}}
+{{Infobox
+|title=Matcha Flavoured
+|invimage=Crystal Heart
+|caption=A crystal heart, one of the pack's signature items
+|type=Datapack and resource pack
+|type_label=Type
+|extrarows=
+{{!}}-
+! Developer
+{{!}} Klei Wright ("kleiwright")
+{{!}}-
+! First release
+{{!}} [[Matcha Flavoured 0.2-alpha|0.2-alpha]] (June 9, 2026)
+{{!}}-
+! Full release
+{{!}} [[Matcha Flavoured 1.0|1.0]] (July 24, 2026)
+{{!}}-
+! Latest version
+{{!}} [[Matcha Flavoured 1.12.2|1.12.2-beta]] (September 19, 2026)
+{{!}}-
+! ''Minecraft'' version
+{{!}} ''Java Edition'' 26.2
+{{!}}-
+! Pack format
+{{!}} Datapack 107.1, resource pack 88.0
+{{!}}-
+! Distribution
+{{!}} Modrinth, GitHub
+{{!}}-
+! License
+{{!}} [https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0]
+}}
+'''Matcha Flavoured''' is a datapack and companion resource pack for ''Minecraft: Java Edition'' by Klei Wright. It reworks survival progression so that casual and non-technical players, who explore, farm, cook and build instead of building mob farms, can gather resources as efficiently as technical players do.<ref>{{Source|README.md}}</ref> It replaces hunger with a cooking system in which [[food]] takes over the role of potions, replaces item loss on [[death]] with the loss of maximum [[health]], adds four new [[alloy]]s and two hybrid tool types, makes [[enchanting]] a crafting process, and overhauls [[villager]] trading, [[fishing]] and [[world generation]].
+
+The pack was first published on Modrinth in June 2026 and reached version 1.0 on July 24, 2026, alongside a design video by the developer.<ref>{{Cite changelog|0.7-alpha|quote=1.0 should be released on the 24th, as well as the design video}}</ref> It is developed in the open on GitHub with contributions from the community, and all of its code, textures and data are released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license.<ref>{{Source|LICENSE}}</ref>
+
+== Design ==
+The developer's introduction video sets out the pack's reasoning. It argues that vanilla ''Minecraft'' rewards technical play, such as copying mob farm designs from tutorials and leaving them running, far more than exploration and building, and that casual players "work 10 times hard for 1/10 the resources technical players get".<ref>{{Cite video|quote=Minecraft punishes us, makes us work 10 times hard for 1/10 the resources technical players get.}}</ref> The README describes the goal as letting "casual players, who like to play slowly, [...] gather the same amount of resources technical players do in the same amount of time".<ref>{{Source|README.md}}</ref> Most features follow from a few principles:
+
+; No mob grinders
+: Mob drops are increased so that killing a single mob is worth it: every [[enderman]] drops a [[Stable Void|stable void]] (the pack's ender pearl), and [[zombie]]s drop [[tattered leather]] instead of rotten flesh. The key progression items, [[Divine Fragment|divine fragments]], come only from breaking [[spawner]]s and defeating powerful mobs, so turning a spawner into a grinder costs the player the fragment they need for [[Eye of Ender|eyes of ender]], [[Crystal Heart|crystal hearts]], [[Bedrock Buster|bedrock busters]] and several [[blessing]]s.<ref>{{Cite video|quote=You could make a simple mob grinder, but the divine fragment is staring you in the face.}}</ref> [[Villager]]s no longer buy goods, except the [[fisherman]], so automated farms cannot be turned into currency.
+; Food over potions
+: Twelve ingredients have hidden [[intrinsic]]s, potion effects that appear once the ingredient is cooked. Every such ingredient has at least three dishes (a simple preparation, a preserve and a meal), and four oven-cooked meals give long, strong effects. Because food stacks and potions largely do not exist, planning a trip means cooking the right food: melons before going to [[Hell]], glow berries or carrots for caving, chorus fruit for [[the End]].<ref>{{Cite video|quote=If they're planning a trip to hell, they'll want to find some melons first.}}</ref> Meat has no intrinsics, which the developer intended to make slaughterhouses unattractive.
+; No hunger, no natural regeneration
+: The [[hunger]] bar is held at a fixed level, so the player can always sprint, and [[Natural regeneration|natural regeneration]] is off. The player heals by eating. The developer cited the hunger system of ''Minecraft'' Beta as the model.<ref>{{Cite video|quote=I do think though that the hunger system in beta was really fun.}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref>
+; Death costs health, not items
+: Keep inventory is on, and each death removes a heart of maximum health instead. [[Crystal Heart|Crystal hearts]] restore it, up to 30 hearts. The developer wanted a penalty that tolerates the occasional mistake but punishes reckless play, without the demoralizing loss of a whole inventory to lava.<ref>{{Cite video|quote=I found that the system lets me get away with doing something stupid every now and then, but if I play too recklessly, I'll lose so much health that I'll be beating myself up trying to be more careful.}}</ref>
+; A harder early game and a peaceful late game
+: Mobs are faster and more dangerous, and only [[undead]] mobs spawn on the open surface. Once the [[Ender Dragon]] is killed, hostile mobs stop spawning on the surface altogether, so that a player who has finished the game can build in peace while caves stay dangerous.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/first_dragon_killed_reward.mcfunction}}</ref>
+; Early quality of life
+: [[Sack]]s (the pack's shulker boxes) are cheap and craftable from the start, because the developer considers inventory management tools too important to lock behind the End: "Overpowered isn't the question you should be asking. Instead, ask is it fun?"<ref>{{Cite video|quote=Overpowered isn't the question you should be asking. Instead, ask is it fun?}}</ref> The [[Mattock|mattock]] and [[Dolabra|dolabra]] combine two tools each to free hotbar space, and repairing has no experience cap.
+; Horizontal progression
+: The alloys are meant to be alternatives rather than strict upgrades, so that players pick different equipment for different jobs even after defeating the dragon.<ref>{{Cite video|quote=The goal with these sets was to make each option enticing enough that every player will have a different idea on what the best set and combination is.}}</ref>
+
+== Features ==
+{{Main|Changes from vanilla}}
+The following is a summary. [[Changes from vanilla]] lists every change.
+
+=== Survival ===
+* '''[[Health]] and [[death]]''': Players start with 10 hearts and can hold up to 30. Dying removes 1 heart (2 hearts on Hard), down to a per-player minimum. That minimum starts at 10 hearts and drops by 1 heart for each of seven progression milestones in the [[Advancements|advancement]] tree, such as smelting copper, obtaining diamonds and entering Hell. On Easy the minimum never falls below 10 hearts.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/hpdown.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/decrease_minimum_hearts.mcfunction}}</ref>
+* '''[[Difficulty]]''': Each difficulty changes mob behavior, health and damage. On Normal, a player whose heart minimum falls below 6 hearts switches the world to Hard.
+* '''[[Mobs]]''': [[Zombie]]s are fast and fragile, [[husk]]s are slow, heavily armored "tanks" that spawn in every biome, [[skeleton]]s have about half their vanilla health, and [[creeper]]s and [[spider]]s live underground.
+* '''[[Surface]]''': Only undead spawn in the open overworld. After the first Ender Dragon kill, no hostile mobs spawn above ground. The chat message reads "Evil has been banished from the surface."
+* '''[[Darkness]]''': The overworld has "true darkness", and [[Hell]] (the renamed Nether) is dim.
+* '''[[Day and night]]''': A full day lasts 72,000 ticks (one hour), three times as long as vanilla.<ref>{{Source|MF_datapack/data/minecraft/timeline/day.json}}</ref>
+
+=== Food and cooking ===
+* About 50 new foods, including secret recipes, built around twelve ingredients with [[intrinsic]]s, such as apples, carrots, glow berries, melons, pumpkins, sweet berries and tomatoes.<ref>{{Cite video|quote=There are 12 ingredients with unique effects plus two more that act as secret ingredients}}</ref>
+* Cooking stations: the [[Kindling|kindling]] (campfire), the [[Mud Kiln|mud kiln]] (smoker) and the [[oven]] (furnace). See [[Cooking]].
+
+=== Equipment and materials ===
+* Stone tools are removed. Equipment goes from wood to [[Copper equipment|copper]], [[Iron equipment|iron]] and [[Diamond equipment|diamond]], with each metal needing a better furnace: copper is smelted in a mud kiln, while iron, gold, silver and diamond need a [[blast furnace]].
+* Five alloys are applied to base equipment in a [[Smithing Table|smithing table]]: [[Steel equipment|steel]] on iron, [[Hepatizon equipment|hepatizon]] and [[Shakudo equipment|shakudo]] on copper, and [[Electrum equipment|electrum]] and [[Adamant equipment|adamant]] (netherite) on diamond. Each tier has its own [[intrinsic]] effects and [[set bonus]]es.
+* New tool types: the [[mattock]], [[dolabra]], [[claymore]], [[Compound Bow|compound bow]], [[Snow Shovel|snow shovel]] and more. See [[Tools]] and [[Weapons]].
+* [[Jewelry]] made from gems found in dungeons, and [[warding]] equipment that burns the undead.
+
+=== Magic ===
+* The enchanting table is removed. Enchantments are crafted as [[blessing]]s ("prayers") from [[Hell-Bound Book|hell-bound books]], which are made with [[Estus]] refined from the ash that undead mobs drop. See [[Enchanting]].
+* [[Warding Stone|Warding stones]] protect a base by burning undead and healing villagers, players and pets.
+
+=== Villagers and trading ===
+* Most professions are renamed and have new trades that can be used 999 times without restocking.<ref>{{Source|MF_datapack/data/matcha/villager_trade}}</ref> [[Obol]]s replace emeralds and are rare. See [[Trading]].
+* The [[Wandering Trader|wandering trader]] can be summoned with [[Beacon Kindling|beacon kindling]] and sells [[Asylum Seeker|asylum seekers]], villagers who need a home.
+
+=== World ===
+* New structures: the [[Abbey]] and [[Papal Outpost|papal outpost]]. Villages are [[Abandoned village|abandoned]].
+* New ores and stones, including [[Native Silver|native silver]], [[Limestone|limestone]] and [[Malachite|malachite]].
+* About 50 fish sorted by climate and biome, catalogued in the [[Angler's Almanac]]. See [[Fishing]].
+* New music discs and background tracks. See [[Music]].
+
+== Development ==
+=== Origins ===
+Klei Wright began the pack for personal use in a "forever world" after playing Raspmary's modpack ''Raspberry Flavoured'', which the developer admired but did not want to use because it required mods.<ref>{{Cite video|quote=When I started my forever world, I just came off of playing Raspberry Flavored, a mod pack so good that I didn't want to leave. My only problem with it was that it was a mod pack.}}</ref> The first change was a recipe to blast cobblestone into gravel and gravel into sand, so that the developer would not have to dig up a desert. More recipes, foods, items and economy changes followed, with the aim of never needing a mob grinder. According to the video, the only farm the developer built in that world was for moss. The credits name ''Raspberry Flavoured'' as the direct inspiration for electrum, shakudo, hepatizon and divine fragments.<ref>{{Source|README.md}}</ref>
+
+The textures began as the developer's own updates to JermsyBoy's "A Little Taste of Jerm" resource pack after it stopped being updated. They were later redrawn from scratch so that they could be released under a free license.<ref>{{Source|MF_datapack/CREDITS.txt}}</ref> By the time of the video the pack had been in development for over a year.
+
+=== Alpha versions ===
+The first public build was replaced within days. According to the [[Matcha Flavoured 0.2-alpha|0.2-alpha]] release notes, the previous file was deleted because another pack's assets had been packaged with it by accident. 0.2-alpha and [[Matcha Flavoured 0.3-alpha|0.3-alpha]] targeted ''Minecraft'' 26.1.2. Every later version targets 26.2. The alphas added [[Crystal Heart|crystal hearts]] (0.3), the sulfur blocks and more equipment (0.4), the fishing overhaul (0.5), abandoned villages and the new hostile mob spawning rules (0.6), and the final food changes (0.7).
+
+=== 1.0 and hotfixes ===
+Version [[Matcha Flavoured 1.0|1.0]], "Finally Done", was released on July 24, 2026, together with the design video. Three hotfixes followed within four days: [[Matcha Flavoured 1.01|1.01]] (deserts), [[Matcha Flavoured 1.02|1.02]] (tutorial advancements) and [[Matcha Flavoured 1.03|1.03]] ([[Carbon-Rich Iron|carbon-rich iron]], electrum and trial chambers). A version 1.04 was published and then deleted because of bugs, especially in multiplayer.<ref>{{Cite changelog|1.10|quote=1.04 was deleted, there were too many bugs to justify keeping it up}}</ref>
+
+=== 1.10 to 1.12 ===
+[[Matcha Flavoured 1.10|1.10]], "Abbey, Multiplayer and Update Support", was the first large update after release. It added the [[Abbey]] and [[Papal Outpost|papal outpost]], difficulty-dependent mob behavior, [[Multiplayer|multiplayer]] support, and tools for carrying worlds between versions. From this version, the release notes mark features requested by the community with 👥. Versions [[Matcha Flavoured 1.11|1.11]] and [[Matcha Flavoured 1.12|1.12]] were hotfixes for deleted recipes and for performance problems caused by alloy armor.
+
+=== Open development ===
+With [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] ("Experimental: Death System"), the developer began publishing pre-releases for players willing to test. The pack moved to a public GitHub repository, adopted major.minor.patch version numbers and gained a translation project. The experimental death system, in which [[advancements]] lower a player's minimum hearts, was kept in [[Matcha Flavoured 1.12.2|1.12.2-beta]] after what the developer described as "so much positive feedback".<ref>{{Cite changelog|1.12.2|quote=There has been so much postitive feedback for it, that it is staying.}}</ref> 1.12.2-beta also moved nearly every item and function into the <code>matcha</code> namespace, which required the [[Updating items|item update trigger]], and credits eighteen community contributors. A port to ''Minecraft'' 26.3, which changes datapack syntax, was in progress at the time.
+
+See [[Version history]] for the full list of releases and [[Upcoming features]] for work in progress.
+
+== Distribution ==
+The pack is distributed on Modrinth and GitHub as a single archive that works as both the datapack and the resource pack, and must be installed in both places. See [[Installation]]. An accessible version of the resource pack and a community resource pack with vanilla-style textures are linked from the README.<ref>{{Source|README.md}}</ref> A Fabric mod manifest (<code>fabric.mod.json</code>) is included with the datapack.<ref>{{Source|MF_datapack/fabric.mod.json}}</ref>
+
+=== License ===
+Matcha Flavoured is licensed under [https://creativecommons.org/licenses/by-nc-sa/4.0/ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International].<ref>{{Source|LICENSE}}</ref> In the video, the developer explains that anyone may reuse any part of the pack, such as its recipes or textures, in their own work, as long as they credit it, share it under the same license and do not sell it. The README adds that this includes the Bedrock Marketplace unless the result is free.<ref>{{Cite video|quote=it just means that anyone can use any part of this pack and make it their own.}}</ref> The music disc "Golden" and several background tracks were contributed by other artists; see [[Credits]].
+
+== Reception ==
+The release notes track the community's response to several features. Players who liked the fast zombies' ability to make night and caves "scary again" led to the 1.10 split of zombies into fast strikers and slow husks rather than a plain nerf.<ref>{{Cite changelog|1.10|quote=I think one reason in particular: it makes night and caves scary again.}}</ref> "True darkness" in the overworld was removed in 1.03 and brought back in 1.10 because "a lot of people said they liked it because it was scary". Since 1.12 it can be turned off by swapping a file in the datapack.<ref>{{Cite changelog|1.12}}</ref> The experimental death system of 1.12.1-alpha received enough positive feedback to become permanent in 1.12.2-beta. As of September 2026, the pack's Modrinth files had been downloaded about 403,000 times across all versions.<ref>Modrinth version data at the time of the wiki's last sync.</ref>
+
+== Trivia ==
+* The translation keys of most custom content use the prefix <code>kleispack</code> (for example <code>item.kleispack.tinder</code>), after the developer's name.
+* Datapacks cannot add new items, so many custom items are vanilla items with a different model, name and components. For example, [[Benzene|benzene]] is an endermite spawn egg and [[Divine Fragment|divine fragments]] are turtle scutes. In [[Matcha Flavoured 0.7-alpha|0.7-alpha]] the developer reworked several recipes because spawn eggs cannot be made edible, and put new food ingredients on hold "until Mojang allows us to just add our own items and blocks with datapacks".<ref>{{Cite changelog|0.7-alpha}}</ref>
+* [[Shakudo equipment|Shakudo]] and [[Hepatizon equipment|hepatizon]] were called "Palatinate" and "Bronze" until 1.10, which renamed them in the language file only, so that existing items would not break. The old names survive in internal IDs and in the advancement titles "Palatinate Perfection" and "Brilliant Bronze".<ref>{{Cite changelog|1.10}}</ref>
+* The developer renamed emeralds to obols simply because "I like that more".<ref>{{Cite video|quote=Emeralds have been renamed to obols because I like that more.}}</ref>
+* The 1.10 release notes list "Removed Herobrine" among the major changes.
+* The music disc "Golden", composed by Ciren, was added in 1.0 in memory of the developer's dog, Dakota.<ref>{{Source|MF_datapack/CREDITS.txt}}</ref>
+* In 1.12.2, the chat message shown when the pack loads still reports version 1.12.1, although the internal version number is 1122.<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+
+== See also ==
+* [[Guide for new players]]
+* [[Changes from vanilla]]
+* [[Version history]]
+* [[Credits]]
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Matcha Flavoured]]

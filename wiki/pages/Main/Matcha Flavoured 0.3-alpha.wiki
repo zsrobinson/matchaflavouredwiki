@@ -1,0 +1,32 @@
+{{Meta version infobox
+|version=0.3-alpha
+|name=v0.3-alpha
+|type=Alpha
+|date=June 10, 2026
+|game=26.1.2
+|files=<code>Matcha_Flavoured.zip</code>
+|prev=0.2-alpha
+|next=0.4-alpha
+}}
+'''Matcha Flavoured 0.3-alpha''' (published as "v0.3-alpha") is a release of [[Matcha Flavoured]], published on June 10, 2026, the day after [[Matcha Flavoured 0.2-alpha|0.2-alpha]]. It introduced [[Crystal Heart|crystal hearts]] and was the last version for ''Minecraft'' 26.1.2.<ref>{{Cite changelog|0.3-alpha}}</ref>
+
+== Additions ==
+* [[Crystal Heart|Crystal hearts]], which replace the earlier "heart containers".
+** Crystal hearts can be crafted and are found in several chest [[Chest loot|loot tables]].
+
+== Changes ==
+* Refined the [[health]] system around crystal hearts.
+* [[Zombie]]s no longer drop crystal hearts.
+* The original vanilla recipes that the pack replaces are blocked again.
+
+== Fixes ==
+* [[Hell]] (the Nether) was completely dark because its ambient light was 0. It now has ambient light.
+* Restored the "ping" sound of the [[Zephyr]] enchantment.
+* [[Tools|Hoes]] can mine froglights (now [[Phosphor lamps|phosphor lamps]]) and wool.
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Alpha versions]]

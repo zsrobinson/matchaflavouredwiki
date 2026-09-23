@@ -1,0 +1,46 @@
+{{Vanilla|Blaze Spawn Egg}}
+{{Infobox auto
+|intrinsics={{G|Warding}} 2
+|renewable=Yes
+}}
+A '''nazar''' is a lapis charm that [[warding|wards]] the undead while held, with {{G|Warding}} 2. It is also the key ingredient of every other warding item: it is smithed onto swords and shields and built into the [[Warding Stone]]. The nazar replaces the {{MCW|Blaze Spawn Egg}}.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The recipe unlocks when the player picks up {{MCW|Lapis Lazuli|lapis lazuli}}.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/lapis_lazuli.json}}</ref> It also needs two [[Estus Ash]], which comes from [[Mobs|undead mobs]].
+
+== Usage ==
+=== Warding ===
+Held in the main hand or off hand, a nazar gives {{G|Warding}} 2: every second it slows undead within 10 blocks and deals {{Hp|1}} to the nearest one within 6 blocks.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_2.mcfunction}}</ref> Warding from both hands is added together up to {{G|Warding}} 3, so a nazar in the off hand turns any {{G|Warding}} 1 weapon, such as a [[Warding Sword]], into {{G|Warding}} 3. Two nazars also give {{G|Warding}} 3, the most that held items can reach. See [[Warding]] for the full mechanics.
+
+=== Crafting and smithing ingredient ===
+{{Uses}}
+
+=== Repairing ===
+Nazars and {{MCW|Block of Lapis Lazuli|blocks of lapis lazuli}} are the only materials that can repair the [[Warding Sword]], [[Silver Sword]] and [[Warding Shield]].<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/warding_sword.json}}</ref>
+
+== Advancements ==
+Crafting a nazar grants ''Apotropaic Jewellery'' in the [[Advancements/Tutorial|Tutorial]] tab: "Holding a Lapis Nazar will Ward the Dead. It can also be attached to some Equipment."<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_nazar.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|The nazar texture was changed, based on lapis textures by Zergologist.
+Nazars and lapis blocks became the only repair materials for the Silver Sword, Warding Sword and Warding Shield.}}
+{{History line|1.12.2|Warding from held items now stacks, so a nazar in the off hand raises a {{G|Warding}} 1 weapon to {{G|Warding}} 3.}}
+}}
+
+== Trivia ==
+* The pack's advancement calls the nazar "apotropaic jewellery", the same word the electrum set bonus uses for maximum warding ({{G|Apotropaic}} Max).
+
+== See also ==
+* [[Warding]]
+* [[Apotropaic]]
+* [[Jewelry]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Items]]
+[[Category:Renamed items]]

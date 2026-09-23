@@ -1,0 +1,65 @@
+{{Meta version infobox
+|version=0.4-alpha
+|name=Sulfur Update!
+|type=Alpha
+|date=June 17, 2026
+|files=<code>Matcha_Flavoured.zip</code>
+|prev=0.3-alpha
+|next=0.5-alpha
+}}
+'''Matcha Flavoured 0.4-alpha''', the "Sulfur Update!", is a release of [[Matcha Flavoured]], published on June 17, 2026. It was the first version for ''Minecraft'' 26.2. It adapted the pack to the new vanilla sulfur blocks and added several armor sets and weapons.<ref>{{Cite changelog|0.4-alpha}}</ref>
+
+== Additions ==
+=== Equipment ===
+* [[Sturdy leather armor]].
+* [[Chainmail armor]].
+* Electrum and steel [[spear]]s.
+* The [[Silver Sword|silver sword]], [[Warding Sword|warding sword]] and [[Warding Shield|warding shield]].
+* The [[Wooden Cross|wooden cross]].
+* Pack equipment added to every [[Chest loot|chest loot table]], and the loot tables buffed.
+
+=== Blocks and items ===
+* Support for the new vanilla sulfur blocks alongside the existing sulfur chunks.
+* [[Sulfur Goo|Sulfur goo]], a retextured slimeball.
+* [[Sulfurous Hellstone|Sulfurous hellstone]] gives off particles when stepped on.
+
+=== General ===
+* Translation support for all armor and tools.
+* A [[Piglin|piglin]] bartering loot table, which only works while <code>mobGriefing</code> is off.
+* Gems can be sold to the [[Jeweler|jeweler]].
+* Wake particles behind boats.
+* New textures: leather and adamant armor items, baby zombie and zombie villager, and the adamant spear.
+
+== Changes ==
+* [[Prayer of Prometheus|Prometheus' Prayer]] buffed to Unbreaking II.
+* The bronze (now [[Hepatizon equipment|hepatizon]]) spear buffed to Lunge III.
+* Leather, gold and steel armor now have white name text.
+* Armor durability and protection made consistent across tiers: leather < copper < gold, sturdy leather < iron, shakudo, bronze (hepatizon), steel < diamond, electrum < adamant.
+* [[Piglin|Piglin brutes]] drop [[Adamant Scrap|adamant scrap]] slightly less often, and now also drop [[Divine Fragment|divine fragments]].
+* [[Skeleton]]s and [[zombie]]s no longer drop the armor and weapons they hold.
+* [[Cave Spider|Cave spiders]] are fast but have only 2 hearts.
+* [[Creeper]]s have 8 hearts.
+* Sulfur cubes are "more cute".
+* Sulfur is now the [[Sulfur Chunk|sulfur chunk]], with a slightly changed texture.
+* Sulfur ores, including sulfurous hellstone, restyled to match the vanilla sulfur blocks.
+
+== Fixes ==
+* [[Shakudo equipment|Shakudo]] armor could not be crafted.
+* Fixed the shakudo sword, and its life-steal enchantment ("Sanguine") no longer works on armor stands.
+* Leather and [[Tattered Leather|tattered leather]] unlock the right recipes.
+* [[Warding]] on [[Electrum equipment|electrum]] tools and weapons did not work.
+* [[Sulfurous Quartz Deposit|Sulfurous quartz]] drops both sulfur and quartz.
+
+== Removals ==
+* Electrum horse armor, for the time being.
+* The "You cannot eat right now" warning.
+
+== Trivia ==
+* The release notes point out that electrum armor still wards the dead when worn or held by non-players, and that the developer decided to keep this bug because "it seems like a feature".
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Alpha versions]]

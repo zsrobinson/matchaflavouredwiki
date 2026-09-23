@@ -1,0 +1,88 @@
+{{Infobox auto
+|type=Placeable item
+|renewable=Yes
+}}
+A '''warding stone''' is a placeable [[warding]] turret. Once placed it becomes a lodestone that slows every undead mob within 24 blocks, burns the nearest one for {{Hp|7}} every half second, and heals villagers, pets and players nearby. It cannot be picked back up.
+
+The developer describes it as a way to protect a base while the player is away, since villagers "tend not to survive for too long on their own".<ref>{{Cite video|quote=Warding stones can protect your base when you aren't there, burning any undead within range. Plus, warding stones heal all nearby friends of villagers. Once you put them down, they can't be picked back up. They'll shatter, revert to their raw unstable form. So, place them carefully.}}</ref>
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The recipe needs four [[Nazar]]s and a [[Stabilized Estus]], so making one takes [[Estus Ash]] (for the Nazars and the Stabilized Estus), an ender pearl and [[Benzene]].
+
+== Usage ==
+The warding stone is used like a spawn egg: using it on a block places the stone there.
+
+=== Placement ===
+The item summons a small, invisible, invulnerable {{MCW|Armor Stand|armor stand}} tagged <code>WardingStone</code>.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/warding_stone.json}}</ref> On the next tick the pack sets it up:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/setup.mcfunction}}</ref>
+* If it was placed inside a [[Trial Chambers|trial chamber]] or an [[Abbey]] (the structure <code>minecraft:abbey_overgrown</code>), it is '''forbidden''': a primed [[TNT]] with no fuse is summoned at its position and explodes immediately, and the stone is destroyed.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/forbidden.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/in_dungeon.json}}</ref>
+* Otherwise a quiet [[Wither]] spawn sound plays, soul particles appear, and a {{MCW|Lodestone|lodestone}} block is placed where the stone stands.
+
+While active the stone gives off a constant stream of soul fire flames.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/tick.mcfunction}}</ref>
+
+=== Effects ===
+Every 0.5 seconds, each warding stone does the following:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/effects.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/warding_stone.mcfunction}}</ref>
+{| class="wikitable"
+! Effect !! Radius !! Targets
+|-
+| {{MCW|Regeneration}} I for 3 seconds, given only if the target has no Regeneration already || 16 blocks || "Villager friends": [[villager]]s, [[Wandering Trader|wandering traders]], iron golems, snow golems, wolves, cats, happy ghasts and players
+|-
+| {{MCW|Slowness}} III for 1 second || 24 blocks || Every warding stone target (see below)
+|-
+| {{Hp|2}} of damage || 24 blocks || The nearest [[Wither]], if one is in range
+|-
+| {{Hp|7}} of damage || 24 blocks || Otherwise, the nearest warding stone target
+|}
+The damage is of the <code>out_of_world</code> type, so it ignores armor and Resistance, and it is dealt to only one mob per pulse. Against a single target a warding stone deals {{Hp|14}} per second, far more than a player's [[warding]].
+
+Because the regeneration is re-applied as soon as it runs out, players and villagers within 16 blocks effectively have permanent Regeneration I. This matters in Matcha Flavoured, where there is no [[natural regeneration]].
+
+=== Targets ===
+The warding stone uses its own list of targets, which differs from the one used by warding items:<ref>{{Source|MF_datapack/data/matcha/tags/entity_type/warding_stone_targets.json}}</ref>
+* [[Zombie]], {{MCW|Zombie Villager}}, [[Husk]], [[Drowned]], [[Zombified Piglin]], {{MCW|Zoglin}}
+* [[Skeleton]], [[Stray]], [[Bogged]], [[Wither Skeleton]], {{MCW|Parched}}
+* [[Phantom]]
+* {{MCW|Pillager}}
+Unlike a player's warding, the stone:
+* slows and damages husks,
+* also attacks pillagers,
+* ignores copper armor completely, so copper-wearing mobs are damaged normally,
+* damages the Wither but does not slow it.
+
+=== Removal ===
+A warding stone cannot be picked up. If its lodestone is broken or destroyed, the stone '''shatters''': it releases smoke, deletes any lodestone item dropped within 3 blocks, drops a single [[Raw Estus]] and removes itself.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/remove.mcfunction}}</ref> The Stabilized Estus and Nazars used to craft it are lost.
+
+== Advancements ==
+Crafting a warding stone grants ''Holy Turret'' ("Construct a Warding Stone") in the [[Advancements/Hell|Hell]] tab.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/obtain_warding_stone.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.5-alpha|Added translation support for the warding stone.}}
+{{History line|0.6-alpha|Warding stones now heal villager friends (wolves, cats, villagers, wandering traders, players, iron golems and snow golems). The healing range was increased from 10 to 16 blocks.}}
+{{History line|1.03|Warding stones can no longer be placed in trial chambers.}}
+{{History line|1.10|Warding stones now target pillagers.
+Zombie horses, skeleton horses and camel husks were removed from the targets.
+Warding stones ignore the copper-armor immunity added to warding in this version.}}
+{{History line|1.12.1-alpha|Warding stones can no longer be placed in abbeys. Players were told to remove any from abbeys before updating.
+The zombie nautilus was removed from the targets.
+Summoning items, including warding stones, can no longer be used on spawners.
+The warding stone code was reworked by the contributor Hashiru.}}
+{{History line|1.12.2|The particles were updated to match the new warding particles.}}
+}}
+
+== Trivia ==
+* The item is built on a chicken spawn egg, and the block it leaves is an ordinary lodestone.
+* The 1.03 release notes dared players to try placing one in a trial chamber.<ref>{{Cite changelog|1.03|quote=Warding Stones CANNOT be placed in Trial Chambers (try it, I dare you ;) )}}</ref>
+
+== See also ==
+* [[Warding]]
+* [[Nazar]]
+* [[Villager]]
+
+== References ==
+{{reflist}}
+
+{{Navbox protection}}
+[[Category:Items]]
+[[Category:Mechanics]]

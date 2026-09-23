@@ -1,0 +1,76 @@
+{{Meta version infobox
+|version=0.5-alpha
+|name=Fishing Overhaul
+|type=Alpha
+|date=June 29, 2026
+|files=<code>Matcha_Flavoured.zip</code>
+|prev=0.4-alpha
+|next=0.6-alpha
+}}
+'''Matcha Flavoured 0.5-alpha''', the "Fishing Overhaul", is a release of [[Matcha Flavoured]], published on June 29, 2026. It replaced vanilla [[fishing]] with a climate-based system and added the [[Frost Protection]] enchantment, the clay statues and several foods. The developer called it close to a full release and said the next update would focus on fixes and polish instead of features.<ref>{{Cite changelog|0.5-alpha|quote=We're close to a full release, I have no plans to add new features for the next update, instead focusing on bug-fixes, polish, and UX.}}</ref>
+
+== Additions ==
+=== Fishing ===
+{{Main|Fishing}}
+* The fishing system was overhauled:
+** Caught [[fish]] have rarities, which set how much they sell for. Cod and salmon are only worth money when caught, not when taken from killed mobs.
+** Freshwater biomes are grouped into five climates (cold, cool, temperate, hot wet and hot dry) and saltwater biomes into five (cold, cool, temperate, warm and hot).
+** Each climate has five fish: two common, one uncommon, one rare and one epic. Swamps have their own group with unique junk but, at this point, no unique fish.
+** The aim was that every climate earns about the same when fishing, apart from a few rare biomes.
+** The [[fisherman]] only buys higher-rarity fish after the player has sold lower-rarity ones, so that rare fish are not spoiled in advance.
+* [[Cooked Pufferfish|Cooked pufferfish]].
+* [[Crystal Heart|Crystal hearts]] added to the fishing loot table.
+
+=== Items and blocks ===
+* The [[Frost Protection]] enchantment, which gives immunity to [[Freezing water|freezing water]] at level III.
+* Two [[Clay Fetish|clay fetishes]], called the mournful and cheerful clay statues in the notes. One sets the weather to rain ("Lament") and the other sets it to clear ("Rejoice").
+* The [[Fried Egg|fried egg]].
+* The mace, properly added and retextured.
+* [[Golden Apple|Golden apples]] integrated with a proper tooltip and texture.
+* Textures for all [[blessing]]s, sculk veins, echo shards and almost every flower item.
+
+=== General ===
+* Translation support for all foods, fish, enchantments, blessings, the [[Bedrock Buster|bedrock buster]], the [[Warding Stone|warding stone]] and many other items.
+* The [[Wandering Trader|wandering trader]] buys [[Music Disc|music discs]].
+* Overworld mobs no longer drop the equipment they are holding.
+* Tridents in warm and cold [[Ocean ruins|ocean ruins]].
+* All chest loot tables made translation-compatible.
+* Ghast tears drop more often.
+* Evokers drop [[Divine Fragment|divine fragments]].
+* Leaves no longer drop saplings or sticks. Saplings are crafted instead, to reduce inventory clutter.
+
+== Changes ==
+* Sweet berry jam no longer counts as honey, which had caused problems.
+* Buffed the golden apple foods.
+* Optimized the freezing water mechanic, the happy ghast horn and [[Estus|Estus]] processing.
+* Increased the range of the happy ghast horn.
+* The [[Elegy of Icarus|Prayer of Icarus]] buffed to Feather Falling II.
+* New textures for oak, acacia, dark oak and jungle saplings, the cauldron, and rose, lilac and peony blocks.
+* The pack no longer sets <code>mobGriefing</code> to false, leaving the choice to the player.
+* Many small changes to recipes, recipe unlocks and the datapack's organization.
+
+== Fixes ==
+* Glow jam returns a glass bottle when eaten.
+* The golden carrot recipe unlocks on obtaining a gold nugget, and the milk bottle recipe on obtaining milk.
+* The vanilla end rod recipe is blocked.
+* Fishing is no longer broken.
+* Nautilus shells no longer unlock the [[Stabilized Estus|stabilized Estus]] recipe.
+* Chicken jockeys drop the "Lava Chicken" music disc.
+* Cooking food on a [[Kindling|kindling]] unlocks the right recipes.
+* The [[Prayer of St. Clement]] works.
+* The minecart texture works.
+* Fixed the [[Invisible Item Frame|invisible item frame]]'s texture, recipe and recipe unlock.
+* The dragon-killing [[Advancements|advancement]] works.
+* Killing the [[Ender Dragon]] banishes evil from the [[Surface|surface]] even if the player who killed it is offline, and each player who kills the dragon for the first time creates a new [[Divine Favor|divine favor]].
+* [[Raw Estus|Estus]] is no longer processed in Creative mode, as a temporary fix for a major bug.
+* Fixed a bug that caused a severe performance drop in [[the End]].
+
+== Future plans ==
+The release notes list plans for a legendary fish tier caught only under conditions such as rain, night or a full moon, which is not in the game as of [[Matcha Flavoured 1.12.2|1.12.2]], and for more fish in magical and unusual biomes. The deep dark, pale garden and sulfur caves later received their own catches.<ref>{{Cite changelog|0.5-alpha}}</ref> The notes also say that a "ping" sound when a fish bites seemed impossible without mods. Distinct [[Fishing sounds|fishing sounds]] were later added in [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]].
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Alpha versions]]

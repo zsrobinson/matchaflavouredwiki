@@ -1,0 +1,38 @@
+{{Vanilla|Shulker Box}}
+{{Infobox auto}}
+A '''sack''' is a portable storage block that keeps its contents when broken. It replaces the {{MCW|Shulker Box|shulker box}}, and unlike its vanilla counterpart it is crafted from [[Sturdy Leather|sturdy leather]] and a [[chest]], so it is available from the early game instead of only after reaching [[The End]].
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+The vanilla recipe, which uses two shulker shells, is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Shulker shells themselves are renamed [[Shakudo Alloy]] in Matcha Flavoured, so the sack recipe does not involve them at all. The recipe is unlocked by picking up sturdy leather.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/sturdy_leather.json}}</ref>
+
+Dyed sacks (white, orange, magenta and so on) are made the vanilla way, by crafting a sack with a [[Dyes|dye]].
+
+=== Mob loot ===
+{{Sources}}
+{{MCW|Shulker|Shulkers}} drop a sack instead of shulker shells. The drop requires a player kill and has a 50% chance, raised by 6.25% per level of [[Looting]] (56.25% at Looting I, 62.5% at Looting II, 68.75% at Looting III).<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/shulker.json}}</ref>
+
+== Usage ==
+A sack behaves exactly like a vanilla shulker box: it holds 27 stacks, it keeps its items when broken, and it cannot be placed inside another sack. The container title reads "Sack".
+
+== Design ==
+The developer's design video presents early sacks as a deliberate quality-of-life change. Inventory management is one of the early game's main frustrations, and locking the best tool for it behind End cities made the developer feel that the game had to be finished before building could start.<ref>{{Cite video|quote=Shulkers are the player's best tool to combat inventory management. I don't think something that useful and that necessary should be locked behind end-game content.}}</ref> The video anticipates the objection that cheap shulker boxes are overpowered, and answers it by asking whether they make the game less fun rather than whether they are powerful.<ref>{{Cite video|quote=Overpowered isn't the question you should be asking. Instead, ask is it fun?}}</ref>
+
+== History ==
+{{History
+|{{History line|1.0|Shulker boxes were craftable early at the pack's release. The design video released alongside it describes a recipe using a lever and a chest.}}
+{{History line|1.02|The old recipe was removed, and the current recipe (sturdy leather and a chest) now unlocks properly.}}
+}}
+
+== Trivia ==
+* The introduction video opens by promising to explain "why being able to craft shulkers with a lever and a chest isn't overpowered, actually". The current recipe uses sturdy leather rather than a lever.<ref>{{Cite video|quote=why being able to craft shulkers with a lever and a chest isn't overpowered, actually}}</ref>
+* The block keeps the vanilla shulker box ID (<code>minecraft:shulker_box</code>), so it works with every mod and command that expects a shulker box.
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Utility blocks]]
+[[Category:Renamed items]]
