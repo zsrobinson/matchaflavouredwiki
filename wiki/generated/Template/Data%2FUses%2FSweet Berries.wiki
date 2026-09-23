@@ -3,26 +3,26 @@
 |-
 | [[Sweet Berry Mash]]
 | [[Sweet Berries]]
-| {{Cooking|station=Kindling|Input=Sweet Berries|Output=Sweet Berry Mash|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/sweet_berry_mash.json|matcha:food/campfire/sweet_berry_mash}}</small>
+| {{Cooking|station=Kindling|Input=Sweet Berries|Output=Sweet Berry Mash|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Bubbling Mead]]
 | [[Honey Bottle]] +<br />[[Brown Mushroom]] +<br />2 × [[Sugar]] +<br />[[Sweet Berries]] or [[Apple]] or [[Glow Berries]]
-| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sugar|B2=Sweet Berries;Apple;Glow Berries|Output=Bubbling Mead|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bubbling_mead.json|matcha:food/crafting/bubbling_mead}}</small>
+| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sugar|B2=Sweet Berries;Apple;Glow Berries|Output=Bubbling Mead|shapeless=1}}
 |-
 | [[Cake]]
 | 2 × [[Sweet Berries]] +<br />[[Milk Bottle]] +<br />2 × [[Sugar]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />3 × [[Flour]]
-| {{Crafting|A1=Sweet Berries|A2=Sugar|A3=Flour|B1=Milk Bottle|B2=Any Eggs|B3=Flour|C1=Sweet Berries|C2=Sugar|C3=Flour|Output=Cake}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cake.json|matcha:food/crafting/cake}}</small>
+| {{Crafting|A1=Sweet Berries|A2=Sugar|A3=Flour|B1=Milk Bottle|B2=Any Eggs|B3=Flour|C1=Sweet Berries|C2=Sugar|C3=Flour|Output=Cake}}
 |-
 | [[Mead]]
 | [[Honey Bottle]] +<br />[[Brown Mushroom]] +<br />[[Sugar]] +<br />[[Sweet Berries]] or [[Apple]] or [[Glow Berries]]
-| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sweet Berries;Apple;Glow Berries|Output=Mead|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/mead.json|matcha:food/crafting/mead}}</small>
+| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sweet Berries;Apple;Glow Berries|Output=Mead|shapeless=1}}
 |-
 | [[Sweet Berry Toast]]
 | [[Sweet Berries]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
-| {{Crafting|A1=Sweet Berries|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Sweet Berry Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sweet_berry_toast.json|matcha:food/crafting/sweet_berry_toast}}</small>
+| {{Crafting|A1=Sweet Berries|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Sweet Berry Toast|shapeless=1}}
 |-
 | [[Sweet Berry Mash]]
 | [[Sweet Berries]]
-| {{Cooking|station=Oven|Input=Sweet Berries|Output=Sweet Berry Mash|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/sweet_berry_mash.json|matcha:food/oven/sweet_berry_mash}}</small>
+| {{Cooking|station=Oven|Input=Sweet Berries|Output=Sweet Berry Mash|time=5|note=5 s, 0.35 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -3,62 +3,62 @@
 |-
 | [[Ramen]]
 | [[Bowl]] +<br />[[Glow Berry Mash]] +<br />[[Egg]] or [[Blue Egg]] or [[Brown Egg]] +<br />[[Brown Mushroom]] or [[Raw Porkchop]] +<br />[[Dried Kelp]]
-| {{Crafting|A1=Bowl|B1=Glow Berry Mash|C1=Egg;Blue Egg;Brown Egg|A2=Brown Mushroom;Raw Porkchop|B2=Dried Kelp|Output=Ramen|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ramen.json|matcha:crafting/ramen}}</small>
+| {{Crafting|A1=Bowl|B1=Glow Berry Mash|C1=Egg;Blue Egg;Brown Egg|A2=Brown Mushroom;Raw Porkchop|B2=Dried Kelp|Output=Ramen|shapeless=1}}
 |-
 | [[Braised Mushroom]]
 | [[Brown Mushroom]]
-| {{Cooking|station=Kindling|Input=Brown Mushroom|Output=Braised Mushroom|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/braised_brown_mushroom.json|matcha:food/campfire/braised_brown_mushroom}}</small>
+| {{Cooking|station=Kindling|Input=Brown Mushroom|Output=Braised Mushroom|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Bubbling Mead]]
 | [[Honey Bottle]] +<br />[[Brown Mushroom]] +<br />2 × [[Sugar]] +<br />[[Sweet Berries]] or [[Apple]] or [[Glow Berries]]
-| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sugar|B2=Sweet Berries;Apple;Glow Berries|Output=Bubbling Mead|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bubbling_mead.json|matcha:food/crafting/bubbling_mead}}</small>
+| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sugar|B2=Sweet Berries;Apple;Glow Berries|Output=Bubbling Mead|shapeless=1}}
 |-
 | [[Cheese]]
 | [[Milk Bottle]] +<br />[[Sugar]] +<br />[[Brown Mushroom]]
-| {{Crafting|A1=Milk Bottle|B1=Sugar|C1=Brown Mushroom|Output=Cheese,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cheese.json|matcha:food/crafting/cheese}}</small>
+| {{Crafting|A1=Milk Bottle|B1=Sugar|C1=Brown Mushroom|Output=Cheese,4|shapeless=1}}
 |-
 | [[Golden Pickled Carrots]]
 | [[Golden Carrot]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
-| {{Crafting|A1=Golden Carrot|B1=Brown Mushroom|C1=Glass Bottle|Output=Golden Pickled Carrots|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_pickled_carrots.json|matcha:food/crafting/golden_pickled_carrots}}</small>
+| {{Crafting|A1=Golden Carrot|B1=Brown Mushroom|C1=Glass Bottle|Output=Golden Pickled Carrots|shapeless=1}}
 |-
 | [[Mead]]
 | [[Honey Bottle]] +<br />[[Brown Mushroom]] +<br />[[Sugar]] +<br />[[Sweet Berries]] or [[Apple]] or [[Glow Berries]]
-| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sweet Berries;Apple;Glow Berries|Output=Mead|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/mead.json|matcha:food/crafting/mead}}</small>
+| {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sweet Berries;Apple;Glow Berries|Output=Mead|shapeless=1}}
 |-
 | [[Pickled Carrots]]
 | [[Carrot]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
-| {{Crafting|A1=Carrot|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Carrots|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_carrots.json|matcha:food/crafting/pickled_carrots}}</small>
+| {{Crafting|A1=Carrot|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Carrots|shapeless=1}}
 |-
 | [[Pickled Crimson Fungus]]
 | [[Crimson Fungus]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
-| {{Crafting|A1=Crimson Fungus|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Crimson Fungus|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_crimson_fungus.json|matcha:food/crafting/pickled_crimson_fungus}}</small>
+| {{Crafting|A1=Crimson Fungus|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Crimson Fungus|shapeless=1}}
 |-
 | [[Pickled Mushrooms]]
 | [[Braised Mushroom]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
-| {{Crafting|A1=Braised Mushroom|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Mushrooms|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_mushrooms.json|matcha:food/crafting/pickled_mushrooms}}</small>
+| {{Crafting|A1=Braised Mushroom|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Mushrooms|shapeless=1}}
 |-
 | [[Pickled Potatoes]]
 | [[Baked Potato]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
-| {{Crafting|A1=Baked Potato|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Potatoes|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_potatoes.json|matcha:food/crafting/pickled_potatoes}}</small>
+| {{Crafting|A1=Baked Potato|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Potatoes|shapeless=1}}
 |-
 | [[Pickled Toadstools]]
 | [[Red Mushroom]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
-| {{Crafting|A1=Red Mushroom|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Toadstools|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_red_mushrooms.json|matcha:food/crafting/pickled_red_mushrooms}}</small>
+| {{Crafting|A1=Red Mushroom|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Toadstools|shapeless=1}}
 |-
 | [[Sun-dried Tomatoes]]
 | [[Tomatoes]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
-| {{Crafting|A1=Tomatoes|B1=Brown Mushroom|C1=Glass Bottle|Output=Sun-dried Tomatoes|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_tomatoes.json|matcha:food/crafting/pickled_tomatoes}}</small>
+| {{Crafting|A1=Tomatoes|B1=Brown Mushroom|C1=Glass Bottle|Output=Sun-dried Tomatoes|shapeless=1}}
 |-
 | [[Pickled Warped Fungus]]
 | [[Warped Fungus]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
-| {{Crafting|A1=Warped Fungus|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Warped Fungus|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_warped_fungus.json|matcha:food/crafting/pickled_warped_fungus}}</small>
+| {{Crafting|A1=Warped Fungus|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Warped Fungus|shapeless=1}}
 |-
 | [[Ramen Stock]]
 | [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Chicken]] or [[Seitan]] +<br />[[Bowl]]
-| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_ramen.json|matcha:food/crafting/uncooked_ramen}}</small>
+| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}
 |-
 | [[Braised Mushroom]]
 | [[Brown Mushroom]]
-| {{Cooking|station=Oven|Input=Brown Mushroom|Output=Braised Mushroom|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/braised_brown_mushroom.json|matcha:food/oven/braised_brown_mushroom}}</small>
+| {{Cooking|station=Oven|Input=Brown Mushroom|Output=Braised Mushroom|time=5|note=5 s, 0.35 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

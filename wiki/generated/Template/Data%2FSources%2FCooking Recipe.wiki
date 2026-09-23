@@ -3,19 +3,19 @@
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Abandoned mineshaft <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_mineshaft.json|chests/abandoned_mineshaft}})</small> || 1 || 8.93% || 
+| Abandoned mineshaft || Cooking Recipe (Gnocchi) || 1 || 8.93% || 
 |}
 
 '''Trading'''
 {| class="wikitable trade-table"
 ! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Cook]] || Novice || {{Trade|Obol||Cooking Recipe}} || {{ItemLink|Obol}} || 1
+| [[Cook]] || Novice || {{Trade|Obol||Cooking Recipe}}<br /><small>Cooking Recipe (Sweet Berry Toast)</small> || {{ItemLink|Obol}} || 1
 |-
-| [[Cook]] || Apprentice || {{Trade|Obol||Cooking Recipe}} || {{ItemLink|Obol}} || 1
+| [[Cook]] || Apprentice || {{Trade|Obol||Cooking Recipe}}<br /><small>Cooking Recipe (Warped Stroganoff)</small> || {{ItemLink|Obol}} || 1
 |-
-| [[Cook]] || Journeyman || {{Trade|Obol||Cooking Recipe}} || {{ItemLink|Obol}} || 1
+| [[Cook]] || Journeyman || {{Trade|Obol||Cooking Recipe}}<br /><small>Cooking Recipe (Chorus Mochi)</small> || {{ItemLink|Obol}} || 1
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

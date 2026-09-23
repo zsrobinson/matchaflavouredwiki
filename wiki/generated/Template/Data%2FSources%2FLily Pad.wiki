@@ -5,33 +5,33 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 5.98% || 
+| Village / village fisher || 1 || 5.98% || 
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 43.4% || only in [[Fishing#Other biomes|other biomes]]
+| Village / village fisher || 1 || 43.4% || only in [[Fishing#Other biomes|other biomes]]
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 5.98% || 
+| Elder guardian || 1 || 5.98% || 
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 43.4% || only in [[Fishing#Other biomes|other biomes]]
+| Elder guardian || 1 || 43.4% || only in [[Fishing#Other biomes|other biomes]]
 |}
 
 '''Fishing'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 1.93% || 
+| Fishing || 1 || 1.93% || 
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 16.4% || only in [[Fishing#Other biomes|other biomes]]
+| Fishing || 1 || 16.4% || only in [[Fishing#Other biomes|other biomes]]
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Lily pad <small>({{Source|vanilla:loot_table/blocks/lily_pad.json|blocks/lily_pad}})</small> || 1 || 100% || 
+| Lily pad || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

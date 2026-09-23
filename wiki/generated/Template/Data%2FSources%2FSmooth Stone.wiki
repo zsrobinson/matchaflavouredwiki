@@ -5,15 +5,15 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village mason <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_mason.json|chests/village/village_mason}})</small> || 1 || 37.7% || 
+| Village / village mason || 1 || 37.7% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Smooth stone <small>({{Source|vanilla:loot_table/blocks/smooth_stone.json|blocks/smooth_stone}})</small> || 1 || 100% || 
+| Smooth stone || 1 || 100% || 
 |-
-| Stone <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/stone.json|blocks/stone}})</small> || 1 || 100% || specific tool
+| Stone || 1 || 100% || specific tool
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

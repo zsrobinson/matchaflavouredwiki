@@ -12,10 +12,10 @@
 |-
 | [[Copper Bars]]
 | [[Block of Copper]]
-| {{Stonecutter|Input=Block of Copper|Output=Copper Bars,36}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/copper_bars_from_stonecutting_copper_block.json|matcha:stonecutting/copper_bars_from_stonecutting_copper_block}}</small>
+| {{Stonecutter|Input=Block of Copper|Output=Copper Bars,36}}
 |-
 | [[Copper Bars]]
 | [[Copper Ingot]]
-| {{Stonecutter|Input=Copper Ingot|Output=Copper Bars,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/copper_bars_from_stonecutting_copper_ingot.json|matcha:stonecutting/copper_bars_from_stonecutting_copper_ingot}}</small>
+| {{Stonecutter|Input=Copper Ingot|Output=Copper Bars,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

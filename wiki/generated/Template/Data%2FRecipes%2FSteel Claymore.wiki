@@ -2,7 +2,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Steel Claymore]]
-| [[Smithing Template]] +<br />[[Iron Sword]] +<br />[[Steel Alloy]]
-| {{Smithing|Template=Smithing Template|Base=Iron Sword|Addition=Steel Alloy|Output=Steel Claymore}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_claymore.json|matcha:smithing/steel_claymore}}</small>
+| [[Smithing Upgrade Template]] +<br />[[Iron Sword]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=Smithing Upgrade Template|Base=Iron Sword|Addition=Steel Alloy|Output=Steel Claymore}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

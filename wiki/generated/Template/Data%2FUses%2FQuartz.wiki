@@ -3,15 +3,15 @@
 |-
 | [[Clock]]
 | 4 × [[Gold Ingot]] +<br />[[Quartz]]
-| {{Crafting|A2=Gold Ingot|B1=Gold Ingot|B2=Quartz|B3=Gold Ingot|C2=Gold Ingot|Output=Clock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clock.json|matcha:crafting/clock}}</small>
+| {{Crafting|A2=Gold Ingot|B1=Gold Ingot|B2=Quartz|B3=Gold Ingot|C2=Gold Ingot|Output=Clock}}
 |-
 | [[Diorite]]
 | 2 × [[Cobblestone]] +<br />2 × [[Quartz]]
-| {{Crafting|A1=Cobblestone|A2=Quartz|B1=Quartz|B2=Cobblestone|Output=Diorite,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diorite.json|matcha:crafting/diorite}}</small>
+| {{Crafting|A1=Cobblestone|A2=Quartz|B1=Quartz|B2=Cobblestone|Output=Diorite,4}}
 |-
 | [[Glass]]
 | [[Quartz]]
-| {{Cooking|station=Mud Kiln|Input=Quartz|Output=Glass|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/glass_from_smoking_quartz.json|matcha:kiln/glass_from_smoking_quartz}}</small>
+| {{Cooking|station=Mud Kiln|Input=Quartz|Output=Glass|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Electric Comparator]] <small>(vanilla recipe)</small>
 | 3 × [[Electric Inverter]] +<br />[[Quartz]] +<br />3 × [[Limestone]]

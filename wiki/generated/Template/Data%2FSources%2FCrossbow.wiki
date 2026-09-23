@@ -3,14 +3,16 @@
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Bastion bridge <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_bridge.json|chests/bastion_bridge}})</small> || 1 || 12.4% || 
+| Bastion bridge || Crossbow (enchanted) || 1 || 12.4% || 
 |-
-| Bastion other <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_other.json|chests/bastion_other}})</small> || 1 || 22.0% || 
+| Bastion other || Crossbow || 1 || 17.4% || 
 |-
-| Trial chambers / reward <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward.json|chests/trial_chambers/reward}})</small> || 1 || 7.27% || 
+| Bastion other || Crossbow (enchanted) || 1 || 9.37% || 
 |-
-| Trial chambers / reward ominous <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward_ominous.json|chests/trial_chambers/reward_ominous}})</small> || 1 || 8.42% || 
+| Trial chambers / reward || Crossbow (enchanted) || 1 || 7.27% || 
+|-
+| Trial chambers / reward ominous || Crossbow (enchanted) || 1 || 8.42% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -4,7 +4,7 @@
 |-
 | [[Green Dye]]
 | [[Potion]] +<br />[[Raw Copper]] +<br />[[Sulfur Chunk]]
-| {{Crafting|A1=Potion|B1=Raw Copper|C1=Sulfur Chunk|Output=Green Dye,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/green_dye_from_patina.json|matcha:crafting/green_dye_from_patina}}</small>
+| {{Crafting|A1=Potion|B1=Raw Copper|C1=Sulfur Chunk|Output=Green Dye,2|shapeless=1}}
 |}
 '''Cooking'''
 {| class="wikitable recipe-table"
@@ -12,7 +12,7 @@
 |-
 | [[Green Dye]]
 | [[Cactus]]
-| {{Cooking|station=Mud Kiln|Input=Cactus|Output=Green Dye|time=5|note=5 s, 0.05 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/green_dye.json|matcha:kiln/green_dye}}</small>
+| {{Cooking|station=Mud Kiln|Input=Cactus|Output=Green Dye|time=5|note=5 s, 0.05 XP}}
 |}
 '''Blasting'''
 {| class="wikitable recipe-table"
@@ -20,6 +20,6 @@
 |-
 | [[Green Dye]]
 | [[Cactus]]
-| {{Cooking|station=Blast Furnace|Input=Cactus|Output=Green Dye|time=2.5|note=2.5 s, 0.05 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/green_dye.json|matcha:blast/green_dye}}</small>
+| {{Cooking|station=Blast Furnace|Input=Cactus|Output=Green Dye|time=2.5|note=2.5 s, 0.05 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

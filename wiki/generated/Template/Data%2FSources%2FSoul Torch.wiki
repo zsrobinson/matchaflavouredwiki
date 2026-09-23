@@ -5,13 +5,13 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Ancient city <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/ancient_city.json|chests/ancient_city}})</small> || 1–15 || 33.3% || 
+| Ancient city || 1–15 || 33.3% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Soul torch <small>({{Source|vanilla:loot_table/blocks/soul_torch.json|blocks/soul_torch}})</small> || 1 || 100% || 
+| Soul torch || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

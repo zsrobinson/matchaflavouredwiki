@@ -5,26 +5,26 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 68.5% || only in [[Fishing#Temperate freshwater|temperate freshwater biomes]]
+| Village / village fisher || 1 || 68.5% || only in [[Fishing#Temperate freshwater|temperate freshwater biomes]]
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 68.5% || only in Dripstone Caves, Lush Caves
+| Village / village fisher || 1 || 68.5% || only in Dripstone Caves, Lush Caves
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 68.5% || only in [[Fishing#Temperate freshwater|temperate freshwater biomes]]
+| Elder guardian || 1 || 68.5% || only in [[Fishing#Temperate freshwater|temperate freshwater biomes]]
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 68.5% || only in Dripstone Caves, Lush Caves
+| Elder guardian || 1 || 68.5% || only in Dripstone Caves, Lush Caves
 |}
 
 '''Fishing'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || only in [[Fishing#Temperate freshwater|temperate freshwater biomes]]
+| Fishing || 1 || 30.4% || only in [[Fishing#Temperate freshwater|temperate freshwater biomes]]
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || only in Dripstone Caves, Lush Caves
+| Fishing || 1 || 30.4% || only in Dripstone Caves, Lush Caves
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

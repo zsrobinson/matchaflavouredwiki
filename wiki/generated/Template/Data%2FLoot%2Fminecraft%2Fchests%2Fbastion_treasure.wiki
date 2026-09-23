@@ -2,9 +2,9 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Smithing Template}} || 1 || 100% || 100% || 
-|-
 | {{ItemLink|Ruby}} || 1 || 100% || 100% || 
+|-
+| {{ItemLink|Smithing Upgrade Template}} || 1 || 100% || 100% || 
 |-
 | {{ItemLink|Ancient Debris|mcw=Ancient Debris}} || 1–3 || 34.5% || 71.9% || 
 |-
@@ -30,6 +30,8 @@
 |-
 | {{ItemLink|Estus Ash}} || 3–8 || 12.5% || 37.2% || 
 |-
-| {{ItemLink|Golden Apple}} || 1 || 6.90% || 19.3% || 
+| {{ItemLink|Snout Armor Trim Smithing Template}} || 1 || 8.33% || 8.33% || 
+|-
+| {{ItemLink|Golden Apple|Golden Apple (replaces Enchanted Golden Apple)}} || 1 || 6.90% || 19.3% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

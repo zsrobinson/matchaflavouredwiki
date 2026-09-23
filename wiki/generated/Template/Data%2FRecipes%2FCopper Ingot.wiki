@@ -4,7 +4,7 @@
 |-
 | [[Copper Ingot]]
 | 4 × [[Electric Wire]]
-| {{Crafting|A1=Electric Wire|A2=Electric Wire|B1=Electric Wire|B2=Electric Wire|Output=Copper Ingot}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_ingot_from_copper_wire.json|matcha:crafting/copper_ingot_from_copper_wire}}</small>
+| {{Crafting|A1=Electric Wire|A2=Electric Wire|B1=Electric Wire|B2=Electric Wire|Output=Copper Ingot}}
 |-
 | [[Copper Ingot]] <small>(vanilla recipe)</small>
 | [[Block of Copper]]
@@ -24,7 +24,7 @@
 |-
 | [[Copper Ingot]]
 | [[Raw Copper]]
-| {{Cooking|station=Mud Kiln|Input=Raw Copper|Output=Copper Ingot|time=10|note=10 s, 0.7 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/copper_ingot_from_smoking_raw_copper.json|matcha:kiln/copper_ingot_from_smoking_raw_copper}}</small>
+| {{Cooking|station=Mud Kiln|Input=Raw Copper|Output=Copper Ingot|time=10|note=10 s, 0.7 XP}}
 |}
 '''Blasting'''
 {| class="wikitable recipe-table"
@@ -32,7 +32,7 @@
 |-
 | [[Copper Ingot]]
 | [[Copper Pickaxe]] or [[Copper Shovel]] or [[Copper Axe]] or [[Copper Hoe]] or [[Copper Sword]] or [[Copper Spear]] or [[Copper Helmet]] or [[Copper Chestplate]] or [[Copper Leggings]] or [[Copper Boots]] or [[Raw Copper]] or [[Copper Horse Armor]] or [[Copper Nautilus Armor]]
-| {{Cooking|station=Blast Furnace|Input=Copper Pickaxe;Copper Shovel;Copper Axe;Copper Hoe;Copper Sword;Copper Spear;Copper Helmet;Copper Chestplate;Copper Leggings;Copper Boots;Raw Copper;Copper Horse Armor;Copper Nautilus Armor|Output=Copper Ingot|time=5|note=5 s, 0.2 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/copper_ingot_from_blasting_copper_materials.json|matcha:blast/copper_ingot_from_blasting_copper_materials}}</small>
+| {{Cooking|station=Blast Furnace|Input=Copper Pickaxe;Copper Shovel;Copper Axe;Copper Hoe;Copper Sword;Copper Spear;Copper Helmet;Copper Chestplate;Copper Leggings;Copper Boots;Raw Copper;Copper Horse Armor;Copper Nautilus Armor|Output=Copper Ingot|time=5|note=5 s, 0.2 XP}}
 |-
 | [[Copper Ingot]] <small>(vanilla recipe)</small>
 | [[Raw Copper]]

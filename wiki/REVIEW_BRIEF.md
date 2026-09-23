@@ -41,5 +41,9 @@ rules apply.
 - Check each page with `python3 tools/preview.py "Title"` (0 errors, no unplanned red links).
   Screenshot a few with `tools/screenshot.sh`.
 - Don't run build/sync scripts and don't commit.
-- Final report: what you changed (by page), factual errors you corrected, and anything still
-  uncertain.
+- Final report:
+  - what you changed (by page);
+  - factual errors you corrected;
+  - anything still uncertain;
+  - before/after screenshots of any page whose look changed, with their paths (see "Show your work
+    visually" in `AGENTS.md`).

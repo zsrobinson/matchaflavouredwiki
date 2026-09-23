@@ -78,7 +78,7 @@ The Tutorial tab, rooted in "From Earth", traces the pack's progression in sever
 |-
 | {{Slot|Adamant Pickaxe|link=none}} || <span id="Apocryphal Adamant"></span>'''Apocryphal Adamant''' || {{G|E00F}}{{G|E00F}}{{G|E00F}}{{G|E00F}} Smith a piece of Adamant Equipment from Diamond with Adamant Alloy || Master Metallurge || Smith any of 13 [[Adamant equipment|adamant]] items, including the claymore. || Challenge || 4 {{ItemLink|Obol}}
 |-
-| {{Slot|Smithing Template|link=none}} || <span id="Upgrades"></span>'''Upgrades''' || Smithing Upgrades are used to Modify and Upgrade Mattocks and Dolabras || Master Metallurge || Have a [[Smithing Upgrade Template|smithing template]] in the inventory. || Task || —
+| {{Slot|Smithing Upgrade Template|link=none}} || <span id="Upgrades"></span>'''Upgrades''' || Smithing Upgrades are used to Modify and Upgrade Mattocks and Dolabras || Master Metallurge || Have a [[Smithing Upgrade Template|smithing template]] in the inventory. || Task || —
 |-
 | {{Slot|Steel Dolabra|link=none}} || <span id="Three in One?"></span>'''Three in One?''' || {{G|E00F}}{{G|E00F}} Upgrade a Mattock or Dolabra || Upgrades || Smith a steel, shakudo or electrum mattock or dolabra.{{#tag:ref|The criteria for hepatizon use the recipe IDs <code>matcha:smithing/bronze_dolabra</code> and <code>bronze_mattock</code>, which do not exist; the recipes are named <code>hepatizon_dolabra</code> and <code>hepatizon_mattock</code>. Smithing a hepatizon mattock or dolabra therefore does not grant this advancement ({{Source|MF_datapack/data/matcha/advancement/tutorial/upgrade_mattock.json}}).|group=note}} || Goal || 1 {{ItemLink|Obol}}
 |-

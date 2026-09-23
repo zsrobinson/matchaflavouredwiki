@@ -3,22 +3,22 @@
 |-
 | [[Copper Ingot]]
 | [[Copper Pickaxe]] or [[Copper Shovel]] or [[Copper Axe]] or [[Copper Hoe]] or [[Copper Sword]] or [[Copper Spear]] or [[Copper Helmet]] or [[Copper Chestplate]] or [[Copper Leggings]] or [[Copper Boots]] or [[Raw Copper]] or [[Copper Horse Armor]] or [[Copper Nautilus Armor]]
-| {{Cooking|station=Blast Furnace|Input=Copper Pickaxe;Copper Shovel;Copper Axe;Copper Hoe;Copper Sword;Copper Spear;Copper Helmet;Copper Chestplate;Copper Leggings;Copper Boots;Raw Copper;Copper Horse Armor;Copper Nautilus Armor|Output=Copper Ingot|time=5|note=5 s, 0.2 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/copper_ingot_from_blasting_copper_materials.json|matcha:blast/copper_ingot_from_blasting_copper_materials}}</small>
+| {{Cooking|station=Blast Furnace|Input=Copper Pickaxe;Copper Shovel;Copper Axe;Copper Hoe;Copper Sword;Copper Spear;Copper Helmet;Copper Chestplate;Copper Leggings;Copper Boots;Raw Copper;Copper Horse Armor;Copper Nautilus Armor|Output=Copper Ingot|time=5|note=5 s, 0.2 XP}}
 |-
 | [[Hepatizon Axe]]
 | [[Copper Axe]] +<br />[[Hepatizon Alloy]]
-| {{Smithing|Template=|Base=Copper Axe|Addition=Hepatizon Alloy|Output=Hepatizon Axe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_axe.json|matcha:smithing/hepatizon_axe}}</small>
+| {{Smithing|Template=|Base=Copper Axe|Addition=Hepatizon Alloy|Output=Hepatizon Axe}}
 |-
 | [[Hepatizon Dolabra]]
-| [[Smithing Template]] +<br />[[Copper Axe]] +<br />[[Hepatizon Alloy]]
-| {{Smithing|Template=Smithing Template|Base=Copper Axe|Addition=Hepatizon Alloy|Output=Hepatizon Dolabra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_dolabra.json|matcha:smithing/hepatizon_dolabra}}</small>
+| [[Smithing Upgrade Template]] +<br />[[Copper Axe]] +<br />[[Hepatizon Alloy]]
+| {{Smithing|Template=Smithing Upgrade Template|Base=Copper Axe|Addition=Hepatizon Alloy|Output=Hepatizon Dolabra}}
 |-
 | [[Shakudo Axe]]
 | [[Copper Axe]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=|Base=Copper Axe|Addition=Shakudo Alloy|Output=Shakudo Axe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_axe.json|matcha:smithing/shakudo_axe}}</small>
+| {{Smithing|Template=|Base=Copper Axe|Addition=Shakudo Alloy|Output=Shakudo Axe}}
 |-
 | [[Shakudo Dolabra]]
-| [[Smithing Template]] +<br />[[Copper Axe]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=Smithing Template|Base=Copper Axe|Addition=Shakudo Alloy|Output=Shakudo Dolabra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_dolabra.json|matcha:smithing/shakudo_dolabra}}</small>
+| [[Smithing Upgrade Template]] +<br />[[Copper Axe]] +<br />[[Shakudo Alloy]]
+| {{Smithing|Template=Smithing Upgrade Template|Base=Copper Axe|Addition=Shakudo Alloy|Output=Shakudo Dolabra}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

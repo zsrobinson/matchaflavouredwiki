@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Guster Banner Pattern}}
+|image={{#if:{{{image|}}}|{{{image}}}|Guster Banner Pattern.png}}
+|imagesize=160px
+|invimage=Guster Banner Pattern
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Rare
+|stackable=No
+|id=<code>minecraft:guster_banner_pattern</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_unique.json|reward_unique.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

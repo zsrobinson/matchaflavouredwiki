@@ -3,23 +3,23 @@
 |-
 | [[Red Dye]]
 | [[Crimson Fungus]]
-| {{Crafting|A1=Crimson Fungus|Output=Red Dye,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/red_dye_from_crimson_fungus.json|matcha:crafting/red_dye_from_crimson_fungus}}</small>
+| {{Crafting|A1=Crimson Fungus|Output=Red Dye,2|shapeless=1}}
 |-
 | [[Braised Crimson Fungus]]
 | [[Crimson Fungus]]
-| {{Cooking|station=Kindling|Input=Crimson Fungus|Output=Braised Crimson Fungus|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/braised_crimson_fungus.json|matcha:food/campfire/braised_crimson_fungus}}</small>
+| {{Cooking|station=Kindling|Input=Crimson Fungus|Output=Braised Crimson Fungus|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Crimson Stroganoff]]
 | [[Crimson Fungus]] +<br />[[Steak]] +<br />[[Dough]] +<br />[[Milk Bottle]] +<br />[[Bowl]]
-| {{Crafting|A1=Crimson Fungus|B1=Steak|C1=Dough|A2=Milk Bottle|B2=Bowl|Output=Crimson Stroganoff|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/crimson_stroganoff.json|matcha:food/crafting/crimson_stroganoff}}</small>
+| {{Crafting|A1=Crimson Fungus|B1=Steak|C1=Dough|A2=Milk Bottle|B2=Bowl|Output=Crimson Stroganoff|shapeless=1}}
 |-
 | [[Pickled Crimson Fungus]]
 | [[Crimson Fungus]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
-| {{Crafting|A1=Crimson Fungus|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Crimson Fungus|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_crimson_fungus.json|matcha:food/crafting/pickled_crimson_fungus}}</small>
+| {{Crafting|A1=Crimson Fungus|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Crimson Fungus|shapeless=1}}
 |-
 | [[Braised Crimson Fungus]]
 | [[Crimson Fungus]]
-| {{Cooking|station=Oven|Input=Crimson Fungus|Output=Braised Crimson Fungus|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/braised_crimson_fungus.json|matcha:food/oven/braised_crimson_fungus}}</small>
+| {{Cooking|station=Oven|Input=Crimson Fungus|Output=Braised Crimson Fungus|time=5|note=5 s, 0.35 XP}}
 |}
 
 '''Trading'''

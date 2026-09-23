@@ -12,14 +12,14 @@
 |-
 | [[Warped Slab]]
 | [[Warped Planks]]
-| {{Stonecutter|Input=Warped Planks|Output=Warped Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_slab_from_stonecutting_warped_planks.json|matcha:stonecutting/warped_slab_from_stonecutting_warped_planks}}</small>
+| {{Stonecutter|Input=Warped Planks|Output=Warped Slab,2}}
 |-
 | [[Warped Slab]]
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
-| {{Stonecutter|Input=Any Warped Stems|Output=Warped Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_slab_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_slab_from_stonecutting_warped_stem}}</small>
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Slab,8}}
 |-
 | [[Warped Slab]]
 | [[Warped Trapdoor]]
-| {{Stonecutter|Input=Warped Trapdoor|Output=Warped Slab}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_slab_from_stonecutting_warped_trapdoor.json|matcha:stonecutting/warped_slab_from_stonecutting_warped_trapdoor}}</small>
+| {{Stonecutter|Input=Warped Trapdoor|Output=Warped Slab}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

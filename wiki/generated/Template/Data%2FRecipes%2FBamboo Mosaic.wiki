@@ -4,11 +4,11 @@
 |-
 | [[Bamboo Mosaic]]
 | 4 × [[Bamboo Planks]]
-| {{Crafting|A1=Bamboo Planks|A2=Bamboo Planks|B1=Bamboo Planks|B2=Bamboo Planks|Output=Bamboo Mosaic,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bamboo_mosaic.json|matcha:crafting/bamboo_mosaic}}</small>
+| {{Crafting|A1=Bamboo Planks|A2=Bamboo Planks|B1=Bamboo Planks|B2=Bamboo Planks|Output=Bamboo Mosaic,4}}
 |-
 | [[Bamboo Mosaic]]
 | 2 × [[Bamboo Mosaic Slab]]
-| {{Crafting|A1=Bamboo Mosaic Slab|B1=Bamboo Mosaic Slab|Output=Bamboo Mosaic|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bamboo_mosaic_from_bamboo_mosaic_slab.json|matcha:crafting/bamboo_mosaic_from_bamboo_mosaic_slab}}</small>
+| {{Crafting|A1=Bamboo Mosaic Slab|B1=Bamboo Mosaic Slab|Output=Bamboo Mosaic|shapeless=1}}
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
@@ -16,10 +16,10 @@
 |-
 | [[Bamboo Mosaic]]
 | <span class="explain" title="Block of Bamboo, Block of Stripped Bamboo">Any bamboo blocks</span>
-| {{Stonecutter|Input=Any Bamboo Blocks|Output=Bamboo Mosaic,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/bamboo_mosaic_from_stonecutting_bamboo_block.json|matcha:stonecutting/bamboo_mosaic_from_stonecutting_bamboo_block}}</small>
+| {{Stonecutter|Input=Any Bamboo Blocks|Output=Bamboo Mosaic,2}}
 |-
 | [[Bamboo Mosaic]]
 | [[Bamboo Mosaic Stairs]]
-| {{Stonecutter|Input=Bamboo Mosaic Stairs|Output=Bamboo Mosaic}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/bamboo_mosaic_from_stonecutting_bamboo_mosaic_stairs.json|matcha:stonecutting/bamboo_mosaic_from_stonecutting_bamboo_mosaic_stairs}}</small>
+| {{Stonecutter|Input=Bamboo Mosaic Stairs|Output=Bamboo Mosaic}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

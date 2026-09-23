@@ -3,35 +3,35 @@
 |-
 | [[Oxidized Copper Bulb]]
 | 3 × [[Oxidized Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Oxidized Copper|B1=Oxidized Copper|B2=Electric Inverter|B3=Electric Wire|C2=Oxidized Copper|Output=Oxidized Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_bulb.json|matcha:crafting/oxidized_copper_bulb}}</small>
+| {{Crafting|A2=Oxidized Copper|B1=Oxidized Copper|B2=Electric Inverter|B3=Electric Wire|C2=Oxidized Copper|Output=Oxidized Copper Bulb,4}}
 |-
-| [[Smithing Trim Color]]
+| [[Smithing Trim Color|Smithing Trim Color (Patina Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Oxidized Copper]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Oxidized Copper|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_patina.json|matcha:crafting/trim_colour_patina}}</small>
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Oxidized Copper|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}
 |-
 | [[Oxidized Copper Bars]]
 | [[Oxidized Copper]]
-| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Bars,36}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_copper_bars_from_stonecutting_oxidized_copper.json|matcha:stonecutting/oxidized_copper_bars_from_stonecutting_oxidized_copper}}</small>
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Bars,36}}
 |-
 | [[Oxidized Copper Chain]]
 | [[Oxidized Copper]]
-| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_copper_chain_from_stonecutting_oxidised_copper.json|matcha:stonecutting/oxidized_copper_chain_from_stonecutting_oxidised_copper}}</small>
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Chain,54}}
 |-
 | [[Oxidized Copper Door]]
 | [[Oxidized Copper]]
-| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_copper_door_from_stonecutting_oxidized_copper_block.json|matcha:stonecutting/oxidized_copper_door_from_stonecutting_oxidized_copper_block}}</small>
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Door,6}}
 |-
 | [[Oxidized Copper Trapdoor]]
 | [[Oxidized Copper]]
-| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidised_copper.json|matcha:stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidised_copper}}</small>
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Trapdoor,9}}
 |-
 | [[Oxidized Copper Trapdoor]]
 | [[Oxidized Copper]]
-| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidized_copper_block.json|matcha:stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidized_copper_block}}</small>
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Copper Trapdoor,9}}
 |-
 | [[Oxidized Lightning Rod]]
 | [[Oxidized Copper]]
-| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Lightning Rod,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/oxidized_lightning_rod_from_stonecutting_oxidized_copper.json|matcha:stonecutting/oxidized_lightning_rod_from_stonecutting_oxidized_copper}}</small>
+| {{Stonecutter|Input=Oxidized Copper|Output=Oxidized Lightning Rod,4}}
 |-
 | [[Oxidized Chiseled Copper]] <small>(vanilla recipe)</small>
 | [[Oxidized Copper]]

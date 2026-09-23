@@ -3,10 +3,10 @@
 |-
 | [[Flour]]
 | 3 × [[Wheat Grain]]
-| {{Crafting|A1=Wheat Grain|B1=Wheat Grain|C1=Wheat Grain|Output=Flour|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/flour.json|matcha:food/crafting/flour}}</small>
+| {{Crafting|A1=Wheat Grain|B1=Wheat Grain|C1=Wheat Grain|Output=Flour|shapeless=1}}
 |-
 | [[Flour]]
 | [[Bag of Flour]]
-| {{Crafting|A1=Bag of Flour|Output=Flour,9|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/flour_from_flour_bag.json|matcha:food/crafting/flour_from_flour_bag}}</small>
+| {{Crafting|A1=Bag of Flour|Output=Flour,9|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -12,14 +12,14 @@
 |-
 | [[Spruce Slab]]
 | [[Spruce Trapdoor]]
-| {{Stonecutter|Input=Spruce Trapdoor|Output=Spruce Slab}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_slab_from_stonecutting_spruce_trapdoor.json|matcha:stonecutting/spruce_slab_from_stonecutting_spruce_trapdoor}}</small>
+| {{Stonecutter|Input=Spruce Trapdoor|Output=Spruce Slab}}
 |-
 | [[Spruce Slab]]
 | <span class="explain" title="Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood">Any spruce logs</span>
-| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_slabs_from_stonecutting_spruce_logs.json|matcha:stonecutting/spruce_slabs_from_stonecutting_spruce_logs}}</small>
+| {{Stonecutter|Input=Any Spruce Logs|Output=Spruce Slab,8}}
 |-
 | [[Spruce Slab]]
 | [[Spruce Planks]]
-| {{Stonecutter|Input=Spruce Planks|Output=Spruce Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/spruce_slabs_from_stonecutting_spruce_planks.json|matcha:stonecutting/spruce_slabs_from_stonecutting_spruce_planks}}</small>
+| {{Stonecutter|Input=Spruce Planks|Output=Spruce Slab,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

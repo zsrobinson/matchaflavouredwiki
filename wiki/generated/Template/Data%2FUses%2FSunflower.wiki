@@ -3,15 +3,15 @@
 |-
 | [[Music Disc (Golden)]]
 | 8 × [[Disc Fragment]] +<br />[[Sunflower]]
-| {{Crafting|A1=Disc Fragment|A2=Disc Fragment|A3=Disc Fragment|B1=Disc Fragment|B2=Sunflower|B3=Disc Fragment|C1=Disc Fragment|C2=Disc Fragment|C3=Disc Fragment|Output=Music Disc (Golden)}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/music_disc_golden.json|matcha:crafting/music_disc_golden}}</small>
+| {{Crafting|A1=Disc Fragment|A2=Disc Fragment|A3=Disc Fragment|B1=Disc Fragment|B2=Sunflower|B3=Disc Fragment|C1=Disc Fragment|C2=Disc Fragment|C3=Disc Fragment|Output=Music Disc (Golden)}}
 |-
 | [[Oil]]
 | [[Glass Bottle]] +<br />3 × [[Sunflower]] or [[Cocoa Beans]]
-| {{Crafting|A1=Glass Bottle|B1=Sunflower;Cocoa Beans|C1=Sunflower;Cocoa Beans|A2=Sunflower;Cocoa Beans|Output=Oil|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/oil.json|matcha:food/crafting/oil}}</small>
+| {{Crafting|A1=Glass Bottle|B1=Sunflower;Cocoa Beans|C1=Sunflower;Cocoa Beans|A2=Sunflower;Cocoa Beans|Output=Oil|shapeless=1}}
 |-
 | [[Pumpkin Curry Stock]]
 | [[Estus Ash]] +<br />[[Sugar]] +<br />[[Baked Pumpkin]] +<br />[[Oil]] +<br />[[Sunflower]] +<br />[[Milk Bottle]] +<br />[[Carrot]] +<br />[[Bamboo]] +<br />[[Bowl]]
-| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Baked Pumpkin|A2=Oil|B2=Sunflower|C2=Milk Bottle|A3=Carrot|B3=Bamboo|C3=Bowl|Output=Pumpkin Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_pumpkin_curry.json|matcha:food/crafting/uncooked_pumpkin_curry}}</small>
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Baked Pumpkin|A2=Oil|B2=Sunflower|C2=Milk Bottle|A3=Carrot|B3=Bamboo|C3=Bowl|Output=Pumpkin Curry Stock|shapeless=1}}
 |-
 | [[Yellow Dye]] <small>(vanilla recipe)</small>
 | [[Sunflower]]

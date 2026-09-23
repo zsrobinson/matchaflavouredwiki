@@ -12,10 +12,10 @@
 |-
 | [[Mangrove Trapdoor]]
 | [[Mangrove Planks]]
-| {{Stonecutter|Input=Mangrove Planks|Output=Mangrove Trapdoor}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/mangrove_trapdoor_from_stonecutting_mangrove_planks.json|matcha:stonecutting/mangrove_trapdoor_from_stonecutting_mangrove_planks}}</small>
+| {{Stonecutter|Input=Mangrove Planks|Output=Mangrove Trapdoor}}
 |-
 | [[Mangrove Trapdoor]]
 | <span class="explain" title="Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood">Any mangrove logs</span>
-| {{Stonecutter|Input=Any Mangrove Logs|Output=Mangrove Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/mangrove_trapoor_from_stonecutting_mangrove_logs.json|matcha:stonecutting/mangrove_trapoor_from_stonecutting_mangrove_logs}}</small>
+| {{Stonecutter|Input=Any Mangrove Logs|Output=Mangrove Trapdoor,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

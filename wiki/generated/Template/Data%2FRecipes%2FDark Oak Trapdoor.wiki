@@ -12,10 +12,10 @@
 |-
 | [[Dark Oak Trapdoor]]
 | [[Dark Oak Planks]]
-| {{Stonecutter|Input=Dark Oak Planks|Output=Dark Oak Trapdoor}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_trapdoor_from_stonecutting_dark_oak_planks.json|matcha:stonecutting/dark_oak_trapdoor_from_stonecutting_dark_oak_planks}}</small>
+| {{Stonecutter|Input=Dark Oak Planks|Output=Dark Oak Trapdoor}}
 |-
 | [[Dark Oak Trapdoor]]
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
-| {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_trapoor_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_trapoor_from_stonecutting_dark_oak_logs}}</small>
+| {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Trapdoor,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

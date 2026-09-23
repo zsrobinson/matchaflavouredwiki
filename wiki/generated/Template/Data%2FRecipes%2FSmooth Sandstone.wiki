@@ -4,7 +4,7 @@
 |-
 | [[Smooth Sandstone]]
 | 2 × [[Smooth Sandstone Slab]]
-| {{Crafting|A1=Smooth Sandstone Slab|B1=Smooth Sandstone Slab|Output=Smooth Sandstone|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/smooth_sandstone_from_smooth_sandstone_slabs.json|matcha:crafting/smooth_sandstone_from_smooth_sandstone_slabs}}</small>
+| {{Crafting|A1=Smooth Sandstone Slab|B1=Smooth Sandstone Slab|Output=Smooth Sandstone|shapeless=1}}
 |}
 '''Cooking'''
 {| class="wikitable recipe-table"
@@ -12,7 +12,7 @@
 |-
 | [[Smooth Sandstone]]
 | [[Sandstone]]
-| {{Cooking|station=Mud Kiln|Input=Sandstone|Output=Smooth Sandstone|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/smooth_sandstone.json|matcha:kiln/smooth_sandstone}}</small>
+| {{Cooking|station=Mud Kiln|Input=Sandstone|Output=Smooth Sandstone|time=5|note=5 s, 0.35 XP}}
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
@@ -20,6 +20,6 @@
 |-
 | [[Smooth Sandstone]]
 | [[Smooth Sandstone Stairs]]
-| {{Stonecutter|Input=Smooth Sandstone Stairs|Output=Smooth Sandstone}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/smooth_sandstone_from_stonecutting_smooth_sandstone_stairs.json|matcha:stonecutting/smooth_sandstone_from_stonecutting_smooth_sandstone_stairs}}</small>
+| {{Stonecutter|Input=Smooth Sandstone Stairs|Output=Smooth Sandstone}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

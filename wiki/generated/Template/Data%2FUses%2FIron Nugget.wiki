@@ -3,19 +3,19 @@
 |-
 | [[Iron Chain]]
 | 3 × [[Iron Nugget]]
-| {{Crafting|A1=Iron Nugget|A2=Iron Nugget|A3=Iron Nugget|Output=Iron Chain,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_chain.json|matcha:crafting/iron_chain}}</small>
+| {{Crafting|A1=Iron Nugget|A2=Iron Nugget|A3=Iron Nugget|Output=Iron Chain,2}}
 |-
 | [[Lantern]]
 | 3 × [[Iron Nugget]] +<br />[[Torch]]
-| {{Crafting|A2=Iron Nugget|B1=Iron Nugget|B2=Torch|C2=Iron Nugget|Output=Lantern}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/lantern.json|matcha:crafting/lantern}}</small>
+| {{Crafting|A2=Iron Nugget|B1=Iron Nugget|B2=Torch|C2=Iron Nugget|Output=Lantern}}
 |-
 | [[Red Sand]]
 | 8 × [[Sand]] +<br />[[Iron Nugget]]
-| {{Crafting|A1=Sand|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Sand|A3=Sand|B3=Sand|C3=Iron Nugget|Output=Red Sand,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/red_sand_from_sand_and_iron.json|matcha:crafting/red_sand_from_sand_and_iron}}</small>
+| {{Crafting|A1=Sand|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Sand|A3=Sand|B3=Sand|C3=Iron Nugget|Output=Red Sand,8|shapeless=1}}
 |-
 | [[Soul Lantern]]
 | 3 × [[Iron Nugget]] +<br />[[Soul Torch]]
-| {{Crafting|A2=Iron Nugget|B1=Iron Nugget|B2=Soul Torch|C2=Iron Nugget|Output=Soul Lantern}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/soul_lantern.json|matcha:crafting/soul_lantern}}</small>
+| {{Crafting|A2=Iron Nugget|B1=Iron Nugget|B2=Soul Torch|C2=Iron Nugget|Output=Soul Lantern}}
 |-
 | [[Iron Ingot]] <small>(vanilla recipe)</small>
 | 9 × [[Iron Nugget]]

@@ -3,10 +3,10 @@
 |-
 | [[Diamond]]
 | [[Diamond Pickaxe]] or [[Diamond Shovel]] or [[Diamond Axe]] or [[Diamond Hoe]] or [[Diamond Sword]] or [[Diamond Spear]] or [[Diamond Helmet]] or [[Diamond Chestplate]] or [[Diamond Leggings]] or [[Diamond Boots]] or [[Diamond Horse Armor]] or [[Diamond Nautilus Armor]] or [[Raw Diamond]]
-| {{Cooking|station=Blast Furnace|Input=Diamond Pickaxe;Diamond Shovel;Diamond Axe;Diamond Hoe;Diamond Sword;Diamond Spear;Diamond Helmet;Diamond Chestplate;Diamond Leggings;Diamond Boots;Diamond Horse Armor;Diamond Nautilus Armor;Raw Diamond|Output=Diamond|time=5|note=5 s, 0.2 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/diamond_from_blasting_diamond_materials.json|matcha:blast/diamond_from_blasting_diamond_materials}}</small>
+| {{Cooking|station=Blast Furnace|Input=Diamond Pickaxe;Diamond Shovel;Diamond Axe;Diamond Hoe;Diamond Sword;Diamond Spear;Diamond Helmet;Diamond Chestplate;Diamond Leggings;Diamond Boots;Diamond Horse Armor;Diamond Nautilus Armor;Raw Diamond|Output=Diamond|time=5|note=5 s, 0.2 XP}}
 |-
 | [[Adamant Horse Armor]] <small>(vanilla recipe)</small>
-| [[Smithing Template]] +<br />[[Diamond Horse Armor]] +<br />[[Adamant Alloy]]
-| {{Smithing|Template=Smithing Template|Base=Diamond Horse Armor|Addition=Adamant Alloy|Output=Adamant Horse Armor}}
+| [[Smithing Upgrade Template]] +<br />[[Diamond Horse Armor]] +<br />[[Adamant Alloy]]
+| {{Smithing|Template=Smithing Upgrade Template|Base=Diamond Horse Armor|Addition=Adamant Alloy|Output=Adamant Horse Armor}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

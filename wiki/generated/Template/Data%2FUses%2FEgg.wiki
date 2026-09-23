@@ -3,58 +3,58 @@
 |-
 | [[Ramen]]
 | [[Bowl]] +<br />[[Glow Berry Mash]] +<br />[[Egg]] or [[Blue Egg]] or [[Brown Egg]] +<br />[[Brown Mushroom]] or [[Raw Porkchop]] +<br />[[Dried Kelp]]
-| {{Crafting|A1=Bowl|B1=Glow Berry Mash|C1=Egg;Blue Egg;Brown Egg|A2=Brown Mushroom;Raw Porkchop|B2=Dried Kelp|Output=Ramen|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ramen.json|matcha:crafting/ramen}}</small>
+| {{Crafting|A1=Bowl|B1=Glow Berry Mash|C1=Egg;Blue Egg;Brown Egg|A2=Brown Mushroom;Raw Porkchop|B2=Dried Kelp|Output=Ramen|shapeless=1}}
 |-
 | [[Fried Egg]]
 | <span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span>
-| {{Cooking|station=Kindling|Input=Any Eggs|Output=Fried Egg|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/fried_egg.json|matcha:food/campfire/fried_egg}}</small>
+| {{Cooking|station=Kindling|Input=Any Eggs|Output=Fried Egg|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Cake]]
 | 2 × [[Sweet Berries]] +<br />[[Milk Bottle]] +<br />2 × [[Sugar]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />3 × [[Flour]]
-| {{Crafting|A1=Sweet Berries|A2=Sugar|A3=Flour|B1=Milk Bottle|B2=Any Eggs|B3=Flour|C1=Sweet Berries|C2=Sugar|C3=Flour|Output=Cake}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cake.json|matcha:food/crafting/cake}}</small>
+| {{Crafting|A1=Sweet Berries|A2=Sugar|A3=Flour|B1=Milk Bottle|B2=Any Eggs|B3=Flour|C1=Sweet Berries|C2=Sugar|C3=Flour|Output=Cake}}
 |-
 | [[Dough]]
 | [[Egg]] or [[Blue Egg]] or [[Brown Egg]] +<br />2 × [[Flour]]
-| {{Crafting|A1=Egg;Blue Egg;Brown Egg|B1=Flour|C1=Flour|Output=Dough,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough.json|matcha:food/crafting/dough}}</small>
+| {{Crafting|A1=Egg;Blue Egg;Brown Egg|B1=Flour|C1=Flour|Output=Dough,4|shapeless=1}}
 |-
 | [[French Toast]]
 | <span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
-| {{Crafting|A1=Any Eggs|B1=Sugar|C1=Estus Ash|A2=Bread|Output=French Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/french_toast.json|matcha:food/crafting/french_toast}}</small>
+| {{Crafting|A1=Any Eggs|B1=Sugar|C1=Estus Ash|A2=Bread|Output=French Toast|shapeless=1}}
 |-
 | [[Gimmari]]
 | [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Sugar]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Flour]] +<br />[[Oil]]
-| {{Crafting|A1=Dried Kelp|B1=Carrot|C1=Sugar|A2=Any Eggs|B2=Flour|C2=Oil|Output=Gimmari|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gimmari.json|matcha:food/crafting/gimmari}}</small>
+| {{Crafting|A1=Dried Kelp|B1=Carrot|C1=Sugar|A2=Any Eggs|B2=Flour|C2=Oil|Output=Gimmari|shapeless=1}}
 |-
 | [[Gnocchi]]
 | [[Baked Potato]] +<br />[[Cheese]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Flour]] +<br />[[Bowl]]
-| {{Crafting|A1=Baked Potato|B1=Cheese|C1=Any Eggs|A2=Flour|B2=Bowl|Output=Gnocchi|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gnocchi.json|matcha:food/crafting/gnocchi}}</small>
+| {{Crafting|A1=Baked Potato|B1=Cheese|C1=Any Eggs|A2=Flour|B2=Bowl|Output=Gnocchi|shapeless=1}}
 |-
 | [[Honied French Toast]]
 | [[Honey Bottle]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
-| {{Crafting|A1=Honey Bottle|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Honied French Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/honied_french_toast.json|matcha:food/crafting/honied_french_toast}}</small>
+| {{Crafting|A1=Honey Bottle|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Honied French Toast|shapeless=1}}
 |-
 | [[Kontomire-Dandelion Stew]]
 | [[Tomatoes]] +<br />[[Dandelion]] +<br />[[Fern]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Bowl]]
-| {{Crafting|A1=Tomatoes|B1=Dandelion|C1=Fern|A2=Cooked Fish;Cooked Large Fish|B2=Any Eggs|C2=Bowl|Output=Kontomire-Dandelion Stew|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/kontomire_stew.json|matcha:food/crafting/kontomire_stew}}</small>
+| {{Crafting|A1=Tomatoes|B1=Dandelion|C1=Fern|A2=Cooked Fish;Cooked Large Fish|B2=Any Eggs|C2=Bowl|Output=Kontomire-Dandelion Stew|shapeless=1}}
 |-
 | [[Latke]]
 | [[Baked Potato]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Bread]] +<br />[[Milk Bottle]]
-| {{Crafting|A1=Baked Potato|B1=Any Eggs|C1=Bread|A2=Milk Bottle|Output=Latke|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/latke.json|matcha:food/crafting/latke}}</small>
+| {{Crafting|A1=Baked Potato|B1=Any Eggs|C1=Bread|A2=Milk Bottle|Output=Latke|shapeless=1}}
 |-
 | [[Pad Thai]]
 | [[Dough]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Sugar]] +<br />[[Carrot]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Bowl]]
-| {{Crafting|A1=Dough|B1=Cooked Fish;Cooked Large Fish|C1=Sugar|A2=Carrot|B2=Any Eggs|C2=Bowl|Output=Pad Thai|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pad_thai.json|matcha:food/crafting/pad_thai}}</small>
+| {{Crafting|A1=Dough|B1=Cooked Fish;Cooked Large Fish|C1=Sugar|A2=Carrot|B2=Any Eggs|C2=Bowl|Output=Pad Thai|shapeless=1}}
 |-
 | [[Sweet Berry Toast]]
 | [[Sweet Berries]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Bread]]
-| {{Crafting|A1=Sweet Berries|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Sweet Berry Toast|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sweet_berry_toast.json|matcha:food/crafting/sweet_berry_toast}}</small>
+| {{Crafting|A1=Sweet Berries|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Sweet Berry Toast|shapeless=1}}
 |-
 | [[Ramen Stock]]
 | [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Chicken]] or [[Seitan]] +<br />[[Bowl]]
-| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_ramen.json|matcha:food/crafting/uncooked_ramen}}</small>
+| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}
 |-
 | [[Fried Egg]]
 | <span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span>
-| {{Cooking|station=Oven|Input=Any Eggs|Output=Fried Egg|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/fried_egg.json|matcha:food/oven/fried_egg}}</small>
+| {{Cooking|station=Oven|Input=Any Eggs|Output=Fried Egg|time=5|note=5 s, 0.35 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

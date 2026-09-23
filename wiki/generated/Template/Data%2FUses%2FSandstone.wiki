@@ -3,15 +3,15 @@
 |-
 | [[Brown Sandstone]]
 | 2 × [[Sandstone]] +<br />2 × [[Red Sandstone]]
-| {{Crafting|A1=Sandstone|A2=Red Sandstone|B1=Red Sandstone|B2=Sandstone|Output=Brown Sandstone,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/brown_sandstone.json|matcha:crafting/brown_sandstone}}</small>
+| {{Crafting|A1=Sandstone|A2=Red Sandstone|B1=Red Sandstone|B2=Sandstone|Output=Brown Sandstone,4}}
 |-
 | [[Sand]]
 | [[Sandstone]]
-| {{Crafting|A1=Sandstone|Output=Sand,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sand_from_sandstone.json|matcha:crafting/sand_from_sandstone}}</small>
+| {{Crafting|A1=Sandstone|Output=Sand,2|shapeless=1}}
 |-
 | [[Smooth Sandstone]]
 | [[Sandstone]]
-| {{Cooking|station=Mud Kiln|Input=Sandstone|Output=Smooth Sandstone|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/smooth_sandstone.json|matcha:kiln/smooth_sandstone}}</small>
+| {{Cooking|station=Mud Kiln|Input=Sandstone|Output=Smooth Sandstone|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Chiseled Sandstone]] <small>(vanilla recipe)</small>
 | [[Sandstone]]
@@ -29,9 +29,9 @@
 | [[Sandstone]]
 | {{Stonecutter|Input=Sandstone|Output=Cut Sandstone Slab,2}}
 |-
-| [[Smithing Template]] <small>(vanilla recipe)</small>
-| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Sandstone]]
-| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Sandstone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+| [[Dune Armor Trim Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Dune Armor Trim Smithing Template]] +<br />[[Sandstone]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Dune Armor Trim Smithing Template|B2=Sandstone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Dune Armor Trim Smithing Template,2}}
 |-
 | [[Sandstone Slab]] <small>(vanilla recipe)</small>
 | 3 × [[Sandstone]] or [[Chiseled Sandstone]]

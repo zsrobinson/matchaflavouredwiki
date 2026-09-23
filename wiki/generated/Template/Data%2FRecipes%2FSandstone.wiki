@@ -4,15 +4,15 @@
 |-
 | [[Sandstone]]
 | 4 × [[Sand]]
-| {{Crafting|A1=Sand|A2=Sand|B1=Sand|B2=Sand|Output=Sandstone,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sandstone.json|matcha:crafting/sandstone}}</small>
+| {{Crafting|A1=Sand|A2=Sand|B1=Sand|B2=Sand|Output=Sandstone,2}}
 |-
 | [[Sandstone]]
 | [[Brown Sandstone]]
-| {{Crafting|A1=Brown Sandstone|Output=Sandstone,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sandstone_from_brown_sandstone.json|matcha:crafting/sandstone_from_brown_sandstone}}</small>
+| {{Crafting|A1=Brown Sandstone|Output=Sandstone,4|shapeless=1}}
 |-
 | [[Sandstone]]
 | 2 × [[Sandstone Slab]]
-| {{Crafting|A1=Sandstone Slab|B1=Sandstone Slab|Output=Sandstone|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sandstone_from_sandstone_slabs.json|matcha:crafting/sandstone_from_sandstone_slabs}}</small>
+| {{Crafting|A1=Sandstone Slab|B1=Sandstone Slab|Output=Sandstone|shapeless=1}}
 |}
 '''Blasting'''
 {| class="wikitable recipe-table"
@@ -20,6 +20,6 @@
 |-
 | [[Sandstone]]
 | [[Smooth Sandstone]]
-| {{Cooking|station=Blast Furnace|Input=Smooth Sandstone|Output=Sandstone|time=5|note=5 s, 0.01 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/sandstone_from_blasting_smooth_sandstone.json|matcha:blast/sandstone_from_blasting_smooth_sandstone}}</small>
+| {{Cooking|station=Blast Furnace|Input=Smooth Sandstone|Output=Sandstone|time=5|note=5 s, 0.01 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

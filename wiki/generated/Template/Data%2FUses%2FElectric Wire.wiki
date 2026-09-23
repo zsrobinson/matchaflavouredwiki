@@ -3,83 +3,83 @@
 |-
 | [[Copper Bulb]]
 | 3 × [[Block of Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Block of Copper|B1=Block of Copper|B2=Electric Inverter|B3=Electric Wire|C2=Block of Copper|Output=Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_bulb.json|matcha:crafting/copper_bulb}}</small>
+| {{Crafting|A2=Block of Copper|B1=Block of Copper|B2=Electric Inverter|B3=Electric Wire|C2=Block of Copper|Output=Copper Bulb,4}}
 |-
 | [[Copper Compass]]
 | 4 × [[Copper Ingot]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Copper Ingot|B1=Copper Ingot|B2=Electric Wire|B3=Copper Ingot|C2=Copper Ingot|Output=Copper Compass}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_compass.json|matcha:crafting/copper_compass}}</small>
+| {{Crafting|A2=Copper Ingot|B1=Copper Ingot|B2=Electric Wire|B3=Copper Ingot|C2=Copper Ingot|Output=Copper Compass}}
 |-
 | [[Copper Ingot]]
 | 4 × [[Electric Wire]]
-| {{Crafting|A1=Electric Wire|A2=Electric Wire|B1=Electric Wire|B2=Electric Wire|Output=Copper Ingot}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_ingot_from_copper_wire.json|matcha:crafting/copper_ingot_from_copper_wire}}</small>
+| {{Crafting|A1=Electric Wire|A2=Electric Wire|B1=Electric Wire|B2=Electric Wire|Output=Copper Ingot}}
 |-
 | [[Detector Rail]]
 | 6 × [[Iron Ingot]] +<br />[[Stone Pressure Plate]] +<br />[[Electric Wire]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B2=Stone Pressure Plate|B3=Electric Wire|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Detector Rail,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/detector_rail_from_iron.json|matcha:crafting/detector_rail_from_iron}}</small>
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B2=Stone Pressure Plate|B3=Electric Wire|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Detector Rail,16}}
 |-
 | [[Detector Rail]]
 | 6 × [[Steel Alloy]] +<br />[[Stone Pressure Plate]] +<br />[[Electric Wire]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B2=Stone Pressure Plate|B3=Electric Wire|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Detector Rail,32}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/detector_rail_from_steel.json|matcha:crafting/detector_rail_from_steel}}</small>
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B2=Stone Pressure Plate|B3=Electric Wire|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Detector Rail,32}}
 |-
 | [[Exposed Copper Bulb]]
 | 3 × [[Exposed Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Exposed Copper|B1=Exposed Copper|B2=Electric Inverter|B3=Electric Wire|C2=Exposed Copper|Output=Exposed Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_bulb.json|matcha:crafting/exposed_copper_bulb}}</small>
+| {{Crafting|A2=Exposed Copper|B1=Exposed Copper|B2=Electric Inverter|B3=Electric Wire|C2=Exposed Copper|Output=Exposed Copper Bulb,4}}
 |-
 | [[Golden Compass]]
 | 4 × [[Gold Ingot]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Gold Ingot|B1=Gold Ingot|B2=Electric Wire|B3=Gold Ingot|C2=Gold Ingot|Output=Golden Compass}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_compass.json|matcha:crafting/golden_compass}}</small>
+| {{Crafting|A2=Gold Ingot|B1=Gold Ingot|B2=Electric Wire|B3=Gold Ingot|C2=Gold Ingot|Output=Golden Compass}}
 |-
 | [[Electric Lamp]]
 | 8 × [[Glass]] +<br />[[Electric Wire]]
-| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Electric Wire|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Electric Lamp,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/incandescent_lamp.json|matcha:crafting/incandescent_lamp}}</small>
+| {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Electric Wire|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Electric Lamp,8}}
 |-
 | [[Oxidized Copper Bulb]]
 | 3 × [[Oxidized Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Oxidized Copper|B1=Oxidized Copper|B2=Electric Inverter|B3=Electric Wire|C2=Oxidized Copper|Output=Oxidized Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oxidized_copper_bulb.json|matcha:crafting/oxidized_copper_bulb}}</small>
+| {{Crafting|A2=Oxidized Copper|B1=Oxidized Copper|B2=Electric Inverter|B3=Electric Wire|C2=Oxidized Copper|Output=Oxidized Copper Bulb,4}}
 |-
 | [[Powered Rail]]
 | 6 × [[Copper Ingot]] +<br />[[Stick]] +<br />[[Electric Wire]]
-| {{Crafting|A1=Copper Ingot|A2=Copper Ingot|A3=Copper Ingot|B2=Stick|B3=Electric Wire|C1=Copper Ingot|C2=Copper Ingot|C3=Copper Ingot|Output=Powered Rail,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/powered_rail_from_copper.json|matcha:crafting/powered_rail_from_copper}}</small>
+| {{Crafting|A1=Copper Ingot|A2=Copper Ingot|A3=Copper Ingot|B2=Stick|B3=Electric Wire|C1=Copper Ingot|C2=Copper Ingot|C3=Copper Ingot|Output=Powered Rail,8}}
 |-
 | [[Powered Rail]]
 | 6 × [[Gold Ingot]] +<br />[[Stick]] +<br />[[Electric Wire]]
-| {{Crafting|A1=Gold Ingot|A2=Gold Ingot|A3=Gold Ingot|B2=Stick|B3=Electric Wire|C1=Gold Ingot|C2=Gold Ingot|C3=Gold Ingot|Output=Powered Rail,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/powered_rail_from_gold.json|matcha:crafting/powered_rail_from_gold}}</small>
+| {{Crafting|A1=Gold Ingot|A2=Gold Ingot|A3=Gold Ingot|B2=Stick|B3=Electric Wire|C1=Gold Ingot|C2=Gold Ingot|C3=Gold Ingot|Output=Powered Rail,16}}
 |-
 | [[Electric Block]]
 | 9 × [[Electric Wire]]
-| {{Crafting|A1=Electric Wire|A2=Electric Wire|A3=Electric Wire|B1=Electric Wire|B2=Electric Wire|B3=Electric Wire|C1=Electric Wire|C2=Electric Wire|C3=Electric Wire|Output=Electric Block}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/redstone_block.json|matcha:crafting/redstone_block}}</small>
+| {{Crafting|A1=Electric Wire|A2=Electric Wire|A3=Electric Wire|B1=Electric Wire|B2=Electric Wire|B3=Electric Wire|C1=Electric Wire|C2=Electric Wire|C3=Electric Wire|Output=Electric Block}}
 |-
 | [[Electric Inverter]]
 | [[Electric Wire]] +<br />[[Stick]]
-| {{Crafting|A1=Electric Wire|A2=Stick|Output=Electric Inverter,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/redstone_torch.json|matcha:crafting/redstone_torch}}</small>
+| {{Crafting|A1=Electric Wire|A2=Stick|Output=Electric Inverter,8}}
 |-
 | [[Copper Eye]]
 | 4 × [[Stone Bricks]] +<br />4 × [[Copper Ingot]] +<br />[[Electric Wire]]
-| {{Crafting|A1=Stone Bricks|A2=Copper Ingot|A3=Stone Bricks|B1=Copper Ingot|B2=Electric Wire|B3=Copper Ingot|C1=Stone Bricks|C2=Copper Ingot|C3=Stone Bricks|Output=Copper Eye,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/target.json|matcha:crafting/target}}</small>
+| {{Crafting|A1=Stone Bricks|A2=Copper Ingot|A3=Stone Bricks|B1=Copper Ingot|B2=Electric Wire|B3=Copper Ingot|C1=Stone Bricks|C2=Copper Ingot|C3=Stone Bricks|Output=Copper Eye,4}}
 |-
 | [[Trapped Chest]]
 | [[Chest]] +<br />[[Electric Wire]]
-| {{Crafting|A1=Chest|B1=Electric Wire|Output=Trapped Chest|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trapped_chest.json|matcha:crafting/trapped_chest}}</small>
+| {{Crafting|A1=Chest|B1=Electric Wire|Output=Trapped Chest|shapeless=1}}
 |-
 | [[Waxed Copper Bulb]]
 | 3 × [[Waxed Block of Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Waxed Block of Copper|B1=Waxed Block of Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Block of Copper|Output=Waxed Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/waxed_copper_bulb.json|matcha:crafting/waxed_copper_bulb}}</small>
+| {{Crafting|A2=Waxed Block of Copper|B1=Waxed Block of Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Block of Copper|Output=Waxed Copper Bulb,4}}
 |-
 | [[Waxed Exposed Copper Bulb]]
 | 3 × [[Waxed Exposed Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Waxed Exposed Copper|B1=Waxed Exposed Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Exposed Copper|Output=Waxed Exposed Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/waxed_exposed_copper_bulb.json|matcha:crafting/waxed_exposed_copper_bulb}}</small>
+| {{Crafting|A2=Waxed Exposed Copper|B1=Waxed Exposed Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Exposed Copper|Output=Waxed Exposed Copper Bulb,4}}
 |-
 | [[Waxed Oxidized Copper Bulb]]
 | 3 × [[Waxed Oxidized Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Waxed Oxidized Copper|B1=Waxed Oxidized Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Oxidized Copper|Output=Waxed Oxidized Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/waxed_oxidized_copper_bulb.json|matcha:crafting/waxed_oxidized_copper_bulb}}</small>
+| {{Crafting|A2=Waxed Oxidized Copper|B1=Waxed Oxidized Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Oxidized Copper|Output=Waxed Oxidized Copper Bulb,4}}
 |-
 | [[Waxed Weathered Copper Bulb]]
 | 3 × [[Waxed Weathered Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Waxed Weathered Copper|B1=Waxed Weathered Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Weathered Copper|Output=Waxed Weathered Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/waxed_weathered_copper_bulb.json|matcha:crafting/waxed_weathered_copper_bulb}}</small>
+| {{Crafting|A2=Waxed Weathered Copper|B1=Waxed Weathered Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Weathered Copper|Output=Waxed Weathered Copper Bulb,4}}
 |-
 | [[Weathered Copper Bulb]]
 | 3 × [[Weathered Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Weathered Copper|B1=Weathered Copper|B2=Electric Inverter|B3=Electric Wire|C2=Weathered Copper|Output=Weathered Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_bulb.json|matcha:crafting/weathered_copper_bulb}}</small>
+| {{Crafting|A2=Weathered Copper|B1=Weathered Copper|B2=Electric Inverter|B3=Electric Wire|C2=Weathered Copper|Output=Weathered Copper Bulb,4}}
 |-
 | [[Compass]] <small>(vanilla recipe)</small>
 | 4 × [[Iron Ingot]] +<br />[[Electric Wire]]

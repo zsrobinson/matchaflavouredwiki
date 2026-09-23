@@ -5,12 +5,12 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Cauldron <small>({{Source|vanilla:loot_table/blocks/cauldron.json|blocks/cauldron}})</small> || 1 || 100% || 
+| Cauldron || 1 || 100% || 
 |-
-| Lava cauldron <small>({{Source|vanilla:loot_table/blocks/lava_cauldron.json|blocks/lava_cauldron}})</small> || 1 || 100% || 
+| Lava cauldron || 1 || 100% || 
 |-
-| Powder snow cauldron <small>({{Source|vanilla:loot_table/blocks/powder_snow_cauldron.json|blocks/powder_snow_cauldron}})</small> || 1 || 100% || 
+| Powder snow cauldron || 1 || 100% || 
 |-
-| Water cauldron <small>({{Source|vanilla:loot_table/blocks/water_cauldron.json|blocks/water_cauldron}})</small> || 1 || 100% || 
+| Water cauldron || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

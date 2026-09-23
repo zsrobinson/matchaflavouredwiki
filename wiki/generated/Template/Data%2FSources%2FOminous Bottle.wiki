@@ -3,17 +3,17 @@
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Trial chambers / reward <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward.json|chests/trial_chambers/reward}})</small> || 1 || 9.60% || 
+| Trial chambers / reward || Ominous Bottle (Bad Omen I–II) || 1 || 9.60% || 
 |-
-| Trial chambers / reward ominous <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward_ominous.json|chests/trial_chambers/reward_ominous}})</small> || 1 || 8.00% || 
+| Trial chambers / reward ominous || Ominous Bottle (Bad Omen III–V) || 1 || 8.00% || 
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Pillager <small>({{Source|vanilla:loot_table/entities/pillager.json|entities/pillager}})</small> || 1 || 100% || entity condition
+| Pillager || Ominous Bottle (Bad Omen I–V) || 1 || 100% || entity condition
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

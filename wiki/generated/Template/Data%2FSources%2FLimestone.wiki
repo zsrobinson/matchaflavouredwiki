@@ -5,17 +5,17 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village mason <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_mason.json|chests/village/village_mason}})</small> || 1 || 62.3% || 
+| Village / village mason || 1 || 62.3% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Cobblestone <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/cobblestone.json|blocks/cobblestone}})</small> || 1 || 100% || specific tool
+| Cobblestone || 1 || 100% || specific tool
 |-
-| Infested stone <small>({{Source|vanilla:loot_table/blocks/infested_stone.json|blocks/infested_stone}})</small> || 1 || 100% || Silk Touch
+| Infested stone || 1 || 100% || Silk Touch
 |-
-| Stone <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/stone.json|blocks/stone}})</small> || 1 || 100% || Silk Touch
+| Stone || 1 || 100% || Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

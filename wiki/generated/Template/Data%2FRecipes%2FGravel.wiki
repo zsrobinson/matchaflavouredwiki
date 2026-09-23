@@ -4,7 +4,7 @@
 |-
 | [[Gravel]]
 | 2 × [[Dirt]] +<br />2 × [[Flint]]
-| {{Crafting|A1=Dirt|A2=Flint|B1=Flint|B2=Dirt|Output=Gravel,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/gravel.json|matcha:crafting/gravel}}</small>
+| {{Crafting|A1=Dirt|A2=Flint|B1=Flint|B2=Dirt|Output=Gravel,2}}
 |}
 '''Blasting'''
 {| class="wikitable recipe-table"
@@ -12,6 +12,6 @@
 |-
 | [[Gravel]]
 | [[Cobbled Deepslate]] or [[Cobblestone]]
-| {{Cooking|station=Blast Furnace|Input=Cobbled Deepslate;Cobblestone|Output=Gravel|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/gravel.json|matcha:blast/gravel}}</small>
+| {{Cooking|station=Blast Furnace|Input=Cobbled Deepslate;Cobblestone|Output=Gravel|time=5|note=5 s, 0.1 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>
