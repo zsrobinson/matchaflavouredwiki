@@ -1,3 +1,3 @@
-<includeonly><span class="sprite-inline">[[File:{{{1}}}.png|{{{size|16px}}}|link={{{link|{{{1}}}}}}|{{{1}}}]]</span>&nbsp;[[{{{link|{{{1}}}}}}|{{{2|{{{1}}}}}}]]</includeonly><noinclude>
+<includeonly>{{#if:{{{mcw|}}}|<span class="sprite-inline">[[File:{{{1}}}.png|{{{size|16px}}}|link=|{{{1}}}]]</span>&nbsp;{{MCW|{{{mcw}}}|{{{2|{{{1}}}}}}}}|<span class="sprite-inline">[[File:{{{1}}}.png|{{{size|16px}}}|link={{{link|{{{1}}}}}}|{{{1}}}]]</span>&nbsp;[[{{{link|{{{1}}}}}}|{{{2|{{{1}}}}}}]]}}</includeonly><noinclude>
 Inline icon and link. <code><nowiki>{{ItemLink|Obol}}</nowiki></code> → {{ItemLink|Obol}}; <code><nowiki>{{ItemLink|Obol|obols}}</nowiki></code> → {{ItemLink|Obol|obols}}.
-[[Category:Templates]]</noinclude>
+[[Category:Templates]] With <code>mcw=Vanilla name</code> the text links to minecraft.wiki instead (used for vanilla items that have no page here).</noinclude>

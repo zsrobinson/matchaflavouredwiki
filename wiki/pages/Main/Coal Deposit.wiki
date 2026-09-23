@@ -1,0 +1,24 @@
+{{Vanilla|Coal Ore}}
+{{Infobox auto}}
+'''Coal Deposit''' is the renamed coal ore.
+
+The deepslate variant is '''deepslate coal deposit'''.
+
+== Obtaining ==
+=== Natural generation ===
+As vanilla, plus large veins (size 17, 30 attempts per chunk) between the world bottom and y=0 under [[Biomes|deserts]].
+
+=== Breaking ===
+Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 1–2 coal (2–4 from the deepslate variant), affected by Fortune and electrum. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/coal_ore.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.10|Drops buffed (stone 1–2, deepslate 2–4).}}
+{{History line|1.12.1-alpha|Coal generates in very large amounts at deepslate level beneath deserts. Texture changed to banded layers.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Ores]]

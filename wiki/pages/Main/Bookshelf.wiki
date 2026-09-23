@@ -1,0 +1,32 @@
+{{Vanilla|Bookshelf}}
+{{Infobox auto}}
+A '''bookshelf''' is a decorative block. Matcha Flavoured makes it cheaper to craft and reduces the books it drops. Since the pack removes the enchanting table, bookshelves are decorative only.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Three books between two rows of wooden slabs make 3 bookshelves.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/bookshelf.json}}</ref> The vanilla recipe (six planks and three books for one bookshelf) is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+== Drops ==
+A bookshelf broken without {{MCW|Silk Touch}} drops 1 book, where vanilla drops 3. The change matches the cheaper recipe: a bookshelf costs one book to make.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/bookshelf.json}}</ref>
+
+== Usage ==
+{{Uses}}
+Bookshelves are used for decoration, and in the vanilla lectern recipe. Chiseled bookshelves are made from any log in a [[stonecutter]].<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/chiseled_bookshelf_from_stonecutting_any_logs.json}}</ref>
+
+== Appearance ==
+The resource pack retextures bookshelves and chiseled bookshelves.<ref>{{Cite changelog|1.0|quote=Bookshelf and Chiseled Bookshelf Textures}}</ref>
+
+== History ==
+{{History
+|{{History line|1.0|New bookshelf and chiseled bookshelf textures.}}
+{{History line|1.10|Bookshelves are cheaper to craft and drop fewer books.}}
+{{History line|1.12.1-alpha|Chiseled bookshelves can be made in a stonecutter.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox blocks}}
+[[Category:Blocks]]
+[[Category:Decoration]]

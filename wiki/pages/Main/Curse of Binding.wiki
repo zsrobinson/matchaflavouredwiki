@@ -1,0 +1,30 @@
+{{Vanilla|Curse of Binding}}
+{{Infobox
+|title=Curse of Binding
+|maxlevel=I
+|slots=Armor
+|items=Wearable items
+|id=<code>minecraft:binding_curse</code>
+|source={{Source|MF_datapack/data/minecraft/enchantment/binding_curse.json|binding_curse.json}}
+}}
+'''Curse of Binding''' is a curse that prevents a worn item from being removed. It works as in vanilla, but in [[Matcha Flavoured]] it is stored on every crafted [[Hell-Bound Book]], and curses are the only enchantments an enchanting table can offer.
+
+== Obtaining ==
+* Every crafted [[Hell-Bound Book]] stores Curse of Binding I.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hell_bound_book.json}}</ref> [[Blessing]]s crafted from it do not keep the curse.
+* Ominous trial chamber vaults roll books from <code>#minecraft:in_enchanting_table</code>, which the pack reduces to the curses, so they only give Curse of Binding or Curse of Vanishing.<ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/in_enchanting_table.json}}</ref>
+* Random enchanted books in chests and fishing treasure.
+
+== Behavior ==
+Curse of Binding works as in vanilla. Applying a blank Hell-Bound Book to armor in an [[anvil]] gives the armor Curse of Binding. As a curse, it is not removed by a [[grindstone]].
+
+Its anvil cost multiplier is 1, down from 8.
+
+== See also ==
+* [[Hell-Bound Book]]
+* [[Enchanting]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchantments]]

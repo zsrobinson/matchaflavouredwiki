@@ -1,0 +1,21 @@
+{{Vanilla|Lapis Lazuli Ore}}
+{{Infobox auto}}
+'''Quartz Deposit''' is the renamed lapis lazuli ore.
+
+== Obtaining ==
+=== Natural generation ===
+The vanilla lapis feature, changed to 12 attempts per chunk (vanilla 2) between y=−32 and y=96.<ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/ore_lapis.json}}</ref> Where it replaces deepslate it places [[Natural Lapis Lazuli|natural lapis lazuli]] instead.
+
+=== Breaking ===
+Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 2–5 [[Quartz|quartz]]; adamant tools drop glass. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/lapis_ore.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Quartz generates at much higher elevations and in larger amounts.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Ores]]

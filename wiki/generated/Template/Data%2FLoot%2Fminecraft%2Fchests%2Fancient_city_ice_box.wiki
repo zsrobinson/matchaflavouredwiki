@@ -2,7 +2,7 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Snowball}} || 2–6 || 36.4% || 98.2% || 
+| {{ItemLink|Snowball|mcw=Snowball}} || 2–6 || 36.4% || 98.2% || 
 |-
 | {{ItemLink|Pickled Carrots}} || 1 || 18.2% || 83.3% || 
 |-
@@ -10,6 +10,6 @@
 |-
 | {{ItemLink|Packed Ice}} || 2–6 || 18.2% || 83.3% || 
 |-
-| {{ItemLink|Bone}} || 1–4 || 9.09% || 57.5% || 
+| {{ItemLink|Bone|mcw=Bone}} || 1–4 || 9.09% || 57.5% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,0 +1,41 @@
+{{Vanilla|Unbreaking}}
+{{Infobox
+|title=Unbreaking
+|maxlevel=III
+|slots=Any
+|items=Items with durability
+|id=<code>minecraft:unbreaking</code>
+|source={{Source|MF_datapack/data/minecraft/enchantment/unbreaking.json|unbreaking.json}}
+}}
+'''Unbreaking''' is an [[enchantment]] that makes items lose durability more slowly. It works as in vanilla, but in [[Matcha Flavoured]] it is one of the hardest enchantments to get, because the blessings that give it need a [[Divine Fragment]] or a [[Divine Favor]].<ref>{{Cite video|quote=If you want to make an unbreaking book, Bedrock Busters, Crystal Hearts, or netherite, you need that fragment.}}</ref>
+
+== Obtaining ==
+{| class="wikitable"
+! Source !! Level !! Cost
+|-
+| [[Prayer of Prometheus]] || II || [[Divine Fragment]], 3 diamonds, 4 [[Estus Ash]]
+|-
+| [[Prayer of Daedalus]] || III (with Efficiency III) || [[Divine Favor]], diamond pickaxe, diamond axe, diamond, 4 Estus Ash
+|-
+| Prayer of The God-King [[Ofuda]] || I (with Efficiency II) || [[The Avesta]] and a [[Crystal Heart]], traded to an apprentice [[Mouthpiece]]
+|}
+Unbreaking also appears on random enchanted books in chests and fishing treasure.
+
+== Behavior ==
+Unbreaking works as in vanilla. Its anvil cost multiplier is 1, down from 2.
+
+== History ==
+{{History|
+{{History line|0.4-alpha|The Prayer of Prometheus gives Unbreaking II.}}
+}}
+
+== See also ==
+* [[Prayer of Prometheus]]
+* [[Prayer of Daedalus]]
+* [[Enchantment]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchantments]]

@@ -2,15 +2,15 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Bone}} || 0–2 || 100% || 100% || player kill
+| {{ItemLink|Bone|mcw=Bone}} || 0–2 || 66.7% || 66.7% || player kill
 |-
-| {{ItemLink|Tipped Arrow}} || 0–2 || 100% || 100% || player kill
+| {{ItemLink|Tipped Arrow}} || 0–2 || 66.7% || 66.7% || player kill
 |-
-| {{ItemLink|Estus Ash}} || 0–1 || 90.9% || 90.9% || player kill
+| {{ItemLink|Estus Ash}} || 0–1 || 45.5% || 45.5% || player kill
 |-
-| {{ItemLink|Brown Mushroom}} || 0–1 || 50.0% || 50.0% || player kill
+| {{ItemLink|Brown Mushroom}} || 0–1 || 25.0% || 25.0% || player kill
 |-
-| {{ItemLink|Red Mushroom}} || 0–1 || 50.0% || 50.0% || player kill
+| {{ItemLink|Red Mushroom}} || 0–1 || 25.0% || 25.0% || player kill
 |-
 | {{ItemLink|Obol}} || 1 || 9.09% || 9.09% || player kill
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

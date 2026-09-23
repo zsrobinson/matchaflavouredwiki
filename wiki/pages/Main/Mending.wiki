@@ -1,0 +1,31 @@
+{{Vanilla|Mending}}
+{{Infobox
+|title=Mending
+|maxlevel=I
+|slots=Any
+|items=Items with durability
+|id=<code>minecraft:mending</code>
+|source={{Source|MF_datapack/data/minecraft/enchantment/mending.json|mending.json}}
+}}
+'''Mending''' is an [[enchantment]] that repairs an item with experience orbs. The enchantment itself works as in vanilla, but in [[Matcha Flavoured]] it is one of the most expensive enchantments to obtain: the developer lists it among "all the enchantments everyone wants".<ref>{{Cite video|quote=the rarest, most difficult enchantments to obtain efficiency, unbreaking, protection, sharpness, and mending. All the enchantments everyone wants.}}</ref>
+
+== Obtaining ==
+* The [[Prayer of Lu Ban]], a crafted [[blessing]] that needs a [[Divine Favor]], six diamonds and a block of diamond.
+* The Prayer of Belial [[Ofuda]], traded from an expert-level [[Mouthpiece]] for [[The Lesser Key of Solomon]] and two [[Crystal Heart]]s.<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/4/solomon.json}}</ref>
+* Random enchanted books in chests and fishing treasure, and trial chamber vaults.
+
+== Behavior ==
+Mending repairs the item when the player picks up experience orbs, as in vanilla. The pack resets every player's experience to 0 each tick, which does not stop Mending from using the orbs, but the player never keeps experience for themselves.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction}}</ref> Items can also be repaired at an [[anvil]] indefinitely, since the pack removes the prior-work penalty; see [[Repairing]].
+
+Its anvil cost multiplier is 1, down from 4.
+
+== See also ==
+* [[Prayer of Lu Ban]]
+* [[Repairing]]
+* [[Enchantment]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchantments]]

@@ -66,7 +66,7 @@
 |-
 | Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1–2 || 5.79% || open water
 |-
-| Evoker <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/evoker.json|entities/evoker}})</small> || 0–1 || 100% || player kill
+| Evoker <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/evoker.json|entities/evoker}})</small> || 0–1 || 50.0% || player kill
 |-
 | Zombie villager <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/zombie_villager.json|entities/zombie_villager}})</small> || 1 || 9.09% || player kill
 |}
@@ -282,7 +282,7 @@
 |-
 | [[Weaponsmith]] || Novice || {{ItemLink|Hepatizon Alloy}} || 2
 |-
-| [[Weaponsmith]] || Novice || 24 × {{ItemLink|Block of Lapis Lazuli}} || 1
+| [[Weaponsmith]] || Novice || 24 × {{ItemLink|Block of Lapis Lazuli|mcw=Block of Lapis Lazuli}} || 1
 |-
 | [[Weaponsmith]] || Journeyman || 18 × {{ItemLink|Black Wool}} || 1
 |-

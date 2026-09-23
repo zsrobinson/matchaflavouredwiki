@@ -1,0 +1,31 @@
+{{Vanilla}}
+
+{{Infobox auto}}
+
+'''Cake''' is a placeable food. Each slice eaten heals the player instantly and raises their maximum health for 3 minutes.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/cake_eaten.mcfunction}}</ref>
+
+== Obtaining ==
+
+=== Crafting ===
+{{Recipes}}
+The pack's recipe uses 2 [[sweet berries]], a [[milk bottle]], 2 sugar, an [[egg]] and 3 [[flour]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cake.json}}</ref> Obtaining flour unlocks it. The vanilla recipe is removed. Crafting it returns the milk bottle's glass bottle.
+
+== Usage ==
+
+=== Food ===
+Cake is placed and eaten a slice at a time, as in vanilla. Each tick, the pack checks every player's cake-slice statistic; after a slice, the player gets Instant Health I and {{EffectLink|Health Boost}} II (4 extra hearts of maximum health) for 3:00.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/cake_eaten.mcfunction}}</ref> Instant Health I heals {{Hp|4}}, but the item's tooltip shows 4 hearts ({{Hp|8}}).
+
+== History ==
+{{History|
+{{History line|0.7-alpha|Cakes heal when eaten. The recipe changed.}}
+{{History line|1.10|Cake effects work and have a proper tooltip.}}
+}}
+
+== See also ==
+* [[Food]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

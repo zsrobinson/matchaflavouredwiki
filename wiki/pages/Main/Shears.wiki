@@ -1,0 +1,35 @@
+'''Shears''' come in four kinds in Matcha Flavoured. The vanilla shears are renamed '''iron shears'''.
+
+{| class="wikitable"
+! Shears !! Obtaining !! Durability !! Repair !! Notes
+|-
+| {{ItemLink|Copper Shears}} || Crafted from 2 copper ingots || 300 || Copper ingots ||
+|-
+| {{ItemLink|Iron Shears}} || Crafted from 2 iron ingots || 500 || — || Vanilla shears with 500 durability instead of 238
+|-
+| {{ItemLink|Steel Shears}} || Iron shears + steel alloy at a smithing table || 3000 || Iron ingots ||
+|-
+| {{ItemLink|Shepherd's Shears}} || Sold by the [[Shepherd|shepherd]] || 3000 || Blocks of copper || Looting III
+|}
+
+== Usage ==
+Shears work as in vanilla, and all shears and hoes can mine glow lichen. Looting is allowed on shears; sheep shearing tables add up to 3 extra wool per Looting level.<ref>{{Source|MF_datapack/data/minecraft/tags/item/enchantable/looting_compatible.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/shearing/sheep/white.json}}</ref>
+
+== Obtaining ==
+{{Recipes|Copper Shears}}
+{{Recipes|Iron Shears}}
+{{Recipes|Steel Shears}}
+
+== Notes ==
+* The canonical loot table for steel shears gives a stone shovel with steel shears components, not shears.<ref>{{Source|MF_datapack/data/matcha/loot_table/equipment/steel/shears.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.1-alpha|Smithing steel shears grants the "Sturdy Steel" advancement. All shears can mine glow lichen.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Tools]]

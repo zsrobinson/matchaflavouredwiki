@@ -2,9 +2,9 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Tattered Leather}} || 0–1 || 100% || 100% || player kill
+| {{ItemLink|Tattered Leather}} || 0–1 || 50.0% || 50.0% || player kill
 |-
-| {{ItemLink|Gold Nugget}} || 0–1 || 100% || 100% || player kill
+| {{ItemLink|Gold Nugget|mcw=Gold Nugget}} || 0–1 || 50.0% || 50.0% || player kill
 |-
 | {{ItemLink|Gold Ingot}} || 1 || 2.50% || 2.50% || player kill, Looting increases chance
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

@@ -12,9 +12,9 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/bogged.json|entities/bogged}})</small> || 0–1 || 50.0% || player kill
+| Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/bogged.json|entities/bogged}})</small> || 0–1 || 25.0% || player kill
 |-
-| Witch <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json|entities/witch}})</small> || 0–2 || 60.8% || player kill
+| Witch <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json|entities/witch}})</small> || 0–2 || 44.5% || player kill
 |}
 
 '''Shearing'''

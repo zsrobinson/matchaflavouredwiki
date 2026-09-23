@@ -1,0 +1,25 @@
+{{Vanilla|Emerald Ore}}
+{{Infobox auto}}
+'''Native Silver''' is the renamed emerald ore.
+
+The deepslate variant is '''native deepslate silver'''.
+
+== Obtaining ==
+=== Natural generation ===
+In mountain biomes the vanilla emerald feature runs at 50 attempts per chunk (vanilla 100), plus 5 deep attempts; every other overworld biome gets 3 deep attempts, and the deep dark gets both. Deep veins follow a triangle from y=16 down to the world bottom, most common at the bottom.<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/ore_emerald_deep.json}}</ref>
+
+=== Breaking ===
+Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 1 [[Raw Silver|raw silver]]; adamant tools drop [[Silver Bullion|silver bullion]]. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/emerald_ore.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.6-alpha|Texture changed.}}
+{{History line|1.12.1-alpha|Silver generates in every biome, more often in mountains and deeper down, and less at high elevation.}}
+{{History line|1.12.2|Silver generates in the deep dark.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Ores]]

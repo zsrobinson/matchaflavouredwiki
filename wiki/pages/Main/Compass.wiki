@@ -1,0 +1,24 @@
+The '''compass''' comes in three pack variants, all working like the vanilla compass: the '''copper compass''', '''golden compass''' and '''titanium compass'''. They differ only in name and texture.
+
+== Obtaining ==
+* Copper compass: 4 copper ingots around electric wire.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_compass.json}}</ref>
+* Golden compass: 4 gold ingots around electric wire.
+* Titanium compass: only from chest loot (shipwreck map chests, stronghold libraries and the special compass table).
+When a compass is chosen at random, the weights are 6 copper, 3 gold and 1 titanium.<ref>{{Source|MF_datapack/data/matcha/loot_table/equipment/compass/any_weighted.json}}</ref>
+The vanilla compass recipe is still available.
+
+{{Recipes|Copper Compass}}
+{{Recipes|Golden Compass}}
+=== Titanium compass ===
+{{Sources|Titanium Compass}}
+
+== History ==
+{{History|
+{{History line|1.0|Gold, copper and iron compass recipes unlock properly.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Tools]]

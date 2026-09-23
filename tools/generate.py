@@ -683,8 +683,19 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
                     # nested table: chance per roll of this entry times the nested chance (per nested roll)
                     out.append((it, p * p2 * prob, cnt, n + n2, (rlo, rhi), table_id))
             elif 'item' in e and e['item']:
-                out.append((e['item'], p * prob, count_range(e.get('count')), n, (rlo, rhi), table_id))
+                cr = count_range(e.get('count'))
+                out.append((e['item'], p * prob * positive_share(cr), cr, n, (rlo, rhi), table_id))
     return out
+
+
+def positive_share(cnt):
+    """Share of rolls whose count is at least 1 (set_count with a uniform integer range can roll 0)."""
+    lo, hi = cnt
+    if lo >= 1 or hi < 1:
+        return 1.0 if lo >= 1 else 0.0
+    lo_i, hi_i = int(math.ceil(lo)), int(math.floor(hi))
+    total = hi_i - lo_i + 1
+    return max(0, hi_i - max(lo_i, 1) + 1) / total if total > 0 else 1.0
 
 
 def chance_at_least_one(p, rolls):
@@ -741,8 +752,8 @@ def loot_table_page(lid):
     lines = ['{| class="wikitable sortable loot-table"', '! Item !! Stack size !! Chance per roll !! Chance per table !! Notes']
     for (it, cnt, notes), (p, rolls) in sorted(agg.items(), key=lambda kv: -kv[1][0]):
         c = ('%s–%s' % (fmt_num(cnt[0]), fmt_num(cnt[1]))) if cnt[0] != cnt[1] else fmt_num(cnt[0])
-        lines.append('|-\n| {{ItemLink|%s}} || %s || %s || %s || %s' % (
-            safe(it), c, pct(p), pct(chance_at_least_one(p, rolls)), ', '.join(dict.fromkeys(notes))))
+        lines.append('|-\n| %s || %s || %s || %s || %s' % (
+            il(it), c, pct(p), pct(chance_at_least_one(p, rolls)), ', '.join(dict.fromkeys(notes))))
     lines.append('|}')
     t = LOOT[lid]
     rl = set()
@@ -775,6 +786,32 @@ TRADES = DATA['trades']
 PROF = DATA['professions']
 
 
+PAGES_HERE = None
+
+
+def page_exists(name):
+    """True if the wiki will have a page (hand-written, generated stub or redirect) for name."""
+    global PAGES_HERE
+    if PAGES_HERE is None:
+        PAGES_HERE = set()
+        for root, _, files in os.walk(os.path.join(HAND, 'Main')):
+            PAGES_HERE.update(f[:-5].replace('%2F', '/') for f in files if f.endswith('.wiki'))
+        for k, it in ITEMS.items():
+            if is_pack_relevant(k, it):
+                PAGES_HERE.add(safe(k))
+            if it['renamed_vanilla'] and it['vanilla_name'] != k:
+                PAGES_HERE.add(safe(it['vanilla_name']))
+    return safe(name) in PAGES_HERE
+
+
+def il(name):
+    """{{ItemLink}} that falls back to minecraft.wiki for vanilla items without a page here."""
+    if page_exists(name):
+        return '{{ItemLink|%s}}' % safe(name)
+    it = ITEMS.get(name)
+    return '{{ItemLink|%s|mcw=%s}}' % (safe(name), (it or {}).get('vanilla_name') or name)
+
+
 def stack_cell(s):
     if not s:
         return ''
@@ -782,7 +819,7 @@ def stack_cell(s):
     if s.get('enchantments'):
         ench = '<br /><small>%s</small>' % ', '.join('%s %s' % (ench_name(e), roman(l) if (ENCH.get(e, {}).get('max_level') or 1) > 1 else '')
                                                      for e, l in s['enchantments'].items())
-    return '%s{{ItemLink|%s}}%s' % ('%d × ' % s['count'] if s.get('count', 1) > 1 else '', safe(s['name']), ench)
+    return '%s%s%s' % ('%d × ' % s['count'] if s.get('count', 1) > 1 else '', il(s['name']), ench)
 
 
 def trades_page(prof):

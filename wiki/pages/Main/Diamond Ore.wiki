@@ -1,0 +1,24 @@
+{{Vanilla|Diamond Ore}}
+{{Infobox auto}}
+'''Diamond Ore''' is the renamed diamond ore.
+
+The deepslate variant is '''deepslate diamond ore'''.
+
+== Obtaining ==
+=== Natural generation ===
+As vanilla.
+
+=== Breaking ===
+Mined with a pickaxe (see [[Tools#Mining levels]]), it drops [[Raw Diamond|raw diamond]], affected by Fortune and electrum; adamant tools do not smelt it. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/diamond_ore.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.6-alpha|Deepslate diamond ore texture made consistent.}}
+{{History line|1.12.2|Drops raw diamonds.}}
+}}
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Ores]]

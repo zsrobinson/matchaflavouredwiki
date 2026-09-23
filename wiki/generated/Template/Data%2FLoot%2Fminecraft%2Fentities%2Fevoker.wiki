@@ -2,9 +2,9 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Totem of Undying}} || 1 || 100% || 100% || 
+| {{ItemLink|Totem of Undying|mcw=Totem of Undying}} || 1 || 100% || 100% || 
 |-
-| {{ItemLink|Obol}} || 0–1 || 100% || 100% || player kill
+| {{ItemLink|Obol}} || 0–1 || 50.0% || 50.0% || player kill
 |-
 | {{ItemLink|Divine Fragment}} || 1 || 25.0% || 25.0% || player kill, Looting increases chance
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

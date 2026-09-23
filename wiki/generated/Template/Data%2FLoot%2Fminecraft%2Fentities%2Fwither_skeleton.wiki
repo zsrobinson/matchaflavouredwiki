@@ -2,10 +2,10 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Coal}} || -1–1 || 100% || 100% || player kill
+| {{ItemLink|Bone|mcw=Bone}} || 0–2 || 66.7% || 66.7% || player kill
 |-
-| {{ItemLink|Bone}} || 0–2 || 100% || 100% || player kill
+| {{ItemLink|Coal|mcw=Coal}} || -1–1 || 33.3% || 33.3% || player kill
 |-
-| {{ItemLink|Wither Skeleton Skull}} || 1 || 30.0% || 30.0% || player kill, Looting increases chance
+| {{ItemLink|Wither Skeleton Skull|mcw=Wither Skeleton Skull}} || 1 || 30.0% || 30.0% || player kill, Looting increases chance
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,0 +1,128 @@
+{{Infobox
+|title=Favorite food
+|type=Trading mechanic
+}}
+A villager's '''favorite food''' is one extra trade that every employed [[villager]] gets after its first trade: it buys one serving of a randomly chosen [[food]] for an [[Obol]], once. It is the only way to sell most of the pack's foods.
+
+== Mechanics ==
+When the data pack loads, it starts a check that runs 3 seconds later and then every 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/favorite_food_setup.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref> Each check looks at every loaded villager that:
+* has a profession (any profession other than none), and
+* has more than 0 villager experience, meaning the player has traded with it at least once, and
+* has not been given a favorite food yet.
+
+For each such villager, the pack picks a random whole number from 0 to 41 and runs the matching one of 42 food functions.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update.mcfunction}}</ref> The number is passed to the function name through a macro, <code>food_trades/food_$(num)</code>.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_macro.mcfunction}}</ref> That function appends one offer to the end of the villager's trade list and tags the villager so it is never picked again:<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_0.mcfunction}}</ref>
+{| class="wikitable"
+! Villager wants !! Villager gives !! Uses
+|-
+| 1 of the favorite food (4 for a chicken nugget) || 1 {{ItemLink|Obol}} || 1
+|}
+Every one of the 42 foods has the same 1 in 42 chance. The food in the trade carries the full item data of the pack's current version of that food, so it has to be a food made or found in the current version; older copies with a different format do not match.
+
+Because the check needs the villager to have experience, the favorite food appears only after the first trade with a villager, and never on an unemployed villager or a nitwit. The favorite food is a villager trade only; the [[Wandering Trader]] does not get one.
+
+An [[Amnestic]] clears the villager's favorite food flag. Since the villager keeps its experience, it is given a new random favorite food shortly after it takes a new profession.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic_wrapped.mcfunction}}</ref>
+
+== Foods ==
+{| class="wikitable sortable"
+! # !! Food !! Amount
+|-
+| 0 || {{ItemLink|Apple Empanada}} || 1
+|-
+| 1 || {{ItemLink|Bokguk}} || 1
+|-
+| 2 || {{ItemLink|Brachio Chicken Nugget}} || 4
+|-
+| 3 || {{ItemLink|Brownie}} || 1
+|-
+| 4 || {{ItemLink|Bruschetta}} || 1
+|-
+| 5 || {{ItemLink|Bubbling Mead}} || 1
+|-
+| 6 || {{ItemLink|Buñuelo}} || 1
+|-
+| 7 || {{ItemLink|Carrot Cupcake}} || 1
+|-
+| 8 || {{ItemLink|Cheese Pizza}} || 1
+|-
+| 9 || {{ItemLink|Chocolate Chip Cookie}} || 1
+|-
+| 10 || {{ItemLink|Crimson Stroganoff}} || 1
+|-
+| 11 || {{ItemLink|Fish and Chips}} || 1
+|-
+| 12 || {{ItemLink|French Toast}} || 1
+|-
+| 13 || {{ItemLink|Gimmari}} || 1
+|-
+| 14 || {{ItemLink|Glow Berry Crumble}} || 1
+|-
+| 15 || {{ItemLink|Gnocchi}} || 1
+|-
+| 16 || {{ItemLink|Honied French Toast}} || 1
+|-
+| 17 || {{ItemLink|Ice Cream}} || 1
+|-
+| 18 || {{ItemLink|Kontomire-Dandelion Stew}} || 1
+|-
+| 19 || {{ItemLink|Latke}} || 1
+|-
+| 20 || {{ItemLink|Lumpia}} || 1
+|-
+| 21 || {{ItemLink|Mead}} || 1
+|-
+| 22 || {{ItemLink|Meat Pizza}} || 1
+|-
+| 23 || {{ItemLink|Melon Sorbet}} || 1
+|-
+| 24 || {{ItemLink|Mushroom Pizza}} || 1
+|-
+| 25 || {{ItemLink|Apple Cinnamon Oatmeal}} || 1
+|-
+| 26 || {{ItemLink|Pad Thai}} || 1
+|-
+| 27 || {{ItemLink|Ptero Chicken Nugget}} || 4
+|-
+| 28 || {{ItemLink|Puerquito}} || 1
+|-
+| 29 || {{ItemLink|Pumpkin Empanada}} || 1
+|-
+| 30 || {{ItemLink|Toadstool Stroganoff}} || 1
+|-
+| 31 || {{ItemLink|Stego Chicken Nugget}} || 4
+|-
+| 32 || {{ItemLink|Stroganoff}} || 1
+|-
+| 33 || {{ItemLink|Sweet Berry Danish}} || 1
+|-
+| 34 || {{ItemLink|Tricero Chicken Nugget}} || 4
+|-
+| 35 || {{ItemLink|Warped Pizza}} || 1
+|-
+| 36 || {{ItemLink|Green Curry}} || 1
+|-
+| 37 || {{ItemLink|Honey Ginger Tea}} || 1
+|-
+| 38 || {{ItemLink|Japanese Curry}} || 1
+|-
+| 39 || {{ItemLink|Paneer Makhani}} || 1
+|-
+| 40 || {{ItemLink|Pumpkin Curry}} || 1
+|-
+| 41 || {{ItemLink|Tonkotsu Ramen}} || 1
+|}
+All 42 foods sell for 1 obol, including the curries and ramen, which take the most steps to cook.
+
+== Trivia ==
+* The functions and tags use the internal names <code>favorite_food</code>, <code>trader_update</code> and <code>foodChecked</code>.
+* The favorite food trade is added with a data command rather than through the pack's trade sets, which is why it does not appear on the profession pages' trade tables.
+
+== See also ==
+* [[Trading]]
+* [[Food]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Mechanics]]
+[[Category:Trading]]

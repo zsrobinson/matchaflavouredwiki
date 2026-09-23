@@ -1,0 +1,31 @@
+{{Vanilla|Silk Touch}}
+{{Infobox
+|title=Silk Touch
+|maxlevel=I
+|slots=Main hand
+|items=Mining tools
+|exclusive=Fortune, the electrum and adamant tool intrinsics
+|id=<code>minecraft:silk_touch</code>
+|source={{Source|MF_datapack/data/minecraft/enchantment/silk_touch.json|silk_touch.json}}
+}}
+'''Silk Touch''' is an [[enchantment]] that makes blocks drop themselves. It works as in vanilla, but [[Matcha Flavoured]] makes it exclusive with the tool intrinsics of [[Electrum equipment|electrum]] and [[Adamant equipment|adamant]], and gives it to [[Shakudo equipment|shakudo]] tools as an intrinsic.
+
+== Obtaining ==
+* The [[Prayer of Eros]], a crafted [[blessing]].
+* [[Shakudo equipment|Shakudo]] tools have Silk Touch as an intrinsic.<ref>{{Cite video|quote=Shikudo, a gold-copper alloy that cleanses malefic, steals life from mobs, and whose tools have silk touch as an intrinsic.}}</ref>
+* Random enchanted books in chests and fishing treasure, and trial chamber vaults.
+
+== Behavior ==
+Silk Touch is exclusive with Fortune and with the electrum tool intrinsic, which share the <code>#minecraft:exclusive_set/mining</code> tag.<ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/exclusive_set/mining.json}}</ref> The adamant tool intrinsic, which smelts mined blocks, lists Silk Touch in its own exclusive set.<ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_mining.json}}</ref>
+
+Its anvil cost multiplier is 1, down from 8.
+
+== See also ==
+* [[Prayer of Eros]]
+* [[Enchantment]]
+
+== References ==
+{{reflist}}
+
+{{Navbox enchanting}}
+[[Category:Enchantments]]
