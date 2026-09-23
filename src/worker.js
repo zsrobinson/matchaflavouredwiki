@@ -6,6 +6,14 @@ const titles = new Map(Object.entries(table.titles));
 const redirects = new Map(Object.entries(table.redirects));
 const aliases = new Map(Object.entries(table.redirects).map(([key, value]) => [key.toLowerCase(), value]));
 
+function encodeSegment(segment) {
+  try {
+    return encodeURIComponent(decodeURIComponent(segment));
+  } catch {
+    return segment;
+  }
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -46,7 +54,11 @@ export default {
     if (target.toString() !== url.toString()) {
       return Response.redirect(target.toString(), 301);
     }
-    const response = await env.ASSETS.fetch(request);
+    // The asset server 307s any path not in its own encoding (encodeURIComponent per segment,
+    // so ":" becomes "%3A"), which loops with the ":" URLs above: hand it that form instead
+    const asset = new URL(url);
+    asset.pathname = url.pathname.split("/").map(encodeSegment).join("/");
+    const response = await env.ASSETS.fetch(new Request(asset, request));
     if (!preview) {
       return response;
     }

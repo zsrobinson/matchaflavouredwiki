@@ -116,6 +116,9 @@ the swap mid-way.
   - 301s every other hostname to `https://matchaflavou.red`;
   - serves redirect pages and wrong-case URLs as real 301s from `src/redirects.json`, which the export writes;
   - serves `*.workers.dev` (PR previews) in place, with `X-Robots-Tag: noindex`.
+  - asks the asset server for each path in its own encoding (`encodeURIComponent` per segment, so `:` is `%3A`).
+    Cloudflare's assets 307 any other form, and since the Worker 301s `%3A` back to `:`, every namespaced page
+    (`Category:`, `Template:`) once looped.
 - **What the export keeps and strips:** it removes MediaWiki's scripts except the theme boot, and keeps the `ca-mfw-*` GitHub tabs.
   It also replaces legacy Vector's fixed `width=1120` viewport with `device-width`, so phones get the vendored narrow-screen layout.
   Its `site.js` is `Gadget-mfwShell.js` and `Gadget-mfwTooltip.js` (plain DOM, no jQuery) plus `SITE_JS`.
