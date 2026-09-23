@@ -15,7 +15,7 @@ After the dragon is killed, a drowned is removed as soon as it appears if it can
 
 == Drops ==
 {{Data/Loot/minecraft/entities/drowned}}
-All drops require a player kill.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/drowned.json}}</ref> Compared to vanilla, {{ItemLink|Tattered Leather}} (1–2) replaces rotten flesh (0–2), and a 50% chance of {{ItemLink|Raw Estus}} (0–1) replaces the chance of a {{ItemLink|Copper Ingot}}. The pack means to stop drowned dropping the tridents and other equipment they spawn with, but a bug stops this from working reliably; see [[Spawning#Mob modifications]].
+All drops require a player kill.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/drowned.json}}</ref> Compared to vanilla, {{ItemLink|Tattered Leather}} (1–2) replaces rotten flesh (0–2), and a 50% chance of {{ItemLink|Raw Estus}} (0–1, so about 1 in 4 drowned drops one without Looting) replaces the chance of a {{ItemLink|Copper Ingot}}. The pack means to stop drowned dropping the tridents and other equipment they spawn with, but a bug stops this from working reliably; see [[Spawning#Mob modifications]].
 
 == Behavior ==
 Drowned are undead, so [[warding]] hurts them.
