@@ -121,8 +121,8 @@ class Exporter:
         doc = doc.replace('class="client-nojs', 'class="client-js')
         # red links: keep the styling, remove the edit link
         doc = re.sub(r'<a href="[^"]*action=edit[^"]*redlink=1"([^>]*)>(.*?)</a>', r'<span class="new"\1>\2</span>', doc, flags=re.S)
-        # legacy Vector forces a 1120px desktop viewport on phones; the vendored minecraft.wiki CSS
-        # already has narrow-screen rules (sidebar below the content, scrolling tables), so let it apply
+        # legacy Vector forces a 1120px desktop viewport on phones; give them the device width, so they
+        # get the mobile layout at the end of MediaWiki:Vector.css
         doc = doc.replace('<meta name="viewport" content="width=1120">',
                           '<meta name="viewport" content="width=device-width, initial-scale=1">', 1)
         # absolute links back to the dev server -> site-relative
@@ -205,9 +205,9 @@ SITE_CSS = r"""/* Pagefind Component UI, styled to sit in minecraft.wiki's searc
   width: 100%;
 }
 #p-search { width: 20vw; min-width: 16em; max-width: 26em; }
-/* Phones: the searchbox opens over the mobile header (MediaWiki:Vector.css); 16px text keeps iOS from zooming */
+/* Phones: the searchbox opens over the mobile header (MediaWiki:Vector.css), with a taller input for fingers */
 @media screen and (max-width: 720px) {
-  #p-search pagefind-searchbox { --pf-input-height: 36px; --pf-input-font-size: 16px; --pf-border-radius: 2px; }
+  #p-search pagefind-searchbox { --pf-input-height: 36px; }
 }
 #mfw-search-page {
   --pf-font: inherit;
