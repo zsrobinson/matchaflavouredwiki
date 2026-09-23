@@ -1,7 +1,6 @@
 // Shell behaviour shared by the live wiki (as a gadget) and the static export (copied into
 // /_static/site.js by tools/export_static.py): dark-mode toggle and collapsible sidebar sections,
-// and on phones the minecraft.wiki-style mobile header, menu drawer and collapsible sections
-// (laid out by the phone-width section of MediaWiki:Vector.css; nothing here shows on desktop).
+// and on phones the mobile header, menu drawer and collapsible sections (MediaWiki:Vector.css).
 // The theme class itself is applied before first paint by the inline head script
 // (site/theme-boot.js), so this only wires up the toggle.
 ( function () {
@@ -78,71 +77,58 @@
 			} );
 		} );
 	}
-	// Phones (the same width as MediaWiki:Vector.css's mobile layout)
+	// Phones, up to the 720px of MediaWiki:Vector.css's mobile layout, as on minecraft.wiki's mobile
+	// site: a header with menu and search buttons, the sidebar as a menu drawer, collapsible sections.
+	// The header and drawer entry are always built (CSS hides them on wider screens).
 	var PHONE = '(max-width: 720px)';
-	function icon( path ) {
-		return '<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="' + path + '"/></svg>';
+	function icon( d ) {
+		return '<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="' + d + '"/></svg>';
 	}
-	var ICONS = {
-		menu: 'M1 3v2h18V3zm0 8h18V9H1zm0 6h18v-2H1z',
-		search: 'M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4-1.4 1.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8',
-		back: 'm5.83 9 5.58-5.58L10 2l-8 8 8 8 1.41-1.41L5.83 11H18V9z'
-	};
-
-	// Mobile header, as on minecraft.wiki's mobile site: menu button, logo and wiki name, search.
-	// The menu opens the sidebar (#mw-panel) as a drawer; search shows the header search box.
 	function initMobileHeader() {
-		if ( document.getElementById( 'mfw-mobile-header' ) ) {
+		var b = document.body, panel = document.getElementById( 'mw-panel' );
+		if ( !panel ) {
 			return;
 		}
-		var logo = document.querySelector( '#p-logo a' );
 		var header = document.createElement( 'div' );
 		header.id = 'mfw-mobile-header';
 		header.className = 'noprint';
 		header.innerHTML =
-			'<button type="button" class="mfw-header-button" id="mfw-menu-button" aria-label="Open main menu" aria-expanded="false">' + icon( ICONS.menu ) + '</button>' +
-			'<a class="mfw-branding" href="' + ( logo ? logo.getAttribute( 'href' ) : '/' ) + '"><span class="mfw-branding-logo"></span>Matcha Flavoured Wiki</a>' +
-			'<button type="button" class="mfw-header-button" id="mfw-search-button" aria-label="Search">' + icon( ICONS.search ) + '</button>' +
-			'<button type="button" class="mfw-header-button" id="mfw-search-close" aria-label="Close search">' + icon( ICONS.back ) + '</button>';
-		// the drawer's first entry toggles dark mode, as minecraft.wiki's mobile menu does
-		var panel = document.getElementById( 'mw-panel' );
-		if ( panel ) {
-			var tools = document.createElement( 'div' );
-			tools.id = 'mfw-drawer-tools';
-			tools.innerHTML = '<ul><li><a href="#" role="button">Toggle dark mode</a></li></ul>';
-			tools.querySelector( 'a' ).addEventListener( 'click', toggleTheme );
-			panel.insertBefore( tools, panel.firstChild );
-		}
-		var mask = document.createElement( 'div' );
-		mask.id = 'mfw-menu-mask';
-		document.body.insertBefore( mask, document.body.firstChild );
-		document.body.insertBefore( header, document.body.firstChild );
+			'<button type="button" id="mfw-menu-button" aria-label="Main menu" aria-expanded="false">' + icon( 'M1 3v2h18V3zm0 8h18V9H1zm0 6h18v-2H1z' ) + '</button>' +
+			'<a href="/">Matcha Flavoured Wiki</a>' +
+			'<button type="button" id="mfw-search-button" aria-label="Search">' + icon( 'M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4-1.4 1.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8' ) + '</button>' +
+			'<button type="button" id="mfw-search-close" aria-label="Close search">' + icon( 'm5.83 9 5.58-5.58L10 2l-8 8 8 8 1.41-1.41L5.83 11H18V9z' ) + '</button>';
+		b.insertBefore( header, b.firstChild );
+		// the drawer's first entry toggles dark mode, as in minecraft.wiki's mobile menu
+		var dark = document.createElement( 'a' );
+		dark.id = 'mfw-drawer-dark';
+		dark.href = '#';
+		dark.setAttribute( 'role', 'button' );
+		dark.innerHTML = icon( 'M8.4 1.2a8.3 8.3 0 1 0 10.4 10.4A7 7 0 0 1 8.4 1.2' ) + 'Toggle dark mode';
+		dark.addEventListener( 'click', toggleTheme );
+		panel.insertBefore( dark, panel.firstChild );
 
-		var b = document.body, menuButton = document.getElementById( 'mfw-menu-button' );
+		var menuButton = document.getElementById( 'mfw-menu-button' );
 		function setMenu( open ) {
 			b.classList.toggle( 'mfw-menu-open', open );
 			menuButton.setAttribute( 'aria-expanded', String( open ) );
 		}
 		function setSearch( open ) {
 			b.classList.toggle( 'mfw-search-open', open );
-			if ( open ) {
-				var input = document.querySelector( '#p-search input[type="search"], #p-search input:not([type="hidden"])' );
-				if ( input ) {
-					input.focus();
-				}
+			var input = open && document.querySelector( '#p-search input:not([type="hidden"])' );
+			if ( input ) {
+				input.focus();
 			}
 		}
-		menuButton.addEventListener( 'click', function () {
-			setMenu( !b.classList.contains( 'mfw-menu-open' ) );
-		} );
-		mask.addEventListener( 'click', function () {
-			setMenu( false );
-		} );
-		document.getElementById( 'mfw-search-button' ).addEventListener( 'click', function () {
-			setSearch( true );
-		} );
-		document.getElementById( 'mfw-search-close' ).addEventListener( 'click', function () {
-			setSearch( false );
+		// one listener: the header buttons, and a tap beside the open drawer closes it
+		document.addEventListener( 'click', function ( e ) {
+			var t = e.target;
+			if ( t.closest( '#mfw-menu-button' ) ) {
+				setMenu( !b.classList.contains( 'mfw-menu-open' ) );
+			} else if ( b.classList.contains( 'mfw-menu-open' ) && !panel.contains( t ) ) {
+				setMenu( false );
+			} else if ( t.closest( '#mfw-search-button, #mfw-search-close' ) ) {
+				setSearch( t.closest( '#mfw-search-button' ) !== null );
+			}
 		} );
 		document.addEventListener( 'keydown', function ( e ) {
 			if ( e.key === 'Escape' ) {
@@ -152,9 +138,10 @@
 		} );
 	}
 
-	// Collapsible sections on phones, as MobileFrontend does on minecraft.wiki: each level-2
-	// heading toggles the content up to the next one. A #fragment (a contents or reference link)
-	// opens the section it points into, and find-in-page opens collapsed sections too.
+	// Collapsible sections, as MobileFrontend does on minecraft.wiki: each level-2 heading toggles
+	// the content up to the next one. The lead (with the infobox) stays open, and the main page and
+	// pages without level-2 headings are left alone. Collapsed content is hidden="until-found", so
+	// find-in-page opens it; a #fragment (a footnote or a link from another page) opens its section.
 	function initSections() {
 		var content = document.querySelector( '#mw-content-text > .mw-parser-output' );
 		if ( !content || document.body.classList.contains( 'page-Matcha_Flavoured_Wiki' ) ) {
@@ -175,7 +162,7 @@
 		headings.forEach( function ( h, i ) {
 			var section = document.createElement( 'div' );
 			section.className = 'mfw-section';
-			section.id = 'mfw-section-' + ( i + 1 );
+			section.id = 'mfw-section-' + i;
 			while ( h.nextSibling && !( h.nextSibling.classList && h.nextSibling.classList.contains( 'mw-heading2' ) ) ) {
 				section.appendChild( h.nextSibling );
 			}
@@ -185,42 +172,33 @@
 			h.setAttribute( 'tabindex', '0' );
 			h.setAttribute( 'aria-controls', section.id );
 			setOpen( h, false );
-			h.addEventListener( 'click', function ( e ) {
-				if ( !e.target.closest( 'a[href]' ) ) {
-					setOpen( h, !h.classList.contains( 'mfw-open' ) );
-				}
-			} );
-			h.addEventListener( 'keydown', function ( e ) {
-				if ( e.key === 'Enter' || e.key === ' ' ) {
-					e.preventDefault();
-					setOpen( h, !h.classList.contains( 'mfw-open' ) );
-				}
-			} );
 			section.addEventListener( 'beforematch', function () {
 				setOpen( h, true );
 			} );
 		} );
+		function toggle( e ) {
+			var h = e.target.closest( '.mfw-section-heading' );
+			if ( h && ( e.type === 'click' ? !e.target.closest( 'a[href]' ) : e.key === 'Enter' || e.key === ' ' ) ) {
+				e.preventDefault();
+				setOpen( h, !h.classList.contains( 'mfw-open' ) );
+			}
+		}
+		content.addEventListener( 'click', toggle );
+		content.addEventListener( 'keydown', toggle );
 		function reveal() {
-			var id;
+			var el = null;
 			try {
-				id = decodeURIComponent( location.hash.slice( 1 ) );
-			} catch ( e ) {
-				return;
-			}
-			var el = id && document.getElementById( id );
-			if ( !el ) {
-				return;
-			}
-			var h = el.closest( '.mfw-section-heading' );
-			var section = h ? h.nextElementSibling : el.closest( '.mfw-section' );
-			if ( section && section.hasAttribute( 'hidden' ) ) {
-				setOpen( section.previousElementSibling, true );
+				el = document.getElementById( decodeURIComponent( location.hash.slice( 1 ) ) );
+			} catch ( e ) {}
+			var h = el && ( el.closest( '.mfw-section-heading' ) || ( el.closest( '.mfw-section' ) || {} ).previousElementSibling );
+			if ( h && !h.classList.contains( 'mfw-open' ) ) {
+				setOpen( h, true );
 				el.scrollIntoView();
 			}
 		}
 		reveal();
 		window.addEventListener( 'hashchange', reveal );
-		// back to a desktop-width window: show everything
+		// widened past phone width: show everything
 		matchMedia( PHONE ).addEventListener( 'change', function ( e ) {
 			if ( !e.matches ) {
 				headings.forEach( function ( h ) {

@@ -52,8 +52,9 @@
 .mfui-smithing { background-image: url('/assets/gui/smithing.png'); }
 .mfui-stonecutter { background-image: url('/assets/gui/stonecutter.png'); }
 
-/* Phones: the narrow layout leaves the content about 100vw - 58px wide, less than the 352px screen
-   below a 410px viewport. Scale the screens down to fit; zoom keeps the placed slots on the art. */
+/* Phones: the mobile layout (MediaWiki:Vector.css) leaves a recipe table's cell about 100vw - 48px
+   wide, less than the 352px screen below a 400px viewport. Scale the screens down to fit; zoom keeps
+   the placed slots on the art. */
 @media screen and (max-width: 419px) { .mfui { zoom: 0.875; } }
 @media screen and (max-width: 374px) { .mfui { zoom: 0.8; } }
 @media screen and (max-width: 339px) { .mfui { zoom: 0.7; } }
