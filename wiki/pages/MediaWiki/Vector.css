@@ -12,3 +12,226 @@
 #p-tb { display: none !important; }
 /* Source-file line in the footer (site/GitLinks.php) */
 #footer-info-mfw-source code { background: none; border: 0; color: inherit; padding: 0; font-size: 95%; }
+
+/* ===== Phones: minecraft.wiki's mobile site (its Minerva skin) on the same pages =====
+ * Up to 720px, where minecraft.wiki's own Vector CSS stops being a desktop layout: a sky-and-grass
+ * header with menu and search buttons, the sidebar as a menu drawer, icon page actions beside the
+ * title, collapsible sections, recipe screens under their ingredients and a stone footer. The header,
+ * drawer and sections are built by MediaWiki:Gadget-mfwShell.js. The header and footer images are
+ * minecraft.wiki's. Nothing here applies on wider screens. */
+#mfw-mobile-header, #mfw-drawer-dark { display: none; }
+
+@media screen and (max-width: 720px) {
+	html, body { min-width: 0; background: var(--content-background-color); }
+
+	/* Header: sky and grass, with menu, wiki name and search */
+	#mw-page-base {
+		height: 96px;
+		background: url('/assets/mcw/Mobile-header.png') left bottom / 48px auto repeat-x,
+			linear-gradient(#58B5FE 50%, transparent 50%);
+	}
+	body.wgl-theme-dark #mw-page-base {
+		background-image: url('/assets/mcw/Dark-mobile-header.png'), linear-gradient(#011C31 50%, transparent 50%);
+	}
+	#mw-head-base, #mw-panel #p-logo, #toc { display: none; }
+	#mfw-mobile-header {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: 7px;
+		left: 4px;
+		right: 4px;
+		height: 48px;
+		z-index: 3;
+		color: var(--color-base);
+	}
+	#mfw-mobile-header button, #mfw-mobile-header a { color: inherit; text-decoration: none; }
+	#mfw-mobile-header button {
+		width: 44px;
+		height: 44px;
+		padding: 0;
+		border: 0;
+		background: none;
+		cursor: pointer;
+	}
+	#mfw-mobile-header a {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		padding: 0 8px;
+		font-size: 1.125rem;
+		font-weight: bold;
+		line-height: 1.1;
+	}
+	#mfw-mobile-header a::before {
+		content: '';
+		flex: none;
+		width: 32px;
+		height: 32px;
+		background: url('/assets/Wiki.png') center / contain no-repeat;
+		image-rendering: pixelated;
+	}
+
+	/* Tabs other than the page actions are hidden; dark mode is in the drawer */
+	#mw-head { position: absolute; top: 0; left: 0; right: 0; width: auto; height: 0; }
+	#left-navigation, #p-cactions, #ca-view, #p-personal, #p-search, #mfw-search-close { display: none; }
+
+	/* Search: the search button swaps the header for the search box and a back button */
+	body.mfw-search-open #mfw-mobile-header > :not(#mfw-search-close) { display: none; }
+	body.mfw-search-open #mfw-search-close { display: block; }
+	body.mfw-search-open #p-search {
+		display: block;
+		position: absolute;
+		top: 13px;
+		left: 52px;
+		right: 12px;
+		width: auto;
+		min-width: 0;
+		max-width: none;
+		margin: 0;
+		z-index: 4;
+	}
+	#p-search h3 { display: none; }
+	#p-search #searchform { margin: 0; padding: 0; }
+	#p-search input { font-size: 16px; }  /* keeps iOS from zooming in on focus */
+
+	/* Menu drawer: the sidebar slides in from the left over a dimmed page, as a plain list (without
+	   the script, html.mfw-js is missing and the sidebar stays a list below the page) */
+	.mfw-js div#mw-navigation div#mw-panel {
+		position: fixed !important;
+		inset: 0 auto 0 0;
+		width: min(80vw, 300px);
+		padding: 8px 0 24px;
+		display: block;
+		overflow-y: auto;
+		overscroll-behavior: contain;
+		background: var(--content-background-color);
+		box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+		transform: translateX(-110%);
+		transition: transform 0.2s, visibility 0.2s;
+		visibility: hidden;
+		z-index: 101;
+	}
+	.mfw-js body.mfw-menu-open div#mw-navigation div#mw-panel { transform: none; visibility: visible; transition: transform 0.2s; }  /* focusable at once */
+	body.mfw-menu-open::after { content: ''; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.4); z-index: 100; }
+	div#mw-panel nav.vector-menu-portal, div#mw-panel nav.vector-menu-portal .vector-menu-content, div#mw-panel .vector-menu-content-list {
+		display: block !important;  /* sections collapsed on desktop still show */
+		margin: 0;
+		padding: 0;
+		border: 0;
+		background: none;
+	}
+	div#mw-panel nav.vector-menu-portal h3 {
+		margin: 0;
+		padding: 16px 16px 4px;
+		border: 0;
+		background: none;
+		font-size: 0.8125rem;
+		color: var(--color-subtle) !important;
+		pointer-events: none;
+	}
+	div#mw-panel nav.vector-menu-portal h3::before { content: none; }
+	div#mw-panel h3 .vector-menu-heading-label { margin: 0; padding: 0; }
+	div#mw-panel li { margin: 0; padding: 0; font-size: 1rem; font-weight: bold; border-bottom: 1px solid var(--border-color-subtle); }
+	div#mw-panel a, div#mw-panel *:not(h3) > a:not(:hover):not(:focus), div#mw-panel #mfw-drawer-dark {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		padding: 10px 16px !important;
+		color: var(--color-base) !important;
+	}
+	div#mw-panel #mfw-drawer-dark {
+		width: 100%;
+		border: 0;
+		border-bottom: 1px solid var(--border-color-subtle);
+		background: none;
+		font: inherit;
+		font-size: 1rem;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	/* Content: full width on the header's colour */
+	#content {
+		margin: 0 !important;
+		padding: 16px 16px 24px !important;
+		border: 0 !important;
+		box-shadow: none;
+		background: var(--content-background-color);
+		min-height: 0;
+	}
+	#content::before, #content::after { content: none; }
+	.mw-body .mw-body-content { font-size: 1rem; line-height: 1.6; }
+	.mw-body h1.firstHeading { margin-top: 0; font-size: 1.75rem; padding-right: 124px; min-height: 44px; }
+
+	/* Page actions (Edit on GitHub, View source, View history) as icons beside the title */
+	#right-navigation { margin: 0; float: none; }
+	#p-views { position: absolute; top: 108px; right: 8px; margin: 0; background: none; }
+	body.page-Matcha_Flavoured_Wiki #p-views { display: none; }
+	#p-views ul { display: flex; margin: 0; }
+	#p-views li { margin: 0; padding: 0; background: none; }
+	#p-views li::before, #p-views li::after, #p-views ul::before, #p-views ul::after { content: none; }
+	#p-views li a {
+		display: block;
+		width: 40px;
+		height: 44px;
+		margin: 0;
+		padding: 0;
+		background: var(--color-subtle);
+		mask: var(--mfw-icon) center / 20px no-repeat;
+		font-size: 0;
+	}
+	#ca-mfw-edit a { --mfw-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='m16.77 8 1.94-2a1 1 0 0 0 0-1.41l-3.34-3.3a1 1 0 0 0-1.41 0L12 3.23zM1 14.25V19h4.75l9.96-9.96-4.75-4.75z'/%3E%3C/svg%3E"); }
+	#ca-mfw-source a { --mfw-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M1 3v14h3v-2H3V5h1V3zm4 0v14h4v-2H7V5h2V3zm11 0v2h1v10h-1v2h3V3zm-5 0v2h2v10h-2v2h4V3z'/%3E%3C/svg%3E"); }
+	#ca-mfw-history a { --mfw-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M9 6v5h.06l2.48 2.47 1.41-1.41L11 10.11V6z'/%3E%3Cpath d='M10 1a9 9 0 0 0-7.85 4.63L0 3.5V9h5.5L3.64 7.14A7 7 0 1 1 3 10H1a9 9 0 1 0 9-9'/%3E%3C/svg%3E"); }
+
+	/* Collapsible sections, with MobileFrontend's chevrons and rules */
+	.mw-parser-output .mfw-section-heading {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin: 0;
+		padding: 12px 0;
+		border-bottom: 1px solid var(--border-color-subtle);
+		cursor: pointer;
+	}
+	.mw-parser-output .mfw-section-heading h2 { margin: 0; padding: 0; border: 0; font-size: 1.5rem; }
+	.mfw-section-toggle { margin: 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: inherit; cursor: pointer; }
+	.mw-parser-output .mfw-section-heading::before {
+		content: '';
+		width: 7px;
+		height: 7px;
+		margin: 0 3px 6px 5px;
+		border: solid;
+		border-width: 0 2px 2px 0;
+		transform: rotate(45deg);
+		opacity: 0.7;
+	}
+	.mw-parser-output .mfw-section-heading.mfw-open::before { margin-bottom: -4px; transform: rotate(-135deg); }
+	.mfw-section:not([hidden]) { padding-top: 0.5em; }
+
+	/* Boxes take the full width; wide tables scroll sideways instead of widening the page */
+	.notaninfobox { float: none !important; margin: 0.5em auto 1em !important; width: auto !important; }
+	.infobox-rows td { overflow-wrap: anywhere; }
+	.mw-parser-output table.wikitable { display: block; width: max-content; max-width: 100%; overflow-x: auto; }
+	.mw-parser-output pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+	/* Recipe tables: name and ingredients side by side, the station screen below them (the "Recipe"
+	   header goes, unless it holds a collapsible table's toggle) */
+	.mw-parser-output table.recipe-table { width: auto; }
+	.recipe-table tbody { display: block; }
+	.recipe-table tr { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); }
+	.recipe-table tr > :nth-child(3) { grid-column: 1 / -1; }
+	.recipe-table tr:first-child > th:nth-child(3):not(:has(.mw-collapsible-toggle)) { display: none; }
+	/* In-game tooltips wrap long lines instead of running off the screen */
+	#minetip-tooltip { max-width: calc(100vw - 24px); box-sizing: border-box; white-space: normal; }
+
+	/* Navboxes stack, as minecraft.wiki's mobileNavbox gadget does */
+	.mw-parser-output table.navbox, .navbox tbody, .navbox tr, .navbox th, .navbox td { display: block; width: auto; }
+	.mw-parser-output .navbox th:not(.navbox-top) { text-align: left; }
+
+	/* Footer: stone, as on minecraft.wiki's mobile site */
+	#footer { margin: 0; padding: 16px; outline: 0; border: 0; background: url('/assets/mcw/Mobile-background.png') #202020; }
+	#footer::before, #footer::after { content: none; }
+	#footer li { float: none; margin: 0 0 0.5em; padding: 0; }
+}

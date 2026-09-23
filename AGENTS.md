@@ -89,6 +89,16 @@ the swap mid-way.
   in `<head>` to avoid a light flash. `MediaWiki:Gadget-mfwShell.js` (theme toggle `#pt-dm-toggle`,
   collapsible sidebar) is shared by the live wiki and the static export. Glyph images are drawn dark and
   inverted in dark mode.
+- **Mobile is CSS on the same pages, not a second skin.** Up to 720px, the phone section at the end of
+  `MediaWiki:Vector.css` restyles Vector like minecraft.wiki's mobile site (its Minerva skin): grass header,
+  the sidebar as a menu drawer, page actions as icons, recipe screens under their ingredients, scrolling
+  tables, stone footer. `Gadget-mfwShell.js` builds the header, drawer and collapsible sections (the lead
+  and the main page stay open; a `#fragment` opens its section). The drawer CSS is scoped to `html.mfw-js`
+  (set by `site/theme-boot.js`), so without JS the sidebar stays a list below the page. On touch screens, `Gadget-mfwTooltip.js`
+  shows a slot's tooltip on the first tap and follows its link on the second. Legacy Vector sends phones
+  `width=1120`; only the static export rewrites that, so preview phones on the export (or a narrow desktop
+  window, which ignores the viewport tag). Keep desktop (over 720px) pixel-identical: scope every mobile
+  rule to the media query.
 - **Icons:**
   - Item icons are `File:<Item Name>.png`, upscaled 8× nearest-neighbour.
   - Blocks are rendered as true isometric cubes (horizontal step = cos 30°); don't go back to 2:1.
