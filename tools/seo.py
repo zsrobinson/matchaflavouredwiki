@@ -64,6 +64,9 @@ def lead_description(doc):
     body = doc.split('id="mw-content-text"', 1)[-1]
     for m in re.finditer(r'<p>(.*?)</p>', body, re.S):
         text = re.sub(r'<sup[^>]*>.*?</sup>', '', m.group(1), flags=re.S)
+        # health glyphs ({{Hp}}): "8 (<img alt=Heart> × 4)" -> "8 (4 hearts)"
+        text = re.sub(r'\(\s*<span class="glyph">.*?</span>\s*×\s*([\d.]+)\)', lambda g: '(%s heart%s)' % (g.group(1), '' if g.group(1) == '1' else 's'), text, flags=re.S)
+        text = re.sub(r'<img [^>]*alt="([^"]*)"[^>]*>', r'\1', text)
         text = html.unescape(re.sub(r'<[^>]+>', '', text))
         text = re.sub(r'\s+', ' ', text).strip()
         if len(text) > 40:
@@ -129,6 +132,8 @@ def head_tags(title, doc, info):
 
 def apply(doc, title, info):
     tags, t = head_tags(title, doc, info)
+    # drop MediaWiki's own social/robots tags (PageImages writes a relative og:image) so ours are the only ones
+    doc = re.sub(r'<meta (?:property="og:[^"]*"|name="twitter:[^"]*"|name="robots"|name="description")[^>]*>\s*', '', doc)
     # canonical: MediaWiki's own tag (relative after rewriting) -> absolute production URL
     doc = re.sub(r'<link rel="canonical" href="[^"]*"\s*/?>', '', doc)
     tags = '<link rel="canonical" href="%s">\n' % html.escape(page_url(title), quote=True) + tags
