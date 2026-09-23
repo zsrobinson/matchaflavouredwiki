@@ -1,5 +1,6 @@
 /* In-game tooltips for inventory slots, like minecraft.wiki's minetips: hovering (or focusing) a
-   slot shows the item's name and lore in the game's tooltip frame, next to the pointer.
+   slot shows the item's name and lore in the game's tooltip frame, next to the pointer (on touch
+   screens, a first tap shows it and a second follows the link).
    Each slot carries its tooltip as a hidden .mf-tip (Module:Tooltip); slots without one show the
    item's name. Animated slots pause while hovered. Styles: #minetip-tooltip in
    Gadget-mcw-common.css and Gadget-mfw-ui.css.
@@ -8,6 +9,8 @@
 	'use strict';
 	var tip = null;
 	var current = null;
+	var touch = false;
+	var tapped = null;
 
 	function escapeHtml( s ) {
 		var span = document.createElement( 'span' );
@@ -55,7 +58,7 @@
 		if ( anim ) {
 			anim.classList.remove( 'animated-paused' );
 		}
-		current = null;
+		current = tapped = null;
 		if ( tip ) {
 			tip.style.display = 'none';
 		}
@@ -92,7 +95,7 @@
 
 	document.addEventListener( 'mouseover', function ( e ) {
 		var item = slotItem( e.target );
-		if ( item === current ) {
+		if ( item === current || touch ) {
 			return;
 		}
 		if ( !item ) {
@@ -109,18 +112,36 @@
 		}
 	} );
 	document.addEventListener( 'mouseout', function ( e ) {
-		if ( current && !current.contains( e.relatedTarget ) && slotItem( e.relatedTarget ) !== current ) {
+		if ( current && !touch && !current.contains( e.relatedTarget ) && slotItem( e.relatedTarget ) !== current ) {
 			hide();
 		}
 	} );
 	// Keyboard users get the tooltip beside the focused slot
 	document.addEventListener( 'focusin', function ( e ) {
-		var item = slotItem( e.target );
+		var item = !touch && slotItem( e.target );
 		if ( item && show( item ) ) {
 			var r = item.getBoundingClientRect();
 			place( r.right - 11 + 4, r.top + 34 );
 		}
 	} );
 	document.addEventListener( 'focusout', hide );
+	// Touch screens have no hover, so the mouse events a tap fires are ignored: the first tap on a
+	// slot shows its tooltip beside it, a second tap follows the slot's link, a tap elsewhere hides it
+	document.addEventListener( 'pointerover', function ( e ) {
+		touch = e.pointerType === 'touch';
+	}, true );
+	document.addEventListener( 'click', function ( e ) {
+		var item = slotItem( e.target );
+		if ( !touch ) {
+			return;
+		} else if ( !item ) {
+			hide();
+		} else if ( item !== tapped && show( item ) ) {
+			e.preventDefault();
+			tapped = item;
+			var r = item.getBoundingClientRect();
+			place( r.right - 11 + 4, r.top + 34 );
+		}
+	}, true );
 	window.addEventListener( 'scroll', hide, { passive: true } );
 }() );
