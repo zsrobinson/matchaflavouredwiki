@@ -55,7 +55,8 @@ def shade(im, f):
 
 
 def iso_cube(top, left, right, height=1.0):
-    """Isometric cube (like the in-game inventory block render)."""
+    """Isometric cube (like the in-game inventory block render). The top texture's top-left
+    corner is drawn at the back corner, its u axis along the upper-right edge."""
     n = 16
     top = first_frame(top.convert('RGBA')).resize((n, n), Image.NEAREST)
     left = first_frame(left.convert('RGBA')).resize((n, n), Image.NEAREST)
@@ -113,7 +114,7 @@ def iso_cube(top, left, right, height=1.0):
 
 
 FOLIAGE = (72, 181, 24)   # plains grass/foliage colour, as the game tints grayscale textures
-GRASS = (145, 189, 89)
+GRASS = (145, 189, 89)  # vanilla's; the grass tint comes from the pack's colormap when it has one
 
 
 def tint_if_foliage(im, faces, which):
@@ -127,7 +128,7 @@ def tint_if_foliage(im, faces, which):
         return im
     if 'cherry' in base or 'azalea' in base or 'pale_oak' in base:
         return im
-    col = GRASS if 'grass' in base or 'fern' in base else FOLIAGE
+    col = (colormap('grass', 0.5, 1.0) or GRASS) if 'grass' in base or 'fern' in base else FOLIAGE
     im = first_frame(im.convert('RGBA'))
     px = im.load()
     for y in range(im.size[1]):
@@ -492,9 +493,25 @@ def cube_faces(node):
         for name, face in el.get('faces', {}).items():
             path = model_texture(m, face.get('texture', ''))
             if path:
-                faces.setdefault(name, path)
+                faces.setdefault(name, (path, face.get('uv'), face.get('rotation', 0)))
     out = tuple(faces.get(n) for n in ('up', 'north', 'east'))
     return out if all(out) else None
+
+
+def face_image(im, uv, rotation):
+    """A cube face's texture as the model lays it: its uv rectangle (reversed = mirrored), turned
+    clockwise by the face's rotation."""
+    im = first_frame(im.convert('RGBA'))
+    if uv and list(uv) != [0, 0, 16, 16]:
+        s = im.width / 16
+        u0, v0, u1, v1 = uv
+        im = im.crop((int(min(u0, u1) * s), int(min(v0, v1) * s), int(max(u0, u1) * s), int(max(v0, v1) * s)))
+        if u0 > u1:
+            im = im.transpose(Image.FLIP_LEFT_RIGHT)
+        if v0 > v1:
+            im = im.transpose(Image.FLIP_TOP_BOTTOM)
+    turn = {90: Image.ROTATE_270, 180: Image.ROTATE_180, 270: Image.ROTATE_90}.get(rotation % 360)
+    return im.transpose(turn) if turn else im
 
 
 # face corners (top-left, top-right, bottom-left) as seen from outside, texture upright
@@ -904,17 +921,21 @@ def item_icon(item):
         return Image.open(next(iter(faces.values())))
     cube = cube_faces(node)
     if cube:  # the model's own up / north / east faces (a crafting table's top is not its front)
-        top, front, side = (Image.open(p) for p in cube)
+        top, front, side = (Image.open(p) for p, _, _ in cube)  # up, north, east
     else:
         top = pick('top', 'end', 'all', 'side', 'wall', 'wool', 'pattern', 'texture', 'particle')
         side = pick('side', 'front', 'all', 'wall', 'wool', 'pattern', 'texture', 'particle', 'top')
         front = pick('front', 'side', 'all', 'wall', 'wool', 'pattern', 'texture', 'particle')
     top, side, front = (tint_if_foliage(top, faces, 'top'), tint_if_foliage(side, faces, 'side'),
                         tint_if_foliage(front, faces, 'front'))
+    if cube:
+        top, front, side = (face_image(im, uv, rot) for im, (_, uv, rot) in zip((top, front, side), cube))
     height = 0.5 if name.endswith(' slab') else 1.0
     if any(name.endswith(s) for s in (' carpet', ' pressure plate')):
         height = 1 / 16
-    return iso_cube(top, front, side, height)
+    # the game's view of a block (display rotation y=225): the east face on the left, the north
+    # (front) face on the right, and the top turned so its north edge runs along the right-hand side
+    return iso_cube(first_frame(top.convert('RGBA')).transpose(Image.ROTATE_270), side, front, height)
 
 
 def glyphs():
