@@ -43,8 +43,8 @@ def upstream():
     try:
         out = run(['yt-dlp', '--flat-playlist', '--print', '%(id)s\t%(title)s', CHANNEL], timeout=300)
         videos = [dict(zip(('id', 'title'), line.split('\t', 1))) for line in out.splitlines() if '\t' in line]
-    except (FileNotFoundError, subprocess.CalledProcessError, subprocess.TimeoutExpired):
-        videos = None  # yt-dlp missing or YouTube unreachable: skip this source today
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
+        videos = None  # YouTube unreachable: skip this source today (a missing yt-dlp is an error)
     return {'matcha_commit': head, 'modrinth': releases, 'videos': videos}
 
 
