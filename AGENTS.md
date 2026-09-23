@@ -52,6 +52,9 @@ the swap mid-way.
 - **Titles to files:** the namespace is the folder, `/` becomes `%2F`, Module pages are `.lua`, the
   Project namespace is `Matcha Flavoured Wiki:`.
 
+- **The local wiki never deletes pages.** A page the generator stopped producing still exists locally,
+  so local checks can pass while CI, which builds from scratch, finds broken links. Trust the PR check.
+
 **Caches and Docker**
 - **Parser cache is off** (`$wgParserCacheType = CACHE_NONE`). **APCu still caches rendered pages,
   messages, gadget definitions and CSS**, so `sync.sh` and `build.sh` run `apache2ctl -k graceful`
