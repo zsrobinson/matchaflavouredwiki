@@ -7,7 +7,7 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Armor}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Cleanse|{{G|Cleanse}} Cleanses: Slowness]]<br />[[Magic protection|{{G|Magic protection}} 8 Magic protection]]<br />[[Set bonus#Shakudo regeneration|{{G|Half heart}} {{G|Cooldown}} (00:30) Shakudo regeneration]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|{{G|Cleanse}} [[Cleanse|Cleanses: Slowness]]<br />{{G|Magic protection}} [[Magic protection|8 Magic protection]]<br />{{G|Half heart}}{{G|Cooldown}} [[Set bonus#Shakudo regeneration|(00:30) Shakudo regeneration]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=500

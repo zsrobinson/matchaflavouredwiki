@@ -33,6 +33,10 @@ def render(title):
             for m in re.findall(r'class="(?:error|scribunto-error)[^"]*"[^>]*>(.*?)</(?:strong|span|div)>', body)]
     if 'Template loop detected' in body:
         errs.append('template loop')
+    # wikitext that failed to parse shows up as literal brackets (e.g. an image inside a link label)
+    visible = re.sub(r'<(script|style|code|pre)[^>]*>.*?</\1>', '', body, flags=re.S)
+    for m in re.findall(r'\[\[[^\]<]{1,80}\]\]|\{\{[^}<]{1,80}\}\}', re.sub(r'<[^>]+>', '', visible))[:3]:
+        errs.append('unparsed wikitext: ' + m)
     red = set(html.unescape(m) for m in re.findall(r'class="new" title="([^"]+) \(page does not exist\)"', body))
     files = [r for r in red if r.startswith('File:')]
     red = [r for r in red if not r.startswith('File:')]

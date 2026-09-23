@@ -144,7 +144,10 @@ def intrinsic_text(eid, lvl):
             label = INTRINSIC_LABELS.get(key, key.replace('_', ' ').capitalize())
         elif not re.sub(r'\{\{G\|[^}]*\}\}', '', label).strip(' ()+-:0123456789∞'):
             label = (label + ' ' + INTRINSIC_LABELS.get(key, page.split('#')[-1])).strip()  # glyph-only: add a readable name
-        return '[[%s|%s]]' % (page, label)
+        # glyphs are images, and MediaWiki doesn't allow an image inside a link label: keep them outside
+        glyph_part = ''.join(re.findall(r'\{\{G\|[^}]*\}\}', label))
+        text = re.sub(r'\{\{G\|[^}]*\}\}', '', label).strip() or page.split('#')[-1]
+        return ('%s [[%s|%s]]' % (glyph_part, page, text)).strip()
     if plain and not re.fullmatch(r'[0-9+∞\-() :.]*', plain) and not plain.startswith(('ERROR', 'enchantment.')):
         return '[[%s]]%s' % (plain, (' ' + roman(lvl)) if maxl > 1 else '')
     return key.replace('_', ' ').capitalize()

@@ -7,7 +7,7 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Fortune|{{G|Fortune}} Fortune bonus]]<br />[[Warding|{{G|Warding}} 1 Warding]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|{{G|Fortune}} [[Fortune|Fortune bonus]]<br />{{G|Warding}} [[Warding|1 Warding]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=3000

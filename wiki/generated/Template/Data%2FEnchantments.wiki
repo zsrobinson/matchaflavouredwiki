@@ -1,27 +1,27 @@
 <includeonly>{| class="wikitable sortable"
 ! Enchantment !! ID !! Max level !! Slots !! Applies to !! Compared with vanilla
 |-
-| [[Set bonus#Shakudo regeneration|{{G|Half heart}} {{G|Cooldown}} (00:30) Shakudo regeneration]] || <code>matcha:shakudo_armour</code> || 1 || mainhand, armor || 5 items || '''New'''
+| {{G|Half heart}}{{G|Cooldown}} [[Set bonus#Shakudo regeneration|(00:30) Shakudo regeneration]] || <code>matcha:shakudo_armour</code> || 1 || mainhand, armor || 5 items || '''New'''
 |-
-| [[Electrum equipment|{{G|Electrum}} +1 Electrum bonus]] || <code>matcha:electrum_armour</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
+| {{G|Electrum}} [[Electrum equipment|+1 Electrum bonus]] || <code>matcha:electrum_armour</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
 |-
-| [[Set bonus#Shakudo regeneration|{{G|Health}} {{G|Cooldown}} -(00:10) Shakudo regeneration]] || <code>matcha:shakudo_elytra</code> || 1 || mainhand, armor || 1 items || '''New'''
+| {{G|Health}}{{G|Cooldown}} [[Set bonus#Shakudo regeneration|-(00:10) Shakudo regeneration]] || <code>matcha:shakudo_elytra</code> || 1 || mainhand, armor || 1 items || '''New'''
 |-
-| [[Warding|{{G|Warding}} 1 Warding]] || <code>matcha:warding_1</code> || 1 || mainhand, offhand || 13 items || '''New'''
+| {{G|Warding}} [[Warding|1 Warding]] || <code>matcha:warding_1</code> || 1 || mainhand, offhand || 13 items || '''New'''
 |-
-| [[Warding|{{G|Warding}} 2 Warding]] || <code>matcha:warding_2</code> || 1 || mainhand, offhand || 12 items || '''New'''
+| {{G|Warding}} [[Warding|2 Warding]] || <code>matcha:warding_2</code> || 1 || mainhand, offhand || 12 items || '''New'''
 |-
-| [[Magic protection|{{G|Magic protection}} 20 Magic protection]] || <code>matcha:max_magic_protection</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
+| {{G|Magic protection}} [[Magic protection|20 Magic protection]] || <code>matcha:max_magic_protection</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
 |-
-| [[Doom|{{G|Doom}} 3 Doom]] || <code>matcha:adamant_armour</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
+| {{G|Doom}} [[Doom|3 Doom]] || <code>matcha:adamant_armour</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
 |-
-| [[Warding|{{G|Warding}} 3 Warding]] || <code>matcha:warding_3</code> || 1 || mainhand, offhand || 12 items || '''New'''
+| {{G|Warding}} [[Warding|3 Warding]] || <code>matcha:warding_3</code> || 1 || mainhand, offhand || 12 items || '''New'''
 |-
-| [[Warding|{{G|Warding}} 4 Warding]] || <code>matcha:warding_4</code> || 1 || mainhand, offhand || 12 items || '''New'''
+| {{G|Warding}} [[Warding|4 Warding]] || <code>matcha:warding_4</code> || 1 || mainhand, offhand || 12 items || '''New'''
 |-
-| [[Magic protection|{{G|Magic protection}} 8 Magic protection]] || <code>matcha:magic_protection</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
+| {{G|Magic protection}} [[Magic protection|8 Magic protection]] || <code>matcha:magic_protection</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
 |-
-| [[Adamant equipment|{{G|Weakness}} Weakness]] || <code>matcha:adamant_weapon</code> || 1 || mainhand || <code>#minecraft:enchantable/weapon</code> || '''New'''
+| {{G|Weakness}} [[Adamant equipment|Weakness]] || <code>matcha:adamant_weapon</code> || 1 || mainhand || <code>#minecraft:enchantable/weapon</code> || '''New'''
 |-
 | [[Anemos]] || <code>matcha:anemos</code> || 1 || mainhand || 7 items || '''New'''
 |-
@@ -37,15 +37,15 @@
 |-
 | [[Channeling]] || <code>minecraft:channeling</code> || 1 || mainhand || <code>#minecraft:enchantable/trident</code> || Changed: anvil cost
 |-
-| [[Cleanse|{{G|Cleanse}} Cleanse Maleffect]] || <code>matcha:cleanse_armor_maleffect</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
+| {{G|Cleanse}} [[Cleanse|Cleanse Maleffect]] || <code>matcha:cleanse_armor_maleffect</code> || 1 || armor || <code>#minecraft:enchantable/armor</code> || '''New'''
 |-
-| [[Cleanse|{{G|Cleanse}} Cleanses: Blindness, Darkness]] || <code>matcha:cleanse_armor_head</code> || 1 || armor || <code>#minecraft:enchantable/head_armor</code> || '''New'''
+| {{G|Cleanse}} [[Cleanse|Cleanses: Blindness, Darkness]] || <code>matcha:cleanse_armor_head</code> || 1 || armor || <code>#minecraft:enchantable/head_armor</code> || '''New'''
 |-
-| [[Cleanse|{{G|Cleanse}} Cleanses: Levitation]] || <code>matcha:cleanse_armor_feet</code> || 1 || armor || <code>#minecraft:enchantable/foot_armor</code> || '''New'''
+| {{G|Cleanse}} [[Cleanse|Cleanses: Levitation]] || <code>matcha:cleanse_armor_feet</code> || 1 || armor || <code>#minecraft:enchantable/foot_armor</code> || '''New'''
 |-
-| [[Cleanse|{{G|Cleanse}} Cleanses: Poison]] || <code>matcha:cleanse_armor_chest</code> || 1 || armor || <code>#minecraft:enchantable/chest_armor</code> || '''New'''
+| {{G|Cleanse}} [[Cleanse|Cleanses: Poison]] || <code>matcha:cleanse_armor_chest</code> || 1 || armor || <code>#minecraft:enchantable/chest_armor</code> || '''New'''
 |-
-| [[Cleanse|{{G|Cleanse}} Cleanses: Slowness]] || <code>matcha:cleanse_armor_legs</code> || 1 || armor || <code>#minecraft:enchantable/leg_armor</code> || '''New'''
+| {{G|Cleanse}} [[Cleanse|Cleanses: Slowness]] || <code>matcha:cleanse_armor_legs</code> || 1 || armor || <code>#minecraft:enchantable/leg_armor</code> || '''New'''
 |-
 | [[Curse of Binding]] || <code>minecraft:binding_curse</code> || 1 || armor || <code>#minecraft:enchantable/equippable</code> || Changed: anvil cost
 |-
@@ -67,7 +67,7 @@
 |-
 | [[Efficiency]] I || <code>minecraft:efficiency</code> || 5 || mainhand || <code>#minecraft:enchantable/mining</code> || Unchanged
 |-
-| [[Fortune|{{G|Fortune}} Fortune bonus]] || <code>matcha:electrum_tool</code> || 3 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || '''New'''
+| {{G|Fortune}} [[Fortune|Fortune bonus]] || <code>matcha:electrum_tool</code> || 3 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || '''New'''
 |-
 | [[Feather Falling]] I || <code>minecraft:feather_falling</code> || 4 || armor || <code>#minecraft:enchantable/foot_armor</code> || Changed: anvil cost, effects
 |-
@@ -123,7 +123,7 @@
 |-
 | [[Riptide]] I || <code>minecraft:riptide</code> || 3 || hand || <code>#minecraft:enchantable/trident</code> || Changed: anvil cost
 |-
-| [[Shakudo equipment|{{G|Health}}{{G|Attack damage}} Life steal]] || <code>matcha:shakudo_weapon</code> || 1 || mainhand || <code>#minecraft:enchantable/weapon</code> || '''New'''
+| {{G|Health}}{{G|Attack damage}} [[Shakudo equipment|Life steal]] || <code>matcha:shakudo_weapon</code> || 1 || mainhand || <code>#minecraft:enchantable/weapon</code> || '''New'''
 |-
 | [[Sharpness]] I || <code>minecraft:sharpness</code> || 5 || mainhand || <code>#minecraft:enchantable/sharp_weapon</code> || Unchanged
 |-
@@ -151,11 +151,11 @@
 |-
 | [[Adamant equipment|Auto-smelting]] || <code>matcha:adamant_tool</code> || 1 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || '''New'''
 |-
-| [[Conduit Power|{{G|Water}} ∞ Conduit Power]] || <code>matcha:conduit_power</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
+| {{G|Water}} [[Conduit Power|∞ Conduit Power]] || <code>matcha:conduit_power</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
 |-
-| [[Fire Resistance|{{G|Fire resistance}} ∞ Fire Resistance]] || <code>matcha:fire_proof</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
+| {{G|Fire resistance}} [[Fire Resistance|∞ Fire Resistance]] || <code>matcha:fire_proof</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
 |-
-| [[Haste|{{G|Mining speed}} ∞ Haste]] || <code>matcha:haste</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
+| {{G|Mining speed}} [[Haste|∞ Haste]] || <code>matcha:haste</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
 |-
-| [[Regeneration|{{G|Health}} ∞ Regeneration]] || <code>matcha:regeneration</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
+| {{G|Health}} [[Regeneration|∞ Regeneration]] || <code>matcha:regeneration</code> || 1 || head || <code>#minecraft:head_armor</code> || '''New'''
 |}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>

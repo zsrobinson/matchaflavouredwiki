@@ -7,7 +7,7 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Unbreaking]] II<br />[[Adamant equipment|{{G|Weakness}} Weakness]]<br />[[Sharpness]] I}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Unbreaking]] II<br />{{G|Weakness}} [[Adamant equipment|Weakness]]<br />[[Sharpness]] I}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=3000

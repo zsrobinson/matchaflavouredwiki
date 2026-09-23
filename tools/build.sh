@@ -45,4 +45,5 @@ docker exec "$C" php maintenance/run.php refreshLinks >/dev/null 2>&1 || true
 docker exec "$C" php maintenance/run.php purgeList --all-namespaces >/dev/null 2>&1 || true
 docker exec "$C" php maintenance/run.php runJobs --quiet >/dev/null 2>&1 || true
 docker exec "$C" chown -R www-data:www-data /var/www/data /var/www/html/images
+docker exec "$C" apache2ctl -k graceful >/dev/null 2>&1 || true  # drop APCu-cached renders
 echo "Done: http://localhost:8080/w/Main_Page"

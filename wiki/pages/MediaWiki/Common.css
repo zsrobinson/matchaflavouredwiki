@@ -64,3 +64,6 @@ body.page-Matcha_Flavoured_Wiki #firstHeading { display: none; }
 #mw-panel nav.vector-menu-portal.collapsed .vector-menu-content { display: none; }
 .mp-highlight-image, .mp-highlight-image span, .mp-highlight-image a { position: absolute; inset: 0; display: block; }
 .mp-highlight-image img { width: 100%; height: 100%; object-fit: cover; }
+
+/* The pack's tooltip glyphs ({{G}}, {{Hp}}) are drawn dark for light pages: lighten them in dark mode */
+body.wgl-theme-dark .glyph img { filter: invert(1) brightness(0.92); }

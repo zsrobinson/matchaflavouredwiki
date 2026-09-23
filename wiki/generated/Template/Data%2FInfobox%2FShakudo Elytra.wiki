@@ -7,7 +7,7 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Equipment}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Magic protection|{{G|Magic protection}} 20 Magic protection]]<br />[[Cleanse|{{G|Cleanse}} Cleanse Maleffect]]<br />[[Set bonus#Shakudo regeneration|{{G|Half heart}} {{G|Cooldown}} (00:30) Shakudo regeneration]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|{{G|Magic protection}} [[Magic protection|20 Magic protection]]<br />{{G|Cleanse}} [[Cleanse|Cleanse Maleffect]]<br />{{G|Half heart}}{{G|Cooldown}} [[Set bonus#Shakudo regeneration|(00:30) Shakudo regeneration]]}}
 |renewable={{{renewable|}}}
 |rarity=Epic
 |stackable=No

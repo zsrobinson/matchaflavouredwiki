@@ -25,11 +25,9 @@ if grep -q "<page>" build/import.xml; then
     docker exec -i "$C" php maintenance/run.php purgeList < build/changed_titles.txt >/dev/null 2>&1 || true
   fi
   docker exec "$C" php maintenance/run.php runJobs --quiet >/dev/null 2>&1 || true
-  if grep -qE '^MediaWiki:' build/changed_titles.txt || [[ "${1:-}" == "--all" ]]; then
-    # interface messages, gadget definitions and site CSS are cached in APCu: clear it
-    docker exec "$C" apache2ctl -k graceful >/dev/null 2>&1 || true
-    sleep 1
-  fi
+  # rendered pages, interface messages, gadgets and site CSS are cached in APCu: clear it every time
+  docker exec "$C" apache2ctl -k graceful >/dev/null 2>&1 || true
+  sleep 1
   docker exec "$C" chown -R www-data:www-data /var/www/data
   echo "imported $(wc -l < build/changed_titles.txt | tr -d ' ') page(s)"
 else

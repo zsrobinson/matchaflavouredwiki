@@ -7,7 +7,7 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Armor}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Electrum equipment|{{G|Electrum}} +1 Electrum bonus]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|{{G|Electrum}} [[Electrum equipment|+1 Electrum bonus]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=1000

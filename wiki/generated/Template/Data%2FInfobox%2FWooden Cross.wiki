@@ -7,7 +7,7 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Item}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Warding|{{G|Warding}} 1 Warding]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|{{G|Warding}} [[Warding|1 Warding]]}}
 |renewable={{{renewable|}}}
 |stackable=Yes (64)
 |id=<code>matcha:wooden_cross</code>
