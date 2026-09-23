@@ -1,5 +1,6 @@
 /* In-game tooltips for inventory slots, like minecraft.wiki's minetips: hovering (or focusing) a
-   slot shows the item's name and lore in the game's tooltip frame, next to the pointer.
+   slot shows the item's name and lore in the game's tooltip frame, next to the pointer (on touch
+   screens, a first tap shows it and a second follows the link).
    Each slot carries its tooltip as a hidden .mf-tip (Module:Tooltip); slots without one show the
    item's name. Animated slots pause while hovered. Styles: #minetip-tooltip in
    Gadget-mcw-common.css and Gadget-mfw-ui.css.
@@ -8,6 +9,14 @@
 	'use strict';
 	var tip = null;
 	var current = null;
+	var touchAt = 0;  // time of the last touch pointerdown
+	var tapped = null;
+
+	// The mouse events a tap fires come within a second of its touch pointerdown; a mouse move or a
+	// key press ends that (so keyboards and screen readers are never mistaken for taps)
+	function tapping() {
+		return Date.now() - touchAt < 1000;
+	}
 
 	function escapeHtml( s ) {
 		var span = document.createElement( 'span' );
@@ -47,6 +56,15 @@
 		tip.style.top = top + 'px';
 	}
 
+	// Below the slot (above it near the bottom of the screen), so the finger doesn't hide either
+	function placeBy( r ) {
+		var doc = document.documentElement;
+		var w = tip.offsetWidth, h = tip.offsetHeight;
+		var top = r.bottom + h + 4 > doc.clientHeight ? r.top - h - 4 : r.bottom + 4;
+		tip.style.left = Math.max( 0, Math.min( r.left, doc.clientWidth - w ) ) + 'px';
+		tip.style.top = Math.max( 0, top ) + 'px';
+	}
+
 	function hide() {
 		if ( !current ) {
 			return;
@@ -55,7 +73,7 @@
 		if ( anim ) {
 			anim.classList.remove( 'animated-paused' );
 		}
-		current = null;
+		current = tapped = null;
 		if ( tip ) {
 			tip.style.display = 'none';
 		}
@@ -92,7 +110,7 @@
 
 	document.addEventListener( 'mouseover', function ( e ) {
 		var item = slotItem( e.target );
-		if ( item === current ) {
+		if ( item === current || tapping() ) {
 			return;
 		}
 		if ( !item ) {
@@ -104,23 +122,49 @@
 		}
 	} );
 	document.addEventListener( 'mousemove', function ( e ) {
-		if ( current ) {
+		if ( current && !tapping() ) {
 			place( e.clientX, e.clientY );
 		}
 	} );
 	document.addEventListener( 'mouseout', function ( e ) {
-		if ( current && !current.contains( e.relatedTarget ) && slotItem( e.relatedTarget ) !== current ) {
+		if ( current && !tapping() && !current.contains( e.relatedTarget ) && slotItem( e.relatedTarget ) !== current ) {
 			hide();
 		}
 	} );
 	// Keyboard users get the tooltip beside the focused slot
 	document.addEventListener( 'focusin', function ( e ) {
-		var item = slotItem( e.target );
+		var item = !tapping() && slotItem( e.target );
 		if ( item && show( item ) ) {
 			var r = item.getBoundingClientRect();
 			place( r.right - 11 + 4, r.top + 34 );
 		}
 	} );
 	document.addEventListener( 'focusout', hide );
-	window.addEventListener( 'scroll', hide, { passive: true } );
+	// Touch screens have no hover, so the mouse events a tap fires are ignored: the first tap on a
+	// slot shows its tooltip, a second tap follows the slot's link, a tap elsewhere hides it
+	document.addEventListener( 'pointerdown', function ( e ) {
+		touchAt = e.pointerType === 'touch' ? Date.now() : 0;
+	}, true );
+	document.addEventListener( 'pointermove', function ( e ) {
+		if ( e.pointerType === 'mouse' ) {
+			touchAt = 0;
+		}
+	}, true );
+	document.addEventListener( 'keydown', function () {
+		touchAt = 0;
+	}, true );
+	document.addEventListener( 'click', function ( e ) {
+		var item = slotItem( e.target );
+		if ( !tapping() ) {
+			return;
+		} else if ( !item ) {
+			hide();
+		} else if ( item !== tapped && show( item ) ) {
+			e.preventDefault();
+			tapped = item;
+			placeBy( item.getBoundingClientRect() );
+		}
+	}, true );
+	// any scroll, including a wide table's sideways scroll (scroll events don't bubble)
+	window.addEventListener( 'scroll', hide, { capture: true, passive: true } );
 }() );
