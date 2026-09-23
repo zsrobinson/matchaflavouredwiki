@@ -4,11 +4,11 @@
 |-
 | [[Diorite]]
 | 2 × [[Cobblestone]] +<br />2 × [[Quartz]]
-| {{Crafting|A1=Cobblestone|A2=Quartz|B1=Quartz|B2=Cobblestone|Output=Diorite,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diorite.json|matcha:crafting/diorite}}</small>
+| {{Crafting|A1=Cobblestone|A2=Quartz|B1=Quartz|B2=Cobblestone|Output=Diorite,4}}
 |-
 | [[Diorite]]
 | 2 × [[Diorite Slab]]
-| {{Crafting|A1=Diorite Slab|B1=Diorite Slab|Output=Diorite|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/diorite_from_diorite_slabs.json|matcha:crafting/diorite_from_diorite_slabs}}</small>
+| {{Crafting|A1=Diorite Slab|B1=Diorite Slab|Output=Diorite|shapeless=1}}
 |}
 '''Blasting'''
 {| class="wikitable recipe-table"
@@ -16,6 +16,6 @@
 |-
 | [[Diorite]]
 | [[Polished Diorite]]
-| {{Cooking|station=Blast Furnace|Input=Polished Diorite|Output=Diorite|time=5|note=5 s, 1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/diorite_from_blasting_polished_diorite.json|matcha:blast/diorite_from_blasting_polished_diorite}}</small>
+| {{Cooking|station=Blast Furnace|Input=Polished Diorite|Output=Diorite|time=5|note=5 s, 1 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

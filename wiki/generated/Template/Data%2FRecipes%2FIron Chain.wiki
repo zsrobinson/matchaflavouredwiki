@@ -4,15 +4,15 @@
 |-
 | [[Iron Chain]]
 | 3 × [[Iron Nugget]]
-| {{Crafting|A1=Iron Nugget|A2=Iron Nugget|A3=Iron Nugget|Output=Iron Chain,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_chain.json|matcha:crafting/iron_chain}}</small>
+| {{Crafting|A1=Iron Nugget|A2=Iron Nugget|A3=Iron Nugget|Output=Iron Chain,2}}
 |-
 | [[Iron Chain]]
 | 3 × [[Iron Ingot]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|Output=Iron Chain,18}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_chain_from_ingot.json|matcha:crafting/iron_chain_from_ingot}}</small>
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|Output=Iron Chain,18}}
 |-
 | [[Iron Chain]]
 | 3 × [[Steel Alloy]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|Output=Iron Chain,36}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_chain_from_steel.json|matcha:crafting/iron_chain_from_steel}}</small>
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|Output=Iron Chain,36}}
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
@@ -20,14 +20,14 @@
 |-
 | [[Iron Chain]]
 | [[Block of Iron]]
-| {{Stonecutter|Input=Block of Iron|Output=Iron Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_chain_from_stonecutting_iron_block.json|matcha:stonecutting/iron_chain_from_stonecutting_iron_block}}</small>
+| {{Stonecutter|Input=Block of Iron|Output=Iron Chain,54}}
 |-
 | [[Iron Chain]]
 | [[Iron Ingot]]
-| {{Stonecutter|Input=Iron Ingot|Output=Iron Chain,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_chain_from_stonecutting_iron_ingot.json|matcha:stonecutting/iron_chain_from_stonecutting_iron_ingot}}</small>
+| {{Stonecutter|Input=Iron Ingot|Output=Iron Chain,6}}
 |-
 | [[Iron Chain]]
 | [[Steel Alloy]]
-| {{Stonecutter|Input=Steel Alloy|Output=Iron Chain,12}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_chain_from_stonecutting_steel.json|matcha:stonecutting/iron_chain_from_stonecutting_steel}}</small>
+| {{Stonecutter|Input=Steel Alloy|Output=Iron Chain,12}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

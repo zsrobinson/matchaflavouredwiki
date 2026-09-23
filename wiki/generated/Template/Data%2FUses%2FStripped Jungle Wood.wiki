@@ -3,87 +3,87 @@
 |-
 | [[Kindling]]
 | 2 × [[Stick]] +<br />2 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json|matcha:crafting/campfire}}</small>
+| {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}
 |-
 | [[Chest]]
 | 8 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/chest_from_logs.json|matcha:crafting/chest_from_logs}}</small>
+| {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}
 |-
 | [[Stick]]
 | 2 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sticks_from_logs.json|matcha:crafting/sticks_from_logs}}</small>
+| {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}
 |-
 | [[Charcoal]]
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood">Any logs that burn</span>
-| {{Cooking|station=Mud Kiln|Input=Any Logs That Burn|Output=Charcoal|time=5|note=5 s, 0.15 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/charcoal.json|matcha:kiln/charcoal}}</small>
+| {{Cooking|station=Mud Kiln|Input=Any Logs That Burn|Output=Charcoal|time=5|note=5 s, 0.15 XP}}
 |-
 | [[Barrel]]
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Stonecutter|Input=Any Logs|Output=Barrel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/barrel_from_stonecutting_any_logs.json|matcha:stonecutting/barrel_from_stonecutting_any_logs}}</small>
+| {{Stonecutter|Input=Any Logs|Output=Barrel}}
 |-
 | [[Chiseled Bookshelf]]
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Stonecutter|Input=Any Logs|Output=Chiseled Bookshelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/chiseled_bookshelf_from_stonecutting_any_logs.json|matcha:stonecutting/chiseled_bookshelf_from_stonecutting_any_logs}}</small>
+| {{Stonecutter|Input=Any Logs|Output=Chiseled Bookshelf}}
 |-
 | [[Jungle Button]]
 | <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
-| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_button_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_button_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Button,8}}
 |-
 | [[Jungle Door]]
 | <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
-| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Door,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_door_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_door_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Door,2}}
 |-
 | [[Jungle Fence]]
 | <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
-| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Fence,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_fence_from_stonecutting_jungle_log.json|matcha:stonecutting/jungle_fence_from_stonecutting_jungle_log}}</small>
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Fence,3}}
 |-
 | [[Jungle Fence Gate]]
 | <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
-| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Fence Gate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_fence_gate_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_fence_gate_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Fence Gate}}
 |-
 | [[Jungle Log]]
 | [[Stripped Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Wood]]
-| {{Stonecutter|Input=Stripped Jungle Log;Jungle Wood;Stripped Jungle Wood|Output=Jungle Log}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_log_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_log_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Stripped Jungle Log;Jungle Wood;Stripped Jungle Wood|Output=Jungle Log}}
 |-
 | [[Jungle Planks]]
 | <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
-| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_planks_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_planks_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Planks,4}}
 |-
 | [[Jungle Pressure Plate]]
 | <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
-| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Pressure Plate,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_pressure_plate_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_pressure_plate_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Pressure Plate,4}}
 |-
 | [[Jungle Shelf]]
 | <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
-| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_shelf_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_shelf_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Shelf}}
 |-
 | [[Jungle Sign]]
 | <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
-| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Sign,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_sign_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_sign_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Sign,2}}
 |-
 | [[Jungle Slab]]
 | <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
-| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_slabs_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_slabs_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Slab,8}}
 |-
 | [[Jungle Stairs]]
 | <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
-| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Stairs,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_stairs_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_stairs_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Stairs,4}}
 |-
 | [[Jungle Trapdoor]]
 | <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
-| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_trapoor_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_trapoor_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Trapdoor,4}}
 |-
 | [[Jungle Wood]]
 | [[Stripped Jungle Log]] or [[Jungle Log]] or [[Stripped Jungle Wood]]
-| {{Stonecutter|Input=Stripped Jungle Log;Jungle Log;Stripped Jungle Wood|Output=Jungle Wood}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_wood_from_stonecutting_jungle_log.json|matcha:stonecutting/jungle_wood_from_stonecutting_jungle_log}}</small>
+| {{Stonecutter|Input=Stripped Jungle Log;Jungle Log;Stripped Jungle Wood|Output=Jungle Wood}}
 |-
 | [[Ladder]]
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Stonecutter|Input=Any Logs|Output=Ladder,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/ladder_from_stonecutting_any_logs.json|matcha:stonecutting/ladder_from_stonecutting_any_logs}}</small>
+| {{Stonecutter|Input=Any Logs|Output=Ladder,16}}
 |-
 | [[Stripped Jungle Log]]
 | [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Wood]]
-| {{Stonecutter|Input=Jungle Log;Jungle Wood;Stripped Jungle Wood|Output=Stripped Jungle Log}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_jungle_log_from_stonecutting_jungle_logs.json|matcha:stonecutting/stripped_jungle_log_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Jungle Log;Jungle Wood;Stripped Jungle Wood|Output=Stripped Jungle Log}}
 |-
 | [[Charcoal]] <small>(vanilla recipe)</small>
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood">Any logs that burn</span>

@@ -5,13 +5,13 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village snowy house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_snowy_house.json|chests/village/village_snowy_house}})</small> || 1 || 10.1% || 
+| Village / village snowy house || 1 || 10.1% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Blue ice <small>({{Source|vanilla:loot_table/blocks/blue_ice.json|blocks/blue_ice}})</small> || 1 || 100% || Silk Touch
+| Blue ice || 1 || 100% || Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

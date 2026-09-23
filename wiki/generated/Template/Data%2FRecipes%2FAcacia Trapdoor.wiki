@@ -12,10 +12,10 @@
 |-
 | [[Acacia Trapdoor]]
 | [[Acacia Planks]]
-| {{Stonecutter|Input=Acacia Planks|Output=Acacia Trapdoor}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_trapdoor_from_stonecutting_acacia_planks.json|matcha:stonecutting/acacia_trapdoor_from_stonecutting_acacia_planks}}</small>
+| {{Stonecutter|Input=Acacia Planks|Output=Acacia Trapdoor}}
 |-
 | [[Acacia Trapdoor]]
 | <span class="explain" title="Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood">Any acacia logs</span>
-| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_trapoor_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_trapoor_from_stonecutting_acacia_logs}}</small>
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Trapdoor,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

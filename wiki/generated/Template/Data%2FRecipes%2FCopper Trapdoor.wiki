@@ -3,10 +3,10 @@
 |-
 | [[Copper Trapdoor]]
 | [[Block of Copper]]
-| {{Stonecutter|Input=Block of Copper|Output=Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/copper_trapdoor_from_stonecutting_copper_block.json|matcha:stonecutting/copper_trapdoor_from_stonecutting_copper_block}}</small>
+| {{Stonecutter|Input=Block of Copper|Output=Copper Trapdoor,9}}
 |-
 | [[Copper Trapdoor]]
 | [[Copper Ingot]]
-| {{Stonecutter|Input=Copper Ingot|Output=Copper Trapdoor}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/copper_trapdoor_from_stonecutting_copper_ingot.json|matcha:stonecutting/copper_trapdoor_from_stonecutting_copper_ingot}}</small>
+| {{Stonecutter|Input=Copper Ingot|Output=Copper Trapdoor}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

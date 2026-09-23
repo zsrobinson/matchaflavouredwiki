@@ -4,7 +4,7 @@
 |-
 | [[Mangrove Planks]]
 | 2 × [[Mangrove Slab]]
-| {{Crafting|A1=Mangrove Slab|B1=Mangrove Slab|Output=Mangrove Planks|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/mangrove_planks_from_mangrove_slabs.json|matcha:crafting/mangrove_planks_from_mangrove_slabs}}</small>
+| {{Crafting|A1=Mangrove Slab|B1=Mangrove Slab|Output=Mangrove Planks|shapeless=1}}
 |-
 | [[Mangrove Planks]] <small>(vanilla recipe)</small>
 | <span class="explain" title="Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood">Any mangrove logs</span>
@@ -16,10 +16,10 @@
 |-
 | [[Mangrove Planks]]
 | <span class="explain" title="Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood">Any mangrove logs</span>
-| {{Stonecutter|Input=Any Mangrove Logs|Output=Mangrove Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/mangrove_planks_from_stonecutting_mangrove_logs.json|matcha:stonecutting/mangrove_planks_from_stonecutting_mangrove_logs}}</small>
+| {{Stonecutter|Input=Any Mangrove Logs|Output=Mangrove Planks,4}}
 |-
 | [[Mangrove Planks]]
 | [[Mangrove Stairs]]
-| {{Stonecutter|Input=Mangrove Stairs|Output=Mangrove Planks}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/mangrove_planks_from_stonecutting_mangrove_stairs.json|matcha:stonecutting/mangrove_planks_from_stonecutting_mangrove_stairs}}</small>
+| {{Stonecutter|Input=Mangrove Stairs|Output=Mangrove Planks}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

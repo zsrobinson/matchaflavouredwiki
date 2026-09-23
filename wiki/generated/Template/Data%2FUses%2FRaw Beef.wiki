@@ -3,18 +3,18 @@
 |-
 | [[Steak]]
 | [[Raw Beef]]
-| {{Cooking|station=Kindling|Input=Raw Beef|Output=Steak|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_beef.json|matcha:food/campfire/cooked_beef}}</small>
+| {{Cooking|station=Kindling|Input=Raw Beef|Output=Steak|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Curry Stock]]
 | [[Estus Ash]] +<br />[[Sugar]] +<br />[[Flour]] +<br />[[Oil]] +<br />[[Potato]] +<br />[[Raw Beef]] or [[Raw Mutton]] or [[Raw Flesh]] or [[Seitan]] +<br />[[Carrot]] +<br />[[Bowl]]
-| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Flour|A2=Oil|B2=Potato|C2=Raw Beef;Raw Mutton;Raw Flesh;Seitan|A3=Carrot|B3=Bowl|Output=Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_curry.json|matcha:food/crafting/uncooked_curry}}</small>
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Flour|A2=Oil|B2=Potato|C2=Raw Beef;Raw Mutton;Raw Flesh;Seitan|A3=Carrot|B3=Bowl|Output=Curry Stock|shapeless=1}}
 |-
 | [[Charred Meat]]
 | [[Raw Flesh]] or [[Raw Chicken]] or [[Raw Beef]] or [[Raw Porkchop]] or [[Raw Mutton]]
-| {{Cooking|station=Mud Kiln|Input=Raw Flesh;Raw Chicken;Raw Beef;Raw Porkchop;Raw Mutton|Output=Charred Meat|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json|matcha:food/kiln/charred_meat}}</small>
+| {{Cooking|station=Mud Kiln|Input=Raw Flesh;Raw Chicken;Raw Beef;Raw Porkchop;Raw Mutton|Output=Charred Meat|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Steak]]
 | [[Raw Beef]]
-| {{Cooking|station=Oven|Input=Raw Beef|Output=Steak|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_beef.json|matcha:food/oven/cooked_beef}}</small>
+| {{Cooking|station=Oven|Input=Raw Beef|Output=Steak|time=5|note=5 s, 0.35 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

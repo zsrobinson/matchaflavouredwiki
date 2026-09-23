@@ -12,14 +12,14 @@
 |-
 | [[Crimson Slab]]
 | [[Crimson Planks]]
-| {{Stonecutter|Input=Crimson Planks|Output=Crimson Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_slab_from_stonecutting_crimson_planks.json|matcha:stonecutting/crimson_slab_from_stonecutting_crimson_planks}}</small>
+| {{Stonecutter|Input=Crimson Planks|Output=Crimson Slab,2}}
 |-
 | [[Crimson Slab]]
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>
-| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_slab_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_slab_from_stonecutting_crimson_stem}}</small>
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Slab,8}}
 |-
 | [[Crimson Slab]]
 | [[Crimson Trapdoor]]
-| {{Stonecutter|Input=Crimson Trapdoor|Output=Crimson Slab}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_slab_from_stonecutting_crimson_trapdoor.json|matcha:stonecutting/crimson_slab_from_stonecutting_crimson_trapdoor}}</small>
+| {{Stonecutter|Input=Crimson Trapdoor|Output=Crimson Slab}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

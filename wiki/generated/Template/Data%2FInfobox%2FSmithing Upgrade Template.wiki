@@ -1,0 +1,18 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Smithing Upgrade Template}}
+|image={{#if:{{{image|}}}|{{{image}}}|Smithing Upgrade Template.png}}
+|imagesize=160px
+|invimage=Smithing Upgrade Template
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|vanilla={{MCW|Netherite Upgrade Smithing Template}}
+|rarity=Uncommon
+|stackable=Yes (64)
+|id=<code>minecraft:netherite_upgrade_smithing_template</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/smithing_template.json|smithing_template.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

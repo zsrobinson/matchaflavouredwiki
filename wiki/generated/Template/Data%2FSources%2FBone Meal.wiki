@@ -5,34 +5,34 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Trial chambers / supply <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/supply.json|chests/trial_chambers/supply}})</small> || 2–5 || 27.2% || 
+| Trial chambers / supply || 2–5 || 27.2% || 
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Cod <small>({{Source|vanilla:loot_table/entities/cod.json|entities/cod}})</small> || 1 || 5.00% || 
+| Cod || 1 || 5.00% || 
 |-
-| Pufferfish <small>({{Source|vanilla:loot_table/entities/pufferfish.json|entities/pufferfish}})</small> || 1 || 5.00% || 
+| Pufferfish || 1 || 5.00% || 
 |-
-| Salmon <small>({{Source|vanilla:loot_table/entities/salmon.json|entities/salmon}})</small> || 1 || 5.00% || 
+| Salmon || 1 || 5.00% || 
 |-
-| Tropical fish <small>({{Source|vanilla:loot_table/entities/tropical_fish.json|entities/tropical_fish}})</small> || 1 || 5.00% || 
+| Tropical fish || 1 || 5.00% || 
 |}
 
 '''Archaeology'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Abbey / grave <small>({{Source|MF_datapack/data/minecraft/loot_table/archaeology/abbey/grave.json|archaeology/abbey/grave}})</small> || 1 || 23.5% || 
+| Abbey / grave || 1 || 23.5% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Composter <small>({{Source|vanilla:loot_table/blocks/composter.json|blocks/composter}})</small> || 1 || 100% || block state property
+| Composter || 1 || 100% || block state property
 |}
 
 '''Trading'''

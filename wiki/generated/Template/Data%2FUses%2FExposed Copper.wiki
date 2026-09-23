@@ -3,35 +3,35 @@
 |-
 | [[Exposed Copper Bulb]]
 | 3 × [[Exposed Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Exposed Copper|B1=Exposed Copper|B2=Electric Inverter|B3=Electric Wire|C2=Exposed Copper|Output=Exposed Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_bulb.json|matcha:crafting/exposed_copper_bulb}}</small>
+| {{Crafting|A2=Exposed Copper|B1=Exposed Copper|B2=Electric Inverter|B3=Electric Wire|C2=Exposed Copper|Output=Exposed Copper Bulb,4}}
 |-
 | [[Weathered Copper]]
 | [[Exposed Copper]] +<br />[[Potion]]
-| {{Crafting|A1=Exposed Copper|B1=Potion|Output=Weathered Copper|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/weathered_copper_from_patina.json|matcha:crafting/weathered_copper_from_patina}}</small>
+| {{Crafting|A1=Exposed Copper|B1=Potion|Output=Weathered Copper|shapeless=1}}
 |-
 | [[Exposed Copper Bars]]
 | [[Exposed Copper]]
-| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Bars,36}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_bars_from_stonecutting_exposed_copper.json|matcha:stonecutting/exposed_copper_bars_from_stonecutting_exposed_copper}}</small>
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Bars,36}}
 |-
 | [[Exposed Copper Chain]]
 | [[Exposed Copper]]
-| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_chain_from_stonecutting_exposed_copper.json|matcha:stonecutting/exposed_copper_chain_from_stonecutting_exposed_copper}}</small>
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Chain,54}}
 |-
 | [[Exposed Copper Door]]
 | [[Exposed Copper]]
-| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_door_from_stonecutting_exposed_copper_block.json|matcha:stonecutting/exposed_copper_door_from_stonecutting_exposed_copper_block}}</small>
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Door,6}}
 |-
 | [[Exposed Copper Trapdoor]]
 | [[Exposed Copper]]
-| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper.json|matcha:stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper}}</small>
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Trapdoor,9}}
 |-
 | [[Exposed Copper Trapdoor]]
 | [[Exposed Copper]]
-| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper_block.json|matcha:stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper_block}}</small>
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Trapdoor,9}}
 |-
 | [[Exposed Lightning Rod]]
 | [[Exposed Copper]]
-| {{Stonecutter|Input=Exposed Copper|Output=Exposed Lightning Rod,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_lightning_rod_from_stonecutting_exposed_copper.json|matcha:stonecutting/exposed_lightning_rod_from_stonecutting_exposed_copper}}</small>
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Lightning Rod,4}}
 |-
 | [[Exposed Chiseled Copper]] <small>(vanilla recipe)</small>
 | [[Exposed Copper]]

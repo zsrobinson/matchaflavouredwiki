@@ -3,15 +3,15 @@
 |-
 | [[Cracked Stone Bricks]]
 | [[Stone Bricks]]
-| {{Cooking|station=Blast Furnace|Input=Stone Bricks|Output=Cracked Stone Bricks|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/cracked_stone_bricks.json|matcha:blast/cracked_stone_bricks}}</small>
+| {{Cooking|station=Blast Furnace|Input=Stone Bricks|Output=Cracked Stone Bricks|time=5|note=5 s, 0.1 XP}}
 |-
 | [[Copper Eye]]
 | 4 × [[Stone Bricks]] +<br />4 × [[Copper Ingot]] +<br />[[Electric Wire]]
-| {{Crafting|A1=Stone Bricks|A2=Copper Ingot|A3=Stone Bricks|B1=Copper Ingot|B2=Electric Wire|B3=Copper Ingot|C1=Stone Bricks|C2=Copper Ingot|C3=Stone Bricks|Output=Copper Eye,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/target.json|matcha:crafting/target}}</small>
+| {{Crafting|A1=Stone Bricks|A2=Copper Ingot|A3=Stone Bricks|B1=Copper Ingot|B2=Electric Wire|B3=Copper Ingot|C1=Stone Bricks|C2=Copper Ingot|C3=Stone Bricks|Output=Copper Eye,4}}
 |-
 | [[Limestone]]
 | [[Cobblestone]] or [[Stone Bricks]]
-| {{Cooking|station=Mud Kiln|Input=Cobblestone;Stone Bricks|Output=Limestone|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/stone.json|matcha:kiln/stone}}</small>
+| {{Cooking|station=Mud Kiln|Input=Cobblestone;Stone Bricks|Output=Limestone|time=5|note=5 s, 0.1 XP}}
 |-
 | [[Chiseled Stone Bricks]] <small>(vanilla recipe)</small>
 | [[Stone Bricks]]

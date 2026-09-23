@@ -5,8 +5,8 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Mangrove propagule <small>({{Source|vanilla:loot_table/blocks/mangrove_propagule.json|blocks/mangrove_propagule}})</small> || 1 || 100% || block state property
+| Mangrove propagule || 1 || 100% || block state property
 |-
-| Potted mangrove propagule <small>({{Source|vanilla:loot_table/blocks/potted_mangrove_propagule.json|blocks/potted_mangrove_propagule}})</small> || 1 || 100% || 
+| Potted mangrove propagule || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

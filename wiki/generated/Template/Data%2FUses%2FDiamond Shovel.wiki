@@ -3,14 +3,14 @@
 |-
 | [[Diamond]]
 | [[Diamond Pickaxe]] or [[Diamond Shovel]] or [[Diamond Axe]] or [[Diamond Hoe]] or [[Diamond Sword]] or [[Diamond Spear]] or [[Diamond Helmet]] or [[Diamond Chestplate]] or [[Diamond Leggings]] or [[Diamond Boots]] or [[Diamond Horse Armor]] or [[Diamond Nautilus Armor]] or [[Raw Diamond]]
-| {{Cooking|station=Blast Furnace|Input=Diamond Pickaxe;Diamond Shovel;Diamond Axe;Diamond Hoe;Diamond Sword;Diamond Spear;Diamond Helmet;Diamond Chestplate;Diamond Leggings;Diamond Boots;Diamond Horse Armor;Diamond Nautilus Armor;Raw Diamond|Output=Diamond|time=5|note=5 s, 0.2 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/diamond_from_blasting_diamond_materials.json|matcha:blast/diamond_from_blasting_diamond_materials}}</small>
+| {{Cooking|station=Blast Furnace|Input=Diamond Pickaxe;Diamond Shovel;Diamond Axe;Diamond Hoe;Diamond Sword;Diamond Spear;Diamond Helmet;Diamond Chestplate;Diamond Leggings;Diamond Boots;Diamond Horse Armor;Diamond Nautilus Armor;Raw Diamond|Output=Diamond|time=5|note=5 s, 0.2 XP}}
 |-
 | [[Adamant Shovel]]
 | [[Diamond Shovel]] +<br />[[Adamant Alloy]]
-| {{Smithing|Template=|Base=Diamond Shovel|Addition=Adamant Alloy|Output=Adamant Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_shovel.json|matcha:smithing/adamant_shovel}}</small>
+| {{Smithing|Template=|Base=Diamond Shovel|Addition=Adamant Alloy|Output=Adamant Shovel}}
 |-
 | [[Electrum Shovel]]
 | [[Diamond Shovel]] +<br />[[Electrum Alloy]]
-| {{Smithing|Template=|Base=Diamond Shovel|Addition=Electrum Alloy|Output=Electrum Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/electrum_shovel.json|matcha:smithing/electrum_shovel}}</small>
+| {{Smithing|Template=|Base=Diamond Shovel|Addition=Electrum Alloy|Output=Electrum Shovel}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Flower Charge Banner Pattern}}
+|image={{#if:{{{image|}}}|{{{image}}}|Flower Charge Banner Pattern.png}}
+|imagesize=160px
+|invimage=Flower Charge Banner Pattern
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|id=<code>minecraft:flower_banner_pattern</code>
+|source={{Source|vanilla:recipe/flower_banner_pattern.json|flower_banner_pattern.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

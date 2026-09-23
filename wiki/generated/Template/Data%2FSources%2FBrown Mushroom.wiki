@@ -5,35 +5,35 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bastion hoglin stable <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_hoglin_stable.json|chests/bastion_hoglin_stable}})</small> || 8–17 || 15.6% || 
+| Bastion hoglin stable || 8–17 || 15.6% || 
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/bogged.json|entities/bogged}})</small> || 0–1 || 25.0% || player kill
+| Bogged || 0–1 || 25.0% || player kill
 |-
-| Witch <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json|entities/witch}})</small> || 0–2 || 44.5% || player kill
+| Witch || 0–2 || 44.5% || player kill
 |}
 
 '''Shearing'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/shearing/bogged.json|shearing/bogged}})</small> || 1 || 75.0% || 
+| Bogged || 1 || 75.0% || 
 |-
-| Mooshroom <small>({{Source|vanilla:loot_table/shearing/mooshroom.json|shearing/mooshroom}})</small> || 1 || 100% || entity condition
+| Mooshroom || 1 || 100% || entity condition
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Brown mushroom <small>({{Source|vanilla:loot_table/blocks/brown_mushroom.json|blocks/brown_mushroom}})</small> || 1 || 100% || 
+| Brown mushroom || 1 || 100% || 
 |-
-| Brown mushroom block <small>({{Source|vanilla:loot_table/blocks/brown_mushroom_block.json|blocks/brown_mushroom_block}})</small> || -6–2 || 22.2% || without Silk Touch
+| Brown mushroom block || -6–2 || 22.2% || without Silk Touch
 |-
-| Potted brown mushroom <small>({{Source|vanilla:loot_table/blocks/potted_brown_mushroom.json|blocks/potted_brown_mushroom}})</small> || 1 || 100% || 
+| Potted brown mushroom || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

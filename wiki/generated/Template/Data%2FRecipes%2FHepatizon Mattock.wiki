@@ -2,7 +2,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Hepatizon Mattock]]
-| [[Smithing Template]] +<br />[[Copper Hoe]] +<br />[[Hepatizon Alloy]]
-| {{Smithing|Template=Smithing Template|Base=Copper Hoe|Addition=Hepatizon Alloy|Output=Hepatizon Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_mattock.json|matcha:smithing/hepatizon_mattock}}</small>
+| [[Smithing Upgrade Template]] +<br />[[Copper Hoe]] +<br />[[Hepatizon Alloy]]
+| {{Smithing|Template=Smithing Upgrade Template|Base=Copper Hoe|Addition=Hepatizon Alloy|Output=Hepatizon Mattock}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

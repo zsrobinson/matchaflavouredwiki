@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Thing Banner Pattern}}
+|image={{#if:{{{image|}}}|{{{image}}}|Thing Banner Pattern.png}}
+|imagesize=160px
+|invimage=Thing Banner Pattern
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Rare
+|stackable=No
+|id=<code>minecraft:mojang_banner_pattern</code>
+|source={{Source|vanilla:recipe/mojang_banner_pattern.json|mojang_banner_pattern.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

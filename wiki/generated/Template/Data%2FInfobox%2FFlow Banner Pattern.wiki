@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Flow Banner Pattern}}
+|image={{#if:{{{image|}}}|{{{image}}}|Flow Banner Pattern.png}}
+|imagesize=160px
+|invimage=Flow Banner Pattern
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Rare
+|stackable=No
+|id=<code>minecraft:flow_banner_pattern</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_rare.json|reward_rare.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

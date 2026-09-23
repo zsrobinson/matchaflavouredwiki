@@ -4,7 +4,7 @@
 |-
 | [[Limestone]]
 | 2 × [[Stone Slab]]
-| {{Crafting|A1=Stone Slab|B1=Stone Slab|Output=Limestone|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/stone_from_stone_slabs.json|matcha:crafting/stone_from_stone_slabs}}</small>
+| {{Crafting|A1=Stone Slab|B1=Stone Slab|Output=Limestone|shapeless=1}}
 |}
 '''Cooking'''
 {| class="wikitable recipe-table"
@@ -12,7 +12,7 @@
 |-
 | [[Limestone]]
 | [[Cobblestone]] or [[Stone Bricks]]
-| {{Cooking|station=Mud Kiln|Input=Cobblestone;Stone Bricks|Output=Limestone|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/stone.json|matcha:kiln/stone}}</small>
+| {{Cooking|station=Mud Kiln|Input=Cobblestone;Stone Bricks|Output=Limestone|time=5|note=5 s, 0.1 XP}}
 |}
 '''Blasting'''
 {| class="wikitable recipe-table"
@@ -20,6 +20,6 @@
 |-
 | [[Limestone]]
 | [[Smooth Stone]] or [[Cracked Stone Bricks]]
-| {{Cooking|station=Blast Furnace|Input=Smooth Stone;Cracked Stone Bricks|Output=Limestone|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/stone_from_blasting_smooth_stone.json|matcha:blast/stone_from_blasting_smooth_stone}}</small>
+| {{Cooking|station=Blast Furnace|Input=Smooth Stone;Cracked Stone Bricks|Output=Limestone|time=5|note=5 s, 0.1 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

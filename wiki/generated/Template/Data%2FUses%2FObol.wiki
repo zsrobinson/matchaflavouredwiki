@@ -3,11 +3,11 @@
 |-
 | [[Prayer of St. Clement]]
 | 2 × [[Obol]] +<br />[[Leather Boots]] +<br />2 × <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span> +<br />[[Hell-Bound Book]]
-| {{Crafting|A1=Obol|A2=Any Wool|B1=Leather Boots|B2=Hell-Bound Book|C1=Obol|C2=Any Wool|Output=Prayer of St. Clement}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/traversal.json|matcha:blessing/traversal}}</small>
+| {{Crafting|A1=Obol|A2=Any Wool|B1=Leather Boots|B2=Hell-Bound Book|C1=Obol|C2=Any Wool|Output=Prayer of St. Clement}}
 |-
 | [[Beacon Kindling]]
 | [[Obol]] +<br />[[Kindling]] +<br />[[Hay Bale]]
-| {{Crafting|B1=Obol|B2=Kindling|B3=Hay Bale|Output=Beacon Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/beacon_kindling.json|matcha:crafting/beacon_kindling}}</small>
+| {{Crafting|B1=Obol|B2=Kindling|B3=Hay Bale|Output=Beacon Kindling}}
 |-
 | [[Block of Obol]] <small>(vanilla recipe)</small>
 | 9 × [[Obol]]
@@ -50,17 +50,17 @@
 |-
 | [[Engineer]] || Master || {{Trade|Obol||Geothermal Bundle}} || {{ItemLink|Obol}} || {{ItemLink|Geothermal Bundle}}
 |-
-| [[Cook]] || Novice || {{Trade|Obol||Cooking Recipe}} || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}}
+| [[Cook]] || Novice || {{Trade|Obol||Cooking Recipe}} || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe|Cooking Recipe (Sweet Berry Toast)}}
 |-
 | [[Cook]] || Novice || {{Trade|Obol||Sweet Berry Toast,8}} || {{ItemLink|Obol}} || 8 × {{ItemLink|Sweet Berry Toast}}
 |-
 | [[Cook]] || Apprentice || {{Trade|Obol||Warped Stroganoff,4}} || {{ItemLink|Obol}} || 4 × {{ItemLink|Warped Stroganoff}}
 |-
-| [[Cook]] || Apprentice || {{Trade|Obol||Cooking Recipe}} || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}}
+| [[Cook]] || Apprentice || {{Trade|Obol||Cooking Recipe}} || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe|Cooking Recipe (Warped Stroganoff)}}
 |-
 | [[Cook]] || Journeyman || {{Trade|Obol||Chorus Mochi,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Chorus Mochi}}
 |-
-| [[Cook]] || Journeyman || {{Trade|Obol||Cooking Recipe}} || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe}}
+| [[Cook]] || Journeyman || {{Trade|Obol||Cooking Recipe}} || {{ItemLink|Obol}} || {{ItemLink|Cooking Recipe|Cooking Recipe (Chorus Mochi)}}
 |-
 | [[Cook]] || Expert || {{Trade|Obol||Cleaver}} || {{ItemLink|Obol}} || {{ItemLink|Cleaver}}<br /><small>[[Slaughter]], [[Looting]] II</small>
 |-

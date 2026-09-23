@@ -3,31 +3,31 @@
 |-
 | [[Waxed Copper Bulb]]
 | 3 × [[Waxed Block of Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
-| {{Crafting|A2=Waxed Block of Copper|B1=Waxed Block of Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Block of Copper|Output=Waxed Copper Bulb,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/waxed_copper_bulb.json|matcha:crafting/waxed_copper_bulb}}</small>
+| {{Crafting|A2=Waxed Block of Copper|B1=Waxed Block of Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Block of Copper|Output=Waxed Copper Bulb,4}}
 |-
 | [[Waxed Copper Bars]]
 | [[Waxed Block of Copper]]
-| {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Bars,36}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_copper_bars_from_stonecutting_waxed_copper_block.json|matcha:stonecutting/waxed_copper_bars_from_stonecutting_waxed_copper_block}}</small>
+| {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Bars,36}}
 |-
 | [[Waxed Copper Chain]]
 | [[Waxed Block of Copper]]
-| {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_copper_chain_from_stonecutting_waxed_copper_block.json|matcha:stonecutting/waxed_copper_chain_from_stonecutting_waxed_copper_block}}</small>
+| {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Chain,54}}
 |-
 | [[Waxed Copper Door]]
 | [[Waxed Block of Copper]]
-| {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_copper_door_from_stonecutting_waxed_copper_block.json|matcha:stonecutting/waxed_copper_door_from_stonecutting_waxed_copper_block}}</small>
+| {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Door,6}}
 |-
 | [[Waxed Copper Trapdoor]]
 | [[Waxed Block of Copper]]
-| {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_copper_trapdoor_from_stonecutting_waxed_copper_block.json|matcha:stonecutting/waxed_copper_trapdoor_from_stonecutting_waxed_copper_block}}</small>
+| {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Trapdoor,9}}
 |-
 | [[Waxed Lightning Rod]]
 | [[Waxed Block of Copper]]
-| {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Lightning Rod,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/waxed_lightning_rod_from_stonecutting_waxed_copper_block.json|matcha:stonecutting/waxed_lightning_rod_from_stonecutting_waxed_copper_block}}</small>
+| {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Lightning Rod,4}}
 |-
-| [[Smithing Template]] <small>(vanilla recipe)</small>
-| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Block of Copper]] or [[Waxed Block of Copper]]
-| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Block of Copper;Waxed Block of Copper|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+| [[Bolt Armor Trim Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Bolt Armor Trim Smithing Template]] +<br />[[Block of Copper]] or [[Waxed Block of Copper]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Bolt Armor Trim Smithing Template|B2=Block of Copper;Waxed Block of Copper|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Bolt Armor Trim Smithing Template,2}}
 |-
 | [[Copper Ingot]] <small>(vanilla recipe)</small>
 | [[Waxed Block of Copper]]

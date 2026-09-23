@@ -3,19 +3,19 @@
 |-
 | [[Prayer of St. Clement]]
 | 2 × [[Obol]] +<br />[[Leather Boots]] +<br />2 × <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span> +<br />[[Hell-Bound Book]]
-| {{Crafting|A1=Obol|A2=Any Wool|B1=Leather Boots|B2=Hell-Bound Book|C1=Obol|C2=Any Wool|Output=Prayer of St. Clement}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/traversal.json|matcha:blessing/traversal}}</small>
+| {{Crafting|A1=Obol|A2=Any Wool|B1=Leather Boots|B2=Hell-Bound Book|C1=Obol|C2=Any Wool|Output=Prayer of St. Clement}}
 |-
 | [[String]]
 | <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
-| {{Crafting|A1=Any Wool|Output=String,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/string_from_wool.json|matcha:crafting/string_from_wool}}</small>
+| {{Crafting|A1=Any Wool|Output=String,4|shapeless=1}}
 |-
 | [[White Banner]]
 | 6 × [[White Wool]] +<br />[[Stick]]
-| {{Crafting|A1=White Wool|A2=White Wool|B1=White Wool|B2=White Wool|B3=Stick|C1=White Wool|C2=White Wool|Output=White Banner,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/white_banner.json|matcha:crafting/white_banner}}</small>
+| {{Crafting|A1=White Wool|A2=White Wool|B1=White Wool|B2=White Wool|B3=Stick|C1=White Wool|C2=White Wool|Output=White Banner,6}}
 |-
 | [[White Carpet]]
 | 2 × [[White Wool]]
-| {{Crafting|A1=White Wool|B1=White Wool|Output=White Carpet,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/white_carpet.json|matcha:crafting/white_carpet}}</small>
+| {{Crafting|A1=White Wool|B1=White Wool|Output=White Carpet,8}}
 |-
 | [[Black Wool]] <small>(vanilla recipe)</small>
 | [[Black Dye]] +<br />[[White Wool]] or [[Orange Wool]] or [[Magenta Wool]] or [[Light Blue Wool]] or [[Yellow Wool]] or [[Lime Wool]] or [[Pink Wool]] or [[Gray Wool]] or [[Light Gray Wool]] or [[Cyan Wool]] or [[Purple Wool]] or [[Blue Wool]] or [[Brown Wool]] or [[Green Wool]] or [[Red Wool]]

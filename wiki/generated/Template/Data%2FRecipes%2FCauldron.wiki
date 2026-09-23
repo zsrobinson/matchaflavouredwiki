@@ -4,11 +4,11 @@
 |-
 | [[Cauldron]]
 | 7 × [[Iron Ingot]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Cauldron,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cauldron_from_iron.json|matcha:crafting/cauldron_from_iron}}</small>
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Cauldron,2}}
 |-
 | [[Cauldron]]
 | 7 × [[Steel Alloy]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B3=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Cauldron,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cauldron_from_steel.json|matcha:crafting/cauldron_from_steel}}</small>
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B3=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Cauldron,4}}
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
@@ -16,10 +16,10 @@
 |-
 | [[Cauldron]]
 | [[Block of Iron]]
-| {{Stonecutter|Input=Block of Iron|Output=Cauldron,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_cauldron_from_stonecutting_iron_block.json|matcha:stonecutting/iron_cauldron_from_stonecutting_iron_block}}</small>
+| {{Stonecutter|Input=Block of Iron|Output=Cauldron,2}}
 |-
 | [[Cauldron]]
 | [[Steel Alloy]]
-| {{Stonecutter|Input=Steel Alloy|Output=Cauldron}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_cauldron_from_stonecutting_steel.json|matcha:stonecutting/iron_cauldron_from_stonecutting_steel}}</small>
+| {{Stonecutter|Input=Steel Alloy|Output=Cauldron}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

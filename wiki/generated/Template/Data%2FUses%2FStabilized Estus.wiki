@@ -3,14 +3,14 @@
 |-
 | [[Hell-Bound Book]]
 | [[Benzene]] +<br />[[Stabilized Estus]] +<br />[[Book]]
-| {{Crafting|A1=Benzene|A2=Stabilized Estus|A3=Book|Output=Hell-Bound Book}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/hell_bound_book.json|matcha:blessing/hell_bound_book}}</small>
+| {{Crafting|A1=Benzene|A2=Stabilized Estus|A3=Book|Output=Hell-Bound Book}}
 |-
 | [[Eye of Ender]]
 | [[Stabilized Estus]] +<br />[[Divine Fragment]]
-| {{Crafting|A1=Stabilized Estus|B1=Divine Fragment|Output=Eye of Ender,16|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ender_eye.json|matcha:crafting/ender_eye}}</small>
+| {{Crafting|A1=Stabilized Estus|B1=Divine Fragment|Output=Eye of Ender,16|shapeless=1}}
 |-
 | [[Warding Stone]]
 | 4 × [[Chiseled Stone Bricks]] +<br />4 × [[Nazar]] +<br />[[Stabilized Estus]]
-| {{Crafting|A1=Chiseled Stone Bricks|A2=Nazar|A3=Chiseled Stone Bricks|B1=Nazar|B2=Stabilized Estus|B3=Nazar|C1=Chiseled Stone Bricks|C2=Nazar|C3=Chiseled Stone Bricks|Output=Warding Stone}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/warding_stone.json|matcha:crafting/warding_stone}}</small>
+| {{Crafting|A1=Chiseled Stone Bricks|A2=Nazar|A3=Chiseled Stone Bricks|B1=Nazar|B2=Stabilized Estus|B3=Nazar|C1=Chiseled Stone Bricks|C2=Nazar|C3=Chiseled Stone Bricks|Output=Warding Stone}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

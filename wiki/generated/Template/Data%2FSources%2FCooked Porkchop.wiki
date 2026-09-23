@@ -5,13 +5,13 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bastion hoglin stable <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_hoglin_stable.json|chests/bastion_hoglin_stable}})</small> || 2–5 || 24.4% || 
+| Bastion hoglin stable || 2–5 || 24.4% || 
 |}
 
 '''Gameplay'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Hero of the village / butcher gift <small>({{Source|vanilla:loot_table/gameplay/hero_of_the_village/butcher_gift.json|gameplay/hero_of_the_village/butcher_gift}})</small> || 1 || 20.0% || 
+| Hero of the village / butcher gift || 1 || 20.0% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

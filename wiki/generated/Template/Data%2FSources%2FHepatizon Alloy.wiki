@@ -5,14 +5,14 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Phantom <small>({{Source|vanilla:loot_table/entities/phantom.json|entities/phantom}})</small> || 0–1 || 50.0% || player kill
+| Phantom || 0–1 || 50.0% || player kill
 |}
 
 '''Archaeology'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Trail ruins rare <small>({{Source|MF_datapack/data/minecraft/loot_table/archaeology/trail_ruins_rare.json|archaeology/trail_ruins_rare}})</small> || 1 || 6.67% || 
+| Trail ruins rare || 1 || 6.67% || 
 |}
 
 '''Trading'''

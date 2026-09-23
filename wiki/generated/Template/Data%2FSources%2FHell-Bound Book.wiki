@@ -1,10 +1,57 @@
 <includeonly>
 <div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
+'''Chest loot'''
+{| class="wikitable sortable loot-table"
+! Source !! Variant !! Stack size !! Chance !! Notes
+|-
+| Abandoned mineshaft || Hell-Bound Book (random enchantment) || 1 || 17.9% || 
+|-
+| Ancient city || Hell-Bound Book (Swift Sneak) || 1 || 48.1% || 
+|-
+| Ancient city || Hell-Bound Book (random enchantment) || 1 || 33.3% || 
+|-
+| Bastion other || Hell-Bound Book (Soul Speed) || 1 || 15.4% || 
+|-
+| Desert pyramid || Hell-Bound Book (random enchantment) || 1 || 30.6% || 
+|-
+| Jungle temple || Hell-Bound Book (random enchantment) || 1 || 7.10% || 
+|-
+| Simple dungeon || Hell-Bound Book (random enchantment) || 1 || 13.3% || 
+|-
+| Stronghold corridor || Hell-Bound Book (random enchantment) || 1 || 12.2% || 
+|-
+| Stronghold crossing || Hell-Bound Book (random enchantment) || 1 || 6.94% || 
+|-
+| Stronghold library || Hell-Bound Book (random enchantment) || 1 || 67.8% || 
+|-
+| Trial chambers / reward || Hell-Bound Book (random enchantment) || 1 || 14.5% || 
+|-
+| Trial chambers / reward ominous || Hell-Bound Book (random enchantment) || 1 || 10.5% || 
+|-
+| Underwater ruin big || Hell-Bound Book (random enchantment) || 1 || 21.7% || 
+|-
+| Woodland mansion || Hell-Bound Book (random enchantment) || 1 || 23.8% || 
+|}
+
+'''Fishing'''
+{| class="wikitable sortable loot-table"
+! Source !! Variant !! Stack size !! Chance !! Notes
+|-
+| Fishing || Hell-Bound Book (random enchantment) || 1 || 0.820% || open water
+|}
+
+'''Gameplay'''
+{| class="wikitable sortable loot-table"
+! Source !! Variant !! Stack size !! Chance !! Notes
+|-
+| Piglin bartering || Hell-Bound Book (Soul Speed) || 1 || 2.27% || 
+|}
+
 '''Block drops'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Enchanting table <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/enchanting_table.json|blocks/enchanting_table}})</small> || 1 || 100% || 
+| Enchanting table || Hell-Bound Book (no enchantments) || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -5,43 +5,43 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 68.5% || only in [[Fishing#Cold saltwater|cold saltwater biomes]]
+| Village / village fisher || 1 || 68.5% || only in [[Fishing#Cold saltwater|cold saltwater biomes]]
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 68.5% || only in [[Fishing#Cool saltwater|cool saltwater biomes]]
+| Village / village fisher || 1 || 68.5% || only in [[Fishing#Cool saltwater|cool saltwater biomes]]
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Cod <small>({{Source|vanilla:loot_table/entities/cod.json|entities/cod}})</small> || 1 || 100% || 
+| Cod || 1 || 100% || 
 |-
-| Dolphin <small>({{Source|vanilla:loot_table/entities/dolphin.json|entities/dolphin}})</small> || 0–1 || 50.0% || 
+| Dolphin || 0–1 || 50.0% || 
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 68.5% || only in [[Fishing#Cold saltwater|cold saltwater biomes]]
+| Elder guardian || 1 || 68.5% || only in [[Fishing#Cold saltwater|cold saltwater biomes]]
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 68.5% || only in [[Fishing#Cool saltwater|cool saltwater biomes]]
+| Elder guardian || 1 || 68.5% || only in [[Fishing#Cool saltwater|cool saltwater biomes]]
 |-
-| Guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/guardian.json|entities/guardian}})</small> || 1 || 66.7% || 
+| Guardian || 1 || 66.7% || 
 |-
-| Polar bear <small>({{Source|vanilla:loot_table/entities/polar_bear.json|entities/polar_bear}})</small> || 0–2 || 50.0% || 
+| Polar bear || 0–2 || 50.0% || 
 |}
 
 '''Fishing'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || only in [[Fishing#Cold saltwater|cold saltwater biomes]]
+| Fishing || 1 || 30.4% || only in [[Fishing#Cold saltwater|cold saltwater biomes]]
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 30.4% || only in [[Fishing#Cool saltwater|cool saltwater biomes]]
+| Fishing || 1 || 30.4% || only in [[Fishing#Cool saltwater|cool saltwater biomes]]
 |}
 
 '''Gameplay'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Cat morning gift <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/cat_morning_gift.json|gameplay/cat_morning_gift}})</small> || 1 || 20.0% || 
+| Cat morning gift || 1 || 20.0% || 
 |-
-| Hero of the village / fisherman gift <small>({{Source|vanilla:loot_table/gameplay/hero_of_the_village/fisherman_gift.json|gameplay/hero_of_the_village/fisherman_gift}})</small> || 1 || 50.0% || 
+| Hero of the village / fisherman gift || 1 || 50.0% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -5,32 +5,32 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 3.55% || 
+| Village / village fisher || 1 || 3.55% || 
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 99.4% || only in Sulfur Caves
+| Village / village fisher || 1 || 99.4% || only in Sulfur Caves
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 27.5% || only in [[Fishing#Other biomes|other biomes]]
+| Village / village fisher || 1 || 27.5% || only in [[Fishing#Other biomes|other biomes]]
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 3.55% || 
+| Elder guardian || 1 || 3.55% || 
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 99.4% || only in Sulfur Caves
+| Elder guardian || 1 || 99.4% || only in Sulfur Caves
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 27.5% || only in [[Fishing#Other biomes|other biomes]]
+| Elder guardian || 1 || 27.5% || only in [[Fishing#Other biomes|other biomes]]
 |}
 
 '''Fishing'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 1.14% || 
+| Fishing || 1 || 1.14% || 
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 77.3% || only in Sulfur Caves
+| Fishing || 1 || 77.3% || only in Sulfur Caves
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 9.66% || only in [[Fishing#Other biomes|other biomes]]
+| Fishing || 1 || 9.66% || only in [[Fishing#Other biomes|other biomes]]
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

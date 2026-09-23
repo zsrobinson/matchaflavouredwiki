@@ -12,7 +12,7 @@ Outputs (Template namespace unless noted):
   Data/Sources/<item>      loot tables (chests, mobs, fishing, ...) and trades that give it
   Data/Trades/<profession> full trade table per villager profession
   Data/Loot/<table>        drop table for each loot table the pack defines
-  Data/Food table, Data/Renamed items, Data/Enchantments, Data/Advancements/<tab>
+  Data/Food table, Data/Renamed items, Data/Trim templates, Data/Enchantments, Data/Advancements/<tab>
   Data/Current version, Source/commit
   Module:Inventory slot/Aliases   tag names ("Any Planks") for recipe slots
   Module:Tooltip/Data     each item's in-game tooltip (name colour, lore runs) and glyph widths
@@ -300,6 +300,8 @@ def item_link_list(ids_or_tag):
 def id_name(i):
     i = i if ':' in i else 'minecraft:' + i
     k = i.split(':')[-1]
+    if k in DATA['distinct_names']:
+        return DATA['distinct_names'][k]  # e.g. "Flow Armor Trim Smithing Template", not "Smithing Template"
     for key in ('item.minecraft.' + k, 'block.minecraft.' + k):
         if key in LANG:
             return re.sub('§.', '', LANG[key]).strip()
@@ -548,13 +550,11 @@ def recipe_table(recipes, first_col):
     rows = []
     for r in recipes:
         origin = '' if r['origin'] == 'pack' else ' <small>(vanilla recipe)</small>'
-        src = r['src'] if r['origin'] == 'pack' else None
-        cite = ('<br /><small>{{Source|%s|%s}}</small>' % (src, r['id'])) if src else ''
         first = first_col(r)
         if grids:
-            rows.append('|-\n| %s%s\n| %s\n| %s%s' % (first, origin, recipe_ingredients(r), recipe_ui(r), cite))
+            rows.append('|-\n| %s%s\n| %s\n| %s' % (first, origin, recipe_ingredients(r), recipe_ui(r)))
         else:
-            rows.append('|-\n| %s%s\n| %s%s' % (first, origin, recipe_ingredients(r), cite))
+            rows.append('|-\n| %s%s\n| %s' % (first, origin, recipe_ingredients(r)))
     collapsible = ' mw-collapsible' if len(recipes) > 12 else ''
     head = '{| class="wikitable recipe-table%s"\n! %s !! Ingredients%s' % (collapsible, 'Name', ' !! Recipe' if grids else '')
     return head + '\n' + '\n'.join(rows) + '\n|}'
@@ -599,6 +599,11 @@ for _n, _it in ITEMS.items():
                     USES[_n].append(r)
 
 
+def out_link(o):
+    """Link to a recipe's output, naming its variant where one item has several ("Cooking Recipe (Gnocchi)")."""
+    return '[[%s|%s]]' % (o['name'], esc(o['variant'])) if o.get('variant') else '[[%s]]' % o['name']
+
+
 def recipes_page(name):
     rs = producing(name)
     if not rs:
@@ -611,7 +616,7 @@ def recipes_page(name):
         if g in groups:
             if len(groups) > 1:
                 parts.append("'''%s'''" % g)
-            parts.append(recipe_table(groups[g], lambda r: '[[%s]]' % r['output']['name']))
+            parts.append(recipe_table(groups[g], lambda r: out_link(r['output'])))
     return '<includeonly>' + '\n'.join(parts) + '</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>'
 
 
@@ -743,7 +748,8 @@ def cond_notes(conds):
 
 
 def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
-    """Yield (item, per-roll prob of this entry in context, count range, notes, rolls) for a table."""
+    """Yield (item, per-roll prob of this entry in context, count range, notes, rolls, table, variant)
+    for a table. The variant labels a stack that a loot function makes distinct ("Arrow of Poison")."""
     t = LOOT.get(table_id)
     out = []
     if not t or depth > 6 or table_id in seen:
@@ -787,14 +793,14 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
                 if isinstance(sub, dict):
                     continue
                 override = count_range(e['count']) if e.get('count') is not None else None
-                for (it, p2, cnt, n2, r2, tid) in flatten(sub, 1.0, (), depth + 1, seen + (table_id,)):
+                for (it, p2, cnt, n2, r2, tid, var) in flatten(sub, 1.0, (), depth + 1, seen + (table_id,)):
                     # nested table: chance per roll of this entry times the nested chance (per nested roll)
                     if override:
                         cnt, p2 = override, p2 * positive_share(override)
-                    out.append((it, p * p2 * prob, cnt, n + n2, (rlo, rhi), table_id))
+                    out.append((it, p * p2 * prob, cnt, n + n2, (rlo, rhi), table_id, var))
             elif 'item' in e and e['item']:
                 cr = count_range(e.get('count'))
-                out.append((e['item'], p * prob * positive_share(cr), cr, n, (rlo, rhi), table_id))
+                out.append((e['item'], p * prob * positive_share(cr), cr, n, (rlo, rhi), table_id, e.get('variant')))
     return out
 
 
@@ -859,17 +865,17 @@ def loot_table_page(lid):
     if not rows:
         return None
     agg = {}
-    for it, p, cnt, notes, rolls, src in rows:
-        key = (it, cnt, tuple(notes))
+    for it, p, cnt, notes, rolls, src, var in rows:
+        key = (it, var, cnt, tuple(notes))
         if key in agg:
             agg[key][0] += p
         else:
             agg[key] = [p, rolls]
     lines = ['{| class="wikitable sortable loot-table"', '! Item !! Stack size !! Chance per roll !! Chance per table !! Notes']
-    for (it, cnt, notes), (p, rolls) in sorted(agg.items(), key=lambda kv: -kv[1][0]):
+    for (it, var, cnt, notes), (p, rolls) in sorted(agg.items(), key=lambda kv: -kv[1][0]):
         c = ('%s–%s' % (fmt_num(cnt[0]), fmt_num(cnt[1]))) if cnt[0] != cnt[1] else fmt_num(cnt[0])
         lines.append('|-\n| %s || %s || %s || %s || %s' % (
-            il(it), c, pct(p), pct(chance_at_least_one(p, rolls)), ', '.join(dict.fromkeys(notes))))
+            il(it, var), c, pct(p), pct(chance_at_least_one(p, rolls)), ', '.join(dict.fromkeys(notes))))
     lines.append('|}')
     t = LOOT[lid]
     rl = set()
@@ -888,7 +894,7 @@ for _lid, _t in LOOT.items():
         _sub = _e.get('loot_table')
         if isinstance(_sub, str) and _sub in LOOT and loot_category(_sub) == loot_category(_lid):
             REFERENCED.add(_sub)
-SOURCES = defaultdict(list)  # item -> [(category, label, lid, p, cnt, notes, rolls)]
+SOURCES = defaultdict(list)  # item -> [(category, label, lid, p, cnt, notes, rolls, variant)]
 ROLLED = {_e['loot_table'] for _t in LOOT.values() for _e in _t['entries'] if isinstance(_e.get('loot_table'), str)}
 for lid in LOOT:
     cat = loot_category(lid)
@@ -896,8 +902,8 @@ for lid in LOOT:
         continue  # sub-tables are counted through the table that rolls them
     if lid.startswith('minecraft:gameplay/fishing/') and lid not in ROLLED:
         continue  # vanilla fishing sub-table the pack's fishing table no longer rolls
-    for it, p, cnt, notes, rolls, src in flatten(lid):
-        SOURCES[it].append((cat, loot_label(lid), lid, p, cnt, notes, rolls))
+    for it, p, cnt, notes, rolls, src, var in flatten(lid):
+        SOURCES[it].append((cat, loot_label(lid), lid, p, cnt, notes, rolls, var))
 
 
 # ------------------------------------------------------------------ trades
@@ -916,7 +922,7 @@ def page_exists(name):
         for root, _, files in os.walk(os.path.join(HAND, 'Main')):
             PAGES_HERE.update(f[:-5].replace('%2F', '/') for f in files if f.endswith('.wiki'))
         for k, it in ITEMS.items():
-            if is_pack_relevant(k, it):
+            if is_pack_relevant(k, it) or group_redirect(k, vanilla=True):
                 PAGES_HERE.add(safe(k))
             if it['renamed_vanilla'] and it['vanilla_name'] != k:
                 PAGES_HERE.add(safe(it['vanilla_name']))
@@ -928,12 +934,14 @@ def PAGES_HERE_RESET():
     PAGES_HERE = None
 
 
-def il(name):
-    """{{ItemLink}} that falls back to minecraft.wiki for vanilla items without a page here."""
+def il(name, text=None):
+    """{{ItemLink}} that falls back to minecraft.wiki for vanilla items without a page here. The
+    text, if given, names a variant of the item ("Arrow of Poison" for a tipped arrow)."""
+    label = ('|%s' % esc(text)) if text and text != safe(name) else ''
     if page_exists(name):
-        return '{{ItemLink|%s}}' % safe(name)
+        return '{{ItemLink|%s%s}}' % (safe(name), label)
     it = ITEMS.get(name)
-    return '{{ItemLink|%s|mcw=%s}}' % (safe(name), (it or {}).get('vanilla_name') or name)
+    return '{{ItemLink|%s%s|mcw=%s}}' % (safe(name), label, (it or {}).get('vanilla_name') or name)
 
 
 def stack_cell(s):
@@ -942,7 +950,7 @@ def stack_cell(s):
     ench = ''
     if s.get('enchantments'):
         ench = '<br /><small>%s</small>' % ', '.join(intrinsic_text(e, l) for e, l in s['enchantments'].items())
-    return '%s%s%s' % ('%d × ' % s['count'] if s.get('count', 1) > 1 else '', il(s['name']), ench)
+    return '%s%s%s' % ('%d × ' % s['count'] if s.get('count', 1) > 1 else '', il(s['name'], s.get('variant')), ench)
 
 
 def trade_ui(t):
@@ -1013,17 +1021,21 @@ def sources_page(name):
             if cat not in by_cat:
                 continue
             parts.append("\n'''%s'''" % cat)
-            parts.append('{| class="wikitable sortable loot-table"\n! Source !! Stack size !! Chance !! Notes')
+            # a Variant column when loot functions make distinct items of this one (a tipped arrow's potion)
+            variants = any(s[7] for s in srcs)
+            parts.append('{| class="wikitable sortable loot-table"\n! Source%s !! Stack size !! Chance !! Notes' % (
+                ' !! Variant' if variants else ''))
             agg = {}
-            for _, label, lid, p, cnt, notes, rolls in by_cat[cat]:
-                k = (label, lid, cnt, tuple(notes))
+            for _, label, lid, p, cnt, notes, rolls, var in by_cat[cat]:
+                k = (label, lid, var or '', cnt, tuple(notes))
                 agg.setdefault(k, [0, rolls])
                 agg[k][0] += p
-            for (label, lid, cnt, notes), (p, rolls) in sorted(agg.items(), key=lambda kv: kv[0][0]):
+            plain = ITEMS.get(name, {}).get('name', name)  # the in-game name of a stack with no variant
+            for (label, lid, var, cnt, notes), (p, rolls) in sorted(agg.items(), key=lambda kv: (kv[0][0], kv[0][2])):
                 c = ('%s–%s' % (fmt_num(cnt[0]), fmt_num(cnt[1]))) if cnt[0] != cnt[1] else fmt_num(cnt[0])
-                parts.append('|-\n| %s <small>({{Source|%s|%s}})</small> || %s || %s || %s' % (
-                    label.capitalize(), LOOT[lid]['src'], lid.split(':')[-1], c, pct(chance_at_least_one(p, rolls)),
-                    ', '.join(dict.fromkeys(notes))))
+                parts.append('|-\n| %s%s || %s || %s || %s' % (
+                    label.capitalize(), (' || %s' % esc(var or plain)) if variants else '', c,
+                    pct(chance_at_least_one(p, rolls)), ', '.join(dict.fromkeys(notes))))
             parts.append('|}')
     tg = TRADE_GIVES.get(name, [])
     if tg:
@@ -1045,7 +1057,7 @@ def uses_page(name):
     parts = []
     rs = [r for r in USES.get(name, []) if r['output']['name'] != name or True]
     if rs:
-        parts.append(recipe_table(rs, lambda r: '[[%s]]' % r['output']['name']))
+        parts.append(recipe_table(rs, lambda r: out_link(r['output'])))
     tw = TRADE_WANTS.get(name, [])
     if tw:
         parts.append("\n'''Trading'''")
@@ -1075,6 +1087,27 @@ def food_table():
             safe(name), hp, '{{Hp|%d}}' % hp if hp else '—', '<br />'.join(effect_text(e) for e in others) or '—',
             fmt_num((c.get('consumable') or {}).get('consume_seconds', 1.6)), station))
     return ('<includeonly>{| class="wikitable sortable"\n! Food !! Heals !! Effects !! Eating time (s) !! Made with\n' +
+            '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+
+
+def trim_templates_table():
+    """The armor trim templates (all "Smithing Template" in-game), for the Trims article: where the
+    pack's loot gives each one and how it is duplicated."""
+    rows = []
+    for name in sorted(k for k in ITEMS if group_page(k) == 'Trims#Templates'):
+        icon = ('<span class="sprite-inline">[[File:%s.png|16px|link=|%s]]</span>&nbsp;' % (safe(name), safe(name))
+                if has_icon(name) else '')
+        found = {}
+        for cat, label, lid, p, cnt, notes, rolls, var in SOURCES.get(name, []):
+            found.setdefault(label, [0, rolls])
+            found[label][0] += p
+        where = ', '.join('%s (%s)' % (label.capitalize(), pct(chance_at_least_one(p, rolls)))
+                          for label, (p, rolls) in sorted(found.items())) or '—'
+        dup = '<br />'.join(' + '.join(x for x in recipe_ingredients(r).split(' +<br />') if x != '[[%s]]' % name) +
+                            (' <small>(pack recipe)</small>' if r['origin'] == 'pack' else '')
+                            for r in producing(name)) or '—'  # the template itself is the other ingredient
+        rows.append('|-\n| %s%s || %s || %s' % (icon, name, where, dup))
+    return ('<includeonly>{| class="wikitable sortable"\n! Template !! Found in (chance per chest or mob) !! Duplicated with\n' +
             '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
 
 
@@ -1191,6 +1224,21 @@ def group_page(name):
         return 'Bulk blocks'
     if name.startswith('Music Disc ('):
         return 'Music Disc'
+    if name.endswith(' Armor Trim Smithing Template'):
+        return 'Trims#Templates'  # all "Smithing Template" in-game; one table there (Data/Trim templates)
+    return None
+
+
+VANILLA_GROUPS = {'Trims'}  # families whose unchanged vanilla members redirect too (not just the pack's)
+
+
+def group_redirect(name, vanilla=False):
+    """Redirect text to the article that documents name's family, if that article exists."""
+    group = group_page(name)
+    if group and vanilla and group.split('#')[0] not in VANILLA_GROUPS:
+        return None
+    if group and hand_exists('Main', group.split('#')[0]):
+        return '#REDIRECT [[%s]]\n[[Category:Redirects to lists]]' % group
     return None
 
 
@@ -1406,9 +1454,8 @@ def main():
         if p:
             write('Template', 'Data/Sources/' + title, p); n['sources'] += 1
         if is_pack_relevant(name, item) and not hand_exists('Main', title):
-            group = group_page(name)
-            if group and hand_exists('Main', group):
-                write('Main', title, '#REDIRECT [[%s]]\n[[Category:Redirects to lists]]' % group); n['group redirects'] += 1
+            if group_redirect(name):
+                write('Main', title, group_redirect(name)); n['group redirects'] += 1
             else:
                 write('Main', title, stub_article(name, item)); n['stubs'] += 1
     # ingredients that only ever appear inside recipes (never as an item stack) still get a Uses table
@@ -1429,6 +1476,9 @@ def main():
     for name, item in ITEMS.items():
         title = safe(name)
         if not title or hand_exists('Main', title) or is_pack_relevant(name, item) or title.startswith(('item.', 'adv.')):
+            continue
+        if group_redirect(name, vanilla=True):
+            write('Main', title, group_redirect(name, vanilla=True)); n['group redirects'] += 1
             continue
         if not (producing(name) or USES.get(name) or SOURCES.get(name) or TRADE_GIVES.get(name) or TRADE_WANTS.get(name)):
             continue
@@ -1464,6 +1514,7 @@ def main():
                 write('Template', 'Data/Loot/' + lid.replace(':', '/'), p); n['loot'] += 1
     write('Template', 'Data/Food table', food_table())
     write('Template', 'Data/Renamed items', renamed_table())
+    write('Template', 'Data/Trim templates', trim_templates_table())
     write('Template', 'Data/Enchantments', enchantment_table())
     for tab, page in advancement_tables().items():
         write('Template', 'Data/Advancements/' + tab, page); n['advancement tabs'] += 1

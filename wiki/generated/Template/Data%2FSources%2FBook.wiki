@@ -5,65 +5,30 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Abandoned mineshaft <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_mineshaft.json|chests/abandoned_mineshaft}})</small> || 1 || 17.9% || 
+| Ancient city || 3–10 || 33.3% || 
 |-
-| Ancient city <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/ancient_city.json|chests/ancient_city}})</small> || 1 || 66.2% || 
+| Buried treasure || 1–4 || 100% || 
 |-
-| Ancient city <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/ancient_city.json|chests/ancient_city}})</small> || 3–10 || 33.3% || 
+| Shipwreck map || 1–5 || 35.3% || 
 |-
-| Bastion other <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_other.json|chests/bastion_other}})</small> || 1 || 15.4% || 
+| Stronghold library || 1–3 || 89.2% || 
 |-
-| Buried treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/buried_treasure.json|chests/buried_treasure}})</small> || 1–4 || 100% || 
+| Village / village desert house || 1 || 14.3% || 
 |-
-| Desert pyramid <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/desert_pyramid.json|chests/desert_pyramid}})</small> || 1 || 30.6% || 
-|-
-| Jungle temple <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/jungle_temple.json|chests/jungle_temple}})</small> || 1 || 7.10% || 
-|-
-| Shipwreck map <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_map.json|chests/shipwreck_map}})</small> || 1–5 || 35.3% || 
-|-
-| Simple dungeon <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json|chests/simple_dungeon}})</small> || 1 || 13.3% || 
-|-
-| Stronghold corridor <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_corridor.json|chests/stronghold_corridor}})</small> || 1 || 12.2% || 
-|-
-| Stronghold crossing <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_crossing.json|chests/stronghold_crossing}})</small> || 1 || 6.94% || 
-|-
-| Stronghold library <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_library.json|chests/stronghold_library}})</small> || 1–3 || 89.2% || 
-|-
-| Stronghold library <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_library.json|chests/stronghold_library}})</small> || 1 || 67.8% || 
-|-
-| Trial chambers / reward <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward.json|chests/trial_chambers/reward}})</small> || 1 || 14.5% || 
-|-
-| Trial chambers / reward ominous <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward_ominous.json|chests/trial_chambers/reward_ominous}})</small> || 1 || 10.5% || 
-|-
-| Underwater ruin big <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_big.json|chests/underwater_ruin_big}})</small> || 1 || 21.7% || 
-|-
-| Village / village desert house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_desert_house.json|chests/village/village_desert_house}})</small> || 1 || 14.3% || 
-|-
-| Village / village plains house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json|chests/village/village_plains_house}})</small> || 1 || 12.1% || 
-|-
-| Woodland mansion <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/woodland_mansion.json|chests/woodland_mansion}})</small> || 1 || 23.8% || 
-|}
-
-'''Fishing'''
-{| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
-|-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 0.820% || open water
+| Village / village plains house || 1 || 12.1% || 
 |}
 
 '''Gameplay'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Hero of the village / librarian gift <small>({{Source|vanilla:loot_table/gameplay/hero_of_the_village/librarian_gift.json|gameplay/hero_of_the_village/librarian_gift}})</small> || 1 || 100% || 
-|-
-| Piglin bartering <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/piglin_bartering.json|gameplay/piglin_bartering}})</small> || 1 || 2.27% || 
+| Hero of the village / librarian gift || 1 || 100% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bookshelf <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/bookshelf.json|blocks/bookshelf}})</small> || 1 || 100% || without Silk Touch
+| Bookshelf || 1 || 100% || without Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

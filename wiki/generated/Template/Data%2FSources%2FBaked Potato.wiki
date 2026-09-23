@@ -5,15 +5,15 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Trial chambers / intersection barrel <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/intersection_barrel.json|chests/trial_chambers/intersection_barrel}})</small> || 1 || 85.1% || 
+| Trial chambers / intersection barrel || 1 || 85.1% || 
 |-
-| Trial chambers / supply <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/supply.json|chests/trial_chambers/supply}})</small> || 1 || 48.3% || 
+| Trial chambers / supply || 1 || 48.3% || 
 |}
 
 '''Trial spawners'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Trial chamber / consumables <small>({{Source|MF_datapack/data/minecraft/loot_table/spawners/trial_chamber/consumables.json|spawners/trial_chamber/consumables}})</small> || 1 || 25.0% || 
+| Trial chamber / consumables || 1 || 25.0% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

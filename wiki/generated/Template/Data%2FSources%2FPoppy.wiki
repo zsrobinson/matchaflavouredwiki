@@ -5,36 +5,36 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village plains house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json|chests/village/village_plains_house}})</small> || 1 || 12.1% || 
+| Village / village plains house || 1 || 12.1% || 
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Iron golem <small>({{Source|vanilla:loot_table/entities/iron_golem.json|entities/iron_golem}})</small> || 0–2 || 66.7% || 
+| Iron golem || 0–2 || 66.7% || 
 |}
 
 '''Archaeology'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village plains <small>({{Source|MF_datapack/data/minecraft/loot_table/archaeology/village_plains.json|archaeology/village_plains}})</small> || 1 || 15.8% || 
+| Village plains || 1 || 15.8% || 
 |}
 
 '''Gameplay'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Hero of the village / baby gift <small>({{Source|vanilla:loot_table/gameplay/hero_of_the_village/baby_gift.json|gameplay/hero_of_the_village/baby_gift}})</small> || 1 || 100% || 
+| Hero of the village / baby gift || 1 || 100% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Poppy <small>({{Source|vanilla:loot_table/blocks/poppy.json|blocks/poppy}})</small> || 1 || 100% || 
+| Poppy || 1 || 100% || 
 |-
-| Potted poppy <small>({{Source|vanilla:loot_table/blocks/potted_poppy.json|blocks/potted_poppy}})</small> || 1 || 100% || 
+| Potted poppy || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

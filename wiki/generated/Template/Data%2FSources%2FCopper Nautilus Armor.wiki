@@ -5,16 +5,16 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Buried treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/buried_treasure.json|chests/buried_treasure}})</small> || 1 || 27.8% || 
+| Buried treasure || 1 || 27.8% || 
 |-
-| Shipwreck map <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_map.json|chests/shipwreck_map}})</small> || 1 || 14.6% || 
+| Shipwreck map || 1 || 14.6% || 
 |-
-| Shipwreck supply <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_supply.json|chests/shipwreck_supply}})</small> || 1 || 54.1% || 
+| Shipwreck supply || 1 || 54.1% || 
 |-
-| Shipwreck treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_treasure.json|chests/shipwreck_treasure}})</small> || 1 || 14.6% || 
+| Shipwreck treasure || 1 || 14.6% || 
 |-
-| Underwater ruin big <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_big.json|chests/underwater_ruin_big}})</small> || 1 || 10.8% || 
+| Underwater ruin big || 1 || 10.8% || 
 |-
-| Underwater ruin small <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_small.json|chests/underwater_ruin_small}})</small> || 1 || 10.8% || 
+| Underwater ruin small || 1 || 10.8% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

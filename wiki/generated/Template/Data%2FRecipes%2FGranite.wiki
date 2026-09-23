@@ -4,7 +4,7 @@
 |-
 | [[Granite]]
 | 2 × [[Granite Slab]]
-| {{Crafting|A1=Granite Slab|B1=Granite Slab|Output=Granite|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/granite_from_granite_slabs.json|matcha:crafting/granite_from_granite_slabs}}</small>
+| {{Crafting|A1=Granite Slab|B1=Granite Slab|Output=Granite|shapeless=1}}
 |-
 | [[Granite]] <small>(vanilla recipe)</small>
 | [[Diorite]] +<br />[[Quartz]]
@@ -16,6 +16,6 @@
 |-
 | [[Granite]]
 | [[Polished Granite]]
-| {{Cooking|station=Blast Furnace|Input=Polished Granite|Output=Granite|time=5|note=5 s, 1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/granite_from_blasting_polished_granite.json|matcha:blast/granite_from_blasting_polished_granite}}</small>
+| {{Cooking|station=Blast Furnace|Input=Polished Granite|Output=Granite|time=5|note=5 s, 1 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

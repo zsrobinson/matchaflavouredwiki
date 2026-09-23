@@ -3,31 +3,31 @@
 |-
 | [[Prayer of Talos]]
 | 7 × [[Block of Iron]] +<br />[[Steel Alloy]] +<br />[[Hell-Bound Book]]
-| {{Crafting|A1=Block of Iron|A2=Block of Iron|A3=Block of Iron|B1=Steel Alloy|B2=Hell-Bound Book|B3=Block of Iron|C1=Block of Iron|C2=Block of Iron|C3=Block of Iron|Output=Prayer of Talos}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/density_knockback_punch.json|matcha:blessing/density_knockback_punch}}</small>
+| {{Crafting|A1=Block of Iron|A2=Block of Iron|A3=Block of Iron|B1=Steel Alloy|B2=Hell-Bound Book|B3=Block of Iron|C1=Block of Iron|C2=Block of Iron|C3=Block of Iron|Output=Prayer of Talos}}
 |-
-| [[Smithing Trim Color]]
+| [[Smithing Trim Color|Smithing Trim Color (Iron Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Iron]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Iron|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_iron.json|matcha:crafting/trim_colour_iron}}</small>
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Iron|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}
 |-
 | [[Iron Bars]]
 | [[Block of Iron]]
-| {{Stonecutter|Input=Block of Iron|Output=Iron Bars,36}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_bars_from_stonecutting_iron_block.json|matcha:stonecutting/iron_bars_from_stonecutting_iron_block}}</small>
+| {{Stonecutter|Input=Block of Iron|Output=Iron Bars,36}}
 |-
 | [[Cauldron]]
 | [[Block of Iron]]
-| {{Stonecutter|Input=Block of Iron|Output=Cauldron,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_cauldron_from_stonecutting_iron_block.json|matcha:stonecutting/iron_cauldron_from_stonecutting_iron_block}}</small>
+| {{Stonecutter|Input=Block of Iron|Output=Cauldron,2}}
 |-
 | [[Iron Chain]]
 | [[Block of Iron]]
-| {{Stonecutter|Input=Block of Iron|Output=Iron Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_chain_from_stonecutting_iron_block.json|matcha:stonecutting/iron_chain_from_stonecutting_iron_block}}</small>
+| {{Stonecutter|Input=Block of Iron|Output=Iron Chain,54}}
 |-
 | [[Iron Door]]
 | [[Block of Iron]]
-| {{Stonecutter|Input=Block of Iron|Output=Iron Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_door_from_stonecutting_iron_block.json|matcha:stonecutting/iron_door_from_stonecutting_iron_block}}</small>
+| {{Stonecutter|Input=Block of Iron|Output=Iron Door,6}}
 |-
 | [[Iron Trapdoor]]
 | [[Block of Iron]]
-| {{Stonecutter|Input=Block of Iron|Output=Iron Trapdoor,9}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_trapdoor_from_stonecutting_steel.json|matcha:stonecutting/iron_trapdoor_from_stonecutting_steel}}</small>
+| {{Stonecutter|Input=Block of Iron|Output=Iron Trapdoor,9}}
 |-
 | [[Anvil]] <small>(vanilla recipe)</small>
 | 3 × [[Block of Iron]] +<br />4 × [[Iron Ingot]]

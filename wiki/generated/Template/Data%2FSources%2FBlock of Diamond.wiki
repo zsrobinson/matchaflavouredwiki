@@ -5,15 +5,15 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Trial chambers / intersection <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/intersection.json|chests/trial_chambers/intersection}})</small> || 1 || 1.46% || 
+| Trial chambers / intersection || 1 || 1.46% || 
 |-
-| Trial chambers / reward ominous <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward_ominous.json|chests/trial_chambers/reward_ominous}})</small> || 1 || 2.11% || 
+| Trial chambers / reward ominous || 1 || 2.11% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Diamond block <small>({{Source|vanilla:loot_table/blocks/diamond_block.json|blocks/diamond_block}})</small> || 1 || 100% || 
+| Diamond block || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

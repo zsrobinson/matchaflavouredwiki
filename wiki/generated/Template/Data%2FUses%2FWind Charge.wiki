@@ -3,18 +3,18 @@
 |-
 | [[Elegy of Icarus]]
 | 4 × [[Wind Charge]] +<br />[[Wax]] +<br />3 × [[Feather]] +<br />[[Hell-Bound Book]]
-| {{Crafting|A1=Wind Charge|A2=Feather|A3=Wind Charge|B1=Wax|B2=Hell-Bound Book|B3=Feather|C1=Wind Charge|C2=Feather|C3=Wind Charge|Output=Elegy of Icarus}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/feather_falling.json|matcha:blessing/feather_falling}}</small>
+| {{Crafting|A1=Wind Charge|A2=Feather|A3=Wind Charge|B1=Wax|B2=Hell-Bound Book|B3=Feather|C1=Wind Charge|C2=Feather|C3=Wind Charge|Output=Elegy of Icarus}}
 |-
 | [[Prayer of Aeolus]]
 | 7 × [[Wind Charge]] +<br />[[Hell-Bound Book]] +<br />[[Block of Gold]]
-| {{Crafting|A1=Wind Charge|A2=Wind Charge|A3=Wind Charge|B1=Wind Charge|B2=Hell-Bound Book|B3=Block of Gold|C1=Wind Charge|C2=Wind Charge|C3=Wind Charge|Output=Prayer of Aeolus}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/wind_burst_anemos.json|matcha:blessing/wind_burst_anemos}}</small>
+| {{Crafting|A1=Wind Charge|A2=Wind Charge|A3=Wind Charge|B1=Wind Charge|B2=Hell-Bound Book|B3=Block of Gold|C1=Wind Charge|C2=Wind Charge|C3=Wind Charge|Output=Prayer of Aeolus}}
 |-
 | [[Elegy of Hyacinthus]]
 | 4 × [[Wind Charge]] +<br />[[Hyacinth]] +<br />3 × [[Feather]] +<br />[[Hell-Bound Book]]
-| {{Crafting|A1=Wind Charge|A2=Feather|A3=Wind Charge|B1=Hyacinth|B2=Hell-Bound Book|B3=Feather|C1=Wind Charge|C2=Feather|C3=Wind Charge|Output=Elegy of Hyacinthus}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/zephyr.json|matcha:blessing/zephyr}}</small>
+| {{Crafting|A1=Wind Charge|A2=Feather|A3=Wind Charge|B1=Hyacinth|B2=Hell-Bound Book|B3=Feather|C1=Wind Charge|C2=Feather|C3=Wind Charge|Output=Elegy of Hyacinthus}}
 |-
-| [[Smithing Template]]
-| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Wind Charge]]
-| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Wind Charge|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/flow_armor_trim_smithing_template.json|matcha:crafting/flow_armor_trim_smithing_template}}</small>
+| [[Flow Armor Trim Smithing Template]]
+| 7 × [[Diamond]] +<br />[[Flow Armor Trim Smithing Template]] +<br />[[Wind Charge]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Flow Armor Trim Smithing Template|B2=Wind Charge|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Flow Armor Trim Smithing Template,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

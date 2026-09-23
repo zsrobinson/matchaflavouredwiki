@@ -3,15 +3,15 @@
 |-
 | [[Prayer of Glaucus]]
 | [[Azure Bluet]] +<br />3 × [[Nautilus Shell]] +<br />[[Hell-Bound Book]]
-| {{Crafting|A2=Nautilus Shell|B1=Azure Bluet|B2=Hell-Bound Book|B3=Nautilus Shell|C2=Nautilus Shell|Output=Prayer of Glaucus}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/lure_luck_of_the_sea.json|matcha:blessing/lure_luck_of_the_sea}}</small>
+| {{Crafting|A2=Nautilus Shell|B1=Azure Bluet|B2=Hell-Bound Book|B3=Nautilus Shell|C2=Nautilus Shell|Output=Prayer of Glaucus}}
 |-
 | [[Amnestic]]
 | [[Azure Bluet]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Paper]]
-| {{Crafting|A1=Azure Bluet|B1=Sugar|C1=Estus Ash|A2=Paper|Output=Amnestic|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/amnestic.json|matcha:crafting/amnestic}}</small>
+| {{Crafting|A1=Azure Bluet|B1=Sugar|C1=Estus Ash|A2=Paper|Output=Amnestic|shapeless=1}}
 |-
 | [[Azure Bluet]]
 | [[Azure Bluet]] +<br />[[Potion]] +<br />[[Bone Meal]]
-| {{Crafting|A1=Azure Bluet|B1=Potion|C1=Bone Meal|Output=Azure Bluet,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_azure_bluet.json|matcha:crafting/clone_azure_bluet}}</small>
+| {{Crafting|A1=Azure Bluet|B1=Potion|C1=Bone Meal|Output=Azure Bluet,4|shapeless=1}}
 |-
 | [[Light Gray Dye]] <small>(vanilla recipe)</small>
 | [[Azure Bluet]]

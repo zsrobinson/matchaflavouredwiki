@@ -213,8 +213,8 @@ def rich_text(comp, style=None):
     return runs
 
 
-def vname(item_id):
-    """English name of a (possibly renamed) vanilla item id."""
+def ingame_name(item_id):
+    """The name the game shows for a (possibly renamed) vanilla item id."""
     iid = item_id.split(':', 1)[-1] if ':' in item_id else item_id
     for k in ('item.minecraft.' + iid, 'block.minecraft.' + iid):
         if k in LANG:
@@ -222,8 +222,49 @@ def vname(item_id):
     return iid.replace('_', ' ').title()
 
 
+def distinct_names(lang):
+    """Page names for vanilla items that share one in-game name with other item ids.
+
+    Every armor trim template and the netherite upgrade are "Smithing Template", and every banner
+    pattern is "Banner Pattern". The tooltip line under the name tells them apart (the ".new" lang
+    key, e.g. "Flow Armor Trim", "Globe Banner Pattern"); where that line doesn't already say what the
+    item is, the shared name is added, as minecraft.wiki names them: "Flow Armor Trim Smithing
+    Template". Music discs are named by their song elsewhere (stack_name)."""
+    groups = defaultdict(list)
+    for f in sorted(os.listdir(os.path.join(VASSETS, 'items'))):
+        iid = f[:-5]
+        k = next((k for k in ('item.minecraft.' + iid, 'block.minecraft.' + iid) if k in lang), None)
+        if k:
+            groups[strip_codes(lang[k]).strip()].append(iid)
+    out = {}
+    for shared, ids in groups.items():
+        if len(ids) < 2:
+            continue
+        for iid in ids:
+            desc = lang.get('item.minecraft.%s.new' % iid)
+            if iid.startswith('music_disc_') or not desc:
+                continue
+            desc = strip_codes(desc).strip()
+            words = desc.lower().split()
+            out[iid] = desc if all(w in words for w in shared.lower().split()) else '%s %s' % (desc, shared)
+    return out
+
+
+DISTINCT = distinct_names(LANG)  # with the pack's lang: the upgrade template is "Smithing Upgrade Template"
+DISTINCT_VANILLA = distinct_names(VANILLA_LANG)
+
+
+def vname(item_id):
+    """Wiki name of a (possibly renamed) vanilla item id: its in-game name, or the distinct name
+    of an item that shares its in-game name with others."""
+    iid = item_id.split(':', 1)[-1] if ':' in item_id else item_id
+    return DISTINCT.get(iid) or ingame_name(item_id)
+
+
 def vanilla_name(item_id):
     iid = item_id.split(':', 1)[-1]
+    if iid in DISTINCT_VANILLA:
+        return DISTINCT_VANILLA[iid]
     for k in ('item.minecraft.' + iid, 'block.minecraft.' + iid):
         if k in VANILLA_LANG:
             return VANILLA_LANG[k]
@@ -249,20 +290,20 @@ def stack_name(stack):
             n = render_text(comps[key]).strip()
             base = norm_id(stack['id']).split(':')[-1]
             if base in ('splash_potion', 'lingering_potion', 'potion') and n in EFFECT_NAMES:
-                n = '%s of %s' % (vname(base), n)  # e.g. the Chemist's "Darkness" splash potion
+                n = '%s of %s' % (ingame_name(base), n)  # e.g. the Chemist's "Darkness" splash potion
             return n
     sid = norm_id(stack['id']).split(':')[-1]
     if sid.startswith('music_disc_') and not comps:
         song = LANG.get('jukebox_song.minecraft.' + sid[len('music_disc_'):])
         if song:
-            return '%s (%s)' % (vname(sid), strip_codes(song).strip())  # vanilla discs all share one name
+            return '%s (%s)' % (ingame_name(sid), strip_codes(song).strip())  # vanilla discs all share one name
     pc = comps.get('minecraft:potion_contents')
     if isinstance(pc, dict) and pc.get('custom_name'):
         base = norm_id(stack['id']).split(':')[-1]
         k = 'item.minecraft.%s.effect.%s' % (base, pc['custom_name'])
         if k in LANG:
             return strip_codes(LANG[k]).strip()
-    return vname(stack['id'])
+    return ingame_name(stack['id'])
 
 
 def item_key(stack):
@@ -276,9 +317,13 @@ def item_key(stack):
     return name, model
 
 
-def variant_key(name, comps):
-    """Items that share one name in-game but are distinct (blessings, clay fetishes)."""
+def variant_key(name, comps, sid=None):
+    """Items that share one name in-game but are distinct (blessings, clay fetishes, smithing
+    templates, banner patterns)."""
     lore = comps.get('minecraft:lore') or []
+    named = comps.get('minecraft:item_name') or comps.get('minecraft:custom_name')
+    if sid and not named and name == ingame_name(sid) and sid.split(':')[-1] in DISTINCT:
+        return DISTINCT[sid.split(':')[-1]]
     if name == 'Blessing' and lore:
         return render_text(lore[0])
     song = comps.get('minecraft:jukebox_playable')
@@ -314,7 +359,7 @@ def register(stack, src, how):
     sid = norm_id(stack['id'])
     comps = stack.get('components', {}) or {}
     name, model = item_key(stack)
-    key = variant_key(name, comps)
+    key = variant_key(name, comps, sid)
     rec = ITEMS.get(key)
     if rec is None:
         rec = ITEMS[key] = {
@@ -342,17 +387,111 @@ def register(stack, src, how):
     return key
 
 
+# ---------------------------------------------------------------- loot variants
+# Some loot functions and components make a distinct in-game item out of one wiki item: a tipped
+# arrow's potion, a goat horn's sound, an ominous bottle's level. The wiki keeps one page for the
+# item and labels each source with the variant, as the game names it ("Arrow of Poison").
+ROMAN = {1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V', 6: 'VI', 7: 'VII', 8: 'VIII', 9: 'IX', 10: 'X'}
+
+
+def potion_label(base, potion):
+    """In-game name of a potion item (or tipped arrow) holding one vanilla potion id."""
+    p, mod = potion.split(':')[-1], ''
+    for m in ('long_', 'strong_'):
+        if p.startswith(m):
+            p, mod = p[len(m):], m[:-1]
+    k = 'item.minecraft.%s.effect.%s' % (base, p)
+    if k in LANG:
+        return strip_codes(LANG[k]).strip() + (' (%s)' % mod if mod else '')
+    effect = LANG.get('effect.minecraft.' + p) or p.replace('_', ' ').title()
+    return '%s (%s)' % (ingame_name(base), effect + (', ' + mod if mod else ''))
+
+
+def instrument_names(options):
+    """Sound names ("Ponder") of an instrument id, a list of ids or an #instrument tag."""
+    ids = []
+    for o in ([options] if isinstance(options, str) else options or []):
+        if o.startswith('#'):
+            ns, p = o[1:].split(':') if ':' in o else ('minecraft', o[1:])
+            for f in (os.path.join(DP, ns, 'tags', 'instrument', p + '.json'),
+                      os.path.join(VDATA, 'tags', 'instrument', p + '.json') if ns == 'minecraft' else ''):
+                if f and os.path.exists(f):
+                    ids += [v if isinstance(v, str) else v['id'] for v in load(f)['values']]
+                    break
+        else:
+            ids.append(o)
+    return [strip_codes(LANG.get('instrument.minecraft.' + i.split(':')[-1], i.split(':')[-1].replace('_', ' ').title()))
+            for i in ids]
+
+
+def or_list(names):
+    return names[0] if len(names) == 1 else '%s or %s' % (', '.join(names[:-1]), names[-1])
+
+
+def int_range(n):
+    if isinstance(n, (int, float)):
+        return int(n), int(n)
+    if isinstance(n, dict) and isinstance(n.get('min'), (int, float)) and isinstance(n.get('max'), (int, float)):
+        return int(n['min']), int(n['max'])
+    return None
+
+
+def stack_variant(stack, functions=()):
+    """Label for a stack that is a distinct in-game variant of its wiki item, or None."""
+    sid = norm_id(stack['id'])
+    base = sid.split(':')[-1]
+    comps = stack.get('components') or {}
+    name = stack_name(stack)
+    inst = comps.get('minecraft:instrument')
+    if isinstance(inst, dict) and inst.get('description'):
+        return '%s (%s)' % (name, render_text(inst['description']).strip())  # the clay fetishes
+    if isinstance(inst, str) and base == 'goat_horn':
+        return '%s (%s)' % (name, or_list(instrument_names(inst)))
+    for fn in functions:
+        f = fn.get('function', '').split(':')[-1]
+        if f == 'set_potion' and fn.get('id'):
+            return potion_label(base, fn['id'])
+        if f == 'set_instrument' and fn.get('options'):
+            names = instrument_names(fn['options'])
+            if names:
+                return '%s (%s)' % (name, or_list(names))
+        if f == 'set_ominous_bottle_amplifier':
+            r = int_range(fn.get('amplifier'))
+            if r:
+                lv = [ROMAN.get(a + 1, str(a + 1)) for a in r]
+                effect = strip_codes(LANG.get('effect.minecraft.bad_omen', 'Bad Omen'))
+                return '%s (%s %s)' % (name, effect, lv[0] if lv[0] == lv[1] else '%s–%s' % tuple(lv))
+        if f == 'set_enchantments':
+            names = [strip_codes(LANG.get('enchantment.%s.%s' % tuple(norm_id(e).split(':')), norm_id(e).split(':')[-1]))
+                     for e in (fn.get('enchantments') or {})]
+            if base == 'enchanted_book':
+                return '%s (%s)' % (name, ', '.join(names) if names else 'no enchantments')
+            return '%s (enchanted)' % name if names else None
+        if f in ('enchant_randomly', 'enchant_with_levels'):
+            opt = fn.get('options')
+            if base == 'enchanted_book' and f == 'enchant_randomly' and isinstance(opt, str) and not opt.startswith('#'):
+                ns, e = opt.split(':') if ':' in opt else ('minecraft', opt)
+                return '%s (%s)' % (name, strip_codes(LANG.get('enchantment.%s.%s' % (ns, e), e.replace('_', ' ').title())))
+            return '%s (%s)' % (name, 'random enchantment' if base == 'enchanted_book' else 'enchanted')
+    return None
+
+
 def display_stack(stack):
     if isinstance(stack, str):
         return {'name': vname(stack), 'id': norm_id(stack), 'count': 1}
     comps = stack.get('components') or {}
-    d = {'name': variant_key(item_key(stack)[0], comps), 'id': norm_id(stack['id']), 'count': stack.get('count', 1)}
+    d = {'name': variant_key(item_key(stack)[0], comps, stack['id']), 'id': norm_id(stack['id']), 'count': stack.get('count', 1)}
     if comps.get('minecraft:item_model'):
         d['model'] = comps['minecraft:item_model']
     if comps.get('minecraft:stored_enchantments'):
         d['enchantments'] = comps['minecraft:stored_enchantments']
     if comps.get('minecraft:enchantments'):
         d['enchantments'] = comps['minecraft:enchantments']
+    variant = stack_variant(stack)
+    if variant:
+        d['variant'] = variant
+    if comps.get('minecraft:item_model') and comps.get('minecraft:lore'):
+        d['_lore'] = render_text(comps['minecraft:lore'][0])  # see lore_variants()
     return d
 
 
@@ -503,7 +642,7 @@ for f in sorted(glob.glob(os.path.join(VDATA, 'recipe', '*.json'))):
 BLOCKED_RECIPES = sorted(b[len('recipe/'):-5] for b in BLOCKED if b.startswith('recipe/'))
 
 # ---------------------------------------------------------------- loot tables
-def walk_entries(entries, pool_ctx, out, src):
+def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
     for e in entries:
         t = e.get('type', '').split(':')[-1]
         if t == 'item':
@@ -519,11 +658,22 @@ def walk_entries(entries, pool_ctx, out, src):
                     count = fn.get('count')
                 elif fname == 'set_lore':
                     stack['components']['minecraft:lore'] = fn.get('lore')
+                elif fname in ('enchant_randomly', 'enchant_with_levels', 'set_enchantments') and norm_id(stack['id']) == 'minecraft:book':
+                    stack['id'] = 'minecraft:enchanted_book'  # enchanting a book turns it into an enchanted book
+                elif fname == 'exploration_map' and norm_id(stack['id']) == 'minecraft:map':
+                    stack['id'] = 'minecraft:filled_map'  # the function turns an empty map into a filled explorer map
             key = register(stack, src, 'loot')
-            out.append({'item': key, 'id': norm_id(e['name']), 'weight': e.get('weight', 1),
-                        'quality': e.get('quality'), 'count': count,
-                        'conditions': e.get('conditions'), 'functions': [f.get('function') for f in e.get('functions', [])],
-                        **pool_ctx})
+            ent = {'item': key, 'id': norm_id(stack['id']), 'weight': e.get('weight', 1),
+                   'quality': e.get('quality'), 'count': count,
+                   'conditions': e.get('conditions'), 'functions': [f.get('function') for f in e.get('functions', [])],
+                   **pool_ctx}
+            variant = stack_variant(stack, e.get('functions', []) + list(pool_fns))  # pool functions apply to every entry
+            if variant:
+                ent['variant'] = variant
+            comps = stack['components']
+            if comps.get('minecraft:item_model') and comps.get('minecraft:lore'):
+                ent['model'], ent['_lore'] = comps['minecraft:item_model'], render_text(comps['minecraft:lore'][0])
+            out.append(ent)
         elif t == 'loot_table':
             # set_count on a loot_table entry applies to every stack the nested table yields
             count = next((fn.get('count') for fn in e.get('functions', [])
@@ -535,7 +685,7 @@ def walk_entries(entries, pool_ctx, out, src):
             # the children share the parent's single weighted slot in the pool (an alternatives entry
             # gives only its first child whose conditions pass, e.g. Silk Touch or else the normal drop)
             start = len(out)
-            walk_entries(e.get('children', []), pool_ctx, out, src)
+            walk_entries(e.get('children', []), pool_ctx, out, src, pool_fns)
             slot = '%s/%d' % (pool_ctx.get('pool'), start)
             for child in out[start:]:  # nested alternatives flatten into the outer slot, in order
                 child['slot'], child['slot_kind'], child['weight'] = slot, t, e.get('weight', 1)
@@ -554,7 +704,7 @@ def parse_loot(d, src):
         total = sum(e.get('weight', 1) for e in ents)
         ctx = {'pool': i, 'rolls': p.get('rolls', 1), 'bonus_rolls': p.get('bonus_rolls', 0),
                'pool_total_weight': total, 'pool_conditions': p.get('conditions')}
-        walk_entries(ents, ctx, out, src)
+        walk_entries(ents, ctx, out, src, p.get('functions') or ())
     return out
 
 
@@ -566,6 +716,13 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'loot_table', '**', '*.json'), r
     LOOT[lid] = {'id': lid, 'src': rel(f), 'type': d.get('type'), 'entries': parse_loot(d, rel(f)),
                  'overrides_vanilla': ns == 'minecraft' and os.path.exists(
                      os.path.join(VDATA, 'loot_table', os.path.relpath(f, os.path.join(DP, ns, 'loot_table'))))}
+    base = lid.rsplit('/', 1)[-1]
+    if lid.startswith('matcha:food/') and os.path.exists(os.path.join(VASSETS, 'items', base + '.json')):
+        # the pack's stand-in for a vanilla food, built on another item (the enchanted golden apple
+        # is a golden apple with stronger effects): same name in-game, so label it
+        for e in LOOT[lid]['entries']:
+            if e.get('item') and e['id'] != 'minecraft:' + base and not e.get('variant'):
+                e['variant'] = '%s (replaces %s)' % (ITEMS[e['item']]['name'], vanilla_name(base))
 
 # vanilla loot tables the pack leaves alone still produce renamed items (glowstone -> Estus Ash)
 for f in sorted(glob.glob(os.path.join(VDATA, 'loot_table', '**', '*.json'), recursive=True)):
@@ -602,6 +759,8 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
         if any(m.get('function', '').split(':')[-1] == 'discard' for m in mods):
             continue  # placeholder trade the game throws away (levels with no real trades)
         for m in mods:
+            if m.get('function', '').split(':')[-1] == 'exploration_map' and 'gives' in t and norm_id(t['gives'].get('id', '')) == 'minecraft:map':
+                t['gives']['id'] = 'minecraft:filled_map'  # an explorer map is a filled map in-game
             if m.get('function', '').split(':')[-1] == 'set_name' and 'gives' in t:
                 t['gives'].setdefault('components', {})['minecraft:item_name' if m.get('target') == 'item_name' else 'minecraft:custom_name'] = m.get('name')
         biome = None
@@ -753,6 +912,31 @@ def icon_for(item):
     return None
 
 
+# ---------------------------------------------------------------- variants named by lore
+def lore_variants():
+    """Custom items that share one name but differ by model, with the first lore line saying which
+    one it is (each cooking recipe names its dish, each smithing trim color its material): label
+    every stack of them with that line, "Cooking Recipe (Gnocchi)"."""
+    stacks = [(r['output'], r['output']['name']) for r in RECIPES + VANILLA_RECIPES_KEPT]
+    for levels in TRADES.values():
+        for ts in levels.values():
+            for t in ts if isinstance(ts, list) else []:
+                stacks += [(t[k], t[k]['name']) for k in ('wants', 'additional_wants', 'gives') if t.get(k)]
+    stacks += [(e, e['item']) for t in LOOT.values() for e in t['entries'] if e.get('item')]
+    stacks += [(a['icon'], a['icon']['name']) for a in ADV.values() if a.get('icon')]
+    lines = defaultdict(set)
+    for d, key in stacks:
+        if d.get('_lore') and d.get('model'):
+            lines[key].add((d['model'], d['_lore']))
+    for d, key in stacks:
+        line = re.sub(r'⟦[^⟧]*⟧', '', d.pop('_lore', '')).strip()
+        if len(lines[key]) > 1 and len({m for m, _ in lines[key]}) > 1 and len({l for _, l in lines[key]}) > 1 \
+                and line and not d.get('variant'):
+            d['variant'] = '%s (%s)' % (ITEMS[key]['name'] if key in ITEMS else key, line)
+
+
+lore_variants()
+
 # ---------------------------------------------------------------- write
 for k, it in ITEMS.items():
     it['icon'] = icon_for(it)
@@ -766,6 +950,7 @@ data = {
     'meta': {'pack_description': version_text, 'git_head': git_head, 'git_date': git_date,
              'pack_format': pack_meta['pack'].get('min_format')},
     'lang_pack': PACK_LANG,
+    'distinct_names': DISTINCT,
     'renames': {k: {'vanilla': VANILLA_LANG.get(k), 'pack': strip_codes(v)} for k, v in PACK_LANG.items()
                 if k in VANILLA_LANG and VANILLA_LANG[k] != v},
     'items': ITEMS,
