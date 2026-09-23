@@ -6,7 +6,7 @@
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
-|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
 |rarity=Rare
@@ -15,7 +15,7 @@
 |damage={{Hp|9}}
 |attackspeed=1.1
 |repair=[[Diamond]]
-|tooltip=🗡 9<br />🕒 1.1<br />Repaired with:<br />Diamond
+|tooltipbox={{Tooltip|Trident}}
 |id=<code>minecraft:trident</code>
 |source={{Source|MF_datapack/data/matcha/loot_table/equipment/misc/trident.json|trident.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

@@ -13,7 +13,7 @@
 |heals={{Hp|4}}
 |effects={{EffectLink|Levitation}} 30 (0:01)
 |eat_time=0.8 seconds
-|tooltip=❤❤<br />{{G|Levitation}} Levitation XXX (0:01)
+|tooltipbox={{Tooltip|Chorus Mochi}}
 |id=<code>matcha:chorus_mochi</code>
 |base=<code>minecraft:poisonous_potato</code>
 |source={{Source|MF_datapack/data/matcha/recipe/food/crafting/chorus_mochi.json|chorus_mochi.json}}

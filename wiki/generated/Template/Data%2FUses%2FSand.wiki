@@ -3,7 +3,7 @@
 |-
 | [[Quartz]]
 | [[Sand]]
-| {{Cooking|station=Blast Furnace|Input=Sand|Output=Quartz|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/quartz.json|matcha:blast/quartz}}</small>
+| {{Cooking|station=Blast Furnace|Input=Sand|Output=Quartz|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/quartz.json|matcha:blast/quartz}}</small>
 |-
 | [[Red Sand]]
 | 8 × [[Sand]] +<br />[[Iron Nugget]]
@@ -19,7 +19,7 @@
 |-
 | [[Glass]]
 | [[Sand]] or [[Red Sand]]
-| {{Cooking|station=Mud Kiln|Input=Sand;Red Sand|Output=Glass|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/glass_from_smoking_sand.json|matcha:kiln/glass_from_smoking_sand}}</small>
+| {{Cooking|station=Mud Kiln|Input=Sand;Red Sand|Output=Glass|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/glass_from_smoking_sand.json|matcha:kiln/glass_from_smoking_sand}}</small>
 |-
 | [[Black Concrete Powder]] <small>(vanilla recipe)</small>
 | [[Black Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]

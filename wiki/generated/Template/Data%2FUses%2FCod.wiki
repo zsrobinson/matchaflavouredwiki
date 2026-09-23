@@ -3,7 +3,7 @@
 |-
 | [[Cooked Fish]]
 | [[Cod]]
-| {{Cooking|station=Kindling|Input=Cod|Output=Cooked Fish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_cod.json|matcha:food/campfire/cooked_cod}}</small>
+| {{Cooking|station=Kindling|Input=Cod|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_cod.json|matcha:food/campfire/cooked_cod}}</small>
 |-
 | [[Green Curry Stock]]
 | [[Green Dye]] +<br />[[Estus Ash]] +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Oil]] +<br />[[Cod]] or [[Salmon]] or [[Seitan]] +<br />[[Bowl]]
@@ -11,17 +11,17 @@
 |-
 | [[Charred Fish]]
 | [[Tropical Fish]] or [[Pufferfish]] or [[Cod]] or [[Salmon]]
-| {{Cooking|station=Mud Kiln|Input=Tropical Fish;Pufferfish;Cod;Salmon|Output=Charred Fish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_fish.json|matcha:food/kiln/charred_fish}}</small>
+| {{Cooking|station=Mud Kiln|Input=Tropical Fish;Pufferfish;Cod;Salmon|Output=Charred Fish|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_fish.json|matcha:food/kiln/charred_fish}}</small>
 |-
 | [[Cooked Fish]]
 | [[Cod]]
-| {{Cooking|station=Oven|Input=Cod|Output=Cooked Fish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_cod.json|matcha:food/oven/cooked_cod}}</small>
+| {{Cooking|station=Oven|Input=Cod|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_cod.json|matcha:food/oven/cooked_cod}}</small>
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Fisherman]] || Apprentice || 12 × {{ItemLink|Cod}} || {{ItemLink|Obol}}
+| [[Fisherman]] || Apprentice || {{Trade|Cod,12||Obol}} || 12 × {{ItemLink|Cod}} || {{ItemLink|Obol}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

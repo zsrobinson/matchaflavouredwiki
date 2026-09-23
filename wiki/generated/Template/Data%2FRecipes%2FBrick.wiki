@@ -16,10 +16,10 @@
 |-
 | [[Brick]]
 | [[Clay Ball]]
-| {{Cooking|station=Kindling|Input=Clay Ball|Output=Brick|note=5 s, 0.3 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/campfire/brick_campfire.json|matcha:campfire/brick_campfire}}</small>
+| {{Cooking|station=Kindling|Input=Clay Ball|Output=Brick|time=5|note=5 s, 0.3 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/campfire/brick_campfire.json|matcha:campfire/brick_campfire}}</small>
 |-
 | [[Brick]]
 | [[Clay Ball]]
-| {{Cooking|station=Mud Kiln|Input=Clay Ball|Output=Brick|note=5 s, 0.3 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json|matcha:kiln/brick_from_smoking_clay_ball}}</small>
+| {{Cooking|station=Mud Kiln|Input=Clay Ball|Output=Brick|time=5|note=5 s, 0.3 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json|matcha:kiln/brick_from_smoking_clay_ball}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

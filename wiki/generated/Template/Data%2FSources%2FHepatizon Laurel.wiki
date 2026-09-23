@@ -2,9 +2,9 @@
 <div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Jeweler]] || Expert || 10 × {{ItemLink|Obol}} + 2 × {{ItemLink|Hepatizon Alloy}} || 1
+| [[Jeweler]] || Expert || {{Trade|Obol,10|Hepatizon Alloy,2|Hepatizon Laurel}} || 10 × {{ItemLink|Obol}} + 2 × {{ItemLink|Hepatizon Alloy}} || 1
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

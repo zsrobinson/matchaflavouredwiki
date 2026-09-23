@@ -15,7 +15,7 @@
 |attackspeed=1
 |miningspeed=8
 |repair=[[Iron Ingot]]
-|tooltip={{G|Mining speed}} 8<br />{{G|Attack damage}} 4.5<br />{{G|Attack speed}} 1<br />Repaired with:<br />Iron Ingot
+|tooltipbox={{Tooltip|Steel Shovel}}
 |id=<code>matcha:steel_shovel</code>
 |base=<code>minecraft:stone_shovel</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_shovel.json|steel_shovel.json}}

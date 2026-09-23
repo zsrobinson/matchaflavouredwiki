@@ -1,8 +1,8 @@
 <includeonly>
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Lumberjack]] || Apprentice || {{ItemLink|Obol}} + {{ItemLink|Acacia Sapling}} || 64 × {{ItemLink|Acacia Log}}
+| [[Lumberjack]] || Apprentice || {{Trade|Obol|Acacia Sapling|Acacia Log,64}} || {{ItemLink|Obol}} + {{ItemLink|Acacia Sapling}} || 64 × {{ItemLink|Acacia Log}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

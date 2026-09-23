@@ -2,11 +2,11 @@
 <div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Archaeologist]] || Novice || {{ItemLink|Obol}} || 1
+| [[Archaeologist]] || Novice || {{Trade|Obol||Witch Hut Map}} || {{ItemLink|Obol}} || 1
 |-
-| [[Wandering Trader]] || Uncommon offer || {{ItemLink|Obol}} || 1
+| [[Wandering Trader]] || Uncommon offer || {{Trade|Obol||Witch Hut Map}} || {{ItemLink|Obol}} || 1
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

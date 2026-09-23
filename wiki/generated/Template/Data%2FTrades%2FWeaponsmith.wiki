@@ -1,112 +1,112 @@
-<includeonly>{| class="wikitable"
-! Level !! Villager wants !! Villager gives !! Uses !! Villager XP
+<includeonly>{| class="wikitable trade-table"
+! Level !! Offer !! Villager wants !! Villager gives !! Uses !! Villager XP
 |-
 ! rowspan="4" | Novice
-| 4 × {{ItemLink|Diamond}} || {{ItemLink|Obol}} || 999 || 10
+| {{Trade|Diamond,4||Obol}} || 4 × {{ItemLink|Diamond}} || {{ItemLink|Obol}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Alloy}} || 2 × {{ItemLink|Obol}} || 999 || 10
+| {{Trade|Hepatizon Alloy||Obol,2}} || {{ItemLink|Hepatizon Alloy}} || 2 × {{ItemLink|Obol}} || 999 || 10
 |-
-| 24 × {{ItemLink|Block of Lapis Lazuli|mcw=Block of Lapis Lazuli}} || {{ItemLink|Obol}} || 999 || 10
+| {{Trade|Block of Lapis Lazuli,24||Obol}} || 24 × {{ItemLink|Block of Lapis Lazuli|mcw=Block of Lapis Lazuli}} || {{ItemLink|Obol}} || 999 || 10
 |-
-| {{ItemLink|Electrum Alloy}} || 2 × {{ItemLink|Silver Bullion}} || 999 || 10
+| {{Trade|Electrum Alloy||Silver Bullion,2}} || {{ItemLink|Electrum Alloy}} || 2 × {{ItemLink|Silver Bullion}} || 999 || 10
 |-
 ! rowspan="49" | Apprentice
-| {{ItemLink|Electrum Helmet}} || {{ItemLink|Electrum Alloy}} || 999 || 10
+| {{Trade|Electrum Helmet||Electrum Alloy}} || {{ItemLink|Electrum Helmet}} || {{ItemLink|Electrum Alloy}} || 999 || 10
 |-
-| {{ItemLink|Electrum Chestplate}} || {{ItemLink|Electrum Alloy}} || 999 || 10
+| {{Trade|Electrum Chestplate||Electrum Alloy}} || {{ItemLink|Electrum Chestplate}} || {{ItemLink|Electrum Alloy}} || 999 || 10
 |-
-| {{ItemLink|Electrum Leggings}} || {{ItemLink|Electrum Alloy}} || 999 || 10
+| {{Trade|Electrum Leggings||Electrum Alloy}} || {{ItemLink|Electrum Leggings}} || {{ItemLink|Electrum Alloy}} || 999 || 10
 |-
-| {{ItemLink|Electrum Boots}} || {{ItemLink|Electrum Alloy}} || 999 || 10
+| {{Trade|Electrum Boots||Electrum Alloy}} || {{ItemLink|Electrum Boots}} || {{ItemLink|Electrum Alloy}} || 999 || 10
 |-
-| {{ItemLink|Electrum Sword}} || {{ItemLink|Electrum Alloy}} || 999 || 10
+| {{Trade|Electrum Sword||Electrum Alloy}} || {{ItemLink|Electrum Sword}} || {{ItemLink|Electrum Alloy}} || 999 || 10
 |-
-| {{ItemLink|Electrum Axe}} || {{ItemLink|Electrum Alloy}} || 999 || 10
+| {{Trade|Electrum Axe||Electrum Alloy}} || {{ItemLink|Electrum Axe}} || {{ItemLink|Electrum Alloy}} || 999 || 10
 |-
-| {{ItemLink|Electrum Pickaxe}} || {{ItemLink|Electrum Alloy}} || 999 || 10
+| {{Trade|Electrum Pickaxe||Electrum Alloy}} || {{ItemLink|Electrum Pickaxe}} || {{ItemLink|Electrum Alloy}} || 999 || 10
 |-
-| {{ItemLink|Electrum Shovel}} || {{ItemLink|Electrum Alloy}} || 999 || 10
+| {{Trade|Electrum Shovel||Electrum Alloy}} || {{ItemLink|Electrum Shovel}} || {{ItemLink|Electrum Alloy}} || 999 || 10
 |-
-| {{ItemLink|Electrum Hoe}} || {{ItemLink|Electrum Alloy}} || 999 || 10
+| {{Trade|Electrum Hoe||Electrum Alloy}} || {{ItemLink|Electrum Hoe}} || {{ItemLink|Electrum Alloy}} || 999 || 10
 |-
-| {{ItemLink|Electrum Mattock}} || {{ItemLink|Electrum Alloy}} || 999 || 10
+| {{Trade|Electrum Mattock||Electrum Alloy}} || {{ItemLink|Electrum Mattock}} || {{ItemLink|Electrum Alloy}} || 999 || 10
 |-
-| {{ItemLink|Electrum Dolabra}} || {{ItemLink|Electrum Alloy}} || 999 || 10
+| {{Trade|Electrum Dolabra||Electrum Alloy}} || {{ItemLink|Electrum Dolabra}} || {{ItemLink|Electrum Alloy}} || 999 || 10
 |-
-| {{ItemLink|Electrum Spear}} || {{ItemLink|Electrum Alloy}} || 999 || 10
+| {{Trade|Electrum Spear||Electrum Alloy}} || {{ItemLink|Electrum Spear}} || {{ItemLink|Electrum Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Helmet}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Helmet||Adamant Alloy}} || {{ItemLink|Adamant Helmet}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Chestplate}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Chestplate||Adamant Alloy}} || {{ItemLink|Adamant Chestplate}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Leggings}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Leggings||Adamant Alloy}} || {{ItemLink|Adamant Leggings}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Boots}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Boots||Adamant Alloy}} || {{ItemLink|Adamant Boots}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Sword}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Sword||Adamant Alloy}} || {{ItemLink|Adamant Sword}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Axe}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Axe||Adamant Alloy}} || {{ItemLink|Adamant Axe}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Pickaxe}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Pickaxe||Adamant Alloy}} || {{ItemLink|Adamant Pickaxe}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Shovel}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Shovel||Adamant Alloy}} || {{ItemLink|Adamant Shovel}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Hoe}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Hoe||Adamant Alloy}} || {{ItemLink|Adamant Hoe}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Mattock}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Mattock||Adamant Alloy}} || {{ItemLink|Adamant Mattock}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Dolabra}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Dolabra||Adamant Alloy}} || {{ItemLink|Adamant Dolabra}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Spear}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Spear||Adamant Alloy}} || {{ItemLink|Adamant Spear}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Adamant Claymore}} || {{ItemLink|Adamant Alloy}} || 999 || 10
+| {{Trade|Adamant Claymore||Adamant Alloy}} || {{ItemLink|Adamant Claymore}} || {{ItemLink|Adamant Alloy}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Helmet}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
+| {{Trade|Hepatizon Helmet||Hepatizon Alloy}} || {{ItemLink|Hepatizon Helmet}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Chestplate}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
+| {{Trade|Hepatizon Chestplate||Hepatizon Alloy}} || {{ItemLink|Hepatizon Chestplate}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Leggings}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
+| {{Trade|Hepatizon Leggings||Hepatizon Alloy}} || {{ItemLink|Hepatizon Leggings}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Boots}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
+| {{Trade|Hepatizon Boots||Hepatizon Alloy}} || {{ItemLink|Hepatizon Boots}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Sword}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
+| {{Trade|Hepatizon Sword||Hepatizon Alloy}} || {{ItemLink|Hepatizon Sword}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Axe}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
+| {{Trade|Hepatizon Axe||Hepatizon Alloy}} || {{ItemLink|Hepatizon Axe}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Pickaxe}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
+| {{Trade|Hepatizon Pickaxe||Hepatizon Alloy}} || {{ItemLink|Hepatizon Pickaxe}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Shovel}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
+| {{Trade|Hepatizon Shovel||Hepatizon Alloy}} || {{ItemLink|Hepatizon Shovel}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Hoe}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
+| {{Trade|Hepatizon Hoe||Hepatizon Alloy}} || {{ItemLink|Hepatizon Hoe}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Mattock}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
+| {{Trade|Hepatizon Mattock||Hepatizon Alloy}} || {{ItemLink|Hepatizon Mattock}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Dolabra}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
+| {{Trade|Hepatizon Dolabra||Hepatizon Alloy}} || {{ItemLink|Hepatizon Dolabra}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
 |-
-| {{ItemLink|Hepatizon Spear}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
+| {{Trade|Hepatizon Spear||Hepatizon Alloy}} || {{ItemLink|Hepatizon Spear}} || {{ItemLink|Hepatizon Alloy}} || 999 || 10
 |-
-| {{ItemLink|Shakudo Helmet}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
+| {{Trade|Shakudo Helmet||Shakudo Alloy}} || {{ItemLink|Shakudo Helmet}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
 |-
-| {{ItemLink|Shakudo Chestplate}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
+| {{Trade|Shakudo Chestplate||Shakudo Alloy}} || {{ItemLink|Shakudo Chestplate}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
 |-
-| {{ItemLink|Shakudo Leggings}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
+| {{Trade|Shakudo Leggings||Shakudo Alloy}} || {{ItemLink|Shakudo Leggings}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
 |-
-| {{ItemLink|Shakudo Boots}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
+| {{Trade|Shakudo Boots||Shakudo Alloy}} || {{ItemLink|Shakudo Boots}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
 |-
-| {{ItemLink|Shakudo Sword}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
+| {{Trade|Shakudo Sword||Shakudo Alloy}} || {{ItemLink|Shakudo Sword}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
 |-
-| {{ItemLink|Shakudo Axe}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
+| {{Trade|Shakudo Axe||Shakudo Alloy}} || {{ItemLink|Shakudo Axe}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
 |-
-| {{ItemLink|Shakudo Pickaxe}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
+| {{Trade|Shakudo Pickaxe||Shakudo Alloy}} || {{ItemLink|Shakudo Pickaxe}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
 |-
-| {{ItemLink|Shakudo Shovel}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
+| {{Trade|Shakudo Shovel||Shakudo Alloy}} || {{ItemLink|Shakudo Shovel}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
 |-
-| {{ItemLink|Shakudo Hoe}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
+| {{Trade|Shakudo Hoe||Shakudo Alloy}} || {{ItemLink|Shakudo Hoe}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
 |-
-| {{ItemLink|Shakudo Mattock}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
+| {{Trade|Shakudo Mattock||Shakudo Alloy}} || {{ItemLink|Shakudo Mattock}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
 |-
-| {{ItemLink|Shakudo Dolabra}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
+| {{Trade|Shakudo Dolabra||Shakudo Alloy}} || {{ItemLink|Shakudo Dolabra}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
 |-
-| {{ItemLink|Shakudo Spear}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
+| {{Trade|Shakudo Spear||Shakudo Alloy}} || {{ItemLink|Shakudo Spear}} || {{ItemLink|Shakudo Alloy}} || 999 || 10
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

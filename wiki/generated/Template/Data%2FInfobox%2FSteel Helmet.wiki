@@ -15,7 +15,7 @@
 |toughness=1
 |knockbackres=1
 |repair=[[Iron Ingot]]
-|tooltip={{G|Armor}} 2<br />{{G|Armor toughness}} 1<br />{{G|Knockback resistance}} 1<br />Repaired with:<br />Iron Ingot
+|tooltipbox={{Tooltip|Steel Helmet}}
 |id=<code>matcha:steel_helmet</code>
 |base=<code>minecraft:iron_helmet</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_helmet.json|steel_helmet.json}}

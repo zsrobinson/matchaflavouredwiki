@@ -1,8 +1,8 @@
 <includeonly>
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Fisherman]] || Journeyman || 8 × {{ItemLink|Gurnard}} || {{ItemLink|Obol}}
+| [[Fisherman]] || Journeyman || {{Trade|Gurnard,8||Obol}} || 8 × {{ItemLink|Gurnard}} || {{ItemLink|Obol}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

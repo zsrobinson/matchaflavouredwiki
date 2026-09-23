@@ -2,7 +2,9 @@
 * mcw-common[ResourceLoader|type=styles|default|hidden]|mcw-common.css
 * mcw-mainpage[ResourceLoader|type=styles|default|hidden]|mcw-mainpage.css
 * mcw-vector[ResourceLoader|type=styles|skins=vector|default|hidden]|mcw-vector.css
+* mfw-ui[ResourceLoader|type=styles|default|hidden]|mfw-ui.css
 
 ==Core==
 * animatedIcons[ResourceLoader|type=general|default|hidden]|animatedIcons.js
 * mfwShell[ResourceLoader|type=general|skins=vector|default|hidden]|mfwShell.js
+* mfwTooltip[ResourceLoader|type=general|default|hidden]|mfwTooltip.js

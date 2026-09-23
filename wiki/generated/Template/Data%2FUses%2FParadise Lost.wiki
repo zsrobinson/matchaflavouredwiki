@@ -15,11 +15,11 @@
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Archaeologist]] || Journeyman || {{ItemLink|Paradise Lost}} || {{ItemLink|Overgrown Abbey Map}}
+| [[Archaeologist]] || Journeyman || {{Trade|Paradise Lost||Overgrown Abbey Map}} || {{ItemLink|Paradise Lost}} || {{ItemLink|Overgrown Abbey Map}}
 |-
-| [[Mouthpiece]] || Novice || {{ItemLink|Paradise Lost}} || {{ItemLink|Crystal Heart}}
+| [[Mouthpiece]] || Novice || {{Trade|Paradise Lost||Crystal Heart}} || {{ItemLink|Paradise Lost}} || {{ItemLink|Crystal Heart}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

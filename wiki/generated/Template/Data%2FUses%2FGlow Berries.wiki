@@ -3,7 +3,7 @@
 |-
 | [[Glow Berry Mash]]
 | [[Glow Berries]]
-| {{Cooking|station=Kindling|Input=Glow Berries|Output=Glow Berry Mash|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/glow_mash.json|matcha:food/campfire/glow_mash}}</small>
+| {{Cooking|station=Kindling|Input=Glow Berries|Output=Glow Berry Mash|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/glow_mash.json|matcha:food/campfire/glow_mash}}</small>
 |-
 | [[Bubbling Mead]]
 | [[Honey Bottle]] +<br />[[Brown Mushroom]] +<br />2 × [[Sugar]] +<br />[[Sweet Berries]] or [[Apple]] or [[Glow Berries]]
@@ -15,6 +15,6 @@
 |-
 | [[Glow Berry Mash]]
 | [[Glow Berries]]
-| {{Cooking|station=Oven|Input=Glow Berries|Output=Glow Berry Mash|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/glow_mash.json|matcha:food/oven/glow_mash}}</small>
+| {{Cooking|station=Oven|Input=Glow Berries|Output=Glow Berry Mash|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/glow_mash.json|matcha:food/oven/glow_mash}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

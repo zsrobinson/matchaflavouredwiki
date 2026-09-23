@@ -15,7 +15,7 @@
 |attackspeed=0.7
 |miningspeed=8
 |repair=[[Iron Ingot]]
-|tooltip={{G|Mining speed}} 8<br />{{G|Attack damage}} 9<br />{{G|Attack speed}} 0.7<br />{{G|Knockback}} 2<br />Repaired with:<br />Iron Ingot
+|tooltipbox={{Tooltip|Steel Axe}}
 |id=<code>matcha:steel_axe</code>
 |base=<code>minecraft:stone_axe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_axe.json|steel_axe.json}}

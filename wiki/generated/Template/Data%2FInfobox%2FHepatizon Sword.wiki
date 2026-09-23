@@ -6,7 +6,7 @@
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
-|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
 |intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Riposte]] II}}
 |renewable={{{renewable|}}}
 |stackable=No
@@ -15,7 +15,7 @@
 |attackspeed=1.9
 |miningspeed=1.5
 |repair=[[Block of Copper]]
-|tooltip={{G|Attack damage}} 6<br />{{G|Attack speed}} 1.9<br />{{G|Speed}} +0.01<br />Repaired with:<br />Block of Copper
+|tooltipbox={{Tooltip|Hepatizon Sword}}
 |id=<code>matcha:hepatizon_sword</code>
 |base=<code>minecraft:stone_sword</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_sword.json|hepatizon_sword.json}}

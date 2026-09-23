@@ -9,9 +9,9 @@
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Engineer]] || Journeyman || {{ItemLink|Obol}} || 64
+| [[Engineer]] || Journeyman || {{Trade|Obol||Dropper,64}} || {{ItemLink|Obol}} || 64
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

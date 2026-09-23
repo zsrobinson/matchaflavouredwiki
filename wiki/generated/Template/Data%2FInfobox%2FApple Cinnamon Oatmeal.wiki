@@ -13,7 +13,7 @@
 |heals={{Hp|10}}
 |effects={{EffectLink|Speed}} (10:00)<br />{{EffectLink|Regeneration}} (2:00)
 |eat_time=1.8 seconds
-|tooltip=❤❤❤❤❤<br />{{G|Health}} Regen (2:00)<br />🏃 +20% (10:00)
+|tooltipbox={{Tooltip|Apple Cinnamon Oatmeal}}
 |id=<code>matcha:oatmeal</code>
 |base=<code>minecraft:poisonous_potato</code>
 |source={{Source|MF_datapack/data/matcha/recipe/food/crafting/oatmeal.json|oatmeal.json}}

@@ -3,10 +3,10 @@
 |-
 | [[Braised Mushroom]]
 | [[Brown Mushroom]]
-| {{Cooking|station=Kindling|Input=Brown Mushroom|Output=Braised Mushroom|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/braised_brown_mushroom.json|matcha:food/campfire/braised_brown_mushroom}}</small>
+| {{Cooking|station=Kindling|Input=Brown Mushroom|Output=Braised Mushroom|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/braised_brown_mushroom.json|matcha:food/campfire/braised_brown_mushroom}}</small>
 |-
 | [[Braised Mushroom]]
 | [[Brown Mushroom]]
-| {{Cooking|station=Oven|Input=Brown Mushroom|Output=Braised Mushroom|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/braised_brown_mushroom.json|matcha:food/oven/braised_brown_mushroom}}</small>
+| {{Cooking|station=Oven|Input=Brown Mushroom|Output=Braised Mushroom|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/braised_brown_mushroom.json|matcha:food/oven/braised_brown_mushroom}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

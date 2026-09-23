@@ -13,7 +13,7 @@
 |durability=3000
 |miningspeed=15
 |repair=[[Iron Ingot]]
-|tooltip=Repaired with:<br />Iron Ingot
+|tooltipbox={{Tooltip|Steel Shears}}
 |id=<code>matcha:steel_shears</code>
 |base=<code>minecraft:shears</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/steel_shears.json|steel_shears.json}}

@@ -1,44 +1,44 @@
-<includeonly>{| class="wikitable"
-! Level !! Villager wants !! Villager gives !! Uses !! Villager XP
+<includeonly>{| class="wikitable trade-table"
+! Level !! Offer !! Villager wants !! Villager gives !! Uses !! Villager XP
 |-
 ! rowspan="5" | Novice
-| {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Limestone}} || 999 || 5
+| {{Trade|Obol||Bulk Limestone,4}} || {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Limestone}} || 999 || 5
 |-
-| {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Diorite}} || 999 || 5
+| {{Trade|Obol||Bulk Diorite,4}} || {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Diorite}} || 999 || 5
 |-
-| {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Andesite}} || 999 || 5
+| {{Trade|Obol||Bulk Andesite,4}} || {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Andesite}} || 999 || 5
 |-
-| {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Granite}} || 999 || 5
+| {{Trade|Obol||Bulk Granite,4}} || {{ItemLink|Obol}} || 4 × {{ItemLink|Bulk Granite}} || 999 || 5
 |-
-| {{ItemLink|Obol}} || 6 × {{ItemLink|Bulk Dirt}} || 999 || 5
+| {{Trade|Obol||Bulk Dirt,6}} || {{ItemLink|Obol}} || 6 × {{ItemLink|Bulk Dirt}} || 999 || 5
 |-
 ! rowspan="6" | Apprentice
-| {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Deepslate}} || 999 || 15
+| {{Trade|Obol||Bulk Deepslate,2}} || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Deepslate}} || 999 || 15
 |-
-| {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Smooth Red Sandstone}} || 999 || 15
+| {{Trade|Obol||Bulk Smooth Red Sandstone,2}} || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Smooth Red Sandstone}} || 999 || 15
 |-
-| {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Smooth Sandstone}} || 999 || 15
+| {{Trade|Obol||Bulk Smooth Sandstone,2}} || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Smooth Sandstone}} || 999 || 15
 |-
-| {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Tuff}} || 999 || 15
+| {{Trade|Obol||Bulk Tuff,2}} || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Tuff}} || 999 || 15
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Bulk Terracotta}} || 999 || 15
+| {{Trade|Obol||Bulk Terracotta}} || {{ItemLink|Obol}} || {{ItemLink|Bulk Terracotta}} || 999 || 15
 |-
-| {{ItemLink|Obol}} || 3 × {{ItemLink|Bulk Glass}} || 999 || 15
+| {{Trade|Obol||Bulk Glass,3}} || {{ItemLink|Obol}} || 3 × {{ItemLink|Bulk Glass}} || 999 || 15
 |-
 ! rowspan="4" | Journeyman
-| {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Calcite}} || 999 || 15
+| {{Trade|Obol||Bulk Calcite,2}} || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Calcite}} || 999 || 15
 |-
-| {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Flowstone}} || 999 || 15
+| {{Trade|Obol||Bulk Flowstone,2}} || {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Flowstone}} || 999 || 15
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Bulk Prismarine}} || 999 || 25
+| {{Trade|Obol||Bulk Prismarine}} || {{ItemLink|Obol}} || {{ItemLink|Bulk Prismarine}} || 999 || 25
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Bulk Cinnabar}} || 999 || 25
+| {{Trade|Obol||Bulk Cinnabar}} || {{ItemLink|Obol}} || {{ItemLink|Bulk Cinnabar}} || 999 || 25
 |-
 ! rowspan="3" | Expert
-| {{ItemLink|Obol}} || {{ItemLink|Bulk Blackstone}} || 999 || 30
+| {{Trade|Obol||Bulk Blackstone}} || {{ItemLink|Obol}} || {{ItemLink|Bulk Blackstone}} || 999 || 30
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Basalt}} || 999 || 30
+| {{Trade|Obol||Bulk Smooth Basalt}} || {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Basalt}} || 999 || 30
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Quartz}} || 999 || 30
+| {{Trade|Obol||Bulk Smooth Quartz}} || {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Quartz}} || 999 || 30
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

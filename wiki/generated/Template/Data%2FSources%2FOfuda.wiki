@@ -2,17 +2,17 @@
 <div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Mouthpiece]] || Apprentice || {{ItemLink|The Avesta}} + {{ItemLink|Crystal Heart}} || 1
+| [[Mouthpiece]] || Apprentice || {{Trade|The Avesta|Crystal Heart|Ofuda}} || {{ItemLink|The Avesta}} + {{ItemLink|Crystal Heart}} || 1
 |-
-| [[Mouthpiece]] || Apprentice || {{ItemLink|The Quran}} + {{ItemLink|Crystal Heart}} || 1
+| [[Mouthpiece]] || Apprentice || {{Trade|The Quran|Crystal Heart|Ofuda}} || {{ItemLink|The Quran}} + {{ItemLink|Crystal Heart}} || 1
 |-
-| [[Mouthpiece]] || Apprentice || {{ItemLink|The Tanakh}} + {{ItemLink|Crystal Heart}} || 1
+| [[Mouthpiece]] || Apprentice || {{Trade|The Tanakh|Crystal Heart|Ofuda}} || {{ItemLink|The Tanakh}} + {{ItemLink|Crystal Heart}} || 1
 |-
-| [[Mouthpiece]] || Journeyman || {{ItemLink|The Book of Enoch}} + {{ItemLink|Crystal Heart}} || 1
+| [[Mouthpiece]] || Journeyman || {{Trade|The Book of Enoch|Crystal Heart|Ofuda}} || {{ItemLink|The Book of Enoch}} + {{ItemLink|Crystal Heart}} || 1
 |-
-| [[Mouthpiece]] || Expert || {{ItemLink|The Lesser Key of Solomon}} + 2 × {{ItemLink|Crystal Heart}} || 1
+| [[Mouthpiece]] || Expert || {{Trade|The Lesser Key of Solomon|Crystal Heart,2|Ofuda}} || {{ItemLink|The Lesser Key of Solomon}} + 2 × {{ItemLink|Crystal Heart}} || 1
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

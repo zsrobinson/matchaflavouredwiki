@@ -55,9 +55,9 @@
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Weaponsmith]] || Novice || {{ItemLink|Electrum Alloy}} || 2 × {{ItemLink|Silver Bullion}}
+| [[Weaponsmith]] || Novice || {{Trade|Electrum Alloy||Silver Bullion,2}} || {{ItemLink|Electrum Alloy}} || 2 × {{ItemLink|Silver Bullion}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,105 +1,105 @@
-<includeonly>{| class="wikitable"
-! Level !! Villager wants !! Villager gives !! Uses !! Villager XP
+<includeonly>{| class="wikitable trade-table"
+! Level !! Offer !! Villager wants !! Villager gives !! Uses !! Villager XP
 |-
 ! rowspan="1" | Novice
-| {{ItemLink|Obol}} || {{ItemLink|Angler's Almanac}} || 999 || 10
+| {{Trade|Obol||Angler's Almanac}} || {{ItemLink|Obol}} || {{ItemLink|Angler's Almanac}} || 999 || 10
 |-
 ! rowspan="16" | Apprentice
-| 12 × {{ItemLink|Alaska Blackfish}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Alaska Blackfish,12||Obol}} || 12 × {{ItemLink|Alaska Blackfish}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Anchovy}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Anchovy,12||Obol}} || 12 × {{ItemLink|Anchovy}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Bluegill}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Bluegill,12||Obol}} || 12 × {{ItemLink|Bluegill}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Bujurqui}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Bujurqui,12||Obol}} || 12 × {{ItemLink|Bujurqui}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Cod}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Cod,12||Obol}} || 12 × {{ItemLink|Cod}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Crappie}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Crappie,12||Obol}} || 12 × {{ItemLink|Crappie}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Freshwater Puffer}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Freshwater Puffer,12||Obol}} || 12 × {{ItemLink|Freshwater Puffer}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Guppy}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Guppy,12||Obol}} || 12 × {{ItemLink|Guppy}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Humpback Whitefish}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Humpback Whitefish,12||Obol}} || 12 × {{ItemLink|Humpback Whitefish}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Mediterranean Killifish}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Mediterranean Killifish,12||Obol}} || 12 × {{ItemLink|Mediterranean Killifish}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Pufferfish}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Pufferfish,12||Obol}} || 12 × {{ItemLink|Pufferfish}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Rainbow Wrasse}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Rainbow Wrasse,12||Obol}} || 12 × {{ItemLink|Rainbow Wrasse}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Salmon}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Salmon,12||Obol}} || 12 × {{ItemLink|Salmon}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Shad}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Shad,12||Obol}} || 12 × {{ItemLink|Shad}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Striped Perch}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Striped Perch,12||Obol}} || 12 × {{ItemLink|Striped Perch}} || {{ItemLink|Obol}} || 999 || 60
 |-
-| 12 × {{ItemLink|Tropical Fish}} || {{ItemLink|Obol}} || 999 || 60
+| {{Trade|Tropical Fish,12||Obol}} || 12 × {{ItemLink|Tropical Fish}} || {{ItemLink|Obol}} || 999 || 60
 |-
 ! rowspan="10" | Journeyman
-| 8 × {{ItemLink|Black Seabass}} || {{ItemLink|Obol}} || 999 || 120
+| {{Trade|Black Seabass,8||Obol}} || 8 × {{ItemLink|Black Seabass}} || {{ItemLink|Obol}} || 999 || 120
 |-
-| 8 × {{ItemLink|Carp}} || {{ItemLink|Obol}} || 999 || 120
+| {{Trade|Carp,8||Obol}} || 8 × {{ItemLink|Carp}} || {{ItemLink|Obol}} || 999 || 120
 |-
-| 8 × {{ItemLink|Flying Fish}} || {{ItemLink|Obol}} || 999 || 120
+| {{Trade|Flying Fish,8||Obol}} || 8 × {{ItemLink|Flying Fish}} || {{ItemLink|Obol}} || 999 || 120
 |-
-| 8 × {{ItemLink|Gurnard}} || {{ItemLink|Obol}} || 999 || 120
+| {{Trade|Gurnard,8||Obol}} || 8 × {{ItemLink|Gurnard}} || {{ItemLink|Obol}} || 999 || 120
 |-
-| 8 × {{ItemLink|Herring}} || {{ItemLink|Obol}} || 999 || 120
+| {{Trade|Herring,8||Obol}} || 8 × {{ItemLink|Herring}} || {{ItemLink|Obol}} || 999 || 120
 |-
-| 8 × {{ItemLink|Lamprey}} || {{ItemLink|Obol}} || 999 || 120
+| {{Trade|Lamprey,8||Obol}} || 8 × {{ItemLink|Lamprey}} || {{ItemLink|Obol}} || 999 || 120
 |-
-| 8 × {{ItemLink|Mahi mahi}} || {{ItemLink|Obol}} || 999 || 120
+| {{Trade|Mahi mahi,8||Obol}} || 8 × {{ItemLink|Mahi mahi}} || {{ItemLink|Obol}} || 999 || 120
 |-
-| 8 × {{ItemLink|Piranha}} || {{ItemLink|Obol}} || 999 || 120
+| {{Trade|Piranha,8||Obol}} || 8 × {{ItemLink|Piranha}} || {{ItemLink|Obol}} || 999 || 120
 |-
-| 8 × {{ItemLink|Spoonhead Sculpin}} || {{ItemLink|Obol}} || 999 || 120
+| {{Trade|Spoonhead Sculpin,8||Obol}} || 8 × {{ItemLink|Spoonhead Sculpin}} || {{ItemLink|Obol}} || 999 || 120
 |-
-| 8 × {{ItemLink|Walleye}} || {{ItemLink|Obol}} || 999 || 120
+| {{Trade|Walleye,8||Obol}} || 8 × {{ItemLink|Walleye}} || {{ItemLink|Obol}} || 999 || 120
 |-
 ! rowspan="10" | Expert
-| 4 × {{ItemLink|Armoured Catfish}} || {{ItemLink|Obol}} || 999 || 160
+| {{Trade|Armoured Catfish,4||Obol}} || 4 × {{ItemLink|Armoured Catfish}} || {{ItemLink|Obol}} || 999 || 160
 |-
-| 4 × {{ItemLink|Catfish}} || {{ItemLink|Obol}} || 999 || 160
+| {{Trade|Catfish,4||Obol}} || 4 × {{ItemLink|Catfish}} || {{ItemLink|Obol}} || 999 || 160
 |-
-| 4 × {{ItemLink|Flounder}} || {{ItemLink|Obol}} || 999 || 160
+| {{Trade|Flounder,4||Obol}} || 4 × {{ItemLink|Flounder}} || {{ItemLink|Obol}} || 999 || 160
 |-
-| 4 × {{ItemLink|Gar}} || {{ItemLink|Obol}} || 999 || 160
+| {{Trade|Gar,4||Obol}} || 4 × {{ItemLink|Gar}} || {{ItemLink|Obol}} || 999 || 160
 |-
-| 4 × {{ItemLink|Monkfish}} || {{ItemLink|Obol}} || 999 || 160
+| {{Trade|Monkfish,4||Obol}} || 4 × {{ItemLink|Monkfish}} || {{ItemLink|Obol}} || 999 || 160
 |-
-| 4 × {{ItemLink|Northern Pike}} || {{ItemLink|Obol}} || 999 || 160
+| {{Trade|Northern Pike,4||Obol}} || 4 × {{ItemLink|Northern Pike}} || {{ItemLink|Obol}} || 999 || 160
 |-
-| 4 × {{ItemLink|Painted Moray}} || {{ItemLink|Obol}} || 999 || 160
+| {{Trade|Painted Moray,4||Obol}} || 4 × {{ItemLink|Painted Moray}} || {{ItemLink|Obol}} || 999 || 160
 |-
-| 4 × {{ItemLink|Sturgeon}} || {{ItemLink|Obol}} || 999 || 160
+| {{Trade|Sturgeon,4||Obol}} || 4 × {{ItemLink|Sturgeon}} || {{ItemLink|Obol}} || 999 || 160
 |-
-| 4 × {{ItemLink|Tunisian Barb}} || {{ItemLink|Obol}} || 999 || 160
+| {{Trade|Tunisian Barb,4||Obol}} || 4 × {{ItemLink|Tunisian Barb}} || {{ItemLink|Obol}} || 999 || 160
 |-
-| 4 × {{ItemLink|Wolffish}} || {{ItemLink|Obol}} || 999 || 160
+| {{Trade|Wolffish,4||Obol}} || 4 × {{ItemLink|Wolffish}} || {{ItemLink|Obol}} || 999 || 160
 |-
 ! rowspan="11" | Master
-| {{ItemLink|Arapaima}} || {{ItemLink|Obol}} || 999 || 75
+| {{Trade|Arapaima||Obol}} || {{ItemLink|Arapaima}} || {{ItemLink|Obol}} || 999 || 75
 |-
-| {{ItemLink|Bass}} || {{ItemLink|Obol}} || 999 || 75
+| {{Trade|Bass||Obol}} || {{ItemLink|Bass}} || {{ItemLink|Obol}} || 999 || 75
 |-
-| {{ItemLink|European Eel}} || {{ItemLink|Obol}} || 999 || 75
+| {{Trade|European Eel||Obol}} || {{ItemLink|European Eel}} || {{ItemLink|Obol}} || 999 || 75
 |-
-| {{ItemLink|Muskellunge}} || {{ItemLink|Obol}} || 999 || 75
+| {{Trade|Muskellunge||Obol}} || {{ItemLink|Muskellunge}} || {{ItemLink|Obol}} || 999 || 75
 |-
-| {{ItemLink|Oarfish}} || {{ItemLink|Obol}} || 999 || 75
+| {{Trade|Oarfish||Obol}} || {{ItemLink|Oarfish}} || {{ItemLink|Obol}} || 999 || 75
 |-
-| {{ItemLink|Siberian Sturgeon}} || {{ItemLink|Obol}} || 999 || 75
+| {{Trade|Siberian Sturgeon||Obol}} || {{ItemLink|Siberian Sturgeon}} || {{ItemLink|Obol}} || 999 || 75
 |-
-| {{ItemLink|Skate}} || {{ItemLink|Obol}} || 999 || 75
+| {{Trade|Skate||Obol}} || {{ItemLink|Skate}} || {{ItemLink|Obol}} || 999 || 75
 |-
-| {{ItemLink|Blue Marlin}} || {{ItemLink|Obol}} || 999 || 75
+| {{Trade|Blue Marlin||Obol}} || {{ItemLink|Blue Marlin}} || {{ItemLink|Obol}} || 999 || 75
 |-
-| {{ItemLink|Echo Eel}} || {{ItemLink|Obol}} || 999 || 75
+| {{Trade|Echo Eel||Obol}} || {{ItemLink|Echo Eel}} || {{ItemLink|Obol}} || 999 || 75
 |-
-| 2 × {{ItemLink|Creaking Fish}} || {{ItemLink|Obol}} || 999 || 75
+| {{Trade|Creaking Fish,2||Obol}} || 2 × {{ItemLink|Creaking Fish}} || {{ItemLink|Obol}} || 999 || 75
 |-
-| {{ItemLink|Opah}} || {{ItemLink|Obol}} || 999 || 75
+| {{Trade|Opah||Obol}} || {{ItemLink|Opah}} || {{ItemLink|Obol}} || 999 || 75
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

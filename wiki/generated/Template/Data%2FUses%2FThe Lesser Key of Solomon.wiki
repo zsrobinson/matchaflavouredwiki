@@ -15,9 +15,9 @@
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Mouthpiece]] || Expert || {{ItemLink|The Lesser Key of Solomon}} + 2 × {{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Mending]]</small>
+| [[Mouthpiece]] || Expert || {{Trade|The Lesser Key of Solomon|Crystal Heart,2|Ofuda}} || {{ItemLink|The Lesser Key of Solomon}} + 2 × {{ItemLink|Crystal Heart}} || {{ItemLink|Ofuda}}<br /><small>[[Mending]]</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

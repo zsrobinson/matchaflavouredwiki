@@ -14,7 +14,7 @@
 |damage={{Hp|4}}
 |miningspeed=9
 |repair=[[Block of Copper]]
-|tooltip={{G|Mining speed}} 9<br />{{G|Attack damage}} 4<br />{{G|Attack speed}} 1.2<br />Repaired with:<br />Block of Copper
+|tooltipbox={{Tooltip|Shakudo Pickaxe}}
 |id=<code>matcha:shakudo_pickaxe</code>
 |base=<code>minecraft:stone_pickaxe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_pickaxe.json|shakudo_pickaxe.json}}

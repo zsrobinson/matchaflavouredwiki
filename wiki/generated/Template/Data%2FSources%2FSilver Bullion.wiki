@@ -20,9 +20,9 @@
 |}
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Weaponsmith]] || Novice || {{ItemLink|Electrum Alloy}} || 2
+| [[Weaponsmith]] || Novice || {{Trade|Electrum Alloy||Silver Bullion,2}} || {{ItemLink|Electrum Alloy}} || 2
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

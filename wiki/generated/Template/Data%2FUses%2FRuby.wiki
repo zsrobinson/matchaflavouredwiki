@@ -1,10 +1,10 @@
 <includeonly>
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Wants !! Gives
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Wants !! Gives
 |-
-| [[Jeweler]] || Apprentice || 4 × {{ItemLink|Obol}} + {{ItemLink|Ruby}} || {{ItemLink|Ruby Circlet}}<br /><small>{{G|Fire resistance}} [[Fire Resistance|∞ Fire Resistance]]</small>
+| [[Jeweler]] || Apprentice || {{Trade|Obol,4|Ruby|Ruby Circlet}} || 4 × {{ItemLink|Obol}} + {{ItemLink|Ruby}} || {{ItemLink|Ruby Circlet}}<br /><small>{{G|Fire resistance}} [[Fire Resistance|∞ Fire Resistance]]</small>
 |-
-| [[Jeweler]] || Master || {{ItemLink|Ruby}} || 8 × {{ItemLink|Obol}}
+| [[Jeweler]] || Master || {{Trade|Ruby||Obol,8}} || {{ItemLink|Ruby}} || 8 × {{ItemLink|Obol}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

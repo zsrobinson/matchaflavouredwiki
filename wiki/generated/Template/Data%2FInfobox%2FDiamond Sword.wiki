@@ -6,7 +6,7 @@
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
-|type={{#if:{{{type|}}}|{{{type}}}|Tool}}
+|type={{#if:{{{type|}}}|{{{type}}}|Weapon}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
 |stackable=No
@@ -15,7 +15,7 @@
 |attackspeed=1.6
 |miningspeed=1.5
 |repair=[[Diamond]]
-|tooltip={{G|Attack damage}} 7<br />{{G|Attack speed}} 1.6
+|tooltipbox={{Tooltip|Diamond Sword}}
 |id=<code>minecraft:diamond_sword</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/diamond_sword.json|diamond_sword.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

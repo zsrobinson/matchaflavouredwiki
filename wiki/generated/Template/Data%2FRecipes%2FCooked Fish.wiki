@@ -3,18 +3,18 @@
 |-
 | [[Cooked Fish]]
 | [[Cod]]
-| {{Cooking|station=Kindling|Input=Cod|Output=Cooked Fish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_cod.json|matcha:food/campfire/cooked_cod}}</small>
+| {{Cooking|station=Kindling|Input=Cod|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_cod.json|matcha:food/campfire/cooked_cod}}</small>
 |-
 | [[Cooked Fish]]
 | [[Tropical Fish]]
-| {{Cooking|station=Kindling|Input=Tropical Fish|Output=Cooked Fish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_tropical_fish.json|matcha:food/campfire/cooked_tropical_fish}}</small>
+| {{Cooking|station=Kindling|Input=Tropical Fish|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_tropical_fish.json|matcha:food/campfire/cooked_tropical_fish}}</small>
 |-
 | [[Cooked Fish]]
 | [[Cod]]
-| {{Cooking|station=Oven|Input=Cod|Output=Cooked Fish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_cod.json|matcha:food/oven/cooked_cod}}</small>
+| {{Cooking|station=Oven|Input=Cod|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_cod.json|matcha:food/oven/cooked_cod}}</small>
 |-
 | [[Cooked Fish]]
 | [[Tropical Fish]]
-| {{Cooking|station=Oven|Input=Tropical Fish|Output=Cooked Fish|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_tropical_fish.json|matcha:food/oven/cooked_tropical_fish}}</small>
+| {{Cooking|station=Oven|Input=Tropical Fish|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_tropical_fish.json|matcha:food/oven/cooked_tropical_fish}}</small>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

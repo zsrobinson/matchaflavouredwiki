@@ -1,33 +1,33 @@
-<includeonly>{| class="wikitable"
-! Level !! Villager wants !! Villager gives !! Uses !! Villager XP
+<includeonly>{| class="wikitable trade-table"
+! Level !! Offer !! Villager wants !! Villager gives !! Uses !! Villager XP
 |-
 ! rowspan="4" | Novice
-| 4 × {{ItemLink|Obol}} +<br />{{ItemLink|Opal}} || {{ItemLink|Opal Earrings}}<br /><small>{{G|Water}} [[Conduit Power|∞ Conduit Power]]</small> || 999 || 10
+| {{Trade|Obol,4|Opal|Opal Earrings}} || 4 × {{ItemLink|Obol}} +<br />{{ItemLink|Opal}} || {{ItemLink|Opal Earrings}}<br /><small>{{G|Water}} [[Conduit Power|∞ Conduit Power]]</small> || 999 || 10
 |-
-| {{ItemLink|Obol}} +<br />2 × {{ItemLink|Diamond}} || {{ItemLink|Diamond Earrings}} || 999 || 10
+| {{Trade|Obol|Diamond,2|Diamond Earrings}} || {{ItemLink|Obol}} +<br />2 × {{ItemLink|Diamond}} || {{ItemLink|Diamond Earrings}} || 999 || 10
 |-
-| {{ItemLink|Obol}} +<br />2 × {{ItemLink|Amethyst Shard}} || {{ItemLink|Amethyst Earrings}} || 999 || 10
+| {{Trade|Obol|Amethyst Shard,2|Amethyst Earrings}} || {{ItemLink|Obol}} +<br />2 × {{ItemLink|Amethyst Shard}} || {{ItemLink|Amethyst Earrings}} || 999 || 10
 |-
-| {{ItemLink|Obol}} +<br />2 × {{ItemLink|Lapis Lazuli|mcw=Lapis Lazuli}} || {{ItemLink|Lapis Earrings}} || 999 || 10
+| {{Trade|Obol|Lapis Lazuli,2|Lapis Earrings}} || {{ItemLink|Obol}} +<br />2 × {{ItemLink|Lapis Lazuli|mcw=Lapis Lazuli}} || {{ItemLink|Lapis Earrings}} || 999 || 10
 |-
 ! rowspan="1" | Apprentice
-| 4 × {{ItemLink|Obol}} +<br />{{ItemLink|Ruby}} || {{ItemLink|Ruby Circlet}}<br /><small>{{G|Fire resistance}} [[Fire Resistance|∞ Fire Resistance]]</small> || 999 || 70
+| {{Trade|Obol,4|Ruby|Ruby Circlet}} || 4 × {{ItemLink|Obol}} +<br />{{ItemLink|Ruby}} || {{ItemLink|Ruby Circlet}}<br /><small>{{G|Fire resistance}} [[Fire Resistance|∞ Fire Resistance]]</small> || 999 || 70
 |-
 ! rowspan="1" | Journeyman
-| 8 × {{ItemLink|Obol}} +<br />{{ItemLink|Amber}} || {{ItemLink|Amber Earrings}}<br /><small>{{G|Health}} [[Regeneration|∞ Regeneration]]</small> || 999 || 150
+| {{Trade|Obol,8|Amber|Amber Earrings}} || 8 × {{ItemLink|Obol}} +<br />{{ItemLink|Amber}} || {{ItemLink|Amber Earrings}}<br /><small>{{G|Health}} [[Regeneration|∞ Regeneration]]</small> || 999 || 150
 |-
 ! rowspan="2" | Expert
-| 10 × {{ItemLink|Obol}} +<br />2 × {{ItemLink|Hepatizon Alloy}} || {{ItemLink|Hepatizon Laurel}} || 999 || 250
+| {{Trade|Obol,10|Hepatizon Alloy,2|Hepatizon Laurel}} || 10 × {{ItemLink|Obol}} +<br />2 × {{ItemLink|Hepatizon Alloy}} || {{ItemLink|Hepatizon Laurel}} || 999 || 250
 |-
-| 14 × {{ItemLink|Obol}} +<br />{{ItemLink|Topaz}} || {{ItemLink|Topaz Earrings}}<br /><small>{{G|Mining speed}} [[Haste|∞ Haste]]</small> || 999 || 200
+| {{Trade|Obol,14|Topaz|Topaz Earrings}} || 14 × {{ItemLink|Obol}} +<br />{{ItemLink|Topaz}} || {{ItemLink|Topaz Earrings}}<br /><small>{{G|Mining speed}} [[Haste|∞ Haste]]</small> || 999 || 200
 |-
 ! rowspan="4" | Master
-| {{ItemLink|Topaz}} || 10 × {{ItemLink|Obol}} || 999 || 
+| {{Trade|Topaz||Obol,10}} || {{ItemLink|Topaz}} || 10 × {{ItemLink|Obol}} || 999 || 
 |-
-| {{ItemLink|Opal}} || 4 × {{ItemLink|Obol}} || 999 || 
+| {{Trade|Opal||Obol,4}} || {{ItemLink|Opal}} || 4 × {{ItemLink|Obol}} || 999 || 
 |-
-| {{ItemLink|Amber}} || 4 × {{ItemLink|Obol}} || 999 || 
+| {{Trade|Amber||Obol,4}} || {{ItemLink|Amber}} || 4 × {{ItemLink|Obol}} || 999 || 
 |-
-| {{ItemLink|Ruby}} || 8 × {{ItemLink|Obol}} || 999 || 
+| {{Trade|Ruby||Obol,8}} || {{ItemLink|Ruby}} || 8 × {{ItemLink|Obol}} || 999 || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

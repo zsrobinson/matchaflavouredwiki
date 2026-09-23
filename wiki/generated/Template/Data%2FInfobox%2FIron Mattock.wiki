@@ -14,7 +14,7 @@
 |damage={{Hp|4}}
 |miningspeed=6
 |repair=[[Iron Ingot]]
-|tooltip={{G|Mining speed}} 6<br />{{G|Attack damage}} 4<br />{{G|Attack speed}} 3
+|tooltipbox={{Tooltip|Iron Mattock}}
 |id=<code>matcha:iron_mattock</code>
 |base=<code>minecraft:iron_hoe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/crafting/iron_mattock.json|iron_mattock.json}}

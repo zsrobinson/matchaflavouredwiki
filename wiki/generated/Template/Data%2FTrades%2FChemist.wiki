@@ -1,19 +1,19 @@
-<includeonly>{| class="wikitable"
-! Level !! Villager wants !! Villager gives !! Uses !! Villager XP
+<includeonly>{| class="wikitable trade-table"
+! Level !! Offer !! Villager wants !! Villager gives !! Uses !! Villager XP
 |-
 ! rowspan="7" | Novice
-| {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Infestation}} || 999 || 20
+| {{Trade|Obol||Splash Potion of Infestation,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Infestation}} || 999 || 20
 |-
-| {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Oozing}} || 999 || 20
+| {{Trade|Obol||Splash Potion of Oozing,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Oozing}} || 999 || 20
 |-
-| {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Darkness}} || 999 || 20
+| {{Trade|Obol||Splash Potion of Darkness,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Darkness}} || 999 || 20
 |-
-| {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Slowness}} || 999 || 20
+| {{Trade|Obol||Splash Potion of Slowness,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Slowness}} || 999 || 20
 |-
-| {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Weaving}} || 999 || 20
+| {{Trade|Obol||Splash Potion of Weaving,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Weaving}} || 999 || 20
 |-
-| {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Wind Charging}} || 999 || 20
+| {{Trade|Obol||Splash Potion of Wind Charging,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Wind Charging}} || 999 || 20
 |-
-| {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Wither}} || 999 || 20
+| {{Trade|Obol||Splash Potion of Wither,16}} || {{ItemLink|Obol}} || 16 × {{ItemLink|Splash Potion of Wither}} || 999 || 20
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

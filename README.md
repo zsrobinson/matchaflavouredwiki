@@ -73,6 +73,7 @@ transcript.txt          the developer's introduction video, used for design inte
 tools/
   extract.py            source → build/data.json (items, recipes, loot, trades, enchantments, advancements)
   images.py             textures → build/images (item icons, isometric block icons, tooltip glyphs)
+                        and site/assets/gui (the pack's station screens, sprites, glyph sheet)
   generate.py           data.json → wiki/generated (infobox/recipe/usage/drop/trade tables, stubs, redirects)
   build_xml.py          wiki/pages + wiki/generated → build/import.xml
   build.sh / sync.sh    full rebuild / fast incremental import

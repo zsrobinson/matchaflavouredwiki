@@ -2,9 +2,9 @@
 <div style="font-size:90%;margin:0.5em 0">Chance is the probability that a single chest, mob or catch yields at least one, assuming no Looting, Luck or Fortune.</div>
 
 '''Trading'''
-{| class="wikitable"
-! Villager !! Level !! Price !! Quantity
+{| class="wikitable trade-table"
+! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Jeweler]] || Novice || {{ItemLink|Obol}} + 2 × {{ItemLink|Lapis Lazuli|mcw=Lapis Lazuli}} || 1
+| [[Jeweler]] || Novice || {{Trade|Obol|Lapis Lazuli,2|Lapis Earrings}} || {{ItemLink|Obol}} + 2 × {{ItemLink|Lapis Lazuli|mcw=Lapis Lazuli}} || 1
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

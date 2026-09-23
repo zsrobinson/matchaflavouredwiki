@@ -3,7 +3,7 @@
 |-
 | [[Gravel]]
 | [[Cobbled Deepslate]] or [[Cobblestone]]
-| {{Cooking|station=Blast Furnace|Input=Cobbled Deepslate;Cobblestone|Output=Gravel|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/gravel.json|matcha:blast/gravel}}</small>
+| {{Cooking|station=Blast Furnace|Input=Cobbled Deepslate;Cobblestone|Output=Gravel|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/gravel.json|matcha:blast/gravel}}</small>
 |-
 | [[Chemistry Stand]]
 | [[Iron Ingot]] +<br />[[Copper Ingot]] +<br />3 × <span class="explain" title="Cobblestone, Blackstone, Cobbled Deepslate">Any stone crafting materials</span>
@@ -19,7 +19,7 @@
 |-
 | [[Deepslate]]
 | [[Cobbled Deepslate]]
-| {{Cooking|station=Mud Kiln|Input=Cobbled Deepslate|Output=Deepslate|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/deepslate.json|matcha:kiln/deepslate}}</small>
+| {{Cooking|station=Mud Kiln|Input=Cobbled Deepslate|Output=Deepslate|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/deepslate.json|matcha:kiln/deepslate}}</small>
 |-
 | [[Chiseled Deepslate]] <small>(vanilla recipe)</small>
 | [[Cobbled Deepslate]]

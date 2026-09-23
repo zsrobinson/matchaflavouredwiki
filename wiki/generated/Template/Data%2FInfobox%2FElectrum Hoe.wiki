@@ -15,7 +15,7 @@
 |attackspeed=4
 |miningspeed=12
 |repair=[[Block of Diamond]]
-|tooltip={{G|Mining speed}} 12<br />{{G|Attack damage}} 1<br />{{G|Attack speed}} 4<br />Repaired with:<br />Block of Diamond
+|tooltipbox={{Tooltip|Electrum Hoe}}
 |id=<code>matcha:electrum_hoe</code>
 |base=<code>minecraft:netherite_hoe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_hoe.json|electrum_hoe.json}}

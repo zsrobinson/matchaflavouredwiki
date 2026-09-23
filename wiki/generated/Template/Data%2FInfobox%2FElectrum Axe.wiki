@@ -15,7 +15,7 @@
 |attackspeed=1.2
 |miningspeed=12
 |repair=[[Block of Diamond]]
-|tooltip={{G|Mining speed}} 12<br />{{G|Attack damage}} 9<br />{{G|Attack speed}} 1.2<br />Repaired with:<br />Block of Diamond
+|tooltipbox={{Tooltip|Electrum Axe}}
 |id=<code>matcha:electrum_axe</code>
 |base=<code>minecraft:netherite_axe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_axe.json|electrum_axe.json}}
