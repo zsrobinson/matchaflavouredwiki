@@ -337,6 +337,9 @@ def main():
         for r in pool.map(job, sorted(exportable.items())):
             done[r] += 1
 
+    if done['error']:
+        raise RuntimeError('Static export failed for %d pages; refusing to publish a partial site' % done['error'])
+
     # site furniture
     os.makedirs(os.path.join(out, '_static'), exist_ok=True)
     with open(os.path.join(out, '_static', 'site.js'), 'w') as f:
@@ -364,6 +367,7 @@ def main():
     search = re.sub(r'<h1 id="firstHeading"[^>]*>.*?</h1>', '<h1 id="firstHeading" class="firstHeading">Search results</h1>', search, flags=re.S)
     search = re.sub(r'<title>.*?</title>', '<title>Search - Matcha Flavoured Wiki</title>', search)
     search = re.sub(r'<div id="catlinks".*?</div></div>', '', search, flags=re.S)
+    search = seo.utility_page(search, 'Search results')
     os.makedirs(os.path.join(out, 'search'), exist_ok=True)
     open(os.path.join(out, 'search', 'index.html'), 'w', encoding='utf-8').write(search)
     root_redirect = ('<!doctype html><meta charset="utf-8"><title>Matcha Flavoured Wiki</title>'
@@ -380,9 +384,10 @@ def main():
                     'fetch("/search.json").then(function(r){return r.json()}).then(function(ts){'
                     'var want=decodeURIComponent(m[1]).replace(/_/g," ").toLowerCase();'
                     'for(var i=0;i<ts.length;i++){if(ts[i].toLowerCase()===want){location.replace("/w/"+encodeURIComponent(ts[i].replace(/ /g,"_")));return}}})})();</script></head>', 1)
+    nf = seo.utility_page(nf, 'Page not found')
     open(os.path.join(out, '404.html'), 'w', encoding='utf-8').write(nf)
     # host hints: Netlify/Cloudflare Pages redirects, and disable Jekyll on GitHub Pages
-    ex.redirects['Main_Page'] = '/w/Matcha_Flavoured_Wiki'
+    ex.redirects['Main_Page'] = '/'
     seo.write_site_files(out, ex.indexed, ex.redirects, titles)
     open(os.path.join(out, '.nojekyll'), 'w').close()
     # full-text search index (Pagefind); the component UI is served from /pagefind/

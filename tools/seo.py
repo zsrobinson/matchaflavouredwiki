@@ -16,10 +16,9 @@ import urllib.parse
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.environ.get('SITE_URL', 'https://matchaflavou.red').rstrip('/')
 SITE_NAME = 'Matcha Flavoured Wiki'
-DEFAULT_DESC = ('The encyclopedia of Matcha Flavoured (also spelled Matcha Flavored), the Minecraft datapack '
-                'by Klei Wright: food and intrinsics, alloys and tools, crafted enchanting, death and crystal '
-                'hearts, trading, fishing and every recipe, written from the pack\'s source code.')
-MAIN_TITLE = 'Matcha Flavoured Wiki: the Matcha Flavored Minecraft datapack encyclopedia'
+DEFAULT_DESC = ('Unofficial Matcha Flavoured wiki for the Minecraft datapack: recipes, alloys, food, '
+                'enchanting and progression guides verified against the pack’s source code.')
+MAIN_TITLE = 'Matcha Flavoured Wiki – Minecraft Datapack Recipes & Guides'
 
 
 def page_url(title):
@@ -142,6 +141,46 @@ def apply(doc, title, info):
     return doc
 
 
+def utility_page(doc, title):
+    """A search/error shell is not the homepage or an indexable article."""
+    doc = re.sub(r'<link rel="canonical"[^>]*>\s*', '', doc)
+    doc = re.sub(r'<meta (?:property="og:[^"]*"|name="twitter:[^"]*"|name="robots"|name="description")[^>]*>\s*', '', doc)
+    doc = re.sub(r'<script type="application/ld\+json">.*?</script>\s*', '', doc, flags=re.S)
+    doc = re.sub(r'<title>.*?</title>', '<title>%s – %s</title>' % (html.escape(title), SITE_NAME), doc, flags=re.S)
+    return doc.replace('</head>', '<meta name="robots" content="noindex, follow">\n</head>', 1)
+
+
+def resolve_redirects(redirects, titles):
+    """Collapse aliases to real pages, preserving fragments; reject broken chains."""
+    canonical = {t.lower().replace(' ', '_'): t for t in titles}
+    resolved = {}
+    for alias, target in redirects.items():
+        seen = {alias}
+        fragment = ''
+        while True:
+            path, separator, anchor = target.partition('#')
+            if separator:
+                fragment = '#' + anchor
+            if path == '/':
+                resolved[alias] = '/' + fragment
+                break
+            if not path.startswith('/w/'):
+                raise ValueError('Non-wiki redirect target: %s -> %s' % (alias, target))
+            key = urllib.parse.unquote(path[3:]).replace(' ', '_')
+            if key in seen:
+                raise ValueError('Redirect cycle: %s -> %s' % (alias, key))
+            seen.add(key)
+            if key in redirects:
+                target = redirects[key]
+                continue
+            title = canonical.get(key.lower())
+            if title is None:
+                raise ValueError('Missing redirect target: %s -> %s' % (alias, key))
+            resolved[alias] = page_url(title).removeprefix(SITE) + fragment
+            break
+    return resolved
+
+
 def categories(doc):
     m = re.search(r'<div id="mw-normal-catlinks".*?</div>', doc, re.S)
     if not m:
@@ -164,7 +203,7 @@ def write_site_files(out, indexed, redirects, titles):
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
                 '\n'.join(urls) + '\n</urlset>\n')
     with open(os.path.join(out, 'robots.txt'), 'w') as f:
-        f.write('User-agent: *\nAllow: /\nDisallow: /search/\nDisallow: /pagefind/\n\nSitemap: %s/sitemap.xml\n' % SITE)
+        f.write('User-agent: *\nAllow: /\nDisallow: /pagefind/\n\nSitemap: %s/sitemap.xml\n' % SITE)
     with open(os.path.join(out, '_headers'), 'w') as f:
         f.write('/_rl/*\n  Cache-Control: public, max-age=86400, stale-while-revalidate=604800\n'
                 '/assets/*\n  Cache-Control: public, max-age=604800\n'
@@ -172,7 +211,7 @@ def write_site_files(out, indexed, redirects, titles):
                 '/pagefind/*\n  Cache-Control: public, max-age=3600\n'
                 '/w/*\n  Cache-Control: public, max-age=300, stale-while-revalidate=86400\n')
     # Worker redirect table: exact redirects and a lowercase index of real titles
-    table = {'redirects': redirects, 'titles': {t.lower().replace(' ', '_'): t.replace(' ', '_') for t in titles}}
+    table = {'redirects': resolve_redirects(redirects, titles), 'titles': {t.lower().replace(' ', '_'): t.replace(' ', '_') for t in titles}}
     os.makedirs(os.path.join(ROOT, 'src'), exist_ok=True)
     with open(os.path.join(ROOT, 'src', 'redirects.json'), 'w', encoding='utf-8') as f:
         json.dump(table, f, ensure_ascii=False, separators=(',', ':'))
