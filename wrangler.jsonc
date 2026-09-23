@@ -5,6 +5,9 @@
   "name": "matcha-flavoured-wiki",
   "main": "src/worker.js",
   "compatibility_date": "2026-09-01",
+  // PR previews: .github/workflows/check.yml uploads each PR as a version with a pr-<number> alias
+  // (https://pr-<number>-matcha-flavoured-wiki.<account>.workers.dev) without deploying it
+  "preview_urls": true,
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",

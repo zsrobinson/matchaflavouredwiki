@@ -11,10 +11,16 @@ HUD hearts and glyph sheet at 2x, for Module:Station, Module:Tooltip and {{Hp}}.
 
 Icons are upscaled with nearest-neighbour to 128px so MediaWiki thumbnails stay crisp.
 Block items get a simple isometric cube render (slabs are half height).
+
+The output depends only on the inputs hashed in input_hash(); when they are unchanged since the
+last run (build/images/.inputs) nothing is redrawn. --force redraws anyway.
 """
+import hashlib
 import json
 import os
 import re
+import sys
+from multiprocessing import Pool
 
 from PIL import Image, ImageDraw
 
@@ -338,23 +344,51 @@ def glyph_widths():
     return widths
 
 
+def input_hash():
+    """Everything the images are drawn from: this script, the item data, the texture list, and the
+    pinned pack and Minecraft versions (which fix every texture under source/)."""
+    h = hashlib.sha1()
+    for rel in ('tools/images.py', 'build/data.json', 'tools/extra_textures.txt', 'tools/source.lock',
+                'tools/mc_version.txt'):
+        path = os.path.join(ROOT, rel)
+        h.update(rel.encode() + b'\0')
+        if os.path.exists(path):
+            h.update(open(path, 'rb').read())
+    return h.hexdigest()
+
+
+def draw_icon(entry):
+    """Draw and save one item icon (runs in a worker process)."""
+    key, item = entry
+    try:
+        im = item_icon(item)
+    except Exception as e:  # a broken texture should not stop the build
+        return 'icon failed %s %s' % (key, e)
+    if im is None:
+        return None
+    im.save(os.path.join(OUT, safe(key) + '.png'))
+    return 'ok'
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
+    stamp = os.path.join(OUT, '.inputs')
+    digest = input_hash()
+    if '--force' not in sys.argv and os.path.exists(stamp) and open(stamp).read() == digest:
+        print('images up to date (%d files)' % sum(1 for f in os.listdir(OUT) if f.endswith(('.png', '.gif'))))
+        return
     print('gui art', len(gui_assets()))
     data = json.load(open(os.path.join(ROOT, 'build', 'data.json'), encoding='utf-8'))
     done = skipped = 0
-    for key, item in sorted(data['items'].items()):
-        fn = os.path.join(OUT, safe(key) + '.png')
-        try:
-            im = item_icon(item)
-        except Exception as e:  # a broken texture should not stop the build
-            print('icon failed', key, e)
-            im = None
-        if im is None:
+    # the isometric cubes are drawn texel by texel in Python: spread them over every core
+    with Pool() as pool:
+        for result in pool.imap(draw_icon, sorted(data['items'].items()), chunksize=16):
+            if result == 'ok':
+                done += 1
+                continue
+            if result:
+                print(result)
             skipped += 1
-            continue
-        im.save(fn)
-        done += 1
     extra = os.path.join(ROOT, 'tools', 'extra_textures.txt')
     if os.path.exists(extra):
         for line in open(extra):
@@ -371,7 +405,8 @@ def main():
             else:
                 upscale(Image.open(faces[0])).save(os.path.join(OUT, name))
     print('icons', done, 'no icon', skipped, 'glyphs', glyphs())
-
+    with open(stamp, 'w') as f:
+        f.write(digest)
 
 if __name__ == '__main__':
     main()

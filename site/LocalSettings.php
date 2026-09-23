@@ -72,6 +72,16 @@ $wgMemCachedServers = [];
 # Build-time renderer: always render fresh so template and data changes show immediately.
 $wgParserCacheType = CACHE_NONE;
 $wgJobRunRate = 1;
+# One-shot builds (CI sets MFW_BUILD_MODE=ci) start from an empty database, so nothing can go
+# stale: tools/build.sh parses each page once into the parser cache (site/renderPages.php) and the
+# check and export reuse it. Page views run no jobs, because a job that touches pages would
+# invalidate that cache.
+if ( getenv( 'MFW_BUILD_MODE' ) === 'ci' ) {
+	$wgParserCacheType = CACHE_DB;
+	$wgJobRunRate = 0;
+}
+# The limit report is an HTML comment with timings in it, which made every export differ
+$wgEnableParserLimitReporting = false;
 
 $wgEnableUploads = true;
 $wgFileExtensions = [ 'png', 'gif', 'jpg', 'jpeg', 'webp', 'svg' ];

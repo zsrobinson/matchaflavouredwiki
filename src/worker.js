@@ -46,6 +46,13 @@ export default {
     if (target.toString() !== url.toString()) {
       return Response.redirect(target.toString(), 301);
     }
-    return env.ASSETS.fetch(request);
+    const response = await env.ASSETS.fetch(request);
+    if (!preview) {
+      return response;
+    }
+    // PR previews and the workers.dev address are copies of the site: keep them out of search
+    const headers = new Headers(response.headers);
+    headers.set("X-Robots-Tag", "noindex");
+    return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
   },
 };
