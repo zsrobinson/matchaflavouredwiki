@@ -96,8 +96,9 @@
 	#p-search #searchform { margin: 0; padding: 0; }
 	#p-search input { font-size: 16px; }  /* keeps iOS from zooming in on focus */
 
-	/* Menu drawer: the sidebar slides in from the left over a dimmed page, as a plain list */
-	div#mw-navigation div#mw-panel {
+	/* Menu drawer: the sidebar slides in from the left over a dimmed page, as a plain list (without
+	   the script, html.mfw-js is missing and the sidebar stays a list below the page) */
+	.mfw-js div#mw-navigation div#mw-panel {
 		position: fixed !important;
 		inset: 0 auto 0 0;
 		width: min(80vw, 300px);
@@ -112,7 +113,7 @@
 		visibility: hidden;
 		z-index: 101;
 	}
-	body.mfw-menu-open div#mw-navigation div#mw-panel { transform: none; visibility: visible; }
+	.mfw-js body.mfw-menu-open div#mw-navigation div#mw-panel { transform: none; visibility: visible; transition: transform 0.2s; }  /* focusable at once */
 	body.mfw-menu-open::after { content: ''; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.4); z-index: 100; }
 	div#mw-panel nav.vector-menu-portal, div#mw-panel nav.vector-menu-portal .vector-menu-content, div#mw-panel .vector-menu-content-list {
 		display: block !important;  /* sections collapsed on desktop still show */
@@ -131,13 +132,24 @@
 		pointer-events: none;
 	}
 	div#mw-panel nav.vector-menu-portal h3::before { content: none; }
-	div#mw-panel li, #mfw-drawer-dark { margin: 0; padding: 0; font-size: 1rem; font-weight: bold; border-bottom: 1px solid var(--border-color-subtle); }
-	div#mw-panel a, div#mw-panel *:not(h3) > a:not(:hover):not(:focus) {
+	div#mw-panel h3 .vector-menu-heading-label { margin: 0; padding: 0; }
+	div#mw-panel li { margin: 0; padding: 0; font-size: 1rem; font-weight: bold; border-bottom: 1px solid var(--border-color-subtle); }
+	div#mw-panel a, div#mw-panel *:not(h3) > a:not(:hover):not(:focus), div#mw-panel #mfw-drawer-dark {
 		display: flex;
 		align-items: center;
 		gap: 10px;
 		padding: 10px 16px !important;
 		color: var(--color-base) !important;
+	}
+	div#mw-panel #mfw-drawer-dark {
+		width: 100%;
+		border: 0;
+		border-bottom: 1px solid var(--border-color-subtle);
+		background: none;
+		font: inherit;
+		font-size: 1rem;
+		font-weight: bold;
+		cursor: pointer;
 	}
 
 	/* Content: full width on the header's colour */
@@ -185,6 +197,7 @@
 		cursor: pointer;
 	}
 	.mw-parser-output .mfw-section-heading h2 { margin: 0; padding: 0; border: 0; font-size: 1.5rem; }
+	.mfw-section-toggle { margin: 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: inherit; cursor: pointer; }
 	.mw-parser-output .mfw-section-heading::before {
 		content: '';
 		width: 7px;
@@ -196,7 +209,7 @@
 		opacity: 0.7;
 	}
 	.mw-parser-output .mfw-section-heading.mfw-open::before { margin-bottom: -4px; transform: rotate(-135deg); }
-	.mfw-section { padding-top: 0.5em; }
+	.mfw-section:not([hidden]) { padding-top: 0.5em; }
 
 	/* Boxes take the full width; wide tables scroll sideways instead of widening the page */
 	.notaninfobox { float: none !important; margin: 0.5em auto 1em !important; width: auto !important; }
