@@ -469,9 +469,12 @@ def stack_variant(stack, functions=()):
             return '%s (enchanted)' % name if names else None
         if f in ('enchant_randomly', 'enchant_with_levels'):
             opt = fn.get('options')
-            if base == 'enchanted_book' and f == 'enchant_randomly' and isinstance(opt, str) and not opt.startswith('#'):
-                ns, e = opt.split(':') if ':' in opt else ('minecraft', opt)
-                return '%s (%s)' % (name, strip_codes(LANG.get('enchantment.%s.%s' % (ns, e), e.replace('_', ' ').title())))
+            opts = [opt] if isinstance(opt, str) else opt if isinstance(opt, list) else []
+            if base == 'enchanted_book' and f == 'enchant_randomly' and opts and len(opts) <= 6 \
+                    and not any(o.startswith('#') for o in opts):
+                names = [strip_codes(LANG.get('enchantment.%s.%s' % tuple(norm_id(o).split(':')), norm_id(o).split(':')[-1].replace('_', ' ').title()))
+                         for o in opts]  # a fixed short list: name it ("Breach or Density")
+                return '%s (%s)' % (name, or_list(names))
             return '%s (%s)' % (name, 'random enchantment' if base == 'enchanted_book' else 'enchanted')
     return None
 
@@ -658,16 +661,18 @@ def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
                     count = fn.get('count')
                 elif fname == 'set_lore':
                     stack['components']['minecraft:lore'] = fn.get('lore')
-                elif fname in ('enchant_randomly', 'enchant_with_levels', 'set_enchantments') and norm_id(stack['id']) == 'minecraft:book':
-                    stack['id'] = 'minecraft:enchanted_book'  # enchanting a book turns it into an enchanted book
-                elif fname == 'exploration_map' and norm_id(stack['id']) == 'minecraft:map':
-                    stack['id'] = 'minecraft:filled_map'  # the function turns an empty map into a filled explorer map
+            fns = e.get('functions', []) + list(pool_fns)  # pool functions apply to every entry
+            fnames = {fn.get('function', '').split(':')[-1] for fn in fns}
+            if fnames & {'enchant_randomly', 'enchant_with_levels', 'set_enchantments'} and norm_id(stack['id']) == 'minecraft:book':
+                stack['id'] = 'minecraft:enchanted_book'  # enchanting a book turns it into an enchanted book
+            if 'exploration_map' in fnames and norm_id(stack['id']) == 'minecraft:map':
+                stack['id'] = 'minecraft:filled_map'  # the function turns an empty map into a filled explorer map
             key = register(stack, src, 'loot')
             ent = {'item': key, 'id': norm_id(stack['id']), 'weight': e.get('weight', 1),
                    'quality': e.get('quality'), 'count': count,
                    'conditions': e.get('conditions'), 'functions': [f.get('function') for f in e.get('functions', [])],
                    **pool_ctx}
-            variant = stack_variant(stack, e.get('functions', []) + list(pool_fns))  # pool functions apply to every entry
+            variant = stack_variant(stack, fns)
             if variant:
                 ent['variant'] = variant
             comps = stack['components']

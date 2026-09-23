@@ -900,10 +900,14 @@ def item_icon(item):
     node = icon.get('gui') or {}
     kind = node.get('type', '').split(':')[-1]
     im = None
-    if kind == 'special':
-        im = special_icon(item, node)
-    elif kind in ('model', 'composite'):
-        im = model_icon(item, node)
+    try:
+        if kind == 'special':
+            im = special_icon(item, node)
+        elif kind in ('model', 'composite'):
+            im = model_icon(item, node)
+    except Exception as e:  # a broken special or model render falls back to the plain texture or cube
+        print('icon: %s render failed for %s (%s); using the texture icon' % (kind, item.get('name'), e))
+        im = None
     if im is not None:
         return im
     faces = {k: os.path.join(ROOT, v) for k, v in icon['faces'].items()}
