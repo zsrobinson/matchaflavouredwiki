@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 314" width="760" height="314" font-family='"Liberation Sans", Arial, Helvetica, FreeSans, sans-serif' role="img">
+<title>The chance of junk, treasure or fish on one cast, and of each fish in a climate table</title>
+<text x="143.6" y="18" font-size="11.5" fill="#a9afb7" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Junk</text>
+<rect x="112" y="30" width="63.2" height="26" fill="#474d59" stroke="#a9afb7" stroke-width="1" rx="3"/>
+<text x="143.6" y="43" font-size="11.5" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">10%</text>
+<rect x="112" y="70" width="63.2" height="26" fill="#474d59" stroke="#a9afb7" stroke-width="1" rx="3"/>
+<text x="143.6" y="83" font-size="11.5" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">10.53%</text>
+<text x="191" y="18" font-size="11.5" fill="#e6ad4f" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Treasure</text>
+<rect x="175.2" y="30" width="31.6" height="26" fill="#58431f" stroke="#e6ad4f" stroke-width="1" rx="3"/>
+<text x="191" y="43" font-size="11.5" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">5%</text>
+<rect x="175.2" y="70" width="31.6" height="26" fill="none" stroke="#7d848d" stroke-width="1" rx="3" stroke-dasharray="3 3"/>
+<text x="475.4" y="18" font-size="11.5" fill="#8eaaec" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Fish</text>
+<rect x="206.8" y="30" width="537.2" height="26" fill="#2e3f63" stroke="#8eaaec" stroke-width="1" rx="3"/>
+<text x="475.4" y="43" font-size="11.5" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">85%</text>
+<rect x="206.8" y="70" width="537.2" height="26" fill="#2e3f63" stroke="#8eaaec" stroke-width="1" rx="3"/>
+<text x="475.4" y="83" font-size="11.5" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">89.47%</text>
+<text x="102" y="43" font-size="13" fill="#eaecf0" text-anchor="end" dominant-baseline="middle">Open water</text>
+<text x="102" y="83" font-size="13" fill="#eaecf0" text-anchor="end" dominant-baseline="middle">Other water</text>
+<path d="M206.8 96 L744 96 L744 144 L112 144" fill="#2e3f63" fill-opacity="0.45"/>
+<text x="102" y="149" font-size="13" fill="#eaecf0" text-anchor="end" dominant-baseline="middle">Fish</text>
+<text x="102" y="165" font-size="11.5" fill="#aeb4bb" text-anchor="end" dominant-baseline="middle">temperate freshwater</text>
+<text x="428" y="120" font-size="11.5" fill="#aeb4bb" text-anchor="middle" dominant-baseline="middle">Every climate table: 15, 15, 8, 3, 1 of 42</text>
+<rect x="112" y="144" width="225.71" height="26" fill="#2e3f63" stroke="#8eaaec" stroke-width="1" rx="3"/>
+<text x="224.86" y="157" font-size="11.5" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">15</text>
+<line x1="224.86" y1="172" x2="224.86" y2="178" stroke="#7d848d" stroke-width="1"/>
+<line x1="224.86" y1="178" x2="224.86" y2="196" stroke="#7d848d" stroke-width="1"/>
+<image x="210.86" y="202" width="28" height="28" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB6UlEQVR42u1YMUhCURRViQqHiGiprKEIMXQSoYggRJqiaA0cmiqipbU9GloDh6aElopQihaJQoKwUckcCq2fRSEIEgUhtnbu8H8vvj/Bc7bD++/9x+Ge++69NhtBEM0Me6NfMLwSrv3k0e2oqXd2NHsEUADmgAb3vMfngfVsOmszMyfQAhSgydFitacljDxcKVeAu/pdptYJtAAFYB1g7TsuPa09asBjV7fAp4PDwL1DXt3/q9YJtAAFYB1gbe0u12P7+p6XmO0qAd+8eNU9fzA0Afe7TyTtjAAKQAH+XgcYeV4ic5dROj/oKgM/0zqBL/Rha7F4rOmeJz3PCKAAFMDcOkDW9oVSQcnjRlgP9ACPHCaFx1OcCVIACmBhDrjM5YGPOqumel6++2OYAmzlbreo9dtqKu8+I4ACUAC1HLA0MwB87+lTyfNru29K/b589436fZmTGAEUgAKYOw/o8AdqKh6WMJrjyxlfsVgEft3uA75zcKrU7zMCKAAFqO88IH2UAF6dnAM+soWeDS234jzhHc+Lp3C+cFLCmd+UswCejzACKAAF+NccID0/f36j+/3qRg7nCaFe4F8fL3b0PO6PxB8YARSAAljYCxj1BhLu/LPufv+4w15PTzMCKAAFIAiCIAiC+BW+AYSelk1z5QXPAAAAAElFTkSuQmCC" style="image-rendering:pixelated"/>
+<text x="224.86" y="242" font-size="13" fill="#eaecf0" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Bluegill</text>
+<path d="M203.86 254 L205.44 257.82 L209.56 258.15 L206.42 260.83 L207.38 264.85 L203.86 262.7 L200.33 264.85 L201.29 260.83 L198.15 258.15 L202.27 257.82 L203.86 254" fill="#a9afb7"/>
+<path d="M217.86 254 L219.44 257.82 L223.56 258.15 L220.42 260.83 L221.38 264.85 L217.86 262.7 L214.33 264.85 L215.29 260.83 L212.15 258.15 L216.27 257.82 L217.86 254" fill="none" stroke="#7d848d" stroke-width="1" stroke-linejoin="miter"/>
+<path d="M231.86 254 L233.44 257.82 L237.56 258.15 L234.42 260.83 L235.38 264.85 L231.86 262.7 L228.33 264.85 L229.29 260.83 L226.15 258.15 L230.27 257.82 L231.86 254" fill="none" stroke="#7d848d" stroke-width="1" stroke-linejoin="miter"/>
+<path d="M245.86 254 L247.44 257.82 L251.56 258.15 L248.42 260.83 L249.38 264.85 L245.86 262.7 L242.33 264.85 L243.29 260.83 L240.15 258.15 L244.27 257.82 L245.86 254" fill="none" stroke="#7d848d" stroke-width="1" stroke-linejoin="miter"/>
+<text x="224.86" y="282" font-size="13" fill="#eaecf0" font-weight="bold" text-anchor="middle" dominant-baseline="middle">30.36%</text>
+<text x="224.86" y="302" font-size="13" fill="#aeb4bb" text-anchor="middle" dominant-baseline="middle">31.95%</text>
+<rect x="337.71" y="144" width="225.71" height="26" fill="#2e3f63" stroke="#8eaaec" stroke-width="1" rx="3"/>
+<text x="450.57" y="157" font-size="11.5" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">15</text>
+<line x1="450.57" y1="172" x2="450.57" y2="178" stroke="#7d848d" stroke-width="1"/>
+<line x1="450.57" y1="178" x2="450.57" y2="196" stroke="#7d848d" stroke-width="1"/>
+<image x="436.57" y="202" width="28" height="28" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB8ElEQVR42u1ZMUhCURR9li1RKAUNH1PKIIMIXIIQF3GqDCpqEIJoCKcGySVoqqmiIZdqiCAQKmxpaBGXcHFuMKLBEqGgKAghomzt3uF+Hn4r8Jzt8P5//7/DPefd/75SAAAAAAA0Kmz//QVXdw4Iv73PVH9yb3eYrGFtaUFr/qZGrwAIgAyoM6KJaFUaT22mbDqe7/oskvHHZo+qJRNgAQiADKiv50OuF/H6bMkpeji5kSTzdfjayPUrkXat+XgmwAIQABlQX89fFV8JH/Q4xPHDk4qSPG+GiaEvsU/gfQcsAAEaHHarJzTztFIVrfnGOt+px0e8hM9sFajn/QNiH6BUChUAASCAhX1AbzhI+oDnwpu4j/PxuUAL4bHpoPi83fQl4c5ATFwDzgNgAQhgbR9Qq+dz2yHCHf0h8Xk31znCj3IfhI+66Zkh7/VRARAAAvzut8D54jDh5XK5Js+bgf8n4OcTZpkAC0AAfAvo7fvc44F4Vryf7/scPCPsRg/hk/ELwudnWwnnZ4z8vwAyABaAANZmAO/tzTwf2c8TvjfuItwwDDFTrPY8KgACQAC9DHC6/CQDTpd9ood5r897+7N0Rnzek7tPawG6nkcFQAAIoJcBHOuJKZIJD3clrfuTx3kbKgACQAAAAAAAAIA/xzcyPJqJmNVZWAAAAABJRU5ErkJggg==" style="image-rendering:pixelated"/>
+<text x="450.57" y="242" font-size="13" fill="#eaecf0" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Crappie</text>
+<path d="M429.57 254 L431.16 257.82 L435.28 258.15 L432.14 260.83 L433.1 264.85 L429.57 262.7 L426.04 264.85 L427 260.83 L423.87 258.15 L427.98 257.82 L429.57 254" fill="#a9afb7"/>
+<path d="M443.57 254 L445.16 257.82 L449.28 258.15 L446.14 260.83 L447.1 264.85 L443.57 262.7 L440.04 264.85 L441 260.83 L437.87 258.15 L441.98 257.82 L443.57 254" fill="none" stroke="#7d848d" stroke-width="1" stroke-linejoin="miter"/>
+<path d="M457.57 254 L459.16 257.82 L463.28 258.15 L460.14 260.83 L461.1 264.85 L457.57 262.7 L454.04 264.85 L455 260.83 L451.87 258.15 L455.98 257.82 L457.57 254" fill="none" stroke="#7d848d" stroke-width="1" stroke-linejoin="miter"/>
+<path d="M471.57 254 L473.16 257.82 L477.28 258.15 L474.14 260.83 L475.1 264.85 L471.57 262.7 L468.04 264.85 L469 260.83 L465.87 258.15 L469.98 257.82 L471.57 254" fill="none" stroke="#7d848d" stroke-width="1" stroke-linejoin="miter"/>
+<text x="450.57" y="282" font-size="13" fill="#eaecf0" font-weight="bold" text-anchor="middle" dominant-baseline="middle">30.36%</text>
+<text x="450.57" y="302" font-size="13" fill="#aeb4bb" text-anchor="middle" dominant-baseline="middle">31.95%</text>
+<rect x="563.43" y="144" width="120.38" height="26" fill="#2e3f63" stroke="#8eaaec" stroke-width="1" rx="3"/>
+<text x="623.62" y="157" font-size="11.5" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">8</text>
+<line x1="623.62" y1="172" x2="623.62" y2="178" stroke="#7d848d" stroke-width="1"/>
+<line x1="623.62" y1="178" x2="568" y2="196" stroke="#7d848d" stroke-width="1"/>
+<image x="554" y="202" width="28" height="28" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACiElEQVR42u1aTUhUYRR9T7R0EYalIqWiRDDkIiGGkce4KKGVGm4inRYJQpsEXbhz5U4owdkEgrOQEdyozKpFCTYMDiqYkemmppoBGRUxDEq0pqWdK9zH440Tw5y7O/PN973H4Z77891nGnlujW3+jLbe0/HE/BeP9PfCepFR4EYCCp0AM981f7syCut1NRbgyPsiNSZQAiSgwK34vB8wPD6Z1fPCkZCq+W/bMcD7W814QAc9gASQADd1gJ2mw5FQxs0LyTy9sdQL5w3duQf/H119o573btcvYsIPegAJIAEOYoBTzfuaa9X//0pNO3pBmeeb6ssRnxyp+zcTacAD8yX0ABJAApQY4FbzdhqXmpYmNf7h63e11r/2xwt4Knasnn+QWuN9AAkgAVm8D5Cad6rxlhoP4Il4HHCfzwd4+S3GBE/DJfGEQ0CXraecC1ACJCCL9wFdjwyoA9qvNMH6+gXUeOeNm4A/HafV82Xel/tnFzfU/XaapweQABLgrA6w07ynoRrw7+KLgKuuVmAM2E6rmpd5f3juOeBb1qQat+w0Tw8gASRAjwHyPkDO4gwjqsYAabK2lyY1v7O3r/b7bjVPDyABJECPAfLOT87SjErDUS0vNS5Nav7LxxXAPV6MMeHYy4zbfoYeQAJIwKl+ZN4PjgbV+f6rAaztf5bVqbW/neaD0ZCjvB+cWTbpASSABGQvBshvb8f9WBoEJg4Ajz3A2Zu39b6q8TO9QQLn+fG1JODPr6MmPYAEkIDc9QKy1g9s6RvsNC/zeun1bnoACSABeXQfEHtxV9W4NbgA+LGF393NzmB/3tiWVHuLXOd9egAJIAHYC8gfnj30ZnLZj9MDSAAJ+K/2F+kdyBissGVhAAAAAElFTkSuQmCC" style="image-rendering:pixelated"/>
+<text x="568" y="242" font-size="13" fill="#eaecf0" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Carp</text>
+<path d="M547 254 L548.59 257.82 L552.71 258.15 L549.57 260.83 L550.53 264.85 L547 262.7 L543.47 264.85 L544.43 260.83 L541.29 258.15 L545.41 257.82 L547 254" fill="#7fc45d"/>
+<path d="M561 254 L562.59 257.82 L566.71 258.15 L563.57 260.83 L564.53 264.85 L561 262.7 L557.47 264.85 L558.43 260.83 L555.29 258.15 L559.41 257.82 L561 254" fill="#7fc45d"/>
+<path d="M575 254 L576.59 257.82 L580.71 258.15 L577.57 260.83 L578.53 264.85 L575 262.7 L571.47 264.85 L572.43 260.83 L569.29 258.15 L573.41 257.82 L575 254" fill="none" stroke="#7d848d" stroke-width="1" stroke-linejoin="miter"/>
+<path d="M589 254 L590.59 257.82 L594.71 258.15 L591.57 260.83 L592.53 264.85 L589 262.7 L585.47 264.85 L586.43 260.83 L583.29 258.15 L587.41 257.82 L589 254" fill="none" stroke="#7d848d" stroke-width="1" stroke-linejoin="miter"/>
+<text x="568" y="282" font-size="13" fill="#eaecf0" font-weight="bold" text-anchor="middle" dominant-baseline="middle">16.19%</text>
+<text x="568" y="302" font-size="13" fill="#aeb4bb" text-anchor="middle" dominant-baseline="middle">17.04%</text>
+<rect x="683.81" y="144" width="45.14" height="26" fill="#2e3f63" stroke="#8eaaec" stroke-width="1" rx="3"/>
+<text x="706.38" y="157" font-size="11.5" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">3</text>
+<line x1="706.38" y1="172" x2="706.38" y2="178" stroke="#7d848d" stroke-width="1"/>
+<line x1="706.38" y1="178" x2="644" y2="196" stroke="#7d848d" stroke-width="1"/>
+<image x="630" y="202" width="28" height="28" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB+0lEQVR42u2ZPUjDYBCGExEnUdCOFSwI/iyCe0DESYqLgxQU1EGkQRc7aoYWXOwkWETwZxA6qajgICKBjoLo4g8IXcRJBd10qWvvkO840khK33c7Qhp4uPe9+77aVp0rPdpdqa47xz27us4tzRnfb7IaXADQ6ADseve8Oz9Bnm9uH1qaTIAFAAAZEG2tbuyS+v00SzJgzEmQ54n+IVK73h6p/ccPGx0AAAAQnQyQPM51//JF6oF4mxUkE2ABAEAGRHuuc52Xyqrv8czAHgALAABRc9ie5udxyaOW4HF+/i8/3JA6X7wjtZPOk+876AAAAIBAe4DkeemOLugu3947QuqpyWmj57lwJwgLAIBuD+Cel8TnMpfkeS7u+c+nK3QAAABAhPaAUiFTMXmcS/J82HMfHQAAAGDeA3piLcTTKW8r0L1hUM+vLbvGPYJnEL/zQwcAAACYM4DP9WJ2wfiCdu5rPb9/sGO8P+Die4AvzH10AAAAAD0LaOe+lAHaOz3u+e+upGqO55SeRwcAAACYM+D57Yd4cLivw+j5i9tXUp8UFlW7PZf0fz46AAAAoLYZIN0HxGOt5HkmNWic88fX5v/3L8981W4fdM6jAwAAAHQZwPXHfQHJiJnZJHm+sn5ka34vbI+jAwAAAGqbAVw8E7TiZw90AAAAwL/qF5EJsjLsq22mAAAAAElFTkSuQmCC" style="image-rendering:pixelated"/>
+<text x="644" y="242" font-size="13" fill="#eaecf0" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Catfish</text>
+<path d="M623 254 L624.59 257.82 L628.71 258.15 L625.57 260.83 L626.53 264.85 L623 262.7 L619.47 264.85 L620.43 260.83 L617.29 258.15 L621.41 257.82 L623 254" fill="#62c7ba"/>
+<path d="M637 254 L638.59 257.82 L642.71 258.15 L639.57 260.83 L640.53 264.85 L637 262.7 L633.47 264.85 L634.43 260.83 L631.29 258.15 L635.41 257.82 L637 254" fill="#62c7ba"/>
+<path d="M651 254 L652.59 257.82 L656.71 258.15 L653.57 260.83 L654.53 264.85 L651 262.7 L647.47 264.85 L648.43 260.83 L645.29 258.15 L649.41 257.82 L651 254" fill="#62c7ba"/>
+<path d="M665 254 L666.59 257.82 L670.71 258.15 L667.57 260.83 L668.53 264.85 L665 262.7 L661.47 264.85 L662.43 260.83 L659.29 258.15 L663.41 257.82 L665 254" fill="none" stroke="#7d848d" stroke-width="1" stroke-linejoin="miter"/>
+<text x="644" y="282" font-size="13" fill="#eaecf0" font-weight="bold" text-anchor="middle" dominant-baseline="middle">6.07%</text>
+<text x="644" y="302" font-size="13" fill="#aeb4bb" text-anchor="middle" dominant-baseline="middle">6.39%</text>
+<rect x="728.95" y="144" width="15.05" height="26" fill="#2e3f63" stroke="#8eaaec" stroke-width="1" rx="3"/>
+<text x="736.48" y="157" font-size="11.5" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">1</text>
+<line x1="736.48" y1="172" x2="736.48" y2="178" stroke="#7d848d" stroke-width="1"/>
+<line x1="736.48" y1="178" x2="720" y2="196" stroke="#7d848d" stroke-width="1"/>
+<image x="706" y="202" width="28" height="28" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACKElEQVR42u2bzytEURTH38jGZqRREzV+TywQImVKlIUFs1IWQo2FiTJlMSuSlA0pFspiRFgwUvwJahYTC8WCGBlELwuZsrAaW+cs7nV6nqH5nt23+2benW/3c+49571xGCymV9aJnpsIGJkMPp+d3Zn0Vz3QP+uwMt8cI8sDBmS7AY6/PsHu3jzCvNPpIuOnd/Qn3MYeHFgBMAAGfDty/9uEi92lRDcbSXaFJy3JCUAABuAcYO/Z/Sa+RJisap1Unt35vt/X1UnGL5Jvyvs/mUnROQEIwADkAHuZd7vzybhpUoZfUwlDwnxtKf2++b1z5fxwDgACMOBnc4CUeV1wpjnzun0dPUEgAAPs7Qdw5qXBGeehY57X/343/Tx/TiDNa0AABiAHyEK371tlfim8RvTwVJBol5Mi31zG74CeIBCAAXbmAF6/L4T3ldcvbs6LmL++ihFd5y0h+ih+b6n+xwqAATBAdm7W9emt7vM82seCynGr9T9WAAyAAeocwJmv8TaJzvqVRQ1EJ57PRDmD7/M/zTxWAAyAAbJaQMd8Y0E50c6Xd6K9HeOi2uC3X10EAjAAOUAW/Hn88SplPBU9JPqR1fd8n4+EhmjOqPYRvbEdSduZJIAADEAOkEV01K8cN+sLiR5Z3iI60NZCdOzkUqk/PD2M+QOsABgAA2zsB1T46LO1SGhQuU/renjSPj1WAAyAAZnNAbqcIGVc945Rpv+bDARgQJbHJ7qFxDPGX/dDAAAAAElFTkSuQmCC" style="image-rendering:pixelated"/>
+<text x="720" y="242" font-size="13" fill="#eaecf0" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Bass</text>
+<path d="M699 254 L700.59 257.82 L704.71 258.15 L701.57 260.83 L702.53 264.85 L699 262.7 L695.47 264.85 L696.43 260.83 L693.29 258.15 L697.41 257.82 L699 254" fill="#b89fe8"/>
+<path d="M713 254 L714.59 257.82 L718.71 258.15 L715.57 260.83 L716.53 264.85 L713 262.7 L709.47 264.85 L710.43 260.83 L707.29 258.15 L711.41 257.82 L713 254" fill="#b89fe8"/>
+<path d="M727 254 L728.59 257.82 L732.71 258.15 L729.57 260.83 L730.53 264.85 L727 262.7 L723.47 264.85 L724.43 260.83 L721.29 258.15 L725.41 257.82 L727 254" fill="#b89fe8"/>
+<path d="M741 254 L742.59 257.82 L746.71 258.15 L743.57 260.83 L744.53 264.85 L741 262.7 L737.47 264.85 L738.43 260.83 L735.29 258.15 L739.41 257.82 L741 254" fill="#b89fe8"/>
+<text x="720" y="282" font-size="13" fill="#eaecf0" font-weight="bold" text-anchor="middle" dominant-baseline="middle">2.02%</text>
+<text x="720" y="302" font-size="13" fill="#aeb4bb" text-anchor="middle" dominant-baseline="middle">2.13%</text>
+<text x="102" y="282" font-size="13" fill="#eaecf0" text-anchor="end" dominant-baseline="middle">Per cast</text>
+<text x="102" y="302" font-size="13" fill="#aeb4bb" text-anchor="end" dominant-baseline="middle">In other water</text>
+</svg>

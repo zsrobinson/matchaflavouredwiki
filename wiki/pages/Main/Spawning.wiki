@@ -29,6 +29,8 @@ Removed mobs are teleported 1,000 blocks down and then killed, so they drop noth
 
 Because the check tests whether the mob can see the sky rather than its light level, spiders, endermen, witches and the other non-undead mobs can still appear on the surface wherever the sky is blocked, for example under dense leaves or overhangs. Creepers can't, because of their additional height limit.
 
+{{Diagram|Surface spawning|caption=Where mundane hostile mobs can appear in the Overworld before and after the Ender Dragon is killed.}}
+
 == Mob modifications ==
 {{Main|Difficulty#Mob modifications}}
 Each mob that passes the surface check is modified according to the difficulty the pack read when the world loaded:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/modify_mob.mcfunction}}</ref>

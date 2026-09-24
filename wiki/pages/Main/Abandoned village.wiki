@@ -101,6 +101,7 @@ The chests contain:
 The hopper holds a [[music disc]] of '''Dry Hands''' by C418, locked by the redstone block beside it.
 
 === Behavior ===
+{{Diagram|Mannequin|width=360|align=right|caption=The haunted house seen from above, with the distances from the mannequin that start the music and make it vanish, drawn to scale.}}
 The scene is run by functions that check every tick:<ref>{{Source|MF_datapack/data/matcha/function/environmental/village_eerie_sound.mcfunction}}</ref>
 * Entering any village structure grants the hidden advancement <code>matcha:mechanics/enter_village</code>, which sets the player's <code>eerie</code> score to 1. Leaving the village resets the score and the advancement.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/enter_village.json}}</ref>
 * While a player's <code>eerie</code> score is 1, all background [[music]] is stopped for that player.

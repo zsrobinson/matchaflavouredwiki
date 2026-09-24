@@ -1,9 +1,10 @@
 """The world: where ores generate, the moon's cycle, water in Hell and where hostile mobs may spawn."""
 import json
 import os
+import re
 
-from diagrams import (PACK_DATA, SMALL, TEXT, VANILLA_DATA, Scale, Svg, data, diagram, legend, mcfunction, need,
-                      pack_json, text_width)
+from diagrams import (PACK_DATA, SMALL, VANILLA_DATA, Scale, Svg, data, diagram, legend, mcfunction, need, pack_file,
+                      pack_json)
 
 
 # ---------------------------------------------------------------------------------------------
@@ -156,16 +157,7 @@ def ore_heights():
     noise = pack_json('minecraft/worldgen/noise_settings/overworld.json')
     sea = noise['sea_level']
 
-    def gradient(o):  # the deepslate layer: the surface rule's vertical gradient
-        if isinstance(o, dict):
-            if o.get('random_name') == 'minecraft:deepslate':
-                return o
-            o = list(o.values())
-        for v in o if isinstance(o, list) else []:
-            g = gradient(v)
-            if g:
-                return g
-    g = gradient(noise['surface_rule'])
+    g = _gradient(noise['surface_rule'], 'minecraft:deepslate')  # the deepslate layer's vertical gradient
     slate_full = _anchor(g['true_at_and_below'], bottom, top)
     slate_none = _anchor(g['false_at_and_above'], bottom, top)
 
@@ -359,10 +351,270 @@ def moon_phases():
             svg.line(x(t), top - 4, x(t), name_y + 22, stroke='@rule', dash='2 3')
     svg.behind(backdrop)
     for d in range(days + 1):
-        svg.text(x(d * day), bottom + 16, '%d' % (d % days), size=SMALL, fill='@muted', anchor='middle')
+        svg.text(x(d * day), bottom + 16, '%d' % d, size=SMALL, fill='@muted', anchor='middle')
     svg.text((left + right) / 2, bottom + 34, 'Days into the cycle (1 day = %s ticks)' % format(day, ','), size=SMALL,
              fill='@muted', anchor='middle')
     ly = bottom + 60
     legend(svg, left, ly, [('@blue_soft', 'Night', 'box'), ('@rule', 'Phase changes', 'dash')])
     svg.h = ly + 14
+    return svg
+
+
+# ---------------------------------------------------------------------------------------------
+# Hell: where water is cleared, as a cross-section to scale
+
+def _gradient(rule, name):
+    """The surface rule's vertical gradient with this random name (bedrock floor and roof, deepslate)."""
+    if isinstance(rule, dict):
+        if rule.get('random_name') == name:
+            return rule
+        rule = list(rule.values())
+    for v in rule if isinstance(rule, list) else []:
+        g = _gradient(v, name)
+        if g:
+            return g
+
+
+@diagram('Hell water')
+def hell_water():
+    pred = pack_json('matcha/predicate/invalid_nether_water.json')
+    pos = pred['terms'][0]['predicate']['minecraft:location']['position']['y']
+    lo, hi = pos['min'], pos['max']
+    src = mcfunction('matcha/function/environmental/nether_water.mcfunction')
+    # three fills (2, 10 and 20 blocks) run one after another; the largest covers the others
+    fill = r'fill ~-(\d+) ~-\1 ~-\1 ~\1 ~\1 ~\1 air replace water'
+    need(fill, src, 'the water fill', cast=int)
+    reach = max(int(r) for r in re.findall(fill, src))
+    noise = pack_json('minecraft/worldgen/noise_settings/nether.json')
+    bottom = noise['noise']['min_y']
+    top = bottom + noise['noise']['height'] - 1
+    floor = _gradient(noise['surface_rule'], 'minecraft:bedrock_floor')
+    roof = _gradient(noise['surface_rule'], 'minecraft:bedrock_roof')
+
+    W = 360
+    y_top = hi + 1 + 36  # a little of the space above the roof
+    y = Scale(bottom, y_top, 330, 20)
+    k = (y(0) - y(1))  # pixels per block, the same across
+    left, right = 56, 56 + 104 * k
+    svg = Svg(W, 0, 'A cross-section of Hell: where emptying a water bucket clears the water around the player')
+
+    # the two zones
+    svg.rect(left, y(hi + 1), right - left, y(lo) - y(hi + 1), fill='@red_soft')
+    svg.rect(left, y(y_top), right - left, y(hi + 1) - y(y_top), fill='@blue_soft')
+    # bedrock: solid at the floor and roof, thinning out over the gradient
+    for g, solid in ((floor, bottom), (roof, top)):
+        a = _anchor(g['true_at_and_below'], bottom, top)
+        b = _anchor(g['false_at_and_above'], bottom, top)
+        lo_b, hi_b = min(a, b), max(a, b)
+        svg.rect(left, y(hi_b + 1), right - left, y(lo_b) - y(hi_b + 1), fill='@grey', opacity=0.35)
+        svg.rect(left, y(solid + 1), right - left, y(solid) - y(solid + 1), fill='@grey')
+    svg.rect(left, y(y_top), right - left, y(bottom) - y(y_top), fill='none', stroke='@panel_edge')
+
+    # a player low down in Hell, and the cube the fill clears around them, to scale
+    py = lo + 44
+    px = (left + right) / 2
+    svg.rect(px - reach * k, y(py + reach + 1), (2 * reach + 1) * k, (2 * reach + 1) * k, fill='none', stroke='@red',
+             sw=1.5, dash='5 3')
+    svg.icon('Water Bucket', px, y(py + 0.5), 22)
+    svg.text(px, y(py - reach) + 14, '%d × %d × %d blocks cleared' % ((2 * reach + 1,) * 3), size=SMALL, fill='@red',
+             anchor='middle')
+    # on the roof, water stays
+    svg.icon('Water Bucket', px, y(hi + 1) - 12, 22)
+
+    # labels to the right
+    tx = right + 12
+    svg.text(tx, (y(hi + 1) + y(y_top)) / 2 - 8, 'Water stays', bold=True, fill='@blue')
+    svg.text(tx, (y(hi + 1) + y(y_top)) / 2 + 9, 'Y=%d and up' % (hi + 1), size=SMALL, fill='@muted')
+    mid = (y(lo) + y(hi + 1)) / 2
+    svg.text(tx, mid - 8, 'Water cleared', bold=True, fill='@red')
+    svg.text(tx, mid + 9, 'Y=%d to %d' % (lo, hi), size=SMALL, fill='@muted')
+    svg.text(tx, y(top) + k * 3, 'Bedrock roof', size=SMALL, fill='@muted')
+    svg.text(tx, y(bottom) - k * 3, 'Bedrock floor', size=SMALL, fill='@muted')
+    for t in (0, 32, 64, 96, hi + 1):
+        svg.text(left - 8, y(t), '%d' % t, size=SMALL, fill='@muted', anchor='end')
+        svg.line(left - 4, y(t), left, y(t), stroke='@rule')
+    svg.text(14, (y(bottom) + y(y_top)) / 2, 'Y', size=SMALL, fill='@muted', anchor='middle')
+    svg.h = y(bottom) + 14
+    return svg
+
+
+# ---------------------------------------------------------------------------------------------
+# Surface spawning: which mundane hostile mobs may appear where, before and after the dragon dies.
+# The rules are read from the pack's spawn-check functions and predicates and evaluated for each
+# place in a schematic cross-section, so the picture says what the files say.
+
+SPAWN = 'matcha/function/mechanics/spawn_mechanic/'
+
+
+def _entity_types(ref):
+    """The entity types a type or #tag names."""
+    if not ref.startswith('#'):
+        return {ref if ':' in ref else 'minecraft:' + ref}
+    ns, path = _id(ref[1:])
+    out = set()
+    for v in pack_json('%s/tags/entity_type/%s.json' % (ns, path))['values']:
+        out |= _entity_types(v if isinstance(v, str) else v['id'])
+    return out
+
+
+def _test(cond, place, mob):
+    """A predicate condition for a mob of type `mob` at `place` ({'sky', 'y', 'structures'})."""
+    kind = cond['condition'].split(':')[-1]
+    if kind == 'all_of':
+        return all(_test(t, place, mob) for t in cond['terms'])
+    if kind == 'any_of':
+        return any(_test(t, place, mob) for t in cond['terms'])
+    if kind == 'inverted':
+        return not _test(cond['term'], place, mob)
+    if kind == 'reference':
+        return _predicate(cond['name'], place, mob)
+    if kind == 'entity_properties':
+        ok = True
+        for key, v in cond['predicate'].items():
+            key = key.split(':')[-1]
+            if key == 'entity_type':
+                ok &= mob in _entity_types(v)
+            elif key == 'location':
+                for lk, lv in v.items():
+                    if lk == 'can_see_sky':
+                        ok &= place['sky'] == lv
+                    elif lk == 'position':
+                        r = lv['y']
+                        ok &= r.get('min', -1e9) <= place['y'] <= r.get('max', 1e9)
+                    elif lk == 'structures':
+                        ok &= bool(place['structures'] & set(lv))
+                    elif lk == 'dimension':
+                        ok &= lv == 'minecraft:overworld'
+                    else:
+                        raise ValueError('location test %s' % lk)
+            else:
+                raise ValueError('entity test %s' % key)
+        return ok
+    raise ValueError('condition %s' % kind)
+
+
+def _predicate(ref, place, mob):
+    ns, path = _id(ref)
+    return _test(pack_json('%s/predicate/%s.json' % (ns, path)), place, mob)
+
+
+def removed(function, place, mob):
+    """Whether a spawn-check function tags a new mob SpawnForbidden: each line that does, with its
+    `if`/`unless` tests (predicates, entity types, the Overworld), read from the file."""
+    for line in mcfunction(SPAWN + function + '.mcfunction').splitlines():
+        if not line.rstrip().endswith('tag @s add SpawnForbidden'):
+            continue
+        hit = True
+        for mode, what, arg in re.findall(r'\b(if|unless) (predicate|entity|dimension) (\S+)', line):
+            if what == 'predicate':
+                ok = _predicate(arg, place, mob)
+            elif what == 'dimension':
+                ok = arg == 'minecraft:overworld'
+            else:
+                ok = mob in _entity_types(need(r'type=([^\],]+)', arg, 'entity type test', cast=str))
+            hit &= ok if mode == 'if' else not ok
+        if hit:
+            return True
+    return False
+
+
+def surface_rules():
+    """The places in the cross-section, the mob groups, and who may spawn where in each state."""
+    ticking = mcfunction(SPAWN + 'ticking.mcfunction')
+    after = need(r'if score gamerule gamerule_safe_surface matches 1 run .* run function matcha:mechanics/spawn_mechanic/(\w+)',
+                 ticking, 'the check after the dragon', cast=str)
+    before = need(r'unless score gamerule gamerule_safe_surface matches 1 run .* run function matcha:mechanics/spawn_mechanic/(\w+)',
+                  ticking, 'the check before the dragon', cast=str)
+    mobs = sorted(_entity_types('#matcha:mundane_hostiles'))
+    line = int(need(r'"min": (\d+)', open(pack_file('matcha/predicate/surface_spawn.json')).read(), 'surface height'))
+    places = {  # a Y above or below the surface predicate's line; the abbey is the in_dungeon structure
+        'sky': {'sky': True, 'y': line + 20, 'structures': set()},
+        'ravine': {'sky': True, 'y': line - 20, 'structures': set()},
+        'cover': {'sky': False, 'y': line + 20, 'structures': set()},
+        'abbey': {'sky': False, 'y': line + 20, 'structures': {'minecraft:abbey_overgrown'}},
+        'cave': {'sky': False, 'y': line - 20, 'structures': set()},
+    }
+    states = {}
+    for state, fn in (('before', before), ('after', after)):
+        states[state] = {p: {m for m in mobs if not removed(fn, place, m)} for p, place in places.items()}
+    # mobs that every rule treats alike form one group
+    groups = {}
+    for m in mobs:
+        sig = tuple((s, p, m in states[s][p]) for s in states for p in places)
+        groups.setdefault(sig, []).append(m)
+    return line, states, list(groups.values())
+
+
+def _group_name(members):
+    undead = _entity_types('#minecraft:undead')
+    if len(members) == 1:
+        n = members[0].split(':')[1].replace('_', ' ')
+        return n if n.endswith('ed') else n + 's'  # drowned, creepers
+    return 'undead' if all(m in undead for m in members) else 'others'
+
+
+def verdict(allowed, groups):
+    """A short label for who may spawn in a place, and its colour role."""
+    have = [g for g in groups if set(g) <= allowed]
+    if len(have) == len(groups):
+        return 'All', '@red_soft'
+    if not have:
+        return 'None', '@green_soft'
+    missing = [g for g in groups if g not in have]
+    mobs = {m for g in groups for m in g}
+    if allowed == mobs & _entity_types('#minecraft:undead'):
+        return 'Undead only', '@amber_soft'
+    if len(missing) == 1:
+        return 'All but %s' % _group_name(missing[0]), '@amber_soft'
+    return ' and '.join(_group_name(g).capitalize() for g in have) + ' only', '@amber_soft'
+
+
+@diagram('Surface spawning')
+def surface_spawning():
+    line, states, groups = surface_rules()
+    PW, PH, gap = 364, 246, 32
+    svg = Svg(2 * PW + gap, 0, 'Where mundane hostile mobs can appear in the Overworld before and after the Ender Dragon is killed')
+    top = 30
+    for i, (state, title) in enumerate((('before', 'Before the dragon is killed'), ('after', 'After the dragon is killed'))):
+        ox = i * (PW + gap)
+        rules = states[state]
+
+        def P(pts):
+            return [(ox + px, top + py) for px, py in pts]
+        svg.text(ox + PW / 2, 12, title, anchor='middle', bold=True)
+        # rock, then each open space coloured by who may spawn there
+        svg.rect(ox, top + 60, PW, PH - 60, fill='@grey_soft')
+        sea = 160
+        regions = {
+            'sky': [(0, 0), (PW, 0), (PW, 118), (338, 118), (338, sea), (306, sea), (306, 118), (288, 118), (288, 62),
+                    (172, 62), (172, 118), (150, 118), (150, 60), (0, 60)],
+            'ravine': [(306, sea), (338, sea), (338, 198), (306, 198)],
+            'cover': [(30, 76), (150, 76), (150, 118), (30, 118)],
+            'abbey': [(179, 70), (281, 70), (281, 118), (179, 118)],
+            'cave': None,
+        }
+        svg.rect(ox + 172, top + 62, 116, 56, fill='@grey')  # the abbey's walls and roof
+        for key, pts in regions.items():
+            label, fill = verdict(rules[key], groups)
+            if pts:
+                svg.poly(P(pts) + P(pts[:1]), fill=fill)
+            else:
+                svg.rect(ox + 30, top + 180, 220, 48, fill=fill, rx=18)
+        svg.rect(ox, top, PW, PH, fill='none', stroke='@panel_edge')
+        svg.line(ox, top + sea, ox + PW, top + sea, stroke='@blue', dash='4 3')
+        svg.text(ox + 6, top + sea - 8, 'Sea level, Y=%d' % line, size=SMALL, fill='@blue')
+
+        def say(key, x, y, name):
+            label, _ = verdict(rules[key], groups)
+            svg.text(ox + x, top + y - 8, name, size=SMALL, fill='@muted', anchor='middle')
+            svg.text(ox + x, top + y + 8, label, anchor='middle', bold=True)
+        say('sky', PW / 2, 30, 'Under the open sky, at any height')
+        say('cover', 90, 97, 'Under cover')
+        say('abbey', 230, 94, 'In an abbey')
+        say('cave', 140, 204, 'Cave below Y=%d' % line)
+    y = top + PH + 24
+    w = legend(svg, 0, y, [('@red_soft', 'Every mundane hostile mob', 'box'), ('@amber_soft', 'Only some', 'box'),
+                           ('@green_soft', 'None', 'box')])
+    svg.text(w + 6, y, 'Trial chambers count as abbeys.', size=SMALL, fill='@muted')
+    svg.h = y + 14
     return svg
