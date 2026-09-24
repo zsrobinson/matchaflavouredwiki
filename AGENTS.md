@@ -255,6 +255,9 @@ the swap mid-way.
     to redirects already point at the target, so redirects are listed as "(redirect page)"), in MediaWiki's list
     markup inside the main page's skin turned special page. They are utility pages (noindex, no canonical), and
     `check_seo.py` treats every `w/Special:` file that way.
+  - **Printable version** (Tools, `[p]`): MediaWiki's own `javascript:print()` link. `Gadget-mfwShell.js` switches
+    to the light theme for printing (`beforeprint`/`afterprint`; paper is white), and `Gadget-mfw-ui.css` keeps the
+    article's colours in print (`print-color-adjust: exact`), since screens, hearts and glyphs are backgrounds or masks.
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;
   it becomes the search snippet. `check_seo.py` checks the export.

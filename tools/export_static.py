@@ -161,8 +161,8 @@ class Exporter:
         doc = re.sub(r'href="/w/([^"#?]+)(#[^"]*)?"', fix, doc)
         doc = doc.replace('href="/w/Matcha_Flavoured_Wiki"', 'href="/"')  # the main page is served at /
         # links a static site can't serve
-        # (the Tools menu keeps "What links here": the export writes those pages, backlinks.py)
-        doc = re.sub(r'<li id="(?:t-(?!whatlinkshere")|ca-(?!mfw-)|pt-|n-recentchanges)[^"]*"[^>]*>.*?</li>', '', doc, flags=re.S)
+        # (the Tools menu keeps "What links here", whose pages the export writes (backlinks.py), and "Printable version")
+        doc = re.sub(r'<li id="(?:t-(?!whatlinkshere"|print")|ca-(?!mfw-)|pt-|n-recentchanges)[^"]*"[^>]*>.*?</li>', '', doc, flags=re.S)
         doc = re.sub(r'href="/index\.php\?title=Special:Search[^"]*"', 'href="/search/"', doc)
         # (the sidebar's "Random page", Special:Random, is served by the Worker from the export's list)
         doc = re.sub(r'<a href="/w/Special:(?!Random"|WhatLinksHere/)[^"]*"[^>]*>(.*?)</a>', r'\1', doc, flags=re.S)
