@@ -20,10 +20,8 @@ pip install --quiet --upgrade pillow yt-dlp     # --upgrade: YouTube changes bre
 git checkout main && git pull --ff-only
 python3 tools/check_upstream.py > /tmp/upstream.json; status=$?
 ```
-- `status = 0`: nothing changed. On Mondays (`date -u +%u` is 1), first run
-  `python3 tools/fetch_transcripts.py --all`, which catches videos whose captions appeared late; if it saved
-  a new transcript, continue as for a new video. Also on Mondays, do the **port rehearsal** below.
-  Otherwise **stop here.** Don't commit, don't open a PR, don't notify.
+- `status = 0`: nothing changed. Unless it is Monday (below), **stop here.** Don't commit, don't open a
+  PR, don't notify.
 - `status = 2`: a source couldn't be checked (network, or `yt-dlp` didn't install).
   Stop and notify with the error from `/tmp/upstream.json`.
 - `status = 10`: read `/tmp/upstream.json` and continue. It lists `new_commits` (with `from_commit`, the pinned
@@ -31,6 +29,12 @@ python3 tools/check_upstream.py > /tmp/upstream.json; status=$?
   Keep the file: step 5 records exactly what it lists as done.
 
 Also stop if a PR labelled `autopilot` is still open, and notify about it instead of stacking a second one.
+
+**On Mondays** (`date -u +%u` is 1), whatever the status (upstream changes almost every day, so these
+can't wait for a quiet one):
+- `python3 tools/fetch_transcripts.py --all` catches videos whose captions appeared late. A new transcript
+  counts as a new video.
+- Do the **port rehearsal** at the end of this file.
 
 ## Step 1: branch
 Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> origin/main`.
@@ -130,7 +134,7 @@ Subscribe to the PR's activity and end the turn; the **Check** workflow result w
 - **Red:** read the failing job log, fix the pages or tools, push again. After three failed attempts,
   leave the PR open, comment with what's failing, and notify.
 
-## Port rehearsal (Mondays)
+## Port rehearsal (Mondays, whatever step 0 found)
 The pack is ported to each new Minecraft version on a branch (`other_branches` in `/tmp/upstream.json`,
 e.g. `26.3`) and merged into `main` in one go. That merge is the biggest update the wiki gets, so rehearse
 it while it is still a branch:
@@ -140,7 +144,8 @@ tools/dry_run.sh <branch>          # for every branch named like a Minecraft ver
 ```
 `build/dry-run-<branch>.md` lists what `extract.py` doesn't understand yet, the pages `lint_pages.py`
 would flag, and the update report. If `extract.py` reports format problems, teach it the new format while
-still reading the old one, and open a PR "Autopilot: prepare the extractor for <branch>" (label
-`autopilot`). The Check workflow proves the change is safe: `wiki/generated` must come out unchanged for
-the pinned commit. Don't change pages for the port yet; that happens when it reaches `main`. Only do
-this on a day with no update, and not while another `autopilot` PR is open.
+still reading the old one. The Check workflow proves the change is safe: `wiki/generated` must come out
+unchanged for the pinned commit. If today also has an update, put the extractor change in that PR and say
+so in its body. Otherwise open a PR "Autopilot: prepare the extractor for <branch>" (label `autopilot`),
+unless an `autopilot` PR is already open. Don't change pages for the port yet; that happens when it
+reaches `main`.
