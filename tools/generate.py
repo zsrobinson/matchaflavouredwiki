@@ -1748,6 +1748,67 @@ def tiers_table():
     return equipment_table('! Tier !! Made from !! Repaired with', rows)
 
 
+# Mining levels (Tools page): the blocks the pickaxes' own rules single out, grouped as the page names
+# them. Each group: (blocks that head the column, blocks or tags in it).
+MINING_GROUPS = [
+    (['minecraft:deepslate'], ['minecraft:deepslate', 'minecraft:cobbled_deepslate', 'minecraft:polished_deepslate']),
+    (['minecraft:iron_ore'], ['#minecraft:iron_ores']),
+    (['minecraft:gold_ore'], ['#minecraft:gold_ores']),
+    (['minecraft:emerald_ore'], ['#minecraft:emerald_ores']),
+    (['minecraft:deepslate_redstone_ore'], ['#minecraft:redstone_ores']),
+    (['minecraft:deepslate_lapis_ore'], ['minecraft:deepslate_lapis_ore']),
+    (['minecraft:diamond_ore'], ['#minecraft:diamond_ores']),
+    (['minecraft:obsidian'], ['minecraft:obsidian']),
+    (['minecraft:crying_obsidian', 'minecraft:ender_chest'], ['minecraft:crying_obsidian', 'minecraft:ender_chest']),
+]
+MINING_UNBREAKABLE = {'minecraft:reinforced_deepslate'}  # named in a rule, but no tool breaks it
+
+
+def rule_blocks(sel):
+    return set(block_tag(sel)) if sel.startswith('#') else {sel if ':' in sel else 'minecraft:' + sel}
+
+
+def tool_on(rules, block):
+    """(speed, drops) of a tool on a block: the first rule that matches and sets each value decides it, as in
+    the game; no rule means speed 1 and no drops."""
+    speed = next((r['speed'] for r in rules if 'speed' in r and block in rule_blocks(r['blocks'])), 1)
+    drops = next((r['correct_for_drops'] for r in rules if 'correct_for_drops' in r and block in rule_blocks(r['blocks'])), False)
+    return speed, drops
+
+
+def mining_levels_table():
+    """Tools page: which blocks each pickaxe gets drops from, and where its speed differs, from its tool rules."""
+    groups = [(heads, set().union(*(rule_blocks(sel) for sel in sels))) for heads, sels in MINING_GROUPS]
+    covered = set().union(*(g for _, g in groups)) | MINING_UNBREAKABLE
+    head = '! Pickaxe !! Speed' + ''.join(' !! ' + ', '.join(il(id_name(h)) for h in heads) for heads, _ in groups)
+    rows = []
+    for prefix, _ in EQUIPMENT_TIERS:
+        name = prefix + ' Pickaxe'
+        tool = effective(ITEMS[name]).get('tool') if name in ITEMS else None
+        if not tool:
+            continue
+        rules = tool['rules']
+        general = next(r for r in rules if r['blocks'] == '#minecraft:mineable/pickaxe')
+        for r in rules:  # a block a rule singles out needs a column, or the table would hide it
+            if r is not general and rule_blocks(r['blocks']) - covered:
+                raise SystemExit('Mining levels: %s singles out %s, which has no column (MINING_GROUPS)'
+                                 % (name, sorted(rule_blocks(r['blocks']) - covered)))
+        cells = []
+        for heads, blocks in groups:
+            results = {tool_on(rules, b) for b in blocks}
+            if len(results) != 1:
+                raise SystemExit('Mining levels: %s treats %s unevenly: %s' % (name, heads, results))
+            speed, drops = results.pop()
+            fast = speed > general['speed']
+            text = ('Yes' if drops else 'No drops') + (' (speed %s)' % fmt_num(speed) if speed != general['speed'] else '')
+            cells.append('class="%s" | %s' % ('tc-always' if drops and fast else 'tc-yes' if drops else 'tc-no', text))
+        rows.append('|-\n! style="text-align:left" | {{ItemLink|%s}}\n| %s || %s' % (name, fmt_num(general['speed']), ' || '.join(cells)))
+    return ('<includeonly>{| class="wikitable" style="text-align:center"\n' + head + '\n' + '\n'.join(rows) + '\n|}</includeonly>'
+            '<noinclude>Generated from the pickaxes\' tool components by <code>tools/generate.py</code>: which blocks each '
+            'pickaxe gets drops from, and its mining speed on a block where that differs from its usual speed. '
+            '[[Category:Generated data]]</noinclude>')
+
+
 def equipment_tables(n):
     """Template:Data/Tools|Weapons|Armor/<type, slot or tier>, Data/Tools/Tiers and Data/Armor/Sets: the stat
     comparisons on the Tools, Weapons, Armor and equipment family pages."""
@@ -1763,6 +1824,7 @@ def equipment_tables(n):
             if rows:
                 write('Template', 'Data/%s/%s' % (folder, p), equipment_table(head, rows)); n['equipment tables'] += 1
     write('Template', 'Data/Tools/Tiers', tiers_table())
+    write('Template', 'Data/Tools/Mining levels', mining_levels_table())
     sets = armor_sets()
     for i, (slot, label) in enumerate(ARMOR_SLOTS):
         rows = [equipment_row(pieces[i], 'armor') for pieces in sets.values()]

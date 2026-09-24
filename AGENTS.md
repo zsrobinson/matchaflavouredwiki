@@ -138,7 +138,11 @@ the swap mid-way.
   - Tooltip glyphs are `File:Glyph E0xx.png`, named in `Template:G`, and explained on the "Tooltip" page.
 - **Renders** (structures, mobs, armor): every one is an entry in `tools/renders.json`, keyed by its
   file name. `python3 tools/render.py` draws the ones whose inputs changed into `wiki/renders/`, which
-  is committed (CI only checks it's current), and `images.py` uploads them with the icons. To add one,
+  is committed (CI only checks it's current), and `images.py` uploads them with the icons. Files are
+  several times an entry's `width` (`zoom()` in `render.py`: 4 for a whole structure, 3 for a piece, 2 for
+  mobs and armor). `images.py` uploads a copy at the entry's width for the pages, which have no
+  thumbnailer (no ImageMagick or GD), and `build.sh` puts the file itself in `/images/full/` for the
+  image viewer. Pages set the size they show a render at. To add one,
   add an entry and run the tool. The drawing code is `tools/render/` (deepslate for blocks, three.js
   for mobs, in headless Chromium). It finds a Chromium in Playwright's cache, `$MFW_CHROMIUM`,
   `$CHROME_BIN` or the usual Chrome install paths.
@@ -187,6 +191,20 @@ the swap mid-way.
     (an `OutputPageBeforeHTML` hook) marks each element a `{{Spoiler}}` box covers with `mfw-spoiler-body`
     and the box's number. It re-serializes only pages with a box, with MediaWiki's own tidy formatter, so
     the rest of the HTML stays byte-identical. The rule for what counts is in `wiki/STYLE.md` ("Spoilers").
+- **Diagrams**: `python3 tools/diagrams.py` draws every diagram from the pack's data into `wiki/diagrams/`
+  (committed; CI fails when it's out of date, like `wiki/generated`). Each is a function in
+  `tools/diagram_defs/<topic>.py`, registered with `@diagram('<Name>')`, reading its numbers with the
+  helpers in `tools/diagrams.py` (`pack_json`, `mcfunction` + `need`, `data()`), so a pack change
+  redraws it or fails loudly. It draws through the shared helpers (`Svg`, `Flow`, `node_frame`,
+  `legend`, `block_grid`) with colour roles (`@ink`, `@red`...), so the style lives in one place:
+  `STYLES` in `tools/diagrams.py`, currently `inventory` (the pack's brown panel, the Minecraft font,
+  embedded in each SVG, recessed slots, a block grid under areas). Each diagram is written as
+  `<Name> diagram.svg` and `<Name> diagram (dark).svg`, and `{{Diagram}}` shows the one matching the
+  theme; the inventory style looks the same in both, other styles (`MFW_DIAGRAM_STYLE=wikitable`)
+  don't. Labels in fixed-size boxes should pass `fit=` so the wider pixel font shrinks instead of
+  overflowing. MediaWiki serves the SVGs as they are (`$wgSVGNativeRendering`), and item icons and hearts are
+  embedded in them, because an SVG shown as an image can't load anything else. When a page gets one
+  is in `wiki/STYLE.md` ("Diagrams"). To check one, open the SVG in a browser in both themes.
 
 **Pack look** (`MediaWiki:Gadget-mfw-ui.css`)
 - **Station screens:** `{{Crafting}}`, `{{Cooking}}`, `{{Smithing}}` and `{{Stonecutter}}` call
@@ -207,6 +225,9 @@ the swap mid-way.
   Planks in the stonecutter, Dark Oak Fence Gate out). A slot that holds several items per variant ("Any Oak
   Logs") is one frame of `{...}` subframes (`merged_ui`), or it has more frames than the others.
 - **Palette:** slots and panels use the pack's brown inventory colours, and `{{Hp}}` uses its HUD hearts.
+- **Image viewer:** `MediaWiki:Gadget-mfwZoom.js` opens a clicked infobox image, thumbnail, gallery image
+  or diagram over the page, fitted to the screen; clicking it again shows it at full size. Renders open
+  their `/images/full/` file, diagrams scale as SVG, and textures scale by whole pixels.
 
 **Static export and deploy**
 - **Page files:** pages are `dist/w/<Title>.html`, with `html_handling: auto-trailing-slash` in `wrangler.jsonc`.
@@ -219,8 +240,8 @@ the swap mid-way.
     (`Category:`, `Template:`) once looped.
 - **What the export keeps and strips:** it removes MediaWiki's scripts except the theme boot, and keeps the `ca-mfw-*` GitHub tabs.
   It also replaces legacy Vector's fixed `width=1120` viewport with `device-width`, so phones get the vendored narrow-screen layout.
-  Its `site.js` is `Gadget-mfwShell.js`, `Gadget-mfwTooltip.js`, `Gadget-mfwPreview.js` and
-  `Gadget-animatedIcons.js` (plain DOM, no jQuery) plus `SITE_JS`.
+  Its `site.js` is `Gadget-mfwShell.js`, `Gadget-mfwTooltip.js`, `Gadget-mfwPreview.js`,
+  `Gadget-animatedIcons.js` and `Gadget-mfwZoom.js` (plain DOM, no jQuery) plus `SITE_JS`.
 - **Search** matches titles first, then Pagefind's full text. Pagefind alone ranked "fishing" below Tropical
   Fish (it stems "fishing" to "fish" and favours short pages), had no typos or redirects, and let category
   pages crowd results. So:

@@ -24,7 +24,6 @@ The [[Prayer of Man]] blessing stores {{G|Warding}} 2 and [[Smite]] II, and can 
 Every tick, each held item with warding adds its level to the player's held warding, and each worn piece of electrum armor adds 1 to a separate armor count.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/value/equipment_2.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/value/electrum_armour.mcfunction}}</ref> The player's effective level is then worked out as follows:<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/value/calculate.mcfunction}}</ref>
 # The levels of the items in the main hand and off hand are added together, and the total is capped at {{G|Warding}} 3.
 # The number of electrum armor pieces worn (0–4) is compared with that total, and the higher of the two is used.
-
 Held items therefore stack with each other: a {{G|Warding}} 1 [[Warding Sword]] in the main hand and a {{G|Warding}} 2 [[Nazar]] in the off hand give {{G|Warding}} 3. Held items and armor don't stack: a player wearing one electrum piece and holding a {{G|Warding}} 1 item still has {{G|Warding}} 1. {{G|Warding}} 4 is only reached by wearing the full set of electrum armor, which is why the electrum set bonus reads {{G|Apotropaic}} Max.
 
 Only players can ward. The level is only calculated for players, so a mob holding a warding item has no effect.<ref>{{Source|MF_datapack/data/matcha/function/timers/1s/warding_enchantment.mcfunction}}</ref>
@@ -50,6 +49,7 @@ Warding runs on a timer, not every tick. Levels 1 and 2 pulse once per second, a
 | 0.5 s || 24 blocks || III || 12 blocks || {{Hp|2}} || {{Hp|4}} || {{Hp|2}} within 16 blocks
 |}
 <ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_1.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_4.mcfunction}}</ref>
+{{Diagram|Warding|caption=Warding's radii around the player at each level, drawn to scale.}}
 
 === Targeting ===
 Each pulse picks a single target to damage, in this order:<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_3.mcfunction}}</ref>

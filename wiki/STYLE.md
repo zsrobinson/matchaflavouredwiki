@@ -111,6 +111,7 @@ sortable wikitables, and `{{Main|...}}` hatnotes into each detail page.
 | `{{Slot|Item}}`, `{{ItemLink|Item}}`, `{{EffectLink|Resistance}}` | Icons. Item icons are `File:<Item Name>.png`. |
 | `{{G|Warding}}` | The pack's tooltip glyphs (Health, Warding, Doom, Cleanse, Magic protection, Armor, ...). |
 | `{{Hp|8}}` | Health points, drawn as hearts. |
+| `{{Diagram|Warding|caption=...}}` | A diagram from `tools/diagrams.py` (see "Diagrams"); `align=right|width=360` for small ones. |
 | `{{Main|X}}`, `{{See also|X}}`, `{{About|...}}`, `{{Distinguish|X}}` | Hatnotes. |
 | `{{Vanilla}}` / `{{Vanilla|Emerald}}` | Links the vanilla page on minecraft.wiki. |
 | `{{MCW|Page|text}}` | Inline link to minecraft.wiki. |
@@ -172,6 +173,42 @@ would need diagrams, which are a different thing. When a page qualifies but can'
 (a mob whose animation the renderer lacks) or a template isn't worth showing (an invisible road connector), put it in
 the `skip` list of `tools/renders.json` with the reason. `python3 tools/render.py --audit` lists every
 gap; it passes when each one is rendered or skipped.
+
+## Diagrams
+
+Diagrams are drawn from the pack's data by `tools/diagrams.py` (one function per diagram, in
+`tools/diagram_defs/`) and committed in `wiki/diagrams/`, so a pack update redraws them. A page shows
+one with `{{Diagram|<Name>|caption=...}}`, which picks the light or dark drawing to match the theme.
+
+Draw a diagram only when the picture is quicker to take in than the sentence it replaces. A good one
+makes a reader think "oh, that's easier than reading all that"; a bad one makes them decode a chart to
+get a fact the text could have stated plainly. The ones that earn their place:
+
+- places and shapes: where ores generate by Y level, a radius drawn to scale, a cross-section of where
+  mobs spawn;
+- time: the day cycle, a schedule, the moon's phases, a release timeline, two effects overlapping;
+- overviews rich in icons: a progression, a crafting chain, the tiers of a set of equipment.
+
+Don't draw:
+
+- a flowchart of a rule that fits in one or two sentences (the checks a spawn runs, how a level is
+  chosen);
+- a table redrawn as a picture: if it's rows and columns, make it a wikitable, generated from the data
+  when it can be (the mining levels table on the Tools page);
+- a chart that needs a legend of more than a few entries to read, or bars for three or four numbers
+  (effect durations, odds, sleep speeds).
+
+A small spatial picture (one radius, one structure's area) goes beside the text as an aside
+(`width=360|align=right`), at the top of the section it illustrates. A large one that spans time or
+places runs full width under its section's opening paragraph.
+
+One diagram per section at most, with a one-sentence caption saying what it shows. The numbers come
+from the pack's files at draw time, never typed in; the look comes from `tools/diagrams.py`, so every diagram matches the others: the pack's brown
+inventory panel (like the station screens), the Minecraft font with its shadow, boxes as recessed
+slots, item icons and HUD hearts, and areas drawn on a block grid (one cell per block, a heavier line
+every 16). Ranges the game measures as a distance (`distance=..N`) are circles over that grid, because
+that's the shape the game uses. Full width is 760px; a small one floats right at about 360px
+(`align=right`).
 
 ## Files
 
