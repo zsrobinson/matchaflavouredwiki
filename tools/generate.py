@@ -14,6 +14,9 @@ Outputs (Template namespace unless noted):
   Data/Loot/<table>        drop table for each loot table the pack defines
   Data/Food table, Data/Renamed items, Data/Trim templates, Data/Enchantments
   Data/Advancements/<tab>, Data/Advancements/tabs, Data/Advancements/technical
+  Data/Station/<station>   a cooking station's non-food recipes (Mud Kiln, Oven, Blast Furnace, Kindling)
+  Data/Fishing/...         the Fishing article's odds: Categories, Luck, Rarity, one per climate table, Special biomes
+  Data/Splash texts        the title screen's splashes (and Data/Splash texts/Count)
   Data/Current version, Source/commit
   Module:Inventory slot/Aliases   tag names ("Any Planks") for recipe slots
   Module:Tooltip/Data     each item's in-game tooltip (name colour, lore runs) and glyph widths
@@ -480,6 +483,12 @@ def out_text(o):
     return safe(slot_name(o)) + (',%d' % o['count'] if o.get('count', 1) > 1 else '')
 
 
+def cook_ticks(r):
+    """A cooking recipe's time in ticks (the recipe type's default when the file gives none)."""
+    return r.get('cookingtime') or {'smelting': 200, 'smoking': 100, 'blasting': 100,
+                                    'campfire_cooking': 600}[r['type'].split(':')[-1]]
+
+
 def recipe_ui(r):
     t = r['type'].split(':')[-1]
     if t == 'crafting_shaped':
@@ -497,7 +506,7 @@ def recipe_ui(r):
         a = '|'.join('%s=%s' % (slots[i], slot_text(g)) for i, g in enumerate(r['ingredients'][:9]))
         return '{{Crafting|%s|Output=%s|shapeless=1}}' % (a, out_text(r['output']))
     if t in ('smelting', 'smoking', 'blasting', 'campfire_cooking'):
-        secs = (r.get('cookingtime') or {'smelting': 200, 'smoking': 100, 'blasting': 100, 'campfire_cooking': 600}[t]) / 20
+        secs = cook_ticks(r) / 20
         note = '%s s' % fmt_num(secs)
         if r.get('experience'):
             note += ', %s XP' % fmt_num(r['experience'])
@@ -694,6 +703,32 @@ def biome_note(b):
     return 'only in ' + ', '.join(out)
 
 
+BIOMES = DATA['biomes']  # biome id -> in-game name
+BIOME_TAGS = DATA['biome_tags']  # biome tag -> biome ids
+
+
+def entry_biome_list(e):
+    """The biome ids where a loot entry's location checks pass, in the order its tags list them, or None
+    when it has no biome condition."""
+    out = None
+    for c in e.get('conditions') or []:
+        pred = c.get('predicate') or {}
+        b = pred.get('biomes') or pred.get('biome')
+        if c.get('condition', '').split(':')[-1] != 'location_check' or not b:
+            continue
+        ids = []
+        for x in ([b] if isinstance(b, str) else b):
+            ids += BIOME_TAGS.get(x[1:], []) if x.startswith('#') else [x if ':' in x else 'minecraft:' + x]
+        ids = list(dict.fromkeys(ids))
+        out = ids if out is None else [i for i in out if i in ids]
+    return out
+
+
+def entry_biomes(e):
+    b = entry_biome_list(e)
+    return None if b is None else set(b)
+
+
 def cond_notes(conds):
     notes = []
     mult = 1.0
@@ -770,9 +805,10 @@ def cond_notes(conds):
     return mult, notes
 
 
-def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
+def flatten(table_id, prob=1.0, notes=(), depth=0, seen=(), where=None):
     """Yield (item, per-roll prob of this entry in context, count range, notes, rolls, table, variant)
-    for a table. The variant labels a stack that a loot function makes distinct ("Arrow of Poison")."""
+    for a table. The variant labels a stack that a loot function makes distinct ("Arrow of Poison").
+    where: the biomes the rolling entry was limited to; entries for other biomes can't apply."""
     t = LOOT.get(table_id)
     out = []
     if not t or depth > 6 or table_id in seen:
@@ -783,12 +819,14 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
         # "caught in open water" needs a fishing hook: never true when a chest or mob rolls the fishing table
         if not root.startswith('minecraft:gameplay/fishing') and 'in_open_water' in json.dumps(e.get('conditions') or []):
             continue
+        if where is not None and entry_biomes(e) is not None and not (entry_biomes(e) & where):
+            continue  # e.g. the swamps' frogs in the junk that only #minecraft:unused biomes add
         pools[e['pool']].append(e)
     for pi, ents in pools.items():
         e0 = ents[0]
         pmult, pnotes = cond_notes(e0.get('pool_conditions'))
-        # Entries gated by a location (biome) check are mutually exclusive: only one applies
-        # at a time, so each is weighed against the unconditioned entries alone.
+        # Entries gated by a location (biome) check are weighed against the unconditioned entries and the
+        # gated entries that also apply wherever they do (also_there); others are for other biomes.
         def is_loc(e):
             return any((c.get('condition', '').split(':')[-1] == 'location_check') for c in (e.get('conditions') or []))
         # children of one alternatives/group entry share that entry's single weighted slot
@@ -797,6 +835,14 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
             slots.setdefault(e.get('slot') or id(e), e)
         uncond = sum(e['weight'] for e in slots.values() if not is_loc(e))
         locw = [e['weight'] for e in slots.values() if is_loc(e)]
+
+        def also_there(e):
+            """Weight of the other biome-gated entries that apply wherever e does: the Deep Dark's own fishing
+            entry is always rolled together with the #minecraft:unused fallback junk, which contains it."""
+            be = entry_biomes(e)
+            me = e.get('slot') or id(e)
+            return sum(f['weight'] for f in slots.values() if (f.get('slot') or id(f)) != me and is_loc(f) and be is not None
+                       and entry_biomes(f) is not None and be <= entry_biomes(f))
         earlier = defaultdict(list)  # alternatives slot -> condition notes of the children before this one
         ravg, rlo, rhi = rolls_avg(e0['rolls'])
         for e in ents:
@@ -806,7 +852,7 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
                 earlier[e['slot']] = prior + enotes
                 if prior and not enotes:
                     enotes = ['without ' + ', '.join(dict.fromkeys(prior))]  # the fallback branch
-            total = (uncond + e['weight']) if is_loc(e) else (uncond + (max(locw) if locw else 0))
+            total = (uncond + e['weight'] + also_there(e)) if is_loc(e) else (uncond + (max(locw) if locw else 0))
             p = e['weight'] / (total or 1) * emult * pmult
             if e.get('empty'):
                 continue
@@ -816,7 +862,8 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
                 if isinstance(sub, dict):
                     continue
                 override = count_range(e['count']) if e.get('count') is not None else None
-                for (it, p2, cnt, n2, r2, tid, var) in flatten(sub, 1.0, (), depth + 1, seen + (table_id,)):
+                inner = flatten(sub, 1.0, (), depth + 1, seen + (table_id,), narrower(where, entry_biomes(e)))
+                for (it, p2, cnt, n2, r2, tid, var) in inner:
                     # nested table: chance per roll of this entry times the nested chance (per nested roll)
                     if override:
                         cnt, p2 = override, p2 * positive_share(override)
@@ -825,6 +872,11 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
                 cr = count_range(e.get('count'))
                 out.append((e['item'], p * prob * positive_share(cr), cr, n, (rlo, rhi), table_id, e.get('variant')))
     return out
+
+
+def narrower(a, b):
+    """The biomes both limits allow (None means any biome)."""
+    return b if a is None else a if b is None else a & b
 
 
 def positive_share(cnt):
@@ -1601,6 +1653,360 @@ def technical_advancements_table():
     return ('<includeonly>{| class="wikitable"\n! Folder !! Files !! Purpose\n' + '\n'.join(rows) +
             '\n|}</includeonly><noinclude>Generated. Each folder\'s purpose is a note passed by its ID '
             '(<code>matcha:recipe_unlocks</code>). [[Category:Generated data]]</noinclude>')
+# Template:Data/Station/<station>: what a cooking station makes besides food (the articles describe the
+# food in prose around {{Recipes}} and the Cooking page).
+DYE_COLORS = ('Light Blue', 'Light Gray', 'White', 'Gray', 'Black', 'Brown', 'Red', 'Orange', 'Yellow', 'Lime',
+              'Green', 'Cyan', 'Blue', 'Purple', 'Magenta', 'Pink')  # two-word names first
+
+
+def uncolored(name):
+    """'Light Blue Glazed Terracotta' -> 'Glazed Terracotta'; None when the name starts with no dye color."""
+    for c in DYE_COLORS:
+        if name.startswith(c + ' '):
+            return name[len(c) + 1:]
+    return None
+
+
+def pct2(p):
+    """A share to two decimals, as the fishing tables give it: 84.85%, 10%, 3.57%."""
+    return ('%.2f' % (p * 100)).rstrip('0').rstrip('.') + '%' if p else '—'
+
+
+def input_cell(ing, most=4):
+    """A recipe input in a table cell: item links, a tag's name, or the first few names of a long list."""
+    if ing.get('tag') and len(set(ing['names'])) > 1:
+        return ing_links(ing)
+    names = list(dict.fromkeys(ing['names']))
+    if len(names) <= most:
+        return ' or '.join(il(n) for n in names)
+    rest = names[most - 1:]
+    return '%s and <span class="explain" title="%s">%d more</span>' % (
+        ', '.join(il(n) for n in names[:most - 1]), ', '.join(rest).replace('"', ''), len(rest))
+
+
+def station_table(station):
+    """Every recipe of one cooking station whose result isn't food, one row each (the row ID, for a hand note,
+    is the recipe ID). The same recipe for each dye color (glazed terracotta) collapses into one row."""
+    rs = []
+    for r in ALL_RECIPES + VANILLA_KEPT:
+        out = ITEMS.get(r['output']['name'])
+        if r['station'] != station or r['id'].startswith('debug:') or not r.get('input'):
+            continue
+        if out and item_type(out, effective(out)) == 'Food':
+            continue
+        rs.append(r)
+    if not rs:
+        return None
+    families = defaultdict(list)
+    for r in rs:
+        names = set(r['input']['names'])
+        base_in = uncolored(r['input']['names'][0]) if len(names) == 1 else None
+        base_out = uncolored(r['output']['name'])
+        key = (base_in, base_out, cook_ticks(r), r.get('experience'), r['origin'], r['output'].get('count', 1))
+        families[key if base_in and base_out else id(r)].append(r)
+    rows = []
+    for fam in families.values():
+        r = fam[0]
+        notes = ''.join('{{{%s|}}}' % x['id'] for x in fam)
+        if len(fam) >= 8:  # "Any dyed terracotta" -> "the matching glazed terracotta"
+            ins = [x['input']['names'][0] for x in fam]
+            outs = [x['output']['name'] for x in fam]
+            src = '<span class="explain" title="%s">Any dyed %s</span>' % (', '.join(ins), uncolored(ins[0]).lower())
+            res = '<span class="explain" title="%s">The matching %s</span>' % (', '.join(outs), uncolored(outs[0]).lower())
+            sort = uncolored(outs[0])
+        else:
+            src = input_cell(r['input'])
+            o = r['output']
+            res = ('%d × ' % o['count'] if o.get('count', 1) > 1 else '') + il(o['name'], o.get('variant'))
+            sort = o['name']
+        if r['origin'] != 'pack':
+            res += ' <small>(vanilla recipe)</small>'
+        t = cook_ticks(r)
+        rows.append((sort, src, '|-\n| %s || %s%s || data-sort-value="%d" | %s s || %s' % (
+            src, res, notes, t, fmt_num(t / 20), fmt_num(r.get('experience') or 0))))
+    rows.sort(key=lambda x: (x[0], x[1]))
+    return ('<includeonly>{| class="wikitable sortable"\n! Input !! Output !! Time !! Experience\n' +
+            '\n'.join(x[2] for x in rows) + '\n|}</includeonly><noinclude>Generated from the pack source by '
+            '<code>tools/generate.py</code>. Do not edit. Hand notes go after the output, keyed by recipe ID: '
+            '<code><nowiki>{{Data/Station/%s|%s=...}}</nowiki></code>.\n[[Category:Generated data]]</noinclude>' % (station, rs[0]['id']))
+
+
+# ------------------------------------------------------------------ splash texts
+def splash_key(text):
+    """A splash's key for a hand note on the Splash texts page: the text itself, minus the characters a
+    template parameter name can't hold."""
+    return re.sub(r'[=|{}\[\]<>]', '', text).strip()
+
+
+def splash_table():
+    """The title screen's splashes in file order (Template:Data/Splash texts). A note for a row is passed
+    under the splash's text: {{Data/Splash texts|Check out Waxmuffin!=...}}; notes= names the column."""
+    sp = DATA.get('splashes')
+    if not sp:
+        return None
+    rows = []
+    for i, line in enumerate(sp['lines'], 1):
+        text = re.sub('§.', '', line)  # formatting codes (vanilla's rainbow "Colormatic")
+        rows.append('|-\n| %d || <nowiki>%s</nowiki> || {{{%s|}}}' % (i, text, splash_key(text)))
+    return ('<includeonly>{| class="wikitable sortable"\n! # !! Splash !! {{{notes|Notes}}}\n' + '\n'.join(rows) +
+            '\n|}</includeonly><noinclude>Generated from <code>%s</code> by <code>tools/generate.py</code>. Do not edit.\n'
+            '[[Category:Generated data]]</noinclude>' % sp['src'])
+
+
+# ------------------------------------------------------------------ fishing odds (the Fishing article)
+# Each catch rolls minecraft:gameplay/fishing once. Its entries are junk, treasure (open water only) and, by
+# the biome at the bobber, that biome's own table; Luck of the Sea adds quality × level to each weight.
+FISHING = 'minecraft:gameplay/fishing'
+
+
+def fishing_kind(e):
+    """What a top-level fishing entry rolls: 'junk', 'treasure' or 'table' (a biome's own catch)."""
+    return {FISHING + '/junk': 'junk', FISHING + '/treasure': 'treasure'}.get(e.get('loot_table'), 'table')
+
+
+def open_water_only(e):
+    return 'in_open_water' in json.dumps(e.get('conditions') or [])
+
+
+def luck_weight(e, luck):
+    """An entry's weight at a luck level, as the game computes it: weight + quality × luck, rounded down, at least 0."""
+    return max(int(math.floor(e['weight'] + (e.get('quality') or 0) * luck)), 0)
+
+
+def fishing_entries():
+    ents = [e for e in LOOT[FISHING]['entries'] if not e.get('empty')]
+    for e in ents:
+        # the odds below know only these; anything else has to be taught to them, not skipped
+        other = [c.get('condition') for c in e.get('conditions') or []
+                 if c.get('condition', '').split(':')[-1] != 'location_check' and not open_water_only({'conditions': [c]})]
+        if other or e.get('pool') != 0 or e.get('rolls') != 1 or e.get('pool_conditions'):
+            raise SystemExit('generate.py: %s changed shape (%s); update the fishing odds' % (FISHING, other or 'pools'))
+    return ents
+
+
+def fishing_groups():
+    """Biomes grouped by which top-level fishing entries apply in them: [(biome ids, entries)]."""
+    ents = fishing_entries()
+    groups = defaultdict(list)
+    for b in sorted(BIOMES):
+        groups[tuple(i for i, e in enumerate(ents) if entry_biomes(e) is None or b in entry_biomes(e))].append(b)
+    return [(bs, [ents[i] for i in key]) for key, bs in groups.items()]
+
+
+def fishing_shapes():
+    """fishing_groups() merged where the odds are the same (every climate has junk 10, treasure 5, table 85):
+    [(biome ids, entries of one of them)], biomes with a table of their own first."""
+    shapes = {}
+    for bs, ents in fishing_groups():
+        k = tuple(sorted((fishing_kind(e), e['weight'], e.get('quality') or 0, open_water_only(e),
+                          entry_biomes(e) is not None) for e in ents))
+        shapes.setdefault(k, [[], ents])[0].extend(bs)
+    return sorted(shapes.values(), key=lambda s: (not any(fishing_kind(e) == 'table' for e in s[1]), -len(s[0])))
+
+
+def fishing_odds(entries, luck=0, open_water=True):
+    """The share of catches per kind ('junk', 'treasure', 'table') where these entries apply."""
+    w = defaultdict(int)
+    for e in entries:
+        if open_water or not open_water_only(e):
+            w[fishing_kind(e)] += luck_weight(e, luck)
+    total = sum(w.values()) or 1
+    return {k: w[k] / total for k in ('junk', 'treasure', 'table')}
+
+
+def raw_biomes(e):
+    for c in e.get('conditions') or []:
+        b = (c.get('predicate') or {}).get('biomes')
+        if b:
+            return [b] if isinstance(b, str) else b
+    return []
+
+
+def fishing_group_label(bs, ents):
+    names = sorted(BIOMES[b] for b in bs)
+    if len(bs) <= 3:
+        return ', '.join(names)
+    if any(fishing_kind(e) == 'table' for e in ents):
+        text = 'Biomes with a table of their own'
+    else:
+        text = 'Other biomes in ' + ', '.join('<code>%s</code>' % r for e in ents for r in raw_biomes(e))
+    return '<span class="explain" title="%s">%s</span> (%d)' % (', '.join(names), text, len(bs))
+
+
+def fishing_luck_table():
+    """Junk, treasure and the biome's table per Luck of the Sea level, in and out of open water, for each
+    group of biomes with the same odds (Template:Data/Fishing/Luck)."""
+    levels = (ENCH.get('minecraft:luck_of_the_sea') or {}).get('data', {}).get('max_level') or 3
+    rows = []
+    for bs, ents in fishing_shapes():
+        for luck in range(levels + 1):
+            o, c = fishing_odds(ents, luck), fishing_odds(ents, luck, open_water=False)
+            head = ('! rowspan="%d" | %s\n' % (levels + 1, fishing_group_label(bs, ents))) if luck == 0 else ''
+            rows.append('|-\n%s| %s || %s || %s || %s || %s || %s' % (
+                head, roman(luck) if luck else 'None', pct2(o['junk']), pct2(o['treasure']), pct2(o['table']),
+                pct2(c['junk']), pct2(c['table'])))
+    return ('<includeonly>{| class="wikitable"\n! rowspan="2" | Biomes !! rowspan="2" | Luck of the Sea !! '
+            'colspan="3" | Bobber in open water !! colspan="2" | Not in open water\n|-\n'
+            "! Junk !! Treasure !! Biome's table !! Junk !! Biome's table\n" + '\n'.join(rows) +
+            '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+
+
+def fishing_categories_table():
+    """The top-level fishing entries: weight, quality, condition and chance in a climate biome
+    (Template:Data/Fishing/Categories)."""
+    main = fishing_shapes()[0][1]
+    total = sum(e['weight'] for e in main)
+    rows = {}
+    for e in fishing_entries():
+        key = (fishing_kind(e), entry_biomes(e) is not None, e['weight'], e.get('quality') or 0, open_water_only(e))
+        rows.setdefault(key, []).append(e)
+    out = []
+    for (kind, gated, w, q, ow), es in rows.items():
+        label = {'junk': '[[Fishing junk|Junk]]', 'treasure': '[[Fishing treasure|Treasure]]',
+                 'table': "Fish (the biome's table)"}[kind] + (' (fallback)' if gated and kind == 'junk' else '')
+        conds = []
+        if ow:
+            conds.append('The bobber is in open water')
+        if gated and kind == 'table':
+            conds.append('The bobber is in a biome that has a table (%d entries)' % len(es))
+        elif gated:
+            conds.append('The bobber is in a biome of ' + ', '.join('<code>%s</code>' % r for x in es for r in raw_biomes(x)))
+        # in a climate biome only one table entry applies at a time
+        here = any(any(x is m for m in main) for x in es)
+        out.append('|-\n| %s || %d || %s || %s || %s' % (
+            label, w, ('+%d' % q) if q > 0 else str(q).replace('-', '−'), '; '.join(conds) or 'Always',
+            pct2(w / total) if here else '—'))
+    return ('<includeonly>{| class="wikitable"\n! Category !! Weight !! Quality !! Condition !! Chance with no luck<br />'
+            '<small>(in a biome with its own table)</small>\n' + '\n'.join(out) +
+            '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+
+
+def fish_stars(name):
+    """A fish's rarity line (⭐⭐☆☆) and its number of stars, from the first lore line; ('', 0) for other catches."""
+    lore = ((ITEMS.get(name) or {}).get('components') or {}).get('lore') or []
+    return (lore[0], lore[0].count('⭐')) if lore and '⭐' in lore[0] else ('', 0)
+
+
+def sells_for(name):
+    """What villagers pay for a caught item: "12 → 1 Obol (Apprentice)"."""
+    out = []
+    for prof, lk, t in TRADE_WANTS.get(name, []):
+        if t.get('additional_wants') or not t.get('gives') or t['wants']['name'] != name:
+            continue
+        out.append('%d → %d %s (%s%s)' % (t['wants'].get('count', 1), t['gives'].get('count', 1), il(t['gives']['name']),
+                                          LEVEL_NAMES.get(lk, lk), '' if prof == 'fisherman' else ', ' + PROF.get(prof, prof)))
+    return '<br />'.join(out) or '—'
+
+
+def fishing_tables():
+    """Each biome's own catch table: {table id: {'biomes': [...], 'climate': picked by a biome tag}}."""
+    out = {}
+    for e in fishing_entries():
+        if fishing_kind(e) != 'table':
+            continue
+        t = out.setdefault(e['loot_table'], {'biomes': [], 'climate': False})
+        t['biomes'] += [b for b in entry_biome_list(e) or [] if b not in t['biomes']]
+        t['climate'] |= any(r.startswith('#') for r in raw_biomes(e))
+    return out
+
+
+def table_chances(tid, open_water=True):
+    """The chances that a catch comes from table tid, over the biomes that roll it (one value for a climate)."""
+    vals = set()
+    for bs, ents in fishing_groups():
+        use = [e for e in ents if open_water or not open_water_only(e)]
+        mine = sum(e['weight'] for e in use if e.get('loot_table') == tid)
+        if mine:
+            vals.add(round(mine / sum(e['weight'] for e in use), 12))
+    return sorted(vals)
+
+
+def catch_rows(tid):
+    """(row id, item, count, variant, weight, share of the table) for each catch in a biome table."""
+    ents = [e for e in LOOT[tid]['entries'] if not e.get('empty')]
+    total = sum(e['weight'] for e in ents) or 1
+    rows = []
+    for e in ents:
+        if e.get('item'):
+            rows.append((e.get('id') or e['item'], e['item'], count_range(e.get('count')), e.get('variant'),
+                         e['weight'], e['weight'] / total))
+        elif isinstance(e.get('loot_table'), str):
+            for it, p2, cnt, _, _, _, var in flatten(e['loot_table']):
+                rows.append((e['loot_table'], it, cnt, var, e['weight'], e['weight'] / total * p2))
+    return rows
+
+
+def catch_table(tids, biome_column):
+    """A fish table: rarity, weight, share and chance per catch in and out of open water, and the price.
+    A hand note goes after the catch, keyed by the entry's loot table or item ID."""
+    # rowspans (the biome column) don't survive sorting
+    lines = ['{| class="wikitable%s"' % ('' if biome_column else ' sortable'),
+             '! %sFish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! '
+             'Per catch (other water) !! Sells for' % ('Biome !! ' if biome_column else '')]
+    for tid in tids:
+        rows = catch_rows(tid)
+        chances = (table_chances(tid), table_chances(tid, open_water=False))
+        for i, (rid, it, cnt, var, w, share) in enumerate(rows):
+            line, stars = fish_stars(it)
+            n = ('%s–%s × ' % (fmt_num(cnt[0]), fmt_num(cnt[1]))) if cnt[0] != cnt[1] else (
+                '%s × ' % fmt_num(cnt[0]) if cnt[0] != 1 else '')
+            per = ['–'.join(pct2(share * v) for v in vals) or '—' for vals in chances]
+            head = ''
+            if biome_column and i == 0:
+                head = '! rowspan="%d" | %s\n' % (len(rows), ', '.join(BIOMES[b] for b in fishing_tables()[tid]['biomes']))
+            lines.append('|-\n%s| %s%s{{{%s|}}} || data-sort-value="%d" | %s || %d || %s || %s || %s || %s' % (
+                head, n, il(it, var), rid, stars, line or '—', w, pct2(share), per[0], per[1], sells_for(it)))
+    lines.append('|}')
+    return '\n'.join(lines)
+
+
+def fishing_rarity_table():
+    """How the climates' fish are laid out by rarity (Template:Data/Fishing/Rarity)."""
+    per = defaultdict(lambda: defaultdict(set))
+    climates = [tid for tid, t in fishing_tables().items() if t['climate']]
+    for tid in climates:
+        rows = catch_rows(tid)
+        total = sum(e['weight'] for e in LOOT[tid]['entries'] if not e.get('empty'))
+        count = defaultdict(int)
+        for rid, it, cnt, var, w, share in rows:
+            line, stars = fish_stars(it)
+            if not stars:
+                continue
+            count[stars] += 1
+            d = per[stars]
+            d['line'].add(line)
+            d['weight'].add('%d of %d' % (w, total))
+            d['chance'].update(pct2(share * v) for v in table_chances(tid))
+            for prof, lk, t in TRADE_WANTS.get(it, []):
+                if t.get('gives') and not t.get('additional_wants'):
+                    d['price'].add(str(t['wants'].get('count', 1)))
+                    d['level'].add(LEVEL_NAMES.get(lk, lk))
+        for s, c in count.items():
+            per[s]['count'].add(str(c))
+    out = []
+    for s in sorted(per):
+        d = per[s]
+        out.append('|-\n| %s || %s || %s || %s || %s || %s' % tuple(
+            ', '.join(sorted(d[k])) or '—' for k in ('line', 'count', 'weight', 'chance', 'price', 'level')))
+    return ('<includeonly>{| class="wikitable"\n! Rarity !! Fish per climate !! Weight each !! Chance per catch (each fish) !! '
+            'Fish needed for 1 Obol !! Fisherman level\n' + '\n'.join(out) +
+            '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+
+
+def fishing_pages():
+    """Template:Data/Fishing/...: the odds tables of the Fishing article."""
+    pages = {'Categories': fishing_categories_table(), 'Luck': fishing_luck_table(), 'Rarity': fishing_rarity_table()}
+    tables = fishing_tables()
+    for tid, t in tables.items():
+        if t['climate']:
+            pages[tid.split('/')[-1]] = ("<includeonly>'''Biomes:''' %s.\n%s</includeonly><noinclude>Generated from "
+                                         "<code>%s</code>. [[Category:Generated data]]</noinclude>" % (
+                                             ', '.join(BIOMES[b] for b in t['biomes']), catch_table([tid], False), tid))
+    special = [tid for tid, t in tables.items() if not t['climate']]
+    if special:
+        pages['Special biomes'] = ('<includeonly>%s</includeonly><noinclude>Generated. [[Category:Generated data]]'
+                                   '</noinclude>' % catch_table(special, True))
+    return pages
 
 
 # ------------------------------------------------------------------ stubs & redirects
@@ -1933,6 +2339,18 @@ def main():
     write('Template', 'Data/Trim templates', trim_templates_table())
     write('Template', 'Data/Enchantments', enchantment_table())
     equipment_tables(n)
+    cooking = ('smelting', 'smoking', 'blasting', 'campfire_cooking')
+    for station in sorted({r['station'] for r in ALL_RECIPES if r['type'].split(':')[-1] in cooking}):
+        p = station_table(station)
+        if p:
+            write('Template', 'Data/Station/' + station, p); n['station tables'] += 1
+    p = splash_table()
+    if p:
+        write('Template', 'Data/Splash texts', p)
+        write('Template', 'Data/Splash texts/Count', '<includeonly>%d</includeonly><noinclude>Number of splash texts '
+              'in the resource pack. Generated.</noinclude>' % len(DATA['splashes']['lines']))
+    for k, page in fishing_pages().items():
+        write('Template', 'Data/Fishing/' + k, page); n['fishing tables'] += 1
     for tab, page in advancement_tables().items():
         write('Template', 'Data/Advancements/' + tab, page); n['advancement tabs'] += 1
     write('Template', 'Data/Advancements/tabs', advancement_tabs_table())

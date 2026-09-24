@@ -1,0 +1,14 @@
+<includeonly>'''Biomes:''' Forest, Plains, River, Sunflower Plains, Flower Forest, Cherry Grove, Dripstone Caves, Lush Caves.
+{| class="wikitable sortable"
+! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
+|-
+| {{ItemLink|Bluegill}}{{{minecraft:gameplay/fishing/fish/bluegill|}}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
+|-
+| {{ItemLink|Crappie}}{{{minecraft:gameplay/fishing/fish/crappie|}}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
+|-
+| {{ItemLink|Carp}}{{{minecraft:gameplay/fishing/fish/carp|}}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
+|-
+| {{ItemLink|Catfish}}{{{minecraft:gameplay/fishing/fish/catfish|}}} || data-sort-value="3" | ⭐⭐⭐☆ || 3 || 7.14% || 6.07% || 6.39% || 4 → 1 {{ItemLink|Obol}} (Expert)
+|-
+| {{ItemLink|Bass}}{{{minecraft:gameplay/fishing/fish/bass|}}} || data-sort-value="4" | ⭐⭐⭐⭐ || 1 || 2.38% || 2.02% || 2.13% || 1 → 1 {{ItemLink|Obol}} (Master)
+|}</includeonly><noinclude>Generated from <code>minecraft:gameplay/fishing/freshwater_temperate</code>. [[Category:Generated data]]</noinclude>

@@ -1,0 +1,11 @@
+<includeonly>{| class="wikitable"
+! Category !! Weight !! Quality !! Condition !! Chance with no luck<br /><small>(in a biome with its own table)</small>
+|-
+| [[Fishing junk|Junk]] || 10 || −2 || Always || 10%
+|-
+| [[Fishing treasure|Treasure]] || 5 || +2 || The bobber is in open water || 5%
+|-
+| Fish (the biome's table) || 85 || −1 || The bobber is in a biome that has a table (15 entries) || 85%
+|-
+| [[Fishing junk|Junk]] (fallback) || 85 || −1 || The bobber is in a biome of <code>#minecraft:unused</code> || —
+|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>
