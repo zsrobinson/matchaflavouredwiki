@@ -108,6 +108,9 @@ Read `wiki/STYLE.md`, `wiki/AGENT_BRIEF.md` and `wiki/PAGES.md` first; they are 
   alloy tool is in Items, Recipes and Villager trades), so tell every agent to make small edits to the
   file as it is now, and never to `git checkout` or `git restore` anything under `wiki/pages/`: that
   throws away the other agents' work.
+- **Secrets:** if `git diff wiki/generated/MediaWiki/Mfw-secrets.wiki` shows a new secret (a new secret
+  meal or ingredient, Cooking Recipe or hidden advancement), write about it under a `{{Spoiler}}` box and
+  never name it in plain text elsewhere (`wiki/STYLE.md`, "Spoilers"); `lint_pages.py` checks.
 - **New items, mechanics, structures or mobs:** write full articles (they replace the generated pages).
   Add them to `wiki/PAGES.md`, the overview pages and the navboxes.
 - **Removed features:** keep the article, say it was removed and in which version, add it to

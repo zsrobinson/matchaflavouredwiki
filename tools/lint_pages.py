@@ -73,7 +73,7 @@ def spoiler_leaks(title, text, secrets):
     its section (the whole page for a box in the lead). Links are left out: site/Spoilers.php hides them."""
     if not secrets:
         return []
-    names = re.compile(r'\b(%s)(?:e?s)?\b' % '|'.join(re.escape(s) for s in sorted(secrets, key=len, reverse=True)), re.I)
+    names = re.compile(r'(?<!\w)(%s)(?:e?s)?(?!\w)' % '|'.join(re.escape(s) for s in sorted(secrets, key=len, reverse=True)), re.I)
     shown, level, hidden_from = [], 0, None
     for line in text.split('\n'):
         h = re.match(r'^(=+)\s*(.*?)\s*\1\s*$', line)
@@ -86,7 +86,8 @@ def spoiler_leaks(title, text, secrets):
             continue
         if hidden_from is None:
             shown.append(line)
-    words = re.sub(r'<!--.*?-->|<code>.*?</code>', ' ', '\n'.join(shown), flags=re.S)  # a ref's quote is shown too
+    # a ref's quote is shown too; an inline <span class="mfw-spoiler"> is hidden like a box
+    words = re.sub(r'<!--.*?-->|<code>.*?</code>|<span class="mfw-spoiler">.*?</span>', ' ', '\n'.join(shown), flags=re.S)
     words = LINKING.sub(' ', re.sub(r'\[\[[^\]]*\]\]', ' ', words))
     return [(m.group(1), ' '.join(words[max(0, m.start() - 40):m.end() + 40].split()))
             for m in names.finditer(words) if m.group(1).lower() != title.lower()]

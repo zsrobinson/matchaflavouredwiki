@@ -189,8 +189,9 @@ the swap mid-way.
     box covers (`mfw-spoiler-body`; "siblings up to the next heading" is beyond CSS), and every link to a
     secret item with a wikitable row that has one (`mfw-spoiler`). It re-serializes only pages with a box
     or a secret, with MediaWiki's own tidy formatter, so other pages stay byte-identical.
-  - The secret items come from the pack, not from pages: `generate.py: secret_items()` (the two
-    secret-cooking advancements and the Cooking Recipes) writes `MediaWiki:Mfw-secrets`. What a page says
+  - The secrets come from the pack, not from pages: `generate.py: secret_items()` (see "Facts about the
+    pack's data" below) writes `MediaWiki:Mfw-secrets`. Category-list links are marked by a
+    `CategoryViewer::generateLink` hook in the same file. What a page says
     in plain text isn't caught, so prose that names a secret belongs under a `{{Spoiler}}` box.
     The rules for writers are in `wiki/STYLE.md` ("Spoilers").
 - **Diagrams**: `python3 tools/diagrams.py` draws every diagram from the pack's data into `wiki/diagrams/`
@@ -332,6 +333,10 @@ the swap mid-way.
   placeholders and are skipped. Map names come from `set_name`, and biome limits from `merchant_predicate`.
 - **Intrinsics are enchantments,** stored as `stored_enchantments` on armor and tools. Their names are
   glyph-only, so `generate.py: INTRINSIC_PAGES` and `INTRINSIC_LABELS` give them pages and readable labels.
+- **Secrets are what the pack marks as secret:** the items its two secret-cooking advancements name, the
+  dishes only a Cooking Recipe unlocks, and hidden advancements (not the Angler's Almanac). Not a recipe
+  that is merely missing from the recipe book. `generate.py: secret_items()` derives the list, so a new
+  secret is hidden without anyone listing it; `wiki/STYLE.md` ("Spoilers") has the rules for pages.
 - **Pack bugs** go on the "Known bugs" page. Don't write workarounds that hide them.
 - **Numbers in prose come from the data too.** `{{Value|<item>|<field>}}` (`Module:Value`) reads
   `Module:Data/Values`, which `generate.py: item_values` writes from the same code as the infobox, each

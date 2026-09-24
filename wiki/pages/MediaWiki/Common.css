@@ -57,6 +57,7 @@ html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td > * { display
 html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td:nth-child(2)::after {
 	content: 'Spoiler:\000020click to show';  /* \000020: ResourceLoader's minifier drops a space after a colon, even in a string */
 	display: block;
+	padding: 0.2rem 0.4rem;  /* the cell's own padding is in em, which the font-size of 0 above collapses */
 	font-size: 0.875rem;
 	line-height: 1.6;
 	color: #202122;

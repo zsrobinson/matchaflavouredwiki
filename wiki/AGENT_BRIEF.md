@@ -60,6 +60,9 @@ determine something from the source, leave it out. Don't guess.
 - Add categories: `[[Category:Food]]`, `[[Category:Armor]]`, `[[Category:Mechanics]]`,
   `[[Category:Mobs]]` and so on, following minecraft.wiki's category names.
 
+- Secrets (`wiki/STYLE.md`, "Spoilers"): write about a secret item or hidden advancement under a
+  `{{Spoiler}}` box, and elsewhere only link it, never name it in plain text.
+
 ## Checking your work
 - `python3 tools/preview.py "Title" "Other Title" ...` imports your pages into the local wiki
   (http://localhost:8080) and reports template/Lua errors, red links and missing files. Fix

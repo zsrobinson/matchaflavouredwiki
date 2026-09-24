@@ -333,4 +333,7 @@ html.mfw-hide-spoilers #p-personal #pt-sp-toggle a { background-image: url("data
 	#footer::before, #footer::after { content: none; }
 	#footer li { float: none; margin: 0 0 0.5em; padding: 0; }
 	#footer .mfw-recs { grid-template-columns: 1fr; gap: 8px; }
+	/* the badges side by side under the links, inside the footer (floated right, they hung below it) */
+	#footer-icons { float: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; padding: 0; }
+	#footer #footer-icons li { margin: 0; }
 }

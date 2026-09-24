@@ -108,7 +108,7 @@ def main():
     REDIRECTS.update(t for t, p in pages.items() if re.match(r'\s*#REDIRECT', p[1], re.I))
     names = [s.strip() for s in pages.get('MediaWiki:Mfw-secrets', ('', ''))[1].split('\n') if s.strip()]
     if names:
-        SECRETS = re.compile(r'\b(%s)(?:e?s)?\b' % '|'.join(re.escape(n) for n in sorted(names, key=len, reverse=True)), re.I)
+        SECRETS = re.compile(r'(?<!\w)(%s)(?:e?s)?(?!\w)' % '|'.join(re.escape(n) for n in sorted(names, key=len, reverse=True)), re.I)
     if '--all' in sys.argv:
         titles = sorted(pages)
     else:

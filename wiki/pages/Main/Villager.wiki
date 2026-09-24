@@ -70,14 +70,14 @@ Villagers are counted as "villager friends" together with wandering traders, iro
 
 == Advancements ==
 * '''A True Community''': trade with every profession except the Weaponsmith. Rewards 5 obols.
-* '''God help you...''' (hidden): "Commit great evil" by killing a villager or a wandering trader.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/kill_villager.json}}</ref>
+* <span class="mfw-spoiler">'''God help you...''' (hidden): "Commit great evil" by killing a villager or a wandering trader.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/kill_villager.json}}</ref></span>
 
 == History ==
 {{History|
 {{History line|0.4-alpha|Zombie villager textures changed.}}
 {{History line|0.6-alpha|Villages generate abandoned.
 Warding stones heal villagers and other villager friends.}}
-{{History line|1.10|Added the Amnestic. Fixed the ''God help you...'' advancement.}}
+{{History line|1.10|Added the Amnestic. Fixed the ''[[God help you...]]'' advancement.}}
 {{History line|Upcoming|2=Every employed villager buys its [[favorite food]] once after its first trade.}}
 }}
 

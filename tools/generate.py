@@ -1228,9 +1228,14 @@ SECRET_ADVANCEMENTS = ('matcha:tutorial/cook_secret_food', 'matcha:tutorial/cook
 
 
 def secret_items():
-    """What the pack keeps secret: the items its two secret-cooking advancements name ("Hidden Flavors",
-    "Wait, you can make that?"), the dishes only a Cooking Recipe teaches, and those Cooking Recipes'
-    variants. site/Spoilers.php hides every mention of them while spoilers are hidden."""
+    """What the pack itself marks as secret (wiki/STYLE.md, "Spoilers"); site/Spoilers.php hides every
+    mention while spoilers are hidden:
+    - the items its two secret-cooking advancements name ("Cook a secret Ingredient", "Cook a secret
+      Meal": the secret_ingredient and secret_meal models);
+    - the dishes only a Cooking Recipe unlocks, and those Cooking Recipes' variants;
+    - the titles of its hidden advancements (secret_advancement()), which the game shows only once earned.
+    Not every recipe missing from the recipe book: slab reversals, campfire cooking and the like are
+    left out by the pack without being called secret."""
     advs = DATA['advancements']
     by_recipe = {r['id']: r['output']['name'] for r in ALL_RECIPES}
     by_model = {m: n for n, it in ITEMS.items() for m in it.get('models', [])}
@@ -1249,6 +1254,7 @@ def secret_items():
             names.update(by_recipe[r] for r in (a.get('rewards') or {}).get('recipes', []))
     names.update(v for v, it in DATA.get('variant_items', {}).items()
                  if it['item'] == 'Cooking Recipe' and v[len('Cooking Recipe ('):-1] in names)
+    names.update(a['title'] for aid, a in advs.items() if secret_advancement(aid, a))
     return sorted(names)
 
 
@@ -1976,6 +1982,12 @@ def adv_tree_order(advs):
 ADV_CATALOGUE_TABS = {'anglers_almanac'}  # every entry hidden until that fish is caught; the catches are on Fishing
 
 
+def secret_advancement(aid, a):
+    """A hidden advancement is a spoiler: the game shows it only once earned (wiki/STYLE.md). Not a tab's
+    root, and not a catalogue tab's entries, which are hidden only until that catch is made."""
+    return bool(a.get('hidden') and a.get('parent') and a.get('title') and adv_tab(aid) not in ADV_CATALOGUE_TABS)
+
+
 def advancement_tables():
     """Data/Advancements/<tab>: one row per visible advancement, anchored by its title. What the code
     can't say in words (the actual requirements) is a hand note the page passes by advancement ID."""
@@ -1994,10 +2006,7 @@ def advancement_tables():
             elif a.get('hidden'):
                 kind += ' (hidden)'
             desc = glyphs(esc(a['description'].replace('\n', ' '))).strip()
-            # a hidden advancement is a spoiler: the game shows it only once earned (MediaWiki:Common.css,
-            # wiki/STYLE.md). Not in a catalogue tab, whose entries are hidden only until caught.
-            spoiler = ' class="mfw-spoiler"' if (a.get('hidden') and a.get('parent')
-                                                 and tab not in ADV_CATALOGUE_TABS) else ''
+            spoiler = ' class="mfw-spoiler"' if secret_advancement(a['id'], a) else ''
             rows.append("|-%s\n| %s || <span id=\"%s\"></span>'''%s''' || %s || %s || {{{%s|}}} || %s || %s{{{%s reward|}}}" % (
                 spoiler, adv_icon(a), html.escape(a['title']), glyphs(esc(a['title'])), desc or '—', esc(parent) or '—',
                 a['id'], kind, adv_rewards(a) or '—', a['id']))

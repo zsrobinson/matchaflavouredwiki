@@ -142,15 +142,25 @@ the dark-mode toggle; the switch in the phone menu). What is hidden:
 - **What a `{{Spoiler}}` box covers:** the rest of its section, up to the next heading of the same or a
   higher level. A box in the lead covers the rest of the page, so put it where the secret starts: after
   the infobox and hatnotes of a page that is a secret as a whole, under the heading of a section that is.
-- **Every link to a secret item,** and every table row that has one. The secret items are what the pack
-  itself keeps secret (`MediaWiki:Mfw-secrets`, generated): the secret ingredients and meals and the
-  dishes only a Cooking Recipe teaches.
-- **Hidden advancements** (rows in `{{Data/Advancements/<tab>}}`), which the game shows only once earned.
-  Not the Angler's Almanac, whose entries are hidden only until that catch is made.
+- **Every mention of a secret:** its links, and the table rows that link or name it. A secret is what the
+  pack itself marks as secret, and nothing else (`generate.py: secret_items()` writes the list to
+  `MediaWiki:Mfw-secrets`, so a release that adds one updates it):
+  - the items named by the two secret-cooking advancements, "Hidden Flavors" ("Cook a secret
+    Ingredient") and "Wait, you can make that?" ("Cook a secret Meal");
+  - the dishes only a Cooking Recipe unlocks (`advancement/cooking_recipes/`), and those Cooking Recipes;
+  - hidden advancements (`"hidden": true`), which the game shows only once earned: their titles, and
+    their rows in `{{Data/Advancements/<tab>}}`. Not the Angler's Almanac, whose entries are a catch log
+    hidden only until that catch is made (its fish are documented on the fishing pages).
+
+  A recipe missing from the recipe book is not a secret by itself: slab reversals, campfire cooking and
+  the like are never unlocked either. The developer also mentions secret tool, armor and shield recipes,
+  but the pack's files don't mark any, so none are treated as secret.
 
 Links are caught automatically; words are not. Outside a `{{Spoiler}}` box, don't name a secret in plain
-text or in a heading: link it, or move the sentence under the box. A section about a secret gets a
-neutral heading ("Secret recipe", not the dish's name).
+text or in a heading: link it, move the sentence under the box, or, for one sentence or list item that
+describes a secret, wrap it in `<span class="mfw-spoiler">`. A section about a secret gets a neutral
+heading ("Secret recipe", not the dish's name). `tools/lint_pages.py` and `tools/check_site.py` fail on
+a secret a reader would see.
 
 Be conservative: a spoiler is something the pack hides on purpose (a secret recipe or ingredient, a hidden
 advancement, a secret in a structure). Ordinary mechanics, drops and recipes the recipe book shows are not

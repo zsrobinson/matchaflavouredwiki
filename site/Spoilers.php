@@ -139,7 +139,8 @@ function mfwNamesRegex( array $secrets ) {
 	usort( $quoted, static function ( $a, $b ) {
 		return strlen( $b ) - strlen( $a );
 	} );
-	return '/\\b(?:' . implode( '|', $quoted ) . ')(?:e?s)?\\b/iu';
+	// not \b: a name can end in punctuation ("You're Rich!")
+	return '/(?<!\\w)(?:' . implode( '|', $quoted ) . ')(?:e?s)?(?!\\w)/iu';
 }
 
 /** The page HTML with its spoilers marked (unchanged if it has neither a spoiler box nor a secret). */
