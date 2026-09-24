@@ -1,0 +1,32 @@
+<includeonly>=== Stonecutting ===
+{{Stonecutter|Input=Block of Copper;Exposed Copper;Weathered Copper;Oxidized Copper;Waxed Block of Copper;Waxed Exposed Copper;Waxed Weathered Copper;Waxed Oxidized Copper|Output=Copper Door,6;Exposed Copper Door,6;Weathered Copper Door,6;Oxidized Copper Door,6;Waxed Copper Door,6;Waxed Exposed Copper Door,6;Waxed Weathered Copper Door,6;Waxed Oxidized Copper Door,6}}
+{| class="wikitable sortable"
+! Item !! Recipe
+|-
+| <span id="Copper Door"></span>{{ItemLink|Copper Door|mcw=Copper Door}} || [[Block of Copper]] → 6
+|-
+| <span id="Exposed Copper Door"></span>{{ItemLink|Exposed Copper Door|mcw=Exposed Copper Door}} || [[Exposed Copper]] → 6
+|-
+| <span id="Weathered Copper Door"></span>{{ItemLink|Weathered Copper Door|mcw=Weathered Copper Door}} || [[Weathered Copper]] → 6
+|-
+| <span id="Oxidized Copper Door"></span>{{ItemLink|Oxidized Copper Door|mcw=Oxidized Copper Door}} || [[Oxidized Copper]] → 6
+|-
+| <span id="Waxed Copper Door"></span>{{ItemLink|Waxed Copper Door|mcw=Waxed Copper Door}} || {{MCW|Waxed Block of Copper}} → 6
+|-
+| <span id="Waxed Exposed Copper Door"></span>{{ItemLink|Waxed Exposed Copper Door|mcw=Waxed Exposed Copper Door}} || {{MCW|Waxed Exposed Copper}} → 6
+|-
+| <span id="Waxed Weathered Copper Door"></span>{{ItemLink|Waxed Weathered Copper Door|mcw=Waxed Weathered Copper Door}} || {{MCW|Waxed Weathered Copper}} → 6
+|-
+| <span id="Waxed Oxidized Copper Door"></span>{{ItemLink|Waxed Oxidized Copper Door|mcw=Waxed Oxidized Copper Door}} || {{MCW|Waxed Oxidized Copper}} → 6
+|}
+=== Crafting ===
+{{Crafting|A1=Copper Door;Exposed Copper Door;Weathered Copper Door|B1=Potion;Potion;Potion|Output=Exposed Copper Door;Weathered Copper Door;Oxidized Copper Door|shapeless=1}}
+{| class="wikitable sortable"
+! Item !! Recipe
+|-
+| {{ItemLink|Exposed Copper Door|mcw=Exposed Copper Door}} || [[Copper Door]] + {{MCW|Potion}} → 1
+|-
+| {{ItemLink|Weathered Copper Door|mcw=Weathered Copper Door}} || [[Exposed Copper Door]] + {{MCW|Potion}} → 1
+|-
+| {{ItemLink|Oxidized Copper Door|mcw=Oxidized Copper Door}} || [[Weathered Copper Door]] + {{MCW|Potion}} → 1
+|}</includeonly><noinclude>Generated: the ways Matcha Flavoured adds to get each copper door. [[Category:Generated data]]</noinclude>

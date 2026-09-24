@@ -1,0 +1,3 @@
+<includeonly>{{#invoke:Family infobox|main}}</includeonly><noinclude>
+Infobox for a page about a family of items, as on minecraft.wiki: the picture cycles through the variants and a row under it shows every variant's slot. <code><nowiki>{{Family infobox|Iron Mattock;Steel Mattock|title=Mattock|type=Tool|stackable=No}}</nowiki></code>. The first argument lists the variants (each needs <code>File:&lt;Name&gt;.png</code>), separated by semicolons; other arguments are {{tl|Infobox}} rows. Generated family pages (<code>tools/generate.py</code>) use it too.
+[[Category:Infobox templates]]</noinclude>

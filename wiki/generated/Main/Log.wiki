@@ -1,0 +1,58 @@
+{{Vanilla|Log}}
+{{Family infobox|Oak Log;Stripped Oak Log;Spruce Log;Stripped Spruce Log;Birch Log;Stripped Birch Log;Jungle Log;Stripped Jungle Log;Acacia Log;Stripped Acacia Log;Dark Oak Log;Stripped Dark Oak Log;Mangrove Log;Stripped Mangrove Log;Cherry Log;Stripped Cherry Log;Pale Oak Log;Stripped Pale Oak Log;Crimson Stem;Stripped Crimson Stem;Warped Stem;Stripped Warped Stem|title=Log|type=Block|stackable=Yes (64)}}
+A '''log''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Stonecutter]] recipes and [[Leatherworker]] trades for the 22 variants below, and otherwise leaves them as in vanilla. See {{MCW|Log}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Log}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Oak Log|mcw=Oak Log}} || <code>minecraft:oak_log</code>
+|-
+| {{ItemLink|Stripped Oak Log|mcw=Stripped Oak Log}} || <code>minecraft:stripped_oak_log</code>
+|-
+| {{ItemLink|Spruce Log|mcw=Spruce Log}} || <code>minecraft:spruce_log</code>
+|-
+| {{ItemLink|Stripped Spruce Log|mcw=Stripped Spruce Log}} || <code>minecraft:stripped_spruce_log</code>
+|-
+| {{ItemLink|Birch Log|mcw=Birch Log}} || <code>minecraft:birch_log</code>
+|-
+| {{ItemLink|Stripped Birch Log|mcw=Stripped Birch Log}} || <code>minecraft:stripped_birch_log</code>
+|-
+| {{ItemLink|Jungle Log|mcw=Jungle Log}} || <code>minecraft:jungle_log</code>
+|-
+| {{ItemLink|Stripped Jungle Log|mcw=Stripped Jungle Log}} || <code>minecraft:stripped_jungle_log</code>
+|-
+| {{ItemLink|Acacia Log|mcw=Acacia Log}} || <code>minecraft:acacia_log</code>
+|-
+| {{ItemLink|Stripped Acacia Log|mcw=Stripped Acacia Log}} || <code>minecraft:stripped_acacia_log</code>
+|-
+| {{ItemLink|Dark Oak Log|mcw=Dark Oak Log}} || <code>minecraft:dark_oak_log</code>
+|-
+| {{ItemLink|Stripped Dark Oak Log|mcw=Stripped Dark Oak Log}} || <code>minecraft:stripped_dark_oak_log</code>
+|-
+| {{ItemLink|Mangrove Log|mcw=Mangrove Log}} || <code>minecraft:mangrove_log</code>
+|-
+| {{ItemLink|Stripped Mangrove Log|mcw=Stripped Mangrove Log}} || <code>minecraft:stripped_mangrove_log</code>
+|-
+| {{ItemLink|Cherry Log|mcw=Cherry Log}} || <code>minecraft:cherry_log</code>
+|-
+| {{ItemLink|Stripped Cherry Log|mcw=Stripped Cherry Log}} || <code>minecraft:stripped_cherry_log</code>
+|-
+| {{ItemLink|Pale Oak Log|mcw=Pale Oak Log}} || <code>minecraft:pale_oak_log</code>
+|-
+| {{ItemLink|Stripped Pale Oak Log|mcw=Stripped Pale Oak Log}} || <code>minecraft:stripped_pale_oak_log</code>
+|-
+| {{ItemLink|Crimson Stem|mcw=Crimson Stem}} || <code>minecraft:crimson_stem</code>
+|-
+| {{ItemLink|Stripped Crimson Stem|mcw=Stripped Crimson Stem}} || <code>minecraft:stripped_crimson_stem</code>
+|-
+| {{ItemLink|Warped Stem|mcw=Warped Stem}} || <code>minecraft:warped_stem</code>
+|-
+| {{ItemLink|Stripped Warped Stem|mcw=Stripped Warped Stem}} || <code>minecraft:stripped_warped_stem</code>
+|}
+
+[[Category:Blocks]]

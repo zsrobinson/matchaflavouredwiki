@@ -70,3 +70,9 @@ body.wgl-theme-dark .glyph img { filter: invert(1) brightness(0.92); }
 
 /* Phones: the longest main-page tile label ("Advancements") is wider than its tile at 12px */
 @media screen and (max-width: 480px) { .mp-icon-wrapper .mp-icon-link { font-size: 11px; } }
+
+/* A row anchor that a redirect points at (Advancements, family pages like Fence Gate): leave room above
+   it and highlight its row */
+.mw-parser-output td > span[id]:target { scroll-margin-top: 96px; }
+.mw-parser-output tr:has(> td > span[id]:target) > td { background-color: #fff3c4; }
+body.wgl-theme-dark .mw-parser-output tr:has(> td > span[id]:target) > td { background-color: #4a4221; }

@@ -1,0 +1,32 @@
+<includeonly>=== Stonecutting ===
+{{Stonecutter|Input=Block of Copper;Exposed Copper;Weathered Copper;Oxidized Copper;Waxed Block of Copper;Waxed Exposed Copper;Waxed Weathered Copper;Waxed Oxidized Copper|Output=Copper Bars,36;Exposed Copper Bars,36;Weathered Copper Bars,36;Oxidized Copper Bars,36;Waxed Copper Bars,36;Waxed Exposed Copper Bars,36;Waxed Weathered Copper Bars,36;Waxed Oxidized Copper Bars,36}}
+{| class="wikitable sortable"
+! Item !! Recipe
+|-
+| <span id="Copper Bars"></span>{{ItemLink|Copper Bars|mcw=Copper Bars}} || [[Block of Copper]] → 36<br />[[Copper Ingot]] → 4
+|-
+| <span id="Exposed Copper Bars"></span>{{ItemLink|Exposed Copper Bars|mcw=Exposed Copper Bars}} || [[Exposed Copper]] → 36
+|-
+| <span id="Weathered Copper Bars"></span>{{ItemLink|Weathered Copper Bars|mcw=Weathered Copper Bars}} || [[Weathered Copper]] → 36
+|-
+| <span id="Oxidized Copper Bars"></span>{{ItemLink|Oxidized Copper Bars|mcw=Oxidized Copper Bars}} || [[Oxidized Copper]] → 36
+|-
+| <span id="Waxed Copper Bars"></span>{{ItemLink|Waxed Copper Bars|mcw=Waxed Copper Bars}} || {{MCW|Waxed Block of Copper}} → 36
+|-
+| <span id="Waxed Exposed Copper Bars"></span>{{ItemLink|Waxed Exposed Copper Bars|mcw=Waxed Exposed Copper Bars}} || {{MCW|Waxed Exposed Copper}} → 36
+|-
+| <span id="Waxed Weathered Copper Bars"></span>{{ItemLink|Waxed Weathered Copper Bars|mcw=Waxed Weathered Copper Bars}} || {{MCW|Waxed Weathered Copper}} → 36
+|-
+| <span id="Waxed Oxidized Copper Bars"></span>{{ItemLink|Waxed Oxidized Copper Bars|mcw=Waxed Oxidized Copper Bars}} || {{MCW|Waxed Oxidized Copper}} → 36
+|}
+=== Crafting ===
+{{Crafting|A1=Copper Bars;Exposed Copper Bars;Weathered Copper Bars|B1=Potion;Potion;Potion|Output=Exposed Copper Bars;Weathered Copper Bars;Oxidized Copper Bars|shapeless=1}}
+{| class="wikitable sortable"
+! Item !! Recipe
+|-
+| {{ItemLink|Exposed Copper Bars|mcw=Exposed Copper Bars}} || [[Copper Bars]] + {{MCW|Potion}} → 1
+|-
+| {{ItemLink|Weathered Copper Bars|mcw=Weathered Copper Bars}} || [[Exposed Copper Bars]] + {{MCW|Potion}} → 1
+|-
+| {{ItemLink|Oxidized Copper Bars|mcw=Oxidized Copper Bars}} || [[Weathered Copper Bars]] + {{MCW|Potion}} → 1
+|}</includeonly><noinclude>Generated: the ways Matcha Flavoured adds to get each copper bars. [[Category:Generated data]]</noinclude>
