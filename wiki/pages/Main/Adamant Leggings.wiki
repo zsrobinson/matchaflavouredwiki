@@ -17,7 +17,7 @@ The upgrade needs no template, and enchantments on the diamond item carry over; 
 They give {{Value|Adamant Leggings|armor}} armor, {{Value|Adamant Leggings|toughness}} toughness and 10% knockback resistance, the vanilla netherite values, with {{Value|Adamant Leggings|durability}} durability. Each piece also has Protection I and Unbreaking II.
 
 === Doom ===
-The [[Doom]] intrinsic periodically clears Weakness from nearby creatures and deals armor-piercing damage as it does, so it combines with the Weakness from adamant weapons. Each piece strengthens it, and wearing all four adds the Doom [[set bonus]] as well as {{Data/Set bonus|adamant_armour=4}}.<ref>{{Source|MF_datapack/data/matcha/function/timers/divinity/adamant_armour.mcfunction}}</ref>
+The [[Doom]] intrinsic periodically clears Weakness from nearby creatures and deals armor-piercing damage as it does, so it combines with the Weakness from adamant weapons. Each piece strengthens it, and wearing all four adds the Doom [[set bonus]] as well as {{Data/Set bonus|adamant_armour=4}}.<ref>{{Source|MF_datapack/data/matcha/function/timers/3s/adamant_armour.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/divinity/adamant_armour.mcfunction}}</ref>
 
 === Repairing ===
 They can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}} or {{MCW|Block of Gold|blocks of gold}}. Their tooltip says blocks of diamond or [[adamant scrap]], like the other adamant armor, but adamant scrap does not work on the leggings.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_leggings.json}}</ref> The pack resets repair costs to zero, so they can be repaired indefinitely; see [[Repairing]].
