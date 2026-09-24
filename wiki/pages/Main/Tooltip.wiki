@@ -67,7 +67,7 @@ Lines in color below the stats are [[intrinsic]] enchantments, which the pack st
 "Set Bonus:" introduces lines that need all four armor pieces, and "Per Equipment Bonus:" lines that stack with each piece worn. See [[Set bonus]]. "Elytra Bonus:" marks the bonus of the [[Elytra#Shakudo Elytra|shakudo elytra]].
 
 == Food and potions ==
-The first line of a [[food]]'s tooltip shows the healing as red hearts, one heart per 2 health points. The lines below list the effects with their symbol and duration, for example {{G|Armor}} Resistance (20:00) on a [[Pumpkin Curry|pumpkin curry]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref> Several effects share a symbol:
+The first line of a [[food]]'s tooltip shows the healing as red hearts, one heart per 2 health points. The lines below list the effects with their symbol and duration, for example {{G|Armor}} Resistance ({{Value|Pumpkin Curry|duration|effect=Resistance|format=clock}}) on a [[Pumpkin Curry|pumpkin curry]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref> Several effects share a symbol:
 {| class="wikitable"
 ! Symbol !! Effects
 |-

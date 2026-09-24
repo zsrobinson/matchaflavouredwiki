@@ -4,13 +4,13 @@
 {| class="wikitable"
 ! Shears !! Obtaining !! Durability !! Repair !! Notes
 |-
-| {{ItemLink|Copper Shears}} || Crafted from 2 copper ingots || 300 || Copper ingots ||
+| {{ItemLink|Copper Shears}} || Crafted from 2 copper ingots || {{Value|Copper Shears|durability}} || Copper ingots ||
 |-
-| {{ItemLink|Iron Shears}} || Crafted from 2 iron ingots || 500 || — || Vanilla shears with 500 durability instead of 238
+| {{ItemLink|Iron Shears}} || Crafted from 2 iron ingots || {{Value|Iron Shears|durability}} || — || Vanilla shears with {{Value|Iron Shears|durability}} durability instead of 238
 |-
-| {{ItemLink|Steel Shears}} || Iron shears + steel alloy at a smithing table || 3000 || Iron ingots ||
+| {{ItemLink|Steel Shears}} || Iron shears + steel alloy at a smithing table || {{Value|Steel Shears|durability}} || Iron ingots ||
 |-
-| {{ItemLink|Shepherd's Shears}} || Sold by the [[Shepherd|shepherd]] || 3000 || Iron nuggets, iron ingots || Looting III; the tooltip says blocks of copper
+| {{ItemLink|Shepherd's Shears}} || Sold by the [[Shepherd|shepherd]] || {{Value|Shepherd's Shears|durability}} || Iron nuggets, iron ingots || Looting III; the tooltip says blocks of copper
 |}
 
 == Usage ==
