@@ -17,19 +17,7 @@ At Novice level the mouthpiece exchanges [[Paradise Lost]] or [[The Divine Comed
 
 === Ofuda ===
 The Apprentice, Journeyman and Expert trades turn a sacred text and one or two crystal hearts into an Ofuda, an enchanted book that carries a named prayer:<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/2/tanakh.json}}</ref>
-{| class="wikitable"
-! Level !! Sacred text !! Crystal hearts !! Prayer !! Enchantments
-|-
-| Apprentice || [[The Avesta]] || 1 || Prayer of The God-King || Efficiency II, Unbreaking I
-|-
-| Apprentice || [[The Quran]] || 1 || Prayer of The Prophet || Protection II
-|-
-| Apprentice || [[The Tanakh]] || 1 || Prayer of Exodus || Loyalty III, [[Trailblaze]] III, Power II
-|-
-| Journeyman || [[The Book of Enoch]] || 1 || Prayer of Samyaza || Sharpness III
-|-
-| Expert || [[The Lesser Key of Solomon]] || 2 || Prayer of Belial || Mending
-|}
+{{Data/Ofuda}}
 The Ofuda is applied to equipment with an [[anvil]], like a vanilla enchanted book; see [[Ofuda]].
 
 === Divine Fragment ===

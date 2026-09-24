@@ -5,118 +5,25 @@ An '''enchantment''' is a modifier on a piece of equipment or a book. [[Matcha F
 The pack also uses enchantments for the fixed [[intrinsic]] effects of equipment ([[Warding]], [[Magic protection]], [[Cleanse]], [[Doom]] and the alloy intrinsics). Those have their own pages.
 
 == New enchantments ==
-{| class="wikitable sortable"
-! Enchantment !! Max level !! Applies to !! Effect !! Obtained from
-|-
-| [[Anemos]] || I || Swords and sticks || Each attack fires a {{MCW|Wind Charge|wind charge}}, with a 0.5-second cooldown || [[Prayer of Aeolus]]; iron swords in [[Abbey]] chests
-|-
-| [[Bloodrage]] || I || Axes || Strength I and Resistance II while at 5 hearts or less || [[Hatchet]] from the [[Lumberjack]]
-|-
-| [[Frost Protection]] || III || Chestplates || Reduces freezing damage; any level prevents [[freezing water]] damage || [[Prayer of Demeter]] (II)
-|-
-| [[Reach]] || III || Chestplates || +2 block interaction range per level || [[Prayer of Will]] (I)
-|-
-| [[Riposte]] || III || Stone-sword-based weapons || Pushes the wielder backward after each hit || [[Hepatizon Sword]] (II)
-|-
-| [[Slaughter]] || I || Weapons || +40 damage against livestock and slows nearby livestock || [[Cleaver]] from the [[Cook]]
-|-
-| [[Trailblaze]] || III || Boots || Faster movement on paths, gravel and mud bricks || [[Prayer of St. Clement]] (III), [[Ofuda]]: Prayer of Exodus (III), [[Sturdy Leather Boots]] (I)
-|-
-| [[Zephyr]] || III || Boots || Sneaking gives Jump Boost VII; higher levels add Slow Falling and a charged updraft || [[Elegy of Hyacinthus]] (I)
-|}
+{{Data/Enchantments/New
+|matcha:anemos=Each attack fires a {{MCW|Wind Charge|wind charge}}, with a 0.5-second cooldown
+|matcha:bloodrage=Strength I and Resistance II while at 5 hearts or less
+|matcha:freezing_protection=Reduces freezing damage; any level prevents [[freezing water]] damage
+|matcha:reach=+2 block interaction range per level
+|matcha:riposte=Pushes the wielder backward after each hit
+|matcha:slaughter=+40 damage against livestock and slows nearby livestock
+|matcha:traversal=Faster movement on paths, gravel and mud bricks
+|matcha:zephyr=Sneaking gives Jump Boost VII; higher levels add Slow Falling and a charged updraft
+}}
 
 == Vanilla enchantments ==
-Every vanilla enchantment is still in the game. The pack sets the anvil cost multiplier of all of them to 1 (the five that were already 1 are unchanged), which makes combining books in an [[anvil]] cheap. The substantive changes are to [[Feather Falling]], [[Fortune]] and [[Looting]].<ref>{{Source|MF_datapack/data/minecraft/enchantment/feather_falling.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/enchantment/fortune.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/enchantment/looting.json}}</ref> "Random chest and fishing books" means books rolled from <code>#minecraft:on_random_loot</code> in dungeon, mineshaft, pyramid, stronghold, mansion, ocean ruin and ancient city chests and in fishing treasure (see [[Enchanting#Other sources]]). "Trial chamber vaults" means the fixed list of books in normal trial chamber reward vaults.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_rare.json}}</ref>
+Every vanilla enchantment is still in the game. The pack sets the anvil cost multiplier of all of them to 1 (the five that were already 1 are unchanged), which makes combining books in an [[anvil]] cheap. The substantive changes are to [[Feather Falling]], [[Fortune]] and [[Looting]].<ref>{{Source|MF_datapack/data/minecraft/enchantment/feather_falling.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/enchantment/fortune.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/enchantment/looting.json}}</ref> The pack's own enchantments add incompatibilities: [[Slaughter]] can't be combined with the damage enchantments, the [[magic protection]] of shakudo armor and the shakudo elytra can't be combined with the four protection enchantments, and the alloy tool intrinsics can't be combined with Fortune or Silk Touch.<ref>{{Source|MF_datapack/data/matcha/enchantment/slaughter.json}}</ref><ref>{{Source|MF_datapack/data/matcha/enchantment/magic_protection.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/exclusive_set/mining.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_mining.json}}</ref> The pack also adds poisonous potatoes, the base item of most of its custom items, to the item tag of enchantable helmets, which the helmet and armor enchantments name as their supported items.<ref>{{Source|MF_datapack/data/minecraft/tags/item/enchantable/head_armor.json}}</ref>
 
-{| class="wikitable sortable"
-! Enchantment !! Max level !! Changes from vanilla !! Crafted or traded as !! Found as
-|-
-| <span id="Aqua Affinity"></span>{{MCW|Aqua Affinity}} || I || Anvil cost 4 → 1 || [[Prayer of Yamm]] (I) || Random chest and fishing books
-|-
-| <span id="Bane of Arthropods"></span>{{MCW|Bane of Arthropods}} || V || Anvil cost 2 → 1 || [[Elegy of Arachnae]] (V) || Random chest and fishing books<br />Trial chamber vaults
-|-
-| <span id="Blast Protection"></span>{{MCW|Blast Protection}} || IV || Anvil cost 4 → 1 || ''None'' || Random chest and fishing books
-|-
-| <span id="Breach"></span>{{MCW|Breach}} || IV || Anvil cost 4 → 1 || [[Prayer of Ares]] (II) || Random chest and fishing books
-|-
-| <span id="Channeling"></span>{{MCW|Channeling}} || I || Anvil cost 8 → 1 || [[Prayer of The Light]] (I) || Random chest and fishing books<br />Trial chamber vaults
-|-
-| <span id="Curse of Binding"></span>[[Curse of Binding]] || I || Anvil cost 8 → 1<br />'''Stored on every crafted Hell-Bound Book''' || ''None'' || Random chest and fishing books<br />Ominous vaults
-|-
-| <span id="Curse of Vanishing"></span>{{MCW|Curse of Vanishing}} || I || Anvil cost 8 → 1 || ''None'' || Random chest and fishing books<br />Ominous vaults
-|-
-| <span id="Density"></span>{{MCW|Density}} || V || Anvil cost 2 → 1 || [[Prayer of Talos]] (II) || Random chest and fishing books
-|-
-| <span id="Depth Strider"></span>{{MCW|Depth Strider}} || III || Anvil cost 4 → 1 || [[Prayer of Yamm]] (II) || Random chest and fishing books
-|-
-| <span id="Efficiency"></span>{{MCW|Efficiency}} || V || None || [[Prayer of Daedalus]] (III)<br />[[Ofuda]]: Prayer of The God-King (II) || Random chest and fishing books<br />Trial chamber vaults
-|-
-| <span id="Feather Falling"></span>[[Feather Falling]] || IV || Anvil cost 2 → 1<br />'''Fall damage reduction doubled''' || [[Elegy of Icarus]] (II) || Random chest and fishing books<br />Trial chamber vaults
-|-
-| <span id="Fire Aspect"></span>{{MCW|Fire Aspect}} || II || Anvil cost 4 → 1 || [[Prayer of Yama]] (I) || Random chest and fishing books
-|-
-| <span id="Fire Protection"></span>{{MCW|Fire Protection}} || IV || Anvil cost 2 → 1 || [[Prayer of Yama]] (III) || Random chest and fishing books
-|-
-| <span id="Flame"></span>{{MCW|Flame}} || I || Anvil cost 4 → 1 || [[Prayer of Yama]] (I) || Random chest and fishing books
-|-
-| <span id="Fortune"></span>[[Fortune]] || I || Anvil cost 4 → 1<br />'''Maximum level III → I'''<br />'''Exclusive with the electrum tool intrinsic''' || [[Prayer of Midas]] (I) || Random chest and fishing books<br />Trial chamber vaults
-|-
-| <span id="Frost Walker"></span>{{MCW|Frost Walker}} || II || Anvil cost 4 → 1 || [[Prayer of Demeter]] (II) || Random chest and fishing books
-|-
-| <span id="Impaling"></span>{{MCW|Impaling}} || V || Anvil cost 4 → 1 || [[Prayer of Apollo]] (III) || Random chest and fishing books<br />Trial chamber vaults
-|-
-| <span id="Infinity"></span>{{MCW|Infinity}} || I || Anvil cost 8 → 1 || [[Prayer of Paris]] (I) || Random chest and fishing books
-|-
-| <span id="Knockback"></span>{{MCW|Knockback}} || II || Anvil cost 2 → 1 || [[Prayer of Talos]] (II) || Random chest and fishing books
-|-
-| <span id="Looting"></span>[[Looting]] || III || Anvil cost 4 → 1<br />'''Also applies to shears''' || [[Prayer of Midas]] (III) || Random chest and fishing books
-|-
-| <span id="Loyalty"></span>{{MCW|Loyalty}} || III || Anvil cost 2 → 1 || [[Prayer of Glaucus]] (I)<br />[[Ofuda]]: Prayer of Exodus (III) || Random chest and fishing books<br />Trial chamber vaults
-|-
-| <span id="Luck of the Sea"></span>{{MCW|Luck of the Sea}} || III || Anvil cost 4 → 1 || [[Prayer of Glaucus]] (III) || Random chest and fishing books
-|-
-| <span id="Lunge"></span>{{MCW|Lunge}} || III || Anvil cost 2 → 1 || [[Prayer of Ares]] (II) || Random chest and fishing books
-|-
-| <span id="Lure"></span>{{MCW|Lure}} || III || Anvil cost 4 → 1 || [[Prayer of Glaucus]] (III) || Random chest and fishing books
-|-
-| <span id="Mending"></span>[[Mending]] || I || Anvil cost 4 → 1 || [[Prayer of Lu Ban]] (I)<br />[[Ofuda]]: Prayer of Belial (I) || Random chest and fishing books<br />Trial chamber vaults
-|-
-| <span id="Multishot"></span>{{MCW|Multishot}} || I || Anvil cost 4 → 1 || [[Prayer of Artemis]] (I) || Random chest and fishing books
-|-
-| <span id="Piercing"></span>{{MCW|Piercing}} || IV || None || [[Prayer of Apollo]] (II) || Random chest and fishing books
-|-
-| <span id="Power"></span>{{MCW|Power}} || V || None || [[Prayer of Artemis]] (II)<br />[[Ofuda]]: Prayer of Exodus (II) || Random chest and fishing books
-|-
-| <span id="Projectile Protection"></span>{{MCW|Projectile Protection}} || IV || Anvil cost 2 → 1 || ''None'' || Random chest and fishing books
-|-
-| <span id="Protection"></span>{{MCW|Protection}} || IV || None || [[Ofuda]]: Prayer of The Prophet (II) || Random chest and fishing books
-|-
-| <span id="Punch"></span>{{MCW|Punch}} || II || Anvil cost 4 → 1 || [[Prayer of Talos]] (II) || Random chest and fishing books
-|-
-| <span id="Quick Charge"></span>{{MCW|Quick Charge}} || III || Anvil cost 2 → 1 || ''None'' || Random chest and fishing books
-|-
-| <span id="Respiration"></span>{{MCW|Respiration}} || III || Anvil cost 4 → 1 || [[Prayer of Yamm]] (II) || Random chest and fishing books
-|-
-| <span id="Riptide"></span>{{MCW|Riptide}} || III || Anvil cost 4 → 1 || [[Prayer of Yamm]] (I) || Random chest and fishing books<br />Trial chamber vaults
-|-
-| <span id="Sharpness"></span>{{MCW|Sharpness}} || V || None || [[Ofuda]]: Prayer of Samyaza (III) || Random chest and fishing books<br />Trial chamber vaults
-|-
-| <span id="Silk Touch"></span>[[Silk Touch]] || I || Anvil cost 8 → 1<br />'''Exclusive with the electrum tool intrinsic''' || [[Prayer of Eros]] (I) || Random chest and fishing books<br />Trial chamber vaults
-|-
-| <span id="Smite"></span>{{MCW|Smite}} || V || Anvil cost 2 → 1 || [[Prayer of The Light]] (IV)<br />[[Prayer of Man]] (II) || Random chest and fishing books
-|-
-| <span id="Soul Speed"></span>{{MCW|Soul Speed}} || III || Anvil cost 8 → 1 || [[Prayer of Cronus]] (II) || [[Bastion Remnant|Bastion]] chests, piglin bartering
-|-
-| <span id="Sweeping Edge"></span>{{MCW|Sweeping Edge}} || III || Anvil cost 4 → 1 || ''None'' || Random chest and fishing books
-|-
-| <span id="Swift Sneak"></span>{{MCW|Swift Sneak}} || III || Anvil cost 8 → 1 || [[Prayer of Cronus]] (II) || [[Ancient City|Ancient city]] chests
-|-
-| <span id="Thorns"></span>{{MCW|Thorns}} || III || Anvil cost 8 → 1 || ''None'' || Random chest and fishing books
-|-
-| <span id="Unbreaking"></span>[[Unbreaking]] || III || Anvil cost 2 → 1 || [[Prayer of Daedalus]] (III)<br />[[Prayer of Prometheus]] (II)<br />[[Ofuda]]: Prayer of The God-King (I) || Random chest and fishing books
-|-
-| <span id="Wind Burst"></span>{{MCW|Wind Burst}} || III || Anvil cost 4 → 1 || [[Prayer of Aeolus]] (I) || —
-|}
+"Comes on" lists equipment that is crafted, traded or found with the enchantment already applied. "Random chest and fishing books" means books rolled from <code>#minecraft:on_random_loot</code> in dungeon, mineshaft, pyramid, stronghold, mansion, ocean ruin and ancient city chests and in fishing treasure (see [[Enchanting#Other sources]]). "Trial chamber vaults" means the fixed list of books in normal trial chamber reward vaults.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_rare.json}}</ref>
+
+{{Data/Enchantments/Vanilla
+|minecraft:feather_falling=Fall damage reduction doubled
+}}
 
 Blast Protection, Projectile Protection, Thorns, Sweeping Edge, Quick Charge and Curse of Vanishing have no blessing or trade. Apart from loot, four of them come only already applied to crafted gear: [[Sturdy leather armor|sturdy leather armor]] has Projectile Protection II–IV, [[Chainmail armor|chainmail armor]] has Thorns III, [[Steel equipment|steel armor]] has Blast Protection II–IV and the [[Shakudo Sword|shakudo sword]] has Sweeping Edge I. Quick Charge and Curse of Vanishing can only be found. Protection and Sharpness have no blessing: apart from loot, they come only from [[Ofuda]] and from [[Adamant equipment|adamant equipment]], which is smithed with Protection I or Sharpness I.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sturdy_leather_boots.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/chainmail_chestplate.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_chestplate.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_sword.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_sword.json}}</ref>
 

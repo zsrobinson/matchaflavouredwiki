@@ -57,6 +57,9 @@ KNOWN = {
                       'minecraft:explosion_decay', 'minecraft:set_enchantments', 'minecraft:limit_count',
                       'minecraft:enchanted_count_increase', 'minecraft:furnace_smelt', 'minecraft:set_stew_effect',
                       'minecraft:copy_components', 'minecraft:copy_state', 'minecraft:filtered', 'minecraft:discard'},
+    # loot_enchantments(): what enchant_randomly, enchant_with_levels and set_enchantments give (Enchantment tables)
+    'loot enchant function': {'function', 'conditions', 'options', 'levels', 'only_compatible', 'enchantments', 'add',
+                              'include_additional_cost_component'},
     # generate.py: cond_notes() turns these into drop-table notes and chances
     'condition': {'minecraft:location_check', 'minecraft:entity_properties', 'minecraft:block_state_property',
                   'minecraft:match_tool', 'minecraft:survives_explosion', 'minecraft:random_chance',
@@ -576,6 +579,8 @@ def display_stack(stack):
         d['enchantments'] = comps['minecraft:stored_enchantments']
     if comps.get('minecraft:enchantments'):
         d['enchantments'] = comps['minecraft:enchantments']
+    if comps.get('minecraft:stored_enchantments') and comps.get('minecraft:lore'):
+        d['lore'] = strip_codes(render_text(comps['minecraft:lore'][0])).strip()  # an Ofuda's prayer
     variant = stack_variant(stack)
     if variant:
         d['variant'] = variant
@@ -586,13 +591,14 @@ def display_stack(stack):
 
 
 # ---------------------------------------------------------------- tags
-def load_tags(kind):
+def load_tags(kind, pack=True):
+    """Tags of one registry as the game merges them: vanilla's, then the pack's (pack=False: vanilla only)."""
     tags = {}
     for base, ns_root in ((VDATA, 'minecraft'),):
         for f in glob.glob(os.path.join(base, 'tags', kind, '**', '*.json'), recursive=True):
             t = 'minecraft:' + os.path.relpath(f, os.path.join(base, 'tags', kind))[:-5]
             tags[t] = load(f)['values']
-    for f in glob.glob(os.path.join(DP, '*', 'tags', kind, '**', '*.json'), recursive=True):
+    for f in glob.glob(os.path.join(DP, '*', 'tags', kind, '**', '*.json'), recursive=True) if pack else []:
         ns = os.path.relpath(f, DP).split(os.sep)[0]
         t = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'tags', kind))[:-5]
         d = load(f)
@@ -605,6 +611,22 @@ def load_tags(kind):
 
 
 ITEM_TAGS = load_tags('item')
+ENCH_TAGS = load_tags('enchantment')
+
+
+def resolve(ref, tags, seen=None):
+    """Ids a registry reference names: an id, a #tag (expanded) or a list of either, in order, once each."""
+    seen = set() if seen is None else seen
+    out = []
+    for v in ([ref] if isinstance(ref, str) else ref or []):
+        v = v if isinstance(v, str) else v['id']
+        if v.startswith('#'):
+            if v[1:] not in seen:
+                seen.add(v[1:])
+                out += resolve(tags.get(v[1:], []), tags, seen)
+        else:
+            out.append(norm_id(v))
+    return list(dict.fromkeys(out))
 
 
 def expand_tag(tag, seen=None):
@@ -744,6 +766,31 @@ def pool_count(pool_fns):
     return None
 
 
+def loot_enchantments(ent, comps, fns, src):
+    """What a loot entry enchants its stack with (generate.py: the Enchantment tables): the fixed
+    enchantments it sets ('enchantments'), or the ids a random enchanting function picks from
+    ('enchant_options', with 'enchant_from' the #tag or list the table names)."""
+    fixed = dict(comps.get('minecraft:stored_enchantments') or comps.get('minecraft:enchantments') or {})
+    for fn in fns:
+        f = fn.get('function', '').split(':')[-1]
+        if f not in ('enchant_randomly', 'enchant_with_levels', 'set_enchantments'):
+            continue
+        expect('loot enchant function', fn, src)
+        if f == 'set_enchantments':
+            if not fn.get('add'):
+                fixed = {}
+            for k, v in (fn.get('enchantments') or {}).items():
+                if isinstance(v, (int, float)):
+                    fixed[norm_id(k)] = fixed.get(norm_id(k), 0) + int(v)
+        elif fn.get('options') is not None:
+            ent['enchant_from'] = fn['options']
+            ent['enchant_options'] = resolve(fn['options'], ENCH_TAGS)
+        else:
+            ent['enchant_from'] = 'any'  # no options: every enchantment that fits the item
+    if fixed:
+        ent['enchantments'] = {norm_id(k): v for k, v in fixed.items() if v > 0}
+
+
 def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
     for e in entries:
         expect('loot entry', e, src)
@@ -790,6 +837,7 @@ def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
                 ent['_lore_rich'] = summarise_components(comps).get('lore_rich')
             if comps.get('minecraft:enchantments'):
                 ent['_ench'] = comps['minecraft:enchantments']  # see enchanted_variants()
+            loot_enchantments(ent, comps, fns, src)
             out.append(ent)
         elif t == 'loot_table':
             # set_count on a loot_table entry applies to every stack the nested table yields
@@ -924,6 +972,47 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'enchantment', '*.json'))):
                  'primary_items': d.get('primary_items'), 'exclusive_set': d.get('exclusive_set'),
                  'effects': d.get('effects'), 'data': d,
                  'vanilla': load(van) if ns == 'minecraft' and os.path.exists(van) else None}
+
+
+def enchantment_relations():
+    """What each enchantment applies to and can't be combined with, in the pack and in vanilla, with
+    the tags expanded (the pack changes tags as well as enchantment files: Looting's item tag gains
+    shears, the mining exclusive set gains the electrum tool intrinsic). Two enchantments conflict when
+    either one's exclusive set holds the other, as the game checks it. Also records which id the
+    pack's update item modifiers turn an old enchantment into ('updated_to': main:reach -> matcha:reach)."""
+    vitem, vench = load_tags('item', pack=False), load_tags('enchantment', pack=False)
+    vdefs = {'minecraft:' + os.path.basename(f)[:-5]: load(f) for f in glob.glob(os.path.join(VDATA, 'enchantment', '*.json'))}
+    pack = dict(vdefs, **{k: e['data'] for k, e in ENCH.items()})
+
+    def incompatible(defs, tags):
+        excl = {k: set(resolve(d.get('exclusive_set'), tags)) for k, d in defs.items()}
+        return {k: sorted(o for o in defs if o != k and (o in excl[k] or k in excl[o])) for k in defs}
+    now, before = incompatible(pack, ENCH_TAGS), incompatible(vdefs, vench)
+    for k, e in ENCH.items():
+        e['items'] = resolve(e['supported_items'], ITEM_TAGS)
+        e['incompatible'] = now[k]
+        if e['vanilla']:
+            e['vanilla_items'] = resolve(e['vanilla'].get('supported_items'), vitem)
+            e['vanilla_incompatible'] = before.get(k, [])
+    for f in glob.glob(os.path.join(DP, '*', 'item_modifier', '**', '*.json'), recursive=True):
+        def walk(x):
+            if isinstance(x, list):
+                for y in x:
+                    walk(y)
+            elif isinstance(x, dict):
+                if x.get('function', '').split(':')[-1] == 'set_enchantments' and x.get('add'):
+                    ench = {norm_id(k): v for k, v in (x.get('enchantments') or {}).items()}
+                    old = [k for k, v in ench.items() if v == -1]
+                    new = [k for k, v in ench.items() if v == 1]
+                    if len(old) == 1 and len(new) == 1 and old[0] in ENCH:
+                        ENCH[old[0]]['updated_to'] = new[0]
+                        ENCH[old[0]]['update_src'] = rel(f)
+                for y in x.values():
+                    walk(y)
+        walk(load(f))
+
+
+enchantment_relations()
 
 # ---------------------------------------------------------------- advancements
 ADV = {}
