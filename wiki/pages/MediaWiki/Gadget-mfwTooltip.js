@@ -2,8 +2,8 @@
    slot shows the item's name and lore in the game's tooltip frame, next to the pointer (on touch
    screens, a first tap shows it and a second follows the link).
    Each slot carries its tooltip as a hidden .mf-tip (Module:Tooltip); slots without one show the
-   item's name. Animated slots pause while hovered. Styles: #minetip-tooltip in
-   Gadget-mcw-common.css and Gadget-mfw-ui.css.
+   item's name. Hovering a cycling slot holds every cycling picture on the page
+   (Gadget-animatedIcons.js). Styles: #minetip-tooltip in Gadget-mcw-common.css and Gadget-mfw-ui.css.
    Plain DOM (no jQuery): the static export (tools/export_static.py) ships this file as is. */
 ( function () {
 	'use strict';

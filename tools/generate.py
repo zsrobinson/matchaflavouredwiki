@@ -2641,7 +2641,11 @@ def merged_ui(recipes):
     name, first = parsed[0]
     if any(n != name or set(a) != set(first) or any(a[k] != first[k] for k in a if k not in SLOT_ARGS) for n, a in parsed):
         return ''
-    merged = {k: (';'.join(a[k] for _, a in parsed) if k in SLOT_ARGS else v) for k, v in first.items()}
+    # a member's slot that holds several items ("Any Oak Logs") becomes one frame whose items take turns
+    # ({...}, Module:Inventory slot's subframes), so every slot has one frame per member and they stay in step
+    def frame(v):
+        return '{%s}' % v if v in ALIASES or ';' in v else v
+    merged = {k: (';'.join(frame(a[k]) for _, a in parsed) if k in SLOT_ARGS else v) for k, v in first.items()}
     return '{{%s|%s}}' % (name, '|'.join('%s=%s' % kv for kv in merged.items()))
 
 
