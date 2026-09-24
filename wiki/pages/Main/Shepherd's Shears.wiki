@@ -1,5 +1,5 @@
 {{Infobox auto}}
-'''Shepherd's shears''' are shears with Looting III, sold by the [[Shepherd|shepherd]]. With 3000 durability they last as long as [[Shears|steel shears]], and they are repaired with iron nuggets or iron ingots.
+'''Shepherd's shears''' are shears with Looting III, sold by the [[Shepherd|shepherd]]. With {{Value|Shepherd's Shears|durability}} durability they last as long as [[Shears|steel shears]], and they are repaired with iron nuggets or iron ingots.
 
 == Obtaining ==
 === Trading ===
@@ -8,7 +8,7 @@ A level 2 shepherd sells them for 3 [[Obol|obols]].<ref>{{Source|MF_datapack/dat
 {{Sources}}
 
 == Usage ==
-They have 3000 durability and are repaired in an [[anvil]] with iron nuggets or iron ingots. Their tooltip says "Repaired with: Block of Copper", but blocks of copper do not repair them.<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/2/shepherds_shears.json}}</ref> Looting works on shears in Matcha Flavoured: each Looting level adds up to 3 extra wool per stack when shearing sheep. See [[Shears]].
+They have {{Value|Shepherd's Shears|durability}} durability and are repaired in an [[anvil]] with iron nuggets or iron ingots. Their tooltip says "Repaired with: Block of Copper", but blocks of copper do not repair them.<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/2/shepherds_shears.json}}</ref> Looting works on shears in Matcha Flavoured: each Looting level adds up to 3 extra wool per stack when shearing sheep. See [[Shears]].
 
 == History ==
 {{History|

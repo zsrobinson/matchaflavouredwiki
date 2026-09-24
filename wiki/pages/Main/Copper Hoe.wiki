@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-A '''copper hoe''' is a [[Tools#Hoe|hoe]] of the [[Copper equipment|copper]] tier, crafted from two [[copper ingot]]s and two sticks. It tills soil and breaks hoe blocks at speed 6.
+A '''copper hoe''' is a [[Tools#Hoe|hoe]] of the [[Copper equipment|copper]] tier, crafted from two [[copper ingot]]s and two sticks. It tills soil and breaks hoe blocks at speed {{Value|Copper Hoe|miningspeed}}.
 
 == Obtaining ==
 
@@ -12,10 +12,10 @@ A '''copper hoe''' is a [[Tools#Hoe|hoe]] of the [[Copper equipment|copper]] tie
 == Usage ==
 
 === Farming and mining ===
-The copper hoe breaks hoe blocks at speed 6 (vanilla: 5) and has 350 durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+The copper hoe breaks hoe blocks at speed {{Value|Copper Hoe|miningspeed}} (vanilla: 5) and has {{Value|Copper Hoe|durability}} durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|1}} damage at an attack speed of 2.
+It deals {{Value|Copper Hoe|damage}} damage at an attack speed of {{Value|Copper Hoe|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[copper ingot]]s. As with all equipment in the pack, the repair cost never grows, so it can be repaired indefinitely; see [[Repairing]].

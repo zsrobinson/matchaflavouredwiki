@@ -2,7 +2,7 @@
 
 {{Spoiler}}
 
-A '''braised crimson fungus''' is the simple preparation of the [[Crimson Fungus|crimson fungus]], a secret [[ingredient]]. It heals {{Hp|2}} and gives {{EffectLink|Weakness}} for 30 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/braised_crimson_fungus.json}}</ref>
+A '''braised crimson fungus''' is the simple preparation of the [[Crimson Fungus|crimson fungus]], a secret [[ingredient]]. It heals {{Value|Braised Crimson Fungus|heals}} and gives {{EffectLink|Weakness}} for {{Value|Braised Crimson Fungus|duration|effect=Weakness}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/braised_crimson_fungus.json}}</ref>
 
 == Obtaining ==
 
@@ -13,7 +13,7 @@ The recipe is secret and is never added to the recipe book.
 == Usage ==
 
 === Food ===
-Eating it takes 0.8 seconds, heals {{Hp|2}} and gives Weakness I for 0:30.
+Eating it takes {{Value|Braised Crimson Fungus|eat_time}}, heals {{Value|Braised Crimson Fungus|heals}} and gives Weakness {{Value|Braised Crimson Fungus|level|effect=Weakness}} for {{Value|Braised Crimson Fungus|duration|effect=Weakness|format=clock}}.
 
 It has no crafting use. Cooking one grants ''Hidden Flavors''.
 

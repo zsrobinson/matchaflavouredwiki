@@ -2,19 +2,19 @@
 
 {{Infobox auto}}
 
-'''Cooked porkchop''' is cooked meat. Like all meat in Matcha Flavoured, it has no [[intrinsic]]: it heals {{Hp|4}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pork.json}}</ref>
+'''Cooked porkchop''' is cooked meat. Like all meat in Matcha Flavoured, it has no [[intrinsic]]: it heals {{Value|Cooked Porkchop|heals}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pork.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-Raw porkchop cooks in an [[oven]] or on [[kindling]] in 5 seconds. The vanilla recipes are replaced, and in a [[Mud Kiln|mud kiln]] it becomes [[Charred Meat|charred meat]] instead.
+Raw porkchop cooks in an [[oven]] or on [[kindling]] in {{Value|Cooked Porkchop|cook_time}}. The vanilla recipes are replaced, and in a [[Mud Kiln|mud kiln]] it becomes [[Charred Meat|charred meat]] instead.
 {{Sources}}
 
 == Usage ==
 
 === Food ===
-Eating it takes 1.6 seconds and heals {{Hp|4}}.
+Eating it takes {{Value|Cooked Porkchop|eat_time}} and heals {{Value|Cooked Porkchop|heals}}.
 
 Cooked porkchops are used in [[lumpia]] and [[pupusa]]s and can top a [[Pizza|meat pizza]]. Raw porkchops go into [[Ramen Stock|ramen stock]]. Cooked porkchops found in chests use the pack's loot table, with the same healing.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/cooked_porkchop.json}}</ref>
 

@@ -15,12 +15,12 @@ A '''diamond pickaxe''' is a [[Tools#Pickaxe|pickaxe]] of the [[Diamond equipmen
 == Usage ==
 
 === Mining ===
-It breaks pickaxe blocks at speed 9 and has 2500 durability (vanilla: 1561). Obsidian, crying obsidian and ender chests break at speed 35.<ref>{{Source|MF_datapack/data/matcha/tags/block/obsidian_based.json}}</ref>
+It breaks pickaxe blocks at speed {{Value|Diamond Pickaxe|miningspeed}} and has {{Value|Diamond Pickaxe|durability}} durability (vanilla: 1561). Obsidian, crying obsidian and ender chests break at speed 35.<ref>{{Source|MF_datapack/data/matcha/tags/block/obsidian_based.json}}</ref>
 
 The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pickaxe blocks.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|5}} damage at an attack speed of 1.2.
+It deals {{Value|Diamond Pickaxe|damage}} damage at an attack speed of {{Value|Diamond Pickaxe|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[diamond]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

@@ -4,7 +4,7 @@ A '''sponge''' soaks up water. [[Matcha Flavoured]] dries wet sponges in an [[ov
 
 == Obtaining ==
 {{Recipes}}
-A wet sponge dries in an oven or mud kiln in 2.5 seconds; the vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/sponge.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+A wet sponge dries in an oven or mud kiln in {{Value|Sponge|cook_time}}; the vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/sponge.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
 === Other sources ===
 {{Sources}}

@@ -8,7 +8,7 @@ Deepslate and cobbled deepslate need at least a copper pickaxe: the pack's woode
 
 === Smelting ===
 {{Recipes}}
-Cobbled deepslate is fired into deepslate in a [[Mud Kiln|mud kiln]] (5 seconds); the vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/deepslate.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+Cobbled deepslate is fired into deepslate in a [[Mud Kiln|mud kiln]] ({{Value|Deepslate|cook_time|station=Mud Kiln}}); the vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/deepslate.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
 === Trading ===
 The [[Mason]] sells 2 [[Bulk blocks|bulk deepslate]] for 1 [[obol]] at the apprentice level; each unpacks into 64 deepslate.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/2/deepslate.json}}</ref>

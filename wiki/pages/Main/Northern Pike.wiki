@@ -16,7 +16,7 @@ The same tables are also rolled by the fisherman's house chest in [[Village|vill
 
 == Usage ==
 === Food ===
-Raw fish can be eaten, but it heals nothing: Matcha Flavoured removes [[hunger]], and food only heals through the hearts shown on its tooltip. Cooked, it becomes [[Cooked Large Fish|cooked large fish]], which heals {{Hp|5}}.
+Raw fish can be eaten, but it heals nothing: Matcha Flavoured removes [[hunger]], and food only heals through the hearts shown on its tooltip. Cooked, it becomes [[Cooked Large Fish|cooked large fish]], which heals {{Value|Cooked Large Fish|heals}}.
 
 === Cooking ===
 {{Cooking|station=Oven|Input=Northern Pike|Output=Cooked Large Fish|note=5 s, 0.35 XP}} {{Cooking|station=Kindling|Input=Northern Pike|Output=Cooked Large Fish|note=5 s, 0.35 XP}} {{Cooking|station=Mud Kiln|Input=Northern Pike|Output=Charred Fish|note=5 s, 0.35 XP}}

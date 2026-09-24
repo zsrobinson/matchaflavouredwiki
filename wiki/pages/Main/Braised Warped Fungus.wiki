@@ -2,7 +2,7 @@
 
 {{Spoiler}}
 
-A '''braised warped fungus''' is the simple preparation of the [[Warped Fungus|warped fungus]], a secret [[ingredient]]. It heals {{Hp|2}} and gives {{EffectLink|Invisibility}} for 30 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/brasied_warped_fungus.json}}</ref>
+A '''braised warped fungus''' is the simple preparation of the [[Warped Fungus|warped fungus]], a secret [[ingredient]]. It heals {{Value|Braised Warped Fungus|heals}} and gives {{EffectLink|Invisibility}} for {{Value|Braised Warped Fungus|duration|effect=Invisibility}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/brasied_warped_fungus.json}}</ref>
 
 == Obtaining ==
 
@@ -13,7 +13,7 @@ The recipe is secret and is never added to the recipe book.
 == Usage ==
 
 === Food ===
-Eating it takes 0.8 seconds, heals {{Hp|2}} and gives Invisibility for 0:30.
+Eating it takes {{Value|Braised Warped Fungus|eat_time}}, heals {{Value|Braised Warped Fungus|heals}} and gives Invisibility for {{Value|Braised Warped Fungus|duration|effect=Invisibility|format=clock}}.
 
 It has no crafting use. Cooking one grants ''Hidden Flavors''.
 

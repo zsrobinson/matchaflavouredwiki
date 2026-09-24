@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Kontomire-dandelion stew''' is a stew that heals {{Hp|12}} and grants {{EffectLink|Strength}} for 5 minutes and {{EffectLink|Regeneration}} for 1 minute.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/kontomire_stew.json}}</ref>
+'''Kontomire-dandelion stew''' is a stew that heals {{Value|Kontomire-Dandelion Stew|heals}} and grants {{EffectLink|Strength}} for {{Value|Kontomire-Dandelion Stew|duration|effect=Strength}} and {{EffectLink|Regeneration}} for {{Value|Kontomire-Dandelion Stew|duration|effect=Regeneration}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/kontomire_stew.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@
 == Usage ==
 
 === Food ===
-Eating it takes 1.6 seconds, heals {{Hp|12}} and gives Strength I for 5:00 and Regeneration I for 1:00. The bowl is given back.
+Eating it takes {{Value|Kontomire-Dandelion Stew|eat_time}}, heals {{Value|Kontomire-Dandelion Stew|heals}} and gives Strength {{Value|Kontomire-Dandelion Stew|level|effect=Strength}} for {{Value|Kontomire-Dandelion Stew|duration|effect=Strength|format=clock}} and Regeneration {{Value|Kontomire-Dandelion Stew|level|effect=Regeneration}} for {{Value|Kontomire-Dandelion Stew|duration|effect=Regeneration|format=clock}}. The bowl is given back.
 
 === Trading ===
 {{Upcoming|type=section}}

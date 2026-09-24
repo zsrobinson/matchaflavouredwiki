@@ -15,10 +15,10 @@ A '''diamond axe''' is an [[Tools#Axe|axe]] of the [[Diamond equipment|diamond]]
 == Usage ==
 
 === Woodcutting ===
-It breaks axe blocks at speed 9 and has 2500 durability. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+It breaks axe blocks at speed {{Value|Diamond Axe|miningspeed}} and has {{Value|Diamond Axe|durability}} durability. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|9}} damage at an attack speed of 1, the same damage as the iron axe but a faster swing.
+It deals {{Value|Diamond Axe|damage}} damage at an attack speed of {{Value|Diamond Axe|attackspeed}}, the same damage as the iron axe but a faster swing.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[diamond]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Pickled potatoes''' are pickled [[Baked Potato|baked potato]]es. They heal {{Hp|10}}, the most of any preserve, and have no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_potatoes.json}}</ref>
+'''Pickled potatoes''' are pickled [[Baked Potato|baked potato]]es. They heal {{Value|Pickled Potatoes|heals}}, the most of any preserve, and have no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_potatoes.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A baked potato, a brown mushroom and a glass bottle. Obtaining a baked potato un
 == Usage ==
 
 === Food ===
-Eating pickled potatoes takes 1.6 seconds and heals {{Hp|10}}. It gives the glass bottle back when eaten.
+Eating pickled potatoes takes {{Value|Pickled Potatoes|eat_time}} and heals {{Value|Pickled Potatoes|heals}}. It gives the glass bottle back when eaten.
 
 == History ==
 {{History|

@@ -14,7 +14,7 @@ The upgrade needs no template, and enchantments on the copper item carry over.<r
 == Usage ==
 
 === Farming and mining ===
-It breaks hoe blocks at speed 20 and has 1000 durability, which makes it the fastest tool for clearing leaves, wool and hay. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+It breaks hoe blocks at speed {{Value|Hepatizon Hoe|miningspeed}} and has {{Value|Hepatizon Hoe|durability}} durability, which makes it the fastest tool for clearing leaves, wool and hay. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Combat ===
 It deals {{Hp|1}} damage at an attack speed of 4. While held in the main hand it adds 0.0055 to movement speed, 5.5% of the player's base speed.

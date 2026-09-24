@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-A '''carrot cupcake''' is the meal of the [[carrot]]. It heals {{Hp|8}} and grants {{EffectLink|Night Vision}} for 10 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/carrot_cupcake.json}}</ref>
+A '''carrot cupcake''' is the meal of the [[carrot]]. It heals {{Value|Carrot Cupcake|heals}} and grants {{EffectLink|Night Vision}} for {{Value|Carrot Cupcake|duration|effect=Night Vision}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/carrot_cupcake.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A carrot, sugar, estus ash, cocoa beans and dough. Picking up a carrot unlocks t
 == Usage ==
 
 === Food ===
-Eating a carrot cupcake takes 1.6 seconds, heals {{Hp|8}} and gives Night Vision for 10:00.
+Eating a carrot cupcake takes {{Value|Carrot Cupcake|eat_time}}, heals {{Value|Carrot Cupcake|heals}} and gives Night Vision for {{Value|Carrot Cupcake|duration|effect=Night Vision|format=clock}}.
 
 === Trading ===
 {{Upcoming|type=section}}

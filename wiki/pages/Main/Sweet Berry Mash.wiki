@@ -2,18 +2,18 @@
 
 {{Infobox auto}}
 
-'''Sweet berry mash''' is the simple preparation of [[Sweet Berries|sweet berries]]. It heals {{Hp|2}} and grants {{EffectLink|Health Boost}} for 10 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/sweet_berry_mash.json}}</ref>
+'''Sweet berry mash''' is the simple preparation of [[Sweet Berries|sweet berries]]. It heals {{Value|Sweet Berry Mash|heals}} and grants {{EffectLink|Health Boost}} for {{Value|Sweet Berry Mash|duration|effect=Health Boost}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/sweet_berry_mash.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-Sweet berries cook into sweet berry mash in an [[oven]] or on [[kindling]] in 5 seconds. Picking up sweet berries unlocks the oven recipe.
+Sweet berries cook into sweet berry mash in an [[oven]] or on [[kindling]] in {{Value|Sweet Berry Mash|cook_time}}. Picking up sweet berries unlocks the oven recipe.
 
 == Usage ==
 
 === Food ===
-Eating sweet berry mash takes 0.8 seconds, heals {{Hp|2}} and gives Health Boost I (+2 hearts of maximum health) for 0:10.
+Eating sweet berry mash takes {{Value|Sweet Berry Mash|eat_time}}, heals {{Value|Sweet Berry Mash|heals}} and gives Health Boost {{Value|Sweet Berry Mash|level|effect=Health Boost}} (+2 hearts of maximum health) for {{Value|Sweet Berry Mash|duration|effect=Health Boost|format=clock}}.
 
 Obtaining sweet berry mash unlocks [[Sweet Berry Jam|sweet berry jam]] and the [[Sweet Berry Danish|sweet berry Danish]].
 

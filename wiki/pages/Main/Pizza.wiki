@@ -17,13 +17,13 @@ Eating a pizza takes 1.6 seconds.
 {| class="wikitable"
 ! Pizza !! Top row !! Heals !! Effects
 |-
-| {{ItemLink|Cheese Pizza}} || 3 cheese || {{Hp|9}} || Strength (3:00)
+| {{ItemLink|Cheese Pizza}} || 3 cheese || {{Value|Cheese Pizza|heals}} || Strength ({{Value|Cheese Pizza|duration|effect=Strength|format=clock}})
 |-
-| {{ItemLink|Meat Pizza}} || Cheese, any cooked meat, cheese || {{Hp|10}} || Strength (3:00)
+| {{ItemLink|Meat Pizza}} || Cheese, any cooked meat, cheese || {{Value|Meat Pizza|heals}} || Strength ({{Value|Meat Pizza|duration|effect=Strength|format=clock}})
 |-
-| {{ItemLink|Mushroom Pizza}} || [[Braised Mushroom|Braised mushroom]], cheese, braised mushroom || {{Hp|8}} || Strength (3:00)
+| {{ItemLink|Mushroom Pizza}} || [[Braised Mushroom|Braised mushroom]], cheese, braised mushroom || {{Value|Mushroom Pizza|heals}} || Strength ({{Value|Mushroom Pizza|duration|effect=Strength|format=clock}})
 |-
-| {{ItemLink|Warped Pizza}} || Warped fungus, cheese, warped fungus || {{Hp|8}} || Strength (3:00), {{EffectLink|Invisibility}} (5:00)
+| {{ItemLink|Warped Pizza}} || Warped fungus, cheese, warped fungus || {{Value|Warped Pizza|heals}} || Strength ({{Value|Warped Pizza|duration|effect=Strength|format=clock}}), {{EffectLink|Invisibility}} ({{Value|Warped Pizza|duration|effect=Invisibility|format=clock}})
 |}
 
 === Trading ===

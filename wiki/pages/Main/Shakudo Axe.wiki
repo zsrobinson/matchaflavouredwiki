@@ -15,10 +15,10 @@ The upgrade needs no template. Enchantments on the copper item carry over; where
 == Usage ==
 
 === Woodcutting ===
-It breaks axe blocks at speed 9 and has 1000 durability. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+It breaks axe blocks at speed {{Value|Shakudo Axe|miningspeed}} and has {{Value|Shakudo Axe|durability}} durability. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|9}} damage at an attack speed of 1.
+It deals {{Value|Shakudo Axe|damage}} damage at an attack speed of {{Value|Shakudo Axe|attackspeed}}.
 
 === Intrinsics ===
 Silk Touch applies to blocks it breaks. The life steal intrinsic gives the wielder Regeneration III for 1 second after each hit, except against armor stands, boats, minecarts and sulfur cubes.<ref>{{Source|MF_datapack/data/matcha/enchantment/shakudo_weapon.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>

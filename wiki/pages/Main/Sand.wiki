@@ -4,7 +4,7 @@
 
 == Obtaining ==
 {{Recipes}}
-* Blasting gravel gives sand (5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/blast/sand.json}}</ref>
+* Blasting gravel gives sand ({{Value|Sand|cook_time|station=Blast Furnace}}).<ref>{{Source|MF_datapack/data/matcha/recipe/blast/sand.json}}</ref>
 * A block of [[sandstone]] crafts back into 2 sand.
 * Eight sand around an iron nugget make 8 red sand.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/red_sand_from_sand_and_iron.json}}</ref>
 

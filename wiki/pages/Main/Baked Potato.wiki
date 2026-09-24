@@ -2,19 +2,19 @@
 
 {{Infobox auto}}
 
-A '''baked potato''' is a cooked [[potato]]. It heals {{Hp|5}}, more than any other ordinary simple preparation, and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_potato.json}}</ref>
+A '''baked potato''' is a cooked [[potato]]. It heals {{Value|Baked Potato|heals}}, more than any other ordinary simple preparation, and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_potato.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-Potatoes cook into baked potatoes in an [[oven]] or on [[kindling]] in 5 seconds. The vanilla smelting, smoking and campfire recipes are replaced. In a [[Mud Kiln|mud kiln]], a potato becomes a [[Charred Potato|charred potato]] instead.
+Potatoes cook into baked potatoes in an [[oven]] or on [[kindling]] in {{Value|Baked Potato|cook_time}}. The vanilla smelting, smoking and campfire recipes are replaced. In a [[Mud Kiln|mud kiln]], a potato becomes a [[Charred Potato|charred potato]] instead.
 {{Sources}}
 
 == Usage ==
 
 === Food ===
-Eating a baked potato takes 1.6 seconds and heals {{Hp|5}}.
+Eating a baked potato takes {{Value|Baked Potato|eat_time}} and heals {{Value|Baked Potato|heals}}.
 
 Obtaining a baked potato unlocks [[Pickled Potatoes|pickled potatoes]], [[latke]]s and [[Fish and Chips|fish and chips]]; it is also used in [[gnocchi]].
 

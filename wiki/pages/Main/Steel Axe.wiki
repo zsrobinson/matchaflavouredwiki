@@ -14,10 +14,10 @@ The upgrade needs no template. Enchantments on the iron item carry over; where b
 == Usage ==
 
 === Woodcutting ===
-It breaks axe blocks at speed 8 and has 3000 durability. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+It breaks axe blocks at speed {{Value|Steel Axe|miningspeed}} and has {{Value|Steel Axe|durability}} durability. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|10}} damage at an attack speed of 0.7 and adds 2 attack knockback. It swings more slowly than any other axe.
+It deals {{Value|Steel Axe|damage}} damage at an attack speed of {{Value|Steel Axe|attackspeed}} and adds 2 attack knockback. It swings more slowly than any other axe.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

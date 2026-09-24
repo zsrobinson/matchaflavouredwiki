@@ -1,17 +1,17 @@
 {{Infobox auto}}
 
-A '''charred potato''' is a [[potato]] burnt in a [[Mud Kiln|mud kiln]]. It heals only {{Hp|1}}, compared with {{Hp|5}} for a [[Baked Potato|baked potato]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_potato.json}}</ref>
+A '''charred potato''' is a [[potato]] burnt in a [[Mud Kiln|mud kiln]]. It heals only {{Value|Charred Potato|heals}}, compared with {{Value|Baked Potato|heals}} for a [[Baked Potato|baked potato]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_potato.json}}</ref>
 
 == Obtaining ==
 
 === Kilning ===
 {{Recipes}}
-A potato becomes a charred potato in a mud kiln in 5 seconds.
+A potato becomes a charred potato in a mud kiln in {{Value|Charred Potato|cook_time}}.
 
 == Usage ==
 
 === Food ===
-Eating a charred potato takes 1.6 seconds and heals {{Hp|1}}.
+Eating a charred potato takes {{Value|Charred Potato|eat_time}} and heals {{Value|Charred Potato|heals}}.
 
 == See also ==
 * [[Cooking#Charring]]

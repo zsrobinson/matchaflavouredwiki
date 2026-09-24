@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-A '''brownie''' is a [[chocolate]] meal that heals {{Hp|6}} and grants {{EffectLink|Haste}} II for 2 minutes 30 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/brownie.json}}</ref>
+A '''brownie''' is a [[chocolate]] meal that heals {{Value|Brownie|heals}} and grants {{EffectLink|Haste}} {{Value|Brownie|level|effect=Haste}} for {{Value|Brownie|duration|effect=Haste|format=long}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/brownie.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A '''brownie''' is a [[chocolate]] meal that heals {{Hp|6}} and grants {{EffectL
 == Usage ==
 
 === Food ===
-Eating a brownie takes 1.6 seconds, heals {{Hp|6}} and gives Haste II for 2:30.
+Eating a brownie takes {{Value|Brownie|eat_time}}, heals {{Value|Brownie|heals}} and gives Haste {{Value|Brownie|level|effect=Haste}} for {{Value|Brownie|duration|effect=Haste|format=clock}}.
 
 === Trading ===
 {{Upcoming|type=section}}

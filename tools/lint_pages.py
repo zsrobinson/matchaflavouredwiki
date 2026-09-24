@@ -13,6 +13,11 @@ first). Checks:
   - every {{Source|path}} exists in the pack at the commit in tools/source.lock (these link to GitHub;
     a missing file means the page describes something that moved or is gone), or at the commit given
     with at= (code only on main, for content marked {{Upcoming}}).
+  - every {{Value|item|field}} names an item, field and format that build/values.json has (the same
+    table as Module:Data/Values; tools/values.py);
+  - warning only: an article with {{Infobox auto}} that types its own item's heal amount after "heals"
+    ({{Hp|n}} equal to the data) instead of {{Value|item|heals}}. Not an error, because the same
+    number can be right to type (a comparison with another item, a vanilla value).
 
   tools/lint_pages.py        exit 1 on any problem
 """
@@ -25,6 +30,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import build_xml  # noqa: E402
+import values as value_lookup  # noqa: E402
 
 SRC = os.path.join(ROOT, 'source', 'matcha-flavoured')
 ITEM_TEMPLATE = re.compile(r'\{\{\s*(Infobox auto|Recipes|Uses|Sources)\s*(?:\|([^|{}]*))?(?=[|}])')
@@ -72,6 +78,8 @@ def main():
         return files is not None and (path in files or any(f.startswith(path.rstrip('/') + '/') for f in files))
     pages = build_xml.collect()
     problems = []
+    warnings = []
+    vals = value_lookup.values()
     for title, (ns, text, layer) in sorted(pages.items()):
         if layer != 'pages' or ns not in ('Main', 'Project') or re.match(r'\s*#REDIRECT', text, re.I):
             continue
@@ -93,12 +101,26 @@ def main():
                 if key and '{{{%s|' % key not in body and '{{{%s}}}' % key not in body:
                     problems.append('%s: {{%s}} has no row or parameter "%s" (a note for something that is gone?)'
                                     % (title, name, key))
+        for m in value_lookup.CALL.finditer(text):
+            _, err = value_lookup.lookup(m.group(1))
+            if err:
+                problems.append('%s: {{Value|%s}}: %s' % (title, m.group(1), err))
+        own = re.search(r'\{\{\s*Infobox auto\s*(?:\|([^|{}=]*))?(?=[|}])', text)
+        if own:
+            item = (own.group(1) or '').strip() or title
+            heal = vals.get(item, {}).get('heals', {}).get('1')
+            for m in re.finditer(r'\bheal(?:s|ing)?\s+(\{\{Hp\|[^}]*\}\})', text):
+                if m.group(1) == heal:
+                    warnings.append('%s: "%s" types the item\'s own heal amount; use {{Value|%s|heals}}'
+                                    % (title, m.group(0), item))
         for m in re.finditer(r'\{\{\s*Source\s*\|([^|}]+)((?:\|[^|}]*)*)\}\}', text):
             path = m.group(1).strip()
             at = re.search(r'\|\s*at\s*=\s*([0-9a-f]{7,40})', m.group(2))
             commit = at.group(1) if at else lock
             if '...' not in path and not exists(path, commit):
                 problems.append('%s: {{Source|%s}} does not exist in the pack at %s' % (title, path, commit[:8]))
+    for w in warnings:
+        print('warning: ' + w)
     for p in problems:
         print(p)
     print('%d problem%s' % (len(problems), '' if len(problems) == 1 else 's'))

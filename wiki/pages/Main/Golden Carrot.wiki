@@ -2,7 +2,7 @@
 
 {{Infobox auto}}
 
-A '''golden carrot''' is a [[carrot]] coated in gold nuggets. It heals {{Hp|2}} and grants {{EffectLink|Night Vision}} for 30 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_carrot.json}}</ref> It is also a secret [[ingredient]] whose dishes grant Night Vision for longer than ordinary carrot dishes.
+A '''golden carrot''' is a [[carrot]] coated in gold nuggets. It heals {{Value|Golden Carrot|heals}} and grants {{EffectLink|Night Vision}} for {{Value|Golden Carrot|duration|effect=Night Vision}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_carrot.json}}</ref> It is also a secret [[ingredient]] whose dishes grant Night Vision for longer than ordinary carrot dishes.
 
 == Obtaining ==
 
@@ -14,7 +14,7 @@ The recipe (8 gold nuggets around a carrot) is unlocked by picking up a gold nug
 
 === Secret ingredient ===
 {{Spoiler}}
-Golden carrots make [[Steamed Golden Carrots|steamed golden carrots]] (1:00), [[Golden Pickled Carrots|golden pickled carrots]] (10:00) and the [[Golden Carrot Cupcake|golden carrot cupcake]] (20:00). None of these recipes appear in the recipe book. See [[Secret recipes]].
+Golden carrots make [[Steamed Golden Carrots|steamed golden carrots]] ({{Value|Steamed Golden Carrots|duration|effect=Night Vision|format=clock}}), [[Golden Pickled Carrots|golden pickled carrots]] ({{Value|Golden Pickled Carrots|duration|effect=Night Vision|format=clock}}) and the [[Golden Carrot Cupcake|golden carrot cupcake]] ({{Value|Golden Carrot Cupcake|duration|effect=Night Vision|format=clock}}). None of these recipes appear in the recipe book. See [[Secret recipes]].
 
 === Crafting ingredient ===
 {{Uses}}

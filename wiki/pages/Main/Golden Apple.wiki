@@ -2,7 +2,7 @@
 
 {{Infobox auto}}
 
-A '''golden apple''' is an [[apple]] coated in gold nuggets. It heals {{Hp|4}} and grants {{EffectLink|Regeneration}} for 30 seconds and {{EffectLink|Absorption}} for 2 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_apple.json}}</ref> It is also a secret [[ingredient]] with its own dishes.
+A '''golden apple''' is an [[apple]] coated in gold nuggets. It heals {{Value|Golden Apple|heals}} and grants {{EffectLink|Regeneration}} for {{Value|Golden Apple|duration|effect=Regeneration}} and {{EffectLink|Absorption}} for {{Value|Golden Apple|duration|effect=Absorption}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_apple.json}}</ref> It is also a secret [[ingredient]] with its own dishes.
 
 == Obtaining ==
 

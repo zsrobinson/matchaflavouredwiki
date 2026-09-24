@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Melon sorbet''' is the meal of the [[melon]]. It heals {{Hp|4}} and grants {{EffectLink|Fire Resistance}} for 10 minutes, the longest Fire Resistance from food.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/melon_sorbet.json}}</ref>
+'''Melon sorbet''' is the meal of the [[melon]]. It heals {{Value|Melon Sorbet|heals}} and grants {{EffectLink|Fire Resistance}} for {{Value|Melon Sorbet|duration|effect=Fire Resistance}}, the longest Fire Resistance from food.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/melon_sorbet.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A melon slice, a snowball, sugar and a glass bottle. Picking up a melon slice un
 == Usage ==
 
 === Food ===
-Eating melon sorbet takes 1.2 seconds, heals {{Hp|4}} and gives Fire Resistance for 10:00. It gives the glass bottle back.
+Eating melon sorbet takes {{Value|Melon Sorbet|eat_time}}, heals {{Value|Melon Sorbet|heals}} and gives Fire Resistance for {{Value|Melon Sorbet|duration|effect=Fire Resistance|format=clock}}. It gives the glass bottle back.
 
 === Trading ===
 {{Upcoming|type=section}}

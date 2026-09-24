@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Bruschetta''' is the meal of [[tomatoes]]. It heals {{Hp|8}} and grants {{EffectLink|Strength}} II for 2 minutes 30 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bruschetta.json}}</ref>
+'''Bruschetta''' is the meal of [[tomatoes]]. It heals {{Value|Bruschetta|heals}} and grants {{EffectLink|Strength}} {{Value|Bruschetta|level|effect=Strength}} for {{Value|Bruschetta|duration|effect=Strength|format=long}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bruschetta.json}}</ref>
 
 == Obtaining ==
 
@@ -12,7 +12,7 @@ Tomatoes, [[cheese]] and [[bread]] (or [[naan]]). Picking up tomatoes unlocks th
 == Usage ==
 
 === Food ===
-Eating bruschetta takes 1.6 seconds, heals {{Hp|8}} and gives Strength II for 2:30.
+Eating bruschetta takes {{Value|Bruschetta|eat_time}}, heals {{Value|Bruschetta|heals}} and gives Strength {{Value|Bruschetta|level|effect=Strength}} for {{Value|Bruschetta|duration|effect=Strength|format=clock}}.
 
 === Trading ===
 {{Upcoming|type=section}}

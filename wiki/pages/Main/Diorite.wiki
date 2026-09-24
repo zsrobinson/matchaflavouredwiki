@@ -8,7 +8,7 @@ Diorite generates as in vanilla.
 
 === Crafting and smelting ===
 {{Recipes}}
-Two [[cobblestone]] and two [[quartz]] make 4 diorite, twice the vanilla output; the vanilla recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/diorite.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Two diorite slabs craft back into a block, and a [[Blast Furnace|blast furnace]] turns polished diorite back into diorite (5 seconds).
+Two [[cobblestone]] and two [[quartz]] make 4 diorite, twice the vanilla output; the vanilla recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/diorite.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Two diorite slabs craft back into a block, and a [[Blast Furnace|blast furnace]] turns polished diorite back into diorite ({{Value|Diorite|cook_time|station=Blast Furnace}}).
 
 === Trading ===
 The [[Mason]] sells 4 [[Bulk blocks|bulk diorite]] for 1 [[obol]] at the novice level; each unpacks into 64 diorite.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/1/diorite.json}}</ref>

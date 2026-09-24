@@ -2,19 +2,19 @@
 
 {{Infobox auto}}
 
-'''Bread''' is baked [[dough]]. It heals {{Hp|4}} and removes harmful effects ("Cleanse Maleffect"), which makes it a cheap cure for the [[Wither effect]] and poison.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref>
+'''Bread''' is baked [[dough]]. It heals {{Value|Bread|heals}} and removes harmful effects ("Cleanse Maleffect"), which makes it a cheap cure for the [[Wither effect]] and poison.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-Dough bakes into bread in an [[oven]] or on [[kindling]] in 5 seconds. The vanilla recipe from wheat is removed. In a [[Mud Kiln|mud kiln]], dough becomes [[naan]] instead.
+Dough bakes into bread in an [[oven]] or on [[kindling]] in {{Value|Bread|cook_time}}. The vanilla recipe from wheat is removed. In a [[Mud Kiln|mud kiln]], dough becomes [[naan]] instead.
 {{Sources}}
 
 == Usage ==
 
 === Food ===
-Eating bread takes 1.6 seconds, heals {{Hp|4}} and removes Poison, Mining Fatigue, Wither, Weakness, Bad Omen, Blindness, Darkness, Infested, Weaving, Nausea, Oozing and Slowness.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref> The developer asks players to bring milk or bread to [[Hell]].<ref>{{Cite changelog|1.12.2|quote=Please bring milk or bread to Hell, please its very important}}</ref>
+Eating bread takes {{Value|Bread|eat_time}}, heals {{Value|Bread|heals}} and removes Poison, Mining Fatigue, Wither, Weakness, Bad Omen, Blindness, Darkness, Infested, Weaving, Nausea, Oozing and Slowness.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref> The developer asks players to bring milk or bread to [[Hell]].<ref>{{Cite changelog|1.12.2|quote=Please bring milk or bread to Hell, please its very important}}</ref>
 
 Obtaining bread unlocks [[French Toast|French toast]]. Bread is used in [[bruschetta]], [[French Toast|French toast]], [[Honied French Toast|honied French toast]], [[Sweet Berry Toast|sweet berry toast]], [[latke]]s and [[Ice Cream|ice cream]]. [[Naan]] can be used in its place.
 

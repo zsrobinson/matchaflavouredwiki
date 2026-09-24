@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-A '''steel chestplate''' is a [[Armor#Chestplate|chestplate]] of the [[Steel equipment|steel]] tier, made by smithing an [[iron chestplate]] with [[steel alloy]]. It is the most protective piece of the set, with 7 armor and Blast Protection IV.
+A '''steel chestplate''' is a [[Armor#Chestplate|chestplate]] of the [[Steel equipment|steel]] tier, made by smithing an [[iron chestplate]] with [[steel alloy]]. It is the most protective piece of the set, with {{Value|Steel Chestplate|armor}} armor and Blast Protection IV.
 
 == Obtaining ==
 
@@ -14,7 +14,7 @@ The upgrade needs no template. Enchantments on the iron item carry over; where b
 == Usage ==
 
 === Armor ===
-It gives 7 armor, 1 armor toughness and 20% knockback resistance, with 1000 durability. The Blast Protection IV is an intrinsic: it is stored on the item and applied when the item enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+It gives {{Value|Steel Chestplate|armor}} armor, {{Value|Steel Chestplate|toughness}} armor toughness and 20% knockback resistance, with {{Value|Steel Chestplate|durability}} durability. The Blast Protection IV is an intrinsic: it is stored on the item and applied when the item enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 Steel armor has 1000 durability per piece, armor toughness 1 and knockback resistance, and each piece carries [[Blast Protection]]. The full set gives 16 armor, 4 toughness, 50% knockback resistance and Blast Protection totalling 11 levels. The 1.10 release notes advise against wearing it in the [[Abbey]]: "Blast resistance makes the dungeon boring."
 

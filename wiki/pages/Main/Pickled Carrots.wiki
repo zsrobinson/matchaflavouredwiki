@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Pickled carrots''' are the preservation of the [[carrot]]. They heal {{Hp|4}} and grant {{EffectLink|Night Vision}} for 5 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_carrots.json}}</ref>
+'''Pickled carrots''' are the preservation of the [[carrot]]. They heal {{Value|Pickled Carrots|heals}} and grant {{EffectLink|Night Vision}} for {{Value|Pickled Carrots|duration|effect=Night Vision}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_carrots.json}}</ref>
 
 == Obtaining ==
 
@@ -12,7 +12,7 @@ A raw carrot, a brown [[mushroom]] and a glass bottle. Picking up a carrot unloc
 == Usage ==
 
 === Food ===
-Eating pickled carrots takes 1.6 seconds, heals {{Hp|4}} and gives Night Vision for 5:00. It gives the glass bottle back when eaten.
+Eating pickled carrots takes {{Value|Pickled Carrots|eat_time}}, heals {{Value|Pickled Carrots|heals}} and gives Night Vision for {{Value|Pickled Carrots|duration|effect=Night Vision|format=clock}}. It gives the glass bottle back when eaten.
 
 == See also ==
 * [[Carrot]]

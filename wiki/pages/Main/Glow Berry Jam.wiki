@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Glow berry jam''' is the preservation of [[Glow Berries|glow berries]]. It heals {{Hp|4}} and grants the Aura intrinsic for 30 seconds, making every other creature within 50 blocks glow.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/glow_jam.json}}</ref>
+'''Glow berry jam''' is the preservation of [[Glow Berries|glow berries]]. It heals {{Value|Glow Berry Jam|heals}} and grants the Aura intrinsic for 30 seconds, making every other creature within 50 blocks glow.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/glow_jam.json}}</ref>
 
 == Obtaining ==
 
@@ -12,7 +12,7 @@
 == Usage ==
 
 === Food ===
-Eating glow berry jam takes 1.6 seconds and heals {{Hp|4}}. A bell sound plays, and 2.4 seconds later every other entity within 50 blocks glows for 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_30.mcfunction}}</ref> It gives the glass bottle back when eaten.
+Eating glow berry jam takes {{Value|Glow Berry Jam|eat_time}} and heals {{Value|Glow Berry Jam|heals}}. A bell sound plays, and 2.4 seconds later every other entity within 50 blocks glows for 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_30.mcfunction}}</ref> It gives the glass bottle back when eaten.
 
 == History ==
 {{History|

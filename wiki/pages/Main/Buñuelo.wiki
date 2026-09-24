@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-A '''buñuelo''' is a fried dough fritter that heals {{Hp|6}} and grants {{EffectLink|Luck}} for 3 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bunuelo.json}}</ref>
+A '''buñuelo''' is a fried dough fritter that heals {{Value|Buñuelo|heals}} and grants {{EffectLink|Luck}} for {{Value|Buñuelo|duration|effect=Luck}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bunuelo.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ Dough, [[oil]], estus ash and sugar. Obtaining oil unlocks the recipe. The oil's
 == Usage ==
 
 === Food ===
-Eating a buñuelo takes 1.2 seconds, heals {{Hp|6}} and gives Luck for 3:00. The pack gives its chest loot tables quality values, so Luck improves the loot of chests opened while it lasts.<ref>{{Cite changelog|1.12.1-alpha|quote=Luck works, I've added the quality field to all chest loottables and even some other things.}}</ref>
+Eating a buñuelo takes {{Value|Buñuelo|eat_time}}, heals {{Value|Buñuelo|heals}} and gives Luck for {{Value|Buñuelo|duration|effect=Luck|format=clock}}. The pack gives its chest loot tables quality values, so Luck improves the loot of chests opened while it lasts.<ref>{{Cite changelog|1.12.1-alpha|quote=Luck works, I've added the quality field to all chest loottables and even some other things.}}</ref>
 
 === Trading ===
 {{Upcoming|type=section}}

@@ -1,17 +1,17 @@
 {{Infobox auto}}
 
-'''Green curry''' is one of the oven meals. It heals {{Hp|20}} and grants {{EffectLink|Speed}} II for 30 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref>
+'''Green curry''' is one of the oven meals. It heals {{Value|Green Curry|heals}} and grants {{EffectLink|Speed}} {{Value|Green Curry|level|effect=Speed}} for {{Value|Green Curry|duration|effect=Speed}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-A [[Green Curry Stock|green curry stock]] cooks into green curry in 15 seconds in an [[oven]] or on [[kindling]]. Obtaining the stock unlocks the recipe.
+A [[Green Curry Stock|green curry stock]] cooks into green curry in {{Value|Green Curry|cook_time}} in an [[oven]] or on [[kindling]]. Obtaining the stock unlocks the recipe.
 
 == Usage ==
 
 === Food ===
-Eating it takes 3 seconds, heals {{Hp|20}} and gives Speed II (+40% speed) for 30:00. The bowl is given back.
+Eating it takes {{Value|Green Curry|eat_time}}, heals {{Value|Green Curry|heals}} and gives Speed {{Value|Green Curry|level|effect=Speed}} (+40% speed) for {{Value|Green Curry|duration|effect=Speed|format=clock}}. The bowl is given back.
 
 === Trading ===
 {{Upcoming|type=section}}

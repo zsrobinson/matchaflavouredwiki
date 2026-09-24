@@ -1,17 +1,17 @@
 {{Infobox auto}}
 
-'''Honey ginger tea''' is the simple preparation of [[Honey|honey]]. It heals {{Hp|2}}, grants {{EffectLink|Speed}} for 30 seconds and removes harmful effects.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/honey_ginger_tea.json}}</ref>
+'''Honey ginger tea''' is the simple preparation of [[Honey|honey]]. It heals {{Value|Honey Ginger Tea|heals}}, grants {{EffectLink|Speed}} for {{Value|Honey Ginger Tea|duration|effect=Speed}} and removes harmful effects.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/honey_ginger_tea.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-A honey bottle heats into honey ginger tea in an [[oven]] or on [[kindling]] in 5 seconds.
+A honey bottle heats into honey ginger tea in an [[oven]] or on [[kindling]] in {{Value|Honey Ginger Tea|cook_time}}.
 
 == Usage ==
 
 === Food ===
-Drinking honey ginger tea takes 0.8 seconds, heals {{Hp|2}}, gives Speed I (+20% speed) for 0:30 and removes the same maleffects as [[bread]]. It gives the glass bottle back.
+Drinking honey ginger tea takes {{Value|Honey Ginger Tea|eat_time}}, heals {{Value|Honey Ginger Tea|heals}}, gives Speed {{Value|Honey Ginger Tea|level|effect=Speed}} (+20% speed) for {{Value|Honey Ginger Tea|duration|effect=Speed|format=clock}} and removes the same maleffects as [[bread]]. It gives the glass bottle back.
 
 === Trading ===
 {{Upcoming|type=section}}

@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-A '''hepatizon pickaxe''' is a [[Tools#Pickaxe|pickaxe]] of the [[Hepatizon equipment|hepatizon]] tier, made by smithing a [[copper pickaxe]] with [[hepatizon alloy]]. At speed 20 it is the fastest pickaxe in the pack, faster even than [[Adamant Pickaxe|adamant]] (15).
+A '''hepatizon pickaxe''' is a [[Tools#Pickaxe|pickaxe]] of the [[Hepatizon equipment|hepatizon]] tier, made by smithing a [[copper pickaxe]] with [[hepatizon alloy]]. At speed {{Value|Hepatizon Pickaxe|miningspeed}} it is the fastest pickaxe in the pack, faster even than [[Adamant Pickaxe|adamant]] (15).
 
 == Obtaining ==
 
@@ -14,12 +14,12 @@ The upgrade needs no template, and enchantments on the copper item carry over.<r
 == Usage ==
 
 === Mining ===
-It breaks pickaxe blocks at speed 20 and has 1000 durability. Obsidian itself breaks at speed 3 and drops nothing, but crying obsidian and ender chests are harvested normally.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_pickaxe.json}}</ref> The 1.12.1-alpha notes say that with Efficiency V it breaks stone instantly without Haste.
+It breaks pickaxe blocks at speed {{Value|Hepatizon Pickaxe|miningspeed}} and has {{Value|Hepatizon Pickaxe|durability}} durability. Obsidian itself breaks at speed 3 and drops nothing, but crying obsidian and ender chests are harvested normally.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_pickaxe.json}}</ref> The 1.12.1-alpha notes say that with Efficiency V it breaks stone instantly without Haste.
 
 The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pickaxe blocks.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|4.5}} damage at an attack speed of 1.2. While held in the main hand it adds 0.0055 to movement speed, 5.5% of the player's base speed.
+It deals {{Value|Hepatizon Pickaxe|damage}} damage at an attack speed of {{Value|Hepatizon Pickaxe|attackspeed}}. While held in the main hand it adds 0.0055 to movement speed, 5.5% of the player's base speed.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

@@ -2,7 +2,7 @@
 
 {{Spoiler}}
 
-'''Chorus mochi''' is the meal of [[Chorus Fruit|chorus fruit]]. It heals {{Hp|4}} and grants {{EffectLink|Levitation}} XXX for 1 second, launching the player high into the air.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/chorus_mochi.json}}</ref>
+'''Chorus mochi''' is the meal of [[Chorus Fruit|chorus fruit]]. It heals {{Value|Chorus Mochi|heals}} and grants {{EffectLink|Levitation}} {{Value|Chorus Mochi|level|effect=Levitation|format=roman}} for {{Value|Chorus Mochi|duration|effect=Levitation}}, launching the player high into the air.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/chorus_mochi.json}}</ref>
 
 == Obtaining ==
 
@@ -14,7 +14,7 @@
 == Usage ==
 
 === Food ===
-Eating chorus mochi takes 0.8 seconds, heals {{Hp|4}} and gives Levitation XXX (level 30) for 0:01.
+Eating chorus mochi takes {{Value|Chorus Mochi|eat_time}}, heals {{Value|Chorus Mochi|heals}} and gives Levitation {{Value|Chorus Mochi|level|effect=Levitation|format=roman}} (level {{Value|Chorus Mochi|level|effect=Levitation}}) for {{Value|Chorus Mochi|duration|effect=Levitation|format=clock}}.
 
 === Trading ===
 A Journeyman Cook sells 16 chorus mochi for 1 [[obol]].
