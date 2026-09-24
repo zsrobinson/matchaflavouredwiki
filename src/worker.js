@@ -5,6 +5,8 @@ const CANONICAL = "matchaflavou.red";
 const titles = new Map(Object.entries(table.titles));
 const redirects = new Map(Object.entries(table.redirects));
 const aliases = new Map(Object.entries(table.redirects).map(([key, value]) => [key.toLowerCase(), value]));
+// Special:Random (the sidebar's "Random page"): the articles the export indexes, as paths
+const random = table.random || [];
 
 function encodeSegment(segment) {
   try {
@@ -31,6 +33,11 @@ export default {
         key = decodeURIComponent(url.pathname.slice(3)).replace(/ /g, "_").replace(/\/$/, "");
       } catch {
         key = url.pathname.slice(3);
+      }
+      if (key.toLowerCase() === "special:random" && random.length) {
+        // a new page every time: never cached, and not a permanent redirect
+        const page = new URL(random[Math.floor(Math.random() * random.length)], target);
+        return new Response(null, { status: 302, headers: { Location: page.toString(), "Cache-Control": "no-store" } });
       }
       // Only normalize known titles: genuinely missing pages still receive the asset 404.
       let canonical = titles.get(key.toLowerCase());

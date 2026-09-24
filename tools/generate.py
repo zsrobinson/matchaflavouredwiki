@@ -1224,6 +1224,18 @@ def renamed_table():
             '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
 
 
+def no_recipe_list():
+    """Template:Data/Blocked vanilla/No recipe: the items whose vanilla recipes the pack.mcmeta filter hides
+    and that no recipe makes any more (Removed features). The rest of the hidden recipes have replacements."""
+    names = [n for n in DATA.get('blocked_outputs', [])
+             if not any(not r['id'].startswith('debug:') for r in producing(n))]
+    links = [il(n) for n in sorted(names)]
+    text = ', '.join(links[:-1]) + ' and ' + links[-1] if len(links) > 1 else ''.join(links)
+    return ('<includeonly>%s</includeonly><noinclude>The items whose vanilla recipes the datapack\'s '
+            '<code>pack.mcmeta</code> filter hides and that no recipe makes any more. Generated.'
+            '[[Category:Generated data]]</noinclude>' % text)
+
+
 # ------------------------------------------------------------------ enchantment tables
 # Data/Enchantments/New (the pack's own enchantments), Data/Enchantments/Vanilla (what the pack changed
 # and where each one comes from) and Data/Enchantments (every enchantment file, intrinsics and old ids
@@ -3491,6 +3503,7 @@ def main():
                 write('Template', 'Data/Loot/' + lid.replace(':', '/'), p); n['loot'] += 1
     write('Template', 'Data/Food table', food_table())
     write('Template', 'Data/Renamed items', renamed_table())
+    write('Template', 'Data/Blocked vanilla/No recipe', no_recipe_list())
     write('Template', 'Data/Trim templates', trim_templates_table())
     for title, text in list(enchantment_tables().items()) + list(book_tables().items()) + list(intrinsic_item_tables().items()):
         write('Template', title, text)

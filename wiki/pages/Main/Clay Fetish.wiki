@@ -20,6 +20,9 @@ The weather is changed with the <code>/weather</code> command, so it lasts a ran
 === Trading ===
 {{Uses}}
 
+=== Display ===
+Placed in an {{MCW|Item Frame|item frame}}, a clay fetish is drawn as a small three-dimensional statue instead of its flat inventory icon.<ref>{{Source|MF_resourcepack/assets/matcha/items/mournful_clay_statue.json}}</ref><ref>{{Source|MF_resourcepack/assets/matcha/items/cheerful_clay_statue.json}}</ref>
+
 == Advancements ==
 Finding either variant grants '''A Miraculous Discovery!''' ("Find a Clay Fetish by searching abandoned Sites"), which rewards 3 {{ItemLink|Obol|obols}}.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_fetish.json}}</ref>
 

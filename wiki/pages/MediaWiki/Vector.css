@@ -10,6 +10,10 @@
 #pt-anonuserpage, #pt-anontalk, #pt-anoncontribs, .mw-editsection { display: none !important; }
 /* The toolbox only links to special pages, which the static site doesn't have */
 #p-tb { display: none !important; }
+/* minecraft.wiki bolds "Random page"; our other Navigation links are normal weight on desktop */
+@media (min-width: 721px) {
+	#p-Navigation #n-randompage { font-weight: normal; }
+}
 /* Footer (site/GitLinks.php): the page record first, as tiles with the game's icons, then the license
    line, the links and the badges. The footer is dark in both themes, as on minecraft.wiki. */
 #footer-info { display: flex; flex-direction: column; }

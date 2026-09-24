@@ -770,6 +770,13 @@ for f in sorted(glob.glob(os.path.join(VDATA, 'recipe', '*.json'))):
         VANILLA_RECIPES_KEPT.append(r)
 
 BLOCKED_RECIPES = sorted(b[len('recipe/'):-5] for b in BLOCKED if b.startswith('recipe/'))
+# what the hidden vanilla recipes made, for Removed features' list of items no recipe makes any more
+BLOCKED_OUTPUTS = set()
+for f in sorted(glob.glob(os.path.join(VDATA, 'recipe', '*.json'))):
+    if is_blocked('recipe/' + os.path.basename(f)):
+        res = load(f).get('result')
+        if res and (isinstance(res, str) or 'id' in res):
+            BLOCKED_OUTPUTS.add(display_stack(res)['name'])
 
 # ---------------------------------------------------------------- loot tables
 def pool_count(pool_fns):
@@ -1561,6 +1568,7 @@ data = {
     'recipes': RECIPES,
     'vanilla_recipes_kept': VANILLA_RECIPES_KEPT,
     'blocked_vanilla': sorted(BLOCKED),
+    'blocked_outputs': sorted(BLOCKED_OUTPUTS),
     'loot': LOOT,
     'trades': {p: dict(v) for p, v in TRADES.items()},
     'professions': PROF_NAME,
