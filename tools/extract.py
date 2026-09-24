@@ -18,6 +18,8 @@ import re
 import sys
 from collections import defaultdict
 
+from mcformat import Legacy
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'source', 'matcha-flavoured')
 DP = os.path.join(SRC, 'MF_datapack', 'data')
@@ -38,8 +40,9 @@ def rel(path):
 
 # ---------------------------------------------------------------- format guard
 # This file reads specific keys. When the pack or a new Minecraft version changes a file format
-# (26.3 renames loot "functions" to "modifier" and "conditions" to "condition"), the new keys would be
-# skipped without a word and the wiki would quietly lose drop counts, conditions and item identities.
+# (26.3 renames loot "functions" to "modifier" and "conditions" to "condition"; tools/mcformat.py now
+# translates those), the new keys would be skipped without a word and the wiki would quietly lose drop
+# counts, conditions and item identities.
 # So every key, type and function name read below is checked against this list of what the extractor
 # knows. Anything new fails the run (exit 3). Handle it, or add it here if it really doesn't matter.
 KNOWN = {
@@ -58,8 +61,6 @@ KNOWN = {
                       'minecraft:enchanted_count_increase', 'minecraft:furnace_smelt', 'minecraft:set_stew_effect',
                       'minecraft:copy_components', 'minecraft:copy_state', 'minecraft:filtered', 'minecraft:discard'},
     # loot_enchantments(): what enchant_randomly, enchant_with_levels and set_enchantments give (Enchantment tables)
-    # legacy_fns(): a minecraft:sequence runs its functions in order, so it becomes those functions
-    'loot sequence': {'function', 'functions'},
     'loot enchant function': {'function', 'conditions', 'options', 'levels', 'only_compatible', 'enchantments', 'add',
                               'include_additional_cost_component'},
     # generate.py: cond_notes() turns these into drop-table notes and chances
@@ -134,106 +135,19 @@ def norm_ns(i):
 
 
 # ---------------------------------------------------------------- 26.3 names -> the names read below
-# Minecraft 26.3 renamed keys in loot tables, predicates and villager trades. Everything below (and
-# generate.py, through data.json) reads the 26.2 names, so each file is translated to them as it is
-# loaded, and data.json has the same shape whichever version the pack is for:
-#   "modifier": one function, a list, or a minecraft:sequence  -> "functions": a flat list
-#   "condition": one predicate or a list                        -> "conditions": a list
-#   a predicate's or function's "type"                          -> "condition" / "function"
-#   a predicate named by its ID ("minecraft:tool/can_silk_touch") -> that predicate file, inlined
-#   a tag entry's "items": "#tag"                               -> "name": "tag"
-#   minecraft:match_block with "blocks" and "state"             -> block_state_property, "block", "properties"
-#   a trade's "given_item_modifier"                             -> "given_item_modifiers"
-# A file in the 26.2 format comes back with the same content, so the wiki built from it can't change.
-def _renamed(d, names):
-    """d with keys renamed, in their places."""
-    return {names.get(k, k): v for k, v in d.items()}
+# Minecraft 26.3 renamed keys in loot tables, predicates, trades and advancement criteria. Each file is
+# translated to the 26.2 names as it is loaded (tools/mcformat.py), so the code below and data.json
+# have one shape whichever version the pack is for.
+def find_predicate(pid):
+    ns, p = pid.split(':', 1)
+    for path in (os.path.join(DP, ns, 'predicate', p + '.json'),
+                 os.path.join(VDATA, 'predicate', p + '.json') if ns == 'minecraft' else None):
+        if path and os.path.exists(path):
+            return path
+    return None
 
 
-def legacy_cond(c, src, seen=()):
-    if isinstance(c, str):  # 26.3: a predicate named by its ID, as the pack's or vanilla's predicate/ folder has it
-        pid = norm_ns(c)
-        ns, p = pid.split(':', 1)
-        for path in (os.path.join(DP, ns, 'predicate', p + '.json'),
-                     os.path.join(VDATA, 'predicate', p + '.json') if ns == 'minecraft' else None):
-            if path and os.path.exists(path) and pid not in seen:
-                d = load(path)
-                if isinstance(d, list):  # a predicate file can be a list: all of them must pass
-                    return {'condition': 'minecraft:all_of', 'terms': legacy_conds(d, src, seen + (pid,))}
-                return legacy_cond(d, src, seen + (pid,))
-        UNKNOWN[('condition', 'predicate %s, which does not exist' % pid)].add(src)
-        return {'condition': 'minecraft:reference', 'name': pid}
-    if not isinstance(c, dict):
-        return c  # expect_conditions() reports it
-    if 'type' in c and 'condition' not in c:
-        c = _renamed(c, {'type': 'condition'})
-    if norm_ns(str(c.get('condition', ''))) == 'minecraft:match_block':  # 26.3's block_state_property
-        c = dict(_renamed(c, {'blocks': 'block', 'state': 'properties'}), condition='minecraft:block_state_property')
-    if 'term' in c:
-        c = dict(c, term=legacy_cond(c['term'], src, seen))
-    if 'terms' in c:
-        c = dict(c, terms=legacy_conds(c['terms'], src, seen))
-    return c
-
-
-def legacy_conds(x, src, seen=()):
-    """"conditions" or "condition" as a list of predicates in the 26.2 format."""
-    if x is None:
-        return None
-    return [legacy_cond(c, src, seen) for c in (x if isinstance(x, list) else [x])]
-
-
-def legacy_fns(x, src):
-    """"functions" or "modifier" as a flat list of functions in the 26.2 format."""
-    out = []
-    for f in [] if x is None else x if isinstance(x, list) else [x]:
-        if not isinstance(f, dict):
-            UNKNOWN[('loot function', 'a function that is not an object')].add(src)
-            continue
-        if 'type' in f and 'function' not in f:
-            f = _renamed(f, {'type': 'function'})
-        if norm_ns(f.get('function', '')) == 'minecraft:sequence':  # runs its functions in order, as a list does
-            expect('loot sequence', f, src)
-            out += legacy_fns(f.get('functions'), src)
-            continue
-        if 'condition' in f and 'conditions' not in f:
-            f = _renamed(f, {'condition': 'conditions'})
-        if 'conditions' in f:
-            f = dict(f, conditions=legacy_conds(f['conditions'], src))
-        out.append(f)
-    return out
-
-
-def legacy_loot(d, src):
-    """A loot table, pool or entry, and everything in it, in the 26.2 format."""
-    if not isinstance(d, dict):
-        return d
-    for old, new in (('functions', 'modifier'), ('conditions', 'condition')):
-        if old in d and new in d:
-            UNKNOWN[('loot', 'both "%s" and "%s"' % (old, new))].add(src)
-    tag_items = norm_ns(d.get('type', '')) == 'minecraft:tag' and 'items' in d and 'name' not in d
-    d = _renamed(d, {'modifier': 'functions', 'condition': 'conditions', **({'items': 'name'} if tag_items else {})})
-    if 'functions' in d:
-        d['functions'] = legacy_fns(d['functions'], src)
-    if 'conditions' in d:
-        d['conditions'] = legacy_conds(d['conditions'], src)
-    for k in ('pools', 'entries', 'children'):
-        if isinstance(d.get(k), list):
-            d[k] = [legacy_loot(x, src) for x in d[k]]
-    if tag_items and isinstance(d['name'], str):
-        d['name'] = d['name'].lstrip('#')  # the 26.2 "name" is the tag's ID without the #
-    return d
-
-
-def legacy_trade(t, src):
-    if 'given_item_modifiers' in t and 'given_item_modifier' in t:
-        UNKNOWN[('villager trade', 'both "given_item_modifiers" and "given_item_modifier"')].add(src)
-    t = _renamed(t, {'given_item_modifier': 'given_item_modifiers'})
-    if 'given_item_modifiers' in t:
-        t['given_item_modifiers'] = legacy_fns(t['given_item_modifiers'], src)
-    if t.get('merchant_predicate') is not None:
-        t['merchant_predicate'] = legacy_cond(t['merchant_predicate'], src)
-    return t
+LEGACY = Legacy(find_predicate, lambda kind, key, src: UNKNOWN[(kind, key)].add(src))
 
 
 # ---------------------------------------------------------------- language
@@ -1004,7 +918,7 @@ LOOT = {}
 for f in sorted(glob.glob(os.path.join(DP, '*', 'loot_table', '**', '*.json'), recursive=True)):
     ns = os.path.relpath(f, DP).split(os.sep)[0]
     lid = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'loot_table'))[:-5]
-    d = legacy_loot(load(f), rel(f))
+    d = LEGACY.loot(load(f), rel(f))
     LOOT[lid] = {'id': lid, 'src': rel(f), 'type': d.get('type'), 'entries': parse_loot(d, rel(f)),
                  'overrides_vanilla': ns == 'minecraft' and os.path.exists(
                      os.path.join(VDATA, 'loot_table', os.path.relpath(f, os.path.join(DP, ns, 'loot_table'))))}
@@ -1023,7 +937,7 @@ for f in sorted(glob.glob(os.path.join(VDATA, 'loot_table', '**', '*.json'), rec
     if lid in LOOT or not rp.startswith(('entities/', 'blocks/', 'chests/', 'gameplay/', 'archaeology/', 'shearing/')):
         continue
     LOOT[lid] = {'id': lid, 'src': 'vanilla:loot_table/' + rp + '.json', 'type': None, 'vanilla': True,
-                 'entries': parse_loot(legacy_loot(load(f), 'vanilla:loot_table/' + rp + '.json'),
+                 'entries': parse_loot(LEGACY.loot(load(f), 'vanilla:loot_table/' + rp + '.json'),
                                        'vanilla:loot_table/' + rp + '.json'), 'overrides_vanilla': False}
 
 # ---------------------------------------------------------------- trades
@@ -1048,7 +962,7 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
         tfile = os.path.join(DP, ns, 'villager_trade', p + '.json')
         if not os.path.exists(tfile):
             continue
-        t = legacy_trade(load(tfile), rel(tfile))
+        t = LEGACY.trade(load(tfile), rel(tfile))
         expect('villager trade', t, rel(tfile))
         mods = t.get('given_item_modifiers') or []
         expect('loot function', (norm_ns(m.get('function', '')) for m in mods), rel(tfile))
@@ -1145,7 +1059,7 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'advancement', '**', '*.json'), 
     expect('advancement display', d.get('display') or {}, rel(f))
     disp = d.get('display')
     rec = {'id': aid, 'src': rel(f), 'parent': d.get('parent'), 'criteria': list(d.get('criteria', {}).keys()),
-           'criteria_raw': d.get('criteria'), 'rewards': d.get('rewards'), 'requirements': d.get('requirements')}
+           'criteria_raw': LEGACY.criteria(d.get('criteria'), rel(f)), 'rewards': d.get('rewards'), 'requirements': d.get('requirements')}
     if disp:
         icon = disp.get('icon', {})
         # icons are display-only: don't register them (they would add foreign models to items)
@@ -1207,7 +1121,7 @@ def mob_predicate(pid):
     ns, p = pid.split(':', 1)
     path = os.path.join(DP, ns, 'predicate', p + '.json')
     src = rel(path)
-    d = legacy_cond(load(path), src)
+    d = LEGACY.cond(load(path), src)
     expect('mob predicate', d.keys(), src)
     if d.get('condition') != 'minecraft:entity_properties' or d.get('entity') != 'this':
         UNKNOWN[('mob predicate', '%s on %s' % (d.get('condition'), d.get('entity')))].add(src)

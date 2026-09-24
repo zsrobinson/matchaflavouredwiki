@@ -117,6 +117,24 @@ def verb(old, new, changed):
 
 
 # ---------------------------------------------------------------- data changes
+def meaning(v):
+    """v with the spellings that mean the same thing made the same, so that a change of format isn't
+    reported as a change: 26.3's files leave out empty "conditions": [], give uniform number providers
+    their "type", and write an entity predicate in its short form where 26.2's wrote a list of one."""
+    if isinstance(v, dict):
+        v = {k: x for k, x in ((k, meaning(x)) for k, x in v.items()) if x not in (None, [], {})}
+        if v.get('type') == 'minecraft:uniform' and set(v) == {'type', 'min', 'max'}:
+            del v['type']
+        return v
+    if isinstance(v, list):
+        v = [meaning(x) for x in v]
+        if len(v) == 1 and isinstance(v[0], dict) and set(v[0]) <= {'condition', 'entity', 'predicate'} \
+                and v[0].get('condition') == 'minecraft:entity_properties' and v[0].get('entity') == 'this':
+            return v[0].get('predicate')  # none: any entity
+        return v
+    return v
+
+
 def diff_dicts(old, new, fields=None):
     keys = fields or sorted(set(old) | set(new))
     return [k for k in keys if old.get(k) != new.get(k)]
@@ -177,7 +195,7 @@ def loot_lines(a, b, pages):
     la, lb = a['loot'], b['loot']
     for lid in sorted(set(la) | set(lb)):
         old, new = la.get(lid), lb.get(lid)
-        if old and new and old['entries'] == new['entries']:
+        if old and new and meaning(old['entries']) == meaning(new['entries']):
             continue
         t = new or old
         items = sorted({e['item'] for e in t['entries'] if e.get('item')})[:6]
@@ -228,7 +246,7 @@ def adv_lines(a, b, pages):
     out = []
     for aid in sorted(set(a['advancements']) | set(b['advancements'])):
         old, new = a['advancements'].get(aid), b['advancements'].get(aid)
-        changed = diff_dicts(old or {}, new or {}, fields)
+        changed = diff_dicts(meaning(old or {}), meaning(new or {}), fields)
         if old and new and not changed:
             continue
         v = new or old
