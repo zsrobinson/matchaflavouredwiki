@@ -173,7 +173,7 @@ class Exporter:
                      'data-pagefind="/pagefind/pagefind.js"><div id="simpleSearch" class="vector-search-box-inner">'
                      '<input class="vector-search-box-input" type="search" name="q" placeholder="Search Matcha Flavoured Wiki" '
                      'aria-label="Search Matcha Flavoured Wiki" autocapitalize="sentences" autocomplete="off" spellcheck="false" '
-                     'title="Search Matcha Flavoured Wiki [/]" id="searchInput">'
+                     'title="Search Matcha Flavoured Wiki [/]" accesskey="f" id="searchInput">'
                      '<input id="searchButton" class="searchButton" type="submit" title="Search the pages for this text" value="Search">'
                      '</div></form>', doc, flags=re.S)
         doc = re.sub(r'<li id="footer-info-lastmod".*?</li>', '', doc, flags=re.S)
@@ -358,6 +358,7 @@ def main():
             f.write('\n')
         f.write(SITE_JS)
         f.write(open(os.path.join(ROOT, 'site', 'search.js'), encoding='utf-8').read())
+        f.write(open(os.path.join(ROOT, 'site', 'accesskeys.js'), encoding='utf-8').read())  # "[x]" -> "[alt-shift-x]"
     shutil.copy(os.path.join(ROOT, 'site', 'search.css'), os.path.join(out, '_static', 'site.css'))
     for d in ('assets', 'images'):
         src = os.path.join(ROOT, 'site', d)
