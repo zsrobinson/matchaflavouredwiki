@@ -20,6 +20,46 @@
 	box-sizing: border-box;
 }
 .messagebox.spoiler { border-left-color: #B03A2E; }
+/* "Hide spoilers" (the reader's choice, html.mfw-hide-spoilers; MediaWiki:Gadget-mfwShell.js): what a
+   {{Spoiler}} box covers (.mfw-spoiler-body, marked by site/Spoilers.php) is hidden, and the box says
+   so; hidden-advancement rows and other .mfw-spoiler elements are blacked out, as minecraft.wiki's
+   {{Spoiler}} does. A click shows them (.mfw-spoiler-shown). Nothing here applies by default. */
+html.mfw-hide-spoilers .mfw-spoiler-body:not(.mfw-spoiler-shown) { display: none !important; }
+html.mfw-hide-spoilers .messagebox.spoiler[data-mfw-spoiler]:not(.mfw-spoiler-shown) { cursor: pointer; }
+html.mfw-hide-spoilers .messagebox.spoiler[data-mfw-spoiler]:not(.mfw-spoiler-shown) td::after {
+	content: 'Hidden by your spoiler setting. Click to show it.';
+	display: block;
+	width: fit-content;
+	margin-top: 0.4em;
+	padding: 0.15em 0.5em;
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.25);
+}
+html.mfw-hide-spoilers .messagebox.spoiler[data-mfw-spoiler]:not(.mfw-spoiler-shown):hover td::after,
+html.mfw-hide-spoilers .messagebox.spoiler[data-mfw-spoiler]:not(.mfw-spoiler-shown):focus-visible td::after { background: rgba(0, 0, 0, 0.35); }
+html.mfw-hide-spoilers .mfw-spoiler:not(.mfw-spoiler-shown):not(tr),
+html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td {
+	cursor: pointer;
+	color: transparent !important;
+	background: rgba(0, 0, 0, 0.25) !important;
+	box-decoration-break: clone;
+}
+html.mfw-hide-spoilers .mfw-spoiler:not(.mfw-spoiler-shown):not(tr) *,
+html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td * { visibility: hidden; }
+html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td:nth-child(2) { position: relative; }
+html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td:nth-child(2)::after {
+	content: 'Spoiler: click to show';
+	position: absolute;
+	inset: 50% 0 auto;
+	transform: translateY(-50%);
+	padding: 0 0.5em;
+	color: #202122;
+	visibility: visible;
+}
+body.wgl-theme-dark tr.mfw-spoiler > td::after { color: #eaecf0 !important; }
+body.wgl-theme-dark .messagebox.spoiler[data-mfw-spoiler] td::after { background: rgba(255, 255, 255, 0.15); }
+html.mfw-hide-spoilers body.wgl-theme-dark .mfw-spoiler:not(.mfw-spoiler-shown):not(tr),
+html.mfw-hide-spoilers body.wgl-theme-dark tr.mfw-spoiler:not(.mfw-spoiler-shown) > td { background: rgba(255, 255, 255, 0.15) !important; }
 .messagebox.info { border-left-color: #2E6DB0; }
 
 /* Main page: layout and tiles come from minecraft.wiki's main page CSS (Gadget-mcw-mainpage.css) */

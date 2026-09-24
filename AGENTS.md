@@ -187,6 +187,17 @@ the swap mid-way.
     deepslate's invisible-block mesh is off: for a whole structure it covers millions of empty cells
     and crashes the tab.
 
+- **Reader toggles** (fixed width, hide spoilers) sit beside `#pt-dm-toggle`, built by `Gadget-mfwShell.js`
+  (`#pt-fw-toggle`, `#pt-sp-toggle`; icons in `MediaWiki:Vector.css`, OOUI's in the moon's grey).
+  Like the theme, both are in `localStorage` (`mfw-width`, `mfw-spoilers`) and set a class on `<html>`
+  in `site/theme-boot.js` before first paint (`mfw-fixed-width`, `mfw-hide-spoilers`); the defaults set
+  nothing, so pages are unchanged unless a reader opts in.
+  - Fixed width is minecraft.wiki's own fixedWidth gadget CSS (1200px, only on wider screens, so the
+    toggle only shows there); phones get only the spoiler toggle, in the drawer.
+  - Spoiler scope needs "siblings up to the next heading", which CSS can't select, so `site/Spoilers.php`
+    (an `OutputPageBeforeHTML` hook) marks each element a `{{Spoiler}}` box covers with `mfw-spoiler-body`
+    and the box's number. It re-serializes only pages with a box, with MediaWiki's own tidy formatter, so
+    the rest of the HTML stays byte-identical. The rule for what counts is in `wiki/STYLE.md` ("Spoilers").
 - **Diagrams**: `python3 tools/diagrams.py` draws every diagram from the pack's data into `wiki/diagrams/`
   (committed; CI fails when it's out of date, like `wiki/generated`). Each is a function in
   `tools/diagram_defs/<topic>.py`, registered with `@diagram('<Name>')`, reading its numbers with the

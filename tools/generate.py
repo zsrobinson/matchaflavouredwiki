@@ -2005,6 +2005,9 @@ def adv_tree_order(advs):
     return out
 
 
+ADV_CATALOGUE_TABS = {'anglers_almanac'}  # every entry hidden until that fish is caught; the catches are on Fishing
+
+
 def advancement_tables():
     """Data/Advancements/<tab>: one row per visible advancement, anchored by its title. What the code
     can't say in words (the actual requirements) is a hand note the page passes by advancement ID."""
@@ -2023,8 +2026,12 @@ def advancement_tables():
             elif a.get('hidden'):
                 kind += ' (hidden)'
             desc = glyphs(esc(a['description'].replace('\n', ' '))).strip()
-            rows.append("|-\n| %s || <span id=\"%s\"></span>'''%s''' || %s || %s || {{{%s|}}} || %s || %s{{{%s reward|}}}" % (
-                adv_icon(a), html.escape(a['title']), glyphs(esc(a['title'])), desc or '—', esc(parent) or '—',
+            # a hidden advancement is a spoiler: the game shows it only once earned (MediaWiki:Common.css,
+            # wiki/STYLE.md). Not in a catalogue tab, whose entries are hidden only until caught.
+            spoiler = ' class="mfw-spoiler"' if (a.get('hidden') and a.get('parent')
+                                                 and tab not in ADV_CATALOGUE_TABS) else ''
+            rows.append("|-%s\n| %s || <span id=\"%s\"></span>'''%s''' || %s || %s || {{{%s|}}} || %s || %s{{{%s reward|}}}" % (
+                spoiler, adv_icon(a), html.escape(a['title']), glyphs(esc(a['title'])), desc or '—', esc(parent) or '—',
                 a['id'], kind, adv_rewards(a) or '—', a['id']))
         pages[tab] = ('<includeonly>{| class="wikitable sortable"\n'
                       '! Icon !! Advancement !! In-game description !! Parent !! Actual requirements !! Type !! Reward\n' +

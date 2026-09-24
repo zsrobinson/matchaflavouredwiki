@@ -132,11 +132,27 @@ sortable wikitables, and `{{Main|...}}` hatnotes into each detail page.
 | `{{Cite video|quote=...}}`, `{{Cite changelog|1.10|quote=...}}`, `{{Cite Modrinth|date=...|quote=...}}` | References to the developer's video, release notes and Modrinth description (`gallery=<title>` for a gallery caption). |
 | `{{History|{{History line|1.0|...}}{{History line|1.10|...}}}}` | Version history table. |
 | `{{Version|1.10}}` | Link to a version page. |
-| `{{Spoiler}}` | Put before sections about secrets (hidden recipes, lore, horror). The wiki documents them, but warns first. |
+| `{{Spoiler}}` | Put before sections about secrets (hidden recipes, lore, horror). The wiki documents them, but warns first. It covers the rest of its section (see "Spoilers" below). |
 | `{{Upcoming}}` / `{{Planned}}` | Content that is only in `changelog.md` or the developer's plans. |
 | `{{Navbox|title=|group1=|list1={{Nav item|X}}...}}` | Navigation boxes at the bottom of pages. |
 | Generated tables | `{{Data/Food table}}`, `{{Data/Renamed items}}`, `{{Data/Enchantments}}` (and `/New`, `/Vanilla`, which take notes by enchantment id: `{{Data/Enchantments/New|matcha:reach=...}}`), `{{Data/Blessings}}`, `{{Data/Ofuda}}`, `{{Data/Intrinsic items/<page>}}`, `{{Data/Trades/<Profession>}}`, `{{Data/Loot/<namespace>/<path>}}`, `{{Data/Advancements/<tab>}}`, `{{Data/Station/<station>}}`, `{{Data/Fishing/...}}`, `{{Data/Splash texts}}`, `{{Current version}}`. |
 | Difficulty and set bonus data | `{{Data/Difficulty}}` (all mob changes), `{{Data/Difficulty/<Mob>}}` (one mob's table), `{{Data/Difficulty/<Mob>/Infobox|max_health}}` (one attribute in a line, for infoboxes), `{{Data/Set bonus/<score>}}` (a table per equipment score) and `{{Data/Set bonus|adamant_armour=4}}` ("Absorption I (2 extra hearts) for 31 seconds every 30 seconds"; `show=every` or `show=lasts` gives just the seconds), all generated from the pack's functions. A note for one row of a table goes in a parameter named by the row ID: `{{Data/Difficulty/Zombie|max_health/baby=...}}`. |
+
+## Spoilers
+
+Readers can turn on "hide spoilers" (the eye beside the dark-mode toggle; in the phone menu). It is
+off by default, so pages look the same for everyone else and for search engines. When it is on, these
+are hidden until clicked, and nothing else:
+- **What a `{{Spoiler}}` box covers:** the rest of its section, up to the next heading of the same or a
+  higher level. A box in the lead covers the rest of the page, so put it where the secret starts: after
+  the infobox and hatnotes of a page that is a secret as a whole, under the heading of a section that is.
+- **Hidden advancements** (rows in `{{Data/Advancements/<tab>}}`), which the game shows only once earned.
+  Not the Angler's Almanac, whose entries are hidden only until that catch is made.
+
+Be conservative: a spoiler is something the pack hides on purpose (a secret recipe or ingredient, a hidden
+advancement, a secret in a structure). Ordinary mechanics, drops and recipes the recipe book shows are not
+spoilers, even if a player might not know them yet. Other markup can use `class="mfw-spoiler"` (a row or
+an inline span is blacked out, as minecraft.wiki's inline spoilers are), but prefer `{{Spoiler}}`.
 
 ## Versions
 

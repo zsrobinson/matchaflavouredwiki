@@ -61,6 +61,7 @@
 		var img = body.querySelector( '.infobox-imagearea img' );
 		return {
 			html: p.innerHTML.trim(),
+			spoiler: p.classList.contains( 'mfw-spoiler-body' ),  // covered by a {{Spoiler}} box (site/Spoilers.php)
 			img: img && {
 				src: img.getAttribute( 'src' ),
 				w: +img.getAttribute( 'data-file-width' ) || img.width,
@@ -82,6 +83,10 @@
 	}
 
 	function build( data, href ) {
+		// a page's lead covered by {{Spoiler}}, while the reader hides spoilers (Gadget-mfwShell.js)
+		if ( data.spoiler && document.documentElement.classList.contains( 'mfw-hide-spoilers' ) ) {
+			data = { html: null, img: null };
+		}
 		var el = document.createElement( 'div' );
 		// wide pictures (structure views) go on top, square and tall ones (icons, mobs) at the side
 		var wide = data.img && data.img.w > data.img.h * 1.3;
@@ -108,7 +113,11 @@
 		text.href = href;
 		text.tabIndex = -1;
 		var p = document.createElement( 'p' );
-		p.innerHTML = data.html;
+		if ( data.html === null ) {
+			p.textContent = 'Spoiler: hidden by your spoiler setting.';
+		} else {
+			p.innerHTML = data.html;
+		}
 		text.appendChild( p );
 		box.appendChild( text );
 		el.appendChild( box );

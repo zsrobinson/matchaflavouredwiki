@@ -86,7 +86,7 @@
 | {{Slot|Steamed Golden Carrots|link=none}} || <span id="Hidden Flavors"></span>'''Hidden Flavors''' || {{G|E00F}} Cook a secret Ingredient || Powerful Flavors || {{{matcha:tutorial/cook_secret_food|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/cook_secret_food reward|}}}
 |-
 | {{Slot|Golden Carrot Cupcake|link=none}} || <span id="Wait, you can make that?"></span>'''Wait, you can make that?''' || {{G|E00F}}{{G|E00F}} Cook a secret Meal || Hidden Flavors || {{{matcha:tutorial/cook_secret_meal|}}} || Goal || 2 {{ItemLink|Obol}}{{{matcha:tutorial/cook_secret_meal reward|}}}
-|-
+|- class="mfw-spoiler"
 | {{Slot|Estus Ash|link=none}} || <span id="Hellish Powder"></span>'''Hellish Powder''' || It Radiates Holy Power. It kind of smells like Curry... maybe Cinnamon? || From Earth || {{{matcha:tutorial/obtain_estus|}}} || Task (hidden) || —{{{matcha:tutorial/obtain_estus reward|}}}
 |-
 | {{Slot|Nazar|link=none}} || <span id="Apotropaic Jewellery"></span>'''Apotropaic Jewellery''' || {{G|E00F}} Holding a Lapis Nazar will Ward the Dead. It can also be attached to some Equipment || Hellish Powder || {{{matcha:tutorial/obtain_nazar|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_nazar reward|}}}
@@ -108,7 +108,7 @@
 | {{Slot|Divine Fragment|link=none}} || <span id="A Vestige of Divinity"></span>'''A Vestige of Divinity''' || {{G|E00F}}{{G|E00F}} A Relic only obtained by breaking Spawners or vanquishing powerful Forces || Hellish Powder || {{{matcha:tutorial/obtain_divine_fragment|}}} || Goal || 2 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_divine_fragment reward|}}}
 |-
 | {{Slot|Crystal Heart|link=none}} || <span id="Crystal Heart!"></span>'''Crystal Heart!''' || {{G|E00F}}{{G|E00F}} Crystal Hearts impart a piece of divinity onto Gods who devour them. Though mortals were only able to use their Undying properties. || A Vestige of Divinity || {{{matcha:tutorial/obtain_heart|}}} || Challenge || 3 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_heart reward|}}}
-|-
+|- class="mfw-spoiler"
 | {{Slot|Obol|link=none}} || <span id="You&#x27;re Rich!"></span>'''You're Rich!''' || Obtain an Obol || From Earth || {{{matcha:tutorial/obtain_obol|}}} || Task (hidden) || —{{{matcha:tutorial/obtain_obol reward|}}}
 |-
 | {{Slot|Beacon Kindling|link=none}} || <span id="Bonfire Lit"></span>'''Bonfire Lit''' || {{G|E00F}} Use a Beacon Kindling to signal a Wandering Trader || You're Rich! || {{{matcha:tutorial/light_beacon|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/light_beacon reward|}}}
@@ -120,6 +120,6 @@
 | {{Slot|Obol|link=none}} || <span id="A True Community"></span>'''A True Community''' || 5 {{G|E00F}} Trade with (almost) every profession || Fishmonger || {{{matcha:tutorial/trade_everything|}}} || Challenge || 5 {{ItemLink|Obol}}{{{matcha:tutorial/trade_everything reward|}}}
 |-
 | {{Slot|Carp|link=none}} || <span id="No More Fish in the Sea"></span>'''No More Fish in the Sea''' || 10 {{G|E00F}} Catch Everything! || Fishmonger || {{{matcha:tutorial/catch_everything|}}} || Challenge || 10 {{ItemLink|Obol}}{{{matcha:tutorial/catch_everything reward|}}}
-|-
+|- class="mfw-spoiler"
 | {{Slot|Wooden Cross|link=none}} || <span id="God help you..."></span>'''God help you...''' || Commit great evil || A Good Samaritan || {{{matcha:tutorial/kill_villager|}}} || Task (hidden) || —{{{matcha:tutorial/kill_villager reward|}}}
 |}</includeonly><noinclude>Generated from the advancement files. The actual requirements are notes passed by advancement ID, and "<ID> reward" is appended to the reward: <code><nowiki>{{Data/Advancements/tutorial|matcha:tutorial/root=...}}</nowiki></code>. [[Category:Generated data]]</noinclude>
