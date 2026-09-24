@@ -83,7 +83,9 @@ export async function renderEntity(job, canvas) {
       }
     }
   }
-  for (const [name, rot] of Object.entries(POSES[job.pose ?? 'stand'] ?? {})) if (parts[name]) parts[name].rotation.set(...rot)
+  const pose = POSES[job.pose ?? 'stand']
+  if (!pose) throw new Error('unknown pose ' + job.pose)
+  for (const [name, rot] of Object.entries(pose.parts)) if (parts[name]) parts[name].rotation.set(...rot)
 
   scene.add(new THREE.AmbientLight(0xffffff, 1.6))
   const sun = new THREE.DirectionalLight(0xffffff, 1.4)
@@ -91,7 +93,7 @@ export async function renderEntity(job, canvas) {
   scene.add(sun)
 
   // camera from the front-right, then fit an orthographic frustum to what's in the scene
-  const cam = job.camera ?? {}
+  const cam = { ...pose.camera, ...job.camera }
   const yaw = (cam.yaw ?? 35) * Math.PI / 180, pitch = (cam.pitch ?? 10) * Math.PI / 180
   const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 1000)
   camera.position.set(Math.sin(yaw) * Math.cos(pitch) * 200, 16 + Math.sin(pitch) * 200, Math.cos(yaw) * Math.cos(pitch) * 200)

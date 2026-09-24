@@ -47,11 +47,13 @@ const skeleton = {
 export const MODELS = { humanoid, player, skeleton }
 
 // Poses: rotations in radians per part, in this renderer's space (x < 0 raises a limb forward,
-// z < 0 swings the right arm outward).
+// z < 0 swings the right arm outward), and the camera that shows the pose best (a render's own
+// camera wins). Reaching arms need a view from further round the side, or the near arm points
+// straight at the camera and looks missing.
 export const POSES = {
-  stand: { right_arm: [0, 0, -0.1], left_arm: [0, 0, 0.1] },
-  reach: { right_arm: [-1.5, 0, 0], left_arm: [-1.5, 0, 0] },  // zombies, husks, drowned
-  walk: { right_arm: [0.35, 0, -0.1], left_arm: [-0.35, 0, 0.1], right_leg: [-0.3, 0, 0], left_leg: [0.3, 0, 0] },
+  stand: { parts: { right_arm: [0, 0, -0.1], left_arm: [0, 0, 0.1] }, camera: { yaw: 35 } },
+  reach: { parts: { right_arm: [-1.5, 0, 0], left_arm: [-1.5, 0, 0] }, camera: { yaw: 50 } },  // zombies, husks, drowned
+  walk: { parts: { right_arm: [0.35, 0, -0.1], left_arm: [-0.35, 0, 0.1], right_leg: [-0.3, 0, 0], left_leg: [0.3, 0, 0] }, camera: { yaw: 35 } },
 }
 
 // Equipment layers (armor): the humanoid model inflated, as HumanoidArmorModel does.
