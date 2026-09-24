@@ -54,7 +54,7 @@ html.mfw-hide-spoilers .mfw-spoiler:not(.mfw-spoiler-shown):not(tr) *,
 html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td * { visibility: hidden; }
 html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td:nth-child(2) { position: relative; }
 html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td:nth-child(2)::after {
-	content: 'Spoiler: click to show';
+	content: 'Spoiler:\000020click to show';  /* \000020: ResourceLoader's minifier drops a space after a colon, even in a string */
 	position: absolute;
 	inset: 50% 0 auto;
 	transform: translateY(-50%);
