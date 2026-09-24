@@ -4,8 +4,8 @@ This file is the complete instruction set for the daily Claude Code routine (a c
 from the repository root. It must be safe to run every day: when nothing changed upstream it finishes
 in under a minute without touching anything.
 
-The wiki is derived entirely from upstream sources: the pack's code, its release notes and the
-developer's videos. The job is to notice when they change and bring the wiki back in line.
+The wiki is derived entirely from upstream sources: the pack's code, its release notes, the
+developer's videos and the pack's Modrinth description. The job is to notice when they change and bring the wiki back in line.
 
 **The wiki describes the latest Modrinth release**, the version players download, not the newest commit
 on the repository's `main`. Upstream commits to `main` almost every day, but that is unreleased work.
@@ -31,8 +31,9 @@ python3 tools/check_upstream.py > /tmp/upstream.json; status=$?
 - `status = 2`: a source couldn't be checked (network, or `yt-dlp` didn't install).
   Stop and notify with the error from `/tmp/upstream.json`.
 - `status = 10`: read `/tmp/upstream.json` and continue. It lists `new_releases` (Modrinth) and `new_videos`
-  (YouTube), and `pinned_commit` (`tools/source.lock`). Keep the file: step 5 records exactly what it lists
-  as done.
+  (YouTube), `description_changed` (the Modrinth description or gallery captions differ from
+  `sources/modrinth_project.md`), and `pinned_commit` (`tools/source.lock`). Keep the file: step 5 records
+  exactly what it lists as done.
 
 Also stop if a PR labelled `autopilot` is still open, and notify about it instead of stacking a second one.
 
@@ -65,6 +66,11 @@ Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> 
   Never hand-edit `wiki/generated/`.
 - **New videos:** `python3 tools/fetch_transcripts.py <ids from new_videos>`. It saves transcripts of
   videos about the pack to `sources/transcripts/` and ignores unrelated ones.
+- **The Modrinth description changed** (`description_changed`): `python3 tools/fetch_modrinth_project.py`
+  saves the new text to `sources/modrinth_project.md`; `git diff sources/modrinth_project.md` is what the
+  developer changed. With no new release, skip the rest of this step and run
+  `python3 tools/update_report.py --description-only` in step 3. Nothing needs recording in step 5: the
+  committed file is the record.
 - Then redraw the structure, mob and armor renders: `python3 tools/render.py` (a few minutes; it uses
   the preinstalled Chromium) and commit `wiki/renders/`. Look at the ones that changed: a render that
   broke (a block drawn magenta, a piece missing) usually means the pack changed a structure or model
@@ -74,9 +80,11 @@ Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> 
 ## Step 3: the checklist
 ```sh
 python3 tools/update_report.py          # writes build/update-report.md
+python3 tools/update_report.py --description-only   # instead, when only the Modrinth description changed
 ```
 The report is the to-do list for the update, one checklist line per change, each with the hand-written
 pages that depend on it:
+- a changed Modrinth description (first, when `sources/modrinth_project.md` differs from the last commit);
 - data changes (items added, removed, renamed or changed; names and texts; recipes; loot; trades;
   enchantments; advancements), with the pages titled after the thing, citing its file or mentioning it;
 - every changed source file the generator doesn't read (functions, worldgen, structures, predicates...),
@@ -111,8 +119,15 @@ Read `wiki/STYLE.md`, `wiki/AGENT_BRIEF.md` and `wiki/PAGES.md` first; they are 
   updates itself.
 - **New video:** add design reasoning and history it provides, cited with
   `{{Cite video|id=<id>|title=<title>|quote=...}}`. The code still wins over anything said in a video.
+- **Changed Modrinth description:** read the whole diff of `sources/modrinth_project.md`. Add what it
+  newly says (tips, known bugs, credits, installation steps, design intent) to the pages it concerns, and
+  correct pages it settles, cited with `{{Cite Modrinth|date=<today>|quote=...}}` (`gallery=<title>` for a
+  gallery caption). Verify anything checkable in the code first; where the code disagrees, describe the code
+  and note the difference. Where the developer removed a claim, check the pages that cite it
+  (`grep -rl "Cite Modrinth" wiki/pages`).
 - Add newly found pack bugs to "Known bugs".
-- Sources are only the pack's code, its release notes and the developer's videos. Never other wikis.
+- Sources are only the pack's code, its release notes, the developer's videos and the Modrinth description.
+  Never other wikis.
 
 ## Step 4a: review
 First passes are accurate, but review passes have always found about one factual error in every few pages.
@@ -169,7 +184,7 @@ python3 tools/lint_pages.py                       # must pass: no page for a van
 python3 tools/check_upstream.py --record /tmp/upstream.json   # marks what step 0 found as done
 python3 tools/build_xml.py >/dev/null             # sanity check that every page file parses into a title
 git add -A && git status --short                  # source/ and build/ are gitignored; nothing else unexpected
-git commit -m "Autopilot: update for <what changed: commit range / release / video>"
+git commit -m "Autopilot: update for <what changed: commit range / release / video / Modrinth description>"
 git push --force-with-lease -u origin HEAD        # the branch is reused, so it still holds squash-merged commits
 ```
 Open a PR to `main` with the connector, with a body summarising the upstream changes and the pages you

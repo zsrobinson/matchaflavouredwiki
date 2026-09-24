@@ -12,6 +12,10 @@ Watched sources:
     version players download, pinned to the commit it was made from (tools/release_commit.py). Commits
     on the repository's main between releases are unreleased work and don't count as a change.
   - the developer's YouTube uploads (Klei_Wright): new videos, which may explain design changes
+  - the Modrinth project page (description and gallery captions): the developer's own words. The last
+    version the wiki was checked against is committed as sources/modrinth_project.md, so there is nothing to
+    record: `description_changed` stays true until an update commits the new file
+    (tools/fetch_modrinth_project.py) and the pages that depend on it.
 The report also lists the repository's branches (`branches`, e.g. a port to the next Minecraft version).
 They don't count as a change; AUTOPILOT.md rehearses ports with tools/dry_run.sh.
 
@@ -27,6 +31,8 @@ import subprocess
 import sys
 import urllib.request
 from datetime import datetime, timezone
+
+import fetch_modrinth_project
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE = os.path.join(ROOT, 'tools', 'upstream.json')
@@ -53,7 +59,8 @@ def upstream():
         videos = [dict(zip(('id', 'title'), line.split('\t', 1))) for line in out.splitlines() if '\t' in line]
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
         videos = None  # YouTube unreachable: skip this source today (a missing yt-dlp is an error)
-    return {'branches': branches, 'modrinth': releases, 'videos': videos}
+    return {'branches': branches, 'modrinth': releases, 'videos': videos,
+            'description': fetch_modrinth_project.snapshot()}
 
 
 def record(state, report_path):
@@ -91,9 +98,11 @@ def main():
         'new_releases': [r for r in now['modrinth'] if r['id'] not in known_versions],
         'new_videos': [v for v in (now['videos'] or []) if v['id'] not in known_videos],
         'videos_checked': now['videos'] is not None,
+        # the Modrinth description or gallery differs from sources/modrinth_project.md
+        'description_changed': now['description'] != fetch_modrinth_project.saved(),
         'branches': now['branches'],
     }
-    changed = report['new_releases'] or report['new_videos']
+    changed = report['new_releases'] or report['new_videos'] or report['description_changed']
     report['status'] = 'changed' if changed else 'unchanged'
     print(json.dumps(report, indent=1))
     return 10 if changed else 0

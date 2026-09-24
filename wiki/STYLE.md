@@ -18,7 +18,10 @@ Every statement has to be checkable against a primary source. In priority order:
    for intent, design reasoning and history, never for numbers the code contradicts.
    The transcript is auto-generated, so names in it are misspelled ("Shikudo" is
    Shakudo, "delabre/Maddox" are dolabra/mattock, "Benzene" is correct).
-4. Vanilla data in `source/vanilla-*` is only used to describe what the pack
+4. **The Modrinth project page**: `sources/modrinth_project.md` (the description and gallery
+   captions, saved by `tools/fetch_modrinth_project.py`). The developer's own words, like the videos:
+   use it for tips, known bugs, credits and intent, never for numbers the code contradicts.
+5. Vanilla data in `source/vanilla-*` is only used to describe what the pack
    *changed*.
 
 Never use other fan wikis, unofficial ports, forks or videos by third parties. If the code
@@ -115,7 +118,7 @@ sortable wikitables, and `{{Main|...}}` hatnotes into each detail page.
 | `{{Vanilla}}` / `{{Vanilla|Emerald}}` | Links the vanilla page on minecraft.wiki. |
 | `{{MCW|Page|text}}` | Inline link to minecraft.wiki. |
 | `{{Source|path|label}}` | Link to a file in the pack repository at the synced commit. |
-| `{{Cite video|quote=...}}`, `{{Cite changelog|1.10|quote=...}}` | References to the developer's video and release notes. |
+| `{{Cite video|quote=...}}`, `{{Cite changelog|1.10|quote=...}}`, `{{Cite Modrinth|date=...|quote=...}}` | References to the developer's video, release notes and Modrinth description (`gallery=<title>` for a gallery caption). |
 | `{{History|{{History line|1.0|...}}{{History line|1.10|...}}}}` | Version history table. |
 | `{{Version|1.10}}` | Link to a version page. |
 | `{{Spoiler}}` | Put before sections about secrets (hidden recipes, lore, horror). The wiki documents them, but warns first. |

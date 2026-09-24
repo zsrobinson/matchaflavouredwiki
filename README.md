@@ -122,7 +122,8 @@ The wiki is derived entirely from upstream sources, so a scheduled agent keeps i
   zip of the pack's folders, and exactly one commit has identical files. `tools/source.lock` holds it.
   Unreleased work on `main` appears only where a page marks it `{{Upcoming}}`.
 - `tools/check_upstream.py` looks for new Modrinth releases and new videos on the developer's YouTube
-  channel (against `tools/upstream.json`). It exits `0` when nothing changed, which is the usual case and
+  channel (against `tools/upstream.json`), and for edits to the Modrinth description and gallery captions
+  (against `sources/modrinth_project.md`, saved by `tools/fetch_modrinth_project.py`). It exits `0` when nothing changed, which is the usual case and
   takes seconds.
 - When something changed, the agent follows **[AUTOPILOT.md](AUTOPILOT.md)**:
   1. fetch the sources and transcripts;

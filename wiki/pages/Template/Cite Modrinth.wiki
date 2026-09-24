@@ -1,0 +1,6 @@
+<includeonly>Klei Wright, [https://modrinth.com/datapack/matcha-flavoured{{#if:{{{gallery|}}}|/gallery}} "Matcha Flavoured"] (Modrinth {{#if:{{{gallery|}}}|gallery, "{{{gallery}}}"|project description}}{{#if:{{{date|}}}|, as of {{{date}}}}}){{#if:{{{quote|}}}|&#58; "{{{quote}}}"}}</includeonly><noinclude>
+Cites the developer's own words on the pack's Modrinth page: the project description, or a gallery caption with <code>gallery=</code>. Use inside <code><nowiki><ref></nowiki></code>. The page is saved in the repository as <code>sources/modrinth_project.md</code> and checked every day, since the developer edits it between releases; give the date you read it.
+
+* <code><nowiki>{{Cite Modrinth|date=2026-09-24|quote=...}}</nowiki></code>: the description.
+* <code><nowiki>{{Cite Modrinth|gallery=Clay Statue|date=2026-09-24|quote=...}}</nowiki></code>: a gallery caption.
+[[Category:Templates]]</noinclude>
