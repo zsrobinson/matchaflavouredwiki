@@ -15,7 +15,12 @@ Eating a cookie takes 0.8 seconds, heals {{Hp|4}} and gives Haste I for 5:00.
 
 === Trading ===
 {{Upcoming|type=section}}
-It is one of the foods a villager will be able to ask for as its [[favorite food]].
+It is one of the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_9.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+
+== History ==
+{{History|
+{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+}}
 
 == See also ==
 * [[Brownie]]

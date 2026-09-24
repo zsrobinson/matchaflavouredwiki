@@ -3,7 +3,7 @@
 This page also covers the pack's other water hazard, [[#Water in Hell|water in Hell]].
 
 == Mechanics ==
-Every tick, the pack checks every player who is not in Creative mode. In 1.12.2-beta this includes players in Spectator mode, who are affected like anyone else; the <code>main</code> branch excludes them. If the block at the player's head is water, the player is standing in one of the biomes below, and their chestplate is not enchanted with Frost Protection, the player is given:<ref name="check">{{Source|MF_datapack/data/matcha/function/environmental/check_freezing_water_conditions.mcfunction}}</ref><ref name="fx">{{Source|MF_datapack/data/matcha/function/environmental/freezing_water.mcfunction}}</ref>
+Every tick, the pack checks every player who is not in Creative mode. In 1.12.2-beta this includes players in Spectator mode, who are given the effects below (spectators can't be hurt, so the damage has no effect on them); the <code>main</code> branch excludes them. If the block at the player's head is water, the player is standing in one of the biomes below, and their chestplate is not enchanted with Frost Protection, the player is given:<ref name="check">{{Source|MF_datapack/data/matcha/function/environmental/check_freezing_water_conditions.mcfunction}}</ref><ref name="fx">{{Source|MF_datapack/data/matcha/function/environmental/freezing_water.mcfunction}}</ref>
 * {{EffectLink|Slowness}} V for 5 seconds;
 * {{EffectLink|Darkness}} for 5 seconds;
 * 1 point ({{Hp|1}}) of freezing damage.

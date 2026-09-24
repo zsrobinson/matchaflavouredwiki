@@ -4,6 +4,14 @@
 == Obtaining ==
 The pieces are the [[Sturdy Leather Helmet|helmet]], [[Sturdy Leather Gambeson|gambeson]], [[Sturdy Leather Leggings|leggings]] and [[Sturdy Leather Boots|boots]]. They are repaired with tattered leather.
 
+=== Village tannery chests ===
+[[Village]] tannery chests can also hold a piece of sturdy leather armor.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_tannery.json}}</ref> In 1.12.2 these pieces are an older version of the set and differ from crafted ones:<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/sturdy_leather.json}}</ref>
+* They are invisible when worn. Their equipment asset is <code>minecraft:sturdy_leather</code>, but the resource pack defines the armor texture as <code>matcha:sturdy_leather</code>, so the game finds nothing to draw.<ref>{{Source|MF_resourcepack/assets/matcha/equipment/sturdy_leather.json}}</ref>
+* Each piece gives 1 block of safe fall distance instead of 2, the gambeson gives 4 armor instead of 5, and the boots have Feather Falling III and no extra step height.
+* Each piece also rolls one random enchantment, which can repeat one it already has.
+* They have no repair item of their own, so they are repaired with sturdy leather like ordinary [[leather armor]], not with tattered leather.
+This is not fixed on the <code>main</code> branch either.
+
 == Stats ==
 === Armor ===
 {| class="wikitable sortable"
@@ -29,6 +37,8 @@ Values are the item's real attributes; where the hand-written tooltip differs, t
 {{History line|1.12.2|Safe fall distance raised from 1 to 2 per piece, and the armor can be repaired with tattered leather. Added the step height intrinsic.}}
 }}
 
+== References ==
+{{reflist}}
 
 {{Navbox equipment}}
 [[Category:Equipment]]

@@ -15,7 +15,7 @@ Eating it takes 3 seconds, heals {{Hp|20}} and gives Strength I for 30:00. The b
 
 === Trading ===
 {{Upcoming|type=section}}
-It is one of the foods a villager will be able to ask for as its [[favorite food]].
+It is one of the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_38.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 
 == Advancements ==
 * ''Hearty Curry'': make Japanese curry (1 [[obol]]).
@@ -23,6 +23,7 @@ It is one of the foods a villager will be able to ask for as its [[favorite food
 == History ==
 {{History|
 {{History line|1.12.1-alpha|The stock uses oil and accepts seitan.}}
+{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == See also ==

@@ -28,7 +28,7 @@ Eating a pizza takes 1.6 seconds.
 
 === Trading ===
 {{Upcoming|type=section}}
-The cheese, meat, mushroom and warped pizzas are all among the foods a villager will be able to ask for as its [[favorite food]].
+The cheese, meat, mushroom and warped pizzas are all among the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_8.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 
 == Warped pizza ==
 {{Spoiler}}
@@ -38,6 +38,7 @@ The '''warped pizza''' uses raw [[Warped Fungus|warped fungus]] in place of brai
 == History ==
 {{History|
 {{History line|1.10|Added cheese, mushroom and meat pizzas, and a secret food.}}
+{{History line|Upcoming|2=Villagers can pick the cheese, meat, mushroom and warped pizzas as their [[favorite food]] and buy them once for 1 obol.}}
 }}
 
 == See also ==
