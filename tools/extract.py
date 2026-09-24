@@ -495,6 +495,7 @@ def display_stack(stack):
         d['variant'] = variant
     if comps.get('minecraft:item_model') and comps.get('minecraft:lore'):
         d['_lore'] = render_text(comps['minecraft:lore'][0])  # see lore_variants()
+        d['_lore_rich'] = summarise_components(comps).get('lore_rich')
     return d
 
 
@@ -645,6 +646,15 @@ for f in sorted(glob.glob(os.path.join(VDATA, 'recipe', '*.json'))):
 BLOCKED_RECIPES = sorted(b[len('recipe/'):-5] for b in BLOCKED if b.startswith('recipe/'))
 
 # ---------------------------------------------------------------- loot tables
+def pool_count(pool_fns):
+    """The count a pool's own set_count gives every stack it yields (pool functions run after the
+    entry's, so it replaces the entry's count), or None."""
+    for fn in pool_fns:
+        if fn.get('function', '').split(':')[-1] == 'set_count' and not fn.get('add'):
+            return fn.get('count')
+    return None
+
+
 def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
     for e in entries:
         t = e.get('type', '').split(':')[-1]
@@ -661,6 +671,8 @@ def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
                     count = fn.get('count')
                 elif fname == 'set_lore':
                     stack['components']['minecraft:lore'] = fn.get('lore')
+            if pool_count(pool_fns) is not None:
+                count = pool_count(pool_fns)
             fns = e.get('functions', []) + list(pool_fns)  # pool functions apply to every entry
             fnames = {fn.get('function', '').split(':')[-1] for fn in fns}
             if fnames & {'enchant_randomly', 'enchant_with_levels', 'set_enchantments'} and norm_id(stack['id']) == 'minecraft:book':
@@ -676,13 +688,20 @@ def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
             if variant:
                 ent['variant'] = variant
             comps = stack['components']
+            if comps.get('minecraft:item_model'):
+                ent['model'] = comps['minecraft:item_model']
             if comps.get('minecraft:item_model') and comps.get('minecraft:lore'):
-                ent['model'], ent['_lore'] = comps['minecraft:item_model'], render_text(comps['minecraft:lore'][0])
+                ent['_lore'] = render_text(comps['minecraft:lore'][0])  # see lore_variants()
+                ent['_lore_rich'] = summarise_components(comps).get('lore_rich')
+            if comps.get('minecraft:enchantments'):
+                ent['_ench'] = comps['minecraft:enchantments']  # see enchanted_variants()
             out.append(ent)
         elif t == 'loot_table':
             # set_count on a loot_table entry applies to every stack the nested table yields
             count = next((fn.get('count') for fn in e.get('functions', [])
                           if fn.get('function', '').split(':')[-1] == 'set_count' and not fn.get('add')), None)
+            if pool_count(pool_fns) is not None:
+                count = pool_count(pool_fns)  # e.g. the sweet berry bush: 2-3 berries from matcha:food/sweet_berries
             out.append({'loot_table': e.get('value') if isinstance(e.get('value'), str) else e.get('name'),
                         'count': count, 'weight': e.get('weight', 1), 'quality': e.get('quality'),
                         'conditions': e.get('conditions'), **pool_ctx})
@@ -976,8 +995,80 @@ def lore_variants():
 
 lore_variants()
 
+
+# ---------------------------------------------------------------- enchanted loot
+def ench_name(eid, level):
+    """An enchantment as the tooltip names it: "Anemos", "Power I", "Feather Falling III"."""
+    eid = norm_id(eid)
+    e = ENCH.get(eid)
+    if e:
+        name, top = e['name'], e.get('max_level')
+    else:  # vanilla enchantments the pack leaves alone
+        ns, p = eid.split(':')
+        van = os.path.join(VDATA, 'enchantment', p + '.json')
+        name = strip_codes(VANILLA_LANG.get('enchantment.%s.%s' % (ns, p), p.replace('_', ' ').title()))
+        top = load(van).get('max_level') if os.path.exists(van) else None
+    name = re.sub(r'⟦([^⟧]*)⟧', r'\1', name).strip()
+    return name if level == 1 and top == 1 else '%s %s' % (name, ROMAN.get(level, str(level)))
+
+
+def enchanted_variants():
+    """Loot that sets an item's enchantments directly (set_components) makes a variant when they
+    differ from the item's own: the Abbey's iron sword with Anemos, its Power I compound bow (the
+    crafted one has Power II), the tannery's sturdy leather. Label those sources with them."""
+    for t in LOOT.values():
+        for e in t['entries']:
+            ench = e.pop('_ench', None)
+            if not ench or e.get('variant') or e.get('item') not in ITEMS:
+                continue
+            item = ITEMS[e['item']]
+            if (item['components'].get('enchantments') or {}) != ench:
+                e['variant'] = '%s (%s)' % (item['name'], ', '.join(ench_name(k, v) for k, v in ench.items()))
+
+
+enchanted_variants()
+
+
+# ---------------------------------------------------------------- variants with their own model
+def model_variants():
+    """Variants that look different in game (each Smithing Trim Color its material, each Cooking
+    Recipe its dish, the two Clay Fetishes) get their own icon and tooltip, drawn and generated
+    under the variant's label; generate.py uses the label in inventory slots and redirects it to
+    the item's page. Returns {label: {item, name, base_id, models, components}}."""
+    stacks = [r['output'] for r in RECIPES + VANILLA_RECIPES_KEPT]
+    for levels in TRADES.values():
+        for ts in levels.values():
+            for t in ts if isinstance(ts, list) else []:
+                stacks += [t[k] for k in ('wants', 'additional_wants', 'gives') if t.get(k)]
+    stacks += [e for t in LOOT.values() for e in t['entries'] if e.get('item')]
+    models = defaultdict(dict)  # item -> {label: (model, lore_rich)}
+    for d in stacks:
+        key = d.get('item') or d.get('name')
+        if d.get('variant') and d.get('model') and key in ITEMS:
+            models[key].setdefault(d['variant'], (d['model'], d.get('_lore_rich')))
+    out = {}
+    for key, labels in models.items():
+        if len({m for m, _ in labels.values()}) < 2:
+            continue  # one look for every variant (e.g. enchanted gear): the item's own icon is right
+        for label, (model, rich) in labels.items():
+            comps = dict(ITEMS[key]['components'])
+            comps['item_model'] = model
+            if rich:
+                comps['lore_rich'] = rich
+            out[label] = {'item': key, 'name': label, 'base_id': ITEMS[key]['base_id'], 'models': [model],
+                          'components': comps}
+    for d in stacks:
+        d.pop('_lore_rich', None)
+    return out
+
+
+VARIANT_ITEMS = model_variants()
+
+
 # ---------------------------------------------------------------- write
 for k, it in ITEMS.items():
+    it['icon'] = icon_for(it)
+for k, it in VARIANT_ITEMS.items():
     it['icon'] = icon_for(it)
 
 pack_meta = load(os.path.join(SRC, 'MF_datapack', 'pack.mcmeta'))
@@ -993,6 +1084,7 @@ data = {
     'renames': {k: {'vanilla': VANILLA_LANG.get(k), 'pack': strip_codes(v)} for k, v in PACK_LANG.items()
                 if k in VANILLA_LANG and VANILLA_LANG[k] != v},
     'items': ITEMS,
+    'variant_items': VARIANT_ITEMS,
     'recipes': RECIPES,
     'vanilla_recipes_kept': VANILLA_RECIPES_KEPT,
     'blocked_vanilla': sorted(BLOCKED),

@@ -35,6 +35,7 @@ HAND = os.path.join(ROOT, 'wiki', 'pages')
 IMAGES = os.path.join(ROOT, 'build', 'images')
 
 ITEMS = DATA['items']
+VARIANT_ITEMS = DATA.get('variant_items', {})  # variants with their own look (extract.py: model_variants)
 LANG = DATA['lang_pack']
 
 
@@ -453,8 +454,15 @@ def ing_links(ing):
     return ' or '.join('[[%s]]' % n for n in names)
 
 
+def slot_name(s):
+    """The name an inventory slot shows a stack under: a variant with its own look (a Smithing Trim
+    Color's material, a Cooking Recipe's dish) has its own icon and tooltip under its label, and
+    the label redirects to the item's page."""
+    return s['variant'] if s.get('variant') in VARIANT_ITEMS else s['name']
+
+
 def out_text(o):
-    return safe(o['name']) + (',%d' % o['count'] if o.get('count', 1) > 1 else '')
+    return safe(slot_name(o)) + (',%d' % o['count'] if o.get('count', 1) > 1 else '')
 
 
 def recipe_ui(r):
@@ -956,7 +964,7 @@ def stack_cell(s):
 def trade_ui(t):
     """The offer as the villager's trading screen lists it ({{Trade}})."""
     def st(s):
-        return (safe(s['name']) + (',%d' % s['count'] if s.get('count', 1) > 1 else '')) if s else ''
+        return (safe(slot_name(s)) + (',%d' % s['count'] if s.get('count', 1) > 1 else '')) if s else ''
     return '{{Trade|%s|%s|%s}}' % (st(t.get('wants')), st(t.get('additional_wants')), st(t.get('gives')))
 
 
@@ -1363,6 +1371,7 @@ CATEGORY_TEXT = {
     'Stubs': 'Articles generated from the pack data that have no written description yet.',
     'Redirects from vanilla names': 'Vanilla names that redirect to the renamed item in Matcha Flavoured.',
     'Renamed items': 'Vanilla items and blocks that Matcha Flavoured renames.',
+    'Redirects from variants': 'Variants of an item that look different in game (a Smithing Trim Color\'s material, a Cooking Recipe\'s dish), redirecting to the item.',
 }
 
 
@@ -1415,6 +1424,11 @@ def tooltip_data():
         title = it['name'] if it['name'] != key else ''
         if color or title or any(lines):
             entries[safe(key)] = (title, color, lines)
+    for label, v in VARIANT_ITEMS.items():  # each variant's own lore under its label (slot_name)
+        own = v['components']
+        color = own.get('name_color') or RARITY_COLORS.get(effective(ITEMS[v['item']]).get('rarity'), '')
+        lines = [[r for r in line if r[0]] for line in own.get('lore_rich') or []]
+        entries[safe(label)] = (ITEMS[v['item']]['name'], color, lines)
     for iid, comps in VSUM.items():
         color = RARITY_COLORS.get(comps.get('minecraft:rarity'), '')
         name = safe(id_name(iid))
@@ -1549,6 +1563,12 @@ def main():
             write('Main', t, '#REDIRECT [[%s]]\n[[Category:Redirects from item tags]]' % safe(members[0]))
             taken.add(fname(t).lower())
             n['tag redirects'] += 1
+    # a variant with its own look is shown in slots under its label (slot_name), which leads to its item
+    for label, v in sorted(VARIANT_ITEMS.items()):
+        if fname(label).lower() not in taken:
+            write('Main', label, '#REDIRECT [[%s]]\n[[Category:Redirects from variants]]' % safe(v['item']))
+            taken.add(fname(label).lower())
+            n['variant redirects'] += 1
     effect_pages(n)
     category_pages(n)  # (capitalisation redirects are synthesised by build_xml.collect, not written as files)
     # swap in the new tree in one step so concurrent readers never see a half-written folder

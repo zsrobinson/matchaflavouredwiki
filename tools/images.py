@@ -2,7 +2,8 @@
 """Build wiki images from pack/vanilla textures into build/images/.
 
   <Item Name>.png   inventory icon for every item in build/data.json (the file name
-                    convention used by Module:Inventory slot and minecraft.wiki's Invicons)
+                    convention used by Module:Inventory slot and minecraft.wiki's Invicons), and
+                    for each variant with its own look under its label ("Cooking Recipe (Gnocchi)")
   Glyph EXXX.png    each custom-font glyph from custom_emojis.png (used by {{G}})
   Texture <path>.png  raw textures listed in tools/extra_textures.txt (optional)
 
@@ -1160,7 +1161,9 @@ def main():
     done = skipped = 0
     # the isometric cubes are drawn texel by texel in Python: spread them over every core
     with Pool() as pool:
-        for result, unsupported in pool.imap(draw_icon, sorted(data['items'].items()), chunksize=16):
+        # variants with their own look (a Smithing Trim Color's material) are drawn under their label
+        icons = sorted(data['items'].items()) + sorted(data.get('variant_items', {}).items())
+        for result, unsupported in pool.imap(draw_icon, icons, chunksize=16):
             UNSUPPORTED.update(unsupported)
             if result == 'ok':
                 done += 1
