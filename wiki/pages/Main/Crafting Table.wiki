@@ -11,7 +11,7 @@ The crafting table works as in vanilla. Nearly every custom item in the pack tha
 
 Changes to crafting as a whole:
 * '''Repairing is disabled.''' The vanilla recipe that combines two damaged tools into one is removed; equipment is repaired in an [[anvil]] instead.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> See [[Repairing]].
-* '''Some crafts give back a glass bottle.''' Recipes that use a [[Glass Bottle#Water bottle|water bottle]], such as cloning flowers or making [[phosphor]], return the empty [[Glass Bottle|glass bottle]] to the player.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
+* '''Some crafts give back a glass bottle.''' Recipes that use a [[Glass Bottle#Water bottle|water bottle]], such as cloning flowers or making [[phosphor]], return the empty [[Glass Bottle|glass bottle]] to the player.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref> Food recipes that use a [[Milk Bottle|milk bottle]] or [[oil]] are meant to do the same, but in 1.12.2-beta most of them don't; see [[Glass Bottle#Returned from crafting]].
 * '''Slabs craft back into blocks.''' Two slabs of almost any material craft into one full block, and chiseled blocks, which vanilla makes from slabs, move to the [[stonecutter]].<ref>{{Cite changelog|0.6-alpha|quote=All slabs can be crafted back into their original block}}</ref>
 
 == Appearance ==
@@ -21,6 +21,7 @@ The resource pack retextures the block and its interface. The front of the table
 {{History
 |{{History line|0.6-alpha|All slabs can be crafted back into their full block.}}
 {{History line|1.12.1-alpha|Repairing equipment in the crafting grid is disabled.}}
+{{History line|Upcoming|2=Most food recipes and the hell-bound book give back their glass bottle.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == References ==

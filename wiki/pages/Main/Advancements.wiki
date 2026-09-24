@@ -27,7 +27,13 @@ Many advancements give a reward, and their descriptions show it as a symbol befo
 The broken-heart milestones are Brazier (copper), The Stalwart Metal (iron), The Resilient Mineral (diamond), A Zealous Alloy (electrum), A Divine Alloy (adamant), Orpheus (entering Hell) and The End of Dreams (finding a stronghold). The system rewards slow progress: a player who rushes for iron and diamonds makes their deaths more costly sooner. See [[Death]] and [[Difficulty]].
 
 === Revocation on update ===
-When a player joins a world after it has been updated to a newer version of the pack, their recipe unlocks are reset, along with most advancements that give rewards or affect the heart system, so that they can be earned again under the new rules. "No More Fish in the Sea" and "Demonic Emissary" are deliberately kept, and the player's minimum hearts reset to 10.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref> See [[Updating items]].
+When a player joins a world after it has been updated to a newer version of the pack, their recipe unlocks are reset, along with most advancements that give rewards or affect the heart system, so that they can be earned again under the new rules, and the player's minimum hearts reset to 10.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref> In 1.12.2-beta this revokes:
+* in the Tutorial tab, "Prometheus be Damned" and everything after it (the whole metal and cooking progression, including all seven broken-heart milestones), "Hellish Powder" and everything after it (including the Canto advancements), and the chain from "From Earth" through "You're Rich!", "Bonfire Lit", "A Good Samaritan" and "Fishmonger" to "A True Community";
+* in the Hell tab, everything except "Hidden in the Depths" and "Demonic Emissary";
+* in the End tab, "Wax Wings", "Icarus' Folly" and "Wings of Eros".
+"No More Fish in the Sea", "God help you...", "Demonic Emissary", "Hidden in the Depths", "To Dreams" and "Iconoclast" are kept; the code notes that the fishing and prayer advancements are spared deliberately. Because "From Earth" is revoked, it is granted again on the next tick and reruns the pack's first-load setup, including the game rules. See [[Updating items]].
+
+The <code>main</code> branch narrows the tutorial part to the advancements that give rewards, so "Prometheus be Damned", the kiln and cooking basics and the Brazier, The Stalwart Metal and The Resilient Mineral milestones will be kept in the next version.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 
 == Tutorial ==
 {{See also|Progression|Guide for new players}}
@@ -140,7 +146,7 @@ The Tutorial tab, rooted in "From Earth", traces the pack's progression in sever
 |-
 | {{Slot|Divine Fragment|link=none}} || <span id="A Vestige of Divinity"></span>'''A Vestige of Divinity''' || {{G|E00F}}{{G|E00F}} A Relic only obtained by breaking Spawners or vanquishing powerful Forces || Hellish Powder || Have a [[Divine Fragment|divine fragment]] in the inventory. || Goal || 2 {{ItemLink|Obol}}
 |-
-| {{Slot|Crystal Heart|link=none}} || <span id="Crystal Heart!"></span>'''Crystal Heart!''' || {{G|E00F}}{{G|E00F}} Crystal Hearts impart a piece of divinity onto Gods who devour them. Though mortals were only able to use their Undying properties. || A Vestige of Divinity || Have a [[Crystal Heart|crystal heart]] in the inventory. || Challenge || 3 {{ItemLink|Obol}}
+| {{Slot|Crystal Heart|link=none}} || <span id="Crystal Heart!"></span>'''Crystal Heart!''' || {{G|E00F}}{{G|E00F}} Crystal Hearts impart a piece of divinity onto Gods who devour them. Though mortals were only able to use their Undying properties. || A Vestige of Divinity || Have a [[Crystal Heart|crystal heart]] in the inventory. In 1.12.2-beta it can't be earned: the criterion checks for the item model <code>heart_container</code> (read as <code>minecraft:</code>) instead of <code>matcha:heart_container</code>.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref> || Challenge || 3 {{ItemLink|Obol}}
 |-
 | {{Slot|Opal|link=none}} || <span id="Canto I"></span>'''Canto I''' || ❤ Defeat the Sea God || Hellish Powder || Have an [[opal]] in the inventory. Opals drop from elder guardians. || Task || 1 {{ItemLink|Crystal Heart}}
 |-
@@ -209,7 +215,7 @@ The End tab appears when the player first enters [[the End]].
 
 == Angler's Almanac ==
 {{Main|Angler's Almanac}}
-The Angler's Almanac tab is a catalogue of catches, added by imtlx in [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]]. Its root can never be completed by play. Obtaining the [[Angler's Almanac]] item runs a function that unlocks it, and every entry requires the root.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/get_almanac.json}}</ref> Each entry is hidden until the player hooks the matching item with a fishing rod, and its description gives the catch's rarity in stars. No entry gives a reward.
+The Angler's Almanac tab is a catalogue of catches, added by imtlx in [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]]. Its root can never be completed by play. Obtaining the [[Angler's Almanac]] item runs a function that unlocks it, and every entry requires the root.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/get_almanac.json}}</ref> Each entry is hidden until the player hooks the matching item with a fishing rod, and its description gives the catch's rarity in stars. No entry gives a reward. In 1.12.2-beta the Hot Saltwater pufferfish entry can't be unlocked, because it checks for the model <code>matcha:pufferfish</code> while caught pufferfish keep the vanilla model.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>
 
 {| class="wikitable"
 ! Category !! Groups !! Entries
@@ -266,7 +272,8 @@ Most of the pack's 414 advancement files have no display. They are invisible to 
 {{History line|1.03|Added "A Brittle Alloy?", "Hidden Flavors" and "Wait, you can make that?".}}
 {{History line|1.10|Added "Demonic Emissary", "A True Community", "Icarus' Folly", "A Miraculous Discovery!", "Archeologist in Training" and "Wings of Eros". Advancements became translatable. Removed the Estus flask advancement.}}
 {{History line|1.12.1-alpha|Advancements began rewarding obols and crystal hearts and lowering minimum hearts. Added "Bonfire Lit" and the Angler's Almanac tab. Reward advancements are revoked on update so they can be earned again.}}
-{{History line|1.12.2|"Bonfire Lit" works. Fixed a fishing typo that made an advancement impossible. After release, fixes on <code>main</code> narrowed which tutorial advancements are revoked on update and fixed the crystal heart and pufferfish almanac entries.}}
+{{History line|1.12.2|"Bonfire Lit" works. Fixed a fishing typo that made an advancement impossible.}}
+{{History line|Upcoming|2=Fewer tutorial advancements are revoked on update.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> "Crystal Heart!" and the pufferfish Angler's Almanac entry can be earned.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == Trivia ==

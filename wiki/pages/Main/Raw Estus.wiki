@@ -29,12 +29,20 @@ Creative mode is excluded because the game refills items there, which would repe
 
 Raw Estus does not work as fuel in a [[Chemistry Stand]]: the pack empties the <code>#minecraft:brewing_fuel</code> tag.<ref>{{Source|MF_datapack/data/minecraft/tags/item/brewing_fuel.json}}</ref>
 
+=== Multiplayer ===
+In 1.12.2-beta the functions are written with nearest-player selectors, which work in single player but not reliably on a server:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/check_if_estus_should_be_processed.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/process_estus.mcfunction}}</ref>
+* The Creative check only tests whether ''some'' player is not in Creative mode. While any other player is not in Creative mode, a Creative player's Raw Estus is converted as well, which is what the check is meant to prevent.
+* Each time it runs, it converts Raw Estus for every player who holds some, not only the player whose inventory changed.
+* The main inventory and the hotbar are checked separately, so a player with Raw Estus in both has two converted at once.
+
+The <code>main</code> branch fixes this: only the player whose inventory changed is processed, one Raw Estus at a time, and never in Creative mode.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/process_estus.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+
 == History ==
 {{History|
 {{History line|0.5-alpha|No longer processed in Creative mode, as a workaround for a world-corrupting bug. Processing optimized.}}
 {{History line|1.10|Blazes no longer drop Raw Estus.<ref>{{Cite changelog|1.10|quote=Blaze no longer drop Raw Estus (They aren't undead, so it doesn't make sense for them to)}}</ref> Zombie drop rate lowered from about 50% to about 33%, according to the release notes. Fire and smoke particles added. New texture.}}
 {{History line|1.12.1-alpha|Can no longer be used as brewing fuel.}}
-{{History line|1.12.2|{{Upcoming}} After the 1.12.2 release, the repository fixed estus processing in multiplayer: the effects and the Estus Ash now go to the player who picked up the Raw Estus, where the released functions targeted the nearest player.}}
+{{History line|Upcoming|2=Estus processing fixed for multiplayer: only the player whose inventory changed is processed, one Raw Estus at a time, and a Creative player is never processed. In 1.12.2 the functions used nearest-player selectors, so every player holding Raw Estus was processed, including Creative players while someone else was not in Creative mode.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/check_if_estus_should_be_processed.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == Notes ==

@@ -6,7 +6,7 @@ A '''pupusa''' is a stuffed flatbread that heals {{Hp|3}} and has no effect.<ref
 
 === Crafting ===
 {{Recipes}}
-Dough, [[cheese]], [[oil]] and a [[Cooked Porkchop|cooked porkchop]] or [[Cooked Chicken|cooked chicken]] make 4. Crafting returns the oil's glass bottle. No advancement unlocks the recipe, so it never appears in the recipe book, although the 1.10 changelog lists its unlock as fixed.
+Dough, [[cheese]], [[oil]] and a [[Cooked Porkchop|cooked porkchop]] or [[Cooked Chicken|cooked chicken]] make 4. The oil's glass bottle is meant to be given back, but in 1.12.2-beta the advancement that returns it still names the recipe by an old ID, so it is used up.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref> No advancement unlocks the recipe, so it never appears in the recipe book, although the 1.10 changelog lists its unlock as fixed.
 
 == Usage ==
 
@@ -17,7 +17,7 @@ Eating a pupusa takes 1.6 seconds and heals {{Hp|3}}.
 {{History|
 {{History line|1.10|Pupusa recipe unlock listed as fixed and translatable name added.}}
 {{History line|1.12.1-alpha|Pupusas use oil.}}
-{{History line|Upcoming|2=Crafting pupusas returns the oil's glass bottle. In 1.12.2 the advancement behind this still used an old recipe ID, so the bottle was lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>}}
+{{History line|Upcoming|2=Crafting pupusas returns the oil's glass bottle. In 1.12.2 the advancement behind this still used an old recipe ID, so the bottle was lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == See also ==

@@ -5,11 +5,14 @@
 === Fishing ===
 * 12.82% of junk in most biomes (10 of 78 weight), about 1.28% of all catches.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
 * 90.91% of the Sulfur Caves table, 41.77% of catches in Sulfur Caves.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
+
+In 1.12.2-beta the Sulfur Caves table gives fish bones the item model <code>fish_bones</code> instead of <code>matcha:fish_bones</code>. The game reads it as <code>minecraft:fish_bones</code>, which the resource pack doesn't define, so these fish bones show the missing-model texture and don't stack with those from the junk table.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
+
 Catching them plays their own [[fishing sounds|sound]].
 
 == History ==
 {{History|
-{{History line|Upcoming|2=Fish bones from Sulfur Caves now have the correct texture.}}
+{{History line|Upcoming|2=Fish bones from Sulfur Caves now have the correct texture.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == References ==

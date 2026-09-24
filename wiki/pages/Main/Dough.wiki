@@ -6,7 +6,7 @@
 
 === Crafting ===
 {{Recipes}}
-An [[egg]] and 2 flour make 4 dough. A [[water bottle]] and 1 flour make 1 dough and give the glass bottle back.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough_from_water.json}}</ref> The water recipe accepts any potion.
+An [[egg]] and 2 flour make 4 dough. A [[water bottle]] and 1 flour make 1 dough; the water recipe accepts any potion.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough_from_water.json}}</ref> The glass bottle is meant to be given back, but in 1.12.2-beta the advancement that returns it still names the recipe by an old ID, so it is used up.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
 
 == Usage ==
 
@@ -19,6 +19,7 @@ Picking up dough unlocks [[bread]], [[naan]], [[seitan]] and slime balls (dough 
 {{History|
 {{History line|0.7-alpha|Dough can no longer be eaten. Dough and bread give proper recipe unlocks.}}
 {{History line|1.10|Egg-derived dough buffed.}}
+{{History line|Upcoming|2=Making dough from a water bottle returns the glass bottle. In 1.12.2 the advancement behind this still used an old recipe ID, so the bottle was lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == Trivia ==

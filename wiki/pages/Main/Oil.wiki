@@ -10,7 +10,7 @@ A glass bottle and any 3 sunflowers or cocoa beans make 1 oil. Picking up a glas
 
 == Usage ==
 
-Oil is used for frying and in every oven-meal [[stock]]. Obtaining oil unlocks the four [[Chicken Nugget|chicken nuggets]], [[Buñuelo|buñuelos]], [[Fish and Chips|fish and chips]] and [[lumpia]]. Crafting a recipe that uses oil gives the glass bottle back.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
+Oil is used for frying and in every oven-meal [[stock]]. Obtaining oil unlocks the four [[Chicken Nugget|chicken nuggets]], [[Buñuelo|buñuelos]], [[Fish and Chips|fish and chips]] and [[lumpia]]. The green curry, paneer curry and pumpkin curry stocks give the oil's glass bottle back, together with the milk bottle's.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/two_glass_bottles_from_crafting.json}}</ref> The other oil recipes are meant to return it too, but in 1.12.2-beta the advancement that does this lists them under old recipe IDs, so the bottle is used up.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref> See [[Known bugs]].
 
 === Crafting ingredient ===
 {{Uses}}
@@ -18,7 +18,7 @@ Oil is used for frying and in every oven-meal [[stock]]. Obtaining oil unlocks t
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Added oil. Curries, ramen, gimmari and pupusas use it.}}
-{{History line|Upcoming|2=The advancement that returns glass bottles after crafting was updated to the pack's current recipe IDs. In 1.12.2 it still used the old <code>main:</code> namespace for most food recipes, so crafting them didn't give the glass bottle back.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>}}
+{{History line|Upcoming|2=The advancement that returns glass bottles after crafting was updated to the pack's current recipe IDs. In 1.12.2 it still used the old <code>main:</code> namespace for most food recipes, so crafting them didn't give the glass bottle back.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == See also ==
