@@ -15,6 +15,11 @@ A [[Baked Golden Apple|baked golden apple]], sugar, estus ash and dough. The rec
 === Food ===
 Eating a gilded empanada takes {{Value|Gilded Empanada|eat_time}}, heals {{Value|Gilded Empanada|heals}} and gives Absorption {{Value|Gilded Empanada|level|effect=Absorption}} (4 extra hearts) for {{Value|Gilded Empanada|duration|effect=Absorption|format=clock}} and Regeneration {{Value|Gilded Empanada|level|effect=Regeneration}} for {{Value|Gilded Empanada|duration|effect=Regeneration|format=clock}}. Unlike other foods, its healing Regeneration III isn't hidden, so its icon and particles show for its 4.8 seconds (96 ticks). Making it grants ''Wait, you can make that?''
 
+== History ==
+{{History|
+{{History line|1.12.2|Now made from a baked golden apple instead of a golden apple.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_apple_empanada.json}}</ref>}}
+}}
+
 == See also ==
 * [[Golden Apple]]
 * [[Secret recipes]]

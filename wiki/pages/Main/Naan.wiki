@@ -17,6 +17,11 @@ Eating naan takes {{Value|Naan|eat_time}} and heals {{Value|Naan|heals}}. Unlike
 Naan works as bread in [[bruschetta]], [[French Toast|French toast]], [[Honied French Toast|honied French toast]], [[Sweet Berry Toast|sweet berry toast]], [[latke]]s and [[Ice Cream|ice cream]].
 {{Uses}}
 
+== History ==
+{{History|
+{{History line|1.12.2|Heals {{Hp|4}} instead of {{Hp|2}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/naan.json}}</ref>}}
+}}
+
 == See also ==
 * [[Bread]]
 * [[Mud Kiln]]
