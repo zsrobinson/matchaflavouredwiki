@@ -6,7 +6,7 @@ The '''turtle shellmet''' is the renamed turtle shell helmet. Since turtle scute
 A baby turtle drops a shellmet instead of a scute when it grows up.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/turtle_grow.json}}</ref> Any plain turtle scute a player picks up is also exchanged for a shellmet.<ref>{{Source|MF_datapack/data/matcha/function/remove_vanilla_items/turtle_scute.mcfunction}}</ref>
 
 == Usage ==
-It keeps vanilla stats ({{Value|Turtle Shellmet|armor}} armor, {{Value|Turtle Shellmet|durability}} durability, Water Breathing). The vanilla repair tag still names turtle scutes, which are now divine fragments.
+It keeps vanilla stats (2 armor, 275 durability, Water Breathing). The vanilla repair tag still names turtle scutes, which are now divine fragments.
 
 == Trivia ==
 * The scute exchange function runs <code>say running</code>, so it posts "running" in chat each time.

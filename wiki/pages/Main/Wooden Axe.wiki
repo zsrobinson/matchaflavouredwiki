@@ -15,7 +15,7 @@ A '''wooden axe''' is an [[Tools#Axe|axe]] of the [[Wooden equipment|wooden]] ti
 == Usage ==
 
 === Woodcutting ===
-It keeps the vanilla wooden axe's mining speed of {{Value|Wooden Axe|miningspeed}}, but its durability is raised from 59 to {{Value|Wooden Axe|durability}}. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+It keeps the vanilla wooden axe's mining speed of 2, but its durability is raised from 59 to {{Value|Wooden Axe|durability}}. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
 It deals {{Value|Wooden Axe|damage}} damage at an attack speed of {{Value|Wooden Axe|attackspeed}}.
