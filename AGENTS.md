@@ -150,6 +150,13 @@ the swap mid-way.
   versions. If it finds one, it deploys that version (`wrangler versions deploy`, about a minute). This
   happens when `main` hasn't moved since the PR's last check. Otherwise it does the full build and runs
   `wrangler deploy`. Manual runs always rebuild. A newer push cancels a running deploy.
+- **Caching (cache busting):** pages and every file they load are always checked with the server, except
+  URLs that carry `?v=<content hash>`. The export adds those last (`tools/fingerprint.py`) to every
+  reference in pages and stylesheets to `/_rl/`, `/_static/`, `/assets/`, `/images/` and `/pagefind/`.
+  The Worker lets browsers keep a `?v=` URL for a year, so a changed file is a new URL. `_headers`
+  (`seo.py`) makes everything else revalidate. Never give an unversioned file a long `max-age`: the
+  stylesheet URLs never change, and phones once kept the pre-mobile `Vector.css` for days while running
+  the new `site.js`, which showed the mobile header unstyled over the desktop tabs.
 - **Exports are reproducible.** An unchanged page exports byte-for-byte the same, so a deploy uploads
   only the files that changed. The export drops the parser cache's timestamp comment, and
   `$wgEnableParserLimitReporting` is off. Don't add anything that varies from build to build to the pages.
