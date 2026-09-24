@@ -16,7 +16,7 @@ All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/dat
 * The Apprentice and Journeyman trades sell [[livestock]]: fertilized eggs, calves and piglets, which are spawn eggs for baby animals. Each breed is only offered when the farmer is in a biome of the matching climate, so a farmer offers the chicken, cow and pig variants of its own region.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/2/blue_egg.json}}</ref> The biome lists are on the [[Livestock]] page.
 * The farmer has no Expert or Master trades. Those levels use a placeholder trade that the game discards.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/4/filler.json}}</ref>
 
-Like every villager, a farmer that has been traded with also buys its [[favorite food]] once.
+Like every villager, a farmer that has been traded with will also buy its [[favorite food]] once, an upcoming trade that is not in [[Matcha Flavoured 1.12.2|1.12.2-beta]].
 
 == History ==
 {{History|

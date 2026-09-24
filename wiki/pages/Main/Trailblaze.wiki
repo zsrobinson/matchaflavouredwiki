@@ -9,7 +9,7 @@
 '''Trailblaze''' is an [[enchantment]] added by [[Matcha Flavoured]] for boots that makes the wearer faster on paths, gravel and mud bricks. Its internal name is ''Traversal''.
 
 == Obtaining ==
-* [[Prayer of St. Clement]], a crafted [[blessing]] (Trailblaze III).
+* [[Prayer of St. Clement]], a crafted [[blessing]] (Trailblaze III). In 1.12.2 it stores the old <code>main:traversal</code>, which turns into Trailblaze one level per tick while the boots are worn. The levels are added to any Trailblaze the boots already have, so the prayer raises sturdy leather boots to Trailblaze IV, and boots with Trailblaze III from the Prayer of Exodus to Trailblaze VI.<ref>{{Source|MF_datapack/data/main/item_modifier/update_traversal.json}}</ref>
 * The Prayer of Exodus [[Ofuda]], traded from the [[Mouthpiece]] for [[The Tanakh]] (Trailblaze III, with Loyalty III and Power II).
 * [[Sturdy Leather Boots]] are crafted with Trailblaze I, and those found in chests have it too.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sturdy_leather_boots.json}}</ref>
 
@@ -37,7 +37,8 @@ The developer's notes record that the speed boost from mud brick slabs applies a
 {{History line|0.5-alpha|The Prayer of St. Clement now works.}}
 {{History line|1.10|Renamed from Traversal to Trailblaze in the language files; the internal id is unchanged.<ref>{{Cite changelog|1.10|quote=Rennamed Traversal to Trailblaze (Only in Lang)}}</ref>}}
 {{History line|1.12.1-alpha|Now works on mud brick slabs and stairs and dirt slabs. Speed raised from 0.0105 to 0.0155 per level.<ref>{{Cite changelog|1.12.1-alpha|quote=Buffed Trailblaze speed (0.0105 / lvl -> 0.0155 / lvl)}}</ref>}}
-{{History line|1.12.2|Moved from the <code>main</code> to the <code>matcha</code> namespace.}}
+{{History line|1.12.2|Moved from the <code>main</code> to the <code>matcha</code> namespace, although the Prayer of St. Clement still gave the old enchantment.}}
+{{History line|Upcoming|2=The Prayer of St. Clement stores Trailblaze directly, so it no longer raises boots past level III.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/traversal.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == See also ==

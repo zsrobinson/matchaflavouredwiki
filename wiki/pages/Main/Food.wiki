@@ -57,8 +57,9 @@ Vanilla recipes for mushroom stew, rabbit stew, beetroot soup, suspicious stew, 
 
 == Usage ==
 === Favorite food ===
+{{Upcoming|type=section}}
 {{Main|Favorite food}}
-Every employed [[villager]] that has traded at least once is given one extra trade: it buys 1 of a random food, chosen from 42 of the pack's dishes, for 1 [[obol]], once.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update.mcfunction}}</ref> The list covers most meals and all five oven meals.
+In an upcoming update, not in [[Matcha Flavoured 1.12.2|1.12.2-beta]], every employed [[villager]] that has traded at least once is given one extra trade: it buys 1 of a random food, chosen from 42 of the pack's dishes, for 1 [[obol]], once.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> The list covers most meals and all five oven meals.
 
 === Glass bottles and bowls ===
 Foods eaten from a bottle (jams, pickles, cans, [[mead]], [[Melon Sorbet|melon sorbet]], [[Honey Ginger Tea|honey ginger tea]], [[Milk Bottle|milk bottle]]s) give back a [[Glass Bottle|glass bottle]]. [[Kontomire-Dandelion Stew]], [[bokguk]], [[Apple Cinnamon Oatmeal|apple cinnamon oatmeal]], [[Pad Thai]], [[stroganoff]], [[gnocchi]], [[Ice Cream|ice cream]] and the oven meals give back a [[bowl]]. Crafting most recipes that use a [[Milk Bottle|milk bottle]], [[oil]] or a [[water bottle]] also returns the glass bottles: a hidden advancement gives the player 1 glass bottle per craft, or 2 for the green curry, paneer and pumpkin curry [[stock]]s. Three of the four [[stroganoff]] recipes aren't in the list, and the [[cheese]] recipe is listed under an outdated ID (<code>main:food/crafting/cheese</code>) that no longer matches it, so their milk bottle's glass bottle is lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>

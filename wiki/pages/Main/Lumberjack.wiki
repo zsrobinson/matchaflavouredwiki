@@ -16,7 +16,7 @@ All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/dat
 * At Expert level the lumberjack sells a [[Hatchet]] enchanted with [[Bloodrage]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/4/hatchet.json}}</ref>
 * The lumberjack has no Master trades.<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/5/filler.json}}</ref>
 
-Like every villager, a lumberjack that has been traded with also buys its [[favorite food]] once.
+Like every villager, a lumberjack that has been traded with will also buy its [[favorite food]] once, an upcoming trade that is not in [[Matcha Flavoured 1.12.2|1.12.2-beta]].
 
 == Trivia ==
 * Internally the profession is still <code>minecraft:leatherworker</code>; only its displayed name changes.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>

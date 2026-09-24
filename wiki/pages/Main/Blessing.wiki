@@ -69,6 +69,12 @@ The Prayer of Daedalus and the Prayer of Lu Ban need a [[Divine Favor]], and the
 == Usage ==
 A blessing is combined with a piece of equipment in an [[anvil]], like any {{MCW|Enchanted Book|enchanted book}}. Blessings do not stack. Because the pack sets every anvil cost multiplier to 1 and gives the player experience while they use an anvil, applying a blessing is cheap; see [[Enchanting#Applying enchantments]].
 
+=== Old enchantment ids ===
+In 1.12.2, five blessings still store the pack's own enchantments under their ids from before the move to the <code>matcha</code> namespace: the [[Prayer of Aeolus]] (<code>main:anemos</code>), the [[Prayer of Demeter]] (<code>main:freezing_protection</code>), the [[Prayer of St. Clement]] (<code>main:traversal</code>), the [[Prayer of Will]] (<code>main:reach</code>) and the [[Elegy of Hyacinthus]] (<code>main:zephyr</code>).<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/reach.json}}</ref> These old enchantments are kept only to update items from earlier versions. Their tooltip lines read "ERROR: Please wear me to update" ("ERROR: Please hold me to update" for Anemos), and they do nothing by themselves.<ref>{{Source|MF_datapack/data/main/README.txt}}</ref> Each tick an item carrying one is worn (or, for Anemos, held in the main hand), one level of the old enchantment is replaced with one level of the real one, so the blessings still work once the item is equipped.<ref>{{Source|MF_datapack/data/main/item_modifier/update_traversal.json}}</ref> This bridge has side effects:
+* The converted levels are added to the real enchantment the item already has, so the result can go past the normal maximum: sturdy leather boots (Trailblaze I) with the Prayer of St. Clement end up with Trailblaze IV.
+* The old Zephyr has a maximum level of I, so two Elegies of Hyacinthus cannot be combined into a Zephyr II book.
+* The old Anemos cannot be applied to copper swords.
+
 Blessings are not the Hell-Bound Book itself: the crafted book stores only the blessing's enchantments, not the Curse of Binding that a blank Hell-Bound Book carries.
 
 == Appearance ==
@@ -94,6 +100,8 @@ The three elegies are named after tragic figures of Greek myth (Arachne, Hyacint
 {{History line|0.6-alpha|The Prayer of Demeter counts toward the blessing crafting advancement.}}
 {{History line|1.10|Buffed the Prayer of The Light recipe, nerfed the Prayer of Man recipe and changed the Prayer of Aeolus recipe. The blessing then called "Prayer of God-King" is renamed "Prayer of The Light" in the language file; its internal key stays <code>god_king</code>.<ref>{{Cite changelog|1.10|quote=Prayer of God-King, is still labeled as such in the Lang (to preserve update consistency) however the translation was changed to "Prayer of The Light"}}</ref> Added the "Demonic Emissary" advancement.}}
 {{History line|1.12.1-alpha|Added the Prayer of Midas. Fixed blessing recipe unlocks.}}
+{{History line|1.12.2|The pack's enchantments moved to the <code>matcha</code> namespace, but five blessings still gave the old <code>main:</code> enchantments, which are converted when the item is equipped.}}
+{{History line|Upcoming|2=The Prayers of Aeolus, Demeter, St. Clement and Will and the Elegy of Hyacinthus store the <code>matcha:</code> enchantments directly.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/zephyr.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == See also ==

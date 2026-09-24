@@ -125,10 +125,13 @@ sortable wikitables, and `{{Main|...}}` hatnotes into each detail page.
 
 ## Versions
 
-The documented version is the latest release, currently `{{Current version}}`. Wherever the
-repository's `main` branch already differs from that release (bug fixes after
-1.12.2-beta), describe `main`, since that is what the next download will contain, and
-note the difference in History. Version pages are titled `Matcha Flavoured <version>`
+The documented version is the latest release, currently `{{Current version}}`: the download
+players have. The data and every `{{Source|...}}` link come from the commit that release was made
+from (`tools/source.lock`). Where the repository's `main` branch already differs (bug fixes and
+features after the release), describe the release in the body and the difference as upcoming:
+`{{Upcoming|type=section}}` (or `type=page`) above content that exists only on `main`, and a
+`{{History line|Upcoming|2=...}}` row. Cite that code at a commit on `main`:
+`{{Source|path|at=<commit>}}`. Version pages are titled `Matcha Flavoured <version>`
 (e.g. "Matcha Flavoured 1.10") and history lines link to them.
 
 ## Files

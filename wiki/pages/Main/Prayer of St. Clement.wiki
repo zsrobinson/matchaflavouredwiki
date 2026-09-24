@@ -1,5 +1,5 @@
 {{Infobox auto|title=Prayer of St. Clement|type=[[Blessing]]}}
-The '''Prayer of St. Clement''' is a [[blessing]], a crafted enchanted book that stores [[Trailblaze]] III. It is crafted from a pair of leather boots, two wool of any color and two [[Obol]]s.
+The '''Prayer of St. Clement''' is a [[blessing]], a crafted enchanted book that gives [[Trailblaze]] III. It is crafted from a pair of leather boots, two wool of any color and two [[Obol]]s.
 
 == Obtaining ==
 === Crafting ===
@@ -9,9 +9,13 @@ The book in the center must be a [[Hell-Bound Book]].<ref>{{Source|MF_datapack/d
 == Usage ==
 The Prayer of St. Clement is applied to equipment in an [[anvil]], like an {{MCW|Enchanted Book|enchanted book}}. Trailblaze applies to boots and speeds the wearer up on paths, gravel, coarse dirt and mud bricks. Level III is the maximum. The Prayer of Exodus [[Ofuda]] also gives Trailblaze III.
 
+In 1.12.2 the book does not store Trailblaze itself but <code>main:traversal</code>, the enchantment's id before the pack moved to the <code>matcha</code> namespace. Its tooltip line reads "ERROR: Please wear me to update III".<ref>{{Source|MF_datapack/data/main/enchantment/traversal.json}}</ref> The old enchantment applies to boots like Trailblaze and does nothing by itself, but each tick the boots are worn, one level of it is replaced with one level of Trailblaze, so after three ticks the boots have Trailblaze III.<ref>{{Source|MF_datapack/data/main/item_modifier/update_traversal.json}}</ref> The converted levels are added to any Trailblaze the boots already have instead of replacing it, so the prayer raises [[Sturdy Leather Boots|sturdy leather boots]] (crafted with Trailblaze I) to Trailblaze IV, and boots that already have Trailblaze III from the Prayer of Exodus to Trailblaze VI. The speed bonus keeps growing with the level.
+
 == History ==
 {{History|
 {{History line|0.5-alpha|Texture added.<ref>{{Cite changelog|0.5-alpha|quote=All blessing textures}}</ref> Now works.<ref>{{Cite changelog|0.5-alpha|quote=St. Clement's Prayer now works}}</ref>}}
+{{History line|1.12.2|Trailblaze moved to the <code>matcha</code> namespace, but the prayer still gave the old <code>main:traversal</code>, which turns into Trailblaze when the boots are worn.}}
+{{History line|Upcoming|2=Stores <code>matcha:traversal</code> directly, so applying it to boots that already have Trailblaze no longer goes past level III.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/traversal.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == Trivia ==

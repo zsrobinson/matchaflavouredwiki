@@ -15,7 +15,7 @@ All trades can be used 999 times before restocking, and every level offers all o
 * From Novice to Expert the engineer sells stacks of 32 or 64 redstone components for 1 obol each, using the pack's names for the redstone blocks ([[Electric Comparator]], [[Electric Repeater]], [[Electric Block]], [[Electric Lamp]], [[Copper Eye]]).
 * At Master level it sells the [[Bundles#Geothermal Bundle|Geothermal Bundle]], a bundle holding 4 [[Flowstone|flowstone]], 4 [[Speleothem|speleothems]], 4 lava buckets, 4 cauldrons and 8 glass.<ref>{{Source|MF_datapack/data/matcha/villager_trade/armorer/5/lava_kit.json}}</ref>
 
-Like every villager, an engineer that has been traded with also buys its [[favorite food]] once.
+Like every villager, an engineer that has been traded with will also buy its [[favorite food]] once, an upcoming trade that is not in [[Matcha Flavoured 1.12.2|1.12.2-beta]].
 
 == Trivia ==
 * The Geothermal Bundle's internal name is <code>lava_kit</code>. Its contents are the blocks needed to fill cauldrons with lava from dripping speleothems, as in a vanilla {{MCW|Pointed Dripstone|pointed dripstone}} lava farm.

@@ -9,7 +9,9 @@
 '''Zephyr''' is an [[enchantment]] added by [[Matcha Flavoured]] for boots that turns sneaking into a high jump. Higher levels add a slow descent and a charged updraft.
 
 == Obtaining ==
-The [[Elegy of Hyacinthus]] stores Zephyr I. No recipe, trade or loot table gives levels II or III, so they can only be reached by combining two items with the same level in an [[anvil]].
+The [[Elegy of Hyacinthus]] gives Zephyr I. No recipe, trade or loot table gives levels II or III.
+
+In 1.12.2 the elegy stores the old <code>main:zephyr</code>, which becomes Zephyr I the first tick the boots are worn.<ref>{{Source|MF_datapack/data/main/item_modifier/update_zephyr.json}}</ref> The old enchantment's maximum level is I, so two elegies cannot be combined into a level II book. Higher levels come from applying another elegy to boots that already have Zephyr, since the conversion adds its level to the existing one, or from combining two boots with the same level in an [[anvil]]. Applying an elegy to boots with Zephyr III gives Zephyr IV, which works like level III.<ref>{{Source|MF_datapack/data/matcha/enchantment/zephyr.json}}</ref>
 
 == Behavior ==
 All effects are checked every tick while the boots are worn.<ref>{{Source|MF_datapack/data/matcha/enchantment/zephyr.json}}</ref>
@@ -32,7 +34,8 @@ Zephyr's anvil cost multiplier is 0.
 {{History|
 {{History line|0.3-alpha|Re-added the "ping" sound.}}
 {{History line|1.12.1-alpha|No longer spams its sound while under Slow Falling. The wind burst is quieter.}}
-{{History line|1.12.2|Reworked into three levels.<ref>{{Cite changelog|1.12.2|quote=Zephyr enchantment reworked so that its 3 levels}}</ref> Moved from the <code>main</code> to the <code>matcha</code> namespace.}}
+{{History line|1.12.2|Reworked into three levels.<ref>{{Cite changelog|1.12.2|quote=Zephyr enchantment reworked so that its 3 levels}}</ref> Moved from the <code>main</code> to the <code>matcha</code> namespace, although the Elegy of Hyacinthus still gave the old enchantment.}}
+{{History line|Upcoming|2=The Elegy of Hyacinthus stores Zephyr directly, so two elegies can be combined into a Zephyr II book.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/zephyr.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == Trivia ==

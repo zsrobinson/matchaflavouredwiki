@@ -120,17 +120,17 @@ To make the pack easier for other developers to work with, almost every item, mo
 * The <code>main</code> namespace, apart from what enchantment updates still need.
 
 == Post-release fixes ==
-The repository's <code>main</code> branch received the following fixes and one addition after the beta was published. They are recorded in the repository's commit history rather than in the release notes. They are not in the Modrinth download, but this wiki describes them as current.<ref>[https://github.com/kleiwright/matcha-flavoured/commits/{{Source/commit}} Commit history of the pack repository]</ref>
+The repository's <code>main</code> branch received the following fixes and additions after the beta was published. They are recorded in the repository's commit history rather than in the release notes. They are not in the Modrinth download, so this wiki describes them as upcoming.<ref>[https://github.com/kleiwright/matcha-flavoured/compare/{{Source/commit}}...5bf7c3e22adaabf2416c83b709842cb9a053cb95 Commits on <code>main</code> after 1.12.2-beta]</ref>
 * Every employed villager gains a one-time [[favorite food]] trade after its first trade (TankyAibem).
 * The update trigger no longer tries to identify items by ID and exits with a message when an item has no translation key. It supports villager trades, applied [[Trims|armor trims]] and lodestone compass targets (FloofShade).
 * Steel armor made by smithing or found in loot showed the wrong worn model; its equipment asset now uses the <code>matcha</code> namespace.
 * The update function revokes a narrower set of tutorial advancements, so fewer rewards are re-earned.
-* The Wither's heart effect was shared with every player, blessings used the old namespace for custom enchantments, and the igloo's pickled crimson fungus used the old namespace (Pepurion).
+* The Wither's heart effect was shared with every player, blessings used the old namespace for custom enchantments, and the [[Igloo|igloo]]'s pickled crimson fungus used the old namespace (Pepurion).
 * Fixed item lore on some steel and adamant items and the shepherd's shears trade (EastMonster).
 * Fortune and electrum worked incorrectly on normal gold ore, and the pufferfish [[Angler's Almanac]] entry did not unlock (Pepurion).
 * Crafts not returning empty bottles, the chocolate texture, spectators getting the freezing water effect, the fish bones loot in sulfur caves, raw Estus processing, the water bottle fix, and the crystal heart advancement (Pepurion).
-* Bells removed from the items piglins love (tadorituki).
-* New textures: red sandstone bottom, granite and polished granite bricks, new double-slab textures for large bricks, and beds with spruce frames (IrrelevantGaymer).
+* Bells removed from the items [[Piglin#Loved items|piglins love]] (tadorituki).
+* New textures: red sandstone bottom, granite and polished granite bricks, [[Large bricks|large bricks]] for five more double slabs (andesite, polished andesite, diorite, cut sandstone and cut red sandstone), and beds with spruce frames (IrrelevantGaymer).
 
 == Trivia ==
 * The notes explain that 26.3 support was delayed because that ''Minecraft'' version changes datapack syntax, and that fpekal was working on the port.
