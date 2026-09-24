@@ -189,6 +189,11 @@ the swap mid-way.
   with their colours, glyph widths). `MediaWiki:Gadget-mfwTooltip.js` shows it on hover, in the live
   wiki and in the static export. `{{Tooltip|item}}` draws it in place (the Tooltip page); infoboxes don't, their slot shows it on hover. Glyphs are CSS
   masks over `glyphs.png` filled with the text colour, the way the game tints the font's white glyphs.
+- **Cycling slots share one clock** (`Gadget-animatedIcons.js`): each shows frame `tick mod n`, so slots with
+  the same frames always agree (a recipe screen's slots; a family page's infobox and its screens), and hovering
+  a cycling slot stops the clock. When each slot stepped on its own, a hovered one fell behind for good (Oak
+  Planks in the stonecutter, Dark Oak Fence Gate out). A slot that holds several items per variant ("Any Oak
+  Logs") is one frame of `{...}` subframes (`merged_ui`), or it has more frames than the others.
 - **Palette:** slots and panels use the pack's brown inventory colours, and `{{Hp}}` uses its HUD hearts.
 
 **Static export and deploy**
@@ -202,7 +207,8 @@ the swap mid-way.
     (`Category:`, `Template:`) once looped.
 - **What the export keeps and strips:** it removes MediaWiki's scripts except the theme boot, and keeps the `ca-mfw-*` GitHub tabs.
   It also replaces legacy Vector's fixed `width=1120` viewport with `device-width`, so phones get the vendored narrow-screen layout.
-  Its `site.js` is `Gadget-mfwShell.js`, `Gadget-mfwTooltip.js` and `Gadget-mfwPreview.js` (plain DOM, no jQuery) plus `SITE_JS`.
+  Its `site.js` is `Gadget-mfwShell.js`, `Gadget-mfwTooltip.js`, `Gadget-mfwPreview.js` and
+  `Gadget-animatedIcons.js` (plain DOM, no jQuery) plus `SITE_JS`.
 - **Search** matches titles first, then Pagefind's full text. Pagefind alone ranked "fishing" below Tropical
   Fish (it stems "fishing" to "fish" and favours short pages), had no typos or redirects, and let category
   pages crowd results. So:
