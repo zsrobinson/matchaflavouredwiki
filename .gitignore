@@ -3,7 +3,7 @@
 /site/data/
 /site/images/
 # Upstream sources, fetched by tools/fetch_sources.sh
-/source/
+/source
 .DS_Store
 __pycache__/
 /dist/
