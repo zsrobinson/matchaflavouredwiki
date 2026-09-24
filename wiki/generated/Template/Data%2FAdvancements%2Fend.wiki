@@ -1,13 +1,13 @@
 <includeonly>{| class="wikitable sortable"
-! Icon !! Advancement !! Description !! Parent !! Frame !! Hidden !! Reward
+! Icon !! Advancement !! In-game description !! Parent !! Actual requirements !! Type !! Reward
 |-
-|  || '''To Dreams''' ||  ||  || Task ||  || 
+| {{Slot|End Portal Frame|link=none}} || <span id="To Dreams"></span>'''To Dreams''' || — || — || {{{matcha:end/root|}}} || Task (root) || —{{{matcha:end/root reward|}}}
 |-
-| {{Slot|Divine Favor|link=none}} || '''Iconoclast''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Defile the Dead God's Dream || To Dreams || Challenge ||  || <code>matcha:advancement/obol_3</code>; runs <code>matcha:mechanics/first_dragon_killed_reward</code>
+| {{Slot|Divine Favor|link=none}} || <span id="Iconoclast"></span>'''Iconoclast''' || {{G|E00F}}{{G|E00F}}{{G|E00F}} Defile the Dead God's Dream || To Dreams || {{{matcha:end/kill_dragon|}}} || Challenge || 3 {{ItemLink|Obol}}; a {{ItemLink|Divine Favor}} and a safe [[surface]]{{{matcha:end/kill_dragon reward|}}}
 |-
-|  || '''Wax Wings''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Seize the work of Daedalus || Iconoclast || Goal ||  || <code>matcha:advancement/obol_2</code>
+| {{Slot|Elytra|link=none}} || <span id="Wax Wings"></span>'''Wax Wings''' || {{G|E00F}}{{G|E00F}} Seize the work of Daedalus || Iconoclast || {{{matcha:end/elytra|}}} || Goal || 2 {{ItemLink|Obol}}{{{matcha:end/elytra reward|}}}
 |-
-| {{Slot|Hepatizon Elytra|link=none}} || '''Icarus' Folly''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Smith Hepatizon Elytra || Wax Wings || Goal ||  || <code>matcha:advancement/obol_4</code>
+| {{Slot|Hepatizon Elytra|link=none}} || <span id="Icarus&#x27; Folly"></span>'''Icarus' Folly''' || {{G|E00F}}{{G|E00F}}{{G|E00F}}{{G|E00F}} Smith Hepatizon Elytra || Wax Wings || {{{matcha:end/smith_bronze_elytra|}}} || Goal || 4 {{ItemLink|Obol}}{{{matcha:end/smith_bronze_elytra reward|}}}
 |-
-| {{Slot|Shakudo Elytra|link=none}} || '''Wings of Eros''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Smith Shakudo Elytra || Wax Wings || Goal ||  || <code>matcha:advancement/obol_4</code>
-|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>
+| {{Slot|Shakudo Elytra|link=none}} || <span id="Wings of Eros"></span>'''Wings of Eros''' || {{G|E00F}}{{G|E00F}}{{G|E00F}}{{G|E00F}} Smith Shakudo Elytra || Wax Wings || {{{matcha:end/smith_shakudo_elytra|}}} || Goal || 4 {{ItemLink|Obol}}{{{matcha:end/smith_shakudo_elytra reward|}}}
+|}</includeonly><noinclude>Generated from the advancement files. The actual requirements are notes passed by advancement ID, and "<ID> reward" is appended to the reward: <code><nowiki>{{Data/Advancements/end|matcha:end/root=...}}</nowiki></code>. [[Category:Generated data]]</noinclude>
