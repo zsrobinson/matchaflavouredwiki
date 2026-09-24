@@ -2,6 +2,7 @@
 // layers drawn the way the game's renderers draw them.
 import * as THREE from 'three'
 import MODELS from './entity_models.json'
+import { isoCamera } from './camera.js'
 import { CAMERAS, EQUIPMENT_SLOTS, POSES, REST } from './models.js'
 
 const nsid = s => (s.includes(':') ? s : 'minecraft:' + s)
@@ -182,9 +183,9 @@ export async function renderEntity(job, canvas) {
   sun.position.set(-0.6, 1, 0.8)
   scene.add(sun)
 
-  // camera from the front-right, then fit an orthographic frustum to what's in the scene
-  const cam = { yaw: 35, pitch: 10, ...CAMERAS[key], ...CAMERAS[job.pose], ...job.camera }
-  const yaw = cam.yaw * Math.PI / 180, pitch = cam.pitch * Math.PI / 180
+  // an isometric camera from the front-right (the mob faces left, as on minecraft.wiki), then fit an
+  // orthographic frustum to what's in the scene
+  const { yaw, pitch } = isoCamera({ ...CAMERAS[key], ...CAMERAS[job.pose], ...job.camera })
   scene.updateMatrixWorld(true)
   const box = new THREE.Box3().setFromObject(scene)
   const centre = box.getCenter(new THREE.Vector3())

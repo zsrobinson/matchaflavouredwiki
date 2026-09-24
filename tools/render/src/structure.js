@@ -3,6 +3,7 @@
 // blocks become their final_state, structure voids vanish, and the template pool's processors run.
 import { BlockColors, BlockDefinition, BlockModel, Identifier, NbtFile, Structure, StructureRenderer } from 'deepslate'
 import { mat4, vec3 } from 'gl-matrix'
+import { isoCamera } from './camera.js'
 import { assemble, rotPos, rotProps } from './jigsaw.js'
 
 const getJson = async u => { const r = await fetch(u); if (!r.ok) throw new Error('missing ' + u); return r.json() }
@@ -240,8 +241,7 @@ export async function renderStructure(job, canvas) {
     if (!defs[b.name]) unknown.add(b.name)
     s.addBlock(b.pos, b.name, b.props, b.nbt)
   }
-  const cam = job.camera ?? {}
-  const yaw = (cam.yaw ?? 45) * Math.PI / 180, pitch = (cam.pitch ?? 30) * Math.PI / 180
+  const { yaw, pitch } = isoCamera(job.camera)
   const view = mat4.create()
   mat4.translate(view, view, [0, 0, -1000])
   mat4.rotateX(view, view, pitch)
