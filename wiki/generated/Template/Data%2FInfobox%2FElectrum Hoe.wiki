@@ -7,14 +7,14 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|{{G|Fortune}} [[Fortune|Fortune bonus]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Fortune|Fortune bonus III]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=3000
 |damage={{Hp|1}}
 |attackspeed=4
 |miningspeed=12
-|repair=[[Block of Diamond]]
+|repair={{MCW|Block of Diamond}}
 |id=<code>matcha:electrum_hoe</code>
 |base=<code>minecraft:netherite_hoe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_hoe.json|electrum_hoe.json}}

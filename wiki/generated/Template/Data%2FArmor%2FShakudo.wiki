@@ -1,0 +1,13 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Shakudo Helmet}}{{{Shakudo Helmet|}}} || 500 || 3 || — || — || — || {{G|Cleanse}} [[Cleanse|Cleanses: Blindness, Darkness]]<br />{{G|Magic protection}} [[Magic protection|8 Magic protection]]<br />{{G|Half heart}}{{G|Cooldown}} [[Set bonus#Shakudo regeneration|(00:30) Shakudo regeneration]]
+|-
+| {{ItemLink|Shakudo Chestplate}}{{{Shakudo Chestplate|}}} || 500 || 8 || — || — || — || {{G|Cleanse}} [[Cleanse|Cleanses: Poison]]<br />{{G|Magic protection}} [[Magic protection|8 Magic protection]]<br />{{G|Half heart}}{{G|Cooldown}} [[Set bonus#Shakudo regeneration|(00:30) Shakudo regeneration]]
+|-
+| {{ItemLink|Shakudo Leggings}}{{{Shakudo Leggings|}}} || 500 || 6 || — || — || — || {{G|Cleanse}} [[Cleanse|Cleanses: Slowness]]<br />{{G|Magic protection}} [[Magic protection|8 Magic protection]]<br />{{G|Half heart}}{{G|Cooldown}} [[Set bonus#Shakudo regeneration|(00:30) Shakudo regeneration]]
+|-
+| {{ItemLink|Shakudo Boots}}{{{Shakudo Boots|}}} || 500 || 3 || — || — || — || {{G|Cleanse}} [[Cleanse|Cleanses: Levitation]]<br />{{G|Magic protection}} [[Magic protection|8 Magic protection]]<br />{{G|Half heart}}{{G|Cooldown}} [[Set bonus#Shakudo regeneration|(00:30) Shakudo regeneration]]
+|- class="sortbottom"
+! Full set !! !! 20 !! — !! — !! colspan="2" |
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

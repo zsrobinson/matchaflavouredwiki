@@ -19,6 +19,8 @@ It deals {{Hp|6}} damage at an attack speed of 1.6 and has 1000 durability, as s
 === Intrinsics ===
 The life steal intrinsic gives the wielder Regeneration III for 1 second after each hit, except against armor stands, boats, minecarts and sulfur cubes.<ref>{{Source|MF_datapack/data/matcha/enchantment/shakudo_weapon.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
+In 1.12.2 the language file has no name for the life steal intrinsic, so the tooltip shows its translation key, "enchantment.kleispack.shakudo_weapon", in pink instead of the {{G|Health}}{{G|Attack damage}} glyphs. The glyphs are in the file under an unused key, <code>enchantment.kleispack.sanguine</code>.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> This does not change how the intrinsic works.
+
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
 
@@ -36,6 +38,7 @@ An apprentice [[weaponsmith]] buys it for one [[shakudo alloy]], which lets the 
 {{History line|1.10|Renamed from "Palatinate" in the language file only, so existing items keep working. Shakudo alloy became more expensive (2 blocks of gold and 4 blocks of copper instead of 3 gold and 6 copper ingots). A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
 {{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. Life steal no longer triggers on boats, minecarts and similar entities. Shakudo intrinsics are now exclusive with the electrum and adamant intrinsics.}}
 {{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
+{{History line|Upcoming|2=The life steal intrinsic's tooltip line shows its glyphs instead of its translation key.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == References ==

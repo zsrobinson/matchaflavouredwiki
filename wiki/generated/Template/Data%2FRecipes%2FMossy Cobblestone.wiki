@@ -2,7 +2,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Mossy Cobblestone]]
-| 2 × [[Mossy Cobblestone Slab]]
+| 2 × {{MCW|Mossy Cobblestone Slab}}
 | {{Crafting|A1=Mossy Cobblestone Slab|B1=Mossy Cobblestone Slab|Output=Mossy Cobblestone|shapeless=1}}
 |-
 | [[Mossy Cobblestone]] <small>(vanilla recipe)</small>
@@ -10,7 +10,7 @@
 | {{Crafting|A1=Cobblestone|B1=Moss Block|Output=Mossy Cobblestone|shapeless=1}}
 |-
 | [[Mossy Cobblestone]] <small>(vanilla recipe)</small>
-| [[Cobblestone]] +<br />[[Vines]]
+| [[Cobblestone]] +<br />{{MCW|Vines}}
 | {{Crafting|A1=Cobblestone|B1=Vines|Output=Mossy Cobblestone|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

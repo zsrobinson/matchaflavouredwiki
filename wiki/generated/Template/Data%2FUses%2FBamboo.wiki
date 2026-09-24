@@ -2,14 +2,14 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Pumpkin Curry Stock]]
-| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Baked Pumpkin]] +<br />[[Oil]] +<br />[[Sunflower]] +<br />[[Milk Bottle]] +<br />[[Carrot]] +<br />[[Bamboo]] +<br />[[Bowl]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Baked Pumpkin]] +<br />[[Oil]] +<br />{{MCW|Sunflower}} +<br />[[Milk Bottle]] +<br />[[Carrot]] +<br />[[Bamboo]] +<br />[[Bowl]]
 | {{Crafting|A1=Estus Ash|B1=Sugar|C1=Baked Pumpkin|A2=Oil|B2=Sunflower|C2=Milk Bottle|A3=Carrot|B3=Bamboo|C3=Bowl|Output=Pumpkin Curry Stock|shapeless=1}}
 |-
-| [[Block of Bamboo]] <small>(vanilla recipe)</small>
+| {{MCW|Block of Bamboo}} <small>(vanilla recipe)</small>
 | 9 × [[Bamboo]]
 | {{Crafting|A1=Bamboo|B1=Bamboo|C1=Bamboo|A2=Bamboo|B2=Bamboo|C2=Bamboo|A3=Bamboo|B3=Bamboo|C3=Bamboo|Output=Block of Bamboo|shapeless=1}}
 |-
-| [[Scaffolding]] <small>(vanilla recipe)</small>
+| {{MCW|Scaffolding}} <small>(vanilla recipe)</small>
 | 6 × [[Bamboo]] +<br />[[String]]
 | {{Crafting|A1=Bamboo|A2=Bamboo|A3=Bamboo|B1=String|C1=Bamboo|C2=Bamboo|C3=Bamboo|Output=Scaffolding,6}}
 |-

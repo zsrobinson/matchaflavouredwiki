@@ -3,11 +3,11 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Waxed Exposed Cut Copper]]
-| 2 × [[Waxed Exposed Cut Copper Slab]]
+| 2 × {{MCW|Waxed Exposed Cut Copper Slab}}
 | {{Crafting|A1=Waxed Exposed Cut Copper Slab|B1=Waxed Exposed Cut Copper Slab|Output=Waxed Exposed Cut Copper|shapeless=1}}
 |-
 | [[Waxed Exposed Cut Copper]] <small>(vanilla recipe)</small>
-| 4 × [[Waxed Exposed Copper]]
+| 4 × {{MCW|Waxed Exposed Copper}}
 | {{Crafting|A1=Waxed Exposed Copper|A2=Waxed Exposed Copper|B1=Waxed Exposed Copper|B2=Waxed Exposed Copper|Output=Waxed Exposed Cut Copper,4}}
 |-
 | [[Waxed Exposed Cut Copper]] <small>(vanilla recipe)</small>
@@ -19,7 +19,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Waxed Exposed Cut Copper]] <small>(vanilla recipe)</small>
-| [[Waxed Exposed Copper]]
+| {{MCW|Waxed Exposed Copper}}
 | {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Cut Copper,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

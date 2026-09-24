@@ -11,6 +11,7 @@ A '''sturdy leather helmet''' is the [[Sturdy leather armor|sturdy leather]] [[A
 
 === Chest loot ===
 {{Sources}}
+The helmet found in [[village]] tannery chests is an older version of the item. In 1.12.2 it is invisible when worn: its equipment asset is <code>minecraft:sturdy_leather</code>, but the resource pack defines the texture as <code>matcha:sturdy_leather</code>. It also gives 1 block of safe fall distance instead of 2, has one extra random enchantment, and is repaired with sturdy leather instead of tattered leather.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/sturdy_leather.json}}</ref> See [[Sturdy leather armor#Village tannery chests]].
 
 == Usage ==
 
@@ -25,6 +26,9 @@ It can be repaired in an [[anvil]] with [[tattered leather]]. The pack resets re
 {{History line|0.4-alpha|Added.}}
 {{History line|1.12.2|Safe fall distance raised from 1 to 2 per piece, and the armor can be repaired with tattered leather.}}
 }}
+
+== References ==
+{{reflist}}
 
 {{Navbox equipment}}
 [[Category:Armor]]

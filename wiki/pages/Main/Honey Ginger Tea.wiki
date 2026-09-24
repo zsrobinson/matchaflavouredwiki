@@ -14,7 +14,8 @@ A honey bottle heats into honey ginger tea in an [[oven]] or on [[kindling]] in 
 Drinking honey ginger tea takes 0.8 seconds, heals {{Hp|2}}, gives Speed I (+20% speed) for 0:30 and removes the same maleffects as [[bread]]. It gives the glass bottle back.
 
 === Trading ===
-It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_37.mcfunction}}</ref>
+{{Upcoming|type=section}}
+It is one of the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_37.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 
 == Advancements ==
 * ''Powerful Flavors'': cook an intrinsic ingredient. Obtaining any of the 11 simple preparations of the ordinary intrinsic ingredients completes it.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/cook_food.json}}</ref>
@@ -22,6 +23,7 @@ It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{So
 == History ==
 {{History|
 {{History line|1.10|New cleanse tooltip icon.}}
+{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == See also ==

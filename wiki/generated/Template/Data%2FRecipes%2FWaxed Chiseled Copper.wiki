@@ -2,19 +2,19 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Waxed Chiseled Copper]] <small>(vanilla recipe)</small>
-| [[Chiseled Copper]] +<br />[[Wax]]
+| {{MCW|Waxed Chiseled Copper}} <small>(vanilla recipe)</small>
+| {{MCW|Chiseled Copper}} +<br />[[Wax]]
 | {{Crafting|A1=Chiseled Copper|B1=Wax|Output=Waxed Chiseled Copper|shapeless=1}}
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Waxed Chiseled Copper]] <small>(vanilla recipe)</small>
-| [[Waxed Block of Copper]]
+| {{MCW|Waxed Chiseled Copper}} <small>(vanilla recipe)</small>
+| {{MCW|Waxed Block of Copper}}
 | {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Chiseled Copper,4}}
 |-
-| [[Waxed Chiseled Copper]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Chiseled Copper}} <small>(vanilla recipe)</small>
 | [[Waxed Cut Copper]]
 | {{Stonecutter|Input=Waxed Cut Copper|Output=Waxed Chiseled Copper}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

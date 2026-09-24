@@ -6,15 +6,15 @@
 | {{Crafting|A1=Glass Bottle|B1=Hellspore|C1=Hellspore|A2=Hellspore|B2=Sulfur Chunk|Output=Benzene|shapeless=1}}
 |-
 | [[Fire Charge]]
-| [[Sulfur Chunk]] +<br />[[Estus Ash]] +<br />[[Coal]] or [[Charcoal]]
+| [[Sulfur Chunk]] +<br />[[Estus Ash]] +<br />{{MCW|Coal}} or [[Charcoal]]
 | {{Crafting|A1=Sulfur Chunk|B1=Estus Ash|C1=Coal;Charcoal|Output=Fire Charge,4|shapeless=1}}
 |-
 | [[Green Dye]]
-| [[Potion]] +<br />[[Raw Copper]] +<br />[[Sulfur Chunk]]
+| {{MCW|Potion}} +<br />{{MCW|Raw Copper}} +<br />[[Sulfur Chunk]]
 | {{Crafting|A1=Potion|B1=Raw Copper|C1=Sulfur Chunk|Output=Green Dye,2|shapeless=1}}
 |-
 | [[Phosphor]]
-| [[Potion]] +<br />[[Sulfur Chunk]] +<br />4 × [[Glow Lichen]]
+| {{MCW|Potion}} +<br />[[Sulfur Chunk]] +<br />4 × [[Glow Lichen]]
 | {{Crafting|A1=Potion|B1=Sulfur Chunk|C1=Glow Lichen|A2=Glow Lichen|B2=Glow Lichen|C2=Glow Lichen|Output=Phosphor,8|shapeless=1}}
 |-
 | [[Potent Sulfur]]
@@ -26,11 +26,11 @@
 | {{Crafting|A1=Sulfur Chunk|A2=Sulfur Chunk|B1=Sulfur Chunk|B2=Sulfur Chunk|Output=Sulfur,4}}
 |-
 | [[TNT]]
-| 5 × [[Paper]] or [[Sand]] +<br />4 × [[Sulfur Chunk]]
+| 5 × {{MCW|Paper}} or [[Sand]] +<br />4 × [[Sulfur Chunk]]
 | {{Crafting|A1=Paper;Sand|A2=Sulfur Chunk|A3=Paper;Sand|B1=Sulfur Chunk|B2=Paper;Sand|B3=Sulfur Chunk|C1=Paper;Sand|C2=Sulfur Chunk|C3=Paper;Sand|Output=TNT,2}}
 |-
-| [[Firework Rocket]] <small>(vanilla recipe)</small>
-| [[Sulfur Chunk]] +<br />[[Paper]]
+| {{MCW|Firework Rocket}} <small>(vanilla recipe)</small>
+| [[Sulfur Chunk]] +<br />{{MCW|Paper}}
 | {{Crafting|A1=Sulfur Chunk|B1=Paper|Output=Firework Rocket,3|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

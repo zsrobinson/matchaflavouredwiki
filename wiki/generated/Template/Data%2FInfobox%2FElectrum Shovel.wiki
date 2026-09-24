@@ -7,14 +7,14 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|{{G|Fortune}} [[Fortune|Fortune bonus]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Fortune|Fortune bonus III]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=3000
 |damage={{Hp|6}}
 |attackspeed=1
 |miningspeed=12
-|repair=[[Block of Diamond]]
+|repair={{MCW|Block of Diamond}}
 |id=<code>matcha:electrum_shovel</code>
 |base=<code>minecraft:netherite_shovel</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_shovel.json|electrum_shovel.json}}

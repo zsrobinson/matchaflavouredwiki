@@ -1,0 +1,25 @@
+name: Problem with a page
+description: Something on a wiki page is wrong, missing or unclear. The Talk tab on every page opens this form.
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: Filled in by the Talk tab.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What should it say?
+  - type: textarea
+    id: source
+    attributes:
+      label: Where does the pack show this?
+      description: A file in the pack, a release note, or one of the developer's videos. The wiki uses only those sources, so this is what makes a fix possible.

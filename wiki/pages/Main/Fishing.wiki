@@ -12,50 +12,22 @@ The pack has 47 different [[fish]] to catch, not counting the frogs, tadpoles an
 Casting, waiting, bite timing, {{MCW|Lure}} and the "open water" check all work as in vanilla. Only the loot tables are changed.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
 
 === Choosing the catch ===
-Each catch rolls the <code>gameplay/fishing</code> loot table once. It picks one of three categories:
+Each catch rolls the <code>gameplay/fishing</code> loot table once. It picks one of three categories, junk, treasure or the fish of the biome's table, and the biomes of <code>#minecraft:unused</code> add a second, fallback junk entry (see [[#Other biomes]]):
 
-{| class="wikitable"
-! Category !! Weight !! Quality !! Condition !! Chance with no luck
-|-
-| [[Fishing junk|Junk]] || 10 || −2 || Always || 10%
-|-
-| [[Fishing treasure|Treasure]] || 5 || +2 || The bobber is in open water || 5%
-|-
-| Fish (the biome's climate table) || 85 || −1 || The bobber is in a biome that has a climate table || 85%
-|}
+{{Data/Fishing/Categories}}
 
-If the bobber isn't in open water, treasure can't be caught, and fish make up 85 of the remaining 95 weight (89.47%).
+If the bobber isn't in open water, treasure can't be caught, and junk and the biome's table share its weight.
 
-Each level of {{MCW|Luck of the Sea}} adds the entry's quality to its weight, as in vanilla. The pack doesn't change what the enchantment does, only its anvil cost.<ref>{{Source|MF_datapack/data/minecraft/enchantment/luck_of_the_sea.json}}</ref>
+Each level of {{MCW|Luck of the Sea}} adds the entry's quality to its weight, as in vanilla. The pack doesn't change what the enchantment does, only its anvil cost.<ref>{{Source|MF_datapack/data/minecraft/enchantment/luck_of_the_sea.json}}</ref> The table gives the odds at each level, in and out of open water, for each group of biomes that share the same entries.
 
-{| class="wikitable"
-! Luck of the Sea !! Junk !! Treasure !! Fish
-|-
-| None || 10% || 5% || 85%
-|-
-| I || 8.08% || 7.07% || 84.85%
-|-
-| II || 6.12% || 9.18% || 84.69%
-|-
-| III || 4.12% || 11.34% || 84.54%
-|}
+{{Data/Fishing/Luck}}
 
 Luck of the Sea barely changes how often fish are caught. It mostly turns junk into treasure. Inside the climate tables the fish have no quality, so it doesn't change which fish is caught either.
 
 === Rarity ===
 Every caught fish has a rarity of 1 to 4 stars, shown as the first line of its tooltip (⭐☆☆☆, ⭐⭐☆☆, ⭐⭐⭐☆ or ⭐⭐⭐⭐, in gray, green, aqua and pink).<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Every freshwater and saltwater climate has the same layout:
 
-{| class="wikitable"
-! Rarity !! Fish per climate !! Weight each !! Chance per catch (each fish) !! Fish needed for 1 Obol !! Fisherman level
-|-
-| ⭐☆☆☆ || 2 || 15 of 42 || 30.36% || 12 || Apprentice
-|-
-| ⭐⭐☆☆ || 1 || 8 of 42 || 16.19% || 8 || Journeyman
-|-
-| ⭐⭐⭐☆ || 1 || 3 of 42 || 6.07% || 4 || Expert
-|-
-| ⭐⭐⭐⭐ || 1 || 1 of 42 || 2.02% || 1 || Master
-|}
+{{Data/Fishing/Rarity}}
 
 {{Diagram|Fishing odds|caption=What one cast brings up with no Luck of the Sea: junk, treasure or fish, then one fish of the biome's climate table by its rarity.}}
 
@@ -75,218 +47,56 @@ The biome groups are defined by the pack's biome tags (<code>#minecraft:freshwat
 
 === Freshwater ===
 ==== Cold freshwater ====
-''Angler's Almanac category: Cold Freshwater.'' '''Biomes:''' Jagged Peaks, Frozen Peaks, Grove, Snowy Slopes, Snowy Taiga, Frozen River, Snowy Plains, Ice Spikes.
-{| class="wikitable sortable"
-! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
-|-
-| {{ItemLink|Humpback Whitefish}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Alaska Blackfish}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Spoonhead Sculpin}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
-|-
-| {{ItemLink|Northern Pike}} || data-sort-value="3" | ⭐⭐⭐☆ || 3 || 7.14% || 6.07% || 6.39% || 4 → 1 {{ItemLink|Obol}} (Expert)
-|-
-| {{ItemLink|Siberian Sturgeon}} || data-sort-value="4" | ⭐⭐⭐⭐ || 1 || 2.38% || 2.02% || 2.13% || 1 → 1 {{ItemLink|Obol}} (Master)
-|}
+''Angler's Almanac category: Cold Freshwater.'' {{Data/Fishing/freshwater_cold}}
 
 ==== Cool freshwater ====
-''Angler's Almanac category: Cool Freshwater.'' '''Biomes:''' Taiga, Birch Forest, Old Growth Birch Forest, Dark Forest, Meadow, Stony Shore, Old Growth Pine Taiga, Old Growth Spruce Taiga, Windswept Hills, Windswept Forest, Windswept Gravelly Hills, Stony Peaks.
-{| class="wikitable sortable"
-! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
-|-
-| {{ItemLink|Striped Perch}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Crappie}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Walleye}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
-|-
-| {{ItemLink|Gar}} || data-sort-value="3" | ⭐⭐⭐☆ || 3 || 7.14% || 6.07% || 6.39% || 4 → 1 {{ItemLink|Obol}} (Expert)
-|-
-| {{ItemLink|Muskellunge}} || data-sort-value="4" | ⭐⭐⭐⭐ || 1 || 2.38% || 2.02% || 2.13% || 1 → 1 {{ItemLink|Obol}} (Master)
-|}
+''Angler's Almanac category: Cool Freshwater.'' {{Data/Fishing/freshwater_cool}}
 
 ==== Temperate freshwater ====
-''Angler's Almanac category: Temperate Freshwater.'' '''Biomes:''' Forest, Plains, River, Sunflower Plains, Flower Forest, Cherry Grove, Dripstone Caves, Lush Caves.
+''Angler's Almanac category: Temperate Freshwater.'' {{Data/Fishing/freshwater_temperate}}
 The [[Biomes|cave biomes]] Dripstone Caves and Lush Caves use this table through a separate entry in the fishing loot table.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
-{| class="wikitable sortable"
-! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
-|-
-| {{ItemLink|Bluegill}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Crappie}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Carp}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
-|-
-| {{ItemLink|Catfish}} || data-sort-value="3" | ⭐⭐⭐☆ || 3 || 7.14% || 6.07% || 6.39% || 4 → 1 {{ItemLink|Obol}} (Expert)
-|-
-| {{ItemLink|Bass}} || data-sort-value="4" | ⭐⭐⭐⭐ || 1 || 2.38% || 2.02% || 2.13% || 1 → 1 {{ItemLink|Obol}} (Master)
-|}
 
 ==== Arid freshwater ====
-''Angler's Almanac category: Arid Freshwater.'' '''Biomes:''' Savanna, Desert, Badlands, Wooded Badlands, Savanna Plateau, Eroded Badlands, Windswept Savanna.
-{| class="wikitable sortable"
-! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
-|-
-| {{ItemLink|Mediterranean Killifish}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Freshwater Puffer}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Lamprey}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
-|-
-| {{ItemLink|Tunisian Barb}} || data-sort-value="3" | ⭐⭐⭐☆ || 3 || 7.14% || 6.07% || 6.39% || 4 → 1 {{ItemLink|Obol}} (Expert)
-|-
-| {{ItemLink|European Eel}} || data-sort-value="4" | ⭐⭐⭐⭐ || 1 || 2.38% || 2.02% || 2.13% || 1 → 1 {{ItemLink|Obol}} (Master)
-|}
+''Angler's Almanac category: Arid Freshwater.'' {{Data/Fishing/freshwater_hot_dry}}
 
 ==== Tropical freshwater ====
-''Angler's Almanac category: Tropical Freshwater.'' '''Biomes:''' Jungle, Sparse Jungle, Bamboo Jungle.
-{| class="wikitable sortable"
-! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
-|-
-| {{ItemLink|Guppy}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Bujurqui}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Piranha}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
-|-
-| {{ItemLink|Armoured Catfish}} || data-sort-value="3" | ⭐⭐⭐☆ || 3 || 7.14% || 6.07% || 6.39% || 4 → 1 {{ItemLink|Obol}} (Expert)
-|-
-| {{ItemLink|Arapaima}} || data-sort-value="4" | ⭐⭐⭐⭐ || 1 || 2.38% || 2.02% || 2.13% || 1 → 1 {{ItemLink|Obol}} (Master)
-|}
+''Angler's Almanac category: Tropical Freshwater.'' {{Data/Fishing/freshwater_hot_wet}}
 
 ==== Brackish water ====
-''Angler's Almanac category: Brackish.'' '''Biomes:''' Mangrove Swamp, Swamp.
-{| class="wikitable sortable"
-! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
-|-
-| {{ItemLink|Guppy}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Bujurqui}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Lamprey}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
-|-
-| {{ItemLink|Flounder}} || data-sort-value="3" | ⭐⭐⭐☆ || 3 || 7.14% || 6.07% || 6.39% || 4 → 1 {{ItemLink|Obol}} (Expert)
-|-
-| {{ItemLink|Arapaima}} || data-sort-value="4" | ⭐⭐⭐⭐ || 1 || 2.38% || 2.02% || 2.13% || 1 → 1 {{ItemLink|Obol}} (Master)
-|}
+''Angler's Almanac category: Brackish.'' {{Data/Fishing/swamps}}
 
 The swamps have their own table, but no fish of their own. They take the guppy, bujurqui and arapaima from tropical freshwater, the lamprey from arid freshwater and the flounder from warm saltwater. They do have their own junk: [[Frog|frogs]] and [[Tadpole|tadpoles]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/swamps.json}}</ref>
 
 === Saltwater ===
 ==== Cold saltwater ====
-''Angler's Almanac category: Cold Saltwater.'' '''Biomes:''' Frozen Ocean, Deep Frozen Ocean.
-{| class="wikitable sortable"
-! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
-|-
-| {{ItemLink|Cod}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Salmon}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Herring}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
-|-
-| {{ItemLink|Wolffish}} || data-sort-value="3" | ⭐⭐⭐☆ || 3 || 7.14% || 6.07% || 6.39% || 4 → 1 {{ItemLink|Obol}} (Expert)
-|-
-| {{ItemLink|Skate}} || data-sort-value="4" | ⭐⭐⭐⭐ || 1 || 2.38% || 2.02% || 2.13% || 1 → 1 {{ItemLink|Obol}} (Master)
-|}
+''Angler's Almanac category: Cold Saltwater.'' {{Data/Fishing/saltwater_cold}}
 
 ==== Cool saltwater ====
-''Angler's Almanac category: Cool Saltwater.'' '''Biomes:''' Cold Ocean, Deep Cold Ocean.
-{| class="wikitable sortable"
-! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
-|-
-| {{ItemLink|Cod}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Salmon}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Black Seabass}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
-|-
-| {{ItemLink|Monkfish}} || data-sort-value="3" | ⭐⭐⭐☆ || 3 || 7.14% || 6.07% || 6.39% || 4 → 1 {{ItemLink|Obol}} (Expert)
-|-
-| {{ItemLink|Opah}} || data-sort-value="4" | ⭐⭐⭐⭐ || 1 || 2.38% || 2.02% || 2.13% || 1 → 1 {{ItemLink|Obol}} (Master)
-|}
+''Angler's Almanac category: Cool Saltwater.'' {{Data/Fishing/saltwater_cool}}
 
 ==== Temperate saltwater ====
-''Angler's Almanac category: Temperate Saltwater.'' '''Biomes:''' Ocean, Deep Ocean, Beach.
-{| class="wikitable sortable"
-! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
-|-
-| {{ItemLink|Anchovy}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Shad}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Flying Fish}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
-|-
-| {{ItemLink|Sturgeon}} || data-sort-value="3" | ⭐⭐⭐☆ || 3 || 7.14% || 6.07% || 6.39% || 4 → 1 {{ItemLink|Obol}} (Expert)
-|-
-| {{ItemLink|Blue Marlin}} || data-sort-value="4" | ⭐⭐⭐⭐ || 1 || 2.38% || 2.02% || 2.13% || 1 → 1 {{ItemLink|Obol}} (Master)
-|}
+''Angler's Almanac category: Temperate Saltwater.'' {{Data/Fishing/saltwater_temperate}}
 
 ==== Warm saltwater ====
-''Angler's Almanac category: Warm Saltwater.'' '''Biomes:''' Lukewarm Ocean, Deep Lukewarm Ocean.
-{| class="wikitable sortable"
-! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
-|-
-| {{ItemLink|Tropical Fish}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Rainbow Wrasse}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Gurnard}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
-|-
-| {{ItemLink|Flounder}} || data-sort-value="3" | ⭐⭐⭐☆ || 3 || 7.14% || 6.07% || 6.39% || 4 → 1 {{ItemLink|Obol}} (Expert)
-|-
-| {{ItemLink|Blue Marlin}} || data-sort-value="4" | ⭐⭐⭐⭐ || 1 || 2.38% || 2.02% || 2.13% || 1 → 1 {{ItemLink|Obol}} (Master)
-|}
+''Angler's Almanac category: Warm Saltwater.'' {{Data/Fishing/saltwater_warm}}
 
 ==== Hot saltwater ====
-''Angler's Almanac category: Hot Saltwater.'' '''Biomes:''' Warm Ocean.
-{| class="wikitable sortable"
-! Fish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! Per catch (other water) !! Sells for
-|-
-| {{ItemLink|Tropical Fish}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Pufferfish}} || data-sort-value="1" | ⭐☆☆☆ || 15 || 35.71% || 30.36% || 31.95% || 12 → 1 {{ItemLink|Obol}} (Apprentice)
-|-
-| {{ItemLink|Mahi mahi}} || data-sort-value="2" | ⭐⭐☆☆ || 8 || 19.05% || 16.19% || 17.04% || 8 → 1 {{ItemLink|Obol}} (Journeyman)
-|-
-| {{ItemLink|Painted Moray}} || data-sort-value="3" | ⭐⭐⭐☆ || 3 || 7.14% || 6.07% || 6.39% || 4 → 1 {{ItemLink|Obol}} (Expert)
-|-
-| {{ItemLink|Oarfish}} || data-sort-value="4" | ⭐⭐⭐⭐ || 1 || 2.38% || 2.02% || 2.13% || 1 → 1 {{ItemLink|Obol}} (Master)
-|}
+''Angler's Almanac category: Hot Saltwater.'' {{Data/Fishing/saltwater_hot}}
 
 === Special biomes ===
 Three biomes have small tables of their own. Pale Garden and Deep Dark mix one fish with biome items, and Sulfur Caves has no fish.
 
-{| class="wikitable"
-! Biome !! Catch !! Weight !! Share of table !! Per catch (open water)
-|-
-! rowspan="3" | Pale Garden
-| {{ItemLink|Creaking Fish}} (⭐⭐⭐☆) || 7 || 17.95% || 15.26%
-|-
-| {{MCW|Pale Hanging Moss}} || 20 || 51.28% || 43.59%
-|-
-| {{MCW|Resin Clump}} || 12 || 30.77% || 26.15%
-|-
-! rowspan="3" | Deep Dark
-| {{ItemLink|Echo Eel}} (⭐⭐⭐⭐) || 7 || 25% || 11.49%
-|-
-| {{MCW|Sculk Vein}} || 20 || 71.43% || 32.82%
-|-
-| {{MCW|Echo Shard}} || 1 || 3.57% || 1.64%
-|-
-! rowspan="2" | Sulfur Caves
-| {{ItemLink|Fish Bones}} || 10 || 90.91% || 41.77%
-|-
-| 3 × {{ItemLink|Sulfur Chunk}} || 1 || 9.09% || 4.18%
-|}
+{{Data/Fishing/Special biomes}}
 <ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/pale_garden.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/deep_dark.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
 
-Deep Dark and Sulfur Caves are also in the pack's <code>#minecraft:unused</code> biome tag, which adds a second junk entry of weight 85. In those two biomes a catch is junk 51.35% of the time, treasure 2.70% and the biome's table 45.95%. Pale Garden works like the climates (85% table).<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/unused.json}}</ref>
+Deep Dark and Sulfur Caves are also in the pack's <code>#minecraft:unused</code> biome tag, which adds a second junk entry of weight 85. In those two biomes about half of all catches are junk, and the "Per catch" columns above already account for it (see also [[#Choosing the catch]]). Pale Garden works like the climates.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/unused.json}}</ref>
+
+In 1.12.2-beta the fish bones from the Sulfur Caves table have the wrong item model, so they show the missing-model texture and don't stack with fish bones from the junk table. See [[Fish Bones]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
 
 === Other biomes ===
-Biomes in <code>#minecraft:unused</code> have no fish: Mushroom Fields, the [[Hell]] biomes and [[The End]] biomes. Their junk entry has weight 85, so a catch there is junk 95% of the time and treasure 5%.<ref>{{Cite changelog|1.10|quote=Fishing outside of pre-designated biomes no longer gives insane loot (junk pool at 85 weight as fallback)}}</ref>
+Biomes in <code>#minecraft:unused</code> have no fish: Mushroom Fields, the [[Hell]] biomes and [[The End]] biomes. Their junk entry has weight 85, so nearly every catch there is junk (see [[#Choosing the catch]]).<ref>{{Cite changelog|1.10|quote=Fishing outside of pre-designated biomes no longer gives insane loot (junk pool at 85 weight as fallback)}}</ref>
 
-Snowy Beach is in no biome tag at all, so only the base junk (10) and treasure (5) entries apply there. A catch in open water at a snowy beach is treasure one time in three (33.33%, or 73.33% with Luck of the Sea III). This looks like an oversight rather than a design choice.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
+Snowy Beach is in no biome tag at all, so only the base junk (10) and treasure (5) entries apply there. A catch in open water at a snowy beach is treasure one time in three, and more often with Luck of the Sea (see [[#Choosing the catch]]). This looks like an oversight rather than a design choice.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
 
 == Junk and treasure ==
 {{Main|Fishing junk|Fishing treasure}}
@@ -330,7 +140,7 @@ Each catch plays a sound for its category: one per star rating, one each for jun
 |}
 <ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/catch_everything.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/trade_fish.json}}</ref>
 
-The [[Angler's Almanac]] adds its own advancement tab with an entry for every catch.
+The [[Angler's Almanac]] adds its own advancement tab with an entry for every catch. In 1.12.2-beta the pufferfish entry can't be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>
 
 == History ==
 {{History|
@@ -354,7 +164,7 @@ Fish now make up 85 of 100 weight in their biomes (a previous patch gave junk ab
 Estus Ash added to junk, treasure tweaked. The release notes say nautilus shells were added to the fishing buried treasure, but the current chest has none.
 Old Growth Spruce Taiga added to cool freshwater.}}
 {{History line|1.12.2|Fixed typos that made the Angler's Almanac entries for tropical fish impossible to unlock.}}
-{{History line|Upcoming|2=Fish Bones caught in Sulfur Caves now have the correct texture.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref> The Angler's Almanac entry for pufferfish in Hot Saltwater can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>}}
+{{History line|Upcoming|2=Fish Bones caught in Sulfur Caves now have the correct texture.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> The Angler's Almanac entry for pufferfish in Hot Saltwater can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 <ref>{{Cite changelog|0.5-alpha|quote=Overhauled Fishing System}}</ref><ref>{{Cite changelog|1.10|quote=Fishing Balances}}</ref><ref>{{Cite changelog|1.12.1-alpha|quote=Fishing now gives 85/5 fish to junk in designated biomes (My patch made it worse and would give junk 50% of the time, sorry)}}</ref>
 

@@ -2,7 +2,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Oxidized Copper]]
-| [[Weathered Copper]] +<br />[[Potion]]
+| [[Weathered Copper]] +<br />{{MCW|Potion}}
 | {{Crafting|A1=Weathered Copper|B1=Potion|Output=Oxidized Copper|shapeless=1}}
 |-
 | [[Weathered Copper Bulb]]
@@ -33,7 +33,7 @@
 | [[Weathered Copper]]
 | {{Stonecutter|Input=Weathered Copper|Output=Weathered Lightning Rod,4}}
 |-
-| [[Waxed Weathered Copper]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Weathered Copper}} <small>(vanilla recipe)</small>
 | [[Weathered Copper]] +<br />[[Wax]]
 | {{Crafting|A1=Weathered Copper|B1=Wax|Output=Waxed Weathered Copper|shapeless=1}}
 |-

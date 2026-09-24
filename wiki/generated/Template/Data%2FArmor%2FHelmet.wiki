@@ -1,0 +1,27 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Copper Helmet}}{{{Copper Helmet|}}} || 200 || 2 || — || — || — || —
+|-
+| {{ItemLink|Iron Helmet}}{{{Iron Helmet|}}} || 350 || 2 || — || — || — || —
+|-
+| {{ItemLink|Steel Helmet}}{{{Steel Helmet|}}} || 1000 || 2 || 1 || 0.1 || — || [[Blast Protection]] II
+|-
+| {{ItemLink|Golden Crown}}{{{Golden Crown|}}} || 200 || 2 || — || — || — || [[Fire Protection]] II
+|-
+| {{ItemLink|Diamond Helmet}}{{{Diamond Helmet|}}} || 800 || 3 || 2 || — || — || —
+|-
+| {{ItemLink|Shakudo Helmet}}{{{Shakudo Helmet|}}} || 500 || 3 || — || — || — || {{G|Cleanse}} [[Cleanse|Cleanses: Blindness, Darkness]]<br />{{G|Magic protection}} [[Magic protection|8 Magic protection]]<br />{{G|Half heart}}{{G|Cooldown}} [[Set bonus#Shakudo regeneration|(00:30) Shakudo regeneration]]
+|-
+| {{ItemLink|Hepatizon Helmet}}{{{Hepatizon Helmet|}}} || 500 || 3 || — || — || Speed +0.01 || —
+|-
+| {{ItemLink|Electrum Helmet}}{{{Electrum Helmet|}}} || 1000 || 3 || 3 || — || — || {{G|Electrum}} [[Electrum equipment|+1 Electrum bonus]]
+|-
+| {{ItemLink|Adamant Helmet}}{{{Adamant Helmet|}}} || 1000 || 3 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3 Doom]]<br />[[Unbreaking]] II<br />[[Protection]] I
+|-
+| {{ItemLink|Leather Hood}}{{{Leather Hood|}}} || 200 || 1 || — || — || Safe fall +1 || —
+|-
+| {{ItemLink|Sturdy Leather Helmet}}{{{Sturdy Leather Helmet|}}} || 350 || 2 || — || — || Safe fall +2 || [[Projectile Protection]] III
+|-
+| {{ItemLink|Chainmail Helmet}}{{{Chainmail Helmet|}}} || 300 || 2 || — || — || — || [[Thorns]] III
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

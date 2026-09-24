@@ -6,10 +6,10 @@
 | {{Crafting|A1=Exposed Cut Copper Slab|B1=Exposed Cut Copper Slab|Output=Exposed Cut Copper|shapeless=1}}
 |-
 | [[Weathered Cut Copper Slab]]
-| [[Exposed Cut Copper Slab]] +<br />[[Potion]]
+| [[Exposed Cut Copper Slab]] +<br />{{MCW|Potion}}
 | {{Crafting|A1=Exposed Cut Copper Slab|B1=Potion|Output=Weathered Cut Copper Slab|shapeless=1}}
 |-
-| [[Waxed Exposed Cut Copper Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Exposed Cut Copper Slab}} <small>(vanilla recipe)</small>
 | [[Exposed Cut Copper Slab]] +<br />[[Wax]]
 | {{Crafting|A1=Exposed Cut Copper Slab|B1=Wax|Output=Waxed Exposed Cut Copper Slab|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

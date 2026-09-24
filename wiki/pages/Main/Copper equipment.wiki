@@ -14,46 +14,14 @@ Undead mobs wearing copper armor are immune to [[Warding]]; only warding level 4
 
 == Stats ==
 === Tools ===
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Copper Pickaxe}} || 350 || 6 || — || 3 || 1.2 || —
-|-
-| {{ItemLink|Copper Axe}} || 350 || 6 || — || 9 || 0.8 || —
-|-
-| {{ItemLink|Copper Shovel}} || 350 || 6 || — || 3.5 || 1 || —
-|-
-| {{ItemLink|Copper Hoe}} || 350 || 6 || — || 1 || 2 || —
-|-
-| {{ItemLink|Copper Mattock}} || 350 || 5 || — || 1 || 2 || —
-|-
-| {{ItemLink|Copper Dolabra}} || 350 || 5 || — || 5 || 0.8 || —
-|}
+{{Data/Tools/Copper}}
 
 === Weapons ===
-{| class="wikitable sortable"
-! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
-|-
-| {{ItemLink|Copper Sword}} || 350 || 5 || 1.6 || — || —
-|-
-| {{ItemLink|Copper Spear}} || 190 || 2 || 1.176 || — || —
-|}
+{{Data/Weapons/Copper}}
 
 === Armor ===
 [[File:Copper armor render.png|thumb|120px|A full set of copper armor]]
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Copper Helmet}} || 200 || 2 || 0 || — || — || —
-|-
-| {{ItemLink|Copper Chestplate}} || 200 || 4 || 0 || — || — || —
-|-
-| {{ItemLink|Copper Leggings}} || 200 || 3 || 0 || — || — || —
-|-
-| {{ItemLink|Copper Boots}} || 200 || 1 || 0 || — || — || —
-|- class="sortbottom"
-! Full set !! !! 10 !! 0 !! 0 !! colspan="2" |
-|}
+{{Data/Armor/Copper}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 

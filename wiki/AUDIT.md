@@ -1,11 +1,12 @@
-# Competitor audit (2026-09-23)
+# Coverage review (2026-09-23)
 
-What other unofficial Matcha Flavoured wikis and guides cover that we don't, and why. Every
+What other unofficial Matcha Flavoured wikis and guides cover that we don't, and why. They were
+read only to find topics we were missing. Every
 gap closed here was checked in, and cited to, the pack's code (pinned commit), the release
 notes, or the developer's videos (`transcript.txt` and `sources/transcripts/`). Nothing was
-copied from a competitor.
+copied from another site.
 
-## Competitors
+## Other sites
 
 | Site | Kind | Size / coverage | Notable features we lacked |
 |---|---|---|---|
@@ -24,10 +25,10 @@ Not wikis (skipped): mpetrites' Bedrock port, the Fabric port, forks and modpack
 
 | # | Gap (seen at) | Result | Root cause |
 |---|---|---|---|
-| 1 | **The developer's second video** "How Criticism changed Matcha Flavoured" (wavOi0ULYpQ, 2026-08-14). None of the competitors use it either. | **Closed.** Design reasoning added and cited with `{{Cite video\|id=wavOi0ULYpQ…}}` on: Crystal Heart (cheaper to encourage engagement), Death (the "too easy" criticism rejected), Difficulty (added for a frustrated first-time player), Abbey (silver was added after feedback), Bookshelf (a player's idea), Riposte (nearly removed, kept after seeing PvP use), Elegy of Hyacinthus, Prayer of Lu Ban, Mouthpiece (religions pointing to the dead god), Abandoned village (why villages were removed), Hell (darkness kept as taste), Advancements (unexplained on purpose), Matcha Flavoured → Reception (a summary, and regret over rushed patches). Each claim was cross-checked against the 1.10/1.12 release notes where they cover it. | **Source not considered**: the wiki watched only the intro video, not the developer's other official videos. |
+| 1 | **The developer's second video** "How Criticism changed Matcha Flavoured" (wavOi0ULYpQ, 2026-08-14). None of the other sites use it either. | **Closed.** Design reasoning added and cited with `{{Cite video\|id=wavOi0ULYpQ…}}` on: Crystal Heart (cheaper to encourage engagement), Death (the "too easy" criticism rejected), Difficulty (added for a frustrated first-time player), Abbey (silver was added after feedback), Bookshelf (a player's idea), Riposte (nearly removed, kept after seeing PvP use), Elegy of Hyacinthus, Prayer of Lu Ban, Mouthpiece (religions pointing to the dead god), Abandoned village (why villages were removed), Hell (darkness kept as taste), Advancements (unexplained on purpose), Matcha Flavoured → Reception (a summary, and regret over rushed patches). Each claim was cross-checked against the 1.10/1.12 release notes where they cover it. | **Source not considered**: the wiki watched only the intro video, not the developer's other official videos. |
 | 2 | Mid- and late-game walkthrough (AriesAlex: Hell, End, after the dragon; matchaflavored.org) | **Closed.** Guide for new players, steps 9–12: magic materials and Hell, blessings and warding, the End, after the dragon (Divine Favor loop, Wither, adamant). Cited to recipes and functions. | **Page plan / format**: the guide was scoped to the Tutorial tab; the facts existed only on detail pages. |
-| 3 | Advancement names as titles (MFW has around 70 advancement pages) | **Closed.** Row anchors (`<span id>`) on every visible advancement in Advancements, plus 73 redirects (`Brazier` → `Advancements#Brazier`). | **Tooling**: the generator makes redirects for items and vanilla names but not for advancement titles. |
-| 4 | Spelling variants and alternate names (MFW: Armour, Jewellery, Divine Favour, Stabilised Estus, Hypothermia, Hearts, Axes/Pickaxes/Shovels/Hoes/Swords, Mattocks, Dolabras, Prayers, Blessings, Cleansing, Clay Fetish (Lament/Rejoice), Echo Fish/Pale Fish = internal model ids, Sundried Tomatoes, Golden Baked Apple) | **Closed.** 25 hand-written redirects. | **Style gap**: STYLE.md mandates American spelling but nothing adds redirects from the pack's own British spelling. **Tooling**: plural and internal-id redirects aren't generated. |
+| 3 | Advancement names as titles (matchaflavoured.wiki has around 70 advancement pages) | **Closed.** Row anchors (`<span id>`) on every visible advancement in Advancements, plus 73 redirects (`Brazier` → `Advancements#Brazier`). | **Tooling**: the generator makes redirects for items and vanilla names but not for advancement titles. |
+| 4 | Spelling variants and alternate names (matchaflavoured.wiki: Armour, Jewellery, Divine Favour, Stabilised Estus, Hypothermia, Hearts, Axes/Pickaxes/Shovels/Hoes/Swords, Mattocks, Dolabras, Prayers, Blessings, Cleansing, Clay Fetish (Lament/Rejoice), Echo Fish/Pale Fish = internal model ids, Sundried Tomatoes, Golden Baked Apple) | **Closed.** 25 hand-written redirects. | **Style gap**: STYLE.md mandates American spelling but nothing adds redirects from the pack's own British spelling. **Tooling**: plural and internal-id redirects aren't generated. |
 | 5 | Splash texts (JeremyVyska) | **Closed.** New page [[Splash texts]]: all 50, with history from 0.7-alpha, 1.03 and 1.10. | **Extractor**: `extract.py` ignores `MF_resourcepack/assets/minecraft/texts/`. |
 | 6 | Tooltip symbol legend (JeremyVyska "Symbols") | **Closed.** New page [[Tooltip]]: stat, intrinsic, effect and advancement symbols. Derived from the lang file and the lore in recipes; several example items were corrected against the source while writing. | **Page plan**: `{{G}}` was used everywhere but no page explained the symbols. |
 | 7 | Symptom-based troubleshooting (matchaflavored.org) | **Closed.** Installation → Troubleshooting table. | **Format gap** (how-to/question style). |
@@ -38,16 +39,18 @@ Not wikis (skipped): mpetrites' Bedrock port, the Fabric port, forks and modpack
 | 12 | Tags, sounds, function lists (JeremyVyska) | **Rejected**: developer-facing and not encyclopedic. | — |
 | 13 | "Sleep sometimes doesn't work after the first join until `/reload`" (AriesAlex, citing the Modrinth description) | **Left open.** Not verifiable from the code or release notes; the Modrinth description isn't among our sources. | **Source not considered**: the Modrinth project description (and gallery) isn't fetched. |
 
-## Competitor claims that are wrong or outdated (not added)
+## Where other sites differ from the code (not added)
 
-- **MFW "Prayer of Mithra"** (Protection III, traded for the Avesta): no such prayer is in the code or lang. The Avesta now gives the Prayer of The God-King (Efficiency II, Unbreaking I). Outdated or wrong.
-- **MFW "Wandering Traveller" selling a "refugee application"**: the pack's names are Wandering Trader and Asylum Seeker. Outdated or wrong.
-- **MFW "Golden Baked Apple"**: the in-game name is Baked Golden Apple. **"Sundried Tomatotes"** is a typo; its recipe and "Strength II for 5 minutes" were not verified.
-- **MFW Hypothermia**: "1 damage every tick". The code applies it every tick, but damage cooldown limits how often it lands (our Freezing water page says so).
-- **AriesAlex: smithing overwrites existing enchantments** of the same type. True of 1.03, but fixed in 1.12.1-alpha: the code merges them and keeps the higher level (see Smithing).
+Some of these probably describe older versions of the pack. Worth passing on to those sites rather than keeping to ourselves.
+
+- **matchaflavoured.wiki, "Prayer of Mithra"** (Protection III, traded for the Avesta): no such prayer is in the current code or lang. The Avesta now gives the Prayer of The God-King (Efficiency II, Unbreaking I).
+- **matchaflavoured.wiki, "Wandering Traveller" selling a "refugee application"**: the current names are Wandering Trader and Asylum Seeker.
+- **matchaflavoured.wiki, "Golden Baked Apple"**: the in-game name is Baked Golden Apple. "Sundried Tomatotes" looks like a typo; its recipe and "Strength II for 5 minutes" were not verified.
+- **matchaflavoured.wiki, Hypothermia**: "1 damage every tick". The code applies it every tick, but damage cooldown limits how often it lands (our Freezing water page says so).
+- **AriesAlex, smithing overwrites existing enchantments** of the same type. True of 1.03, but fixed in 1.12.1-alpha: the code merges them and keeps the higher level (see Smithing).
 - **AriesAlex fork-specific behavior** (for example, re-checking already-spawned mobs after the dragon) describes their fork, not the pack.
 - Unverified and left out: AriesAlex's "deepslate iron ore drops 2 raw iron" and "copper cannot mine redstone".
-- **MFW "Squid Ink Pasta"**: correct that it was removed in 1.10; we already list it in Removed features.
+- **matchaflavoured.wiki, "Squid Ink Pasta"**: correctly says it was removed in 1.10; we already list it in Removed features.
 
 ## Why the gaps existed (summary)
 
@@ -66,5 +69,5 @@ Not wikis (skipped): mpetrites' Bedrock port, the Fabric port, forks and modpack
 2. **Extractor coverage test**: have `extract.py` list every file under `MF_datapack/data/**` and `MF_resourcepack/assets/**` whose directory type it doesn't handle (for example `texts/`, `font/`, `sounds.json`), and fail the check if a new directory type appears. Extract `texts/splashes.txt` and generate `Template:Data/Splashes`, so the Splash texts page can transclude it instead of holding a hand-copied list.
 3. **Title coverage check** in `check_site.py`: every advancement title, every `en_us` item name, the plural of every tool type, every `item_model` id (`matcha:echo_fish`) and every British/American variant (`our`/`or`, `ise`/`ize`, `ll`/`l`) must resolve to a page or redirect. Better: generate these redirects in `generate.py`, and generate advancement row anchors, so hand-written redirects aren't needed.
 4. **Glyph coverage check**: every private-use character used in `en_us.json` must be named in `Template:G` and appear on the Tooltip page.
-5. **Weekly competitor diff step**: pull `matchaflavoured.wiki`'s `allpages` list (API) and the READMEs or feature lists of the repos above. Diff the titles against ours (after lowercasing and resolving redirects), and write new unmatched titles to `build/competitor_gaps.txt` for the agent to triage. Verify only against primary sources; record claims that can't be verified here under "wrong or outdated".
+5. **Weekly coverage comparison**: pull `matchaflavoured.wiki`'s `allpages` list (API) and the READMEs or feature lists of the repos above. Diff the titles against ours (after lowercasing and resolving redirects), and write new unmatched titles to `build/coverage_gaps.txt` for the agent to triage. Verify only against primary sources; record claims the code contradicts under "Where other sites differ from the code".
 6. **Guide freshness**: when a version adds a progression step (a new structure, boss or material tier), the update agent must check that `Guide for new players` and `Progression` mention it.

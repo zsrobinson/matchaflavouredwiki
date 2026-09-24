@@ -2,27 +2,27 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Iron Chain]]
-| 3 × [[Iron Nugget]]
+| 3 × {{MCW|Iron Nugget}}
 | {{Crafting|A1=Iron Nugget|A2=Iron Nugget|A3=Iron Nugget|Output=Iron Chain,2}}
 |-
 | [[Lantern]]
-| 3 × [[Iron Nugget]] +<br />[[Torch]]
+| 3 × {{MCW|Iron Nugget}} +<br />[[Torch]]
 | {{Crafting|A2=Iron Nugget|B1=Iron Nugget|B2=Torch|C2=Iron Nugget|Output=Lantern}}
 |-
 | [[Red Sand]]
-| 8 × [[Sand]] +<br />[[Iron Nugget]]
+| 8 × [[Sand]] +<br />{{MCW|Iron Nugget}}
 | {{Crafting|A1=Sand|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Sand|A3=Sand|B3=Sand|C3=Iron Nugget|Output=Red Sand,8|shapeless=1}}
 |-
 | [[Soul Lantern]]
-| 3 × [[Iron Nugget]] +<br />[[Soul Torch]]
+| 3 × {{MCW|Iron Nugget}} +<br />[[Soul Torch]]
 | {{Crafting|A2=Iron Nugget|B1=Iron Nugget|B2=Soul Torch|C2=Iron Nugget|Output=Soul Lantern}}
 |-
 | [[Iron Ingot]] <small>(vanilla recipe)</small>
-| 9 × [[Iron Nugget]]
+| 9 × {{MCW|Iron Nugget}}
 | {{Crafting|A1=Iron Nugget|A2=Iron Nugget|A3=Iron Nugget|B1=Iron Nugget|B2=Iron Nugget|B3=Iron Nugget|C1=Iron Nugget|C2=Iron Nugget|C3=Iron Nugget|Output=Iron Ingot}}
 |-
-| [[Name Tag]] <small>(vanilla recipe)</small>
-| <span class="explain" title="Copper Nugget, Iron Nugget, Gold Nugget">Any metal nuggets</span> +<br />[[Paper]]
+| {{MCW|Name Tag}} <small>(vanilla recipe)</small>
+| <span class="explain" title="Copper Nugget, Iron Nugget, Gold Nugget">Any metal nuggets</span> +<br />{{MCW|Paper}}
 | {{Crafting|A2=Paper|B1=Any Metal Nuggets|Output=Name Tag}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

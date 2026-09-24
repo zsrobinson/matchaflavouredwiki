@@ -12,46 +12,14 @@ Iron tools have 500 durability instead of 250 and mine faster than vanilla's spe
 
 == Stats ==
 === Tools ===
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Iron Pickaxe}} || 500 || 7 || — || 4 || 1.2 || —
-|-
-| {{ItemLink|Iron Axe}} || 500 || 7 || — || 9 || 0.9 || —
-|-
-| {{ItemLink|Iron Shovel}} || 500 || 8 || — || 4.5 || 1 || —
-|-
-| {{ItemLink|Iron Hoe}} || 500 || 8 || — || 1 || 3 || —
-|-
-| {{ItemLink|Iron Mattock}} || 500 || 6 || — || 4 || 4 || —
-|-
-| {{ItemLink|Iron Dolabra}} || 500 || 6 || — || 6 || 0.9 || —
-|}
+{{Data/Tools/Iron}}
 
 === Weapons ===
-{| class="wikitable sortable"
-! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
-|-
-| {{ItemLink|Iron Sword}} || 500 || 6 || 1.6 || — || —
-|-
-| {{ItemLink|Iron Spear}} || 500 || 3 || 1.053 || — || —
-|}
+{{Data/Weapons/Iron}}
 
 === Armor ===
 [[File:Iron armor render.png|thumb|120px|A full set of iron armor]]
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Iron Helmet}} || 350 || 2 || 0 || — || — || —
-|-
-| {{ItemLink|Iron Chestplate}} || 350 || 6 || 0 || — || — || —
-|-
-| {{ItemLink|Iron Leggings}} || 350 || 5 || 0 || — || — || —
-|-
-| {{ItemLink|Iron Boots}} || 350 || 2 || 0 || — || — || —
-|- class="sortbottom"
-! Full set !! !! 15 !! 0 !! 0 !! colspan="2" |
-|}
+{{Data/Armor/Iron}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 

@@ -7,14 +7,14 @@
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Tool}}
-|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|{{G|Fortune}} [[Fortune|Fortune bonus]]}}
+|intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|[[Fortune|Fortune bonus III]]}}
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=3000
 |damage={{Hp|6}}
 |attackspeed=1.2
 |miningspeed=10
-|repair=[[Block of Diamond]]
+|repair={{MCW|Block of Diamond}}
 |id=<code>matcha:electrum_dolabra</code>
 |base=<code>minecraft:netherite_axe</code>
 |source={{Source|MF_datapack/data/matcha/recipe/smithing/electrum_dolabra.json|electrum_dolabra.json}}

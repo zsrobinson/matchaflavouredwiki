@@ -122,14 +122,18 @@ sortable wikitables, and `{{Main|...}}` hatnotes into each detail page.
 | `{{Spoiler}}` | Put before sections about secrets (hidden recipes, lore, horror). The wiki documents them, but warns first. |
 | `{{Upcoming}}` / `{{Planned}}` | Content that is only in `changelog.md` or the developer's plans. |
 | `{{Navbox|title=|group1=|list1={{Nav item|X}}...}}` | Navigation boxes at the bottom of pages. |
-| Generated tables | `{{Data/Food table}}`, `{{Data/Renamed items}}`, `{{Data/Enchantments}}`, `{{Data/Trades/<Profession>}}`, `{{Data/Loot/<namespace>/<path>}}`, `{{Data/Advancements/<tab>}}`, `{{Current version}}`. |
+| Generated tables | `{{Data/Food table}}`, `{{Data/Renamed items}}`, `{{Data/Enchantments}}` (and `/New`, `/Vanilla`, which take notes by enchantment id: `{{Data/Enchantments/New|matcha:reach=...}}`), `{{Data/Blessings}}`, `{{Data/Ofuda}}`, `{{Data/Intrinsic items/<page>}}`, `{{Data/Trades/<Profession>}}`, `{{Data/Loot/<namespace>/<path>}}`, `{{Data/Advancements/<tab>}}`, `{{Data/Station/<station>}}`, `{{Data/Fishing/...}}`, `{{Data/Splash texts}}`, `{{Current version}}`. |
+| Difficulty and set bonus data | `{{Data/Difficulty}}` (all mob changes), `{{Data/Difficulty/<Mob>}}` (one mob's table), `{{Data/Difficulty/<Mob>/Infobox|max_health}}` (one attribute in a line, for infoboxes), `{{Data/Set bonus/<score>}}` (a table per equipment score) and `{{Data/Set bonus|adamant_armour=4}}` ("Absorption I (2 extra hearts) for 31 seconds every 30 seconds"; `show=every` or `show=lasts` gives just the seconds), all generated from the pack's functions. A note for one row of a table goes in a parameter named by the row ID: `{{Data/Difficulty/Zombie|max_health/baby=...}}`. |
 
 ## Versions
 
-The documented version is the latest release, currently `{{Current version}}`. Wherever the
-repository's `main` branch already differs from that release (bug fixes after
-1.12.2-beta), describe `main`, since that is what the next download will contain, and
-note the difference in History. Version pages are titled `Matcha Flavoured <version>`
+The documented version is the latest release, currently `{{Current version}}`: the download
+players have. The data and every `{{Source|...}}` link come from the commit that release was made
+from (`tools/source.lock`). Where the repository's `main` branch already differs (bug fixes and
+features after the release), describe the release in the body and the difference as upcoming:
+`{{Upcoming|type=section}}` (or `type=page`) above content that exists only on `main`, and a
+`{{History line|Upcoming|2=...}}` row. Cite that code at a commit on `main`:
+`{{Source|path|at=<commit>}}`. Version pages are titled `Matcha Flavoured <version>`
 (e.g. "Matcha Flavoured 1.10") and history lines link to them.
 
 ## Pictures

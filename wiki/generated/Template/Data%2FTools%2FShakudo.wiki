@@ -1,0 +1,15 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Shakudo Pickaxe}}{{{Shakudo Pickaxe|}}} || 1000 || 9 || data-sort-value="3" | 3 (no drops) || 4 || 4 || [[Silk Touch]]
+|-
+| {{ItemLink|Shakudo Axe}}{{{Shakudo Axe|}}} || 1000 || 9 || data-sort-value="0" | — || 9 || 1 || [[Silk Touch]]<br />[[Shakudo equipment|Life steal]]
+|-
+| {{ItemLink|Shakudo Shovel}}{{{Shakudo Shovel|}}} || 1000 || 9 || data-sort-value="0" | — || 4.5 || 1 || [[Silk Touch]]
+|-
+| {{ItemLink|Shakudo Hoe}}{{{Shakudo Hoe|}}} || 1000 || 9 || data-sort-value="0" | — || 1 || 7 || [[Silk Touch]]
+|-
+| {{ItemLink|Shakudo Mattock}}{{{Shakudo Mattock|}}} || 1000 || 8 || data-sort-value="0" | — || 2 || 4 || [[Silk Touch]]
+|-
+| {{ItemLink|Shakudo Dolabra}}{{{Shakudo Dolabra|}}} || 1000 || 7 || data-sort-value="7" | 7 || 7 || 1 || [[Silk Touch]]
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

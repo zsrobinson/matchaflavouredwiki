@@ -6,7 +6,7 @@
 | {{Crafting|A2=Exposed Copper|B1=Exposed Copper|B2=Electric Inverter|B3=Electric Wire|C2=Exposed Copper|Output=Exposed Copper Bulb,4}}
 |-
 | [[Weathered Copper]]
-| [[Exposed Copper]] +<br />[[Potion]]
+| [[Exposed Copper]] +<br />{{MCW|Potion}}
 | {{Crafting|A1=Exposed Copper|B1=Potion|Output=Weathered Copper|shapeless=1}}
 |-
 | [[Exposed Copper Bars]]
@@ -61,7 +61,7 @@
 | [[Exposed Copper]]
 | {{Stonecutter|Input=Exposed Copper|Output=Exposed Cut Copper Stairs,4}}
 |-
-| [[Waxed Exposed Copper]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Exposed Copper}} <small>(vanilla recipe)</small>
 | [[Exposed Copper]] +<br />[[Wax]]
 | {{Crafting|A1=Exposed Copper|B1=Wax|Output=Waxed Exposed Copper|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

@@ -1,31 +1,31 @@
 <includeonly>{| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Chiseled Resin Bricks]] <small>(vanilla recipe)</small>
+| {{MCW|Chiseled Resin Bricks}} <small>(vanilla recipe)</small>
 | [[Resin Bricks]]
 | {{Stonecutter|Input=Resin Bricks|Output=Chiseled Resin Bricks}}
 |-
-| [[Resin Brick Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Resin Brick Slab}} <small>(vanilla recipe)</small>
 | 3 × [[Resin Bricks]]
 | {{Crafting|A1=Resin Bricks|B1=Resin Bricks|C1=Resin Bricks|Output=Resin Brick Slab,6}}
 |-
-| [[Resin Brick Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Resin Brick Slab}} <small>(vanilla recipe)</small>
 | [[Resin Bricks]]
 | {{Stonecutter|Input=Resin Bricks|Output=Resin Brick Slab,2}}
 |-
-| [[Resin Brick Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Resin Brick Stairs}} <small>(vanilla recipe)</small>
 | 6 × [[Resin Bricks]]
 | {{Crafting|A1=Resin Bricks|A2=Resin Bricks|A3=Resin Bricks|B2=Resin Bricks|B3=Resin Bricks|C3=Resin Bricks|Output=Resin Brick Stairs,4}}
 |-
-| [[Resin Brick Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Resin Brick Stairs}} <small>(vanilla recipe)</small>
 | [[Resin Bricks]]
 | {{Stonecutter|Input=Resin Bricks|Output=Resin Brick Stairs}}
 |-
-| [[Resin Brick Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Resin Brick Wall}} <small>(vanilla recipe)</small>
 | 6 × [[Resin Bricks]]
 | {{Crafting|A1=Resin Bricks|A2=Resin Bricks|B1=Resin Bricks|B2=Resin Bricks|C1=Resin Bricks|C2=Resin Bricks|Output=Resin Brick Wall,6}}
 |-
-| [[Resin Brick Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Resin Brick Wall}} <small>(vanilla recipe)</small>
 | [[Resin Bricks]]
 | {{Stonecutter|Input=Resin Bricks|Output=Resin Brick Wall}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

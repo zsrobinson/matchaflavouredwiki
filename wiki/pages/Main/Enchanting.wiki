@@ -23,72 +23,12 @@ Every blessing starts from a Hell-Bound Book, the pack's name for the {{MCW|Ench
 {{Main|Blessing}}
 A blessing is crafted by surrounding a Hell-Bound Book with themed ingredients. Each of the 23 blessing recipes produces a book with a fixed set of enchantments at fixed levels, named as a prayer or elegy to a deity or mythological figure. The table below lists them all.
 
-{| class="wikitable sortable"
-! Blessing !! Stored enchantments !! Notable ingredients
-|-
-| {{ItemLink|Prayer of Aeolus}} || [[Anemos]], {{MCW|Wind Burst}} I || 7 {{MCW|Wind Charge|wind charges}}, {{MCW|Block of Gold|block of gold}}
-|-
-| {{ItemLink|Prayer of Apollo}} || {{MCW|Impaling}} III, {{MCW|Piercing}} II || 4 [[Spectral Arrow]]s, 3 gold ingots, {{MCW|Disc Fragment|disc fragment}}
-|-
-| {{ItemLink|Prayer of Ares}} || {{MCW|Lunge}} II, {{MCW|Breach}} II || Iron sword or spear, shield, iron helmet, red dye
-|-
-| {{ItemLink|Prayer of Artemis}} || {{MCW|Power}} II, {{MCW|Multishot}} || 4 spectral arrows, 3 raw porkchops, [[Silver Bullion]]
-|-
-| {{ItemLink|Prayer of Cronus}} || {{MCW|Swift Sneak}} II, {{MCW|Soul Speed}} II || 4 sculk, 3 echo shards, iron hoe
-|-
-| {{ItemLink|Prayer of Daedalus}} || {{MCW|Efficiency}} III, [[Unbreaking]] III || [[Divine Favor]], diamond pickaxe, diamond axe, 4 Estus Ash, diamond
-|-
-| {{ItemLink|Prayer of Demeter}} || {{MCW|Frost Walker}} II, [[Frost Protection]] II || 4 golden apples, 3 blue ice, golden hoe
-|-
-| {{ItemLink|Prayer of Eros}} || {{MCW|Silk Touch}} || [[Shakudo Alloy]], 4 arrows, 3 Estus Ash
-|-
-| {{ItemLink|Prayer of Glaucus}} || {{MCW|Luck of the Sea}} III, {{MCW|Lure}} III, {{MCW|Loyalty}} I || 3 nautilus shells, azure bluet
-|-
-| {{ItemLink|Prayer of Lu Ban}} || [[Mending]] || Divine Favor, {{MCW|Block of Diamond|block of diamond}}, 6 diamonds
-|-
-| {{ItemLink|Prayer of Man}} || [[Warding]] 2, {{MCW|Smite}} II || 4 [[Baked Golden Apple]]s, 3 lapis lazuli, Silver Bullion
-|-
-| {{ItemLink|Prayer of Midas}} || [[Looting]] III, [[Fortune]] I || {{MCW|Ominous Bottle|ominous bottle}}, 3 blocks of gold, 4 Estus Ash
-|-
-| {{ItemLink|Prayer of Paris}} || {{MCW|Infinity}} || 7 spectral arrows, Stable Void
-|-
-| {{ItemLink|Prayer of Prometheus}} || [[Unbreaking]] II || [[Divine Fragment]], 3 diamonds, 4 Estus Ash
-|-
-| {{ItemLink|Prayer of St. Clement}} || [[Trailblaze]] III || {{MCW|Leather Boots|leather boots}}, 2 wool, 2 [[Obol]]s
-|-
-| {{ItemLink|Prayer of Talos}} || {{MCW|Density}} II, {{MCW|Knockback}} II, {{MCW|Punch}} II || 7 blocks of iron, [[Steel Alloy]]
-|-
-| {{ItemLink|Prayer of The Light}} || {{MCW|Smite}} IV, {{MCW|Channeling}} || 3 Silver Bullion, 4 Estus Ash, gold ingot
-|-
-| {{ItemLink|Prayer of Will}} || [[Reach]] I || 4 Stable Voids
-|-
-| {{ItemLink|Prayer of Yama}} || {{MCW|Flame}}, {{MCW|Fire Aspect}} I, {{MCW|Fire Protection}} III || 4 fire charges, 4 gold ingots
-|-
-| {{ItemLink|Prayer of Yamm}} || {{MCW|Depth Strider}} II, {{MCW|Riptide}} I, {{MCW|Aqua Affinity}}, {{MCW|Respiration}} II || 4 nautilus shells
-|-
-| {{ItemLink|Elegy of Arachnae}} || {{MCW|Bane of Arthropods}} V || 4 spider eyes
-|-
-| {{ItemLink|Elegy of Hyacinthus}} || [[Zephyr]] I || 4 wind charges, 3 feathers, [[Hyacinth]]
-|-
-| {{ItemLink|Elegy of Icarus}} || [[Feather Falling]] II || 4 wind charges, 3 feathers, [[Wax]]
-|}
+{{Data/Blessings}}
 
 === Ofuda ===
 The [[Mouthpiece]] (the pack's librarian) trades an [[Ofuda]], an enchanted book with its own prayer, for five of the [[Sacred texts|sacred texts]], each with one or two [[Crystal Heart]]s. Apart from loot and [[Adamant equipment|adamant equipment]], which is smithed with Protection I, Sharpness I or Efficiency, these are the only source of {{MCW|Protection}} and {{MCW|Sharpness}}. The only other source of Mending besides loot is the [[Prayer of Lu Ban]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/2/quran.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_sword.json}}</ref>
 
-{| class="wikitable"
-! Level !! Book traded !! Prayer !! Stored enchantments
-|-
-| Apprentice || [[The Avesta]] + Crystal Heart || Prayer of The God-King || {{MCW|Efficiency}} II, Unbreaking I
-|-
-| Apprentice || [[The Quran]] + Crystal Heart || Prayer of The Prophet || {{MCW|Protection}} II
-|-
-| Apprentice || [[The Tanakh]] + Crystal Heart || Prayer of Exodus || {{MCW|Loyalty}} III, Trailblaze III, {{MCW|Power}} II
-|-
-| Journeyman || [[The Book of Enoch]] + Crystal Heart || Prayer of Samyaza || {{MCW|Sharpness}} III
-|-
-| Expert || [[The Lesser Key of Solomon]] + 2 Crystal Hearts || Prayer of Belial || Mending
-|}
+{{Data/Ofuda}}
 
 === Other sources ===
 Enchantments can still be found rather than crafted:
@@ -100,6 +40,8 @@ Enchantments can still be found rather than crafted:
 {{Main|Anvil}}
 Blessings are applied like any enchanted book: combine the item and the book in an anvil. The pack lowers the anvil cost multiplier of every vanilla enchantment to 1, the lowest value, so combining books costs few levels.<ref>{{Source|MF_datapack/data/minecraft/enchantment/mending.json}}</ref> The pack's own enchantments have an anvil cost of 0, except [[Frost Protection]] and [[Riposte]] (2).
 
+In 1.12.2, the blessings for [[Anemos]], Frost Protection, [[Reach]], [[Trailblaze]] and [[Zephyr]] store those enchantments under their old <code>main:</code> ids, shown in the tooltip as "ERROR: Please wear me to update" ("ERROR: Please hold me to update" for Anemos). They turn into the real enchantments once the item is worn or held; see [[Blessing#Old enchantment ids]].
+
 === Experience ===
 The player cannot keep {{MCW|Experience|experience}}. Every tick, the pack sets the experience level and points of each player to 0.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction}}</ref> After a player opens an anvil, the next change to their inventory gives them 100 levels and exempts them from the reset until a shared 31-second timer runs out, so anvil work never lacks levels.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/set_xp.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/check_anvil_interaction.mcfunction}}</ref> The timer restarts whenever any player's inventory changes, and the check that ends the exemption applies to all players at once.
 
@@ -110,6 +52,7 @@ Whenever the player's inventory changes, every item in the main inventory and ho
 Besides the vanilla rules, the pack adds some incompatibilities:
 * Silk Touch, Fortune and the [[Electrum equipment|electrum]] tool intrinsic are mutually exclusive.<ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/exclusive_set/mining.json}}</ref> The [[Adamant equipment|adamant]] tool intrinsic is exclusive with Silk Touch.<ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_mining.json}}</ref>
 * [[Slaughter]] is exclusive with the vanilla damage enchantments (Sharpness, Smite, Bane of Arthropods, Impaling, Density and Breach).
+* The [[magic protection]] intrinsics of shakudo armor and the shakudo elytra use the vanilla armor exclusive set, so they are exclusive with Protection, Blast Protection, Fire Protection and Projectile Protection.<ref>{{Source|MF_datapack/data/matcha/enchantment/magic_protection.json}}</ref>
 * The [[intrinsic]] enchantments of alloy equipment are exclusive with the other intrinsics for the same kind of item: the armor intrinsics (adamant, electrum, shakudo and the shakudo elytra) with each other, and the weapon intrinsics (adamant, shakudo and the four [[Warding]] levels) with each other.<ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_armor.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_weapon.json}}</ref>
 
 == Enchanting table ==

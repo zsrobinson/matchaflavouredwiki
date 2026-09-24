@@ -28,6 +28,7 @@ It keeps the iron item ID, so a [[blast furnace]] melts it back into a single ir
 
 == Notes ==
 * The hand-written tooltip hides the real attributes and shows knockback resistance 2 (real value 0.2).<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_chestplate.json}}</ref>
+* In 1.12.2 the armor does not show on the wearer. Its equipment asset is set to <code>minecraft:steel</code>, but the resource pack defines the steel armor textures as <code>matcha:steel</code>, so the game finds no model to draw.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_chestplate.json}}</ref><ref>{{Source|MF_resourcepack/assets/matcha/equipment/steel.json}}</ref> Copies made with <code>/trigger update_item</code> have the same problem.
 
 == History ==
 {{History|
@@ -38,6 +39,7 @@ It keeps the iron item ID, so a [[blast furnace]] melts it back into a single ir
 {{History line|1.10|Armor raised from 6 to 7 and toughness lowered from 2 to 1, to match the rest of the set.}}
 {{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip.}}
 {{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
+{{History line|Upcoming|2=The armor texture shows on the wearer again: the equipment asset is corrected to <code>matcha:steel</code>, including for pieces updated with <code>/trigger update_item</code>.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_chestplate.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == References ==

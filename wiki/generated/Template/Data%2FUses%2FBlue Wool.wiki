@@ -17,11 +17,11 @@
 | <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
 | {{Crafting|A1=Any Wool|Output=String,4|shapeless=1}}
 |-
-| [[Blue Bed]] <small>(vanilla recipe)</small>
+| {{MCW|Blue Bed}} <small>(vanilla recipe)</small>
 | 3 × [[Blue Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
 | {{Crafting|A1=Blue Wool|A2=Any Planks|B1=Blue Wool|B2=Any Planks|C1=Blue Wool|C2=Any Planks|Output=Blue Bed}}
 |-
-| [[Blue Harness]] <small>(vanilla recipe)</small>
+| {{MCW|Blue Harness}} <small>(vanilla recipe)</small>
 | 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Blue Wool]]
 | {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Blue Wool|C1=Sturdy Leather|C2=Glass|Output=Blue Harness}}
 |-
@@ -85,7 +85,7 @@
 | [[Yellow Dye]] +<br />[[White Wool]] or [[Orange Wool]] or [[Magenta Wool]] or [[Light Blue Wool]] or [[Lime Wool]] or [[Pink Wool]] or [[Gray Wool]] or [[Light Gray Wool]] or [[Cyan Wool]] or [[Purple Wool]] or [[Blue Wool]] or [[Brown Wool]] or [[Green Wool]] or [[Red Wool]] or [[Black Wool]]
 | {{Crafting|A1=Yellow Dye|B1=White Wool;Orange Wool;Magenta Wool;Light Blue Wool;Lime Wool;Pink Wool;Gray Wool;Light Gray Wool;Cyan Wool;Purple Wool;Blue Wool;Brown Wool;Green Wool;Red Wool;Black Wool|Output=Yellow Wool|shapeless=1}}
 |-
-| [[Painting]] <small>(vanilla recipe)</small>
+| {{MCW|Painting}} <small>(vanilla recipe)</small>
 | 8 × [[Stick]] +<br /><span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
 | {{Crafting|A1=Stick|A2=Stick|A3=Stick|B1=Stick|B2=Any Wool|B3=Stick|C1=Stick|C2=Stick|C3=Stick|Output=Painting}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

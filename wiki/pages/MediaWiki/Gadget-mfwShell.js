@@ -139,6 +139,16 @@
 		dark.innerHTML = icon( 'M8.4 1.2a8.3 8.3 0 1 0 10.4 10.4A7 7 0 0 1 8.4 1.2' ) + 'Toggle dark mode';
 		dark.addEventListener( 'click', toggleTheme );
 		panel.insertBefore( dark, panel.firstChild );
+		// the Talk tab becomes a button after the article, as on the mobile site
+		var talk = document.querySelector( '#ca-mfw-talk a' ), content = document.getElementById( 'content' );
+		if ( talk && content ) {
+			var button = document.createElement( 'a' );
+			button.id = 'mfw-talk-button';
+			button.className = 'noprint';
+			button.href = talk.href;
+			button.innerHTML = icon( 'M0 8v8a2 2 0 0 0 2 2h1v3l3-3h8a2 2 0 0 0 2-2v-2H4V8zm18-7H6a2 2 0 0 0-2 2v8h14l2 2V3a2 2 0 0 0-2-2' ) + 'Talk';
+			content.appendChild( button );
+		}
 
 		var menuButton = document.getElementById( 'mfw-menu-button' );
 		var searchButton = document.getElementById( 'mfw-search-button' );

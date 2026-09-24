@@ -2,9 +2,9 @@
 '''Adamant equipment''' replaces netherite. It is [[Diamond equipment|diamond equipment]] upgraded with [[Adamant Alloy|adamant alloy]]; its armor carries [[Doom]], its weapons inflict Weakness, and its tools smelt what they mine.
 
 == Obtaining ==
-Adamant alloy is crafted from four [[Adamant Scrap|adamant scrap]], four gold ingots and a [[Divine Fragment|divine fragment]]. Diamond equipment is upgraded at a [[Smithing Table|smithing table]] ([[Smithing Upgrade Template|template]] for the dolabra, mattock and claymore). It is repaired with blocks of diamond or adamant scrap.
+Adamant alloy is crafted from four [[Adamant Scrap|adamant scrap]], four gold ingots and a [[Divine Fragment|divine fragment]]. Diamond equipment is upgraded at a [[Smithing Table|smithing table]] ([[Smithing Upgrade Template|template]] for the dolabra, mattock and claymore). It is repaired with blocks of diamond or adamant scrap, except the leggings, which take blocks of diamond or blocks of gold.
 
-In the video the developer says adamant "requires diamond blocks, gold blocks, or adamant scrap to repair. That means even in late game, you'll need to go mining for materials."<ref>{{Cite video|quote=except for adamant, which requires diamond blocks, gold blocks, or adamant scrap to repair. That means even in late game, you'll need to go mining for materials.}}</ref> In the current code only the adamant leggings from the <code>matcha:equipment/adamant/leggings</code> loot table accept gold blocks; smithed adamant gear does not.<ref>{{Source|MF_datapack/data/matcha/loot_table/equipment/adamant/leggings.json}}</ref>
+In the video the developer says adamant "requires diamond blocks, gold blocks, or adamant scrap to repair. That means even in late game, you'll need to go mining for materials."<ref>{{Cite video|quote=except for adamant, which requires diamond blocks, gold blocks, or adamant scrap to repair. That means even in late game, you'll need to go mining for materials.}}</ref> In 1.12.2 only the adamant leggings accept gold blocks, both smithed and from the <code>matcha:equipment/adamant/leggings</code> loot table, and they do not accept adamant scrap even though their tooltip lists it.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_leggings.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/equipment/adamant/leggings.json}}</ref> In an upcoming update, smithed leggings take adamant scrap instead of gold blocks, like the rest of the set.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_leggings.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 
 == Characteristics ==
 * Tools, including the axe, have the smelting intrinsic, Efficiency and Unbreaking II.
@@ -15,48 +15,14 @@ The 1.12.2 notes say the Doom rework "fits Adamant's apocryphal title much more,
 
 == Stats ==
 === Tools ===
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Adamant Pickaxe}} || 5000 || 15 || 55 || 6 || 1.2 || [[Efficiency]] II<br />{{G|Smelting}} Smelting<br />[[Unbreaking]] II
-|-
-| {{ItemLink|Adamant Axe}} || 5000 || 15 || — || 10 || 1 || [[Efficiency]] II<br />{{G|Smelting}} Smelting<br />{{G|Weakness}} Weakness<br />[[Unbreaking]] II
-|-
-| {{ItemLink|Adamant Shovel}} || 5000 || 15 || — || 6.5 || 1 || {{G|Smelting}} Smelting<br />[[Efficiency]] II<br />[[Unbreaking]] II
-|-
-| {{ItemLink|Adamant Hoe}} || 5000 || 15 || — || 1 || 4 || {{G|Smelting}} Smelting<br />[[Unbreaking]] II<br />[[Efficiency]] II
-|-
-| {{ItemLink|Adamant Mattock}} || 5000 || 13 || — || 1 || 4 || [[Efficiency]] I<br />{{G|Smelting}} Smelting<br />[[Unbreaking]] II
-|-
-| {{ItemLink|Adamant Dolabra}} || 5000 || 13 || 55 || 7 || 1 || [[Unbreaking]] II<br />{{G|Smelting}} Smelting<br />[[Efficiency]] I
-|}
+{{Data/Tools/Adamant}}
 
 === Weapons ===
-{| class="wikitable sortable"
-! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
-|-
-| {{ItemLink|Adamant Sword}} || 3000 || 8 || 1.6 || — || [[Sharpness]] I<br />{{G|Weakness}} Weakness<br />[[Unbreaking]] II
-|-
-| {{ItemLink|Adamant Spear}} || 5000 || 5 || 0.87 || — || [[Sharpness]] I<br />[[Unbreaking]] II<br />{{G|Weakness}} Weakness
-|-
-| {{ItemLink|Adamant Claymore}} || 3000 || 9 || 1 || — || [[Unbreaking]] II<br />{{G|Weakness}} Weakness<br />[[Sharpness]] I
-|}
+{{Data/Weapons/Adamant}}
 
 === Armor ===
 [[File:Adamant armor render.png|thumb|120px|A full set of adamant armor]]
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Adamant Helmet}} || 1000 || 3 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3]]<br />[[Unbreaking]] II<br />[[Protection]] I
-|-
-| {{ItemLink|Adamant Chestplate}} || 1000 || 8 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3]]<br />[[Unbreaking]] II<br />[[Protection]] I
-|-
-| {{ItemLink|Adamant Leggings}} || 1000 || 6 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3]]<br />[[Unbreaking]] II<br />[[Protection]] I
-|-
-| {{ItemLink|Adamant Boots}} || 1000 || 3 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3]]<br />[[Unbreaking]] II<br />[[Protection]] I
-|- class="sortbottom"
-! Full set !! !! 20 !! 12 !! 0.4 !! colspan="2" |
-|}
+{{Data/Armor/Adamant}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 

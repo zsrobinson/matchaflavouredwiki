@@ -6,7 +6,7 @@
 | {{Crafting|A2=Block of Copper|B1=Block of Copper|B2=Electric Inverter|B3=Electric Wire|C2=Block of Copper|Output=Copper Bulb,4}}
 |-
 | [[Exposed Copper]]
-| [[Block of Copper]] +<br />[[Potion]]
+| [[Block of Copper]] +<br />{{MCW|Potion}}
 | {{Crafting|A1=Block of Copper|B1=Potion|Output=Exposed Copper|shapeless=1}}
 |-
 | [[Shakudo Alloy]]
@@ -34,18 +34,18 @@
 | {{Stonecutter|Input=Block of Copper|Output=Lightning Rod,4}}
 |-
 | [[Bolt Armor Trim Smithing Template]] <small>(vanilla recipe)</small>
-| 7 × [[Diamond]] +<br />[[Bolt Armor Trim Smithing Template]] +<br />[[Block of Copper]] or [[Waxed Block of Copper]]
+| 7 × [[Diamond]] +<br />[[Bolt Armor Trim Smithing Template]] +<br />[[Block of Copper]] or {{MCW|Waxed Block of Copper}}
 | {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Bolt Armor Trim Smithing Template|B2=Block of Copper;Waxed Block of Copper|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Bolt Armor Trim Smithing Template,2}}
 |-
-| [[Chiseled Copper]] <small>(vanilla recipe)</small>
+| {{MCW|Chiseled Copper}} <small>(vanilla recipe)</small>
 | [[Block of Copper]]
 | {{Stonecutter|Input=Block of Copper|Output=Chiseled Copper,4}}
 |-
-| [[Copper Grate]] <small>(vanilla recipe)</small>
+| {{MCW|Copper Grate}} <small>(vanilla recipe)</small>
 | 4 × [[Block of Copper]]
 | {{Crafting|A2=Block of Copper|B1=Block of Copper|B3=Block of Copper|C2=Block of Copper|Output=Copper Grate,4}}
 |-
-| [[Copper Grate]] <small>(vanilla recipe)</small>
+| {{MCW|Copper Grate}} <small>(vanilla recipe)</small>
 | [[Block of Copper]]
 | {{Stonecutter|Input=Block of Copper|Output=Copper Grate,4}}
 |-
@@ -61,15 +61,15 @@
 | [[Block of Copper]]
 | {{Stonecutter|Input=Block of Copper|Output=Cut Copper,4}}
 |-
-| [[Cut Copper Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Copper Slab}} <small>(vanilla recipe)</small>
 | [[Block of Copper]]
 | {{Stonecutter|Input=Block of Copper|Output=Cut Copper Slab,8}}
 |-
-| [[Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Copper Stairs}} <small>(vanilla recipe)</small>
 | [[Block of Copper]]
 | {{Stonecutter|Input=Block of Copper|Output=Cut Copper Stairs,4}}
 |-
-| [[Waxed Block of Copper]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Block of Copper}} <small>(vanilla recipe)</small>
 | [[Block of Copper]] +<br />[[Wax]]
 | {{Crafting|A1=Block of Copper|B1=Wax|Output=Waxed Block of Copper|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

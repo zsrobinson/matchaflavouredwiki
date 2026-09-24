@@ -2,15 +2,15 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Prayer of Lu Ban]]
-| 6 × [[Diamond]] +<br />[[Divine Favor]] +<br />[[Hell-Bound Book]] +<br />[[Block of Diamond]]
+| 6 × [[Diamond]] +<br />[[Divine Favor]] +<br />[[Hell-Bound Book]] +<br />{{MCW|Block of Diamond}}
 | {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Divine Favor|B2=Hell-Bound Book|B3=Block of Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Prayer of Lu Ban}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Diamond Material)]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Diamond]]
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />{{MCW|Block of Diamond}}
 | {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Diamond|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Diamond Material)}}
 |-
 | [[Diamond]] <small>(vanilla recipe)</small>
-| [[Block of Diamond]]
+| {{MCW|Block of Diamond}}
 | {{Crafting|A1=Block of Diamond|Output=Diamond,9|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

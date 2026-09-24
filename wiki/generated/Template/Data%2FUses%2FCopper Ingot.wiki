@@ -97,8 +97,8 @@
 | [[Copper Ingot]]
 | {{Stonecutter|Input=Copper Ingot|Output=Copper Trapdoor}}
 |-
-| [[Brush]] <small>(vanilla recipe)</small>
-| [[Feather]] +<br />[[Copper Ingot]] +<br />[[Stick]]
+| {{MCW|Brush}} <small>(vanilla recipe)</small>
+| {{MCW|Feather}} +<br />[[Copper Ingot]] +<br />[[Stick]]
 | {{Crafting|A1=Feather|A2=Copper Ingot|A3=Stick|Output=Brush}}
 |-
 | [[Copper Bars]] <small>(vanilla recipe)</small>
@@ -109,7 +109,7 @@
 | 9 × [[Copper Ingot]]
 | {{Crafting|A1=Copper Ingot|A2=Copper Ingot|A3=Copper Ingot|B1=Copper Ingot|B2=Copper Ingot|B3=Copper Ingot|C1=Copper Ingot|C2=Copper Ingot|C3=Copper Ingot|Output=Block of Copper}}
 |-
-| [[Copper Chest]] <small>(vanilla recipe)</small>
+| {{MCW|Copper Chest}} <small>(vanilla recipe)</small>
 | 8 × [[Copper Ingot]] +<br />[[Chest]]
 | {{Crafting|A1=Copper Ingot|A2=Copper Ingot|A3=Copper Ingot|B1=Copper Ingot|B2=Chest|B3=Copper Ingot|C1=Copper Ingot|C2=Copper Ingot|C3=Copper Ingot|Output=Copper Chest}}
 |-
@@ -117,7 +117,7 @@
 | 6 × [[Copper Ingot]]
 | {{Crafting|A1=Copper Ingot|A2=Copper Ingot|A3=Copper Ingot|B1=Copper Ingot|B2=Copper Ingot|B3=Copper Ingot|Output=Copper Door,3}}
 |-
-| [[Copper Nugget]] <small>(vanilla recipe)</small>
+| {{MCW|Copper Nugget}} <small>(vanilla recipe)</small>
 | [[Copper Ingot]]
 | {{Crafting|A1=Copper Ingot|Output=Copper Nugget,9|shapeless=1}}
 |-

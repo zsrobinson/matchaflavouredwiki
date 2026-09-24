@@ -22,7 +22,7 @@ Place the datapack in the world's <code>datapacks</code> folder and have players
 * '''Difficulty''': the pack reads the world difficulty on load. After changing it, reload the world (or run <code>/reload</code>). The load message confirms the difficulty. See [[Difficulty]].
 * '''True darkness''': to turn it off, delete <code>data/minecraft/dimension_type/overworld.json</code> in the datapack and rename <code>overworld_no_true_darkness.txt</code> to <code>overworld.json</code>, then restart the world.<ref>{{Source|MF_datapack/data/minecraft/dimension_type/overworld_no_true_darkness.txt}}</ref>
 * '''Accessibility''': the README links an accessible version of the resource pack and a community resource pack with vanilla-style textures.
-* '''Gamerules''' such as keep inventory are set only the first time the pack loads, so they can be changed afterward.<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction}}</ref>
+* '''Gamerules''' such as keep inventory are set by the pack's first-load setup, which runs when a player first joins the world and again the first time a player joins after the pack is updated. They can be changed afterward, but may need to be changed again after an update.<ref>{{Source|MF_datapack/data/matcha/function/setup/first_load.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref> See [[Death#Keeping items]].
 
 == Updating ==
 Replace both the datapack and resource pack files. Seeing a name such as <code>item.kleispack.filler</code> means only the datapack was updated. Items from before 1.12.2 may need <code>/trigger update_item</code>. See [[Updating items]].

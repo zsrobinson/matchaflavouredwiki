@@ -1,12 +1,12 @@
 <includeonly>{| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Dried Ghast]] <small>(vanilla recipe)</small>
-| 8 × [[Ghast Tear]] +<br />[[Soul Sand]]
+| {{MCW|Dried Ghast}} <small>(vanilla recipe)</small>
+| 8 × {{MCW|Ghast Tear}} +<br />{{MCW|Soul Sand}}
 | {{Crafting|A1=Ghast Tear|A2=Ghast Tear|A3=Ghast Tear|B1=Ghast Tear|B2=Soul Sand|B3=Ghast Tear|C1=Ghast Tear|C2=Ghast Tear|C3=Ghast Tear|Output=Dried Ghast}}
 |-
-| [[End Crystal]] <small>(vanilla recipe)</small>
-| 7 × [[Glass]] +<br />[[Eye of Ender]] +<br />[[Ghast Tear]]
+| {{MCW|End Crystal}} <small>(vanilla recipe)</small>
+| 7 × [[Glass]] +<br />[[Eye of Ender]] +<br />{{MCW|Ghast Tear}}
 | {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Eye of Ender|B3=Ghast Tear|C1=Glass|C2=Glass|C3=Glass|Output=End Crystal}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

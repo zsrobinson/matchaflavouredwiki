@@ -1,0 +1,76 @@
+<includeonly>{| class="wikitable sortable"
+! Input !! Output !! Time !! Experience
+|-
+| {{ItemLink|Adamant Pickaxe}}, {{ItemLink|Adamant Shovel}}, {{ItemLink|Adamant Axe}} and <span class="explain" title="Adamant Hoe, Adamant Sword, Adamant Helmet, Adamant Chestplate, Adamant Leggings, Adamant Boots, Adamant Horse Armor, Adamant Nautilus Armor, Adamant Spear">9 more</span> || {{ItemLink|Adamant Alloy}}{{{matcha:blast/netherite_ingot_from_blasting_netherite_materials|}}} || data-sort-value="100" | 5 s || 0.2
+|-
+| {{ItemLink|Ancient Debris|mcw=Ancient Debris}} || {{ItemLink|Adamant Scrap}} <small>(vanilla recipe)</small>{{{minecraft:netherite_scrap_from_blasting|}}} || data-sort-value="100" | 5 s || 2
+|-
+| {{ItemLink|Polished Andesite}} || {{ItemLink|Andesite}}{{{matcha:blast/andesite_from_blasting_polished_andesite|}}} || data-sort-value="100" | 5 s || 1
+|-
+| {{ItemLink|Block of Raw Copper|mcw=Block of Raw Copper}} || {{ItemLink|Block of Copper}}{{{matcha:blast/copper_block_from_blasting_raw_copper_block|}}} || data-sort-value="200" | 10 s || 9
+|-
+| {{ItemLink|Block of Raw Gold|mcw=Block of Raw Gold}} || {{ItemLink|Block of Gold}}{{{matcha:blast/gold_block_from_blasting_raw_gold_block|}}} || data-sort-value="200" | 10 s || 9
+|-
+| {{ItemLink|Block of Raw Iron|mcw=Block of Raw Iron}} || {{ItemLink|Block of Iron}}{{{matcha:blast/iron_block_from_blasting_raw_iron_block|}}} || data-sort-value="200" | 10 s || 6
+|-
+| {{ItemLink|Deepslate}} or {{ItemLink|Cracked Deepslate Bricks}} or {{ItemLink|Cracked Deepslate Tiles}} or {{ItemLink|Polished Deepslate}} || {{ItemLink|Cobbled Deepslate}}{{{matcha:blast/cobbled_deepslate|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Limestone}} || {{ItemLink|Cobblestone}}{{{matcha:blast/cobblestone_from_blasting_stone|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Copper Pickaxe}}, {{ItemLink|Copper Shovel}}, {{ItemLink|Copper Axe}} and <span class="explain" title="Copper Hoe, Copper Sword, Copper Spear, Copper Helmet, Copper Chestplate, Copper Leggings, Copper Boots, Raw Copper, Copper Horse Armor, Copper Nautilus Armor">10 more</span> || {{ItemLink|Copper Ingot}}{{{matcha:blast/copper_ingot_from_blasting_copper_materials|}}} || data-sort-value="100" | 5 s || 0.2
+|-
+| {{ItemLink|Raw Copper|mcw=Raw Copper}} || {{ItemLink|Copper Ingot}} <small>(vanilla recipe)</small>{{{minecraft:copper_ingot_from_blasting_raw_copper|}}} || data-sort-value="100" | 5 s || 0.7
+|-
+| {{ItemLink|Deepslate Bricks}} || {{ItemLink|Cracked Deepslate Bricks}}{{{matcha:blast/cracked_deepslate_bricks|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Deepslate Tiles}} || {{ItemLink|Cracked Deepslate Tiles}}{{{matcha:blast/cracked_deepslate_tiles|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Hellbricks}} || {{ItemLink|Cracked Hellbricks}}{{{matcha:blast/cracked_nether_bricks|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Polished Blackstone Bricks}} || {{ItemLink|Cracked Polished Blackstone Bricks}}{{{matcha:blast/cracked_polished_blackstone_bricks|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Stone Bricks}} || {{ItemLink|Cracked Stone Bricks}}{{{matcha:blast/cracked_stone_bricks|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Diamond Pickaxe}}, {{ItemLink|Diamond Shovel}}, {{ItemLink|Diamond Axe}} and <span class="explain" title="Diamond Hoe, Diamond Sword, Diamond Spear, Diamond Helmet, Diamond Chestplate, Diamond Leggings, Diamond Boots, Diamond Horse Armor, Diamond Nautilus Armor, Raw Diamond">10 more</span> || {{ItemLink|Diamond}}{{{matcha:blast/diamond_from_blasting_diamond_materials|}}} || data-sort-value="100" | 5 s || 0.2
+|-
+| {{ItemLink|Polished Diorite}} || {{ItemLink|Diorite}}{{{matcha:blast/diorite_from_blasting_polished_diorite|}}} || data-sort-value="100" | 5 s || 1
+|-
+| {{ItemLink|Gilded Hellstone}} || {{ItemLink|Gold Ingot}} <small>(vanilla recipe)</small>{{{minecraft:gold_ingot_from_blasting_nether_gold_ore|}}} || data-sort-value="100" | 5 s || 1
+|-
+| {{ItemLink|Golden Pickaxe}}, {{ItemLink|Golden Shovel}}, {{ItemLink|Golden Axe}} and <span class="explain" title="Golden Hoe, Golden Sword, Golden Spear, Golden Crown, Golden Chestplate, Golden Leggings, Golden Boots, Raw Gold, Golden Horse Armor, Golden Nautilus Armor">10 more</span> || {{ItemLink|Gold Ingot}}{{{matcha:blast/gold_ingot_from_blasting_gold_materials|}}} || data-sort-value="100" | 5 s || 0.2
+|-
+| {{ItemLink|Raw Gold|mcw=Raw Gold}} || {{ItemLink|Gold Ingot}} <small>(vanilla recipe)</small>{{{minecraft:gold_ingot_from_blasting_raw_gold|}}} || data-sort-value="100" | 5 s || 1
+|-
+| {{ItemLink|Polished Granite}} || {{ItemLink|Granite}}{{{matcha:blast/granite_from_blasting_polished_granite|}}} || data-sort-value="100" | 5 s || 1
+|-
+| {{ItemLink|Cobbled Deepslate}} or {{ItemLink|Cobblestone}} || {{ItemLink|Gravel}}{{{matcha:blast/gravel|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Cactus|mcw=Cactus}} || {{ItemLink|Green Dye}}{{{matcha:blast/green_dye|}}} || data-sort-value="50" | 2.5 s || 0.05
+|-
+| {{ItemLink|Hellstone}} || {{ItemLink|Hellbrick}}{{{matcha:blast/nether_brick|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Iron Pickaxe}}, {{ItemLink|Iron Shovel}}, {{ItemLink|Iron Axe}} and <span class="explain" title="Iron Hoe, Iron Sword, Iron Helmet, Iron Chestplate, Iron Leggings, Iron Boots, Iron Horse Armor, Chainmail Helmet, Chainmail Chestplate, Chainmail Leggings, Chainmail Boots, Raw Iron, Iron Nautilus Armor, Iron Spear">14 more</span> || {{ItemLink|Iron Ingot}}{{{matcha:blast/iron_ingot_from_blasting_iron_materials|}}} || data-sort-value="100" | 5 s || 0.2
+|-
+| {{ItemLink|Raw Iron|mcw=Raw Iron}} || {{ItemLink|Iron Ingot}} <small>(vanilla recipe)</small>{{{minecraft:iron_ingot_from_blasting_raw_iron|}}} || data-sort-value="100" | 5 s || 0.7
+|-
+| {{ItemLink|Smooth Stone}} or {{ItemLink|Cracked Stone Bricks}} || {{ItemLink|Limestone}}{{{matcha:blast/stone_from_blasting_smooth_stone|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Sand}} || {{ItemLink|Quartz}}{{{matcha:blast/quartz|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Gravel}} || {{ItemLink|Sand}}{{{matcha:blast/sand|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Smooth Sandstone}} || {{ItemLink|Sandstone}}{{{matcha:blast/sandstone_from_blasting_smooth_sandstone|}}} || data-sort-value="100" | 5 s || 0.01
+|-
+| {{ItemLink|Raw Silver}} || {{ItemLink|Silver Bullion}}{{{matcha:blast/silver_from_blasting_raw_silver|}}} || data-sort-value="100" | 5 s || 3
+|-
+| {{ItemLink|Carbon-Rich Iron}} || {{ItemLink|Steel Alloy}}{{{matcha:blast/steel_alloy|}}} || data-sort-value="100" | 5 s || 0.7
+|-
+| {{ItemLink|Chiseled Tuff Bricks|mcw=Chiseled Tuff Bricks}} || {{ItemLink|Tuff}}{{{matcha:blast/tuff_from_blasting_chiseled_tuff_bricks|}}} || data-sort-value="100" | 5 s || 1
+|-
+| {{ItemLink|Chiseled Tuff|mcw=Chiseled Tuff}} || {{ItemLink|Tuff}}{{{matcha:blast/tuff_from_blasting_chiseled_stuff|}}} || data-sort-value="100" | 5 s || 1
+|-
+| {{ItemLink|Polished Tuff}} || {{ItemLink|Tuff}}{{{matcha:blast/tuff_from_blasting_polished_tuff|}}} || data-sort-value="100" | 5 s || 1
+|-
+| {{ItemLink|Tuff Bricks}} || {{ItemLink|Tuff}}{{{matcha:blast/tuff_from_blasting_tuff_bricks|}}} || data-sort-value="100" | 5 s || 1
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit. Hand notes go after the output, keyed by recipe ID: <code><nowiki>{{Data/Station/Blast Furnace|matcha:blast/andesite_from_blasting_polished_andesite=...}}</nowiki></code>.
+[[Category:Generated data]]</noinclude>

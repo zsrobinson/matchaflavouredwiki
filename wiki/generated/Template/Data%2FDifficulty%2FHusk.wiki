@@ -1,0 +1,33 @@
+<includeonly>{| class="wikitable"
+! Attribute !! Easy !! Normal !! Hard
+|-
+! Max health (adult){{{max_health|}}}
+| vanilla || {{Hp|30}} || {{Hp|40}}
+|-
+! Max health (baby){{{max_health/baby|}}}
+| {{Hp|4}} || {{Hp|4}} || {{Hp|7}}
+|-
+! Movement speed (adult){{{movement_speed|}}}
+| vanilla || 0.25 || 0.265
+|-
+! Attack damage (adult){{{attack_damage|}}}
+| vanilla || 10 || 15
+|-
+! Armor (adult){{{armor|}}}
+| vanilla || 12 || 14
+|-
+! Follow range (adult){{{follow_range|}}}
+| vanilla || 50 || 60
+|-
+! Knockback resistance (adult){{{knockback_resistance|}}}
+| vanilla || 0.9 || 1
+|-
+! Step height (adult){{{step_height|}}}
+| vanilla || 1 || 1
+|-
+! Movement efficiency (adult){{{movement_efficiency|}}}
+| vanilla || 1 || 1
+|-
+! Water movement efficiency (adult){{{water_movement_efficiency|}}}
+| vanilla || 1 || 1
+|}</includeonly><noinclude>Generated from the pack's spawn functions (<code>mechanics/spawn_mechanic</code>). A note for a row goes in a parameter named by the row ID. [[Category:Generated data]]</noinclude>

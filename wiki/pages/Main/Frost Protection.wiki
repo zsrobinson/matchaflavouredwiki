@@ -9,7 +9,7 @@
 '''Frost Protection''' is an [[enchantment]] added by [[Matcha Flavoured]] for chestplates. It protects against freezing damage and makes the wearer immune to [[freezing water]].
 
 == Obtaining ==
-The [[Prayer of Demeter]] stores Frost Protection II along with Frost Walker II. It is the only source.
+The [[Prayer of Demeter]] gives Frost Protection II along with Frost Walker II. It is the only source. In 1.12.2 the prayer stores the old <code>main:freezing_protection</code>, which turns into Frost Protection II within two ticks of the chestplate being worn.<ref>{{Source|MF_datapack/data/main/item_modifier/update_freezing_protection.json}}</ref>
 
 == Behavior ==
 === Freezing water ===
@@ -23,7 +23,8 @@ Its anvil cost multiplier is 2.
 == History ==
 {{History|
 {{History line|0.5-alpha|Added.<ref>{{Cite changelog|0.5-alpha|quote=Frost Protection Enchantment (Grants immunity to frozen water at level III)}}</ref>}}
-{{History line|1.12.2|Moved from the <code>main</code> to the <code>matcha</code> namespace.}}
+{{History line|1.12.2|Moved from the <code>main</code> to the <code>matcha</code> namespace, although the Prayer of Demeter still gave the old enchantment.}}
+{{History line|Upcoming|2=The Prayer of Demeter stores Frost Protection directly.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/frost_walker_frost_protection.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == Notes ==

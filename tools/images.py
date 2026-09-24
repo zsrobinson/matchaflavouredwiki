@@ -1058,6 +1058,41 @@ def campfire_frames(soul=False):
     return strip, n
 
 
+def pack_badge():
+    """An 88x31 footer badge, like minecraft.wiki's: the pack's icon and its name in the game's font,
+    linking to Modrinth."""
+    font = tex('font', 'ascii.png')
+    cell = font.width // 16
+
+    def text(im, x, y, s, rgb):
+        for c in s:
+            if c == ' ':
+                x += 4
+                continue
+            o = ord(c)
+            g = font.crop(((o % 16) * cell, (o // 16) * cell, (o % 16 + 1) * cell, (o // 16 + 1) * cell))
+            bb = g.getbbox()
+            w = bb[2] if bb else 0
+            a = g.split()[3]
+            im.paste(Image.new('RGBA', g.size, tuple(v // 4 for v in rgb) + (255,)), (x + 1, y + 1), a)  # shadow
+            im.paste(Image.new('RGBA', g.size, rgb + (255,)), (x, y), a)
+            x += w + 1
+
+    im = Image.new('RGBA', (88, 31), (38, 38, 38, 255))
+    d = ImageDraw.Draw(im)
+    d.line((0, 0, 87, 0), fill=(90, 90, 90, 255))
+    d.line((0, 0, 0, 30), fill=(90, 90, 90, 255))
+    d.line((0, 30, 87, 30), fill=(15, 15, 15, 255))
+    d.line((87, 0, 87, 30), fill=(15, 15, 15, 255))
+    icon = Image.open(os.path.join(os.path.dirname(RP), 'pack.png')).convert('RGBA')
+    icon = icon.resize((25, 25), Image.NEAREST)
+    im.alpha_composite(icon, (3, 3))
+    text(im, 31, 3, 'Matcha', (140, 200, 90))
+    text(im, 31, 12, 'Flavoured', (140, 200, 90))
+    text(im, 31, 21, 'Modrinth', (170, 170, 170))
+    return im
+
+
 def gui_assets():
     os.makedirs(GUI_OUT, exist_ok=True)
     out = {}
@@ -1106,6 +1141,8 @@ def gui_assets():
     # hearts from the pack's HUD (pink in this pack), for {{Hp}}
     for h in ('full', 'half', 'container'):
         save(tex('gui', 'sprites', 'hud', 'heart', h + '.png'), 'heart-' + h)
+
+    save(pack_badge(), 'badge-pack')
 
     # the custom font's glyph sheet, white, for tooltips (tinted by CSS mask like the game tints text)
     sheet = tex('font', 'custom_emojis.png')

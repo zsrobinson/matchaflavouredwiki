@@ -1,0 +1,28 @@
+<includeonly>{| class="wikitable sortable"
+! Input !! Output !! Time !! Experience
+|-
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood">Any logs that burn</span> || {{ItemLink|Charcoal}} <small>(vanilla recipe)</small>{{{minecraft:charcoal|}}} || data-sort-value="200" | 10 s || 0.15
+|-
+| {{ItemLink|Mossy Cobblestone}} || {{ItemLink|Cobblestone}}{{{matcha:oven/cobblestone_from_mossy_cobblestone|}}} || data-sort-value="50" | 2.5 s || 0.1
+|-
+| {{ItemLink|Bush}} || {{ItemLink|Dead Bush}}{{{matcha:oven/dead_bush|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Grass Block|mcw=Grass Block}} || {{ItemLink|Dirt}}{{{matcha:oven/dirt_from_smelting_grass_block|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Hellstone}} || {{ItemLink|Hellbricks}}{{{matcha:crafting/nether_bricks_from_smelting_netherrack|}}} || data-sort-value="200" | 10 s || 0.1
+|-
+| <span class="explain" title="Jungle Leaves, Oak Leaves, Spruce Leaves, Pale Oak Leaves, Dark Oak Leaves, Acacia Leaves, Birch Leaves, Azalea Leaves, Flowering Azalea Leaves, Mangrove Leaves, Cherry Leaves">Any leaves</span> || {{ItemLink|Leaf Litter|mcw=Leaf Litter}} <small>(vanilla recipe)</small>{{{minecraft:leaf_litter|}}} || data-sort-value="200" | 10 s || 0.1
+|-
+| {{ItemLink|Sea Pickle|mcw=Sea Pickle}} || {{ItemLink|Lime Dye}} <small>(vanilla recipe)</small>{{{minecraft:lime_dye_from_smelting|}}} || data-sort-value="200" | 10 s || 0.1
+|-
+| {{ItemLink|Sugar Cane|mcw=Sugar Cane}} || {{ItemLink|Molasses}}{{{matcha:food/oven/molasses|}}} || data-sort-value="100" | 5 s || 0.01
+|-
+| {{ItemLink|Short Grass}} or {{ItemLink|Fern}} || {{ItemLink|Short Dry Grass}}{{{matcha:oven/short_dry_grass|}}} || data-sort-value="100" | 5 s || 0.01
+|-
+| {{ItemLink|Wet Sponge|mcw=Wet Sponge}} || {{ItemLink|Sponge}}{{{matcha:oven/sponge|}}} || data-sort-value="50" | 2.5 s || 0.15
+|-
+| {{ItemLink|Mossy Stone Bricks}} || {{ItemLink|Stone Bricks}}{{{matcha:oven/stone_bricks_from_mossy_stone_bricks|}}} || data-sort-value="50" | 2.5 s || 0.1
+|-
+| {{ItemLink|Tall Grass}} or {{ItemLink|Large Fern}} || {{ItemLink|Tall Dry Grass}}{{{matcha:oven/tall_dry_grass|}}} || data-sort-value="100" | 5 s || 0.01
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit. Hand notes go after the output, keyed by recipe ID: <code><nowiki>{{Data/Station/Oven|matcha:crafting/nether_bricks_from_smelting_netherrack=...}}</nowiki></code>.
+[[Category:Generated data]]</noinclude>

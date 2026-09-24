@@ -2,63 +2,63 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Waxed Copper Bulb]]
-| 3 × [[Waxed Block of Copper]] +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
+| 3 × {{MCW|Waxed Block of Copper}} +<br />[[Electric Inverter]] +<br />[[Electric Wire]]
 | {{Crafting|A2=Waxed Block of Copper|B1=Waxed Block of Copper|B2=Electric Inverter|B3=Electric Wire|C2=Waxed Block of Copper|Output=Waxed Copper Bulb,4}}
 |-
 | [[Waxed Copper Bars]]
-| [[Waxed Block of Copper]]
+| {{MCW|Waxed Block of Copper}}
 | {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Bars,36}}
 |-
 | [[Waxed Copper Chain]]
-| [[Waxed Block of Copper]]
+| {{MCW|Waxed Block of Copper}}
 | {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Chain,54}}
 |-
 | [[Waxed Copper Door]]
-| [[Waxed Block of Copper]]
+| {{MCW|Waxed Block of Copper}}
 | {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Door,6}}
 |-
 | [[Waxed Copper Trapdoor]]
-| [[Waxed Block of Copper]]
+| {{MCW|Waxed Block of Copper}}
 | {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Trapdoor,9}}
 |-
 | [[Waxed Lightning Rod]]
-| [[Waxed Block of Copper]]
+| {{MCW|Waxed Block of Copper}}
 | {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Lightning Rod,4}}
 |-
 | [[Bolt Armor Trim Smithing Template]] <small>(vanilla recipe)</small>
-| 7 × [[Diamond]] +<br />[[Bolt Armor Trim Smithing Template]] +<br />[[Block of Copper]] or [[Waxed Block of Copper]]
+| 7 × [[Diamond]] +<br />[[Bolt Armor Trim Smithing Template]] +<br />[[Block of Copper]] or {{MCW|Waxed Block of Copper}}
 | {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Bolt Armor Trim Smithing Template|B2=Block of Copper;Waxed Block of Copper|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Bolt Armor Trim Smithing Template,2}}
 |-
 | [[Copper Ingot]] <small>(vanilla recipe)</small>
-| [[Waxed Block of Copper]]
+| {{MCW|Waxed Block of Copper}}
 | {{Crafting|A1=Waxed Block of Copper|Output=Copper Ingot,9|shapeless=1}}
 |-
-| [[Waxed Chiseled Copper]] <small>(vanilla recipe)</small>
-| [[Waxed Block of Copper]]
+| {{MCW|Waxed Chiseled Copper}} <small>(vanilla recipe)</small>
+| {{MCW|Waxed Block of Copper}}
 | {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Chiseled Copper,4}}
 |-
-| [[Waxed Copper Grate]] <small>(vanilla recipe)</small>
-| 4 × [[Waxed Block of Copper]]
+| {{MCW|Waxed Copper Grate}} <small>(vanilla recipe)</small>
+| 4 × {{MCW|Waxed Block of Copper}}
 | {{Crafting|A2=Waxed Block of Copper|B1=Waxed Block of Copper|B3=Waxed Block of Copper|C2=Waxed Block of Copper|Output=Waxed Copper Grate,4}}
 |-
-| [[Waxed Copper Grate]] <small>(vanilla recipe)</small>
-| [[Waxed Block of Copper]]
+| {{MCW|Waxed Copper Grate}} <small>(vanilla recipe)</small>
+| {{MCW|Waxed Block of Copper}}
 | {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Copper Grate,4}}
 |-
 | [[Waxed Cut Copper]] <small>(vanilla recipe)</small>
-| 4 × [[Waxed Block of Copper]]
+| 4 × {{MCW|Waxed Block of Copper}}
 | {{Crafting|A1=Waxed Block of Copper|A2=Waxed Block of Copper|B1=Waxed Block of Copper|B2=Waxed Block of Copper|Output=Waxed Cut Copper,4}}
 |-
 | [[Waxed Cut Copper]] <small>(vanilla recipe)</small>
-| [[Waxed Block of Copper]]
+| {{MCW|Waxed Block of Copper}}
 | {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Cut Copper,4}}
 |-
-| [[Waxed Cut Copper Slab]] <small>(vanilla recipe)</small>
-| [[Waxed Block of Copper]]
+| {{MCW|Waxed Cut Copper Slab}} <small>(vanilla recipe)</small>
+| {{MCW|Waxed Block of Copper}}
 | {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Cut Copper Slab,8}}
 |-
-| [[Waxed Cut Copper Stairs]] <small>(vanilla recipe)</small>
-| [[Waxed Block of Copper]]
+| {{MCW|Waxed Cut Copper Stairs}} <small>(vanilla recipe)</small>
+| {{MCW|Waxed Block of Copper}}
 | {{Stonecutter|Input=Waxed Block of Copper|Output=Waxed Cut Copper Stairs,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

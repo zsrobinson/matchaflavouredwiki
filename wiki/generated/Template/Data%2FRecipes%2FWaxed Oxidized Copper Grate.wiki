@@ -2,11 +2,11 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Waxed Oxidized Copper Grate]] <small>(vanilla recipe)</small>
-| 4 × [[Waxed Oxidized Copper]]
+| {{MCW|Waxed Oxidized Copper Grate}} <small>(vanilla recipe)</small>
+| 4 × {{MCW|Waxed Oxidized Copper}}
 | {{Crafting|A2=Waxed Oxidized Copper|B1=Waxed Oxidized Copper|B3=Waxed Oxidized Copper|C2=Waxed Oxidized Copper|Output=Waxed Oxidized Copper Grate,4}}
 |-
-| [[Waxed Oxidized Copper Grate]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Oxidized Copper Grate}} <small>(vanilla recipe)</small>
 | [[Oxidized Copper Grate]] +<br />[[Wax]]
 | {{Crafting|A1=Oxidized Copper Grate|B1=Wax|Output=Waxed Oxidized Copper Grate|shapeless=1}}
 |}
@@ -14,8 +14,8 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Waxed Oxidized Copper Grate]] <small>(vanilla recipe)</small>
-| [[Waxed Oxidized Copper]]
+| {{MCW|Waxed Oxidized Copper Grate}} <small>(vanilla recipe)</small>
+| {{MCW|Waxed Oxidized Copper}}
 | {{Stonecutter|Input=Waxed Oxidized Copper|Output=Waxed Oxidized Copper Grate,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>
