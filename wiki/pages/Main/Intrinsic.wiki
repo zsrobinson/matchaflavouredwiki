@@ -6,7 +6,7 @@
 }}
 An '''intrinsic''' is a special ability hidden in an item. For [[food]], it is the status [[effect]] that an [[ingredient]] carries: raw, the ingredient does nothing special, but cooking it "awakens" the intrinsic, and every dish made from it grants the same effect for longer the more work goes into it.<ref>{{Cite video|quote=In Matcha Flavored, most ingredients have special abilities. I call them intrinsics. Cooking an ingredient can awaken whatever intrinsic is hidden in the raw food.}}</ref> [[Pumpkin]], for example, has no effect on its own, but [[Baked Pumpkin|baked pumpkin]] gives {{EffectLink|Resistance}} for {{Value|Baked Pumpkin|duration|effect=Resistance}}, [[Pumpkin Jam|pumpkin jam]] for {{Value|Pumpkin Jam|duration|effect=Resistance}} and a [[Pumpkin Empanada|pumpkin empanada]] for {{Value|Pumpkin Empanada|duration|effect=Resistance}}.
 
-The pack also uses the word for the built-in abilities of equipment, such as the [[Warding|warding]] of silver weapons or the knockback of [[Mattock|mattocks]]. Those are covered on the pages of the equipment and on [[Set bonus]]; this page covers ingredients.
+The pack also uses the word for the built-in abilities of equipment, such as the [[Warding|warding]] of silver weapons or the auto-smelting of [[Adamant equipment|adamant tools]]. Those are covered on the pages of the equipment and on [[Set bonus]]; this page covers ingredients.
 
 == Mechanics ==
 Most intrinsic ingredients have at least three dishes:<ref>{{Cite video|quote=All ingredients with intrinsics have at least three corresponding foods. Simple preparation, preservation, and a meal.}}</ref>
@@ -14,7 +14,7 @@ Most intrinsic ingredients have at least three dishes:<ref>{{Cite video|quote=Al
 * A '''preservation''': a jam, pickle, can or drink crafted from the ingredient and a [[Glass Bottle|glass bottle]]. Its effect usually lasts 3 to 5 minutes.
 * A '''meal''': a crafted dish, which lasts longest and heals the most.
 
-Some ingredients have further dishes, and pumpkin is also the key ingredient of an [[#Oven meals|oven meal]] that lasts 20 minutes. The effect doesn't depend on anything else in the recipe: meat, [[bread]], [[cheese]], [[dough]] and the other base ingredients have no intrinsic, so a dish only gains an effect from its intrinsic ingredients. A few dishes combine two, such as [[lumpia]] ([[carrot]] and [[Dried Kelp|kelp]]) or [[Warped Pizza|warped pizza]] ([[Warped Fungus|warped fungus]] and [[tomatoes]]).
+Some ingredients have further dishes, and pumpkin is also the key ingredient of an [[#Oven meals|oven meal]] that lasts 20 minutes. Meat, [[bread]], [[cheese]], [[dough]] and the other base ingredients have no intrinsic. Most dishes take their effects from their intrinsic ingredients, but not all: [[gimmari]] and [[bokguk]] contain carrots but give no Night Vision, and [[Kontomire-Dandelion Stew|kontomire-dandelion stew]] gives Regeneration without an apple. A few dishes combine two, such as [[lumpia]] ([[carrot]] and [[Dried Kelp|kelp]]) or [[Warped Pizza|warped pizza]] ([[Warped Fungus|warped fungus]] and [[tomatoes]]).
 
 The pack's README counts "12 food ingredients" with intrinsics, and the developer described two more as "secret ingredients" whose foods are hidden from the recipe book.<ref>{{Source|README.md}}</ref><ref>{{Cite video|quote=There are 12 ingredients with unique effects plus two more that act as secret ingredients, a few secret foods and four special meals that have to be cooked in an oven to make.}}</ref> The golden versions of [[Golden Apple|apples]] and [[Golden Carrot|carrots]] are hidden variants of their ingredients.
 
@@ -72,7 +72,7 @@ These ingredients' dishes never appear in the recipe book; see [[Secret recipes]
 |}
 
 == Oven meals ==
-There are five oven meals. Each is crafted as a [[stock]] and cooked for 15 seconds, heals {{Hp|20}} and gives the strongest version of its effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref>
+There are five oven meals. Each is crafted as a [[stock]] and cooked for 15 seconds (all but pumpkin curry can also be cooked on [[kindling]]), heals {{Hp|20}} and gives the strongest version of its effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref>
 
 {| class="wikitable"
 ! Meal !! Stock !! Intrinsic ingredients in the stock !! Effect
@@ -91,7 +91,7 @@ Unlike other dishes, the oven meals' effects are set per meal rather than by the
 
 == History ==
 {{History|
-{{History line|0.7-alpha|Preserves and meals now require the cooked ingredient (for example baked apples instead of apples).}}
+{{History line|0.7-alpha|Glow berry, sweet berry, apple, pumpkin, chorus fruit and cocoa dishes now require the cooked ingredient (for example baked apples instead of apples).}}
 {{History line|1.12.1-alpha|Baked pumpkin's Resistance extended from 10 seconds to 30 seconds. Pad Thai's Night Vision extended from 5:00 to 10:00. Pickled warped fungus became throwable.}}
 }}
 

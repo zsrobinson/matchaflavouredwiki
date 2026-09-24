@@ -15,7 +15,7 @@ Freezing biomes are those in the pack's <code>#minecraft:is_frozen</code> biome 
 Only the head matters: wading, swimming at the surface with the head above water, or riding a boat is safe.
 
 === Protection ===
-Any level of [[Frost Protection]] on the chestplate makes the player immune.<ref>{{Source|MF_datapack/data/matcha/predicate/armour_enchants/freezing_protection.json}}</ref> Frost Protection also reduces other freezing damage, such as from powder snow, by an amount that grows with its level.<ref>{{Source|MF_datapack/data/matcha/enchantment/freezing_protection.json}}</ref>
+Any level of [[Frost Protection]] on the chestplate makes the player immune.<ref>{{Source|MF_datapack/data/matcha/predicate/armour_enchants/freezing_protection.json}}</ref> Frost Protection also reduces other freezing damage, such as from powder snow, by 80% at every level: level I already gives 24 protection points, more than the cap of 20.<ref>{{Source|MF_datapack/data/matcha/enchantment/freezing_protection.json}}</ref>
 
 == Water in Hell ==
 The pack lets water exist in [[Hell]]: the dimension no longer evaporates water, so water can be placed with a bucket and flows.<ref>{{Source|MF_datapack/data/minecraft/dimension_type/the_nether.json}}</ref> Water is only allowed above the roof. When a player empties a water bucket while they are in Hell between Y=0 and Y=127, every water block within 20 blocks of them is removed on the same tick.<ref>{{Source|MF_datapack/data/matcha/function/environmental/nether_water.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/invalid_nether_water.json}}</ref> Above Y=127, on the bedrock roof, water stays, so it can be used for farming there.
