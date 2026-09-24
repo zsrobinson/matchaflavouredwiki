@@ -204,12 +204,12 @@ def write_site_files(out, indexed, redirects, titles):
                 '\n'.join(urls) + '\n</urlset>\n')
     with open(os.path.join(out, 'robots.txt'), 'w') as f:
         f.write('User-agent: *\nAllow: /\nDisallow: /pagefind/\n\nSitemap: %s/sitemap.xml\n' % SITE)
+    # Everything revalidates on every view (a 304 when unchanged). The pages reference stylesheets,
+    # scripts and images with ?v=<content hash> (fingerprint.py), and the Worker lets browsers keep
+    # those for a year. Files named without a version must not be cached on their own: after a deploy,
+    # a phone kept the old Vector.css for days next to the new site.js.
     with open(os.path.join(out, '_headers'), 'w') as f:
-        f.write('/_rl/*\n  Cache-Control: public, max-age=86400, stale-while-revalidate=604800\n'
-                '/assets/*\n  Cache-Control: public, max-age=604800\n'
-                '/images/*\n  Cache-Control: public, max-age=604800\n'
-                '/pagefind/*\n  Cache-Control: public, max-age=3600\n'
-                '/w/*\n  Cache-Control: public, max-age=300, stale-while-revalidate=86400\n')
+        f.write('/*\n  Cache-Control: public, max-age=0, must-revalidate\n')
     # Worker redirect table: exact redirects and a lowercase index of real titles
     table = {'redirects': resolve_redirects(redirects, titles), 'titles': {t.lower().replace(' ', '_'): t.replace(' ', '_') for t in titles}}
     os.makedirs(os.path.join(ROOT, 'src'), exist_ok=True)
