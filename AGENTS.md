@@ -185,7 +185,18 @@ the swap mid-way.
 - **What the export keeps and strips:** it removes MediaWiki's scripts except the theme boot, and keeps the `ca-mfw-*` GitHub tabs.
   It also replaces legacy Vector's fixed `width=1120` viewport with `device-width`, so phones get the vendored narrow-screen layout.
   Its `site.js` is `Gadget-mfwShell.js` and `Gadget-mfwTooltip.js` (plain DOM, no jQuery) plus `SITE_JS`.
-- **Search** is Pagefind (Component UI searchbox and the `/search/` page).
+- **Search** matches titles first, then Pagefind's full text. Pagefind alone ranked "fishing" below Tropical
+  Fish (it stems "fishing" to "fish" and favours short pages), had no typos or redirects, and let category
+  pages crowd results. So:
+  - `tools/search_index.py` writes `_static/search-titles.json` (title, URL, picture, lead sentence,
+    inbound links, redirects) and small thumbnails of big renders in `/images/search/`.
+  - `site/search.js` (appended to `site.js`) matches titles and redirects, drives the header box's
+    suggestions (MediaWiki's own `#searchInput`, so the skin styles it), and adds the title matches to
+    the `/search/` page (Pagefind's Component UI, loaded only there) and to the 404 page.
+    Enter goes to an exact title, as MediaWiki's "Go" does.
+  - Category pages are left out of the full-text index; its ranking settings are `RANKING` in `search.js`.
+  - Synonyms readers type belong in real redirects (`Changelog`, `Updates`), not in code.
+    `node --test tests/search.test.mjs` covers the matching.
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;
   it becomes the search snippet.

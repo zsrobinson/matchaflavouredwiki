@@ -44,8 +44,10 @@ The export includes:
 - the same shell script the live wiki uses: dark mode (applied before first paint) and
   collapsible sidebar sections;
 - small static replacements for animated recipe slots and sortable or collapsible tables;
-- **Pagefind** full-text search. The header search box is Pagefind's `<pagefind-searchbox>`
-  Component UI, and `/search/?q=…` is the full results page with category filters and item icons.
+- search, as a wiki does it: the header box suggests pages by title and redirect first (forgiving
+  case, accents, British spellings, plurals, typos and question words), each with its picture, then
+  **Pagefind** full-text results (`site/search.js`, data from `tools/search_index.py`).
+  `/search/?q=…` lists the title matches above Pagefind's full results and category filters.
 
 Deploy with Cloudflare Workers. The configuration is in `wrangler.jsonc`: static assets from `dist/`
 behind a tiny Worker (`src/worker.js`). The site is served at **https://matchaflavou.red**, and

@@ -7,7 +7,7 @@ Every page (all namespaces in the repo, plus categories) is rendered by MediaWik
 saved as dist/w/<Title>/index.html, so URLs stay the same as the live wiki (/w/Page_title).
 MediaWiki's dynamic JavaScript is replaced by one small static script (_static/site.js) that
 provides the few behaviours the pages need: animated recipe slots, the light/dark toggle,
-collapsible and sortable tables, and client-side title search (search.json). Stylesheets
+collapsible and sortable tables, and search (search_index.py, site/search.js). Stylesheets
 served by load.php are fetched once and saved as static files. Redirect pages become
 meta-refresh stubs. Links to things a static site cannot do (editing, history, special
 pages) are removed.
@@ -29,6 +29,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import build_xml  # noqa: E402
 import fingerprint  # noqa: E402
+import search_index  # noqa: E402
 import seo  # noqa: E402
 
 
@@ -61,6 +62,7 @@ class Exporter:
         self.redirects = {}  # 'Old_title' -> '/w/Target#anchor' (served as 301 by the Worker)
         self.indexed = {}  # title -> lastmod, for the sitemap
         self.dates = seo.git_dates()
+        self.search = {}  # title -> the title search's row (search_index.write)
 
     # --- stylesheets from load.php -------------------------------------------------
     def static_css(self, href):
@@ -118,8 +120,6 @@ class Exporter:
             doc = re.sub(pat, lambda m: m.group(0).replace(' ', ' data-pagefind-ignore ', 1), doc)
         doc = re.sub(r'(<div id="catlinks".*?</div></div>)', lambda m: re.sub(r'<a href="/w/Category:[^"]*" title="Category:[^"]*">([^<]*)</a>',
                      lambda a: a.group(0).replace('<a ', '<a data-pagefind-filter="category" ', 1), m.group(1)), doc, flags=re.S)
-        # item icon as the search result image: the first inventory slot image in the infobox
-        doc = re.sub(r'(<div class="infobox-invimages">.*?<img )', r'\1data-pagefind-meta="image[src]" ', doc, count=1, flags=re.S)
         doc = doc.replace('class="client-nojs', 'class="client-js')
         # CI builds serve pages from the parser cache, which stamps each one with a timestamp; with
         # it gone (and the limit report off in LocalSettings.php) an unchanged page exports identically
@@ -149,11 +149,16 @@ class Exporter:
         doc = re.sub(r'<li id="(?:t-|ca-(?!mfw-)|pt-|n-recentchanges|n-randompage)[^"]*"[^>]*>.*?</li>', '', doc, flags=re.S)
         doc = re.sub(r'href="/index\.php\?title=Special:Search[^"]*"', 'href="/search/"', doc)
         doc = re.sub(r'<a href="/w/Special:[^"]*"[^>]*>(.*?)</a>', r'\1', doc, flags=re.S)
+        # MediaWiki's own search box, styled by minecraft.wiki's skin; site/search.js adds the suggestions.
+        # Without the script it submits to the search page. The data paths get ?v= from fingerprint.py.
         doc = re.sub(r'<form action="/index\.php" id="searchform".*?</form>',
-                     # inside minecraft.wiki's search markup, so its bevelled search slot styles the box
-                     '<form action="/search/" id="searchform" class="vector-search-box-form"><div id="simpleSearch" class="vector-search-box-inner">'
-                     '<pagefind-searchbox id="mfw-searchbox" instance="header" placeholder="Search Matcha Flavoured Wiki" max-results="8" '
-                     'show-sub-results shortcut="/"></pagefind-searchbox></div></form>', doc, flags=re.S)
+                     '<form action="/search/" id="searchform" class="vector-search-box-form" data-titles="/_static/search-titles.json" '
+                     'data-pagefind="/pagefind/pagefind.js"><div id="simpleSearch" class="vector-search-box-inner">'
+                     '<input class="vector-search-box-input" type="search" name="q" placeholder="Search Matcha Flavoured Wiki" '
+                     'aria-label="Search Matcha Flavoured Wiki" autocapitalize="sentences" autocomplete="off" spellcheck="false" '
+                     'title="Search Matcha Flavoured Wiki [/]" id="searchInput">'
+                     '<input id="searchButton" class="searchButton" type="submit" title="Search the pages for this text" value="Search">'
+                     '</div></form>', doc, flags=re.S)
         doc = re.sub(r'<nav id="p-tb".*?</nav>', '', doc, flags=re.S)
         doc = re.sub(r'<li id="footer-info-lastmod".*?</li>', '', doc, flags=re.S)
         # the footer's last-edit date, from git (site/GitLinks.php leaves a link to the history)
@@ -181,6 +186,18 @@ class Exporter:
         doc = self.rewrite(fetch(self.base + '/w/' + urllib.parse.quote(url_title(title))))
         src, layer = seo.source_file(title, ns)
         is_main = title == 'Matcha Flavoured Wiki'
+        # search: the page's picture (Pagefind's result image too), and its row in the title search
+        image = search_index.thumbnail(self.out, search_index.page_image(doc, title), os.path.join(ROOT, 'site', 'images'))
+        if image:
+            doc = re.sub(r'(<h1 id="firstHeading".*?</h1>)', lambda m: m.group(1) + '<span hidden data-pagefind-meta="image[data-src]" data-src="%s"></span>' % html.escape(image), doc, count=1, flags=re.S)
+        if ns == 'Category':
+            # category pages are lists of links: they crowd out the articles in full-text results
+            # (the title search still finds them)
+            doc = doc.replace(' data-pagefind-body', '', 1)
+        self.search[title] = {'url': '/' if is_main else href_for(title), 'image': image,
+                              'desc': search_index.short_description(doc),
+                              'kind': {'Category': 'category', 'Project': 'project'}.get(ns, 'generated' if layer == 'generated' else 'article'),
+                              'links': search_index.link_targets(doc)}
         info = {'layer': layer, 'lastmod': self.dates.get(src), 'categories': seo.categories(doc),
                 'image': seo.infobox_image(doc), 'is_main': is_main,
                 # generated pages (vanilla items, data-only pages) are thin: keep them out of the index
@@ -193,80 +210,11 @@ class Exporter:
         return 'page'
 
 
-HEAD_EXTRA = ('<link rel="stylesheet" href="/pagefind/pagefind-component-ui.css">'
-              '<link rel="stylesheet" href="/_static/site.css">'
-              '<script type="module" src="/pagefind/pagefind-component-ui.js"></script>')
+HEAD_EXTRA = '<link rel="stylesheet" href="/_static/site.css">'
+# only the search page loads Pagefind's component UI (175 kB); the header box uses pagefind.js directly
+SEARCH_HEAD = ('<link rel="stylesheet" href="/pagefind/pagefind-component-ui.css">'
+               '<script type="module" src="/pagefind/pagefind-component-ui.js"></script>')
 THEME_BOOT = ''  # the head script from site/theme-boot.js is already in the page (added by LocalSettings.php)
-
-SITE_CSS = r"""/* Pagefind Component UI, styled to sit in minecraft.wiki's search slot and palette. */
-#p-search pagefind-searchbox, #mfw-searchbox {
-  --pf-font: inherit;
-  --pf-border-radius: 0;
-  --pf-input-height: 27px;
-  --pf-input-font-size: 13px;
-  --pf-searchbox-max-width: 100%;
-  --pf-background: #fff;
-  --pf-border: #888;
-  --pf-border-focus: #6BA41E;
-  --pf-text: #202122;
-  --pf-text-secondary: #54595d;
-  --pf-text-muted: #72777d;
-  --pf-hover: #eaf3dd;
-  --pf-mark: #3d7a0e;
-  --pf-dropdown-z-index: 1000;
-  display: block;
-  width: 100%;
-}
-#p-search { width: 20vw; min-width: 16em; max-width: 26em; }
-/* The input as minecraft.wiki draws it: translucent over the bevelled #simpleSearch slot (Gadget-mcw-vector.css),
-   no border, and the magnifier on the right in place of Pagefind's shortcut hint (the "/" shortcut still works) */
-#simpleSearch { height: 27px; }
-#p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input-wrapper { border: 0; border-radius: 0; box-shadow: none; background: none; }
-#p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input {
-  height: 27px; margin: 0; padding: 5px 2.15384615em 5px 0.4em; border: 0; border-radius: 0; outline: 0; box-shadow: none;
-  background: rgba(255, 255, 255, 0.5); color: #000; font-size: 13px;
-}
-#p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input::placeholder { color: var(--searchinput-placeholder-color); opacity: 1; }
-#p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input-wrapper::before, #p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input-wrapper .pf-search-icon { display: none; }
-#p-search #searchform #simpleSearch #mfw-searchbox .pf-trigger-shortcut { display: none; }
-#p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input-wrapper::after {
-  content: ""; position: absolute; top: 1px; bottom: 1px; right: 1px; width: 28px; pointer-events: none; opacity: 0.67;
-  background: no-repeat center / 16px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4-1.4 1.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8'/%3E%3C/svg%3E");
-}
-#p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input-wrapper { position: relative; }
-body.wgl-theme-dark #p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input { background: none; color: #fff; }
-body.wgl-theme-dark #p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input-wrapper::after { filter: invert(1); }
-/* Phones: the searchbox opens over the mobile header (MediaWiki:Vector.css), with a taller input for fingers */
-@media screen and (max-width: 720px) {
-  #p-search pagefind-searchbox { --pf-input-height: 36px; }
-  /* the mobile site's plain search field, not the desktop bevel */
-  #simpleSearch { top: 0; width: auto; min-width: 0; max-width: none; height: auto; border: 0; background: none; }
-  #simpleSearch::before, #simpleSearch::after { content: none; }
-  #p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input { height: 36px; padding: 6px 2.5em 6px 10px; background: #fff; border: 1px solid #a2a9b1; border-radius: 2px; font-size: 16px; }
-}
-#mfw-search-page {
-  --pf-font: inherit;
-  --pf-border-radius: 2px;
-  --pf-border-focus: #6BA41E;
-  --pf-mark: #3d7a0e;
-  --pf-image-width: 48px;
-  --pf-image-height: 48px;
-}
-#mfw-search-page .mfw-search-layout { display: grid; grid-template-columns: 14em minmax(0, 1fr); gap: 1.5em; margin-top: 1em; }
-#mfw-search-page .mfw-search-layout > div { min-width: 0; overflow: hidden; }
-#mfw-search-page mark, #mfw-searchbox mark { font-weight: bold; background: none; }
-@media (max-width: 800px) { #mfw-search-page .mfw-search-layout { grid-template-columns: 1fr; } }
-#mfw-search-page img, #mfw-searchbox img { image-rendering: pixelated; }
-body.wgl-theme-dark #p-search pagefind-searchbox, body.wgl-theme-dark #mfw-searchbox, body.wgl-theme-dark #mfw-search-page {
-  --pf-background: #1f1f1f;
-  --pf-border: #555;
-  --pf-text: #e6e6e6;
-  --pf-text-secondary: #c0c0c0;
-  --pf-text-muted: #9a9a9a;
-  --pf-hover: #2f3a24;
-  --pf-mark: #9ed36a;
-}
-"""
 
 SITE_JS = r"""// Static replacement for the MediaWiki scripts the wiki uses.
 (function () {
@@ -326,14 +274,6 @@ SITE_JS = r"""// Static replacement for the MediaWiki scripts the wiki uses.
     });
   });
 
-  // Search page: prefill from ?q= so the header searchbox's "see all results" lands here.
-  var q = new URLSearchParams(location.search).get('q');
-  if (q && document.getElementById('mfw-search-page')) {
-    customElements.whenDefined('pagefind-input').then(function () {
-      var input = document.querySelector('#mfw-search-page pagefind-input input');
-      if (input) { input.value = q; input.dispatchEvent(new Event('input', { bubbles: true })); }
-    });
-  }
 })();
 """
 
@@ -384,8 +324,8 @@ def main():
             f.write(open(os.path.join(ROOT, 'wiki', 'pages', 'MediaWiki', gadget), encoding='utf-8').read())
             f.write('\n')
         f.write(SITE_JS)
-    with open(os.path.join(out, '_static', 'site.css'), 'w') as f:
-        f.write(SITE_CSS)
+        f.write(open(os.path.join(ROOT, 'site', 'search.js'), encoding='utf-8').read())
+    shutil.copy(os.path.join(ROOT, 'site', 'search.css'), os.path.join(out, '_static', 'site.css'))
     for d in ('assets', 'images'):
         src = os.path.join(ROOT, 'site', d)
         if os.path.isdir(src):
@@ -396,15 +336,17 @@ def main():
         json.dump(titles + sorted(t for t, p in exportable.items() if re.match(r'\s*#REDIRECT', p[1], re.I) and t not in ex.case_redirects), f)
     # search page and root index, built from the main page's skin
     main_html = open(page_path(out, 'Matcha Flavoured Wiki'), encoding='utf-8').read()
+    # pages whose titles match (site/search.js) above Pagefind's full-text results
     search_body = ('<div id="mfw-search-page"><pagefind-input autofocus placeholder="Search Matcha Flavoured Wiki"></pagefind-input>'
                    '<div class="mfw-search-layout"><div><pagefind-filter-pane></pagefind-filter-pane></div>'
-                   '<div><pagefind-summary></pagefind-summary><pagefind-results show-images show-sub-results></pagefind-results></div></div></div>')
+                   '<div><div id="mfw-title-matches"></div><pagefind-summary></pagefind-summary>'
+                   '<pagefind-results show-images show-sub-results></pagefind-results></div></div></div>')
     search = re.sub(r'(<div id="mw-content-text"[^>]*>).*?(<div[^>]*class="printfooter")',
                     lambda m: '<div id="mw-content-text">' + search_body + m.group(2), main_html, flags=re.S)
     search = re.sub(r'<h1 id="firstHeading"[^>]*>.*?</h1>', '<h1 id="firstHeading" class="firstHeading">Search results</h1>', search, flags=re.S)
     search = re.sub(r'<title>.*?</title>', '<title>Search - Matcha Flavoured Wiki</title>', search)
     search = re.sub(r'<div id="catlinks".*?</div></div>', '', search, flags=re.S)
-    search = seo.utility_page(search, 'Search results')
+    search = seo.utility_page(search, 'Search results').replace('</head>', SEARCH_HEAD + '</head>', 1)
     os.makedirs(os.path.join(out, 'search'), exist_ok=True)
     open(os.path.join(out, 'search', 'index.html'), 'w', encoding='utf-8').write(search)
     root_redirect = ('<!doctype html><meta charset="utf-8"><title>Matcha Flavoured Wiki</title>'
@@ -412,9 +354,14 @@ def main():
                      '<a href="/w/Matcha_Flavoured_Wiki">Matcha Flavoured Wiki</a>')
     # the main page is served at / (its canonical URL); /w/Matcha_Flavoured_Wiki stays as an alias
     shutil.copy(page_path(out, 'Matcha Flavoured Wiki'), os.path.join(out, 'index.html'))
+    with open(page_path(out, 'Matcha Flavoured Wiki'), 'r+', encoding='utf-8') as f:  # searched once, as /
+        doc = f.read().replace(' data-pagefind-body', '', 1)
+        f.seek(0), f.truncate(), f.write(doc)
     # 404 page: the main page's shell with a not-found message and a case-insensitive redirect
     nf = re.sub(r'(<div id="mw-content-text"[^>]*>).*?(<div[^>]*class="printfooter")',
-                lambda m: '<div id="mw-content-text"><p>There is no page with this title. Try the search box above.</p>' + m.group(2),
+                # site/search.js lists the pages whose titles are closest to the address
+                lambda m: '<div id="mw-content-text"><p>There is no page with this title. Try the search box above.</p>'
+                          '<div id="mfw-notfound-matches"></div>' + m.group(2),
                 main_html, flags=re.S)
     nf = re.sub(r'<h1 id="firstHeading"[^>]*>.*?</h1>', '<h1 id="firstHeading" class="firstHeading">Page not found</h1>', nf, flags=re.S)
     nf = nf.replace('</head>', '<script>(function(){var m=location.pathname.match(/^\\/w\\/(.+)$/);if(!m)return;'
@@ -426,6 +373,7 @@ def main():
     # host hints: Netlify/Cloudflare Pages redirects, and disable Jekyll on GitHub Pages
     ex.redirects['Main_Page'] = '/'
     seo.write_site_files(out, ex.indexed, ex.redirects, titles)
+    search_index.write(out, ex.search, seo.resolve_redirects(ex.redirects, titles), ex.case_redirects)
     open(os.path.join(out, '.nojekyll'), 'w').close()
     # full-text search index (Pagefind); the component UI is served from /pagefind/
     import subprocess

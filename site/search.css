@@ -1,0 +1,139 @@
+/* Search on the static site (site/search.js). The header box is MediaWiki's own, styled by
+   minecraft.wiki's skin; its suggestions look like minecraft.wiki's (a picture, the title, a line
+   of description), in the wiki's palette. */
+#p-search { width: 20vw; min-width: 16em; max-width: 26em; }
+#p-search #searchform { position: relative; }
+#p-search #searchInput { width: 100%; height: 27px; margin: 0; padding: 5px 2.15384615em 5px 0.4em; font-size: 13px; }
+/* the magnifier, which legacy Vector draws from a stylesheet the export doesn't carry */
+#p-search #searchButton {
+	border: 0; padding: 0; cursor: pointer; color: transparent; text-indent: -99999px; overflow: hidden; opacity: 0.67;
+	background: no-repeat center / 16px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4-1.4 1.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8'/%3E%3C/svg%3E");
+}
+body.wgl-theme-dark #p-search #searchButton { filter: invert(1); }
+
+.mfw-suggest {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 1000;
+	width: max(100%, 25em);
+	max-width: calc(100vw - 16px);
+	max-height: calc(100vh - 100px);
+	overflow-y: auto;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #a2a9b1;
+	border-radius: 2px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+	line-height: 1.35;
+	text-align: left;
+}
+.mfw-suggest[hidden] { display: none; }
+.mfw-suggest-item, .mfw-suggest-footer, .mfw-title-match {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 6px 10px;
+	color: #202122;
+	text-decoration: none;
+}
+.mfw-suggest a:hover, .mfw-title-match:hover { text-decoration: none; }
+.mfw-suggest-current, .mfw-title-match:hover { background: #eaf3dd; }
+.mfw-suggest-thumb {
+	flex: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #c8ccd1;
+	border-radius: 2px;
+	background: #f8f9fa;
+	overflow: hidden;
+}
+.mfw-suggest-thumb img { max-width: 32px; max-height: 32px; image-rendering: pixelated; }
+.mfw-suggest-thumb svg { width: 20px; height: 20px; fill: #72777d; }
+.mfw-suggest-text { display: flex; flex-direction: column; min-width: 0; }
+.mfw-suggest-title { font-weight: bold; }
+.mfw-suggest-desc {
+	overflow: hidden;
+	color: #54595d;
+	font-size: 12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.mfw-suggest-desc mark { background: none; color: inherit; font-weight: bold; }
+.mfw-suggest-empty { padding: 8px 10px; color: #54595d; }
+.mfw-suggest-footer { border-top: 1px solid #c8ccd1; }
+.mfw-suggest-footer .mfw-suggest-thumb { border: 0; background: none; }
+
+/* The search page (built by tools/export_static.py): title matches, then Pagefind's full-text results */
+#mfw-search-page {
+	--pf-font: inherit;
+	--pf-border-radius: 2px;
+	--pf-border-focus: #6BA41E;
+	--pf-mark: #3d7a0e;
+	--pf-image-width: 48px;
+	--pf-image-height: 48px;
+}
+#mfw-search-page .mfw-search-layout { display: grid; grid-template-columns: 14em minmax(0, 1fr); gap: 1.5em; margin-top: 1em; }
+#mfw-search-page .mfw-search-layout > div { min-width: 0; overflow: hidden; }
+#mfw-search-page mark { font-weight: bold; background: none; }
+@media (max-width: 800px) { #mfw-search-page .mfw-search-layout { grid-template-columns: 1fr; } }
+#mfw-search-page img { image-rendering: pixelated; }
+h2.mfw-title-matches-head { margin: 0 0 0.4em; padding: 0; border: 0; font-size: 1em; font-weight: bold; font-family: inherit; }
+.mfw-title-matches-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));
+	gap: 2px 1em;
+	margin-bottom: 1.5em;
+}
+.mfw-title-match { padding: 4px 6px; border-radius: 2px; }
+#mfw-notfound-matches .mfw-title-matches-list { max-width: 40em; }
+
+body.wgl-theme-dark .mfw-suggest { background: #1f1f1f; border-color: #555; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); }
+body.wgl-theme-dark .mfw-suggest-item, body.wgl-theme-dark .mfw-suggest-footer, body.wgl-theme-dark .mfw-title-match { color: #e6e6e6; }
+body.wgl-theme-dark .mfw-suggest-current, body.wgl-theme-dark .mfw-title-match:hover { background: #2f3a24; }
+body.wgl-theme-dark .mfw-suggest-thumb { background: #2a2a2a; border-color: #555; }
+body.wgl-theme-dark .mfw-suggest-thumb svg { fill: #9a9a9a; }
+body.wgl-theme-dark .mfw-suggest-glyph img { filter: invert(1); }  /* glyphs are drawn dark */
+body.wgl-theme-dark .mfw-suggest-desc, body.wgl-theme-dark .mfw-suggest-empty { color: #b0b0b0; }
+body.wgl-theme-dark .mfw-suggest-footer { border-color: #555; }
+body.wgl-theme-dark #mfw-search-page {
+	--pf-background: #1f1f1f;
+	--pf-border: #555;
+	--pf-text: #e6e6e6;
+	--pf-text-secondary: #c0c0c0;
+	--pf-text-muted: #9a9a9a;
+	--pf-hover: #2f3a24;
+	--pf-mark: #9ed36a;
+}
+
+/* Phones: the search box opens over the mobile header (MediaWiki:Vector.css); the suggestions
+   take the screen's width under it, with rows tall enough for fingers */
+@media screen and (max-width: 720px) {
+	/* the mobile site's plain search field, not the desktop bevel */
+	#simpleSearch { top: 0; width: auto; min-width: 0; max-width: none; height: auto; border: 0; background: none; }
+	#simpleSearch::before, #simpleSearch::after { content: none; }
+	#p-search #searchform #simpleSearch #searchInput {
+		height: 36px; padding: 6px 2.5em 6px 10px; background: #fff; color: #202122;
+		border: 1px solid #a2a9b1; border-radius: 2px; font-size: 16px;
+	}
+	body.wgl-theme-dark #p-search #searchform #simpleSearch #searchInput { background: #1f1f1f; color: #e6e6e6; border-color: #555; }
+	#p-search #searchform #simpleSearch #searchButton { top: 4px; }
+	.mfw-suggest {
+		position: fixed;
+		top: 58px;
+		left: 0;
+		right: 0;
+		width: auto;
+		max-width: none;
+		max-height: calc(100vh - 58px);
+		border-width: 1px 0;
+		border-radius: 0;
+		font-size: 15px;
+	}
+	.mfw-suggest-item, .mfw-suggest-footer { padding: 8px 12px; min-height: 44px; }
+}
