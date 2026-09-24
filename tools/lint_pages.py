@@ -7,7 +7,9 @@ real "none"s, so this checks them against build/data.json (run tools/extract.py 
 first). Checks:
   - {{Infobox auto}}, {{Recipes}}, {{Uses}}, {{Sources}}: the item (the page title, or the first
     argument) exists in the pack, unless the page is a {{Vanilla}} item or a removed feature;
-  - every {{Data/...}} transclusion exists in wiki/generated;
+  - every {{Data/...}} transclusion exists in wiki/generated, and every named argument it passes is
+    one the generated template reads. Generated tables take hand-written notes keyed by row ID
+    ({{Data/Advancements/tutorial|matcha:tutorial/root=...}}); a note whose row is gone is an error;
   - every {{Source|path}} exists in the pack at the commit in tools/source.lock (these link to GitHub;
     a missing file means the page describes something that moved or is gone), or at the commit given
     with at= (code only on main, for content marked {{Upcoming}}).
@@ -26,6 +28,32 @@ import build_xml  # noqa: E402
 
 SRC = os.path.join(ROOT, 'source', 'matcha-flavoured')
 ITEM_TEMPLATE = re.compile(r'\{\{\s*(Infobox auto|Recipes|Uses|Sources)\s*(?:\|([^|{}]*))?(?=[|}])')
+
+
+def transclusions(text, prefix):
+    """(name, [top-level arguments]) for every {{<prefix>...}} in text, nested templates and links included."""
+    for m in re.finditer(r'\{\{\s*(' + re.escape(prefix) + r'[^|}]*)', text):
+        depth, i, args, start = 0, m.start(), [], None
+        while i < len(text):
+            two = text[i:i + 2]
+            if two in ('{{', '[['):
+                depth += 1
+                i += 2
+                continue
+            if two in ('}}', ']]'):
+                depth -= 1
+                i += 2
+                if depth == 0:
+                    if start is not None:
+                        args.append(text[start:i - 2])
+                    break
+                continue
+            if text[i] == '|' and depth == 1:
+                if start is not None:
+                    args.append(text[start:i])
+                start = i + 1
+            i += 1
+        yield m.group(1).strip(), args
 
 
 def main():
@@ -55,9 +83,16 @@ def main():
             if name not in items and not exempt:
                 problems.append('%s: {{%s}} names "%s", which is not an item in the pack (renamed or removed? '
                                 'a removed feature goes in [[Category:Removed features]])' % (title, m.group(1), name))
-        for m in re.finditer(r'\{\{\s*(Data/[^|}]+)', text):
-            if 'Template:' + m.group(1).strip() not in pages:
-                problems.append('%s: {{%s}} is not generated any more' % (title, m.group(1).strip()))
+        for name, args in transclusions(text, 'Data/'):
+            if 'Template:' + name not in pages:
+                problems.append('%s: {{%s}} is not generated any more' % (title, name))
+                continue
+            body = pages['Template:' + name][1]
+            for arg in args:
+                key = arg.split('=', 1)[0].strip() if '=' in arg else None
+                if key and '{{{%s|' % key not in body and '{{{%s}}}' % key not in body:
+                    problems.append('%s: {{%s}} has no row or parameter "%s" (a note for something that is gone?)'
+                                    % (title, name, key))
         for m in re.finditer(r'\{\{\s*Source\s*\|([^|}]+)((?:\|[^|}]*)*)\}\}', text):
             path = m.group(1).strip()
             at = re.search(r'\|\s*at\s*=\s*([0-9a-f]{7,40})', m.group(2))
