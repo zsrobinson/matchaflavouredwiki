@@ -7,11 +7,26 @@
 
 /* Git-managed wiki: no talk pages, editing, history or accounts */
 #ca-talk, #ca-history, #ca-viewsource, #ca-edit, #ca-ve-edit, #pt-login, #pt-login-2, #pt-createaccount,
-#pt-anonuserpage, #pt-anontalk, #pt-anoncontribs, #footer-icons .footer-copyrightico, .mw-editsection { display: none !important; }
+#pt-anonuserpage, #pt-anontalk, #pt-anoncontribs, .mw-editsection { display: none !important; }
 /* The toolbox only links to special pages, which the static site doesn't have */
 #p-tb { display: none !important; }
-/* Source-file line in the footer (site/GitLinks.php) */
-#footer-info-mfw-source code { background: none; border: 0; color: inherit; padding: 0; font-size: 95%; }
+/* Footer (site/GitLinks.php): the page record first, as tiles with the game's icons, then the license
+   line, the links and the badges. The footer is dark in both themes, as on minecraft.wiki. */
+#footer-info { display: flex; flex-direction: column; }
+#footer-info-mfw-record { order: -1; }
+#footer .mfw-recs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-bottom: 6px; }
+#footer .mfw-rec {
+	display: flex; gap: 10px; align-items: center; padding: 8px 10px; color: #e6e6e6;
+	background: rgba(0, 0, 0, 0.25); border: 2px solid rgba(255, 255, 255, 0.08); border-top-color: rgba(255, 255, 255, 0.18);
+}
+#footer .mfw-rec img { flex: none; image-rendering: pixelated; }
+#footer .mfw-rec-l { font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.7; }
+#footer .mfw-rec-v { font-size: 12.5px; line-height: 1.35; overflow-wrap: anywhere; }
+#footer .mfw-rec code { background: none; border: 0; color: inherit; padding: 0; font-size: 95%; }
+/* the badges are drawn for a dark footer: no dark-mode inversion (Gadget-mcw-vector.css), no link background */
+body.wgl-theme-dark #footer-icons { filter: none; }
+#footer-icons a { background: none; padding: 0; }
+#footer-icons img { image-rendering: pixelated; }
 
 /* ===== Phones: minecraft.wiki's mobile site (its Minerva skin) on the same pages =====
  * Up to 720px, where minecraft.wiki's own Vector CSS stops being a desktop layout: a sky-and-grass
@@ -250,4 +265,5 @@
 	#footer { margin: 0; padding: 16px; outline: 0; border: 0; background: url('/assets/mcw/Mobile-background.png') #202020; }
 	#footer::before, #footer::after { content: none; }
 	#footer li { float: none; margin: 0 0 0.5em; padding: 0; }
+	#footer .mfw-recs { grid-template-columns: 1fr; gap: 8px; }
 }

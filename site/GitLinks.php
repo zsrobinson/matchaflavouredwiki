@@ -87,26 +87,65 @@ $wgHooks['SkinTemplateNavigation::Universal'][] = static function ( $skin, &$lin
 	}
 };
 
+/** URL of an uploaded file (an item icon), or null. */
+function mfwFileUrl( $name ) {
+	$file = \MediaWiki\MediaWikiServices::getInstance()->getRepoGroup()->findFile( $name );
+	return $file ? $file->getUrl() : null;
+}
+
+/** The pack version the wiki describes (the generated Template:Data/Current version). */
+function mfwPackVersion() {
+	$text = @file_get_contents( '/var/www/wiki/generated/Template/Data%2FCurrent version.wiki' );
+	return ( $text && preg_match( '/<includeonly>([^<]+)<\/includeonly>/', $text, $m ) ) ? trim( $m[1] ) : null;
+}
+
+// Footer, after minecraft.wiki's: a record of where the page comes from (four tiles with the game's
+// icons), then the license and disclosure (MediaWiki:Copyright-footer), a row of links and the badges
+// ($wgFooterIcons). The page's last-edit date comes from git, so tools/export_static.py fills it in;
+// the live wiki shows a link to the history instead.
 $wgHooks['SkinAddFooterLinks'][] = static function ( $skin, $key, &$footerItems ) {
+	$title = $skin->getTitle();
+	if ( !$title || $title->isSpecialPage() ) {
+		return;
+	}
+	$src = mfwSourcePath( $title );
+	$about = \MediaWiki\Title\Title::newFromText( 'Matcha Flavoured Wiki:About' );
+	if ( $key === 'places' ) {
+		$contrib = \MediaWiki\Title\Title::newFromText( 'Matcha Flavoured Wiki:Contributing' );
+		// after MediaWiki's own "About Matcha Flavoured Wiki" (its privacy and disclaimer links are
+		// switched off by MediaWiki:Privacy and MediaWiki:Disclaimers)
+		$footerItems['mfw-contributing'] = '<a href="' . htmlspecialchars( $contrib->getLocalURL() ) . '">Contributing</a>';
+		if ( $src ) {
+			$footerItems['mfw-report'] = '<a href="' . htmlspecialchars( mfwIssueUrl( $title, $src[0] ) ) . '">Report a problem</a>';
+		}
+		global $mfwRepo;
+		$footerItems['mfw-github'] = '<a href="' . htmlspecialchars( $mfwRepo['url'] ) . '">Source on GitHub</a>';
+		return;
+	}
 	if ( $key !== 'info' ) {
 		return;
 	}
-	$title = $skin->getTitle();
-	$src = ( $title && !$title->isSpecialPage() ) ? mfwSourcePath( $title ) : null;
-	if ( !$src || $src[1] === 'missing' ) {
-		return;
+	$tile = static function ( $icon, $label, $value ) {
+		$url = mfwFileUrl( $icon );
+		$img = $url ? '<img src="' . htmlspecialchars( $url ) . '" width="32" height="32" alt="">' : '';
+		return "<div class=\"mfw-rec\">$img<div><div class=\"mfw-rec-l\">$label</div><div class=\"mfw-rec-v\">$value</div></div></div>";
+	};
+	$tiles = '';
+	if ( $src && $src[1] !== 'missing' ) {
+		[ $path ] = $src;
+		$tiles .= $tile( 'Book and Quill.png', 'Source file',
+			'<a href="' . htmlspecialchars( mfwGitHubUrl( 'blob', $path ) ) . '"><code>' . htmlspecialchars( $path ) . '</code></a>' );
+		$tiles .= $tile( 'Clock.png', 'Last edited',
+			'<a class="mfw-lastmod" data-src="' . htmlspecialchars( $path ) . '" href="' .
+			htmlspecialchars( mfwGitHubUrl( 'commits', $path ) ) . '">View history</a>' );
 	}
-	[ $path, $layer ] = $src;
-	$contrib = htmlspecialchars( \MediaWiki\Title\Title::newFromText( 'Matcha Flavoured Wiki:Contributing' )->getLocalURL() );
-	$blob = htmlspecialchars( mfwGitHubUrl( 'blob', $path ) );
-	$code = '<code>' . htmlspecialchars( $path ) . '</code>';
-	if ( $layer === 'pages' ) {
-		$footerItems['mfw-source'] = "This page's source is <a href=\"$blob\">$code</a>. To suggest a change, " .
-			'<a href="' . htmlspecialchars( mfwGitHubUrl( 'edit', $path ) ) . '">edit it on GitHub</a> and open a pull request ' .
-			"(<a href=\"$contrib\">how to contribute</a>).";
-	} else {
-		$footerItems['mfw-source'] = "This page is generated from the pack's source code (<a href=\"$blob\">$code</a>). " .
-			'To add writing, <a href="' . htmlspecialchars( mfwNewFileUrl( str_replace( 'wiki/generated/', 'wiki/pages/', $path ) ) ) .
-			"\">create a hand-written page</a> in its place (<a href=\"$contrib\">how to contribute</a>).";
+	$version = mfwPackVersion();
+	if ( $version ) {
+		$page = \MediaWiki\Title\Title::newFromText( "Matcha Flavoured $version" );
+		$tiles .= $tile( 'Compass.png', 'Describes', 'Matcha Flavoured <a href="' .
+			htmlspecialchars( $page->getLocalURL() ) . '">' . htmlspecialchars( $version ) . '</a>' );
 	}
+	$tiles .= $tile( 'Written Book.png', 'Written from', '<a href="' . htmlspecialchars( $about->getLocalURL() ) .
+		'#How_it_is_written">the pack\'s code, release notes and the developer\'s videos only</a>' );
+	$footerItems['mfw-record'] = "<div class=\"mfw-recs\">$tiles</div>";
 };

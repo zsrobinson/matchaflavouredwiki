@@ -8,8 +8,9 @@ debugging time.
 ## Non-negotiables
 - **Content lives in git.** Nobody edits through the web; MediaWiki is only a build-time renderer.
   Don't add login, editing or history features to the site. Link to GitHub instead
-  (`site/GitLinks.php`: the Talk / Edit / View source / View history tabs and the footer line). Talk opens
-  the page issue form (`.github/ISSUE_TEMPLATE/page.yml`); keep its field ids in step with `mfwIssueUrl`.
+  (`site/GitLinks.php`: the Talk / Edit / View source / View history tabs and the footer's page record). Talk
+  opens the page issue form (`.github/ISSUE_TEMPLATE/page.yml`); keep its field ids in step with `mfwIssueUrl`.
+  The footer's "Last edited" date comes from git, so `export_static.py` fills it in (the live wiki links the history).
 - **Sources:** the pack's code (`source/matcha-flavoured`, pinned in `tools/source.lock`), the official
   release notes (`source/changelogs`) and the developer's videos (`transcript.txt`, `sources/transcripts/`).
   Never other wikis, forks or third-party videos. Other sites may be read to find gaps (`wiki/AUDIT.md`),

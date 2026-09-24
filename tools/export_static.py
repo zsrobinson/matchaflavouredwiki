@@ -13,6 +13,7 @@ meta-refresh stubs. Links to things a static site cannot do (editing, history, s
 pages) are removed.
 """
 import argparse
+import datetime
 import hashlib
 import html
 import json
@@ -154,9 +155,15 @@ class Exporter:
                      '<pagefind-searchbox id="mfw-searchbox" instance="header" placeholder="Search Matcha Flavoured Wiki" max-results="8" '
                      'show-sub-results shortcut="/"></pagefind-searchbox></div></form>', doc, flags=re.S)
         doc = re.sub(r'<nav id="p-tb".*?</nav>', '', doc, flags=re.S)
-        doc = re.sub(r'<ul id="footer-icons".*?</ul>', '', doc, flags=re.S)
         doc = re.sub(r'<li id="footer-info-lastmod".*?</li>', '', doc, flags=re.S)
-        doc = re.sub(r'<div id="footer-places">.*?</div>|<ul id="footer-places">.*?</ul>', '', doc, flags=re.S)
+        # the footer's last-edit date, from git (site/GitLinks.php leaves a link to the history)
+        def lastmod(m):
+            date = self.dates.get(html.unescape(m.group(2)))
+            if not date:
+                return m.group(0).replace(' data-src="%s"' % m.group(2), '')
+            d = datetime.date.fromisoformat(date[:10])
+            return '<a class="mfw-lastmod"%s>%d %s %d</a>' % (m.group(3), d.day, d.strftime('%B'), d.year)
+        doc = re.sub(r'<a class="mfw-lastmod"( data-src="([^"]*)")([^>]*)>[^<]*</a>', lambda m: lastmod(m), doc)
         # image description pages are not exported: unlink files
         doc = re.sub(r'<a href="/w/File:[^"]*" class="mw-file-description"[^>]*>(.*?)</a>', r'\1', doc, flags=re.S)
         return doc

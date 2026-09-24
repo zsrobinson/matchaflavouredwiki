@@ -97,9 +97,15 @@ $wgUpgradeKey = 'matchawikiupgrade';
 
 $wgRightsPage = '';
 $wgRightsUrl = 'https://creativecommons.org/licenses/by-nc-sa/4.0/';
-$wgRightsText = 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0';
+$wgRightsText = 'CC BY-NC-SA 4.0';
 $wgRightsIcon = '';
-$wgFooterIcons['copyright'] = [];
+# 88x31 footer badges, as on minecraft.wiki: the license, and the pack on Modrinth (drawn by tools/images.py)
+$wgFooterIcons = [
+	'copyright' => [ 'copyright' => [ 'src' => '/assets/cc-by-nc-sa.png', 'url' => $wgRightsUrl,
+		'alt' => 'CC BY-NC-SA 4.0', 'width' => 88, 'height' => 31 ] ],
+	'mfw' => [ 'pack' => [ 'src' => '/assets/gui/badge-pack.png', 'url' => 'https://modrinth.com/datapack/matcha-flavoured',
+		'alt' => 'Matcha Flavoured on Modrinth', 'width' => 88, 'height' => 31 ] ],
+];
 
 $wgDiff3 = '/usr/bin/diff3';
 
