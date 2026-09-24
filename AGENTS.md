@@ -296,6 +296,8 @@ the swap mid-way.
     planks from slabs) is never the default. Raw materials are items with no recipe, items made only from
     each other (Oak Log and Oak Wood), and items the world gives whose every recipe undoes another (Coal).
     "The world gives" is the Sources tables minus chest loot and minus a block dropping itself.
+  - Hide spoilers: an item whose exported page (or linked section) a `{{Spoiler}}` box covers is in
+    `recipes.json`'s `z`; its rows and its crafting tree are `.mfw-spoiler`, blacked out until clicked.
   - Tests: `tests/recipes.test.mjs` (lookups, matching, tree) and `tests/test_recipe_browser.py` (data).
   - To remove it: delete `site/recipes.js`, `site/recipes.css`, `tools/recipe_browser.py`, the two tests,
     the project page and its sidebar and See also links, and the lines naming `recipe_browser` or

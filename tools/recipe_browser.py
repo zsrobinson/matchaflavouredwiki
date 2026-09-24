@@ -21,6 +21,8 @@ This module builds what the script needs, at export time, into one file:
        materials where a recipe only undoes another (Coal, not Coal from a Block of Coal) and prefers
        among a tag's members (Raw Iron, not Iron Horse Armor)
     u  item name -> the link its slots use (its page here, or minecraft.wiki)
+    z  the items whose page, or the section their link goes to, a {{Spoiler}} box covers (secret
+       foods): their rows are blacked out while the reader hides spoilers, as articles hide them
     h  slot name -> the slot's HTML, rendered by the wiki's own Module:Inventory slot (icon, cycling
        frames, the in-game tooltip), so a screen drawn by the script is the article's screen
 
@@ -186,6 +188,36 @@ def page(doc):
     return doc.replace('data-src="/&#95;static/', 'data-src="/_static/')
 
 
+def spoilers(out, links):
+    """The items in links (name -> link) whose exported page a {{Spoiler}} box covers: the whole page
+    (a box in the lead), or the section a #fragment names. site/Spoilers.php marked what each box
+    covers with mfw-spoiler-body, so this reads the pages the export has just written."""
+    pages, found = {}, []
+    for name, url in sorted(links.items()):
+        if not url.startswith('/w/'):
+            continue
+        path, _, frag = url[3:].partition('#')
+        if path not in pages:
+            try:
+                with open(os.path.join(out, 'w', urllib.parse.unquote(path) + '.html'), encoding='utf-8') as f:
+                    pages[path] = f.read()
+            except OSError:
+                pages[path] = ''
+        doc = pages[path]
+        if 'mfw-spoiler-body' not in doc:
+            continue
+        if frag:
+            at = doc.find(' id="%s"' % html.escape(urllib.parse.unquote(frag)))
+            opening = doc.rfind('<div class="mw-heading', 0, at) if at >= 0 else -1
+            hidden = opening >= 0 and 'mfw-spoiler-body' in doc[opening:doc.find('>', opening)]
+        else:  # a box before the first section heading covers the rest of the page
+            box, h2 = doc.find('class="messagebox spoiler'), doc.find('<div class="mw-heading mw-heading2')
+            hidden = box >= 0 and (h2 < 0 or box < h2)
+        if hidden:
+            found.append(name)
+    return found
+
+
 def write(out, base, rewrite=lambda s: s):
     """Build _static/recipes.json in the export (after the images are in place). rewrite is the
     exporter's link rewriting (redirects, red links, the site's own URLs). The slots' pictures get
@@ -204,6 +236,7 @@ def write(out, base, rewrite=lambda s: s):
     slots = {k: fingerprint.versioned(v, hashes) for k, v in slots.items()}
     data['u'] = {n: slot_link(slots[n]) for n in names if n not in data['a'] and slot_link(slots[n])}
     data['h'] = slots
+    data['z'] = spoilers(out, data['u'])
     os.makedirs(os.path.join(out, '_static'), exist_ok=True)
     with open(os.path.join(out, '_static', 'recipes.json'), 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'), sort_keys=True)

@@ -363,12 +363,16 @@
 		}).join('');
 	}
 	var pending = {};  // table key -> rows not drawn yet
+	// A secret item's rows are blacked out while the reader hides spoilers (MediaWiki:Gadget-mfwShell.js
+	// shows one when it is clicked), as the article hides the item's page
+	function secret(name) { return (db.d.z || []).indexOf(name) >= 0; }
+	function tr(r) { return secret(r.o) ? '<tr class="mfw-spoiler">' : '<tr>'; }
 	function tableRow(r) {
 		if (r.s === 'trade') {
-			return '<tr><td>' + link(r.o) + '</td><td>' + tally(r).map(function (t) { return (t[1] > 1 ? t[1] + ' × ' : '') + slotLinks(t[0]); }).join(' +<br>') +
+			return tr(r) + '<td>' + link(r.o) + '</td><td>' + tally(r).map(function (t) { return (t[1] > 1 ? t[1] + ' × ' : '') + slotLinks(t[0]); }).join(' +<br>') +
 				'<br><small><a href="' + wikiUrl(r.p) + '">' + esc(r.p) + '</a>, ' + esc(r.lv) + '</small></td><td>' + screen(r) + '</td></tr>';
 		}
-		return '<tr><td>' + link(r.o) + (r.v ? ' <small>(vanilla recipe)</small>' : '') + '</td><td class="ingredients">' + ingredients(r) + '</td><td>' + screen(r) + '</td></tr>';
+		return tr(r) + '<td>' + link(r.o) + (r.v ? ' <small>(vanilla recipe)</small>' : '') + '</td><td class="ingredients">' + ingredients(r) + '</td><td>' + screen(r) + '</td></tr>';
 	}
 	function tablesWithRest(rows, key) {
 		var groups = {};
@@ -417,8 +421,8 @@
 		var sum = totals(node);
 		return heading(2, 'Crafting tree', 'Crafting_tree') +
 			'<p>Everything that goes into one ' + link(name) + ', down to raw materials. Where there is a choice, the tree follows the recipe with the fewest steps; pick another from the list beside it.</p>' +
-			'<ul class="mfw-rb-tree">' + treeHtml(node, true) + '</ul>' +
-			'<p><b>Raw materials:</b></p><ul class="mfw-rb-totals">' + sum.map(function (t) {
+			'<ul class="mfw-rb-tree' + (secret(name) ? ' mfw-spoiler' : '') + '">' + treeHtml(node, true) + '</ul>' +
+			'<p><b>Raw materials:</b></p><ul class="mfw-rb-totals' + (secret(name) ? ' mfw-spoiler' : '') + '">' + sum.map(function (t) {
 				return '<li>' + slot(t[0], t[1]) + ' <span>' + (t[1] > 1 ? t[1] + ' × ' : '') + slotLinks(t[0]) + '</span></li>';
 			}).join('') + '</ul>';
 	}
@@ -595,9 +599,10 @@
 		else choices['any:' + sel.getAttribute('data-any')] = sel.value;
 		var c = current(), sec = out.querySelector('#Crafting_tree');
 		if (!sec) return;
-		var wrap = sec.parentNode, next;
+		var wrap = sec.parentNode, next, shown = out.querySelector('.mfw-rb-tree.mfw-spoiler-shown');
 		while ((next = wrap.nextSibling)) next.remove();  // the tree is the last section
 		wrap.outerHTML = treeSection(resolve(c.q));
+		if (shown) out.querySelectorAll('.mfw-rb-tree, .mfw-rb-totals').forEach(function (el) { el.classList.add('mfw-spoiler-shown'); });
 	});
 
 	fetch(root.getAttribute('data-src')).then(function (r) { return r.json(); }).then(function (d) {
