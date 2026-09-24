@@ -7,7 +7,7 @@
 == Obtaining ==
 
 === Harvesting ===
-Sweet berry bushes drop and give the pack's sweet berries when harvested or broken.<ref>{{Source|MF_datapack/data/minecraft/loot_table/harvest/sweet_berry_bush.json}}</ref>
+Sweet berry bushes drop and give the pack's sweet berries when harvested or broken. Harvesting a bush gives 2 or 3 berries whether or not it is fully grown: unlike vanilla, which gives 1 or 2 from a bush that is not fully grown, the pack's harvest table has no check for the bush's age.<ref>{{Source|MF_datapack/data/minecraft/loot_table/harvest/sweet_berry_bush.json}}</ref>
 
 {{Sources}}
 
@@ -28,6 +28,7 @@ Picking up sweet berries unlocks sweet berry mash. They are also used raw in the
 {{History|
 {{History line|0.5-alpha|Sweet berry jam is no longer a honey bottle.}}
 {{History line|1.12.1-alpha|Plain sweet berries from other sources are replaced with the pack's version.}}
+{{History line|1.12.2|Harvesting a bush that is not fully grown gives 2–3 berries, like a fully grown one; 1.12.1-alpha's harvest table gave the extra berry only at full growth.<ref>{{Source|Matcha_Flavoured/data/minecraft/loot_table/harvest/sweet_berry_bush.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>}}
 }}
 
 == See also ==
