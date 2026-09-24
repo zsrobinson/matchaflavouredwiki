@@ -18,7 +18,7 @@ The same tables are also rolled by the fisherman's house chest in [[Village|vill
 
 == Usage ==
 === Food ===
-Raw fish can be eaten, but it heals nothing: Matcha Flavoured removes [[hunger]], and food only heals through the hearts shown on its tooltip. Cooked, it becomes [[Cooked Fish|cooked fish]], which heals {{Hp|4}}.
+Raw fish can be eaten, but it heals nothing: Matcha Flavoured removes [[hunger]], and food only heals through the hearts shown on its tooltip. Cooked, it becomes [[Cooked Fish|cooked fish]], which heals {{Value|Cooked Fish|heals}}.
 
 === Cooking ===
 {{Cooking|station=Oven|Input=Bujurqui|Output=Cooked Fish|note=5 s, 0.35 XP}} {{Cooking|station=Kindling|Input=Bujurqui|Output=Cooked Fish|note=5 s, 0.35 XP}} {{Cooking|station=Mud Kiln|Input=Bujurqui|Output=Charred Fish|note=5 s, 0.35 XP}}

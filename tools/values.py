@@ -84,7 +84,7 @@ def against(ref):
             continue
         new = open(full, encoding='utf-8').read()
         n = len(CALL.findall(new))
-        if not n or path.endswith('Template/Value.wiki'):
+        if not n or not path.endswith('.wiki') or path.endswith('Template/Value.wiki'):
             continue
         old = subprocess.run(['git', '-C', ROOT, 'show', '%s:%s' % (ref, path)], capture_output=True, text=True)
         checked += 1
