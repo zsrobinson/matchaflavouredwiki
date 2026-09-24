@@ -2,18 +2,18 @@
 
 {{Infobox auto}}
 
-'''Popped chorus fruit''' is the simple preparation of [[Chorus Fruit|chorus fruit]]. It heals {{Hp|2}} and grants {{EffectLink|Levitation}} III for 3 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/popped_chorus_fruit.json}}</ref>
+'''Popped chorus fruit''' is the simple preparation of [[Chorus Fruit|chorus fruit]]. It heals {{Value|Popped Chorus Fruit|heals}} and grants {{EffectLink|Levitation}} {{Value|Popped Chorus Fruit|level|effect=Levitation}} for {{Value|Popped Chorus Fruit|duration|effect=Levitation}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/popped_chorus_fruit.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-Chorus fruit pops only in an [[oven]] (5 seconds); there is no kindling recipe. The chorus fruit unlock advancement grants the ID <code>food/oven/popped_chorus_fruit</code>, but the recipe is stored as <code>food/crafting/popped_chorus_fruit</code>, so it never appears in the recipe book.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/chorus_fruit.json}}</ref>
+Chorus fruit pops only in an [[oven]] ({{Value|Popped Chorus Fruit|cook_time|station=Oven}}); there is no kindling recipe. The chorus fruit unlock advancement grants the ID <code>food/oven/popped_chorus_fruit</code>, but the recipe is stored as <code>food/crafting/popped_chorus_fruit</code>, so it never appears in the recipe book.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/chorus_fruit.json}}</ref>
 
 == Usage ==
 
 === Food ===
-Eating popped chorus fruit takes 0.8 seconds, heals {{Hp|2}} and gives Levitation III for 0:03.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/popped_chorus_fruit.json}}</ref> Unlike raw chorus fruit it doesn't teleport.
+Eating popped chorus fruit takes {{Value|Popped Chorus Fruit|eat_time}}, heals {{Value|Popped Chorus Fruit|heals}} and gives Levitation {{Value|Popped Chorus Fruit|level|effect=Levitation}} for {{Value|Popped Chorus Fruit|duration|effect=Levitation|format=clock}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/popped_chorus_fruit.json}}</ref> Unlike raw chorus fruit it doesn't teleport.
 
 Popped chorus fruit is used in [[Chorus Mochi|chorus mochi]] and, as in vanilla, purpur blocks.
 

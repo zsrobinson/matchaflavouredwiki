@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Lumpia''' are fried spring rolls that grant two effects: {{EffectLink|Water Breathing}} and {{EffectLink|Night Vision}}, both for 5 minutes. They heal {{Hp|6}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/lumpia.json}}</ref>
+'''Lumpia''' are fried spring rolls that grant two effects: {{EffectLink|Water Breathing}} and {{EffectLink|Night Vision}}, both for 5 minutes. They heal {{Value|Lumpia|heals}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/lumpia.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A [[Cooked Porkchop|cooked porkchop]] or [[seitan]], dough, [[oil]], [[Dried Kel
 == Usage ==
 
 === Food ===
-Eating lumpia takes 1.2 seconds, heals {{Hp|6}} and gives Water Breathing and Night Vision for 5:00 each.
+Eating lumpia takes {{Value|Lumpia|eat_time}}, heals {{Value|Lumpia|heals}} and gives Water Breathing and Night Vision for 5:00 each.
 
 === Trading ===
 {{Upcoming|type=section}}

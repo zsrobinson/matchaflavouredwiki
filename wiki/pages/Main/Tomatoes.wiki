@@ -2,7 +2,7 @@
 
 {{Infobox auto}}
 
-'''Tomatoes''' are a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Strength}}. They replace {{MCW|Beetroot|beetroots}}. Eaten raw, they heal {{Hp|2}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/tomato.json}}</ref>
+'''Tomatoes''' are a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Strength}}. They replace {{MCW|Beetroot|beetroots}}. Eaten raw, they heal {{Value|Tomatoes|heals}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/tomato.json}}</ref>
 
 == Obtaining ==
 
@@ -14,7 +14,7 @@ Tomatoes grow from [[Tomato Seeds|tomato seeds]] like beetroots. A fully grown c
 == Usage ==
 
 === Food ===
-Eating tomatoes heals {{Hp|2}}.
+Eating tomatoes heals {{Value|Tomatoes|heals}}.
 
 Picking up tomatoes unlocks [[Grilled Tomatoes|grilled tomatoes]], [[Sun-dried Tomatoes|sun-dried tomatoes]], [[bruschetta]] and [[Kontomire-Dandelion Stew|kontomire-dandelion stew]]. Tomatoes are also used in the three [[Pizza|pizzas]], [[Paneer Curry Stock|paneer curry stock]] and 2 tomatoes make 2 red dye. The vanilla beetroot-to-red-dye recipe is removed.
 

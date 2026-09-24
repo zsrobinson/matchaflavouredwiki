@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Mead''' is the preservation of [[Honey|honey]]. It heals {{Hp|6}} and grants {{EffectLink|Speed}} for 5 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/mead.json}}</ref>
+'''Mead''' is the preservation of [[Honey|honey]]. It heals {{Value|Mead|heals}} and grants {{EffectLink|Speed}} for {{Value|Mead|duration|effect=Speed}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/mead.json}}</ref>
 
 == Obtaining ==
 
@@ -12,7 +12,7 @@ A honey bottle, a brown mushroom, sugar and sweet berries, an apple or glow berr
 == Usage ==
 
 === Food ===
-Drinking mead takes 1.6 seconds, heals {{Hp|6}} and gives Speed I (+20% speed) for 5:00. It gives the glass bottle back when eaten.
+Drinking mead takes {{Value|Mead|eat_time}}, heals {{Value|Mead|heals}} and gives Speed {{Value|Mead|level|effect=Speed}} (+20% speed) for {{Value|Mead|duration|effect=Speed|format=clock}}. It gives the glass bottle back when eaten.
 
 == See also ==
 * [[Honey]]

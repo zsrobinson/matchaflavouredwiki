@@ -2988,6 +2988,16 @@ def plural(n, unit):
     return '%s %s%s' % (n, unit, '' if n == '1' else 's')
 
 
+def full_roman(n):
+    out = ''
+    for v, r in ((1000, 'M'), (900, 'CM'), (500, 'D'), (400, 'CD'), (100, 'C'), (90, 'XC'), (50, 'L'), (40, 'XL'),
+                 (10, 'X'), (9, 'IX'), (5, 'V'), (4, 'IV'), (1, 'I')):
+        while n >= v:
+            out += r
+            n -= v
+    return out
+
+
 def duration_formats(t):
     """A duration in ticks in each of the prose and table forms pages use ("2 minutes", "2:00", ...)."""
     if t < 0:
@@ -2995,6 +3005,9 @@ def duration_formats(t):
     secs = fmt_num(t / 20)
     out = {'clock': ticks(t), 'seconds': plural(secs, 'second'), 'minutes': plural(fmt_num(t / 1200), 'minute'),
            'secs': secs, 'ticks': str(t)}
+    if t % 20 == 0 and t >= 1200 and t % 1200:
+        m, sec = divmod(t // 20, 60)  # "2 minutes 30 seconds"
+        out['long'] = '%s %s' % (plural(str(m), 'minute'), plural(str(sec), 'second'))
     if t % 600:
         del out['minutes']  # only whole and half minutes read naturally ("1.5 minutes")
     out[1] = out['minutes'] if t % 1200 == 0 else out['seconds']
@@ -3020,7 +3033,7 @@ def item_values(item):
                 v['level:' + name] = v['duration:' + name] = {'error': why}
                 continue
             amp = es[0].get('amplifier', 0)
-            v['level:' + name] = {1: roman(amp + 1), 'raw': str(amp + 1)}
+            v['level:' + name] = {1: roman(amp + 1), 'raw': str(amp + 1), 'roman': full_roman(amp + 1)}
             if es[0].get('duration') is not None:
                 v['duration:' + name] = duration_formats(es[0]['duration'])
         cs = fmt_num((c.get('consumable') or {}).get('consume_seconds', 1.6))

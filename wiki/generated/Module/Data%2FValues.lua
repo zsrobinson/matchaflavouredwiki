@@ -111,14 +111,14 @@ return {
 		["duration:Speed"] = { "10 minutes", clock = "10:00", minutes = "10 minutes", seconds = "600 seconds", secs = "600", ticks = "12000" },
 		["eat_time"] = { "1.8 seconds", raw = "1.8" },
 		["heals"] = { "{{Hp|10}}", hearts = "5 hearts", raw = "10" },
-		["level:Regeneration"] = { "I", raw = "1" },
-		["level:Speed"] = { "I", raw = "1" },
+		["level:Regeneration"] = { "I", raw = "1", roman = "I" },
+		["level:Speed"] = { "I", raw = "1", roman = "I" },
 	},
 	["Apple Empanada"] = {
 		["duration:Regeneration"] = { "3 minutes", clock = "3:00", minutes = "3 minutes", seconds = "180 seconds", secs = "180", ticks = "3600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
-		["level:Regeneration"] = { "I", raw = "1" },
+		["level:Regeneration"] = { "I", raw = "1", roman = "I" },
 	},
 	["Archeologist's Brush"] = {
 		["durability"] = { "Unbreakable" },
@@ -130,7 +130,7 @@ return {
 		["duration:Regeneration"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Regeneration"] = { "I", raw = "1" },
+		["level:Regeneration"] = { "I", raw = "1", roman = "I" },
 	},
 	["Baked Golden Apple"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -140,8 +140,8 @@ return {
 		["duration:Regeneration"] = { "1 minute", clock = "1:00", minutes = "1 minute", seconds = "60 seconds", secs = "60", ticks = "1200" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
-		["level:Absorption"] = { "I", raw = "1" },
-		["level:Regeneration"] = { "I", raw = "1" },
+		["level:Absorption"] = { "I", raw = "1", roman = "I" },
+		["level:Regeneration"] = { "I", raw = "1", roman = "I" },
 	},
 	["Baked Potato"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -157,7 +157,7 @@ return {
 		["duration:Resistance"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
-		["level:Resistance"] = { "I", raw = "1" },
+		["level:Resistance"] = { "I", raw = "1", roman = "I" },
 	},
 	["Black Glazed Terracotta"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -183,7 +183,7 @@ return {
 		["duration:Conduit Power"] = { "8 minutes", clock = "8:00", minutes = "8 minutes", seconds = "480 seconds", secs = "480", ticks = "9600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|12}}", hearts = "6 hearts", raw = "12" },
-		["level:Conduit Power"] = { "I", raw = "1" },
+		["level:Conduit Power"] = { "I", raw = "1", roman = "I" },
 	},
 	["Bow"] = {
 		["durability"] = { "384" },
@@ -199,7 +199,7 @@ return {
 		["duration:Weakness"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
-		["level:Weakness"] = { "I", raw = "1" },
+		["level:Weakness"] = { "I", raw = "1", roman = "I" },
 	},
 	["Braised Mushroom"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -215,7 +215,7 @@ return {
 		["duration:Poison"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
-		["level:Poison"] = { "I", raw = "1" },
+		["level:Poison"] = { "I", raw = "1", roman = "I" },
 	},
 	["Braised Warped Fungus"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -224,7 +224,7 @@ return {
 		["duration:Invisibility"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
-		["level:Invisibility"] = { "I", raw = "1" },
+		["level:Invisibility"] = { "I", raw = "1", roman = "I" },
 	},
 	["Bread"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -243,16 +243,16 @@ return {
 		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Brownie"] = {
-		["duration:Haste"] = { "150 seconds", clock = "2:30", minutes = "2.5 minutes", seconds = "150 seconds", secs = "150", ticks = "3000" },
+		["duration:Haste"] = { "150 seconds", clock = "2:30", long = "2 minutes 30 seconds", minutes = "2.5 minutes", seconds = "150 seconds", secs = "150", ticks = "3000" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|6}}", hearts = "3 hearts", raw = "6" },
-		["level:Haste"] = { "II", raw = "2" },
+		["level:Haste"] = { "II", raw = "2", roman = "II" },
 	},
 	["Bruschetta"] = {
-		["duration:Strength"] = { "150 seconds", clock = "2:30", minutes = "2.5 minutes", seconds = "150 seconds", secs = "150", ticks = "3000" },
+		["duration:Strength"] = { "150 seconds", clock = "2:30", long = "2 minutes 30 seconds", minutes = "2.5 minutes", seconds = "150 seconds", secs = "150", ticks = "3000" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
-		["level:Strength"] = { "II", raw = "2" },
+		["level:Strength"] = { "II", raw = "2", roman = "II" },
 	},
 	["Brush"] = {
 		["durability"] = { "64" },
@@ -261,21 +261,21 @@ return {
 		["duration:Luck"] = { "3 minutes", clock = "3:00", minutes = "3 minutes", seconds = "180 seconds", secs = "180", ticks = "3600" },
 		["eat_time"] = { "1.2 seconds", raw = "1.2" },
 		["heals"] = { "{{Hp|6}}", hearts = "3 hearts", raw = "6" },
-		["level:Luck"] = { "I", raw = "1" },
+		["level:Luck"] = { "I", raw = "1", roman = "I" },
 	},
 	["Canned Apples"] = {
 		["duration:Regeneration"] = { "1 minute", clock = "1:00", minutes = "1 minute", seconds = "60 seconds", secs = "60", ticks = "1200" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|6}}", hearts = "3 hearts", raw = "6" },
-		["level:Regeneration"] = { "I", raw = "1" },
+		["level:Regeneration"] = { "I", raw = "1", roman = "I" },
 	},
 	["Canned Golden Apples"] = {
 		["duration:Absorption"] = { "2 minutes", clock = "2:00", minutes = "2 minutes", seconds = "120 seconds", secs = "120", ticks = "2400" },
 		["duration:Regeneration"] = { "20 seconds", clock = "0:20", seconds = "20 seconds", secs = "20", ticks = "400" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
-		["level:Absorption"] = { "II", raw = "2" },
-		["level:Regeneration"] = { "II", raw = "2" },
+		["level:Absorption"] = { "II", raw = "2", roman = "II" },
+		["level:Regeneration"] = { "II", raw = "2", roman = "II" },
 	},
 	["Carrot"] = {
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -285,7 +285,7 @@ return {
 		["duration:Night Vision"] = { "10 minutes", clock = "10:00", minutes = "10 minutes", seconds = "600 seconds", secs = "600", ticks = "12000" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
-		["level:Night Vision"] = { "I", raw = "1" },
+		["level:Night Vision"] = { "I", raw = "1", roman = "I" },
 	},
 	["Carrot on a Stick"] = {
 		["durability"] = { "25" },
@@ -337,7 +337,7 @@ return {
 		["duration:Strength"] = { "3 minutes", clock = "3:00", minutes = "3 minutes", seconds = "180 seconds", secs = "180", ticks = "3600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|9}}", hearts = "4.5 hearts", raw = "9" },
-		["level:Strength"] = { "I", raw = "1" },
+		["level:Strength"] = { "I", raw = "1", roman = "I" },
 	},
 	["Chocolate"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -346,13 +346,13 @@ return {
 		["duration:Haste"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
-		["level:Haste"] = { "I", raw = "1" },
+		["level:Haste"] = { "I", raw = "1", roman = "I" },
 	},
 	["Chocolate Chip Cookie"] = {
 		["duration:Haste"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Haste"] = { "I", raw = "1" },
+		["level:Haste"] = { "I", raw = "1", roman = "I" },
 	},
 	["Chorus Fruit"] = {
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -362,7 +362,7 @@ return {
 		["duration:Levitation"] = { "1 second", clock = "0:01", seconds = "1 second", secs = "1", ticks = "20" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Levitation"] = { "30", raw = "30" },
+		["level:Levitation"] = { "30", raw = "30", roman = "XXX" },
 	},
 	["Cleaver"] = {
 		["damage"] = { "{{Hp|6}}", raw = "6" },
@@ -430,7 +430,7 @@ return {
 		["duration:Conduit Power"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Conduit Power"] = { "I", raw = "1" },
+		["level:Conduit Power"] = { "I", raw = "1", roman = "I" },
 	},
 	["Copper Axe"] = {
 		["attackspeed"] = { "0.8" },
@@ -534,7 +534,7 @@ return {
 		["duration:Weakness"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
 		["eat_time"] = { "1.8 seconds", raw = "1.8" },
 		["heals"] = { "{{Hp|12}}", hearts = "6 hearts", raw = "12" },
-		["level:Weakness"] = { "I", raw = "1" },
+		["level:Weakness"] = { "I", raw = "1", roman = "I" },
 	},
 	["Crook"] = {
 		["damage"] = { "{{Hp|2}}", raw = "2" },
@@ -654,7 +654,7 @@ return {
 		["duration:Water Breathing"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["eat_time"] = { "0.5 seconds", raw = "0.5" },
 		["heals"] = { "{{Hp|1}}", hearts = "0.5 hearts", raw = "1" },
-		["level:Water Breathing"] = { "I", raw = "1" },
+		["level:Water Breathing"] = { "I", raw = "1", roman = "I" },
 	},
 	["Electrum Axe"] = {
 		["attackspeed"] = { "1.2" },
@@ -748,14 +748,14 @@ return {
 		["duration:Regeneration"] = { "45 seconds", clock = "0:45", seconds = "45 seconds", secs = "45", ticks = "900" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
-		["level:Absorption"] = { "II", raw = "2" },
-		["level:Regeneration"] = { "II", raw = "2" },
+		["level:Absorption"] = { "II", raw = "2", roman = "II" },
+		["level:Regeneration"] = { "II", raw = "2", roman = "II" },
 	},
 	["Gimmari"] = {
 		["duration:Water Breathing"] = { "8 minutes", clock = "8:00", minutes = "8 minutes", seconds = "480 seconds", secs = "480", ticks = "9600" },
 		["eat_time"] = { "1.2 seconds", raw = "1.2" },
 		["heals"] = { "{{Hp|6}}", hearts = "3 hearts", raw = "6" },
-		["level:Water Breathing"] = { "I", raw = "1" },
+		["level:Water Breathing"] = { "I", raw = "1", roman = "I" },
 	},
 	["Glass"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -793,8 +793,8 @@ return {
 		["duration:Regeneration"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Absorption"] = { "I", raw = "1" },
-		["level:Regeneration"] = { "I", raw = "1" },
+		["level:Absorption"] = { "I", raw = "1", roman = "I" },
+		["level:Regeneration"] = { "I", raw = "1", roman = "I" },
 	},
 	["Golden Axe"] = {
 		["attackspeed"] = { "1" },
@@ -810,13 +810,13 @@ return {
 		["duration:Night Vision"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
-		["level:Night Vision"] = { "I", raw = "1" },
+		["level:Night Vision"] = { "I", raw = "1", roman = "I" },
 	},
 	["Golden Carrot Cupcake"] = {
 		["duration:Night Vision"] = { "20 minutes", clock = "20:00", minutes = "20 minutes", seconds = "1200 seconds", secs = "1200", ticks = "24000" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
-		["level:Night Vision"] = { "I", raw = "1" },
+		["level:Night Vision"] = { "I", raw = "1", roman = "I" },
 	},
 	["Golden Chestplate"] = {
 		["armor"] = { "5" },
@@ -852,7 +852,7 @@ return {
 		["duration:Night Vision"] = { "10 minutes", clock = "10:00", minutes = "10 minutes", seconds = "600 seconds", secs = "600", ticks = "12000" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Night Vision"] = { "I", raw = "1" },
+		["level:Night Vision"] = { "I", raw = "1", roman = "I" },
 	},
 	["Golden Shovel"] = {
 		["attackspeed"] = { "1" },
@@ -890,7 +890,7 @@ return {
 		["duration:Speed"] = { "30 minutes", clock = "30:00", minutes = "30 minutes", seconds = "1800 seconds", secs = "1800", ticks = "36000" },
 		["eat_time"] = { "3 seconds", raw = "3" },
 		["heals"] = { "{{Hp|20}}", hearts = "10 hearts", raw = "20" },
-		["level:Speed"] = { "II", raw = "2" },
+		["level:Speed"] = { "II", raw = "2", roman = "II" },
 	},
 	["Green Dye"] = {
 		["cook_time"] = { error = "Green Dye cooks in different times at different stations: give station=" },
@@ -908,7 +908,7 @@ return {
 		["duration:Fire Resistance"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
-		["level:Fire Resistance"] = { "I", raw = "1" },
+		["level:Fire Resistance"] = { "I", raw = "1", roman = "I" },
 	},
 	["Grilled Tomatoes"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -917,7 +917,7 @@ return {
 		["duration:Strength"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Strength"] = { "I", raw = "1" },
+		["level:Strength"] = { "I", raw = "1", roman = "I" },
 	},
 	["Hatchet"] = {
 		["attackspeed"] = { "1" },
@@ -1009,13 +1009,13 @@ return {
 		["duration:Speed"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
-		["level:Speed"] = { "I", raw = "1" },
+		["level:Speed"] = { "I", raw = "1", roman = "I" },
 	},
 	["Honied French Toast"] = {
 		["duration:Speed"] = { "3 minutes", clock = "3:00", minutes = "3 minutes", seconds = "180 seconds", secs = "180", ticks = "3600" },
 		["eat_time"] = { "1.8 seconds", raw = "1.8" },
 		["heals"] = { "{{Hp|10}}", hearts = "5 hearts", raw = "10" },
-		["level:Speed"] = { "II", raw = "2" },
+		["level:Speed"] = { "II", raw = "2", roman = "II" },
 	},
 	["Ice Cream"] = {
 		["eat_time"] = { "1.3 seconds", raw = "1.3" },
@@ -1104,15 +1104,15 @@ return {
 		["duration:Strength"] = { "30 minutes", clock = "30:00", minutes = "30 minutes", seconds = "1800 seconds", secs = "1800", ticks = "36000" },
 		["eat_time"] = { "3 seconds", raw = "3" },
 		["heals"] = { "{{Hp|20}}", hearts = "10 hearts", raw = "20" },
-		["level:Strength"] = { "I", raw = "1" },
+		["level:Strength"] = { "I", raw = "1", roman = "I" },
 	},
 	["Kontomire-Dandelion Stew"] = {
 		["duration:Regeneration"] = { "1 minute", clock = "1:00", minutes = "1 minute", seconds = "60 seconds", secs = "60", ticks = "1200" },
 		["duration:Strength"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|12}}", hearts = "6 hearts", raw = "12" },
-		["level:Regeneration"] = { "I", raw = "1" },
-		["level:Strength"] = { "I", raw = "1" },
+		["level:Regeneration"] = { "I", raw = "1", roman = "I" },
+		["level:Strength"] = { "I", raw = "1", roman = "I" },
 	},
 	["Lapis Earrings"] = {
 		["armor"] = { "1" },
@@ -1171,8 +1171,8 @@ return {
 		["duration:Water Breathing"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
 		["eat_time"] = { "1.2 seconds", raw = "1.2" },
 		["heals"] = { "{{Hp|6}}", hearts = "3 hearts", raw = "6" },
-		["level:Night Vision"] = { "I", raw = "1" },
-		["level:Water Breathing"] = { "I", raw = "1" },
+		["level:Night Vision"] = { "I", raw = "1", roman = "I" },
+		["level:Water Breathing"] = { "I", raw = "1", roman = "I" },
 	},
 	["Mace"] = {
 		["attackspeed"] = { "0.6" },
@@ -1187,13 +1187,13 @@ return {
 		["duration:Speed"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|6}}", hearts = "3 hearts", raw = "6" },
-		["level:Speed"] = { "I", raw = "1" },
+		["level:Speed"] = { "I", raw = "1", roman = "I" },
 	},
 	["Meat Pizza"] = {
 		["duration:Strength"] = { "3 minutes", clock = "3:00", minutes = "3 minutes", seconds = "180 seconds", secs = "180", ticks = "3600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|10}}", hearts = "5 hearts", raw = "10" },
-		["level:Strength"] = { "I", raw = "1" },
+		["level:Strength"] = { "I", raw = "1", roman = "I" },
 	},
 	["Melon Slice"] = {
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -1203,7 +1203,7 @@ return {
 		["duration:Fire Resistance"] = { "10 minutes", clock = "10:00", minutes = "10 minutes", seconds = "600 seconds", secs = "600", ticks = "12000" },
 		["eat_time"] = { "1.2 seconds", raw = "1.2" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Fire Resistance"] = { "I", raw = "1" },
+		["level:Fire Resistance"] = { "I", raw = "1", roman = "I" },
 	},
 	["Molasses"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -1214,7 +1214,7 @@ return {
 		["duration:Strength"] = { "3 minutes", clock = "3:00", minutes = "3 minutes", seconds = "180 seconds", secs = "180", ticks = "3600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
-		["level:Strength"] = { "I", raw = "1" },
+		["level:Strength"] = { "I", raw = "1", roman = "I" },
 	},
 	["Naan"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -1241,7 +1241,7 @@ return {
 		["duration:Night Vision"] = { "10 minutes", clock = "10:00", minutes = "10 minutes", seconds = "600 seconds", secs = "600", ticks = "12000" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|10}}", hearts = "5 hearts", raw = "10" },
-		["level:Night Vision"] = { "I", raw = "1" },
+		["level:Night Vision"] = { "I", raw = "1", roman = "I" },
 	},
 	["Paneer Makhani"] = {
 		["cook_time"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
@@ -1250,13 +1250,13 @@ return {
 		["duration:Regeneration"] = { "10 minutes", clock = "10:00", minutes = "10 minutes", seconds = "600 seconds", secs = "600", ticks = "12000" },
 		["eat_time"] = { "3 seconds", raw = "3" },
 		["heals"] = { "{{Hp|20}}", hearts = "10 hearts", raw = "20" },
-		["level:Regeneration"] = { "I", raw = "1" },
+		["level:Regeneration"] = { "I", raw = "1", roman = "I" },
 	},
 	["Pickled Carrots"] = {
 		["duration:Night Vision"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Night Vision"] = { "I", raw = "1" },
+		["level:Night Vision"] = { "I", raw = "1", roman = "I" },
 	},
 	["Pickled Mushrooms"] = {
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -1273,7 +1273,7 @@ return {
 	["Poisonous Potato"] = {
 		["duration:Poison"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
-		["level:Poison"] = { "I", raw = "1" },
+		["level:Poison"] = { "I", raw = "1", roman = "I" },
 	},
 	["Popped Chorus Fruit"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -1281,7 +1281,7 @@ return {
 		["duration:Levitation"] = { "3 seconds", clock = "0:03", seconds = "3 seconds", secs = "3", ticks = "60" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
-		["level:Levitation"] = { "III", raw = "3" },
+		["level:Levitation"] = { "III", raw = "3", roman = "III" },
 	},
 	["Ptero Chicken Nugget"] = {
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
@@ -1291,16 +1291,16 @@ return {
 		["duration:Regeneration"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Regeneration"] = { "I", raw = "1" },
+		["level:Regeneration"] = { "I", raw = "1", roman = "I" },
 	},
 	["Pufferfish"] = {
 		["duration:Hunger"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
 		["duration:Nausea"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
 		["duration:Poison"] = { "1 minute", clock = "1:00", minutes = "1 minute", seconds = "60 seconds", secs = "60", ticks = "1200" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
-		["level:Hunger"] = { "III", raw = "3" },
-		["level:Nausea"] = { "I", raw = "1" },
-		["level:Poison"] = { "II", raw = "2" },
+		["level:Hunger"] = { "III", raw = "3", roman = "III" },
+		["level:Nausea"] = { "I", raw = "1", roman = "I" },
+		["level:Poison"] = { "II", raw = "2", roman = "II" },
 	},
 	["Pumpkin Curry"] = {
 		["cook_time"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
@@ -1308,19 +1308,19 @@ return {
 		["duration:Resistance"] = { "20 minutes", clock = "20:00", minutes = "20 minutes", seconds = "1200 seconds", secs = "1200", ticks = "24000" },
 		["eat_time"] = { "3 seconds", raw = "3" },
 		["heals"] = { "{{Hp|20}}", hearts = "10 hearts", raw = "20" },
-		["level:Resistance"] = { "I", raw = "1" },
+		["level:Resistance"] = { "I", raw = "1", roman = "I" },
 	},
 	["Pumpkin Empanada"] = {
 		["duration:Resistance"] = { "8 minutes", clock = "8:00", minutes = "8 minutes", seconds = "480 seconds", secs = "480", ticks = "9600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
-		["level:Resistance"] = { "I", raw = "1" },
+		["level:Resistance"] = { "I", raw = "1", roman = "I" },
 	},
 	["Pumpkin Jam"] = {
 		["duration:Resistance"] = { "3 minutes", clock = "3:00", minutes = "3 minutes", seconds = "180 seconds", secs = "180", ticks = "3600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Resistance"] = { "I", raw = "1" },
+		["level:Resistance"] = { "I", raw = "1", roman = "I" },
 	},
 	["Pupusa"] = {
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -1337,12 +1337,12 @@ return {
 	["Ramen"] = {
 		["duration:Regeneration"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
-		["level:Regeneration"] = { "I", raw = "1" },
+		["level:Regeneration"] = { "I", raw = "1", roman = "I" },
 	},
 	["Raw Chicken"] = {
 		["duration:Hunger"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
-		["level:Hunger"] = { "I", raw = "1" },
+		["level:Hunger"] = { "I", raw = "1", roman = "I" },
 	},
 	["Red Glazed Terracotta"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -1352,7 +1352,7 @@ return {
 		["duration:Fire Resistance"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Fire Resistance"] = { "I", raw = "1" },
+		["level:Fire Resistance"] = { "I", raw = "1", roman = "I" },
 	},
 	["Ruby Circlet"] = {
 		["armor"] = { "1" },
@@ -1488,7 +1488,7 @@ return {
 	["Spider Eye"] = {
 		["duration:Poison"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
-		["level:Poison"] = { "I", raw = "1" },
+		["level:Poison"] = { "I", raw = "1", roman = "I" },
 	},
 	["Sponge"] = {
 		["cook_time"] = { "2.5 seconds", clock = "0:02", seconds = "2.5 seconds", secs = "2.5", ticks = "50" },
@@ -1509,7 +1509,7 @@ return {
 		["duration:Night Vision"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
-		["level:Night Vision"] = { "I", raw = "1" },
+		["level:Night Vision"] = { "I", raw = "1", roman = "I" },
 	},
 	["Steamed Golden Carrots"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -1518,7 +1518,7 @@ return {
 		["duration:Night Vision"] = { "1 minute", clock = "1:00", minutes = "1 minute", seconds = "60 seconds", secs = "60", ticks = "1200" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
-		["level:Night Vision"] = { "I", raw = "1" },
+		["level:Night Vision"] = { "I", raw = "1", roman = "I" },
 	},
 	["Steel Alloy"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -1657,7 +1657,7 @@ return {
 		["duration:Strength"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|6}}", hearts = "3 hearts", raw = "6" },
-		["level:Strength"] = { "I", raw = "1" },
+		["level:Strength"] = { "I", raw = "1", roman = "I" },
 	},
 	["Sweet Berries"] = {
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -1667,13 +1667,13 @@ return {
 		["duration:Health Boost"] = { "8 minutes", clock = "8:00", minutes = "8 minutes", seconds = "480 seconds", secs = "480", ticks = "9600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
-		["level:Health Boost"] = { "II", raw = "2" },
+		["level:Health Boost"] = { "II", raw = "2", roman = "II" },
 	},
 	["Sweet Berry Jam"] = {
 		["duration:Health Boost"] = { "3 minutes", clock = "3:00", minutes = "3 minutes", seconds = "180 seconds", secs = "180", ticks = "3600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
-		["level:Health Boost"] = { "I", raw = "1" },
+		["level:Health Boost"] = { "I", raw = "1", roman = "I" },
 	},
 	["Sweet Berry Mash"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -1682,13 +1682,13 @@ return {
 		["duration:Health Boost"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
-		["level:Health Boost"] = { "I", raw = "1" },
+		["level:Health Boost"] = { "I", raw = "1", roman = "I" },
 	},
 	["Sweet Berry Toast"] = {
 		["duration:Health Boost"] = { "8 minutes", clock = "8:00", minutes = "8 minutes", seconds = "480 seconds", secs = "480", ticks = "9600" },
 		["eat_time"] = { "1.8 seconds", raw = "1.8" },
 		["heals"] = { "{{Hp|10}}", hearts = "5 hearts", raw = "10" },
-		["level:Health Boost"] = { "II", raw = "2" },
+		["level:Health Boost"] = { "II", raw = "2", roman = "II" },
 	},
 	["Tall Dry Grass"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -1710,7 +1710,7 @@ return {
 		["duration:Poison"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
 		["eat_time"] = { "1.8 seconds", raw = "1.8" },
 		["heals"] = { "{{Hp|12}}", hearts = "6 hearts", raw = "12" },
-		["level:Poison"] = { "I", raw = "1" },
+		["level:Poison"] = { "I", raw = "1", roman = "I" },
 	},
 	["Tomatoes"] = {
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -1723,7 +1723,7 @@ return {
 		["duration:Haste"] = { "30 minutes", clock = "30:00", minutes = "30 minutes", seconds = "1800 seconds", secs = "1800", ticks = "36000" },
 		["eat_time"] = { "3 seconds", raw = "3" },
 		["heals"] = { "{{Hp|20}}", hearts = "10 hearts", raw = "20" },
-		["level:Haste"] = { "II", raw = "2" },
+		["level:Haste"] = { "II", raw = "2", roman = "II" },
 	},
 	["Topaz Earrings"] = {
 		["armor"] = { "1" },
@@ -1763,14 +1763,14 @@ return {
 		["duration:Strength"] = { "3 minutes", clock = "3:00", minutes = "3 minutes", seconds = "180 seconds", secs = "180", ticks = "3600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
-		["level:Invisibility"] = { "I", raw = "1" },
-		["level:Strength"] = { "I", raw = "1" },
+		["level:Invisibility"] = { "I", raw = "1", roman = "I" },
+		["level:Strength"] = { "I", raw = "1", roman = "I" },
 	},
 	["Warped Stroganoff"] = {
 		["duration:Invisibility"] = { "10 minutes", clock = "10:00", minutes = "10 minutes", seconds = "600 seconds", secs = "600", ticks = "12000" },
 		["eat_time"] = { "1.8 seconds", raw = "1.8" },
 		["heals"] = { "{{Hp|12}}", hearts = "6 hearts", raw = "12" },
-		["level:Invisibility"] = { "I", raw = "1" },
+		["level:Invisibility"] = { "I", raw = "1", roman = "I" },
 	},
 	["White Glazed Terracotta"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },

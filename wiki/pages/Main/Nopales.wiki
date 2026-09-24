@@ -2,18 +2,18 @@
 
 {{Infobox auto}}
 
-'''Nopales''' are cooked cactus pads. They heal {{Hp|4}} and have no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/nopales.json}}</ref>
+'''Nopales''' are cooked cactus pads. They heal {{Value|Nopales|heals}} and have no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/nopales.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-Cactus cooks into nopales in an [[oven]] or on [[kindling]] in 5 seconds. Picking up cactus unlocks the recipe.
+Cactus cooks into nopales in an [[oven]] or on [[kindling]] in {{Value|Nopales|cook_time}}. Picking up cactus unlocks the recipe.
 
 == Usage ==
 
 === Food ===
-Eating nopales takes 1.2 seconds and heals {{Hp|4}}.
+Eating nopales takes {{Value|Nopales|eat_time}} and heals {{Value|Nopales|heals}}.
 
 Nopales are a renamed green dye, so they can be used wherever green dye is needed, including [[Green Curry Stock|green curry stock]]. A cactus fired in a [[Mud Kiln|mud kiln]] gives plain green dye instead.
 

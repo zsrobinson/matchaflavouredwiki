@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-A '''pumpkin empanada''' is the meal of the [[pumpkin]]. It heals {{Hp|8}} and grants {{EffectLink|Resistance}} for 8 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_empanada.json}}</ref>
+A '''pumpkin empanada''' is the meal of the [[pumpkin]]. It heals {{Value|Pumpkin Empanada|heals}} and grants {{EffectLink|Resistance}} for {{Value|Pumpkin Empanada|duration|effect=Resistance}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_empanada.json}}</ref>
 
 == Obtaining ==
 
@@ -12,7 +12,7 @@ A [[Baked Pumpkin|baked pumpkin]], sugar, estus ash and [[dough]]. Obtaining a b
 == Usage ==
 
 === Food ===
-Eating a pumpkin empanada takes 1.6 seconds, heals {{Hp|8}} and gives Resistance I for 8:00.
+Eating a pumpkin empanada takes {{Value|Pumpkin Empanada|eat_time}}, heals {{Value|Pumpkin Empanada|heals}} and gives Resistance {{Value|Pumpkin Empanada|level|effect=Resistance}} for {{Value|Pumpkin Empanada|duration|effect=Resistance|format=clock}}.
 
 === Trading ===
 {{Upcoming|type=section}}

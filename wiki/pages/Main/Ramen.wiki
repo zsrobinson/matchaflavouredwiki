@@ -2,7 +2,7 @@
 
 {{Infobox auto}}
 
-'''Ramen''' is a leftover food from an earlier version of the pack, separate from [[Tonkotsu Ramen|tonkotsu ramen]]. Its crafting recipe still exists but is never unlocked. It gives {{EffectLink|Regeneration}} for 30 seconds and doesn't use the pack's hidden healing.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/ramen.json}}</ref>
+'''Ramen''' is a leftover food from an earlier version of the pack, separate from [[Tonkotsu Ramen|tonkotsu ramen]]. Its crafting recipe still exists but is never unlocked. It gives {{EffectLink|Regeneration}} for {{Value|Ramen|duration|effect=Regeneration}} and doesn't use the pack's hidden healing.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/ramen.json}}</ref>
 
 == Obtaining ==
 
@@ -13,7 +13,7 @@ A [[bowl]], a [[Glow Berry Mash|glow berry mash]] (the recipe asks for rotten fl
 == Usage ==
 
 === Food ===
-Ramen is a renamed rabbit stew that stacks to 16. It keeps rabbit stew's vanilla food values and gives Regeneration I for 0:30, with its icon shown.
+Ramen is a renamed rabbit stew that stacks to 16. It keeps rabbit stew's vanilla food values and gives Regeneration {{Value|Ramen|level|effect=Regeneration}} for {{Value|Ramen|duration|effect=Regeneration|format=clock}}, with its icon shown.
 
 == Trivia ==
 * The 1.10 changelog says bugged foods from earlier versions were removed, and the 1.12.1-alpha changelog removes outdated green curry and paneer makhani recipes, but this recipe remains.

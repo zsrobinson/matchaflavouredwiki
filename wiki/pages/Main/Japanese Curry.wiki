@@ -1,17 +1,17 @@
 {{Infobox auto}}
 
-'''Japanese curry''' is one of the oven meals. It heals {{Hp|20}} and grants {{EffectLink|Strength}} for 30 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/japanese_curry.json}}</ref>
+'''Japanese curry''' is one of the oven meals. It heals {{Value|Japanese Curry|heals}} and grants {{EffectLink|Strength}} for {{Value|Japanese Curry|duration|effect=Strength}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/japanese_curry.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-A [[curry stock]] cooks into Japanese curry in 15 seconds in an [[oven]] or on [[kindling]]. Obtaining the stock unlocks the recipe.
+A [[curry stock]] cooks into Japanese curry in {{Value|Japanese Curry|cook_time}} in an [[oven]] or on [[kindling]]. Obtaining the stock unlocks the recipe.
 
 == Usage ==
 
 === Food ===
-Eating it takes 3 seconds, heals {{Hp|20}} and gives Strength I for 30:00. The bowl is given back.
+Eating it takes {{Value|Japanese Curry|eat_time}}, heals {{Value|Japanese Curry|heals}} and gives Strength {{Value|Japanese Curry|level|effect=Strength}} for {{Value|Japanese Curry|duration|effect=Strength|format=clock}}. The bowl is given back.
 
 === Trading ===
 {{Upcoming|type=section}}

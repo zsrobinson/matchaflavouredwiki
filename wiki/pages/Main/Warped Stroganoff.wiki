@@ -2,7 +2,7 @@
 
 {{Spoiler}}
 
-'''Warped stroganoff''' is the secret meal of the [[Warped Fungus|warped fungus]]. It heals {{Hp|12}} and grants {{EffectLink|Invisibility}} for 10 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/warped_stroganoff.json}}</ref>
+'''Warped stroganoff''' is the secret meal of the [[Warped Fungus|warped fungus]]. It heals {{Value|Warped Stroganoff|heals}} and grants {{EffectLink|Invisibility}} for {{Value|Warped Stroganoff|duration|effect=Invisibility}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/warped_stroganoff.json}}</ref>
 
 == Obtaining ==
 
@@ -14,7 +14,7 @@ Warped fungus, a [[steak]], dough, a milk bottle and a bowl. The recipe is taugh
 == Usage ==
 
 === Food ===
-Eating it takes 1.8 seconds, heals {{Hp|12}} and gives Invisibility for 10:00. Making it grants ''Wait, you can make that?'' The bowl is given back.
+Eating it takes {{Value|Warped Stroganoff|eat_time}}, heals {{Value|Warped Stroganoff|heals}} and gives Invisibility for {{Value|Warped Stroganoff|duration|effect=Invisibility|format=clock}}. Making it grants ''Wait, you can make that?'' The bowl is given back.
 
 == History ==
 {{History|

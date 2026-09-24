@@ -8,10 +8,11 @@
 --   damage         {{Hp|6.5}}        format=raw "6.5"
 --   attackspeed, miningspeed, durability, armor, toughness   the number
 --   eat_time       "1.6 seconds"     format=raw "1.6"
---   level          effect=Absorption: "II"   format=raw "2"
+--   level          effect=Absorption: "II"   format=raw "2", roman (past X too: "XXX")
 --   duration       effect=Absorption: "2 minutes" (whole minutes) or "20 seconds"
 --   cook_time      "15 seconds"; station=Oven when the stations differ
---   durations take format=clock "2:00", seconds "120 seconds", minutes "2 minutes", secs "120", ticks "2400"
+--   durations take format=clock "2:00", seconds "120 seconds", minutes "2 minutes",
+--                  long "2 minutes 30 seconds", secs "120", ticks "2400"
 --
 -- An unknown item, field, effect, station or format is an error and puts the page in
 -- [[Category:Pages with unknown values]]; tools/check_site.py and tools/lint_pages.py fail on it.

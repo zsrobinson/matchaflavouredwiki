@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Pumpkin jam''' is the preservation of the [[pumpkin]]. It heals {{Hp|4}} and grants {{EffectLink|Resistance}} for 3 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_jam.json}}</ref>
+'''Pumpkin jam''' is the preservation of the [[pumpkin]]. It heals {{Value|Pumpkin Jam|heals}} and grants {{EffectLink|Resistance}} for {{Value|Pumpkin Jam|duration|effect=Resistance}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_jam.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A [[Baked Pumpkin|baked pumpkin]], sugar and a glass bottle. Obtaining a baked p
 == Usage ==
 
 === Food ===
-Eating pumpkin jam takes 1.6 seconds, heals {{Hp|4}} and gives Resistance I for 3:00. It gives the glass bottle back when eaten.
+Eating pumpkin jam takes {{Value|Pumpkin Jam|eat_time}}, heals {{Value|Pumpkin Jam|heals}} and gives Resistance {{Value|Pumpkin Jam|level|effect=Resistance}} for {{Value|Pumpkin Jam|duration|effect=Resistance|format=clock}}. It gives the glass bottle back when eaten.
 
 == See also ==
 * [[Pumpkin]]

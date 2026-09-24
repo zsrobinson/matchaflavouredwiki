@@ -2,18 +2,18 @@
 
 {{Infobox auto}}
 
-'''Steak''' is cooked meat. Like all meat in Matcha Flavoured, it has no [[intrinsic]]: it heals {{Hp|4}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_beef.json}}</ref>
+'''Steak''' is cooked meat. Like all meat in Matcha Flavoured, it has no [[intrinsic]]: it heals {{Value|Steak|heals}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_beef.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-Raw beef cooks in an [[oven]] or on [[kindling]] in 5 seconds. The vanilla recipes are replaced, and in a [[Mud Kiln|mud kiln]] it becomes [[Charred Meat|charred meat]] instead.
+Raw beef cooks in an [[oven]] or on [[kindling]] in {{Value|Steak|cook_time}}. The vanilla recipes are replaced, and in a [[Mud Kiln|mud kiln]] it becomes [[Charred Meat|charred meat]] instead.
 
 == Usage ==
 
 === Food ===
-Eating it takes 1.6 seconds and heals {{Hp|4}}.
+Eating it takes {{Value|Steak|eat_time}} and heals {{Value|Steak|heals}}.
 
 Steak is used in [[stroganoff]] and its variants, and as the meat in [[Pizza|meat pizza]]. Raw beef goes into [[Curry Stock|curry stock]].
 
