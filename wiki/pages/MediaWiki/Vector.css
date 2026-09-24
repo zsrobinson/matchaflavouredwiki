@@ -13,8 +13,8 @@
 @media (min-width: 721px) {
 	#p-Navigation #n-randompage { font-weight: normal; }
 }
-/* The toolbox keeps what the static site has too (tools/export_static.py): What links here */
-#p-tb li:not(#t-whatlinkshere) { display: none !important; }
+/* The toolbox keeps what the static site has too (tools/export_static.py): What links here and Printable version */
+#p-tb li:not(#t-whatlinkshere, #t-print) { display: none !important; }
 /* Footer (site/GitLinks.php): the page record first, as tiles with the game's icons, then the license
    line, the links and the badges. The footer is dark in both themes, as on minecraft.wiki. */
 #footer-info { display: flex; flex-direction: column; }

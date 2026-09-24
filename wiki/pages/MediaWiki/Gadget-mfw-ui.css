@@ -440,3 +440,13 @@ html.mfw-zoom-open body {
 		order: 3;
 	}
 }
+
+/* ---------------------------------------------------------------- printing
+   Browsers leave out backgrounds when printing, and the pack's pictures here are backgrounds or masks
+   (station screens, hearts, glyphs, slots): keep the article's colours (Tools > Printable version). */
+@media print {
+	#mw-content-text {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+}
