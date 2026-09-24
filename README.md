@@ -69,7 +69,7 @@ Account › Workers Scripts: Edit, plus Zone › Workers Routes: Edit, Zone: Rea
 
 ```
 source/                 (gitignored) inputs, fetched by tools/fetch_sources.sh
-  matcha-flavoured/     the official repo at the commit in tools/source.lock
+  matcha-flavoured/     the official repo at the commit in tools/source.lock (the latest release)
   changelogs/           official release notes per version (Modrinth API)
   vanilla-data/ vanilla-assets/ vanilla-summary/   vanilla 26.x data for diffs (misode/mcmeta)
 transcript.txt          the developer's introduction video, used for design intent and history
@@ -108,9 +108,13 @@ Title ↔ file name: the namespace is the folder, and a `/` in a title is writte
 
 The wiki is derived entirely from upstream sources, so a scheduled agent keeps it current:
 
-- `tools/check_upstream.py` compares three sources with what the wiki was built from: the pack's GitHub
-  commits (against `tools/source.lock`), Modrinth releases and the developer's YouTube uploads (against
-  `tools/upstream.json`). It exits `0` when nothing changed, which is the usual case and takes seconds.
+- The wiki describes the **latest Modrinth release**, the version players download. Releases aren't
+  tagged in git, so `tools/release_commit.py` finds the commit a release was made from: a release is a
+  zip of the pack's folders, and exactly one commit has identical files. `tools/source.lock` holds it.
+  Unreleased work on `main` appears only where a page marks it `{{Upcoming}}`.
+- `tools/check_upstream.py` looks for new Modrinth releases and new videos on the developer's YouTube
+  channel (against `tools/upstream.json`). It exits `0` when nothing changed, which is the usual case and
+  takes seconds.
 - When something changed, the agent follows **[AUTOPILOT.md](AUTOPILOT.md)**:
   1. fetch the sources and transcripts;
   2. regenerate the data pages;

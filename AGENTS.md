@@ -9,6 +9,9 @@ debugging time.
 - **Content lives in git.** Nobody edits through the web; MediaWiki is only a build-time renderer.
   Don't add login, editing or history features to the site. Link to GitHub instead
   (`site/GitLinks.php`: the Edit on GitHub / View source / View history tabs and the footer line).
+- **The wiki describes the latest Modrinth release,** not `main`. `tools/source.lock` is the commit the
+  release was made from (`tools/release_commit.py` matches the release's files to a commit). Unreleased
+  work on `main` is marked `{{Upcoming}}` and cited with `{{Source|path|at=<commit on main>}}`.
 - **Sources:** the pack's code (`source/matcha-flavoured`, pinned in `tools/source.lock`), the official
   release notes (`source/changelogs`) and the developer's videos (`transcript.txt`, `sources/transcripts/`).
   Never other wikis, forks or third-party videos. Competitors may be read to find gaps (`wiki/AUDIT.md`),

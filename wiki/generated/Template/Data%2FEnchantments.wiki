@@ -67,8 +67,6 @@
 |-
 | [[Efficiency]] I || <code>minecraft:efficiency</code> || 5 || mainhand || <code>#minecraft:enchantable/mining</code> || Unchanged
 |-
-| {{G|Fortune}} [[Fortune|Fortune bonus]] || <code>matcha:electrum_tool</code> || 3 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || '''New'''
-|-
 | [[Feather Falling]] I || <code>minecraft:feather_falling</code> || 4 || armor || <code>#minecraft:enchantable/foot_armor</code> || Changed: anvil cost, effects
 |-
 | [[Fire Aspect]] I || <code>minecraft:fire_aspect</code> || 2 || mainhand || <code>#minecraft:enchantable/fire_aspect</code> || Changed: anvil cost
@@ -123,8 +121,6 @@
 |-
 | [[Riptide]] I || <code>minecraft:riptide</code> || 3 || hand || <code>#minecraft:enchantable/trident</code> || Changed: anvil cost
 |-
-| {{G|Health}}{{G|Attack damage}} [[Shakudo equipment|Life steal]] || <code>matcha:shakudo_weapon</code> || 1 || mainhand || <code>#minecraft:enchantable/weapon</code> || '''New'''
-|-
 | [[Sharpness]] I || <code>minecraft:sharpness</code> || 5 || mainhand || <code>#minecraft:enchantable/sharp_weapon</code> || Unchanged
 |-
 | [[Silk Touch]] || <code>minecraft:silk_touch</code> || 1 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || Changed: anvil cost
@@ -148,6 +144,10 @@
 | [[Wind Burst]] I || <code>minecraft:wind_burst</code> || 3 || mainhand || <code>#minecraft:enchantable/mace</code> || Changed: anvil cost
 |-
 | [[Zephyr]] I || <code>matcha:zephyr</code> || 3 || feet || <code>#minecraft:enchantable/foot_armor</code> || '''New'''
+|-
+| [[Fortune|Fortune bonus]] || <code>matcha:electrum_tool</code> || 3 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || '''New'''
+|-
+| [[Shakudo equipment|Life steal]] || <code>matcha:shakudo_weapon</code> || 1 || mainhand || <code>#minecraft:enchantable/weapon</code> || '''New'''
 |-
 | [[Adamant equipment|Auto-smelting]] || <code>matcha:adamant_tool</code> || 1 || mainhand || <code>#minecraft:enchantable/mining_loot</code> || '''New'''
 |-

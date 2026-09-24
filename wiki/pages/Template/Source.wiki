@@ -1,7 +1,9 @@
-<includeonly><span class="plainlinks">[https://github.com/kleiwright/matcha-flavoured/blob/{{Source/commit}}/{{{1}}} {{#if:{{{2|}}}|{{{2}}}|<code>{{#titleparts:{{{1}}}|0|-2}}</code>}}]</span></includeonly><noinclude>
+<includeonly><span class="plainlinks">[https://github.com/kleiwright/matcha-flavoured/blob/{{#if:{{{at|}}}|{{{at}}}|{{Source/commit}}}}/{{{1}}} {{#if:{{{2|}}}|{{{2}}}|<code>{{#titleparts:{{{1}}}|0|-2}}</code>}}]</span></includeonly><noinclude>
 Link to a file in the pack's repository at the commit this wiki was last synced to ({{Source/commit}}). The path is relative to the repository root.
 
 <code><nowiki>{{Source|MF_datapack/data/matcha/recipe/crafting/crystal_heart.json}}</nowiki></code> → {{Source|MF_datapack/data/matcha/recipe/crafting/crystal_heart.json}}
 
 Use inside a <code><nowiki><ref></nowiki></code> to cite a fact, e.g. <code><nowiki><ref>{{Source|MF_datapack/...}}</ref></nowiki></code>.
+
+The wiki describes the latest release. To cite code that is only on the repository's <code>main</code> branch (content marked {{tl|Upcoming}}), give a commit on <code>main</code>: <code><nowiki>{{Source|path|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</nowiki></code>.
 [[Category:Templates]]</noinclude>

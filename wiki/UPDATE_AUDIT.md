@@ -82,3 +82,21 @@ Both are fixed below, and the fixes were tested on the 26.3 branch.
 - `lint_pages.py` on `main`: 0 problems after the two citation fixes. Against 26.3: 15.
 - `check_upstream.py` against live upstream: it sees the new commit and the `26.3` branch.
   `--record` refuses to run without a report.
+
+## Follow-up: the wiki now follows releases, not `main`
+The wiki used to be built from the newest commit on `main`. `main` gets commits almost every day, but
+players download Modrinth releases, so the wiki described fixes and features (the whole favorite food
+system, for one) that the current download doesn't have. It also meant a small update nearly every day.
+
+Now `tools/source.lock` is the commit of the latest release, and the autopilot updates only when a new
+release (or video) appears. Releases aren't tagged in git, but a release is only a zip of the pack's
+folders, so `tools/release_commit.py` compares every file in the zips with each commit:
+- 1.12.2-beta (Sep 19): all 6,735 files identical to `f6c6094c` ("Update changelog.md", 5 minutes before
+  publishing; `88fb1612`, "Updated Credits for Beta release", has the same pack files).
+- 1.12.1-alpha (Sep 1): all 5,962 files identical to `027108ab` ("Last min Bugs").
+- Text files are compared with Unix line endings (the zips are made on Windows). Releases before the
+  repository's first commit (Aug 18) can't be matched.
+
+Unreleased work on `main` is still described where a page marks it `{{Upcoming}}` and cites it with
+`{{Source|path|at=<commit on main>}}`, which `lint_pages.py` checks at that commit. The Monday rehearsal
+now also runs `tools/dry_run.sh main`, which previews what the next release will change.

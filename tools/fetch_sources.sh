@@ -6,13 +6,14 @@
 #   source/changelogs/       official Modrinth release notes, one file per version
 # Usage:
 #   tools/fetch_sources.sh              check out the pack at the commit pinned in tools/source.lock
-#   tools/fetch_sources.sh --update     move to the latest origin/main and rewrite tools/source.lock
-#   tools/fetch_sources.sh --ref <ref>  the same for another branch or commit (tools/dry_run.sh uses it)
+#   tools/fetch_sources.sh --update     move to the commit of the newest Modrinth release
+#                                       (tools/release_commit.py) and rewrite tools/source.lock
+#   tools/fetch_sources.sh --ref <ref>  the same for any branch or commit (tools/dry_run.sh uses it)
 # The Minecraft version for vanilla data is read from tools/mc_version.txt. --update and --ref rewrite it
 # from the pack's pack.mcmeta ("1.12.2 for 26.3"), so a port to a new Minecraft version is picked up.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-UPDATE=0; REF=origin/main
+UPDATE=0; REF=
 [[ "${1:-}" == "--update" ]] && UPDATE=1
 [[ "${1:-}" == "--ref" ]] && { UPDATE=1; REF="${2:?--ref needs a branch or commit}"; }
 mkdir -p source source/changelogs
@@ -23,6 +24,9 @@ else
   git clone -q https://github.com/kleiwright/matcha-flavoured.git source/matcha-flavoured
 fi
 if [[ $UPDATE == 1 ]]; then
+  if [[ -z "$REF" ]]; then
+    REF="$(python3 tools/release_commit.py)" || { echo "fetch_sources.sh: can't tell which commit the release was made from"; exit 1; }
+  fi
   git -C source/matcha-flavoured rev-parse -q --verify "origin/$REF^{commit}" >/dev/null && REF="origin/$REF"
   git -C source/matcha-flavoured -c advice.detachedHead=false checkout -q --detach "$REF"
   git -C source/matcha-flavoured rev-parse HEAD > tools/source.lock

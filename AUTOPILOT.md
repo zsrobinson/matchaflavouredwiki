@@ -7,6 +7,12 @@ in under a minute without touching anything.
 The wiki is derived entirely from upstream sources: the pack's code, its release notes and the
 developer's videos. The job is to notice when they change and bring the wiki back in line.
 
+**The wiki describes the latest Modrinth release**, the version players download, not the newest commit
+on the repository's `main`. Upstream commits to `main` almost every day, but that is unreleased work.
+Releases aren't tagged in git, so `tools/release_commit.py` finds the commit a release was made from by
+comparing every file in its zips with the repository. `tools/source.lock` holds that commit. Content that
+is on `main` but not yet released is marked `{{Upcoming}}` (see step 4).
+
 ## Environment
 - `git`, `python3` and `node` are preinstalled; step 0 installs `pillow` and `yt-dlp`.
 - There is no `gh` CLI. Do everything on GitHub (listing, opening, labelling and merging PRs, reading
@@ -24,14 +30,13 @@ python3 tools/check_upstream.py > /tmp/upstream.json; status=$?
   PR, don't notify.
 - `status = 2`: a source couldn't be checked (network, or `yt-dlp` didn't install).
   Stop and notify with the error from `/tmp/upstream.json`.
-- `status = 10`: read `/tmp/upstream.json` and continue. It lists `new_commits` (with `from_commit`, the pinned
-  commit in `tools/source.lock`, and `to_commit`), `new_releases` (Modrinth) and `new_videos` (YouTube).
-  Keep the file: step 5 records exactly what it lists as done.
+- `status = 10`: read `/tmp/upstream.json` and continue. It lists `new_releases` (Modrinth) and `new_videos`
+  (YouTube), and `pinned_commit` (`tools/source.lock`). Keep the file: step 5 records exactly what it lists
+  as done.
 
 Also stop if a PR labelled `autopilot` is still open, and notify about it instead of stacking a second one.
 
-**On Mondays** (`date -u +%u` is 1), whatever the status (upstream changes almost every day, so these
-can't wait for a quiet one):
+**On Mondays** (`date -u +%u` is 1), whatever the status:
 - `python3 tools/fetch_transcripts.py --all` catches videos whose captions appeared late. A new transcript
   counts as a new video.
 - Do the **port rehearsal** at the end of this file.
@@ -40,15 +45,18 @@ can't wait for a quiet one):
 Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> origin/main`.
 
 ## Step 2: bring in the new sources
-- **New commits or releases:**
+- **A new release:**
   ```sh
   tools/fetch_sources.sh && python3 tools/extract.py      # the data as it is now (pinned commit)
   python3 tools/update_report.py --snapshot               # keep it as the baseline
-  tools/fetch_sources.sh --update                         # move to the latest main
+  tools/fetch_sources.sh --update                         # move to the commit of the newest release
   python3 tools/extract.py && python3 tools/images.py && python3 tools/generate.py
   ```
-  `--update` rewrites `tools/source.lock`, refetches the release notes into `source/changelogs/`, and, when
-  `pack.mcmeta` names a new Minecraft version, updates `tools/mc_version.txt` and fetches that vanilla data.
+  `--update` runs `tools/release_commit.py`, rewrites `tools/source.lock`, refetches the release notes into
+  `source/changelogs/`, and, when `pack.mcmeta` names a new Minecraft version, updates
+  `tools/mc_version.txt` and fetches that vanilla data.
+- **No commit matches the release** (`release_commit.py` exits 1 and lists the closest commits): the
+  developer released files that were never committed. Don't guess. Stop and notify with its output.
 - **`extract.py` exits 3** when the source uses a key, type or function it has never seen (a new Minecraft
   version renames things). It would otherwise skip them silently and the wiki would lose drop counts,
   conditions or item names without any error. Teach `tools/extract.py` (and `generate.py` if needed) the new
@@ -70,7 +78,7 @@ pages that depend on it:
 - pages citing files that were deleted or moved.
 
 Changes no hand-written page depends on are folded away: the generated tables already show them.
-Also read the code: `git -C source/matcha-flavoured log --oneline <from_commit>..HEAD` and the real diffs
+Also read the code: `git -C source/matcha-flavoured log --oneline <old source.lock>..HEAD` and the real diffs
 behind each line. **The code diff is the truth.** Changelogs are incomplete. Read every new release note
 in `source/changelogs/`, the diff of the pack's `changelog.md`, and new transcripts in full.
 
@@ -86,9 +94,11 @@ Read `wiki/STYLE.md`, `wiki/AGENT_BRIEF.md` and `wiki/PAGES.md` first; they are 
   Add them to `wiki/PAGES.md`, the overview pages and the navboxes.
 - **Removed features:** keep the article, say it was removed and in which version, add it to
   "Removed features", and keep its History.
-- **History:** add `{{History line|<version>|...}}` rows. Changes that are on `main` but not in a
-  Modrinth release are marked with `{{Upcoming}}` or an "Upcoming" history row. When a release comes out,
-  promote every one of them that the release contains: `grep -rl "Upcoming" wiki/pages`.
+- **History:** add `{{History line|<version>|...}}` rows for the new release. Pages may also describe what
+  is on `main` but not yet released, marked `{{Upcoming}}` (a message box) or with an "Upcoming" history row,
+  citing that code with `{{Source|path|at=<a commit on main>}}`. When a release comes out, promote every
+  one of them that the release contains (`grep -rl "Upcoming" wiki/pages`): the text becomes the current
+  behavior, the history row gets the version, and the citation loses its `at=`.
 - **A new release:** create the `Matcha Flavoured <version>` page modeled on the existing version pages,
   add it to "Version history", update "Upcoming features", "Changes from vanilla" and the main page
   highlight (`wiki/pages/Main/Matcha Flavoured Wiki.wiki`: name, features, tag). `{{Current version}}`
@@ -135,11 +145,12 @@ Subscribe to the PR's activity and end the turn; the **Check** workflow result w
   leave the PR open, comment with what's failing, and notify.
 
 ## Port rehearsal (Mondays, whatever step 0 found)
-The pack is ported to each new Minecraft version on a branch (`other_branches` in `/tmp/upstream.json`,
-e.g. `26.3`) and merged into `main` in one go. That merge is the biggest update the wiki gets, so rehearse
-it while it is still a branch:
+The next release will be made from `main`, and the pack is ported to each new Minecraft version on a branch
+(`branches` in `/tmp/upstream.json`, e.g. `26.3`). A port is the biggest update the wiki gets, so rehearse
+both while they are unreleased:
 ```sh
 tools/fetch_sources.sh && python3 tools/extract.py
+tools/dry_run.sh main
 tools/dry_run.sh <branch>          # for every branch named like a Minecraft version
 ```
 `build/dry-run-<branch>.md` lists what `extract.py` doesn't understand yet, the pages `lint_pages.py`
@@ -147,5 +158,4 @@ would flag, and the update report. If `extract.py` reports format problems, teac
 still reading the old one. The Check workflow proves the change is safe: `wiki/generated` must come out
 unchanged for the pinned commit. If today also has an update, put the extractor change in that PR and say
 so in its body. Otherwise open a PR "Autopilot: prepare the extractor for <branch>" (label `autopilot`),
-unless an `autopilot` PR is already open. Don't change pages for the port yet; that happens when it
-reaches `main`.
+unless an `autopilot` PR is already open. Don't change pages yet; that happens when the release comes out.

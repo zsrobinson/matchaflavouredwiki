@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 """Cheap daily check: has anything the wiki is built from changed upstream?
 
-Compares the live upstream state with what the wiki was last updated against (the pack commit in
-tools/source.lock; releases and videos in tools/upstream.json) and prints a JSON report. Exit codes:
+Compares the live upstream state with what the wiki was last updated against (the releases and videos in
+tools/upstream.json) and prints a JSON report. Exit codes:
   0  nothing changed: stop here
   10 something changed: run the update procedure in AUTOPILOT.md
   2  a source could not be checked (network etc.); retry tomorrow, don't update
 
 Watched sources:
-  - the pack's GitHub repository (kleiwright/matcha-flavoured), branch main: new commits
-  - Modrinth versions of matcha-flavoured: new releases (release notes)
+  - Modrinth versions of matcha-flavoured: new releases. The wiki describes the newest release, the
+    version players download, pinned to the commit it was made from (tools/release_commit.py). Commits
+    on the repository's main between releases are unreleased work and don't count as a change.
   - the developer's YouTube uploads (Klei_Wright): new videos, which may explain design changes
-The report also lists the pack's other branches (`other_branches`, e.g. a port to the next Minecraft
-version). They don't count as a change; AUTOPILOT.md rehearses ports with tools/dry_run.sh.
+The report also lists the repository's branches (`branches`, e.g. a port to the next Minecraft version).
+They don't count as a change; AUTOPILOT.md rehearses ports with tools/dry_run.sh.
 
   tools/check_upstream.py                 report only
   tools/check_upstream.py --record REPORT after a successful update: mark the releases and videos in
@@ -41,7 +42,6 @@ def run(cmd, timeout=120):
 
 def upstream():
     heads = dict(reversed(line.split('\t')) for line in run(['git', 'ls-remote', '--heads', REPO]).splitlines())
-    head = heads.pop('refs/heads/main')
     branches = {ref[len('refs/heads/'):]: sha for ref, sha in heads.items()}
     req = urllib.request.Request(MODRINTH, headers={'User-Agent': 'matchaflavouredwiki-autopilot'})
     versions = json.load(urllib.request.urlopen(req, timeout=60))
@@ -53,7 +53,7 @@ def upstream():
         videos = [dict(zip(('id', 'title'), line.split('\t', 1))) for line in out.splitlines() if '\t' in line]
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
         videos = None  # YouTube unreachable: skip this source today (a missing yt-dlp is an error)
-    return {'matcha_commit': head, 'branches': branches, 'modrinth': releases, 'videos': videos}
+    return {'branches': branches, 'modrinth': releases, 'videos': videos}
 
 
 def record(state, report_path):
@@ -68,10 +68,6 @@ def record(state, report_path):
     with open(STATE, 'w') as f:
         json.dump(state, f, indent=1)
         f.write('\n')
-    lock = open(LOCK).read().strip()
-    if lock != report['to_commit']:
-        print('note: tools/source.lock (%s) is not the commit in the report (%s); the difference counts '
-              'as new next time' % (lock[:8], report['to_commit'][:8]), file=sys.stderr)
     print('recorded upstream state')
     return 0
 
@@ -90,17 +86,14 @@ def main():
         return 2
     known_versions = set(state.get('modrinth_versions', []))
     known_videos = set(state.get('videos', []))
-    lock = open(LOCK).read().strip()  # the pack commit the wiki is built from
     report = {
-        'new_commits': now['matcha_commit'] != lock,
-        'from_commit': lock,
-        'to_commit': now['matcha_commit'],
+        'pinned_commit': open(LOCK).read().strip(),  # the commit the wiki is built from
         'new_releases': [r for r in now['modrinth'] if r['id'] not in known_versions],
         'new_videos': [v for v in (now['videos'] or []) if v['id'] not in known_videos],
         'videos_checked': now['videos'] is not None,
-        'other_branches': now['branches'],
+        'branches': now['branches'],
     }
-    changed = report['new_commits'] or report['new_releases'] or report['new_videos']
+    changed = report['new_releases'] or report['new_videos']
     report['status'] = 'changed' if changed else 'unchanged'
     print(json.dumps(report, indent=1))
     return 10 if changed else 0
