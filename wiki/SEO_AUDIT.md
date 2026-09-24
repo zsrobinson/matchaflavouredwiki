@@ -61,3 +61,32 @@ node --test tests/worker.test.mjs
 python3 tools/export_static.py --out dist
 python3 tools/check_seo.py dist
 ```
+
+## Follow-up — 24 September 2026
+
+The domain was registered on 23 September; the other sites are 7–8 weeks old. Search engines had
+indexed nothing of the site yet (Bing: no pages; a third-party engine returned only the GitHub
+repository). No penalty or crawl block was found: Googlebot, Bingbot and AI search crawlers all get
+200s, and Search Console is verified by DNS. These changes remove what was ours to fix:
+
+| Finding | Change |
+| --- | --- |
+| GitHub rendered every `.wiki` source as a formatted article: 1,091 copies of the articles on github.com, already in search results before the site. | `.gitattributes` marks `wiki/**/*.wiki` as Text, so GitHub shows the source, not a rendered page. |
+| On phones, long pages painted open and collapsed when the script ran: a layout shift of 0.21–0.38 (Food, Fishing, Enchanting) with a throttled CPU; Google counts over 0.25 as poor. | `Vector.css` draws the sections collapsed before the script runs. Layout shift is now 0 on the pages measured. |
+| About 5% of internal links (220 of 4,690 in a 41-page sample) went through a 301, e.g. `Hepatizon_Elytra` → `Elytra#Hepatizon_Elytra`. | The export points links at the redirect's final page. |
+| "Matcha Flavored" (the US spelling, used by the largest Reddit thread and by other sites) appeared in only three pages, all in quotations. | One mention in the leads of the main page and the Matcha Flavoured article. |
+| The favicon was the 135×135 logo; Google shows a favicon only if it is a multiple of 48px. `/favicon.ico` was a 404. | `tools/og.py` draws the logo's pixel art at 48, 96 and 192px, `favicon.ico` and an Apple touch icon. |
+| Link previews showed a 128px item icon (`twitter:card` "summary"). | Every indexable page has a 1200×630 share card (`/og/`), `summary_large_image`, `max-image-preview:large`, and `datePublished` in its JSON-LD. |
+
+Other sites mostly rank on their age and their domains: Fandom on fandom.com's reputation, and
+matchaflavored.org on a domain that matches the US spelling, question-shaped headings and FAQ
+markup (Google stopped showing FAQ rich results for most sites in 2023). Question-bait titles are
+not worth copying: a new domain that publishes hundreds of generated pages at once is what Google's
+scaled-content policy looks for, and the pack's Modrinth page warns players about sites that
+present themselves as official.
+
+Still to do outside the repository: request indexing of the main page and a few key articles
+in Search Console, add the site to Bing Webmaster Tools (it imports from Search Console), and
+turn on Cloudflare's Crawler Hints. Links from where players already talk about the pack
+(r/MatchaFlavoured, the community Discord) matter more than any of the above; the developer
+links no wiki.
