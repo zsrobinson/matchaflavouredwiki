@@ -448,9 +448,9 @@ def fishing_odds():
     # the fish segment opened up into one climate table
     y_fish = y_other + h + 48
     svg.poly([(fx0, y_other + h), (fx1, y_other + h), (right, y_fish), (left, y_fish)], fill='@blue_soft', opacity=0.45)
-    svg.text(left - 10, y_fish + h / 2 - 8, 'Fish', anchor='end')
-    svg.text(left - 10, y_fish + h / 2 + 8, re.sub(r'.*/(\w+)_(\w+)$', r'\2 \1', example), size=SMALL, anchor='end', fill='@muted')
-    svg.text((left + right) / 2, y_other + h + 24, 'Every climate table: %s of %d' % (', '.join(str(w) for _, w, _ in fish), table_w),
+    svg.text(left - 10, y_fish + h / 2, 'Fish', anchor='end')
+    svg.text((left + right) / 2, y_other + h + 24, 'Every climate table weighs its fish %s of %d (%s shown)'
+             % (', '.join(str(w) for _, w, _ in fish), table_w, re.sub(r'.*/(\w+)_(\w+)$', r'\2 \1', example)),
              size=SMALL, anchor='middle', fill='@muted')
     unit_f = (right - left) / table_w
     spans, x = [], left
@@ -533,30 +533,30 @@ def releases():
         after = min((v for v in versions if key(v['num']) > key(num)), key=lambda v: key(v['num']))
         items.append(((X(before['when']) + X(after['when'])) / 2, '%s deleted' % num, '@muted', (before, after)))
     items.sort(key=lambda it: it[0])
-    lanes = []
+    # flags: a leader up from the dot and the label to its right. Placed right to left, each takes the
+    # lowest lane where its label touches no other label and no leader rising past it.
     placed = []
-    for px, label, colour, v in items:
-        w = text_width(label, SMALL, bold=True)
+    for px, label, colour, v in sorted(items, key=lambda it: -it[0]):
+        span = (px - 1, px + 5 + text_width(label, SMALL, bold=True) + 4)
         lane = 0
-        while lane < len(lanes) and lanes[lane] > px - w / 2 - 6:
+        while any((q[4] == lane and q[5][0] < span[1] and span[0] < q[5][1]) or
+                  (q[4] > lane and span[0] <= q[0] <= span[1]) for q in placed):
             lane += 1
-        if lane == len(lanes):
-            lanes.append(0)
-        lanes[lane] = px + w / 2
-        placed.append((px, label, colour, v, lane))
-    axis = 24 + len(lanes) * lane_h + 12
-    for px, label, colour, v, lane in placed:
+        placed.append((px, label, colour, v, lane, span))
+    lanes = max(q[4] for q in placed) + 1
+    axis = 20 + lanes * lane_h + 12
+    for px, label, colour, v, lane, span in placed:
         ly = axis - 22 - lane * lane_h
         if isinstance(v, tuple):  # the deleted version: somewhere between its neighbours
             a, b = X(v[0]['when']), X(v[1]['when'])
             svg.line(a, axis - 8, b, axis - 8, stroke='@rule', dash='3 3')
-            svg.line(px, axis - 8, px, ly + 6, stroke='@rule', dash='2 2')
-            svg.text(px, ly, label, size=SMALL, anchor='middle', fill='@muted', italic=True)
+            svg.line(px, axis - 8, px, ly - 6, stroke='@rule', dash='2 2')
+            svg.text(px + 5, ly, label, size=SMALL, fill='@muted', italic=True)
             continue
-        svg.line(px, axis, px, ly + 6, stroke='@rule')
-        svg.text(px, ly, label, size=SMALL, anchor='middle', fill=colour, bold=True)
+        svg.line(px, axis, px, ly - 6, stroke=colour)
+        svg.text(px + 5, ly, label, size=SMALL, fill=colour, bold=True)
     svg.line(left, axis, right, axis, stroke='@rule', sw=1.5)
-    for px, label, colour, v, lane in placed:
+    for px, label, colour, v, lane, span in placed:
         if not isinstance(v, tuple):
             svg.circle(px, axis, 5, fill=colour, stroke='@paper', sw=1.5)
     svg.text(left - 10, axis, 'Releases', anchor='end')
@@ -570,7 +570,7 @@ def releases():
         else:
             runs.append([v['mc'], v['when'], v['when']])
     for i, (mc, a, b) in enumerate(runs):
-        x0 = X(a) if i else left
+        x0 = X(a)
         x1 = X(runs[i + 1][1]) if i + 1 < len(runs) else right
         svg.rect(x0, by, x1 - x0 - 2, 20, fill='@grey_soft', stroke='@panel_edge', rx=3)
         svg.text((x0 + x1) / 2, by + 10, mc, size=SMALL, anchor='middle')
