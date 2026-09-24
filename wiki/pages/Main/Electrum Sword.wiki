@@ -35,7 +35,7 @@ An apprentice [[weaponsmith]] buys it for one [[electrum alloy]], so the alloy c
 {{History line|1.03|Electrum alloy now needs a [[divine fragment]].}}
 {{History line|1.10|Electrum was buffed. A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
 {{History line|1.12.1-alpha|Smithing no longer needs a base-metal item in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. Can only be repaired with blocks of diamond.}}
-{{History line|1.12.2|No longer burns in fire or lava. Warding from held items now stacks with other held warding items. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.12.2|No longer burns in fire or lava. Smite raised from II to III.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/electrum_sword.json}}</ref> Warding from held items now stacks with other held warding items. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}
 
 == References ==

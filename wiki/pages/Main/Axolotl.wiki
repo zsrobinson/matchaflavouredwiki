@@ -8,6 +8,11 @@ It is 10 of 88 junk weight in those biomes: 11.36% of junk, about 1.14% of all c
 == Usage ==
 Placing it spawns an axolotl. Using it on a [[spawner]] destroys every spawner and trial spawner within 16 blocks and deals 20 damage to the player (outside Creative).<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
 
+== History ==
+{{History|
+{{History line|1.12.2|The [[Angler's Almanac]] entry can be unlocked. In 1.12.1-alpha it checked for an item ID, <code>axolotl</code>, that doesn't exist.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/junk/axolotl.json}}</ref> Using it spawns an axolotl. In 1.12.1-alpha the fished item had no entity data, so, as a chicken spawn egg, it spawned a chicken.<ref>{{Source|Matcha_Flavoured/data/minecraft/loot_table/gameplay/fishing/junk.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>}}
+}}
+
 == Trivia ==
 * It is a chicken spawn egg with its entity data set to an axolotl.
 * Its almanac entry reads: ''"You were fishing for fish. The axolotl has decided that technicalities are beneath it."''

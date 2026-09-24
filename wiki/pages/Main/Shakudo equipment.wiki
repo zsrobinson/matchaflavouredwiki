@@ -30,7 +30,7 @@ Values are the item's real attributes; where the hand-written tooltip differs, t
 {{History line|1.10|Shakudo was renamed from "Palatinate" in the language file only, so existing items keep working. Shakudo alloy became more expensive: 3 gold and 6 copper ingots became 2 blocks of gold and 4 blocks of copper. Buffed shakudo armor: added the regeneration ability and the per-piece bonus.}}
 {{History line|1.12|Fixed severe multiplayer lag caused by shakudo armor. The shakudo spear's real attack speed now matches its tooltip.}}
 {{History line|1.12.1-alpha|Shakudo intrinsics are now exclusive with the electrum and adamant intrinsics. Shakudo armor was nerfed.}}
-{{History line|1.12.2|The shakudo chestplate no longer cleanses the [[Wither effect|Wither effect]]. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+{{History line|1.12.2|The shakudo chestplate no longer cleanses the [[Wither effect|Wither effect]]. The shakudo axe gained life steal, and the shakudo mattock's attack damage was lowered from 4 to 2. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
 {{History line|Upcoming|2=The weapons' life steal intrinsic shows its glyphs in the tooltip instead of its translation key.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 

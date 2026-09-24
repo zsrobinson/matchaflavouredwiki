@@ -18,7 +18,7 @@ This upgrade needs a [[smithing upgrade template]]; without one, the same diamon
 It breaks shovel and hoe blocks at speed {{Value|Adamant Mattock|miningspeed}} and has {{Value|Adamant Mattock|durability}} durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Intrinsics ===
-Efficiency I, Unbreaking II and smelting. The smelting intrinsic makes mined blocks drop their smelted form where the block's loot table supports it: ores drop ingots or [[silver bullion]], logs drop charcoal, sand drops glass and cobblestone drops stone.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sand.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+Efficiency I, Unbreaking II and smelting. The smelting intrinsic makes mined blocks drop their smelted form where the block's loot table supports it: ores drop ingots or [[silver bullion]], logs drop charcoal, sand drops glass and cobblestone drops [[limestone]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sand.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 === Combat ===
 It deals {{Value|Adamant Mattock|damage}} damage at an attack speed of {{Value|Adamant Mattock|attackspeed}}.

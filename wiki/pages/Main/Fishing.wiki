@@ -161,7 +161,7 @@ Fish changed to the current item format. Fish caught before this version can no 
 Fish now make up 85 of 100 weight in their biomes (a previous patch gave junk about 50% of the time).
 Estus Ash added to junk, treasure tweaked. The release notes say nautilus shells were added to the fishing buried treasure, but the current chest has none.
 Old Growth Spruce Taiga added to cool freshwater.}}
-{{History line|1.12.2|Fixed typos that made the Angler's Almanac entries for tropical fish impossible to unlock.}}
+{{History line|1.12.2|The Angler's Almanac entries for Warm Saltwater and for the axolotl can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/warm/root.json}}</ref>}}
 {{History line|Upcoming|2=Fish Bones caught in Sulfur Caves now have the correct texture.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> The Angler's Almanac entry for pufferfish in Hot Saltwater can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 <ref>{{Cite changelog|0.5-alpha|quote=Overhauled Fishing System}}</ref><ref>{{Cite changelog|1.10|quote=Fishing Balances}}</ref><ref>{{Cite changelog|1.12.1-alpha|quote=Fishing now gives 85/5 fish to junk in designated biomes (My patch made it worse and would give junk 50% of the time, sorry)}}</ref>

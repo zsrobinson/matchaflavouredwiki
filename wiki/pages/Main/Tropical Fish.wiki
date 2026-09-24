@@ -53,9 +53,8 @@ The [[Angler's Almanac]] has an entry for the tropical fish under Hot Saltwater 
 {{History|
 {{History line|0.5-alpha|Fishing overhauled into climates with star-rated fish.}}
 {{History line|1.10|The Fisherman now buys 12 instead of 24.}}
-{{History line|1.12.1-alpha|Added an Angler's Almanac entry and a catch sound.
-The item format changed; fish caught before this version can no longer be sold.}}
-{{History line|1.12.2|Fixed the Angler's Almanac entries, which couldn't be unlocked.}}
+{{History line|1.12.1-alpha|Added an Angler's Almanac entry and a catch sound. The item format changed; fish caught before this version can no longer be sold.}}
+{{History line|1.12.2|The Warm Saltwater Angler's Almanac entry can be unlocked. In 1.12.1-alpha every Warm Saltwater entry required an almanac root that didn't exist.<ref>{{Source|Matcha_Flavoured/data/main/advancement/anglers_almanac/saltwater/warm/root.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>}}
 }}
 
 == See also ==
