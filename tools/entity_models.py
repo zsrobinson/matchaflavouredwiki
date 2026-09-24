@@ -24,7 +24,10 @@ MANIFEST = 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json'
 def fetch(url, path):
     if not os.path.exists(path):
         os.makedirs(os.path.dirname(path), exist_ok=True)
-        urllib.request.urlretrieve(url, path + '.part')
+        # a User-Agent of our own: the JDK download refuses Python's default one (403)
+        req = urllib.request.Request(url, headers={'User-Agent': 'matcha-flavoured-wiki-tools'})
+        with urllib.request.urlopen(req) as r, open(path + '.part', 'wb') as f:
+            shutil.copyfileobj(r, f)
         os.replace(path + '.part', path)
     return path
 

@@ -174,8 +174,15 @@ def item_lines(a, b, pages):
     return out
 
 
+def real_time(r, d):
+    """A cooking recipe with its cookingtime divided by the station's speed (26.3 doubled blast furnace
+    and smoker recipe times and the speed with them: extract.py, cooking_speeds)."""
+    speed = (d.get('cooking_speed') or {}).get(r['type'], 1)
+    return dict(r, cookingtime=r['cookingtime'] / speed) if r.get('cookingtime') and speed != 1 else r
+
+
 def recipe_lines(a, b, pages):
-    ra, rb = ({r['id']: r for r in d['recipes']} for d in (a, b))
+    ra, rb = ({r['id']: real_time(r, d) for r in d['recipes']} for d in (a, b))
     fields = ('type', 'output', 'grid', 'ingredients', 'input', 'cookingtime', 'experience', 'template', 'base', 'addition')
     out = []
     for rid in sorted(set(ra) | set(rb)):

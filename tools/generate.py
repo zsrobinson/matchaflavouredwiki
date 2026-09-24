@@ -495,10 +495,16 @@ def out_text(o):
     return safe(slot_name(o)) + (',%d' % o['count'] if o.get('count', 1) > 1 else '')
 
 
+COOKING_SPEED = DATA.get('cooking_speed') or {}  # 26.3: blast furnaces and smokers cook twice as fast
+
+
 def cook_ticks(r):
-    """A cooking recipe's time in ticks (the recipe type's default when the file gives none)."""
-    return r.get('cookingtime') or {'smelting': 200, 'smoking': 100, 'blasting': 100,
-                                    'campfire_cooking': 600}[r['type'].split(':')[-1]]
+    """A cooking recipe's time in ticks (the recipe type's default when the file gives none), divided by
+    the station's speed with vanilla fuel as the game does (extract.py: cooking_speeds)."""
+    t = r.get('cookingtime') or {'smelting': 200, 'smoking': 100, 'blasting': 100,
+                                 'campfire_cooking': 600}[r['type'].split(':')[-1]]
+    speed = COOKING_SPEED.get(r['type'], 1)
+    return t if speed == 1 else math.ceil(t / speed)
 
 
 def recipe_ui(r):

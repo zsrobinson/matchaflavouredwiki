@@ -9,7 +9,7 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 from mcformat import Legacy
-from update_report import meaning
+from update_report import meaning, real_time
 
 
 class LegacyTests(unittest.TestCase):
@@ -137,6 +137,11 @@ class ReportTests(unittest.TestCase):
                 'crit': {'a': 1}}]
         self.assertEqual(meaning(old), meaning(new))
         self.assertNotEqual(meaning([{'count': {'min': 1, 'max': 3}}]), meaning([{'count': {'min': 1, 'max': 4}}]))
+
+    def test_cooking_times_are_real_times(self):
+        # matcha:blast/cobblestone_from_blasting_stone: 100 ticks in 26.2, 200 at twice the speed in 26.3
+        r = {'type': 'minecraft:blasting', 'cookingtime': 100}
+        self.assertEqual(real_time(r, {}), real_time(dict(r, cookingtime=200), {'cooking_speed': {'minecraft:blasting': 2.0}}))
 
 
 if __name__ == '__main__':

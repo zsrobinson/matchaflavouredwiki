@@ -790,6 +790,48 @@ for f in sorted(glob.glob(os.path.join(VDATA, 'recipe', '*.json'))):
 
 BLOCKED_RECIPES = sorted(b[len('recipe/'):-5] for b in BLOCKED if b.startswith('recipe/'))
 
+
+# ---------------------------------------------------------------- cooking speed (26.3)
+# Until 26.2 a blast furnace or smoker recipe gave its real time. 26.3 moved the double speed to the
+# fuel: every vanilla fuel's cooking_fuel component has a speed_multiplier, 2 in blocks that match the
+# predicate block/fast_cooking, and the recipes' cookingtime doubled to match. The game cooks for
+# ceil(cookingtime / speed), so data.json records each station's speed with vanilla fuel (all of them
+# share one multiplier; coal's is read) and generate.py: cook_ticks() divides by it.
+COOKING_BLOCKS = {'minecraft:furnace': 'minecraft:smelting', 'minecraft:smoker': 'minecraft:smoking',
+                  'minecraft:blast_furnace': 'minecraft:blasting'}
+
+
+def cooking_speeds():
+    summary = os.path.join(ROOT, 'source', 'vanilla-summary', 'item_components', 'data.min.json')
+    fuel = (load(summary).get('coal') or {}).get('minecraft:cooking_fuel') if os.path.exists(summary) else None
+    if not fuel:
+        return None  # before 26.3: the recipes give the real time
+    src = 'vanilla:item_components/coal'
+
+    def value(ref, block, depth=0):
+        if isinstance(ref, (int, float)):
+            return ref
+        if isinstance(ref, str) and depth < 8:
+            ns, p = norm_ns(ref).split(':', 1)
+            for path in (os.path.join(DP, ns, 'context_float_provider', p + '.json'),
+                         os.path.join(VDATA, 'context_float_provider', p + '.json') if ns == 'minecraft' else None):
+                if path and os.path.exists(path):
+                    return value(load(path), block, depth + 1)
+        if isinstance(ref, dict) and norm_ns(ref.get('type', '')) == 'minecraft:conditional' and depth < 8:
+            c = LEGACY.cond(ref.get('condition'), src)
+            blocks = c.get('block') if isinstance(c, dict) else None
+            blocks = [blocks] if isinstance(blocks, str) else blocks
+            if c.get('condition') == 'minecraft:block_state_property' and isinstance(blocks, list) \
+                    and not c.get('properties') and not any(b.startswith('#') for b in blocks):
+                return value(ref['on_true' if block in map(norm_ns, blocks) else 'on_false'], block, depth + 1)
+        UNKNOWN[('cooking speed', json.dumps(ref)[:60])].add(src)
+        return 1
+
+    return {rtype: value(fuel.get('speed_multiplier', 1), block) for block, rtype in COOKING_BLOCKS.items()}
+
+
+COOKING_SPEED = cooking_speeds()
+
 # ---------------------------------------------------------------- loot tables
 def pool_count(pool_fns):
     """The count a pool's own set_count gives every stack it yields (pool functions run after the
@@ -1602,6 +1644,8 @@ data = {
     'equipment_timers': EQUIPMENT_TIMERS,
     'missing_lang': sorted(MISSING_LANG),
 }
+if COOKING_SPEED:  # 26.3 and later
+    data['cooking_speed'] = COOKING_SPEED
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 with open(OUT, 'w', encoding='utf-8') as f:
     json.dump(data, f, indent=1, ensure_ascii=False)
