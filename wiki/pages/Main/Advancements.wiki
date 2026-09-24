@@ -176,7 +176,7 @@ Most of the pack's advancement files have no display. They are invisible to play
 {{History line|1.03|Added "A Brittle Alloy?", "Hidden Flavors" and "Wait, you can make that?".}}
 {{History line|1.10|Added "Demonic Emissary", "A True Community", "Icarus' Folly", "A Miraculous Discovery!", "Archeologist in Training" and "Wings of Eros". Advancements became translatable. Removed the Estus flask advancement.}}
 {{History line|1.12.1-alpha|Advancements began rewarding obols and crystal hearts and lowering minimum hearts. Added "Bonfire Lit" and the Angler's Almanac tab. Reward advancements are revoked on update so they can be earned again.}}
-{{History line|1.12.2|"Bonfire Lit" works. Fixed a fishing typo that made an advancement impossible.}}
+{{History line|1.12.2|"Bonfire Lit", "Icarus' Folly" and "Wings of Eros" can be earned; the two elytra advancements had named recipe IDs that didn't exist. The Warm Saltwater and axolotl entries of the Angler's Almanac can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/end/smith_bronze_elytra.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/warm/root.json}}</ref>}}
 {{History line|Upcoming|2=Fewer tutorial advancements are revoked on update.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> "Crystal Heart!" and the pufferfish Angler's Almanac entry can be earned.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
