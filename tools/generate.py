@@ -12,7 +12,9 @@ Outputs (Template namespace unless noted):
   Data/Sources/<item>      loot tables (chests, mobs, fishing, ...) and trades that give it
   Data/Trades/<profession> full trade table per villager profession
   Data/Loot/<table>        drop table for each loot table the pack defines
-  Data/Food table, Data/Renamed items, Data/Trim templates, Data/Enchantments
+  Data/Food table, Data/Renamed items, Data/Trim templates
+  Data/Enchantments, Data/Enchantments/New, Data/Enchantments/Vanilla   enchantment lists (notes by enchantment id)
+  Data/Blessings, Data/Ofuda, Data/Intrinsic items/<page>   enchanted books and the items that carry intrinsics
   Data/Advancements/<tab>, Data/Advancements/tabs, Data/Advancements/technical
   Data/Station/<station>   a cooking station's non-food recipes (Mud Kiln, Oven, Blast Furnace, Kindling)
   Data/Fishing/...         the Fishing article's odds: Categories, Luck, Rarity, one per climate table, Special biomes
@@ -146,8 +148,9 @@ INTRINSIC_LABELS = {'adamant_tool': 'Auto-smelting', 'adamant_weapon': 'Weakness
                     'electrum_armour': 'Electrum bonus', 'electrum_tool': 'Fortune bonus'}
 
 
-def intrinsic_text(eid, lvl):
-    """Readable, correctly linked label for an enchantment (including glyph-named intrinsics)."""
+def intrinsic_text(eid, lvl=None):
+    """Readable, correctly linked label for an enchantment (including glyph-named intrinsics). Without a level,
+    just the name (for "incompatible with ...")."""
     e = ENCH.get(eid) or {}
     raw = e.get('name') or ''
     plain = re.sub(r'⟦[^⟧]+⟧', '', raw).strip()
@@ -158,7 +161,7 @@ def intrinsic_text(eid, lvl):
         label = glyphs(raw).strip()
         if not raw or 'kleispack.' in raw:  # untranslated key (pack bug): name it from the id
             label = INTRINSIC_LABELS.get(key, key.replace('_', ' ').capitalize())
-            if maxl > 1:
+            if maxl > 1 and lvl:
                 label += ' ' + roman(lvl)  # the level is real even when the name is missing
         elif not re.sub(r'\{\{G\|[^}]*\}\}', '', label).strip(' ()+-:0123456789∞'):
             label = (label + ' ' + INTRINSIC_LABELS.get(key, page.split('#')[-1])).strip()  # glyph-only: add a readable name
@@ -1210,23 +1213,388 @@ def renamed_table():
             '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
 
 
-def enchantment_table():
+# ------------------------------------------------------------------ enchantment tables
+# Data/Enchantments/New (the pack's own enchantments), Data/Enchantments/Vanilla (what the pack changed
+# and where each one comes from) and Data/Enchantments (every enchantment file, intrinsics and old ids
+# included). Hand-written text the code can't give (what an enchantment does, remarks on a change) is
+# passed by the page as a note keyed by enchantment id: {{Data/Enchantments/New|matcha:reach=...}}.
+ENCH_UPDATES = {k: e['updated_to'] for k, e in ENCH.items() if e.get('updated_to')}  # old id -> the id it becomes
+EQUIPMENT_KINDS = ['sword', 'spear', 'axe', 'pickaxe', 'shovel', 'hoe', 'helmet', 'chestplate', 'leggings', 'boots']
+ARMOR_KINDS = {'helmet', 'chestplate', 'leggings', 'boots'}
+RANDOM_BOOKS = {'#minecraft:on_random_loot': '[[Enchanting#Other sources|Random chest and fishing books]]'}
+LOOT_PLACES = [('chests/abbey/', '[[Abbey]] chests'), ('chests/ancient_city', '[[Ancient City|Ancient city]] chests'),
+               ('chests/bastion_', '[[Bastion Remnant|Bastion]] chests'),
+               ('chests/trial_chambers/reward_ominous', '[[Trial Chambers|Ominous vaults]]'),
+               ('chests/trial_chambers/reward', '[[Trial Chambers|Trial chamber vaults]]'),
+               ('gameplay/piglin_bartering', '{{MCW|Bartering|Piglin bartering}}'), ('gameplay/fishing', '[[Fishing]]')]
+
+
+def item_enchantments(item):
+    """An item's enchantments. Equipment keeps them as stored_enchantments until it reaches an inventory
+    (matcha:mechanics/intrinsic_enchants makes them real enchantments)."""
+    c = item.get('components') or {}
+    return dict(c.get('stored_enchantments') or {}, **(c.get('enchantments') or {}))
+
+
+def is_intrinsic(eid):
+    key = eid.split(':')[-1]
+    return eid.startswith('matcha:') and any(key.startswith(k) for k, _ in INTRINSIC_PAGES)
+
+
+def ench_article(name):
+    """The wiki's own article about an enchantment, if it has one (not a redirect to this list)."""
+    f = os.path.join(HAND, 'Main', fname(name))
+    return os.path.exists(f) and not open(f, encoding='utf-8').read().lstrip().upper().startswith('#REDIRECT')
+
+
+def ench_link(eid):
+    """An enchantment's name, linked to its article here or, for vanilla ones without one, to minecraft.wiki."""
+    if eid in ENCH_UPDATES:
+        return '%s (old id)' % ench_link(ENCH_UPDATES[eid])
+    if is_intrinsic(eid):
+        return intrinsic_text(eid)
+    name = ench_name(eid)
+    return '[[%s]]' % name if ench_article(name) or not eid.startswith('minecraft:') else '{{MCW|%s}}' % name
+
+
+def level_text(eid, lvl):
+    e = ENCH.get(ENCH_UPDATES.get(eid, eid)) or {}
+    return ' (%s)' % roman(lvl) if eid.startswith('minecraft:') or (e.get('max_level') or 1) > 1 else ''
+
+
+def item_kind(iid):
+    k = iid.split(':')[-1]
+    return next((x for x in EQUIPMENT_KINDS if k.endswith('_' + x)), None)
+
+
+def item_ref(iid):
+    """A link to a vanilla item id's page here, or to minecraft.wiki when the wiki has none."""
+    name = id_name(iid)
+    return '[[%s]]' % name if page_exists(name) else '{{MCW|%s}}' % name
+
+
+def and_list(parts):
+    return parts[0] if len(parts) == 1 else ', '.join(parts[:-1]) + ' and ' + parts[-1]
+
+
+def applies_to(ids, limit=None):
+    """Item ids as readable groups: "Swords (not golden) and stick". None when there are more than limit groups."""
+    parts = []
+    for kind in EQUIPMENT_KINDS:
+        have = sorted(i.split(':')[-1] for i in ids if item_kind(i) == kind)
+        if not have:
+            continue
+        every = sorted(k for k in VSUM if item_kind(k) == kind)
+        plural = kind if kind.endswith('s') else kind + 's'
+        missing = [k[:-len(kind) - 1].replace('_', ' ') for k in every if k not in have]
+        if not missing:
+            parts.append(plural)
+        elif len(missing) <= 3 and len(missing) < len(have):
+            parts.append('%s (not %s)' % (plural, ' or '.join(missing)))
+        else:
+            parts.append('%s %s' % (and_list([k[:-len(kind) - 1].replace('_', ' ') for k in have]), plural))
+    parts += [id_name(i).lower() for i in ids if not item_kind(i)]
+    if not parts or (limit and len(parts) > limit):
+        return None
+    s = and_list(parts)
+    return s[0].upper() + s[1:]
+
+
+def world_loot_entries():
+    """(world table, entry) for every item entry a world loot table can yield, nested tables included."""
+    out = []
+
+    def walk(lid, root, seen):
+        for e in LOOT.get(lid, {}).get('entries', []):
+            sub = e.get('loot_table')
+            if isinstance(sub, str):
+                if sub not in seen:
+                    walk(sub, root, seen | {sub})
+            elif e.get('item'):
+                out.append((root, e))
+    for lid in LOOT:
+        if not loot_category(lid) or lid in REFERENCED or (lid.startswith('minecraft:gameplay/fishing/') and lid not in ROLLED):
+            continue  # the same world tables the Sources lists use
+        walk(lid, lid, {lid})
+    return out
+
+
+def loot_place(lid):
+    p = lid.split(':')[-1]
+    label = next((label for pre, label in LOOT_PLACES if p.startswith(pre)), None)
+    if label:
+        return label
+    s = p.split('/')[-1].replace('_', ' ')
+    return s[0].upper() + s[1:] + (' chests' if p.startswith('chests/') else '')
+
+
+def family_key(name):
+    return name.rsplit(' ', 1)[0] if ' ' in name else None
+
+
+def family_members(key):
+    return {n for n, it in ITEMS.items() if n.startswith(key + ' ') and item_kind(it['base_id'])}
+
+
+def gear_text(entries, always_level):
+    """Equipment that comes with an enchantment, as [(item, level, suffix)]. Items of one family ("Adamant
+    Helmet", "Adamant Boots"...) are merged into one entry linked to the family's article."""
+    def lv(levels):
+        levels = sorted(set(levels))
+        if not always_level and all(l == 1 for l in levels):
+            return ''
+        return ' (%s)' % (roman(levels[0]) if len(levels) == 1 else '%s–%s' % (roman(levels[0]), roman(levels[-1])))
+    fams = defaultdict(list)
+    for name, l, suffix in entries:
+        if not suffix and family_key(name) and len([1 for n, _, s in entries if not s and family_key(n) == family_key(name)]) > 1:
+            fams[family_key(name)].append((name, l))
+    out = []
+    for key, members in sorted(fams.items()):
+        names = {n for n, _ in members}
+        page = next((c for p in (key + ' equipment', key + ' armor') for c in (p, p[0] + p[1:].lower())
+                     if os.path.exists(os.path.join(HAND, 'Main', fname(c)))), None)
+        kinds = {item_kind(ITEMS[n]['base_id']) for n in names}
+        if kinds == ARMOR_KINDS and len(names) == 4:
+            text = '%s armor' % key
+        elif names == family_members(key):
+            text = '%s equipment' % key
+        else:
+            text = None
+        if text:
+            text = text[0] + text[1:].lower()
+            out.append(('[[%s]]' % page if page == text else '[[%s|%s]]' % (page, text) if page else text) + lv(l for _, l in members))
+        else:
+            pieces = and_list([n[len(key) + 1:].lower() for n in sorted(names)])
+            out.append('%s %s' % ('[[%s|%s]]' % (page, key) if page else key, pieces) + lv(l for _, l in members))
+    for name, l, suffix in sorted(entries):
+        if not suffix and family_key(name) in fams:
+            continue
+        out.append('[[%s]]%s%s' % (name, lv([l]), suffix))
+    return list(dict.fromkeys(out))
+
+
+def enchantment_sources():
+    """eid -> {'books': [...], 'gear': [(item, level, suffix)], 'found': [...]}: the crafted and traded
+    books that hold each enchantment, the equipment that comes with it and the loot books it is found in.
+    A book holding an old id (main:reach, see ENCH_UPDATES) counts for the enchantment it turns into."""
+    src = defaultdict(lambda: {'books': [], 'gear': [], 'found': []})
+
+    def add(stack, how):
+        for eid, lvl in (stack.get('enchantments') or {}).items():
+            target = ENCH_UPDATES.get(eid, eid)
+            if stack['id'] == 'minecraft:enchanted_book':
+                label = '[[%s]]' % stack['name'] + (': %s' % stack['lore'] if how != 'recipe' and stack.get('lore') else '')
+                old = ' ([[Blessing#Old enchantment ids|as <code>%s</code>]])' % eid if eid != target else ''
+                src[target]['books'].append(label + level_text(target, lvl) + old)
+            else:
+                src[target]['gear'].append((stack['name'], lvl, how))
+    for r in ALL_RECIPES:
+        add(r['output'], 'recipe')
+    for prof, levels in TRADES.items():
+        for lk, ts in levels.items():
+            for t in ts if isinstance(ts, list) else []:
+                if t.get('gives'):
+                    add(t['gives'], ' from the %s' % prof_link(prof))
+    for name, it in ITEMS.items():  # equipment no recipe or trade makes (defined by loot alone)
+        for eid, lvl in (item_enchantments(it) if it['base_id'] != 'minecraft:enchanted_book' else {}).items():
+            if not any(n == name for n, _, _ in src[ENCH_UPDATES.get(eid, eid)]['gear']):
+                src[ENCH_UPDATES.get(eid, eid)]['gear'].append((name, lvl, 'recipe'))
+    for root, e in world_loot_entries():
+        if e['id'] == 'minecraft:enchanted_book':
+            frm = e.get('enchant_from')
+            for eid in e.get('enchant_options') or []:
+                src[eid]['found'].append((isinstance(frm, str) and RANDOM_BOOKS.get(frm)) or loot_place(root))
+            for eid in e.get('enchantments') or {}:
+                src[eid]['found'].append(loot_place(root))
+        else:
+            own = item_enchantments(ITEMS.get(e['item'], {}))
+            for eid, lvl in (e.get('enchantments') or {}).items():
+                if own.get(eid) != lvl:  # a loot variant (the Abbey's iron swords with Anemos)
+                    src[eid]['gear'].append((e['item'], lvl, ' in %s' % loot_place(root)))
+    for s in src.values():
+        s['books'] = list(dict.fromkeys(s['books']))
+        s['gear'] = [(n, l, '' if h == 'recipe' else h) for n, l, h in dict.fromkeys(s['gear'])]
+        s['found'] = sorted(set(s['found']), key=lambda x: (x not in RANDOM_BOOKS.values(), x))
+    return src
+
+
+def num(x):
+    """JSON with integral floats as ints, so 3.0 and 3 compare equal."""
+    if isinstance(x, float) and x == int(x):
+        return int(x)
+    if isinstance(x, dict):
+        return {k: num(v) for k, v in x.items()}
+    if isinstance(x, list):
+        return [num(v) for v in x]
+    return x
+
+
+def ench_ref(eid):
+    """An enchantment named in running text; an intrinsic also says which equipment carries it."""
+    if not is_intrinsic(eid):
+        return ench_link(eid)
+    carriers = sorted(n for n, it in ITEMS.items() if eid in item_enchantments(it) and it['base_id'] != 'minecraft:enchanted_book')
+    if not carriers:
+        return ench_link(eid)
+    keys = sorted({family_key(n) or n for n in carriers})
+    kinds = {item_kind(ITEMS[n]['base_id']) for n in carriers}
+    what = 'armor' if kinds <= ARMOR_KINDS else 'tools' if kinds <= {'axe', 'pickaxe', 'shovel', 'hoe'} else 'equipment'
+    owners = (and_list([k.lower() for k in keys]) + ' ' + what) if len(carriers) > 1 else and_list([c.lower() for c in carriers])
+    return '%s (%s)' % (ench_link(eid), owners)
+
+
+def enchantment_changes(eid):
+    """What the pack changed in a vanilla enchantment: [(short name, line)], substantive changes in bold."""
+    e = ENCH[eid]
+    d, van = num(e['data']), num(e['vanilla'])
+    lines = []
+    if d.get('anvil_cost') != van.get('anvil_cost'):
+        lines.append(('anvil cost', 'Anvil cost %s → %s' % (van.get('anvil_cost'), d.get('anvil_cost'))))
+    if d.get('max_level') != van.get('max_level'):
+        lines.append(('max level', "'''Maximum level %s → %s'''" % (roman(van.get('max_level')), roman(d.get('max_level')))))
+    for ids, other, text in ((e['items'], e['vanilla_items'], 'Also applies to %s'), (e['vanilla_items'], e['items'], 'No longer applies to %s')):
+        extra = [i for i in ids if i not in other]
+        if extra:
+            lines.append(('supported items', "'''%s'''" % text % and_list([item_ref(i) for i in extra])))
+    for ids, other, text in ((e['incompatible'], e['vanilla_incompatible'], 'Also incompatible with %s'),
+                             (e['vanilla_incompatible'], e['incompatible'], 'No longer incompatible with %s')):
+        extra = [i for i in ids if i not in other]
+        if extra:
+            lines.append(('incompatibilities', "'''%s'''" % text % and_list([ench_ref(i) for i in extra])))
+    if json.dumps(d.get('effects'), sort_keys=True) != json.dumps(van.get('effects'), sort_keys=True):
+        lines.append(('effects', "'''Effects changed'''"))
+    known = {'anvil_cost', 'max_level', 'supported_items', 'exclusive_set', 'effects', 'description'}
+    other = [k.replace('_', ' ') for k in sorted(set(d) | set(van)) if k not in known and d.get(k) != van.get(k)]
+    if other:
+        lines.append((', '.join(other), 'Changed: %s' % ', '.join(other)))
+    return lines
+
+
+def note(eid):
+    """A hand-written note the page passes for this row, on a line of its own (tools/lint_pages.py
+    checks that the page passes notes only for rows that exist)."""
+    return '{{#if:{{{%s|}}}|<br />{{{%s}}}}}' % (eid, eid)
+
+
+def stored_text(ench):
+    """A book's enchantments as its tooltip lists them, linked; an old id (see ENCH_UPDATES) is named
+    as the enchantment it turns into."""
+    out = []
+    for eid, lvl in ench.items():
+        target = ENCH_UPDATES.get(eid, eid)
+        e = ENCH.get(target) or {}
+        if is_intrinsic(target):
+            text = intrinsic_text(target, lvl)
+            has_level = text.endswith(' %s]]' % roman(lvl))  # an untranslated name carries its level in the link
+            out.append(text + (' ' + roman(lvl) if (e.get('max_level') or 1) > 1 and not has_level else ''))
+            continue
+        old = ' ([[Blessing#Old enchantment ids|as <code>%s</code>]])' % eid if eid != target else ''
+        out.append(ench_link(target) + (' ' + roman(lvl) if (e.get('max_level') or 1) > 1 else '') + old)
+    return ', '.join(out)
+
+
+def book_tables():
+    """Data/Blessings (every book crafted around a Hell-Bound Book) and Data/Ofuda (every enchanted
+    book a villager sells), with the enchantments each one stores."""
     rows = []
-    for eid, e in sorted(ENCH.items(), key=lambda kv: ench_name(kv[0])):
-        d = e['data']
-        van = e.get('vanilla')
-        changed = []
-        if van:
-            for k in ('max_level', 'weight', 'anvil_cost', 'supported_items', 'primary_items', 'exclusive_set', 'slots', 'effects', 'min_cost', 'max_cost'):
-                if json.dumps(van.get(k), sort_keys=True) != json.dumps(d.get(k), sort_keys=True):
-                    changed.append(k.replace('_', ' '))
-        items = d.get('supported_items')
-        items_t = ('<code>%s</code>' % items) if isinstance(items, str) else ('%d items' % len(items) if items else '—')
-        rows.append('|-\n| %s || <code>%s</code> || %s || %s || %s || %s' % (
-            intrinsic_text(eid, 1), eid, d.get('max_level'), ', '.join(d.get('slots', [])), items_t,
-            ('Changed: ' + ', '.join(changed)) if changed else ('Unchanged' if van else "'''New'''")))
-    return ('<includeonly>{| class="wikitable sortable"\n! Enchantment !! ID !! Max level !! Slots !! Applies to !! Compared with vanilla\n' +
-            '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+    for r in sorted(ALL_RECIPES, key=lambda r: r['output']['name']):
+        o = r['output']
+        t = r['type'].split(':')[-1]
+        if o['id'] != 'minecraft:enchanted_book' or not o.get('enchantments') or t not in ('crafting_shaped', 'crafting_shapeless'):
+            continue
+        ings = [r['key'][ch] for row in r['pattern'] for ch in row if ch != ' '] if t == 'crafting_shaped' else r['ingredients']
+        book = next((g for g in ings if g['names'] == ['Hell-Bound Book']), None)
+        if not book:
+            continue
+        ings.remove(book)
+        tally = defaultdict(int)
+        for g in ings:
+            tally[ing_links(g)] += 1
+        parts = ['%s%s' % ('%d × ' % n if n > 1 else '', s) for s, n in sorted(tally.items(), key=lambda kv: (-kv[1], kv[0]))]
+        rows.append('|-\n| %s || %s || %s' % (il(o['name']), stored_text(o['enchantments']), ', '.join(parts)))
+    end = '\n|}</includeonly><noinclude>Generated by <code>tools/generate.py</code>. [[Category:Generated data]]</noinclude>'
+    blessings = ('<includeonly>{| class="wikitable sortable"\n! Blessing !! Stored enchantments !! Ingredients around the book\n' +
+                 '\n'.join(rows) + end)
+    rows = []
+    for prof, levels in TRADES.items():
+        for lk, ts in sorted(levels.items()):
+            for t in ts if isinstance(ts, list) else []:
+                g = t.get('gives') or {}
+                if g.get('id') != 'minecraft:enchanted_book' or not g.get('enchantments'):
+                    continue
+                price = ' + '.join(('%d × ' % s['count'] if s.get('count', 1) > 1 else '') + il(s['name'])
+                                   for s in (t.get('wants'), t.get('additional_wants')) if s)
+                rows.append('|-\n| %s || %s || %s || %s || %s' % (prof_link(prof), LEVEL_NAMES.get(lk, '—'), price,
+                                                                  g.get('lore') or '—', stored_text(g['enchantments'])))
+    ofuda = ('<includeonly>{| class="wikitable"\n! Villager !! Level !! Price !! Prayer !! Stored enchantments\n' + '\n'.join(rows) + end)
+    return {'Data/Blessings': blessings, 'Data/Ofuda': ofuda}
+
+
+SLOT_TEXT = {'mainhand': 'Main hand', 'offhand': 'Off hand', 'hand': 'Main hand or off hand', 'armor': 'Worn',
+             'head': 'Worn', 'chest': 'Worn', 'legs': 'Worn', 'feet': 'Worn', 'body': 'Worn', 'any': 'Held or worn'}
+
+
+def intrinsic_item_tables():
+    """Data/Intrinsic items/<page>: the items that come with each intrinsic documented on that page
+    (INTRINSIC_PAGES), with the level their tooltip shows and where the item must be to work."""
+    pages = defaultdict(list)
+    for name, it in ITEMS.items():
+        if it['base_id'] == 'minecraft:enchanted_book':
+            continue
+        ench = item_enchantments(it)
+        for eid, lvl in ench.items():
+            key = eid.split(':')[-1]
+            page = next((p for k, p in INTRINSIC_PAGES if key.startswith(k)), None) if is_intrinsic(eid) else None
+            if not page:
+                continue
+            e = ENCH.get(eid) or {}
+            where = ' or '.join(dict.fromkeys(SLOT_TEXT.get(s, s) for s in e.get('slots') or []))
+            where = 'Main hand or off hand' if where == 'Main hand or Off hand' else where
+            others = [stored_text({o: l}) for o, l in ench.items() if o != eid]
+            raw = e.get('name') or ''
+            label = glyphs(raw).strip() if raw and 'kleispack.' not in raw else INTRINSIC_LABELS.get(key, key.replace('_', ' ').capitalize())
+            label += ' ' + roman(lvl) if (e.get('max_level') or 1) > 1 else ''  # the tooltip line
+            pages[page.split('#')[0]].append(((e.get('max_level') or 1, key, name), '|-\n| %s || %s%s || %s' % (
+                il(name), label, ' (and %s)' % and_list(others) if others else '', where)))
+    end = '\n|}</includeonly><noinclude>Generated by <code>tools/generate.py</code>. [[Category:Generated data]]</noinclude>'
+    return {'Data/Intrinsic items/' + page: '<includeonly>{| class="wikitable sortable"\n! Item !! Intrinsic !! Where it works\n' +
+            '\n'.join(r for _, r in sorted(rows)) + end for page, rows in pages.items()}
+
+
+def enchantment_tables():
+    """Template title -> text for the three enchantment tables."""
+    src = enchantment_sources()
+    new, vanilla, full = [], [], []
+    def order(kv):  # by name, each old id after the enchantment it becomes; intrinsics (glyph names) last
+        eid = ENCH_UPDATES.get(kv[0], kv[0])
+        return is_intrinsic(eid), eid.split(':')[-1] if is_intrinsic(eid) else ench_name(eid), kv[0] in ENCH_UPDATES
+    for eid, e in sorted(ENCH.items(), key=order):
+        s = src.get(eid, {'books': [], 'gear': [], 'found': []})
+        maxl = roman(e['max_level'])
+        if e.get('vanilla'):
+            changes = enchantment_changes(eid)
+            vanilla.append('|-\n| <span id="%s"></span>%s || %s || %s%s || %s || %s || %s' % (
+                ench_name(eid), ench_link(eid), maxl, '<br />'.join(t for _, t in changes) or 'None', note(eid),
+                '<br />'.join(s['books']) or "''None''", '<br />'.join(gear_text(s['gear'], True)) or '—',
+                '<br />'.join(s['found']) or '—'))
+            compared = ('Changed: ' + ', '.join(k for k, _ in changes)) if changes else 'Unchanged'
+        else:
+            compared = "'''New'''"
+            if eid.startswith('matcha:') and not is_intrinsic(eid):
+                got = s['books'] + gear_text(s['gear'], e['max_level'] > 1) + s['found']
+                new.append('|-\n| %s || %s || %s || %s || %s' % (
+                    ench_link(eid), maxl, applies_to(e['items']) or '—', '{{{%s|}}}' % eid, '<br />'.join(got) or '—'))
+        full.append('|-\n| %s || <code>%s</code> || %s || %s || %s || %s' % (
+            ench_link(eid), eid, e['max_level'], ', '.join(e.get('slots') or []),
+            applies_to(e['items'], 6) or '<code>%s</code>' % e['supported_items'], compared))
+    end = '\n|}</includeonly><noinclude>Generated by <code>tools/generate.py</code>. Notes are passed by enchantment id. [[Category:Generated data]]</noinclude>'
+    return {
+        'Data/Enchantments/New': '<includeonly>{| class="wikitable sortable"\n! Enchantment !! Max level !! Applies to !! Effect !! Obtained from\n' + '\n'.join(new) + end,
+        'Data/Enchantments/Vanilla': ('<includeonly>{| class="wikitable sortable"\n! Enchantment !! Max level !! Changes from vanilla !! Crafted or traded as '
+                                      '!! Comes on !! Found as\n' + '\n'.join(vanilla) + end),
+        'Data/Enchantments': ('<includeonly>{| class="wikitable sortable"\n! Enchantment !! ID !! Max level !! Slots !! Applies to !! Compared with vanilla\n' +
+                              '\n'.join(full) + end),
+    }
 
 
 # ------------------------------------------------------------------ equipment comparison tables
@@ -2108,7 +2476,7 @@ def effect_sources():
             key = eid.split(':')[-1]
             intrinsic = eid.startswith('matcha:') and any(key.startswith(k) for k, _ in INTRINSIC_PAGES)
             # intrinsics have glyph-only names and no page of their own: link them like the infobox does
-            src[effect_name(m.group(1))].append(('Intrinsic' if intrinsic else 'Enchantment', intrinsic_text(eid, 1) if intrinsic else '[[%s]]' % ench_name(eid),
+            src[effect_name(m.group(1))].append(('Intrinsic' if intrinsic else 'Enchantment', intrinsic_text(eid) if intrinsic else '[[%s]]' % ench_name(eid),
                                                  None, 'while active', 10 ** 9, 1))
     return src
 
@@ -2601,7 +2969,8 @@ def main():
     write('Template', 'Data/Food table', food_table())
     write('Template', 'Data/Renamed items', renamed_table())
     write('Template', 'Data/Trim templates', trim_templates_table())
-    write('Template', 'Data/Enchantments', enchantment_table())
+    for title, text in list(enchantment_tables().items()) + list(book_tables().items()) + list(intrinsic_item_tables().items()):
+        write('Template', title, text)
     equipment_tables(n)
     cooking = ('smelting', 'smoking', 'blasting', 'campfire_cooking')
     for station in sorted({r['station'] for r in ALL_RECIPES if r['type'].split(':')[-1] in cooking}):
