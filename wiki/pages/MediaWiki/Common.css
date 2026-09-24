@@ -20,6 +20,12 @@
 	box-sizing: border-box;
 }
 .messagebox.spoiler { border-left-color: #B03A2E; }
+/* Wider than a phone: a block formatting context (as minecraft.wiki's flex .msgbox) with 10% side
+   margins, so 80% wide on its own as before, but beside a floated infobox it narrows to the space left
+   instead of dropping below the infobox and leaving a gap. (Phones stack the infobox; unchanged.) */
+@media screen and (min-width: 721px) {
+	.messagebox { display: flow-root; width: auto; margin: 0.5em 10%; }
+}
 /* "Hide spoilers" (the reader's choice, html.mfw-hide-spoilers; MediaWiki:Gadget-mfwShell.js): what a
    {{Spoiler}} box covers (.mfw-spoiler-body, marked by site/Spoilers.php) is hidden, and the box says
    so; hidden-advancement rows and other .mfw-spoiler elements are blacked out, as minecraft.wiki's
