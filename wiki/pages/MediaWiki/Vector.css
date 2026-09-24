@@ -36,6 +36,12 @@ body.wgl-theme-dark #footer-icons { filter: none; }
    Drawn like minecraft.wiki's: OOUI's icons in the moon's grey, at its 14px size. Each shows what a
    click does, as minecraft.wiki's width toggle does (full width shows "exit full screen"). */
 #p-personal .mfw-pref-toggle a { width: 14px; height: 14px; background: center / 14px 14px no-repeat; display: block; margin-bottom: -6px; }
+/* every icon the same size, centred in the box and evenly spaced (the moon used to sit 2px low) */
+@media screen and (min-width: 721px) {
+	#p-personal .vector-menu-content-list { display: flex; align-items: center; gap: 9px; height: 14px; padding: 2px 9px; }
+	#p-personal .vector-menu-content-list li { float: none; margin: 0; padding: 0; }
+	#p-personal #pt-dm-toggle a, #p-personal .mfw-pref-toggle a { margin: 0; }
+}
 #p-personal #pt-fw-toggle a { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%23939392'%3E%3Cpath d='M7 7V1H5v4H1v2zM5 19h2v-6H1v2h4zm10-4h4v-2h-6v6h2zm0-8h4V5h-4V1h-2v6z'/%3E%3C/svg%3E"); }
 html.mfw-fixed-width #p-personal #pt-fw-toggle a { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%23939392'%3E%3Cpath d='M1 1v6h2V3h4V1zm2 12H1v6h6v-2H3zm14 4h-4v2h6v-6h-2zm0-16h-4v2h4v4h2V1z'/%3E%3C/svg%3E"); }
 #p-personal #pt-sp-toggle a { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%23939392'%3E%3Cpath d='M12.49 9.94A2.5 2.5 0 0 0 10 7.5z'/%3E%3Cpath d='M8.2 5.9a4.4 4.4 0 0 1 1.8-.4 4.5 4.5 0 0 1 4.5 4.5 4.3 4.3 0 0 1-.29 1.55L17 14.14A14 14 0 0 0 20 10s-3-7-10-7a9.6 9.6 0 0 0-4 .85zM2 2 1 3l2.55 2.4A13.9 13.9 0 0 0 0 10s3 7 10 7a9.7 9.7 0 0 0 4.64-1.16L18 19l1-1zm8 12.5A4.5 4.5 0 0 1 5.5 10a4.45 4.45 0 0 1 .6-2.2l1.53 1.44a2.5 2.5 0 0 0-.13.76 2.49 2.49 0 0 0 3.41 2.32l1.54 1.45a4.47 4.47 0 0 1-2.45.73'/%3E%3C/svg%3E"); }

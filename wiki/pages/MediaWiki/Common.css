@@ -44,7 +44,19 @@ html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td {
 	background: rgba(0, 0, 0, 0.25) !important;
 	box-decoration-break: clone;
 }
-html.mfw-hide-spoilers .mfw-spoiler:not(.mfw-spoiler-shown) * { visibility: hidden; }
+html.mfw-hide-spoilers .mfw-spoiler:not(.mfw-spoiler-shown):not(tr) *,
+html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td * { visibility: hidden; }
+html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td:nth-child(2) { position: relative; }
+html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td:nth-child(2)::after {
+	content: 'Spoiler: click to show';
+	position: absolute;
+	inset: 50% 0 auto;
+	transform: translateY(-50%);
+	padding: 0 0.5em;
+	color: #202122;
+	visibility: visible;
+}
+body.wgl-theme-dark tr.mfw-spoiler > td::after { color: #eaecf0 !important; }
 body.wgl-theme-dark .messagebox.spoiler[data-mfw-spoiler] td::after { background: rgba(255, 255, 255, 0.15); }
 html.mfw-hide-spoilers body.wgl-theme-dark .mfw-spoiler:not(.mfw-spoiler-shown):not(tr),
 html.mfw-hide-spoilers body.wgl-theme-dark tr.mfw-spoiler:not(.mfw-spoiler-shown) > td { background: rgba(255, 255, 255, 0.15) !important; }
