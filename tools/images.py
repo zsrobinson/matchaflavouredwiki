@@ -8,6 +8,7 @@
   Texture <path>.png  raw textures listed in tools/extra_textures.txt (optional)
   <render>.png      the structure, mob and armor renders committed in wiki/renders/ (drawn by
                     tools/render.py from tools/renders.json), copied as they are
+  <name> diagram.svg  the diagrams committed in wiki/diagrams/ (drawn by tools/diagrams.py), likewise
 
 and into site/assets/gui/: the pack's station screens, progress sprites, villager offer button,
 HUD hearts and glyph sheet at 2x, for Module:Station, Module:Tooltip and {{Hp}}.
@@ -1189,18 +1190,48 @@ def draw_icon(entry):
     return 'ok', UNSUPPORTED  # special renderers this worker could not draw, for main() to report
 
 
+
+
+def render_zoom():
+    """tools/render.py's zoom(): each render's file size as a multiple of the size pages show it at."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('render_tool', os.path.join(ROOT, 'tools', 'render.py'))
+    tool = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(tool)
+    entries = json.load(open(os.path.join(ROOT, 'tools', 'renders.json'), encoding='utf-8'))['renders']
+    return {name + '.png': tool.zoom(e) for name, e in entries.items()}
+
+
+FULL = os.path.join(ROOT, 'build', 'images_full')  # tools/build.sh puts these in the wiki's /images/full/
+
+
 def copy_renders():
-    """The committed renders go up with the icons; tools/build.sh uploads the ones that changed."""
+    """The committed renders and diagrams go up with the icons; tools/build.sh uploads the ones that
+    changed. Pages get each render at the size they show it (the file shrunk by render.py's zoom()); the
+    file itself goes to /images/full/, which only the image viewer (Gadget-mfwZoom.js) loads. Diagrams
+    are SVG and zoom as they are."""
+    count = 0
+    shutil.rmtree(FULL, ignore_errors=True)
+    os.makedirs(FULL)
     src = os.path.join(ROOT, 'wiki', 'renders')
-    names = sorted(f for f in os.listdir(src) if f.endswith('.png')) if os.path.isdir(src) else []
-    for f in names:
+    zooms = render_zoom()
+    for f in sorted(f for f in os.listdir(src) if f.endswith('.png')):
+        z = zooms[f]
+        shutil.copyfile(os.path.join(src, f), os.path.join(FULL, f.replace(' ', '_')))
+        im = Image.open(os.path.join(src, f))
+        im = im.resize((max(1, round(im.width / z)), max(1, round(im.height / z))), Image.LANCZOS)
+        im.save(os.path.join(OUT, f), optimize=True)  # the same bytes each run, so build.sh uploads only real changes
+        count += 1
+    src = os.path.join(ROOT, 'wiki', 'diagrams')
+    for f in sorted(f for f in os.listdir(src) if f.endswith('.svg')):
         shutil.copyfile(os.path.join(src, f), os.path.join(OUT, f))
-    return len(names)
+        count += 1
+    return count
 
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    print('renders', copy_renders())
+    print('renders and diagrams', copy_renders())
     stamp = os.path.join(OUT, '.inputs')
     digest = input_hash()
     if '--force' not in sys.argv and os.path.exists(stamp) and open(stamp).read() == digest:

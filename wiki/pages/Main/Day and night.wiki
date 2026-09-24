@@ -3,6 +3,7 @@ The '''day and night''' cycle in [[Matcha Flavoured]] is three times as long as 
 
 == Mechanics ==
 The pack replaces the Overworld's day timeline with one whose period is 72,000 ticks. Every keyframe is at three times its vanilla tick.<ref name="day">{{Source|MF_datapack/data/minecraft/timeline/day.json}}</ref>
+{{Diagram|Day and night|caption=One day on the pack's timeline: the sky light level, when undead burn in sunlight, and when eyeblossoms open and creakings are active. The dotted lines are the <code>/time</code> markers.}}
 
 {| class="wikitable"
 ! Time marker !! Tick !! Vanilla tick !! Real time into the day

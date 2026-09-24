@@ -63,6 +63,7 @@ This mechanic is on the repository's <code>main</code> branch but not in [[Match
 
 === Daily schedule ===
 The pack stretches the vanilla villager schedule over a 72,000-tick cycle, three times the length of the vanilla 24,000-tick day, to match its longer [[Day and night|days]]. Adult villagers wake at tick 30, work from tick 6,000, meet from tick 27,000, idle from tick 33,000 and sleep from tick 36,000; every keyframe is exactly three times its vanilla value.<ref>{{Source|MF_datapack/data/minecraft/timeline/villager_schedule.json}}</ref>
+{{Diagram|Villager schedule|caption=What adult and baby villagers do over one of the pack's days.}}
 
 === Protection ===
 Villagers are counted as "villager friends" together with wandering traders, iron and snow golems, wolves, cats, happy ghasts and players. A [[Warding Stone]] gives every villager friend within 16 blocks {{EffectLink|Regeneration}} I for 3 seconds whenever they do not already have it.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/effects.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/entity_type/villager_friends.json}}</ref> The developer describes this as a "band-aid fix" for villagers, who "tend not to survive for too long on their own".<ref>{{Cite video|quote=Villagers are famously pacifist. They tend not to survive for too long on their own, so I added a band-aid fix for this.}}</ref>
