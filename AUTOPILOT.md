@@ -114,12 +114,18 @@ Read `wiki/STYLE.md`, `wiki/AGENT_BRIEF.md` and `wiki/PAGES.md` first; they are 
   values that changed, to catch stale mentions the report can't see.
 - **A big update** (more than about 40 lines, e.g. a port to a new Minecraft version): give each heading of
   the report to its own agent with `wiki/AGENT_BRIEF.md` and its lines. Agents save each page as they
-  finish it and don't commit; you collect their reports.
+  finish it and don't commit; you collect their reports. Several headings name the same pages (an
+  alloy tool is in Items, Recipes and Villager trades), so tell every agent to make small edits to the
+  file as it is now, and never to `git checkout` or `git restore` anything under `wiki/pages/`: that
+  throws away the other agents' work.
 - **New items, mechanics, structures or mobs:** write full articles (they replace the generated pages).
   Add them to `wiki/PAGES.md`, the overview pages and the navboxes.
 - **Removed features:** keep the article, say it was removed and in which version, add it to
   "Removed features", and keep its History.
-- **History:** add `{{History line|<version>|...}}` rows for the new release. Pages may also describe what
+- **History:** add `{{History line|<version>|...}}` rows for the new release. A row says how the release
+  differs from the previous *release*: compare the two commits' files, not upstream's commit messages.
+  A bug that appeared on `main` and was fixed before the release ("fix another fishing typo") never
+  reached players, so it gets no row. Pages may also describe what
   is on `main` but not yet released, marked `{{Upcoming}}` (a message box) or with an "Upcoming" history row,
   citing that code with `{{Source|path|at=<a commit on main>}}`. When a release comes out, promote every
   one of them that the release contains (`grep -rl "Upcoming" wiki/pages`): the text becomes the current
