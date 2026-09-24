@@ -111,6 +111,7 @@ sortable wikitables, and `{{Main|...}}` hatnotes into each detail page.
 | `{{Slot|Item}}`, `{{ItemLink|Item}}`, `{{EffectLink|Resistance}}` | Icons. Item icons are `File:<Item Name>.png`. |
 | `{{G|Warding}}` | The pack's tooltip glyphs (Health, Warding, Doom, Cleanse, Magic protection, Armor, ...). |
 | `{{Hp|8}}` | Health points, drawn as hearts. |
+| `{{Diagram|Warding|caption=...}}` | A diagram from `tools/diagrams.py` (see "Diagrams"); `align=right|width=360` for small ones. |
 | `{{Main|X}}`, `{{See also|X}}`, `{{About|...}}`, `{{Distinguish|X}}` | Hatnotes. |
 | `{{Vanilla}}` / `{{Vanilla|Emerald}}` | Links the vanilla page on minecraft.wiki. |
 | `{{MCW|Page|text}}` | Inline link to minecraft.wiki. |
@@ -150,6 +151,25 @@ would need diagrams, which are a different thing. When a page qualifies but can'
 (a mob whose animation the renderer lacks) or a template isn't worth showing (an invisible road connector), put it in
 the `skip` list of `tools/renders.json` with the reason. `python3 tools/render.py --audit` lists every
 gap; it passes when each one is rendered or skipped.
+
+## Diagrams
+
+Diagrams are drawn from the pack's data by `tools/diagrams.py` (one function per diagram, in
+`tools/diagram_defs/`) and committed in `wiki/diagrams/`, so a pack update redraws them. A page shows
+one with `{{Diagram|<Name>|caption=...}}`, which picks the light or dark drawing to match the theme.
+
+A section gets a diagram when its main point is a relationship a table states but doesn't show:
+
+- a value over time (the day cycle, a schedule, how something grows or runs out);
+- a range along a scale (where ores generate by Y level, damage or hearts by level);
+- a layout in space (a radius, an area, a cross-section);
+- a sequence or decision (a progression, a crafting chain, the checks a mechanic runs).
+
+It doesn't when a table or list already reads at a glance. One diagram per section at most, with a
+one-sentence caption saying what it shows. The numbers come from the pack's files at draw time, never
+typed in; the style (palette roles, font, sizes, item icons, hearts) comes from `tools/diagrams.py`,
+so every diagram looks like the others. Full width is 760px; a small one floats right at about 360px
+(`align=right`).
 
 ## Files
 

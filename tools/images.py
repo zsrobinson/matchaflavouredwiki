@@ -8,6 +8,7 @@
   Texture <path>.png  raw textures listed in tools/extra_textures.txt (optional)
   <render>.png      the structure, mob and armor renders committed in wiki/renders/ (drawn by
                     tools/render.py from tools/renders.json), copied as they are
+  <name> diagram.svg  the diagrams committed in wiki/diagrams/ (drawn by tools/diagrams.py), likewise
 
 and into site/assets/gui/: the pack's station screens, progress sprites, villager offer button,
 HUD hearts and glyph sheet at 2x, for Module:Station, Module:Tooltip and {{Hp}}.
@@ -1153,17 +1154,21 @@ def draw_icon(entry):
 
 
 def copy_renders():
-    """The committed renders go up with the icons; tools/build.sh uploads the ones that changed."""
-    src = os.path.join(ROOT, 'wiki', 'renders')
-    names = sorted(f for f in os.listdir(src) if f.endswith('.png')) if os.path.isdir(src) else []
-    for f in names:
-        shutil.copyfile(os.path.join(src, f), os.path.join(OUT, f))
-    return len(names)
+    """The committed renders and diagrams go up with the icons; tools/build.sh uploads the ones that
+    changed."""
+    count = 0
+    for folder, ext in (('renders', '.png'), ('diagrams', '.svg')):
+        src = os.path.join(ROOT, 'wiki', folder)
+        names = sorted(f for f in os.listdir(src) if f.endswith(ext)) if os.path.isdir(src) else []
+        for f in names:
+            shutil.copyfile(os.path.join(src, f), os.path.join(OUT, f))
+        count += len(names)
+    return count
 
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    print('renders', copy_renders())
+    print('renders and diagrams', copy_renders())
     stamp = os.path.join(OUT, '.inputs')
     digest = input_hash()
     if '--force' not in sys.argv and os.path.exists(stamp) and open(stamp).read() == digest:

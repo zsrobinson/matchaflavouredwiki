@@ -71,6 +71,7 @@ Warding runs on a timer, not every tick. Levels 1 and 2 pulse once per second, a
 | 0.5 s || 24 blocks || III || 12 blocks || {{Hp|2}} || {{Hp|4}} || {{Hp|2}} within 16 blocks
 |}
 <ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_1.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_4.mcfunction}}</ref>
+{{Diagram|Warding|caption=Warding's radii around the player at each level, drawn to scale.}}
 
 === Targeting ===
 Each pulse picks a single target to damage, in this order:<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_3.mcfunction}}</ref>

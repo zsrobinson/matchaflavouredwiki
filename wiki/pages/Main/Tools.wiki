@@ -34,6 +34,7 @@ Instead of the vanilla "incorrect tool" tags, pack pickaxes use their own block 
 * '''Diamond''' (35), '''electrum''' and '''adamant''' (55) mine obsidian very fast.
 * The '''steel pickaxe''' and most dolabras have no obsidian rule and mine it normally.
 Because the pack's pickaxe rules list <code>#minecraft:mineable/pickaxe</code> as a correct tool without a tier check, any pickaxe not listed above gets drops from every other pickaxe block, including ancient debris.
+{{Diagram|Mining levels|caption=Which blocks each pickaxe gets drops from, by its tool rules. A number in a cell is the pickaxe's mining speed on that block where it differs from its usual speed.}}
 
 == Comparison ==
 === Pickaxe ===

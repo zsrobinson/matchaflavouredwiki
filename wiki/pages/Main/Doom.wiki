@@ -42,6 +42,7 @@ The damage is of the <code>out_of_world</code> type, so it ignores armor and {{M
 <ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/check_doom_1.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/apply_doom_1.mcfunction}}</ref>
 
 Unlike [[warding]], Doom hits '''every''' target in range at once, not just the nearest.
+{{Diagram|Doom|caption=Doom's reach with one to four pieces of adamant armor, drawn to scale.}}
 
 === Targets ===
 Doom does not check the type of entity. Anything with Weakness in range is hit, including passive mobs, [[villager]]s and other players, as long as it isn't wearing an adamant armor piece.<ref>{{Source|MF_datapack/data/matcha/predicate/not_wearing_adamant.json}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/effects/has_weakness.json}}</ref> The wearer is never hurt by their own Doom, and adamant armor also protects other players from it. A {{MCW|Zombie Villager|zombie villager}} that has been given Weakness to be cured will be damaged by Doom, and its Weakness is removed.

@@ -41,6 +41,9 @@ jobs:
           python3 tools/extract.py
           python3 tools/generate.py
           git diff --stat --exit-code wiki/generated || (echo "::error::wiki/generated is out of date: run tools/generate.py and commit" && exit 1)
+      - name: Diagrams are current
+        run: |
+          python3 tools/diagrams.py --check || (echo "::error::wiki/diagrams is out of date: run python3 tools/diagrams.py and commit" && exit 1)
       - name: Renders are current
         # wiki/renders/ is drawn by tools/render.py (headless WebGL) and committed, so CI doesn't draw
         # it. A pack update makes every render out of date: redraw and commit when you next can.

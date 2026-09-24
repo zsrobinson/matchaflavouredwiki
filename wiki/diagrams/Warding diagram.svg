@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 308" width="760" height="308" font-family='"Liberation Sans", Arial, Helvetica, FreeSans, sans-serif' role="img">
+<title>Warding's slowing, damage and Wither radii at levels 1 to 4, to scale</title>
+<circle cx="95" cy="125" r="27.67" fill="#c3d4f1" stroke="#2c5aad" stroke-width="1.5"/>
+<circle cx="95" cy="125" r="10.38" fill="#f1c7c2" stroke="#b0392f" stroke-width="1.5"/>
+<circle cx="95" cy="125" r="4" fill="#202122"/>
+<text x="95" y="14" font-size="13" fill="#202122" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Warding 1</text>
+<text x="95" y="228" font-size="11.5" fill="#2c5aad" text-anchor="middle" dominant-baseline="middle">Slowing: 8 blocks</text>
+<text x="95" y="245" font-size="11.5" fill="#b0392f" text-anchor="middle" dominant-baseline="middle">Damage: 3 blocks</text>
+<text x="95" y="262" font-size="11.5" fill="#66489e" text-anchor="middle" dominant-baseline="middle">Wither: never</text>
+<circle cx="285" cy="125" r="34.58" fill="#c3d4f1" stroke="#2c5aad" stroke-width="1.5"/>
+<circle cx="285" cy="125" r="27.67" fill="none" stroke="#66489e" stroke-width="1.5" stroke-dasharray="5 4"/>
+<circle cx="285" cy="125" r="20.75" fill="#f1c7c2" stroke="#b0392f" stroke-width="1.5"/>
+<circle cx="285" cy="125" r="4" fill="#202122"/>
+<text x="285" y="14" font-size="13" fill="#202122" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Warding 2</text>
+<text x="285" y="228" font-size="11.5" fill="#2c5aad" text-anchor="middle" dominant-baseline="middle">Slowing: 10 blocks</text>
+<text x="285" y="245" font-size="11.5" fill="#b0392f" text-anchor="middle" dominant-baseline="middle">Damage: 6 blocks</text>
+<text x="285" y="262" font-size="11.5" fill="#66489e" text-anchor="middle" dominant-baseline="middle">Wither: 8 blocks</text>
+<circle cx="475" cy="125" r="48.42" fill="#c3d4f1" stroke="#2c5aad" stroke-width="1.5"/>
+<circle cx="475" cy="125" r="41.5" fill="none" stroke="#66489e" stroke-width="1.5" stroke-dasharray="5 4"/>
+<circle cx="475" cy="125" r="27.67" fill="#f1c7c2" stroke="#b0392f" stroke-width="1.5"/>
+<circle cx="475" cy="125" r="4" fill="#202122"/>
+<text x="475" y="14" font-size="13" fill="#202122" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Warding 3</text>
+<text x="475" y="228" font-size="11.5" fill="#2c5aad" text-anchor="middle" dominant-baseline="middle">Slowing: 14 blocks</text>
+<text x="475" y="245" font-size="11.5" fill="#b0392f" text-anchor="middle" dominant-baseline="middle">Damage: 8 blocks</text>
+<text x="475" y="262" font-size="11.5" fill="#66489e" text-anchor="middle" dominant-baseline="middle">Wither: 12 blocks</text>
+<circle cx="665" cy="125" r="83" fill="#c3d4f1" stroke="#2c5aad" stroke-width="1.5"/>
+<circle cx="665" cy="125" r="55.33" fill="none" stroke="#66489e" stroke-width="1.5" stroke-dasharray="5 4"/>
+<circle cx="665" cy="125" r="41.5" fill="#f1c7c2" stroke="#b0392f" stroke-width="1.5"/>
+<circle cx="665" cy="125" r="4" fill="#202122"/>
+<text x="665" y="14" font-size="13" fill="#202122" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Warding 4</text>
+<text x="665" y="228" font-size="11.5" fill="#2c5aad" text-anchor="middle" dominant-baseline="middle">Slowing: 24 blocks</text>
+<text x="665" y="245" font-size="11.5" fill="#b0392f" text-anchor="middle" dominant-baseline="middle">Damage: 12 blocks</text>
+<text x="665" y="262" font-size="11.5" fill="#66489e" text-anchor="middle" dominant-baseline="middle">Wither: 16 blocks</text>
+<rect x="12" y="284" width="14" height="12" fill="#c3d4f1" rx="2"/>
+<text x="36" y="290" font-size="11.5" fill="#4f555b" dominant-baseline="middle">Every undead mob slowed</text>
+<rect x="181.78" y="284" width="14" height="12" fill="#f1c7c2" rx="2"/>
+<text x="205.78" y="290" font-size="11.5" fill="#4f555b" dominant-baseline="middle">One target damaged each pulse</text>
+<line x1="375.84" y1="290" x2="393.84" y2="290" stroke="#66489e" stroke-width="2.5" stroke-dasharray="5 3"/>
+<text x="399.84" y="290" font-size="11.5" fill="#4f555b" dominant-baseline="middle">Wither targeted first</text>
+<line x1="720.33" y1="286" x2="748" y2="286" stroke="#4f555b" stroke-width="1.5"/>
+<line x1="720.33" y1="282" x2="720.33" y2="290" stroke="#4f555b" stroke-width="1.5"/>
+<line x1="748" y1="282" x2="748" y2="290" stroke="#4f555b" stroke-width="1.5"/>
+<text x="734.17" y="299" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">8 blocks</text>
+</svg>

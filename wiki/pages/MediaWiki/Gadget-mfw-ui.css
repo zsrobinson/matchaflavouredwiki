@@ -303,3 +303,35 @@
 	height: 18px;
 	background: url('/assets/gui/trade-arrow.png') no-repeat 0 0 / 20px 18px;
 }
+
+/* Diagrams ({{Diagram}}, drawn by tools/diagrams.py): the light or dark drawing, to match the theme */
+.mfw-diagram {
+	margin: 0.6em 0 1.2em;
+}
+.mfw-diagram img {
+	max-width: 100%;
+	height: auto;
+}
+.mfw-diagram-dark,
+body.wgl-theme-dark .mfw-diagram-light {
+	display: none;
+}
+body.wgl-theme-dark .mfw-diagram-dark {
+	display: block;
+}
+.mfw-diagram-caption {
+	margin-top: 0.3em;
+	font-size: 90%;
+	color: var(--color-subtle, #54595d);
+}
+.mfw-diagram-right {
+	float: right;
+	clear: right;
+	margin: 0.2em 0 1em 1.4em;
+}
+@media screen and (max-width: 720px) {
+	.mfw-diagram-right {
+		float: none;
+		margin: 0.6em 0 1.2em;
+	}
+}

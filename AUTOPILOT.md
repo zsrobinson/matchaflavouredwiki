@@ -45,6 +45,9 @@ Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> 
 - After new commits or releases, regenerate the data: `python3 tools/extract.py && python3 tools/images.py && python3 tools/generate.py`.
   If extraction fails or misreads a new format (a new component, recipe type or file layout), fix
   `tools/extract.py` or `tools/generate.py` properly. Never hand-edit `wiki/generated/`.
+- Redraw the diagrams: `python3 tools/diagrams.py` and commit `wiki/diagrams/` (the Check workflow fails
+  if they're out of date). A diagram whose data moved raises an error naming what it couldn't find: fix
+  its function in `tools/diagram_defs/`, and if the change is visible, update the page's caption.
 - Then redraw the structure, mob and armor renders: `python3 tools/render.py` (a few minutes; it uses
   the preinstalled Chromium) and commit `wiki/renders/`. Look at the ones that changed: a render that
   broke (a block drawn magenta, a piece missing) usually means the pack changed a structure or model

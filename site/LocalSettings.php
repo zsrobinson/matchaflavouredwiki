@@ -85,6 +85,9 @@ $wgEnableParserLimitReporting = false;
 
 $wgEnableUploads = true;
 $wgFileExtensions = [ 'png', 'gif', 'jpg', 'jpeg', 'webp', 'svg' ];
+// diagrams (tools/diagrams.py) are SVG: send them to the browser as they are, not as PNG thumbnails
+$wgSVGNativeRendering = true;
+$wgSVGNativeRenderingSizeLimit = 2 * 1024 * 1024;
 $wgUseImageMagick = false;
 $wgUseInstantCommons = false;
 $wgPingback = false;

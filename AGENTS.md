@@ -149,6 +149,16 @@ the swap mid-way.
     deepslate's invisible-block mesh is off: for a whole structure it covers millions of empty cells
     and crashes the tab.
 
+- **Diagrams**: `python3 tools/diagrams.py` draws every diagram from the pack's data into `wiki/diagrams/`
+  (committed; CI fails when it's out of date, like `wiki/generated`). Each is a function in
+  `tools/diagram_defs/<topic>.py`, registered with `@diagram('<Name>')`, reading its numbers with the
+  helpers in `tools/diagrams.py` (`pack_json`, `mcfunction` + `need`, `data()`), so a pack change
+  redraws it or fails loudly. It draws with colour roles (`@ink`, `@red`...), rendered once per theme
+  into `<Name> diagram.svg` and `<Name> diagram (dark).svg`; `{{Diagram}}` shows the one matching the
+  theme. MediaWiki serves the SVGs as they are (`$wgSVGNativeRendering`), and item icons and hearts are
+  embedded in them, because an SVG shown as an image can't load anything else. When a page gets one
+  is in `wiki/STYLE.md` ("Diagrams"). To check one, open the SVG in a browser in both themes.
+
 **Pack look** (`MediaWiki:Gadget-mfw-ui.css`)
 - **Station screens:** `{{Crafting}}`, `{{Cooking}}`, `{{Smithing}}` and `{{Stonecutter}}` call
   `Module:Station`, which draws the pack's own screen art and places each slot at the game's pixel

@@ -79,6 +79,8 @@ tools/
                         and the committed renders) and site/assets/gui (the pack's station screens, sprites, glyph sheet)
   render.py             tools/renders.json → wiki/renders (structure, mob and armor renders, committed;
                         drawn by tools/render/ in headless WebGL, only when their inputs change)
+  diagrams.py           pack data → wiki/diagrams (SVG diagrams in light and dark; committed; the
+                        diagrams themselves are in tools/diagram_defs/)
   entity_models.py      the Minecraft client's entity models → tools/render/src/entity_models.json
                         (rerun when tools/mc_version.txt changes)
   generate.py           data.json → wiki/generated (infobox/recipe/usage/drop/trade tables, stubs, redirects)
@@ -90,6 +92,7 @@ wiki/
   pages/<Namespace>/<Title>.wiki   hand-written pages (articles, templates, CSS, Lua modules)
   generated/                       generated from source; never edit by hand, but do commit it
   renders/                         drawn by tools/render.py; commit it after running the tool
+  diagrams/                        drawn by tools/diagrams.py; commit it after running the tool
   STYLE.md                         the writing and layout rules (read before editing)
   PAGES.md                         the planned page set and what each page covers
   AGENT_BRIEF.md                   instructions for agents writing pages
