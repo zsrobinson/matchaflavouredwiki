@@ -124,3 +124,11 @@ test('a reader can take an ingredient as it is, or make a raw one', () => {
   const coal = db.rows.find(r => r.o === 'Coal').i;
   assert.equal(R.tree(db, 'Block of Coal', 1, { Coal: coal }).children[0].recipe.o, 'Coal');
 });
+
+test('a recipe choice names the item the tree follows, not the first of its list', () => {
+  const blast = R.made(db, 'Iron Ingot', 'blast')[0];
+  assert.equal(R.recipeLabel(db, blast), 'Blast Furnace: Raw Iron');
+  assert.equal(R.recipeLabel(db, blast, { 'any:Iron Sword;Iron Horse Armor;Raw Iron': 'Iron Horse Armor' }), 'Blast Furnace: Iron Horse Armor');
+  assert.equal(R.recipeLabel(db, R.made(db, 'Stick')[0]), 'Crafting Table: 2 Any Planks');  // a tag keeps its name
+  assert.equal(R.recipeLabel(db, { s: 'blast', g: { Input: 'Raw Iron' }, o: 'Iron Ingot', v: 1 }), 'Blast Furnace: Raw Iron (vanilla recipe)');
+});

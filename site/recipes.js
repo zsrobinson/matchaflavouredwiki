@@ -221,13 +221,26 @@
 			return depthOf(db, a) - depthOf(db, b) || (db.world[b] ? 1 : 0) - (db.world[a] ? 1 : 0) || ms.indexOf(a) - ms.indexOf(b);
 		})[0];
 	}
+	// The item the tree follows for a slot text: the reader's pick, else the easiest member
+	function follows(db, text, choices) {
+		var ms = members(db.d, text), pick = (choices || {})['any:' + text];
+		return ms.length > 1 ? (ms.indexOf(pick) >= 0 ? pick : easiest(db, text)) : ms[0];
+	}
+	// A recipe as the tree's recipe list names it: its station and the ingredients the tree would
+	// follow ("Blast Furnace: Raw Iron", not the first item of the list it accepts); a tag keeps its name.
+	// A vanilla recipe says so, as the tables do (the pack's Raw Iron recipe and vanilla's are both listed).
+	function recipeLabel(db, r, choices) {
+		return STATIONS[r.s].name + ': ' + tally(r).map(function (t) {
+			return (t[1] > 1 ? t[1] + ' ' : '') + (t[0].indexOf(';') < 0 ? t[0] : follows(db, t[0], choices));
+		}).join(', ') + (r.v ? ' (vanilla recipe)' : '');
+	}
 	// The tree for `need` of a slot text: {text, name, need, recipe, recipes, crafts, children, loop}.
 	// choices: {itemName: recipe row index or -1 for "use as it is", 'any:<slot text>': member name}, the reader's picks.
 	function tree(db, text, need, choices, path) {
 		choices = choices || {};
 		path = path || [];
 		var ms = members(db.d, text);
-		var name = ms.length > 1 ? (ms.indexOf(choices['any:' + text]) >= 0 ? choices['any:' + text] : easiest(db, text)) : ms[0];
+		var name = follows(db, text, choices);
 		var node = { text: text, name: name, need: need, children: [] };
 		if (path.indexOf(name) >= 0) { node.loop = true; return node; }
 		var rs = treeRecipes(db, name);
@@ -253,7 +266,7 @@
 		return order.map(function (k) { return [k, sum[k]]; }).sort(function (a, b) { return b[1] - a[1] || order.indexOf(a[0]) - order.indexOf(b[0]); });
 	}
 
-	var api = { STATIONS: STATIONS, parseSlot: parseSlot, tally: tally, members: members, prepare: prepare, made: made, used: used,
+	var api = { recipeLabel: recipeLabel, STATIONS: STATIONS, parseSlot: parseSlot, tally: tally, members: members, prepare: prepare, made: made, used: used,
 		nameRows: nameRows, matchNames: matchNames, depths: depths, treeRecipes: treeRecipes, tree: tree, totals: totals };
 	if (typeof module !== 'undefined' && module.exports) { module.exports = api; }
 	if (typeof document === 'undefined') return;
@@ -339,11 +352,6 @@
 		if (r.s === 'kindling') note.push('also on ' + link('Soul Kindling'));
 		return '<div class="mfui-figure">' + h + (note.length ? '<div class="mfui-caption">' + note.join(' · ') + '</div>' : '') + '</div>';
 	}
-	// A slot's text in a few words: "Iron Pickaxe or …" for a long list of alternatives
-	function short(text) {
-		var ps = parseSlot(text);
-		return ps[0].name + (ps.length > 1 ? ' or …' : '');
-	}
 	function heading(level, text, id) {
 		return '<div class="mw-heading mw-heading' + level + '"><h' + level + (id ? ' id="' + esc(id) + '"' : '') + '>' + text + '</h' + level + '></div>';
 	}
@@ -403,8 +411,7 @@
 				(node.recipe || node.recipes.some(function (r) { return !reverses(db, r); }))) {
 			h += ' <select class="mfw-rb-pick" data-item="' + esc(node.name) + '" aria-label="How to get ' + esc(node.name) + '">' +
 				(top ? '' : '<option value="-1"' + (node.recipe ? '' : ' selected') + '>As it is</option>') + node.recipes.map(function (r, i) {
-					return '<option value="' + r.i + '"' + (r === node.recipe ? ' selected' : '') + '>' + esc(STATIONS[r.s].name + ': ' +
-						tally(r).map(function (t) { return (t[1] > 1 ? t[1] + ' ' : '') + short(t[0]); }).join(', ')) + '</option>';
+					return '<option value="' + r.i + '"' + (r === node.recipe ? ' selected' : '') + '>' + esc(recipeLabel(db, r, choices)) + '</option>';
 				}).join('') + '</select>';
 		}
 		h += '</span>';
