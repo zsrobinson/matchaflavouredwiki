@@ -318,6 +318,7 @@ the swap mid-way.
 - **Intrinsics are enchantments,** stored as `stored_enchantments` on armor and tools. Their names are
   glyph-only, so `generate.py: INTRINSIC_PAGES` and `INTRINSIC_LABELS` give them pages and readable labels.
 - **Pack bugs** go on the "Known bugs" page. Don't write workarounds that hide them.
+  `build/data.json` lists `missing_lang` keys.
 - **Numbers in prose come from the data too.** `{{Value|<item>|<field>}}` (`Module:Value`) reads
   `Module:Data/Values`, which `generate.py: item_values` writes from the same code as the infobox, each
   value already formatted once per form ("2 minutes", "2:00", `{{Hp|8}}`). The module only picks a string,
@@ -325,7 +326,6 @@ the swap mid-way.
   field or format is an error in `Category:Pages with unknown values`, so `check_site.py` and
   `lint_pages.py` fail. `tools/values.py --against origin/main` proves a conversion: each changed page,
   with its values filled in, must equal the old text.
-  `build/data.json` lists `missing_lang` keys.
 
 ## Sources worth knowing
 - **Developer's videos (YouTube channel Klei_Wright):**
