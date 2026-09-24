@@ -48,6 +48,10 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 | [[Estus Flask]] || [[Matcha Flavoured 1.12.2|1.12.2]] || First removed in 1.10 because players were abusing it, kept in 1.12, and removed for good in 1.12.2 because the developer wanted food to matter most.<ref>{{Cite changelog|1.12.2|quote=Estus Flask, I want food to be most important}}</ref> A recipe unlock and particle trigger for it remain in the code, but the recipe no longer exists.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/estus_ash.json}}</ref>
 |-
 | Redstone particles || 1.12.2 ||
+|-
+| [[Poplar]] stonecutter and sapling recipes || 1.12.2 || Added in 1.12.1-alpha, ahead of the poplar wood type, which ''Minecraft'' 26.2 doesn't have.<ref>{{Source|Matcha_Flavoured/data/main/recipe/stonecutting/poplar_planks.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>
+|-
+| Blind cave fish and blind minnow || 1.12.2 || Unused fish: 1.12.1-alpha had a loot table for each, but no fishing table rolled them.<ref>{{Source|Matcha_Flavoured/data/minecraft/loot_table/gameplay/fishing/fish/blind_cave_fish.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>
 |}
 
 == References ==
