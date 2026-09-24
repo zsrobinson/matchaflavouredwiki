@@ -9,7 +9,7 @@ The currency of trading is the [[Obol]], which replaces the {{MCW|Emerald|emeral
 === Unlimited trades ===
 Almost every villager trade can be used 999 times before it needs to restock, so in practice trades never lock.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/1/bonemeal.json}}</ref> The only limited trades are the Wandering Trader's Asylum Seeker applications and maps (1 use each). The upcoming [[favorite food]] trade, which is not in [[Matcha Flavoured 1.12.2|1.12.2-beta]], will also have 1 use. The developer's stated aim is that there is "no need to keep them locked in a closet with their workbench to restock".<ref>{{Cite video|quote=Villager trades have been overhauled and with unlimited trades, there's no need to keep them locked in a closet with their workbench to restock.}}</ref>
 
-Most trades are also bulk trades. A single obol buys a full stack of logs, wool, bone meal, arrows or redstone components, 4 [[bulk blocks]] (256 stone), or a bundle of seeds.
+Most trades are also bulk trades. A single obol buys a full stack of logs, wool, bone meal or arrows, a full or half stack of redstone components, 4 [[bulk blocks]] (256 stone), or a bundle of seeds.
 
 === Who buys from the player ===
 In vanilla ''Minecraft'' every profession buys something. In Matcha Flavoured, the only trades that pay obols are:
@@ -62,7 +62,7 @@ Seven professions are renamed, and every profession has new trades. The job site
 | [[Weaponsmith]] || Weaponsmith || [[File:Grindstone.png|16px|link=]] Grindstone || Melts alloy equipment back into [[alloy]]s
 |}
 
-The [[Wandering Trader]] has no profession. It sells [[Asylum Seeker]] applications and village maps, and buys music discs.
+The [[Wandering Trader]] has no profession. It sells [[Asylum Seeker]] applications and maps to villages and swamp huts, and buys music discs.
 
 == Advancements ==
 {| class="wikitable"

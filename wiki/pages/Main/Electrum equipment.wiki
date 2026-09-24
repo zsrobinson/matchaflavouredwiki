@@ -8,7 +8,7 @@ Electrum alloy is crafted from four gold ingots, four silver bullion and a [[Div
 * Tools carry the electrum fortune intrinsic (level 3 on most, 2 on the mattock), which the pack's block loot tables treat like Fortune; it cannot be combined with Fortune or Silk Touch.<ref>{{Source|MF_datapack/data/matcha/enchantment/electrum_tool.json}}</ref>
 ** In 1.12.2 the electrum fortune intrinsic has no name in the language file, so the tools' tooltips show its translation key, "enchantment.kleispack.electrum_tool", instead of the {{G|Fortune}} glyph.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
 * The sword has {{G|Warding}} 3, Smite III and Looting II; the axe and spear have {{G|Warding}} 2.
-* Each armor piece adds +1 to [[Warding]]; the full set adds the [[Set bonus|set bonus]].
+* Each armor piece counts as {{G|Warding}} 1, so a full set gives {{G|Warding}} 4; this is used instead of the Warding from other equipment when it is higher, not added to it. The full set also gives the [[Set bonus|set bonus]].
 * Electrum items use the netherite item IDs, so they do not burn in fire or lava, and the armor counts as piglin-safe.
 
 The video says electrum has "maximum looting and fortune. Its armor and tools when worn or held burn nearby dead."<ref>{{Cite video|quote=Electrum, a silver gold alloy with a maximum looting and fortune. Its armor and tools when worn or held burn nearby dead.}}</ref>
