@@ -20,7 +20,7 @@ It breaks shovel and hoe blocks at speed {{Value|Shakudo Mattock|miningspeed}} a
 Its [[Silk Touch]] intrinsic makes blocks drop themselves. Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 === Combat ===
-It deals {{Value|Shakudo Mattock|damage}} damage with no attack cooldown (attack speed {{Value|Shakudo Mattock|attackspeed}}).
+It deals {{Value|Shakudo Mattock|damage}} damage at an attack speed of {{Value|Shakudo Mattock|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

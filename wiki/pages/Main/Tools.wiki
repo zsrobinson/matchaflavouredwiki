@@ -1,4 +1,4 @@
-The '''tools''' of Matcha Flavoured are the vanilla pickaxe, axe, shovel and hoe, plus two hybrid tools, the [[mattock]] and the [[dolabra]], and several special tools. Stone tools are removed: the tiers run wood, copper, iron, then the alloys. Every tool's stats come from the pack's own recipes, which the pack uses instead of the blocked vanilla recipes.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+The '''tools''' of Matcha Flavoured are the vanilla pickaxe, axe, shovel and hoe, plus two hybrid tools, the [[mattock]] and the [[dolabra]], and several special tools. Stone tools are removed: the tiers run wood, copper, iron, then the alloys. Crafted and smithed tools get their stats from the pack's own recipes, which the pack uses instead of the blocked vanilla recipes.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
 == Tiers ==
 {{Data/Tools/Tiers}}
@@ -34,7 +34,7 @@ See also the [[Snow Shovel|snow shovel]].
 * [[Archeologist's Brush]], [[Hatchet]], [[Rusty Axe]], [[Crook]].
 
 == Removed ==
-Stone tools cannot be crafted; their item IDs are reused for steel, shakudo and hepatizon tools.<ref>{{Source|README.md}}</ref>
+Stone tools cannot be crafted; their item IDs are reused for steel, shakudo and hepatizon tools and for the [[Silver Sword|silver]] and [[Warding Sword|warding]] swords.<ref>{{Source|README.md}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_pickaxe.json}}</ref>
 
 == References ==
 {{reflist}}
