@@ -39,7 +39,7 @@ An apprentice [[weaponsmith]] buys it for one [[adamant alloy]].<ref>{{Source|MF
 {{History line|1.03|The vanilla netherite recipes were blocked.}}
 {{History line|1.10|A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
 {{History line|1.12.1-alpha|The upgrade now keeps the base item's enchantments. Added the "Repaired with" tooltip. Attack speed raised from 0.5 to 1.0. [[Divinity]] was replaced with Sharpness.}}
-{{History line|1.12.2|Now inflicts Weakness. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.12.2|Now inflicts Weakness. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>. The weaponsmith takes it in a trade of its own; before, the adamant sword trade accepted any netherite sword, the claymore included.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/netherite_claymore.json}}</ref>}}
 }}
 
 == References ==

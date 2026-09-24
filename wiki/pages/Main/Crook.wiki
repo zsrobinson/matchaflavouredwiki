@@ -10,6 +10,11 @@ A level 3 shepherd sells it for one [[Obol|obol]].<ref>{{Source|MF_datapack/data
 == Usage ==
 It deals {{Value|Crook|damage|format=raw}} damage with an attack speed of 4, mines hoe blocks at speed {{Value|Crook|miningspeed}}, and has {{Value|Crook|durability}} durability. In the main hand it adds 2 blocks of entity reach; in the off hand it adds 5. It adds 1 safe fall distance in either hand. Its tooltip claims 5 damage and 3 reach, which do not match the attributes. It is repaired with sticks.
 
+== History ==
+{{History|
+{{History line|1.12.2|Off-hand reach raised from 3 to 5 blocks, attack speed raised from 3 to 4, and it mines hoe blocks at speed 8. The tooltip names its repair item.<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/3/crook.json}}</ref><ref>{{Source|Matcha_Flavoured/data/minecraft/villager_trade/shepherd/3/crook.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>}}
+}}
+
 == References ==
 {{reflist}}
 
