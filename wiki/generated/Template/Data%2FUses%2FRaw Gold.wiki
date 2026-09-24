@@ -2,15 +2,15 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Gold Ingot]]
-| [[Golden Pickaxe]] or [[Golden Shovel]] or [[Golden Axe]] or [[Golden Hoe]] or [[Golden Sword]] or [[Golden Spear]] or [[Golden Crown]] or [[Golden Chestplate]] or [[Golden Leggings]] or [[Golden Boots]] or [[Raw Gold]] or [[Golden Horse Armor]] or [[Golden Nautilus Armor]]
+| [[Golden Pickaxe]] or [[Golden Shovel]] or [[Golden Axe]] or [[Golden Hoe]] or [[Golden Sword]] or [[Golden Spear]] or [[Golden Crown]] or [[Golden Chestplate]] or [[Golden Leggings]] or [[Golden Boots]] or {{MCW|Raw Gold}} or [[Golden Horse Armor]] or [[Golden Nautilus Armor]]
 | {{Cooking|station=Blast Furnace|Input=Golden Pickaxe;Golden Shovel;Golden Axe;Golden Hoe;Golden Sword;Golden Spear;Golden Crown;Golden Chestplate;Golden Leggings;Golden Boots;Raw Gold;Golden Horse Armor;Golden Nautilus Armor|Output=Gold Ingot|time=5|note=5 s, 0.2 XP}}
 |-
 | [[Gold Ingot]] <small>(vanilla recipe)</small>
-| [[Raw Gold]]
+| {{MCW|Raw Gold}}
 | {{Cooking|station=Blast Furnace|Input=Raw Gold|Output=Gold Ingot|time=5|note=5 s, 1 XP}}
 |-
-| [[Block of Raw Gold]] <small>(vanilla recipe)</small>
-| 9 × [[Raw Gold]]
+| {{MCW|Block of Raw Gold}} <small>(vanilla recipe)</small>
+| 9 × {{MCW|Raw Gold}}
 | {{Crafting|A1=Raw Gold|A2=Raw Gold|A3=Raw Gold|B1=Raw Gold|B2=Raw Gold|B3=Raw Gold|C1=Raw Gold|C2=Raw Gold|C3=Raw Gold|Output=Block of Raw Gold}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

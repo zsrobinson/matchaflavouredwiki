@@ -344,7 +344,7 @@ VANILLA_LANG = json.load(open(os.path.join(ROOT, 'source', 'vanilla-assets', 'as
 
 
 def link_for_id(i):
-    return '[[%s]]' % id_name(i)
+    return item_link(id_name(i))
 
 
 def infobox(item):
@@ -372,7 +372,7 @@ def infobox(item):
         f['eat_time'] = '%s seconds' % fmt_num(cs)
     dp = c.get('death_protection')
     if dp:
-        f['effects'] = (f.get('effects', '') + '<br />' if f.get('effects') else '') + "Prevents death when held, like a [[Totem of Undying]]"
+        f['effects'] = (f.get('effects', '') + '<br />' if f.get('effects') else '') + "Prevents death when held, like a " + item_link('Totem of Undying')
     if 'unbreakable' in c:
         f['durability'] = 'Unbreakable'
     elif c.get('max_damage'):
@@ -469,7 +469,19 @@ def ing_links(ing):
     for n in ing['names']:
         if n not in names:
             names.append(n)
-    return ' or '.join('[[%s]]' % n for n in names)
+    return ' or '.join(item_link(n) for n in names)
+
+
+def item_link(name, label=None):
+    """A text link to an item: its page here, or minecraft.wiki for a vanilla item the pack doesn't change."""
+    if page_exists(name):
+        return '[[%s|%s]]' % (name, label) if label else '[[%s]]' % name
+    return '{{MCW|%s|%s}}' % (mcw_title(name), label) if label else '{{MCW|%s}}' % mcw_title(name)
+
+
+def mcw_title(name):
+    """The item's title on minecraft.wiki (its vanilla name)."""
+    return (ITEMS.get(name) or {}).get('vanilla_name') or name
 
 
 def slot_name(s):
@@ -633,7 +645,7 @@ for _n, _it in ITEMS.items():
 
 def out_link(o):
     """Link to a recipe's output, naming its variant where one item has several ("Cooking Recipe (Gnocchi)")."""
-    return '[[%s|%s]]' % (o['name'], esc(o['variant'])) if o.get('variant') else '[[%s]]' % o['name']
+    return item_link(o['name'], esc(o['variant']) if o.get('variant') else None)
 
 
 def recipes_page(name):
@@ -999,8 +1011,9 @@ def page_exists(name):
         for k, it in ITEMS.items():
             if is_pack_relevant(k, it) or group_redirect(k, vanilla=True):
                 PAGES_HERE.add(safe(k))
-            if it['renamed_vanilla'] and it['vanilla_name'] != k:
-                PAGES_HERE.add(safe(it['vanilla_name']))
+            vn = it['vanilla_name']  # the redirect from the vanilla name (written only when that isn't an item too)
+            if it['renamed_vanilla'] and vn != k and safe(vn) and safe(vn).lower() != safe(k).lower() and safe(vn) not in ITEMS:
+                PAGES_HERE.add(safe(vn))
     return safe(name) in PAGES_HERE
 
 
@@ -1159,8 +1172,8 @@ def food_table():
         effs = consume_effects(c)
         hp, others = heal_from_effects(effs)
         station = ', '.join(sorted(set(r['station'] for r in producing(name)))) or '—'
-        rows.append('|-\n| {{ItemLink|%s}} || data-sort-value="%d" | %s || %s || %s || %s' % (
-            safe(name), hp, '{{Hp|%d}}' % hp if hp else '—', '<br />'.join(effect_text(e) for e in others) or '—',
+        rows.append('|-\n| %s || data-sort-value="%d" | %s || %s || %s || %s' % (
+            il(name), hp, '{{Hp|%d}}' % hp if hp else '—', '<br />'.join(effect_text(e) for e in others) or '—',
             fmt_num((c.get('consumable') or {}).get('consume_seconds', 1.6)), station))
     return ('<includeonly>{| class="wikitable sortable"\n! Food !! Heals !! Effects !! Eating time (s) !! Made with\n' +
             '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
@@ -1180,7 +1193,7 @@ def trim_templates_table():
             found[k][0] += p
         where = ', '.join('%s (%s)' % (label.capitalize(), ', '.join((pct(chance_at_least_one(p, rolls)),) + notes))
                           for (label, notes), (p, rolls) in sorted(found.items())) or '—'
-        dup = '<br />'.join(' + '.join(x for x in recipe_ingredients(r).split(' +<br />') if x != '[[%s]]' % name) +
+        dup = '<br />'.join(' + '.join(x for x in recipe_ingredients(r).split(' +<br />') if x != item_link(name)) +
                             (' <small>(pack recipe)</small>' if r['origin'] == 'pack' else '')
                             for r in producing(name)) or '—'  # the template itself is the other ingredient
         rows.append('|-\n| %s%s || %s || %s' % (icon, name, where, dup))
@@ -1650,8 +1663,8 @@ def names_link(names):
     """Links for a list of item names; a whole family ("Oak Planks", "Birch Planks", ...) becomes one link."""
     names = list(dict.fromkeys(names))
     if len(names) > 2 and len({n.split()[-1] for n in names}) == 1:
-        return '[[%s]]' % names[0].split()[-1]
-    return ', '.join('[[%s]]' % n for n in names)
+        return item_link(names[0].split()[-1])
+    return ', '.join(item_link(n) for n in names)
 
 
 def equipment_cells(name, kind):
@@ -1935,9 +1948,10 @@ def stonecutting_rows(recipes):
 
 def stonecutting_tables(recipes, vanilla, exists):
     """Level-4 sections, one table per group. Every row prints {{{<recipe id>|}}} after its output, so the
-    article can add a note to a recipe by its ID. exists(name) says whether the wiki has a page to link."""
+    article can add a note to a recipe by its ID. exists(name) says whether the wiki has a page to link;
+    a name without one is a vanilla item the pack doesn't change, linked to minecraft.wiki."""
     def link(n):
-        return '[[%s]]' % n if exists(n) else n
+        return '[[%s]]' % n if exists(n) else item_link(n)
 
     def inputs(tag, ins):
         if tag in STONECUTTING_TAG_LABELS:
@@ -2427,15 +2441,45 @@ def stub_article(name, item):
             name, article, t.lower(), '{{MCW|%s}}' % item['vanilla_name'])
         hat = '{{Vanilla|%s}}\n' % item['vanilla_name']
     elif item['renamed_vanilla']:
-        lead = ("'''%s''' is %s %s from vanilla ''Minecraft''. [[Matcha Flavoured]] keeps the item but adds or changes "
-                "how it is made or found; the tables below list the pack's recipes, sources and uses. See {{MCW|%s}} for everything else." % (
-                    name, article, t.lower(), item['vanilla_name'] or name))
+        lead = ("'''%s''' is %s %s from vanilla ''Minecraft''. [[Matcha Flavoured]] %s. See {{MCW|%s}} for everything else." % (
+                    name, article, t.lower(), pack_additions(name), item['vanilla_name'] or name))
         hat = '{{Vanilla}}\n'
         body = [hat + '{{Infobox auto}}', lead, '']
         return finish_stub(name, item, t, body)
     stub = '' if item['renamed_vanilla'] else '{{Stub}}\n'  # renamed vanilla items are fully described by the data
     body = [hat + stub + '{{Infobox auto}}', lead, '']
     return finish_stub(name, item, t, body)
+
+
+NUMBER_WORDS = {1: 'a', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}
+
+
+def pack_additions(name):
+    """What the pack adds for an unrenamed vanilla item, for its page's lead: "adds a Stonecutter recipe
+    for it (from any cherry logs) and a Farmer trade"."""
+    def counted(n, what):
+        if n == 1:
+            return ('an ' if what.lstrip('[')[0] in 'AEIOU' else 'a ') + what
+        return '%s %ss' % (NUMBER_WORDS.get(n, str(n)), what)
+    parts = []
+    by_station = defaultdict(list)
+    for r in producing(name):
+        if r['origin'] == 'pack':
+            by_station[r.get('station') or 'Crafting Table'].append(r)
+    for station, rs in sorted(by_station.items()):
+        what = counted(len(rs), '[[%s]] recipe' % station)
+        if len(rs) == 1:
+            ings = recipe_ingredients(rs[0])
+            if ings and ings.count('[[') + ings.count('{{') <= 2:
+                what += ' (from %s)' % re.sub(r'>Any ', '>any ', ings)
+        parts.append(what)
+    profs = sorted({prof for prof, _, _ in TRADE_GIVES.get(name, [])})
+    if profs:
+        parts.append(counted(1, '[[%s]] trade' % profs[0].replace('_', ' ').title()) if len(profs) == 1 else
+                     ' and '.join('[[%s]]' % p.replace('_', ' ').title() for p in profs) + ' trades')
+    if not parts:
+        return 'keeps it unchanged'
+    return 'adds %s' % (parts[0] if len(parts) == 1 else ', '.join(parts[:-1]) + ' and ' + parts[-1])
 
 
 def finish_stub(name, item, t, body):
@@ -2489,7 +2533,7 @@ def effect_pages(n):
             if key in seen:
                 continue
             seen.add(key)
-            link = what if kind in ('Enchantment', 'Intrinsic') else '{{ItemLink|%s}}' % safe(what)
+            link = what if kind in ('Enchantment', 'Intrinsic') else il(what)
             lines.append('|-\n| %s || %s || %s || data-sort-value="%d" | %s%s' % (
                 link, kind, roman(lvl) if lvl else '—', sortv, dur, (' (%d%% chance)' % round(prob * 100)) if prob < 1 else ''))
         lines.append('|}')
@@ -2917,36 +2961,15 @@ def main():
         p = uses_page(name)
         if p:
             write('Template', 'Data/Uses/' + title, p); n['ingredient-only uses'] += 1
-            if not hand_exists('Main', title):
-                write('Main', title, '{{Vanilla}}\n' + ("'''%s''' is an item from vanilla ''Minecraft'' that [[Matcha Flavoured]] does not change. "
-                      "See {{MCW|%s}} on the Minecraft Wiki; this page lists only where the pack uses it.\n\n== Usage ==\n{{Uses}}\n\n[[Category:Vanilla items]]") % (name, name))
-                n['vanilla pages'] += 1
 
-    # vanilla items the pack uses but doesn't change: a short page pointing at minecraft.wiki,
-    # with the pack's own recipes and uses (so every link in a recipe table goes somewhere)
+    # vanilla items the pack doesn't change get no page: text links and inventory slots go to
+    # minecraft.wiki instead (il() and Module:Inventory slot/Offsite). Families redirect to their article.
     for name, item in ITEMS.items():
         title = safe(name)
         if not title or hand_exists('Main', title) or is_pack_relevant(name, item) or title.startswith(('item.', 'adv.')):
             continue
         if group_redirect(name, vanilla=True):
             write('Main', title, group_redirect(name, vanilla=True)); n['group redirects'] += 1
-            continue
-        if not (producing(name) or USES.get(name) or SOURCES.get(name) or TRADE_GIVES.get(name) or TRADE_WANTS.get(name)):
-            continue
-        body = ['{{Vanilla}}\n{{Infobox auto}}',
-                "'''%s''' is an item from vanilla ''Minecraft'' that [[Matcha Flavoured]] does not change. "
-                "See {{MCW|%s}} on the Minecraft Wiki for everything about it; this page lists only where it appears in the pack." % (
-                    name, item['vanilla_name'] or name), '']
-        if producing(name):
-            body.append('== Obtaining ==\n{{Recipes}}\n')
-        if SOURCES.get(name) or TRADE_GIVES.get(name):
-            if not producing(name):
-                body.append('== Obtaining ==')
-            body.append('{{Sources}}\n')
-        if USES.get(name) or TRADE_WANTS.get(name):
-            body.append('== Usage ==\n{{Uses}}\n')
-        body.append('[[Category:Vanilla items]]')
-        write('Main', title, '\n'.join(body)); n['vanilla pages'] += 1
     PAGES_HERE_RESET()
 
     # redirects: vanilla name -> renamed item
@@ -3004,13 +3027,25 @@ def main():
     lua.append('}\nreturn aliases')
     write('Module', 'Inventory slot/Aliases', '\n'.join(lua))
     write('Module', 'Tooltip/Data', tooltip_data())
+    # vanilla items without a page here: their inventory slots link to minecraft.wiki (Module:Inventory slot)
+    offsite = {}
+    for name in list(ITEMS) + list(USES):
+        title = safe(name)
+        if title and not title.startswith(('Any ', 'item.', 'adv.')) and not page_exists(name):
+            offsite[title] = mcw_title(name)
+    lua = ['-- Generated by tools/generate.py: vanilla items with no page on this wiki, and their',
+           '-- minecraft.wiki titles. Their inventory slots link there. Do not edit.', 'return {']
+    lua += ['\t[%s] = %s,' % (lua_str(k), lua_str(v)) for k, v in sorted(offsite.items())]
+    lua.append('}')
+    write('Module', 'Inventory slot/Offsite', '\n'.join(lua)); n['offsite slot links'] = len(offsite)
     # One redirect per tag; the sentence-case variant is synthesised by build_xml.collect. Existence is
     # checked case-insensitively so Linux and macOS (case-insensitive) produce the same files.
     taken = {f.lower() for f in os.listdir(os.path.join(GEN, 'Main'))} | {f.lower() for f in os.listdir(os.path.join(HAND, 'Main'))}
     for k, members in sorted(ALIASES.items()):
         t = k[len('Any '):]
-        if members and fname(t).lower() not in taken:
-            write('Main', t, '#REDIRECT [[%s]]\n[[Category:Redirects from item tags]]' % safe(members[0]))
+        target = next((m for m in members if page_exists(m)), None)  # a redirect can't point off-site
+        if target and fname(t).lower() not in taken:
+            write('Main', t, '#REDIRECT [[%s]]\n[[Category:Redirects from item tags]]' % safe(target))
             taken.add(fname(t).lower())
             n['tag redirects'] += 1
     # a variant with its own look is shown in slots under its label (slot_name), which leads to its item

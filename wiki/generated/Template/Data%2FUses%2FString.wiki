@@ -5,31 +5,31 @@
 | [[String]] +<br />[[Tattered Leather]]
 | {{Crafting|A1=String|A2=Tattered Leather|Output=Bundle}}
 |-
-| [[Bow]] <small>(vanilla recipe)</small>
+| {{MCW|Bow}} <small>(vanilla recipe)</small>
 | 3 × [[Stick]] +<br />3 × [[String]]
 | {{Crafting|A2=Stick|B1=Stick|B3=Stick|C1=String|C2=String|C3=String|Output=Bow}}
 |-
-| [[Candle]] <small>(vanilla recipe)</small>
+| {{MCW|Candle}} <small>(vanilla recipe)</small>
 | [[String]] +<br />[[Wax]]
 | {{Crafting|A1=String|A2=Wax|Output=Candle}}
 |-
-| [[Crossbow]] <small>(vanilla recipe)</small>
-| 3 × [[Stick]] +<br />[[Iron Ingot]] +<br />2 × [[String]] +<br />[[Tripwire Hook]]
+| {{MCW|Crossbow}} <small>(vanilla recipe)</small>
+| 3 × [[Stick]] +<br />[[Iron Ingot]] +<br />2 × [[String]] +<br />{{MCW|Tripwire Hook}}
 | {{Crafting|A1=Stick|A2=String|B1=Iron Ingot|B2=Tripwire Hook|B3=Stick|C1=Stick|C2=String|Output=Crossbow}}
 |-
 | [[Fishing Rod]] <small>(vanilla recipe)</small>
 | 3 × [[Stick]] +<br />2 × [[String]]
 | {{Crafting|A3=Stick|B2=Stick|C1=Stick|C2=String|C3=String|Output=Fishing Rod}}
 |-
-| [[Lead]] <small>(vanilla recipe)</small>
+| {{MCW|Lead}} <small>(vanilla recipe)</small>
 | 5 × [[String]]
 | {{Crafting|A1=String|A2=String|B1=String|B2=String|C3=String|Output=Lead,2}}
 |-
-| [[Loom]] <small>(vanilla recipe)</small>
+| {{MCW|Loom}} <small>(vanilla recipe)</small>
 | 2 × [[String]] +<br />2 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
 | {{Crafting|A1=String|A2=Any Planks|B1=String|B2=Any Planks|Output=Loom}}
 |-
-| [[Scaffolding]] <small>(vanilla recipe)</small>
+| {{MCW|Scaffolding}} <small>(vanilla recipe)</small>
 | 6 × [[Bamboo]] +<br />[[String]]
 | {{Crafting|A1=Bamboo|A2=Bamboo|A3=Bamboo|B1=String|C1=Bamboo|C2=Bamboo|C3=Bamboo|Output=Scaffolding,6}}
 |-

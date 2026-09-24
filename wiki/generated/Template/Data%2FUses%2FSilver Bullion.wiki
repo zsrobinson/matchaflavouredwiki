@@ -10,7 +10,7 @@
 | {{Crafting|A1=Spectral Arrow|A2=Raw Porkchop|A3=Spectral Arrow|B1=Silver Bullion|B2=Hell-Bound Book|B3=Raw Porkchop|C1=Spectral Arrow|C2=Raw Porkchop|C3=Spectral Arrow|Output=Prayer of Artemis}}
 |-
 | [[Prayer of Man]]
-| 4 × [[Baked Golden Apple]] +<br />[[Silver Bullion]] +<br />3 × [[Lapis Lazuli]] +<br />[[Hell-Bound Book]]
+| 4 × [[Baked Golden Apple]] +<br />[[Silver Bullion]] +<br />3 × {{MCW|Lapis Lazuli}} +<br />[[Hell-Bound Book]]
 | {{Crafting|A1=Baked Golden Apple|A2=Lapis Lazuli|A3=Baked Golden Apple|B1=Silver Bullion|B2=Hell-Bound Book|B3=Lapis Lazuli|C1=Baked Golden Apple|C2=Lapis Lazuli|C3=Baked Golden Apple|Output=Prayer of Man}}
 |-
 | [[Hepatizon Alloy]]
@@ -26,7 +26,7 @@
 | {{Smithing|Template=Silver Bullion|Base=Iron Sword|Addition=Nazar|Output=Silver Sword}}
 |-
 | [[Warding Shield]]
-| [[Silver Bullion]] +<br />[[Shield]] +<br />[[Nazar]]
+| [[Silver Bullion]] +<br />{{MCW|Shield}} +<br />[[Nazar]]
 | {{Smithing|Template=Silver Bullion|Base=Shield|Addition=Nazar|Output=Warding Shield}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

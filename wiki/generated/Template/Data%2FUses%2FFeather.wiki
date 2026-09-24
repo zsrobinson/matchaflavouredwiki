@@ -2,23 +2,23 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Elegy of Icarus]]
-| 4 × [[Wind Charge]] +<br />[[Wax]] +<br />3 × [[Feather]] +<br />[[Hell-Bound Book]]
+| 4 × {{MCW|Wind Charge}} +<br />[[Wax]] +<br />3 × {{MCW|Feather}} +<br />[[Hell-Bound Book]]
 | {{Crafting|A1=Wind Charge|A2=Feather|A3=Wind Charge|B1=Wax|B2=Hell-Bound Book|B3=Feather|C1=Wind Charge|C2=Feather|C3=Wind Charge|Output=Elegy of Icarus}}
 |-
 | [[Elegy of Hyacinthus]]
-| 4 × [[Wind Charge]] +<br />[[Hyacinth]] +<br />3 × [[Feather]] +<br />[[Hell-Bound Book]]
+| 4 × {{MCW|Wind Charge}} +<br />[[Hyacinth]] +<br />3 × {{MCW|Feather}} +<br />[[Hell-Bound Book]]
 | {{Crafting|A1=Wind Charge|A2=Feather|A3=Wind Charge|B1=Hyacinth|B2=Hell-Bound Book|B3=Feather|C1=Wind Charge|C2=Feather|C3=Wind Charge|Output=Elegy of Hyacinthus}}
 |-
 | [[Arrow]]
-| [[Flint]] +<br />[[Stick]] +<br />[[Feather]]
+| {{MCW|Flint}} +<br />[[Stick]] +<br />{{MCW|Feather}}
 | {{Crafting|A1=Flint|A2=Stick|A3=Feather|Output=Arrow,8}}
 |-
-| [[Brush]] <small>(vanilla recipe)</small>
-| [[Feather]] +<br />[[Copper Ingot]] +<br />[[Stick]]
+| {{MCW|Brush}} <small>(vanilla recipe)</small>
+| {{MCW|Feather}} +<br />[[Copper Ingot]] +<br />[[Stick]]
 | {{Crafting|A1=Feather|A2=Copper Ingot|A3=Stick|Output=Brush}}
 |-
-| [[Book and Quill]] <small>(vanilla recipe)</small>
-| [[Book]] +<br />[[Ink Sac]] +<br />[[Feather]]
+| {{MCW|Book and Quill}} <small>(vanilla recipe)</small>
+| {{MCW|Book}} +<br />{{MCW|Ink Sac}} +<br />{{MCW|Feather}}
 | {{Crafting|A1=Book|B1=Ink Sac|C1=Feather|Output=Book and Quill|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

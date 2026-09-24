@@ -9,7 +9,7 @@
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Deepslate]] or [[Cobbled Deepslate]] or [[Blackstone]]
 | {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Deepslate;Cobbled Deepslate;Blackstone|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Upgrade Template}}
 |-
-| [[Chiseled Deepslate]] <small>(vanilla recipe)</small>
+| {{MCW|Chiseled Deepslate}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Chiseled Deepslate}}
 |-
@@ -17,27 +17,27 @@
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Cobbled Deepslate}}
 |-
-| [[Cobbled Deepslate Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cobbled Deepslate Slab}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Cobbled Deepslate Slab,2}}
 |-
-| [[Cobbled Deepslate Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Cobbled Deepslate Stairs}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Cobbled Deepslate Stairs}}
 |-
-| [[Cobbled Deepslate Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Cobbled Deepslate Wall}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Cobbled Deepslate Wall}}
 |-
-| [[Deepslate Brick Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Deepslate Brick Slab}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Deepslate Brick Slab,2}}
 |-
-| [[Deepslate Brick Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Deepslate Brick Stairs}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Deepslate Brick Stairs}}
 |-
-| [[Deepslate Brick Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Deepslate Brick Wall}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Deepslate Brick Wall}}
 |-
@@ -45,15 +45,15 @@
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Deepslate Bricks}}
 |-
-| [[Deepslate Tile Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Deepslate Tile Slab}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Deepslate Tile Slab,2}}
 |-
-| [[Deepslate Tile Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Deepslate Tile Stairs}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Deepslate Tile Stairs}}
 |-
-| [[Deepslate Tile Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Deepslate Tile Wall}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Deepslate Tile Wall}}
 |-
@@ -65,15 +65,15 @@
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Polished Deepslate}}
 |-
-| [[Polished Deepslate Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Deepslate Slab}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Polished Deepslate Slab,2}}
 |-
-| [[Polished Deepslate Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Deepslate Stairs}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Polished Deepslate Stairs}}
 |-
-| [[Polished Deepslate Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Deepslate Wall}} <small>(vanilla recipe)</small>
 | [[Deepslate]]
 | {{Stonecutter|Input=Deepslate|Output=Polished Deepslate Wall}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

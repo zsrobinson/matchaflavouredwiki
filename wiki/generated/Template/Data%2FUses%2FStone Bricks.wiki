@@ -13,7 +13,7 @@
 | [[Cobblestone]] or [[Stone Bricks]]
 | {{Cooking|station=Mud Kiln|Input=Cobblestone;Stone Bricks|Output=Limestone|time=5|note=5 s, 0.1 XP}}
 |-
-| [[Chiseled Stone Bricks]] <small>(vanilla recipe)</small>
+| {{MCW|Chiseled Stone Bricks}} <small>(vanilla recipe)</small>
 | [[Stone Bricks]]
 | {{Stonecutter|Input=Stone Bricks|Output=Chiseled Stone Bricks}}
 |-
@@ -22,30 +22,30 @@
 | {{Crafting|A1=Stone Bricks|B1=Moss Block|Output=Mossy Stone Bricks|shapeless=1}}
 |-
 | [[Mossy Stone Bricks]] <small>(vanilla recipe)</small>
-| [[Stone Bricks]] +<br />[[Vines]]
+| [[Stone Bricks]] +<br />{{MCW|Vines}}
 | {{Crafting|A1=Stone Bricks|B1=Vines|Output=Mossy Stone Bricks|shapeless=1}}
 |-
-| [[Stone Brick Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Stone Brick Slab}} <small>(vanilla recipe)</small>
 | 3 × [[Stone Bricks]]
 | {{Crafting|A1=Stone Bricks|B1=Stone Bricks|C1=Stone Bricks|Output=Stone Brick Slab,6}}
 |-
-| [[Stone Brick Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Stone Brick Slab}} <small>(vanilla recipe)</small>
 | [[Stone Bricks]]
 | {{Stonecutter|Input=Stone Bricks|Output=Stone Brick Slab,2}}
 |-
-| [[Stone Brick Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Stone Brick Stairs}} <small>(vanilla recipe)</small>
 | 6 × [[Stone Bricks]]
 | {{Crafting|A1=Stone Bricks|A2=Stone Bricks|A3=Stone Bricks|B2=Stone Bricks|B3=Stone Bricks|C3=Stone Bricks|Output=Stone Brick Stairs,4}}
 |-
-| [[Stone Brick Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Stone Brick Stairs}} <small>(vanilla recipe)</small>
 | [[Stone Bricks]]
 | {{Stonecutter|Input=Stone Bricks|Output=Stone Brick Stairs}}
 |-
-| [[Stone Brick Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Stone Brick Wall}} <small>(vanilla recipe)</small>
 | 6 × [[Stone Bricks]]
 | {{Crafting|A1=Stone Bricks|A2=Stone Bricks|B1=Stone Bricks|B2=Stone Bricks|C1=Stone Bricks|C2=Stone Bricks|Output=Stone Brick Wall,6}}
 |-
-| [[Stone Brick Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Stone Brick Wall}} <small>(vanilla recipe)</small>
 | [[Stone Bricks]]
 | {{Stonecutter|Input=Stone Bricks|Output=Stone Brick Wall}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

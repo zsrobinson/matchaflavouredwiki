@@ -1,11 +1,11 @@
 <includeonly>{| class="wikitable recipe-table mw-collapsible"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Chiseled Tuff Bricks]] <small>(vanilla recipe)</small>
+| {{MCW|Chiseled Tuff Bricks}} <small>(vanilla recipe)</small>
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Chiseled Tuff Bricks}}
 |-
-| [[Chiseled Tuff]] <small>(vanilla recipe)</small>
+| {{MCW|Chiseled Tuff}} <small>(vanilla recipe)</small>
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Chiseled Tuff}}
 |-
@@ -17,27 +17,27 @@
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Polished Tuff}}
 |-
-| [[Polished Tuff Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Tuff Slab}} <small>(vanilla recipe)</small>
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Polished Tuff Slab,2}}
 |-
-| [[Polished Tuff Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Tuff Stairs}} <small>(vanilla recipe)</small>
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Polished Tuff Stairs}}
 |-
-| [[Polished Tuff Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Tuff Wall}} <small>(vanilla recipe)</small>
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Polished Tuff Wall}}
 |-
-| [[Tuff Brick Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Tuff Brick Slab}} <small>(vanilla recipe)</small>
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Tuff Brick Slab,2}}
 |-
-| [[Tuff Brick Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Tuff Brick Stairs}} <small>(vanilla recipe)</small>
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Tuff Brick Stairs}}
 |-
-| [[Tuff Brick Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Tuff Brick Wall}} <small>(vanilla recipe)</small>
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Tuff Brick Wall}}
 |-
@@ -45,27 +45,27 @@
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Tuff Bricks}}
 |-
-| [[Tuff Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Tuff Slab}} <small>(vanilla recipe)</small>
 | 3 × [[Tuff]]
 | {{Crafting|A1=Tuff|B1=Tuff|C1=Tuff|Output=Tuff Slab,6}}
 |-
-| [[Tuff Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Tuff Slab}} <small>(vanilla recipe)</small>
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Tuff Slab,2}}
 |-
-| [[Tuff Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Tuff Stairs}} <small>(vanilla recipe)</small>
 | 6 × [[Tuff]]
 | {{Crafting|A1=Tuff|A2=Tuff|A3=Tuff|B2=Tuff|B3=Tuff|C3=Tuff|Output=Tuff Stairs,4}}
 |-
-| [[Tuff Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Tuff Stairs}} <small>(vanilla recipe)</small>
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Tuff Stairs}}
 |-
-| [[Tuff Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Tuff Wall}} <small>(vanilla recipe)</small>
 | 6 × [[Tuff]]
 | {{Crafting|A1=Tuff|A2=Tuff|B1=Tuff|B2=Tuff|C1=Tuff|C2=Tuff|Output=Tuff Wall,6}}
 |-
-| [[Tuff Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Tuff Wall}} <small>(vanilla recipe)</small>
 | [[Tuff]]
 | {{Stonecutter|Input=Tuff|Output=Tuff Wall}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

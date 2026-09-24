@@ -2,15 +2,15 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Clay]]
-| [[Potion]] +<br />8 × [[Mud]]
+| {{MCW|Potion}} +<br />8 × [[Mud]]
 | {{Crafting|A1=Potion|A2=Mud|A3=Mud|B1=Mud|B2=Mud|B3=Mud|C1=Mud|C2=Mud|C3=Mud|Output=Clay,4}}
 |-
 | [[Packed Mud]]
 | 8 × [[Mud]] +<br />[[Straw]]
 | {{Crafting|A1=Mud|B1=Mud|C1=Mud|A2=Mud|B2=Mud|C2=Mud|A3=Mud|B3=Mud|C3=Straw|Output=Packed Mud,8|shapeless=1}}
 |-
-| [[Muddy Mangrove Roots]] <small>(vanilla recipe)</small>
-| [[Mud]] +<br />[[Mangrove Roots]]
+| {{MCW|Muddy Mangrove Roots}} <small>(vanilla recipe)</small>
+| [[Mud]] +<br />{{MCW|Mangrove Roots}}
 | {{Crafting|A1=Mud|B1=Mangrove Roots|Output=Muddy Mangrove Roots|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

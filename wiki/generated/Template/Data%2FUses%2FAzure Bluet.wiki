@@ -2,15 +2,15 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Prayer of Glaucus]]
-| [[Azure Bluet]] +<br />3 × [[Nautilus Shell]] +<br />[[Hell-Bound Book]]
+| [[Azure Bluet]] +<br />3 × {{MCW|Nautilus Shell}} +<br />[[Hell-Bound Book]]
 | {{Crafting|A2=Nautilus Shell|B1=Azure Bluet|B2=Hell-Bound Book|B3=Nautilus Shell|C2=Nautilus Shell|Output=Prayer of Glaucus}}
 |-
 | [[Amnestic]]
-| [[Azure Bluet]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Paper]]
+| [[Azure Bluet]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />{{MCW|Paper}}
 | {{Crafting|A1=Azure Bluet|B1=Sugar|C1=Estus Ash|A2=Paper|Output=Amnestic|shapeless=1}}
 |-
 | [[Azure Bluet]]
-| [[Azure Bluet]] +<br />[[Potion]] +<br />[[Bone Meal]]
+| [[Azure Bluet]] +<br />{{MCW|Potion}} +<br />[[Bone Meal]]
 | {{Crafting|A1=Azure Bluet|B1=Potion|C1=Bone Meal|Output=Azure Bluet,4|shapeless=1}}
 |-
 | [[Light Gray Dye]] <small>(vanilla recipe)</small>

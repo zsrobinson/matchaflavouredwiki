@@ -2,15 +2,15 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Quartz]]
-| [[Block of Quartz]] or [[Quartz Bricks]] or [[Quartz Pillar]] or [[Chiseled Quartz Block]] or [[Smooth Quartz Block]]
+| [[Block of Quartz]] or {{MCW|Quartz Bricks}} or {{MCW|Quartz Pillar}} or {{MCW|Chiseled Quartz Block}} or [[Smooth Quartz Block]]
 | {{Crafting|A1=Block of Quartz;Quartz Bricks;Quartz Pillar;Chiseled Quartz Block;Smooth Quartz Block|Output=Quartz,4|shapeless=1}}
 |-
-| [[Quartz Slab]] <small>(vanilla recipe)</small>
-| 3 × [[Chiseled Quartz Block]] or [[Block of Quartz]] or [[Quartz Pillar]]
+| {{MCW|Quartz Slab}} <small>(vanilla recipe)</small>
+| 3 × {{MCW|Chiseled Quartz Block}} or [[Block of Quartz]] or {{MCW|Quartz Pillar}}
 | {{Crafting|A1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|B1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|C1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|Output=Quartz Slab,6}}
 |-
-| [[Quartz Stairs]] <small>(vanilla recipe)</small>
-| 6 × [[Chiseled Quartz Block]] or [[Block of Quartz]] or [[Quartz Pillar]]
+| {{MCW|Quartz Stairs}} <small>(vanilla recipe)</small>
+| 6 × {{MCW|Chiseled Quartz Block}} or [[Block of Quartz]] or {{MCW|Quartz Pillar}}
 | {{Crafting|A1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|A2=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|A3=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|B2=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|B3=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|C3=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|Output=Quartz Stairs,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

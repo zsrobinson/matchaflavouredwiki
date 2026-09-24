@@ -2,11 +2,11 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Exposed Copper Grate]]
-| [[Copper Grate]] +<br />[[Potion]]
+| {{MCW|Copper Grate}} +<br />{{MCW|Potion}}
 | {{Crafting|A1=Copper Grate|B1=Potion|Output=Exposed Copper Grate|shapeless=1}}
 |-
-| [[Waxed Copper Grate]] <small>(vanilla recipe)</small>
-| [[Copper Grate]] +<br />[[Wax]]
+| {{MCW|Waxed Copper Grate}} <small>(vanilla recipe)</small>
+| {{MCW|Copper Grate}} +<br />[[Wax]]
 | {{Crafting|A1=Copper Grate|B1=Wax|Output=Waxed Copper Grate|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -2,19 +2,19 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Chorus Mochi]]
-| [[Popped Chorus Fruit]] +<br />[[Snowball]] +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Dough]]
+| [[Popped Chorus Fruit]] +<br />{{MCW|Snowball}} +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Dough]]
 | {{Crafting|A1=Popped Chorus Fruit|B1=Snowball|C1=Sugar|A2=Milk Bottle|B2=Dough|Output=Chorus Mochi,4|shapeless=1}}
 |-
 | [[Ice Cream]]
-| [[Snowball]] +<br />[[Milk Bottle]] +<br />[[Sugar]] +<br />[[Blue Orchid]] +<br />[[Bread]]
+| {{MCW|Snowball}} +<br />[[Milk Bottle]] +<br />[[Sugar]] +<br />[[Blue Orchid]] +<br />[[Bread]]
 | {{Crafting|A1=Snowball|B1=Milk Bottle|C1=Sugar|A2=Blue Orchid|B2=Bread|Output=Ice Cream|shapeless=1}}
 |-
 | [[Melon Sorbet]]
-| [[Melon Slice]] +<br />[[Snowball]] +<br />[[Sugar]] +<br />[[Glass Bottle]]
+| [[Melon Slice]] +<br />{{MCW|Snowball}} +<br />[[Sugar]] +<br />[[Glass Bottle]]
 | {{Crafting|A1=Melon Slice|B1=Snowball|C1=Sugar|A2=Glass Bottle|Output=Melon Sorbet|shapeless=1}}
 |-
 | [[Snow Block]] <small>(vanilla recipe)</small>
-| 4 × [[Snowball]]
+| 4 × {{MCW|Snowball}}
 | {{Crafting|A1=Snowball|A2=Snowball|B1=Snowball|B2=Snowball|Output=Snow Block}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

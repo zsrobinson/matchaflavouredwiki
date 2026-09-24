@@ -2,7 +2,7 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Cobblestone Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Cobblestone Wall}} <small>(vanilla recipe)</small>
 | 6 × [[Cobblestone]]
 | {{Crafting|A1=Cobblestone|A2=Cobblestone|B1=Cobblestone|B2=Cobblestone|C1=Cobblestone|C2=Cobblestone|Output=Cobblestone Wall,6}}
 |}
@@ -10,11 +10,11 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Cobblestone Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Cobblestone Wall}} <small>(vanilla recipe)</small>
 | [[Cobblestone]]
 | {{Stonecutter|Input=Cobblestone|Output=Cobblestone Wall}}
 |-
-| [[Cobblestone Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Cobblestone Wall}} <small>(vanilla recipe)</small>
 | [[Limestone]]
 | {{Stonecutter|Input=Limestone|Output=Cobblestone Wall}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

@@ -2,7 +2,7 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Waxed Exposed Chiseled Copper]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Exposed Chiseled Copper}} <small>(vanilla recipe)</small>
 | [[Exposed Chiseled Copper]] +<br />[[Wax]]
 | {{Crafting|A1=Exposed Chiseled Copper|B1=Wax|Output=Waxed Exposed Chiseled Copper|shapeless=1}}
 |}
@@ -10,11 +10,11 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Waxed Exposed Chiseled Copper]] <small>(vanilla recipe)</small>
-| [[Waxed Exposed Copper]]
+| {{MCW|Waxed Exposed Chiseled Copper}} <small>(vanilla recipe)</small>
+| {{MCW|Waxed Exposed Copper}}
 | {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Chiseled Copper,4}}
 |-
-| [[Waxed Exposed Chiseled Copper]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Exposed Chiseled Copper}} <small>(vanilla recipe)</small>
 | [[Waxed Exposed Cut Copper]]
 | {{Stonecutter|Input=Waxed Exposed Cut Copper|Output=Waxed Exposed Chiseled Copper}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

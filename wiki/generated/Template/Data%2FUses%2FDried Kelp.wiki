@@ -18,14 +18,14 @@
 | {{Crafting|A1=Cooked Porkchop;Seitan|B1=Dough|C1=Oil|A2=Dried Kelp|B2=Carrot|Output=Lumpia,2|shapeless=1}}
 |-
 | [[Seitan]]
-| [[Dough]] +<br />[[Potion]] +<br />[[Carrot]] or [[Potato]] or [[Dried Kelp]]
+| [[Dough]] +<br />{{MCW|Potion}} +<br />[[Carrot]] or [[Potato]] or [[Dried Kelp]]
 | {{Crafting|A1=Dough|B1=Potion|C1=Carrot;Potato;Dried Kelp|Output=Seitan|shapeless=1}}
 |-
 | [[Ramen Stock]]
 | [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Chicken]] or [[Seitan]] +<br />[[Bowl]]
 | {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}
 |-
-| [[Dried Kelp Block]] <small>(vanilla recipe)</small>
+| {{MCW|Dried Kelp Block}} <small>(vanilla recipe)</small>
 | 9 × [[Dried Kelp]]
 | {{Crafting|A1=Dried Kelp|A2=Dried Kelp|A3=Dried Kelp|B1=Dried Kelp|B2=Dried Kelp|B3=Dried Kelp|C1=Dried Kelp|C2=Dried Kelp|C3=Dried Kelp|Output=Dried Kelp Block}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

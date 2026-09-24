@@ -10,7 +10,7 @@
 | {{Crafting|A1=Milk Bottle|B1=Sugar|C1=Brown Mushroom|Output=Cheese,4|shapeless=1}}
 |-
 | [[Chorus Mochi]]
-| [[Popped Chorus Fruit]] +<br />[[Snowball]] +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Dough]]
+| [[Popped Chorus Fruit]] +<br />{{MCW|Snowball}} +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Dough]]
 | {{Crafting|A1=Popped Chorus Fruit|B1=Snowball|C1=Sugar|A2=Milk Bottle|B2=Dough|Output=Chorus Mochi,4|shapeless=1}}
 |-
 | [[Crimson Stroganoff]]
@@ -22,7 +22,7 @@
 | {{Crafting|A1=Glow Berry Mash|B1=Sugar|C1=Milk Bottle|A2=Dough|Output=Glow Berry Crumble|shapeless=1}}
 |-
 | [[Ice Cream]]
-| [[Snowball]] +<br />[[Milk Bottle]] +<br />[[Sugar]] +<br />[[Blue Orchid]] +<br />[[Bread]]
+| {{MCW|Snowball}} +<br />[[Milk Bottle]] +<br />[[Sugar]] +<br />[[Blue Orchid]] +<br />[[Bread]]
 | {{Crafting|A1=Snowball|B1=Milk Bottle|C1=Sugar|A2=Blue Orchid|B2=Bread|Output=Ice Cream|shapeless=1}}
 |-
 | [[Latke]]
@@ -50,7 +50,7 @@
 | {{Crafting|A1=Estus Ash|B1=Sugar|C1=Milk Bottle|A2=Tomatoes|B2=Cheese|C2=Oil|A3=Bowl|Output=Paneer Curry Stock|shapeless=1}}
 |-
 | [[Pumpkin Curry Stock]]
-| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Baked Pumpkin]] +<br />[[Oil]] +<br />[[Sunflower]] +<br />[[Milk Bottle]] +<br />[[Carrot]] +<br />[[Bamboo]] +<br />[[Bowl]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Baked Pumpkin]] +<br />[[Oil]] +<br />{{MCW|Sunflower}} +<br />[[Milk Bottle]] +<br />[[Carrot]] +<br />[[Bamboo]] +<br />[[Bowl]]
 | {{Crafting|A1=Estus Ash|B1=Sugar|C1=Baked Pumpkin|A2=Oil|B2=Sunflower|C2=Milk Bottle|A3=Carrot|B3=Bamboo|C3=Bowl|Output=Pumpkin Curry Stock|shapeless=1}}
 |-
 | [[Warped Stroganoff]]

@@ -9,32 +9,32 @@
 | 3 × [[Iron Ingot]] +<br />4 × [[Bricks]] +<br />[[Kindling]]
 | {{Crafting|A1=Iron Ingot|A2=Bricks|A3=Bricks|B1=Iron Ingot|B3=Kindling|C1=Iron Ingot|C2=Bricks|C3=Bricks|Output=Oven}}
 |-
-| [[Brick Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Brick Slab}} <small>(vanilla recipe)</small>
 | 3 × [[Bricks]]
 | {{Crafting|A1=Bricks|B1=Bricks|C1=Bricks|Output=Brick Slab,6}}
 |-
-| [[Brick Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Brick Slab}} <small>(vanilla recipe)</small>
 | [[Bricks]]
 | {{Stonecutter|Input=Bricks|Output=Brick Slab,2}}
 |-
-| [[Brick Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Brick Stairs}} <small>(vanilla recipe)</small>
 | 6 × [[Bricks]]
 | {{Crafting|A1=Bricks|A2=Bricks|A3=Bricks|B2=Bricks|B3=Bricks|C3=Bricks|Output=Brick Stairs,4}}
 |-
-| [[Brick Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Brick Stairs}} <small>(vanilla recipe)</small>
 | [[Bricks]]
 | {{Stonecutter|Input=Bricks|Output=Brick Stairs}}
 |-
-| [[Brick Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Brick Wall}} <small>(vanilla recipe)</small>
 | 6 × [[Bricks]]
 | {{Crafting|A1=Bricks|A2=Bricks|B1=Bricks|B2=Bricks|C1=Bricks|C2=Bricks|Output=Brick Wall,6}}
 |-
-| [[Brick Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Brick Wall}} <small>(vanilla recipe)</small>
 | [[Bricks]]
 | {{Stonecutter|Input=Bricks|Output=Brick Wall}}
 |-
-| [[Field Masoned Banner Pattern]] <small>(vanilla recipe)</small>
-| [[Paper]] +<br />[[Bricks]]
+| {{MCW|Field Masoned Banner Pattern}} <small>(vanilla recipe)</small>
+| {{MCW|Paper}} +<br />[[Bricks]]
 | {{Crafting|A1=Paper|B1=Bricks|Output=Field Masoned Banner Pattern|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

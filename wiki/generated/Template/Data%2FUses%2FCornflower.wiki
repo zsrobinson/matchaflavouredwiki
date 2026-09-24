@@ -2,11 +2,11 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Cornflower]]
-| [[Cornflower]] +<br />[[Potion]] +<br />[[Bone Meal]]
+| [[Cornflower]] +<br />{{MCW|Potion}} +<br />[[Bone Meal]]
 | {{Crafting|A1=Cornflower|B1=Potion|C1=Bone Meal|Output=Cornflower,4|shapeless=1}}
 |-
 | [[Globe Banner Pattern]]
-| [[Paper]] +<br />[[Cornflower]]
+| {{MCW|Paper}} +<br />[[Cornflower]]
 | {{Crafting|A1=Paper|B1=Cornflower|Output=Globe Banner Pattern|shapeless=1}}
 |-
 | [[Blue Dye]] <small>(vanilla recipe)</small>
