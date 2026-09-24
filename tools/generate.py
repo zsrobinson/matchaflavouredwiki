@@ -1287,6 +1287,148 @@ def stub_article(name, item):
 
 NUMBER_WORDS = {1: 'a', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}
 
+# ---- vanilla items whose only changes follow a pack-wide rule: one list instead of a page each
+NEW_WAYS = 'New ways to get vanilla items'
+# (key, section heading, table columns); the order is the page's order, and an item's redirect
+# goes to its first row
+NEW_WAY_RULES = [
+    ('stonecutter', 'Stonecutter', 'Cut from'),
+    ('slabs', 'Two slabs back into a block', 'From'),
+    ('wool', 'Wool and carpet', 'From'),
+    ('water', 'With a water bottle', 'From'),
+    ('plants', 'Duplicating plants', 'From'),
+    ('saplings', 'Saplings from leaves', 'From'),
+    ('banners', 'Banners', 'From'),
+    ('cooking', 'Cooking stations', 'From'),
+    ('trades', 'Villager trades', 'Sold by'),
+]
+COOKING_STATIONS = {'Mud Kiln', 'Oven', 'Blast Furnace', 'Kindling'}
+
+
+def ingredient_tally(r):
+    """{first name of each ingredient: count} for a recipe."""
+    t = r['type'].split(':')[-1]
+    tally = defaultdict(int)
+    if t == 'crafting_shaped':
+        for row in r['pattern']:
+            for ch in row:
+                if ch != ' ':
+                    tally[r['key'][ch]['names'][0]] += 1
+    elif t == 'crafting_shapeless':
+        for g in r['ingredients']:
+            tally[g['names'][0]] += 1
+    return tally
+
+
+def new_way_rule(name, r):
+    """The pack-wide rule a pack recipe for an unrenamed vanilla item follows, or None for a one-off."""
+    station = r.get('station')
+    if station == 'Stonecutter':
+        return 'stonecutter'
+    if station in COOKING_STATIONS:
+        return 'cooking'
+    if station != 'Crafting Table':
+        return None
+    tally = ingredient_tally(r)
+    ings = set(tally)
+    if len(ings) == 1 and list(tally.values()) == [2] and next(iter(ings)).endswith(' Slab'):
+        return 'slabs'
+    if name.endswith((' Wool', ' Carpet')) and len(ings) == 1 and next(iter(ings)).endswith((' Wool', ' Carpet')):
+        return 'wool'
+    if 'Potion' in ings:
+        return 'plants' if 'Bone Meal' in ings else 'water'
+    if len(ings) == 1 and next(iter(ings)).endswith(' Leaves'):
+        return 'saplings'
+    if name.endswith(' Banner') and ings == {n for n in ings if n.endswith(' Wool')} | {'Stick'}:
+        return 'banners'
+    return None
+
+
+def new_way_rules(name):
+    """The rules behind every pack change to an unrenamed vanilla item, or None if any is a one-off."""
+    rules = set()
+    for r in producing(name):
+        if r['origin'] == 'pack':
+            rule = new_way_rule(name, r)
+            if not rule:
+                return None
+            rules.add(rule)
+    if TRADE_GIVES.get(name):
+        rules.add('trades')
+    return rules or None
+
+
+FOLDED = None
+
+
+def folded():
+    """Unrenamed vanilla items listed on NEW_WAYS instead of having a page: {name: first rule}."""
+    global FOLDED
+    if FOLDED is None:
+        FOLDED = {}
+        order = [k for k, _, _ in NEW_WAY_RULES]
+        for name, it in ITEMS.items():
+            if (not it['renamed_vanilla'] or it['vanilla_name'] != name or not is_pack_relevant(name, it)
+                    or hand_exists('Main', safe(name)) or group_redirect(name)):
+                continue
+            rules = new_way_rules(name)
+            if rules:
+                FOLDED[name] = min(rules, key=order.index)
+    return FOLDED
+
+
+def new_way_tables():
+    """Template:Data/New ways/<rule>: one table per rule, a row per item, and a row anchor on the
+    item's first row (its redirect's target)."""
+    pages = {}
+    for key, heading, col in NEW_WAY_RULES:
+        rows = []
+        for name in sorted(n for n in folded() if key in new_way_rules(n)):
+            anchor = '<span id="%s"></span>' % esc(safe(name)) if folded()[name] == key else ''
+            if key == 'trades':
+                how = ', '.join(sorted({'[[%s]]' % p.replace('_', ' ').title() for p, _, _ in TRADE_GIVES[name]}))
+            else:
+                how = '<br />'.join(recipe_ingredients(r) + ((' <small>(%s)</small>' % link_station(r['station'])) if key == 'cooking' else '')
+                                    for r in producing(name) if r['origin'] == 'pack' and new_way_rule(name, r) == key)
+            rows.append('|-\n| %s%s || %s' % (anchor, il(name), how))
+        if rows:
+            pages[key] = ('<includeonly>{| class="wikitable sortable"\n! Item !! %s\n%s\n|}</includeonly>'
+                          '<noinclude>Generated: the pack\'s %s for vanilla items it doesn\'t otherwise change. '
+                          '[[Category:Generated data]]</noinclude>' % (col, '\n'.join(rows), heading.lower()))
+    return pages
+
+
+def link_station(station):
+    return '[[%s]]' % station
+
+
+VANILLA_MADE = None
+
+
+def vanilla_recipe_ids():
+    """Item ids that vanilla Minecraft has a recipe for."""
+    global VANILLA_MADE
+    if VANILLA_MADE is None:
+        VANILLA_MADE = set()
+        d = os.path.join(ROOT, 'source', 'vanilla-data', 'data', 'minecraft', 'recipe')
+        for f in os.listdir(d) if os.path.isdir(d) else []:
+            try:
+                res = json.load(open(os.path.join(d, f))).get('result')
+            except (ValueError, OSError):
+                continue
+            rid = res if isinstance(res, str) else (res or {}).get('id')
+            if rid:
+                VANILLA_MADE.add(rid)
+    return VANILLA_MADE
+
+
+def replaces_vanilla_recipe(name):
+    """True when vanilla has a recipe for the item but the pack removed or overrode all of them."""
+    it = ITEMS.get(name) or {}
+    return (it.get('base_id') in vanilla_recipe_ids()
+            and not any(r['origin'] == 'vanilla' for r in producing(name))
+            and any(r['origin'] == 'pack' for r in producing(name)))
+
 
 def pack_additions(name):
     """What the pack adds for an unrenamed vanilla item, for its page's lead: "adds a Stonecutter recipe
@@ -1305,7 +1447,7 @@ def pack_additions(name):
         if len(rs) == 1:
             ings = recipe_ingredients(rs[0])
             if ings and ings.count('[[') + ings.count('{{') <= 2:
-                what += ' (from %s)' % re.sub(r'>Any ', '>any ', ings)
+                what += ' (from %s)' % re.sub(r'>Any ', '>any ', ings).replace(' +<br />', ' + ')
         parts.append(what)
     profs = sorted({prof for prof, _, _ in TRADE_GIVES.get(name, [])})
     if profs:
@@ -1313,7 +1455,12 @@ def pack_additions(name):
                      ' and '.join('[[%s]]' % p.replace('_', ' ').title() for p in profs) + ' trades')
     if not parts:
         return 'keeps it unchanged'
-    return 'adds %s' % (parts[0] if len(parts) == 1 else ', '.join(parts[:-1]) + ' and ' + parts[-1])
+    join = lambda ps: ps[0] if len(ps) == 1 else ', '.join(ps[:-1]) + ' and ' + ps[-1]
+    if replaces_vanilla_recipe(name):
+        recipes, trades = parts[:len(by_station)], parts[len(by_station):]
+        said = 'replaces its vanilla recipe with %s' % join(recipes)
+        return said + (' and adds %s' % join(trades) if trades else '')
+    return 'adds %s' % join(parts)
 
 
 def finish_stub(name, item, t, body):
@@ -1521,6 +1668,9 @@ def main():
         if is_pack_relevant(name, item) and not hand_exists('Main', title):
             if group_redirect(name):
                 write('Main', title, group_redirect(name)); n['group redirects'] += 1
+            elif name in folded():
+                write('Main', title, '#REDIRECT [[%s#%s]]\n[[Category:Redirects to lists]]' % (NEW_WAYS, title))
+                n['new-way redirects'] += 1
             else:
                 write('Main', title, stub_article(name, item)); n['stubs'] += 1
     # ingredients that only ever appear inside recipes (never as an item stack) still get a Uses table
@@ -1573,6 +1723,8 @@ def main():
     lua.append('}\nreturn aliases')
     write('Module', 'Inventory slot/Aliases', '\n'.join(lua))
     write('Module', 'Tooltip/Data', tooltip_data())
+    for key, page in new_way_tables().items():
+        write('Template', 'Data/New ways/' + key, page); n['new-way tables'] += 1
     # vanilla items without a page here: their inventory slots link to minecraft.wiki (Module:Inventory slot)
     offsite = {}
     for name in list(ITEMS) + list(USES):

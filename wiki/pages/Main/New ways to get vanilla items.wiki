@@ -1,0 +1,45 @@
+'''New ways to get vanilla items''' lists the vanilla ''Minecraft'' items that [[Matcha Flavoured]] leaves unchanged except for new recipes or trades that follow one of a few pack-wide rules. Each item's name links here. For everything else about these items, see the Minecraft Wiki. Vanilla items the pack changes in other ways have their own pages, and the rest are unchanged (see [[Changes from vanilla]]).
+
+The tables are generated from the pack's recipe and trade files.
+
+== Stonecutter ==
+The [[stonecutter]] cuts logs straight into wooden blocks, and cuts many stone, glass and metal blocks into their shapes.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting|<code>recipe/stonecutting/</code>}}</ref> The Stonecutter page groups the same recipes by material.
+{{Data/New ways/stonecutter}}
+
+== Crafting ==
+=== Two slabs back into a block ===
+Two slabs craft back into one full block.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting|<code>recipe/crafting/</code>}}</ref>
+{{Data/New ways/slabs}}
+
+=== Wool and carpet ===
+Two wool make eight carpets, and four carpets craft back into one wool.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/white_carpet.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/white_wool.json}}</ref>
+{{Data/New ways/wool}}
+
+=== With a water bottle ===
+A [[Glass Bottle#Water bottle|water bottle]] turns eight concrete powder into eight concrete, and ages a copper block by one stage.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/white_concrete_from_concrete_powder.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_from_patina.json}}</ref> The recipes accept any potion, since recipes match items by ID only.
+{{Data/New ways/water}}
+
+=== Duplicating plants ===
+A flower or small plant, a water bottle and [[bone meal]] make four of the plant.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_poppy.json}}</ref> See [[Hyacinth#Cloning]].
+{{Data/New ways/plants}}
+
+=== Saplings from leaves ===
+A leaves block crafts into its sapling.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/oak_sapling_from_oak_leaves.json}}</ref>
+{{Data/New ways/saplings}}
+
+=== Banners ===
+Six wool and a stick make six banners instead of one. The pack blocks the vanilla recipes and adds its own.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/white_banner.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+{{Data/New ways/banners}}
+
+== Cooking stations ==
+The [[Mud Kiln]], [[Oven]], [[Blast Furnace]] and [[Kindling]] each make some vanilla blocks and items.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln|<code>recipe/kiln/</code>}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/blast|<code>recipe/blast/</code>}}</ref>
+{{Data/New ways/cooking}}
+
+== Villager trades ==
+Villagers sell these items. Each profession's page lists the price and level.<ref>{{Source|MF_datapack/data/matcha/villager_trade|<code>villager_trade/</code>}}</ref>
+{{Data/New ways/trades}}
+
+== References ==
+<references />
+
+[[Category:Lists]]

@@ -218,6 +218,11 @@ the swap mid-way.
   - Clay Fetishes are named by their variant.
   - Music discs are named by their song.
   - Potions named like an effect become "Splash Potion of X".
+- **Which vanilla items get a page** (`generate.py`): none for items the pack doesn't change (their links and
+  slots go to minecraft.wiki via `Module:Inventory slot/Offsite`). Items whose only changes follow a pack-wide
+  rule (`NEW_WAY_RULES`: stonecutter, slabs back into blocks, wool and carpet, water bottle, plant cloning,
+  saplings, banners, cooking stations, trades) redirect to their row on "New ways to get vanilla items".
+  The rest get a page whose lead says what the pack adds or replaces.
 - **Recipes match ingredients by item ID only,** so a custom item also works in recipes for its base item.
   The generator lists those uses only when both are the same kind of item (food with food).
 - **Healing is a hidden Regeneration III:** 1 HP per 12 ticks. Hunger is pinned by a function.
