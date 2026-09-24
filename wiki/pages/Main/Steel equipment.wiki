@@ -14,47 +14,13 @@ In the video the developer describes steel as "processed iron that can make iron
 
 == Stats ==
 === Tools ===
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Steel Pickaxe}} || 3000 || 8 || — || 3 || 1.2 || —
-|-
-| {{ItemLink|Steel Axe}} || 3000 || 8 || — || 10 || 0.7 || —
-|-
-| {{ItemLink|Steel Shovel}} || 3000 || 8 || — || 3.5 || 1 || —
-|-
-| {{ItemLink|Steel Hoe}} || 3000 || 8 || — || 1 || 2 || —
-|-
-| {{ItemLink|Steel Mattock}} || 3000 || 7 || — || 1 || 2 || —
-|-
-| {{ItemLink|Steel Dolabra}} || 3000 || 7 || — || 6 || 0.9 || —
-|}
+{{Data/Tools/Steel}}
 
 === Weapons ===
-{| class="wikitable sortable"
-! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
-|-
-| {{ItemLink|Steel Sword}} || 3000 || 6 || 1.4 || +1 || —
-|-
-| {{ItemLink|Steel Spear}} || 3000 || 4 || 0.9 || +1 || —
-|-
-| {{ItemLink|Steel Claymore}} || 1500 || 8 || 0.7 || +2 || —
-|}
+{{Data/Weapons/Steel}}
 
 === Armor ===
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Steel Helmet}} || 1000 || 2 || 1 || 0.1 || — || [[Blast Protection]] II
-|-
-| {{ItemLink|Steel Chestplate}} || 1000 || 7 || 1 || 0.2 || — || [[Blast Protection]] IV
-|-
-| {{ItemLink|Steel Leggings}} || 1000 || 5 || 1 || 0.1 || — || [[Blast Protection]] III
-|-
-| {{ItemLink|Steel Boots}} || 1000 || 2 || 1 || 0.1 || — || [[Blast Protection]] II
-|- class="sortbottom"
-! Full set !! !! 16 !! 4 !! 0.5 !! colspan="2" |
-|}
+{{Data/Armor/Steel}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 

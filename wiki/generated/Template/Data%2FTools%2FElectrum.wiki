@@ -1,0 +1,15 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Electrum Pickaxe}}{{{Electrum Pickaxe|}}} || 3000 || 12 || data-sort-value="55" | 55 || 5 || 1.2 || [[Fortune|Fortune bonus III]]
+|-
+| {{ItemLink|Electrum Axe}}{{{Electrum Axe|}}} || 3000 || 12 || data-sort-value="0" | — || 9 || 1.2 || [[Fortune|Fortune bonus III]]<br />[[Looting]] II<br />[[Smite]] III<br />{{G|Warding}} [[Warding|2 Warding]]
+|-
+| {{ItemLink|Electrum Shovel}}{{{Electrum Shovel|}}} || 3000 || 12 || data-sort-value="0" | — || 6 || 1 || [[Fortune|Fortune bonus III]]
+|-
+| {{ItemLink|Electrum Hoe}}{{{Electrum Hoe|}}} || 3000 || 12 || data-sort-value="0" | — || 1 || 4 || [[Fortune|Fortune bonus III]]
+|-
+| {{ItemLink|Electrum Mattock}}{{{Electrum Mattock|}}} || 3000 || 10 || data-sort-value="0" | — || 3 || 3 || [[Fortune|Fortune bonus II]]<br />{{G|Warding}} [[Warding|1 Warding]]
+|-
+| {{ItemLink|Electrum Dolabra}}{{{Electrum Dolabra|}}} || 3000 || 10 || data-sort-value="55" | 55 || 6 || 1.2 || [[Fortune|Fortune bonus III]]
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

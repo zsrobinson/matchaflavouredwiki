@@ -1,0 +1,23 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Wooden Spear}}{{{Wooden Spear|}}} || 59 || 1 || 1.54 || — || —
+|-
+| {{ItemLink|Copper Spear}}{{{Copper Spear|}}} || 190 || 2 || 1.18 || — || —
+|-
+| {{ItemLink|Iron Spear}}{{{Iron Spear|}}} || 500 || 3 || 1.05 || — || —
+|-
+| {{ItemLink|Steel Spear}}{{{Steel Spear|}}} || 3000 || 4 || 0.9 || +1 || —
+|-
+| {{ItemLink|Golden Spear}}{{{Golden Spear|}}} || 350 || 1 || 1.05 || — || [[Looting]] II
+|-
+| {{ItemLink|Diamond Spear}}{{{Diamond Spear|}}} || 2500 || 4 || 0.95 || — || —
+|-
+| {{ItemLink|Shakudo Spear}}{{{Shakudo Spear|}}} || 1000 || 3 || 1.18 || — || [[Shakudo equipment|Life steal]]
+|-
+| {{ItemLink|Hepatizon Spear}}{{{Hepatizon Spear|}}} || 1000 || 3 || 1.18 || — || [[Lunge]] III
+|-
+| {{ItemLink|Electrum Spear}}{{{Electrum Spear|}}} || 3000 || 4 || 4 || — || [[Smite]] IV<br />[[Looting]] II<br />{{G|Warding}} [[Warding|2 Warding]]
+|-
+| {{ItemLink|Adamant Spear}}{{{Adamant Spear|}}} || 5000 || 5 || 0.87 || — || [[Sharpness]] I<br />[[Unbreaking]] II<br />{{G|Weakness}} [[Adamant equipment|Weakness]]
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

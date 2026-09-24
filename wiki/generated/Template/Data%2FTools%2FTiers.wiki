@@ -1,0 +1,23 @@
+<includeonly>{| class="wikitable sortable"
+! Tier !! Made from !! Repaired with
+|-
+| [[Wooden equipment|Wooden]]{{{Wooden|}}} || [[Planks]] || [[Planks]]
+|-
+| [[Copper equipment|Copper]]{{{Copper|}}} || [[Copper Ingot]] || [[Copper Ingot]]
+|-
+| [[Iron equipment|Iron]]{{{Iron|}}} || [[Iron Ingot]] || [[Iron Ingot]]
+|-
+| [[Steel equipment|Steel]]{{{Steel|}}} || Iron tool + [[Steel Alloy]] || [[Iron Ingot]]
+|-
+| [[Golden equipment|Golden]]{{{Golden|}}} || [[Gold Ingot]] || [[Gold Ingot]]
+|-
+| [[Diamond equipment|Diamond]]{{{Diamond|}}} || [[Diamond]] || [[Diamond]]
+|-
+| [[Shakudo equipment|Shakudo]]{{{Shakudo|}}} || Copper tool + [[Shakudo Alloy]] || [[Block of Copper]]
+|-
+| [[Hepatizon equipment|Hepatizon]]{{{Hepatizon|}}} || Copper tool + [[Hepatizon Alloy]] || [[Block of Copper]]
+|-
+| [[Electrum equipment|Electrum]]{{{Electrum|}}} || Diamond tool + [[Electrum Alloy]] || [[Block of Diamond]]
+|-
+| [[Adamant equipment|Adamant]]{{{Adamant|}}} || Diamond tool + [[Adamant Alloy]] || [[Block of Diamond]], [[Adamant Scrap]]
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

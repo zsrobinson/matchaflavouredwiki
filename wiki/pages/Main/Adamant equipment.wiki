@@ -15,47 +15,13 @@ The 1.12.2 notes say the Doom rework "fits Adamant's apocryphal title much more,
 
 == Stats ==
 === Tools ===
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Adamant Pickaxe}} || 5000 || 15 || 55 || 6 || 1.2 || [[Efficiency]] II<br />{{G|Smelting}} Smelting<br />[[Unbreaking]] II
-|-
-| {{ItemLink|Adamant Axe}} || 5000 || 15 || — || 10 || 1 || [[Efficiency]] II<br />{{G|Smelting}} Smelting<br />{{G|Weakness}} Weakness<br />[[Unbreaking]] II
-|-
-| {{ItemLink|Adamant Shovel}} || 5000 || 15 || — || 6.5 || 1 || {{G|Smelting}} Smelting<br />[[Efficiency]] II<br />[[Unbreaking]] II
-|-
-| {{ItemLink|Adamant Hoe}} || 5000 || 15 || — || 1 || 4 || {{G|Smelting}} Smelting<br />[[Unbreaking]] II<br />[[Efficiency]] II
-|-
-| {{ItemLink|Adamant Mattock}} || 5000 || 13 || — || 1 || 4 || [[Efficiency]] I<br />{{G|Smelting}} Smelting<br />[[Unbreaking]] II
-|-
-| {{ItemLink|Adamant Dolabra}} || 5000 || 13 || 55 || 7 || 1 || [[Unbreaking]] II<br />{{G|Smelting}} Smelting<br />[[Efficiency]] I
-|}
+{{Data/Tools/Adamant}}
 
 === Weapons ===
-{| class="wikitable sortable"
-! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
-|-
-| {{ItemLink|Adamant Sword}} || 3000 || 8 || 1.6 || — || [[Sharpness]] I<br />{{G|Weakness}} Weakness<br />[[Unbreaking]] II
-|-
-| {{ItemLink|Adamant Spear}} || 5000 || 5 || 0.87 || — || [[Sharpness]] I<br />[[Unbreaking]] II<br />{{G|Weakness}} Weakness
-|-
-| {{ItemLink|Adamant Claymore}} || 3000 || 9 || 1 || — || [[Unbreaking]] II<br />{{G|Weakness}} Weakness<br />[[Sharpness]] I
-|}
+{{Data/Weapons/Adamant}}
 
 === Armor ===
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Adamant Helmet}} || 1000 || 3 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3]]<br />[[Unbreaking]] II<br />[[Protection]] I
-|-
-| {{ItemLink|Adamant Chestplate}} || 1000 || 8 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3]]<br />[[Unbreaking]] II<br />[[Protection]] I
-|-
-| {{ItemLink|Adamant Leggings}} || 1000 || 6 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3]]<br />[[Unbreaking]] II<br />[[Protection]] I
-|-
-| {{ItemLink|Adamant Boots}} || 1000 || 3 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3]]<br />[[Unbreaking]] II<br />[[Protection]] I
-|- class="sortbottom"
-! Full set !! !! 20 !! 12 !! 0.4 !! colspan="2" |
-|}
+{{Data/Armor/Adamant}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 
