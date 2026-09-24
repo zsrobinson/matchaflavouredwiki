@@ -30,7 +30,7 @@ It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair 
 {{History line|1.02|Steel alloy takes less time to blast.}}
 {{History line|1.03|Steel alloy is now blasted from [[carbon-rich iron]]. The real attack speed now matches the tooltip.}}
 {{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip.}}
-{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>. Dolabras began to shift from weapon hybrids to pure axe and pickaxe tools; the release notes say their damage and weapon intrinsics will be reduced over time.}}
+{{History line|1.12.2|The tooltip no longer lists the vanilla attribute lines under the hand-written ones.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_dolabra.json}}</ref> Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>. Dolabras began to shift from weapon hybrids to pure axe and pickaxe tools; the release notes say their damage and weapon intrinsics will be reduced over time.}}
 }}
 
 == References ==
