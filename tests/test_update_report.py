@@ -6,7 +6,7 @@ import sys
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
-from update_report import moved_ids, rename_ids
+from update_report import lore_words, moved_ids, rename_ids
 
 
 def data(recipes=(), advancements=None, enchantments=None, items=None, trades=None):
@@ -51,6 +51,17 @@ class MovedIdTests(unittest.TestCase):
         a = data([{'id': 'matcha:x'}])
         self.assertEqual(moved_ids(a, a), {})
         self.assertIs(rename_ids(a, {}), a)
+
+
+class LoreTests(unittest.TestCase):
+    def test_glyphs_only(self):
+        # Adamant Boots: 1.12.1-alpha wrote symbols, 1.12.2-beta the pack's own glyphs
+        self.assertEqual(lore_words(['🛡 3', '💥🚫 1', 'Set Bonus:']),
+                         lore_words(['⟦Armor⟧ 3', '⟦Knockback resistance⟧ 1', 'Set Bonus:']))
+
+    def test_words_and_numbers_count(self):
+        self.assertNotEqual(lore_words(['🗡 9']), lore_words(['⟦Attack damage⟧ 7']))
+        self.assertNotEqual(lore_words(['Repaired with:', 'Iron']), lore_words(['Repaired with:', 'Copper']))
 
 
 if __name__ == '__main__':
