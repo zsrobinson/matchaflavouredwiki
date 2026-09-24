@@ -12,13 +12,20 @@ Outputs (Template namespace unless noted):
   Data/Sources/<item>      loot tables (chests, mobs, fishing, ...) and trades that give it
   Data/Trades/<profession> full trade table per villager profession
   Data/Loot/<table>        drop table for each loot table the pack defines
-  Data/Food table, Data/Renamed items, Data/Trim templates, Data/Enchantments, Data/Advancements/<tab>
+  Data/Food table, Data/Renamed items, Data/Trim templates
+  Data/Enchantments, Data/Enchantments/New, Data/Enchantments/Vanilla   enchantment lists (notes by enchantment id)
+  Data/Blessings, Data/Ofuda, Data/Intrinsic items/<page>   enchanted books and the items that carry intrinsics
+  Data/Advancements/<tab>, Data/Advancements/tabs, Data/Advancements/technical
+  Data/Station/<station>   a cooking station's non-food recipes (Mud Kiln, Oven, Blast Furnace, Kindling)
+  Data/Fishing/...         the Fishing article's odds: Categories, Luck, Rarity, one per climate table, Special biomes
+  Data/Splash texts        the title screen's splashes (and Data/Splash texts/Count)
   Data/Current version, Source/commit
   Module:Inventory slot/Aliases   tag names ("Any Planks") for recipe slots
   Module:Tooltip/Data     each item's in-game tooltip (name colour, lore runs) and glyph widths
   Main/<item>              stub article for every item that has no hand-written page
   Main/<vanilla name>      redirect from each vanilla name to its renamed item
 """
+import html
 import json
 import math
 import os
@@ -74,7 +81,8 @@ def safe(name):
 
 
 def glyphs(s):
-    return re.sub(r'⟦([^⟧]+)⟧', lambda m: '{{G|%s}}' % m.group(1), s)
+    # unnamed glyphs are extracted as their code point (⟦U+E00F⟧); Template:G takes the bare code (E00F)
+    return re.sub(r'⟦(?:U\+)?([^⟧]+)⟧', lambda m: '{{G|%s}}' % m.group(1), s)
 
 
 def esc(s):
@@ -140,8 +148,9 @@ INTRINSIC_LABELS = {'adamant_tool': 'Auto-smelting', 'adamant_weapon': 'Weakness
                     'electrum_armour': 'Electrum bonus', 'electrum_tool': 'Fortune bonus'}
 
 
-def intrinsic_text(eid, lvl):
-    """Readable, correctly linked label for an enchantment (including glyph-named intrinsics)."""
+def intrinsic_text(eid, lvl=None):
+    """Readable, correctly linked label for an enchantment (including glyph-named intrinsics). Without a level,
+    just the name (for "incompatible with ...")."""
     e = ENCH.get(eid) or {}
     raw = e.get('name') or ''
     plain = re.sub(r'⟦[^⟧]+⟧', '', raw).strip()
@@ -152,6 +161,8 @@ def intrinsic_text(eid, lvl):
         label = glyphs(raw).strip()
         if not raw or 'kleispack.' in raw:  # untranslated key (pack bug): name it from the id
             label = INTRINSIC_LABELS.get(key, key.replace('_', ' ').capitalize())
+            if maxl > 1 and lvl:
+                label += ' ' + roman(lvl)  # the level is real even when the name is missing
         elif not re.sub(r'\{\{G\|[^}]*\}\}', '', label).strip(' ()+-:0123456789∞'):
             label = (label + ' ' + INTRINSIC_LABELS.get(key, page.split('#')[-1])).strip()  # glyph-only: add a readable name
         # glyphs are images, and MediaWiki doesn't allow an image inside a link label: keep them outside
@@ -246,6 +257,25 @@ def attr_sum(comps, attr, slot=None):
 def fmt_num(x):
     x = round(x, 2)
     return str(int(x)) if x == int(x) else str(x)
+
+
+def mining_speed(tool):
+    """A tool component's mining speed on the blocks it is made for (the mineable/ rules), or None."""
+    rules = [r for r in tool.get('rules', []) if r.get('speed') and r.get('correct_for_drops') is not False and r.get('speed') < 1000]
+    mineable = [r['speed'] for r in rules if isinstance(r.get('blocks'), str) and 'mineable/' in r['blocks']]
+    speeds = mineable or [r['speed'] for r in rules if 'cobweb' not in json.dumps(r.get('blocks'))]
+    return max(speeds) if speeds else None
+
+
+def enchant_levels(comps):
+    """{enchantment id: level} of an item's enchantments and stored enchantments (the pack's intrinsics)."""
+    ench = {}
+    for k in ('enchantments', 'stored_enchantments'):
+        v = comps.get(k) or {}
+        if isinstance(v, dict) and 'levels' in v:
+            v = v['levels']
+        ench.update(v)
+    return ench
 
 
 BLOCK_ITEMS = set()
@@ -354,12 +384,8 @@ def infobox(item):
     if has:
         f['attackspeed'] = fmt_num(4 + spd)
     tool = c.get('tool')
-    if tool:
-        rules = [r for r in tool.get('rules', []) if r.get('speed') and r.get('correct_for_drops') is not False and r.get('speed') < 1000]
-        mineable = [r['speed'] for r in rules if isinstance(r.get('blocks'), str) and 'mineable/' in r['blocks']]
-        speeds = mineable or [r['speed'] for r in rules if 'cobweb' not in json.dumps(r.get('blocks'))]
-        if speeds:
-            f['miningspeed'] = fmt_num(max(speeds))
+    if tool and mining_speed(tool) is not None:
+        f['miningspeed'] = fmt_num(mining_speed(tool))
     for attr, key in (('armor', 'armor'), ('armor_toughness', 'toughness'), ('knockback_resistance', 'knockbackres')):
         v, has = attr_sum(c, attr)
         if has and v:
@@ -367,12 +393,7 @@ def infobox(item):
     rep = c.get('repairable')
     if rep and rep.get('items') and c.get('max_damage') and not c.get('unbreakable'):
         f['repair'] = item_link_list(rep['items'])
-    ench = {}
-    for k in ('enchantments', 'stored_enchantments'):
-        v = c.get(k) or {}
-        if isinstance(v, dict) and 'levels' in v:
-            v = v['levels']
-        ench.update(v)
+    ench = enchant_levels(c)
     if ench and item['base_id'] != 'minecraft:enchanted_book':
         f['intrinsics'] = '<br />'.join(intrinsic_text(e, l) for e, l in ench.items())
     elif ench:
@@ -474,6 +495,12 @@ def out_text(o):
     return safe(slot_name(o)) + (',%d' % o['count'] if o.get('count', 1) > 1 else '')
 
 
+def cook_ticks(r):
+    """A cooking recipe's time in ticks (the recipe type's default when the file gives none)."""
+    return r.get('cookingtime') or {'smelting': 200, 'smoking': 100, 'blasting': 100,
+                                    'campfire_cooking': 600}[r['type'].split(':')[-1]]
+
+
 def recipe_ui(r):
     t = r['type'].split(':')[-1]
     if t == 'crafting_shaped':
@@ -491,7 +518,7 @@ def recipe_ui(r):
         a = '|'.join('%s=%s' % (slots[i], slot_text(g)) for i, g in enumerate(r['ingredients'][:9]))
         return '{{Crafting|%s|Output=%s|shapeless=1}}' % (a, out_text(r['output']))
     if t in ('smelting', 'smoking', 'blasting', 'campfire_cooking'):
-        secs = (r.get('cookingtime') or {'smelting': 200, 'smoking': 100, 'blasting': 100, 'campfire_cooking': 600}[t]) / 20
+        secs = cook_ticks(r) / 20
         note = '%s s' % fmt_num(secs)
         if r.get('experience'):
             note += ', %s XP' % fmt_num(r['experience'])
@@ -688,6 +715,32 @@ def biome_note(b):
     return 'only in ' + ', '.join(out)
 
 
+BIOMES = DATA['biomes']  # biome id -> in-game name
+BIOME_TAGS = DATA['biome_tags']  # biome tag -> biome ids
+
+
+def entry_biome_list(e):
+    """The biome ids where a loot entry's location checks pass, in the order its tags list them, or None
+    when it has no biome condition."""
+    out = None
+    for c in e.get('conditions') or []:
+        pred = c.get('predicate') or {}
+        b = pred.get('biomes') or pred.get('biome')
+        if c.get('condition', '').split(':')[-1] != 'location_check' or not b:
+            continue
+        ids = []
+        for x in ([b] if isinstance(b, str) else b):
+            ids += BIOME_TAGS.get(x[1:], []) if x.startswith('#') else [x if ':' in x else 'minecraft:' + x]
+        ids = list(dict.fromkeys(ids))
+        out = ids if out is None else [i for i in out if i in ids]
+    return out
+
+
+def entry_biomes(e):
+    b = entry_biome_list(e)
+    return None if b is None else set(b)
+
+
 def cond_notes(conds):
     notes = []
     mult = 1.0
@@ -764,9 +817,10 @@ def cond_notes(conds):
     return mult, notes
 
 
-def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
+def flatten(table_id, prob=1.0, notes=(), depth=0, seen=(), where=None):
     """Yield (item, per-roll prob of this entry in context, count range, notes, rolls, table, variant)
-    for a table. The variant labels a stack that a loot function makes distinct ("Arrow of Poison")."""
+    for a table. The variant labels a stack that a loot function makes distinct ("Arrow of Poison").
+    where: the biomes the rolling entry was limited to; entries for other biomes can't apply."""
     t = LOOT.get(table_id)
     out = []
     if not t or depth > 6 or table_id in seen:
@@ -777,12 +831,14 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
         # "caught in open water" needs a fishing hook: never true when a chest or mob rolls the fishing table
         if not root.startswith('minecraft:gameplay/fishing') and 'in_open_water' in json.dumps(e.get('conditions') or []):
             continue
+        if where is not None and entry_biomes(e) is not None and not (entry_biomes(e) & where):
+            continue  # e.g. the swamps' frogs in the junk that only #minecraft:unused biomes add
         pools[e['pool']].append(e)
     for pi, ents in pools.items():
         e0 = ents[0]
         pmult, pnotes = cond_notes(e0.get('pool_conditions'))
-        # Entries gated by a location (biome) check are mutually exclusive: only one applies
-        # at a time, so each is weighed against the unconditioned entries alone.
+        # Entries gated by a location (biome) check are weighed against the unconditioned entries and the
+        # gated entries that also apply wherever they do (also_there); others are for other biomes.
         def is_loc(e):
             return any((c.get('condition', '').split(':')[-1] == 'location_check') for c in (e.get('conditions') or []))
         # children of one alternatives/group entry share that entry's single weighted slot
@@ -791,6 +847,14 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
             slots.setdefault(e.get('slot') or id(e), e)
         uncond = sum(e['weight'] for e in slots.values() if not is_loc(e))
         locw = [e['weight'] for e in slots.values() if is_loc(e)]
+
+        def also_there(e):
+            """Weight of the other biome-gated entries that apply wherever e does: the Deep Dark's own fishing
+            entry is always rolled together with the #minecraft:unused fallback junk, which contains it."""
+            be = entry_biomes(e)
+            me = e.get('slot') or id(e)
+            return sum(f['weight'] for f in slots.values() if (f.get('slot') or id(f)) != me and is_loc(f) and be is not None
+                       and entry_biomes(f) is not None and be <= entry_biomes(f))
         earlier = defaultdict(list)  # alternatives slot -> condition notes of the children before this one
         ravg, rlo, rhi = rolls_avg(e0['rolls'])
         for e in ents:
@@ -800,7 +864,7 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
                 earlier[e['slot']] = prior + enotes
                 if prior and not enotes:
                     enotes = ['without ' + ', '.join(dict.fromkeys(prior))]  # the fallback branch
-            total = (uncond + e['weight']) if is_loc(e) else (uncond + (max(locw) if locw else 0))
+            total = (uncond + e['weight'] + also_there(e)) if is_loc(e) else (uncond + (max(locw) if locw else 0))
             p = e['weight'] / (total or 1) * emult * pmult
             if e.get('empty'):
                 continue
@@ -810,7 +874,8 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
                 if isinstance(sub, dict):
                     continue
                 override = count_range(e['count']) if e.get('count') is not None else None
-                for (it, p2, cnt, n2, r2, tid, var) in flatten(sub, 1.0, (), depth + 1, seen + (table_id,)):
+                inner = flatten(sub, 1.0, (), depth + 1, seen + (table_id,), narrower(where, entry_biomes(e)))
+                for (it, p2, cnt, n2, r2, tid, var) in inner:
                     # nested table: chance per roll of this entry times the nested chance (per nested roll)
                     if override:
                         cnt, p2 = override, p2 * positive_share(override)
@@ -819,6 +884,11 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=()):
                 cr = count_range(e.get('count'))
                 out.append((e['item'], p * prob * positive_share(cr), cr, n, (rlo, rhi), table_id, e.get('variant')))
     return out
+
+
+def narrower(a, b):
+    """The biomes both limits allow (None means any biome)."""
+    return b if a is None else a if b is None else a & b
 
 
 def positive_share(cnt):
@@ -1153,23 +1223,559 @@ def renamed_table():
             '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
 
 
-def enchantment_table():
+# ------------------------------------------------------------------ enchantment tables
+# Data/Enchantments/New (the pack's own enchantments), Data/Enchantments/Vanilla (what the pack changed
+# and where each one comes from) and Data/Enchantments (every enchantment file, intrinsics and old ids
+# included). Hand-written text the code can't give (what an enchantment does, remarks on a change) is
+# passed by the page as a note keyed by enchantment id: {{Data/Enchantments/New|matcha:reach=...}}.
+ENCH_UPDATES = {k: e['updated_to'] for k, e in ENCH.items() if e.get('updated_to')}  # old id -> the id it becomes
+EQUIPMENT_KINDS = ['sword', 'spear', 'axe', 'pickaxe', 'shovel', 'hoe', 'helmet', 'chestplate', 'leggings', 'boots']
+ARMOR_KINDS = {'helmet', 'chestplate', 'leggings', 'boots'}
+RANDOM_BOOKS = {'#minecraft:on_random_loot': '[[Enchanting#Other sources|Random chest and fishing books]]'}
+LOOT_PLACES = [('chests/abbey/', '[[Abbey]] chests'), ('chests/ancient_city', '[[Ancient City|Ancient city]] chests'),
+               ('chests/bastion_', '[[Bastion Remnant|Bastion]] chests'),
+               ('chests/trial_chambers/reward_ominous', '[[Trial Chambers|Ominous vaults]]'),
+               ('chests/trial_chambers/reward', '[[Trial Chambers|Trial chamber vaults]]'),
+               ('gameplay/piglin_bartering', '{{MCW|Bartering|Piglin bartering}}'), ('gameplay/fishing', '[[Fishing]]')]
+
+
+def item_enchantments(item):
+    """An item's enchantments. Equipment keeps them as stored_enchantments until it reaches an inventory
+    (matcha:mechanics/intrinsic_enchants makes them real enchantments)."""
+    c = item.get('components') or {}
+    return dict(c.get('stored_enchantments') or {}, **(c.get('enchantments') or {}))
+
+
+def is_intrinsic(eid):
+    key = eid.split(':')[-1]
+    return eid.startswith('matcha:') and any(key.startswith(k) for k, _ in INTRINSIC_PAGES)
+
+
+def ench_article(name):
+    """The wiki's own article about an enchantment, if it has one (not a redirect to this list)."""
+    f = os.path.join(HAND, 'Main', fname(name))
+    return os.path.exists(f) and not open(f, encoding='utf-8').read().lstrip().upper().startswith('#REDIRECT')
+
+
+def ench_link(eid):
+    """An enchantment's name, linked to its article here or, for vanilla ones without one, to minecraft.wiki."""
+    if eid in ENCH_UPDATES:
+        return '%s (old id)' % ench_link(ENCH_UPDATES[eid])
+    if is_intrinsic(eid):
+        return intrinsic_text(eid)
+    name = ench_name(eid)
+    return '[[%s]]' % name if ench_article(name) or not eid.startswith('minecraft:') else '{{MCW|%s}}' % name
+
+
+def level_text(eid, lvl):
+    e = ENCH.get(ENCH_UPDATES.get(eid, eid)) or {}
+    return ' (%s)' % roman(lvl) if eid.startswith('minecraft:') or (e.get('max_level') or 1) > 1 else ''
+
+
+def item_kind(iid):
+    k = iid.split(':')[-1]
+    return next((x for x in EQUIPMENT_KINDS if k.endswith('_' + x)), None)
+
+
+def item_ref(iid):
+    """A link to a vanilla item id's page here, or to minecraft.wiki when the wiki has none."""
+    name = id_name(iid)
+    return '[[%s]]' % name if page_exists(name) else '{{MCW|%s}}' % name
+
+
+def and_list(parts):
+    return parts[0] if len(parts) == 1 else ', '.join(parts[:-1]) + ' and ' + parts[-1]
+
+
+def applies_to(ids, limit=None):
+    """Item ids as readable groups: "Swords (not golden) and stick". None when there are more than limit groups."""
+    parts = []
+    for kind in EQUIPMENT_KINDS:
+        have = sorted(i.split(':')[-1] for i in ids if item_kind(i) == kind)
+        if not have:
+            continue
+        every = sorted(k for k in VSUM if item_kind(k) == kind)
+        plural = kind if kind.endswith('s') else kind + 's'
+        missing = [k[:-len(kind) - 1].replace('_', ' ') for k in every if k not in have]
+        if not missing:
+            parts.append(plural)
+        elif len(missing) <= 3 and len(missing) < len(have):
+            parts.append('%s (not %s)' % (plural, ' or '.join(missing)))
+        else:
+            parts.append('%s %s' % (and_list([k[:-len(kind) - 1].replace('_', ' ') for k in have]), plural))
+    parts += [id_name(i).lower() for i in ids if not item_kind(i)]
+    if not parts or (limit and len(parts) > limit):
+        return None
+    s = and_list(parts)
+    return s[0].upper() + s[1:]
+
+
+def world_loot_entries():
+    """(world table, entry) for every item entry a world loot table can yield, nested tables included."""
+    out = []
+
+    def walk(lid, root, seen):
+        for e in LOOT.get(lid, {}).get('entries', []):
+            sub = e.get('loot_table')
+            if isinstance(sub, str):
+                if sub not in seen:
+                    walk(sub, root, seen | {sub})
+            elif e.get('item'):
+                out.append((root, e))
+    for lid in LOOT:
+        if not loot_category(lid) or lid in REFERENCED or (lid.startswith('minecraft:gameplay/fishing/') and lid not in ROLLED):
+            continue  # the same world tables the Sources lists use
+        walk(lid, lid, {lid})
+    return out
+
+
+def loot_place(lid):
+    p = lid.split(':')[-1]
+    label = next((label for pre, label in LOOT_PLACES if p.startswith(pre)), None)
+    if label:
+        return label
+    s = p.split('/')[-1].replace('_', ' ')
+    return s[0].upper() + s[1:] + (' chests' if p.startswith('chests/') else '')
+
+
+def family_key(name):
+    return name.rsplit(' ', 1)[0] if ' ' in name else None
+
+
+def family_members(key):
+    return {n for n, it in ITEMS.items() if n.startswith(key + ' ') and item_kind(it['base_id'])}
+
+
+def gear_text(entries, always_level):
+    """Equipment that comes with an enchantment, as [(item, level, suffix)]. Items of one family ("Adamant
+    Helmet", "Adamant Boots"...) are merged into one entry linked to the family's article."""
+    def lv(levels):
+        levels = sorted(set(levels))
+        if not always_level and all(l == 1 for l in levels):
+            return ''
+        return ' (%s)' % (roman(levels[0]) if len(levels) == 1 else '%s–%s' % (roman(levels[0]), roman(levels[-1])))
+    fams = defaultdict(list)
+    for name, l, suffix in entries:
+        if not suffix and family_key(name) and len([1 for n, _, s in entries if not s and family_key(n) == family_key(name)]) > 1:
+            fams[family_key(name)].append((name, l))
+    out = []
+    for key, members in sorted(fams.items()):
+        names = {n for n, _ in members}
+        page = next((c for p in (key + ' equipment', key + ' armor') for c in (p, p[0] + p[1:].lower())
+                     if os.path.exists(os.path.join(HAND, 'Main', fname(c)))), None)
+        kinds = {item_kind(ITEMS[n]['base_id']) for n in names}
+        if kinds == ARMOR_KINDS and len(names) == 4:
+            text = '%s armor' % key
+        elif names == family_members(key):
+            text = '%s equipment' % key
+        else:
+            text = None
+        if text:
+            text = text[0] + text[1:].lower()
+            out.append(('[[%s]]' % page if page == text else '[[%s|%s]]' % (page, text) if page else text) + lv(l for _, l in members))
+        else:
+            pieces = and_list([n[len(key) + 1:].lower() for n in sorted(names)])
+            out.append('%s %s' % ('[[%s|%s]]' % (page, key) if page else key, pieces) + lv(l for _, l in members))
+    for name, l, suffix in sorted(entries):
+        if not suffix and family_key(name) in fams:
+            continue
+        out.append('[[%s]]%s%s' % (name, lv([l]), suffix))
+    return list(dict.fromkeys(out))
+
+
+def enchantment_sources():
+    """eid -> {'books': [...], 'gear': [(item, level, suffix)], 'found': [...]}: the crafted and traded
+    books that hold each enchantment, the equipment that comes with it and the loot books it is found in.
+    A book holding an old id (main:reach, see ENCH_UPDATES) counts for the enchantment it turns into."""
+    src = defaultdict(lambda: {'books': [], 'gear': [], 'found': []})
+
+    def add(stack, how):
+        for eid, lvl in (stack.get('enchantments') or {}).items():
+            target = ENCH_UPDATES.get(eid, eid)
+            if stack['id'] == 'minecraft:enchanted_book':
+                label = '[[%s]]' % stack['name'] + (': %s' % stack['lore'] if how != 'recipe' and stack.get('lore') else '')
+                old = ' ([[Blessing#Old enchantment ids|as <code>%s</code>]])' % eid if eid != target else ''
+                src[target]['books'].append(label + level_text(target, lvl) + old)
+            else:
+                src[target]['gear'].append((stack['name'], lvl, how))
+    for r in ALL_RECIPES:
+        add(r['output'], 'recipe')
+    for prof, levels in TRADES.items():
+        for lk, ts in levels.items():
+            for t in ts if isinstance(ts, list) else []:
+                if t.get('gives'):
+                    add(t['gives'], ' from the %s' % prof_link(prof))
+    for name, it in ITEMS.items():  # equipment no recipe or trade makes (defined by loot alone)
+        for eid, lvl in (item_enchantments(it) if it['base_id'] != 'minecraft:enchanted_book' else {}).items():
+            if not any(n == name for n, _, _ in src[ENCH_UPDATES.get(eid, eid)]['gear']):
+                src[ENCH_UPDATES.get(eid, eid)]['gear'].append((name, lvl, 'recipe'))
+    for root, e in world_loot_entries():
+        if e['id'] == 'minecraft:enchanted_book':
+            frm = e.get('enchant_from')
+            for eid in e.get('enchant_options') or []:
+                src[eid]['found'].append((isinstance(frm, str) and RANDOM_BOOKS.get(frm)) or loot_place(root))
+            for eid in e.get('enchantments') or {}:
+                src[eid]['found'].append(loot_place(root))
+        else:
+            own = item_enchantments(ITEMS.get(e['item'], {}))
+            for eid, lvl in (e.get('enchantments') or {}).items():
+                if own.get(eid) != lvl:  # a loot variant (the Abbey's iron swords with Anemos)
+                    src[eid]['gear'].append((e['item'], lvl, ' in %s' % loot_place(root)))
+    for s in src.values():
+        s['books'] = list(dict.fromkeys(s['books']))
+        s['gear'] = [(n, l, '' if h == 'recipe' else h) for n, l, h in dict.fromkeys(s['gear'])]
+        s['found'] = sorted(set(s['found']), key=lambda x: (x not in RANDOM_BOOKS.values(), x))
+    return src
+
+
+def num(x):
+    """JSON with integral floats as ints, so 3.0 and 3 compare equal."""
+    if isinstance(x, float) and x == int(x):
+        return int(x)
+    if isinstance(x, dict):
+        return {k: num(v) for k, v in x.items()}
+    if isinstance(x, list):
+        return [num(v) for v in x]
+    return x
+
+
+def ench_ref(eid):
+    """An enchantment named in running text; an intrinsic also says which equipment carries it."""
+    if not is_intrinsic(eid):
+        return ench_link(eid)
+    carriers = sorted(n for n, it in ITEMS.items() if eid in item_enchantments(it) and it['base_id'] != 'minecraft:enchanted_book')
+    if not carriers:
+        return ench_link(eid)
+    keys = sorted({family_key(n) or n for n in carriers})
+    kinds = {item_kind(ITEMS[n]['base_id']) for n in carriers}
+    what = 'armor' if kinds <= ARMOR_KINDS else 'tools' if kinds <= {'axe', 'pickaxe', 'shovel', 'hoe'} else 'equipment'
+    owners = (and_list([k.lower() for k in keys]) + ' ' + what) if len(carriers) > 1 else and_list([c.lower() for c in carriers])
+    return '%s (%s)' % (ench_link(eid), owners)
+
+
+def enchantment_changes(eid):
+    """What the pack changed in a vanilla enchantment: [(short name, line)], substantive changes in bold."""
+    e = ENCH[eid]
+    d, van = num(e['data']), num(e['vanilla'])
+    lines = []
+    if d.get('anvil_cost') != van.get('anvil_cost'):
+        lines.append(('anvil cost', 'Anvil cost %s → %s' % (van.get('anvil_cost'), d.get('anvil_cost'))))
+    if d.get('max_level') != van.get('max_level'):
+        lines.append(('max level', "'''Maximum level %s → %s'''" % (roman(van.get('max_level')), roman(d.get('max_level')))))
+    for ids, other, text in ((e['items'], e['vanilla_items'], 'Also applies to %s'), (e['vanilla_items'], e['items'], 'No longer applies to %s')):
+        extra = [i for i in ids if i not in other]
+        if extra:
+            lines.append(('supported items', "'''%s'''" % text % and_list([item_ref(i) for i in extra])))
+    for ids, other, text in ((e['incompatible'], e['vanilla_incompatible'], 'Also incompatible with %s'),
+                             (e['vanilla_incompatible'], e['incompatible'], 'No longer incompatible with %s')):
+        extra = [i for i in ids if i not in other]
+        if extra:
+            lines.append(('incompatibilities', "'''%s'''" % text % and_list([ench_ref(i) for i in extra])))
+    if json.dumps(d.get('effects'), sort_keys=True) != json.dumps(van.get('effects'), sort_keys=True):
+        lines.append(('effects', "'''Effects changed'''"))
+    known = {'anvil_cost', 'max_level', 'supported_items', 'exclusive_set', 'effects', 'description'}
+    other = [k.replace('_', ' ') for k in sorted(set(d) | set(van)) if k not in known and d.get(k) != van.get(k)]
+    if other:
+        lines.append((', '.join(other), 'Changed: %s' % ', '.join(other)))
+    return lines
+
+
+def note(eid):
+    """A hand-written note the page passes for this row, on a line of its own (tools/lint_pages.py
+    checks that the page passes notes only for rows that exist)."""
+    return '{{#if:{{{%s|}}}|<br />{{{%s}}}}}' % (eid, eid)
+
+
+def stored_text(ench):
+    """A book's enchantments as its tooltip lists them, linked; an old id (see ENCH_UPDATES) is named
+    as the enchantment it turns into."""
+    out = []
+    for eid, lvl in ench.items():
+        target = ENCH_UPDATES.get(eid, eid)
+        e = ENCH.get(target) or {}
+        if is_intrinsic(target):
+            text = intrinsic_text(target, lvl)
+            has_level = text.endswith(' %s]]' % roman(lvl))  # an untranslated name carries its level in the link
+            out.append(text + (' ' + roman(lvl) if (e.get('max_level') or 1) > 1 and not has_level else ''))
+            continue
+        old = ' ([[Blessing#Old enchantment ids|as <code>%s</code>]])' % eid if eid != target else ''
+        out.append(ench_link(target) + (' ' + roman(lvl) if (e.get('max_level') or 1) > 1 else '') + old)
+    return ', '.join(out)
+
+
+def book_tables():
+    """Data/Blessings (every book crafted around a Hell-Bound Book) and Data/Ofuda (every enchanted
+    book a villager sells), with the enchantments each one stores."""
     rows = []
-    for eid, e in sorted(ENCH.items(), key=lambda kv: ench_name(kv[0])):
-        d = e['data']
-        van = e.get('vanilla')
-        changed = []
-        if van:
-            for k in ('max_level', 'weight', 'anvil_cost', 'supported_items', 'primary_items', 'exclusive_set', 'slots', 'effects', 'min_cost', 'max_cost'):
-                if json.dumps(van.get(k), sort_keys=True) != json.dumps(d.get(k), sort_keys=True):
-                    changed.append(k.replace('_', ' '))
-        items = d.get('supported_items')
-        items_t = ('<code>%s</code>' % items) if isinstance(items, str) else ('%d items' % len(items) if items else '—')
-        rows.append('|-\n| %s || <code>%s</code> || %s || %s || %s || %s' % (
-            intrinsic_text(eid, 1), eid, d.get('max_level'), ', '.join(d.get('slots', [])), items_t,
-            ('Changed: ' + ', '.join(changed)) if changed else ('Unchanged' if van else "'''New'''")))
-    return ('<includeonly>{| class="wikitable sortable"\n! Enchantment !! ID !! Max level !! Slots !! Applies to !! Compared with vanilla\n' +
-            '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+    for r in sorted(ALL_RECIPES, key=lambda r: r['output']['name']):
+        o = r['output']
+        t = r['type'].split(':')[-1]
+        if o['id'] != 'minecraft:enchanted_book' or not o.get('enchantments') or t not in ('crafting_shaped', 'crafting_shapeless'):
+            continue
+        ings = [r['key'][ch] for row in r['pattern'] for ch in row if ch != ' '] if t == 'crafting_shaped' else r['ingredients']
+        book = next((g for g in ings if g['names'] == ['Hell-Bound Book']), None)
+        if not book:
+            continue
+        ings.remove(book)
+        tally = defaultdict(int)
+        for g in ings:
+            tally[ing_links(g)] += 1
+        parts = ['%s%s' % ('%d × ' % n if n > 1 else '', s) for s, n in sorted(tally.items(), key=lambda kv: (-kv[1], kv[0]))]
+        rows.append('|-\n| %s || %s || %s' % (il(o['name']), stored_text(o['enchantments']), ', '.join(parts)))
+    end = '\n|}</includeonly><noinclude>Generated by <code>tools/generate.py</code>. [[Category:Generated data]]</noinclude>'
+    blessings = ('<includeonly>{| class="wikitable sortable"\n! Blessing !! Stored enchantments !! Ingredients around the book\n' +
+                 '\n'.join(rows) + end)
+    rows = []
+    for prof, levels in TRADES.items():
+        for lk, ts in sorted(levels.items()):
+            for t in ts if isinstance(ts, list) else []:
+                g = t.get('gives') or {}
+                if g.get('id') != 'minecraft:enchanted_book' or not g.get('enchantments'):
+                    continue
+                price = ' + '.join(('%d × ' % s['count'] if s.get('count', 1) > 1 else '') + il(s['name'])
+                                   for s in (t.get('wants'), t.get('additional_wants')) if s)
+                rows.append('|-\n| %s || %s || %s || %s || %s' % (prof_link(prof), LEVEL_NAMES.get(lk, '—'), price,
+                                                                  g.get('lore') or '—', stored_text(g['enchantments'])))
+    ofuda = ('<includeonly>{| class="wikitable"\n! Villager !! Level !! Price !! Prayer !! Stored enchantments\n' + '\n'.join(rows) + end)
+    return {'Data/Blessings': blessings, 'Data/Ofuda': ofuda}
+
+
+SLOT_TEXT = {'mainhand': 'Main hand', 'offhand': 'Off hand', 'hand': 'Main hand or off hand', 'armor': 'Worn',
+             'head': 'Worn', 'chest': 'Worn', 'legs': 'Worn', 'feet': 'Worn', 'body': 'Worn', 'any': 'Held or worn'}
+
+
+def intrinsic_item_tables():
+    """Data/Intrinsic items/<page>: the items that come with each intrinsic documented on that page
+    (INTRINSIC_PAGES), with the level their tooltip shows and where the item must be to work."""
+    pages = defaultdict(list)
+    for name, it in ITEMS.items():
+        if it['base_id'] == 'minecraft:enchanted_book':
+            continue
+        ench = item_enchantments(it)
+        for eid, lvl in ench.items():
+            key = eid.split(':')[-1]
+            page = next((p for k, p in INTRINSIC_PAGES if key.startswith(k)), None) if is_intrinsic(eid) else None
+            if not page:
+                continue
+            e = ENCH.get(eid) or {}
+            where = ' or '.join(dict.fromkeys(SLOT_TEXT.get(s, s) for s in e.get('slots') or []))
+            where = 'Main hand or off hand' if where == 'Main hand or Off hand' else where
+            others = [stored_text({o: l}) for o, l in ench.items() if o != eid]
+            raw = e.get('name') or ''
+            label = glyphs(raw).strip() if raw and 'kleispack.' not in raw else INTRINSIC_LABELS.get(key, key.replace('_', ' ').capitalize())
+            label += ' ' + roman(lvl) if (e.get('max_level') or 1) > 1 else ''  # the tooltip line
+            pages[page.split('#')[0]].append(((e.get('max_level') or 1, key, name), '|-\n| %s || %s%s || %s' % (
+                il(name), label, ' (and %s)' % and_list(others) if others else '', where)))
+    end = '\n|}</includeonly><noinclude>Generated by <code>tools/generate.py</code>. [[Category:Generated data]]</noinclude>'
+    return {'Data/Intrinsic items/' + page: '<includeonly>{| class="wikitable sortable"\n! Item !! Intrinsic !! Where it works\n' +
+            '\n'.join(r for _, r in sorted(rows)) + end for page, rows in pages.items()}
+
+
+def enchantment_tables():
+    """Template title -> text for the three enchantment tables."""
+    src = enchantment_sources()
+    new, vanilla, full = [], [], []
+    def order(kv):  # by name, each old id after the enchantment it becomes; intrinsics (glyph names) last
+        eid = ENCH_UPDATES.get(kv[0], kv[0])
+        return is_intrinsic(eid), eid.split(':')[-1] if is_intrinsic(eid) else ench_name(eid), kv[0] in ENCH_UPDATES
+    for eid, e in sorted(ENCH.items(), key=order):
+        s = src.get(eid, {'books': [], 'gear': [], 'found': []})
+        maxl = roman(e['max_level'])
+        if e.get('vanilla'):
+            changes = enchantment_changes(eid)
+            vanilla.append('|-\n| <span id="%s"></span>%s || %s || %s%s || %s || %s || %s' % (
+                ench_name(eid), ench_link(eid), maxl, '<br />'.join(t for _, t in changes) or 'None', note(eid),
+                '<br />'.join(s['books']) or "''None''", '<br />'.join(gear_text(s['gear'], True)) or '—',
+                '<br />'.join(s['found']) or '—'))
+            compared = ('Changed: ' + ', '.join(k for k, _ in changes)) if changes else 'Unchanged'
+        else:
+            compared = "'''New'''"
+            if eid.startswith('matcha:') and not is_intrinsic(eid):
+                got = s['books'] + gear_text(s['gear'], e['max_level'] > 1) + s['found']
+                new.append('|-\n| %s || %s || %s || %s || %s' % (
+                    ench_link(eid), maxl, applies_to(e['items']) or '—', '{{{%s|}}}' % eid, '<br />'.join(got) or '—'))
+        full.append('|-\n| %s || <code>%s</code> || %s || %s || %s || %s' % (
+            ench_link(eid), eid, e['max_level'], ', '.join(e.get('slots') or []),
+            applies_to(e['items'], 6) or '<code>%s</code>' % e['supported_items'], compared))
+    end = '\n|}</includeonly><noinclude>Generated by <code>tools/generate.py</code>. Notes are passed by enchantment id. [[Category:Generated data]]</noinclude>'
+    return {
+        'Data/Enchantments/New': '<includeonly>{| class="wikitable sortable"\n! Enchantment !! Max level !! Applies to !! Effect !! Obtained from\n' + '\n'.join(new) + end,
+        'Data/Enchantments/Vanilla': ('<includeonly>{| class="wikitable sortable"\n! Enchantment !! Max level !! Changes from vanilla !! Crafted or traded as '
+                                      '!! Comes on !! Found as\n' + '\n'.join(vanilla) + end),
+        'Data/Enchantments': ('<includeonly>{| class="wikitable sortable"\n! Enchantment !! ID !! Max level !! Slots !! Applies to !! Compared with vanilla\n' +
+                              '\n'.join(full) + end),
+    }
+
+
+# ------------------------------------------------------------------ equipment comparison tables
+# The equipment tiers in the order the Tools, Weapons and Armor pages list them: (item-name prefix, family page).
+# Tools and weapons are found by name ("<prefix> <type>"); armor sets by their shared equipment asset.
+EQUIPMENT_TIERS = [('Wooden', 'Wooden equipment'), ('Copper', 'Copper equipment'), ('Iron', 'Iron equipment'),
+                   ('Steel', 'Steel equipment'), ('Golden', 'Golden equipment'), ('Diamond', 'Diamond equipment'),
+                   ('Shakudo', 'Shakudo equipment'), ('Hepatizon', 'Hepatizon equipment'),
+                   ('Electrum', 'Electrum equipment'), ('Adamant', 'Adamant equipment'),
+                   ('Leather', 'Leather armor'), ('Sturdy Leather', 'Sturdy leather armor'), ('Chainmail', 'Chainmail armor')]
+TOOL_TYPES = ['Pickaxe', 'Axe', 'Shovel', 'Hoe', 'Mattock', 'Dolabra']
+WEAPON_TYPES = ['Sword', 'Spear', 'Claymore']
+ARMOR_SLOTS = [('head', 'Helmet'), ('chest', 'Chestplate'), ('legs', 'Leggings'), ('feet', 'Boots')]
+OTHER_ATTRS = {'movement_speed': 'Speed', 'safe_fall_distance': 'Safe fall', 'step_height': 'Step height'}
+TOOL_HEAD = '! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics'
+WEAPON_HEAD = '! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics'
+ARMOR_HEAD = '! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics'
+_BLOCK_TAGS = {}
+
+
+def block_tag(tag):
+    """Block IDs in a block tag: the pack's file merged with vanilla's, unless the pack's replaces it."""
+    if tag not in _BLOCK_TAGS:
+        ns, p = tag.lstrip('#').split(':') if ':' in tag else ('minecraft', tag.lstrip('#'))
+        _BLOCK_TAGS[tag] = out = []
+        for base in (os.path.join(ROOT, 'source', 'matcha-flavoured', 'MF_datapack', 'data', ns, 'tags', 'block', p + '.json'),
+                     os.path.join(ROOT, 'source', 'vanilla-data', 'data', ns, 'tags', 'block', p + '.json')):
+            if os.path.exists(base):
+                d = json.load(open(base))
+                for v in d['values']:
+                    v = v if isinstance(v, str) else v['id']
+                    out += block_tag(v) if v.startswith('#') else [v if ':' in v else 'minecraft:' + v]
+                if d.get('replace'):
+                    break
+    return _BLOCK_TAGS[tag]
+
+
+def obsidian_text(tool):
+    """How a tool mines obsidian. The first rule that lists obsidian decides, as in the game."""
+    for r in tool.get('rules', []):
+        b = r.get('blocks')
+        ids = [x for v in ([b] if isinstance(b, str) else b or []) for x in (block_tag(v) if v.startswith('#') else [v])]
+        if 'minecraft:obsidian' in ids or 'obsidian' in ids:
+            if not r.get('speed') and not r.get('correct_for_drops'):
+                break  # only denies drops (a vanilla incorrect_for_* tag): mined like any block the tool isn't for
+            speed = fmt_num(r.get('speed') or tool.get('default_mining_speed', 1))
+            return 'data-sort-value="%s" | %s' % (speed, speed if r.get('correct_for_drops') else speed + ' (no drops)')
+    return 'data-sort-value="0" | —'
+
+
+def zero_dash(x):
+    return fmt_num(x) if x else '—'
+
+
+def names_link(names):
+    """Links for a list of item names; a whole family ("Oak Planks", "Birch Planks", ...) becomes one link."""
+    names = list(dict.fromkeys(names))
+    if len(names) > 2 and len({n.split()[-1] for n in names}) == 1:
+        return item_link(names[0].split()[-1])
+    return ', '.join(item_link(n) for n in names)
+
+
+def equipment_cells(name, kind):
+    """The comparison-table cells for one tool, weapon or armor piece, from its components."""
+    c = effective(ITEMS[name])
+    dur = 'Unbreakable' if 'unbreakable' in c else str(c['max_damage']) if c.get('max_damage') else '—'
+    intr = '<br />'.join(intrinsic_text(e, lvl) for e, lvl in enchant_levels(c).items()) or '—'
+    if kind == 'armor':
+        others = []
+        for m in c.get('attribute_modifiers', []) or []:
+            attr = m.get('type', '').split(':')[-1]
+            if attr in ('armor', 'armor_toughness', 'knockback_resistance') or not m.get('amount'):
+                continue
+            op = m.get('operation', 'add_value')
+            val = ('+' if m['amount'] > 0 else '') + fmt_num(m['amount']) if op == 'add_value' else '%+d%%' % round(m['amount'] * 100)
+            others.append('%s %s' % (OTHER_ATTRS.get(attr, attr.replace('_', ' ').capitalize()), val))
+        vals = [attr_sum(c, a)[0] for a in ('armor', 'armor_toughness', 'knockback_resistance')]
+        return [dur] + [zero_dash(v) for v in vals] + ['<br />'.join(others) or '—', intr], vals
+    dmg = fmt_num(1 + attr_sum(c, 'attack_damage', 'mainhand')[0])
+    spd = fmt_num(4 + attr_sum(c, 'attack_speed', 'mainhand')[0])
+    if kind == 'tool':
+        tool = c.get('tool') or {}
+        mine = mining_speed(tool)
+        return [dur, fmt_num(mine) if mine is not None else '—', obsidian_text(tool), dmg, spd, intr], None
+    kb = attr_sum(c, 'attack_knockback', 'mainhand')[0]
+    return [dur, dmg, spd, ('+' + fmt_num(kb)) if kb else '—', intr], None
+
+
+def equipment_row(name, kind):
+    # a hand-written note for the row (e.g. a <ref>) is passed to the table as |<item name>=...
+    return '|-\n| {{ItemLink|%s}}{{{%s|}}} || %s' % (safe(name), safe(name), ' || '.join(equipment_cells(name, kind)[0]))
+
+
+def equipment_table(head, rows, extra=''):
+    return ('<includeonly>{| class="wikitable sortable"\n' + head + '\n' + '\n'.join(rows) + extra +
+            '\n|}</includeonly><noinclude>Generated from the items\' components by <code>tools/generate.py</code>. '
+            'A hand-written note for a row is passed under the row\'s name (<code>|Steel Helmet=...</code>). '
+            '[[Category:Generated data]]</noinclude>')
+
+
+def armor_sets():
+    """{name prefix: [piece names, head to feet]}: armor pieces sharing an equipment asset that cover all four
+    slots, in tier order. The prefix is what the pieces' names share ("Leather" for Hood, Pauldron, Pants, Boots)."""
+    by_asset = defaultdict(list)
+    for name, it in ITEMS.items():
+        eq = effective(it).get('equippable') or {}
+        if eq.get('slot') in dict(ARMOR_SLOTS) and eq.get('asset_id'):
+            by_asset[eq['asset_id']].append((eq['slot'], name))
+    order = [s for s, _ in ARMOR_SLOTS]
+    sets = {}
+    for asset, pieces in by_asset.items():
+        if {s for s, _ in pieces} == set(order):
+            prefix = ' '.join(os.path.commonprefix([n.split() for _, n in pieces])) or asset.split(':')[-1].title()
+            sets[prefix] = [n for _, n in sorted(pieces, key=lambda p: (order.index(p[0]), p[1]))]
+    rank = [p for p, _ in EQUIPMENT_TIERS]
+    return dict(sorted(sets.items(), key=lambda kv: (rank.index(kv[0]) if kv[0] in rank else len(rank), kv[0])))
+
+
+def tier_link(prefix):
+    page = dict(EQUIPMENT_TIERS).get(prefix)
+    return '[[%s|%s]]' % (page, page.rsplit(' ', 1)[0]) if page else prefix
+
+
+def tiers_table():
+    """Tools page: each tier, what its tools are made from (its pickaxe's recipe) and repaired with."""
+    rows = []
+    for prefix, page in EQUIPMENT_TIERS:
+        name = prefix + ' Pickaxe'
+        if name not in ITEMS:
+            continue
+        made = []
+        for r in producing(name)[:1]:
+            if r['type'].endswith('smithing_transform'):
+                base = r['base']['names'][0]
+                made.append(' + '.join([base.rsplit(' ', 1)[0] + ' tool'] + [names_link(r[k]['names']) for k in ('template', 'addition') if r.get(k)]))
+            else:
+                made += [names_link(v['names']) for v in (r.get('key') or {}).values() if v['names'] != ['Stick']]
+        rep = (effective(ITEMS[name]).get('repairable') or {}).get('items') or []
+        ids = vanilla_tag(rep) if isinstance(rep, str) else rep
+        rows.append('|-\n| %s{{{%s|}}} || %s || %s' % (tier_link(prefix), prefix, ', '.join(made) or '—', names_link([id_name(i) for i in ids]) or '—'))
+    return equipment_table('! Tier !! Made from !! Repaired with', rows)
+
+
+def equipment_tables(n):
+    """Template:Data/Tools|Weapons|Armor/<type, slot or tier>, Data/Tools/Tiers and Data/Armor/Sets: the stat
+    comparisons on the Tools, Weapons, Armor and equipment family pages."""
+    def named(prefix, kind_type):
+        name = '%s %s' % (prefix, kind_type)
+        return name if name in ITEMS and item_type(ITEMS[name], effective(ITEMS[name])) in ('Tool', 'Weapon') else None
+    for types, kind, folder, head in ((TOOL_TYPES, 'tool', 'Tools', TOOL_HEAD), (WEAPON_TYPES, 'weapon', 'Weapons', WEAPON_HEAD)):
+        for t in types:
+            rows = [equipment_row(nm, kind) for nm in (named(p, t) for p, _ in EQUIPMENT_TIERS) if nm]
+            write('Template', 'Data/%s/%s' % (folder, t), equipment_table(head, rows)); n['equipment tables'] += 1
+        for p, _ in EQUIPMENT_TIERS:
+            rows = [equipment_row(nm, kind) for nm in (named(p, t) for t in types) if nm]
+            if rows:
+                write('Template', 'Data/%s/%s' % (folder, p), equipment_table(head, rows)); n['equipment tables'] += 1
+    write('Template', 'Data/Tools/Tiers', tiers_table())
+    sets = armor_sets()
+    for i, (slot, label) in enumerate(ARMOR_SLOTS):
+        rows = [equipment_row(pieces[i], 'armor') for pieces in sets.values()]
+        write('Template', 'Data/Armor/' + label, equipment_table(ARMOR_HEAD, rows)); n['equipment tables'] += 1
+    set_rows = []
+    for prefix, pieces in sets.items():
+        totals = [sum(x) for x in zip(*(equipment_cells(nm, 'armor')[1] for nm in pieces))]
+        write('Template', 'Data/Armor/' + prefix, equipment_table(ARMOR_HEAD, [equipment_row(nm, 'armor') for nm in pieces],
+              '\n|- class="sortbottom"\n! Full set !! !! %s !! %s !! %s !! colspan="2" |' % tuple(zero_dash(v) for v in totals)))
+        n['equipment tables'] += 1
+        # the notes column is hand-written: what the set is for, which the numbers don't say
+        set_rows.append('|-\n| %s || %s || %s || {{{%s|}}}' % (tier_link(prefix), zero_dash(totals[0]), zero_dash(totals[1]), prefix))
+    write('Template', 'Data/Armor/Sets', equipment_table('! Set !! Armor !! Toughness !! Notes', set_rows))
 
 
 ADV = DATA['advancements']
@@ -1180,45 +1786,605 @@ def adv_tab(aid):
     return p.split('/')[0]
 
 
+# Advancement-only icons: models or stacks that no item uses, so there is no icon file for them. The
+# table shows the item each one stands for instead.
+ADV_ICON_STANDINS = {'matcha:tutorial/cook_secret_food': 'Steamed Golden Carrots',   # model secret_ingredient
+                     'matcha:tutorial/cook_secret_meal': 'Golden Carrot Cupcake',    # model secret_meal
+                     'matcha:tutorial/preserve_everything': 'Pickled Carrots',       # model pickle_everything
+                     'matcha:tutorial/catch_everything': 'Carp',                     # model gay_fish
+                     'matcha:tutorial/smith_warding_shield': 'Warding Shield'}       # a shield with banner patterns
+# Reward functions in words. None: not a reward for the player (the root's setup is described in prose).
+ADV_FUNCTION_REWARDS = {'matcha:mechanics/heart_container/decrease_minimum_hearts': 'Minimum hearts −1',
+                        'matcha:mechanics/first_dragon_killed_reward': 'a {{ItemLink|Divine Favor}} and a safe [[surface]]',
+                        'matcha:setup/first_load': None}
+# Tabs (folders) in the order and under the section titles of the "Advancements" page; a new tab goes last.
+ADV_TAB_NAMES = {'tutorial': 'Tutorial', 'hell': 'Hell', 'end': 'The End', 'anglers_almanac': "Angler's Almanac"}
+
+
+_EXTRA_ICONS = None
+
+
+def extra_icon(name):
+    """Whether tools/images.py draws an icon for name from tools/extra_textures.txt (Elytra, End Portal
+    Frame...: vanilla items the pack doesn't define)."""
+    global _EXTRA_ICONS
+    if _EXTRA_ICONS is None:
+        path = os.path.join(ROOT, 'tools', 'extra_textures.txt')
+        lines = open(path, encoding='utf-8').read().splitlines() if os.path.exists(path) else []
+        _EXTRA_ICONS = {l.partition('=')[2].strip()[:-4] for l in lines if '=' in l and not l.startswith('#')}
+    return name in _EXTRA_ICONS
+
+
+def adv_icon(a):
+    icon = a.get('icon') or {}
+    name = ADV_ICON_STANDINS.get(a['id']) or icon.get('name', '')
+    if icon.get('model') and a['id'] not in ADV_ICON_STANDINS:  # icon drawn with a custom model: the item that owns it
+        name = next((k for k, it in ITEMS.items() if icon['model'] in it['models']), None) or name
+    return ('{{Slot|%s|link=none}}' % safe(name)) if name and (has_icon(name) or extra_icon(name)) else ''
+
+
+def adv_rewards(a):
+    """The reward cell: loot as "3 {{ItemLink|Obol}}", functions in words (ADV_FUNCTION_REWARDS)."""
+    rw = a.get('rewards') or {}
+    out = []
+    for lid in rw.get('loot') or []:
+        rows = flatten(lid)
+        if rows and all(p == 1.0 and cnt[0] == cnt[1] for _, p, cnt, *_ in rows):
+            out += ['%s %s' % (fmt_num(cnt[0]), il(it, var)) for it, _, cnt, _, _, _, var in rows]
+        else:
+            out.append('<code>%s</code>' % lid)  # a random reward: name the table
+    if rw.get('experience'):
+        out.append('%d XP' % rw['experience'])
+    if rw.get('recipes'):
+        out.append('%d recipe%s' % (len(rw['recipes']), '' if len(rw['recipes']) == 1 else 's'))
+    f = rw.get('function')
+    if f:
+        label = ADV_FUNCTION_REWARDS.get(f, 'runs <code>%s</code>' % f)
+        if label:
+            out.append(label)
+    return '; '.join(out)
+
+
+def adv_tree_order(advs):
+    """Depth-first through a tab's tree, so each branch stays together under its parent. Larger
+    branches (the main progression line) come first, ties by title."""
+    byid = {a['id']: a for a in advs}
+    kids = defaultdict(list)
+    for a in advs:
+        kids[a.get('parent') if a.get('parent') in byid else None].append(a)
+    size = {}
+
+    def count(a):
+        if a['id'] not in size:
+            size[a['id']] = 1 + sum(count(k) for k in kids[a['id']])
+        return size[a['id']]
+    out = []
+
+    def walk(parent):
+        for a in sorted(kids[parent], key=lambda a: (-count(a), a['title'])):
+            out.append(a)
+            walk(a['id'])
+    walk(None)
+    return out
+
+
 def advancement_tables():
+    """Data/Advancements/<tab>: one row per visible advancement, anchored by its title. What the code
+    can't say in words (the actual requirements) is a hand note the page passes by advancement ID."""
     tabs = defaultdict(list)
     for aid, a in ADV.items():
-        if 'title' not in a:
-            continue
-        tabs[adv_tab(aid)].append(a)
+        if 'title' in a:
+            tabs[adv_tab(aid)].append(a)
     pages = {}
     for tab, advs in tabs.items():
-        byid = {a['id']: a for a in advs}
-
-        def depth(a, d=0):
-            p = a.get('parent')
-            return depth(byid[p], d + 1) if p in byid and d < 50 else d
         rows = []
-        for a in sorted(advs, key=lambda a: (depth(a), a['title'])):
-            icon = a.get('icon') or {}
-            iname = safe(icon.get('name', '')) if icon else ''
-            if icon.get('model'):  # icon drawn with a custom model: find the item that owns it
-                owner = next((k for k, it in ITEMS.items() if icon['model'] in it['models']), None)
-                if owner:
-                    iname = safe(owner)
+        for a in adv_tree_order(advs):
             parent = ADV.get(a.get('parent') or '', {}).get('title', '')
-            frame = a.get('frame', 'task')
-            rw = a.get('rewards') or {}
-            rtxt = []
-            if rw.get('loot'):
-                rtxt.append(', '.join('<code>%s</code>' % l for l in rw['loot']))
-            if rw.get('experience'):
-                rtxt.append('%d XP' % rw['experience'])
-            if rw.get('recipes'):
-                rtxt.append('%d recipe(s)' % len(rw['recipes']))
-            if rw.get('function'):
-                rtxt.append('runs <code>%s</code>' % rw['function'])
-            rows.append('|-\n| %s || %s || %s || %s || %s || %s || %s' % (
-                ('{{Slot|%s|link=none}}' % iname) if iname and has_icon(icon.get('name', '')) else '',
-                "'''%s'''" % esc(glyphs(a['title'])), esc(glyphs(a['description']).replace('\n', ' ')), esc(parent), frame.title(),
-                'Yes' if a.get('hidden') else '', '; '.join(rtxt)))
-        pages[tab] = ('<includeonly>{| class="wikitable sortable"\n! Icon !! Advancement !! Description !! Parent !! Frame !! Hidden !! Reward\n' +
-                      '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+            kind = a.get('frame', 'task').title()
+            if not a.get('parent'):
+                kind += ' (root)'
+            elif a.get('hidden'):
+                kind += ' (hidden)'
+            desc = glyphs(esc(a['description'].replace('\n', ' '))).strip()
+            rows.append("|-\n| %s || <span id=\"%s\"></span>'''%s''' || %s || %s || {{{%s|}}} || %s || %s{{{%s reward|}}}" % (
+                adv_icon(a), html.escape(a['title']), glyphs(esc(a['title'])), desc or '—', esc(parent) or '—',
+                a['id'], kind, adv_rewards(a) or '—', a['id']))
+        pages[tab] = ('<includeonly>{| class="wikitable sortable"\n'
+                      '! Icon !! Advancement !! In-game description !! Parent !! Actual requirements !! Type !! Reward\n' +
+                      '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated from the advancement files. The actual '
+                      'requirements are notes passed by advancement ID, and "<ID> reward" is appended to the reward: '
+                      '<code><nowiki>{{Data/Advancements/%s|matcha:%s/root=...}}</nowiki></code>. '
+                      '[[Category:Generated data]]</noinclude>' % (tab, tab))
+    return pages
+
+
+# ------------------------------------------------------------------ stonecutter
+# The Stonecutter article lists every stonecutter recipe in groups: the pack's own, then the vanilla ones it keeps.
+# Wood types in the article's order; the first is shown expanded, the others collapsed (their sets are near copies).
+STONECUTTING_WOODS = ['Oak', 'Spruce', 'Birch', 'Jungle', 'Acacia', 'Dark Oak', 'Mangrove', 'Cherry', 'Pale Oak',
+                      'Crimson', 'Warped', 'Bamboo']
+STONECUTTING_GROUPS = ['Stone and other', 'Glass', 'Iron and steel', 'Copper', 'Any wood'] + STONECUTTING_WOODS
+STONECUTTING_TAG_LABELS = {'minecraft:logs': 'Any log, wood, stem or hyphae'}  # tags too broad to spell out
+
+
+def stonecutting_wood(name):
+    """The wood type a name belongs to, longest match first ("Dark Oak Planks" is Dark Oak, not Oak)."""
+    found = [w for w in STONECUTTING_WOODS if re.search(r'(^| )%s( |$)' % w, name)]
+    return max(found, key=len) if found else None
+
+
+def stonecutting_group(r):
+    out, ins = r['output']['name'], r['input']['names']
+    names = [out] + ins
+    if 'Glass' in out:
+        return 'Glass'
+    if any('Copper' in n for n in names) or 'Lightning Rod' in out:
+        return 'Copper'
+    if any('Iron' in n or 'Steel' in n for n in names):
+        return 'Iron and steel'
+    woods = {stonecutting_wood(n) for n in names} - {None}
+    if len(woods) == 1:
+        return woods.pop()
+    if woods:
+        return 'Any wood'  # an input tag covering every wood type (barrel, ladder)
+    return 'Stone and other'
+
+
+def stonecutting_rows(recipes):
+    """(group, input tag, [input names], output name, count, [recipe ids]). Recipes identical in input, output and count
+    (the pack has a few duplicate files) are one row; every duplicate's ID still takes a note."""
+    rows = {}
+    for r in recipes:
+        if r['id'].startswith('debug:'):
+            continue
+        ins = []
+        for n in r['input']['names']:
+            if n not in ins:
+                ins.append(n)
+        key = (tuple(ins), r['output']['name'], r['output'].get('count', 1))
+        rows.setdefault(key, (stonecutting_group(r), r.get('input', {}).get('tag'), []))[2].append(r['id'])
+    return [(g, tag, ins, out, cnt, sorted(ids)) for (ins, out, cnt), (g, tag, ids) in rows.items()]
+
+
+def stonecutting_tables(recipes, vanilla, exists):
+    """Level-4 sections, one table per group. Every row prints {{{<recipe id>|}}} after its output, so the
+    article can add a note to a recipe by its ID. exists(name) says whether the wiki has a page to link;
+    a name without one is a vanilla item the pack doesn't change, linked to minecraft.wiki."""
+    def link(n):
+        return '[[%s]]' % n if exists(n) else item_link(n)
+
+    def inputs(tag, ins):
+        if tag in STONECUTTING_TAG_LABELS:
+            return STONECUTTING_TAG_LABELS[tag]
+        return ' or '.join(link(n) for n in ins)
+    groups = defaultdict(list)
+    for g, tag, ins, out, cnt, ids in stonecutting_rows(recipes):
+        groups[g].append((ins[0], inputs(tag, ins), out, cnt, ids))
+    parts = []
+    for g in STONECUTTING_GROUPS + sorted(set(groups) - set(STONECUTTING_GROUPS)):
+        if g not in groups:
+            continue
+        collapsed = vanilla or (g in STONECUTTING_WOODS and g != STONECUTTING_WOODS[0])
+        lines = ['==== %s ====' % g, '{| class="wikitable sortable%s"' % (' mw-collapsible mw-collapsed' if collapsed else ''),
+                 '! Input !! Output !! Count']
+        for _, inp, out, cnt, ids in sorted(groups[g], key=lambda x: (
+                x[1] not in STONECUTTING_TAG_LABELS.values(), x[0], x[2], x[3], x[1])):  # by first input, then output
+            lines.append('|-\n| %s || %s%s || %d' % (inp, link(out), ''.join('{{{%s|}}}' % i for i in ids), cnt))
+        lines.append('|}')
+        parts.append('\n'.join(lines))
+    return ('<includeonly>' + '\n'.join(parts) + '</includeonly><noinclude>Every stonecutter recipe %s, grouped for the '
+            '[[Stonecutter]] article. A note for a recipe goes in a parameter named by its ID. Generated from the pack '
+            'source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>' % (
+                'kept from vanilla' if vanilla else 'the pack adds'))
+
+
+def stonecutting_counts():
+    """{{Data/Stonecutting/Count|pack}} and friends: the numbers and the duplicate list the article's prose states."""
+    pack = [r for r in ALL_RECIPES if r['station'] == 'Stonecutter' and not r['id'].startswith('debug:')]
+    rows = stonecutting_rows(pack)
+    dup = sorted(out for g, tag, ins, out, cnt, ids in rows if len(ids) > 1)
+    links = ['[[%s|%s]]' % (d, d.lower()) for d in dup]
+    dup_text = ' and '.join([', '.join(links[:-1]), links[-1]] if len(links) > 1 else links)
+    vals = {'pack': len(pack), 'vanilla': len([r for r in VANILLA_KEPT if r['station'] == 'Stonecutter']),
+            'listed': len(rows), 'duplicates': len(pack) - len(rows), 'duplicated': dup_text}
+    return ('<includeonly>{{#switch:{{{1|}}}%s}}</includeonly><noinclude>Stonecutter recipe counts for the [[Stonecutter]] '
+            'article: <code>pack</code> (recipes the pack adds), <code>vanilla</code> (vanilla recipes kept), '
+            '<code>listed</code> (rows in the pack\'s tables, duplicates merged), <code>duplicates</code> (recipes merged '
+            'away) and <code>duplicated</code> (the outputs with duplicate recipes, linked). Generated.\n'
+            '[[Category:Generated data]]</noinclude>' % ''.join('|%s=%s' % kv for kv in vals.items()))
+
+
+def advancement_tabs_table():
+    """Data/Advancements/tabs: the visible tabs with their roots and sizes. "Unlocked by" is a note
+    passed by the root's ID."""
+    rows = []
+    order = list(ADV_TAB_NAMES)
+    roots = [a for a in ADV.values() if 'title' in a and not a.get('parent')]
+    for root in sorted(roots, key=lambda a: (order.index(adv_tab(a['id'])) if adv_tab(a['id']) in order else len(order), a['id'])):
+        tab = adv_tab(root['id'])
+        members = [a for a in ADV.values() if 'title' in a and adv_tab(a['id']) == tab]  # the root counts, as in game
+        hidden = sum(1 for a in members if a.get('hidden'))
+        size = '%d%s' % (len(members), ' (all hidden)' if hidden and hidden == len(members) else
+                         ' (%d hidden)' % hidden if hidden else '')
+        name = ADV_TAB_NAMES.get(tab, tab.replace('_', ' ').capitalize())
+        bg = re.sub(r'_(bottom|top|side|front)$', '', (root.get('background') or '').split('/')[-1])
+        rows.append('|-\n| [[#%s|%s]] || %s %s || %s || {{{%s|}}} || %s' % (
+            name, name, adv_icon(root), esc(root['title']), id_name(bg) if bg else '—', root['id'], size))
+    return ('<includeonly>{| class="wikitable"\n! Tab !! Root !! Background !! Unlocked by !! Advancements\n' +
+            '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. "Unlocked by" is a note passed by the '
+            "root's ID. [[Category:Generated data]]</noinclude>")
+
+
+def technical_advancements_table():
+    """Data/Advancements/technical: advancements without a display (event triggers), counted by
+    folder. Each folder's purpose is a note passed by the folder's ID (matcha:recipe_unlocks)."""
+    groups = defaultdict(int)
+    for aid, a in ADV.items():
+        if 'title' not in a:
+            ns, p = aid.split(':')
+            groups[ns + ':' + p.split('/')[0]] += 1
+    rows = []
+    for g, n in sorted(groups.items(), key=lambda kv: (-kv[1], kv[0])):
+        rows.append('|-\n| <code>%s</code> || %d || {{{%s|}}}' % (g.split(':', 1)[1] if g.startswith('matcha:') else g, n, g))
+    total = sum(groups.values())
+    rows.append("|-\n| '''Total''' || '''%d''' || Of %d advancement files; the other %d are the visible advancements."
+                % (total, len(ADV), len(ADV) - total))
+    return ('<includeonly>{| class="wikitable"\n! Folder !! Files !! Purpose\n' + '\n'.join(rows) +
+            '\n|}</includeonly><noinclude>Generated. Each folder\'s purpose is a note passed by its ID '
+            '(<code>matcha:recipe_unlocks</code>). [[Category:Generated data]]</noinclude>')
+# Template:Data/Station/<station>: what a cooking station makes besides food (the articles describe the
+# food in prose around {{Recipes}} and the Cooking page).
+DYE_COLORS = ('Light Blue', 'Light Gray', 'White', 'Gray', 'Black', 'Brown', 'Red', 'Orange', 'Yellow', 'Lime',
+              'Green', 'Cyan', 'Blue', 'Purple', 'Magenta', 'Pink')  # two-word names first
+
+
+def uncolored(name):
+    """'Light Blue Glazed Terracotta' -> 'Glazed Terracotta'; None when the name starts with no dye color."""
+    for c in DYE_COLORS:
+        if name.startswith(c + ' '):
+            return name[len(c) + 1:]
+    return None
+
+
+def pct2(p):
+    """A share to two decimals, as the fishing tables give it: 84.85%, 10%, 3.57%."""
+    return ('%.2f' % (p * 100)).rstrip('0').rstrip('.') + '%' if p else '—'
+
+
+def input_cell(ing, most=4):
+    """A recipe input in a table cell: item links, a tag's name, or the first few names of a long list."""
+    if ing.get('tag') and len(set(ing['names'])) > 1:
+        return ing_links(ing)
+    names = list(dict.fromkeys(ing['names']))
+    if len(names) <= most:
+        return ' or '.join(il(n) for n in names)
+    rest = names[most - 1:]
+    return '%s and <span class="explain" title="%s">%d more</span>' % (
+        ', '.join(il(n) for n in names[:most - 1]), ', '.join(rest).replace('"', ''), len(rest))
+
+
+def station_table(station):
+    """Every recipe of one cooking station whose result isn't food, one row each (the row ID, for a hand note,
+    is the recipe ID). The same recipe for each dye color (glazed terracotta) collapses into one row."""
+    rs = []
+    for r in ALL_RECIPES + VANILLA_KEPT:
+        out = ITEMS.get(r['output']['name'])
+        if r['station'] != station or r['id'].startswith('debug:') or not r.get('input'):
+            continue
+        if out and item_type(out, effective(out)) == 'Food':
+            continue
+        rs.append(r)
+    if not rs:
+        return None
+    families = defaultdict(list)
+    for r in rs:
+        names = set(r['input']['names'])
+        base_in = uncolored(r['input']['names'][0]) if len(names) == 1 else None
+        base_out = uncolored(r['output']['name'])
+        key = (base_in, base_out, cook_ticks(r), r.get('experience'), r['origin'], r['output'].get('count', 1))
+        families[key if base_in and base_out else id(r)].append(r)
+    rows = []
+    for fam in families.values():
+        r = fam[0]
+        notes = ''.join('{{{%s|}}}' % x['id'] for x in fam)
+        if len(fam) >= 8:  # "Any dyed terracotta" -> "the matching glazed terracotta"
+            ins = [x['input']['names'][0] for x in fam]
+            outs = [x['output']['name'] for x in fam]
+            src = '<span class="explain" title="%s">Any dyed %s</span>' % (', '.join(ins), uncolored(ins[0]).lower())
+            res = '<span class="explain" title="%s">The matching %s</span>' % (', '.join(outs), uncolored(outs[0]).lower())
+            sort = uncolored(outs[0])
+        else:
+            src = input_cell(r['input'])
+            o = r['output']
+            res = ('%d × ' % o['count'] if o.get('count', 1) > 1 else '') + il(o['name'], o.get('variant'))
+            sort = o['name']
+        if r['origin'] != 'pack':
+            res += ' <small>(vanilla recipe)</small>'
+        t = cook_ticks(r)
+        rows.append((sort, src, '|-\n| %s || %s%s || data-sort-value="%d" | %s s || %s' % (
+            src, res, notes, t, fmt_num(t / 20), fmt_num(r.get('experience') or 0))))
+    rows.sort(key=lambda x: (x[0], x[1]))
+    return ('<includeonly>{| class="wikitable sortable"\n! Input !! Output !! Time !! Experience\n' +
+            '\n'.join(x[2] for x in rows) + '\n|}</includeonly><noinclude>Generated from the pack source by '
+            '<code>tools/generate.py</code>. Do not edit. Hand notes go after the output, keyed by recipe ID: '
+            '<code><nowiki>{{Data/Station/%s|%s=...}}</nowiki></code>.\n[[Category:Generated data]]</noinclude>' % (station, rs[0]['id']))
+
+
+# ------------------------------------------------------------------ splash texts
+def splash_key(text):
+    """A splash's key for a hand note on the Splash texts page: the text itself, minus the characters a
+    template parameter name can't hold."""
+    return re.sub(r'[=|{}\[\]<>]', '', text).strip()
+
+
+def splash_table():
+    """The title screen's splashes in file order (Template:Data/Splash texts). A note for a row is passed
+    under the splash's text: {{Data/Splash texts|Check out Waxmuffin!=...}}; notes= names the column."""
+    sp = DATA.get('splashes')
+    if not sp:
+        return None
+    rows = []
+    for i, line in enumerate(sp['lines'], 1):
+        text = re.sub('§.', '', line)  # formatting codes (vanilla's rainbow "Colormatic")
+        rows.append('|-\n| %d || <nowiki>%s</nowiki> || {{{%s|}}}' % (i, text, splash_key(text)))
+    return ('<includeonly>{| class="wikitable sortable"\n! # !! Splash !! {{{notes|Notes}}}\n' + '\n'.join(rows) +
+            '\n|}</includeonly><noinclude>Generated from <code>%s</code> by <code>tools/generate.py</code>. Do not edit.\n'
+            '[[Category:Generated data]]</noinclude>' % sp['src'])
+
+
+# ------------------------------------------------------------------ fishing odds (the Fishing article)
+# Each catch rolls minecraft:gameplay/fishing once. Its entries are junk, treasure (open water only) and, by
+# the biome at the bobber, that biome's own table; Luck of the Sea adds quality × level to each weight.
+FISHING = 'minecraft:gameplay/fishing'
+
+
+def fishing_kind(e):
+    """What a top-level fishing entry rolls: 'junk', 'treasure' or 'table' (a biome's own catch)."""
+    return {FISHING + '/junk': 'junk', FISHING + '/treasure': 'treasure'}.get(e.get('loot_table'), 'table')
+
+
+def open_water_only(e):
+    return 'in_open_water' in json.dumps(e.get('conditions') or [])
+
+
+def luck_weight(e, luck):
+    """An entry's weight at a luck level, as the game computes it: weight + quality × luck, rounded down, at least 0."""
+    return max(int(math.floor(e['weight'] + (e.get('quality') or 0) * luck)), 0)
+
+
+def fishing_entries():
+    ents = [e for e in LOOT[FISHING]['entries'] if not e.get('empty')]
+    for e in ents:
+        # the odds below know only these; anything else has to be taught to them, not skipped
+        other = [c.get('condition') for c in e.get('conditions') or []
+                 if c.get('condition', '').split(':')[-1] != 'location_check' and not open_water_only({'conditions': [c]})]
+        if other or e.get('pool') != 0 or e.get('rolls') != 1 or e.get('pool_conditions'):
+            raise SystemExit('generate.py: %s changed shape (%s); update the fishing odds' % (FISHING, other or 'pools'))
+    return ents
+
+
+def fishing_groups():
+    """Biomes grouped by which top-level fishing entries apply in them: [(biome ids, entries)]."""
+    ents = fishing_entries()
+    groups = defaultdict(list)
+    for b in sorted(BIOMES):
+        groups[tuple(i for i, e in enumerate(ents) if entry_biomes(e) is None or b in entry_biomes(e))].append(b)
+    return [(bs, [ents[i] for i in key]) for key, bs in groups.items()]
+
+
+def fishing_shapes():
+    """fishing_groups() merged where the odds are the same (every climate has junk 10, treasure 5, table 85):
+    [(biome ids, entries of one of them)], biomes with a table of their own first."""
+    shapes = {}
+    for bs, ents in fishing_groups():
+        k = tuple(sorted((fishing_kind(e), e['weight'], e.get('quality') or 0, open_water_only(e),
+                          entry_biomes(e) is not None) for e in ents))
+        shapes.setdefault(k, [[], ents])[0].extend(bs)
+    return sorted(shapes.values(), key=lambda s: (not any(fishing_kind(e) == 'table' for e in s[1]), -len(s[0])))
+
+
+def fishing_odds(entries, luck=0, open_water=True):
+    """The share of catches per kind ('junk', 'treasure', 'table') where these entries apply."""
+    w = defaultdict(int)
+    for e in entries:
+        if open_water or not open_water_only(e):
+            w[fishing_kind(e)] += luck_weight(e, luck)
+    total = sum(w.values()) or 1
+    return {k: w[k] / total for k in ('junk', 'treasure', 'table')}
+
+
+def raw_biomes(e):
+    for c in e.get('conditions') or []:
+        b = (c.get('predicate') or {}).get('biomes')
+        if b:
+            return [b] if isinstance(b, str) else b
+    return []
+
+
+def fishing_group_label(bs, ents):
+    names = sorted(BIOMES[b] for b in bs)
+    if len(bs) <= 3:
+        return ', '.join(names)
+    if any(fishing_kind(e) == 'table' for e in ents):
+        text = 'Biomes with a table of their own'
+    else:
+        text = 'Other biomes in ' + ', '.join('<code>%s</code>' % r for e in ents for r in raw_biomes(e))
+    return '<span class="explain" title="%s">%s</span> (%d)' % (', '.join(names), text, len(bs))
+
+
+def fishing_luck_table():
+    """Junk, treasure and the biome's table per Luck of the Sea level, in and out of open water, for each
+    group of biomes with the same odds (Template:Data/Fishing/Luck)."""
+    levels = (ENCH.get('minecraft:luck_of_the_sea') or {}).get('data', {}).get('max_level') or 3
+    rows = []
+    for bs, ents in fishing_shapes():
+        for luck in range(levels + 1):
+            o, c = fishing_odds(ents, luck), fishing_odds(ents, luck, open_water=False)
+            head = ('! rowspan="%d" | %s\n' % (levels + 1, fishing_group_label(bs, ents))) if luck == 0 else ''
+            rows.append('|-\n%s| %s || %s || %s || %s || %s || %s' % (
+                head, roman(luck) if luck else 'None', pct2(o['junk']), pct2(o['treasure']), pct2(o['table']),
+                pct2(c['junk']), pct2(c['table'])))
+    return ('<includeonly>{| class="wikitable"\n! rowspan="2" | Biomes !! rowspan="2" | Luck of the Sea !! '
+            'colspan="3" | Bobber in open water !! colspan="2" | Not in open water\n|-\n'
+            "! Junk !! Treasure !! Biome's table !! Junk !! Biome's table\n" + '\n'.join(rows) +
+            '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+
+
+def fishing_categories_table():
+    """The top-level fishing entries: weight, quality, condition and chance in a climate biome
+    (Template:Data/Fishing/Categories)."""
+    main = fishing_shapes()[0][1]
+    total = sum(e['weight'] for e in main)
+    rows = {}
+    for e in fishing_entries():
+        key = (fishing_kind(e), entry_biomes(e) is not None, e['weight'], e.get('quality') or 0, open_water_only(e))
+        rows.setdefault(key, []).append(e)
+    out = []
+    for (kind, gated, w, q, ow), es in rows.items():
+        label = {'junk': '[[Fishing junk|Junk]]', 'treasure': '[[Fishing treasure|Treasure]]',
+                 'table': "Fish (the biome's table)"}[kind] + (' (fallback)' if gated and kind == 'junk' else '')
+        conds = []
+        if ow:
+            conds.append('The bobber is in open water')
+        if gated and kind == 'table':
+            conds.append('The bobber is in a biome that has a table (%d entries)' % len(es))
+        elif gated:
+            conds.append('The bobber is in a biome of ' + ', '.join('<code>%s</code>' % r for x in es for r in raw_biomes(x)))
+        # in a climate biome only one table entry applies at a time
+        here = any(any(x is m for m in main) for x in es)
+        out.append('|-\n| %s || %d || %s || %s || %s' % (
+            label, w, ('+%d' % q) if q > 0 else str(q).replace('-', '−'), '; '.join(conds) or 'Always',
+            pct2(w / total) if here else '—'))
+    return ('<includeonly>{| class="wikitable"\n! Category !! Weight !! Quality !! Condition !! Chance with no luck<br />'
+            '<small>(in a biome with its own table)</small>\n' + '\n'.join(out) +
+            '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+
+
+def fish_stars(name):
+    """A fish's rarity line (⭐⭐☆☆) and its number of stars, from the first lore line; ('', 0) for other catches."""
+    lore = ((ITEMS.get(name) or {}).get('components') or {}).get('lore') or []
+    return (lore[0], lore[0].count('⭐')) if lore and '⭐' in lore[0] else ('', 0)
+
+
+def sells_for(name):
+    """What villagers pay for a caught item: "12 → 1 Obol (Apprentice)"."""
+    out = []
+    for prof, lk, t in TRADE_WANTS.get(name, []):
+        if t.get('additional_wants') or not t.get('gives') or t['wants']['name'] != name:
+            continue
+        out.append('%d → %d %s (%s%s)' % (t['wants'].get('count', 1), t['gives'].get('count', 1), il(t['gives']['name']),
+                                          LEVEL_NAMES.get(lk, lk), '' if prof == 'fisherman' else ', ' + PROF.get(prof, prof)))
+    return '<br />'.join(out) or '—'
+
+
+def fishing_tables():
+    """Each biome's own catch table: {table id: {'biomes': [...], 'climate': picked by a biome tag}}."""
+    out = {}
+    for e in fishing_entries():
+        if fishing_kind(e) != 'table':
+            continue
+        t = out.setdefault(e['loot_table'], {'biomes': [], 'climate': False})
+        t['biomes'] += [b for b in entry_biome_list(e) or [] if b not in t['biomes']]
+        t['climate'] |= any(r.startswith('#') for r in raw_biomes(e))
+    return out
+
+
+def table_chances(tid, open_water=True):
+    """The chances that a catch comes from table tid, over the biomes that roll it (one value for a climate)."""
+    vals = set()
+    for bs, ents in fishing_groups():
+        use = [e for e in ents if open_water or not open_water_only(e)]
+        mine = sum(e['weight'] for e in use if e.get('loot_table') == tid)
+        if mine:
+            vals.add(round(mine / sum(e['weight'] for e in use), 12))
+    return sorted(vals)
+
+
+def catch_rows(tid):
+    """(row id, item, count, variant, weight, share of the table) for each catch in a biome table."""
+    ents = [e for e in LOOT[tid]['entries'] if not e.get('empty')]
+    total = sum(e['weight'] for e in ents) or 1
+    rows = []
+    for e in ents:
+        if e.get('item'):
+            rows.append((e.get('id') or e['item'], e['item'], count_range(e.get('count')), e.get('variant'),
+                         e['weight'], e['weight'] / total))
+        elif isinstance(e.get('loot_table'), str):
+            for it, p2, cnt, _, _, _, var in flatten(e['loot_table']):
+                rows.append((e['loot_table'], it, cnt, var, e['weight'], e['weight'] / total * p2))
+    return rows
+
+
+def catch_table(tids, biome_column):
+    """A fish table: rarity, weight, share and chance per catch in and out of open water, and the price.
+    A hand note goes after the catch, keyed by the entry's loot table or item ID."""
+    # rowspans (the biome column) don't survive sorting
+    lines = ['{| class="wikitable%s"' % ('' if biome_column else ' sortable'),
+             '! %sFish !! Rarity !! Weight !! Share of table !! Per catch (open water) !! '
+             'Per catch (other water) !! Sells for' % ('Biome !! ' if biome_column else '')]
+    for tid in tids:
+        rows = catch_rows(tid)
+        chances = (table_chances(tid), table_chances(tid, open_water=False))
+        for i, (rid, it, cnt, var, w, share) in enumerate(rows):
+            line, stars = fish_stars(it)
+            n = ('%s–%s × ' % (fmt_num(cnt[0]), fmt_num(cnt[1]))) if cnt[0] != cnt[1] else (
+                '%s × ' % fmt_num(cnt[0]) if cnt[0] != 1 else '')
+            per = ['–'.join(pct2(share * v) for v in vals) or '—' for vals in chances]
+            head = ''
+            if biome_column and i == 0:
+                head = '! rowspan="%d" | %s\n' % (len(rows), ', '.join(BIOMES[b] for b in fishing_tables()[tid]['biomes']))
+            lines.append('|-\n%s| %s%s{{{%s|}}} || data-sort-value="%d" | %s || %d || %s || %s || %s || %s' % (
+                head, n, il(it, var), rid, stars, line or '—', w, pct2(share), per[0], per[1], sells_for(it)))
+    lines.append('|}')
+    return '\n'.join(lines)
+
+
+def fishing_rarity_table():
+    """How the climates' fish are laid out by rarity (Template:Data/Fishing/Rarity)."""
+    per = defaultdict(lambda: defaultdict(set))
+    climates = [tid for tid, t in fishing_tables().items() if t['climate']]
+    for tid in climates:
+        rows = catch_rows(tid)
+        total = sum(e['weight'] for e in LOOT[tid]['entries'] if not e.get('empty'))
+        count = defaultdict(int)
+        for rid, it, cnt, var, w, share in rows:
+            line, stars = fish_stars(it)
+            if not stars:
+                continue
+            count[stars] += 1
+            d = per[stars]
+            d['line'].add(line)
+            d['weight'].add('%d of %d' % (w, total))
+            d['chance'].update(pct2(share * v) for v in table_chances(tid))
+            for prof, lk, t in TRADE_WANTS.get(it, []):
+                if t.get('gives') and not t.get('additional_wants'):
+                    d['price'].add(str(t['wants'].get('count', 1)))
+                    d['level'].add(LEVEL_NAMES.get(lk, lk))
+        for s, c in count.items():
+            per[s]['count'].add(str(c))
+    out = []
+    for s in sorted(per):
+        d = per[s]
+        out.append('|-\n| %s || %s || %s || %s || %s || %s' % tuple(
+            ', '.join(sorted(d[k])) or '—' for k in ('line', 'count', 'weight', 'chance', 'price', 'level')))
+    return ('<includeonly>{| class="wikitable"\n! Rarity !! Fish per climate !! Weight each !! Chance per catch (each fish) !! '
+            'Fish needed for 1 Obol !! Fisherman level\n' + '\n'.join(out) +
+            '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+
+
+def fishing_pages():
+    """Template:Data/Fishing/...: the odds tables of the Fishing article."""
+    pages = {'Categories': fishing_categories_table(), 'Luck': fishing_luck_table(), 'Rarity': fishing_rarity_table()}
+    tables = fishing_tables()
+    for tid, t in tables.items():
+        if t['climate']:
+            pages[tid.split('/')[-1]] = ("<includeonly>'''Biomes:''' %s.\n%s</includeonly><noinclude>Generated from "
+                                         "<code>%s</code>. [[Category:Generated data]]</noinclude>" % (
+                                             ', '.join(BIOMES[b] for b in t['biomes']), catch_table([tid], False), tid))
+    special = [tid for tid, t in tables.items() if not t['climate']]
+    if special:
+        pages['Special biomes'] = ('<includeonly>%s</includeonly><noinclude>Generated. [[Category:Generated data]]'
+                                   '</noinclude>' % catch_table(special, True))
     return pages
 
 
@@ -1287,6 +2453,312 @@ def stub_article(name, item):
 
 NUMBER_WORDS = {1: 'a', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}
 
+# ---- vanilla items whose only changes follow a pack-wide rule: grouped on family pages (families())
+# (key, section heading, table columns); the order is the page's order, and an item's redirect
+# goes to its first row
+NEW_WAY_RULES = [
+    ('stonecutter', 'Stonecutter', 'Cut from'),
+    ('slabs', 'Two slabs back into a block', 'From'),
+    ('wool', 'Wool and carpet', 'From'),
+    ('water', 'With a water bottle', 'From'),
+    ('plants', 'Duplicating plants', 'From'),
+    ('saplings', 'Saplings from leaves', 'From'),
+    ('banners', 'Banners', 'From'),
+    ('cooking', 'Cooking stations', 'From'),
+    ('trades', 'Villager trades', 'Sold by'),
+]
+COOKING_STATIONS = {'Mud Kiln', 'Oven', 'Blast Furnace', 'Kindling'}
+
+
+def ingredient_tally(r):
+    """{first name of each ingredient: count} for a recipe."""
+    t = r['type'].split(':')[-1]
+    tally = defaultdict(int)
+    if t == 'crafting_shaped':
+        for row in r['pattern']:
+            for ch in row:
+                if ch != ' ':
+                    tally[r['key'][ch]['names'][0]] += 1
+    elif t == 'crafting_shapeless':
+        for g in r['ingredients']:
+            tally[g['names'][0]] += 1
+    return tally
+
+
+def new_way_rule(name, r):
+    """The pack-wide rule a pack recipe for an unrenamed vanilla item follows, or None for a one-off."""
+    station = r.get('station')
+    if station == 'Stonecutter':
+        return 'stonecutter'
+    if station in COOKING_STATIONS:
+        return 'cooking'
+    if station != 'Crafting Table':
+        return None
+    tally = ingredient_tally(r)
+    ings = set(tally)
+    if len(ings) == 1 and list(tally.values()) == [2] and next(iter(ings)).endswith(' Slab'):
+        return 'slabs'
+    if name.endswith((' Wool', ' Carpet')) and len(ings) == 1 and next(iter(ings)).endswith((' Wool', ' Carpet')):
+        return 'wool'
+    if 'Potion' in ings:
+        return 'plants' if 'Bone Meal' in ings else 'water'
+    if len(ings) == 1 and next(iter(ings)).endswith(' Leaves'):
+        return 'saplings'
+    if name.endswith(' Banner') and ings == {n for n in ings if n.endswith(' Wool')} | {'Stick'}:
+        return 'banners'
+    return None
+
+
+def new_way_rules(name):
+    """The rules behind every pack change to an unrenamed vanilla item, or None if any is a one-off."""
+    rules = set()
+    for r in producing(name):
+        if r['origin'] == 'pack':
+            rule = new_way_rule(name, r)
+            if not rule:
+                return None
+            rules.add(rule)
+    if TRADE_GIVES.get(name):
+        rules.add('trades')
+    return rules or None
+
+
+FOLDED = None
+
+
+def folded():
+    """Unrenamed vanilla items whose changes all follow a pack-wide rule: {name: first rule}."""
+    global FOLDED
+    if FOLDED is None:
+        FOLDED = {}
+        order = [k for k, _, _ in NEW_WAY_RULES]
+        for name, it in ITEMS.items():
+            if (not it['renamed_vanilla'] or it['vanilla_name'] != name or not is_pack_relevant(name, it)
+                    or hand_exists('Main', safe(name)) or group_redirect(name)):
+                continue
+            rules = new_way_rules(name)
+            if rules:
+                FOLDED[name] = min(rules, key=order.index)
+    return FOLDED
+
+
+# ---- family pages, as minecraft.wiki groups variants ("Fence Gate" covers every wood's fence gate)
+WOODS = ['Polished Blackstone', 'Stone', 'Dark Oak', 'Pale Oak', 'Oak', 'Spruce', 'Birch', 'Jungle', 'Acacia', 'Mangrove', 'Cherry', 'Bamboo', 'Crimson', 'Warped']
+COLORS = ['Light Blue', 'Light Gray', 'White', 'Orange', 'Magenta', 'Yellow', 'Lime', 'Pink', 'Gray', 'Cyan', 'Purple',
+          'Blue', 'Brown', 'Green', 'Red', 'Black']
+COPPER_STATES = ['Exposed', 'Weathered', 'Oxidized']
+# minecraft.wiki's page for each family (after the wood, colour or copper-state prefix is removed)
+FAMILY_TITLES = {
+    'Fence Gate', 'Fence', 'Door', 'Trapdoor', 'Button', 'Pressure Plate', 'Sign', 'Hanging Sign', 'Shelf', 'Slab',
+    'Stairs', 'Planks', 'Log', 'Wood', 'Wool', 'Carpet', 'Concrete', 'Banner', 'Sapling', 'Glazed Terracotta',
+    'Stained Glass Pane', 'Block of Copper', 'Cut Copper', 'Chiseled Copper', 'Copper Bars', 'Copper Door',
+    'Copper Trapdoor', 'Copper Grate', 'Copper Bulb', 'Lightning Rod', 'Copper Golem Statue', 'Cut Copper Slab',
+    'Cut Copper Stairs', 'Copper Chain', 'Copper Lantern', 'Pottery Sherd', 'Flower'}
+FAMILY_ALIASES = {'Stem': 'Log', 'Hyphae': 'Wood', 'Copper': 'Block of Copper'}
+FAMILY_HOME = {'Banner': 'Banners'}
+COPPER_FAMILIES = {t for t in FAMILY_TITLES if 'Copper' in t or t == 'Lightning Rod'}  # families whose hand-written page takes the table (Template:Data/Family/<family>)
+SMALL_FLOWERS = None
+
+
+def family_of(name):
+    """minecraft.wiki's family page for a vanilla item, or None."""
+    global SMALL_FLOWERS
+    if SMALL_FLOWERS is None:
+        SMALL_FLOWERS = set(vanilla_tag('#minecraft:small_flowers'))
+    if (ITEMS.get(name) or {}).get('base_id') in SMALL_FLOWERS:
+        return 'Flower'
+    if name.endswith(' Pottery Sherd'):
+        return 'Pottery Sherd'
+    rest = name
+    if rest.startswith('Waxed '):
+        rest = rest[len('Waxed '):]
+    for prefixes in (COPPER_STATES, ['Stripped'], WOODS, COLORS):
+        for pre in prefixes:
+            if rest.startswith(pre + ' '):
+                rest = rest[len(pre) + 1:]
+                break
+    rest = FAMILY_ALIASES.get(rest, rest)
+    if rest in FAMILY_TITLES and (rest != name or rest in COPPER_FAMILIES):
+        return rest  # a copper family's page is its unoxidized block's own title (minecraft.wiki's "Copper Door")
+    return None
+
+
+FAMILIES = None
+
+
+def families():
+    """{family: [members]} for the folded items, where a family has at least two of them."""
+    global FAMILIES
+    if FAMILIES is None:
+        groups = defaultdict(list)
+        for name in folded():
+            f = family_of(name)
+            if f:
+                groups[f].append(name)
+        FAMILIES = {f: sorted(ms, key=variant_order) for f, ms in groups.items() if len(ms) >= 2}
+    return FAMILIES
+
+
+# the game's own order for variants (creative inventory), as minecraft.wiki lists them
+WOOD_ORDER = ['Oak', 'Spruce', 'Birch', 'Jungle', 'Acacia', 'Dark Oak', 'Mangrove', 'Cherry', 'Pale Oak', 'Bamboo',
+              'Crimson', 'Warped', 'Stone', 'Polished Blackstone']
+COLOR_ORDER = ['White', 'Light Gray', 'Gray', 'Black', 'Brown', 'Red', 'Orange', 'Yellow', 'Lime', 'Green', 'Cyan',
+               'Light Blue', 'Blue', 'Purple', 'Magenta', 'Pink']
+
+
+def variant_order(name):
+    waxed = name.startswith('Waxed ')
+    rest = name[len('Waxed '):] if waxed else name
+    state = next((i + 1 for i, st in enumerate(COPPER_STATES) if rest.startswith(st + ' ')), 0)
+    rest = rest.split(' ', 1)[1] if state else rest
+    stripped = rest.startswith('Stripped ')
+    rest = rest[len('Stripped '):] if stripped else rest
+    kind = next((i for i, w in sorted(enumerate(WOOD_ORDER), key=lambda iw: -len(iw[1])) if rest.startswith(w + ' ')), None)
+    if kind is None:
+        kind = next((i for i, c in sorted(enumerate(COLOR_ORDER), key=lambda ic: -len(ic[1])) if rest.startswith(c + ' ')), 99)
+    return (waxed, state, kind, stripped, name)
+
+
+def family_page_of(name):
+    """(page title, family) that an item redirects to, or None for an item that keeps its own page."""
+    for f, ms in families().items():
+        if name in ms:
+            return FAMILY_HOME.get(f, f), f
+    return None
+
+
+SLOT_ARGS = {'A1', 'B1', 'C1', 'A2', 'B2', 'C2', 'A3', 'B3', 'C3', 'Input', 'Output', 'Template', 'Base', 'Addition'}
+
+
+def merged_ui(recipes):
+    """One recipe screen whose slots cycle through the members' recipes ("matching planks"), or ''."""
+    parsed = []
+    for r in recipes:
+        m = re.fullmatch(r'\{\{(\w+)\|(.*)\}\}', recipe_ui(r), re.S)
+        if not m:
+            return ''
+        parsed.append((m.group(1), dict(a.split('=', 1) for a in m.group(2).split('|'))))
+    name, first = parsed[0]
+    if any(n != name or set(a) != set(first) or any(a[k] != first[k] for k in a if k not in SLOT_ARGS) for n, a in parsed):
+        return ''
+    merged = {k: (';'.join(a[k] for _, a in parsed) if k in SLOT_ARGS else v) for k, v in first.items()}
+    return '{{%s|%s}}' % (name, '|'.join('%s=%s' % kv for kv in merged.items()))
+
+
+FAMILY_SECTIONS = [  # (heading, rules)
+    ('Stonecutting', {'stonecutter'}),
+    ('Crafting', {'slabs', 'wool', 'water', 'plants', 'saplings', 'banners'}),
+    ('Cooking', {'cooking'}),
+    ('Trading', {'trades'}),
+]
+
+
+def family_obtaining(family):
+    """Template:Data/Family/<family>: the pack's ways to get every member, a section per method, each with
+    one cycling recipe screen and a row per member (a member's first row carries its redirect's anchor)."""
+    members = families()[family]
+    out, anchored = [], set()
+    for heading, rules in FAMILY_SECTIONS:
+        rows, firsts = [], []
+        for name in members:
+            rs = [r for r in producing(name) if r['origin'] == 'pack' and new_way_rule(name, r) in rules]
+            trades = sorted({p for p, _, _ in TRADE_GIVES.get(name, [])}) if 'trades' in rules else []
+            if not rs and not trades:
+                continue
+            anchor = '' if name in anchored else '<span id="%s"></span>' % esc(safe(name))
+            anchored.add(name)
+            cell = '%s{{ItemLink|%s|mcw=%s}}' % (anchor, safe(name), mcw_title(name))
+            if trades:
+                rows.append('|-\n| %s || %s' % (cell, ', '.join('[[%s]]' % t.replace('_', ' ').title() for t in trades)))
+                continue
+            firsts.append(rs[0])
+            how = '<br />'.join('%s%s → %d' % (recipe_ingredients(r).replace(' +<br />', ' + '),
+                                               (' <small>(%s)</small>' % link_station(r['station'])) if heading == 'Cooking' else '',
+                                               r['output'].get('count', 1)) for r in rs)
+            rows.append('|-\n| %s || %s' % (cell, how))
+        if not rows:
+            continue
+        out.append('=== %s ===' % heading)
+        ui = merged_ui(firsts) if len(firsts) > 1 else (recipe_ui(firsts[0]) if firsts else '')
+        if ui:
+            out.append(ui)
+        out.append('{| class="wikitable sortable"\n! Item !! %s\n%s\n|}' % ('Sold by' if heading == 'Trading' else 'Recipe',
+                                                                           '\n'.join(rows)))
+    return ('<includeonly>%s</includeonly><noinclude>Generated: the ways Matcha Flavoured adds to get each %s. '
+            '[[Category:Generated data]]</noinclude>' % ('\n'.join(out), family.lower()))
+
+
+MASS_FAMILIES = {'Wool', 'Concrete', 'Glazed Terracotta', 'Cut Copper', 'Chiseled Copper', 'Wood'}
+PLURAL_FAMILIES = {'Planks', 'Stairs', 'Copper Bars'}
+
+
+def family_page(family):
+    """A family's own page, laid out like minecraft.wiki's: an infobox cycling through the members, the lead,
+    Obtaining (Template:Data/Family/<family>) and the members' IDs."""
+    members = families()[family]
+    icons = [m for m in members if has_icon(m)]
+    t = item_type(ITEMS[members[0]], effective(ITEMS[members[0]]))
+    stacks = {effective(ITEMS[m]).get('max_stack_size', 64) for m in members}
+    stackable = ('Yes (%d)' % next(iter(stacks)) if next(iter(stacks)) > 1 else 'No') if len(stacks) == 1 else 'Varies'
+    stations, profs = set(), set()
+    for m in members:
+        stations |= {r['station'] for r in producing(m) if r['origin'] == 'pack'}
+        profs |= {p for p, _, _ in TRADE_GIVES.get(m, [])}
+    adds = ['[[%s]] recipes' % st for st in sorted(stations)] + ['[[%s]] trades' % p.replace('_', ' ').title() for p in sorted(profs)]
+    adds = adds[0] if len(adds) == 1 else ', '.join(adds[:-1]) + ' and ' + adds[-1]
+    # minecraft.wiki's lead sentence: "A fence gate is a block", "Wool is a block", "Planks are blocks"
+    kind = 'block' if t == 'Block' else 'item'
+    a_kind = ('a ' if kind == 'block' else 'an ') + kind
+    sentence = family[0] + family[1:].lower()
+    if family in MASS_FAMILIES:
+        subject = "'''%s''' is %s" % (sentence, a_kind)
+    elif family in PLURAL_FAMILIES:
+        subject = "'''%s''' are %ss" % (sentence, kind)
+    else:
+        low = sentence[0].lower() + sentence[1:]
+        subject = "%s '''%s''' is %s" % ('An' if low[0] in 'aeiou' else 'A', low, a_kind)
+    lead = ("%s from vanilla ''Minecraft''. [[Matcha Flavoured]] adds %s for the %d variants below, and otherwise "
+            "leaves them as in vanilla. See {{MCW|%s}} for everything else.") % (subject, adds, len(members), family)
+    ids = '\n'.join('|-\n| {{ItemLink|%s|mcw=%s}} || <code>%s</code>' % (safe(m), mcw_title(m), ITEMS[m]['base_id']) for m in members)
+    return '\n'.join([
+        '{{Vanilla|%s}}' % family,
+        '{{Family infobox|%s|title=%s|type=%s|stackable=%s}}' % (';'.join(safe(m) for m in icons), family, t, stackable),
+        lead, '', '== Obtaining ==', '{{Data/Family/%s}}' % family, '',
+        '== Data values ==', '=== ID ===', '{| class="wikitable sortable"\n! Name !! Resource location\n%s\n|}' % ids, '',
+        '[[Category:%s]]' % {'Block': 'Blocks'}.get(t, 'Items')])
+
+
+def link_station(station):
+    return '[[%s]]' % station
+
+
+VANILLA_MADE = None
+
+
+def vanilla_recipe_ids():
+    """Item ids that vanilla Minecraft has a recipe for."""
+    global VANILLA_MADE
+    if VANILLA_MADE is None:
+        VANILLA_MADE = set()
+        d = os.path.join(ROOT, 'source', 'vanilla-data', 'data', 'minecraft', 'recipe')
+        for f in os.listdir(d) if os.path.isdir(d) else []:
+            try:
+                res = json.load(open(os.path.join(d, f))).get('result')
+            except (ValueError, OSError):
+                continue
+            rid = res if isinstance(res, str) else (res or {}).get('id')
+            if rid:
+                VANILLA_MADE.add(rid)
+    return VANILLA_MADE
+
+
+def replaces_vanilla_recipe(name):
+    """True when vanilla has a recipe for the item but the pack removed or overrode all of them."""
+    it = ITEMS.get(name) or {}
+    return (it.get('base_id') in vanilla_recipe_ids()
+            and not any(r['origin'] == 'vanilla' for r in producing(name))
+            and any(r['origin'] == 'pack' for r in producing(name)))
+
 
 def pack_additions(name):
     """What the pack adds for an unrenamed vanilla item, for its page's lead: "adds a Stonecutter recipe
@@ -1305,7 +2777,7 @@ def pack_additions(name):
         if len(rs) == 1:
             ings = recipe_ingredients(rs[0])
             if ings and ings.count('[[') + ings.count('{{') <= 2:
-                what += ' (from %s)' % re.sub(r'>Any ', '>any ', ings)
+                what += ' (from %s)' % re.sub(r'>Any ', '>any ', ings).replace(' +<br />', ' + ')
         parts.append(what)
     profs = sorted({prof for prof, _, _ in TRADE_GIVES.get(name, [])})
     if profs:
@@ -1313,7 +2785,12 @@ def pack_additions(name):
                      ' and '.join('[[%s]]' % p.replace('_', ' ').title() for p in profs) + ' trades')
     if not parts:
         return 'keeps it unchanged'
-    return 'adds %s' % (parts[0] if len(parts) == 1 else ', '.join(parts[:-1]) + ' and ' + parts[-1])
+    join = lambda ps: ps[0] if len(ps) == 1 else ', '.join(ps[:-1]) + ' and ' + ps[-1]
+    if replaces_vanilla_recipe(name):
+        recipes, trades = parts[:len(by_station)], parts[len(by_station):]
+        said = 'replaces its vanilla recipe with %s' % join(recipes)
+        return said + (' and adds %s' % join(trades) if trades else '')
+    return 'adds %s' % join(parts)
 
 
 def finish_stub(name, item, t, body):
@@ -1351,7 +2828,7 @@ def effect_sources():
             key = eid.split(':')[-1]
             intrinsic = eid.startswith('matcha:') and any(key.startswith(k) for k, _ in INTRINSIC_PAGES)
             # intrinsics have glyph-only names and no page of their own: link them like the infobox does
-            src[effect_name(m.group(1))].append(('Intrinsic' if intrinsic else 'Enchantment', intrinsic_text(eid, 1) if intrinsic else '[[%s]]' % ench_name(eid),
+            src[effect_name(m.group(1))].append(('Intrinsic' if intrinsic else 'Enchantment', intrinsic_text(eid) if intrinsic else '[[%s]]' % ench_name(eid),
                                                  None, 'while active', 10 ** 9, 1))
     return src
 
@@ -1497,6 +2974,270 @@ def tooltip_data():
     return '\n'.join(out)
 
 
+# ------------------------------------------------------------------ difficulty tables and equipment timers
+# From the pack's functions (extract.py: mob_modifications, equipment_timers). Tables take hand-written
+# notes keyed by row ID, printed after the row's label: {{Data/Difficulty/Zombie|max_health/baby=...}}.
+MOBMOD = DATA['mob_modifications']
+DIFFICULTIES = ('easy', 'normal', 'hard')
+ATTRIBUTE_ORDER = ['max_health', 'movement_speed', 'attack_damage', 'armor', 'follow_range', 'knockback_resistance',
+                   'step_height', 'jump_strength', 'fall_damage_multiplier', 'movement_efficiency',
+                   'water_movement_efficiency']
+ATTRIBUTE_LABELS = {'fall_damage_multiplier': 'Fall damage'}
+NOTE = '{{{%s|}}}'  # a hand-written note for the row with this ID
+
+
+def exact_num(x):
+    return '%g' % x  # fmt_num rounds to 2 places; attributes such as 0.265 need all of theirs
+
+
+def lang_name(kind, rid):
+    key = '%s.%s' % (kind, rid.replace(':', '.'))
+    return LANG.get(key) or VANILLA_LANG.get(key) or rid.split(':')[-1].replace('_', ' ').title()
+
+
+_EFFECT_PAGES = None
+
+
+def effect_ref(eid):
+    """An effect with a page here (hand-written, or generated by effect_pages) links to it, others to minecraft.wiki."""
+    global _EFFECT_PAGES
+    if _EFFECT_PAGES is None:
+        _EFFECT_PAGES = set(effect_sources())
+    name = effect_name(eid)
+    return '{{EffectLink|%s}}' % name if name in _EFFECT_PAGES or hand_exists('Main', name) else '{{MCW|%s}}' % name
+
+
+def mob_link(eid, lower=False):
+    name = lang_name('entity', eid)
+    text = name[0] + name[1:].lower() if not lower else name.lower()
+    if hand_exists('Main', name):
+        return '[[%s]]' % name if text == name else '[[%s|%s]]' % (name, text)
+    return '{{MCW|%s|%s}}' % (name, text)
+
+
+def mod_cells(change):
+    """(row id, sort key, label, value) for each table row one modify_<mob> command fills."""
+    k = change['kind']
+    if k == 'attribute':
+        a = change['attribute'].split(':')[-1]
+        v = change['value']
+        if a == 'max_health':
+            text = '{{Hp|%s}}' % exact_num(v)
+        elif a == 'fall_damage_multiplier':
+            text = 'none' if v == 0 else '×' + exact_num(v)
+        else:
+            text = exact_num(v)
+        order = ATTRIBUTE_ORDER.index(a) if a in ATTRIBUTE_ORDER else len(ATTRIBUTE_ORDER)
+        return [(a, (0, order, a), ATTRIBUTE_LABELS.get(a, a.replace('_', ' ').capitalize()), text)]
+    if k == 'mainhand':
+        item = lang_name('item', change['item'])
+        ench = ', '.join('%s %s' % (lang_name('enchantment', e), roman(l)) for e, l in change['enchantments'].items())
+        return [('mainhand', (1, 0, ''), item, ench or 'no enchantments'),
+                ('mainhand/drop', (1, 1, ''), item + ' drop chance', '%g%%' % (change['drop_chance'] * 100))]
+    if k == 'effect':
+        e = change['effect'].split(':')[-1]
+        s = change['seconds']
+        return [('effect/' + e, (2, 0, e), effect_ref(change['effect']),
+                 '%s (%s)' % (roman(change['amplifier'] + 1), 'infinite' if s is None else ticks(s * 20)))]
+    if k == 'drop_chances' and change['target'] == 'self':
+        return [('drop/' + slot, (1, 2, slot), 'Drop chance (%s)' % slot, '%g%%' % (p * 100))
+                for slot, p in change['drop_chances'].items()]
+    return []  # 'health' only fills the raised max health; drop chances aimed at another mob aren't this mob's
+
+
+def mob_rule_matches(rule, entity, baby):
+    def test(pid):
+        p = MOBMOD['predicates'][pid]
+        return ('entities' not in p or entity in p['entities']) and ('baby' not in p or p['baby'] == baby)
+    return all(test(p) for p in rule['if']) and not any(test(p) for p in rule['unless'])
+
+
+def mod_rows(functions_by_difficulty):
+    """{row id: [sort, label, {difficulty: value}]} from the functions each difficulty runs, in order."""
+    rows = {}
+    for d, fids in functions_by_difficulty.items():
+        for fid in fids:
+            for c in MOBMOD['functions'][fid]['changes']:
+                for rid, sort, label, value in mod_cells(c):
+                    row = rows.setdefault(rid, [sort, {}, {}])
+                    row[1][d] = label
+                    row[2][d] = value
+    out = {}
+    for rid, (sort, labels, values) in rows.items():
+        # an item that is the same on every difficulty names the row; otherwise each cell names its item
+        if len(set(labels.values())) > 1:
+            if rid == 'mainhand':
+                values = {d: '%s (%s)' % (labels[d], v) for d, v in values.items()}
+            label = 'Main hand' if rid == 'mainhand' else 'Main hand drop chance'
+        else:
+            label = next(iter(labels.values()))
+        out[rid] = [sort, label, values]
+    return out
+
+
+def mod_row(rid, label, values, id_suffix=''):
+    vanilla = 'none' if rid.startswith('effect/') else 'vanilla'
+    return '|-\n! %s%s\n| %s' % (label, NOTE % (rid + id_suffix), ' || '.join(values.get(d, vanilla) for d in DIFFICULTIES))
+
+
+def mob_ages(entity):
+    """{False: adult rows, True: baby rows} for one mob (see mod_rows)."""
+    return {baby: mod_rows({d: [r['function'] for r in MOBMOD['difficulties'].get(d, {}).get('rules', [])
+                                if mob_rule_matches(r, entity, baby)] for d in DIFFICULTIES})
+            for baby in (False, True)}
+
+
+def mob_difficulty_table(entity):
+    """Template:Data/Difficulty/<Mob>: what each difficulty changes on one mob, adults and babies apart
+    when the pack treats them differently."""
+    per_age = mob_ages(entity)
+    if not per_age[False] and not per_age[True]:
+        return None
+    ages = [(False, '', '')] if per_age[False] == per_age[True] else [(False, ' (adult)', ''), (True, ' (baby)', '/baby')]
+    rows = sorted((sort, baby, rid, label + label_suffix, values, id_suffix)
+                  for baby, label_suffix, id_suffix in ages for rid, (sort, label, values) in per_age[baby].items())
+    lines = ['{| class="wikitable"', '! Attribute !! Easy !! Normal !! Hard']
+    lines += [mod_row(rid, label, values, id_suffix) for _, _, rid, label, values, id_suffix in rows]
+    lines.append('|}')
+    return '<includeonly>' + '\n'.join(lines) + '</includeonly><noinclude>Generated from the pack\'s spawn functions ' \
+        '(<code>mechanics/spawn_mechanic</code>). A note for a row goes in a parameter named by the row ID. ' \
+        '[[Category:Generated data]]</noinclude>'
+
+
+def mob_difficulty_infobox(entity):
+    """Template:Data/Difficulty/<Mob>/Infobox: one attribute across the difficulties in a line, for the
+    mob's infobox: {{Data/Difficulty/Zombie/Infobox|max_health}} → "Easy: vanilla<br />Normal: ..."."""
+    per_age = mob_ages(entity)
+    split = per_age[False] != per_age[True]
+
+    def by_value(values):
+        groups = {}
+        for d in DIFFICULTIES:
+            groups.setdefault(values.get(d, 'vanilla'), []).append(d.capitalize())
+        return groups
+
+    cases = []
+    for a in ATTRIBUTE_ORDER:
+        adult, baby = per_age[False].get(a), per_age[True].get(a)
+        if not adult and not (split and baby):
+            cases.append('%s=Vanilla' % a)
+            continue
+        if adult:
+            text = '<br />'.join('%s: %s' % (', '.join(ds), v) for v, ds in by_value(adult[2]).items())
+        else:
+            text = 'Adult: vanilla'
+        if split and baby:
+            text += '<br />Baby: ' + ', '.join('%s (%s)' % (v, ', '.join(ds)) for v, ds in by_value(baby[2]).items())
+        cases.append('%s=%s' % (a, text))
+    return ('<includeonly>{{#switch:{{{1|}}}|%s|#default=<strong class="error">No attribute "{{{1|}}}" (one of: %s)'
+            '</strong>}}</includeonly><noinclude>Generated from the pack\'s spawn functions. [[Category:Generated data]]'
+            '</noinclude>' % ('|'.join(cases), ', '.join(ATTRIBUTE_ORDER)))
+
+
+def mob_rule_group(rule):
+    """(group ID, label) for the mobs a check_type rule applies to."""
+    entities = list(MOBMOD['checked_entities'])
+    baby = None
+    names = []
+    for pid in rule['if']:
+        p = MOBMOD['predicates'][pid]
+        if 'entities' in p:
+            entities = [e for e in p['entities'] if e in entities]
+            names.append(pid.split('/')[-1].replace('is_', ''))
+        if 'baby' in p:
+            baby = p['baby']
+    for pid in rule['unless']:
+        p = MOBMOD['predicates'][pid]
+        if 'entities' in p:
+            entities = [e for e in entities if e not in p['entities']]
+            names.append('not_' + pid.split('/')[-1].replace('is_', ''))
+        if 'baby' in p:
+            baby = not p['baby']
+    gid = '_'.join(names) + {None: '', True: '/baby', False: '/adult'}[baby]
+    links = [mob_link(e, lower=(i > 0 or baby is True)) for i, e in enumerate(entities)]
+    label = links[0] if len(links) == 1 else ', '.join(links[:-1]) + ' and ' + links[-1]
+    if baby is True:
+        label = 'Baby ' + label
+    elif baby is False:
+        label += ' (adult)'
+    return gid, label
+
+
+def difficulty_overview():
+    """Template:Data/Difficulty: every group of mobs a difficulty changes, as the check_type functions
+    name them, with each difficulty's values."""
+    groups = {}
+    for d in reversed(DIFFICULTIES):  # Hard lists the most groups: its order leads
+        for rule in MOBMOD['difficulties'].get(d, {}).get('rules', []):
+            if not any(mod_cells(c) for c in MOBMOD['functions'][rule['function']]['changes']):
+                continue  # only changes another mob (clear_drop_chances)
+            gid, label = mob_rule_group(rule)
+            g = groups.setdefault(gid, [label, {x: [] for x in DIFFICULTIES}])
+            g[1][d].append(rule['function'])
+    lines = ['{| class="wikitable"', '! Mob !! Attribute !! Easy !! Normal !! Hard']
+    for gid, (label, fids) in groups.items():
+        rows = sorted(mod_rows(fids).items(), key=lambda kv: kv[1][0])
+        span = ' rowspan="%d" |' % len(rows) if len(rows) > 1 else ''
+        for i, (rid, (sort, rlabel, values)) in enumerate(rows):
+            vanilla = 'none' if rid.startswith('effect/') else 'vanilla'
+            head = ('!%s %s%s\n' % (span, label, NOTE % gid)) if i == 0 else ''
+            lines.append('|-\n%s| %s || %s' % (head, rlabel, ' || '.join(values.get(d, vanilla) for d in DIFFICULTIES)))
+    lines.append('|}')
+    return '<includeonly>' + '\n'.join(lines) + '</includeonly><noinclude>Generated from the pack\'s spawn functions ' \
+        '(<code>mechanics/spawn_mechanic</code>): one group per line of the difficulty\'s <code>check_type</code> ' \
+        'function. A note for a group goes in a parameter named by its ID. [[Category:Generated data]]</noinclude>'
+
+
+TIMERS = DATA['equipment_timers']
+EXTRA_HP_PER_LEVEL = {'absorption': 4, 'health_boost': 4}  # vanilla: each level adds 4 health (2 hearts)
+
+
+def seconds_text(s):
+    return '%s second%s' % (exact_num(s), '' if s == 1 else 's')
+
+
+def timer_effect_prose(t):
+    e = t['effect'].split(':')[-1]
+    extra = EXTRA_HP_PER_LEVEL.get(e)
+    hearts = ' (%s extra heart%s)' % (exact_num(extra * (t['amplifier'] + 1) / 2), '' if extra * (t['amplifier'] + 1) == 2 else 's') if extra else ''
+    return '%s %s%s for %s every %s' % (effect_name(e), roman(t['amplifier'] + 1), hearts, seconds_text(t['seconds']),
+                                        seconds_text(t['every']))
+
+
+def equipment_timer_templates():
+    """Template:Data/Set bonus/<score>: the effect each score value gets and how often, one table per
+    equipment score. Template:Data/Set bonus: the same in running text, for prose:
+    {{Data/Set bonus|adamant_armour=4}} → "Absorption I (2 extra hearts) for 31 seconds every 30 seconds";
+    show=lasts or show=every gives just that number of seconds."""
+    by_score = defaultdict(list)
+    for t in TIMERS['effects']:
+        by_score[t['score']].append(t)
+    pages = {}
+    inline = []
+    for score in sorted(by_score):
+        rows = ['{| class="wikitable"', '! Count !! Effect !! Lasts !! Every']
+        cases = []
+        for t in sorted(by_score[score], key=lambda t: t['value']):
+            rows.append('|-\n| %d%s || %s %s || %s s || %s s' % (
+                t['value'], NOTE % t['value'], effect_ref(t['effect']), roman(t['amplifier'] + 1),
+                exact_num(t['seconds']), exact_num(t['every'])))
+            cases.append('%d={{#switch:{{{show|}}}|lasts=%s|every=%s|%s}}' % (
+                t['value'], exact_num(t['seconds']), exact_num(t['every']), timer_effect_prose(t)))
+        rows.append('|}')
+        pages['Data/Set bonus/' + score] = ('<includeonly>' + '\n'.join(rows) + '</includeonly><noinclude>Generated from '
+                                            'the pack\'s timer functions: the effect a player with this '
+                                            '<code>%s</code> score gets, and how often. A note for a row goes in a '
+                                            'parameter named by its count. [[Category:Generated data]]</noinclude>' % score)
+        inline.append('{{#if:{{{%s|}}}|{{#switch:{{{%s}}}|%s|#default=<strong class="error">No timer effect for '
+                      '%s={{{%s}}}</strong>}}}}' % (score, score, '|'.join(cases), score, score))
+    pages['Data/Set bonus'] = ('<includeonly>' + ''.join(inline) + '</includeonly><noinclude>Generated from the pack\'s '
+                               'timer functions. <code><nowiki>{{Data/Set bonus|adamant_armour=4}}</nowiki></code> '
+                               'describes the effect a player with that score gets; <code>show=lasts</code> or '
+                               '<code>show=every</code> gives just the seconds. Scores: %s. '
+                               '[[Category:Generated data]]</noinclude>' % ', '.join(sorted(by_score)))
+    return pages
+
+
 # ------------------------------------------------------------------ main
 def main():
     if os.path.isdir(GEN):
@@ -1521,6 +3262,11 @@ def main():
         if is_pack_relevant(name, item) and not hand_exists('Main', title):
             if group_redirect(name):
                 write('Main', title, group_redirect(name)); n['group redirects'] += 1
+            elif family_page_of(name) and family_page_of(name)[0] == title:
+                pass  # the family page has this item's own title and is written with the families
+            elif family_page_of(name):
+                write('Main', title, '#REDIRECT [[%s#%s]]\n[[Category:Redirects to lists]]' % (family_page_of(name)[0], title))
+                n['family redirects'] += 1
             else:
                 write('Main', title, stub_article(name, item)); n['stubs'] += 1
     # ingredients that only ever appear inside recipes (never as an item stack) still get a Uses table
@@ -1559,9 +3305,33 @@ def main():
     write('Template', 'Data/Food table', food_table())
     write('Template', 'Data/Renamed items', renamed_table())
     write('Template', 'Data/Trim templates', trim_templates_table())
-    write('Template', 'Data/Enchantments', enchantment_table())
+    for title, text in list(enchantment_tables().items()) + list(book_tables().items()) + list(intrinsic_item_tables().items()):
+        write('Template', title, text)
+    equipment_tables(n)
+    cooking = ('smelting', 'smoking', 'blasting', 'campfire_cooking')
+    for station in sorted({r['station'] for r in ALL_RECIPES if r['type'].split(':')[-1] in cooking}):
+        p = station_table(station)
+        if p:
+            write('Template', 'Data/Station/' + station, p); n['station tables'] += 1
+    p = splash_table()
+    if p:
+        write('Template', 'Data/Splash texts', p)
+        write('Template', 'Data/Splash texts/Count', '<includeonly>%d</includeonly><noinclude>Number of splash texts '
+              'in the resource pack. Generated.</noinclude>' % len(DATA['splashes']['lines']))
+    for k, page in fishing_pages().items():
+        write('Template', 'Data/Fishing/' + k, page); n['fishing tables'] += 1
+    write('Template', 'Data/Difficulty', difficulty_overview())
+    for entity in MOBMOD['checked_entities']:
+        p = mob_difficulty_table(entity)
+        if p:
+            write('Template', 'Data/Difficulty/' + lang_name('entity', entity), p); n['difficulty tables'] += 1
+            write('Template', 'Data/Difficulty/%s/Infobox' % lang_name('entity', entity), mob_difficulty_infobox(entity))
+    for title, page in equipment_timer_templates().items():
+        write('Template', title, page); n['set bonus templates'] += 1
     for tab, page in advancement_tables().items():
         write('Template', 'Data/Advancements/' + tab, page); n['advancement tabs'] += 1
+    write('Template', 'Data/Advancements/tabs', advancement_tabs_table())
+    write('Template', 'Data/Advancements/technical', technical_advancements_table())
     m = DATA['meta']
     ver = re.search(r'(\d+(?:\.\d+)+)', m['pack_description'].replace('Matcha Flavoured DP', ''))
     write('Template', 'Data/Current version', '<includeonly>%s</includeonly><noinclude>Pack version in <code>pack.mcmeta</code> at the synced commit. Generated.</noinclude>' % (ver.group(1) if ver else '?'))
@@ -1573,6 +3343,10 @@ def main():
     lua.append('}\nreturn aliases')
     write('Module', 'Inventory slot/Aliases', '\n'.join(lua))
     write('Module', 'Tooltip/Data', tooltip_data())
+    for family in sorted(families()):
+        write('Template', 'Data/Family/' + family, family_obtaining(family)); n['family tables'] += 1
+        if family not in FAMILY_HOME and not hand_exists('Main', family):
+            write('Main', family, family_page(family)); n['family pages'] += 1
     # vanilla items without a page here: their inventory slots link to minecraft.wiki (Module:Inventory slot)
     offsite = {}
     for name in list(ITEMS) + list(USES):
@@ -1602,6 +3376,14 @@ def main():
             n['variant redirects'] += 1
     effect_pages(n)
     category_pages(n)  # (capitalisation redirects are synthesised by build_xml.collect, not written as files)
+    # after every article and redirect is written, so the tables link exactly the names that have a page
+    titles = {f[:-5].replace('%2F', '/') for d in (os.path.join(GEN, 'Main'), os.path.join(HAND, 'Main'))
+              for f in os.listdir(d) if f.endswith('.wiki')}
+    write('Template', 'Data/Stonecutting/Pack', stonecutting_tables(
+        [r for r in ALL_RECIPES if r['station'] == 'Stonecutter'], False, titles.__contains__))
+    write('Template', 'Data/Stonecutting/Vanilla', stonecutting_tables(
+        [r for r in VANILLA_KEPT if r['station'] == 'Stonecutter'], True, titles.__contains__))
+    write('Template', 'Data/Stonecutting/Count', stonecutting_counts())
     # swap in the new tree in one step so concurrent readers never see a half-written folder
     old = GEN_FINAL + '.old'
     if os.path.isdir(old):

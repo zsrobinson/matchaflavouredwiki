@@ -9,51 +9,19 @@ In the video the developer describes steel as "processed iron that can make iron
 == Notes ==
 * The 1.10 notes warn against wearing steel in the [[Abbey]]: "Blast resistance makes the dungeon boring."
 * Steel pickaxes and dolabras have no obsidian restriction and mine obsidian with drops.
+* In 1.12.2 steel armor is invisible when worn: its equipment asset is <code>minecraft:steel</code>, while the resource pack defines the texture as <code>matcha:steel</code>.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_chestplate.json}}</ref><ref>{{Source|MF_resourcepack/assets/matcha/equipment/steel.json}}</ref>
+* In 1.12.2 the steel pickaxe and steel shovel show the game's real attribute lines in their tooltips next to the hand-written ones; the other steel tools hide them.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_pickaxe.json}}</ref>
 
 == Stats ==
 === Tools ===
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Steel Pickaxe}} || 3000 || 8 || — || 3 || 1.2 || —
-|-
-| {{ItemLink|Steel Axe}} || 3000 || 8 || — || 10 || 0.7 || —
-|-
-| {{ItemLink|Steel Shovel}} || 3000 || 8 || — || 3.5 || 1 || —
-|-
-| {{ItemLink|Steel Hoe}} || 3000 || 8 || — || 1 || 2 || —
-|-
-| {{ItemLink|Steel Mattock}} || 3000 || 7 || — || 1 || 2 || —
-|-
-| {{ItemLink|Steel Dolabra}} || 3000 || 7 || — || 6 || 0.9 || —
-|}
+{{Data/Tools/Steel}}
 
 === Weapons ===
-{| class="wikitable sortable"
-! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
-|-
-| {{ItemLink|Steel Sword}} || 3000 || 6 || 1.4 || +1 || —
-|-
-| {{ItemLink|Steel Spear}} || 3000 || 4 || 0.9 || +1 || —
-|-
-| {{ItemLink|Steel Claymore}} || 1500 || 8 || 0.7 || +2 || —
-|}
+{{Data/Weapons/Steel}}
 
 === Armor ===
 [[File:Steel armor render.png|thumb|120px|A full set of steel armor]]
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Steel Helmet}} || 1000 || 2 || 1 || 0.1 || — || [[Blast Protection]] II
-|-
-| {{ItemLink|Steel Chestplate}} || 1000 || 7 || 1 || 0.2 || — || [[Blast Protection]] IV
-|-
-| {{ItemLink|Steel Leggings}} || 1000 || 5 || 1 || 0.1 || — || [[Blast Protection]] III
-|-
-| {{ItemLink|Steel Boots}} || 1000 || 2 || 1 || 0.1 || — || [[Blast Protection]] II
-|- class="sortbottom"
-! Full set !! !! 16 !! 4 !! 0.5 !! colspan="2" |
-|}
+{{Data/Armor/Steel}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 
@@ -66,6 +34,7 @@ Values are the item's real attributes; where the hand-written tooltip differs, t
 {{History line|1.10|The steel chestplate's armor was raised from 6 to 7 and its toughness lowered from 2 to 1, to match the rest of the set.}}
 {{History line|1.12.1-alpha|Added the steel claymore. Smithing steel shears now grants the "Sturdy Steel" advancement.}}
 {{History line|1.12.2|Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+{{History line|Upcoming|2=Steel armor shows on the wearer again, with its equipment asset corrected to <code>matcha:steel</code>.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_chestplate.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> The steel pickaxe and shovel hide their real attribute lines like the other steel tools.}}
 }}
 
 == References ==

@@ -1,0 +1,13 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Chainmail Helmet}}{{{Chainmail Helmet|}}} || 300 || 2 || — || — || — || [[Thorns]] III
+|-
+| {{ItemLink|Chainmail Chestplate}}{{{Chainmail Chestplate|}}} || 300 || 6 || — || — || — || [[Thorns]] III
+|-
+| {{ItemLink|Chainmail Leggings}}{{{Chainmail Leggings|}}} || 300 || 5 || — || — || — || [[Thorns]] III
+|-
+| {{ItemLink|Chainmail Boots}}{{{Chainmail Boots|}}} || 300 || 2 || — || — || — || [[Thorns]] III
+|- class="sortbottom"
+! Full set !! !! 15 !! — !! — !! colspan="2" |
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

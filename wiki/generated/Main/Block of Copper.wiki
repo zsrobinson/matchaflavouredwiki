@@ -1,12 +1,22 @@
-{{Vanilla}}
-{{Infobox auto}}
-'''Block of Copper''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds a [[Blast Furnace]] recipe (from {{MCW|Block of Raw Copper}}). See {{MCW|Block of Copper}} for everything else.
+{{Vanilla|Block of Copper}}
+{{Family infobox|Block of Copper;Exposed Copper;Weathered Copper;Oxidized Copper|title=Block of Copper|type=Block|stackable=Yes (64)}}
+A '''block of copper''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Blast Furnace]] recipes and [[Crafting Table]] recipes for the 4 variants below, and otherwise leaves them as in vanilla. See {{MCW|Block of Copper}} for everything else.
 
 == Obtaining ==
-{{Recipes}}
-{{Sources}}
+{{Data/Family/Block of Copper}}
 
-== Usage ==
-{{Uses}}
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Block of Copper|mcw=Block of Copper}} || <code>minecraft:copper_block</code>
+|-
+| {{ItemLink|Exposed Copper|mcw=Exposed Copper}} || <code>minecraft:exposed_copper</code>
+|-
+| {{ItemLink|Weathered Copper|mcw=Weathered Copper}} || <code>minecraft:weathered_copper</code>
+|-
+| {{ItemLink|Oxidized Copper|mcw=Oxidized Copper}} || <code>minecraft:oxidized_copper</code>
+|}
 
 [[Category:Blocks]]

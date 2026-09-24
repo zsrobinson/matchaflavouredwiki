@@ -1,5 +1,10 @@
 {{Vanilla|Banner}}
+{{Family infobox|White Banner;Light Gray Banner;Gray Banner;Black Banner;Brown Banner;Red Banner;Orange Banner;Yellow Banner;Lime Banner;Green Banner;Cyan Banner;Light Blue Banner;Blue Banner;Purple Banner;Magenta Banner;Pink Banner|title=Banners|type=Block|stackable=Yes (16)}}
 '''Banners''' work as in vanilla ''Minecraft''. [[Matcha Flavoured]] adds ten '''pride banner patterns''' that can be applied in a loom without a banner pattern item, and makes the Globe banner pattern craftable.
+
+== Obtaining ==
+Six wool and a stick make six banners instead of one; the pack blocks the vanilla recipes and adds its own.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/white_banner.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+{{Data/Family/Banner}}
 
 == Pride patterns ==
 The pack adds ten banner patterns in the <code>matcha</code> namespace. All of them are in the <code>#minecraft:no_item_required</code> tag, so they appear in the loom like the basic vanilla patterns.<ref>{{Source|MF_datapack/data/minecraft/tags/banner_pattern/no_item_required.json}}</ref> The tag adds to the vanilla list rather than replacing it, so the vanilla patterns stay available.

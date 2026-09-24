@@ -11,46 +11,14 @@ The video describes hepatizon as "a gold-silver-copper alloy that has high base 
 
 == Stats ==
 === Tools ===
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Hepatizon Pickaxe}} || 1000 || 20 || 3 (no drops) || 4.5 || 1.2 || —
-|-
-| {{ItemLink|Hepatizon Axe}} || 1000 || 20 || — || 9 || 1.1 || —
-|-
-| {{ItemLink|Hepatizon Shovel}} || 1000 || 20 || — || 5 || 1 || —
-|-
-| {{ItemLink|Hepatizon Hoe}} || 1000 || 20 || — || 1 || 4 || —
-|-
-| {{ItemLink|Hepatizon Mattock}} || 1000 || 15 || — || 3 || 3 || —
-|-
-| {{ItemLink|Hepatizon Dolabra}} || 1000 || 15 || — || 7 || 1 || —
-|}
+{{Data/Tools/Hepatizon}}
 
 === Weapons ===
-{| class="wikitable sortable"
-! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
-|-
-| {{ItemLink|Hepatizon Sword}} || 1000 || 6 || 1.9 || — || [[Riposte]] II
-|-
-| {{ItemLink|Hepatizon Spear}} || 1000 || 3 || 1.18 || — || [[Lunge]] III
-|}
+{{Data/Weapons/Hepatizon}}
 
 === Armor ===
 [[File:Hepatizon armor render.png|thumb|120px|A full set of hepatizon armor]]
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Hepatizon Helmet}} || 500 || 3 || — || — || Speed +0.01 || —
-|-
-| {{ItemLink|Hepatizon Chestplate}} || 500 || 8 || — || — || Speed +0.01 || —
-|-
-| {{ItemLink|Hepatizon Leggings}} || 500 || 6 || — || — || Speed +0.01 || —
-|-
-| {{ItemLink|Hepatizon Boots}} || 500 || 3 || — || — || Speed +0.01 || —
-|- class="sortbottom"
-! Full set !! !! 20 !! 0 !! 0 !! colspan="2" |
-|}
+{{Data/Armor/Hepatizon}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 

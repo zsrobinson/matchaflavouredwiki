@@ -33,7 +33,7 @@ jobs:
       - name: SEO regression tests
         run: |
           python3 -m unittest discover -s tests -v
-          node --test tests/worker.test.mjs
+          node --test tests/worker.test.mjs tests/search.test.mjs
       - name: Fetch sources (pack at pinned commit, vanilla data)
         run: tools/fetch_sources.sh
       - name: Generated pages are committed and current
@@ -41,6 +41,8 @@ jobs:
           python3 tools/extract.py
           python3 tools/generate.py
           git diff --stat --exit-code wiki/generated || (echo "::error::wiki/generated is out of date: run tools/generate.py and commit" && exit 1)
+      - name: Hand-written pages match the pack (items, data templates, source citations)
+        run: python3 tools/lint_pages.py
       - name: Renders are current
         # wiki/renders/ is drawn by tools/render.py (headless WebGL) and committed, so CI doesn't draw
         # it. A pack update makes every render out of date: redraw and commit when you next can.

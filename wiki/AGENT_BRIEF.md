@@ -2,7 +2,7 @@
 
 You are writing part of the Matcha Flavoured Wiki: a MediaWiki encyclopedia for the
 Matcha Flavoured datapack, meant to become the go-to reference for the pack at the quality
-of minecraft.wiki. The repository root is `/Users/zsrobinson/code/matcha-wiki`.
+of minecraft.wiki. Run every command from the repository root.
 
 ## Read first
 1. `wiki/STYLE.md`: language, page structure and templates. Follow it exactly. Matching
@@ -19,8 +19,8 @@ of minecraft.wiki. The repository root is `/Users/zsrobinson/code/matcha-wiki`.
   holds the names and descriptions. `changelog.md` covers the in-development changes, and
   `README.md` and `my_current_and_future_plans.md` hold the developer's notes.
 - `source/changelogs/*.md`: official release notes for every version (from Modrinth).
-- `source/vanilla-data`, `source/vanilla-summary`, `source/vanilla-assets`: vanilla 26.2,
-  used only to say what the pack changed.
+- `source/vanilla-data`, `source/vanilla-summary`, `source/vanilla-assets`: vanilla data for the
+  Minecraft version in `tools/mc_version.txt`, used only to say what the pack changed.
 - `build/data.json`: everything already extracted from the source. `python3 tools/query.py`
   searches it. Examples: `tools/query.py item "Steel Pickaxe"`, `tools/query.py search curry`,
   `tools/query.py loot minecraft:entities/zombie`, `tools/query.py ench matcha:warding_1`,
@@ -59,6 +59,9 @@ determine something from the source, leave it out. Don't guess.
   every error. Red links are fine only for titles in `wiki/PAGES.md`.
 - `tools/screenshot.sh "Title" /tmp/x.png 1400 1800` renders a page to PNG. Look at a
   few important pages to check layout.
+- Without a local wiki (the autopilot's cloud session), run `python3 tools/lint_pages.py` instead: it
+  catches data templates naming items that don't exist and `{{Source|...}}` paths that don't. The PR's
+  Check workflow renders everything.
 - Don't run `tools/build.sh` or `tools/sync.sh` and don't commit. The coordinator does that.
 
 ## Final report

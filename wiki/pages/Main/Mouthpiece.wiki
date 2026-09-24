@@ -21,25 +21,13 @@ At Novice level the mouthpiece exchanges [[Paradise Lost]] or [[The Divine Comed
 
 === Ofuda ===
 The Apprentice, Journeyman and Expert trades turn a sacred text and one or two crystal hearts into an Ofuda, an enchanted book that carries a named prayer:<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/2/tanakh.json}}</ref>
-{| class="wikitable"
-! Level !! Sacred text !! Crystal hearts !! Prayer !! Enchantments
-|-
-| Apprentice || [[The Avesta]] || 1 || Prayer of The God-King || Efficiency II, Unbreaking I
-|-
-| Apprentice || [[The Quran]] || 1 || Prayer of The Prophet || Protection II
-|-
-| Apprentice || [[The Tanakh]] || 1 || Prayer of Exodus || Loyalty III, [[Trailblaze]] III, Power II
-|-
-| Journeyman || [[The Book of Enoch]] || 1 || Prayer of Samyaza || Sharpness III
-|-
-| Expert || [[The Lesser Key of Solomon]] || 2 || Prayer of Belial || Mending
-|}
+{{Data/Ofuda}}
 The Ofuda is applied to equipment with an [[anvil]], like a vanilla enchanted book; see [[Ofuda]].
 
 === Divine Fragment ===
 At Master level the mouthpiece turns 2 crystal hearts and an echo shard into a [[Divine Fragment]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/5/crystal_heart.json}}</ref> The developer added this as a trade because divine fragments cannot be crafted directly.<ref>{{Cite changelog|1.12.1-alpha|quote=Divine Fragments can be bought from the Mouthpiece with a Crystal Heart and Echo Shard (Can't be done by crafting since they're poison potatoes)}}</ref>
 
-Like every villager, a mouthpiece that has been traded with also buys its [[favorite food]] once.
+Like every villager, a mouthpiece that has been traded with will also buy its [[favorite food]] once, an upcoming trade that is not in [[Matcha Flavoured 1.12.2|1.12.2-beta]].
 
 == History ==
 {{History|

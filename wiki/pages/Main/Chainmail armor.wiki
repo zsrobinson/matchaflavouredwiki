@@ -7,19 +7,7 @@ Each piece uses the vanilla armor shape with iron chains. It is repaired with ir
 == Stats ==
 === Armor ===
 [[File:Chainmail armor render.png|thumb|120px|A full set of chainmail armor]]
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Chainmail Helmet}} || 300 || 2 || — || — || — || [[Thorns]] III
-|-
-| {{ItemLink|Chainmail Chestplate}} || 300 || 6 || — || — || — || [[Thorns]] III
-|-
-| {{ItemLink|Chainmail Leggings}} || 300 || 5 || — || — || — || [[Thorns]] III
-|-
-| {{ItemLink|Chainmail Boots}} || 300 || 2 || — || — || — || [[Thorns]] III
-|- class="sortbottom"
-! Full set !! !! 15 !! 0 !! 0 !! colspan="2" |
-|}
+{{Data/Armor/Chainmail}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 

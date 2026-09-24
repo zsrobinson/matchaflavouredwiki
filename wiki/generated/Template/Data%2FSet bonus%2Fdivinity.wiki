@@ -1,0 +1,11 @@
+<includeonly>{| class="wikitable"
+! Count !! Effect !! Lasts !! Every
+|-
+| 1{{{1|}}} || {{EffectLink|Health Boost}} I || 1 s || 0.5 s
+|-
+| 2{{{2|}}} || {{EffectLink|Health Boost}} II || 1 s || 0.5 s
+|-
+| 3{{{3|}}} || {{EffectLink|Health Boost}} III || 1 s || 0.5 s
+|-
+| 4{{{4|}}} || {{EffectLink|Health Boost}} IV || 1 s || 0.5 s
+|}</includeonly><noinclude>Generated from the pack's timer functions: the effect a player with this <code>divinity</code> score gets, and how often. A note for a row goes in a parameter named by its count. [[Category:Generated data]]</noinclude>

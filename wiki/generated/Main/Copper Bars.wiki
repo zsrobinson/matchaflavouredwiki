@@ -1,12 +1,30 @@
-{{Vanilla}}
-{{Infobox auto}}
-'''Copper Bars''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds two [[Stonecutter]] recipes. See {{MCW|Copper Bars}} for everything else.
+{{Vanilla|Copper Bars}}
+{{Family infobox|Copper Bars;Exposed Copper Bars;Weathered Copper Bars;Oxidized Copper Bars;Waxed Copper Bars;Waxed Exposed Copper Bars;Waxed Weathered Copper Bars;Waxed Oxidized Copper Bars|title=Copper Bars|type=Block|stackable=Yes (64)}}
+'''Copper bars''' are blocks from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Crafting Table]] recipes and [[Stonecutter]] recipes for the 8 variants below, and otherwise leaves them as in vanilla. See {{MCW|Copper Bars}} for everything else.
 
 == Obtaining ==
-{{Recipes}}
-{{Sources}}
+{{Data/Family/Copper Bars}}
 
-== Usage ==
-{{Uses}}
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Copper Bars|mcw=Copper Bars}} || <code>minecraft:copper_bars</code>
+|-
+| {{ItemLink|Exposed Copper Bars|mcw=Exposed Copper Bars}} || <code>minecraft:exposed_copper_bars</code>
+|-
+| {{ItemLink|Weathered Copper Bars|mcw=Weathered Copper Bars}} || <code>minecraft:weathered_copper_bars</code>
+|-
+| {{ItemLink|Oxidized Copper Bars|mcw=Oxidized Copper Bars}} || <code>minecraft:oxidized_copper_bars</code>
+|-
+| {{ItemLink|Waxed Copper Bars|mcw=Waxed Copper Bars}} || <code>minecraft:waxed_copper_bars</code>
+|-
+| {{ItemLink|Waxed Exposed Copper Bars|mcw=Waxed Exposed Copper Bars}} || <code>minecraft:waxed_exposed_copper_bars</code>
+|-
+| {{ItemLink|Waxed Weathered Copper Bars|mcw=Waxed Weathered Copper Bars}} || <code>minecraft:waxed_weathered_copper_bars</code>
+|-
+| {{ItemLink|Waxed Oxidized Copper Bars|mcw=Waxed Oxidized Copper Bars}} || <code>minecraft:waxed_oxidized_copper_bars</code>
+|}
 
 [[Category:Blocks]]

@@ -1,12 +1,30 @@
-{{Vanilla}}
-{{Infobox auto}}
-'''Copper Door''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds a [[Stonecutter]] recipe (from [[Block of Copper]]). See {{MCW|Copper Door}} for everything else.
+{{Vanilla|Copper Door}}
+{{Family infobox|Copper Door;Exposed Copper Door;Weathered Copper Door;Oxidized Copper Door;Waxed Copper Door;Waxed Exposed Copper Door;Waxed Weathered Copper Door;Waxed Oxidized Copper Door|title=Copper Door|type=Block|stackable=Yes (64)}}
+A '''copper door''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Crafting Table]] recipes and [[Stonecutter]] recipes for the 8 variants below, and otherwise leaves them as in vanilla. See {{MCW|Copper Door}} for everything else.
 
 == Obtaining ==
-{{Recipes}}
-{{Sources}}
+{{Data/Family/Copper Door}}
 
-== Usage ==
-{{Uses}}
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Copper Door|mcw=Copper Door}} || <code>minecraft:copper_door</code>
+|-
+| {{ItemLink|Exposed Copper Door|mcw=Exposed Copper Door}} || <code>minecraft:exposed_copper_door</code>
+|-
+| {{ItemLink|Weathered Copper Door|mcw=Weathered Copper Door}} || <code>minecraft:weathered_copper_door</code>
+|-
+| {{ItemLink|Oxidized Copper Door|mcw=Oxidized Copper Door}} || <code>minecraft:oxidized_copper_door</code>
+|-
+| {{ItemLink|Waxed Copper Door|mcw=Waxed Copper Door}} || <code>minecraft:waxed_copper_door</code>
+|-
+| {{ItemLink|Waxed Exposed Copper Door|mcw=Waxed Exposed Copper Door}} || <code>minecraft:waxed_exposed_copper_door</code>
+|-
+| {{ItemLink|Waxed Weathered Copper Door|mcw=Waxed Weathered Copper Door}} || <code>minecraft:waxed_weathered_copper_door</code>
+|-
+| {{ItemLink|Waxed Oxidized Copper Door|mcw=Waxed Oxidized Copper Door}} || <code>minecraft:waxed_oxidized_copper_door</code>
+|}
 
 [[Category:Blocks]]

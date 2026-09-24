@@ -7,6 +7,8 @@ A '''Hell-Bound Book''' is the [[Matcha Flavoured]] name for the {{MCW|Enchanted
 {{Recipes}}
 The crafted book stacks to 64 and stores [[Curse of Binding]] I.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hell_bound_book.json}}</ref> Both other ingredients are magic materials: [[Stabilized Estus]] is itself crafted from seven [[Estus Ash]], a [[Benzene]] and a [[Stable Void]], so one book costs two Benzene in total.
 
+Crafting [[Stabilized Estus]] gives back the glass bottle of its benzene, but in 1.12.2 crafting a Hell-Bound Book does not: the advancement that returns the bottle still looks for the book's recipe under its old id, <code>blessings:hell_bound_book</code>, so the bottle is lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
+
 === Loot ===
 Enchanted books are still found in many chests, in fishing treasure and through piglin bartering. These are ordinary enchanted books, so they also show the name "Hell-Bound Book". The Variant column gives their enchantment where the loot table fixes it. The enchanting table, which cannot be crafted in the pack, drops a Hell-Bound Book with no stored enchantments when broken, along with 2 [[diamond]]s and 4 obsidian.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/enchanting_table.json}}</ref> See also [[Enchanting#Other sources]].
 {{Sources}}
@@ -25,6 +27,11 @@ A blank Hell-Bound Book can be combined with equipment in an [[anvil]] like any 
 |-
 | Unholy Knowledge || Craft a Hell-Bound Book || Craft a Hell-Bound Book. Rewards [[Obol]]s.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/craft_hell_bound_book.json}}</ref>
 |}
+
+== History ==
+{{History|
+{{History line|Upcoming|2=Crafting the book gives back the glass bottle of its benzene.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
+}}
 
 == Trivia ==
 * The pack's English language file writes the name in red (the <code>§c</code> formatting code), so every enchanted book's name shows in red.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>

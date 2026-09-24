@@ -1,0 +1,6 @@
+<includeonly>{| class="wikitable"
+! Attribute !! Easy !! Normal !! Hard
+|-
+! Max health{{{max_health|}}}
+| {{Hp|2}} || {{Hp|2}} || {{Hp|4}}
+|}</includeonly><noinclude>Generated from the pack's spawn functions (<code>mechanics/spawn_mechanic</code>). A note for a row goes in a parameter named by the row ID. [[Category:Generated data]]</noinclude>

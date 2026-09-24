@@ -1,3 +1,4 @@
+{{Family infobox|Copper Dolabra;Iron Dolabra;Diamond Dolabra;Steel Dolabra;Electrum Dolabra;Shakudo Dolabra;Hepatizon Dolabra;Adamant Dolabra|title=Dolabra|type=Tool|stackable=No}}
 A '''dolabra''' is a hybrid [[Tools|tool]] that works as both a pickaxe and an axe, mining more slowly than a pickaxe or axe of the same tier. Its harvesting rules do not always match the pickaxe of its tier: several dolabras can mine obsidian that the matching pickaxe cannot (see below).
 
 The developer calls dolabras and mattocks "real tools with generalized niches" whose "base mining speed aren't as fast as their original counterparts."<ref>{{Cite video|quote=They're both real tools with generalized niches. Delabres work as a pickaxe and an axe combined. Maddox are a shovel hoe hybrid, but hybrid tools base mining speed aren't as fast as their original counterparts.}}</ref>
@@ -11,25 +12,7 @@ Copper, iron and diamond dolabras are crafted (three ingots on top, one below on
 * Diamond (35), electrum and adamant (55) dolabras mine obsidian quickly.
 
 == Tiers ==
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Copper Dolabra}} || 350 || 5 || — || 5 || 0.8 || —
-|-
-| {{ItemLink|Iron Dolabra}} || 500 || 6 || — || 6 || 0.9 || —
-|-
-| {{ItemLink|Steel Dolabra}} || 3000 || 7 || — || 6 || 0.9 || —
-|-
-| {{ItemLink|Diamond Dolabra}} || 2500 || 8 || 35 || 7 || 1 || —
-|-
-| {{ItemLink|Shakudo Dolabra}} || 1000 || 7 || — || 7 || 1 || {{MCW|Silk Touch}} I
-|-
-| {{ItemLink|Hepatizon Dolabra}} || 1000 || 15 || — || 7 || 1 || —
-|-
-| {{ItemLink|Electrum Dolabra}} || 3000 || 10 || 55 || 6 || 1.2 || {{G|Fortune}} III
-|-
-| {{ItemLink|Adamant Dolabra}} || 5000 || 13 || 55 || 7 || 1 || [[Unbreaking]] II<br />{{G|Smelting}} Smelting<br />[[Efficiency]] I
-|}
+{{Data/Tools/Dolabra}}
 
 == Design ==
 The 1.12.2 notes announce a shift: "Dolabras are shifting from being treated as an Axe (weapon), Axe (tool), and Pickaxe hyrbid to an Axe (tool) and Pickaxe hyrbid. So damage will go down for all of them, weapon-based enchants removed, and tool-based enchants improved."<ref>{{Cite changelog|1.12.2|quote=Dolabras are shifting from being treated as an Axe (weapon), Axe (tool), and Pickaxe hyrbid to an Axe (tool) and Pickaxe hyrbid.}}</ref> The adamant dolabra already lacks the weapon intrinsic that the adamant axe has.

@@ -1,0 +1,40 @@
+{{Vanilla|Button}}
+{{Family infobox|Oak Button;Spruce Button;Birch Button;Jungle Button;Acacia Button;Dark Oak Button;Mangrove Button;Cherry Button;Pale Oak Button;Bamboo Button;Crimson Button;Warped Button;Stone Button|title=Button|type=Block|stackable=Yes (64)}}
+A '''button''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Stonecutter]] recipes for the 13 variants below, and otherwise leaves them as in vanilla. See {{MCW|Button}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Button}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Oak Button|mcw=Oak Button}} || <code>minecraft:oak_button</code>
+|-
+| {{ItemLink|Spruce Button|mcw=Spruce Button}} || <code>minecraft:spruce_button</code>
+|-
+| {{ItemLink|Birch Button|mcw=Birch Button}} || <code>minecraft:birch_button</code>
+|-
+| {{ItemLink|Jungle Button|mcw=Jungle Button}} || <code>minecraft:jungle_button</code>
+|-
+| {{ItemLink|Acacia Button|mcw=Acacia Button}} || <code>minecraft:acacia_button</code>
+|-
+| {{ItemLink|Dark Oak Button|mcw=Dark Oak Button}} || <code>minecraft:dark_oak_button</code>
+|-
+| {{ItemLink|Mangrove Button|mcw=Mangrove Button}} || <code>minecraft:mangrove_button</code>
+|-
+| {{ItemLink|Cherry Button|mcw=Cherry Button}} || <code>minecraft:cherry_button</code>
+|-
+| {{ItemLink|Pale Oak Button|mcw=Pale Oak Button}} || <code>minecraft:pale_oak_button</code>
+|-
+| {{ItemLink|Bamboo Button|mcw=Bamboo Button}} || <code>minecraft:bamboo_button</code>
+|-
+| {{ItemLink|Crimson Button|mcw=Crimson Button}} || <code>minecraft:crimson_button</code>
+|-
+| {{ItemLink|Warped Button|mcw=Warped Button}} || <code>minecraft:warped_button</code>
+|-
+| {{ItemLink|Stone Button|mcw=Stone Button}} || <code>minecraft:stone_button</code>
+|}
+
+[[Category:Blocks]]

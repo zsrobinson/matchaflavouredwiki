@@ -2,11 +2,11 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Fish Bones}} || 1 || 77.3% || 77.3% || only in Sulfur Caves
-|-
-| {{ItemLink|Sculk Vein}} || 1 || 60.7% || 60.7% || only in Deep Dark
-|-
 | {{ItemLink|Pale Hanging Moss|mcw=Pale Hanging Moss}} || 1 || 43.6% || 43.6% || only in Pale Garden
+|-
+| {{ItemLink|Fish Bones}} || 1 || 41.8% || 41.8% || only in Sulfur Caves
+|-
+| {{ItemLink|Sculk Vein}} || 1 || 32.8% || 32.8% || only in Deep Dark
 |-
 | {{ItemLink|Humpback Whitefish}} || 1 || 30.4% || 30.4% || only in [[Fishing#Cold freshwater|cold freshwater biomes]]
 |-
@@ -58,9 +58,7 @@
 |-
 | {{ItemLink|Resin Clump|mcw=Resin Clump}} || 1 || 26.2% || 26.2% || only in Pale Garden
 |-
-| {{ItemLink|Echo Eel}} || 1 || 21.2% || 21.3% || only in Deep Dark
-|-
-| {{ItemLink|Lily Pad}} || 1 || 16.4% || 16.4% || only in [[Fishing#Other biomes|other biomes]]
+| {{ItemLink|Lily Pad}} || 1 || 18.5% || 18.5% || only in [[Fishing#Other biomes|other biomes]]
 |-
 | {{ItemLink|Spoonhead Sculpin}} || 1 || 16.2% || 16.2% || only in [[Fishing#Cold freshwater|cold freshwater biomes]]
 |-
@@ -88,23 +86,17 @@
 |-
 | {{ItemLink|Creaking Fish}} || 1 || 15.3% || 15.3% || only in Pale Garden
 |-
-| {{ItemLink|Sturdy Leather}} || 1 || 9.66% || 9.66% || only in [[Fishing#Other biomes|other biomes]]
+| {{ItemLink|Echo Eel}} || 1 || 11.5% || 11.5% || only in Deep Dark
 |-
-| {{ItemLink|Fish Bones}} || 1 || 9.66% || 9.66% || only in [[Fishing#Other biomes|other biomes]]
+| {{ItemLink|Sturdy Leather}} || 1 || 10.9% || 10.9% || only in [[Fishing#Other biomes|other biomes]]
 |-
-| {{ItemLink|Potion|Water Bottle|mcw=Potion}} || 1 || 9.66% || 9.66% || only in [[Fishing#Other biomes|other biomes]]
+| {{ItemLink|Fish Bones}} || 1 || 10.9% || 10.9% || only in [[Fishing#Other biomes|other biomes]]
 |-
-| {{ItemLink|Estus Ash}} || 5 || 9.66% || 9.66% || only in [[Fishing#Other biomes|other biomes]]
+| {{ItemLink|Potion|Water Bottle|mcw=Potion}} || 1 || 10.9% || 10.9% || only in [[Fishing#Other biomes|other biomes]]
 |-
-| {{ItemLink|Nautilus Shell|mcw=Nautilus Shell}} || 1 || 9.66% || 9.66% || only in [[Fishing#Other biomes|other biomes]]
+| {{ItemLink|Estus Ash}} || 5 || 10.9% || 10.9% || only in [[Fishing#Other biomes|other biomes]]
 |-
-| {{ItemLink|Bamboo}} || 1 || 9.66% || 9.66% || only in [[Fishing#Other biomes|other biomes]], only in Jungle, Sparse Jungle, Bamboo Jungle
-|-
-| {{ItemLink|Tadpole}} || 1 || 9.66% || 9.66% || only in [[Fishing#Other biomes|other biomes]], only in Mangrove Swamp, Swamp
-|-
-| {{ItemLink|Axolotl}} || 1 || 9.66% || 9.66% || only in [[Fishing#Other biomes|other biomes]], only in Dripstone Caves, Lush Caves
-|-
-| {{ItemLink|Sulfur Chunk}} || 3 || 7.73% || 7.73% || only in Sulfur Caves
+| {{ItemLink|Nautilus Shell|mcw=Nautilus Shell}} || 1 || 10.9% || 10.9% || only in [[Fishing#Other biomes|other biomes]]
 |-
 | {{ItemLink|Northern Pike}} || 1 || 6.07% || 6.07% || only in [[Fishing#Cold freshwater|cold freshwater biomes]]
 |-
@@ -130,13 +122,11 @@
 |-
 | {{ItemLink|Catfish}} || 1 || 6.07% || 6.07% || only in Dripstone Caves, Lush Caves
 |-
-| {{ItemLink|Frog}} || 1 || 5.12% || 5.12% || only in [[Fishing#Other biomes|other biomes]], only in Mangrove Swamp, Swamp
+| {{ItemLink|String}} || 1 || 5.45% || 5.45% || only in [[Fishing#Other biomes|other biomes]]
 |-
-| {{ItemLink|String}} || 1 || 4.83% || 4.83% || only in [[Fishing#Other biomes|other biomes]]
+| {{ItemLink|Stick}} || 1 || 5.45% || 5.45% || only in [[Fishing#Other biomes|other biomes]]
 |-
-| {{ItemLink|Stick}} || 1 || 4.83% || 4.83% || only in [[Fishing#Other biomes|other biomes]]
-|-
-| {{ItemLink|Echo Shard|mcw=Echo Shard}} || 1 || 3.04% || 3.04% || only in Deep Dark
+| {{ItemLink|Sulfur Chunk}} || 3 || 4.18% || 4.18% || only in Sulfur Caves
 |-
 | {{ItemLink|Siberian Sturgeon}} || 1 || 2.02% || 2.02% || only in [[Fishing#Cold freshwater|cold freshwater biomes]]
 |-
@@ -166,6 +156,8 @@
 |-
 | {{ItemLink|Lily Pad}} || 1 || 1.93% || 1.93% || 
 |-
+| {{ItemLink|Echo Shard|mcw=Echo Shard}} || 1 || 1.64% || 1.64% || only in Deep Dark
+|-
 | {{ItemLink|Fishing Rod|Fishing Rod (enchanted)}} || 1 || 1.15% || 1.15% || open water
 |-
 | {{ItemLink|Sturdy Leather}} || 1 || 1.14% || 1.14% || 
@@ -180,19 +172,19 @@
 |-
 | {{ItemLink|Bamboo}} || 1 || 1.14% || 1.14% || only in Jungle, Sparse Jungle, Bamboo Jungle
 |-
-| {{ItemLink|Tadpole}} || 1 || 1.14% || 1.14% || only in Mangrove Swamp, Swamp
-|-
 | {{ItemLink|Axolotl}} || 1 || 1.14% || 1.14% || only in Dripstone Caves, Lush Caves
 |-
-| {{ItemLink|Ink Sac|mcw=Ink Sac}} || 10 || 0.966% || 0.966% || only in [[Fishing#Other biomes|other biomes]]
+| {{ItemLink|Ink Sac|mcw=Ink Sac}} || 10 || 1.09% || 1.09% || only in [[Fishing#Other biomes|other biomes]]
+|-
+| {{ItemLink|Tadpole}} || 1 || 1.08% || 1.08% || only in Mangrove Swamp, Swamp
 |-
 | {{ItemLink|Hell-Bound Book|Hell-Bound Book (random enchantment)}} || 1 || 0.820% || 0.820% || open water
-|-
-| {{ItemLink|Frog}} || 1 || 0.602% || 0.602% || only in Mangrove Swamp, Swamp
 |-
 | {{ItemLink|String}} || 1 || 0.568% || 0.568% || 
 |-
 | {{ItemLink|Stick}} || 1 || 0.568% || 0.568% || 
+|-
+| {{ItemLink|Frog}} || 1 || 0.538% || 0.538% || only in Mangrove Swamp, Swamp
 |-
 | {{ItemLink|Angler Pottery Sherd|mcw=Angler Pottery Sherd}} || 1 || 0.410% || 0.410% || open water
 |-

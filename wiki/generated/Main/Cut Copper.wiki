@@ -1,12 +1,30 @@
-{{Vanilla}}
-{{Infobox auto}}
-'''Cut Copper''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds a [[Crafting Table]] recipe (from 2 × {{MCW|Cut Copper Slab}}). See {{MCW|Cut Copper}} for everything else.
+{{Vanilla|Cut Copper}}
+{{Family infobox|Cut Copper;Exposed Cut Copper;Weathered Cut Copper;Oxidized Cut Copper;Waxed Cut Copper;Waxed Exposed Cut Copper;Waxed Weathered Cut Copper;Waxed Oxidized Cut Copper|title=Cut Copper|type=Block|stackable=Yes (64)}}
+'''Cut copper''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Crafting Table]] recipes for the 8 variants below, and otherwise leaves them as in vanilla. See {{MCW|Cut Copper}} for everything else.
 
 == Obtaining ==
-{{Recipes}}
-{{Sources}}
+{{Data/Family/Cut Copper}}
 
-== Usage ==
-{{Uses}}
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Cut Copper|mcw=Cut Copper}} || <code>minecraft:cut_copper</code>
+|-
+| {{ItemLink|Exposed Cut Copper|mcw=Exposed Cut Copper}} || <code>minecraft:exposed_cut_copper</code>
+|-
+| {{ItemLink|Weathered Cut Copper|mcw=Weathered Cut Copper}} || <code>minecraft:weathered_cut_copper</code>
+|-
+| {{ItemLink|Oxidized Cut Copper|mcw=Oxidized Cut Copper}} || <code>minecraft:oxidized_cut_copper</code>
+|-
+| {{ItemLink|Waxed Cut Copper|mcw=Waxed Cut Copper}} || <code>minecraft:waxed_cut_copper</code>
+|-
+| {{ItemLink|Waxed Exposed Cut Copper|mcw=Waxed Exposed Cut Copper}} || <code>minecraft:waxed_exposed_cut_copper</code>
+|-
+| {{ItemLink|Waxed Weathered Cut Copper|mcw=Waxed Weathered Cut Copper}} || <code>minecraft:waxed_weathered_cut_copper</code>
+|-
+| {{ItemLink|Waxed Oxidized Cut Copper|mcw=Waxed Oxidized Cut Copper}} || <code>minecraft:waxed_oxidized_cut_copper</code>
+|}
 
 [[Category:Blocks]]

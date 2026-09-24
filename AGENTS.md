@@ -11,6 +11,9 @@ debugging time.
   (`site/GitLinks.php`: the Talk / Edit / View source / View history tabs and the footer's page record). Talk
   opens the page issue form (`.github/ISSUE_TEMPLATE/page.yml`); keep its field ids in step with `mfwIssueUrl`.
   The footer's "Last edited" date comes from git, so `export_static.py` fills it in (the live wiki links the history).
+- **The wiki describes the latest Modrinth release,** not `main`. `tools/source.lock` is the commit the
+  release was made from (`tools/release_commit.py` matches the release's files to a commit). Unreleased
+  work on `main` is marked `{{Upcoming}}` and cited with `{{Source|path|at=<commit on main>}}`.
 - **Sources:** the pack's code (`source/matcha-flavoured`, pinned in `tools/source.lock`), the official
   release notes (`source/changelogs`) and the developer's videos (`transcript.txt`, `sources/transcripts/`).
   Never other wikis, forks or third-party videos. Other sites may be read to find gaps (`wiki/AUDIT.md`),
@@ -38,6 +41,7 @@ docker compose up -d                 # MediaWiki on :8080 (image built from site
 nohup tools/watch.sh > build/watch.log &   # dev server: imports changed pages every 5 s
 python3 tools/preview.py "Title"     # import + check specific pages (errors, red links, missing files)
 python3 tools/check_site.py          # every hand-written page; also flags unparsed [[..]] / {{..}}
+python3 tools/lint_pages.py          # no wiki needed: pages naming vanished items, dead {{Source}} paths
 tools/screenshot.sh "Title" out.png  # headless Chrome render; for dark mode or phone widths use Playwright
 python3 tools/export_static.py && npx wrangler dev   # the real static site on :8787
 ```
@@ -67,6 +71,11 @@ the swap mid-way.
 - **Pages have a 2 MB include limit.** Past it MediaWiki stops expanding templates and prints a bare `Template:…` link
   (crafting grids are the heavy part). `generate.py` drops the grids from recipe tables longer than `COMPACT_AFTER`,
   and `check_site.py` / `preview.py` flag unexpanded templates and missing images.
+
+- **The extractor fails on formats it doesn't know** (exit 3, `KNOWN` in `extract.py`). Before it did,
+  a format change dropped data silently: the 26.3 port renames loot `functions` to `modifier`, which
+  would have removed every drop count and condition, and custom items named by loot, with no error.
+  Handle new keys; list one in `KNOWN` only if the wiki really doesn't need it.
 
 - **The local wiki never deletes pages.** A page the generator stopped producing still exists locally,
   so local checks can pass while CI, which builds from scratch, finds broken links. Trust the PR check.
@@ -187,7 +196,20 @@ the swap mid-way.
 - **What the export keeps and strips:** it removes MediaWiki's scripts except the theme boot, and keeps the `ca-mfw-*` GitHub tabs.
   It also replaces legacy Vector's fixed `width=1120` viewport with `device-width`, so phones get the vendored narrow-screen layout.
   Its `site.js` is `Gadget-mfwShell.js` and `Gadget-mfwTooltip.js` (plain DOM, no jQuery) plus `SITE_JS`.
-- **Search** is Pagefind (Component UI searchbox and the `/search/` page).
+- **Search** matches titles first, then Pagefind's full text. Pagefind alone ranked "fishing" below Tropical
+  Fish (it stems "fishing" to "fish" and favours short pages), had no typos or redirects, and let category
+  pages crowd results. So:
+  - `tools/search_index.py` writes `_static/search-titles.json` (title, URL, picture, lead sentence,
+    inbound links, redirects) and small thumbnails of big renders in `/images/search/`.
+  - `site/search.js` (appended to `site.js`) matches titles and redirects and builds one result list:
+    title matches (at most 6), then Pagefind's full-text results for pages not already listed. The header
+    box (MediaWiki's own `#searchInput`, so the skin styles it) shows its first 8 rows; the `/search/` page
+    shows all of it, with the sections that matched and a category filter. So the box is always the top
+    of the page. Pagefind is only the full-text engine (`pagefind.js`); its Component UI isn't used.
+    Enter goes to an exact title, as MediaWiki's "Go" does. The 404 page lists the closest titles.
+  - Category pages are left out of the full-text index; its ranking settings are `RANKING` in `search.js`.
+  - Synonyms readers type belong in real redirects (`Changelog`, `Updates`), not in code.
+    `node --test tests/search.test.mjs` covers the matching.
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;
   it becomes the search snippet. `check_seo.py` checks the export.
@@ -234,6 +256,17 @@ the swap mid-way.
   - Clay Fetishes are named by their variant.
   - Music discs are named by their song.
   - Potions named like an effect become "Splash Potion of X".
+- **Which vanilla items get a page** (`generate.py`): none for items the pack doesn't change (their links and
+  slots go to minecraft.wiki via `Module:Inventory slot/Offsite`). Items whose only changes follow a pack-wide
+  rule (`NEW_WAY_RULES`: stonecutter, slabs back into blocks, wool and carpet, water bottle, plant cloning,
+  saplings, banners, cooking stations, trades) are grouped on family pages as minecraft.wiki does ("Fence Gate"
+  for every wood, "Carpet", "Cut Copper" for every oxidation state; `family_of`), and redirect to their row.
+  A family page follows minecraft.wiki's layout: an infobox cycling through the variants (in the game's order;
+  `{{Family infobox}}`), Obtaining with one cycling recipe screen per method, and an ID table. Families with a
+  hand-written page (`FAMILY_HOME`: Banners) transclude `Template:Data/Family/<family>` instead, so that page
+  writes its own `{{Family infobox}}`. Every hand-written page about an item or a family of items needs an
+  infobox; overview pages (Armor, Tools, Ores) have none, as on minecraft.wiki. Items in no family, and the
+  rest, get a page whose lead says what the pack adds or replaces.
 - **Recipes match ingredients by item ID only,** so a custom item also works in recipes for its base item.
   The generator lists those uses only when both are the same kind of item (food with food).
 - **Healing is a hidden Regeneration III:** 1 HP per 12 ticks. Hunger is pinned by a function.

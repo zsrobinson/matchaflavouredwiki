@@ -1,0 +1,11 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Golden Pickaxe}}{{{Golden Pickaxe|}}} || 350 || 12 || data-sort-value="3" | 3 (no drops) || 2 || 1.2 || [[Fortune]]
+|-
+| {{ItemLink|Golden Axe}}{{{Golden Axe|}}} || 350 || 12 || data-sort-value="0" | — || 7 || 1 || [[Fortune]]<br />[[Looting]] I
+|-
+| {{ItemLink|Golden Shovel}}{{{Golden Shovel|}}} || 350 || 15 || data-sort-value="0" | — || 2.5 || 1 || [[Fortune]]
+|-
+| {{ItemLink|Golden Hoe}}{{{Golden Hoe|}}} || 350 || 12 || data-sort-value="0" | — || 1 || 1 || [[Fortune]]
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

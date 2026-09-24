@@ -19,7 +19,7 @@
 | {{BlockLink|Mud Kiln}} || {{MCW|Smoker}} || Smoking || Only [[naan]] and the charred foods. It is mainly a kiln for bricks, glass, terracotta and stone.
 |}
 
-All food recipes take 5 seconds (100 ticks) and give 0.35 experience, on every station. The oven meals take 15 seconds (300 ticks).<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_pumpkin.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref> Kindling therefore cooks food much faster than a vanilla campfire (30 seconds), and the oven twice as fast as a vanilla furnace.
+All food recipes take 5 seconds (100 ticks) and give 0.35 experience, on every station, except molasses, which gives 0.01.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/molasses.json}}</ref> The oven meals take 15 seconds (300 ticks).<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_pumpkin.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref> Kindling therefore cooks food much faster than a vanilla campfire (30 seconds), and the oven twice as fast as a vanilla furnace.
 
 The pack removes every vanilla cooking recipe for food (meat, fish, potatoes, kelp) and replaces it with its own, so vanilla cooked food can't be made.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
@@ -31,7 +31,7 @@ The README's advice for new players is to start with a campfire, a wooden hoe an
 # '''Kindling''' is crafted from 2 sticks and 2 logs and is always placed unlit. It is lit with [[tinder]] or a [[Fire Starter|fire starter]] (''Prometheus be Damned'').<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json}}</ref>
 # A hoe used on grass yields short grass, and 1 time in 8 [[Wheat Grain|wheat grain]] instead. Cooking grass on kindling dries it (''Harvester''). Dry grass, [[straw]] and mud make packed mud.
 # The '''mud kiln''' is crafted from 4 mud bricks, 2 packed mud and a kindling (''Ancient Technology''). It fires clay balls into bricks.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/mudkiln.json}}</ref>
-# The '''oven''' is crafted from 3 iron ingots, 5 blocks of bricks and a kindling (''Now You're Cooking'').<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/oven.json}}</ref> The oven can't smelt ores; that needs a [[Blast Furnace|blast furnace]].
+# The '''oven''' is crafted from 3 iron ingots, 4 bricks and a kindling (''Now You're Cooking'').<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/oven.json}}</ref> The oven can't smelt ores; that needs a [[Blast Furnace|blast furnace]].
 # Bricks also make [[bowl]]s (''Manners First''), which unlock the [[stock]]s for the oven meals.
 
 == Recipe unlocks ==

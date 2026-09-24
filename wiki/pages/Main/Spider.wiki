@@ -5,7 +5,7 @@
 |imagesize=250px
 |imageclass=
 |type=Hostile mob
-|health=Vanilla
+|health={{Data/Difficulty/Spider/Infobox|max_health}}
 |spawn=Overworld, away from the open sky
 |drops=String, spider eye
 }}
@@ -24,18 +24,7 @@ The drops are as in vanilla, except that spiders from the pack's spawners drop n
 On Normal and Hard, a spider's jump strength is set to 0.85 (about twice the vanilla 0.42), it takes no fall damage, and it is given a permanent, hidden {{MCW|Weaving}} effect. Weaving makes a mob leave cobwebs where it dies, so killing a spider in a corridor can leave it blocked.<ref name="n">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_spider.mcfunction}}</ref><ref name="h">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_spider.mcfunction}}</ref>
 
 == Difficulty ==
-{| class="wikitable"
-! Attribute !! Easy !! Normal !! Hard
-|-
-! Jump strength
-| vanilla || 0.85 || 0.85
-|-
-! Fall damage
-| vanilla || none || none
-|-
-! Weaving
-| none || Weaving I || Weaving II
-|}
+{{Data/Difficulty/Spider}}
 <ref name="n" /><ref name="h" />
 
 == History ==

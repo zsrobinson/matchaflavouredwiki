@@ -1,0 +1,11 @@
+<includeonly>=== Crafting ===
+{{Crafting|A1=Chiseled Copper;Exposed Chiseled Copper;Weathered Chiseled Copper|B1=Potion;Potion;Potion|Output=Exposed Chiseled Copper;Weathered Chiseled Copper;Oxidized Chiseled Copper|shapeless=1}}
+{| class="wikitable sortable"
+! Item !! Recipe
+|-
+| <span id="Exposed Chiseled Copper"></span>{{ItemLink|Exposed Chiseled Copper|mcw=Exposed Chiseled Copper}} || {{MCW|Chiseled Copper}} + {{MCW|Potion}} → 1
+|-
+| <span id="Weathered Chiseled Copper"></span>{{ItemLink|Weathered Chiseled Copper|mcw=Weathered Chiseled Copper}} || [[Exposed Chiseled Copper]] + {{MCW|Potion}} → 1
+|-
+| <span id="Oxidized Chiseled Copper"></span>{{ItemLink|Oxidized Chiseled Copper|mcw=Oxidized Chiseled Copper}} || [[Weathered Chiseled Copper]] + {{MCW|Potion}} → 1
+|}</includeonly><noinclude>Generated: the ways Matcha Flavoured adds to get each chiseled copper. [[Category:Generated data]]</noinclude>

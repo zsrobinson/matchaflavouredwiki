@@ -1,2 +1,36 @@
-#REDIRECT [[Oak Planks]]
-[[Category:Redirects from item tags]]
+{{Vanilla|Planks}}
+{{Family infobox|Oak Planks;Spruce Planks;Birch Planks;Jungle Planks;Acacia Planks;Dark Oak Planks;Mangrove Planks;Cherry Planks;Pale Oak Planks;Crimson Planks;Warped Planks|title=Planks|type=Block|stackable=Yes (64)}}
+'''Planks''' are blocks from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Crafting Table]] recipes and [[Stonecutter]] recipes for the 11 variants below, and otherwise leaves them as in vanilla. See {{MCW|Planks}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Planks}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Oak Planks|mcw=Oak Planks}} || <code>minecraft:oak_planks</code>
+|-
+| {{ItemLink|Spruce Planks|mcw=Spruce Planks}} || <code>minecraft:spruce_planks</code>
+|-
+| {{ItemLink|Birch Planks|mcw=Birch Planks}} || <code>minecraft:birch_planks</code>
+|-
+| {{ItemLink|Jungle Planks|mcw=Jungle Planks}} || <code>minecraft:jungle_planks</code>
+|-
+| {{ItemLink|Acacia Planks|mcw=Acacia Planks}} || <code>minecraft:acacia_planks</code>
+|-
+| {{ItemLink|Dark Oak Planks|mcw=Dark Oak Planks}} || <code>minecraft:dark_oak_planks</code>
+|-
+| {{ItemLink|Mangrove Planks|mcw=Mangrove Planks}} || <code>minecraft:mangrove_planks</code>
+|-
+| {{ItemLink|Cherry Planks|mcw=Cherry Planks}} || <code>minecraft:cherry_planks</code>
+|-
+| {{ItemLink|Pale Oak Planks|mcw=Pale Oak Planks}} || <code>minecraft:pale_oak_planks</code>
+|-
+| {{ItemLink|Crimson Planks|mcw=Crimson Planks}} || <code>minecraft:crimson_planks</code>
+|-
+| {{ItemLink|Warped Planks|mcw=Warped Planks}} || <code>minecraft:warped_planks</code>
+|}
+
+[[Category:Blocks]]

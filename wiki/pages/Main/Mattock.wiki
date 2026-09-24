@@ -1,3 +1,4 @@
+{{Family infobox|Copper Mattock;Iron Mattock;Diamond Mattock;Steel Mattock;Electrum Mattock;Shakudo Mattock;Hepatizon Mattock;Adamant Mattock|title=Mattock|type=Tool|stackable=No}}
 A '''mattock''' is a hybrid [[Tools|tool]] that works as both a shovel and a hoe. It mines both kinds of blocks, but more slowly than a shovel or hoe of the same tier.
 
 In the video, the developer introduces mattocks and dolabras as a fix for inventory clutter: "If you find yourself frustrated that your hot bar is always full of tools and don't mind mining a little slower, the [dolabra] and [mattock] are a good choice for you."<ref>{{Cite video|quote=If you find yourself frustrated that your hot bar is always full of tools and don't mind mining a little slower, the [dolabra] and [mattock] are a good choice for you.}}</ref>
@@ -9,25 +10,7 @@ Copper, iron and diamond mattocks are crafted (two ingots on top, one on the rig
 A mattock tills and mines everything in <code>#minecraft:mineable/shovel</code> and <code>#minecraft:mineable/hoe</code>. Since 1.10 newly made mattocks drop snowballs from snow.
 
 == Tiers ==
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Copper Mattock}} || 350 || 5 || — || 1 || 2 || —
-|-
-| {{ItemLink|Iron Mattock}} || 500 || 6 || — || 4 || 4 || —
-|-
-| {{ItemLink|Steel Mattock}} || 3000 || 7 || — || 1 || 2 || —
-|-
-| {{ItemLink|Diamond Mattock}} || 2500 || 8 || — || 4 || 3 || —
-|-
-| {{ItemLink|Shakudo Mattock}} || 1000 || 8 || — || 2 || 4 || {{MCW|Silk Touch}} I
-|-
-| {{ItemLink|Hepatizon Mattock}} || 1000 || 15 || — || 3 || 3 || —
-|-
-| {{ItemLink|Electrum Mattock}} || 3000 || 10 || — || 3 || 3 || {{G|Fortune}} II<br />{{G|Warding}} [[Warding|1]]
-|-
-| {{ItemLink|Adamant Mattock}} || 5000 || 13 || — || 1 || 4 || [[Efficiency]] I<br />{{G|Smelting}} Smelting<br />[[Unbreaking]] II
-|}
+{{Data/Tools/Mattock}}
 
 == Advancements ==
 * ''Two in One'': craft a mattock or dolabra.

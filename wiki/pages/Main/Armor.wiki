@@ -4,117 +4,13 @@ In the video, the developer wanted every set to be "enticing enough that every p
 
 == Comparison ==
 === Helmet ===
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Copper Helmet}} || 200 || 2 || 0 || — || — || —
-|-
-| {{ItemLink|Iron Helmet}} || 350 || 2 || 0 || — || — || —
-|-
-| {{ItemLink|Steel Helmet}} || 1000 || 2 || 1 || 0.1 || — || [[Blast Protection]] II
-|-
-| {{ItemLink|Golden Crown}} || 200 || 2 || 0 || — || — || [[Fire Protection]] II
-|-
-| {{ItemLink|Diamond Helmet}} || 800 || 3 || 2 || — || — || —
-|-
-| {{ItemLink|Shakudo Helmet}} || 500 || 3 || — || — || — || {{G|Cleanse}} [[Cleanse|Blindness, Darkness]]<br />{{G|Magic protection}} [[Magic protection|8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
-|-
-| {{ItemLink|Hepatizon Helmet}} || 500 || 3 || — || — || Speed +0.01 || —
-|-
-| {{ItemLink|Electrum Helmet}} || 1000 || 3 || 3 || 0 || — || {{G|Electrum}} [[Warding|+1]]
-|-
-| {{ItemLink|Adamant Helmet}} || 1000 || 3 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3]]<br />[[Unbreaking]] II<br />[[Protection]] I
-|-
-| {{ItemLink|Leather Hood}} || 200 || 1 || — || — || Safe fall +1 || —
-|-
-| {{ItemLink|Sturdy Leather Helmet}} || 350 || 2 || — || — || Safe fall +2 || [[Projectile Protection]] III
-|-
-| {{ItemLink|Chainmail Helmet}} || 300 || 2 || — || — || — || [[Thorns]] III
-|}
+{{Data/Armor/Helmet}}
 === Chestplate ===
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Copper Chestplate}} || 200 || 4 || 0 || — || — || —
-|-
-| {{ItemLink|Iron Chestplate}} || 350 || 6 || 0 || — || — || —
-|-
-| {{ItemLink|Steel Chestplate}} || 1000 || 7 || 1 || 0.2 || — || [[Blast Protection]] IV
-|-
-| {{ItemLink|Golden Chestplate}} || 200 || 5 || 0 || — || — || [[Fire Protection]] III
-|-
-| {{ItemLink|Diamond Chestplate}} || 800 || 8 || 2 || — || — || —
-|-
-| {{ItemLink|Shakudo Chestplate}} || 500 || 8 || — || — || — || {{G|Cleanse}} [[Cleanse|Poison]]<br />{{G|Magic protection}} [[Magic protection|8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
-|-
-| {{ItemLink|Hepatizon Chestplate}} || 500 || 8 || — || — || Speed +0.01 || —
-|-
-| {{ItemLink|Electrum Chestplate}} || 1000 || 8 || 3 || 0 || — || {{G|Electrum}} [[Warding|+1]]
-|-
-| {{ItemLink|Adamant Chestplate}} || 1000 || 8 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3]]<br />[[Unbreaking]] II<br />[[Protection]] I
-|-
-| {{ItemLink|Leather Pauldron}} || 200 || 3 || — || — || Safe fall +1 || —
-|-
-| {{ItemLink|Sturdy Leather Gambeson}} || 350 || 5 || — || — || Safe fall +2 || [[Projectile Protection]] IV
-|-
-| {{ItemLink|Chainmail Chestplate}} || 300 || 6 || — || — || — || [[Thorns]] III
-|}
+{{Data/Armor/Chestplate}}
 === Leggings ===
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Copper Leggings}} || 200 || 3 || 0 || — || — || —
-|-
-| {{ItemLink|Iron Leggings}} || 350 || 5 || 0 || — || — || —
-|-
-| {{ItemLink|Steel Leggings}} || 1000 || 5 || 1 || 0.1 || — || [[Blast Protection]] III
-|-
-| {{ItemLink|Golden Leggings}} || 200 || 3 || 0 || — || — || [[Fire Protection]] II
-|-
-| {{ItemLink|Diamond Leggings}} || 800 || 6 || 2 || — || — || —
-|-
-| {{ItemLink|Shakudo Leggings}} || 500 || 6 || — || — || — || {{G|Cleanse}} [[Cleanse|Slowness]]<br />{{G|Magic protection}} [[Magic protection|8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
-|-
-| {{ItemLink|Hepatizon Leggings}} || 500 || 6 || — || — || Speed +0.01 || —
-|-
-| {{ItemLink|Electrum Leggings}} || 1000 || 6 || 3 || 0 || — || {{G|Electrum}} [[Warding|+1]]
-|-
-| {{ItemLink|Adamant Leggings}} || 1000 || 6 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3]]<br />[[Unbreaking]] II<br />[[Protection]] I
-|-
-| {{ItemLink|Leather Pants}} || 200 || 2 || — || — || Safe fall +1 || —
-|-
-| {{ItemLink|Sturdy Leather Leggings}} || 350 || 3 || — || — || Safe fall +2 || [[Projectile Protection]] III
-|-
-| {{ItemLink|Chainmail Leggings}} || 300 || 5 || — || — || — || [[Thorns]] III
-|}
+{{Data/Armor/Leggings}}
 === Boots ===
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Copper Boots}} || 200 || 1 || 0 || — || — || —
-|-
-| {{ItemLink|Iron Boots}} || 350 || 2 || 0 || — || — || —
-|-
-| {{ItemLink|Steel Boots}} || 1000 || 2 || 1 || 0.1 || — || [[Blast Protection]] II
-|-
-| {{ItemLink|Golden Boots}} || 200 || 2 || — || — || — || [[Fire Protection]] II
-|-
-| {{ItemLink|Diamond Boots}} || 800 || 3 || 2 || — || — || —
-|-
-| {{ItemLink|Shakudo Boots}} || 500 || 3 || — || — || — || {{G|Cleanse}} [[Cleanse|Levitation]]<br />{{G|Magic protection}} [[Magic protection|8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
-|-
-| {{ItemLink|Hepatizon Boots}} || 500 || 3 || — || — || Speed +0.01 || —
-|-
-| {{ItemLink|Electrum Boots}} || 1000 || 3 || 3 || 0 || — || {{G|Electrum}} [[Warding|+1]]
-|-
-| {{ItemLink|Adamant Boots}} || 1000 || 3 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3]]<br />[[Unbreaking]] II<br />[[Protection]] I
-|-
-| {{ItemLink|Leather Boots}} || 200 || 1 || — || — || Safe fall +1 || [[Feather Falling]] II
-|-
-| {{ItemLink|Sturdy Leather Boots}} || 350 || 2 || — || — || Safe fall +2<br />Step height +1 || [[Projectile Protection]] II<br />[[Feather Falling]] II<br />[[Trailblaze]] I
-|-
-| {{ItemLink|Chainmail Boots}} || 300 || 2 || — || — || — || [[Thorns]] III
-|}
+{{Data/Armor/Boots}}
 
 === Other armor ===
 * [[Turtle Shellmet]], [[Hepatizon Laurel]], [[Elytra]] (including shakudo and hepatizon elytra).
@@ -122,33 +18,20 @@ In the video, the developer wanted every set to be "enticing enough that every p
 * [[Horse armor]].
 
 == Full sets ==
-{| class="wikitable sortable"
-! Set !! Armor !! Toughness !! Notes
-|-
-| [[Copper equipment|Copper]] || 10 || 0 || The cheapest metal set; plain copper armor protects undead from [[Warding]].
-|-
-| [[Iron equipment|Iron]] || 15 || 0 || Vanilla armor values with 350 durability per piece.
-|-
-| [[Steel equipment|Steel]] || 16 || 4 || Knockback resistance (0.5 for the full set) and [[Blast Protection]] on every piece.
-|-
-| [[Golden equipment|Golden]] || 12 || 0 || [[Fire Protection]] on every piece.
-|-
-| [[Diamond equipment|Diamond]] || 20 || 8 || 800 durability per piece; the base for electrum and adamant.
-|-
-| [[Shakudo equipment|Shakudo]] || 20 || 0 || [[Cleanse]], [[magic protection]] and a regeneration effect that grows with each piece worn.
-|-
-| [[Hepatizon equipment|Hepatizon]] || 20 || 0 || Each piece adds 10% movement speed.
-|-
-| [[Electrum equipment|Electrum]] || 20 || 12 || Each piece adds a level of [[Warding]]; the full set reaches warding 4 and grants Absorption.
-|-
-| [[Adamant equipment|Adamant]] || 20 || 12 || [[Doom]] on every piece, plus Protection I, Unbreaking II and knockback resistance.
-|-
-| [[Leather armor|Leather]] || 7 || 0 || Every piece adds 1 block of safe fall distance.
-|-
-| [[Sturdy leather armor|Sturdy Leather]] || 12 || 0 || Projectile Protection and 2 blocks of safe fall distance per piece; the boots add step height.
-|-
-| [[Chainmail armor|Chainmail]] || 15 || 0 || Craftable from iron chains; every piece has Thorns III.
-|}
+{{Data/Armor/Sets
+|Copper=The cheapest metal set; plain copper armor protects undead from [[Warding]].
+|Iron=Vanilla armor values with 350 durability per piece.
+|Steel=Knockback resistance (0.5 for the full set) and [[Blast Protection]] on every piece. In 1.12.2 the armor is invisible when worn.
+|Golden=[[Fire Protection]] on every piece.
+|Diamond=800 durability per piece; the base for electrum and adamant.
+|Shakudo=[[Cleanse]], [[magic protection]] and a regeneration effect that grows with each piece worn.
+|Hepatizon=Each piece adds 10% movement speed.
+|Electrum=Each piece adds a level of [[Warding]]; the full set reaches warding 4 and grants Absorption.
+|Adamant=[[Doom]] on every piece, plus Protection I, Unbreaking II and knockback resistance.
+|Leather=Every piece adds 1 block of safe fall distance.
+|Sturdy Leather=Projectile Protection and 2 blocks of safe fall distance per piece; the boots add step height.
+|Chainmail=Craftable from iron chains; every piece has Thorns III.
+}}
 
 == References ==
 {{reflist}}

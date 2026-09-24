@@ -3,10 +3,14 @@
 /site/data/
 /site/images/
 # Upstream sources, fetched by tools/fetch_sources.sh
-/source/
+/source
 .DS_Store
 __pycache__/
 /dist/
 /.wrangler/
 src/redirects.json
+# tools/generate.py builds here, then swaps it into wiki/generated
+/wiki/generated.tmp/
+# Claude Code agent worktrees
+/.claude/worktrees/
 /tools/render/node_modules/

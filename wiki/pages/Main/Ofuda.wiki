@@ -7,19 +7,7 @@ An '''ofuda''' is a special enchanted book sold by the [[Mouthpiece]] in exchang
 === Trading ===
 {{Sources}}
 
-{| class="wikitable"
-! Sacred text !! Ofuda prayer !! Stored enchantments
-|-
-| {{ItemLink|The Avesta}} || Prayer of The God-King || [[Efficiency]] II, [[Unbreaking]] I
-|-
-| {{ItemLink|The Quran}} || Prayer of The Prophet || [[Protection]] II
-|-
-| {{ItemLink|The Tanakh}} || Prayer of Exodus || [[Loyalty]] III, [[Trailblaze]] III, [[Power]] II
-|-
-| {{ItemLink|The Book of Enoch}} || Prayer of Samyaza || [[Sharpness]] III
-|-
-| {{ItemLink|The Lesser Key of Solomon}} (and 2 Crystal Hearts) || Prayer of Belial || [[Mending]]
-|}
+{{Data/Ofuda}}
 <ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/2/avesta.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/2/tanakh.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/4/solomon.json}}</ref>
 
 The prayer's name appears in dark gray under the item name, the same way as on a [[Blessing|blessing]].

@@ -14,11 +14,13 @@ A raw red mushroom, a [[steak]], dough, a [[Milk Bottle|milk bottle]] and a [[bo
 Eating it takes 1.8 seconds, heals {{Hp|12}} and gives {{EffectLink|Poison}} I for 5:00, which deals more damage than the food heals. The bowl is given back.
 
 === Trading ===
-It is one of the foods a villager can ask for as its [[favorite food]].
+{{Upcoming|type=section}}
+It is one of the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_30.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 
 == History ==
 {{History|
 {{History line|0.7-alpha|Added toadstool stroganoff.}}
+{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == See also ==

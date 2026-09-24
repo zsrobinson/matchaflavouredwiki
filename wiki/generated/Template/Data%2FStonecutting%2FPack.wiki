@@ -1,0 +1,757 @@
+<includeonly>==== Stone and other ====
+{| class="wikitable sortable"
+! Input !! Output !! Count
+|-
+| [[Dirt]] || [[Dirt Slab]]{{{matcha:stonecutting/dirt_slab|}}} || 2
+|-
+| [[Hellbricks]] || [[Hellbrick Fence]]{{{matcha:stonecutting/nether_brick_fence_from_stonecutting_nether_bricks|}}} || 3
+|-
+| [[Limestone]] || [[Stone Button]]{{{matcha:stonecutting/stone_button_from_stonecutting_stone|}}} || 4
+|-
+| [[Limestone]] || [[Stone Pressure Plate]]{{{matcha:stonecutting/stone_pressure_plate_from_stonecutting_stone|}}} || 4
+|-
+| [[Mud Bricks]] || [[Packed Mud]]{{{matcha:stonecutting/packed_mud_from_stonecutting_mud_bricks|}}} || 1
+|-
+| [[Packed Mud]] || [[Mud Brick Slab]]{{{matcha:stonecutting/mud_brick_slabs_from_stonecutting_packed_mud|}}} || 2
+|-
+| [[Packed Mud]] || [[Mud Brick Stairs]]{{{matcha:stonecutting/mud_brick_stairs_from_stonecutting_packed_mud|}}} || 1
+|-
+| [[Packed Mud]] || [[Mud Brick Wall]]{{{matcha:stonecutting/mud_brick_wall_from_stonecutting_packed_mud|}}} || 1
+|-
+| [[Packed Mud]] || [[Mud Bricks]]{{{matcha:stonecutting/mud_bricks_from_stonecutting_packed_mud|}}} || 1
+|-
+| {{MCW|Polished Tuff Stairs}} || [[Polished Tuff]]{{{matcha:stonecutting/polished_tuff_from_stonecutting_polished_tuff_stairs|}}} || 1
+|-
+| {{MCW|Smooth Sandstone Stairs}} || [[Smooth Sandstone]]{{{matcha:stonecutting/smooth_sandstone_from_stonecutting_smooth_sandstone_stairs|}}} || 1
+|-
+| {{MCW|Tuff Brick Stairs}} || [[Tuff Bricks]]{{{matcha:stonecutting/tuff_bricks_from_stonecutting_tuff_brick_stairs|}}} || 1
+|-
+| {{MCW|Tuff Stairs}} || [[Tuff]]{{{matcha:stonecutting/tuff_from_stonecutting_tuff_stairs|}}} || 1
+|}
+==== Glass ====
+{| class="wikitable sortable"
+! Input !! Output !! Count
+|-
+| {{MCW|Black Stained Glass}} || [[Black Stained Glass Pane]]{{{matcha:stonecutting/black_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Blue Stained Glass}} || [[Blue Stained Glass Pane]]{{{matcha:stonecutting/blue_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Brown Stained Glass}} || [[Brown Stained Glass Pane]]{{{matcha:stonecutting/brown_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Cyan Stained Glass}} || [[Cyan Stained Glass Pane]]{{{matcha:stonecutting/cyan_stained_glass_pane|}}} || 4
+|-
+| [[Glass]] || [[Glass Pane]]{{{matcha:stonecutting/glass_pane|}}} || 4
+|-
+| {{MCW|Gray Stained Glass}} || [[Gray Stained Glass Pane]]{{{matcha:stonecutting/gray_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Green Stained Glass}} || [[Green Stained Glass Pane]]{{{matcha:stonecutting/green_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Light Blue Stained Glass}} || [[Light Blue Stained Glass Pane]]{{{matcha:stonecutting/light_blue_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Light Gray Stained Glass}} || [[Light Gray Stained Glass Pane]]{{{matcha:stonecutting/light_gray_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Lime Stained Glass}} || [[Lime Stained Glass Pane]]{{{matcha:stonecutting/lime_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Magenta Stained Glass}} || [[Magenta Stained Glass Pane]]{{{matcha:stonecutting/magenta_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Orange Stained Glass}} || [[Orange Stained Glass Pane]]{{{matcha:stonecutting/orange_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Pink Stained Glass}} || [[Pink Stained Glass Pane]]{{{matcha:stonecutting/pink_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Purple Stained Glass}} || [[Purple Stained Glass Pane]]{{{matcha:stonecutting/purple_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Red Stained Glass}} || [[Red Stained Glass Pane]]{{{matcha:stonecutting/red_stained_glass_pane|}}} || 4
+|-
+| {{MCW|White Stained Glass}} || [[White Stained Glass Pane]]{{{matcha:stonecutting/white_stained_glass_pane|}}} || 4
+|-
+| {{MCW|Yellow Stained Glass}} || [[Yellow Stained Glass Pane]]{{{matcha:stonecutting/yellow_stained_glass_pane|}}} || 4
+|}
+==== Iron and steel ====
+{| class="wikitable sortable"
+! Input !! Output !! Count
+|-
+| [[Block of Iron]] || [[Cauldron]]{{{matcha:stonecutting/iron_cauldron_from_stonecutting_iron_block|}}} || 2
+|-
+| [[Block of Iron]] || [[Iron Bars]]{{{matcha:stonecutting/iron_bars_from_stonecutting_iron_block|}}} || 36
+|-
+| [[Block of Iron]] || [[Iron Chain]]{{{matcha:stonecutting/iron_chain_from_stonecutting_iron_block|}}} || 54
+|-
+| [[Block of Iron]] || [[Iron Door]]{{{matcha:stonecutting/iron_door_from_stonecutting_iron_block|}}} || 6
+|-
+| [[Block of Iron]] || [[Iron Trapdoor]]{{{matcha:stonecutting/iron_trapdoor_from_stonecutting_steel|}}} || 9
+|-
+| [[Iron Ingot]] || [[Iron Bars]]{{{matcha:stonecutting/iron_bars_from_stonecutting_iron_ingot|}}} || 4
+|-
+| [[Iron Ingot]] || [[Iron Chain]]{{{matcha:stonecutting/iron_chain_from_stonecutting_iron_ingot|}}} || 6
+|-
+| [[Iron Ingot]] || [[Iron Trapdoor]]{{{matcha:stonecutting/iron_trapdoor_from_stonecutting_iron_ingot|}}} || 1
+|-
+| [[Steel Alloy]] || [[Cauldron]]{{{matcha:stonecutting/iron_cauldron_from_stonecutting_steel|}}} || 1
+|-
+| [[Steel Alloy]] || [[Iron Bars]]{{{matcha:stonecutting/iron_bars_from_stonecutting_steel|}}} || 8
+|-
+| [[Steel Alloy]] || [[Iron Chain]]{{{matcha:stonecutting/iron_chain_from_stonecutting_steel|}}} || 12
+|-
+| [[Steel Alloy]] || [[Iron Door]]{{{matcha:stonecutting/iron_door_from_stonecutting_steel|}}} || 1
+|-
+| [[Steel Alloy]] || [[Iron Trapdoor]]{{{matcha:stonecutting/iron_trapdoor_from_stonecutting_iron_block|}}} || 2
+|}
+==== Copper ====
+{| class="wikitable sortable"
+! Input !! Output !! Count
+|-
+| [[Block of Copper]] || [[Copper Bars]]{{{matcha:stonecutting/copper_bars_from_stonecutting_copper_block|}}} || 36
+|-
+| [[Block of Copper]] || [[Copper Chain]]{{{matcha:stonecutting/copper_chain_from_stonecutting_copper_block|}}} || 54
+|-
+| [[Block of Copper]] || [[Copper Door]]{{{matcha:stonecutting/copper_door_from_stonecutting_copper_block|}}} || 6
+|-
+| [[Block of Copper]] || [[Copper Trapdoor]]{{{matcha:stonecutting/copper_trapdoor_from_stonecutting_copper_block|}}} || 9
+|-
+| [[Block of Copper]] || [[Lightning Rod]]{{{matcha:stonecutting/lightning_rod_from_stonecutting_copper_block|}}} || 4
+|-
+| [[Copper Ingot]] || [[Copper Bars]]{{{matcha:stonecutting/copper_bars_from_stonecutting_copper_ingot|}}} || 4
+|-
+| [[Copper Ingot]] || [[Copper Chain]]{{{matcha:stonecutting/copper_chain_from_stonecutting_copper_ingot|}}} || 6
+|-
+| [[Copper Ingot]] || [[Copper Trapdoor]]{{{matcha:stonecutting/copper_trapdoor_from_stonecutting_copper_ingot|}}} || 1
+|-
+| [[Exposed Copper]] || [[Exposed Copper Bars]]{{{matcha:stonecutting/exposed_copper_bars_from_stonecutting_exposed_copper|}}} || 36
+|-
+| [[Exposed Copper]] || [[Exposed Copper Chain]]{{{matcha:stonecutting/exposed_copper_chain_from_stonecutting_exposed_copper|}}} || 54
+|-
+| [[Exposed Copper]] || [[Exposed Copper Door]]{{{matcha:stonecutting/exposed_copper_door_from_stonecutting_exposed_copper_block|}}} || 6
+|-
+| [[Exposed Copper]] || [[Exposed Copper Trapdoor]]{{{matcha:stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper|}}}{{{matcha:stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper_block|}}} || 9
+|-
+| [[Exposed Copper]] || [[Exposed Lightning Rod]]{{{matcha:stonecutting/exposed_lightning_rod_from_stonecutting_exposed_copper|}}} || 4
+|-
+| [[Oxidized Copper]] || [[Oxidized Copper Bars]]{{{matcha:stonecutting/oxidized_copper_bars_from_stonecutting_oxidized_copper|}}} || 36
+|-
+| [[Oxidized Copper]] || [[Oxidized Copper Chain]]{{{matcha:stonecutting/oxidized_copper_chain_from_stonecutting_oxidised_copper|}}} || 54
+|-
+| [[Oxidized Copper]] || [[Oxidized Copper Door]]{{{matcha:stonecutting/oxidized_copper_door_from_stonecutting_oxidized_copper_block|}}} || 6
+|-
+| [[Oxidized Copper]] || [[Oxidized Copper Trapdoor]]{{{matcha:stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidised_copper|}}}{{{matcha:stonecutting/oxidized_copper_trapdoor_from_stonecutting_oxidized_copper_block|}}} || 9
+|-
+| [[Oxidized Copper]] || [[Oxidized Lightning Rod]]{{{matcha:stonecutting/oxidized_lightning_rod_from_stonecutting_oxidized_copper|}}} || 4
+|-
+| {{MCW|Waxed Block of Copper}} || [[Waxed Copper Bars]]{{{matcha:stonecutting/waxed_copper_bars_from_stonecutting_waxed_copper_block|}}} || 36
+|-
+| {{MCW|Waxed Block of Copper}} || [[Waxed Copper Chain]]{{{matcha:stonecutting/waxed_copper_chain_from_stonecutting_waxed_copper_block|}}} || 54
+|-
+| {{MCW|Waxed Block of Copper}} || [[Waxed Copper Door]]{{{matcha:stonecutting/waxed_copper_door_from_stonecutting_waxed_copper_block|}}} || 6
+|-
+| {{MCW|Waxed Block of Copper}} || [[Waxed Copper Trapdoor]]{{{matcha:stonecutting/waxed_copper_trapdoor_from_stonecutting_waxed_copper_block|}}} || 9
+|-
+| {{MCW|Waxed Block of Copper}} || [[Waxed Lightning Rod]]{{{matcha:stonecutting/waxed_lightning_rod_from_stonecutting_waxed_copper_block|}}} || 4
+|-
+| {{MCW|Waxed Exposed Copper}} || [[Waxed Exposed Copper Bars]]{{{matcha:stonecutting/waxed_exposed_copper_bars_from_stonecutting_waxed_exposed_copper|}}} || 36
+|-
+| {{MCW|Waxed Exposed Copper}} || [[Waxed Exposed Copper Chain]]{{{matcha:stonecutting/waxed_exposed_copper_chain_from_stonecutting_waxed_exposed_copper|}}} || 54
+|-
+| {{MCW|Waxed Exposed Copper}} || [[Waxed Exposed Copper Door]]{{{matcha:stonecutting/waxed_exposed_copper_door_from_stonecutting_waxed_exposed_copper|}}} || 6
+|-
+| {{MCW|Waxed Exposed Copper}} || [[Waxed Exposed Copper Trapdoor]]{{{matcha:stonecutting/waxed_exposed_copper_trapdoor_from_stonecutting_waxed_exposed_copper|}}}{{{matcha:stonecutting/waxed_exposed_copper_trapdoor_from_stonecutting_waxed_exposed_copper_block|}}} || 9
+|-
+| {{MCW|Waxed Exposed Copper}} || [[Waxed Exposed Lightning Rod]]{{{matcha:stonecutting/waxed_exposed_lightning_rod_from_stonecutting_waxed_exposed_copper|}}} || 4
+|-
+| {{MCW|Waxed Oxidized Copper}} || [[Waxed Oxidized Copper Bars]]{{{matcha:stonecutting/waxed_oxidised_copper_bars_from_stonecutting_waxed_oxidized_copper|}}} || 36
+|-
+| {{MCW|Waxed Oxidized Copper}} || [[Waxed Oxidized Copper Chain]]{{{matcha:stonecutting/waxed_oxidized_copper_chain_from_stonecutting_waxed_oxidized_copper|}}} || 54
+|-
+| {{MCW|Waxed Oxidized Copper}} || [[Waxed Oxidized Copper Door]]{{{matcha:stonecutting/waxed_oxidized_copper_door_from_stonecutting_waxed_oxidized_copper_block|}}} || 6
+|-
+| {{MCW|Waxed Oxidized Copper}} || [[Waxed Oxidized Copper Trapdoor]]{{{matcha:stonecutting/waxed_oxidized_copper_trapdoor_from_stonecutting_waxed_oxidized_copper_block|}}} || 9
+|-
+| {{MCW|Waxed Oxidized Copper}} || [[Waxed Oxidized Lightning Rod]]{{{matcha:crafting/waxed_oxidized_lightning_rod_from_waxed_oxidized_copper|}}} || 4
+|-
+| {{MCW|Waxed Weathered Copper}} || [[Waxed Weathered Copper Bars]]{{{matcha:stonecutting/waxed_weathered_copper_bars_from_stonecutting_waxed_weathered_copper|}}} || 36
+|-
+| {{MCW|Waxed Weathered Copper}} || [[Waxed Weathered Copper Chain]]{{{matcha:stonecutting/waxed_weathered_copper_chain_from_stonecutting_waxed_weathered_copper|}}} || 54
+|-
+| {{MCW|Waxed Weathered Copper}} || [[Waxed Weathered Copper Door]]{{{matcha:stonecutting/waxed_weathered_copper_door_from_stonecutting_waxed_weathered_copper|}}} || 6
+|-
+| {{MCW|Waxed Weathered Copper}} || [[Waxed Weathered Lightning Rod]]{{{matcha:crafting/waxed_weathered_lightning_rod_from_stoncutting_waxed_weathered_copper|}}} || 4
+|-
+| [[Weathered Copper]] || [[Weathered Copper Bars]]{{{matcha:stonecutting/weathered_copper_bars_from_stonecutting_weathered_copper|}}} || 36
+|-
+| [[Weathered Copper]] || [[Weathered Copper Chain]]{{{matcha:stonecutting/weathered_copper_chain_from_stonecutting_weathered_copper|}}} || 54
+|-
+| [[Weathered Copper]] || [[Weathered Copper Door]]{{{matcha:stonecutting/weathered_copper_door_from_stonecutting_weathered_copper_block|}}} || 6
+|-
+| [[Weathered Copper]] || [[Weathered Copper Trapdoor]]{{{matcha:crafting/weathered_copper_trapdoor_from_weathered_copper|}}}{{{matcha:stonecutting/weathered_copper_trapdoor_from_stonecutting_weathered_copper_block|}}} || 9
+|-
+| [[Weathered Copper]] || [[Weathered Lightning Rod]]{{{matcha:stonecutting/weathered_lightning_rod_from_stonecutting_weathered_copper|}}} || 4
+|}
+==== Any wood ====
+{| class="wikitable sortable"
+! Input !! Output !! Count
+|-
+| Any log, wood, stem or hyphae || [[Barrel]]{{{matcha:stonecutting/barrel_from_stonecutting_any_logs|}}} || 1
+|-
+| Any log, wood, stem or hyphae || [[Chiseled Bookshelf]]{{{matcha:stonecutting/chiseled_bookshelf_from_stonecutting_any_logs|}}} || 1
+|-
+| Any log, wood, stem or hyphae || [[Ladder]]{{{matcha:stonecutting/ladder_from_stonecutting_any_logs|}}} || 16
+|}
+==== Oak ====
+{| class="wikitable sortable"
+! Input !! Output !! Count
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]] or [[Stripped Oak Wood]] || [[Oak Button]]{{{matcha:stonecutting/oak_button_from_stonecutting_oak_logs|}}} || 8
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]] or [[Stripped Oak Wood]] || [[Oak Door]]{{{matcha:stonecutting/oak_door_from_stonecutting_oak_logs|}}} || 2
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]] or [[Stripped Oak Wood]] || [[Oak Fence]]{{{matcha:stonecutting/oak_fence_from_stonecutting_oak_log|}}} || 3
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]] or [[Stripped Oak Wood]] || [[Oak Fence Gate]]{{{matcha:stonecutting/oak_fence_gate_from_stonecutting_oak_logs|}}} || 1
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]] or [[Stripped Oak Wood]] || [[Oak Planks]]{{{matcha:stonecutting/oak_planks_from_stonecutting_oak_logs|}}} || 4
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]] or [[Stripped Oak Wood]] || [[Oak Pressure Plate]]{{{matcha:stonecutting/oak_pressure_plate_from_stonecutting_oak_logs|}}} || 4
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]] or [[Stripped Oak Wood]] || [[Oak Shelf]]{{{matcha:stonecutting/oak_shelf_from_stonecutting_oak_logs|}}} || 1
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]] or [[Stripped Oak Wood]] || [[Oak Sign]]{{{matcha:stonecutting/oak_sign_from_stonecutting_oak_logs|}}} || 2
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]] or [[Stripped Oak Wood]] || [[Oak Slab]]{{{matcha:stonecutting/oak_slabs_from_stonecutting_oak_logs|}}} || 8
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]] or [[Stripped Oak Wood]] || [[Oak Stairs]]{{{matcha:stonecutting/oak_stairs_from_stonecutting_oak_logs|}}} || 4
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]] or [[Stripped Oak Wood]] || [[Oak Trapdoor]]{{{matcha:stonecutting/oak_trapoor_from_stonecutting_oak_logs|}}} || 4
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Wood]] || [[Stripped Oak Log]]{{{matcha:stonecutting/stripped_oak_log_from_stonecutting_oak_logs|}}} || 1
+|-
+| [[Oak Log]] or [[Oak Wood]] or [[Stripped Oak Log]] || [[Stripped Oak Wood]]{{{matcha:stonecutting/stripped_oak_wood_from_stonecutting_oak_logs|}}} || 1
+|-
+| [[Oak Planks]] || [[Oak Button]]{{{matcha:stonecutting/oak_button_from_stonecutting_oak_planks|}}} || 2
+|-
+| [[Oak Planks]] || [[Oak Slab]]{{{matcha:stonecutting/oak_slabs_from_stonecutting_oak_planks|}}} || 2
+|-
+| [[Oak Planks]] || [[Oak Stairs]]{{{matcha:stonecutting/oak_stairs_from_stonecutting_oak_planks|}}} || 1
+|-
+| [[Oak Planks]] || [[Oak Trapdoor]]{{{matcha:stonecutting/oak_trapdoor_from_stonecutting_oak_planks|}}} || 1
+|-
+| [[Oak Stairs]] || [[Oak Planks]]{{{matcha:stonecutting/oak_planks_from_stonecutting_oak_stairs|}}} || 1
+|-
+| [[Oak Trapdoor]] || [[Oak Slab]]{{{matcha:stonecutting/oak_slab_from_stonecutting_oak_trapdoor|}}} || 1
+|-
+| [[Stripped Oak Log]] or [[Oak Wood]] or [[Stripped Oak Wood]] || [[Oak Log]]{{{matcha:stonecutting/oak_log_from_stonecutting_oak_logs|}}} || 1
+|-
+| [[Stripped Oak Log]] or [[Oak Log]] or [[Stripped Oak Wood]] || [[Oak Wood]]{{{matcha:stonecutting/oak_wood_from_stonecutting_oak_log|}}} || 1
+|}
+==== Spruce ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]] or [[Stripped Spruce Wood]] || [[Spruce Button]]{{{matcha:stonecutting/spruce_button_from_stonecutting_spruce_logs|}}} || 8
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]] or [[Stripped Spruce Wood]] || [[Spruce Door]]{{{matcha:stonecutting/spruce_door_from_stonecutting_spruce_logs|}}} || 2
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]] or [[Stripped Spruce Wood]] || [[Spruce Fence]]{{{matcha:stonecutting/spruce_fence_from_stonecutting_spruce_log|}}} || 3
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]] or [[Stripped Spruce Wood]] || [[Spruce Fence Gate]]{{{matcha:stonecutting/spruce_fence_gate_from_stonecutting_spruce_logs|}}} || 1
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]] or [[Stripped Spruce Wood]] || [[Spruce Planks]]{{{matcha:stonecutting/spruce_planks_from_stonecutting_spruce_logs|}}} || 4
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]] or [[Stripped Spruce Wood]] || [[Spruce Pressure Plate]]{{{matcha:stonecutting/spruce_pressure_plate_from_stonecutting_spruce_logs|}}} || 4
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]] or [[Stripped Spruce Wood]] || [[Spruce Shelf]]{{{matcha:stonecutting/spruce_shelf_from_stonecutting_spruce_logs|}}} || 1
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]] or [[Stripped Spruce Wood]] || [[Spruce Sign]]{{{matcha:stonecutting/spruce_sign_from_stonecutting_spruce_logs|}}} || 2
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]] or [[Stripped Spruce Wood]] || [[Spruce Slab]]{{{matcha:stonecutting/spruce_slabs_from_stonecutting_spruce_logs|}}} || 8
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]] or [[Stripped Spruce Wood]] || [[Spruce Stairs]]{{{matcha:stonecutting/spruce_stairs_from_stonecutting_spruce_logs|}}} || 4
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]] or [[Stripped Spruce Wood]] || [[Spruce Trapdoor]]{{{matcha:stonecutting/spruce_trapoor_from_stonecutting_spruce_logs|}}} || 4
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Wood]] || [[Stripped Spruce Log]]{{{matcha:stonecutting/stripped_spruce_log_from_stonecutting_spruce_logs|}}} || 1
+|-
+| [[Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Log]] || [[Stripped Spruce Wood]]{{{matcha:stonecutting/stripped_spruce_wood_from_stonecutting_spruce_logs|}}} || 1
+|-
+| [[Spruce Planks]] || [[Spruce Button]]{{{matcha:stonecutting/spruce_button_from_stonecutting_spruce_planks|}}} || 2
+|-
+| [[Spruce Planks]] || [[Spruce Slab]]{{{matcha:stonecutting/spruce_slabs_from_stonecutting_spruce_planks|}}} || 2
+|-
+| [[Spruce Planks]] || [[Spruce Stairs]]{{{matcha:stonecutting/spruce_stairs_from_stonecutting_spruce_planks|}}} || 1
+|-
+| [[Spruce Planks]] || [[Spruce Trapdoor]]{{{matcha:stonecutting/spruce_trapdoor_from_stonecutting_spruce_planks|}}} || 1
+|-
+| [[Spruce Stairs]] || [[Spruce Planks]]{{{matcha:stonecutting/spruce_planks_from_stonecutting_spruce_stairs|}}} || 1
+|-
+| [[Spruce Trapdoor]] || [[Spruce Slab]]{{{matcha:stonecutting/spruce_slab_from_stonecutting_spruce_trapdoor|}}} || 1
+|-
+| [[Stripped Spruce Log]] or [[Spruce Wood]] or [[Stripped Spruce Wood]] || [[Spruce Log]]{{{matcha:stonecutting/spruce_log_from_stonecutting_spruce_logs|}}} || 1
+|-
+| [[Stripped Spruce Log]] or [[Spruce Log]] or [[Stripped Spruce Wood]] || [[Spruce Wood]]{{{matcha:stonecutting/spruce_wood_from_stonecutting_spruce_log|}}} || 1
+|}
+==== Birch ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Log]] or [[Stripped Birch Wood]] || [[Birch Button]]{{{matcha:stonecutting/birch_button_from_stonecutting_birch_logs|}}} || 8
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Log]] or [[Stripped Birch Wood]] || [[Birch Door]]{{{matcha:stonecutting/birch_door_from_stonecutting_birch_logs|}}} || 2
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Log]] or [[Stripped Birch Wood]] || [[Birch Fence]]{{{matcha:stonecutting/birch_fence_from_stonecutting_birch_log|}}} || 3
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Log]] or [[Stripped Birch Wood]] || [[Birch Fence Gate]]{{{matcha:stonecutting/birch_fence_gate_from_stonecutting_birch_logs|}}} || 1
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Log]] or [[Stripped Birch Wood]] || [[Birch Planks]]{{{matcha:stonecutting/birch_planks_from_stonecutting_birch_logs|}}} || 4
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Log]] or [[Stripped Birch Wood]] || [[Birch Pressure Plate]]{{{matcha:stonecutting/birch_pressure_plate_from_stonecutting_birch_logs|}}} || 4
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Log]] or [[Stripped Birch Wood]] || [[Birch Shelf]]{{{matcha:stonecutting/birch_shelf_from_stonecutting_birch_logs|}}} || 1
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Log]] or [[Stripped Birch Wood]] || [[Birch Sign]]{{{matcha:stonecutting/birch_sign_from_stonecutting_birch_logs|}}} || 2
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Log]] or [[Stripped Birch Wood]] || [[Birch Slab]]{{{matcha:stonecutting/birch_slabs_from_stonecutting_birch_logs|}}} || 8
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Log]] or [[Stripped Birch Wood]] || [[Birch Stairs]]{{{matcha:stonecutting/birch_stairs_from_stonecutting_birch_logs|}}} || 4
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Log]] or [[Stripped Birch Wood]] || [[Birch Trapdoor]]{{{matcha:stonecutting/birch_trapoor_from_stonecutting_birch_logs|}}} || 4
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Wood]] || [[Stripped Birch Log]]{{{matcha:stonecutting/stripped_birch_log_from_stonecutting_birch_logs|}}} || 1
+|-
+| [[Birch Log]] or [[Birch Wood]] or [[Stripped Birch Log]] || [[Stripped Birch Wood]]{{{matcha:stonecutting/stripped_birch_wood_from_stonecutting_birch_logs|}}} || 1
+|-
+| [[Birch Planks]] || [[Birch Button]]{{{matcha:stonecutting/birch_button_from_stonecutting_birch_planks|}}} || 2
+|-
+| [[Birch Planks]] || [[Birch Pressure Plate]]{{{matcha:stonecutting/birch_pressure_plate_from_stonecutting_birch_planks|}}} || 1
+|-
+| [[Birch Planks]] || [[Birch Slab]]{{{matcha:stonecutting/birch_slabs_from_stonecutting_birch_planks|}}} || 2
+|-
+| [[Birch Planks]] || [[Birch Stairs]]{{{matcha:stonecutting/birch_stairs_from_stonecutting_birch_planks|}}} || 1
+|-
+| [[Birch Planks]] || [[Birch Trapdoor]]{{{matcha:stonecutting/birch_trapdoor_from_stonecutting_birch_planks|}}} || 1
+|-
+| [[Birch Stairs]] || [[Birch Planks]]{{{matcha:stonecutting/birch_planks_from_stonecutting_birch_stairs|}}} || 1
+|-
+| [[Birch Trapdoor]] || [[Birch Slab]]{{{matcha:stonecutting/birch_slab_from_stonecutting_birch_trapdoor|}}} || 1
+|-
+| [[Stripped Birch Log]] or [[Birch Wood]] or [[Stripped Birch Wood]] || [[Birch Log]]{{{matcha:stonecutting/birch_log_from_stonecutting_birch_logs|}}} || 1
+|-
+| [[Stripped Birch Log]] or [[Birch Log]] or [[Stripped Birch Wood]] || [[Birch Wood]]{{{matcha:stonecutting/birch_wood_from_stonecutting_birch_log|}}} || 1
+|}
+==== Jungle ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Log]] or [[Stripped Jungle Wood]] || [[Jungle Button]]{{{matcha:stonecutting/jungle_button_from_stonecutting_jungle_logs|}}} || 8
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Log]] or [[Stripped Jungle Wood]] || [[Jungle Door]]{{{matcha:stonecutting/jungle_door_from_stonecutting_jungle_logs|}}} || 2
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Log]] or [[Stripped Jungle Wood]] || [[Jungle Fence]]{{{matcha:stonecutting/jungle_fence_from_stonecutting_jungle_log|}}} || 3
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Log]] or [[Stripped Jungle Wood]] || [[Jungle Fence Gate]]{{{matcha:stonecutting/jungle_fence_gate_from_stonecutting_jungle_logs|}}} || 1
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Log]] or [[Stripped Jungle Wood]] || [[Jungle Planks]]{{{matcha:stonecutting/jungle_planks_from_stonecutting_jungle_logs|}}} || 4
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Log]] or [[Stripped Jungle Wood]] || [[Jungle Pressure Plate]]{{{matcha:stonecutting/jungle_pressure_plate_from_stonecutting_jungle_logs|}}} || 4
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Log]] or [[Stripped Jungle Wood]] || [[Jungle Shelf]]{{{matcha:stonecutting/jungle_shelf_from_stonecutting_jungle_logs|}}} || 1
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Log]] or [[Stripped Jungle Wood]] || [[Jungle Sign]]{{{matcha:stonecutting/jungle_sign_from_stonecutting_jungle_logs|}}} || 2
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Log]] or [[Stripped Jungle Wood]] || [[Jungle Slab]]{{{matcha:stonecutting/jungle_slabs_from_stonecutting_jungle_logs|}}} || 8
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Log]] or [[Stripped Jungle Wood]] || [[Jungle Stairs]]{{{matcha:stonecutting/jungle_stairs_from_stonecutting_jungle_logs|}}} || 4
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Log]] or [[Stripped Jungle Wood]] || [[Jungle Trapdoor]]{{{matcha:stonecutting/jungle_trapoor_from_stonecutting_jungle_logs|}}} || 4
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Wood]] || [[Stripped Jungle Log]]{{{matcha:stonecutting/stripped_jungle_log_from_stonecutting_jungle_logs|}}} || 1
+|-
+| [[Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Log]] || [[Stripped Jungle Wood]]{{{matcha:stonecutting/stripped_jungle_wood_from_stonecutting_jungle_logs|}}} || 1
+|-
+| [[Jungle Planks]] || [[Jungle Button]]{{{matcha:stonecutting/jungle_button_from_stonecutting_jungle_planks|}}} || 2
+|-
+| [[Jungle Planks]] || [[Jungle Slab]]{{{matcha:stonecutting/jungle_slabs_from_stonecutting_jungle_planks|}}} || 2
+|-
+| [[Jungle Planks]] || [[Jungle Stairs]]{{{matcha:stonecutting/jungle_stairs_from_stonecutting_jungle_planks|}}} || 1
+|-
+| [[Jungle Planks]] || [[Jungle Trapdoor]]{{{matcha:stonecutting/jungle_trapdoor_from_stonecutting_jungle_planks|}}} || 1
+|-
+| [[Jungle Stairs]] || [[Jungle Planks]]{{{matcha:stonecutting/jungle_planks_from_stonecutting_jungle_stairs|}}} || 1
+|-
+| [[Jungle Trapdoor]] || [[Jungle Slab]]{{{matcha:stonecutting/jungle_slab_from_stonecutting_jungle_trapdoor|}}} || 1
+|-
+| [[Stripped Jungle Log]] or [[Jungle Wood]] or [[Stripped Jungle Wood]] || [[Jungle Log]]{{{matcha:stonecutting/jungle_log_from_stonecutting_jungle_logs|}}} || 1
+|-
+| [[Stripped Jungle Log]] or [[Jungle Log]] or [[Stripped Jungle Wood]] || [[Jungle Wood]]{{{matcha:stonecutting/jungle_wood_from_stonecutting_jungle_log|}}} || 1
+|}
+==== Acacia ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]] or [[Stripped Acacia Wood]] || [[Acacia Button]]{{{matcha:stonecutting/acacia_button_from_stonecutting_acacia_logs|}}} || 8
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]] or [[Stripped Acacia Wood]] || [[Acacia Door]]{{{matcha:stonecutting/acacia_door_from_stonecutting_acacia_logs|}}} || 2
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]] or [[Stripped Acacia Wood]] || [[Acacia Fence]]{{{matcha:stonecutting/acacia_fence_from_stonecutting_acacia_log|}}} || 3
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]] or [[Stripped Acacia Wood]] || [[Acacia Fence Gate]]{{{matcha:stonecutting/acacia_fence_gate_from_stonecutting_acacia_logs|}}} || 1
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]] or [[Stripped Acacia Wood]] || [[Acacia Planks]]{{{matcha:stonecutting/acacia_planks_from_stonecutting_acacia_logs|}}} || 4
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]] or [[Stripped Acacia Wood]] || [[Acacia Pressure Plate]]{{{matcha:stonecutting/acacia_pressure_plate_from_stonecutting_acacia_logs|}}} || 4
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]] or [[Stripped Acacia Wood]] || [[Acacia Shelf]]{{{matcha:stonecutting/acacia_shelf_from_stonecutting_acacia_logs|}}} || 1
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]] or [[Stripped Acacia Wood]] || [[Acacia Sign]]{{{matcha:stonecutting/acacia_sign_from_stonecutting_acacia_logs|}}} || 2
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]] or [[Stripped Acacia Wood]] || [[Acacia Slab]]{{{matcha:stonecutting/acacia_slabs_from_stonecutting_acacia_logs|}}} || 8
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]] or [[Stripped Acacia Wood]] || [[Acacia Stairs]]{{{matcha:stonecutting/acacia_stairs_from_stonecutting_acacia_logs|}}} || 4
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]] or [[Stripped Acacia Wood]] || [[Acacia Trapdoor]]{{{matcha:stonecutting/acacia_trapoor_from_stonecutting_acacia_logs|}}} || 4
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Wood]] || [[Stripped Acacia Log]]{{{matcha:stonecutting/stripped_acacia_log_from_stonecutting_acacia_logs|}}} || 1
+|-
+| [[Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Log]] || [[Stripped Acacia Wood]]{{{matcha:stonecutting/stripped_acacia_wood_from_stonecutting_acacia_logs|}}} || 1
+|-
+| [[Acacia Planks]] || [[Acacia Button]]{{{matcha:stonecutting/acacia_button_from_stonecutting_acacia_planks|}}} || 2
+|-
+| [[Acacia Planks]] || [[Acacia Slab]]{{{matcha:stonecutting/acacia_slabs_from_stonecutting_acacia_planks|}}} || 2
+|-
+| [[Acacia Planks]] || [[Acacia Stairs]]{{{matcha:stonecutting/acacia_stairs_from_stonecutting_acacia_planks|}}} || 1
+|-
+| [[Acacia Planks]] || [[Acacia Trapdoor]]{{{matcha:stonecutting/acacia_trapdoor_from_stonecutting_acacia_planks|}}} || 1
+|-
+| [[Acacia Stairs]] || [[Acacia Planks]]{{{matcha:stonecutting/acacia_planks_from_stonecutting_acacia_stairs|}}} || 1
+|-
+| [[Acacia Trapdoor]] || [[Acacia Slab]]{{{matcha:stonecutting/acacia_slab_from_stonecutting_acacia_trapdoor|}}} || 1
+|-
+| [[Stripped Acacia Log]] or [[Acacia Wood]] or [[Stripped Acacia Wood]] || [[Acacia Log]]{{{matcha:stonecutting/acacia_log_from_stonecutting_acacia_logs|}}} || 1
+|-
+| [[Stripped Acacia Log]] or [[Acacia Log]] or [[Stripped Acacia Wood]] || [[Acacia Wood]]{{{matcha:stonecutting/acacia_wood_from_stonecutting_acacia_log|}}} || 1
+|}
+==== Dark Oak ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Log]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Button]]{{{matcha:stonecutting/dark_oak_button_from_stonecutting_dark_oak_logs|}}} || 8
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Log]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Door]]{{{matcha:stonecutting/dark_oak_door_from_stonecutting_dark_oak_logs|}}} || 2
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Log]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Fence]]{{{matcha:stonecutting/dark_oak_fence_from_stonecutting_dark_oak_log|}}} || 3
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Log]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Fence Gate]]{{{matcha:stonecutting/dark_oak_fence_gate_from_stonecutting_dark_oak_logs|}}} || 1
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Log]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Planks]]{{{matcha:stonecutting/dark_oak_planks_from_stonecutting_dark_oak_logs|}}} || 4
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Log]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Pressure Plate]]{{{matcha:stonecutting/dark_oak_pressure_plate_from_stonecutting_dark_oak_logs|}}} || 4
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Log]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Shelf]]{{{matcha:stonecutting/dark_oak_shelf_from_stonecutting_dark_oak_logs|}}} || 1
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Log]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Sign]]{{{matcha:stonecutting/dark_oak_sign_from_stonecutting_dark_oak_logs|}}} || 2
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Log]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Slab]]{{{matcha:stonecutting/dark_oak_slabs_from_stonecutting_dark_oak_logs|}}} || 8
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Log]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Stairs]]{{{matcha:stonecutting/dark_oak_stairs_from_stonecutting_dark_oak_logs|}}} || 4
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Log]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Trapdoor]]{{{matcha:stonecutting/dark_oak_trapoor_from_stonecutting_dark_oak_logs|}}} || 4
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Wood]] || [[Stripped Dark Oak Log]]{{{matcha:stonecutting/stripped_dark_oak_log_from_stonecutting_dark_oak_logs|}}} || 1
+|-
+| [[Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Log]] || [[Stripped Dark Oak Wood]]{{{matcha:stonecutting/stripped_dark_oak_wood_from_stonecutting_dark_oak_logs|}}} || 1
+|-
+| [[Dark Oak Planks]] || [[Dark Oak Button]]{{{matcha:stonecutting/dark_oak_button_from_stonecutting_dark_oak_planks|}}} || 2
+|-
+| [[Dark Oak Planks]] || [[Dark Oak Slab]]{{{matcha:stonecutting/dark_oak_slabs_from_stonecutting_dark_oak_planks|}}} || 2
+|-
+| [[Dark Oak Planks]] || [[Dark Oak Stairs]]{{{matcha:stonecutting/dark_oak_stairs_from_stonecutting_dark_oak_planks|}}} || 1
+|-
+| [[Dark Oak Planks]] || [[Dark Oak Trapdoor]]{{{matcha:stonecutting/dark_oak_trapdoor_from_stonecutting_dark_oak_planks|}}} || 1
+|-
+| [[Dark Oak Stairs]] || [[Dark Oak Planks]]{{{matcha:stonecutting/dark_oak_planks_from_stonecutting_dark_oak_stairs|}}} || 1
+|-
+| [[Dark Oak Trapdoor]] || [[Dark Oak Slab]]{{{matcha:stonecutting/dark_oak_slab_from_stonecutting_dark_oak_trapdoor|}}} || 1
+|-
+| [[Stripped Dark Oak Log]] or [[Dark Oak Wood]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Log]]{{{matcha:stonecutting/dark_oak_log_from_stonecutting_dark_oak_logs|}}} || 1
+|-
+| [[Stripped Dark Oak Log]] or [[Dark Oak Log]] or [[Stripped Dark Oak Wood]] || [[Dark Oak Wood]]{{{matcha:stonecutting/dark_oak_wood_from_stonecutting_dark_oak_log|}}} || 1
+|}
+==== Mangrove ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Log]] or [[Stripped Mangrove Wood]] || [[Mangrove Button]]{{{matcha:stonecutting/mangrove_button_from_stonecutting_mangrove_logs|}}} || 8
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Log]] or [[Stripped Mangrove Wood]] || [[Mangrove Door]]{{{matcha:stonecutting/mangrove_door_from_stonecutting_mangrove_logs|}}} || 2
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Log]] or [[Stripped Mangrove Wood]] || [[Mangrove Fence]]{{{matcha:stonecutting/mangrove_fence_from_stonecutting_mangrove_log|}}} || 3
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Log]] or [[Stripped Mangrove Wood]] || [[Mangrove Fence Gate]]{{{matcha:stonecutting/mangrove_fence_gate_from_stonecutting_mangrove_logs|}}} || 1
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Log]] or [[Stripped Mangrove Wood]] || [[Mangrove Planks]]{{{matcha:stonecutting/mangrove_planks_from_stonecutting_mangrove_logs|}}} || 4
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Log]] or [[Stripped Mangrove Wood]] || [[Mangrove Pressure Plate]]{{{matcha:stonecutting/mangrove_pressure_plate_from_stonecutting_mangrove_logs|}}} || 4
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Log]] or [[Stripped Mangrove Wood]] || [[Mangrove Shelf]]{{{matcha:stonecutting/mangrove_shelf_from_stonecutting_mangrove_logs|}}} || 1
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Log]] or [[Stripped Mangrove Wood]] || [[Mangrove Sign]]{{{matcha:stonecutting/mangrove_sign_from_stonecutting_mangrove_logs|}}} || 2
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Log]] or [[Stripped Mangrove Wood]] || [[Mangrove Slab]]{{{matcha:stonecutting/mangrove_slabs_from_stonecutting_mangrove_logs|}}} || 8
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Log]] or [[Stripped Mangrove Wood]] || [[Mangrove Stairs]]{{{matcha:stonecutting/mangrove_stairs_from_stonecutting_mangrove_logs|}}} || 4
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Log]] or [[Stripped Mangrove Wood]] || [[Mangrove Trapdoor]]{{{matcha:stonecutting/mangrove_trapoor_from_stonecutting_mangrove_logs|}}} || 4
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Wood]] || [[Stripped Mangrove Log]]{{{matcha:stonecutting/stripped_mangrove_log_from_stonecutting_mangrove_logs|}}} || 1
+|-
+| [[Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Log]] || [[Stripped Mangrove Wood]]{{{matcha:stonecutting/stripped_mangrove_wood_from_stonecutting_mangrove_logs|}}} || 1
+|-
+| [[Mangrove Planks]] || [[Mangrove Button]]{{{matcha:stonecutting/mangrove_button_from_stonecutting_mangrove_planks|}}} || 2
+|-
+| [[Mangrove Planks]] || [[Mangrove Slab]]{{{matcha:stonecutting/mangrove_slabs_from_stonecutting_mangrove_planks|}}} || 2
+|-
+| [[Mangrove Planks]] || [[Mangrove Stairs]]{{{matcha:stonecutting/mangrove_stairs_from_stonecutting_mangrove_planks|}}} || 1
+|-
+| [[Mangrove Planks]] || [[Mangrove Trapdoor]]{{{matcha:stonecutting/mangrove_trapdoor_from_stonecutting_mangrove_planks|}}} || 1
+|-
+| [[Mangrove Stairs]] || [[Mangrove Planks]]{{{matcha:stonecutting/mangrove_planks_from_stonecutting_mangrove_stairs|}}} || 1
+|-
+| [[Mangrove Trapdoor]] || [[Mangrove Slab]]{{{matcha:stonecutting/mangrove_slab_from_stonecutting_mangrove_trapdoor|}}} || 1
+|-
+| [[Stripped Mangrove Log]] or [[Mangrove Wood]] or [[Stripped Mangrove Wood]] || [[Mangrove Log]]{{{matcha:stonecutting/mangrove_log_from_stonecutting_mangrove_logs|}}} || 1
+|-
+| [[Stripped Mangrove Log]] or [[Mangrove Log]] or [[Stripped Mangrove Wood]] || [[Mangrove Wood]]{{{matcha:stonecutting/mangrove_wood_from_stonecutting_mangrove_log|}}} || 1
+|}
+==== Cherry ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Log]] or [[Stripped Cherry Wood]] || [[Cherry Button]]{{{matcha:stonecutting/cherry_button_from_stonecutting_cherry_logs|}}} || 8
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Log]] or [[Stripped Cherry Wood]] || [[Cherry Door]]{{{matcha:stonecutting/cherry_door_from_stonecutting_cherry_logs|}}} || 2
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Log]] or [[Stripped Cherry Wood]] || [[Cherry Fence]]{{{matcha:stonecutting/cherry_fence_from_stonecutting_cherry_log|}}} || 3
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Log]] or [[Stripped Cherry Wood]] || [[Cherry Fence Gate]]{{{matcha:stonecutting/cherry_fence_gate_from_stonecutting_cherry_logs|}}} || 1
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Log]] or [[Stripped Cherry Wood]] || [[Cherry Planks]]{{{matcha:stonecutting/cherry_planks_from_stonecutting_cherry_logs|}}} || 4
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Log]] or [[Stripped Cherry Wood]] || [[Cherry Pressure Plate]]{{{matcha:stonecutting/cherry_pressure_plate_from_stonecutting_cherry_logs|}}} || 4
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Log]] or [[Stripped Cherry Wood]] || [[Cherry Shelf]]{{{matcha:stonecutting/cherry_shelf_from_stoncutting_cherry_logs|}}} || 1
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Log]] or [[Stripped Cherry Wood]] || [[Cherry Sign]]{{{matcha:stonecutting/cherry_sign_from_stonecutting_cherry_logs|}}} || 2
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Log]] or [[Stripped Cherry Wood]] || [[Cherry Slab]]{{{matcha:stonecutting/cherry_slabs_from_stonecutting_cherry_logs|}}} || 8
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Log]] or [[Stripped Cherry Wood]] || [[Cherry Stairs]]{{{matcha:stonecutting/cherry_stairs_from_stonecutting_cherry_logs|}}} || 4
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Log]] or [[Stripped Cherry Wood]] || [[Cherry Trapdoor]]{{{matcha:stonecutting/cherry_trapoor_from_stonecutting_cherry_logs|}}} || 4
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Wood]] || [[Stripped Cherry Log]]{{{matcha:stonecutting/stripped_cherry_log_from_stonecutting_cherry_logs|}}} || 1
+|-
+| [[Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Log]] || [[Stripped Cherry Wood]]{{{matcha:stonecutting/stripped_cherry_wood_from_stonecutting_cherry_logs|}}} || 1
+|-
+| [[Cherry Planks]] || [[Cherry Button]]{{{matcha:stonecutting/cherry_button_from_stonecutting_cherry_planks|}}} || 2
+|-
+| [[Cherry Planks]] || [[Cherry Slab]]{{{matcha:stonecutting/cherry_slabs_from_stonecutting_cherry_planks|}}} || 2
+|-
+| [[Cherry Planks]] || [[Cherry Stairs]]{{{matcha:stonecutting/cherry_stairs_from_stonecutting_cherry_planks|}}} || 1
+|-
+| [[Cherry Planks]] || [[Cherry Trapdoor]]{{{matcha:stonecutting/cherry_trapdoor_from_stonecutting_cherry_planks|}}} || 1
+|-
+| [[Cherry Stairs]] || [[Cherry Planks]]{{{matcha:stonecutting/cherry_planks_from_stonecutting_cherry_stairs|}}} || 1
+|-
+| [[Cherry Trapdoor]] || [[Cherry Slab]]{{{matcha:stonecutting/cherry_slab_from_stonecutting_cherry_trapdoor|}}} || 1
+|-
+| [[Stripped Cherry Log]] or [[Cherry Wood]] or [[Stripped Cherry Wood]] || [[Cherry Log]]{{{matcha:stonecutting/cherry_log_from_stonecutting_cherry_logs|}}} || 1
+|-
+| [[Stripped Cherry Log]] or [[Cherry Log]] or [[Stripped Cherry Wood]] || [[Cherry Wood]]{{{matcha:stonecutting/cherry_wood_from_stonecutting_cherry_log|}}} || 1
+|}
+==== Pale Oak ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Log]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Button]]{{{matcha:stonecutting/pale_oak_button_from_stonecutting_pale_oak_logs|}}} || 8
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Log]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Door]]{{{matcha:stonecutting/pale_oak_door_from_stonecutting_pale_oak_logs|}}} || 2
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Log]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Fence]]{{{matcha:stonecutting/pale_oak_fence_from_stonecutting_pale_oak_log|}}} || 3
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Log]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Fence Gate]]{{{matcha:stonecutting/pale_oak_fence_gate_from_stonecutting_pale_oak_logs|}}} || 1
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Log]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Planks]]{{{matcha:stonecutting/pale_oak_planks_from_stonecutting_pale_oak_logs|}}} || 4
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Log]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Pressure Plate]]{{{matcha:stonecutting/pale_oak_pressure_plate_from_stonecutting_pale_oak_logs|}}} || 4
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Log]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Shelf]]{{{matcha:stonecutting/pale_oak_shelf_from_stonecutting_pale_oak_logs|}}} || 1
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Log]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Sign]]{{{matcha:stonecutting/pale_oak_sign_from_stonecutting_pale_oak_logs|}}} || 2
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Log]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Slab]]{{{matcha:stonecutting/pale_oak_slabs_from_stonecutting_pale_oak_logs|}}} || 8
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Log]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Stairs]]{{{matcha:stonecutting/pale_oak_stairs_from_stonecutting_pale_oak_logs|}}} || 4
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Log]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Trapdoor]]{{{matcha:stonecutting/pale_oak_trapoor_from_stonecutting_pale_oak_logs|}}} || 4
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Wood]] || [[Stripped Pale Oak Log]]{{{matcha:stonecutting/stripped_pale_oak_log_from_stonecutting_pale_oak_logs|}}} || 1
+|-
+| [[Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Log]] || [[Stripped Pale Oak Wood]]{{{matcha:stonecutting/stripped_pale_oak_wood_from_stonecutting_pale_oak_logs|}}} || 1
+|-
+| [[Pale Oak Planks]] || [[Pale Oak Button]]{{{matcha:stonecutting/pale_oak_button_from_stonecutting_pale_oak_planks|}}} || 2
+|-
+| [[Pale Oak Planks]] || [[Pale Oak Slab]]{{{matcha:stonecutting/pale_oak_slabs_from_stonecutting_pale_oak_planks|}}} || 2
+|-
+| [[Pale Oak Planks]] || [[Pale Oak Stairs]]{{{matcha:stonecutting/pale_oak_stairs_from_stonecutting_pale_oak_planks|}}} || 1
+|-
+| [[Pale Oak Planks]] || [[Pale Oak Trapdoor]]{{{matcha:stonecutting/pale_oak_trapdoor_from_stonecutting_pale_oak_planks|}}} || 1
+|-
+| [[Pale Oak Stairs]] || [[Pale Oak Planks]]{{{matcha:stonecutting/pale_oak_planks_from_stonecutting_pale_oak_stairs|}}} || 1
+|-
+| [[Pale Oak Trapdoor]] || [[Pale Oak Slab]]{{{matcha:stonecutting/pale_oak_slab_from_stonecutting_pale_oak_trapdoor|}}} || 1
+|-
+| [[Stripped Pale Oak Log]] or [[Pale Oak Wood]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Log]]{{{matcha:stonecutting/pale_oak_log_from_stonecutting_pale_oak_logs|}}} || 1
+|-
+| [[Stripped Pale Oak Log]] or [[Pale Oak Log]] or [[Stripped Pale Oak Wood]] || [[Pale Oak Wood]]{{{matcha:stonecutting/pale_oak_wood_from_stonecutting_pale_oak_log|}}} || 1
+|}
+==== Crimson ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Crimson Hyphae]] || [[Crimson Stem]]{{{matcha:stonecutting/crimson_stem_from_stonecutting_crimson_stems|}}} || 1
+|-
+| [[Crimson Hyphae]] or [[Crimson Stem]] or [[Stripped Crimson Stem]] || [[Stripped Crimson Hyphae]]{{{matcha:stonecutting/stripped_crimson_hyphae_from_stonecutting_crimson_stems|}}} || 1
+|-
+| [[Crimson Hyphae]] or [[Crimson Stem]] or [[Stripped Crimson Hyphae]] || [[Stripped Crimson Stem]]{{{matcha:stonecutting/stripped_crimson_stem_from_stonecutting_crimson_stems|}}} || 1
+|-
+| [[Crimson Planks]] || [[Crimson Button]]{{{matcha:stonecutting/crimson_button_from_stonecutting_crimson_planks|}}} || 2
+|-
+| [[Crimson Planks]] || [[Crimson Slab]]{{{matcha:stonecutting/crimson_slab_from_stonecutting_crimson_planks|}}} || 2
+|-
+| [[Crimson Planks]] || [[Crimson Stairs]]{{{matcha:stonecutting/crimson_stairs_from_stonecutting_crimson_planks|}}} || 1
+|-
+| [[Crimson Planks]] || [[Crimson Trapdoor]]{{{matcha:stonecutting/crimson_trapdoor_from_stonecutting_crimson_planks|}}} || 1
+|-
+| [[Crimson Stairs]] || [[Crimson Planks]]{{{matcha:stonecutting/crimson_planks_from_stonecutting_crimson_stairs|}}} || 1
+|-
+| [[Crimson Stem]] or [[Stripped Crimson Stem]] or [[Crimson Hyphae]] or [[Stripped Crimson Hyphae]] || [[Crimson Button]]{{{matcha:stonecutting/crimson_button_from_stonecutting_crimson_stem|}}} || 8
+|-
+| [[Crimson Stem]] or [[Stripped Crimson Stem]] or [[Crimson Hyphae]] or [[Stripped Crimson Hyphae]] || [[Crimson Door]]{{{matcha:stonecutting/crimson_door_from_stonecutting_crimson_stem|}}} || 2
+|-
+| [[Crimson Stem]] or [[Stripped Crimson Stem]] or [[Crimson Hyphae]] or [[Stripped Crimson Hyphae]] || [[Crimson Fence]]{{{matcha:stonecutting/crimson_fence_from_stonecutting_crimson_stem|}}} || 3
+|-
+| [[Crimson Stem]] or [[Stripped Crimson Stem]] or [[Crimson Hyphae]] or [[Stripped Crimson Hyphae]] || [[Crimson Fence Gate]]{{{matcha:stonecutting/crimson_gate_from_stonecutting_crimson_stem|}}} || 1
+|-
+| [[Crimson Stem]] || [[Crimson Hyphae]]{{{matcha:stonecutting/crimson_hyphae_from_stonecutting_crimson_stem|}}} || 1
+|-
+| [[Crimson Stem]] or [[Stripped Crimson Stem]] or [[Crimson Hyphae]] or [[Stripped Crimson Hyphae]] || [[Crimson Planks]]{{{matcha:stonecutting/crimson_planks_from_stonecutting_crimson_stem|}}} || 4
+|-
+| [[Crimson Stem]] or [[Stripped Crimson Stem]] or [[Crimson Hyphae]] or [[Stripped Crimson Hyphae]] || [[Crimson Pressure Plate]]{{{matcha:stonecutting/crimson_pressure_plate_from_stonecutting_crimson_stem|}}} || 4
+|-
+| [[Crimson Stem]] or [[Stripped Crimson Stem]] or [[Crimson Hyphae]] or [[Stripped Crimson Hyphae]] || [[Crimson Shelf]]{{{matcha:stonecutting/crimson_shelf_from_stonecutting_crimson_stems|}}} || 1
+|-
+| [[Crimson Stem]] or [[Stripped Crimson Stem]] or [[Crimson Hyphae]] or [[Stripped Crimson Hyphae]] || [[Crimson Sign]]{{{matcha:stonecutting/crimson_sign_from_stonecutting_crimson_stem|}}} || 2
+|-
+| [[Crimson Stem]] or [[Stripped Crimson Stem]] or [[Crimson Hyphae]] or [[Stripped Crimson Hyphae]] || [[Crimson Slab]]{{{matcha:stonecutting/crimson_slab_from_stonecutting_crimson_stem|}}} || 8
+|-
+| [[Crimson Stem]] or [[Stripped Crimson Stem]] or [[Crimson Hyphae]] or [[Stripped Crimson Hyphae]] || [[Crimson Stairs]]{{{matcha:stonecutting/crimson_stairs_from_stonecutting_crimson_stem|}}} || 4
+|-
+| [[Crimson Stem]] or [[Stripped Crimson Stem]] or [[Crimson Hyphae]] or [[Stripped Crimson Hyphae]] || [[Crimson Trapdoor]]{{{matcha:stonecutting/crimson_trapdoor_from_stonecutting_crimson_stem|}}} || 4
+|-
+| [[Crimson Trapdoor]] || [[Crimson Slab]]{{{matcha:stonecutting/crimson_slab_from_stonecutting_crimson_trapdoor|}}} || 1
+|}
+==== Warped ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Warped Hyphae]] or [[Warped Stem]] or [[Stripped Warped Stem]] || [[Stripped Warped Hyphae]]{{{matcha:stonecutting/stripped_warped_hyphae_from_stonecutting_warped_stems|}}} || 1
+|-
+| [[Warped Hyphae]] or [[Warped Stem]] or [[Stripped Warped Hyphae]] || [[Stripped Warped Stem]]{{{matcha:stonecutting/stripped_warped_stem_from_stonecutting_warped_stems|}}} || 1
+|-
+| [[Warped Hyphae]] || [[Warped Stem]]{{{matcha:stonecutting/warped_stem_from_stonecutting_warped_stems|}}} || 1
+|-
+| [[Warped Planks]] || [[Warped Button]]{{{matcha:stonecutting/warped_button_from_stonecutting_warped_planks|}}} || 2
+|-
+| [[Warped Planks]] || [[Warped Slab]]{{{matcha:stonecutting/warped_slab_from_stonecutting_warped_planks|}}} || 2
+|-
+| [[Warped Planks]] || [[Warped Stairs]]{{{matcha:stonecutting/warped_stairs_from_stonecutting_warped_planks|}}} || 1
+|-
+| [[Warped Planks]] || [[Warped Trapdoor]]{{{matcha:stonecutting/warped_trapdoor_from_stonecutting_warped_planks|}}} || 1
+|-
+| [[Warped Stairs]] || [[Warped Planks]]{{{matcha:stonecutting/warped_planks_from_stonecutting_warped_stairs|}}} || 1
+|-
+| [[Warped Stem]] or [[Stripped Warped Stem]] or [[Warped Hyphae]] or [[Stripped Warped Hyphae]] || [[Warped Button]]{{{matcha:stonecutting/warped_button_from_stonecutting_warped_stem|}}} || 8
+|-
+| [[Warped Stem]] or [[Stripped Warped Stem]] or [[Warped Hyphae]] or [[Stripped Warped Hyphae]] || [[Warped Door]]{{{matcha:stonecutting/warped_door_from_stonecutting_warped_stem|}}} || 2
+|-
+| [[Warped Stem]] or [[Stripped Warped Stem]] or [[Warped Hyphae]] or [[Stripped Warped Hyphae]] || [[Warped Fence]]{{{matcha:stonecutting/warped_fence_from_stonecutting_warped_stem|}}} || 3
+|-
+| [[Warped Stem]] or [[Stripped Warped Stem]] or [[Warped Hyphae]] or [[Stripped Warped Hyphae]] || [[Warped Fence Gate]]{{{matcha:stonecutting/warped_gate_from_stonecutting_warped_stem|}}} || 1
+|-
+| [[Warped Stem]] || [[Warped Hyphae]]{{{matcha:stonecutting/warped_hyphae_from_stonecutting_warped_stem|}}} || 1
+|-
+| [[Warped Stem]] or [[Stripped Warped Stem]] or [[Warped Hyphae]] or [[Stripped Warped Hyphae]] || [[Warped Planks]]{{{matcha:stonecutting/warped_planks_from_stonecutting_warped_stem|}}} || 4
+|-
+| [[Warped Stem]] or [[Stripped Warped Stem]] or [[Warped Hyphae]] or [[Stripped Warped Hyphae]] || [[Warped Pressure Plate]]{{{matcha:stonecutting/warped_pressure_plate_from_stonecutting_warped_stem|}}} || 4
+|-
+| [[Warped Stem]] or [[Stripped Warped Stem]] or [[Warped Hyphae]] or [[Stripped Warped Hyphae]] || [[Warped Shelf]]{{{matcha:stonecutting/warped_shelf_from_stonecutting_warped_stems|}}} || 1
+|-
+| [[Warped Stem]] or [[Stripped Warped Stem]] or [[Warped Hyphae]] or [[Stripped Warped Hyphae]] || [[Warped Sign]]{{{matcha:stonecutting/warped_sign_from_stonecutting_warped_stem|}}} || 2
+|-
+| [[Warped Stem]] or [[Stripped Warped Stem]] or [[Warped Hyphae]] or [[Stripped Warped Hyphae]] || [[Warped Slab]]{{{matcha:stonecutting/warped_slab_from_stonecutting_warped_stem|}}} || 8
+|-
+| [[Warped Stem]] or [[Stripped Warped Stem]] or [[Warped Hyphae]] or [[Stripped Warped Hyphae]] || [[Warped Stairs]]{{{matcha:stonecutting/warped_stairs_from_stonecutting_warped_stem|}}} || 4
+|-
+| [[Warped Stem]] or [[Stripped Warped Stem]] or [[Warped Hyphae]] or [[Stripped Warped Hyphae]] || [[Warped Trapdoor]]{{{matcha:stonecutting/warped_trapdoor_from_stonecutting_warped_stem|}}} || 4
+|-
+| [[Warped Trapdoor]] || [[Warped Slab]]{{{matcha:stonecutting/warped_slab_from_stonecutting_warped_trapdoor|}}} || 1
+|}
+==== Bamboo ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Bamboo Mosaic]] || [[Bamboo Mosaic Slab]]{{{matcha:stonecutting/bamboo_mosaic_slab_from_stonecutting_bamboo_mosaic|}}} || 2
+|-
+| [[Bamboo Mosaic]] || [[Bamboo Mosaic Stairs]]{{{matcha:stonecutting/bamboo_mosaic_stair_from_stonecutting_bamboo_mosaic|}}} || 1
+|-
+| [[Bamboo Mosaic Stairs]] || [[Bamboo Mosaic]]{{{matcha:stonecutting/bamboo_mosaic_from_stonecutting_bamboo_mosaic_stairs|}}} || 1
+|-
+| [[Bamboo Planks]] or [[Bamboo Mosaic]] || [[Bamboo Button]]{{{matcha:stonecutting/bamboo_button_from_stonecutting_bamboo_planks|}}} || 1
+|-
+| [[Bamboo Planks]] || [[Bamboo Slab]]{{{matcha:stonecutting/bamboo_slab_from_stonecutting_bamboo_planks|}}} || 2
+|-
+| [[Bamboo Planks]] || [[Bamboo Stairs]]{{{matcha:stonecutting/bamboo_stairs_from_stonecutting_bamboo_planks|}}} || 1
+|-
+| [[Bamboo Planks]] or [[Bamboo Mosaic]] || [[Bamboo Trapdoor]]{{{matcha:stonecutting/bamboo_trapdoor_from_stonecutting_bamboo_planks|}}} || 1
+|-
+| [[Bamboo Stairs]] || [[Bamboo Planks]]{{{matcha:stonecutting/bamboo_planks_from_stonecutting_bamboo_stairs|}}} || 1
+|-
+| [[Bamboo Trapdoor]] || [[Bamboo Slab]]{{{matcha:stonecutting/bamboo_slab_from_stonecutting_bamboo_trapdoor|}}} || 1
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Button]]{{{matcha:stonecutting/bamboo_button_from_stonecutting_bamboo_block|}}} || 4
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Door]]{{{matcha:stonecutting/bamboo_door_from_stonecutting_bamboo_block|}}} || 1
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Fence]]{{{matcha:stonecutting/bamboo_fence_from_stonecutting_bamboo_block|}}} || 2
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Fence Gate]]{{{matcha:stonecutting/bamboo_fence_gate_from_stonecutting_bamboo_block|}}} || 1
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Mosaic]]{{{matcha:stonecutting/bamboo_mosaic_from_stonecutting_bamboo_block|}}} || 2
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Mosaic Slab]]{{{matcha:stonecutting/bamboo_mosaic_slab_from_stonecutting_bamboo_block|}}} || 4
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Mosaic Stairs]]{{{matcha:stonecutting/bamboo_mosaic_stairs_from_stonecutting_bamboo_block|}}} || 2
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Planks]]{{{matcha:stonecutting/bamboo_planks_from_stonecutting_bamboo_block|}}} || 2
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Pressure Plate]]{{{matcha:stonecutting/bamboo_pressure_plate_from_stonecutting_bamboo_block|}}} || 2
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Shelf]]{{{matcha:stonecutting/bamboo_shelf_from_stonecutting_bamboo_blocks|}}} || 1
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Sign]]{{{matcha:stonecutting/bamboo_sign_from_stonecutting_bamboo_block|}}} || 1
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Slab]]{{{matcha:stonecutting/bamboo_slab_from_stonecutting_bamboo_block|}}} || 4
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Stairs]]{{{matcha:stonecutting/bamboo_stairs_from_stonecutting_bamboo_block|}}} || 2
+|-
+| {{MCW|Block of Bamboo}} or [[Block of Stripped Bamboo]] || [[Bamboo Trapdoor]]{{{matcha:stonecutting/bamboo_trapdoor_from_stonecutting_bamboo_block|}}} || 2
+|-
+| {{MCW|Block of Bamboo}} || [[Block of Stripped Bamboo]]{{{matcha:stonecutting/stripped_bamboo_block_from_stonecutting_bamboo_block|}}} || 1
+|}</includeonly><noinclude>Every stonecutter recipe the pack adds, grouped for the [[Stonecutter]] article. A note for a recipe goes in a parameter named by its ID. Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>
