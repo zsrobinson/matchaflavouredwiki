@@ -1,0 +1,704 @@
+<includeonly>=== Crafting: building blocks ===
+{| class="wikitable sortable"
+! Item !! Vanilla recipe !! Still made with
+|-
+| {{ItemLink|Bamboo Planks}} ×2 || <code>bamboo_planks</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Block of Coal}} || <code>coal_block</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Bookshelf}} || <code>bookshelf</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Bricks}} || <code>bricks</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Brown Sandstone}} ×4<br /><small>(vanilla {{MCW|End Stone Bricks}})</small> || <code>end_stone_bricks</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Cinnabar}} || <code>chiseled_cinnabar</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Copper|mcw=Chiseled Copper}} || <code>chiseled_copper</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Deepslate|mcw=Chiseled Deepslate}} || <code>chiseled_deepslate</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Hellbricks}}<br /><small>(vanilla {{MCW|Chiseled Nether Bricks}})</small> || <code>chiseled_nether_bricks</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Polished Blackstone|mcw=Chiseled Polished Blackstone}} || <code>chiseled_polished_blackstone</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Quartz Block|mcw=Chiseled Quartz Block}} || <code>chiseled_quartz_block</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Red Sandstone|mcw=Chiseled Red Sandstone}} || <code>chiseled_red_sandstone</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Resin Bricks|mcw=Chiseled Resin Bricks}} || <code>chiseled_resin_bricks</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Sandstone|mcw=Chiseled Sandstone}} || <code>chiseled_sandstone</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Stone Bricks|mcw=Chiseled Stone Bricks}} || <code>chiseled_stone_bricks</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Sulfur}} || <code>chiseled_sulfur</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Tuff|mcw=Chiseled Tuff}} || <code>chiseled_tuff</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Chiseled Tuff Bricks|mcw=Chiseled Tuff Bricks}} || <code>chiseled_tuff_bricks</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Dark Malachite}}<br /><small>(vanilla {{MCW|Dark Prismarine}})</small> || <code>dark_prismarine</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Diorite}} ×2 || <code>diorite</code> || [[Blast Furnace]], [[Crafting Table]]
+|-
+| {{ItemLink|Exposed Chiseled Copper}} || <code>exposed_chiseled_copper</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Hay Bale}} || <code>hay_block</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Magma Block}} || <code>magma_block</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Malachite}}<br /><small>(vanilla {{MCW|Prismarine}})</small> || <code>prismarine</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Malachite Bricks}}<br /><small>(vanilla {{MCW|Prismarine Bricks}})</small> || <code>prismarine_bricks</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Malachite Lantern}}<br /><small>(vanilla {{MCW|Sea Lantern}})</small> || <code>sea_lantern</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Oxidized Chiseled Copper}} || <code>oxidized_chiseled_copper</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Packed Mud}} || <code>packed_mud</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Potent Sulfur}} || <code>potent_sulfur</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Purpur Pillar|mcw=Purpur Pillar}} || <code>purpur_pillar</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Red Sandstone}} || <code>red_sandstone</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Resin Bricks}} || <code>resin_bricks</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Sandstone}} || <code>sandstone</code> || [[Blast Furnace]], [[Crafting Table]]
+|-
+| {{ItemLink|Tinted Glass}} ×2 || <code>tinted_glass</code> || [[Crafting Table]], [[Mud Kiln]]
+|-
+| {{ItemLink|Waxed Chiseled Copper|mcw=Waxed Chiseled Copper}} || <code>waxed_chiseled_copper</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Waxed Exposed Chiseled Copper|mcw=Waxed Exposed Chiseled Copper}} || <code>waxed_exposed_chiseled_copper</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Waxed Oxidized Chiseled Copper|mcw=Waxed Oxidized Chiseled Copper}} || <code>waxed_oxidized_chiseled_copper</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Waxed Weathered Chiseled Copper|mcw=Waxed Weathered Chiseled Copper}} || <code>waxed_weathered_chiseled_copper</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Weathered Chiseled Copper}} || <code>weathered_chiseled_copper</code> || [[Crafting Table]], [[Stonecutter]]
+|}
+
+=== Crafting: redstone ===
+{| class="wikitable sortable"
+! Item !! Vanilla recipe !! Still made with
+|-
+| {{ItemLink|Copper Bulb}} ×4 || <code>copper_bulb</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Eye}}<br /><small>(vanilla {{MCW|Target}})</small> || <code>target</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Trapdoor}} || <code>copper_trapdoor</code> || [[Stonecutter]]
+|-
+| {{ItemLink|Electric Block}}<br /><small>(vanilla {{MCW|Block of Redstone}})</small> || <code>redstone_block</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Electric Inverter}}<br /><small>(vanilla {{MCW|Redstone Torch}})</small> || <code>redstone_torch</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Electric Wire}} ×9<br /><small>(vanilla {{MCW|Redstone Dust}})</small> || <code>redstone</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Exposed Copper Bulb}} ×4 || <code>exposed_copper_bulb</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Honey Block}} || <code>honey_block</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Hopper}} || <code>hopper</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Door}} ×3 || <code>iron_door</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Iron Trapdoor}} || <code>iron_trapdoor</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Oxidized Copper Bulb}} ×4 || <code>oxidized_copper_bulb</code> || [[Crafting Table]]
+|-
+| {{ItemLink|TNT}} || <code>tnt</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Trapped Chest}} || <code>trapped_chest</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Waxed Copper Bulb}} ×4 || <code>waxed_copper_bulb</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Waxed Exposed Copper Bulb}} ×4 || <code>waxed_exposed_copper_bulb</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Waxed Oxidized Copper Bulb}} ×4 || <code>waxed_oxidized_copper_bulb</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Waxed Weathered Copper Bulb}} ×4 || <code>waxed_weathered_copper_bulb</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Weathered Copper Bulb}} ×4 || <code>weathered_copper_bulb</code> || [[Crafting Table]]
+|}
+
+=== Crafting: equipment ===
+{| class="wikitable sortable"
+! Item !! Vanilla recipe !! Still made with
+|-
+| {{ItemLink|Arrow}} ×4 || <code>arrow</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Bundle}} || <code>bundle</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Clock}} || <code>clock</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Axe}} || <code>copper_axe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Boots}} || <code>copper_boots</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Chestplate}} || <code>copper_chestplate</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Helmet}} || <code>copper_helmet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Hoe}} || <code>copper_hoe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Leggings}} || <code>copper_leggings</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Pickaxe}} || <code>copper_pickaxe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Shovel}} || <code>copper_shovel</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Spear}} || <code>copper_spear</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Sword}} || <code>copper_sword</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Diamond Axe}} || <code>diamond_axe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Diamond Boots}} || <code>diamond_boots</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Diamond Chestplate}} || <code>diamond_chestplate</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Diamond Helmet}} || <code>diamond_helmet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Diamond Hoe}} || <code>diamond_hoe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Diamond Leggings}} || <code>diamond_leggings</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Diamond Pickaxe}} || <code>diamond_pickaxe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Diamond Shovel}} || <code>diamond_shovel</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Diamond Spear}} || <code>diamond_spear</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Diamond Sword}} || <code>diamond_sword</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Fire Starter}}<br /><small>(vanilla {{MCW|Flint and Steel}})</small> || <code>flint_and_steel</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Golden Axe}} || <code>golden_axe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Golden Boots}} || <code>golden_boots</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Golden Chestplate}} || <code>golden_chestplate</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Golden Crown}} || <code>golden_helmet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Golden Hoe}} || <code>golden_hoe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Golden Leggings}} || <code>golden_leggings</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Golden Pickaxe}} || <code>golden_pickaxe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Golden Shovel}} || <code>golden_shovel</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Golden Spear}} || <code>golden_spear</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Golden Sword}} || <code>golden_sword</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Axe}} || <code>iron_axe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Boots}} || <code>iron_boots</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Chestplate}} || <code>iron_chestplate</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Helmet}} || <code>iron_helmet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Hoe}} || <code>iron_hoe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Leggings}} || <code>iron_leggings</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Pickaxe}} || <code>iron_pickaxe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Shears}}<br /><small>(vanilla {{MCW|Shears}})</small> || <code>shears</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Shovel}} || <code>iron_shovel</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Spear}} || <code>iron_spear</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Sword}} || <code>iron_sword</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Leather Boots}} || <code>leather_boots</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Leather Hood}} || <code>leather_helmet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Leather Pants}} || <code>leather_leggings</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Leather Pauldron}} || <code>leather_chestplate</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Mace}} || <code>mace</code> || [[Crafting Table]]
+|-
+| {{MCW|Recovery Compass}} || <code>recovery_compass</code> || None
+|-
+| {{ItemLink|Spyglass}} || <code>spyglass</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Stone Axe}} || <code>stone_axe</code> || None
+|-
+| {{ItemLink|Stone Hoe}} || <code>stone_hoe</code> || None
+|-
+| {{ItemLink|Stone Pickaxe}} || <code>stone_pickaxe</code> || None
+|-
+| {{ItemLink|Stone Shovel}} || <code>stone_shovel</code> || None
+|-
+| [[Stone Spear]] || <code>stone_spear</code> || None
+|-
+| [[Stone Sword]] || <code>stone_sword</code> || None
+|-
+| {{ItemLink|Turtle Shellmet}}<br /><small>(vanilla {{MCW|Turtle Shell}})</small> || <code>turtle_helmet</code> || None
+|-
+| {{ItemLink|Wooden Axe}} || <code>wooden_axe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Wooden Hoe}} || <code>wooden_hoe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Wooden Pickaxe}} || <code>wooden_pickaxe</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Wooden Shovel}} || <code>wooden_shovel</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Wooden Spear}} || <code>wooden_spear</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Wooden Sword}} || <code>wooden_sword</code> || [[Crafting Table]]
+|}
+
+=== Crafting: miscellaneous ===
+{| class="wikitable sortable"
+! Item !! Vanilla recipe !! Still made with
+|-
+| [[Repairing|Combining two damaged items]] || <code>repair_item</code> || [[Anvil]]
+|-
+| {{ItemLink|Activator Rail}} ×6 || <code>activator_rail</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Adamant Alloy}}<br /><small>(vanilla {{MCW|Netherite Ingot}})</small> || <code>netherite_ingot</code> || [[Blast Furnace]], [[Crafting Table]]
+|-
+| {{ItemLink|Baked Apple}}<br /><small>(vanilla {{MCW|Fermented Spider Eye}})</small> || <code>fermented_spider_eye</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Baked Golden Apple}} || <code>glistering_melon_slice</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Bamboo Mosaic}} || <code>bamboo_mosaic</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Black Banner}} || <code>black_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Black Carpet}} ×3 || <code>black_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Black Dye}} || <code>black_dye</code>, <code>black_dye_from_wither_rose</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Blast Furnace}} || <code>blast_furnace</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Blue Banner}} || <code>blue_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Blue Carpet}} ×3 || <code>blue_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Blue Dye}} || <code>blue_dye</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Bowl}} ×4 || <code>bowl</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Bread}} || <code>bread</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Brown Banner}} || <code>brown_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Brown Carpet}} ×3 || <code>brown_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Bucket}} || <code>bucket</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Cake}} || <code>cake</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Cauldron}} || <code>cauldron</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Cheese}} ×8<br /><small>(vanilla {{MCW|Cookie}})</small> || <code>cookie</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Chemistry Stand}}<br /><small>(vanilla {{MCW|Brewing Stand}})</small> || <code>brewing_stand</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Chest}} || <code>chest</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Chocolate}}<br /><small>(vanilla {{MCW|Mushroom Stew}})</small> || <code>mushroom_stew</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Conduit}} || <code>conduit</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Chain}} || <code>copper_chain</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Copper Lantern}} || <code>copper_lantern</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Torch}} ×4 || <code>copper_torch</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Cyan Banner}} || <code>cyan_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Cyan Carpet}} ×3 || <code>cyan_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Detector Rail}} ×6 || <code>detector_rail</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Dried Kelp}} ×9 || <code>dried_kelp</code> || [[Crafting Table]], [[Oven]]
+|-
+| {{MCW|Enchanting Table}} || <code>enchanting_table</code> || None
+|-
+| {{ItemLink|Ender Chest}} || <code>ender_chest</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Eye of Ender}} || <code>ender_eye</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Fire Charge}} ×3 || <code>fire_charge</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Flow Armor Trim Smithing Template}} ×2 || <code>flow_armor_trim_smithing_template</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Glass Bottle}} ×3 || <code>glass_bottle</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Golden Apple}} || <code>golden_apple</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Golden Carrot}} || <code>golden_carrot</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Gray Banner}} || <code>gray_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Gray Carpet}} ×3 || <code>gray_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Green Banner}} || <code>green_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Green Carpet}} ×3 || <code>green_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Bars}} ×16 || <code>iron_bars</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Iron Chain}} || <code>iron_chain</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Item Frame}} || <code>item_frame</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Jukebox}} || <code>jukebox</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Kindling}}<br /><small>(vanilla {{MCW|Campfire}})</small> || <code>campfire</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Ladder}} ×3 || <code>ladder</code> || [[Crafting Table]], [[Stonecutter]]
+|-
+| {{ItemLink|Lantern}} || <code>lantern</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Light Blue Banner}} || <code>light_blue_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Light Blue Carpet}} ×3 || <code>light_blue_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Light Gray Banner}} || <code>light_gray_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Light Gray Carpet}} ×3 || <code>light_gray_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Lime Banner}} || <code>lime_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Lime Carpet}} ×3 || <code>lime_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Magenta Banner}} || <code>magenta_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Magenta Carpet}} ×3 || <code>magenta_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Milk Bottle}}<br /><small>(vanilla {{MCW|Beetroot Soup}})</small> || <code>beetroot_soup</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Minecart}} || <code>minecart</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Moss Carpet}} ×3 || <code>moss_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Mud Kiln}}<br /><small>(vanilla {{MCW|Smoker}})</small> || <code>smoker</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Music Disc (Samuel Åberg - 5)}}<br /><small>(vanilla {{MCW|Music Disc}})</small> || <code>music_disc_5</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Orange Banner}} || <code>orange_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Orange Carpet}} ×3 || <code>orange_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Oven}}<br /><small>(vanilla {{MCW|Furnace}})</small> || <code>furnace</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Pale Moss Carpet}} ×3 || <code>pale_moss_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Phosphor Rod}} ×4<br /><small>(vanilla {{MCW|End Rod}})</small> || <code>end_rod</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Pink Banner}} || <code>pink_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Pink Carpet}} ×3 || <code>pink_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Pink Dye}} ×2 || <code>pink_dye_from_peony</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Powered Rail}} ×6 || <code>powered_rail</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Pumpkin Pie|mcw=Pumpkin Pie}} || <code>pumpkin_pie</code> || None
+|-
+| {{ItemLink|Purple Banner}} || <code>purple_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Purple Carpet}} ×3 || <code>purple_carpet</code> || [[Crafting Table]]
+|-
+| [[Rabbit Stew]] || <code>rabbit_stew_from_brown_mushroom</code>, <code>rabbit_stew_from_red_mushroom</code> || None
+|-
+| {{ItemLink|Rail}} ×16 || <code>rail</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Raw Estus}} ×2<br /><small>(vanilla {{MCW|Blaze Powder}})</small> || <code>blaze_powder</code> || None
+|-
+| {{ItemLink|Red Banner}} || <code>red_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Red Carpet}} ×3 || <code>red_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Red Dye}} || <code>red_dye_from_beetroot</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Sack}}<br /><small>(vanilla {{MCW|Shulker Box}})</small> || <code>shulker_box</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Slimeball}} ×9 || <code>slime_ball</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Smithing Table}} || <code>smithing_table</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Smithing Upgrade Template}} ×2<br /><small>(vanilla {{MCW|Netherite Upgrade Smithing Template}})</small> || <code>netherite_upgrade_smithing_template</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Snow}} ×6 || <code>snow</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Soul Kindling}}<br /><small>(vanilla {{MCW|Soul Campfire}})</small> || <code>soul_campfire</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Soul Lantern}} || <code>soul_lantern</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Soul Torch}} ×4 || <code>soul_torch</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Straw}} ×9<br /><small>(vanilla {{MCW|Wheat}})</small> || <code>wheat</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Sugar}} ×3 || <code>sugar_from_honey_bottle</code> || [[Crafting Table]]
+|-
+| {{MCW|Suspicious Stew}} || <code>suspicious_stew_from_*</code> (17 recipes) || None
+|-
+| {{ItemLink|Sweet Berry Mash}}<br /><small>(vanilla {{MCW|Magma Cream}})</small> || <code>magma_cream</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Torch}} ×4 || <code>torch</code> || [[Crafting Table]]
+|-
+| {{ItemLink|White Banner}} || <code>white_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|White Carpet}} ×3 || <code>white_carpet</code> || [[Crafting Table]]
+|-
+| {{ItemLink|White Dye}} || <code>white_dye</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Wind Charge|mcw=Wind Charge}} ×4 || <code>wind_charge</code> || None
+|-
+| {{ItemLink|Yellow Banner}} || <code>yellow_banner</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Yellow Carpet}} ×3 || <code>yellow_carpet</code> || [[Crafting Table]]
+|}
+
+=== [[Oven]] (furnace) ===
+{| class="wikitable sortable"
+! Item !! Vanilla recipe !! Still made with
+|-
+| {{ItemLink|Adamant Scrap}}<br /><small>(vanilla {{MCW|Netherite Scrap}})</small> || <code>netherite_scrap</code> || [[Blast Furnace]]
+|-
+| {{ItemLink|Baked Potato}} || <code>baked_potato</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Black Glazed Terracotta}} || <code>black_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Blue Glazed Terracotta}} || <code>blue_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Brick}} || <code>brick</code> || [[Crafting Table]], [[Kindling]], [[Mud Kiln]]
+|-
+| {{ItemLink|Brown Glazed Terracotta}} || <code>brown_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Coal|mcw=Coal}} || <code>coal_from_smelting_coal_ore</code>, <code>coal_from_smelting_deepslate_coal_ore</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Cooked Chicken}} || <code>cooked_chicken</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Fish}}<br /><small>(vanilla {{MCW|Cooked Cod}})</small> || <code>cooked_cod</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Flesh}}<br /><small>(vanilla {{MCW|Cooked Rabbit}})</small> || <code>cooked_rabbit</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Large Fish}}<br /><small>(vanilla {{MCW|Cooked Salmon}})</small> || <code>cooked_salmon</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Mutton}} || <code>cooked_mutton</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Porkchop}} || <code>cooked_porkchop</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Copper Ingot}} || <code>copper_ingot_from_smelting_copper_ore</code>, <code>copper_ingot_from_smelting_deepslate_copper_ore</code>, <code>copper_ingot_from_smelting_raw_copper</code> || [[Blast Furnace]], [[Crafting Table]], [[Mud Kiln]]
+|-
+| {{ItemLink|Copper Nugget|mcw=Copper Nugget}} || <code>copper_nugget_from_smelting</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Cracked Deepslate Bricks}} || <code>cracked_deepslate_bricks</code> || [[Blast Furnace]]
+|-
+| {{ItemLink|Cracked Deepslate Tiles}} || <code>cracked_deepslate_tiles</code> || [[Blast Furnace]]
+|-
+| {{ItemLink|Cracked Hellbricks}}<br /><small>(vanilla {{MCW|Cracked Nether Bricks}})</small> || <code>cracked_nether_bricks</code> || [[Blast Furnace]]
+|-
+| {{ItemLink|Cracked Polished Blackstone Bricks}} || <code>cracked_polished_blackstone_bricks</code> || [[Blast Furnace]]
+|-
+| {{ItemLink|Cracked Stone Bricks}} || <code>cracked_stone_bricks</code> || [[Blast Furnace]]
+|-
+| {{ItemLink|Cyan Glazed Terracotta}} || <code>cyan_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Deepslate}} || <code>deepslate</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Diamond}} || <code>diamond_from_smelting_deepslate_diamond_ore</code>, <code>diamond_from_smelting_diamond_ore</code> || [[Blast Furnace]], [[Crafting Table]]
+|-
+| {{ItemLink|Dried Kelp}} || <code>dried_kelp_from_smelting</code> || [[Crafting Table]], [[Oven]]
+|-
+| {{ItemLink|Electric Wire}}<br /><small>(vanilla {{MCW|Redstone Dust}})</small> || <code>redstone_from_smelting_deepslate_redstone_ore</code>, <code>redstone_from_smelting_redstone_ore</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Glass}} || <code>glass</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Gold Ingot}} || <code>gold_ingot_from_smelting_*</code> (4 recipes) || [[Blast Furnace]], [[Crafting Table]]
+|-
+| {{ItemLink|Gold Nugget|mcw=Gold Nugget}} || <code>gold_nugget_from_smelting</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Gray Glazed Terracotta}} || <code>gray_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Green Dye}} || <code>green_dye</code> || [[Blast Furnace]], [[Crafting Table]], [[Mud Kiln]]
+|-
+| {{ItemLink|Green Glazed Terracotta}} || <code>green_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Hellbrick}}<br /><small>(vanilla {{MCW|Nether Brick}})</small> || <code>nether_brick</code> || [[Blast Furnace]]
+|-
+| {{ItemLink|Iron Ingot}} || <code>iron_ingot_from_smelting_deepslate_iron_ore</code>, <code>iron_ingot_from_smelting_iron_ore</code>, <code>iron_ingot_from_smelting_raw_iron</code> || [[Blast Furnace]], [[Crafting Table]]
+|-
+| {{ItemLink|Iron Nugget|mcw=Iron Nugget}} || <code>iron_nugget_from_smelting</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Lapis Lazuli|mcw=Lapis Lazuli}} || <code>lapis_lazuli_from_smelting_deepslate_lapis_ore</code>, <code>lapis_lazuli_from_smelting_lapis_ore</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Light Blue Glazed Terracotta}} || <code>light_blue_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Light Gray Glazed Terracotta}} || <code>light_gray_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Lime Glazed Terracotta}} || <code>lime_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Limestone}}<br /><small>(vanilla {{MCW|Stone}})</small> || <code>stone</code> || [[Blast Furnace]], [[Crafting Table]], [[Mud Kiln]]
+|-
+| {{ItemLink|Magenta Glazed Terracotta}} || <code>magenta_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Obol}}<br /><small>(vanilla {{MCW|Emerald}})</small> || <code>emerald_from_smelting_deepslate_emerald_ore</code>, <code>emerald_from_smelting_emerald_ore</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Orange Glazed Terracotta}} || <code>orange_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Pink Glazed Terracotta}} || <code>pink_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Popped Chorus Fruit}} || <code>popped_chorus_fruit</code> || [[Oven]]
+|-
+| {{ItemLink|Purple Glazed Terracotta}} || <code>purple_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Quartz}}<br /><small>(vanilla {{MCW|Nether Quartz}})</small> || <code>quartz</code> || [[Blast Furnace]], [[Crafting Table]]
+|-
+| {{ItemLink|Red Glazed Terracotta}} || <code>red_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Smooth Basalt}} || <code>smooth_basalt</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Smooth Quartz Block}} || <code>smooth_quartz</code> || [[Crafting Table]], [[Mud Kiln]]
+|-
+| {{ItemLink|Smooth Red Sandstone}} || <code>smooth_red_sandstone</code> || [[Crafting Table]], [[Mud Kiln]]
+|-
+| {{ItemLink|Smooth Sandstone}} || <code>smooth_sandstone</code> || [[Crafting Table]], [[Mud Kiln]], [[Stonecutter]]
+|-
+| {{ItemLink|Smooth Stone}} || <code>smooth_stone</code> || [[Crafting Table]], [[Mud Kiln]]
+|-
+| {{ItemLink|Sponge}} || <code>sponge</code> || [[Mud Kiln]], [[Oven]]
+|-
+| {{ItemLink|Steak}} || <code>cooked_beef</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Steel Alloy}}<br /><small>(vanilla {{MCW|Resin Brick}})</small> || <code>resin_brick</code> || [[Blast Furnace]]
+|-
+| {{ItemLink|Terracotta}} || <code>terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|White Glazed Terracotta}} || <code>white_glazed_terracotta</code> || [[Mud Kiln]]
+|-
+| {{ItemLink|Yellow Glazed Terracotta}} || <code>yellow_glazed_terracotta</code> || [[Mud Kiln]]
+|}
+
+=== [[Blast Furnace|Blast furnace]] ===
+{| class="wikitable sortable"
+! Item !! Vanilla recipe !! Still made with
+|-
+| {{ItemLink|Coal|mcw=Coal}} || <code>coal_from_blasting_coal_ore</code>, <code>coal_from_blasting_deepslate_coal_ore</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Copper Ingot}} || <code>copper_ingot_from_blasting_copper_ore</code>, <code>copper_ingot_from_blasting_deepslate_copper_ore</code> || [[Blast Furnace]], [[Crafting Table]], [[Mud Kiln]]
+|-
+| {{ItemLink|Copper Nugget|mcw=Copper Nugget}} || <code>copper_nugget_from_blasting</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Diamond}} || <code>diamond_from_blasting_deepslate_diamond_ore</code>, <code>diamond_from_blasting_diamond_ore</code> || [[Blast Furnace]], [[Crafting Table]]
+|-
+| {{ItemLink|Electric Wire}}<br /><small>(vanilla {{MCW|Redstone Dust}})</small> || <code>redstone_from_blasting_deepslate_redstone_ore</code>, <code>redstone_from_blasting_redstone_ore</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Gold Ingot}} || <code>gold_ingot_from_blasting_deepslate_gold_ore</code>, <code>gold_ingot_from_blasting_gold_ore</code> || [[Blast Furnace]], [[Crafting Table]]
+|-
+| {{ItemLink|Gold Nugget|mcw=Gold Nugget}} || <code>gold_nugget_from_blasting</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Iron Ingot}} || <code>iron_ingot_from_blasting_deepslate_iron_ore</code>, <code>iron_ingot_from_blasting_iron_ore</code> || [[Blast Furnace]], [[Crafting Table]]
+|-
+| {{ItemLink|Iron Nugget|mcw=Iron Nugget}} || <code>iron_nugget_from_blasting</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Lapis Lazuli|mcw=Lapis Lazuli}} || <code>lapis_lazuli_from_blasting_deepslate_lapis_ore</code>, <code>lapis_lazuli_from_blasting_lapis_ore</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Obol}}<br /><small>(vanilla {{MCW|Emerald}})</small> || <code>emerald_from_blasting_deepslate_emerald_ore</code>, <code>emerald_from_blasting_emerald_ore</code> || [[Crafting Table]]
+|-
+| {{ItemLink|Quartz}}<br /><small>(vanilla {{MCW|Nether Quartz}})</small> || <code>quartz_from_blasting</code> || [[Blast Furnace]], [[Crafting Table]]
+|}
+
+=== [[Mud Kiln]] (smoker) ===
+{| class="wikitable sortable"
+! Item !! Vanilla recipe !! Still made with
+|-
+| {{ItemLink|Baked Potato}} || <code>baked_potato_from_smoking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Chicken}} || <code>cooked_chicken_from_smoking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Fish}}<br /><small>(vanilla {{MCW|Cooked Cod}})</small> || <code>cooked_cod_from_smoking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Flesh}}<br /><small>(vanilla {{MCW|Cooked Rabbit}})</small> || <code>cooked_rabbit_from_smoking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Large Fish}}<br /><small>(vanilla {{MCW|Cooked Salmon}})</small> || <code>cooked_salmon_from_smoking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Mutton}} || <code>cooked_mutton_from_smoking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Porkchop}} || <code>cooked_porkchop_from_smoking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Dried Kelp}} || <code>dried_kelp_from_smoking</code> || [[Crafting Table]], [[Oven]]
+|-
+| {{ItemLink|Steak}} || <code>cooked_beef_from_smoking</code> || [[Kindling]], [[Oven]]
+|}
+
+=== [[Kindling]] (campfire) ===
+{| class="wikitable sortable"
+! Item !! Vanilla recipe !! Still made with
+|-
+| {{ItemLink|Baked Potato}} || <code>baked_potato_from_campfire_cooking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Chicken}} || <code>cooked_chicken_from_campfire_cooking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Fish}}<br /><small>(vanilla {{MCW|Cooked Cod}})</small> || <code>cooked_cod_from_campfire_cooking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Flesh}}<br /><small>(vanilla {{MCW|Cooked Rabbit}})</small> || <code>cooked_rabbit_from_campfire_cooking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Large Fish}}<br /><small>(vanilla {{MCW|Cooked Salmon}})</small> || <code>cooked_salmon_from_campfire_cooking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Mutton}} || <code>cooked_mutton_from_campfire_cooking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Cooked Porkchop}} || <code>cooked_porkchop_from_campfire_cooking</code> || [[Kindling]], [[Oven]]
+|-
+| {{ItemLink|Dried Kelp}} || <code>dried_kelp_from_campfire_cooking</code> || [[Crafting Table]], [[Oven]]
+|-
+| {{ItemLink|Steak}} || <code>cooked_beef_from_campfire_cooking</code> || [[Kindling]], [[Oven]]
+|}
+
+=== [[Smithing Table|Smithing table]] ===
+{| class="wikitable sortable"
+! Item !! Vanilla recipe !! Still made with
+|-
+| {{ItemLink|Adamant Axe}} || <code>netherite_axe_smithing</code> || [[Smithing Table]]
+|-
+| {{ItemLink|Adamant Boots}} || <code>netherite_boots_smithing</code> || [[Smithing Table]]
+|-
+| {{ItemLink|Adamant Chestplate}} || <code>netherite_chestplate_smithing</code> || [[Smithing Table]]
+|-
+| {{ItemLink|Adamant Helmet}} || <code>netherite_helmet_smithing</code> || [[Smithing Table]]
+|-
+| {{ItemLink|Adamant Hoe}} || <code>netherite_hoe_smithing</code> || [[Smithing Table]]
+|-
+| {{ItemLink|Adamant Leggings}} || <code>netherite_leggings_smithing</code> || [[Smithing Table]]
+|-
+| {{ItemLink|Adamant Pickaxe}} || <code>netherite_pickaxe_smithing</code> || [[Smithing Table]]
+|-
+| {{ItemLink|Adamant Shovel}} || <code>netherite_shovel_smithing</code> || [[Smithing Table]]
+|-
+| {{ItemLink|Adamant Spear}} || <code>netherite_spear_smithing</code> || [[Smithing Table]]
+|-
+| {{ItemLink|Adamant Sword}} || <code>netherite_sword_smithing</code> || [[Smithing Table]]
+|}
+
+=== Advancements ===
+{| class="wikitable"
+! Tab !! Folder !! Advancements
+|-
+| Minecraft || <code>minecraft:story/</code> || 16
+|-
+| Adventure || <code>minecraft:adventure/</code> || 47
+|-
+| Nether || <code>minecraft:nether/</code> || 23
+|-
+| The End || <code>minecraft:end/</code> || 9
+|-
+| Husbandry || <code>minecraft:husbandry/</code> || 31
+|}</includeonly><noinclude>Every vanilla recipe and advancement the datapack's <code>pack.mcmeta</code> filter hides (360 recipes, 5 advancement tabs). Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

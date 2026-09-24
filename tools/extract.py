@@ -769,6 +769,22 @@ for f in sorted(glob.glob(os.path.join(VDATA, 'recipe', '*.json'))):
 
 BLOCKED_RECIPES = sorted(b[len('recipe/'):-5] for b in BLOCKED if b.startswith('recipe/'))
 
+# The vanilla recipes the filter hides, for the Removed features list (generate.py: Data/Blocked vanilla).
+# Only what the list shows is read: nothing here registers an item source, since the recipes don't exist.
+BLOCKED_RECIPE_INFO = []
+for f in sorted(glob.glob(os.path.join(VDATA, 'recipe', '*.json'))):
+    name = os.path.basename(f)
+    if not is_blocked('recipe/' + name):
+        continue
+    d = load(f)
+    res = d.get('result')
+    BLOCKED_RECIPE_INFO.append({
+        'id': 'minecraft:' + name[:-5], 'type': norm_id(d.get('type', '')), 'category': d.get('category', 'misc'),
+        'output': display_stack(res) if res and (isinstance(res, str) or 'id' in res) else None})
+# The vanilla advancement folders it hides, with how many advancements each held.
+BLOCKED_ADVANCEMENTS = {b[len('advancement/'):]: len(glob.glob(os.path.join(VDATA, b, '**', '*.json'), recursive=True))
+                        for b in sorted(BLOCKED) if b.startswith('advancement/')}
+
 # ---------------------------------------------------------------- loot tables
 def pool_count(pool_fns):
     """The count a pool's own set_count gives every stack it yields (pool functions run after the
@@ -1559,6 +1575,8 @@ data = {
     'recipes': RECIPES,
     'vanilla_recipes_kept': VANILLA_RECIPES_KEPT,
     'blocked_vanilla': sorted(BLOCKED),
+    'blocked_recipes': BLOCKED_RECIPE_INFO,
+    'blocked_advancements': BLOCKED_ADVANCEMENTS,
     'loot': LOOT,
     'trades': {p: dict(v) for p, v in TRADES.items()},
     'professions': PROF_NAME,
