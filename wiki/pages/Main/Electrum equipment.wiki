@@ -6,6 +6,7 @@ Electrum alloy is crafted from four gold ingots, four silver bullion and a [[Div
 
 == Characteristics ==
 * Tools carry the electrum fortune intrinsic (level 3 on most, 2 on the mattock), which the pack's block loot tables treat like Fortune; it cannot be combined with Fortune or Silk Touch.<ref>{{Source|MF_datapack/data/matcha/enchantment/electrum_tool.json}}</ref>
+** In 1.12.2 the electrum fortune intrinsic has no name in the language file, so the tools' tooltips show its translation key, "enchantment.kleispack.electrum_tool", instead of the {{G|Fortune}} glyph.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
 * The sword has {{G|Warding}} 3, Smite III and Looting II; the axe and spear have {{G|Warding}} 2.
 * Each armor piece adds +1 to [[Warding]]; the full set adds the [[Set bonus|set bonus]].
 * Electrum items use the netherite item IDs, so they do not burn in fire or lava, and the armor counts as piglin-safe.
@@ -68,6 +69,7 @@ Values are the item's real attributes; where the hand-written tooltip differs, t
 {{History line|1.12|Fixed severe multiplayer lag caused by electrum armor.}}
 {{History line|1.12.1-alpha|Electrum became the only source of Fortune III, and it can only be repaired with blocks of diamond. The set bonus was nerfed from 4 to 2 hearts.}}
 {{History line|1.12.2|Electrum equipment no longer burns in fire or lava, and electrum armor counts as armor that piglins accept. Warding was removed from electrum tools so that they focus on Fortune. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+{{History line|Upcoming|2=The tools' electrum fortune intrinsic shows the {{G|Fortune}} glyph in the tooltip instead of its translation key.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == References ==

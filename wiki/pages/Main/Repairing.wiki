@@ -19,13 +19,17 @@
 |-
 | Diamond || Diamonds
 |-
-| [[Shakudo equipment|Shakudo]], [[Hepatizon equipment|hepatizon]], [[Shepherd's Shears]] || Blocks of copper
+| [[Shakudo equipment|Shakudo]], [[Hepatizon equipment|hepatizon]] || Blocks of copper
+|-
+| [[Shepherd's Shears]] || Iron nuggets, iron ingots (the tooltip says blocks of copper)<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/2/shepherds_shears.json}}</ref>
 |-
 | Shakudo and hepatizon elytra || Honeycomb blocks, blocks of copper
 |-
 | [[Electrum equipment|Electrum]] || Blocks of diamond
 |-
 | [[Adamant equipment|Adamant]] || Blocks of diamond, adamant scrap
+|-
+| [[Adamant Leggings|Adamant leggings]] || Blocks of diamond, blocks of gold (the tooltip says adamant scrap)<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_leggings.json}}</ref>
 |-
 | [[Leather armor]] || Sturdy leather
 |-
@@ -47,6 +51,7 @@ Alloy items show a "Repaired with" line in their tooltip.
 {{History line|1.10|The anvil XP window was raised from 15 to 30 seconds and from 50 to 100 levels.}}
 {{History line|1.12.1-alpha|Crafting-grid repair disabled; repair materials made consistent.}}
 {{History line|1.12.2|Sturdy leather armor can be repaired with tattered leather.}}
+{{History line|Upcoming|2=Shepherd's shears are repaired with blocks of copper and smithed adamant leggings with adamant scrap, matching their tooltips.<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/2/shepherds_shears.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_leggings.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == References ==

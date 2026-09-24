@@ -20,7 +20,7 @@ They give 6 armor, 3 toughness and 10% knockback resistance, the vanilla netheri
 The [[Doom]] intrinsic periodically clears Weakness from nearby creatures and deals armor-piercing damage as it does, so it combines with the Weakness from adamant weapons. Each piece strengthens it, and wearing all four adds the Doom [[set bonus]] as well as Absorption I (2 hearts) for 31 seconds every 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/timers/divinity/adamant_armour.mcfunction}}</ref>
 
 === Repairing ===
-They can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}} or [[adamant scrap]]. The pack resets repair costs to zero, so they can be repaired indefinitely; see [[Repairing]].
+They can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}} or {{MCW|Block of Gold|blocks of gold}}. Their tooltip says blocks of diamond or [[adamant scrap]], like the other adamant armor, but adamant scrap does not work on the leggings.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_leggings.json}}</ref> The pack resets repair costs to zero, so they can be repaired indefinitely; see [[Repairing]].
 
 === Smelting ingredient ===
 {{Uses}}
@@ -32,6 +32,7 @@ An apprentice [[weaponsmith]] buys them for one [[adamant alloy]].<ref>{{Source|
 
 == Notes ==
 * The hand-written tooltip hides the real attributes and shows knockback resistance 1 (real value 0.1).
+* The leggings are the only adamant armor repaired with blocks of gold. The developer's design video says adamant "requires diamond blocks, gold blocks, or adamant scrap to repair".<ref>{{Cite video|quote=except for adamant, which requires diamond blocks, gold blocks, or adamant scrap to repair.}}</ref>
 
 == History ==
 {{History|
@@ -41,6 +42,7 @@ An apprentice [[weaponsmith]] buys them for one [[adamant alloy]].<ref>{{Source|
 {{History line|1.12|Fixed severe multiplayer lag caused by adamant armor.}}
 {{History line|1.12.1-alpha|Smithing no longer needs a base-metal item in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. Reworked: pieces gave Health Boost hearts and the set bonus 2 soul hearts. Durability lowered from 1500 to 1000.}}
 {{History line|1.12.2|The intrinsic was reworked into [[Doom]]. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
+{{History line|Upcoming|2=Smithed leggings are repaired with blocks of diamond or adamant scrap, as the tooltip says, instead of blocks of diamond or gold.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_leggings.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == References ==
