@@ -340,6 +340,7 @@ def id_name(i):
     return vl or k.replace('_', ' ').title()
 
 
+MC_VERSION = open(os.path.join(ROOT, 'tools', 'mc_version.txt')).read().strip()  # vanilla data's version (fetch_sources.sh)
 VANILLA_LANG = json.load(open(os.path.join(ROOT, 'source', 'vanilla-assets', 'assets', 'minecraft', 'lang', 'en_us.json')))
 
 
@@ -407,7 +408,13 @@ def infobox(item):
     for s in item['sources']:
         if s['src'] not in srcs and s['how'] in ('recipe', 'loot', 'trade'):
             srcs.append(s['src'])
-    if srcs:
+    srcs.sort(key=lambda s: s.startswith('vanilla:'))  # the pack's own file first
+    if srcs and srcs[0].startswith('vanilla:'):
+        # a vanilla file the pack keeps: not in the pack's repository, so link the vanilla data
+        path = srcs[0][len('vanilla:'):]
+        f['source'] = '<span class="plainlinks">[https://github.com/misode/mcmeta/blob/%s-data-json/data/minecraft/%s %s]</span> (vanilla)' % (
+            MC_VERSION, path, os.path.basename(path))
+    elif srcs:
         f['source'] = '{{Source|%s|%s}}' % (srcs[0], os.path.basename(srcs[0]))
     lines = ['{{Infobox', '|title={{#if:{{{title|}}}|{{{title}}}|%s}}' % name]
     if has_icon(name):
