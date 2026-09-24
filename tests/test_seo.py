@@ -25,14 +25,33 @@ class SEOTests(unittest.TestCase):
             with self.subTest(redirects=redirects), self.assertRaises(ValueError):
                 seo.resolve_redirects(redirects, ['Target'])
 
+    def test_indexable_page_has_large_share_card(self):
+        card = seo.SITE + '/og/0123456789abcdef.png?v=abc'
+        tags, _ = seo.head_tags('Crystal Heart', '', {'card': card, 'image': '/images/4/42/Crystal_Heart.png',
+                                                      'published': '2026-09-22T00:00:00-04:00', 'lastmod': '2026-09-24T00:00:00-04:00'})
+        self.assertIn('<meta property="og:image" content="%s">' % card, tags)
+        self.assertIn('<meta property="og:image:width" content="1200">', tags)
+        self.assertIn('<meta name="twitter:card" content="summary_large_image">', tags)
+        self.assertIn('<meta name="robots" content="max-image-preview:large">', tags)
+        self.assertIn('"image": ["%s", "%s/images/4/42/Crystal_Heart.png"]' % (card, seo.SITE), tags)
+        self.assertIn('"datePublished": "2026-09-22T00:00:00-04:00"', tags)
+
+    def test_noindex_page_keeps_small_preview(self):
+        tags, _ = seo.head_tags('Oak Door', '', {'noindex': True, 'image': '/images/a/ab/Oak_Door.png'})
+        self.assertIn('<meta name="twitter:card" content="summary">', tags)
+        self.assertIn('noindex, follow', tags)
+        self.assertNotIn('max-image-preview', tags)
+        self.assertNotIn('og:image:width', tags)
+
     def test_utility_pages_do_not_inherit_homepage_signals(self):
         doc = seo.apply('<html><head><title>Home</title></head><body><h1>Search</h1></body></html>',
-                        'Matcha Flavoured Wiki', {'is_main': True})
+                        'Matcha Flavoured Wiki', {'is_main': True, 'card': seo.SITE + '/og/x.png'})
         utility = seo.utility_page(doc, 'Search results')
         self.assertIn('noindex, follow', utility)
         self.assertNotIn('rel="canonical"', utility)
         self.assertNotIn('application/ld+json', utility)
         self.assertNotIn('og:', utility)
+        self.assertNotIn('max-image-preview', utility)
         self.assertIn('<title>Search results – Matcha Flavoured Wiki</title>', utility)
         self.assertIn('<h1>Search</h1>', utility)
 

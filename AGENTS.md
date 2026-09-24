@@ -112,7 +112,9 @@ the swap mid-way.
   the sidebar as a menu drawer, page actions as icons, recipe screens under their ingredients, scrolling
   tables, stone footer. `Gadget-mfwShell.js` builds the header, drawer and collapsible sections (the lead
   and the main page stay open; a `#fragment` opens its section). The drawer CSS is scoped to `html.mfw-js`
-  (set by `site/theme-boot.js`), so without JS the sidebar stays a list below the page. On touch screens, `Gadget-mfwTooltip.js`
+  (set by `site/theme-boot.js`), so without JS the sidebar stays a list below the page. Under the same class,
+  CSS draws the sections collapsed before the script wraps them; otherwise long pages paint open and jump
+  shut (a layout shift over 0.2, which Google counts against the page). On touch screens, `Gadget-mfwTooltip.js`
   shows a slot's tooltip on the first tap and follows its link on the second. Legacy Vector sends phones
   `width=1120`; only the static export rewrites that, so preview phones on the export (or a narrow desktop
   window, which ignores the viewport tag). Keep desktop (over 720px) pixel-identical: scope every mobile
@@ -210,7 +212,21 @@ the swap mid-way.
     `node --test tests/search.test.mjs` covers the matching.
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;
-  it becomes the search snippet.
+  it becomes the search snippet. `check_seo.py` checks the export.
+  - Dates are git dates (`lastmod`, `datePublished`, the footer), never the build date.
+  - Generated-only pages stay `noindex`; make one indexable by writing a real page for it, not by
+    dropping the rule.
+  - Search and 404 pages are `noindex` with no canonical, description or JSON-LD of their own.
+  - Answer the likely question in the lead instead of adding FAQ markup or question-shaped titles
+    (Google shows FAQ results only for government and health sites), and never put "official" in a title.
+- **Share cards and icons** come from `tools/og.py`. Every indexable page gets a 1200x630 card in `/og/`
+  (the infobox icon in a slot on the pack's brown panel, the title in the game's font). Link previews
+  (Discord, Reddit, X, iMessage) show it, and it is the first image in the page's JSON-LD. Favicons are the logo's 18x17 pixel art at multiples of
+  48px: Google shows no favicon that isn't, and the logo file is 135px.
+- **GitHub shows page sources as plain text.** `.gitattributes` marks `wiki/**/*.wiki` as Text; as
+  Wikitext, GitHub rendered every article, a second copy in search results. Keep the rule.
+- **Links to redirects** point at the redirect's final page in the export (`link_targets`), so readers
+  and crawlers skip the 301. The Worker still serves the 301 for links from outside.
 - **PRs** run `check.yml`: the full build and checks, then `wrangler versions upload` as a preview at
   `https://pr-<number>-matcha-flavoured-wiki.<account>.workers.dev`, linked in a PR comment. The upload
   isn't deployed, and its message is `tree <sha>`: the tree of the PR merged into `main`.
