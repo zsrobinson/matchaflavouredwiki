@@ -2,11 +2,11 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Block of Copper]]
-| [[Block of Raw Copper]]
+| {{MCW|Block of Raw Copper}}
 | {{Cooking|station=Blast Furnace|Input=Block of Raw Copper|Output=Block of Copper|time=10|note=10 s, 9 XP}}
 |-
-| [[Raw Copper]] <small>(vanilla recipe)</small>
-| [[Block of Raw Copper]]
+| {{MCW|Raw Copper}} <small>(vanilla recipe)</small>
+| {{MCW|Block of Raw Copper}}
 | {{Crafting|A1=Block of Raw Copper|Output=Raw Copper,9|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -11,7 +11,7 @@
 |renewable={{{renewable|}}}
 |stackable=No
 |durability=600
-|repair=[[Iron Ingot]], [[Iron Nugget]], [[Stick]], [[String]]
+|repair=[[Iron Ingot]], {{MCW|Iron Nugget}}, [[Stick]], [[String]]
 |id=<code>matcha:compound_bow</code>
 |base=<code>minecraft:bow</code>
 |source={{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/barracks.json|barracks.json}}

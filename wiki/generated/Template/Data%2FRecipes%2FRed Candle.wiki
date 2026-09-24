@@ -1,8 +1,8 @@
 <includeonly>{| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Red Candle]] <small>(vanilla recipe)</small>
-| [[Candle]] +<br />[[Red Dye]]
+| {{MCW|Red Candle}} <small>(vanilla recipe)</small>
+| {{MCW|Candle}} +<br />[[Red Dye]]
 | {{Crafting|A1=Candle|B1=Red Dye|Output=Red Candle|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

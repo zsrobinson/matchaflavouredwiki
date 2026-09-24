@@ -2,11 +2,11 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Bamboo]]
-| [[Block of Bamboo]]
+| {{MCW|Block of Bamboo}}
 | {{Crafting|A1=Block of Bamboo|Output=Bamboo,9|shapeless=1}}
 |-
 | [[Bamboo Planks]]
-| 4 × [[Block of Bamboo]]
+| 4 × {{MCW|Block of Bamboo}}
 | {{Crafting|A1=Block of Bamboo|A2=Block of Bamboo|B1=Block of Bamboo|B2=Block of Bamboo|Output=Bamboo Planks,8}}
 |-
 | [[Bamboo Button]]
@@ -66,7 +66,7 @@
 | {{Stonecutter|Input=Any Bamboo Blocks|Output=Bamboo Trapdoor,2}}
 |-
 | [[Block of Stripped Bamboo]]
-| [[Block of Bamboo]]
+| {{MCW|Block of Bamboo}}
 | {{Stonecutter|Input=Block of Bamboo|Output=Block of Stripped Bamboo}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

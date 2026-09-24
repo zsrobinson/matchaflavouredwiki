@@ -1,8 +1,8 @@
 <includeonly>{| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Crossbow]] <small>(vanilla recipe)</small>
-| 3 × [[Stick]] +<br />[[Iron Ingot]] +<br />2 × [[String]] +<br />[[Tripwire Hook]]
+| {{MCW|Crossbow}} <small>(vanilla recipe)</small>
+| 3 × [[Stick]] +<br />[[Iron Ingot]] +<br />2 × [[String]] +<br />{{MCW|Tripwire Hook}}
 | {{Crafting|A1=Stick|A2=String|B1=Iron Ingot|B2=Tripwire Hook|B3=Stick|C1=Stick|C2=String|Output=Crossbow}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

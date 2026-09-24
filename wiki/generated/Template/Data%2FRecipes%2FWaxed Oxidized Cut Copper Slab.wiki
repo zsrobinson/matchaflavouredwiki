@@ -2,11 +2,11 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Waxed Oxidized Cut Copper Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Oxidized Cut Copper Slab}} <small>(vanilla recipe)</small>
 | 3 × [[Waxed Oxidized Cut Copper]]
 | {{Crafting|A1=Waxed Oxidized Cut Copper|B1=Waxed Oxidized Cut Copper|C1=Waxed Oxidized Cut Copper|Output=Waxed Oxidized Cut Copper Slab,6}}
 |-
-| [[Waxed Oxidized Cut Copper Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Oxidized Cut Copper Slab}} <small>(vanilla recipe)</small>
 | [[Oxidized Cut Copper Slab]] +<br />[[Wax]]
 | {{Crafting|A1=Oxidized Cut Copper Slab|B1=Wax|Output=Waxed Oxidized Cut Copper Slab|shapeless=1}}
 |}
@@ -14,11 +14,11 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Waxed Oxidized Cut Copper Slab]] <small>(vanilla recipe)</small>
-| [[Waxed Oxidized Copper]]
+| {{MCW|Waxed Oxidized Cut Copper Slab}} <small>(vanilla recipe)</small>
+| {{MCW|Waxed Oxidized Copper}}
 | {{Stonecutter|Input=Waxed Oxidized Copper|Output=Waxed Oxidized Cut Copper Slab,8}}
 |-
-| [[Waxed Oxidized Cut Copper Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Oxidized Cut Copper Slab}} <small>(vanilla recipe)</small>
 | [[Waxed Oxidized Cut Copper]]
 | {{Stonecutter|Input=Waxed Oxidized Cut Copper|Output=Waxed Oxidized Cut Copper Slab,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

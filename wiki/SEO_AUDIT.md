@@ -1,6 +1,6 @@
 # SEO audit — 23 September 2026
 
-The site has a strong technical foundation and deeper article coverage than the sampled generated catalogues. It does not yet have evidence of superior Google rankings or link authority. The strongest English competitors are matchaflavoured.wiki and matchaflavored.org; outperforming them requires useful, current answers and discovery as well as technical correctness. See [the cited competitor research](SEO_RESEARCH.md).
+The site has a strong technical foundation and deeper article coverage than the sampled generated catalogues. It does not yet have evidence of superior Google rankings or link authority. The best-established English sites are matchaflavoured.wiki, the community wiki, and the matchaflavored.org guide. Being found for player questions takes useful, current answers as well as technical correctness. See [the search research](SEO_RESEARCH.md).
 
 ## Evidence and scope
 
@@ -26,17 +26,17 @@ These fixes remove avoidable ambiguity and build failures; none guarantees a ran
 
 ## Existing strengths to preserve
 
-- Rendered article content, recipes and ordinary links are present before JavaScript runs. The GitHub Pages competitors sampled in the research return loading shells.
+- Rendered article content, recipes and ordinary links are present before JavaScript runs. The GitHub Pages sites sampled in the research return loading shells.
 - Article titles, unique lead-derived descriptions, absolute canonicals, structured data and a sitemap already exist. This is not a site missing basic SEO tags.
 - The indexable article set is well connected; the existing export revealed no orphan sitemap pages. The majority are within two clicks of the homepage.
-- Generated-only pages remain deliberately noindex. Review and enrich worthwhile pages before admitting them to the index; article counts alone are not a useful competitive target.
+- Generated-only pages remain deliberately noindex. Review and enrich worthwhile pages before admitting them to the index; article counts alone are not a useful target.
 - Pack source citations, version pages, GitHub transparency and primary-source update workflows provide a useful basis for reader trust and factual maintenance.
 
 ## Next priorities
 
 1. **Verify launch indexing, not imagined penalties.** The owner has submitted the sitemap. In Search Console, check its successful fetch and last-read date, then inspect `/`, `/w/Installation`, `/w/Guide_for_new_players`, `/w/Mud_Kiln`, `/w/Death` and one detailed item page. Check Google's chosen canonical, rendered content and exclusion reason. A public search sample cannot establish whether Google has indexed the site. [Google says crawling can take days to weeks](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl); repeated requests do not accelerate it.
 2. **Measure the actual player questions.** Use Search Console queries and landing pages to prioritize installation failures, first-day progression, steel/silver routes, healing/death, recipe unlocks and seeds/saplings. Existing Installation, Guide for new players, Progression and detail pages already cover much of this. Improve answer placement and internal links where query evidence reveals a gap; avoid duplicative keyword landing pages. All new gameplay claims require primary-source verification.
-3. **Differentiate through reference utility.** The existing [content audit](AUDIT.md) still identifies a complete disabled-vanilla table, ingredient-chain recipe browser and progression-aware spoiler controls as opportunities. These are separate product changes, not prerequisites for indexing. The guide competitor's focused task navigation and the community wiki's contributor network deserve attention even where this site's data is deeper.
+3. **Differentiate through reference utility.** The existing [content audit](AUDIT.md) still identifies a complete disabled-vanilla table, ingredient-chain recipe browser and progression-aware spoiler controls as opportunities. These are separate product changes, not prerequisites for indexing. matchaflavored.org's focused task navigation is worth learning from.
 4. **Measure performance on real page types.** Run mobile Lighthouse/PageSpeed on the homepage, a large recipe page, a guide and an overview; review LCP, INP/interaction behavior, CLS and table usability. This audit did not measure Core Web Vitals and does not claim a speed advantage from static rendering alone. Field data may be unavailable until traffic grows.
 5. **Tidy maintenance-page navigation.** The old export contains template/skin links in maintenance categories whose namespaces are not exported. These are not orphan indexable articles; review conversion to GitHub source links or plain text separately. Check a fresh build before treating old category members as current broken links.
 6. **Improve freshness accounting when needed.** Sitemap lastmod currently tracks the page's own source commit. Generated transclusions can change an article without changing that source. A dependency-aware date would be more accurate; do not simply stamp all URLs with the build date. Keep dates honest and verify release-sensitive prose after updates.

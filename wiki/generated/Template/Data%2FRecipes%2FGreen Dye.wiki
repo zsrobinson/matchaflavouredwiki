@@ -3,7 +3,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Green Dye]]
-| [[Potion]] +<br />[[Raw Copper]] +<br />[[Sulfur Chunk]]
+| {{MCW|Potion}} +<br />{{MCW|Raw Copper}} +<br />[[Sulfur Chunk]]
 | {{Crafting|A1=Potion|B1=Raw Copper|C1=Sulfur Chunk|Output=Green Dye,2|shapeless=1}}
 |}
 '''Cooking'''
@@ -11,7 +11,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Green Dye]]
-| [[Cactus]]
+| {{MCW|Cactus}}
 | {{Cooking|station=Mud Kiln|Input=Cactus|Output=Green Dye|time=5|note=5 s, 0.05 XP}}
 |}
 '''Blasting'''
@@ -19,7 +19,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Green Dye]]
-| [[Cactus]]
+| {{MCW|Cactus}}
 | {{Cooking|station=Blast Furnace|Input=Cactus|Output=Green Dye|time=2.5|note=2.5 s, 0.05 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -2,11 +2,11 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Exposed Chiseled Copper]]
-| [[Chiseled Copper]] +<br />[[Potion]]
+| {{MCW|Chiseled Copper}} +<br />{{MCW|Potion}}
 | {{Crafting|A1=Chiseled Copper|B1=Potion|Output=Exposed Chiseled Copper|shapeless=1}}
 |-
-| [[Waxed Chiseled Copper]] <small>(vanilla recipe)</small>
-| [[Chiseled Copper]] +<br />[[Wax]]
+| {{MCW|Waxed Chiseled Copper}} <small>(vanilla recipe)</small>
+| {{MCW|Chiseled Copper}} +<br />[[Wax]]
 | {{Crafting|A1=Chiseled Copper|B1=Wax|Output=Waxed Chiseled Copper|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

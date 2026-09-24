@@ -2,23 +2,23 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Brown Sandstone Slab]] <small>(vanilla recipe)</small>
-| [[End Stone]]
+| {{MCW|End Stone}}
 | {{Stonecutter|Input=End Stone|Output=Brown Sandstone Slab,2}}
 |-
 | [[Brown Sandstone Stairs]] <small>(vanilla recipe)</small>
-| [[End Stone]]
+| {{MCW|End Stone}}
 | {{Stonecutter|Input=End Stone|Output=Brown Sandstone Stairs}}
 |-
 | [[Brown Sandstone Wall]] <small>(vanilla recipe)</small>
-| [[End Stone]]
+| {{MCW|End Stone}}
 | {{Stonecutter|Input=End Stone|Output=Brown Sandstone Wall}}
 |-
 | [[Brown Sandstone]] <small>(vanilla recipe)</small>
-| [[End Stone]]
+| {{MCW|End Stone}}
 | {{Stonecutter|Input=End Stone|Output=Brown Sandstone}}
 |-
 | [[Eye Armor Trim Smithing Template]] <small>(vanilla recipe)</small>
-| 7 × [[Diamond]] +<br />[[Eye Armor Trim Smithing Template]] +<br />[[End Stone]]
+| 7 × [[Diamond]] +<br />[[Eye Armor Trim Smithing Template]] +<br />{{MCW|End Stone}}
 | {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Eye Armor Trim Smithing Template|B2=End Stone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Eye Armor Trim Smithing Template,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

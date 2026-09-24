@@ -2,7 +2,7 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Cut Red Sandstone Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Red Sandstone Slab}} <small>(vanilla recipe)</small>
 | 3 × [[Cut Red Sandstone]]
 | {{Crafting|A1=Cut Red Sandstone|B1=Cut Red Sandstone|C1=Cut Red Sandstone|Output=Cut Red Sandstone Slab,6}}
 |}
@@ -10,11 +10,11 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Cut Red Sandstone Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Red Sandstone Slab}} <small>(vanilla recipe)</small>
 | [[Cut Red Sandstone]]
 | {{Stonecutter|Input=Cut Red Sandstone|Output=Cut Red Sandstone Slab,2}}
 |-
-| [[Cut Red Sandstone Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Red Sandstone Slab}} <small>(vanilla recipe)</small>
 | [[Red Sandstone]]
 | {{Stonecutter|Input=Red Sandstone|Output=Cut Red Sandstone Slab,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

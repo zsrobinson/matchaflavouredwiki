@@ -2,7 +2,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Amnestic]]
-| [[Azure Bluet]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Paper]]
+| [[Azure Bluet]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />{{MCW|Paper}}
 | {{Crafting|A1=Azure Bluet|B1=Sugar|C1=Estus Ash|A2=Paper|Output=Amnestic|shapeless=1}}
 |-
 | [[Apple Empanada]]
@@ -46,7 +46,7 @@
 | {{Crafting|A1=Chocolate|B1=Sugar|C1=Dough|Output=Chocolate Chip Cookie|shapeless=1}}
 |-
 | [[Chorus Mochi]]
-| [[Popped Chorus Fruit]] +<br />[[Snowball]] +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Dough]]
+| [[Popped Chorus Fruit]] +<br />{{MCW|Snowball}} +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Dough]]
 | {{Crafting|A1=Popped Chorus Fruit|B1=Snowball|C1=Sugar|A2=Milk Bottle|B2=Dough|Output=Chorus Mochi,4|shapeless=1}}
 |-
 | [[French Toast]]
@@ -78,7 +78,7 @@
 | {{Crafting|A1=Honey Bottle|B1=Any Eggs|C1=Sugar|A2=Estus Ash|B2=Bread|Output=Honied French Toast|shapeless=1}}
 |-
 | [[Ice Cream]]
-| [[Snowball]] +<br />[[Milk Bottle]] +<br />[[Sugar]] +<br />[[Blue Orchid]] +<br />[[Bread]]
+| {{MCW|Snowball}} +<br />[[Milk Bottle]] +<br />[[Sugar]] +<br />[[Blue Orchid]] +<br />[[Bread]]
 | {{Crafting|A1=Snowball|B1=Milk Bottle|C1=Sugar|A2=Blue Orchid|B2=Bread|Output=Ice Cream|shapeless=1}}
 |-
 | [[Mead]]
@@ -86,7 +86,7 @@
 | {{Crafting|A1=Honey Bottle|B1=Brown Mushroom|C1=Sugar|A2=Sweet Berries;Apple;Glow Berries|Output=Mead|shapeless=1}}
 |-
 | [[Melon Sorbet]]
-| [[Melon Slice]] +<br />[[Snowball]] +<br />[[Sugar]] +<br />[[Glass Bottle]]
+| [[Melon Slice]] +<br />{{MCW|Snowball}} +<br />[[Sugar]] +<br />[[Glass Bottle]]
 | {{Crafting|A1=Melon Slice|B1=Snowball|C1=Sugar|A2=Glass Bottle|Output=Melon Sorbet|shapeless=1}}
 |-
 | [[Pad Thai]]
@@ -134,7 +134,7 @@
 | {{Crafting|A1=Estus Ash|B1=Sugar|C1=Milk Bottle|A2=Tomatoes|B2=Cheese|C2=Oil|A3=Bowl|Output=Paneer Curry Stock|shapeless=1}}
 |-
 | [[Pumpkin Curry Stock]]
-| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Baked Pumpkin]] +<br />[[Oil]] +<br />[[Sunflower]] +<br />[[Milk Bottle]] +<br />[[Carrot]] +<br />[[Bamboo]] +<br />[[Bowl]]
+| [[Estus Ash]] +<br />[[Sugar]] +<br />[[Baked Pumpkin]] +<br />[[Oil]] +<br />{{MCW|Sunflower}} +<br />[[Milk Bottle]] +<br />[[Carrot]] +<br />[[Bamboo]] +<br />[[Bowl]]
 | {{Crafting|A1=Estus Ash|B1=Sugar|C1=Baked Pumpkin|A2=Oil|B2=Sunflower|C2=Milk Bottle|A3=Carrot|B3=Bamboo|C3=Bowl|Output=Pumpkin Curry Stock|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

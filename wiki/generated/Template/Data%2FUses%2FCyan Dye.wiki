@@ -1,15 +1,15 @@
 <includeonly>{| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Cyan Candle]] <small>(vanilla recipe)</small>
-| [[Candle]] +<br />[[Cyan Dye]]
+| {{MCW|Cyan Candle}} <small>(vanilla recipe)</small>
+| {{MCW|Candle}} +<br />[[Cyan Dye]]
 | {{Crafting|A1=Candle|B1=Cyan Dye|Output=Cyan Candle|shapeless=1}}
 |-
-| [[Cyan Concrete Powder]] <small>(vanilla recipe)</small>
+| {{MCW|Cyan Concrete Powder}} <small>(vanilla recipe)</small>
 | [[Cyan Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
 | {{Crafting|A1=Cyan Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Cyan Concrete Powder,8|shapeless=1}}
 |-
-| [[Cyan Stained Glass]] <small>(vanilla recipe)</small>
+| {{MCW|Cyan Stained Glass}} <small>(vanilla recipe)</small>
 | 8 × [[Glass]] +<br />[[Cyan Dye]]
 | {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Cyan Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Cyan Stained Glass,8}}
 |-
@@ -17,20 +17,20 @@
 | 8 × [[Glass Pane]] +<br />[[Cyan Dye]]
 | {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Cyan Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Cyan Stained Glass Pane,8}}
 |-
-| [[Cyan Terracotta]] <small>(vanilla recipe)</small>
+| {{MCW|Cyan Terracotta}} <small>(vanilla recipe)</small>
 | 8 × [[Terracotta]] +<br />[[Cyan Dye]]
 | {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Cyan Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Cyan Terracotta,8}}
 |-
-| [[Cyan Bed]] <small>(vanilla recipe)</small>
-| [[Cyan Dye]] +<br />[[White Bed]] or [[Orange Bed]] or [[Magenta Bed]] or [[Light Blue Bed]] or [[Yellow Bed]] or [[Lime Bed]] or [[Pink Bed]] or [[Gray Bed]] or [[Light Gray Bed]] or [[Purple Bed]] or [[Blue Bed]] or [[Brown Bed]] or [[Green Bed]] or [[Red Bed]] or [[Black Bed]]
+| {{MCW|Cyan Bed}} <small>(vanilla recipe)</small>
+| [[Cyan Dye]] +<br />{{MCW|White Bed}} or {{MCW|Orange Bed}} or {{MCW|Magenta Bed}} or {{MCW|Light Blue Bed}} or {{MCW|Yellow Bed}} or {{MCW|Lime Bed}} or {{MCW|Pink Bed}} or {{MCW|Gray Bed}} or {{MCW|Light Gray Bed}} or {{MCW|Purple Bed}} or {{MCW|Blue Bed}} or {{MCW|Brown Bed}} or {{MCW|Green Bed}} or {{MCW|Red Bed}} or {{MCW|Black Bed}}
 | {{Crafting|A1=Cyan Dye|B1=White Bed;Orange Bed;Magenta Bed;Light Blue Bed;Yellow Bed;Lime Bed;Pink Bed;Gray Bed;Light Gray Bed;Purple Bed;Blue Bed;Brown Bed;Green Bed;Red Bed;Black Bed|Output=Cyan Bed|shapeless=1}}
 |-
 | [[Cyan Carpet]] <small>(vanilla recipe)</small>
 | [[Cyan Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
 | {{Crafting|A1=Cyan Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Cyan Carpet|shapeless=1}}
 |-
-| [[Cyan Harness]] <small>(vanilla recipe)</small>
-| [[Cyan Dye]] +<br />[[White Harness]] or [[Orange Harness]] or [[Magenta Harness]] or [[Light Blue Harness]] or [[Yellow Harness]] or [[Lime Harness]] or [[Pink Harness]] or [[Gray Harness]] or [[Light Gray Harness]] or [[Purple Harness]] or [[Blue Harness]] or [[Brown Harness]] or [[Green Harness]] or [[Red Harness]] or [[Black Harness]]
+| {{MCW|Cyan Harness}} <small>(vanilla recipe)</small>
+| [[Cyan Dye]] +<br />{{MCW|White Harness}} or {{MCW|Orange Harness}} or {{MCW|Magenta Harness}} or {{MCW|Light Blue Harness}} or {{MCW|Yellow Harness}} or {{MCW|Lime Harness}} or {{MCW|Pink Harness}} or {{MCW|Gray Harness}} or {{MCW|Light Gray Harness}} or {{MCW|Purple Harness}} or {{MCW|Blue Harness}} or {{MCW|Brown Harness}} or {{MCW|Green Harness}} or {{MCW|Red Harness}} or {{MCW|Black Harness}}
 | {{Crafting|A1=Cyan Dye|B1=White Harness;Orange Harness;Magenta Harness;Light Blue Harness;Yellow Harness;Lime Harness;Pink Harness;Gray Harness;Light Gray Harness;Purple Harness;Blue Harness;Brown Harness;Green Harness;Red Harness;Black Harness|Output=Cyan Harness|shapeless=1}}
 |-
 | [[Cyan Wool]] <small>(vanilla recipe)</small>
