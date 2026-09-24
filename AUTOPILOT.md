@@ -26,7 +26,7 @@ renderer or generator subsystems; if an update seems to need one, say so in the 
 ## Step 0: is there anything to do?
 ```sh
 pip install --quiet --upgrade pillow yt-dlp     # --upgrade: YouTube changes break old yt-dlp versions
-git checkout main && git pull --ff-only
+git fetch origin main && git checkout -B main origin/main   # the session's clone may have only its own branch
 python3 tools/check_upstream.py > /tmp/upstream.json; status=$?
 ```
 - `status = 0`: nothing changed. If there are **reader reports to handle** (step 4c), continue with
@@ -67,6 +67,9 @@ Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> 
   conditions or item names without any error. Teach `tools/extract.py` (and `generate.py` if needed) the new
   format. Add something to `KNOWN` only if the wiki really doesn't need it, and say which in the PR.
   Never hand-edit `wiki/generated/`.
+  Any other failure of `extract.py` (a traceback: a file it expects is gone) is the same situation: the
+  pack was reorganised. 1.12.2-beta, for one, moved `Matcha_Flavoured/` to `MF_datapack/` and
+  `MF_resourcepack/` and renamed functions the extractor reads by name. Teach the extractor the new layout.
 - **New videos:** `python3 tools/fetch_transcripts.py <ids from new_videos>`. It saves transcripts of
   videos about the pack to `sources/transcripts/` and ignores unrelated ones.
 - **The Modrinth description changed** (`description_changed`): `python3 tools/fetch_modrinth_project.py`
@@ -98,6 +101,8 @@ pages that depend on it:
 - pages citing files that were deleted or moved.
 
 Changes no hand-written page depends on are folded away: the generated tables already show them.
+IDs that only moved to another namespace (1.12.2-beta moved `main:` to `matcha:`) are compared under their
+new IDs, and the report's header counts them; the old IDs in `{{Source}}` paths show up in `lint_pages.py`.
 Also read the code: `git -C source/matcha-flavoured log --oneline <old source.lock>..HEAD` and the real diffs
 behind each line. **The code diff is the truth.** Changelogs are incomplete. Read every new release note
 in `source/changelogs/`, the diff of the pack's `changelog.md`, and new transcripts in full.
@@ -207,7 +212,8 @@ Subscribe to the PR's activity and end the turn; the **Check** workflow result w
 - **After merging, confirm it went live.** Find the **Build and deploy** run on the merge commit (list the
   `deploy.yml` workflow runs on `main` with the connector) and wait for it to finish: about a minute when it
   deploys the PR's preview, up to half an hour for a full build (schedule a check-in with `send_later`
-  rather than polling). Then `python3 tools/watchdog.py` from an up-to-date `main`: its `deploy:` line must
+  rather than polling). Then `git fetch origin main && git checkout -B main origin/main && python3 tools/watchdog.py`
+  (it checks the checked-out commit, so run it on `main`, not the PR branch): its `deploy:` line must
   say the site serves main's build (`/_static/build.json` names `main`'s tree).
   - The run failed, or the stamp still differs once it succeeded: read the failing job's log. If the cause
     is in the repository (a check, the export, the Worker), fix it in a new PR as in step 5 and merge it
