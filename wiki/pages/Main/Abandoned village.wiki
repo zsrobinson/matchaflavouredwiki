@@ -1,6 +1,10 @@
 {{Vanilla|Village}}
 {{Infobox
 |title=Abandoned village
+|image=Abandoned village extra_large_2.png
+|imagesize=220px
+|imageclass=
+|caption=The most common house, <code>extra_large_2</code>
 |type=Jigsaw structure
 |biomes=Plains, Sunflower Plains, Desert, Savanna, Snowy Plains, Taiga, Old Growth Pine Taiga, Old Growth Spruce Taiga
 |generates=Overworld surface
@@ -35,8 +39,9 @@ The <code>minecraft:villages</code> structure set uses a random spread with a sp
 Each village is a jigsaw structure with a maximum depth of 5 pieces and a maximum distance of 116 blocks from its center, using <code>beard_box</code> terrain adaptation.
 
 == Structure ==
+[[File:Abandoned village isometric view.png|thumb|center|760px|One possible abandoned village, assembled from the pack's template pools with the game's jigsaw rules and shown on flat grass: the well (sunk into the ground) and four houses. The road pieces leave only the single coarse dirt blocks. Real villages vary with the world seed and follow the terrain.]]
 * '''Well''' (6 × 9 × 6): the start piece, built from cobblestone and mossy cobblestone around water. A gravity processor sinks it 8 blocks relative to the surface. Roads branch out from its four sides.<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/village_beta/town_centers.json}}</ref>
-* '''Roads''': invisible connector pieces with no blocks of their own, chosen from end (weight 3), straight (2), T-junction (1) and L-junction (1). Straight and end pieces have a connector for a house.<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/village_beta/roads.json}}</ref>
+* '''Roads''': invisible connector pieces with no blocks of their own, except that some of their connectors turn into a single coarse dirt block. They are chosen from end (weight 3), straight (2), T-junction (1) and L-junction (1). Straight and end pieces have a connector for a house.<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/village_beta/roads.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/structure/village_beta/roads/end.nbt}}</ref>
 * '''Houses''', chosen from the <code>village_beta/buildings</code> pool:<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/village_beta/buildings.json}}</ref>
 
 {| class="wikitable"
@@ -60,6 +65,18 @@ Each village is a jigsaw structure with a maximum depth of 5 pieces and a maximu
 |-
 | extra_large_5 || 4 || 18 × 10 × 13 || 8 ||
 |}
+<gallery widths="170" heights="140">
+Abandoned village well.png|well
+Abandoned village small_1.png|small_1
+Abandoned village medium_1.png|medium_1
+Abandoned village medium_2.png|medium_2
+Abandoned village large_1.png|large_1
+Abandoned village extra_large_1.png|extra_large_1
+Abandoned village extra_large_2.png|extra_large_2
+Abandoned village extra_large_3.png|extra_large_3
+Abandoned village extra_large_4.png|extra_large_4
+Abandoned village extra_large_5.png|extra_large_5
+</gallery>
 All houses are built from oak planks, cobblestone and mossy cobblestone with glass windows and an oak door, and are decorated with cobwebs and pale hanging moss. Two unused templates, <code>indev_normal</code> and <code>indev_mossy</code>, are in the pack but are not in any pool.
 
 == Loot ==
@@ -75,7 +92,7 @@ The [[Wandering Trader]] sells maps to abandoned villages, named "Abandoned Plai
 
 == The inhabited house ==
 {{Spoiler|this section reveals a secret in abandoned villages}}
-One house, <code>extra_large_4</code>, is different. It has no suspicious gravel floor. Inside are torches, a crafting table, two chests, a jukebox, a hopper, a redstone block, and a '''mannequin''' tagged <code>haunted</code> that uses the skin <code>entity/player/wide/him</code>.<ref>{{Source|MF_datapack/data/minecraft/structure/village_beta/buildings/extra_large_4.nbt}}</ref> That skin texture exists in neither the pack nor vanilla. The house has a weight of 1 out of 24 in the house pool.
+One house, <code>extra_large_4</code>, is different. It has no suspicious gravel floor. Inside are torches, a crafting table, two chests, a jukebox, a hopper, a redstone block, and a '''mannequin''' tagged <code>haunted</code> that uses the skin <code>entity/player/wide/him</code>.<ref>{{Source|MF_datapack/data/minecraft/structure/village_beta/buildings/extra_large_4.nbt}}</ref> The resource pack draws that skin as an all-black silhouette.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/entity/player/wide/him.png}}</ref> The house has a weight of 1 out of 24 in the house pool.
 
 The chests contain:
 * 3 [[Diamond]]s, 6 [[Hematite]], 11 {{MCW|Coal}}, 14 cobblestone and a damaged wooden pickaxe.

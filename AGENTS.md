@@ -107,7 +107,8 @@ the swap mid-way.
   shows a slot's tooltip on the first tap and follows its link on the second. Legacy Vector sends phones
   `width=1120`; only the static export rewrites that, so preview phones on the export (or a narrow desktop
   window, which ignores the viewport tag). Keep desktop (over 720px) pixel-identical: scope every mobile
-  rule to the media query.
+  rule to the media query. Wide centred thumbnails (the 760px structure views) shrink to the screen:
+  MediaWiki lays a thumb out as a table, which ignores `max-width`, so the phone rules make them blocks.
 - **Icons:**
   - Item icons are `File:<Item Name>.png`, upscaled 8× nearest-neighbour.
   - Blocks are rendered as true isometric cubes (horizontal step = cos 30°); don't go back to 2:1.
@@ -120,6 +121,42 @@ the swap mid-way.
     `images.py`. A special type it can't draw falls back to the base model and is listed in the output.
   - Foliage and grass textures are tinted from the pack's colour maps.
   - Tooltip glyphs are `File:Glyph E0xx.png`, named in `Template:G`, and explained on the "Tooltip" page.
+- **Renders** (structures, mobs, armor): every one is an entry in `tools/renders.json`, keyed by its
+  file name. `python3 tools/render.py` draws the ones whose inputs changed into `wiki/renders/`, which
+  is committed (CI only checks it's current), and `images.py` uploads them with the icons. To add one,
+  add an entry and run the tool. The drawing code is `tools/render/` (deepslate for blocks, three.js
+  for mobs, in headless Chromium). It finds a Chromium in Playwright's cache, `$MFW_CHROMIUM`,
+  `$CHROME_BIN` or the usual Chrome install paths.
+  - Which pages get one is decided by the rules in `wiki/STYLE.md` ("Pictures"), not case by case:
+    structures, mobs and villager professions, and armor sets. `render.py --audit` (a failing check
+    in CI) lists every page or pack template the rules cover that has no picture; each gap gets a
+    render or a `skip` entry with the reason in `tools/renders.json`. The skips are the backlog.
+  - Placement follows minecraft.wiki: `<Structure> isometric view` or `<Mob> render` in the infobox,
+    pieces in a `<gallery>` under the section that describes them, and armor sets without a body.
+  - Structure templates are not what players see: the pool's processors must run (the Abbey is built
+    from placeholder terracotta and tuff bricks), jigsaw blocks become their `final_state`, and a list
+    pool element stacks several templates. `render.py` handles all three; name `processors` in the
+    entry when a template is in two pools.
+  - Whole structures come from `tools/render/src/jigsaw.js`, which follows the game's jigsaw rules.
+    It gives one valid layout per seed, not any world's, so captions say "one possible layout".
+    Only the pack's templates are available: pools that use vanilla templates (the outpost's base
+    plate) can't be assembled, because `source/vanilla-data` has no `.nbt` files.
+  - Mob shapes come from the game itself. Java Edition defines them in code, not data, so
+    `python3 tools/entity_models.py` downloads the client for `tools/mc_version.txt` (unobfuscated since
+    26.1), runs `tools/render/ModelDump.java` against it and writes every model layer
+    (`LayerDefinitions.createRoots`: parts, pivots, rotations, cubes, texture size) to
+    `tools/render/src/entity_models.json`, which is committed. Rerun it when the Minecraft version
+    changes. It needs the game's Java version (25 for 26.2) and downloads one if `java` is older.
+    A render names a layer (`zombie`, `stray#outer`) and a texture; villagers take
+    `villager: {type, profession, level}` and get the game's stacked outfit layers and hat rules.
+  - Animation isn't in the model data: some models only look right after the game's `setupAnim`
+    (a blaze's rods, the ender dragon's neck, zombie arms). `tools/render/src/models.js` ports the
+    ones the renders need at tick 0, each citing its model class.
+  - Every entity layer draws without back-face culling, as the game's entity pipelines do (a lone
+    helmet would otherwise show holes); eye layers are unlit.
+  - WebGL goes through SwiftShader on every machine so the same inputs give the same pixels.
+    deepslate's invisible-block mesh is off: for a whole structure it covers millions of empty cells
+    and crashes the tab.
 
 **Pack look** (`MediaWiki:Gadget-mfw-ui.css`)
 - **Station screens:** `{{Crafting}}`, `{{Cooking}}`, `{{Smithing}}` and `{{Stonecutter}}` call
@@ -132,7 +169,7 @@ the swap mid-way.
 - **Tooltips:** every slot carries its item's in-game tooltip as a hidden `.mf-tip` (`Module:Tooltip`,
   data generated into `Module:Tooltip/Data` from the item components: name colour or rarity, lore runs
   with their colours, glyph widths). `MediaWiki:Gadget-mfwTooltip.js` shows it on hover, in the live
-  wiki and in the static export. `{{Tooltip|item}}` draws it in place (item infoboxes). Glyphs are CSS
+  wiki and in the static export. `{{Tooltip|item}}` draws it in place (the Tooltip page); infoboxes don't, their slot shows it on hover. Glyphs are CSS
   masks over `glyphs.png` filled with the text colour, the way the game tints the font's white glyphs.
 - **Palette:** slots and panels use the pack's brown inventory colours, and `{{Hp}}` uses its HUD hearts.
 

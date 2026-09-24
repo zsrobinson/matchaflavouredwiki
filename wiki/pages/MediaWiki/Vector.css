@@ -236,6 +236,12 @@ body.wgl-theme-dark #footer-icons { filter: none; }
 	.infobox-rows td { overflow-wrap: anywhere; }
 	.mw-parser-output table.wikitable { display: block; width: max-content; max-width: 100%; overflow-x: auto; }
 	.mw-parser-output pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+	/* Wide centred thumbnails (a 760px structure render) shrink to the screen. MediaWiki lays a thumb's
+	   figure out as a table, which ignores max-width, so these become blocks, caption included.
+	   Floated thumbs are small and keep their table layout, which wraps the caption to the image. */
+	.mw-parser-output figure.mw-halign-center { display: block; width: fit-content; max-width: 100%; box-sizing: border-box; }
+	.mw-parser-output figure.mw-halign-center > figcaption { display: block; }
+	.mw-parser-output figure.mw-halign-center img { max-width: 100%; height: auto; }
 	/* Recipe tables: name and ingredients side by side, the station screen below them (the "Recipe"
 	   header goes, unless it holds a collapsible table's toggle) */
 	.mw-parser-output table.recipe-table { width: auto; }
