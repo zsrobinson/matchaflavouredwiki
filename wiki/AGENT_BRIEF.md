@@ -43,6 +43,9 @@ determine something from the source, leave it out. Don't guess.
   `%2F`). You may create navbox templates for your area as
   `wiki/pages/Template/Navbox <area-topic>.wiki` (e.g. `Navbox food.wiki`) and use them on
   every page in your area.
+- Other agents may be editing pages at the same time, some of them yours. Edit a page as it is now, and
+  never run `git checkout`, `git restore` or `git stash` on anything under `wiki/pages/`: to undo your own
+  change, edit it back.
 - Don't edit `tools/`, `wiki/generated/`, `MediaWiki:` pages, shared templates or pages owned by
   other areas. If a shared template or the generator is wrong or missing something, say so in
   your final report. You may add a new small template prefixed with your area name if you truly need one.
