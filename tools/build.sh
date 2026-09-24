@@ -43,9 +43,11 @@ print('images to upload:', len(os.listdir(dst)))
 PY
   if [[ -n "$(ls build/images_changed)" ]]; then
     docker exec "$C" php maintenance/run.php importImages --overwrite \
-      --comment "Texture from the Matcha Flavoured resource pack (CC BY-NC-SA 4.0)" /build/images_changed png gif | sed "/^Importing .*done\.$/d"
+      --comment "Texture from the Matcha Flavoured resource pack (CC BY-NC-SA 4.0)" /build/images_changed png gif svg | sed "/^Importing .*done\.$/d"
   fi
   mv build/image_hashes.json.pending build/image_hashes.json
+  # full-size renders for the image viewer (Gadget-mfwZoom.js): plain files, not uploads
+  docker exec "$C" bash -c 'rm -rf /var/www/html/images/full && cp -r /build/images_full /var/www/html/images/full'
   step "import images"
 fi
 # Links tables (categories, the article count) and, in CI, the parser cache: one parse per page,

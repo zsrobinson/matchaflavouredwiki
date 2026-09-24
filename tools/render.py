@@ -33,6 +33,16 @@ OUT = os.path.join(ROOT, 'wiki', 'renders')
 INPUTS = os.path.join(OUT, 'inputs.json')
 TOOL = os.path.join(ROOT, 'tools', 'render')
 SUPERSAMPLE = 2  # drawn at twice the size, then scaled down: smooth edges without MSAA artifacts
+ZOOM = 2  # files are kept at twice an entry's width, so they stay sharp in the image viewer and on dense screens
+
+
+def zoom(entry):
+    """How many times its entry's width a render's file is: structures carry the most detail, so a whole
+    structure gets 4 and a piece 3; mobs and armor get ZOOM. Pages show a copy at the entry's width
+    (tools/images.py), so this changes only what the image viewer shows."""
+    if entry.get('kind') == 'structure':
+        return 4 if 'jigsaw' in entry else 3
+    return ZOOM
 
 
 def code_hash():
@@ -67,7 +77,8 @@ def status():
 
 
 def finish(raw, dest, width):
-    """Trim the transparent border and scale the supersampled drawing down to its final width."""
+    """Trim the transparent border and scale the supersampled drawing down to its final width (zoom() times the
+    entry's width, or less once the border is trimmed)."""
     im = Image.open(raw).convert('RGBA')
     bbox = im.getchannel('A').getbbox()
     if bbox:
@@ -178,7 +189,7 @@ def main():
     if not os.path.isdir(os.path.join(TOOL, 'node_modules')):
         subprocess.run(['npm', 'ci' if os.path.exists(os.path.join(TOOL, 'package-lock.json')) else 'install', '--silent'], cwd=TOOL, check=True)
     os.makedirs(OUT, exist_ok=True)
-    jobs = [dict(renders[n], name=n, width=renders[n].get('width', 400) * SUPERSAMPLE) for n in todo]
+    jobs = [dict(renders[n], name=n, width=renders[n].get('width', 400) * zoom(renders[n]) * SUPERSAMPLE) for n in todo]
     with tempfile.TemporaryDirectory() as tmp:
         jobs_file = os.path.join(tmp, 'jobs.json')
         json.dump(jobs, open(jobs_file, 'w'))
@@ -194,7 +205,7 @@ def main():
                 continue
             warn = [f'{k}: {r[k]}' for k in ('unknownBlocks', 'missingTextures') if r.get(k)]
             print('rendered', r['name'], *warn)
-            finish(os.path.join(tmp, r['name'] + '.png'), os.path.join(OUT, r['name'] + '.png'), renders[r['name']].get('width'))
+            finish(os.path.join(tmp, r['name'] + '.png'), os.path.join(OUT, r['name'] + '.png'), renders[r['name']].get('width', 400) * zoom(renders[r['name']]))
             done[r['name']] = want[r['name']]
         if proc.returncode and not done:
             sys.stderr.write(proc.stderr[-3000:])

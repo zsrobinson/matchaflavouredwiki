@@ -65,6 +65,9 @@ Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> 
   Never hand-edit `wiki/generated/`.
 - **New videos:** `python3 tools/fetch_transcripts.py <ids from new_videos>`. It saves transcripts of
   videos about the pack to `sources/transcripts/` and ignores unrelated ones.
+- Redraw the diagrams: `python3 tools/diagrams.py` and commit `wiki/diagrams/` (the Check workflow fails
+  if they're out of date). A diagram whose data moved raises an error naming what it couldn't find: fix
+  its function in `tools/diagram_defs/`, and if the change is visible, update the page's caption.
 - Then redraw the structure, mob and armor renders: `python3 tools/render.py` (a few minutes; it uses
   the preinstalled Chromium) and commit `wiki/renders/`. Look at the ones that changed: a render that
   broke (a block drawn magenta, a piece missing) usually means the pack changed a structure or model
