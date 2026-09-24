@@ -258,6 +258,10 @@ the swap mid-way.
   - **Printable version** (Tools, `[p]`): MediaWiki's own `javascript:print()` link. `Gadget-mfwShell.js` switches
     to the light theme for printing (`beforeprint`/`afterprint`; paper is white), and `Gadget-mfw-ui.css` keeps the
     article's colours in print (`print-color-adjust: exact`), since screens, hearts and glyphs are backgrounds or masks.
+  - **Access keys:** the links keep MediaWiki's `accesskey`s, and the search box gets `f` back. `site/accesskeys.js`
+    (appended to `site.js`) rewrites the `[x]` ending each tooltip into this browser's keys (`[alt-shift-x]`,
+    `[ctrl-option-x]` on Apple systems), as MediaWiki's `jquery.accessKeyLabel` does on the live wiki.
+    `node --test tests/accesskeys.test.mjs` covers it.
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;
   it becomes the search snippet. `check_seo.py` checks the export.
