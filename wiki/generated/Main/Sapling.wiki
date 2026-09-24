@@ -1,0 +1,30 @@
+{{Vanilla|Sapling}}
+{{Family infobox|Oak Sapling;Spruce Sapling;Birch Sapling;Jungle Sapling;Acacia Sapling;Dark Oak Sapling;Cherry Sapling;Pale Oak Sapling|title=Sapling|type=Block|stackable=Yes (64)}}
+A '''sapling''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Crafting Table]] recipes for the 8 variants below, and otherwise leaves them as in vanilla. See {{MCW|Sapling}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Sapling}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Oak Sapling|mcw=Oak Sapling}} || <code>minecraft:oak_sapling</code>
+|-
+| {{ItemLink|Spruce Sapling|mcw=Spruce Sapling}} || <code>minecraft:spruce_sapling</code>
+|-
+| {{ItemLink|Birch Sapling|mcw=Birch Sapling}} || <code>minecraft:birch_sapling</code>
+|-
+| {{ItemLink|Jungle Sapling|mcw=Jungle Sapling}} || <code>minecraft:jungle_sapling</code>
+|-
+| {{ItemLink|Acacia Sapling|mcw=Acacia Sapling}} || <code>minecraft:acacia_sapling</code>
+|-
+| {{ItemLink|Dark Oak Sapling|mcw=Dark Oak Sapling}} || <code>minecraft:dark_oak_sapling</code>
+|-
+| {{ItemLink|Cherry Sapling|mcw=Cherry Sapling}} || <code>minecraft:cherry_sapling</code>
+|-
+| {{ItemLink|Pale Oak Sapling|mcw=Pale Oak Sapling}} || <code>minecraft:pale_oak_sapling</code>
+|}
+
+[[Category:Blocks]]

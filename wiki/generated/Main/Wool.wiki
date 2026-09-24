@@ -1,2 +1,46 @@
-#REDIRECT [[White Wool]]
-[[Category:Redirects from item tags]]
+{{Vanilla|Wool}}
+{{Family infobox|White Wool;Light Gray Wool;Gray Wool;Black Wool;Brown Wool;Red Wool;Orange Wool;Yellow Wool;Lime Wool;Green Wool;Cyan Wool;Light Blue Wool;Blue Wool;Purple Wool;Magenta Wool;Pink Wool|title=Wool|type=Block|stackable=Yes (64)}}
+'''Wool''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Crafting Table]] recipes and [[Shepherd]] trades for the 16 variants below, and otherwise leaves them as in vanilla. See {{MCW|Wool}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Wool}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|White Wool|mcw=White Wool}} || <code>minecraft:white_wool</code>
+|-
+| {{ItemLink|Light Gray Wool|mcw=Light Gray Wool}} || <code>minecraft:light_gray_wool</code>
+|-
+| {{ItemLink|Gray Wool|mcw=Gray Wool}} || <code>minecraft:gray_wool</code>
+|-
+| {{ItemLink|Black Wool|mcw=Black Wool}} || <code>minecraft:black_wool</code>
+|-
+| {{ItemLink|Brown Wool|mcw=Brown Wool}} || <code>minecraft:brown_wool</code>
+|-
+| {{ItemLink|Red Wool|mcw=Red Wool}} || <code>minecraft:red_wool</code>
+|-
+| {{ItemLink|Orange Wool|mcw=Orange Wool}} || <code>minecraft:orange_wool</code>
+|-
+| {{ItemLink|Yellow Wool|mcw=Yellow Wool}} || <code>minecraft:yellow_wool</code>
+|-
+| {{ItemLink|Lime Wool|mcw=Lime Wool}} || <code>minecraft:lime_wool</code>
+|-
+| {{ItemLink|Green Wool|mcw=Green Wool}} || <code>minecraft:green_wool</code>
+|-
+| {{ItemLink|Cyan Wool|mcw=Cyan Wool}} || <code>minecraft:cyan_wool</code>
+|-
+| {{ItemLink|Light Blue Wool|mcw=Light Blue Wool}} || <code>minecraft:light_blue_wool</code>
+|-
+| {{ItemLink|Blue Wool|mcw=Blue Wool}} || <code>minecraft:blue_wool</code>
+|-
+| {{ItemLink|Purple Wool|mcw=Purple Wool}} || <code>minecraft:purple_wool</code>
+|-
+| {{ItemLink|Magenta Wool|mcw=Magenta Wool}} || <code>minecraft:magenta_wool</code>
+|-
+| {{ItemLink|Pink Wool|mcw=Pink Wool}} || <code>minecraft:pink_wool</code>
+|}
+
+[[Category:Blocks]]

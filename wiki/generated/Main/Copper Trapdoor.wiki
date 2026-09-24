@@ -1,12 +1,28 @@
-{{Vanilla}}
-{{Infobox auto}}
-'''Copper Trapdoor''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds two [[Stonecutter]] recipes. See {{MCW|Copper Trapdoor}} for everything else.
+{{Vanilla|Copper Trapdoor}}
+{{Family infobox|Copper Trapdoor;Exposed Copper Trapdoor;Weathered Copper Trapdoor;Oxidized Copper Trapdoor;Waxed Copper Trapdoor;Waxed Exposed Copper Trapdoor;Waxed Oxidized Copper Trapdoor|title=Copper Trapdoor|type=Block|stackable=Yes (64)}}
+A '''copper trapdoor''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Stonecutter]] recipes for the 7 variants below, and otherwise leaves them as in vanilla. See {{MCW|Copper Trapdoor}} for everything else.
 
 == Obtaining ==
-{{Recipes}}
-{{Sources}}
+{{Data/Family/Copper Trapdoor}}
 
-== Usage ==
-{{Uses}}
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Copper Trapdoor|mcw=Copper Trapdoor}} || <code>minecraft:copper_trapdoor</code>
+|-
+| {{ItemLink|Exposed Copper Trapdoor|mcw=Exposed Copper Trapdoor}} || <code>minecraft:exposed_copper_trapdoor</code>
+|-
+| {{ItemLink|Weathered Copper Trapdoor|mcw=Weathered Copper Trapdoor}} || <code>minecraft:weathered_copper_trapdoor</code>
+|-
+| {{ItemLink|Oxidized Copper Trapdoor|mcw=Oxidized Copper Trapdoor}} || <code>minecraft:oxidized_copper_trapdoor</code>
+|-
+| {{ItemLink|Waxed Copper Trapdoor|mcw=Waxed Copper Trapdoor}} || <code>minecraft:waxed_copper_trapdoor</code>
+|-
+| {{ItemLink|Waxed Exposed Copper Trapdoor|mcw=Waxed Exposed Copper Trapdoor}} || <code>minecraft:waxed_exposed_copper_trapdoor</code>
+|-
+| {{ItemLink|Waxed Oxidized Copper Trapdoor|mcw=Waxed Oxidized Copper Trapdoor}} || <code>minecraft:waxed_oxidized_copper_trapdoor</code>
+|}
 
 [[Category:Blocks]]

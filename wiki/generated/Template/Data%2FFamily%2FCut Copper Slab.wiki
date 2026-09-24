@@ -1,0 +1,11 @@
+<includeonly>=== Crafting ===
+{{Crafting|A1=Cut Copper Slab;Exposed Cut Copper Slab;Weathered Cut Copper Slab|B1=Potion;Potion;Potion|Output=Exposed Cut Copper Slab;Weathered Cut Copper Slab;Oxidized Cut Copper Slab|shapeless=1}}
+{| class="wikitable sortable"
+! Item !! Recipe
+|-
+| <span id="Exposed Cut Copper Slab"></span>{{ItemLink|Exposed Cut Copper Slab|mcw=Exposed Cut Copper Slab}} || {{MCW|Cut Copper Slab}} + {{MCW|Potion}} → 1
+|-
+| <span id="Weathered Cut Copper Slab"></span>{{ItemLink|Weathered Cut Copper Slab|mcw=Weathered Cut Copper Slab}} || [[Exposed Cut Copper Slab]] + {{MCW|Potion}} → 1
+|-
+| <span id="Oxidized Cut Copper Slab"></span>{{ItemLink|Oxidized Cut Copper Slab|mcw=Oxidized Cut Copper Slab}} || [[Weathered Cut Copper Slab]] + {{MCW|Potion}} → 1
+|}</includeonly><noinclude>Generated: the ways Matcha Flavoured adds to get each cut copper slab. [[Category:Generated data]]</noinclude>

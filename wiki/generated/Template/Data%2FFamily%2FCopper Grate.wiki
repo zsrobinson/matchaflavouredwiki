@@ -1,0 +1,11 @@
+<includeonly>=== Crafting ===
+{{Crafting|A1=Copper Grate;Exposed Copper Grate;Weathered Copper Grate|B1=Potion;Potion;Potion|Output=Exposed Copper Grate;Weathered Copper Grate;Oxidized Copper Grate|shapeless=1}}
+{| class="wikitable sortable"
+! Item !! Recipe
+|-
+| <span id="Exposed Copper Grate"></span>{{ItemLink|Exposed Copper Grate|mcw=Exposed Copper Grate}} || {{MCW|Copper Grate}} + {{MCW|Potion}} → 1
+|-
+| <span id="Weathered Copper Grate"></span>{{ItemLink|Weathered Copper Grate|mcw=Weathered Copper Grate}} || [[Exposed Copper Grate]] + {{MCW|Potion}} → 1
+|-
+| <span id="Oxidized Copper Grate"></span>{{ItemLink|Oxidized Copper Grate|mcw=Oxidized Copper Grate}} || [[Weathered Copper Grate]] + {{MCW|Potion}} → 1
+|}</includeonly><noinclude>Generated: the ways Matcha Flavoured adds to get each copper grate. [[Category:Generated data]]</noinclude>
