@@ -12,46 +12,14 @@ Diamond tools have 2500 durability and diamond armor 800 for every piece.
 
 == Stats ==
 === Tools ===
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Diamond Pickaxe}} || 2500 || 9 || 35 || 5 || 1.2 || —
-|-
-| {{ItemLink|Diamond Axe}} || 2500 || 9 || — || 9 || 1 || —
-|-
-| {{ItemLink|Diamond Shovel}} || 2500 || 9 || — || 5.5 || 1 || —
-|-
-| {{ItemLink|Diamond Hoe}} || 2500 || 9 || — || 1 || 4 || —
-|-
-| {{ItemLink|Diamond Mattock}} || 2500 || 8 || — || 4 || 3 || —
-|-
-| {{ItemLink|Diamond Dolabra}} || 2500 || 8 || 35 || 7 || 1 || —
-|}
+{{Data/Tools/Diamond}}
 
 === Weapons ===
-{| class="wikitable sortable"
-! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
-|-
-| {{ItemLink|Diamond Sword}} || 2500 || 7 || 1.6 || — || —
-|-
-| {{ItemLink|Diamond Spear}} || 2500 || 4 || 0.952 || — || —
-|}
+{{Data/Weapons/Diamond}}
 
 === Armor ===
 [[File:Diamond armor render.png|thumb|120px|A full set of diamond armor]]
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Diamond Helmet}} || 800 || 3 || 2 || — || — || —
-|-
-| {{ItemLink|Diamond Chestplate}} || 800 || 8 || 2 || — || — || —
-|-
-| {{ItemLink|Diamond Leggings}} || 800 || 6 || 2 || — || — || —
-|-
-| {{ItemLink|Diamond Boots}} || 800 || 3 || 2 || — || — || —
-|- class="sortbottom"
-! Full set !! !! 20 !! 8 !! 0 !! colspan="2" |
-|}
+{{Data/Armor/Diamond}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 

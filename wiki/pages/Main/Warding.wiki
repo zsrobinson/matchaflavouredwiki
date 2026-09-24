@@ -15,29 +15,8 @@ The item most associated with warding is the [[Nazar]], a lapis charm that wards
 
 == Obtaining ==
 Warding cannot be found as a random enchantment. It comes on the following items:
-{| class="wikitable sortable"
-! Item !! Level !! Where it works
-|-
-| {{ItemLink|Wooden Cross}} || {{G|Warding}} 1 || Main hand or off hand
-|-
-| {{ItemLink|Warding Sword}} || {{G|Warding}} 1 || Main hand or off hand
-|-
-| {{ItemLink|Silver Sword}} || {{G|Warding}} 1 (and [[Smite]] III) || Main hand or off hand
-|-
-| {{ItemLink|Warding Shield}} || {{G|Warding}} 1 || Main hand or off hand
-|-
-| {{ItemLink|Electrum Mattock}} || {{G|Warding}} 1 || Main hand or off hand
-|-
-| {{ItemLink|Nazar}} || {{G|Warding}} 2 || Main hand or off hand
-|-
-| {{ItemLink|Electrum Axe}} || {{G|Warding}} 2 || Main hand or off hand
-|-
-| {{ItemLink|Electrum Spear}} || {{G|Warding}} 2 || Main hand or off hand
-|-
-| {{ItemLink|Electrum Sword}} || {{G|Warding}} 3 || Main hand or off hand
-|-
-| [[Electrum equipment|Electrum armor]] || {{G|Electrum}} +1 per piece, up to {{G|Warding}} 4 || Worn
-|}
+{{Data/Intrinsic items/Warding}}
+Each piece of [[Electrum equipment|electrum armor]] carries {{G|Electrum}} +1 instead, which counts toward warding while worn, up to {{G|Warding}} 4 for the full set (see [[#Warding level]]).
 The [[Prayer of Man]] blessing stores {{G|Warding}} 2 and [[Smite]] II, and can add warding to a sword, axe or shield in an [[anvil]].<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/warding.json}}</ref> The four warding levels are mutually exclusive, and they are also exclusive with the [[Shakudo equipment|shakudo]] and [[Adamant equipment|adamant]] weapon intrinsics, so an item can carry only one of them.<ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_weapon.json}}</ref>
 
 == Mechanics ==

@@ -16,11 +16,13 @@ A [[Baked Potato|baked potato]], [[cheese]], an egg, [[flour]] and a [[bowl]]. T
 Eating gnocchi takes 1.6 seconds and heals {{Hp|16}}. The bowl is given back. Making it grants ''Wait, you can make that?''
 
 === Trading ===
-It is one of the foods a villager can ask for as its [[favorite food]].
+{{Upcoming|type=section}}
+It is one of the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_15.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 
 == History ==
 {{History|
 {{History line|1.10|Gnocchi got a translatable name.}}
+{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == See also ==

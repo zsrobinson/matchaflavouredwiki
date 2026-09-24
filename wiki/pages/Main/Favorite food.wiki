@@ -1,16 +1,17 @@
+{{Upcoming|type=page}}
 {{Infobox
 |title=Favorite food
 |type=Trading mechanic
 }}
-A villager's '''favorite food''' is one extra trade that every employed [[villager]] gets after its first trade: it buys one serving of a randomly chosen [[food]] for an [[Obol]], once. It is the only way to sell most of the pack's foods.
+A villager's '''favorite food''' is an upcoming trade mechanic: every employed [[villager]] gets one extra trade after its first trade, in which it buys one serving of a randomly chosen [[food]] for an [[Obol]], once. It is on the repository's <code>main</code> branch but not in the current release, [[Matcha Flavoured 1.12.2|1.12.2-beta]]. Once released, it will be the only way to sell most of the pack's foods.
 
 == Mechanics ==
-When the data pack loads, it starts a check that runs 3 seconds later and then every 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/favorite_food_setup.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref> Each check looks at every loaded villager that:
+When the data pack loads, it starts a check that runs 3 seconds later and then every 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/favorite_food_setup.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> Each check looks at every loaded villager that:
 * has a profession (any profession other than none), and
 * has more than 0 villager experience, meaning the player has traded with it at least once, and
 * has not been given a favorite food yet.
 
-For each such villager, the pack picks a random whole number from 0 to 41 and runs the matching one of 42 food functions.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update.mcfunction}}</ref> The number is passed to the function name through a macro, <code>food_trades/food_$(num)</code>.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_macro.mcfunction}}</ref> That function appends one offer to the end of the villager's trade list and tags the villager so it is never picked again:<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_0.mcfunction}}</ref>
+For each such villager, the pack picks a random whole number from 0 to 41 and runs the matching one of 42 food functions.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> The number is passed to the function name through a macro, <code>food_trades/food_$(num)</code>.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_macro.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> That function appends one offer to the end of the villager's trade list and tags the villager so it is never picked again:<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_0.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 {| class="wikitable"
 ! Villager wants !! Villager gives !! Uses
 |-
@@ -20,7 +21,7 @@ Every one of the 42 foods has the same 1 in 42 chance. The food in the trade car
 
 Because the check needs the villager to have experience, the favorite food appears only after the first trade with a villager, and never on an unemployed villager or a nitwit. The favorite food is a villager trade only; the [[Wandering Trader]] does not get one.
 
-An [[Amnestic]] clears the villager's favorite food flag. Since the villager keeps its experience, it is given a new random favorite food shortly after it takes a new profession.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic_wrapped.mcfunction}}</ref>
+An [[Amnestic]] clears the villager's favorite food flag (also a change on <code>main</code>; the 1.12.2-beta Amnestic has no flag to clear). Since the villager keeps its experience, it is given a new random favorite food shortly after it takes a new profession.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic_wrapped.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 
 == Foods ==
 {| class="wikitable sortable"

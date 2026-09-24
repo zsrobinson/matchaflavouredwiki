@@ -1,0 +1,14 @@
+<includeonly>{| class="wikitable sortable"
+! Input !! Output !! Time !! Experience
+|-
+| {{ItemLink|Clay Ball}} || {{ItemLink|Brick}}{{{matcha:campfire/brick_campfire|}}} || data-sort-value="100" | 5 s || 0.3
+|-
+| {{ItemLink|Bush}} || {{ItemLink|Dead Bush}}{{{matcha:campfire/dead_bush_campfire|}}} || data-sort-value="100" | 5 s || 0.35
+|-
+| {{ItemLink|Sugar Cane|mcw=Sugar Cane}} || {{ItemLink|Molasses}}{{{matcha:food/campfire/molasses|}}} || data-sort-value="100" | 5 s || 0.01
+|-
+| {{ItemLink|Short Grass}} or {{ItemLink|Fern}} || {{ItemLink|Short Dry Grass}}{{{matcha:campfire/short_dry_grass_campfire|}}} || data-sort-value="200" | 10 s || 0.35
+|-
+| {{ItemLink|Tall Grass}} or {{ItemLink|Large Fern}} || {{ItemLink|Tall Dry Grass}}{{{matcha:campfire/tall_dry_grass_campfire|}}} || data-sort-value="100" | 5 s || 0.35
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit. Hand notes go after the output, keyed by recipe ID: <code><nowiki>{{Data/Station/Kindling|matcha:campfire/brick_campfire=...}}</nowiki></code>.
+[[Category:Generated data]]</noinclude>

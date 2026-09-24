@@ -20,6 +20,8 @@ It breaks hoe blocks at speed 12 and has 3000 durability. The pack's oak and dar
 === Intrinsics ===
 The electrum fortune intrinsic ({{G|Fortune}}) works like [[Fortune]] on ores, crops and leaves; the pack's loot tables check for it directly. Electrum tools are the only source of Fortune III in the pack, and the intrinsic cannot be combined with Fortune or Silk Touch.<ref>{{Source|MF_datapack/data/matcha/enchantment/electrum_tool.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
+In 1.12.2 the language file has no name for this intrinsic, so the tooltip shows its translation key, "enchantment.kleispack.electrum_tool III", in yellow instead of the {{G|Fortune}} glyph.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> This does not change how it works.
+
 === Combat ===
 It deals {{Hp|1}} damage at an attack speed of 4.
 
@@ -43,6 +45,7 @@ An apprentice [[weaponsmith]] buys it for one [[electrum alloy]], so the alloy c
 {{History line|1.10|Electrum was buffed. A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
 {{History line|1.12.1-alpha|Smithing no longer needs a base-metal item in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. Can only be repaired with blocks of diamond. Electrum became the only source of Fortune III.}}
 {{History line|1.12.2|No longer burns in fire or lava. Warding was removed from electrum tools so that they focus on Fortune. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
+{{History line|Upcoming|2=The intrinsic's tooltip line shows the {{G|Fortune}} glyph instead of its translation key.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == References ==

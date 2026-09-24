@@ -1,0 +1,19 @@
+<includeonly>{| class="wikitable"
+! Count !! Effect !! Lasts !! Every
+|-
+| 1{{{1|}}} || {{EffectLink|Regeneration}} I || 3 s || 30 s
+|-
+| 2{{{2|}}} || {{EffectLink|Regeneration}} I || 3 s || 26 s
+|-
+| 3{{{3|}}} || {{EffectLink|Regeneration}} I || 3 s || 22 s
+|-
+| 4{{{4|}}} || {{EffectLink|Regeneration}} I || 3 s || 18 s
+|-
+| 5{{{5|}}} || {{EffectLink|Regeneration}} II || 3 s || 20 s
+|-
+| 6{{{6|}}} || {{EffectLink|Regeneration}} II || 3 s || 16 s
+|-
+| 7{{{7|}}} || {{EffectLink|Regeneration}} II || 3 s || 12 s
+|-
+| 8{{{8|}}} || {{EffectLink|Regeneration}} II || 3 s || 8 s
+|}</includeonly><noinclude>Generated from the pack's timer functions: the effect a player with this <code>shakudo_regen</code> score gets, and how often. A note for a row goes in a parameter named by its count. [[Category:Generated data]]</noinclude>

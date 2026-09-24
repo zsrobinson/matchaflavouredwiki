@@ -1,0 +1,13 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Steel Helmet}}{{{Steel Helmet|}}} || 1000 || 2 || 1 || 0.1 || — || [[Blast Protection]] II
+|-
+| {{ItemLink|Steel Chestplate}}{{{Steel Chestplate|}}} || 1000 || 7 || 1 || 0.2 || — || [[Blast Protection]] IV
+|-
+| {{ItemLink|Steel Leggings}}{{{Steel Leggings|}}} || 1000 || 5 || 1 || 0.1 || — || [[Blast Protection]] III
+|-
+| {{ItemLink|Steel Boots}}{{{Steel Boots|}}} || 1000 || 2 || 1 || 0.1 || — || [[Blast Protection]] II
+|- class="sortbottom"
+! Full set !! !! 16 !! 4 !! 0.5 !! colspan="2" |
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

@@ -20,26 +20,8 @@ The oven cooks every food that [[kindling]] can, plus a few that only it can:<re
 Food takes 5 seconds and the oven meals 15 seconds. Each item gives 0.35 experience, except molasses (0.01).
 
 === Other smelting ===
-{| class="wikitable"
-! Input !! Output !! Time
-|-
-| Mossy cobblestone || Cobblestone || 2.5 s
-|-
-| Mossy stone bricks || Stone bricks || 2.5 s
-|-
-| Wet sponge || Sponge || 2.5 s
-|-
-| Short grass or fern || Short dry grass || 5 s
-|-
-| Tall grass or large fern || Tall dry grass || 5 s
-|-
-| Bush || Dead bush || 5 s
-|-
-| Grass block || Dirt || 5 s
-|-
-| [[Hellstone]] || [[Hellbricks]] || 10 s
-|}
-The vanilla recipes for charcoal, leaf litter and lime dye (from sea pickles) also still work.<ref>{{Source|MF_datapack/data/matcha/recipe/oven/cobblestone_from_mossy_cobblestone.json}}</ref> Copper, ancient debris, stone and most other vanilla smelting recipes are removed; they moved to the [[Mud Kiln|mud kiln]] or the blast furnace.
+{{Data/Station/Oven}}
+The vanilla recipes marked in the table still work.<ref>{{Source|MF_datapack/data/matcha/recipe/oven/cobblestone_from_mossy_cobblestone.json}}</ref> Copper, ancient debris, stone and most other vanilla smelting recipes are removed; they moved to the [[Mud Kiln|mud kiln]] or the blast furnace.
 
 == Advancements ==
 * ''Now You're Cooking'': construct an oven from bricks and iron.

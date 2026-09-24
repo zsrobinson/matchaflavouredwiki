@@ -15,7 +15,7 @@
 * Random enchanted books and trial chamber vaults. Because the maximum level is I, no book can hold more.
 
 == Behavior ==
-Fortune works as vanilla Fortune I. Its maximum level is lowered from III to I, so it cannot be raised by combining books in an [[anvil]].<ref>{{Source|MF_datapack/data/minecraft/enchantment/fortune.json}}</ref> The pack adds the electrum tool intrinsic to the same exclusive set as Fortune and Silk Touch, so a tool can have only one of the three.<ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/exclusive_set/mining.json}}</ref> The pack's block loot tables check for both Fortune and the electrum intrinsic.
+Fortune works as vanilla Fortune I. Its maximum level is lowered from III to I, so it cannot be raised by combining books in an [[anvil]].<ref>{{Source|MF_datapack/data/minecraft/enchantment/fortune.json}}</ref> The pack adds the electrum tool intrinsic to the same exclusive set as Fortune and Silk Touch, so a tool can have only one of the three.<ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/exclusive_set/mining.json}}</ref> The pack's block loot tables check for both Fortune and the electrum intrinsic. One table gets this wrong in 1.12.2-beta: when [[Native Gold|native gold]] drops raw gold, it applies the Fortune bonus twice and ignores the electrum intrinsic, so a Fortune pickaxe gets more raw gold there than from native deepslate gold, and an electrum pickaxe gets no bonus.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json}}</ref> See [[Known bugs]].
 
 Fortune has no effect on [[spawner]]s: each gives exactly one [[Divine Fragment]].
 
@@ -27,6 +27,7 @@ Its anvil cost multiplier is 1, down from 4.
 {{History line|1.03|Fortune no longer works on spawners.<ref>{{Cite changelog|1.03|quote=Fortune NO LONGER works on spawners. I think early game should be defined by the rarity of this material. 4 Fragments per spawner is just too much.}}</ref>}}
 {{History line|1.12.1-alpha|Maximum level lowered from III to I; Fortune III only comes from electrum.<ref>{{Cite changelog|1.12.1-alpha|quote=Fortune III can now only be obtained from Electrum}}</ref> Added the Prayer of Midas.}}
 {{History line|1.12.2|Fortune now works on tomatoes, glow berry vines and chorus plants.}}
+{{History line|Upcoming|2=Native gold applies Fortune once and the electrum intrinsic once, like the other ores.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == See also ==

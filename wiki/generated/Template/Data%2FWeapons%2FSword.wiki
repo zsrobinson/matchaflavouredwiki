@@ -1,0 +1,23 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Wooden Sword}}{{{Wooden Sword|}}} || 200 || 4 || 1.6 || — || —
+|-
+| {{ItemLink|Copper Sword}}{{{Copper Sword|}}} || 350 || 5 || 1.6 || — || —
+|-
+| {{ItemLink|Iron Sword}}{{{Iron Sword|}}} || 500 || 6 || 1.6 || — || —
+|-
+| {{ItemLink|Steel Sword}}{{{Steel Sword|}}} || 3000 || 6 || 1.4 || +1 || —
+|-
+| {{ItemLink|Golden Sword}}{{{Golden Sword|}}} || 350 || 4 || 1.6 || — || [[Looting]] I
+|-
+| {{ItemLink|Diamond Sword}}{{{Diamond Sword|}}} || 2500 || 7 || 1.6 || — || —
+|-
+| {{ItemLink|Shakudo Sword}}{{{Shakudo Sword|}}} || 1000 || 6 || 1.6 || — || [[Sweeping Edge]] I<br />[[Shakudo equipment|Life steal]]
+|-
+| {{ItemLink|Hepatizon Sword}}{{{Hepatizon Sword|}}} || 1000 || 6 || 1.9 || — || [[Riposte]] II
+|-
+| {{ItemLink|Electrum Sword}}{{{Electrum Sword|}}} || 3000 || 7 || 1.9 || — || [[Looting]] II<br />[[Smite]] III<br />{{G|Warding}} [[Warding|3 Warding]]
+|-
+| {{ItemLink|Adamant Sword}}{{{Adamant Sword|}}} || 3000 || 8 || 1.6 || — || [[Sharpness]] I<br />{{G|Weakness}} [[Adamant equipment|Weakness]]<br />[[Unbreaking]] II
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

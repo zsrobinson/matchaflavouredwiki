@@ -1,0 +1,38 @@
+<includeonly>{| class="wikitable sortable"
+! Input !! Output !! Time !! Experience
+|-
+| {{ItemLink|Clay Ball}} || {{ItemLink|Brick}}{{{matcha:kiln/brick_from_smoking_clay_ball|}}} || data-sort-value="100" | 5 s || 0.3
+|-
+| <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood">Any logs that burn</span> || {{ItemLink|Charcoal}}{{{matcha:kiln/charcoal|}}} || data-sort-value="100" | 5 s || 0.15
+|-
+| {{ItemLink|Raw Copper|mcw=Raw Copper}} || {{ItemLink|Copper Ingot}}{{{matcha:kiln/copper_ingot_from_smoking_raw_copper|}}} || data-sort-value="200" | 10 s || 0.7
+|-
+| {{ItemLink|Cobbled Deepslate}} || {{ItemLink|Deepslate}}{{{matcha:kiln/deepslate|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Quartz}} || {{ItemLink|Glass}}{{{matcha:kiln/glass_from_smoking_quartz|}}} || data-sort-value="100" | 5 s || 0.35
+|-
+| {{ItemLink|Sand}} or {{ItemLink|Red Sand}} || {{ItemLink|Glass}}{{{matcha:kiln/glass_from_smoking_sand|}}} || data-sort-value="100" | 5 s || 0.35
+|-
+| <span class="explain" title="Black Terracotta, Blue Terracotta, Brown Terracotta, Cyan Terracotta, Gray Terracotta, Green Terracotta, Light Blue Terracotta, Light Gray Terracotta, Lime Terracotta, Magenta Terracotta, Orange Terracotta, Pink Terracotta, Purple Terracotta, Red Terracotta, White Terracotta, Yellow Terracotta">Any dyed terracotta</span> || <span class="explain" title="Black Glazed Terracotta, Blue Glazed Terracotta, Brown Glazed Terracotta, Cyan Glazed Terracotta, Gray Glazed Terracotta, Green Glazed Terracotta, Light Blue Glazed Terracotta, Light Gray Glazed Terracotta, Lime Glazed Terracotta, Magenta Glazed Terracotta, Orange Glazed Terracotta, Pink Glazed Terracotta, Purple Glazed Terracotta, Red Glazed Terracotta, White Glazed Terracotta, Yellow Glazed Terracotta">The matching glazed terracotta</span>{{{matcha:kiln/black_glazed_terracotta|}}}{{{matcha:kiln/blue_glazed_terracotta|}}}{{{matcha:kiln/brown_glazed_terracotta|}}}{{{matcha:kiln/cyan_glazed_terracotta|}}}{{{matcha:kiln/gray_glazed_terracotta|}}}{{{matcha:kiln/green_glazed_terracotta|}}}{{{matcha:kiln/light_blue_glazed_terracotta|}}}{{{matcha:kiln/light_gray_glazed_terracotta|}}}{{{matcha:kiln/lime_glazed_terracotta|}}}{{{matcha:kiln/magenta_glazed_terracotta|}}}{{{matcha:kiln/orange_glazed_terracotta|}}}{{{matcha:kiln/pink_glazed_terracotta|}}}{{{matcha:kiln/purple_glazed_terracotta|}}}{{{matcha:kiln/red_glazed_terracotta|}}}{{{matcha:kiln/white_glazed_terracotta|}}}{{{matcha:kiln/yellow_glazed_terracotta|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Cactus|mcw=Cactus}} || {{ItemLink|Green Dye}}{{{matcha:kiln/green_dye|}}} || data-sort-value="100" | 5 s || 0.05
+|-
+| {{ItemLink|Cobblestone}} or {{ItemLink|Stone Bricks}} || {{ItemLink|Limestone}}{{{matcha:kiln/stone|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Basalt|mcw=Basalt}} || {{ItemLink|Smooth Basalt}}{{{matcha:kiln/smooth_basalt|}}} || data-sort-value="100" | 5 s || 0.35
+|-
+| {{ItemLink|Block of Quartz}} || {{ItemLink|Smooth Quartz Block}}{{{matcha:kiln/smooth_quartz_from_smoking_quartz_block|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Red Sandstone}} || {{ItemLink|Smooth Red Sandstone}}{{{matcha:kiln/smooth_red_sandstone|}}} || data-sort-value="100" | 5 s || 0.35
+|-
+| {{ItemLink|Sandstone}} || {{ItemLink|Smooth Sandstone}}{{{matcha:kiln/smooth_sandstone|}}} || data-sort-value="100" | 5 s || 0.35
+|-
+| {{ItemLink|Limestone}} || {{ItemLink|Smooth Stone}}{{{matcha:kiln/smooth_stone|}}} || data-sort-value="100" | 5 s || 0.1
+|-
+| {{ItemLink|Wet Sponge|mcw=Wet Sponge}} || {{ItemLink|Sponge}}{{{matcha:kiln/sponge|}}} || data-sort-value="50" | 2.5 s || 0.15
+|-
+| {{ItemLink|Clay}} || {{ItemLink|Terracotta}}{{{matcha:kiln/terracotta|}}} || data-sort-value="100" | 5 s || 0.35
+|-
+| {{ItemLink|Amethyst Shard}} || {{ItemLink|Tinted Glass}}{{{matcha:kiln/tinted_glass_from_smoking_amethyst|}}} || data-sort-value="100" | 5 s || 0.35
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit. Hand notes go after the output, keyed by recipe ID: <code><nowiki>{{Data/Station/Mud Kiln|matcha:kiln/black_glazed_terracotta=...}}</nowiki></code>.
+[[Category:Generated data]]</noinclude>

@@ -1,125 +1,125 @@
 <includeonly>{| class="wikitable sortable"
-! Icon !! Advancement !! Description !! Parent !! Frame !! Hidden !! Reward
+! Icon !! Advancement !! In-game description !! Parent !! Actual requirements !! Type !! Reward
 |-
-| {{Slot|Grass Block|link=none}} || '''From Earth''' ||  ||  || Task ||  || runs <code>matcha:setup/first_load</code>
+| {{Slot|Grass Block|link=none}} || <span id="From Earth"></span>'''From Earth''' || — || — || {{{matcha:tutorial/root|}}} || Task (root) || —{{{matcha:tutorial/root reward|}}}
 |-
-| {{Slot|Estus Ash|link=none}} || '''Hellish Powder''' || It Radiates Holy Power. It kind of smells like Curry... maybe Cinnamon? || From Earth || Task || Yes || 
+| {{Slot|Kindling|link=none}} || <span id="Prometheus be Damned"></span>'''Prometheus be Damned''' || Light Kindling using Tinder or a Flint Firestarter || From Earth || {{{matcha:tutorial/light_campfire|}}} || Task || —{{{matcha:tutorial/light_campfire reward|}}}
 |-
-| {{Slot|Kindling|link=none}} || '''Prometheus be Damned''' || Light Kindling using Tinder or a Flint Firestarter || From Earth || Task ||  || 
+| {{Slot|Tall Dry Grass|link=none}} || <span id="Harvester"></span>'''Harvester''' || Use a Hoe to harvest Grass and dry it on a Campfire || Prometheus be Damned || {{{matcha:tutorial/obtain_dry_grass|}}} || Task || —{{{matcha:tutorial/obtain_dry_grass reward|}}}
 |-
-| {{Slot|Obol|link=none}} || '''You're Rich!''' || Obtain an Obol || From Earth || Task || Yes || 
+| {{Slot|Mud Kiln|link=none}} || <span id="Ancient Technology"></span>'''Ancient Technology''' || Construct a Kiln made from Packed Mud and Mudbricks || Harvester || {{{matcha:tutorial/obtain_kiln|}}} || Task || —{{{matcha:tutorial/obtain_kiln reward|}}}
 |-
-| {{Slot|Divine Fragment|link=none}} || '''A Vestige of Divinity''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}} A Relic only obtained by breaking Spawners or vanquishing powerful Forces || Hellish Powder || Goal ||  || <code>matcha:advancement/obol_2</code>
+| {{Slot|Copper Ingot|link=none}} || <span id="Brazier"></span>'''Brazier''' || {{G|E010}} Use a Mud Kiln to Smelt Copper || Ancient Technology || {{{matcha:tutorial/obtain_copper|}}} || Task || Minimum hearts −1{{{matcha:tutorial/obtain_copper reward|}}}
 |-
-| {{Slot|Nazar|link=none}} || '''Apotropaic Jewellery''' || {{G{{!}}U+E00F}} Holding a Lapis Nazar will Ward the Dead. It can also be attached to some Equipment || Hellish Powder || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Smooth Stone|link=none}} || <span id="Mason"></span>'''Mason''' || Kilns excel at processing Earthen Materials || Brazier || {{{matcha:tutorial/obtain_smooth_stone|}}} || Task || —{{{matcha:tutorial/obtain_smooth_stone reward|}}}
 |-
-| {{Slot|Beacon Kindling|link=none}} || '''Bonfire Lit''' || {{G{{!}}U+E00F}} Use a Beacon Kindling to signal a Wandering Trader || You're Rich! || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Blast Furnace|link=none}} || <span id="Burgeoning Metallurge"></span>'''Burgeoning Metallurge''' || Blast Furnaces burn hotter than Kilns, able to melt more durable Metals || Mason || {{{matcha:tutorial/obtain_blast_furnace|}}} || Task || —{{{matcha:tutorial/obtain_blast_furnace reward|}}}
 |-
-| {{Slot|Opal|link=none}} || '''Canto I''' || ❤ Defeat the Sea God || Hellish Powder || Task ||  || <code>matcha:advancement/crystal_heart_1</code>
+| {{Slot|Iron Ingot|link=none}} || <span id="The Stalwart Metal"></span>'''The Stalwart Metal''' || {{G|E010}} Iron has no Intrinsic Properties and can only Host Steel || Burgeoning Metallurge || {{{matcha:tutorial/obtain_iron_ingot|}}} || Task || Minimum hearts −1{{{matcha:tutorial/obtain_iron_ingot reward|}}}
 |-
-| {{Slot|Tall Dry Grass|link=none}} || '''Harvester''' || Use a Hoe to harvest Grass and dry it on a Campfire || Prometheus be Damned || Task ||  || 
+| {{Slot|Carbon-Rich Iron|link=none}} || <span id="A Brittle Alloy?"></span>'''A Brittle Alloy?''' || Craft Carbon-Rich Iron with Iron and a Coal Block || The Stalwart Metal || {{{matcha:tutorial/obtain_carbon_rich_iron|}}} || Task || —{{{matcha:tutorial/obtain_carbon_rich_iron reward|}}}
 |-
-| {{Slot|Grilled Melon|link=none}} || '''Powerful Flavors''' || Reveal the hidden aspect of a Food by cooking it on a Campfire or an Oven || Prometheus be Damned || Task ||  || 
+| {{Slot|Steel Alloy|link=none}} || <span id="A Tough Alloy"></span>'''A Tough Alloy''' || Made by blasting Carbon-Rich Iron, Steel grants Iron Equipment Knockback and greatly increased Durability || A Brittle Alloy? || {{{matcha:tutorial/obtain_steel|}}} || Task || —{{{matcha:tutorial/obtain_steel reward|}}}
 |-
-| {{Slot|Asylum Seeker|link=none}} || '''A Good Samaritan''' || {{G{{!}}U+E00F}} Cover the Relocation costs for an Asylum Seeker, and make a home for them here || Bonfire Lit || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Smithing Table|link=none}} || <span id="Master Metallurge"></span>'''Master Metallurge''' || Smithing Tables allow you to modify Base-Metal tools using Alloys || A Tough Alloy || {{{matcha:tutorial/obtain_smithing_table|}}} || Task || —{{{matcha:tutorial/obtain_smithing_table reward|}}}
 |-
-| {{Slot|Mud Kiln|link=none}} || '''Ancient Technology''' || Construct a Kiln made from Packed Mud and Mudbricks || Harvester || Task ||  || 
+| {{Slot|Smithing Upgrade Template|link=none}} || <span id="Upgrades"></span>'''Upgrades''' || Smithing Upgrades are used to Modify and Upgrade Mattocks and Dolabras || Master Metallurge || {{{matcha:tutorial/obtain_smithing_upgrade|}}} || Task || —{{{matcha:tutorial/obtain_smithing_upgrade reward|}}}
 |-
-| {{Slot|Ruby|link=none}} || '''Canto II''' || ❤ Pillage the Remnants of Pandaemonium || Canto I || Task ||  || <code>matcha:advancement/crystal_heart_1</code>
+| {{Slot|Steel Dolabra|link=none}} || <span id="Three in One?"></span>'''Three in One?''' || {{G|E00F}}{{G|E00F}} Upgrade a Mattock or Dolabra || Upgrades || {{{matcha:tutorial/upgrade_mattock|}}} || Goal || 1 {{ItemLink|Obol}}{{{matcha:tutorial/upgrade_mattock reward|}}}
 |-
-| {{Slot|Crystal Heart|link=none}} || '''Crystal Heart!''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Crystal Hearts impart a piece of divinity onto Gods who devour them. Though mortals were only able to use their Undying properties. || A Vestige of Divinity || Challenge ||  || <code>matcha:advancement/obol_3</code>
+| {{Slot|Adamant Pickaxe|link=none}} || <span id="Apocryphal Adamant"></span>'''Apocryphal Adamant''' || {{G|E00F}}{{G|E00F}}{{G|E00F}}{{G|E00F}} Smith a piece of Adamant Equipment from Diamond with Adamant Alloy || Master Metallurge || {{{matcha:tutorial/obtain_adamant_tool|}}} || Challenge || 4 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_adamant_tool reward|}}}
 |-
-| {{Slot|Warding Sword|link=none}} || '''Fae-Slayer''' || Affix a Nazar to an Iron Sword in a Smithing Table || Apotropaic Jewellery || Task ||  || 
+| {{Slot|Hepatizon Pickaxe|link=none}} || <span id="Brilliant Bronze"></span>'''Brilliant Bronze''' || {{G|E00F}} Smith a piece of Hepatizon Equipment from Copper with Hepatizon Alloy || Master Metallurge || {{{matcha:tutorial/obtain_bronze_tool|}}} || Goal || 1 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_bronze_tool reward|}}}
 |-
-| {{Slot|Poisonous Potato|link=none}} || '''Hidden Flavors''' || {{G{{!}}U+E00F}} Cook a secret Ingredient || Powerful Flavors || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Electrum Pickaxe|link=none}} || <span id="Evangelic Electrum"></span>'''Evangelic Electrum''' || {{G|E00F}}{{G|E00F}}{{G|E00F}}{{G|E00F}} Smith a piece of Electrum Equipment from Diamond with Electrum Alloy || Master Metallurge || {{{matcha:tutorial/obtain_electrum_tool|}}} || Challenge || 4 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_electrum_tool reward|}}}
 |-
-| {{Slot|Oven|link=none}} || '''Now You're Cooking''' || Construct an Oven from Bricks and Iron || Powerful Flavors || Task ||  || 
+| {{Slot|Shakudo Pickaxe|link=none}} || <span id="Palatinate Perfection"></span>'''Palatinate Perfection''' || {{G|E00F}} Smith a piece of Shakudo Equipment from Copper with Shakudo Alloy || Master Metallurge || {{{matcha:tutorial/obtain_palatinate_tool|}}} || Goal || 1 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_palatinate_tool reward|}}}
 |-
-| {{Slot|Copper Ingot|link=none}} || '''Brazier''' || {{G{{!}}U+E010}} Use a Mud Kiln to Smelt Copper || Ancient Technology || Task ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Steel Pickaxe|link=none}} || <span id="Sturdy Steel"></span>'''Sturdy Steel''' || {{G|E00F}} Smith a piece of Steel Equipment from Iron with Steel Alloy || Master Metallurge || {{{matcha:tutorial/obtain_steel_tool|}}} || Goal || 1 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_steel_tool reward|}}}
 |-
-| {{Slot|Amber|link=none}} || '''Canto III''' || ❤ Exhume the Pilgrim's Trails || Canto II || Task ||  || <code>matcha:advancement/crystal_heart_1</code>
+| {{Slot|Anvil|link=none}} || <span id="Repair &amp; Reuse"></span>'''Repair & Reuse''' || Anvils made from Steel can repair Any Equipment with its corresponding Base-Metal Ingot forever || A Tough Alloy || {{{matcha:tutorial/obtain_avil|}}} || Task || —{{{matcha:tutorial/obtain_avil reward|}}}
 |-
-| {{Slot|Carp|link=none}} || '''Fishmonger''' || {{G{{!}}U+E00F}} Sell caught fish to a Fisherman || A Good Samaritan || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Gold Ingot|link=none}} || <span id="The Generous Metal"></span>'''The Generous Metal''' || Gold has Fortune and Looting Intrinsics || Burgeoning Metallurge || {{{matcha:tutorial/obtain_gold|}}} || Task || —{{{matcha:tutorial/obtain_gold reward|}}}
 |-
-| {{Slot|Wooden Cross|link=none}} || '''God help you...''' || Commit great evil || A Good Samaritan || Task || Yes || 
+| {{Slot|Adamant Alloy|link=none}} || <span id="A Divine Alloy"></span>'''A Divine Alloy''' || {{G|E010}} Adamant grants the wielder a Divine Constitution || The Generous Metal || {{{matcha:tutorial/obtain_adamant|}}} || Goal || Minimum hearts −1{{{matcha:tutorial/obtain_adamant reward|}}}
 |-
-| {{Slot|Bowl|link=none}} || '''Manners First''' || Make a Ceramic Bowl from Bricks || Now You're Cooking || Task ||  || 
+| {{Slot|Shakudo Alloy|link=none}} || <span id="A Gentle Alloy"></span>'''A Gentle Alloy''' || Shakudo grants Copper Equipment Silk Touch and Cleansing Properties || The Generous Metal || {{{matcha:tutorial/obtain_shakudo|}}} || Task || —{{{matcha:tutorial/obtain_shakudo reward|}}}
 |-
-| {{Slot|Sweet Berry Jam|link=none}} || '''Pickles & Jam''' || Preserve a food to boost its flavour profile || Now You're Cooking || Task ||  || 
+| {{Slot|Diamond|link=none}} || <span id="The Resilient Mineral"></span>'''The Resilient Mineral''' || {{G|E010}} Diamonds have no Intrinsics but are capable of Hosting Electrum and Adamant || Burgeoning Metallurge || {{{matcha:tutorial/obtain_diamond|}}} || Task || Minimum hearts −1{{{matcha:tutorial/obtain_diamond reward|}}}
 |-
-| {{Slot|Silver Sword|link=none}} || '''Sabbatarian''' || {{G{{!}}U+E00F}} Affix a Nazar to an Iron Sword inlaid with Silver in a Smithing Table || Fae-Slayer || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Stabilized Estus|link=none}} || <span id="Orpheus"></span>'''Orpheus''' || {{G|E010}} Descend into Hell || The Resilient Mineral || {{{matcha:tutorial/enter_nether|}}} || Goal || Minimum hearts −1{{{matcha:tutorial/enter_nether reward|}}}
 |-
-| {{Slot|Poisonous Potato|link=none}} || '''Wait, you can make that?''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Cook a secret Meal || Hidden Flavors || Goal ||  || <code>matcha:advancement/obol_2</code>
+| {{Slot|Eye of Ender|link=none}} || <span id="The End of Dreams"></span>'''The End of Dreams''' || {{G|E010}} Their Time is Near || Orpheus || {{{matcha:tutorial/find_stronghold|}}} || Goal || Minimum hearts −1{{{matcha:tutorial/find_stronghold reward|}}}
 |-
-| {{Slot|Obol|link=none}} || '''A True Community''' || 5 {{G{{!}}U+E00F}} Trade with (almost) every profession || Fishmonger || Challenge ||  || <code>matcha:advancement/obol_5</code>
+| {{Slot|Silver Bullion|link=none}} || <span id="The Warding Metal"></span>'''The Warding Metal''' || {{G|E00F}} Silver, a once-common Apotropaic Metal is found most commonly in Mountains. Most deposits are now harboured in Abbeys || Burgeoning Metallurge || {{{matcha:tutorial/obtain_silver|}}} || Goal || 1 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_silver reward|}}}
 |-
-| {{Slot|Brush|link=none}} || '''Archeologist in Training''' || Craft a Brush || Brazier || Task ||  || 
+| {{Slot|Hepatizon Alloy|link=none}} || <span id="A Keen Alloy"></span>'''A Keen Alloy''' || Hepatizon grants Copper Equipment unrivaled Speed || The Warding Metal || {{{matcha:tutorial/obtain_bronze|}}} || Task || —{{{matcha:tutorial/obtain_bronze reward|}}}
 |-
-| {{Slot|Topaz|link=none}} || '''Canto IV''' || ❤❤ Raid Tartarus || Canto III || Task ||  || <code>matcha:advancement/crystal_heart_2</code>
+| {{Slot|Electrum Alloy|link=none}} || <span id="A Zealous Alloy"></span>'''A Zealous Alloy''' || {{G|E010}} Electrum enhances the Fortune and Looting Properties of Gold but only Diamond can host the Alloy || The Warding Metal || {{{matcha:tutorial/obtain_electrum|}}} || Goal || Minimum hearts −1{{{matcha:tutorial/obtain_electrum reward|}}}
 |-
-| {{Slot|Shield|link=none}} || '''Convoymaster''' || {{G{{!}}U+E00F}} Affix a Nazar to an Shield inlaid with Silver in a Smithing Table || Sabbatarian || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Brush|link=none}} || <span id="Archeologist in Training"></span>'''Archeologist in Training''' || Craft a Brush || Brazier || {{{matcha:tutorial/craft_brush|}}} || Task || —{{{matcha:tutorial/craft_brush reward|}}}
 |-
-| {{Slot|Poisonous Potato|link=none}} || '''Doomsday Prepper''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Preserve Everything! || Pickles & Jam || Challenge ||  || <code>matcha:advancement/obol_4</code>
+| {{Slot|Clay Fetish|link=none}} || <span id="A Miraculous Discovery!"></span>'''A Miraculous Discovery!''' || {{G|E00F}}{{G|E00F}}{{G|E00F}} Find a Clay Fetish by searching abandoned Sites || Archeologist in Training || {{{matcha:tutorial/obtain_fetish|}}} || Goal || 3 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_fetish reward|}}}
 |-
-| {{Slot|Pumpkin Curry|link=none}} || '''Fortified Goodness''' || {{G{{!}}U+E00F}} Make Pumpkin Curry || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Copper Dolabra|link=none}} || <span id="Two in One"></span>'''Two in One''' || {{G|E00F}} Mattocks and Dolabras work as two tools in one but mine slower than their base tools || Brazier || {{{matcha:tutorial/obtain_mattock|}}} || Goal || 1 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_mattock reward|}}}
 |-
-| {{Slot|Japanese Curry|link=none}} || '''Hearty Curry''' || {{G{{!}}U+E00F}} Make Japanese Curry || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Grilled Melon|link=none}} || <span id="Powerful Flavors"></span>'''Powerful Flavors''' || Reveal the hidden aspect of a Food by cooking it on a Campfire or an Oven || Prometheus be Damned || {{{matcha:tutorial/cook_food|}}} || Task || —{{{matcha:tutorial/cook_food reward|}}}
 |-
-| {{Slot|Smooth Stone|link=none}} || '''Mason''' || Kilns excel at processing Earthen Materials || Brazier || Task ||  || 
+| {{Slot|Oven|link=none}} || <span id="Now You&#x27;re Cooking"></span>'''Now You're Cooking''' || Construct an Oven from Bricks and Iron || Powerful Flavors || {{{matcha:tutorial/obtain_oven|}}} || Task || —{{{matcha:tutorial/obtain_oven reward|}}}
 |-
-| {{Slot|Obol|link=none}} || '''No More Fish in the Sea''' || 10 {{G{{!}}U+E00F}} Catch Everything! || Fishmonger || Challenge ||  || <code>matcha:advancement/obol_10</code>
+| {{Slot|Bowl|link=none}} || <span id="Manners First"></span>'''Manners First''' || Make a Ceramic Bowl from Bricks || Now You're Cooking || {{{matcha:tutorial/obtain_bowl|}}} || Task || —{{{matcha:tutorial/obtain_bowl reward|}}}
 |-
-| {{Slot|Paneer Makhani|link=none}} || '''Sweet and Spicy!''' || {{G{{!}}U+E00F}} Make Paneer Makhani. All Foods have viable Vegetarian Options || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Pumpkin Curry|link=none}} || <span id="Fortified Goodness"></span>'''Fortified Goodness''' || {{G|E00F}} Make Pumpkin Curry || Manners First || {{{matcha:tutorial/cook_pumpkin_curry|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/cook_pumpkin_curry reward|}}}
 |-
-| {{Slot|Tonkotsu Ramen|link=none}} || '''The Best Soup!''' || {{G{{!}}U+E00F}} Make Ramen || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Japanese Curry|link=none}} || <span id="Hearty Curry"></span>'''Hearty Curry''' || {{G|E00F}} Make Japanese Curry || Manners First || {{{matcha:tutorial/obtain_japanese_curry|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_japanese_curry reward|}}}
 |-
-| {{Slot|Green Curry|link=none}} || '''Too Spicy!''' || {{G{{!}}U+E00F}} Make Green Curry || Manners First || Task ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Paneer Makhani|link=none}} || <span id="Sweet and Spicy!"></span>'''Sweet and Spicy!''' || {{G|E00F}} Make Paneer Makhani. All Foods have viable Vegetarian Options || Manners First || {{{matcha:tutorial/obtain_paneer_mahkani|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_paneer_mahkani reward|}}}
 |-
-| {{Slot|Copper Dolabra|link=none}} || '''Two in One''' || {{G{{!}}U+E00F}} Mattocks and Dolabras work as two tools in one but mine slower than their base tools || Brazier || Goal ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Tonkotsu Ramen|link=none}} || <span id="The Best Soup!"></span>'''The Best Soup!''' || {{G|E00F}} Make Ramen || Manners First || {{{matcha:tutorial/obtain_ramen|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_ramen reward|}}}
 |-
-| {{Slot|Clay Fetish|link=none}} || '''A Miraculous Discovery!''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Find a Clay Fetish by searching abandoned Sites || Archeologist in Training || Goal ||  || <code>matcha:advancement/obol_3</code>
+| {{Slot|Green Curry|link=none}} || <span id="Too Spicy!"></span>'''Too Spicy!''' || {{G|E00F}} Make Green Curry || Manners First || {{{matcha:tutorial/obtain_green_curry|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_green_curry reward|}}}
 |-
-| {{Slot|Blast Furnace|link=none}} || '''Burgeoning Metallurge''' || Blast Furnaces burn hotter than Kilns, able to melt more durable Metals || Mason || Task ||  || 
+| {{Slot|Sweet Berry Jam|link=none}} || <span id="Pickles &amp; Jam"></span>'''Pickles & Jam''' || Preserve a food to boost its flavour profile || Now You're Cooking || {{{matcha:tutorial/preserve_food|}}} || Task || —{{{matcha:tutorial/preserve_food reward|}}}
 |-
-| {{Slot|Gold Ingot|link=none}} || '''The Generous Metal''' || Gold has Fortune and Looting Intrinsics || Burgeoning Metallurge || Task ||  || 
+| {{Slot|Pickled Carrots|link=none}} || <span id="Doomsday Prepper"></span>'''Doomsday Prepper''' || {{G|E00F}}{{G|E00F}}{{G|E00F}}{{G|E00F}} Preserve Everything! || Pickles & Jam || {{{matcha:tutorial/preserve_everything|}}} || Challenge || 4 {{ItemLink|Obol}}{{{matcha:tutorial/preserve_everything reward|}}}
 |-
-| {{Slot|Diamond|link=none}} || '''The Resilient Mineral''' || {{G{{!}}U+E010}} Diamonds have no Intrinsics but are capable of Hosting Electrum and Adamant || Burgeoning Metallurge || Task ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Steamed Golden Carrots|link=none}} || <span id="Hidden Flavors"></span>'''Hidden Flavors''' || {{G|E00F}} Cook a secret Ingredient || Powerful Flavors || {{{matcha:tutorial/cook_secret_food|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/cook_secret_food reward|}}}
 |-
-| {{Slot|Iron Ingot|link=none}} || '''The Stalwart Metal''' || {{G{{!}}U+E010}} Iron has no Intrinsic Properties and can only Host Steel || Burgeoning Metallurge || Task ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Golden Carrot Cupcake|link=none}} || <span id="Wait, you can make that?"></span>'''Wait, you can make that?''' || {{G|E00F}}{{G|E00F}} Cook a secret Meal || Hidden Flavors || {{{matcha:tutorial/cook_secret_meal|}}} || Goal || 2 {{ItemLink|Obol}}{{{matcha:tutorial/cook_secret_meal reward|}}}
 |-
-| {{Slot|Silver Bullion|link=none}} || '''The Warding Metal''' || {{G{{!}}U+E00F}} Silver, a once-common Apotropaic Metal is found most commonly in Mountains. Most deposits are now harboured in Abbeys || Burgeoning Metallurge || Goal ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Estus Ash|link=none}} || <span id="Hellish Powder"></span>'''Hellish Powder''' || It Radiates Holy Power. It kind of smells like Curry... maybe Cinnamon? || From Earth || {{{matcha:tutorial/obtain_estus|}}} || Task (hidden) || —{{{matcha:tutorial/obtain_estus reward|}}}
 |-
-| {{Slot|Carbon-Rich Iron|link=none}} || '''A Brittle Alloy?''' || Craft Carbon-Rich Iron with Iron and a Coal Block || The Stalwart Metal || Task ||  || 
+| {{Slot|Nazar|link=none}} || <span id="Apotropaic Jewellery"></span>'''Apotropaic Jewellery''' || {{G|E00F}} Holding a Lapis Nazar will Ward the Dead. It can also be attached to some Equipment || Hellish Powder || {{{matcha:tutorial/obtain_nazar|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_nazar reward|}}}
 |-
-| {{Slot|Adamant Alloy|link=none}} || '''A Divine Alloy''' || {{G{{!}}U+E010}} Adamant grants the wielder a Divine Constitution || The Generous Metal || Goal ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Warding Sword|link=none}} || <span id="Fae-Slayer"></span>'''Fae-Slayer''' || Affix a Nazar to an Iron Sword in a Smithing Table || Apotropaic Jewellery || {{{matcha:tutorial/smith_warding_sword|}}} || Task || —{{{matcha:tutorial/smith_warding_sword reward|}}}
 |-
-| {{Slot|Shakudo Alloy|link=none}} || '''A Gentle Alloy''' || Shakudo grants Copper Equipment Silk Touch and Cleansing Properties || The Generous Metal || Task ||  || 
+| {{Slot|Silver Sword|link=none}} || <span id="Sabbatarian"></span>'''Sabbatarian''' || {{G|E00F}} Affix a Nazar to an Iron Sword inlaid with Silver in a Smithing Table || Fae-Slayer || {{{matcha:tutorial/smith_silver_sword|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/smith_silver_sword reward|}}}
 |-
-| {{Slot|Hepatizon Alloy|link=none}} || '''A Keen Alloy''' || Hepatizon grants Copper Equipment unrivaled Speed || The Warding Metal || Task ||  || 
+| {{Slot|Warding Shield|link=none}} || <span id="Convoymaster"></span>'''Convoymaster''' || {{G|E00F}} Affix a Nazar to an Shield inlaid with Silver in a Smithing Table || Sabbatarian || {{{matcha:tutorial/smith_warding_shield|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/smith_warding_shield reward|}}}
 |-
-| {{Slot|Electrum Alloy|link=none}} || '''A Zealous Alloy''' || {{G{{!}}U+E010}} Electrum enhances the Fortune and Looting Properties of Gold but only Diamond can host the Alloy || The Warding Metal || Goal ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Opal|link=none}} || <span id="Canto I"></span>'''Canto I''' || ❤ Defeat the Sea God || Hellish Powder || {{{matcha:tutorial/obtain_opal|}}} || Task || 1 {{ItemLink|Crystal Heart}}{{{matcha:tutorial/obtain_opal reward|}}}
 |-
-| {{Slot|Stabilized Estus|link=none}} || '''Orpheus''' || {{G{{!}}U+E010}} Descend into Hell || The Resilient Mineral || Goal ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Ruby|link=none}} || <span id="Canto II"></span>'''Canto II''' || ❤ Pillage the Remnants of Pandaemonium || Canto I || {{{matcha:tutorial/obtain_ruby|}}} || Task || 1 {{ItemLink|Crystal Heart}}{{{matcha:tutorial/obtain_ruby reward|}}}
 |-
-| {{Slot|Steel Alloy|link=none}} || '''A Tough Alloy''' || Made by blasting Carbon-Rich Iron, Steel grants Iron Equipment Knockback and greatly increased Durability || A Brittle Alloy? || Task ||  || 
+| {{Slot|Amber|link=none}} || <span id="Canto III"></span>'''Canto III''' || ❤ Exhume the Pilgrim's Trails || Canto II || {{{matcha:tutorial/obtain_amber|}}} || Task || 1 {{ItemLink|Crystal Heart}}{{{matcha:tutorial/obtain_amber reward|}}}
 |-
-| {{Slot|Eye of Ender|link=none}} || '''The End of Dreams''' || {{G{{!}}U+E010}} Their Time is Near || Orpheus || Goal ||  || runs <code>matcha:mechanics/heart_container/decrease_minimum_hearts</code>
+| {{Slot|Topaz|link=none}} || <span id="Canto IV"></span>'''Canto IV''' || ❤❤ Raid Tartarus || Canto III || {{{matcha:tutorial/obtain_topaz|}}} || Task || 2 {{ItemLink|Crystal Heart}}{{{matcha:tutorial/obtain_topaz reward|}}}
 |-
-| {{Slot|Smithing Table|link=none}} || '''Master Metallurge''' || Smithing Tables allow you to modify Base-Metal tools using Alloys || A Tough Alloy || Task ||  || 
+| {{Slot|Divine Fragment|link=none}} || <span id="A Vestige of Divinity"></span>'''A Vestige of Divinity''' || {{G|E00F}}{{G|E00F}} A Relic only obtained by breaking Spawners or vanquishing powerful Forces || Hellish Powder || {{{matcha:tutorial/obtain_divine_fragment|}}} || Goal || 2 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_divine_fragment reward|}}}
 |-
-| {{Slot|Anvil|link=none}} || '''Repair & Reuse''' || Anvils made from Steel can repair Any Equipment with its corresponding Base-Metal Ingot forever || A Tough Alloy || Task ||  || 
+| {{Slot|Crystal Heart|link=none}} || <span id="Crystal Heart!"></span>'''Crystal Heart!''' || {{G|E00F}}{{G|E00F}} Crystal Hearts impart a piece of divinity onto Gods who devour them. Though mortals were only able to use their Undying properties. || A Vestige of Divinity || {{{matcha:tutorial/obtain_heart|}}} || Challenge || 3 {{ItemLink|Obol}}{{{matcha:tutorial/obtain_heart reward|}}}
 |-
-|  || '''Apocryphal Adamant''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Smith a piece of Adamant Equipment from Diamond with Adamant Alloy || Master Metallurge || Challenge ||  || <code>matcha:advancement/obol_4</code>
+| {{Slot|Obol|link=none}} || <span id="You&#x27;re Rich!"></span>'''You're Rich!''' || Obtain an Obol || From Earth || {{{matcha:tutorial/obtain_obol|}}} || Task (hidden) || —{{{matcha:tutorial/obtain_obol reward|}}}
 |-
-| {{Slot|Hepatizon Pickaxe|link=none}} || '''Brilliant Bronze''' || {{G{{!}}U+E00F}} Smith a piece of Hepatizon Equipment from Copper with Hepatizon Alloy || Master Metallurge || Goal ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Beacon Kindling|link=none}} || <span id="Bonfire Lit"></span>'''Bonfire Lit''' || {{G|E00F}} Use a Beacon Kindling to signal a Wandering Trader || You're Rich! || {{{matcha:tutorial/light_beacon|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/light_beacon reward|}}}
 |-
-| {{Slot|Electrum Pickaxe|link=none}} || '''Evangelic Electrum''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Smith a piece of Electrum Equipment from Diamond with Electrum Alloy || Master Metallurge || Challenge ||  || <code>matcha:advancement/obol_4</code>
+| {{Slot|Asylum Seeker|link=none}} || <span id="A Good Samaritan"></span>'''A Good Samaritan''' || {{G|E00F}} Cover the Relocation costs for an Asylum Seeker, and make a home for them here || Bonfire Lit || {{{matcha:tutorial/trade_for_asylum_seeker|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/trade_for_asylum_seeker reward|}}}
 |-
-| {{Slot|Shakudo Pickaxe|link=none}} || '''Palatinate Perfection''' || {{G{{!}}U+E00F}} Smith a piece of Shakudo Equipment from Copper with Shakudo Alloy || Master Metallurge || Goal ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Carp|link=none}} || <span id="Fishmonger"></span>'''Fishmonger''' || {{G|E00F}} Sell caught fish to a Fisherman || A Good Samaritan || {{{matcha:tutorial/trade_fish|}}} || Task || 1 {{ItemLink|Obol}}{{{matcha:tutorial/trade_fish reward|}}}
 |-
-| {{Slot|Steel Pickaxe|link=none}} || '''Sturdy Steel''' || {{G{{!}}U+E00F}} Smith a piece of Steel Equipment from Iron with Steel Alloy || Master Metallurge || Goal ||  || <code>matcha:advancement/obol_1</code>
+| {{Slot|Obol|link=none}} || <span id="A True Community"></span>'''A True Community''' || 5 {{G|E00F}} Trade with (almost) every profession || Fishmonger || {{{matcha:tutorial/trade_everything|}}} || Challenge || 5 {{ItemLink|Obol}}{{{matcha:tutorial/trade_everything reward|}}}
 |-
-| {{Slot|Smithing Upgrade Template|link=none}} || '''Upgrades''' || Smithing Upgrades are used to Modify and Upgrade Mattocks and Dolabras || Master Metallurge || Task ||  || 
+| {{Slot|Carp|link=none}} || <span id="No More Fish in the Sea"></span>'''No More Fish in the Sea''' || 10 {{G|E00F}} Catch Everything! || Fishmonger || {{{matcha:tutorial/catch_everything|}}} || Challenge || 10 {{ItemLink|Obol}}{{{matcha:tutorial/catch_everything reward|}}}
 |-
-| {{Slot|Steel Dolabra|link=none}} || '''Three in One?''' || {{G{{!}}U+E00F}}{{G{{!}}U+E00F}} Upgrade a Mattock or Dolabra || Upgrades || Goal ||  || <code>matcha:advancement/obol_1</code>
-|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>
+| {{Slot|Wooden Cross|link=none}} || <span id="God help you..."></span>'''God help you...''' || Commit great evil || A Good Samaritan || {{{matcha:tutorial/kill_villager|}}} || Task (hidden) || —{{{matcha:tutorial/kill_villager reward|}}}
+|}</includeonly><noinclude>Generated from the advancement files. The actual requirements are notes passed by advancement ID, and "<ID> reward" is appended to the reward: <code><nowiki>{{Data/Advancements/tutorial|matcha:tutorial/root=...}}</nowiki></code>. [[Category:Generated data]]</noinclude>

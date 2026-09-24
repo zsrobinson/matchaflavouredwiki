@@ -44,7 +44,7 @@ A crystal heart held in either hand saves the player from any death a totem of u
 {{Uses}}
 
 == Advancements ==
-Obtaining a crystal heart for the first time grants '''Crystal Heart!''', which rewards 3 {{ItemLink|Obol|obols}}.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref>
+Obtaining a crystal heart for the first time is meant to grant '''Crystal Heart!''', which rewards 3 {{ItemLink|Obol|obols}}.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref> In 1.12.2-beta the advancement can't be earned: it looks for an item with the model <code>heart_container</code>, which the game reads as <code>minecraft:heart_container</code>, while crystal hearts use <code>matcha:heart_container</code>. This is fixed on the <code>main</code> branch.
 
 == History ==
 {{History|
@@ -54,6 +54,7 @@ Obtaining a crystal heart for the first time grants '''Crystal Heart!''', which 
 {{History line|1.12|Crystal hearts bought from villagers can no longer be eaten. Fixed a typo that stopped hearts being removed properly.}}
 {{History line|1.12.1-alpha|Can be traded to the Mouthpiece, with an echo shard, for a divine fragment. Advancements now reward crystal hearts.}}
 {{History line|1.12.2|Crystal hearts are now used by the player instead of being applied as soon as they are picked up, and work as totems of undying. [[Ofuda]] trades now require crystal hearts.}}
+{{History line|Upcoming|2=The "Crystal Heart!" advancement can be earned.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == Trivia ==

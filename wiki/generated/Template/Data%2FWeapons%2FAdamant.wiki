@@ -1,0 +1,9 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
+|-
+| {{ItemLink|Adamant Sword}}{{{Adamant Sword|}}} || 3000 || 8 || 1.6 || — || [[Sharpness]] I<br />{{G|Weakness}} [[Adamant equipment|Weakness]]<br />[[Unbreaking]] II
+|-
+| {{ItemLink|Adamant Spear}}{{{Adamant Spear|}}} || 5000 || 5 || 0.87 || — || [[Sharpness]] I<br />[[Unbreaking]] II<br />{{G|Weakness}} [[Adamant equipment|Weakness]]
+|-
+| {{ItemLink|Adamant Claymore}}{{{Adamant Claymore|}}} || 3000 || 9 || 1 || — || [[Unbreaking]] II<br />{{G|Weakness}} [[Adamant equipment|Weakness]]<br />[[Sharpness]] I
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

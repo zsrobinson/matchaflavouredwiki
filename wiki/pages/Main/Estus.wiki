@@ -28,7 +28,7 @@ The estus items replace the {{MCW|Blaze|blaze}}-related items and glowstone of v
 == Mechanics ==
 === Healing ===
 {{Main|Raw Estus#Behavior}}
-When a player who is not in Creative mode gets Raw Estus in their inventory, each piece is used up at once: it grants a burst of Regeneration V and Resistance I, and is replaced with one Estus Ash.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/estus_effects.mcfunction}}</ref> Killing zombies is therefore a way to heal in a fight, since the pack has no [[natural regeneration]].
+When a player who is not in Creative mode gets Raw Estus in their inventory, each piece is used up at once: it grants a burst of Regeneration V and Resistance I, and is replaced with one Estus Ash.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/estus_effects.mcfunction}}</ref> In 1.12.2-beta the Creative-mode check doesn't work reliably in multiplayer; see [[Raw Estus#Multiplayer]]. Killing zombies is therefore a way to heal in a fight, since the pack has no [[natural regeneration]].
 
 === Magic ===
 Estus Ash is the most common magic ingredient. Seven of them, a [[Benzene]] and a [[Stable Void]] make one Stabilized Estus, which is the core of every Hell-Bound Book and of the eye of ender.<ref>{{Cite video|quote=Estus Ash, an ender pearl, and Benzene together can make stabilized Estus. This is a vital crafting component for most magic. Hellbound books use them, the warning stone has stabilized Estus at its center, and the Eye of Ender is crafted from this material.}}</ref>
@@ -42,6 +42,7 @@ Blazes, which are not undead, do not drop any estus; they drop {{MCW|Fire Charge
 {{History line|1.12|The release notes state that the Estus Flask stays in the pack.}}
 {{History line|1.12.1-alpha|Raw Estus can no longer fuel brewing stands. Estus Ash added to the fishing junk pool.}}
 {{History line|1.12.2|The Estus Flask is removed.}}
+{{History line|Upcoming|2=Raw Estus processing fixed for multiplayer, so only the player who picked it up is processed, and never in Creative mode.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/check_if_estus_should_be_processed.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == See also ==

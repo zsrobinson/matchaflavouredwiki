@@ -7,7 +7,7 @@ The currency of trading is the [[Obol]], which replaces the {{MCW|Emerald|emeral
 
 == Mechanics ==
 === Unlimited trades ===
-Almost every villager trade can be used 999 times before it needs to restock, so in practice trades never lock.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/1/bonemeal.json}}</ref> The only limited trades are the Wandering Trader's Asylum Seeker applications and maps (1 use each) and a villager's [[favorite food]] (1 use). The developer's stated aim is that there is "no need to keep them locked in a closet with their workbench to restock".<ref>{{Cite video|quote=Villager trades have been overhauled and with unlimited trades, there's no need to keep them locked in a closet with their workbench to restock.}}</ref>
+Almost every villager trade can be used 999 times before it needs to restock, so in practice trades never lock.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/1/bonemeal.json}}</ref> The only limited trades are the Wandering Trader's Asylum Seeker applications and maps (1 use each). The upcoming [[favorite food]] trade, which is not in [[Matcha Flavoured 1.12.2|1.12.2-beta]], will also have 1 use. The developer's stated aim is that there is "no need to keep them locked in a closet with their workbench to restock".<ref>{{Cite video|quote=Villager trades have been overhauled and with unlimited trades, there's no need to keep them locked in a closet with their workbench to restock.}}</ref>
 
 Most trades are also bulk trades. A single obol buys a full stack of logs, wool, bone meal, arrows or redstone components, 4 [[bulk blocks]] (256 stone), or a bundle of seeds.
 
@@ -17,7 +17,7 @@ In vanilla ''Minecraft'' every profession buys something. In Matcha Flavoured, t
 * the [[Jeweler]], who buys back {{ItemLink|Topaz}}, {{ItemLink|Opal}}, {{ItemLink|Amber}} and {{ItemLink|Ruby}} at Master level;
 * the [[Weaponsmith]], who buys diamonds, blocks of lapis lazuli and {{ItemLink|Hepatizon Alloy}} at Novice level;
 * the [[Wandering Trader]], who buys vanilla music discs;
-* every villager once, for its [[favorite food]].
+* upcoming, not in [[Matcha Flavoured 1.12.2|1.12.2-beta]]: every villager once, for its [[favorite food]].
 The [[Archaeologist]] and [[Mouthpiece]] also take [[Clay Fetish]]es and [[sacred texts]], but pay in [[Crystal Heart|crystal hearts]], maps and [[Ofuda]] instead of obols.
 
 === How offers are chosen ===
@@ -100,6 +100,7 @@ Removed the Chemist's weakness, invisibility and poison splash potions.}}
 {{History line|1.12.2|All Mason trades are now [[bulk blocks]], which unpack directly into the inventory; Bulk Dirt added.
 [[Ofuda]] trades require crystal hearts.
 Amnestics no longer reset a villager's experience.}}
+{{History line|Upcoming|2=Added the [[favorite food]] trade.}}
 }}
 
 == See also ==

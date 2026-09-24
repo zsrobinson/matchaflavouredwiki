@@ -7,6 +7,9 @@ wiki needs: an item registry keyed by English display name, recipes, villager
 trades, loot tables, enchantments and advancements.
 
 Every generated wiki fact traces back to a file path recorded here as `src`.
+
+Exits 3 when the source uses a format this file doesn't know (see "format guard" below), or when the
+vanilla data is for a different Minecraft version than the pack. --allow-unknown reports and continues.
 """
 import glob
 import json
@@ -31,6 +34,99 @@ def load(path):
 
 def rel(path):
     return os.path.relpath(path, SRC)
+
+
+# ---------------------------------------------------------------- format guard
+# This file reads specific keys. When the pack or a new Minecraft version changes a file format
+# (26.3 renames loot "functions" to "modifier" and "conditions" to "condition"), the new keys would be
+# skipped without a word and the wiki would quietly lose drop counts, conditions and item identities.
+# So every key, type and function name read below is checked against this list of what the extractor
+# knows. Anything new fails the run (exit 3). Handle it, or add it here if it really doesn't matter.
+KNOWN = {
+    'loot table': {'type', 'pools', 'random_sequence', 'functions'},
+    'loot pool': {'rolls', 'bonus_rolls', 'entries', 'conditions', 'functions'},
+    'loot entry': {'type', 'name', 'weight', 'quality', 'functions', 'conditions', 'children', 'value', 'expand',
+                   ''},  # '': a stray empty key in the pack's redstone_ore.json
+    'loot entry type': {'minecraft:item', 'minecraft:loot_table', 'minecraft:empty', 'minecraft:alternatives',
+                        'minecraft:group', 'minecraft:sequence', 'minecraft:tag', 'minecraft:dynamic'},
+    # functions the wiki doesn't show (enchanting, damage, map decorations) are known and ignored
+    'loot function': {'minecraft:set_count', 'minecraft:set_components', 'minecraft:set_name', 'minecraft:set_lore',
+                      'minecraft:set_potion', 'minecraft:enchant_with_levels', 'minecraft:enchant_randomly',
+                      'minecraft:exploration_map', 'minecraft:set_damage', 'minecraft:set_ominous_bottle_amplifier',
+                      'minecraft:set_instrument', 'minecraft:set_contents', 'minecraft:apply_bonus',
+                      'minecraft:explosion_decay', 'minecraft:set_enchantments', 'minecraft:limit_count',
+                      'minecraft:enchanted_count_increase', 'minecraft:furnace_smelt', 'minecraft:set_stew_effect',
+                      'minecraft:copy_components', 'minecraft:copy_state', 'minecraft:filtered', 'minecraft:discard'},
+    # loot_enchantments(): what enchant_randomly, enchant_with_levels and set_enchantments give (Enchantment tables)
+    'loot enchant function': {'function', 'conditions', 'options', 'levels', 'only_compatible', 'enchantments', 'add',
+                              'include_additional_cost_component'},
+    # generate.py: cond_notes() turns these into drop-table notes and chances
+    'condition': {'minecraft:location_check', 'minecraft:entity_properties', 'minecraft:block_state_property',
+                  'minecraft:match_tool', 'minecraft:survives_explosion', 'minecraft:random_chance',
+                  'minecraft:any_of', 'minecraft:all_of', 'minecraft:inverted', 'minecraft:table_bonus',
+                  'minecraft:killed_by_player', 'minecraft:random_chance_with_enchanted_bonus',
+                  'minecraft:damage_source_properties', 'minecraft:reference', 'minecraft:weather_check',
+                  'minecraft:time_check', 'minecraft:value_check', 'minecraft:entity_scores'},
+    'recipe type': {'minecraft:crafting_shaped', 'minecraft:crafting_shapeless', 'minecraft:smelting',
+                    'minecraft:smoking', 'minecraft:blasting', 'minecraft:campfire_cooking',
+                    'minecraft:stonecutting', 'minecraft:smithing_transform',
+                    # special recipes with no fixed output: not listed on the wiki
+                    'minecraft:crafting_dye', 'minecraft:crafting_imbue', 'minecraft:crafting_transmute',
+                    'minecraft:crafting_decorated_pot', 'minecraft:smithing_trim',
+                    'minecraft:crafting_special_bookcloning', 'minecraft:crafting_special_mapextending',
+                    'minecraft:crafting_special_firework_rocket', 'minecraft:crafting_special_shielddecoration',
+                    'minecraft:crafting_special_bannerduplicate', 'minecraft:crafting_special_firework_star',
+                    'minecraft:crafting_special_firework_star_fade', 'minecraft:crafting_special_repairitem'},
+    'recipe': {'type', 'category', 'group', 'result', 'show_notification', 'key', 'pattern', 'ingredients',
+               'ingredient', 'cookingtime', 'experience', 'template', 'base', 'addition'},
+    'item stack': {'id', 'count', 'components'},
+    # summarise_components() keeps these for the infoboxes, tooltips and tables
+    'component': {'minecraft:' + c for c in (
+        'attribute_modifiers', 'banner_patterns', 'block_state', 'blocks_attacks', 'bundle_contents', 'consumable',
+        'custom_data', 'custom_model_data', 'custom_name', 'damage', 'death_protection', 'enchantment_glint_override',
+        'enchantments', 'entity_data', 'equippable', 'food', 'instrument', 'item_model', 'item_name',
+        'jukebox_playable', 'lore', 'max_damage', 'max_stack_size', 'potion_contents', 'provides_trim_material',
+        'rarity', 'repairable', 'stored_enchantments', 'tool', 'tooltip_display', 'unbreakable', 'use_remainder')},
+    'villager trade': {'wants', 'additional_wants', 'gives', 'given_item_modifiers', 'max_uses', 'xp',
+                       'reputation_discount', 'price_multiplier', 'merchant_predicate'},
+    'trade set': {'amount', 'random_sequence', 'trades', 'allow_duplicates'},
+    'enchantment': {'description', 'max_level', 'weight', 'anvil_cost', 'slots', 'supported_items', 'primary_items',
+                    'exclusive_set', 'effects', 'min_cost', 'max_cost'},
+    'advancement': {'parent', 'criteria', 'display', 'requirements', 'rewards', 'sends_telemetry_event'},
+    'advancement display': {'title', 'description', 'icon', 'frame', 'hidden', 'announce_to_chat', 'show_toast',
+                            'background'},
+    'tag': {'values', 'replace'},
+    'tag entry': {'id', 'required'},
+    # assets/minecraft/texts/ in the resource pack: splashes.txt is one splash per line. The pack
+    # replacing another of vanilla's texts (end.txt, postcredits.txt, credits.json) is new content.
+    'resource pack text': {'splashes.txt'},
+    # mob_predicate(): the matcha:mob_checks predicates that pick which mobs a difficulty changes
+    'mob predicate': {'condition', 'entity', 'predicate'},
+    'mob predicate test': {'minecraft:entity_type', 'minecraft:flags'},
+    'mob predicate flag': {'is_baby'},
+}
+UNKNOWN = defaultdict(set)  # (kind, key) -> files it was seen in
+
+
+def expect(kind, keys, src):
+    for k in keys:
+        if k not in KNOWN[kind]:
+            UNKNOWN[(kind, k)].add(src)
+
+
+def expect_conditions(conds, src):
+    for c in conds or []:
+        if not isinstance(c, dict) or 'condition' not in c:
+            UNKNOWN[('condition', 'without a "condition" key')].add(src)
+            continue
+        expect('condition', [norm_ns(c['condition'])], src)
+        expect_conditions(c.get('terms'), src)
+        if c.get('term'):
+            expect_conditions([c['term']], src)
+
+
+def norm_ns(i):
+    return i if ':' in i else 'minecraft:' + i
 
 
 # ---------------------------------------------------------------- language
@@ -356,8 +452,10 @@ def register(stack, src, how):
     """Record an item stack definition seen in the source."""
     if not isinstance(stack, dict) or 'id' not in stack:
         return None
+    expect('item stack', stack, src)
     sid = norm_id(stack['id'])
     comps = stack.get('components', {}) or {}
+    expect('component', (norm_ns(k.lstrip('!')) for k in comps), src)
     name, model = item_key(stack)
     key = variant_key(name, comps, sid)
     rec = ITEMS.get(key)
@@ -490,6 +588,8 @@ def display_stack(stack):
         d['enchantments'] = comps['minecraft:stored_enchantments']
     if comps.get('minecraft:enchantments'):
         d['enchantments'] = comps['minecraft:enchantments']
+    if comps.get('minecraft:stored_enchantments') and comps.get('minecraft:lore'):
+        d['lore'] = strip_codes(render_text(comps['minecraft:lore'][0])).strip()  # an Ofuda's prayer
     variant = stack_variant(stack)
     if variant:
         d['variant'] = variant
@@ -500,16 +600,21 @@ def display_stack(stack):
 
 
 # ---------------------------------------------------------------- tags
-def load_tags(kind):
+def load_tags(kind, pack=True):
+    """Tags of one registry as the game merges them: vanilla's, then the pack's (pack=False: vanilla only)."""
     tags = {}
     for base, ns_root in ((VDATA, 'minecraft'),):
         for f in glob.glob(os.path.join(base, 'tags', kind, '**', '*.json'), recursive=True):
             t = 'minecraft:' + os.path.relpath(f, os.path.join(base, 'tags', kind))[:-5]
             tags[t] = load(f)['values']
-    for f in glob.glob(os.path.join(DP, '*', 'tags', kind, '**', '*.json'), recursive=True):
+    for f in glob.glob(os.path.join(DP, '*', 'tags', kind, '**', '*.json'), recursive=True) if pack else []:
         ns = os.path.relpath(f, DP).split(os.sep)[0]
         t = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'tags', kind))[:-5]
         d = load(f)
+        expect('tag', d, rel(f))
+        for v in d.get('values', []):
+            if not isinstance(v, str):
+                expect('tag entry', v, rel(f))
         vals = [v if isinstance(v, str) else v['id'] for v in d['values']]
         if d.get('replace') or t not in tags:
             tags[t] = vals
@@ -519,6 +624,22 @@ def load_tags(kind):
 
 
 ITEM_TAGS = load_tags('item')
+ENCH_TAGS = load_tags('enchantment')
+
+
+def resolve(ref, tags, seen=None):
+    """Ids a registry reference names: an id, a #tag (expanded) or a list of either, in order, once each."""
+    seen = set() if seen is None else seen
+    out = []
+    for v in ([ref] if isinstance(ref, str) else ref or []):
+        v = v if isinstance(v, str) else v['id']
+        if v.startswith('#'):
+            if v[1:] not in seen:
+                seen.add(v[1:])
+                out += resolve(tags.get(v[1:], []), tags, seen)
+        else:
+            out.append(norm_id(v))
+    return list(dict.fromkeys(out))
 
 
 def expand_tag(tag, seen=None):
@@ -588,12 +709,15 @@ def is_blocked(path_in_ns):
 
 def parse_recipe(d, src, origin):
     t = d.get('type')
+    expect('recipe type', [t], src)
+    if t in STATION:
+        expect('recipe', d, src)
     r = {'type': t, 'station': STATION.get(t, t), 'src': src, 'origin': origin, 'id': None}
     res = d.get('result')
     if isinstance(res, str):
         res = {'id': res}
-    if res is None:
-        return None
+    if res is None or (isinstance(res, dict) and 'id' not in res):
+        return None  # special recipes (26.3's smithing_trim has an empty result)
     r['output'] = display_stack(res)
     register(res, src, 'recipe')
     if t == 'minecraft:crafting_shaped':
@@ -655,8 +779,39 @@ def pool_count(pool_fns):
     return None
 
 
+def loot_enchantments(ent, comps, fns, src):
+    """What a loot entry enchants its stack with (generate.py: the Enchantment tables): the fixed
+    enchantments it sets ('enchantments'), or the ids a random enchanting function picks from
+    ('enchant_options', with 'enchant_from' the #tag or list the table names)."""
+    fixed = dict(comps.get('minecraft:stored_enchantments') or comps.get('minecraft:enchantments') or {})
+    for fn in fns:
+        f = fn.get('function', '').split(':')[-1]
+        if f not in ('enchant_randomly', 'enchant_with_levels', 'set_enchantments'):
+            continue
+        expect('loot enchant function', fn, src)
+        if f == 'set_enchantments':
+            if not fn.get('add'):
+                fixed = {}
+            for k, v in (fn.get('enchantments') or {}).items():
+                if isinstance(v, (int, float)):
+                    fixed[norm_id(k)] = fixed.get(norm_id(k), 0) + int(v)
+        elif fn.get('options') is not None:
+            ent['enchant_from'] = fn['options']
+            ent['enchant_options'] = resolve(fn['options'], ENCH_TAGS)
+        else:
+            ent['enchant_from'] = 'any'  # no options: every enchantment that fits the item
+    if fixed:
+        ent['enchantments'] = {norm_id(k): v for k, v in fixed.items() if v > 0}
+
+
 def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
     for e in entries:
+        expect('loot entry', e, src)
+        expect('loot entry type', [norm_ns(e.get('type', ''))], src)
+        expect('loot function', (norm_ns(fn.get('function', '')) for fn in e.get('functions', [])), src)
+        for fn in e.get('functions', []):
+            expect_conditions(fn.get('conditions'), src)
+        expect_conditions(e.get('conditions'), src)
         t = e.get('type', '').split(':')[-1]
         if t == 'item':
             stack = {'id': e['name'], 'components': {}}
@@ -695,6 +850,7 @@ def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
                 ent['_lore_rich'] = summarise_components(comps).get('lore_rich')
             if comps.get('minecraft:enchantments'):
                 ent['_ench'] = comps['minecraft:enchantments']  # see enchanted_variants()
+            loot_enchantments(ent, comps, fns, src)
             out.append(ent)
         elif t == 'loot_table':
             # set_count on a loot_table entry applies to every stack the nested table yields
@@ -723,7 +879,12 @@ def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
 
 def parse_loot(d, src):
     out = []
+    expect('loot table', d, src)
+    expect('loot function', (norm_ns(fn.get('function', '')) for fn in d.get('functions', [])), src)
     for i, p in enumerate(d.get('pools', [])):
+        expect('loot pool', p, src)
+        expect('loot function', (norm_ns(fn.get('function', '')) for fn in p.get('functions', [])), src)
+        expect_conditions(p.get('conditions'), src)
         ents = p.get('entries', [])
         total = sum(e.get('weight', 1) for e in ents)
         ctx = {'pool': i, 'rolls': p.get('rolls', 1), 'bonus_rolls': p.get('bonus_rolls', 0),
@@ -764,6 +925,7 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
     prof = os.path.basename(os.path.dirname(f))
     level = os.path.basename(f)[:-5]
     d = load(f)
+    expect('trade set', d, rel(f))
     tag = d.get('trades', '')
     ids = []
     if isinstance(tag, str) and tag.startswith('#'):
@@ -779,7 +941,10 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
         if not os.path.exists(tfile):
             continue
         t = load(tfile)
+        expect('villager trade', t, rel(tfile))
         mods = t.get('given_item_modifiers') or []
+        expect('loot function', (norm_ns(m.get('function', '')) for m in mods), rel(tfile))
+        expect_conditions([t['merchant_predicate']] if t.get('merchant_predicate') else [], rel(tfile))
         if any(m.get('function', '').split(':')[-1] == 'discard' for m in mods):
             continue  # placeholder trade the game throws away (levels with no real trades)
         for m in mods:
@@ -812,6 +977,7 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'enchantment', '*.json'))):
     ns = os.path.relpath(f, DP).split(os.sep)[0]
     eid = ns + ':' + os.path.basename(f)[:-5]
     d = load(f)
+    expect('enchantment', d, rel(f))
     van = os.path.join(VDATA, 'enchantment', os.path.basename(f))
     ENCH[eid] = {'id': eid, 'src': rel(f), 'name': render_text(d.get('description')),
                  'max_level': d.get('max_level'), 'weight': d.get('weight'), 'anvil_cost': d.get('anvil_cost'),
@@ -820,12 +986,55 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'enchantment', '*.json'))):
                  'effects': d.get('effects'), 'data': d,
                  'vanilla': load(van) if ns == 'minecraft' and os.path.exists(van) else None}
 
+
+def enchantment_relations():
+    """What each enchantment applies to and can't be combined with, in the pack and in vanilla, with
+    the tags expanded (the pack changes tags as well as enchantment files: Looting's item tag gains
+    shears, the mining exclusive set gains the electrum tool intrinsic). Two enchantments conflict when
+    either one's exclusive set holds the other, as the game checks it. Also records which id the
+    pack's update item modifiers turn an old enchantment into ('updated_to': main:reach -> matcha:reach)."""
+    vitem, vench = load_tags('item', pack=False), load_tags('enchantment', pack=False)
+    vdefs = {'minecraft:' + os.path.basename(f)[:-5]: load(f) for f in glob.glob(os.path.join(VDATA, 'enchantment', '*.json'))}
+    pack = dict(vdefs, **{k: e['data'] for k, e in ENCH.items()})
+
+    def incompatible(defs, tags):
+        excl = {k: set(resolve(d.get('exclusive_set'), tags)) for k, d in defs.items()}
+        return {k: sorted(o for o in defs if o != k and (o in excl[k] or k in excl[o])) for k in defs}
+    now, before = incompatible(pack, ENCH_TAGS), incompatible(vdefs, vench)
+    for k, e in ENCH.items():
+        e['items'] = resolve(e['supported_items'], ITEM_TAGS)
+        e['incompatible'] = now[k]
+        if e['vanilla']:
+            e['vanilla_items'] = resolve(e['vanilla'].get('supported_items'), vitem)
+            e['vanilla_incompatible'] = before.get(k, [])
+    for f in glob.glob(os.path.join(DP, '*', 'item_modifier', '**', '*.json'), recursive=True):
+        def walk(x):
+            if isinstance(x, list):
+                for y in x:
+                    walk(y)
+            elif isinstance(x, dict):
+                if x.get('function', '').split(':')[-1] == 'set_enchantments' and x.get('add'):
+                    ench = {norm_id(k): v for k, v in (x.get('enchantments') or {}).items()}
+                    old = [k for k, v in ench.items() if v == -1]
+                    new = [k for k, v in ench.items() if v == 1]
+                    if len(old) == 1 and len(new) == 1 and old[0] in ENCH:
+                        ENCH[old[0]]['updated_to'] = new[0]
+                        ENCH[old[0]]['update_src'] = rel(f)
+                for y in x.values():
+                    walk(y)
+        walk(load(f))
+
+
+enchantment_relations()
+
 # ---------------------------------------------------------------- advancements
 ADV = {}
 for f in sorted(glob.glob(os.path.join(DP, '*', 'advancement', '**', '*.json'), recursive=True)):
     ns = os.path.relpath(f, DP).split(os.sep)[0]
     aid = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'advancement'))[:-5]
     d = load(f)
+    expect('advancement', d, rel(f))
+    expect('advancement display', d.get('display') or {}, rel(f))
     disp = d.get('display')
     rec = {'id': aid, 'src': rel(f), 'parent': d.get('parent'), 'criteria': list(d.get('criteria', {}).keys()),
            'criteria_raw': d.get('criteria'), 'rewards': d.get('rewards'), 'requirements': d.get('requirements')}
@@ -846,6 +1055,223 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'function', '**', '*.mcfunction'
     fid = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'function'))[:-11]
     with open(f, encoding='utf-8', errors='replace') as fh:
         FUNCTIONS[fid] = {'src': rel(f), 'lines': sum(1 for _ in fh)}
+
+# ---------------------------------------------------------------- functions: difficulty and equipment timers
+# mcfunction has no schema, so these parsers accept only the exact command shapes listed below. Any other
+# command in the files they read goes to the format guard (UNKNOWN) instead of being skipped.
+def fn_file(fid):
+    ns, p = fid.split(':', 1)
+    return os.path.join(DP, ns, 'function', p + '.mcfunction')
+
+
+def fn_commands(fid):
+    """A function's commands, without blank lines and comments."""
+    with open(fn_file(fid), encoding='utf-8') as fh:
+        return [s for s in (raw.strip() for raw in fh) if s and not s.startswith('#')]
+
+
+def unknown_command(kind, fid, line):
+    UNKNOWN[(kind, line if len(line) <= 90 else line[:87] + '...')].add(rel(fn_file(fid)))
+
+
+def num(s):
+    x = float(s)
+    return int(x) if x == int(x) else x
+
+
+ENTITY_TAGS = load_tags('entity_type')
+
+
+def expand_entity_tag(tag, seen=()):
+    out = []
+    for v in ENTITY_TAGS.get(tag, []):
+        v = v['id'] if isinstance(v, dict) else v
+        if v.startswith('#'):
+            if v[1:] not in seen:
+                out += expand_entity_tag(v[1:], seen + (v[1:],))
+        else:
+            out.append(norm_ns(v))
+    return out
+
+
+def mob_predicate(pid):
+    """A matcha:mob_checks predicate: the entity types it matches and whether it tests for babies."""
+    ns, p = pid.split(':', 1)
+    path = os.path.join(DP, ns, 'predicate', p + '.json')
+    d, src = load(path), rel(path)
+    expect('mob predicate', d.keys(), src)
+    if d.get('condition') != 'minecraft:entity_properties' or d.get('entity') != 'this':
+        UNKNOWN[('mob predicate', '%s on %s' % (d.get('condition'), d.get('entity')))].add(src)
+    test = d.get('predicate', {})
+    expect('mob predicate test', test.keys(), src)
+    out = {'src': src}
+    t = test.get('minecraft:entity_type')
+    if isinstance(t, str):
+        out['entity_type'] = t
+        out['entities'] = expand_entity_tag(t[1:]) if t.startswith('#') else [norm_ns(t)]
+    elif t is not None:
+        UNKNOWN[('mob predicate', 'entity_type that is not one ID or tag')].add(src)
+    if 'minecraft:flags' in test:
+        expect('mob predicate flag', test['minecraft:flags'].keys(), src)
+        out['baby'] = test['minecraft:flags'].get('is_baby')
+    return out
+
+
+# The changes a modify_<mob> function makes to the mob it runs as.
+MOB_COMMANDS = [
+    ('attribute', re.compile(r'attribute @s (minecraft:[a-z_]+) base set (-?[\d.]+)$')),
+    ('health', re.compile(r'data merge entity @s \{Health:([\d.]+)f?\}$')),
+    ('effect', re.compile(r'effect give @s (minecraft:[a-z_]+) (infinite|\d+) (\d+) (true|false)$')),
+    ('mainhand', re.compile(r'data merge entity @s \{equipment:\{mainhand:\{id:"(minecraft:[a-z_]+)",count:1,components:'
+                            r'\{"minecraft:enchantments":\{((?:"minecraft:[a-z_]+":\d+,?)*)\}\}\}\},'
+                            r'drop_chances:\{mainhand:([\d.]+)f?\}\}$')),
+    # clear_drop_chances.mcfunction targets the nearest mundane hostile (@n), not the mob being checked
+    ('drop_chances', re.compile(r'data merge entity (@s|@n\[type=#matcha:mundane_hostiles\]) '
+                                r'\{drop_chances:\{((?:[a-z]+:[\d.]+f?,?)+)\}\}$')),
+]
+
+
+def mob_changes(fid):
+    out = []
+    for line in fn_commands(fid):
+        m = kind = None
+        for kind, rx in MOB_COMMANDS:
+            m = rx.match(line)
+            if m:
+                break
+        if not m:
+            unknown_command('mob modification', fid, line)
+            continue
+        if kind == 'attribute':
+            out.append({'kind': kind, 'attribute': m[1], 'value': num(m[2])})
+        elif kind == 'health':
+            out.append({'kind': kind, 'value': num(m[1])})
+        elif kind == 'effect':
+            out.append({'kind': kind, 'effect': m[1], 'seconds': None if m[2] == 'infinite' else int(m[2]),
+                        'amplifier': int(m[3]), 'hide_particles': m[4] == 'true'})
+        elif kind == 'mainhand':
+            ench = {e: int(lvl) for e, lvl in re.findall(r'"(minecraft:[a-z_]+)":(\d+)', m[2])}
+            out.append({'kind': kind, 'item': m[1], 'enchantments': ench, 'drop_chance': num(m[3])})
+        else:
+            chances = {k: num(v.rstrip('f')) for k, v in (kv.split(':') for kv in m[2].split(','))}
+            out.append({'kind': kind, 'target': 'self' if m[1] == '@s' else 'nearest mundane hostile',
+                        'drop_chances': chances})
+    return out
+
+
+SPAWN_FN = 'matcha:mechanics/spawn_mechanic/'
+SPAWN_DIR = os.path.join(DP, 'matcha', 'function', 'mechanics', 'spawn_mechanic')
+DIFFICULTY_RE = re.compile(r'execute if score current_world_settings_difficulty difficulty_score matches ([123]) '
+                           r'run function ([a-z0-9_:/]+)$')
+RULE_RE = re.compile(r'execute as @s((?: (?:if|unless) predicate [a-z0-9_:/]+)+) run function ([a-z0-9_:/]+)$')
+
+
+def mob_modifications():
+    """How mobs are changed when they spawn, per difficulty: modify_mob picks a check_type function by the
+    difficulty (1 easy, 2 normal, 3 hard, read with /difficulty when the pack loads), and its lines apply
+    modify_<mob> functions to the mobs that match their predicates, in order."""
+    out = {'difficulties': {}, 'predicates': {}, 'functions': {}}
+    ticking = SPAWN_FN + 'ticking'
+    checked = set(re.findall(r'@e\[type=#([a-z0-9_:/]+),tag=!SpawnChecked\]', ' '.join(fn_commands(ticking))))
+    if len(checked) != 1:
+        unknown_command('spawn check', ticking, 'not exactly one entity tag checked on spawn: %s' % sorted(checked))
+    out['checked_tag'] = next(iter(sorted(checked)), None)
+    out['checked_entities'] = expand_entity_tag(out['checked_tag']) if checked else []
+    for line in fn_commands(SPAWN_FN + 'modify_mob'):
+        m = DIFFICULTY_RE.match(line)
+        if not m:
+            unknown_command('mob modification', SPAWN_FN + 'modify_mob', line)
+            continue
+        name = {'1': 'easy', '2': 'normal', '3': 'hard'}[m[1]]
+        rules = []
+        for rline in fn_commands(m[2]):
+            r = RULE_RE.match(rline)
+            if not r:
+                unknown_command('mob modification', m[2], rline)
+                continue
+            conds = re.findall(r'(if|unless) predicate ([a-z0-9_:/]+)', r[1])
+            for _, pid in conds:
+                if pid not in out['predicates']:
+                    out['predicates'][pid] = mob_predicate(pid)
+            rules.append({'if': [p for k, p in conds if k == 'if'], 'unless': [p for k, p in conds if k == 'unless'],
+                          'function': r[2]})
+        out['difficulties'][name] = {'function': m[2], 'src': rel(fn_file(m[2])), 'rules': rules}
+    # every function in the difficulty folders is read, including ones no check_type calls
+    fids = {r['function'] for d in out['difficulties'].values() for r in d['rules']}
+    for f in glob.glob(os.path.join(SPAWN_DIR, '*_modifications', '*.mcfunction')):
+        fid = SPAWN_FN + os.path.relpath(f, SPAWN_DIR)[:-len('.mcfunction')].replace(os.sep, '/')
+        if not fid.endswith('/check_type'):
+            fids.add(fid)
+    for fid in sorted(fids):
+        out['functions'][fid] = {'src': rel(fn_file(fid)), 'changes': mob_changes(fid),
+                                 'used_on': [d for d, v in out['difficulties'].items()
+                                             if any(r['function'] == fid for r in v['rules'])]}
+    return out
+
+
+STOPWATCH_RE = re.compile(r'execute if stopwatch (minecraft:[a-z0-9_.]+) ([\d.]+)\.\. run function ([a-z0-9_:/]+)$')
+RESET_RE = re.compile(r'scoreboard players set @a ([A-Za-z0-9_]+) 0$')
+RESTART_RE = re.compile(r'stopwatch restart (minecraft:[a-z0-9_.]+)$')
+CALL_RE = re.compile(r'function ([a-z0-9_:/]+)$')
+SCORE_EFFECT_RE = re.compile(r'execute as @a\[scores=\{([A-Za-z0-9_]+)=(\d+)\}\] at @s run effect give @s '
+                             r'(minecraft:[a-z_]+) (\d+) (\d+) (true|false)$')
+SCORE_CALL_RE = re.compile(r'execute as @a\[scores=\{([A-Za-z0-9_]+)=(\d+)\}\] at @s run function ([a-z0-9_:/]+)$')
+
+
+def equipment_timers():
+    """Effects that equipment gives on a timer (set bonuses, shakudo regeneration). Worn pieces add to
+    per-player scores that stopwatches.mcfunction resets every tick; each stopwatch runs its timer
+    function every so many seconds, which gives an effect to players with a given score. Commands in the
+    timer functions that name one of those scores must have one of the shapes below."""
+    root = 'matcha:stopwatches'
+    lines = fn_commands(root)
+    scores = [RESET_RE.match(l)[1] for l in lines if RESET_RE.match(l)]
+    effects, calls = [], []
+
+    def walk(fid, sw, every, restarted, seen):
+        if fid in seen:
+            return
+        seen.add(fid)
+        for line in fn_commands(fid):
+            m = RESTART_RE.match(line)
+            if m:
+                if m[1] != sw:
+                    unknown_command('timer', fid, line)
+                restarted.append(fid)
+                continue
+            m = CALL_RE.match(line)
+            if m:
+                walk(m[1], sw, every, restarted, seen)
+                continue
+            m = SCORE_EFFECT_RE.match(line)
+            if m and m[1] in scores:
+                effects.append({'score': m[1], 'value': int(m[2]), 'effect': m[3], 'seconds': int(m[4]),
+                                'amplifier': int(m[5]), 'hide_particles': m[6] == 'true', 'every': every,
+                                'stopwatch': sw, 'src': rel(fn_file(fid))})
+                continue
+            m = SCORE_CALL_RE.match(line)
+            if m and m[1] in scores:
+                calls.append({'score': m[1], 'value': int(m[2]), 'function': m[3], 'every': every,
+                              'stopwatch': sw, 'src': rel(fn_file(fid))})
+                continue
+            if any(re.search(r'\b%s\b' % s, line) for s in scores):
+                unknown_command('timer', fid, line)
+            # other timer work (particles, warding) doesn't involve the equipment scores
+
+    for line in lines:
+        m = STOPWATCH_RE.match(line)
+        if m:
+            restarted = []
+            walk(m[3], m[1], num(m[2]), restarted, set())
+            if not restarted:
+                unknown_command('timer', m[3], 'stopwatch %s is never restarted' % m[1])
+        elif not RESET_RE.match(line):
+            unknown_command('timer', root, line)
+    return {'scores': scores, 'effects': effects, 'functions': calls, 'src': rel(fn_file(root))}
+
+
+MOB_MODIFICATIONS = mob_modifications()
+EQUIPMENT_TIMERS = equipment_timers()
 
 # ---------------------------------------------------------------- textures (item model -> png)
 def resolve_item_model(model_ref):
@@ -1065,6 +1491,51 @@ def model_variants():
 VARIANT_ITEMS = model_variants()
 
 
+# ---------------------------------------------------------------- biomes (fishing climates)
+# Every biome with its in-game name, and every biome tag expanded to biome ids: the
+# fishing table picks its catch by these tags, so generate.py works out each biome's odds from them.
+BIOMES = {}
+for base in [VDATA] + sorted(glob.glob(os.path.join(DP, '*'))):
+    ns = 'minecraft' if base == VDATA else os.path.basename(base)
+    for f in glob.glob(os.path.join(base, 'worldgen', 'biome', '*.json')):
+        bid = ns + ':' + os.path.basename(f)[:-5]
+        key = 'biome.%s.%s' % (ns, bid.split(':')[1])
+        BIOMES[bid] = strip_codes(LANG.get(key) or bid.split(':')[1].replace('_', ' ').title())
+_BIOME_TAGS = load_tags('worldgen/biome')
+
+
+def expand_biome_tag(tag, seen=()):
+    out = []
+    for v in _BIOME_TAGS.get(tag, []):
+        v = v if isinstance(v, str) else v['id']
+        if v.startswith('#'):
+            if v[1:] not in seen:
+                out += expand_biome_tag(v[1:], seen + (tag,))
+        else:
+            out.append(norm_ns(v))
+    return out
+
+
+BIOME_TAGS = {t: expand_biome_tag(t) for t in sorted(_BIOME_TAGS)}  # vanilla's and the pack's
+
+
+# ---------------------------------------------------------------- splash texts
+# The title screen's splashes: assets/minecraft/texts/splashes.txt, one per line (the game trims each
+# line). The pack's file replaces vanilla's whole list.
+_texts = os.path.join(RP, 'minecraft', 'texts')
+for f in sorted(os.listdir(_texts)) if os.path.isdir(_texts) else []:
+    expect('resource pack text', [f], rel(os.path.join(_texts, f)))
+if not os.path.exists(os.path.join(VASSETS, 'texts', 'splashes.txt')):
+    UNKNOWN[('resource pack text', 'vanilla has no texts/splashes.txt any more')].add('source/vanilla-assets')
+SPLASHES = None
+if os.path.exists(os.path.join(_texts, 'splashes.txt')):
+    with open(os.path.join(_texts, 'splashes.txt'), encoding='utf-8') as f:
+        lines = [ln.strip() for ln in f.read().splitlines()]
+    while lines and not lines[-1]:
+        lines.pop()  # a trailing newline is not an empty splash
+    SPLASHES = {'src': rel(os.path.join(_texts, 'splashes.txt')), 'lines': lines}
+
+
 # ---------------------------------------------------------------- write
 for k, it in ITEMS.items():
     it['icon'] = icon_for(it)
@@ -1094,6 +1565,11 @@ data = {
     'enchantments': ENCH,
     'advancements': ADV,
     'functions': FUNCTIONS,
+    'biomes': BIOMES,
+    'biome_tags': BIOME_TAGS,
+    'splashes': SPLASHES,
+    'mob_modifications': MOB_MODIFICATIONS,
+    'equipment_timers': EQUIPMENT_TIMERS,
     'missing_lang': sorted(MISSING_LANG),
 }
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
@@ -1102,3 +1578,25 @@ with open(OUT, 'w', encoding='utf-8') as f:
 print('items', len(ITEMS), 'recipes', len(RECIPES), 'vanilla kept', len(VANILLA_RECIPES_KEPT),
       'loot', len(LOOT), 'enchantments', len(ENCH), 'advancements', len(ADV), 'functions', len(FUNCTIONS),
       'no icon', sum(1 for i in ITEMS.values() if not i['icon']), file=sys.stderr)
+
+# ---------------------------------------------------------------- is the input what this file understands?
+problems = []
+# the vanilla data must be the Minecraft version the pack is written for (tools/mc_version.txt)
+vanilla_version = load(os.path.join(ROOT, 'source', 'vanilla-data', 'version.json'))
+vanilla_format = [vanilla_version['data_pack_version'] + vanilla_version.get('data_pack_version_minor', 0) / 10]
+pack_min, pack_max = pack_meta['pack'].get('min_format'), pack_meta['pack'].get('max_format')
+if pack_min and not (pack_min <= vanilla_format <= (pack_max or pack_min)):
+    problems.append('The pack targets data pack format %s-%s ("%s"), but source/vanilla-data is Minecraft %s '
+                    '(format %s). Put the pack\'s Minecraft version in tools/mc_version.txt and rerun '
+                    'tools/fetch_sources.sh.' % (pack_min, pack_max, version_text.strip().splitlines()[-1],
+                                                 vanilla_version['id'], vanilla_format))
+if UNKNOWN:
+    problems.append('The source uses keys, types or functions this extractor has never seen. It would skip '
+                    'them silently, so handle each one (or list it in KNOWN if it really doesn\'t matter):')
+    for (kind, key), files in sorted(UNKNOWN.items()):
+        ex = sorted(files)
+        problems.append('  %-20s %-40r in %d file(s), e.g. %s' % (kind, key, len(ex), ex[0]))
+if problems:
+    print('\n'.join(['', 'extract.py: the source format changed.'] + problems), file=sys.stderr)
+    if '--allow-unknown' not in sys.argv:  # still wrote data.json, for inspection
+        sys.exit(3)
