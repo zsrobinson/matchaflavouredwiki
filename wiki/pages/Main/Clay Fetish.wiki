@@ -20,6 +20,9 @@ The weather is changed with the <code>/weather</code> command, so it lasts a ran
 === Trading ===
 {{Uses}}
 
+=== Display ===
+Placed in an {{MCW|Item Frame|item frame}}, a clay fetish is drawn as a small three-dimensional statue instead of its flat inventory icon.<ref>{{Source|MF_resourcepack/assets/matcha/items/mournful_clay_statue.json}}</ref><ref>{{Source|MF_resourcepack/assets/matcha/items/cheerful_clay_statue.json}}</ref><ref>{{Cite Modrinth|gallery=Clay Statue|date=2026-09-24|quote=Put them in an item frame and they have these cute models!}}</ref>
+
 == Advancements ==
 Finding either variant grants '''A Miraculous Discovery!''' ("Find a Clay Fetish by searching abandoned Sites"), which rewards 3 {{ItemLink|Obol|obols}}.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_fetish.json}}</ref>
 
@@ -31,7 +34,7 @@ Finding either variant grants '''A Miraculous Discovery!''' ("Find a Clay Fetish
 }}
 
 == Trivia ==
-* The items' internal names are still "cheerful clay statue" and "mournful clay statue", from their names when added in 0.5-alpha.
+* The items' internal names are still "cheerful clay statue" and "mournful clay statue", from their names when added in 0.5-alpha. The Modrinth gallery still calls them clay statues, and the developer hints there that the in-game name was avoided on purpose: "I'm afraid if I say what its really called modrinth will get mad."<ref>{{Cite Modrinth|gallery=Clay Statue|date=2026-09-24|quote=I'm afraid if I say what its really called modrinth will get mad.}}</ref>
 * The developer chose not to explain fetishes in the advancements: "some things, I will not give advancements for (Jewellery, Special Books, Villages, Fetishes (that one im iffy on), etc.)". An advancement for finding one was added in 1.10, but it doesn't say what they do.<ref>{{Cite changelog|1.03|quote=So, some things, I will not give advancements for (Jewellery, Special Books, Villages, Fetishes (that one im iffy on), etc.), and I think its cooler that way.}}</ref>
 * The design video mentions them in passing: "I even added little statues that let you change the weather."<ref>{{Cite video|quote=I even added little statues that let you change the weather.}}</ref>
 
