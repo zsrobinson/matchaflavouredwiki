@@ -1212,6 +1212,101 @@ def advancement_tables():
     return pages
 
 
+# ------------------------------------------------------------------ stonecutter
+# The Stonecutter article lists every stonecutter recipe in groups: the pack's own, then the vanilla ones it keeps.
+# Wood types in the article's order; the first is shown expanded, the others collapsed (their sets are near copies).
+STONECUTTING_WOODS = ['Oak', 'Spruce', 'Birch', 'Jungle', 'Acacia', 'Dark Oak', 'Mangrove', 'Cherry', 'Pale Oak',
+                      'Crimson', 'Warped', 'Bamboo']
+STONECUTTING_GROUPS = ['Stone and other', 'Glass', 'Iron and steel', 'Copper', 'Any wood'] + STONECUTTING_WOODS
+STONECUTTING_TAG_LABELS = {'minecraft:logs': 'Any log, wood, stem or hyphae'}  # tags too broad to spell out
+
+
+def stonecutting_wood(name):
+    """The wood type a name belongs to, longest match first ("Dark Oak Planks" is Dark Oak, not Oak)."""
+    found = [w for w in STONECUTTING_WOODS if re.search(r'(^| )%s( |$)' % w, name)]
+    return max(found, key=len) if found else None
+
+
+def stonecutting_group(r):
+    out, ins = r['output']['name'], r['input']['names']
+    names = [out] + ins
+    if 'Glass' in out:
+        return 'Glass'
+    if any('Copper' in n for n in names) or 'Lightning Rod' in out:
+        return 'Copper'
+    if any('Iron' in n or 'Steel' in n for n in names):
+        return 'Iron and steel'
+    woods = {stonecutting_wood(n) for n in names} - {None}
+    if len(woods) == 1:
+        return woods.pop()
+    if woods:
+        return 'Any wood'  # an input tag covering every wood type (barrel, ladder)
+    return 'Stone and other'
+
+
+def stonecutting_rows(recipes):
+    """(group, input tag, [input names], output name, count, [recipe ids]). Recipes identical in input, output and count
+    (the pack has a few duplicate files) are one row; every duplicate's ID still takes a note."""
+    rows = {}
+    for r in recipes:
+        if r['id'].startswith('debug:'):
+            continue
+        ins = []
+        for n in r['input']['names']:
+            if n not in ins:
+                ins.append(n)
+        key = (tuple(ins), r['output']['name'], r['output'].get('count', 1))
+        rows.setdefault(key, (stonecutting_group(r), r.get('input', {}).get('tag'), []))[2].append(r['id'])
+    return [(g, tag, ins, out, cnt, sorted(ids)) for (ins, out, cnt), (g, tag, ids) in rows.items()]
+
+
+def stonecutting_tables(recipes, vanilla, exists):
+    """Level-4 sections, one table per group. Every row prints {{{<recipe id>|}}} after its output, so the
+    article can add a note to a recipe by its ID. exists(name) says whether the wiki has a page to link."""
+    def link(n):
+        return '[[%s]]' % n if exists(n) else n
+
+    def inputs(tag, ins):
+        if tag in STONECUTTING_TAG_LABELS:
+            return STONECUTTING_TAG_LABELS[tag]
+        return ' or '.join(link(n) for n in ins)
+    groups = defaultdict(list)
+    for g, tag, ins, out, cnt, ids in stonecutting_rows(recipes):
+        groups[g].append((ins[0], inputs(tag, ins), out, cnt, ids))
+    parts = []
+    for g in STONECUTTING_GROUPS + sorted(set(groups) - set(STONECUTTING_GROUPS)):
+        if g not in groups:
+            continue
+        collapsed = vanilla or (g in STONECUTTING_WOODS and g != STONECUTTING_WOODS[0])
+        lines = ['==== %s ====' % g, '{| class="wikitable sortable%s"' % (' mw-collapsible mw-collapsed' if collapsed else ''),
+                 '! Input !! Output !! Count']
+        for _, inp, out, cnt, ids in sorted(groups[g], key=lambda x: (
+                x[1] not in STONECUTTING_TAG_LABELS.values(), x[0], x[2], x[3], x[1])):  # by first input, then output
+            lines.append('|-\n| %s || %s%s || %d' % (inp, link(out), ''.join('{{{%s|}}}' % i for i in ids), cnt))
+        lines.append('|}')
+        parts.append('\n'.join(lines))
+    return ('<includeonly>' + '\n'.join(parts) + '</includeonly><noinclude>Every stonecutter recipe %s, grouped for the '
+            '[[Stonecutter]] article. A note for a recipe goes in a parameter named by its ID. Generated from the pack '
+            'source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]</noinclude>' % (
+                'kept from vanilla' if vanilla else 'the pack adds'))
+
+
+def stonecutting_counts():
+    """{{Data/Stonecutting/Count|pack}} and friends: the numbers and the duplicate list the article's prose states."""
+    pack = [r for r in ALL_RECIPES if r['station'] == 'Stonecutter' and not r['id'].startswith('debug:')]
+    rows = stonecutting_rows(pack)
+    dup = sorted(out for g, tag, ins, out, cnt, ids in rows if len(ids) > 1)
+    links = ['[[%s|%s]]' % (d, d.lower()) for d in dup]
+    dup_text = ' and '.join([', '.join(links[:-1]), links[-1]] if len(links) > 1 else links)
+    vals = {'pack': len(pack), 'vanilla': len([r for r in VANILLA_KEPT if r['station'] == 'Stonecutter']),
+            'listed': len(rows), 'duplicates': len(pack) - len(rows), 'duplicated': dup_text}
+    return ('<includeonly>{{#switch:{{{1|}}}%s}}</includeonly><noinclude>Stonecutter recipe counts for the [[Stonecutter]] '
+            'article: <code>pack</code> (recipes the pack adds), <code>vanilla</code> (vanilla recipes kept), '
+            '<code>listed</code> (rows in the pack\'s tables, duplicates merged), <code>duplicates</code> (recipes merged '
+            'away) and <code>duplicated</code> (the outputs with duplicate recipes, linked). Generated.\n'
+            '[[Category:Generated data]]</noinclude>' % ''.join('|%s=%s' % kv for kv in vals.items()))
+
+
 # ------------------------------------------------------------------ stubs & redirects
 def is_pack_relevant(name, item):
     comps = item['components']
@@ -1571,6 +1666,14 @@ def main():
             n['variant redirects'] += 1
     effect_pages(n)
     category_pages(n)  # (capitalisation redirects are synthesised by build_xml.collect, not written as files)
+    # after every article and redirect is written, so the tables link exactly the names that have a page
+    titles = {f[:-5].replace('%2F', '/') for d in (os.path.join(GEN, 'Main'), os.path.join(HAND, 'Main'))
+              for f in os.listdir(d) if f.endswith('.wiki')}
+    write('Template', 'Data/Stonecutting/Pack', stonecutting_tables(
+        [r for r in ALL_RECIPES if r['station'] == 'Stonecutter'], False, titles.__contains__))
+    write('Template', 'Data/Stonecutting/Vanilla', stonecutting_tables(
+        [r for r in VANILLA_KEPT if r['station'] == 'Stonecutter'], True, titles.__contains__))
+    write('Template', 'Data/Stonecutting/Count', stonecutting_counts())
     # swap in the new tree in one step so concurrent readers never see a half-written folder
     old = GEN_FINAL + '.old'
     if os.path.isdir(old):
