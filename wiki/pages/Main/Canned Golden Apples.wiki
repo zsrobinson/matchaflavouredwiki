@@ -15,6 +15,11 @@ A [[Baked Golden Apple|baked golden apple]], sugar and a glass bottle. The recip
 === Food ===
 Eating them takes {{Value|Canned Golden Apples|eat_time}}, heals {{Value|Canned Golden Apples|heals}} and gives Absorption {{Value|Canned Golden Apples|level|effect=Absorption}} (4 extra hearts) for {{Value|Canned Golden Apples|duration|effect=Absorption|format=clock}} and Regeneration {{Value|Canned Golden Apples|level|effect=Regeneration}} for {{Value|Canned Golden Apples|duration|effect=Regeneration|format=clock}}. It gives the glass bottle back when eaten. Making them grants ''Wait, you can make that?''
 
+== History ==
+{{History|
+{{History line|1.12.2|Now made from a baked golden apple instead of a golden apple.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/canned_golden_apples.json}}</ref>}}
+}}
+
 == See also ==
 * [[Golden Apple]]
 * [[Secret recipes]]
