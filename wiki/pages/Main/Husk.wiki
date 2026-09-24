@@ -2,9 +2,9 @@
 {{Infobox
 |title=Husk
 |type=Hostile mob, undead
-|health=Easy: vanilla<br />Normal: {{Hp|30}}<br />Hard: {{Hp|40}}<br />Baby: {{Hp|4}} (Easy, Normal), {{Hp|7}} (Hard)
-|speedmob=Easy: vanilla<br />Normal: 0.25<br />Hard: 0.265
-|attack=Easy: vanilla<br />Normal: 10<br />Hard: 15
+|health={{Data/Difficulty/Husk/Infobox|max_health}}
+|speedmob={{Data/Difficulty/Husk/Infobox|movement_speed}}
+|attack={{Data/Difficulty/Husk/Infobox|attack_damage}}
 |spawn=Every Overworld biome
 |drops={{ItemLink|Sturdy Leather}}, {{ItemLink|Raw Estus}}
 }}
@@ -25,36 +25,7 @@ On Normal and Hard, a husk moves slowly but steadily: it has full movement effic
 Husks are undead and are affected by [[warding]].
 
 == Difficulty ==
-{| class="wikitable"
-! Attribute !! Easy !! Normal !! Hard
-|-
-! Max health (adult)
-| vanilla || {{Hp|30}} || {{Hp|40}}
-|-
-! Max health (baby)
-| {{Hp|4}} || {{Hp|4}} || {{Hp|7}}
-|-
-! Movement speed
-| vanilla || 0.25 || 0.265
-|-
-! Attack damage
-| vanilla || 10 || 15
-|-
-! Armor
-| vanilla || 12 || 14
-|-
-! Follow range
-| vanilla || 50 || 60
-|-
-! Knockback resistance
-| vanilla || 0.9 || 1
-|-
-! Movement efficiency (land and water)
-| vanilla || 1 || 1
-|-
-! Step height
-| vanilla || 1 || 1
-|}
+{{Data/Difficulty/Husk}}
 <ref name="n" /><ref name="h" />
 
 == History ==

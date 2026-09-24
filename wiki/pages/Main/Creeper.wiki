@@ -2,7 +2,7 @@
 {{Infobox
 |title=Creeper
 |type=Hostile mob
-|health=Easy: {{Hp|14}}<br />Normal: {{Hp|16}}<br />Hard: {{Hp|18}}
+|health={{Data/Difficulty/Creeper/Infobox|max_health}}
 |spawn=Overworld, underground below Y=63
 |drops={{ItemLink|Sulfur Chunk}}
 }}
@@ -15,12 +15,7 @@ Creepers use the vanilla biome spawn lists, but any creeper that appears where i
 Creepers use the vanilla loot table. Their gunpowder is renamed {{ItemLink|Sulfur Chunk}}.
 
 == Difficulty ==
-{| class="wikitable"
-! Attribute !! Easy !! Normal !! Hard
-|-
-! Max health
-| {{Hp|14}} || {{Hp|16}} || {{Hp|18}}
-|}
+{{Data/Difficulty/Creeper}}
 <ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/easy_modifications/modify_creeper.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_creeper.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_creeper.mcfunction}}</ref>
 
 == History ==

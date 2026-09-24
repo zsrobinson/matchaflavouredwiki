@@ -51,26 +51,8 @@ Intrinsics appear as colored lines in the item's tooltip, made of the pack's cus
 The electrum and adamant set bonuses are only active when all four pieces of the same material are worn.<ref>{{Source|MF_datapack/data/matcha/function/timers/divinity/on_restart.mcfunction}}</ref> Only players benefit from armor intrinsics that run on timers; the pieces are counted with per-player scores that are reset every tick.<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
 
 === Shakudo regeneration ===
-Each shakudo armor piece, including the [[Shakudo Elytra]], adds 1 to the wearer's shakudo count. Depending on the count, the wearer receives {{MCW|Regeneration}} for 3 seconds on a repeating timer:<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/shakudo_armour.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/shakudo_regen_1/shakudo_regen.mcfunction}}</ref>
-{| class="wikitable"
-! Count !! Effect !! Every
-|-
-| 1 || Regeneration I || 30 s
-|-
-| 2 || Regeneration I || 26 s
-|-
-| 3 || Regeneration I || 22 s
-|-
-| 4 || Regeneration I || 18 s
-|-
-| 5 || Regeneration II || 20 s
-|-
-| 6 || Regeneration II || 16 s
-|-
-| 7 || Regeneration II || 12 s
-|-
-| 8 || Regeneration II || 8 s
-|}
+Each shakudo armor piece, including the [[Shakudo Elytra]], adds 1 to the wearer's shakudo count. Depending on the count, the wearer receives {{MCW|Regeneration}} on a repeating timer:<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/shakudo_armour.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/shakudo_regen_1/shakudo_regen.mcfunction}}</ref>
+{{Data/Set bonus/shakudo_regen}}
 The tooltip shows this as {{G|Half heart}} {{G|Cooldown}} (00:30) on each piece, with a Per Equipment Bonus of {{G|Half heart}} {{G|Cooldown}} -(00:04). The shakudo elytra's tooltip promises an Elytra Bonus of {{G|Health}} {{G|Cooldown}} -(00:10), and the pack has an enchantment, <code>matcha:shakudo_elytra</code>, that adds 5 to the count. However, the shakudo elytra itself carries the ordinary per-piece intrinsic, which adds only 1. Since the elytra takes the chest slot, a player can wear at most four shakudo pieces. The per-piece intrinsic also counts in the main hand, so holding a fifth shakudo piece raises the count to 5; counts 6 to 8 are not reached.<ref>{{Source|MF_datapack/data/matcha/enchantment/shakudo_armour.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_elytra.json}}</ref><ref>{{Source|MF_datapack/data/matcha/enchantment/shakudo_elytra.json}}</ref>
 
 == Intrinsic enchantments ==

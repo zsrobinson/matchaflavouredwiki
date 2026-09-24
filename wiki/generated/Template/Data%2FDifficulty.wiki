@@ -1,0 +1,61 @@
+<includeonly>{| class="wikitable"
+! Mob !! Attribute !! Easy !! Normal !! Hard
+|-
+! rowspan="3" | [[Skeleton]], [[Stray|stray]], [[Bogged|bogged]] and {{MCW|Parched|parched}}{{{skeletons|}}}
+| Max health || {{Hp|10}} || {{Hp|10}} || {{Hp|12}}
+|-
+| Bow || vanilla || Punch I || Punch II
+|-
+| Bow drop chance || vanilla || 0% || 0%
+|-
+! [[Creeper]]{{{creeper|}}}
+| Max health || {{Hp|14}} || {{Hp|16}} || {{Hp|18}}
+|-
+! rowspan="2" | [[Cave Spider|Cave spider]]{{{cave_spider|}}}
+| Max health || {{Hp|2}} || {{Hp|4}} || {{Hp|6}}
+|-
+| Movement speed || 0.35 || 0.4 || 0.42
+|-
+! rowspan="5" | [[Zombie]] (adult){{{zombie/adult|}}}
+| Max health || vanilla || {{Hp|10}} || {{Hp|15}}
+|-
+| Movement speed || vanilla || 0.34 || 0.38
+|-
+| Attack damage || vanilla || vanilla || 5
+|-
+| Step height || vanilla || 1 || 1
+|-
+| Jump strength || vanilla || vanilla || 0.6
+|-
+! Baby [[Zombie|zombie]], [[Zombie Villager|zombie villager]], [[Drowned|drowned]] and [[Husk|husk]]{{{zombies/baby|}}}
+| Max health || {{Hp|4}} || {{Hp|4}} || {{Hp|7}}
+|-
+! rowspan="9" | [[Husk]] (adult){{{husk/adult|}}}
+| Max health || vanilla || {{Hp|30}} || {{Hp|40}}
+|-
+| Movement speed || vanilla || 0.25 || 0.265
+|-
+| Attack damage || vanilla || 10 || 15
+|-
+| Armor || vanilla || 12 || 14
+|-
+| Follow range || vanilla || 50 || 60
+|-
+| Knockback resistance || vanilla || 0.9 || 1
+|-
+| Step height || vanilla || 1 || 1
+|-
+| Movement efficiency || vanilla || 1 || 1
+|-
+| Water movement efficiency || vanilla || 1 || 1
+|-
+! [[Silverfish]]{{{silverfish|}}}
+| Max health || {{Hp|2}} || {{Hp|2}} || {{Hp|4}}
+|-
+! rowspan="3" | [[Spider]]{{{spider|}}}
+| Jump strength || vanilla || 0.85 || 0.85
+|-
+| Fall damage || vanilla || none || none
+|-
+| {{MCW|Weaving}} || none || I (infinite) || II (infinite)
+|}</includeonly><noinclude>Generated from the pack's spawn functions (<code>mechanics/spawn_mechanic</code>): one group per line of the difficulty's <code>check_type</code> function. A note for a group goes in a parameter named by its ID. [[Category:Generated data]]</noinclude>

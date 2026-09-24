@@ -122,6 +122,7 @@ sortable wikitables, and `{{Main|...}}` hatnotes into each detail page.
 | `{{Upcoming}}` / `{{Planned}}` | Content that is only in `changelog.md` or the developer's plans. |
 | `{{Navbox|title=|group1=|list1={{Nav item|X}}...}}` | Navigation boxes at the bottom of pages. |
 | Generated tables | `{{Data/Food table}}`, `{{Data/Renamed items}}`, `{{Data/Enchantments}}`, `{{Data/Trades/<Profession>}}`, `{{Data/Loot/<namespace>/<path>}}`, `{{Data/Advancements/<tab>}}`, `{{Data/Station/<station>}}`, `{{Data/Fishing/...}}`, `{{Data/Splash texts}}`, `{{Current version}}`. |
+| Difficulty and set bonus data | `{{Data/Difficulty}}` (all mob changes), `{{Data/Difficulty/<Mob>}}` (one mob's table), `{{Data/Difficulty/<Mob>/Infobox|max_health}}` (one attribute in a line, for infoboxes), `{{Data/Set bonus/<score>}}` (a table per equipment score) and `{{Data/Set bonus|adamant_armour=4}}` ("Absorption I (2 extra hearts) for 31 seconds every 30 seconds"; `show=every` or `show=lasts` gives just the seconds), all generated from the pack's functions. A note for one row of a table goes in a parameter named by the row ID: `{{Data/Difficulty/Zombie|max_health/baby=...}}`. |
 
 ## Versions
 

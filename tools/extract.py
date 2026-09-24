@@ -97,6 +97,10 @@ KNOWN = {
     # assets/minecraft/texts/ in the resource pack: splashes.txt is one splash per line. The pack
     # replacing another of vanilla's texts (end.txt, postcredits.txt, credits.json) is new content.
     'resource pack text': {'splashes.txt'},
+    # mob_predicate(): the matcha:mob_checks predicates that pick which mobs a difficulty changes
+    'mob predicate': {'condition', 'entity', 'predicate'},
+    'mob predicate test': {'minecraft:entity_type', 'minecraft:flags'},
+    'mob predicate flag': {'is_baby'},
 }
 UNKNOWN = defaultdict(set)  # (kind, key) -> files it was seen in
 
@@ -963,6 +967,223 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'function', '**', '*.mcfunction'
     with open(f, encoding='utf-8', errors='replace') as fh:
         FUNCTIONS[fid] = {'src': rel(f), 'lines': sum(1 for _ in fh)}
 
+# ---------------------------------------------------------------- functions: difficulty and equipment timers
+# mcfunction has no schema, so these parsers accept only the exact command shapes listed below. Any other
+# command in the files they read goes to the format guard (UNKNOWN) instead of being skipped.
+def fn_file(fid):
+    ns, p = fid.split(':', 1)
+    return os.path.join(DP, ns, 'function', p + '.mcfunction')
+
+
+def fn_commands(fid):
+    """A function's commands, without blank lines and comments."""
+    with open(fn_file(fid), encoding='utf-8') as fh:
+        return [s for s in (raw.strip() for raw in fh) if s and not s.startswith('#')]
+
+
+def unknown_command(kind, fid, line):
+    UNKNOWN[(kind, line if len(line) <= 90 else line[:87] + '...')].add(rel(fn_file(fid)))
+
+
+def num(s):
+    x = float(s)
+    return int(x) if x == int(x) else x
+
+
+ENTITY_TAGS = load_tags('entity_type')
+
+
+def expand_entity_tag(tag, seen=()):
+    out = []
+    for v in ENTITY_TAGS.get(tag, []):
+        v = v['id'] if isinstance(v, dict) else v
+        if v.startswith('#'):
+            if v[1:] not in seen:
+                out += expand_entity_tag(v[1:], seen + (v[1:],))
+        else:
+            out.append(norm_ns(v))
+    return out
+
+
+def mob_predicate(pid):
+    """A matcha:mob_checks predicate: the entity types it matches and whether it tests for babies."""
+    ns, p = pid.split(':', 1)
+    path = os.path.join(DP, ns, 'predicate', p + '.json')
+    d, src = load(path), rel(path)
+    expect('mob predicate', d.keys(), src)
+    if d.get('condition') != 'minecraft:entity_properties' or d.get('entity') != 'this':
+        UNKNOWN[('mob predicate', '%s on %s' % (d.get('condition'), d.get('entity')))].add(src)
+    test = d.get('predicate', {})
+    expect('mob predicate test', test.keys(), src)
+    out = {'src': src}
+    t = test.get('minecraft:entity_type')
+    if isinstance(t, str):
+        out['entity_type'] = t
+        out['entities'] = expand_entity_tag(t[1:]) if t.startswith('#') else [norm_ns(t)]
+    elif t is not None:
+        UNKNOWN[('mob predicate', 'entity_type that is not one ID or tag')].add(src)
+    if 'minecraft:flags' in test:
+        expect('mob predicate flag', test['minecraft:flags'].keys(), src)
+        out['baby'] = test['minecraft:flags'].get('is_baby')
+    return out
+
+
+# The changes a modify_<mob> function makes to the mob it runs as.
+MOB_COMMANDS = [
+    ('attribute', re.compile(r'attribute @s (minecraft:[a-z_]+) base set (-?[\d.]+)$')),
+    ('health', re.compile(r'data merge entity @s \{Health:([\d.]+)f?\}$')),
+    ('effect', re.compile(r'effect give @s (minecraft:[a-z_]+) (infinite|\d+) (\d+) (true|false)$')),
+    ('mainhand', re.compile(r'data merge entity @s \{equipment:\{mainhand:\{id:"(minecraft:[a-z_]+)",count:1,components:'
+                            r'\{"minecraft:enchantments":\{((?:"minecraft:[a-z_]+":\d+,?)*)\}\}\}\},'
+                            r'drop_chances:\{mainhand:([\d.]+)f?\}\}$')),
+    # clear_drop_chances.mcfunction targets the nearest mundane hostile (@n), not the mob being checked
+    ('drop_chances', re.compile(r'data merge entity (@s|@n\[type=#matcha:mundane_hostiles\]) '
+                                r'\{drop_chances:\{((?:[a-z]+:[\d.]+f?,?)+)\}\}$')),
+]
+
+
+def mob_changes(fid):
+    out = []
+    for line in fn_commands(fid):
+        m = kind = None
+        for kind, rx in MOB_COMMANDS:
+            m = rx.match(line)
+            if m:
+                break
+        if not m:
+            unknown_command('mob modification', fid, line)
+            continue
+        if kind == 'attribute':
+            out.append({'kind': kind, 'attribute': m[1], 'value': num(m[2])})
+        elif kind == 'health':
+            out.append({'kind': kind, 'value': num(m[1])})
+        elif kind == 'effect':
+            out.append({'kind': kind, 'effect': m[1], 'seconds': None if m[2] == 'infinite' else int(m[2]),
+                        'amplifier': int(m[3]), 'hide_particles': m[4] == 'true'})
+        elif kind == 'mainhand':
+            ench = {e: int(lvl) for e, lvl in re.findall(r'"(minecraft:[a-z_]+)":(\d+)', m[2])}
+            out.append({'kind': kind, 'item': m[1], 'enchantments': ench, 'drop_chance': num(m[3])})
+        else:
+            chances = {k: num(v.rstrip('f')) for k, v in (kv.split(':') for kv in m[2].split(','))}
+            out.append({'kind': kind, 'target': 'self' if m[1] == '@s' else 'nearest mundane hostile',
+                        'drop_chances': chances})
+    return out
+
+
+SPAWN_FN = 'matcha:mechanics/spawn_mechanic/'
+SPAWN_DIR = os.path.join(DP, 'matcha', 'function', 'mechanics', 'spawn_mechanic')
+DIFFICULTY_RE = re.compile(r'execute if score current_world_settings_difficulty difficulty_score matches ([123]) '
+                           r'run function ([a-z0-9_:/]+)$')
+RULE_RE = re.compile(r'execute as @s((?: (?:if|unless) predicate [a-z0-9_:/]+)+) run function ([a-z0-9_:/]+)$')
+
+
+def mob_modifications():
+    """How mobs are changed when they spawn, per difficulty: modify_mob picks a check_type function by the
+    difficulty (1 easy, 2 normal, 3 hard, read with /difficulty when the pack loads), and its lines apply
+    modify_<mob> functions to the mobs that match their predicates, in order."""
+    out = {'difficulties': {}, 'predicates': {}, 'functions': {}}
+    ticking = SPAWN_FN + 'ticking'
+    checked = set(re.findall(r'@e\[type=#([a-z0-9_:/]+),tag=!SpawnChecked\]', ' '.join(fn_commands(ticking))))
+    if len(checked) != 1:
+        unknown_command('spawn check', ticking, 'not exactly one entity tag checked on spawn: %s' % sorted(checked))
+    out['checked_tag'] = next(iter(sorted(checked)), None)
+    out['checked_entities'] = expand_entity_tag(out['checked_tag']) if checked else []
+    for line in fn_commands(SPAWN_FN + 'modify_mob'):
+        m = DIFFICULTY_RE.match(line)
+        if not m:
+            unknown_command('mob modification', SPAWN_FN + 'modify_mob', line)
+            continue
+        name = {'1': 'easy', '2': 'normal', '3': 'hard'}[m[1]]
+        rules = []
+        for rline in fn_commands(m[2]):
+            r = RULE_RE.match(rline)
+            if not r:
+                unknown_command('mob modification', m[2], rline)
+                continue
+            conds = re.findall(r'(if|unless) predicate ([a-z0-9_:/]+)', r[1])
+            for _, pid in conds:
+                if pid not in out['predicates']:
+                    out['predicates'][pid] = mob_predicate(pid)
+            rules.append({'if': [p for k, p in conds if k == 'if'], 'unless': [p for k, p in conds if k == 'unless'],
+                          'function': r[2]})
+        out['difficulties'][name] = {'function': m[2], 'src': rel(fn_file(m[2])), 'rules': rules}
+    # every function in the difficulty folders is read, including ones no check_type calls
+    fids = {r['function'] for d in out['difficulties'].values() for r in d['rules']}
+    for f in glob.glob(os.path.join(SPAWN_DIR, '*_modifications', '*.mcfunction')):
+        fid = SPAWN_FN + os.path.relpath(f, SPAWN_DIR)[:-len('.mcfunction')].replace(os.sep, '/')
+        if not fid.endswith('/check_type'):
+            fids.add(fid)
+    for fid in sorted(fids):
+        out['functions'][fid] = {'src': rel(fn_file(fid)), 'changes': mob_changes(fid),
+                                 'used_on': [d for d, v in out['difficulties'].items()
+                                             if any(r['function'] == fid for r in v['rules'])]}
+    return out
+
+
+STOPWATCH_RE = re.compile(r'execute if stopwatch (minecraft:[a-z0-9_.]+) ([\d.]+)\.\. run function ([a-z0-9_:/]+)$')
+RESET_RE = re.compile(r'scoreboard players set @a ([A-Za-z0-9_]+) 0$')
+RESTART_RE = re.compile(r'stopwatch restart (minecraft:[a-z0-9_.]+)$')
+CALL_RE = re.compile(r'function ([a-z0-9_:/]+)$')
+SCORE_EFFECT_RE = re.compile(r'execute as @a\[scores=\{([A-Za-z0-9_]+)=(\d+)\}\] at @s run effect give @s '
+                             r'(minecraft:[a-z_]+) (\d+) (\d+) (true|false)$')
+SCORE_CALL_RE = re.compile(r'execute as @a\[scores=\{([A-Za-z0-9_]+)=(\d+)\}\] at @s run function ([a-z0-9_:/]+)$')
+
+
+def equipment_timers():
+    """Effects that equipment gives on a timer (set bonuses, shakudo regeneration). Worn pieces add to
+    per-player scores that stopwatches.mcfunction resets every tick; each stopwatch runs its timer
+    function every so many seconds, which gives an effect to players with a given score. Commands in the
+    timer functions that name one of those scores must have one of the shapes below."""
+    root = 'matcha:stopwatches'
+    lines = fn_commands(root)
+    scores = [RESET_RE.match(l)[1] for l in lines if RESET_RE.match(l)]
+    effects, calls = [], []
+
+    def walk(fid, sw, every, restarted, seen):
+        if fid in seen:
+            return
+        seen.add(fid)
+        for line in fn_commands(fid):
+            m = RESTART_RE.match(line)
+            if m:
+                if m[1] != sw:
+                    unknown_command('timer', fid, line)
+                restarted.append(fid)
+                continue
+            m = CALL_RE.match(line)
+            if m:
+                walk(m[1], sw, every, restarted, seen)
+                continue
+            m = SCORE_EFFECT_RE.match(line)
+            if m and m[1] in scores:
+                effects.append({'score': m[1], 'value': int(m[2]), 'effect': m[3], 'seconds': int(m[4]),
+                                'amplifier': int(m[5]), 'hide_particles': m[6] == 'true', 'every': every,
+                                'stopwatch': sw, 'src': rel(fn_file(fid))})
+                continue
+            m = SCORE_CALL_RE.match(line)
+            if m and m[1] in scores:
+                calls.append({'score': m[1], 'value': int(m[2]), 'function': m[3], 'every': every,
+                              'stopwatch': sw, 'src': rel(fn_file(fid))})
+                continue
+            if any(re.search(r'\b%s\b' % s, line) for s in scores):
+                unknown_command('timer', fid, line)
+            # other timer work (particles, warding) doesn't involve the equipment scores
+
+    for line in lines:
+        m = STOPWATCH_RE.match(line)
+        if m:
+            restarted = []
+            walk(m[3], m[1], num(m[2]), restarted, set())
+            if not restarted:
+                unknown_command('timer', m[3], 'stopwatch %s is never restarted' % m[1])
+        elif not RESET_RE.match(line):
+            unknown_command('timer', root, line)
+    return {'scores': scores, 'effects': effects, 'functions': calls, 'src': rel(fn_file(root))}
+
+
+MOB_MODIFICATIONS = mob_modifications()
+EQUIPMENT_TIMERS = equipment_timers()
+
 # ---------------------------------------------------------------- textures (item model -> png)
 def resolve_item_model(model_ref):
     """matcha:foo -> path of an item definition json in the resource pack or vanilla."""
@@ -1258,6 +1479,8 @@ data = {
     'biomes': BIOMES,
     'biome_tags': BIOME_TAGS,
     'splashes': SPLASHES,
+    'mob_modifications': MOB_MODIFICATIONS,
+    'equipment_timers': EQUIPMENT_TIMERS,
     'missing_lang': sorted(MISSING_LANG),
 }
 os.makedirs(os.path.dirname(OUT), exist_ok=True)

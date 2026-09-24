@@ -2,7 +2,7 @@
 {{Infobox
 |title=Silverfish
 |type=Hostile mob
-|health=Easy, Normal: {{Hp|2}}<br />Hard: {{Hp|4}}
+|health={{Data/Difficulty/Silverfish/Infobox|max_health}}
 |spawn=Infested blocks, stronghold spawners
 }}
 A '''silverfish''' in [[Matcha Flavoured]] is much weaker than in vanilla ''Minecraft'', with 1 heart of health on Easy and Normal and 2 on Hard.
@@ -11,12 +11,7 @@ A '''silverfish''' in [[Matcha Flavoured]] is much weaker than in vanilla ''Mine
 Silverfish spawn from infested blocks and stronghold spawners, as in vanilla. Like other non-undead mobs, a silverfish that appears in the Overworld where it can see the sky is removed.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref>
 
 == Difficulty ==
-{| class="wikitable"
-! Attribute !! Easy !! Normal !! Hard
-|-
-! Max health
-| {{Hp|2}} || {{Hp|2}} || {{Hp|4}}
-|}
+{{Data/Difficulty/Silverfish}}
 <ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_and_easy_modifications/modify_silverfish.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_silverfish.mcfunction}}</ref>
 
 == History ==

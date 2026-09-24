@@ -1,0 +1,21 @@
+<includeonly>{| class="wikitable"
+! Attribute !! Easy !! Normal !! Hard
+|-
+! Max health (adult){{{max_health|}}}
+| vanilla || {{Hp|10}} || {{Hp|15}}
+|-
+! Max health (baby){{{max_health/baby|}}}
+| {{Hp|4}} || {{Hp|4}} || {{Hp|7}}
+|-
+! Movement speed (adult){{{movement_speed|}}}
+| vanilla || 0.34 || 0.38
+|-
+! Attack damage (adult){{{attack_damage|}}}
+| vanilla || vanilla || 5
+|-
+! Step height (adult){{{step_height|}}}
+| vanilla || 1 || 1
+|-
+! Jump strength (adult){{{jump_strength|}}}
+| vanilla || vanilla || 0.6
+|}</includeonly><noinclude>Generated from the pack's spawn functions (<code>mechanics/spawn_mechanic</code>). A note for a row goes in a parameter named by the row ID. [[Category:Generated data]]</noinclude>
