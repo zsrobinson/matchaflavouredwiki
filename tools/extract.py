@@ -18,6 +18,8 @@ import re
 import sys
 from collections import defaultdict
 
+from mcformat import Legacy
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'source', 'matcha-flavoured')
 DP = os.path.join(SRC, 'MF_datapack', 'data')
@@ -38,8 +40,9 @@ def rel(path):
 
 # ---------------------------------------------------------------- format guard
 # This file reads specific keys. When the pack or a new Minecraft version changes a file format
-# (26.3 renames loot "functions" to "modifier" and "conditions" to "condition"), the new keys would be
-# skipped without a word and the wiki would quietly lose drop counts, conditions and item identities.
+# (26.3 renames loot "functions" to "modifier" and "conditions" to "condition"; tools/mcformat.py now
+# translates those), the new keys would be skipped without a word and the wiki would quietly lose drop
+# counts, conditions and item identities.
 # So every key, type and function name read below is checked against this list of what the extractor
 # knows. Anything new fails the run (exit 3). Handle it, or add it here if it really doesn't matter.
 KNOWN = {
@@ -86,7 +89,9 @@ KNOWN = {
         'custom_data', 'custom_model_data', 'custom_name', 'damage', 'death_protection', 'enchantment_glint_override',
         'enchantments', 'entity_data', 'equippable', 'food', 'instrument', 'item_model', 'item_name',
         'jukebox_playable', 'lore', 'max_damage', 'max_stack_size', 'potion_contents', 'provides_trim_material',
-        'rarity', 'repairable', 'stored_enchantments', 'tool', 'tooltip_display', 'unbreakable', 'use_remainder')},
+        'rarity', 'repairable', 'stored_enchantments', 'tool', 'tooltip_display', 'unbreakable', 'use_remainder',
+        # which chicken hatches from an egg (26.3's Seagull Egg): the page says so in prose, no table shows it
+        'chicken/variant')},
     'villager trade': {'wants', 'additional_wants', 'gives', 'given_item_modifiers', 'max_uses', 'xp',
                        'reputation_discount', 'price_multiplier', 'merchant_predicate'},
     'trade set': {'amount', 'random_sequence', 'trades', 'allow_duplicates'},
@@ -127,6 +132,22 @@ def expect_conditions(conds, src):
 
 def norm_ns(i):
     return i if ':' in i else 'minecraft:' + i
+
+
+# ---------------------------------------------------------------- 26.3 names -> the names read below
+# Minecraft 26.3 renamed keys in loot tables, predicates, trades and advancement criteria. Each file is
+# translated to the 26.2 names as it is loaded (tools/mcformat.py), so the code below and data.json
+# have one shape whichever version the pack is for.
+def find_predicate(pid):
+    ns, p = pid.split(':', 1)
+    for path in (os.path.join(DP, ns, 'predicate', p + '.json'),
+                 os.path.join(VDATA, 'predicate', p + '.json') if ns == 'minecraft' else None):
+        if path and os.path.exists(path):
+            return path
+    return None
+
+
+LEGACY = Legacy(find_predicate, lambda kind, key, src: UNKNOWN[(kind, key)].add(src))
 
 
 # ---------------------------------------------------------------- language
@@ -785,6 +806,47 @@ for f in sorted(glob.glob(os.path.join(VDATA, 'recipe', '*.json'))):
 BLOCKED_ADVANCEMENTS = {b[len('advancement/'):]: len(glob.glob(os.path.join(VDATA, b, '**', '*.json'), recursive=True))
                         for b in sorted(BLOCKED) if b.startswith('advancement/')}
 
+# ---------------------------------------------------------------- cooking speed (26.3)
+# Until 26.2 a blast furnace or smoker recipe gave its real time. 26.3 moved the double speed to the
+# fuel: every vanilla fuel's cooking_fuel component has a speed_multiplier, 2 in blocks that match the
+# predicate block/fast_cooking, and the recipes' cookingtime doubled to match. The game cooks for
+# ceil(cookingtime / speed), so data.json records each station's speed with vanilla fuel (all of them
+# share one multiplier; coal's is read) and generate.py: cook_ticks() divides by it.
+COOKING_BLOCKS = {'minecraft:furnace': 'minecraft:smelting', 'minecraft:smoker': 'minecraft:smoking',
+                  'minecraft:blast_furnace': 'minecraft:blasting'}
+
+
+def cooking_speeds():
+    summary = os.path.join(ROOT, 'source', 'vanilla-summary', 'item_components', 'data.min.json')
+    fuel = (load(summary).get('coal') or {}).get('minecraft:cooking_fuel') if os.path.exists(summary) else None
+    if not fuel:
+        return None  # before 26.3: the recipes give the real time
+    src = 'vanilla:item_components/coal'
+
+    def value(ref, block, depth=0):
+        if isinstance(ref, (int, float)):
+            return ref
+        if isinstance(ref, str) and depth < 8:
+            ns, p = norm_ns(ref).split(':', 1)
+            for path in (os.path.join(DP, ns, 'context_float_provider', p + '.json'),
+                         os.path.join(VDATA, 'context_float_provider', p + '.json') if ns == 'minecraft' else None):
+                if path and os.path.exists(path):
+                    return value(load(path), block, depth + 1)
+        if isinstance(ref, dict) and norm_ns(ref.get('type', '')) == 'minecraft:conditional' and depth < 8:
+            c = LEGACY.cond(ref.get('condition'), src)
+            blocks = c.get('block') if isinstance(c, dict) else None
+            blocks = [blocks] if isinstance(blocks, str) else blocks
+            if c.get('condition') == 'minecraft:block_state_property' and isinstance(blocks, list) \
+                    and not c.get('properties') and not any(b.startswith('#') for b in blocks):
+                return value(ref['on_true' if block in map(norm_ns, blocks) else 'on_false'], block, depth + 1)
+        UNKNOWN[('cooking speed', json.dumps(ref)[:60])].add(src)
+        return 1
+
+    return {rtype: value(fuel.get('speed_multiplier', 1), block) for block, rtype in COOKING_BLOCKS.items()}
+
+
+COOKING_SPEED = cooking_speeds()
+
 # ---------------------------------------------------------------- loot tables
 def pool_count(pool_fns):
     """The count a pool's own set_count gives every stack it yields (pool functions run after the
@@ -913,7 +975,7 @@ LOOT = {}
 for f in sorted(glob.glob(os.path.join(DP, '*', 'loot_table', '**', '*.json'), recursive=True)):
     ns = os.path.relpath(f, DP).split(os.sep)[0]
     lid = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'loot_table'))[:-5]
-    d = load(f)
+    d = LEGACY.loot(load(f), rel(f))
     LOOT[lid] = {'id': lid, 'src': rel(f), 'type': d.get('type'), 'entries': parse_loot(d, rel(f)),
                  'overrides_vanilla': ns == 'minecraft' and os.path.exists(
                      os.path.join(VDATA, 'loot_table', os.path.relpath(f, os.path.join(DP, ns, 'loot_table'))))}
@@ -932,7 +994,8 @@ for f in sorted(glob.glob(os.path.join(VDATA, 'loot_table', '**', '*.json'), rec
     if lid in LOOT or not rp.startswith(('entities/', 'blocks/', 'chests/', 'gameplay/', 'archaeology/', 'shearing/')):
         continue
     LOOT[lid] = {'id': lid, 'src': 'vanilla:loot_table/' + rp + '.json', 'type': None, 'vanilla': True,
-                 'entries': parse_loot(load(f), 'vanilla:loot_table/' + rp + '.json'), 'overrides_vanilla': False}
+                 'entries': parse_loot(LEGACY.loot(load(f), 'vanilla:loot_table/' + rp + '.json'),
+                                       'vanilla:loot_table/' + rp + '.json'), 'overrides_vanilla': False}
 
 # ---------------------------------------------------------------- trades
 TRADES = defaultdict(lambda: defaultdict(list))
@@ -956,7 +1019,7 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
         tfile = os.path.join(DP, ns, 'villager_trade', p + '.json')
         if not os.path.exists(tfile):
             continue
-        t = load(tfile)
+        t = LEGACY.trade(load(tfile), rel(tfile))
         expect('villager trade', t, rel(tfile))
         mods = t.get('given_item_modifiers') or []
         expect('loot function', (norm_ns(m.get('function', '')) for m in mods), rel(tfile))
@@ -1053,7 +1116,7 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'advancement', '**', '*.json'), 
     expect('advancement display', d.get('display') or {}, rel(f))
     disp = d.get('display')
     rec = {'id': aid, 'src': rel(f), 'parent': d.get('parent'), 'criteria': list(d.get('criteria', {}).keys()),
-           'criteria_raw': d.get('criteria'), 'rewards': d.get('rewards'), 'requirements': d.get('requirements')}
+           'criteria_raw': LEGACY.criteria(d.get('criteria'), rel(f)), 'rewards': d.get('rewards'), 'requirements': d.get('requirements')}
     if disp:
         icon = disp.get('icon', {})
         # icons are display-only: don't register them (they would add foreign models to items)
@@ -1114,7 +1177,8 @@ def mob_predicate(pid):
     """A matcha:mob_checks predicate: the entity types it matches and whether it tests for babies."""
     ns, p = pid.split(':', 1)
     path = os.path.join(DP, ns, 'predicate', p + '.json')
-    d, src = load(path), rel(path)
+    src = rel(path)
+    d = LEGACY.cond(load(path), src)
     expect('mob predicate', d.keys(), src)
     if d.get('condition') != 'minecraft:entity_properties' or d.get('entity') != 'this':
         UNKNOWN[('mob predicate', '%s on %s' % (d.get('condition'), d.get('entity')))].add(src)
@@ -1242,12 +1306,16 @@ def equipment_timers():
     root = 'matcha:stopwatches'
     lines = fn_commands(root)
     scores = [RESET_RE.match(l)[1] for l in lines if RESET_RE.match(l)]
-    effects, calls = [], []
+    effects, calls, missing = [], [], []
 
-    def walk(fid, sw, every, restarted, seen):
+    def walk(fid, sw, every, restarted, seen, caller=None):
         if fid in seen:
             return
         seen.add(fid)
+        if not os.path.exists(fn_file(fid)):
+            # a pack bug, not a format change: the game reports "Unknown function" for that line and goes on
+            missing.append({'function': fid, 'called_from': rel(fn_file(caller)) if caller else None})
+            return
         for line in fn_commands(fid):
             m = RESTART_RE.match(line)
             if m:
@@ -1257,7 +1325,7 @@ def equipment_timers():
                 continue
             m = CALL_RE.match(line)
             if m:
-                walk(m[1], sw, every, restarted, seen)
+                walk(m[1], sw, every, restarted, seen, fid)
                 continue
             m = SCORE_EFFECT_RE.match(line)
             if m and m[1] in scores:
@@ -1278,12 +1346,15 @@ def equipment_timers():
         m = STOPWATCH_RE.match(line)
         if m:
             restarted = []
-            walk(m[3], m[1], num(m[2]), restarted, set())
+            walk(m[3], m[1], num(m[2]), restarted, set(), root)
             if not restarted:
                 unknown_command('timer', m[3], 'stopwatch %s is never restarted' % m[1])
         elif not RESET_RE.match(line):
             unknown_command('timer', root, line)
-    return {'scores': scores, 'effects': effects, 'functions': calls, 'src': rel(fn_file(root))}
+    out = {'scores': scores, 'effects': effects, 'functions': calls, 'src': rel(fn_file(root))}
+    if missing:  # only when there are any, so data.json stays as it was for packs without the bug
+        out['missing_functions'] = missing
+    return out
 
 
 MOB_MODIFICATIONS = mob_modifications()
@@ -1590,12 +1661,18 @@ data = {
     'equipment_timers': EQUIPMENT_TIMERS,
     'missing_lang': sorted(MISSING_LANG),
 }
+if COOKING_SPEED:  # 26.3 and later
+    data['cooking_speed'] = COOKING_SPEED
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 with open(OUT, 'w', encoding='utf-8') as f:
     json.dump(data, f, indent=1, ensure_ascii=False)
 print('items', len(ITEMS), 'recipes', len(RECIPES), 'vanilla kept', len(VANILLA_RECIPES_KEPT),
       'loot', len(LOOT), 'enchantments', len(ENCH), 'advancements', len(ADV), 'functions', len(FUNCTIONS),
       'no icon', sum(1 for i in ITEMS.values() if not i['icon']), file=sys.stderr)
+
+# pack bugs are reported but don't stop the build: they belong on the "Known bugs" page
+for m in EQUIPMENT_TIMERS.get('missing_functions', []):
+    print('extract.py: pack bug: %s calls %s, which does not exist' % (m['called_from'], m['function']), file=sys.stderr)
 
 # ---------------------------------------------------------------- is the input what this file understands?
 problems = []

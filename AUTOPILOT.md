@@ -233,3 +233,4 @@ still reading the old one. The Check workflow proves the change is safe: `wiki/g
 unchanged for the pinned commit. If today also has an update, put the extractor change in that PR and say
 so in its body. Otherwise open a PR "Autopilot: prepare the extractor for <branch>" (label `autopilot`),
 unless an `autopilot` PR is already open. Don't change pages yet; that happens when the release comes out.
+The 26.3 port was rehearsed in September 2026: `wiki/PORT_26_3.md` says what already works and the exact steps for its release.
