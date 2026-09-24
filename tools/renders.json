@@ -1,5 +1,5 @@
 {
- "_readme": "Renders drawn by tools/render.py from the pack's files into wiki/renders/<name>.png (File:<name>.png on the wiki). Structure: template (one, or a list stacked like a list pool element) or jigsaw (a whole structure; seed picks the layout), processors (default: those of the pool that places the template), cut (layers removed from the top; for jigsaw {pools: regex, layers}), biome (grass, foliage and water tints), ground, camera {yaw, pitch}. Entity: layers [{model, texture, inflate}] on the models in tools/render/src/models.js, pose, equipment {asset, slots}. width is the final width in pixels. skip: pages (by title) and templates (template:<id>) the picture rules in wiki/STYLE.md ask for but that don't get a picture, each with the reason; python3 tools/render.py --audit lists anything neither rendered nor skipped.",
+ "_readme": "Renders drawn by tools/render.py from the pack's files into wiki/renders/<name>.png (File:<name>.png on the wiki). Structure: template (one, or a list stacked like a list pool element) or jigsaw (a whole structure; seed picks the layout), processors (default: those of the pool that places the template), cut (layers removed from the top; for jigsaw {pools: regex, layers}), biome (grass, foliage and water tints), ground, camera {yaw, pitch}. Entity: layers [{model, texture, emissive}] on the game's own models (a layer of tools/render/src/entity_models.json: 'zombie' is minecraft:zombie#main, 'stray#outer' an overlay), villager {type, profession, level} (the villager's texture layers, as the game stacks them), pose (tools/render/src/models.js), equipment {asset, model, slots}, camera {yaw, pitch}. width is the final width in pixels. skip: pages (by title) and templates (template:<id>) the picture rules in wiki/STYLE.md ask for but that don't get a picture, each with the reason; python3 tools/render.py --audit lists anything neither rendered nor skipped.",
  "renders": {
   "Abbey isometric view": {
    "kind": "structure",
@@ -311,38 +311,37 @@
    "kind": "entity",
    "layers": [
     {
-     "model": "humanoid",
+     "model": "zombie",
      "texture": "minecraft:entity/zombie/zombie"
     }
    ],
-   "pose": "reach",
+   "pose": "zombie_arms",
    "width": 220
   },
   "Husk render": {
    "kind": "entity",
    "layers": [
     {
-     "model": "humanoid",
+     "model": "husk",
      "texture": "minecraft:entity/zombie/husk"
     }
    ],
-   "pose": "reach",
+   "pose": "zombie_arms",
    "width": 220
   },
   "Drowned render": {
    "kind": "entity",
    "layers": [
     {
-     "model": "player",
+     "model": "drowned",
      "texture": "minecraft:entity/zombie/drowned"
     },
     {
-     "model": "player",
-     "texture": "minecraft:entity/zombie/drowned_outer_layer",
-     "inflate": 0.25
+     "model": "drowned#outer",
+     "texture": "minecraft:entity/zombie/drowned_outer_layer"
     }
    ],
-   "pose": "reach",
+   "pose": "zombie_arms",
    "width": 220
   },
   "Skeleton render": {
@@ -353,50 +352,44 @@
      "texture": "minecraft:entity/skeleton/skeleton"
     }
    ],
-   "pose": "stand",
    "width": 220
   },
   "Stray render": {
    "kind": "entity",
    "layers": [
     {
-     "model": "skeleton",
+     "model": "stray",
      "texture": "minecraft:entity/skeleton/stray"
     },
     {
-     "model": "humanoid",
-     "texture": "minecraft:entity/skeleton/stray_overlay",
-     "inflate": 0.25
+     "model": "stray#outer",
+     "texture": "minecraft:entity/skeleton/stray_overlay"
     }
    ],
-   "pose": "stand",
    "width": 220
   },
   "Bogged render": {
    "kind": "entity",
    "layers": [
     {
-     "model": "skeleton",
+     "model": "bogged",
      "texture": "minecraft:entity/skeleton/bogged"
     },
     {
-     "model": "humanoid",
-     "texture": "minecraft:entity/skeleton/bogged_overlay",
-     "inflate": 0.25
+     "model": "bogged#outer",
+     "texture": "minecraft:entity/skeleton/bogged_overlay"
     }
    ],
-   "pose": "stand",
    "width": 220
   },
   "Wither Skeleton render": {
    "kind": "entity",
    "layers": [
     {
-     "model": "skeleton",
+     "model": "wither_skeleton",
      "texture": "minecraft:entity/skeleton/wither_skeleton"
     }
    ],
-   "pose": "stand",
    "width": 220
   },
   "Steel armor render": {
@@ -547,36 +540,275 @@
     "pitch": 60
    },
    "width": 260
+  },
+  "Witch render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "witch",
+     "texture": "minecraft:entity/witch/witch"
+    }
+   ],
+   "width": 220
+  },
+  "Wandering Trader render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "wandering_trader",
+     "texture": "minecraft:entity/wandering_trader/wandering_trader"
+    }
+   ],
+   "width": 220
+  },
+  "Piglin render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "piglin",
+     "texture": "minecraft:entity/piglin/piglin"
+    }
+   ],
+   "width": 220
+  },
+  "Zombified Piglin render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "zombified_piglin",
+     "texture": "minecraft:entity/piglin/zombified_piglin"
+    }
+   ],
+   "width": 220
+  },
+  "Spider render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "spider",
+     "texture": "minecraft:entity/spider/spider"
+    },
+    {
+     "model": "spider",
+     "texture": "minecraft:entity/spider/spider_eyes",
+     "emissive": true
+    }
+   ],
+   "width": 260
+  },
+  "Cave Spider render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "cave_spider",
+     "texture": "minecraft:entity/spider/cave_spider"
+    },
+    {
+     "model": "cave_spider",
+     "texture": "minecraft:entity/spider/spider_eyes",
+     "emissive": true
+    }
+   ],
+   "width": 220
+  },
+  "Creeper render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "creeper",
+     "texture": "minecraft:entity/creeper/creeper"
+    }
+   ],
+   "width": 160
+  },
+  "Enderman render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "enderman",
+     "texture": "minecraft:entity/enderman/enderman"
+    },
+    {
+     "model": "enderman",
+     "texture": "minecraft:entity/enderman/enderman_eyes",
+     "emissive": true
+    }
+   ],
+   "width": 180
+  },
+  "Blaze render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "blaze",
+     "texture": "minecraft:entity/blaze/blaze"
+    }
+   ],
+   "width": 220
+  },
+  "Phantom render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "phantom",
+     "texture": "minecraft:entity/phantom/phantom"
+    },
+    {
+     "model": "phantom",
+     "texture": "minecraft:entity/phantom/phantom_eyes",
+     "emissive": true
+    }
+   ],
+   "width": 300
+  },
+  "Silverfish render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "silverfish",
+     "texture": "minecraft:entity/silverfish/silverfish"
+    }
+   ],
+   "width": 220
+  },
+  "Wither render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "wither",
+     "texture": "minecraft:entity/wither/wither"
+    }
+   ],
+   "width": 260
+  },
+  "Ender Dragon render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "ender_dragon",
+     "texture": "minecraft:entity/enderdragon/dragon"
+    },
+    {
+     "model": "ender_dragon",
+     "texture": "minecraft:entity/enderdragon/dragon_eyes",
+     "emissive": true
+    }
+   ],
+   "width": 420
+  },
+  "Villager render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains"
+   },
+   "width": 200
+  },
+  "Archaeologist render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "cartographer"
+   },
+   "width": 200
+  },
+  "Chemist render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "cleric"
+   },
+   "width": 200
+  },
+  "Cook render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "butcher"
+   },
+   "width": 200
+  },
+  "Engineer render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "armorer"
+   },
+   "width": 200
+  },
+  "Farmer render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "farmer"
+   },
+   "width": 200
+  },
+  "Fisherman render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "fisherman"
+   },
+   "width": 200
+  },
+  "Fletcher render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "fletcher"
+   },
+   "width": 200
+  },
+  "Jeweler render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "toolsmith"
+   },
+   "width": 200
+  },
+  "Lumberjack render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "leatherworker"
+   },
+   "width": 200
+  },
+  "Mason render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "mason"
+   },
+   "width": 200
+  },
+  "Mouthpiece render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "librarian"
+   },
+   "width": 200
+  },
+  "Shepherd render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "shepherd"
+   },
+   "width": 200
+  },
+  "Weaponsmith render": {
+   "kind": "entity",
+   "villager": {
+    "type": "plains",
+    "profession": "weaponsmith"
+   },
+   "width": 200
   }
  },
  "skip": {
-  "Villager": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Wandering Trader": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Archaeologist": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Chemist": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Cook": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Engineer": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Farmer": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Fisherman": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Fletcher": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Jeweler": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Lumberjack": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Mason": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Mouthpiece": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Shepherd": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Weaponsmith": "needs the villager model (tools/render/src/models.js), with its biome and profession layers",
-  "Witch": "needs the witch model (the villager model with a hat)",
-  "Piglin": "needs the piglin model",
-  "Zombified Piglin": "needs the piglin model",
-  "Spider": "needs the spider model",
-  "Cave Spider": "needs the spider model",
-  "Creeper": "needs its own model",
-  "Enderman": "needs its own model",
-  "Blaze": "needs its own model",
-  "Phantom": "needs its own model",
-  "Silverfish": "needs its own model",
-  "Wither": "needs its own model",
-  "Ender Dragon": "needs its own model",
   "template:matcha:spawner/skeleton_spawner": "a single spawner block (Spawner shows its icon)",
   "template:matcha:spawner/spider_spawner": "a single spawner block (Spawner shows its icon)",
   "template:matcha:spawner/zombie_spawner": "a single spawner block (Spawner shows its icon)",

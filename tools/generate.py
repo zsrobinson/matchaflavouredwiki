@@ -375,9 +375,6 @@ def infobox(item):
     elif ench:
         f['effects'] = ('%s<br />' % f['effects'] if f.get('effects') else '') + 'Stores: ' + ', '.join(
             intrinsic_text(e, l) for e, l in ench.items())
-    if any(item['components'].get('lore_rich') or []):
-        # the item's in-game tooltip, drawn under its inventory slot (Module:Tooltip)
-        f['tooltipbox'] = '{{Tooltip|%s}}' % safe(name)
     model = (item['models'] or [None])[0]
     f['id'] = '<code>%s</code>' % (model or item['base_id'])
     if model:

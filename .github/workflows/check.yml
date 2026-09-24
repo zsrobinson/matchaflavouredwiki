@@ -55,7 +55,7 @@ jobs:
         with:
           path: build/images
           # tools/images.py redraws only if its inputs changed (build/images/.inputs), so an older cache is safe
-          key: images-${{ hashFiles('tools/images.py', 'tools/extract.py', 'tools/extra_textures.txt', 'tools/source.lock', 'tools/mc_version.txt') }}
+          key: images-${{ hashFiles('tools/images.py', 'tools/extract.py', 'tools/extra_textures.txt', 'tools/source.lock', 'tools/mc_version.txt', 'tools/render/render.mjs', 'tools/render/package-lock.json', 'tools/render/src/**') }}
           restore-keys: images-
       - name: Start MediaWiki (build-time renderer)
         run: |

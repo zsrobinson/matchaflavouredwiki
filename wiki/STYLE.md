@@ -147,7 +147,7 @@ takes screenshots. A page gets one when it is about something whose look an icon
 
 Nothing else gets one. Items and blocks have their icon and slots, and mechanics and overview pages
 would need diagrams, which are a different thing. When a page qualifies but can't have its picture yet
-(no model for that mob) or a template isn't worth showing (an invisible road connector), put it in
+(a mob whose animation the renderer lacks) or a template isn't worth showing (an invisible road connector), put it in
 the `skip` list of `tools/renders.json` with the reason. `python3 tools/render.py --audit` lists every
 gap; it passes when each one is rendered or skipped.
 

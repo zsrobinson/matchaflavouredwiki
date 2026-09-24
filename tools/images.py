@@ -12,7 +12,10 @@ and into site/assets/gui/: the pack's station screens, progress sprites, village
 HUD hearts and glyph sheet at 2x, for Module:Station, Module:Tooltip and {{Hp}}.
 
 Icons are upscaled with nearest-neighbour to 128px so MediaWiki thumbnails stay crisp.
-Block items get a simple isometric cube render (slabs are half height).
+Block items are drawn from their item models (stairs, fences, chests, beds, the pack's own
+models...) in headless Chromium by tools/render/ (src/items.js), the way the game draws a block in
+a slot. Without Node or a Chromium they fall back to a plain isometric cube, with a warning (and CI,
+MFW_BUILD_MODE=ci, fails instead).
 
 The output depends only on the inputs hashed in input_hash(); when they are unchanged since the
 last run (build/images/.inputs) nothing is redrawn. --force redraws anyway.
@@ -22,7 +25,9 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
+import tempfile
 from multiprocessing import Pool
 
 from PIL import Image, ImageDraw
@@ -31,6 +36,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'build', 'images')
 RP = os.path.join(ROOT, 'source', 'matcha-flavoured', 'MF_resourcepack', 'assets')
 SIZE = 128
+TOOL = os.path.join(ROOT, 'tools', 'render')
 
 
 def first_frame(im):
@@ -351,13 +357,48 @@ def input_hash():
     """Everything the images are drawn from: this script, the item data, the texture list, and the
     pinned pack and Minecraft versions (which fix every texture under source/)."""
     h = hashlib.sha1()
-    for rel in ('tools/images.py', 'build/data.json', 'tools/extra_textures.txt', 'tools/source.lock',
-                'tools/mc_version.txt'):
+    rels = ['tools/images.py', 'build/data.json', 'tools/extra_textures.txt', 'tools/source.lock',
+            'tools/mc_version.txt', 'tools/render/render.mjs', 'tools/render/package-lock.json']
+    rels += sorted('tools/render/src/' + f for f in os.listdir(os.path.join(TOOL, 'src')))  # block icons
+    for rel in rels:
         path = os.path.join(ROOT, rel)
         h.update(rel.encode() + b'\0')
         if os.path.exists(path):
             h.update(open(path, 'rb').read())
     return h.hexdigest()
+
+
+def block_icons(items):
+    """Draw block items from their item models in one headless Chromium run (tools/render/src/items.js),
+    at twice the size and scaled down. Returns the keys drawn; the rest get the Python cube."""
+    jobs = [{'file': safe(k), 'id': it['base_id'], 'model': (it['models'] or [None])[0]} for k, it in items]
+    try:
+        if not os.path.isdir(os.path.join(TOOL, 'node_modules')):
+            subprocess.run(['npm', 'ci', '--silent'], cwd=TOOL, check=True)
+        with tempfile.TemporaryDirectory() as tmp:
+            jobs_file = os.path.join(tmp, 'jobs.json')
+            json.dump([{'name': 'block icons', 'kind': 'icons', 'size': SIZE * 2, 'items': jobs}], open(jobs_file, 'w'))
+            proc = subprocess.run(['node', os.path.join(TOOL, 'render.mjs'), jobs_file, tmp], capture_output=True, text=True)
+            info = next((json.loads(l) for l in proc.stdout.splitlines() if l.startswith('{')), {})
+            if proc.returncode or 'error' in info:
+                raise RuntimeError(info.get('error') or proc.stderr[-2000:])
+            for f in info.get('failed', []):
+                print('block icon failed', f)
+            if info.get('missing'):
+                print('block icons: missing textures', ', '.join(info['missing']))
+            done = set()
+            for k, _ in items:
+                f = os.path.join(tmp, safe(k) + '.png')
+                if os.path.exists(f):
+                    Image.open(f).convert('RGBA').resize((SIZE, SIZE), Image.LANCZOS).save(os.path.join(OUT, safe(k) + '.png'))
+                    done.add(k)
+            return done
+    except (OSError, RuntimeError, subprocess.CalledProcessError) as e:
+        if os.environ.get('MFW_BUILD_MODE') == 'ci':
+            raise
+        print('WARNING: block icons drawn as plain cubes (the model renderer needs Node and a Chromium):',
+              str(e).strip().splitlines()[-1] if str(e).strip() else e)
+        return set()
 
 
 def draw_icon(entry):
@@ -392,10 +433,12 @@ def main():
         return
     print('gui art', len(gui_assets()))
     data = json.load(open(os.path.join(ROOT, 'build', 'data.json'), encoding='utf-8'))
-    done = skipped = 0
-    # the isometric cubes are drawn texel by texel in Python: spread them over every core
+    items = sorted(data['items'].items())
+    modelled = block_icons([(k, it) for k, it in items if (it.get('icon') or {}).get('kind') == 'block'])
+    done, skipped = len(modelled), 0
+    # the rest are drawn in Python (flat items texel by texel, and fallback cubes): spread them over every core
     with Pool() as pool:
-        for result in pool.imap(draw_icon, sorted(data['items'].items()), chunksize=16):
+        for result in pool.imap(draw_icon, [e for e in items if e[0] not in modelled], chunksize=16):
             if result == 'ok':
                 done += 1
                 continue
