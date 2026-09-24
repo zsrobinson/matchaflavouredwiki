@@ -193,6 +193,15 @@ def diff_dicts(old, new, fields=None):
     return [k for k in keys if old.get(k) != new.get(k)]
 
 
+GLYPH = re.compile(r'⟦[^⟧]*⟧|[^\x00-\x7f\u00a0-\u024f\u2010-\u2027]')
+
+
+def lore_words(lore):
+    """A tooltip's lore without its glyphs (named ⟦Health⟧ by extract.py, or symbols such as ❤ and 🗡):
+    the words and numbers a reader can check a page against."""
+    return [' '.join(GLYPH.sub(' ', line).split()) for line in lore] if isinstance(lore, list) else lore
+
+
 def item_lines(a, b, pages):
     out = []
     ia, ib = a['items'], b['items']
@@ -220,6 +229,8 @@ def item_lines(a, b, pages):
         cb = dict(ib[name]['components'], base_id=ib[name]['base_id'])
         ca.pop('lore_rich', None)
         cb.pop('lore_rich', None)
+        if 'lore' in ca and 'lore' in cb and lore_words(ca['lore']) == lore_words(cb['lore']):
+            ca['lore'] = cb['lore']  # only the glyphs changed (1.12.2-beta: "❤ 4" → "⟦Health⟧ 4"); tooltips are generated
         changed = diff_dicts(ca, cb)
         if changed:
             what = '; '.join('%s: %s → %s' % (k, short(ca.get(k), 60), short(cb.get(k), 60)) for k in changed[:4])
