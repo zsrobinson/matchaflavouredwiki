@@ -9,3 +9,5 @@ __pycache__/
 /dist/
 /.wrangler/
 src/redirects.json
+# tools/generate.py builds here, then swaps it into wiki/generated
+/wiki/generated.tmp/
