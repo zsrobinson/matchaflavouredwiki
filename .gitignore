@@ -11,3 +11,5 @@ __pycache__/
 src/redirects.json
 # tools/generate.py builds here, then swaps it into wiki/generated
 /wiki/generated.tmp/
+# Claude Code agent worktrees
+/.claude/worktrees/
