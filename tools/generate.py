@@ -12,13 +12,15 @@ Outputs (Template namespace unless noted):
   Data/Sources/<item>      loot tables (chests, mobs, fishing, ...) and trades that give it
   Data/Trades/<profession> full trade table per villager profession
   Data/Loot/<table>        drop table for each loot table the pack defines
-  Data/Food table, Data/Renamed items, Data/Trim templates, Data/Enchantments, Data/Advancements/<tab>
+  Data/Food table, Data/Renamed items, Data/Trim templates, Data/Enchantments
+  Data/Advancements/<tab>, Data/Advancements/tabs, Data/Advancements/technical
   Data/Current version, Source/commit
   Module:Inventory slot/Aliases   tag names ("Any Planks") for recipe slots
   Module:Tooltip/Data     each item's in-game tooltip (name colour, lore runs) and glyph widths
   Main/<item>              stub article for every item that has no hand-written page
   Main/<vanilla name>      redirect from each vanilla name to its renamed item
 """
+import html
 import json
 import math
 import os
@@ -74,7 +76,8 @@ def safe(name):
 
 
 def glyphs(s):
-    return re.sub(r'⟦([^⟧]+)⟧', lambda m: '{{G|%s}}' % m.group(1), s)
+    # unnamed glyphs are extracted as their code point (⟦U+E00F⟧); Template:G takes the bare code (E00F)
+    return re.sub(r'⟦(?:U\+)?([^⟧]+)⟧', lambda m: '{{G|%s}}' % m.group(1), s)
 
 
 def esc(s):
@@ -1170,46 +1173,156 @@ def adv_tab(aid):
     return p.split('/')[0]
 
 
+# Advancement-only icons: models or stacks that no item uses, so there is no icon file for them. The
+# table shows the item each one stands for instead.
+ADV_ICON_STANDINS = {'matcha:tutorial/cook_secret_food': 'Steamed Golden Carrots',   # model secret_ingredient
+                     'matcha:tutorial/cook_secret_meal': 'Golden Carrot Cupcake',    # model secret_meal
+                     'matcha:tutorial/preserve_everything': 'Pickled Carrots',       # model pickle_everything
+                     'matcha:tutorial/catch_everything': 'Carp',                     # model gay_fish
+                     'matcha:tutorial/smith_warding_shield': 'Warding Shield'}       # a shield with banner patterns
+# Reward functions in words. None: not a reward for the player (the root's setup is described in prose).
+ADV_FUNCTION_REWARDS = {'matcha:mechanics/heart_container/decrease_minimum_hearts': 'Minimum hearts −1',
+                        'matcha:mechanics/first_dragon_killed_reward': 'a {{ItemLink|Divine Favor}} and a safe [[surface]]',
+                        'matcha:setup/first_load': None}
+# Tabs (folders) in the order and under the section titles of the "Advancements" page; a new tab goes last.
+ADV_TAB_NAMES = {'tutorial': 'Tutorial', 'hell': 'Hell', 'end': 'The End', 'anglers_almanac': "Angler's Almanac"}
+
+
+_EXTRA_ICONS = None
+
+
+def extra_icon(name):
+    """Whether tools/images.py draws an icon for name from tools/extra_textures.txt (Elytra, End Portal
+    Frame...: vanilla items the pack doesn't define)."""
+    global _EXTRA_ICONS
+    if _EXTRA_ICONS is None:
+        path = os.path.join(ROOT, 'tools', 'extra_textures.txt')
+        lines = open(path, encoding='utf-8').read().splitlines() if os.path.exists(path) else []
+        _EXTRA_ICONS = {l.partition('=')[2].strip()[:-4] for l in lines if '=' in l and not l.startswith('#')}
+    return name in _EXTRA_ICONS
+
+
+def adv_icon(a):
+    icon = a.get('icon') or {}
+    name = ADV_ICON_STANDINS.get(a['id']) or icon.get('name', '')
+    if icon.get('model') and a['id'] not in ADV_ICON_STANDINS:  # icon drawn with a custom model: the item that owns it
+        name = next((k for k, it in ITEMS.items() if icon['model'] in it['models']), None) or name
+    return ('{{Slot|%s|link=none}}' % safe(name)) if name and (has_icon(name) or extra_icon(name)) else ''
+
+
+def adv_rewards(a):
+    """The reward cell: loot as "3 {{ItemLink|Obol}}", functions in words (ADV_FUNCTION_REWARDS)."""
+    rw = a.get('rewards') or {}
+    out = []
+    for lid in rw.get('loot') or []:
+        rows = flatten(lid)
+        if rows and all(p == 1.0 and cnt[0] == cnt[1] for _, p, cnt, *_ in rows):
+            out += ['%s %s' % (fmt_num(cnt[0]), il(it, var)) for it, _, cnt, _, _, _, var in rows]
+        else:
+            out.append('<code>%s</code>' % lid)  # a random reward: name the table
+    if rw.get('experience'):
+        out.append('%d XP' % rw['experience'])
+    if rw.get('recipes'):
+        out.append('%d recipe%s' % (len(rw['recipes']), '' if len(rw['recipes']) == 1 else 's'))
+    f = rw.get('function')
+    if f:
+        label = ADV_FUNCTION_REWARDS.get(f, 'runs <code>%s</code>' % f)
+        if label:
+            out.append(label)
+    return '; '.join(out)
+
+
+def adv_tree_order(advs):
+    """Depth-first through a tab's tree, so each branch stays together under its parent. Larger
+    branches (the main progression line) come first, ties by title."""
+    byid = {a['id']: a for a in advs}
+    kids = defaultdict(list)
+    for a in advs:
+        kids[a.get('parent') if a.get('parent') in byid else None].append(a)
+    size = {}
+
+    def count(a):
+        if a['id'] not in size:
+            size[a['id']] = 1 + sum(count(k) for k in kids[a['id']])
+        return size[a['id']]
+    out = []
+
+    def walk(parent):
+        for a in sorted(kids[parent], key=lambda a: (-count(a), a['title'])):
+            out.append(a)
+            walk(a['id'])
+    walk(None)
+    return out
+
+
 def advancement_tables():
+    """Data/Advancements/<tab>: one row per visible advancement, anchored by its title. What the code
+    can't say in words (the actual requirements) is a hand note the page passes by advancement ID."""
     tabs = defaultdict(list)
     for aid, a in ADV.items():
-        if 'title' not in a:
-            continue
-        tabs[adv_tab(aid)].append(a)
+        if 'title' in a:
+            tabs[adv_tab(aid)].append(a)
     pages = {}
     for tab, advs in tabs.items():
-        byid = {a['id']: a for a in advs}
-
-        def depth(a, d=0):
-            p = a.get('parent')
-            return depth(byid[p], d + 1) if p in byid and d < 50 else d
         rows = []
-        for a in sorted(advs, key=lambda a: (depth(a), a['title'])):
-            icon = a.get('icon') or {}
-            iname = safe(icon.get('name', '')) if icon else ''
-            if icon.get('model'):  # icon drawn with a custom model: find the item that owns it
-                owner = next((k for k, it in ITEMS.items() if icon['model'] in it['models']), None)
-                if owner:
-                    iname = safe(owner)
+        for a in adv_tree_order(advs):
             parent = ADV.get(a.get('parent') or '', {}).get('title', '')
-            frame = a.get('frame', 'task')
-            rw = a.get('rewards') or {}
-            rtxt = []
-            if rw.get('loot'):
-                rtxt.append(', '.join('<code>%s</code>' % l for l in rw['loot']))
-            if rw.get('experience'):
-                rtxt.append('%d XP' % rw['experience'])
-            if rw.get('recipes'):
-                rtxt.append('%d recipe(s)' % len(rw['recipes']))
-            if rw.get('function'):
-                rtxt.append('runs <code>%s</code>' % rw['function'])
-            rows.append('|-\n| %s || %s || %s || %s || %s || %s || %s' % (
-                ('{{Slot|%s|link=none}}' % iname) if iname and has_icon(icon.get('name', '')) else '',
-                "'''%s'''" % esc(glyphs(a['title'])), esc(glyphs(a['description']).replace('\n', ' ')), esc(parent), frame.title(),
-                'Yes' if a.get('hidden') else '', '; '.join(rtxt)))
-        pages[tab] = ('<includeonly>{| class="wikitable sortable"\n! Icon !! Advancement !! Description !! Parent !! Frame !! Hidden !! Reward\n' +
-                      '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+            kind = a.get('frame', 'task').title()
+            if not a.get('parent'):
+                kind += ' (root)'
+            elif a.get('hidden'):
+                kind += ' (hidden)'
+            desc = glyphs(esc(a['description'].replace('\n', ' '))).strip()
+            rows.append("|-\n| %s || <span id=\"%s\"></span>'''%s''' || %s || %s || {{{%s|}}} || %s || %s{{{%s reward|}}}" % (
+                adv_icon(a), html.escape(a['title']), glyphs(esc(a['title'])), desc or '—', esc(parent) or '—',
+                a['id'], kind, adv_rewards(a) or '—', a['id']))
+        pages[tab] = ('<includeonly>{| class="wikitable sortable"\n'
+                      '! Icon !! Advancement !! In-game description !! Parent !! Actual requirements !! Type !! Reward\n' +
+                      '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated from the advancement files. The actual '
+                      'requirements are notes passed by advancement ID, and "<ID> reward" is appended to the reward: '
+                      '<code><nowiki>{{Data/Advancements/%s|matcha:%s/root=...}}</nowiki></code>. '
+                      '[[Category:Generated data]]</noinclude>' % (tab, tab))
     return pages
+
+
+def advancement_tabs_table():
+    """Data/Advancements/tabs: the visible tabs with their roots and sizes. "Unlocked by" is a note
+    passed by the root's ID."""
+    rows = []
+    order = list(ADV_TAB_NAMES)
+    roots = [a for a in ADV.values() if 'title' in a and not a.get('parent')]
+    for root in sorted(roots, key=lambda a: (order.index(adv_tab(a['id'])) if adv_tab(a['id']) in order else len(order), a['id'])):
+        tab = adv_tab(root['id'])
+        members = [a for a in ADV.values() if 'title' in a and adv_tab(a['id']) == tab]  # the root counts, as in game
+        hidden = sum(1 for a in members if a.get('hidden'))
+        size = '%d%s' % (len(members), ' (all hidden)' if hidden and hidden == len(members) else
+                         ' (%d hidden)' % hidden if hidden else '')
+        name = ADV_TAB_NAMES.get(tab, tab.replace('_', ' ').capitalize())
+        bg = re.sub(r'_(bottom|top|side|front)$', '', (root.get('background') or '').split('/')[-1])
+        rows.append('|-\n| [[#%s|%s]] || %s %s || %s || {{{%s|}}} || %s' % (
+            name, name, adv_icon(root), esc(root['title']), id_name(bg) if bg else '—', root['id'], size))
+    return ('<includeonly>{| class="wikitable"\n! Tab !! Root !! Background !! Unlocked by !! Advancements\n' +
+            '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. "Unlocked by" is a note passed by the '
+            "root's ID. [[Category:Generated data]]</noinclude>")
+
+
+def technical_advancements_table():
+    """Data/Advancements/technical: advancements without a display (event triggers), counted by
+    folder. Each folder's purpose is a note passed by the folder's ID (matcha:recipe_unlocks)."""
+    groups = defaultdict(int)
+    for aid, a in ADV.items():
+        if 'title' not in a:
+            ns, p = aid.split(':')
+            groups[ns + ':' + p.split('/')[0]] += 1
+    rows = []
+    for g, n in sorted(groups.items(), key=lambda kv: (-kv[1], kv[0])):
+        rows.append('|-\n| <code>%s</code> || %d || {{{%s|}}}' % (g.split(':', 1)[1] if g.startswith('matcha:') else g, n, g))
+    total = sum(groups.values())
+    rows.append("|-\n| '''Total''' || '''%d''' || Of %d advancement files; the other %d are the visible advancements."
+                % (total, len(ADV), len(ADV) - total))
+    return ('<includeonly>{| class="wikitable"\n! Folder !! Files !! Purpose\n' + '\n'.join(rows) +
+            '\n|}</includeonly><noinclude>Generated. Each folder\'s purpose is a note passed by its ID '
+            '(<code>matcha:recipe_unlocks</code>). [[Category:Generated data]]</noinclude>')
 
 
 # ------------------------------------------------------------------ stubs & redirects
@@ -1543,6 +1656,8 @@ def main():
     write('Template', 'Data/Enchantments', enchantment_table())
     for tab, page in advancement_tables().items():
         write('Template', 'Data/Advancements/' + tab, page); n['advancement tabs'] += 1
+    write('Template', 'Data/Advancements/tabs', advancement_tabs_table())
+    write('Template', 'Data/Advancements/technical', technical_advancements_table())
     m = DATA['meta']
     ver = re.search(r'(\d+(?:\.\d+)+)', m['pack_description'].replace('Matcha Flavoured DP', ''))
     write('Template', 'Data/Current version', '<includeonly>%s</includeonly><noinclude>Pack version in <code>pack.mcmeta</code> at the synced commit. Generated.</noinclude>' % (ver.group(1) if ver else '?'))
