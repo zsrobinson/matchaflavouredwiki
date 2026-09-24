@@ -8,7 +8,7 @@ Quartz drops from [[Quartz Deposit|quartz deposits]] (vanilla lapis lazuli ore) 
 
 === Cooking and crafting ===
 {{Recipes}}
-* Blasting [[sand]] in a [[Blast Furnace|blast furnace]] gives 1 quartz in 5 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/quartz.json}}</ref>
+* Blasting [[sand]] in a [[Blast Furnace|blast furnace]] gives 1 quartz in {{Value|Quartz|cook_time|station=Blast Furnace}}.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/quartz.json}}</ref>
 * Any quartz block (block of quartz, quartz bricks, quartz pillar, chiseled quartz block or smooth quartz block) crafts back into 4 quartz.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/quartz_from_quartz_blocks.json}}</ref>
 The vanilla recipes that smelt and blast nether quartz ore are removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Picking up sand or any quartz block unlocks these recipes.
 
@@ -18,7 +18,7 @@ The vanilla recipes that smelt and blast nether quartz ore are removed.<ref>{{So
 == Usage ==
 {{Uses}}
 Besides the vanilla uses (quartz blocks, the [[Electric Comparator|electric comparator]], observers and daylight detectors), quartz is used in:
-* '''Glass''': a [[Mud Kiln|mud kiln]] fires quartz into [[glass]] (5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/glass_from_smoking_quartz.json}}</ref>
+* '''Glass''': a [[Mud Kiln|mud kiln]] fires quartz into [[glass]] ({{Value|Glass|cook_time|station=Mud Kiln}}).<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/glass_from_smoking_quartz.json}}</ref>
 * '''Clocks''': four gold ingots around a quartz, replacing the vanilla recipe's electric wire.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/clock.json}}</ref>
 * '''Diorite''': two cobblestone and two quartz make 4 diorite.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/diorite.json}}</ref>
 

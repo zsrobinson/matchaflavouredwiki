@@ -1,5 +1,5 @@
 {{Infobox auto}}
-The '''hatchet''' is an iron axe with [[Bloodrage]] I, sold by the [[Lumberjack|lumberjack]]. It chops at speed 10, faster than a [[diamond axe]], and hits for {{Hp|9}} at an attack speed of 1, which makes it a strong early weapon as well as a woodcutting tool.
+The '''hatchet''' is an iron axe with [[Bloodrage]] I, sold by the [[Lumberjack|lumberjack]]. It chops at speed {{Value|Hatchet|miningspeed}}, faster than a [[diamond axe]], and hits for {{Value|Hatchet|damage}} at an attack speed of {{Value|Hatchet|attackspeed}}, which makes it a strong early weapon as well as a woodcutting tool.
 
 == Obtaining ==
 === Trading ===
@@ -8,7 +8,7 @@ An expert-level (level 4) lumberjack sells it for one [[Obol|obol]].<ref>{{Sourc
 {{Sources}}
 
 == Usage ==
-It deals 9 damage with an attack speed of 1 and mines axe blocks at speed 10. It keeps the vanilla iron axe's durability (250) and repair material (iron ingots). Its lore uses the old emoji format.
+It deals {{Value|Hatchet|damage|format=raw}} damage with an attack speed of {{Value|Hatchet|attackspeed}} and mines axe blocks at speed {{Value|Hatchet|miningspeed}}. It keeps the vanilla iron axe's durability ({{Value|Hatchet|durability}}) and repair material (iron ingots). Its lore uses the old emoji format.
 
 == References ==
 {{reflist}}

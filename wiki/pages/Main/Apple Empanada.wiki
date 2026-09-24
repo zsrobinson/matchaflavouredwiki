@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-An '''apple empanada''' is the meal of the [[apple]]. It heals {{Hp|8}} and grants {{EffectLink|Regeneration}} for 3 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/apple_empanada.json}}</ref>
+An '''apple empanada''' is the meal of the [[apple]]. It heals {{Value|Apple Empanada|heals}} and grants {{EffectLink|Regeneration}} for {{Value|Apple Empanada|duration|effect=Regeneration}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/apple_empanada.json}}</ref>
 
 == Obtaining ==
 
@@ -12,7 +12,7 @@ A [[Baked Apple|baked apple]], sugar, estus ash and [[dough]]. Obtaining a baked
 == Usage ==
 
 === Food ===
-Eating an apple empanada takes 1.6 seconds, heals {{Hp|8}} and gives Regeneration I for 3:00.
+Eating an apple empanada takes {{Value|Apple Empanada|eat_time}}, heals {{Value|Apple Empanada|heals}} and gives Regeneration {{Value|Apple Empanada|level|effect=Regeneration}} for {{Value|Apple Empanada|duration|effect=Regeneration|format=clock}}.
 
 === Trading ===
 {{Upcoming|type=section}}

@@ -4,7 +4,7 @@
 
 == Obtaining ==
 {{Recipes}}
-Sand, red sand or quartz fired in a mud kiln becomes glass (5 seconds); the vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/glass_from_smoking_sand.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+Sand, red sand or quartz fired in a mud kiln becomes glass ({{Value|Glass|cook_time|station=Mud Kiln}}); the vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/glass_from_smoking_sand.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
 === Other sources ===
 {{Sources}}

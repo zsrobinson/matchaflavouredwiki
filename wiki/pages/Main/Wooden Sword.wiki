@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-A '''wooden sword''' is a [[Weapons#Sword|sword]] of the [[Wooden equipment|wooden]] tier, crafted from two planks and a stick. It keeps vanilla's {{Hp|4}} damage but lasts 200 hits instead of 59.
+A '''wooden sword''' is a [[Weapons#Sword|sword]] of the [[Wooden equipment|wooden]] tier, crafted from two planks and a stick. It keeps vanilla's {{Value|Wooden Sword|damage}} damage but lasts {{Value|Wooden Sword|durability}} hits instead of 59.
 
 == Obtaining ==
 
@@ -12,7 +12,7 @@ A '''wooden sword''' is a [[Weapons#Sword|sword]] of the [[Wooden equipment|wood
 == Usage ==
 
 === Combat ===
-It deals {{Hp|4}} damage at an attack speed of 1.6. A [[copper sword]] adds one more point of damage.
+It deals {{Value|Wooden Sword|damage}} damage at an attack speed of {{Value|Wooden Sword|attackspeed}}. A [[copper sword]] adds one more point of damage.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with planks. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

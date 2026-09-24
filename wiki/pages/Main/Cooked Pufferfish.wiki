@@ -1,14 +1,14 @@
 {{Infobox auto}}
-'''Cooked pufferfish''' is a [[food]] item made by cooking a [[pufferfish]] or a [[Freshwater Puffer|freshwater puffer]]. It heals {{Hp|4}} and grants [[Conduit Power]] for 30 seconds.
+'''Cooked pufferfish''' is a [[food]] item made by cooking a [[pufferfish]] or a [[Freshwater Puffer|freshwater puffer]]. It heals {{Value|Cooked Pufferfish|heals}} and grants [[Conduit Power]] for {{Value|Cooked Pufferfish|duration|effect=Conduit Power}}.
 
 == Obtaining ==
 === Cooking ===
-Cooking takes 5 seconds in an [[Oven]] or on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pufferfish.json}}</ref>
+Cooking takes {{Value|Cooked Pufferfish|cook_time}} in an [[Oven]] or on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pufferfish.json}}</ref>
 {{Recipes}}
 
 == Usage ==
 === Food ===
-Eating it gives a hidden Regeneration III for 48 ticks, which heals {{Hp|4}}, and Conduit Power for 600 ticks (0:30). Unlike raw pufferfish, it doesn't poison.
+Eating it gives a hidden Regeneration III for 48 ticks, which heals {{Value|Cooked Pufferfish|heals}}, and Conduit Power for {{Value|Cooked Pufferfish|duration|effect=Conduit Power|format=ticks}} ticks ({{Value|Cooked Pufferfish|duration|effect=Conduit Power|format=clock}}). Unlike raw pufferfish, it doesn't poison.
 Cooked pufferfish is a cooked cod item underneath, so recipes that take [[Cooked Fish|cooked fish]] also accept it.
 
 == History ==

@@ -2,18 +2,18 @@
 
 {{Infobox auto}}
 
-'''Chocolate''' is the simple preparation of [[Cocoa Beans|cocoa beans]]. It heals {{Hp|2}} and grants {{EffectLink|Haste}} for 30 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/chocolate.json}}</ref>
+'''Chocolate''' is the simple preparation of [[Cocoa Beans|cocoa beans]]. It heals {{Value|Chocolate|heals}} and grants {{EffectLink|Haste}} for {{Value|Chocolate|duration|effect=Haste}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/chocolate.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-Cocoa beans roast into chocolate in an [[oven]] or on [[kindling]] in 5 seconds. Picking up cocoa beans unlocks the recipe.
+Cocoa beans roast into chocolate in an [[oven]] or on [[kindling]] in {{Value|Chocolate|cook_time}}. Picking up cocoa beans unlocks the recipe.
 
 == Usage ==
 
 === Food ===
-Eating chocolate takes 0.8 seconds, heals {{Hp|2}} and gives Haste I for 0:30.
+Eating chocolate takes {{Value|Chocolate|eat_time}}, heals {{Value|Chocolate|heals}} and gives Haste {{Value|Chocolate|level|effect=Haste}} for {{Value|Chocolate|duration|effect=Haste|format=clock}}.
 
 Obtaining chocolate unlocks the [[Chocolate Chip Cookie|chocolate chip cookie]] and the [[brownie]].
 

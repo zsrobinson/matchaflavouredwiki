@@ -15,7 +15,7 @@ The upgrade needs no template, and enchantments on the diamond item carry over; 
 == Usage ==
 
 === Mining ===
-It breaks pickaxe blocks at speed 12 and obsidian, crying obsidian and ender chests at speed 55. It has 3000 durability.
+It breaks pickaxe blocks at speed {{Value|Electrum Pickaxe|miningspeed}} and obsidian, crying obsidian and ender chests at speed 55. It has {{Value|Electrum Pickaxe|durability}} durability.
 
 The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pickaxe blocks.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
 
@@ -25,7 +25,7 @@ The electrum fortune intrinsic ({{G|Fortune}}) works like [[Fortune]] on ores, c
 In 1.12.2 the language file has no name for this intrinsic, so the tooltip shows its translation key, "enchantment.kleispack.electrum_tool III", in yellow instead of the {{G|Fortune}} glyph.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> This does not change how it works.
 
 === Combat ===
-It deals {{Hp|5}} damage at an attack speed of 1.2.
+It deals {{Value|Electrum Pickaxe|damage}} damage at an attack speed of {{Value|Electrum Pickaxe|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

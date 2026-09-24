@@ -2,7 +2,7 @@
 
 {{Infobox auto}}
 
-An '''apple''' is a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Regeneration}}. Eaten raw, it heals {{Hp|2}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/apple.json}}</ref> Cooked into a [[Baked Apple|baked apple]], preserved as [[Canned Apples|canned apples]] or baked into an [[Apple Empanada|apple empanada]], it grants Regeneration for 10 seconds, 1 minute and 3 minutes.
+An '''apple''' is a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Regeneration}}. Eaten raw, it heals {{Value|Apple|heals}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/apple.json}}</ref> Cooked into a [[Baked Apple|baked apple]], preserved as [[Canned Apples|canned apples]] or baked into an [[Apple Empanada|apple empanada]], it grants Regeneration for {{Value|Baked Apple|duration|effect=Regeneration}}, {{Value|Canned Apples|duration|effect=Regeneration}} and {{Value|Apple Empanada|duration|effect=Regeneration}}.
 
 == Obtaining ==
 
@@ -17,7 +17,7 @@ An apple without the pack's tooltip (for example one given by another mod or dat
 == Usage ==
 
 === Food ===
-Eating an apple heals {{Hp|2}}. It keeps its vanilla nutrition, which has no lasting effect because [[hunger]] is removed.
+Eating an apple heals {{Value|Apple|heals}}. It keeps its vanilla nutrition, which has no lasting effect because [[hunger]] is removed.
 
 Picking up an apple unlocks the [[Baked Apple|baked apple]] recipe. Apples are cooked into baked apples before they can be preserved or baked, and are also used raw in [[Golden Apple|golden apple]]s, [[Apple Cinnamon Oatmeal|apple cinnamon oatmeal]] and [[mead]].
 

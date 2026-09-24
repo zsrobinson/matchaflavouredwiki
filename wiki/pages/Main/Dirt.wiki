@@ -5,7 +5,7 @@
 == Obtaining ==
 {{Recipes}}
 * Broken gravel always drops 1 dirt along with 1 flint.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gravel.json}}</ref>
-* Two dirt slabs craft back into dirt, and a grass block cooked in an [[oven]] becomes dirt (5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/oven/dirt_from_smelting_grass_block.json}}</ref>
+* Two dirt slabs craft back into dirt, and a grass block cooked in an [[oven]] becomes dirt ({{Value|Dirt|cook_time|station=Oven}}).<ref>{{Source|MF_datapack/data/matcha/recipe/oven/dirt_from_smelting_grass_block.json}}</ref>
 
 === Trading ===
 The [[Mason]] sells 6 bulk dirt for 1 [[obol]] at the novice level; each unpacks into 64 dirt.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/1/dirt.json}}</ref> See [[Bulk blocks]].

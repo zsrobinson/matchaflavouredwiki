@@ -2,18 +2,18 @@
 
 {{Infobox auto}}
 
-A '''braised mushroom''' is a cooked brown [[mushroom]]. It heals {{Hp|2}}, is eaten quickly and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/braised_brown_mushroom.json}}</ref>
+A '''braised mushroom''' is a cooked brown [[mushroom]]. It heals {{Value|Braised Mushroom|heals}}, is eaten quickly and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/braised_brown_mushroom.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-A brown mushroom cooks into a braised mushroom in an [[oven]] or on [[kindling]] in 5 seconds. Picking up a brown mushroom unlocks the oven recipe.
+A brown mushroom cooks into a braised mushroom in an [[oven]] or on [[kindling]] in {{Value|Braised Mushroom|cook_time}}. Picking up a brown mushroom unlocks the oven recipe.
 
 == Usage ==
 
 === Food ===
-Eating a braised mushroom takes 0.8 seconds and heals {{Hp|2}}.
+Eating a braised mushroom takes {{Value|Braised Mushroom|eat_time}} and heals {{Value|Braised Mushroom|heals}}.
 
 Obtaining a braised mushroom unlocks [[Pickled Mushrooms|pickled mushrooms]] and [[stroganoff]]. It is also used in [[Mushroom Pizza|mushroom pizza]] and [[bokguk]].
 

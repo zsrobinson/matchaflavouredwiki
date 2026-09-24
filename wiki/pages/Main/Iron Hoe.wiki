@@ -15,10 +15,10 @@ An '''iron hoe''' is a [[Tools#Hoe|hoe]] of the [[Iron equipment|iron]] tier, cr
 == Usage ==
 
 === Farming and mining ===
-It breaks hoe blocks at speed 8, two faster than the [[copper hoe]], and has 500 durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+It breaks hoe blocks at speed {{Value|Iron Hoe|miningspeed}}, two faster than the [[copper hoe]], and has {{Value|Iron Hoe|durability}} durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|1}} damage at an attack speed of 3.
+It deals {{Value|Iron Hoe|damage}} damage at an attack speed of {{Value|Iron Hoe|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

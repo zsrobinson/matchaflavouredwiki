@@ -14,7 +14,7 @@ The upgrade needs no template, and enchantments on the diamond item carry over; 
 == Usage ==
 
 === Combat ===
-It deals {{Hp|4}} damage at an attack speed of 4: the item sets a damage bonus but no attack speed, so it keeps the base speed. It has 3000 durability.
+It deals {{Value|Electrum Spear|damage}} damage at an attack speed of 4: the item sets a damage bonus but no attack speed, so it keeps the base speed. It has {{Value|Electrum Spear|durability}} durability.
 
 === Intrinsics ===
 Smite IV, Looting II and [[Warding]] 2. Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>

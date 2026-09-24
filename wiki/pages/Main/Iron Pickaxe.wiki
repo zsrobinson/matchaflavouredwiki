@@ -15,14 +15,14 @@ An '''iron pickaxe''' is a [[Tools#Pickaxe|pickaxe]] of the [[Iron equipment|iro
 == Usage ==
 
 === Mining ===
-The iron pickaxe breaks pickaxe blocks at speed 7, one faster than the [[copper pickaxe]] and the vanilla iron pickaxe, and has 500 durability, twice vanilla's 250.
+The iron pickaxe breaks pickaxe blocks at speed {{Value|Iron Pickaxe|miningspeed}}, one faster than the [[copper pickaxe]] and the vanilla iron pickaxe, and has {{Value|Iron Pickaxe|durability}} durability, twice vanilla's 250.
 
 Obsidian, crying obsidian and ender chests break at speed 3 and drop nothing.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/iron.json}}</ref> A [[steel pickaxe|steel]], [[diamond pickaxe|diamond]], [[electrum pickaxe|electrum]] or [[adamant pickaxe]], or any [[dolabra]], is needed to collect them.
 
 The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pickaxe blocks.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|4}} damage at an attack speed of 1.2.
+It deals {{Value|Iron Pickaxe|damage}} damage at an attack speed of {{Value|Iron Pickaxe|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

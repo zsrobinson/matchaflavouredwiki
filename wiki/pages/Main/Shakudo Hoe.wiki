@@ -14,13 +14,13 @@ The upgrade needs no template. Enchantments on the copper item carry over; where
 == Usage ==
 
 === Farming and mining ===
-It breaks hoe blocks at speed 9 and has 1000 durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+It breaks hoe blocks at speed {{Value|Shakudo Hoe|miningspeed}} and has {{Value|Shakudo Hoe|durability}} durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Intrinsics ===
 Its [[Silk Touch]] intrinsic makes blocks drop themselves. Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 === Combat ===
-It deals {{Hp|1}} damage at an attack speed of 7, because the item adds 3 to the base attack speed of 4.
+It deals {{Hp|1}} damage at an attack speed of {{Value|Shakudo Hoe|attackspeed}}, because the item adds 3 to the base attack speed of 4.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

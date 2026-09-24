@@ -15,10 +15,10 @@ The upgrade needs no template, and enchantments on the diamond item carry over; 
 == Usage ==
 
 === Woodcutting ===
-It breaks axe blocks at speed 15 and has 5000 durability. Logs it cuts drop charcoal. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+It breaks axe blocks at speed {{Value|Adamant Axe|miningspeed}} and has {{Value|Adamant Axe|durability}} durability. Logs it cuts drop charcoal. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|10}} damage at an attack speed of 1, tying the [[steel axe]] for damage with a faster swing. The adamant weapon intrinsic inflicts Weakness II for 8 to 12 seconds on every hit. Weakened mobs are what the [[Doom]] intrinsic of adamant armor detonates.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_weapon.json}}</ref>
+It deals {{Value|Adamant Axe|damage}} damage at an attack speed of {{Value|Adamant Axe|attackspeed}}, tying the [[steel axe]] for damage with a faster swing. The adamant weapon intrinsic inflicts Weakness II for 8 to 12 seconds on every hit. Weakened mobs are what the [[Doom]] intrinsic of adamant armor detonates.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_weapon.json}}</ref>
 
 === Intrinsics ===
 Efficiency II, Unbreaking II, smelting and Weakness. The smelting intrinsic makes mined blocks drop their smelted form where the block's loot table supports it: ores drop ingots or [[silver bullion]], logs drop charcoal, sand drops glass and cobblestone drops stone.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sand.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>

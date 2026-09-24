@@ -14,7 +14,7 @@ This upgrade needs a [[smithing upgrade template]] in the template slot; without
 == Usage ==
 
 === Combat ===
-It deals {{Hp|8}} damage at an attack speed of 0.7 and adds 2 attack knockback. It has 1500 durability, half that of the other steel weapons.
+It deals {{Value|Steel Claymore|damage}} damage at an attack speed of {{Value|Steel Claymore|attackspeed}} and adds 2 attack knockback. It has {{Value|Steel Claymore|durability}} durability, half that of the other steel weapons.
 
 === Blocking ===
 Holding the use button raises the claymore like a shield. It blocks 70% of melee damage and 60% of arrow and mob projectile damage, and loses durability equal to a quarter of the damage it blocks. An axe disables it for twice as long as a shield.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_claymore.json}}</ref> The [[adamant claymore]] blocks more.

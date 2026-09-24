@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-A '''hepatizon axe''' is an [[Tools#Axe|axe]] of the [[Hepatizon equipment|hepatizon]] tier, made by smithing a [[copper axe]] with [[hepatizon alloy]]. It fells trees at speed 20, the fastest of any axe.
+A '''hepatizon axe''' is an [[Tools#Axe|axe]] of the [[Hepatizon equipment|hepatizon]] tier, made by smithing a [[copper axe]] with [[hepatizon alloy]]. It fells trees at speed {{Value|Hepatizon Axe|miningspeed}}, the fastest of any axe.
 
 == Obtaining ==
 
@@ -14,10 +14,10 @@ The upgrade needs no template, and enchantments on the copper item carry over.<r
 == Usage ==
 
 === Woodcutting ===
-It breaks axe blocks at speed 20 and has 1000 durability. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+It breaks axe blocks at speed {{Value|Hepatizon Axe|miningspeed}} and has {{Value|Hepatizon Axe|durability}} durability. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|9}} damage at an attack speed of 1.1. While held in the main hand it adds 0.0055 to movement speed, 5.5% of the player's base speed.
+It deals {{Value|Hepatizon Axe|damage}} damage at an attack speed of {{Value|Hepatizon Axe|attackspeed}}. While held in the main hand it adds 0.0055 to movement speed, 5.5% of the player's base speed.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

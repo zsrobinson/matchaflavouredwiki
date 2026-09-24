@@ -15,10 +15,10 @@ A '''diamond shovel''' is a [[Tools#Shovel|shovel]] of the [[Diamond equipment|d
 == Usage ==
 
 === Digging ===
-It breaks shovel blocks at speed 9 and has 2500 durability; the cheaper [[golden shovel]] digs faster but lasts a seventh as long.
+It breaks shovel blocks at speed {{Value|Diamond Shovel|miningspeed}} and has {{Value|Diamond Shovel|durability}} durability; the cheaper [[golden shovel]] digs faster but lasts a seventh as long.
 
 === Combat ===
-It deals {{Hp|5.5}} damage at an attack speed of 1.
+It deals {{Value|Diamond Shovel|damage}} damage at an attack speed of {{Value|Diamond Shovel|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[diamond]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

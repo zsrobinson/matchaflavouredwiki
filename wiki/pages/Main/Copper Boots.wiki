@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-'''Copper boots''' are [[Armor#Boots|boots]] of the [[Copper equipment|copper]] tier, crafted from four [[copper ingot]]s. They give 1 armor point, the least of any metal boots, and are the base for [[Shakudo Boots|shakudo]] and [[hepatizon boots]].
+'''Copper boots''' are [[Armor#Boots|boots]] of the [[Copper equipment|copper]] tier, crafted from four [[copper ingot]]s. They give {{Value|Copper Boots|armor}} armor point, the least of any metal boots, and are the base for [[Shakudo Boots|shakudo]] and [[hepatizon boots]].
 
 == Obtaining ==
 
@@ -12,7 +12,7 @@
 == Usage ==
 
 === Armor ===
-Copper boots give 1 armor and have 200 durability (vanilla: 143). [[Leather Boots|Leather boots]] give the same armor along with Feather Falling.
+Copper boots give {{Value|Copper Boots|armor}} armor and have {{Value|Copper Boots|durability}} durability (vanilla: 143). [[Leather Boots|Leather boots]] give the same armor along with Feather Falling.
 
 === Warding ===
 Copper armor protects undead from [[Warding]]. While any non-player entity wearing at least one piece of plain copper armor (not shakudo or hepatizon) is within warding range, warding at levels 1 to 3 targets that entity instead, deals no damage and does not slow it. Only level 4 warding, from the full [[Electrum equipment|electrum]] set bonus, pierces this and damages the wearer. [[Warding stone]]s ignore copper armor entirely.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_1.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_4.mcfunction}}</ref>

@@ -2,7 +2,7 @@
 
 {{Spoiler}}
 
-'''Crimson stroganoff''' is the secret meal of the [[Crimson Fungus|crimson fungus]]. It heals {{Hp|12}} and gives {{EffectLink|Weakness}} for 5 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/crimson_stroganoff.json}}</ref>
+'''Crimson stroganoff''' is the secret meal of the [[Crimson Fungus|crimson fungus]]. It heals {{Value|Crimson Stroganoff|heals}} and gives {{EffectLink|Weakness}} for {{Value|Crimson Stroganoff|duration|effect=Weakness}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/crimson_stroganoff.json}}</ref>
 
 == Obtaining ==
 
@@ -13,7 +13,7 @@ Crimson fungus, a [[steak]], dough, a milk bottle and a bowl. The recipe is secr
 == Usage ==
 
 === Food ===
-Eating it takes 1.8 seconds, heals {{Hp|12}} and gives Weakness I for 5:00. Making it grants ''Wait, you can make that?'' The bowl is given back.
+Eating it takes {{Value|Crimson Stroganoff|eat_time}}, heals {{Value|Crimson Stroganoff|heals}} and gives Weakness {{Value|Crimson Stroganoff|level|effect=Weakness}} for {{Value|Crimson Stroganoff|duration|effect=Weakness|format=clock}}. Making it grants ''Wait, you can make that?'' The bowl is given back.
 
 === Trading ===
 {{Upcoming|type=section}}

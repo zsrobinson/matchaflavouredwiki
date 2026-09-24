@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''French toast''' is a filling [[bread]] dish that heals {{Hp|10}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/french_toast.json}}</ref>
+'''French toast''' is a filling [[bread]] dish that heals {{Value|French Toast|heals}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/french_toast.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ An egg, sugar, estus ash and bread (or [[naan]]). Obtaining bread unlocks the re
 == Usage ==
 
 === Food ===
-Eating French toast takes 1.8 seconds and heals {{Hp|10}}.
+Eating French toast takes {{Value|French Toast|eat_time}} and heals {{Value|French Toast|heals}}.
 
 === Trading ===
 {{Upcoming|type=section}}

@@ -2,7 +2,7 @@
 
 {{Infobox auto}}
 
-'''Cheese''' is a food and base [[ingredient]] made from [[Milk Bottle|milk bottle]]s. It heals {{Hp|3}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cheese.json}}</ref> It replaces {{MCW|Cookie|cookies}}.
+'''Cheese''' is a food and base [[ingredient]] made from [[Milk Bottle|milk bottle]]s. It heals {{Value|Cheese|heals}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cheese.json}}</ref> It replaces {{MCW|Cookie|cookies}}.
 
 == Obtaining ==
 
@@ -13,7 +13,7 @@ A milk bottle, sugar and a brown mushroom make 4 cheese. Obtaining a milk bucket
 == Usage ==
 
 === Food ===
-Eating cheese heals {{Hp|3}}.
+Eating cheese heals {{Value|Cheese|heals}}.
 
 Obtaining cheese unlocks the three [[Pizza|pizzas]]. Cheese is also used in [[bruschetta]], [[gnocchi]], [[pupusa]]s, the [[Sweet Berry Danish|sweet berry Danish]] and [[Paneer Curry Stock|paneer curry stock]].
 

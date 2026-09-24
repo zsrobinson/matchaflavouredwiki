@@ -15,10 +15,10 @@ An '''iron axe''' is an [[Tools#Axe|axe]] of the [[Iron equipment|iron]] tier, c
 == Usage ==
 
 === Woodcutting ===
-It breaks axe blocks at speed 7 and has 500 durability. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+It breaks axe blocks at speed {{Value|Iron Axe|miningspeed}} and has {{Value|Iron Axe|durability}} durability. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|9}} damage at an attack speed of 0.9, against 0.8 for the copper axe.
+It deals {{Value|Iron Axe|damage}} damage at an attack speed of {{Value|Iron Axe|attackspeed}}, against 0.8 for the copper axe.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

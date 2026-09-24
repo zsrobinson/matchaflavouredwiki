@@ -8,7 +8,7 @@ A level 3 shepherd sells it for one [[Obol|obol]].<ref>{{Source|MF_datapack/data
 {{Sources}}
 
 == Usage ==
-It deals 2 damage with an attack speed of 4, mines hoe blocks at speed 8, and has 300 durability. In the main hand it adds 2 blocks of entity reach; in the off hand it adds 5. It adds 1 safe fall distance in either hand. Its tooltip claims 5 damage and 3 reach, which do not match the attributes. It is repaired with sticks.
+It deals {{Value|Crook|damage|format=raw}} damage with an attack speed of 4, mines hoe blocks at speed {{Value|Crook|miningspeed}}, and has {{Value|Crook|durability}} durability. In the main hand it adds 2 blocks of entity reach; in the off hand it adds 5. It adds 1 safe fall distance in either hand. Its tooltip claims 5 damage and 3 reach, which do not match the attributes. It is repaired with sticks.
 
 == References ==
 {{reflist}}

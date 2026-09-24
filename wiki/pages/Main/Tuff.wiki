@@ -9,7 +9,7 @@ Tuff generates as in vanilla, and [[Trial Chambers|trial chambers]] are built fr
 === Crafting and smelting ===
 {{Recipes}}
 The pack adds ways to undo tuff's decorative forms:<ref>{{Source|MF_datapack/data/matcha/recipe/blast/tuff_from_blasting_polished_tuff.json}}</ref>
-* A [[Blast Furnace|blast furnace]] turns polished tuff, tuff bricks, chiseled tuff and chiseled tuff bricks back into tuff (5 seconds each).
+* A [[Blast Furnace|blast furnace]] turns polished tuff, tuff bricks, chiseled tuff and chiseled tuff bricks back into tuff ({{Value|Tuff|cook_time|station=Blast Furnace}} each).
 * Two tuff slabs craft back into a block, and a [[stonecutter]] cuts tuff stairs back into tuff.
 
 === Trading ===

@@ -15,13 +15,13 @@ The upgrade needs no template, and enchantments on the diamond item carry over; 
 == Usage ==
 
 === Farming and mining ===
-It breaks hoe blocks at speed 15 and has 5000 durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+It breaks hoe blocks at speed {{Value|Adamant Hoe|miningspeed}} and has {{Value|Adamant Hoe|durability}} durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Intrinsics ===
 Efficiency II, Unbreaking II and smelting. Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 === Combat ===
-It deals {{Hp|1}} damage at an attack speed of 4.
+It deals {{Value|Adamant Hoe|damage}} damage at an attack speed of {{Value|Adamant Hoe|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}} or [[adamant scrap]]. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

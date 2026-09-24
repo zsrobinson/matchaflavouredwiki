@@ -2,7 +2,7 @@
 
 {{Infobox auto}}
 
-'''Chorus fruit''' is a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Levitation}}. Eaten raw, it heals {{Hp|1}} and teleports the player randomly, as in vanilla (the tooltip calls this "Warping").<ref>{{Source|MF_datapack/data/matcha/loot_table/food/chorus_fruit.json}}</ref> Popped in an [[oven]], it gives a short burst of Levitation instead. The developer suggests stocking up on it in [[The End]].<ref>{{Cite video|quote=As soon as they get to the end, they'll make sure they stock up on chorus fruit.}}</ref>
+'''Chorus fruit''' is a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Levitation}}. Eaten raw, it heals {{Value|Chorus Fruit|heals}} and teleports the player randomly, as in vanilla (the tooltip calls this "Warping").<ref>{{Source|MF_datapack/data/matcha/loot_table/food/chorus_fruit.json}}</ref> Popped in an [[oven]], it gives a short burst of Levitation instead. The developer suggests stocking up on it in [[The End]].<ref>{{Cite video|quote=As soon as they get to the end, they'll make sure they stock up on chorus fruit.}}</ref>
 
 == Obtaining ==
 
@@ -14,9 +14,9 @@ Chorus plants drop 0 or 1 of the pack's chorus fruit, as in vanilla.<ref>{{Sourc
 == Usage ==
 
 === Food ===
-Eating chorus fruit heals {{Hp|1}} and teleports the player up to 8 blocks away, like vanilla chorus fruit.
+Eating chorus fruit heals {{Value|Chorus Fruit|heals}} and teleports the player up to 8 blocks away, like vanilla chorus fruit.
 
-Chorus fruit is cooked into [[Popped Chorus Fruit|popped chorus fruit]] (Levitation III, 0:03) in an oven only; kindling can't pop it. Popped chorus fruit makes [[Chorus Mochi|chorus mochi]], whose Levitation XXX for 1 second launches the player upward.
+Chorus fruit is cooked into [[Popped Chorus Fruit|popped chorus fruit]] (Levitation {{Value|Popped Chorus Fruit|level|effect=Levitation}}, {{Value|Popped Chorus Fruit|duration|effect=Levitation|format=clock}}) in an oven only; kindling can't pop it. Popped chorus fruit makes [[Chorus Mochi|chorus mochi]], whose Levitation XXX for {{Value|Chorus Mochi|duration|effect=Levitation}} launches the player upward.
 
 === Crafting ingredient ===
 {{Uses}}

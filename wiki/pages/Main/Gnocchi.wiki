@@ -2,7 +2,7 @@
 
 {{Spoiler}}
 
-'''Gnocchi''' is a secret potato pasta that heals {{Hp|16}}, tied with [[stroganoff]] for the most healing of any crafted meal. It has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gnocchi.json}}</ref>
+'''Gnocchi''' is a secret potato pasta that heals {{Value|Gnocchi|heals}}, tied with [[stroganoff]] for the most healing of any crafted meal. It has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gnocchi.json}}</ref>
 
 == Obtaining ==
 
@@ -13,7 +13,7 @@ A [[Baked Potato|baked potato]], [[cheese]], an egg, [[flour]] and a [[bowl]]. T
 == Usage ==
 
 === Food ===
-Eating gnocchi takes 1.6 seconds and heals {{Hp|16}}. The bowl is given back. Making it grants ''Wait, you can make that?''
+Eating gnocchi takes {{Value|Gnocchi|eat_time}} and heals {{Value|Gnocchi|heals}}. The bowl is given back. Making it grants ''Wait, you can make that?''
 
 === Trading ===
 {{Upcoming|type=section}}

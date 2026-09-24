@@ -2,18 +2,18 @@
 
 {{Infobox auto}}
 
-A '''baked pumpkin''' is the simple preparation of the [[pumpkin]]. It heals {{Hp|2}} and grants {{EffectLink|Resistance}} for 30 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_pumpkin.json}}</ref>
+A '''baked pumpkin''' is the simple preparation of the [[pumpkin]]. It heals {{Value|Baked Pumpkin|heals}} and grants {{EffectLink|Resistance}} for {{Value|Baked Pumpkin|duration|effect=Resistance}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_pumpkin.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-A pumpkin cooks into a baked pumpkin in an [[oven]] or on [[kindling]] in 5 seconds. Picking up a pumpkin unlocks the recipe.
+A pumpkin cooks into a baked pumpkin in an [[oven]] or on [[kindling]] in {{Value|Baked Pumpkin|cook_time}}. Picking up a pumpkin unlocks the recipe.
 
 == Usage ==
 
 === Food ===
-Eating a baked pumpkin takes 1.6 seconds, heals {{Hp|2}} and gives Resistance I for 0:30.
+Eating a baked pumpkin takes {{Value|Baked Pumpkin|eat_time}}, heals {{Value|Baked Pumpkin|heals}} and gives Resistance {{Value|Baked Pumpkin|level|effect=Resistance}} for {{Value|Baked Pumpkin|duration|effect=Resistance|format=clock}}.
 
 Obtaining a baked pumpkin unlocks [[Pumpkin Jam|pumpkin jam]] and the [[Pumpkin Empanada|pumpkin empanada]]. It is also used in [[Pumpkin Curry Stock|pumpkin curry stock]].
 

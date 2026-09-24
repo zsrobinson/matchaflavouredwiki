@@ -15,12 +15,12 @@ An '''iron mattock''' is a [[mattock]] of the [[Iron equipment|iron]] tier, a co
 == Usage ==
 
 === Mining ===
-It breaks shovel and hoe blocks at speed 6, two slower than the [[iron shovel]] or [[iron hoe]], and has 500 durability. It collects snowballs from snow.
+It breaks shovel and hoe blocks at speed {{Value|Iron Mattock|miningspeed}}, two slower than the [[iron shovel]] or [[iron hoe]], and has {{Value|Iron Mattock|durability}} durability. It collects snowballs from snow.
 
 Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|4}} damage with no attack cooldown (attack speed 4): the item sets a damage bonus but no attack speed, so it keeps the base speed. That makes it much stronger in melee than other mattocks.
+It deals {{Value|Iron Mattock|damage}} damage with no attack cooldown (attack speed 4): the item sets a damage bonus but no attack speed, so it keeps the base speed. That makes it much stronger in melee than other mattocks.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

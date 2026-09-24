@@ -4,7 +4,7 @@ A '''brick''' is a fired clay item. In [[Matcha Flavoured]] bricks are an early 
 
 == Obtaining ==
 {{Recipes}}
-A clay ball cooked on [[Kindling|kindling]] or in a [[Mud Kiln|mud kiln]] becomes a brick (5 seconds); the vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref> A block of [[bricks]] crafts back into 2 bricks, and a [[terracotta]] into 4.
+A clay ball cooked on [[Kindling|kindling]] or in a [[Mud Kiln|mud kiln]] becomes a brick ({{Value|Brick|cook_time}}); the vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json}}</ref><ref>{{Source|MF_datapack/pack.mcmeta}}</ref> A block of [[bricks]] crafts back into 2 bricks, and a [[terracotta]] into 4.
 
 === Other sources ===
 {{Sources}}

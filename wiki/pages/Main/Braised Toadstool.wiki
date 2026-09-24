@@ -1,17 +1,17 @@
 {{Infobox auto}}
 
-A '''braised toadstool''' is a cooked red [[mushroom]], the simple preparation of the toadstool. It heals {{Hp|2}} but gives the eater {{EffectLink|Poison}} for 30 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/braised_red_mushroom.json}}</ref>
+A '''braised toadstool''' is a cooked red [[mushroom]], the simple preparation of the toadstool. It heals {{Value|Braised Toadstool|heals}} but gives the eater {{EffectLink|Poison}} for {{Value|Braised Toadstool|duration|effect=Poison}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/braised_red_mushroom.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-A red mushroom cooks into a braised toadstool in an [[oven]] or on [[kindling]] in 5 seconds. Picking up a red mushroom unlocks the oven recipe.
+A red mushroom cooks into a braised toadstool in an [[oven]] or on [[kindling]] in {{Value|Braised Toadstool|cook_time}}. Picking up a red mushroom unlocks the oven recipe.
 
 == Usage ==
 
 === Food ===
-Eating a braised toadstool takes 0.8 seconds, heals {{Hp|2}} and gives Poison I for 0:30.
+Eating a braised toadstool takes {{Value|Braised Toadstool|eat_time}}, heals {{Value|Braised Toadstool|heals}} and gives Poison {{Value|Braised Toadstool|level|effect=Poison}} for {{Value|Braised Toadstool|duration|effect=Poison|format=clock}}.
 
 Obtaining a braised toadstool unlocks [[Pickled Toadstools|pickled toadstools]] and [[Toadstool Stroganoff|toadstool stroganoff]], which are made from raw red mushrooms.
 

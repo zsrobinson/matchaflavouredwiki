@@ -14,7 +14,7 @@ The upgrade needs no template. Enchantments on the iron item carry over; where b
 == Usage ==
 
 === Armor ===
-They give 5 armor, 1 armor toughness and 10% knockback resistance, with 1000 durability. The Blast Protection III is an intrinsic: it is stored on the item and applied when the item enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+They give {{Value|Steel Leggings|armor}} armor, {{Value|Steel Leggings|toughness}} armor toughness and 10% knockback resistance, with {{Value|Steel Leggings|durability}} durability. The Blast Protection III is an intrinsic: it is stored on the item and applied when the item enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 Steel armor has 1000 durability per piece, armor toughness 1 and knockback resistance, and each piece carries [[Blast Protection]]. The full set gives 16 armor, 4 toughness, 50% knockback resistance and Blast Protection totalling 11 levels. The 1.10 release notes advise against wearing it in the [[Abbey]]: "Blast resistance makes the dungeon boring."
 
