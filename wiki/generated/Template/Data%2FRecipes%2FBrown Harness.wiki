@@ -1,12 +1,12 @@
 <includeonly>{| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Brown Harness]] <small>(vanilla recipe)</small>
+| {{MCW|Brown Harness}} <small>(vanilla recipe)</small>
 | 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Brown Wool]]
 | {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Brown Wool|C1=Sturdy Leather|C2=Glass|Output=Brown Harness}}
 |-
-| [[Brown Harness]] <small>(vanilla recipe)</small>
-| [[Brown Dye]] +<br />[[White Harness]] or [[Orange Harness]] or [[Magenta Harness]] or [[Light Blue Harness]] or [[Yellow Harness]] or [[Lime Harness]] or [[Pink Harness]] or [[Gray Harness]] or [[Light Gray Harness]] or [[Cyan Harness]] or [[Purple Harness]] or [[Blue Harness]] or [[Green Harness]] or [[Red Harness]] or [[Black Harness]]
+| {{MCW|Brown Harness}} <small>(vanilla recipe)</small>
+| [[Brown Dye]] +<br />{{MCW|White Harness}} or {{MCW|Orange Harness}} or {{MCW|Magenta Harness}} or {{MCW|Light Blue Harness}} or {{MCW|Yellow Harness}} or {{MCW|Lime Harness}} or {{MCW|Pink Harness}} or {{MCW|Gray Harness}} or {{MCW|Light Gray Harness}} or {{MCW|Cyan Harness}} or {{MCW|Purple Harness}} or {{MCW|Blue Harness}} or {{MCW|Green Harness}} or {{MCW|Red Harness}} or {{MCW|Black Harness}}
 | {{Crafting|A1=Brown Dye|B1=White Harness;Orange Harness;Magenta Harness;Light Blue Harness;Yellow Harness;Lime Harness;Pink Harness;Gray Harness;Light Gray Harness;Cyan Harness;Purple Harness;Blue Harness;Green Harness;Red Harness;Black Harness|Output=Brown Harness|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

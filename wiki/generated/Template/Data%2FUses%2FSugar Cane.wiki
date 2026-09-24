@@ -2,19 +2,19 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Molasses]]
-| [[Sugar Cane]]
+| {{MCW|Sugar Cane}}
 | {{Cooking|station=Kindling|Input=Sugar Cane|Output=Molasses|time=5|note=5 s, 0.01 XP}}
 |-
 | [[Molasses]]
-| [[Sugar Cane]]
+| {{MCW|Sugar Cane}}
 | {{Cooking|station=Oven|Input=Sugar Cane|Output=Molasses|time=5|note=5 s, 0.01 XP}}
 |-
-| [[Paper]] <small>(vanilla recipe)</small>
-| 3 × [[Sugar Cane]]
+| {{MCW|Paper}} <small>(vanilla recipe)</small>
+| 3 × {{MCW|Sugar Cane}}
 | {{Crafting|A1=Sugar Cane|B1=Sugar Cane|C1=Sugar Cane|Output=Paper,3}}
 |-
 | [[Sugar]] <small>(vanilla recipe)</small>
-| [[Sugar Cane]]
+| {{MCW|Sugar Cane}}
 | {{Crafting|A1=Sugar Cane|Output=Sugar|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

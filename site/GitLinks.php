@@ -125,27 +125,28 @@ $wgHooks['SkinAddFooterLinks'][] = static function ( $skin, $key, &$footerItems 
 	if ( $key !== 'info' ) {
 		return;
 	}
-	$tile = static function ( $icon, $label, $value ) {
+	// each tile is one link, so the whole card is clickable
+	$tile = static function ( $icon, $label, $value, $href ) {
 		$url = mfwFileUrl( $icon );
 		$img = $url ? '<img src="' . htmlspecialchars( $url ) . '" width="32" height="32" alt="">' : '';
-		return "<div class=\"mfw-rec\">$img<div><div class=\"mfw-rec-l\">$label</div><div class=\"mfw-rec-v\">$value</div></div></div>";
+		return '<a class="mfw-rec" href="' . htmlspecialchars( $href ) . "\">$img<span><span class=\"mfw-rec-l\">$label</span>" .
+			"<span class=\"mfw-rec-v\">$value</span></span></a>";
 	};
 	$tiles = '';
 	if ( $src && $src[1] !== 'missing' ) {
 		[ $path ] = $src;
-		$tiles .= $tile( 'Book and Quill.png', 'Source file',
-			'<a href="' . htmlspecialchars( mfwGitHubUrl( 'blob', $path ) ) . '"><code>' . htmlspecialchars( $path ) . '</code></a>' );
+		$tiles .= $tile( 'Book and Quill.png', 'Source file', '<code>' . htmlspecialchars( $path ) . '</code>',
+			mfwGitHubUrl( 'blob', $path ) );
 		$tiles .= $tile( 'Clock.png', 'Last edited',
-			'<a class="mfw-lastmod" data-src="' . htmlspecialchars( $path ) . '" href="' .
-			htmlspecialchars( mfwGitHubUrl( 'commits', $path ) ) . '">View history</a>' );
+			'<span class="mfw-lastmod" data-src="' . htmlspecialchars( $path ) . '">View history</span>',
+			mfwGitHubUrl( 'commits', $path ) );
 	}
 	$version = mfwPackVersion();
 	if ( $version ) {
 		$page = \MediaWiki\Title\Title::newFromText( "Matcha Flavoured $version" );
-		$tiles .= $tile( 'Compass.png', 'Describes', 'Matcha Flavoured <a href="' .
-			htmlspecialchars( $page->getLocalURL() ) . '">' . htmlspecialchars( $version ) . '</a>' );
+		$tiles .= $tile( 'Compass.png', 'Describes', 'Matcha Flavoured ' . htmlspecialchars( $version ), $page->getLocalURL() );
 	}
-	$tiles .= $tile( 'Written Book.png', 'Written from', '<a href="' . htmlspecialchars( $about->getLocalURL() ) .
-		'#How_it_is_written">the pack\'s code, release notes and the developer\'s videos only</a>' );
+	$tiles .= $tile( 'Written Book.png', 'Written from', "the pack's code, release notes and the developer's videos only",
+		$about->getLocalURL() . '#How_it_is_written' );
 	$footerItems['mfw-record'] = "<div class=\"mfw-recs\">$tiles</div>";
 };

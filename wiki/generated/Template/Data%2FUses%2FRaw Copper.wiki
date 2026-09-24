@@ -2,27 +2,27 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Copper Ingot]]
-| [[Copper Pickaxe]] or [[Copper Shovel]] or [[Copper Axe]] or [[Copper Hoe]] or [[Copper Sword]] or [[Copper Spear]] or [[Copper Helmet]] or [[Copper Chestplate]] or [[Copper Leggings]] or [[Copper Boots]] or [[Raw Copper]] or [[Copper Horse Armor]] or [[Copper Nautilus Armor]]
+| [[Copper Pickaxe]] or [[Copper Shovel]] or [[Copper Axe]] or [[Copper Hoe]] or [[Copper Sword]] or [[Copper Spear]] or [[Copper Helmet]] or [[Copper Chestplate]] or [[Copper Leggings]] or [[Copper Boots]] or {{MCW|Raw Copper}} or [[Copper Horse Armor]] or [[Copper Nautilus Armor]]
 | {{Cooking|station=Blast Furnace|Input=Copper Pickaxe;Copper Shovel;Copper Axe;Copper Hoe;Copper Sword;Copper Spear;Copper Helmet;Copper Chestplate;Copper Leggings;Copper Boots;Raw Copper;Copper Horse Armor;Copper Nautilus Armor|Output=Copper Ingot|time=5|note=5 s, 0.2 XP}}
 |-
 | [[Green Dye]]
-| [[Potion]] +<br />[[Raw Copper]] +<br />[[Sulfur Chunk]]
+| {{MCW|Potion}} +<br />{{MCW|Raw Copper}} +<br />[[Sulfur Chunk]]
 | {{Crafting|A1=Potion|B1=Raw Copper|C1=Sulfur Chunk|Output=Green Dye,2|shapeless=1}}
 |-
 | [[Malachite]]
-| 2 × [[Calcite]] +<br />2 × [[Raw Copper]]
+| 2 × {{MCW|Calcite}} +<br />2 × {{MCW|Raw Copper}}
 | {{Crafting|A1=Calcite|A2=Raw Copper|B1=Raw Copper|B2=Calcite|Output=Malachite,4}}
 |-
 | [[Copper Ingot]]
-| [[Raw Copper]]
+| {{MCW|Raw Copper}}
 | {{Cooking|station=Mud Kiln|Input=Raw Copper|Output=Copper Ingot|time=10|note=10 s, 0.7 XP}}
 |-
 | [[Copper Ingot]] <small>(vanilla recipe)</small>
-| [[Raw Copper]]
+| {{MCW|Raw Copper}}
 | {{Cooking|station=Blast Furnace|Input=Raw Copper|Output=Copper Ingot|time=5|note=5 s, 0.7 XP}}
 |-
-| [[Block of Raw Copper]] <small>(vanilla recipe)</small>
-| 9 × [[Raw Copper]]
+| {{MCW|Block of Raw Copper}} <small>(vanilla recipe)</small>
+| 9 × {{MCW|Raw Copper}}
 | {{Crafting|A1=Raw Copper|A2=Raw Copper|A3=Raw Copper|B1=Raw Copper|B2=Raw Copper|B3=Raw Copper|C1=Raw Copper|C2=Raw Copper|C3=Raw Copper|Output=Block of Raw Copper}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

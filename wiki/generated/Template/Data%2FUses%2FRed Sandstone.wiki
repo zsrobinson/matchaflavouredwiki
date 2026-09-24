@@ -13,7 +13,7 @@
 | [[Red Sandstone]]
 | {{Cooking|station=Mud Kiln|Input=Red Sandstone|Output=Smooth Red Sandstone|time=5|note=5 s, 0.35 XP}}
 |-
-| [[Chiseled Red Sandstone]] <small>(vanilla recipe)</small>
+| {{MCW|Chiseled Red Sandstone}} <small>(vanilla recipe)</small>
 | [[Red Sandstone]]
 | {{Stonecutter|Input=Red Sandstone|Output=Chiseled Red Sandstone}}
 |-
@@ -25,31 +25,31 @@
 | [[Red Sandstone]]
 | {{Stonecutter|Input=Red Sandstone|Output=Cut Red Sandstone}}
 |-
-| [[Cut Red Sandstone Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Red Sandstone Slab}} <small>(vanilla recipe)</small>
 | [[Red Sandstone]]
 | {{Stonecutter|Input=Red Sandstone|Output=Cut Red Sandstone Slab,2}}
 |-
-| [[Red Sandstone Slab]] <small>(vanilla recipe)</small>
-| 3 × [[Red Sandstone]] or [[Chiseled Red Sandstone]]
+| {{MCW|Red Sandstone Slab}} <small>(vanilla recipe)</small>
+| 3 × [[Red Sandstone]] or {{MCW|Chiseled Red Sandstone}}
 | {{Crafting|A1=Red Sandstone;Chiseled Red Sandstone|B1=Red Sandstone;Chiseled Red Sandstone|C1=Red Sandstone;Chiseled Red Sandstone|Output=Red Sandstone Slab,6}}
 |-
-| [[Red Sandstone Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Red Sandstone Slab}} <small>(vanilla recipe)</small>
 | [[Red Sandstone]]
 | {{Stonecutter|Input=Red Sandstone|Output=Red Sandstone Slab,2}}
 |-
-| [[Red Sandstone Stairs]] <small>(vanilla recipe)</small>
-| 6 × [[Red Sandstone]] or [[Chiseled Red Sandstone]] or [[Cut Red Sandstone]]
+| {{MCW|Red Sandstone Stairs}} <small>(vanilla recipe)</small>
+| 6 × [[Red Sandstone]] or {{MCW|Chiseled Red Sandstone}} or [[Cut Red Sandstone]]
 | {{Crafting|A1=Red Sandstone;Chiseled Red Sandstone;Cut Red Sandstone|A2=Red Sandstone;Chiseled Red Sandstone;Cut Red Sandstone|A3=Red Sandstone;Chiseled Red Sandstone;Cut Red Sandstone|B2=Red Sandstone;Chiseled Red Sandstone;Cut Red Sandstone|B3=Red Sandstone;Chiseled Red Sandstone;Cut Red Sandstone|C3=Red Sandstone;Chiseled Red Sandstone;Cut Red Sandstone|Output=Red Sandstone Stairs,4}}
 |-
-| [[Red Sandstone Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Red Sandstone Stairs}} <small>(vanilla recipe)</small>
 | [[Red Sandstone]]
 | {{Stonecutter|Input=Red Sandstone|Output=Red Sandstone Stairs}}
 |-
-| [[Red Sandstone Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Red Sandstone Wall}} <small>(vanilla recipe)</small>
 | 6 × [[Red Sandstone]]
 | {{Crafting|A1=Red Sandstone|A2=Red Sandstone|B1=Red Sandstone|B2=Red Sandstone|C1=Red Sandstone|C2=Red Sandstone|Output=Red Sandstone Wall,6}}
 |-
-| [[Red Sandstone Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Red Sandstone Wall}} <small>(vanilla recipe)</small>
 | [[Red Sandstone]]
 | {{Stonecutter|Input=Red Sandstone|Output=Red Sandstone Wall}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

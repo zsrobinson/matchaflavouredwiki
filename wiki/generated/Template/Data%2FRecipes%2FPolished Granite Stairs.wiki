@@ -2,7 +2,7 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Polished Granite Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Granite Stairs}} <small>(vanilla recipe)</small>
 | 6 × [[Polished Granite]]
 | {{Crafting|A1=Polished Granite|A2=Polished Granite|A3=Polished Granite|B2=Polished Granite|B3=Polished Granite|C3=Polished Granite|Output=Polished Granite Stairs,4}}
 |}
@@ -10,11 +10,11 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Polished Granite Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Granite Stairs}} <small>(vanilla recipe)</small>
 | [[Granite]]
 | {{Stonecutter|Input=Granite|Output=Polished Granite Stairs}}
 |-
-| [[Polished Granite Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Granite Stairs}} <small>(vanilla recipe)</small>
 | [[Polished Granite]]
 | {{Stonecutter|Input=Polished Granite|Output=Polished Granite Stairs}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

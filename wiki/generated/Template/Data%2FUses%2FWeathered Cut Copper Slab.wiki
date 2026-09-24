@@ -2,14 +2,14 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Oxidized Cut Copper Slab]]
-| [[Weathered Cut Copper Slab]] +<br />[[Potion]]
+| [[Weathered Cut Copper Slab]] +<br />{{MCW|Potion}}
 | {{Crafting|A1=Weathered Cut Copper Slab|B1=Potion|Output=Oxidized Cut Copper Slab|shapeless=1}}
 |-
 | [[Weathered Cut Copper]]
 | 2 × [[Weathered Cut Copper Slab]]
 | {{Crafting|A1=Weathered Cut Copper Slab|B1=Weathered Cut Copper Slab|Output=Weathered Cut Copper|shapeless=1}}
 |-
-| [[Waxed Weathered Cut Copper Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Weathered Cut Copper Slab}} <small>(vanilla recipe)</small>
 | [[Weathered Cut Copper Slab]] +<br />[[Wax]]
 | {{Crafting|A1=Weathered Cut Copper Slab|B1=Wax|Output=Waxed Weathered Cut Copper Slab|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

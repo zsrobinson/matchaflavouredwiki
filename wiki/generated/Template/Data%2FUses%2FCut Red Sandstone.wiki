@@ -1,16 +1,16 @@
 <includeonly>{| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Cut Red Sandstone Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Red Sandstone Slab}} <small>(vanilla recipe)</small>
 | 3 × [[Cut Red Sandstone]]
 | {{Crafting|A1=Cut Red Sandstone|B1=Cut Red Sandstone|C1=Cut Red Sandstone|Output=Cut Red Sandstone Slab,6}}
 |-
-| [[Cut Red Sandstone Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Red Sandstone Slab}} <small>(vanilla recipe)</small>
 | [[Cut Red Sandstone]]
 | {{Stonecutter|Input=Cut Red Sandstone|Output=Cut Red Sandstone Slab,2}}
 |-
-| [[Red Sandstone Stairs]] <small>(vanilla recipe)</small>
-| 6 × [[Red Sandstone]] or [[Chiseled Red Sandstone]] or [[Cut Red Sandstone]]
+| {{MCW|Red Sandstone Stairs}} <small>(vanilla recipe)</small>
+| 6 × [[Red Sandstone]] or {{MCW|Chiseled Red Sandstone}} or [[Cut Red Sandstone]]
 | {{Crafting|A1=Red Sandstone;Chiseled Red Sandstone;Cut Red Sandstone|A2=Red Sandstone;Chiseled Red Sandstone;Cut Red Sandstone|A3=Red Sandstone;Chiseled Red Sandstone;Cut Red Sandstone|B2=Red Sandstone;Chiseled Red Sandstone;Cut Red Sandstone|B3=Red Sandstone;Chiseled Red Sandstone;Cut Red Sandstone|C3=Red Sandstone;Chiseled Red Sandstone;Cut Red Sandstone|Output=Red Sandstone Stairs,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -2,7 +2,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Black Dye]]
-| 2 × [[Charcoal]] or [[Coal]]
+| 2 × [[Charcoal]] or {{MCW|Coal}}
 | {{Crafting|A1=Charcoal;Coal|B1=Charcoal;Coal|Output=Black Dye,4}}
 |-
 | [[Block of Coal]]
@@ -10,11 +10,11 @@
 | {{Crafting|A1=Any Coals|A2=Any Coals|A3=Any Coals|B1=Any Coals|B2=Any Coals|B3=Any Coals|C1=Any Coals|C2=Any Coals|C3=Any Coals|Output=Block of Coal}}
 |-
 | [[Fire Charge]]
-| [[Sulfur Chunk]] +<br />[[Estus Ash]] +<br />[[Coal]] or [[Charcoal]]
+| [[Sulfur Chunk]] +<br />[[Estus Ash]] +<br />{{MCW|Coal}} or [[Charcoal]]
 | {{Crafting|A1=Sulfur Chunk|B1=Estus Ash|C1=Coal;Charcoal|Output=Fire Charge,4|shapeless=1}}
 |-
 | [[Torch]]
-| [[Coal]] or [[Charcoal]] +<br />[[Stick]]
+| {{MCW|Coal}} or [[Charcoal]] +<br />[[Stick]]
 | {{Crafting|A1=Coal;Charcoal|A2=Stick|Output=Torch,8}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

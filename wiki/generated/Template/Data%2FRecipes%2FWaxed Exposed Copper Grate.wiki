@@ -2,11 +2,11 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Waxed Exposed Copper Grate]] <small>(vanilla recipe)</small>
-| 4 × [[Waxed Exposed Copper]]
+| {{MCW|Waxed Exposed Copper Grate}} <small>(vanilla recipe)</small>
+| 4 × {{MCW|Waxed Exposed Copper}}
 | {{Crafting|A2=Waxed Exposed Copper|B1=Waxed Exposed Copper|B3=Waxed Exposed Copper|C2=Waxed Exposed Copper|Output=Waxed Exposed Copper Grate,4}}
 |-
-| [[Waxed Exposed Copper Grate]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Exposed Copper Grate}} <small>(vanilla recipe)</small>
 | [[Exposed Copper Grate]] +<br />[[Wax]]
 | {{Crafting|A1=Exposed Copper Grate|B1=Wax|Output=Waxed Exposed Copper Grate|shapeless=1}}
 |}
@@ -14,8 +14,8 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Waxed Exposed Copper Grate]] <small>(vanilla recipe)</small>
-| [[Waxed Exposed Copper]]
+| {{MCW|Waxed Exposed Copper Grate}} <small>(vanilla recipe)</small>
+| {{MCW|Waxed Exposed Copper}}
 | {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Copper Grate,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

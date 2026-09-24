@@ -29,39 +29,39 @@
 | 7 × [[Diamond]] +<br />[[Coast Armor Trim Smithing Template]] +<br />[[Cobblestone]]
 | {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Coast Armor Trim Smithing Template|B2=Cobblestone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Coast Armor Trim Smithing Template,2}}
 |-
-| [[Cobblestone Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cobblestone Slab}} <small>(vanilla recipe)</small>
 | 3 × [[Cobblestone]]
 | {{Crafting|A1=Cobblestone|B1=Cobblestone|C1=Cobblestone|Output=Cobblestone Slab,6}}
 |-
-| [[Cobblestone Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cobblestone Slab}} <small>(vanilla recipe)</small>
 | [[Cobblestone]]
 | {{Stonecutter|Input=Cobblestone|Output=Cobblestone Slab,2}}
 |-
-| [[Cobblestone Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Cobblestone Stairs}} <small>(vanilla recipe)</small>
 | 6 × [[Cobblestone]]
 | {{Crafting|A1=Cobblestone|A2=Cobblestone|A3=Cobblestone|B2=Cobblestone|B3=Cobblestone|C3=Cobblestone|Output=Cobblestone Stairs,4}}
 |-
-| [[Cobblestone Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Cobblestone Stairs}} <small>(vanilla recipe)</small>
 | [[Cobblestone]]
 | {{Stonecutter|Input=Cobblestone|Output=Cobblestone Stairs}}
 |-
-| [[Cobblestone Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Cobblestone Wall}} <small>(vanilla recipe)</small>
 | 6 × [[Cobblestone]]
 | {{Crafting|A1=Cobblestone|A2=Cobblestone|B1=Cobblestone|B2=Cobblestone|C1=Cobblestone|C2=Cobblestone|Output=Cobblestone Wall,6}}
 |-
-| [[Cobblestone Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Cobblestone Wall}} <small>(vanilla recipe)</small>
 | [[Cobblestone]]
 | {{Stonecutter|Input=Cobblestone|Output=Cobblestone Wall}}
 |-
 | [[Dispenser]] <small>(vanilla recipe)</small>
-| 7 × [[Cobblestone]] +<br />[[Bow]] +<br />[[Electric Wire]]
+| 7 × [[Cobblestone]] +<br />{{MCW|Bow}} +<br />[[Electric Wire]]
 | {{Crafting|A1=Cobblestone|A2=Cobblestone|A3=Cobblestone|B1=Cobblestone|B2=Bow|B3=Electric Wire|C1=Cobblestone|C2=Cobblestone|C3=Cobblestone|Output=Dispenser}}
 |-
 | [[Dropper]] <small>(vanilla recipe)</small>
 | 7 × [[Cobblestone]] +<br />[[Electric Wire]]
 | {{Crafting|A1=Cobblestone|A2=Cobblestone|A3=Cobblestone|B1=Cobblestone|B3=Electric Wire|C1=Cobblestone|C2=Cobblestone|C3=Cobblestone|Output=Dropper}}
 |-
-| [[Lever]] <small>(vanilla recipe)</small>
+| {{MCW|Lever}} <small>(vanilla recipe)</small>
 | [[Stick]] +<br />[[Cobblestone]]
 | {{Crafting|A1=Stick|A2=Cobblestone|Output=Lever}}
 |-
@@ -70,7 +70,7 @@
 | {{Crafting|A1=Cobblestone|B1=Moss Block|Output=Mossy Cobblestone|shapeless=1}}
 |-
 | [[Mossy Cobblestone]] <small>(vanilla recipe)</small>
-| [[Cobblestone]] +<br />[[Vines]]
+| [[Cobblestone]] +<br />{{MCW|Vines}}
 | {{Crafting|A1=Cobblestone|B1=Vines|Output=Mossy Cobblestone|shapeless=1}}
 |-
 | [[Observer]] <small>(vanilla recipe)</small>

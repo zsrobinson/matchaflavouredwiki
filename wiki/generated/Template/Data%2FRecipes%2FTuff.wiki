@@ -3,7 +3,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Tuff]]
-| 2 × [[Tuff Slab]]
+| 2 × {{MCW|Tuff Slab}}
 | {{Crafting|A1=Tuff Slab|B1=Tuff Slab|Output=Tuff|shapeless=1}}
 |}
 '''Blasting'''
@@ -11,11 +11,11 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Tuff]]
-| [[Chiseled Tuff]]
+| {{MCW|Chiseled Tuff}}
 | {{Cooking|station=Blast Furnace|Input=Chiseled Tuff|Output=Tuff|time=5|note=5 s, 1 XP}}
 |-
 | [[Tuff]]
-| [[Chiseled Tuff Bricks]]
+| {{MCW|Chiseled Tuff Bricks}}
 | {{Cooking|station=Blast Furnace|Input=Chiseled Tuff Bricks|Output=Tuff|time=5|note=5 s, 1 XP}}
 |-
 | [[Tuff]]
@@ -31,7 +31,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Tuff]]
-| [[Tuff Stairs]]
+| {{MCW|Tuff Stairs}}
 | {{Stonecutter|Input=Tuff Stairs|Output=Tuff}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

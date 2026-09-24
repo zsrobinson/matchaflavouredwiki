@@ -2,26 +2,26 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Exposed Cut Copper]]
-| [[Cut Copper]] +<br />[[Potion]]
+| [[Cut Copper]] +<br />{{MCW|Potion}}
 | {{Crafting|A1=Cut Copper|B1=Potion|Output=Exposed Cut Copper|shapeless=1}}
 |-
-| [[Chiseled Copper]] <small>(vanilla recipe)</small>
+| {{MCW|Chiseled Copper}} <small>(vanilla recipe)</small>
 | [[Cut Copper]]
 | {{Stonecutter|Input=Cut Copper|Output=Chiseled Copper}}
 |-
-| [[Cut Copper Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Copper Slab}} <small>(vanilla recipe)</small>
 | 3 × [[Cut Copper]]
 | {{Crafting|A1=Cut Copper|B1=Cut Copper|C1=Cut Copper|Output=Cut Copper Slab,6}}
 |-
-| [[Cut Copper Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Copper Slab}} <small>(vanilla recipe)</small>
 | [[Cut Copper]]
 | {{Stonecutter|Input=Cut Copper|Output=Cut Copper Slab,2}}
 |-
-| [[Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Copper Stairs}} <small>(vanilla recipe)</small>
 | 6 × [[Cut Copper]]
 | {{Crafting|A1=Cut Copper|A2=Cut Copper|A3=Cut Copper|B2=Cut Copper|B3=Cut Copper|C3=Cut Copper|Output=Cut Copper Stairs,4}}
 |-
-| [[Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Copper Stairs}} <small>(vanilla recipe)</small>
 | [[Cut Copper]]
 | {{Stonecutter|Input=Cut Copper|Output=Cut Copper Stairs}}
 |-

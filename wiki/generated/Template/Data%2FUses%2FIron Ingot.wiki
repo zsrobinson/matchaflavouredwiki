@@ -77,7 +77,7 @@
 | 4 × [[Iron Ingot]]
 |-
 | [[Mace]]
-| [[Heavy Core]] +<br />[[Stick]] +<br />[[Iron Ingot]]
+| {{MCW|Heavy Core}} +<br />[[Stick]] +<br />[[Iron Ingot]]
 |-
 | [[Minecart]]
 | 5 × [[Iron Ingot]]
@@ -95,13 +95,13 @@
 | 5 × [[Iron Ingot]] +<br />2 × [[Stick]]
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Amethyst Material)]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Amethyst]]
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />{{MCW|Block of Amethyst}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Cinnabar Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Cinnabar]]
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Diamond Material)]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Diamond]]
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />{{MCW|Block of Diamond}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Electrum Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Electrum Alloy]]
@@ -116,7 +116,7 @@
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Iron]]
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Lapis Material)]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Lapis Lazuli]]
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />{{MCW|Block of Lapis Lazuli}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Patina Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Oxidized Copper]]
@@ -125,7 +125,7 @@
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Quartz]]
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Resin Material)]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Resin]]
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />{{MCW|Block of Resin}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Shakudo Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Shakudo Alloy]]
@@ -151,34 +151,34 @@
 | [[Crafter]] <small>(vanilla recipe)</small>
 | 5 × [[Iron Ingot]] +<br />[[Crafting Table]] +<br />2 × [[Electric Wire]] +<br />[[Dropper]]
 |-
-| [[Crossbow]] <small>(vanilla recipe)</small>
-| 3 × [[Stick]] +<br />[[Iron Ingot]] +<br />2 × [[String]] +<br />[[Tripwire Hook]]
+| {{MCW|Crossbow}} <small>(vanilla recipe)</small>
+| 3 × [[Stick]] +<br />[[Iron Ingot]] +<br />2 × [[String]] +<br />{{MCW|Tripwire Hook}}
 |-
-| [[Heavy Weighted Pressure Plate]] <small>(vanilla recipe)</small>
+| {{MCW|Heavy Weighted Pressure Plate}} <small>(vanilla recipe)</small>
 | 2 × [[Iron Ingot]]
 |-
 | [[Block of Iron]] <small>(vanilla recipe)</small>
 | 9 × [[Iron Ingot]]
 |-
-| [[Iron Nugget]] <small>(vanilla recipe)</small>
+| {{MCW|Iron Nugget}} <small>(vanilla recipe)</small>
 | [[Iron Ingot]]
 |-
-| [[Lodestone]] <small>(vanilla recipe)</small>
-| 8 × [[Chiseled Stone Bricks]] +<br />[[Iron Ingot]]
+| {{MCW|Lodestone}} <small>(vanilla recipe)</small>
+| 8 × {{MCW|Chiseled Stone Bricks}} +<br />[[Iron Ingot]]
 |-
 | [[Piston]] <small>(vanilla recipe)</small>
 | 3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span> +<br />4 × [[Cobblestone]] +<br />[[Iron Ingot]] +<br />[[Electric Wire]]
 |-
-| [[Saddle]] <small>(vanilla recipe)</small>
+| {{MCW|Saddle}} <small>(vanilla recipe)</small>
 | 3 × [[Sturdy Leather]] +<br />[[Iron Ingot]]
 |-
-| [[Shield]] <small>(vanilla recipe)</small>
+| {{MCW|Shield}} <small>(vanilla recipe)</small>
 | 6 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />[[Iron Ingot]]
 |-
 | [[Stonecutter]] <small>(vanilla recipe)</small>
 | [[Iron Ingot]] +<br />3 × [[Limestone]]
 |-
-| [[Tripwire Hook]] <small>(vanilla recipe)</small>
+| {{MCW|Tripwire Hook}} <small>(vanilla recipe)</small>
 | [[Iron Ingot]] +<br />[[Stick]] +<br /><span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

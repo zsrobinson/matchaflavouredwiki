@@ -2,7 +2,7 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Polished Blackstone Brick Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Blackstone Brick Slab}} <small>(vanilla recipe)</small>
 | 3 × [[Polished Blackstone Bricks]]
 | {{Crafting|A1=Polished Blackstone Bricks|B1=Polished Blackstone Bricks|C1=Polished Blackstone Bricks|Output=Polished Blackstone Brick Slab,6}}
 |}
@@ -10,15 +10,15 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Polished Blackstone Brick Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Blackstone Brick Slab}} <small>(vanilla recipe)</small>
 | [[Blackstone]]
 | {{Stonecutter|Input=Blackstone|Output=Polished Blackstone Brick Slab,2}}
 |-
-| [[Polished Blackstone Brick Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Blackstone Brick Slab}} <small>(vanilla recipe)</small>
 | [[Polished Blackstone Bricks]]
 | {{Stonecutter|Input=Polished Blackstone Bricks|Output=Polished Blackstone Brick Slab,2}}
 |-
-| [[Polished Blackstone Brick Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Polished Blackstone Brick Slab}} <small>(vanilla recipe)</small>
 | [[Polished Blackstone]]
 | {{Stonecutter|Input=Polished Blackstone|Output=Polished Blackstone Brick Slab,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

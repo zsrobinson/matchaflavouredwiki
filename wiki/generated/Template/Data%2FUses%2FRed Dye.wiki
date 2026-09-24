@@ -2,23 +2,23 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Prayer of Ares]]
-| [[Red Dye]] +<br />[[Iron Sword]] or [[Iron Spear]] +<br />[[Hell-Bound Book]] +<br />[[Shield]] +<br />[[Iron Helmet]]
+| [[Red Dye]] +<br />[[Iron Sword]] or [[Iron Spear]] +<br />[[Hell-Bound Book]] +<br />{{MCW|Shield}} +<br />[[Iron Helmet]]
 | {{Crafting|A2=Iron Sword;Iron Spear|B1=Red Dye|B2=Hell-Bound Book|B3=Iron Helmet|C2=Shield|Output=Prayer of Ares}}
 |-
 | [[Music Disc (C418 - chirp)]]
 | 8 × [[Disc Fragment]] +<br />[[Red Dye]]
 | {{Crafting|A1=Disc Fragment|A2=Disc Fragment|A3=Disc Fragment|B1=Disc Fragment|B2=Red Dye|B3=Disc Fragment|C1=Disc Fragment|C2=Disc Fragment|C3=Disc Fragment|Output=Music Disc (C418 - chirp)}}
 |-
-| [[Red Bed]] <small>(vanilla recipe)</small>
-| [[Red Dye]] +<br />[[White Bed]] or [[Orange Bed]] or [[Magenta Bed]] or [[Light Blue Bed]] or [[Yellow Bed]] or [[Lime Bed]] or [[Pink Bed]] or [[Gray Bed]] or [[Light Gray Bed]] or [[Cyan Bed]] or [[Purple Bed]] or [[Blue Bed]] or [[Brown Bed]] or [[Green Bed]] or [[Black Bed]]
+| {{MCW|Red Bed}} <small>(vanilla recipe)</small>
+| [[Red Dye]] +<br />{{MCW|White Bed}} or {{MCW|Orange Bed}} or {{MCW|Magenta Bed}} or {{MCW|Light Blue Bed}} or {{MCW|Yellow Bed}} or {{MCW|Lime Bed}} or {{MCW|Pink Bed}} or {{MCW|Gray Bed}} or {{MCW|Light Gray Bed}} or {{MCW|Cyan Bed}} or {{MCW|Purple Bed}} or {{MCW|Blue Bed}} or {{MCW|Brown Bed}} or {{MCW|Green Bed}} or {{MCW|Black Bed}}
 | {{Crafting|A1=Red Dye|B1=White Bed;Orange Bed;Magenta Bed;Light Blue Bed;Yellow Bed;Lime Bed;Pink Bed;Gray Bed;Light Gray Bed;Cyan Bed;Purple Bed;Blue Bed;Brown Bed;Green Bed;Black Bed|Output=Red Bed|shapeless=1}}
 |-
 | [[Red Carpet]] <small>(vanilla recipe)</small>
 | [[Red Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Black Carpet]]
 | {{Crafting|A1=Red Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Black Carpet|Output=Red Carpet|shapeless=1}}
 |-
-| [[Red Harness]] <small>(vanilla recipe)</small>
-| [[Red Dye]] +<br />[[White Harness]] or [[Orange Harness]] or [[Magenta Harness]] or [[Light Blue Harness]] or [[Yellow Harness]] or [[Lime Harness]] or [[Pink Harness]] or [[Gray Harness]] or [[Light Gray Harness]] or [[Cyan Harness]] or [[Purple Harness]] or [[Blue Harness]] or [[Brown Harness]] or [[Green Harness]] or [[Black Harness]]
+| {{MCW|Red Harness}} <small>(vanilla recipe)</small>
+| [[Red Dye]] +<br />{{MCW|White Harness}} or {{MCW|Orange Harness}} or {{MCW|Magenta Harness}} or {{MCW|Light Blue Harness}} or {{MCW|Yellow Harness}} or {{MCW|Lime Harness}} or {{MCW|Pink Harness}} or {{MCW|Gray Harness}} or {{MCW|Light Gray Harness}} or {{MCW|Cyan Harness}} or {{MCW|Purple Harness}} or {{MCW|Blue Harness}} or {{MCW|Brown Harness}} or {{MCW|Green Harness}} or {{MCW|Black Harness}}
 | {{Crafting|A1=Red Dye|B1=White Harness;Orange Harness;Magenta Harness;Light Blue Harness;Yellow Harness;Lime Harness;Pink Harness;Gray Harness;Light Gray Harness;Cyan Harness;Purple Harness;Blue Harness;Brown Harness;Green Harness;Black Harness|Output=Red Harness|shapeless=1}}
 |-
 | [[Red Wool]] <small>(vanilla recipe)</small>
@@ -45,15 +45,15 @@
 | [[Blue Dye]] +<br />[[Red Dye]]
 | {{Crafting|A1=Blue Dye|B1=Red Dye|Output=Purple Dye,2|shapeless=1}}
 |-
-| [[Red Candle]] <small>(vanilla recipe)</small>
-| [[Candle]] +<br />[[Red Dye]]
+| {{MCW|Red Candle}} <small>(vanilla recipe)</small>
+| {{MCW|Candle}} +<br />[[Red Dye]]
 | {{Crafting|A1=Candle|B1=Red Dye|Output=Red Candle|shapeless=1}}
 |-
-| [[Red Concrete Powder]] <small>(vanilla recipe)</small>
+| {{MCW|Red Concrete Powder}} <small>(vanilla recipe)</small>
 | [[Red Dye]] +<br />4 × [[Sand]] +<br />4 × [[Gravel]]
 | {{Crafting|A1=Red Dye|B1=Sand|C1=Sand|A2=Sand|B2=Sand|C2=Gravel|A3=Gravel|B3=Gravel|C3=Gravel|Output=Red Concrete Powder,8|shapeless=1}}
 |-
-| [[Red Stained Glass]] <small>(vanilla recipe)</small>
+| {{MCW|Red Stained Glass}} <small>(vanilla recipe)</small>
 | 8 × [[Glass]] +<br />[[Red Dye]]
 | {{Crafting|A1=Glass|A2=Glass|A3=Glass|B1=Glass|B2=Red Dye|B3=Glass|C1=Glass|C2=Glass|C3=Glass|Output=Red Stained Glass,8}}
 |-
@@ -61,7 +61,7 @@
 | 8 × [[Glass Pane]] +<br />[[Red Dye]]
 | {{Crafting|A1=Glass Pane|A2=Glass Pane|A3=Glass Pane|B1=Glass Pane|B2=Red Dye|B3=Glass Pane|C1=Glass Pane|C2=Glass Pane|C3=Glass Pane|Output=Red Stained Glass Pane,8}}
 |-
-| [[Red Terracotta]] <small>(vanilla recipe)</small>
+| {{MCW|Red Terracotta}} <small>(vanilla recipe)</small>
 | 8 × [[Terracotta]] +<br />[[Red Dye]]
 | {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Red Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Red Terracotta,8}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

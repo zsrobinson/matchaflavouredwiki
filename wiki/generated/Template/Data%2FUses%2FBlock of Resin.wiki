@@ -2,15 +2,15 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Resin Material)]]
-| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Resin]]
+| 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />{{MCW|Block of Resin}}
 | {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Resin|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Resin Material)}}
 |-
-| [[Creaking Heart]] <small>(vanilla recipe)</small>
-| 2 × [[Pale Oak Log]] +<br />[[Block of Resin]]
+| {{MCW|Creaking Heart}} <small>(vanilla recipe)</small>
+| 2 × [[Pale Oak Log]] +<br />{{MCW|Block of Resin}}
 | {{Crafting|B1=Pale Oak Log|B2=Block of Resin|B3=Pale Oak Log|Output=Creaking Heart}}
 |-
-| [[Resin Clump]] <small>(vanilla recipe)</small>
-| [[Block of Resin]]
+| {{MCW|Resin Clump}} <small>(vanilla recipe)</small>
+| {{MCW|Block of Resin}}
 | {{Crafting|A1=Block of Resin|Output=Resin Clump,9|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

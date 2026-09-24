@@ -2,15 +2,15 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Sandstone Slab]] <small>(vanilla recipe)</small>
-| 3 × [[Sandstone]] or [[Chiseled Sandstone]]
+| {{MCW|Sandstone Slab}} <small>(vanilla recipe)</small>
+| 3 × [[Sandstone]] or {{MCW|Chiseled Sandstone}}
 | {{Crafting|A1=Sandstone;Chiseled Sandstone|B1=Sandstone;Chiseled Sandstone|C1=Sandstone;Chiseled Sandstone|Output=Sandstone Slab,6}}
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Sandstone Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Sandstone Slab}} <small>(vanilla recipe)</small>
 | [[Sandstone]]
 | {{Stonecutter|Input=Sandstone|Output=Sandstone Slab,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

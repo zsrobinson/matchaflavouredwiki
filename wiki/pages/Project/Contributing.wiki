@@ -3,6 +3,8 @@ The '''Matcha Flavoured Wiki''' mostly looks after itself. Its articles are gene
 == Reporting a problem ==
 The '''Talk''' tab at the top of every page opens a short form on GitHub about that page, with the page already filled in. Say what is wrong or missing and, if you can, where the pack shows it: a file in the pack, a release note or one of the developer's videos. The wiki uses only those sources, so pointing to one is what makes a fix possible. You need a GitHub account.
 
+The daily update reads new reports. If the pack's files settle it and the fix is small, it's made in the next update and the report closes. Anything else is marked for a person to look at.
+
 == Suggesting a change ==
 If you'd rather make the fix yourself, send a pull request:
 * '''Edit''' opens the page's source file in GitHub's editor. Make your change and choose ''Propose changes''. GitHub forks the repository for you and opens a pull request.

@@ -2,15 +2,15 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Quartz Slab]] <small>(vanilla recipe)</small>
-| 3 × [[Chiseled Quartz Block]] or [[Block of Quartz]] or [[Quartz Pillar]]
+| {{MCW|Quartz Slab}} <small>(vanilla recipe)</small>
+| 3 × {{MCW|Chiseled Quartz Block}} or [[Block of Quartz]] or {{MCW|Quartz Pillar}}
 | {{Crafting|A1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|B1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|C1=Chiseled Quartz Block;Block of Quartz;Quartz Pillar|Output=Quartz Slab,6}}
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Quartz Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Quartz Slab}} <small>(vanilla recipe)</small>
 | [[Block of Quartz]]
 | {{Stonecutter|Input=Block of Quartz|Output=Quartz Slab,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

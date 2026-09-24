@@ -2,15 +2,15 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Cut Copper]]
-| 2 × [[Cut Copper Slab]]
+| 2 × {{MCW|Cut Copper Slab}}
 | {{Crafting|A1=Cut Copper Slab|B1=Cut Copper Slab|Output=Cut Copper|shapeless=1}}
 |-
 | [[Exposed Cut Copper Slab]]
-| [[Cut Copper Slab]] +<br />[[Potion]]
+| {{MCW|Cut Copper Slab}} +<br />{{MCW|Potion}}
 | {{Crafting|A1=Cut Copper Slab|B1=Potion|Output=Exposed Cut Copper Slab|shapeless=1}}
 |-
-| [[Waxed Cut Copper Slab]] <small>(vanilla recipe)</small>
-| [[Cut Copper Slab]] +<br />[[Wax]]
+| {{MCW|Waxed Cut Copper Slab}} <small>(vanilla recipe)</small>
+| {{MCW|Cut Copper Slab}} +<br />[[Wax]]
 | {{Crafting|A1=Cut Copper Slab|B1=Wax|Output=Waxed Cut Copper Slab|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

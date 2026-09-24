@@ -1,8 +1,8 @@
 <includeonly>{| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Book and Quill]] <small>(vanilla recipe)</small>
-| [[Book]] +<br />[[Ink Sac]] +<br />[[Feather]]
+| {{MCW|Book and Quill}} <small>(vanilla recipe)</small>
+| {{MCW|Book}} +<br />{{MCW|Ink Sac}} +<br />{{MCW|Feather}}
 | {{Crafting|A1=Book|B1=Ink Sac|C1=Feather|Output=Book and Quill|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

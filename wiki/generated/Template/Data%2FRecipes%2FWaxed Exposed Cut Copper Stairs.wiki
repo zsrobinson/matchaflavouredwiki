@@ -2,11 +2,11 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Waxed Exposed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Exposed Cut Copper Stairs}} <small>(vanilla recipe)</small>
 | 6 × [[Waxed Exposed Cut Copper]]
 | {{Crafting|A1=Waxed Exposed Cut Copper|A2=Waxed Exposed Cut Copper|A3=Waxed Exposed Cut Copper|B2=Waxed Exposed Cut Copper|B3=Waxed Exposed Cut Copper|C3=Waxed Exposed Cut Copper|Output=Waxed Exposed Cut Copper Stairs,4}}
 |-
-| [[Waxed Exposed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Exposed Cut Copper Stairs}} <small>(vanilla recipe)</small>
 | [[Exposed Cut Copper Stairs]] +<br />[[Wax]]
 | {{Crafting|A1=Exposed Cut Copper Stairs|B1=Wax|Output=Waxed Exposed Cut Copper Stairs|shapeless=1}}
 |}
@@ -14,11 +14,11 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Waxed Exposed Cut Copper Stairs]] <small>(vanilla recipe)</small>
-| [[Waxed Exposed Copper]]
+| {{MCW|Waxed Exposed Cut Copper Stairs}} <small>(vanilla recipe)</small>
+| {{MCW|Waxed Exposed Copper}}
 | {{Stonecutter|Input=Waxed Exposed Copper|Output=Waxed Exposed Cut Copper Stairs,4}}
 |-
-| [[Waxed Exposed Cut Copper Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Waxed Exposed Cut Copper Stairs}} <small>(vanilla recipe)</small>
 | [[Waxed Exposed Cut Copper]]
 | {{Stonecutter|Input=Waxed Exposed Cut Copper|Output=Waxed Exposed Cut Copper Stairs}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

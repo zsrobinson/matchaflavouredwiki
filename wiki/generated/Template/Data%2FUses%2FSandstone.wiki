@@ -13,7 +13,7 @@
 | [[Sandstone]]
 | {{Cooking|station=Mud Kiln|Input=Sandstone|Output=Smooth Sandstone|time=5|note=5 s, 0.35 XP}}
 |-
-| [[Chiseled Sandstone]] <small>(vanilla recipe)</small>
+| {{MCW|Chiseled Sandstone}} <small>(vanilla recipe)</small>
 | [[Sandstone]]
 | {{Stonecutter|Input=Sandstone|Output=Chiseled Sandstone}}
 |-
@@ -25,7 +25,7 @@
 | [[Sandstone]]
 | {{Stonecutter|Input=Sandstone|Output=Cut Sandstone}}
 |-
-| [[Cut Sandstone Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Cut Sandstone Slab}} <small>(vanilla recipe)</small>
 | [[Sandstone]]
 | {{Stonecutter|Input=Sandstone|Output=Cut Sandstone Slab,2}}
 |-
@@ -33,27 +33,27 @@
 | 7 × [[Diamond]] +<br />[[Dune Armor Trim Smithing Template]] +<br />[[Sandstone]]
 | {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Dune Armor Trim Smithing Template|B2=Sandstone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Dune Armor Trim Smithing Template,2}}
 |-
-| [[Sandstone Slab]] <small>(vanilla recipe)</small>
-| 3 × [[Sandstone]] or [[Chiseled Sandstone]]
+| {{MCW|Sandstone Slab}} <small>(vanilla recipe)</small>
+| 3 × [[Sandstone]] or {{MCW|Chiseled Sandstone}}
 | {{Crafting|A1=Sandstone;Chiseled Sandstone|B1=Sandstone;Chiseled Sandstone|C1=Sandstone;Chiseled Sandstone|Output=Sandstone Slab,6}}
 |-
-| [[Sandstone Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Sandstone Slab}} <small>(vanilla recipe)</small>
 | [[Sandstone]]
 | {{Stonecutter|Input=Sandstone|Output=Sandstone Slab,2}}
 |-
-| [[Sandstone Stairs]] <small>(vanilla recipe)</small>
-| 6 × [[Sandstone]] or [[Chiseled Sandstone]] or [[Cut Sandstone]]
+| {{MCW|Sandstone Stairs}} <small>(vanilla recipe)</small>
+| 6 × [[Sandstone]] or {{MCW|Chiseled Sandstone}} or [[Cut Sandstone]]
 | {{Crafting|A1=Sandstone;Chiseled Sandstone;Cut Sandstone|A2=Sandstone;Chiseled Sandstone;Cut Sandstone|A3=Sandstone;Chiseled Sandstone;Cut Sandstone|B2=Sandstone;Chiseled Sandstone;Cut Sandstone|B3=Sandstone;Chiseled Sandstone;Cut Sandstone|C3=Sandstone;Chiseled Sandstone;Cut Sandstone|Output=Sandstone Stairs,4}}
 |-
-| [[Sandstone Stairs]] <small>(vanilla recipe)</small>
+| {{MCW|Sandstone Stairs}} <small>(vanilla recipe)</small>
 | [[Sandstone]]
 | {{Stonecutter|Input=Sandstone|Output=Sandstone Stairs}}
 |-
-| [[Sandstone Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Sandstone Wall}} <small>(vanilla recipe)</small>
 | 6 × [[Sandstone]]
 | {{Crafting|A1=Sandstone|A2=Sandstone|B1=Sandstone|B2=Sandstone|C1=Sandstone|C2=Sandstone|Output=Sandstone Wall,6}}
 |-
-| [[Sandstone Wall]] <small>(vanilla recipe)</small>
+| {{MCW|Sandstone Wall}} <small>(vanilla recipe)</small>
 | [[Sandstone]]
 | {{Stonecutter|Input=Sandstone|Output=Sandstone Wall}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

@@ -2,7 +2,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Mossy Stone Bricks]]
-| 2 × [[Mossy Stone Brick Slab]]
+| 2 × {{MCW|Mossy Stone Brick Slab}}
 | {{Crafting|A1=Mossy Stone Brick Slab|B1=Mossy Stone Brick Slab|Output=Mossy Stone Bricks|shapeless=1}}
 |-
 | [[Mossy Stone Bricks]] <small>(vanilla recipe)</small>
@@ -10,7 +10,7 @@
 | {{Crafting|A1=Stone Bricks|B1=Moss Block|Output=Mossy Stone Bricks|shapeless=1}}
 |-
 | [[Mossy Stone Bricks]] <small>(vanilla recipe)</small>
-| [[Stone Bricks]] +<br />[[Vines]]
+| [[Stone Bricks]] +<br />{{MCW|Vines}}
 | {{Crafting|A1=Stone Bricks|B1=Vines|Output=Mossy Stone Bricks|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>
