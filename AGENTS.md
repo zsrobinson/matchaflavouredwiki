@@ -142,6 +142,9 @@ the swap mid-way.
   add an entry and run the tool. The drawing code is `tools/render/` (deepslate for blocks, three.js
   for mobs, in headless Chromium). It finds a Chromium in Playwright's cache, `$MFW_CHROMIUM`,
   `$CHROME_BIN` or the usual Chrome install paths.
+  - **Every render is true isometric,** like the icons and minecraft.wiki's renders: yaw 45° (plus quarter
+    turns) and pitch atan(1/√2) ≈ 35.26°, fixed in `tools/render/src/camera.js`. An entry's `camera` only
+    takes `yaw` (45, 135, 225, 315) to pick the corner; anything else fails the render. Mobs face left.
   - Which pages get one is decided by the rules in `wiki/STYLE.md` ("Pictures"), not case by case:
     structures, mobs and villager professions, and armor sets. `render.py --audit` (a failing check
     in CI) lists every page or pack template the rules cover that has no picture; each gap gets a

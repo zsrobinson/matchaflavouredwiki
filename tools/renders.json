@@ -1,5 +1,5 @@
 {
- "_readme": "Renders drawn by tools/render.py from the pack's files into wiki/renders/<name>.png (File:<name>.png on the wiki). Structure: template (one, or a list stacked like a list pool element) or jigsaw (a whole structure; seed picks the layout), processors (default: those of the pool that places the template), cut (layers removed from the top; for jigsaw {pools: regex, layers}), biome (grass, foliage and water tints), ground, camera {yaw, pitch}. Entity: layers [{model, texture, emissive}] on the game's own models (a layer of tools/render/src/entity_models.json: 'zombie' is minecraft:zombie#main, 'stray#outer' an overlay), villager {type, profession, level} (the villager's texture layers, as the game stacks them), pose (tools/render/src/models.js), equipment {asset, model, slots}, camera {yaw, pitch}. width is the final width in pixels. skip: pages (by title) and templates (template:<id>) the picture rules in wiki/STYLE.md ask for but that don't get a picture, each with the reason; python3 tools/render.py --audit lists anything neither rendered nor skipped.",
+ "_readme": "Renders drawn by tools/render.py from the pack's files into wiki/renders/<name>.png (File:<name>.png on the wiki). Structure: template (one, or a list stacked like a list pool element) or jigsaw (a whole structure; seed picks the layout), processors (default: those of the pool that places the template), cut (layers removed from the top; for jigsaw {pools: regex, layers}), biome (grass, foliage and water tints), ground, camera {yaw}. Entity: layers [{model, texture, emissive}] on the game's own models (a layer of tools/render/src/entity_models.json: 'zombie' is minecraft:zombie#main, 'stray#outer' an overlay), villager {type, profession, level} (the villager's texture layers, as the game stacks them), pose (tools/render/src/models.js), equipment {asset, model, slots}, camera {yaw}. Every render is isometric (tools/render/src/camera.js): camera.yaw only picks the corner it is seen from (45, the default, 135, 225 or 315). width is the final width in pixels. skip: pages (by title) and templates (template:<id>) the picture rules in wiki/STYLE.md ask for but that don't get a picture, each with the reason; python3 tools/render.py --audit lists anything neither rendered nor skipped.",
  "renders": {
   "Abbey isometric view": {
    "kind": "structure",
@@ -10,9 +10,6 @@
     "layers": 3
    },
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 35
-   },
    "width": 900
   },
   "Abbey tower": {
@@ -27,9 +24,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 300
   },
   "Abbey room Tutorial": {
@@ -38,9 +32,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 300
   },
   "Abbey room Waterfall": {
@@ -49,9 +40,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 300
   },
   "Abbey room Quad spawn walkways": {
@@ -60,9 +48,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 300
   },
   "Abbey room Spider triple walkway": {
@@ -71,9 +56,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 300
   },
   "Abbey room Drawbridge": {
@@ -82,9 +64,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 300
   },
   "Abbey room Water and lava": {
@@ -93,9 +72,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 300
   },
   "Abbey room Hallway pitfall": {
@@ -104,9 +80,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 300
   },
   "Abbey room Lantern drop": {
@@ -115,9 +88,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 300
   },
   "Abbey room Decision puzzle": {
@@ -126,9 +96,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 300
   },
   "Abbey room Bath": {
@@ -137,9 +104,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 300
   },
   "Abbey room Jump puzzle": {
@@ -148,9 +112,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 300
   },
   "Papal Outpost watchtower": {
@@ -211,9 +172,6 @@
    "biome": "minecraft:plains",
    "ground": {
     "block": "minecraft:grass_block"
-   },
-   "camera": {
-    "pitch": 40
    },
    "width": 900
   },
@@ -482,9 +440,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 200
   },
   "Abbey room Boon vault": {
@@ -493,9 +448,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 200
   },
   "Abbey room Boon heart": {
@@ -504,9 +456,6 @@
    "processors": "minecraft:abbey_dungeon",
    "cut": 3,
    "biome": "minecraft:forest",
-   "camera": {
-    "pitch": 45
-   },
    "width": 200
   },
   "Papal Outpost feature plate": {
@@ -526,8 +475,7 @@
    "cut": 2,
    "biome": "minecraft:snowy_plains",
    "camera": {
-    "yaw": 225,
-    "pitch": 45
+    "yaw": 225
    },
    "width": 300
   },
@@ -536,9 +484,6 @@
    "template": "minecraft:woodland_mansion/1x1_as2",
    "cut": 1,
    "biome": "minecraft:dark_forest",
-   "camera": {
-    "pitch": 60
-   },
    "width": 260
   },
   "Witch render": {
