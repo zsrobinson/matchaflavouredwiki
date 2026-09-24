@@ -170,3 +170,6 @@ $wgHooks['BeforePageDisplay'][] = static function ( $out, $skin ) {
 
 # Links from every page to its source file on GitHub (see site/GitLinks.php)
 require_once __DIR__ . "/GitLinks.php";
+
+# Spoiler scopes for the "hide spoilers" toggle (see site/Spoilers.php)
+require_once __DIR__ . "/Spoilers.php";

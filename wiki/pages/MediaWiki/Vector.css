@@ -32,13 +32,35 @@ body.wgl-theme-dark #footer-icons { filter: none; }
 #footer-icons a { background: none; padding: 0; }
 #footer-icons img { image-rendering: pixelated; }
 
+/* Reader toggles beside dark mode (MediaWiki:Gadget-mfwShell.js): fixed width and hide spoilers.
+   Drawn like minecraft.wiki's: OOUI's icons in the moon's grey, at its 14px size. Each shows what a
+   click does, as minecraft.wiki's width toggle does (full width shows "exit full screen"). */
+#p-personal .mfw-pref-toggle a { width: 14px; height: 14px; background: center / 14px 14px no-repeat; display: block; margin-bottom: -6px; }
+#p-personal #pt-fw-toggle a { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%23939392'%3E%3Cpath d='M7 7V1H5v4H1v2zM5 19h2v-6H1v2h4zm10-4h4v-2h-6v6h2zm0-8h4V5h-4V1h-2v6z'/%3E%3C/svg%3E"); }
+html.mfw-fixed-width #p-personal #pt-fw-toggle a { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%23939392'%3E%3Cpath d='M1 1v6h2V3h4V1zm2 12H1v6h6v-2H3zm14 4h-4v2h6v-6h-2zm0-16h-4v2h4v4h2V1z'/%3E%3C/svg%3E"); }
+#p-personal #pt-sp-toggle a { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%23939392'%3E%3Cpath d='M12.49 9.94A2.5 2.5 0 0 0 10 7.5z'/%3E%3Cpath d='M8.2 5.9a4.4 4.4 0 0 1 1.8-.4 4.5 4.5 0 0 1 4.5 4.5 4.3 4.3 0 0 1-.29 1.55L17 14.14A14 14 0 0 0 20 10s-3-7-10-7a9.6 9.6 0 0 0-4 .85zM2 2 1 3l2.55 2.4A13.9 13.9 0 0 0 0 10s3 7 10 7a9.7 9.7 0 0 0 4.64-1.16L18 19l1-1zm8 12.5A4.5 4.5 0 0 1 5.5 10a4.45 4.45 0 0 1 .6-2.2l1.53 1.44a2.5 2.5 0 0 0-.13.76 2.49 2.49 0 0 0 3.41 2.32l1.54 1.45a4.47 4.47 0 0 1-2.45.73'/%3E%3C/svg%3E"); }
+html.mfw-hide-spoilers #p-personal #pt-sp-toggle a { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%23939392'%3E%3Cpath d='M10 14.5a4.5 4.5 0 1 1 4.5-4.5 4.5 4.5 0 0 1-4.5 4.5M10 3C3 3 0 10 0 10s3 7 10 7 10-7 10-7-3-7-10-7'/%3E%3Ccircle cx='10' cy='10' r='2.5'/%3E%3C/svg%3E"); }
+/* the width only changes on screens wider than the fixed width, so the toggle only shows there */
+@media screen and (max-width: 1199px) { #pt-fw-toggle { display: none; } }
+
+/* Fixed width: minecraft.wiki's fixedWidth gadget, on screens wider than 1200px */
+@media screen and (min-width: 1200px) {
+	html.mfw-fixed-width { --fixed-width: 1200px; }
+	html.mfw-fixed-width body { max-width: var(--fixed-width); margin: auto; }
+	html.mfw-fixed-width #mw-head { max-width: var(--fixed-width); right: unset; }
+	html.mfw-fixed-width #mw-panel { left: unset; }
+	html.mfw-fixed-width .vector-search-box-inner,
+	html.mfw-fixed-width #p-search #searchform .cdx-search-input__input-wrapper { width: min(20vw, calc(var(--fixed-width) / 5)); }
+	html.mfw-fixed-width div#mw-page-base::after { position: relative; display: block; width: 0; right: calc(16px - min(100%, var(--fixed-width))); }
+}
+
 /* ===== Phones: minecraft.wiki's mobile site (its Minerva skin) on the same pages =====
  * Up to 720px, where minecraft.wiki's own Vector CSS stops being a desktop layout: a sky-and-grass
  * header with menu and search buttons, the sidebar as a menu drawer, icon page actions beside the
  * title, collapsible sections, recipe screens under their ingredients and a stone footer. The header,
  * drawer and sections are built by MediaWiki:Gadget-mfwShell.js. The header and footer images are
  * minecraft.wiki's. Nothing here applies on wider screens. */
-#mfw-mobile-header, #mfw-drawer-dark, #mfw-talk-button { display: none; }
+#mfw-mobile-header, #mfw-drawer-dark, #mfw-drawer-spoilers, #mfw-talk-button { display: none; }
 
 @media screen and (max-width: 720px) {
 	html, body { min-width: 0; background: var(--content-background-color); }
@@ -153,14 +175,14 @@ body.wgl-theme-dark #footer-icons { filter: none; }
 	div#mw-panel nav.vector-menu-portal h3::before { content: none; }
 	div#mw-panel h3 .vector-menu-heading-label { margin: 0; padding: 0; }
 	div#mw-panel li { margin: 0; padding: 0; font-size: 1rem; font-weight: bold; border-bottom: 1px solid var(--border-color-subtle); }
-	div#mw-panel a, div#mw-panel *:not(h3) > a:not(:hover):not(:focus), div#mw-panel #mfw-drawer-dark {
+	div#mw-panel a, div#mw-panel *:not(h3) > a:not(:hover):not(:focus), div#mw-panel #mfw-drawer-dark, div#mw-panel #mfw-drawer-spoilers {
 		display: flex;
 		align-items: center;
 		gap: 10px;
 		padding: 10px 16px !important;
 		color: var(--color-base) !important;
 	}
-	div#mw-panel #mfw-drawer-dark {
+	div#mw-panel #mfw-drawer-dark, div#mw-panel #mfw-drawer-spoilers {
 		width: 100%;
 		border: 0;
 		border-bottom: 1px solid var(--border-color-subtle);
