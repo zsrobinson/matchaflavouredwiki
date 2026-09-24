@@ -177,7 +177,12 @@ the swap mid-way.
 - **Healing is a hidden Regeneration III:** 1 HP per 12 ticks. Hunger is pinned by a function.
   Heal amounts are computed from the effect duration.
 - **Loot chances** account for rolls, weights, biome-exclusive entries (fishing), counts that can roll 0,
-  and `table_bonus`.
+  and `table_bonus`. A pool's own `set_count` runs after its entries' functions, so it sets the count of
+  everything the pool yields (the sweet berry bush's 2–3 berries).
+- **Variants:** loot functions and components that make a distinct in-game item (a tipped arrow's potion,
+  an enchanted drop that differs from the crafted item) label the source with the variant. Variants that
+  also look different (a Smithing Trim Color's material, a Cooking Recipe's dish) are `variant_items` in
+  `data.json`: they get their own icon and tooltip under their label, and the label redirects to the item.
 - **Trades are data-driven** (26.2 `trade_set` → tags → `villager_trade`). Trades ending in `discard` are
   placeholders and are skipped. Map names come from `set_name`, and biome limits from `merchant_predicate`.
 - **Intrinsics are enchantments,** stored as `stored_enchantments` on armor and tools. Their names are
