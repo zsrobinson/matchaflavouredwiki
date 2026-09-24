@@ -305,7 +305,9 @@ def lang_lines(a, b, pages):
 
 # ---------------------------------------------------------------- source files the generator doesn't read
 def file_lines(frm, to, pages):
-    rows = [line.split('\t') for line in git('diff', '--name-status', '-M', frm, to).splitlines()]
+    # -l0: find renames however many files changed (past diff.renameLimit git stops looking, and a
+    # reorganised pack then shows every moved file as deleted and added)
+    rows = [line.split('\t') for line in git('diff', '--name-status', '-M', '-l0', frm, to).splitlines()]
     known_dirs = set(os.path.dirname(p) for p in git('ls-tree', '-r', '--name-only', frm).splitlines())
     covered = defaultdict(int)
     groups = defaultdict(list)
@@ -317,6 +319,8 @@ def file_lines(frm, to, pages):
             deleted.append(paths[0])
         if path == 'changelog.md':
             continue  # a line of its own
+        if row[0] == 'R100':
+            continue  # moved unchanged: pages citing the old path are under "Pages citing deleted or moved files"
         area = next((label for pat, label in DATA_BACKED if re.search(pat, path)), None)
         if area:
             covered[area] += 1
