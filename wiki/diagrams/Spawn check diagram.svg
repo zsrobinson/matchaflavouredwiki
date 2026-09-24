@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 426" width="760" height="426" font-family='"Liberation Sans", Arial, Helvetica, FreeSans, sans-serif' role="img">
+<title>The spawn check run on every new mundane hostile mob: which are removed and which are kept</title>
+<defs><marker id="arrowrule" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" fill="#8f989f"/></marker><marker id="arrowblue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" fill="#2c5aad"/></marker><marker id="arrowred" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" fill="#b0392f"/></marker><marker id="arrowgreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" fill="#3a7322"/></marker></defs>
+<rect x="240" y="4" width="300" height="44" fill="#c3d4f1" stroke="#2c5aad" stroke-width="1.2" rx="6"/>
+<text x="390" y="19" font-size="13" fill="#202122" font-weight="bold" text-anchor="middle" dominant-baseline="middle">A mundane hostile mob appears</text>
+<text x="390" y="35" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">15 types, each checked once</text>
+<rect x="240" y="66" width="300" height="44" fill="#f7f9fb" stroke="#aab3bb" stroke-width="1.2" rx="6"/>
+<text x="390" y="88.5" font-size="13" fill="#202122" text-anchor="middle" dominant-baseline="middle">Has the Ender Dragon been killed?</text>
+<rect x="240" y="125" width="300" height="50" fill="#f7f9fb" stroke="#aab3bb" stroke-width="1.2" rx="6"/>
+<text x="390" y="143" font-size="13" fill="#202122" text-anchor="middle" dominant-baseline="middle">A creeper that can see the sky, or at</text>
+<text x="390" y="159" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">Y 63 or above outside trial chambers and abbeys?</text>
+<rect x="240" y="190" width="300" height="44" fill="#f7f9fb" stroke="#aab3bb" stroke-width="1.2" rx="6"/>
+<text x="390" y="212.5" font-size="13" fill="#202122" text-anchor="middle" dominant-baseline="middle">In the Overworld?</text>
+<rect x="240" y="252" width="300" height="44" fill="#f7f9fb" stroke="#aab3bb" stroke-width="1.2" rx="6"/>
+<text x="390" y="274.5" font-size="13" fill="#202122" text-anchor="middle" dominant-baseline="middle">A husk riding a camel husk?</text>
+<rect x="240" y="314" width="300" height="44" fill="#f7f9fb" stroke="#aab3bb" stroke-width="1.2" rx="6"/>
+<text x="390" y="336.5" font-size="13" fill="#202122" text-anchor="middle" dominant-baseline="middle">Undead?</text>
+<rect x="240" y="376" width="300" height="44" fill="#f7f9fb" stroke="#aab3bb" stroke-width="1.2" rx="6"/>
+<text x="390" y="398.5" font-size="13" fill="#202122" text-anchor="middle" dominant-baseline="middle">Can it see the sky?</text>
+<rect x="597" y="66" width="150" height="44" fill="#c3d4f1" stroke="#2c5aad" stroke-width="1.2" rx="6"/>
+<text x="672" y="81" font-size="13" fill="#202122" text-anchor="middle" dominant-baseline="middle">Stricter check</text>
+<text x="672" y="97" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">see Surface</text>
+<rect x="597" y="128" width="150" height="292" fill="#f1c7c2" stroke="#b0392f" stroke-width="1.2" rx="6"/>
+<text x="672" y="250" font-size="13" fill="#b0392f" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Removed</text>
+<text x="672" y="267" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">teleported 1,000</text>
+<text x="672" y="284" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">blocks down,</text>
+<text x="672" y="301" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">then killed</text>
+<rect x="15" y="190" width="140" height="230" fill="#cbe4bb" stroke="#3a7322" stroke-width="1.2" rx="6"/>
+<text x="85" y="289" font-size="13" fill="#3a7322" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Kept</text>
+<text x="85" y="306" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">modified for</text>
+<text x="85" y="323" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">the difficulty</text>
+<path d="M390 51 L390 62" fill="none" stroke="#8f989f" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowrule)"/>
+<path d="M543 88 L593 88" fill="none" stroke="#2c5aad" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowblue)"/>
+<text x="568" y="79" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">yes</text>
+<path d="M390 113 L390 121" fill="none" stroke="#8f989f" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowrule)"/>
+<text x="397" y="117" font-size="11.5" fill="#4f555b" dominant-baseline="middle">no</text>
+<path d="M543 150 L593 150" fill="none" stroke="#b0392f" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowred)"/>
+<text x="568" y="141" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">yes</text>
+<path d="M390 178 L390 186" fill="none" stroke="#8f989f" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowrule)"/>
+<text x="397" y="182" font-size="11.5" fill="#4f555b" dominant-baseline="middle">no</text>
+<path d="M237 212 L159 212" fill="none" stroke="#3a7322" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowgreen)"/>
+<text x="198" y="203" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">no</text>
+<path d="M390 237 L390 248" fill="none" stroke="#8f989f" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowrule)"/>
+<text x="397" y="242.5" font-size="11.5" fill="#4f555b" dominant-baseline="middle">yes</text>
+<path d="M543 274 L593 274" fill="none" stroke="#b0392f" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowred)"/>
+<text x="568" y="265" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">yes</text>
+<path d="M390 299 L390 310" fill="none" stroke="#8f989f" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowrule)"/>
+<text x="397" y="304.5" font-size="11.5" fill="#4f555b" dominant-baseline="middle">no</text>
+<path d="M237 336 L159 336" fill="none" stroke="#3a7322" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowgreen)"/>
+<text x="198" y="327" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">yes</text>
+<path d="M390 361 L390 372" fill="none" stroke="#8f989f" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowrule)"/>
+<text x="397" y="366.5" font-size="11.5" fill="#4f555b" dominant-baseline="middle">no</text>
+<path d="M543 398 L593 398" fill="none" stroke="#b0392f" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowred)"/>
+<text x="568" y="389" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">yes</text>
+<path d="M237 398 L159 398" fill="none" stroke="#3a7322" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowgreen)"/>
+<text x="198" y="389" font-size="11.5" fill="#4f555b" text-anchor="middle" dominant-baseline="middle">no</text>
+<text x="672" y="304" font-size="11.5" fill="#b0392f" text-anchor="middle" dominant-baseline="middle">a husk on foot</text>
+<text x="672" y="319" font-size="11.5" fill="#b0392f" text-anchor="middle" dominant-baseline="middle">takes its place</text>
+</svg>

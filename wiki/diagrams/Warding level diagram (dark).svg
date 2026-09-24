@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 286" width="760" height="286" font-family='"Liberation Sans", Arial, Helvetica, FreeSans, sans-serif' role="img">
+<title>How the warding level is worked out: held warding summed and capped, then the higher of that and the electrum armor count</title>
+<defs><marker id="arrowrule" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" fill="#7d848d"/></marker></defs>
+<rect x="15" y="8" width="170" height="44" fill="#353a46" stroke="#5b6270" stroke-width="1.2" rx="6"/>
+<image x="21" y="17" width="26" height="26" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACVklEQVR42u2az0obURTGc1ODM0PUmIwBtSIjprRIleADmGzduOy2z+IzuPQB+gSu40JwIfiXuJigFJMUNVZbJXGh3i7rdxY3DHNlkHxn93EnYfLjfOeec29UKuGoVCpWv88v5PVr/efvvfH5dGrAgwAGHYDSWif6AtVq1arn8+M54/NHJ3VmAAEQwP8Yem8v3M/z5z8vQAezM8wAAiCAd1wDMplMLM/Lfd9xHMUMIAACSG4WKJVKxvUgCLTJ09LzY6MjoJutttHzzAACIIBofUB5cRX0/tGW3d7e92N5Pmycgdb6RYkawAwgAAKwOAt8/vQFPPusn8BzYRhG8vzH6Smrnu8XtVqNGUAABGDxPOCDGtKi11dRPC/v7mx7vtlsMgMIgABi1ICHXig9D3q8kAN9e3Nn9Lyc1+V6XM8zAwiAAN62D3CdQKHnz8Hzt7nvwtM/QJfm5xL1PDOAAAggWg2Q87081798XsYaUVwDfVbfB93Z3TF63vd94/t0u11mAAEQgL3oezeoFG7Lq4s438/6eO6+eTAJuuj+Ap31sjhrdB+MNcHzPKs/uNFoMAMIgAAi9AEjwTfw/N5wGff503XQC9NfRS+P+/r172NtrjlpWM+6eMYozyeYAQRAAPFqgLz/7z3ifO/6ON/3Otjb36fzoOVtvPSs6+J/drKu+T9DVzeHoFutVrzGR/Q1tAABDHoNkJ53PHRxpr2BH5BndmLfliE9Lj2dSoXMAAIggARrgJzHpZ7IY28vPSzX284K1ISpx21YLxaW+tSEaPs4M4AACCBW/AOBO8nTwHPvUQAAAABJRU5ErkJggg==" style="image-rendering:pixelated"/>
+<text x="114" y="23" font-size="13" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">Main hand</text>
+<text x="114" y="39" font-size="11.5" fill="#aeb4bb" text-anchor="middle" dominant-baseline="middle">its Warding level</text>
+<rect x="15" y="68" width="170" height="44" fill="#353a46" stroke="#5b6270" stroke-width="1.2" rx="6"/>
+<image x="21" y="77" width="26" height="26" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABfklEQVR42u2aMUuCURSGb9HSHoSD2FBguIU0Cx8urQX9AcmfEGGj/oQWCRojqLVFvtEt2oQoh6TBCAc3IQibzxHO5XLlU/ieZ7t6r3y+nPc99151DgAAAPLKxqofoHR4Obfe/52+mOvH4zTqO2zmvQIQIO8CbK3a47tJ3V6/3xDj0XAkJzy5eUwmYAEEIAOy9fjDdWJ+Xu9Vjm+fU5UJJTnh9CoqE7AAApABcZ739XHt+Vb3y5zfuSiKcf1Irj9vp1QAAiBAhhmgPX/ctPfmPs/372/M837L3ZmZoJkMPqgABECANb4P0Pju+IY/7+qVIhWAAAiwRhmwcCfnOc/rPq77vPZ84yRs7z97e3Qh538qAAEQICwDdN+eDPbEeKdyIMb6Ds856elaVWZCTfV5vT52r08FIAACmAT/tl4oJOJ+YLt8ZmaCD5/H/74/zUzi/wFYAAGyzQBfJmh0RmhPh+5DYj1PBSAAAiw3A2IzwseyPU8FIAACAAAAAAAAuH9vvHcbxR6GZwAAAABJRU5ErkJggg==" style="image-rendering:pixelated"/>
+<text x="114" y="83" font-size="13" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">Off hand</text>
+<text x="114" y="99" font-size="11.5" fill="#aeb4bb" text-anchor="middle" dominant-baseline="middle">its Warding level</text>
+<rect x="15" y="148" width="170" height="44" fill="#353a46" stroke="#5b6270" stroke-width="1.2" rx="6"/>
+<image x="21" y="157" width="26" height="26" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACKklEQVR42u1aTSuEURgdH1kgjRppSoqmFGNiZWGDmpI/oGmym4UNsdQUpSZbhfIDyB+Q1JQmqcmKfJWaZjQpRGjCQhhLc89bz+3pNav3nN0z73vvfeb0nHO/Xp+PIAiCIAivomZxerxczQGWN/dr3LSvdn61Xq8AEuB1AuodmlvfVXXwcrdtxGupnaomPJOMGXFrMG7EdV9Zsf3SXIoVQAJIgOABB9uzRtzVFxQ7CIVHjHgqMYyvlDXrApz3sb9AW7cR505XxPwKl3esABJAAhQegJr3t3eKHTw95i2e4BM9AYGax/5wPFt+XRAfZfOsABJAAgQPcMybEKNHoEYdGhxYgL2GLsFviANtZpy7yKjmfVYACSABpgecnd8aP5TePsQGExD72/PiWt22P9cC1wGo+b30hdj+pvDMCiABJKDCA5oaTA5Wtw5t5/hlzXnBf+P1oShq3pZ/fDRSZgWQABLw5wHvnz+uOsD9+MnBsbw3sHiGbS0/ODbkKl/8v5QACfC6B0T6O4wfIv0d4pkd7hVwXnarcVt7HA+h/Z6AEiABXvcAh4bg+4AC3L1trKZFTaOGtWd02v5amhuN2HavMJ9IsgJIAAkQPAA1r523be9fXT+Jz3t7AipPwLs+5/gZVgAJIAEKD8B5MxQ2n++lk+K6YCIaVmne5hHoCTgergOikzHLCGlWAAkgARUegN/tld4+xP209t7ALW6K96rxtflTAiSAIAjCw/gFxgO/NNHrh8gAAAAASUVORK5CYII=" style="image-rendering:pixelated"/>
+<text x="114" y="163" font-size="13" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">Electrum armor</text>
+<text x="114" y="179" font-size="11.5" fill="#aeb4bb" text-anchor="middle" dominant-baseline="middle">+1 per piece worn</text>
+<rect x="245" y="38" width="190" height="44" fill="#46385f" stroke="#b89fe8" stroke-width="1.2" rx="6"/>
+<text x="340" y="53" font-size="13" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">Held warding</text>
+<text x="340" y="69" font-size="11.5" fill="#aeb4bb" text-anchor="middle" dominant-baseline="middle">the sum, capped at 3</text>
+<rect x="245" y="148" width="190" height="44" fill="#46385f" stroke="#b89fe8" stroke-width="1.2" rx="6"/>
+<text x="340" y="163" font-size="13" fill="#eaecf0" text-anchor="middle" dominant-baseline="middle">Armor count</text>
+<text x="340" y="179" font-size="11.5" fill="#aeb4bb" text-anchor="middle" dominant-baseline="middle">0 to 4</text>
+<rect x="505" y="93" width="190" height="44" fill="#46385f" stroke="#b89fe8" stroke-width="1.2" rx="6"/>
+<text x="600" y="108" font-size="13" fill="#b89fe8" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Warding level</text>
+<text x="600" y="124" font-size="11.5" fill="#aeb4bb" text-anchor="middle" dominant-baseline="middle">the higher of the two</text>
+<path d="M188 41 L241 47.62" fill="none" stroke="#7d848d" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowrule)"/>
+<path d="M188 79 L241 72.38" fill="none" stroke="#7d848d" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowrule)"/>
+<path d="M188 170 L241 170" fill="none" stroke="#7d848d" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowrule)"/>
+<path d="M438 80.73 L501 94.06" fill="none" stroke="#7d848d" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowrule)"/>
+<path d="M438 149.27 L501 135.94" fill="none" stroke="#7d848d" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#arrowrule)"/>
+<text x="15" y="222" font-size="11.5" fill="#aeb4bb" font-weight="bold" dominant-baseline="middle">Examples</text>
+<text x="15" y="240" font-size="11.5" fill="#aeb4bb" dominant-baseline="middle">Warding Sword (1) + Nazar (2) in the hands: 3</text>
+<text x="15" y="258" font-size="11.5" fill="#aeb4bb" dominant-baseline="middle">One electrum piece and a Warding 1 item: 1</text>
+<text x="15" y="276" font-size="11.5" fill="#aeb4bb" dominant-baseline="middle">Full electrum set: 4, the only way to reach it</text>
+</svg>

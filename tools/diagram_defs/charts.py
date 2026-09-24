@@ -597,3 +597,93 @@ def releases():
         lx += 16 + text_width(t.capitalize(), SMALL) + 22
     svg.h = ky + 12
     return svg
+
+
+# ---------------------------------------------------------------------------------------------
+# Food: two foods' healing overlapping, from the hidden Regeneration III on each
+
+REGEN_BASE = 50  # vanilla RegenerationMobEffect: heals 1 point every (50 >> amplifier) ticks (game code, not data)
+
+
+def healing(name):
+    """(duration, amplifier) of a food's hidden healing: the Regeneration without an icon."""
+    comp = data()['items'][name]['components']
+    for ce in (comp.get('consumable') or {}).get('on_consume_effects') or []:
+        for e in ce.get('effects', []) if ce.get('type') == 'minecraft:apply_effects' else []:
+            if e['id'] == 'minecraft:regeneration' and e.get('show_icon') is False:
+                return e['duration'], e.get('amplifier', 0)
+    raise ValueError('%s has no hidden healing' % name)
+
+
+def heal_ticks(events):
+    """Ticks at which 1 health is restored, for foods eaten at the given ticks: [(tick, duration, amplifier)].
+    Same-level effects follow the vanilla rule: a new one replaces the old only if it lasts longer."""
+    out, cur = [], None  # cur: (end tick, amplifier)
+    events = sorted(events)
+    last = max(t + d for t, d, _ in events)
+    for tick in range(last + 1):
+        for t, d, amp in events:
+            if t == tick and (cur is None or cur[0] - tick < d):
+                cur = (tick + d, amp)
+        if cur and cur[0] > tick:
+            left = cur[0] - tick
+            if left % (REGEN_BASE >> cur[1]) == 0:
+                out.append(tick)
+    return out
+
+
+@diagram('Healing overlap')
+def healing_overlap():
+    meal, snack = 'Pumpkin Empanada', 'Baked Pumpkin'
+    d, amp = healing(meal)
+    ds, amps = healing(snack)
+    if amps != amp or ds >= d // 2:
+        raise ValueError('the example needs a same-level snack shorter than half the meal')
+    second = d // 2
+    one = heal_ticks([(0, d, amp)])
+    two = heal_ticks([(0, d, amp), (second, d, amp)])
+    with_snack = heal_ticks([(0, d, amp), (second, ds, amps)])
+    if with_snack != one:
+        raise ValueError('the snack changed the healing')
+    full = 2 * len(one)
+
+    W, left, right, top, bottom = 760, 52, 560, 48, 218
+    end = (max(two) // 20 + 1) * 20
+    x = Scale(0, end, left, right)
+    y = Scale(0, full, bottom, top)
+    svg = Svg(W, 0, 'Health restored over time by one %s, and by a second one eaten halfway through' % meal.lower())
+
+    def steps(ticks, colour, sw, dash=None):
+        pts, hp = [(x(0), y(0))], 0
+        for t in ticks:
+            pts += [(x(t), y(hp))]
+            hp += 1
+            pts += [(x(t), y(hp))]
+        pts.append((x(end), y(hp)))
+        svg.poly(pts, stroke=colour, sw=sw, dash=dash, join='miter')
+        return hp
+    svg.line(left, y(full), right, y(full), stroke='@rule', sw=1.5, dash='5 4')
+    a = steps(one, '@grey', 2.5)
+    b = steps(two, '@blue', 3)
+    # the healing lost to the overlap
+    lx = x(end) + 10
+    svg.line(x(end) - 4, y(full), x(end) - 4, y(b), stroke='@red', sw=2)
+    svg.text(lx, y((full + b) / 2), '%d lost' % (full - b), size=SMALL, fill='@red', bold=True)
+    svg.text(lx, y(full) - 10, 'If both healed in full', size=SMALL, fill='@muted')
+    svg.hp(lx, y(full) + 6, full, size=SMALL, fill='@muted')
+    svg.text(lx, y(b) + 12, 'Second one eaten halfway', size=SMALL, fill='@blue', bold=True)
+    svg.hp(lx, y(b) + 28, b, size=SMALL)
+    svg.text(lx, y(a) + 12, 'One %s' % meal.lower(), size=SMALL, fill='@grey', bold=True)
+    svg.hp(lx, y(a) + 28, a, size=SMALL)
+    # when each is eaten
+    for t in (0, second):
+        svg.icon(meal, x(t), top - 26, 24)
+        svg.line(x(t), top - 12, x(t), bottom, stroke='@muted', dash='2 3')
+    y_grid(svg, y, range(0, full + 1, 4), left, right)
+    x_grid(svg, x, range(0, end + 1, 20), top, bottom, fmt=lambda t: '%d' % (t // 20), lines=False)
+    svg.text(left - 8, top - 26, 'Health', size=SMALL, fill='@muted', anchor='end')
+    svg.text((left + right) / 2, bottom + 32, 'Seconds after the first bite', size=SMALL, fill='@muted', anchor='middle')
+    svg.text(left, bottom + 54, 'A %s eaten halfway (%s of healing, less than the %s left) changes nothing.'
+             % (snack.lower(), '%.1f s' % (ds / 20), '%.1f s' % ((d - second) / 20)), size=SMALL, fill='@muted')
+    svg.h = bottom + 66
+    return svg
