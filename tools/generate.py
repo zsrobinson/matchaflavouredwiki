@@ -1287,8 +1287,7 @@ def stub_article(name, item):
 
 NUMBER_WORDS = {1: 'a', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}
 
-# ---- vanilla items whose only changes follow a pack-wide rule: one list instead of a page each
-NEW_WAYS = 'New ways to get vanilla items'
+# ---- vanilla items whose only changes follow a pack-wide rule: grouped on family pages (families())
 # (key, section heading, table columns); the order is the page's order, and an item's redirect
 # goes to its first row
 NEW_WAY_RULES = [
@@ -1362,7 +1361,7 @@ FOLDED = None
 
 
 def folded():
-    """Unrenamed vanilla items listed on NEW_WAYS instead of having a page: {name: first rule}."""
+    """Unrenamed vanilla items whose changes all follow a pack-wide rule: {name: first rule}."""
     global FOLDED
     if FOLDED is None:
         FOLDED = {}
@@ -1377,25 +1376,196 @@ def folded():
     return FOLDED
 
 
-def new_way_tables():
-    """Template:Data/New ways/<rule>: one table per rule, a row per item, and a row anchor on the
-    item's first row (its redirect's target)."""
-    pages = {}
-    for key, heading, col in NEW_WAY_RULES:
-        rows = []
-        for name in sorted(n for n in folded() if key in new_way_rules(n)):
-            anchor = '<span id="%s"></span>' % esc(safe(name)) if folded()[name] == key else ''
-            if key == 'trades':
-                how = ', '.join(sorted({'[[%s]]' % p.replace('_', ' ').title() for p, _, _ in TRADE_GIVES[name]}))
-            else:
-                how = '<br />'.join(recipe_ingredients(r) + ((' <small>(%s)</small>' % link_station(r['station'])) if key == 'cooking' else '')
-                                    for r in producing(name) if r['origin'] == 'pack' and new_way_rule(name, r) == key)
-            rows.append('|-\n| %s%s || %s' % (anchor, il(name), how))
-        if rows:
-            pages[key] = ('<includeonly>{| class="wikitable sortable"\n! Item !! %s\n%s\n|}</includeonly>'
-                          '<noinclude>Generated: the pack\'s %s for vanilla items it doesn\'t otherwise change. '
-                          '[[Category:Generated data]]</noinclude>' % (col, '\n'.join(rows), heading.lower()))
-    return pages
+# ---- family pages, as minecraft.wiki groups variants ("Fence Gate" covers every wood's fence gate)
+WOODS = ['Polished Blackstone', 'Stone', 'Dark Oak', 'Pale Oak', 'Oak', 'Spruce', 'Birch', 'Jungle', 'Acacia', 'Mangrove', 'Cherry', 'Bamboo', 'Crimson', 'Warped']
+COLORS = ['Light Blue', 'Light Gray', 'White', 'Orange', 'Magenta', 'Yellow', 'Lime', 'Pink', 'Gray', 'Cyan', 'Purple',
+          'Blue', 'Brown', 'Green', 'Red', 'Black']
+COPPER_STATES = ['Exposed', 'Weathered', 'Oxidized']
+# minecraft.wiki's page for each family (after the wood, colour or copper-state prefix is removed)
+FAMILY_TITLES = {
+    'Fence Gate', 'Fence', 'Door', 'Trapdoor', 'Button', 'Pressure Plate', 'Sign', 'Hanging Sign', 'Shelf', 'Slab',
+    'Stairs', 'Planks', 'Log', 'Wood', 'Wool', 'Carpet', 'Concrete', 'Banner', 'Sapling', 'Glazed Terracotta',
+    'Stained Glass Pane', 'Block of Copper', 'Cut Copper', 'Chiseled Copper', 'Copper Bars', 'Copper Door',
+    'Copper Trapdoor', 'Copper Grate', 'Copper Bulb', 'Lightning Rod', 'Copper Golem Statue', 'Cut Copper Slab',
+    'Cut Copper Stairs', 'Copper Chain', 'Copper Lantern', 'Pottery Sherd', 'Flower'}
+FAMILY_ALIASES = {'Stem': 'Log', 'Hyphae': 'Wood', 'Copper': 'Block of Copper'}
+FAMILY_HOME = {'Banner': 'Banners'}
+COPPER_FAMILIES = {t for t in FAMILY_TITLES if 'Copper' in t or t == 'Lightning Rod'}  # families whose hand-written page takes the table (Template:Data/Family/<family>)
+SMALL_FLOWERS = None
+
+
+def family_of(name):
+    """minecraft.wiki's family page for a vanilla item, or None."""
+    global SMALL_FLOWERS
+    if SMALL_FLOWERS is None:
+        SMALL_FLOWERS = set(vanilla_tag('#minecraft:small_flowers'))
+    if (ITEMS.get(name) or {}).get('base_id') in SMALL_FLOWERS:
+        return 'Flower'
+    if name.endswith(' Pottery Sherd'):
+        return 'Pottery Sherd'
+    rest = name
+    if rest.startswith('Waxed '):
+        rest = rest[len('Waxed '):]
+    for prefixes in (COPPER_STATES, ['Stripped'], WOODS, COLORS):
+        for pre in prefixes:
+            if rest.startswith(pre + ' '):
+                rest = rest[len(pre) + 1:]
+                break
+    rest = FAMILY_ALIASES.get(rest, rest)
+    if rest in FAMILY_TITLES and (rest != name or rest in COPPER_FAMILIES):
+        return rest  # a copper family's page is its unoxidized block's own title (minecraft.wiki's "Copper Door")
+    return None
+
+
+FAMILIES = None
+
+
+def families():
+    """{family: [members]} for the folded items, where a family has at least two of them."""
+    global FAMILIES
+    if FAMILIES is None:
+        groups = defaultdict(list)
+        for name in folded():
+            f = family_of(name)
+            if f:
+                groups[f].append(name)
+        FAMILIES = {f: sorted(ms, key=variant_order) for f, ms in groups.items() if len(ms) >= 2}
+    return FAMILIES
+
+
+# the game's own order for variants (creative inventory), as minecraft.wiki lists them
+WOOD_ORDER = ['Oak', 'Spruce', 'Birch', 'Jungle', 'Acacia', 'Dark Oak', 'Mangrove', 'Cherry', 'Pale Oak', 'Bamboo',
+              'Crimson', 'Warped', 'Stone', 'Polished Blackstone']
+COLOR_ORDER = ['White', 'Light Gray', 'Gray', 'Black', 'Brown', 'Red', 'Orange', 'Yellow', 'Lime', 'Green', 'Cyan',
+               'Light Blue', 'Blue', 'Purple', 'Magenta', 'Pink']
+
+
+def variant_order(name):
+    waxed = name.startswith('Waxed ')
+    rest = name[len('Waxed '):] if waxed else name
+    state = next((i + 1 for i, st in enumerate(COPPER_STATES) if rest.startswith(st + ' ')), 0)
+    rest = rest.split(' ', 1)[1] if state else rest
+    stripped = rest.startswith('Stripped ')
+    rest = rest[len('Stripped '):] if stripped else rest
+    kind = next((i for i, w in sorted(enumerate(WOOD_ORDER), key=lambda iw: -len(iw[1])) if rest.startswith(w + ' ')), None)
+    if kind is None:
+        kind = next((i for i, c in sorted(enumerate(COLOR_ORDER), key=lambda ic: -len(ic[1])) if rest.startswith(c + ' ')), 99)
+    return (waxed, state, kind, stripped, name)
+
+
+def family_page_of(name):
+    """(page title, family) that an item redirects to, or None for an item that keeps its own page."""
+    for f, ms in families().items():
+        if name in ms:
+            return FAMILY_HOME.get(f, f), f
+    return None
+
+
+SLOT_ARGS = {'A1', 'B1', 'C1', 'A2', 'B2', 'C2', 'A3', 'B3', 'C3', 'Input', 'Output', 'Template', 'Base', 'Addition'}
+
+
+def merged_ui(recipes):
+    """One recipe screen whose slots cycle through the members' recipes ("matching planks"), or ''."""
+    parsed = []
+    for r in recipes:
+        m = re.fullmatch(r'\{\{(\w+)\|(.*)\}\}', recipe_ui(r), re.S)
+        if not m:
+            return ''
+        parsed.append((m.group(1), dict(a.split('=', 1) for a in m.group(2).split('|'))))
+    name, first = parsed[0]
+    if any(n != name or set(a) != set(first) or any(a[k] != first[k] for k in a if k not in SLOT_ARGS) for n, a in parsed):
+        return ''
+    merged = {k: (';'.join(a[k] for _, a in parsed) if k in SLOT_ARGS else v) for k, v in first.items()}
+    return '{{%s|%s}}' % (name, '|'.join('%s=%s' % kv for kv in merged.items()))
+
+
+FAMILY_SECTIONS = [  # (heading, rules)
+    ('Stonecutting', {'stonecutter'}),
+    ('Crafting', {'slabs', 'wool', 'water', 'plants', 'saplings', 'banners'}),
+    ('Cooking', {'cooking'}),
+    ('Trading', {'trades'}),
+]
+
+
+def family_obtaining(family):
+    """Template:Data/Family/<family>: the pack's ways to get every member, a section per method, each with
+    one cycling recipe screen and a row per member (a member's first row carries its redirect's anchor)."""
+    members = families()[family]
+    out, anchored = [], set()
+    for heading, rules in FAMILY_SECTIONS:
+        rows, firsts = [], []
+        for name in members:
+            rs = [r for r in producing(name) if r['origin'] == 'pack' and new_way_rule(name, r) in rules]
+            trades = sorted({p for p, _, _ in TRADE_GIVES.get(name, [])}) if 'trades' in rules else []
+            if not rs and not trades:
+                continue
+            anchor = '' if name in anchored else '<span id="%s"></span>' % esc(safe(name))
+            anchored.add(name)
+            cell = '%s{{ItemLink|%s|mcw=%s}}' % (anchor, safe(name), mcw_title(name))
+            if trades:
+                rows.append('|-\n| %s || %s' % (cell, ', '.join('[[%s]]' % t.replace('_', ' ').title() for t in trades)))
+                continue
+            firsts.append(rs[0])
+            how = '<br />'.join('%s%s → %d' % (recipe_ingredients(r).replace(' +<br />', ' + '),
+                                               (' <small>(%s)</small>' % link_station(r['station'])) if heading == 'Cooking' else '',
+                                               r['output'].get('count', 1)) for r in rs)
+            rows.append('|-\n| %s || %s' % (cell, how))
+        if not rows:
+            continue
+        out.append('=== %s ===' % heading)
+        ui = merged_ui(firsts) if len(firsts) > 1 else (recipe_ui(firsts[0]) if firsts else '')
+        if ui:
+            out.append(ui)
+        out.append('{| class="wikitable sortable"\n! Item !! %s\n%s\n|}' % ('Sold by' if heading == 'Trading' else 'Recipe',
+                                                                           '\n'.join(rows)))
+    return ('<includeonly>%s</includeonly><noinclude>Generated: the ways Matcha Flavoured adds to get each %s. '
+            '[[Category:Generated data]]</noinclude>' % ('\n'.join(out), family.lower()))
+
+
+MASS_FAMILIES = {'Wool', 'Concrete', 'Glazed Terracotta', 'Cut Copper', 'Chiseled Copper', 'Wood'}
+PLURAL_FAMILIES = {'Planks', 'Stairs', 'Copper Bars'}
+
+
+def family_page(family):
+    """A family's own page, laid out like minecraft.wiki's: an infobox cycling through the members, the lead,
+    Obtaining (Template:Data/Family/<family>) and the members' IDs."""
+    members = families()[family]
+    icons = [m for m in members if has_icon(m)]
+    images = ''
+    if icons:
+        images = '<span class="animated">%s</span>' % ''.join(
+            '<span%s>[[File:%s.png|150px|link=|class=pixel-image]]</span>' % (' class="animated-active"' if i == 0 else '', safe(m))
+            for i, m in enumerate(icons))
+    t = item_type(ITEMS[members[0]], effective(ITEMS[members[0]]))
+    stacks = {effective(ITEMS[m]).get('max_stack_size', 64) for m in members}
+    stackable = ('Yes (%d)' % next(iter(stacks)) if next(iter(stacks)) > 1 else 'No') if len(stacks) == 1 else 'Varies'
+    stations, profs = set(), set()
+    for m in members:
+        stations |= {r['station'] for r in producing(m) if r['origin'] == 'pack'}
+        profs |= {p for p, _, _ in TRADE_GIVES.get(m, [])}
+    adds = ['[[%s]] recipes' % st for st in sorted(stations)] + ['[[%s]] trades' % p.replace('_', ' ').title() for p in sorted(profs)]
+    adds = adds[0] if len(adds) == 1 else ', '.join(adds[:-1]) + ' and ' + adds[-1]
+    # minecraft.wiki's lead sentence: "A fence gate is a block", "Wool is a block", "Planks are blocks"
+    kind = 'block' if t == 'Block' else 'item'
+    a_kind = ('a ' if kind == 'block' else 'an ') + kind
+    sentence = family[0] + family[1:].lower()
+    if family in MASS_FAMILIES:
+        subject = "'''%s''' is %s" % (sentence, a_kind)
+    elif family in PLURAL_FAMILIES:
+        subject = "'''%s''' are %ss" % (sentence, kind)
+    else:
+        low = sentence[0].lower() + sentence[1:]
+        subject = "%s '''%s''' is %s" % ('An' if low[0] in 'aeiou' else 'A', low, a_kind)
+    lead = ("%s from vanilla ''Minecraft''. [[Matcha Flavoured]] adds %s for the %d variants below, and otherwise "
+            "leaves them as in vanilla. See {{MCW|%s}} for everything else.") % (subject, adds, len(members), family)
+    ids = '\n'.join('|-\n| {{ItemLink|%s|mcw=%s}} || <code>%s</code>' % (safe(m), mcw_title(m), ITEMS[m]['base_id']) for m in members)
+    return '\n'.join([
+        '{{Vanilla|%s}}' % family,
+        '{{Infobox|title=%s|images=%s|invslots=%s|type=%s|stackable=%s}}' % (
+            family, images, ''.join('{{Slot|%s|link=none}}' % safe(m) for m in icons), t, stackable),
+        lead, '', '== Obtaining ==', '{{Data/Family/%s}}' % family, '',
+        '== Data values ==', '=== ID ===', '{| class="wikitable sortable"\n! Name !! Resource location\n%s\n|}' % ids, '',
+        '[[Category:%s]]' % {'Block': 'Blocks'}.get(t, 'Items')])
 
 
 def link_station(station):
@@ -1668,9 +1838,11 @@ def main():
         if is_pack_relevant(name, item) and not hand_exists('Main', title):
             if group_redirect(name):
                 write('Main', title, group_redirect(name)); n['group redirects'] += 1
-            elif name in folded():
-                write('Main', title, '#REDIRECT [[%s#%s]]\n[[Category:Redirects to lists]]' % (NEW_WAYS, title))
-                n['new-way redirects'] += 1
+            elif family_page_of(name) and family_page_of(name)[0] == title:
+                pass  # the family page has this item's own title and is written with the families
+            elif family_page_of(name):
+                write('Main', title, '#REDIRECT [[%s#%s]]\n[[Category:Redirects to lists]]' % (family_page_of(name)[0], title))
+                n['family redirects'] += 1
             else:
                 write('Main', title, stub_article(name, item)); n['stubs'] += 1
     # ingredients that only ever appear inside recipes (never as an item stack) still get a Uses table
@@ -1723,8 +1895,10 @@ def main():
     lua.append('}\nreturn aliases')
     write('Module', 'Inventory slot/Aliases', '\n'.join(lua))
     write('Module', 'Tooltip/Data', tooltip_data())
-    for key, page in new_way_tables().items():
-        write('Template', 'Data/New ways/' + key, page); n['new-way tables'] += 1
+    for family in sorted(families()):
+        write('Template', 'Data/Family/' + family, family_obtaining(family)); n['family tables'] += 1
+        if family not in FAMILY_HOME and not hand_exists('Main', family):
+            write('Main', family, family_page(family)); n['family pages'] += 1
     # vanilla items without a page here: their inventory slots link to minecraft.wiki (Module:Inventory slot)
     offsite = {}
     for name in list(ITEMS) + list(USES):

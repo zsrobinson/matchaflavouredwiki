@@ -1,0 +1,38 @@
+{{Vanilla|Sign}}
+{{Infobox|title=Sign|images=<span class="animated"><span class="animated-active">[[File:Oak Sign.png|150px|link=|class=pixel-image]]</span><span>[[File:Spruce Sign.png|150px|link=|class=pixel-image]]</span><span>[[File:Birch Sign.png|150px|link=|class=pixel-image]]</span><span>[[File:Jungle Sign.png|150px|link=|class=pixel-image]]</span><span>[[File:Acacia Sign.png|150px|link=|class=pixel-image]]</span><span>[[File:Dark Oak Sign.png|150px|link=|class=pixel-image]]</span><span>[[File:Mangrove Sign.png|150px|link=|class=pixel-image]]</span><span>[[File:Cherry Sign.png|150px|link=|class=pixel-image]]</span><span>[[File:Pale Oak Sign.png|150px|link=|class=pixel-image]]</span><span>[[File:Bamboo Sign.png|150px|link=|class=pixel-image]]</span><span>[[File:Crimson Sign.png|150px|link=|class=pixel-image]]</span><span>[[File:Warped Sign.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|Oak Sign|link=none}}{{Slot|Spruce Sign|link=none}}{{Slot|Birch Sign|link=none}}{{Slot|Jungle Sign|link=none}}{{Slot|Acacia Sign|link=none}}{{Slot|Dark Oak Sign|link=none}}{{Slot|Mangrove Sign|link=none}}{{Slot|Cherry Sign|link=none}}{{Slot|Pale Oak Sign|link=none}}{{Slot|Bamboo Sign|link=none}}{{Slot|Crimson Sign|link=none}}{{Slot|Warped Sign|link=none}}|type=Block|stackable=Yes (16)}}
+A '''sign''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Stonecutter]] recipes for the 12 variants below, and otherwise leaves them as in vanilla. See {{MCW|Sign}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Sign}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Oak Sign|mcw=Oak Sign}} || <code>minecraft:oak_sign</code>
+|-
+| {{ItemLink|Spruce Sign|mcw=Spruce Sign}} || <code>minecraft:spruce_sign</code>
+|-
+| {{ItemLink|Birch Sign|mcw=Birch Sign}} || <code>minecraft:birch_sign</code>
+|-
+| {{ItemLink|Jungle Sign|mcw=Jungle Sign}} || <code>minecraft:jungle_sign</code>
+|-
+| {{ItemLink|Acacia Sign|mcw=Acacia Sign}} || <code>minecraft:acacia_sign</code>
+|-
+| {{ItemLink|Dark Oak Sign|mcw=Dark Oak Sign}} || <code>minecraft:dark_oak_sign</code>
+|-
+| {{ItemLink|Mangrove Sign|mcw=Mangrove Sign}} || <code>minecraft:mangrove_sign</code>
+|-
+| {{ItemLink|Cherry Sign|mcw=Cherry Sign}} || <code>minecraft:cherry_sign</code>
+|-
+| {{ItemLink|Pale Oak Sign|mcw=Pale Oak Sign}} || <code>minecraft:pale_oak_sign</code>
+|-
+| {{ItemLink|Bamboo Sign|mcw=Bamboo Sign}} || <code>minecraft:bamboo_sign</code>
+|-
+| {{ItemLink|Crimson Sign|mcw=Crimson Sign}} || <code>minecraft:crimson_sign</code>
+|-
+| {{ItemLink|Warped Sign|mcw=Warped Sign}} || <code>minecraft:warped_sign</code>
+|}
+
+[[Category:Blocks]]

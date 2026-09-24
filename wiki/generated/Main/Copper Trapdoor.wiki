@@ -1,2 +1,28 @@
-#REDIRECT [[New ways to get vanilla items#Copper Trapdoor]]
-[[Category:Redirects to lists]]
+{{Vanilla|Copper Trapdoor}}
+{{Infobox|title=Copper Trapdoor|images=<span class="animated"><span class="animated-active">[[File:Copper Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Exposed Copper Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Weathered Copper Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Oxidized Copper Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Copper Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Exposed Copper Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Oxidized Copper Trapdoor.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|Copper Trapdoor|link=none}}{{Slot|Exposed Copper Trapdoor|link=none}}{{Slot|Weathered Copper Trapdoor|link=none}}{{Slot|Oxidized Copper Trapdoor|link=none}}{{Slot|Waxed Copper Trapdoor|link=none}}{{Slot|Waxed Exposed Copper Trapdoor|link=none}}{{Slot|Waxed Oxidized Copper Trapdoor|link=none}}|type=Block|stackable=Yes (64)}}
+A '''copper trapdoor''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Stonecutter]] recipes for the 7 variants below, and otherwise leaves them as in vanilla. See {{MCW|Copper Trapdoor}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Copper Trapdoor}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Copper Trapdoor|mcw=Copper Trapdoor}} || <code>minecraft:copper_trapdoor</code>
+|-
+| {{ItemLink|Exposed Copper Trapdoor|mcw=Exposed Copper Trapdoor}} || <code>minecraft:exposed_copper_trapdoor</code>
+|-
+| {{ItemLink|Weathered Copper Trapdoor|mcw=Weathered Copper Trapdoor}} || <code>minecraft:weathered_copper_trapdoor</code>
+|-
+| {{ItemLink|Oxidized Copper Trapdoor|mcw=Oxidized Copper Trapdoor}} || <code>minecraft:oxidized_copper_trapdoor</code>
+|-
+| {{ItemLink|Waxed Copper Trapdoor|mcw=Waxed Copper Trapdoor}} || <code>minecraft:waxed_copper_trapdoor</code>
+|-
+| {{ItemLink|Waxed Exposed Copper Trapdoor|mcw=Waxed Exposed Copper Trapdoor}} || <code>minecraft:waxed_exposed_copper_trapdoor</code>
+|-
+| {{ItemLink|Waxed Oxidized Copper Trapdoor|mcw=Waxed Oxidized Copper Trapdoor}} || <code>minecraft:waxed_oxidized_copper_trapdoor</code>
+|}
+
+[[Category:Blocks]]

@@ -1,0 +1,38 @@
+{{Vanilla|Stairs}}
+{{Infobox|title=Stairs|images=<span class="animated"><span class="animated-active">[[File:Oak Stairs.png|150px|link=|class=pixel-image]]</span><span>[[File:Spruce Stairs.png|150px|link=|class=pixel-image]]</span><span>[[File:Birch Stairs.png|150px|link=|class=pixel-image]]</span><span>[[File:Jungle Stairs.png|150px|link=|class=pixel-image]]</span><span>[[File:Acacia Stairs.png|150px|link=|class=pixel-image]]</span><span>[[File:Dark Oak Stairs.png|150px|link=|class=pixel-image]]</span><span>[[File:Mangrove Stairs.png|150px|link=|class=pixel-image]]</span><span>[[File:Cherry Stairs.png|150px|link=|class=pixel-image]]</span><span>[[File:Pale Oak Stairs.png|150px|link=|class=pixel-image]]</span><span>[[File:Bamboo Stairs.png|150px|link=|class=pixel-image]]</span><span>[[File:Crimson Stairs.png|150px|link=|class=pixel-image]]</span><span>[[File:Warped Stairs.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|Oak Stairs|link=none}}{{Slot|Spruce Stairs|link=none}}{{Slot|Birch Stairs|link=none}}{{Slot|Jungle Stairs|link=none}}{{Slot|Acacia Stairs|link=none}}{{Slot|Dark Oak Stairs|link=none}}{{Slot|Mangrove Stairs|link=none}}{{Slot|Cherry Stairs|link=none}}{{Slot|Pale Oak Stairs|link=none}}{{Slot|Bamboo Stairs|link=none}}{{Slot|Crimson Stairs|link=none}}{{Slot|Warped Stairs|link=none}}|type=Block|stackable=Yes (64)}}
+'''Stairs''' are blocks from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Stonecutter]] recipes for the 12 variants below, and otherwise leaves them as in vanilla. See {{MCW|Stairs}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Stairs}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Oak Stairs|mcw=Oak Stairs}} || <code>minecraft:oak_stairs</code>
+|-
+| {{ItemLink|Spruce Stairs|mcw=Spruce Stairs}} || <code>minecraft:spruce_stairs</code>
+|-
+| {{ItemLink|Birch Stairs|mcw=Birch Stairs}} || <code>minecraft:birch_stairs</code>
+|-
+| {{ItemLink|Jungle Stairs|mcw=Jungle Stairs}} || <code>minecraft:jungle_stairs</code>
+|-
+| {{ItemLink|Acacia Stairs|mcw=Acacia Stairs}} || <code>minecraft:acacia_stairs</code>
+|-
+| {{ItemLink|Dark Oak Stairs|mcw=Dark Oak Stairs}} || <code>minecraft:dark_oak_stairs</code>
+|-
+| {{ItemLink|Mangrove Stairs|mcw=Mangrove Stairs}} || <code>minecraft:mangrove_stairs</code>
+|-
+| {{ItemLink|Cherry Stairs|mcw=Cherry Stairs}} || <code>minecraft:cherry_stairs</code>
+|-
+| {{ItemLink|Pale Oak Stairs|mcw=Pale Oak Stairs}} || <code>minecraft:pale_oak_stairs</code>
+|-
+| {{ItemLink|Bamboo Stairs|mcw=Bamboo Stairs}} || <code>minecraft:bamboo_stairs</code>
+|-
+| {{ItemLink|Crimson Stairs|mcw=Crimson Stairs}} || <code>minecraft:crimson_stairs</code>
+|-
+| {{ItemLink|Warped Stairs|mcw=Warped Stairs}} || <code>minecraft:warped_stairs</code>
+|}
+
+[[Category:Blocks]]

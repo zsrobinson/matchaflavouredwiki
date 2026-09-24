@@ -1,2 +1,30 @@
-#REDIRECT [[New ways to get vanilla items#Cut Copper]]
-[[Category:Redirects to lists]]
+{{Vanilla|Cut Copper}}
+{{Infobox|title=Cut Copper|images=<span class="animated"><span class="animated-active">[[File:Cut Copper.png|150px|link=|class=pixel-image]]</span><span>[[File:Exposed Cut Copper.png|150px|link=|class=pixel-image]]</span><span>[[File:Weathered Cut Copper.png|150px|link=|class=pixel-image]]</span><span>[[File:Oxidized Cut Copper.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Cut Copper.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Exposed Cut Copper.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Weathered Cut Copper.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Oxidized Cut Copper.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|Cut Copper|link=none}}{{Slot|Exposed Cut Copper|link=none}}{{Slot|Weathered Cut Copper|link=none}}{{Slot|Oxidized Cut Copper|link=none}}{{Slot|Waxed Cut Copper|link=none}}{{Slot|Waxed Exposed Cut Copper|link=none}}{{Slot|Waxed Weathered Cut Copper|link=none}}{{Slot|Waxed Oxidized Cut Copper|link=none}}|type=Block|stackable=Yes (64)}}
+'''Cut copper''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Crafting Table]] recipes for the 8 variants below, and otherwise leaves them as in vanilla. See {{MCW|Cut Copper}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Cut Copper}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Cut Copper|mcw=Cut Copper}} || <code>minecraft:cut_copper</code>
+|-
+| {{ItemLink|Exposed Cut Copper|mcw=Exposed Cut Copper}} || <code>minecraft:exposed_cut_copper</code>
+|-
+| {{ItemLink|Weathered Cut Copper|mcw=Weathered Cut Copper}} || <code>minecraft:weathered_cut_copper</code>
+|-
+| {{ItemLink|Oxidized Cut Copper|mcw=Oxidized Cut Copper}} || <code>minecraft:oxidized_cut_copper</code>
+|-
+| {{ItemLink|Waxed Cut Copper|mcw=Waxed Cut Copper}} || <code>minecraft:waxed_cut_copper</code>
+|-
+| {{ItemLink|Waxed Exposed Cut Copper|mcw=Waxed Exposed Cut Copper}} || <code>minecraft:waxed_exposed_cut_copper</code>
+|-
+| {{ItemLink|Waxed Weathered Cut Copper|mcw=Waxed Weathered Cut Copper}} || <code>minecraft:waxed_weathered_cut_copper</code>
+|-
+| {{ItemLink|Waxed Oxidized Cut Copper|mcw=Waxed Oxidized Cut Copper}} || <code>minecraft:waxed_oxidized_cut_copper</code>
+|}
+
+[[Category:Blocks]]

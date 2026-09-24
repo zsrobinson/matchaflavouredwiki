@@ -1,0 +1,38 @@
+{{Vanilla|Trapdoor}}
+{{Infobox|title=Trapdoor|images=<span class="animated"><span class="animated-active">[[File:Oak Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Spruce Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Birch Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Jungle Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Acacia Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Dark Oak Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Mangrove Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Cherry Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Pale Oak Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Bamboo Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Crimson Trapdoor.png|150px|link=|class=pixel-image]]</span><span>[[File:Warped Trapdoor.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|Oak Trapdoor|link=none}}{{Slot|Spruce Trapdoor|link=none}}{{Slot|Birch Trapdoor|link=none}}{{Slot|Jungle Trapdoor|link=none}}{{Slot|Acacia Trapdoor|link=none}}{{Slot|Dark Oak Trapdoor|link=none}}{{Slot|Mangrove Trapdoor|link=none}}{{Slot|Cherry Trapdoor|link=none}}{{Slot|Pale Oak Trapdoor|link=none}}{{Slot|Bamboo Trapdoor|link=none}}{{Slot|Crimson Trapdoor|link=none}}{{Slot|Warped Trapdoor|link=none}}|type=Block|stackable=Yes (64)}}
+A '''trapdoor''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Stonecutter]] recipes for the 12 variants below, and otherwise leaves them as in vanilla. See {{MCW|Trapdoor}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Trapdoor}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Oak Trapdoor|mcw=Oak Trapdoor}} || <code>minecraft:oak_trapdoor</code>
+|-
+| {{ItemLink|Spruce Trapdoor|mcw=Spruce Trapdoor}} || <code>minecraft:spruce_trapdoor</code>
+|-
+| {{ItemLink|Birch Trapdoor|mcw=Birch Trapdoor}} || <code>minecraft:birch_trapdoor</code>
+|-
+| {{ItemLink|Jungle Trapdoor|mcw=Jungle Trapdoor}} || <code>minecraft:jungle_trapdoor</code>
+|-
+| {{ItemLink|Acacia Trapdoor|mcw=Acacia Trapdoor}} || <code>minecraft:acacia_trapdoor</code>
+|-
+| {{ItemLink|Dark Oak Trapdoor|mcw=Dark Oak Trapdoor}} || <code>minecraft:dark_oak_trapdoor</code>
+|-
+| {{ItemLink|Mangrove Trapdoor|mcw=Mangrove Trapdoor}} || <code>minecraft:mangrove_trapdoor</code>
+|-
+| {{ItemLink|Cherry Trapdoor|mcw=Cherry Trapdoor}} || <code>minecraft:cherry_trapdoor</code>
+|-
+| {{ItemLink|Pale Oak Trapdoor|mcw=Pale Oak Trapdoor}} || <code>minecraft:pale_oak_trapdoor</code>
+|-
+| {{ItemLink|Bamboo Trapdoor|mcw=Bamboo Trapdoor}} || <code>minecraft:bamboo_trapdoor</code>
+|-
+| {{ItemLink|Crimson Trapdoor|mcw=Crimson Trapdoor}} || <code>minecraft:crimson_trapdoor</code>
+|-
+| {{ItemLink|Warped Trapdoor|mcw=Warped Trapdoor}} || <code>minecraft:warped_trapdoor</code>
+|}
+
+[[Category:Blocks]]

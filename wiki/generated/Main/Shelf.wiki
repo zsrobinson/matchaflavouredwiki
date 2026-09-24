@@ -1,0 +1,38 @@
+{{Vanilla|Shelf}}
+{{Infobox|title=Shelf|images=<span class="animated"><span class="animated-active">[[File:Oak Shelf.png|150px|link=|class=pixel-image]]</span><span>[[File:Spruce Shelf.png|150px|link=|class=pixel-image]]</span><span>[[File:Birch Shelf.png|150px|link=|class=pixel-image]]</span><span>[[File:Jungle Shelf.png|150px|link=|class=pixel-image]]</span><span>[[File:Acacia Shelf.png|150px|link=|class=pixel-image]]</span><span>[[File:Dark Oak Shelf.png|150px|link=|class=pixel-image]]</span><span>[[File:Mangrove Shelf.png|150px|link=|class=pixel-image]]</span><span>[[File:Cherry Shelf.png|150px|link=|class=pixel-image]]</span><span>[[File:Pale Oak Shelf.png|150px|link=|class=pixel-image]]</span><span>[[File:Bamboo Shelf.png|150px|link=|class=pixel-image]]</span><span>[[File:Crimson Shelf.png|150px|link=|class=pixel-image]]</span><span>[[File:Warped Shelf.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|Oak Shelf|link=none}}{{Slot|Spruce Shelf|link=none}}{{Slot|Birch Shelf|link=none}}{{Slot|Jungle Shelf|link=none}}{{Slot|Acacia Shelf|link=none}}{{Slot|Dark Oak Shelf|link=none}}{{Slot|Mangrove Shelf|link=none}}{{Slot|Cherry Shelf|link=none}}{{Slot|Pale Oak Shelf|link=none}}{{Slot|Bamboo Shelf|link=none}}{{Slot|Crimson Shelf|link=none}}{{Slot|Warped Shelf|link=none}}|type=Block|stackable=Yes (64)}}
+A '''shelf''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Stonecutter]] recipes for the 12 variants below, and otherwise leaves them as in vanilla. See {{MCW|Shelf}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Shelf}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Oak Shelf|mcw=Oak Shelf}} || <code>minecraft:oak_shelf</code>
+|-
+| {{ItemLink|Spruce Shelf|mcw=Spruce Shelf}} || <code>minecraft:spruce_shelf</code>
+|-
+| {{ItemLink|Birch Shelf|mcw=Birch Shelf}} || <code>minecraft:birch_shelf</code>
+|-
+| {{ItemLink|Jungle Shelf|mcw=Jungle Shelf}} || <code>minecraft:jungle_shelf</code>
+|-
+| {{ItemLink|Acacia Shelf|mcw=Acacia Shelf}} || <code>minecraft:acacia_shelf</code>
+|-
+| {{ItemLink|Dark Oak Shelf|mcw=Dark Oak Shelf}} || <code>minecraft:dark_oak_shelf</code>
+|-
+| {{ItemLink|Mangrove Shelf|mcw=Mangrove Shelf}} || <code>minecraft:mangrove_shelf</code>
+|-
+| {{ItemLink|Cherry Shelf|mcw=Cherry Shelf}} || <code>minecraft:cherry_shelf</code>
+|-
+| {{ItemLink|Pale Oak Shelf|mcw=Pale Oak Shelf}} || <code>minecraft:pale_oak_shelf</code>
+|-
+| {{ItemLink|Bamboo Shelf|mcw=Bamboo Shelf}} || <code>minecraft:bamboo_shelf</code>
+|-
+| {{ItemLink|Crimson Shelf|mcw=Crimson Shelf}} || <code>minecraft:crimson_shelf</code>
+|-
+| {{ItemLink|Warped Shelf|mcw=Warped Shelf}} || <code>minecraft:warped_shelf</code>
+|}
+
+[[Category:Blocks]]

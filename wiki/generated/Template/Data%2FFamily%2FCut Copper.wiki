@@ -1,0 +1,21 @@
+<includeonly>=== Crafting ===
+{{Crafting|A1=Cut Copper Slab;Exposed Cut Copper Slab;Exposed Cut Copper;Oxidized Cut Copper Slab;Waxed Cut Copper Slab;Waxed Exposed Cut Copper Slab;Waxed Weathered Cut Copper Slab;Waxed Oxidized Cut Copper Slab|B1=Cut Copper Slab;Exposed Cut Copper Slab;Potion;Oxidized Cut Copper Slab;Waxed Cut Copper Slab;Waxed Exposed Cut Copper Slab;Waxed Weathered Cut Copper Slab;Waxed Oxidized Cut Copper Slab|Output=Cut Copper;Exposed Cut Copper;Weathered Cut Copper;Oxidized Cut Copper;Waxed Cut Copper;Waxed Exposed Cut Copper;Waxed Weathered Cut Copper;Waxed Oxidized Cut Copper|shapeless=1}}
+{| class="wikitable sortable"
+! Item !! Recipe
+|-
+| <span id="Cut Copper"></span>{{ItemLink|Cut Copper|mcw=Cut Copper}} || 2 × {{MCW|Cut Copper Slab}} → 1
+|-
+| <span id="Exposed Cut Copper"></span>{{ItemLink|Exposed Cut Copper|mcw=Exposed Cut Copper}} || 2 × [[Exposed Cut Copper Slab]] → 1<br />[[Cut Copper]] + {{MCW|Potion}} → 1
+|-
+| <span id="Weathered Cut Copper"></span>{{ItemLink|Weathered Cut Copper|mcw=Weathered Cut Copper}} || [[Exposed Cut Copper]] + {{MCW|Potion}} → 1<br />2 × [[Weathered Cut Copper Slab]] → 1
+|-
+| <span id="Oxidized Cut Copper"></span>{{ItemLink|Oxidized Cut Copper|mcw=Oxidized Cut Copper}} || 2 × [[Oxidized Cut Copper Slab]] → 1<br />[[Weathered Cut Copper]] + {{MCW|Potion}} → 1
+|-
+| <span id="Waxed Cut Copper"></span>{{ItemLink|Waxed Cut Copper|mcw=Waxed Cut Copper}} || 2 × {{MCW|Waxed Cut Copper Slab}} → 1
+|-
+| <span id="Waxed Exposed Cut Copper"></span>{{ItemLink|Waxed Exposed Cut Copper|mcw=Waxed Exposed Cut Copper}} || 2 × {{MCW|Waxed Exposed Cut Copper Slab}} → 1
+|-
+| <span id="Waxed Weathered Cut Copper"></span>{{ItemLink|Waxed Weathered Cut Copper|mcw=Waxed Weathered Cut Copper}} || 2 × {{MCW|Waxed Weathered Cut Copper Slab}} → 1
+|-
+| <span id="Waxed Oxidized Cut Copper"></span>{{ItemLink|Waxed Oxidized Cut Copper|mcw=Waxed Oxidized Cut Copper}} || 2 × {{MCW|Waxed Oxidized Cut Copper Slab}} → 1
+|}</includeonly><noinclude>Generated: the ways Matcha Flavoured adds to get each cut copper. [[Category:Generated data]]</noinclude>

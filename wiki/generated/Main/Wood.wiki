@@ -1,0 +1,58 @@
+{{Vanilla|Wood}}
+{{Infobox|title=Wood|images=<span class="animated"><span class="animated-active">[[File:Oak Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Stripped Oak Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Spruce Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Stripped Spruce Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Birch Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Stripped Birch Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Jungle Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Stripped Jungle Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Acacia Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Stripped Acacia Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Dark Oak Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Stripped Dark Oak Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Mangrove Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Stripped Mangrove Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Cherry Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Stripped Cherry Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Pale Oak Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Stripped Pale Oak Wood.png|150px|link=|class=pixel-image]]</span><span>[[File:Crimson Hyphae.png|150px|link=|class=pixel-image]]</span><span>[[File:Stripped Crimson Hyphae.png|150px|link=|class=pixel-image]]</span><span>[[File:Warped Hyphae.png|150px|link=|class=pixel-image]]</span><span>[[File:Stripped Warped Hyphae.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|Oak Wood|link=none}}{{Slot|Stripped Oak Wood|link=none}}{{Slot|Spruce Wood|link=none}}{{Slot|Stripped Spruce Wood|link=none}}{{Slot|Birch Wood|link=none}}{{Slot|Stripped Birch Wood|link=none}}{{Slot|Jungle Wood|link=none}}{{Slot|Stripped Jungle Wood|link=none}}{{Slot|Acacia Wood|link=none}}{{Slot|Stripped Acacia Wood|link=none}}{{Slot|Dark Oak Wood|link=none}}{{Slot|Stripped Dark Oak Wood|link=none}}{{Slot|Mangrove Wood|link=none}}{{Slot|Stripped Mangrove Wood|link=none}}{{Slot|Cherry Wood|link=none}}{{Slot|Stripped Cherry Wood|link=none}}{{Slot|Pale Oak Wood|link=none}}{{Slot|Stripped Pale Oak Wood|link=none}}{{Slot|Crimson Hyphae|link=none}}{{Slot|Stripped Crimson Hyphae|link=none}}{{Slot|Warped Hyphae|link=none}}{{Slot|Stripped Warped Hyphae|link=none}}|type=Block|stackable=Yes (64)}}
+'''Wood''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Stonecutter]] recipes for the 22 variants below, and otherwise leaves them as in vanilla. See {{MCW|Wood}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Wood}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Oak Wood|mcw=Oak Wood}} || <code>minecraft:oak_wood</code>
+|-
+| {{ItemLink|Stripped Oak Wood|mcw=Stripped Oak Wood}} || <code>minecraft:stripped_oak_wood</code>
+|-
+| {{ItemLink|Spruce Wood|mcw=Spruce Wood}} || <code>minecraft:spruce_wood</code>
+|-
+| {{ItemLink|Stripped Spruce Wood|mcw=Stripped Spruce Wood}} || <code>minecraft:stripped_spruce_wood</code>
+|-
+| {{ItemLink|Birch Wood|mcw=Birch Wood}} || <code>minecraft:birch_wood</code>
+|-
+| {{ItemLink|Stripped Birch Wood|mcw=Stripped Birch Wood}} || <code>minecraft:stripped_birch_wood</code>
+|-
+| {{ItemLink|Jungle Wood|mcw=Jungle Wood}} || <code>minecraft:jungle_wood</code>
+|-
+| {{ItemLink|Stripped Jungle Wood|mcw=Stripped Jungle Wood}} || <code>minecraft:stripped_jungle_wood</code>
+|-
+| {{ItemLink|Acacia Wood|mcw=Acacia Wood}} || <code>minecraft:acacia_wood</code>
+|-
+| {{ItemLink|Stripped Acacia Wood|mcw=Stripped Acacia Wood}} || <code>minecraft:stripped_acacia_wood</code>
+|-
+| {{ItemLink|Dark Oak Wood|mcw=Dark Oak Wood}} || <code>minecraft:dark_oak_wood</code>
+|-
+| {{ItemLink|Stripped Dark Oak Wood|mcw=Stripped Dark Oak Wood}} || <code>minecraft:stripped_dark_oak_wood</code>
+|-
+| {{ItemLink|Mangrove Wood|mcw=Mangrove Wood}} || <code>minecraft:mangrove_wood</code>
+|-
+| {{ItemLink|Stripped Mangrove Wood|mcw=Stripped Mangrove Wood}} || <code>minecraft:stripped_mangrove_wood</code>
+|-
+| {{ItemLink|Cherry Wood|mcw=Cherry Wood}} || <code>minecraft:cherry_wood</code>
+|-
+| {{ItemLink|Stripped Cherry Wood|mcw=Stripped Cherry Wood}} || <code>minecraft:stripped_cherry_wood</code>
+|-
+| {{ItemLink|Pale Oak Wood|mcw=Pale Oak Wood}} || <code>minecraft:pale_oak_wood</code>
+|-
+| {{ItemLink|Stripped Pale Oak Wood|mcw=Stripped Pale Oak Wood}} || <code>minecraft:stripped_pale_oak_wood</code>
+|-
+| {{ItemLink|Crimson Hyphae|mcw=Crimson Hyphae}} || <code>minecraft:crimson_hyphae</code>
+|-
+| {{ItemLink|Stripped Crimson Hyphae|mcw=Stripped Crimson Hyphae}} || <code>minecraft:stripped_crimson_hyphae</code>
+|-
+| {{ItemLink|Warped Hyphae|mcw=Warped Hyphae}} || <code>minecraft:warped_hyphae</code>
+|-
+| {{ItemLink|Stripped Warped Hyphae|mcw=Stripped Warped Hyphae}} || <code>minecraft:stripped_warped_hyphae</code>
+|}
+
+[[Category:Blocks]]

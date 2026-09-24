@@ -1,0 +1,19 @@
+<includeonly>=== Stonecutting ===
+{{Stonecutter|Input=Block of Copper;Exposed Copper;Weathered Copper;Oxidized Copper;Waxed Block of Copper;Waxed Exposed Copper;Waxed Oxidized Copper|Output=Copper Trapdoor,9;Exposed Copper Trapdoor,9;Weathered Copper Trapdoor,9;Oxidized Copper Trapdoor,9;Waxed Copper Trapdoor,9;Waxed Exposed Copper Trapdoor,9;Waxed Oxidized Copper Trapdoor,9}}
+{| class="wikitable sortable"
+! Item !! Recipe
+|-
+| <span id="Copper Trapdoor"></span>{{ItemLink|Copper Trapdoor|mcw=Copper Trapdoor}} || [[Block of Copper]] → 9<br />[[Copper Ingot]] → 1
+|-
+| <span id="Exposed Copper Trapdoor"></span>{{ItemLink|Exposed Copper Trapdoor|mcw=Exposed Copper Trapdoor}} || [[Exposed Copper]] → 9<br />[[Exposed Copper]] → 9
+|-
+| <span id="Weathered Copper Trapdoor"></span>{{ItemLink|Weathered Copper Trapdoor|mcw=Weathered Copper Trapdoor}} || [[Weathered Copper]] → 9<br />[[Weathered Copper]] → 9
+|-
+| <span id="Oxidized Copper Trapdoor"></span>{{ItemLink|Oxidized Copper Trapdoor|mcw=Oxidized Copper Trapdoor}} || [[Oxidized Copper]] → 9<br />[[Oxidized Copper]] → 9
+|-
+| <span id="Waxed Copper Trapdoor"></span>{{ItemLink|Waxed Copper Trapdoor|mcw=Waxed Copper Trapdoor}} || {{MCW|Waxed Block of Copper}} → 9
+|-
+| <span id="Waxed Exposed Copper Trapdoor"></span>{{ItemLink|Waxed Exposed Copper Trapdoor|mcw=Waxed Exposed Copper Trapdoor}} || {{MCW|Waxed Exposed Copper}} → 9<br />{{MCW|Waxed Exposed Copper}} → 9
+|-
+| <span id="Waxed Oxidized Copper Trapdoor"></span>{{ItemLink|Waxed Oxidized Copper Trapdoor|mcw=Waxed Oxidized Copper Trapdoor}} || {{MCW|Waxed Oxidized Copper}} → 9
+|}</includeonly><noinclude>Generated: the ways Matcha Flavoured adds to get each copper trapdoor. [[Category:Generated data]]</noinclude>

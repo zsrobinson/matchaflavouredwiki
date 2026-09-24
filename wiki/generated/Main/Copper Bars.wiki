@@ -1,2 +1,30 @@
-#REDIRECT [[New ways to get vanilla items#Copper Bars]]
-[[Category:Redirects to lists]]
+{{Vanilla|Copper Bars}}
+{{Infobox|title=Copper Bars|images=<span class="animated"><span class="animated-active">[[File:Copper Bars.png|150px|link=|class=pixel-image]]</span><span>[[File:Exposed Copper Bars.png|150px|link=|class=pixel-image]]</span><span>[[File:Weathered Copper Bars.png|150px|link=|class=pixel-image]]</span><span>[[File:Oxidized Copper Bars.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Copper Bars.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Exposed Copper Bars.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Weathered Copper Bars.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Oxidized Copper Bars.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|Copper Bars|link=none}}{{Slot|Exposed Copper Bars|link=none}}{{Slot|Weathered Copper Bars|link=none}}{{Slot|Oxidized Copper Bars|link=none}}{{Slot|Waxed Copper Bars|link=none}}{{Slot|Waxed Exposed Copper Bars|link=none}}{{Slot|Waxed Weathered Copper Bars|link=none}}{{Slot|Waxed Oxidized Copper Bars|link=none}}|type=Block|stackable=Yes (64)}}
+'''Copper bars''' are blocks from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Crafting Table]] recipes and [[Stonecutter]] recipes for the 8 variants below, and otherwise leaves them as in vanilla. See {{MCW|Copper Bars}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Copper Bars}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Copper Bars|mcw=Copper Bars}} || <code>minecraft:copper_bars</code>
+|-
+| {{ItemLink|Exposed Copper Bars|mcw=Exposed Copper Bars}} || <code>minecraft:exposed_copper_bars</code>
+|-
+| {{ItemLink|Weathered Copper Bars|mcw=Weathered Copper Bars}} || <code>minecraft:weathered_copper_bars</code>
+|-
+| {{ItemLink|Oxidized Copper Bars|mcw=Oxidized Copper Bars}} || <code>minecraft:oxidized_copper_bars</code>
+|-
+| {{ItemLink|Waxed Copper Bars|mcw=Waxed Copper Bars}} || <code>minecraft:waxed_copper_bars</code>
+|-
+| {{ItemLink|Waxed Exposed Copper Bars|mcw=Waxed Exposed Copper Bars}} || <code>minecraft:waxed_exposed_copper_bars</code>
+|-
+| {{ItemLink|Waxed Weathered Copper Bars|mcw=Waxed Weathered Copper Bars}} || <code>minecraft:waxed_weathered_copper_bars</code>
+|-
+| {{ItemLink|Waxed Oxidized Copper Bars|mcw=Waxed Oxidized Copper Bars}} || <code>minecraft:waxed_oxidized_copper_bars</code>
+|}
+
+[[Category:Blocks]]

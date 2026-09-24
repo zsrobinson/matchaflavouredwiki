@@ -1,0 +1,24 @@
+{{Vanilla|Pottery Sherd}}
+{{Infobox|title=Pottery Sherd|images=<span class="animated"><span class="animated-active">[[File:Arms Up Pottery Sherd.png|150px|link=|class=pixel-image]]</span><span>[[File:Howl Pottery Sherd.png|150px|link=|class=pixel-image]]</span><span>[[File:Mourner Pottery Sherd.png|150px|link=|class=pixel-image]]</span><span>[[File:Sheaf Pottery Sherd.png|150px|link=|class=pixel-image]]</span><span>[[File:Snort Pottery Sherd.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|Arms Up Pottery Sherd|link=none}}{{Slot|Howl Pottery Sherd|link=none}}{{Slot|Mourner Pottery Sherd|link=none}}{{Slot|Sheaf Pottery Sherd|link=none}}{{Slot|Snort Pottery Sherd|link=none}}|type=Item|stackable=Yes (64)}}
+A '''pottery sherd''' is an item from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Cartographer]] trades for the 5 variants below, and otherwise leaves them as in vanilla. See {{MCW|Pottery Sherd}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Pottery Sherd}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Arms Up Pottery Sherd|mcw=Arms Up Pottery Sherd}} || <code>minecraft:arms_up_pottery_sherd</code>
+|-
+| {{ItemLink|Howl Pottery Sherd|mcw=Howl Pottery Sherd}} || <code>minecraft:howl_pottery_sherd</code>
+|-
+| {{ItemLink|Mourner Pottery Sherd|mcw=Mourner Pottery Sherd}} || <code>minecraft:mourner_pottery_sherd</code>
+|-
+| {{ItemLink|Sheaf Pottery Sherd|mcw=Sheaf Pottery Sherd}} || <code>minecraft:sheaf_pottery_sherd</code>
+|-
+| {{ItemLink|Snort Pottery Sherd|mcw=Snort Pottery Sherd}} || <code>minecraft:snort_pottery_sherd</code>
+|}
+
+[[Category:Items]]

@@ -221,8 +221,12 @@ the swap mid-way.
 - **Which vanilla items get a page** (`generate.py`): none for items the pack doesn't change (their links and
   slots go to minecraft.wiki via `Module:Inventory slot/Offsite`). Items whose only changes follow a pack-wide
   rule (`NEW_WAY_RULES`: stonecutter, slabs back into blocks, wool and carpet, water bottle, plant cloning,
-  saplings, banners, cooking stations, trades) redirect to their row on "New ways to get vanilla items".
-  The rest get a page whose lead says what the pack adds or replaces.
+  saplings, banners, cooking stations, trades) are grouped on family pages as minecraft.wiki does ("Fence Gate"
+  for every wood, "Carpet", "Cut Copper" for every oxidation state; `family_of`), and redirect to their row.
+  A family page follows minecraft.wiki's layout: an infobox cycling through the variants (in the game's order),
+  Obtaining with one cycling recipe screen per method, and an ID table. Families with a hand-written page
+  (`FAMILY_HOME`: Banners) transclude `Template:Data/Family/<family>` instead. Items in no family, and the
+  rest, get a page whose lead says what the pack adds or replaces.
 - **Recipes match ingredients by item ID only,** so a custom item also works in recipes for its base item.
   The generator lists those uses only when both are the same kind of item (food with food).
 - **Healing is a hidden Regeneration III:** 1 HP per 12 ticks. Hunger is pinned by a function.

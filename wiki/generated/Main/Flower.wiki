@@ -1,0 +1,42 @@
+{{Vanilla|Flower}}
+{{Infobox|title=Flower|images=<span class="animated"><span class="animated-active">[[File:White Tulip.png|150px|link=|class=pixel-image]]</span><span>[[File:Red Tulip.png|150px|link=|class=pixel-image]]</span><span>[[File:Orange Tulip.png|150px|link=|class=pixel-image]]</span><span>[[File:Blue Orchid.png|150px|link=|class=pixel-image]]</span><span>[[File:Pink Tulip.png|150px|link=|class=pixel-image]]</span><span>[[File:Azure Bluet.png|150px|link=|class=pixel-image]]</span><span>[[File:Closed Eyeblossom.png|150px|link=|class=pixel-image]]</span><span>[[File:Cornflower.png|150px|link=|class=pixel-image]]</span><span>[[File:Dandelion.png|150px|link=|class=pixel-image]]</span><span>[[File:Lily of the Valley.png|150px|link=|class=pixel-image]]</span><span>[[File:Open Eyeblossom.png|150px|link=|class=pixel-image]]</span><span>[[File:Oxeye Daisy.png|150px|link=|class=pixel-image]]</span><span>[[File:Poppy.png|150px|link=|class=pixel-image]]</span><span>[[File:Wither Rose.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|White Tulip|link=none}}{{Slot|Red Tulip|link=none}}{{Slot|Orange Tulip|link=none}}{{Slot|Blue Orchid|link=none}}{{Slot|Pink Tulip|link=none}}{{Slot|Azure Bluet|link=none}}{{Slot|Closed Eyeblossom|link=none}}{{Slot|Cornflower|link=none}}{{Slot|Dandelion|link=none}}{{Slot|Lily of the Valley|link=none}}{{Slot|Open Eyeblossom|link=none}}{{Slot|Oxeye Daisy|link=none}}{{Slot|Poppy|link=none}}{{Slot|Wither Rose|link=none}}|type=Block|stackable=Yes (64)}}
+A '''flower''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Crafting Table]] recipes for the 14 variants below, and otherwise leaves them as in vanilla. See {{MCW|Flower}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Flower}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|White Tulip|mcw=White Tulip}} || <code>minecraft:white_tulip</code>
+|-
+| {{ItemLink|Red Tulip|mcw=Red Tulip}} || <code>minecraft:red_tulip</code>
+|-
+| {{ItemLink|Orange Tulip|mcw=Orange Tulip}} || <code>minecraft:orange_tulip</code>
+|-
+| {{ItemLink|Blue Orchid|mcw=Blue Orchid}} || <code>minecraft:blue_orchid</code>
+|-
+| {{ItemLink|Pink Tulip|mcw=Pink Tulip}} || <code>minecraft:pink_tulip</code>
+|-
+| {{ItemLink|Azure Bluet|mcw=Azure Bluet}} || <code>minecraft:azure_bluet</code>
+|-
+| {{ItemLink|Closed Eyeblossom|mcw=Closed Eyeblossom}} || <code>minecraft:closed_eyeblossom</code>
+|-
+| {{ItemLink|Cornflower|mcw=Cornflower}} || <code>minecraft:cornflower</code>
+|-
+| {{ItemLink|Dandelion|mcw=Dandelion}} || <code>minecraft:dandelion</code>
+|-
+| {{ItemLink|Lily of the Valley|mcw=Lily of the Valley}} || <code>minecraft:lily_of_the_valley</code>
+|-
+| {{ItemLink|Open Eyeblossom|mcw=Open Eyeblossom}} || <code>minecraft:open_eyeblossom</code>
+|-
+| {{ItemLink|Oxeye Daisy|mcw=Oxeye Daisy}} || <code>minecraft:oxeye_daisy</code>
+|-
+| {{ItemLink|Poppy|mcw=Poppy}} || <code>minecraft:poppy</code>
+|-
+| {{ItemLink|Wither Rose|mcw=Wither Rose}} || <code>minecraft:wither_rose</code>
+|}
+
+[[Category:Blocks]]

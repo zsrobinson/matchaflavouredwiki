@@ -1,0 +1,46 @@
+{{Vanilla|Concrete}}
+{{Infobox|title=Concrete|images=<span class="animated"><span class="animated-active">[[File:White Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Light Gray Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Gray Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Black Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Brown Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Red Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Orange Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Yellow Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Lime Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Green Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Cyan Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Light Blue Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Blue Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Purple Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Magenta Concrete.png|150px|link=|class=pixel-image]]</span><span>[[File:Pink Concrete.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|White Concrete|link=none}}{{Slot|Light Gray Concrete|link=none}}{{Slot|Gray Concrete|link=none}}{{Slot|Black Concrete|link=none}}{{Slot|Brown Concrete|link=none}}{{Slot|Red Concrete|link=none}}{{Slot|Orange Concrete|link=none}}{{Slot|Yellow Concrete|link=none}}{{Slot|Lime Concrete|link=none}}{{Slot|Green Concrete|link=none}}{{Slot|Cyan Concrete|link=none}}{{Slot|Light Blue Concrete|link=none}}{{Slot|Blue Concrete|link=none}}{{Slot|Purple Concrete|link=none}}{{Slot|Magenta Concrete|link=none}}{{Slot|Pink Concrete|link=none}}|type=Block|stackable=Yes (64)}}
+'''Concrete''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Crafting Table]] recipes for the 16 variants below, and otherwise leaves them as in vanilla. See {{MCW|Concrete}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Concrete}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|White Concrete|mcw=White Concrete}} || <code>minecraft:white_concrete</code>
+|-
+| {{ItemLink|Light Gray Concrete|mcw=Light Gray Concrete}} || <code>minecraft:light_gray_concrete</code>
+|-
+| {{ItemLink|Gray Concrete|mcw=Gray Concrete}} || <code>minecraft:gray_concrete</code>
+|-
+| {{ItemLink|Black Concrete|mcw=Black Concrete}} || <code>minecraft:black_concrete</code>
+|-
+| {{ItemLink|Brown Concrete|mcw=Brown Concrete}} || <code>minecraft:brown_concrete</code>
+|-
+| {{ItemLink|Red Concrete|mcw=Red Concrete}} || <code>minecraft:red_concrete</code>
+|-
+| {{ItemLink|Orange Concrete|mcw=Orange Concrete}} || <code>minecraft:orange_concrete</code>
+|-
+| {{ItemLink|Yellow Concrete|mcw=Yellow Concrete}} || <code>minecraft:yellow_concrete</code>
+|-
+| {{ItemLink|Lime Concrete|mcw=Lime Concrete}} || <code>minecraft:lime_concrete</code>
+|-
+| {{ItemLink|Green Concrete|mcw=Green Concrete}} || <code>minecraft:green_concrete</code>
+|-
+| {{ItemLink|Cyan Concrete|mcw=Cyan Concrete}} || <code>minecraft:cyan_concrete</code>
+|-
+| {{ItemLink|Light Blue Concrete|mcw=Light Blue Concrete}} || <code>minecraft:light_blue_concrete</code>
+|-
+| {{ItemLink|Blue Concrete|mcw=Blue Concrete}} || <code>minecraft:blue_concrete</code>
+|-
+| {{ItemLink|Purple Concrete|mcw=Purple Concrete}} || <code>minecraft:purple_concrete</code>
+|-
+| {{ItemLink|Magenta Concrete|mcw=Magenta Concrete}} || <code>minecraft:magenta_concrete</code>
+|-
+| {{ItemLink|Pink Concrete|mcw=Pink Concrete}} || <code>minecraft:pink_concrete</code>
+|}
+
+[[Category:Blocks]]

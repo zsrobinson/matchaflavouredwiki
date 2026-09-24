@@ -1,0 +1,20 @@
+{{Vanilla|Cut Copper Slab}}
+{{Infobox|title=Cut Copper Slab|images=<span class="animated"><span class="animated-active">[[File:Exposed Cut Copper Slab.png|150px|link=|class=pixel-image]]</span><span>[[File:Weathered Cut Copper Slab.png|150px|link=|class=pixel-image]]</span><span>[[File:Oxidized Cut Copper Slab.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|Exposed Cut Copper Slab|link=none}}{{Slot|Weathered Cut Copper Slab|link=none}}{{Slot|Oxidized Cut Copper Slab|link=none}}|type=Block|stackable=Yes (64)}}
+A '''cut copper slab''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Crafting Table]] recipes for the 3 variants below, and otherwise leaves them as in vanilla. See {{MCW|Cut Copper Slab}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Cut Copper Slab}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Exposed Cut Copper Slab|mcw=Exposed Cut Copper Slab}} || <code>minecraft:exposed_cut_copper_slab</code>
+|-
+| {{ItemLink|Weathered Cut Copper Slab|mcw=Weathered Cut Copper Slab}} || <code>minecraft:weathered_cut_copper_slab</code>
+|-
+| {{ItemLink|Oxidized Cut Copper Slab|mcw=Oxidized Cut Copper Slab}} || <code>minecraft:oxidized_cut_copper_slab</code>
+|}
+
+[[Category:Blocks]]

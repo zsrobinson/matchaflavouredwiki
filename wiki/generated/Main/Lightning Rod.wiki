@@ -1,2 +1,30 @@
-#REDIRECT [[New ways to get vanilla items#Lightning Rod]]
-[[Category:Redirects to lists]]
+{{Vanilla|Lightning Rod}}
+{{Infobox|title=Lightning Rod|images=<span class="animated"><span class="animated-active">[[File:Lightning Rod.png|150px|link=|class=pixel-image]]</span><span>[[File:Exposed Lightning Rod.png|150px|link=|class=pixel-image]]</span><span>[[File:Weathered Lightning Rod.png|150px|link=|class=pixel-image]]</span><span>[[File:Oxidized Lightning Rod.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Lightning Rod.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Exposed Lightning Rod.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Weathered Lightning Rod.png|150px|link=|class=pixel-image]]</span><span>[[File:Waxed Oxidized Lightning Rod.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|Lightning Rod|link=none}}{{Slot|Exposed Lightning Rod|link=none}}{{Slot|Weathered Lightning Rod|link=none}}{{Slot|Oxidized Lightning Rod|link=none}}{{Slot|Waxed Lightning Rod|link=none}}{{Slot|Waxed Exposed Lightning Rod|link=none}}{{Slot|Waxed Weathered Lightning Rod|link=none}}{{Slot|Waxed Oxidized Lightning Rod|link=none}}|type=Block|stackable=Yes (64)}}
+A '''lightning rod''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Stonecutter]] recipes for the 8 variants below, and otherwise leaves them as in vanilla. See {{MCW|Lightning Rod}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Lightning Rod}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|Lightning Rod|mcw=Lightning Rod}} || <code>minecraft:lightning_rod</code>
+|-
+| {{ItemLink|Exposed Lightning Rod|mcw=Exposed Lightning Rod}} || <code>minecraft:exposed_lightning_rod</code>
+|-
+| {{ItemLink|Weathered Lightning Rod|mcw=Weathered Lightning Rod}} || <code>minecraft:weathered_lightning_rod</code>
+|-
+| {{ItemLink|Oxidized Lightning Rod|mcw=Oxidized Lightning Rod}} || <code>minecraft:oxidized_lightning_rod</code>
+|-
+| {{ItemLink|Waxed Lightning Rod|mcw=Waxed Lightning Rod}} || <code>minecraft:waxed_lightning_rod</code>
+|-
+| {{ItemLink|Waxed Exposed Lightning Rod|mcw=Waxed Exposed Lightning Rod}} || <code>minecraft:waxed_exposed_lightning_rod</code>
+|-
+| {{ItemLink|Waxed Weathered Lightning Rod|mcw=Waxed Weathered Lightning Rod}} || <code>minecraft:waxed_weathered_lightning_rod</code>
+|-
+| {{ItemLink|Waxed Oxidized Lightning Rod|mcw=Waxed Oxidized Lightning Rod}} || <code>minecraft:waxed_oxidized_lightning_rod</code>
+|}
+
+[[Category:Blocks]]

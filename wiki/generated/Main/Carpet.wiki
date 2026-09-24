@@ -1,0 +1,46 @@
+{{Vanilla|Carpet}}
+{{Infobox|title=Carpet|images=<span class="animated"><span class="animated-active">[[File:White Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Light Gray Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Gray Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Black Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Brown Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Red Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Orange Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Yellow Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Lime Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Green Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Cyan Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Light Blue Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Blue Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Purple Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Magenta Carpet.png|150px|link=|class=pixel-image]]</span><span>[[File:Pink Carpet.png|150px|link=|class=pixel-image]]</span></span>|invslots={{Slot|White Carpet|link=none}}{{Slot|Light Gray Carpet|link=none}}{{Slot|Gray Carpet|link=none}}{{Slot|Black Carpet|link=none}}{{Slot|Brown Carpet|link=none}}{{Slot|Red Carpet|link=none}}{{Slot|Orange Carpet|link=none}}{{Slot|Yellow Carpet|link=none}}{{Slot|Lime Carpet|link=none}}{{Slot|Green Carpet|link=none}}{{Slot|Cyan Carpet|link=none}}{{Slot|Light Blue Carpet|link=none}}{{Slot|Blue Carpet|link=none}}{{Slot|Purple Carpet|link=none}}{{Slot|Magenta Carpet|link=none}}{{Slot|Pink Carpet|link=none}}|type=Block|stackable=Yes (64)}}
+A '''carpet''' is a block from vanilla ''Minecraft''. [[Matcha Flavoured]] adds [[Crafting Table]] recipes for the 16 variants below, and otherwise leaves them as in vanilla. See {{MCW|Carpet}} for everything else.
+
+== Obtaining ==
+{{Data/Family/Carpet}}
+
+== Data values ==
+=== ID ===
+{| class="wikitable sortable"
+! Name !! Resource location
+|-
+| {{ItemLink|White Carpet|mcw=White Carpet}} || <code>minecraft:white_carpet</code>
+|-
+| {{ItemLink|Light Gray Carpet|mcw=Light Gray Carpet}} || <code>minecraft:light_gray_carpet</code>
+|-
+| {{ItemLink|Gray Carpet|mcw=Gray Carpet}} || <code>minecraft:gray_carpet</code>
+|-
+| {{ItemLink|Black Carpet|mcw=Black Carpet}} || <code>minecraft:black_carpet</code>
+|-
+| {{ItemLink|Brown Carpet|mcw=Brown Carpet}} || <code>minecraft:brown_carpet</code>
+|-
+| {{ItemLink|Red Carpet|mcw=Red Carpet}} || <code>minecraft:red_carpet</code>
+|-
+| {{ItemLink|Orange Carpet|mcw=Orange Carpet}} || <code>minecraft:orange_carpet</code>
+|-
+| {{ItemLink|Yellow Carpet|mcw=Yellow Carpet}} || <code>minecraft:yellow_carpet</code>
+|-
+| {{ItemLink|Lime Carpet|mcw=Lime Carpet}} || <code>minecraft:lime_carpet</code>
+|-
+| {{ItemLink|Green Carpet|mcw=Green Carpet}} || <code>minecraft:green_carpet</code>
+|-
+| {{ItemLink|Cyan Carpet|mcw=Cyan Carpet}} || <code>minecraft:cyan_carpet</code>
+|-
+| {{ItemLink|Light Blue Carpet|mcw=Light Blue Carpet}} || <code>minecraft:light_blue_carpet</code>
+|-
+| {{ItemLink|Blue Carpet|mcw=Blue Carpet}} || <code>minecraft:blue_carpet</code>
+|-
+| {{ItemLink|Purple Carpet|mcw=Purple Carpet}} || <code>minecraft:purple_carpet</code>
+|-
+| {{ItemLink|Magenta Carpet|mcw=Magenta Carpet}} || <code>minecraft:magenta_carpet</code>
+|-
+| {{ItemLink|Pink Carpet|mcw=Pink Carpet}} || <code>minecraft:pink_carpet</code>
+|}
+
+[[Category:Blocks]]
