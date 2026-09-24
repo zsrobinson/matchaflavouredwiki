@@ -19,65 +19,9 @@ On Normal, the difficulty is raised to Hard automatically when any player's mini
 
 === Mob modifications ===
 {{Main|Spawning#Mob modifications}}
-Each time one of the pack's "mundane hostile" mobs appears (zombie, husk, drowned, zombie villager, skeleton, stray, bogged, parched, creeper, spider, cave spider, slime, enderman, witch or silverfish), the pack checks it once and changes its attributes according to the difficulty.<ref>{{Source|MF_datapack/data/matcha/tags/entity_type/mundane_hostiles.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/modify_mob.mcfunction}}</ref> Mobs not listed in the table keep their vanilla attributes. A dash means the vanilla value is kept.
+Each time one of the pack's "mundane hostile" mobs appears (zombie, husk, drowned, zombie villager, skeleton, stray, bogged, parched, creeper, spider, cave spider, slime, enderman, witch or silverfish), the pack checks it once and changes its attributes according to the difficulty.<ref>{{Source|MF_datapack/data/matcha/tags/entity_type/mundane_hostiles.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/modify_mob.mcfunction}}</ref> Mobs not listed in the table keep their vanilla attributes, as do the attributes marked "vanilla".
 
-{| class="wikitable"
-! Mob !! Attribute !! Easy !! Normal !! Hard
-|-
-! rowspan="5" | [[Zombie]] (adult)
-| Max health || – || {{Hp|10}} || {{Hp|15}}
-|-
-| Movement speed || – || 0.34 || 0.38
-|-
-| Step height || – || 1 || 1
-|-
-| Attack damage || – || – || 5
-|-
-| Jump strength || – || – || 0.6
-|-
-! Baby zombie, husk, drowned and zombie villager
-| Max health || {{Hp|4}} || {{Hp|4}} || {{Hp|7}}
-|-
-! rowspan="8" | [[Husk]] (adult)
-| Max health || – || {{Hp|30}} || {{Hp|40}}
-|-
-| Movement speed || – || 0.25 || 0.265
-|-
-| Attack damage || – || 10 || 15
-|-
-| Armor || – || 12 || 14
-|-
-| Follow range || – || 50 || 60
-|-
-| Knockback resistance || – || 0.9 || 1
-|-
-| Step height || – || 1 || 1
-|-
-| Movement efficiency (land and water) || – || 1 || 1
-|-
-! rowspan="2" | [[Skeleton]], [[Stray]], [[Bogged]] and parched
-| Max health || {{Hp|10}} || {{Hp|10}} || {{Hp|12}}
-|-
-| Bow || – || Punch I || Punch II
-|-
-! [[Creeper]]
-| Max health || {{Hp|14}} || {{Hp|16}} || {{Hp|18}}
-|-
-! rowspan="2" | [[Cave Spider]]
-| Max health || {{Hp|2}} || {{Hp|4}} || {{Hp|6}}
-|-
-| Movement speed || 0.35 || 0.4 || 0.42
-|-
-! rowspan="3" | [[Spider]]
-| Jump strength || – || 0.85 || 0.85
-|-
-| Fall damage || – || none || none
-|-
-| Effect || – || {{MCW|Weaving}} I (infinite) || {{MCW|Weaving}} II (infinite)
-|-
-! [[Silverfish]]
-| Max health || {{Hp|2}} || {{Hp|2}} || {{Hp|4}}
-|}
+{{Data/Difficulty}}
 <ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/easy_modifications/check_type.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/check_type.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/check_type.mcfunction}}</ref>
 
 Easy is close to vanilla mob behavior: zombies, husks and spiders are left unchanged, and only skeletons, creepers, cave spiders, silverfish and baby zombies are weakened. The Normal and Hard skeleton changes replace the skeleton's bow with a new one that has only Punch and can't be dropped. The pack also means to set the equipment drop chances of all of these mobs to 0, but a targeting bug stops this from working reliably; see [[Spawning#Mob modifications]].

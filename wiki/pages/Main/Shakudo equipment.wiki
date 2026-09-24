@@ -7,7 +7,7 @@ Shakudo alloy is crafted from four blocks of copper and two blocks of gold. Copp
 == Intrinsics ==
 * '''Tools''' have Silk Touch.
 * '''Axe, sword and spear''' give the wielder Regeneration III for 1 second on each hit. In 1.12.2 this intrinsic has no name in the language file, so their tooltips show the translation key "enchantment.kleispack.shakudo_weapon" instead of its {{G|Health}}{{G|Attack damage}} glyphs.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
-* '''Armor''': each piece cleanses one kind of effect (helmet: Blindness and Darkness; chestplate: Poison; leggings: Slowness; boots: Levitation), gives magic protection 8, and counts towards the regeneration bonus: Regeneration I for 3 seconds every 30, 26, 22 or 18 seconds with one to four pieces.<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
+* '''Armor''': each piece cleanses one kind of effect (helmet: Blindness and Darkness; chestplate: Poison; leggings: Slowness; boots: Levitation), gives magic protection 8, and counts towards the regeneration bonus: {{Data/Set bonus|shakudo_regen=1}} with one piece, and every {{Data/Set bonus|shakudo_regen=2|show=every}}, {{Data/Set bonus|shakudo_regen=3|show=every}} or {{Data/Set bonus|shakudo_regen=4|show=every}} seconds with two, three or four.<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
 
 The video describes shakudo as "a gold-copper alloy that cleanses malefic, steals life from mobs, and whose tools have silk touch as an intrinsic."<ref>{{Cite video|quote=Shikudo, a gold-copper alloy that cleanses malefic, steals life from mobs, and whose tools have silk touch as an intrinsic.}}</ref>
 

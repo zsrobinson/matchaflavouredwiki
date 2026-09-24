@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable"
+! Attribute !! Easy !! Normal !! Hard
+|-
+! Jump strength{{{jump_strength|}}}
+| vanilla || 0.85 || 0.85
+|-
+! Fall damage{{{fall_damage_multiplier|}}}
+| vanilla || none || none
+|-
+! {{MCW|Weaving}}{{{effect/weaving|}}}
+| none || I (infinite) || II (infinite)
+|}</includeonly><noinclude>Generated from the pack's spawn functions (<code>mechanics/spawn_mechanic</code>). A note for a row goes in a parameter named by the row ID. [[Category:Generated data]]</noinclude>
