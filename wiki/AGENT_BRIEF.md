@@ -11,6 +11,8 @@ of minecraft.wiki. Run every command from the repository root.
    Link to other areas' pages by their planned titles.
 3. `transcript.txt` and `sources/transcripts/*.txt`: the developer's videos about the pack (design
    intent, history). Cite them with `{{Cite video|id=<video id>|title=<title>|quote=...}}`.
+4. `sources/modrinth_project.md`: the pack's Modrinth description and gallery captions, also in the
+   developer's own words (tips, known bugs, credits). Cite it with `{{Cite Modrinth|date=<date>|quote=...}}`.
 
 ## Sources (only these)
 - `source/matcha-flavoured/`: the official repository, checked out at the synced commit.
@@ -19,6 +21,7 @@ of minecraft.wiki. Run every command from the repository root.
   holds the names and descriptions. `changelog.md` covers the in-development changes, and
   `README.md` and `my_current_and_future_plans.md` hold the developer's notes.
 - `source/changelogs/*.md`: official release notes for every version (from Modrinth).
+- `sources/modrinth_project.md`: the Modrinth project description and gallery captions.
 - `source/vanilla-data`, `source/vanilla-summary`, `source/vanilla-assets`: vanilla data for the
   Minecraft version in `tools/mc_version.txt`, used only to say what the pack changed.
 - `build/data.json`: everything already extracted from the source. `python3 tools/query.py`

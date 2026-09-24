@@ -11,6 +11,9 @@ that mention it by name. The autopilot works through the list and ticks it off i
                                       (build/data.before.json)
   tools/update_report.py              after tools/fetch_sources.sh --update and tools/extract.py:
                                       write build/update-report.md and print a summary
+  tools/update_report.py --description-only
+                                      when only the Modrinth description changed (no new release): the
+                                      report holds just its line
 
 Sections:
   1. Data changes: items, recipes, loot tables, trades, enchantments, advancements and names (lang),
@@ -19,6 +22,8 @@ Sections:
   2. Source files the generator doesn't read (functions, worldgen, structures, predicates...): only
      reading the diff can tell what changed. Grouped by folder.
   3. Pages citing files that were deleted or moved.
+A changed Modrinth description (sources/modrinth_project.md differs from the last commit, after
+tools/fetch_modrinth_project.py) gets its own line at the top.
 """
 import json
 import os
@@ -292,7 +297,36 @@ def file_lines(frm, to, pages):
     return out, covered, deleted
 
 
+DESCRIPTION = 'sources/modrinth_project.md'
+
+
+def description_lines(pages):
+    """A line for the Modrinth description, when tools/fetch_modrinth_project.py changed it."""
+    diff = subprocess.run(['git', '-C', ROOT, 'diff', '--stat', 'HEAD', '--', DESCRIPTION],
+                          capture_output=True, text=True).stdout.strip()
+    new = subprocess.run(['git', '-C', ROOT, 'ls-files', '--others', '--', DESCRIPTION],
+                         capture_output=True, text=True).stdout.strip()
+    if not diff and not new:
+        return []
+    citing = {t for t, s in pages.text.items() if '{{Cite Modrinth' in s}
+    return ['- [ ] The Modrinth project description or gallery changed: read `git diff HEAD -- %s` in full. It is '
+            'the developer\'s own words, a primary source like the release notes. For each change: correct the '
+            'pages it settles (the code still wins where they disagree; describe the code and note the difference), '
+            'add what is new (tips, known bugs, credits, design intent) and cite it with '
+            '`{{Cite Modrinth|quote=...}}` (`gallery=<title>` for a caption). Check the pages that already cite it, '
+            'and remove claims the developer took back. Pages citing it: %s' % (
+                DESCRIPTION, page_list(citing) if citing else 'none'), '']
+
+
 def main():
+    if '--description-only' in sys.argv:
+        lines = description_lines(Pages())
+        md = ['# Update report: Modrinth description', ''] + (lines or ['Nothing changed.', ''])
+        os.makedirs(os.path.dirname(OUT), exist_ok=True)
+        with open(OUT, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(md) + '\n')
+        print('%s: %s' % (os.path.relpath(OUT, ROOT), 'description changed' if lines else 'nothing changed'))
+        return 0
     if '--snapshot' in sys.argv:
         shutil.copyfile(DATA, BEFORE)
         print('baseline: build/data.before.json (pack %s)' % json.load(open(BEFORE))['meta']['git_head'][:8])
@@ -328,6 +362,7 @@ def main():
     if covered:
         md += ['Changed files the generator reads (the tables below and `git diff wiki/generated` cover them): ' +
                ', '.join('%s %d' % (k, v) for k, v in sorted(covered.items())) + '.', '']
+    md += description_lines(pages)
     if 'changelog.md' in git('diff', '--name-only', frm, to).split():
         md += ['- [ ] `changelog.md` changed: read `git -C source/matcha-flavoured diff %s..%s -- changelog.md`.' % (frm[:8], to[:8]), '']
     todo = covered_only = 0

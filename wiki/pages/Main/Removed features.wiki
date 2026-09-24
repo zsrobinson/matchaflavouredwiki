@@ -1,5 +1,5 @@
 {{See also|Changes from vanilla}}
-This page lists vanilla features that [[Matcha Flavoured]] removes or disables, and features the pack itself once had but later removed. Most vanilla recipes the pack replaces are blocked through the filter in the datapack's <code>pack.mcmeta</code>, which hides 361 vanilla recipe files and the five vanilla advancement folders.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+This page lists vanilla features that [[Matcha Flavoured]] removes or disables, and features the pack itself once had but later removed. Most vanilla recipes the pack replaces are blocked through the filter in the datapack's <code>pack.mcmeta</code>, which hides {{Data/Blocked vanilla/Recipes}} vanilla recipes and the {{Data/Blocked vanilla/Tabs}} vanilla advancement tabs; [[#Blocked vanilla recipes and advancements|the full list]] is at the end of this page.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
 == Removed vanilla features ==
 ; Stone tools
@@ -22,8 +22,8 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 : All five vanilla advancement tabs are blocked and replaced. See [[Advancements]].
 ; Crafting-grid repair
 : The vanilla <code>repair_item</code> recipe is blocked; equipment is repaired in an [[anvil]], without the experience cap. See [[Repairing]].
-; Blocked vanilla recipes
-: Besides the above, the filter blocks the vanilla recipes for ore smelting (replaced by kiln and blast furnace recipes), the furnace, smoker, blast furnace, campfire and smithing table, iron, gold, diamond and netherite equipment, rails, hoppers, buckets, cauldrons and other iron items, food such as bread, cake, cookies, stews and pumpkin pie, dyes, carpets, banners, chiseled blocks, glazed terracotta, glass, the shulker box, bundle, TNT, ender eye, ender chest, mace, wind charge, recovery compass and more. Most have pack replacements with different ingredients.
+; Other blocked vanilla recipes
+: Besides the above, the filter blocks several hundred vanilla recipes, listed [[#Blocked vanilla recipes and advancements|below]]. Most are replaced by the pack's own recipes with different ingredients or at a different station: ores are smelted in the [[Blast Furnace|blast furnace]] (copper also in the [[Mud Kiln|mud kiln]]), and chiseled blocks come from the [[stonecutter]]. A few items have no recipe left at all.
 ; Sapling and stick drops from leaves
 : Leaves drop neither; each sapling is crafted from one of its leaves, a recipe unlocked by picking up the matching log.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/oak_leaves.json}}</ref> Removed in [[Matcha Flavoured 0.5-alpha|0.5-alpha]].
 
@@ -49,6 +49,11 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 |-
 | Redstone particles || 1.12.2 ||
 |}
+
+== Blocked vanilla recipes and advancements ==
+Every vanilla recipe and advancement tab that the datapack's filter hides, grouped by the station and recipe book tab vanilla gave the recipe. Items are listed by their name in Matcha Flavoured. "Still made with" lists the stations whose recipes still make the item: the pack's own recipes and the vanilla recipes it keeps. "None" means no recipe makes it any more; such items can still come from loot, trading or other sources.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+{{Data/Blocked vanilla}}
 
 == References ==
 {{reflist}}

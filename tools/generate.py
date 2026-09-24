@@ -13,6 +13,7 @@ Outputs (Template namespace unless noted):
   Data/Trades/<profession> full trade table per villager profession
   Data/Loot/<table>        drop table for each loot table the pack defines
   Data/Food table, Data/Renamed items, Data/Trim templates
+  Data/Blocked vanilla     the vanilla recipes and advancement tabs the pack.mcmeta filter hides (and /Recipes, /Tabs, /Advancements counts)
   Data/Enchantments, Data/Enchantments/New, Data/Enchantments/Vanilla   enchantment lists (notes by enchantment id)
   Data/Blessings, Data/Ofuda, Data/Intrinsic items/<page>   enchanted books and the items that carry intrinsics
   Data/Advancements/<tab>, Data/Advancements/tabs, Data/Advancements/technical
@@ -1221,6 +1222,79 @@ def renamed_table():
         rows.append('|-\n| %s || {{MCW|%s}} || <code>%s</code> || %s' % (icon, van, k.split('.', 2)[-1], kind))
     return ('<includeonly>{| class="wikitable sortable"\n! Matcha Flavoured name !! Vanilla name !! ID !! Kind\n' +
             '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
+
+
+# ------------------------------------------------------------------ blocked vanilla
+# Template:Data/Blocked vanilla: everything the datapack's pack.mcmeta filter hides from vanilla, for
+# Removed features. Recipes are grouped by the station and recipe book tab vanilla gave them, one row per
+# item, with the stations that still make it (the pack's recipes and the vanilla ones it keeps).
+BLOCKED_GROUPS = [  # (heading, recipe type, vanilla recipe book categories)
+    ('Crafting: building blocks', 'crafting', {'building'}),
+    ('Crafting: redstone', 'crafting', {'redstone'}),
+    ('Crafting: equipment', 'crafting', {'equipment'}),
+    ('Crafting: miscellaneous', 'crafting', {'misc'}),
+    ('[[Oven]] (furnace)', 'smelting', None),
+    ('[[Blast Furnace|Blast furnace]]', 'blasting', None),
+    ('[[Mud Kiln]] (smoker)', 'smoking', None),
+    ('[[Kindling]] (campfire)', 'campfire_cooking', None),
+    ('[[Smithing Table|Smithing table]]', 'smithing_transform', None),
+]
+VANILLA_TABS = {'story': 'Minecraft', 'adventure': 'Adventure', 'nether': 'Nether', 'end': 'The End',
+                'husbandry': 'Husbandry'}
+
+
+def blocked_group(r):
+    t = r['type'].split(':')[-1]
+    for i, (_, kind, cats) in enumerate(BLOCKED_GROUPS):
+        if (t.startswith(kind) if kind == 'crafting' else t == kind) and (cats is None or r['category'] in cats):
+            return i
+    return len(BLOCKED_GROUPS)  # special recipes (repair_item)
+
+
+def blocked_vanilla_table():
+    groups = defaultdict(lambda: defaultdict(list))
+    for r in DATA['blocked_recipes']:
+        out = r['output']
+        groups[blocked_group(r)][out['name'] if out else None].append(r)
+    parts, total = [], 0
+    for gi in sorted(groups):
+        heading = BLOCKED_GROUPS[gi][0] if gi < len(BLOCKED_GROUPS) else 'Special recipes'
+        rows = []
+        for name, rs in sorted(groups[gi].items(), key=lambda kv: kv[0] or ''):
+            total += len(rs)
+            ids = [r['id'].split(':')[-1] for r in rs]
+            prefix = os.path.commonprefix(ids)
+            ids = ('<code>%s*</code> (%d recipes)' % (prefix, len(ids)) if len(ids) > 3 and len(prefix) > 4
+                   else ', '.join('<code>%s</code>' % i for i in ids))
+            if name is None:
+                rows.append('|-\n| [[Repairing|Combining two damaged items]] || %s || [[Anvil]]' % ids)
+                continue
+            item = il(name) if has_icon(name) else item_link(name)
+            count = rs[0]['output'].get('count', 1)
+            if count > 1 and all(r['output'].get('count', 1) == count for r in rs):
+                item += ' ×%d' % count
+            it = ITEMS.get(name) or {}
+            if it.get('renamed_vanilla') and it.get('vanilla_name') and it['vanilla_name'] != name:
+                item += '<br /><small>(vanilla {{MCW|%s}})</small>' % it['vanilla_name']
+            still = sorted({r['station'] for r in producing(name) if not r['id'].startswith('debug:')})
+            rows.append('|-\n| %s || %s || %s' % (item, ids, ', '.join(link_station(s) for s in still) or 'None'))
+        parts.append('=== %s ===\n{| class="wikitable sortable"\n! Item !! Vanilla recipe !! Still made with\n%s\n|}'
+                     % (heading, '\n'.join(rows)))
+    adv = DATA.get('blocked_advancements') or {}
+    if adv:
+        rows = '\n'.join('|-\n| %s || <code>minecraft:%s/</code> || %d' % (VANILLA_TABS.get(k, k.title()), k, n)
+                         for k, n in sorted(adv.items(), key=lambda kv: list(VANILLA_TABS).index(kv[0])
+                                            if kv[0] in VANILLA_TABS else 99))
+        parts.append('=== Advancements ===\n{| class="wikitable"\n! Tab !! Folder !! Advancements\n%s\n|}' % rows)
+    return ('<includeonly>' + '\n\n'.join(parts) + '</includeonly><noinclude>Every vanilla recipe and advancement '
+            'the datapack\'s <code>pack.mcmeta</code> filter hides (%d recipes, %d advancement tabs). Generated '
+            'from the pack source by <code>tools/generate.py</code>. Do not edit.\n[[Category:Generated data]]'
+            '</noinclude>' % (total, len(adv)))
+
+
+def blocked_vanilla_counts():
+    return {'recipes': len(DATA['blocked_recipes']), 'advancements': sum((DATA.get('blocked_advancements') or {}).values()),
+            'tabs': len(DATA.get('blocked_advancements') or {})}
 
 
 # ------------------------------------------------------------------ enchantment tables
@@ -3370,6 +3444,10 @@ def main():
                 write('Template', 'Data/Loot/' + lid.replace(':', '/'), p); n['loot'] += 1
     write('Template', 'Data/Food table', food_table())
     write('Template', 'Data/Renamed items', renamed_table())
+    write('Template', 'Data/Blocked vanilla', blocked_vanilla_table())
+    for k, v in blocked_vanilla_counts().items():
+        write('Template', 'Data/Blocked vanilla/' + k.title(), '<includeonly>%d</includeonly><noinclude>Number of '
+              'vanilla %s the pack.mcmeta filter hides. Generated.</noinclude>' % (v, {'tabs': 'advancement tabs'}.get(k, k)))
     write('Template', 'Data/Trim templates', trim_templates_table())
     for title, text in list(enchantment_tables().items()) + list(book_tables().items()) + list(intrinsic_item_tables().items()):
         write('Template', title, text)
