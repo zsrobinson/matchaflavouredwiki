@@ -2,13 +2,13 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Smithing Template}} || 1 || 50.0% || 50.0% || 
+| {{ItemLink|Vex Armor Trim Smithing Template}} || 1 || 50.0% || 50.0% || 
 |-
 | {{ItemLink|Resin Clump|mcw=Resin Clump}} || 2–4 || 28.6% || 53.8% || 
 |-
 | {{ItemLink|Lead|mcw=Lead}} || 1 || 26.0% || 43.5% || 
 |-
-| {{ItemLink|Golden Apple}} || 1 || 22.1% || 38.0% || 
+| {{ItemLink|Golden Apple}} || 1 || 19.5% || 34.1% || 
 |-
 | {{ItemLink|Music Disc (C418 - 13)}} || 1 || 19.5% || 34.1% || 
 |-
@@ -22,7 +22,7 @@
 |-
 | {{ItemLink|String}} || 1–8 || 16.7% || 42.1% || 
 |-
-| {{ItemLink|Book|mcw=Book}} || 1 || 13.0% || 23.8% || 
+| {{ItemLink|Hell-Bound Book|Hell-Bound Book (random enchantment)}} || 1 || 13.0% || 23.8% || 
 |-
 | {{ItemLink|Bread}} || 1 || 11.4% || 25.5% || 
 |-
@@ -57,6 +57,8 @@
 | {{ItemLink|Diamond Leggings}} || 1 || 2.78% || 8.10% || 
 |-
 | {{ItemLink|Diamond Boots}} || 1 || 2.78% || 8.10% || 
+|-
+| {{ItemLink|Golden Apple|Golden Apple (replaces Enchanted Golden Apple)}} || 1 || 2.60% || 5.11% || 
 |-
 | {{ItemLink|Diamond Pickaxe}} || 1 || 2.22% || 6.52% || 
 |-

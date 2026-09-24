@@ -75,8 +75,8 @@ source/                 (gitignored) inputs, fetched by tools/fetch_sources.sh
 transcript.txt          the developer's introduction video, used for design intent and history
 tools/
   extract.py            source → build/data.json (items, recipes, loot, trades, enchantments, advancements)
-  images.py             textures → build/images (item icons, block icons drawn from their models, tooltip glyphs,
-                        and the committed renders) and site/assets/gui (station screens, sprites, glyph sheet)
+  images.py             textures → build/images (item icons, isometric block icons, tooltip glyphs,
+                        and the committed renders) and site/assets/gui (the pack's station screens, sprites, glyph sheet)
   render.py             tools/renders.json → wiki/renders (structure, mob and armor renders, committed;
                         drawn by tools/render/ in headless WebGL, only when their inputs change)
   entity_models.py      the Minecraft client's entity models → tools/render/src/entity_models.json

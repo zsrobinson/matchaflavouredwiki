@@ -31,6 +31,10 @@
 |}
 Shakudo, hepatizon and electrum have their own trim materials, with darker variants on armor of the same alloy.<ref>{{Source|MF_datapack/data/matcha/trim_material/shakudo.json}}</ref> A silver material name exists in the language file but has no recipe. Most trim templates keep their vanilla duplication recipes.
 
+== Templates ==
+Each trim is applied with its own smithing template. In-game every trim template is named ''Smithing Template'', and the line under the name gives the trim (for example "Flow Armor Trim"). The table lists where the pack's loot gives each template and what duplicates it at a crafting table; each recipe makes two templates from one. For the template that upgrades equipment, see [[Smithing Upgrade Template]].
+{{Data/Trim templates}}
+
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Fixed the flow armor trim.}}

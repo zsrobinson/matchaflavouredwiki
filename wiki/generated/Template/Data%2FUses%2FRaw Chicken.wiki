@@ -3,18 +3,18 @@
 |-
 | [[Cooked Chicken]]
 | [[Raw Chicken]]
-| {{Cooking|station=Kindling|Input=Raw Chicken|Output=Cooked Chicken|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_chicken.json|matcha:food/campfire/cooked_chicken}}</small>
+| {{Cooking|station=Kindling|Input=Raw Chicken|Output=Cooked Chicken|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Ramen Stock]]
 | [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Chicken]] or [[Seitan]] +<br />[[Bowl]]
-| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_ramen.json|matcha:food/crafting/uncooked_ramen}}</small>
+| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}
 |-
 | [[Charred Meat]]
 | [[Raw Flesh]] or [[Raw Chicken]] or [[Raw Beef]] or [[Raw Porkchop]] or [[Raw Mutton]]
-| {{Cooking|station=Mud Kiln|Input=Raw Flesh;Raw Chicken;Raw Beef;Raw Porkchop;Raw Mutton|Output=Charred Meat|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json|matcha:food/kiln/charred_meat}}</small>
+| {{Cooking|station=Mud Kiln|Input=Raw Flesh;Raw Chicken;Raw Beef;Raw Porkchop;Raw Mutton|Output=Charred Meat|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Cooked Chicken]]
 | [[Raw Chicken]]
-| {{Cooking|station=Oven|Input=Raw Chicken|Output=Cooked Chicken|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_chicken.json|matcha:food/oven/cooked_chicken}}</small>
+| {{Cooking|station=Oven|Input=Raw Chicken|Output=Cooked Chicken|time=5|note=5 s, 0.35 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

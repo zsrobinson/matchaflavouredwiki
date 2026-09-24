@@ -5,8 +5,8 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Cracked stone bricks <small>({{Source|vanilla:loot_table/blocks/cracked_stone_bricks.json|blocks/cracked_stone_bricks}})</small> || 1 || 100% || 
+| Cracked stone bricks || 1 || 100% || 
 |-
-| Infested cracked stone bricks <small>({{Source|vanilla:loot_table/blocks/infested_cracked_stone_bricks.json|blocks/infested_cracked_stone_bricks}})</small> || 1 || 100% || Silk Touch
+| Infested cracked stone bricks || 1 || 100% || Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

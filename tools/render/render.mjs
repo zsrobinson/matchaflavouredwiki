@@ -16,7 +16,7 @@ const PACK = `${SRC}/matcha-flavoured/MF_resourcepack/assets`
 const VANILLA = `${SRC}/vanilla-assets/assets`
 const DATA = [`${SRC}/matcha-flavoured/MF_datapack/data`, `${SRC}/vanilla-data/data`]
 // entity textures deepslate's special block renderers draw with (chests, beds, signs, skulls...)
-const ENTITY_DIRS = ['chest', 'bed', 'bell', 'signs', 'banner', 'decorated_pot', 'shulker', 'conduit', 'skeleton', 'zombie', 'creeper', 'piglin', 'enderdragon', 'player', 'copper_golem', 'shield']
+const ENTITY_DIRS = ['chest', 'bed', 'bell', 'signs', 'banner', 'decorated_pot', 'shulker', 'conduit', 'skeleton', 'zombie', 'creeper', 'piglin', 'enderdragon', 'player']
 
 const [jobsFile, outDir] = process.argv.slice(2)
 const jobs = JSON.parse(fs.readFileSync(jobsFile, 'utf8'))
@@ -50,9 +50,7 @@ const idPath = id => (id.includes(':') ? id.split(':') : ['minecraft', id])
 const readJson = f => JSON.parse(fs.readFileSync(f, 'utf8'))
 
 const blockstates = collect('blockstates', '.json')
-const models = collect('models', '.json', r => r.startsWith('block/') || r.startsWith('item/'))
-const itemTextures = collect('textures', '.png', r => r.startsWith('item/'))
-const itemDefs = collect('items', '.json')
+const models = collect('models', '.json', r => r.startsWith('block/'))
 const atlasTextures = collect('textures', '.png', r => r.startsWith('block/') || ENTITY_DIRS.some(d => r.startsWith(`entity/${d}/`)))
 // Minecraft 26 moved sign textures to block/<wood>_sign and block/<wood>_hanging_sign; deepslate still
 // asks for entity/signs/<wood> and entity/signs/hanging/<wood>
@@ -84,10 +82,6 @@ const assets = {
   '/asset/models': () => once('m', () => Object.fromEntries(Object.entries(models).map(([k, f]) => { try { return [k, readJson(f)] } catch { return [k, null] } }).filter(([, v]) => v))),
   '/asset/textures': () => once('t', () => Object.keys(atlasTextures).sort()),
   '/asset/blocks': () => once('b', () => readJson(`${SRC}/vanilla-summary/blocks/data.min.json`)),
-  // item icons: item model definitions (assets/<ns>/items), item textures, vanilla default components
-  '/asset/items': () => once('i', () => Object.fromEntries(Object.entries(itemDefs).map(([k, f]) => [k, readJson(f)]))),
-  '/asset/item-textures': () => once('it', () => Object.keys(itemTextures).sort()),
-  '/asset/item-components': () => once('ic', () => readJson(`${SRC}/vanilla-summary/item_components/data.min.json`)),
 }
 function serve(p) {
   if (assets[p]) return { body: assets[p](), type: 'application/json' }
@@ -95,7 +89,7 @@ function serve(p) {
   let f, type = 'application/json'
   if (p.startsWith('/tex/')) {  // any texture by id, pack first
     const [ns, name] = idPath(p.slice(5)); type = 'image/png'
-    f = atlasTextures[`${ns}:${name}`] ?? itemTextures[`${ns}:${name}`] ?? firstExisting([PACK, VANILLA].map(r => `${r}/${ns}/textures/${name}.png`))
+    f = atlasTextures[`${ns}:${name}`] ?? firstExisting([PACK, VANILLA].map(r => `${r}/${ns}/textures/${name}.png`))
   } else if (p.startsWith('/texmeta/')) {  // a texture's .mcmeta (villager hats), pack first
     const [ns, name] = idPath(p.slice(9))
     f = firstExisting([PACK, VANILLA].map(r => `${r}/${ns}/textures/${name}.png.mcmeta`))
@@ -152,10 +146,7 @@ for (const job of jobs) {
   await page.waitForFunction(() => window.RESULT, null, { timeout: 600000 })
   const res = await page.evaluate(() => window.RESULT)
   if (!res.ok) { failed++; console.log(JSON.stringify({ name: job.name, error: res.error })); continue }
-  // a job draws one picture, or several (item icons: { file: png })
-  for (const [name, png] of Object.entries(res.pngs ?? { [job.name]: res.png })) {
-    fs.writeFileSync(path.join(outDir, name + '.png'), Buffer.from(png.split(',')[1], 'base64'))
-  }
+  fs.writeFileSync(path.join(outDir, job.name + '.png'), Buffer.from(res.png.split(',')[1], 'base64'))
   console.log(JSON.stringify({ name: job.name, ...res.info }))
 }
 await browser.close()

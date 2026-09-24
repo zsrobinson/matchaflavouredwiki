@@ -5,15 +5,15 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Slime <small>({{Source|vanilla:loot_table/entities/slime.json|entities/slime}})</small> || 0–2 || 33.3% || entity condition, not damage source
+| Slime || 0–2 || 33.3% || entity condition, not damage source
 |-
-| Slime <small>({{Source|vanilla:loot_table/entities/slime.json|entities/slime}})</small> || 1 || 50.0% || entity condition, damage source
+| Slime || 1 || 50.0% || entity condition, damage source
 |}
 
 '''Gameplay'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Panda sneeze <small>({{Source|vanilla:loot_table/gameplay/panda_sneeze.json|gameplay/panda_sneeze}})</small> || 1 || 0.143% || 
+| Panda sneeze || 1 || 0.143% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -5,15 +5,15 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Trial chambers / intersection barrel <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/intersection_barrel.json|chests/trial_chambers/intersection_barrel}})</small> || 5–15 || 85.1% || 
+| Trial chambers / intersection barrel || 5–15 || 85.1% || 
 |-
-| Trial chambers / supply <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/supply.json|chests/trial_chambers/supply}})</small> || 3–6 || 27.2% || 
+| Trial chambers / supply || 3–6 || 27.2% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Spruce planks <small>({{Source|vanilla:loot_table/blocks/spruce_planks.json|blocks/spruce_planks}})</small> || 1 || 100% || 
+| Spruce planks || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

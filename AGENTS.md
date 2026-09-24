@@ -102,12 +102,15 @@ the swap mid-way.
   MediaWiki lays a thumb out as a table, which ignores `max-width`, so the phone rules make them blocks.
 - **Icons:**
   - Item icons are `File:<Item Name>.png`, upscaled 8× nearest-neighbour.
-  - Block items are drawn from their item models by `tools/render/src/items.js` (called by `images.py`),
-    as the game draws a block in a slot: the model's `gui` transform, so stairs, fences, chests, beds,
-    heads and the pack's own models look like themselves, and a block is 14/16 of the slot wide.
-    Lighting is the slot's (top 100%, left 80%, right 62%). Without Node or a Chromium they fall back
-    to a Python isometric cube with a warning; CI fails instead.
-  - Foliage textures are tinted (the pack's grass colour map for grass items).
+  - Blocks are rendered as true isometric cubes (horizontal step = cos 30°); don't go back to 2:1.
+  - **Orientation matches the game's inventory:** the model's north (front) face is on the right, east
+    on the left. That puts the chest latch, a carved pumpkin's face and a furnace front on the right.
+  - Each icon is drawn the way the inventory draws it: the `gui` node of the item definition, which
+    `extract.py` records. Flat items stack their layers with the game's tints; other block models
+    (stairs, fences, beds…) and items drawn by `minecraft:special` entity renderers (chests, sacks,
+    heads, banners, shields, decorated pots, copper golem statues) go through the small 3D renderer in
+    `images.py`. A special type it can't draw falls back to the base model and is listed in the output.
+  - Foliage and grass textures are tinted from the pack's colour maps.
   - Tooltip glyphs are `File:Glyph E0xx.png`, named in `Template:G`, and explained on the "Tooltip" page.
 - **Renders** (structures, mobs, armor): every one is an entry in `tools/renders.json`, keyed by its
   file name. `python3 tools/render.py` draws the ones whose inputs changed into `wiki/renders/`, which
@@ -184,6 +187,13 @@ the swap mid-way.
   versions. If it finds one, it deploys that version (`wrangler versions deploy`, about a minute). This
   happens when `main` hasn't moved since the PR's last check. Otherwise it does the full build and runs
   `wrangler deploy`. Manual runs always rebuild. A newer push cancels a running deploy.
+- **Caching (cache busting):** pages and every file they load are always checked with the server, except
+  URLs that carry `?v=<content hash>`. The export adds those last (`tools/fingerprint.py`) to every
+  reference in pages and stylesheets to `/_rl/`, `/_static/`, `/assets/`, `/images/` and `/pagefind/`.
+  The Worker lets browsers keep a `?v=` URL for a year, so a changed file is a new URL. `_headers`
+  (`seo.py`) makes everything else revalidate. Never give an unversioned file a long `max-age`: the
+  stylesheet URLs never change, and phones once kept the pre-mobile `Vector.css` for days while running
+  the new `site.js`, which showed the mobile header unstyled over the desktop tabs.
 - **Exports are reproducible.** An unchanged page exports byte-for-byte the same, so a deploy uploads
   only the files that changed. The export drops the parser cache's timestamp comment, and
   `$wgEnableParserLimitReporting` is off. Don't add anything that varies from build to build to the pages.
@@ -204,7 +214,12 @@ the swap mid-way.
 - **Healing is a hidden Regeneration III:** 1 HP per 12 ticks. Hunger is pinned by a function.
   Heal amounts are computed from the effect duration.
 - **Loot chances** account for rolls, weights, biome-exclusive entries (fishing), counts that can roll 0,
-  and `table_bonus`.
+  and `table_bonus`. A pool's own `set_count` runs after its entries' functions, so it sets the count of
+  everything the pool yields (the sweet berry bush's 2–3 berries).
+- **Variants:** loot functions and components that make a distinct in-game item (a tipped arrow's potion,
+  an enchanted drop that differs from the crafted item) label the source with the variant. Variants that
+  also look different (a Smithing Trim Color's material, a Cooking Recipe's dish) are `variant_items` in
+  `data.json`: they get their own icon and tooltip under their label, and the label redirects to the item.
 - **Trades are data-driven** (26.2 `trade_set` → tags → `villager_trade`). Trades ending in `discard` are
   placeholders and are skipped. Map names come from `set_name`, and biome limits from `merchant_predicate`.
 - **Intrinsics are enchantments,** stored as `stored_enchantments` on armor and tools. Their names are
@@ -224,6 +239,32 @@ the swap mid-way.
   `vanilla-summary/item_components` gives each vanilla item's default components.
 - **Modrinth versions API** provides the release notes (`source/changelogs`).
   **The Modrinth description says there is no official wiki:** never present this site as official.
+
+## Show your work visually
+The user follows along in the chat and wants to *see* what changed, not just read about it. Any
+change to what a reader sees (icons, templates, CSS, station screens, generated tables, the mobile
+layout) gets pictures:
+- **Before and after, side by side.** Draw "before" from `main`'s build, not from memory:
+  - icons: a contact sheet, before row over after row, labelled with the item names, 8–16 per sheet
+    at 2× or more;
+  - pages: matching screenshots at desktop (1280px) and phone (390px, 320px) widths, light and dark
+    where it matters.
+  - A few telling images beat twenty. Say what to look at ("the latch is now on the right").
+- **Show them in the conversation.** Open the key PNGs with the file-reading tool so they render
+  inline, and send the best ones as files. Sub-agents can't show images to the user: they make the
+  sheets, list the paths in their final report, and the coordinator shows the best ones.
+- **Keep them out of git.** Scratch images go in the session's scratch folder, never in the repo.
+  PR descriptions link the preview (see "PRs" above) and list what was checked visually.
+- **Layout changes also get a pixel diff** of the pages they shouldn't affect. For example, phone CSS
+  must leave desktop byte-identical: compare screenshots of the same page before and after, and
+  report "30 of 30 identical", not "looks the same".
+- **Tooling notes:**
+  - Contact sheets are a few lines of PIL. Screenshots use Playwright (`/opt/node22/lib/node_modules/playwright/index.mjs`
+    in cloud sessions) against the local wiki or a static export served with `python3 -m http.server`.
+  - Behind an HTTPS-inspecting proxy, Chromium rejects external sites. Serve their requests through
+    Node instead: `page.route('**/*', async r => r.fulfill({ response: await r.fetch() }))`.
+  - minecraft.wiki's bot check needs curl, as in `vendor_mcw_skin.py`. Use it for look and layout
+    reference only, never for facts.
 
 ## Delegating to agents
 Writer and reviewer briefs are in `wiki/AGENT_BRIEF.md` and `wiki/REVIEW_BRIEF.md`, and the page plan

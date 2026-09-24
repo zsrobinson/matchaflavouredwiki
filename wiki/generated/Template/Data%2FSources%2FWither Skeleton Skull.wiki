@@ -5,13 +5,13 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Wither skeleton <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/wither_skeleton.json|entities/wither_skeleton}})</small> || 1 || 30.0% || player kill, Looting increases chance
+| Wither skeleton || 1 || 30.0% || player kill, Looting increases chance
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Wither skeleton skull <small>({{Source|vanilla:loot_table/blocks/wither_skeleton_skull.json|blocks/wither_skeleton_skull}})</small> || 1 || 100% || 
+| Wither skeleton skull || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

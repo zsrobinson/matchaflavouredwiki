@@ -4,7 +4,7 @@
 |-
 | [[Cherry Planks]]
 | 2 × [[Cherry Slab]]
-| {{Crafting|A1=Cherry Slab|B1=Cherry Slab|Output=Cherry Planks|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/cherry_planks_from_cherry_slabs.json|matcha:crafting/cherry_planks_from_cherry_slabs}}</small>
+| {{Crafting|A1=Cherry Slab|B1=Cherry Slab|Output=Cherry Planks|shapeless=1}}
 |-
 | [[Cherry Planks]] <small>(vanilla recipe)</small>
 | <span class="explain" title="Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood">Any cherry logs</span>
@@ -16,10 +16,10 @@
 |-
 | [[Cherry Planks]]
 | <span class="explain" title="Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood">Any cherry logs</span>
-| {{Stonecutter|Input=Any Cherry Logs|Output=Cherry Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/cherry_planks_from_stonecutting_cherry_logs.json|matcha:stonecutting/cherry_planks_from_stonecutting_cherry_logs}}</small>
+| {{Stonecutter|Input=Any Cherry Logs|Output=Cherry Planks,4}}
 |-
 | [[Cherry Planks]]
 | [[Cherry Stairs]]
-| {{Stonecutter|Input=Cherry Stairs|Output=Cherry Planks}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/cherry_planks_from_stonecutting_cherry_stairs.json|matcha:stonecutting/cherry_planks_from_stonecutting_cherry_stairs}}</small>
+| {{Stonecutter|Input=Cherry Stairs|Output=Cherry Planks}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

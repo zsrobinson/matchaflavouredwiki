@@ -5,27 +5,27 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Abandoned mineshaft <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_mineshaft.json|chests/abandoned_mineshaft}})</small> || 1–5 || 53.9% || 
+| Abandoned mineshaft || 1–5 || 53.9% || 
 |-
-| Ancient city <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/ancient_city.json|chests/ancient_city}})</small> || 8–25 || 100% || 
+| Ancient city || 8–25 || 100% || 
 |-
-| Buried treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/buried_treasure.json|chests/buried_treasure}})</small> || 8–15 || 100% || 
+| Buried treasure || 8–15 || 100% || 
 |-
-| Desert pyramid <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/desert_pyramid.json|chests/desert_pyramid}})</small> || 1–5 || 23.7% || 
+| Desert pyramid || 1–5 || 23.7% || 
 |-
-| Jungle temple <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/jungle_temple.json|chests/jungle_temple}})</small> || 8–25 || 100% || 
+| Jungle temple || 8–25 || 100% || 
 |-
-| Shipwreck treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_treasure.json|chests/shipwreck_treasure}})</small> || 8–15 || 100% || 
+| Shipwreck treasure || 8–15 || 100% || 
 |-
-| Simple dungeon <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json|chests/simple_dungeon}})</small> || 1–4 || 18.5% || 
+| Simple dungeon || 1–4 || 18.5% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Deepslate iron ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_iron_ore.json|blocks/deepslate_iron_ore}})</small> || 2 || 100% || without Silk Touch, specific tool
+| Deepslate iron ore || 2 || 100% || without Silk Touch, specific tool
 |-
-| Iron ore <small>({{Source|vanilla:loot_table/blocks/iron_ore.json|blocks/iron_ore}})</small> || 1 || 100% || without Silk Touch
+| Iron ore || 1 || 100% || without Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

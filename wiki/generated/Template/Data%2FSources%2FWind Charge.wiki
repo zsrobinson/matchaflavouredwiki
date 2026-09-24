@@ -5,17 +5,17 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Trial chambers / reward <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward.json|chests/trial_chambers/reward}})</small> || 6–13 || 14.4% || 
+| Trial chambers / reward || 6–13 || 14.4% || 
 |-
-| Trial chambers / reward <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward.json|chests/trial_chambers/reward}})</small> || 4–12 || 4.80% || 
+| Trial chambers / reward || 4–12 || 4.80% || 
 |-
-| Trial chambers / reward ominous <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward_ominous.json|chests/trial_chambers/reward_ominous}})</small> || 16–24 || 32.0% || 
+| Trial chambers / reward ominous || 16–24 || 32.0% || 
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Breeze <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/breeze.json|entities/breeze}})</small> || 4–8 || 100% || player kill
+| Breeze || 4–8 || 100% || player kill
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

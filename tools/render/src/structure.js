@@ -125,12 +125,10 @@ async function loadTemplate(loc) {
   return Structure.fromNbt(NbtFile.read(new Uint8Array(await r.arrayBuffer())).root)
 }
 
-// Block states, models and the texture atlas, as deepslate's renderers want them. Item icons pass
-// the item textures too (the atlas is otherwise only block and entity textures).
-export async function resources(extraTextures = []) {
+async function resources() {
   const [statesJson, modelsJson, texIds, blocks] = await Promise.all(
     ['/asset/blockstates', '/asset/models', '/asset/textures', '/asset/blocks'].map(getJson))
-  const atlas = await buildAtlas([...texIds, ...extraTextures].sort())
+  const atlas = await buildAtlas(texIds)
   // The pack uses the newer multi-axis element rotation ({x, y, z, origin}); deepslate reads {axis, angle}.
   for (const j of Object.values(modelsJson)) for (const e of j.elements ?? []) {
     const r = e.rotation

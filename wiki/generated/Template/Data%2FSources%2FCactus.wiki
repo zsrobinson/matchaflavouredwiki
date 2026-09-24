@@ -5,15 +5,15 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village desert house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_desert_house.json|chests/village/village_desert_house}})</small> || 1–4 || 80.6% || 
+| Village / village desert house || 1–4 || 80.6% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Cactus <small>({{Source|vanilla:loot_table/blocks/cactus.json|blocks/cactus}})</small> || 1 || 100% || 
+| Cactus || 1 || 100% || 
 |-
-| Potted cactus <small>({{Source|vanilla:loot_table/blocks/potted_cactus.json|blocks/potted_cactus}})</small> || 1 || 100% || 
+| Potted cactus || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

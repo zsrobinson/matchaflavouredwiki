@@ -5,12 +5,12 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Weeping vines <small>({{Source|vanilla:loot_table/blocks/weeping_vines.json|blocks/weeping_vines}})</small> || 1 || 100% || tool: Iron Shears, Silk Touch
+| Weeping vines || 1 || 100% || tool: Iron Shears, Silk Touch
 |-
-| Weeping vines <small>({{Source|vanilla:loot_table/blocks/weeping_vines.json|blocks/weeping_vines}})</small> || 1 || 33.0% || Fortune increases chance
+| Weeping vines || 1 || 33.0% || Fortune increases chance
 |-
-| Weeping vines plant <small>({{Source|vanilla:loot_table/blocks/weeping_vines_plant.json|blocks/weeping_vines_plant}})</small> || 1 || 100% || tool: Iron Shears, Silk Touch
+| Weeping vines plant || 1 || 100% || tool: Iron Shears, Silk Touch
 |-
-| Weeping vines plant <small>({{Source|vanilla:loot_table/blocks/weeping_vines_plant.json|blocks/weeping_vines_plant}})</small> || 1 || 33.0% || Fortune increases chance
+| Weeping vines plant || 1 || 33.0% || Fortune increases chance
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

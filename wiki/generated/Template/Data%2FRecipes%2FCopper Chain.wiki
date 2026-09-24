@@ -4,7 +4,7 @@
 |-
 | [[Copper Chain]]
 | 3 × [[Copper Nugget]]
-| {{Crafting|A1=Copper Nugget|A2=Copper Nugget|A3=Copper Nugget|Output=Copper Chain,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_chain.json|matcha:crafting/copper_chain}}</small>
+| {{Crafting|A1=Copper Nugget|A2=Copper Nugget|A3=Copper Nugget|Output=Copper Chain,2}}
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
@@ -12,10 +12,10 @@
 |-
 | [[Copper Chain]]
 | [[Block of Copper]]
-| {{Stonecutter|Input=Block of Copper|Output=Copper Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/copper_chain_from_stonecutting_copper_block.json|matcha:stonecutting/copper_chain_from_stonecutting_copper_block}}</small>
+| {{Stonecutter|Input=Block of Copper|Output=Copper Chain,54}}
 |-
 | [[Copper Chain]]
 | [[Copper Ingot]]
-| {{Stonecutter|Input=Copper Ingot|Output=Copper Chain,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/copper_chain_from_stonecutting_copper_ingot.json|matcha:stonecutting/copper_chain_from_stonecutting_copper_ingot}}</small>
+| {{Stonecutter|Input=Copper Ingot|Output=Copper Chain,6}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

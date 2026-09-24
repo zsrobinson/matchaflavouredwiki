@@ -27,6 +27,7 @@ from concurrent.futures import ThreadPoolExecutor
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import build_xml  # noqa: E402
+import fingerprint  # noqa: E402
 import seo  # noqa: E402
 
 
@@ -398,6 +399,8 @@ def main():
     # full-text search index (Pagefind); the component UI is served from /pagefind/
     import subprocess
     subprocess.run(['npx', '-y', 'pagefind@1.5.2', '--site', out, '--quiet'], check=True)
+    # last, once every file is in place: ?v=<content hash> on each stylesheet, script and image URL
+    fingerprint.apply(out)
     print('exported %(page)d pages, %(redirect)d redirects, %(error)d errors -> ' % done + out)
 
 

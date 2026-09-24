@@ -5,10 +5,10 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bastion bridge <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_bridge.json|chests/bastion_bridge}})</small> || 1 || 100% || 
+| Bastion bridge || 1 || 100% || 
 |-
-| Bastion hoglin stable <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_hoglin_stable.json|chests/bastion_hoglin_stable}})</small> || 1 || 100% || 
+| Bastion hoglin stable || 1 || 100% || 
 |-
-| Bastion treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_treasure.json|chests/bastion_treasure}})</small> || 1 || 100% || 
+| Bastion treasure || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

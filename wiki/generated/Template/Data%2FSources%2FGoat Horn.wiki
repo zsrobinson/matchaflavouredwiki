@@ -3,15 +3,15 @@
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Pillager outpost <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/pillager_outpost.json|chests/pillager_outpost}})</small> || 1 || 100% || 
+| Pillager outpost || Goat Horn (Ponder, Sing, Seek or Feel) || 1 || 100% || 
 |}
 
 '''Fishing'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 0.410% || open water
+| Fishing || Goat Horn (Ponder, Sing, Seek or Feel) || 1 || 0.410% || open water
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

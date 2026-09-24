@@ -5,13 +5,13 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bastion hoglin stable <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_hoglin_stable.json|chests/bastion_hoglin_stable}})</small> || 2–7 || 24.4% || 
+| Bastion hoglin stable || 2–7 || 24.4% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Crimson nylium <small>({{Source|vanilla:loot_table/blocks/crimson_nylium.json|blocks/crimson_nylium}})</small> || 1 || 100% || Silk Touch
+| Crimson nylium || 1 || 100% || Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

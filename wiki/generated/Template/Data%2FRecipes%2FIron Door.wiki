@@ -4,11 +4,11 @@
 |-
 | [[Iron Door]]
 | 6 × [[Iron Ingot]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Iron Ingot|B2=Iron Ingot|B3=Iron Ingot|Output=Iron Door,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_door_from_iron.json|matcha:crafting/iron_door_from_iron}}</small>
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Iron Ingot|B2=Iron Ingot|B3=Iron Ingot|Output=Iron Door,3}}
 |-
 | [[Iron Door]]
 | 6 × [[Steel Alloy]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B1=Steel Alloy|B2=Steel Alloy|B3=Steel Alloy|Output=Iron Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_door_from_steel.json|matcha:crafting/iron_door_from_steel}}</small>
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B1=Steel Alloy|B2=Steel Alloy|B3=Steel Alloy|Output=Iron Door,6}}
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
@@ -16,10 +16,10 @@
 |-
 | [[Iron Door]]
 | [[Block of Iron]]
-| {{Stonecutter|Input=Block of Iron|Output=Iron Door,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_door_from_stonecutting_iron_block.json|matcha:stonecutting/iron_door_from_stonecutting_iron_block}}</small>
+| {{Stonecutter|Input=Block of Iron|Output=Iron Door,6}}
 |-
 | [[Iron Door]]
 | [[Steel Alloy]]
-| {{Stonecutter|Input=Steel Alloy|Output=Iron Door}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/iron_door_from_stonecutting_steel.json|matcha:stonecutting/iron_door_from_stonecutting_steel}}</small>
+| {{Stonecutter|Input=Steel Alloy|Output=Iron Door}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

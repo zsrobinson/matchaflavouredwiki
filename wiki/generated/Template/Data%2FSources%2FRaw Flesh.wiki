@@ -5,18 +5,18 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Armadillo <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/armadillo.json|entities/armadillo}})</small> || 1 || 100% || 
+| Armadillo || 1 || 100% || 
 |-
-| Cat <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/cat.json|entities/cat}})</small> || 1 || 100% || 
+| Cat || 1 || 100% || 
 |-
-| Fox <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json|entities/fox}})</small> || 1 || 100% || 
+| Fox || 1 || 100% || 
 |-
-| Frog <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/frog.json|entities/frog}})</small> || 1 || 100% || 
+| Frog || 1 || 100% || 
 |-
-| Horse <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/horse.json|entities/horse}})</small> || 2–4 || 100% || 
+| Horse || 2–4 || 100% || 
 |-
-| Rabbit <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/rabbit.json|entities/rabbit}})</small> || 1 || 100% || 
+| Rabbit || 1 || 100% || 
 |-
-| Turtle <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/turtle.json|entities/turtle}})</small> || 1 || 100% || 
+| Turtle || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -5,23 +5,23 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Stronghold corridor <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_corridor.json|chests/stronghold_corridor}})</small> || 1 || 76.6% || 
+| Stronghold corridor || 1 || 76.6% || 
 |-
-| Trial chambers / corridor <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/corridor.json|chests/trial_chambers/corridor}})</small> || 1–2 || 43.2% || 
+| Trial chambers / corridor || 1–2 || 43.2% || 
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Enderman <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/enderman.json|entities/enderman}})</small> || 1 || 100% || player kill
+| Enderman || 1 || 100% || player kill
 |}
 
 '''Gameplay'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Piglin bartering <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/piglin_bartering.json|gameplay/piglin_bartering}})</small> || 2–4 || 2.27% || 
+| Piglin bartering || 2–4 || 2.27% || 
 |}
 
 '''Trading'''

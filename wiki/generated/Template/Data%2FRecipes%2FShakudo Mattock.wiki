@@ -2,7 +2,7 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Shakudo Mattock]]
-| [[Smithing Template]] +<br />[[Copper Hoe]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=Smithing Template|Base=Copper Hoe|Addition=Shakudo Alloy|Output=Shakudo Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_mattock.json|matcha:smithing/shakudo_mattock}}</small>
+| [[Smithing Upgrade Template]] +<br />[[Copper Hoe]] +<br />[[Shakudo Alloy]]
+| {{Smithing|Template=Smithing Upgrade Template|Base=Copper Hoe|Addition=Shakudo Alloy|Output=Shakudo Mattock}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

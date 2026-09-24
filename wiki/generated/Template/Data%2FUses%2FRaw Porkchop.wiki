@@ -3,26 +3,26 @@
 |-
 | [[Prayer of Artemis]]
 | 4 × [[Spectral Arrow]] +<br />[[Silver Bullion]] +<br />3 × [[Raw Porkchop]] +<br />[[Hell-Bound Book]]
-| {{Crafting|A1=Spectral Arrow|A2=Raw Porkchop|A3=Spectral Arrow|B1=Silver Bullion|B2=Hell-Bound Book|B3=Raw Porkchop|C1=Spectral Arrow|C2=Raw Porkchop|C3=Spectral Arrow|Output=Prayer of Artemis}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/power_multishot.json|matcha:blessing/power_multishot}}</small>
+| {{Crafting|A1=Spectral Arrow|A2=Raw Porkchop|A3=Spectral Arrow|B1=Silver Bullion|B2=Hell-Bound Book|B3=Raw Porkchop|C1=Spectral Arrow|C2=Raw Porkchop|C3=Spectral Arrow|Output=Prayer of Artemis}}
 |-
 | [[Ramen]]
 | [[Bowl]] +<br />[[Glow Berry Mash]] +<br />[[Egg]] or [[Blue Egg]] or [[Brown Egg]] +<br />[[Brown Mushroom]] or [[Raw Porkchop]] +<br />[[Dried Kelp]]
-| {{Crafting|A1=Bowl|B1=Glow Berry Mash|C1=Egg;Blue Egg;Brown Egg|A2=Brown Mushroom;Raw Porkchop|B2=Dried Kelp|Output=Ramen|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ramen.json|matcha:crafting/ramen}}</small>
+| {{Crafting|A1=Bowl|B1=Glow Berry Mash|C1=Egg;Blue Egg;Brown Egg|A2=Brown Mushroom;Raw Porkchop|B2=Dried Kelp|Output=Ramen|shapeless=1}}
 |-
 | [[Cooked Porkchop]]
 | [[Raw Porkchop]]
-| {{Cooking|station=Kindling|Input=Raw Porkchop|Output=Cooked Porkchop|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_pork.json|matcha:food/campfire/cooked_pork}}</small>
+| {{Cooking|station=Kindling|Input=Raw Porkchop|Output=Cooked Porkchop|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Ramen Stock]]
 | [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Chicken]] or [[Seitan]] +<br />[[Bowl]]
-| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_ramen.json|matcha:food/crafting/uncooked_ramen}}</small>
+| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}
 |-
 | [[Charred Meat]]
 | [[Raw Flesh]] or [[Raw Chicken]] or [[Raw Beef]] or [[Raw Porkchop]] or [[Raw Mutton]]
-| {{Cooking|station=Mud Kiln|Input=Raw Flesh;Raw Chicken;Raw Beef;Raw Porkchop;Raw Mutton|Output=Charred Meat|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json|matcha:food/kiln/charred_meat}}</small>
+| {{Cooking|station=Mud Kiln|Input=Raw Flesh;Raw Chicken;Raw Beef;Raw Porkchop;Raw Mutton|Output=Charred Meat|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Cooked Porkchop]]
 | [[Raw Porkchop]]
-| {{Cooking|station=Oven|Input=Raw Porkchop|Output=Cooked Porkchop|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pork.json|matcha:food/oven/cooked_pork}}</small>
+| {{Cooking|station=Oven|Input=Raw Porkchop|Output=Cooked Porkchop|time=5|note=5 s, 0.35 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

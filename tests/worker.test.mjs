@@ -42,3 +42,17 @@ test('the canonical host is indexable', async () => {
   const response = await worker.fetch(new Request('https://matchaflavou.red/w/Mud_Kiln'), env);
   assert.equal(response.headers.get('x-robots-tag'), null);
 });
+test('?v= (a file version from tools/fingerprint.py) is cached for good and looked up without the query', async () => {
+  let asked;
+  const assets = { ASSETS: { fetch: async (request) => { asked = request.url; return new Response('css', { headers: { 'Cache-Control': 'public, max-age=0, must-revalidate' } }); } } };
+  const response = await worker.fetch(new Request('https://matchaflavou.red/_rl/1.css?v=abc'), assets);
+  assert.equal(asked, 'https://matchaflavou.red/_rl/1.css');
+  assert.equal(response.headers.get('cache-control'), 'public, max-age=31536000, immutable');
+  assert.equal(await response.text(), 'css');
+});
+test('unversioned files, pages and missing versions keep revalidating', async () => {
+  for (const path of ['/_rl/1.css', '/w/Mud_Kiln', '/search/?q=oven']) {
+    assert.equal((await worker.fetch(new Request('https://matchaflavou.red' + path), env)).headers.get('cache-control'), null);
+  }
+  assert.equal((await worker.fetch(new Request('https://matchaflavou.red/_rl/gone.css?v=abc'), env)).headers.get('cache-control'), null);
+});

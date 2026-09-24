@@ -3,19 +3,19 @@
 |-
 | [[Cobblestone]]
 | [[Limestone]]
-| {{Cooking|station=Blast Furnace|Input=Limestone|Output=Cobblestone|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/cobblestone_from_blasting_stone.json|matcha:blast/cobblestone_from_blasting_stone}}</small>
+| {{Cooking|station=Blast Furnace|Input=Limestone|Output=Cobblestone|time=5|note=5 s, 0.1 XP}}
 |-
 | [[Smooth Stone]]
 | [[Limestone]]
-| {{Cooking|station=Mud Kiln|Input=Limestone|Output=Smooth Stone|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/smooth_stone.json|matcha:kiln/smooth_stone}}</small>
+| {{Cooking|station=Mud Kiln|Input=Limestone|Output=Smooth Stone|time=5|note=5 s, 0.1 XP}}
 |-
 | [[Stone Button]]
 | [[Limestone]]
-| {{Stonecutter|Input=Limestone|Output=Stone Button,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stone_button_from_stonecutting_stone.json|matcha:stonecutting/stone_button_from_stonecutting_stone}}</small>
+| {{Stonecutter|Input=Limestone|Output=Stone Button,4}}
 |-
 | [[Stone Pressure Plate]]
 | [[Limestone]]
-| {{Stonecutter|Input=Limestone|Output=Stone Pressure Plate,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stone_pressure_plate_from_stonecutting_stone.json|matcha:stonecutting/stone_pressure_plate_from_stonecutting_stone}}</small>
+| {{Stonecutter|Input=Limestone|Output=Stone Pressure Plate,4}}
 |-
 | [[Chiseled Stone Bricks]] <small>(vanilla recipe)</small>
 | [[Limestone]]

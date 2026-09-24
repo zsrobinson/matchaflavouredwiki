@@ -5,21 +5,21 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bastion bridge <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_bridge.json|chests/bastion_bridge}})</small> || 8–12 || 12.4% || 
+| Bastion bridge || 8–12 || 12.4% || 
 |-
-| Bastion hoglin stable <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_hoglin_stable.json|chests/bastion_hoglin_stable}})</small> || 2–5 || 24.4% || 
+| Bastion hoglin stable || 2–5 || 24.4% || 
 |-
-| Bastion other <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_other.json|chests/bastion_other}})</small> || 1–5 || 19.6% || 
+| Bastion other || 1–5 || 19.6% || 
 |-
-| Bastion treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_treasure.json|chests/bastion_treasure}})</small> || 5–15 || 37.2% || 
+| Bastion treasure || 5–15 || 37.2% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Gilded blackstone <small>({{Source|vanilla:loot_table/blocks/gilded_blackstone.json|blocks/gilded_blackstone}})</small> || 1 || 100% || Silk Touch
+| Gilded blackstone || 1 || 100% || Silk Touch
 |-
-| Gilded blackstone <small>({{Source|vanilla:loot_table/blocks/gilded_blackstone.json|blocks/gilded_blackstone}})</small> || 1 || 100% || without Silk Touch, Fortune increases chance
+| Gilded blackstone || 1 || 100% || without Silk Touch, Fortune increases chance
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

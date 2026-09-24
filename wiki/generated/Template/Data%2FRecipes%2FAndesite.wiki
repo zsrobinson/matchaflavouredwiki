@@ -4,7 +4,7 @@
 |-
 | [[Andesite]]
 | 2 × [[Andesite Slab]]
-| {{Crafting|A1=Andesite Slab|B1=Andesite Slab|Output=Andesite|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/andesite_from_andesite_slabs.json|matcha:crafting/andesite_from_andesite_slabs}}</small>
+| {{Crafting|A1=Andesite Slab|B1=Andesite Slab|Output=Andesite|shapeless=1}}
 |-
 | [[Andesite]] <small>(vanilla recipe)</small>
 | [[Diorite]] +<br />[[Cobblestone]]
@@ -16,6 +16,6 @@
 |-
 | [[Andesite]]
 | [[Polished Andesite]]
-| {{Cooking|station=Blast Furnace|Input=Polished Andesite|Output=Andesite|time=5|note=5 s, 1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/andesite_from_blasting_polished_andesite.json|matcha:blast/andesite_from_blasting_polished_andesite}}</small>
+| {{Cooking|station=Blast Furnace|Input=Polished Andesite|Output=Andesite|time=5|note=5 s, 1 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

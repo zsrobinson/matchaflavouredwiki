@@ -5,22 +5,22 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Trial chambers / entrance <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/entrance.json|chests/trial_chambers/entrance}})</small> || 1 || 9.32% || 
+| Trial chambers / entrance || 1 || 9.32% || 
 |}
 
 '''Trial spawners'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Trial chamber / key <small>({{Source|MF_datapack/data/minecraft/loot_table/spawners/trial_chamber/key.json|spawners/trial_chamber/key}})</small> || 1 || 80.0% || 
+| Trial chamber / key || 1 || 80.0% || 
 |}
 
 '''Decorated pots'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Abbey / common <small>({{Source|MF_datapack/data/minecraft/loot_table/pots/abbey/common.json|pots/abbey/common}})</small> || 1 || 2.02% || 
+| Abbey / common || 1 || 2.02% || 
 |-
-| Trial chambers / corridor <small>({{Source|MF_datapack/data/minecraft/loot_table/pots/trial_chambers/corridor.json|pots/trial_chambers/corridor}})</small> || 1 || 4.44% || 
+| Trial chambers / corridor || 1 || 4.44% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

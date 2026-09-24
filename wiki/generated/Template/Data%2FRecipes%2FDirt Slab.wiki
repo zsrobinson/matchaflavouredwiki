@@ -4,7 +4,7 @@
 |-
 | [[Dirt Slab]]
 | 3 × [[Dirt]] or [[Coarse Dirt]]
-| {{Crafting|A1=Dirt;Coarse Dirt|B1=Dirt;Coarse Dirt|C1=Dirt;Coarse Dirt|Output=Dirt Slab,6}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/dirt_slab.json|matcha:crafting/dirt_slab}}</small>
+| {{Crafting|A1=Dirt;Coarse Dirt|B1=Dirt;Coarse Dirt|C1=Dirt;Coarse Dirt|Output=Dirt Slab,6}}
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
@@ -12,6 +12,6 @@
 |-
 | [[Dirt Slab]]
 | [[Dirt]]
-| {{Stonecutter|Input=Dirt|Output=Dirt Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dirt_slab.json|matcha:stonecutting/dirt_slab}}</small>
+| {{Stonecutter|Input=Dirt|Output=Dirt Slab,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

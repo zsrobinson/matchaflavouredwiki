@@ -12,14 +12,14 @@
 |-
 | [[Pale Oak Slab]]
 | [[Pale Oak Trapdoor]]
-| {{Stonecutter|Input=Pale Oak Trapdoor|Output=Pale Oak Slab}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/pale_oak_slab_from_stonecutting_pale_oak_trapdoor.json|matcha:stonecutting/pale_oak_slab_from_stonecutting_pale_oak_trapdoor}}</small>
+| {{Stonecutter|Input=Pale Oak Trapdoor|Output=Pale Oak Slab}}
 |-
 | [[Pale Oak Slab]]
 | <span class="explain" title="Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood">Any pale oak logs</span>
-| {{Stonecutter|Input=Any Pale Oak Logs|Output=Pale Oak Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/pale_oak_slabs_from_stonecutting_pale_oak_logs.json|matcha:stonecutting/pale_oak_slabs_from_stonecutting_pale_oak_logs}}</small>
+| {{Stonecutter|Input=Any Pale Oak Logs|Output=Pale Oak Slab,8}}
 |-
 | [[Pale Oak Slab]]
 | [[Pale Oak Planks]]
-| {{Stonecutter|Input=Pale Oak Planks|Output=Pale Oak Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/pale_oak_slabs_from_stonecutting_pale_oak_planks.json|matcha:stonecutting/pale_oak_slabs_from_stonecutting_pale_oak_planks}}</small>
+| {{Stonecutter|Input=Pale Oak Planks|Output=Pale Oak Slab,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

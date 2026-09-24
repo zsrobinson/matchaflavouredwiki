@@ -3,30 +3,54 @@
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Jungle temple dispenser <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/jungle_temple_dispenser.json|chests/jungle_temple_dispenser}})</small> || 1 || 99.3% || 
+| Jungle temple dispenser || Arrow of Poison || 1 || 99.3% || 
 |-
-| Trial chambers / reward <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward.json|chests/trial_chambers/reward}})</small> || 2–8 || 19.2% || 
+| Trial chambers / reward || Arrow of Poison || 2–8 || 19.2% || 
 |-
-| Trial chambers / reward ominous <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward_ominous.json|chests/trial_chambers/reward_ominous}})</small> || 4–12 || 24.0% || 
+| Trial chambers / reward ominous || Arrow of Slowness (strong) || 4–12 || 24.0% || 
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Bogged <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/bogged.json|entities/bogged}})</small> || 0–2 || 66.7% || player kill
+| Bogged || Arrow of Poison || 0–2 || 66.7% || player kill
 |-
-| Parched <small>({{Source|vanilla:loot_table/entities/parched.json|entities/parched}})</small> || 0–1 || 50.0% || player kill
+| Parched || Arrow of Weakness || 0–1 || 50.0% || player kill
 |-
-| Stray <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/stray.json|entities/stray}})</small> || 0–1 || 50.0% || player kill
+| Stray || Arrow of Slowness || 0–1 || 50.0% || player kill
 |}
 
 '''Gameplay'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Hero of the village / fletcher gift <small>({{Source|vanilla:loot_table/gameplay/hero_of_the_village/fletcher_gift.json|gameplay/hero_of_the_village/fletcher_gift}})</small> || 0–1 || 16.7% || 
+| Hero of the village / fletcher gift || Arrow of Fire Resistance || 0–1 || 1.28% || 
+|-
+| Hero of the village / fletcher gift || Arrow of Harming || 0–1 || 1.28% || 
+|-
+| Hero of the village / fletcher gift || Arrow of Healing || 0–1 || 1.28% || 
+|-
+| Hero of the village / fletcher gift || Arrow of Invisibility || 0–1 || 1.28% || 
+|-
+| Hero of the village / fletcher gift || Arrow of Leaping || 0–1 || 1.28% || 
+|-
+| Hero of the village / fletcher gift || Arrow of Night Vision || 0–1 || 1.28% || 
+|-
+| Hero of the village / fletcher gift || Arrow of Poison || 0–1 || 1.28% || 
+|-
+| Hero of the village / fletcher gift || Arrow of Regeneration || 0–1 || 1.28% || 
+|-
+| Hero of the village / fletcher gift || Arrow of Slowness || 0–1 || 1.28% || 
+|-
+| Hero of the village / fletcher gift || Arrow of Strength || 0–1 || 1.28% || 
+|-
+| Hero of the village / fletcher gift || Arrow of Swiftness || 0–1 || 1.28% || 
+|-
+| Hero of the village / fletcher gift || Arrow of Water Breathing || 0–1 || 1.28% || 
+|-
+| Hero of the village / fletcher gift || Arrow of Weakness || 0–1 || 1.28% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

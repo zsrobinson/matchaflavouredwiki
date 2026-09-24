@@ -12,10 +12,10 @@
 |-
 | [[Jungle Stairs]]
 | <span class="explain" title="Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood">Any jungle logs</span>
-| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Stairs,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_stairs_from_stonecutting_jungle_logs.json|matcha:stonecutting/jungle_stairs_from_stonecutting_jungle_logs}}</small>
+| {{Stonecutter|Input=Any Jungle Logs|Output=Jungle Stairs,4}}
 |-
 | [[Jungle Stairs]]
 | [[Jungle Planks]]
-| {{Stonecutter|Input=Jungle Planks|Output=Jungle Stairs}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/jungle_stairs_from_stonecutting_jungle_planks.json|matcha:stonecutting/jungle_stairs_from_stonecutting_jungle_planks}}</small>
+| {{Stonecutter|Input=Jungle Planks|Output=Jungle Stairs}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

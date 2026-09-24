@@ -5,15 +5,15 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Trial chambers / supply <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/supply.json|chests/trial_chambers/supply}})</small> || 1 || 27.2% || 
+| Trial chambers / supply || 1 || 27.2% || 
 |}
 
 '''Trial spawners'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Ominous / trial chamber / consumables <small>({{Source|MF_datapack/data/minecraft/loot_table/spawners/ominous/trial_chamber/consumables.json|spawners/ominous/trial_chamber/consumables}})</small> || 1 || 22.2% || 
+| Ominous / trial chamber / consumables || 1 || 22.2% || 
 |-
-| Trial chamber / consumables <small>({{Source|MF_datapack/data/minecraft/loot_table/spawners/trial_chamber/consumables.json|spawners/trial_chamber/consumables}})</small> || 1 || 12.5% || 
+| Trial chamber / consumables || 1 || 12.5% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

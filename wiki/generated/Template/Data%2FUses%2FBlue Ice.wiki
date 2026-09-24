@@ -3,10 +3,10 @@
 |-
 | [[Prayer of Demeter]]
 | 4 × [[Golden Apple]] +<br />[[Golden Hoe]] +<br />3 × [[Blue Ice]] +<br />[[Hell-Bound Book]]
-| {{Crafting|A1=Golden Apple|A2=Blue Ice|A3=Golden Apple|B1=Golden Hoe|B2=Hell-Bound Book|B3=Blue Ice|C1=Golden Apple|C2=Blue Ice|C3=Golden Apple|Output=Prayer of Demeter}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/frost_walker_frost_protection.json|matcha:blessing/frost_walker_frost_protection}}</small>
+| {{Crafting|A1=Golden Apple|A2=Blue Ice|A3=Golden Apple|B1=Golden Hoe|B2=Hell-Bound Book|B3=Blue Ice|C1=Golden Apple|C2=Blue Ice|C3=Golden Apple|Output=Prayer of Demeter}}
 |-
 | [[Packed Ice]]
 | [[Blue Ice]]
-| {{Crafting|A1=Blue Ice|Output=Packed Ice,9|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/packed_ice_from_blue_ice.json|matcha:crafting/packed_ice_from_blue_ice}}</small>
+| {{Crafting|A1=Blue Ice|Output=Packed Ice,9|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

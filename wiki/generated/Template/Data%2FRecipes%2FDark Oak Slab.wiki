@@ -12,14 +12,14 @@
 |-
 | [[Dark Oak Slab]]
 | [[Dark Oak Trapdoor]]
-| {{Stonecutter|Input=Dark Oak Trapdoor|Output=Dark Oak Slab}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_slab_from_stonecutting_dark_oak_trapdoor.json|matcha:stonecutting/dark_oak_slab_from_stonecutting_dark_oak_trapdoor}}</small>
+| {{Stonecutter|Input=Dark Oak Trapdoor|Output=Dark Oak Slab}}
 |-
 | [[Dark Oak Slab]]
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood">Any dark oak logs</span>
-| {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_slabs_from_stonecutting_dark_oak_logs.json|matcha:stonecutting/dark_oak_slabs_from_stonecutting_dark_oak_logs}}</small>
+| {{Stonecutter|Input=Any Dark Oak Logs|Output=Dark Oak Slab,8}}
 |-
 | [[Dark Oak Slab]]
 | [[Dark Oak Planks]]
-| {{Stonecutter|Input=Dark Oak Planks|Output=Dark Oak Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/dark_oak_slabs_from_stonecutting_dark_oak_planks.json|matcha:stonecutting/dark_oak_slabs_from_stonecutting_dark_oak_planks}}</small>
+| {{Stonecutter|Input=Dark Oak Planks|Output=Dark Oak Slab,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

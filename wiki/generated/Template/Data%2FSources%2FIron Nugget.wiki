@@ -5,17 +5,17 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bastion bridge <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_bridge.json|chests/bastion_bridge}})</small> || 2–6 || 47.9% || 
+| Bastion bridge || 2–6 || 47.9% || 
 |-
-| Bastion other <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_other.json|chests/bastion_other}})</small> || 2–8 || 10.2% || 
+| Bastion other || 2–8 || 10.2% || 
 |-
-| Village / village taiga house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_taiga_house.json|chests/village/village_taiga_house}})</small> || 1–5 || 10.7% || 
+| Village / village taiga house || 1–5 || 10.7% || 
 |}
 
 '''Gameplay'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Piglin bartering <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/piglin_bartering.json|gameplay/piglin_bartering}})</small> || 10–36 || 2.27% || 
+| Piglin bartering || 10–36 || 2.27% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

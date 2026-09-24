@@ -5,15 +5,15 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village savanna house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_savanna_house.json|chests/village/village_savanna_house}})</small> || 1–2 || 71.7% || 
+| Village / village savanna house || 1–2 || 71.7% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Acacia sapling <small>({{Source|vanilla:loot_table/blocks/acacia_sapling.json|blocks/acacia_sapling}})</small> || 1 || 100% || 
+| Acacia sapling || 1 || 100% || 
 |-
-| Potted acacia sapling <small>({{Source|vanilla:loot_table/blocks/potted_acacia_sapling.json|blocks/potted_acacia_sapling}})</small> || 1 || 100% || 
+| Potted acacia sapling || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

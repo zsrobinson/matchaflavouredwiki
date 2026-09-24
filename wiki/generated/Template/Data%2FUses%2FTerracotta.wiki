@@ -3,7 +3,7 @@
 |-
 | [[Brick]]
 | <span class="explain" title="Terracotta, White Terracotta, Orange Terracotta, Magenta Terracotta, Light Blue Terracotta, Yellow Terracotta, Lime Terracotta, Pink Terracotta, Gray Terracotta, Light Gray Terracotta, Cyan Terracotta, Purple Terracotta, Blue Terracotta, Brown Terracotta, Green Terracotta, Red Terracotta, Black Terracotta">Any terracotta</span>
-| {{Crafting|A1=Any Terracotta|Output=Brick,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/brick_from_terracottas.json|matcha:crafting/brick_from_terracottas}}</small>
+| {{Crafting|A1=Any Terracotta|Output=Brick,4|shapeless=1}}
 |-
 | [[Black Terracotta]] <small>(vanilla recipe)</small>
 | 8 × [[Terracotta]] +<br />[[Black Dye]]
@@ -29,9 +29,9 @@
 | 8 × [[Terracotta]] +<br />[[Green Dye]]
 | {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Green Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Green Terracotta,8}}
 |-
-| [[Smithing Template]] <small>(vanilla recipe)</small>
-| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Terracotta]]
-| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+| [[Host Armor Trim Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Host Armor Trim Smithing Template]] +<br />[[Terracotta]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Host Armor Trim Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Host Armor Trim Smithing Template,2}}
 |-
 | [[Light Blue Terracotta]] <small>(vanilla recipe)</small>
 | 8 × [[Terracotta]] +<br />[[Light Blue Dye]]
@@ -61,21 +61,21 @@
 | 8 × [[Terracotta]] +<br />[[Purple Dye]]
 | {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Purple Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Purple Terracotta,8}}
 |-
-| [[Smithing Template]] <small>(vanilla recipe)</small>
-| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Terracotta]]
-| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+| [[Raiser Armor Trim Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Raiser Armor Trim Smithing Template]] +<br />[[Terracotta]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Raiser Armor Trim Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Raiser Armor Trim Smithing Template,2}}
 |-
 | [[Red Terracotta]] <small>(vanilla recipe)</small>
 | 8 × [[Terracotta]] +<br />[[Red Dye]]
 | {{Crafting|A1=Terracotta|A2=Terracotta|A3=Terracotta|B1=Terracotta|B2=Red Dye|B3=Terracotta|C1=Terracotta|C2=Terracotta|C3=Terracotta|Output=Red Terracotta,8}}
 |-
-| [[Smithing Template]] <small>(vanilla recipe)</small>
-| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Terracotta]]
-| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+| [[Shaper Armor Trim Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Shaper Armor Trim Smithing Template]] +<br />[[Terracotta]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Shaper Armor Trim Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Shaper Armor Trim Smithing Template,2}}
 |-
-| [[Smithing Template]] <small>(vanilla recipe)</small>
-| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Terracotta]]
-| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+| [[Wayfinder Armor Trim Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Wayfinder Armor Trim Smithing Template]] +<br />[[Terracotta]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Wayfinder Armor Trim Smithing Template|B2=Terracotta|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Wayfinder Armor Trim Smithing Template,2}}
 |-
 | [[White Terracotta]] <small>(vanilla recipe)</small>
 | 8 × [[Terracotta]] +<br />[[White Dye]]

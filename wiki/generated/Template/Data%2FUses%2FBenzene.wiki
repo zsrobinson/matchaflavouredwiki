@@ -3,14 +3,14 @@
 |-
 | [[Hell-Bound Book]]
 | [[Benzene]] +<br />[[Stabilized Estus]] +<br />[[Book]]
-| {{Crafting|A1=Benzene|A2=Stabilized Estus|A3=Book|Output=Hell-Bound Book}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/hell_bound_book.json|matcha:blessing/hell_bound_book}}</small>
+| {{Crafting|A1=Benzene|A2=Stabilized Estus|A3=Book|Output=Hell-Bound Book}}
 |-
 | [[Ominous Bottle]]
 | [[Benzene]] +<br />[[Echo Shard]] +<br />2 × [[Sculk Vein]]
-| {{Crafting|A1=Benzene|B1=Echo Shard|C1=Sculk Vein|A2=Sculk Vein|Output=Ominous Bottle|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ominous_bottle.json|matcha:crafting/ominous_bottle}}</small>
+| {{Crafting|A1=Benzene|B1=Echo Shard|C1=Sculk Vein|A2=Sculk Vein|Output=Ominous Bottle|shapeless=1}}
 |-
 | [[Stabilized Estus]]
 | 7 × [[Estus Ash]] +<br />[[Benzene]] +<br />[[Stable Void]]
-| {{Crafting|A1=Estus Ash|A2=Estus Ash|A3=Estus Ash|B1=Benzene|B2=Stable Void|B3=Estus Ash|C1=Estus Ash|C2=Estus Ash|C3=Estus Ash|Output=Stabilized Estus}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/stabilised_estus.json|matcha:crafting/stabilised_estus}}</small>
+| {{Crafting|A1=Estus Ash|A2=Estus Ash|A3=Estus Ash|B1=Benzene|B2=Stable Void|B3=Estus Ash|C1=Estus Ash|C2=Estus Ash|C3=Estus Ash|Output=Stabilized Estus}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

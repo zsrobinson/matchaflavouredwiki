@@ -4,7 +4,7 @@ A '''clay fetish''' is a small clay statue that changes the [[weather]] when it 
 == Obtaining ==
 === Archaeology ===
 {{Sources}}
-The chances above are for either variant; each variant is equally likely.<ref>{{Source|MF_datapack/data/matcha/loot_table/archaeology/statues.json}}</ref>
+The chances above are for each variant separately. Both are equally likely, so the chance of finding a clay fetish of either kind is the two rows combined.<ref>{{Source|MF_datapack/data/matcha/loot_table/archaeology/statues.json}}</ref>
 
 == Usage ==
 A clay fetish is a {{MCW|Goat Horn|goat horn}} with its own sound. Using it plays a low, soul-sand-valley ambience sound that can be heard up to 16 blocks away, and 3 seconds later changes the weather:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/cheerful_clay_statue.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/mournful_clay_statue.mcfunction}}</ref>

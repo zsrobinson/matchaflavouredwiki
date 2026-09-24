@@ -5,48 +5,48 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Abandoned mineshaft <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_mineshaft.json|chests/abandoned_mineshaft}})</small> || 1 || 53.9% || 
+| Abandoned mineshaft || 1 || 53.9% || 
 |-
-| Simple dungeon <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json|chests/simple_dungeon}})</small> || 1 || 34.1% || 
+| Simple dungeon || 1 || 34.1% || 
 |-
-| Stronghold crossing <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_crossing.json|chests/stronghold_crossing}})</small> || 1 || 53.9% || 
+| Stronghold crossing || 1 || 53.9% || 
 |-
-| Village / village armorer <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_armorer.json|chests/village/village_armorer}})</small> || 1–2 || 11.7% || 
+| Village / village armorer || 1–2 || 11.7% || 
 |-
-| Village / village cartographer <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_cartographer.json|chests/village/village_cartographer}})</small> || 1 || 26.9% || 
+| Village / village cartographer || 1 || 26.9% || 
 |-
-| Village / village desert house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_desert_house.json|chests/village/village_desert_house}})</small> || 1 || 80.6% || 
+| Village / village desert house || 1 || 80.6% || 
 |-
-| Village / village plains house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json|chests/village/village_plains_house}})</small> || 1 || 74.2% || 
+| Village / village plains house || 1 || 74.2% || 
 |-
-| Village / village savanna house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_savanna_house.json|chests/village/village_savanna_house}})</small> || 1 || 71.7% || 
+| Village / village savanna house || 1 || 71.7% || 
 |-
-| Village / village snowy house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_snowy_house.json|chests/village/village_snowy_house}})</small> || 1 || 67.0% || 
+| Village / village snowy house || 1 || 67.0% || 
 |-
-| Village / village taiga house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_taiga_house.json|chests/village/village_taiga_house}})</small> || 1 || 70.1% || 
+| Village / village taiga house || 1 || 70.1% || 
 |-
-| Village / village tannery <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_tannery.json|chests/village/village_tannery}})</small> || 1 || 99.5% || 
+| Village / village tannery || 1 || 99.5% || 
 |-
-| Village / village temple <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_temple.json|chests/village/village_temple}})</small> || 1 || 88.0% || 
+| Village / village temple || 1 || 88.0% || 
 |-
-| Village / village toolsmith <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_toolsmith.json|chests/village/village_toolsmith}})</small> || 1 || 37.9% || 
+| Village / village toolsmith || 1 || 37.9% || 
 |-
-| Village / village weaponsmith <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_weaponsmith.json|chests/village/village_weaponsmith}})</small> || 1 || 33.9% || 
+| Village / village weaponsmith || 1 || 33.9% || 
 |-
-| Woodland mansion <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/woodland_mansion.json|chests/woodland_mansion}})</small> || 1 || 25.5% || 
+| Woodland mansion || 1 || 25.5% || 
 |}
 
 '''Trial spawners'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Trial chamber / consumables <small>({{Source|MF_datapack/data/minecraft/loot_table/spawners/trial_chamber/consumables.json|spawners/trial_chamber/consumables}})</small> || 1 || 25.0% || 
+| Trial chamber / consumables || 1 || 25.0% || 
 |}
 
 '''Gameplay'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Hero of the village / farmer gift <small>({{Source|vanilla:loot_table/gameplay/hero_of_the_village/farmer_gift.json|gameplay/hero_of_the_village/farmer_gift}})</small> || 1 || 33.3% || 
+| Hero of the village / farmer gift || 1 || 33.3% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

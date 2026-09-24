@@ -3,14 +3,14 @@
 |-
 | [[Hay Bale]]
 | 4 × [[Straw]]
-| {{Crafting|A1=Straw|A2=Straw|B1=Straw|B2=Straw|Output=Hay Bale}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/hay_block.json|matcha:crafting/hay_block}}</small>
+| {{Crafting|A1=Straw|A2=Straw|B1=Straw|B2=Straw|Output=Hay Bale}}
 |-
 | [[Packed Mud]]
 | 8 × [[Mud]] +<br />[[Straw]]
-| {{Crafting|A1=Mud|B1=Mud|C1=Mud|A2=Mud|B2=Mud|C2=Mud|A3=Mud|B3=Mud|C3=Straw|Output=Packed Mud,8|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/packed_mud_from_wheat.json|matcha:crafting/packed_mud_from_wheat}}</small>
+| {{Crafting|A1=Mud|B1=Mud|C1=Mud|A2=Mud|B2=Mud|C2=Mud|A3=Mud|B3=Mud|C3=Straw|Output=Packed Mud,8|shapeless=1}}
 |-
 | [[Tall Dry Grass]]
 | [[Straw]]
-| {{Crafting|A1=Straw|Output=Tall Dry Grass,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/tall_dry_grass_from_wheat.json|matcha:crafting/tall_dry_grass_from_wheat}}</small>
+| {{Crafting|A1=Straw|Output=Tall Dry Grass,2|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

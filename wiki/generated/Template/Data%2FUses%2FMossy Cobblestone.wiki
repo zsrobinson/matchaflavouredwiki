@@ -3,7 +3,7 @@
 |-
 | [[Cobblestone]]
 | [[Mossy Cobblestone]]
-| {{Cooking|station=Oven|Input=Mossy Cobblestone|Output=Cobblestone|time=2.5|note=2.5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/cobblestone_from_mossy_cobblestone.json|matcha:oven/cobblestone_from_mossy_cobblestone}}</small>
+| {{Cooking|station=Oven|Input=Mossy Cobblestone|Output=Cobblestone|time=2.5|note=2.5 s, 0.1 XP}}
 |-
 | [[Mossy Cobblestone Slab]] <small>(vanilla recipe)</small>
 | 3 × [[Mossy Cobblestone]]
@@ -29,8 +29,8 @@
 | [[Mossy Cobblestone]]
 | {{Stonecutter|Input=Mossy Cobblestone|Output=Mossy Cobblestone Wall}}
 |-
-| [[Smithing Template]] <small>(vanilla recipe)</small>
-| 7 × [[Diamond]] +<br />[[Smithing Template]] +<br />[[Mossy Cobblestone]]
-| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Smithing Template|B2=Mossy Cobblestone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Smithing Template,2}}
+| [[Wild Armor Trim Smithing Template]] <small>(vanilla recipe)</small>
+| 7 × [[Diamond]] +<br />[[Wild Armor Trim Smithing Template]] +<br />[[Mossy Cobblestone]]
+| {{Crafting|A1=Diamond|A2=Diamond|A3=Diamond|B1=Wild Armor Trim Smithing Template|B2=Mossy Cobblestone|B3=Diamond|C1=Diamond|C2=Diamond|C3=Diamond|Output=Wild Armor Trim Smithing Template,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -12,10 +12,10 @@
 |-
 | [[Acacia Stairs]]
 | <span class="explain" title="Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood">Any acacia logs</span>
-| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Stairs,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_stairs_from_stonecutting_acacia_logs.json|matcha:stonecutting/acacia_stairs_from_stonecutting_acacia_logs}}</small>
+| {{Stonecutter|Input=Any Acacia Logs|Output=Acacia Stairs,4}}
 |-
 | [[Acacia Stairs]]
 | [[Acacia Planks]]
-| {{Stonecutter|Input=Acacia Planks|Output=Acacia Stairs}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/acacia_stairs_from_stonecutting_acacia_planks.json|matcha:stonecutting/acacia_stairs_from_stonecutting_acacia_planks}}</small>
+| {{Stonecutter|Input=Acacia Planks|Output=Acacia Stairs}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>
