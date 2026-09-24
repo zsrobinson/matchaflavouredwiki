@@ -27,8 +27,8 @@ def page_url(title):
     return SITE + '/w/' + urllib.parse.quote(title.replace(' ', '_'), safe=":/'(),!*$@;=+&-._~")
 
 
-def git_dates():
-    """Last commit date of every file under wiki/ (one git call)."""
+def git_dates(first=False):
+    """Last (or, with first, earliest) commit date of every file under wiki/ (one git call)."""
     dates = {}
     try:
         out = subprocess.run(['git', '-C', ROOT, 'log', '--format=@%cI', '--name-only', '--', 'wiki'],
@@ -39,8 +39,8 @@ def git_dates():
     for line in out.splitlines():
         if line.startswith('@'):
             current = line[1:]
-        elif line and current and line not in dates:
-            dates[line] = current
+        elif line and current and (first or line not in dates):
+            dates[line] = current  # newest first: the first date seen is the last edit
     return dates
 
 
@@ -77,11 +77,13 @@ def lead_description(doc):
 
 
 def head_tags(title, doc, info):
-    """<head> additions for one page. info: dict(layer, lastmod, image, categories, is_main)."""
+    """<head> additions for one page. info: dict(layer, lastmod, published, image, card, categories,
+    is_main, noindex). card is the page's share card (tools/og.py): its absolute URL."""
     url = page_url(title)
     desc = DEFAULT_DESC if info.get('is_main') else (lead_description(doc) or DEFAULT_DESC)
     image = info.get('image') or '/assets/Wiki.png'
     image = image if image.startswith('http') else SITE + image
+    card = info.get('card')
     esc = lambda s: html.escape(s, quote=True)
     t = MAIN_TITLE if info.get('is_main') else '%s – %s' % (title, SITE_NAME)
     tags = [
@@ -91,13 +93,25 @@ def head_tags(title, doc, info):
         '<meta property="og:description" content="%s">' % esc(desc),
         '<meta property="og:url" content="%s">' % esc(url),
         '<meta property="og:type" content="%s">' % ('website' if info.get('is_main') else 'article'),
-        '<meta property="og:image" content="%s">' % esc(image),
-        '<meta name="twitter:card" content="summary">',
-        '<meta name="twitter:title" content="%s">' % esc(t),
-        '<meta name="twitter:description" content="%s">' % esc(desc),
+        '<meta property="og:image" content="%s">' % esc(card or image),
     ]
+    if card:
+        # a 1200x630 card: link previews show it large
+        tags += ['<meta property="og:image:type" content="image/png">',
+                 '<meta property="og:image:width" content="1200">',
+                 '<meta property="og:image:height" content="630">',
+                 '<meta property="og:image:alt" content="%s">' % esc(SITE_NAME if info.get('is_main') else '%s – %s' % (title, SITE_NAME)),
+                 '<meta name="twitter:card" content="summary_large_image">',
+                 '<meta name="twitter:image" content="%s">' % esc(card)]
+    else:
+        tags.append('<meta name="twitter:card" content="summary">')
+    tags += ['<meta name="twitter:title" content="%s">' % esc(t),
+             '<meta name="twitter:description" content="%s">' % esc(desc)]
     if info.get('noindex'):
         tags.append('<meta name="robots" content="noindex, follow">')
+    else:
+        # search results may show the page's pictures large (the default is a small thumbnail)
+        tags.append('<meta name="robots" content="max-image-preview:large">')
     publisher = {'@type': 'Organization', 'name': SITE_NAME, 'url': SITE + '/',
                  'logo': {'@type': 'ImageObject', 'url': SITE + '/assets/Wiki.png'}}
     if info.get('is_main'):
@@ -111,11 +125,13 @@ def head_tags(title, doc, info):
         }]
     else:
         article = {'@context': 'https://schema.org', '@type': 'Article', 'headline': title, 'description': desc,
-                   'url': url, 'mainEntityOfPage': url, 'image': image, 'inLanguage': 'en',
+                   'url': url, 'mainEntityOfPage': url, 'image': [card, image] if card else image, 'inLanguage': 'en',
                    'isPartOf': {'@type': 'WebSite', 'name': SITE_NAME, 'url': SITE + '/'},
                    'about': {'@type': 'VideoGame', 'name': 'Minecraft'},
                    'keywords': 'Matcha Flavoured, Matcha Flavored, Minecraft datapack, ' + title,
                    'publisher': publisher, 'author': {'@type': 'Organization', 'name': SITE_NAME, 'url': SITE + '/'}}
+        if info.get('published'):
+            article['datePublished'] = info['published']
         if info.get('lastmod'):
             article['dateModified'] = info['lastmod']
         ld = [article]
