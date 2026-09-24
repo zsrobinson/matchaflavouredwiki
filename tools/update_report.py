@@ -74,8 +74,9 @@ class Pages:
                 del self.text[t]
         self.cites = defaultdict(set)  # source path -> pages citing it
         for t, s in self.text.items():
-            for m in re.finditer(r'\{\{Source\|([^}|]+)', s):
-                self.cites[m.group(1).strip()].add(t)
+            for m in re.finditer(r'\{\{Source\|([^}|]+)([^}]*)', s):
+                if 'at=' not in m.group(2):  # a citation of an older commit stays right when the file goes
+                    self.cites[m.group(1).strip()].add(t)
         self.lower = {t: s.lower() for t, s in self.text.items()}
 
     def titled(self, name):
