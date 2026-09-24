@@ -3,8 +3,20 @@ The '''Matcha Flavoured Wiki''' is an unofficial encyclopedia of the [[Matcha Fl
 == Sources ==
 Every article is written from primary sources: the pack's own repository (datapack functions and JSON, and the resource pack's language file) at a fixed commit, the official release notes on Modrinth, and the developer's videos. Where the code and the notes disagree, the wiki describes the code. Many tables, such as recipes, loot and trades, are generated directly from the data, and the "Source" links in references point to the exact files in the repository. The wiki describes the latest release, {{Current version}}, together with the bug fixes already on the repository's <code>main</code> branch.
 
+== How it is written ==
+The articles are written by '''Claude''', an AI model made by Anthropic, working from the sources above. A second pass checks each article against those sources, and the references point to the exact files, so anyone can check them. The tables of recipes, uses, loot and trades are not written by anyone: scripts generate them straight from the pack's data. When the pack updates, the same process rebuilds the tables and revises the articles.
+
+It was started by one player who wanted a complete reference for their own game. Mistakes are still possible. If you find one, [[Matcha Flavoured Wiki:Contributing|report or fix it on GitHub]].
+
+For a wiki written by players, see [https://matchaflavoured.wiki/ matchaflavoured.wiki], the community wiki that players write and edit together.
+
+== Credits ==
+* This wiki was set up after [https://matchaflavoured.wiki/ matchaflavoured.wiki], with the same skin (legacy Vector) and URL scheme. 14 of this wiki's 16 Lua modules (Addcommas, AnimateSprite, Array, Hatnote, Inventory slot, Mainonly, Mw.html extension, Paramtest, ProcessArgs, Round, SpriteFile, TSLoader, UI and Yesno) and its animated-icons script are copied from it. matchaflavoured.wiki in turn took those modules from the [https://minecraft.wiki/ Minecraft Wiki], the [https://runescape.wiki/ RuneScape Wiki] and [https://en.wikipedia.org/ Wikipedia]; most modules name their origin at the top.
+* The skin's stylesheets and interface images are the Minecraft Wiki's own.
+* Textures, icons and station screens come from the Matcha Flavoured resource pack, and from vanilla ''Minecraft'' where the pack does not replace them. See [[Credits]] for the people behind the pack.
+
 == License ==
-Matcha Flavoured is released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license, and so are the textures and data this wiki reproduces. Wiki text is shared under the same terms.
+Matcha Flavoured is released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license, and so are the textures and data this wiki reproduces. matchaflavoured.wiki uses the same license. Wiki text is shared under the same terms.
 
 == See also ==
 * [[Matcha Flavoured Wiki:Contributing]]

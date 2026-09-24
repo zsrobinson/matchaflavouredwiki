@@ -75,7 +75,7 @@ Read `wiki/STYLE.md`, `wiki/AGENT_BRIEF.md` and `wiki/PAGES.md` first; they are 
 - Add newly found pack bugs to "Known bugs".
 - Sources are only the pack's code, its release notes and the developer's videos. Never other wikis.
 
-## Step 4b: coverage checks (from the competitor audit, wiki/AUDIT.md)
+## Step 4b: coverage checks (from the coverage review, wiki/AUDIT.md)
 - Every transcript in `sources/transcripts/` is cited at least once (`grep -rl "<video id>" wiki/pages`).
   If one isn't, mine it for design reasoning and history.
 - New kinds of source files: `git -C source/matcha-flavoured diff --stat <from>..HEAD` shows a directory

@@ -11,8 +11,13 @@ debugging time.
   (`site/GitLinks.php`: the Edit on GitHub / View source / View history tabs and the footer line).
 - **Sources:** the pack's code (`source/matcha-flavoured`, pinned in `tools/source.lock`), the official
   release notes (`source/changelogs`) and the developer's videos (`transcript.txt`, `sources/transcripts/`).
-  Never other wikis, forks or third-party videos. Competitors may be read to find gaps (`wiki/AUDIT.md`),
+  Never other wikis, forks or third-party videos. Other sites may be read to find gaps (`wiki/AUDIT.md`),
   but every fact must be verified in the primary sources.
+- **Credit and disclose; don't compete.** matchaflavoured.wiki is the players' community wiki, and our
+  skin setup and most Lua modules come from it (CC BY-NC-SA 4.0). Keep the credit on the About page
+  (update it if more is borrowed), and keep saying on the site that the articles are written by Claude
+  (About, main page, footer). In docs and on pages, call other sites "other sites", never competitors,
+  and don't frame work as beating or outranking them.
 - **Look and structure follow minecraft.wiki; the game's widgets look like the pack.** The skin is
   minecraft.wiki's own CSS, vendored in. Templates emit its markup (infobox, navbox, inventory slots,
   minetip tooltips), and the main page uses its main-page CSS and layout. Where the pack reskins
