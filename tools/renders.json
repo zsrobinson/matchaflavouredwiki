@@ -1,0 +1,487 @@
+{
+ "_readme": "Renders drawn by tools/render.py from the pack's files into wiki/renders/<name>.png (File:<name>.png on the wiki). Structure: template (one, or a list stacked like a list pool element) or jigsaw (a whole structure; seed picks the layout), processors (default: those of the pool that places the template), cut (layers removed from the top; for jigsaw {pools: regex, layers}), biome (grass, foliage and water tints), ground, camera {yaw, pitch}. Entity: layers [{model, texture, inflate}] on the models in tools/render/src/models.js, pose, equipment {asset, slots}. width is the final width in pixels.",
+ "renders": {
+  "Abbey isometric view": {
+   "kind": "structure",
+   "jigsaw": "minecraft:abbey_overgrown",
+   "seed": 1,
+   "cut": {
+    "pools": "abbey/default/",
+    "layers": 3
+   },
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 35
+   },
+   "width": 900
+  },
+  "Abbey tower": {
+   "kind": "structure",
+   "template": "minecraft:abbey/overgrown/tower",
+   "biome": "minecraft:forest",
+   "width": 300
+  },
+  "Abbey room Entrance": {
+   "kind": "structure",
+   "template": "minecraft:abbey/default/entrances/entrance_0",
+   "processors": "minecraft:abbey_dungeon",
+   "cut": 3,
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 45
+   },
+   "width": 300
+  },
+  "Abbey room Tutorial": {
+   "kind": "structure",
+   "template": "minecraft:abbey/default/entrances/tutorial",
+   "processors": "minecraft:abbey_dungeon",
+   "cut": 3,
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 45
+   },
+   "width": 300
+  },
+  "Abbey room Waterfall": {
+   "kind": "structure",
+   "template": "minecraft:abbey/default/rooms/waterfall",
+   "processors": "minecraft:abbey_dungeon",
+   "cut": 3,
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 45
+   },
+   "width": 300
+  },
+  "Abbey room Quad spawn walkways": {
+   "kind": "structure",
+   "template": "minecraft:abbey/default/rooms/quad_spawn_walkways",
+   "processors": "minecraft:abbey_dungeon",
+   "cut": 3,
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 45
+   },
+   "width": 300
+  },
+  "Abbey room Spider triple walkway": {
+   "kind": "structure",
+   "template": "minecraft:abbey/default/rooms/spider_triple_walkway",
+   "processors": "minecraft:abbey_dungeon",
+   "cut": 3,
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 45
+   },
+   "width": 300
+  },
+  "Abbey room Drawbridge": {
+   "kind": "structure",
+   "template": "minecraft:abbey/default/rooms/drawbridge",
+   "processors": "minecraft:abbey_dungeon",
+   "cut": 3,
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 45
+   },
+   "width": 300
+  },
+  "Abbey room Water and lava": {
+   "kind": "structure",
+   "template": "minecraft:abbey/default/rooms/water_and_lava",
+   "processors": "minecraft:abbey_dungeon",
+   "cut": 3,
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 45
+   },
+   "width": 300
+  },
+  "Abbey room Hallway pitfall": {
+   "kind": "structure",
+   "template": "minecraft:abbey/default/rooms/hallway_pitfall",
+   "processors": "minecraft:abbey_dungeon",
+   "cut": 3,
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 45
+   },
+   "width": 300
+  },
+  "Abbey room Lantern drop": {
+   "kind": "structure",
+   "template": "minecraft:abbey/default/rooms/lantern_drop",
+   "processors": "minecraft:abbey_dungeon",
+   "cut": 3,
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 45
+   },
+   "width": 300
+  },
+  "Abbey room Decision puzzle": {
+   "kind": "structure",
+   "template": "minecraft:abbey/default/rooms/decision_puzzle",
+   "processors": "minecraft:abbey_dungeon",
+   "cut": 3,
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 45
+   },
+   "width": 300
+  },
+  "Abbey room Bath": {
+   "kind": "structure",
+   "template": "minecraft:abbey/default/rooms/bath",
+   "processors": "minecraft:abbey_dungeon",
+   "cut": 3,
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 45
+   },
+   "width": 300
+  },
+  "Abbey room Jump puzzle": {
+   "kind": "structure",
+   "template": "minecraft:abbey/default/rooms/jump_puzzle",
+   "processors": "minecraft:abbey_dungeon",
+   "cut": 3,
+   "biome": "minecraft:forest",
+   "camera": {
+    "pitch": 45
+   },
+   "width": 300
+  },
+  "Papal Outpost watchtower": {
+   "kind": "structure",
+   "template": [
+    "minecraft:pillager_outpost/watchtower",
+    "minecraft:pillager_outpost/watchtower_overgrown"
+   ],
+   "biome": "minecraft:plains",
+   "width": 300
+  },
+  "Papal Outpost feature cage1": {
+   "kind": "structure",
+   "template": "minecraft:pillager_outpost/feature_cage1",
+   "biome": "minecraft:plains",
+   "width": 220
+  },
+  "Papal Outpost feature cage2": {
+   "kind": "structure",
+   "template": "minecraft:pillager_outpost/feature_cage2",
+   "biome": "minecraft:plains",
+   "width": 220
+  },
+  "Papal Outpost feature cage_with_allays": {
+   "kind": "structure",
+   "template": "minecraft:pillager_outpost/feature_cage_with_allays",
+   "biome": "minecraft:plains",
+   "width": 220
+  },
+  "Papal Outpost feature logs": {
+   "kind": "structure",
+   "template": "minecraft:pillager_outpost/feature_logs",
+   "biome": "minecraft:plains",
+   "width": 220
+  },
+  "Papal Outpost feature tent1": {
+   "kind": "structure",
+   "template": "minecraft:pillager_outpost/feature_tent1",
+   "biome": "minecraft:plains",
+   "width": 220
+  },
+  "Papal Outpost feature tent2": {
+   "kind": "structure",
+   "template": "minecraft:pillager_outpost/feature_tent2",
+   "biome": "minecraft:plains",
+   "width": 220
+  },
+  "Papal Outpost feature targets": {
+   "kind": "structure",
+   "template": "minecraft:pillager_outpost/feature_targets",
+   "biome": "minecraft:plains",
+   "width": 220
+  },
+  "Abandoned village isometric view": {
+   "kind": "structure",
+   "jigsaw": "minecraft:village_plains",
+   "seed": 3,
+   "biome": "minecraft:plains",
+   "ground": {
+    "block": "minecraft:grass_block"
+   },
+   "camera": {
+    "pitch": 40
+   },
+   "width": 900
+  },
+  "Abandoned village well": {
+   "kind": "structure",
+   "template": "minecraft:village_beta/town_centers/well",
+   "biome": "minecraft:plains",
+   "camera": {
+    "yaw": 225
+   },
+   "width": 260
+  },
+  "Abandoned village small_1": {
+   "kind": "structure",
+   "template": "minecraft:village_beta/buildings/small_1",
+   "biome": "minecraft:plains",
+   "camera": {
+    "yaw": 225
+   },
+   "width": 260
+  },
+  "Abandoned village medium_1": {
+   "kind": "structure",
+   "template": "minecraft:village_beta/buildings/medium_1",
+   "biome": "minecraft:plains",
+   "camera": {
+    "yaw": 225
+   },
+   "width": 260
+  },
+  "Abandoned village medium_2": {
+   "kind": "structure",
+   "template": "minecraft:village_beta/buildings/medium_2",
+   "biome": "minecraft:plains",
+   "camera": {
+    "yaw": 225
+   },
+   "width": 260
+  },
+  "Abandoned village large_1": {
+   "kind": "structure",
+   "template": "minecraft:village_beta/buildings/large_1",
+   "biome": "minecraft:plains",
+   "camera": {
+    "yaw": 225
+   },
+   "width": 260
+  },
+  "Abandoned village extra_large_1": {
+   "kind": "structure",
+   "template": "minecraft:village_beta/buildings/extra_large_1",
+   "biome": "minecraft:plains",
+   "camera": {
+    "yaw": 225
+   },
+   "width": 260
+  },
+  "Abandoned village extra_large_2": {
+   "kind": "structure",
+   "template": "minecraft:village_beta/buildings/extra_large_2",
+   "biome": "minecraft:plains",
+   "camera": {
+    "yaw": 225
+   },
+   "width": 260
+  },
+  "Abandoned village extra_large_3": {
+   "kind": "structure",
+   "template": "minecraft:village_beta/buildings/extra_large_3",
+   "biome": "minecraft:plains",
+   "camera": {
+    "yaw": 225
+   },
+   "width": 260
+  },
+  "Abandoned village extra_large_4": {
+   "kind": "structure",
+   "template": "minecraft:village_beta/buildings/extra_large_4",
+   "biome": "minecraft:plains",
+   "camera": {
+    "yaw": 225
+   },
+   "width": 260
+  },
+  "Abandoned village extra_large_5": {
+   "kind": "structure",
+   "template": "minecraft:village_beta/buildings/extra_large_5",
+   "biome": "minecraft:plains",
+   "camera": {
+    "yaw": 225
+   },
+   "width": 260
+  },
+  "Zombie render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "humanoid",
+     "texture": "minecraft:entity/zombie/zombie"
+    }
+   ],
+   "pose": "reach",
+   "width": 220
+  },
+  "Husk render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "humanoid",
+     "texture": "minecraft:entity/zombie/husk"
+    }
+   ],
+   "pose": "reach",
+   "width": 220
+  },
+  "Drowned render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "player",
+     "texture": "minecraft:entity/zombie/drowned"
+    },
+    {
+     "model": "player",
+     "texture": "minecraft:entity/zombie/drowned_outer_layer",
+     "inflate": 0.25
+    }
+   ],
+   "pose": "reach",
+   "width": 220
+  },
+  "Skeleton render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "skeleton",
+     "texture": "minecraft:entity/skeleton/skeleton"
+    }
+   ],
+   "pose": "stand",
+   "width": 220
+  },
+  "Stray render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "skeleton",
+     "texture": "minecraft:entity/skeleton/stray"
+    },
+    {
+     "model": "humanoid",
+     "texture": "minecraft:entity/skeleton/stray_overlay",
+     "inflate": 0.25
+    }
+   ],
+   "pose": "stand",
+   "width": 220
+  },
+  "Bogged render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "skeleton",
+     "texture": "minecraft:entity/skeleton/bogged"
+    },
+    {
+     "model": "humanoid",
+     "texture": "minecraft:entity/skeleton/bogged_overlay",
+     "inflate": 0.25
+    }
+   ],
+   "pose": "stand",
+   "width": 220
+  },
+  "Wither Skeleton render": {
+   "kind": "entity",
+   "layers": [
+    {
+     "model": "skeleton",
+     "texture": "minecraft:entity/skeleton/wither_skeleton"
+    }
+   ],
+   "pose": "stand",
+   "width": 220
+  },
+  "Steel armor render": {
+   "kind": "entity",
+   "equipment": {
+    "asset": "matcha:steel"
+   },
+   "width": 180
+  },
+  "Electrum armor render": {
+   "kind": "entity",
+   "equipment": {
+    "asset": "matcha:electrum"
+   },
+   "width": 180
+  },
+  "Hepatizon armor render": {
+   "kind": "entity",
+   "equipment": {
+    "asset": "matcha:hepatizon"
+   },
+   "width": 180
+  },
+  "Shakudo armor render": {
+   "kind": "entity",
+   "equipment": {
+    "asset": "matcha:shakudo"
+   },
+   "width": 180
+  },
+  "Adamant armor render": {
+   "kind": "entity",
+   "equipment": {
+    "asset": "minecraft:netherite"
+   },
+   "width": 180
+  },
+  "Sturdy leather armor render": {
+   "kind": "entity",
+   "equipment": {
+    "asset": "matcha:sturdy_leather"
+   },
+   "width": 180
+  },
+  "Iron armor render": {
+   "kind": "entity",
+   "equipment": {
+    "asset": "minecraft:iron"
+   },
+   "width": 180
+  },
+  "Diamond armor render": {
+   "kind": "entity",
+   "equipment": {
+    "asset": "minecraft:diamond"
+   },
+   "width": 180
+  },
+  "Golden armor render": {
+   "kind": "entity",
+   "equipment": {
+    "asset": "minecraft:gold"
+   },
+   "width": 180
+  },
+  "Copper armor render": {
+   "kind": "entity",
+   "equipment": {
+    "asset": "minecraft:copper"
+   },
+   "width": 180
+  },
+  "Chainmail armor render": {
+   "kind": "entity",
+   "equipment": {
+    "asset": "minecraft:chainmail"
+   },
+   "width": 180
+  },
+  "Leather armor render": {
+   "kind": "entity",
+   "equipment": {
+    "asset": "minecraft:leather"
+   },
+   "width": 180
+  }
+ }
+}

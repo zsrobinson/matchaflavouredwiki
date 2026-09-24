@@ -44,6 +44,11 @@ Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> 
 - After new commits or releases, regenerate the data: `python3 tools/extract.py && python3 tools/images.py && python3 tools/generate.py`.
   If extraction fails or misreads a new format (a new component, recipe type or file layout), fix
   `tools/extract.py` or `tools/generate.py` properly. Never hand-edit `wiki/generated/`.
+- Then redraw the structure, mob and armor renders: `python3 tools/render.py` (a few minutes; it uses
+  the preinstalled Chromium) and commit `wiki/renders/`. Look at the ones that changed: a render that
+  broke (a block drawn magenta, a piece missing) usually means the pack changed a structure or model
+  format. If the pack adds or renames a structure piece, mob texture or armor set, add or update its
+  entry in `tools/renders.json` and the page that shows it.
 
 ## Step 3: understand what changed
 - `git -C source/matcha-flavoured log --oneline <from_commit>..HEAD` and

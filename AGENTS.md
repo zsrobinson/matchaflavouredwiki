@@ -104,6 +104,28 @@ the swap mid-way.
   - Blocks are rendered as true isometric cubes (horizontal step = cos 30°); don't go back to 2:1.
   - Foliage textures are tinted.
   - Tooltip glyphs are `File:Glyph E0xx.png`, named in `Template:G`, and explained on the "Tooltip" page.
+- **Renders** (structures, mobs, armor): every one is an entry in `tools/renders.json`, keyed by its
+  file name. `python3 tools/render.py` draws the ones whose inputs changed into `wiki/renders/`, which
+  is committed (CI only checks it's current), and `images.py` uploads them with the icons. To add one,
+  add an entry and run the tool. The drawing code is `tools/render/` (deepslate for blocks, three.js
+  for mobs, in headless Chromium).
+  - Placement follows minecraft.wiki: `<Structure> isometric view` or `<Mob> render` in the infobox,
+    pieces in a `<gallery>` under the section that describes them, and armor sets without a body.
+  - Structure templates are not what players see: the pool's processors must run (the Abbey is built
+    from placeholder terracotta and tuff bricks), jigsaw blocks become their `final_state`, and a list
+    pool element stacks several templates. `render.py` handles all three; name `processors` in the
+    entry when a template is in two pools.
+  - Whole structures come from `tools/render/src/jigsaw.js`, which follows the game's jigsaw rules.
+    It gives one valid layout per seed, not any world's, so captions say "one possible layout".
+    Only the pack's templates are available: pools that use vanilla templates (the outpost's base
+    plate) can't be assembled, because `source/vanilla-data` has no `.nbt` files.
+  - Mob models are data in `tools/render/src/models.js`. Pick the model, not the texture size: zombies
+    and husks mirror the right limbs' texture for the left ones (a 64×64 zombie texture has an empty
+    left-arm area), while the player and the drowned have their own.
+  - Armor draws double-sided, as the game does; otherwise a lone helmet shows holes.
+  - WebGL goes through SwiftShader on every machine so the same inputs give the same pixels.
+    deepslate's invisible-block mesh is off: for a whole structure it covers millions of empty cells
+    and crashes the tab.
 
 **Pack look** (`MediaWiki:Gadget-mfw-ui.css`)
 - **Station screens:** `{{Crafting}}`, `{{Cooking}}`, `{{Smithing}}` and `{{Stonecutter}}` call

@@ -5,6 +5,8 @@
                     convention used by Module:Inventory slot and minecraft.wiki's Invicons)
   Glyph EXXX.png    each custom-font glyph from custom_emojis.png (used by {{G}})
   Texture <path>.png  raw textures listed in tools/extra_textures.txt (optional)
+  <render>.png      the structure, mob and armor renders committed in wiki/renders/ (drawn by
+                    tools/render.py from tools/renders.json), copied as they are
 
 and into site/assets/gui/: the pack's station screens, progress sprites, villager offer button,
 HUD hearts and glyph sheet at 2x, for Module:Station, Module:Tooltip and {{Hp}}.
@@ -19,6 +21,7 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import sys
 from multiprocessing import Pool
 
@@ -370,8 +373,18 @@ def draw_icon(entry):
     return 'ok'
 
 
+def copy_renders():
+    """The committed renders go up with the icons; tools/build.sh uploads the ones that changed."""
+    src = os.path.join(ROOT, 'wiki', 'renders')
+    names = sorted(f for f in os.listdir(src) if f.endswith('.png')) if os.path.isdir(src) else []
+    for f in names:
+        shutil.copyfile(os.path.join(src, f), os.path.join(OUT, f))
+    return len(names)
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
+    print('renders', copy_renders())
     stamp = os.path.join(OUT, '.inputs')
     digest = input_hash()
     if '--force' not in sys.argv and os.path.exists(stamp) and open(stamp).read() == digest:

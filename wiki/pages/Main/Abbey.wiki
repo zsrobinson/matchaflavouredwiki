@@ -1,9 +1,13 @@
 {{Infobox
 |title=Abbey
+|image=Abbey isometric view.png
+|imagesize=250px
+|imageclass=
+|caption=One possible layout, with the underground ceilings removed
 |type=Jigsaw structure
 |biomes=[[Biomes#Changes by biome|Forest]], [[Biomes#Changes by biome|Dark Forest]]
 |generates=Overworld, partly underground
-|consists=Stone, tuff bricks, andesite, cobblestone, moss, copper grates, [[copper eye]]s
+|consists=Stone, stone bricks (plain, cracked and mossy), andesite, cobblestone, moss, copper grates, [[copper eye]]s
 |id=<code>minecraft:abbey_overgrown</code>
 |added={{Version|1.10}}
 }}
@@ -50,6 +54,8 @@ The layout follows this chain:
 
 Several jigsaw blocks in the combat rooms point to a pool named <code>abbey/default/dungeon</code>, and the tutorial room's entrance connector points to <code>abbey/default/entrace_rooms</code>. Neither pool exists, so those connectors never generate anything.<ref>{{Source|MF_datapack/data/minecraft/structure/abbey/default/rooms/drawbridge.nbt}}</ref>
 
+[[File:Abbey isometric view.png|thumb|center|760px|One possible Abbey, assembled from the pack's template pools with the game's jigsaw rules. The tower stands on the surface; the entrance shaft leads down to the tutorial hub, and combat, puzzle and reward rooms branch off it. The top three layers of the underground rooms are removed to show inside. Real Abbeys vary with the world seed.]]
+
 === Rooms ===
 {| class="wikitable"
 ! Room !! Size !! Contents
@@ -86,6 +92,23 @@ Several jigsaw blocks in the combat rooms point to a pool named <code>abbey/defa
 |-
 | Boon: heart || 5 × 7 × 7 || A [[crystal heart]] item.
 |}
+
+The pieces as they generate: the tower whole, and the underground rooms with their top three layers removed.
+<gallery widths="200" heights="170">
+Abbey tower.png|Tower
+Abbey room Entrance.png|Entrance
+Abbey room Tutorial.png|Tutorial
+Abbey room Waterfall.png|Waterfall
+Abbey room Quad spawn walkways.png|Quad spawn walkways
+Abbey room Spider triple walkway.png|Spider triple walkway
+Abbey room Drawbridge.png|Drawbridge
+Abbey room Water and lava.png|Water and lava
+Abbey room Hallway pitfall.png|Hallway pitfall
+Abbey room Lantern drop.png|Lantern drop
+Abbey room Decision puzzle.png|Decision puzzle
+Abbey room Bath.png|Bath
+Abbey room Jump puzzle.png|Jump puzzle
+</gallery>
 
 === Block processors ===
 Placeholder blocks in the templates are replaced when the structure generates. Each placeholder's rules are checked in order and the first one that succeeds is used, so the effective chances are lower than the listed chance for later rules.<ref>{{Source|MF_datapack/data/minecraft/worldgen/processor_list/abbey_dungeon.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/processor_list/abbey_tower.json}}</ref>
