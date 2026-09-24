@@ -209,8 +209,8 @@ def infobox_image(doc):
     return m.group(1) if m else None
 
 
-def write_site_files(out, indexed, redirects, titles):
-    """sitemap.xml, robots.txt, _headers and src/redirects.json."""
+def write_site_files(out, indexed, redirects, titles, random=()):
+    """sitemap.xml, robots.txt, _headers and src/redirects.json. random: the titles Special:Random picks from."""
     urls = []
     for title, lastmod in sorted(indexed.items()):
         loc = SITE + '/' if title == 'Matcha Flavoured Wiki' else page_url(title)
@@ -219,7 +219,7 @@ def write_site_files(out, indexed, redirects, titles):
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
                 '\n'.join(urls) + '\n</urlset>\n')
     with open(os.path.join(out, 'robots.txt'), 'w') as f:
-        f.write('User-agent: *\nAllow: /\nDisallow: /pagefind/\n\nSitemap: %s/sitemap.xml\n' % SITE)
+        f.write('User-agent: *\nAllow: /\nDisallow: /pagefind/\nDisallow: /w/Special:\n\nSitemap: %s/sitemap.xml\n' % SITE)
     # Everything revalidates on every view (a 304 when unchanged). The pages reference stylesheets,
     # scripts and images with ?v=<content hash> (fingerprint.py), and the Worker lets browsers keep
     # those for a year. Files named without a version must not be cached on their own: after a deploy,
@@ -227,7 +227,8 @@ def write_site_files(out, indexed, redirects, titles):
     with open(os.path.join(out, '_headers'), 'w') as f:
         f.write('/*\n  Cache-Control: public, max-age=0, must-revalidate\n')
     # Worker redirect table: exact redirects and a lowercase index of real titles
-    table = {'redirects': resolve_redirects(redirects, titles), 'titles': {t.lower().replace(' ', '_'): t.replace(' ', '_') for t in titles}}
+    table = {'redirects': resolve_redirects(redirects, titles), 'titles': {t.lower().replace(' ', '_'): t.replace(' ', '_') for t in titles},
+             'random': [page_url(t).removeprefix(SITE) for t in sorted(random)]}
     os.makedirs(os.path.join(ROOT, 'src'), exist_ok=True)
     with open(os.path.join(ROOT, 'src', 'redirects.json'), 'w', encoding='utf-8') as f:
         json.dump(table, f, ensure_ascii=False, separators=(',', ':'))
