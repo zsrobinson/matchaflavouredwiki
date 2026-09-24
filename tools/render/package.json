@@ -1,0 +1,13 @@
+{
+  "name": "mfw-render",
+  "private": true,
+  "description": "Renders structures, mobs and armor from the pack's files for the wiki. Run through tools/render.py.",
+  "type": "module",
+  "dependencies": {
+    "deepslate": "0.27.1",
+    "esbuild": "0.28.2",
+    "gl-matrix": "3.4.4",
+    "playwright-core": "1.63.0",
+    "three": "0.170.0"
+  }
+}

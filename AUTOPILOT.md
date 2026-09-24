@@ -54,7 +54,8 @@ Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> 
   ```
   `--update` runs `tools/release_commit.py`, rewrites `tools/source.lock`, refetches the release notes into
   `source/changelogs/`, and, when `pack.mcmeta` names a new Minecraft version, updates
-  `tools/mc_version.txt` and fetches that vanilla data.
+  `tools/mc_version.txt` and fetches that vanilla data. If it did, also run `python3 tools/entity_models.py`
+  (the mob shapes of the new version) and commit its JSON.
 - **No commit matches the release** (`release_commit.py` exits 1 and lists the closest commits): the
   developer released files that were never committed. Don't guess. Stop and notify with its output.
 - **`extract.py` exits 3** when the source uses a key, type or function it has never seen (a new Minecraft
@@ -64,6 +65,11 @@ Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> 
   Never hand-edit `wiki/generated/`.
 - **New videos:** `python3 tools/fetch_transcripts.py <ids from new_videos>`. It saves transcripts of
   videos about the pack to `sources/transcripts/` and ignores unrelated ones.
+- Then redraw the structure, mob and armor renders: `python3 tools/render.py` (a few minutes; it uses
+  the preinstalled Chromium) and commit `wiki/renders/`. Look at the ones that changed: a render that
+  broke (a block drawn magenta, a piece missing) usually means the pack changed a structure or model
+  format. If the pack adds or renames a structure piece, mob texture or armor set, add or update its
+  entry in `tools/renders.json` and the page that shows it.
 
 ## Step 3: the checklist
 ```sh
@@ -122,6 +128,15 @@ for a big update, one reviewer per heading. It re-checks every number and claim 
 - New progression steps (new tutorial advancements, new tiers) are reflected in "Guide for new players"
   and "Progression".
 - New visible advancements get an anchor and a redirect, as the existing ones have (see "Advancements").
+- Pictures: `python3 tools/render.py --audit` must pass (the Check workflow fails otherwise). It lists
+  every page and pack template that the rules in `wiki/STYLE.md` ("Pictures") say should have a
+  picture and has neither one nor a recorded reason. For each gap, add the render (an entry in
+  `tools/renders.json`, then show it on the page) when the renderer can already draw it: a structure
+  template, or a mob (every model the game has is in `tools/render/src/entity_models.json`; copy a
+  similar entry). When it can't (a mob that only looks right after an animation `models.js` doesn't
+  port yet, as the blaze's rods didn't), add the page to `skip` with the reason, as the existing ones
+  read. Don't write new renderer code in a routine update. List every new skip in the pull request description so a
+  person sees it. Remove a skip once its gap is filled; the audit reports stale ones.
 
 ## Step 5: record, commit, pull request
 ```sh

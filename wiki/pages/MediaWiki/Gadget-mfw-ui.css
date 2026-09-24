@@ -249,9 +249,6 @@
 	border-image: linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
 	pointer-events: none;
 }
-.infobox-tooltip {
-	margin-top: 0.25em;
-}
 
 /* Custom-font glyphs: a mask over the glyph sheet filled with the text colour, with the text's
    shadow, sitting on the baseline as the font's ascent (7 of 8 pixels) puts them. */

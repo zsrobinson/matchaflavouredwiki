@@ -13,3 +13,4 @@ src/redirects.json
 /wiki/generated.tmp/
 # Claude Code agent worktrees
 /.claude/worktrees/
+/tools/render/node_modules/

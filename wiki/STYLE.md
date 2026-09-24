@@ -135,6 +135,26 @@ features after the release), describe the release in the body and the difference
 `{{Source|path|at=<commit>}}`. Version pages are titled `Matcha Flavoured <version>`
 (e.g. "Matcha Flavoured 1.10") and history lines link to them.
 
+## Pictures
+
+Pictures are drawn from the pack's files (`tools/renders.json`, drawn by `tools/render.py`); nobody
+takes screenshots. A page gets one when it is about something whose look an icon or a slot can't show:
+
+- **Structure** pages: the whole structure in the infobox (`File:<Structure> isometric view.png`),
+  or its defining piece when the whole doesn't read at infobox size; and every template the page
+  describes, in a `<gallery>` under the section that describes it. A page about a vanilla structure
+  whose piece the pack replaces shows that piece.
+- **Mob** and **villager profession** pages: a render in the infobox (`File:<Mob> render.png`), with the
+  pack's texture where it has one.
+- **Armor set** pages: the full set without a body, as a thumb at the top of `=== Armor ===`
+  (`File:<Material> armor render.png`).
+
+Nothing else gets one. Items and blocks have their icon and slots, and mechanics and overview pages
+would need diagrams, which are a different thing. When a page qualifies but can't have its picture yet
+(a mob whose animation the renderer lacks) or a template isn't worth showing (an invisible road connector), put it in
+the `skip` list of `tools/renders.json` with the reason. `python3 tools/render.py --audit` lists every
+gap; it passes when each one is rendered or skipped.
+
 ## Files
 
 Pages live in `wiki/pages/<Namespace>/<Title>.wiki`. A `/` in a title is written as `%2F`

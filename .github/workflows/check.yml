@@ -43,6 +43,15 @@ jobs:
           git diff --stat --exit-code wiki/generated || (echo "::error::wiki/generated is out of date: run tools/generate.py and commit" && exit 1)
       - name: Hand-written pages match the pack (items, data templates, source citations)
         run: python3 tools/lint_pages.py
+      - name: Renders are current
+        # wiki/renders/ is drawn by tools/render.py (headless WebGL) and committed, so CI doesn't draw
+        # it. A pack update makes every render out of date: redraw and commit when you next can.
+        run: |
+          python3 tools/render.py --check || echo "::warning::wiki/renders is out of date: run python3 tools/render.py and commit"
+      - name: Every page that should have a picture has one, or a recorded reason
+        # The rules are in wiki/STYLE.md ("Pictures"); a gap is fixed by a render or a "skip" entry
+        # with its reason in tools/renders.json.
+        run: python3 tools/render.py --audit
       - name: Restore item icons
         uses: actions/cache@v4
         with:
