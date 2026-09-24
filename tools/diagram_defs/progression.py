@@ -1,5 +1,5 @@
 """Progression: how the pack's tiers and stations lead into each other."""
-from diagrams import SMALL, TEXT, Flow, Svg, data, diagram, text_width
+from diagrams import SMALL, Flow, Svg, data, diagram
 
 
 def made_in(output, stations=('Mud Kiln', 'Blast Furnace', 'Oven', 'Furnace', 'Kindling')):

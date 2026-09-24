@@ -17,6 +17,7 @@ Doom pairs with the adamant weapons, which apply Weakness on every hit: the weap
 Each adamant armor piece the player wears raises their Doom level by 1, from 1 to 4. Only players count.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_armour.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_armour.mcfunction}}</ref> The tooltip shows {{G|Doom}} 3 on each piece and {{G|Doom set}} 4 as the set bonus, so a full set adds up to 3 × 4 + 4 = 16, which is the damage the full set deals.
 
 === Effect ===
+{{Diagram|Doom|width=360|align=right|caption=Doom's reach with one to four pieces of adamant armor, drawn to scale; the numbers are blocks.}}
 Every 3 seconds, for each player wearing adamant armor:<ref>{{Source|MF_datapack/data/matcha/function/timers/3s/adamant_armour.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/check_doom_4.mcfunction}}</ref>
 # Every entity within the radius that has Weakness and is not wearing any adamant armor becomes a Doom target.
 # If there is at least one target, a high-pitched raid omen sound plays at the player.
@@ -42,7 +43,6 @@ The damage is of the <code>out_of_world</code> type, so it ignores armor and {{M
 <ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/check_doom_1.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/apply_doom_1.mcfunction}}</ref>
 
 Unlike [[warding]], Doom hits '''every''' target in range at once, not just the nearest.
-{{Diagram|Doom|caption=Doom's reach with one to four pieces of adamant armor, drawn to scale.}}
 
 === Targets ===
 Doom does not check the type of entity. Anything with Weakness in range is hit, including passive mobs, [[villager]]s and other players, as long as it isn't wearing an adamant armor piece.<ref>{{Source|MF_datapack/data/matcha/predicate/not_wearing_adamant.json}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/effects/has_weakness.json}}</ref> The wearer is never hurt by their own Doom, and adamant armor also protects other players from it. A {{MCW|Zombie Villager|zombie villager}} that has been given Weakness to be cured will be damaged by Doom, and its Weakness is removed.

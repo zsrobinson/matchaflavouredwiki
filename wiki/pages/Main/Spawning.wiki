@@ -25,13 +25,9 @@ Before the Ender Dragon has been killed, the following mobs are removed as soon 
 
 After the dragon has been killed, a stricter check replaces this one. See [[Surface]].
 
-{{Diagram|Spawn check|caption=The checks run once on each new mundane hostile mob, in the order the pack runs them.}}
-
 Removed mobs are teleported 1,000 blocks down and then killed, so they drop nothing and leave no trace.<ref name="check" />
 
 Because the check tests whether the mob can see the sky rather than its light level, spiders, endermen, witches and the other non-undead mobs can still appear on the surface wherever the sky is blocked, for example under dense leaves or overhangs. Creepers can't, because of their additional height limit.
-
-{{Diagram|Surface spawning|caption=Where mundane hostile mobs can appear in the Overworld before and after the Ender Dragon is killed.}}
 
 == Mob modifications ==
 {{Main|Difficulty#Mob modifications}}

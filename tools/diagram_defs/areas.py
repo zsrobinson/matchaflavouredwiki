@@ -1,7 +1,7 @@
 """Effects with a reach: radius maps drawn to scale around their source, one panel per level."""
 import re
 
-from diagrams import SMALL, STYLE, TEXT, Svg, block_grid, diagram, legend, mcfunction, need
+from diagrams import SMALL, STYLE, Svg, block_grid, diagram, legend, mcfunction, need, text_width
 
 
 def rings(svg, cx, cy, scale, layers, grid_half=None):
@@ -71,29 +71,30 @@ def warding():
 
 @diagram('Doom')
 def doom():
+    """A small aside beside the page's table: the four reaches to scale, each ring labelled at its top."""
     levels = []
     for lv in range(1, 5):
         check = mcfunction('matcha/function/enchantment_effects/adamant_effects/check_doom_%d.mcfunction' % lv)
         apply = mcfunction('matcha/function/enchantment_effects/adamant_effects/apply_doom_%d.mcfunction' % lv)
         levels.append((lv, int(need(r'distance=\.\.(\d+)', check, 'doom radius %d' % lv)),
                        need(r'damage @s (\d+)', apply, 'doom damage %d' % lv)))
-    W = 760
+    W, size = 360, 300
     biggest = max(r for _, r, _ in levels)
-    size = 300
     scale = (size / 2 - 4) / (biggest + 2)
-    svg = Svg(W, size + 40, "Doom's reach for one to four pieces of adamant armor, to scale")
-    cx, cy = 190, 20 + size / 2
+    svg = Svg(W, 0, "Doom's reach for one to four pieces of adamant armor, to scale")
+    cx, cy = W / 2, size / 2
     palette = ['@red_soft', '@amber_soft', '@purple_soft', '@grey_soft']
     rings(svg, cx, cy, scale, [(r, palette[i], '@rule', None) for i, (_, r, _) in enumerate(levels)])
     source_dot(svg, cx, cy)
-    # a key to the right: each ring's colour, reach and damage
-    lx = cx + size / 2 + 70
-    for i, (lv, r, dmg) in enumerate(sorted(levels, key=lambda l: -l[1])):
-        ly = cy - 96 + i * 50
-        svg.rect(lx, ly - 16, 16, 16, fill=palette[lv - 1], stroke='@rule', rx=3)
-        pieces = {1: 'One piece', 2: 'Two pieces', 3: 'Three pieces', 4: 'Full set'}[lv]
-        svg.text(lx + 26, ly - 8, '%s: %d blocks' % (pieces, r), bold=lv == 4)
-        svg.text(lx + 26, ly + 10, 'Damage', size=SMALL, fill='@muted')
-        svg.hp(lx + 26 + 50, ly + 10, dmg, size=SMALL, fill='@muted')
-    svg.text(lx, cy + 112, 'Every target in range is hit, not just the nearest.', size=SMALL, fill='@muted')
+    for lv, r, _ in levels:  # each ring's reach just inside its top edge
+        svg.text(cx, cy - r * scale + 11, '%d' % r, size=SMALL, anchor='middle')
+    # the key: pieces worn, reach and damage, in the rings' colours
+    y = size + 20
+    for lv, r, dmg in levels:
+        svg.rect(12, y - 7, 14, 14, fill=palette[lv - 1], stroke='@rule', rx=2)
+        pieces = {1: '1 piece', 2: '2 pieces', 3: '3 pieces', 4: 'Full set'}[lv]
+        svg.text(34, y, '%s: %d blocks,' % (pieces, r), size=SMALL, fill='@ink')
+        svg.hp(34 + text_width('%s: %d blocks, ' % (pieces, r), SMALL), y, dmg, size=SMALL, fill='@muted')
+        y += 19
+    svg.h = y - 4
     return svg

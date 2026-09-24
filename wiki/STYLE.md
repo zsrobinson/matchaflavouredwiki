@@ -162,16 +162,30 @@ Diagrams are drawn from the pack's data by `tools/diagrams.py` (one function per
 `tools/diagram_defs/`) and committed in `wiki/diagrams/`, so a pack update redraws them. A page shows
 one with `{{Diagram|<Name>|caption=...}}`, which picks the light or dark drawing to match the theme.
 
-A section gets a diagram when its main point is a relationship a table states but doesn't show:
+Draw a diagram only when the picture is quicker to take in than the sentence it replaces. A good one
+makes a reader think "oh, that's easier than reading all that"; a bad one makes them decode a chart to
+get a fact the text could have stated plainly. The ones that earn their place:
 
-- a value over time (the day cycle, a schedule, how something grows or runs out);
-- a range along a scale (where ores generate by Y level, damage or hearts by level);
-- a layout in space (a radius, an area, a cross-section);
-- a sequence or decision (a progression, a crafting chain, the checks a mechanic runs).
+- places and shapes: where ores generate by Y level, a radius drawn to scale, a cross-section of where
+  mobs spawn;
+- time: the day cycle, a schedule, the moon's phases, a release timeline, two effects overlapping;
+- overviews rich in icons: a progression, a crafting chain, the tiers of a set of equipment.
 
-It doesn't when a table or list already reads at a glance. One diagram per section at most, with a
-one-sentence caption saying what it shows. The numbers come from the pack's files at draw time, never
-typed in; the look comes from `tools/diagrams.py`, so every diagram matches the others: the pack's brown
+Don't draw:
+
+- a flowchart of a rule that fits in one or two sentences (the checks a spawn runs, how a level is
+  chosen);
+- a table redrawn as a picture: if it's rows and columns, make it a wikitable, generated from the data
+  when it can be (the mining levels table on the Tools page);
+- a chart that needs a legend of more than a few entries to read, or bars for three or four numbers
+  (effect durations, odds, sleep speeds).
+
+A small spatial picture (one radius, one structure's area) goes beside the text as an aside
+(`width=360|align=right`), at the top of the section it illustrates. A large one that spans time or
+places runs full width under its section's opening paragraph.
+
+One diagram per section at most, with a one-sentence caption saying what it shows. The numbers come
+from the pack's files at draw time, never typed in; the look comes from `tools/diagrams.py`, so every diagram matches the others: the pack's brown
 inventory panel (like the station screens), the Minecraft font with its shadow, boxes as recessed
 slots, item icons and HUD hearts, and areas drawn on a block grid (one cell per block, a heavier line
 every 16). Ranges the game measures as a distance (`distance=..N`) are circles over that grid, because

@@ -54,8 +54,6 @@ The layout follows this chain:
 
 Several jigsaw blocks in the combat rooms point to a pool named <code>abbey/default/dungeon</code>, and the tutorial room's entrance connector points to <code>abbey/default/entrace_rooms</code>. Neither pool exists, so those connectors never generate anything.<ref>{{Source|MF_datapack/data/minecraft/structure/abbey/default/rooms/drawbridge.nbt}}</ref> Two other pools, <code>abbey/default/rooms</code> (all ten rooms) and <code>abbey/default/default_rooms</code> (the tutorial room), are never reached: the only connectors that name <code>rooms</code> are the ones the reward rooms are joined by, and no connector names <code>default_rooms</code>.<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/abbey/default/rooms.json}}</ref>
 
-{{Diagram|Abbey rooms|caption=How the Abbey's rooms connect, read from the jigsaw blocks in the pack's templates. A room's squares are its other doorways and the kind of room each one leads to.}}
-
 [[File:Abbey isometric view.png|thumb|center|760px|One possible Abbey, assembled from the pack's template pools with the game's jigsaw rules. The tower stands on the surface; the entrance shaft leads down to the tutorial hub, and combat, puzzle and reward rooms branch off it. The top three layers of the underground rooms are removed to show inside. Real Abbeys vary with the world seed.]]
 
 === Rooms ===
