@@ -92,6 +92,11 @@ KNOWN = {
     'advancement': {'parent', 'criteria', 'display', 'requirements', 'rewards', 'sends_telemetry_event'},
     'advancement display': {'title', 'description', 'icon', 'frame', 'hidden', 'announce_to_chat', 'show_toast',
                             'background'},
+    'tag': {'values', 'replace'},
+    'tag entry': {'id', 'required'},
+    # assets/minecraft/texts/ in the resource pack: splashes.txt is one splash per line. The pack
+    # replacing another of vanilla's texts (end.txt, postcredits.txt, credits.json) is new content.
+    'resource pack text': {'splashes.txt'},
 }
 UNKNOWN = defaultdict(set)  # (kind, key) -> files it was seen in
 
@@ -596,6 +601,10 @@ def load_tags(kind):
         ns = os.path.relpath(f, DP).split(os.sep)[0]
         t = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'tags', kind))[:-5]
         d = load(f)
+        expect('tag', d, rel(f))
+        for v in d.get('values', []):
+            if not isinstance(v, str):
+                expect('tag entry', v, rel(f))
         vals = [v if isinstance(v, str) else v['id'] for v in d['values']]
         if d.get('replace') or t not in tags:
             tags[t] = vals
@@ -1172,6 +1181,51 @@ def model_variants():
 VARIANT_ITEMS = model_variants()
 
 
+# ---------------------------------------------------------------- biomes (fishing climates)
+# Every biome with its in-game name, and every biome tag expanded to biome ids: the
+# fishing table picks its catch by these tags, so generate.py works out each biome's odds from them.
+BIOMES = {}
+for base in [VDATA] + sorted(glob.glob(os.path.join(DP, '*'))):
+    ns = 'minecraft' if base == VDATA else os.path.basename(base)
+    for f in glob.glob(os.path.join(base, 'worldgen', 'biome', '*.json')):
+        bid = ns + ':' + os.path.basename(f)[:-5]
+        key = 'biome.%s.%s' % (ns, bid.split(':')[1])
+        BIOMES[bid] = strip_codes(LANG.get(key) or bid.split(':')[1].replace('_', ' ').title())
+_BIOME_TAGS = load_tags('worldgen/biome')
+
+
+def expand_biome_tag(tag, seen=()):
+    out = []
+    for v in _BIOME_TAGS.get(tag, []):
+        v = v if isinstance(v, str) else v['id']
+        if v.startswith('#'):
+            if v[1:] not in seen:
+                out += expand_biome_tag(v[1:], seen + (tag,))
+        else:
+            out.append(norm_ns(v))
+    return out
+
+
+BIOME_TAGS = {t: expand_biome_tag(t) for t in sorted(_BIOME_TAGS)}  # vanilla's and the pack's
+
+
+# ---------------------------------------------------------------- splash texts
+# The title screen's splashes: assets/minecraft/texts/splashes.txt, one per line (the game trims each
+# line). The pack's file replaces vanilla's whole list.
+_texts = os.path.join(RP, 'minecraft', 'texts')
+for f in sorted(os.listdir(_texts)) if os.path.isdir(_texts) else []:
+    expect('resource pack text', [f], rel(os.path.join(_texts, f)))
+if not os.path.exists(os.path.join(VASSETS, 'texts', 'splashes.txt')):
+    UNKNOWN[('resource pack text', 'vanilla has no texts/splashes.txt any more')].add('source/vanilla-assets')
+SPLASHES = None
+if os.path.exists(os.path.join(_texts, 'splashes.txt')):
+    with open(os.path.join(_texts, 'splashes.txt'), encoding='utf-8') as f:
+        lines = [ln.strip() for ln in f.read().splitlines()]
+    while lines and not lines[-1]:
+        lines.pop()  # a trailing newline is not an empty splash
+    SPLASHES = {'src': rel(os.path.join(_texts, 'splashes.txt')), 'lines': lines}
+
+
 # ---------------------------------------------------------------- write
 for k, it in ITEMS.items():
     it['icon'] = icon_for(it)
@@ -1201,6 +1255,9 @@ data = {
     'enchantments': ENCH,
     'advancements': ADV,
     'functions': FUNCTIONS,
+    'biomes': BIOMES,
+    'biome_tags': BIOME_TAGS,
+    'splashes': SPLASHES,
     'missing_lang': sorted(MISSING_LANG),
 }
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
