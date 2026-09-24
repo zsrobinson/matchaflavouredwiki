@@ -251,18 +251,6 @@ THEME_BOOT = ''  # the head script from site/theme-boot.js is already in the pag
 SITE_JS = r"""// Static replacement for the MediaWiki scripts the wiki uses.
 (function () {
   'use strict';
-  // Animated inventory slots (cycling ingredients), as Gadget-animatedIcons does.
-  setInterval(function () {
-    if (document.hidden) return;
-    document.querySelectorAll('.animated').forEach(function (el) {
-      if (el.classList.contains('animated-paused')) return;
-      var cur = el.querySelector(':scope > .animated-active');
-      var next = (cur && cur.nextElementSibling) || el.firstElementChild;
-      if (cur) cur.classList.remove('animated-active');
-      if (next) next.classList.add('animated-active');
-    });
-  }, 2000);
-
   // Collapsible tables (mw-collapsible).
   document.querySelectorAll('table.mw-collapsible').forEach(function (tbl) {
     var head = tbl.querySelector('tr');
@@ -358,8 +346,10 @@ def main():
     # site furniture
     os.makedirs(os.path.join(out, '_static'), exist_ok=True)
     with open(os.path.join(out, '_static', 'site.js'), 'w') as f:
-        # the same shell, tooltip, page preview and image viewer scripts the live wiki runs as gadgets, then the static-only behaviours
-        for gadget in ('Gadget-mfwShell.js', 'Gadget-mfwTooltip.js', 'Gadget-mfwPreview.js', 'Gadget-mfwZoom.js'):
+        # the same shell, tooltip, page preview, cycling and image viewer scripts the live wiki runs as
+        # gadgets, then the static-only behaviours
+        for gadget in ('Gadget-mfwShell.js', 'Gadget-mfwTooltip.js', 'Gadget-mfwPreview.js', 'Gadget-animatedIcons.js',
+                       'Gadget-mfwZoom.js'):
             f.write(open(os.path.join(ROOT, 'wiki', 'pages', 'MediaWiki', gadget), encoding='utf-8').read())
             f.write('\n')
         f.write(SITE_JS)

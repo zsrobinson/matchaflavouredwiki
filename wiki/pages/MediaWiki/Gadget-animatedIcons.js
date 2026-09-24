@@ -1,45 +1,40 @@
-// from https://minecraft.wiki/w/MediaWiki:Gadget-site.js
-( function() {
-'use strict';
+/* Cycling slots and pictures (.animated), after minecraft.wiki's Gadget-site.js.
+   One clock drives them all: every 2 seconds each .animated shows frame (tick mod its frame count),
+   and a subframe container shows subframe (its number of full cycles mod its subframe count). So
+   slots with the same frames always show the same variant: the slots of a recipe screen (Oak Planks
+   in, Oak Fence Gate out), and a family page's infobox with its screens. While one is paused
+   (.animated-paused: the tooltip is showing its frame), the clock stops, so everything stays in step.
+   Pausing only the hovered slot, as minecraft.wiki does, left it a frame or more behind for good.
+   Plain DOM (no jQuery): the static export (tools/export_static.py) ships this file as is. */
+( function () {
+	'use strict';
+	var tick = 0;
 
-$( function() {
-
-( function() {
-	var $content = $( '#mw-content-text' );
-	var advanceFrame = function( parentElem, parentSelector ) {
-		var curFrame = parentElem.querySelector( parentSelector + ' > .animated-active' );
-		$( curFrame ).removeClass( 'animated-active' );
-		var $nextFrame = $( curFrame && curFrame.nextElementSibling || parentElem.firstElementChild );
-		return $nextFrame.addClass( 'animated-active' );
-	};
-	
-	// Set the name of the hidden property
-	var hidden; 
-	if ( typeof document.hidden !== 'undefined' ) {
-		hidden = 'hidden';
-	} else if ( typeof document.msHidden !== 'undefined' ) {
-		hidden = 'msHidden';
-	} else if ( typeof document.webkitHidden !== 'undefined' ) {
-		hidden = 'webkitHidden';
+	function show( parent, index ) {
+		var frames = parent.children;
+		var n = frames.length;
+		for ( var i = 0; i < n; i++ ) {
+			frames[ i ].classList.toggle( 'animated-active', i === index % n );
+		}
+		return frames[ index % n ];
 	}
-	
-	setInterval( function() {
-		if ( hidden && document[hidden] ) {
+
+	setInterval( function () {
+		if ( document.hidden || document.querySelector( '.animated-paused' ) ) {
 			return;
 		}
-		$content.find( '.animated' ).each( function() {
-			if ( $( this ).hasClass( 'animated-paused' ) ) {
-				return;
+		tick++;
+		var els = document.querySelectorAll( '.animated' );
+		for ( var i = 0; i < els.length; i++ ) {
+			var el = els[ i ];
+			var n = el.children.length;
+			if ( !n ) {
+				continue;
 			}
-			
-			var $nextFrame = advanceFrame( this, '.animated' );
-			if ( $nextFrame.hasClass( 'animated-subframe' ) ) {
-				advanceFrame( $nextFrame[0], '.animated-subframe' );
+			var frame = show( el, tick );
+			if ( frame && frame.classList.contains( 'animated-subframe' ) ) {
+				show( frame, Math.floor( tick / n ) );
 			}
-		} );
+		}
 	}, 2000 );
-}() );
-
-} );
-
 }() );
