@@ -27,6 +27,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
+import backlinks  # noqa: E402
 import build_xml  # noqa: E402
 import fingerprint  # noqa: E402
 import og  # noqa: E402
@@ -67,6 +68,7 @@ class Exporter:
         self.dates = seo.git_dates()
         self.first_dates = seo.git_dates(first=True)
         self.search = {}  # title -> the title search's row (search_index.write)
+        self.links = {}  # title -> the titles its body links to (What links here, backlinks.py)
 
     # --- stylesheets from load.php -------------------------------------------------
     def static_css(self, href):
@@ -160,9 +162,11 @@ class Exporter:
         doc = re.sub(r'href="/w/([^"#?]+)(#[^"]*)?"', fix, doc)
         doc = doc.replace('href="/w/Matcha_Flavoured_Wiki"', 'href="/"')  # the main page is served at /
         # links a static site can't serve
-        doc = re.sub(r'<li id="(?:t-|ca-(?!mfw-)|pt-|n-recentchanges|n-randompage)[^"]*"[^>]*>.*?</li>', '', doc, flags=re.S)
+        # (the Tools menu keeps "What links here", whose pages the export writes (backlinks.py), and "Printable version")
+        doc = re.sub(r'<li id="(?:t-(?!whatlinkshere"|print")|ca-(?!mfw-)|pt-|n-recentchanges)[^"]*"[^>]*>.*?</li>', '', doc, flags=re.S)
         doc = re.sub(r'href="/index\.php\?title=Special:Search[^"]*"', 'href="/search/"', doc)
-        doc = re.sub(r'<a href="/w/Special:[^"]*"[^>]*>(.*?)</a>', r'\1', doc, flags=re.S)
+        # (the sidebar's "Random page", Special:Random, is served by the Worker from the export's list)
+        doc = re.sub(r'<a href="/w/Special:(?!Random"|WhatLinksHere/)[^"]*"[^>]*>(.*?)</a>', r'\1', doc, flags=re.S)
         # MediaWiki's own search box, styled by minecraft.wiki's skin; site/search.js adds the suggestions.
         # Without the script it submits to the search page. The data paths get ?v= from fingerprint.py.
         doc = re.sub(r'<form action="/index\.php" id="searchform".*?</form>',
@@ -170,10 +174,9 @@ class Exporter:
                      'data-pagefind="/pagefind/pagefind.js"><div id="simpleSearch" class="vector-search-box-inner">'
                      '<input class="vector-search-box-input" type="search" name="q" placeholder="Search Matcha Flavoured Wiki" '
                      'aria-label="Search Matcha Flavoured Wiki" autocapitalize="sentences" autocomplete="off" spellcheck="false" '
-                     'title="Search Matcha Flavoured Wiki [/]" id="searchInput">'
+                     'title="Search Matcha Flavoured Wiki [/]" accesskey="f" id="searchInput">'
                      '<input id="searchButton" class="searchButton" type="submit" title="Search the pages for this text" value="Search">'
                      '</div></form>', doc, flags=re.S)
-        doc = re.sub(r'<nav id="p-tb".*?</nav>', '', doc, flags=re.S)
         doc = re.sub(r'<li id="footer-info-lastmod".*?</li>', '', doc, flags=re.S)
         # the footer's last-edit date, from git (site/GitLinks.php leaves a link to the history)
         def lastmod(m):
@@ -216,6 +219,7 @@ class Exporter:
             self.redirects[url_title(title)] = href_for(m.group(1).strip()) + (m.group(2) or '').replace(' ', '_')
             return 'redirect'
         doc = self.rewrite(fetch(self.base + '/w/' + urllib.parse.quote(url_title(title))))
+        self.links[title] = backlinks.links(doc)
         src, layer = seo.source_file(title, ns)
         is_main = title == 'Matcha Flavoured Wiki'
         # search: the page's picture (Pagefind's result image too), and its row in the title search
@@ -355,6 +359,7 @@ def main():
             f.write('\n')
         f.write(SITE_JS)
         f.write(open(os.path.join(ROOT, 'site', 'search.js'), encoding='utf-8').read())
+        f.write(open(os.path.join(ROOT, 'site', 'accesskeys.js'), encoding='utf-8').read())  # "[x]" -> "[alt-shift-x]"
     shutil.copy(os.path.join(ROOT, 'site', 'search.css'), os.path.join(out, '_static', 'site.css'))
     # /_static/build.json: the tree this export was built from, which tools/watchdog.py compares with main's
     watchdog.write_stamp(out)
@@ -368,6 +373,7 @@ def main():
         json.dump(titles + sorted(t for t, p in exportable.items() if re.match(r'\s*#REDIRECT', p[1], re.I) and t not in ex.case_redirects), f)
     # search page and root index, built from the main page's skin
     main_html = open(page_path(out, 'Matcha Flavoured Wiki'), encoding='utf-8').read()
+    main_html = re.sub(r'<nav id="p-tb".*?</nav>', '', main_html, flags=re.S)  # the main page's own tools
     # site/search.js draws the results (title matches, then Pagefind's full text), as in the header box
     search_body = ('<div id="mfw-search-page">'
                    '<form id="mfw-search-form" action="/search/" role="search">'
@@ -409,9 +415,13 @@ def main():
                     'for(var i=0;i<ts.length;i++){if(ts[i].toLowerCase()===want){location.replace("/w/"+encodeURIComponent(ts[i].replace(/ /g,"_")));return}}})})();</script></head>', 1)
     nf = seo.utility_page(nf, 'Page not found')
     open(os.path.join(out, '404.html'), 'w', encoding='utf-8').write(nf)
+    # What links here: /w/Special:WhatLinksHere/<Title> for every exported page, in the main page's skin
+    backlinks.write(out, main_html, ex.links, seo.resolve_redirects(ex.redirects, titles), href_for, page_path)
     # host hints: Netlify/Cloudflare Pages redirects, and disable Jekyll on GitHub Pages
     ex.redirects['Main_Page'] = '/'
-    seo.write_site_files(out, ex.indexed, ex.redirects, titles)
+    # Special:Random picks an article: indexed pages in the main namespace, as MediaWiki's does (not the main page)
+    random = [t for t in ex.indexed if exportable[t][0] == 'Main' and t != 'Matcha Flavoured Wiki']
+    seo.write_site_files(out, ex.indexed, ex.redirects, titles, random)
     search_index.write(out, ex.search, seo.resolve_redirects(ex.redirects, titles), ex.case_redirects)
     open(os.path.join(out, '.nojekyll'), 'w').close()
     # full-text search index (Pagefind); the component UI is served from /pagefind/

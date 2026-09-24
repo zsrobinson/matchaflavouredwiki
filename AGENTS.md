@@ -263,6 +263,23 @@ the swap mid-way.
   - Category pages are left out of the full-text index; its ranking settings are `RANKING` in `search.js`.
   - Synonyms readers type belong in real redirects (`Changelog`, `Updates`), not in code.
     `node --test tests/search.test.mjs` covers the matching.
+- **Reader tools** from MediaWiki that the export rebuilds statically (each links where minecraft.wiki has it):
+  - **Random page** (Navigation, `[x]`): `MediaWiki:Sidebar`'s `randompage` links to `/w/Special:Random`. The Worker
+    answers it with a `302` (`no-store`) to a page from `random` in `src/redirects.json`: the indexed articles in
+    the main namespace, not the main page. `robots.txt` disallows `/w/Special:`.
+  - **What links here** (Tools, `[j]`): the export keeps the Tools menu with only this link (`Vector.css` hides the
+    rest on the live wiki) and writes `/w/Special:WhatLinksHere/<Title>` for every exported page (`tools/backlinks.py`):
+    the links in each page's body after the export's rewriting (navboxes count, category member lists don't; links
+    to redirects already point at the target, so redirects are listed as "(redirect page)"), in MediaWiki's list
+    markup inside the main page's skin turned special page. They are utility pages (noindex, no canonical), and
+    `check_seo.py` treats every `w/Special:` file that way.
+  - **Printable version** (Tools, `[p]`): MediaWiki's own `javascript:print()` link. `Gadget-mfwShell.js` switches
+    to the light theme for printing (`beforeprint`/`afterprint`; paper is white), and `Gadget-mfw-ui.css` keeps the
+    article's colours in print (`print-color-adjust: exact`), since screens, hearts and glyphs are backgrounds or masks.
+  - **Access keys:** the links keep MediaWiki's `accesskey`s, and the search box gets `f` back. `site/accesskeys.js`
+    (appended to `site.js`) rewrites the `[x]` ending each tooltip into this browser's keys (`[alt-shift-x]`,
+    `[ctrl-option-x]` on Apple systems), as MediaWiki's `jquery.accessKeyLabel` does on the live wiki.
+    `node --test tests/accesskeys.test.mjs` covers it.
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;
   it becomes the search snippet. `check_seo.py` checks the export.

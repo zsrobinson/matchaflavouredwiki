@@ -168,6 +168,13 @@
 	}
 	function init() {
 		applyTheme( getTheme() );
+		// paper is white: print (Tools > Printable version) in the light theme, then switch back
+		window.addEventListener( 'beforeprint', function () {
+			applyTheme( 'light' );
+		} );
+		window.addEventListener( 'afterprint', function () {
+			applyTheme( getTheme() );
+		} );
 
 		// Dark mode toggle in the personal bar (#pt-dm-toggle is styled by minecraft.wiki's CSS).
 		var personal = document.querySelector( '#p-personal ul' );
