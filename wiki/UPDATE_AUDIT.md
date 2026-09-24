@@ -100,3 +100,12 @@ folders, so `tools/release_commit.py` compares every file in the zips with each 
 Unreleased work on `main` is still described where a page marks it `{{Upcoming}}` and cites it with
 `{{Source|path|at=<commit on main>}}`, which `lint_pages.py` checks at that commit. The Monday rehearsal
 now also runs `tools/dry_run.sh main`, which previews what the next release will change.
+
+## Follow-up: no rehearsals, one daily run
+The Monday port rehearsal is gone, and so are `tools/dry_run.sh` and the branch list in
+`check_upstream.py`. It guessed which upstream branches were ports from their names, and it had the
+extractor read two formats at once, translating the new one back into the old. Now a format change is
+handled on the day of the release that brings it: `extract.py` exits 3, and the run teaches it the new
+format in place of the old one (the update report's baseline was already taken with the old code). The
+tools always read the latest format. Late video captions are picked up by `fetch_transcripts.py --all`,
+which every run with a new video now uses.

@@ -371,6 +371,7 @@ layout) gets pictures:
 ## Delegating to agents
 Writer and reviewer briefs are in `wiki/AGENT_BRIEF.md` and `wiki/REVIEW_BRIEF.md`, and the page plan
 (which titles exist and who owns them) is in `wiki/PAGES.md`. Agents should:
+- run on the session's own model: don't pass a `model` to pick a smaller or cheaper one;
 - save each page as they finish it (runs have been cut off by usage limits);
 - check their pages with `tools/preview.py`;
 - never run build or sync scripts or commit; the coordinator does that.
