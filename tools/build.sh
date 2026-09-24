@@ -46,6 +46,8 @@ PY
       --comment "Texture from the Matcha Flavoured resource pack (CC BY-NC-SA 4.0)" /build/images_changed png gif svg | sed "/^Importing .*done\.$/d"
   fi
   mv build/image_hashes.json.pending build/image_hashes.json
+  # full-size renders for the image viewer (Gadget-mfwZoom.js): plain files, not uploads
+  docker exec "$C" bash -c 'rm -rf /var/www/html/images/full && cp -r /build/images_full /var/www/html/images/full'
   step "import images"
 fi
 # Links tables (categories, the article count) and, in CI, the parser cache: one parse per page,

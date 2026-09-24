@@ -132,7 +132,10 @@ the swap mid-way.
   - Tooltip glyphs are `File:Glyph E0xx.png`, named in `Template:G`, and explained on the "Tooltip" page.
 - **Renders** (structures, mobs, armor): every one is an entry in `tools/renders.json`, keyed by its
   file name. `python3 tools/render.py` draws the ones whose inputs changed into `wiki/renders/`, which
-  is committed (CI only checks it's current), and `images.py` uploads them with the icons. To add one,
+  is committed (CI only checks it's current), and `images.py` uploads them with the icons. Files are
+  twice an entry's `width` (`ZOOM`): `images.py` uploads a half-size copy for the pages, which have no
+  thumbnailer (no ImageMagick or GD), and `build.sh` puts the file itself in `/images/full/` for the
+  image viewer. Pages set the size they show a render at. To add one,
   add an entry and run the tool. The drawing code is `tools/render/` (deepslate for blocks, three.js
   for mobs, in headless Chromium). It finds a Chromium in Playwright's cache, `$MFW_CHROMIUM`,
   `$CHROME_BIN` or the usual Chrome install paths.
@@ -196,6 +199,9 @@ the swap mid-way.
   wiki and in the static export. `{{Tooltip|item}}` draws it in place (the Tooltip page); infoboxes don't, their slot shows it on hover. Glyphs are CSS
   masks over `glyphs.png` filled with the text colour, the way the game tints the font's white glyphs.
 - **Palette:** slots and panels use the pack's brown inventory colours, and `{{Hp}}` uses its HUD hearts.
+- **Image viewer:** `MediaWiki:Gadget-mfwZoom.js` opens a clicked infobox image, thumbnail, gallery image
+  or diagram over the page, fitted to the screen; clicking it again shows it at full size. Renders open
+  their `/images/full/` file, diagrams scale as SVG, and textures scale by whole pixels.
 
 **Static export and deploy**
 - **Page files:** pages are `dist/w/<Title>.html`, with `html_handling: auto-trailing-slash` in `wrangler.jsonc`.
@@ -208,7 +214,7 @@ the swap mid-way.
     (`Category:`, `Template:`) once looped.
 - **What the export keeps and strips:** it removes MediaWiki's scripts except the theme boot, and keeps the `ca-mfw-*` GitHub tabs.
   It also replaces legacy Vector's fixed `width=1120` viewport with `device-width`, so phones get the vendored narrow-screen layout.
-  Its `site.js` is `Gadget-mfwShell.js` and `Gadget-mfwTooltip.js` (plain DOM, no jQuery) plus `SITE_JS`.
+  Its `site.js` is `Gadget-mfwShell.js`, `Gadget-mfwTooltip.js` and `Gadget-mfwZoom.js` (plain DOM, no jQuery) plus `SITE_JS`.
 - **Search** is Pagefind (Component UI searchbox and the `/search/` page).
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;

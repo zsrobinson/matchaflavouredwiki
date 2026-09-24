@@ -1190,16 +1190,29 @@ def draw_icon(entry):
     return 'ok', UNSUPPORTED  # special renderers this worker could not draw, for main() to report
 
 
+RENDER_ZOOM = 2  # tools/render.py keeps renders at twice the size pages show them at (its ZOOM)
+FULL = os.path.join(ROOT, 'build', 'images_full')  # tools/build.sh puts these in the wiki's /images/full/
+
+
 def copy_renders():
     """The committed renders and diagrams go up with the icons; tools/build.sh uploads the ones that
-    changed."""
+    changed. Pages get each render at half its size, as they show it; the file itself goes to
+    /images/full/, which only the image viewer (Gadget-mfwZoom.js) loads. Diagrams are SVG and zoom as
+    they are."""
     count = 0
-    for folder, ext in (('renders', '.png'), ('diagrams', '.svg')):
-        src = os.path.join(ROOT, 'wiki', folder)
-        names = sorted(f for f in os.listdir(src) if f.endswith(ext)) if os.path.isdir(src) else []
-        for f in names:
-            shutil.copyfile(os.path.join(src, f), os.path.join(OUT, f))
-        count += len(names)
+    shutil.rmtree(FULL, ignore_errors=True)
+    os.makedirs(FULL)
+    src = os.path.join(ROOT, 'wiki', 'renders')
+    for f in sorted(f for f in os.listdir(src) if f.endswith('.png')):
+        shutil.copyfile(os.path.join(src, f), os.path.join(FULL, f.replace(' ', '_')))
+        im = Image.open(os.path.join(src, f))
+        im = im.resize((max(1, round(im.width / RENDER_ZOOM)), max(1, round(im.height / RENDER_ZOOM))), Image.LANCZOS)
+        im.save(os.path.join(OUT, f), optimize=True)  # the same bytes each run, so build.sh uploads only real changes
+        count += 1
+    src = os.path.join(ROOT, 'wiki', 'diagrams')
+    for f in sorted(f for f in os.listdir(src) if f.endswith('.svg')):
+        shutil.copyfile(os.path.join(src, f), os.path.join(OUT, f))
+        count += 1
     return count
 
 

@@ -1780,7 +1780,7 @@ def mining_levels_table():
     """Tools page: which blocks each pickaxe gets drops from, and where its speed differs, from its tool rules."""
     groups = [(heads, set().union(*(rule_blocks(sel) for sel in sels))) for heads, sels in MINING_GROUPS]
     covered = set().union(*(g for _, g in groups)) | MINING_UNBREAKABLE
-    head = '! Pickaxe !! Speed' + ''.join(' !! ' + ', '.join('{{ItemLink|%s}}' % id_name(h) for h in heads) for heads, _ in groups)
+    head = '! Pickaxe !! Speed' + ''.join(' !! ' + ', '.join(il(id_name(h)) for h in heads) for heads, _ in groups)
     rows = []
     for prefix, _ in EQUIPMENT_TIERS:
         name = prefix + ' Pickaxe'
