@@ -24,7 +24,7 @@ They can be repaired in an [[anvil]] with [[tattered leather]]. The pack resets 
 == History ==
 {{History|
 {{History line|0.4-alpha|Added.}}
-{{History line|1.12.2|Safe fall distance raised from 1 to 2 per piece, and the armor can be repaired with tattered leather. Added the step height bonus.}}
+{{History line|1.12.2|Safe fall distance raised from 1 to 2 per piece, and the armor can be repaired with tattered leather. Added the step height bonus. Feather Falling lowered from III to II, while the same update doubled what each level of Feather Falling protects, so level II now protects more than level III did.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sturdy_leather_boots.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/enchantment/feather_falling.json}}</ref>}}
 }}
 
 == References ==
