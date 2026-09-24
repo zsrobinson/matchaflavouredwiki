@@ -245,6 +245,10 @@ the swap mid-way.
   - Category pages are left out of the full-text index; its ranking settings are `RANKING` in `search.js`.
   - Synonyms readers type belong in real redirects (`Changelog`, `Updates`), not in code.
     `node --test tests/search.test.mjs` covers the matching.
+- **Reader tools** from MediaWiki that the export rebuilds statically (each links where minecraft.wiki has it):
+  - **Random page** (Navigation, `[x]`): `MediaWiki:Sidebar`'s `randompage` links to `/w/Special:Random`. The Worker
+    answers it with a `302` (`no-store`) to a page from `random` in `src/redirects.json`: the indexed articles in
+    the main namespace, not the main page. `robots.txt` disallows `/w/Special:`.
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;
   it becomes the search snippet. `check_seo.py` checks the export.
