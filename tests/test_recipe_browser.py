@@ -114,16 +114,18 @@ class SlotTests(unittest.TestCase):
             'Secret_Stew': '<p>Lead.</p>' + box + '<p class="mfw-spoiler-body">x</p><div class="mw-heading mw-heading2 mfw-spoiler-body"><h2 id="Obtaining">O</h2></div>',
             'Pizza': '<div class="mw-heading mw-heading2"><h2 id="Kinds">K</h2></div>' + box +
                      '<div class="mw-heading mw-heading3 mfw-spoiler-body"><h3 id="Warped_Pizza">W</h3></div>'
-                     '<div class="mw-heading mw-heading2"><h2 id="Mushroom_Pizza">M</h2></div>',
+                     '<div class="mw-heading mw-heading2"><h2 id="Mushroom_Pizza">M</h2></div>'
+                     '<div class="mw-heading mw-heading2"><h2 id="Chorus_pizza">C</h2></div>' + box.replace('"1"', '"2"') +
+                     '<p class="mfw-spoiler-body">x</p><div class="mw-heading mw-heading2"><h2 id="History">H</h2></div>',
             'Bread': '<p>Lead.</p><div class="mw-heading mw-heading2"><h2 id="Uses">U</h2></div>' + box + '<p class="mfw-spoiler-body">x</p>',
         }
         with tempfile.TemporaryDirectory() as out:
             Path(out, 'w').mkdir()
             for t, h in pages.items():
                 Path(out, 'w', t + '.html').write_text(h, encoding='utf-8')
-            links = {'Secret Stew': '/w/Secret_Stew', 'Warped Pizza': '/w/Pizza#Warped_Pizza', 'Mushroom Pizza': '/w/Pizza#Mushroom_Pizza',
+            links = {'Secret Stew': '/w/Secret_Stew', 'Warped Pizza': '/w/Pizza#Warped_Pizza', 'Mushroom Pizza': '/w/Pizza#Mushroom_Pizza', 'Chorus Pizza': '/w/Pizza#Chorus_pizza',
                      'Bread': '/w/Bread', 'Stone': 'https://minecraft.wiki/w/Stone', 'Missing': '/w/Missing'}
-            self.assertEqual(rb.spoilers(out, links), ['Secret Stew', 'Warped Pizza'])
+            self.assertEqual(rb.spoilers(out, links), ['Chorus Pizza', 'Secret Stew', 'Warped Pizza'])
 
 
 if __name__ == '__main__':

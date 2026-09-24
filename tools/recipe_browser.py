@@ -190,7 +190,8 @@ def page(doc):
 
 def spoilers(out, links):
     """The items in links (name -> link) whose exported page a {{Spoiler}} box covers: the whole page
-    (a box in the lead), or the section a #fragment names. site/Spoilers.php marked what each box
+    (a box in the lead), or the section a #fragment names (the heading is covered, or a box starts
+    the section). site/Spoilers.php marked what each box
     covers with mfw-spoiler-body, so this reads the pages the export has just written."""
     pages, found = {}, []
     for name, url in sorted(links.items()):
@@ -207,9 +208,12 @@ def spoilers(out, links):
         if 'mfw-spoiler-body' not in doc:
             continue
         if frag:
+            # the heading is inside what a box covers, or its section starts with a box
             at = doc.find(' id="%s"' % html.escape(urllib.parse.unquote(frag)))
             opening = doc.rfind('<div class="mw-heading', 0, at) if at >= 0 else -1
-            hidden = opening >= 0 and 'mfw-spoiler-body' in doc[opening:doc.find('>', opening)]
+            nxt = doc.find('<div class="mw-heading', at) if at >= 0 else -1
+            hidden = opening >= 0 and ('mfw-spoiler-body' in doc[opening:doc.find('>', opening)] or
+                                       'class="messagebox spoiler' in doc[at:nxt if nxt >= 0 else len(doc)])
         else:  # a box before the first section heading covers the rest of the page
             box, h2 = doc.find('class="messagebox spoiler'), doc.find('<div class="mw-heading mw-heading2')
             hidden = box >= 0 and (h2 < 0 or box < h2)
