@@ -85,8 +85,11 @@ translation on the pack's own files.
    New folders to decide on: `chicken_variant` and `chicken_sound_variant` (Seagull and Bobwhite
    chickens), `worldgen/feature`, the Seagull Roost structure, and `favorite_food/food_trades`.
    `wiki/generated` changes in 907 files (297 changed, 610 new or removed).
-7. **Pack bug to report** if the release ships with it: the `traverse` / `traversal` call above.
-   If it ships, put it on "Known bugs".
+7. **A pack bug to check in game** if the release ships with it. `timer.mcfunction` calls `traverse`,
+   which doesn't exist, while `on_restart` already calls `traversal`. The line is harmless if the game
+   resolves the call only when it runs. If the game resolves calls at load, `timer.mcfunction` fails to
+   load and every 2-second timer stops. This hasn't been checked; if it breaks something, it belongs on
+   "Known bugs".
 
 ## Steps for the autopilot when the 26.3 release lands
 1. Step 0 as usual. `fetch_sources.sh --update` moves `tools/source.lock` to the release and
