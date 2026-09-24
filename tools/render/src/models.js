@@ -114,15 +114,10 @@ export const POSES = {
   },
 }
 
-// The camera each model is seen from best, when a render doesn't give one. Raised arms need a view
-// from further round the side, or the near arm points straight at the camera and looks missing.
+// The corner each model is seen from, when it isn't the front-right (see camera.js): the dragon from
+// the front-left, so its near wing doesn't hide the body.
 export const CAMERAS = {
-  zombie_arms: { yaw: 50 },
-  ender_dragon: { yaw: 145, pitch: 25 },
-  phantom: { yaw: 35, pitch: 35 },
-  spider: { yaw: 35, pitch: 25 },
-  cave_spider: { yaw: 35, pitch: 25 },
-  silverfish: { yaw: 35, pitch: 30 },
+  ender_dragon: { yaw: 135 },
 }
 
 // Armor: the equipment asset's layer for each slot, and the armor model layer the game draws it on

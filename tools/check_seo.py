@@ -16,6 +16,8 @@ class Signals(HTMLParser):
         self.canonicals = []
         self.descriptions = []
         self.noindex = False
+        self.og_image = None
+        self.icons = []
         self.h1 = 0
         self.feed(text)
 
@@ -23,6 +25,10 @@ class Signals(HTMLParser):
         attrs = dict(attrs)
         if tag == 'link' and attrs.get('rel') == 'canonical':
             self.canonicals.append(attrs.get('href', ''))
+        if tag == 'link' and attrs.get('rel') == 'icon':
+            self.icons.append(attrs.get('href', ''))
+        if tag == 'meta' and attrs.get('property') == 'og:image':
+            self.og_image = attrs.get('content', '')
         if tag == 'meta':
             if attrs.get('name') == 'description':
                 self.descriptions.append(attrs.get('content', ''))
@@ -54,9 +60,16 @@ def check(out):
             errors.append('%s: missing/duplicate/empty description' % rel)
         if signals.h1 != 1:
             errors.append('%s: expected one h1' % rel)
+        if not any(icon.split('?')[0] == '/favicon.ico' for icon in signals.icons):
+            errors.append('%s: no link to /favicon.ico' % rel)
         if not signals.noindex:
             indexed.add(expected)
-    for required in ('index.html', 'search/index.html', '404.html', 'robots.txt', 'sitemap.xml'):
+            # link previews and image results use the share card (tools/og.py)
+            card = (signals.og_image or '').split('?')[0]
+            if not card.startswith(seo.SITE + '/og/') or not (out / card[len(seo.SITE) + 1:]).is_file():
+                errors.append('%s: og:image is not an exported share card: %s' % (rel, signals.og_image))
+    for required in ('index.html', 'search/index.html', '404.html', 'robots.txt', 'sitemap.xml',
+                     'favicon.ico', 'apple-touch-icon.png', 'assets/icon-96.png', 'assets/icon-192.png'):
         if not (out / required).is_file():
             errors.append('Missing %s' % required)
     try:

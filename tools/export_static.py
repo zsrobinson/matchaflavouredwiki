@@ -29,6 +29,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import build_xml  # noqa: E402
 import fingerprint  # noqa: E402
+import og  # noqa: E402
 import search_index  # noqa: E402
 import seo  # noqa: E402
 
@@ -59,9 +60,11 @@ class Exporter:
         self.out = out
         self.assets = {}  # load.php url -> static path
         self.case_redirects = {}  # title -> target, for redirects that only change capitalisation
+        self.link_targets = {}  # 'Old_title' -> final '/w/Target#anchor', for links to redirects
         self.redirects = {}  # 'Old_title' -> '/w/Target#anchor' (served as 301 by the Worker)
         self.indexed = {}  # title -> lastmod, for the sitemap
         self.dates = seo.git_dates()
+        self.first_dates = seo.git_dates(first=True)
         self.search = {}  # title -> the title search's row (search_index.write)
 
     # --- stylesheets from load.php -------------------------------------------------
@@ -121,6 +124,8 @@ class Exporter:
         doc = re.sub(r'(<div id="catlinks".*?</div></div>)', lambda m: re.sub(r'<a href="/w/Category:[^"]*" title="Category:[^"]*">([^<]*)</a>',
                      lambda a: a.group(0).replace('<a ', '<a data-pagefind-filter="category" ', 1), m.group(1)), doc, flags=re.S)
         doc = doc.replace('class="client-nojs', 'class="client-js')
+        # favicons at the sizes search engines and phones ask for (tools/og.py draws them)
+        doc = re.sub(r'<link rel="(?:shortcut )?icon"[^>]*>', lambda m: og.ICON_TAGS, doc, count=1)
         # CI builds serve pages from the parser cache, which stamps each one with a timestamp; with
         # it gone (and the limit report off in LocalSettings.php) an unchanged page exports identically
         doc = re.sub(r'<!-- Saved in parser cache with key [^>]*-->\n?', '', doc)
@@ -139,9 +144,17 @@ class Exporter:
                      lambda m: '<a dir="ltr" href="/w/%s">%s/w/%s</a>' % (m.group(1), seo.SITE, m.group(1)), doc)
         # links to capitalisation redirects go straight to the article (case-insensitive file
         # systems can't hold both "Mud_kiln.html" and "Mud_Kiln.html")
+        # links to other redirects go to the page they end at, so readers and crawlers skip the 301
+        # (the link's own #fragment wins over the redirect's, as in MediaWiki)
         def fix(m):
-            t = urllib.parse.unquote(m.group(1)).replace('_', ' ')
-            tgt = self.case_redirects.get(t)
+            key = urllib.parse.unquote(html.unescape(m.group(1)))
+            tgt = self.case_redirects.get(key.replace('_', ' '))
+            if tgt:
+                key = url_title(tgt)  # which may itself be a redirect ("Water bottle" -> "Water Bottle" -> ...)
+            dest = self.link_targets.get(key)
+            if dest:
+                path, _, fragment = dest.partition('#')
+                return 'href="%s%s"' % (path, m.group(2) or ('#' + fragment if fragment else ''))
             return 'href="%s%s"' % (href_for(tgt), m.group(2) or '') if tgt else m.group(0)
         doc = re.sub(r'href="/w/([^"#?]+)(#[^"]*)?"', fix, doc)
         doc = doc.replace('href="/w/Matcha_Flavoured_Wiki"', 'href="/"')  # the main page is served at /
@@ -173,6 +186,24 @@ class Exporter:
         doc = re.sub(r'<a href="/w/File:[^"]*" class="mw-file-description"[^>]*>(.*?)</a>', r'\1', doc, flags=re.S)
         return doc
 
+    def share_card(self, title, info):
+        """Draw the page's share card into og/ and return its absolute, versioned URL."""
+        if info['is_main']:
+            png = og.card(seo.SITE_NAME, None, 'Unofficial encyclopedia',
+                          subtitle='Recipes, food, alloys and guides for the Minecraft datapack')
+        else:
+            name, label = title, (info['categories'] or [None])[0]
+            if title.startswith(seo.SITE_NAME + ':'):
+                name, label = title.split(':', 1)[1], seo.SITE_NAME
+            picture = fetch(self.base + info['image'], binary=True) if info['image'] else None
+            png = og.card(og.normalize(name), picture, label and og.normalize(label))
+        path = og.card_path(title)
+        dest = os.path.join(self.out, path.lstrip('/'))
+        os.makedirs(os.path.dirname(dest), exist_ok=True)
+        with open(dest, 'wb') as f:
+            f.write(png)
+        return '%s%s?v=%s' % (seo.SITE, path, hashlib.sha1(png).hexdigest()[:10])
+
     def export_page(self, title, text, ns='Main'):
         if title in self.case_redirects:
             return 'case'  # served by link rewriting and the 404 fallback, not a file
@@ -200,10 +231,12 @@ class Exporter:
                               # the categories Pagefind filters by, so the search page's filter covers title matches too
                               'categories': sorted(set(html.unescape(c) for c in re.findall(r'data-pagefind-filter="category"[^>]*>([^<]*)</a>', doc))),
                               'links': search_index.link_targets(doc)}
-        info = {'layer': layer, 'lastmod': self.dates.get(src), 'categories': seo.categories(doc),
-                'image': seo.infobox_image(doc), 'is_main': is_main,
+        info = {'layer': layer, 'lastmod': self.dates.get(src), 'published': self.first_dates.get(src),
+                'categories': seo.categories(doc), 'image': seo.infobox_image(doc), 'is_main': is_main,
                 # generated pages (vanilla items, data-only pages) are thin: keep them out of the index
                 'noindex': layer == 'generated' and not is_main}
+        if not info['noindex']:
+            info['card'] = self.share_card(title, info)
         doc = seo.apply(doc, title, info)
         if not info['noindex']:
             self.indexed[title] = info['lastmod']
@@ -295,6 +328,13 @@ def main():
         m = re.match(r'\s*#REDIRECT\s*\[\[([^\]|#]+)\]\]', p[1], re.I)
         if m and m.group(1).strip().lower() == t.lower() and m.group(1).strip() != t:
             ex.case_redirects[t] = m.group(1).strip()
+    titles = sorted(t for t, p in exportable.items() if not re.match(r'\s*#REDIRECT', p[1], re.I))
+    targets = {}
+    for t, p in exportable.items():
+        m = re.match(r'\s*#REDIRECT\s*\[\[([^\]|#]+)(#[^\]|]*)?', p[1], re.I)
+        if m:
+            targets[url_title(t)] = href_for(m.group(1).strip()) + (m.group(2) or '').replace(' ', '_')
+    ex.link_targets = seo.resolve_redirects(targets, titles)
     # MediaWiki needs each stylesheet URL fetched once before threads race on it
     first = next(iter(sorted(exportable)))
     ex.export_page('Matcha Flavoured Wiki', exportable.get('Matcha Flavoured Wiki', ('Main', '', ''))[1])
@@ -318,8 +358,8 @@ def main():
     # site furniture
     os.makedirs(os.path.join(out, '_static'), exist_ok=True)
     with open(os.path.join(out, '_static', 'site.js'), 'w') as f:
-        # the same shell, tooltip and image viewer scripts the live wiki runs as gadgets, then the static-only behaviours
-        for gadget in ('Gadget-mfwShell.js', 'Gadget-mfwTooltip.js', 'Gadget-mfwZoom.js'):
+        # the same shell, tooltip, page preview and image viewer scripts the live wiki runs as gadgets, then the static-only behaviours
+        for gadget in ('Gadget-mfwShell.js', 'Gadget-mfwTooltip.js', 'Gadget-mfwPreview.js', 'Gadget-mfwZoom.js'):
             f.write(open(os.path.join(ROOT, 'wiki', 'pages', 'MediaWiki', gadget), encoding='utf-8').read())
             f.write('\n')
         f.write(SITE_JS)
@@ -329,7 +369,7 @@ def main():
         src = os.path.join(ROOT, 'site', d)
         if os.path.isdir(src):
             shutil.copytree(src, os.path.join(out, d), dirs_exist_ok=True)
-    titles = sorted(t for t, p in exportable.items() if not re.match(r'\s*#REDIRECT', p[1], re.I))
+    og.site_icons(out)
     # search.json: canonical titles, used by the 404 page's case-insensitive lookup
     with open(os.path.join(out, 'search.json'), 'w', encoding='utf-8') as f:
         json.dump(titles + sorted(t for t, p in exportable.items() if re.match(r'\s*#REDIRECT', p[1], re.I) and t not in ex.case_redirects), f)

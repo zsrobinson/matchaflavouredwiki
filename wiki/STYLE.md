@@ -139,7 +139,9 @@ features after the release), describe the release in the body and the difference
 ## Pictures
 
 Pictures are drawn from the pack's files (`tools/renders.json`, drawn by `tools/render.py`); nobody
-takes screenshots. A page gets one when it is about something whose look an icon or a slot can't show:
+takes screenshots. Every render is a true isometric view, as on minecraft.wiki: seen from a corner and
+from above at the angle that makes a cube's three faces equal (`tools/render/src/camera.js`); a render
+only chooses which corner. A page gets one when it is about something whose look an icon or a slot can't show:
 
 - **Structure** pages: the whole structure in the infobox (`File:<Structure> isometric view.png`),
   or its defining piece when the whole doesn't read at infobox size; and every template the page
