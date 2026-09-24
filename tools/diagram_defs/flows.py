@@ -530,7 +530,8 @@ def sacred_texts():
                 raise ValueError('sacred texts: no place name for loot table %s' % t)
             if PLACES[t] not in out:
                 out.append(PLACES[t])
-        return one(out, 'where %s is found' % book)
+        order = list(PLACES.values())
+        return one(sorted(out, key=order.index), 'where %s is found' % book)
 
     # the fishing chest: a chest item whose contents roll the pack's fishing treasure table
     need(r'"value": "(matcha:chests/fishing/treasure)"',
@@ -565,29 +566,30 @@ def sacred_texts():
 
     svg = Svg(760, 0, 'Where the sacred texts are found and what the Mouthpiece and the Archaeologist trade for them')
     f = Flow(svg)
-    A, B, C, D = 105, 322, 497, 662
+    A, B, C, D = 110, 330, 497, 662
+    wa, wb = 205, 185
     pitch, h = 60, 44
     ys = [28 + pitch * i for i in range(7)]
 
     def src(key, y, names):
-        head, tail = split_label(names, 160)
-        f.node(key, A, y, head, w=190, h=h, sub=tail)
+        head, tail = split_label(names, wa - 28)
+        f.node(key, A, y, head, w=wa, h=h, sub=tail)
 
     def short(b):
         return b[4:] if b.startswith('The ') else b
     src('poem_src', ys[0], poem_places)
-    f.node('poems', B, ys[0], poems[0], w=190, h=h, icon=poems[0], sub='or ' + poems[1][0].lower() + poems[1][1:], bold=True)
-    f.node('map', A, ys[1], 'Overgrown Abbey Map', w=190, h=h, icon='Overgrown Abbey Map')
-    f.node('tower', A, ys[2], 'Abbey tower', w=190, h=h, sub='always one of the two')
+    f.node('poems', B, ys[0], poems[0], w=wb, h=h, icon=poems[0], sub='or ' + poems[1][0].lower() + poems[1][1:], bold=True)
+    f.node('map', A, ys[1], 'Overgrown Abbey Map', w=wa, h=h, icon='Overgrown Abbey Map')
+    f.node('tower', A, ys[2], 'Abbey tower', w=wa, h=h, sub='always one of the two')
     src('qt_src', ys[3], [p for p in qt if p != 'Abbey tower'])
-    f.node('qt', B, (ys[2] + ys[3]) / 2, short(holy[0]), w=190, h=ys[3] - ys[2] + h, icon=holy[0],
+    f.node('qt', B, (ys[2] + ys[3]) / 2, short(holy[0]), w=wb, h=ys[3] - ys[2] + h, icon=holy[0],
            sub='or the ' + short(holy[1]), bold=True)
     for i, b in enumerate(holy[2:]):
         src('src%d' % i, ys[4 + i], places(b))
-        f.node('book%d' % i, B, ys[4 + i], short(b), w=190, h=h, icon=b, bold=True)
+        f.node('book%d' % i, B, ys[4 + i], short(b), w=wb, h=h, icon=b, bold=True)
     top, bot = ys[0] - h / 2, ys[6] + h / 2
-    block(f, 'mouth', C, (top + bot) / 2, 100, bot - top, mouth, ['trades'])
-    f.node('heart', D, ys[0], 'Crystal Heart', w=170, h=h, icon='Crystal Heart', fill='@red_soft', edge='@red')
+    block(f, 'mouth', C, (top + bot) / 2, 100, bot - top, mouth, ['villager'])
+    f.node('heart', D, ys[0], 'Crystal Heart', w=170, h=h, icon='Crystal Heart')
     oy = (ys[2] + ys[6]) / 2
     f.node('ofuda', D, oy, 'Ofuda', w=170, h=h, icon='Ofuda', sub='one for each book', fill='@purple_soft', edge='@purple',
            bold=True)
@@ -595,7 +597,7 @@ def sacred_texts():
     f.arrow('poem_src', 'poems')
     hop(f, 'poems', 'mouth')
     hop(f, 'mouth', 'heart', y=ys[0])
-    route(f, [side(f, 'poems', 'b'), (B, ys[1]), side(f, 'map', 'r', gap=4)], label=arch, at=((B + A + 95) / 2, ys[1] - 9))
+    route(f, [side(f, 'poems', 'b'), (B, ys[1]), side(f, 'map', 'r', gap=4)], label=arch, at=((B + A + wa / 2) / 2, ys[1] - 9))
     f.arrow('map', 'tower', 'leads to')
     hop(f, 'tower', 'qt')
     hop(f, 'qt_src', 'qt')
@@ -604,11 +606,12 @@ def sacred_texts():
         f.arrow('src%d' % i, 'book%d' % i)
         hop(f, 'book%d' % i, 'mouth')
     hop(f, 'mouth', 'ofuda', y=oy)
-    route(f, [side(f, 'heart', 'b'), (D, ys[1] + 18), side(f, 'mouth', 'r', ys[1] + 18, gap=4)], '@red')
+    rx = D - 45
+    route(f, [side(f, 'heart', 'b', rx), (rx, ys[1] + 18), side(f, 'mouth', 'r', ys[1] + 18, gap=4)])
     extra = sorted({short(b) for b, n in hearts.items() if n != 1})
-    label_at(svg, D + 8, ys[1] - 4, '%d with each book' % min(hearts.values()), anchor='start', fill='@red')
+    label_at(svg, rx + 8, ys[1] - 4, '%d with each book' % min(hearts.values()), anchor='start')
     if extra:
-        label_at(svg, D + 8, ys[1] + 11, '(%d for the %s)' % (max(hearts.values()), extra[0].replace('Lesser Key of Solomon', 'Lesser Key')),
-                 anchor='start', fill='@red')
+        label_at(svg, rx + 8, ys[1] + 11, '(%d for the %s)' % (max(hearts.values()), extra[0].replace('Lesser Key of Solomon', 'Lesser Key')),
+                 anchor='start')
     svg.h = bot + 6
     return svg
