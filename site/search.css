@@ -30,7 +30,7 @@ body.wgl-theme-dark #p-search #searchButton { filter: invert(1); }
 	text-align: left;
 }
 .mfw-suggest[hidden] { display: none; }
-.mfw-suggest-item, .mfw-suggest-footer, .mfw-title-match {
+.mfw-suggest-item, .mfw-suggest-footer, .mfw-result-main {
 	display: flex;
 	align-items: center;
 	gap: 10px;
@@ -38,8 +38,8 @@ body.wgl-theme-dark #p-search #searchButton { filter: invert(1); }
 	color: #202122;
 	text-decoration: none;
 }
-.mfw-suggest a:hover, .mfw-title-match:hover { text-decoration: none; }
-.mfw-suggest-current, .mfw-title-match:hover { background: #eaf3dd; }
+.mfw-suggest a:hover, .mfw-result-main:hover { text-decoration: none; }
+.mfw-suggest-current, .mfw-result-main:hover { background: #eaf3dd; }
 .mfw-suggest-thumb {
 	flex: none;
 	display: flex;
@@ -69,47 +69,55 @@ body.wgl-theme-dark #p-search #searchButton { filter: invert(1); }
 .mfw-suggest-footer { border-top: 1px solid #c8ccd1; }
 .mfw-suggest-footer .mfw-suggest-thumb { border: 0; background: none; }
 
-/* The search page (built by tools/export_static.py): title matches, then Pagefind's full-text results */
-#mfw-search-page {
-	--pf-font: inherit;
-	--pf-border-radius: 2px;
-	--pf-border-focus: #6BA41E;
-	--pf-mark: #3d7a0e;
-	--pf-image-width: 48px;
-	--pf-image-height: 48px;
+/* The search page (built by tools/export_static.py) and the 404 page's suggestions: the box's rows,
+   larger, each with the sections of the page that matched */
+#mfw-search-form { display: flex; gap: 6px; margin: 0.5em 0 0; max-width: 50em; }
+#mfw-search-q {
+	flex: 1; min-width: 0; height: 36px; box-sizing: border-box; padding: 6px 10px;
+	border: 1px solid #a2a9b1; border-radius: 2px; background: #fff; color: #202122; font: inherit; font-size: 16px;
 }
-#mfw-search-page .mfw-search-layout { display: grid; grid-template-columns: 14em minmax(0, 1fr); gap: 1.5em; margin-top: 1em; }
-#mfw-search-page .mfw-search-layout > div { min-width: 0; overflow: hidden; }
-#mfw-search-page mark { font-weight: bold; background: none; }
-@media (max-width: 800px) { #mfw-search-page .mfw-search-layout { grid-template-columns: 1fr; } }
-#mfw-search-page img { image-rendering: pixelated; }
-h2.mfw-title-matches-head { margin: 0 0 0.4em; padding: 0; border: 0; font-size: 1em; font-weight: bold; font-family: inherit; }
-.mfw-title-matches-list {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));
-	gap: 2px 1em;
-	margin-bottom: 1.5em;
+#mfw-search-q:focus, #mfw-search-category:focus { border-color: #6ba41e; outline: 1px solid #6ba41e; }
+#mfw-search-form button, #mfw-search-more {
+	height: 36px; padding: 0 14px; border: 1px solid #a2a9b1; border-radius: 2px; background: #f8f9fa;
+	color: #202122; font: inherit; font-weight: bold; cursor: pointer;
 }
-.mfw-title-match { padding: 4px 6px; border-radius: 2px; }
-#mfw-notfound-matches .mfw-title-matches-list { max-width: 40em; }
+#mfw-search-form button:hover, #mfw-search-more:hover { background: #eaf3dd; }
+.mfw-search-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; max-width: 50em; margin: 10px 0 6px; }
+#mfw-search-category {
+	height: 32px; max-width: 100%; padding: 0 6px; border: 1px solid #a2a9b1; border-radius: 2px;
+	background: #fff; color: #202122; font: inherit;
+}
+#mfw-search-summary { margin: 0; color: #54595d; }
+.mfw-results { list-style: none; margin: 0 0 1em; padding: 0; max-width: 50em; }
+.mfw-results li { margin: 0; }
+.mfw-result { padding: 2px 0; border-bottom: 1px solid #eaecf0; }
+.mfw-result-main { align-items: flex-start; padding: 8px 8px; border-radius: 2px; }
+.mfw-result .mfw-suggest-thumb { width: 48px; height: 48px; }
+.mfw-result .mfw-suggest-thumb img { max-width: 40px; max-height: 40px; }
+.mfw-result .mfw-suggest-title { font-size: 1.05em; }
+.mfw-result .mfw-suggest-desc { font-size: 13px; white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.mfw-result-sections { list-style: none; margin: -4px 0 6px 66px; padding: 0; font-size: 13px; }
+.mfw-result-sections li { overflow: hidden; margin: 0; padding: 1px 0; color: #54595d; text-overflow: ellipsis; white-space: nowrap; }
+.mfw-result-sections a { font-weight: bold; }
+.mfw-result-sections a::before { content: "§ "; color: #72777d; font-weight: normal; }
+.mfw-result mark, .mfw-suggest mark { background: none; color: inherit; font-weight: bold; }
+#mfw-search-more { display: block; margin: 0 0 1.5em; }
+#mfw-search-more[hidden] { display: none; }
+#mfw-notfound-matches .mfw-result:last-child { border-bottom: 0; }
 
 body.wgl-theme-dark .mfw-suggest { background: #1f1f1f; border-color: #555; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); }
-body.wgl-theme-dark .mfw-suggest-item, body.wgl-theme-dark .mfw-suggest-footer, body.wgl-theme-dark .mfw-title-match { color: #e6e6e6; }
-body.wgl-theme-dark .mfw-suggest-current, body.wgl-theme-dark .mfw-title-match:hover { background: #2f3a24; }
+body.wgl-theme-dark .mfw-suggest-item, body.wgl-theme-dark .mfw-suggest-footer, body.wgl-theme-dark .mfw-result-main { color: #e6e6e6; }
+body.wgl-theme-dark .mfw-suggest-current, body.wgl-theme-dark .mfw-result-main:hover { background: #2f3a24; }
 body.wgl-theme-dark .mfw-suggest-thumb { background: #2a2a2a; border-color: #555; }
 body.wgl-theme-dark .mfw-suggest-thumb svg { fill: #9a9a9a; }
 body.wgl-theme-dark .mfw-suggest-glyph img { filter: invert(1); }  /* glyphs are drawn dark */
 body.wgl-theme-dark .mfw-suggest-desc, body.wgl-theme-dark .mfw-suggest-empty { color: #b0b0b0; }
 body.wgl-theme-dark .mfw-suggest-footer { border-color: #555; }
-body.wgl-theme-dark #mfw-search-page {
-	--pf-background: #1f1f1f;
-	--pf-border: #555;
-	--pf-text: #e6e6e6;
-	--pf-text-secondary: #c0c0c0;
-	--pf-text-muted: #9a9a9a;
-	--pf-hover: #2f3a24;
-	--pf-mark: #9ed36a;
-}
+body.wgl-theme-dark #mfw-search-q, body.wgl-theme-dark #mfw-search-category,
+body.wgl-theme-dark #mfw-search-form button, body.wgl-theme-dark #mfw-search-more { background: #1f1f1f; color: #e6e6e6; border-color: #555; }
+body.wgl-theme-dark #mfw-search-form button:hover, body.wgl-theme-dark #mfw-search-more:hover { background: #2f3a24; }
+body.wgl-theme-dark #mfw-search-summary, body.wgl-theme-dark .mfw-result-sections li { color: #b0b0b0; }
+body.wgl-theme-dark .mfw-result { border-color: #3a3a3a; }
 
 /* Phones: the search box opens over the mobile header (MediaWiki:Vector.css); the suggestions
    take the screen's width under it, with rows tall enough for fingers */
@@ -136,4 +144,6 @@ body.wgl-theme-dark #mfw-search-page {
 		font-size: 15px;
 	}
 	.mfw-suggest-item, .mfw-suggest-footer { padding: 8px 12px; min-height: 44px; }
+	.mfw-result-sections { margin-left: 8px; }
+	.mfw-result-sections li { padding: 3px 0; }
 }

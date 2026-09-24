@@ -197,6 +197,8 @@ class Exporter:
         self.search[title] = {'url': '/' if is_main else href_for(title), 'image': image,
                               'desc': search_index.short_description(doc),
                               'kind': {'Category': 'category', 'Project': 'project'}.get(ns, 'generated' if layer == 'generated' else 'article'),
+                              # the categories Pagefind filters by, so the search page's filter covers title matches too
+                              'categories': sorted(set(html.unescape(c) for c in re.findall(r'data-pagefind-filter="category"[^>]*>([^<]*)</a>', doc))),
                               'links': search_index.link_targets(doc)}
         info = {'layer': layer, 'lastmod': self.dates.get(src), 'categories': seo.categories(doc),
                 'image': seo.infobox_image(doc), 'is_main': is_main,
@@ -211,9 +213,6 @@ class Exporter:
 
 
 HEAD_EXTRA = '<link rel="stylesheet" href="/_static/site.css">'
-# only the search page loads Pagefind's component UI (175 kB); the header box uses pagefind.js directly
-SEARCH_HEAD = ('<link rel="stylesheet" href="/pagefind/pagefind-component-ui.css">'
-               '<script type="module" src="/pagefind/pagefind-component-ui.js"></script>')
 THEME_BOOT = ''  # the head script from site/theme-boot.js is already in the page (added by LocalSettings.php)
 
 SITE_JS = r"""// Static replacement for the MediaWiki scripts the wiki uses.
@@ -336,17 +335,24 @@ def main():
         json.dump(titles + sorted(t for t, p in exportable.items() if re.match(r'\s*#REDIRECT', p[1], re.I) and t not in ex.case_redirects), f)
     # search page and root index, built from the main page's skin
     main_html = open(page_path(out, 'Matcha Flavoured Wiki'), encoding='utf-8').read()
-    # pages whose titles match (site/search.js) above Pagefind's full-text results
-    search_body = ('<div id="mfw-search-page"><pagefind-input autofocus placeholder="Search Matcha Flavoured Wiki"></pagefind-input>'
-                   '<div class="mfw-search-layout"><div><pagefind-filter-pane></pagefind-filter-pane></div>'
-                   '<div><div id="mfw-title-matches"></div><pagefind-summary></pagefind-summary>'
-                   '<pagefind-results show-images show-sub-results></pagefind-results></div></div></div>')
+    # site/search.js draws the results (title matches, then Pagefind's full text), as in the header box
+    search_body = ('<div id="mfw-search-page">'
+                   '<form id="mfw-search-form" action="/search/" role="search">'
+                   '<input type="search" id="mfw-search-q" name="q" placeholder="Search Matcha Flavoured Wiki" '
+                   'aria-label="Search Matcha Flavoured Wiki" autocomplete="off" spellcheck="false" autofocus>'
+                   '<button type="submit">Search</button></form>'
+                   '<div class="mfw-search-bar"><select id="mfw-search-category" name="category" aria-label="Category">'
+                   '<option value="">All categories</option></select>'
+                   '<p id="mfw-search-summary" role="status"></p></div>'
+                   '<ul id="mfw-search-results" class="mfw-results"></ul>'
+                   '<button type="button" id="mfw-search-more" hidden>More results</button>'
+                   '<noscript><p>Search needs JavaScript. Every page is also listed in the categories.</p></noscript></div>')
     search = re.sub(r'(<div id="mw-content-text"[^>]*>).*?(<div[^>]*class="printfooter")',
                     lambda m: '<div id="mw-content-text">' + search_body + m.group(2), main_html, flags=re.S)
     search = re.sub(r'<h1 id="firstHeading"[^>]*>.*?</h1>', '<h1 id="firstHeading" class="firstHeading">Search results</h1>', search, flags=re.S)
     search = re.sub(r'<title>.*?</title>', '<title>Search - Matcha Flavoured Wiki</title>', search)
     search = re.sub(r'<div id="catlinks".*?</div></div>', '', search, flags=re.S)
-    search = seo.utility_page(search, 'Search results').replace('</head>', SEARCH_HEAD + '</head>', 1)
+    search = seo.utility_page(search, 'Search results')
     os.makedirs(os.path.join(out, 'search'), exist_ok=True)
     open(os.path.join(out, 'search', 'index.html'), 'w', encoding='utf-8').write(search)
     root_redirect = ('<!doctype html><meta charset="utf-8"><title>Matcha Flavoured Wiki</title>'

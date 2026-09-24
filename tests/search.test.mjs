@@ -116,3 +116,29 @@ test('distance counts a swapped pair as one edit and stops past the limit', () =
   assert.equal(S.distance('cinabar', 'cinnabar', 2), 1);
   assert.equal(S.distance('abc', 'xyzw', 1), 2);
 });
+
+test('the box and the search page share one list: title matches, then full text without repeats', () => {
+  const titleRows = S.titleRows(index, 'fishing');
+  assert.equal(titleRows[0].title, 'Fishing');
+  assert.ok(titleRows.length <= 6);
+  const datas = [
+    { url: '/w/Tropical_Fish.html', meta: { title: 'Tropical Fish', image: '/images/t.png' }, excerpt: 'caught by <mark>fishing</mark>',
+      sub_results: [{ title: 'Tropical Fish', url: '/w/Tropical_Fish.html' },
+        { title: 'Fishing', url: '/w/Tropical_Fish.html#Fishing', anchor: { id: 'Fishing' }, excerpt: '<mark>Fishing.</mark> The tropical fish' },
+        { title: 'Fish are cod', url: '/w/Tropical_Fish.html#Cod', anchor: { id: 'Cod' }, excerpt: '<mark>Fish</mark> are cod. <mark>Fish</mark> are' }] },
+    { url: '/w/Fishing.html', meta: { title: 'Fishing' }, excerpt: 'x',
+      sub_results: [{ title: 'Rarity', url: '/w/Fishing.html#Rarity', anchor: { id: 'Rarity' }, excerpt: 'Rarity and climate' }] },
+  ];
+  const rows = S.merge(titleRows, datas);
+  assert.equal(rows.filter(r => r.page === '/w/Fishing').length, 1);                 // listed once, by title
+  assert.deepEqual(rows[0].sections.map(x => x.url), ['/w/Fishing#Rarity']);         // with its sections from full text
+  const tropical = rows.find(r => r.title === 'Tropical Fish');
+  assert.equal(rows.indexOf(tropical), rows.filter(r => titleRows.some(t => t.page === r.page)).length);  // after the titles
+  assert.equal(tropical.url, '/w/Tropical_Fish');                                    // no .html
+  assert.deepEqual(tropical.sections.map(x => x.excerpt), ['The tropical fish', '<mark>Fish</mark> are']);  // headings not repeated
+});
+
+test('the category filter applies to title matches', () => {
+  const idx = S.prepare([{ t: 'Fishing', u: '/w/Fishing', c: ['Fishing'] }, { t: 'Fishing Rod', u: '/w/Fishing_Rod', c: ['Tools'] }]);
+  assert.deepEqual(S.titleRows(idx, 'fishing', 'Tools').map(r => r.title), ['Fishing Rod']);
+});

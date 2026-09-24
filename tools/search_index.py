@@ -4,8 +4,9 @@ The header search box suggests pages by title first, the way a wiki's search doe
 with Pagefind's full-text results. This module builds what the title search needs:
 
   _static/search-titles.json   one row per page: title, URL, picture, short description, how many
-                               pages link to it, whether it is a generated or category page, and
-                               the redirects that lead to it (so "Armour" or "Blaze Powder" finds it)
+                               pages link to it, whether it is a generated or category page, its
+                               categories (for the search page's filter), and the redirects that
+                               lead to it (so "Armour" or "Blaze Powder" finds it)
   images/search/<name>.png     small copies of pictures too large for a 40px slot (structure and
                                mob renders); item icons are small already and are used as they are
 
@@ -100,7 +101,7 @@ def link_targets(doc):
 
 
 def write(out, pages, redirects, case_redirects):
-    """pages: title -> dict(url, image, desc, kind, links); redirects: alias title -> target URL
+    """pages: title -> dict(url, image, desc, kind, links, categories); redirects: alias title -> target URL
     ('/w/Target#anchor'). Writes _static/search-titles.json."""
     inbound = {}
     for title, p in pages.items():
@@ -129,6 +130,8 @@ def write(out, pages, redirects, case_redirects):
             row['n'] = inbound[title]
         if p['kind'] != 'article':
             row['k'] = p['kind']
+        if p.get('categories'):
+            row['c'] = p['categories']
         if title in aliases:
             row['a'] = aliases[title]
         rows.append(row)

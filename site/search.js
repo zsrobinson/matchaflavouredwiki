@@ -6,8 +6,9 @@
 // So the box does what MediaWiki's does: it matches titles and redirects (search_index.py writes
 // _static/search-titles.json), forgiving case, punctuation, accents, British spellings, plurals,
 // typos and question words, with each page's picture; then it fills the list with Pagefind's
-// full-text results. The search page lists the title matches above the full-text results, and the
-// 404 page offers the pages closest to the address.
+// full-text results. The search page draws the same list in full, with the sections that matched and a
+// category filter (Pagefind is only the full-text engine here, not the interface), and the 404 page
+// offers the pages closest to the address.
 //
 // The matching functions are plain and exported under Node for tests/search.test.mjs.
 (function () {
@@ -183,7 +184,52 @@
 		return out.slice(0, limit || 10);
 	}
 
-	var api = { fold: fold, key: key, stem: stem, distance: distance, score: score, variants: variants, prepare: prepare, match: match };
+	// ---- One result list for the box and the page -----------------------------------------------
+	// Title matches first (strong ones, at most 6), then Pagefind's full-text results for pages not
+	// already listed. The box shows the first 8 rows; the search page shows them all, so its first
+	// 8 are the box's. Rows: {url, page, title, image, note (HTML), sections}.
+	function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+	function pageUrl(u) { return u.replace(/\.html(?=$|#)/, '').replace(/^\/index(?=$|#)/, '/'); }
+	// Title matches worth showing: the strong ones, and a few weak ones when there is little else
+	function pick(ms) {
+		var strong = ms.filter(function (m) { return m.base >= 560; });
+		return (strong.length >= 3 ? strong : ms).slice(0, 6);
+	}
+	function titleRows(index, query, category) {
+		var ms = match(index, query, category ? 1e4 : 10);
+		if (category) ms = ms.filter(function (m) { return (m.row.c || []).indexOf(category) >= 0; });
+		return pick(ms).map(function (m) {
+			return { url: m.row.u + (m.anchor ? '#' + m.anchor : ''), page: m.row.u, title: m.row.t, image: m.row.i || null,
+				note: m.alias ? 'redirected from ' + esc(m.alias) : esc(m.row.d || ''), sections: [], exact: m.base >= 950 };
+		});
+	}
+	// Pagefind result data -> rows, after the title rows; a page already listed by title gets its sections
+	function merge(rows, datas) {
+		var out = rows.map(function (r) { return Object.assign({}, r, { sections: r.sections.slice() }); });
+		var byPage = {};
+		out.forEach(function (r) { byPage[r.page] = r; });
+		datas.forEach(function (d) {
+			var u = pageUrl(d.url);
+			var sections = (d.sub_results || []).filter(function (x) { return x.anchor; }).slice(0, 3).map(function (x) {
+				// Pagefind's section excerpt starts with the heading itself: drop it
+				var M = '(?:</?mark>)*', lead = new RegExp('^' + M + x.title.split('').map(function (c) {
+					return c.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+				}).join(M) + M + '\\.?' + M + '\\s*', 'i');
+				return { url: pageUrl(x.url), title: x.title, excerpt: (x.excerpt || '').replace(lead, '') };
+			});
+			if (byPage[u]) {
+				if (!byPage[u].sections.length) byPage[u].sections = sections;
+				return;
+			}
+			byPage[u] = { url: u, page: u, title: (d.meta && d.meta.title) || u, image: (d.meta && d.meta.image) || null,
+				note: d.excerpt || '', sections: sections };
+			out.push(byPage[u]);
+		});
+		return out;
+	}
+
+	var api = { fold: fold, key: key, stem: stem, distance: distance, score: score, variants: variants, prepare: prepare,
+		match: match, pick: pick, titleRows: titleRows, merge: merge, pageUrl: pageUrl };
 	if (typeof module !== 'undefined' && module.exports) { module.exports = api; }
 	if (typeof document === 'undefined') return;
 
@@ -191,6 +237,7 @@
 	var form = document.getElementById('searchform');
 	var input = document.getElementById('searchInput');
 	if (!form || !input) return;
+	var page = document.getElementById('mfw-search-page');
 	// Pagefind's ranking, tuned on this wiki's pages: title words count double the default, short pages
 	// are favoured much less (item pages are short and used to bury the articles), words close to the
 	// query in length count more, and a word repeated many times saturates sooner.
@@ -203,23 +250,37 @@
 	}
 	function pagefind() {
 		pagefindPromise = pagefindPromise || import(form.dataset.pagefind).then(function (pf) {
-			return pf.options({ ranking: RANKING, excerptLength: 14 }).then(function () { pf.init(); return pf; });
+			// the search page shows two lines of excerpt, the box one
+			return pf.options({ ranking: RANKING, excerptLength: page ? 30 : 14 }).then(function () { pf.init(); return pf; });
 		}).catch(function () { pagefindPromise = null; return null; });
 		return pagefindPromise;
 	}
-	function pageUrl(u) { return u.replace(/\.html(?=$|#)/, '').replace(/^\/index$/, '/').replace(/\/index$/, '/'); }
-	function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
-	function href(m) { return m.row.u + (m.anchor ? '#' + m.anchor : ''); }
+	// Pagefind's results for a query, with the data of results [from, to)
+	function fullText(query, category) {
+		return pagefind().then(function (pf) {
+			return pf ? pf.search(query, category ? { filters: { category: [category] } } : {}) : null;
+		});
+	}
+	function load(res, from, to) {
+		return res ? Promise.all(res.results.slice(from, to).map(function (r) { return r.data(); })) : Promise.resolve([]);
+	}
+
+	// ---- Drawing a row -------------------------------------------------------------------------
 	var PLACEHOLDER = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M19 3H1v14h18zM3 14l3.5-4.5 2.5 3 3.5-4.5 4.5 6z"/></svg>';
 	function thumb(src) {
 		return '<span class="mfw-suggest-thumb' + (/Glyph_/.test(src || '') ? ' mfw-suggest-glyph' : '') + '">' +
 			(src ? '<img src="' + esc(src) + '" alt="" loading="lazy" decoding="async">' : PLACEHOLDER) + '</span>';
 	}
-	function titleItem(m, cls) {
-		var note = m.alias ? 'redirected from ' + esc(m.alias) : esc(m.row.d || '');
-		return '<a class="' + cls + '" data-kind="title" href="' + esc(href(m)) + '">' + thumb(m.row.i) +
-			'<span class="mfw-suggest-text"><span class="mfw-suggest-title">' + esc(m.row.t) + '</span>' +
-			(note ? '<span class="mfw-suggest-desc">' + note + '</span>' : '') + '</span></a>';
+	function body(r) {
+		return thumb(r.image) + '<span class="mfw-suggest-text"><span class="mfw-suggest-title">' + esc(r.title) + '</span>' +
+			(r.note ? '<span class="mfw-suggest-desc">' + r.note + '</span>' : '') + '</span>';
+	}
+	// the search page's and the 404 page's rows: the same row, larger, with the sections that matched
+	function result(r) {
+		return '<li class="mfw-result"><a class="mfw-result-main" href="' + esc(r.url) + '">' + body(r) + '</a>' +
+			(r.sections.length ? '<ul class="mfw-result-sections">' + r.sections.map(function (x) {
+				return '<li><a href="' + esc(x.url) + '">' + esc(x.title) + '</a> <span>' + x.excerpt + '</span></li>';
+			}).join('') + '</ul>' : '') + '</li>';
 	}
 
 	// ---- The header box's suggestions ------------------------------------------------------------
@@ -235,7 +296,7 @@
 	input.setAttribute('aria-autocomplete', 'list');
 	input.setAttribute('aria-controls', 'mfw-suggest');
 	input.setAttribute('aria-expanded', 'false');
-	var seq = 0, current = -1, lastTitles = [], timer;
+	var seq = 0, current = -1, timer;
 
 	function items() { return box.querySelectorAll('.mfw-suggest-item, .mfw-suggest-footer'); }
 	function highlight(i) {
@@ -258,14 +319,11 @@
 		document.body.classList.toggle('mfw-suggest-open', on);
 		if (!on) { current = -1; input.removeAttribute('aria-activedescendant'); }
 	}
-	function render(q, ts, texts) {
-		var html = ts.map(function (m) { return titleItem(m, 'mfw-suggest-item'); }).join('');
-		html += (texts || []).map(function (r) {
-			return '<a class="mfw-suggest-item" data-kind="text" href="' + esc(r.url) + '">' + thumb(r.image) +
-				'<span class="mfw-suggest-text"><span class="mfw-suggest-title">' + esc(r.title) + '</span>' +
-				'<span class="mfw-suggest-desc">' + r.excerpt + '</span></span></a>';
+	function render(q, rows, done) {
+		var html = rows.slice(0, MAX).map(function (r) {
+			return '<a class="mfw-suggest-item" href="' + esc(r.url) + '">' + body(r) + '</a>';
 		}).join('');
-		if (!ts.length && texts && !texts.length) html += '<div class="mfw-suggest-empty">No pages match “' + esc(q) + '”.</div>';
+		if (!rows.length && done) html += '<div class="mfw-suggest-empty">No pages match “' + esc(q) + '”.</div>';
 		html += '<a class="mfw-suggest-footer" href="/search/?q=' + encodeURIComponent(q) + '">' +
 			'<span class="mfw-suggest-thumb"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4-1.4 1.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8"/></svg></span>' +
 			'<span class="mfw-suggest-text">Search for pages containing <b>' + esc(q) + '</b></span></a>';
@@ -276,38 +334,19 @@
 		if (keep >= 0) highlight(Math.min(keep, items().length - 1));
 		open(true);
 	}
-	// Title matches worth showing: the strong ones, and a few weak ones when there is little else
-	function pick(ms) {
-		var strong = ms.filter(function (m) { return m.base >= 560; });
-		return (strong.length >= 3 ? strong : ms).slice(0, 6);
-	}
 	function update() {
 		var q = input.value.trim(), my = ++seq;
 		if (!q) { open(false); return; }
 		titles().then(function (index) {
 			if (my !== seq) return;
-			var ts = lastTitles = pick(match(index, q, 10));
-			render(q, ts, null);
-			var seen = {};
-			ts.forEach(function (m) { seen[m.row.u] = true; });
+			var rows = titleRows(index, q);
+			render(q, rows, false);
 			clearTimeout(timer);
 			timer = setTimeout(function () {
-				pagefind().then(function (pf) {
-					if (!pf || my !== seq) return null;
-					return pf.search(q).then(function (res) {
-						if (my !== seq || !res) return null;
-						var want = MAX - ts.length;
-						return Promise.all(res.results.slice(0, want + ts.length).map(function (r) { return r.data(); })).then(function (ds) {
-							if (my !== seq) return;
-							var texts = [];
-							ds.forEach(function (d) {
-								var u = pageUrl(d.url);
-								if (seen[u] || texts.length >= want) return;
-								seen[u] = true;
-								texts.push({ url: u, title: d.meta.title || u, image: d.meta.image, excerpt: d.excerpt });
-							});
-							render(q, ts, texts);
-						});
+				fullText(q).then(function (res) {
+					if (my !== seq) return null;
+					return load(res, 0, MAX + rows.length).then(function (ds) {
+						if (my === seq) render(q, merge(rows, ds), true);
 					});
 				});
 			}, 120);
@@ -334,8 +373,8 @@
 		if (!q) return;
 		if (!box.hidden && current >= 0 && all[current]) { location.href = all[current].href; return; }
 		titles().then(function (index) {
-			var top = match(index, q, 1)[0];
-			location.href = top && top.base >= 950 ? href(top) : '/search/?q=' + encodeURIComponent(q);
+			var top = titleRows(index, q)[0];
+			location.href = top && top.exact ? top.url : '/search/?q=' + encodeURIComponent(q);
 		});
 	});
 	box.addEventListener('mousedown', function (e) { e.preventDefault(); });  // keep focus in the input
@@ -344,40 +383,72 @@
 		if (a) highlight(Array.prototype.indexOf.call(items(), a));
 	});
 	input.addEventListener('blur', function () { setTimeout(function () { if (document.activeElement !== input) open(false); }, 150); });
-	// "/" focuses the search box, as Pagefind's box did
+	// "/" focuses the search box (the search page's own box there)
 	document.addEventListener('keydown', function (e) {
 		if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey) return;
 		var t = e.target;
 		if (t.isContentEditable || /^(?:INPUT|TEXTAREA|SELECT)$/.test(t.tagName)) return;
 		e.preventDefault();
-		input.focus();
+		(document.getElementById('mfw-search-q') || input).focus();
 	});
 
-	// ---- The search page: title matches above the full-text results -------------------------------
-	var page = document.getElementById('mfw-search-page');
+	// ---- The search page: the same list, all of it, with a category filter -----------------------
 	if (page) {
-		var list = document.getElementById('mfw-title-matches');
-		var showTitles = function (q) {
-			if (!q.trim()) { list.innerHTML = ''; return; }
+		var pq = document.getElementById('mfw-search-q'), pcat = document.getElementById('mfw-search-category');
+		var list = document.getElementById('mfw-search-results'), summary = document.getElementById('mfw-search-summary');
+		var more = document.getElementById('mfw-search-more');
+		var PAGE = 20, pseq = 0, state = null, ptimer;
+		var params = new URLSearchParams(location.search);
+		pq.value = params.get('q') || '';
+		pagefind().then(function (pf) {
+			return pf && pf.filters().then(function (fs) {
+				Object.keys(fs.category || {}).sort().forEach(function (c) { pcat.add(new Option(c, c)); });
+				pcat.value = params.get('category') || '';
+			});
+		});
+		var draw = function () {
+			var s = state, rows = merge(s.rows, s.datas);
+			list.innerHTML = rows.map(result).join('');
+			var total = s.res ? s.res.results.length : 0, extra = rows.length - s.datas.length;  // title-only rows
+			summary.textContent = !rows.length ? (s.res ? 'No pages match “' + s.q + '”' + (s.cat ? ' in ' + s.cat : '') + '.' : '')
+				: s.res ? (s.loaded < total ? 'About ' : '') + (total + Math.max(0, extra)) + ' result' + (total + extra === 1 ? '' : 's') +
+				' for “' + s.q + '”' + (s.cat ? ' in ' + s.cat : '') : '';
+			more.hidden = !s.res || s.loaded >= total;
+		};
+		var run = function () {
+			var q = pq.value.trim(), cat = pcat.value, my = ++pseq;
+			var url = new URLSearchParams();
+			if (q) url.set('q', q);
+			if (q && cat) url.set('category', cat);
+			history.replaceState(null, '', location.pathname + (url.toString() ? '?' + url : ''));
+			document.title = (q ? '“' + q + '” – ' : '') + 'Search – Matcha Flavoured Wiki';
+			if (!q) { list.innerHTML = ''; summary.textContent = ''; more.hidden = true; return; }
 			titles().then(function (index) {
-				var ms = pick(match(index, q, 10));
-				list.innerHTML = ms.length ? '<h2 class="mfw-title-matches-head">Page title matches</h2><div class="mfw-title-matches-list">' +
-					ms.map(function (m) { return titleItem(m, 'mfw-title-match'); }).join('') + '</div>' : '';
+				if (my !== pseq) return null;
+				state = { q: q, cat: cat, rows: titleRows(index, q, cat), datas: [], res: null, loaded: 0 };
+				draw();
+				return fullText(q, cat).then(function (res) {
+					if (my !== pseq) return null;
+					return load(res, 0, PAGE).then(function (ds) {
+						if (my !== pseq) return;
+						state.res = res; state.datas = ds; state.loaded = Math.min(PAGE, res ? res.results.length : 0);
+						draw();
+					});
+				});
 			});
 		};
-		var q = new URLSearchParams(location.search).get('q') || '';
-		customElements.whenDefined('pagefind-input').then(function () {
-			var inst = window.PagefindComponents && window.PagefindComponents.getInstanceManager().getInstance('default');
-			if (inst) inst.pagefindOptions.ranking = RANKING;
-			var pin = page.querySelector('pagefind-input input');
-			if (!pin) return;
-			pin.addEventListener('input', function () {
-				showTitles(pin.value);
-				history.replaceState(null, '', pin.value.trim() ? '?q=' + encodeURIComponent(pin.value.trim()) : location.pathname);
+		pq.addEventListener('input', function () { clearTimeout(ptimer); ptimer = setTimeout(run, 150); });
+		pcat.addEventListener('change', run);
+		document.getElementById('mfw-search-form').addEventListener('submit', function (e) { e.preventDefault(); run(); });
+		more.addEventListener('click', function () {
+			var s = state, my = pseq;
+			load(s.res, s.loaded, s.loaded + PAGE).then(function (ds) {
+				if (my !== pseq) return;
+				s.datas = s.datas.concat(ds); s.loaded = Math.min(s.loaded + PAGE, s.res.results.length);
+				draw();
 			});
-			if (q) { pin.value = q; pin.dispatchEvent(new Event('input', { bubbles: true })); }
 		});
-		if (q) showTitles(q);
+		if (pq.value.trim()) run();
 	}
 
 	// ---- The 404 page: the pages closest to the address ------------------------------------------
@@ -386,9 +457,8 @@
 	if (missing && path) {
 		var wanted = decodeURIComponent(path[1]).replace(/_/g, ' ');
 		titles().then(function (index) {
-			var ms = match(index, wanted, 5);
-			if (ms.length) missing.innerHTML = '<p>Pages with a similar name:</p><div class="mfw-title-matches-list">' +
-				ms.map(function (m) { return titleItem(m, 'mfw-title-match'); }).join('') + '</div>';
+			var rows = titleRows(index, wanted).slice(0, 5);
+			if (rows.length) missing.innerHTML = '<p>Pages with a similar name:</p><ul class="mfw-results">' + rows.map(result).join('') + '</ul>';
 		});
 	}
 })();

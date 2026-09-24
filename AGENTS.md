@@ -190,10 +190,12 @@ the swap mid-way.
   pages crowd results. So:
   - `tools/search_index.py` writes `_static/search-titles.json` (title, URL, picture, lead sentence,
     inbound links, redirects) and small thumbnails of big renders in `/images/search/`.
-  - `site/search.js` (appended to `site.js`) matches titles and redirects, drives the header box's
-    suggestions (MediaWiki's own `#searchInput`, so the skin styles it), and adds the title matches to
-    the `/search/` page (Pagefind's Component UI, loaded only there) and to the 404 page.
-    Enter goes to an exact title, as MediaWiki's "Go" does.
+  - `site/search.js` (appended to `site.js`) matches titles and redirects and builds one result list:
+    title matches (at most 6), then Pagefind's full-text results for pages not already listed. The header
+    box (MediaWiki's own `#searchInput`, so the skin styles it) shows its first 8 rows; the `/search/` page
+    shows all of it, with the sections that matched and a category filter. So the box is always the top
+    of the page. Pagefind is only the full-text engine (`pagefind.js`); its Component UI isn't used.
+    Enter goes to an exact title, as MediaWiki's "Go" does. The 404 page lists the closest titles.
   - Category pages are left out of the full-text index; its ranking settings are `RANKING` in `search.js`.
   - Synonyms readers type belong in real redirects (`Changelog`, `Updates`), not in code.
     `node --test tests/search.test.mjs` covers the matching.

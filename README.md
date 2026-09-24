@@ -47,7 +47,7 @@ The export includes:
 - search, as a wiki does it: the header box suggests pages by title and redirect first (forgiving
   case, accents, British spellings, plurals, typos and question words), each with its picture, then
   **Pagefind** full-text results (`site/search.js`, data from `tools/search_index.py`).
-  `/search/?q=…` lists the title matches above Pagefind's full results and category filters.
+  `/search/?q=…` shows the same list in full, with the sections that matched and a category filter.
 
 Deploy with Cloudflare Workers. The configuration is in `wrangler.jsonc`: static assets from `dist/`
 behind a tiny Worker (`src/worker.js`). The site is served at **https://matchaflavou.red**, and
