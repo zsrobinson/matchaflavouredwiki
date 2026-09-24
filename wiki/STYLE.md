@@ -48,6 +48,15 @@ Pages that use refs end with `== References ==` and `{{reflist}}`.
 - Numbers: use digits for game values ("8 minutes", "4 hearts", "Resistance I"). Health is
   shown with `{{Hp|8}}`, which renders as "8 (♥ × 4)". Durations are written like "8:00"
   in tables and "8 minutes" in prose.
+- **An item's own numbers come from the data.** When a sentence states an item's heal amount,
+  effect level or duration, eating or cooking time, damage, attack speed, mining speed, durability,
+  armor or toughness, write `{{Value|<item>|<field>}}` instead of typing it, so the prose changes
+  with the pack like the infobox does: "heals {{Value|Canned Golden Apples|heals}} and grants
+  {{EffectLink|Absorption}} {{Value|Canned Golden Apples|level|effect=Absorption}} for
+  {{Value|Canned Golden Apples|duration|effect=Absorption}}". `format=` picks the form ("2:00" is
+  `format=clock`; [[Template:Value]] lists them). Keep typing numbers you worked out (sums,
+  comparisons, "twice as long"), chances, vanilla values and anything historical (History sections,
+  version pages, quotes).
 - Name the vanilla thing a renamed item replaces once, with `{{MCW|...}}`. For example,
   "Obols replace {{MCW|Emerald|emeralds}}." Then use the pack's name everywhere else.
 - Refer to the pack as "Matcha Flavoured" (the official spelling), and in vanilla
@@ -111,6 +120,7 @@ sortable wikitables, and `{{Main|...}}` hatnotes into each detail page.
 | `{{Slot|Item}}`, `{{ItemLink|Item}}`, `{{EffectLink|Resistance}}` | Icons. Item icons are `File:<Item Name>.png`. |
 | `{{G|Warding}}` | The pack's tooltip glyphs (Health, Warding, Doom, Cleanse, Magic protection, Armor, ...). |
 | `{{Hp|8}}` | Health points, drawn as hearts. |
+| `{{Value|Item|field}}` | One of an item's own numbers in prose, from the data: `heals`, `damage`, `attackspeed`, `miningspeed`, `durability`, `armor`, `toughness`, `eat_time`, `level`/`duration` with `effect=`, `cook_time` (with `station=` where stations differ); `format=` for other forms. `tools/values.py "Item"` lists them. |
 | `{{Main|X}}`, `{{See also|X}}`, `{{About|...}}`, `{{Distinguish|X}}` | Hatnotes. |
 | `{{Vanilla}}` / `{{Vanilla|Emerald}}` | Links the vanilla page on minecraft.wiki. |
 | `{{MCW|Page|text}}` | Inline link to minecraft.wiki. |
