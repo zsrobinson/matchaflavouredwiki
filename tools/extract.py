@@ -58,6 +58,8 @@ KNOWN = {
                       'minecraft:enchanted_count_increase', 'minecraft:furnace_smelt', 'minecraft:set_stew_effect',
                       'minecraft:copy_components', 'minecraft:copy_state', 'minecraft:filtered', 'minecraft:discard'},
     # loot_enchantments(): what enchant_randomly, enchant_with_levels and set_enchantments give (Enchantment tables)
+    # legacy_fns(): a minecraft:sequence runs its functions in order, so it becomes those functions
+    'loot sequence': {'function', 'functions'},
     'loot enchant function': {'function', 'conditions', 'options', 'levels', 'only_compatible', 'enchantments', 'add',
                               'include_additional_cost_component'},
     # generate.py: cond_notes() turns these into drop-table notes and chances
@@ -86,7 +88,9 @@ KNOWN = {
         'custom_data', 'custom_model_data', 'custom_name', 'damage', 'death_protection', 'enchantment_glint_override',
         'enchantments', 'entity_data', 'equippable', 'food', 'instrument', 'item_model', 'item_name',
         'jukebox_playable', 'lore', 'max_damage', 'max_stack_size', 'potion_contents', 'provides_trim_material',
-        'rarity', 'repairable', 'stored_enchantments', 'tool', 'tooltip_display', 'unbreakable', 'use_remainder')},
+        'rarity', 'repairable', 'stored_enchantments', 'tool', 'tooltip_display', 'unbreakable', 'use_remainder',
+        # which chicken hatches from an egg (26.3's Seagull Egg): the page says so in prose, no table shows it
+        'chicken/variant')},
     'villager trade': {'wants', 'additional_wants', 'gives', 'given_item_modifiers', 'max_uses', 'xp',
                        'reputation_discount', 'price_multiplier', 'merchant_predicate'},
     'trade set': {'amount', 'random_sequence', 'trades', 'allow_duplicates'},
@@ -127,6 +131,109 @@ def expect_conditions(conds, src):
 
 def norm_ns(i):
     return i if ':' in i else 'minecraft:' + i
+
+
+# ---------------------------------------------------------------- 26.3 names -> the names read below
+# Minecraft 26.3 renamed keys in loot tables, predicates and villager trades. Everything below (and
+# generate.py, through data.json) reads the 26.2 names, so each file is translated to them as it is
+# loaded, and data.json has the same shape whichever version the pack is for:
+#   "modifier": one function, a list, or a minecraft:sequence  -> "functions": a flat list
+#   "condition": one predicate or a list                        -> "conditions": a list
+#   a predicate's or function's "type"                          -> "condition" / "function"
+#   a predicate named by its ID ("minecraft:tool/can_silk_touch") -> that predicate file, inlined
+#   a tag entry's "items": "#tag"                               -> "name": "tag"
+#   minecraft:match_block with "blocks" and "state"             -> block_state_property, "block", "properties"
+#   a trade's "given_item_modifier"                             -> "given_item_modifiers"
+# A file in the 26.2 format comes back with the same content, so the wiki built from it can't change.
+def _renamed(d, names):
+    """d with keys renamed, in their places."""
+    return {names.get(k, k): v for k, v in d.items()}
+
+
+def legacy_cond(c, src, seen=()):
+    if isinstance(c, str):  # 26.3: a predicate named by its ID, as the pack's or vanilla's predicate/ folder has it
+        pid = norm_ns(c)
+        ns, p = pid.split(':', 1)
+        for path in (os.path.join(DP, ns, 'predicate', p + '.json'),
+                     os.path.join(VDATA, 'predicate', p + '.json') if ns == 'minecraft' else None):
+            if path and os.path.exists(path) and pid not in seen:
+                d = load(path)
+                if isinstance(d, list):  # a predicate file can be a list: all of them must pass
+                    return {'condition': 'minecraft:all_of', 'terms': legacy_conds(d, src, seen + (pid,))}
+                return legacy_cond(d, src, seen + (pid,))
+        UNKNOWN[('condition', 'predicate %s, which does not exist' % pid)].add(src)
+        return {'condition': 'minecraft:reference', 'name': pid}
+    if not isinstance(c, dict):
+        return c  # expect_conditions() reports it
+    if 'type' in c and 'condition' not in c:
+        c = _renamed(c, {'type': 'condition'})
+    if norm_ns(str(c.get('condition', ''))) == 'minecraft:match_block':  # 26.3's block_state_property
+        c = dict(_renamed(c, {'blocks': 'block', 'state': 'properties'}), condition='minecraft:block_state_property')
+    if 'term' in c:
+        c = dict(c, term=legacy_cond(c['term'], src, seen))
+    if 'terms' in c:
+        c = dict(c, terms=legacy_conds(c['terms'], src, seen))
+    return c
+
+
+def legacy_conds(x, src, seen=()):
+    """"conditions" or "condition" as a list of predicates in the 26.2 format."""
+    if x is None:
+        return None
+    return [legacy_cond(c, src, seen) for c in (x if isinstance(x, list) else [x])]
+
+
+def legacy_fns(x, src):
+    """"functions" or "modifier" as a flat list of functions in the 26.2 format."""
+    out = []
+    for f in [] if x is None else x if isinstance(x, list) else [x]:
+        if not isinstance(f, dict):
+            UNKNOWN[('loot function', 'a function that is not an object')].add(src)
+            continue
+        if 'type' in f and 'function' not in f:
+            f = _renamed(f, {'type': 'function'})
+        if norm_ns(f.get('function', '')) == 'minecraft:sequence':  # runs its functions in order, as a list does
+            expect('loot sequence', f, src)
+            out += legacy_fns(f.get('functions'), src)
+            continue
+        if 'condition' in f and 'conditions' not in f:
+            f = _renamed(f, {'condition': 'conditions'})
+        if 'conditions' in f:
+            f = dict(f, conditions=legacy_conds(f['conditions'], src))
+        out.append(f)
+    return out
+
+
+def legacy_loot(d, src):
+    """A loot table, pool or entry, and everything in it, in the 26.2 format."""
+    if not isinstance(d, dict):
+        return d
+    for old, new in (('functions', 'modifier'), ('conditions', 'condition')):
+        if old in d and new in d:
+            UNKNOWN[('loot', 'both "%s" and "%s"' % (old, new))].add(src)
+    tag_items = norm_ns(d.get('type', '')) == 'minecraft:tag' and 'items' in d and 'name' not in d
+    d = _renamed(d, {'modifier': 'functions', 'condition': 'conditions', **({'items': 'name'} if tag_items else {})})
+    if 'functions' in d:
+        d['functions'] = legacy_fns(d['functions'], src)
+    if 'conditions' in d:
+        d['conditions'] = legacy_conds(d['conditions'], src)
+    for k in ('pools', 'entries', 'children'):
+        if isinstance(d.get(k), list):
+            d[k] = [legacy_loot(x, src) for x in d[k]]
+    if tag_items and isinstance(d['name'], str):
+        d['name'] = d['name'].lstrip('#')  # the 26.2 "name" is the tag's ID without the #
+    return d
+
+
+def legacy_trade(t, src):
+    if 'given_item_modifiers' in t and 'given_item_modifier' in t:
+        UNKNOWN[('villager trade', 'both "given_item_modifiers" and "given_item_modifier"')].add(src)
+    t = _renamed(t, {'given_item_modifier': 'given_item_modifiers'})
+    if 'given_item_modifiers' in t:
+        t['given_item_modifiers'] = legacy_fns(t['given_item_modifiers'], src)
+    if t.get('merchant_predicate') is not None:
+        t['merchant_predicate'] = legacy_cond(t['merchant_predicate'], src)
+    return t
 
 
 # ---------------------------------------------------------------- language
@@ -897,7 +1004,7 @@ LOOT = {}
 for f in sorted(glob.glob(os.path.join(DP, '*', 'loot_table', '**', '*.json'), recursive=True)):
     ns = os.path.relpath(f, DP).split(os.sep)[0]
     lid = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'loot_table'))[:-5]
-    d = load(f)
+    d = legacy_loot(load(f), rel(f))
     LOOT[lid] = {'id': lid, 'src': rel(f), 'type': d.get('type'), 'entries': parse_loot(d, rel(f)),
                  'overrides_vanilla': ns == 'minecraft' and os.path.exists(
                      os.path.join(VDATA, 'loot_table', os.path.relpath(f, os.path.join(DP, ns, 'loot_table'))))}
@@ -916,7 +1023,8 @@ for f in sorted(glob.glob(os.path.join(VDATA, 'loot_table', '**', '*.json'), rec
     if lid in LOOT or not rp.startswith(('entities/', 'blocks/', 'chests/', 'gameplay/', 'archaeology/', 'shearing/')):
         continue
     LOOT[lid] = {'id': lid, 'src': 'vanilla:loot_table/' + rp + '.json', 'type': None, 'vanilla': True,
-                 'entries': parse_loot(load(f), 'vanilla:loot_table/' + rp + '.json'), 'overrides_vanilla': False}
+                 'entries': parse_loot(legacy_loot(load(f), 'vanilla:loot_table/' + rp + '.json'),
+                                       'vanilla:loot_table/' + rp + '.json'), 'overrides_vanilla': False}
 
 # ---------------------------------------------------------------- trades
 TRADES = defaultdict(lambda: defaultdict(list))
@@ -940,7 +1048,7 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
         tfile = os.path.join(DP, ns, 'villager_trade', p + '.json')
         if not os.path.exists(tfile):
             continue
-        t = load(tfile)
+        t = legacy_trade(load(tfile), rel(tfile))
         expect('villager trade', t, rel(tfile))
         mods = t.get('given_item_modifiers') or []
         expect('loot function', (norm_ns(m.get('function', '')) for m in mods), rel(tfile))
@@ -1098,7 +1206,8 @@ def mob_predicate(pid):
     """A matcha:mob_checks predicate: the entity types it matches and whether it tests for babies."""
     ns, p = pid.split(':', 1)
     path = os.path.join(DP, ns, 'predicate', p + '.json')
-    d, src = load(path), rel(path)
+    src = rel(path)
+    d = legacy_cond(load(path), src)
     expect('mob predicate', d.keys(), src)
     if d.get('condition') != 'minecraft:entity_properties' or d.get('entity') != 'this':
         UNKNOWN[('mob predicate', '%s on %s' % (d.get('condition'), d.get('entity')))].add(src)
@@ -1226,12 +1335,16 @@ def equipment_timers():
     root = 'matcha:stopwatches'
     lines = fn_commands(root)
     scores = [RESET_RE.match(l)[1] for l in lines if RESET_RE.match(l)]
-    effects, calls = [], []
+    effects, calls, missing = [], [], []
 
-    def walk(fid, sw, every, restarted, seen):
+    def walk(fid, sw, every, restarted, seen, caller=None):
         if fid in seen:
             return
         seen.add(fid)
+        if not os.path.exists(fn_file(fid)):
+            # a pack bug, not a format change: the game reports "Unknown function" for that line and goes on
+            missing.append({'function': fid, 'called_from': rel(fn_file(caller)) if caller else None})
+            return
         for line in fn_commands(fid):
             m = RESTART_RE.match(line)
             if m:
@@ -1241,7 +1354,7 @@ def equipment_timers():
                 continue
             m = CALL_RE.match(line)
             if m:
-                walk(m[1], sw, every, restarted, seen)
+                walk(m[1], sw, every, restarted, seen, fid)
                 continue
             m = SCORE_EFFECT_RE.match(line)
             if m and m[1] in scores:
@@ -1262,12 +1375,15 @@ def equipment_timers():
         m = STOPWATCH_RE.match(line)
         if m:
             restarted = []
-            walk(m[3], m[1], num(m[2]), restarted, set())
+            walk(m[3], m[1], num(m[2]), restarted, set(), root)
             if not restarted:
                 unknown_command('timer', m[3], 'stopwatch %s is never restarted' % m[1])
         elif not RESET_RE.match(line):
             unknown_command('timer', root, line)
-    return {'scores': scores, 'effects': effects, 'functions': calls, 'src': rel(fn_file(root))}
+    out = {'scores': scores, 'effects': effects, 'functions': calls, 'src': rel(fn_file(root))}
+    if missing:  # only when there are any, so data.json stays as it was for packs without the bug
+        out['missing_functions'] = missing
+    return out
 
 
 MOB_MODIFICATIONS = mob_modifications()
@@ -1578,6 +1694,10 @@ with open(OUT, 'w', encoding='utf-8') as f:
 print('items', len(ITEMS), 'recipes', len(RECIPES), 'vanilla kept', len(VANILLA_RECIPES_KEPT),
       'loot', len(LOOT), 'enchantments', len(ENCH), 'advancements', len(ADV), 'functions', len(FUNCTIONS),
       'no icon', sum(1 for i in ITEMS.values() if not i['icon']), file=sys.stderr)
+
+# pack bugs are reported but don't stop the build: they belong on the "Known bugs" page
+for m in EQUIPMENT_TIMERS.get('missing_functions', []):
+    print('extract.py: pack bug: %s calls %s, which does not exist' % (m['called_from'], m['function']), file=sys.stderr)
 
 # ---------------------------------------------------------------- is the input what this file understands?
 problems = []
