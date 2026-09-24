@@ -6,53 +6,21 @@ Shakudo alloy is crafted from four blocks of copper and two blocks of gold. Copp
 
 == Intrinsics ==
 * '''Tools''' have Silk Touch.
-* '''Axe, sword and spear''' give the wielder Regeneration III for 1 second on each hit.
-* '''Armor''': each piece cleanses one kind of effect (helmet: Blindness and Darkness; chestplate: Poison; leggings: Slowness; boots: Levitation), gives magic protection 8, and counts towards the regeneration bonus: Regeneration I for 3 seconds every 30, 26, 22 or 18 seconds with one to four pieces.<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
+* '''Axe, sword and spear''' give the wielder Regeneration III for 1 second on each hit. In 1.12.2 this intrinsic has no name in the language file, so their tooltips show the translation key "enchantment.kleispack.shakudo_weapon" instead of its {{G|Health}}{{G|Attack damage}} glyphs.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+* '''Armor''': each piece cleanses one kind of effect (helmet: Blindness and Darkness; chestplate: Poison; leggings: Slowness; boots: Levitation), gives magic protection 8, and counts towards the regeneration bonus: {{Data/Set bonus|shakudo_regen=1}} with one piece, and every {{Data/Set bonus|shakudo_regen=2|show=every}}, {{Data/Set bonus|shakudo_regen=3|show=every}} or {{Data/Set bonus|shakudo_regen=4|show=every}} seconds with two, three or four.<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
 
 The video describes shakudo as "a gold-copper alloy that cleanses malefic, steals life from mobs, and whose tools have silk touch as an intrinsic."<ref>{{Cite video|quote=Shikudo, a gold-copper alloy that cleanses malefic, steals life from mobs, and whose tools have silk touch as an intrinsic.}}</ref>
 
 == Stats ==
 === Tools ===
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Shakudo Pickaxe}} || 1000 || 9 || 3 (no drops) || 4 || 4 || [[Silk Touch]] I
-|-
-| {{ItemLink|Shakudo Axe}} || 1000 || 9 || — || 9 || 1 || [[Silk Touch]] I<br />{{G|Health}}{{G|Attack damage}} Life steal
-|-
-| {{ItemLink|Shakudo Shovel}} || 1000 || 9 || — || 4.5 || 1 || [[Silk Touch]] I
-|-
-| {{ItemLink|Shakudo Hoe}} || 1000 || 9 || — || 1 || 7 || [[Silk Touch]] I
-|-
-| {{ItemLink|Shakudo Mattock}} || 1000 || 8 || — || 2 || 4 || [[Silk Touch]] I
-|-
-| {{ItemLink|Shakudo Dolabra}} || 1000 || 7 || — || 7 || 1 || [[Silk Touch]] I
-|}
+{{Data/Tools/Shakudo}}
 
 === Weapons ===
-{| class="wikitable sortable"
-! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
-|-
-| {{ItemLink|Shakudo Sword}} || 1000 || 6 || 1.6 || — || [[Sweeping Edge]] I<br />{{G|Health}}{{G|Attack damage}} Life steal
-|-
-| {{ItemLink|Shakudo Spear}} || 1000 || 3 || 1.18 || — || {{G|Health}}{{G|Attack damage}} Life steal
-|}
+{{Data/Weapons/Shakudo}}
 
 === Armor ===
 [[File:Shakudo armor render.png|thumb|120px|A full set of shakudo armor]]
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Shakudo Helmet}} || 500 || 3 || — || — || — || {{G|Cleanse}} [[Cleanse|Blindness, Darkness]]<br />{{G|Magic protection}} [[Magic protection|8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
-|-
-| {{ItemLink|Shakudo Chestplate}} || 500 || 8 || — || — || — || {{G|Cleanse}} [[Cleanse|Poison]]<br />{{G|Magic protection}} [[Magic protection|8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
-|-
-| {{ItemLink|Shakudo Leggings}} || 500 || 6 || — || — || — || {{G|Cleanse}} [[Cleanse|Slowness]]<br />{{G|Magic protection}} [[Magic protection|8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
-|-
-| {{ItemLink|Shakudo Boots}} || 500 || 3 || — || — || — || {{G|Cleanse}} [[Cleanse|Levitation]]<br />{{G|Magic protection}} [[Magic protection|8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
-|- class="sortbottom"
-! Full set !! !! 20 !! 0 !! 0 !! colspan="2" |
-|}
+{{Data/Armor/Shakudo}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 
@@ -63,6 +31,7 @@ Values are the item's real attributes; where the hand-written tooltip differs, t
 {{History line|1.12|Fixed severe multiplayer lag caused by shakudo armor. The shakudo spear's real attack speed now matches its tooltip.}}
 {{History line|1.12.1-alpha|Shakudo intrinsics are now exclusive with the electrum and adamant intrinsics. Shakudo armor was nerfed.}}
 {{History line|1.12.2|The shakudo chestplate no longer cleanses the [[Wither effect|Wither effect]]. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+{{History line|Upcoming|2=The weapons' life steal intrinsic shows its glyphs in the tooltip instead of its translation key.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == Trivia ==

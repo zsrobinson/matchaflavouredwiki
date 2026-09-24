@@ -1,0 +1,27 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Copper Leggings}}{{{Copper Leggings|}}} || 200 || 3 || — || — || — || —
+|-
+| {{ItemLink|Iron Leggings}}{{{Iron Leggings|}}} || 350 || 5 || — || — || — || —
+|-
+| {{ItemLink|Steel Leggings}}{{{Steel Leggings|}}} || 1000 || 5 || 1 || 0.1 || — || [[Blast Protection]] III
+|-
+| {{ItemLink|Golden Leggings}}{{{Golden Leggings|}}} || 200 || 3 || — || — || — || [[Fire Protection]] II
+|-
+| {{ItemLink|Diamond Leggings}}{{{Diamond Leggings|}}} || 800 || 6 || 2 || — || — || —
+|-
+| {{ItemLink|Shakudo Leggings}}{{{Shakudo Leggings|}}} || 500 || 6 || — || — || — || {{G|Cleanse}} [[Cleanse|Cleanses: Slowness]]<br />{{G|Magic protection}} [[Magic protection|8 Magic protection]]<br />{{G|Half heart}}{{G|Cooldown}} [[Set bonus#Shakudo regeneration|(00:30) Shakudo regeneration]]
+|-
+| {{ItemLink|Hepatizon Leggings}}{{{Hepatizon Leggings|}}} || 500 || 6 || — || — || Speed +0.01 || —
+|-
+| {{ItemLink|Electrum Leggings}}{{{Electrum Leggings|}}} || 1000 || 6 || 3 || — || — || {{G|Electrum}} [[Electrum equipment|+1 Electrum bonus]]
+|-
+| {{ItemLink|Adamant Leggings}}{{{Adamant Leggings|}}} || 1000 || 6 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3 Doom]]<br />[[Unbreaking]] II<br />[[Protection]] I
+|-
+| {{ItemLink|Leather Pants}}{{{Leather Pants|}}} || 200 || 2 || — || — || Safe fall +1 || —
+|-
+| {{ItemLink|Sturdy Leather Leggings}}{{{Sturdy Leather Leggings|}}} || 350 || 3 || — || — || Safe fall +2 || [[Projectile Protection]] III
+|-
+| {{ItemLink|Chainmail Leggings}}{{{Chainmail Leggings|}}} || 300 || 5 || — || — || — || [[Thorns]] III
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

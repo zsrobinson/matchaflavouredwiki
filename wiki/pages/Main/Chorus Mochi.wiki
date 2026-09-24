@@ -8,7 +8,7 @@
 
 === Crafting ===
 {{Recipes}}
-[[Popped Chorus Fruit|Popped chorus fruit]], a snowball, sugar, a [[Milk Bottle|milk bottle]] and dough make 4. The recipe is taught by a [[Cooking Recipe]] sold by a Journeyman [[Cook]]; crafting it returns the milk bottle's glass bottle.
+[[Popped Chorus Fruit|Popped chorus fruit]], a snowball, sugar, a [[Milk Bottle|milk bottle]] and dough make 4. The recipe is taught by a [[Cooking Recipe]] sold by a Journeyman [[Cook]]. The milk bottle's glass bottle is meant to be given back, but in 1.12.2-beta the advancement that returns it still names the recipe by an old ID, so it is used up.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
 {{Sources}}
 
 == Usage ==
@@ -18,6 +18,11 @@ Eating chorus mochi takes 0.8 seconds, heals {{Hp|4}} and gives Levitation XXX (
 
 === Trading ===
 A Journeyman Cook sells 16 chorus mochi for 1 [[obol]].
+
+== History ==
+{{History|
+{{History line|Upcoming|2=Crafting chorus mochi returns the milk bottle's glass bottle. In 1.12.2 the advancement behind this still used an old recipe ID, so the bottle was lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
+}}
 
 == See also ==
 * [[Chorus Fruit]]

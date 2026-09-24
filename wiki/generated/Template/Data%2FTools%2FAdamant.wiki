@@ -1,0 +1,15 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Adamant Pickaxe}}{{{Adamant Pickaxe|}}} || 5000 || 15 || data-sort-value="55" | 55 || 6 || 1.2 || [[Efficiency]] II<br />[[Adamant equipment|Auto-smelting]]<br />[[Unbreaking]] II
+|-
+| {{ItemLink|Adamant Axe}}{{{Adamant Axe|}}} || 5000 || 15 || data-sort-value="0" | — || 10 || 1 || [[Efficiency]] II<br />[[Adamant equipment|Auto-smelting]]<br />{{G|Weakness}} [[Adamant equipment|Weakness]]<br />[[Unbreaking]] II
+|-
+| {{ItemLink|Adamant Shovel}}{{{Adamant Shovel|}}} || 5000 || 15 || data-sort-value="0" | — || 6.5 || 1 || [[Adamant equipment|Auto-smelting]]<br />[[Efficiency]] II<br />[[Unbreaking]] II
+|-
+| {{ItemLink|Adamant Hoe}}{{{Adamant Hoe|}}} || 5000 || 15 || data-sort-value="0" | — || 1 || 4 || [[Adamant equipment|Auto-smelting]]<br />[[Unbreaking]] II<br />[[Efficiency]] II
+|-
+| {{ItemLink|Adamant Mattock}}{{{Adamant Mattock|}}} || 5000 || 13 || data-sort-value="0" | — || 1 || 4 || [[Efficiency]] I<br />[[Adamant equipment|Auto-smelting]]<br />[[Unbreaking]] II
+|-
+| {{ItemLink|Adamant Dolabra}}{{{Adamant Dolabra|}}} || 5000 || 13 || data-sort-value="55" | 55 || 7 || 1 || [[Unbreaking]] II<br />[[Adamant equipment|Auto-smelting]]<br />[[Efficiency]] I
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

@@ -20,7 +20,9 @@ Up to four items cook at once, each in 5 seconds (15 seconds for the oven meals)
 * [[Bread]], [[Baked Potato|baked potato]]es, [[Fried Egg|fried egg]]s, [[nopales]], [[molasses]] and cooked meat and fish.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/molasses.json}}</ref>
 * [[Green Curry|Green curry]], [[Japanese Curry|Japanese curry]], [[Paneer Makhani|paneer makhani]] and [[Tonkotsu Ramen|tonkotsu ramen]] from their [[stock]]s.
 
-It also turns short grass and ferns into short dry grass (10 seconds), tall grass and large ferns into tall dry grass, bushes into dead bushes and clay balls into bricks (5 seconds each).<ref>{{Source|MF_datapack/data/matcha/recipe/campfire/short_dry_grass_campfire.json}}</ref> Drying grass grants ''Harvester''.
+It also dries grass and bushes and fires clay balls into bricks:<ref>{{Source|MF_datapack/data/matcha/recipe/campfire/short_dry_grass_campfire.json}}</ref>
+{{Data/Station/Kindling}}
+Drying grass grants ''Harvester''.
 
 === Crafting ingredient ===
 {{Uses}}

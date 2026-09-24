@@ -5,7 +5,7 @@
 |imagesize=150px
 |imageclass=
 |type=Hostile mob, undead
-|health=Adult: vanilla<br />Baby: {{Hp|4}} (Easy, Normal), {{Hp|7}} (Hard)
+|health={{Data/Difficulty/Drowned/Infobox|max_health}}
 |spawn=Oceans and rivers
 |drops={{ItemLink|Tattered Leather}}, {{ItemLink|Raw Estus}}
 }}
@@ -25,12 +25,7 @@ Drowned are undead, so [[warding]] hurts them.
 
 == Difficulty ==
 Adult drowned keep their vanilla attributes on every difficulty. Baby drowned get new health values:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_and_easy_modifications/modify_baby_zombies.mcfunction}}</ref>
-{| class="wikitable"
-! Attribute !! Easy !! Normal !! Hard
-|-
-! Max health (baby)
-| {{Hp|4}} || {{Hp|4}} || {{Hp|7}}
-|}
+{{Data/Difficulty/Drowned}}
 
 == History ==
 {{History|

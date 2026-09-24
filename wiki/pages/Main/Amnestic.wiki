@@ -9,8 +9,8 @@ The recipe is unlocked by picking up [[Estus Ash|Estus ash]] (glowstone dust).<r
 == Usage ==
 Using an Amnestic on a block places an invisible marker there. The pack then finds the villager nearest to that spot and:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic_wrapped.mcfunction}}</ref>
 * sets its profession to none and its level to 1 (Novice), which removes its trades;
-* resets its restock timer;
-* clears its [[favorite food]] flag, so it will be given a new favorite food.
+* resets its restock timer.
+On the repository's <code>main</code> branch it also clears the villager's [[favorite food]] flag, so the villager is given a new favorite food; this is upcoming and not in [[Matcha Flavoured 1.12.2|1.12.2-beta]].<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic_wrapped.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 The marker is then removed. The villager is chosen by distance alone, with no range limit, so the Amnestic should be placed right next to the intended villager.
 
 The villager's experience is not reset. It becomes unemployed and can take any profession from a nearby job site block, starting at Novice with the current trade lists. Because vanilla villagers gain only one level per trade, a villager that already has a lot of experience climbs back up one level each time the player trades with it, and only unlocks the next level's trades after that trade.<ref>{{Cite changelog|1.12.2|quote=Amnestics no longer reset villager XP BUT beucase of how villager trading work, they won't re-unlock the new items until you trade with them for each level at least once (Best I can do rn)}}</ref>
@@ -22,6 +22,7 @@ The Amnestic is a chicken spawn egg that places an invisible armor stand instead
 {{History|
 {{History line|1.10|Added.}}
 {{History line|1.12.2|No longer resets the villager's experience.}}
+{{History line|Upcoming|2=Clears the villager's [[favorite food]], so it is given a new one.}}
 }}
 
 == Trivia ==

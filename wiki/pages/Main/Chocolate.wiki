@@ -25,8 +25,11 @@ Obtaining chocolate unlocks the [[Chocolate Chip Cookie|chocolate chip cookie]] 
 
 == History ==
 {{History|
-{{History line|Upcoming|2=Fixed the chocolate item model, which was in the wrong namespace so chocolate didn't show its texture.}}
+{{History line|Upcoming|2=Fixed the chocolate item model, which was in the wrong namespace so chocolate didn't show its texture.<ref>{{Source|MF_resourcepack/assets/minecraft/models/item/mushroom_stew.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
+
+== Trivia ==
+* In 1.12.2 chocolate looks like a bowl of {{MCW|Mushroom Stew|mushroom stew}} in game. The resource pack's chocolate model is saved as <code>matcha:item/mushroom_stew</code>, which nothing uses, so the item keeps the vanilla mushroom stew model.<ref>{{Source|MF_resourcepack/assets/matcha/models/item/mushroom_stew.json}}</ref>
 
 == See also ==
 * [[Cocoa Beans]]

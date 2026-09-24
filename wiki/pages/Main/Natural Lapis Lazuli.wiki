@@ -7,7 +7,7 @@
 The deepslate part of the [[Quartz Deposit|quartz deposit]] feature, plus the vanilla buried lapis veins.
 
 === Breaking ===
-Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 4–9 lapis lazuli (vanilla table). Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_lapis_ore.json}}</ref>
+Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 4–9 lapis lazuli (vanilla table). Silk Touch drops the block.<ref>The pack does not override the vanilla loot table <code>blocks/deepslate_lapis_ore</code>; it only overrides <code>blocks/lapis_ore</code> ({{Source|MF_datapack/data/minecraft/loot_table/blocks/lapis_ore.json}}).</ref>
 
 == References ==
 {{reflist}}

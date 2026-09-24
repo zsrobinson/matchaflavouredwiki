@@ -14,60 +14,18 @@ A '''blessing''' is an enchanted book crafted from a [[Hell-Bound Book]] and a s
 === Crafting ===
 Every blessing is a shaped [[Crafting Table|crafting]] recipe with a Hell-Bound Book in the center slot. The surrounding slots (up to eight) hold ingredients tied to the enchantment and the figure it is named after. The recipes are in the pack's <code>recipe/blessing</code> folder.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/unbreaking.json}}</ref>
 
-{| class="wikitable sortable"
-! Blessing !! Stored enchantments !! Ingredients around the book
-|-
-| {{ItemLink|Prayer of Aeolus}} || [[Anemos]], {{MCW|Wind Burst}} I || 7 wind charges, block of gold
-|-
-| {{ItemLink|Prayer of Apollo}} || {{MCW|Impaling}} III, {{MCW|Piercing}} II || 4 [[Spectral Arrow]]s, 3 gold ingots, disc fragment
-|-
-| {{ItemLink|Prayer of Ares}} || {{MCW|Lunge}} II, {{MCW|Breach}} II || Iron sword or iron spear, shield, iron helmet, red dye
-|-
-| {{ItemLink|Prayer of Artemis}} || {{MCW|Power}} II, {{MCW|Multishot}} || 4 spectral arrows, 3 raw porkchops, [[Silver Bullion]]
-|-
-| {{ItemLink|Prayer of Cronus}} || {{MCW|Swift Sneak}} II, {{MCW|Soul Speed}} II || 4 sculk, 3 echo shards, iron hoe
-|-
-| {{ItemLink|Prayer of Daedalus}} || {{MCW|Efficiency}} III, [[Unbreaking]] III || [[Divine Favor]], diamond pickaxe, diamond axe, 4 [[Estus Ash]], diamond
-|-
-| {{ItemLink|Prayer of Demeter}} || {{MCW|Frost Walker}} II, [[Frost Protection]] II || 4 golden apples, 3 blue ice, golden hoe
-|-
-| {{ItemLink|Prayer of Eros}} || [[Silk Touch]] || [[Shakudo Alloy]], 4 arrows, 3 Estus Ash
-|-
-| {{ItemLink|Prayer of Glaucus}} || {{MCW|Luck of the Sea}} III, {{MCW|Lure}} III, {{MCW|Loyalty}} I || 3 nautilus shells, azure bluet
-|-
-| {{ItemLink|Prayer of Lu Ban}} || [[Mending]] || Divine Favor, block of diamond, 6 diamonds
-|-
-| {{ItemLink|Prayer of Man}} || [[Warding]] 2, {{MCW|Smite}} II || 4 [[Baked Golden Apple]]s, 3 lapis lazuli, Silver Bullion
-|-
-| {{ItemLink|Prayer of Midas}} || [[Looting]] III, [[Fortune]] I || Ominous bottle, 3 blocks of gold, 4 Estus Ash
-|-
-| {{ItemLink|Prayer of Paris}} || {{MCW|Infinity}} || 7 spectral arrows, [[Stable Void]]
-|-
-| {{ItemLink|Prayer of Prometheus}} || [[Unbreaking]] II || [[Divine Fragment]], 3 diamonds, 4 Estus Ash
-|-
-| {{ItemLink|Prayer of St. Clement}} || [[Trailblaze]] III || Leather boots, 2 wool, 2 [[Obol]]s
-|-
-| {{ItemLink|Prayer of Talos}} || {{MCW|Density}} II, {{MCW|Knockback}} II, {{MCW|Punch}} II || 7 blocks of iron, [[Steel Alloy]]
-|-
-| {{ItemLink|Prayer of The Light}} || {{MCW|Smite}} IV, {{MCW|Channeling}} || 3 Silver Bullion, 4 Estus Ash, gold ingot
-|-
-| {{ItemLink|Prayer of Will}} || [[Reach]] I || 4 Stable Voids
-|-
-| {{ItemLink|Prayer of Yama}} || {{MCW|Flame}}, {{MCW|Fire Aspect}} I, {{MCW|Fire Protection}} III || 4 fire charges, 4 gold ingots
-|-
-| {{ItemLink|Prayer of Yamm}} || {{MCW|Depth Strider}} II, {{MCW|Riptide}} I, {{MCW|Aqua Affinity}}, {{MCW|Respiration}} II || 4 nautilus shells
-|-
-| {{ItemLink|Elegy of Arachnae}} || {{MCW|Bane of Arthropods}} V || 4 spider eyes
-|-
-| {{ItemLink|Elegy of Hyacinthus}} || [[Zephyr]] I || 4 wind charges, 3 feathers, [[Hyacinth]]
-|-
-| {{ItemLink|Elegy of Icarus}} || [[Feather Falling]] II || 4 wind charges, 3 feathers, [[Wax]]
-|}
+{{Data/Blessings}}
 
 The Prayer of Daedalus and the Prayer of Lu Ban need a [[Divine Favor]], and the Prayer of Prometheus needs a [[Divine Fragment]], which makes Unbreaking, Efficiency and Mending the most expensive enchantments to craft. {{MCW|Protection}} and {{MCW|Sharpness}} have no blessing at all and come only from [[Ofuda]], loot or [[Adamant equipment|adamant equipment]].
 
 == Usage ==
 A blessing is combined with a piece of equipment in an [[anvil]], like any {{MCW|Enchanted Book|enchanted book}}. Blessings do not stack. Because the pack sets every anvil cost multiplier to 1 and gives the player experience while they use an anvil, applying a blessing is cheap; see [[Enchanting#Applying enchantments]].
+
+=== Old enchantment ids ===
+In 1.12.2, five blessings still store the pack's own enchantments under their ids from before the move to the <code>matcha</code> namespace: the [[Prayer of Aeolus]] (<code>main:anemos</code>), the [[Prayer of Demeter]] (<code>main:freezing_protection</code>), the [[Prayer of St. Clement]] (<code>main:traversal</code>), the [[Prayer of Will]] (<code>main:reach</code>) and the [[Elegy of Hyacinthus]] (<code>main:zephyr</code>).<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/reach.json}}</ref> These old enchantments are kept only to update items from earlier versions. Their tooltip lines read "ERROR: Please wear me to update" ("ERROR: Please hold me to update" for Anemos), and they do nothing by themselves.<ref>{{Source|MF_datapack/data/main/README.txt}}</ref> Each tick an item carrying one is worn (or, for Anemos, held in the main hand), one level of the old enchantment is replaced with one level of the real one, so the blessings still work once the item is equipped.<ref>{{Source|MF_datapack/data/main/item_modifier/update_traversal.json}}</ref> This bridge has side effects:
+* The converted levels are added to the real enchantment the item already has, so the result can go past the normal maximum: sturdy leather boots (Trailblaze I) with the Prayer of St. Clement end up with Trailblaze IV.
+* The old Zephyr has a maximum level of I, so two Elegies of Hyacinthus cannot be combined into a Zephyr II book.
+* The old Anemos cannot be applied to copper swords.
 
 Blessings are not the Hell-Bound Book itself: the crafted book stores only the blessing's enchantments, not the Curse of Binding that a blank Hell-Bound Book carries.
 
@@ -94,6 +52,8 @@ The three elegies are named after tragic figures of Greek myth (Arachne, Hyacint
 {{History line|0.6-alpha|The Prayer of Demeter counts toward the blessing crafting advancement.}}
 {{History line|1.10|Buffed the Prayer of The Light recipe, nerfed the Prayer of Man recipe and changed the Prayer of Aeolus recipe. The blessing then called "Prayer of God-King" is renamed "Prayer of The Light" in the language file; its internal key stays <code>god_king</code>.<ref>{{Cite changelog|1.10|quote=Prayer of God-King, is still labeled as such in the Lang (to preserve update consistency) however the translation was changed to "Prayer of The Light"}}</ref> Added the "Demonic Emissary" advancement.}}
 {{History line|1.12.1-alpha|Added the Prayer of Midas. Fixed blessing recipe unlocks.}}
+{{History line|1.12.2|The pack's enchantments moved to the <code>matcha</code> namespace, but five blessings still gave the old <code>main:</code> enchantments, which are converted when the item is equipped.}}
+{{History line|Upcoming|2=The Prayers of Aeolus, Demeter, St. Clement and Will and the Elegy of Hyacinthus store the <code>matcha:</code> enchantments directly.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/zephyr.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == See also ==

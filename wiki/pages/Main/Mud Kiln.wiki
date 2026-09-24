@@ -11,40 +11,8 @@ Packed mud can be made from mud and [[straw]], or from dirt and short dry grass,
 
 == Usage ==
 === Kilning ===
-All kiln recipes take 5 seconds, except raw copper (10 seconds) and wet sponges (2.5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json}}</ref>
-{| class="wikitable"
-! Input !! Output
-|-
-| Clay ball || Brick
-|-
-| Clay || Terracotta
-|-
-| Any dyed terracotta || The matching glazed terracotta
-|-
-| Sand, red sand or [[quartz]] || Glass
-|-
-| Amethyst shard || Tinted glass
-|-
-| Cobblestone or stone bricks || [[Limestone]]
-|-
-| Limestone || Smooth stone
-|-
-| Cobbled deepslate || Deepslate
-|-
-| Sandstone, red sandstone || Smooth sandstone, smooth red sandstone
-|-
-| Block of quartz || Smooth quartz block
-|-
-| Basalt || Smooth basalt
-|-
-| Any log or wood || Charcoal
-|-
-| Cactus || Green dye
-|-
-| Raw copper || Copper ingot
-|-
-| Wet sponge || Sponge
-|}
+Most kiln recipes take 5 seconds, as in a vanilla smoker. The table lists every recipe's time and experience.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json}}</ref>
+{{Data/Station/Mud Kiln}}
 
 === Food ===
 The mud kiln cooks only four foods. [[Dough]] becomes [[naan]], and raw meat, fish and potatoes become [[Charred Meat|charred meat]], [[Charred Fish|charred fish]] and [[Charred Potato|charred potato]]es, which heal less than food cooked in an oven or on kindling.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref> See [[Cooking#Charring]].

@@ -11,6 +11,13 @@ As vanilla gold ore.
 === Breaking ===
 Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 1 raw gold; adamant tools drop a gold ingot. Needs an iron or better pickaxe. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json}}</ref>
 
+Native deepslate gold applies [[Fortune]] and the [[Electrum equipment|electrum]] intrinsic to the raw gold, one after the other, like other ores.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_gold_ore.json}}</ref> In 1.12.2-beta, native gold instead applies the Fortune bonus twice and ignores the electrum intrinsic: with Fortune I a block drops 1 raw gold (4 in 9), 2 (4 in 9) or 4 (1 in 9), while an electrum pickaxe always gets 1. Gold ingots from adamant tools get the normal Fortune bonus from both blocks.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json}}</ref> See [[Known bugs]].
+
+== History ==
+{{History|
+{{History line|Upcoming|2=Native gold applies Fortune and the electrum intrinsic once each, like native deepslate gold.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
+}}
+
 == References ==
 {{reflist}}
 

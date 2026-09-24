@@ -34,7 +34,7 @@ Maximum health can never be higher than 30 hearts ({{Hp|60}}).<ref>{{Source|MF_d
 
 Because the minimum starts at 10 hearts, a new player who has not used any crystal hearts loses nothing by dying. Deaths only start to cost health once the player has gained hearts above their minimum, or once progression has lowered the minimum.
 
-The same heart loss is triggered by the [[Wither effect]]: a player who stays withered for 8 seconds loses hearts exactly as if they had died.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/check_wither_timer.mcfunction}}</ref>
+The same heart loss is triggered by the [[Wither effect]]: a player who stays withered for 8 seconds loses hearts exactly as if they had died (sooner in multiplayer in 1.12.2-beta, when several players are withered at once; see [[Wither effect#Multiplayer]]).<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/check_wither_timer.mcfunction}}</ref>
 
 === Minimum hearts ===
 Every player has their own minimum, which starts at 10 hearts.<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/player_setup.mcfunction}}</ref> Seven milestones in the tutorial [[Advancements|advancement]] tab each lower it by 1 heart, whatever order they are earned in:<ref name="dec">{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/decrease_minimum_hearts.mcfunction}}</ref>
@@ -83,7 +83,7 @@ The minimum never goes below 3 hearts ({{Hp|6}}).<ref name="dec" />
 
 On '''Normal''', when a player's minimum drops below 6 hearts (their fifth milestone), the world's difficulty is raised to Hard and every player is told "Game is now set to '''Hard'''". This affects the whole world, not just that player, and it can be set back in the world settings.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/difficulty_scaling/increase_difficulty.mcfunction}}</ref>
 
-The minimum is tracked per player, so one player's progress doesn't lower anyone else's floor. When a player first joins on a newer version of the pack, their minimum is reset to 10 hearts. Orpheus, The End of Dreams, A Zealous Alloy and A Divine Alloy are revoked at the same time so they can be earned again, but Brazier, The Stalwart Metal and The Resilient Mineral are not, so a player who had already earned those three can only bring their minimum down to 6 hearts after updating. The code marks the reset as temporary, meant for players coming from 1.12.1-alpha.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref>
+The minimum is tracked per player, so one player's progress doesn't lower anyone else's floor. When a player first joins on a newer version of the pack, their minimum is reset to 10 hearts, and all seven milestones are revoked with the rest of the progression advancements, so they lower the minimum again as they are re-earned. The code marks the reset as temporary, meant for players coming from 1.12.1-alpha.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref> See [[Advancements#Revocation on update]]. On the <code>main</code> branch, Brazier, The Stalwart Metal and The Resilient Mineral are no longer revoked, so after the next update a player who had already earned those three will only be able to bring their minimum down to 6 hearts.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 
 === Regaining hearts ===
 {{Main|Crystal Heart}}
@@ -115,6 +115,7 @@ The difficulty the pack uses is read when the world loads, so after changing dif
 {{History line|1.12|Fixed a typo that stopped crystal hearts being removed properly.}}
 {{History line|1.12.1-alpha|New experimental death system. Maximum health can go below 10 hearts, with the floor set by the player's progress through advancements; Easy is exempt. Killing the dragon no longer changes the difficulty on Normal; progress does instead. Hardcore-style hearts added to the resource pack.}}
 {{History line|1.12.2|The new death system is kept. Minimum hearts are tracked per player instead of per world. The [[Wither effect]] now takes hearts.}}
+{{History line|Upcoming|2=The Wither heart meter is tracked for each player separately.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/check_wither_timer.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> Brazier, The Stalwart Metal and The Resilient Mineral are no longer revoked when the pack is updated.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == Trivia ==

@@ -5,9 +5,9 @@
 |imagesize=150px
 |imageclass=
 |type=Hostile mob, undead
-|health=Easy: vanilla<br />Normal: {{Hp|10}}<br />Hard: {{Hp|15}}<br />Baby: {{Hp|4}} (Easy, Normal), {{Hp|7}} (Hard)
-|speedmob=Easy: vanilla<br />Normal: 0.34<br />Hard: 0.38
-|attack=Easy, Normal: vanilla<br />Hard: 5
+|health={{Data/Difficulty/Zombie/Infobox|max_health}}
+|speedmob={{Data/Difficulty/Zombie/Infobox|movement_speed}}
+|attack={{Data/Difficulty/Zombie/Infobox|attack_damage}}
 |spawn=Overworld, including the open surface
 |drops={{ItemLink|Tattered Leather}}, {{ItemLink|Raw Estus}}
 }}
@@ -39,27 +39,7 @@ Zombies are undead, so they are hurt by [[Warding|warding]] and burned by [[Ward
 When a zombie first appears, the pack changes its attributes according to the [[difficulty]]. On Normal and Hard it can step up full blocks without jumping, and on Hard it also jumps higher and hits harder.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_zombie.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_zombie.mcfunction}}</ref> Only adult zombies of the plain zombie type are made fast; husks, drowned, zombie villagers and baby zombies are handled separately.
 
 == Difficulty ==
-{| class="wikitable"
-! Attribute !! Easy !! Normal !! Hard
-|-
-! Max health (adult)
-| vanilla || {{Hp|10}} || {{Hp|15}}
-|-
-! Max health (baby zombie, husk, drowned or zombie villager)
-| {{Hp|4}} || {{Hp|4}} || {{Hp|7}}
-|-
-! Movement speed
-| vanilla || 0.34 || 0.38
-|-
-! Step height
-| vanilla || 1 || 1
-|-
-! Attack damage
-| vanilla || vanilla || 5
-|-
-! Jump strength
-| vanilla || vanilla || 0.6
-|}
+{{Data/Difficulty/Zombie}}
 <ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_and_easy_modifications/modify_baby_zombies.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_baby_zombies.mcfunction}}</ref>
 
 == History ==

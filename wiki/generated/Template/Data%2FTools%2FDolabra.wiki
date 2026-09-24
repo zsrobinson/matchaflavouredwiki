@@ -1,0 +1,19 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Copper Dolabra}}{{{Copper Dolabra|}}} || 350 || 5 || data-sort-value="5" | 5 || 5 || 0.8 || —
+|-
+| {{ItemLink|Iron Dolabra}}{{{Iron Dolabra|}}} || 500 || 6 || data-sort-value="6" | 6 || 6 || 0.9 || —
+|-
+| {{ItemLink|Steel Dolabra}}{{{Steel Dolabra|}}} || 3000 || 7 || data-sort-value="7" | 7 || 6 || 0.9 || —
+|-
+| {{ItemLink|Diamond Dolabra}}{{{Diamond Dolabra|}}} || 2500 || 8 || data-sort-value="35" | 35 || 7 || 1 || —
+|-
+| {{ItemLink|Shakudo Dolabra}}{{{Shakudo Dolabra|}}} || 1000 || 7 || data-sort-value="7" | 7 || 7 || 1 || [[Silk Touch]]
+|-
+| {{ItemLink|Hepatizon Dolabra}}{{{Hepatizon Dolabra|}}} || 1000 || 15 || data-sort-value="15" | 15 || 7 || 1 || —
+|-
+| {{ItemLink|Electrum Dolabra}}{{{Electrum Dolabra|}}} || 3000 || 10 || data-sort-value="55" | 55 || 6 || 1.2 || [[Fortune|Fortune bonus III]]
+|-
+| {{ItemLink|Adamant Dolabra}}{{{Adamant Dolabra|}}} || 5000 || 13 || data-sort-value="55" | 55 || 7 || 1 || [[Unbreaking]] II<br />[[Adamant equipment|Auto-smelting]]<br />[[Efficiency]] I
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

@@ -1,0 +1,12 @@
+<includeonly>{| class="wikitable"
+! Attribute !! Easy !! Normal !! Hard
+|-
+! Max health{{{max_health|}}}
+| {{Hp|10}} || {{Hp|10}} || {{Hp|12}}
+|-
+! Bow{{{mainhand|}}}
+| vanilla || Punch I || Punch II
+|-
+! Bow drop chance{{{mainhand/drop|}}}
+| vanilla || 0% || 0%
+|}</includeonly><noinclude>Generated from the pack's spawn functions (<code>mechanics/spawn_mechanic</code>). A note for a row goes in a parameter named by the row ID. [[Category:Generated data]]</noinclude>

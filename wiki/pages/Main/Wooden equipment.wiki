@@ -11,26 +11,10 @@ The wooden pickaxe mines stone and the lower ores, but cannot get drops from hem
 
 == Stats ==
 === Tools ===
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Wooden Pickaxe}} || 200 || 3 || — || 2 || 1.2 || —
-|-
-| {{ItemLink|Wooden Axe}} || 200 || 2 || — || 7 || 0.8 || —
-|-
-| {{ItemLink|Wooden Shovel}} || 200 || 2 || — || 2.5 || 1 || —
-|-
-| {{ItemLink|Wooden Hoe}} || 200 || 2 || — || 1 || 1 || —
-|}
+{{Data/Tools/Wooden}}
 
 === Weapons ===
-{| class="wikitable sortable"
-! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
-|-
-| {{ItemLink|Wooden Sword}} || 200 || 4 || 1.6 || — || —
-|-
-| {{ItemLink|Wooden Spear}} || 59 || 1 || 1.538 || — || —
-|}
+{{Data/Weapons/Wooden}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 

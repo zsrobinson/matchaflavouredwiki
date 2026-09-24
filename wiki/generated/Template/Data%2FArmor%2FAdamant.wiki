@@ -1,0 +1,13 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Adamant Helmet}}{{{Adamant Helmet|}}} || 1000 || 3 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3 Doom]]<br />[[Unbreaking]] II<br />[[Protection]] I
+|-
+| {{ItemLink|Adamant Chestplate}}{{{Adamant Chestplate|}}} || 1000 || 8 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3 Doom]]<br />[[Unbreaking]] II<br />[[Protection]] I
+|-
+| {{ItemLink|Adamant Leggings}}{{{Adamant Leggings|}}} || 1000 || 6 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3 Doom]]<br />[[Unbreaking]] II<br />[[Protection]] I
+|-
+| {{ItemLink|Adamant Boots}}{{{Adamant Boots|}}} || 1000 || 3 || 3 || 0.1 || — || {{G|Doom}} [[Doom|3 Doom]]<br />[[Unbreaking]] II<br />[[Protection]] I
+|- class="sortbottom"
+! Full set !! !! 20 !! 12 !! 0.4 !! colspan="2" |
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

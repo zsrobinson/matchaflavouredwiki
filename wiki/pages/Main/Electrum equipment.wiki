@@ -6,6 +6,7 @@ Electrum alloy is crafted from four gold ingots, four silver bullion and a [[Div
 
 == Characteristics ==
 * Tools carry the electrum fortune intrinsic (level 3 on most, 2 on the mattock), which the pack's block loot tables treat like Fortune; it cannot be combined with Fortune or Silk Touch.<ref>{{Source|MF_datapack/data/matcha/enchantment/electrum_tool.json}}</ref>
+** In 1.12.2 the electrum fortune intrinsic has no name in the language file, so the tools' tooltips show its translation key, "enchantment.kleispack.electrum_tool", instead of the {{G|Fortune}} glyph.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
 * The sword has {{G|Warding}} 3, Smite III and Looting II; the axe and spear have {{G|Warding}} 2.
 * Each armor piece adds +1 to [[Warding]]; the full set adds the [[Set bonus|set bonus]].
 * Electrum items use the netherite item IDs, so they do not burn in fire or lava, and the armor counts as piglin-safe.
@@ -18,46 +19,14 @@ The video says electrum has "maximum looting and fortune. Its armor and tools wh
 
 == Stats ==
 === Tools ===
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Electrum Pickaxe}} || 3000 || 12 || 55 || 5 || 1.2 || {{G|Fortune}} III
-|-
-| {{ItemLink|Electrum Axe}} || 3000 || 12 || — || 9 || 1.2 || {{G|Fortune}} III<br />[[Looting]] II<br />[[Smite]] III<br />{{G|Warding}} [[Warding|2]]
-|-
-| {{ItemLink|Electrum Shovel}} || 3000 || 12 || — || 6 || 1 || {{G|Fortune}} III
-|-
-| {{ItemLink|Electrum Hoe}} || 3000 || 12 || — || 1 || 4 || {{G|Fortune}} III
-|-
-| {{ItemLink|Electrum Mattock}} || 3000 || 10 || — || 3 || 3 || {{G|Fortune}} II<br />{{G|Warding}} [[Warding|1]]
-|-
-| {{ItemLink|Electrum Dolabra}} || 3000 || 10 || 55 || 6 || 1.2 || {{G|Fortune}} III
-|}
+{{Data/Tools/Electrum}}
 
 === Weapons ===
-{| class="wikitable sortable"
-! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
-|-
-| {{ItemLink|Electrum Sword}} || 3000 || 7 || 1.9 || — || [[Looting]] II<br />[[Smite]] III<br />{{G|Warding}} [[Warding|3]]
-|-
-| {{ItemLink|Electrum Spear}} || 3000 || 4 || 4 || — || [[Smite]] IV<br />[[Looting]] II<br />{{G|Warding}} [[Warding|2]]
-|}
+{{Data/Weapons/Electrum}}
 
 === Armor ===
 [[File:Electrum armor render.png|thumb|120px|A full set of electrum armor]]
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Electrum Helmet}} || 1000 || 3 || 3 || 0 || — || {{G|Electrum}} [[Warding|+1]]
-|-
-| {{ItemLink|Electrum Chestplate}} || 1000 || 8 || 3 || 0 || — || {{G|Electrum}} [[Warding|+1]]
-|-
-| {{ItemLink|Electrum Leggings}} || 1000 || 6 || 3 || 0 || — || {{G|Electrum}} [[Warding|+1]]
-|-
-| {{ItemLink|Electrum Boots}} || 1000 || 3 || 3 || 0 || — || {{G|Electrum}} [[Warding|+1]]
-|- class="sortbottom"
-! Full set !! !! 20 !! 12 !! 0 !! colspan="2" |
-|}
+{{Data/Armor/Electrum}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 
@@ -69,6 +38,7 @@ Values are the item's real attributes; where the hand-written tooltip differs, t
 {{History line|1.12|Fixed severe multiplayer lag caused by electrum armor.}}
 {{History line|1.12.1-alpha|Electrum became the only source of Fortune III, and it can only be repaired with blocks of diamond. The set bonus was nerfed from 4 to 2 hearts.}}
 {{History line|1.12.2|Electrum equipment no longer burns in fire or lava, and electrum armor counts as armor that piglins accept. Warding was removed from electrum tools so that they focus on Fortune. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
+{{History line|Upcoming|2=The tools' electrum fortune intrinsic shows the {{G|Fortune}} glyph in the tooltip instead of its translation key.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == References ==
