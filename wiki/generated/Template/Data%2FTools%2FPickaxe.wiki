@@ -1,0 +1,23 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Wooden Pickaxe}}{{{Wooden Pickaxe|}}} || 200 || 3 || data-sort-value="3" | 3 (no drops) || 2 || 1.2 || —
+|-
+| {{ItemLink|Copper Pickaxe}}{{{Copper Pickaxe|}}} || 350 || 6 || data-sort-value="3" | 3 (no drops) || 3 || 1.2 || —
+|-
+| {{ItemLink|Iron Pickaxe}}{{{Iron Pickaxe|}}} || 500 || 7 || data-sort-value="3" | 3 (no drops) || 4 || 1.2 || —
+|-
+| {{ItemLink|Steel Pickaxe}}{{{Steel Pickaxe|}}} || 3000 || 8 || data-sort-value="8" | 8 || 3 || 1.2 || —
+|-
+| {{ItemLink|Golden Pickaxe}}{{{Golden Pickaxe|}}} || 350 || 12 || data-sort-value="3" | 3 (no drops) || 2 || 1.2 || [[Fortune]]
+|-
+| {{ItemLink|Diamond Pickaxe}}{{{Diamond Pickaxe|}}} || 2500 || 9 || data-sort-value="35" | 35 || 5 || 1.2 || —
+|-
+| {{ItemLink|Shakudo Pickaxe}}{{{Shakudo Pickaxe|}}} || 1000 || 9 || data-sort-value="3" | 3 (no drops) || 4 || 4 || [[Silk Touch]]
+|-
+| {{ItemLink|Hepatizon Pickaxe}}{{{Hepatizon Pickaxe|}}} || 1000 || 20 || data-sort-value="3" | 3 (no drops) || 4.5 || 1.2 || —
+|-
+| {{ItemLink|Electrum Pickaxe}}{{{Electrum Pickaxe|}}} || 3000 || 12 || data-sort-value="55" | 55 || 5 || 1.2 || [[Fortune|Fortune bonus III]]
+|-
+| {{ItemLink|Adamant Pickaxe}}{{{Adamant Pickaxe|}}} || 5000 || 15 || data-sort-value="55" | 55 || 6 || 1.2 || [[Efficiency]] II<br />[[Adamant equipment|Auto-smelting]]<br />[[Unbreaking]] II
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

@@ -1,0 +1,13 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Golden Crown}}{{{Golden Crown|}}} || 200 || 2 || — || — || — || [[Fire Protection]] II
+|-
+| {{ItemLink|Golden Chestplate}}{{{Golden Chestplate|}}} || 200 || 5 || — || — || — || [[Fire Protection]] III
+|-
+| {{ItemLink|Golden Leggings}}{{{Golden Leggings|}}} || 200 || 3 || — || — || — || [[Fire Protection]] II
+|-
+| {{ItemLink|Golden Boots}}{{{Golden Boots|}}} || 200 || 2 || — || — || — || [[Fire Protection]] II
+|- class="sortbottom"
+! Full set !! !! 12 !! — !! — !! colspan="2" |
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

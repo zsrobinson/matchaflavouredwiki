@@ -1,0 +1,13 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Electrum Helmet}}{{{Electrum Helmet|}}} || 1000 || 3 || 3 || — || — || {{G|Electrum}} [[Electrum equipment|+1 Electrum bonus]]
+|-
+| {{ItemLink|Electrum Chestplate}}{{{Electrum Chestplate|}}} || 1000 || 8 || 3 || — || — || {{G|Electrum}} [[Electrum equipment|+1 Electrum bonus]]
+|-
+| {{ItemLink|Electrum Leggings}}{{{Electrum Leggings|}}} || 1000 || 6 || 3 || — || — || {{G|Electrum}} [[Electrum equipment|+1 Electrum bonus]]
+|-
+| {{ItemLink|Electrum Boots}}{{{Electrum Boots|}}} || 1000 || 3 || 3 || — || — || {{G|Electrum}} [[Electrum equipment|+1 Electrum bonus]]
+|- class="sortbottom"
+! Full set !! !! 20 !! 12 !! — !! colspan="2" |
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

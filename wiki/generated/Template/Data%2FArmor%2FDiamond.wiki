@@ -1,0 +1,13 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
+|-
+| {{ItemLink|Diamond Helmet}}{{{Diamond Helmet|}}} || 800 || 3 || 2 || — || — || —
+|-
+| {{ItemLink|Diamond Chestplate}}{{{Diamond Chestplate|}}} || 800 || 8 || 2 || — || — || —
+|-
+| {{ItemLink|Diamond Leggings}}{{{Diamond Leggings|}}} || 800 || 6 || 2 || — || — || —
+|-
+| {{ItemLink|Diamond Boots}}{{{Diamond Boots|}}} || 800 || 3 || 2 || — || — || —
+|- class="sortbottom"
+! Full set !! !! 20 !! 8 !! — !! colspan="2" |
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

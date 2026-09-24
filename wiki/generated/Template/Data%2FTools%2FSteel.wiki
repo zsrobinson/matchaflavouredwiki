@@ -1,0 +1,15 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Steel Pickaxe}}{{{Steel Pickaxe|}}} || 3000 || 8 || data-sort-value="8" | 8 || 3 || 1.2 || —
+|-
+| {{ItemLink|Steel Axe}}{{{Steel Axe|}}} || 3000 || 8 || data-sort-value="0" | — || 10 || 0.7 || —
+|-
+| {{ItemLink|Steel Shovel}}{{{Steel Shovel|}}} || 3000 || 8 || data-sort-value="0" | — || 3.5 || 1 || —
+|-
+| {{ItemLink|Steel Hoe}}{{{Steel Hoe|}}} || 3000 || 8 || data-sort-value="0" | — || 1 || 2 || —
+|-
+| {{ItemLink|Steel Mattock}}{{{Steel Mattock|}}} || 3000 || 7 || data-sort-value="0" | — || 1 || 2 || —
+|-
+| {{ItemLink|Steel Dolabra}}{{{Steel Dolabra|}}} || 3000 || 7 || data-sort-value="7" | 7 || 6 || 0.9 || —
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

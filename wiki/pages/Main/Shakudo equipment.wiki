@@ -13,45 +13,13 @@ The video describes shakudo as "a gold-copper alloy that cleanses malefic, steal
 
 == Stats ==
 === Tools ===
-{| class="wikitable sortable"
-! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
-|-
-| {{ItemLink|Shakudo Pickaxe}} || 1000 || 9 || 3 (no drops) || 4 || 4 || [[Silk Touch]] I
-|-
-| {{ItemLink|Shakudo Axe}} || 1000 || 9 || — || 9 || 1 || [[Silk Touch]] I<br />{{G|Health}}{{G|Attack damage}} Life steal
-|-
-| {{ItemLink|Shakudo Shovel}} || 1000 || 9 || — || 4.5 || 1 || [[Silk Touch]] I
-|-
-| {{ItemLink|Shakudo Hoe}} || 1000 || 9 || — || 1 || 7 || [[Silk Touch]] I
-|-
-| {{ItemLink|Shakudo Mattock}} || 1000 || 8 || — || 2 || 4 || [[Silk Touch]] I
-|-
-| {{ItemLink|Shakudo Dolabra}} || 1000 || 7 || — || 7 || 1 || [[Silk Touch]] I
-|}
+{{Data/Tools/Shakudo}}
 
 === Weapons ===
-{| class="wikitable sortable"
-! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics
-|-
-| {{ItemLink|Shakudo Sword}} || 1000 || 6 || 1.6 || — || [[Sweeping Edge]] I<br />{{G|Health}}{{G|Attack damage}} Life steal
-|-
-| {{ItemLink|Shakudo Spear}} || 1000 || 3 || 1.18 || — || {{G|Health}}{{G|Attack damage}} Life steal
-|}
+{{Data/Weapons/Shakudo}}
 
 === Armor ===
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Shakudo Helmet}} || 500 || 3 || — || — || — || {{G|Cleanse}} [[Cleanse|Blindness, Darkness]]<br />{{G|Magic protection}} [[Magic protection|8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
-|-
-| {{ItemLink|Shakudo Chestplate}} || 500 || 8 || — || — || — || {{G|Cleanse}} [[Cleanse|Poison]]<br />{{G|Magic protection}} [[Magic protection|8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
-|-
-| {{ItemLink|Shakudo Leggings}} || 500 || 6 || — || — || — || {{G|Cleanse}} [[Cleanse|Slowness]]<br />{{G|Magic protection}} [[Magic protection|8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
-|-
-| {{ItemLink|Shakudo Boots}} || 500 || 3 || — || — || — || {{G|Cleanse}} [[Cleanse|Levitation]]<br />{{G|Magic protection}} [[Magic protection|8]]<br />{{G|Half heart}} {{G|Cooldown}} Regeneration
-|- class="sortbottom"
-! Full set !! !! 20 !! 0 !! 0 !! colspan="2" |
-|}
+{{Data/Armor/Shakudo}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 

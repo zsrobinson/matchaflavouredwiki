@@ -14,19 +14,7 @@ This is not fixed on the <code>main</code> branch either.
 
 == Stats ==
 === Armor ===
-{| class="wikitable sortable"
-! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics
-|-
-| {{ItemLink|Sturdy Leather Helmet}} || 350 || 2 || — || — || Safe fall +2 || [[Projectile Protection]] III
-|-
-| {{ItemLink|Sturdy Leather Gambeson}} || 350 || 5 || — || — || Safe fall +2 || [[Projectile Protection]] IV
-|-
-| {{ItemLink|Sturdy Leather Leggings}} || 350 || 3 || — || — || Safe fall +2 || [[Projectile Protection]] III
-|-
-| {{ItemLink|Sturdy Leather Boots}} || 350 || 2 || — || — || Safe fall +2<br />Step height +1 || [[Projectile Protection]] II<br />[[Feather Falling]] II<br />[[Trailblaze]] I
-|- class="sortbottom"
-! Full set !! !! 12 !! 0 !! 0 !! colspan="2" |
-|}
+{{Data/Armor/Sturdy Leather}}
 
 Values are the item's real attributes; where the hand-written tooltip differs, the item page says so.
 

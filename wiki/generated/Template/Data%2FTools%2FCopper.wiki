@@ -1,0 +1,15 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Copper Pickaxe}}{{{Copper Pickaxe|}}} || 350 || 6 || data-sort-value="3" | 3 (no drops) || 3 || 1.2 || —
+|-
+| {{ItemLink|Copper Axe}}{{{Copper Axe|}}} || 350 || 6 || data-sort-value="0" | — || 9 || 0.8 || —
+|-
+| {{ItemLink|Copper Shovel}}{{{Copper Shovel|}}} || 350 || 6 || data-sort-value="0" | — || 3.5 || 1 || —
+|-
+| {{ItemLink|Copper Hoe}}{{{Copper Hoe|}}} || 350 || 6 || data-sort-value="0" | — || 1 || 2 || —
+|-
+| {{ItemLink|Copper Mattock}}{{{Copper Mattock|}}} || 350 || 5 || data-sort-value="0" | — || 1 || 2 || —
+|-
+| {{ItemLink|Copper Dolabra}}{{{Copper Dolabra|}}} || 350 || 5 || data-sort-value="5" | 5 || 5 || 0.8 || —
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

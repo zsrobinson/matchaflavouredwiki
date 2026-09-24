@@ -152,6 +152,8 @@ def intrinsic_text(eid, lvl):
         label = glyphs(raw).strip()
         if not raw or 'kleispack.' in raw:  # untranslated key (pack bug): name it from the id
             label = INTRINSIC_LABELS.get(key, key.replace('_', ' ').capitalize())
+            if maxl > 1:
+                label += ' ' + roman(lvl)  # the level is real even when the name is missing
         elif not re.sub(r'\{\{G\|[^}]*\}\}', '', label).strip(' ()+-:0123456789∞'):
             label = (label + ' ' + INTRINSIC_LABELS.get(key, page.split('#')[-1])).strip()  # glyph-only: add a readable name
         # glyphs are images, and MediaWiki doesn't allow an image inside a link label: keep them outside
@@ -246,6 +248,25 @@ def attr_sum(comps, attr, slot=None):
 def fmt_num(x):
     x = round(x, 2)
     return str(int(x)) if x == int(x) else str(x)
+
+
+def mining_speed(tool):
+    """A tool component's mining speed on the blocks it is made for (the mineable/ rules), or None."""
+    rules = [r for r in tool.get('rules', []) if r.get('speed') and r.get('correct_for_drops') is not False and r.get('speed') < 1000]
+    mineable = [r['speed'] for r in rules if isinstance(r.get('blocks'), str) and 'mineable/' in r['blocks']]
+    speeds = mineable or [r['speed'] for r in rules if 'cobweb' not in json.dumps(r.get('blocks'))]
+    return max(speeds) if speeds else None
+
+
+def enchant_levels(comps):
+    """{enchantment id: level} of an item's enchantments and stored enchantments (the pack's intrinsics)."""
+    ench = {}
+    for k in ('enchantments', 'stored_enchantments'):
+        v = comps.get(k) or {}
+        if isinstance(v, dict) and 'levels' in v:
+            v = v['levels']
+        ench.update(v)
+    return ench
 
 
 BLOCK_ITEMS = set()
@@ -354,12 +375,8 @@ def infobox(item):
     if has:
         f['attackspeed'] = fmt_num(4 + spd)
     tool = c.get('tool')
-    if tool:
-        rules = [r for r in tool.get('rules', []) if r.get('speed') and r.get('correct_for_drops') is not False and r.get('speed') < 1000]
-        mineable = [r['speed'] for r in rules if isinstance(r.get('blocks'), str) and 'mineable/' in r['blocks']]
-        speeds = mineable or [r['speed'] for r in rules if 'cobweb' not in json.dumps(r.get('blocks'))]
-        if speeds:
-            f['miningspeed'] = fmt_num(max(speeds))
+    if tool and mining_speed(tool) is not None:
+        f['miningspeed'] = fmt_num(mining_speed(tool))
     for attr, key in (('armor', 'armor'), ('armor_toughness', 'toughness'), ('knockback_resistance', 'knockbackres')):
         v, has = attr_sum(c, attr)
         if has and v:
@@ -367,12 +384,7 @@ def infobox(item):
     rep = c.get('repairable')
     if rep and rep.get('items') and c.get('max_damage') and not c.get('unbreakable'):
         f['repair'] = item_link_list(rep['items'])
-    ench = {}
-    for k in ('enchantments', 'stored_enchantments'):
-        v = c.get(k) or {}
-        if isinstance(v, dict) and 'levels' in v:
-            v = v['levels']
-        ench.update(v)
+    ench = enchant_levels(c)
     if ench and item['base_id'] != 'minecraft:enchanted_book':
         f['intrinsics'] = '<br />'.join(intrinsic_text(e, l) for e, l in ench.items())
     elif ench:
@@ -1162,6 +1174,177 @@ def enchantment_table():
             '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
 
 
+# ------------------------------------------------------------------ equipment comparison tables
+# The equipment tiers in the order the Tools, Weapons and Armor pages list them: (item-name prefix, family page).
+# Tools and weapons are found by name ("<prefix> <type>"); armor sets by their shared equipment asset.
+EQUIPMENT_TIERS = [('Wooden', 'Wooden equipment'), ('Copper', 'Copper equipment'), ('Iron', 'Iron equipment'),
+                   ('Steel', 'Steel equipment'), ('Golden', 'Golden equipment'), ('Diamond', 'Diamond equipment'),
+                   ('Shakudo', 'Shakudo equipment'), ('Hepatizon', 'Hepatizon equipment'),
+                   ('Electrum', 'Electrum equipment'), ('Adamant', 'Adamant equipment'),
+                   ('Leather', 'Leather armor'), ('Sturdy Leather', 'Sturdy leather armor'), ('Chainmail', 'Chainmail armor')]
+TOOL_TYPES = ['Pickaxe', 'Axe', 'Shovel', 'Hoe', 'Mattock', 'Dolabra']
+WEAPON_TYPES = ['Sword', 'Spear', 'Claymore']
+ARMOR_SLOTS = [('head', 'Helmet'), ('chest', 'Chestplate'), ('legs', 'Leggings'), ('feet', 'Boots')]
+OTHER_ATTRS = {'movement_speed': 'Speed', 'safe_fall_distance': 'Safe fall', 'step_height': 'Step height'}
+TOOL_HEAD = '! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics'
+WEAPON_HEAD = '! Item !! Durability !! Damage !! Attack speed !! Knockback !! Intrinsics'
+ARMOR_HEAD = '! Item !! Durability !! Armor !! Toughness !! Knockback res. !! Other !! Intrinsics'
+_BLOCK_TAGS = {}
+
+
+def block_tag(tag):
+    """Block IDs in a block tag: the pack's file merged with vanilla's, unless the pack's replaces it."""
+    if tag not in _BLOCK_TAGS:
+        ns, p = tag.lstrip('#').split(':') if ':' in tag else ('minecraft', tag.lstrip('#'))
+        _BLOCK_TAGS[tag] = out = []
+        for base in (os.path.join(ROOT, 'source', 'matcha-flavoured', 'MF_datapack', 'data', ns, 'tags', 'block', p + '.json'),
+                     os.path.join(ROOT, 'source', 'vanilla-data', 'data', ns, 'tags', 'block', p + '.json')):
+            if os.path.exists(base):
+                d = json.load(open(base))
+                for v in d['values']:
+                    v = v if isinstance(v, str) else v['id']
+                    out += block_tag(v) if v.startswith('#') else [v if ':' in v else 'minecraft:' + v]
+                if d.get('replace'):
+                    break
+    return _BLOCK_TAGS[tag]
+
+
+def obsidian_text(tool):
+    """How a tool mines obsidian. The first rule that lists obsidian decides, as in the game."""
+    for r in tool.get('rules', []):
+        b = r.get('blocks')
+        ids = [x for v in ([b] if isinstance(b, str) else b or []) for x in (block_tag(v) if v.startswith('#') else [v])]
+        if 'minecraft:obsidian' in ids or 'obsidian' in ids:
+            if not r.get('speed') and not r.get('correct_for_drops'):
+                break  # only denies drops (a vanilla incorrect_for_* tag): mined like any block the tool isn't for
+            speed = fmt_num(r.get('speed') or tool.get('default_mining_speed', 1))
+            return 'data-sort-value="%s" | %s' % (speed, speed if r.get('correct_for_drops') else speed + ' (no drops)')
+    return 'data-sort-value="0" | —'
+
+
+def zero_dash(x):
+    return fmt_num(x) if x else '—'
+
+
+def names_link(names):
+    """Links for a list of item names; a whole family ("Oak Planks", "Birch Planks", ...) becomes one link."""
+    names = list(dict.fromkeys(names))
+    if len(names) > 2 and len({n.split()[-1] for n in names}) == 1:
+        return '[[%s]]' % names[0].split()[-1]
+    return ', '.join('[[%s]]' % n for n in names)
+
+
+def equipment_cells(name, kind):
+    """The comparison-table cells for one tool, weapon or armor piece, from its components."""
+    c = effective(ITEMS[name])
+    dur = 'Unbreakable' if 'unbreakable' in c else str(c['max_damage']) if c.get('max_damage') else '—'
+    intr = '<br />'.join(intrinsic_text(e, lvl) for e, lvl in enchant_levels(c).items()) or '—'
+    if kind == 'armor':
+        others = []
+        for m in c.get('attribute_modifiers', []) or []:
+            attr = m.get('type', '').split(':')[-1]
+            if attr in ('armor', 'armor_toughness', 'knockback_resistance') or not m.get('amount'):
+                continue
+            op = m.get('operation', 'add_value')
+            val = ('+' if m['amount'] > 0 else '') + fmt_num(m['amount']) if op == 'add_value' else '%+d%%' % round(m['amount'] * 100)
+            others.append('%s %s' % (OTHER_ATTRS.get(attr, attr.replace('_', ' ').capitalize()), val))
+        vals = [attr_sum(c, a)[0] for a in ('armor', 'armor_toughness', 'knockback_resistance')]
+        return [dur] + [zero_dash(v) for v in vals] + ['<br />'.join(others) or '—', intr], vals
+    dmg = fmt_num(1 + attr_sum(c, 'attack_damage', 'mainhand')[0])
+    spd = fmt_num(4 + attr_sum(c, 'attack_speed', 'mainhand')[0])
+    if kind == 'tool':
+        tool = c.get('tool') or {}
+        mine = mining_speed(tool)
+        return [dur, fmt_num(mine) if mine is not None else '—', obsidian_text(tool), dmg, spd, intr], None
+    kb = attr_sum(c, 'attack_knockback', 'mainhand')[0]
+    return [dur, dmg, spd, ('+' + fmt_num(kb)) if kb else '—', intr], None
+
+
+def equipment_row(name, kind):
+    # a hand-written note for the row (e.g. a <ref>) is passed to the table as |<item name>=...
+    return '|-\n| {{ItemLink|%s}}{{{%s|}}} || %s' % (safe(name), safe(name), ' || '.join(equipment_cells(name, kind)[0]))
+
+
+def equipment_table(head, rows, extra=''):
+    return ('<includeonly>{| class="wikitable sortable"\n' + head + '\n' + '\n'.join(rows) + extra +
+            '\n|}</includeonly><noinclude>Generated from the items\' components by <code>tools/generate.py</code>. '
+            'A hand-written note for a row is passed under the row\'s name (<code>|Steel Helmet=...</code>). '
+            '[[Category:Generated data]]</noinclude>')
+
+
+def armor_sets():
+    """{name prefix: [piece names, head to feet]}: armor pieces sharing an equipment asset that cover all four
+    slots, in tier order. The prefix is what the pieces' names share ("Leather" for Hood, Pauldron, Pants, Boots)."""
+    by_asset = defaultdict(list)
+    for name, it in ITEMS.items():
+        eq = effective(it).get('equippable') or {}
+        if eq.get('slot') in dict(ARMOR_SLOTS) and eq.get('asset_id'):
+            by_asset[eq['asset_id']].append((eq['slot'], name))
+    order = [s for s, _ in ARMOR_SLOTS]
+    sets = {}
+    for asset, pieces in by_asset.items():
+        if {s for s, _ in pieces} == set(order):
+            prefix = ' '.join(os.path.commonprefix([n.split() for _, n in pieces])) or asset.split(':')[-1].title()
+            sets[prefix] = [n for _, n in sorted(pieces, key=lambda p: (order.index(p[0]), p[1]))]
+    rank = [p for p, _ in EQUIPMENT_TIERS]
+    return dict(sorted(sets.items(), key=lambda kv: (rank.index(kv[0]) if kv[0] in rank else len(rank), kv[0])))
+
+
+def tier_link(prefix):
+    page = dict(EQUIPMENT_TIERS).get(prefix)
+    return '[[%s|%s]]' % (page, page.rsplit(' ', 1)[0]) if page else prefix
+
+
+def tiers_table():
+    """Tools page: each tier, what its tools are made from (its pickaxe's recipe) and repaired with."""
+    rows = []
+    for prefix, page in EQUIPMENT_TIERS:
+        name = prefix + ' Pickaxe'
+        if name not in ITEMS:
+            continue
+        made = []
+        for r in producing(name)[:1]:
+            if r['type'].endswith('smithing_transform'):
+                base = r['base']['names'][0]
+                made.append(' + '.join([base.rsplit(' ', 1)[0] + ' tool'] + [names_link(r[k]['names']) for k in ('template', 'addition') if r.get(k)]))
+            else:
+                made += [names_link(v['names']) for v in (r.get('key') or {}).values() if v['names'] != ['Stick']]
+        rep = (effective(ITEMS[name]).get('repairable') or {}).get('items') or []
+        ids = vanilla_tag(rep) if isinstance(rep, str) else rep
+        rows.append('|-\n| %s{{{%s|}}} || %s || %s' % (tier_link(prefix), prefix, ', '.join(made) or '—', names_link([id_name(i) for i in ids]) or '—'))
+    return equipment_table('! Tier !! Made from !! Repaired with', rows)
+
+
+def equipment_tables(n):
+    """Template:Data/Tools|Weapons|Armor/<type, slot or tier>, Data/Tools/Tiers and Data/Armor/Sets: the stat
+    comparisons on the Tools, Weapons, Armor and equipment family pages."""
+    def named(prefix, kind_type):
+        name = '%s %s' % (prefix, kind_type)
+        return name if name in ITEMS and item_type(ITEMS[name], effective(ITEMS[name])) in ('Tool', 'Weapon') else None
+    for types, kind, folder, head in ((TOOL_TYPES, 'tool', 'Tools', TOOL_HEAD), (WEAPON_TYPES, 'weapon', 'Weapons', WEAPON_HEAD)):
+        for t in types:
+            rows = [equipment_row(nm, kind) for nm in (named(p, t) for p, _ in EQUIPMENT_TIERS) if nm]
+            write('Template', 'Data/%s/%s' % (folder, t), equipment_table(head, rows)); n['equipment tables'] += 1
+        for p, _ in EQUIPMENT_TIERS:
+            rows = [equipment_row(nm, kind) for nm in (named(p, t) for t in types) if nm]
+            if rows:
+                write('Template', 'Data/%s/%s' % (folder, p), equipment_table(head, rows)); n['equipment tables'] += 1
+    write('Template', 'Data/Tools/Tiers', tiers_table())
+    sets = armor_sets()
+    for i, (slot, label) in enumerate(ARMOR_SLOTS):
+        rows = [equipment_row(pieces[i], 'armor') for pieces in sets.values()]
+        write('Template', 'Data/Armor/' + label, equipment_table(ARMOR_HEAD, rows)); n['equipment tables'] += 1
+    set_rows = []
+    for prefix, pieces in sets.items():
+        totals = [sum(x) for x in zip(*(equipment_cells(nm, 'armor')[1] for nm in pieces))]
+        write('Template', 'Data/Armor/' + prefix, equipment_table(ARMOR_HEAD, [equipment_row(nm, 'armor') for nm in pieces],
+              '\n|- class="sortbottom"\n! Full set !! !! %s !! %s !! %s !! colspan="2" |' % tuple(zero_dash(v) for v in totals)))
+        n['equipment tables'] += 1
+        # the notes column is hand-written: what the set is for, which the numbers don't say
+        set_rows.append('|-\n| %s || %s || %s || {{{%s|}}}' % (tier_link(prefix), zero_dash(totals[0]), zero_dash(totals[1]), prefix))
+    write('Template', 'Data/Armor/Sets', equipment_table('! Set !! Armor !! Toughness !! Notes', set_rows))
+
+
 ADV = DATA['advancements']
 
 
@@ -1541,6 +1724,7 @@ def main():
     write('Template', 'Data/Renamed items', renamed_table())
     write('Template', 'Data/Trim templates', trim_templates_table())
     write('Template', 'Data/Enchantments', enchantment_table())
+    equipment_tables(n)
     for tab, page in advancement_tables().items():
         write('Template', 'Data/Advancements/' + tab, page); n['advancement tabs'] += 1
     m = DATA['meta']

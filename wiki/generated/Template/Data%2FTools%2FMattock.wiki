@@ -1,0 +1,19 @@
+<includeonly>{| class="wikitable sortable"
+! Item !! Durability !! Mining speed !! Obsidian !! Damage !! Attack speed !! Intrinsics
+|-
+| {{ItemLink|Copper Mattock}}{{{Copper Mattock|}}} || 350 || 5 || data-sort-value="0" | — || 1 || 2 || —
+|-
+| {{ItemLink|Iron Mattock}}{{{Iron Mattock|}}} || 500 || 6 || data-sort-value="0" | — || 4 || 4 || —
+|-
+| {{ItemLink|Steel Mattock}}{{{Steel Mattock|}}} || 3000 || 7 || data-sort-value="0" | — || 1 || 2 || —
+|-
+| {{ItemLink|Diamond Mattock}}{{{Diamond Mattock|}}} || 2500 || 8 || data-sort-value="0" | — || 4 || 3 || —
+|-
+| {{ItemLink|Shakudo Mattock}}{{{Shakudo Mattock|}}} || 1000 || 8 || data-sort-value="0" | — || 2 || 4 || [[Silk Touch]]
+|-
+| {{ItemLink|Hepatizon Mattock}}{{{Hepatizon Mattock|}}} || 1000 || 15 || data-sort-value="0" | — || 3 || 3 || —
+|-
+| {{ItemLink|Electrum Mattock}}{{{Electrum Mattock|}}} || 3000 || 10 || data-sort-value="0" | — || 3 || 3 || [[Fortune|Fortune bonus II]]<br />{{G|Warding}} [[Warding|1 Warding]]
+|-
+| {{ItemLink|Adamant Mattock}}{{{Adamant Mattock|}}} || 5000 || 13 || data-sort-value="0" | — || 1 || 4 || [[Efficiency]] I<br />[[Adamant equipment|Auto-smelting]]<br />[[Unbreaking]] II
+|}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>
