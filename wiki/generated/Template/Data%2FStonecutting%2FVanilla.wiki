@@ -1,0 +1,647 @@
+<includeonly>==== Stone and other ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Andesite]] || [[Andesite Slab]]{{{minecraft:andesite_slab_from_andesite_stonecutting|}}} || 2
+|-
+| [[Andesite]] || [[Andesite Stairs]]{{{minecraft:andesite_stairs_from_andesite_stonecutting|}}} || 1
+|-
+| [[Andesite]] || [[Andesite Wall]]{{{minecraft:andesite_wall_from_andesite_stonecutting|}}} || 1
+|-
+| [[Andesite]] || [[Polished Andesite]]{{{minecraft:polished_andesite_from_andesite_stonecutting|}}} || 1
+|-
+| [[Andesite]] || [[Polished Andesite Slab]]{{{minecraft:polished_andesite_slab_from_andesite_stonecutting|}}} || 2
+|-
+| [[Andesite]] || [[Polished Andesite Stairs]]{{{minecraft:polished_andesite_stairs_from_andesite_stonecutting|}}} || 1
+|-
+| [[Basalt]] || [[Polished Basalt]]{{{minecraft:polished_basalt_from_basalt_stonecutting|}}} || 1
+|-
+| [[Blackstone]] || [[Blackstone Slab]]{{{minecraft:blackstone_slab_from_blackstone_stonecutting|}}} || 2
+|-
+| [[Blackstone]] || [[Blackstone Stairs]]{{{minecraft:blackstone_stairs_from_blackstone_stonecutting|}}} || 1
+|-
+| [[Blackstone]] || [[Blackstone Wall]]{{{minecraft:blackstone_wall_from_blackstone_stonecutting|}}} || 1
+|-
+| [[Blackstone]] || [[Chiseled Polished Blackstone]]{{{minecraft:chiseled_polished_blackstone_from_blackstone_stonecutting|}}} || 1
+|-
+| [[Blackstone]] || [[Polished Blackstone]]{{{minecraft:polished_blackstone_from_blackstone_stonecutting|}}} || 1
+|-
+| [[Blackstone]] || [[Polished Blackstone Brick Slab]]{{{minecraft:polished_blackstone_brick_slab_from_blackstone_stonecutting|}}} || 2
+|-
+| [[Blackstone]] || [[Polished Blackstone Brick Stairs]]{{{minecraft:polished_blackstone_brick_stairs_from_blackstone_stonecutting|}}} || 1
+|-
+| [[Blackstone]] || [[Polished Blackstone Brick Wall]]{{{minecraft:polished_blackstone_brick_wall_from_blackstone_stonecutting|}}} || 1
+|-
+| [[Blackstone]] || [[Polished Blackstone Bricks]]{{{minecraft:polished_blackstone_bricks_from_blackstone_stonecutting|}}} || 1
+|-
+| [[Blackstone]] || [[Polished Blackstone Slab]]{{{minecraft:polished_blackstone_slab_from_blackstone_stonecutting|}}} || 2
+|-
+| [[Blackstone]] || [[Polished Blackstone Stairs]]{{{minecraft:polished_blackstone_stairs_from_blackstone_stonecutting|}}} || 1
+|-
+| [[Blackstone]] || [[Polished Blackstone Wall]]{{{minecraft:polished_blackstone_wall_from_blackstone_stonecutting|}}} || 1
+|-
+| [[Block of Quartz]] || [[Chiseled Quartz Block]]{{{minecraft:chiseled_quartz_block_from_quartz_block_stonecutting|}}} || 1
+|-
+| [[Block of Quartz]] || [[Quartz Bricks]]{{{minecraft:quartz_bricks_from_quartz_block_stonecutting|}}} || 1
+|-
+| [[Block of Quartz]] || [[Quartz Pillar]]{{{minecraft:quartz_pillar_from_quartz_block_stonecutting|}}} || 1
+|-
+| [[Block of Quartz]] || [[Quartz Slab]]{{{minecraft:quartz_slab_from_quartz_block_stonecutting|}}} || 2
+|-
+| [[Block of Quartz]] || [[Quartz Stairs]]{{{minecraft:quartz_stairs_from_quartz_block_stonecutting|}}} || 1
+|-
+| [[Bricks]] || [[Brick Slab]]{{{minecraft:brick_slab_from_bricks_stonecutting|}}} || 2
+|-
+| [[Bricks]] || [[Brick Stairs]]{{{minecraft:brick_stairs_from_bricks_stonecutting|}}} || 1
+|-
+| [[Bricks]] || [[Brick Wall]]{{{minecraft:brick_wall_from_bricks_stonecutting|}}} || 1
+|-
+| [[Brown Sandstone]] || [[Brown Sandstone Slab]]{{{minecraft:end_stone_brick_slab_from_end_stone_bricks_stonecutting|}}} || 2
+|-
+| [[Brown Sandstone]] || [[Brown Sandstone Stairs]]{{{minecraft:end_stone_brick_stairs_from_end_stone_bricks_stonecutting|}}} || 1
+|-
+| [[Brown Sandstone]] || [[Brown Sandstone Wall]]{{{minecraft:end_stone_brick_wall_from_end_stone_bricks_stonecutting|}}} || 1
+|-
+| [[Cinnabar]] || [[Chiseled Cinnabar]]{{{minecraft:chiseled_cinnabar_from_cinnabar_stonecutting|}}} || 1
+|-
+| [[Cinnabar]] || [[Cinnabar Brick Slab]]{{{minecraft:cinnabar_brick_slab_from_cinnabar_stonecutting|}}} || 2
+|-
+| [[Cinnabar]] || [[Cinnabar Brick Stairs]]{{{minecraft:cinnabar_brick_stairs_from_cinnabar_stonecutting|}}} || 1
+|-
+| [[Cinnabar]] || [[Cinnabar Brick Wall]]{{{minecraft:cinnabar_brick_wall_from_cinnabar_stonecutting|}}} || 1
+|-
+| [[Cinnabar]] || [[Cinnabar Bricks]]{{{minecraft:cinnabar_bricks_from_cinnabar_stonecutting|}}} || 1
+|-
+| [[Cinnabar]] || [[Cinnabar Slab]]{{{minecraft:cinnabar_slab_from_cinnabar_stonecutting|}}} || 2
+|-
+| [[Cinnabar]] || [[Cinnabar Stairs]]{{{minecraft:cinnabar_stairs_from_cinnabar_stonecutting|}}} || 1
+|-
+| [[Cinnabar]] || [[Cinnabar Wall]]{{{minecraft:cinnabar_wall_from_cinnabar_stonecutting|}}} || 1
+|-
+| [[Cinnabar]] || [[Polished Cinnabar]]{{{minecraft:polished_cinnabar_from_cinnabar_stonecutting|}}} || 1
+|-
+| [[Cinnabar]] || [[Polished Cinnabar Slab]]{{{minecraft:polished_cinnabar_slab_from_cinnabar_stonecutting|}}} || 2
+|-
+| [[Cinnabar]] || [[Polished Cinnabar Stairs]]{{{minecraft:polished_cinnabar_stairs_from_cinnabar_stonecutting|}}} || 1
+|-
+| [[Cinnabar]] || [[Polished Cinnabar Wall]]{{{minecraft:polished_cinnabar_wall_from_cinnabar_stonecutting|}}} || 1
+|-
+| [[Cinnabar Bricks]] || [[Cinnabar Brick Slab]]{{{minecraft:cinnabar_brick_slab_from_cinnabar_bricks_stonecutting|}}} || 2
+|-
+| [[Cinnabar Bricks]] || [[Cinnabar Brick Stairs]]{{{minecraft:cinnabar_brick_stairs_from_cinnabar_bricks_stonecutting|}}} || 1
+|-
+| [[Cinnabar Bricks]] || [[Cinnabar Brick Wall]]{{{minecraft:cinnabar_brick_wall_from_cinnabar_bricks_stonecutting|}}} || 1
+|-
+| [[Cobbled Deepslate]] || [[Chiseled Deepslate]]{{{minecraft:chiseled_deepslate_from_cobbled_deepslate_stonecutting|}}} || 1
+|-
+| [[Cobbled Deepslate]] || [[Cobbled Deepslate Slab]]{{{minecraft:cobbled_deepslate_slab_from_cobbled_deepslate_stonecutting|}}} || 2
+|-
+| [[Cobbled Deepslate]] || [[Cobbled Deepslate Stairs]]{{{minecraft:cobbled_deepslate_stairs_from_cobbled_deepslate_stonecutting|}}} || 1
+|-
+| [[Cobbled Deepslate]] || [[Cobbled Deepslate Wall]]{{{minecraft:cobbled_deepslate_wall_from_cobbled_deepslate_stonecutting|}}} || 1
+|-
+| [[Cobbled Deepslate]] || [[Deepslate Brick Slab]]{{{minecraft:deepslate_brick_slab_from_cobbled_deepslate_stonecutting|}}} || 2
+|-
+| [[Cobbled Deepslate]] || [[Deepslate Brick Stairs]]{{{minecraft:deepslate_brick_stairs_from_cobbled_deepslate_stonecutting|}}} || 1
+|-
+| [[Cobbled Deepslate]] || [[Deepslate Brick Wall]]{{{minecraft:deepslate_brick_wall_from_cobbled_deepslate_stonecutting|}}} || 1
+|-
+| [[Cobbled Deepslate]] || [[Deepslate Bricks]]{{{minecraft:deepslate_bricks_from_cobbled_deepslate_stonecutting|}}} || 1
+|-
+| [[Cobbled Deepslate]] || [[Deepslate Tile Slab]]{{{minecraft:deepslate_tile_slab_from_cobbled_deepslate_stonecutting|}}} || 2
+|-
+| [[Cobbled Deepslate]] || [[Deepslate Tile Stairs]]{{{minecraft:deepslate_tile_stairs_from_cobbled_deepslate_stonecutting|}}} || 1
+|-
+| [[Cobbled Deepslate]] || [[Deepslate Tile Wall]]{{{minecraft:deepslate_tile_wall_from_cobbled_deepslate_stonecutting|}}} || 1
+|-
+| [[Cobbled Deepslate]] || [[Deepslate Tiles]]{{{minecraft:deepslate_tiles_from_cobbled_deepslate_stonecutting|}}} || 1
+|-
+| [[Cobbled Deepslate]] || [[Polished Deepslate]]{{{minecraft:polished_deepslate_from_cobbled_deepslate_stonecutting|}}} || 1
+|-
+| [[Cobbled Deepslate]] || [[Polished Deepslate Slab]]{{{minecraft:polished_deepslate_slab_from_cobbled_deepslate_stonecutting|}}} || 2
+|-
+| [[Cobbled Deepslate]] || [[Polished Deepslate Stairs]]{{{minecraft:polished_deepslate_stairs_from_cobbled_deepslate_stonecutting|}}} || 1
+|-
+| [[Cobbled Deepslate]] || [[Polished Deepslate Wall]]{{{minecraft:polished_deepslate_wall_from_cobbled_deepslate_stonecutting|}}} || 1
+|-
+| [[Cobblestone]] || [[Cobblestone Slab]]{{{minecraft:cobblestone_slab_from_cobblestone_stonecutting|}}} || 2
+|-
+| [[Cobblestone]] || [[Cobblestone Stairs]]{{{minecraft:cobblestone_stairs_from_cobblestone_stonecutting|}}} || 1
+|-
+| [[Cobblestone]] || [[Cobblestone Wall]]{{{minecraft:cobblestone_wall_from_cobblestone_stonecutting|}}} || 1
+|-
+| [[Cut Red Sandstone]] || [[Cut Red Sandstone Slab]]{{{minecraft:cut_red_sandstone_slab_from_cut_red_sandstone_stonecutting|}}} || 2
+|-
+| [[Cut Sandstone]] || [[Cut Sandstone Slab]]{{{minecraft:cut_sandstone_slab_from_cut_sandstone_stonecutting|}}} || 2
+|-
+| [[Dark Malachite]] || [[Dark Malachite Slab]]{{{minecraft:dark_prismarine_slab_from_dark_prismarine_stonecutting|}}} || 2
+|-
+| [[Dark Malachite]] || [[Dark Malachite Stairs]]{{{minecraft:dark_prismarine_stairs_from_dark_prismarine_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Chiseled Deepslate]]{{{minecraft:chiseled_deepslate_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Cobbled Deepslate]]{{{minecraft:cobbled_deepslate_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Cobbled Deepslate Slab]]{{{minecraft:cobbled_deepslate_slab_from_deepslate_stonecutting|}}} || 2
+|-
+| [[Deepslate]] || [[Cobbled Deepslate Stairs]]{{{minecraft:cobbled_deepslate_stairs_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Cobbled Deepslate Wall]]{{{minecraft:cobbled_deepslate_wall_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Deepslate Brick Slab]]{{{minecraft:deepslate_brick_slab_from_deepslate_stonecutting|}}} || 2
+|-
+| [[Deepslate]] || [[Deepslate Brick Stairs]]{{{minecraft:deepslate_brick_stairs_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Deepslate Brick Wall]]{{{minecraft:deepslate_brick_wall_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Deepslate Bricks]]{{{minecraft:deepslate_bricks_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Deepslate Tile Slab]]{{{minecraft:deepslate_tile_slab_from_deepslate_stonecutting|}}} || 2
+|-
+| [[Deepslate]] || [[Deepslate Tile Stairs]]{{{minecraft:deepslate_tile_stairs_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Deepslate Tile Wall]]{{{minecraft:deepslate_tile_wall_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Deepslate Tiles]]{{{minecraft:deepslate_tiles_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Polished Deepslate]]{{{minecraft:polished_deepslate_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Polished Deepslate Slab]]{{{minecraft:polished_deepslate_slab_from_deepslate_stonecutting|}}} || 2
+|-
+| [[Deepslate]] || [[Polished Deepslate Stairs]]{{{minecraft:polished_deepslate_stairs_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate]] || [[Polished Deepslate Wall]]{{{minecraft:polished_deepslate_wall_from_deepslate_stonecutting|}}} || 1
+|-
+| [[Deepslate Bricks]] || [[Deepslate Brick Slab]]{{{minecraft:deepslate_brick_slab_from_deepslate_bricks_stonecutting|}}} || 2
+|-
+| [[Deepslate Bricks]] || [[Deepslate Brick Stairs]]{{{minecraft:deepslate_brick_stairs_from_deepslate_bricks_stonecutting|}}} || 1
+|-
+| [[Deepslate Bricks]] || [[Deepslate Brick Wall]]{{{minecraft:deepslate_brick_wall_from_deepslate_bricks_stonecutting|}}} || 1
+|-
+| [[Deepslate Bricks]] || [[Deepslate Tile Slab]]{{{minecraft:deepslate_tile_slab_from_deepslate_bricks_stonecutting|}}} || 2
+|-
+| [[Deepslate Bricks]] || [[Deepslate Tile Stairs]]{{{minecraft:deepslate_tile_stairs_from_deepslate_bricks_stonecutting|}}} || 1
+|-
+| [[Deepslate Bricks]] || [[Deepslate Tile Wall]]{{{minecraft:deepslate_tile_wall_from_deepslate_bricks_stonecutting|}}} || 1
+|-
+| [[Deepslate Bricks]] || [[Deepslate Tiles]]{{{minecraft:deepslate_tiles_from_deepslate_bricks_stonecutting|}}} || 1
+|-
+| [[Deepslate Tiles]] || [[Deepslate Tile Slab]]{{{minecraft:deepslate_tile_slab_from_deepslate_tiles_stonecutting|}}} || 2
+|-
+| [[Deepslate Tiles]] || [[Deepslate Tile Stairs]]{{{minecraft:deepslate_tile_stairs_from_deepslate_tiles_stonecutting|}}} || 1
+|-
+| [[Deepslate Tiles]] || [[Deepslate Tile Wall]]{{{minecraft:deepslate_tile_wall_from_deepslate_tiles_stonecutting|}}} || 1
+|-
+| [[Diorite]] || [[Diorite Slab]]{{{minecraft:diorite_slab_from_diorite_stonecutting|}}} || 2
+|-
+| [[Diorite]] || [[Diorite Stairs]]{{{minecraft:diorite_stairs_from_diorite_stonecutting|}}} || 1
+|-
+| [[Diorite]] || [[Diorite Wall]]{{{minecraft:diorite_wall_from_diorite_stonecutting|}}} || 1
+|-
+| [[Diorite]] || [[Polished Diorite]]{{{minecraft:polished_diorite_from_diorite_stonecutting|}}} || 1
+|-
+| [[Diorite]] || [[Polished Diorite Slab]]{{{minecraft:polished_diorite_slab_from_diorite_stonecutting|}}} || 2
+|-
+| [[Diorite]] || [[Polished Diorite Stairs]]{{{minecraft:polished_diorite_stairs_from_diorite_stonecutting|}}} || 1
+|-
+| [[End Stone]] || [[Brown Sandstone]]{{{minecraft:end_stone_bricks_from_end_stone_stonecutting|}}} || 1
+|-
+| [[End Stone]] || [[Brown Sandstone Slab]]{{{minecraft:end_stone_brick_slab_from_end_stone_stonecutting|}}} || 2
+|-
+| [[End Stone]] || [[Brown Sandstone Stairs]]{{{minecraft:end_stone_brick_stairs_from_end_stone_stonecutting|}}} || 1
+|-
+| [[End Stone]] || [[Brown Sandstone Wall]]{{{minecraft:end_stone_brick_wall_from_end_stone_stonecutting|}}} || 1
+|-
+| [[Granite]] || [[Granite Slab]]{{{minecraft:granite_slab_from_granite_stonecutting|}}} || 2
+|-
+| [[Granite]] || [[Granite Stairs]]{{{minecraft:granite_stairs_from_granite_stonecutting|}}} || 1
+|-
+| [[Granite]] || [[Granite Wall]]{{{minecraft:granite_wall_from_granite_stonecutting|}}} || 1
+|-
+| [[Granite]] || [[Polished Granite]]{{{minecraft:polished_granite_from_granite_stonecutting|}}} || 1
+|-
+| [[Granite]] || [[Polished Granite Slab]]{{{minecraft:polished_granite_slab_from_granite_stonecutting|}}} || 2
+|-
+| [[Granite]] || [[Polished Granite Stairs]]{{{minecraft:polished_granite_stairs_from_granite_stonecutting|}}} || 1
+|-
+| [[Hellbricks]] || [[Chiseled Hellbricks]]{{{minecraft:chiseled_nether_bricks_from_nether_bricks_stonecutting|}}} || 1
+|-
+| [[Hellbricks]] || [[Hellbrick Slab]]{{{minecraft:nether_brick_slab_from_nether_bricks_stonecutting|}}} || 2
+|-
+| [[Hellbricks]] || [[Hellbrick Stairs]]{{{minecraft:nether_brick_stairs_from_nether_bricks_stonecutting|}}} || 1
+|-
+| [[Hellbricks]] || [[Hellbrick Wall]]{{{minecraft:nether_brick_wall_from_nether_bricks_stonecutting|}}} || 1
+|-
+| [[Limestone]] || [[Chiseled Stone Bricks]]{{{minecraft:chiseled_stone_bricks_from_stone_stonecutting|}}} || 1
+|-
+| [[Limestone]] || [[Cobblestone]]{{{minecraft:cobblestone_from_stone_stonecutting|}}} || 1
+|-
+| [[Limestone]] || [[Cobblestone Slab]]{{{minecraft:cobblestone_slab_from_stone_stonecutting|}}} || 2
+|-
+| [[Limestone]] || [[Cobblestone Stairs]]{{{minecraft:cobblestone_stairs_from_stone_stonecutting|}}} || 1
+|-
+| [[Limestone]] || [[Cobblestone Wall]]{{{minecraft:cobblestone_wall_from_stone_stonecutting|}}} || 1
+|-
+| [[Limestone]] || [[Stone Brick Slab]]{{{minecraft:stone_brick_slab_from_stone_stonecutting|}}} || 2
+|-
+| [[Limestone]] || [[Stone Brick Stairs]]{{{minecraft:stone_brick_stairs_from_stone_stonecutting|}}} || 1
+|-
+| [[Limestone]] || [[Stone Brick Wall]]{{{minecraft:stone_brick_wall_from_stone_stonecutting|}}} || 1
+|-
+| [[Limestone]] || [[Stone Bricks]]{{{minecraft:stone_bricks_from_stone_stonecutting|}}} || 1
+|-
+| [[Limestone]] || [[Stone Slab]]{{{minecraft:stone_slab_from_stone_stonecutting|}}} || 2
+|-
+| [[Limestone]] || [[Stone Stairs]]{{{minecraft:stone_stairs_from_stone_stonecutting|}}} || 1
+|-
+| [[Malachite]] || [[Malachite Slab]]{{{minecraft:prismarine_slab_from_prismarine_stonecutting|}}} || 2
+|-
+| [[Malachite]] || [[Malachite Stairs]]{{{minecraft:prismarine_stairs_from_prismarine_stonecutting|}}} || 1
+|-
+| [[Malachite]] || [[Malachite Wall]]{{{minecraft:prismarine_wall_from_prismarine_stonecutting|}}} || 1
+|-
+| [[Malachite Bricks]] || [[Malachite Brick Slab]]{{{minecraft:prismarine_brick_slab_from_prismarine_bricks_stonecutting|}}} || 2
+|-
+| [[Malachite Bricks]] || [[Malachite Brick Stairs]]{{{minecraft:prismarine_brick_stairs_from_prismarine_bricks_stonecutting|}}} || 1
+|-
+| [[Mossy Cobblestone]] || [[Mossy Cobblestone Slab]]{{{minecraft:mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting|}}} || 2
+|-
+| [[Mossy Cobblestone]] || [[Mossy Cobblestone Stairs]]{{{minecraft:mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting|}}} || 1
+|-
+| [[Mossy Cobblestone]] || [[Mossy Cobblestone Wall]]{{{minecraft:mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting|}}} || 1
+|-
+| [[Mossy Stone Bricks]] || [[Mossy Stone Brick Slab]]{{{minecraft:mossy_stone_brick_slab_from_mossy_stone_bricks_stonecutting|}}} || 2
+|-
+| [[Mossy Stone Bricks]] || [[Mossy Stone Brick Stairs]]{{{minecraft:mossy_stone_brick_stairs_from_mossy_stone_bricks_stonecutting|}}} || 1
+|-
+| [[Mossy Stone Bricks]] || [[Mossy Stone Brick Wall]]{{{minecraft:mossy_stone_brick_wall_from_mossy_stone_bricks_stonecutting|}}} || 1
+|-
+| [[Mud Bricks]] || [[Mud Brick Slab]]{{{minecraft:mud_brick_slab_from_mud_bricks_stonecutting|}}} || 2
+|-
+| [[Mud Bricks]] || [[Mud Brick Stairs]]{{{minecraft:mud_brick_stairs_from_mud_bricks_stonecutting|}}} || 1
+|-
+| [[Mud Bricks]] || [[Mud Brick Wall]]{{{minecraft:mud_brick_wall_from_mud_bricks_stonecutting|}}} || 1
+|-
+| [[Polished Andesite]] || [[Polished Andesite Slab]]{{{minecraft:polished_andesite_slab_from_polished_andesite_stonecutting|}}} || 2
+|-
+| [[Polished Andesite]] || [[Polished Andesite Stairs]]{{{minecraft:polished_andesite_stairs_from_polished_andesite_stonecutting|}}} || 1
+|-
+| [[Polished Blackstone]] || [[Chiseled Polished Blackstone]]{{{minecraft:chiseled_polished_blackstone_from_polished_blackstone_stonecutting|}}} || 1
+|-
+| [[Polished Blackstone]] || [[Polished Blackstone Brick Slab]]{{{minecraft:polished_blackstone_brick_slab_from_polished_blackstone_stonecutting|}}} || 2
+|-
+| [[Polished Blackstone]] || [[Polished Blackstone Brick Stairs]]{{{minecraft:polished_blackstone_brick_stairs_from_polished_blackstone_stonecutting|}}} || 1
+|-
+| [[Polished Blackstone]] || [[Polished Blackstone Brick Wall]]{{{minecraft:polished_blackstone_brick_wall_from_polished_blackstone_stonecutting|}}} || 1
+|-
+| [[Polished Blackstone]] || [[Polished Blackstone Bricks]]{{{minecraft:polished_blackstone_bricks_from_polished_blackstone_stonecutting|}}} || 1
+|-
+| [[Polished Blackstone]] || [[Polished Blackstone Slab]]{{{minecraft:polished_blackstone_slab_from_polished_blackstone_stonecutting|}}} || 2
+|-
+| [[Polished Blackstone]] || [[Polished Blackstone Stairs]]{{{minecraft:polished_blackstone_stairs_from_polished_blackstone_stonecutting|}}} || 1
+|-
+| [[Polished Blackstone]] || [[Polished Blackstone Wall]]{{{minecraft:polished_blackstone_wall_from_polished_blackstone_stonecutting|}}} || 1
+|-
+| [[Polished Blackstone Bricks]] || [[Polished Blackstone Brick Slab]]{{{minecraft:polished_blackstone_brick_slab_from_polished_blackstone_bricks_stonecutting|}}} || 2
+|-
+| [[Polished Blackstone Bricks]] || [[Polished Blackstone Brick Stairs]]{{{minecraft:polished_blackstone_brick_stairs_from_polished_blackstone_bricks_stonecutting|}}} || 1
+|-
+| [[Polished Blackstone Bricks]] || [[Polished Blackstone Brick Wall]]{{{minecraft:polished_blackstone_brick_wall_from_polished_blackstone_bricks_stonecutting|}}} || 1
+|-
+| [[Polished Cinnabar]] || [[Cinnabar Brick Slab]]{{{minecraft:cinnabar_brick_slab_from_polished_cinnabar_stonecutting|}}} || 2
+|-
+| [[Polished Cinnabar]] || [[Cinnabar Brick Stairs]]{{{minecraft:cinnabar_brick_stairs_from_polished_cinnabar_stonecutting|}}} || 1
+|-
+| [[Polished Cinnabar]] || [[Cinnabar Brick Wall]]{{{minecraft:cinnabar_brick_wall_from_polished_cinnabar_stonecutting|}}} || 1
+|-
+| [[Polished Cinnabar]] || [[Cinnabar Bricks]]{{{minecraft:cinnabar_bricks_from_polished_cinnabar_stonecutting|}}} || 1
+|-
+| [[Polished Cinnabar]] || [[Polished Cinnabar Slab]]{{{minecraft:polished_cinnabar_slab_from_polished_cinnabar_stonecutting|}}} || 2
+|-
+| [[Polished Cinnabar]] || [[Polished Cinnabar Stairs]]{{{minecraft:polished_cinnabar_stairs_from_polished_cinnabar_stonecutting|}}} || 1
+|-
+| [[Polished Cinnabar]] || [[Polished Cinnabar Wall]]{{{minecraft:polished_cinnabar_wall_from_polished_cinnabar_stonecutting|}}} || 1
+|-
+| [[Polished Deepslate]] || [[Deepslate Brick Slab]]{{{minecraft:deepslate_brick_slab_from_polished_deepslate_stonecutting|}}} || 2
+|-
+| [[Polished Deepslate]] || [[Deepslate Brick Stairs]]{{{minecraft:deepslate_brick_stairs_from_polished_deepslate_stonecutting|}}} || 1
+|-
+| [[Polished Deepslate]] || [[Deepslate Brick Wall]]{{{minecraft:deepslate_brick_wall_from_polished_deepslate_stonecutting|}}} || 1
+|-
+| [[Polished Deepslate]] || [[Deepslate Bricks]]{{{minecraft:deepslate_bricks_from_polished_deepslate_stonecutting|}}} || 1
+|-
+| [[Polished Deepslate]] || [[Deepslate Tile Slab]]{{{minecraft:deepslate_tile_slab_from_polished_deepslate_stonecutting|}}} || 2
+|-
+| [[Polished Deepslate]] || [[Deepslate Tile Stairs]]{{{minecraft:deepslate_tile_stairs_from_polished_deepslate_stonecutting|}}} || 1
+|-
+| [[Polished Deepslate]] || [[Deepslate Tile Wall]]{{{minecraft:deepslate_tile_wall_from_polished_deepslate_stonecutting|}}} || 1
+|-
+| [[Polished Deepslate]] || [[Deepslate Tiles]]{{{minecraft:deepslate_tiles_from_polished_deepslate_stonecutting|}}} || 1
+|-
+| [[Polished Deepslate]] || [[Polished Deepslate Slab]]{{{minecraft:polished_deepslate_slab_from_polished_deepslate_stonecutting|}}} || 2
+|-
+| [[Polished Deepslate]] || [[Polished Deepslate Stairs]]{{{minecraft:polished_deepslate_stairs_from_polished_deepslate_stonecutting|}}} || 1
+|-
+| [[Polished Deepslate]] || [[Polished Deepslate Wall]]{{{minecraft:polished_deepslate_wall_from_polished_deepslate_stonecutting|}}} || 1
+|-
+| [[Polished Diorite]] || [[Polished Diorite Slab]]{{{minecraft:polished_diorite_slab_from_polished_diorite_stonecutting|}}} || 2
+|-
+| [[Polished Diorite]] || [[Polished Diorite Stairs]]{{{minecraft:polished_diorite_stairs_from_polished_diorite_stonecutting|}}} || 1
+|-
+| [[Polished Granite]] || [[Polished Granite Slab]]{{{minecraft:polished_granite_slab_from_polished_granite_stonecutting|}}} || 2
+|-
+| [[Polished Granite]] || [[Polished Granite Stairs]]{{{minecraft:polished_granite_stairs_from_polished_granite_stonecutting|}}} || 1
+|-
+| [[Polished Sulfur]] || [[Polished Sulfur Slab]]{{{minecraft:polished_sulfur_slab_from_polished_sulfur_stonecutting|}}} || 2
+|-
+| [[Polished Sulfur]] || [[Polished Sulfur Stairs]]{{{minecraft:polished_sulfur_stairs_from_polished_sulfur_stonecutting|}}} || 1
+|-
+| [[Polished Sulfur]] || [[Polished Sulfur Wall]]{{{minecraft:polished_sulfur_wall_from_polished_sulfur_stonecutting|}}} || 1
+|-
+| [[Polished Sulfur]] || [[Sulfur Brick Slab]]{{{minecraft:sulfur_brick_slab_from_polished_sulfur_stonecutting|}}} || 2
+|-
+| [[Polished Sulfur]] || [[Sulfur Brick Stairs]]{{{minecraft:sulfur_brick_stairs_from_polished_sulfur_stonecutting|}}} || 1
+|-
+| [[Polished Sulfur]] || [[Sulfur Brick Wall]]{{{minecraft:sulfur_brick_wall_from_polished_sulfur_stonecutting|}}} || 1
+|-
+| [[Polished Sulfur]] || [[Sulfur Bricks]]{{{minecraft:sulfur_bricks_from_polished_sulfur_stonecutting|}}} || 1
+|-
+| [[Polished Tuff]] || [[Chiseled Tuff Bricks]]{{{minecraft:chiseled_tuff_bricks_from_polished_tuff_stonecutting|}}} || 1
+|-
+| [[Polished Tuff]] || [[Polished Tuff Slab]]{{{minecraft:polished_tuff_slab_from_polished_tuff_stonecutting|}}} || 2
+|-
+| [[Polished Tuff]] || [[Polished Tuff Stairs]]{{{minecraft:polished_tuff_stairs_from_polished_tuff_stonecutting|}}} || 1
+|-
+| [[Polished Tuff]] || [[Polished Tuff Wall]]{{{minecraft:polished_tuff_wall_from_polished_tuff_stonecutting|}}} || 1
+|-
+| [[Polished Tuff]] || [[Tuff Brick Slab]]{{{minecraft:tuff_brick_slab_from_polished_tuff_stonecutting|}}} || 2
+|-
+| [[Polished Tuff]] || [[Tuff Brick Stairs]]{{{minecraft:tuff_brick_stairs_from_polished_tuff_stonecutting|}}} || 1
+|-
+| [[Polished Tuff]] || [[Tuff Brick Wall]]{{{minecraft:tuff_brick_wall_from_polished_tuff_stonecutting|}}} || 1
+|-
+| [[Polished Tuff]] || [[Tuff Bricks]]{{{minecraft:tuff_bricks_from_polished_tuff_stonecutting|}}} || 1
+|-
+| [[Purpur Block]] || [[Purpur Pillar]]{{{minecraft:purpur_pillar_from_purpur_block_stonecutting|}}} || 1
+|-
+| [[Purpur Block]] || [[Purpur Slab]]{{{minecraft:purpur_slab_from_purpur_block_stonecutting|}}} || 2
+|-
+| [[Purpur Block]] || [[Purpur Stairs]]{{{minecraft:purpur_stairs_from_purpur_block_stonecutting|}}} || 1
+|-
+| [[Red Hellbricks]] || [[Red Hellbrick Slab]]{{{minecraft:red_nether_brick_slab_from_red_nether_bricks_stonecutting|}}} || 2
+|-
+| [[Red Hellbricks]] || [[Red Hellbrick Stairs]]{{{minecraft:red_nether_brick_stairs_from_red_nether_bricks_stonecutting|}}} || 1
+|-
+| [[Red Hellbricks]] || [[Red Hellbrick Wall]]{{{minecraft:red_nether_brick_wall_from_red_nether_bricks_stonecutting|}}} || 1
+|-
+| [[Red Sandstone]] || [[Chiseled Red Sandstone]]{{{minecraft:chiseled_red_sandstone_from_red_sandstone_stonecutting|}}} || 1
+|-
+| [[Red Sandstone]] || [[Cut Red Sandstone]]{{{minecraft:cut_red_sandstone_from_red_sandstone_stonecutting|}}} || 1
+|-
+| [[Red Sandstone]] || [[Cut Red Sandstone Slab]]{{{minecraft:cut_red_sandstone_slab_from_red_sandstone_stonecutting|}}} || 2
+|-
+| [[Red Sandstone]] || [[Red Sandstone Slab]]{{{minecraft:red_sandstone_slab_from_red_sandstone_stonecutting|}}} || 2
+|-
+| [[Red Sandstone]] || [[Red Sandstone Stairs]]{{{minecraft:red_sandstone_stairs_from_red_sandstone_stonecutting|}}} || 1
+|-
+| [[Red Sandstone]] || [[Red Sandstone Wall]]{{{minecraft:red_sandstone_wall_from_red_sandstone_stonecutting|}}} || 1
+|-
+| [[Resin Bricks]] || [[Chiseled Resin Bricks]]{{{minecraft:chiseled_resin_bricks_from_resin_bricks_stonecutting|}}} || 1
+|-
+| [[Resin Bricks]] || [[Resin Brick Slab]]{{{minecraft:resin_brick_slab_from_resin_bricks_stonecutting|}}} || 2
+|-
+| [[Resin Bricks]] || [[Resin Brick Stairs]]{{{minecraft:resin_brick_stairs_from_resin_bricks_stonecutting|}}} || 1
+|-
+| [[Resin Bricks]] || [[Resin Brick Wall]]{{{minecraft:resin_brick_wall_from_resin_bricks_stonecutting|}}} || 1
+|-
+| [[Sandstone]] || [[Chiseled Sandstone]]{{{minecraft:chiseled_sandstone_from_sandstone_stonecutting|}}} || 1
+|-
+| [[Sandstone]] || [[Cut Sandstone]]{{{minecraft:cut_sandstone_from_sandstone_stonecutting|}}} || 1
+|-
+| [[Sandstone]] || [[Cut Sandstone Slab]]{{{minecraft:cut_sandstone_slab_from_sandstone_stonecutting|}}} || 2
+|-
+| [[Sandstone]] || [[Sandstone Slab]]{{{minecraft:sandstone_slab_from_sandstone_stonecutting|}}} || 2
+|-
+| [[Sandstone]] || [[Sandstone Stairs]]{{{minecraft:sandstone_stairs_from_sandstone_stonecutting|}}} || 1
+|-
+| [[Sandstone]] || [[Sandstone Wall]]{{{minecraft:sandstone_wall_from_sandstone_stonecutting|}}} || 1
+|-
+| [[Smooth Quartz Block]] || [[Smooth Quartz Slab]]{{{minecraft:smooth_quartz_slab_from_smooth_quartz_stonecutting|}}} || 2
+|-
+| [[Smooth Quartz Block]] || [[Smooth Quartz Stairs]]{{{minecraft:smooth_quartz_stairs_from_smooth_quartz_stonecutting|}}} || 1
+|-
+| [[Smooth Red Sandstone]] || [[Smooth Red Sandstone Slab]]{{{minecraft:smooth_red_sandstone_slab_from_smooth_red_sandstone_stonecutting|}}} || 2
+|-
+| [[Smooth Red Sandstone]] || [[Smooth Red Sandstone Stairs]]{{{minecraft:smooth_red_sandstone_stairs_from_smooth_red_sandstone_stonecutting|}}} || 1
+|-
+| [[Smooth Sandstone]] || [[Smooth Sandstone Slab]]{{{minecraft:smooth_sandstone_slab_from_smooth_sandstone_stonecutting|}}} || 2
+|-
+| [[Smooth Sandstone]] || [[Smooth Sandstone Stairs]]{{{minecraft:smooth_sandstone_stairs_from_smooth_sandstone_stonecutting|}}} || 1
+|-
+| [[Smooth Stone]] || [[Smooth Stone Slab]]{{{minecraft:smooth_stone_slab_from_smooth_stone_stonecutting|}}} || 2
+|-
+| [[Stone Bricks]] || [[Chiseled Stone Bricks]]{{{minecraft:chiseled_stone_bricks_from_stone_bricks_stonecutting|}}} || 1
+|-
+| [[Stone Bricks]] || [[Stone Brick Slab]]{{{minecraft:stone_brick_slab_from_stone_bricks_stonecutting|}}} || 2
+|-
+| [[Stone Bricks]] || [[Stone Brick Stairs]]{{{minecraft:stone_brick_stairs_from_stone_bricks_stonecutting|}}} || 1
+|-
+| [[Stone Bricks]] || [[Stone Brick Wall]]{{{minecraft:stone_brick_wall_from_stone_bricks_stonecutting|}}} || 1
+|-
+| [[Sulfur]] || [[Chiseled Sulfur]]{{{minecraft:chiseled_sulfur_from_sulfur_stonecutting|}}} || 1
+|-
+| [[Sulfur]] || [[Polished Sulfur]]{{{minecraft:polished_sulfur_from_sulfur_stonecutting|}}} || 1
+|-
+| [[Sulfur]] || [[Polished Sulfur Slab]]{{{minecraft:polished_sulfur_slab_from_sulfur_stonecutting|}}} || 2
+|-
+| [[Sulfur]] || [[Polished Sulfur Stairs]]{{{minecraft:polished_sulfur_stairs_from_sulfur_stonecutting|}}} || 1
+|-
+| [[Sulfur]] || [[Polished Sulfur Wall]]{{{minecraft:polished_sulfur_wall_from_sulfur_stonecutting|}}} || 1
+|-
+| [[Sulfur]] || [[Sulfur Brick Slab]]{{{minecraft:sulfur_brick_slab_from_sulfur_stonecutting|}}} || 2
+|-
+| [[Sulfur]] || [[Sulfur Brick Stairs]]{{{minecraft:sulfur_brick_stairs_from_sulfur_stonecutting|}}} || 1
+|-
+| [[Sulfur]] || [[Sulfur Brick Wall]]{{{minecraft:sulfur_brick_wall_from_sulfur_stonecutting|}}} || 1
+|-
+| [[Sulfur]] || [[Sulfur Bricks]]{{{minecraft:sulfur_bricks_from_sulfur_stonecutting|}}} || 1
+|-
+| [[Sulfur]] || [[Sulfur Slab]]{{{minecraft:sulfur_slab_from_sulfur_stonecutting|}}} || 2
+|-
+| [[Sulfur]] || [[Sulfur Stairs]]{{{minecraft:sulfur_stairs_from_sulfur_stonecutting|}}} || 1
+|-
+| [[Sulfur]] || [[Sulfur Wall]]{{{minecraft:sulfur_wall_from_sulfur_stonecutting|}}} || 1
+|-
+| [[Sulfur Bricks]] || [[Sulfur Brick Slab]]{{{minecraft:sulfur_brick_slab_from_sulfur_bricks_stonecutting|}}} || 2
+|-
+| [[Sulfur Bricks]] || [[Sulfur Brick Stairs]]{{{minecraft:sulfur_brick_stairs_from_sulfur_bricks_stonecutting|}}} || 1
+|-
+| [[Sulfur Bricks]] || [[Sulfur Brick Wall]]{{{minecraft:sulfur_brick_wall_from_sulfur_bricks_stonecutting|}}} || 1
+|-
+| [[Tuff]] || [[Chiseled Tuff]]{{{minecraft:chiseled_tuff_from_tuff_stonecutting|}}} || 1
+|-
+| [[Tuff]] || [[Chiseled Tuff Bricks]]{{{minecraft:chiseled_tuff_bricks_from_tuff_stonecutting|}}} || 1
+|-
+| [[Tuff]] || [[Polished Tuff]]{{{minecraft:polished_tuff_from_tuff_stonecutting|}}} || 1
+|-
+| [[Tuff]] || [[Polished Tuff Slab]]{{{minecraft:polished_tuff_slab_from_tuff_stonecutting|}}} || 2
+|-
+| [[Tuff]] || [[Polished Tuff Stairs]]{{{minecraft:polished_tuff_stairs_from_tuff_stonecutting|}}} || 1
+|-
+| [[Tuff]] || [[Polished Tuff Wall]]{{{minecraft:polished_tuff_wall_from_tuff_stonecutting|}}} || 1
+|-
+| [[Tuff]] || [[Tuff Brick Slab]]{{{minecraft:tuff_brick_slab_from_tuff_stonecutting|}}} || 2
+|-
+| [[Tuff]] || [[Tuff Brick Stairs]]{{{minecraft:tuff_brick_stairs_from_tuff_stonecutting|}}} || 1
+|-
+| [[Tuff]] || [[Tuff Brick Wall]]{{{minecraft:tuff_brick_wall_from_tuff_stonecutting|}}} || 1
+|-
+| [[Tuff]] || [[Tuff Bricks]]{{{minecraft:tuff_bricks_from_tuff_stonecutting|}}} || 1
+|-
+| [[Tuff]] || [[Tuff Slab]]{{{minecraft:tuff_slab_from_tuff_stonecutting|}}} || 2
+|-
+| [[Tuff]] || [[Tuff Stairs]]{{{minecraft:tuff_stairs_from_tuff_stonecutting|}}} || 1
+|-
+| [[Tuff]] || [[Tuff Wall]]{{{minecraft:tuff_wall_from_tuff_stonecutting|}}} || 1
+|-
+| [[Tuff Bricks]] || [[Chiseled Tuff Bricks]]{{{minecraft:chiseled_tuff_bricks_from_tuff_bricks_stonecutting|}}} || 1
+|-
+| [[Tuff Bricks]] || [[Tuff Brick Slab]]{{{minecraft:tuff_brick_slab_from_tuff_bricks_stonecutting|}}} || 2
+|-
+| [[Tuff Bricks]] || [[Tuff Brick Stairs]]{{{minecraft:tuff_brick_stairs_from_tuff_bricks_stonecutting|}}} || 1
+|-
+| [[Tuff Bricks]] || [[Tuff Brick Wall]]{{{minecraft:tuff_brick_wall_from_tuff_bricks_stonecutting|}}} || 1
+|}
+==== Copper ====
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+! Input !! Output !! Count
+|-
+| [[Block of Copper]] || [[Chiseled Copper]]{{{minecraft:chiseled_copper_from_copper_block_stonecutting|}}} || 4
+|-
+| [[Block of Copper]] || [[Copper Grate]]{{{minecraft:copper_grate_from_copper_block_stonecutting|}}} || 4
+|-
+| [[Block of Copper]] || [[Cut Copper]]{{{minecraft:cut_copper_from_copper_block_stonecutting|}}} || 4
+|-
+| [[Block of Copper]] || [[Cut Copper Slab]]{{{minecraft:cut_copper_slab_from_copper_block_stonecutting|}}} || 8
+|-
+| [[Block of Copper]] || [[Cut Copper Stairs]]{{{minecraft:cut_copper_stairs_from_copper_block_stonecutting|}}} || 4
+|-
+| [[Cut Copper]] || [[Chiseled Copper]]{{{minecraft:chiseled_copper_from_cut_copper_stonecutting|}}} || 1
+|-
+| [[Cut Copper]] || [[Cut Copper Slab]]{{{minecraft:cut_copper_slab_from_cut_copper_stonecutting|}}} || 2
+|-
+| [[Cut Copper]] || [[Cut Copper Stairs]]{{{minecraft:cut_copper_stairs_from_cut_copper_stonecutting|}}} || 1
+|-
+| [[Exposed Copper]] || [[Exposed Chiseled Copper]]{{{minecraft:exposed_chiseled_copper_from_exposed_copper_stonecutting|}}} || 4
+|-
+| [[Exposed Copper]] || [[Exposed Copper Grate]]{{{minecraft:exposed_copper_grate_from_exposed_copper_stonecutting|}}} || 4
+|-
+| [[Exposed Copper]] || [[Exposed Cut Copper]]{{{minecraft:exposed_cut_copper_from_exposed_copper_stonecutting|}}} || 4
+|-
+| [[Exposed Copper]] || [[Exposed Cut Copper Slab]]{{{minecraft:exposed_cut_copper_slab_from_exposed_copper_stonecutting|}}} || 8
+|-
+| [[Exposed Copper]] || [[Exposed Cut Copper Stairs]]{{{minecraft:exposed_cut_copper_stairs_from_exposed_copper_stonecutting|}}} || 4
+|-
+| [[Exposed Cut Copper]] || [[Exposed Chiseled Copper]]{{{minecraft:exposed_chiseled_copper_from_exposed_cut_copper_stonecutting|}}} || 1
+|-
+| [[Exposed Cut Copper]] || [[Exposed Cut Copper Slab]]{{{minecraft:exposed_cut_copper_slab_from_exposed_cut_copper_stonecutting|}}} || 2
+|-
+| [[Exposed Cut Copper]] || [[Exposed Cut Copper Stairs]]{{{minecraft:exposed_cut_copper_stairs_from_exposed_cut_copper_stonecutting|}}} || 1
+|-
+| [[Oxidized Copper]] || [[Oxidized Chiseled Copper]]{{{minecraft:oxidized_chiseled_copper_from_oxidized_copper_stonecutting|}}} || 4
+|-
+| [[Oxidized Copper]] || [[Oxidized Copper Grate]]{{{minecraft:oxidized_copper_grate_from_oxidized_copper_stonecutting|}}} || 4
+|-
+| [[Oxidized Copper]] || [[Oxidized Cut Copper]]{{{minecraft:oxidized_cut_copper_from_oxidized_copper_stonecutting|}}} || 4
+|-
+| [[Oxidized Copper]] || [[Oxidized Cut Copper Slab]]{{{minecraft:oxidized_cut_copper_slab_from_oxidized_copper_stonecutting|}}} || 8
+|-
+| [[Oxidized Copper]] || [[Oxidized Cut Copper Stairs]]{{{minecraft:oxidized_cut_copper_stairs_from_oxidized_copper_stonecutting|}}} || 4
+|-
+| [[Oxidized Cut Copper]] || [[Oxidized Chiseled Copper]]{{{minecraft:oxidized_chiseled_copper_from_oxidized_cut_copper_stonecutting|}}} || 1
+|-
+| [[Oxidized Cut Copper]] || [[Oxidized Cut Copper Slab]]{{{minecraft:oxidized_cut_copper_slab_from_oxidized_cut_copper_stonecutting|}}} || 2
+|-
+| [[Oxidized Cut Copper]] || [[Oxidized Cut Copper Stairs]]{{{minecraft:oxidized_cut_copper_stairs_from_oxidized_cut_copper_stonecutting|}}} || 1
+|-
+| [[Waxed Block of Copper]] || [[Waxed Chiseled Copper]]{{{minecraft:waxed_chiseled_copper_from_waxed_copper_block_stonecutting|}}} || 4
+|-
+| [[Waxed Block of Copper]] || [[Waxed Copper Grate]]{{{minecraft:waxed_copper_grate_from_waxed_copper_block_stonecutting|}}} || 4
+|-
+| [[Waxed Block of Copper]] || [[Waxed Cut Copper]]{{{minecraft:waxed_cut_copper_from_waxed_copper_block_stonecutting|}}} || 4
+|-
+| [[Waxed Block of Copper]] || [[Waxed Cut Copper Slab]]{{{minecraft:waxed_cut_copper_slab_from_waxed_copper_block_stonecutting|}}} || 8
+|-
+| [[Waxed Block of Copper]] || [[Waxed Cut Copper Stairs]]{{{minecraft:waxed_cut_copper_stairs_from_waxed_copper_block_stonecutting|}}} || 4
+|-
+| [[Waxed Cut Copper]] || [[Waxed Chiseled Copper]]{{{minecraft:waxed_chiseled_copper_from_waxed_cut_copper_stonecutting|}}} || 1
+|-
+| [[Waxed Cut Copper]] || [[Waxed Cut Copper Slab]]{{{minecraft:waxed_cut_copper_slab_from_waxed_cut_copper_stonecutting|}}} || 2
+|-
+| [[Waxed Cut Copper]] || [[Waxed Cut Copper Stairs]]{{{minecraft:waxed_cut_copper_stairs_from_waxed_cut_copper_stonecutting|}}} || 1
+|-
+| [[Waxed Exposed Copper]] || [[Waxed Exposed Chiseled Copper]]{{{minecraft:waxed_exposed_chiseled_copper_from_waxed_exposed_copper_stonecutting|}}} || 4
+|-
+| [[Waxed Exposed Copper]] || [[Waxed Exposed Copper Grate]]{{{minecraft:waxed_exposed_copper_grate_from_waxed_exposed_copper_stonecutting|}}} || 4
+|-
+| [[Waxed Exposed Copper]] || [[Waxed Exposed Cut Copper]]{{{minecraft:waxed_exposed_cut_copper_from_waxed_exposed_copper_stonecutting|}}} || 4
+|-
+| [[Waxed Exposed Copper]] || [[Waxed Exposed Cut Copper Slab]]{{{minecraft:waxed_exposed_cut_copper_slab_from_waxed_exposed_copper_stonecutting|}}} || 8
+|-
+| [[Waxed Exposed Copper]] || [[Waxed Exposed Cut Copper Stairs]]{{{minecraft:waxed_exposed_cut_copper_stairs_from_waxed_exposed_copper_stonecutting|}}} || 4
+|-
+| [[Waxed Exposed Cut Copper]] || [[Waxed Exposed Chiseled Copper]]{{{minecraft:waxed_exposed_chiseled_copper_from_waxed_exposed_cut_copper_stonecutting|}}} || 1
+|-
+| [[Waxed Exposed Cut Copper]] || [[Waxed Exposed Cut Copper Slab]]{{{minecraft:waxed_exposed_cut_copper_slab_from_waxed_exposed_cut_copper_stonecutting|}}} || 2
+|-
+| [[Waxed Exposed Cut Copper]] || [[Waxed Exposed Cut Copper Stairs]]{{{minecraft:waxed_exposed_cut_copper_stairs_from_waxed_exposed_cut_copper_stonecutting|}}} || 1
+|-
+| [[Waxed Oxidized Copper]] || [[Waxed Oxidized Chiseled Copper]]{{{minecraft:waxed_oxidized_chiseled_copper_from_waxed_oxidized_copper_stonecutting|}}} || 4
+|-
+| [[Waxed Oxidized Copper]] || [[Waxed Oxidized Copper Grate]]{{{minecraft:waxed_oxidized_copper_grate_from_waxed_oxidized_copper_stonecutting|}}} || 4
+|-
+| [[Waxed Oxidized Copper]] || [[Waxed Oxidized Cut Copper]]{{{minecraft:waxed_oxidized_cut_copper_from_waxed_oxidized_copper_stonecutting|}}} || 4
+|-
+| [[Waxed Oxidized Copper]] || [[Waxed Oxidized Cut Copper Slab]]{{{minecraft:waxed_oxidized_cut_copper_slab_from_waxed_oxidized_copper_stonecutting|}}} || 8
+|-
+| [[Waxed Oxidized Copper]] || [[Waxed Oxidized Cut Copper Stairs]]{{{minecraft:waxed_oxidized_cut_copper_stairs_from_waxed_oxidized_copper_stonecutting|}}} || 4
+|-
+| [[Waxed Oxidized Cut Copper]] || [[Waxed Oxidized Chiseled Copper]]{{{minecraft:waxed_oxidized_chiseled_copper_from_waxed_oxidized_cut_copper_stonecutting|}}} || 1
+|-
+| [[Waxed Oxidized Cut Copper]] || [[Waxed Oxidized Cut Copper Slab]]{{{minecraft:waxed_oxidized_cut_copper_slab_from_waxed_oxidized_cut_copper_stonecutting|}}} || 2
+|-
+| [[Waxed Oxidized Cut Copper]] || [[Waxed Oxidized Cut Copper Stairs]]{{{minecraft:waxed_oxidized_cut_copper_stairs_from_waxed_oxidized_cut_copper_stonecutting|}}} || 1
+|-
+| [[Waxed Weathered Copper]] || [[Waxed Weathered Chiseled Copper]]{{{minecraft:waxed_weathered_chiseled_copper_from_waxed_weathered_copper_stonecutting|}}} || 4
+|-
+| [[Waxed Weathered Copper]] || [[Waxed Weathered Copper Grate]]{{{minecraft:waxed_weathered_copper_grate_from_waxed_weathered_copper_stonecutting|}}} || 4
+|-
+| [[Waxed Weathered Copper]] || [[Waxed Weathered Cut Copper]]{{{minecraft:waxed_weathered_cut_copper_from_waxed_weathered_copper_stonecutting|}}} || 4
+|-
+| [[Waxed Weathered Copper]] || [[Waxed Weathered Cut Copper Slab]]{{{minecraft:waxed_weathered_cut_copper_slab_from_waxed_weathered_copper_stonecutting|}}} || 8
+|-
+| [[Waxed Weathered Copper]] || [[Waxed Weathered Cut Copper Stairs]]{{{minecraft:waxed_weathered_cut_copper_stairs_from_waxed_weathered_copper_stonecutting|}}} || 4
+|-
+| [[Waxed Weathered Cut Copper]] || [[Waxed Weathered Chiseled Copper]]{{{minecraft:waxed_weathered_chiseled_copper_from_waxed_weathered_cut_copper_stonecutting|}}} || 1
+|-
+| [[Waxed Weathered Cut Copper]] || [[Waxed Weathered Cut Copper Slab]]{{{minecraft:waxed_weathered_cut_copper_slab_from_waxed_weathered_cut_copper_stonecutting|}}} || 2
+|-
+| [[Waxed Weathered Cut Copper]] || [[Waxed Weathered Cut Copper Stairs]]{{{minecraft:waxed_weathered_cut_copper_stairs_from_waxed_weathered_cut_copper_stonecutting|}}} || 1
+|-
+| [[Weathered Copper]] || [[Weathered Chiseled Copper]]{{{minecraft:weathered_chiseled_copper_from_weathered_copper_stonecutting|}}} || 4
+|-
+| [[Weathered Copper]] || [[Weathered Copper Grate]]{{{minecraft:weathered_copper_grate_from_weathered_copper_stonecutting|}}} || 4
+|-
+| [[Weathered Copper]] || [[Weathered Cut Copper]]{{{minecraft:weathered_cut_copper_from_weathered_copper_stonecutting|}}} || 4
+|-
+| [[Weathered Copper]] || [[Weathered Cut Copper Slab]]{{{minecraft:weathered_cut_copper_slab_from_weathered_copper_stonecutting|}}} || 8
+|-
+| [[Weathered Copper]] || [[Weathered Cut Copper Stairs]]{{{minecraft:weathered_cut_copper_stairs_from_weathered_copper_stonecutting|}}} || 4
+|-
+| [[Weathered Cut Copper]] || [[Weathered Chiseled Copper]]{{{minecraft:weathered_chiseled_copper_from_weathered_cut_copper_stonecutting|}}} || 1
+|-
+| [[Weathered Cut Copper]] || [[Weathered Cut Copper Slab]]{{{minecraft:weathered_cut_copper_slab_from_weathered_cut_copper_stonecutting|}}} || 2
+|-
+| [[Weathered Cut Copper]] || [[Weathered Cut Copper Stairs]]{{{minecraft:weathered_cut_copper_stairs_from_weathered_cut_copper_stonecutting|}}} || 1
+|}</includeonly><noinclude>Every stonecutter recipe kept from vanilla, grouped for the [[Stonecutter]] article. A note for a recipe goes in a parameter named by its ID. Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>
