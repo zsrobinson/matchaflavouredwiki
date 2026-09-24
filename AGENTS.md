@@ -133,7 +133,8 @@ the swap mid-way.
 - **Renders** (structures, mobs, armor): every one is an entry in `tools/renders.json`, keyed by its
   file name. `python3 tools/render.py` draws the ones whose inputs changed into `wiki/renders/`, which
   is committed (CI only checks it's current), and `images.py` uploads them with the icons. Files are
-  twice an entry's `width` (`ZOOM`): `images.py` uploads a half-size copy for the pages, which have no
+  several times an entry's `width` (`zoom()` in `render.py`: 4 for a whole structure, 3 for a piece, 2 for
+  mobs and armor). `images.py` uploads a copy at the entry's width for the pages, which have no
   thumbnailer (no ImageMagick or GD), and `build.sh` puts the file itself in `/images/full/` for the
   image viewer. Pages set the size they show a render at. To add one,
   add an entry and run the tool. The drawing code is `tools/render/` (deepslate for blocks, three.js

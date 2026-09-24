@@ -1190,23 +1190,36 @@ def draw_icon(entry):
     return 'ok', UNSUPPORTED  # special renderers this worker could not draw, for main() to report
 
 
-RENDER_ZOOM = 2  # tools/render.py keeps renders at twice the size pages show them at (its ZOOM)
+
+
+def render_zoom():
+    """tools/render.py's zoom(): each render's file size as a multiple of the size pages show it at."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('render_tool', os.path.join(ROOT, 'tools', 'render.py'))
+    tool = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(tool)
+    entries = json.load(open(os.path.join(ROOT, 'tools', 'renders.json'), encoding='utf-8'))['renders']
+    return {name + '.png': tool.zoom(e) for name, e in entries.items()}
+
+
 FULL = os.path.join(ROOT, 'build', 'images_full')  # tools/build.sh puts these in the wiki's /images/full/
 
 
 def copy_renders():
     """The committed renders and diagrams go up with the icons; tools/build.sh uploads the ones that
-    changed. Pages get each render at half its size, as they show it; the file itself goes to
-    /images/full/, which only the image viewer (Gadget-mfwZoom.js) loads. Diagrams are SVG and zoom as
-    they are."""
+    changed. Pages get each render at the size they show it (the file shrunk by render.py's zoom()); the
+    file itself goes to /images/full/, which only the image viewer (Gadget-mfwZoom.js) loads. Diagrams
+    are SVG and zoom as they are."""
     count = 0
     shutil.rmtree(FULL, ignore_errors=True)
     os.makedirs(FULL)
     src = os.path.join(ROOT, 'wiki', 'renders')
+    zooms = render_zoom()
     for f in sorted(f for f in os.listdir(src) if f.endswith('.png')):
+        z = zooms[f]
         shutil.copyfile(os.path.join(src, f), os.path.join(FULL, f.replace(' ', '_')))
         im = Image.open(os.path.join(src, f))
-        im = im.resize((max(1, round(im.width / RENDER_ZOOM)), max(1, round(im.height / RENDER_ZOOM))), Image.LANCZOS)
+        im = im.resize((max(1, round(im.width / z)), max(1, round(im.height / z))), Image.LANCZOS)
         im.save(os.path.join(OUT, f), optimize=True)  # the same bytes each run, so build.sh uploads only real changes
         count += 1
     src = os.path.join(ROOT, 'wiki', 'diagrams')
