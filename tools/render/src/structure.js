@@ -7,7 +7,8 @@ import { assemble, rotPos, rotProps } from './jigsaw.js'
 
 const getJson = async u => { const r = await fetch(u); if (!r.ok) throw new Error('missing ' + u); return r.json() }
 const nsid = s => (s.includes(':') ? s : 'minecraft:' + s)
-const AIR = /:(air|cave_air|void_air|structure_void)$/
+// never placed: air, structure voids, and the structure blocks templates use as data markers
+const AIR = /:(air|cave_air|void_air|structure_void|structure_block)$/
 const FLAT_HEIGHT = 64  // renders have no terrain: the ground is flat, its top block at y=63
 
 // Blocks drawn see-through or cut out (the models don't say; the game hard-codes it).

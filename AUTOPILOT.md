@@ -89,6 +89,14 @@ Read `wiki/STYLE.md`, `wiki/AGENT_BRIEF.md` and `wiki/PAGES.md` first; they are 
 - New progression steps (new tutorial advancements, new tiers) are reflected in "Guide for new players"
   and "Progression".
 - New visible advancements get an anchor and a redirect, as the existing ones have (see "Advancements").
+- Pictures: `python3 tools/render.py --audit` must pass (the Check workflow fails otherwise). It lists
+  every page and pack template that the rules in `wiki/STYLE.md` ("Pictures") say should have a
+  picture and has neither one nor a recorded reason. For each gap, add the render (an entry in
+  `tools/renders.json`, then show it on the page) when the renderer can already draw it: a structure
+  template, or a mob on a model that exists in `tools/render/src/models.js`. When it can't (a mob that
+  needs a new model), add the page to `skip` with the reason, as the existing ones read. Don't write new
+  renderer code in a routine update. List every new skip in the pull request description so a
+  person sees it. Remove a skip once its gap is filled; the audit reports stale ones.
 
 ## Step 5: record, commit, pull request
 ```sh

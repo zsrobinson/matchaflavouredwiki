@@ -9,14 +9,18 @@ versions, or the renderer's code. The hashes are kept in wiki/renders/inputs.jso
   python3 tools/render.py Abbey ...    only renders whose name contains one of the words
   python3 tools/render.py --force      redraw everything
   python3 tools/render.py --check      list out-of-date, missing and unused renders; exit 1 if any
+  python3 tools/render.py --audit      list pages and pack templates that should have a picture and
+                                       don't (the rules in wiki/STYLE.md, "Pictures"); exit 1 if any
 
 Needs Node and a Chromium (the first run installs tools/render's npm packages; set MFW_CHROMIUM
 to a Chromium binary if Playwright's browsers aren't installed). The drawing is done by
 tools/render/render.mjs in WebGL; see tools/render/src/ for the structure, jigsaw and entity code.
 """
+import glob
 import hashlib
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -73,8 +77,87 @@ def finish(raw, dest, width):
     im.save(dest, optimize=True)
 
 
+# ---- coverage audit: which pages and templates should have a picture (wiki/STYLE.md, "Pictures")
+
+MOB = re.compile(r'\bmob\b|\[\[Villager\]\] profession', re.I)
+STRUCTURE = re.compile(r'structure', re.I)
+INFOBOX_TYPE = re.compile(r'\{\{Infobox\b[^}]*?\|\s*type\s*=\s*([^\n|]*)', re.S)
+INFOBOX_IMAGE = re.compile(r'\{\{Infobox\b[^}]*?\|\s*image\s*=\s*[^\s|}]', re.S)
+
+
+def pages():
+    """Title -> text for every article, the hand-written page winning over the generated one."""
+    out = {}
+    for d in ('generated', 'pages'):
+        for f in glob.glob(os.path.join(ROOT, 'wiki', d, 'Main', '*.wiki')):
+            out[os.path.basename(f)[:-5].replace('%2F', '/')] = open(f, encoding='utf-8').read()
+    return out
+
+
+def pack_templates():
+    base = os.path.join(ROOT, 'source', 'matcha-flavoured', 'MF_datapack', 'data')
+    ids = []
+    for f in glob.glob(os.path.join(base, '*', 'structure', '**', '*.nbt'), recursive=True):
+        ns, _, rel = os.path.relpath(f, base).partition(os.sep + 'structure' + os.sep)
+        ids.append(f'{ns}:{rel[:-4]}'.replace(os.sep, '/'))
+    return sorted(ids)
+
+
+def audit():
+    """Everything the picture rules ask for that is neither rendered nor skipped with a reason."""
+    manifest = json.load(open(MANIFEST, encoding='utf-8'))
+    renders, skip = manifest['renders'], manifest.get('skip', {})
+    text = pages()
+    used = {n for n in renders if any(n + '.png' in t for t in text.values())}
+    gaps = []
+    for title, t in sorted(text.items()):
+        m = INFOBOX_TYPE.search(t)
+        kind = m and m.group(1)
+        if kind and (MOB.search(kind) or STRUCTURE.search(kind)) and not INFOBOX_IMAGE.search(t):
+            gaps.append((title, 'mob' if MOB.search(kind) else 'structure', 'no picture in the infobox'))
+        if re.search(r'(equipment|armor)$', title) and '=== Armor ===' in t and not re.search(r'armor render\.png', t):
+            gaps.append((title, 'armor set', 'no armor render in === Armor ==='))
+    shown = set()
+    for n in used:
+        tpl = renders[n].get('template')
+        shown.update(tpl if isinstance(tpl, list) else [tpl] if tpl else [])
+    templates = pack_templates()
+    for tpl in templates:
+        if tpl not in shown:
+            gaps.append(('template:' + tpl, 'structure piece', 'not shown in any gallery'))
+    todo = [g for g in gaps if g[0] not in skip]
+    unused = sorted(set(renders) - used)
+    stale_skips = sorted(k for k in skip if k not in {g[0] for g in gaps})
+    return todo, unused, stale_skips, skip, templates
+
+
+def print_audit():
+    todo, unused, stale_skips, skip, templates = audit()
+    for key, kind, why in todo:
+        print(f'needs a picture: {key} ({kind}: {why})')
+    for n in unused:
+        print(f'unused render: {n} (no page shows it; remove it from tools/renders.json or use it)')
+    for k in stale_skips:
+        print(f'stale skip: {k} (it has a picture now, or no longer exists; remove it from "skip")')
+    by_reason = {}
+    for k, why in skip.items():
+        by_reason.setdefault(why, []).append(k)
+    print(f'{len(skip)} skipped, by reason:')
+    for why, keys in sorted(by_reason.items(), key=lambda kv: -len(kv[1])):
+        print(f'  {len(keys):3}  {why}')
+    if not templates:
+        print('(source/ is missing: run tools/fetch_sources.sh to audit the structure templates too)')
+    if todo or unused or stale_skips:
+        print('For each: add a render (tools/renders.json) and show it on the page, or add the key to '
+              '"skip" in tools/renders.json with the reason. See wiki/STYLE.md, "Pictures".')
+        sys.exit(1)
+    print('picture coverage complete')
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
+    if '--audit' in sys.argv:
+        return print_audit()
     renders, old, want, stale, unused = status()
     if '--check' in sys.argv:
         for n in stale:

@@ -52,6 +52,12 @@ const readJson = f => JSON.parse(fs.readFileSync(f, 'utf8'))
 const blockstates = collect('blockstates', '.json')
 const models = collect('models', '.json', r => r.startsWith('block/'))
 const atlasTextures = collect('textures', '.png', r => r.startsWith('block/') || ENTITY_DIRS.some(d => r.startsWith(`entity/${d}/`)))
+// Minecraft 26 moved sign textures to block/<wood>_sign and block/<wood>_hanging_sign; deepslate still
+// asks for entity/signs/<wood> and entity/signs/hanging/<wood>
+for (const [id, f] of Object.entries(atlasTextures)) {
+  const m = id.match(/^(\w+):block\/(\w+?)_(hanging_)?sign$/)
+  if (m) atlasTextures[`${m[1]}:entity/signs/${m[3] ? 'hanging/' : ''}${m[2]}`] ??= f
+}
 
 // template location -> the processors of the first pool element that places it
 const poolProcessors = {}
@@ -83,7 +89,7 @@ function serve(p) {
   let f, type = 'application/json'
   if (p.startsWith('/tex/')) {  // any texture by id, pack first
     const [ns, name] = idPath(p.slice(5)); type = 'image/png'
-    f = firstExisting([PACK, VANILLA].map(r => `${r}/${ns}/textures/${name}.png`))
+    f = atlasTextures[`${ns}:${name}`] ?? firstExisting([PACK, VANILLA].map(r => `${r}/${ns}/textures/${name}.png`))
   } else if (p.startsWith('/equip/')) {
     const [ns, name] = idPath(p.slice(7))
     f = firstExisting([PACK, VANILLA].map(r => `${r}/${ns}/equipment/${name}.json`))

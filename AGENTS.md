@@ -98,7 +98,8 @@ the swap mid-way.
   shows a slot's tooltip on the first tap and follows its link on the second. Legacy Vector sends phones
   `width=1120`; only the static export rewrites that, so preview phones on the export (or a narrow desktop
   window, which ignores the viewport tag). Keep desktop (over 720px) pixel-identical: scope every mobile
-  rule to the media query.
+  rule to the media query. Wide centred thumbnails (the 760px structure views) shrink to the screen:
+  MediaWiki lays a thumb out as a table, which ignores `max-width`, so the phone rules make them blocks.
 - **Icons:**
   - Item icons are `File:<Item Name>.png`, upscaled 8× nearest-neighbour.
   - Blocks are rendered as true isometric cubes (horizontal step = cos 30°); don't go back to 2:1.
@@ -109,6 +110,11 @@ the swap mid-way.
   is committed (CI only checks it's current), and `images.py` uploads them with the icons. To add one,
   add an entry and run the tool. The drawing code is `tools/render/` (deepslate for blocks, three.js
   for mobs, in headless Chromium).
+  - Which pages get one is decided by the rules in `wiki/STYLE.md` ("Pictures"), not case by case:
+    structures, mobs and villager professions, and armor sets. `render.py --audit` (a failing check
+    in CI) lists every page or pack template the rules cover that has no picture; each gap gets a
+    render or a `skip` entry with the reason in `tools/renders.json`. The skips are the backlog: most
+    wait on a mob model (one villager model would cover 16 pages).
   - Placement follows minecraft.wiki: `<Structure> isometric view` or `<Mob> render` in the infobox,
     pieces in a `<gallery>` under the section that describes them, and armor sets without a body.
   - Structure templates are not what players see: the pool's processors must run (the Abbey is built
