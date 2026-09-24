@@ -4,7 +4,7 @@
 |-
 | [[Quartz]]
 | [[Block of Quartz]] or [[Quartz Bricks]] or [[Quartz Pillar]] or [[Chiseled Quartz Block]] or [[Smooth Quartz Block]]
-| {{Crafting|A1=Block of Quartz;Quartz Bricks;Quartz Pillar;Chiseled Quartz Block;Smooth Quartz Block|Output=Quartz,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/quartz_from_quartz_blocks.json|matcha:crafting/quartz_from_quartz_blocks}}</small>
+| {{Crafting|A1=Block of Quartz;Quartz Bricks;Quartz Pillar;Chiseled Quartz Block;Smooth Quartz Block|Output=Quartz,4|shapeless=1}}
 |}
 '''Blasting'''
 {| class="wikitable recipe-table"
@@ -12,6 +12,6 @@
 |-
 | [[Quartz]]
 | [[Sand]]
-| {{Cooking|station=Blast Furnace|Input=Sand|Output=Quartz|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/quartz.json|matcha:blast/quartz}}</small>
+| {{Cooking|station=Blast Furnace|Input=Sand|Output=Quartz|time=5|note=5 s, 0.1 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

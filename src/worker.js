@@ -58,13 +58,25 @@ export default {
     // so ":" becomes "%3A"), which loops with the ":" URLs above: hand it that form instead
     const asset = new URL(url);
     asset.pathname = url.pathname.split("/").map(encodeSegment).join("/");
+    // ?v=<content hash> (tools/fingerprint.py) names one version of a file: the file itself is
+    // looked up without it, and browsers may keep it for good, since a new version is a new URL
+    const versioned = url.searchParams.has("v");
+    if (versioned) {
+      asset.search = "";
+    }
     const response = await env.ASSETS.fetch(new Request(asset, request));
-    if (!preview) {
+    const immutable = versioned && response.ok;
+    if (!preview && !immutable) {
       return response;
     }
-    // PR previews and the workers.dev address are copies of the site: keep them out of search
     const headers = new Headers(response.headers);
-    headers.set("X-Robots-Tag", "noindex");
+    if (immutable) {
+      headers.set("Cache-Control", "public, max-age=31536000, immutable");
+    }
+    // PR previews and the workers.dev address are copies of the site: keep them out of search
+    if (preview) {
+      headers.set("X-Robots-Tag", "noindex");
+    }
     return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
   },
 };

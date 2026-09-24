@@ -5,35 +5,35 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Abandoned mineshaft <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_mineshaft.json|chests/abandoned_mineshaft}})</small> || 1 || 25.0% || 
+| Abandoned mineshaft || 1 || 25.0% || 
 |-
-| Abbey / barracks <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/barracks.json|chests/abbey/barracks}})</small> || 1 || 33.3% || 
+| Abbey / barracks || 1 || 33.3% || 
 |-
-| Abbey / tower <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/tower.json|chests/abbey/tower}})</small> || 1 || 50.0% || 
+| Abbey / tower || 1 || 50.0% || 
 |-
-| Ancient city <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/ancient_city.json|chests/ancient_city}})</small> || 1 || 18.2% || 
+| Ancient city || 1 || 18.2% || 
 |-
-| Simple dungeon <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json|chests/simple_dungeon}})</small> || 1 || 25.0% || 
+| Simple dungeon || 1 || 25.0% || 
 |-
-| Stronghold corridor <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_corridor.json|chests/stronghold_corridor}})</small> || 1 || 50.0% || 
+| Stronghold corridor || 1 || 50.0% || 
 |-
-| Trial chambers / reward <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward.json|chests/trial_chambers/reward}})</small> || 1 || 5.56% || 
+| Trial chambers / reward || 1 || 5.56% || 
 |}
 
 '''Fishing'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 0.164% || open water
+| Fishing || 1 || 0.164% || open water
 |}
 
 '''Trading'''
 {| class="wikitable trade-table"
 ! Villager !! Level !! Offer !! Price !! Quantity
 |-
-| [[Archaeologist]] || Master || {{Trade|Clay Fetish||Crystal Heart}} || {{ItemLink|Clay Fetish}} || 1
+| [[Archaeologist]] || Master || {{Trade|Clay Fetish (Rejoice)||Crystal Heart}} || {{ItemLink|Clay Fetish|Clay Fetish (Rejoice)}} || 1
 |-
-| [[Archaeologist]] || Master || {{Trade|Clay Fetish||Crystal Heart}} || {{ItemLink|Clay Fetish}} || 1
+| [[Archaeologist]] || Master || {{Trade|Clay Fetish (Lament)||Crystal Heart}} || {{ItemLink|Clay Fetish|Clay Fetish (Lament)}} || 1
 |-
 | [[Mouthpiece]] || Novice || {{Trade|Paradise Lost||Crystal Heart}} || {{ItemLink|Paradise Lost}} || 1
 |-

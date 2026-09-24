@@ -3,15 +3,15 @@
 |-
 | [[Chorus Mochi]]
 | [[Popped Chorus Fruit]] +<br />[[Snowball]] +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Dough]]
-| {{Crafting|A1=Popped Chorus Fruit|B1=Snowball|C1=Sugar|A2=Milk Bottle|B2=Dough|Output=Chorus Mochi,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/chorus_mochi.json|matcha:food/crafting/chorus_mochi}}</small>
+| {{Crafting|A1=Popped Chorus Fruit|B1=Snowball|C1=Sugar|A2=Milk Bottle|B2=Dough|Output=Chorus Mochi,4|shapeless=1}}
 |-
 | [[Ice Cream]]
 | [[Snowball]] +<br />[[Milk Bottle]] +<br />[[Sugar]] +<br />[[Blue Orchid]] +<br />[[Bread]]
-| {{Crafting|A1=Snowball|B1=Milk Bottle|C1=Sugar|A2=Blue Orchid|B2=Bread|Output=Ice Cream|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/ice_cream.json|matcha:food/crafting/ice_cream}}</small>
+| {{Crafting|A1=Snowball|B1=Milk Bottle|C1=Sugar|A2=Blue Orchid|B2=Bread|Output=Ice Cream|shapeless=1}}
 |-
 | [[Melon Sorbet]]
 | [[Melon Slice]] +<br />[[Snowball]] +<br />[[Sugar]] +<br />[[Glass Bottle]]
-| {{Crafting|A1=Melon Slice|B1=Snowball|C1=Sugar|A2=Glass Bottle|Output=Melon Sorbet|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/melon_sorbet.json|matcha:food/crafting/melon_sorbet}}</small>
+| {{Crafting|A1=Melon Slice|B1=Snowball|C1=Sugar|A2=Glass Bottle|Output=Melon Sorbet|shapeless=1}}
 |-
 | [[Snow Block]] <small>(vanilla recipe)</small>
 | 4 × [[Snowball]]

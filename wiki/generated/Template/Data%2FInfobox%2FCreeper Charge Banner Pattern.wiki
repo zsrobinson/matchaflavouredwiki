@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Creeper Charge Banner Pattern}}
+|image={{#if:{{{image|}}}|{{{image}}}|Creeper Charge Banner Pattern.png}}
+|imagesize=160px
+|invimage=Creeper Charge Banner Pattern
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Uncommon
+|stackable=No
+|id=<code>minecraft:creeper_banner_pattern</code>
+|source={{Source|vanilla:recipe/creeper_banner_pattern.json|creeper_banner_pattern.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

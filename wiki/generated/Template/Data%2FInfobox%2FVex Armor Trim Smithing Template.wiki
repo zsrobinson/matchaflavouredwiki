@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Vex Armor Trim Smithing Template}}
+|image={{#if:{{{image|}}}|{{{image}}}|Vex Armor Trim Smithing Template.png}}
+|imagesize=160px
+|invimage=Vex Armor Trim Smithing Template
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Rare
+|stackable=Yes (64)
+|id=<code>minecraft:vex_armor_trim_smithing_template</code>
+|source={{Source|vanilla:recipe/vex_armor_trim_smithing_template.json|vex_armor_trim_smithing_template.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

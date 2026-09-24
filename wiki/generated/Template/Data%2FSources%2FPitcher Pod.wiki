@@ -5,13 +5,13 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Sniffer digging <small>({{Source|vanilla:loot_table/gameplay/sniffer_digging.json|gameplay/sniffer_digging}})</small> || 1 || 50.0% || 
+| Sniffer digging || 1 || 50.0% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Pitcher crop <small>({{Source|vanilla:loot_table/blocks/pitcher_crop.json|blocks/pitcher_crop}})</small> || 1 || 100% || block state property
+| Pitcher crop || 1 || 100% || block state property
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -3,10 +3,10 @@
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Shipwreck supply <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_supply.json|chests/shipwreck_supply}})</small> || 1 || 44.1% || 
+| Shipwreck supply || Sturdy Leather Gambeson || 1 || 44.1% || 
 |-
-| Village / village tannery <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_tannery.json|chests/village/village_tannery}})</small> || 1 || 32.4% || 
+| Village / village tannery || Sturdy Leather Gambeson (enchanted) || 1 || 32.4% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

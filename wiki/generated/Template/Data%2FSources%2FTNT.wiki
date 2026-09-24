@@ -5,20 +5,20 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Shipwreck supply <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_supply.json|chests/shipwreck_supply}})</small> || 1–2 || 14.1% || 
+| Shipwreck supply || 1–2 || 14.1% || 
 |}
 
 '''Archaeology'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Desert pyramid <small>({{Source|vanilla:loot_table/archaeology/desert_pyramid.json|archaeology/desert_pyramid}})</small> || 1 || 12.5% || 
+| Desert pyramid || 1 || 12.5% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Tnt <small>({{Source|vanilla:loot_table/blocks/tnt.json|blocks/tnt}})</small> || 1 || 100% || block state property
+| Tnt || 1 || 100% || block state property
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

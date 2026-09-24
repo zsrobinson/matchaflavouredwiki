@@ -1,0 +1,17 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Spire Armor Trim Smithing Template}}
+|image={{#if:{{{image|}}}|{{{image}}}|Spire Armor Trim Smithing Template.png}}
+|imagesize=160px
+|invimage=Spire Armor Trim Smithing Template
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Rare
+|stackable=Yes (64)
+|id=<code>minecraft:spire_armor_trim_smithing_template</code>
+|source={{Source|vanilla:recipe/spire_armor_trim_smithing_template.json|spire_armor_trim_smithing_template.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -4,7 +4,7 @@
 |-
 | [[Mud Bricks]]
 | 2 × [[Mud Brick Slab]]
-| {{Crafting|A1=Mud Brick Slab|B1=Mud Brick Slab|Output=Mud Bricks|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/mud_bricks_from_mud_brick_slabs.json|matcha:crafting/mud_bricks_from_mud_brick_slabs}}</small>
+| {{Crafting|A1=Mud Brick Slab|B1=Mud Brick Slab|Output=Mud Bricks|shapeless=1}}
 |-
 | [[Mud Bricks]] <small>(vanilla recipe)</small>
 | 4 × [[Packed Mud]]
@@ -16,6 +16,6 @@
 |-
 | [[Mud Bricks]]
 | [[Packed Mud]]
-| {{Stonecutter|Input=Packed Mud|Output=Mud Bricks}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/mud_bricks_from_stonecutting_packed_mud.json|matcha:stonecutting/mud_bricks_from_stonecutting_packed_mud}}</small>
+| {{Stonecutter|Input=Packed Mud|Output=Mud Bricks}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

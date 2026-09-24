@@ -3,15 +3,15 @@
 |-
 | [[Quartz]]
 | [[Block of Quartz]] or [[Quartz Bricks]] or [[Quartz Pillar]] or [[Chiseled Quartz Block]] or [[Smooth Quartz Block]]
-| {{Crafting|A1=Block of Quartz;Quartz Bricks;Quartz Pillar;Chiseled Quartz Block;Smooth Quartz Block|Output=Quartz,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/quartz_from_quartz_blocks.json|matcha:crafting/quartz_from_quartz_blocks}}</small>
+| {{Crafting|A1=Block of Quartz;Quartz Bricks;Quartz Pillar;Chiseled Quartz Block;Smooth Quartz Block|Output=Quartz,4|shapeless=1}}
 |-
-| [[Smithing Trim Color]]
+| [[Smithing Trim Color|Smithing Trim Color (Quartz Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Quartz]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Quartz|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_quartz.json|matcha:crafting/trim_colour_quartz}}</small>
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Quartz|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Quartz Material)}}
 |-
 | [[Smooth Quartz Block]]
 | [[Block of Quartz]]
-| {{Cooking|station=Mud Kiln|Input=Block of Quartz|Output=Smooth Quartz Block|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/smooth_quartz_from_smoking_quartz_block.json|matcha:kiln/smooth_quartz_from_smoking_quartz_block}}</small>
+| {{Cooking|station=Mud Kiln|Input=Block of Quartz|Output=Smooth Quartz Block|time=5|note=5 s, 0.1 XP}}
 |-
 | [[Chiseled Quartz Block]] <small>(vanilla recipe)</small>
 | [[Block of Quartz]]

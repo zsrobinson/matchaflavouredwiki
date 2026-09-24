@@ -4,7 +4,7 @@
 |-
 | [[Short Dry Grass]]
 | [[Tall Dry Grass]]
-| {{Crafting|A1=Tall Dry Grass|Output=Short Dry Grass,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/short_dry_grass_from_tall_dry_grass.json|matcha:crafting/short_dry_grass_from_tall_dry_grass}}</small>
+| {{Crafting|A1=Tall Dry Grass|Output=Short Dry Grass,2|shapeless=1}}
 |}
 '''Cooking'''
 {| class="wikitable recipe-table"
@@ -12,10 +12,10 @@
 |-
 | [[Short Dry Grass]]
 | [[Short Grass]] or [[Fern]]
-| {{Cooking|station=Kindling|Input=Short Grass;Fern|Output=Short Dry Grass|time=10|note=10 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/campfire/short_dry_grass_campfire.json|matcha:campfire/short_dry_grass_campfire}}</small>
+| {{Cooking|station=Kindling|Input=Short Grass;Fern|Output=Short Dry Grass|time=10|note=10 s, 0.35 XP}}
 |-
 | [[Short Dry Grass]]
 | [[Short Grass]] or [[Fern]]
-| {{Cooking|station=Oven|Input=Short Grass;Fern|Output=Short Dry Grass|time=5|note=5 s, 0.01 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/short_dry_grass.json|matcha:oven/short_dry_grass}}</small>
+| {{Cooking|station=Oven|Input=Short Grass;Fern|Output=Short Dry Grass|time=5|note=5 s, 0.01 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

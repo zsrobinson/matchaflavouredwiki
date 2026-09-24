@@ -3,24 +3,24 @@
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Equipment / chainmail <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/chainmail.json|chests/equipment/chainmail}})</small> || 1 || 25.0% || 
+| Equipment / chainmail || Chainmail Helmet (enchanted) || 1 || 25.0% || 
 |}
 
 '''Mob equipment'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Trial chamber <small>({{Source|MF_datapack/data/minecraft/loot_table/equipment/trial_chamber.json|equipment/trial_chamber}})</small> || 1 || 4.76% || 
+| Trial chamber || Chainmail Helmet (enchanted) || 1 || 4.76% || 
 |-
-| Trial chamber melee <small>({{Source|MF_datapack/data/minecraft/loot_table/equipment/trial_chamber_melee.json|equipment/trial_chamber_melee}})</small> || 1 || 6.94% || 
+| Trial chamber melee || Chainmail Helmet (enchanted) || 1 || 6.94% || 
 |}
 
 '''Gameplay'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Hero of the village / armorer gift <small>({{Source|vanilla:loot_table/gameplay/hero_of_the_village/armorer_gift.json|gameplay/hero_of_the_village/armorer_gift}})</small> || 1 || 25.0% || 
+| Hero of the village / armorer gift || Chainmail Helmet || 1 || 25.0% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

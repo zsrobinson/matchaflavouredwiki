@@ -5,8 +5,8 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Buried treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/buried_treasure.json|chests/buried_treasure}})</small> || 1 || 50.0% || 
+| Buried treasure || 1 || 50.0% || 
 |-
-| Shipwreck treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_treasure.json|chests/shipwreck_treasure}})</small> || 1 || 50.0% || 
+| Shipwreck treasure || 1 || 50.0% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

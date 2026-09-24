@@ -3,26 +3,26 @@
 |-
 | [[Brachio Chicken Nugget]]
 | [[Seitan]] or [[Cooked Chicken]] +<br />[[Oil]] +<br />[[Flour]]
-| {{Crafting|A1=Seitan;Cooked Chicken|A2=Flour|B1=Oil|Output=Brachio Chicken Nugget,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/brachio_chicken_nugget.json|matcha:food/crafting/brachio_chicken_nugget}}</small>
+| {{Crafting|A1=Seitan;Cooked Chicken|A2=Flour|B1=Oil|Output=Brachio Chicken Nugget,4}}
 |-
 | [[Meat Pizza]]
 | 2 × [[Cheese]] +<br />[[Cooked Flesh]] or [[Steak]] or [[Cooked Chicken]] or [[Cooked Porkchop]] or [[Cooked Mutton]] +<br />3 × [[Tomatoes]] +<br />3 × [[Dough]]
-| {{Crafting|A1=Cheese|A2=Tomatoes|A3=Dough|B1=Cooked Flesh;Steak;Cooked Chicken;Cooked Porkchop;Cooked Mutton|B2=Tomatoes|B3=Dough|C1=Cheese|C2=Tomatoes|C3=Dough|Output=Meat Pizza,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/meat_pizza.json|matcha:food/crafting/meat_pizza}}</small>
+| {{Crafting|A1=Cheese|A2=Tomatoes|A3=Dough|B1=Cooked Flesh;Steak;Cooked Chicken;Cooked Porkchop;Cooked Mutton|B2=Tomatoes|B3=Dough|C1=Cheese|C2=Tomatoes|C3=Dough|Output=Meat Pizza,4}}
 |-
 | [[Ptero Chicken Nugget]]
 | [[Oil]] +<br />[[Flour]] +<br />[[Seitan]] or [[Cooked Chicken]]
-| {{Crafting|A1=Oil|A2=Seitan;Cooked Chicken|B1=Flour|Output=Ptero Chicken Nugget,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/ptero_chicken_nugget.json|matcha:food/crafting/ptero_chicken_nugget}}</small>
+| {{Crafting|A1=Oil|A2=Seitan;Cooked Chicken|B1=Flour|Output=Ptero Chicken Nugget,4}}
 |-
 | [[Pupusa]]
 | [[Dough]] +<br />[[Cheese]] +<br />[[Oil]] +<br />[[Cooked Porkchop]] or [[Cooked Chicken]]
-| {{Crafting|A1=Dough|B1=Cheese|C1=Oil|A2=Cooked Porkchop;Cooked Chicken|Output=Pupusa,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pupusa.json|matcha:food/crafting/pupusa}}</small>
+| {{Crafting|A1=Dough|B1=Cheese|C1=Oil|A2=Cooked Porkchop;Cooked Chicken|Output=Pupusa,4|shapeless=1}}
 |-
 | [[Stego Chicken Nugget]]
 | [[Oil]] +<br />[[Seitan]] or [[Cooked Chicken]] +<br />[[Flour]]
-| {{Crafting|A1=Oil|A2=Flour|B1=Seitan;Cooked Chicken|Output=Stego Chicken Nugget,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/stego_chicken_nugget.json|matcha:food/crafting/stego_chicken_nugget}}</small>
+| {{Crafting|A1=Oil|A2=Flour|B1=Seitan;Cooked Chicken|Output=Stego Chicken Nugget,4}}
 |-
 | [[Tricero Chicken Nugget]]
 | [[Seitan]] or [[Cooked Chicken]] +<br />[[Flour]] +<br />[[Oil]]
-| {{Crafting|A1=Seitan;Cooked Chicken|A2=Oil|B1=Flour|Output=Tricero Chicken Nugget,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/tricero_chicken_nugget.json|matcha:food/crafting/tricero_chicken_nugget}}</small>
+| {{Crafting|A1=Seitan;Cooked Chicken|A2=Oil|B1=Flour|Output=Tricero Chicken Nugget,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

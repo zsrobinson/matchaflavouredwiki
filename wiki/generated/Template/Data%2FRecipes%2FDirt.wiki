@@ -4,7 +4,7 @@
 |-
 | [[Dirt]]
 | 2 × [[Dirt Slab]]
-| {{Crafting|A1=Dirt Slab|B1=Dirt Slab|Output=Dirt|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/dirt_from_dirt_slabs.json|matcha:crafting/dirt_from_dirt_slabs}}</small>
+| {{Crafting|A1=Dirt Slab|B1=Dirt Slab|Output=Dirt|shapeless=1}}
 |}
 '''Cooking'''
 {| class="wikitable recipe-table"
@@ -12,6 +12,6 @@
 |-
 | [[Dirt]]
 | [[Grass Block]]
-| {{Cooking|station=Oven|Input=Grass Block|Output=Dirt|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/oven/dirt_from_smelting_grass_block.json|matcha:oven/dirt_from_smelting_grass_block}}</small>
+| {{Cooking|station=Oven|Input=Grass Block|Output=Dirt|time=5|note=5 s, 0.1 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

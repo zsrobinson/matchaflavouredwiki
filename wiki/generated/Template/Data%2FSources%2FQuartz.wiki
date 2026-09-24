@@ -5,24 +5,24 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Bastion treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_treasure.json|chests/bastion_treasure}})</small> || 8–23 || 37.2% || 
+| Bastion treasure || 8–23 || 37.2% || 
 |-
-| Village / village mason <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_mason.json|chests/village/village_mason}})</small> || 1–4 || 87.4% || 
+| Village / village mason || 1–4 || 87.4% || 
 |}
 
 '''Gameplay'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Piglin bartering <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/piglin_bartering.json|gameplay/piglin_bartering}})</small> || 5–12 || 4.55% || 
+| Piglin bartering || 5–12 || 4.55% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Lapis ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/lapis_ore.json|blocks/lapis_ore}})</small> || 2–5 || 100% || without Silk Touch, specific tool
+| Lapis ore || 2–5 || 100% || without Silk Touch, specific tool
 |-
-| Redstone ore <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/redstone_ore.json|blocks/redstone_ore}})</small> || 2–3 || 100% || without Silk Touch
+| Redstone ore || 2–3 || 100% || without Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

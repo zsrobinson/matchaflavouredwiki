@@ -4,7 +4,7 @@
 |-
 | [[Sand]]
 | [[Sandstone]]
-| {{Crafting|A1=Sandstone|Output=Sand,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sand_from_sandstone.json|matcha:crafting/sand_from_sandstone}}</small>
+| {{Crafting|A1=Sandstone|Output=Sand,2|shapeless=1}}
 |}
 '''Blasting'''
 {| class="wikitable recipe-table"
@@ -12,6 +12,6 @@
 |-
 | [[Sand]]
 | [[Gravel]]
-| {{Cooking|station=Blast Furnace|Input=Gravel|Output=Sand|time=5|note=5 s, 0.1 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blast/sand.json|matcha:blast/sand}}</small>
+| {{Cooking|station=Blast Furnace|Input=Gravel|Output=Sand|time=5|note=5 s, 0.1 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

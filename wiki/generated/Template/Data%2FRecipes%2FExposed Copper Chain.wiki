@@ -4,7 +4,7 @@
 |-
 | [[Exposed Copper Chain]]
 | [[Copper Chain]] +<br />[[Potion]]
-| {{Crafting|A1=Copper Chain|B1=Potion|Output=Exposed Copper Chain|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/exposed_copper_chain_from_patina.json|matcha:crafting/exposed_copper_chain_from_patina}}</small>
+| {{Crafting|A1=Copper Chain|B1=Potion|Output=Exposed Copper Chain|shapeless=1}}
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
@@ -12,6 +12,6 @@
 |-
 | [[Exposed Copper Chain]]
 | [[Exposed Copper]]
-| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Chain,54}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_chain_from_stonecutting_exposed_copper.json|matcha:stonecutting/exposed_copper_chain_from_stonecutting_exposed_copper}}</small>
+| {{Stonecutter|Input=Exposed Copper|Output=Exposed Copper Chain,54}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -5,13 +5,13 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Snow golem <small>({{Source|vanilla:loot_table/shearing/snow_golem.json|shearing/snow_golem}})</small> || 1 || 100% || 
+| Snow golem || 1 || 100% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Carved pumpkin <small>({{Source|vanilla:loot_table/blocks/carved_pumpkin.json|blocks/carved_pumpkin}})</small> || 1 || 100% || 
+| Carved pumpkin || 1 || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

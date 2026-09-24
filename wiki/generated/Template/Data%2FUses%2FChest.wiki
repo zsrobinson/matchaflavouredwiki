@@ -3,19 +3,19 @@
 |-
 | [[Hopper]]
 | 5 × [[Iron Ingot]] +<br />[[Chest]] or [[Barrel]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|B2=Chest;Barrel|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|Output=Hopper,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/hopper_from_iron.json|matcha:crafting/hopper_from_iron}}</small>
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|B2=Chest;Barrel|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|Output=Hopper,4}}
 |-
 | [[Hopper]]
 | 5 × [[Steel Alloy]] +<br />[[Chest]] or [[Barrel]]
-| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|B2=Chest;Barrel|B3=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|Output=Hopper,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/hopper_from_steel.json|matcha:crafting/hopper_from_steel}}</small>
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|B2=Chest;Barrel|B3=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|Output=Hopper,8}}
 |-
 | [[Sack]]
 | 8 × [[Sturdy Leather]] +<br />[[Chest]]
-| {{Crafting|A1=Sturdy Leather|A2=Sturdy Leather|A3=Sturdy Leather|B1=Sturdy Leather|B2=Chest|B3=Sturdy Leather|C1=Sturdy Leather|C2=Sturdy Leather|C3=Sturdy Leather|Output=Sack}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sack.json|matcha:crafting/sack}}</small>
+| {{Crafting|A1=Sturdy Leather|A2=Sturdy Leather|A3=Sturdy Leather|B1=Sturdy Leather|B2=Chest|B3=Sturdy Leather|C1=Sturdy Leather|C2=Sturdy Leather|C3=Sturdy Leather|Output=Sack}}
 |-
 | [[Trapped Chest]]
 | [[Chest]] +<br />[[Electric Wire]]
-| {{Crafting|A1=Chest|B1=Electric Wire|Output=Trapped Chest|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trapped_chest.json|matcha:crafting/trapped_chest}}</small>
+| {{Crafting|A1=Chest|B1=Electric Wire|Output=Trapped Chest|shapeless=1}}
 |-
 | [[Acacia Boat with Chest]] <small>(vanilla recipe)</small>
 | [[Chest]] +<br />[[Acacia Boat]]

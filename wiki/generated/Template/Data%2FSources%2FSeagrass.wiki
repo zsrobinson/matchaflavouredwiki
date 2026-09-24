@@ -5,8 +5,8 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Seagrass <small>({{Source|vanilla:loot_table/blocks/seagrass.json|blocks/seagrass}})</small> || 1 || 100% || tool: Iron Shears
+| Seagrass || 1 || 100% || tool: Iron Shears
 |-
-| Tall seagrass <small>({{Source|vanilla:loot_table/blocks/tall_seagrass.json|blocks/tall_seagrass}})</small> || 2 || 100% || tool: Iron Shears
+| Tall seagrass || 2 || 100% || tool: Iron Shears
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

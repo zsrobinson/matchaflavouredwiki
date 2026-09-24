@@ -3,41 +3,41 @@
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Ancient city <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/ancient_city.json|chests/ancient_city}})</small> || 1 || 10.1% || 
+| Ancient city || Diamond Pickaxe || 1 || 10.1% || 
 |-
-| Bastion bridge <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_bridge.json|chests/bastion_bridge}})</small> || 1 || 16.2% || 
+| Bastion bridge || Diamond Pickaxe || 1 || 16.2% || 
 |-
-| Bastion hoglin stable <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_hoglin_stable.json|chests/bastion_hoglin_stable}})</small> || 1 || 3.10% || 
+| Bastion hoglin stable || Diamond Pickaxe || 1 || 3.10% || 
 |-
-| Bastion other <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/bastion_other.json|chests/bastion_other}})</small> || 1 || 2.12% || 
+| Bastion other || Diamond Pickaxe || 1 || 2.12% || 
 |-
-| End city treasure <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/end_city_treasure.json|chests/end_city_treasure}})</small> || 1 || 19.1% || 
+| End city treasure || Diamond Pickaxe (enchanted) || 1 || 19.1% || 
 |-
-| Equipment / diamond tools <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/diamond_tools.json|chests/equipment/diamond_tools}})</small> || 1 || 25.0% || 
+| Equipment / diamond tools || Diamond Pickaxe (enchanted) || 1 || 25.0% || 
 |-
-| Stronghold crossing <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/stronghold_crossing.json|chests/stronghold_crossing}})</small> || 1 || 2.36% || 
+| Stronghold crossing || Diamond Pickaxe || 1 || 2.36% || 
 |-
-| Trial chambers / intersection <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/intersection.json|chests/trial_chambers/intersection}})</small> || 1 || 7.17% || 
+| Trial chambers / intersection || Diamond Pickaxe (enchanted) || 1 || 7.17% || 
 |-
-| Trial chambers / intersection barrel <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/intersection_barrel.json|chests/trial_chambers/intersection_barrel}})</small> || 1 || 34.9% || 
+| Trial chambers / intersection barrel || Diamond Pickaxe (enchanted) || 1 || 34.9% || 
 |-
-| Trial chambers / reward <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward.json|chests/trial_chambers/reward}})</small> || 1 || 0.242% || 
+| Trial chambers / reward || Diamond Pickaxe || 1 || 0.242% || 
 |-
-| Trial chambers / reward ominous <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward_ominous.json|chests/trial_chambers/reward_ominous}})</small> || 1 || 0.842% || 
+| Trial chambers / reward ominous || Diamond Pickaxe || 1 || 0.842% || 
 |-
-| Woodland mansion <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/woodland_mansion.json|chests/woodland_mansion}})</small> || 1 || 6.52% || 
+| Woodland mansion || Diamond Pickaxe || 1 || 6.52% || 
 |}
 
 '''Mob equipment'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Trial chamber <small>({{Source|MF_datapack/data/minecraft/loot_table/equipment/trial_chamber.json|equipment/trial_chamber}})</small> || 1 || 0.476% || 
+| Trial chamber || Diamond Pickaxe (enchanted) || 1 || 0.476% || 
 |-
-| Trial chamber melee <small>({{Source|MF_datapack/data/minecraft/loot_table/equipment/trial_chamber_melee.json|equipment/trial_chamber_melee}})</small> || 1 || 2.22% || 
+| Trial chamber melee || Diamond Pickaxe (enchanted) || 1 || 2.22% || 
 |-
-| Trial chamber ranged <small>({{Source|MF_datapack/data/minecraft/loot_table/equipment/trial_chamber_ranged.json|equipment/trial_chamber_ranged}})</small> || 1 || 17.0% || 
+| Trial chamber ranged || Diamond Pickaxe (enchanted) || 1 || 17.0% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

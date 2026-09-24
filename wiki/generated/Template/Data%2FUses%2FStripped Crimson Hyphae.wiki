@@ -3,75 +3,75 @@
 |-
 | [[Kindling]]
 | 2 × [[Stick]] +<br />2 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json|matcha:crafting/campfire}}</small>
+| {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}
 |-
 | [[Chest]]
 | 8 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/chest_from_logs.json|matcha:crafting/chest_from_logs}}</small>
+| {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}
 |-
 | [[Stick]]
 | 2 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sticks_from_logs.json|matcha:crafting/sticks_from_logs}}</small>
+| {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}
 |-
 | [[Barrel]]
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Stonecutter|Input=Any Logs|Output=Barrel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/barrel_from_stonecutting_any_logs.json|matcha:stonecutting/barrel_from_stonecutting_any_logs}}</small>
+| {{Stonecutter|Input=Any Logs|Output=Barrel}}
 |-
 | [[Chiseled Bookshelf]]
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Stonecutter|Input=Any Logs|Output=Chiseled Bookshelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/chiseled_bookshelf_from_stonecutting_any_logs.json|matcha:stonecutting/chiseled_bookshelf_from_stonecutting_any_logs}}</small>
+| {{Stonecutter|Input=Any Logs|Output=Chiseled Bookshelf}}
 |-
 | [[Crimson Button]]
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>
-| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_button_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_button_from_stonecutting_crimson_stem}}</small>
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Button,8}}
 |-
 | [[Crimson Door]]
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>
-| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Door,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_door_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_door_from_stonecutting_crimson_stem}}</small>
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Door,2}}
 |-
 | [[Crimson Fence]]
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>
-| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Fence,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_fence_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_fence_from_stonecutting_crimson_stem}}</small>
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Fence,3}}
 |-
 | [[Crimson Fence Gate]]
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>
-| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Fence Gate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_gate_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_gate_from_stonecutting_crimson_stem}}</small>
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Fence Gate}}
 |-
 | [[Crimson Planks]]
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>
-| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_planks_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_planks_from_stonecutting_crimson_stem}}</small>
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Planks,4}}
 |-
 | [[Crimson Pressure Plate]]
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>
-| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Pressure Plate,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_pressure_plate_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_pressure_plate_from_stonecutting_crimson_stem}}</small>
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Pressure Plate,4}}
 |-
 | [[Crimson Shelf]]
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>
-| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_shelf_from_stonecutting_crimson_stems.json|matcha:stonecutting/crimson_shelf_from_stonecutting_crimson_stems}}</small>
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Shelf}}
 |-
 | [[Crimson Sign]]
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>
-| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Sign,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_sign_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_sign_from_stonecutting_crimson_stem}}</small>
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Sign,2}}
 |-
 | [[Crimson Slab]]
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>
-| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_slab_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_slab_from_stonecutting_crimson_stem}}</small>
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Slab,8}}
 |-
 | [[Crimson Stairs]]
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>
-| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Stairs,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_stairs_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_stairs_from_stonecutting_crimson_stem}}</small>
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Stairs,4}}
 |-
 | [[Crimson Trapdoor]]
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>
-| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/crimson_trapdoor_from_stonecutting_crimson_stem.json|matcha:stonecutting/crimson_trapdoor_from_stonecutting_crimson_stem}}</small>
+| {{Stonecutter|Input=Any Crimson Stems|Output=Crimson Trapdoor,4}}
 |-
 | [[Ladder]]
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Stonecutter|Input=Any Logs|Output=Ladder,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/ladder_from_stonecutting_any_logs.json|matcha:stonecutting/ladder_from_stonecutting_any_logs}}</small>
+| {{Stonecutter|Input=Any Logs|Output=Ladder,16}}
 |-
 | [[Stripped Crimson Stem]]
 | [[Crimson Hyphae]] or [[Crimson Stem]] or [[Stripped Crimson Hyphae]]
-| {{Stonecutter|Input=Crimson Hyphae;Crimson Stem;Stripped Crimson Hyphae|Output=Stripped Crimson Stem}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_crimson_stem_from_stonecutting_crimson_stems.json|matcha:stonecutting/stripped_crimson_stem_from_stonecutting_crimson_stems}}</small>
+| {{Stonecutter|Input=Crimson Hyphae;Crimson Stem;Stripped Crimson Hyphae|Output=Stripped Crimson Stem}}
 |-
 | [[Crimson Planks]] <small>(vanilla recipe)</small>
 | <span class="explain" title="Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae">Any crimson stems</span>

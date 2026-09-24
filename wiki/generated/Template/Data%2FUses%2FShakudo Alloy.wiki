@@ -3,62 +3,62 @@
 |-
 | [[Prayer of Eros]]
 | 4 × [[Arrow]] +<br />[[Shakudo Alloy]] +<br />3 × [[Estus Ash]] +<br />[[Hell-Bound Book]]
-| {{Crafting|A1=Arrow|A2=Estus Ash|A3=Arrow|B1=Shakudo Alloy|B2=Hell-Bound Book|B3=Estus Ash|C1=Arrow|C2=Estus Ash|C3=Arrow|Output=Prayer of Eros}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/blessing/silk_touch.json|matcha:blessing/silk_touch}}</small>
+| {{Crafting|A1=Arrow|A2=Estus Ash|A3=Arrow|B1=Shakudo Alloy|B2=Hell-Bound Book|B3=Estus Ash|C1=Arrow|C2=Estus Ash|C3=Arrow|Output=Prayer of Eros}}
 |-
-| [[Smithing Trim Color]]
+| [[Smithing Trim Color|Smithing Trim Color (Shakudo Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Shakudo Alloy]]
-| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Shakudo Alloy|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/trim_colour_shakudo.json|matcha:crafting/trim_colour_shakudo}}</small>
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Shakudo Alloy|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Shakudo Material)}}
 |-
 | [[Shakudo Axe]]
 | [[Copper Axe]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=|Base=Copper Axe|Addition=Shakudo Alloy|Output=Shakudo Axe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_axe.json|matcha:smithing/shakudo_axe}}</small>
+| {{Smithing|Template=|Base=Copper Axe|Addition=Shakudo Alloy|Output=Shakudo Axe}}
 |-
 | [[Shakudo Boots]]
 | [[Copper Boots]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=|Base=Copper Boots|Addition=Shakudo Alloy|Output=Shakudo Boots}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_boots.json|matcha:smithing/shakudo_boots}}</small>
+| {{Smithing|Template=|Base=Copper Boots|Addition=Shakudo Alloy|Output=Shakudo Boots}}
 |-
 | [[Shakudo Chestplate]]
 | [[Copper Chestplate]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=|Base=Copper Chestplate|Addition=Shakudo Alloy|Output=Shakudo Chestplate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_chestplate.json|matcha:smithing/shakudo_chestplate}}</small>
+| {{Smithing|Template=|Base=Copper Chestplate|Addition=Shakudo Alloy|Output=Shakudo Chestplate}}
 |-
 | [[Shakudo Dolabra]]
-| [[Smithing Template]] +<br />[[Copper Axe]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=Smithing Template|Base=Copper Axe|Addition=Shakudo Alloy|Output=Shakudo Dolabra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_dolabra.json|matcha:smithing/shakudo_dolabra}}</small>
+| [[Smithing Upgrade Template]] +<br />[[Copper Axe]] +<br />[[Shakudo Alloy]]
+| {{Smithing|Template=Smithing Upgrade Template|Base=Copper Axe|Addition=Shakudo Alloy|Output=Shakudo Dolabra}}
 |-
 | [[Shakudo Elytra]]
 | [[Elytra]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=|Base=Elytra|Addition=Shakudo Alloy|Output=Shakudo Elytra}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_elytra.json|matcha:smithing/shakudo_elytra}}</small>
+| {{Smithing|Template=|Base=Elytra|Addition=Shakudo Alloy|Output=Shakudo Elytra}}
 |-
 | [[Shakudo Helmet]]
 | [[Copper Helmet]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=|Base=Copper Helmet|Addition=Shakudo Alloy|Output=Shakudo Helmet}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_helmet.json|matcha:smithing/shakudo_helmet}}</small>
+| {{Smithing|Template=|Base=Copper Helmet|Addition=Shakudo Alloy|Output=Shakudo Helmet}}
 |-
 | [[Shakudo Hoe]]
 | [[Copper Hoe]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=|Base=Copper Hoe|Addition=Shakudo Alloy|Output=Shakudo Hoe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_hoe.json|matcha:smithing/shakudo_hoe}}</small>
+| {{Smithing|Template=|Base=Copper Hoe|Addition=Shakudo Alloy|Output=Shakudo Hoe}}
 |-
 | [[Shakudo Leggings]]
 | [[Copper Leggings]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=|Base=Copper Leggings|Addition=Shakudo Alloy|Output=Shakudo Leggings}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_leggings.json|matcha:smithing/shakudo_leggings}}</small>
+| {{Smithing|Template=|Base=Copper Leggings|Addition=Shakudo Alloy|Output=Shakudo Leggings}}
 |-
 | [[Shakudo Mattock]]
-| [[Smithing Template]] +<br />[[Copper Hoe]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=Smithing Template|Base=Copper Hoe|Addition=Shakudo Alloy|Output=Shakudo Mattock}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_mattock.json|matcha:smithing/shakudo_mattock}}</small>
+| [[Smithing Upgrade Template]] +<br />[[Copper Hoe]] +<br />[[Shakudo Alloy]]
+| {{Smithing|Template=Smithing Upgrade Template|Base=Copper Hoe|Addition=Shakudo Alloy|Output=Shakudo Mattock}}
 |-
 | [[Shakudo Pickaxe]]
 | [[Copper Pickaxe]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=|Base=Copper Pickaxe|Addition=Shakudo Alloy|Output=Shakudo Pickaxe}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_pickaxe.json|matcha:smithing/shakudo_pickaxe}}</small>
+| {{Smithing|Template=|Base=Copper Pickaxe|Addition=Shakudo Alloy|Output=Shakudo Pickaxe}}
 |-
 | [[Shakudo Shovel]]
 | [[Copper Shovel]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=|Base=Copper Shovel|Addition=Shakudo Alloy|Output=Shakudo Shovel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_shovel.json|matcha:smithing/shakudo_shovel}}</small>
+| {{Smithing|Template=|Base=Copper Shovel|Addition=Shakudo Alloy|Output=Shakudo Shovel}}
 |-
 | [[Shakudo Spear]]
 | [[Copper Spear]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=|Base=Copper Spear|Addition=Shakudo Alloy|Output=Shakudo Spear}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_spear.json|matcha:smithing/shakudo_spear}}</small>
+| {{Smithing|Template=|Base=Copper Spear|Addition=Shakudo Alloy|Output=Shakudo Spear}}
 |-
 | [[Shakudo Sword]]
 | [[Copper Sword]] +<br />[[Shakudo Alloy]]
-| {{Smithing|Template=|Base=Copper Sword|Addition=Shakudo Alloy|Output=Shakudo Sword}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_sword.json|matcha:smithing/shakudo_sword}}</small>
+| {{Smithing|Template=|Base=Copper Sword|Addition=Shakudo Alloy|Output=Shakudo Sword}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

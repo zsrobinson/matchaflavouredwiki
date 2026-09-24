@@ -5,26 +5,26 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 6.26% || only in [[Fishing#Tropical freshwater|tropical freshwater biomes]]
+| Village / village fisher || 1 || 6.26% || only in [[Fishing#Tropical freshwater|tropical freshwater biomes]]
 |-
-| Village / village fisher <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json|chests/village/village_fisher}})</small> || 1 || 6.26% || only in [[Fishing#Brackish water|brackish water biomes]]
+| Village / village fisher || 1 || 6.26% || only in [[Fishing#Brackish water|brackish water biomes]]
 |}
 
 '''Mob drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 6.26% || only in [[Fishing#Tropical freshwater|tropical freshwater biomes]]
+| Elder guardian || 1 || 6.26% || only in [[Fishing#Tropical freshwater|tropical freshwater biomes]]
 |-
-| Elder guardian <small>({{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json|entities/elder_guardian}})</small> || 1 || 6.26% || only in [[Fishing#Brackish water|brackish water biomes]]
+| Elder guardian || 1 || 6.26% || only in [[Fishing#Brackish water|brackish water biomes]]
 |}
 
 '''Fishing'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 2.02% || only in [[Fishing#Tropical freshwater|tropical freshwater biomes]]
+| Fishing || 1 || 2.02% || only in [[Fishing#Tropical freshwater|tropical freshwater biomes]]
 |-
-| Fishing <small>({{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|gameplay/fishing}})</small> || 1 || 2.02% || only in [[Fishing#Brackish water|brackish water biomes]]
+| Fishing || 1 || 2.02% || only in [[Fishing#Brackish water|brackish water biomes]]
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

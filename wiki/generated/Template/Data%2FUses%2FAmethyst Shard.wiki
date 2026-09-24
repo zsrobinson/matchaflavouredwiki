@@ -3,19 +3,19 @@
 |-
 | [[Crying Obsidian]]
 | 4 × [[Amethyst Shard]] +<br />[[Obsidian]]
-| {{Crafting|A2=Amethyst Shard|B1=Amethyst Shard|B2=Obsidian|B3=Amethyst Shard|C2=Amethyst Shard|Output=Crying Obsidian,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/crying_obsidian.json|matcha:crafting/crying_obsidian}}</small>
+| {{Crafting|A2=Amethyst Shard|B1=Amethyst Shard|B2=Obsidian|B3=Amethyst Shard|C2=Amethyst Shard|Output=Crying Obsidian,2}}
 |-
 | [[Spyglass]]
 | [[Glass]] or [[Amethyst Shard]] +<br />2 × [[Copper Ingot]]
-| {{Crafting|B1=Glass;Amethyst Shard|B2=Copper Ingot|B3=Copper Ingot|Output=Spyglass}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/spyglass.json|matcha:crafting/spyglass}}</small>
+| {{Crafting|B1=Glass;Amethyst Shard|B2=Copper Ingot|B3=Copper Ingot|Output=Spyglass}}
 |-
 | [[Tinted Glass]]
 | 4 × [[Glass]] +<br />[[Amethyst Shard]]
-| {{Crafting|A2=Glass|B1=Glass|B2=Amethyst Shard|B3=Glass|C2=Glass|Output=Tinted Glass,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/tinted_glass.json|matcha:crafting/tinted_glass}}</small>
+| {{Crafting|A2=Glass|B1=Glass|B2=Amethyst Shard|B3=Glass|C2=Glass|Output=Tinted Glass,4}}
 |-
 | [[Tinted Glass]]
 | [[Amethyst Shard]]
-| {{Cooking|station=Mud Kiln|Input=Amethyst Shard|Output=Tinted Glass|time=5|note=5 s, 0.35 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/tinted_glass_from_smoking_amethyst.json|matcha:kiln/tinted_glass_from_smoking_amethyst}}</small>
+| {{Cooking|station=Mud Kiln|Input=Amethyst Shard|Output=Tinted Glass|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Block of Amethyst]] <small>(vanilla recipe)</small>
 | 4 × [[Amethyst Shard]]

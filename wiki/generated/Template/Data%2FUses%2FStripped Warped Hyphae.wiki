@@ -3,75 +3,75 @@
 |-
 | [[Kindling]]
 | 2 × [[Stick]] +<br />2 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json|matcha:crafting/campfire}}</small>
+| {{Crafting|A1=Stick|A2=Any Logs|B1=Stick|B2=Any Logs|Output=Kindling}}
 |-
 | [[Chest]]
 | 8 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/chest_from_logs.json|matcha:crafting/chest_from_logs}}</small>
+| {{Crafting|A1=Any Logs|A2=Any Logs|A3=Any Logs|B1=Any Logs|B3=Any Logs|C1=Any Logs|C2=Any Logs|C3=Any Logs|Output=Chest,4}}
 |-
 | [[Stick]]
 | 2 × <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/sticks_from_logs.json|matcha:crafting/sticks_from_logs}}</small>
+| {{Crafting|A1=Any Logs|A2=Any Logs|Output=Stick,16}}
 |-
 | [[Barrel]]
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Stonecutter|Input=Any Logs|Output=Barrel}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/barrel_from_stonecutting_any_logs.json|matcha:stonecutting/barrel_from_stonecutting_any_logs}}</small>
+| {{Stonecutter|Input=Any Logs|Output=Barrel}}
 |-
 | [[Chiseled Bookshelf]]
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Stonecutter|Input=Any Logs|Output=Chiseled Bookshelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/chiseled_bookshelf_from_stonecutting_any_logs.json|matcha:stonecutting/chiseled_bookshelf_from_stonecutting_any_logs}}</small>
+| {{Stonecutter|Input=Any Logs|Output=Chiseled Bookshelf}}
 |-
 | [[Ladder]]
 | <span class="explain" title="Dark Oak Log, Dark Oak Wood, Stripped Dark Oak Log, Stripped Dark Oak Wood, Pale Oak Log, Pale Oak Wood, Stripped Pale Oak Log, Stripped Pale Oak Wood, Oak Log, Oak Wood, Stripped Oak Log, Stripped Oak Wood, Acacia Log, Acacia Wood, Stripped Acacia Log, Stripped Acacia Wood, Birch Log, Birch Wood, Stripped Birch Log, Stripped Birch Wood, Jungle Log, Jungle Wood, Stripped Jungle Log, Stripped Jungle Wood, Spruce Log, Spruce Wood, Stripped Spruce Log, Stripped Spruce Wood, Mangrove Log, Mangrove Wood, Stripped Mangrove Log, Stripped Mangrove Wood, Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood, Crimson Stem, Stripped Crimson Stem, Crimson Hyphae, Stripped Crimson Hyphae, Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any logs</span>
-| {{Stonecutter|Input=Any Logs|Output=Ladder,16}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/ladder_from_stonecutting_any_logs.json|matcha:stonecutting/ladder_from_stonecutting_any_logs}}</small>
+| {{Stonecutter|Input=Any Logs|Output=Ladder,16}}
 |-
 | [[Stripped Warped Stem]]
 | [[Warped Hyphae]] or [[Warped Stem]] or [[Stripped Warped Hyphae]]
-| {{Stonecutter|Input=Warped Hyphae;Warped Stem;Stripped Warped Hyphae|Output=Stripped Warped Stem}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_warped_stem_from_stonecutting_warped_stems.json|matcha:stonecutting/stripped_warped_stem_from_stonecutting_warped_stems}}</small>
+| {{Stonecutter|Input=Warped Hyphae;Warped Stem;Stripped Warped Hyphae|Output=Stripped Warped Stem}}
 |-
 | [[Warped Button]]
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
-| {{Stonecutter|Input=Any Warped Stems|Output=Warped Button,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_button_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_button_from_stonecutting_warped_stem}}</small>
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Button,8}}
 |-
 | [[Warped Door]]
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
-| {{Stonecutter|Input=Any Warped Stems|Output=Warped Door,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_door_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_door_from_stonecutting_warped_stem}}</small>
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Door,2}}
 |-
 | [[Warped Fence]]
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
-| {{Stonecutter|Input=Any Warped Stems|Output=Warped Fence,3}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_fence_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_fence_from_stonecutting_warped_stem}}</small>
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Fence,3}}
 |-
 | [[Warped Fence Gate]]
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
-| {{Stonecutter|Input=Any Warped Stems|Output=Warped Fence Gate}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_gate_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_gate_from_stonecutting_warped_stem}}</small>
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Fence Gate}}
 |-
 | [[Warped Planks]]
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
-| {{Stonecutter|Input=Any Warped Stems|Output=Warped Planks,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_planks_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_planks_from_stonecutting_warped_stem}}</small>
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Planks,4}}
 |-
 | [[Warped Pressure Plate]]
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
-| {{Stonecutter|Input=Any Warped Stems|Output=Warped Pressure Plate,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_pressure_plate_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_pressure_plate_from_stonecutting_warped_stem}}</small>
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Pressure Plate,4}}
 |-
 | [[Warped Shelf]]
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
-| {{Stonecutter|Input=Any Warped Stems|Output=Warped Shelf}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_shelf_from_stonecutting_warped_stems.json|matcha:stonecutting/warped_shelf_from_stonecutting_warped_stems}}</small>
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Shelf}}
 |-
 | [[Warped Sign]]
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
-| {{Stonecutter|Input=Any Warped Stems|Output=Warped Sign,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_sign_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_sign_from_stonecutting_warped_stem}}</small>
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Sign,2}}
 |-
 | [[Warped Slab]]
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
-| {{Stonecutter|Input=Any Warped Stems|Output=Warped Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_slab_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_slab_from_stonecutting_warped_stem}}</small>
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Slab,8}}
 |-
 | [[Warped Stairs]]
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
-| {{Stonecutter|Input=Any Warped Stems|Output=Warped Stairs,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_stairs_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_stairs_from_stonecutting_warped_stem}}</small>
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Stairs,4}}
 |-
 | [[Warped Trapdoor]]
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>
-| {{Stonecutter|Input=Any Warped Stems|Output=Warped Trapdoor,4}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/warped_trapdoor_from_stonecutting_warped_stem.json|matcha:stonecutting/warped_trapdoor_from_stonecutting_warped_stem}}</small>
+| {{Stonecutter|Input=Any Warped Stems|Output=Warped Trapdoor,4}}
 |-
 | [[Warped Planks]] <small>(vanilla recipe)</small>
 | <span class="explain" title="Warped Stem, Stripped Warped Stem, Warped Hyphae, Stripped Warped Hyphae">Any warped stems</span>

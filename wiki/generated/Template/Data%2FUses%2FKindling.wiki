@@ -3,22 +3,22 @@
 |-
 | [[Beacon Kindling]]
 | [[Obol]] +<br />[[Kindling]] +<br />[[Hay Bale]]
-| {{Crafting|B1=Obol|B2=Kindling|B3=Hay Bale|Output=Beacon Kindling}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/beacon_kindling.json|matcha:crafting/beacon_kindling}}</small>
+| {{Crafting|B1=Obol|B2=Kindling|B3=Hay Bale|Output=Beacon Kindling}}
 |-
 | [[Blast Furnace]]
 | 4 × [[Polished Deepslate]] +<br />2 × [[Smooth Stone]] +<br />[[Kindling]]
-| {{Crafting|A1=Polished Deepslate|A2=Polished Deepslate|A3=Smooth Stone|B3=Kindling|C1=Polished Deepslate|C2=Polished Deepslate|C3=Smooth Stone|Output=Blast Furnace}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/blast_furnace.json|matcha:crafting/blast_furnace}}</small>
+| {{Crafting|A1=Polished Deepslate|A2=Polished Deepslate|A3=Smooth Stone|B3=Kindling|C1=Polished Deepslate|C2=Polished Deepslate|C3=Smooth Stone|Output=Blast Furnace}}
 |-
 | [[Mud Kiln]]
 | 4 × [[Mud Bricks]] +<br />2 × [[Packed Mud]] +<br />[[Kindling]]
-| {{Crafting|A1=Mud Bricks|A2=Packed Mud|A3=Mud Bricks|B3=Kindling|C1=Mud Bricks|C2=Packed Mud|C3=Mud Bricks|Output=Mud Kiln}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/mudkiln.json|matcha:crafting/mudkiln}}</small>
+| {{Crafting|A1=Mud Bricks|A2=Packed Mud|A3=Mud Bricks|B3=Kindling|C1=Mud Bricks|C2=Packed Mud|C3=Mud Bricks|Output=Mud Kiln}}
 |-
 | [[Oven]]
 | 3 × [[Iron Ingot]] +<br />4 × [[Bricks]] +<br />[[Kindling]]
-| {{Crafting|A1=Iron Ingot|A2=Bricks|A3=Bricks|B1=Iron Ingot|B3=Kindling|C1=Iron Ingot|C2=Bricks|C3=Bricks|Output=Oven}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/oven.json|matcha:crafting/oven}}</small>
+| {{Crafting|A1=Iron Ingot|A2=Bricks|A3=Bricks|B1=Iron Ingot|B3=Kindling|C1=Iron Ingot|C2=Bricks|C3=Bricks|Output=Oven}}
 |-
 | [[Soul Kindling]]
 | [[Kindling]] +<br /><span class="explain" title="Soul Sand, Soul Soil">Any soul fire base blocks</span>
-| {{Crafting|A1=Kindling|B1=Any Soul Fire Base Blocks|Output=Soul Kindling|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/soul_campfire.json|matcha:crafting/soul_campfire}}</small>
+| {{Crafting|A1=Kindling|B1=Any Soul Fire Base Blocks|Output=Soul Kindling|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

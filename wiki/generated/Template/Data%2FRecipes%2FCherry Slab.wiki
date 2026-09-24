@@ -12,14 +12,14 @@
 |-
 | [[Cherry Slab]]
 | [[Cherry Trapdoor]]
-| {{Stonecutter|Input=Cherry Trapdoor|Output=Cherry Slab}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/cherry_slab_from_stonecutting_cherry_trapdoor.json|matcha:stonecutting/cherry_slab_from_stonecutting_cherry_trapdoor}}</small>
+| {{Stonecutter|Input=Cherry Trapdoor|Output=Cherry Slab}}
 |-
 | [[Cherry Slab]]
 | <span class="explain" title="Cherry Log, Cherry Wood, Stripped Cherry Log, Stripped Cherry Wood">Any cherry logs</span>
-| {{Stonecutter|Input=Any Cherry Logs|Output=Cherry Slab,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/cherry_slabs_from_stonecutting_cherry_logs.json|matcha:stonecutting/cherry_slabs_from_stonecutting_cherry_logs}}</small>
+| {{Stonecutter|Input=Any Cherry Logs|Output=Cherry Slab,8}}
 |-
 | [[Cherry Slab]]
 | [[Cherry Planks]]
-| {{Stonecutter|Input=Cherry Planks|Output=Cherry Slab,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/cherry_slabs_from_stonecutting_cherry_planks.json|matcha:stonecutting/cherry_slabs_from_stonecutting_cherry_planks}}</small>
+| {{Stonecutter|Input=Cherry Planks|Output=Cherry Slab,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -3,36 +3,36 @@
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Abandoned mineshaft <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_mineshaft.json|chests/abandoned_mineshaft}})</small> || 1 || 3.97% || 
+| Abandoned mineshaft || Iron Axe || 1 || 3.97% || 
 |-
-| Equipment / iron tools <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/iron_tools.json|chests/equipment/iron_tools}})</small> || 1 || 16.7% || 
+| Equipment / iron tools || Iron Axe (enchanted) || 1 || 16.7% || 
 |-
-| Trial chambers / corridor <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/corridor.json|chests/trial_chambers/corridor}})</small> || 1 || 29.2% || 
+| Trial chambers / corridor || Iron Axe (enchanted) || 1 || 29.2% || 
 |-
-| Trial chambers / intersection <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/intersection.json|chests/trial_chambers/intersection}})</small> || 1 || 14.0% || 
+| Trial chambers / intersection || Iron Axe (enchanted) || 1 || 14.0% || 
 |-
-| Trial chambers / reward <small>({{Source|vanilla:loot_table/chests/trial_chambers/reward.json|chests/trial_chambers/reward}})</small> || 1 || 1.21% || 
+| Trial chambers / reward || Iron Axe || 1 || 1.21% || 
 |-
-| Village / village armorer <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_armorer.json|chests/village/village_armorer}})</small> || 1 || 40.1% || 
+| Village / village armorer || Iron Axe (enchanted) || 1 || 40.1% || 
 |-
-| Village / village toolsmith <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_toolsmith.json|chests/village/village_toolsmith}})</small> || 1 || 31.5% || 
+| Village / village toolsmith || Iron Axe (enchanted) || 1 || 31.5% || 
 |-
-| Village / village weaponsmith <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_weaponsmith.json|chests/village/village_weaponsmith}})</small> || 1 || 28.1% || 
+| Village / village weaponsmith || Iron Axe (enchanted) || 1 || 28.1% || 
 |}
 
 '''Mob equipment'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Trial chamber <small>({{Source|MF_datapack/data/minecraft/loot_table/equipment/trial_chamber.json|equipment/trial_chamber}})</small> || 1 || 3.81% || 
+| Trial chamber || Iron Axe (enchanted) || 1 || 3.81% || 
 |}
 
 '''Gameplay'''
 {| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
+! Source !! Variant !! Stack size !! Chance !! Notes
 |-
-| Hero of the village / weaponsmith gift <small>({{Source|vanilla:loot_table/gameplay/hero_of_the_village/weaponsmith_gift.json|gameplay/hero_of_the_village/weaponsmith_gift}})</small> || 1 || 33.3% || 
+| Hero of the village / weaponsmith gift || Iron Axe || 1 || 33.3% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

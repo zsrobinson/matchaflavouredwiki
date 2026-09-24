@@ -5,10 +5,10 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Cobbled deepslate <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/cobbled_deepslate.json|blocks/cobbled_deepslate}})</small> || 1 || 100% || specific tool
+| Cobbled deepslate || 1 || 100% || specific tool
 |-
-| Deepslate <small>({{Source|vanilla:loot_table/blocks/deepslate.json|blocks/deepslate}})</small> || 1 || 100% || Silk Touch
+| Deepslate || 1 || 100% || Silk Touch
 |-
-| Infested deepslate <small>({{Source|vanilla:loot_table/blocks/infested_deepslate.json|blocks/infested_deepslate}})</small> || 1 || 100% || Silk Touch
+| Infested deepslate || 1 || 100% || Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

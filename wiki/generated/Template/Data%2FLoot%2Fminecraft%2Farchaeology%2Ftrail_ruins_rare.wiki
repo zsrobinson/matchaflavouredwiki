@@ -2,8 +2,6 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Smithing Template}} || 1 || 26.7% || 26.7% || 
-|-
 | {{ItemLink|Burn Pottery Sherd|mcw=Burn Pottery Sherd}} || 1 || 6.67% || 6.67% || 
 |-
 | {{ItemLink|Danger Pottery Sherd|mcw=Danger Pottery Sherd}} || 1 || 6.67% || 6.67% || 
@@ -18,12 +16,22 @@
 |-
 | {{ItemLink|Sheaf Pottery Sherd}} || 1 || 6.67% || 6.67% || 
 |-
+| {{ItemLink|Wayfinder Armor Trim Smithing Template}} || 1 || 6.67% || 6.67% || 
+|-
+| {{ItemLink|Raiser Armor Trim Smithing Template}} || 1 || 6.67% || 6.67% || 
+|-
+| {{ItemLink|Shaper Armor Trim Smithing Template}} || 1 || 6.67% || 6.67% || 
+|-
+| {{ItemLink|Host Armor Trim Smithing Template}} || 1 || 6.67% || 6.67% || 
+|-
 | {{ItemLink|Music Disc (Aaron Cherof - Relic)}} || 1 || 6.67% || 6.67% || 
 |-
 | {{ItemLink|Hepatizon Alloy}} || 1 || 6.67% || 6.67% || 
 |-
 | {{ItemLink|Amber}} || 1 || 6.67% || 6.67% || 
 |-
-| {{ItemLink|Clay Fetish}} || 1 || 6.67% || 6.67% || 
+| {{ItemLink|Clay Fetish|Clay Fetish (Rejoice)}} || 1 || 3.33% || 3.33% || 
+|-
+| {{ItemLink|Clay Fetish|Clay Fetish (Lament)}} || 1 || 3.33% || 3.33% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

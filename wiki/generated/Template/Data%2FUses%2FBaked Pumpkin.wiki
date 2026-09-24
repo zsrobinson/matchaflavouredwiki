@@ -3,14 +3,14 @@
 |-
 | [[Pumpkin Empanada]]
 | [[Baked Pumpkin]] +<br />[[Sugar]] +<br />[[Estus Ash]] +<br />[[Dough]]
-| {{Crafting|A1=Baked Pumpkin|B1=Sugar|C1=Estus Ash|A2=Dough|Output=Pumpkin Empanada|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_empanada.json|matcha:food/crafting/pumpkin_empanada}}</small>
+| {{Crafting|A1=Baked Pumpkin|B1=Sugar|C1=Estus Ash|A2=Dough|Output=Pumpkin Empanada|shapeless=1}}
 |-
 | [[Pumpkin Jam]]
 | [[Baked Pumpkin]] +<br />[[Sugar]] +<br />[[Glass Bottle]]
-| {{Crafting|A1=Baked Pumpkin|B1=Sugar|C1=Glass Bottle|Output=Pumpkin Jam|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_jam.json|matcha:food/crafting/pumpkin_jam}}</small>
+| {{Crafting|A1=Baked Pumpkin|B1=Sugar|C1=Glass Bottle|Output=Pumpkin Jam|shapeless=1}}
 |-
 | [[Pumpkin Curry Stock]]
 | [[Estus Ash]] +<br />[[Sugar]] +<br />[[Baked Pumpkin]] +<br />[[Oil]] +<br />[[Sunflower]] +<br />[[Milk Bottle]] +<br />[[Carrot]] +<br />[[Bamboo]] +<br />[[Bowl]]
-| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Baked Pumpkin|A2=Oil|B2=Sunflower|C2=Milk Bottle|A3=Carrot|B3=Bamboo|C3=Bowl|Output=Pumpkin Curry Stock|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_pumpkin_curry.json|matcha:food/crafting/uncooked_pumpkin_curry}}</small>
+| {{Crafting|A1=Estus Ash|B1=Sugar|C1=Baked Pumpkin|A2=Oil|B2=Sunflower|C2=Milk Bottle|A3=Carrot|B3=Bamboo|C3=Bowl|Output=Pumpkin Curry Stock|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

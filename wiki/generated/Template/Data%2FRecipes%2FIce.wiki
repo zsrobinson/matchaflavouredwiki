@@ -3,10 +3,10 @@
 |-
 | [[Ice]]
 | [[Packed Ice]]
-| {{Crafting|A1=Packed Ice|Output=Ice,9|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ice_from_packed_ice.json|matcha:crafting/ice_from_packed_ice}}</small>
+| {{Crafting|A1=Packed Ice|Output=Ice,9|shapeless=1}}
 |-
 | [[Ice]]
 | 9 × [[Snow Block]]
-| {{Crafting|A1=Snow Block|B1=Snow Block|C1=Snow Block|A2=Snow Block|B2=Snow Block|C2=Snow Block|A3=Snow Block|B3=Snow Block|C3=Snow Block|Output=Ice|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/ice_from_snow_block.json|matcha:crafting/ice_from_snow_block}}</small>
+| {{Crafting|A1=Snow Block|B1=Snow Block|C1=Snow Block|A2=Snow Block|B2=Snow Block|C2=Snow Block|A3=Snow Block|B3=Snow Block|C3=Snow Block|Output=Ice|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

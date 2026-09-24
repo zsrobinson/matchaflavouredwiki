@@ -5,17 +5,17 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Ancient city <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/ancient_city.json|chests/ancient_city}})</small> || 1–15 || 21.5% || 
+| Ancient city || 1–15 || 21.5% || 
 |-
-| Trial chambers / intersection <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/intersection.json|chests/trial_chambers/intersection}})</small> || 8–20 || 26.6% || 
+| Trial chambers / intersection || 8–20 || 26.6% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Amethyst cluster <small>({{Source|vanilla:loot_table/blocks/amethyst_cluster.json|blocks/amethyst_cluster}})</small> || 4 || 100% || tool: #minecraft:cluster_max_harvestables
+| Amethyst cluster || 4 || 100% || tool: #minecraft:cluster_max_harvestables
 |-
-| Amethyst cluster <small>({{Source|vanilla:loot_table/blocks/amethyst_cluster.json|blocks/amethyst_cluster}})</small> || 2 || 100% || without Silk Touch, tool: #minecraft:cluster_max_harvestables
+| Amethyst cluster || 2 || 100% || without Silk Touch, tool: #minecraft:cluster_max_harvestables
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

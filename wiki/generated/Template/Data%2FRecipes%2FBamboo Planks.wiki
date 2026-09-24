@@ -4,11 +4,11 @@
 |-
 | [[Bamboo Planks]]
 | 4 × [[Block of Bamboo]]
-| {{Crafting|A1=Block of Bamboo|A2=Block of Bamboo|B1=Block of Bamboo|B2=Block of Bamboo|Output=Bamboo Planks,8}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bamboo_planks_from_bamboo_blocks.json|matcha:crafting/bamboo_planks_from_bamboo_blocks}}</small>
+| {{Crafting|A1=Block of Bamboo|A2=Block of Bamboo|B1=Block of Bamboo|B2=Block of Bamboo|Output=Bamboo Planks,8}}
 |-
 | [[Bamboo Planks]]
 | 2 × [[Bamboo Slab]]
-| {{Crafting|A1=Bamboo Slab|A2=Bamboo Slab|Output=Bamboo Planks}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/bamboo_planks_from_bamboo_slabs.json|matcha:crafting/bamboo_planks_from_bamboo_slabs}}</small>
+| {{Crafting|A1=Bamboo Slab|A2=Bamboo Slab|Output=Bamboo Planks}}
 |}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
@@ -16,10 +16,10 @@
 |-
 | [[Bamboo Planks]]
 | <span class="explain" title="Block of Bamboo, Block of Stripped Bamboo">Any bamboo blocks</span>
-| {{Stonecutter|Input=Any Bamboo Blocks|Output=Bamboo Planks,2}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/bamboo_planks_from_stonecutting_bamboo_block.json|matcha:stonecutting/bamboo_planks_from_stonecutting_bamboo_block}}</small>
+| {{Stonecutter|Input=Any Bamboo Blocks|Output=Bamboo Planks,2}}
 |-
 | [[Bamboo Planks]]
 | [[Bamboo Stairs]]
-| {{Stonecutter|Input=Bamboo Stairs|Output=Bamboo Planks}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/stonecutting/bamboo_planks_from_stonecutting_bamboo_stairs.json|matcha:stonecutting/bamboo_planks_from_stonecutting_bamboo_stairs}}</small>
+| {{Stonecutter|Input=Bamboo Stairs|Output=Bamboo Planks}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

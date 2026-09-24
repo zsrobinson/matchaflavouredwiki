@@ -5,36 +5,36 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Igloo chest <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/igloo_chest.json|chests/igloo_chest}})</small> || 2–3 || 75.1% || 
+| Igloo chest || 2–3 || 75.1% || 
 |-
-| Shipwreck supply <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_supply.json|chests/shipwreck_supply}})</small> || 8–21 || 67.0% || 
+| Shipwreck supply || 8–21 || 67.0% || 
 |-
-| Simple dungeon <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json|chests/simple_dungeon}})</small> || 1–4 || 34.1% || 
+| Simple dungeon || 1–4 || 34.1% || 
 |-
-| Underwater ruin big <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_big.json|chests/underwater_ruin_big}})</small> || 2–3 || 78.9% || 
+| Underwater ruin big || 2–3 || 78.9% || 
 |-
-| Underwater ruin small <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_small.json|chests/underwater_ruin_small}})</small> || 2–3 || 86.4% || 
+| Underwater ruin small || 2–3 || 86.4% || 
 |-
-| Village / village desert house <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_desert_house.json|chests/village/village_desert_house}})</small> || 1–7 || 80.6% || 
+| Village / village desert house || 1–7 || 80.6% || 
 |-
-| Village / village shepherd <small>({{Source|vanilla:loot_table/chests/village/village_shepherd.json|chests/village/village_shepherd}})</small> || 1–6 || 55.8% || 
+| Village / village shepherd || 1–6 || 55.8% || 
 |-
-| Woodland mansion <small>({{Source|MF_datapack/data/minecraft/loot_table/chests/woodland_mansion.json|chests/woodland_mansion}})</small> || 1–4 || 25.5% || 
+| Woodland mansion || 1–4 || 25.5% || 
 |}
 
 '''Archaeology'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Trail ruins common <small>({{Source|MF_datapack/data/minecraft/loot_table/archaeology/trail_ruins_common.json|archaeology/trail_ruins_common}})</small> || 1 || 4.55% || 
+| Trail ruins common || 1 || 4.55% || 
 |-
-| Village plains <small>({{Source|MF_datapack/data/minecraft/loot_table/archaeology/village_plains.json|archaeology/village_plains}})</small> || 1 || 15.8% || 
+| Village plains || 1 || 15.8% || 
 |}
 
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Wheat <small>({{Source|MF_datapack/data/minecraft/loot_table/blocks/wheat.json|blocks/wheat}})</small> || 1 || 100% || block state property
+| Wheat || 1 || 100% || block state property
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

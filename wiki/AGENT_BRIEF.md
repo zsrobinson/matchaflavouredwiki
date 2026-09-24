@@ -65,6 +65,10 @@ determine something from the source, leave it out. Don't guess.
 - Don't run `tools/build.sh` or `tools/sync.sh` and don't commit. The coordinator does that.
 
 ## Final report
-Reply with: the pages you wrote (titles), any facts you couldn't pin down, any contradictions
-between code and release notes, and any bugs or gaps you found in the generated data or
-shared templates.
+Reply with:
+- the pages you wrote (titles);
+- any facts you couldn't pin down;
+- any contradictions between code and release notes;
+- any bugs or gaps you found in the generated data or shared templates;
+- the paths of your best screenshots, with one line each on what they show, so the coordinator
+  can show them to the user (see "Show your work visually" in `AGENTS.md`).

@@ -4,11 +4,11 @@
 |-
 | [[Brick]]
 | [[Bricks]]
-| {{Crafting|A1=Bricks|Output=Brick,2|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/brick_from_bricks.json|matcha:crafting/brick_from_bricks}}</small>
+| {{Crafting|A1=Bricks|Output=Brick,2|shapeless=1}}
 |-
 | [[Brick]]
 | <span class="explain" title="Terracotta, White Terracotta, Orange Terracotta, Magenta Terracotta, Light Blue Terracotta, Yellow Terracotta, Lime Terracotta, Pink Terracotta, Gray Terracotta, Light Gray Terracotta, Cyan Terracotta, Purple Terracotta, Blue Terracotta, Brown Terracotta, Green Terracotta, Red Terracotta, Black Terracotta">Any terracotta</span>
-| {{Crafting|A1=Any Terracotta|Output=Brick,4|shapeless=1}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/crafting/brick_from_terracottas.json|matcha:crafting/brick_from_terracottas}}</small>
+| {{Crafting|A1=Any Terracotta|Output=Brick,4|shapeless=1}}
 |}
 '''Cooking'''
 {| class="wikitable recipe-table"
@@ -16,10 +16,10 @@
 |-
 | [[Brick]]
 | [[Clay Ball]]
-| {{Cooking|station=Kindling|Input=Clay Ball|Output=Brick|time=5|note=5 s, 0.3 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/campfire/brick_campfire.json|matcha:campfire/brick_campfire}}</small>
+| {{Cooking|station=Kindling|Input=Clay Ball|Output=Brick|time=5|note=5 s, 0.3 XP}}
 |-
 | [[Brick]]
 | [[Clay Ball]]
-| {{Cooking|station=Mud Kiln|Input=Clay Ball|Output=Brick|time=5|note=5 s, 0.3 XP}}<br /><small>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json|matcha:kiln/brick_from_smoking_clay_ball}}</small>
+| {{Cooking|station=Mud Kiln|Input=Clay Ball|Output=Brick|time=5|note=5 s, 0.3 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>
