@@ -10,8 +10,8 @@
 #pt-anonuserpage, #pt-anontalk, #pt-anoncontribs, .mw-editsection { display: none !important; }
 /* minecraft.wiki bolds "Random page" over its per-game sub-links; ours has none */
 #p-Navigation #n-randompage { font-weight: normal; }
-/* The toolbox only links to special pages, which the static site doesn't have */
-#p-tb { display: none !important; }
+/* The toolbox keeps what the static site has too (tools/export_static.py): What links here */
+#p-tb li:not(#t-whatlinkshere) { display: none !important; }
 /* Footer (site/GitLinks.php): the page record first, as tiles with the game's icons, then the license
    line, the links and the badges. The footer is dark in both themes, as on minecraft.wiki. */
 #footer-info { display: flex; flex-direction: column; }

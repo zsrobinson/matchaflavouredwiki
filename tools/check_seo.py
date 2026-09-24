@@ -46,7 +46,7 @@ def check(out):
         rel = path.relative_to(out).as_posix()
         doc = path.read_text(encoding='utf-8')
         signals = Signals(doc)
-        if rel in ('404.html', 'search/index.html'):
+        if rel in ('404.html', 'search/index.html') or rel.startswith('w/Special:'):
             if not signals.noindex or signals.canonicals or 'application/ld+json' in doc:
                 errors.append('%s: utility page must be noindex without inherited canonical/schema' % rel)
             continue
