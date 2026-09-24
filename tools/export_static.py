@@ -149,8 +149,10 @@ class Exporter:
         doc = re.sub(r'href="/index\.php\?title=Special:Search[^"]*"', 'href="/search/"', doc)
         doc = re.sub(r'<a href="/w/Special:[^"]*"[^>]*>(.*?)</a>', r'\1', doc, flags=re.S)
         doc = re.sub(r'<form action="/index\.php" id="searchform".*?</form>',
+                     # inside minecraft.wiki's search markup, so its bevelled search slot styles the box
+                     '<form action="/search/" id="searchform" class="vector-search-box-form"><div id="simpleSearch" class="vector-search-box-inner">'
                      '<pagefind-searchbox id="mfw-searchbox" instance="header" placeholder="Search Matcha Flavoured Wiki" max-results="8" '
-                     'show-sub-results shortcut="/"></pagefind-searchbox>', doc, flags=re.S)
+                     'show-sub-results shortcut="/"></pagefind-searchbox></div></form>', doc, flags=re.S)
         doc = re.sub(r'<nav id="p-tb".*?</nav>', '', doc, flags=re.S)
         doc = re.sub(r'<ul id="footer-icons".*?</ul>', '', doc, flags=re.S)
         doc = re.sub(r'<li id="footer-info-lastmod".*?</li>', '', doc, flags=re.S)
@@ -193,7 +195,7 @@ SITE_CSS = r"""/* Pagefind Component UI, styled to sit in minecraft.wiki's searc
 #p-search pagefind-searchbox, #mfw-searchbox {
   --pf-font: inherit;
   --pf-border-radius: 0;
-  --pf-input-height: 28px;
+  --pf-input-height: 27px;
   --pf-input-font-size: 13px;
   --pf-searchbox-max-width: 100%;
   --pf-background: #fff;
@@ -209,9 +211,31 @@ SITE_CSS = r"""/* Pagefind Component UI, styled to sit in minecraft.wiki's searc
   width: 100%;
 }
 #p-search { width: 20vw; min-width: 16em; max-width: 26em; }
+/* The input as minecraft.wiki draws it: translucent over the bevelled #simpleSearch slot (Gadget-mcw-vector.css),
+   no border, and the magnifier on the right in place of Pagefind's shortcut hint (the "/" shortcut still works) */
+#simpleSearch { height: 27px; }
+#p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input-wrapper { border: 0; border-radius: 0; box-shadow: none; background: none; }
+#p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input {
+  height: 27px; margin: 0; padding: 5px 2.15384615em 5px 0.4em; border: 0; border-radius: 0; outline: 0; box-shadow: none;
+  background: rgba(255, 255, 255, 0.5); color: #000; font-size: 13px;
+}
+#p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input::placeholder { color: var(--searchinput-placeholder-color); opacity: 1; }
+#p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input-wrapper::before, #p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input-wrapper .pf-search-icon { display: none; }
+#p-search #searchform #simpleSearch #mfw-searchbox .pf-trigger-shortcut { display: none; }
+#p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input-wrapper::after {
+  content: ""; position: absolute; top: 1px; bottom: 1px; right: 1px; width: 28px; pointer-events: none; opacity: 0.67;
+  background: no-repeat center / 16px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4-1.4 1.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8'/%3E%3C/svg%3E");
+}
+#p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input-wrapper { position: relative; }
+body.wgl-theme-dark #p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input { background: none; color: #fff; }
+body.wgl-theme-dark #p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input-wrapper::after { filter: invert(1); }
 /* Phones: the searchbox opens over the mobile header (MediaWiki:Vector.css), with a taller input for fingers */
 @media screen and (max-width: 720px) {
   #p-search pagefind-searchbox { --pf-input-height: 36px; }
+  /* the mobile site's plain search field, not the desktop bevel */
+  #simpleSearch { top: 0; width: auto; min-width: 0; max-width: none; height: auto; border: 0; background: none; }
+  #simpleSearch::before, #simpleSearch::after { content: none; }
+  #p-search #searchform #simpleSearch #mfw-searchbox .pf-searchbox-input { height: 36px; padding: 6px 2.5em 6px 10px; background: #fff; border: 1px solid #a2a9b1; border-radius: 2px; font-size: 16px; }
 }
 #mfw-search-page {
   --pf-font: inherit;

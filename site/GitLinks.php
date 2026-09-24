@@ -1,7 +1,7 @@
 <?php
 # Git transparency: every page links to its source file in the repository
-# ("Edit on GitHub" / "Write this page", "View source", "View history" tabs and a footer line).
-# Loaded from LocalSettings.php. site/repo.json holds the repository URL and branch;
+# (the Talk, Edit / "Write this page", "View source" and "View history" tabs, and a footer line).
+# Loaded from LocalSettings.php. site/repo.json holds the repository URL and branch and the public site;
 # the wiki/ folder is mounted at /var/www/wiki so the page's file can be found.
 
 $mfwRepo = json_decode( file_get_contents( __DIR__ . '/repo.json' ), true );
@@ -43,6 +43,20 @@ function mfwNewFileUrl( $path ) {
 	return "{$mfwRepo['url']}/new/{$mfwRepo['branch']}/$dir?filename=" . rawurlencode( basename( $path ) );
 }
 
+/** GitHub's "Problem with a page" issue form (.github/ISSUE_TEMPLATE/page.yml), with the page filled in. */
+function mfwIssueUrl( $title, $path ) {
+	global $mfwRepo;
+	$page = $mfwRepo['site'] . '/w/' . wfUrlencode( $title->getPrefixedDBkey() );
+	return "{$mfwRepo['url']}/issues/new?" . http_build_query( [
+		'template' => 'page.yml',
+		'title' => '[' . $title->getPrefixedText() . '] ',
+		'page' => "$page ($path)",
+	], '', '&', PHP_QUERY_RFC3986 );
+}
+
+// Tabs as on minecraft.wiki: Page and Talk on the left, Read, Edit, View source and View history on
+// the right, with Page and Read highlighted. Everything but Page and Read goes to GitHub: Talk opens an
+// issue about the page, Edit opens its file in GitHub's editor (which forks and opens a pull request).
 $wgHooks['SkinTemplateNavigation::Universal'][] = static function ( $skin, &$links ) {
 	$title = $skin->getTitle();
 	if ( !$title || $title->isSpecialPage() ) {
@@ -53,8 +67,15 @@ $wgHooks['SkinTemplateNavigation::Universal'][] = static function ( $skin, &$lin
 		return;
 	}
 	[ $path, $layer ] = $src;
+	$here = $title->getLocalURL();
+	$native = reset( $links['namespaces'] );
+	$links['namespaces'] = [
+		'mfw-page' => [ 'text' => $native['text'] ?? 'Page', 'href' => $here, 'class' => 'selected' ],
+		'mfw-talk' => [ 'text' => 'Talk', 'href' => mfwIssueUrl( $title, $path ) ],
+	];
+	$links['views'] = [ 'mfw-read' => [ 'text' => 'Read', 'href' => $here, 'class' => 'selected' ] ];
 	if ( $layer === 'pages' ) {
-		$links['views']['mfw-edit'] = [ 'text' => 'Edit on GitHub', 'href' => mfwGitHubUrl( 'edit', $path ) ];
+		$links['views']['mfw-edit'] = [ 'text' => 'Edit', 'href' => mfwGitHubUrl( 'edit', $path ) ];
 	} else {
 		// generated or missing: a hand-written file at this path replaces the generated page
 		$links['views']['mfw-edit'] = [ 'text' => 'Write this page',
