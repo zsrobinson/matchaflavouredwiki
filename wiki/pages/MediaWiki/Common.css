@@ -76,3 +76,50 @@ body.wgl-theme-dark .glyph img { filter: invert(1) brightness(0.92); }
 .mw-parser-output td > span[id]:target { scroll-margin-top: 96px; }
 .mw-parser-output tr:has(> td > span[id]:target) > td { background-color: #fff3c4; }
 body.wgl-theme-dark .mw-parser-output tr:has(> td > span[id]:target) > td { background-color: #4a4221; }
+
+/* Page previews (MediaWiki:Gadget-mfwPreview.js): the Popups extension's page card, as minecraft.wiki
+   shows it; its dark theme is in Gadget-mcw-vector.css. The picture sits at the side (icons, mobs) or
+   on top (wide structure views); icons are drawn at their own pixel size, not cropped. */
+@keyframes mwe-popups-fade-in-up { 0% { opacity: 0; transform: translate(0, 20px); } 100% { opacity: 1; transform: translate(0, 0); } }
+@keyframes mwe-popups-fade-in-down { 0% { opacity: 0; transform: translate(0, -20px); } 100% { opacity: 1; transform: translate(0, 0); } }
+.mwe-popups-fade-in-up { animation: mwe-popups-fade-in-up 0.2s ease forwards; }
+.mwe-popups-fade-in-down { animation: mwe-popups-fade-in-down 0.2s ease forwards; }
+.mwe-popups {
+	position: absolute; z-index: 110; min-width: 300px; max-width: calc(100vw - 16px); border-radius: 2px;
+	background: transparent; font-size: 0.875rem; line-height: 20px; text-align: left;
+	filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.25)) drop-shadow(0 12px 18px rgba(0, 0, 0, 0.18));
+}
+.mwe-popups.mwe-popups-is-tall { width: 450px; }
+.mwe-popups.mwe-popups-is-not-tall { width: 320px; }
+.mwe-popups .mwe-popups-container {
+	--pointer-offset: 26px;
+	display: flex; margin-top: -8px; padding-top: 8px; color: #202122; background: #fff;
+	clip-path: polygon(2px 8px, calc(var(--pointer-offset) - 8px) 8px, var(--pointer-offset) 0, calc(var(--pointer-offset) + 8px) 8px,
+		calc(100% - 2px) 8px, 100% 10px, 100% calc(100% - 2px), calc(100% - 2px) 100%, 2px 100%, 0 calc(100% - 2px), 0 10px);
+}
+.mwe-popups.flipped-y .mwe-popups-container, .mwe-popups.flipped-x-y .mwe-popups-container {
+	margin: 0 0 -8px; padding: 0 0 8px;
+	clip-path: polygon(2px 0, calc(100% - 2px) 0, 100% 2px, 100% calc(100% - 10px), calc(100% - 2px) calc(100% - 8px),
+		calc(var(--pointer-offset) + 8px) calc(100% - 8px), var(--pointer-offset) 100%, calc(var(--pointer-offset) - 8px) calc(100% - 8px),
+		2px calc(100% - 8px), 0 calc(100% - 10px), 0 2px);
+}
+.mwe-popups.flipped-x .mwe-popups-container, .mwe-popups.flipped-x-y .mwe-popups-container { --pointer-offset: calc(100% - 26px); }
+.mwe-popups.mwe-popups-is-not-tall .mwe-popups-container { flex-direction: column; }
+.mwe-popups .mwe-popups-discreet { display: flex; align-items: center; justify-content: center; border: 0 solid rgba(0, 0, 0, 0.1); }
+.mwe-popups.mwe-popups-is-tall .mwe-popups-discreet { order: 1; width: 203px; flex: none; min-height: 242px; border-left-width: 1px; }
+.mwe-popups.mwe-popups-is-not-tall .mwe-popups-discreet { height: 192px; border-bottom-width: 1px; }
+.mwe-popups .mwe-popups-thumbnail { display: block; max-width: 100%; max-height: 100%; object-fit: contain; }
+.mwe-popups.mwe-popups-is-tall .mwe-popups-thumbnail { max-height: 250px; }
+.mwe-popups.mwe-popups-is-not-tall .mwe-popups-thumbnail { width: 100%; height: 100%; }
+.mwe-popups .mwe-popups-thumbnail.mfw-popups-pixel { width: 128px; height: 128px; image-rendering: pixelated; }
+.mwe-popups .mwe-popups-extract { position: relative; display: block; margin: 16px; padding-bottom: 4px; overflow: hidden; color: inherit; text-decoration: none; }
+.mwe-popups .mwe-popups-extract:hover { text-decoration: none; color: inherit; }
+.mwe-popups .mwe-popups-extract p { margin: 0; }
+.mwe-popups.mwe-popups-is-tall .mwe-popups-extract { width: 215px; max-height: 176px; flex: none; }
+.mwe-popups.mwe-popups-is-not-tall .mwe-popups-extract { min-height: 50px; max-height: 136px; }
+.mwe-popups .mwe-popups-extract::after {
+	content: ''; position: absolute; right: 0; bottom: 0; width: 25%; height: 20px; pointer-events: none;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 50%);
+}
+body.wgl-theme-dark .mwe-popups { background: transparent; }
+body.wgl-theme-dark .mwe-popups .mwe-popups-discreet { border-color: rgba(255, 255, 255, 0.12); }

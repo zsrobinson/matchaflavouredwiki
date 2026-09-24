@@ -118,6 +118,10 @@ the swap mid-way.
   window, which ignores the viewport tag). Keep desktop (over 720px) pixel-identical: scope every mobile
   rule to the media query. Wide centred thumbnails (the 760px structure views) shrink to the screen:
   MediaWiki lays a thumb out as a table, which ignores `max-width`, so the phone rules make them blocks.
+- **Page previews:** hovering a link to another article shows minecraft.wiki's Popups card (lead
+  paragraph and infobox picture). There's no API: `Gadget-mfwPreview.js` fetches the linked page and reads
+  it, so the live wiki and the export behave alike. It emits Popups' `.mwe-popups` markup, so the vendored
+  dark theme applies; the card CSS is in `MediaWiki:Common.css`. Slot links keep their minetip; no previews on touch.
 - **Icons:**
   - Item icons are `File:<Item Name>.png`, upscaled 8× nearest-neighbour.
   - Blocks are rendered as true isometric cubes (horizontal step = cos 30°); don't go back to 2:1.
@@ -193,7 +197,7 @@ the swap mid-way.
     (`Category:`, `Template:`) once looped.
 - **What the export keeps and strips:** it removes MediaWiki's scripts except the theme boot, and keeps the `ca-mfw-*` GitHub tabs.
   It also replaces legacy Vector's fixed `width=1120` viewport with `device-width`, so phones get the vendored narrow-screen layout.
-  Its `site.js` is `Gadget-mfwShell.js` and `Gadget-mfwTooltip.js` (plain DOM, no jQuery) plus `SITE_JS`.
+  Its `site.js` is `Gadget-mfwShell.js`, `Gadget-mfwTooltip.js` and `Gadget-mfwPreview.js` (plain DOM, no jQuery) plus `SITE_JS`.
 - **Search** is Pagefind (Component UI searchbox and the `/search/` page).
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;
