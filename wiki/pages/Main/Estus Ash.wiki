@@ -11,7 +11,7 @@ Every Raw Estus that enters a player's inventory is replaced with one Estus Ash,
 
 === Loot ===
 {{Sources}}
-For skeletons, strays and bogged, the chosen drop is 0 or 1 Estus Ash with equal odds; the "Chance" column already includes this, giving 50% for skeletons and strays and about 45% for bogged.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/skeleton.json}}</ref> Witches always drop 4–8 Estus Ash, plus 0–1 per level of Looting.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json}}</ref> The fishing junk entry was added so that players on Peaceful can still get Estus Ash.<ref>{{Cite changelog|1.12.1-alpha|quote=Estus Ash added to Junk pool (For peaceful players)}}</ref>
+For skeletons, strays and bogged, the chosen drop is 0 or 1 Estus Ash with equal odds; the "Chance" column already includes this, giving 50% for skeletons and strays and about 45% for bogged.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/skeleton.json}}</ref> Witches killed by a player always drop 4–8 Estus Ash, plus 0–1 per level of Looting.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json}}</ref> The fishing junk entry was added so that players on Peaceful can still get Estus Ash.<ref>{{Cite changelog|1.12.1-alpha|quote=Estus Ash added to Junk pool (For peaceful players)}}</ref>
 
 == Usage ==
 Estus Ash is used for [[Stabilized Estus]] (seven per piece), five [[blessing]]s, [[Crystallized Estus]], [[Spectral Arrow]]s and many foods, including the curry stocks and the empanadas and cupcakes.

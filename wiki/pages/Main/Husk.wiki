@@ -8,13 +8,13 @@
 |health={{Data/Difficulty/Husk/Infobox|max_health}}
 |speedmob={{Data/Difficulty/Husk/Infobox|movement_speed}}
 |attack={{Data/Difficulty/Husk/Infobox|attack_damage}}
-|spawn=Every Overworld biome
+|spawn=Most Overworld biomes
 |drops={{ItemLink|Sturdy Leather}}, {{ItemLink|Raw Estus}}
 }}
-A '''husk''' in [[Matcha Flavoured]] is a slow, heavily armored undead "tank". While [[Zombie|zombies]] are fast and fragile, husks on Normal and Hard have up to 20 hearts, strong armor, near-total knockback resistance and very heavy hits. They spawn in every Overworld biome, not just deserts, and the resource pack makes them white to set them apart from zombies.
+A '''husk''' in [[Matcha Flavoured]] is a slow, heavily armored undead "tank". While [[Zombie|zombies]] are fast and fragile, husks on Normal and Hard have up to 20 hearts, strong armor, near-total knockback resistance and very heavy hits. They spawn in almost every Overworld biome, not just deserts, and the resource pack makes them white to set them apart from zombies.
 
 == Spawning ==
-Husks are added to every Overworld biome that spawns monsters, with weight 75 in groups of 1–2. In deserts this replaces the vanilla weight of 80 in groups of 4.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/plains.json}}</ref> Like other undead, they can spawn on the open surface until the [[Ender Dragon]] is killed; see [[Spawning]] and [[Surface]].
+Husks are added to almost every Overworld biome that spawns monsters (not the sulfur caves, which the pack leaves as in vanilla), with weight 75 in groups of 1–2. In deserts this replaces the vanilla weight of 80 in groups of 4.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/plains.json}}</ref> Like other undead, they can spawn on the open surface until the [[Ender Dragon]] is killed; see [[Spawning]] and [[Surface]].
 
 Husk jockeys are removed: a husk that spawns riding a camel husk is replaced by a husk on foot, and the camel husk is left alone.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/remove_camel_husk_jockey.mcfunction}}</ref> Husks also come from spawners in [[Abbey|abbeys]]; those husks drop nothing.
 
