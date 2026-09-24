@@ -1,17 +1,17 @@
 {{Infobox auto}}
 
-'''Grilled tomatoes''' are the simple preparation of [[tomatoes]]. They heal {{Hp|4}} and grant {{EffectLink|Strength}} for 10 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/grilled_tomatoes.json}}</ref>
+'''Grilled tomatoes''' are the simple preparation of [[tomatoes]]. They heal {{Value|Grilled Tomatoes|heals}} and grant {{EffectLink|Strength}} for {{Value|Grilled Tomatoes|duration|effect=Strength}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/grilled_tomatoes.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-Tomatoes cook into grilled tomatoes in an [[oven]] or on [[kindling]] in 5 seconds. Picking up tomatoes unlocks the oven recipe.
+Tomatoes cook into grilled tomatoes in an [[oven]] or on [[kindling]] in {{Value|Grilled Tomatoes|cook_time}}. Picking up tomatoes unlocks the oven recipe.
 
 == Usage ==
 
 === Food ===
-Eating grilled tomatoes takes 1.6 seconds, heals {{Hp|4}} and gives Strength I for 0:10.
+Eating grilled tomatoes takes {{Value|Grilled Tomatoes|eat_time}}, heals {{Value|Grilled Tomatoes|heals}} and gives Strength {{Value|Grilled Tomatoes|level|effect=Strength}} for {{Value|Grilled Tomatoes|duration|effect=Strength|format=clock}}.
 
 == Advancements ==
 * ''Powerful Flavors'': cook an intrinsic ingredient. Obtaining any of the 11 simple preparations of the ordinary intrinsic ingredients completes it.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/cook_food.json}}</ref>

@@ -14,7 +14,7 @@ This upgrade needs a [[smithing upgrade template]]; without one, the same copper
 == Usage ==
 
 === Mining ===
-It breaks pickaxe and axe blocks at speed 7 and has 1000 durability. Unlike the shakudo pickaxe it has no obsidian rule, so it harvests obsidian too.
+It breaks pickaxe and axe blocks at speed {{Value|Shakudo Dolabra|miningspeed}} and has {{Value|Shakudo Dolabra|durability}} durability. Unlike the shakudo pickaxe it has no obsidian rule, so it harvests obsidian too.
 
 Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
@@ -22,7 +22,7 @@ Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks th
 Its [[Silk Touch]] intrinsic makes blocks drop themselves. Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 === Combat ===
-It deals {{Hp|7}} damage at an attack speed of 1.
+It deals {{Value|Shakudo Dolabra|damage}} damage at an attack speed of {{Value|Shakudo Dolabra|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

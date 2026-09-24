@@ -2,18 +2,18 @@
 
 {{Infobox auto}}
 
-'''Cooked mutton''' is cooked meat. Like all meat in Matcha Flavoured, it has no [[intrinsic]]: it heals {{Hp|4}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_mutton.json}}</ref>
+'''Cooked mutton''' is cooked meat. Like all meat in Matcha Flavoured, it has no [[intrinsic]]: it heals {{Value|Cooked Mutton|heals}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_mutton.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-Raw mutton cooks in an [[oven]] or on [[kindling]] in 5 seconds. The vanilla recipes are replaced, and in a [[Mud Kiln|mud kiln]] it becomes [[Charred Meat|charred meat]] instead.
+Raw mutton cooks in an [[oven]] or on [[kindling]] in {{Value|Cooked Mutton|cook_time}}. The vanilla recipes are replaced, and in a [[Mud Kiln|mud kiln]] it becomes [[Charred Meat|charred meat]] instead.
 
 == Usage ==
 
 === Food ===
-Eating it takes 1.6 seconds and heals {{Hp|4}}.
+Eating it takes {{Value|Cooked Mutton|eat_time}} and heals {{Value|Cooked Mutton|heals}}.
 
 Cooked mutton can top a [[Pizza|meat pizza]]. Raw mutton goes into [[Curry Stock|curry stock]].
 

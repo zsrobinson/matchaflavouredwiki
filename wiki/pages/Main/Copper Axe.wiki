@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-A '''copper axe''' is an [[Tools#Axe|axe]] of the [[Copper equipment|copper]] tier, crafted from [[copper ingot]]s and sticks. It chops wood at speed 6 and hits for {{Hp|9}}, making it both an early woodcutting tool and a strong but slow weapon.
+A '''copper axe''' is an [[Tools#Axe|axe]] of the [[Copper equipment|copper]] tier, crafted from [[copper ingot]]s and sticks. It chops wood at speed {{Value|Copper Axe|miningspeed}} and hits for {{Value|Copper Axe|damage}}, making it both an early woodcutting tool and a strong but slow weapon.
 
 == Obtaining ==
 
@@ -12,10 +12,10 @@ A '''copper axe''' is an [[Tools#Axe|axe]] of the [[Copper equipment|copper]] ti
 == Usage ==
 
 === Woodcutting ===
-The copper axe breaks axe blocks at speed 6, one faster than the vanilla copper axe, and lasts 350 uses. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+The copper axe breaks axe blocks at speed {{Value|Copper Axe|miningspeed}}, one faster than the vanilla copper axe, and lasts {{Value|Copper Axe|durability}} uses. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|9}} damage at an attack speed of 0.8, more than the [[copper sword]] ({{Hp|5}}) per hit but at half the swing rate.
+It deals {{Value|Copper Axe|damage}} damage at an attack speed of {{Value|Copper Axe|attackspeed}}, more than the [[copper sword]] ({{Hp|5}}) per hit but at half the swing rate.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[copper ingot]]s. As with all equipment in the pack, the repair cost never grows, so it can be repaired indefinitely; see [[Repairing]].

@@ -1,17 +1,17 @@
 {{Infobox auto}}
 
-'''Pumpkin curry''' is an oven meal of the [[pumpkin]]. It heals {{Hp|20}} and grants {{EffectLink|Resistance}} for 20 minutes, the longest Resistance from food. It is the only oven meal that can't be cooked on [[kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref>
+'''Pumpkin curry''' is an oven meal of the [[pumpkin]]. It heals {{Value|Pumpkin Curry|heals}} and grants {{EffectLink|Resistance}} for {{Value|Pumpkin Curry|duration|effect=Resistance}}, the longest Resistance from food. It is the only oven meal that can't be cooked on [[kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-A [[pumpkin curry stock]] cooks into pumpkin curry in 15 seconds in an [[oven]]. Obtaining the stock unlocks the recipe.
+A [[pumpkin curry stock]] cooks into pumpkin curry in {{Value|Pumpkin Curry|cook_time}} in an [[oven]]. Obtaining the stock unlocks the recipe.
 
 == Usage ==
 
 === Food ===
-Eating it takes 3 seconds, heals {{Hp|20}} and gives Resistance I for 20:00. The bowl is given back.
+Eating it takes {{Value|Pumpkin Curry|eat_time}}, heals {{Value|Pumpkin Curry|heals}} and gives Resistance {{Value|Pumpkin Curry|level|effect=Resistance}} for {{Value|Pumpkin Curry|duration|effect=Resistance|format=clock}}. The bowl is given back.
 
 === Trading ===
 {{Upcoming|type=section}}

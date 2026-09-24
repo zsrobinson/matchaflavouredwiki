@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Pickled mushrooms''' are pickled [[Braised Mushroom|braised mushrooms]]. They heal {{Hp|6}} and have no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_mushrooms.json}}</ref>
+'''Pickled mushrooms''' are pickled [[Braised Mushroom|braised mushrooms]]. They heal {{Value|Pickled Mushrooms|heals}} and have no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_mushrooms.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A braised mushroom, a brown mushroom and a glass bottle. Obtaining a braised mus
 == Usage ==
 
 === Food ===
-Eating pickled mushrooms takes 1.6 seconds and heals {{Hp|6}}. It gives the glass bottle back when eaten.
+Eating pickled mushrooms takes {{Value|Pickled Mushrooms|eat_time}} and heals {{Value|Pickled Mushrooms|heals}}. It gives the glass bottle back when eaten.
 
 == History ==
 {{History|

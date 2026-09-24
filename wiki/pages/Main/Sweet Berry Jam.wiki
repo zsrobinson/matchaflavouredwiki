@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Sweet berry jam''' is the preservation of [[Sweet Berries|sweet berries]]. It heals {{Hp|4}} and grants {{EffectLink|Health Boost}} for 3 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sweet_berry_jam.json}}</ref>
+'''Sweet berry jam''' is the preservation of [[Sweet Berries|sweet berries]]. It heals {{Value|Sweet Berry Jam|heals}} and grants {{EffectLink|Health Boost}} for {{Value|Sweet Berry Jam|duration|effect=Health Boost}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sweet_berry_jam.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@
 == Usage ==
 
 === Food ===
-Eating sweet berry jam takes 1.6 seconds, heals {{Hp|4}} and gives Health Boost I (+2 hearts of maximum health) for 3:00. It gives the glass bottle back when eaten.
+Eating sweet berry jam takes {{Value|Sweet Berry Jam|eat_time}}, heals {{Value|Sweet Berry Jam|heals}} and gives Health Boost {{Value|Sweet Berry Jam|level|effect=Health Boost}} (+2 hearts of maximum health) for {{Value|Sweet Berry Jam|duration|effect=Health Boost|format=clock}}. It gives the glass bottle back when eaten.
 
 == History ==
 {{History|

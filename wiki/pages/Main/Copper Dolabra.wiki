@@ -12,14 +12,14 @@ A '''copper dolabra''' is a [[dolabra]] of the [[Copper equipment|copper]] tier,
 == Usage ==
 
 === Mining ===
-The copper dolabra breaks both pickaxe and axe blocks at speed 5, one slower than the [[copper pickaxe]] or [[copper axe]], and has 350 durability.
+The copper dolabra breaks both pickaxe and axe blocks at speed {{Value|Copper Dolabra|miningspeed}}, one slower than the [[copper pickaxe]] or [[copper axe]], and has {{Value|Copper Dolabra|durability}} durability.
 
 Its harvesting rules differ from the copper pickaxe's. It gets no drops from diamond ore (which it breaks at speed 4) or from [[sulfurous quartz deposit]]s and [[sulfur deposit]]s, but it harvests [[native gold]] and obsidian, which the copper pickaxe cannot.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_dolabra.json}}</ref> This makes it the only copper tool that can mine obsidian.
 
 Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|5}} damage at an attack speed of 0.8.
+It deals {{Value|Copper Dolabra|damage}} damage at an attack speed of {{Value|Copper Dolabra|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[copper ingot]]s. As with all equipment in the pack, the repair cost never grows, so it can be repaired indefinitely; see [[Repairing]].

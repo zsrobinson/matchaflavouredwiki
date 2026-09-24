@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Ice cream''' is a cold dessert that heals {{Hp|8}} and removes harmful effects.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/ice_cream.json}}</ref>
+'''Ice cream''' is a cold dessert that heals {{Value|Ice Cream|heals}} and removes harmful effects.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/ice_cream.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A snowball, a [[Milk Bottle|milk bottle]], sugar, a blue orchid and [[bread]] (o
 == Usage ==
 
 === Food ===
-Eating ice cream takes 1.3 seconds, heals {{Hp|8}} and removes the same maleffects as [[bread]]. It leaves a [[bowl]] behind, although the recipe doesn't use one.
+Eating ice cream takes {{Value|Ice Cream|eat_time}}, heals {{Value|Ice Cream|heals}} and removes the same maleffects as [[bread]]. It leaves a [[bowl]] behind, although the recipe doesn't use one.
 
 === Trading ===
 {{Upcoming|type=section}}

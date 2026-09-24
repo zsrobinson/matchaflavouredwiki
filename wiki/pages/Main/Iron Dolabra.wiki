@@ -15,14 +15,14 @@ An '''iron dolabra''' is a [[dolabra]] of the [[Iron equipment|iron]] tier, a co
 == Usage ==
 
 === Mining ===
-It breaks pickaxe and axe blocks at speed 6, one slower than the [[iron pickaxe]] or [[iron axe]], and has 500 durability.
+It breaks pickaxe and axe blocks at speed {{Value|Iron Dolabra|miningspeed}}, one slower than the [[iron pickaxe]] or [[iron axe]], and has {{Value|Iron Dolabra|durability}} durability.
 
 Unlike the iron pickaxe, it has no obsidian restriction, so it harvests obsidian, crying obsidian and ender chests at its normal speed.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/iron_dolabra.json}}</ref> The [[copper dolabra]] can do the same, although the 1.12.1-alpha notes say only diamond, electrum and adamant tools can mine obsidian.
 
 Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|6}} damage at an attack speed of 0.9.
+It deals {{Value|Iron Dolabra|damage}} damage at an attack speed of {{Value|Iron Dolabra|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

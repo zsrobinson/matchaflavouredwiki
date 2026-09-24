@@ -15,10 +15,10 @@ The upgrade needs no template, and enchantments on the diamond item carry over; 
 == Usage ==
 
 === Woodcutting ===
-It breaks axe blocks at speed 12 and has 3000 durability. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+It breaks axe blocks at speed {{Value|Electrum Axe|miningspeed}} and has {{Value|Electrum Axe|durability}} durability. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|9}} damage at an attack speed of 1.2. Smite III and [[Warding]] 2 make it effective against undead, and Looting II increases mob drops.
+It deals {{Value|Electrum Axe|damage}} damage at an attack speed of {{Value|Electrum Axe|attackspeed}}. Smite III and [[Warding]] 2 make it effective against undead, and Looting II increases mob drops.
 
 === Intrinsics ===
 The electrum fortune intrinsic ({{G|Fortune}}) works like [[Fortune]] on ores, crops and leaves; the pack's loot tables check for it directly. Electrum tools are the only source of Fortune III in the pack, and the intrinsic cannot be combined with Fortune or Silk Touch.<ref>{{Source|MF_datapack/data/matcha/enchantment/electrum_tool.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>

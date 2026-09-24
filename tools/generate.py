@@ -22,6 +22,7 @@ Outputs (Template namespace unless noted):
   Data/Current version, Source/commit
   Module:Inventory slot/Aliases   tag names ("Any Planks") for recipe slots
   Module:Tooltip/Data     each item's in-game tooltip (name colour, lore runs) and glyph widths
+  Module:Data/Values      numbers for prose ({{Value|item|field}}: heals, effects, eat and cook times, stats)
   Main/<item>              stub article for every item that has no hand-written page
   Main/<vanilla name>      redirect from each vanilla name to its renamed item
 """
@@ -2951,6 +2952,7 @@ def case_redirects(n):
 # ------------------------------------------------------------------ categories
 CATEGORY_TEXT = {
     'Generated data': 'Data pages generated from the pack source by <code>tools/generate.py</code>. They are transcluded into articles and are not meant to be read on their own.',
+    'Pages with unknown values': 'Pages where a <code><nowiki>{{Value}}</nowiki></code> names an item, field or format the pack data does not have ([[Template:Value]]). The build fails while any page is here.__HIDDENCAT__',
     'Stubs': 'Articles generated from the pack data that have no written description yet.',
     'Redirects from vanilla names': 'Vanilla names that redirect to the renamed item in Matcha Flavoured.',
     'Renamed items': 'Vanilla items and blocks that Matcha Flavoured renames.',
@@ -3036,6 +3038,125 @@ def tooltip_data():
         out.append('\t\t[%s] = { %s },' % (lua_str(name), ', '.join(parts)))
     out.append('\t},')
     out.append('\tglyphs = { %s },' % ', '.join('[%d] = %d' % kv for kv in sorted(images.glyph_widths().items())))
+    out.append('}')
+    return '\n'.join(out)
+
+
+# ------------------------------------------------------------------ values for prose
+# {{Value|<item>|<field>}} (Module:Value) puts one of an item's numbers into running text, so prose
+# like "heals {{Hp|8}} ... for 2 minutes" follows the pack. Every value is written here already
+# formatted, once per format, from the same code as the infobox; the module only picks a string.
+def plural(n, unit):
+    return '%s %s%s' % (n, unit, '' if n == '1' else 's')
+
+
+def full_roman(n):
+    out = ''
+    for v, r in ((1000, 'M'), (900, 'CM'), (500, 'D'), (400, 'CD'), (100, 'C'), (90, 'XC'), (50, 'L'), (40, 'XL'),
+                 (10, 'X'), (9, 'IX'), (5, 'V'), (4, 'IV'), (1, 'I')):
+        while n >= v:
+            out += r
+            n -= v
+    return out
+
+
+def duration_formats(t):
+    """A duration in ticks in each of the prose and table forms pages use ("2 minutes", "2:00", ...)."""
+    if t < 0:
+        return {1: 'infinite', 'clock': '∞', 'ticks': str(t)}
+    secs = fmt_num(t / 20)
+    out = {'clock': ticks(t), 'seconds': plural(secs, 'second'), 'minutes': plural(fmt_num(t / 1200), 'minute'),
+           'secs': secs, 'ticks': str(t)}
+    if t % 20 == 0 and t >= 1200 and t % 1200:
+        m, sec = divmod(t // 20, 60)  # "2 minutes 30 seconds"
+        out['long'] = '%s %s' % (plural(str(m), 'minute'), plural(str(sec), 'second'))
+    if t % 600:
+        del out['minutes']  # only whole and half minutes read naturally ("1.5 minutes")
+    out[1] = out['minutes'] if t % 1200 == 0 else out['seconds']
+    return out
+
+
+def item_values(item):
+    """{field: {format: text}} for one item; format 1 is the default. A field the data can't give one
+    value for holds {'error': why}."""
+    c = effective(item)
+    v = {}
+    effs = consume_effects(c)
+    if effs:
+        hp, others = heal_from_effects(effs)
+        if hp:
+            v['heals'] = {1: '{{Hp|%d}}' % hp, 'raw': str(hp), 'hearts': plural(fmt_num(hp / 2), 'heart')}
+        by = defaultdict(list)
+        for e in others:
+            by[effect_name(e['id'])].append(e)
+        for name, es in by.items():
+            if len(es) > 1:
+                why = '%s has %d %s effects: say which in the prose' % (item['name'], len(es), name)
+                v['level:' + name] = v['duration:' + name] = {'error': why}
+                continue
+            amp = es[0].get('amplifier', 0)
+            v['level:' + name] = {1: roman(amp + 1), 'raw': str(amp + 1), 'roman': full_roman(amp + 1)}
+            if es[0].get('duration') is not None:
+                v['duration:' + name] = duration_formats(es[0]['duration'])
+        cs = fmt_num((c.get('consumable') or {}).get('consume_seconds', 1.6))
+        v['eat_time'] = {1: plural(cs, 'second'), 'raw': cs}
+    if 'unbreakable' in c:
+        v['durability'] = {1: 'Unbreakable'}
+    elif c.get('max_damage'):
+        v['durability'] = {1: str(c['max_damage'])}
+    dmg, has = attr_sum(c, 'attack_damage', 'mainhand')
+    if has:
+        v['damage'] = {1: '{{Hp|%s}}' % fmt_num(1 + dmg), 'raw': fmt_num(1 + dmg)}
+    spd, has = attr_sum(c, 'attack_speed', 'mainhand')
+    if has:
+        v['attackspeed'] = {1: fmt_num(4 + spd)}
+    tool = c.get('tool')
+    if tool and mining_speed(tool) is not None:
+        v['miningspeed'] = {1: fmt_num(mining_speed(tool))}
+    for attr, key in (('armor', 'armor'), ('armor_toughness', 'toughness')):
+        x, has = attr_sum(c, attr)
+        if has and x:
+            v[key] = {1: fmt_num(x)}
+    # cooking time of the recipes that make it, per station, and overall when every station agrees
+    cook = defaultdict(set)
+    for r in producing(item.get('_key', item['name'])):
+        if r['station'] in COOKING_STATIONS:
+            cook[r['station']].add(cook_ticks(r))
+    for station, ts in cook.items():
+        v['cook_time:' + station] = duration_formats(ts.pop()) if len(ts) == 1 else {
+            'error': '%s cooks in %d different times in a %s' % (item['name'], len(ts), station)}
+    alltimes = {cook_ticks(r) for r in producing(item.get('_key', item['name'])) if r['station'] in COOKING_STATIONS}
+    if len(alltimes) == 1:
+        v['cook_time'] = duration_formats(next(iter(alltimes)))
+    elif alltimes:
+        v['cook_time'] = {'error': '%s cooks in different times at different stations: give station=' % item['name']}
+    return v
+
+
+def values_data():
+    """Module:Data/Values, and the same table as build/values.json for tools/lint_pages.py."""
+    vals = {}
+    for key, it in ITEMS.items():
+        title = safe(key)
+        if not title or title.startswith(('item.kleispack', 'adv.')):
+            continue
+        v = item_values(it)
+        if v:
+            vals[title] = v
+    with open(os.path.join(ROOT, 'build', 'values.json'), 'w', encoding='utf-8') as f:
+        json.dump({k: {fld: {str(fmt): s for fmt, s in fm.items()} for fld, fm in v.items()} for k, v in vals.items()},
+                  f, ensure_ascii=False, sort_keys=True, indent=0)
+    def fmts(fm):
+        return ', '.join(lua_str(s) if k == 1 else '%s = %s' % (k, lua_str(s))
+                         for k, s in sorted(fm.items(), key=lambda kv: (kv[0] != 1, str(kv[0]))))
+    out = ['-- Generated by tools/generate.py from item components and recipes in the pack\'s source. Do not edit.',
+           '-- values[item][field] = { default text, <format> = text, ... } or { error = why } (Module:Value).',
+           'return {']
+    for name in sorted(vals):
+        out.append('\t[%s] = {' % lua_str(name))
+        for fld in sorted(vals[name]):
+            out.append('\t\t[%s] = { %s },' % (lua_str(fld), fmts(vals[name][fld])))
+        out.append('\t},')
     out.append('}')
     return '\n'.join(out)
 
@@ -3409,6 +3530,7 @@ def main():
     lua.append('}\nreturn aliases')
     write('Module', 'Inventory slot/Aliases', '\n'.join(lua))
     write('Module', 'Tooltip/Data', tooltip_data())
+    write('Module', 'Data/Values', values_data())
     for family in sorted(families()):
         write('Template', 'Data/Family/' + family, family_obtaining(family)); n['family tables'] += 1
         if family not in FAMILY_HOME and not hand_exists('Main', family):

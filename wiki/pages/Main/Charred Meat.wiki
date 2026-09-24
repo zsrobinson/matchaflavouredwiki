@@ -1,17 +1,17 @@
 {{Infobox auto}}
 
-'''Charred meat''' is meat burnt in a [[Mud Kiln|mud kiln]]. It heals {{Hp|2}}, half as much as properly cooked meat, and has no other use.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref>
+'''Charred meat''' is meat burnt in a [[Mud Kiln|mud kiln]]. It heals {{Value|Charred Meat|heals}}, half as much as properly cooked meat, and has no other use.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref>
 
 == Obtaining ==
 
 === Kilning ===
 {{Recipes}}
-Any raw meat (beef, chicken, porkchop, mutton or flesh) becomes charred meat in a mud kiln in 5 seconds. The recipe isn't added to the recipe book.
+Any raw meat (beef, chicken, porkchop, mutton or flesh) becomes charred meat in a mud kiln in {{Value|Charred Meat|cook_time}}. The recipe isn't added to the recipe book.
 
 == Usage ==
 
 === Food ===
-Eating charred meat takes 1.6 seconds and heals {{Hp|2}} through Regeneration IV.
+Eating charred meat takes {{Value|Charred Meat|eat_time}} and heals {{Value|Charred Meat|heals}} through Regeneration IV.
 
 == See also ==
 * [[Cooking#Charring]]

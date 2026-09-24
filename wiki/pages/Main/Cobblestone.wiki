@@ -9,14 +9,14 @@ Limestone drops cobblestone when mined without Silk Touch, as in vanilla.
 === Crafting and smelting ===
 {{Recipes}}
 * Four flint in a square make 1 cobblestone.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/cobblestone.json}}</ref>
-* A blast furnace turns limestone back into cobblestone (5 seconds).
+* A blast furnace turns limestone back into cobblestone ({{Value|Cobblestone|cook_time|station=Blast Furnace}}).
 * An [[oven]] turns mossy cobblestone into cobblestone.
 * Two cobblestone slabs craft back into a block.
 
 == Usage ==
 {{Uses}}
 * Fired in a mud kiln, cobblestone becomes limestone; the vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
-* Blasted, it becomes gravel (5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/blast/gravel.json}}</ref>
+* Blasted, it becomes gravel ({{Value|Gravel|cook_time|station=Blast Furnace}}).<ref>{{Source|MF_datapack/data/matcha/recipe/blast/gravel.json}}</ref>
 * Two cobblestone and two [[quartz]] make 4 [[diorite]].
 
 == History ==

@@ -112,13 +112,13 @@ Fish heal only once cooked. Raw fish can still be eaten, but they restore no hea
 {| class="wikitable"
 ! Raw fish !! Result !! Heals !! Stations
 |-
-| Small fish ([[cod]]-based) and {{ItemLink|Tropical Fish}} || {{ItemLink|Cooked Fish}} || {{Hp|4}} || [[Oven]], [[Kindling]]
+| Small fish ([[cod]]-based) and {{ItemLink|Tropical Fish}} || {{ItemLink|Cooked Fish}} || {{Value|Cooked Fish|heals}} || [[Oven]], [[Kindling]]
 |-
-| Large fish ([[salmon]]-based) || {{ItemLink|Cooked Large Fish}} || {{Hp|5}} || Oven, Kindling
+| Large fish ([[salmon]]-based) || {{ItemLink|Cooked Large Fish}} || {{Value|Cooked Large Fish|heals}} || Oven, Kindling
 |-
-| {{ItemLink|Pufferfish}}, {{ItemLink|Freshwater Puffer}} || {{ItemLink|Cooked Pufferfish}} || {{Hp|4}} and [[Conduit Power]] (0:30) || Oven, Kindling
+| {{ItemLink|Pufferfish}}, {{ItemLink|Freshwater Puffer}} || {{ItemLink|Cooked Pufferfish}} || {{Value|Cooked Pufferfish|heals}} and [[Conduit Power]] ({{Value|Cooked Pufferfish|duration|effect=Conduit Power|format=clock}}) || Oven, Kindling
 |-
-| Any fish || {{ItemLink|Charred Fish}} || {{Hp|2}} || [[Mud Kiln]]
+| Any fish || {{ItemLink|Charred Fish}} || {{Value|Charred Fish|heals}} || [[Mud Kiln]]
 |}
 
 == Other sources of fishing loot ==

@@ -5,7 +5,7 @@ A '''hellbrick''' is a single brick made from [[hellstone]]. It is the vanilla {
 == Obtaining ==
 === Cooking ===
 {{Recipes}}
-Hellbricks are made by cooking hellstone in a [[Blast Furnace|blast furnace]] for 5 seconds. The vanilla furnace recipe is removed, so an [[oven]] cannot make them; cooking hellstone in an oven instead gives a whole block of hellbricks at once.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/nether_brick.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/nether_bricks_from_smelting_netherrack.json}}</ref>
+Hellbricks are made by cooking hellstone in a [[Blast Furnace|blast furnace]] for {{Value|Hellbrick|cook_time|station=Blast Furnace}}. The vanilla furnace recipe is removed, so an [[oven]] cannot make them; cooking hellstone in an oven instead gives a whole block of hellbricks at once.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/nether_brick.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/nether_bricks_from_smelting_netherrack.json}}</ref>
 
 === Other sources ===
 {{Sources}}

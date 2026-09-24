@@ -4,7 +4,7 @@
 
 {{Spoiler}}
 
-A '''baked golden apple''' is the simple preparation of the [[Golden Apple|golden apple]], a secret [[ingredient]]. It heals {{Hp|8}} and grants {{EffectLink|Absorption}} for 2 minutes and {{EffectLink|Regeneration}} for 1 minute.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_golden_apple.json}}</ref>
+A '''baked golden apple''' is the simple preparation of the [[Golden Apple|golden apple]], a secret [[ingredient]]. It heals {{Value|Baked Golden Apple|heals}} and grants {{EffectLink|Absorption}} for {{Value|Baked Golden Apple|duration|effect=Absorption}} and {{EffectLink|Regeneration}} for {{Value|Baked Golden Apple|duration|effect=Regeneration}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_golden_apple.json}}</ref>
 
 == Obtaining ==
 
@@ -15,7 +15,7 @@ A golden apple cooks into a baked golden apple in an [[oven]] or on [[kindling]]
 == Usage ==
 
 === Food ===
-Eating a baked golden apple takes 1.6 seconds, heals {{Hp|8}} and gives Absorption I for 2:00 and Regeneration I for 1:00. The tooltip says Regeneration lasts 0:30, but the effect is 1200 ticks (1:00).<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_golden_apple.json}}</ref>
+Eating a baked golden apple takes {{Value|Baked Golden Apple|eat_time}}, heals {{Value|Baked Golden Apple|heals}} and gives Absorption {{Value|Baked Golden Apple|level|effect=Absorption}} for {{Value|Baked Golden Apple|duration|effect=Absorption|format=clock}} and Regeneration {{Value|Baked Golden Apple|level|effect=Regeneration}} for {{Value|Baked Golden Apple|duration|effect=Regeneration|format=clock}}. The tooltip says Regeneration lasts 0:30, but the effect is 1200 ticks (1:00).<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/baked_golden_apple.json}}</ref>
 
 Baked golden apples make [[Canned Golden Apples|canned golden apples]] and the [[Gilded Empanada|gilded empanada]]. Cooking one grants ''Hidden Flavors''.
 

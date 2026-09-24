@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Apple cinnamon oatmeal''' is a breakfast bowl that heals {{Hp|10}} and grants {{EffectLink|Speed}} for 10 minutes and {{EffectLink|Regeneration}} for 2 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/oatmeal.json}}</ref>
+'''Apple cinnamon oatmeal''' is a breakfast bowl that heals {{Value|Apple Cinnamon Oatmeal|heals}} and grants {{EffectLink|Speed}} for {{Value|Apple Cinnamon Oatmeal|duration|effect=Speed}} and {{EffectLink|Regeneration}} for {{Value|Apple Cinnamon Oatmeal|duration|effect=Regeneration}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/oatmeal.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A honey bottle, a [[Milk Bottle|milk bottle]], estus ash, a raw [[apple]], 2 [[W
 == Usage ==
 
 === Food ===
-Eating it takes 1.8 seconds, heals {{Hp|10}} and gives Speed I (+20%) for 10:00 and Regeneration I for 2:00. The bowl is given back.
+Eating it takes {{Value|Apple Cinnamon Oatmeal|eat_time}}, heals {{Value|Apple Cinnamon Oatmeal|heals}} and gives Speed {{Value|Apple Cinnamon Oatmeal|level|effect=Speed}} (+20%) for {{Value|Apple Cinnamon Oatmeal|duration|effect=Speed|format=clock}} and Regeneration {{Value|Apple Cinnamon Oatmeal|level|effect=Regeneration}} for {{Value|Apple Cinnamon Oatmeal|duration|effect=Regeneration|format=clock}}. The bowl is given back.
 
 === Trading ===
 {{Upcoming|type=section}}

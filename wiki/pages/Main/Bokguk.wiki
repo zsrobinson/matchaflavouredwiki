@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Bokguk''' is a pufferfish soup that heals {{Hp|12}} and grants {{EffectLink|Conduit Power}} for 8 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bokguk.json}}</ref>
+'''Bokguk''' is a pufferfish soup that heals {{Value|Bokguk|heals}} and grants {{EffectLink|Conduit Power}} for {{Value|Bokguk|duration|effect=Conduit Power}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bokguk.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@
 == Usage ==
 
 === Food ===
-Eating bokguk takes 1.6 seconds, heals {{Hp|12}} and gives Conduit Power for 8:00. The bowl is given back.
+Eating bokguk takes {{Value|Bokguk|eat_time}}, heals {{Value|Bokguk|heals}} and gives Conduit Power for {{Value|Bokguk|duration|effect=Conduit Power|format=clock}}. The bowl is given back.
 
 === Trading ===
 {{Upcoming|type=section}}

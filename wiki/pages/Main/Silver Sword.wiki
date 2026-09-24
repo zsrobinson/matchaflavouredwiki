@@ -10,7 +10,7 @@ The '''silver sword''' is an [[Iron equipment|iron sword]] inlaid with silver an
 
 == Usage ==
 === Weapon ===
-The silver sword deals {{Hp|6}} of damage with an attack speed of 1.6 and has 400 durability, one more point of damage than the [[Warding Sword]] but less durability. Its [[Smite]] III adds damage against undead mobs.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/silver_sword.json}}</ref>
+The silver sword deals {{Value|Silver Sword|damage}} of damage with an attack speed of {{Value|Silver Sword|attackspeed}} and has {{Value|Silver Sword|durability}} durability, one more point of damage than the [[Warding Sword]] but less durability. Its [[Smite]] III adds damage against undead mobs.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/silver_sword.json}}</ref>
 
 === Warding ===
 Held in either hand, the sword gives {{G|Warding}} 1, the same as the warding sword, and stacks with warding in the other hand up to {{G|Warding}} 3. See [[Warding]].

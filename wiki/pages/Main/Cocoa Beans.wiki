@@ -2,7 +2,7 @@
 
 {{Infobox auto}}
 
-'''Cocoa beans''' are a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Haste}}. They can't be eaten raw; roasted into [[chocolate]] they grant Haste for 30 seconds, and chocolate makes [[Chocolate Chip Cookie|chocolate chip cookie]]s (Haste, 5:00) and [[brownie]]s (Haste II, 2:30).<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/chocolate.json}}</ref>
+'''Cocoa beans''' are a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Haste}}. They can't be eaten raw; roasted into [[chocolate]] they grant Haste for {{Value|Chocolate|duration|effect=Haste}}, and chocolate makes [[Chocolate Chip Cookie|chocolate chip cookie]]s (Haste, {{Value|Chocolate Chip Cookie|duration|effect=Haste|format=clock}}) and [[brownie]]s (Haste {{Value|Brownie|level|effect=Haste}}, {{Value|Brownie|duration|effect=Haste|format=clock}}).<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/chocolate.json}}</ref>
 
 == Usage ==
 

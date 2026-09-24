@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Toadstool stroganoff''' is the meal of the red [[mushroom]]. It heals {{Hp|12}} but poisons the eater for 5 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/red_mushroom_stroganoff.json}}</ref>
+'''Toadstool stroganoff''' is the meal of the red [[mushroom]]. It heals {{Value|Toadstool Stroganoff|heals}} but poisons the eater for {{Value|Toadstool Stroganoff|duration|effect=Poison}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/red_mushroom_stroganoff.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A raw red mushroom, a [[steak]], dough, a [[Milk Bottle|milk bottle]] and a [[bo
 == Usage ==
 
 === Food ===
-Eating it takes 1.8 seconds, heals {{Hp|12}} and gives {{EffectLink|Poison}} I for 5:00, which deals more damage than the food heals. The bowl is given back.
+Eating it takes {{Value|Toadstool Stroganoff|eat_time}}, heals {{Value|Toadstool Stroganoff|heals}} and gives {{EffectLink|Poison}} {{Value|Toadstool Stroganoff|level|effect=Poison}} for {{Value|Toadstool Stroganoff|duration|effect=Poison|format=clock}}, which deals more damage than the food heals. The bowl is given back.
 
 === Trading ===
 {{Upcoming|type=section}}

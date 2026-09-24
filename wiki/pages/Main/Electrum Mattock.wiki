@@ -15,7 +15,7 @@ This upgrade needs a [[smithing upgrade template]]; without one, the same diamon
 == Usage ==
 
 === Mining ===
-It breaks shovel and hoe blocks at speed 10 and has 3000 durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+It breaks shovel and hoe blocks at speed {{Value|Electrum Mattock|miningspeed}} and has {{Value|Electrum Mattock|durability}} durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Intrinsics ===
 It has electrum fortune II and [[Warding]] 1. The electrum fortune intrinsic ({{G|Fortune}}) works like [[Fortune]] on ores, crops and leaves; the pack's loot tables check for it directly. Electrum tools are otherwise the only source of Fortune III in the pack, and the intrinsic cannot be combined with Fortune or Silk Touch.<ref>{{Source|MF_datapack/data/matcha/enchantment/electrum_tool.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
@@ -23,7 +23,7 @@ It has electrum fortune II and [[Warding]] 1. The electrum fortune intrinsic ({{
 In 1.12.2 the language file has no name for this intrinsic, so the tooltip shows its translation key, "enchantment.kleispack.electrum_tool II", in yellow instead of the {{G|Fortune}} glyph.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> This does not change how it works.
 
 === Combat ===
-It deals {{Hp|3}} damage at an attack speed of 3.
+It deals {{Value|Electrum Mattock|damage}} damage at an attack speed of {{Value|Electrum Mattock|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

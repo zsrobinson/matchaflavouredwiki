@@ -12,8 +12,8 @@ Hellstone generates throughout Hell as in vanilla. Two ores are variants of it: 
 == Usage ==
 {{Uses}}
 Hellstone has two cooking recipes, and they give different amounts:
-* In an [[oven]], one hellstone becomes a full block of [[hellbricks]] in 10 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/nether_bricks_from_smelting_netherrack.json}}</ref>
-* In a [[Blast Furnace|blast furnace]], one hellstone becomes a single [[hellbrick]] item in 5 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/nether_brick.json}}</ref>
+* In an [[oven]], one hellstone becomes a full block of [[hellbricks]] in {{Value|Hellbricks|cook_time|station=Oven}}.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/nether_bricks_from_smelting_netherrack.json}}</ref>
+* In a [[Blast Furnace|blast furnace]], one hellstone becomes a single [[hellbrick]] item in {{Value|Hellbrick|cook_time|station=Blast Furnace}}.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/nether_brick.json}}</ref>
 The vanilla furnace recipe for nether brick is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
 == History ==

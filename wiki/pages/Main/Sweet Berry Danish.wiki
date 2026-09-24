@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-A '''sweet berry Danish''' is the meal of [[Sweet Berries|sweet berries]]. It heals {{Hp|8}} and grants {{EffectLink|Health Boost}} II, 4 extra hearts of maximum health, for 8 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sweet_berry_danish.json}}</ref>
+A '''sweet berry Danish''' is the meal of [[Sweet Berries|sweet berries]]. It heals {{Value|Sweet Berry Danish|heals}} and grants {{EffectLink|Health Boost}} {{Value|Sweet Berry Danish|level|effect=Health Boost}}, 4 extra hearts of maximum health, for {{Value|Sweet Berry Danish|duration|effect=Health Boost}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/sweet_berry_danish.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A '''sweet berry Danish''' is the meal of [[Sweet Berries|sweet berries]]. It he
 == Usage ==
 
 === Food ===
-Eating one takes 1.6 seconds, heals {{Hp|8}} and gives Health Boost II for 8:00.
+Eating one takes {{Value|Sweet Berry Danish|eat_time}}, heals {{Value|Sweet Berry Danish|heals}} and gives Health Boost {{Value|Sweet Berry Danish|level|effect=Health Boost}} for {{Value|Sweet Berry Danish|duration|effect=Health Boost|format=clock}}.
 
 === Trading ===
 {{Upcoming|type=section}}

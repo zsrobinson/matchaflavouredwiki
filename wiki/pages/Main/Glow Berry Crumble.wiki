@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Glow berry crumble''' is the meal of [[Glow Berries|glow berries]]. It heals {{Hp|8}} and grants the Aura intrinsic for 1 minute, making every other creature within 50 blocks glow.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/glow_berry_crumble.json}}</ref>
+'''Glow berry crumble''' is the meal of [[Glow Berries|glow berries]]. It heals {{Value|Glow Berry Crumble|heals}} and grants the Aura intrinsic for 1 minute, making every other creature within 50 blocks glow.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/glow_berry_crumble.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@
 == Usage ==
 
 === Food ===
-Eating it takes 1.6 seconds and heals {{Hp|8}}. A bell sound plays, and 2.4 seconds later every other entity within 50 blocks glows for 1 minute.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_60.mcfunction}}</ref>
+Eating it takes {{Value|Glow Berry Crumble|eat_time}} and heals {{Value|Glow Berry Crumble|heals}}. A bell sound plays, and 2.4 seconds later every other entity within 50 blocks glows for 1 minute.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_60.mcfunction}}</ref>
 
 === Trading ===
 {{Upcoming|type=section}}
