@@ -34,6 +34,9 @@ debugging time.
   `git diff wiki/generated` shows exactly what changed in the data. Hand pages in `wiki/pages/` override
   generated pages of the same title.
 - **Commit messages and PRs:** no AI attribution (see the user's global instructions).
+- **Routine runs (the autopilot) update content and fix breakage only.** They never add site features or
+  new renderer or generator subsystems; those need a person. Anything bigger goes in the PR description
+  or a notification for the user to decide.
 
 ## Everyday loop
 ```sh
@@ -247,6 +250,19 @@ the swap mid-way.
   versions. If it finds one, it deploys that version (`wrangler versions deploy`, about a minute). This
   happens when `main` hasn't moved since the PR's last check. Otherwise it does the full build and runs
   `wrangler deploy`. Manual runs always rebuild. A newer push cancels a running deploy.
+- **Build stamp and watchdog:** every export has `/_static/build.json`, naming the git tree it was built
+  from and the pinned pack commit (`tools/watchdog.py --stamp`, called by `export_static.py`). It names the
+  tree, not the commit, because the fast path deploys a build of the PR merged into `main`, a commit that
+  never lands on `main` but has the same tree; a tree changes only when a file does, so exports stay
+  reproducible. `.github/workflows/watchdog.yml` runs `tools/watchdog.py` daily, outside the autopilot, and
+  fails with an `::error::` per problem when: a Modrinth version missing from `tools/upstream.json` is over
+  3 days old (the autopilot stopped or its PR is stuck); the live stamp isn't `main`'s tree 2 hours after
+  `main`'s last commit (a failed deploy, e.g. an expired `CLOUDFLARE_API_TOKEN`); `/`, `/w/Food` or
+  `/search/` doesn't answer 200; or the latest finished Build and deploy on `main` failed. It needs only
+  the default `GITHUB_TOKEN`. A failed scheduled run is how the user hears about it: GitHub emails
+  (with Actions notifications on) whoever created the workflow or last changed its cron line, so only the
+  owner edits that line. GitHub pauses schedules after 60 days without commits, with a warning email.
+  Run it by hand with `python3 tools/watchdog.py` (`--site <preview URL>` for another deployment).
 - **Caching (cache busting):** pages and every file they load are always checked with the server, except
   URLs that carry `?v=<content hash>`. The export adds those last (`tools/fingerprint.py`) to every
   reference in pages and stylesheets to `/_rl/`, `/_static/`, `/assets/`, `/images/` and `/pagefind/`.

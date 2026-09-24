@@ -13,6 +13,9 @@ Releases aren't tagged in git, so `tools/release_commit.py` finds the commit a r
 comparing every file in its zips with the repository. `tools/source.lock` holds that commit. Content that
 is on `main` but not yet released is marked `{{Upcoming}}` (see step 4).
 
+**Scope:** a routine run updates content and fixes breakage. It never adds site features or new
+renderer or generator subsystems; if an update seems to need one, say so in the PR or notify.
+
 ## Environment
 - `git`, `python3` and `node` are preinstalled; step 0 installs `pillow` and `yt-dlp`.
 - There is no `gh` CLI. Do everything on GitHub (listing, opening, labelling and merging PRs, reading
@@ -179,10 +182,21 @@ in PR comments). Add a `Fixes #<n>` line for each reader report it fixes, and th
 A run that only fixes reader reports skips `check_upstream.py --record` and is committed as
 "Autopilot: fix reader reports #<n>, #<m>".
 
-## Step 6: merge when the check passes
+## Step 6: merge when the check passes, then confirm the deploy
 Subscribe to the PR's activity and end the turn; the **Check** workflow result wakes the session.
 - **Green:** squash-merge with the connector. Keep the branch; the routine reuses it. The
   **Build and deploy** workflow then publishes to https://matchaflavou.red.
+- **After merging, confirm it went live.** Find the **Build and deploy** run on the merge commit (list the
+  `deploy.yml` workflow runs on `main` with the connector) and wait for it to finish: about a minute when it
+  deploys the PR's preview, up to half an hour for a full build (schedule a check-in with `send_later`
+  rather than polling). Then `python3 tools/watchdog.py` from an up-to-date `main`: its `deploy:` line must
+  say the site serves main's build (`/_static/build.json` names `main`'s tree).
+  - The run failed, or the stamp still differs once it succeeded: read the failing job's log. If the cause
+    is in the repository (a check, the export, the Worker), fix it in a new PR as in step 5 and merge it
+    when green. If it isn't (an expired or revoked `CLOUDFLARE_API_TOKEN`, a Cloudflare outage or limit),
+    notify with the failing step and its exact error; a person has to act. Don't retry more than once.
+  - The daily **Watchdog** workflow (`.github/workflows/watchdog.yml`) checks the same thing independently
+    and emails the owner, so a failure you report here will also show up there.
 - **Red:** read the failing job log, fix the pages or tools, push again. After three failed attempts,
   leave the PR open, comment with what's failing, and notify.
 

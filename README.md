@@ -69,6 +69,11 @@ Add the repository secrets `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN`. T
 Account › Workers Scripts: Edit, plus Zone › Workers Routes: Edit, Zone: Read and DNS: Edit for the three zones. Other static hosts
 (Cloudflare Pages, Netlify, GitHub Pages) can serve `dist/` as is (`_redirects` and `404.html` are included).
 
+`.github/workflows/watchdog.yml` runs `tools/watchdog.py` every day. It fails, and GitHub emails you, when a
+Modrinth release has gone 3 days without a wiki update, when the live site isn't serving `main`'s build
+(`/_static/build.json`) 2 hours after `main` changed, when a key page is down, or when the last deploy
+failed. Turn on email for failed Actions runs (GitHub: Settings › Notifications › Actions) to get them.
+
 ## How it works
 
 ```
