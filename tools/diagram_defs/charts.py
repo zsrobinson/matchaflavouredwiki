@@ -647,7 +647,7 @@ def healing_overlap():
         raise ValueError('the snack changed the healing')
     full = 2 * len(one)
 
-    W, left, right, top, bottom = 760, 52, 560, 48, 218
+    W, left, right, top, bottom = 760, 60, 560, 48, 218
     end = (max(two) // 20 + 1) * 20
     x = Scale(0, end, left, right)
     y = Scale(0, full, bottom, top)
@@ -668,7 +668,7 @@ def healing_overlap():
     # the healing lost to the overlap
     lx = x(end) + 10
     svg.line(x(end) - 4, y(full), x(end) - 4, y(b), stroke='@red', sw=2)
-    svg.text(lx, y((full + b) / 2), '%d lost' % (full - b), size=SMALL, fill='@red', bold=True)
+    svg.text(x(end) - 12, y((full + b) / 2), '%d lost' % (full - b), size=SMALL, fill='@red', bold=True, anchor='end')
     svg.text(lx, y(full) - 10, 'If both healed in full', size=SMALL, fill='@muted')
     svg.hp(lx, y(full) + 6, full, size=SMALL, fill='@muted')
     svg.text(lx, y(b) + 12, 'Second one eaten halfway', size=SMALL, fill='@blue', bold=True)
@@ -681,7 +681,7 @@ def healing_overlap():
         svg.line(x(t), top - 12, x(t), bottom, stroke='@muted', dash='2 3')
     y_grid(svg, y, range(0, full + 1, 4), left, right)
     x_grid(svg, x, range(0, end + 1, 20), top, bottom, fmt=lambda t: '%d' % (t // 20), lines=False)
-    svg.text(left - 8, top - 26, 'Health', size=SMALL, fill='@muted', anchor='end')
+    svg.text(left - 20, top - 26, 'Health', size=SMALL, fill='@muted', anchor='end')
     svg.text((left + right) / 2, bottom + 32, 'Seconds after the first bite', size=SMALL, fill='@muted', anchor='middle')
     svg.text(left, bottom + 54, 'A %s eaten halfway (%s of healing, less than the %s left) changes nothing.'
              % (snack.lower(), '%.1f s' % (ds / 20), '%.1f s' % ((d - second) / 20)), size=SMALL, fill='@muted')

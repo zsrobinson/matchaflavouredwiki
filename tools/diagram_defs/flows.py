@@ -3,7 +3,7 @@ the warding level, the sacred texts and heart loss. Node contents come from the 
 trades and functions, and a missing recipe or changed function raises, so CI notices."""
 import re
 
-from diagrams import SMALL, TEXT, Flow, Svg, asset_uri, data, diagram, legend, mcfunction, need, pack_json, text_width
+from diagrams import SMALL, TEXT, Flow, Svg, asset_uri, data, diagram, mcfunction, need, pack_file, pack_json, text_width
 
 
 # ---------------------------------------------------------------------------------------------
@@ -72,6 +72,8 @@ def trades(wants=None, gives=None):
     out = []
     for prof, levels in d['trades'].items():
         for level, ts in levels.items():
+            if not re.fullmatch(r'level_\d', level):
+                continue
             for t in ts:
                 w = {t['wants']['name']} | ({t['additional_wants']['name']} if t.get('additional_wants') else set())
                 if (wants is None or wants in w) and (gives is None or t['gives']['name'] == gives):
@@ -229,15 +231,16 @@ def hop(f, a, b, y=None, colour='@rule', label=None):
     route(f, [p1, p2], colour, label, at=((p1[0] + p2[0]) / 2, y - 9) if label else None)
 
 
-def block(f, key, x, y, w, h, title, lines=(), fill='@panel', edge='@panel_edge', ink='@ink', icon=None, sub_ink='@muted'):
-    """A node with a bold title and several lines under it, centred as a group."""
+def block(f, key, x, y, w, h, title, lines=(), fill='@panel', edge='@panel_edge', ink='@ink', icon=None, sub_ink='@muted',
+          top=False):
+    """A node with a bold title and several lines under it, centred as a group (or at the top)."""
     svg = f.svg
     svg.rect(x - w / 2, y - h / 2, w, h, fill=fill, stroke=edge, rx=6, sw=1.2)
     tx = x
     if icon:
         svg.icon(icon, x - w / 2 + 19, y, 26)
         tx = x + 14
-    y0 = y - 8 * len(lines)
+    y0 = y - h / 2 + 22 if top else y - 8 * len(lines)
     svg.text(tx, y0, title, anchor='middle', bold=True, fill=ink)
     for i, line in enumerate(lines):
         svg.text(tx, y0 + 17 * (i + 1), line, size=SMALL, anchor='middle', fill=sub_ink)
@@ -257,7 +260,9 @@ def split_label(names, width, size=TEXT):
 def mob_name(table):
     """'minecraft:entities/zombie_villager' -> 'zombie villagers'."""
     n = table.split('/')[-1].replace('_', ' ')
-    return n if n.endswith(('drowned', 's')) else n + 's'
+    if n.endswith('man'):
+        return n[:-3] + 'men'
+    return n if n.endswith(('drowned', 'bogged', 's')) else n + 's'
 
 
 def undead():
@@ -277,9 +282,11 @@ def undead():
 def hell_bound_book():
     und = undead()
 
+    order = [m.split(':')[1] for m in pack_json('matcha/tags/entity_type/mundane_hostiles.json')['values']]
+
     def mobs(item):
-        tables = [t for t in loot_tables_giving(item=item) if t.startswith('minecraft:entities/')]
-        return sorted(mob_name(t) for t in tables if t.split('/')[-1] in und)
+        tables = [t.split('/')[-1] for t in loot_tables_giving(item=item) if t.startswith('minecraft:entities/')]
+        return [mob_name(t) for t in sorted(tables, key=lambda t: order.index(t) if t in order else 99) if t in und]
 
     conv = mcfunction('matcha/function/mechanics/estus/estus_effects.mcfunction')
     d = data()['items']
@@ -305,38 +312,41 @@ def hell_bound_book():
     svg = Svg(760, 0, 'How to make a Hell-Bound Book: Estus Ash from undead, Benzene, and a Stable Void make '
                       'Stabilized Estus, which with a book and a second Benzene makes the book')
     f = Flow(svg)
-    A, B, C, D = 100, 285, 462, 660
-    ys = [30, 94, 158, 222]
+    A, B, C, D = 100, 280, 470, 665
+    ys = [30, 94, 158, 222, 300]
     for key, y, names in (('raw_mobs', ys[0], raw_mobs), ('ash_mobs', ys[1], ash_mobs)):
         head, tail = split_label(names, 150)
         f.node(key, A, y, head, w=180, h=46, sub=tail)
     f.node('void_mob', A, ys[2], split_label(void_mobs, 150)[0], w=180, h=46)
     icons_node(f, 'bz_in', A, ys[3], list(benzene.items()), w=180, h=46)
-    f.node('raw', B, ys[0], 'Raw Estus', w=140, h=46, icon='Raw Estus')
-    f.node('ash', B, ys[1], 'Estus Ash', w=140, h=46, icon='Estus Ash')
-    f.node('void', B, ys[2], 'Stable Void', w=140, h=46, icon='Stable Void')
-    f.node('benzene', B, ys[3], 'Benzene', w=140, h=46, icon='Benzene', edge='@purple')
-    mid = (ys[1] + ys[2]) / 2
-    f.node('stab', C, mid, 'Stabilized Estus', w=172, h=46, icon='Stabilized Estus', bold=True)
-    f.node('book', D, ys[0], 'Book', w=160, h=46, icon='Book')
-    f.node('hbb', D, mid, 'Hell-Bound Book', w=172, h=46, icon='Hell-Bound Book', bold=True)
-    f.node('blessing', D, ys[3], 'Blessing', w=160, h=46, icon=blessings[0], sub='%d recipes' % len(blessings))
-    f.node('anvil', D, ys[3] + 72, 'Anvil', w=160, h=46, icon='Anvil', sub='onto armor or tools')
+    f.node('raw', B, ys[0], 'Raw Estus', w=130, h=46, icon='Raw Estus')
+    f.node('ash', B, ys[1], 'Estus Ash', w=130, h=46, icon='Estus Ash')
+    f.node('void', B, ys[2], 'Stable Void', w=130, h=46, icon='Stable Void')
+    f.node('benzene', B, ys[3], 'Benzene', w=130, h=46, icon='Benzene', edge='@purple')
+    # Stabilized Estus spans the Estus Ash and Stable Void rows so both come in level
+    f.node('stab', C, (ys[1] + ys[2]) / 2, 'Stabilized Estus', w=168, h=ys[2] - ys[1] + 46, icon='Stabilized Estus', bold=True)
+    f.node('hbb', D, ys[3], 'Hell-Bound Book', w=170, h=46, icon='Hell-Bound Book', bold=True)
+    f.node('book', D + 25, ys[1], 'Book', w=120, h=46, icon='Book')
+    f.node('blessing', D, ys[4], 'Blessing', w=170, h=46, icon=blessings[0], sub='%d recipes' % len(blessings))
+    f.node('anvil', C, ys[4], 'Anvil', w=168, h=46, icon='Anvil', sub='onto armor or tools')
 
     f.arrow('raw_mobs', 'raw')
     f.arrow('raw', 'ash', 'on pickup')
     f.arrow('ash_mobs', 'ash')
     f.arrow('void_mob', 'void')
     f.arrow('bz_in', 'benzene')
-    f.arrow('ash', 'stab', '×%d' % stab['Estus Ash'])
-    f.arrow('void', 'stab', '×%d' % stab['Stable Void'], label_side='below')
-    f.arrow('benzene', 'stab', '×%d' % stab['Benzene'], colour='@purple')
-    f.arrow('stab', 'hbb')
-    f.arrow('book', 'hbb')
-    f.arrow('benzene', 'hbb', '×%d again' % book['Benzene'], colour='@purple', label_side='below')
+    hop(f, 'ash', 'stab', label='×%d' % stab['Estus Ash'])
+    hop(f, 'void', 'stab', label='×%d' % stab['Stable Void'])
+    bx = C - 40
+    route(f, [side(f, 'benzene', 'r'), (bx, ys[3]), side(f, 'stab', 'b', bx, gap=4)], '@purple',
+          '×%d' % stab['Benzene'], at=(bx + 6, ys[3] - 34), anchor='start')
+    hop(f, 'benzene', 'hbb', colour='@purple', label='×%d again' % book['Benzene'])
+    sx = D - 55
+    route(f, [side(f, 'stab', 'r'), (sx, f.nodes['stab'][1]), side(f, 'hbb', 't', sx, gap=4)])
+    route(f, [side(f, 'book', 'b'), side(f, 'hbb', 't', D + 25, gap=4)])
     f.arrow('hbb', 'blessing')
     f.arrow('blessing', 'anvil')
-    svg.h = ys[3] + 72 + 30
+    svg.h = ys[4] + 30
     return svg
 
 
@@ -406,7 +416,8 @@ def spawn_check():
     f.node('surface', R, ys[1], 'Stricter check', w=150, h=h, sub='see Surface', fill='@blue_soft', edge='@blue')
     rtop, rbot = ys[2] - h / 2, ys[6] + h / 2
     block(f, 'removed', R, (rtop + rbot) / 2, 150, rbot - rtop, 'Removed',
-          ['teleported %s' % format(drop, ','), 'blocks down,', 'then killed'], fill='@red_soft', edge='@red', ink='@red')
+          ['teleported %s' % format(drop, ','), 'blocks down,', 'then killed'], fill='@red_soft', edge='@red', ink='@red',
+          top=True)
     ktop = ys[3] - h / 2
     block(f, 'kept', K, (ktop + rbot) / 2, 140, rbot - ktop, 'Kept', ['modified for', 'the difficulty'],
           fill='@green_soft', edge='@green', ink='@green')
@@ -423,8 +434,8 @@ def spawn_check():
     f.arrow('undead', 'sky', 'no')
     hop(f, 'sky', 'removed', label='yes', colour='@red')
     hop(f, 'sky', 'kept', label='no', colour='@green')
-    label_at(svg, R, ys[4] + 30, 'a husk on foot', fill='@red')
-    label_at(svg, R, ys[4] + 45, 'takes its place', fill='@red')
+    label_at(svg, R, ys[4] - 8, 'a new husk on foot', fill='@red')
+    label_at(svg, R, ys[4] + 8, 'takes its place', fill='@red')
     svg.h = rbot + 6
     return svg
 
@@ -491,4 +502,113 @@ def warding_level():
     for i, e in enumerate(ex):
         svg.text(15, y + 18 * (i + 1), e, size=SMALL, fill='@muted')
     svg.h = y + 18 * len(ex) + 10
+    return svg
+
+
+# ---------------------------------------------------------------------------------------------
+# Sacred texts
+
+PLACES = {
+    'minecraft:chests/shipwreck_treasure': 'shipwrecks', 'minecraft:chests/buried_treasure': 'buried treasure',
+    'matcha:chests/fishing/treasure': 'fishing', 'minecraft:chests/abbey/tower': 'Abbey tower',
+    'minecraft:chests/village/village_temple': 'village temples',
+    'minecraft:chests/trial_chambers/reward_unique': 'trial chambers',
+    'minecraft:chests/trial_chambers/reward_ominous_unique': 'trial chambers',
+    'minecraft:archaeology/desert_well': 'desert wells', 'minecraft:chests/desert_pyramid': 'desert pyramids',
+    'minecraft:chests/abandoned_mineshaft': 'mineshafts', 'minecraft:chests/simple_dungeon': 'dungeons',
+    'minecraft:chests/stronghold_library': 'stronghold libraries',
+}
+
+
+@diagram('Sacred texts')
+def sacred_texts():
+    def places(book):
+        own = one([t for t in loot_tables_giving(item=book) if t.startswith('matcha:treasure/')], 'treasure table of ' + book)
+        out = []
+        for t in loot_tables_giving(table=own[0]):
+            if t not in PLACES:
+                raise ValueError('sacred texts: no place name for loot table %s' % t)
+            if PLACES[t] not in out:
+                out.append(PLACES[t])
+        return one(out, 'where %s is found' % book)
+
+    # the fishing chest: a chest item whose contents roll the pack's fishing treasure table
+    need(r'"value": "(matcha:chests/fishing/treasure)"',
+         open(pack_file('minecraft/loot_table/gameplay/fishing/treasure.json'), encoding='utf-8').read(),
+         'fishing treasure chest', cast=str)
+    poems = ['Paradise Lost', 'The Divine Comedy']
+    holy = ['The Quran', 'The Tanakh', 'The Avesta', 'The Book of Enoch', 'The Lesser Key of Solomon']
+    arch = mouth = None
+    for p in poems:
+        a = one(trades(wants=p, gives='Overgrown Abbey Map'), 'abbey map trade for ' + p)
+        m = one(trades(wants=p, gives='Crystal Heart'), 'crystal heart trade for ' + p)
+        arch, mouth = a[0][0], m[0][0]
+    if pack_json('minecraft/tags/worldgen/structure/on_abbey_explorer_maps.json')['values'] != ['minecraft:abbey_overgrown']:
+        raise ValueError('abbey map destination changed')
+    hearts = {}
+    for b in holy:
+        (prof, _, t), = one(trades(wants=b, gives='Ofuda'), 'Ofuda trade for ' + b)
+        if prof != mouth or (t.get('additional_wants') or {}).get('name') != 'Crystal Heart':
+            raise ValueError('Ofuda trade for %s changed' % b)
+        hearts[b] = t['additional_wants']['count']
+    tower = [e for e in data()['loot']['minecraft:chests/abbey/tower']['entries']
+             if e.get('loot_table') in ('matcha:treasure/quran', 'matcha:treasure/tanakh')]
+    if len(tower) != 2 or tower[0]['pool'] != tower[1]['pool'] or tower[0]['rolls'] != 1 or \
+            tower[0]['pool_total_weight'] != sum(e['weight'] for e in tower):
+        raise ValueError('Abbey tower no longer guarantees the Quran or the Tanakh')
+    poem_places = places(poems[0])
+    if places(poems[1]) != poem_places:
+        raise ValueError('the two poems are found in different places')
+    qt = places('The Quran')
+    if places('The Tanakh') != qt or 'Abbey tower' not in qt:
+        raise ValueError('the Quran and the Tanakh are found in different places')
+
+    svg = Svg(760, 0, 'Where the sacred texts are found and what the Mouthpiece and the Archaeologist trade for them')
+    f = Flow(svg)
+    A, B, C, D = 105, 322, 497, 662
+    pitch, h = 60, 44
+    ys = [28 + pitch * i for i in range(7)]
+
+    def src(key, y, names):
+        head, tail = split_label(names, 160)
+        f.node(key, A, y, head, w=190, h=h, sub=tail)
+
+    def short(b):
+        return b[4:] if b.startswith('The ') else b
+    src('poem_src', ys[0], poem_places)
+    f.node('poems', B, ys[0], poems[0], w=190, h=h, icon=poems[0], sub='or ' + poems[1][0].lower() + poems[1][1:], bold=True)
+    f.node('map', A, ys[1], 'Overgrown Abbey Map', w=190, h=h, icon='Overgrown Abbey Map')
+    f.node('tower', A, ys[2], 'Abbey tower', w=190, h=h, sub='always one of the two')
+    src('qt_src', ys[3], [p for p in qt if p != 'Abbey tower'])
+    f.node('qt', B, (ys[2] + ys[3]) / 2, short(holy[0]), w=190, h=ys[3] - ys[2] + h, icon=holy[0],
+           sub='or the ' + short(holy[1]), bold=True)
+    for i, b in enumerate(holy[2:]):
+        src('src%d' % i, ys[4 + i], places(b))
+        f.node('book%d' % i, B, ys[4 + i], short(b), w=190, h=h, icon=b, bold=True)
+    top, bot = ys[0] - h / 2, ys[6] + h / 2
+    block(f, 'mouth', C, (top + bot) / 2, 100, bot - top, mouth, ['trades'])
+    f.node('heart', D, ys[0], 'Crystal Heart', w=170, h=h, icon='Crystal Heart', fill='@red_soft', edge='@red')
+    oy = (ys[2] + ys[6]) / 2
+    f.node('ofuda', D, oy, 'Ofuda', w=170, h=h, icon='Ofuda', sub='one for each book', fill='@purple_soft', edge='@purple',
+           bold=True)
+
+    f.arrow('poem_src', 'poems')
+    hop(f, 'poems', 'mouth')
+    hop(f, 'mouth', 'heart', y=ys[0])
+    route(f, [side(f, 'poems', 'b'), (B, ys[1]), side(f, 'map', 'r', gap=4)], label=arch, at=((B + A + 95) / 2, ys[1] - 9))
+    f.arrow('map', 'tower', 'leads to')
+    hop(f, 'tower', 'qt')
+    hop(f, 'qt_src', 'qt')
+    hop(f, 'qt', 'mouth')
+    for i in range(3):
+        f.arrow('src%d' % i, 'book%d' % i)
+        hop(f, 'book%d' % i, 'mouth')
+    hop(f, 'mouth', 'ofuda', y=oy)
+    route(f, [side(f, 'heart', 'b'), (D, ys[1] + 18), side(f, 'mouth', 'r', ys[1] + 18, gap=4)], '@red')
+    extra = sorted({short(b) for b, n in hearts.items() if n != 1})
+    label_at(svg, D + 8, ys[1] - 4, '%d with each book' % min(hearts.values()), anchor='start', fill='@red')
+    if extra:
+        label_at(svg, D + 8, ys[1] + 11, '(%d for the %s)' % (max(hearts.values()), extra[0].replace('Lesser Key of Solomon', 'Lesser Key')),
+                 anchor='start', fill='@red')
+    svg.h = bot + 6
     return svg

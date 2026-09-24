@@ -83,6 +83,8 @@ The minimum never goes below 3 hearts ({{Hp|6}}).<ref name="dec" />
 
 On '''Normal''', when a player's minimum drops below 6 hearts (their fifth milestone), the world's difficulty is raised to Hard and every player is told "Game is now set to '''Hard'''". This affects the whole world, not just that player, and it can be set back in the world settings.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/difficulty_scaling/increase_difficulty.mcfunction}}</ref>
 
+{{Diagram|Minimum hearts|caption=The lowest that maximum health can fall to as milestones are earned: a heart less per milestone on Normal and Hard, down to 3 hearts, while Easy stays at 10.}}
+
 The minimum is tracked per player, so one player's progress doesn't lower anyone else's floor. When a player first joins on a newer version of the pack, their minimum is reset to 10 hearts. Orpheus, The End of Dreams, A Zealous Alloy and A Divine Alloy are revoked at the same time so they can be earned again, but Brazier, The Stalwart Metal and The Resilient Mineral are not, so a player who had already earned those three can only bring their minimum down to 6 hearts after updating. The code marks the reset as temporary, meant for players coming from 1.12.1-alpha.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref>
 
 === Regaining hearts ===

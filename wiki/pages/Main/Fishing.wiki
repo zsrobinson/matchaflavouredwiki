@@ -57,6 +57,8 @@ Every caught fish has a rarity of 1 to 4 stars, shown as the first line of its t
 | ⭐⭐⭐⭐ || 1 || 1 of 42 || 2.02% || 1 || Master
 |}
 
+{{Diagram|Fishing odds|caption=What one cast brings up with no Luck of the Sea: junk, treasure or fish, then one fish of the biome's climate table by its rarity.}}
+
 The two fish of the special biomes don't follow the table: the [[Creaking Fish]] (⭐⭐⭐☆) sells at 2 for 1 Obol and only once the Fisherman is a Master, and the [[Echo Eel]] (⭐⭐⭐⭐) sells like the other epic fish.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/5/pale_fish.json}}</ref>
 
 The developer grouped the fish this way so that every climate earns about the same amount of money.<ref>{{Cite changelog|0.5-alpha|quote=Each biome/water type have 5 fish, two common, one uncommon, one rare, and one epic. [...] This was done to better balance the selling system, so each biome will be just as "efficient" to fish in as any other}}</ref> The rarity is part of the item and only the fishing loot tables add it, so only fish from those tables can be sold. A [[cod]] dropped by a mob doesn't carry the rarity line and can't be sold.<ref>{{Cite changelog|0.5-alpha|quote=Cod and Salmon cannot be killed and sold, only if caught will they be valid.}}</ref>

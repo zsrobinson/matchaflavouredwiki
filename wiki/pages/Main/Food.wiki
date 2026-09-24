@@ -14,6 +14,8 @@ The first line of a food's tooltip shows the healing as red hearts, one heart pe
 
 Because the healing is a status effect, it follows the vanilla rules for effects of the same level: eating a second food while the first one's healing is still running replaces the remaining healing only if the new duration is longer. Eating foods back to back therefore wastes part of the first one. The healing also stops if the player is already at full [[health]].
 
+{{Diagram|Healing overlap|caption=A second pumpkin empanada eaten halfway through the first restarts the healing instead of adding to it, so 4 of the 16 health points are lost.}}
+
 Most foods heal between {{Hp|2}} and {{Hp|12}}. The five [[#Oven meals|oven meals]] heal {{Hp|20}}, the most of any food.
 
 == Effects ==
