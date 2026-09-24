@@ -232,6 +232,7 @@
 		match: match, pick: pick, titleRows: titleRows, merge: merge, pageUrl: pageUrl };
 	if (typeof module !== 'undefined' && module.exports) { module.exports = api; }
 	if (typeof document === 'undefined') return;
+	window.mfwSearch = api;  // the recipe browser matches item names the same way (site/recipes.js)
 
 	// ---- Data ----------------------------------------------------------------------------------
 	var form = document.getElementById('searchform');

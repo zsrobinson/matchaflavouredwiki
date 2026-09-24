@@ -30,6 +30,7 @@ sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import build_xml  # noqa: E402
 import fingerprint  # noqa: E402
 import og  # noqa: E402
+import recipe_browser  # noqa: E402
 import search_index  # noqa: E402
 import seo  # noqa: E402
 
@@ -234,7 +235,7 @@ class Exporter:
         info = {'layer': layer, 'lastmod': self.dates.get(src), 'published': self.first_dates.get(src),
                 'categories': seo.categories(doc), 'image': seo.infobox_image(doc), 'is_main': is_main,
                 # generated pages (vanilla items, data-only pages) are thin: keep them out of the index
-                'noindex': layer == 'generated' and not is_main}
+                'noindex': layer == 'generated' and not is_main or title == recipe_browser.TITLE}  # drawn by its script
         if not info['noindex']:
             info['card'] = self.share_card(title, info)
         doc = seo.apply(doc, title, info)
@@ -353,12 +354,17 @@ def main():
             f.write('\n')
         f.write(SITE_JS)
         f.write(open(os.path.join(ROOT, 'site', 'search.js'), encoding='utf-8').read())
-    shutil.copy(os.path.join(ROOT, 'site', 'search.css'), os.path.join(out, '_static', 'site.css'))
+        f.write(open(os.path.join(ROOT, 'site', 'recipes.js'), encoding='utf-8').read())
+    with open(os.path.join(out, '_static', 'site.css'), 'w', encoding='utf-8') as f:
+        for css in ('search.css', 'recipes.css'):
+            f.write(open(os.path.join(ROOT, 'site', css), encoding='utf-8').read())
     for d in ('assets', 'images'):
         src = os.path.join(ROOT, 'site', d)
         if os.path.isdir(src):
             shutil.copytree(src, os.path.join(out, d), dirs_exist_ok=True)
     og.site_icons(out)
+    # the recipe browser's data (tools/recipe_browser.py), its slots rendered by the wiki and linked like the pages
+    recipe_browser.write(out, args.base, ex.rewrite)
     # search.json: canonical titles, used by the 404 page's case-insensitive lookup
     with open(os.path.join(out, 'search.json'), 'w', encoding='utf-8') as f:
         json.dump(titles + sorted(t for t, p in exportable.items() if re.match(r'\s*#REDIRECT', p[1], re.I) and t not in ex.case_redirects), f)
