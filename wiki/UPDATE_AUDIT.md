@@ -67,6 +67,7 @@ Both are fixed below, and the fixes were tested on the 26.3 branch.
 1. **Prepare the extractor for 26.3 now,** while the port is still a branch. `tools/dry_run.sh 26.3`
    lists the eight format changes. Read both the old and the new format. CI proves the output for
    `main` stays the same. The Monday rehearsal does this unattended.
+   Done in September 2026 (`tools/mcformat.py`); what the port still needs is in `wiki/PORT_26_3.md`.
 2. **Generate the tables above,** starting with Stonecutter and Advancements. Their data is already
    extracted, so this is only `generate.py` and page work.
 3. **Add inline data templates** for the numbers most often repeated in prose.

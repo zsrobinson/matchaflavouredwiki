@@ -76,6 +76,11 @@ the swap mid-way.
   a format change dropped data silently: the 26.3 port renames loot `functions` to `modifier`, which
   would have removed every drop count and condition, and custom items named by loot, with no error.
   Handle new keys; list one in `KNOWN` only if the wiki really doesn't need it.
+- **New formats are translated, not branched on.** `tools/mcformat.py` turns each 26.3 loot table,
+  predicate, trade and criterion into the 26.2 names as it's loaded, so `data.json` has one shape. Add the
+  next version's renames there, with a test in `tests/test_mcformat.py`, and prove that the pinned
+  commit's `data.json` comes out byte-identical. Changes of meaning go in `data.json` as data: 26.3's
+  doubled blast furnace and smoker times come with `cooking_speed`, which `cook_ticks()` divides by.
 
 - **The local wiki never deletes pages.** A page the generator stopped producing still exists locally,
   so local checks can pass while CI, which builds from scratch, finds broken links. Trust the PR check.
