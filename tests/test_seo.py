@@ -55,6 +55,15 @@ class SEOTests(unittest.TestCase):
         self.assertIn('<title>Search results – Matcha Flavoured Wiki</title>', utility)
         self.assertIn('<h1>Search</h1>', utility)
 
+    def test_hearts_become_words_in_the_description(self):
+        heart = '<a href="/w/Health" title="Health"><span class="mf-heart" role="img" aria-label="heart"></span></a>'
+        half = '<a href="/w/Health" title="Health"><span class="mf-heart mf-heart-half" role="img" aria-label="half a heart"></span></a>'
+        doc = ('<div id="mw-content-text"><p><b>Bread</b> is baked dough. It heals <span class="nowrap">4 (%s × 2)</span>, '
+               'a crumb <span class="nowrap">2 (%s × 1)</span> and a seed <span class="nowrap">1 (%s × 0.5)</span>.</p>'
+               % (heart, heart, half))
+        self.assertEqual(seo.lead_description(doc), 'Bread is baked dough. It heals 4 (2 hearts), a crumb 2 (1 heart) '
+                                                    'and a seed 1 (half a heart).')
+
 
 if __name__ == '__main__':
     unittest.main()
