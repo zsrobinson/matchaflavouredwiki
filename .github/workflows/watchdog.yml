@@ -1,0 +1,29 @@
+# Daily check that the wiki hasn't gone stale and the site is up (tools/watchdog.py): a Modrinth
+# release the wiki hasn't handled after 3 days, a live site not serving main's build 2 hours after
+# main changed, a key page not answering 200, or a failed Build and deploy run.
+# It runs outside the autopilot routine on purpose, so it notices when the routine stops. When a
+# scheduled run fails, GitHub notifies (by email, with Actions notifications on) the user who created
+# this workflow or last changed its cron line, so only the owner should edit that line. GitHub also
+# disables schedules in a repository with no commits for 60 days, after an email warning.
+name: Watchdog
+on:
+  schedule:
+    - cron: '17 9 * * *'  # daily (UTC)
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read  # the Build and deploy runs
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main  # the stamp is compared with main's tree, whichever branch started a manual run
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Is the wiki current and the site up?
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 tools/watchdog.py

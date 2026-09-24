@@ -32,6 +32,7 @@ import fingerprint  # noqa: E402
 import og  # noqa: E402
 import search_index  # noqa: E402
 import seo  # noqa: E402
+import watchdog  # noqa: E402
 
 
 def fetch(url, binary=False):
@@ -355,6 +356,8 @@ def main():
         f.write(SITE_JS)
         f.write(open(os.path.join(ROOT, 'site', 'search.js'), encoding='utf-8').read())
     shutil.copy(os.path.join(ROOT, 'site', 'search.css'), os.path.join(out, '_static', 'site.css'))
+    # /_static/build.json: the tree this export was built from, which tools/watchdog.py compares with main's
+    watchdog.write_stamp(out)
     for d in ('assets', 'images'):
         src = os.path.join(ROOT, 'site', d)
         if os.path.isdir(src):
