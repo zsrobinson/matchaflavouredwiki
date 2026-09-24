@@ -4,14 +4,12 @@ The '''tools''' of Matcha Flavoured are the vanilla pickaxe, axe, shovel and hoe
 {{Data/Tools/Tiers}}
 
 == Mining levels ==
-Instead of the vanilla "incorrect tool" tags, pack pickaxes use their own block tags:<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref>
-* '''Wood''' gets no drops from hematite, native gold, native silver, diamond ore, sulfur ores, natural lapis lazuli, deepslate or obsidian.
-* '''Copper''' gets no drops from diamond ore, native gold or obsidian.
-* '''Iron''' gets no drops from obsidian, crying obsidian or ender chests.
-* '''Gold''', '''shakudo''' and '''hepatizon''' pickaxes break obsidian without drops.
-* '''Diamond''' (35), '''electrum''' and '''adamant''' (55) mine obsidian very fast.
+Instead of the vanilla "incorrect tool" tags, pack pickaxes use their own block tags and tool rules.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/copper.json}}</ref> The table shows which blocks each pickaxe gets drops from. A speed in a cell is the pickaxe's mining speed on that block, where it differs from its usual speed.
+{{Data/Tools/Mining levels}}
+* '''Gold''' pickaxes break obsidian, crying obsidian and ender chests without drops.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/golden_pickaxe.json}}</ref>
+* '''Shakudo''' and '''hepatizon''' pickaxes break obsidian without drops. Their rule names only obsidian, so they get drops from crying obsidian and ender chests.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_pickaxe.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_pickaxe.json}}</ref>
 * The '''steel pickaxe''' and most dolabras have no obsidian rule and mine it normally.
-Because the pack's pickaxe rules list <code>#minecraft:mineable/pickaxe</code> as a correct tool without a tier check, any pickaxe not listed above gets drops from every other pickaxe block, including ancient debris.
+Because the pack's pickaxe rules list <code>#minecraft:mineable/pickaxe</code> as a correct tool without a tier check, a pickaxe gets drops from every pickaxe block its rules don't name, including ancient debris.
 
 == Comparison ==
 === Pickaxe ===

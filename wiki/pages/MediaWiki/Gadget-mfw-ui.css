@@ -303,3 +303,140 @@
 	height: 18px;
 	background: url('/assets/gui/trade-arrow.png') no-repeat 0 0 / 20px 18px;
 }
+
+/* Diagrams ({{Diagram}}, drawn by tools/diagrams.py): the light or dark drawing, to match the theme */
+.mfw-diagram {
+	margin: 0.6em 0 1.2em;
+}
+.mfw-diagram img {
+	max-width: 100%;
+	height: auto;
+}
+.mfw-diagram-dark,
+body.wgl-theme-dark .mfw-diagram-light {
+	display: none;
+}
+body.wgl-theme-dark .mfw-diagram-dark {
+	display: block;
+}
+.mfw-diagram-caption {
+	margin-top: 0.3em;
+	font-size: 90%;
+	color: var(--color-subtle, #54595d);
+}
+.mfw-diagram-right {
+	float: right;
+	clear: right;
+	margin: 0.2em 0 1em 1.4em;
+}
+@media screen and (max-width: 720px) {
+	.mfw-diagram-right {
+		float: none;
+		margin: 0.6em 0 1.2em;
+	}
+}
+
+/* Image viewer (Gadget-mfwZoom.js): a click on a picture opens it over the page */
+img.mfw-zoomable {
+	cursor: zoom-in;
+}
+html.mfw-zoom-open,
+html.mfw-zoom-open body {
+	overflow: hidden;
+}
+#mfw-zoom {
+	position: fixed;
+	inset: 0;
+	z-index: 2000;
+	display: flex;
+	flex-direction: column;
+	background: rgba(12, 12, 12, 0.92);
+	color: #eee;
+}
+#mfw-zoom[hidden] {
+	display: none;
+}
+.mfw-zoom-stage {
+	flex: 1;
+	min-height: 0;
+	overflow: auto;
+	display: flex;
+	/* safe: a picture larger than the stage scrolls from its top left corner instead of being cut off */
+	align-items: safe center;
+	justify-content: safe center;
+	padding: 16px;
+	box-sizing: border-box;
+	cursor: zoom-out;
+}
+.mfw-zoom-img {
+	flex: none;
+	max-width: none;
+	cursor: default;
+}
+.mfw-zoom-can-zoom .mfw-zoom-img {
+	cursor: zoom-in;
+}
+.mfw-zoom-zoomed .mfw-zoom-img {
+	cursor: zoom-out;
+}
+.mfw-zoom-pixel {
+	image-rendering: pixelated;
+}
+.mfw-zoom-bar {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	padding: 10px 16px 12px;
+	background: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+	line-height: 1.5;
+}
+.mfw-zoom-caption {
+	flex: 1;
+	max-height: 30vh;
+	overflow: auto;
+}
+.mfw-zoom-caption[hidden] {
+	display: block;
+	visibility: hidden;
+}
+#mfw-zoom a {
+	color: #9ecbff;
+}
+.mfw-zoom-original {
+	flex: none;
+	white-space: nowrap;
+}
+.mfw-zoom-close {
+	flex: none;
+	margin: -6px -6px 0 0;
+	width: 36px;
+	height: 36px;
+	border: 0;
+	border-radius: 4px;
+	background: none;
+	color: #eee;
+	font-size: 28px;
+	line-height: 1;
+	cursor: pointer;
+}
+.mfw-zoom-close:hover,
+.mfw-zoom-close:focus-visible {
+	background: rgba(255, 255, 255, 0.15);
+}
+@media (max-width: 720px) {
+	.mfw-zoom-stage {
+		padding: 8px;
+	}
+	.mfw-zoom-bar {
+		flex-wrap: wrap;
+		gap: 4px 12px;
+		font-size: 13px;
+	}
+	.mfw-zoom-caption {
+		flex-basis: calc(100% - 48px);
+	}
+	.mfw-zoom-original {
+		order: 3;
+	}
+}

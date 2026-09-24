@@ -1,5 +1,7 @@
 '''Ores''' in Matcha Flavoured are mostly renamed vanilla ores, some with new drops or generation. Emerald ore becomes [[Native Silver|native silver]], lapis ore splits into [[Quartz Deposit|quartz deposits]] and [[Natural Lapis Lazuli|natural lapis lazuli]], and redstone ore becomes [[Sulfurous Quartz Deposit|sulfurous quartz deposit]]. Adamant tools smelt the drops of several ores (see the table); electrum tools add Fortune.
 
+{{Diagram|Ore heights|caption=Where each ore generates by Y level: grey is as in vanilla, teal is changed or added by the pack, and dashed shapes are extra veins in the biomes named.}}
+
 {| class="wikitable sortable"
 ! Ore !! Vanilla block !! Drops !! Generation
 |-
@@ -11,7 +13,7 @@
 |-
 | {{BlockLink|Native Gold}} || Gold Ore || 1 raw gold, affected by Fortune and electrum (in 1.12.2-beta the stone variant applies Fortune twice and ignores electrum; see [[Native Gold#Breaking]]); adamant tools drop a gold ingot. Needs an iron or better pickaxe || As vanilla gold ore.
 |-
-| {{BlockLink|Native Silver}} || Emerald Ore || 1 [[Raw Silver|raw silver]]; adamant tools drop [[Silver Bullion|silver bullion]] || In mountain biomes and the deep dark the vanilla emerald feature runs at 50 attempts per chunk (vanilla 100), plus 5 deep attempts. Stony peaks get only the 50 attempts, beaches and the sulfur caves get none, and every other overworld biome gets 3 deep attempts. Deep veins follow a triangle from y=16 down to the world bottom, most common at the bottom.
+| {{BlockLink|Native Silver}} || Emerald Ore || 1 [[Raw Silver|raw silver]]; adamant tools drop [[Silver Bullion|silver bullion]] || In mountain biomes and the deep dark the vanilla emerald feature runs at 50 attempts per chunk (vanilla 100), plus 5 deep attempts. Stony peaks get only the 50 attempts, the beach biome and the sulfur caves get none, and every other overworld biome (snowy beaches and stony shores included) gets 3 deep attempts.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/beach.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/snowy_beach.json}}</ref> Deep veins follow a triangle from y=16 down to the world bottom, most common at the bottom.
 |-
 | {{BlockLink|Quartz Deposit}} || Lapis Lazuli Ore || 2–5 [[Quartz|quartz]]; adamant tools drop glass || The vanilla lapis feature, changed to 12 attempts per chunk (vanilla 2) between y=−32 and y=96.
 |-
@@ -30,6 +32,8 @@
 
 Worldgen changes are in the biome overrides and <code>worldgen/placed_feature</code>; biome details are on [[Biomes]].
 
+== References ==
+{{reflist}}
 
 {{Navbox equipment}}
 [[Category:Ores]]

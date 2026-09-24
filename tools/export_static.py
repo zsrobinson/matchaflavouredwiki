@@ -346,9 +346,10 @@ def main():
     # site furniture
     os.makedirs(os.path.join(out, '_static'), exist_ok=True)
     with open(os.path.join(out, '_static', 'site.js'), 'w') as f:
-        # the same shell, tooltip, page preview and cycling scripts the live wiki runs as gadgets, then the
-        # static-only behaviours
-        for gadget in ('Gadget-mfwShell.js', 'Gadget-mfwTooltip.js', 'Gadget-mfwPreview.js', 'Gadget-animatedIcons.js'):
+        # the same shell, tooltip, page preview, cycling and image viewer scripts the live wiki runs as
+        # gadgets, then the static-only behaviours
+        for gadget in ('Gadget-mfwShell.js', 'Gadget-mfwTooltip.js', 'Gadget-mfwPreview.js', 'Gadget-animatedIcons.js',
+                       'Gadget-mfwZoom.js'):
             f.write(open(os.path.join(ROOT, 'wiki', 'pages', 'MediaWiki', gadget), encoding='utf-8').read())
             f.write('\n')
         f.write(SITE_JS)

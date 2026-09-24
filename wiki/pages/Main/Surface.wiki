@@ -23,6 +23,8 @@ After the dragon is killed, every new "mundane hostile" mob (zombie, husk, drown
 
 Drowned are removed if they can see the sky or are at Y=63 or above, including inside those structures.<ref>{{Source|MF_datapack/data/matcha/predicate/drowned_surface_spawn.json}}</ref>
 
+{{Diagram|Surface spawning|caption=Where mundane hostile mobs can appear in the Overworld before and after the Ender Dragon is killed.}}
+
 Removed mobs are teleported 1,000 blocks down and killed, so they drop nothing. The rule applies to every way a mob can appear, including spawn eggs and spawners, and only to mobs that appear after the dragon's death; mobs already in the world are not removed. Mobs that are not on the list, such as [[Phantom|phantoms]], pillagers and the [[Wither]], are not affected, and [[Hell]] and the End keep their normal spawning.
 
 Trial chambers and abbeys are exempt from the height rule, so their spawners can keep working below the open sky, but any mob in them that can see the sky is still removed.

@@ -1,0 +1,33 @@
+<includeonly>{| class="wikitable" style="text-align:center"
+! Pickaxe !! Speed !! {{ItemLink|Deepslate}} !! {{ItemLink|Hematite}} !! {{ItemLink|Native Gold}} !! {{ItemLink|Native Silver}} !! {{ItemLink|Sulfur Deposit}} !! {{ItemLink|Natural Lapis Lazuli}} !! {{ItemLink|Diamond Ore}} !! {{ItemLink|Obsidian|mcw=Obsidian}} !! {{ItemLink|Crying Obsidian}}, {{ItemLink|Ender Chest}}
+|-
+! style="text-align:left" | {{ItemLink|Wooden Pickaxe}}
+| 3 || class="tc-no" | No drops || class="tc-no" | No drops || class="tc-no" | No drops || class="tc-no" | No drops || class="tc-no" | No drops || class="tc-no" | No drops || class="tc-no" | No drops || class="tc-no" | No drops || class="tc-no" | No drops
+|-
+! style="text-align:left" | {{ItemLink|Copper Pickaxe}}
+| 6 || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-no" | No drops (speed 3) || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-no" | No drops (speed 3) || class="tc-no" | No drops (speed 3) || class="tc-no" | No drops (speed 3)
+|-
+! style="text-align:left" | {{ItemLink|Iron Pickaxe}}
+| 7 || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-no" | No drops (speed 3) || class="tc-no" | No drops (speed 3)
+|-
+! style="text-align:left" | {{ItemLink|Steel Pickaxe}}
+| 8 || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes
+|-
+! style="text-align:left" | {{ItemLink|Golden Pickaxe}}
+| 12 || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-no" | No drops (speed 3) || class="tc-no" | No drops (speed 3)
+|-
+! style="text-align:left" | {{ItemLink|Diamond Pickaxe}}
+| 9 || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-always" | Yes (speed 35) || class="tc-always" | Yes (speed 35)
+|-
+! style="text-align:left" | {{ItemLink|Shakudo Pickaxe}}
+| 9 || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-no" | No drops (speed 3) || class="tc-yes" | Yes
+|-
+! style="text-align:left" | {{ItemLink|Hepatizon Pickaxe}}
+| 20 || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-no" | No drops (speed 3) || class="tc-yes" | Yes
+|-
+! style="text-align:left" | {{ItemLink|Electrum Pickaxe}}
+| 12 || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-always" | Yes (speed 55) || class="tc-always" | Yes (speed 55)
+|-
+! style="text-align:left" | {{ItemLink|Adamant Pickaxe}}
+| 15 || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-yes" | Yes || class="tc-always" | Yes (speed 55) || class="tc-always" | Yes (speed 55)
+|}</includeonly><noinclude>Generated from the pickaxes' tool components by <code>tools/generate.py</code>: which blocks each pickaxe gets drops from, and its mining speed on a block where that differs from its usual speed. [[Category:Generated data]]</noinclude>

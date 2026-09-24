@@ -22,6 +22,7 @@ The item summons a small, invisible, invulnerable {{MCW|Armor Stand|armor stand}
 While active the stone gives off a constant stream of soul fire flames.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/tick.mcfunction}}</ref>
 
 === Effects ===
+{{Diagram|Warding Stone|width=360|align=right|caption=A warding stone's reach, drawn to scale, with a held Warding 4's damage reach for comparison.}}
 Every 0.5 seconds, each warding stone does the following:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/warding_stone/effects.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/warding_stone.mcfunction}}</ref>
 {| class="wikitable"
 ! Effect !! Radius !! Targets

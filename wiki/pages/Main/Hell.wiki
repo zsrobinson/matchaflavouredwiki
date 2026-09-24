@@ -24,6 +24,7 @@ The pack overrides Hell's dimension type:<ref>{{Source|MF_datapack/data/minecraf
 The higher ambient light makes dark areas less dark, while the fog starts at the player and reaches much farther.
 
 === Water ===
+{{Diagram|Hell water|align=right|width=360|caption=Emptying a water bucket below the roof clears all water within 20 blocks of the player; on the roof, water stays.}}
 Although the dimension type no longer evaporates water, water cannot be kept inside Hell. Whenever a player empties a water bucket while in Hell between Y=0 and Y=127, the pack removes all water in a cube reaching 20 blocks from the player in every direction. The fill covers more blocks than the vanilla limit for one command, but the pack raises the <code>max_block_modifications</code> game rule to 200,000, so it succeeds.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/environmental/nether_water.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/invalid_nether_water.json}}</ref> Water can be placed on the Nether roof (Y=128 and above). The 1.10 release notes explain the rule: "Guys please I just want flowers in the nether stop being naughty".<ref>{{Cite changelog|1.10|quote=Water can no longer be placed *inside* of Hell (Guys please I just want flowers in the nether stop being naughty)}}</ref>
 
 == Generation ==
