@@ -117,6 +117,54 @@ def verb(old, new, changed):
 
 
 # ---------------------------------------------------------------- data changes
+ID = re.compile(r'(?<![\w.\-/:#])[a-z0-9_.\-]+:[a-z0-9_./\-]+')
+
+
+def moved_ids(a, b):
+    """{old ID: new ID} for every recipe, advancement, enchantment, loot table, function, trade and item
+    model that is gone after the update while the same path exists under another namespace (1.12.2-beta
+    moved most of `main:` to `matcha:`). Such a move changes the ID and every reference to it, and
+    nothing a reader sees, so the report compares the old data under the new IDs."""
+    def ids(d):
+        trades = [t['id'] for levels in d['trades'].values() for ts in levels.values() if isinstance(ts, list) for t in ts]
+        return set([r['id'] for r in d['recipes']] + list(d['advancements']) + list(d['enchantments']) +
+                   list(d['loot']) + list(d.get('functions', {})) + trades)
+    old, new = ids(a), ids(b)
+    by_path = defaultdict(list)
+    for i in new - old:
+        by_path[i.split(':', 1)[-1]].append(i)
+    moved = {i: by_path[i.split(':', 1)[-1]][0] for i in old - new if len(by_path.get(i.split(':', 1)[-1], ())) == 1}
+    # item models, per item (`minecraft:echo_fish`, also written `echo_fish`, → `matcha:echo_fish`)
+    for name in set(a['items']) & set(b['items']):
+        ma, mb = (set(d['items'][name]['models']) for d in (a, b))
+        for m in ma - mb:
+            to = [n for n in mb if n.split(':', 1)[-1] == m.split(':', 1)[-1]]
+            if len(to) == 1:
+                moved[m] = to[0]
+                if m.startswith('minecraft:'):
+                    moved[m.split(':', 1)[1]] = to[0]
+    return moved
+
+
+MODEL_KEYS = ('item_model', 'minecraft:item_model', 'model')
+
+
+def rename_ids(v, moved, key=None):
+    """v with every moved ID (a string, a key, or part of a longer string) written as its new ID. A bare
+    model ID (`echo_fish`) is only renamed where a model is expected."""
+    if not moved:
+        return v
+    if isinstance(v, dict):
+        return {rename_ids(k, moved): rename_ids(x, moved, k) for k, x in v.items()}
+    if isinstance(v, list):
+        return [rename_ids(x, moved, key) for x in v]
+    if isinstance(v, str):
+        if key in MODEL_KEYS and ':' not in v:
+            return moved.get(v, v)
+        return ID.sub(lambda m: moved.get(m.group(0), m.group(0)), v)
+    return v
+
+
 def diff_dicts(old, new, fields=None):
     keys = fields or sorted(set(old) | set(new))
     return [k for k in keys if old.get(k) != new.get(k)]
@@ -199,7 +247,7 @@ def trade_lines(a, b, pages):
     out = []
     for key in sorted(set(ta) | set(tb)):
         old, new = ta.get(key), tb.get(key)
-        if old == new:
+        if old and new and dict(old, src=None) == dict(new, src=None):  # a moved file is in "Source files"
             continue
         prof, level, tid = key
         t = new or old
@@ -301,6 +349,8 @@ def main():
         sys.exit('No baseline. Before updating, run tools/extract.py and tools/update_report.py --snapshot.')
     a, b = json.load(open(BEFORE, encoding='utf-8')), json.load(open(DATA, encoding='utf-8'))
     frm, to = a['meta']['git_head'], b['meta']['git_head']
+    moved = moved_ids(a, b)
+    a = rename_ids(a, moved)
     pages = Pages()
     commits = git('log', '--oneline', '--no-merges', '%s..%s' % (frm, to)).splitlines()
 
@@ -325,6 +375,12 @@ def main():
                                              b['meta']['pack_description'].splitlines()[-1]), '',
           'Work through every line: fix the pages it names (or confirm they are still right) and tick it. '
           'Lines under one heading can go to one agent.', '']
+    by_ns = defaultdict(int)
+    for o, n in {(o if ':' in o else 'minecraft:' + o, n) for o, n in moved.items()}:  # `x` is `minecraft:x`
+        by_ns['`%s:` → `%s:`' % (o.split(':')[0], n.split(':')[0])] += 1
+    if by_ns:
+        md += ['%d IDs moved to another namespace (%s). The old data is compared under the new IDs.' % (
+            sum(by_ns.values()), ', '.join('%s %d' % kv for kv in sorted(by_ns.items()))), '']
     if covered:
         md += ['Changed files the generator reads (the tables below and `git diff wiki/generated` cover them): ' +
                ', '.join('%s %d' % (k, v) for k, v in sorted(covered.items())) + '.', '']
