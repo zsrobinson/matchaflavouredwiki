@@ -31,9 +31,10 @@ When a player joins a world after it has been updated to a newer version of the 
 * in the Tutorial tab, "Prometheus be Damned" and everything after it (the whole metal and cooking progression, including all seven broken-heart milestones), "Hellish Powder" and everything after it (including the Canto advancements), and the chain from "From Earth" through "You're Rich!", "Bonfire Lit", "A Good Samaritan" and "Fishmonger" to "A True Community";
 * in the Hell tab, everything except "Hidden in the Depths" and "Demonic Emissary";
 * in the End tab, "Wax Wings", "Icarus' Folly" and "Wings of Eros".
+
 "No More Fish in the Sea", "God help you...", "Demonic Emissary", "Hidden in the Depths", "To Dreams" and "Iconoclast" are kept; the code notes that the fishing and prayer advancements are spared deliberately. Because "From Earth" is revoked, it is granted again on the next tick and reruns the pack's first-load setup, including the game rules. See [[Updating items]].
 
-The <code>main</code> branch narrows the tutorial part to the advancements that give rewards, so "Prometheus be Damned", the kiln and cooking basics and the Brazier, The Stalwart Metal and The Resilient Mineral milestones will be kept in the next version.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+The <code>main</code> branch replaces the tutorial part with a hand-picked, narrower list, so "Prometheus be Damned", the kiln, oven and smelting advancements, and the Brazier, The Stalwart Metal and The Resilient Mineral milestones will be kept in the next version.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 
 == Tutorial ==
 {{See also|Progression|Guide for new players}}

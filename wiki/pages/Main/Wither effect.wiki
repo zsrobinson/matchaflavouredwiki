@@ -16,6 +16,13 @@ Whenever a player's effects change, the pack starts tracking them unless the wor
 
 The meter is shown with the pack's own glyphs: a Wither icon followed by a bar that fills over the 8 seconds.
 
+=== Multiplayer ===
+In 1.12.2-beta the count and the meter are not kept per player. Each second, the check for a withered player adds 1 to ''every'' online player's count and shows the meter in every player's action bar, and the quiet totem sound at the end is played to all players, so those standing near the withered player hear it.<ref name="timer" /> In multiplayer this means:
+* players who aren't withered see another player's meter fill up (their own count is reset when their own check runs, so they don't lose hearts);
+* when several players are withered at the same time, each of their counts rises by more than 1 per second, so they lose hearts in fewer than 8 seconds.
+
+The <code>main</code> branch fixes this, so the next version keeps a separate count for each player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/check_wither_timer.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+
 === Hearts lost ===
 The heart loss uses the same function as a death:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/hpdown.mcfunction}}</ref>
 {| class="wikitable"
@@ -39,6 +46,7 @@ The 1.12.2 release notes ask players to "bring milk or bread to Hell, please its
 == History ==
 {{History|
 {{History line|1.12.2|The Wither effect now takes hearts after 8 seconds, except on Easy. The [[Shakudo equipment|Shakudo chestplate]] no longer cleanses Wither.}}
+{{History line|Upcoming|2=The Wither count, meter and sound are kept for each player separately; in 1.12.2 they were shared by all players.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/check_wither_timer.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == Trivia ==
