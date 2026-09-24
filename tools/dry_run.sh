@@ -22,7 +22,7 @@ cp -a tools "$DIR/wiki/"
 cp -al wiki "$DIR/wiki/" 2>/dev/null || cp -a wiki "$DIR/wiki/"  # generate.py replaces files, never edits them
 cd "$DIR/wiki"
 # reuse what is already downloaded: the pack's objects, and vanilla data if the version stays the same
-git clone -q --shared "$ROOT/source/matcha-flavoured" source/matcha-flavoured
+git -c advice.detachedHead=false clone -q --shared "$ROOT/source/matcha-flavoured" source/matcha-flavoured
 git -C source/matcha-flavoured remote set-url origin https://github.com/kleiwright/matcha-flavoured.git
 for d in vanilla-data vanilla-assets vanilla-summary; do cp -al "$ROOT/source/$d" source/ 2>/dev/null || cp -a "$ROOT/source/$d" source/; done
 cp "$ROOT/build/data.json" build/data.before.json
