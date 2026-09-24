@@ -216,6 +216,8 @@ class Exporter:
             self.redirects[url_title(title)] = href_for(m.group(1).strip()) + (m.group(2) or '').replace(' ', '_')
             return 'redirect'
         doc = self.rewrite(fetch(self.base + '/w/' + urllib.parse.quote(url_title(title))))
+        if title == recipe_browser.TITLE:
+            doc = recipe_browser.page(doc)
         src, layer = seo.source_file(title, ns)
         is_main = title == 'Matcha Flavoured Wiki'
         # search: the page's picture (Pagefind's result image too), and its row in the title search

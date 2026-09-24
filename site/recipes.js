@@ -116,8 +116,9 @@
 
 	// ---- Crafting tree -------------------------------------------------------------------------
 	// A recipe that undoes another: one of its slots takes only things made from its output (Coal
-	// from a Block of Coal, Oak Planks from Oak Slabs, an ingot from nuggets). The tree doesn't follow
-	// these down, or everything compressible would lead in circles.
+	// from a Block of Coal, Oak Planks from Oak Slabs, an ingot from nuggets). The tree lists these
+	// last, and an item the world gives whose every recipe undoes another is a raw material (Coal is
+	// mined; Oak Slabs, which only drop themselves, are still made from planks).
 	function reverses(db, r) {
 		var from = db.from[r.o] || {};
 		return r.s !== 'trade' && tally(r).some(function (t) { return members(db.d, t[0]).every(function (m) { return from[m]; }); });
@@ -131,7 +132,8 @@
 		if (db.depth) return db.depth;
 		var depth = {};
 		function of(name) { return depth[name] === undefined ? (db.made[name] && db.made[name].some(crafted) ? Infinity : 0) : depth[name]; }
-		function crafted(i) { return db.rows[i].s !== 'trade' && !reverses(db, db.rows[i]); }
+		function crafted(i) { return db.rows[i].s !== 'trade' && !(db.world[db.rows[i].o] && undone(db.rows[i].o)); }
+		function undone(name) { return db.made[name].every(function (i) { return db.rows[i].s === 'trade' || reverses(db, db.rows[i]); }); }
 		function slotDepth(text) { return Math.min.apply(null, members(db.d, text).map(of)); }
 		function relax() {
 			var changed = true, rounds = 0;
@@ -220,7 +222,7 @@
 		})[0];
 	}
 	// The tree for `need` of a slot text: {text, name, need, recipe, recipes, crafts, children, loop}.
-	// choices: {itemName: recipe row index, 'any:<slot text>': member name}, the reader's picks.
+	// choices: {itemName: recipe row index or -1 for "use as it is", 'any:<slot text>': member name}, the reader's picks.
 	function tree(db, text, need, choices, path) {
 		choices = choices || {};
 		path = path || [];
@@ -233,6 +235,7 @@
 		if (!rs.length || path.length >= 16) return node;
 		var r = rs.filter(function (x) { return x.i === choices[name]; })[0] || rs[0];
 		if (!depthOf(db, name) && choices[name] === undefined) return node;  // a raw material, or gathered (see depths)
+		if (choices[name] === -1 && path.length) return node;  // the reader has it already
 		node.recipe = r;
 		node.crafts = Math.ceil(need / (r.c || 1));
 		node.children = tally(r).map(function (t) { return tree(db, t[0], t[1] * node.crafts, choices, path.concat(name)); });
@@ -336,6 +339,11 @@
 		if (r.s === 'kindling') note.push('also on ' + link('Soul Kindling'));
 		return '<div class="mfui-figure">' + h + (note.length ? '<div class="mfui-caption">' + note.join(' · ') + '</div>' : '') + '</div>';
 	}
+	// A slot's text in a few words: "Iron Pickaxe or …" for a long list of alternatives
+	function short(text) {
+		var ps = parseSlot(text);
+		return ps[0].name + (ps.length > 1 ? ' or …' : '');
+	}
 	function heading(level, text, id) {
 		return '<div class="mw-heading mw-heading' + level + '"><h' + level + (id ? ' id="' + esc(id) + '"' : '') + '>' + text + '</h' + level + '></div>';
 	}
@@ -377,7 +385,7 @@
 		h += slot(node.text.indexOf(';') < 0 ? node.text : node.name, node.need) + ' <span class="mfw-rb-label">' + (node.need > 1 ? node.need + ' × ' : '') + link(node.text.indexOf(';') < 0 ? node.text : node.name) + '</span>';
 		if (node.text !== node.name && node.recipe) h += ' <span class="mfw-rb-how">as ' + link(node.name) + '</span>';
 		var ms = members(db.d, node.text);
-		if (ms.length > 1) {
+		if (ms.length > 1 && node.recipe) {  // which member to make; a raw tag is any of them
 			h += ' <select class="mfw-rb-pick" data-any="' + esc(node.text) + '" aria-label="Which item">' + ms.map(function (m) {
 				return '<option' + (m === node.name ? ' selected' : '') + '>' + esc(m) + '</option>';
 			}).join('') + '</select>';
@@ -386,14 +394,18 @@
 			h += ' <span class="mfw-rb-how">(already above: a loop)</span>';
 		} else if (node.recipe) {
 			h += ' <span class="mfw-rb-how">' + (node.crafts > 1 ? node.crafts + ' × ' : '') + link(STATIONS[node.recipe.s].name) + '</span>';
-			if (node.recipes.length > 1) {
-				h += ' <select class="mfw-rb-pick" data-item="' + esc(node.name) + '" aria-label="Recipe for ' + esc(node.name) + '">' + node.recipes.map(function (r, i) {
-					return '<option value="' + r.i + '"' + (r === node.recipe ? ' selected' : '') + '>Recipe ' + (i + 1) + ': ' + esc(STATIONS[r.s].name) +
-						' (' + esc(tally(r).map(function (t) { return (t[1] > 1 ? t[1] + ' ' : '') + t[0]; }).join(', ')) + ')</option>';
-				}).join('') + '</select>';
-			}
 		} else if (!top) {
 			h += ' <span class="mfw-rb-how">' + (made(db, node.name, 'trade').length ? 'raw material, or traded' : 'raw material') + '</span>';
+		}
+		// the recipe to follow, or none: any ingredient can be taken as it is, or made after all
+		// (a raw material only when a recipe makes it from something else: not Raw Iron from its block)
+		if (!node.loop && node.recipes && node.recipes.length && (!top || node.recipes.length > 1) &&
+				(node.recipe || node.recipes.some(function (r) { return !reverses(db, r); }))) {
+			h += ' <select class="mfw-rb-pick" data-item="' + esc(node.name) + '" aria-label="How to get ' + esc(node.name) + '">' +
+				(top ? '' : '<option value="-1"' + (node.recipe ? '' : ' selected') + '>As it is</option>') + node.recipes.map(function (r, i) {
+					return '<option value="' + r.i + '"' + (r === node.recipe ? ' selected' : '') + '>' + esc(STATIONS[r.s].name + ': ' +
+						tally(r).map(function (t) { return (t[1] > 1 ? t[1] + ' ' : '') + short(t[0]); }).join(', ')) + '</option>';
+				}).join('') + '</select>';
 		}
 		h += '</span>';
 		if (node.children.length) h += '<ul>' + node.children.map(function (c) { return treeHtml(c); }).join('') + '</ul>';

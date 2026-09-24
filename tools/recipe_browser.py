@@ -17,7 +17,9 @@ This module builds what the script needs, at export time, into one file:
     a  tag aliases ("Any Planks") -> the item names they stand for (Module:Inventory slot/Aliases)
     n  item name -> its vanilla name, where the pack renamed it (so "emerald" finds Obol)
     w  the items the world gives (block and mob drops, fishing, harvesting...: the Sources tables
-       less chest loot), which the crafting tree prefers as raw materials (Raw Iron, not Iron Horse Armor)
+       less chest loot, and less a block dropping itself), which the crafting tree takes as raw
+       materials where a recipe only undoes another (Coal, not Coal from a Block of Coal) and prefers
+       among a tag's members (Raw Iron, not Iron Horse Armor)
     u  item name -> the link its slots use (its page here, or minecraft.wiki)
     h  slot name -> the slot's HTML, rendered by the wiki's own Module:Inventory slot (icon, cycling
        frames, the in-game tooltip), so a screen drawn by the script is the article's screen
@@ -128,7 +130,10 @@ def build(g):
         it = g.ITEMS.get(n)
         if it and it.get('renamed_vanilla') and it.get('vanilla_name') and it['vanilla_name'].lower() != n.lower():
             vanilla[n] = it['vanilla_name']
-    world = sorted(n for n in names if any(src[0] in WORLD for src in g.SOURCES.get(n, [])))
+    def own_block(n, lid):  # a placed slab drops the slab: that says nothing about where slabs come from
+        base = (g.ITEMS.get(n) or {}).get('base_id') or ''
+        return lid.split(':')[-1] == 'blocks/' + base.split(':')[-1]
+    world = sorted(n for n in names if any(src[0] in WORLD and not own_block(n, src[2]) for src in g.SOURCES.get(n, [])))
     return {'r': rows, 'a': aliases, 'n': vanilla, 'w': world}, sorted(names)
 
 
@@ -173,6 +178,12 @@ def slot_link(slot_html):
     """The link a slot goes to (the first frame's), or None."""
     m = re.search(r'<a [^>]*href="([^"]+)"', slot_html)
     return html.unescape(m.group(1)) if m else None
+
+
+def page(doc):
+    """The browser's page in the export: MediaWiki writes the data's path as /&#95;static/, which
+    tools/fingerprint.py wouldn't see (and so wouldn't version)."""
+    return doc.replace('data-src="/&#95;static/', 'data-src="/_static/')
 
 
 def write(out, base, rewrite=lambda s: s):

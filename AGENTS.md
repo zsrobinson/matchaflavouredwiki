@@ -223,6 +223,27 @@ the swap mid-way.
   - Category pages are left out of the full-text index; its ranking settings are `RANKING` in `search.js`.
   - Synonyms readers type belong in real redirects (`Changelog`, `Updates`), not in code.
     `node --test tests/search.test.mjs` covers the matching.
+- **Recipe browser** (`Matcha Flavoured Wiki:Recipe browser`, linked from the sidebar and the station
+  articles' See also): an item's recipes (Obtaining), its uses (Usage, tags included: Oak Planks finds
+  "Any Planks" recipes) and a crafting tree to raw materials, with a station filter. Deep links:
+  `?q=<item>&station=<crafting|oven|kiln|kindling|blast|smithing|stonecutter|trade>`.
+  - The page is hand-written wikitext (lead, a `#mfw-recipes` placeholder); `site/recipes.js` fills it on
+    the static site only. The live wiki shows the placeholder's sentence.
+  - `tools/recipe_browser.py` writes `_static/recipes.json` during the export, from `tools/generate.py`'s
+    own recipe helpers (so slot names, tags and variants match the articles' tables). Each slot's HTML
+    comes from the wiki itself (`api.php?action=parse` on `Module:Inventory slot`), so slots cycle and
+    show tooltips as on articles. It is about 1.2 MB (110 kB gzipped) and loads only on that page.
+    `recipes.js` redraws `Module:Station`'s screens: if a station's coordinates change there, change them
+    in `STATIONS` too.
+  - The tree takes the recipe with the fewest steps. A recipe that undoes another (ingot from its block,
+    planks from slabs) is never the default. Raw materials are items with no recipe, items made only from
+    each other (Oak Log and Oak Wood), and items the world gives whose every recipe undoes another (Coal).
+    "The world gives" is the Sources tables minus chest loot and minus a block dropping itself.
+  - Tests: `tests/recipes.test.mjs` (lookups, matching, tree) and `tests/test_recipe_browser.py` (data).
+  - To remove it: delete `site/recipes.js`, `site/recipes.css`, `tools/recipe_browser.py`, the two tests,
+    the project page and its sidebar and See also links, and the lines naming `recipe_browser` or
+    `recipes.js`/`recipes.css` in `tools/export_static.py` and the workflows. Also drop the
+    `window.mfwSearch` line in `site/search.js`.
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;
   it becomes the search snippet. `check_seo.py` checks the export.
