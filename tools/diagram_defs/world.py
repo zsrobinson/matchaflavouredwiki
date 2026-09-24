@@ -3,8 +3,8 @@ import json
 import os
 import re
 
-from diagrams import (PACK_DATA, SMALL, TEXT, VANILLA_DATA, Scale, Svg, data, diagram, legend, mcfunction, need,
-                      pack_file, pack_json, text_width)
+from diagrams import (PACK_DATA, SMALL, VANILLA_DATA, Scale, Svg, data, diagram, legend, mcfunction, need, pack_file,
+                      pack_json)
 
 
 # ---------------------------------------------------------------------------------------------
@@ -569,18 +569,21 @@ def verdict(allowed, groups):
 @diagram('Surface spawning')
 def surface_spawning():
     """A side view of the same patch of ground before and after the dragon: the places are drawn as
-    they are (sky, stone, an overhang, an abbey, a cave), and a chip on each says who may spawn there."""
+    they are (sky, stone blocks, an overhang, an abbey, a cave), each open space filled with the colour
+    of who may spawn there and labelled in place."""
     line, states, groups = surface_rules()
     PW, PH, gap = 364, 246, 32
     svg = Svg(2 * PW + gap, 0, 'Where mundane hostile mobs can appear in the Overworld before and after the Ender Dragon is killed')
     top, sea, cell = 30, 160, 12
-    strong = {'@red_soft': '@red', '@amber_soft': '@amber', '@green_soft': '@green'}
     for i, (state, title) in enumerate((('before', 'Before the dragon is killed'), ('after', 'After the dragon is killed'))):
         ox = i * (PW + gap)
         rules = states[state]
 
         def P(pts):
             return [(ox + px, top + py) for px, py in pts]
+
+        def fill(key):
+            return verdict(rules[key], groups)[1]
         svg.text(ox + PW / 2, 12, title, anchor='middle', bold=True)
         # stone, drawn as blocks
         svg.rect(ox, top + 60, PW, PH - 60, fill='@grey_soft')
@@ -588,15 +591,16 @@ def surface_spawning():
             svg.line(ox + gx, top + 60, ox + gx, top + PH, stroke='@grid', sw=0.6)
         for gy in range(60, PH + 1, cell):
             svg.line(ox, top + gy, ox + PW, top + gy, stroke='@grid', sw=0.6)
-        # the open spaces: sky (and the ravine open to it), and air under cover, in the abbey and in the cave
+        # the open spaces, each in the colour of its verdict: the sky (with the ravine open to it, above
+        # and below the line), and the air under cover, in the abbey and in the cave
         sky = [(0, 0), (PW, 0), (PW, 118), (338, 118), (338, sea), (306, sea), (306, 118), (288, 118), (288, 62),
                (172, 62), (172, 118), (150, 118), (150, 60), (0, 60)]
-        svg.poly(P(sky) + P(sky[:1]), fill='@blue_soft')
-        svg.poly(P([(306, sea), (338, sea), (338, 198), (306, 198)]) + P([(306, sea)]), fill='@blue_soft')
-        svg.rect(ox + 30, top + 76, 120, 42, fill='@panel')                      # under the overhang
-        svg.rect(ox + 30, top + 180, 220, 48, fill='@panel', rx=18)              # a cave
-        svg.rect(ox + 172, top + 62, 116, 56, fill='@grey')                      # the abbey's walls and roof
-        svg.rect(ox + 179, top + 70, 102, 48, fill='@panel')
+        svg.poly(P(sky) + P(sky[:1]), fill=fill('sky'))
+        svg.poly(P([(306, sea), (338, sea), (338, 198), (306, 198)]) + P([(306, sea)]), fill=fill('ravine'))
+        svg.rect(ox + 30, top + 76, 120, 42, fill=fill('cover'))                   # under the overhang
+        svg.rect(ox + 30, top + 180, 220, 48, fill=fill('cave'), rx=18)            # a cave
+        svg.rect(ox + 172, top + 62, 116, 56, fill='@grey')                        # the abbey's walls and roof
+        svg.rect(ox + 179, top + 70, 102, 48, fill=fill('abbey'))
         # grass on the ground open to the sky
         for x0, x1, y in ((0, 150, 60), (150, 172, 118), (288, 306, 118), (338, PW, 118)):
             svg.rect(ox + x0, top + y, x1 - x0, 4, fill='@green')
@@ -604,16 +608,13 @@ def surface_spawning():
         svg.line(ox, top + sea, ox + PW, top + sea, stroke='@blue', dash='4 3')
         svg.text(ox + PW - 6, top + sea - 8, 'Sea level, Y=%d' % line, size=SMALL, fill='@blue', anchor='end')
 
-        def chip(key, x, y, name, room):
-            label, fill = verdict(rules[key], groups)
-            w = min(room, max(text_width(name, SMALL), text_width(label, TEXT)) + 16)
-            svg.rect(ox + x - w / 2, top + y - 17, w, 34, fill=fill, stroke=strong[fill], rx=3)
-            svg.text(ox + x, top + y - 7, name, size=SMALL, fill='@muted', anchor='middle', fit=w - 8)
-            svg.text(ox + x, top + y + 8, label, anchor='middle', bold=True, fit=w - 8)
-        chip('sky', PW / 2, 30, 'Under the open sky, at any height', PW - 40)
-        chip('cover', 90, 97, 'Under cover', 112)
-        chip('abbey', 230, 94, 'In an abbey', 96)
-        chip('cave', 140, 204, 'Cave below Y=%d' % line, 200)
+        def label(key, x, y, name, room):
+            svg.text(ox + x, top + y - 7, name, size=SMALL, fill='@muted', anchor='middle', fit=room)
+            svg.text(ox + x, top + y + 8, verdict(rules[key], groups)[0], anchor='middle', bold=True, fit=room)
+        label('sky', PW / 2, 30, 'Under the open sky, at any height', PW - 40)
+        label('cover', 90, 97, 'Under cover', 112)
+        label('abbey', 230, 94, 'In an abbey', 94)
+        label('cave', 140, 204, 'Cave below Y=%d' % line, 200)
     y = top + PH + 24
     w = legend(svg, 0, y, [('@red_soft', 'Every mundane hostile mob', 'box'), ('@amber_soft', 'Only some', 'box'),
                            ('@green_soft', 'None', 'box')])
