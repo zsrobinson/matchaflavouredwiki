@@ -2697,11 +2697,6 @@ def family_page(family):
     Obtaining (Template:Data/Family/<family>) and the members' IDs."""
     members = families()[family]
     icons = [m for m in members if has_icon(m)]
-    images = ''
-    if icons:
-        images = '<span class="animated">%s</span>' % ''.join(
-            '<span%s>[[File:%s.png|150px|link=|class=pixel-image]]</span>' % (' class="animated-active"' if i == 0 else '', safe(m))
-            for i, m in enumerate(icons))
     t = item_type(ITEMS[members[0]], effective(ITEMS[members[0]]))
     stacks = {effective(ITEMS[m]).get('max_stack_size', 64) for m in members}
     stackable = ('Yes (%d)' % next(iter(stacks)) if next(iter(stacks)) > 1 else 'No') if len(stacks) == 1 else 'Varies'
@@ -2727,8 +2722,7 @@ def family_page(family):
     ids = '\n'.join('|-\n| {{ItemLink|%s|mcw=%s}} || <code>%s</code>' % (safe(m), mcw_title(m), ITEMS[m]['base_id']) for m in members)
     return '\n'.join([
         '{{Vanilla|%s}}' % family,
-        '{{Infobox|title=%s|images=%s|invslots=%s|type=%s|stackable=%s}}' % (
-            family, images, ''.join('{{Slot|%s|link=none}}' % safe(m) for m in icons), t, stackable),
+        '{{Family infobox|%s|title=%s|type=%s|stackable=%s}}' % (';'.join(safe(m) for m in icons), family, t, stackable),
         lead, '', '== Obtaining ==', '{{Data/Family/%s}}' % family, '',
         '== Data values ==', '=== ID ===', '{| class="wikitable sortable"\n! Name !! Resource location\n%s\n|}' % ids, '',
         '[[Category:%s]]' % {'Block': 'Blocks'}.get(t, 'Items')])

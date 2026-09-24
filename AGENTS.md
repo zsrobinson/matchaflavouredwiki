@@ -232,9 +232,11 @@ the swap mid-way.
   rule (`NEW_WAY_RULES`: stonecutter, slabs back into blocks, wool and carpet, water bottle, plant cloning,
   saplings, banners, cooking stations, trades) are grouped on family pages as minecraft.wiki does ("Fence Gate"
   for every wood, "Carpet", "Cut Copper" for every oxidation state; `family_of`), and redirect to their row.
-  A family page follows minecraft.wiki's layout: an infobox cycling through the variants (in the game's order),
-  Obtaining with one cycling recipe screen per method, and an ID table. Families with a hand-written page
-  (`FAMILY_HOME`: Banners) transclude `Template:Data/Family/<family>` instead. Items in no family, and the
+  A family page follows minecraft.wiki's layout: an infobox cycling through the variants (in the game's order;
+  `{{Family infobox}}`), Obtaining with one cycling recipe screen per method, and an ID table. Families with a
+  hand-written page (`FAMILY_HOME`: Banners) transclude `Template:Data/Family/<family>` instead, so that page
+  writes its own `{{Family infobox}}`. Every hand-written page about an item or a family of items needs an
+  infobox; overview pages (Armor, Tools, Ores) have none, as on minecraft.wiki. Items in no family, and the
   rest, get a page whose lead says what the pack adds or replaces.
 - **Recipes match ingredients by item ID only,** so a custom item also works in recipes for its base item.
   The generator lists those uses only when both are the same kind of item (food with food).
