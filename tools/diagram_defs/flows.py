@@ -3,7 +3,7 @@ the warding level, the sacred texts and heart loss. Node contents come from the 
 trades and functions, and a missing recipe or changed function raises, so CI notices."""
 import re
 
-from diagrams import SMALL, TEXT, Flow, Svg, asset_uri, data, diagram, mcfunction, need, pack_file, pack_json, text_width
+from diagrams import SMALL, TEXT, Flow, Svg, asset_uri, data, diagram, mcfunction, need, node_frame, pack_file, pack_json, text_width
 
 
 # ---------------------------------------------------------------------------------------------
@@ -93,7 +93,7 @@ def one(items, what):
 def icons_node(f, key, x, y, items, w, h=40, label=None, fill='@panel', edge='@panel_edge'):
     """A node showing a recipe's ingredients as icons with counts ([(name, count)]), plus an optional label."""
     svg = f.svg
-    svg.rect(x - w / 2, y - h / 2, w, h, fill=fill, stroke=edge, rx=6, sw=1.2)
+    node_frame(svg, x, y, w, h, fill, edge)
     step = 44
     total = step * len(items) + (text_width(label, SMALL) + 6 if label else 0)
     cx = x - total / 2 + step / 2
@@ -235,15 +235,16 @@ def block(f, key, x, y, w, h, title, lines=(), fill='@panel', edge='@panel_edge'
           top=False):
     """A node with a bold title and several lines under it, centred as a group (or at the top)."""
     svg = f.svg
-    svg.rect(x - w / 2, y - h / 2, w, h, fill=fill, stroke=edge, rx=6, sw=1.2)
+    node_frame(svg, x, y, w, h, fill, edge)
     tx = x
     if icon:
         svg.icon(icon, x - w / 2 + 19, y, 26)
         tx = x + 14
+    room = w - (48 if icon else 14)
     y0 = y - h / 2 + 22 if top else y - 8 * len(lines)
-    svg.text(tx, y0, title, anchor='middle', bold=True, fill=ink)
+    svg.text(tx, y0, title, anchor='middle', bold=True, fill=ink, fit=room)
     for i, line in enumerate(lines):
-        svg.text(tx, y0 + 17 * (i + 1), line, size=SMALL, anchor='middle', fill=sub_ink)
+        svg.text(tx, y0 + 17 * (i + 1), line, size=SMALL, anchor='middle', fill=sub_ink, fit=room)
     f.nodes[key] = (x, y, w, h)
 
 

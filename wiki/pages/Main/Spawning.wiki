@@ -20,7 +20,7 @@ Every tick, the pack looks for "mundane hostile" mobs it hasn't checked yet: zom
 
 Before the Ender Dragon has been killed, the following mobs are removed as soon as they appear:<ref name="check">{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref>
 * In the Overworld, any listed mob that is not [[Mobs#Undead|undead]] and can see the sky. Only zombies, husks, drowned, zombie villagers, skeletons, strays, bogged and parched can appear under the open sky.
-* Any creeper that can see the sky, or that is at Y=63 or above, unless it is inside [[Trial Chambers|trial chambers]] or an [[Abbey|abbey]].<ref>{{Source|MF_datapack/data/matcha/predicate/surface_spawn.json}}</ref> Creepers are therefore limited to caves below sea level.
+* Any creeper that can see the sky, even inside [[Trial Chambers|trial chambers]] or an [[Abbey|abbey]], and any creeper at Y=63 or above unless it is inside one of those structures.<ref>{{Source|MF_datapack/data/matcha/predicate/surface_spawn.json}}</ref> Unlike the other checks, this one doesn't test the dimension, so creepers at Y=63 or above are also removed in [[Hell]] and the End.<ref name="check" /> Creepers are therefore limited to caves below sea level.
 * A husk riding a camel husk is replaced by a new husk on foot, leaving the camel husk alone.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/remove_camel_husk_jockey.mcfunction}}</ref>
 
 After the dragon has been killed, a stricter check replaces this one. See [[Surface]].

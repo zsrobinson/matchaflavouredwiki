@@ -12,7 +12,7 @@ Every magic recipe depends on [[Estus Ash]], [[Benzene]] and [[Stabilized Estus]
 {{Main|Hell-Bound Book}}
 Every blessing starts from a Hell-Bound Book, the pack's name for the {{MCW|Enchanted Book|enchanted book}}. It is crafted from a {{MCW|Book|book}}, a piece of Stabilized Estus and a Benzene, and stacks to 64.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hell_bound_book.json}}</ref> The path to the first book runs through several magic ingredients:
 
-# Kill undead [[mobs]] for [[Raw Estus]] (which turns into Estus Ash when picked up) or Estus Ash directly.
+# Kill undead [[mobs]] for [[Raw Estus]] (which turns into Estus Ash when picked up) or Estus Ash directly, or kill a [[witch]], which drops 4–8 Estus Ash.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/witch.json}}</ref>
 # Craft [[Benzene]] from a [[Glass Bottle]], three [[Hellspore]] and a [[Sulfur Chunk]].
 # Kill an {{MCW|Enderman}} for a [[Stable Void]].
 # Craft Stabilized Estus from seven Estus Ash, a Benzene and a Stable Void.

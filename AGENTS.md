@@ -153,9 +153,14 @@ the swap mid-way.
   (committed; CI fails when it's out of date, like `wiki/generated`). Each is a function in
   `tools/diagram_defs/<topic>.py`, registered with `@diagram('<Name>')`, reading its numbers with the
   helpers in `tools/diagrams.py` (`pack_json`, `mcfunction` + `need`, `data()`), so a pack change
-  redraws it or fails loudly. It draws with colour roles (`@ink`, `@red`...), rendered once per theme
-  into `<Name> diagram.svg` and `<Name> diagram (dark).svg`; `{{Diagram}}` shows the one matching the
-  theme. MediaWiki serves the SVGs as they are (`$wgSVGNativeRendering`), and item icons and hearts are
+  redraws it or fails loudly. It draws through the shared helpers (`Svg`, `Flow`, `node_frame`,
+  `legend`, `block_grid`) with colour roles (`@ink`, `@red`...), so the style lives in one place:
+  `STYLES` in `tools/diagrams.py`, currently `inventory` (the pack's brown panel, the Minecraft font,
+  embedded in each SVG, recessed slots, a block grid under areas). Each diagram is written as
+  `<Name> diagram.svg` and `<Name> diagram (dark).svg`, and `{{Diagram}}` shows the one matching the
+  theme; the inventory style looks the same in both, other styles (`MFW_DIAGRAM_STYLE=wikitable`)
+  don't. Labels in fixed-size boxes should pass `fit=` so the wider pixel font shrinks instead of
+  overflowing. MediaWiki serves the SVGs as they are (`$wgSVGNativeRendering`), and item icons and hearts are
   embedded in them, because an SVG shown as an image can't load anything else. When a page gets one
   is in `wiki/STYLE.md` ("Diagrams"). To check one, open the SVG in a browser in both themes.
 

@@ -245,11 +245,8 @@ def ore_heights():
     svg.text((left + right) / 2, bottom_y + 34, 'Y level (the world ends at %d)' % top, size=SMALL, fill='@muted',
              anchor='middle')
     ly = bottom_y + 60
-    lx = 12 + legend(svg, 12, ly, [('@grey_soft', 'As in vanilla', 'box'),
-                                   ('@teal_soft', 'Added or changed by the pack', 'box'),
-                                   ('@grey', 'Only in the biomes named', 'dash')])
-    svg.line(lx, ly, lx + 18, ly, stroke='@ink', sw=1.4, dash='1.5 2.5')
-    svg.text(lx + 24, ly, 'Vanilla, where the pack changed it', size=SMALL, fill='@muted')
+    legend(svg, 12, ly, [('@grey_soft', 'As in vanilla', 'box'), ('@teal_soft', 'Added or changed by the pack', 'box'),
+                         ('@grey', 'Only in the biomes named', 'dash'), ('@ink', 'Vanilla, where the pack changed it', 'dots')])
     svg.text(12, ly + 22, 'Each row is scaled to its own peak; the height is ore veins attempted per chunk at that level.',
              size=SMALL, fill='@muted')
     svg.h = ly + 36
@@ -604,14 +601,14 @@ def surface_spawning():
         svg.line(ox, top + sea, ox + PW, top + sea, stroke='@blue', dash='4 3')
         svg.text(ox + 6, top + sea - 8, 'Sea level, Y=%d' % line, size=SMALL, fill='@blue')
 
-        def say(key, x, y, name):
+        def say(key, x, y, name, room):
             label, _ = verdict(rules[key], groups)
-            svg.text(ox + x, top + y - 8, name, size=SMALL, fill='@muted', anchor='middle')
-            svg.text(ox + x, top + y + 8, label, anchor='middle', bold=True)
-        say('sky', PW / 2, 30, 'Under the open sky, at any height')
-        say('cover', 90, 97, 'Under cover')
-        say('abbey', 230, 94, 'In an abbey')
-        say('cave', 140, 204, 'Cave below Y=%d' % line)
+            svg.text(ox + x, top + y - 8, name, size=SMALL, fill='@muted', anchor='middle', fit=room)
+            svg.text(ox + x, top + y + 8, label, anchor='middle', bold=True, fit=room)
+        say('sky', PW / 2, 30, 'Under the open sky, at any height', PW - 20)
+        say('cover', 90, 97, 'Under cover', 112)
+        say('abbey', 230, 94, 'In an abbey', 94)
+        say('cave', 140, 204, 'Cave below Y=%d' % line, 200)
     y = top + PH + 24
     w = legend(svg, 0, y, [('@red_soft', 'Every mundane hostile mob', 'box'), ('@amber_soft', 'Only some', 'box'),
                            ('@green_soft', 'None', 'box')])

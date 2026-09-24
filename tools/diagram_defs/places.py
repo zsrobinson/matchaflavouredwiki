@@ -349,7 +349,8 @@ def abbey_rooms():
         svg.rect(x, py, w, h, fill='@panel', stroke=colour, rx=6, sw=1.2)
         label, sub = ABBEY_POOLS[p]
         svg.text(x + 12, py + 17, label, bold=True, fill=colour)
-        if sub:
+        room = w - 24 - text_width(label, TEXT, True) - 8
+        if sub and text_width(sub, SMALL) <= room:  # a note beside the title, when it fits
             svg.text(x + 12 + text_width(label, TEXT, True) + 8, py + 17, sub, size=SMALL, fill='@muted')
         weights = len({wt for _, wt in rooms}) > 1
         if weights:

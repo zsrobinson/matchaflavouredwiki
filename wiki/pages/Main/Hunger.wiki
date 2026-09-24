@@ -11,7 +11,7 @@
 {{Diagram|Food level|width=360|align=right|caption=The food level the pack refills at 6 or below and drains at 10 or above, so it sits at 7 or 8, just above vanilla's sprinting threshold.}}
 Every tick, the pack checks each player's food level (0 to 20, where vanilla shows 2 points per drumstick):<ref name="mh">{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
 * At 10 or above, the player is given {{EffectLink|Hunger}} CCLVI (level 256) for 1 second, which drains the food level quickly.
-* At 6 or below, the player is given {{MCW|Saturation}} II for 1 second, which refills it.
+* At 6 or below, the player is given {{MCW|Saturation}} II with a duration of 1, which refills it. Saturation is an instant effect, so the game reads that duration as 1 tick rather than 1 second: each time, the effect acts once and restores 2 food points, and it's given again on the next tick while the level is still 6 or below.
 
 The food level therefore stays a little above 6, the vanilla threshold for sprinting, and never gets high enough for vanilla natural regeneration or low enough to cause starvation. Both effects are hidden from the HUD.
 

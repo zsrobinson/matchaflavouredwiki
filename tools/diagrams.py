@@ -76,7 +76,7 @@ _GUI = dict(  # the pack's brown inventory (MediaWiki:Gadget-mfw-ui.css), the sa
     paper='#2a2019', shadow='#241a12', hi='#7F664D', lo='#1B1511', frame='#604D3A', frame_edge='#0D0903',
     green='#8fd16a', green_soft='#3f5a2c', red='#f08a7e', red_soft='#6e3328', blue='#9db8f2', blue_soft='#3a4a6a',
     amber='#f0b95a', amber_soft='#7a5a27', purple='#c5aef0', purple_soft='#533f6a', teal='#72d3c6',
-    teal_soft='#2a5550', grey='#c0b4a4', grey_soft='#5a4a3a', night='#20283f', day='#e8c65a')
+    teal_soft='#2a5550', grey='#c0b4a4', grey_soft='#7a6a57', night='#20283f', day='#e8c65a')
 STYLES = {
     'clean': {'themes': THEMES},
     'wikitable': {'themes': _TABLE, 'rx': 0, 'frame': 'table', 'grid': True},
@@ -84,7 +84,7 @@ STYLES = {
     'inventory': {'themes': {'light': _GUI, 'dark': _GUI}, 'rx': 0, 'font': 'minecraft', 'grid': True,
                   'frame': 'gui', 'shadow': True, 'bevel': True},
 }
-STYLE = STYLES[os.environ.get('MFW_DIAGRAM_STYLE', 'clean')]
+STYLE = STYLES[os.environ.get('MFW_DIAGRAM_STYLE', 'inventory')]
 MINECRAFT = STYLE.get('font') == 'minecraft'
 
 # accents in the order series take them, for charts with several lines or bars
@@ -100,7 +100,7 @@ _W = {' ': .278, '(': .333, ')': .333, '.': .278, ',': .278, ':': .278, ';': .27
 
 
 # the Minecraft font: most glyphs advance 6 of 8 pixels
-_MC = {' ': .5, 'i': .25, '!': .25, '.': .25, ',': .25, ':': .25, ';': .25, "'": .25, 'l': .375, 'I': .5,
+_MC = {' ': .375, 'i': .25, '!': .25, '.': .25, ',': .25, ':': .25, ';': .25, "'": .25, 'l': .375, 'I': .5,
        't': .5, '(': .5, ')': .5, 'f': .625, 'k': .625, '\u00a0': .5}
 
 
@@ -178,7 +178,10 @@ class Svg:
         a += ' fill-opacity="%s"' % n(opacity) if opacity is not None else ''
         return self.add('<circle cx="%s" cy="%s" r="%s" fill="%s"%s/>' % (n(cx), n(cy), n(r), fill, a))
 
-    def text(self, x, y, s, size=TEXT, fill='@ink', anchor='start', bold=False, italic=False, baseline='middle'):
+    def text(self, x, y, s, size=TEXT, fill='@ink', anchor='start', bold=False, italic=False, baseline='middle', fit=None):
+        """A label; with fit, it shrinks (to no less than 8) to stay within that many units."""
+        if fit and text_width(s, size, bold) > fit:
+            size = max(8, size * fit / text_width(s, size, bold))
         if STYLE.get('shadow'):  # the game's text shadow
             self._text(x + size / 8, y + size / 8, s, size, '@shadow', anchor, bold, italic, baseline)
         return self._text(x, y, s, size, fill, anchor, bold, italic, baseline)
@@ -279,18 +282,27 @@ def block_grid(svg, cx, cy, scale, half):
         svg.line(x0, cy + i * scale, x0 + size, cy + i * scale, stroke=colour, sw=sw)
 
 
-def legend(svg, x, y, entries, gap=18):
-    """Swatch + label entries in a row; returns the width used."""
+def legend(svg, x, y, entries, gap=18, width=None):
+    """Swatch + label entries in a row, shrunk to fit `width` (default: to the drawing's right edge);
+    returns the width used."""
+    width = width or svg.w - x - 4
+    size, g = SMALL, gap
+    need_w = sum(24 + text_width(label, size) + g for _, label, _ in entries) - g
+    if need_w > width:
+        k = width / need_w
+        size, g = max(8, size * k), gap * k
     x0 = x
     for colour, label, kind in entries:
         if kind == 'line':
             svg.line(x, y, x + 18, y, stroke=colour, sw=3, cap='round')
         elif kind == 'dash':
             svg.line(x, y, x + 18, y, stroke=colour, sw=2.5, dash='5 3')
+        elif kind == 'dots':
+            svg.line(x, y, x + 18, y, stroke=colour, sw=1.4, dash='1.5 2.5')
         else:
             svg.rect(x, y - 6, 14, 12, fill=colour, rx=2)
-        svg.text(x + 24, y, label, size=SMALL, fill='@muted')
-        x += 24 + text_width(label, SMALL) + gap
+        svg.text(x + 24, y, label, size=size, fill='@muted')
+        x += 24 + text_width(label, size) + g
     return x - x0
 
 
@@ -308,6 +320,18 @@ def box(svg, x, y, w, h, label, fill='@panel', edge='@panel_edge', ink='@ink', s
         svg.text(tx, y + 0.5, label, anchor='middle', fill=ink, bold=bold)
 
 
+def node_frame(svg, x, y, w, h, fill='@panel', edge='@panel_edge', dash=None):
+    """A box centred on x, y in the style's dress: a rounded box, or a recessed inventory slot."""
+    if STYLE.get('bevel'):  # dark top and left edges, light bottom and right
+        svg.rect(x - w / 2, y - h / 2, w, h, fill=fill)
+        svg.poly([(x - w / 2, y + h / 2), (x - w / 2, y - h / 2), (x + w / 2, y - h / 2)], stroke='@lo', sw=2, join='miter')
+        svg.poly([(x + w / 2, y - h / 2), (x + w / 2, y + h / 2), (x - w / 2, y + h / 2)], stroke='@hi', sw=2, join='miter')
+        if edge != '@panel_edge' or dash:  # a coloured edge carries meaning: keep it, inside the bevel
+            svg.rect(x - w / 2 + 3, y - h / 2 + 3, w - 6, h - 6, fill='none', stroke=edge, sw=1, dash=dash)
+    else:
+        svg.rect(x - w / 2, y - h / 2, w, h, fill=fill, stroke=edge, rx=6, sw=STYLE.get('node_sw', 1.2), dash=dash)
+
+
 class Flow:
     """Flow charts: boxes (with an optional item icon) and arrows clipped to the boxes' edges."""
 
@@ -320,23 +344,17 @@ class Flow:
         if w is None:
             w = max(text_width(label, TEXT, bold), text_width(sub or '', SMALL)) + (58 if icon else 28)
         svg = self.svg
-        if STYLE.get('bevel'):  # a recessed inventory slot: dark top and left edges, light bottom and right
-            svg.rect(x - w / 2, y - h / 2, w, h, fill=fill if fill != '@panel' else '@panel')
-            svg.poly([(x - w / 2, y + h / 2), (x - w / 2, y - h / 2), (x + w / 2, y - h / 2)], stroke='@lo', sw=2, join='miter')
-            svg.poly([(x + w / 2, y - h / 2), (x + w / 2, y + h / 2), (x - w / 2, y + h / 2)], stroke='@hi', sw=2, join='miter')
-            if edge not in ('@panel_edge',) or dash:
-                svg.rect(x - w / 2 + 3, y - h / 2 + 3, w - 6, h - 6, fill='none', stroke=edge, sw=1, dash=dash)
-        else:
-            svg.rect(x - w / 2, y - h / 2, w, h, fill=fill, stroke=edge, rx=6, sw=STYLE.get('node_sw', 1.2), dash=dash)
+        node_frame(svg, x, y, w, h, fill, edge, dash)
         tx = x
         if icon:
             svg.icon(icon, x - w / 2 + 19, y, 26)
             tx = x + 14
+        room = w - (48 if icon else 14)
         if sub:
-            svg.text(tx, y - 7, label, anchor='middle', bold=bold, fill=ink)
-            svg.text(tx, y + 9, sub, size=SMALL, anchor='middle', fill='@muted')
+            svg.text(tx, y - 7, label, anchor='middle', bold=bold, fill=ink, fit=room)
+            svg.text(tx, y + 9, sub, size=SMALL, anchor='middle', fill='@muted', fit=room)
         else:
-            svg.text(tx, y + 0.5, label, anchor='middle', bold=bold, fill=ink)
+            svg.text(tx, y + 0.5, label, anchor='middle', bold=bold, fill=ink, fit=room)
         self.nodes[key] = (x, y, w, h)
         return self.nodes[key]
 

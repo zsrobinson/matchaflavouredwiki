@@ -167,8 +167,11 @@ A section gets a diagram when its main point is a relationship a table states bu
 
 It doesn't when a table or list already reads at a glance. One diagram per section at most, with a
 one-sentence caption saying what it shows. The numbers come from the pack's files at draw time, never
-typed in; the style (palette roles, font, sizes, item icons, hearts) comes from `tools/diagrams.py`,
-so every diagram looks like the others. Full width is 760px; a small one floats right at about 360px
+typed in; the look comes from `tools/diagrams.py`, so every diagram matches the others: the pack's brown
+inventory panel (like the station screens), the Minecraft font with its shadow, boxes as recessed
+slots, item icons and HUD hearts, and areas drawn on a block grid (one cell per block, a heavier line
+every 16). Ranges the game measures as a distance (`distance=..N`) are circles over that grid, because
+that's the shape the game uses. Full width is 760px; a small one floats right at about 360px
 (`align=right`).
 
 ## Files

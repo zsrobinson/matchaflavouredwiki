@@ -2,7 +2,7 @@
 The '''moon''' in [[Matcha Flavoured]] moves independently of the sun, as the real moon does. Each day it falls a little further behind the sun, so its position in the sky matches its phase: a full moon rises at sunset opposite the sun, and a new moon travels next to the sun. The lunar cycle lasts 8 of the pack's [[Day and night|days]], as in vanilla, but because the pack's days are three times longer, a full cycle takes 8 hours of real time.
 
 == Mechanics ==
-In vanilla, the moon angle is part of the day timeline and the moon is always opposite the sun. The pack removes it from the day timeline and drives it from the moon timeline instead.<ref name="moon">{{Source|MF_datapack/data/minecraft/timeline/moon.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/timeline/day.json}}</ref>
+In vanilla, the moon angle is part of the day timeline and the moon is always opposite the sun. The pack removes it from the day timeline and drives it from the moon timeline instead.<ref name="moon">{{Source|MF_datapack/data/minecraft/timeline/moon.json}}</ref><ref name="day">{{Source|MF_datapack/data/minecraft/timeline/day.json}}</ref>
 
 * The moon timeline repeats every 576,000 ticks (8 days of 72,000 ticks).
 * The moon's angle rises steadily from 90° to 2,610° over the cycle, 315° per day, while the sun turns a full 360° per day. The moon therefore falls 45° further behind the sun every day and comes back into line after 8 days.
@@ -33,7 +33,7 @@ Each phase is centered on the day when the moon's position fits it, and changes 
 The phase names are those used in the timeline file. Compared to vanilla's order, the pack uses the "first quarter" and "third quarter" names the other way around. The resource pack also replaces the moon phase textures.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/environment/celestial/moon/full_moon.png}}</ref>
 
 === Slimes ===
-The chance of slimes spawning in swamps follows the phase, as in vanilla, stretched over the longer cycle: 50% at full moon, falling by 12.5% each day to 0% at new moon, and rising again.<ref name="moon" />
+The chance of slimes spawning in swamps uses vanilla's values, stretched over the longer cycle: 50%, falling by 12.5% each day to 0%, and rising again. In vanilla the chance changes together with the phase, but the pack moved only the phases: the chance still changes at the start of each day, halfway through a phase. Each night therefore gets the chance that vanilla gives the phase before it. The night of the full moon has 37.5%, and the 50% night is the first under the waning gibbous; the night of the new moon has 12.5%, and the 0% night falls under the waxing crescent.<ref name="moon" /><ref name="day" />
 
 == Trivia ==
 * In the design video, the developer lists it among the small visual changes: "I made the moon work correctly. I mean, how cool is that?"<ref>{{Cite video|quote=I made the moon work correctly. I mean, how cool is that?}}</ref>

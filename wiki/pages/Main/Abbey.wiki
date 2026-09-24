@@ -27,7 +27,7 @@ The structure is a jigsaw structure with a maximum depth of 20 pieces, a maximum
 Abbeys can be found with an Overgrown Abbey Map, which the [[Archaeologist]] sells at level 3 in exchange for [[The Divine Comedy]] or [[Paradise Lost]]. See [[Explorer maps]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_paradise_lost.json}}</ref> They can also be located with <code>/locate structure minecraft:abbey_overgrown</code>.
 
 == Structure ==
-An Abbey is assembled from template pieces joined by jigsaw blocks. The pieces are chosen from these template pools:<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/abbey/default/rooms.json}}</ref>
+An Abbey is assembled from template pieces joined by jigsaw blocks. The pieces are chosen from these template pools:<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/abbey}}</ref>
 
 {| class="wikitable"
 ! Pool !! Pieces (weight) !! Role
@@ -49,10 +49,10 @@ The layout follows this chain:
 # The '''tower''' (21 × 48 × 23 blocks) stands on the surface. Its bottom jigsaw connects down to the entrance shaft.
 # The '''entrance''' (30 × 48 × 13) is a 48-block-deep shaft with a bubble column over {{MCW|Soul Sand|soul sand}} to carry the player back up, and a [[copper eye]] door and several copper eye grates. A [[crystal heart]] lies on a ledge inside it.
 # The '''tutorial room''' (35 × 16 × 35) is the hub of the dungeon. It holds five trial spawners, connects to reward rooms on its east and west sides, to puzzle rooms on its upper east and west sides, and to a combat room to the south.
-# '''Combat rooms''' connect onward to puzzle rooms and reward rooms, and '''puzzle rooms''' connect back to combat rooms, so the dungeon branches until the depth limit or the 116-block radius is reached.
+# '''Combat rooms''' lead on in different ways. Quad spawn walkways, spider triple walkway and water and lava each have a doorway to a puzzle room and one to a reward room; the puzzle doorway has the same name as their entrances, so a room entered through it leads on only to the reward room. The drawbridge's only other doorway leads to another combat room, and the waterfall leads on only to two reward rooms.<ref>{{Source|MF_datapack/data/minecraft/structure/abbey/default/rooms/waterfall.nbt}}</ref> '''Puzzle rooms''' connect back to combat rooms (the lantern drop also to a reward room), so the dungeon branches until the depth limit or the 116-block radius is reached.
 # '''Reward rooms''' ("boons") are 5 × 7 × 7 dead ends.
 
-Several jigsaw blocks in the combat rooms point to a pool named <code>abbey/default/dungeon</code>, and the tutorial room's entrance connector points to <code>abbey/default/entrace_rooms</code>. Neither pool exists, so those connectors never generate anything.<ref>{{Source|MF_datapack/data/minecraft/structure/abbey/default/rooms/drawbridge.nbt}}</ref>
+Several jigsaw blocks in the combat rooms point to a pool named <code>abbey/default/dungeon</code>, and the tutorial room's entrance connector points to <code>abbey/default/entrace_rooms</code>. Neither pool exists, so those connectors never generate anything.<ref>{{Source|MF_datapack/data/minecraft/structure/abbey/default/rooms/drawbridge.nbt}}</ref> Two other pools, <code>abbey/default/rooms</code> (all ten rooms) and <code>abbey/default/default_rooms</code> (the tutorial room), are never reached: the only connectors that name <code>rooms</code> are the ones the reward rooms are joined by, and no connector names <code>default_rooms</code>.<ref>{{Source|MF_datapack/data/minecraft/worldgen/template_pool/abbey/default/rooms.json}}</ref>
 
 {{Diagram|Abbey rooms|caption=How the Abbey's rooms connect, read from the jigsaw blocks in the pack's templates. A room's squares are its other doorways and the kind of room each one leads to.}}
 
