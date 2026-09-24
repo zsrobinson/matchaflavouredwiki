@@ -153,7 +153,7 @@ These changes only affect newly generated chunks.
 * All recipes moved into subfolders of <code>main:recipes</code>.
 * Gamerules are set only on first load, so players can change them afterward. Keep inventory is set on first load or when a new player joins.
 * The namespace <code>matcha</code> is to hold only new content, and <code>minecraft</code> only overrides, a convention the developer credited Kanoarob with explaining.
-* Ticking functions are to be avoided. The abbey's ticking function was replaced by the "hit_copper_eye" advancement trigger, and Hashiru reworked armor, particles, the warding stone and crystal hearts to run without ticking functions. The spawning code uses predicates.
+* Ticking functions are to be avoided. The abbey's ticking function was replaced by the "hit_copper_eye" advancement trigger, and Hashiru reworked armor and particles to run without ticking functions, and also reworked the warding stone and heart containers. The spawning code uses predicates.
 * The developer adopted major.minor.patch version numbers, but judged "major" and "minor" by how much a change affects players rather than the code.
 
 == Denied and postponed requests ==

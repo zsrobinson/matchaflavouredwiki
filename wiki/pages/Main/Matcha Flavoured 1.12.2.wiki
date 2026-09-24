@@ -128,7 +128,7 @@ The repository's <code>main</code> branch received the following fixes and addit
 * The Wither's heart effect was shared with every player, five blessings stored their enchantments under the old <code>main</code> namespace, and the [[Igloo|igloo]]'s pickled crimson fungus used the old namespace (Pepurion).
 * Fixed item inconsistencies: the steel pickaxe and shovel hide their real attribute lines like the other steel tools, the adamant leggings are repaired with adamant scrap instead of a gold block, and the shepherd's shears with a copper block instead of iron, as their tooltips say (EastMonster).
 * Fortune and electrum worked incorrectly on normal gold ore, and the pufferfish [[Angler's Almanac]] entry did not unlock (Pepurion).
-* Crafts not returning empty bottles, the chocolate texture, spectators getting the freezing water effect, the fish bones loot in sulfur caves, raw Estus processing, the water bottle fix, and the crystal heart advancement (Pepurion).
+* Fixed crafts not returning empty bottles, the chocolate texture, spectators getting the freezing water effect, the fish bones loot in sulfur caves, raw Estus processing, the water bottle fix, and the crystal heart advancement (Pepurion).
 * Bells removed from the items [[Piglin#Loved items|piglins love]] (tadorituki).
 * New textures: red sandstone bottom, granite and polished granite bricks, [[Large bricks|large bricks]] for five more double slabs (andesite, polished andesite, diorite, cut sandstone and cut red sandstone), and beds with spruce frames (IrrelevantGaymer).
 

@@ -119,7 +119,7 @@ The update added tools for players continuing a world from an older version:
 * Beds work on the first load of a world. The notes thank the community member who found the cause.
 * Snow works, and snowballs stack to 64.
 * The hot wet fishing climate had been overridden by hot dry.
-* Added missing names for the puerquito, pupusa, gnocchi and bruschetta.
+* Added missing names for the puerquito, pupusa and gnocchi.
 * The iron chain can be made from iron ingots in a [[stonecutter]].
 * Fixed the golden apple in bastion loot and the enchanted golden apple tooltip in ruined portals.
 * Added the stray loot table and trial chamber spawner loot tables. Trial chamber pot loot, which gave far too many obols, was nerfed.
@@ -129,7 +129,7 @@ The update added tools for players continuing a world from an older version:
 * Glow berry mash works, cake effects work, and cake has a proper tooltip.
 * Magma cubes drop magma blocks.
 * Water can no longer be placed inside [[Hell]].
-* The Alaska blackfish did not count toward the "Catch Everything!" advancement because its name was misspelled in the check.
+* The Alaska blackfish did not count toward the "Catch Everything!" advancement (now "No More Fish in the Sea") because its name was misspelled in the check.
 * Wind charges from [[Anemos]] count as owned by the player who fired them.
 * The opah can be traded with the fisherman.
 * Sweet berry mash is no longer in stronghold corridor chests.
@@ -147,7 +147,7 @@ The update added tools for players continuing a world from an older version:
 * "Palatinate" renamed "Shakudo" and "Bronze" renamed "Hepatizon", in the language file only, so that existing items would not break.
 * The "Prayer of God-King" displays as "Prayer of The Light", and the Prayer of Ahura Mazda became the "Prayer of The God-King".
 * "Uncraftable Potion" renamed "Water Bottle", and the turtle shell renamed "Turtle Shellmet".
-* Fixed the spellings of "Pearlescent", "Crystallised" and "Black Seabass".
+* Fixed the spellings of "Pearlescent", "Crystallised", "Bruschetta" and "Black Seabass".
 
 == Technical changes ==
 * Removed unused files, including old predicates, the player stepping sound and "initial stalking" functions, the old treasure fishing loot tables, the potions folder and the Estus flask advancement.
