@@ -191,6 +191,12 @@ the swap mid-way.
 - **SEO** lives in `tools/seo.py`: canonical URLs, descriptions from the lead, Open Graph, JSON-LD, the
   sitemap with git dates, and `noindex` for generated-only pages. Keep a lead sentence on every article;
   it becomes the search snippet. `check_seo.py` checks the export.
+  - Dates are git dates (`lastmod`, `datePublished`, the footer), never the build date.
+  - Generated-only pages stay `noindex`; make one indexable by writing a real page for it, not by
+    dropping the rule.
+  - Search and 404 pages are `noindex` with no canonical, description or JSON-LD of their own.
+  - Answer the likely question in the lead instead of adding FAQ markup or question-shaped titles
+    (Google shows FAQ results only for government and health sites), and never put "official" in a title.
 - **Share cards and icons** come from `tools/og.py`. Every indexable page gets a 1200x630 card in `/og/`
   (the infobox icon in a slot on the pack's brown panel, the title in the game's font). Link previews
   (Discord, Reddit, X, iMessage) show it, and it is the first image in the page's JSON-LD. Favicons are the logo's 18x17 pixel art at multiples of
