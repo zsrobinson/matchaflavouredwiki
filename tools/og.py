@@ -144,13 +144,21 @@ def card(title, image=None, label=None, subtitle=None):
         images.slot_frame(slot, 1, 1, size=50)
         c.alpha_composite(slot.resize((52 * PX, 52 * PX), Image.NEAREST), (9 * PX, 26 * PX))
         art = logo_art() if pic is None else pic.resize((16, 16), Image.NEAREST)
-        f = 256 // max(art.size)
+        glyph = pic is not None and len({c for _, c in art.getcolors(256) if c[3]}) == 1
+        if glyph:
+            # a tooltip glyph (an intrinsic's symbol): a one-colour mask the game tints with the
+            # text colour, drawn dark for the wiki's light pages; on the card, the title's white,
+            # and smaller, since a glyph fills its whole square
+            art = Image.composite(Image.new('RGBA', art.size, TEXT + (255,)), art, art.getchannel('A'))
+        f = (160 if glyph else 256) // max(art.size)
         art = art.resize((art.width * f, art.height * f), Image.NEAREST)
         cx, cy = 10 * PX + (48 * PX - art.width) // 2, 27 * PX + (48 * PX - art.height) // 2
         c.alpha_composite(art, (cx, cy))
         left = 66 * PX
     else:
-        # a render (structure, mob, armor): as large as fits on the left, drawn at its own scale
+        # a render (structure, mob, armor): without its transparent margin, as large as fits on the
+        # left, drawn at its own scale
+        pic = pic.crop(pic.getchannel('A').getbbox() or (0, 0, pic.width, pic.height))
         box = (480, 510)
         f = min(box[0] / pic.width, box[1] / pic.height)
         f = int(f) if f >= 1 else f
