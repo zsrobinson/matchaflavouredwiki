@@ -36,13 +36,26 @@ body.wgl-theme-dark #footer-icons { filter: none; }
 #footer-icons a { background: none; padding: 0; }
 #footer-icons img { image-rendering: pixelated; }
 
+/* The spoiler switch beside dark mode (MediaWiki:Gadget-mfwShell.js), drawn like minecraft.wiki's
+   personal-bar icons: OOUI's eye in the moon's grey, at its 14px size. It shows the current state: the
+   eye is crossed out while spoilers are hidden (the default). */
+#p-personal .mfw-pref-toggle a { width: 14px; height: 14px; background: center / 14px 14px no-repeat; display: block; margin-bottom: -6px; }
+/* every icon the same size, centred in the box and evenly spaced (the moon used to sit 2px low) */
+@media screen and (min-width: 721px) {
+	#p-personal .vector-menu-content-list { display: flex; align-items: center; gap: 9px; height: 14px; padding: 2px 9px; }
+	#p-personal .vector-menu-content-list li { float: none; margin: 0; padding: 0; }
+	#p-personal #pt-dm-toggle a, #p-personal .mfw-pref-toggle a { margin: 0; }
+}
+#p-personal #pt-sp-toggle a { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%23939392'%3E%3Cpath d='M10 14.5a4.5 4.5 0 1 1 4.5-4.5 4.5 4.5 0 0 1-4.5 4.5M10 3C3 3 0 10 0 10s3 7 10 7 10-7 10-7-3-7-10-7'/%3E%3Ccircle cx='10' cy='10' r='2.5'/%3E%3C/svg%3E"); }
+html.mfw-hide-spoilers #p-personal #pt-sp-toggle a { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%23939392'%3E%3Cpath d='M12.49 9.94A2.5 2.5 0 0 0 10 7.5z'/%3E%3Cpath d='M8.2 5.9a4.4 4.4 0 0 1 1.8-.4 4.5 4.5 0 0 1 4.5 4.5 4.3 4.3 0 0 1-.29 1.55L17 14.14A14 14 0 0 0 20 10s-3-7-10-7a9.6 9.6 0 0 0-4 .85zM2 2 1 3l2.55 2.4A13.9 13.9 0 0 0 0 10s3 7 10 7a9.7 9.7 0 0 0 4.64-1.16L18 19l1-1zm8 12.5A4.5 4.5 0 0 1 5.5 10a4.45 4.45 0 0 1 .6-2.2l1.53 1.44a2.5 2.5 0 0 0-.13.76 2.49 2.49 0 0 0 3.41 2.32l1.54 1.45a4.47 4.47 0 0 1-2.45.73'/%3E%3C/svg%3E"); }
+
 /* ===== Phones: minecraft.wiki's mobile site (its Minerva skin) on the same pages =====
  * Up to 720px, where minecraft.wiki's own Vector CSS stops being a desktop layout: a sky-and-grass
  * header with menu and search buttons, the sidebar as a menu drawer, icon page actions beside the
  * title, collapsible sections, recipe screens under their ingredients and a stone footer. The header,
  * drawer and sections are built by MediaWiki:Gadget-mfwShell.js. The header and footer images are
  * minecraft.wiki's. Nothing here applies on wider screens. */
-#mfw-mobile-header, #mfw-drawer-dark, #mfw-talk-button { display: none; }
+#mfw-mobile-header, #mfw-drawer-dark, #mfw-drawer-spoilers, #mfw-talk-button, #mw-panel .mfw-drawer-icon { display: none; }
 
 @media screen and (max-width: 720px) {
 	html, body { min-width: 0; background: var(--content-background-color); }
@@ -119,18 +132,20 @@ body.wgl-theme-dark #footer-icons { filter: none; }
 	#p-search #searchform { margin: 0; padding: 0; }
 	#p-search input { font-size: 16px; }  /* keeps iOS from zooming in on focus */
 
-	/* Menu drawer: the sidebar slides in from the left over a dimmed page, as a plain list (without
-	   the script, html.mfw-js is missing and the sidebar stays a list below the page) */
+	/* Menu drawer: the sidebar slides in from the left over a dimmed page (without the script,
+	   html.mfw-js is missing and the sidebar stays a list below the page). Drawn as minecraft.wiki's
+	   mobile menu (Minerva): white groups of 44px rows on a grey panel, a 22px band between groups and
+	   no group headings; the first group (Main page, Random page, dark mode, spoilers) has icons. */
 	.mfw-js div#mw-navigation div#mw-panel {
 		position: fixed !important;
 		inset: 0 auto 0 0;
-		width: min(80vw, 300px);
-		padding: 8px 0 24px;
+		width: min(80vw, 275px);
+		padding: 0;
 		display: block;
 		overflow-y: auto;
 		overscroll-behavior: contain;
-		background: var(--content-background-color);
-		box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+		background: var(--background-color-interactive, #eaecf0);
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06), 0 0 8px rgba(0, 0, 0, 0.06);
 		transform: translateX(-110%);
 		transition: transform 0.2s, visibility 0.2s;
 		visibility: hidden;
@@ -145,35 +160,65 @@ body.wgl-theme-dark #footer-icons { filter: none; }
 		border: 0;
 		background: none;
 	}
-	div#mw-panel nav.vector-menu-portal h3 {
+	div#mw-panel nav.vector-menu-portal { padding-bottom: 22px; }
+	div#mw-panel nav.vector-menu-portal h3 { display: none; }
+	div#mw-panel li {
 		margin: 0;
-		padding: 16px 16px 4px;
-		border: 0;
-		background: none;
-		font-size: 0.8125rem;
-		color: var(--color-subtle) !important;
-		pointer-events: none;
-	}
-	div#mw-panel nav.vector-menu-portal h3::before { content: none; }
-	div#mw-panel h3 .vector-menu-heading-label { margin: 0; padding: 0; }
-	div#mw-panel li { margin: 0; padding: 0; font-size: 1rem; font-weight: bold; border-bottom: 1px solid var(--border-color-subtle); }
-	div#mw-panel a, div#mw-panel *:not(h3) > a:not(:hover):not(:focus), div#mw-panel #mfw-drawer-dark {
-		display: flex;
-		align-items: center;
-		gap: 10px;
-		padding: 10px 16px !important;
-		color: var(--color-base) !important;
-	}
-	div#mw-panel #mfw-drawer-dark {
-		width: 100%;
-		border: 0;
-		border-bottom: 1px solid var(--border-color-subtle);
-		background: none;
-		font: inherit;
+		padding: 0;
 		font-size: 1rem;
 		font-weight: bold;
+		line-height: 1.4;
+		background: var(--background-color-base, #fff);
+		border-bottom: 1px solid var(--background-color-interactive, #eaecf0);
+	}
+	div#mw-panel li:last-child { border-bottom: 0; }
+	div#mw-panel a, div#mw-panel *:not(h3) > a:not(:hover):not(:focus), div#mw-panel .mfw-drawer-row button {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		min-height: 44px;
+		box-sizing: border-box;
+		padding: 11px 14px !important;
+		color: var(--color-subtle, #54595d) !important;
+		text-decoration: none;
+	}
+	div#mw-panel .mfw-drawer-icon, div#mw-panel .mfw-drawer-row svg { display: block; flex: none; }
+	/* the first group ends after the spoiler switch; the rest of Navigation starts after a band */
+	div#mw-panel .mfw-drawer-row { display: block; }
+	div#mw-panel #mfw-drawer-spoilers { margin-bottom: 22px; border-bottom: 0; }
+	div#mw-panel .mfw-drawer-row button {
+		width: 100%;
+		border: 0;
+		background: none;
+		font: inherit;
+		text-align: left;
 		cursor: pointer;
 	}
+	.mfw-drawer-label { flex: 1; }
+	/* the spoiler switch: on (knob right, filled) while spoilers are hidden */
+	.mfw-switch {
+		position: relative;
+		flex: none;
+		width: 36px;
+		height: 20px;
+		border-radius: 10px;
+		background: var(--border-color-subtle, #c8ccd1);
+		transition: background 0.15s;
+	}
+	.mfw-switch::after {
+		content: '';
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: var(--background-color-base, #fff);
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+		transition: transform 0.15s;
+	}
+	[aria-checked="true"] > .mfw-switch { background: #36c; }
+	[aria-checked="true"] > .mfw-switch::after { transform: translateX(16px); }
 
 	/* Content: full width on the header's colour */
 	#content {

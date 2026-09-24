@@ -4,17 +4,17 @@ One of an item's numbers in running text, generated from the pack's code like th
 {| class="wikitable"
 ! Wikitext !! Result
 |-
-| <code><nowiki>{{Value|Canned Golden Apples|heals}}</nowiki></code> || {{Value|Canned Golden Apples|heals}}
+| <code><nowiki>{{Value|Golden Apple|heals}}</nowiki></code> || {{Value|Golden Apple|heals}}
 |-
-| <code><nowiki>{{Value|Canned Golden Apples|heals|format=hearts}}</nowiki></code> || {{Value|Canned Golden Apples|heals|format=hearts}}
+| <code><nowiki>{{Value|Golden Apple|heals|format=hearts}}</nowiki></code> || {{Value|Golden Apple|heals|format=hearts}}
 |-
-| <code><nowiki>{{Value|Canned Golden Apples|level|effect=Absorption}}</nowiki></code> || {{Value|Canned Golden Apples|level|effect=Absorption}}
+| <code><nowiki>{{Value|Golden Apple|level|effect=Absorption}}</nowiki></code> || {{Value|Golden Apple|level|effect=Absorption}}
 |-
-| <code><nowiki>{{Value|Canned Golden Apples|duration|effect=Absorption}}</nowiki></code> || {{Value|Canned Golden Apples|duration|effect=Absorption}}
+| <code><nowiki>{{Value|Golden Apple|duration|effect=Absorption}}</nowiki></code> || {{Value|Golden Apple|duration|effect=Absorption}}
 |-
-| <code><nowiki>{{Value|Canned Golden Apples|duration|effect=Regeneration|format=clock}}</nowiki></code> || {{Value|Canned Golden Apples|duration|effect=Regeneration|format=clock}}
+| <code><nowiki>{{Value|Golden Apple|duration|effect=Regeneration|format=clock}}</nowiki></code> || {{Value|Golden Apple|duration|effect=Regeneration|format=clock}}
 |-
-| <code><nowiki>{{Value|Canned Golden Apples|eat_time}}</nowiki></code> || {{Value|Canned Golden Apples|eat_time}}
+| <code><nowiki>{{Value|Golden Apple|eat_time}}</nowiki></code> || {{Value|Golden Apple|eat_time}}
 |-
 | <code><nowiki>{{Value|Green Curry|cook_time|station=Oven}}</nowiki></code> || {{Value|Green Curry|cook_time|station=Oven}}
 |}

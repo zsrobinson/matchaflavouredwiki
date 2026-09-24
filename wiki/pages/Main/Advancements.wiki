@@ -76,8 +76,8 @@ The Tutorial tab, rooted in "From Earth", traces the pack's progression in sever
 |matcha:tutorial/obtain_ramen=Cook [[Tonkotsu Ramen|tonkotsu ramen]] in an oven.
 |matcha:tutorial/obtain_green_curry=Cook [[Green Curry|green curry]] in an oven.
 |matcha:tutorial/preserve_food=Craft any of 15 preserves.
-|matcha:tutorial/preserve_everything=Craft all 15 preserves: canned apples, canned golden apples, glow jam, golden pickled carrots, mead, pickled carrots, pickled potatoes, sun-dried tomatoes, pumpkin jam, rind jam, sweet berry jam, pickled mushrooms, pickled toadstools, pickled warped fungus and pickled crimson fungus.
-|matcha:tutorial/cook_secret_food=Have [[Steamed Golden Carrots|steamed golden carrots]], a baked golden apple, braised crimson fungus or braised warped fungus in the inventory. See [[Secret recipes]].
+|matcha:tutorial/preserve_everything=Craft all 15 preserves: canned apples, glow jam, mead, pickled carrots, pickled potatoes, sun-dried tomatoes, pumpkin jam, rind jam, sweet berry jam, pickled mushrooms, pickled toadstools and the four [[Secret recipes|secret]] preserves.
+|matcha:tutorial/cook_secret_food=Have [[Steamed Golden Carrots|steamed golden carrots]], a [[Baked Golden Apple|baked golden apple]], [[Braised Crimson Fungus|braised crimson fungus]] or [[Braised Warped Fungus|braised warped fungus]] in the inventory. See [[Secret recipes]].
 |matcha:tutorial/cook_secret_meal=Craft any of 11 secret meals.
 |matcha:tutorial/obtain_estus=Have [[Estus Ash|Estus ash]] in the inventory.
 |matcha:tutorial/obtain_nazar=Craft a [[nazar]].
@@ -157,7 +157,7 @@ Most of the pack's advancement files have no display. They are invisible to play
 |matcha:mechanics=Trigger mechanics: using a [[Crystal Heart|crystal heart]], [[Amnestic|amnestic]], [[Asylum Seeker|asylum application]], [[Beacon Kindling|beacon kindling]], [[Bedrock Buster|bedrock buster]], clay fetishes or the happy ghast horn; eating glow berry foods (soul sight); sleeping; summoning the Wither; hitting a [[Copper Eye|copper eye]]; getting the Wither effect; entering a village or fortress; handling Estus and intrinsic enchantments.
 |matcha:fishing_sounds=Play a distinct sound for each kind of catch. See [[Fishing sounds]].
 |matcha:update_old_items=Replace old copies of the sacred texts and the "Golden" music disc with current ones. See [[Updating items]].
-|matcha:cooking_recipes=Unlock secret recipes (chorus mochi, gnocchi, sweet berry toast and warped stroganoff) when their recipe item is obtained.
+|matcha:cooking_recipes=Unlock secret recipes ([[Chorus Mochi|chorus mochi]], [[gnocchi]], [[Sweet Berry Toast|sweet berry toast]] and [[Warped Stroganoff|warped stroganoff]]) when their recipe item is obtained.
 |matcha:particle=Particles when boarding a boat, walking on sulfurous hellstone, or drinking from an Estus flask.
 |matcha:remove_vanilla_items=Convert vanilla apples, sweet berries and turtle scutes, for example from other mods, into the pack's versions.
 |endless_repairs:inventory_changed=Reset the repair cost of items so anvil repairs never become "Too Expensive".

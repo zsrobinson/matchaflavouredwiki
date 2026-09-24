@@ -1224,12 +1224,42 @@ def renamed_table():
             '\n'.join(rows) + '\n|}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>')
 
 
+SECRET_ADVANCEMENTS = ('matcha:tutorial/cook_secret_food', 'matcha:tutorial/cook_secret_meal')
+
+
+def secret_items():
+    """What the pack keeps secret: the items its two secret-cooking advancements name ("Hidden Flavors",
+    "Wait, you can make that?"), the dishes only a Cooking Recipe teaches, and those Cooking Recipes'
+    variants. site/Spoilers.php hides every mention of them while spoilers are hidden."""
+    advs = DATA['advancements']
+    by_recipe = {r['id']: r['output']['name'] for r in ALL_RECIPES}
+    by_model = {m: n for n, it in ITEMS.items() for m in it.get('models', [])}
+    names = set()
+    for aid in SECRET_ADVANCEMENTS:
+        if aid not in advs:
+            raise SystemExit('generate.py: the secret-cooking advancement %s is gone; update SECRET_ADVANCEMENTS' % aid)
+        for c in advs[aid]['criteria_raw'].values():
+            cond = c.get('conditions') or {}
+            if cond.get('recipe_id'):
+                names.add(by_recipe[cond['recipe_id']])
+            for i in cond.get('items') or []:
+                names.add(by_model[(i.get('components') or {})['minecraft:item_model']])
+    for aid, a in advs.items():
+        if aid.startswith('matcha:cooking_recipes/'):
+            names.update(by_recipe[r] for r in (a.get('rewards') or {}).get('recipes', []))
+    names.update(v for v, it in DATA.get('variant_items', {}).items()
+                 if it['item'] == 'Cooking Recipe' and v[len('Cooking Recipe ('):-1] in names)
+    return sorted(names)
+
+
 def no_recipe_list():
     """Template:Data/Blocked vanilla/No recipe: the items whose vanilla recipes the pack.mcmeta filter hides
     and that no recipe makes any more (Removed features). The rest of the hidden recipes have replacements."""
     names = [n for n in DATA.get('blocked_outputs', [])
              if not any(not r['id'].startswith('debug:') for r in producing(n))]
-    links = [il(n) for n in sorted(names)]
+    # plain links in a sentence; a vanilla item that isn't a pack item links to minecraft.wiki (a local
+    # redirect such as Rabbit Stew -> Ramen would name its replacement instead)
+    links = [item_link(n) if n in ITEMS else '{{MCW|%s}}' % mcw_title(n) for n in sorted(names)]
     text = ', '.join(links[:-1]) + ' and ' + links[-1] if len(links) > 1 else ''.join(links)
     return ('<includeonly>%s</includeonly><noinclude>The items whose vanilla recipes the datapack\'s '
             '<code>pack.mcmeta</code> filter hides and that no recipe makes any more. Generated.'
@@ -1943,6 +1973,9 @@ def adv_tree_order(advs):
     return out
 
 
+ADV_CATALOGUE_TABS = {'anglers_almanac'}  # every entry hidden until that fish is caught; the catches are on Fishing
+
+
 def advancement_tables():
     """Data/Advancements/<tab>: one row per visible advancement, anchored by its title. What the code
     can't say in words (the actual requirements) is a hand note the page passes by advancement ID."""
@@ -1961,8 +1994,12 @@ def advancement_tables():
             elif a.get('hidden'):
                 kind += ' (hidden)'
             desc = glyphs(esc(a['description'].replace('\n', ' '))).strip()
-            rows.append("|-\n| %s || <span id=\"%s\"></span>'''%s''' || %s || %s || {{{%s|}}} || %s || %s{{{%s reward|}}}" % (
-                adv_icon(a), html.escape(a['title']), glyphs(esc(a['title'])), desc or '—', esc(parent) or '—',
+            # a hidden advancement is a spoiler: the game shows it only once earned (MediaWiki:Common.css,
+            # wiki/STYLE.md). Not in a catalogue tab, whose entries are hidden only until caught.
+            spoiler = ' class="mfw-spoiler"' if (a.get('hidden') and a.get('parent')
+                                                 and tab not in ADV_CATALOGUE_TABS) else ''
+            rows.append("|-%s\n| %s || <span id=\"%s\"></span>'''%s''' || %s || %s || {{{%s|}}} || %s || %s{{{%s reward|}}}" % (
+                spoiler, adv_icon(a), html.escape(a['title']), glyphs(esc(a['title'])), desc or '—', esc(parent) or '—',
                 a['id'], kind, adv_rewards(a) or '—', a['id']))
         pages[tab] = ('<includeonly>{| class="wikitable sortable"\n'
                       '! Icon !! Advancement !! In-game description !! Parent !! Actual requirements !! Type !! Reward\n' +
@@ -3504,6 +3541,7 @@ def main():
     write('Template', 'Data/Food table', food_table())
     write('Template', 'Data/Renamed items', renamed_table())
     write('Template', 'Data/Blocked vanilla/No recipe', no_recipe_list())
+    write('MediaWiki', 'Mfw-secrets', '\n'.join(secret_items()))  # read by site/Spoilers.php
     write('Template', 'Data/Trim templates', trim_templates_table())
     for title, text in list(enchantment_tables().items()) + list(book_tables().items()) + list(intrinsic_item_tables().items()):
         write('Template', title, text)

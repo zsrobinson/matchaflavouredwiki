@@ -15,6 +15,9 @@ first). Checks:
     with at= (code only on main, for content marked {{Upcoming}}).
   - every {{Value|item|field}} names an item, field and format that build/values.json has (the same
     table as Module:Data/Values; tools/values.py);
+  - no secret item (MediaWiki:Mfw-secrets) is named in plain text outside a {{Spoiler}} box. Spoilers are
+    hidden by default: site/Spoilers.php hides links to secrets, but it can't see words (wiki/STYLE.md,
+    "Spoilers"). Its own page may name it;
   - warning only: an article with {{Infobox auto}} that types its own item's heal amount after "heals"
     ({{Hp|n}} equal to the data) instead of {{Value|item|heals}}. Not an error, because the same
     number can be right to type (a comparison with another item, a vanilla value).
@@ -62,6 +65,33 @@ def transclusions(text, prefix):
         yield m.group(1).strip(), args
 
 
+LINKING = re.compile(r'\{\{\s*(?:ItemLink|Slot|EffectLink|Recipes|Uses|Sources|Infobox auto|Value|Source)\s*\|[^{}]*\}\}')
+
+
+def spoiler_leaks(title, text, secrets):
+    """(secret, context) for every secret named in words outside a {{Spoiler}} box's scope: the rest of
+    its section (the whole page for a box in the lead). Links are left out: site/Spoilers.php hides them."""
+    if not secrets:
+        return []
+    names = re.compile(r'\b(%s)(?:e?s)?\b' % '|'.join(re.escape(s) for s in sorted(secrets, key=len, reverse=True)), re.I)
+    shown, level, hidden_from = [], 0, None
+    for line in text.split('\n'):
+        h = re.match(r'^(=+)\s*(.*?)\s*\1\s*$', line)
+        if h:
+            level = len(h.group(1))
+            if hidden_from is not None and level <= hidden_from:
+                hidden_from = None
+        elif re.match(r'\s*\{\{\s*Spoiler\s*[|}]', line):
+            hidden_from = level
+            continue
+        if hidden_from is None:
+            shown.append(line)
+    words = re.sub(r'<!--.*?-->|<code>.*?</code>', ' ', '\n'.join(shown), flags=re.S)  # a ref's quote is shown too
+    words = LINKING.sub(' ', re.sub(r'\[\[[^\]]*\]\]', ' ', words))
+    return [(m.group(1), ' '.join(words[max(0, m.start() - 40):m.end() + 40].split()))
+            for m in names.finditer(words) if m.group(1).lower() != title.lower()]
+
+
 def main():
     data = json.load(open(os.path.join(ROOT, 'build', 'data.json'), encoding='utf-8'))
     items = set(data['items'])
@@ -80,6 +110,7 @@ def main():
     problems = []
     warnings = []
     vals = value_lookup.values()
+    secrets = [s.strip() for s in pages.get('MediaWiki:Mfw-secrets', ('', ''))[1].split('\n') if s.strip()]
     for title, (ns, text, layer) in sorted(pages.items()):
         if layer != 'pages' or ns not in ('Main', 'Project') or re.match(r'\s*#REDIRECT', text, re.I):
             continue
@@ -101,6 +132,9 @@ def main():
                 if key and '{{{%s|' % key not in body and '{{{%s}}}' % key not in body:
                     problems.append('%s: {{%s}} has no row or parameter "%s" (a note for something that is gone?)'
                                     % (title, name, key))
+        for name, context in spoiler_leaks(title, text, secrets):
+            problems.append('%s: names the secret "%s" outside a {{Spoiler}} box; link it or move it under the box: "...%s..."'
+                            % (title, name, context))
         for m in value_lookup.CALL.finditer(text):
             _, err = value_lookup.lookup(m.group(1))
             if err:

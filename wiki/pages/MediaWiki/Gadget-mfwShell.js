@@ -47,6 +47,121 @@
 			}
 		}
 	}
+
+	// Spoilers are hidden by default (html.mfw-hide-spoilers, set before first paint by site/theme-boot.js
+	// unless the reader chose to show them, which is remembered per browser). Hidden: what {{Spoiler}}
+	// covers and every mention of a secret item (both marked by site/Spoilers.php), and hidden-advancement
+	// rows (.mfw-spoiler), until they are clicked (MediaWiki:Common.css).
+	var root = document.documentElement;
+	var SPOILERS = 'mfw-spoilers', HIDE = 'mfw-hide-spoilers';
+	function spoilersHidden() {
+		return root.classList.contains( HIDE );
+	}
+	var spoilerListeners = [];
+	function setSpoilersHidden( hide ) {
+		root.classList.toggle( HIDE, hide );
+		try {
+			if ( hide ) {
+				localStorage.removeItem( SPOILERS );
+			} else {
+				localStorage.setItem( SPOILERS, 'show' );
+			}
+		} catch ( e ) {}
+		spoilerListeners.forEach( function ( fn ) {
+			fn();
+		} );
+	}
+	function onSpoilersChange( fn ) {
+		spoilerListeners.push( fn );
+		fn();
+	}
+	// the personal-bar button, styled like #pt-dm-toggle (MediaWiki:Vector.css). Its eye shows the
+	// current state (crossed out while spoilers are hidden), and its tooltip says what a click does.
+	function addSpoilerToggle( personal, before ) {
+		var li = document.createElement( 'li' );
+		li.id = 'pt-sp-toggle';
+		li.className = 'mw-list-item mfw-pref-toggle';
+		var a = document.createElement( 'a' );
+		a.href = '#';
+		a.setAttribute( 'role', 'switch' );
+		a.addEventListener( 'click', function ( e ) {
+			e.preventDefault();
+			setSpoilersHidden( !spoilersHidden() );
+		} );
+		li.appendChild( a );
+		personal.insertBefore( li, before );
+		onSpoilersChange( function () {
+			a.title = spoilersHidden() ? 'Spoilers are hidden. Click to show them.' : 'Spoilers are shown. Click to hide them.';
+			a.setAttribute( 'aria-label', 'Hide spoilers' );
+			a.setAttribute( 'aria-checked', String( spoilersHidden() ) );
+		} );
+	}
+	// A hidden spoiler is shown by clicking it (or Enter/Space on the box); a #fragment inside one
+	// shows it too. Showing lasts until the page is left.
+	function initSpoilers() {
+		var HIDDEN = '[data-mfw-spoiler]:not(.mfw-spoiler-shown), .mfw-spoiler:not(.mfw-spoiler-shown)';
+		// the outermost hidden element around el (a hidden row, not the secret link inside it)
+		function hiddenAt( el ) {
+			if ( !spoilersHidden() || !el || !el.closest ) {
+				return null;
+			}
+			var found = null;
+			for ( var x = el.closest( HIDDEN ); x; x = x.parentElement && x.parentElement.closest( HIDDEN ) ) {
+				found = x;
+			}
+			return found;
+		}
+		// shows el, the rest of its {{Spoiler}} box's scope, and the secrets inside them
+		function show( el ) {
+			var n = el.getAttribute( 'data-mfw-spoiler' );
+			var els = n ? document.querySelectorAll( '[data-mfw-spoiler="' + n + '"]' ) : [ el ];
+			Array.prototype.forEach.call( els, function ( x ) {
+				[ x ].concat( Array.prototype.slice.call( x.querySelectorAll( '.mfw-spoiler' ) ) ).forEach( function ( y ) {
+					y.classList.add( 'mfw-spoiler-shown' );
+					attrs( y, { role: null, tabindex: null, title: null } );
+				} );
+			} );
+		}
+		var boxes = document.querySelectorAll( 'table.messagebox.spoiler[data-mfw-spoiler]' );
+		onSpoilersChange( function () {
+			var on = spoilersHidden();
+			Array.prototype.forEach.call( boxes, function ( box ) {
+				var hidden = on && !box.classList.contains( 'mfw-spoiler-shown' );
+				attrs( box, hidden ? { role: 'button', tabindex: '0', title: 'Show spoiler' } : { role: null, tabindex: null, title: null } );
+			} );
+			document.querySelectorAll( '.mfw-spoiler' ).forEach( function ( el ) {
+				attrs( el, { title: on && !el.classList.contains( 'mfw-spoiler-shown' ) ? 'Show spoiler' : null } );
+			} );
+		} );
+		document.addEventListener( 'click', function ( e ) {
+			var el = hiddenAt( e.target );
+			if ( el ) {
+				e.preventDefault();
+				e.stopPropagation();
+				show( el );
+			}
+		}, true );
+		document.addEventListener( 'keydown', function ( e ) {
+			var el = ( e.key === 'Enter' || e.key === ' ' ) && hiddenAt( e.target );
+			if ( el && el === e.target ) {
+				e.preventDefault();
+				show( el );
+			}
+		} );
+		function reveal() {
+			var el = null;
+			try {
+				el = document.getElementById( decodeURIComponent( location.hash.slice( 1 ) ) );
+			} catch ( e ) {}
+			var hidden = hiddenAt( el );
+			if ( hidden ) {
+				show( hidden );
+				el.scrollIntoView();
+			}
+		}
+		reveal();
+		window.addEventListener( 'hashchange', reveal );
+	}
 	function init() {
 		applyTheme( getTheme() );
 
@@ -63,6 +178,7 @@
 			a.addEventListener( 'click', toggleTheme );
 			li.appendChild( a );
 			personal.insertBefore( li, personal.firstChild );
+			addSpoilerToggle( personal, li );
 			var portlet = personal.closest( '.mw-portlet' );
 			if ( portlet ) {
 				portlet.classList.remove( 'emptyPortlet' );
@@ -110,13 +226,20 @@
 		}
 		sidebarRoles();
 		onPhoneChange( sidebarRoles );
+		initSpoilers();
 	}
 	// Phones, as on minecraft.wiki's mobile site: a header with menu and search buttons, the sidebar
 	// as a menu drawer, and collapsible sections. The header and drawer are always built (CSS shows
 	// them only on phones, and only once html.mfw-js says this script runs).
-	function icon( d ) {
-		return '<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="' + d + '"/></svg>';
+	function icon( d, evenodd ) {
+		return '<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor"' +
+			( evenodd ? ' fill-rule="evenodd"' : '' ) + ' d="' + d + '"/></svg>';
 	}
+	// OOUI's eye icons, as the personal bar's (MediaWiki:Vector.css), and Minerva's home and die
+	var EYE = 'M10 14.5a4.5 4.5 0 1 1 4.5-4.5 4.5 4.5 0 0 1-4.5 4.5M10 3C3 3 0 10 0 10s3 7 10 7 10-7 10-7-3-7-10-7m0 4.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5';
+	var EYE_CLOSED = 'M12.49 9.94A2.5 2.5 0 0 0 10 7.5zM8.2 5.9a4.4 4.4 0 0 1 1.8-.4 4.5 4.5 0 0 1 4.5 4.5 4.3 4.3 0 0 1-.29 1.55L17 14.14A14 14 0 0 0 20 10s-3-7-10-7a9.6 9.6 0 0 0-4 .85zM2 2 1 3l2.55 2.4A13.9 13.9 0 0 0 0 10s3 7 10 7a9.7 9.7 0 0 0 4.64-1.16L18 19l1-1zm8 12.5A4.5 4.5 0 0 1 5.5 10a4.45 4.45 0 0 1 .6-2.2l1.53 1.44a2.5 2.5 0 0 0-.13.76 2.49 2.49 0 0 0 3.41 2.32l1.54 1.45a4.47 4.47 0 0 1-2.45.73';
+	var HOME = 'M10 1 0 10h3v9h5v-6h4v6h5v-9h3z';
+	var DIE = 'M3 1h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2m2.5 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m9 9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M10 8.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3';
 	function initMobileHeader() {
 		var b = document.body, panel = document.getElementById( 'mw-panel' );
 		if ( !panel ) {
@@ -132,13 +255,42 @@
 			'<button type="button" id="mfw-search-button" aria-label="Search">' + icon( 'M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4-1.4 1.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8' ) + '</button>' +
 			'<button type="button" id="mfw-search-close" aria-label="Close search">' + icon( 'm5.83 9 5.58-5.58L10 2l-8 8 8 8 1.41-1.41L5.83 11H18V9z' ) + '</button>';
 		b.insertBefore( header, b.firstChild );
-		// the drawer's first entry toggles dark mode, as in minecraft.wiki's mobile menu
-		var dark = document.createElement( 'button' );
-		dark.type = 'button';
-		dark.id = 'mfw-drawer-dark';
-		dark.innerHTML = icon( 'M8.4 1.2a8.3 8.3 0 1 0 10.4 10.4A7 7 0 0 1 8.4 1.2' ) + 'Toggle dark mode';
-		dark.addEventListener( 'click', toggleTheme );
-		panel.insertBefore( dark, panel.firstChild );
+		// The drawer's first group, as in minecraft.wiki's mobile menu: Main page, Random page and dark
+		// mode, each with an icon (shown only in the drawer), then the spoiler switch.
+		var main = document.getElementById( 'n-mainpage-description' ), nav = main && main.parentNode;
+		[ [ 'n-mainpage-description', HOME ], [ 'n-randompage', DIE, true ] ].forEach( function ( e ) {
+			var a = document.querySelector( '#' + e[ 0 ] + ' a' );
+			if ( a ) {
+				a.insertAdjacentHTML( 'afterbegin', icon( e[ 1 ], e[ 2 ] ).replace( '<svg ', '<svg class="mfw-drawer-icon" ' ) );
+			}
+		} );
+		function drawerRow( id, html, onClick ) {
+			var li = document.createElement( 'li' );
+			li.id = id;
+			li.className = 'mw-list-item mfw-drawer-row';
+			var button = document.createElement( 'button' );
+			button.type = 'button';
+			button.innerHTML = html;
+			button.addEventListener( 'click', onClick );
+			li.appendChild( button );
+			var random = document.getElementById( 'n-randompage' );
+			if ( nav ) {
+				nav.insertBefore( li, random && random.parentNode === nav ? random.nextSibling : null );
+			}
+			return button;
+		}
+		var spoilers = drawerRow( 'mfw-drawer-spoilers', '', function () {
+			setSpoilersHidden( !spoilersHidden() );
+		} );
+		spoilers.setAttribute( 'role', 'switch' );
+		drawerRow( 'mfw-drawer-dark', icon( 'M8.4 1.2a8.3 8.3 0 1 0 10.4 10.4A7 7 0 0 1 8.4 1.2' ) + 'Toggle dark mode', toggleTheme );
+		// a switch, so the row says which way it is set: on (crossed-out eye) while spoilers are hidden
+		onSpoilersChange( function () {
+			var on = spoilersHidden();
+			spoilers.setAttribute( 'aria-checked', String( on ) );
+			spoilers.innerHTML = icon( on ? EYE_CLOSED : EYE, !on ) + '<span class="mfw-drawer-label">Hide spoilers</span>' +
+				'<span class="mfw-switch" aria-hidden="true"></span>';
+		} );
 		// the Talk tab becomes a button after the article, as on the mobile site
 		var talk = document.querySelector( '#ca-mfw-talk a' ), content = document.getElementById( 'content' );
 		if ( talk && content ) {

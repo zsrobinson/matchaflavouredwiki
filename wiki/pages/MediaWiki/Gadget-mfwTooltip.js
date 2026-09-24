@@ -103,8 +103,13 @@
 		return true;
 	}
 
+	// a hidden spoiler (Gadget-mfwShell.js) shows no tooltip until it is clicked
+	var HIDDEN = '.mfw-spoiler:not(.mfw-spoiler-shown), .mfw-spoiler-body:not(.mfw-spoiler-shown)';
 	function slotItem( target ) {
 		var item = target && target.closest ? target.closest( '.invslot-item' ) : null;
+		if ( item && document.documentElement.classList.contains( 'mfw-hide-spoilers' ) && item.closest( HIDDEN ) ) {
+			return null;
+		}
 		return item && item.querySelector( 'img' ) ? item : null;
 	}
 

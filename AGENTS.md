@@ -109,7 +109,8 @@ the swap mid-way.
   inverted in dark mode.
 - **Mobile is CSS on the same pages, not a second skin.** Up to 720px, the phone section at the end of
   `MediaWiki:Vector.css` restyles Vector like minecraft.wiki's mobile site (its Minerva skin): grass header,
-  the sidebar as a menu drawer, page actions as icons, recipe screens under their ingredients, scrolling
+  the sidebar as a menu drawer (drawn as Minerva's menu: white rows in groups on a grey panel, no group
+  headings; the first group has icons and holds the dark-mode and spoiler rows), page actions as icons, recipe screens under their ingredients, scrolling
   tables, stone footer. `Gadget-mfwShell.js` builds the header, drawer and collapsible sections (the lead
   and the main page stay open; a `#fragment` opens its section). The drawer CSS is scoped to `html.mfw-js`
   (set by `site/theme-boot.js`), so without JS the sidebar stays a list below the page. Under the same class,
@@ -180,6 +181,18 @@ the swap mid-way.
     deepslate's invisible-block mesh is off: for a whole structure it covers millions of empty cells
     and crashes the tab.
 
+- **Spoilers are hidden by default** until clicked. A reader who shows them is remembered in
+  `localStorage` (`mfw-spoilers=show`); `site/theme-boot.js` sets `html.mfw-hide-spoilers` before first
+  paint otherwise. The switch is an eye beside `#pt-dm-toggle` (crossed out while hidden) and a row with a
+  switch in the phone drawer, both built by `Gadget-mfwShell.js`.
+  - `site/Spoilers.php` (an `OutputPageBeforeHTML` hook) marks what gets hidden: everything a `{{Spoiler}}`
+    box covers (`mfw-spoiler-body`; "siblings up to the next heading" is beyond CSS), and every link to a
+    secret item with a wikitable row that has one (`mfw-spoiler`). It re-serializes only pages with a box
+    or a secret, with MediaWiki's own tidy formatter, so other pages stay byte-identical.
+  - The secret items come from the pack, not from pages: `generate.py: secret_items()` (the two
+    secret-cooking advancements and the Cooking Recipes) writes `MediaWiki:Mfw-secrets`. What a page says
+    in plain text isn't caught, so prose that names a secret belongs under a `{{Spoiler}}` box.
+    The rules for writers are in `wiki/STYLE.md` ("Spoilers").
 - **Diagrams**: `python3 tools/diagrams.py` draws every diagram from the pack's data into `wiki/diagrams/`
   (committed; CI fails when it's out of date, like `wiki/generated`). Each is a function in
   `tools/diagram_defs/<topic>.py`, registered with `@diagram('<Name>')`, reading its numbers with the
