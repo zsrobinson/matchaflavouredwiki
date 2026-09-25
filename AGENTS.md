@@ -103,6 +103,8 @@ the swap mid-way.
   `Gadget-mcw-*.css` plus `site/assets/mcw/`). It uses curl, because the site's bot protection rejects
   Python's TLS client, and it resolves `filepath://` URLs. Don't edit the vendored files; override in
   `MediaWiki:Common.css` or `Vector.css`.
+  The vendored copies lose minecraft.wiki's `.mw-parser-output` prefix, so a vendored rule can lose to Vector's
+  own (`.mp-title { margin: 0 }` did, and every main-page box started ~17px low); restore the prefix in the override.
 - **Dark mode:** it uses minecraft.wiki's classes (`body.wgl-theme-dark`). `site/theme-boot.js` is inlined
   in `<head>` to avoid a light flash. `MediaWiki:Gadget-mfwShell.js` (theme toggle `#pt-dm-toggle`,
   collapsible sidebar) is shared by the live wiki and the static export. Glyph images are drawn dark and
@@ -137,6 +139,11 @@ the swap mid-way.
     `images.py`. A special type it can't draw falls back to the base model and is listed in the output.
   - Foliage and grass textures are tinted from the pack's colour maps.
   - Tooltip glyphs are `File:Glyph E0xx.png`, named in `Template:G`, and explained on the "Tooltip" page.
+  - The main page's release cards (`File:Main page background.jpg`, `... (lake).jpg`) show camera views of the
+    pack's title-screen panorama, drawn by `images.py: panorama_view` from framing lines in `tools/extra_textures.txt`.
+    There are two cards, the current version and `{{Stable version}}` (the newest full release, generated);
+    the second hides itself when they are the same. Check a new framing at 1280, 390 and 320px: each card crops
+    it to between about 1.9:1 and 1.6:1.
 - **Renders** (structures, mobs, armor): every one is an entry in `tools/renders.json`, keyed by its
   file name. `python3 tools/render.py` draws the ones whose inputs changed into `wiki/renders/`, which
   is committed (CI only checks it's current), and `images.py` uploads them with the icons. Files are

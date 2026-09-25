@@ -1,5 +1,8 @@
 # path = File name (upscaled 8x, first animation frame)
 # top + left + right = File name   renders an isometric block icon from three face textures
+# <folder> @ yaw pitch fov WxH = File name   a camera view of the title-screen panorama in <folder>
+#   (panorama_0..3, the sides, each 90 degrees to the right of the last): yaw turns right from panorama_0,
+#   pitch looks up, fov is horizontal, in degrees; a view that reaches the top or bottom face fails
 source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/gui/sprites/container/furnace/burn_progress.png = Grid burn_progress.png
 source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/gui/sprites/container/furnace/lit_progress.png = Grid lit_progress.png
 source/vanilla-assets/assets/minecraft/textures/mob_effect/absorption.png = Effect Absorption.png
@@ -42,7 +45,8 @@ source/vanilla-assets/assets/minecraft/textures/mob_effect/weakness.png = Effect
 source/vanilla-assets/assets/minecraft/textures/mob_effect/weaving.png = Effect Weaving.png
 source/vanilla-assets/assets/minecraft/textures/mob_effect/wind_charged.png = Effect Wind Charged.png
 source/vanilla-assets/assets/minecraft/textures/mob_effect/wither.png = Effect Wither.png
-site/assets/Wiki-background.png = Main page background.png
+source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/gui/title/background @ -10 10 95 1200x640 = Main page background.jpg
+source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/gui/title/background @ 185 6 90 1200x640 = Main page background (lake).jpg
 site/assets/Wiki.png = Wiki.png
 source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/item/elytra.png = Elytra.png
 source/matcha-flavoured/MF_resourcepack/assets/minecraft/textures/item/netherite_upgrade_smithing_template.png = Smithing Upgrade Template.png
