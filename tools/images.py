@@ -6,6 +6,8 @@
                     for each variant with its own look under its label ("Cooking Recipe (Gnocchi)")
   Glyph EXXX.png    each custom-font glyph from custom_emojis.png (used by {{G}})
   Texture <path>.png  raw textures listed in tools/extra_textures.txt (optional)
+  Main page background.jpg  a view of the pack's title-screen panorama (panorama_view), for the
+                    main page's release banner; its framing is in tools/extra_textures.txt
   <render>.png      the structure, mob and armor renders committed in wiki/renders/ (drawn by
                     tools/render.py from tools/renders.json), copied as they are
   <name> diagram.svg  the diagrams committed in wiki/diagrams/ (drawn by tools/diagrams.py), likewise
@@ -52,6 +54,45 @@ def upscale(im):
     w, h = im.size
     scale = max(1, SIZE // max(w, h))
     return im.resize((w * scale, h * scale), Image.NEAREST)
+
+
+def panorama_view(faces, yaw, pitch, fov, width, height):
+    """A camera view of the title-screen panorama: faces are panorama_0..3, the cube's sides, each seen
+    90 degrees further to the right. yaw turns right from panorama_0's centre, pitch looks up, fov is the
+    horizontal field of view; all in degrees. Each face is sampled bilinearly. A view that reaches the top
+    or bottom face (panorama_4, _5) is an error: it isn't drawn."""
+    n = faces[0].width
+    px = [f.convert('RGB').load() for f in faces]
+    f = width / 2 / math.tan(math.radians(fov) / 2)
+    cy, sy = math.cos(math.radians(yaw)), math.sin(math.radians(yaw))
+    cp, sp = math.cos(math.radians(pitch)), math.sin(math.radians(pitch))
+    out = Image.new('RGB', (width, height))
+    put = out.load()
+    for j in range(height):
+        y0 = height / 2 - j - 0.5
+        up = y0 * cp + f * sp        # the ray after pitching: up, forward
+        fwd = f * cp - y0 * sp
+        for i in range(width):
+            x0 = i - width / 2 + 0.5
+            x, z = x0 * cy + fwd * sy, fwd * cy - x0 * sy  # after turning: right, forward
+            if abs(z) >= abs(x):
+                k, u, d = (0, x, z) if z > 0 else (2, -x, -z)
+            else:
+                k, u, d = (1, -z, x) if x > 0 else (3, z, -x)
+            if abs(up) > d:
+                raise ValueError('panorama view (yaw %s, pitch %s, fov %s) reaches the top or bottom face'
+                                 % (yaw, pitch, fov))
+            fx = min(max((u / d + 1) / 2 * n - 0.5, 0), n - 1)
+            fy = min(max((1 - up / d) / 2 * n - 0.5, 0), n - 1)
+            x1, y1 = int(fx), int(fy)
+            x2, y2 = min(x1 + 1, n - 1), min(y1 + 1, n - 1)
+            ax, ay = fx - x1, fy - y1
+            p = px[k]
+            a, b, c, e = p[x1, y1], p[x2, y1], p[x1, y2], p[x2, y2]
+            put[i, j] = tuple(round((a[t] * (1 - ax) + b[t] * ax) * (1 - ay) + (c[t] * (1 - ax) + e[t] * ax) * ay)
+                              for t in range(3))
+    return out
+
 
 
 def shade(im, f):
@@ -1260,6 +1301,14 @@ def main():
                 continue
             path, _, name = line.partition('=')
             path, name = path.strip(), name.strip()
+            if '@' in path:  # <folder> @ yaw pitch fov WxH: a view of the title-screen panorama
+                folder, _, view = path.partition('@')
+                yaw, pitch, fov, size = view.split()
+                w, h = (int(x) for x in size.split('x'))
+                faces = [Image.open(os.path.join(ROOT, folder.strip(), 'panorama_%d.png' % i)) for i in range(4)]
+                im = panorama_view(faces, float(yaw), float(pitch), float(fov), w, h)
+                im.save(os.path.join(OUT, name), quality=88, optimize=True)  # a photo: JPEG is a sixth of the PNG
+                continue
             faces = [os.path.join(ROOT, x.strip()) for x in path.split('+')]
             if not all(os.path.exists(f) for f in faces):
                 continue
