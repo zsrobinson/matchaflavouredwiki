@@ -1,17 +1,17 @@
 {{Infobox auto}}
 
-'''Grilled melon''' is the simple preparation of the [[Melon|melon slice]]. It heals {{Hp|2}} and grants {{EffectLink|Fire Resistance}} for 10 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/grilled_melon.json}}</ref>
+'''Grilled melon''' is the simple preparation of the [[Melon|melon slice]]. It heals {{Value|Grilled Melon|heals}} and grants {{EffectLink|Fire Resistance}} for {{Value|Grilled Melon|duration|effect=Fire Resistance}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/grilled_melon.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-A melon slice cooks into grilled melon in an [[oven]] or on [[kindling]] in 5 seconds. Picking up a melon slice unlocks the oven recipe.
+A melon slice cooks into grilled melon in an [[oven]] or on [[kindling]] in {{Value|Grilled Melon|cook_time}}. Picking up a melon slice unlocks the oven recipe.
 
 == Usage ==
 
 === Food ===
-Eating grilled melon takes 0.8 seconds, heals {{Hp|2}} and gives Fire Resistance for 0:10.
+Eating grilled melon takes {{Value|Grilled Melon|eat_time}}, heals {{Value|Grilled Melon|heals}} and gives Fire Resistance for {{Value|Grilled Melon|duration|effect=Fire Resistance|format=clock}}.
 
 == Advancements ==
 * ''Powerful Flavors'': cook an intrinsic ingredient. Obtaining any of the 11 simple preparations of the ordinary intrinsic ingredients completes it.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/cook_food.json}}</ref>

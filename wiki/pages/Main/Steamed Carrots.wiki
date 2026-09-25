@@ -1,17 +1,17 @@
 {{Infobox auto}}
 
-'''Steamed carrots''' are the simple preparation of the [[carrot]]. They heal {{Hp|2}} and grant {{EffectLink|Night Vision}} for 10 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/steamed_carrots.json}}</ref>
+'''Steamed carrots''' are the simple preparation of the [[carrot]]. They heal {{Value|Steamed Carrots|heals}} and grant {{EffectLink|Night Vision}} for {{Value|Steamed Carrots|duration|effect=Night Vision}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/steamed_carrots.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-A carrot cooks into steamed carrots in an [[oven]] or on [[kindling]] in 5 seconds. Picking up a carrot unlocks the oven recipe.
+A carrot cooks into steamed carrots in an [[oven]] or on [[kindling]] in {{Value|Steamed Carrots|cook_time}}. Picking up a carrot unlocks the oven recipe.
 
 == Usage ==
 
 === Food ===
-Eating steamed carrots takes 0.8 seconds, heals {{Hp|2}} and gives Night Vision for 0:10.
+Eating steamed carrots takes {{Value|Steamed Carrots|eat_time}}, heals {{Value|Steamed Carrots|heals}} and gives Night Vision for {{Value|Steamed Carrots|duration|effect=Night Vision|format=clock}}.
 
 == Advancements ==
 * ''Powerful Flavors'': cook an intrinsic ingredient. Obtaining any of the 11 simple preparations of the ordinary intrinsic ingredients completes it.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/cook_food.json}}</ref>

@@ -30,7 +30,11 @@ Never use the web, other fan wikis, forks or ports. Read the actual `.mcfunction
 files behind every mechanic you describe. Grep widely: most mechanics are spread across
 `function/`, `advancement/` (used as triggers), `predicate/`, `enchantment/` and
 `tags/`. State exact numbers (durations in ticks → seconds, chances, damage, ranges, scores) and
-cite the file with `<ref>{{Source|<path relative to source/matcha-flavoured>}}</ref>`. Where the
+cite the file with `<ref>{{Source|<path relative to source/matcha-flavoured>}}</ref>`.
+An item's own heal amount, effect levels and durations, eating and cooking times and equipment
+stats are already in the data: write them as `{{Value|<item>|<field>}}` (STYLE.md, "Language"), not as
+typed numbers. `python3 tools/values.py "Item"` lists an item's fields and formats, and
+`python3 tools/values.py --suggest "Title"` finds typed numbers on a page that could be lookups. Where the
 code and the release notes or video disagree, go with the code and add a note. If you can't
 determine something from the source, leave it out. Don't guess.
 
@@ -39,6 +43,9 @@ determine something from the source, leave it out. Don't guess.
   `%2F`). You may create navbox templates for your area as
   `wiki/pages/Template/Navbox <area-topic>.wiki` (e.g. `Navbox food.wiki`) and use them on
   every page in your area.
+- Other agents may be editing pages at the same time, some of them yours. Edit a page as it is now, and
+  never run `git checkout`, `git restore` or `git stash` on anything under `wiki/pages/`: to undo your own
+  change, edit it back.
 - Don't edit `tools/`, `wiki/generated/`, `MediaWiki:` pages, shared templates or pages owned by
   other areas. If a shared template or the generator is wrong or missing something, say so in
   your final report. You may add a new small template prefixed with your area name if you truly need one.
@@ -53,6 +60,9 @@ determine something from the source, leave it out. Don't guess.
 - Add categories: `[[Category:Food]]`, `[[Category:Armor]]`, `[[Category:Mechanics]]`,
   `[[Category:Mobs]]` and so on, following minecraft.wiki's category names.
 
+- Secrets (`wiki/STYLE.md`, "Spoilers"): write about a secret item or hidden advancement under a
+  `{{Spoiler}}` box, and elsewhere only link it, never name it in plain text.
+
 ## Checking your work
 - `python3 tools/preview.py "Title" "Other Title" ...` imports your pages into the local wiki
   (http://localhost:8080) and reports template/Lua errors, red links and missing files. Fix
@@ -60,7 +70,8 @@ determine something from the source, leave it out. Don't guess.
 - `tools/screenshot.sh "Title" /tmp/x.png 1400 1800` renders a page to PNG. Look at a
   few important pages to check layout.
 - Without a local wiki (the autopilot's cloud session), run `python3 tools/lint_pages.py` instead: it
-  catches data templates naming items that don't exist and `{{Source|...}}` paths that don't. The PR's
+  catches data templates naming items that don't exist, `{{Value}}` calls the data can't answer and
+  `{{Source|...}}` paths that don't. Its warnings list typed heal amounts that should be `{{Value}}`. The PR's
   Check workflow renders everything.
 - Don't run `tools/build.sh` or `tools/sync.sh` and don't commit. The coordinator does that.
 

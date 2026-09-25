@@ -14,7 +14,7 @@ The upgrade needs no template, and enchantments on the diamond item carry over; 
 == Usage ==
 
 === Armor ===
-They give 3 armor, 3 toughness and 10% knockback resistance, the vanilla netherite values, with 1000 durability. Each piece also has Protection I and Unbreaking II.
+They give {{Value|Adamant Boots|armor}} armor, {{Value|Adamant Boots|toughness}} toughness and 10% knockback resistance, the vanilla netherite values, with {{Value|Adamant Boots|durability}} durability. Each piece also has Protection I and Unbreaking II.
 
 === Doom ===
 The [[Doom]] intrinsic periodically clears Weakness from nearby creatures and deals armor-piercing damage as it does, so it combines with the Weakness from adamant weapons. Each piece strengthens it, and wearing all four adds the Doom [[set bonus]] as well as {{Data/Set bonus|adamant_armour=4}}.<ref>{{Source|MF_datapack/data/matcha/function/timers/divinity/adamant_armour.mcfunction}}</ref>

@@ -12,7 +12,7 @@ A '''wooden spear''' is a [[spear]] of the [[Wooden equipment|wooden]] tier, cra
 == Usage ==
 
 === Combat ===
-It deals {{Hp|1}} damage at an attack speed of 1.54 and works like the vanilla {{MCW|spear}}. The pack blocks the vanilla recipe and replaces it with its own, which adds only the tooltip.
+It deals {{Value|Wooden Spear|damage}} damage at an attack speed of {{Value|Wooden Spear|attackspeed}} and works like the vanilla {{MCW|spear}}. The pack blocks the vanilla recipe and replaces it with its own, which adds only the tooltip.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with planks. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

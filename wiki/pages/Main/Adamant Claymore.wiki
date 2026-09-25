@@ -15,7 +15,7 @@ This upgrade needs a [[smithing upgrade template]]; without one, the same diamon
 == Usage ==
 
 === Combat ===
-It deals {{Hp|9}} damage at an attack speed of 1 and has 3000 durability. The adamant weapon intrinsic inflicts Weakness II for 8 to 12 seconds on every hit. Weakened mobs are what the [[Doom]] intrinsic of adamant armor detonates.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_weapon.json}}</ref>
+It deals {{Value|Adamant Claymore|damage}} damage at an attack speed of {{Value|Adamant Claymore|attackspeed}} and has {{Value|Adamant Claymore|durability}} durability. The adamant weapon intrinsic inflicts Weakness II for 8 to 12 seconds on every hit. Weakened mobs are what the [[Doom]] intrinsic of adamant armor detonates.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_weapon.json}}</ref>
 
 === Blocking ===
 Held up with the use button, it blocks 80% of melee damage and 70% of arrow and mob projectile damage, losing durability equal to a quarter of the damage blocked. Axes disable it for as long as a shield.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_claymore.json}}</ref>
@@ -39,7 +39,7 @@ An apprentice [[weaponsmith]] buys it for one [[adamant alloy]].<ref>{{Source|MF
 {{History line|1.03|The vanilla netherite recipes were blocked.}}
 {{History line|1.10|A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
 {{History line|1.12.1-alpha|The upgrade now keeps the base item's enchantments. Added the "Repaired with" tooltip. Attack speed raised from 0.5 to 1.0. [[Divinity]] was replaced with Sharpness.}}
-{{History line|1.12.2|Now inflicts Weakness. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.12.2|Now inflicts Weakness. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>. The weaponsmith takes it in a trade of its own; before, the adamant sword trade accepted any netherite sword, the claymore included.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/netherite_claymore.json}}</ref>}}
 }}
 
 == References ==

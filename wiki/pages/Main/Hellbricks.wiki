@@ -7,7 +7,7 @@
 {{Recipes}}
 Hellbricks can be made two ways:
 * Four [[Hellbrick|hellbrick]] items in a square, as in vanilla.
-* By cooking one [[hellstone]] in an [[oven]] for 10 seconds. This gives a full block from a single hellstone, where the crafting route needs four blast-furnace hellbricks.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/nether_bricks_from_smelting_netherrack.json}}</ref>
+* By cooking one [[hellstone]] in an [[oven]] for {{Value|Hellbricks|cook_time|station=Oven}}. This gives a full block from a single hellstone, where the crafting route needs four blast-furnace hellbricks.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/nether_bricks_from_smelting_netherrack.json}}</ref>
 
 === Natural generation ===
 [[Nether Fortress|Nether fortresses]] are built from hellbricks, hellbrick fences and stairs, because the blocks keep their vanilla IDs.
@@ -17,7 +17,7 @@ Hellbricks can be made two ways:
 
 == Variants ==
 === Cracked Hellbricks ===
-Cracked hellbricks are made by cooking hellbricks in a [[Blast Furnace|blast furnace]] (5 seconds). The vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/cracked_nether_bricks.json}}</ref>
+Cracked hellbricks are made by cooking hellbricks in a [[Blast Furnace|blast furnace]] ({{Value|Cracked Hellbricks|cook_time|station=Blast Furnace}}). The vanilla furnace recipe is removed.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/cracked_nether_bricks.json}}</ref>
 {{Recipes|Cracked Hellbricks}}
 
 === Chiseled Hellbricks ===

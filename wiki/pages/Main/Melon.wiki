@@ -2,7 +2,7 @@
 
 {{Infobox auto|Melon Slice}}
 
-A '''melon''' is a block whose slices are a raw [[ingredient]] with the [[intrinsic]] {{EffectLink|Fire Resistance}}. A '''melon slice''' eaten raw heals {{Hp|1}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/melon_slice.json}}</ref> Cooked and prepared, it grants Fire Resistance for up to 10 minutes, which the developer suggests taking before a trip to [[Hell]].<ref>{{Cite video|quote=If they're planning a trip to hell, they'll want to find some melons first.}}</ref>
+A '''melon''' is a block whose slices are a raw [[ingredient]] with the [[intrinsic]] {{EffectLink|Fire Resistance}}. A '''melon slice''' eaten raw heals {{Value|Melon Slice|heals}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/melon_slice.json}}</ref> Cooked and prepared, it grants Fire Resistance for up to 10 minutes, which the developer suggests taking before a trip to [[Hell]].<ref>{{Cite video|quote=If they're planning a trip to hell, they'll want to find some melons first.}}</ref>
 
 == Obtaining ==
 
@@ -18,9 +18,9 @@ A melon block can be crafted back into 9 slices.
 == Usage ==
 
 === Food ===
-Eating a melon slice heals {{Hp|1}}.
+Eating a melon slice heals {{Value|Melon Slice|heals}}.
 
-Picking up a melon slice unlocks [[Grilled Melon|grilled melon]] (0:10), [[Rind Jam|rind jam]] (5:00) and [[Melon Sorbet|melon sorbet]] (10:00), the three Fire Resistance foods.
+Picking up a melon slice unlocks [[Grilled Melon|grilled melon]] ({{Value|Grilled Melon|duration|effect=Fire Resistance|format=clock}}), [[Rind Jam|rind jam]] ({{Value|Rind Jam|duration|effect=Fire Resistance|format=clock}}) and [[Melon Sorbet|melon sorbet]] ({{Value|Melon Sorbet|duration|effect=Fire Resistance|format=clock}}), the three Fire Resistance foods.
 
 {{Uses|Melon Slice}}
 

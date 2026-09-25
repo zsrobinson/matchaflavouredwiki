@@ -10,6 +10,9 @@ rules apply.
    (`source/matcha-flavoured/...`), not against the other pages. Fix anything wrong. Where the
    page says "the code does X", open the file and confirm it. Cited files must exist; check
    `{{Source|...}}` paths.
+   A typed heal amount, effect level or duration, eating or cooking time or equipment stat that states
+   the item's own value should be `{{Value|<item>|<field>}}` (STYLE.md); a typed one that disagrees
+   with `tools/values.py "Item"` is a factual error.
 2. **Completeness.** Compare the page with what the code actually has. Look for items,
    recipes, mechanics, edge cases, difficulty differences and history entries the page misses.
    Check that every item in the area has a real article or a deliberate redirect (no leftover

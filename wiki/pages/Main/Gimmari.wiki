@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Gimmari''' are fried seaweed rolls, the meal of kelp. They heal {{Hp|6}} and grant {{EffectLink|Water Breathing}} for 8 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gimmari.json}}</ref>
+'''Gimmari''' are fried seaweed rolls, the meal of kelp. They heal {{Value|Gimmari|heals}} and grant {{EffectLink|Water Breathing}} for {{Value|Gimmari|duration|effect=Water Breathing}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/gimmari.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@
 == Usage ==
 
 === Food ===
-Eating gimmari takes 1.2 seconds, heals {{Hp|6}} and gives Water Breathing for 8:00.
+Eating gimmari takes {{Value|Gimmari|eat_time}}, heals {{Value|Gimmari|heals}} and gives Water Breathing for {{Value|Gimmari|duration|effect=Water Breathing|format=clock}}.
 
 === Trading ===
 {{Upcoming|type=section}}

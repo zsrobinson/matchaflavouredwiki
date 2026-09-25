@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Pad Thai''' is a noodle dish that heals {{Hp|10}} and grants {{EffectLink|Night Vision}} for 10 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pad_thai.json}}</ref>
+'''Pad Thai''' is a noodle dish that heals {{Value|Pad Thai|heals}} and grants {{EffectLink|Night Vision}} for {{Value|Pad Thai|duration|effect=Night Vision}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pad_thai.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ Dough, a [[Cooked Fish|cooked fish]] or [[Cooked Large Fish|cooked large fish]],
 == Usage ==
 
 === Food ===
-Eating pad Thai takes 1.6 seconds, heals {{Hp|10}} and gives Night Vision for 10:00. The bowl is given back.
+Eating pad Thai takes {{Value|Pad Thai|eat_time}}, heals {{Value|Pad Thai|heals}} and gives Night Vision for {{Value|Pad Thai|duration|effect=Night Vision|format=clock}}. The bowl is given back.
 
 === Trading ===
 {{Upcoming|type=section}}

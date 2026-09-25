@@ -1,5 +1,5 @@
 {{Infobox auto}}
-The '''cleaver''' is a knife-like sword with [[Slaughter]] I and Looting II, sold by the [[Cook|cook]]. Its internal name is "butcher knife". It deals {{Hp|6}} damage and has 1500 durability, but it shortens the wielder's reach by 1 block.
+The '''cleaver''' is a knife-like sword with [[Slaughter]] I and Looting II, sold by the [[Cook|cook]]. Its internal name is "butcher knife". It deals {{Value|Cleaver|damage}} damage and has {{Value|Cleaver|durability}} durability, but it shortens the wielder's reach by 1 block.
 
 == Obtaining ==
 === Trading ===
@@ -13,6 +13,7 @@ Its attack reach is 1 block shorter than normal. The tooltip gives an attack spe
 == History ==
 {{History|
 {{History line|1.12.1-alpha|The butcher's knife can no longer be smithed; it is only sold by the cook.}}
+{{History line|1.12.2|Renamed from "Butcher's Knife" to "Cleaver".<ref name="trade" />}}
 }}
 
 == References ==

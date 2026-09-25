@@ -37,13 +37,13 @@ A novice-level Chemist sells each of the following in stacks of 16 for one [[Obo
 The durations are the full values; as with any splash potion, mobs farther from the point of impact receive a shorter effect. Each potion hides its vanilla effect list and shows the pack's own tooltip line instead. The Wither and Darkness potions are named after their effect rather than "Splash Potion of ...".<ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_pitch.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_wither.json}}</ref>
 
 === Loot ===
-Vanilla splash potions of Slowness and Poison still appear in trial chamber dispensers.
+As in vanilla, trial chamber dispensers hold vanilla splash potions of Slowness, Poison and Weakness, and lingering potions of the same three effects and of Healing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/dispensers/trial_chambers/chamber.json}}</ref>
 {{Sources}}
 
 == Usage ==
 Splash potions are thrown at mobs to apply their effects, as in vanilla. Undead mobs are immune to the Wither effect, so the Wither potion only harms other mobs.
 
-Some throwable foods behave like splash potions, such as Bubbling Mead and Pickled Warped Fungus.
+Some throwable foods behave like splash potions, such as [[Bubbling Mead]] and [[Pickled Warped Fungus]].
 
 == Notes ==
 * The Darkness potion's tooltip gives 5:00 for both effects, but the potion applies Darkness for 1:00 and Blindness for 0:30.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cleric/1/splash_pitch.json}}</ref>

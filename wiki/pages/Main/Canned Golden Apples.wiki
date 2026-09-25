@@ -2,7 +2,7 @@
 
 {{Spoiler}}
 
-'''Canned golden apples''' are the secret preservation of the [[Golden Apple|golden apple]]. They heal {{Hp|8}} and grant {{EffectLink|Absorption}} II for 2 minutes and {{EffectLink|Regeneration}} II for 20 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/canned_golden_apples.json}}</ref>
+'''Canned golden apples''' are the secret preservation of the [[Golden Apple|golden apple]]. They heal {{Value|Canned Golden Apples|heals}} and grant {{EffectLink|Absorption}} {{Value|Canned Golden Apples|level|effect=Absorption}} for {{Value|Canned Golden Apples|duration|effect=Absorption}} and {{EffectLink|Regeneration}} {{Value|Canned Golden Apples|level|effect=Regeneration}} for {{Value|Canned Golden Apples|duration|effect=Regeneration}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/canned_golden_apples.json}}</ref>
 
 == Obtaining ==
 
@@ -13,7 +13,12 @@ A [[Baked Golden Apple|baked golden apple]], sugar and a glass bottle. The recip
 == Usage ==
 
 === Food ===
-Eating them takes 1.6 seconds, heals {{Hp|8}} and gives Absorption II (4 extra hearts) for 2:00 and Regeneration II for 0:20. It gives the glass bottle back when eaten. Making them grants ''Wait, you can make that?''
+Eating them takes {{Value|Canned Golden Apples|eat_time}}, heals {{Value|Canned Golden Apples|heals}} and gives Absorption {{Value|Canned Golden Apples|level|effect=Absorption}} (4 extra hearts) for {{Value|Canned Golden Apples|duration|effect=Absorption|format=clock}} and Regeneration {{Value|Canned Golden Apples|level|effect=Regeneration}} for {{Value|Canned Golden Apples|duration|effect=Regeneration|format=clock}}. It gives the glass bottle back when eaten. Making them grants ''Wait, you can make that?''
+
+== History ==
+{{History|
+{{History line|1.12.2|Now made from a baked golden apple instead of a golden apple.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/canned_golden_apples.json}}</ref>}}
+}}
 
 == See also ==
 * [[Golden Apple]]

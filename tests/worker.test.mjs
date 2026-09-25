@@ -5,7 +5,8 @@ import { test } from 'node:test';
 // Load the actual Worker with a small table; no runtime/build dependencies needed.
 const source = await readFile(new URL('../src/worker.js', import.meta.url), 'utf8');
 const table = { redirects: { Main_Page: '/', Emerald: '/w/Obol', Hearts: '/w/Health#Maximum_health' },
-  titles: { mud_kiln: 'Mud_Kiln', obol: 'Obol', health: 'Health', matcha_flavoured_wiki: 'Matcha_Flavoured_Wiki', 'category:food': 'Category:Food' } };
+  titles: { mud_kiln: 'Mud_Kiln', obol: 'Obol', health: 'Health', matcha_flavoured_wiki: 'Matcha_Flavoured_Wiki', 'category:food': 'Category:Food' },
+  random: ['/w/Mud_Kiln', '/w/Obol', '/w/Health'] };
 const { default: worker } = await import('data:text/javascript;base64,' + Buffer.from(source.replace('import table from "./redirects.json";', `const table = ${JSON.stringify(table)};`)).toString('base64'));
 const env = { ASSETS: { fetch: async () => new Response('asset', {status: 404}) } };
 
@@ -55,4 +56,20 @@ test('unversioned files, pages and missing versions keep revalidating', async ()
     assert.equal((await worker.fetch(new Request('https://matchaflavou.red' + path), env)).headers.get('cache-control'), null);
   }
   assert.equal((await worker.fetch(new Request('https://matchaflavou.red/_rl/gone.css?v=abc'), env)).headers.get('cache-control'), null);
+});
+test('Special:Random sends each visit to an indexed article, uncached and not permanent', async () => {
+  const seen = new Set();
+  for (let i = 0; i < 60; i++) {
+    for (const path of ['/w/Special:Random', '/w/Special%3ARandom']) {
+      const response = await worker.fetch(new Request('https://matchaflavou.red' + path), env);
+      assert.equal(response.status, 302);
+      assert.equal(response.headers.get('cache-control'), 'no-store');
+      seen.add(response.headers.get('location'));
+    }
+  }
+  assert.deepEqual([...seen].sort(), table.random.map((p) => 'https://matchaflavou.red' + p).sort());
+});
+test('Special:Random on a preview stays on the preview', async () => {
+  const response = await worker.fetch(new Request('https://pr-7-matcha-flavoured-wiki.example.workers.dev/w/Special:Random'), env);
+  assert.match(response.headers.get('location'), /^https:\/\/pr-7-matcha-flavoured-wiki\.example\.workers\.dev\/w\//);
 });

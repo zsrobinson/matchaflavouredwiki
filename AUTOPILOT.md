@@ -13,6 +13,9 @@ Releases aren't tagged in git, so `tools/release_commit.py` finds the commit a r
 comparing every file in its zips with the repository. `tools/source.lock` holds that commit. Content that
 is on `main` but not yet released is marked `{{Upcoming}}` (see step 4).
 
+**Scope:** a run updates content and fixes what an update breaks. It never adds site features or new
+renderer or generator subsystems; if an update seems to need one, say so in the PR or notify.
+
 ## Environment
 - `git`, `python3` and `node` are preinstalled; step 0 installs `pillow` and `yt-dlp`.
 - There is no `gh` CLI. Do everything on GitHub (listing, opening, labelling and merging PRs, reading
@@ -23,11 +26,11 @@ is on `main` but not yet released is marked `{{Upcoming}}` (see step 4).
 ## Step 0: is there anything to do?
 ```sh
 pip install --quiet --upgrade pillow yt-dlp     # --upgrade: YouTube changes break old yt-dlp versions
-git checkout main && git pull --ff-only
+git fetch origin main && git checkout -B main origin/main   # the session's clone may have only its own branch
 python3 tools/check_upstream.py > /tmp/upstream.json; status=$?
 ```
 - `status = 0`: nothing changed. If there are **reader reports to handle** (step 4c), continue with
-  only those. Unless it is Monday (below), **stop here.** Don't commit, don't open a PR, don't notify.
+  only those. Otherwise **stop here.** Don't commit, don't open a PR, don't notify.
 - `status = 2`: a source couldn't be checked (network, or `yt-dlp` didn't install).
   Stop and notify with the error from `/tmp/upstream.json`.
 - `status = 10`: read `/tmp/upstream.json` and continue. It lists `new_releases` (Modrinth) and `new_videos`
@@ -35,11 +38,6 @@ python3 tools/check_upstream.py > /tmp/upstream.json; status=$?
   as done.
 
 Also stop if a PR labelled `autopilot` is still open, and notify about it instead of stacking a second one.
-
-**On Mondays** (`date -u +%u` is 1), whatever the status:
-- `python3 tools/fetch_transcripts.py --all` catches videos whose captions appeared late. A new transcript
-  counts as a new video.
-- Do the **port rehearsal** at the end of this file.
 
 ## Step 1: branch
 Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> origin/main`.
@@ -61,10 +59,16 @@ Start the assigned branch fresh from `main`: `git checkout -B <assigned branch> 
 - **`extract.py` exits 3** when the source uses a key, type or function it has never seen (a new Minecraft
   version renames things). It would otherwise skip them silently and the wiki would lose drop counts,
   conditions or item names without any error. Teach `tools/extract.py` (and `generate.py` if needed) the new
-  format. Add something to `KNOWN` only if the wiki really doesn't need it, and say which in the PR.
-  Never hand-edit `wiki/generated/`.
-- **New videos:** `python3 tools/fetch_transcripts.py <ids from new_videos>`. It saves transcripts of
-  videos about the pack to `sources/transcripts/` and ignores unrelated ones.
+  format **in place of the old one**: the baseline snapshot above was already taken with the old code, so
+  nothing reads the old format again. Don't keep both, and don't translate the new format back into the
+  old one; the tools always read the latest. Add something to `KNOWN` only if the wiki really doesn't need
+  it, and say which in the PR. Never hand-edit `wiki/generated/`.
+  Any other failure of `extract.py` (a traceback: a file it expects is gone) is the same situation: the
+  pack was reorganised. 1.12.2-beta, for one, moved `Matcha_Flavoured/` to `MF_datapack/` and
+  `MF_resourcepack/` and renamed functions the extractor reads by name. Teach the extractor the new layout.
+- **New videos:** `python3 tools/fetch_transcripts.py --all`. It saves transcripts of videos about the pack
+  to `sources/transcripts/` and ignores unrelated ones. `--all` also picks up earlier videos whose captions
+  appeared late.
 - Redraw the diagrams: `python3 tools/diagrams.py` and commit `wiki/diagrams/` (the Check workflow fails
   if they're out of date). A diagram whose data moved raises an error naming what it couldn't find: fix
   its function in `tools/diagram_defs/`, and if the change is visible, update the page's caption.
@@ -87,6 +91,8 @@ pages that depend on it:
 - pages citing files that were deleted or moved.
 
 Changes no hand-written page depends on are folded away: the generated tables already show them.
+IDs that only moved to another namespace (1.12.2-beta moved `main:` to `matcha:`) are compared under their
+new IDs, and the report's header counts them; the old IDs in `{{Source}}` paths show up in `lint_pages.py`.
 Also read the code: `git -C source/matcha-flavoured log --oneline <old source.lock>..HEAD` and the real diffs
 behind each line. **The code diff is the truth.** Changelogs are incomplete. Read every new release note
 in `source/changelogs/`, the diff of the pack's `changelog.md`, and new transcripts in full.
@@ -98,12 +104,21 @@ Read `wiki/STYLE.md`, `wiki/AGENT_BRIEF.md` and `wiki/PAGES.md` first; they are 
   values that changed, to catch stale mentions the report can't see.
 - **A big update** (more than about 40 lines, e.g. a port to a new Minecraft version): give each heading of
   the report to its own agent with `wiki/AGENT_BRIEF.md` and its lines. Agents save each page as they
-  finish it and don't commit; you collect their reports.
+  finish it and don't commit; you collect their reports. Several headings name the same pages (an
+  alloy tool is in Items, Recipes and Villager trades), so tell every agent to make small edits to the
+  file as it is now, and never to `git checkout` or `git restore` anything under `wiki/pages/`: that
+  throws away the other agents' work.
+- **Secrets:** if `git diff wiki/generated/MediaWiki/Mfw-secrets.wiki` shows a new secret (a new secret
+  meal or ingredient, Cooking Recipe or hidden advancement), write about it under a `{{Spoiler}}` box and
+  never name it in plain text elsewhere (`wiki/STYLE.md`, "Spoilers"); `lint_pages.py` checks.
 - **New items, mechanics, structures or mobs:** write full articles (they replace the generated pages).
   Add them to `wiki/PAGES.md`, the overview pages and the navboxes.
 - **Removed features:** keep the article, say it was removed and in which version, add it to
   "Removed features", and keep its History.
-- **History:** add `{{History line|<version>|...}}` rows for the new release. Pages may also describe what
+- **History:** add `{{History line|<version>|...}}` rows for the new release. A row says how the release
+  differs from the previous *release*: compare the two commits' files, not upstream's commit messages.
+  A bug that appeared on `main` and was fixed before the release ("fix another fishing typo") never
+  reached players, so it gets no row. Pages may also describe what
   is on `main` but not yet released, marked `{{Upcoming}}` (a message box) or with an "Upcoming" history row,
   citing that code with `{{Source|path|at=<a commit on main>}}`. When a release comes out, promote every
   one of them that the release contains (`grep -rl "Upcoming" wiki/pages`): the text becomes the current
@@ -188,19 +203,3 @@ Subscribe to the PR's activity and end the turn; the **Check** workflow result w
   **Build and deploy** workflow then publishes to https://matchaflavou.red.
 - **Red:** read the failing job log, fix the pages or tools, push again. After three failed attempts,
   leave the PR open, comment with what's failing, and notify.
-
-## Port rehearsal (Mondays, whatever step 0 found)
-The next release will be made from `main`, and the pack is ported to each new Minecraft version on a branch
-(`branches` in `/tmp/upstream.json`, e.g. `26.3`). A port is the biggest update the wiki gets, so rehearse
-both while they are unreleased:
-```sh
-tools/fetch_sources.sh && python3 tools/extract.py
-tools/dry_run.sh main
-tools/dry_run.sh <branch>          # for every branch named like a Minecraft version
-```
-`build/dry-run-<branch>.md` lists what `extract.py` doesn't understand yet, the pages `lint_pages.py`
-would flag, and the update report. If `extract.py` reports format problems, teach it the new format while
-still reading the old one. The Check workflow proves the change is safe: `wiki/generated` must come out
-unchanged for the pinned commit. If today also has an update, put the extractor change in that PR and say
-so in its body. Otherwise open a PR "Autopilot: prepare the extractor for <branch>" (label `autopilot`),
-unless an `autopilot` PR is already open. Don't change pages yet; that happens when the release comes out.

@@ -12,14 +12,14 @@ A '''copper pickaxe''' is a [[Tools#Pickaxe|pickaxe]] of the [[Copper equipment|
 == Usage ==
 
 === Mining ===
-The copper pickaxe breaks pickaxe blocks at speed 6, faster than the vanilla copper pickaxe (5) and twice the speed of the [[wooden pickaxe]]. It has 350 durability.
+The copper pickaxe breaks pickaxe blocks at speed {{Value|Copper Pickaxe|miningspeed}}, faster than the vanilla copper pickaxe (5) and twice the speed of the [[wooden pickaxe]]. It has {{Value|Copper Pickaxe|durability}} durability.
 
 It cannot harvest diamond ore, [[native gold]], obsidian, crying obsidian or ender chests: those blocks break at speed 3 and drop nothing.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/copper.json}}</ref> An [[iron pickaxe]] is needed for gold and diamonds, and a [[diamond pickaxe]] or [[steel pickaxe]] for obsidian.
 
 The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pickaxe blocks, so a pickaxe breaks them faster than a bare hand.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
 
 === Combat ===
-As a weapon it deals {{Hp|3}} damage at an attack speed of 1.2.
+As a weapon it deals {{Value|Copper Pickaxe|damage}} damage at an attack speed of {{Value|Copper Pickaxe|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[copper ingot]]s. As with all equipment in the pack, the repair cost never grows, so it can be repaired indefinitely; see [[Repairing]].
@@ -33,6 +33,7 @@ In a [[blast furnace]], it can be melted down into a single copper ingot. The co
 {{History|
 {{History line|1.10|The release notes set out to lengthen the copper age: "I want them caving and using copper tools at first."}}
 {{History line|1.12.1-alpha|Can no longer mine obsidian; only diamond, electrum and adamant pickaxes can.}}
+{{History line|1.12.2|No longer harvests the gold ores ([[native gold]], [[Native Deepslate Gold|native deepslate gold]] and [[gilded hellstone]]), crying obsidian or ender chests, but now harvests [[sulfurous quartz deposit]]s and [[sulfur deposit]]s.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/copper.json}}</ref><ref>{{Source|Matcha_Flavoured/data/main/recipe/crafting/copper_pickaxe.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>}}
 }}
 
 == References ==

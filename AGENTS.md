@@ -109,7 +109,8 @@ the swap mid-way.
   inverted in dark mode.
 - **Mobile is CSS on the same pages, not a second skin.** Up to 720px, the phone section at the end of
   `MediaWiki:Vector.css` restyles Vector like minecraft.wiki's mobile site (its Minerva skin): grass header,
-  the sidebar as a menu drawer, page actions as icons, recipe screens under their ingredients, scrolling
+  the sidebar as a menu drawer (drawn as Minerva's menu: white rows in groups on a grey panel, no group
+  headings; the first group has icons and holds the dark-mode and spoiler rows), page actions as icons, recipe screens under their ingredients, scrolling
   tables, stone footer. `Gadget-mfwShell.js` builds the header, drawer and collapsible sections (the lead
   and the main page stay open; a `#fragment` opens its section). The drawer CSS is scoped to `html.mfw-js`
   (set by `site/theme-boot.js`), so without JS the sidebar stays a list below the page. Under the same class,
@@ -180,6 +181,19 @@ the swap mid-way.
     deepslate's invisible-block mesh is off: for a whole structure it covers millions of empty cells
     and crashes the tab.
 
+- **Spoilers are hidden by default** until clicked. A reader who shows them is remembered in
+  `localStorage` (`mfw-spoilers=show`); `site/theme-boot.js` sets `html.mfw-hide-spoilers` before first
+  paint otherwise. The switch is an eye beside `#pt-dm-toggle` (crossed out while hidden) and a row with a
+  switch in the phone drawer, both built by `Gadget-mfwShell.js`.
+  - `site/Spoilers.php` (an `OutputPageBeforeHTML` hook) marks what gets hidden: everything a `{{Spoiler}}`
+    box covers (`mfw-spoiler-body`; "siblings up to the next heading" is beyond CSS), and every link to a
+    secret item with a wikitable row that has one (`mfw-spoiler`). It re-serializes only pages with a box
+    or a secret, with MediaWiki's own tidy formatter, so other pages stay byte-identical.
+  - The secrets come from the pack, not from pages: `generate.py: secret_items()` (see "Facts about the
+    pack's data" below) writes `MediaWiki:Mfw-secrets`. Category-list links are marked by a
+    `CategoryViewer::generateLink` hook in the same file. What a page says
+    in plain text isn't caught, so prose that names a secret belongs under a `{{Spoiler}}` box.
+    The rules for writers are in `wiki/STYLE.md` ("Spoilers").
 - **Diagrams**: `python3 tools/diagrams.py` draws every diagram from the pack's data into `wiki/diagrams/`
   (committed; CI fails when it's out of date, like `wiki/generated`). Each is a function in
   `tools/diagram_defs/<topic>.py`, registered with `@diagram('<Name>')`, reading its numbers with the
@@ -224,6 +238,8 @@ the swap mid-way.
   - 301s every other hostname to `https://matchaflavou.red`;
   - serves redirect pages and wrong-case URLs as real 301s from `src/redirects.json`, which the export writes;
   - serves `*.workers.dev` (PR previews) in place, with `X-Robots-Tag: noindex`.
+  - answers `/w/Special:Random` (the sidebar's "Random page") with an uncached 302 to an indexed article,
+    from the `random` list the export writes into `src/redirects.json`.
   - asks the asset server for each path in its own encoding (`encodeURIComponent` per segment, so `:` is `%3A`).
     Cloudflare's assets 307 any other form, and since the Worker 301s `%3A` back to `:`, every namespaced page
     (`Category:`, `Template:`) once looped.
@@ -317,7 +333,18 @@ the swap mid-way.
   placeholders and are skipped. Map names come from `set_name`, and biome limits from `merchant_predicate`.
 - **Intrinsics are enchantments,** stored as `stored_enchantments` on armor and tools. Their names are
   glyph-only, so `generate.py: INTRINSIC_PAGES` and `INTRINSIC_LABELS` give them pages and readable labels.
+- **Secrets are what the pack marks as secret:** the items its two secret-cooking advancements name, the
+  dishes only a Cooking Recipe unlocks, and hidden advancements (not the Angler's Almanac). Not a recipe
+  that is merely missing from the recipe book. `generate.py: secret_items()` derives the list, so a new
+  secret is hidden without anyone listing it; `wiki/STYLE.md` ("Spoilers") has the rules for pages.
 - **Pack bugs** go on the "Known bugs" page. Don't write workarounds that hide them.
+- **Numbers in prose come from the data too.** `{{Value|<item>|<field>}}` (`Module:Value`) reads
+  `Module:Data/Values`, which `generate.py: item_values` writes from the same code as the infobox, each
+  value already formatted once per form ("2 minutes", "2:00", `{{Hp|8}}`). The module only picks a string,
+  so `tools/values.py` (from `build/values.json`) gives exactly what the page shows. An unknown item,
+  field or format is an error in `Category:Pages with unknown values`, so `check_site.py` and
+  `lint_pages.py` fail. `tools/values.py --against origin/main` proves a conversion: each changed page,
+  with its values filled in, must equal the old text.
   `build/data.json` lists `missing_lang` keys.
 
 ## Sources worth knowing
@@ -362,6 +389,7 @@ layout) gets pictures:
 ## Delegating to agents
 Writer and reviewer briefs are in `wiki/AGENT_BRIEF.md` and `wiki/REVIEW_BRIEF.md`, and the page plan
 (which titles exist and who owns them) is in `wiki/PAGES.md`. Agents should:
+- run on the session's own model: don't pass a `model` to pick a smaller or cheaper one;
 - save each page as they finish it (runs have been cut off by usage limits);
 - check their pages with `tools/preview.py`;
 - never run build or sync scripts or commit; the coordinator does that.

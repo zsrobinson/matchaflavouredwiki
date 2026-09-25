@@ -2,18 +2,18 @@
 
 {{Infobox auto}}
 
-'''Glow berry mash''' is the simple preparation of [[Glow Berries|glow berries]]. It heals {{Hp|2}} and grants the Aura intrinsic for 3 seconds, making every other creature within 50 blocks glow.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/glow_mash.json}}</ref>
+'''Glow berry mash''' is the simple preparation of [[Glow Berries|glow berries]]. It heals {{Value|Glow Berry Mash|heals}} and grants the Aura intrinsic for 3 seconds, making every other creature within 50 blocks glow.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/glow_mash.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-Glow berries cook into glow berry mash in an [[oven]] or on [[kindling]] in 5 seconds. Picking up glow berries unlocks the oven recipe.
+Glow berries cook into glow berry mash in an [[oven]] or on [[kindling]] in {{Value|Glow Berry Mash|cook_time}}. Picking up glow berries unlocks the oven recipe.
 
 == Usage ==
 
 === Food ===
-Eating glow berry mash takes 0.8 seconds and heals {{Hp|2}}. A bell sound plays, and 2.4 seconds later every other entity within 50 blocks glows for 3 seconds.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_3.mcfunction}}</ref> See [[Glow Berries#Aura]].
+Eating glow berry mash takes {{Value|Glow Berry Mash|eat_time}} and heals {{Value|Glow Berry Mash|heals}}. A bell sound plays, and 2.4 seconds later every other entity within 50 blocks glows for 3 seconds.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_3.mcfunction}}</ref> See [[Glow Berries#Aura]].
 
 Obtaining glow berry mash unlocks [[Glow Berry Jam|glow berry jam]] and [[Glow Berry Crumble|glow berry crumble]].
 

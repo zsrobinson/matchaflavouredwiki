@@ -10,7 +10,7 @@ Unlike the [[Silver Sword]] and [[Warding Shield]], the warding sword needs no s
 
 == Usage ==
 === Weapon ===
-The warding sword deals {{Hp|5}} of damage with an attack speed of 1.6 and has 500 durability.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/warding_sword.json}}</ref>
+The warding sword deals {{Value|Warding Sword|damage}} of damage with an attack speed of {{Value|Warding Sword|attackspeed}} and has {{Value|Warding Sword|durability}} durability.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/warding_sword.json}}</ref>
 
 === Warding ===
 Held in either hand, the sword gives {{G|Warding}} 1: every second it gives undead within 8 blocks Slowness II and deals {{Hp|1}} of armor-ignoring damage to the nearest one within 3 blocks. It never damages the [[Wither]] on its own.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_1.mcfunction}}</ref> Its warding adds to the warding of the item in the other hand, up to {{G|Warding}} 3: with a [[Nazar]] or a second {{G|Warding}} 2 item in the off hand the player has {{G|Warding}} 3, and with a [[Warding Shield]] {{G|Warding}} 2. See [[Warding]].
@@ -29,7 +29,7 @@ Smithing the warding sword grants ''Fae-Slayer'' ("Affix a Nazar to an Iron Swor
 {{History line|1.02|The warding weapons advancement was reworded to make it clearer.}}
 {{History line|1.03|The warding sword was nerfed.}}
 {{History line|1.12.1-alpha|The warding sword can now only be repaired with Nazars or lapis.}}
-{{History line|1.12.2|Warding from held items now stacks.}}
+{{History line|1.12.2|Warding from held items now stacks. The tooltip names its repair materials.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/warding_sword.json}}</ref>}}
 }}
 
 == See also ==

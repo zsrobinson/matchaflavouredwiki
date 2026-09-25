@@ -15,12 +15,12 @@ A '''diamond dolabra''' is a [[dolabra]] of the [[Diamond equipment|diamond]] ti
 == Usage ==
 
 === Mining ===
-It breaks pickaxe and axe blocks at speed 8, one slower than the [[diamond pickaxe]] or [[diamond axe]], and obsidian, crying obsidian and ender chests at speed 35. It has 2500 durability.
+It breaks pickaxe and axe blocks at speed {{Value|Diamond Dolabra|miningspeed}}, one slower than the [[diamond pickaxe]] or [[diamond axe]], and obsidian, crying obsidian and ender chests at speed 35. It has {{Value|Diamond Dolabra|durability}} durability.
 
 Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|7}} damage at an attack speed of 1.
+It deals {{Value|Diamond Dolabra|damage}} damage at an attack speed of {{Value|Diamond Dolabra|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[diamond]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

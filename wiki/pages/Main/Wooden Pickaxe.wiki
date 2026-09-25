@@ -15,14 +15,14 @@ A '''wooden pickaxe''' is a [[Tools#Pickaxe|pickaxe]] of the [[Wooden equipment|
 == Usage ==
 
 === Mining ===
-It breaks pickaxe blocks at speed 3 (vanilla: 2) and has 200 durability.
+It breaks pickaxe blocks at speed {{Value|Wooden Pickaxe|miningspeed}} (vanilla: 2) and has {{Value|Wooden Pickaxe|durability}} durability.
 
-It harvests stone, [[coal deposit]]s, [[native copper]] and [[quartz deposit]]s. It gets no drops from [[hematite]], [[native gold]], [[native silver]], diamond ore, [[sulfurous quartz deposit]]s, [[sulfur deposit]]s, [[natural lapis lazuli]], deepslate (including cobbled and polished deepslate) or obsidian, all of which it breaks at speed 3.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref> Deepslate and hematite therefore wait for a [[copper pickaxe]].
+It harvests stone, [[coal deposit]]s, [[native copper]] and [[quartz deposit]]s. It gets no drops from [[hematite]], [[native gold]], [[native silver]], diamond ore, [[sulfurous quartz deposit]]s, [[sulfur deposit]]s, [[natural lapis lazuli]], deepslate (including cobbled and polished deepslate), obsidian, crying obsidian or ender chests, all of which it breaks at speed 3.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref> Deepslate and hematite therefore wait for a [[copper pickaxe]].
 
 The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pickaxe blocks.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|2}} damage at an attack speed of 1.2.
+It deals {{Value|Wooden Pickaxe|damage}} damage at an attack speed of {{Value|Wooden Pickaxe|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with planks. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
@@ -31,6 +31,7 @@ It can be repaired in an [[anvil]] with planks. The pack resets repair costs to 
 {{History|
 {{History line|1.10|Can now mine everything except the higher-tier ores. Durability lowered from 600 to 200.}}
 {{History line|1.12.1-alpha|Removed a leftover item name component.}}
+{{History line|1.12.2|Harvests [[quartz deposit]]s, but no longer deepslate, cobbled deepslate, polished deepslate, crying obsidian or ender chests.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref>}}
 }}
 
 == References ==

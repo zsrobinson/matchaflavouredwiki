@@ -5,7 +5,7 @@
 == Obtaining ==
 === Cooking and crafting ===
 {{Recipes}}
-* Blasting [[cobblestone]] or cobbled deepslate gives gravel (5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/blast/gravel.json}}</ref>
+* Blasting [[cobblestone]] or cobbled deepslate gives gravel ({{Value|Gravel|cook_time|station=Blast Furnace}}).<ref>{{Source|MF_datapack/data/matcha/recipe/blast/gravel.json}}</ref>
 * Two dirt and two flint, placed diagonally, make 2 gravel.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/gravel.json}}</ref>
 
 This was one of the first changes the developer made. The design video describes needing a lot of sand without tearing up a desert: "I added a recipe that let me blast cobble into gravel and gravel into sand. Really simple, really silly, but it worked. One little change stopped me from demolishing an entire biome."<ref>{{Cite video|quote=I added a recipe that let me blast cobble into gravel and gravel into sand. Really simple, really silly, but it worked. One little change stopped me from demolishing an entire biome.}}</ref>
@@ -20,7 +20,7 @@ Because the dirt-and-flint recipe turns 2 dirt and 2 flint back into 2 gravel, b
 
 == Usage ==
 {{Uses}}
-Blasting gravel gives [[sand]] (5 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/blast/sand.json}}</ref> Gravel counts as a path block for the [[Trailblaze]] enchantment.<ref>{{Source|MF_datapack/data/matcha/tags/block/is_path.json}}</ref>
+Blasting gravel gives [[sand]] ({{Value|Sand|cook_time|station=Blast Furnace}}).<ref>{{Source|MF_datapack/data/matcha/recipe/blast/sand.json}}</ref> Gravel counts as a path block for the [[Trailblaze]] enchantment.<ref>{{Source|MF_datapack/data/matcha/tags/block/is_path.json}}</ref>
 
 == Appearance ==
 The resource pack gives gravel and suspicious gravel new textures, with several variations for plain gravel.<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/gravel.json}}</ref>

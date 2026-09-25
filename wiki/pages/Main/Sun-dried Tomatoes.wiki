@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Sun-dried tomatoes''' are the preservation of [[tomatoes]]. They heal {{Hp|6}} and grant {{EffectLink|Strength}} for 5 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_tomatoes.json}}</ref>
+'''Sun-dried tomatoes''' are the preservation of [[tomatoes]]. They heal {{Value|Sun-dried Tomatoes|heals}} and grant {{EffectLink|Strength}} for {{Value|Sun-dried Tomatoes|duration|effect=Strength}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pickled_tomatoes.json}}</ref>
 
 == Obtaining ==
 
@@ -11,11 +11,12 @@ Raw tomatoes, a brown mushroom and a glass bottle. Picking up tomatoes unlocks t
 == Usage ==
 
 === Food ===
-Eating sun-dried tomatoes takes 1.6 seconds, heals {{Hp|6}} and gives Strength I for 5:00. It gives the glass bottle back when eaten.
+Eating sun-dried tomatoes takes {{Value|Sun-dried Tomatoes|eat_time}}, heals {{Value|Sun-dried Tomatoes|heals}} and gives Strength {{Value|Sun-dried Tomatoes|level|effect=Strength}} for {{Value|Sun-dried Tomatoes|duration|effect=Strength|format=clock}}. It gives the glass bottle back when eaten.
 
 == History ==
 {{History|
 {{History line|0.6-alpha|Pickled tomatoes renamed to sun-dried tomatoes.}}
+{{History line|1.12.2|The English name, previously misspelled "Sun-dried Tomatotes", corrected.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>}}
 }}
 
 == See also ==

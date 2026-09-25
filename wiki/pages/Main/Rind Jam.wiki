@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Rind jam''' is the preservation of the [[melon]]. It heals {{Hp|4}} and grants {{EffectLink|Fire Resistance}} for 5 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/rind_jam.json}}</ref>
+'''Rind jam''' is the preservation of the [[melon]]. It heals {{Value|Rind Jam|heals}} and grants {{EffectLink|Fire Resistance}} for {{Value|Rind Jam|duration|effect=Fire Resistance}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/rind_jam.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A raw melon slice, sugar and a glass bottle. Picking up a melon slice unlocks th
 == Usage ==
 
 === Food ===
-Eating rind jam takes 1.6 seconds, heals {{Hp|4}} and gives Fire Resistance for 5:00. It gives the glass bottle back when eaten.
+Eating rind jam takes {{Value|Rind Jam|eat_time}}, heals {{Value|Rind Jam|heals}} and gives Fire Resistance for {{Value|Rind Jam|duration|effect=Fire Resistance|format=clock}}. It gives the glass bottle back when eaten.
 
 == See also ==
 * [[Melon]]

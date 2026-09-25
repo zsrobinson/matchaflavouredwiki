@@ -8,7 +8,7 @@
 
 == Healing ==
 [[File:Pumpkin Empanada.png|32px|left]]
-Every food heals through a hidden {{EffectLink|Regeneration}} III effect that has no particles and no HUD icon. Regeneration III restores 1 health point every 12 ticks, so a food's healing is its duration divided by 12, rounded down: a [[Pumpkin Empanada|pumpkin empanada]] applies it for 96 ticks and heals {{Hp|8}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_empanada.json}}</ref> A few foods ([[Steamed Golden Carrots|steamed golden carrots]], [[Charred Meat|charred meat]], [[Charred Fish|charred fish]]) use Regeneration IV for 15 ticks instead, which heals {{Hp|2}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref>
+Every food heals through a hidden {{EffectLink|Regeneration}} III effect that has no particles and no HUD icon. Regeneration III restores 1 health point every 12 ticks, so a food's healing is its duration divided by 12, rounded down: a [[Pumpkin Empanada|pumpkin empanada]] applies it for 96 ticks and heals {{Value|Pumpkin Empanada|heals}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/pumpkin_empanada.json}}</ref> A few foods ([[Steamed Golden Carrots|steamed golden carrots]], [[Charred Meat|charred meat]], [[Charred Fish|charred fish]]) use Regeneration IV for 15 ticks instead, which heals {{Hp|2}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref>
 
 The first line of a food's tooltip shows the healing as red hearts, one heart per 2 health points (a half heart for an odd point). The lines below it list the visible effects in the pack's tooltip style, for example {{G|Armor}} Resistance (8:00).
 

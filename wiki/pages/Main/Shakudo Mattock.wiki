@@ -14,13 +14,13 @@ This upgrade needs a [[smithing upgrade template]]; without one, the same copper
 == Usage ==
 
 === Mining ===
-It breaks shovel and hoe blocks at speed 8 and has 1000 durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+It breaks shovel and hoe blocks at speed {{Value|Shakudo Mattock|miningspeed}} and has {{Value|Shakudo Mattock|durability}} durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Intrinsics ===
 Its [[Silk Touch]] intrinsic makes blocks drop themselves. Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 === Combat ===
-It deals {{Hp|2}} damage with no attack cooldown (attack speed 4).
+It deals {{Value|Shakudo Mattock|damage}} damage with no attack cooldown (attack speed {{Value|Shakudo Mattock|attackspeed}}).
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
@@ -38,7 +38,7 @@ An apprentice [[weaponsmith]] buys it for one [[shakudo alloy]], which lets the 
 {{History|
 {{History line|1.10|Renamed from "Palatinate" in the language file only, so existing items keep working. Shakudo alloy became more expensive (2 blocks of gold and 4 blocks of copper instead of 3 gold and 6 copper ingots). A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
 {{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. Shakudo intrinsics are now exclusive with the electrum and adamant intrinsics.}}
-{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.12.2|Attack damage lowered from 4 to 2.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_mattock.json}}</ref> Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}
 
 == References ==

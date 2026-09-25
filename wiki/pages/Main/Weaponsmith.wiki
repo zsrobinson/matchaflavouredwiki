@@ -50,6 +50,7 @@ Like every villager, a weaponsmith that has been traded with will also buy its [
 {{History|
 {{History line|1.10|Added the equipment melting trades, to let players update gear made in older versions.}}
 {{History line|1.12.1-alpha|Buys diamonds, blocks of lapis lazuli and Hepatizon Alloy for obols, and trades Electrum Alloy for Silver Bullion.}}
+{{History line|1.12.2|Added a melting trade for the [[Adamant Claymore|adamant claymore]]. The other adamant trades now also check the item's model, as the dolabra and mattock trades already did, so they no longer take another item on the same netherite base, such as an adamant claymore for the sword trade or the [[Electrum equipment|electrum]] items, which 1.12.2 moved onto netherite.<ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/netherite_claymore.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/weaponsmith/2/netherite_sword.json}}</ref>}}
 }}
 
 == Trivia ==

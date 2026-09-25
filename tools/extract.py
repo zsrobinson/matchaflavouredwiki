@@ -18,6 +18,8 @@ import re
 import sys
 from collections import defaultdict
 
+from mcformat import pack_format
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'source', 'matcha-flavoured')
 DP = os.path.join(SRC, 'MF_datapack', 'data')
@@ -768,6 +770,13 @@ for f in sorted(glob.glob(os.path.join(VDATA, 'recipe', '*.json'))):
         VANILLA_RECIPES_KEPT.append(r)
 
 BLOCKED_RECIPES = sorted(b[len('recipe/'):-5] for b in BLOCKED if b.startswith('recipe/'))
+# what the hidden vanilla recipes made, for Removed features' list of items no recipe makes any more
+BLOCKED_OUTPUTS = set()
+for f in sorted(glob.glob(os.path.join(VDATA, 'recipe', '*.json'))):
+    if is_blocked('recipe/' + os.path.basename(f)):
+        res = load(f).get('result')
+        if res and (isinstance(res, str) or 'id' in res):
+            BLOCKED_OUTPUTS.add(display_stack(res)['name'])
 
 # ---------------------------------------------------------------- loot tables
 def pool_count(pool_fns):
@@ -1559,6 +1568,7 @@ data = {
     'recipes': RECIPES,
     'vanilla_recipes_kept': VANILLA_RECIPES_KEPT,
     'blocked_vanilla': sorted(BLOCKED),
+    'blocked_outputs': sorted(BLOCKED_OUTPUTS),
     'loot': LOOT,
     'trades': {p: dict(v) for p, v in TRADES.items()},
     'professions': PROF_NAME,
@@ -1583,8 +1593,8 @@ print('items', len(ITEMS), 'recipes', len(RECIPES), 'vanilla kept', len(VANILLA_
 problems = []
 # the vanilla data must be the Minecraft version the pack is written for (tools/mc_version.txt)
 vanilla_version = load(os.path.join(ROOT, 'source', 'vanilla-data', 'version.json'))
-vanilla_format = [vanilla_version['data_pack_version'] + vanilla_version.get('data_pack_version_minor', 0) / 10]
-pack_min, pack_max = pack_meta['pack'].get('min_format'), pack_meta['pack'].get('max_format')
+vanilla_format = (vanilla_version['data_pack_version'], vanilla_version.get('data_pack_version_minor', 0))
+pack_min, pack_max = (pack_format(pack_meta['pack'].get(k)) for k in ('min_format', 'max_format'))
 if pack_min and not (pack_min <= vanilla_format <= (pack_max or pack_min)):
     problems.append('The pack targets data pack format %s-%s ("%s"), but source/vanilla-data is Minecraft %s '
                     '(format %s). Put the pack\'s Minecraft version in tools/mc_version.txt and rerun '

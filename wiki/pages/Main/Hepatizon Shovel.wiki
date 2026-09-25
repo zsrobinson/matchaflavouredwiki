@@ -2,7 +2,7 @@
 |renewable=Yes
 }}
 
-A '''hepatizon shovel''' is a [[Tools#Shovel|shovel]] of the [[Hepatizon equipment|hepatizon]] tier, made by smithing a [[copper shovel]] with [[hepatizon alloy]]. It digs at speed 20, faster than any other shovel.
+A '''hepatizon shovel''' is a [[Tools#Shovel|shovel]] of the [[Hepatizon equipment|hepatizon]] tier, made by smithing a [[copper shovel]] with [[hepatizon alloy]]. It digs at speed {{Value|Hepatizon Shovel|miningspeed}}, faster than any other shovel.
 
 == Obtaining ==
 
@@ -14,10 +14,10 @@ The upgrade needs no template, and enchantments on the copper item carry over.<r
 == Usage ==
 
 === Digging ===
-It breaks shovel blocks at speed 20 and has 1000 durability.
+It breaks shovel blocks at speed {{Value|Hepatizon Shovel|miningspeed}} and has {{Value|Hepatizon Shovel|durability}} durability.
 
 === Combat ===
-It deals {{Hp|5}} damage at an attack speed of 1. While held in the main hand it adds 0.0055 to movement speed, 5.5% of the player's base speed.
+It deals {{Value|Hepatizon Shovel|damage}} damage at an attack speed of {{Value|Hepatizon Shovel|attackspeed}}. While held in the main hand it adds 0.0055 to movement speed, 5.5% of the player's base speed.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

@@ -1,6 +1,6 @@
 {{Infobox auto|Cheese Pizza}}
 
-A '''pizza''' is a baked meal made in batches of 4 from [[dough]], [[tomatoes]] and [[cheese]]. Every pizza grants {{EffectLink|Strength}} for 3 minutes from its tomatoes; the topping decides the healing and any extra effect. There are four: '''cheese pizza''', '''meat pizza''', '''mushroom pizza''' and the secret '''warped pizza'''.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cheese_pizza.json}}</ref>
+A '''pizza''' is a baked meal made in batches of 4 from [[dough]], [[tomatoes]] and [[cheese]]. Every pizza grants {{EffectLink|Strength}} for 3 minutes from its tomatoes; the topping decides the healing and any extra effect. There are four: '''cheese pizza''', '''meat pizza''', '''mushroom pizza''' and a secret one.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cheese_pizza.json}}</ref>
 
 == Obtaining ==
 
@@ -17,20 +17,20 @@ Eating a pizza takes 1.6 seconds.
 {| class="wikitable"
 ! Pizza !! Top row !! Heals !! Effects
 |-
-| {{ItemLink|Cheese Pizza}} || 3 cheese || {{Hp|9}} || Strength (3:00)
+| {{ItemLink|Cheese Pizza}} || 3 cheese || {{Value|Cheese Pizza|heals}} || Strength ({{Value|Cheese Pizza|duration|effect=Strength|format=clock}})
 |-
-| {{ItemLink|Meat Pizza}} || Cheese, any cooked meat, cheese || {{Hp|10}} || Strength (3:00)
+| {{ItemLink|Meat Pizza}} || Cheese, any cooked meat, cheese || {{Value|Meat Pizza|heals}} || Strength ({{Value|Meat Pizza|duration|effect=Strength|format=clock}})
 |-
-| {{ItemLink|Mushroom Pizza}} || [[Braised Mushroom|Braised mushroom]], cheese, braised mushroom || {{Hp|8}} || Strength (3:00)
+| {{ItemLink|Mushroom Pizza}} || [[Braised Mushroom|Braised mushroom]], cheese, braised mushroom || {{Value|Mushroom Pizza|heals}} || Strength ({{Value|Mushroom Pizza|duration|effect=Strength|format=clock}})
 |-
-| {{ItemLink|Warped Pizza}} || Warped fungus, cheese, warped fungus || {{Hp|8}} || Strength (3:00), {{EffectLink|Invisibility}} (5:00)
+| {{ItemLink|Warped Pizza}} || Warped fungus, cheese, warped fungus || {{Value|Warped Pizza|heals}} || Strength ({{Value|Warped Pizza|duration|effect=Strength|format=clock}}), {{EffectLink|Invisibility}} ({{Value|Warped Pizza|duration|effect=Invisibility|format=clock}})
 |}
 
 === Trading ===
 {{Upcoming|type=section}}
-The cheese, meat, mushroom and warped pizzas are all among the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_8.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+All four pizzas are among the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_8.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 
-== Warped pizza ==
+== Secret pizza ==
 {{Spoiler}}
 The '''warped pizza''' uses raw [[Warped Fungus|warped fungus]] in place of braised mushrooms. Its recipe is secret and never enters the recipe book; making it grants ''Wait, you can make that?''
 {{Recipes|Warped Pizza}}
@@ -38,7 +38,7 @@ The '''warped pizza''' uses raw [[Warped Fungus|warped fungus]] in place of brai
 == History ==
 {{History|
 {{History line|1.10|Added cheese, mushroom and meat pizzas, and a secret food.}}
-{{History line|Upcoming|2=Villagers can pick the cheese, meat, mushroom and warped pizzas as their [[favorite food]] and buy them once for 1 obol.}}
+{{History line|Upcoming|2=Villagers can pick any of the four pizzas as their [[favorite food]] and buy them once for 1 obol.}}
 }}
 
 == See also ==

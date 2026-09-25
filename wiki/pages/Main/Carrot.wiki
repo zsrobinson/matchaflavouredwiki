@@ -2,19 +2,19 @@
 
 {{Infobox auto}}
 
-A '''carrot''' is a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Night Vision}}. Eaten raw, it heals {{Hp|1}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/carrot.json}}</ref> It is the ingredient of [[Steamed Carrots|steamed carrots]], [[Pickled Carrots|pickled carrots]], [[Carrot Cupcake|carrot cupcake]]s, [[Pad Thai]] and [[lumpia]].
+A '''carrot''' is a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Night Vision}}. Eaten raw, it heals {{Value|Carrot|heals}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/carrot.json}}</ref> It is the ingredient of [[Steamed Carrots|steamed carrots]], [[Pickled Carrots|pickled carrots]], [[Carrot Cupcake|carrot cupcake]]s, [[Pad Thai]] and [[lumpia]].
 
 == Obtaining ==
 
 === Farming ===
-Carrot crops drop the pack's carrots, with Fortune and the Electrum tool intrinsic each adding extra carrots when fully grown.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/carrots.json}}</ref>
+Carrot crops drop the pack's carrots. A fully grown crop drops 2 to 8 carrots, where vanilla drops 2 to 5: its extra carrots are rolled twice, once with Fortune's bonus and once with the Electrum tool intrinsic's, and each roll adds 0 to 3 carrots even without the enchantment. Each level of either enchantment adds one more chance of an extra carrot.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/carrots.json}}</ref>
 
 {{Sources}}
 
 == Usage ==
 
 === Food ===
-Eating a carrot heals {{Hp|1}}.
+Eating a carrot heals {{Value|Carrot|heals}}.
 
 Picking up a carrot unlocks steamed carrots, pickled carrots, carrot cupcakes and Pad Thai. Carrots are also used in [[Golden Carrot|golden carrot]]s, [[gimmari]], [[bokguk]], [[seitan]], [[Curry Stock|curry stock]] and [[Pumpkin Curry Stock|pumpkin curry stock]].
 
@@ -24,6 +24,7 @@ Picking up a carrot unlocks steamed carrots, pickled carrots, carrot cupcakes an
 == History ==
 {{History|
 {{History line|1.10|Carrot recipes unlock from raw carrots instead of only cooked ones.}}
+{{History line|1.12.2|The Electrum tool intrinsic adds carrots; a fully grown crop drops 2–8 carrots instead of 2–5.}}
 }}
 
 == See also ==

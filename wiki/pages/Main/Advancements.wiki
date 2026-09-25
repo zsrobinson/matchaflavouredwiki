@@ -23,11 +23,11 @@ The broken-heart milestones are Brazier (copper), The Stalwart Metal (iron), The
 
 === Revocation on update ===
 When a player joins a world after it has been updated to a newer version of the pack, their recipe unlocks are reset, along with most advancements that give rewards or affect the heart system, so that they can be earned again under the new rules, and the player's minimum hearts reset to 10.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref> In 1.12.2-beta this revokes:
-* in the Tutorial tab, "Prometheus be Damned" and everything after it (the whole metal and cooking progression, including all seven broken-heart milestones), "Hellish Powder" and everything after it (including the Canto advancements), and the chain from "From Earth" through "You're Rich!", "Bonfire Lit", "A Good Samaritan" and "Fishmonger" to "A True Community";
+* in the Tutorial tab, "Prometheus be Damned" and everything after it (the whole metal and cooking progression, including all seven broken-heart milestones), "[[Hellish Powder]]" and everything after it (including the Canto advancements), and the chain from "From Earth" through "[[You're Rich!]]", "Bonfire Lit", "A Good Samaritan" and "Fishmonger" to "A True Community";
 * in the Hell tab, everything except "Hidden in the Depths" and "Demonic Emissary";
 * in the End tab, "Wax Wings", "Icarus' Folly" and "Wings of Eros".
 
-"No More Fish in the Sea", "God help you...", "Demonic Emissary", "Hidden in the Depths", "To Dreams" and "Iconoclast" are kept; the code notes that the fishing and prayer advancements are spared deliberately. Because "From Earth" is revoked, it is granted again on the next tick and reruns the pack's first-load setup, including the game rules. See [[Updating items]].
+"No More Fish in the Sea", "[[God help you...]]", "Demonic Emissary", "Hidden in the Depths", "To Dreams" and "Iconoclast" are kept; the code notes that the fishing and prayer advancements are spared deliberately. Because "From Earth" is revoked, it is granted again on the next tick and reruns the pack's first-load setup, including the game rules. See [[Updating items]].
 
 The <code>main</code> branch replaces the tutorial part with a hand-picked, narrower list, so in the next version "Prometheus be Damned" and much of the early progression will be kept: the kiln, oven and blast furnace advancements, most of the metal and alloy advancements, and the Brazier, The Stalwart Metal and The Resilient Mineral milestones. The Stalwart Metal is kept only because the list names <code>matcha:tutorial/obtain_iron</code>, which doesn't exist (the advancement is <code>obtain_iron_ingot</code>).<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
 
@@ -76,8 +76,8 @@ The Tutorial tab, rooted in "From Earth", traces the pack's progression in sever
 |matcha:tutorial/obtain_ramen=Cook [[Tonkotsu Ramen|tonkotsu ramen]] in an oven.
 |matcha:tutorial/obtain_green_curry=Cook [[Green Curry|green curry]] in an oven.
 |matcha:tutorial/preserve_food=Craft any of 15 preserves.
-|matcha:tutorial/preserve_everything=Craft all 15 preserves: canned apples, canned golden apples, glow jam, golden pickled carrots, mead, pickled carrots, pickled potatoes, sun-dried tomatoes, pumpkin jam, rind jam, sweet berry jam, pickled mushrooms, pickled toadstools, pickled warped fungus and pickled crimson fungus.
-|matcha:tutorial/cook_secret_food=Have [[Steamed Golden Carrots|steamed golden carrots]], a baked golden apple, braised crimson fungus or braised warped fungus in the inventory. See [[Secret recipes]].
+|matcha:tutorial/preserve_everything=Craft all 15 preserves: canned apples, glow jam, mead, pickled carrots, pickled potatoes, sun-dried tomatoes, pumpkin jam, rind jam, sweet berry jam, pickled mushrooms, pickled toadstools and the four [[Secret recipes|secret]] preserves.
+|matcha:tutorial/cook_secret_food=Have [[Steamed Golden Carrots|steamed golden carrots]], a [[Baked Golden Apple|baked golden apple]], [[Braised Crimson Fungus|braised crimson fungus]] or [[Braised Warped Fungus|braised warped fungus]] in the inventory. See [[Secret recipes]].
 |matcha:tutorial/cook_secret_meal=Craft any of 11 secret meals.
 |matcha:tutorial/obtain_estus=Have [[Estus Ash|Estus ash]] in the inventory.
 |matcha:tutorial/obtain_nazar=Craft a [[nazar]].
@@ -157,7 +157,7 @@ Most of the pack's advancement files have no display. They are invisible to play
 |matcha:mechanics=Trigger mechanics: using a [[Crystal Heart|crystal heart]], [[Amnestic|amnestic]], [[Asylum Seeker|asylum application]], [[Beacon Kindling|beacon kindling]], [[Bedrock Buster|bedrock buster]], clay fetishes or the happy ghast horn; eating glow berry foods (soul sight); sleeping; summoning the Wither; hitting a [[Copper Eye|copper eye]]; getting the Wither effect; entering a village or fortress; handling Estus and intrinsic enchantments.
 |matcha:fishing_sounds=Play a distinct sound for each kind of catch. See [[Fishing sounds]].
 |matcha:update_old_items=Replace old copies of the sacred texts and the "Golden" music disc with current ones. See [[Updating items]].
-|matcha:cooking_recipes=Unlock secret recipes (chorus mochi, gnocchi, sweet berry toast and warped stroganoff) when their recipe item is obtained.
+|matcha:cooking_recipes=Unlock secret recipes ([[Chorus Mochi|chorus mochi]], [[gnocchi]], [[Sweet Berry Toast|sweet berry toast]] and [[Warped Stroganoff|warped stroganoff]]) when their recipe item is obtained.
 |matcha:particle=Particles when boarding a boat, walking on sulfurous hellstone, or drinking from an Estus flask.
 |matcha:remove_vanilla_items=Convert vanilla apples, sweet berries and turtle scutes, for example from other mods, into the pack's versions.
 |endless_repairs:inventory_changed=Reset the repair cost of items so anvil repairs never become "Too Expensive".
@@ -176,7 +176,7 @@ Most of the pack's advancement files have no display. They are invisible to play
 {{History line|1.03|Added "A Brittle Alloy?", "Hidden Flavors" and "Wait, you can make that?".}}
 {{History line|1.10|Added "Demonic Emissary", "A True Community", "Icarus' Folly", "A Miraculous Discovery!", "Archeologist in Training" and "Wings of Eros". Advancements became translatable. Removed the Estus flask advancement.}}
 {{History line|1.12.1-alpha|Advancements began rewarding obols and crystal hearts and lowering minimum hearts. Added "Bonfire Lit" and the Angler's Almanac tab. Reward advancements are revoked on update so they can be earned again.}}
-{{History line|1.12.2|"Bonfire Lit" works. Fixed a fishing typo that made an advancement impossible.}}
+{{History line|1.12.2|"Bonfire Lit", "Icarus' Folly" and "Wings of Eros" can be earned; the two elytra advancements had named recipe IDs that didn't exist. The Warm Saltwater and axolotl entries of the Angler's Almanac can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/end/smith_bronze_elytra.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/warm/root.json}}</ref>}}
 {{History line|Upcoming|2=Fewer tutorial advancements are revoked on update.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> "Crystal Heart!" and the pufferfish Angler's Almanac entry can be earned.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 

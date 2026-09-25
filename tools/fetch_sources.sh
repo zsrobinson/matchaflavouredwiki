@@ -8,7 +8,7 @@
 #   tools/fetch_sources.sh              check out the pack at the commit pinned in tools/source.lock
 #   tools/fetch_sources.sh --update     move to the commit of the newest Modrinth release
 #                                       (tools/release_commit.py) and rewrite tools/source.lock
-#   tools/fetch_sources.sh --ref <ref>  the same for any branch or commit (tools/dry_run.sh uses it)
+#   tools/fetch_sources.sh --ref <ref>  the same for any branch or commit
 # The Minecraft version for vanilla data is read from tools/mc_version.txt. --update and --ref rewrite it
 # from the pack's pack.mcmeta ("1.12.2 for 26.3"), so a port to a new Minecraft version is picked up.
 set -euo pipefail

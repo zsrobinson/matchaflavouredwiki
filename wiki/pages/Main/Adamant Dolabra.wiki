@@ -15,15 +15,15 @@ This upgrade needs a [[smithing upgrade template]]; without one, the same diamon
 == Usage ==
 
 === Mining ===
-It breaks pickaxe and axe blocks at speed 13 and obsidian, crying obsidian and ender chests at speed 55, with 5000 durability.
+It breaks pickaxe and axe blocks at speed {{Value|Adamant Dolabra|miningspeed}} and obsidian, crying obsidian and ender chests at speed 55, with {{Value|Adamant Dolabra|durability}} durability.
 
 Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Intrinsics ===
-Efficiency I, Unbreaking II and smelting. The smelting intrinsic makes mined blocks drop their smelted form where the block's loot table supports it: ores drop ingots or [[silver bullion]], logs drop charcoal, sand drops glass and cobblestone drops stone.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sand.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+Efficiency I, Unbreaking II and smelting. The smelting intrinsic makes mined blocks drop their smelted form where the block's loot table supports it: ores drop ingots or [[silver bullion]], logs drop charcoal, sand drops glass and cobblestone drops [[limestone]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sand.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 === Combat ===
-It deals {{Hp|7}} damage at an attack speed of 1. Unlike the adamant axe it does not inflict Weakness.
+It deals {{Value|Adamant Dolabra|damage}} damage at an attack speed of {{Value|Adamant Dolabra|attackspeed}}. Unlike the adamant axe it does not inflict Weakness.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}} or [[adamant scrap]]. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
@@ -41,7 +41,7 @@ An apprentice [[weaponsmith]] buys it for one [[adamant alloy]].<ref>{{Source|MF
 {{History line|1.03|The vanilla netherite recipes were blocked.}}
 {{History line|1.10|A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
 {{History line|1.12.1-alpha|The upgrade now keeps the base item's enchantments. Added the "Repaired with" tooltip. [[Divinity]] was replaced with Efficiency. The real attack speed and damage now match the tooltip.}}
-{{History line|1.12.2|Now smelts the blocks it mines. Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>. Dolabras began to shift from weapon hybrids to pure axe and pickaxe tools; the release notes say their damage and weapon intrinsics will be reduced over time.}}
+{{History line|1.12.2|Now smelts the blocks it mines. Attack damage lowered from 10 to 7.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_dolabra.json}}</ref> Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>. Dolabras began to shift from weapon hybrids to pure axe and pickaxe tools; the release notes say their damage and weapon intrinsics will be reduced over time.}}
 }}
 
 == References ==

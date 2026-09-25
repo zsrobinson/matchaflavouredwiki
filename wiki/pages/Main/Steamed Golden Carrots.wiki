@@ -2,7 +2,7 @@
 
 {{Spoiler}}
 
-'''Steamed golden carrots''' are the simple preparation of the [[Golden Carrot|golden carrot]], a secret [[ingredient]]. They heal {{Hp|2}} and grant {{EffectLink|Night Vision}} for 1 minute.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/golden_steamed_carrots.json}}</ref>
+'''Steamed golden carrots''' are the simple preparation of the [[Golden Carrot|golden carrot]], a secret [[ingredient]]. They heal {{Value|Steamed Golden Carrots|heals}} and grant {{EffectLink|Night Vision}} for {{Value|Steamed Golden Carrots|duration|effect=Night Vision}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/golden_steamed_carrots.json}}</ref>
 
 == Obtaining ==
 
@@ -13,7 +13,7 @@ The recipe is secret and is never added to the recipe book.
 == Usage ==
 
 === Food ===
-Eating them takes 0.8 seconds, heals {{Hp|2}} (through Regeneration IV instead of III) and gives Night Vision for 1:00. Cooking them grants ''Hidden Flavors''.
+Eating them takes {{Value|Steamed Golden Carrots|eat_time}}, heals {{Value|Steamed Golden Carrots|heals}} (through Regeneration IV instead of III) and gives Night Vision for {{Value|Steamed Golden Carrots|duration|effect=Night Vision|format=clock}}. Cooking them grants ''Hidden Flavors''.
 
 == History ==
 {{History|

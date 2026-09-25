@@ -15,10 +15,10 @@ A '''wooden shovel''' is a [[Tools#Shovel|shovel]] of the [[Wooden equipment|woo
 == Usage ==
 
 === Digging ===
-It keeps the vanilla mining speed of 2 but has 200 durability instead of 59.
+It keeps the vanilla mining speed of 2 but has {{Value|Wooden Shovel|durability}} durability instead of 59.
 
 === Combat ===
-It deals {{Hp|2.5}} damage at an attack speed of 1.
+It deals {{Value|Wooden Shovel|damage}} damage at an attack speed of {{Value|Wooden Shovel|attackspeed}}.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with planks. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

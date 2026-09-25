@@ -14,10 +14,10 @@ This upgrade needs a [[smithing upgrade template]]; without one, the same copper
 == Usage ==
 
 === Mining ===
-It breaks shovel and hoe blocks at speed 15 and has 1000 durability. That is slower than the hepatizon shovel and hoe (20) and the same as the golden and adamant shovels. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+It breaks shovel and hoe blocks at speed {{Value|Hepatizon Mattock|miningspeed}} and has {{Value|Hepatizon Mattock|durability}} durability. That is slower than the hepatizon shovel and hoe (20) and the same as the golden and adamant shovels. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|3}} damage at an attack speed of 3. While held in the main hand it adds 0.005 to movement speed, 5% of the player's base speed.
+It deals {{Value|Hepatizon Mattock|damage}} damage at an attack speed of {{Value|Hepatizon Mattock|attackspeed}}. While held in the main hand it adds 0.005 to movement speed, 5% of the player's base speed.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
@@ -35,7 +35,7 @@ An apprentice [[weaponsmith]] buys it for one [[hepatizon alloy]], so the alloy 
 {{History|
 {{History line|1.10|Renamed from "Bronze" in the language file only, so existing items keep working. Hepatizon equipment was buffed. A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
 {{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. Mining speed raised from about 12 to 15.}}
-{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.12.2|Movement speed bonus lowered from 0.01 to 0.005.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_mattock.json}}</ref> Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}
 
 == References ==

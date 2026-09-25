@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Fish and chips''' is a fried meal that heals {{Hp|14}}, the most of any crafted meal except [[stroganoff]] and [[gnocchi]]. It has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/fish_and_chips.json}}</ref>
+'''Fish and chips''' is a fried meal that heals {{Value|Fish and Chips|heals}}, the most of any crafted meal except [[stroganoff]] and [[gnocchi]]. It has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/fish_and_chips.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A [[Baked Potato|baked potato]], a [[Cooked Large Fish|cooked large fish]] or [[
 == Usage ==
 
 === Food ===
-Eating fish and chips takes 2 seconds and heals {{Hp|14}}.
+Eating fish and chips takes {{Value|Fish and Chips|eat_time}} and heals {{Value|Fish and Chips|heals}}.
 
 === Trading ===
 {{Upcoming|type=section}}

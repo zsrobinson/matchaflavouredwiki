@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-A '''chocolate chip cookie''' is a [[chocolate]] meal that heals {{Hp|4}} and grants {{EffectLink|Haste}} for 5 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/chocolate_chip_cookie.json}}</ref>
+A '''chocolate chip cookie''' is a [[chocolate]] meal that heals {{Value|Chocolate Chip Cookie|heals}} and grants {{EffectLink|Haste}} for {{Value|Chocolate Chip Cookie|duration|effect=Haste}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/chocolate_chip_cookie.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ Chocolate, sugar and dough. Obtaining chocolate unlocks the recipe. The vanilla 
 == Usage ==
 
 === Food ===
-Eating a cookie takes 0.8 seconds, heals {{Hp|4}} and gives Haste I for 5:00.
+Eating a cookie takes {{Value|Chocolate Chip Cookie|eat_time}}, heals {{Value|Chocolate Chip Cookie|heals}} and gives Haste {{Value|Chocolate Chip Cookie|level|effect=Haste}} for {{Value|Chocolate Chip Cookie|duration|effect=Haste|format=clock}}.
 
 === Trading ===
 {{Upcoming|type=section}}

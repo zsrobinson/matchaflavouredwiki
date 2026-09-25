@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-A '''puerquito''' is a pig-shaped molasses cookie that heals {{Hp|4}} and grants {{EffectLink|Regeneration}} for 30 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/puerquito.json}}</ref>
+A '''puerquito''' is a pig-shaped molasses cookie that heals {{Value|Puerquito|heals}} and grants {{EffectLink|Regeneration}} for {{Value|Puerquito|duration|effect=Regeneration}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/puerquito.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A '''puerquito''' is a pig-shaped molasses cookie that heals {{Hp|4}} and grants
 == Usage ==
 
 === Food ===
-Eating a puerquito takes 1.6 seconds, heals {{Hp|4}} and gives Regeneration I for 0:30.
+Eating a puerquito takes {{Value|Puerquito|eat_time}}, heals {{Value|Puerquito|heals}} and gives Regeneration {{Value|Puerquito|level|effect=Regeneration}} for {{Value|Puerquito|duration|effect=Regeneration|format=clock}}.
 
 === Trading ===
 {{Upcoming|type=section}}

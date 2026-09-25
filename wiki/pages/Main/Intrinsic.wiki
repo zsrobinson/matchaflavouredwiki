@@ -4,7 +4,7 @@
 |invimage=Baked Pumpkin
 |type=Mechanic
 }}
-An '''intrinsic''' is a special ability hidden in an item. For [[food]], it is the status [[effect]] that an [[ingredient]] carries: raw, the ingredient does nothing special, but cooking it "awakens" the intrinsic, and every dish made from it grants the same effect for longer the more work goes into it.<ref>{{Cite video|quote=In Matcha Flavored, most ingredients have special abilities. I call them intrinsics. Cooking an ingredient can awaken whatever intrinsic is hidden in the raw food.}}</ref> [[Pumpkin]], for example, has no effect on its own, but [[Baked Pumpkin|baked pumpkin]] gives {{EffectLink|Resistance}} for 30 seconds, [[Pumpkin Jam|pumpkin jam]] for 3 minutes and a [[Pumpkin Empanada|pumpkin empanada]] for 8 minutes.
+An '''intrinsic''' is a special ability hidden in an item. For [[food]], it is the status [[effect]] that an [[ingredient]] carries: raw, the ingredient does nothing special, but cooking it "awakens" the intrinsic, and every dish made from it grants the same effect for longer the more work goes into it.<ref>{{Cite video|quote=In Matcha Flavored, most ingredients have special abilities. I call them intrinsics. Cooking an ingredient can awaken whatever intrinsic is hidden in the raw food.}}</ref> [[Pumpkin]], for example, has no effect on its own, but [[Baked Pumpkin|baked pumpkin]] gives {{EffectLink|Resistance}} for {{Value|Baked Pumpkin|duration|effect=Resistance}}, [[Pumpkin Jam|pumpkin jam]] for {{Value|Pumpkin Jam|duration|effect=Resistance}} and a [[Pumpkin Empanada|pumpkin empanada]] for {{Value|Pumpkin Empanada|duration|effect=Resistance}}.
 
 The pack also uses the word for the built-in abilities of equipment, such as the [[Warding|warding]] of silver weapons or the knockback of [[Mattock|mattocks]]. Those are covered on the pages of the equipment and on [[Set bonus]]; this page covers ingredients.
 
@@ -24,33 +24,33 @@ Durations are the effect's duration at level I unless a level is given. Every di
 {| class="wikitable"
 ! Ingredient !! Intrinsic !! Simple preparation !! Preservation !! Meal !! Other dishes
 |-
-| {{ItemLink|Pumpkin}} || {{EffectLink|Resistance}} || {{ItemLink|Baked Pumpkin}} (0:30) || {{ItemLink|Pumpkin Jam}} (3:00) || {{ItemLink|Pumpkin Empanada}} (8:00) || {{ItemLink|Pumpkin Curry}} (20:00)
+| {{ItemLink|Pumpkin}} || {{EffectLink|Resistance}} || {{ItemLink|Baked Pumpkin}} ({{Value|Baked Pumpkin|duration|effect=Resistance|format=clock}}) || {{ItemLink|Pumpkin Jam}} ({{Value|Pumpkin Jam|duration|effect=Resistance|format=clock}}) || {{ItemLink|Pumpkin Empanada}} ({{Value|Pumpkin Empanada|duration|effect=Resistance|format=clock}}) || {{ItemLink|Pumpkin Curry}} ({{Value|Pumpkin Curry|duration|effect=Resistance|format=clock}})
 |-
-| {{ItemLink|Apple}} || {{EffectLink|Regeneration}} || {{ItemLink|Baked Apple}} (0:10) || {{ItemLink|Canned Apples}} (1:00) || {{ItemLink|Apple Empanada}} (3:00) || {{ItemLink|Apple Cinnamon Oatmeal}} (2:00, plus Speed 10:00)
+| {{ItemLink|Apple}} || {{EffectLink|Regeneration}} || {{ItemLink|Baked Apple}} ({{Value|Baked Apple|duration|effect=Regeneration|format=clock}}) || {{ItemLink|Canned Apples}} ({{Value|Canned Apples|duration|effect=Regeneration|format=clock}}) || {{ItemLink|Apple Empanada}} ({{Value|Apple Empanada|duration|effect=Regeneration|format=clock}}) || {{ItemLink|Apple Cinnamon Oatmeal}} ({{Value|Apple Cinnamon Oatmeal|duration|effect=Regeneration|format=clock}}, plus Speed {{Value|Apple Cinnamon Oatmeal|duration|effect=Speed|format=clock}})
 |-
-| {{ItemLink|Carrot}} || {{EffectLink|Night Vision}} || {{ItemLink|Steamed Carrots}} (0:10) || {{ItemLink|Pickled Carrots}} (5:00) || {{ItemLink|Carrot Cupcake}} (10:00) || {{ItemLink|Pad Thai}} (10:00), {{ItemLink|Lumpia}} (5:00)
+| {{ItemLink|Carrot}} || {{EffectLink|Night Vision}} || {{ItemLink|Steamed Carrots}} ({{Value|Steamed Carrots|duration|effect=Night Vision|format=clock}}) || {{ItemLink|Pickled Carrots}} ({{Value|Pickled Carrots|duration|effect=Night Vision|format=clock}}) || {{ItemLink|Carrot Cupcake}} ({{Value|Carrot Cupcake|duration|effect=Night Vision|format=clock}}) || {{ItemLink|Pad Thai}} ({{Value|Pad Thai|duration|effect=Night Vision|format=clock}}), {{ItemLink|Lumpia}} ({{Value|Lumpia|duration|effect=Night Vision|format=clock}})
 |-
-| {{ItemLink|Tomatoes}} || {{EffectLink|Strength}} || {{ItemLink|Grilled Tomatoes}} (0:10) || {{ItemLink|Sun-dried Tomatoes}} (5:00) || {{ItemLink|Bruschetta}} (II, 2:30) || {{ItemLink|Cheese Pizza}}, {{ItemLink|Mushroom Pizza}}, {{ItemLink|Meat Pizza}} (3:00), {{ItemLink|Kontomire-Dandelion Stew}} (5:00)
+| {{ItemLink|Tomatoes}} || {{EffectLink|Strength}} || {{ItemLink|Grilled Tomatoes}} ({{Value|Grilled Tomatoes|duration|effect=Strength|format=clock}}) || {{ItemLink|Sun-dried Tomatoes}} ({{Value|Sun-dried Tomatoes|duration|effect=Strength|format=clock}}) || {{ItemLink|Bruschetta}} ({{Value|Bruschetta|level|effect=Strength}}, {{Value|Bruschetta|duration|effect=Strength|format=clock}}) || {{ItemLink|Cheese Pizza}}, {{ItemLink|Mushroom Pizza}}, {{ItemLink|Meat Pizza}} (3:00), {{ItemLink|Kontomire-Dandelion Stew}} ({{Value|Kontomire-Dandelion Stew|duration|effect=Strength|format=clock}})
 |-
-| {{ItemLink|Melon Slice|Melon}} || {{EffectLink|Fire Resistance}} || {{ItemLink|Grilled Melon}} (0:10) || {{ItemLink|Rind Jam}} (5:00) || {{ItemLink|Melon Sorbet}} (10:00) ||
+| {{ItemLink|Melon Slice|Melon}} || {{EffectLink|Fire Resistance}} || {{ItemLink|Grilled Melon}} ({{Value|Grilled Melon|duration|effect=Fire Resistance|format=clock}}) || {{ItemLink|Rind Jam}} ({{Value|Rind Jam|duration|effect=Fire Resistance|format=clock}}) || {{ItemLink|Melon Sorbet}} ({{Value|Melon Sorbet|duration|effect=Fire Resistance|format=clock}}) ||
 |-
-| {{ItemLink|Sweet Berries}} || {{EffectLink|Health Boost}} || {{ItemLink|Sweet Berry Mash}} (0:10) || {{ItemLink|Sweet Berry Jam}} (3:00) || {{ItemLink|Sweet Berry Danish}} (II, 8:00) || {{ItemLink|Sweet Berry Toast}} (II, 8:00)
+| {{ItemLink|Sweet Berries}} || {{EffectLink|Health Boost}} || {{ItemLink|Sweet Berry Mash}} ({{Value|Sweet Berry Mash|duration|effect=Health Boost|format=clock}}) || {{ItemLink|Sweet Berry Jam}} ({{Value|Sweet Berry Jam|duration|effect=Health Boost|format=clock}}) || {{ItemLink|Sweet Berry Danish}} ({{Value|Sweet Berry Danish|level|effect=Health Boost}}, {{Value|Sweet Berry Danish|duration|effect=Health Boost|format=clock}}) || {{ItemLink|Sweet Berry Toast}} ({{Value|Sweet Berry Toast|level|effect=Health Boost}}, {{Value|Sweet Berry Toast|duration|effect=Health Boost|format=clock}})
 |-
 | {{ItemLink|Glow Berries}} || Aura (nearby creatures glow) || {{ItemLink|Glow Berry Mash}} (0:03) || {{ItemLink|Glow Berry Jam}} (0:30) || {{ItemLink|Glow Berry Crumble}} (1:00) ||
 |-
-| {{ItemLink|Honey Bottle|Honey}} || {{EffectLink|Speed}} || {{ItemLink|Honey Ginger Tea}} (0:30, also cleanses) || {{ItemLink|Mead}} (5:00) || {{ItemLink|Honied French Toast}} (II, 3:00) || {{ItemLink|Bubbling Mead}} (II, 5:00, splash)
+| {{ItemLink|Honey Bottle|Honey}} || {{EffectLink|Speed}} || {{ItemLink|Honey Ginger Tea}} ({{Value|Honey Ginger Tea|duration|effect=Speed|format=clock}}, also cleanses) || {{ItemLink|Mead}} ({{Value|Mead|duration|effect=Speed|format=clock}}) || {{ItemLink|Honied French Toast}} ({{Value|Honied French Toast|level|effect=Speed}}, {{Value|Honied French Toast|duration|effect=Speed|format=clock}}) || {{ItemLink|Bubbling Mead}} (II, 5:00, splash)
 |-
-| {{ItemLink|Cocoa Beans}} || {{EffectLink|Haste}} || {{ItemLink|Chocolate}} (0:30) || — || {{ItemLink|Chocolate Chip Cookie}} (5:00), {{ItemLink|Brownie}} (II, 2:30) ||
+| {{ItemLink|Cocoa Beans}} || {{EffectLink|Haste}} || {{ItemLink|Chocolate}} ({{Value|Chocolate|duration|effect=Haste|format=clock}}) || — || {{ItemLink|Chocolate Chip Cookie}} ({{Value|Chocolate Chip Cookie|duration|effect=Haste|format=clock}}), {{ItemLink|Brownie}} ({{Value|Brownie|level|effect=Haste}}, {{Value|Brownie|duration|effect=Haste|format=clock}}) ||
 |-
-| {{ItemLink|Dried Kelp|Kelp}} || {{EffectLink|Water Breathing}} || {{ItemLink|Dried Kelp}} (0:10) || — || {{ItemLink|Gimmari}} (8:00) || {{ItemLink|Lumpia}} (5:00)
+| {{ItemLink|Dried Kelp|Kelp}} || {{EffectLink|Water Breathing}} || {{ItemLink|Dried Kelp}} ({{Value|Dried Kelp|duration|effect=Water Breathing|format=clock}}) || — || {{ItemLink|Gimmari}} ({{Value|Gimmari|duration|effect=Water Breathing|format=clock}}) || {{ItemLink|Lumpia}} ({{Value|Lumpia|duration|effect=Water Breathing|format=clock}})
 |-
-| {{ItemLink|Chorus Fruit}} || {{EffectLink|Levitation}} || {{ItemLink|Popped Chorus Fruit}} (III, 0:03) || — || {{ItemLink|Chorus Mochi}} (XXX, 0:01) ||
+| {{ItemLink|Chorus Fruit}} || {{EffectLink|Levitation}} || {{ItemLink|Popped Chorus Fruit}} ({{Value|Popped Chorus Fruit|level|effect=Levitation}}, {{Value|Popped Chorus Fruit|duration|effect=Levitation|format=clock}}) || — || {{ItemLink|Chorus Mochi}} ({{Value|Chorus Mochi|level|effect=Levitation|format=roman}}, {{Value|Chorus Mochi|duration|effect=Levitation|format=clock}}) ||
 |-
-| {{ItemLink|Red Mushroom}} || {{EffectLink|Poison}} || {{ItemLink|Braised Toadstool}} (0:30) || {{ItemLink|Pickled Toadstools}} (II, 1:00, splash) || {{ItemLink|Toadstool Stroganoff}} (5:00) ||
+| {{ItemLink|Red Mushroom}} || {{EffectLink|Poison}} || {{ItemLink|Braised Toadstool}} ({{Value|Braised Toadstool|duration|effect=Poison|format=clock}}) || {{ItemLink|Pickled Toadstools}} (II, 1:00, splash) || {{ItemLink|Toadstool Stroganoff}} ({{Value|Toadstool Stroganoff|duration|effect=Poison|format=clock}}) ||
 |}
 
 Two more ingredients with effects:
-* [[Pufferfish]] gives {{EffectLink|Conduit Power}}: [[Cooked Pufferfish|cooked pufferfish]] (0:30) and [[bokguk]] (8:00). See [[Fish]].
+* [[Pufferfish]] gives {{EffectLink|Conduit Power}}: [[Cooked Pufferfish|cooked pufferfish]] ({{Value|Cooked Pufferfish|duration|effect=Conduit Power|format=clock}}) and [[bokguk]] ({{Value|Bokguk|duration|effect=Conduit Power|format=clock}}). See [[Fish]].
 * [[Honey Bottle|Honey]]'s simple preparation and [[bread]] also have the cleansing effect; see [[Food#Effects|Food]].
 
 Ingredients without an intrinsic are used for healing and as bases: [[potato]]es, [[Mushroom|brown mushrooms]], [[egg]]s, [[Wheat Grain|wheat]], [[Nopales|cactus]], [[sugar]] and meat. Brown mushrooms are the pickling agent of every pickle.
@@ -62,13 +62,13 @@ These ingredients' dishes never appear in the recipe book; see [[Secret recipes]
 {| class="wikitable"
 ! Ingredient !! Intrinsic !! Simple preparation !! Preservation !! Meal !! Other dishes
 |-
-| {{ItemLink|Crimson Fungus}} || {{EffectLink|Weakness}} || {{ItemLink|Braised Crimson Fungus}} (0:30) || {{ItemLink|Pickled Crimson Fungus}} (II, 1:00, splash) || {{ItemLink|Crimson Stroganoff}} (5:00) ||
+| {{ItemLink|Crimson Fungus}} || {{EffectLink|Weakness}} || {{ItemLink|Braised Crimson Fungus}} ({{Value|Braised Crimson Fungus|duration|effect=Weakness|format=clock}}) || {{ItemLink|Pickled Crimson Fungus}} (II, 1:00, splash) || {{ItemLink|Crimson Stroganoff}} ({{Value|Crimson Stroganoff|duration|effect=Weakness|format=clock}}) ||
 |-
-| {{ItemLink|Warped Fungus}} || {{EffectLink|Invisibility}} || {{ItemLink|Braised Warped Fungus}} (0:30) || {{ItemLink|Pickled Warped Fungus}} (5:00, splash) || {{ItemLink|Warped Stroganoff}} (10:00) || {{ItemLink|Warped Pizza}} (5:00, plus Strength 3:00)
+| {{ItemLink|Warped Fungus}} || {{EffectLink|Invisibility}} || {{ItemLink|Braised Warped Fungus}} ({{Value|Braised Warped Fungus|duration|effect=Invisibility|format=clock}}) || {{ItemLink|Pickled Warped Fungus}} (5:00, splash) || {{ItemLink|Warped Stroganoff}} ({{Value|Warped Stroganoff|duration|effect=Invisibility|format=clock}}) || {{ItemLink|Warped Pizza}} ({{Value|Warped Pizza|duration|effect=Invisibility|format=clock}}, plus Strength {{Value|Warped Pizza|duration|effect=Strength|format=clock}})
 |-
-| {{ItemLink|Golden Apple}} || {{EffectLink|Absorption}} and {{EffectLink|Regeneration}} || {{ItemLink|Baked Golden Apple}} (Absorption 2:00, Regeneration 1:00) || {{ItemLink|Canned Golden Apples}} (Absorption II 2:00, Regeneration II 0:20) || {{ItemLink|Gilded Empanada}} (Absorption II 4:00, Regeneration II 0:45) ||
+| {{ItemLink|Golden Apple}} || {{EffectLink|Absorption}} and {{EffectLink|Regeneration}} || {{ItemLink|Baked Golden Apple}} (Absorption {{Value|Baked Golden Apple|duration|effect=Absorption|format=clock}}, Regeneration {{Value|Baked Golden Apple|duration|effect=Regeneration|format=clock}}) || {{ItemLink|Canned Golden Apples}} (Absorption {{Value|Canned Golden Apples|level|effect=Absorption}} {{Value|Canned Golden Apples|duration|effect=Absorption|format=clock}}, Regeneration {{Value|Canned Golden Apples|level|effect=Regeneration}} {{Value|Canned Golden Apples|duration|effect=Regeneration|format=clock}}) || {{ItemLink|Gilded Empanada}} (Absorption {{Value|Gilded Empanada|level|effect=Absorption}} {{Value|Gilded Empanada|duration|effect=Absorption|format=clock}}, Regeneration {{Value|Gilded Empanada|level|effect=Regeneration}} {{Value|Gilded Empanada|duration|effect=Regeneration|format=clock}}) ||
 |-
-| {{ItemLink|Golden Carrot}} || {{EffectLink|Night Vision}} || {{ItemLink|Steamed Golden Carrots}} (1:00) || {{ItemLink|Golden Pickled Carrots}} (10:00) || {{ItemLink|Golden Carrot Cupcake}} (20:00) ||
+| {{ItemLink|Golden Carrot}} || {{EffectLink|Night Vision}} || {{ItemLink|Steamed Golden Carrots}} ({{Value|Steamed Golden Carrots|duration|effect=Night Vision|format=clock}}) || {{ItemLink|Golden Pickled Carrots}} ({{Value|Golden Pickled Carrots|duration|effect=Night Vision|format=clock}}) || {{ItemLink|Golden Carrot Cupcake}} ({{Value|Golden Carrot Cupcake|duration|effect=Night Vision|format=clock}}) ||
 |}
 
 == Oven meals ==
@@ -77,22 +77,22 @@ There are five oven meals. Each is crafted as a [[stock]] and cooked for 15 seco
 {| class="wikitable"
 ! Meal !! Stock !! Intrinsic ingredients in the stock !! Effect
 |-
-| {{ItemLink|Green Curry}} || [[Green Curry Stock]] || — || {{EffectLink|Speed}} II (30:00)
+| {{ItemLink|Green Curry}} || [[Green Curry Stock]] || — || {{EffectLink|Speed}} {{Value|Green Curry|level|effect=Speed}} ({{Value|Green Curry|duration|effect=Speed|format=clock}})
 |-
-| {{ItemLink|Japanese Curry}} || [[Curry Stock]] || [[Carrot]] || {{EffectLink|Strength}} (30:00)
+| {{ItemLink|Japanese Curry}} || [[Curry Stock]] || [[Carrot]] || {{EffectLink|Strength}} ({{Value|Japanese Curry|duration|effect=Strength|format=clock}})
 |-
-| {{ItemLink|Paneer Makhani}} || [[Paneer Curry Stock]] || [[Tomatoes]] || {{EffectLink|Regeneration}} (10:00)
+| {{ItemLink|Paneer Makhani}} || [[Paneer Curry Stock]] || [[Tomatoes]] || {{EffectLink|Regeneration}} ({{Value|Paneer Makhani|duration|effect=Regeneration|format=clock}})
 |-
-| {{ItemLink|Tonkotsu Ramen}} || [[Ramen Stock]] || [[Dried Kelp|Kelp]] || {{EffectLink|Haste}} II (30:00)
+| {{ItemLink|Tonkotsu Ramen}} || [[Ramen Stock]] || [[Dried Kelp|Kelp]] || {{EffectLink|Haste}} {{Value|Tonkotsu Ramen|level|effect=Haste}} ({{Value|Tonkotsu Ramen|duration|effect=Haste|format=clock}})
 |-
-| {{ItemLink|Pumpkin Curry}} || [[Pumpkin Curry Stock]] || [[Baked Pumpkin]], [[carrot]] || {{EffectLink|Resistance}} (20:00)
+| {{ItemLink|Pumpkin Curry}} || [[Pumpkin Curry Stock]] || [[Baked Pumpkin]], [[carrot]] || {{EffectLink|Resistance}} ({{Value|Pumpkin Curry|duration|effect=Resistance|format=clock}})
 |}
 Unlike other dishes, the oven meals' effects are set per meal rather than by their ingredients: only pumpkin curry's effect matches an ingredient's intrinsic. Japanese curry contains carrots but gives Strength, paneer makhani contains tomatoes but gives Regeneration, and tonkotsu ramen contains kelp but gives Haste.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_curry.json}}</ref>
 
 == History ==
 {{History|
 {{History line|0.7-alpha|Preserves and meals now require the cooked ingredient (for example baked apples instead of apples).}}
-{{History line|1.12.1-alpha|Baked pumpkin's Resistance extended from 10 seconds to 30 seconds. Pad Thai's Night Vision extended from 5:00 to 10:00. Pickled warped fungus became throwable.}}
+{{History line|1.12.1-alpha|Baked pumpkin's Resistance extended from 10 seconds to 30 seconds. Pad Thai's Night Vision extended from 5:00 to 10:00. [[Pickled Warped Fungus|Pickled warped fungus]] became throwable.}}
 }}
 
 == Trivia ==

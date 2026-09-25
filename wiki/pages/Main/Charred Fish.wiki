@@ -1,14 +1,14 @@
 {{Infobox auto}}
-'''Charred fish''' is a [[food]] item made by cooking any fish in a [[Mud Kiln]]. It heals {{Hp|2}}, less than a properly cooked fish.
+'''Charred fish''' is a [[food]] item made by cooking any fish in a [[Mud Kiln]]. It heals {{Value|Charred Fish|heals}}, less than a properly cooked fish.
 
 == Obtaining ==
 === Cooking ===
-Any cod, salmon, pufferfish or tropical fish, including all custom [[fish]], turns into charred fish in a mud kiln in 5 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_fish.json}}</ref>
+Any cod, salmon, pufferfish or tropical fish, including all custom [[fish]], turns into charred fish in a mud kiln in {{Value|Charred Fish|cook_time}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_fish.json}}</ref>
 {{Recipes}}
 
 == Usage ==
 === Food ===
-Eating it gives a hidden Regeneration IV for 15 ticks, which heals {{Hp|2}}.
+Eating it gives a hidden Regeneration IV for 15 ticks, which heals {{Value|Charred Fish|heals}}.
 
 == References ==
 {{Reflist}}

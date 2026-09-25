@@ -135,12 +135,11 @@ The wiki is derived entirely from upstream sources, so a scheduled agent keeps i
   4. update the written pages, line by line, then have a second agent review them;
   5. open a pull request labelled `autopilot`;
   6. merge it once the **Check** workflow passes. **Build and deploy** then publishes the site.
-- Three safety nets catch what an agent could miss:
+- Two safety nets catch what an agent could miss:
   - `tools/extract.py` stops (exit 3) when the source uses a key, type or function it doesn't know,
     instead of quietly dropping data, and when the vanilla data is for the wrong Minecraft version;
   - `tools/lint_pages.py` (in the **Check** workflow) fails when a hand-written page describes an item
-    that no longer exists or cites a source file that is gone;
-  - `tools/dry_run.sh <branch>` rehearses a port to the next Minecraft version before it reaches `main`.
+    that no longer exists or cites a source file that is gone.
 - Video transcripts are primary sources and are kept in `sources/transcripts/` (the first design
   video is also `transcript.txt`). `tools/fetch_transcripts.py` adds new ones.
 

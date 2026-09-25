@@ -8,12 +8,12 @@ Wearing an unenchanted, unmodified elytra replaces it with the pack's elytra, wh
 == Shakudo Elytra ==
 {{Infobox auto|Shakudo Elytra}}
 {{Recipes|Shakudo Elytra}}
-800 durability, 1 armor, [[Magic protection]] 20, Cleanse Maleffect and the shakudo regeneration intrinsic. Its tooltip lists an "Elytra Bonus" of 10 seconds off the regeneration timer, but the item carries the normal armor intrinsic, so it counts as one more shakudo piece; the elytra intrinsic that counts as five pieces exists but is not on the item.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_elytra.json}}</ref> Repaired with honeycomb blocks or blocks of copper.
+{{Value|Shakudo Elytra|durability}} durability, {{Value|Shakudo Elytra|armor}} armor, [[Magic protection]] 20, Cleanse Maleffect and the shakudo regeneration intrinsic. Its tooltip lists an "Elytra Bonus" of 10 seconds off the regeneration timer, but the item carries the normal armor intrinsic, so it counts as one more shakudo piece; the elytra intrinsic that counts as five pieces exists but is not on the item.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_elytra.json}}</ref> Repaired with honeycomb blocks or blocks of copper.
 
 == Hepatizon Elytra ==
 {{Infobox auto|Hepatizon Elytra}}
 {{Recipes|Hepatizon Elytra}}
-800 durability, 1 armor and +0.02 movement speed (20%). Repaired with honeycomb blocks or blocks of copper. The recipe and loot table name it with the key <code>item.kleispack.hepatizon_elytra</code>, but the language file only has <code>item.kleispack.bronze_elytra</code>, so the item shows its raw key as its name.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_elytra.json}}</ref>
+{{Value|Hepatizon Elytra|durability}} durability, {{Value|Hepatizon Elytra|armor}} armor and +0.02 movement speed (20%). Repaired with honeycomb blocks or blocks of copper. The recipe and loot table name it with the key <code>item.kleispack.hepatizon_elytra</code>, but the language file only has <code>item.kleispack.bronze_elytra</code>, so the item shows its raw key as its name.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_elytra.json}}</ref>
 
 == Advancements ==
 * ''Wax Wings'': obtain an elytra. ''Icarus' Folly'': smith hepatizon elytra. ''Wings of Eros'': smith shakudo elytra.
@@ -23,7 +23,7 @@ Wearing an unenchanted, unmodified elytra replaces it with the pack's elytra, wh
 {{History line|0.6-alpha|Fixed the broken bronze (hepatizon) elytra texture.}}
 {{History line|1.10|Added the shakudo elytra; buffed the hepatizon elytra.}}
 {{History line|1.12.1-alpha|Unenchanted elytra are replaced with Matcha elytra.}}
-{{History line|1.12.2|The shakudo elytra bonus was reported fixed.}}
+{{History line|1.12.2|The shakudo elytra bonus was reported fixed. ''Icarus' Folly'' and ''Wings of Eros'' can be earned; before, their criteria named recipe IDs that didn't exist.<ref>{{Source|MF_datapack/data/matcha/advancement/end/smith_bronze_elytra.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/end/smith_shakudo_elytra.json}}</ref>}}
 }}
 
 == References ==

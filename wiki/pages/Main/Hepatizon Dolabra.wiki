@@ -14,12 +14,12 @@ This upgrade needs a [[smithing upgrade template]]; without one, the same copper
 == Usage ==
 
 === Mining ===
-It breaks pickaxe and axe blocks at speed 15 and has 1000 durability. It has no obsidian rule, so unlike the hepatizon pickaxe it harvests obsidian.
+It breaks pickaxe and axe blocks at speed {{Value|Hepatizon Dolabra|miningspeed}} and has {{Value|Hepatizon Dolabra|durability}} durability. It has no obsidian rule, so unlike the hepatizon pickaxe it harvests obsidian.
 
 Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|7}} damage at an attack speed of 1. While held in the main hand it adds 0.005 to movement speed, 5% of the player's base speed.
+It deals {{Value|Hepatizon Dolabra|damage}} damage at an attack speed of {{Value|Hepatizon Dolabra|attackspeed}}. While held in the main hand it adds 0.005 to movement speed, 5% of the player's base speed.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
@@ -36,7 +36,7 @@ An apprentice [[weaponsmith]] buys it for one [[hepatizon alloy]], so the alloy 
 {{History|
 {{History line|1.10|Renamed from "Bronze" in the language file only, so existing items keep working. Hepatizon equipment was buffed. A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
 {{History line|1.12.1-alpha|The upgrade now keeps the base item's enchantments. Added the "Repaired with" tooltip. Mining speed raised from about 12 to 15.}}
-{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>. Dolabras began to shift from weapon hybrids to pure axe and pickaxe tools; the release notes say their damage and weapon intrinsics will be reduced over time.}}
+{{History line|1.12.2|Movement speed bonus raised from 0.003 to 0.005.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_dolabra.json}}</ref> Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>. Dolabras began to shift from weapon hybrids to pure axe and pickaxe tools; the release notes say their damage and weapon intrinsics will be reduced over time.}}
 }}
 
 == References ==

@@ -48,6 +48,15 @@ Pages that use refs end with `== References ==` and `{{reflist}}`.
 - Numbers: use digits for game values ("8 minutes", "4 hearts", "Resistance I"). Health is
   shown with `{{Hp|8}}`, which renders as "8 (♥ × 4)". Durations are written like "8:00"
   in tables and "8 minutes" in prose.
+- **An item's own numbers come from the data.** When a sentence states an item's heal amount,
+  effect level or duration, eating or cooking time, damage, attack speed, mining speed, durability,
+  armor or toughness, write `{{Value|<item>|<field>}}` instead of typing it, so the prose changes
+  with the pack like the infobox does: "heals {{Value|Canned Golden Apples|heals}} and grants
+  {{EffectLink|Absorption}} {{Value|Canned Golden Apples|level|effect=Absorption}} for
+  {{Value|Canned Golden Apples|duration|effect=Absorption}}". `format=` picks the form ("2:00" is
+  `format=clock`; [[Template:Value]] lists them). Keep typing numbers you worked out (sums,
+  comparisons, "twice as long"), chances, vanilla values and anything historical (History sections,
+  version pages, quotes).
 - Name the vanilla thing a renamed item replaces once, with `{{MCW|...}}`. For example,
   "Obols replace {{MCW|Emerald|emeralds}}." Then use the pack's name everywhere else.
 - Refer to the pack as "Matcha Flavoured" (the official spelling), and in vanilla
@@ -111,6 +120,7 @@ sortable wikitables, and `{{Main|...}}` hatnotes into each detail page.
 | `{{Slot|Item}}`, `{{ItemLink|Item}}`, `{{EffectLink|Resistance}}` | Icons. Item icons are `File:<Item Name>.png`. |
 | `{{G|Warding}}` | The pack's tooltip glyphs (Health, Warding, Doom, Cleanse, Magic protection, Armor, ...). |
 | `{{Hp|8}}` | Health points, drawn as hearts. |
+| `{{Value|Item|field}}` | One of an item's own numbers in prose, from the data: `heals`, `damage`, `attackspeed`, `miningspeed`, `durability`, `armor`, `toughness`, `eat_time`, `level`/`duration` with `effect=`, `cook_time` (with `station=` where stations differ); `format=` for other forms. `tools/values.py "Item"` lists them. |
 | `{{Diagram|Warding|caption=...}}` | A diagram from `tools/diagrams.py` (see "Diagrams"); `align=right|width=360` for small ones. |
 | `{{Main|X}}`, `{{See also|X}}`, `{{About|...}}`, `{{Distinguish|X}}` | Hatnotes. |
 | `{{Vanilla}}` / `{{Vanilla|Emerald}}` | Links the vanilla page on minecraft.wiki. |
@@ -119,11 +129,43 @@ sortable wikitables, and `{{Main|...}}` hatnotes into each detail page.
 | `{{Cite video|quote=...}}`, `{{Cite changelog|1.10|quote=...}}` | References to the developer's video and release notes. |
 | `{{History|{{History line|1.0|...}}{{History line|1.10|...}}}}` | Version history table. |
 | `{{Version|1.10}}` | Link to a version page. |
-| `{{Spoiler}}` | Put before sections about secrets (hidden recipes, lore, horror). The wiki documents them, but warns first. |
+| `{{Spoiler}}` | Put before sections about secrets (hidden recipes, lore, horror). The wiki documents them, hidden until clicked. It covers the rest of its section (see "Spoilers" below). |
 | `{{Upcoming}}` / `{{Planned}}` | Content that is only in `changelog.md` or the developer's plans. |
 | `{{Navbox|title=|group1=|list1={{Nav item|X}}...}}` | Navigation boxes at the bottom of pages. |
 | Generated tables | `{{Data/Food table}}`, `{{Data/Renamed items}}`, `{{Data/Enchantments}}` (and `/New`, `/Vanilla`, which take notes by enchantment id: `{{Data/Enchantments/New|matcha:reach=...}}`), `{{Data/Blessings}}`, `{{Data/Ofuda}}`, `{{Data/Intrinsic items/<page>}}`, `{{Data/Trades/<Profession>}}`, `{{Data/Loot/<namespace>/<path>}}`, `{{Data/Advancements/<tab>}}`, `{{Data/Station/<station>}}`, `{{Data/Fishing/...}}`, `{{Data/Splash texts}}`, `{{Current version}}`. |
 | Difficulty and set bonus data | `{{Data/Difficulty}}` (all mob changes), `{{Data/Difficulty/<Mob>}}` (one mob's table), `{{Data/Difficulty/<Mob>/Infobox|max_health}}` (one attribute in a line, for infoboxes), `{{Data/Set bonus/<score>}}` (a table per equipment score) and `{{Data/Set bonus|adamant_armour=4}}` ("Absorption I (2 extra hearts) for 31 seconds every 30 seconds"; `show=every` or `show=lasts` gives just the seconds), all generated from the pack's functions. A note for one row of a table goes in a parameter named by the row ID: `{{Data/Difficulty/Zombie|max_health/baby=...}}`. |
+
+## Spoilers
+
+Spoilers are hidden until the reader clicks them, unless the reader turned that off (the eye beside
+the dark-mode toggle; the switch in the phone menu). What is hidden:
+- **What a `{{Spoiler}}` box covers:** the rest of its section, up to the next heading of the same or a
+  higher level. A box in the lead covers the rest of the page, so put it where the secret starts: after
+  the infobox and hatnotes of a page that is a secret as a whole, under the heading of a section that is.
+- **Every mention of a secret:** its links, and the table rows that link or name it. A secret is what the
+  pack itself marks as secret, and nothing else (`generate.py: secret_items()` writes the list to
+  `MediaWiki:Mfw-secrets`, so a release that adds one updates it):
+  - the items named by the two secret-cooking advancements, "Hidden Flavors" ("Cook a secret
+    Ingredient") and "Wait, you can make that?" ("Cook a secret Meal");
+  - the dishes only a Cooking Recipe unlocks (`advancement/cooking_recipes/`), and those Cooking Recipes;
+  - hidden advancements (`"hidden": true`), which the game shows only once earned: their titles, and
+    their rows in `{{Data/Advancements/<tab>}}`. Not the Angler's Almanac, whose entries are a catch log
+    hidden only until that catch is made (its fish are documented on the fishing pages).
+
+  A recipe missing from the recipe book is not a secret by itself: slab reversals, campfire cooking and
+  the like are never unlocked either. The developer also mentions secret tool, armor and shield recipes,
+  but the pack's files don't mark any, so none are treated as secret.
+
+Links are caught automatically; words are not. Outside a `{{Spoiler}}` box, don't name a secret in plain
+text or in a heading: link it, move the sentence under the box, or, for one sentence or list item that
+describes a secret, wrap it in `<span class="mfw-spoiler">`. A section about a secret gets a neutral
+heading ("Secret recipe", not the dish's name). `tools/lint_pages.py` and `tools/check_site.py` fail on
+a secret a reader would see.
+
+Be conservative: a spoiler is something the pack hides on purpose (a secret recipe or ingredient, a hidden
+advancement, a secret in a structure). Ordinary mechanics, drops and recipes the recipe book shows are not
+spoilers, even if a player might not know them yet. Other markup can use `class="mfw-spoiler"` (a row or
+an inline span is blacked out, as minecraft.wiki's inline spoilers are), but prefer `{{Spoiler}}`.
 
 ## Versions
 

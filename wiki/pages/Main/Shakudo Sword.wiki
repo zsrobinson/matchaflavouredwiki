@@ -14,7 +14,7 @@ The upgrade needs no template. Enchantments on the copper item carry over; where
 == Usage ==
 
 === Combat ===
-It deals {{Hp|6}} damage at an attack speed of 1.6 and has 1000 durability, as strong as an [[iron sword]] and far more durable.
+It deals {{Value|Shakudo Sword|damage}} damage at an attack speed of {{Value|Shakudo Sword|attackspeed}} and has {{Value|Shakudo Sword|durability}} durability, as strong as an [[iron sword]] and far more durable.
 
 === Intrinsics ===
 The life steal intrinsic gives the wielder Regeneration III for 1 second after each hit, except against armor stands, boats, minecarts and sulfur cubes.<ref>{{Source|MF_datapack/data/matcha/enchantment/shakudo_weapon.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>

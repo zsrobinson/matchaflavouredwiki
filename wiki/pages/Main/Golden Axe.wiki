@@ -18,10 +18,10 @@ A [[weaponsmith]] can also give it to a player with Hero of the Village.
 == Usage ==
 
 === Woodcutting ===
-It keeps the vanilla golden axe's mining speed of 12 and has 350 durability. Fortune raises its drops from melons and other Fortune-affected blocks. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
+It keeps the vanilla golden axe's mining speed of 12 and has {{Value|Golden Axe|durability}} durability. Fortune raises its drops from melons and other Fortune-affected blocks. Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Combat ===
-It deals {{Hp|7}} damage at an attack speed of 1, and Looting I increases mob drops. Golden gear comes with its enchantments already applied. They are ordinary enchantments, so they can be combined or removed like any other.
+It deals {{Value|Golden Axe|damage}} damage at an attack speed of {{Value|Golden Axe|attackspeed}}, and Looting I increases mob drops. Golden gear comes with its enchantments already applied. They are ordinary enchantments, so they can be combined or removed like any other.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[gold ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

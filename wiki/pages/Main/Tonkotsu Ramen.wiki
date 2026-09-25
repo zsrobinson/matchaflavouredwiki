@@ -1,17 +1,17 @@
 {{Infobox auto}}
 
-'''Tonkotsu ramen''' is one of the oven meals. It heals {{Hp|20}} and grants {{EffectLink|Haste}} II for 30 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/ramen.json}}</ref>
+'''Tonkotsu ramen''' is one of the oven meals. It heals {{Value|Tonkotsu Ramen|heals}} and grants {{EffectLink|Haste}} {{Value|Tonkotsu Ramen|level|effect=Haste}} for {{Value|Tonkotsu Ramen|duration|effect=Haste}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/ramen.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-A [[ramen stock]] cooks into tonkotsu ramen in 15 seconds in an [[oven]] or on [[kindling]]. Obtaining the stock unlocks the recipe.
+A [[ramen stock]] cooks into tonkotsu ramen in {{Value|Tonkotsu Ramen|cook_time}} in an [[oven]] or on [[kindling]]. Obtaining the stock unlocks the recipe.
 
 == Usage ==
 
 === Food ===
-Eating it takes 3 seconds, heals {{Hp|20}} and gives Haste II for 30:00. The bowl is given back.
+Eating it takes {{Value|Tonkotsu Ramen|eat_time}}, heals {{Value|Tonkotsu Ramen|heals}} and gives Haste {{Value|Tonkotsu Ramen|level|effect=Haste}} for {{Value|Tonkotsu Ramen|duration|effect=Haste|format=clock}}. The bowl is given back.
 
 === Trading ===
 {{Upcoming|type=section}}

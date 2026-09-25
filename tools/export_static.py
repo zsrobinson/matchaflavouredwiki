@@ -159,9 +159,10 @@ class Exporter:
         doc = re.sub(r'href="/w/([^"#?]+)(#[^"]*)?"', fix, doc)
         doc = doc.replace('href="/w/Matcha_Flavoured_Wiki"', 'href="/"')  # the main page is served at /
         # links a static site can't serve
-        doc = re.sub(r'<li id="(?:t-|ca-(?!mfw-)|pt-|n-recentchanges|n-randompage)[^"]*"[^>]*>.*?</li>', '', doc, flags=re.S)
+        doc = re.sub(r'<li id="(?:t-|ca-(?!mfw-)|pt-|n-recentchanges)[^"]*"[^>]*>.*?</li>', '', doc, flags=re.S)
         doc = re.sub(r'href="/index\.php\?title=Special:Search[^"]*"', 'href="/search/"', doc)
-        doc = re.sub(r'<a href="/w/Special:[^"]*"[^>]*>(.*?)</a>', r'\1', doc, flags=re.S)
+        # (the sidebar's "Random page", Special:Random, is served by the Worker from the export's list)
+        doc = re.sub(r'<a href="/w/Special:(?!Random")[^"]*"[^>]*>(.*?)</a>', r'\1', doc, flags=re.S)
         # MediaWiki's own search box, styled by minecraft.wiki's skin; site/search.js adds the suggestions.
         # Without the script it submits to the search page. The data paths get ?v= from fingerprint.py.
         doc = re.sub(r'<form action="/index\.php" id="searchform".*?</form>',
@@ -427,7 +428,9 @@ def main():
     open(os.path.join(out, '404.html'), 'w', encoding='utf-8').write(nf)
     # host hints: Netlify/Cloudflare Pages redirects, and disable Jekyll on GitHub Pages
     ex.redirects['Main_Page'] = '/'
-    seo.write_site_files(out, ex.indexed, ex.redirects, titles)
+    # Special:Random picks an article: indexed pages in the main namespace, as MediaWiki's does (not the main page)
+    random = [t for t in ex.indexed if exportable[t][0] == 'Main' and t != 'Matcha Flavoured Wiki']
+    seo.write_site_files(out, ex.indexed, ex.redirects, titles, random)
     search_index.write(out, ex.search, seo.resolve_redirects(ex.redirects, titles), ex.case_redirects)
     open(os.path.join(out, '.nojekyll'), 'w').close()
     # full-text search index (Pagefind); the component UI is served from /pagefind/

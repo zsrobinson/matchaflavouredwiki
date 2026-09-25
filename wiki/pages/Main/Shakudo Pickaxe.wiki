@@ -14,7 +14,7 @@ The upgrade needs no template. Enchantments on the copper item carry over; where
 == Usage ==
 
 === Mining ===
-It breaks pickaxe blocks at speed 9, the same as a [[diamond pickaxe]], and has 1000 durability. Its only restriction is obsidian itself, which breaks at speed 3 without dropping; crying obsidian and ender chests are harvested normally.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_pickaxe.json}}</ref>
+It breaks pickaxe blocks at speed {{Value|Shakudo Pickaxe|miningspeed}}, the same as a [[diamond pickaxe]], and has {{Value|Shakudo Pickaxe|durability}} durability. Its only restriction is obsidian itself, which breaks at speed 3 without dropping; crying obsidian and ender chests are harvested normally.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_pickaxe.json}}</ref>
 
 The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pickaxe blocks.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
 
@@ -22,7 +22,7 @@ The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pi
 Its [[Silk Touch]] intrinsic makes blocks drop themselves. Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 === Combat ===
-It deals {{Hp|4}} damage with no attack cooldown: the item sets a damage bonus but no attack speed.
+It deals {{Value|Shakudo Pickaxe|damage}} damage with no attack cooldown: the item sets a damage bonus but no attack speed.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

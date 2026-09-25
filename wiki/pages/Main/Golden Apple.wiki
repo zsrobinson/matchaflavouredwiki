@@ -2,7 +2,7 @@
 
 {{Infobox auto}}
 
-A '''golden apple''' is an [[apple]] coated in gold nuggets. It heals {{Hp|4}} and grants {{EffectLink|Regeneration}} for 30 seconds and {{EffectLink|Absorption}} for 2 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_apple.json}}</ref> It is also a secret [[ingredient]] with its own dishes.
+A '''golden apple''' is an [[apple]] coated in gold nuggets. It heals {{Value|Golden Apple|heals}} and grants {{EffectLink|Regeneration}} for {{Value|Golden Apple|duration|effect=Regeneration}} and {{EffectLink|Absorption}} for {{Value|Golden Apple|duration|effect=Absorption}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/golden_apple.json}}</ref> It is also a secret [[ingredient]] with its own dishes.
 
 == Obtaining ==
 
@@ -30,6 +30,7 @@ Golden apples can be cooked into [[Baked Golden Apple|baked golden apple]]s, whi
 {{History line|0.5-alpha|Golden apples got a proper tooltip and texture. Golden apple foods buffed.}}
 {{History line|1.10|Fixed the golden apple in bastion chests. Enchanted golden apples from ruined portals got a proper tooltip.}}
 {{History line|1.12.1-alpha|Absorption now matches the tooltip. The golden apple in bastion hoglin stables is now the pack's version. Enchanted golden apples in ruined portals fixed.}}
+{{History line|1.12.2|The stronger chest-loot variant is now a golden apple item instead of an enchanted golden apple, so it is named "Golden Apple" and has no enchantment glint.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/enchanted_golden_apple.json}}</ref>}}
 }}
 
 == See also ==

@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-A '''latke''' is a potato pancake that heals {{Hp|12}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/latke.json}}</ref>
+A '''latke''' is a potato pancake that heals {{Value|Latke|heals}} and has no effect.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/latke.json}}</ref>
 
 == Obtaining ==
 
@@ -11,7 +11,7 @@ A [[Baked Potato|baked potato]], an egg, [[bread]] (or naan) and a [[Milk Bottle
 == Usage ==
 
 === Food ===
-Eating a latke takes 2 seconds and heals {{Hp|12}}.
+Eating a latke takes {{Value|Latke|eat_time}} and heals {{Value|Latke|heals}}.
 
 === Trading ===
 {{Upcoming|type=section}}

@@ -14,7 +14,7 @@ The upgrade needs no template, and enchantments on the copper item carry over.<r
 == Usage ==
 
 === Combat ===
-It deals {{Hp|6}} damage at an attack speed of 1.9, faster than any sword except the [[electrum sword]], which it ties. It has 1000 durability. While held in the main hand it adds 0.0105 to movement speed, 10.5% of the player's base speed.
+It deals {{Value|Hepatizon Sword|damage}} damage at an attack speed of {{Value|Hepatizon Sword|attackspeed}}, faster than any sword except the [[electrum sword]], which it ties. It has {{Value|Hepatizon Sword|durability}} durability. While held in the main hand it adds 0.0105 to movement speed, 10.5% of the player's base speed.
 
 === Intrinsics ===
 [[Riposte]] II is an intrinsic: it is stored on the item and applied when the sword enters a player's inventory.
@@ -34,7 +34,7 @@ An apprentice [[weaponsmith]] buys it for one [[hepatizon alloy]], so the alloy 
 {{History|
 {{History line|1.10|Renamed from "Bronze" in the language file only, so existing items keep working. Hepatizon equipment was buffed. A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
 {{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip.}}
-{{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.12.2|Riposte raised from I to II.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_sword.json}}</ref> Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
 }}
 
 == References ==

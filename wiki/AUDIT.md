@@ -32,11 +32,13 @@ Not wikis (skipped): mpetrites' Bedrock port, the Fabric port, forks and modpack
 | 5 | Splash texts (JeremyVyska) | **Closed.** New page [[Splash texts]]: all 50, with history from 0.7-alpha, 1.03 and 1.10. | **Extractor**: `extract.py` ignores `MF_resourcepack/assets/minecraft/texts/`. |
 | 6 | Tooltip symbol legend (JeremyVyska "Symbols") | **Closed.** New page [[Tooltip]]: stat, intrinsic, effect and advancement symbols. Derived from the lang file and the lore in recipes; several example items were corrected against the source while writing. | **Page plan**: `{{G}}` was used everywhere but no page explained the symbols. |
 | 7 | Symptom-based troubleshooting (matchaflavored.org) | **Closed.** Installation → Troubleshooting table. | **Format gap** (how-to/question style). |
-| 8 | Complete disabled-vanilla list (JeremyVyska, 356 entries) | **Left for tooling.** Removed features summarizes it in prose. `data.json` already has `blocked_vanilla`; the generator should emit `Template:Data/Blocked vanilla` for Removed features to transclude. | **Tooling** (generator output missing). |
-| 9 | Recipe search, reverse lookup, crafting tree (julianfere, peterbax, JeremyVyska) | **Left for tooling.** Suggested: a static `/recipes/` page in `export_static.py` built from `data.json` (search by output or ingredient, click to expand ingredient chains). Pagefind search covers text only. | **Feature gap**: the site is article-only. |
-| 10 | Progression-safe spoiler mode (peterbax, Evansch0, JeremyVyska) | **Left for tooling.** We warn with `{{Spoiler}}` only. Possible: tag spoiler sections with a class and add a site-wide "hide spoilers" toggle in the skin script. | **Feature gap**. |
+| 8 | Complete disabled-vanilla list (JeremyVyska, 356 entries) | **Closed, as a short list.** Removed features names the blocked recipes players notice and lists the items no recipe makes any more (`Template:Data/Blocked vanilla/No recipe`, generated). A full 330-row table was built and dropped: nearly every row read "still made at the crafting table", which tells a player nothing. | **Tooling** (generator output missing). |
+| 9 | Recipe search, reverse lookup, crafting tree (julianfere, peterbax, JeremyVyska) | **Rejected.** Every item page already has its recipes (Obtaining) and uses (Usage), and search finds the item. A browser was built and dropped: it showed the same tables as the item page, and the crafting tree only restated them. | — |
+| 10 | Progression-safe spoiler mode (peterbax, Evansch0, JeremyVyska) | **Closed.** Spoilers are hidden by default until clicked; a switch shows them. The rule is in STYLE.md ("Spoilers"). | **Feature gap**. |
 | 11 | Per-file version diff (JeremyVyska, peterbax) | **Rejected as a page**; covered by version pages plus `git diff wiki/generated`. Could publish that diff summary on each version page. | — |
 | 12 | Tags, sounds, function lists (JeremyVyska) | **Rejected**: developer-facing and not encyclopedic. | — |
+| 14 | Reader tools (MediaWiki's What links here, printable version, access keys; a fixed-width toggle) | **Rejected.** Built and dropped: What links here listed every page with the food navbox and added about 31 MB to the site; the others add nothing a browser doesn't. Random page was kept. | — |
+| 15 | A daily watchdog of the live site | **Rejected.** GitHub already emails a failed deploy; the watchdog mostly repeated it. | — |
 | 13 | "Sleep sometimes doesn't work after the first join until `/reload`" (AriesAlex, citing the Modrinth description) | **Left open.** Not verifiable from the code or release notes; the Modrinth description isn't among our sources. | **Source not considered**: the Modrinth project description (and gallery) isn't fetched. |
 
 ## Where other sites differ from the code (not added)
@@ -56,7 +58,7 @@ Some of these probably describe older versions of the pack. Worth passing on to 
 
 1. **Sources not considered**: only one of the developer's videos; the Modrinth description and gallery; community Discord announcements (in the appendix video the developer asks fans to send a link to an existing community Discord rather than running one).
 2. **Extractor coverage**: resource pack `texts/` (splashes), and the font glyphs weren't mapped to meanings.
-3. **Generator coverage**: no redirects for advancement titles, plurals, British spellings or internal model ids; no table for `blocked_vanilla`.
+3. **Generator coverage**: no redirects for advancement titles, plurals, British spellings or internal model ids; no list for `blocked_vanilla`.
 4. **Page plan scope**: PAGES.md had no Tooltip or Splash texts page, and the guide stopped at smithing.
 5. **Format**: no question- or symptom-shaped content (troubleshooting); no interactive data views.
 
@@ -71,3 +73,7 @@ Some of these probably describe older versions of the pack. Worth passing on to 
 4. **Glyph coverage check**: every private-use character used in `en_us.json` must be named in `Template:G` and appear on the Tooltip page.
 5. **Weekly coverage comparison**: pull `matchaflavoured.wiki`'s `allpages` list (API) and the READMEs or feature lists of the repos above. Diff the titles against ours (after lowercasing and resolving redirects), and write new unmatched titles to `build/coverage_gaps.txt` for the agent to triage. Verify only against primary sources; record claims the code contradicts under "Where other sites differ from the code".
 6. **Guide freshness**: when a version adds a progression step (a new structure, boss or material tier), the update agent must check that `Guide for new players` and `Progression` mention it.
+
+
+A gap on this page is a reason to look, not a to-do: add a feature only if a reader of this wiki gets
+something the pages don't already give them. Rejected rows stay so nobody builds them again.

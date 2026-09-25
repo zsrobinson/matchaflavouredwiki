@@ -10,10 +10,10 @@ The resource pack contains:<ref>{{Source|MF_resourcepack/assets/minecraft/textur
 The leaf models also point at a main texture for each color (<code>block/red_poplar_leaves</code> and so on) that is not in the pack yet.
 
 == History ==
-The release notes of 1.12.1-alpha say that poplar was added to the [[stonecutter]] and that a poplar sapling recipe was added, but the current source has no poplar recipes. The developer's to-do list for the ''Minecraft'' 26.3 port still lists poplar leaf crafting and loot tables as work to be done.<ref>{{Source|changelog.md}}</ref>
+1.12.1-alpha added [[stonecutter]] recipes for poplar blocks and a recipe that makes a poplar sapling from poplar leaves.<ref>{{Source|Matcha_Flavoured/data/main/recipe/crafting/poplar_sapling_from_poplar_leaves.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref> They name poplar items, which ''Minecraft'' 26.2 doesn't have, so they could not be used in game. 1.12.2 removed them, and the current source has no poplar recipes. The developer's to-do list for the ''Minecraft'' 26.3 port still lists poplar leaf crafting and loot tables as work to be done.<ref>{{Source|changelog.md}}</ref>
 {{History
-|{{History line|1.12.1-alpha|Poplar added to the stonecutter and a poplar sapling recipe added (according to the release notes; not present in the current source).}}
-{{History line|1.12.2|Added poplar leaf, log and plank textures.}}
+|{{History line|1.12.1-alpha|Poplar stonecutter recipes and a poplar sapling recipe added, naming items that don't exist in 26.2.}}
+{{History line|1.12.2|Added poplar leaf, log and plank textures. Removed the poplar stonecutter and sapling recipes.}}
 }}
 
 == Trivia ==

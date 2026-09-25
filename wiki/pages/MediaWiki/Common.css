@@ -20,6 +20,53 @@
 	box-sizing: border-box;
 }
 .messagebox.spoiler { border-left-color: #B03A2E; }
+/* Wider than a phone: a block formatting context (as minecraft.wiki's flex .msgbox) with 10% side
+   margins, so 80% wide on its own as before, but beside a floated infobox it narrows to the space left
+   instead of dropping below the infobox and leaving a gap. (Phones stack the infobox; unchanged.) */
+@media screen and (min-width: 721px) {
+	.messagebox { display: flow-root; width: auto; margin: 0.5em 10%; }
+}
+/* Hidden spoilers (html.mfw-hide-spoilers, the default; MediaWiki:Gadget-mfwShell.js): what a
+   {{Spoiler}} box covers (.mfw-spoiler-body, marked by site/Spoilers.php) is hidden, and the box says
+   so; secret items' links and rows, hidden-advancement rows and other .mfw-spoiler elements are blacked
+   out, as minecraft.wiki's {{Spoiler}} does. A click shows them (.mfw-spoiler-shown). */
+html.mfw-hide-spoilers .mfw-spoiler-body:not(.mfw-spoiler-shown) { display: none !important; }
+html.mfw-hide-spoilers .messagebox.spoiler[data-mfw-spoiler]:not(.mfw-spoiler-shown) { cursor: pointer; }
+html.mfw-hide-spoilers .messagebox.spoiler[data-mfw-spoiler]:not(.mfw-spoiler-shown) td::after {
+	content: 'Hidden to avoid spoilers. Click to show.';
+	display: block;
+	width: fit-content;
+	margin-top: 0.4em;
+	padding: 0.15em 0.5em;
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.25);
+}
+html.mfw-hide-spoilers .messagebox.spoiler[data-mfw-spoiler]:not(.mfw-spoiler-shown):hover td::after,
+html.mfw-hide-spoilers .messagebox.spoiler[data-mfw-spoiler]:not(.mfw-spoiler-shown):focus-visible td::after { background: rgba(0, 0, 0, 0.35); }
+html.mfw-hide-spoilers .mfw-spoiler:not(.mfw-spoiler-shown):not(tr),
+html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td {
+	cursor: pointer;
+	color: transparent !important;
+	background: rgba(0, 0, 0, 0.25) !important;
+	box-decoration-break: clone;
+}
+html.mfw-hide-spoilers .mfw-spoiler:not(.mfw-spoiler-shown):not(tr) * { visibility: hidden; }
+/* a hidden row shrinks to one line that says so (a recipe screen would otherwise leave a tall grey block) */
+html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td { font-size: 0 !important; line-height: 0; }
+html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td > * { display: none !important; }
+html.mfw-hide-spoilers tr.mfw-spoiler:not(.mfw-spoiler-shown) > td:nth-child(2)::after {
+	content: 'Spoiler:\000020click to show';  /* \000020: ResourceLoader's minifier drops a space after a colon, even in a string */
+	display: block;
+	padding: 0.2rem 0.4rem;  /* the cell's own padding is in em, which the font-size of 0 above collapses */
+	font-size: 0.875rem;
+	line-height: 1.6;
+	color: #202122;
+	white-space: nowrap;
+}
+body.wgl-theme-dark tr.mfw-spoiler > td::after { color: #eaecf0 !important; }
+body.wgl-theme-dark .messagebox.spoiler[data-mfw-spoiler] td::after { background: rgba(255, 255, 255, 0.15); }
+html.mfw-hide-spoilers body.wgl-theme-dark .mfw-spoiler:not(.mfw-spoiler-shown):not(tr),
+html.mfw-hide-spoilers body.wgl-theme-dark tr.mfw-spoiler:not(.mfw-spoiler-shown) > td { background: rgba(255, 255, 255, 0.15) !important; }
 .messagebox.info { border-left-color: #2E6DB0; }
 
 /* Main page: layout and tiles come from minecraft.wiki's main page CSS (Gadget-mcw-mainpage.css) */

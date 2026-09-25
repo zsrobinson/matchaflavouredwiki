@@ -22,37 +22,37 @@ Most of the pack's equipment hides its real attributes and shows a hand-written 
 {| class="wikitable sortable"
 ! Item !! Tooltip says !! Real value
 |-
-| [[Golden Shovel]] || Mining speed 12 || 15
+| [[Golden Shovel]] || Mining speed 12 || {{Value|Golden Shovel|miningspeed}}
 |-
-| [[Steel Pickaxe]] || Attack damage 4 || 3
+| [[Steel Pickaxe]] || Attack damage 4 || {{Value|Steel Pickaxe|damage|format=raw}}
 |-
-| [[Steel Axe]] || Attack damage 9 || 10
+| [[Steel Axe]] || Attack damage 9 || {{Value|Steel Axe|damage|format=raw}}
 |-
-| [[Steel Shovel]] || Attack damage 4.5 || 3.5
+| [[Steel Shovel]] || Attack damage 4.5 || {{Value|Steel Shovel|damage|format=raw}}
 |-
-| [[Steel Hoe]] || Attack speed 3 || 2
+| [[Steel Hoe]] || Attack speed 3 || {{Value|Steel Hoe|attackspeed}}
 |-
-| [[Steel Mattock]] || Attack speed 3 || 2
+| [[Steel Mattock]] || Attack speed 3 || {{Value|Steel Mattock|attackspeed}}
 |-
 | [[Iron Mattock]] || Attack speed 3 || 4
 |-
 | [[Shakudo Pickaxe]] || Attack speed 1.2 || 4
 |-
-| [[Shakudo Hoe]] || Attack speed 4 || 7
+| [[Shakudo Hoe]] || Attack speed 4 || {{Value|Shakudo Hoe|attackspeed}}
 |-
-| [[Shakudo Mattock]] || Attack damage 1 || 2
+| [[Shakudo Mattock]] || Attack damage 1 || {{Value|Shakudo Mattock|damage|format=raw}}
 |-
-| [[Hepatizon Mattock]] || Attack damage 3.5 || 3
+| [[Hepatizon Mattock]] || Attack damage 3.5 || {{Value|Hepatizon Mattock|damage|format=raw}}
 |-
 | [[Electrum Spear]] || Attack speed 1.18 || 4
 |-
-| [[Adamant Spear]] || Attack damage 4, attack speed 0.95 || 5 and 0.87
+| [[Adamant Spear]] || Attack damage 4, attack speed 0.95 || {{Value|Adamant Spear|damage|format=raw}} and {{Value|Adamant Spear|attackspeed}}
 |-
 | [[Cleaver]] || Attack speed 1.6 || 4
 |-
-| [[Crook]] || 5 damage, 3 reach || 2 damage; +2 reach in the main hand, +5 in the off hand
+| [[Crook]] || 5 damage, 3 reach || {{Value|Crook|damage|format=raw}} damage; +2 reach in the main hand, +5 in the off hand
 |-
-| [[Baked Golden Apple]] || Regeneration for 0:30 || 1:00 (1,200 ticks)
+| [[Baked Golden Apple]] || Regeneration for 0:30 || {{Value|Baked Golden Apple|duration|effect=Regeneration|format=clock}} (1,200 ticks)
 |-
 | [[Splash Potion#Darkness|Splash potion of darkness]] || Darkness and Blindness for 5:00 each || Darkness 1:00, Blindness 0:30
 |}
@@ -70,7 +70,7 @@ Each item's article cites the file. Other tooltip problems:
 * '''Cut diamonds in village chests.''' The 1.12.2 notes say no "naturally-occuring free diamonds" should appear in surface structures, but the village toolsmith and weaponsmith chest tables still contain cut diamonds. (The desert pyramid gives raw diamonds.)<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_toolsmith.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_weaponsmith.json}}</ref> See [[Chest loot]].
 * '''Mobs keep their spawn equipment drops.''' The pack means to set the drop chances of the armor and weapons that hostile mobs spawn with to 0, but the command targets <code>@n</code> (the nearest matching mob) from a function that runs as the new mob without running at its position, so it changes the matching mob nearest the world spawn point instead. Most mobs keep their vanilla chance to drop that gear. See [[Spawning]].<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/clear_drop_chances.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref>
 * '''Invisible sturdy leather armor from tanneries.''' The [[Sturdy leather armor|sturdy leather armor]] found in village tannery chests has the equipment asset <code>minecraft:sturdy_leather</code>, but the resource pack defines it as <code>matcha:sturdy_leather</code>, so these pieces are invisible when worn. Crafted pieces use the right asset. This is not fixed on <code>main</code> either.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/sturdy_leather.json}}</ref><ref>{{Source|MF_resourcepack/assets/matcha/equipment/sturdy_leather.json}}</ref>
-* '''Glass bottles lost when crafting cheese and stroganoff.''' The advancement that gives back a milk bottle's or oil's glass bottle after crafting lists cheese under its old recipe ID <code>main:food/crafting/cheese</code>, and doesn't list stroganoff, toadstool stroganoff or crimson stroganoff at all, so crafting any of these uses up the bottle. This is not fixed on <code>main</code> either. In 1.12.2-beta most other food recipes lose their bottle too; see [[#Fixed on the main branch|below]].<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
+* '''Glass bottles lost when crafting cheese and stroganoff.''' The advancement that gives back a milk bottle's or oil's glass bottle after crafting lists cheese under its old recipe ID <code>main:food/crafting/cheese</code>, and doesn't list stroganoff, toadstool stroganoff or [[Crimson Stroganoff|crimson stroganoff]] at all, so crafting any of these uses up the bottle. This is not fixed on <code>main</code> either. In 1.12.2-beta most other food recipes lose their bottle too; see [[#Fixed on the main branch|below]].<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
 
 == Other ==
 * The chat message shown when the pack loads reports "version 1.12.1", although the release is 1.12.2 and the internal version number is 1122.<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>

@@ -1,0 +1,23 @@
+<includeonly>{{#invoke:Value|main}}</includeonly><noinclude>
+One of an item's numbers in running text, generated from the pack's code like the infobox ([[Module:Value]], data in [[Module:Data/Values]]). Use it wherever a sentence states an item's own heal amount, effect level or duration, eating or cooking time, damage, attack speed, durability or armor, so the prose changes when the pack does. A name, field or format the data doesn't have is an error, never a blank.
+
+{| class="wikitable"
+! Wikitext !! Result
+|-
+| <code><nowiki>{{Value|Golden Apple|heals}}</nowiki></code> || {{Value|Golden Apple|heals}}
+|-
+| <code><nowiki>{{Value|Golden Apple|heals|format=hearts}}</nowiki></code> || {{Value|Golden Apple|heals|format=hearts}}
+|-
+| <code><nowiki>{{Value|Golden Apple|level|effect=Absorption}}</nowiki></code> || {{Value|Golden Apple|level|effect=Absorption}}
+|-
+| <code><nowiki>{{Value|Golden Apple|duration|effect=Absorption}}</nowiki></code> || {{Value|Golden Apple|duration|effect=Absorption}}
+|-
+| <code><nowiki>{{Value|Golden Apple|duration|effect=Regeneration|format=clock}}</nowiki></code> || {{Value|Golden Apple|duration|effect=Regeneration|format=clock}}
+|-
+| <code><nowiki>{{Value|Golden Apple|eat_time}}</nowiki></code> || {{Value|Golden Apple|eat_time}}
+|-
+| <code><nowiki>{{Value|Green Curry|cook_time|station=Oven}}</nowiki></code> || {{Value|Green Curry|cook_time|station=Oven}}
+|}
+
+Fields: <code>heals</code>, <code>damage</code>, <code>attackspeed</code>, <code>miningspeed</code>, <code>durability</code>, <code>armor</code>, <code>toughness</code>, <code>eat_time</code>, <code>level</code> and <code>duration</code> (with <code>effect=</code>), <code>cook_time</code> (with <code>station=</code> when the stations differ). Durations take <code>format=clock</code> (2:00), <code>seconds</code>, <code>minutes</code>, <code>long</code> (2 minutes 30 seconds), <code>secs</code> (the bare number of seconds) or <code>ticks</code>; <code>heals</code> takes <code>raw</code> and <code>hearts</code>; <code>level</code> takes <code>raw</code> (30) and <code>roman</code> (XXX; the default stops at X). Numbers worked out from these (sums, comparisons, "twice as long") stay typed.
+[[Category:Templates]]</noinclude>
