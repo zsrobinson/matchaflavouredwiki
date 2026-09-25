@@ -365,6 +365,23 @@ def main():
         json.dump(titles + sorted(t for t, p in exportable.items() if re.match(r'\s*#REDIRECT', p[1], re.I) and t not in ex.case_redirects), f)
     # search page and root index, built from the main page's skin
     main_html = open(page_path(out, 'Matcha Flavoured Wiki'), encoding='utf-8').read()
+
+    def special_page(doc, name, href):
+        """The main page's skin as a special page: its own body classes (so the main page's hidden
+        heading shows), a lone "Special page" tab, and no GitHub tabs, categories or page record."""
+        doc = re.sub(r'<body class="([^"]*)"', lambda m: '<body class="%s"' % ' '.join(
+            [c for c in m.group(1).split() if not re.match(r'(?:ns|page|rootpage)-', c)] +
+            ['ns--1', 'ns-special', 'mw-special-' + name, 'page-Special_' + name, 'rootpage-Special_' + name]), doc, count=1)
+        tab = ('<li id="ca-nstab-special" class="selected mw-list-item"><a href="%s" '
+               'title="This is a special page, and it cannot be edited"><span>Special page</span></a></li>' % href)
+        doc = re.sub(r'(<nav id="p-namespaces".*?<ul class="vector-menu-content-list">).*?(</ul>)',
+                     lambda m: m.group(1) + tab + m.group(2), doc, count=1, flags=re.S)
+        doc = re.sub(r'(<nav id="p-views" class="[^"]*)(".*?<ul class="vector-menu-content-list">).*?(</ul>)',
+                     r'\1 emptyPortlet\2\3', doc, count=1, flags=re.S)
+        doc = re.sub(r'<li id="footer-(?:info-mfw-record|places-mfw-report)">.*?</li>\s*', '', doc, flags=re.S)
+        doc = re.sub(r'<div id="catlinks".*?</div></div>', '', doc, flags=re.S)
+        doc = re.sub(r'<span hidden data-pagefind-meta[^>]*></span>', '', doc)
+        return doc.replace(' data-pagefind-body', '', 1)
     # site/search.js draws the results (title matches, then Pagefind's full text), as in the header box
     search_body = ('<div id="mfw-search-page">'
                    '<form id="mfw-search-form" action="/search/" role="search">'
@@ -381,7 +398,7 @@ def main():
                     lambda m: '<div id="mw-content-text">' + search_body + m.group(2), main_html, flags=re.S)
     search = re.sub(r'<h1 id="firstHeading"[^>]*>.*?</h1>', '<h1 id="firstHeading" class="firstHeading">Search results</h1>', search, flags=re.S)
     search = re.sub(r'<title>.*?</title>', '<title>Search - Matcha Flavoured Wiki</title>', search)
-    search = re.sub(r'<div id="catlinks".*?</div></div>', '', search, flags=re.S)
+    search = special_page(search, 'Search', '/search/')
     search = seo.utility_page(search, 'Search results')
     os.makedirs(os.path.join(out, 'search'), exist_ok=True)
     open(os.path.join(out, 'search', 'index.html'), 'w', encoding='utf-8').write(search)
@@ -396,7 +413,8 @@ def main():
     # 404 page: the main page's shell with a not-found message and a case-insensitive redirect
     nf = re.sub(r'(<div id="mw-content-text"[^>]*>).*?(<div[^>]*class="printfooter")',
                 # site/search.js lists the pages whose titles are closest to the address
-                lambda m: '<div id="mw-content-text"><p>There is no page with this title. Try the search box above.</p>'
+                lambda m: '<div id="mw-content-text"><p>There is no page with this title. Try the search box above, '
+                          'or start from the <a href="/">main page</a>.</p>'
                           '<div id="mfw-notfound-matches"></div>' + m.group(2),
                 main_html, flags=re.S)
     nf = re.sub(r'<h1 id="firstHeading"[^>]*>.*?</h1>', '<h1 id="firstHeading" class="firstHeading">Page not found</h1>', nf, flags=re.S)
@@ -404,6 +422,7 @@ def main():
                     'fetch("/search.json").then(function(r){return r.json()}).then(function(ts){'
                     'var want=decodeURIComponent(m[1]).replace(/_/g," ").toLowerCase();'
                     'for(var i=0;i<ts.length;i++){if(ts[i].toLowerCase()===want){location.replace("/w/"+encodeURIComponent(ts[i].replace(/ /g,"_")));return}}})})();</script></head>', 1)
+    nf = special_page(nf, 'Badtitle', '#')
     nf = seo.utility_page(nf, 'Page not found')
     open(os.path.join(out, '404.html'), 'w', encoding='utf-8').write(nf)
     # host hints: Netlify/Cloudflare Pages redirects, and disable Jekyll on GitHub Pages

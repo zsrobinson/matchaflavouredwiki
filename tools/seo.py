@@ -63,8 +63,9 @@ def lead_description(doc):
     body = doc.split('id="mw-content-text"', 1)[-1]
     for m in re.finditer(r'<p>(.*?)</p>', body, re.S):
         text = re.sub(r'<sup[^>]*>.*?</sup>', '', m.group(1), flags=re.S)
-        # health glyphs ({{Hp}}): "8 (<img alt=Heart> × 4)" -> "8 (4 hearts)"
-        text = re.sub(r'\(\s*<span class="glyph">.*?</span>\s*×\s*([\d.]+)\)', lambda g: '(%s heart%s)' % (g.group(1), '' if g.group(1) == '1' else 's'), text, flags=re.S)
+        # hearts ({{Hp}}): "8 (<a><span class=mf-heart></span></a> × 4)" -> "8 (4 hearts)"
+        text = re.sub(r'\(\s*(?:<a [^>]*>)?\s*<span class="(?:glyph|mf-heart[^"]*)"[^>]*>.*?</span>\s*(?:</a>)?\s*×\s*([\d.]+)\)',
+                      lambda g: '(%s)' % {'1': '1 heart', '0.5': 'half a heart'}.get(g.group(1), g.group(1) + ' hearts'), text, flags=re.S)
         text = re.sub(r'<img [^>]*alt="([^"]*)"[^>]*>', r'\1', text)
         text = html.unescape(re.sub(r'<[^>]+>', '', text))
         text = re.sub(r'\s+', ' ', text).strip()
