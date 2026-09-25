@@ -8,7 +8,7 @@
 
 === Crafting ===
 {{Recipes}}
-A milk bottle, sugar and a brown mushroom make 4 cheese. Obtaining a milk bucket or a milk bottle unlocks the recipe. The milk bottle's glass bottle isn't returned.
+A milk bottle, sugar and a brown mushroom make 4 cheese. Obtaining a milk bucket or a milk bottle unlocks the recipe. The milk bottle's glass bottle is meant to be given back, but in 1.12.2-beta the advancement that returns it still names the recipe by an old ID, so it is used up ([[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
 
 == Usage ==
 

@@ -17,7 +17,7 @@ The upgrade needs no template, and enchantments on the diamond item carry over; 
 It gives {{Value|Adamant Helmet|armor}} armor, {{Value|Adamant Helmet|toughness}} toughness and 10% knockback resistance, the vanilla netherite values, with {{Value|Adamant Helmet|durability}} durability. Each piece also has Protection I and Unbreaking II.
 
 === Doom ===
-The [[Doom]] intrinsic periodically clears Weakness from nearby creatures and deals armor-piercing damage as it does, so it combines with the Weakness from adamant weapons. Each piece strengthens it, and wearing all four adds the Doom [[set bonus]] as well as {{Data/Set bonus|adamant_armour=4}}.<ref>{{Source|MF_datapack/data/matcha/function/timers/divinity/adamant_armour.mcfunction}}</ref>
+The [[Doom]] intrinsic periodically clears Weakness from nearby creatures and deals armor-piercing damage as it does, so it combines with the Weakness from adamant weapons. Each piece strengthens it, and wearing all four adds the Doom [[set bonus]] as well as {{Data/Set bonus|adamant_armour=4}}.<ref>{{Source|MF_datapack/data/matcha/function/timers/3s/adamant_armour.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/divinity/adamant_armour.mcfunction}}</ref>
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}} or [[adamant scrap]]. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

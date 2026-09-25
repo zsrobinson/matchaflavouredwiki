@@ -12,7 +12,7 @@
 A '''creeper''' in [[Matcha Flavoured]] lives only underground. It can't spawn where it can see the sky or at sea level and above, so creepers are met in caves rather than on the surface. Creepers also have a little less health than in vanilla.
 
 == Spawning ==
-Creepers use the vanilla biome spawn lists, but any creeper that appears where it can see the sky, or at Y=63 or above, is removed at once, unless it is inside [[Trial Chambers|trial chambers]] or an [[Abbey|abbey]].<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/surface_spawn.json}}</ref> This rule applies from the start of the world, not only after the [[Ender Dragon]] is killed. See [[Spawning]].
+Creepers use the vanilla biome spawn lists, but any creeper that appears where it can see the sky is removed at once, and so is one at Y=63 or above unless it is inside [[Trial Chambers|trial chambers]] or an [[Abbey|abbey]].<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/surface_spawn.json}}</ref> This rule applies from the start of the world, not only after the [[Ender Dragon]] is killed. See [[Spawning]].
 
 == Drops ==
 Creepers use the vanilla loot table. Their gunpowder is renamed {{ItemLink|Sulfur Chunk}}.

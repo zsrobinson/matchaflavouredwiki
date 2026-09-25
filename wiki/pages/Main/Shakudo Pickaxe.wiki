@@ -22,7 +22,7 @@ The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pi
 Its [[Silk Touch]] intrinsic makes blocks drop themselves. Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 === Combat ===
-It deals {{Value|Shakudo Pickaxe|damage}} damage with no attack cooldown: the item sets a damage bonus but no attack speed.
+It deals {{Value|Shakudo Pickaxe|damage}} damage at the player's base attack speed of 4, because the item sets a damage bonus but no attack speed.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with {{MCW|Block of Copper|blocks of copper}}. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].

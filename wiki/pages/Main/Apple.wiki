@@ -12,7 +12,7 @@ Oak and dark oak leaves drop apples. The leaves' loot table has two independent 
 {{Sources}}
 
 === Replacement ===
-An apple without the pack's tooltip (for example one given by another mod or datapack) is replaced with the pack's apple when it enters the inventory of a player who is not in Creative mode, one at a time.<ref>{{Source|MF_datapack/data/matcha/function/remove_vanilla_items/apple.mcfunction}}</ref>
+An apple without the pack's tooltip (for example one given by another mod or datapack) is replaced with the pack's apple when it enters a player's inventory, one at a time. The function is meant to skip players in Creative mode, but it only checks that some player isn't in Creative, so in multiplayer a Creative player's apples can be replaced too.<ref>{{Source|MF_datapack/data/matcha/function/remove_vanilla_items/apple.mcfunction}}</ref>
 
 == Usage ==
 

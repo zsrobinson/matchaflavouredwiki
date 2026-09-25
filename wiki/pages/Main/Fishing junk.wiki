@@ -1,4 +1,4 @@
-'''Fishing junk''' is the least valuable category of [[fishing]] loot. A catch is junk 10% of the time in most biomes, less with {{MCW|Luck of the Sea}}, and 95% of the time in biomes without fish.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
+'''Fishing junk''' is the least valuable category of [[fishing]] loot. A catch in open water is junk 10% of the time in most biomes (10.5% out of open water, where treasure can't be caught), less with {{MCW|Luck of the Sea}}, and 95% of the time in Mushroom Fields and the [[Hell]] and [[The End|End]] biomes, which have no fish.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
 
 == Loot ==
 All biomes share the base items. Three groups of biomes add one or two items of their own, which changes every item's share.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>

@@ -17,7 +17,7 @@ An '''iron pickaxe''' is a [[Tools#Pickaxe|pickaxe]] of the [[Iron equipment|iro
 === Mining ===
 The iron pickaxe breaks pickaxe blocks at speed {{Value|Iron Pickaxe|miningspeed}}, one faster than the [[copper pickaxe]] and the vanilla iron pickaxe, and has {{Value|Iron Pickaxe|durability}} durability, twice vanilla's 250.
 
-Obsidian, crying obsidian and ender chests break at speed 3 and drop nothing.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/iron.json}}</ref> A [[steel pickaxe|steel]], [[diamond pickaxe|diamond]], [[electrum pickaxe|electrum]] or [[adamant pickaxe]], or any [[dolabra]], is needed to collect them.
+Obsidian, crying obsidian and ender chests break at speed 3 and drop nothing.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/iron.json}}</ref> A [[steel pickaxe|steel]], [[diamond pickaxe|diamond]], [[electrum pickaxe|electrum]] or [[adamant pickaxe]], or any [[dolabra]], is needed to collect them; [[hepatizon pickaxe|hepatizon]] and [[shakudo pickaxe|shakudo]] pickaxes also collect crying obsidian and ender chests, but not obsidian.
 
 The pack also makes glass, glass panes, glowstone, sea lanterns and mob heads pickaxe blocks.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
 

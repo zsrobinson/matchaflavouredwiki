@@ -10,7 +10,7 @@ The [[Jeweler]] sells opal earrings at Novice level for 4 [[Obol]]s and one [[Op
 
 == Usage ==
 === Effect ===
-While worn by a player, opal earrings give Dolphin's Grace at all times, and Conduit Power whenever the player is in water. Both effects are hidden and reapplied every tick for 1 second, so they end as soon as the earrings are removed or the player leaves the water.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/conduit_power.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/enchantment/conduit_power.json}}</ref> Conduit Power lets the player breathe underwater, see better underwater and mine faster there, as in vanilla. Dolphin's Grace only has an effect while swimming.
+While worn by a player, opal earrings give Dolphin's Grace at all times, and Conduit Power whenever the player is in water. Both effects are hidden and reapplied every tick for 1 second, so they wear off within a second of the earrings being removed or, for Conduit Power, of the player leaving the water.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/conduit_power.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/enchantment/conduit_power.json}}</ref> Conduit Power lets the player breathe underwater, see better underwater and mine faster there, as in vanilla. Dolphin's Grace only has an effect while swimming.
 
 === Armor ===
 Opal earrings are worn in the head slot and take the place of a helmet. They give 1 [[armor]] point and no armor toughness or knockback resistance. Like all jewelry, they are unbreakable and, being built on a netherite helmet, don't burn in fire or lava. See [[Jewelry]].

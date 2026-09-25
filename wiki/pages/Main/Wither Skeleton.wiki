@@ -13,7 +13,7 @@ A '''wither skeleton''' in [[Matcha Flavoured]] is more dangerous than in vanill
 
 == Drops ==
 {{Data/Loot/minecraft/entities/wither_skeleton}}
-All drops require a player kill.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/wither_skeleton.json}}</ref> Coal and bones are as in vanilla. The skull drops with a 30% chance, plus 10% per level of Looting above the first (40% with Looting II, 50% with Looting III); vanilla's chance is 2.5%. Unlike other undead, wither skeletons don't drop {{ItemLink|Estus Ash}} or {{ItemLink|Raw Estus}}.
+All drops require a player kill.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/wither_skeleton.json}}</ref> Coal and bones are as in vanilla. The skull drops with a 30% chance, plus 10% per level of Looting above the first (40% with Looting II, 50% with Looting III); vanilla's chance is 2.5%. Unlike most undead, wither skeletons don't drop {{ItemLink|Estus Ash}} or {{ItemLink|Raw Estus}}.
 
 == Behavior ==
 === Breaking blocks ===

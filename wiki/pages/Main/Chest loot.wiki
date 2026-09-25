@@ -1,4 +1,4 @@
-'''Chest loot''' is the set of items generated in containers of structures. [[Matcha Flavoured]] overrides every vanilla chest loot table and adds new ones for its own structures, so that chests contain the pack's items: [[Obol]]s instead of {{MCW|Emerald|emeralds}}, [[Raw Diamond|raw diamonds]] instead of cut diamonds, [[crystal heart]]s, [[sacred texts]], [[estus ash]] and pack foods and equipment.
+'''Chest loot''' is the set of items generated in containers of structures. [[Matcha Flavoured]] overrides nearly every vanilla chest loot table and adds new ones for its own structures, so that chests contain the pack's items: [[Obol]]s instead of {{MCW|Emerald|emeralds}}, [[Raw Diamond|raw diamonds]] instead of cut diamonds, [[crystal heart]]s, [[sacred texts]], [[estus ash]] and pack foods and equipment.
 
 This page lists every chest loot table in the pack. The tables are generated from the pack's code; "chance per table" is the chance that the item appears at least once in one container. Each structure article shows the tables that belong to it.
 
@@ -10,7 +10,7 @@ Across the pack's tables:<ref>{{Source|MF_datapack/data/minecraft/loot_table/che
 * Vanilla foods such as bread, apples and golden apples are replaced by the pack's versions, so they stack with player-made food.
 * [[Crystal Heart]]s, [[divine fragment]]s and [[sacred texts]] such as [[The Book of Enoch]], [[The Avesta]], [[The Quran]], [[The Tanakh]], [[The Divine Comedy]] and [[Paradise Lost]] appear in structure chests.
 * Some entries have a <code>quality</code> value, so the {{MCW|Luck}} attribute affects them. The 1.12.1-alpha notes say the field was added to all chest tables, but in the current code only 14 chest tables use it, mostly on a few rare entries (the ancient city and bastion tables use it most).<ref>{{Cite changelog|1.12.1-alpha|quote=Luck works, I've added the quality field to all chest loottables and even some other things.}}</ref>
-* Rotten flesh, redstone and experience bottles are removed from most tables.
+* Rotten flesh, redstone and experience bottles are removed from all tables.
 
 == Abbey ==
 {{Main|Abbey}}

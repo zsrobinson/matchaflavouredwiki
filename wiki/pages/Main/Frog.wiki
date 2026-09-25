@@ -6,7 +6,7 @@ A '''frog''' is a [[fishing junk]] item caught in Swamp and Mangrove Swamp. It i
 It is 5 of 93 junk weight in swamps: 5.38% of junk, about 0.54% of all catches.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref> It plays the frog [[fishing sounds|catch sound]].
 
 == Usage ==
-Placing it spawns a frog. Using it on a [[spawner]] destroys every spawner and trial spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
+Placing it spawns a frog. Using it on a [[spawner]] outside Creative mode destroys every spawner and trial spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
 
 == Trivia ==
 * The developer's video counts frogs among the "almost 50 different fish you can catch".<ref>{{Cite video|quote=Almost 50 different fish you can catch, including frogs.}}</ref>

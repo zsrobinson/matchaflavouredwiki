@@ -24,7 +24,7 @@ The pack stores each player's maximum health in a scoreboard and sets the player
 
 * Each [[death]] lowers maximum health by 1 heart (2 on Hard).
 * Each [[Crystal Heart|crystal heart]] used raises it by 1 heart.
-* Staying withered for 8 seconds lowers it like a death; see [[Wither effect]].
+* Staying withered for 8 seconds lowers it like a death, except on Easy; see [[Wither effect]].
 
 Temporary extra health from {{EffectLink|Health Boost}} and {{EffectLink|Absorption}} works as in vanilla and isn't counted.
 

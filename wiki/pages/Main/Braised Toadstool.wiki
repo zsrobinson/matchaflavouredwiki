@@ -13,7 +13,7 @@ A red mushroom cooks into a braised toadstool in an [[oven]] or on [[kindling]] 
 === Food ===
 Eating a braised toadstool takes {{Value|Braised Toadstool|eat_time}}, heals {{Value|Braised Toadstool|heals}} and gives Poison {{Value|Braised Toadstool|level|effect=Poison}} for {{Value|Braised Toadstool|duration|effect=Poison|format=clock}}.
 
-Obtaining a braised toadstool unlocks [[Pickled Toadstools|pickled toadstools]] and [[Toadstool Stroganoff|toadstool stroganoff]], which are made from raw red mushrooms.
+Obtaining a braised toadstool is meant to unlock [[Pickled Toadstools|pickled toadstools]] and [[Toadstool Stroganoff|toadstool stroganoff]], which are made from raw red mushrooms. The unlock looks for the item model <code>minecraft:braised_red_mushroom</code>, but the braised toadstool uses <code>matcha:braised_red_mushroom</code>, so the recipes never enter the recipe book; they can still be crafted.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/braised_red_mushroom.json}}</ref>
 
 == Advancements ==
 * ''Powerful Flavors'': cook an intrinsic ingredient. Obtaining any of the 11 simple preparations of the ordinary intrinsic ingredients completes it.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/cook_food.json}}</ref>

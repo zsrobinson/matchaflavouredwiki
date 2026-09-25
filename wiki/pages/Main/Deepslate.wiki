@@ -1,10 +1,10 @@
 {{Vanilla|Deepslate}}
 {{Infobox auto}}
-'''Deepslate''' is the hard stone that makes up the Overworld below Y=0. As in vanilla ''Minecraft'', it drops cobbled deepslate when mined. In [[Matcha Flavoured]], cobbled deepslate is fired back into deepslate in a [[Mud Kiln|mud kiln]] rather than a furnace, and a wooden pickaxe cannot mine it at all.
+'''Deepslate''' is the hard stone that makes up the Overworld below Y=0. As in vanilla ''Minecraft'', it drops cobbled deepslate when mined. In [[Matcha Flavoured]], cobbled deepslate is fired back into deepslate in a [[Mud Kiln|mud kiln]] rather than a furnace, and a wooden pickaxe breaks it without dropping anything.
 
 == Obtaining ==
 === Breaking ===
-Deepslate and cobbled deepslate need at least a copper pickaxe: the pack's wooden pickaxe gets nothing from deepslate, cobbled deepslate or polished deepslate.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref> A tool with the [[Adamant equipment|adamant]] tool intrinsic smelts cobbled deepslate as it is mined, so it drops deepslate.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/cobbled_deepslate.json}}</ref>
+Deepslate and cobbled deepslate need a pickaxe other than a wooden one: the pack's wooden pickaxe gets nothing from deepslate, cobbled deepslate or polished deepslate.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref> A tool with the [[Adamant equipment|adamant]] tool intrinsic smelts cobbled deepslate as it is mined, so it drops deepslate.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/cobbled_deepslate.json}}</ref>
 
 === Smelting ===
 {{Recipes}}

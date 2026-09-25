@@ -12,7 +12,7 @@ Sulfur blocks generate in sulfur caves as in vanilla.
 * Four sulfur bricks in a square make 4 '''chiseled sulfur''', replacing the vanilla recipe of two stacked slabs. A [[stonecutter]] also cuts sulfur into chiseled sulfur.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/chiseled_sulfur.json}}</ref>
 * Polished sulfur, sulfur bricks and every slab, stairs and wall are made as in vanilla, by crafting or in a stonecutter.
 * Two slabs of sulfur, polished sulfur or sulfur bricks craft back into the full block.
-The vanilla recipes for chiseled sulfur and potent sulfur are removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Picking up a block of sulfur unlocks the pack's sulfur recipes.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/sulfur.json}}</ref>
+The vanilla recipes for chiseled sulfur and potent sulfur are removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Picking up a sulfur chunk unlocks the block of sulfur and potent sulfur recipes,<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/sulfur_chunk.json}}</ref> and picking up a block of sulfur unlocks the chiseled sulfur and slab recipes.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/sulfur.json}}</ref>
 
 == Usage ==
 * A block of sulfur crafts into 1 [[Sulfur Chunk|sulfur chunk]], and a block of potent sulfur into 9.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_chunk_from_sulfur.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sulfur_chunk_from_potent_sulfur.json}}</ref>

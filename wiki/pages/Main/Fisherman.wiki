@@ -17,7 +17,7 @@ The '''Fisherman''' is a [[villager]] profession that buys caught [[fish]] for [
 All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/data/matcha/villager_trade/fisherman/2/cod.json}}</ref> Every level offers all of its trades.
 
 === Buying fish ===
-The fisherman buys each fish at the level that matches its rarity, so a fisherman has to be leveled up by selling common fish before it buys rarer ones:
+The fisherman buys each fish at the level that matches its rarity (except the [[creaking fish]], a rare fish bought at Master level), so a fisherman has to be leveled up by selling common fish before it buys rarer ones:
 {| class="wikitable"
 ! Level !! Fish rarity !! Fish per Obol !! Villager XP per trade
 |-

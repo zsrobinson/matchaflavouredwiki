@@ -6,10 +6,10 @@ The deepslate variant is '''native deepslate silver'''.
 
 == Obtaining ==
 === Natural generation ===
-In mountain biomes and the deep dark the vanilla emerald feature runs at 50 attempts per chunk (vanilla 100), plus 5 deep attempts. Stony peaks get only the 50 attempts, beaches and the sulfur caves get none, and every other overworld biome gets 3 deep attempts. Deep veins follow a triangle from y=16 down to the world bottom, most common at the bottom.<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/ore_emerald_deep.json}}</ref>
+In mountain biomes and the deep dark the vanilla emerald feature runs at 50 attempts per chunk (vanilla 100), plus 5 deep attempts. Stony peaks get only the 50 attempts, the beach biome and the sulfur caves get none, and every other overworld biome gets 3 deep attempts. Deep veins follow a triangle from y=16 down to the world bottom, most common at the bottom.<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/ore_emerald_deep.json}}</ref>
 
 === Breaking ===
-Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 1 [[Raw Silver|raw silver]]; adamant tools drop [[Silver Bullion|silver bullion]]. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/emerald_ore.json}}</ref>
+Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 1 [[Raw Silver|raw silver]], affected by Fortune and electrum; adamant tools drop [[Silver Bullion|silver bullion]]. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/emerald_ore.json}}</ref>
 
 == History ==
 {{History|

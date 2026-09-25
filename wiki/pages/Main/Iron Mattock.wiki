@@ -20,7 +20,7 @@ It breaks shovel and hoe blocks at speed {{Value|Iron Mattock|miningspeed}}, two
 Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Combat ===
-It deals {{Value|Iron Mattock|damage}} damage with no attack cooldown (attack speed 4): the item sets a damage bonus but no attack speed, so it keeps the base speed. That makes it much stronger in melee than other mattocks.
+It deals {{Value|Iron Mattock|damage}} damage at an attack speed of 4: the item sets a damage bonus but no attack speed, so it keeps the base speed. That makes it much stronger in melee than other mattocks.
 
 === Repairing ===
 It can be repaired in an [[anvil]] with [[iron ingot]]s. The pack resets repair costs to zero, so it can be repaired indefinitely; see [[Repairing]].
