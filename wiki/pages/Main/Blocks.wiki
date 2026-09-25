@@ -145,7 +145,7 @@ The pack edits several block tags:<ref>{{Source|MF_datapack/data/minecraft/tags/
 * '''Mineable with an axe''': beds, candles, cactus and honeycomb blocks.
 * '''Mineable with a shovel''': [[Dirt Slab|dirt slabs]].
 * '''Supports vegetation''': sand, red sand and packed mud, so grass and flowers can be placed on them.<ref>{{Source|MF_datapack/data/minecraft/tags/block/supports_vegetation.json}}</ref>
-* '''Nether portal frame''': crying obsidian counts as well as obsidian.<ref>{{Source|MF_datapack/data/minecraft/tags/block/nether_portal_frame.json}}</ref>
+* '''Nether portal frame''': the pack adds crying obsidian to the nether portal frame tag, but the developer notes it will only work after the autumn drop; Minecraft 26.2, which the pack runs on, has no such tag.<ref>{{Cite changelog|1.12.1-alpha|quote=Crying Obsidian is now a valid portal block (Will only work post-autumn drop)}}</ref><ref>{{Source|MF_datapack/data/minecraft/tags/block/nether_portal_frame.json}}</ref>
 The pack also defines its own tag of path blocks for the [[Trailblaze]] enchantment (coarse dirt, gravel, dirt paths, packed mud, mud bricks and their slabs and stairs, and dirt slabs), and tags of blocks that wooden, copper and iron tools cannot mine.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref>
 
 == Resource pack changes ==
@@ -163,7 +163,7 @@ The resource pack retextures a large number of blocks. Changes with their own ar
 {{History line|0.6-alpha|All slabs can be crafted back into their full block; chiseled blocks move to the stonecutter.<br />Sand, red sand and packed mud support vegetation.}}
 {{History line|0.7-alpha|All "Nether" blocks renamed to "Hell".}}
 {{History line|1.0|End stone bricks became brown sandstone, and froglights became phosphor lamps.}}
-{{History line|1.12.1-alpha|Stone, terracotta, quartz and other blocks can no longer be cooked in an oven; they are kilned or blasted instead.<br />Crying obsidian counts as a nether portal frame.}}
+{{History line|1.12.1-alpha|Stone, terracotta, quartz and other blocks can no longer be cooked in an oven; they are kilned or blasted instead.<br />Crying obsidian is added to the nether portal frame tag, which only takes effect in a later Minecraft version.}}
 {{History line|1.12.2|Chains are climbable, and endermen can only pick up melons, pumpkins and TNT.<br />Vertical slab and poplar textures added.}}
 }}
 

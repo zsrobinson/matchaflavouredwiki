@@ -13,10 +13,10 @@ Two dirt slabs craft back into one block of dirt.
 
 == Behavior ==
 * Dirt slabs are mined fastest with a shovel.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/shovel.json}}</ref> As the vanilla petrified oak slab, they are also still mined quickly with a pickaxe.
-* They count as a path block for the [[Trailblaze]] enchantment, along with coarse dirt, gravel, dirt paths, packed mud and mud bricks.<ref>{{Source|MF_datapack/data/matcha/tags/block/is_path.json}}</ref>
+* They count as a path block for the [[Trailblaze]] enchantment, along with coarse dirt, gravel, dirt paths, packed mud, mud bricks and mud brick slabs and stairs.<ref>{{Source|MF_datapack/data/matcha/tags/block/is_path.json}}</ref>
 
 == Appearance ==
-Placed dirt slabs use four variations of the coarse dirt texture, each at a random rotation, so large areas do not tile visibly.<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/petrified_oak_slab.json}}</ref> A double dirt slab looks like a block of coarse dirt, which uses the same variations.
+Placed dirt slabs use four variations of the coarse dirt texture, each at a random rotation, so large areas do not tile visibly.<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/petrified_oak_slab.json}}</ref> A double dirt slab looks like a block of coarse dirt, using four of coarse dirt's five variations.
 
 == History ==
 {{History

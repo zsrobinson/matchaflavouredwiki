@@ -9,7 +9,7 @@ The developer explains the change in the introduction video: "Obols are the same
 {{Recipes}}
 
 === Advancements ===
-37 advancements reward obols, 85 in total. Most give 1 obol; the largest rewards are 10 obols.<ref>{{Source|MF_datapack/data/matcha/loot_table/advancement/obol_10.json}}</ref> Since {{Version|1.12.1-alpha}}, advancements that reward obols are revoked when the pack updates, so their rewards can be earned again.<ref>{{Cite changelog|1.12.1-alpha|quote=Advancemnts that give you rewards will be revoked from you on-update. (Except for fishing and Steal all prayers, becuase those are hard to get) That way, you can get the rewards}}</ref>
+37 advancements reward obols, 85 in total. Most give 1 obol; the largest rewards are 10 obols.<ref>{{Source|MF_datapack/data/matcha/loot_table/advancement/obol_10.json}}</ref> Since {{Version|1.12.1-alpha}}, most advancements that reward obols are revoked when the pack updates, so their rewards can be earned again. ''No More Fish in the Sea'', ''Demonic Emissary'' and ''Iconoclast'' are kept.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref><ref>{{Cite changelog|1.12.1-alpha|quote=Advancemnts that give you rewards will be revoked from you on-update. (Except for fishing and Steal all prayers, becuase those are hard to get) That way, you can get the rewards}}</ref>
 
 === Trading ===
 Only a few trades pay obols:

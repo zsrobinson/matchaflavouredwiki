@@ -12,7 +12,7 @@ Every food heals through a hidden {{EffectLink|Regeneration}} III effect that ha
 
 The first line of a food's tooltip shows the healing as red hearts, one heart per 2 health points (a half heart for an odd point). The lines below it list the visible effects in the pack's tooltip style, for example {{G|Armor}} Resistance (8:00).
 
-Because the healing is a status effect, it follows the vanilla rules for effects of the same level: eating a second food while the first one's healing is still running replaces the remaining healing only if the new duration is longer. Eating foods back to back therefore wastes part of the first one. The healing also stops if the player is already at full [[health]].
+Because the healing is a status effect, it follows the vanilla rules for effects of the same level: eating a second food while the first one's healing is still running replaces the remaining healing only if the new duration is longer. Eating foods back to back therefore wastes part of the first one. Healing that runs while the player is at full [[health]] is wasted.
 
 {{Diagram|Healing overlap|caption=A second pumpkin empanada eaten halfway through the first restarts the healing instead of adding to it, so 4 of the 16 health points are lost.}}
 

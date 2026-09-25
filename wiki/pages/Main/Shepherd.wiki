@@ -17,7 +17,7 @@ The '''Shepherd''' is a [[villager]] profession that sells wool by the stack, la
 All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/1/white_wool.json}}</ref>
 
 * At Novice level the shepherd offers all 16 colors of wool, 64 blocks for 1 obol each.
-* At Apprentice level it offers 2 of the 4 trades: the [[Shepherd's Shears]] (with Looting III, for 3 obols) or a lamb. Each lamb is only offered in a biome of the matching climate: the [[Livestock#Lambs|White Lamb]] in temperate biomes, the Black Lamb in cold biomes and the Brown Lamb in warm biomes.<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/2/baby_cold_sheep.json}}</ref>
+* At Apprentice level it offers 2 trades from a pool of 4: the [[Shepherd's Shears]] (with Looting III, for 3 obols) and three lambs. Each lamb is only offered in a biome of the matching climate: the [[Livestock#Lambs|White Lamb]] in temperate biomes, the Black Lamb in cold biomes and the Brown Lamb in warm biomes.<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/2/baby_cold_sheep.json}}</ref>
 * At Journeyman level it sells the [[Crook]].
 * The shepherd has no Expert or Master trades.<ref>{{Source|MF_datapack/data/matcha/villager_trade/shepherd/4/filler.json}}</ref>
 

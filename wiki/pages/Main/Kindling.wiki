@@ -5,7 +5,7 @@
 == Obtaining ==
 === Crafting ===
 {{Recipes}}
-Kindling is crafted from 2 sticks and 2 logs, and always comes out unlit.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json}}</ref> The vanilla campfire recipe (which used coal) is removed.
+Kindling is crafted from 2 sticks and 2 logs, and always comes out unlit.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/campfire.json}}</ref> The vanilla campfire recipe (which used coal or charcoal) is removed.
 
 === Breaking ===
 Kindling always drops itself, unlit, instead of charcoal.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/campfire.json}}</ref>

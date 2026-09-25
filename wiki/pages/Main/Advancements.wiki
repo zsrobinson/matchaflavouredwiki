@@ -1,4 +1,4 @@
-{{About|the advancements in Matcha Flavoured|the fish catalogue|Angler's Almanac}}
+{{About|the advancements in Matcha Flavoured|the fish catalog|Angler's Almanac}}
 '''Advancements''' in [[Matcha Flavoured]] replace the whole vanilla advancement tree. They guide the player through the pack's [[progression]], reward [[obol]]s and [[Crystal Heart|crystal hearts]], and, for seven milestones, lower the player's minimum [[health]]. The pack also uses several hundred hidden advancements internally, to trigger mechanics and unlock recipes.
 
 When the pack loads, it tells players: "If you get lost or confused, check the advancements".<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> The README gives the same advice to players stuck in the early game.<ref>{{Source|README.md}}</ref>
@@ -127,7 +127,7 @@ The End tab appears when the player first enters [[the End]].
 
 == Angler's Almanac ==
 {{Main|Angler's Almanac}}
-The Angler's Almanac tab is a catalogue of catches, added by imtlx in [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]]. Its root can never be completed by play. Obtaining the [[Angler's Almanac]] item runs a function that unlocks it, and every entry requires the root.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/get_almanac.json}}</ref> Each entry is hidden until the player hooks the matching item with a fishing rod, and its description gives the catch's rarity in stars. No entry gives a reward. In 1.12.2-beta the Hot Saltwater pufferfish entry can't be unlocked, because it checks for the model <code>matcha:pufferfish</code> while caught pufferfish keep the vanilla model.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>
+The Angler's Almanac tab is a catalog of catches, added by imtlx in [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]]. Its root can never be completed by play. Obtaining the [[Angler's Almanac]] item runs a function that unlocks it, and every entry requires the root.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/get_almanac.json}}</ref> Each entry is hidden until the player hooks the matching item with a fishing rod, and its description gives the catch's rarity in stars. No entry gives a reward. In 1.12.2-beta the Hot Saltwater pufferfish entry can't be unlocked, because it checks for the model <code>matcha:pufferfish</code> while caught pufferfish keep the vanilla model.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>
 
 {| class="wikitable"
 ! Category !! Groups !! Entries

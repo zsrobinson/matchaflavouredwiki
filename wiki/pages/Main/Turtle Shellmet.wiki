@@ -1,9 +1,9 @@
 {{Vanilla|Turtle Shell}}
 {{Infobox auto}}
-The '''turtle shellmet''' is the renamed turtle shell helmet. Since turtle scutes are now [[Divine Fragment|divine fragments]], it cannot be crafted.
+The '''turtle shellmet''' is the renamed turtle shell helmet. The pack removes its vanilla recipe, so it cannot be crafted.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
 == Obtaining ==
-A baby turtle drops a shellmet instead of a scute when it grows up.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/turtle_grow.json}}</ref> Any plain turtle scute a player picks up is also exchanged for a shellmet.<ref>{{Source|MF_datapack/data/matcha/function/remove_vanilla_items/turtle_scute.mcfunction}}</ref>
+A baby turtle drops a shellmet instead of a scute when it grows up.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/turtle_grow.json}}</ref> Outside Creative mode, any plain turtle scute a player picks up is also exchanged for a shellmet.<ref>{{Source|MF_datapack/data/matcha/function/remove_vanilla_items/turtle_scute.mcfunction}}</ref>
 
 == Usage ==
 It keeps vanilla stats (2 armor, 275 durability, Water Breathing). The vanilla repair tag still names turtle scutes, which are now divine fragments.

@@ -5,7 +5,7 @@
 |type=Map
 |renewable=Yes
 }}
-'''Explorer maps''' are filled maps that mark the location of a structure. In Matcha Flavoured they are sold by the [[Archaeologist]] and the [[Wandering Trader]] for a single [[Obol]] each, with no compass needed. The pack adds maps to many more structures than vanilla ''Minecraft'', including its own [[Overgrown Abbey]] and [[Papal Outpost]].
+'''Explorer maps''' are filled maps that mark the location of a structure. In Matcha Flavoured they are sold by the [[Archaeologist]] and the [[Wandering Trader]] for a single [[Obol]] each (the Overgrown Abbey map costs a copy of [[Paradise Lost]] or [[The Divine Comedy]] instead), with no compass needed. The pack adds maps to many more structures than vanilla ''Minecraft'', including its own [[Overgrown Abbey]] and [[Papal Outpost]].
 
 == Obtaining ==
 === Archaeologist ===
@@ -65,7 +65,7 @@ Buried treasure maps are found in shipwreck map chests and ocean ruin chests, as
 == Behavior ==
 When the villager reaches the level that offers a map, the game searches for the nearest structure of that type within 100 chunks. If one is found, the map is drawn with the structure's marker; if not, that trade is left out of the villager's offers.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/4/ancient_city.json}}</ref> Every copy bought from the same villager leads to the same structure.
 
-Compared with vanilla, where a cartographer's explorer maps cost 8 to 14 emeralds plus a compass and can be bought a few times before restocking, every Matcha Flavoured map costs a single obol.
+Compared with vanilla, where a cartographer's explorer maps cost 8 to 14 emeralds plus a compass and can be bought a few times before restocking, every other Matcha Flavoured map costs a single obol, and the Overgrown Abbey map costs a copy of [[Paradise Lost]] or [[The Divine Comedy]].
 
 == History ==
 {{History|

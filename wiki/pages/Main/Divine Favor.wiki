@@ -7,7 +7,7 @@ A '''Divine Favor''' is the rarest magic material in [[Matcha Flavoured]]. It re
 The first time each player kills the [[Ender Dragon]], a Divine Favor appears at the center of [[The End]], at height 100 above the exit portal. The item never despawns.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/first_dragon_killed_reward.mcfunction}}</ref> The reward comes from the player's "Iconoclast" advancement, so each player can earn it once, and the killing blow must come from a player.<ref>{{Source|MF_datapack/data/matcha/advancement/end/kill_dragon.json}}</ref> The same kill makes the surface safe from hostile mobs; see [[Surface]].
 
 === Wither ===
-The [[Wither]] drops a Divine Favor, as it drops a nether star in vanilla. Withers can only be spawned on the surface of the Overworld (in view of the sky and at height 63 or above); one spawned anywhere else is removed at once, along with any Divine Favor it would leave.<ref>{{Source|MF_datapack/data/matcha/predicate/wither/invalid_wither_spawn.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/forbid_wither.mcfunction}}</ref>
+The [[Wither]] drops a Divine Favor, as it drops a nether star in vanilla. Withers can only be spawned on the surface of the Overworld (in view of the sky and at height 63 or above); one spawned anywhere else is removed about a second later, along with any Divine Favor it would leave.<ref>{{Source|MF_datapack/data/matcha/predicate/wither/invalid_wither_spawn.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/forbid_wither.mcfunction}}</ref>
 
 === Crafting ===
 {{Recipes}}

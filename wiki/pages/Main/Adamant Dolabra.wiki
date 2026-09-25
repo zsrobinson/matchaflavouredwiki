@@ -20,7 +20,7 @@ It breaks pickaxe and axe blocks at speed {{Value|Adamant Dolabra|miningspeed}} 
 Matcha Flavoured adds beds, candles, cacti and honeycomb blocks to the blocks that axes break quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/axe.json}}</ref>
 
 === Intrinsics ===
-Efficiency I, Unbreaking II and smelting. The smelting intrinsic makes mined blocks drop their smelted form where the block's loot table supports it: ores drop ingots or [[silver bullion]], logs drop charcoal, sand drops glass and cobblestone drops [[limestone]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sand.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
+Efficiency I, Unbreaking II and smelting. The smelting intrinsic makes mined blocks drop their smelted form where the block's loot table supports it: metal ores drop ingots or [[silver bullion]], quartz deposits drop glass, logs drop charcoal, sand drops glass and cobblestone drops [[limestone]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/sand.json}}</ref> Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
 === Combat ===
 It deals {{Value|Adamant Dolabra|damage}} damage at an attack speed of {{Value|Adamant Dolabra|attackspeed}}. Unlike the adamant axe it does not inflict Weakness.

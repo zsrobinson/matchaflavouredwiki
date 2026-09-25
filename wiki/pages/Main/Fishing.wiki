@@ -92,7 +92,7 @@ Deep Dark and Sulfur Caves are also in the pack's <code>#minecraft:unused</code>
 In 1.12.2-beta the fish bones from the Sulfur Caves table have the wrong item model, so they show the missing-model texture and don't stack with fish bones from the junk table. See [[Fish Bones]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
 
 === Other biomes ===
-Biomes in <code>#minecraft:unused</code> have no fish: Mushroom Fields, the [[Hell]] biomes and [[The End]] biomes. Their junk entry has weight 85, so nearly every catch there is junk (see [[#Choosing the catch]]).<ref>{{Cite changelog|1.10|quote=Fishing outside of pre-designated biomes no longer gives insane loot (junk pool at 85 weight as fallback)}}</ref>
+The other biomes in <code>#minecraft:unused</code> have no fish: Mushroom Fields, the [[Hell]] biomes and [[The End]] biomes. Their junk entry has weight 85, so nearly every catch there is junk (see [[#Choosing the catch]]).<ref>{{Cite changelog|1.10|quote=Fishing outside of pre-designated biomes no longer gives insane loot (junk pool at 85 weight as fallback)}}</ref>
 
 Snowy Beach is in no biome tag at all, so only the base junk (10) and treasure (5) entries apply there. A catch in open water at a snowy beach is treasure one time in three, and more often with Luck of the Sea (see [[#Choosing the catch]]). This looks like an oversight rather than a design choice.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
 
@@ -103,7 +103,7 @@ Junk is mostly lily pads, [[Sturdy Leather|leather]], [[Fish Bones|fish bones]],
 Treasure is [[Obol]]s, enchanted fishing rods, [[Hell-Bound Book]]s, goat horns, angler pottery sherds, [[Crystal Heart]]s and rarely a chest of buried treasure.
 
 == Selling fish ==
-The [[Fisherman]] is the only villager who buys items from the player. He pays 1 Obol for a set number of caught fish, depending on rarity (see the tables above). Fish of a higher rarity only become sellable as the Fisherman levels up, so trading the common fish is what unlocks the rare ones.<ref>{{Cite changelog|0.5-alpha|quote=The Fisherman selling system has been reworked so you have to sell lower-tier fish before you can sell higher tier fish, this was to prevent fish-related "spoilers"}}</ref> At Novice level he sells the [[Angler's Almanac]] for 1 Obol.
+The [[Fisherman]] is the only villager who buys fish. He pays 1 Obol for a set number of caught fish, depending on rarity (see the tables above). Fish of a higher rarity only become sellable as the Fisherman levels up, so trading the common fish is what unlocks the rare ones.<ref>{{Cite changelog|0.5-alpha|quote=The Fisherman selling system has been reworked so you have to sell lower-tier fish before you can sell higher tier fish, this was to prevent fish-related "spoilers"}}</ref> At Novice level he sells the [[Angler's Almanac]] for 1 Obol.
 
 {{Data/Trades/Fisherman}}
 

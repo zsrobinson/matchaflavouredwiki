@@ -5,7 +5,7 @@
 * '''Difficulty''' is a world setting. On Normal, the first player whose minimum hearts fall to 5 switches the whole world to Hard.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/decrease_minimum_hearts.mcfunction}}</ref> See [[Difficulty]].
 * '''Ender Dragon''': each player who kills the dragon for the first time earns a [[Divine Favor|divine favor]], even if the first killer is offline, and the [[Surface|safe surface]] applies to everyone.
 * '''Joining players''': every second, the pack checks for players who have not been set up for the current version. New players get their scoreboards, and players from older versions have recipe unlocks and reward advancements reset.<ref>{{Source|MF_datapack/data/matcha/function/setup/player_update_check_loop.mcfunction}}</ref> Keep inventory is set when a new player joins.
-* Equipment effects such as bloodrage, [[Anemos]], electrum, adamant and the Wither's heart effect apply only to the player concerned, after fixes in 1.12.1-alpha and after 1.12.2.
+* Equipment effects such as bloodrage, [[Anemos]], electrum and adamant apply only to the player concerned since fixes in 1.12.1-alpha. In 1.12.2-beta the [[Wither effect]]'s heart timer is still shared: each second a player is withered, every online player's count goes up. <ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/check_wither_timer.mcfunction}}</ref> It is listed on [[Known bugs]], and an upcoming update makes it per player (see History).
 
 == Sleeping ==
 {{Main|Sleeping}}
@@ -20,7 +20,8 @@ Vanilla sleep skipping is disabled (<code>players_sleeping_percentage</code> is 
 |{{History line|1.10|Multiplayer support added: crystal hearts, anvils, anvil experience and amber earrings fixed for multiplayer; player update tracking.}}
 {{History line|1.12|Fixed armor performance issues in multiplayer.}}
 {{History line|1.12.1-alpha|Clay fetishes work for all players; bloodrage, Anemos, adamant and electrum apply only to their user.}}
-{{History line|1.12.2|Heart loss is per player. Multiplayer improvements by Linkershim; dynamic multiplayer sleep by milo256. After release, the Wither heart effect no longer spreads to all players.}}
+{{History line|1.12.2|Heart loss is per player. Multiplayer improvements by Linkershim; dynamic multiplayer sleep by milo256.}}
+{{History line|Upcoming|2=The Wither heart effect no longer spreads to all players.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/check_wither_timer.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
 }}
 
 == References ==

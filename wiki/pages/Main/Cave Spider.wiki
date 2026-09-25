@@ -13,7 +13,7 @@
 A '''cave spider''' in [[Matcha Flavoured]] is very fast but very fragile, with as little as 1 heart of health.
 
 == Spawning ==
-Cave spiders appear from spawners as in vanilla, and from spawners in [[Abbey|abbeys]]. Abbey cave spiders drop nothing. Like other non-undead mobs, a cave spider that appears in the Overworld where it can see the sky is removed.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref>
+Cave spiders appear from spawners as in vanilla, and from spawners in [[Abbey|abbeys]]. Cave spiders from the abbey's monster spawner drop nothing; those from its trial spawners drop normally. Like other non-undead mobs, a cave spider that appears in the Overworld where it can see the sky is removed.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/check_mob_spawn.mcfunction}}</ref>
 
 == Drops ==
 {{Data/Loot/minecraft/entities/cave_spider}}

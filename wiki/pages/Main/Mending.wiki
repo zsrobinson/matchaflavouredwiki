@@ -15,7 +15,7 @@
 * Random enchanted books in chests and fishing treasure, and trial chamber vaults.
 
 == Behavior ==
-Mending repairs the item when the player picks up experience orbs, as in vanilla. The pack resets every player's experience to 0 each tick, which does not stop Mending from using the orbs, but the player never keeps experience for themselves.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction}}</ref> Items can also be repaired at an [[anvil]] indefinitely, since the pack removes the prior-work penalty; see [[Repairing]].
+Mending repairs the item when the player picks up experience orbs, as in vanilla. The pack resets players' experience to 0 each tick, except for a short window after they use an anvil; this does not stop Mending from using the orbs, but players do not keep the experience they collect.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction}}</ref> Items can also be repaired at an [[anvil]] indefinitely, since the pack removes the prior-work penalty; see [[Repairing]].
 
 Its anvil cost multiplier is 1, down from 4.
 

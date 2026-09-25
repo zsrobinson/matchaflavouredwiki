@@ -7,7 +7,7 @@ A '''chest''' is a block that stores 27 stacks of items, or 54 when two are plac
 {{Recipes}}
 Eight logs (any log, wood, stem or hyphae, stripped or not) in a ring make 4 chests. Eight planks still make one chest, as in vanilla; both recipes share one entry in the recipe book.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/chest_from_logs.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/vanilla_chest_from_planks.json}}</ref> Picking up any log unlocks the log recipe.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/logs.json}}</ref>
 
-Since a log makes four planks, the log recipe costs half as much wood as the plank recipe. The design video names it among the recipe changes meant to be kinder to players.<ref>{{Cite video|quote=Six and chests can be made directly from logs.}}</ref>
+Since a log makes four planks, the log recipe costs the same wood as the plank recipe (two logs per chest); it only skips cutting the logs into planks. The design video names it among the recipe changes meant to be kinder to players.<ref>{{Cite video|quote=Six and chests can be made directly from logs.}}</ref>
 
 == Usage ==
 {{Uses}}

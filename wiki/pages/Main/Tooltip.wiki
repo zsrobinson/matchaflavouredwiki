@@ -15,7 +15,7 @@ Weapons, tools and armor list their stats as dark green lines. Each is a symbol 
 |-
 | {{G|Armor|size=16px}} || Armor points || armor
 |-
-| {{G|Toughness|size=16px}} || Armor toughness || [[Diamond equipment|diamond]] and better armor
+| {{G|Toughness|size=16px}} || Armor toughness || [[Steel equipment|steel]], [[Diamond equipment|diamond]] and better armor
 |-
 | {{G|Knockback resistance|size=16px}} || Knockback resistance || [[Steel equipment|steel]] and [[Adamant equipment|adamant]] armor
 |-
@@ -60,11 +60,11 @@ Lines in color below the stats are [[intrinsic]] enchantments, which the pack st
 |-
 | {{G|Smelting|size=16px}} || Smelts mined blocks || adamant tools
 |-
-| {{G|Fortune|size=16px}} || Fortune III || electrum tools
+| {{G|Fortune|size=16px}} || Fortune (III; II on the mattock) || electrum tools
 |-
 | {{G|Health|size=16px}} ∞, {{G|Mining speed|size=16px}} ∞, {{G|Fire|size=16px}} ∞, {{G|Water|size=16px}} ∞ || Constant Regeneration, Haste, Fire Resistance, Conduit Power || [[jewelry]]
 |}
-"Set Bonus:" introduces lines that need all four armor pieces, and "Per Equipment Bonus:" lines that stack with each piece worn. See [[Set bonus]]. "Elytra Bonus:" marks the bonus of the [[Elytra#Shakudo Elytra|shakudo elytra]].
+The lines for the adamant tool, electrum tool and shakudo weapon intrinsics show raw translation keys instead of their symbols; see [[Known bugs]]. "Set Bonus:" introduces lines that need all four armor pieces, and "Per Equipment Bonus:" lines that stack with each piece worn. See [[Set bonus]]. "Elytra Bonus:" marks the bonus of the [[Elytra#Shakudo Elytra|shakudo elytra]].
 
 == Food and potions ==
 The first line of a [[food]]'s tooltip shows the healing as red hearts, one heart per 2 health points. The lines below list the effects with their symbol and duration, for example {{G|Armor}} Resistance ({{Value|Pumpkin Curry|duration|effect=Resistance|format=clock}}) on a [[Pumpkin Curry|pumpkin curry]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref> Several effects share a symbol:
