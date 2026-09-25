@@ -103,6 +103,8 @@ the swap mid-way.
   `Gadget-mcw-*.css` plus `site/assets/mcw/`). It uses curl, because the site's bot protection rejects
   Python's TLS client, and it resolves `filepath://` URLs. Don't edit the vendored files; override in
   `MediaWiki:Common.css` or `Vector.css`.
+  The vendored copies lose minecraft.wiki's `.mw-parser-output` prefix, so a vendored rule can lose to Vector's
+  own (`.mp-title { margin: 0 }` did, and every main-page box started ~17px low); restore the prefix in the override.
 - **Dark mode:** it uses minecraft.wiki's classes (`body.wgl-theme-dark`). `site/theme-boot.js` is inlined
   in `<head>` to avoid a light flash. `MediaWiki:Gadget-mfwShell.js` (theme toggle `#pt-dm-toggle`,
   collapsible sidebar) is shared by the live wiki and the static export. Glyph images are drawn dark and

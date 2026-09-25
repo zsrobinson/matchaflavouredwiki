@@ -10,10 +10,15 @@ Welcome to the unofficial encyclopedia of '''[[Matcha Flavoured]]''' (also writt
 * <span style="white-space: nowrap">version '''[[Matcha Flavoured {{Current version}}|{{Current version}}]]'''</span>
 </div>
 
-<div class="mp-button-wrapper">
-{{Mainpage button|progressive=1|https://modrinth.com/datapack/matcha-flavoured|Download}}
-{{Mainpage button|https://github.com/kleiwright/matcha-flavoured|Source}}
-{{Mainpage button|1=https://www.youtube.com/watch?v=zyRH8W58fRI|2=Design video}}
+<div class="mfw-button-rows">
+<div class="mp-button-wrapper mfw-button-row">
+{{Mainpage button|progressive=1|icon=modrinth|https://modrinth.com/datapack/matcha-flavoured|Download}}
+{{Mainpage button|icon=discord|class=mp-social-discord|https://discord.gg/TEWjNzjvXM|Discord}}
+</div>
+<div class="mp-button-wrapper mfw-button-row">
+{{Mainpage button|icon=github|https://github.com/kleiwright/matcha-flavoured|Source}}
+{{Mainpage button|icon=youtube|1=https://www.youtube.com/watch?v=zyRH8W58fRI|2=Video}}
+</div>
 </div>
 </div>
 
