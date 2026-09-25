@@ -20,7 +20,7 @@ Welcome to the unofficial encyclopedia of '''[[Matcha Flavoured]]''' (also writt
 <div class="mp-left">
 
 <div class="mp-highlight-wrapper">
-<h2 class="sr-only">Latest release</h2>
+<h2 class="sr-only">Latest releases</h2>
 {{Mainpage update
 | name = [[Matcha Flavoured {{Current version}}|Progression, Polish, Prerelease]]
 | tag = Latest
@@ -30,7 +30,18 @@ Welcome to the unofficial encyclopedia of '''[[Matcha Flavoured]]''' (also writt
 * {{ItemLink|Electrum Alloy}}
 * {{ItemLink|Adamant Alloy}}
 | bottom = Matcha Flavoured <b class="mp-highlight-version">{{Current version}}</b> for ''Minecraft'' <b class="mp-highlight-version">26.2</b>
-}}
+}}{{#ifeq: {{Stable version}} | {{Current version}} || {{Mainpage update
+| name = [[Matcha Flavoured {{Stable version}}|Armour Performance Issue Hotfix]]
+| tag = Stable
+| tagtype = stable
+| bg = Main page background (lake).jpg
+| features =
+* [[Multiplayer]] armor lag fixed
+* Gentler [[husk]]s
+* Optional [[Darkness|true darkness]]
+* Brighter [[Hell]]
+| bottom = Matcha Flavoured <b class="mp-highlight-version">{{Stable version}}</b> for ''Minecraft'' <b class="mp-highlight-version">26.2</b>
+}} }}
 </div>
 
 <div class="mp-section">

@@ -125,8 +125,9 @@ Read `wiki/STYLE.md`, `wiki/AGENT_BRIEF.md` and `wiki/PAGES.md` first; they are 
   behavior, the history row gets the version, and the citation loses its `at=`.
 - **A new release:** create the `Matcha Flavoured <version>` page modeled on the existing version pages,
   add it to "Version history", update "Upcoming features", "Changes from vanilla" and the main page
-  highlight (`wiki/pages/Main/Matcha Flavoured Wiki.wiki`: name, features, tag). `{{Current version}}`
-  updates itself.
+  highlights (`wiki/pages/Main/Matcha Flavoured Wiki.wiki`: name, features, tag; a full release also
+  replaces the "Stable" card's name and features). `{{Current version}}` and `{{Stable version}}` update
+  themselves, and the Stable card hides while both are the same version.
 - **New video:** add design reasoning and history it provides, cited with
   `{{Cite video|id=<id>|title=<title>|quote=...}}`. The code still wins over anything said in a video.
 - Add newly found pack bugs to "Known bugs".
