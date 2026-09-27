@@ -13,6 +13,8 @@ Matcha Flavoured's own branding and component styles on top. Rerun to pick up up
 changes; the result is committed. minecraft.wiki content is CC BY-NC-SA 3.0.
 """
 import os
+import json
+import hashlib
 import re
 import urllib.parse
 import urllib.request
@@ -22,6 +24,8 @@ ASSETS = os.path.join(ROOT, 'site', 'assets', 'mcw')
 PAGES = os.path.join(ROOT, 'wiki', 'pages', 'MediaWiki')
 UA = {'User-Agent': 'Mozilla/5.0 (Macintosh) AppleWebKit/537.36 Chrome/130 Safari/537.36'}
 BASE = 'https://minecraft.wiki'
+MANIFEST = os.path.join(ROOT, 'tools', 'vendor_mcw_sources.json')
+FETCHED = {}
 
 
 def get(url, binary=False):
@@ -30,6 +34,7 @@ def get(url, binary=False):
     r = subprocess.run(['curl', '-sfL', '-A', UA['User-Agent'], url], capture_output=True, timeout=120)
     if r.returncode != 0:
         raise IOError('HTTP error for %s' % url)
+    FETCHED[url] = {'sha256': hashlib.sha256(r.stdout).hexdigest()}
     return r.stdout if binary else r.stdout.decode('utf-8')
 
 
@@ -90,6 +95,22 @@ def main():
             chunks.append('\n/* ===== %s ===== */\n' % src + localise(fn(src)))
         with open(os.path.join(PAGES, out), 'w', encoding='utf-8') as f:
             f.write('\n'.join(chunks))
+    with open(MANIFEST, encoding='utf-8') as f:
+        manifest = json.load(f)
+    for name in sorted(os.listdir(ASSETS)):
+        rel = 'site/assets/mcw/' + name
+        manifest['files'].setdefault(rel, {
+            'source': BASE + '/w/File:' + urllib.parse.quote(name),
+            'upstream_revision': None,
+            'license': 'unverified; see source File page',
+        })
+    for rel, entry in manifest['files'].items():
+        with open(os.path.join(ROOT, rel), 'rb') as f:
+            entry['sha256'] = hashlib.sha256(f.read()).hexdigest()
+    manifest['last_fetch'] = FETCHED
+    with open(MANIFEST, 'w', encoding='utf-8') as f:
+        json.dump(manifest, f, indent=2, ensure_ascii=False, sort_keys=True)
+        f.write('\n')
     print('images:', len(os.listdir(ASSETS)))
 
 

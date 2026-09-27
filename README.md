@@ -3,7 +3,7 @@
 An encyclopedia for [Matcha Flavoured](https://modrinth.com/datapack/matcha-flavoured), the
 Minecraft datapack by Klei Wright. It's a MediaWiki site laid out and written like the
 [Minecraft Wiki](https://minecraft.wiki/), set up after
-[matchaflavoured.wiki](https://matchaflavoured.wiki/) (the community wiki, whose logo, skin setup
+[matchaflavoured.wiki](https://matchaflavoured.wiki/) (the community wiki, whose skin setup
 and Lua modules it reuses), and written entirely from the pack's **source code, official release
 notes and the developer's videos**. No other wiki was used as a source. The articles are generated
 by a large language model and checked against the sources in a second pass; the data tables are
@@ -147,9 +147,9 @@ It runs as a daily Claude Code cloud routine with the prompt "Follow AUTOPILOT.m
 
 ## Licence
 
-The wiki's text is released under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/),
-the same licence as Matcha Flavoured. Textures and icons come from the Matcha Flavoured resource
-pack (CC BY-NC-SA 4.0, by Klei Wright and contributors) and from vanilla *Minecraft* where the pack
-does not replace them. The skin styling, Lua modules and interface images are adapted from
-matchaflavoured.wiki and the Minecraft Wiki. This is an unofficial fan project and is not
-affiliated with Mojang or with the pack's author.
+Original wiki text is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Third-party code, stylesheets, fonts, and images retain their respective licenses. See
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for sources, attribution, modifications,
+and component-specific terms, including outstanding provenance checks.
+
+This is an unofficial fan project and is not affiliated with Mojang or with the pack's author.

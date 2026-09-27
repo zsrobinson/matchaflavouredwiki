@@ -3,8 +3,7 @@
 - Share cards: one 1200x630 image per indexable page, which link previews (Discord, Reddit,
   iMessage, X, Slack) show as og:image. The page's item icon sits in an inventory slot on a panel
   in the pack's brown inventory palette, next to its title in the game's font.
-- Site icons: the wiki logo's pixel art at exact multiples of its pixels. Google only shows a
-  favicon whose size is a multiple of 48px, and the logo's own file is 135x135.
+- Site icons: the complete pixel-art logo, fitted into square icons at multiples of 48px.
 
 Output depends only on its inputs (title, image bytes, fonts), so an unchanged page gets an
 identical card and a deploy uploads only the cards that changed.
@@ -15,7 +14,7 @@ import json
 import os
 import unicodedata
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageOps
 
 import images  # the pack's palette, panels and textures (tools/images.py)
 
@@ -31,32 +30,38 @@ CARD_DIR = 'og'
 
 # --- the wiki logo -----------------------------------------------------------------
 def logo_art():
-    """The logo's own 18x17 pixel art. Wiki.png draws it at 6x from (14, 17)."""
-    im = Image.open(LOGO).convert('RGBA')
-    art = Image.new('RGBA', (18, 17))
-    for j in range(17):
-        for i in range(18):
-            art.putpixel((i, j), im.getpixel((14 + 6 * i + 3, 17 + 6 * j + 3)))
-    return art
+    """The complete source artwork, without assumptions about its size or pixel grid."""
+    with Image.open(LOGO) as im:
+        return im.convert('RGBA')
+
+
+def fit_logo(size):
+    """Fit the drawing into a transparent square without cropping or stretching."""
+    art = logo_art()
+    scale = size // max(art.size)
+    if scale >= 1:
+        art = art.resize((art.width * scale, art.height * scale), Image.Resampling.NEAREST)
+    else:
+        art = ImageOps.contain(art, (size, size), Image.Resampling.LANCZOS)
+    square = Image.new('RGBA', (size, size))
+    square.alpha_composite(art, ((size - art.width) // 2, (size - art.height) // 2))
+    return square
 
 
 def site_icons(out):
     """favicon.ico, PNG icons at 48px multiples and the Apple touch icon (linked by ICON_TAGS)."""
-    art = logo_art()
-    square = Image.new('RGBA', (24, 24), (0, 0, 0, 0))
-    square.alpha_composite(art, (3, 4))
     os.makedirs(os.path.join(out, 'assets'), exist_ok=True)
     for size in (48, 96, 192):
-        square.resize((size, size), Image.NEAREST).save(os.path.join(out, 'assets', 'icon-%d.png' % size), optimize=True)
+        fit_logo(size).save(os.path.join(out, 'assets', 'icon-%d.png' % size), optimize=True)
     # browsers ask for /favicon.ico whatever the page says
-    square.resize((48, 48), Image.NEAREST).save(os.path.join(out, 'favicon.ico'), sizes=[(16, 16), (32, 32), (48, 48)])
+    fit_logo(48).save(os.path.join(out, 'favicon.ico'), sizes=[(16, 16), (32, 32), (48, 48)])
     # iOS draws a transparent touch icon on black: give it the pack's panel colour
     touch = Image.new('RGBA', (180, 180), images.PANEL['base'] + (255,))
-    touch.alpha_composite(art.resize((144, 136), Image.NEAREST), (18, 22))
+    touch.alpha_composite(fit_logo(144), (18, 18))
     touch.convert('RGB').save(os.path.join(out, 'apple-touch-icon.png'), optimize=True)
 
 
-# what every page's <head> links to, in place of MediaWiki's single 135px favicon
+# what every page's <head> links to, in place of MediaWiki's single PNG favicon
 ICON_TAGS = ('<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">\n'
              '<link rel="icon" type="image/png" sizes="96x96" href="/assets/icon-96.png">\n'
              '<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">\n'
@@ -150,8 +155,11 @@ def card(title, image=None, label=None, subtitle=None):
             # text colour, drawn dark for the wiki's light pages; on the card, the title's white,
             # and smaller, since a glyph fills its whole square
             art = Image.composite(Image.new('RGBA', art.size, TEXT + (255,)), art, art.getchannel('A'))
-        f = (160 if glyph else 256) // max(art.size)
-        art = art.resize((art.width * f, art.height * f), Image.NEAREST)
+        if pic is None:
+            art = fit_logo(256)
+        else:
+            f = (160 if glyph else 256) // max(art.size)
+            art = art.resize((art.width * f, art.height * f), Image.NEAREST)
         cx, cy = 10 * PX + (48 * PX - art.width) // 2, 27 * PX + (48 * PX - art.height) // 2
         c.alpha_composite(art, (cx, cy))
         left = 66 * PX
@@ -189,7 +197,7 @@ def card(title, image=None, label=None, subtitle=None):
     # the site, bottom right: the logo and the wiki's name
     name = 'Matcha Flavoured Wiki'
     nx = W - 8 * PX - text_width(name) * 3
-    c.alpha_composite(logo_art().resize((36, 34), Image.NEAREST), (nx - 48, H - 8 * PX - 30))
+    c.alpha_composite(fit_logo(36), (nx - 48, H - 8 * PX - 30))
     draw_text(c, name, nx, H - 8 * PX - 24, 3, MUTED)
     buf = io.BytesIO()
     c.convert('RGB').save(buf, 'PNG', optimize=True)

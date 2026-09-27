@@ -13,12 +13,15 @@ The wiki keeps up with the pack on its own. Every day it checks the pack's repos
 It was started by one player who wanted a complete reference for their own game. Mistakes are still possible. If you find one, use the '''Talk''' tab on the page to report it.
 
 == Credits ==
-* This wiki was set up after [https://matchaflavoured.wiki/ matchaflavoured.wiki], with the same skin (legacy Vector) and URL scheme. Its logo, which is also the site's icon, is matchaflavoured.wiki's. 14 of this wiki's Lua modules (Addcommas, AnimateSprite, Array, Hatnote, Inventory slot, Mainonly, Mw.html extension, Paramtest, ProcessArgs, Round, SpriteFile, TSLoader, UI and Yesno) and its animated-icons script are copied from it. matchaflavoured.wiki in turn took those modules from the [https://minecraft.wiki/ Minecraft Wiki], the [https://runescape.wiki/ RuneScape Wiki] and [https://en.wikipedia.org/ Wikipedia]; most modules name their origin at the top.
-* The skin's stylesheets and interface images are the Minecraft Wiki's own.
-* Textures, icons, station screens and the picture behind the main page's release banner (a view of the title screen's panorama) come from the Matcha Flavoured resource pack, and from vanilla ''Minecraft'' where the pack does not replace them. See [[Credits]] for the people behind the pack.
+* This wiki was set up after [https://matchaflavoured.wiki/ matchaflavoured.wiki]. Shared Lua modules and an animation script were obtained through it, with origins in the [https://minecraft.wiki/ Minecraft Wiki], [https://runescape.wiki/ RuneScape Wiki] and [https://en.wikipedia.org/ Wikipedia].
+* The skin's stylesheets and interface images come from the Minecraft Wiki.
+* The logo and site icons use a pixel-art logo by this wiki's maintainer.
+* Textures, item icons, station screens and the main page's panorama come from the Matcha Flavoured resource pack, and from vanilla ''Minecraft'' where the pack does not replace them. See [[Credits]] for the people behind the pack.
+
+Sources, licenses, modifications and outstanding provenance checks are recorded in the [https://github.com/zsrobinson/matchaflavouredwiki/blob/main/THIRD_PARTY_NOTICES.md third-party notices on GitHub].
 
 == License ==
-Matcha Flavoured is released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license, and so are the textures and data this wiki reproduces. matchaflavoured.wiki uses the same license. Wiki text is shared under the same terms.
+Original wiki text is shared under [https://creativecommons.org/licenses/by-nc-sa/4.0/ Creative Commons Attribution-NonCommercial-ShareAlike 4.0]. Third-party code, stylesheets, fonts and images retain their respective licenses; see the third-party notices above.
 
 == See also ==
 * [[Matcha Flavoured Wiki:Contributing]]

@@ -1210,7 +1210,7 @@ def input_hash():
     pinned pack and Minecraft versions (which fix every texture under source/)."""
     h = hashlib.sha1()
     for rel in ('tools/images.py', 'build/data.json', 'tools/extra_textures.txt', 'tools/source.lock',
-                'tools/mc_version.txt'):
+                'tools/mc_version.txt', 'site/assets/Wiki.png'):
         path = os.path.join(ROOT, rel)
         h.update(rel.encode() + b'\0')
         if os.path.exists(path):
