@@ -591,25 +591,57 @@ def all_ingredient_names(r):
     return names
 
 
-COMPACT_AFTER = 40
+COMPACT_AFTER = 40  # kept as the unit GRID_SLOT_BUDGET is calibrated against, see below
+
+
+def recipe_slots(r):
+    """The number of inventory slots a recipe's crafting-grid picture draws (Module:Station emits one
+    span, and one Module:Inventory slot tooltip, per filled position -- the actual weight the 2 MB
+    include limit charges for). A full 3x3 shaped or shapeless recipe (9 ingredient slots + output) is
+    far heavier than a smelting or stonecutting recipe (a single input + output)."""
+    t = r['type'].split(':')[-1]
+    if t == 'crafting_shaped':
+        # every filled cell gets its own slot span, even a repeat of the same ingredient (recipe_ui above)
+        n = sum(1 for row in r['pattern'] for ch in row if ch != ' ')
+    elif t == 'crafting_shapeless':
+        n = min(len(r['ingredients']), 9)
+    elif t == 'stonecutting':
+        n = 2  # input, plus the selected-recipe icon Module:Station draws beside the output
+    elif t == 'smithing_transform':
+        n = sum(1 for k in ('template', 'base', 'addition') if r.get(k))
+    else:  # smelting, smoking, blasting, campfire_cooking: a single input
+        n = 1
+    return n + 1  # + the output slot
+
+
+# A flat "at most 40 recipes" cutoff either wastes budget on a table full of cheap recipes (smelting,
+# stonecutting) or lets a table of heavy 3x3 shaped recipes through unchecked: the recipe *count* was
+# never what could push the page over the limit, the number of rendered slots was (see recipe_slots).
+# Budgeting by slots instead of by recipe fixes that without guessing a new ceiling: 40 worst-case
+# (10-slot) recipes is exactly the case the flat cutoff already proved safe (a table of 40 full 3x3
+# recipes renders fine today), so no table can end up heavier than one already known to be safe.
+# Recipes are kept in their original order and counted against the budget one at a time, so a long
+# table (Steel Alloy, Glass, Iron Ingot, Stick, Potion, Tallow, Wax, the plank families, ...) shows as
+# many pictures as fit instead of none at all once it passes 40 recipes.
+GRID_SLOT_BUDGET = COMPACT_AFTER * 10
 
 
 def recipe_table(recipes, first_col):
     if not recipes:
         return ''
-    # Past ~40 recipes the crafting grids push the page over MediaWiki's 2 MB include limit (the table
-    # then doesn't render at all) and make it very heavy, so long lists name the ingredients only.
-    grids = len(recipes) <= COMPACT_AFTER
     rows = []
+    budget = GRID_SLOT_BUDGET
     for r in recipes:
         origin = '' if r['origin'] == 'pack' else ' <small>(vanilla recipe)</small>'
         first = first_col(r)
-        if grids:
+        weight = recipe_slots(r)
+        if weight <= budget:
+            budget -= weight
             rows.append('|-\n| %s%s\n| %s\n| %s' % (first, origin, recipe_ingredients(r), recipe_ui(r)))
         else:
-            rows.append('|-\n| %s%s\n| %s' % (first, origin, recipe_ingredients(r)))
+            rows.append('|-\n| %s%s\n| %s\n| —' % (first, origin, recipe_ingredients(r)))
     collapsible = ' mw-collapsible' if len(recipes) > 12 else ''
-    head = '{| class="wikitable recipe-table%s"\n! %s !! Ingredients%s' % (collapsible, 'Name', ' !! Recipe' if grids else '')
+    head = '{| class="wikitable recipe-table%s"\n! Name !! Ingredients !! Recipe' % collapsible
     return head + '\n' + '\n'.join(rows) + '\n|}'
 
 

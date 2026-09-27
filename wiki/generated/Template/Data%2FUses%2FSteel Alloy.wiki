@@ -1,145 +1,192 @@
 <includeonly>{| class="wikitable recipe-table mw-collapsible"
-! Name !! Ingredients
+! Name !! Ingredients !! Recipe
 |-
 | [[Prayer of Talos]]
 | 7 × [[Block of Iron]] +<br />[[Steel Alloy]] +<br />[[Hell-Bound Book]]
+| {{Crafting|A1=Block of Iron|A2=Block of Iron|A3=Block of Iron|B1=Steel Alloy|B2=Hell-Bound Book|B3=Block of Iron|C1=Block of Iron|C2=Block of Iron|C3=Block of Iron|Output=Prayer of Talos}}
 |-
 | [[Activator Rail]]
 | 6 × [[Steel Alloy]] +<br />2 × [[Stick]] +<br />[[Electric Inverter]]
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B1=Stick|B2=Electric Inverter|B3=Stick|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Activator Rail,32}}
 |-
 | [[Anvil]]
 | 3 × [[Steel Alloy]] +<br />4 × [[Iron Ingot]]
+| {{Crafting|A1=Steel Alloy|A3=Iron Ingot|B1=Steel Alloy|B2=Iron Ingot|B3=Iron Ingot|C1=Steel Alloy|C3=Iron Ingot|Output=Anvil}}
 |-
 | [[Bucket]]
 | 3 × [[Steel Alloy]]
+| {{Crafting|A1=Steel Alloy|B2=Steel Alloy|C1=Steel Alloy|Output=Bucket,4}}
 |-
 | [[Cauldron]]
 | 7 × [[Steel Alloy]]
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B3=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Cauldron,4}}
 |-
 | [[Detector Rail]]
 | 6 × [[Steel Alloy]] +<br />[[Stone Pressure Plate]] +<br />[[Electric Wire]]
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B2=Stone Pressure Plate|B3=Electric Wire|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Detector Rail,32}}
 |-
 | [[Hopper]]
 | 5 × [[Steel Alloy]] +<br />[[Chest]] or [[Barrel]]
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|B2=Chest;Barrel|B3=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|Output=Hopper,8}}
 |-
 | [[Iron Bars]]
 | 6 × [[Steel Alloy]]
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|B1=Steel Alloy|B2=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|Output=Iron Bars,32}}
 |-
 | [[Iron Chain]]
 | 3 × [[Steel Alloy]]
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|Output=Iron Chain,36}}
 |-
 | [[Iron Door]]
 | 6 × [[Steel Alloy]]
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B1=Steel Alloy|B2=Steel Alloy|B3=Steel Alloy|Output=Iron Door,6}}
 |-
 | [[Iron Trapdoor]]
 | 4 × [[Steel Alloy]]
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|B1=Steel Alloy|B2=Steel Alloy|Output=Iron Trapdoor,8}}
 |-
 | [[Minecart]]
 | 5 × [[Steel Alloy]]
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|B2=Steel Alloy|C1=Steel Alloy|C2=Steel Alloy|Output=Minecart,2}}
 |-
 | [[Rail]]
 | 6 × [[Steel Alloy]] +<br />[[Stick]]
+| {{Crafting|A1=Steel Alloy|A2=Steel Alloy|A3=Steel Alloy|B2=Stick|C1=Steel Alloy|C2=Steel Alloy|C3=Steel Alloy|Output=Rail,64}}
 |-
 | [[Smithing Table]]
 | 2 × [[Steel Alloy]] +<br />4 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
+| {{Crafting|A1=Steel Alloy|A2=Any Planks|A3=Any Planks|B1=Steel Alloy|B2=Any Planks|B3=Any Planks|Output=Smithing Table}}
 |-
 | [[Smithing Upgrade Template]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Deepslate]] or [[Cobbled Deepslate]] or [[Blackstone]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Deepslate;Cobbled Deepslate;Blackstone|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Upgrade Template}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Amethyst Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />{{MCW|Block of Amethyst}}
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Amethyst|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Amethyst Material)}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Cinnabar Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Cinnabar]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Cinnabar|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Cinnabar Material)}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Diamond Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />{{MCW|Block of Diamond}}
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Diamond|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Diamond Material)}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Electrum Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Electrum Alloy]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Electrum Alloy|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Electrum Material)}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Gold Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Gold]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Gold|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Gold Material)}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Hepatizon Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Hepatizon Alloy]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Hepatizon Alloy|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Hepatizon Material)}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Iron Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Iron]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Iron|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Iron Material)}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Lapis Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />{{MCW|Block of Lapis Lazuli}}
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Lapis Lazuli|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Lapis Material)}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Patina Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Oxidized Copper]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Oxidized Copper|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Patina Material)}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Quartz Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Block of Quartz]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Quartz|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Quartz Material)}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Resin Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />{{MCW|Block of Resin}}
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Block of Resin|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Resin Material)}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Shakudo Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Shakudo Alloy]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Shakudo Alloy|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Shakudo Material)}}
 |-
 | [[Smithing Trim Color|Smithing Trim Color (Steel Material)]]
 | 7 × [[Iron Ingot]] +<br />[[Steel Alloy]] +<br />[[Steel Alloy]]
+| {{Crafting|A1=Iron Ingot|A2=Iron Ingot|A3=Iron Ingot|B1=Steel Alloy|B2=Steel Alloy|B3=Iron Ingot|C1=Iron Ingot|C2=Iron Ingot|C3=Iron Ingot|Output=Smithing Trim Color (Steel Material)}}
 |-
 | [[Steel Axe]]
 | [[Iron Axe]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Axe|Addition=Steel Alloy|Output=Steel Axe}}
 |-
 | [[Steel Boots]]
 | [[Iron Boots]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Boots|Addition=Steel Alloy|Output=Steel Boots}}
 |-
 | [[Steel Chestplate]]
 | [[Iron Chestplate]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Chestplate|Addition=Steel Alloy|Output=Steel Chestplate}}
 |-
 | [[Steel Claymore]]
 | [[Smithing Upgrade Template]] +<br />[[Iron Sword]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=Smithing Upgrade Template|Base=Iron Sword|Addition=Steel Alloy|Output=Steel Claymore}}
 |-
 | [[Steel Dolabra]]
 | [[Smithing Upgrade Template]] +<br />[[Iron Axe]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=Smithing Upgrade Template|Base=Iron Axe|Addition=Steel Alloy|Output=Steel Dolabra}}
 |-
 | [[Steel Helmet]]
 | [[Iron Helmet]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Helmet|Addition=Steel Alloy|Output=Steel Helmet}}
 |-
 | [[Steel Hoe]]
 | [[Iron Hoe]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Hoe|Addition=Steel Alloy|Output=Steel Hoe}}
 |-
 | [[Steel Leggings]]
 | [[Iron Leggings]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Leggings|Addition=Steel Alloy|Output=Steel Leggings}}
 |-
 | [[Steel Mattock]]
 | [[Smithing Upgrade Template]] +<br />[[Iron Hoe]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=Smithing Upgrade Template|Base=Iron Hoe|Addition=Steel Alloy|Output=Steel Mattock}}
 |-
 | [[Steel Pickaxe]]
 | [[Iron Pickaxe]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Pickaxe|Addition=Steel Alloy|Output=Steel Pickaxe}}
 |-
 | [[Steel Shears]]
 | [[Iron Shears]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Shears|Addition=Steel Alloy|Output=Steel Shears}}
 |-
 | [[Steel Shovel]]
 | [[Iron Shovel]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Shovel|Addition=Steel Alloy|Output=Steel Shovel}}
 |-
 | [[Steel Spear]]
 | [[Iron Spear]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Spear|Addition=Steel Alloy|Output=Steel Spear}}
 |-
 | [[Steel Sword]]
 | [[Iron Sword]] +<br />[[Steel Alloy]]
+| {{Smithing|Template=|Base=Iron Sword|Addition=Steel Alloy|Output=Steel Sword}}
 |-
 | [[Iron Bars]]
 | [[Steel Alloy]]
+| {{Stonecutter|Input=Steel Alloy|Output=Iron Bars,8}}
 |-
 | [[Cauldron]]
 | [[Steel Alloy]]
+| {{Stonecutter|Input=Steel Alloy|Output=Cauldron}}
 |-
 | [[Iron Chain]]
 | [[Steel Alloy]]
+| {{Stonecutter|Input=Steel Alloy|Output=Iron Chain,12}}
 |-
 | [[Iron Door]]
 | [[Steel Alloy]]
+| {{Stonecutter|Input=Steel Alloy|Output=Iron Door}}
 |-
 | [[Iron Trapdoor]]
 | [[Steel Alloy]]
+| {{Stonecutter|Input=Steel Alloy|Output=Iron Trapdoor,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>
