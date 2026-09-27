@@ -3,8 +3,8 @@
 The wiki follows the [Minecraft Wiki](https://minecraft.wiki/) closely. That covers
 organization (which pages exist and how they are sectioned), tone and wording. If you're
 unsure how to write something, find the equivalent vanilla page on minecraft.wiki and
-copy its shape. The design (skin, CSS, main page) is copied from
-[matchaflavoured.wiki](https://matchaflavoured.wiki/).
+copy its shape. The skin styles and main-page layout come directly from the Minecraft Wiki; the logo is
+the maintainer’s own pixel-art logo.
 
 ## Where facts come from
 
