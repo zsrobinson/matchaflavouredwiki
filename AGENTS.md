@@ -19,7 +19,14 @@ debugging time.
   Never other wikis, forks or third-party videos. Other sites may be read to find gaps (`wiki/AUDIT.md`),
   but every fact must be verified in the primary sources.
 - **Credit and disclose; don't compete.** matchaflavoured.wiki is the players' community wiki, and our
-  original skin setup and shared Lua modules came through it (CC BY-NC-SA 4.0). Use the maintainer’s
+  original skin setup and a starting set of shared Lua modules came through it. Most of those modules
+  are now verified as direct, unmodified copies of the live Minecraft Wiki or RuneScape Wiki module
+  they implement (see `THIRD_PARTY_NOTICES.md` for exact revisions and licenses); `Module:Inventory slot`
+  and the animation script (`Gadget-animatedIcons.js`) remain further-adapted for our tooltips, offsite
+  links and reproducible builds, so their matchaflavoured.wiki credit stays. Several imported-but-unused
+  modules (`Paramtest` among them) have been removed rather than carried forward unverified — check a
+  module's real upstream and its actual on-wiki use before re-adding one, don't just trust an old header
+  comment. Use the maintainer's
   logo for branding, and source visual assets from the pack, vanilla Minecraft or minecraft.wiki,
   not matchaflavoured.wiki. Record sources, revisions, licenses and modifications in
   `THIRD_PARTY_NOTICES.md` and `tools/vendor_mcw_sources.json` when importing third-party files. Keep the credit in the About page's Credits

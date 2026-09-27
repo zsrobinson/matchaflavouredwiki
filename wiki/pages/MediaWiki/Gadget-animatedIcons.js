@@ -1,4 +1,5 @@
-/* Cycling slots and pictures (.animated), after minecraft.wiki's Gadget-site.js.
+/* Cycling slots and pictures (.animated), after the "Element animator" in minecraft.wiki's
+   MediaWiki:Common.js (not Gadget-site.js, despite an earlier version of this file's header).
    One clock drives them all: every 2 seconds each .animated shows frame (tick mod its frame count),
    and a subframe container shows subframe (its number of full cycles mod its subframe count). So
    slots with the same frames always show the same variant: the slots of a recipe screen (Oak Planks
