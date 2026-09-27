@@ -84,6 +84,14 @@ $wgHooks['SkinTemplateNavigation::Universal'][] = static function ( $skin, &$lin
 	if ( $layer !== 'missing' ) {
 		$links['views']['mfw-source'] = [ 'text' => 'View source', 'href' => mfwGitHubUrl( 'blob', $path ) ];
 		$links['views']['mfw-history'] = [ 'text' => 'View history', 'href' => mfwGitHubUrl( 'commits', $path ) ];
+		// Duplicated into the "More" dropdown (#p-cactions), same links: on a tablet-width screen there
+		// isn't room for every tab, so Vector.css hides these two here and shows the copies there instead
+		// (minecraft.wiki collapses tabs into "More" the same way, just by moving them with JS we don't
+		// have on the static export; this fixed pair works without JS).
+		$links['actions'] = [
+			'mfw-source-more' => $links['views']['mfw-source'],
+			'mfw-history-more' => $links['views']['mfw-history'],
+		];
 	}
 };
 
