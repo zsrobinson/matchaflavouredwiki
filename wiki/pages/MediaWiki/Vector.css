@@ -4,6 +4,11 @@
 	--wiki-logo-hidpi: url('/assets/Wiki.png');
 }
 #p-logo a, #p-logo a.mw-wiki-logo { image-rendering: pixelated; background-size: contain; }
+/* The logo art fills its 140px box edge to edge (no margin baked into the image), unlike the space
+   below it before the nav links start. `contain` always fits this logo by height (it's narrower than
+   the box), so padding-top (with background-origin: content-box) shrinks it evenly off the top only,
+   leaving the bottom where it was: roughly the same gap on both sides of the logo. */
+#p-logo a.mw-wiki-logo { box-sizing: border-box; padding-top: 26px; background-origin: content-box; }
 
 /* Git-managed wiki: no talk pages, editing, history or accounts */
 #ca-talk, #ca-history, #ca-viewsource, #ca-edit, #ca-ve-edit, #pt-login, #pt-login-2, #pt-createaccount,
@@ -48,6 +53,30 @@ body.wgl-theme-dark #footer-icons { filter: none; }
 }
 #p-personal #pt-sp-toggle a { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%23939392'%3E%3Cpath d='M10 14.5a4.5 4.5 0 1 1 4.5-4.5 4.5 4.5 0 0 1-4.5 4.5M10 3C3 3 0 10 0 10s3 7 10 7 10-7 10-7-3-7-10-7'/%3E%3Ccircle cx='10' cy='10' r='2.5'/%3E%3C/svg%3E"); }
 html.mfw-hide-spoilers #p-personal #pt-sp-toggle a { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%23939392'%3E%3Cpath d='M12.49 9.94A2.5 2.5 0 0 0 10 7.5z'/%3E%3Cpath d='M8.2 5.9a4.4 4.4 0 0 1 1.8-.4 4.5 4.5 0 0 1 4.5 4.5 4.3 4.3 0 0 1-.29 1.55L17 14.14A14 14 0 0 0 20 10s-3-7-10-7a9.6 9.6 0 0 0-4 .85zM2 2 1 3l2.55 2.4A13.9 13.9 0 0 0 0 10s3 7 10 7a9.7 9.7 0 0 0 4.64-1.16L18 19l1-1zm8 12.5A4.5 4.5 0 0 1 5.5 10a4.45 4.45 0 0 1 .6-2.2l1.53 1.44a2.5 2.5 0 0 0-.13.76 2.49 2.49 0 0 0 3.41 2.32l1.54 1.45a4.47 4.47 0 0 1-2.45.73'/%3E%3C/svg%3E"); }
+
+/* ===== Tablets: collapse the tab row before it wraps onto the page =====
+ * Between the mobile breakpoint (720px) and about 1000px, the Page/Talk tabs, the Read/Edit/View
+ * source/View history tabs and the search box no longer fit on one line. Below 721px they never get
+ * the chance (the phone header below replaces them entirely), and above 999px there's room to spare.
+ * minecraft.wiki handles this by measuring the available width in JS (collapsibleTabs) and moving
+ * overflow tabs into a "More" dropdown; that script is core MediaWiki JS, stripped from the static
+ * export along with the rest (see "What the export keeps and strips" in AGENTS.md), so this reproduces
+ * the same look with a fixed breakpoint instead, since our tab labels are always the same fixed text
+ * (never the page title) and so always wrap at the same width. #p-cactions ("More") already renders on
+ * every page, empty; site/GitLinks.php duplicates the View source/View history links into it, since CSS
+ * can't move the originals the way collapsibleTabs.js does. */
+#p-cactions { display: none; } /* only shown in the range below; harmless once GitLinks.php gives it links */
+@media screen and (min-width: 721px) and (max-width: 999px) {
+	#ca-mfw-source, #ca-mfw-history { display: none; }
+	#p-cactions:not(.emptyPortlet) { display: block; }
+
+	/* #mw-head (the tab row) is absolutely positioned, so growing it doesn't push #content down; grow
+	   #mw-page-base instead, the spacer that actually does, and place the search box in the room this
+	   frees up, right under the tabs. */
+	#mw-page-base { height: 129px; }
+	#mw-page-base::after { top: 128px; } /* the content box's 3D corner accent, moved down to match */
+	#p-search { position: absolute; float: none; top: 98px; left: 170px; right: 10px; width: auto; margin: 0; }
+}
 
 /* ===== Phones: minecraft.wiki's mobile site (its Minerva skin) on the same pages =====
  * Up to 720px, where minecraft.wiki's own Vector CSS stops being a desktop layout: a sky-and-grass
