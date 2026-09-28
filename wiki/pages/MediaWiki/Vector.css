@@ -68,7 +68,7 @@ html.mfw-hide-spoilers #p-personal #pt-sp-toggle a { background-image: url("data
 #p-cactions { display: none; } /* only shown in the range below; harmless once GitLinks.php gives it links */
 @media screen and (min-width: 721px) and (max-width: 999px) {
 	#ca-mfw-source, #ca-mfw-history { display: none; }
-	#p-cactions { display: block; }
+	#p-cactions:not(.emptyPortlet) { display: block; }
 
 	/* #mw-head (the tab row) is absolutely positioned, so growing it doesn't push #content down; grow
 	   #mw-page-base instead, the spacer that actually does, and place the search box in the room this

@@ -377,8 +377,9 @@ def main():
                'title="This is a special page, and it cannot be edited"><span>Special page</span></a></li>' % href)
         doc = re.sub(r'(<nav id="p-namespaces".*?<ul class="vector-menu-content-list">).*?(</ul>)',
                      lambda m: m.group(1) + tab + m.group(2), doc, count=1, flags=re.S)
-        doc = re.sub(r'(<nav id="p-views" class="[^"]*)(".*?<ul class="vector-menu-content-list">).*?(</ul>)',
-                     r'\1 emptyPortlet\2\3', doc, count=1, flags=re.S)
+        for menu in ('p-views', 'p-cactions'):  # the tabs, and their copies in "More" (tablet widths)
+            doc = re.sub(r'(<nav id="%s" class="[^"]*)(".*?<ul class="vector-menu-content-list">).*?(</ul>)' % menu,
+                         r'\1 emptyPortlet\2\3', doc, count=1, flags=re.S)
         doc = re.sub(r'<li id="footer-(?:info-mfw-record|places-mfw-report)">.*?</li>\s*', '', doc, flags=re.S)
         doc = re.sub(r'<div id="catlinks".*?</div></div>', '', doc, flags=re.S)
         doc = re.sub(r'<span hidden data-pagefind-meta[^>]*></span>', '', doc)
