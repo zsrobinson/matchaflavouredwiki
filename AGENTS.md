@@ -72,8 +72,12 @@ the swap mid-way.
   Project namespace is `Matcha Flavoured Wiki:`.
 
 - **Pages have a 2 MB include limit.** Past it MediaWiki stops expanding templates and prints a bare `Template:…` link
-  (crafting grids are the heavy part). `generate.py` drops the grids from recipe tables longer than `COMPACT_AFTER`,
-  and `check_site.py` / `preview.py` flag unexpanded templates and missing images.
+  (crafting grids are the heavy part). A recipe/usage table budgets grids by rendered inventory slots, not by
+  recipe count (`generate.py: recipe_slots`, `GRID_SLOT_BUDGET`): a 3x3 shaped recipe costs far more than a
+  smelting or stonecutting one, so counting recipes either let a table of heavy 3x3s through unchecked or dropped
+  every grid from a long table of cheap ones. Recipes keep their pictures in order until the table's slot budget
+  runs out; only the remainder (if any) falls back to naming ingredients. `check_site.py` / `preview.py` flag
+  unexpanded templates and missing images.
 
 - **The extractor fails on formats it doesn't know** (exit 3, `KNOWN` in `extract.py`). Before it did,
   a format change dropped data silently: the 26.3 port renames loot `functions` to `modifier`, which
