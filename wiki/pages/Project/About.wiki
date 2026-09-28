@@ -13,7 +13,7 @@ The wiki keeps up with the pack on its own. Every day it checks the pack's repos
 It was started by one player who wanted a complete reference for their own game. Mistakes are still possible. If you find one, use the '''Talk''' tab on the page to report it.
 
 == Credits ==
-* This wiki was set up after [https://matchaflavoured.wiki/ matchaflavoured.wiki]. Shared Lua modules and an animation script were obtained through it, with origins in the [https://minecraft.wiki/ Minecraft Wiki], [https://runescape.wiki/ RuneScape Wiki] and [https://en.wikipedia.org/ Wikipedia].
+* This wiki was set up after [https://matchaflavoured.wiki/ matchaflavoured.wiki], which is where a starting set of shared Lua modules and an animation script first came from. Most of those modules are now verified as direct, unmodified copies of modules from the [https://minecraft.wiki/ Minecraft Wiki] or the [https://runescape.wiki/ RuneScape Wiki] (one of which also credits an older [https://en.wikipedia.org/ Wikipedia] revision it was repurposed from); the inventory-slot module and the animation script remain further-adapted for this wiki's tooltips, offsite links and reproducible builds.
 * The skin's stylesheets and interface images come from the Minecraft Wiki.
 * The logo and site icons use a pixel-art logo by this wiki's maintainer.
 * Textures, item icons, station screens and the main page's panorama come from the Matcha Flavoured resource pack, and from vanilla ''Minecraft'' where the pack does not replace them. See [[Credits]] for the people behind the pack.
