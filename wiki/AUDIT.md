@@ -10,7 +10,7 @@ copied from another site.
 
 | Site | Kind | Size / coverage | Notable features we lacked |
 |---|---|---|---|
-| [matchaflavoured.wiki](https://matchaflavoured.wiki/) | MediaWiki, hand-written, 45 users | 475 articles, 1,144 pages | One page per advancement; British spellings (Armour, Jewellery, Divine Favour, Stabilised Estus); alternate titles (Hypothermia, Hearts, Axes, Prayers…); a Discord link |
+| [matchaflavoured.wiki](https://matchaflavoured.wiki/) | MediaWiki, hand-written, 45 users | 475 articles, 1,144 pages | One page per advancement; British spellings (Armour, Jewellery, Divine Favour, Stabilised Estus); alternate titles (Hypothermia, Hearts, Axes, Prayers…) |
 | [JeremyVyska/Matcha_wiki](https://jeremyvyska.github.io/Matcha_wiki/) | Static site, fully generated | 1,076 recipes, 356 items, 290 trades, 244 advancements, 292 loot tables, 356 disabled vanilla things | Search across everything; complete "disabled vanilla" list; tooltip symbol legend; tags, sounds, **splash texts**; per-file version diff; secret recipes behind a spoiler toggle |
 | [peterbax117/…-wiki-generator](https://github.com/peterbax117/minecraft-matcha-flavored-datapack-wiki-generator) | Offline generated site | Recipes (forward and reverse), trades, structures, archaeology, fishing | **Progression-safe spoiler modes**; reverse recipe lookup; hash-verified comparison between releases |
 | [julianfere/…-recipebook](https://github.com/julianfere/mincraft-matchaflavored-recipebook) | Single-file recipe book (Spanish/English) | All recipes and trades | **Crafting tree** (click an ingredient to follow the chain to raw materials) |
@@ -56,7 +56,7 @@ Some of these probably describe older versions of the pack. Worth passing on to 
 
 ## Why the gaps existed (summary)
 
-1. **Sources not considered**: only one of the developer's videos; the Modrinth description and gallery; community Discord announcements (in the appendix video the developer asks fans to send a link to an existing community Discord rather than running one).
+1. **Sources not considered**: only one of the developer's videos; the Modrinth description and gallery.
 2. **Extractor coverage**: resource pack `texts/` (splashes), and the font glyphs weren't mapped to meanings.
 3. **Generator coverage**: no redirects for advancement titles, plurals, British spellings or internal model ids; no list for `blocked_vanilla`.
 4. **Page plan scope**: PAGES.md had no Tooltip or Splash texts page, and the guide stopped at smithing.
