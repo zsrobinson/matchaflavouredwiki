@@ -3548,14 +3548,17 @@ def release_name(version):
 
 def stable_release(current):
     """The newest version Modrinth marks as a full release (not alpha or beta) that is no newer than the
-    current one (source/modrinth_versions.json, fetch_sources.sh). The current version when there is none."""
+    current one (source/modrinth_versions.json, fetch_sources.sh). The current version when there is none.
+    Since 1.12.3 the files carry a suffix for what they are ("1.12.3+dp", "1.12.3+dp-alpha"): the version
+    is the part before the "+"."""
     path = os.path.join(ROOT, 'source', 'modrinth_versions.json')
     if not os.path.exists(path):
         return current
     versions = json.load(open(path, encoding='utf-8'))
-    until = max((v['date_published'] for v in versions if v['version_number'] == current), default=None)
+    base = lambda v: v['version_number'].lstrip('v').split('+')[0]
+    until = max((v['date_published'] for v in versions if base(v) == current), default=None)
     releases = [v for v in versions if v['version_type'] == 'release' and (until is None or v['date_published'] <= until)]
-    return max(releases, key=lambda v: v['date_published'])['version_number'].lstrip('v') if releases else current
+    return base(max(releases, key=lambda v: v['date_published'])) if releases else current
 
 
 def main():
