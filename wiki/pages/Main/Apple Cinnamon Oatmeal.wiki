@@ -6,7 +6,7 @@
 
 === Crafting ===
 {{Recipes}}
-A honey bottle, a [[Milk Bottle|milk bottle]], estus ash, a raw [[apple]], 2 [[Wheat Grain|wheat grain]] and a [[bowl]]. Picking up a bowl unlocks the recipe. The honey bottle's glass bottle is left in the crafting grid, as in vanilla. The milk bottle's glass bottle is meant to be given back too, but in 1.12.2-beta the advancement that returns it still names the recipe by an old ID, so it is used up.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
+A honey bottle, a [[Milk Bottle|milk bottle]], estus ash, a raw [[apple]], 2 [[Wheat Grain|wheat grain]] and a [[bowl]]. Picking up a bowl unlocks the recipe. The honey bottle's glass bottle is left in the crafting grid, as in vanilla. Crafting it gives back the milk bottle's glass bottle.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
 
 == Usage ==
 

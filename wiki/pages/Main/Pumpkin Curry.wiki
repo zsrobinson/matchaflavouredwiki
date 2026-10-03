@@ -1,12 +1,12 @@
 {{Infobox auto}}
 
-'''Pumpkin curry''' is an oven meal of the [[pumpkin]]. It heals {{Value|Pumpkin Curry|heals}} and grants {{EffectLink|Resistance}} for {{Value|Pumpkin Curry|duration|effect=Resistance}}, the longest Resistance from food. It is the only oven meal that can't be cooked on [[kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref>
+'''Pumpkin curry''' is an oven meal of the [[pumpkin]]. It heals {{Value|Pumpkin Curry|heals}} and grants {{EffectLink|Resistance}} for {{Value|Pumpkin Curry|duration|effect=Resistance}}, the longest Resistance from food. It cooks in an [[oven]] or on [[kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/pumpkin_curry.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-A [[pumpkin curry stock]] cooks into pumpkin curry in {{Value|Pumpkin Curry|cook_time}} in an [[oven]]. Obtaining the stock unlocks the recipe.
+A [[pumpkin curry stock]] cooks into pumpkin curry in {{Value|Pumpkin Curry|cook_time}} in an [[oven]] or on [[kindling]]. Obtaining the stock unlocks the recipe.
 
 == Usage ==
 
@@ -22,6 +22,7 @@ It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{So
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Added pumpkin curry and its stock.}}
+{{History line|1.12.3|Can be cooked on kindling as well as in an oven.}}
 {{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 

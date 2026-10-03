@@ -1,1 +1,27 @@
-#REDIRECT [[Ramen]]
+{{Vanilla|Rabbit Stew}}
+{{Hatnote|For the pack's leftover food built on the rabbit stew item, see [[Ramen]].}}
+{{Infobox auto}}
+'''Rabbit stew''' is the vanilla food, which [[Matcha Flavoured]] leaves almost untouched. The pack blocks the vanilla recipes that make it from a brown or red [[mushroom]], but not the recipe added in ''Minecraft'' 26.3 that uses a shelf mushroom, so that one still works.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> It is unrelated to [[Ramen]], although both use the rabbit stew item.
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+A baked potato, [[Cooked Flesh|cooked flesh]] (the renamed cooked rabbit), a bowl, a carrot and a shelf mushroom, in any arrangement. A shelf mushroom drops from a shelf mushroom block, which grows on trees in swamps and dappled forests.<ref>{{Source|MF_datapack/data/matcha/worldgen/feature/swamp_oak.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/feature/red_poplar.json}}</ref>
+
+== Usage ==
+The pack gives plain rabbit stew no healing of its own, unlike the foods it makes, and it has no effect.
+
+== History ==
+{{History|
+{{History line|1.12.3|The shelf mushroom recipe from ''Minecraft'' 26.3 makes rabbit stew available again; the older rabbit stew recipes remain blocked.}}
+}}
+
+== See also ==
+* [[Ramen]]
+* [[Mushroom]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

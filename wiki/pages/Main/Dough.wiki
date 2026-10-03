@@ -6,7 +6,7 @@
 
 === Crafting ===
 {{Recipes}}
-An [[egg]] and 2 flour make 4 dough. A [[water bottle]] and 1 flour make 1 dough; the water recipe accepts any potion.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough_from_water.json}}</ref> The glass bottle is meant to be given back, but in 1.12.2-beta the advancement that returns it still names the recipe by an old ID, so it is used up.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
+An [[egg]] and 2 flour make 4 dough. A [[water bottle]] and 1 flour make 1 dough; the water recipe accepts any potion.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dough_from_water.json}}</ref> Crafting it gives back the glass bottle.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
 
 == Usage ==
 

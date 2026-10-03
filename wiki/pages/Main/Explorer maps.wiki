@@ -1,7 +1,7 @@
 {{Vanilla|Explorer Map}}
 {{Infobox
 |title=Explorer maps
-|invimage=Map
+|invimage=Mineshaft Map;Witch Hut Map;Papal Outpost Map;Shipwreck Map;Desert Temple Map;Jungle Temple Map;Trail Ruins Map;Ocean Monument Map;Trial Chamber Map;Warm Ocean Ruin Map;Overgrown Abbey Map;Ancient City Map;Mansion Map
 |type=Map
 |renewable=Yes
 }}
@@ -59,6 +59,9 @@ A [[Wandering Trader]] offers 3 of these 6 maps, each for 1 obol and each usable
 | Witch Hut Map || Swamp hut || Swamp hut
 |}
 
+=== Abandoned camps ===
+The chests of an [[abandoned camp]] hold maps too. A common chest has a map to a camp in a different biome: the Bamboo Camp Map, Birch Forest Camp Map, Cherry Grove Camp Map, Dappled Forest Camp Map, Flower Forest Camp Map, Pale Garden Camp Map, Swamp Camp Map and Windswept Forest Camp Map. A camp never holds the map that leads to its own biome's camp.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_common_chest.json}}</ref> A secret chest has one map to a buried structure: Buried Ancient City Map, Buried Trial Chambers Map, Buried Mineshaft Map, Desert Pyramid Map, Jungle Pyramid Map, Warm Ocean Ruins Map or Woodland Mansion Map.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_secret_chest.json}}</ref> The secret chest's maps are named items of ''Minecraft'' 26.3 itself.
+
 === Other maps ===
 Buried treasure maps are found in shipwreck map chests, as in vanilla ''Minecraft''; see [[Buried treasure]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_map.json}}</ref> The "Buried Treasure Map" in [[ocean ruins]] chests is a bug in 1.12.3: it is named like a buried treasure map, but its destination is a woodland mansion, so it leads to the nearest [[Woodland Mansion|mansion]] instead.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_small.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_big.json}}</ref> See [[Known bugs]].
 
@@ -71,6 +74,7 @@ Compared with vanilla, where a cartographer's explorer maps cost 8 to 14 emerald
 {{History|
 {{History line|1.10|The Archaeologist sells Overgrown Abbey and Papal Outpost maps, with new map textures.
 The names of all explorer maps were updated.}}
+{{History line|1.12.3|Every map is its own item in the item list; the generic "Map" item is gone. Maps from abandoned camp chests were added.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/mineshaft.json}}</ref>}}
 }}
 
 == Trivia ==

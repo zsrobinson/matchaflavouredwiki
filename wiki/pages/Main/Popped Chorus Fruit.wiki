@@ -8,7 +8,7 @@
 
 === Cooking ===
 {{Recipes}}
-Chorus fruit pops only in an [[oven]] ({{Value|Popped Chorus Fruit|cook_time|station=Oven}}); there is no kindling recipe. The chorus fruit unlock advancement grants the ID <code>food/oven/popped_chorus_fruit</code>, but the recipe is stored as <code>food/crafting/popped_chorus_fruit</code>, so it never appears in the recipe book.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/chorus_fruit.json}}</ref>
+Chorus fruit pops in an [[oven]] or on [[kindling]] ({{Value|Popped Chorus Fruit|cook_time|station=Oven}}). Picking up chorus fruit unlocks the oven recipe.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/chorus_fruit.json}}</ref>
 
 == Usage ==
 
@@ -19,6 +19,11 @@ Popped chorus fruit is used in [[Chorus Mochi|chorus mochi]] and, as in vanilla,
 
 === Crafting ingredient ===
 {{Uses}}
+
+== History ==
+{{History|
+{{History line|1.12.3|Can be cooked on kindling as well as in an oven. The recipe unlock now names the oven recipe correctly, so it appears in the recipe book.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/popped_chorus_fruit.json}}</ref>}}
+}}
 
 == See also ==
 * [[Chorus Fruit]]

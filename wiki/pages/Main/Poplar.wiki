@@ -1,21 +1,61 @@
-{{Infobox|title=Poplar|invimage=Poplar Log|type=Wood type}}
-'''Poplar''' is a wood type that arrived with ''Minecraft'' 26.3. The pack's resource pack textures its logs and planks, and its three autumn leaf colors: '''red''', '''orange''' and '''yellow'''. The pack gives poplar the same changes as the other wood types.
+{{Vanilla|Poplar}}
+{{Infobox
+|title=Poplar
+|invimage=Poplar Log;Poplar Planks;Poplar Sapling;Red Poplar Leaves;Orange Poplar Leaves;Yellow Poplar Leaves
+|type=Wood type
+|renewable=Yes
+}}
+'''Poplar''' is a wood type that arrived with ''Minecraft'' 26.3. It grows as tall trees with red, orange or yellow autumn leaves in the dappled forest. [[Matcha Flavoured]] gives poplar the same [[stonecutter]] recipes as the other woods, a [[Lumberjack]] trade, a leaf-to-sapling recipe, and its own tree height and textures.
 
-== Items ==
-Poplar has the usual wooden set (see {{MCW|Poplar Log}} for the vanilla details): [[Poplar Log]], [[Poplar Wood]], stripped versions, [[Poplar Planks]], [[Poplar Stairs]], [[Poplar Slab]], [[Poplar Fence]], [[Poplar Fence Gate]], [[Poplar Door]], [[Poplar Trapdoor]], [[Poplar Button]], [[Poplar Pressure Plate]], [[Poplar Sign]], [[Poplar Shelf]], the boats and the [[Poplar Sapling]]. Its leaves come in red, orange and yellow.
+== Obtaining ==
+=== Natural generation ===
+Poplar trees with red, orange or yellow leaves generate in the dappled forest biome, some with fallen leaves around them, along with fallen poplar trees.<ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/trees_dappled_forest.json}}</ref> The pack makes the trunk of every one of these trees two blocks taller than in vanilla ''Minecraft'' (a base height of 9 instead of 7).<ref>{{Source|MF_datapack/data/minecraft/worldgen/feature/red_poplar.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/feature/orange_poplar.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/feature/yellow_poplar.json}}</ref> A tree can carry shelf mushrooms.
 
-== Changes from vanilla ==
-* '''Stonecutter.''' Poplar logs, wood, planks, slabs, stairs, fences, doors, trapdoors, buttons, pressure plates, signs and shelves can be cut from each other in the [[stonecutter]], like the other wood types.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/poplar_planks.json}}</ref>
-* '''Leaves.''' Red, orange and yellow poplar leaves follow the [[Leaves]] rule: they drop only themselves, and only when broken with [[shears]] or a Silk Touch tool, and never saplings or sticks.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/yellow_poplar_leaves.json}}</ref> A poplar sapling is crafted from any one of the three leaf colors instead. The recipe unlocks when the player picks up a poplar log.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/poplar_sapling_from_poplar_leaves.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/poplar_leaves.json}}</ref>
-* '''Logs.''' Poplar logs and stripped poplar logs drop charcoal when mined with an adamant tool, with the [[Fortune]] and electrum bonuses, like other logs.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/poplar_log.json}}</ref>
-* '''Trading.''' A level 2 [[Leatherworker]] sells 64 poplar logs for an [[obol]] and a poplar sapling.<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/2/poplar_log.json}}</ref>
-* '''Trees.''' The yellow poplar tree feature is 2 blocks taller than in vanilla (base height 9 instead of 7).<ref>{{Source|MF_datapack/data/minecraft/worldgen/feature/yellow_poplar.json}}</ref>
+=== Leaves ===
+Poplar leaves drop only themselves, and only when broken with shears or a tool with {{MCW|Silk Touch}}. They drop no saplings or sticks, like every leaf in the pack.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/red_poplar_leaves.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/orange_poplar_leaves.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/yellow_poplar_leaves.json}}</ref> A red, orange or yellow poplar leaf block is crafted into a poplar sapling. Picking up a poplar log unlocks the recipe.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/poplar_sapling_from_poplar_leaves.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/poplar_leaves.json}}</ref>
+
+=== Trading ===
+A [[Lumberjack]] at the apprentice level sells 64 poplar logs for 1 [[obol]] and a poplar sapling.<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/2/poplar_log.json}}</ref>
+
+=== Stonecutting ===
+A [[stonecutter]] cuts any poplar log (a log, wood, or the stripped form of either) into other poplar blocks, as it does for the other woods:<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/poplar_planks.json}}</ref>
+{| class="wikitable"
+! From !! Into
+|-
+| One poplar log or wood || 4 planks, 8 slabs, 4 stairs, 3 fences, 4 trapdoors, 8 buttons, 4 pressure plates, 2 doors, 2 signs, 1 fence gate or 1 shelf
+|-
+| One poplar plank || 2 slabs, 2 buttons, 1 stairs or 1 trapdoor
+|-
+| Poplar stairs || 1 planks
+|-
+| Poplar trapdoor || 1 slab
+|-
+| Stripped poplar log, poplar wood or stripped poplar wood || 1 poplar log
+|-
+| Stripped poplar log, poplar log or stripped poplar wood || 1 poplar wood
+|}
+
+== Blocks and items ==
+{| class="wikitable"
+! Item !! Notes
+|-
+| {{ItemLink|Poplar Log}}, {{ItemLink|Poplar Wood}} || Drops itself. With an adamant tool it drops charcoal instead.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/poplar_log.json}}</ref>
+|-
+| {{ItemLink|Poplar Planks}} || Pale grey. A vertical version of the texture is used for double slabs (see [[Vertical slabs]]).<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/poplar_slab.json}}</ref>
+|-
+| {{ItemLink|Poplar Slab}}, {{ItemLink|Poplar Stairs}}, {{ItemLink|Poplar Fence}}, {{ItemLink|Poplar Fence Gate}}, {{ItemLink|Poplar Door}}, {{ItemLink|Poplar Trapdoor}}, {{ItemLink|Poplar Button}}, {{ItemLink|Poplar Pressure Plate}}, {{ItemLink|Poplar Sign}}, {{ItemLink|Poplar Shelf}} || Cut in the stonecutter.
+|-
+| {{ItemLink|Red Poplar Leaves}}, {{ItemLink|Orange Poplar Leaves}}, {{ItemLink|Yellow Poplar Leaves}} || Autumn leaves, each with its own texture in the resource pack.<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/yellow_poplar_leaves.json}}</ref>
+|-
+| {{ItemLink|Poplar Sapling}} || Crafted from any poplar leaves.
+|}
+Poplar boats, boats with chests and hanging signs, and the stripped log and wood, are as in vanilla.
 
 == History ==
 {{History
-|{{History line|1.12.1-alpha|Poplar stonecutter recipes and a poplar sapling recipe added, naming items that did not exist in the supported version.}}
+|{{History line|1.12.1-alpha|Poplar stonecutter recipes and a poplar sapling recipe added, naming items that don't exist in 26.2.}}
 {{History line|1.12.2|Added poplar leaf, log and plank textures. Removed the poplar stonecutter and sapling recipes.}}
-{{History line|1.12.3|Ported to ''Minecraft'' 26.3, which has poplar. Added the poplar stonecutter recipes, the sapling recipe, poplar log and leaf loot tables, the Leatherworker trade and taller poplar trees.}}
+{{History line|1.12.3|Poplar is in the game, with ''Minecraft'' 26.3. Poplar stonecutter recipes, the poplar sapling recipe and a Lumberjack trade for poplar logs were added again. Poplar trees are two blocks taller than in vanilla.}}
 }}
 
 == Trivia ==

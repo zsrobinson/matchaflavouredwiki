@@ -1,11 +1,11 @@
 {{Infobox auto|Curry Stock}}
 
-A '''stock''' is an uncooked soup base that is cooked into one of the five oven meals. There are five: '''curry stock''', '''green curry stock''', '''paneer curry stock''', '''pumpkin curry stock''' and '''ramen stock'''. Each is crafted in a [[bowl]] and then cooked for 15 seconds in an [[oven]]; all but pumpkin curry stock can also be cooked on [[kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref>
+A '''stock''' is an uncooked soup base that is cooked into one of the five oven meals. There are five: '''curry stock''', '''green curry stock''', '''paneer curry stock''', '''pumpkin curry stock''' and '''ramen stock'''. Each is crafted in a [[bowl]] and then cooked for 15 seconds in an [[oven]] or on [[kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/pumpkin_curry.json}}</ref>
 
 == Obtaining ==
 
 === Crafting ===
-Picking up a bowl unlocks all five stock recipes.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/bowl.json}}</ref> Crafting green curry, paneer curry or pumpkin curry stock returns the glass bottles of its [[oil]] and [[Milk Bottle|milk bottle]].<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/two_glass_bottles_from_crafting.json}}</ref> Curry and ramen stock are meant to return the oil's bottle, but in 1.12.2-beta the advancement that does this still names their recipes by old IDs, so it is used up.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
+Picking up a bowl unlocks all five stock recipes.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/bowl.json}}</ref> Crafting green curry, paneer curry or pumpkin curry stock returns the glass bottles of its [[oil]] and [[Milk Bottle|milk bottle]].<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/two_glass_bottles_from_crafting.json}}</ref> Curry and ramen stock return the oil's bottle too.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
 {| class="wikitable"
 ! Stock !! Ingredients !! Cooks into
 |-
@@ -15,7 +15,7 @@ Picking up a bowl unlocks all five stock recipes.<ref>{{Source|MF_datapack/data/
 |-
 | {{ItemLink|Paneer Curry Stock}} || Estus ash, sugar, milk bottle, tomatoes, cheese, oil, bowl || [[Paneer Makhani]]
 |-
-| {{ItemLink|Pumpkin Curry Stock}} || Estus ash, sugar, baked pumpkin, oil, sunflower, milk bottle, carrot, bamboo, bowl || [[Pumpkin Curry]] (oven only)
+| {{ItemLink|Pumpkin Curry Stock}} || Estus ash, sugar, baked pumpkin, oil, sunflower, milk bottle, carrot, bamboo, bowl || [[Pumpkin Curry]]
 |-
 | {{ItemLink|Ramen Stock}} || Brown mushroom, dried kelp, egg, oil, dough, raw porkchop, [[Raw Poultry|raw poultry]] or seitan, bowl || [[Tonkotsu Ramen]]
 |}
@@ -36,6 +36,7 @@ Obtaining a stock unlocks its oven meal. Stocks can't be eaten.
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Added pumpkin curry stock. All stocks use oil, and those with meat accept seitan.}}
+{{History line|1.12.3|Pumpkin curry stock can be cooked on kindling too.}}
 {{History line|1.12.3|2=Crafting curry stock or ramen stock returns the oil's glass bottle. In 1.12.2 the advancement behind this still used old recipe IDs, so the bottle was lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>}}
 }}
 
