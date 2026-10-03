@@ -1,4 +1,4 @@
-'''Installing''' [[Matcha Flavoured]] requires both its datapack and its resource pack, for ''Minecraft: Java Edition'' 26.3. The instructions below follow the README.<ref>{{Source|README.md}}</ref>
+'''Installing''' [[Matcha Flavoured]] requires both its datapack and its resource pack, for ''Minecraft: Java Edition'' 26.3 (the Modrinth file for 26.3 is marked alpha; the 26.2 file is the earlier build of the same release). The instructions below follow the README.<ref>{{Source|README.md}}</ref>
 
 == Files ==
 Up to [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]], the download was a single archive that works as both the datapack and the resource pack. From [[Matcha Flavoured 1.12.2|1.12.2-beta]] they are separate Modrinth files (<code>Matcha_DP_…zip</code> and <code>Matcha_RP_…zip</code>). The datapack targets pack format 121.0 and the resource pack 97.1 (in 1.12.2 they were 107.1 and 88.0).<ref>{{Source|MF_datapack/pack.mcmeta}}</ref><ref>{{Source|MF_resourcepack/pack.mcmeta}}</ref>

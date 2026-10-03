@@ -19,7 +19,7 @@
 | {{BlockLink|Mud Kiln}} || {{MCW|Smoker}} || Smoking || Only [[naan]] and the charred foods. It is mainly a kiln for bricks, glass, terracotta and stone.
 |}
 
-Food recipes take 5 seconds (100 ticks) and give 0.35 experience, on kindling and in the oven, except molasses, which gives 0.01. The mud kiln's recipes take 10 seconds (200 ticks).<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/molasses.json}}</ref> The oven meals take 15 seconds (300 ticks), on kindling as well.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref> therefore cooks food much faster than a vanilla campfire (30 seconds), and the oven twice as fast as a vanilla furnace.
+Food recipes take 5 seconds (100 ticks) and give 0.35 experience, on kindling and in the oven, except molasses, which gives 0.01. The mud kiln's recipes take 10 seconds (200 ticks).<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/molasses.json}}</ref> The oven meals take 15 seconds (300 ticks), on kindling as well.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref> Kindling therefore cooks food much faster than a vanilla campfire (30 seconds), and the oven twice as fast as a vanilla furnace.
 
 The pack removes every vanilla cooking recipe for food (meat, fish, potatoes, kelp) and replaces it with its own, so vanilla cooked food can't be made.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 

@@ -116,7 +116,7 @@ The difficulty the pack uses is read when the world loads, so after changing dif
 {{History line|1.12.1-alpha|New experimental death system. Maximum health can go below 10 hearts, with the floor set by the player's progress through advancements; Easy is exempt. Killing the dragon no longer changes the difficulty on Normal; progress does instead. Hardcore-style hearts added to the resource pack.}}
 {{History line|1.12.2|The new death system is kept. Minimum hearts are tracked per player instead of per world. The [[Wither effect]] now takes hearts.}}
 {{History line|1.12.3|The Wither heart meter is tracked for each player separately.<ref>{{Source|MF_datapack/data/matcha/function/effects/wither/effect.mcfunction}}</ref>}}
-{{History line|Upcoming|2=Brazier, The Stalwart Metal and The Resilient Mineral are no longer revoked when the pack is updated.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
+{{History line|1.12.3|2=Brazier, The Stalwart Metal and The Resilient Mineral are no longer revoked when the pack is updated.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref>}}
 }}
 
 == Trivia ==

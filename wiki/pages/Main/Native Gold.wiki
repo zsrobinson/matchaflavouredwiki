@@ -15,7 +15,7 @@ Both variants are meant to apply [[Fortune]] and the [[Electrum equipment|electr
 
 == History ==
 {{History|
-{{History line|1.12.3|The Fortune bonus is no longer applied twice, and the electrum intrinsic's bonus is applied once, as for native deepslate gold, but the raw gold entry is left in the old loot format.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json}}</ref>}}
+{{History line|1.12.3|The table was corrected so that Fortune is no longer applied twice and the electrum intrinsic is included, as for native deepslate gold, but the raw gold entry itself is left in the pre-26.3 loot format, so its bonuses are probably not applied.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json}}</ref>}}
 }}
 
 == References ==

@@ -44,7 +44,7 @@ A crystal heart held in either hand saves the player from any death a totem of u
 {{Uses}}
 
 == Advancements ==
-Obtaining a crystal heart for the first time is meant to grant '''Crystal Heart!''', which rewards 3 {{ItemLink|Obol|obols}}.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref> In 1.12.2-beta the advancement can't be earned: it looks for an item with the model <code>heart_container</code>, which the game reads as <code>minecraft:heart_container</code>, while crystal hearts use <code>matcha:heart_container</code>. This is fixed on the <code>main</code> branch.
+Obtaining a crystal heart for the first time grants '''Crystal Heart!''', which rewards 3 {{ItemLink|Obol|obols}}.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref> In 1.12.2 the advancement could not be earned, because it looked for the model <code>heart_container</code>, which the game reads as <code>minecraft:heart_container</code>, while crystal hearts use <code>matcha:heart_container</code>.
 
 == History ==
 {{History|

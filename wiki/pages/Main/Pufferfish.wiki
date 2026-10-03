@@ -40,7 +40,7 @@ The [[Fisherman]] buys 12 caught pufferfish for 1 [[Obol]] once he reaches Appre
 {{Uses}}
 
 == Angler's Almanac ==
-The [[Angler's Almanac]] has an entry for the pufferfish under Hot Saltwater (listed chance 35.7%), meant to unlock when one is caught after the player has obtained the almanac.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> In 1.12.2-beta it can't be unlocked: the entry checks for the model <code>matcha:pufferfish</code>, but caught pufferfish keep the vanilla model.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref> Its description reads:
+The [[Angler's Almanac]] has an entry for the pufferfish under Hot Saltwater (listed chance 35.7%), meant to unlock when one is caught after the player has obtained the almanac.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Through 1.12.2 it couldn't be unlocked: the entry checked for the model <code>matcha:pufferfish</code>, but caught pufferfish keep the vanilla model. It now checks for the vanilla model.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref> Its description reads:
 <blockquote>''A normally small fish that turns into a spiky balloon the moment things get awkward.''</blockquote>
 
 == Advancements ==
