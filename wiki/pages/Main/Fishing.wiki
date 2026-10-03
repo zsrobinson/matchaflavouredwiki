@@ -89,7 +89,7 @@ Three biomes have small tables of their own. Pale Garden and Deep Dark mix one f
 
 Deep Dark and Sulfur Caves are also in the pack's <code>#minecraft:unused</code> biome tag, which adds a second junk entry of weight 85. In those two biomes about half of all catches are junk, and the "Per catch" columns above already account for it (see also [[#Choosing the catch]]). Pale Garden works like the climates.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/unused.json}}</ref>
 
-In 1.12.2-beta the fish bones from the Sulfur Caves table have the wrong item model, so they show the missing-model texture and don't stack with fish bones from the junk table. See [[Fish Bones]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
+Before 1.12.3 the fish bones from the Sulfur Caves table had the wrong item model, so they showed the missing-model texture and didn't stack with fish bones from the junk table. See [[Fish Bones]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
 
 === Other biomes ===
 The other biomes in <code>#minecraft:unused</code> have no fish: Mushroom Fields, the [[Hell]] biomes and [[The End]] biomes. Their junk entry has weight 85, so nearly every catch there is junk (see [[#Choosing the catch]]).<ref>{{Cite changelog|1.10|quote=Fishing outside of pre-designated biomes no longer gives insane loot (junk pool at 85 weight as fallback)}}</ref>
@@ -138,7 +138,7 @@ Each catch plays a sound for its category: one per star rating, one each for jun
 |}
 <ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/catch_everything.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/trade_fish.json}}</ref>
 
-The [[Angler's Almanac]] adds its own advancement tab with an entry for every catch. In 1.12.2-beta the pufferfish entry can't be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>
+The [[Angler's Almanac]] adds its own advancement tab with an entry for every catch. Before 1.12.3 the pufferfish entry in Hot Saltwater couldn't be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>
 
 == History ==
 {{History|
