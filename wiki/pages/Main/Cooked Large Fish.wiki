@@ -4,7 +4,7 @@
 
 == Obtaining ==
 === Cooking ===
-Every salmon-based fish cooks into cooked large fish, since the recipe matches any <code>minecraft:salmon</code>. That includes [[salmon]] and 24 custom fish (see [[Fish]]). Cooking takes {{Value|Cooked Large Fish|cook_time}} in an [[Oven]] or on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_salmon.json}}</ref>
+Cooked large fish is made from anything in the large fish group: [[salmon]] and the 24 custom fish that are salmon (see [[Fish]]). One recipe, with the group as its ingredient, replaces the salmon recipe of 1.12.2. Cooking takes {{Value|Cooked Large Fish|cook_time}} in an [[Oven]] or on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_large_fish.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/item/fish_large.json}}</ref> A [[Mud Kiln|mud kiln]] chars it instead.
 {{Recipes}}
 
 == Usage ==

@@ -53,7 +53,6 @@ Most food is cooked in an [[oven]], on [[kindling]] or [[Soul Kindling|soul kind
 
 Several vanilla foods are replaced by the pack's versions when they're obtained:
 * Apples dropped by leaves, carrots, tomatoes, glow berries, sweet berries, melon slices and chorus fruit from their crops, and food in chest loot, come from the pack's loot tables with its tooltips and healing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/carrots.json}}</ref>
-* A plain apple or sweet berries without a tooltip (for example from another mod or datapack) are swapped for the pack's version one at a time when they enter the inventory of a player outside Creative mode.<ref>{{Source|MF_datapack/data/matcha/function/remove_vanilla_items/apple.mcfunction}}</ref>
 
 Vanilla recipes for mushroom stew, rabbit stew, beetroot soup, suspicious stew, pumpkin pie, cookies, cake, bread, golden apples, golden carrots, glistering melon slices and all vanilla cooking recipes for meat, fish, potatoes and kelp are removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> Several of those items are reused as the pack's foods; see [[Renamed items]].
 

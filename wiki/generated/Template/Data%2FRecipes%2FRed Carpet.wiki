@@ -1,4 +1,5 @@
-<includeonly>{| class="wikitable recipe-table"
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
 | [[Red Carpet]]
@@ -8,5 +9,13 @@
 | [[Red Carpet]] <small>(vanilla recipe)</small>
 | [[Red Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Gray Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Black Carpet]]
 | {{Crafting|A1=Red Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Gray Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Black Carpet|Output=Red Carpet|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Red Carpet]]
+| [[Red Wool]]
+| {{Stonecutter|Input=Red Wool|Output=Red Carpet,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

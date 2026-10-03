@@ -2,19 +2,11 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Cooked Fish]]
-| [[Cod]]
-| {{Cooking|station=Kindling|Input=Cod|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
+| <span class="explain" title="Cod, Tropical Fish">Any fish small</span>
+| {{Cooking|station=Kindling|Input=Any Fish Small|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Cooked Fish]]
-| [[Tropical Fish]]
-| {{Cooking|station=Kindling|Input=Tropical Fish|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
-|-
-| [[Cooked Fish]]
-| [[Cod]]
-| {{Cooking|station=Oven|Input=Cod|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
-|-
-| [[Cooked Fish]]
-| [[Tropical Fish]]
-| {{Cooking|station=Oven|Input=Tropical Fish|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
+| <span class="explain" title="Cod, Tropical Fish">Any fish small</span>
+| {{Cooking|station=Oven|Input=Any Fish Small|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

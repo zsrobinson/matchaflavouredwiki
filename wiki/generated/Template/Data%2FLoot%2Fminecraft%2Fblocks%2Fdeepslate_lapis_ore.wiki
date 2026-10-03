@@ -2,8 +2,8 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Natural Lapis Lazuli}} || 1 || 100% || 100% || Silk Touch
+| {{ItemLink|Natural Lapis Lazuli}} || 1 || 100% || 100% || predicate minecraft:tool/can_silk_touch
 |-
-| {{ItemLink|Lapis Lazuli|mcw=Lapis Lazuli}} || 4–9 || 100% || 100% || without Silk Touch
+| {{ItemLink|Lapis Lazuli|mcw=Lapis Lazuli}} || 4–9 || 100% || 100% || without predicate minecraft:tool/can_silk_touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

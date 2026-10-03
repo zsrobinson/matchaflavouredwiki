@@ -16,6 +16,6 @@
 |-
 | Amethyst cluster || 4 || 100% || tool: #minecraft:cluster_max_harvestables
 |-
-| Amethyst cluster || 2 || 100% || without Silk Touch, tool: #minecraft:cluster_max_harvestables
+| Amethyst cluster || 2 || 100% || without predicate minecraft:tool/can_silk_touch, tool: #minecraft:cluster_max_harvestables
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

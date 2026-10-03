@@ -13,11 +13,11 @@
 |-
 | {{ItemLink|Diamond Axe}}{{{Diamond Axe|}}} || 2500 || 9 || data-sort-value="0" | — || 9 || 1 || —
 |-
-| {{ItemLink|Shakudo Axe}}{{{Shakudo Axe|}}} || 1000 || 9 || data-sort-value="0" | — || 9 || 1 || [[Silk Touch]]<br />[[Shakudo equipment|Life steal]]
+| {{ItemLink|Shakudo Axe}}{{{Shakudo Axe|}}} || 1000 || 9 || data-sort-value="0" | — || 9 || 1 || [[Silk Touch]]<br />{{G|Health}}{{G|Attack damage}} [[Shakudo equipment|Life steal]]
 |-
 | {{ItemLink|Hepatizon Axe}}{{{Hepatizon Axe|}}} || 1000 || 20 || data-sort-value="0" | — || 9 || 1.1 || —
 |-
-| {{ItemLink|Electrum Axe}}{{{Electrum Axe|}}} || 3000 || 12 || data-sort-value="0" | — || 9 || 1.2 || [[Fortune|Fortune bonus III]]<br />[[Looting]] II<br />[[Smite]] III<br />{{G|Warding}} [[Warding|2 Warding]]
+| {{ItemLink|Electrum Axe}}{{{Electrum Axe|}}} || 3000 || 12 || data-sort-value="0" | — || 9 || 1.2 || {{G|Fortune}} [[Fortune|Fortune bonus]]<br />[[Looting]] II<br />[[Smite]] III<br />{{G|Warding}} [[Warding|2 Warding]]
 |-
-| {{ItemLink|Adamant Axe}}{{{Adamant Axe|}}} || 5000 || 15 || data-sort-value="0" | — || 10 || 1 || [[Efficiency]] II<br />[[Adamant equipment|Auto-smelting]]<br />{{G|Weakness}} [[Adamant equipment|Weakness]]<br />[[Unbreaking]] II
+| {{ItemLink|Adamant Axe}}{{{Adamant Axe|}}} || 5000 || 15 || data-sort-value="0" | — || 10 || 1 || [[Efficiency]] II<br />{{G|Smelting}} [[Adamant equipment|Auto-smelting]]<br />{{G|Weakness}} [[Adamant equipment|Weakness]]<br />[[Unbreaking]] II
 |}</includeonly><noinclude>Generated from the items' components by <code>tools/generate.py</code>. A hand-written note for a row is passed under the row's name (<code>|Steel Helmet=...</code>). [[Category:Generated data]]</noinclude>

@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Blue Cushion}}
+|image={{#if:{{{image|}}}|{{{image}}}|Blue Cushion.png}}
+|imagesize=160px
+|invimage=Blue Cushion
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (16)
+|id=<code>minecraft:blue_cushion</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/blue_cushion.json|blue_cushion.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

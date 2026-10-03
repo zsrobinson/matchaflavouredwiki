@@ -1,9 +1,11 @@
-<includeonly><small>Loot table <code>minecraft:blocks/iron_ore</code> ({{Source|vanilla:loot_table/blocks/iron_ore.json|source}}); pools roll 1 time(s).</small>
+<includeonly><small>Loot table <code>minecraft:blocks/iron_ore</code> ({{Source|MF_datapack/data/minecraft/loot_table/blocks/iron_ore.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
 | {{ItemLink|Hematite}} || 1 || 100% || 100% || Silk Touch
 |-
-| {{ItemLink|Raw Iron|mcw=Raw Iron}} || 1 || 100% || 100% || without Silk Touch
+| {{ItemLink|Iron Ingot}} || 1 || 100% || 100% || specific tool
+|-
+| {{ItemLink|Raw Iron|mcw=Raw Iron}} || 1 || 100% || 100% || without Silk Touch, specific tool
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

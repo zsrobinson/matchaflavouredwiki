@@ -17,6 +17,22 @@
 | <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
 | {{Crafting|A1=Any Wool|Output=String,4|shapeless=1}}
 |-
+| [[Red Carpet]]
+| [[Red Wool]]
+| {{Stonecutter|Input=Red Wool|Output=Red Carpet,4}}
+|-
+| [[Red Cushion]]
+| [[Red Wool]]
+| {{Stonecutter|Input=Red Wool|Output=Red Cushion,2}}
+|-
+| [[Red Wool Slab]]
+| [[Red Wool]]
+| {{Stonecutter|Input=Red Wool|Output=Red Wool Slab,2}}
+|-
+| [[Red Wool Stairs]]
+| [[Red Wool]]
+| {{Stonecutter|Input=Red Wool|Output=Red Wool Stairs}}
+|-
 | [[Black Wool]] <small>(vanilla recipe)</small>
 | [[Black Dye]] +<br />[[White Wool]] or [[Orange Wool]] or [[Magenta Wool]] or [[Light Blue Wool]] or [[Yellow Wool]] or [[Lime Wool]] or [[Pink Wool]] or [[Gray Wool]] or [[Light Gray Wool]] or [[Cyan Wool]] or [[Purple Wool]] or [[Blue Wool]] or [[Brown Wool]] or [[Green Wool]] or [[Red Wool]]
 | {{Crafting|A1=Black Dye|B1=White Wool;Orange Wool;Magenta Wool;Light Blue Wool;Yellow Wool;Lime Wool;Pink Wool;Gray Wool;Light Gray Wool;Cyan Wool;Purple Wool;Blue Wool;Brown Wool;Green Wool;Red Wool|Output=Black Wool|shapeless=1}}
@@ -82,11 +98,19 @@
 | {{Crafting|A1=Stick|A2=Stick|A3=Stick|B1=Stick|B2=Any Wool|B3=Stick|C1=Stick|C2=Stick|C3=Stick|Output=Painting}}
 |-
 | {{MCW|Red Bed}} <small>(vanilla recipe)</small>
-| 3 × [[Red Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
+| 3 × [[Red Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks, Poplar Planks">Any planks</span>
 | {{Crafting|A1=Red Wool|A2=Any Planks|B1=Red Wool|B2=Any Planks|C1=Red Wool|C2=Any Planks|Output=Red Bed}}
 |-
 | {{MCW|Red Harness}} <small>(vanilla recipe)</small>
 | 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Red Wool]]
 | {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Red Wool|C1=Sturdy Leather|C2=Glass|Output=Red Harness}}
+|-
+| [[Red Wool Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Red Wool]]
+| {{Crafting|A1=Red Wool|B1=Red Wool|C1=Red Wool|Output=Red Wool Slab,6}}
+|-
+| [[Red Wool Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Red Wool]]
+| {{Crafting|A1=Red Wool|A2=Red Wool|A3=Red Wool|B2=Red Wool|B3=Red Wool|C3=Red Wool|Output=Red Wool Stairs,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

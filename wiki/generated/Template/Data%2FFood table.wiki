@@ -3,7 +3,7 @@
 |-
 | {{ItemLink|Apple}} || data-sort-value="2" | {{Hp|2}} || — || 1.6 || —
 |-
-| {{ItemLink|Apple Cinnamon Oatmeal}} || data-sort-value="10" | {{Hp|10}} || {{EffectLink|Speed}} (10:00)<br />{{EffectLink|Regeneration}} (2:00) || 1.8 || Crafting Table
+| {{ItemLink|Apple Cinnamon Oatmeal}} || data-sort-value="10" | {{Hp|10}} || {{EffectLink|Regeneration}} (2:00)<br />{{EffectLink|Speed}} (10:00) || 1.8 || Crafting Table
 |-
 | {{ItemLink|Apple Empanada}} || data-sort-value="8" | {{Hp|8}} || {{EffectLink|Regeneration}} (3:00) || 1.6 || Crafting Table
 |-
@@ -37,7 +37,7 @@
 |-
 | {{ItemLink|Canned Apples}} || data-sort-value="6" | {{Hp|6}} || {{EffectLink|Regeneration}} (1:00) || 1.6 || Crafting Table
 |-
-| {{ItemLink|Canned Golden Apples}} || data-sort-value="8" | {{Hp|8}} || {{EffectLink|Regeneration}} II (0:20)<br />{{EffectLink|Absorption}} II (2:00) || 1.6 || Crafting Table
+| {{ItemLink|Canned Golden Apples}} || data-sort-value="8" | {{Hp|8}} || {{EffectLink|Absorption}} II (2:00)<br />{{EffectLink|Regeneration}} II (0:20) || 1.6 || Crafting Table
 |-
 | {{ItemLink|Carrot}} || data-sort-value="1" | {{Hp|1}} || — || 1.6 || —
 |-
@@ -49,7 +49,7 @@
 |-
 | {{ItemLink|Charred Potato}} || data-sort-value="1" | {{Hp|1}} || — || 1.6 || Mud Kiln
 |-
-| {{ItemLink|Cheese}} || data-sort-value="3" | {{Hp|3}} || — || 1.6 || Crafting Table
+| {{ItemLink|Cheese}} || data-sort-value="3" | {{Hp|3}} || — || 0.8 || Crafting Table
 |-
 | {{ItemLink|Cheese Pizza}} || data-sort-value="9" | {{Hp|9}} || {{EffectLink|Strength}} (3:00) || 1.6 || Crafting Table
 |-
@@ -60,6 +60,8 @@
 | {{ItemLink|Chorus Fruit}} || data-sort-value="1" | {{Hp|1}} || — || 1.6 || —
 |-
 | {{ItemLink|Chorus Mochi}} || data-sort-value="4" | {{Hp|4}} || {{EffectLink|Levitation}} 30 (0:01) || 0.8 || Crafting Table
+|-
+| {{ItemLink|Clear Mushroom Soup}} || data-sort-value="10" | {{Hp|10}} || — || 1.6 || Crafting Table
 |-
 | {{ItemLink|Cod}} || data-sort-value="0" | — || — || 1.6 || —
 |-
@@ -79,7 +81,7 @@
 |-
 | {{ItemLink|Crimson Stroganoff}} || data-sort-value="12" | {{Hp|12}} || {{EffectLink|Weakness}} (5:00) || 1.8 || Crafting Table
 |-
-| {{ItemLink|Dried Kelp}} || data-sort-value="1" | {{Hp|1}} || {{EffectLink|Water Breathing}} (0:10) || 0.5 || Crafting Table, Oven
+| {{ItemLink|Dried Kelp}} || data-sort-value="1" | {{Hp|1}} || {{EffectLink|Water Breathing}} (0:10) || 0.5 || Crafting Table, Kindling, Oven
 |-
 | {{ItemLink|Fish and Chips}} || data-sort-value="14" | {{Hp|14}} || — || 2 || Crafting Table
 |-
@@ -87,9 +89,9 @@
 |-
 | {{ItemLink|Fried Egg}} || data-sort-value="2" | {{Hp|2}} || — || 0.8 || Kindling, Oven
 |-
-| {{ItemLink|Gilded Empanada}} || data-sort-value="8" | {{Hp|8}} || {{EffectLink|Regeneration}} II (0:45)<br />{{EffectLink|Absorption}} II (4:00) || 1.6 || Crafting Table
+| {{ItemLink|Gilded Empanada}} || data-sort-value="8" | {{Hp|8}} || {{EffectLink|Absorption}} II (4:00)<br />{{EffectLink|Regeneration}} II (0:45) || 1.6 || Crafting Table
 |-
-| {{ItemLink|Gimmari}} || data-sort-value="6" | {{Hp|6}} || {{EffectLink|Water Breathing}} (8:00) || 1.2 || Crafting Table
+| {{ItemLink|Gimmari}} || data-sort-value="6" | {{Hp|6}} || {{EffectLink|Water Breathing}} (8:00) || 1.6 || Crafting Table
 |-
 | {{ItemLink|Glow Berries}} || data-sort-value="1" | {{Hp|1}} || — || 1.6 || —
 |-
@@ -101,7 +103,7 @@
 |-
 | {{ItemLink|Gnocchi}} || data-sort-value="16" | {{Hp|16}} || — || 1.6 || Crafting Table
 |-
-| {{ItemLink|Golden Apple}} || data-sort-value="4" | {{Hp|4}} || {{EffectLink|Regeneration}} (0:30)<br />{{EffectLink|Absorption}} (2:00) || 1.6 || Crafting Table
+| {{ItemLink|Golden Apple}} || data-sort-value="4" | {{Hp|4}} || {{EffectLink|Absorption}} (2:00)<br />{{EffectLink|Regeneration}} (0:30) || 1.6 || Crafting Table
 |-
 | {{ItemLink|Golden Carrot}} || data-sort-value="2" | {{Hp|2}} || {{EffectLink|Night Vision}} (0:30) || 1.6 || Crafting Table
 |-
@@ -139,8 +141,6 @@
 |-
 | {{ItemLink|Melon Sorbet}} || data-sort-value="4" | {{Hp|4}} || {{EffectLink|Fire Resistance}} (10:00) || 1.2 || Crafting Table
 |-
-| {{ItemLink|Milk Bottle}} || data-sort-value="0" | — || — || 1.6 || Crafting Table
-|-
 | {{ItemLink|Mushroom Pizza}} || data-sort-value="8" | {{Hp|8}} || {{EffectLink|Strength}} (3:00) || 1.6 || Crafting Table
 |-
 | {{ItemLink|Naan}} || data-sort-value="4" | {{Hp|4}} || — || 1.6 || Mud Kiln
@@ -155,21 +155,23 @@
 |-
 | {{ItemLink|Pickled Mushrooms}} || data-sort-value="6" | {{Hp|6}} || — || 1.6 || Crafting Table
 |-
-| {{ItemLink|Pickled Potatoes}} || data-sort-value="10" | {{Hp|10}} || — || 1.6 || Crafting Table
+| {{ItemLink|Pickled Potatoes}} || data-sort-value="8" | {{Hp|8}} || — || 1.6 || Crafting Table
 |-
 | {{ItemLink|Poisonous Potato}} || data-sort-value="0" | — || {{EffectLink|Poison}} (0:05) — 60% chance || 1.6 || —
 |-
-| {{ItemLink|Popped Chorus Fruit}} || data-sort-value="2" | {{Hp|2}} || {{EffectLink|Levitation}} III (0:03) || 0.8 || Oven
+| {{ItemLink|Popped Chorus Fruit}} || data-sort-value="2" | {{Hp|2}} || {{EffectLink|Levitation}} III (0:03) || 0.8 || Kindling, Oven
+|-
+| {{ItemLink|Porkchop}} || data-sort-value="4" | {{Hp|4}} || — || 0 || —
 |-
 | {{ItemLink|Potato}} || data-sort-value="0" | — || — || 1.6 || —
 |-
 | {{ItemLink|Ptero Chicken Nugget}} || data-sort-value="2" | {{Hp|2}} || — || 0.8 || Crafting Table
 |-
-| {{ItemLink|Puerquito}} || data-sort-value="4" | {{Hp|4}} || {{EffectLink|Regeneration}} (0:30) || 1.6 || Crafting Table
+| {{ItemLink|Puerquito}} || data-sort-value="4" | {{Hp|4}} || {{EffectLink|Regeneration}} (0:10) || 1.6 || Crafting Table
 |-
 | {{ItemLink|Pufferfish}} || data-sort-value="0" | — || {{EffectLink|Poison}} II (1:00)<br />{{EffectLink|Hunger}} III (0:15)<br />{{EffectLink|Nausea}} (0:15) || 1.6 || —
 |-
-| {{ItemLink|Pumpkin Curry}} || data-sort-value="20" | {{Hp|20}} || {{EffectLink|Resistance}} (20:00) || 3 || Oven
+| {{ItemLink|Pumpkin Curry}} || data-sort-value="20" | {{Hp|20}} || {{EffectLink|Resistance}} (20:00) || 3 || Kindling, Oven
 |-
 | {{ItemLink|Pumpkin Empanada}} || data-sort-value="8" | {{Hp|8}} || {{EffectLink|Resistance}} (8:00) || 1.6 || Crafting Table
 |-
@@ -179,17 +181,19 @@
 |-
 | {{ItemLink|Pupusa}} || data-sort-value="3" | {{Hp|3}} || — || 1.6 || Crafting Table
 |-
+| {{ItemLink|Rabbit Stew}} || data-sort-value="0" | — || — || 1.6 || Crafting Table
+|-
 | {{ItemLink|Ramen}} || data-sort-value="0" | — || {{EffectLink|Regeneration}} (0:30) || 1.6 || Crafting Table
 |-
 | {{ItemLink|Raw Beef}} || data-sort-value="0" | — || — || 1.6 || —
-|-
-| {{ItemLink|Raw Chicken}} || data-sort-value="0" | — || {{EffectLink|Hunger}} (0:30) — 30% chance || 1.6 || —
 |-
 | {{ItemLink|Raw Flesh}} || data-sort-value="0" | — || — || 1.6 || —
 |-
 | {{ItemLink|Raw Mutton}} || data-sort-value="0" | — || — || 1.6 || —
 |-
 | {{ItemLink|Raw Porkchop}} || data-sort-value="0" | — || — || 1.6 || —
+|-
+| {{ItemLink|Raw Poultry}} || data-sort-value="0" | — || {{EffectLink|Hunger}} (0:30) — 30% chance || 1.6 || —
 |-
 | {{ItemLink|Rind Jam}} || data-sort-value="4" | {{Hp|4}} || {{EffectLink|Fire Resistance}} (5:00) || 1.6 || Crafting Table
 |-

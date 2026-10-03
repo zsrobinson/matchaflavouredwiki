@@ -17,13 +17,37 @@
 | <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
 | {{Crafting|A1=Any Wool|Output=String,4|shapeless=1}}
 |-
+| [[Black Carpet]]
+| [[Black Wool]]
+| {{Stonecutter|Input=Black Wool|Output=Black Carpet,4}}
+|-
+| [[Black Cushion]]
+| [[Black Wool]]
+| {{Stonecutter|Input=Black Wool|Output=Black Cushion,2}}
+|-
+| [[Black Wool Slab]]
+| [[Black Wool]]
+| {{Stonecutter|Input=Black Wool|Output=Black Wool Slab,2}}
+|-
+| [[Black Wool Stairs]]
+| [[Black Wool]]
+| {{Stonecutter|Input=Black Wool|Output=Black Wool Stairs}}
+|-
 | {{MCW|Black Bed}} <small>(vanilla recipe)</small>
-| 3 × [[Black Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
+| 3 × [[Black Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks, Poplar Planks">Any planks</span>
 | {{Crafting|A1=Black Wool|A2=Any Planks|B1=Black Wool|B2=Any Planks|C1=Black Wool|C2=Any Planks|Output=Black Bed}}
 |-
 | {{MCW|Black Harness}} <small>(vanilla recipe)</small>
 | 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Black Wool]]
 | {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Black Wool|C1=Sturdy Leather|C2=Glass|Output=Black Harness}}
+|-
+| [[Black Wool Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Black Wool]]
+| {{Crafting|A1=Black Wool|B1=Black Wool|C1=Black Wool|Output=Black Wool Slab,6}}
+|-
+| [[Black Wool Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Black Wool]]
+| {{Crafting|A1=Black Wool|A2=Black Wool|A3=Black Wool|B2=Black Wool|B3=Black Wool|C3=Black Wool|Output=Black Wool Stairs,4}}
 |-
 | [[Blue Wool]] <small>(vanilla recipe)</small>
 | [[Blue Dye]] +<br />[[White Wool]] or [[Orange Wool]] or [[Magenta Wool]] or [[Light Blue Wool]] or [[Yellow Wool]] or [[Lime Wool]] or [[Pink Wool]] or [[Gray Wool]] or [[Light Gray Wool]] or [[Cyan Wool]] or [[Purple Wool]] or [[Brown Wool]] or [[Green Wool]] or [[Red Wool]] or [[Black Wool]]

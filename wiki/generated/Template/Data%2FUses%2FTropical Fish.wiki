@@ -2,16 +2,16 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Cooked Fish]]
-| [[Tropical Fish]]
-| {{Cooking|station=Kindling|Input=Tropical Fish|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
+| <span class="explain" title="Cod, Tropical Fish">Any fish small</span>
+| {{Cooking|station=Kindling|Input=Any Fish Small|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Charred Fish]]
-| [[Tropical Fish]] or [[Pufferfish]] or [[Cod]] or [[Salmon]]
-| {{Cooking|station=Mud Kiln|Input=Tropical Fish;Pufferfish;Cod;Salmon|Output=Charred Fish|time=5|note=5 s, 0.35 XP}}
+| <span class="explain" title="Cod, Cooked Fish, Salmon, Cooked Large Fish, Pufferfish, Tropical Fish">Any fishes</span>
+| {{Cooking|station=Mud Kiln|Input=Any Fishes|Output=Charred Fish|time=10|note=10 s, 0.35 XP}}
 |-
 | [[Cooked Fish]]
-| [[Tropical Fish]]
-| {{Cooking|station=Oven|Input=Tropical Fish|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
+| <span class="explain" title="Cod, Tropical Fish">Any fish small</span>
+| {{Cooking|station=Oven|Input=Any Fish Small|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
 |}
 
 '''Trading'''

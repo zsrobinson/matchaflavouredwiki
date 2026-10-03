@@ -5,7 +5,7 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Mushroom stem || 1 || 100% || Silk Touch
+| Mushroom stem || 1 || 100% || predicate minecraft:tool/can_silk_touch
 |}
 
 '''Trading'''

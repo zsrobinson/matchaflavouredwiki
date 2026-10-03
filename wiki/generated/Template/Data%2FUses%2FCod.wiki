@@ -2,20 +2,20 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Cooked Fish]]
-| [[Cod]]
-| {{Cooking|station=Kindling|Input=Cod|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
+| <span class="explain" title="Cod, Tropical Fish">Any fish small</span>
+| {{Cooking|station=Kindling|Input=Any Fish Small|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
 |-
 | [[Green Curry Stock]]
 | [[Green Dye]] +<br />[[Estus Ash]] +<br />[[Sugar]] +<br />[[Milk Bottle]] +<br />[[Oil]] +<br />[[Cod]] or [[Salmon]] or [[Seitan]] +<br />[[Bowl]]
 | {{Crafting|A1=Green Dye|B1=Estus Ash|C1=Sugar|A2=Milk Bottle|B2=Oil|C2=Cod;Salmon;Seitan|A3=Bowl|Output=Green Curry Stock|shapeless=1}}
 |-
 | [[Charred Fish]]
-| [[Tropical Fish]] or [[Pufferfish]] or [[Cod]] or [[Salmon]]
-| {{Cooking|station=Mud Kiln|Input=Tropical Fish;Pufferfish;Cod;Salmon|Output=Charred Fish|time=5|note=5 s, 0.35 XP}}
+| <span class="explain" title="Cod, Cooked Fish, Salmon, Cooked Large Fish, Pufferfish, Tropical Fish">Any fishes</span>
+| {{Cooking|station=Mud Kiln|Input=Any Fishes|Output=Charred Fish|time=10|note=10 s, 0.35 XP}}
 |-
 | [[Cooked Fish]]
-| [[Cod]]
-| {{Cooking|station=Oven|Input=Cod|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
+| <span class="explain" title="Cod, Tropical Fish">Any fish small</span>
+| {{Cooking|station=Oven|Input=Any Fish Small|Output=Cooked Fish|time=5|note=5 s, 0.35 XP}}
 |}
 
 '''Trading'''

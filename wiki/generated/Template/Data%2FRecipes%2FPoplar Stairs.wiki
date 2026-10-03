@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Poplar Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Poplar Planks]]
+| {{Crafting|A1=Poplar Planks|A2=Poplar Planks|A3=Poplar Planks|B2=Poplar Planks|B3=Poplar Planks|C3=Poplar Planks|Output=Poplar Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Poplar Stairs]]
+| <span class="explain" title="Poplar Log, Poplar Wood, Stripped Poplar Log, Stripped Poplar Wood">Any poplar logs</span>
+| {{Stonecutter|Input=Any Poplar Logs|Output=Poplar Stairs,4}}
+|-
+| [[Poplar Stairs]]
+| [[Poplar Planks]]
+| {{Stonecutter|Input=Poplar Planks|Output=Poplar Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

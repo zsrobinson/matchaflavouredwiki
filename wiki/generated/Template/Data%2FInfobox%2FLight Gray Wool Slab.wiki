@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Light Gray Wool Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Light Gray Wool Slab.png}}
+|imagesize=160px
+|invimage=Light Gray Wool Slab
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:light_gray_wool_slab</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/light_gray_wool_slab.json|light_gray_wool_slab.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

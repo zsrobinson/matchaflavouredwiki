@@ -7,8 +7,8 @@
 |-
 | Cobbled deepslate || 1 || 100% || specific tool
 |-
-| Deepslate || 1 || 100% || Silk Touch
+| Deepslate || 1 || 100% || predicate minecraft:tool/can_silk_touch
 |-
-| Infested deepslate || 1 || 100% || Silk Touch
+| Infested deepslate || 1 || 100% || predicate minecraft:tool/can_silk_touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

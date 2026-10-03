@@ -98,8 +98,8 @@
 | {{Crafting|A1=Sweet Berry Mash|B1=Sugar|C1=Cheese|A2=Dough|Output=Sweet Berry Danish|shapeless=1}}
 |-
 | [[Ramen Stock]]
-| [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Chicken]] or [[Seitan]] +<br />[[Bowl]]
-| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}
+| [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Poultry]] or [[Seitan]] +<br />[[Bowl]]
+| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Poultry;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}
 |-
 | [[Warped Pizza]]
 | 2 × [[Warped Fungus]] +<br />[[Cheese]] +<br />3 × [[Tomatoes]] +<br />3 × [[Dough]]
@@ -111,7 +111,7 @@
 |-
 | [[Naan]]
 | [[Dough]]
-| {{Cooking|station=Mud Kiln|Input=Dough|Output=Naan|time=5|note=5 s, 0.35 XP}}
+| {{Cooking|station=Mud Kiln|Input=Dough|Output=Naan|time=10|note=10 s, 0.35 XP}}
 |-
 | [[Bread]]
 | [[Dough]]

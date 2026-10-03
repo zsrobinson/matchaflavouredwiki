@@ -1,0 +1,19 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Porkchop}}
+|image={{#if:{{{image|}}}|{{{image}}}|Porkchop.png}}
+|imagesize=160px
+|invimage=Porkchop
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|heals={{Hp|4}}
+|eat_time=0 seconds
+|id=<code>matcha:porkchop_classic</code>
+|base=<code>minecraft:porkchop</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/treasure/porkchop_classic.json|porkchop_classic.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

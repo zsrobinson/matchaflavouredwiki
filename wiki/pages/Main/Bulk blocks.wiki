@@ -33,23 +33,22 @@ Bulk blocks are only sold by the [[Mason]], which has no other trades. All trade
 |-
 | {{ItemLink|Bulk Glass}} || 64 glass || Apprentice || 3 || 192
 |-
-| [[File:Bulk Terracotta.png|16px|link=]] ''Bulk terracotta'' || 64 terracotta || Apprentice || 1 || 64
+| {{ItemLink|Bulk Terracotta}} || 64 terracotta || Apprentice || 1 || 64
 |-
 | {{ItemLink|Bulk Calcite}} || 64 calcite || Journeyman || 2 || 128
 |-
 | {{ItemLink|Bulk Flowstone}} || 64 [[Flowstone|flowstone]] || Journeyman || 2 || 128
 |-
-| [[File:Bulk Prismarine.png|16px|link=]] ''Bulk malachite'' || 64 [[Malachite|malachite]] || Journeyman || 1 || 64
+| {{ItemLink|Bulk Malachite}} || 64 [[Malachite|malachite]] || Journeyman || 1 || 64
 |-
-| [[File:Bulk Cinnabar.png|16px|link=]] ''Bulk cinnabar'' || 64 cinnabar || Journeyman || 1 || 64
+| {{ItemLink|Bulk Cinnabar}} || 64 cinnabar || Journeyman || 1 || 64
 |-
-| [[File:Bulk Blackstone.png|16px|link=]] ''Bulk blackstone'' || 64 blackstone || Expert || 1 || 64
+| {{ItemLink|Bulk Blackstone}} || 64 blackstone || Expert || 1 || 64
 |-
-| [[File:Bulk Smooth Basalt.png|16px|link=]] ''Bulk smooth basalt'' || 64 smooth basalt || Expert || 1 || 64
+| {{ItemLink|Bulk Smooth Basalt}} || 64 smooth basalt || Expert || 1 || 64
 |-
-| [[File:Bulk Smooth Quartz.png|16px|link=]] ''Bulk smooth quartz'' || 64 smooth quartz || Expert || 1 || 64
+| {{ItemLink|Bulk Smooth Quartz}} || 64 smooth quartz || Expert || 1 || 64
 |}
-''Names in italics'' are descriptive: these six bulk blocks have no name in the language file, so in game they show their raw translation keys (for example <code>item.kleispack.trade.bulk_terracotta</code>). See [[#Issues|Issues]].
 
 == Usage ==
 Using a bulk block (pressing use while holding it) unpacks it instantly: one bulk block is used up and replaced by 64 of its block, which go straight into the inventory.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/1/andesite.json}}</ref> Unpacking takes no time and plays the sound of a stone block falling. The tooltip shows what the bulk block holds (for example "x64 Andesite") and "Use to unpack".
@@ -67,10 +66,8 @@ The data pack also has a loot table for each bulk block except dirt, under <code
 All Mason trades are bulk blocks.
 Added Bulk Dirt.
 Bulk blocks have their own models.}}
+{{History line|1.12.3|Bulk terracotta, bulk malachite, bulk cinnabar, bulk blackstone, bulk smooth basalt and bulk smooth quartz now have English names and tooltips; before, the game showed their raw translation keys.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>}}
 }}
-
-== Issues ==
-* Bulk terracotta, malachite, cinnabar, blackstone, smooth basalt and smooth quartz have no English name or tooltip, so they display their translation keys.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
 
 == Trivia ==
 * Bulk limestone is internally <code>bulk_stone</code>, bulk flowstone is <code>bulk_dripstone</code>, and bulk malachite is <code>bulk_prismarine</code>, after the vanilla blocks the pack renames.

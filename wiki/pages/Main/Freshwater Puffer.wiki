@@ -19,7 +19,7 @@ The same tables are also rolled by the fisherman's house chest in [[Village|vill
 The freshwater puffer keeps the vanilla pufferfish's effects when eaten raw: {{EffectLink|Poison}} II for 1:00, {{EffectLink|Hunger}} III for 0:15 and {{EffectLink|Nausea}} for 0:15. It heals nothing. Cooking it into [[Cooked Pufferfish|cooked pufferfish]] removes the poison and adds [[Conduit Power]].
 
 === Cooking ===
-{{Cooking|station=Oven|Input=Freshwater Puffer|Output=Cooked Pufferfish|note=5 s, 0.35 XP}} {{Cooking|station=Kindling|Input=Freshwater Puffer|Output=Cooked Pufferfish|note=5 s, 0.35 XP}} {{Cooking|station=Mud Kiln|Input=Freshwater Puffer|Output=Charred Fish|note=5 s, 0.35 XP}}
+{{Cooking|station=Oven|Input=Freshwater Puffer|Output=Cooked Pufferfish|note=5 s, 0.35 XP}} {{Cooking|station=Kindling|Input=Freshwater Puffer|Output=Cooked Pufferfish|note=5 s, 0.35 XP}} {{Cooking|station=Mud Kiln|Input=Freshwater Puffer|Output=Charred Fish|note=10 s, 0.35 XP}}
 
 The recipes match any <code>minecraft:pufferfish</code>, so every pufferfish gives the same result.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pufferfish.json}}</ref> A [[Mud Kiln]] burns it into [[Charred Fish|charred fish]] instead.
 

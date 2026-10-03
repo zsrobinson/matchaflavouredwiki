@@ -10,8 +10,6 @@ When a text component asks for a translation key that the resource pack's langua
 |-
 | "Repaired with" line of the [[Elytra#Shakudo Elytra|shakudo elytra]] || <code>item.minecraft.copper_block</code> || The vanilla key is <code>block.minecraft.copper_block</code>, which the hepatizon elytra uses correctly.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_elytra.json}}</ref>
 |-
-| Name and tooltip of six [[bulk blocks]] (terracotta, malachite, cinnabar, blackstone, smooth basalt, smooth quartz) || <code>item.kleispack.trade.bulk_terracotta</code>, <code>…bulk_prismarine</code>, <code>…bulk_cinnabar</code>, <code>…bulk_blackstone</code>, <code>…bulk_smooth_basalt</code>, <code>…bulk_smooth_quartz</code> and their <code>.desc</code> keys || Sold by the [[Mason]]. The other bulk blocks have names.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/2/terracotta.json}}</ref>
-|-
 | Stored-enchantment line of adamant tools || <code>enchantment.kleispack.smelting</code> || The description of the <code>matcha:adamant_tool</code> smelting intrinsic, which every adamant tool carries as a stored enchantment.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_tool.json}}</ref> See [[Adamant equipment]].
 |-
 | Nowhere in practice || <code>item.kleispack.fish.axolotl</code> || Used by the loot table <code>gameplay/fishing/fish/axolotl</code>, which no other table calls. Fished axolotls come from the junk table and use <code>item.kleispack.axolotl</code>, which exists.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/fish/axolotl.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>

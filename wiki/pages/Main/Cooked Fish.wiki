@@ -4,7 +4,7 @@
 
 == Obtaining ==
 === Cooking ===
-Every cod-based fish cooks into cooked fish, since the recipe matches any <code>minecraft:cod</code>. That includes [[Cod|cod]] and 18 custom fish (see [[Fish]]), plus the tropical fish. Cooking takes {{Value|Cooked Fish|cook_time}} in an [[Oven]] or on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_cod.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_tropical_fish.json}}</ref>
+Cooked fish is made from anything in the small fish group: [[cod]], the 18 custom fish that are cod (see [[Fish]]) and the [[Tropical Fish|tropical fish]]. One recipe, with the group as its ingredient, replaces the separate cod and tropical fish recipes of 1.12.2. Cooking takes {{Value|Cooked Fish|cook_time}} in an [[Oven]] or on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_fish.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/item/fish_small.json}}</ref> A [[Mud Kiln|mud kiln]] chars it instead.
 {{Recipes}}
 
 == Usage ==
@@ -12,6 +12,11 @@ Every cod-based fish cooks into cooked fish, since the recipe matches any <code>
 Eating it gives a hidden Regeneration III for 48 ticks (2.4 seconds), which heals {{Value|Cooked Fish|heals}}. It can be eaten at any time.
 === Crafting ingredient ===
 {{Uses}}
+
+== History ==
+{{History|
+{{History line|1.12.3|The cod and tropical fish recipes are merged into one recipe that takes any small fish. Kindling and the oven both cook it.}}
+}}
 
 == References ==
 {{Reflist}}

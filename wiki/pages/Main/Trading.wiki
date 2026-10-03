@@ -28,7 +28,7 @@ Some trades only appear in certain biomes: the [[Farmer]] and [[Shepherd]] sell 
 Many professions have no trades at their higher levels. Those levels use a placeholder trade that the game always discards, so the villager gains no new offers there.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/4/filler.json}}</ref>
 
 === Changing a villager's trades ===
-Because trade lists change between versions of the pack, an existing villager can be reset with an [[Amnestic]]. It makes the nearest villager forget its profession and return to Novice, so it picks new trades from the current lists the next time it takes a job.
+Because trade lists change between versions of the pack, an existing villager can be reset with an [[Amnestic]]. Used on a villager, it makes it forget its profession and return to Novice, so it picks new trades from the current lists the next time it takes a job.
 
 == Professions ==
 Seven professions are renamed, and every profession has new trades. The job site blocks are the vanilla ones, several of which the pack also renames.

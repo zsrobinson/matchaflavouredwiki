@@ -2,7 +2,7 @@
 
 {{Infobox auto}}
 
-'''Popped chorus fruit''' is the simple preparation of [[Chorus Fruit|chorus fruit]]. It heals {{Value|Popped Chorus Fruit|heals}} and grants {{EffectLink|Levitation}} {{Value|Popped Chorus Fruit|level|effect=Levitation}} for {{Value|Popped Chorus Fruit|duration|effect=Levitation}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/popped_chorus_fruit.json}}</ref>
+'''Popped chorus fruit''' is the simple preparation of [[Chorus Fruit|chorus fruit]]. It heals {{Value|Popped Chorus Fruit|heals}} and grants {{EffectLink|Levitation}} {{Value|Popped Chorus Fruit|level|effect=Levitation}} for {{Value|Popped Chorus Fruit|duration|effect=Levitation}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/popped_chorus_fruit.json}}</ref>
 
 == Obtaining ==
 
@@ -13,7 +13,7 @@ Chorus fruit pops only in an [[oven]] ({{Value|Popped Chorus Fruit|cook_time|sta
 == Usage ==
 
 === Food ===
-Eating popped chorus fruit takes {{Value|Popped Chorus Fruit|eat_time}}, heals {{Value|Popped Chorus Fruit|heals}} and gives Levitation {{Value|Popped Chorus Fruit|level|effect=Levitation}} for {{Value|Popped Chorus Fruit|duration|effect=Levitation|format=clock}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/popped_chorus_fruit.json}}</ref> Unlike raw chorus fruit it doesn't teleport.
+Eating popped chorus fruit takes {{Value|Popped Chorus Fruit|eat_time}}, heals {{Value|Popped Chorus Fruit|heals}} and gives Levitation {{Value|Popped Chorus Fruit|level|effect=Levitation}} for {{Value|Popped Chorus Fruit|duration|effect=Levitation|format=clock}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/popped_chorus_fruit.json}}</ref> Unlike raw chorus fruit it doesn't teleport.
 
 Popped chorus fruit is used in [[Chorus Mochi|chorus mochi]] and, as in vanilla, purpur blocks.
 

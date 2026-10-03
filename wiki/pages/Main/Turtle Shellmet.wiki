@@ -3,17 +3,15 @@
 The '''turtle shellmet''' is the renamed turtle shell helmet. The pack removes its vanilla recipe, so it cannot be crafted.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
 == Obtaining ==
-A baby turtle drops a shellmet instead of a scute when it grows up.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/turtle_grow.json}}</ref> Outside Creative mode, any plain turtle scute a player picks up is also exchanged for a shellmet.<ref>{{Source|MF_datapack/data/matcha/function/remove_vanilla_items/turtle_scute.mcfunction}}</ref>
+A baby turtle drops a shellmet instead of a scute when it grows up.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/turtle_grow.json}}</ref>
 
 == Usage ==
 It keeps vanilla stats (2 armor, 275 durability, Water Breathing). The vanilla repair tag still names turtle scutes, which are now divine fragments.
 
-== Trivia ==
-* The scute exchange function runs <code>say running</code>, so it posts "running" in chat each time.
-
 == History ==
 {{History|
 {{History line|1.10|Renamed from turtle shell to turtle shellmet.}}
+{{History line|1.12.3|Plain turtle scutes a player picks up are no longer exchanged for a shellmet.}}
 }}
 
 == References ==
