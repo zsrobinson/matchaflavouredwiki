@@ -1,27 +1,26 @@
-{{Upcoming|type=page}}
 {{Infobox
 |title=Favorite food
 |type=Trading mechanic
 }}
-A villager's '''favorite food''' is an upcoming trade mechanic: every employed [[villager]] gets one extra trade after its first trade, in which it buys one serving of a randomly chosen [[food]] for an [[Obol]], once. It is on the repository's <code>main</code> branch but not in the current release, [[Matcha Flavoured 1.12.2|1.12.2-beta]]. Once released, it will be the only way to sell most of the pack's foods.
+A villager's '''favorite food''' is a trade mechanic added in 1.12.3: every employed [[villager]] gets one extra trade after its first trade, in which it buys one serving of a randomly chosen [[food]] for an [[Obol]], once. It is the only way to sell most of the pack's foods.
 
 == Mechanics ==
-When the data pack loads, it starts a check that runs 3 seconds later and then every 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/favorite_food_setup.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> Each check looks at every loaded villager that:
+When the data pack loads, it starts a check that runs 3 seconds later and then every 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/favorite_food_setup.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref> Each check looks at every loaded villager that:
 * has a profession (any profession other than none), and
 * has more than 0 villager experience, meaning the player has traded with it at least once, and
 * has not been given a favorite food yet.
 
-For each such villager, the pack picks a random whole number from 0 to 41 and runs the matching one of 42 food functions.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> The number is passed to the function name through a macro, <code>food_trades/food_$(num)</code>.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_macro.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref> That function appends one offer to the end of the villager's trade list and tags the villager so it is never picked again:<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_0.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+For each such villager, the pack picks a random whole number from 0 to 41 and runs the matching one of 42 food functions.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update.mcfunction}}</ref> The number is passed to the function name through a macro, <code>food_trades/food_$(num)</code>.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_macro.mcfunction}}</ref> That function appends one offer to the end of the villager's trade list and tags the villager so it is never picked again:<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_0.mcfunction}}</ref>
 {| class="wikitable"
 ! Villager wants !! Villager gives !! Uses
 |-
-| 1 of the favorite food (4 for a chicken nugget) || 1 {{ItemLink|Obol}} || 1
+| 1 of the favorite food || 1 {{ItemLink|Obol}} || 1
 |}
 Every one of the 42 foods has the same 1 in 42 chance. The food in the trade carries the full item data of the pack's current version of that food, so it has to be a food made or found in the current version; older copies with a different format do not match.
 
 Because the check needs the villager to have experience, the favorite food appears only after the first trade with a villager, and never on an unemployed villager or a nitwit. The favorite food is a villager trade only; the [[Wandering Trader]] does not get one.
 
-An [[Amnestic]] clears the villager's favorite food flag. Since the villager keeps its experience, it is given a new random favorite food shortly after it takes a new profession.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic/villager_consumed.mcfunction}}</ref>
+An [[Amnestic]] clears the villager's favorite food flag. The Amnestic also sets the villager's experience back to 0, so it is given a new random favorite food after its first trade in a new profession.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic/villager_consumed.mcfunction}}</ref>
 
 == Foods ==
 {| class="wikitable sortable"
@@ -31,7 +30,7 @@ An [[Amnestic]] clears the villager's favorite food flag. Since the villager kee
 |-
 | 1 || {{ItemLink|Bokguk}} || 1
 |-
-| 2 || {{ItemLink|Brachio Chicken Nugget}} || 4
+| 2 || {{ItemLink|Brachio Chicken Nugget}} || 1
 |-
 | 3 || {{ItemLink|Brownie}} || 1
 |-
@@ -81,7 +80,7 @@ An [[Amnestic]] clears the villager's favorite food flag. Since the villager kee
 |-
 | 26 || {{ItemLink|Pad Thai}} || 1
 |-
-| 27 || {{ItemLink|Ptero Chicken Nugget}} || 4
+| 27 || {{ItemLink|Ptero Chicken Nugget}} || 1
 |-
 | 28 || {{ItemLink|Puerquito}} || 1
 |-
@@ -89,13 +88,13 @@ An [[Amnestic]] clears the villager's favorite food flag. Since the villager kee
 |-
 | 30 || {{ItemLink|Toadstool Stroganoff}} || 1
 |-
-| 31 || {{ItemLink|Stego Chicken Nugget}} || 4
+| 31 || {{ItemLink|Stego Chicken Nugget}} || 1
 |-
 | 32 || {{ItemLink|Stroganoff}} || 1
 |-
 | 33 || {{ItemLink|Sweet Berry Danish}} || 1
 |-
-| 34 || {{ItemLink|Tricero Chicken Nugget}} || 4
+| 34 || {{ItemLink|Tricero Chicken Nugget}} || 1
 |-
 | 35 || {{ItemLink|Warped Pizza}} || 1
 |-
@@ -114,7 +113,10 @@ An [[Amnestic]] clears the villager's favorite food flag. Since the villager kee
 All 42 foods sell for 1 obol, including the curries and ramen, which take the most steps to cook.
 
 == History ==
-The favorite food was contributed by TankyAibem (pull request #193), as a rework of the "local flavors" add-on. It was merged into the repository's <code>main</code> branch about an hour and a half after [[Matcha Flavoured 1.12.2|1.12.2-beta]] was published on Modrinth, so the 1.12.2-beta download does not include it.<ref>[https://github.com/kleiwright/matcha-flavoured/commit/139f198a Merge of pull request #193] (2026-09-19 04:50 UTC; the beta was published at 03:20 UTC)</ref>
+{{History|
+{{History line|1.12.3|Added: every employed villager that has been traded with buys one random food, once. The 42 foods each carry one item per trade, and an [[Amnestic]] gives the villager a new one.}}
+}}
+The favorite food was contributed by TankyAibem (pull request #193), as a rework of the "local flavors" add-on. It was merged into the repository's <code>main</code> branch about an hour and a half after [[Matcha Flavoured 1.12.2|1.12.2-beta]] was published on Modrinth and is part of 1.12.3.<ref>[https://github.com/kleiwright/matcha-flavoured/commit/139f198a Merge of pull request #193] (2026-09-19 04:50 UTC; the beta was published at 03:20 UTC)</ref>
 
 == Trivia ==
 * The functions and tags use the internal names <code>favorite_food</code>, <code>trader_update</code> and <code>foodChecked</code>.

@@ -14,14 +14,13 @@ A honey bottle, a [[Milk Bottle|milk bottle]], estus ash, a raw [[apple]], 2 [[W
 Eating it takes {{Value|Apple Cinnamon Oatmeal|eat_time}}, heals {{Value|Apple Cinnamon Oatmeal|heals}} and gives Speed {{Value|Apple Cinnamon Oatmeal|level|effect=Speed}} (+20%) for {{Value|Apple Cinnamon Oatmeal|duration|effect=Speed|format=clock}} and Regeneration {{Value|Apple Cinnamon Oatmeal|level|effect=Regeneration}} for {{Value|Apple Cinnamon Oatmeal|duration|effect=Regeneration|format=clock}}. The bowl is given back.
 
 === Trading ===
-{{Upcoming|type=section}}
-It is one of the foods a villager will be able to ask for as its [[favorite food]].
+It is one of the foods a villager can ask for as its [[favorite food]].
 
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Added apple cinnamon oatmeal, suggested by Bingbongbooper.}}
 {{History line|Upcoming|2=Crafting apple cinnamon oatmeal returns the milk bottle's glass bottle. In 1.12.2 the advancement behind this still used an old recipe ID, so the bottle was lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
-{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == See also ==

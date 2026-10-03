@@ -14,13 +14,12 @@ A '''sweet berry Danish''' is the meal of [[Sweet Berries|sweet berries]]. It he
 Eating one takes {{Value|Sweet Berry Danish|eat_time}}, heals {{Value|Sweet Berry Danish|heals}} and gives Health Boost {{Value|Sweet Berry Danish|level|effect=Health Boost}} for {{Value|Sweet Berry Danish|duration|effect=Health Boost|format=clock}}.
 
 === Trading ===
-{{Upcoming|type=section}}
-It is one of the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_33.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_33.mcfunction}}</ref>
 
 == History ==
 {{History|
 {{History line|1.12.1-alpha|The recipe and the traded Danish now give the same item.}}
-{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == See also ==

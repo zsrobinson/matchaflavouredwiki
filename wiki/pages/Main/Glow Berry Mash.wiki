@@ -13,7 +13,7 @@ Glow berries cook into glow berry mash in an [[oven]] or on [[kindling]] in {{Va
 == Usage ==
 
 === Food ===
-Eating glow berry mash takes {{Value|Glow Berry Mash|eat_time}} and heals {{Value|Glow Berry Mash|heals}}. A bell sound plays, and 2.4 seconds later every other entity within 50 blocks glows for 3 seconds.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_3.mcfunction}}</ref> See [[Glow Berries#Aura]].
+Eating glow berry mash takes {{Value|Glow Berry Mash|eat_time}} and heals {{Value|Glow Berry Mash|heals}}. A bell sound plays, and 2.4 seconds later every other entity within 50 blocks glows for 3 seconds.<ref>{{Source|MF_datapack/data/matcha/function/effects/aura/3s.mcfunction}}</ref> See [[Glow Berries#Aura]].
 
 Obtaining glow berry mash unlocks [[Glow Berry Jam|glow berry jam]] and [[Glow Berry Crumble|glow berry crumble]].
 

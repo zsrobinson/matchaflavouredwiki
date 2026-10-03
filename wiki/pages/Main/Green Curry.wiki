@@ -14,8 +14,7 @@ A [[Green Curry Stock|green curry stock]] cooks into green curry in {{Value|Gree
 Eating it takes {{Value|Green Curry|eat_time}}, heals {{Value|Green Curry|heals}} and gives Speed {{Value|Green Curry|level|effect=Speed}} (+40% speed) for {{Value|Green Curry|duration|effect=Speed|format=clock}}. The bowl is given back.
 
 === Trading ===
-{{Upcoming|type=section}}
-It is one of the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_36.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_36.mcfunction}}</ref>
 
 == Advancements ==
 * ''Too Spicy!'': cook green curry in an [[oven]] (1 [[obol]]). Curry cooked on kindling doesn't count.
@@ -23,7 +22,7 @@ It is one of the foods a villager will be able to ask for as its [[favorite food
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Removed an outdated green curry recipe. The stock uses oil and accepts seitan.}}
-{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == Trivia ==

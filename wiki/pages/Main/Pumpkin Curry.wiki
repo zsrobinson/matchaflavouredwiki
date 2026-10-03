@@ -14,8 +14,7 @@ A [[pumpkin curry stock]] cooks into pumpkin curry in {{Value|Pumpkin Curry|cook
 Eating it takes {{Value|Pumpkin Curry|eat_time}}, heals {{Value|Pumpkin Curry|heals}} and gives Resistance {{Value|Pumpkin Curry|level|effect=Resistance}} for {{Value|Pumpkin Curry|duration|effect=Resistance|format=clock}}. The bowl is given back.
 
 === Trading ===
-{{Upcoming|type=section}}
-It is one of the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_40.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_40.mcfunction}}</ref>
 
 == Advancements ==
 * ''Fortified Goodness'': make pumpkin curry (1 [[obol]]).
@@ -23,7 +22,7 @@ It is one of the foods a villager will be able to ask for as its [[favorite food
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Added pumpkin curry and its stock.}}
-{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == See also ==

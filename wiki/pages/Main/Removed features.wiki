@@ -49,9 +49,11 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 |-
 | Redstone particles || 1.12.2 ||
 |-
-| [[Poplar]] stonecutter and sapling recipes || 1.12.2 || Added in 1.12.1-alpha, ahead of the poplar wood type, which ''Minecraft'' 26.2 doesn't have.<ref>{{Source|Matcha_Flavoured/data/main/recipe/stonecutting/poplar_planks.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>
+| [[Poplar]] stonecutter and sapling recipes || 1.12.2 || Added in 1.12.1-alpha, ahead of the poplar wood type, which ''Minecraft'' 26.2 doesn't have. Both came back in 1.12.3, when the pack was ported to ''Minecraft'' 26.3, which has poplar wood.<ref>{{Source|Matcha_Flavoured/data/main/recipe/stonecutting/poplar_planks.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>
 |-
 | Blind cave fish and blind minnow || 1.12.2 || Unused fish: 1.12.1-alpha had a loot table for each, but no fishing table rolled them.<ref>{{Source|Matcha_Flavoured/data/minecraft/loot_table/gameplay/fishing/fish/blind_cave_fish.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>
+|-
+| The generic "Map" item || 1.12.3 || Every explorer map from a villager or chest is now its own named item ("Mineshaft Map", "Woodland Mansion Map" and so on) with its own entry in the item list; no item is called just "Map" any more. The maps still work the same way. See [[Explorer maps]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/mineshaft.json}}</ref>
 |}
 
 == References ==

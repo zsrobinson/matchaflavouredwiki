@@ -14,14 +14,13 @@ Dough, a [[Cooked Fish|cooked fish]] or [[Cooked Large Fish|cooked large fish]],
 Eating pad Thai takes {{Value|Pad Thai|eat_time}}, heals {{Value|Pad Thai|heals}} and gives Night Vision for {{Value|Pad Thai|duration|effect=Night Vision|format=clock}}. The bowl is given back.
 
 === Trading ===
-{{Upcoming|type=section}}
-It is one of the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_26.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_26.mcfunction}}</ref>
 
 == History ==
 {{History|
 {{History line|1.10|Added Pad Thai.}}
 {{History line|1.12.1-alpha|Night Vision extended from 5:00 to 10:00.}}
-{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == See also ==

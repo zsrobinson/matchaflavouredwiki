@@ -15,14 +15,13 @@ Tomatoes, [[cheese]] and [[bread]] (or [[naan]]). Picking up tomatoes unlocks th
 Eating bruschetta takes {{Value|Bruschetta|eat_time}}, heals {{Value|Bruschetta|heals}} and gives Strength {{Value|Bruschetta|level|effect=Strength}} for {{Value|Bruschetta|duration|effect=Strength|format=clock}}.
 
 === Trading ===
-{{Upcoming|type=section}}
-It is one of the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_4.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_4.mcfunction}}</ref>
 
 == History ==
 {{History|
 {{History line|1.03|Bruschetta works.}}
 {{History line|1.10|Fixed the spelling of the name.}}
-{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == See also ==

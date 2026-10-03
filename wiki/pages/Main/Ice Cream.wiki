@@ -14,14 +14,13 @@ A snowball, a [[Milk Bottle|milk bottle]], sugar, a blue orchid and [[bread]] (o
 Eating ice cream takes {{Value|Ice Cream|eat_time}}, heals {{Value|Ice Cream|heals}} and removes the same maleffects as [[bread]]. It leaves a [[bowl]] behind, although the recipe doesn't use one.
 
 === Trading ===
-{{Upcoming|type=section}}
-It is one of the foods a villager will be able to ask for as its [[favorite food]].
+It is one of the foods a villager can ask for as its [[favorite food]].
 
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Added ice cream, suggested by Bingbongbooper.}}
 {{History line|Upcoming|2=Crafting ice cream returns the milk bottle's glass bottle. In 1.12.2 the advancement behind this still used an old recipe ID, so the bottle was lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
-{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == See also ==
