@@ -11,7 +11,7 @@ Packed mud can be made from mud and [[straw]], or from dirt and short dry grass,
 
 == Usage ==
 === Kilning ===
-Most kiln recipes take 5 seconds, as in a vanilla smoker. The table lists every recipe's time and experience.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json}}</ref>
+Most kiln recipes take 10 seconds, twice as long as in a vanilla smoker. Raw copper takes 20 seconds and a wet sponge 5. The table lists every recipe's time and experience.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json}}</ref>
 {{Data/Station/Mud Kiln}}
 
 === Food ===
@@ -25,6 +25,7 @@ The mud kiln cooks only four foods. [[Dough]] becomes [[naan]], and raw meat, fi
 {{History line|1.03|Charcoal and all glazed terracotta can be made in the kiln.}}
 {{History line|1.10|Quartz can be kilned into glass and amethyst into tinted glass.}}
 {{History line|1.12.1-alpha|Added stone, cobblestone, sand, sandstone, red sandstone, terracotta and sponge kilning.}}
+{{History line|1.12.3|Every recipe takes twice as long (most 10 seconds instead of 5). The kiln chars any fish, and the charred fish, meat, potato and naan recipes take 10 seconds as well.}}
 }}
 
 == References ==

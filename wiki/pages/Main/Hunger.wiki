@@ -8,18 +8,18 @@
 
 == Mechanics ==
 === Food level ===
-{{Diagram|Food level|width=360|align=right|caption=The food level the pack refills at 6 or below and drains at 10 or above, so it sits at 7 or 8, just above vanilla's sprinting threshold.}}
+{{Diagram|Food level|width=360|align=right|caption=The food level the pack refills at 7 or below and drains at 10 or above, so it sits at 8 or 9, above vanilla's sprinting threshold.}}
 Every tick, the pack checks each player's food level (0 to 20, where vanilla shows 2 points per drumstick):<ref name="mh">{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
 * At 10 or above, the player is given {{EffectLink|Hunger}} CCLVI (level 256) for 1 second, which drains the food level quickly.
-* At 6 or below, the player is given {{MCW|Saturation}} II with a duration of 1, which refills it. Saturation is an instant effect, so the game reads that duration as 1 tick rather than 1 second: each time, the effect acts once and restores 2 food points, and it's given again on the next tick while the level is still 6 or below.
+* At 7 or below, the player is given {{MCW|Saturation}} II with a duration of 1, which refills it. Saturation is an instant effect, so the game reads that duration as 1 tick rather than 1 second: each time, the effect acts once and restores 2 food points, and it's given again on the next tick while the level is still 7 or below.
 
-The food level therefore stays a little above 6, the vanilla threshold for sprinting, and never gets high enough for vanilla natural regeneration or low enough to cause starvation. Both effects are hidden from the HUD.
+The food level therefore stays at 8 or 9, above 6, the vanilla threshold for sprinting, and never gets high enough for vanilla natural regeneration or low enough to cause starvation. Both effects are hidden from the HUD.
 
 === Hunger bar ===
 The resource pack replaces every food icon on the HUD with a blank texture, so the hunger bar isn't shown.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/gui/sprites/hud/food_full.png}}</ref>
 
 === Eating ===
-The pack's foods use the <code>can_always_eat</code> option and restore no hunger. For example, [[bread]] has 0 nutrition and 0 saturation, and instead grants {{EffectLink|Regeneration}} and removes harmful effects.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref> What a food does is described by its [[intrinsic]] and its tooltip. See [[Food]] and [[Cooking]].
+The pack's cooked foods have no vanilla food component at all: they are consumables that can always be eaten and restore no hunger (before 1.12.3 they had a food component with 0 nutrition and 0 saturation and the <code>can_always_eat</code> option). For example, [[bread]] instead grants {{EffectLink|Regeneration}} and removes harmful effects.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref> What a food does is described by its [[intrinsic]] and its tooltip. See [[Food]] and [[Cooking]].
 
 Because the food level never reaches 20, vanilla foods that are not flagged <code>can_always_eat</code> can still be eaten at any time.
 
@@ -35,6 +35,7 @@ The {{EffectLink|Hunger}} status effect still exists and is used internally to d
 == History ==
 {{History|
 {{History line|0.4-alpha|Removed the "You cannot eat right now" warning.}}
+{{History line|1.12.3|The pack refills the food level at 7 or below instead of 6 or below, so it now rests at 8 or 9 instead of 7 or 8. Crafted and cooked foods lose their food component (which had 0 nutrition and 0 saturation) and are plain consumables.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref>}}
 }}
 
 == Trivia ==

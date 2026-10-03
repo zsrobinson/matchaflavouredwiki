@@ -3,12 +3,17 @@
 
 == Obtaining ==
 === Cooking ===
-Any cod, salmon, pufferfish or tropical fish, including all custom [[fish]], turns into charred fish in a mud kiln in {{Value|Charred Fish|cook_time}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_fish.json}}</ref>
+Any fish in the vanilla fish group (cod, salmon, pufferfish and tropical fish, including all custom [[fish]], and also [[cooked fish]] and [[cooked large fish]]) turns into charred fish in a mud kiln in {{Value|Charred Fish|cook_time}}.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_fish.json}}</ref>
 {{Recipes}}
 
 == Usage ==
 === Food ===
 Eating it gives a hidden Regeneration IV for 15 ticks, which heals {{Value|Charred Fish|heals}}.
+
+== History ==
+{{History|
+{{History line|1.12.3|The recipe takes the whole fish group instead of four listed fish, so cooked fish and cooked large fish can be charred too. Firing takes 10 seconds instead of 5.}}
+}}
 
 == References ==
 {{Reflist}}

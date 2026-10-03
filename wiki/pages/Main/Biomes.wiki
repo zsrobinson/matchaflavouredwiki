@@ -1,5 +1,5 @@
 {{Vanilla|Biome}}
-'''Biomes''' generate in the same places as in vanilla ''Minecraft'', but [[Matcha Flavoured]] overrides 65 of them to change their mob spawns, ore and plant features, and colors. The pack's resource pack also replaces the grass and foliage color maps with its own gradated maps (made by Movpasd), which changes the color of plants in every biome.
+'''Biomes''' generate in the same places as in vanilla ''Minecraft'', but [[Matcha Flavoured]] overrides 66 of them to change their mob spawns, ore and plant features, and colors. The pack's resource pack also replaces the grass and foliage color maps with its own gradated maps (made by Movpasd), which changes the color of plants in every biome.
 
 == General changes ==
 ; Husks everywhere
@@ -26,7 +26,7 @@ Spawn weights are given as (weight, minimum group – maximum group). Features m
 |-
 | Basalt deltas || — || — || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
 |-
-| Beach || +Husk (75, 1–2)<br>Zombie 95→100 || +Blue orchids and cornflowers<br>−Default flowers || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+| Beach || +Husk (75, 1–2)<br>Zombie 95→100<br>+Chicken (20, 4) || +Blue orchids and cornflowers<br>−Default flowers || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
 |-
 | Birch forest || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#aebfe2</code> (was <code>#3f76e4</code>)<br>Sky <code>#9ebbf8</code><br>Water fog <code>#2e304c</code>
 |-
@@ -35,6 +35,8 @@ Spawn weights are given as (weight, minimum group – maximum group). Features m
 | Cold ocean || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#aebfe2</code> (was <code>#3d57d6</code>)
 |-
 | Crimson forest || — || −Gravel || Water <code>#941010</code> (was <code>#3f76e4</code>)<br>fewer crimson spores
+|-
+| Dappled forest || +Husk (75, 1–2) || Pack tree feature, 64 attempts per chunk<br>No deep silver || Water <code>#a2b5dd</code>
 |-
 | Dark forest || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
 |-
@@ -100,7 +102,7 @@ Spawn weights are given as (weight, minimum group – maximum group). Features m
 |-
 | Pale garden || −Creeper<br>−Enderman<br>−Skeleton<br>−Slime<br>−Spider<br>−Witch<br>−Zombie<br>−Zombie villager || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#9b9fa8</code> (was <code>#76889d</code>)
 |-
-| Plains || +Husk (75, 1–2)<br>Zombie 90→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)<br>Water fog <code>#272844</code>
+| Plains || +Husk (75, 1–2)<br>Zombie 90→100<br>−Chicken || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)<br>Water fog <code>#272844</code>
 |-
 | River || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)<br>Sky <code>#78a7ff</code><br>Water fog <code>#272844</code>
 |-
@@ -126,9 +128,9 @@ Spawn weights are given as (weight, minimum group – maximum group). Features m
 |-
 | Stony shore || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)<br>Sky color removed (vanilla <code>#7da2ff</code>)<br>Water fog <code>#2e304c</code>
 |-
-| Sunflower plains || +Husk (75, 1–2)<br>Zombie 90→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
+| Sunflower plains || +Husk (75, 1–2)<br>Zombie 90→100<br>−Chicken || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#a2b5dd</code> (was <code>#3f76e4</code>)
 |-
-| Swamp || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || —
+| Swamp || +Husk (75, 1–2)<br>Zombie 95→100<br>Frog 10→20<br>−Chicken<br>−Cow<br>−Sheep || +Deep [[Native Silver|silver]] (3/chunk)<br>Swamp trees replaced by the pack's own swampy oaks, bushes and shelf mushrooms (see [[#Features|Features]]) || —
 |-
 | Taiga || +Husk (75, 1–2)<br>Zombie 95→100 || +Deep [[Native Silver|silver]] (3/chunk) || Water <code>#aebfe2</code> (was <code>#3f76e4</code>)<br>Sky <code>#9ebbf8</code><br>Water fog <code>#2e304c</code>
 |-
@@ -163,7 +165,11 @@ Spawn weights are given as (weight, minimum group – maximum group). Features m
 |-
 | <code>matcha:flower_beach</code> || Beach || Blue orchids (weight 2) and cornflowers (weight 1); a 1 in 32 chance per chunk of a patch of 64 attempts.<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/flower_beach.json}}</ref>
 |-
-| <code>matcha:nether_wart</code> || Nether Wastes, Soul Sand Valley || [[Hellspore]] patches of age 0–3 on soul sand. Uses a tree feature whose "trunk" is Nether wart and whose base block is soul sand.<ref>{{Source|MF_datapack/data/matcha/worldgen/configured_feature/nether_wart.json}}</ref>
+| <code>matcha:trees_swamp</code> || Swamp || Replaces the vanilla swamp trees: 19 attempts per chunk (3 in one chunk out of ten), each placing a bush (20%), a swampy oak (40%) or, by default, a swampy oak. The swampy oak has a poplar-style trunk 5 to 9 blocks tall with 1 to 4 branches, standing on muddy mangrove roots, with shelf mushrooms (60%), leaf litter, vines (20%) and occasional logs lying against the trunk; the bush is a single log under a small leaf ball.<ref>{{Source|MF_datapack/data/matcha/worldgen/feature/swamp_oak.json}}</ref><ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/trees_swamp.json}}</ref><ref>{{Source|MF_datapack/data/matcha/worldgen/feature/trees_swamp.json}}</ref>
+|-
+| <code>minecraft:trees_dappled_forest</code> || Dappled forest || 64 attempts per chunk of the dappled forest's [[Poplar|poplar]] trees (orange, red and yellow) with leaf litter.<ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/trees_dappled_forest.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/feature/orange_poplar.json}}</ref>
+|-
+| <code>matcha:nether_wart</code> || Nether Wastes, Soul Sand Valley || [[Hellspore]] patches of age 0–3 on soul sand. Uses a tree feature whose "trunk" is Nether wart and whose base block is soul sand.<ref>{{Source|MF_datapack/data/matcha/worldgen/feature/nether_wart.json}}</ref>
 |}
 
 == Music ==
@@ -185,6 +191,7 @@ The resource pack replaces the forest background music with the track "Abbey", s
 * Cats spawn in Jungles and Sparse Jungles.
 * Purple placeholder grass colors replaced by gradated color maps.}}
 {{History line|1.12.2|Taiga grass color changed.}}
+{{History line|1.12.3|Swamps got their own trees (swampy oaks, bushes and shelf mushrooms) and lost chickens, cows and sheep from their spawn list, and frogs became twice as likely. The dappled forest, new in ''Minecraft'' 26.3, was added with a closed canopy of poplar trees. Plains lost chickens from their spawn list and beaches gained them.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/swamp.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/dappled_forest.json}}</ref>}}
 }}
 
 == References ==

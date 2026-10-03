@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Poplar Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Poplar Slab.png}}
+|imagesize=160px
+|invimage=Poplar Slab
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:poplar_slab</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/poplar_slab_from_trapdoor.json|poplar_slab_from_trapdoor.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

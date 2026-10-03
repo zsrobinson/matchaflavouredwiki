@@ -7,7 +7,7 @@
 |tooltip={{G|Aura}} Aura (0:30)
 |duration=0:03 to 1:00
 }}
-'''Aura''' ({{G|Aura}}), called '''soul sight''' in the pack's code, is the [[intrinsic]] of [[Glow Berries|glow berries]]. Shortly after a glow berry dish is eaten, a bell rings and every creature within 50 blocks receives the {{MCW|Glowing}} effect, which outlines it through walls. It is meant for caving: the developer suggests bringing glow berries along when exploring caves.<ref>{{Cite video|quote=If they're caving, they should probably grab some glow berries or carrots.}}</ref>
+'''Aura''' ({{G|Aura}}) is the [[intrinsic]] of [[Glow Berries|glow berries]]. Shortly after a glow berry dish is eaten, a bell rings and every creature within 50 blocks receives the {{MCW|Glowing}} effect, which outlines it through walls. It is meant for caving: the developer suggests bringing glow berries along when exploring caves.<ref>{{Cite video|quote=If they're caving, they should probably grab some glow berries or carrots.}}</ref>
 
 == Obtaining ==
 {| class="wikitable"
@@ -22,20 +22,21 @@
 Each food also heals the player; see its page.
 
 == Mechanics ==
-Aura is not a status effect on the player. Eating one of the foods triggers a hidden advancement, which runs the soul sight function:<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glow_jam_eaten.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_effect_30.mcfunction}}</ref>
+Aura is not a status effect on the player. Each aura food is marked with custom data, and eating one triggers a hidden advancement that runs the aura function for its duration (3, 30 or 60 seconds):<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/30s.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/aura/30s.mcfunction}}</ref>
 # A bell resonating sound plays at the player.
-# After 48 ticks (2.4 seconds), every entity within 50 blocks of the player, except the player, receives {{MCW|Glowing}} for the food's duration, with no particles.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_30.mcfunction}}</ref>
+# After 48 ticks (2.4 seconds), every entity within 50 blocks of the player, except the player, receives {{MCW|Glowing}} for the food's duration, with no particles.<ref>{{Source|MF_datapack/data/matcha/function/effects/aura/apply_glow.macro.mcfunction}}</ref>
 # The advancement is revoked, so it can trigger again.
 
-The glow is applied to every living entity in range: hostile and passive mobs, villagers and other players. Status effects can't be given to items, arrows or other non-living entities, so they don't glow. Entities that move into range after the pulse do not start glowing, and glowing entities keep their outline even if they move away.
+The glow is applied to every living entity in range: hostile and passive mobs, villagers and other players. Non-living entities (armor stands, boats, minecarts, paintings and item frames) are skipped, and other non-living entities such as items and arrows can't be given effects at all, so they don't glow.<ref>{{Source|MF_datapack/data/matcha/tags/entity_type/aura_immune.json}}</ref> Entities that move into range after the pulse do not start glowing, and glowing entities keep their outline even if they move away.
 
 === Behavior in multiplayer ===
-The glow is applied by a scheduled function, which runs from the server rather than from the player. It is centered on the player nearest to the world spawn point, which in multiplayer is not necessarily the player who ate the food.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_60.mcfunction}}</ref> Eating the same aura food twice within 2.4 seconds replaces the pending pulse instead of adding a second one.
+Each player has their own scoreboard timer, so the pulse is centred on the player who ate the food, not on the player nearest the world spawn. Eating another aura food while a pulse is still charging (within 2.4 seconds) does not start a second pulse; the pending pulse uses the duration of the food eaten last.<ref>{{Source|MF_datapack/data/matcha/function/effects/aura/effect.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/aura/locate_players.mcfunction}}</ref>
 
 == History ==
 {{History|
 {{History line|1.10|Fixed Glow Berry Mash not working.}}
 {{History line|1.12.2|Aura received its tooltip glyph with the new effect icons.}}
+{{History line|1.12.3|The aura functions were rewritten: the pulse is now centred on the player who ate the food instead of the player nearest the world spawn, and a second aura food eaten while one is charging only changes the pending pulse's duration.<ref>{{Source|MF_datapack/data/matcha/function/effects/aura/locate_players.mcfunction}}</ref>}}
 }}
 
 == See also ==

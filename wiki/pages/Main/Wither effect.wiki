@@ -9,7 +9,7 @@
 The '''Wither effect''' in [[Matcha Flavoured]] still deals vanilla damage over time, but a player who stays withered for 8 seconds also loses maximum [[health]], exactly as if they had [[death|died]]. Easy difficulty is exempt. The effect is applied by [[Wither Skeleton|wither skeletons]], the [[Wither]] and wither roses, so [[Hell]] fortresses and the Wither fight can cost hearts without the player dying.
 
 == Mechanics ==
-Whenever a player's effects change, the pack starts tracking them unless the world is on Easy.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/has_wither.mcfunction}}</ref> Once a second, for each tracked player:<ref name="timer">{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/check_wither_timer.mcfunction}}</ref>
+Whenever a player's effects change to include Wither, the pack starts tracking that player unless the world is on Easy.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/has_wither_effect.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/wither/mark_player.mcfunction}}</ref> Once a second, for each tracked player:<ref name="timer">{{Source|MF_datapack/data/matcha/function/effects/wither/effect.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/1s/wither_effect.mcfunction}}</ref>
 * If they no longer have the Wither effect, tracking stops and the count resets.
 * If they are still withered, the count goes up by 1, an experience pickup sound plays, and a meter in the action bar fills up.
 * When the count reaches 8, the Wither effect is removed, the player loses maximum health as if they had died, a quiet totem sound plays, and the player takes a tiny amount of damage (0.1) so the hit registers.
@@ -17,11 +17,7 @@ Whenever a player's effects change, the pack starts tracking them unless the wor
 The meter is shown with the pack's own glyphs: a Wither icon followed by a bar that fills over the 8 seconds.
 
 === Multiplayer ===
-In 1.12.2-beta the count and the meter are not kept per player. Each second, the check for a withered player adds 1 to ''every'' online player's count and shows the meter in every player's action bar, and the quiet totem sound at the end is played to all players, so those standing near the withered player hear it.<ref name="timer" /> In multiplayer this means:
-* players who aren't withered see another player's meter fill up (their own count is reset when their own check runs, so they don't lose hearts);
-* when several players are withered at the same time, each of their counts rises by more than 1 per second, so they lose hearts in fewer than 8 seconds.
-
-The <code>main</code> branch fixes this, so the next version keeps a separate count for each player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/check_wither_timer.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+The count, the meter and the sound are kept for each player separately: only the withered player sees their meter, hears the sound and loses hearts.<ref name="timer" /> In 1.12.2 they were shared, so every online player's count rose whenever anyone was withered.
 
 === Hearts lost ===
 The heart loss uses the same function as a death:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/hpdown.mcfunction}}</ref>
@@ -46,7 +42,7 @@ The 1.12.2 release notes ask players to "bring milk or bread to Hell, please its
 == History ==
 {{History|
 {{History line|1.12.2|The Wither effect now takes hearts after 8 seconds, except on Easy. The [[Shakudo equipment|Shakudo chestplate]] no longer cleanses Wither.}}
-{{History line|Upcoming|2=The Wither count, meter and sound are kept for each player separately; in 1.12.2 they were shared by all players.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither_effect/check_wither_timer.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
+{{History line|1.12.3|The Wither count, meter and sound are kept for each player separately; in 1.12.2 they were shared by all players.<ref name="timer" />}}
 }}
 
 == Trivia ==

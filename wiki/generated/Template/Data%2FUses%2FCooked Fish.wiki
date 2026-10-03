@@ -16,5 +16,9 @@
 | [[Pad Thai]]
 | [[Dough]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Sugar]] +<br />[[Carrot]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Bowl]]
 | {{Crafting|A1=Dough|B1=Cooked Fish;Cooked Large Fish|C1=Sugar|A2=Carrot|B2=Any Eggs|C2=Bowl|Output=Pad Thai|shapeless=1}}
+|-
+| [[Charred Fish]]
+| <span class="explain" title="Cod, Cooked Fish, Salmon, Cooked Large Fish, Pufferfish, Tropical Fish">Any fishes</span>
+| {{Cooking|station=Mud Kiln|Input=Any Fishes|Output=Charred Fish|time=10|note=10 s, 0.35 XP}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

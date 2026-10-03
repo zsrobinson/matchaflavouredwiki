@@ -13,7 +13,7 @@ A milk bucket and 4 glass bottles make 4 milk bottles. Obtaining a milk bucket u
 == Usage ==
 
 === Food ===
-Drinking a milk bottle takes 1.6 seconds and clears every effect, good or bad (the tooltip calls this "Cleanse"). Unlike the pack's other foods it has 2 nutrition and 1.2 saturation, and it doesn't heal. Milk bottles stack to 64, so they are a portable cure for the [[Wither effect|Wither]] effect and other maleffects; the developer asks players to bring milk or [[bread]] to [[Hell]].<ref>{{Cite changelog|1.12.2|quote=Please bring milk or bread to Hell, please its very important}}</ref>
+Drinking a milk bottle takes 1.6 seconds and clears every effect, good or bad (the tooltip calls this "Cleanse"). Like the pack's other foods it restores no hunger, and it doesn't heal. Milk bottles stack to 64, so they are a portable cure for the [[Wither effect|Wither]] effect and other maleffects; the developer asks players to bring milk or [[bread]] to [[Hell]].<ref>{{Cite changelog|1.12.2|quote=Please bring milk or bread to Hell, please its very important}}</ref>
 
 Milk bottles are used in [[cheese]], [[cake]], [[Ice Cream|ice cream]], [[Glow Berry Crumble|glow berry crumble]], [[latke]]s, [[Chorus Mochi|chorus mochi]], [[Apple Cinnamon Oatmeal|apple cinnamon oatmeal]], [[stroganoff]] and the green curry, paneer and pumpkin curry [[stock]]s.
 
@@ -24,6 +24,7 @@ Milk bottles are used in [[cheese]], [[cake]], [[Ice Cream|ice cream]], [[Glow B
 {{History|
 {{History line|0.5-alpha|The milk bottle recipe unlocks when obtaining milk.}}
 {{History line|1.10|Milk got a new cleanse tooltip icon, so older milk bottles don't stack with new ones.}}
+{{History line|1.12.3|The milk bottle no longer carries 2 nutrition and 1.2 saturation, so drinking it restores no hunger.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/matcha/milk_bottle.json}}</ref>}}
 }}
 
 == See also ==

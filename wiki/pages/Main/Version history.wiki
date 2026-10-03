@@ -39,13 +39,17 @@ Versions are published on Modrinth. Until 1.12.1-alpha the datapack and resource
 | {{Version|1.12.1-alpha}} || Experimental: Death System || Alpha || 2026-09-01 || 26.2 || Progress-based [[death]] system, translations, Angler's Almanac.
 |-
 | {{Version|1.12.2|1.12.2-beta}} || Progression, Polish, Prerelease || Beta || 2026-09-19 || 26.2 || Namespace move, [[Doom]], raw diamonds, update trigger.
+|-
+| {{Version|1.12.3}} || Death, Worldgen, & UX || Release || 2026-10-02 || 26.2 || Reworked advancements, obol and spawner loot, smithing, silver and quartz generation, swamps and dappled forest.
+|-
+| {{Version|1.12.3|1.12.3-alpha}} || Port to 26.3 || Alpha || 2026-10-02 || 26.3 || The same pack ported to ''Minecraft'' 26.3.
 |}
 
 The resource pack of 1.12.2-beta was published as a separate Modrinth version with the same number, titled "See DP (This is the Resource Pack)".
 
 == In development ==
 {{Main|Upcoming features}}
-The repository's <code>main</code> branch contains bug fixes and the [[favorite food]] trade, added after 1.12.2-beta and listed on the [[Matcha Flavoured 1.12.2|1.12.2]] page. A port to ''Minecraft'' 26.3 was in progress.
+The repository's <code>main</code> branch holds work made after [[Matcha Flavoured 1.12.3|1.12.3]]. The developer plans a structure update that will revisit the [[Abbey]], the [[Papal Outpost]] and loot tables.
 
 == References ==
 {{reflist}}

@@ -26,7 +26,7 @@ Each sound is an advancement with a <code>fishing_rod_hooked</code> trigger. Its
 |-
 | <code>matcha:fishing.nautilus_shell</code> || Caught a nautilus shell || Nautilus shell
 |-
-| <code>matcha:fishing.enchanted_book</code> || Caught a Hell-Bound Book || [[Hell-Bound Book]]
+| <code>matcha:fishing.enchanted_book</code> || Caught Hell-Bound Book || [[Hell-Bound Book]]
 |}
 Sulfur Chunks from Sulfur Caves have no sound.<ref>{{Source|MF_datapack/data/matcha/advancement/fishing_sounds/junk.json}}</ref>
 
@@ -36,6 +36,7 @@ The treasure sound checks the Crystal Heart for the item model <code>matcha:crys
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Added.}}
+{{History line|1.12.3|The enchanted book subtitle was shortened from "Caught a Hell-Bound Book" to "Caught Hell-Bound Book".}}
 }}
 
 == References ==

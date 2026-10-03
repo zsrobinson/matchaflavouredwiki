@@ -75,6 +75,7 @@ Livestock items are spawn eggs. Using one on a [[spawner]] or trial spawner in S
 }}
 
 == Trivia ==
+* The 1.12.3 data pack and resource pack contain unfinished groundwork for two more chicken breeds: a ''bobwhite'' (a small wild chicken, scaled to 0.8, with its own sounds, textures and spawn egg) and a ''seagull''. Habitat tags list badlands and wooded badlands for the bobwhite and beaches and stony shores for the seagull, and small "roost" structures exist for plains and beaches, but the data pack contains no breed definition and no spawn rule or world generation refers to the habitats or roosts, so neither breed appears naturally. Only debug loot tables hand out bobwhite spawn eggs.<ref>{{Source|MF_datapack/data/matcha/tags/worldgen/biome/is_bobwhite_habitat.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/worldgen/biome/is_seagull_habitat.json}}</ref><ref>{{Source|MF_datapack/data/matcha/structure/seagull_roost/small_1.nbt}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/debug/chicken/normal_bobwhite.json}}</ref>
 * The developer has considered having the farmer trade cats as well.<ref>{{Source|changelog.md}}</ref>
 
 == References ==

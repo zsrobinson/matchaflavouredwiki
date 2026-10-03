@@ -1,0 +1,39 @@
+<includeonly><small>Loot table <code>minecraft:barrels/abandoned_camp_barrel</code> ({{Source|MF_datapack/data/minecraft/loot_table/barrels/abandoned_camp_barrel.json|source}}); pools roll 1; 4–8 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Bundle}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Wooden Axe}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Fishing Rod}} || 1 || 33.3% || 33.3% || 
+|-
+| {{ItemLink|Arrow}} || 1–3 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|Bone|mcw=Bone}} || 2–4 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|Bowl}} || 1–2 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|Bread}} || 1–3 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|Coal|mcw=Coal}} || 2–4 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|Cobweb|mcw=Cobweb}} || 1 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|Glass Bottle}} || 1–3 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|Sturdy Leather}} || 1–3 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|Tattered Leather}} || 1–4 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|String}} || 1–2 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|Wheat Grain}} || 1–4 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|White Candle|mcw=White Candle}} || 1–3 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|White Cushion}} || 1–2 || 7.14% || 35.5% || 
+|-
+| {{ItemLink|Straw Bed|mcw=Straw Bed}} || 2–4 || 7.14% || 35.5% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

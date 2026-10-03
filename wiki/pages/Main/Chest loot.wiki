@@ -4,7 +4,7 @@ This page lists every chest loot table in the pack. The tables are generated fro
 
 == General changes ==
 Across the pack's tables:<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json}}</ref>
-* In the mineshaft, buried treasure and desert pyramid tables, cut [[diamond]]s are replaced by [[raw diamond]]s, which must be smelted in a [[Blast Furnace]]. Some tables still contain cut diamonds: bastion treasure, end city, nether fortress, stronghold corridor, several Trial Chambers tables, and the village toolsmith and weaponsmith. The desert pyramid gives raw diamonds, in line with the {{Version|1.12.2}} release notes, which say that no "naturally-occuring free diamonds" should appear in surface structures.
+* In the mineshaft, buried treasure and desert pyramid tables, cut [[diamond]]s are replaced by [[raw diamond]]s, which must be smelted in a [[Blast Furnace]]. Some tables still contain cut diamonds: bastion treasure, end city, nether fortress, stronghold corridor, and several Trial Chambers tables. The desert pyramid gives raw diamonds, in line with the {{Version|1.12.2}} release notes, which say that no "naturally-occuring free diamonds" should appear in surface structures.
 * Gold and iron ingots are mostly replaced by raw gold and raw iron.
 * Vanilla armor, tools and weapons are replaced by calls to shared equipment tables (see [[#Equipment tables]]) or to the pack's own equipment tables, which give the pack's versions of the items.
 * Vanilla foods such as bread, apples and golden apples are replaced by the pack's versions, so they stack with player-made food.
@@ -25,6 +25,15 @@ Across the pack's tables:<ref>{{Source|MF_datapack/data/minecraft/loot_table/che
 {{Main|Papal Outpost}}
 === Watchtower chest ===
 {{Data/Loot/minecraft/chests/pillager_outpost}}
+
+== Abandoned Camp ==
+{{Main|Abandoned camp}}
+=== Common chest ===
+{{Data/Loot/minecraft/chests/abandoned_camp_common_chest}}
+=== Secret chest ===
+{{Data/Loot/minecraft/chests/abandoned_camp_secret_chest}}
+=== Barrel ===
+{{Data/Loot/minecraft/barrels/abandoned_camp_barrel}}
 
 == Ancient City ==
 {{Main|Ancient City}}
@@ -150,35 +159,11 @@ The bonus chest can be enabled when creating a world.
 
 == Village ==
 {{Main|Abandoned village}}
-The pack's [[abandoned village]]s have no loot-table chests, so these tables are not normally used.
-=== Armorer ===
-{{Data/Loot/minecraft/chests/village/village_armorer}}
-=== Butcher ===
-{{Data/Loot/minecraft/chests/village/village_butcher}}
-=== Cartographer ===
-{{Data/Loot/minecraft/chests/village/village_cartographer}}
-=== Desert house ===
-{{Data/Loot/minecraft/chests/village/village_desert_house}}
-=== Fisher ===
-{{Data/Loot/minecraft/chests/village/village_fisher}}
-=== Mason ===
-{{Data/Loot/minecraft/chests/village/village_mason}}
-=== Plains house ===
-{{Data/Loot/minecraft/chests/village/village_plains_house}}
-=== Savanna house ===
-{{Data/Loot/minecraft/chests/village/village_savanna_house}}
-=== Snowy house ===
-{{Data/Loot/minecraft/chests/village/village_snowy_house}}
-=== Taiga house ===
-{{Data/Loot/minecraft/chests/village/village_taiga_house}}
-=== Tannery ===
-{{Data/Loot/minecraft/chests/village/village_tannery}}
-=== Temple ===
-{{Data/Loot/minecraft/chests/village/village_temple}}
-=== Toolsmith ===
-{{Data/Loot/minecraft/chests/village/village_toolsmith}}
-=== Weaponsmith ===
-{{Data/Loot/minecraft/chests/village/village_weaponsmith}}
+In 1.12.3 the pack empties the loot tables of the village armorer, butcher, cartographer, desert house, fisher, mason, plains house, savanna house, snowy house, taiga house, tannery, temple, toolsmith and weaponsmith chests, so these chests are generated empty.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_toolsmith.json}}</ref> The release notes say they are empty because "everything was broken in 26.3, it was easier to nuke it all", and that they will be added back, much weaker, with the structure update.<ref>{{Cite changelog|quote=Village Loottables are empty, I will add these back during the structure update, but everything was broken in 26.3, it was easier to nuke it all}}</ref> The fletcher and shepherd tables are not changed by the pack.
+=== Fletcher ===
+{{Data/Loot/minecraft/chests/village/village_fletcher}}
+=== Shepherd ===
+{{Data/Loot/minecraft/chests/village/village_shepherd}}
 
 == Woodland Mansion ==
 {{Main|Woodland Mansion}}
@@ -229,6 +214,7 @@ Shared tables that other chest tables call to pick a random piece of equipment.
 * Ruined portal loot nerfed so gold cannot be obtained before iron.
 * The Quran and The Tanakh added to Trial Chamber loot.
 * Trash removed from trial spawners and vaults.}}
+{{History line|1.12.3|All village chest loot tables are empty.}}
 }}
 
 == See also ==

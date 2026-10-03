@@ -8,7 +8,7 @@
 
 === Crafting ===
 {{Recipes}}
-A milk bottle, sugar and a brown mushroom make 4 cheese. Obtaining a milk bucket or a milk bottle unlocks the recipe. The milk bottle's glass bottle is meant to be given back, but in 1.12.2-beta the advancement that returns it still names the recipe by an old ID, so it is used up ([[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
+A milk bottle, sugar and a brown mushroom make 4 cheese. Obtaining a milk bucket or a milk bottle unlocks the recipe. Crafting it gives back the milk bottle's glass bottle.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>
 
 == Usage ==
 
@@ -23,6 +23,7 @@ Obtaining cheese unlocks the three [[Pizza|pizzas]]. Cheese is also used in [[br
 == History ==
 {{History|
 {{History line|1.10|Cheese unlocks from both milk buckets and milk bottles.}}
+{{History line|1.12.3|Eating time halved, from 1.6 to 0.8 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/cheese.json}}</ref>}}
 }}
 
 == See also ==

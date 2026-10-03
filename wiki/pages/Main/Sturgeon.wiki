@@ -19,9 +19,9 @@ The same tables are also rolled by the fisherman's house chest in [[Village|vill
 Raw fish can be eaten, but it heals nothing: Matcha Flavoured removes [[hunger]], and food only heals through the hearts shown on its tooltip. Cooked, it becomes [[Cooked Large Fish|cooked large fish]], which heals {{Value|Cooked Large Fish|heals}}.
 
 === Cooking ===
-{{Cooking|station=Oven|Input=Sturgeon|Output=Cooked Large Fish|note=5 s, 0.35 XP}} {{Cooking|station=Kindling|Input=Sturgeon|Output=Cooked Large Fish|note=5 s, 0.35 XP}} {{Cooking|station=Mud Kiln|Input=Sturgeon|Output=Charred Fish|note=5 s, 0.35 XP}}
+{{Cooking|station=Oven|Input=Sturgeon|Output=Cooked Large Fish|note=5 s, 0.35 XP}} {{Cooking|station=Kindling|Input=Sturgeon|Output=Cooked Large Fish|note=5 s, 0.35 XP}} {{Cooking|station=Mud Kiln|Input=Sturgeon|Output=Charred Fish|note=10 s, 0.35 XP}}
 
-The recipes match any <code>minecraft:salmon</code>, so every large fish gives the same result.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_salmon.json}}</ref> A [[Mud Kiln]] burns it into [[Charred Fish|charred fish]] instead.
+The recipes match any <code>minecraft:salmon</code>, so every large fish gives the same result.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_large_fish.json}}</ref> A [[Mud Kiln]] burns it into [[Charred Fish|charred fish]] instead.
 
 === Crafting ingredient ===
 Because it is a salmon underneath, it can be used wherever a raw salmon is accepted: the [[Green Curry Stock|green curry stock]] recipe takes any cod or salmon.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/uncooked_green_curry.json}}</ref>

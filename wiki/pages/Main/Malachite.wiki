@@ -10,7 +10,7 @@ Two calcite and two raw copper, placed diagonally, make 4 malachite.<ref>{{Sourc
 The design video lists it among the recipe changes meant to be "kinder for players": "Prismarine is craftable from copper."<ref>{{Cite video|quote=I made a lot of tweaks to the recipes to make them kinder for players. Prismarine is craftable from copper.}}</ref>
 
 === Trading ===
-The [[Mason]] sells a bulk block of malachite for 1 [[obol]] at the journeyman level; using it unpacks 64 malachite. The item's name, <code>item.kleispack.trade.bulk_prismarine</code>, has no English translation, so the game shows the raw key.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/3/malachite.json}}</ref> See [[Bulk blocks]].
+The [[Mason]] sells a bulk block of malachite for 1 [[obol]] at the journeyman level; using it unpacks 64 malachite. The item is named "Bulk Malachite".<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/3/malachite.json}}</ref> See [[Bulk blocks]].
 
 === Natural generation ===
 Blocks placed in ocean monuments keep their vanilla IDs, so monuments are built from malachite, malachite bricks, dark malachite and malachite lanterns.
@@ -40,6 +40,7 @@ Malachite, malachite bricks and dark malachite each have a slab and stairs, and 
 {{History line|1.02|The malachite recipe unlocks when the player picks up calcite.}}
 {{History line|1.10|The malachite recipe gives 4 blocks instead of 2.}}
 {{History line|1.12.2|The [[Mason]]'s malachite trade gives a bulk block that unpacks into 64 malachite, instead of 64 loose blocks.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/3/malachite.json}}</ref>}}
+{{History line|1.12.3|The bulk block of malachite has an English name, "Bulk Malachite"; before, the game showed a raw translation key.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>}}
 }}
 
 == References ==

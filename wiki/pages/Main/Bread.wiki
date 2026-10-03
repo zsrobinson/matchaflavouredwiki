@@ -14,7 +14,7 @@ Dough bakes into bread in an [[oven]] or on [[kindling]] in {{Value|Bread|cook_t
 == Usage ==
 
 === Food ===
-Eating bread takes {{Value|Bread|eat_time}}, heals {{Value|Bread|heals}} and removes Poison, Mining Fatigue, Wither, Weakness, Bad Omen, Blindness, Darkness, Infested, Weaving, Nausea, Oozing and Slowness.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref> The developer asks players to bring milk or bread to [[Hell]].<ref>{{Cite changelog|1.12.2|quote=Please bring milk or bread to Hell, please its very important}}</ref>
+Eating bread takes {{Value|Bread|eat_time}}, heals {{Value|Bread|heals}} and removes Poison, Mining Fatigue, Wither, Weakness, Bad Omen, Blindness, Darkness, Infested, Weaving, Nausea, Oozing and Slowness (the effects in the pack's harmful group).<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/mob_effect/harmful.json}}</ref> The developer asks players to bring milk or bread to [[Hell]].<ref>{{Cite changelog|1.12.2|quote=Please bring milk or bread to Hell, please its very important}}</ref>
 
 Obtaining bread unlocks [[French Toast|French toast]]. Bread is used in [[bruschetta]], [[French Toast|French toast]], [[Honied French Toast|honied French toast]], [[Sweet Berry Toast|sweet berry toast]], [[latke]]s and [[Ice Cream|ice cream]]. [[Naan]] can be used in its place.
 
@@ -26,6 +26,7 @@ Obtaining bread unlocks [[French Toast|French toast]]. Bread is used in [[brusch
 {{History line|0.7-alpha|Bread is made from dough and cleanses maleffects.}}
 {{History line|1.0|Bread found in chests is the same as crafted bread.}}
 {{History line|1.10|New cleanse tooltip icon, so older bread doesn't stack with new bread. Chest bread updated to match.}}
+{{History line|1.12.3|Bread is a plain consumable without a food component, and its effect removal uses the pack's list of harmful effects. The effects removed and the healing are unchanged.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref>}}
 }}
 
 == See also ==

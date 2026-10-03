@@ -41,6 +41,7 @@ The Beacon Kindling is a chicken spawn egg that places an invisible marker inste
 Summoning items can no longer be used on spawners.}}
 {{History line|1.12.2|Removed from the rooted dirt recipe group.
 The ''Bonfire Lit'' advancement can be completed.}}
+{{History line|1.12.3|The timer keeps running while any player is still waiting for a trader. When there is no active beacon and no waiting player, the summoned traders are removed and each player who was waiting is told that the trader "has lost sight of your beacon...".<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/no_beacons_reset.mcfunction}}</ref>}}
 }}
 
 == References ==

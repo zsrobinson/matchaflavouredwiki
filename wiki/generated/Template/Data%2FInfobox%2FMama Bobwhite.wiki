@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Mama Bobwhite}}
+|image={{#if:{{{image|}}}|{{{image}}}|Mama Bobwhite.png}}
+|imagesize=160px
+|invimage=Mama Bobwhite
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:chicken_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/debug/chicken/mama_bobwhite.json|mama_bobwhite.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

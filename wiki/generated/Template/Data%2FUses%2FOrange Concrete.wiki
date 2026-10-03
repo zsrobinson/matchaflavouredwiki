@@ -1,0 +1,28 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Orange Concrete Slab]]
+| [[Orange Concrete]]
+| {{Stonecutter|Input=Orange Concrete|Output=Orange Concrete Slab,2}}
+|-
+| [[Orange Concrete Stairs]]
+| [[Orange Concrete]]
+| {{Stonecutter|Input=Orange Concrete|Output=Orange Concrete Stairs}}
+|-
+| [[Orange Concrete Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Orange Concrete]]
+| {{Crafting|A1=Orange Concrete|B1=Orange Concrete|C1=Orange Concrete|Output=Orange Concrete Slab,6}}
+|-
+| [[Orange Concrete Slab]] <small>(vanilla recipe)</small>
+| [[Orange Concrete]]
+| {{Stonecutter|Input=Orange Concrete|Output=Orange Concrete Slab,2}}
+|-
+| [[Orange Concrete Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Orange Concrete]]
+| {{Crafting|A1=Orange Concrete|A2=Orange Concrete|A3=Orange Concrete|B2=Orange Concrete|B3=Orange Concrete|C3=Orange Concrete|Output=Orange Concrete Stairs,4}}
+|-
+| [[Orange Concrete Stairs]] <small>(vanilla recipe)</small>
+| [[Orange Concrete]]
+| {{Stonecutter|Input=Orange Concrete|Output=Orange Concrete Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

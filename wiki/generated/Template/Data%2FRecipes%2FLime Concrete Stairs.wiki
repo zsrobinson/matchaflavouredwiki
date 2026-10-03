@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Lime Concrete Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Lime Concrete]]
+| {{Crafting|A1=Lime Concrete|A2=Lime Concrete|A3=Lime Concrete|B2=Lime Concrete|B3=Lime Concrete|C3=Lime Concrete|Output=Lime Concrete Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Lime Concrete Stairs]]
+| [[Lime Concrete]]
+| {{Stonecutter|Input=Lime Concrete|Output=Lime Concrete Stairs}}
+|-
+| [[Lime Concrete Stairs]] <small>(vanilla recipe)</small>
+| [[Lime Concrete]]
+| {{Stonecutter|Input=Lime Concrete|Output=Lime Concrete Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

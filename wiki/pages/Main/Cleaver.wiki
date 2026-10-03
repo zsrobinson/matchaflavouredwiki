@@ -8,12 +8,13 @@ A level 4 cook sells it for one [[Obol|obol]].<ref name="trade">{{Source|MF_data
 {{Sources}}
 
 == Usage ==
-Its attack reach is 1 block shorter than normal. The tooltip gives an attack speed of 1.6, but the item's attributes set only attack damage and reach, so it attacks at the base speed of 4.<ref name="trade" /> It is repaired with iron ingots.
+Its attack reach is 1 block shorter than normal and it attacks at a speed of 1.6, as its tooltip says.<ref name="trade" /> It is repaired with iron ingots.
 
 == History ==
 {{History|
 {{History line|1.12.1-alpha|The butcher's knife can no longer be smithed; it is only sold by the cook.}}
 {{History line|1.12.2|Renamed from "Butcher's Knife" to "Cleaver".<ref name="trade" />}}
+{{History line|1.12.3|Attack speed lowered from 4 to 1.6, as the tooltip says.<ref name="trade" />}}
 }}
 
 == References ==

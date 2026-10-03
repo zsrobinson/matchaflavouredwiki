@@ -12,7 +12,7 @@ The pack also uses enchantments for the fixed [[intrinsic]] effects of equipment
 |matcha:reach=+2 block interaction range per level
 |matcha:riposte=Pushes the wielder backward after each hit
 |matcha:slaughter=+40 damage against livestock and slows nearby livestock
-|matcha:traversal=Faster movement on paths, gravel and mud bricks
+|matcha:traversal=Meant to speed the wearer up on paths, gravel and mud bricks, but has no speed effect in 1.12.3; wears the boots down and kicks up dirt particles
 |matcha:zephyr=Sneaking gives Jump Boost VII; higher levels add Slow Falling and a charged updraft
 }}
 
@@ -28,7 +28,7 @@ Every vanilla enchantment is still in the game. The pack sets the anvil cost mul
 Blast Protection, Projectile Protection, Thorns, Sweeping Edge, Quick Charge and Curse of Vanishing have no blessing or trade. Apart from loot, four of them come only already applied to crafted gear: [[Sturdy leather armor|sturdy leather armor]] has Projectile Protection II–IV, [[Chainmail armor|chainmail armor]] has Thorns III, [[Steel equipment|steel armor]] has Blast Protection II–IV and the [[Shakudo Sword|shakudo sword]] has Sweeping Edge I. Quick Charge and Curse of Vanishing can only be found. Protection and Sharpness have no blessing: apart from loot, they come only from [[Ofuda]] and from [[Adamant equipment|adamant equipment]], which is smithed with Protection I or Sharpness I.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/sturdy_leather_boots.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/chainmail_chestplate.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_chestplate.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/shakudo_sword.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/adamant_sword.json}}</ref>
 
 == Generated data ==
-The table below is generated from the pack's enchantment files. It also lists the intrinsic enchantments, whose names are the tooltip glyphs they show in game, and five enchantments left in the old <code>main</code> namespace. Those exist so that items from versions before {{Version|1.12.2}} can be converted: holding or wearing an item with a <code>main:</code> enchantment replaces it with the <code>matcha:</code> version, one level per tick. In 1.12.2 they are also what five [[blessing]]s give; see [[Blessing#Old enchantment ids]].<ref>{{Source|MF_datapack/data/main/README.txt}}</ref><ref>{{Source|MF_datapack/data/main/item_modifier/update_reach.json}}</ref>
+The table below is generated from the pack's enchantment files. It also lists the intrinsic enchantments, whose names are the tooltip glyphs they show in game, and five enchantments left in the old <code>main</code> namespace. Those exist so that items from versions before {{Version|1.12.2}} can be converted: holding or wearing an item with a <code>main:</code> enchantment replaces it with the <code>matcha:</code> version, one level per tick. Until 1.12.2 they were also what five [[blessing]]s gave; see [[Blessing#Old enchantment ids]].<ref>{{Source|MF_datapack/data/main/README.txt}}</ref><ref>{{Source|MF_datapack/data/main/item_modifier/update_reach.json}}</ref>
 
 {{Data/Enchantments}}
 
@@ -38,6 +38,7 @@ The table below is generated from the pack's enchantment files. It also lists th
 {{History line|1.10|Traversal renamed to [[Trailblaze]] in the language files.}}
 {{History line|1.12.1-alpha|Fortune's maximum level lowered to I. Warding enchantments made mutually exclusive.}}
 {{History line|1.12.2|Feather Falling's damage reduction doubled. [[Zephyr]] reworked into three levels. The pack's enchantments moved from the <code>main</code> to the <code>matcha</code> namespace.}}
+{{History line|1.12.3|The five blessings that gave old <code>main</code> enchantments give the <code>matcha</code> ones. [[Trailblaze]] lost its speed effect and its tooltip name became "Soul Speed". The enchantment files were converted to the 26.3 data format, which changes no other enchantment's effects.}}
 }}
 
 == See also ==

@@ -1,0 +1,29 @@
+{{Infobox auto}}
+'''Clear mushroom soup''' is a [[food]] that heals {{Value|Clear Mushroom Soup|heals}} and is eaten in {{Value|Clear Mushroom Soup|eat_time}}. It is crafted from a [[Braised Mushroom|braised mushroom]], and it is also what a mooshroom gives when milked with a bowl, in place of the [[chocolate]] that the renamed mushroom stew would be.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/mushroom_soup.json}}</ref>
+
+== Obtaining ==
+=== Crafting ===
+{{Recipes}}
+Dried kelp, a carrot, a braised mushroom and a bowl, in any arrangement. Obtaining a braised mushroom unlocks the recipe.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/braised_brown_mushroom.json}}</ref>
+
+=== Milking a mooshroom ===
+Using a bowl on a mooshroom runs an advancement that gives the player a clear mushroom soup and then clears the plain mushroom stew the bowl produced.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/milked_mooshroom.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/mooshroom_milking/replace_chocolate_with_soup.mcfunction}}</ref> The pack turns the vanilla mushroom stew into chocolate, so without this step a mooshroom would be a source of chocolate.
+
+== Usage ==
+=== Food ===
+Eating it takes {{Value|Clear Mushroom Soup|eat_time}} and heals {{Value|Clear Mushroom Soup|heals}}. It has no other effect, and the bowl is returned.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/matcha/mushroom_soup.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.3|Added clear mushroom soup, as a craftable food and as the result of milking a mooshroom with a bowl.}}
+}}
+
+== See also ==
+* [[Braised Mushroom]]
+* [[Mushroom]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

@@ -1,9 +1,9 @@
 <includeonly>{| class="wikitable"
 ! Folder !! Files !! Purpose
 |-
-| <code>recipe_unlocks</code> || 180 || {{{matcha:recipe_unlocks|}}}
+| <code>recipe_unlocks</code> || 181 || {{{matcha:recipe_unlocks|}}}
 |-
-| <code>mechanics</code> || 25 || {{{matcha:mechanics|}}}
+| <code>mechanics</code> || 27 || {{{matcha:mechanics|}}}
 |-
 | <code>fishing_sounds</code> || 11 || {{{matcha:fishing_sounds|}}}
 |-
@@ -13,15 +13,15 @@
 |-
 | <code>particle</code> || 3 || {{{matcha:particle|}}}
 |-
-| <code>remove_vanilla_items</code> || 3 || {{{matcha:remove_vanilla_items|}}}
-|-
 | <code>endless_repairs:inventory_changed</code> || 1 || {{{endless_repairs:inventory_changed|}}}
 |-
 | <code>anglers_almanac</code> || 1 || {{{matcha:anglers_almanac|}}}
+|-
+| <code>imm_revoke</code> || 1 || {{{matcha:imm_revoke|}}}
 |-
 | <code>item_contingencies</code> || 1 || {{{matcha:item_contingencies|}}}
 |-
 | <code>update_vanilla_item</code> || 1 || {{{matcha:update_vanilla_item|}}}
 |-
-| '''Total''' || '''238''' || Of 414 advancement files; the other 176 are the visible advancements.
+| '''Total''' || '''239''' || Of 415 advancement files; the other 176 are the visible advancements.
 |}</includeonly><noinclude>Generated. Each folder's purpose is a note passed by its ID (<code>matcha:recipe_unlocks</code>). [[Category:Generated data]]</noinclude>

@@ -26,14 +26,14 @@ Welcome to the unofficial encyclopedia of '''[[Matcha Flavoured]]''' (also writt
 <div class="mp-highlight-wrapper">
 <h2 class="sr-only">Latest releases</h2>
 {{Mainpage update
-| name = [[Matcha Flavoured {{Current version}}|Progression, Polish, Prerelease]]
+| name = [[Matcha Flavoured {{Current version}}|Death, Worldgen, & UX]]
 | tag = Latest
 | features =
 * {{ItemLink|Crystal Heart}}
-* {{ItemLink|Raw Diamond}}
+* Reworked [[advancements]] and [[death]]
+* New [[Poplar]] trees and swamps
 * {{ItemLink|Electrum Alloy}}
-* {{ItemLink|Adamant Alloy}}
-| bottom = Matcha Flavoured <b class="mp-highlight-version">{{Current version}}</b> for ''Minecraft'' <b class="mp-highlight-version">26.2</b>
+| bottom = Matcha Flavoured <b class="mp-highlight-version">{{Current version}}</b> for ''Minecraft'' <b class="mp-highlight-version">26.2</b> (26.3 port in alpha)
 }}{{#ifeq: {{Stable version}} | {{Current version}} || {{Mainpage update
 | name = [[Matcha Flavoured {{Stable version}}|Armour Performance Issue Hotfix]]
 | tag = Stable

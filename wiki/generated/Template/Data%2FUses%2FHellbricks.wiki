@@ -3,11 +3,15 @@
 |-
 | [[Cracked Hellbricks]]
 | [[Hellbricks]]
-| {{Cooking|station=Blast Furnace|Input=Hellbricks|Output=Cracked Hellbricks|time=5|note=5 s, 0.1 XP}}
+| {{Cooking|station=Blast Furnace|Input=Hellbricks|Output=Cracked Hellbricks|time=10|note=10 s, 0.1 XP}}
 |-
 | [[Hellbrick Fence]]
 | [[Hellbricks]]
 | {{Stonecutter|Input=Hellbricks|Output=Hellbrick Fence,3}}
+|-
+| [[Red Hellbricks]]
+| 2 × [[Hellbricks]] +<br />2 × [[Hellspore]]
+| {{Crafting|A1=Hellbricks|A2=Hellspore|B1=Hellspore|B2=Hellbricks|Output=Red Hellbricks,2}}
 |-
 | [[Chiseled Hellbricks]] <small>(vanilla recipe)</small>
 | [[Hellbricks]]

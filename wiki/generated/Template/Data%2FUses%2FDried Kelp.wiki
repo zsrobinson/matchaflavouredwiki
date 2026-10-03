@@ -17,13 +17,17 @@
 | [[Cooked Porkchop]] or [[Seitan]] +<br />[[Dough]] +<br />[[Oil]] +<br />[[Dried Kelp]] +<br />[[Carrot]]
 | {{Crafting|A1=Cooked Porkchop;Seitan|B1=Dough|C1=Oil|A2=Dried Kelp|B2=Carrot|Output=Lumpia,2|shapeless=1}}
 |-
+| [[Clear Mushroom Soup]]
+| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Braised Mushroom]] +<br />[[Bowl]]
+| {{Crafting|A1=Dried Kelp|B1=Carrot|C1=Braised Mushroom|A2=Bowl|Output=Clear Mushroom Soup|shapeless=1}}
+|-
 | [[Seitan]]
 | [[Dough]] +<br />{{MCW|Potion}} +<br />[[Carrot]] or [[Potato]] or [[Dried Kelp]]
 | {{Crafting|A1=Dough|B1=Potion|C1=Carrot;Potato;Dried Kelp|Output=Seitan|shapeless=1}}
 |-
 | [[Ramen Stock]]
-| [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Chicken]] or [[Seitan]] +<br />[[Bowl]]
-| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Chicken;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}
+| [[Brown Mushroom]] +<br />[[Dried Kelp]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Oil]] +<br />[[Dough]] +<br />[[Raw Porkchop]] or [[Raw Poultry]] or [[Seitan]] +<br />[[Bowl]]
+| {{Crafting|A1=Brown Mushroom|B1=Dried Kelp|C1=Any Eggs|A2=Oil|B2=Dough|C2=Raw Porkchop;Raw Poultry;Seitan|A3=Bowl|Output=Ramen Stock|shapeless=1}}
 |-
 | {{MCW|Dried Kelp Block}} <small>(vanilla recipe)</small>
 | 9 × [[Dried Kelp]]

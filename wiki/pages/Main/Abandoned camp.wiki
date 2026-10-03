@@ -1,0 +1,32 @@
+{{Vanilla|Abandoned Camp}}
+An '''abandoned camp''' is a small structure of tents and trees that generates in forests and other wooded biomes. The structure comes from ''Minecraft'' 26.3; [[Matcha Flavoured]] replaces the loot of its two kinds of chest and its barrels, and puts the [[Explorer maps|explorer maps]] that lead to other camps and to buried structures in them.
+
+== Generation ==
+There is one variant of the camp for each of 18 biomes: bamboo jungle, birch forest, cherry grove, dappled forest, flower forest, forest, meadow, old growth pine taiga, old growth birch forest, old growth spruce taiga, pale garden, savanna, snowy taiga, sparse jungle, swamp, taiga, windswept forest and wooded badlands. Camps are placed with a spacing of 37 chunks and a separation of 8, and each variant has the same weight.
+
+== Loot ==
+The pack replaces all three of the camp's loot tables.
+
+=== Common chests ===
+Common chests give travelers' odds and ends (arrows, bones, cobwebs, gunpowder, leather, a lead, a saddle, a compass, a bow, a bucket, a spyglass), sometimes a piece of [[Copper equipment|copper equipment]], and one map to a camp in a ''different'' biome than the chest's own. A camp in the swamp never holds a swamp camp map; the map choices are the bamboo jungle, cherry grove, birch forest, dappled forest, flower forest, pale garden, swamp and windswept forest camps.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_common_chest.json}}</ref>
+{{Data/Loot/minecraft/chests/abandoned_camp_common_chest}}
+
+=== Secret chests ===
+Secret chests give [[Raw Diamond|raw diamonds]], some food ([[Pickled Carrots|pickled carrots]], [[Canned Apples|canned apples]] or [[Mead|mead]]), raw copper, gold and iron, sometimes iron armor, and one map to another structure: an ancient city, trial chambers, a mineshaft, a desert pyramid, a jungle pyramid, warm ocean ruins or a woodland mansion.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_secret_chest.json}}</ref>
+{{Data/Loot/minecraft/chests/abandoned_camp_secret_chest}}
+
+=== Barrels ===
+Barrels hold kitchen and bedding supplies, such as bread, bowls, coal, leather and wheat seeds, [[White Cushion|white cushions]], and straw beds, and one of a bundle, a wooden axe or a fishing rod.<ref>{{Source|MF_datapack/data/minecraft/loot_table/barrels/abandoned_camp_barrel.json}}</ref>
+{{Data/Loot/minecraft/barrels/abandoned_camp_barrel}}
+
+== History ==
+{{History|
+{{History line|1.12.3|Abandoned camps arrive with the port to ''Minecraft'' 26.3. The pack gives their chests and barrels its own loot tables, with camp maps and buried structure maps.}}
+}}
+
+== References ==
+{{Reflist}}
+
+{{Navbox world}}
+[[Category:Structures]]
+[[Category:Generated structures]]

@@ -15,12 +15,11 @@ A [[Baked Pumpkin|baked pumpkin]], sugar, estus ash and [[dough]]. Obtaining a b
 Eating a pumpkin empanada takes {{Value|Pumpkin Empanada|eat_time}}, heals {{Value|Pumpkin Empanada|heals}} and gives Resistance {{Value|Pumpkin Empanada|level|effect=Resistance}} for {{Value|Pumpkin Empanada|duration|effect=Resistance|format=clock}}.
 
 === Trading ===
-{{Upcoming|type=section}}
-It is one of the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_29.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_29.mcfunction}}</ref>
 
 == History ==
 {{History|
-{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == Trivia ==

@@ -8,6 +8,8 @@
 
 Mushrooms are found and farmed as in vanilla. A brown or red mushroom block can be crafted into 1 mushroom.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/brown_mushroom_from_mushroom_block.json}}</ref>
 
+A '''shelf mushroom''', added in ''Minecraft'' 26.3, grows on swamp and poplar trees and drops itself (2 when fully grown). Its only use in the pack is the [[Rabbit Stew|rabbit stew]] recipe.<ref>{{Source|MF_datapack/data/matcha/worldgen/feature/swamp_oak.json}}</ref>
+
 {{Recipes|Brown Mushroom}}
 {{Recipes|Red Mushroom}}
 
@@ -27,6 +29,7 @@ Red mushrooms are cooked into [[Braised Toadstool|braised toadstool]]s (Poison, 
 {{History|
 {{History line|0.7-alpha|Added braised mushrooms, stroganoff, pickled mushrooms, braised toadstools, toadstool stroganoff and pickled toadstools. New mushroom item textures.}}
 {{History line|1.12.1-alpha|Red and brown mushrooms can be crafted from their mushroom blocks.}}
+{{History line|1.12.3|Shelf mushrooms grow on swamp trees and can be used in the rabbit stew recipe.}}
 }}
 
 == See also ==

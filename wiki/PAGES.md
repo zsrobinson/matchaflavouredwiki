@@ -115,3 +115,8 @@ Effect (overview) · one page per status effect the pack grants (Resistance, Reg
 Speed, Haste, Strength, Night Vision, Water Breathing, Fire Resistance, Health Boost, ...).
 Each has a generated source table `{{Data/Effect/<Effect>}}` listing every food, item and
 intrinsic that grants it. Link effects with `{{EffectLink|<Effect>}}`.
+
+## Added in 1.12.3 (items)
+Abandoned camp · Bobwhite (Normal Bobwhite, Mama Bobwhite and Baby Bobwhite redirect to it) · Clear Mushroom Soup ·
+Cushion · Porkchop · Raw Poultry (Raw Chicken redirects to it) · Rabbit Stew · Explorer maps (now also camp and
+buried-structure maps; every map is its own item). Bulk Prismarine is now named Bulk Malachite.

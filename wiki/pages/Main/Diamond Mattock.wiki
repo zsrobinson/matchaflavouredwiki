@@ -15,7 +15,7 @@ A '''diamond mattock''' is a [[mattock]] of the [[Diamond equipment|diamond]] ti
 == Usage ==
 
 === Mining ===
-It breaks shovel and hoe blocks at speed {{Value|Diamond Mattock|miningspeed}}, one slower than the [[diamond shovel]] or [[diamond hoe]], with {{Value|Diamond Mattock|durability}} durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+It breaks shovel and hoe blocks at speed {{Value|Diamond Mattock|miningspeed}}, one slower than the [[diamond shovel]] or [[diamond hoe]], with {{Value|Diamond Mattock|durability}} durability. Hoes in Matcha Flavoured also break wool (including wool slabs and stairs), carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Combat ===
 It deals {{Value|Diamond Mattock|damage}} damage at an attack speed of {{Value|Diamond Mattock|attackspeed}}.

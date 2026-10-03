@@ -13,7 +13,7 @@ Glow berries cook into glow berry mash in an [[oven]] or on [[kindling]] in {{Va
 == Usage ==
 
 === Food ===
-Eating glow berry mash takes {{Value|Glow Berry Mash|eat_time}} and heals {{Value|Glow Berry Mash|heals}}. A bell sound plays, and 2.4 seconds later every other entity within 50 blocks glows for 3 seconds.<ref>{{Source|MF_datapack/data/matcha/function/effects/soul_sight_apply_glow_3.mcfunction}}</ref> See [[Glow Berries#Aura]].
+Eating glow berry mash takes {{Value|Glow Berry Mash|eat_time}} and heals {{Value|Glow Berry Mash|heals}}. A bell sound plays, and 2.4 seconds later every other entity within 50 blocks glows for 3 seconds.<ref>{{Source|MF_datapack/data/matcha/function/effects/aura/3s.mcfunction}}</ref> See [[Glow Berries#Aura]].
 
 Obtaining glow berry mash unlocks [[Glow Berry Jam|glow berry jam]] and [[Glow Berry Crumble|glow berry crumble]].
 
@@ -26,10 +26,11 @@ Obtaining glow berry mash unlocks [[Glow Berry Jam|glow berry jam]] and [[Glow B
 == History ==
 {{History|
 {{History line|1.10|Glow berry mash works.}}
+{{History line|1.12.3|The aura is triggered by the mash's own custom data instead of the rotten flesh model, so vanilla rotten flesh no longer triggers it.}}
 }}
 
 == Trivia ==
-* Glow berry mash is a renamed rotten flesh, and the aura is triggered by eating anything with the rotten flesh model, so vanilla rotten flesh (for example from chests that still contain it) also triggers it.
+* Glow berry mash is a renamed rotten flesh. In 1.12.2 the aura was triggered by eating anything with the rotten flesh model, so vanilla rotten flesh also triggered it; since 1.12.3 it checks for the mash's own custom data.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/3s.json}}</ref>
 
 == See also ==
 * [[Glow Berries]]

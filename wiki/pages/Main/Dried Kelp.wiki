@@ -2,13 +2,13 @@
 
 {{Infobox auto}}
 
-'''Dried kelp''' is the simple preparation of kelp, whose [[intrinsic]] is {{EffectLink|Water Breathing}}. It heals {{Value|Dried Kelp|heals}}, grants Water Breathing for {{Value|Dried Kelp|duration|effect=Water Breathing}} and is eaten in half a second.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/dried_kelp.json}}</ref>
+'''Dried kelp''' is the simple preparation of kelp, whose [[intrinsic]] is {{EffectLink|Water Breathing}}. It heals {{Value|Dried Kelp|heals}}, grants Water Breathing for {{Value|Dried Kelp|duration|effect=Water Breathing}} and is eaten in half a second.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/dried_kelp.json}}</ref>
 
 == Obtaining ==
 
 === Cooking ===
 {{Recipes}}
-Kelp dries in an [[oven]] in {{Value|Dried Kelp|cook_time}}; there is no kindling recipe and the vanilla recipes are removed. A dried kelp block crafts back into 9 dried kelp with the same properties.
+Kelp dries in an [[oven]] or on [[kindling]] in {{Value|Dried Kelp|cook_time}}; the vanilla recipes are removed. A dried kelp block crafts back into 9 dried kelp with the same properties.
 
 == Usage ==
 
@@ -26,6 +26,7 @@ Obtaining dried kelp unlocks [[gimmari]]. It is also used in [[lumpia]], [[bokgu
 == History ==
 {{History|
 {{History line|0.7-alpha|Dried kelp can be crafted into blocks and back while keeping its properties.}}
+{{History line|1.12.3|Can be cooked on kindling as well as in an oven.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/dried_kelp.json}}</ref>}}
 }}
 
 == See also ==

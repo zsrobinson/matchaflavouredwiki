@@ -16,11 +16,16 @@ The '''Lumberjack''' is a [[villager]] profession that sells logs and stems by t
 {{Data/Trades/Lumberjack}}
 All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/1/oak_log.json}}</ref>
 
-* Every log trade gives 64 logs or stems for 1 obol. Oak, birch and spruce cost only the obol. The other woods also cost one of their sapling (or propagule, or fungus for the Hell stems), so the player has to have found that tree before buying its wood.<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/2/cherry_log.json}}</ref> Mushroom stems need no extra item.
+* Every log trade gives 64 logs or stems for 1 obol. Oak, birch and spruce cost only the obol. The other woods, including poplar, also cost one of their sapling (or propagule, or fungus for the Hell stems), so the player has to have found that tree before buying its wood.<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/2/cherry_log.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/2/poplar_log.json}}</ref> Mushroom stems need no extra item.
 * At Expert level the lumberjack sells a [[Hatchet]] enchanted with [[Bloodrage]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/4/hatchet.json}}</ref>
 * The lumberjack has no Master trades.<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/5/filler.json}}</ref>
 
-Like every villager, a lumberjack that has been traded with will also buy its [[favorite food]] once, an upcoming trade that is not in [[Matcha Flavoured 1.12.2|1.12.2-beta]].
+Like every villager, a lumberjack that has been traded with will also buy its [[favorite food]] once.
+
+== History ==
+{{History|
+{{History line|1.12.3|Added a trade for 64 [[Poplar Log]]s at the apprentice level, for 1 obol and a poplar sapling.<ref>{{Source|MF_datapack/data/matcha/villager_trade/leatherworker/2/poplar_log.json}}</ref>}}
+}}
 
 == Trivia ==
 * Internally the profession is still <code>minecraft:leatherworker</code>; only its displayed name changes.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>

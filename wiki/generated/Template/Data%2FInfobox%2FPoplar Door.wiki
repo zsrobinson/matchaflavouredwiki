@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Poplar Door}}
+|image={{#if:{{{image|}}}|{{{image}}}|Poplar Door.png}}
+|imagesize=160px
+|invimage=Poplar Door
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:poplar_door</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/poplar_door.json|poplar_door.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

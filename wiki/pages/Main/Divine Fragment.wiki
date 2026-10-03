@@ -23,7 +23,7 @@ One fragment and one [[Stabilized Estus]] make 16 eyes of ender, enough to fill 
 == Behavior ==
 A Divine Fragment lying on the ground gives off small electric spark particles.<ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/item_particles.mcfunction}}</ref>
 
-The fragment is a turtle scute with rare rarity. Ordinary turtle scutes, such as those shed by baby turtles, are not kept: when a player outside Creative mode picks up a common-rarity scute, it is replaced with a [[Turtle Shellmet]].<ref>{{Source|MF_datapack/data/matcha/function/remove_vanilla_items/turtle_scute.mcfunction}}</ref> The vanilla turtle shell recipe is removed.
+The fragment is a turtle scute with rare rarity. Baby turtles drop a [[Turtle Shellmet]] instead of a scute when they grow up. The vanilla turtle shell recipe is removed.
 
 == Advancements ==
 {| class="wikitable"
@@ -42,6 +42,7 @@ The fragment is a turtle scute with rare rarity. Ordinary turtle scutes, such as
 {{History line|1.10|Papal outposts provide some early fragments, according to the release notes.}}
 {{History line|1.12.1-alpha|Can be bought from the Mouthpiece for Crystal Hearts and an echo shard. Turtle scutes that are not the pack's Divine Fragment are removed.}}
 {{History line|1.12.2|The Mouthpiece's trade costs 2 Crystal Hearts instead of 1.<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/5/crystal_heart.json}}</ref>}}
+{{History line|1.12.3|Turtle scutes that are not the pack's Divine Fragment are no longer removed.}}
 }}
 
 == See also ==

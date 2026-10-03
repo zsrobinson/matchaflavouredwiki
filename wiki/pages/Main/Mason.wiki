@@ -36,7 +36,7 @@ The '''Mason''' is a [[villager]] profession that sells building stone as [[bulk
 |-
 | {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Tuff}} || 15
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Bulk Terracotta|Bulk Terracotta|link=Bulk blocks}} || 15
+| {{ItemLink|Obol}} || {{ItemLink|Bulk Terracotta}} || 15
 |-
 | {{ItemLink|Obol}} || 3 × {{ItemLink|Bulk Glass}} || 15
 |-
@@ -45,16 +45,16 @@ The '''Mason''' is a [[villager]] profession that sells building stone as [[bulk
 |-
 | {{ItemLink|Obol}} || 2 × {{ItemLink|Bulk Flowstone}} || 15
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Bulk Prismarine|Bulk Malachite|link=Bulk blocks}} || 25
+| {{ItemLink|Obol}} || {{ItemLink|Bulk Malachite}} || 25
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Bulk Cinnabar|Bulk Cinnabar|link=Bulk blocks}} || 25
+| {{ItemLink|Obol}} || {{ItemLink|Bulk Cinnabar}} || 25
 |-
 ! rowspan="3" | Expert
-| {{ItemLink|Obol}} || {{ItemLink|Bulk Blackstone|Bulk Blackstone|link=Bulk blocks}} || 30
+| {{ItemLink|Obol}} || {{ItemLink|Bulk Blackstone}} || 30
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Basalt|Bulk Smooth Basalt|link=Bulk blocks}} || 30
+| {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Basalt}} || 30
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Quartz|Bulk Smooth Quartz|link=Bulk blocks}} || 30
+| {{ItemLink|Obol}} || {{ItemLink|Bulk Smooth Quartz}} || 30
 |-
 ! Master
 | colspan="3" style="text-align:center" | ''No trades''
@@ -83,16 +83,14 @@ All trades can be used 999 times before restocking, and every level offers all o
 |}
 A bulk block is used like food, instantly: using it replaces it with 64 of its block, which go straight into the inventory. See [[Bulk blocks]] for details.
 
-Like every villager, a mason that has been traded with will also buy its [[favorite food]] once, an upcoming trade that is not in [[Matcha Flavoured 1.12.2|1.12.2-beta]].
+Like every villager, a mason that has been traded with will also buy its [[favorite food]] once.
 
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Cinnabar added to the mason's trades.}}
 {{History line|1.12.2|All mason trades are bulk blocks, which unpack directly into the inventory and have their own models. Added Bulk Dirt.}}
+{{History line|1.12.3|Bulk terracotta, malachite, cinnabar, blackstone, smooth basalt and smooth quartz gained English names and tooltips; before, they showed raw translation keys.}}
 }}
-
-== Issues ==
-* Six of the bulk blocks (terracotta, malachite, cinnabar, blackstone, smooth basalt and smooth quartz) have no entry in the language file, so in game their name and tooltip show as raw keys such as <code>item.kleispack.trade.bulk_terracotta</code>.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/2/terracotta.json}}</ref>
 
 == Trivia ==
 * The data pack contains an unused Expert trade file, <code>mason/4/quartz_emerald</code>, which is a discarded placeholder and is not in the Expert trade list.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/4/quartz_emerald.json}}</ref>

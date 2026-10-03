@@ -85,7 +85,7 @@ Suspicious gravel in village houses uses <code>archaeology/village_plains</code>
 {{Data/Loot/minecraft/archaeology/village_plains}}
 
 === Chests ===
-Village houses have no loot-table chests. The pack still overrides the vanilla village chest loot tables (<code>chests/village/*</code>); they are listed on [[Chest loot#Village]].
+Village houses have no loot-table chests. The pack overrides most of the vanilla village chest loot tables (<code>chests/village/*</code>) with empty ones since 1.12.3; see [[Chest loot#Village]].
 
 == Maps ==
 The [[Wandering Trader]] sells maps to abandoned villages, named "Abandoned Plains Village Map", "Abandoned Desert Village Map" and so on. See [[Explorer maps]].

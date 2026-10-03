@@ -16,5 +16,9 @@
 | [[Pickled Potatoes]]
 | [[Baked Potato]] +<br />[[Brown Mushroom]] +<br />[[Glass Bottle]]
 | {{Crafting|A1=Baked Potato|B1=Brown Mushroom|C1=Glass Bottle|Output=Pickled Potatoes|shapeless=1}}
+|-
+| [[Rabbit Stew]] <small>(vanilla recipe)</small>
+| [[Baked Potato]] +<br />[[Cooked Flesh]] +<br />[[Bowl]] +<br />[[Carrot]] +<br />{{MCW|Shelf Mushroom}}
+| {{Crafting|A1=Baked Potato|B1=Cooked Flesh|C1=Bowl|A2=Carrot|B2=Shelf Mushroom|Output=Rabbit Stew|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

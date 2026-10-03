@@ -1,0 +1,30 @@
+{{Vanilla|Cushion}}
+{{Infobox
+|title=Cushion
+|invimage=White Cushion;Orange Cushion;Magenta Cushion;Light Blue Cushion;Yellow Cushion;Lime Cushion;Pink Cushion;Gray Cushion;Light Gray Cushion;Cyan Cushion;Purple Cushion;Blue Cushion;Brown Cushion;Green Cushion;Red Cushion;Black Cushion
+|type=Decoration
+|renewable=Yes
+|stackable=Yes (64)
+}}
+A '''cushion''' is a decorative item that comes in the 16 dye colors. Cushions were added in ''Minecraft'' 26.3; see {{MCW|Cushion}} for how they behave. [[Matcha Flavoured]] adds a [[stonecutter]] recipe for every color, so wool can be cut straight into cushions.
+
+== Obtaining ==
+=== Stonecutting ===
+One block of wool of a color gives 2 cushions of the same color in the [[stonecutter]]. For example, a black wool gives 2 black cushions.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/black_cushion.json}}</ref> There is one recipe per color.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/white_cushion.json}}</ref>
+
+=== Crafting ===
+The vanilla recipes still work: three slabs of one color of wool in a row make a cushion, and a cushion and a dye of another color make a cushion of that color. The wool slabs come from the stonecutter as well: see [[Stonecutter]].
+
+=== Chest loot ===
+[[White Cushion|White cushions]] are found in the barrels of [[abandoned camp]]s, 1–2 at a time.<ref>{{Source|MF_datapack/data/minecraft/loot_table/barrels/abandoned_camp_barrel.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.3|Added stonecutter recipes for all 16 colors of cushion, and white cushions to abandoned camp barrels.}}
+}}
+
+== References ==
+{{Reflist}}
+
+{{Navbox blocks}}
+[[Category:Decoration]]

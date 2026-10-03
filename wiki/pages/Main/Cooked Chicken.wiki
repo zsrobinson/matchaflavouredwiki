@@ -8,22 +8,22 @@
 
 === Cooking ===
 {{Recipes}}
-Raw chicken cooks in an [[oven]] or on [[kindling]] in {{Value|Cooked Chicken|cook_time}}. The vanilla recipes are replaced, and in a [[Mud Kiln|mud kiln]] it becomes [[Charred Meat|charred meat]] instead.
+[[Raw Poultry|Raw poultry]] cooks in an [[oven]] or on [[kindling]] in {{Value|Cooked Chicken|cook_time}}. The vanilla recipes are replaced, and in a [[Mud Kiln|mud kiln]] it becomes [[Charred Meat|charred meat]] instead.
 
 == Usage ==
 
 === Food ===
 Eating it takes {{Value|Cooked Chicken|eat_time}} and heals {{Value|Cooked Chicken|heals}}.
 
-Cooked chicken makes [[Chicken Nugget|chicken nuggets]] and [[pupusa]]s and can top a [[Pizza|meat pizza]]. Raw chicken goes into [[Ramen Stock|ramen stock]].
+Cooked chicken makes [[Chicken Nugget|chicken nuggets]] and [[pupusa]]s and can top a [[Pizza|meat pizza]]. Raw poultry goes into [[Ramen Stock|ramen stock]].
 
 === Crafting ingredient ===
 {{Uses}}
 
-== Raw Chicken ==
-{{Vanilla|Raw Chicken}}
-'''Raw Chicken''' is dropped by animals as in vanilla. It keeps its vanilla food values and doesn't heal. As in vanilla, it has a 30% chance to give {{EffectLink|Hunger}}, which has no lasting effect in the pack.
-{{Uses|Raw Chicken}}
+== History ==
+{{History|
+{{History line|1.12.3|Cooked from [[Raw Poultry|raw poultry]] (renamed from raw chicken). Kindling and the oven recipes are otherwise unchanged.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_chicken.json}}</ref>}}
+}}
 
 == Trivia ==
 * The developer made meat plain so that players have less reason to build animal farms: "since animal flesh holds no special properties, players will be less incentivized to manufacture slaughterhouses".<ref>{{Cite video|quote=And since animal flesh holds no special properties, players will be less incentivized to manufacture slaughterhouses.}}</ref>

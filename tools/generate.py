@@ -760,6 +760,11 @@ BIOMES = DATA['biomes']  # biome id -> in-game name
 BIOME_TAGS = DATA['biome_tags']  # biome tag -> biome ids
 
 
+def ctype(c):
+    """A loot condition's type, bare: a term of all_of / any_of can also be a predicate's name."""
+    return (c if isinstance(c, str) else c.get('type', '')).split(':')[-1]
+
+
 def entry_biome_list(e):
     """The biome ids where a loot entry's location checks pass, in the order its tags list them, or None
     when it has no biome condition."""
@@ -767,7 +772,7 @@ def entry_biome_list(e):
     for c in e.get('conditions') or []:
         pred = c.get('predicate') or {}
         b = pred.get('biomes') or pred.get('biome')
-        if c.get('condition', '').split(':')[-1] != 'location_check' or not b:
+        if ctype(c) != 'location_check' or not b:
             continue
         ids = []
         for x in ([b] if isinstance(b, str) else b):
@@ -786,7 +791,10 @@ def cond_notes(conds):
     notes = []
     mult = 1.0
     for c in conds or []:
-        t = c.get('condition', '').split(':')[-1]
+        t = ctype(c)
+        if isinstance(c, str):
+            notes.append('predicate %s' % c)
+            continue
         if t == 'killed_by_player':
             notes.append('player kill')
         elif t == 'random_chance':
@@ -811,7 +819,8 @@ def cond_notes(conds):
             et = pred.get('entity_tags')
             if et and et.get('none_of') == ['NoDrops'] and len(pred) == 1:
                 continue
-            if 'flags' in pred and pred['flags'].get('is_baby'):
+            flags = pred.get('minecraft:flags') or pred.get('flags') or {}
+            if flags.get('is_baby'):
                 notes.append('baby')
             elif 'type_specific' in json.dumps(pred) and 'in_open_water' in json.dumps(pred):
                 notes.append('open water')
@@ -830,6 +839,8 @@ def cond_notes(conds):
             inner = cond_notes([c.get('term')])[1]
             if inner:
                 notes.append('not ' + inner[0])
+        elif t == 'match_block':
+            notes.append('block state property')
         elif t == 'survives_explosion':
             continue
         elif t == 'table_bonus':
@@ -881,7 +892,7 @@ def flatten(table_id, prob=1.0, notes=(), depth=0, seen=(), where=None):
         # Entries gated by a location (biome) check are weighed against the unconditioned entries and the
         # gated entries that also apply wherever they do (also_there); others are for other biomes.
         def is_loc(e):
-            return any((c.get('condition', '').split(':')[-1] == 'location_check') for c in (e.get('conditions') or []))
+            return any((ctype(c) == 'location_check') for c in (e.get('conditions') or []))
         # children of one alternatives/group entry share that entry's single weighted slot
         slots = {}
         for e in ents:
@@ -2317,8 +2328,8 @@ def fishing_entries():
     ents = [e for e in LOOT[FISHING]['entries'] if not e.get('empty')]
     for e in ents:
         # the odds below know only these; anything else has to be taught to them, not skipped
-        other = [c.get('condition') for c in e.get('conditions') or []
-                 if c.get('condition', '').split(':')[-1] != 'location_check' and not open_water_only({'conditions': [c]})]
+        other = [c.get('type') for c in e.get('conditions') or []
+                 if ctype(c) != 'location_check' and not open_water_only({'conditions': [c]})]
         if other or e.get('pool') != 0 or e.get('rolls') != 1 or e.get('pool_conditions'):
             raise SystemExit('generate.py: %s changed shape (%s); update the fishing odds' % (FISHING, other or 'pools'))
     return ents
@@ -3537,14 +3548,17 @@ def release_name(version):
 
 def stable_release(current):
     """The newest version Modrinth marks as a full release (not alpha or beta) that is no newer than the
-    current one (source/modrinth_versions.json, fetch_sources.sh). The current version when there is none."""
+    current one (source/modrinth_versions.json, fetch_sources.sh). The current version when there is none.
+    Since 1.12.3 the files carry a suffix for what they are ("1.12.3+dp", "1.12.3+dp-alpha"): the version
+    is the part before the "+"."""
     path = os.path.join(ROOT, 'source', 'modrinth_versions.json')
     if not os.path.exists(path):
         return current
     versions = json.load(open(path, encoding='utf-8'))
-    until = max((v['date_published'] for v in versions if v['version_number'] == current), default=None)
+    base = lambda v: v['version_number'].lstrip('v').split('+')[0]
+    until = max((v['date_published'] for v in versions if base(v) == current), default=None)
     releases = [v for v in versions if v['version_type'] == 'release' and (until is None or v['date_published'] <= until)]
-    return max(releases, key=lambda v: v['date_published'])['version_number'].lstrip('v') if releases else current
+    return base(max(releases, key=lambda v: v['date_published'])) if releases else current
 
 
 def main():

@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Blue Wool Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Blue Wool Slab.png}}
+|imagesize=160px
+|invimage=Blue Wool Slab
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:blue_wool_slab</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/blue_wool_slab.json|blue_wool_slab.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

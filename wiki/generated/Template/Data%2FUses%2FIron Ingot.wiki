@@ -222,7 +222,7 @@
 | {{Crafting|A1=Chiseled Stone Bricks|A2=Chiseled Stone Bricks|A3=Chiseled Stone Bricks|B1=Chiseled Stone Bricks|B2=Iron Ingot|B3=Chiseled Stone Bricks|C1=Chiseled Stone Bricks|C2=Chiseled Stone Bricks|C3=Chiseled Stone Bricks|Output=Lodestone}}
 |-
 | [[Piston]] <small>(vanilla recipe)</small>
-| 3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span> +<br />4 × [[Cobblestone]] +<br />[[Iron Ingot]] +<br />[[Electric Wire]]
+| 3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks, Poplar Planks">Any planks</span> +<br />4 × [[Cobblestone]] +<br />[[Iron Ingot]] +<br />[[Electric Wire]]
 | —
 |-
 | {{MCW|Saddle}} <small>(vanilla recipe)</small>
@@ -230,7 +230,7 @@
 | {{Crafting|A2=Sturdy Leather|B1=Sturdy Leather|B2=Iron Ingot|C2=Sturdy Leather|Output=Saddle}}
 |-
 | {{MCW|Shield}} <small>(vanilla recipe)</small>
-| 6 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any wooden tool materials</span> +<br />[[Iron Ingot]]
+| 6 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks, Poplar Planks">Any wooden tool materials</span> +<br />[[Iron Ingot]]
 | —
 |-
 | [[Stonecutter]] <small>(vanilla recipe)</small>
@@ -238,7 +238,7 @@
 | —
 |-
 | {{MCW|Tripwire Hook}} <small>(vanilla recipe)</small>
-| [[Iron Ingot]] +<br />[[Stick]] +<br /><span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
+| [[Iron Ingot]] +<br />[[Stick]] +<br /><span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks, Poplar Planks">Any planks</span>
 | —
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

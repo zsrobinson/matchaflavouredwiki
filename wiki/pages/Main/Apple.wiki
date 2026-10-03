@@ -2,7 +2,7 @@
 
 {{Infobox auto}}
 
-An '''apple''' is a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Regeneration}}. Eaten raw, it heals {{Value|Apple|heals}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/apple.json}}</ref> Cooked into a [[Baked Apple|baked apple]], preserved as [[Canned Apples|canned apples]] or baked into an [[Apple Empanada|apple empanada]], it grants Regeneration for {{Value|Baked Apple|duration|effect=Regeneration}}, {{Value|Canned Apples|duration|effect=Regeneration}} and {{Value|Apple Empanada|duration|effect=Regeneration}}.
+An '''apple''' is a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Regeneration}}. Eaten raw, it heals {{Value|Apple|heals}}.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/apple.json}}</ref> Cooked into a [[Baked Apple|baked apple]], preserved as [[Canned Apples|canned apples]] or baked into an [[Apple Empanada|apple empanada]], it grants Regeneration for {{Value|Baked Apple|duration|effect=Regeneration}}, {{Value|Canned Apples|duration|effect=Regeneration}} and {{Value|Apple Empanada|duration|effect=Regeneration}}.
 
 == Obtaining ==
 
@@ -10,9 +10,6 @@ An '''apple''' is a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Regen
 Oak and dark oak leaves drop apples. The leaves' loot table has two independent apple rolls when broken without shears or Silk Touch, each with a 0.75% chance: one is increased by Fortune and the other by the Electrum tool [[intrinsic]], both to 0.9%, 1.5%, 2% and 4% at levels I to IV.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/oak_leaves.json}}</ref>
 
 {{Sources}}
-
-=== Replacement ===
-An apple without the pack's tooltip (for example one given by another mod or datapack) is replaced with the pack's apple when it enters a player's inventory, one at a time. The function is meant to skip players in Creative mode, but it only checks that some player isn't in Creative, so in multiplayer a Creative player's apples can be replaced too.<ref>{{Source|MF_datapack/data/matcha/function/remove_vanilla_items/apple.mcfunction}}</ref>
 
 == Usage ==
 
@@ -28,6 +25,7 @@ Picking up an apple unlocks the [[Baked Apple|baked apple]] recipe. Apples are c
 {{History|
 {{History line|1.03|Apples heal the amount shown in their tooltip.}}
 {{History line|1.12.1-alpha|Apple drop chance raised from 0.5% to 0.75% (4% at the highest level, up from 2.5%). Plain apples from other sources are replaced with the pack's version.}}
+{{History line|1.12.3|Plain apples from other sources are no longer replaced with the pack's version.}}
 }}
 
 == See also ==

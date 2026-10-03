@@ -11,7 +11,7 @@ Blackstone generates in Hell as in vanilla.
 Two blackstone slabs craft back into a block.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/blackstone_from_blackstone_slabs.json}}</ref>
 
 === Trading ===
-The [[Mason]] sells 1 bulk blackstone for 1 [[obol]] at the expert level; it unpacks into 64 blackstone. The item has no English name, so the game shows its translation key, <code>item.kleispack.trade.bulk_blackstone</code>.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/4/blackstone.json}}</ref> See [[Bulk blocks]] and [[Known bugs]].
+The [[Mason]] sells 1 bulk blackstone for 1 [[obol]] at the expert level; it unpacks into 64 blackstone. Its tooltip reads "x64 Blackstone".<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/4/blackstone.json}}</ref> See [[Bulk blocks]].
 
 === Bartering ===
 {{Sources}}
@@ -22,6 +22,7 @@ The [[Mason]] sells 1 bulk blackstone for 1 [[obol]] at the expert level; it unp
 == History ==
 {{History
 |{{History line|1.12.2|The [[Mason]] sells a bulk block that unpacks into 64 blackstone, instead of 64 blackstone.}}
+{{History line|1.12.3|The bulk block has an English name, "Bulk Blackstone", and the tooltip "x64 Blackstone"; before, the game showed raw translation keys.}}
 }}
 
 == References ==

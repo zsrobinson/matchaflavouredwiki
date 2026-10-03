@@ -1,6 +1,6 @@
 {{Vanilla|Campfire}}
 {{Infobox auto}}
-'''Kindling''' is a block used to cook [[food]] without fuel. It replaces the {{MCW|Campfire|campfire}} and is the first cooking station a player can build. It cooks every food an [[oven]] can except [[Pumpkin Curry|pumpkin curry]], [[Popped Chorus Fruit|popped chorus fruit]] and [[Dried Kelp|dried kelp]], and it also dries grass and fires clay.
+'''Kindling''' is a block used to cook [[food]] without fuel. It replaces the {{MCW|Campfire|campfire}} and is the first cooking station a player can build. It cooks every food an [[oven]] can, and it also dries grass and fires clay.
 
 == Obtaining ==
 === Crafting ===
@@ -16,9 +16,9 @@ Kindling has to be lit, for example with [[tinder]] or a [[Fire Starter|fire sta
 === Cooking ===
 {{Main|Cooking}}
 Up to four items cook at once, each in 5 seconds (15 seconds for the oven meals), much faster than a vanilla campfire's 30 seconds. It cooks:
-* The simple preparations of [[intrinsic]] ingredients, except popped chorus fruit and dried kelp.
+* The simple preparations of [[intrinsic]] ingredients, including [[Popped Chorus Fruit|popped chorus fruit]] and [[Dried Kelp|dried kelp]].
 * [[Bread]], [[Baked Potato|baked potato]]es, [[Fried Egg|fried egg]]s, [[nopales]], [[molasses]] and cooked meat and fish.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/molasses.json}}</ref>
-* [[Green Curry|Green curry]], [[Japanese Curry|Japanese curry]], [[Paneer Makhani|paneer makhani]] and [[Tonkotsu Ramen|tonkotsu ramen]] from their [[stock]]s.
+* [[Green Curry|Green curry]], [[Japanese Curry|Japanese curry]], [[Paneer Makhani|paneer makhani]], [[Pumpkin Curry|pumpkin curry]] and [[Tonkotsu Ramen|tonkotsu ramen]] from their [[stock]]s.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/pumpkin_curry.json}}</ref>
 
 It also dries grass and bushes and fires clay balls into bricks:<ref>{{Source|MF_datapack/data/matcha/recipe/campfire/short_dry_grass_campfire.json}}</ref>
 {{Data/Station/Kindling}}
@@ -35,6 +35,7 @@ Drying grass grants ''Harvester''.
 {{History|
 {{History line|0.5-alpha|Cooking food on a campfire gives the matching recipe unlocks.}}
 {{History line|1.03|Clay can be cooked on kindling into bricks.}}
+{{History line|1.12.3|Kindling now cooks everything an oven does: pumpkin curry, popped chorus fruit and dried kelp were added.}}
 }}
 
 == See also ==

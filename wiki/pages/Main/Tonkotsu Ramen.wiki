@@ -14,8 +14,7 @@ A [[ramen stock]] cooks into tonkotsu ramen in {{Value|Tonkotsu Ramen|cook_time}
 Eating it takes {{Value|Tonkotsu Ramen|eat_time}}, heals {{Value|Tonkotsu Ramen|heals}} and gives Haste {{Value|Tonkotsu Ramen|level|effect=Haste}} for {{Value|Tonkotsu Ramen|duration|effect=Haste|format=clock}}. The bowl is given back.
 
 === Trading ===
-{{Upcoming|type=section}}
-It is one of the foods a villager will be able to ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_41.mcfunction|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_41.mcfunction}}</ref>
 
 == Advancements ==
 * ''The Best Soup!'': make ramen (1 [[obol]]).
@@ -23,7 +22,7 @@ It is one of the foods a villager will be able to ask for as its [[favorite food
 == History ==
 {{History|
 {{History line|1.12.1-alpha|The stock uses oil and accepts seitan.}}
-{{History line|Upcoming|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 }}
 
 == Trivia ==
