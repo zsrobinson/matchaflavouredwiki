@@ -114,7 +114,7 @@ All 42 foods sell for 1 obol, including the curries and ramen, which take the mo
 
 == History ==
 {{History|
-{{History line|1.12.3|Added: every employed villager that has been traded with buys one random food, once. The 42 foods each carry one item per trade, and an [[Amnestic]] gives the villager a new one.}}
+{{History line|1.12.3|Added: every employed villager that has been traded with buys one random food, once. The villager wants 1 of the food, and an [[Amnestic]] gives it a new favorite.}}
 }}
 The favorite food was contributed by TankyAibem (pull request #193), as a rework of the "local flavors" add-on. It was merged into the repository's <code>main</code> branch about an hour and a half after [[Matcha Flavoured 1.12.2|1.12.2-beta]] was published on Modrinth and is part of 1.12.3.<ref>[https://github.com/kleiwright/matcha-flavoured/commit/139f198a Merge of pull request #193] (2026-09-19 04:50 UTC; the beta was published at 03:20 UTC)</ref>
 

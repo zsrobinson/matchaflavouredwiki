@@ -163,7 +163,7 @@ Spawn weights are given as (weight, minimum group – maximum group). Features m
 |-
 | <code>matcha:flower_beach</code> || Beach || Blue orchids (weight 2) and cornflowers (weight 1); a 1 in 32 chance per chunk of a patch of 64 attempts.<ref>{{Source|MF_datapack/data/matcha/worldgen/placed_feature/flower_beach.json}}</ref>
 |-
-| <code>matcha:nether_wart</code> || Nether Wastes, Soul Sand Valley || [[Hellspore]] patches of age 0–3 on soul sand. Uses a tree feature whose "trunk" is Nether wart and whose base block is soul sand.<ref>{{Source|MF_datapack/data/matcha/worldgen/configured_feature/nether_wart.json}}</ref>
+| <code>matcha:nether_wart</code> || Nether Wastes, Soul Sand Valley || [[Hellspore]] patches of age 0–3 on soul sand. Uses a tree feature whose "trunk" is Nether wart and whose base block is soul sand.<ref>{{Source|MF_datapack/data/matcha/worldgen/feature/nether_wart.json}}</ref>
 |}
 
 == Music ==

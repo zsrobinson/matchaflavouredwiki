@@ -16,7 +16,7 @@ The table lists every dye recipe that differs from vanilla. Dyes not listed are 
 | 1 ink sac → 1; 1 wither rose → 1
 |-
 | Green dye
-| Cactus in a [[Mud Kiln|mud kiln]] (5 s) or [[Blast Furnace|blast furnace]] (2.5 s) → 1<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/green_dye.json}}</ref><br />[[Glass Bottle#Water bottle|Water bottle]] + raw copper + [[Sulfur Chunk|sulfur chunk]] → 2 (the bottle is returned)<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/green_dye_from_patina.json}}</ref>
+| Cactus in a [[Mud Kiln|mud kiln]] ({{Value|Green Dye|cook_time|station=Mud Kiln}}) or [[Blast Furnace|blast furnace]] ({{Value|Green Dye|cook_time|station=Blast Furnace}}) → 1<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/green_dye.json}}</ref><br />[[Glass Bottle#Water bottle|Water bottle]] + raw copper + [[Sulfur Chunk|sulfur chunk]] → 2 (the bottle is returned)<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/green_dye_from_patina.json}}</ref>
 | Cactus in a furnace
 |-
 | Red dye

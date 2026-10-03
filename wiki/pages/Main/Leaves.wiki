@@ -29,7 +29,7 @@ The 1.12.1-alpha notes describe the change as "base 0.5% -> 0.75% ; max fortune 
 
 == Usage ==
 === Saplings ===
-Every kind of leaves can be crafted into one of its sapling (for mangrove leaves, a propagule; for azalea and flowering azalea leaves, the matching azalea).<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/oak_sapling_from_oak_leaves.json}}</ref> Each recipe unlocks when the player picks up the matching log, since players do not always collect leaves.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/oak_leaves.json}}</ref>
+Every kind of leaves can be crafted into one of its sapling (for mangrove leaves, a propagule; for red, orange and yellow poplar leaves, a poplar sapling, see [[Poplar]]; for azalea and flowering azalea leaves, the matching azalea).<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/oak_sapling_from_oak_leaves.json}}</ref> Each recipe unlocks when the player picks up the matching log, since players do not always collect leaves.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/oak_leaves.json}}</ref>
 
 == History ==
 {{History
@@ -37,6 +37,7 @@ Every kind of leaves can be crafted into one of its sapling (for mangrove leaves
 {{History line|1.03|Sapling recipes unlock when the player picks up logs instead of leaves.}}
 {{History line|1.12.1-alpha|Apples drop more often: 0.75% base, up to 4%.}}
 {{History line|1.12.2|Oak and dark oak leaves also roll for apples with the electrum tool intrinsic.}}
+{{History line|1.12.3|Red, orange and yellow [[Poplar|poplar]] leaves follow the same rules.}}
 }}
 
 == References ==

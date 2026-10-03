@@ -11,7 +11,7 @@
 
 === Chest loot ===
 {{Sources}}
-The boots found in [[village]] tannery chests are an older version of the item. In 1.12.2 they are invisible when worn: their equipment asset is <code>minecraft:sturdy_leather</code>, but the resource pack defines the texture as <code>matcha:sturdy_leather</code>. They also give 1 block of safe fall distance instead of 2 and no extra step height, have Feather Falling III instead of II and one extra random enchantment, and are repaired with sturdy leather instead of tattered leather.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/sturdy_leather.json}}</ref> See [[Sturdy leather armor#Village tannery chests]].
+In 1.12.2, the boots found in [[village]] tannery chests was an older, invisible version of the item. Tannery chests are empty in 1.12.3. See [[Sturdy leather armor#Village tannery chests]].
 
 == Usage ==
 

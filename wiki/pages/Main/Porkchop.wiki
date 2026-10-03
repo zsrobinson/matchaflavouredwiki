@@ -1,0 +1,25 @@
+{{Infobox auto}}
+The '''porkchop''' is a food item with the classic porkchop texture. It heals {{Value|Porkchop|heals}} the moment it is used, but the pack gives it no recipe, trade or drop: it can only be obtained with the <code>/loot</code> command. It is a different item from the [[Raw Porkchop|raw porkchop]] that pigs drop.
+
+== Obtaining ==
+The datapack has a loot table for it, <code>matcha:treasure/porkchop_classic</code>, which no chest, mob or trade uses, so it can only be given with <code>/loot give @s loot matcha:treasure/porkchop_classic</code>.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/porkchop_classic.json}}</ref>
+
+== Usage ==
+=== Food ===
+The item is a vanilla porkchop with a changed model (<code>matcha:porkchop_classic</code>) and the name "Porkchop". It is consumed at once, with no eating animation or sound, and applies Instant Health when used.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/porkchop_classic.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.3|Added a loot table, <code>matcha:treasure/porkchop_classic</code>, to give the item with <code>/loot</code>. The <code>update_item</code> trigger now converts old classic porkchops to the new model.<ref>{{Source|MF_datapack/data/matcha/item_modifier/porkchop_classic.json}}</ref>}}
+}}
+
+== See also ==
+* [[Raw Porkchop]]
+* [[Cooked Porkchop]]
+* [[Rose]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]
