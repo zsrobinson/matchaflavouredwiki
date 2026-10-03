@@ -122,7 +122,7 @@ A map trade is dropped if no such structure lies within 100 chunks.
 Pays 5 obols for the Creator disc.
 Buys up to 6 discs and sells up to 4 Asylum Seekers.}}
 {{History line|1.12.1-alpha|Asylum Seeker applications are randomized.}}
-{{History line|1.12.3|When a [[Beacon Kindling]] summon is cancelled because no beacon or waiting player is left, players who were waiting now get the "lost sight of your beacon" message.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/no_beacons_reset.mcfunction}}</ref>}}
+{{History line|1.12.3|When a [[Beacon Kindling]] summon is cancelled because no beacon is left and no player is still waiting, the players tagged as summoners now get the "lost sight of your beacon" message.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/no_beacons_reset.mcfunction}}</ref>}}
 }}
 
 == Trivia ==
