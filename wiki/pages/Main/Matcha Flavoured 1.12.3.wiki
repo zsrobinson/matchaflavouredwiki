@@ -1,0 +1,56 @@
+{{Meta version infobox
+|version=1.12.3
+|name=Death, Worldgen, & UX
+|type=Release
+|date=October 2, 2026
+|game=26.2 (port to 26.3 in alpha)
+|files=<code>MF_DP_1_12_3_26_2.zip</code> (datapack), <code>MF_DP_1_12_3_26_3.zip</code> (datapack, 26.3 alpha)
+|prev=1.12.2-beta
+}}
+'''Matcha Flavoured 1.12.3''', "Death, Worldgen, & UX", is the current version of [[Matcha Flavoured]], published on October 2, 2026. It is the first full release since [[Matcha Flavoured 1.12|1.12]]. The developer describes it as "not a content-filled, crazy update": it is about player experience, progression and polishing the permanent [[death]] system, and it rolls up the changes of [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] and [[Matcha Flavoured 1.12.2|1.12.2-beta]].<ref>{{Cite changelog|1.12.3|quote=This is not a content-filled, crazy update. This update is focused on UX, progression, and polishing up the death system.}}</ref>
+
+The same day, the pack was also published as a ''Minecraft'' 26.3 port titled "Port to 26.3", marked alpha. The developer says everything broke when 26.3 came out (biomes, loot tables, advancements, recipes and item modifiers), that Fpekal did most of the porting work, and that 26.3 is the version they will keep working on, so bugs are expected.<ref>{{Cite changelog|1.12.3|quote=This will be the version we are working on from now on}}</ref> This wiki describes the 26.3 code. The pack's <code>pack.mcmeta</code> reports the version as "1.12.3 for 26.3".<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+== Updating ==
+{{Main|Updating items}}
+Items made in earlier versions can appear broken after the namespace move of 1.12.2-beta. The notes repeat the remedies: hold the item and run <code>/trigger update_item</code>; or give the item the right model by hand with a <code>/data merge entity</code> command on a thrown copy; or put the old resource pack under the new one. The datapack and resource pack are separate downloads, so both must be updated, and [[villager]]s have to be reset with an [[Amnestic]].<ref>{{Cite changelog|1.12.3|quote=Villagers have to be reset (Amnestic)}}</ref>
+
+== Major additions and changes ==
+* [[Advancements]] were reworked: some reward [[obol]]s or hearts, and others lower the minimum number of hearts.
+* [[Crystal Heart|Crystal hearts]] are used by the player instead of forced on them.
+* The [[Wither effect]] is much more dangerous, and the Wither can only be spawned on the surface of the overworld. [[Wither Skeleton]] feet are no longer as easy to get.
+* Mobs no longer drop [[obol]]s. Mobs from [[spawner]]s drop no loot at all, which the developer says may be reverted in the planned structure update.
+* [[Husk]]s look more different from zombies, with less health and slightly faster movement.
+* Smithing was simplified: [[Adamant equipment|adamant]] was overhauled and [[Electrum equipment|electrum]] polished; neither burns and both are safe from piglins; [[Fortune]] III can only come from electrum; equipment repair is easier to understand; and smithing a piece of gear with enchantments keeps them (HapppySpud).
+* More foods, one with a new effect.
+* [[Amnestic]]s, [[Aura]] and other mechanics were reworked; see their pages.
+
+=== World generation ===
+* Silver generates rarely in every biome, twice as often in mountain biomes and the deep dark (more the deeper it is), and less often at high elevation than before.
+* [[Quartz]] generates much higher and in much greater amounts.
+* [[Hellspore]] (nether wart) generates in nether wastes and soul sand valleys, so [[Nether Fortress|fortresses]] are only needed for wither skeletons and loot.
+* Beaches generate blue orchids and cornflowers.
+* The dappled forest's canopy moved up and is now closed, inspired by Conure's video of the same concept.
+* Swamps were made swampier, with a new tree type, shelf mushrooms and bushes.
+
+== Technical changes ==
+* Everything moved into the <code>matcha</code> namespace, with some exceptions, and the data and resource pack were split into two downloads.
+* More tooltips are translatable. Some items were still missed, because a datapack must repeat an item in many places (a crystal heart is in loot tables, several villager trades and a recipe).
+* The developer wants to move all non-vanilla items into the <code>matcha</code> namespace using item models over vanilla items, as was done for spawn eggs, and eventually move alloys to spawn eggs.
+* The [[Abbey]] and [[Papal Outpost]] were not moved over yet; they are for a planned structure update. Chest, spawner and similar loot tables are unfinished, and [[Village|village]] loot tables are empty because everything broke in 26.3; the developer plans to add them back, nerfed, since villages "were never meant to be a part of this pack".<ref>{{Cite changelog|1.12.3|quote=Village Loottables are empty}}</ref>
+
+== Credits ==
+The release notes credit, in addition to the earlier versions: Hashiru (optimisations), NamlessJU (code, translations), Nat (translation lead), Imtlx (the new [[Angler's Almanac]], [[Fishing sounds]], translation), Vee Vaicekauskas (background music), DeBlezyBestie (music discs), Bingbongbooper (food ideas), HapppySpud, Linkershim, Pepurion, Fayranchia, ReinIsNOTaDev, Fpekal (a large part of the 26.3 port), FloofShade, EastMonster, Voxybuns, milo256 and the translation volunteers.
+
+== Changes after 1.12.2-beta ==
+The fixes and additions listed under "Post-release fixes" on the [[Matcha Flavoured 1.12.2|1.12.2-beta]] page (the [[favorite food]] trade, invisible steel armor, the Wither effect shared between players, empty bottles, and more) are part of this release. Individual pages list what else changed under their History headings.
+
+== Trivia ==
+* The developer says they are exhausted and expects updates to slow down, with a break to work on videos.<ref>{{Cite changelog|1.12.3|quote=So expect updates to slow down.}}</ref>
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Releases]]

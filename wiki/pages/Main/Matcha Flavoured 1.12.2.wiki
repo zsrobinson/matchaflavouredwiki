@@ -6,8 +6,9 @@
 |date=September 19, 2026
 |files=<code>Matcha_DP_1_12_2_pre.zip</code> (datapack), <code>Matcha_RP_1_12_2_pre.zip</code> (resource pack)
 |prev=1.12.1-alpha
+|next=1.12.3
 }}
-'''Matcha Flavoured 1.12.2-beta''', "Progression, Polish, Prerelease", is the current version of [[Matcha Flavoured]], published on September 19, 2026. It made the experimental [[death]] system from [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] permanent, moved almost all of the pack into the <code>matcha</code> namespace, reworked [[Electrum equipment|electrum]], [[warding]] and [[Adamant equipment|adamant]] (whose intrinsic became [[Doom]]), added [[Raw Diamond|raw diamonds]] that need a [[blast furnace]], and made the [[Wither effect|Wither effect]] far more dangerous.<ref>{{Cite changelog|1.12.2}}</ref>
+'''Matcha Flavoured 1.12.2-beta''', "Progression, Polish, Prerelease", was the previous version of [[Matcha Flavoured]], published on September 19, 2026. It made the experimental [[death]] system from [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] permanent, moved almost all of the pack into the <code>matcha</code> namespace, reworked [[Electrum equipment|electrum]], [[warding]] and [[Adamant equipment|adamant]] (whose intrinsic became [[Doom]]), added [[Raw Diamond|raw diamonds]] that need a [[blast furnace]], and made the [[Wither effect|Wither effect]] far more dangerous.<ref>{{Cite changelog|1.12.2}}</ref>
 
 It is the first version released as two separate Modrinth files: a datapack and a companion resource pack, whose release notes only say "See DP Changelog for details".<ref>{{Cite changelog|1.12.2|quote=See DP Changelog for details}}</ref> The pack's <code>pack.mcmeta</code> files report the version as "1.12.2 for 26.2", and the internal version number is 1122.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
 
@@ -120,7 +121,7 @@ To make the pack easier for other developers to work with, almost every item, mo
 * The <code>main</code> namespace, apart from what enchantment updates still need.
 
 == Post-release fixes ==
-The repository's <code>main</code> branch received the following fixes and additions after the beta was published. They are recorded in the repository's commit history rather than in the release notes. They are not in the Modrinth download, so this wiki describes them as upcoming.<ref>[https://github.com/kleiwright/matcha-flavoured/compare/{{Source/commit}}...5bf7c3e22adaabf2416c83b709842cb9a053cb95 Commits on <code>main</code> after 1.12.2-beta]</ref>
+The repository's <code>main</code> branch received the following fixes and additions after the beta was published. They are recorded in the repository's commit history rather than in the release notes. They are not in the Modrinth download of the beta, but they are part of [[Matcha Flavoured 1.12.3|1.12.3]].<ref>[https://github.com/kleiwright/matcha-flavoured/compare/{{Source/commit}}...5bf7c3e22adaabf2416c83b709842cb9a053cb95 Commits on <code>main</code> after 1.12.2-beta]</ref>
 * Every employed villager gains a one-time [[favorite food]] trade after its first trade (TankyAibem).
 * The update trigger no longer tries to identify items by ID and exits with a message when an item has no translation key. It supports villager trades, applied [[Trims|armor trims]] and lodestone compass targets (FloofShade).
 * Steel armor made by smithing or found in loot was invisible when worn; its equipment asset now uses the <code>matcha</code> namespace. The intrinsic lines of electrum tools and shakudo weapons, which showed raw translation keys, got language entries (kleiwright).

@@ -3,15 +3,15 @@ This page collects features of [[Matcha Flavoured]] that are in development or p
 
 == In development ==
 {{Upcoming|type=section}}
-=== Post-release fixes ===
-The <code>main</code> branch already contains the [[favorite food]] trade and bug fixes made after 1.12.2-beta, including improvements to the [[Updating items|item update trigger]], fixes for Fortune and electrum on gold ore, empty bottles from crafting, the freezing water effect on spectators, the Wither heart meter being shared by all players, the "Crystal Heart!" advancement and the pufferfish [[Angler's Almanac]] entry, and several namespace errors: blessings that stored old-namespace enchantments, invisible [[Steel equipment|steel armor]] and untranslated intrinsic names on electrum and shakudo tools. It also fixes the tooltips of the steel pickaxe and shovel and the repair items of the [[Adamant Leggings|adamant leggings]] and [[Shepherd's Shears|shepherd's shears]], adds [[Large bricks|large bricks]] for more double slabs, and removes bells from the items piglins love. The fixed bugs are also on [[Known bugs#Fixed on the main branch|Known bugs]]. They are listed in full on the [[Matcha Flavoured 1.12.2#Post-release fixes|1.12.2 page]].
+=== Structure update ===
+The developer plans a structure update that will move the [[Abbey]] and [[Papal Outpost]] over to the new namespace, revisit the chest, spawner and village loot tables (village loot is empty in 1.12.3 and is to return nerfed), and possibly bring back the loot of mobs from [[spawner]]s.<ref>{{Cite changelog|1.12.3|quote=The Abbey and Papal Outposts have not been moved over yet.}}</ref>
 
 === Minecraft 26.3 ===
-26.3 changes datapack syntax, and a port was in progress at the time of 1.12.2-beta.<ref>{{Cite changelog|1.12.2}}</ref> The docket lists work still needed for it: poplar leaves need a crafting advancement and loot tables.<ref>{{Cite changelog||quote=Poplar leaves crafting needs to be added to adv}}</ref>
+The 26.3 port of 1.12.3 is published as an alpha, and the developer says it is the version they will work on from now on.<ref>{{Cite changelog|1.12.3|quote=This will be the version we are working on from now on}}</ref>
 
 == Next update ==
 {{Planned|type=section}}
-The in-development changelog lists these as planned for the update after 1.12.2:<ref>{{Cite changelog}}</ref>
+The in-development changelog lists these as planned for updates after 1.12.2 (not all of it has been done in 1.12.3):<ref>{{Cite changelog}}</ref>
 ; Aspects
 : Post-End enchanting that extracts an alloy's intrinsic as an "aspect", using a withered heart and dragon's breath. Planned pairings: bronze ([[Hepatizon equipment|hepatizon]]) gives Efficiency, [[Steel equipment|steel]] Unbreaking, [[Electrum equipment|electrum]] Fortune III, netherite ([[Adamant equipment|adamant]]) smelting, and [[Shakudo equipment|shakudo]] Silk Touch or life steal. An Unbreaking enchantment from the Wither's heart is also planned, and Protection may be replaced by more specific protections.
 ; Copper intrinsic
