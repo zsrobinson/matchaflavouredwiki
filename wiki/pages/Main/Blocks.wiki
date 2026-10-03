@@ -141,7 +141,7 @@ The pack edits several block tags:<ref>{{Source|MF_datapack/data/minecraft/tags/
 * '''Climbable''': every [[chain]] can be climbed like a ladder.
 * '''Endermen''' can only pick up melons, pumpkins and [[TNT]] (the tag is replaced, not extended).<ref>{{Source|MF_datapack/data/minecraft/tags/block/enderman_holdable.json}}</ref>
 * '''Mineable with a pickaxe''': glass and stained glass (blocks and panes), mob heads, the beacon, glowstone ([[Crystallized Estus|crystallized estus]]), [[Malachite#Malachite Lantern|malachite lanterns]], [[Electric Lamp|electric lamps]], [[Phosphor lamps|phosphor lamps]], the [[Copper Eye|copper eye]], levers and frosted ice.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
-* '''Mineable with a hoe''': wool, carpets, [[Glow Lichen|glow lichen]] and phosphor lamps.
+* '''Mineable with a hoe''': wool (including wool slabs and stairs since 1.12.3), carpets, [[Glow Lichen|glow lichen]] and phosphor lamps.
 * '''Mineable with an axe''': beds, candles, cactus and honeycomb blocks.
 * '''Mineable with a shovel''': [[Dirt Slab|dirt slabs]].
 * '''Supports vegetation''': sand, red sand and packed mud, so grass and flowers can be placed on them.<ref>{{Source|MF_datapack/data/minecraft/tags/block/supports_vegetation.json}}</ref>

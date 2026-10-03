@@ -15,7 +15,7 @@ A '''diamond hoe''' is a [[Tools#Hoe|hoe]] of the [[Diamond equipment|diamond]] 
 == Usage ==
 
 === Farming and mining ===
-It breaks hoe blocks at speed {{Value|Diamond Hoe|miningspeed}} and has {{Value|Diamond Hoe|durability}} durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+It breaks hoe blocks at speed {{Value|Diamond Hoe|miningspeed}} and has {{Value|Diamond Hoe|durability}} durability. Hoes in Matcha Flavoured also break wool (including wool slabs and stairs), carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Combat ===
 It deals {{Value|Diamond Hoe|damage}} damage at an attack speed of {{Value|Diamond Hoe|attackspeed}}.

@@ -29,7 +29,7 @@
 |-
 | Steel || steel alloy || Steel (the iron material)
 |}
-Shakudo, hepatizon and electrum have their own trim materials, with darker variants on armor of the same alloy.<ref>{{Source|MF_datapack/data/matcha/trim_material/shakudo.json}}</ref> A silver material name exists in the language file but has no recipe. Most trim templates keep their vanilla duplication recipes.
+Shakudo, hepatizon and electrum have their own trim materials, each with its own colour palette.<ref>{{Source|MF_datapack/data/matcha/trim_material/shakudo.json}}</ref> The resource pack still has a darker palette for the inventory icon of armor trimmed with its own alloy.<ref>{{Source|MF_resourcepack/assets/matcha/models/item/shakudo_boots_shakudo_trim.json}}</ref> In 1.12.2 the worn armor used the darker palette too; the 1.12.3 trim materials no longer name one. A silver material name exists in the language file but has no recipe. Most trim templates keep their vanilla duplication recipes.
 
 == Templates ==
 Each trim is applied with its own smithing template. In-game every trim template is named ''Smithing Template'', and the line under the name gives the trim (for example "Flow Armor Trim"). The table lists where the pack's loot gives each template and what duplicates it at a crafting table; each recipe makes two templates from one. For the template that upgrades equipment, see [[Smithing Upgrade Template]].
@@ -39,6 +39,7 @@ Each trim is applied with its own smithing template. In-game every trim template
 {{History|
 {{History line|1.12.1-alpha|Fixed the flow armor trim.}}
 {{History line|1.12.2|Added trim colors; trims supported on custom armor.}}
+{{History line|1.12.3|The shakudo, hepatizon and electrum trim materials use the new palette format, and worn armor no longer switches to a darker palette for its own alloy.<ref>{{Source|MF_datapack/data/matcha/trim_material/electrum.json}}</ref>}}
 }}
 
 == References ==
