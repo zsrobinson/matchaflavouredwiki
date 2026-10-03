@@ -19,9 +19,7 @@ Compared to vanilla, the bartering table no longer gives iron boots or potions, 
 The pack adds the four netherite armor pieces to the <code>#minecraft:piglin_safe_armor</code> tag.<ref>{{Source|MF_datapack/data/minecraft/tags/item/piglin_safe_armor.json}}</ref> Adamant armor is netherite armor renamed, and electrum armor is built on netherite armor items, so wearing either keeps piglins calm like golden armor.
 
 === Loved items ===
-The pack does not change the <code>#minecraft:piglin_loved</code> tag, so piglins are attracted to the same gold items as in vanilla, including bells.
-
-In an upcoming update (on the repository's <code>main</code> branch, not in [[Matcha Flavoured 1.12.2|1.12.2-beta]]), the pack replaces the tag with the vanilla list minus bells, so piglins no longer care about bells.<ref>{{Source|MF_datapack/data/minecraft/tags/item/piglin_loved.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+The pack replaces the <code>#minecraft:piglin_loved</code> tag with the vanilla list minus bells, so piglins are attracted to the same gold items as in vanilla except bells.<ref>{{Source|MF_datapack/data/minecraft/tags/item/piglin_loved.json}}</ref>
 
 == Piglin brute ==
 Piglin brutes have their own loot table in the pack. When killed by a player, a brute drops:<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/piglin_brute.json}}</ref>
@@ -35,7 +33,7 @@ Piglin brutes have their own loot table in the pack. When killed by a player, a 
 {{History line|0.6-alpha|Piglins and zombified piglins no longer drop their armor or tools.}}
 {{History line|1.10|Piglin brute drop rates nerfed.}}
 {{History line|1.12.2|Netherite and electrum count as piglin-safe armor.}}
-{{History line|Upcoming|2=Bells removed from the items piglins love.}}
+{{History line|1.12.3|2=Bells removed from the items piglins love.}}
 }}
 
 == See also ==

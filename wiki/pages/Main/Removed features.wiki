@@ -5,7 +5,7 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 ; Stone tools
 : The vanilla stone tool recipes are blocked. Progression goes from wood straight to copper.<ref>{{Source|README.md}}</ref> See [[Progression]].
 ; Hunger
-: The food bar is hidden and held in a fixed range: the pack applies Hunger when the food level is 10 or more and Saturation when it falls to 6 or lower, so the player can always sprint and food matters only for healing and effects.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref> See [[Hunger]].
+: The food bar is hidden and held in a fixed range: the pack applies Hunger when the food level is 10 or more and Saturation when it falls to 7 or lower, so the player can always sprint and food matters only for healing and effects.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref> See [[Hunger]].
 ; Natural regeneration
 : The <code>natural_health_regeneration</code> gamerule is set to false on first load. The player heals by eating.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref> See [[Natural regeneration]].
 ; Item loss on death

@@ -23,8 +23,9 @@ Only items whose name carries a translation key can be updated, so an item renam
 
 == Other methods ==
 * <code>/loot give @s loot matcha:...</code> gives a fresh copy of many items, for example <code>matcha:treasure/divine_comedy</code>.
+* For a sentimental item the trigger cannot rebuild, the 1.12.3 release notes suggest throwing it on the ground and running <code>/data merge entity @n[type=item] {Item:{components:{"item_model":"matcha:XXX"}}}</code>, where <code>XXX</code> is the item's model name from the English language file (for example <code>oarfish</code> or <code>mournful_clay_statue</code>).<ref>{{Cite changelog|1.12.3|quote=Replace the XXX with the item name}}</ref>
 * Loading the previous resource pack below the new one hides broken textures, although enchantments stay broken.
-* The weaponsmith (grindstone villager) melts alloyed equipment into its components, and an [[Amnestic|amnestic]] resets a villager's trades. Both were added in [[Matcha Flavoured 1.10|1.10]].
+* The weaponsmith (grindstone villager) melts alloyed equipment into its components, and an [[Amnestic|amnestic]] resets a villager's trades (after the 1.12.3 changes, villagers need one to unlock the new trades). Both were added in [[Matcha Flavoured 1.10|1.10]].
 
 == History ==
 {{History

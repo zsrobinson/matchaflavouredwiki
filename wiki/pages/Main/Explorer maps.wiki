@@ -60,7 +60,7 @@ A [[Wandering Trader]] offers 3 of these 6 maps, each for 1 obol and each usable
 |}
 
 === Other maps ===
-Buried treasure maps are found in shipwreck map chests and ocean ruin chests, as in vanilla ''Minecraft''; see [[Buried treasure]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_map.json}}</ref>
+Buried treasure maps are found in shipwreck map chests, as in vanilla ''Minecraft''; see [[Buried treasure]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_map.json}}</ref> The "Buried Treasure Map" in [[ocean ruins]] chests is a bug in 1.12.3: it is named like a buried treasure map, but its destination is a woodland mansion, so it leads to the nearest [[Woodland Mansion|mansion]] instead.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_small.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_big.json}}</ref> See [[Known bugs]].
 
 == Behavior ==
 When the villager reaches the level that offers a map, the game searches for the nearest structure of that type within 100 chunks. If one is found, the map is drawn with the structure's marker; if not, that trade is left out of the villager's offers.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/4/ancient_city.json}}</ref> Every copy bought from the same villager leads to the same structure.

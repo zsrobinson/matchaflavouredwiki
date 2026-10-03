@@ -9,9 +9,9 @@
 |-
 | {{BlockLink|Native Copper}} || Copper Ore || 1–2 raw copper (2–5 from the deepslate variant); adamant tools drop copper ingots || As vanilla copper ore.
 |-
-| {{BlockLink|Hematite}} || Iron Ore || 1 raw iron (vanilla table; 2 from deepslate hematite, where adamant tools drop ingots) || As vanilla iron ore.
+| {{BlockLink|Hematite}} || Iron Ore || 1 raw iron, with Fortune and electrum bonuses (adamant tools drop ingots) || As vanilla iron ore.
 |-
-| {{BlockLink|Native Gold}} || Gold Ore || 1 raw gold, affected by Fortune and electrum (in 1.12.2-beta the stone variant applies Fortune twice and ignores electrum; see [[Native Gold#Breaking]]); adamant tools drop a gold ingot. Needs an iron or better pickaxe || As vanilla gold ore.
+| {{BlockLink|Native Gold}} || Gold Ore || 1 raw gold, affected by Fortune and electrum (the stone variant's raw gold entry is still in the old loot format, so its bonuses probably do not apply; see [[Native Gold#Breaking]]); adamant tools drop a gold ingot. Needs an iron or better pickaxe || As vanilla gold ore.
 |-
 | {{BlockLink|Native Silver}} || Emerald Ore || 1 [[Raw Silver|raw silver]], affected by Fortune and electrum; adamant tools drop [[Silver Bullion|silver bullion]] || In mountain biomes and the deep dark the vanilla emerald feature runs at 50 attempts per chunk (vanilla 100), plus 5 deep attempts. Stony peaks get only the 50 attempts, the beach biome and the sulfur caves get none, and every other overworld biome (snowy beaches and stony shores included) gets 3 deep attempts.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/beach.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/snowy_beach.json}}</ref> Deep veins follow a triangle from y=16 down to the world bottom, most common at the bottom.
 |-

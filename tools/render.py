@@ -201,7 +201,7 @@ def main():
             except ValueError:
                 continue
             if 'error' in r:
-                print('FAILED', r['name'], '\n'.join(r['error'].splitlines()[:6]))
+                print('FAILED', r['name'], r['error'].splitlines()[0])
                 continue
             warn = [f'{k}: {r[k]}' for k in ('unknownBlocks', 'missingTextures') if r.get(k)]
             print('rendered', r['name'], *warn)

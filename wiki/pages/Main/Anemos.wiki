@@ -9,7 +9,7 @@
 '''Anemos''' is an [[enchantment]] added by [[Matcha Flavoured]] that makes a sword fire a {{MCW|Wind Charge|wind charge}} with every hit.
 
 == Obtaining ==
-* [[Prayer of Aeolus]], a crafted [[blessing]] that also gives Wind Burst I. In 1.12.2 it stores the old <code>main:anemos</code>, which becomes Anemos the first tick the sword is held in the main hand and cannot be applied to copper swords.<ref>{{Source|MF_datapack/data/main/enchantment/anemos.json}}</ref><ref>{{Source|MF_datapack/data/main/item_modifier/update_anemos.json}}</ref>
+* [[Prayer of Aeolus]], a crafted [[blessing]] that also gives Wind Burst I. It stores Anemos directly, so it can be applied to copper swords.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/wind_burst_anemos.json}}</ref>
 * Iron swords in the tower and barracks chests of the [[Abbey]] come with Anemos.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/tower.json}}</ref>
 Anemos has a maximum level of I and cannot appear on random enchanted books.
 
@@ -26,7 +26,7 @@ After each wind charge, Anemos has a cooldown of 10 ticks (0.5 seconds), the sam
 {{History line|1.10|Can no longer be applied to maces. The wind charge is now owned by the enchanted player, so kills with it count.<ref>{{Cite changelog|1.10|quote=Windcharges shot with Anemos now register enchanted player as the one who "Owns" it. (This means if you kill someone with Anemos, it will count)}}</ref>}}
 {{History line|1.12.1-alpha|Now affects only the wielder in multiplayer.}}
 {{History line|1.12.2|Moved from the <code>main</code> to the <code>matcha</code> namespace. Items with the old enchantment are converted when held. The Prayer of Aeolus still gave the old enchantment.}}
-{{History line|Upcoming|2=The Prayer of Aeolus stores Anemos directly, so it can be applied to copper swords.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/wind_burst_anemos.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>}}
+{{History line|1.12.3|2=The Prayer of Aeolus stores Anemos directly, so it can be applied to copper swords.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/wind_burst_anemos.json}}</ref>}}
 }}
 
 == See also ==

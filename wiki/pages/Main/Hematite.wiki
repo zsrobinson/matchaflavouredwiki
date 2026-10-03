@@ -9,7 +9,12 @@ The deepslate variant is '''deepslate hematite'''.
 As vanilla iron ore.
 
 === Breaking ===
-Mined with a pickaxe (see [[Tools#Mining levels]]), hematite uses the vanilla loot table: 1 raw iron, affected by Fortune, with no bonus from electrum or adamant tools. Deepslate hematite drops 2 raw iron, affected by Fortune and electrum, and adamant tools drop 2 iron ingots instead.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_iron_ore.json}}</ref> Silk Touch drops the block.
+Mined with a pickaxe (see [[Tools#Mining levels]]), hematite drops 1 raw iron, affected by [[Fortune]] and the [[Electrum equipment|electrum]] intrinsic.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/iron_ore.json}}</ref> Deepslate hematite drops the same.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_iron_ore.json}}</ref> Tools with the adamant intrinsic drop an iron ingot instead (1 to 2 ingots from deepslate hematite), with the same Fortune and electrum bonuses. Silk Touch drops the block.
+
+== History ==
+{{History|
+{{History line|1.12.3|Hematite has its own loot table, applying Fortune and electrum like deepslate hematite. Deepslate hematite drops 1 raw iron instead of 2, and adamant tools drop 1 to 2 ingots instead of 2.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/iron_ore.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_iron_ore.json}}</ref>}}
+}}
 
 == References ==
 {{reflist}}
