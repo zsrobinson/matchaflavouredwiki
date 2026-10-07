@@ -22,6 +22,7 @@ Vanilla sleep skipping is disabled (<code>players_sleeping_percentage</code> is 
 {{History line|1.12.1-alpha|Clay fetishes work for all players; bloodrage, Anemos, adamant and electrum apply only to their user.}}
 {{History line|1.12.2|Heart loss is per player. Multiplayer improvements by Linkershim; dynamic multiplayer sleep by milo256.}}
 {{History line|1.12.3|The Wither heart effect no longer spreads to all players.<ref>{{Source|MF_datapack/data/matcha/function/effects/wither/effect.mcfunction}}</ref>}}
+{{History line|1.12.4|Fixed multiplayer sleep: players who went to bed after another player was already asleep were not counted, so time passed more slowly than it should (see [[Sleeping]]).<ref>{{Cite changelog|1.12.4|quote=Multiplayer Sleep speed}}</ref>}}
 }}
 
 == References ==

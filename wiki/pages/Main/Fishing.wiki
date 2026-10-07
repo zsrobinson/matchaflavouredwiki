@@ -98,7 +98,7 @@ Snowy Beach is in no biome tag at all, so only the base junk (10) and treasure (
 
 == Junk and treasure ==
 {{Main|Fishing junk|Fishing treasure}}
-Junk is mostly lily pads, [[Sturdy Leather|leather]], [[Fish Bones|fish bones]], water bottles, [[Estus Ash]] and nautilus shells. Some biomes add their own junk: [[bamboo]] in jungles, [[Frog|frogs]] and [[Tadpole|tadpoles]] in swamps, and [[Axolotl|axolotls]] in Dripstone Caves and Lush Caves.
+Junk is mostly lily pads, [[Sturdy Leather|leather]], [[Fish Bones|fish bones]], water bottles, [[Estus Ash]] and nautilus shells. Some biomes add their own junk: [[bamboo]] in jungles, [[Frog|frogs]] and [[Tadpole|tadpoles]] in swamps, and [[Axolotl|axolotls]] in Dripstone Caves and Lush Caves. In 1.12.4 the junk table can't be loaded because of a syntax error, so a catch that picks junk gives nothing at all: the odds of fish and treasure are unchanged, but none of these items can be fished, and in biomes where most catches are junk most catches give nothing. See [[Fishing junk]] and [[Known bugs]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
 
 Treasure is [[Obol]]s, enchanted fishing rods, [[Hell-Bound Book]]s, goat horns, angler pottery sherds, [[Crystal Heart]]s and rarely a chest of buried treasure.
 
@@ -163,6 +163,7 @@ Estus Ash added to junk, treasure tweaked. The release notes say nautilus shells
 Old Growth Spruce Taiga added to cool freshwater.}}
 {{History line|1.12.2|The Angler's Almanac entries for Warm Saltwater and for the axolotl can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/warm/root.json}}</ref>}}
 {{History line|1.12.3|2=Fish Bones caught in Sulfur Caves now have the correct texture.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref> The Angler's Almanac entry for pufferfish in Hot Saltwater can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>}}
+{{History line|1.12.4|The junk table can't be loaded, so junk catches give nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>}}
 }}
 <ref>{{Cite changelog|0.5-alpha|quote=Overhauled Fishing System}}</ref><ref>{{Cite changelog|1.10|quote=Fishing Balances}}</ref><ref>{{Cite changelog|1.12.1-alpha|quote=Fishing now gives 85/5 fish to junk in designated biomes (My patch made it worse and would give junk 50% of the time, sorry)}}</ref>
 

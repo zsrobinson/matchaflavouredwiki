@@ -12,7 +12,7 @@ Cinnabar generates in sulfur caves as in vanilla.
 * Two slabs of cinnabar, polished cinnabar or cinnabar bricks craft back into the full block.
 
 === Trading ===
-The [[Mason]] sells a bulk block of cinnabar for 1 [[obol]] at the journeyman level; using it unpacks 64 cinnabar. The item's name, <code>item.kleispack.trade.bulk_cinnabar</code>, has no English translation, so the game shows the raw key.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/3/cinnabar.json}}</ref> See [[Bulk blocks]].
+The [[Mason]] sells a bulk block of cinnabar for 1 [[obol]] at the journeyman level; using it unpacks 64 cinnabar. The item is named "Bulk Cinnabar", and its tooltip reads "x64 Cinnabar".<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/3/bulk_cinnabar.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> See [[Bulk blocks]].
 
 == Usage ==
 {{Uses|Cinnabar}}
@@ -22,6 +22,7 @@ A block of cinnabar is the ingredient of the cinnabar [[Trims|smithing trim colo
 {{History
 |{{History line|1.12.1-alpha|Cinnabar was added to the Mason's trades.}}
 {{History line|1.12.2|The Mason sells a bulk block that unpacks into 64 cinnabar, instead of 64 cinnabar.}}
+{{History line|1.12.3|Bulk cinnabar has an English name, "Bulk Cinnabar", and the tooltip "x64 Cinnabar"; before, the game showed raw translation keys.}}
 }}
 
 == See also ==

@@ -6,7 +6,7 @@
 |id=<code>matcha:traversal</code>
 |source={{Source|MF_datapack/data/matcha/enchantment/traversal.json|traversal.json}}
 }}
-'''Trailblaze''' is an [[enchantment]] added by [[Matcha Flavoured]] for boots, meant to make the wearer faster on paths, gravel and mud bricks. Its internal name is ''Traversal''. In 1.12.3 the enchantment no longer changes the wearer's speed (see [[#Speed|Speed]]), and its tooltip line reads "Soul Speed".
+'''Trailblaze''' is an [[enchantment]] added by [[Matcha Flavoured]] for boots, meant to make the wearer faster on paths, gravel and mud bricks. Its internal name is ''Traversal''.
 
 == Obtaining ==
 * [[Prayer of St. Clement]], a crafted [[blessing]] (Trailblaze III). It stores <code>matcha:traversal</code> directly, so applying it to boots that already have Trailblaze does not go past level III.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/traversal.json}}</ref>
@@ -15,7 +15,7 @@
 
 == Behavior ==
 === Speed ===
-Before 1.12.3, the enchantment added 0.0155 movement speed per level while the wearer was on a path block (to the base player speed of 0.1), so Trailblaze III made them about 46% faster. The 1.12.3 version of the enchantment has no speed attribute. While the wearer is on a path block (or still on the ground after leaving one), it only runs a function that sets the wearer's <code>traversal</code> score to 1, and a timer resets that score to 0 every 2 seconds. Nothing in the pack reads the score, so the boots do not speed the wearer up.<ref>{{Source|MF_datapack/data/matcha/enchantment/traversal.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/traversal.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/2s/traversal.mcfunction}}</ref> The enchantment does not apply while riding or flying. See [[Known bugs]].
+While the wearer is on a path block, the enchantment adds 0.0155 movement speed per level (to the base player speed of 0.1), so Trailblaze III makes them about 46% faster. The boost stays while the wearer is in the air after leaving a path block, and does not apply while riding or flying.<ref>{{Source|MF_datapack/data/matcha/enchantment/traversal.json}}</ref>
 
 The path blocks are the pack's <code>#matcha:is_path</code> tag:<ref>{{Source|MF_datapack/data/matcha/tags/block/is_path.json}}</ref>
 * {{MCW|Dirt Path|dirt path}} and {{MCW|Coarse Dirt|coarse dirt}}
@@ -27,10 +27,13 @@ The path blocks are the pack's <code>#matcha:is_path</code> tag:<ref>{{Source|MF
 === Durability and particles ===
 Each time the wearer moves while on the ground on a path block, the boots have a 4% chance per level to lose 1 durability. Walking on a path block kicks up dirt particles every 5 ticks.
 
-Trailblaze's anvil cost multiplier is 8 (it was 0 before 1.12.3), and the enchanting table cost is 10 plus 10 per level above the first (it was 1 plus 1).
+Trailblaze's anvil cost multiplier is 0, and its enchanting table cost is 1 plus 1 per level above the first.<ref>{{Source|MF_datapack/data/matcha/enchantment/traversal.json}}</ref>
+
+=== 26.3 port ===
+{{Upcoming|the 26.3 port}}
+In the 1.12.3 alpha for ''Minecraft'' 26.3, and on the repository's 26.3 branch, the enchantment has no speed attribute. While the wearer is on a path block (or still on the ground after leaving one), it only runs a function that sets the wearer's <code>traversal</code> score to 1, and a timer resets that score to 0 every 2 seconds. Nothing reads the score, so the boots do not speed the wearer up.<ref>{{Source|MF_datapack/data/matcha/enchantment/traversal.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/traversal.mcfunction|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/2s/traversal.mcfunction|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref> Its anvil cost multiplier there is 8 and its enchanting table cost 10 plus 10 per level above the first. Its description is the vanilla key <code>enchantment.minecraft.soul_speed</code>, so boots show "Soul Speed" instead of "Trailblaze"; the developer's commit that changed it says it was edited to get the enchantment running on 26.3.
 
 == Issues ==
-* The enchantment's description is the vanilla key <code>enchantment.minecraft.soul_speed</code>, not <code>enchantment.kleispack.traversal</code>, so boots show "Soul Speed" instead of "Trailblaze" (the language file still defines "Trailblaze" under the old key). The developer's commit that changed it says it was edited to get the enchantment running on 26.3.<ref>{{Source|MF_datapack/data/matcha/enchantment/traversal.json}}</ref>
 * The developer's notes for earlier versions record that the speed boost from mud brick slabs applied after a jump but not when running normally.<ref>{{Cite changelog|quote=When running on mud brick slabs with traversal boots, when I jump I get the speed boost, but when I just run on it normally I don't get the speed boost}}</ref>
 
 == History ==
@@ -39,8 +42,8 @@ Trailblaze's anvil cost multiplier is 8 (it was 0 before 1.12.3), and the enchan
 {{History line|1.10|Renamed from Traversal to Trailblaze in the language files; the internal id is unchanged.<ref>{{Cite changelog|1.10|quote=Rennamed Traversal to Trailblaze (Only in Lang)}}</ref>}}
 {{History line|1.12.1-alpha|Now works on mud brick slabs and stairs and dirt slabs. Speed raised from 0.0105 to 0.0155 per level.<ref>{{Cite changelog|1.12.1-alpha|quote=Buffed Trailblaze speed (0.0105 / lvl -> 0.0155 / lvl)}}</ref>}}
 {{History line|1.12.2|Moved from the <code>main</code> to the <code>matcha</code> namespace, although the Prayer of St. Clement still gave the old enchantment.}}
-{{History line|1.12.3|The Prayer of St. Clement stores Trailblaze directly, so it no longer raises boots past level III.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/traversal.json}}</ref>
-The speed attribute was removed from the enchantment when it was reworked for 26.3, so it no longer speeds the wearer up. Its anvil cost multiplier rose from 0 to 8, and the tooltip name became "Soul Speed".<ref>{{Source|MF_datapack/data/matcha/enchantment/traversal.json}}</ref>}}
+{{History line|1.12.3|The Prayer of St. Clement stores Trailblaze directly, so it no longer raises boots past level III.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/traversal.json}}</ref>}}
+{{History line|Upcoming|2=In the 26.3 port (first in the 1.12.3 alpha for 26.3): the speed attribute is removed from the enchantment, so it no longer speeds the wearer up. Its anvil cost multiplier rises from 0 to 8, and the tooltip name becomes "Soul Speed".<ref>{{Source|MF_datapack/data/matcha/enchantment/traversal.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>}}
 }}
 
 == See also ==

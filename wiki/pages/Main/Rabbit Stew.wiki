@@ -1,19 +1,25 @@
 {{Vanilla|Rabbit Stew}}
 {{Hatnote|For the pack's leftover food built on the rabbit stew item, see [[Ramen]].}}
-{{Infobox auto}}
-'''Rabbit stew''' is the vanilla food, which [[Matcha Flavoured]] leaves almost untouched. The pack blocks the vanilla recipes that make it from a brown or red [[mushroom]], but not the recipe added in ''Minecraft'' 26.3 that uses a shelf mushroom, so that one still works.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> It is unrelated to [[Ramen]], although both use the rabbit stew item.
+{{Infobox
+|title=Rabbit Stew
+|invimage=Rabbit Stew
+|type=Food
+}}
+'''Rabbit stew''' is the vanilla food, which [[Matcha Flavoured]] makes impossible to craft: the pack blocks both vanilla recipes, the ones that use a brown or a red [[mushroom]].<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> It is unrelated to [[Ramen]], although both use the rabbit stew item.
 
 == Obtaining ==
-=== Crafting ===
-{{Recipes}}
-A baked potato, [[Cooked Flesh|cooked flesh]] (the renamed cooked rabbit), a bowl, a carrot and a shelf mushroom, in any arrangement. A shelf mushroom drops from a shelf mushroom block, which grows on trees in swamps and dappled forests.<ref>{{Source|MF_datapack/data/matcha/worldgen/feature/swamp_oak.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/feature/red_poplar.json}}</ref>
+No recipe, loot table or trade in [[Matcha Flavoured 1.12.4|1.12.4]] gives plain rabbit stew.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+
+=== 26.3 port ===
+{{Upcoming|the 26.3 port}}
+''Minecraft'' 26.3 adds a third rabbit stew recipe, which uses a shelf mushroom, and the pack does not block it. In the 1.12.3 alpha for 26.3 and on the repository's 26.3 branch, rabbit stew is crafted from a baked potato, [[Cooked Flesh|cooked flesh]] (the renamed cooked rabbit), a bowl, a carrot and a shelf mushroom, in any arrangement.<ref>{{Source|MF_datapack/pack.mcmeta|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref> A shelf mushroom drops from a shelf mushroom block, which grows on trees in swamps and dappled forests in the 26.3 port.<ref>{{Source|MF_datapack/data/matcha/worldgen/feature/swamp_oak.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/feature/red_poplar.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 
 == Usage ==
 The pack gives plain rabbit stew no healing of its own, unlike the foods it makes, and it has no effect.
 
 == History ==
 {{History|
-{{History line|1.12.3|The shelf mushroom recipe from ''Minecraft'' 26.3 makes rabbit stew available again; the older rabbit stew recipes remain blocked.}}
+{{History line|Upcoming|2=In the 26.3 port (first in the 1.12.3 alpha for 26.3): the shelf mushroom recipe from ''Minecraft'' 26.3 makes rabbit stew available again; the older rabbit stew recipes remain blocked.}}
 }}
 
 == See also ==

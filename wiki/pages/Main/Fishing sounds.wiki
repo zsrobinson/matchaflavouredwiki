@@ -31,6 +31,8 @@ Each sound is an advancement with a <code>fishing_rod_hooked</code> trigger. Its
 Sulfur Chunks from Sulfur Caves have no sound.<ref>{{Source|MF_datapack/data/matcha/advancement/fishing_sounds/junk.json}}</ref>
 
 === Bugs ===
+In 1.12.4 nothing can be caught from the [[Fishing junk|junk]] loot table, which the game can't load (see [[Known bugs]]). The junk sound therefore plays only for the sculk vein and echo shard caught in the deep dark, and the axolotl, frog and nautilus shell sounds can't be heard; the fish bones sound still plays for the fish bones caught in sulfur caves.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/deep_dark.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
+
 The treasure sound checks the Crystal Heart for the item model <code>matcha:crystal_heart</code>, but fished Crystal Hearts use <code>matcha:heart_container</code>. A fished Crystal Heart therefore plays no sound.<ref>{{Source|MF_datapack/data/matcha/advancement/fishing_sounds/treasure.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/crystal_heart.json}}</ref>
 
 == History ==

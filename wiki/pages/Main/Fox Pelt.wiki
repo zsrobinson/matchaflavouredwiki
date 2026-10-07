@@ -2,13 +2,17 @@
 |title=Fox Pelt
 |type=Crafting material
 |base=<code>minecraft:rabbit_hide</code>
-|renewable=Yes
+|renewable=No
 }}
-A '''fox pelt''' is dropped by foxes. The pack gives it two textures, red and snowy, to match the fox it came from, but because of a [[Known bugs#Other|bug]] in the loot table both drops show the missing-model texture in-game (see [[#Trivia|Trivia]]). It is the same item as {{ItemLink|Tattered Leather}} (a rabbit hide) with its own name and look, so it can be used anywhere tattered leather is.
+A '''fox pelt''' is meant to drop from foxes. The pack gives it two textures, red and snowy, to match the fox it came from. It is the same item as {{ItemLink|Tattered Leather}} (a rabbit hide) with its own name and look, so it can be used anywhere tattered leather is. In 1.12.4 foxes drop nothing, because of a [[Known bugs#Other|bug]] in their loot table.
 
 == Obtaining ==
 === Mob loot ===
-Every fox drops one fox pelt when it dies: red foxes drop the red pelt and snow foxes the snowy pelt. Foxes also drop 1 raw flesh (cooked if the fox was burning), plus 0–1 per level of Looting.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref> In vanilla, foxes drop nothing but their held item.
+The fox loot table is meant to drop one fox pelt from every fox: red foxes the red pelt, through the table <code>matcha:materials/fox_pelt</code>, and snow foxes the snowy pelt. It also drops 1 raw flesh (cooked if the fox was burning), plus 0–1 per level of Looting. In vanilla, foxes drop nothing but their held item.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref>
+
+In 1.12.4 the table can't be loaded: the red pelt's entry names its table with <code>name</code> where the game expects <code>value</code>, and the snowy pelt's entry asks for an item called <code>matcha:materials/fox_pelt_snowy</code>, which is the name of a loot table, not an item. Either mistake makes the game reject the whole file, so foxes drop no pelt and no raw flesh, only their held item.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref> See [[Known bugs#Other|Known bugs]].
+
+The pelts themselves are defined in two small loot tables, <code>matcha:materials/fox_pelt</code> and <code>matcha:materials/fox_pelt_snowy</code>, which work with the <code>/loot</code> command.<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fox_pelt.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fox_pelt_snowy.json}}</ref>
 
 == Usage ==
 Recipes that take tattered leather accept fox pelts, because recipes check the item type, not its name. See [[tattered leather#Usage]].
@@ -16,10 +20,11 @@ Recipes that take tattered leather accept fox pelts, because recipes check the i
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Snowy foxes drop their own snowy pelt instead of the red one.}}
+{{History line|1.12.4|The pelts' item models now have the <code>matcha</code> namespace, which fixes their missing-model texture. The fox loot table was rewritten to use the new pelt tables, but the rewrite can't be loaded, so foxes drop nothing.<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fox_pelt.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref>}}
 }}
 
 == Trivia ==
-* The loot table gives the pelts the item models <code>fox_pelt</code> and <code>fox_pelt_snowy</code> without a namespace, which the game reads as <code>minecraft:fox_pelt</code>. The resource pack defines the models under the <code>matcha</code> namespace, so neither model is found and the pelt shows the missing-model texture. See [[Known bugs#Other|Known bugs]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref><ref>{{Source|MF_resourcepack/assets/matcha/items/fox_pelt.json}}</ref>
+* Until 1.12.4, the loot table gave the pelts the item models <code>fox_pelt</code> and <code>fox_pelt_snowy</code> without a namespace, which the game reads as <code>minecraft:fox_pelt</code>. The resource pack defines the models under the <code>matcha</code> namespace, so neither model was found and dropped pelts showed the missing-model texture.<ref>{{Source|MF_resourcepack/assets/matcha/items/fox_pelt.json}}</ref>
 
 == See also ==
 * [[Tattered Leather]]

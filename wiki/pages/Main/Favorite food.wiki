@@ -20,7 +20,7 @@ Every one of the 42 foods has the same 1 in 42 chance. The food in the trade car
 
 Because the check needs the villager to have experience, the favorite food appears only after the first trade with a villager, and never on an unemployed villager or a nitwit. The favorite food is a villager trade only; the [[Wandering Trader]] does not get one.
 
-An [[Amnestic]] clears the villager's favorite food flag. The Amnestic also sets the villager's experience back to 0, so it is given a new random favorite food after its first trade in a new profession.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic/villager_consumed.mcfunction}}</ref>
+An [[Amnestic]] clears the villager's favorite food flag. It does not reset the villager's experience, so a villager that had traded before is given a new random favorite food within 30 seconds of taking a new profession, without needing a trade first.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic_wrapped.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref> In the 26.3 port the Amnestic also sets the experience back to 0, so the new favorite food appears only after the first trade in the new profession.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic/villager_consumed.mcfunction|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 
 == Foods ==
 {| class="wikitable sortable"

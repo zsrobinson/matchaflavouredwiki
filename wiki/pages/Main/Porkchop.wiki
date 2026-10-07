@@ -1,12 +1,21 @@
-{{Infobox auto}}
-The '''porkchop''' is a food item with the pack's "classic" porkchop model. It heals {{Value|Porkchop|heals}} the moment it is used, but the pack gives it no recipe, trade or drop: it can only be obtained with the <code>/loot</code> command. It is a different item from the [[Raw Porkchop|raw porkchop]] that pigs drop.
+{{Infobox
+|title=Porkchop
+|type=Food
+|heals={{Hp|4}}
+|base=<code>minecraft:porkchop</code>
+|id=<code>matcha:porkchop_classic</code>
+}}
+The '''porkchop''' is a food item with the pack's "classic" porkchop model. It heals {{Hp|4}} the moment it is used, but the pack gives it no recipe, trade or drop: its only source is a loot table for the <code>/loot</code> command, and in 1.12.4 that table gives a plain [[Raw Porkchop|raw porkchop]] instead (see [[#Obtaining|Obtaining]]). It is a different item from the raw porkchop that pigs drop.
 
 == Obtaining ==
-The datapack has a loot table for it, <code>matcha:treasure/porkchop_classic</code>, which no chest, mob or trade uses, so it can only be given with <code>/loot give @s loot matcha:treasure/porkchop_classic</code>.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/porkchop_classic.json}}</ref>
+The datapack has a loot table for it, <code>matcha:treasure/porkchop_classic</code>, which no chest, mob or trade uses. The table writes its components under the 26.3 key <code>modifier</code>, which Minecraft 26.2 ignores, so in 1.12.4 <code>/loot give @s loot matcha:treasure/porkchop_classic</code> gives an ordinary raw porkchop and the classic porkchop can't be obtained.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/porkchop_classic.json}}</ref> See [[Known bugs]].
+
+{{Upcoming|the 26.3 port}}
+In the 1.12.3 alpha for 26.3, and in the 26.3 port that continues it, the same table works and gives the classic porkchop.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/porkchop_classic.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 
 == Usage ==
 === Food ===
-The item is a vanilla porkchop with a changed model (<code>matcha:porkchop_classic</code>) and the name "Porkchop". It is consumed at once, with no eating animation or sound, and applies Instant Health when used.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/porkchop_classic.json}}</ref>
+The item is a vanilla porkchop with a changed model (<code>matcha:porkchop_classic</code>) and the name "Porkchop". It is consumed at once, with no eating animation or sound, and applies Instant Health when used.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/porkchop_classic.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 
 == History ==
 {{History|

@@ -8,7 +8,10 @@
 
 === Cooking ===
 {{Recipes}}
-Cocoa beans roast into chocolate in an [[oven]] or on [[kindling]] in {{Value|Chocolate|cook_time}}. Picking up cocoa beans unlocks the recipe.
+Cocoa beans roast into chocolate in an [[oven]] or on [[kindling]] in {{Value|Chocolate|cook_time}}. Picking up cocoa beans unlocks the recipe. Cooked chocolate stacks to 64.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/chocolate.json}}</ref>
+
+=== Milking a mooshroom ===
+Using a bowl on a mooshroom gives the vanilla mushroom stew, which the pack's resource pack names and draws as chocolate. It is a plain mushroom stew: it lacks the cooked chocolate's tooltip, Haste and stack size.<ref>{{Source|MF_resourcepack/assets/minecraft/models/item/mushroom_stew.json}}</ref> In the 26.3 port, a mooshroom gives [[Clear Mushroom Soup|clear mushroom soup]] instead.
 
 == Usage ==
 
@@ -25,7 +28,8 @@ Obtaining chocolate unlocks the [[Chocolate Chip Cookie|chocolate chip cookie]] 
 
 == History ==
 {{History|
-{{History line|1.12.3|2=Fixed the chocolate item model, which was in the wrong namespace so chocolate didn't show its texture.<ref>{{Source|MF_resourcepack/assets/minecraft/models/item/mushroom_stew.json}}</ref> Cooked chocolate no longer sets a stack size of 64, so it stacks only to 1 like a vanilla mushroom stew.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/chocolate.json}}</ref>}}
+{{History line|1.12.3|2=Fixed the chocolate item model, which was in the wrong namespace so chocolate didn't show its texture.<ref>{{Source|MF_resourcepack/assets/minecraft/models/item/mushroom_stew.json}}</ref> Cooked chocolate no longer sets a stack size of 64, so it stacks only to 1 like a vanilla mushroom stew.}}
+{{History line|1.12.4|Chocolate stacks to 64 again.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/chocolate.json}}</ref><ref>{{Cite changelog|1.12.4|quote=Chocolate not stacking}}</ref>}}
 }}
 
 == See also ==

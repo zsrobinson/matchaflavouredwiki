@@ -8,10 +8,12 @@
 
 Mushrooms are found and farmed as in vanilla. A brown or red mushroom block can be crafted into 1 mushroom.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/brown_mushroom_from_mushroom_block.json}}</ref>
 
-A '''shelf mushroom''', added in ''Minecraft'' 26.3, grows on swamp and poplar trees and drops itself (2 when fully grown). Its only use in the pack is the [[Rabbit Stew|rabbit stew]] recipe.<ref>{{Source|MF_datapack/data/matcha/worldgen/feature/swamp_oak.json}}</ref>
-
 {{Recipes|Brown Mushroom}}
 {{Recipes|Red Mushroom}}
+
+=== Shelf mushroom ===
+{{Upcoming|the 26.3 port}}
+A '''shelf mushroom''' is a block of ''Minecraft'' 26.3, so it is not in [[Matcha Flavoured 1.12.4|1.12.4]], which is for 26.2. In the 1.12.3 alpha for 26.3 and on the repository's 26.3 branch, it grows on swamp and poplar trees and drops itself (2 when fully grown). Its only use in the pack there is the [[Rabbit Stew|rabbit stew]] recipe.<ref>{{Source|MF_datapack/data/matcha/worldgen/feature/swamp_oak.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref> The release notes of 1.12.3 for 26.2 also say that shelf mushrooms "can now be found" in swamps, but that release has none.<ref>{{Cite changelog|1.12.3|quote=Swamps made swampier, new tree type, and shelf mushrooms can now be found here.}}</ref>
 
 == Usage ==
 
@@ -29,7 +31,7 @@ Red mushrooms are cooked into [[Braised Toadstool|braised toadstool]]s (Poison, 
 {{History|
 {{History line|0.7-alpha|Added braised mushrooms, stroganoff, pickled mushrooms, braised toadstools, toadstool stroganoff and pickled toadstools. New mushroom item textures.}}
 {{History line|1.12.1-alpha|Red and brown mushrooms can be crafted from their mushroom blocks.}}
-{{History line|1.12.3|Shelf mushrooms grow on swamp trees and can be used in the rabbit stew recipe.}}
+{{History line|Upcoming|2=In the 26.3 port (first in the 1.12.3 alpha for 26.3): shelf mushrooms grow on swamp trees and can be used in the rabbit stew recipe.}}
 }}
 
 == See also ==
