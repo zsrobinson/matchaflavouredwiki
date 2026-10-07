@@ -1,0 +1,33 @@
+{{Meta version infobox
+|version=1.12.4
+|name=Intrinsic Hotfix
+|type=Release
+|date=October 5, 2026
+|game=26.2
+|files=<code>MF_DP_1_12_4_26_2.zip</code> (datapack), <code>matcha-flavoured-1.12.4+dp.jar</code> (mod)
+|prev=1.12.3
+}}
+'''Matcha Flavoured 1.12.4''', the "Intrinsic Hotfix", is the current version of [[Matcha Flavoured]], published on October 5, 2026, three days after [[Matcha Flavoured 1.12.3|1.12.3]]. It is a hotfix for ''Minecraft'' 26.2. The developer writes that they hoped the long alpha and beta would leave no major bugs, "But I was wrong".<ref>{{Cite changelog|1.12.4|quote=I thought having so long in the alpha and beta would mean no major bugs were found, therefore no hotfix. But I was wrong}}</ref> Only the datapack changed; the resource pack of 1.12.3 is still current.<ref>{{Cite changelog|1.12.4|quote=The RP is unchanged, there no need to update it}}</ref>
+
+1.12.4 was made from the pack's 26.2 branch. The ''Minecraft'' 26.3 port published as an alpha alongside 1.12.3 continues on the repository's 26.3 branch and has no newer release, so this wiki describes 1.12.4 for 26.2; content only in the 26.3 port is marked as upcoming. See [[Upcoming features]].
+
+== Fixes ==
+The release notes list four fixes:<ref>{{Cite changelog|1.12.4|quote=Armour/Tool Intrinsics not working}}</ref>
+* [[Intrinsic]] enchantments on armor and tools work again. In 1.12.3 the advancement that applies them looked for the wrong kind of data on the item, so it never fired. Items get their intrinsics as soon as the inventory changes (picking up or moving any item); they don't need <code>/trigger update_item</code>.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/intrinsic_enchants_obtained.json}}</ref>
+* [[Sleeping]] in multiplayer: a second player getting into bed while another was already asleep was counted as awake at once. They now sleep normally.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/tick_sleeping_player.mcfunction}}</ref>
+* [[Chocolate]] stacks again: the chocolate made in an [[oven]] or on a campfire was missing its stack size, unlike the chocolate from loot.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/chocolate.json}}</ref>
+* The [[Fox Pelt|fox pelt]] textures were fixed.
+
+== Other changes ==
+* Items carry a version number, and an item updater (the <code>matcha_item</code> namespace) brings old copies of every pack item up to date when they are in the player's hands. See [[Updating items]].<ref>{{Source|MF_datapack/data/matcha_item/advancement/trigger/asylum_seeker.json}}</ref>
+* The archaeology loot of cold and warm ocean ruins names the rusty axe through a shared loot table.<ref>{{Source|MF_datapack/data/matcha/loot_table/equipment/misc/rusty_axe.json}}</ref>
+
+== Bugs ==
+The fishing junk table of this release isn't valid JSON, so the game can't load it and junk catches give nothing. See [[Known bugs]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Releases]]
