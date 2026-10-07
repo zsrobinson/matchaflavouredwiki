@@ -1,7 +1,6 @@
 {{Vanilla|Poplar}}
 {{Infobox
 |title=Poplar
-|invimage=Poplar Log;Poplar Planks;Poplar Sapling;Red Poplar Leaves;Orange Poplar Leaves;Yellow Poplar Leaves
 |type=Wood type
 |renewable=Yes
 }}
@@ -40,15 +39,15 @@ A [[stonecutter]] cuts any poplar log (a log, wood, or the stripped form of eith
 {| class="wikitable"
 ! Item !! Notes
 |-
-| {{ItemLink|Poplar Log}}, {{ItemLink|Poplar Wood}} || Drops itself. With an adamant tool it drops charcoal instead.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/poplar_log.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
+| Poplar Log, Poplar Wood || Drops itself. With an adamant tool it drops charcoal instead.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/poplar_log.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 |-
-| {{ItemLink|Poplar Planks}} || Pale grey. A vertical version of the texture is used for double slabs (see [[Vertical slabs]]).<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/poplar_slab.json}}</ref>
+| Poplar Planks || Pale grey. A vertical version of the texture is used for double slabs (see [[Vertical slabs]]).<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/poplar_slab.json}}</ref>
 |-
-| {{ItemLink|Poplar Slab}}, {{ItemLink|Poplar Stairs}}, {{ItemLink|Poplar Fence}}, {{ItemLink|Poplar Fence Gate}}, {{ItemLink|Poplar Door}}, {{ItemLink|Poplar Trapdoor}}, {{ItemLink|Poplar Button}}, {{ItemLink|Poplar Pressure Plate}}, {{ItemLink|Poplar Sign}}, {{ItemLink|Poplar Shelf}} || Cut in the stonecutter.
+| Poplar Slab, Poplar Stairs, Poplar Fence, Poplar Fence Gate, Poplar Door, Poplar Trapdoor, Poplar Button, Poplar Pressure Plate, Poplar Sign, Poplar Shelf || Cut in the stonecutter.
 |-
 | {{ItemLink|Red Poplar Leaves|mcw=Red Poplar Leaves}}, {{ItemLink|Orange Poplar Leaves|mcw=Orange Poplar Leaves}}, {{ItemLink|Yellow Poplar Leaves|mcw=Yellow Poplar Leaves}} || Autumn leaves, each with its own texture in the resource pack.<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/yellow_poplar_leaves.json}}</ref>
 |-
-| {{ItemLink|Poplar Sapling}} || Crafted from any poplar leaves.
+| Poplar Sapling || Crafted from any poplar leaves.
 |}
 Poplar boats, boats with chests and hanging signs, and the stripped log and wood, are as in vanilla.
 
