@@ -4,10 +4,17 @@ This page collects features of [[Matcha Flavoured]] that are in development or p
 == In development ==
 {{Upcoming|type=section}}
 === Structure update ===
-The developer plans a structure update that will move the [[Abbey]] and [[Papal Outpost]] over to the new namespace, revisit the chest, spawner and village loot tables (village loot is empty in 1.12.3 and is to return nerfed), and possibly bring back the loot of mobs from [[spawner]]s.<ref>{{Cite changelog|1.12.3|quote=The Abbey and Papal Outposts have not been moved over yet.}}</ref>
+The developer plans a structure update that will move the [[Abbey]] and [[Papal Outpost]] over to the new namespace, revisit the chest, spawner and village loot tables (village loot is empty in the 1.12.3 alpha for 26.3 and on the 26.3 branch, and is to return nerfed), and possibly bring back the loot of mobs from [[spawner]]s.<ref>{{Cite changelog|1.12.3|quote=The Abbey and Papal Outposts have not been moved over yet.}}</ref>
 
 === Minecraft 26.3 ===
-The 26.3 port of 1.12.3 is published as an alpha, and the developer says it is the version they will work on from now on.<ref>{{Cite changelog|1.12.3|quote=This will be the version we are working on from now on}}</ref>
+The 26.3 port of 1.12.3 is published as an alpha, and the developer says it is the version they will work on from now on.<ref>{{Cite changelog|1.12.3|quote=This will be the version we are working on from now on}}</ref> Its hotfix, [[Matcha Flavoured 1.12.4|1.12.4]], was released for 26.2 only, so the port is still unreleased except as that alpha. The port, on the repository's default branch <code>26.3</code>, has content that 1.12.4 doesn't:
+* [[Cushion]]s (new in ''Minecraft'' 26.3), and [[stonecutter]] recipes that cut wool and concrete into slabs, stairs, carpets and cushions.
+* [[Poplar]] trees and their wood, with [[Lumberjack|lumberjack]] trades; the reworked swamps with a new tree and shelf [[Mushroom|mushrooms]]; and the dappled forest's closed canopy. See [[Biomes]].
+* [[Abandoned camp]]s, with their own [[Explorer maps|explorer maps]], and every explorer map as its own item.
+* [[Clear Mushroom Soup]] from milking a mooshroom with a bowl, a [[Rabbit Stew|rabbit stew]] recipe with shelf mushrooms, and the reworked [[Amnestic]].
+* The groundwork for [[Bobwhite|bobwhites]] and seagulls ([[Livestock]]).
+* Changed [[Trailblaze]], [[Carrot|carrot]] drops and [[Hematite|deepslate hematite]] drops, and empty [[Chest loot#Village|village loot tables]].
+Each page marks what is only in the port.
 
 == Next update ==
 {{Planned|type=section}}

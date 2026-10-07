@@ -105,7 +105,7 @@ function applyProcessors(procs, pos, name, props) {
     } else if (p.processor_type === 'minecraft:rule') {
       for (const r of p.rules) {
         if (matches(r.input_predicate, name, rand) && matches(r.location_predicate ?? { predicate_type: 'minecraft:always_true' }, name, rand)) {
-          name = nsid(r.output_state.id); props = r.output_state.properties ?? {}
+          name = nsid(r.output_state.Name); props = r.output_state.Properties ?? {}
           break
         }
       }

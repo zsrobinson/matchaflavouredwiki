@@ -4,7 +4,7 @@
 
 == Obtaining ==
 {{Recipes}}
-Any log or wood that burns, poplar included, cooked in an oven or mud kiln becomes charcoal ({{Value|Charcoal|cook_time|station=Mud Kiln}} in the kiln).<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/charcoal.json}}</ref> Logs broken with a tool with the [[Adamant equipment|adamant]] tool intrinsic drop charcoal, increased by Fortune.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/oak_log.json}}</ref>
+Any log or wood that burns, cooked in an oven or mud kiln becomes charcoal ({{Value|Charcoal|cook_time|station=Mud Kiln}} in the kiln).<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/charcoal.json}}</ref> Logs broken with a tool with the [[Adamant equipment|adamant]] tool intrinsic drop charcoal, increased by Fortune.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/oak_log.json}}</ref>
 
 === Other sources ===
 {{Sources}}
@@ -12,9 +12,10 @@ Any log or wood that burns, poplar included, cooked in an oven or mud kiln becom
 == Usage ==
 {{Uses}}
 Charcoal fuels furnaces and makes 8 [[torch]]es with a stick. Two coal or charcoal make 4 black [[Dyes|dye]], and it is used in fire charges.
+
 == History ==
 {{History|
-{{History line|1.12.3|Kilning takes 10 seconds instead of 5.}}
+{{History line|Upcoming|2=In the 26.3 port (first in the 1.12.3 alpha for 26.3), kilning takes 10 seconds instead of 5.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/charcoal.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>}}
 }}
 
 == References ==

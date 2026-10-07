@@ -2,8 +2,8 @@
 -- values[item][field] = { default text, <format> = text, ... } or { error = why } (Module:Value).
 return {
 	["Adamant Alloy"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Adamant Axe"] = {
 		["attackspeed"] = { "1" },
@@ -70,8 +70,8 @@ return {
 		["miningspeed"] = { "15" },
 	},
 	["Adamant Scrap"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Adamant Shovel"] = {
 		["attackspeed"] = { "1" },
@@ -99,8 +99,8 @@ return {
 		["durability"] = { "Unbreakable" },
 	},
 	["Andesite"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Apple"] = {
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -160,24 +160,24 @@ return {
 		["level:Resistance"] = { "I", raw = "1", roman = "I" },
 	},
 	["Black Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Block of Copper"] = {
-		["cook_time"] = { "20 seconds", clock = "0:20", seconds = "20 seconds", secs = "20", ticks = "400" },
-		["cook_time:Blast Furnace"] = { "20 seconds", clock = "0:20", seconds = "20 seconds", secs = "20", ticks = "400" },
+		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 	},
 	["Block of Gold"] = {
-		["cook_time"] = { "20 seconds", clock = "0:20", seconds = "20 seconds", secs = "20", ticks = "400" },
-		["cook_time:Blast Furnace"] = { "20 seconds", clock = "0:20", seconds = "20 seconds", secs = "20", ticks = "400" },
+		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 	},
 	["Block of Iron"] = {
-		["cook_time"] = { "20 seconds", clock = "0:20", seconds = "20 seconds", secs = "20", ticks = "400" },
-		["cook_time:Blast Furnace"] = { "20 seconds", clock = "0:20", seconds = "20 seconds", secs = "20", ticks = "400" },
+		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 	},
 	["Blue Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Bokguk"] = {
 		["duration:Conduit Power"] = { "8 minutes", clock = "8:00", minutes = "8 minutes", seconds = "480 seconds", secs = "480", ticks = "9600" },
@@ -234,13 +234,13 @@ return {
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
 	["Brick"] = {
-		["cook_time"] = { error = "Brick cooks in different times at different stations: give station=" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Brown Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Brownie"] = {
 		["duration:Haste"] = { "150 seconds", clock = "2:30", long = "2 minutes 30 seconds", minutes = "2.5 minutes", seconds = "150 seconds", secs = "150", ticks = "3000" },
@@ -307,25 +307,25 @@ return {
 		["durability"] = { "300" },
 	},
 	["Charcoal"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { error = "Charcoal cooks in different times at different stations: give station=" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["cook_time:Oven"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 	},
 	["Charred Fish"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
 	},
 	["Charred Meat"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
 	},
 	["Charred Potato"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|1}}", hearts = "0.5 hearts", raw = "1" },
 	},
@@ -364,10 +364,6 @@ return {
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 		["level:Levitation"] = { "30", raw = "30", roman = "XXX" },
 	},
-	["Clear Mushroom Soup"] = {
-		["eat_time"] = { "1.6 seconds", raw = "1.6" },
-		["heals"] = { "{{Hp|10}}", hearts = "5 hearts", raw = "10" },
-	},
 	["Cleaver"] = {
 		["attackspeed"] = { "1.6" },
 		["damage"] = { "{{Hp|6}}", raw = "6" },
@@ -375,12 +371,12 @@ return {
 		["miningspeed"] = { "1.5" },
 	},
 	["Cobbled Deepslate"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Cobblestone"] = {
 		["cook_time"] = { error = "Cobblestone cooks in different times at different stations: give station=" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["cook_time:Oven"] = { "2.5 seconds", clock = "0:02", seconds = "2.5 seconds", secs = "2.5", ticks = "50" },
 	},
 	["Compound Bow"] = {
@@ -472,8 +468,8 @@ return {
 	},
 	["Copper Ingot"] = {
 		["cook_time"] = { error = "Copper Ingot cooks in different times at different stations: give station=" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "20 seconds", clock = "0:20", seconds = "20 seconds", secs = "20", ticks = "400" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 	},
 	["Copper Leggings"] = {
 		["armor"] = { "3" },
@@ -516,24 +512,24 @@ return {
 		["miningspeed"] = { "1.5" },
 	},
 	["Cracked Deepslate Bricks"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Cracked Deepslate Tiles"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Cracked Hellbricks"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Cracked Polished Blackstone Bricks"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Cracked Stone Bricks"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Crimson Stroganoff"] = {
 		["duration:Weakness"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
@@ -550,8 +546,8 @@ return {
 		["durability"] = { "465" },
 	},
 	["Cyan Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Dead Bush"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -559,12 +555,12 @@ return {
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Deepslate"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Diamond"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Diamond Axe"] = {
 		["attackspeed"] = { "1" },
@@ -646,8 +642,8 @@ return {
 		["miningspeed"] = { "1.5" },
 	},
 	["Diorite"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Dirt"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -764,8 +760,8 @@ return {
 		["level:Water Breathing"] = { "I", raw = "1", roman = "I" },
 	},
 	["Glass"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Glow Berries"] = {
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -791,8 +787,8 @@ return {
 		["heals"] = { "{{Hp|16}}", hearts = "8 hearts", raw = "16" },
 	},
 	["Gold Ingot"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Golden Apple"] = {
 		["duration:Absorption"] = { "2 minutes", clock = "2:00", minutes = "2 minutes", seconds = "120 seconds", secs = "120", ticks = "2400" },
@@ -878,16 +874,16 @@ return {
 		["miningspeed"] = { "1.5" },
 	},
 	["Granite"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Gravel"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Gray Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Green Curry"] = {
 		["cook_time"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
@@ -900,12 +896,12 @@ return {
 	},
 	["Green Dye"] = {
 		["cook_time"] = { error = "Green Dye cooks in different times at different stations: give station=" },
-		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time:Blast Furnace"] = { "2.5 seconds", clock = "0:02", seconds = "2.5 seconds", secs = "2.5", ticks = "50" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Green Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Grilled Melon"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -932,8 +928,8 @@ return {
 		["miningspeed"] = { "10" },
 	},
 	["Hellbrick"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Hellbricks"] = {
 		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
@@ -1061,8 +1057,8 @@ return {
 		["armor"] = { "5" },
 	},
 	["Iron Ingot"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Iron Leggings"] = {
 		["armor"] = { "5" },
@@ -1152,25 +1148,25 @@ return {
 		["durability"] = { "200" },
 	},
 	["Light Blue Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Light Gray Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Lime Dye"] = {
 		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 	},
 	["Lime Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Limestone"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Lumpia"] = {
 		["duration:Night Vision"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
@@ -1186,8 +1182,8 @@ return {
 		["durability"] = { "800" },
 	},
 	["Magenta Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Mead"] = {
 		["duration:Speed"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
@@ -1223,8 +1219,8 @@ return {
 		["level:Strength"] = { "I", raw = "1", roman = "I" },
 	},
 	["Naan"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
@@ -1240,8 +1236,8 @@ return {
 		["durability"] = { "Unbreakable" },
 	},
 	["Orange Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Pad Thai"] = {
 		["duration:Night Vision"] = { "10 minutes", clock = "10:00", minutes = "10 minutes", seconds = "600 seconds", secs = "600", ticks = "12000" },
@@ -1270,11 +1266,11 @@ return {
 	},
 	["Pickled Potatoes"] = {
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
-		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
+		["heals"] = { "{{Hp|10}}", hearts = "5 hearts", raw = "10" },
 	},
 	["Pink Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Poisonous Potato"] = {
 		["duration:Poison"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -1289,10 +1285,6 @@ return {
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
 		["level:Levitation"] = { "III", raw = "3", roman = "III" },
-	},
-	["Porkchop"] = {
-		["eat_time"] = { "0 seconds", raw = "0" },
-		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
 	["Ptero Chicken Nugget"] = {
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
@@ -1339,12 +1331,12 @@ return {
 		["heals"] = { "{{Hp|3}}", hearts = "1.5 hearts", raw = "3" },
 	},
 	["Purple Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Quartz"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Ramen"] = {
 		["duration:Regeneration"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
@@ -1357,8 +1349,8 @@ return {
 		["level:Hunger"] = { "I", raw = "1", roman = "I" },
 	},
 	["Red Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Rind Jam"] = {
 		["duration:Fire Resistance"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
@@ -1377,12 +1369,12 @@ return {
 		["miningspeed"] = { "6" },
 	},
 	["Sand"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Sandstone"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Shakudo Axe"] = {
 		["attackspeed"] = { "1" },
@@ -1462,8 +1454,8 @@ return {
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Silver Bullion"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Silver Sword"] = {
 		["attackspeed"] = { "1.6" },
@@ -1472,24 +1464,24 @@ return {
 		["miningspeed"] = { "1.5" },
 	},
 	["Smooth Basalt"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Smooth Quartz Block"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Smooth Red Sandstone"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Smooth Sandstone"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Smooth Stone"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Snow Shovel"] = {
 		["attackspeed"] = { "1" },
@@ -1503,8 +1495,8 @@ return {
 		["level:Poison"] = { "I", raw = "1", roman = "I" },
 	},
 	["Sponge"] = {
-		["cook_time"] = { error = "Sponge cooks in different times at different stations: give station=" },
-		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { "2.5 seconds", clock = "0:02", seconds = "2.5 seconds", secs = "2.5", ticks = "50" },
+		["cook_time:Mud Kiln"] = { "2.5 seconds", clock = "0:02", seconds = "2.5 seconds", secs = "2.5", ticks = "50" },
 		["cook_time:Oven"] = { "2.5 seconds", clock = "0:02", seconds = "2.5 seconds", secs = "2.5", ticks = "50" },
 	},
 	["Steak"] = {
@@ -1533,8 +1525,8 @@ return {
 		["level:Night Vision"] = { "I", raw = "1", roman = "I" },
 	},
 	["Steel Alloy"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Steel Axe"] = {
 		["attackspeed"] = { "0.7" },
@@ -1708,15 +1700,15 @@ return {
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Tinder"] = {
 		["durability"] = { "1" },
 	},
 	["Tinted Glass"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Toadstool Stroganoff"] = {
 		["duration:Poison"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
@@ -1751,8 +1743,8 @@ return {
 		["durability"] = { "500" },
 	},
 	["Tuff"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Blast Furnace"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Blast Furnace"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Turtle Shellmet"] = {
 		["armor"] = { "2" },
@@ -1785,8 +1777,8 @@ return {
 		["level:Invisibility"] = { "I", raw = "1", roman = "I" },
 	},
 	["White Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Wolf Armor"] = {
 		["armor"] = { "11" },
@@ -1828,7 +1820,7 @@ return {
 		["miningspeed"] = { "1.5" },
 	},
 	["Yellow Glazed Terracotta"] = {
-		["cook_time"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
-		["cook_time:Mud Kiln"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 }

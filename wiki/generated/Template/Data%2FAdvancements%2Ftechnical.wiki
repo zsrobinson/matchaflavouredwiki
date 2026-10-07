@@ -1,9 +1,11 @@
 <includeonly>{| class="wikitable"
 ! Folder !! Files !! Purpose
 |-
-| <code>recipe_unlocks</code> || 181 || {{{matcha:recipe_unlocks|}}}
+| <code>matcha_item:trigger</code> || 421 || {{{matcha_item:trigger|}}}
 |-
-| <code>mechanics</code> || 27 || {{{matcha:mechanics|}}}
+| <code>recipe_unlocks</code> || 180 || {{{matcha:recipe_unlocks|}}}
+|-
+| <code>mechanics</code> || 25 || {{{matcha:mechanics|}}}
 |-
 | <code>fishing_sounds</code> || 11 || {{{matcha:fishing_sounds|}}}
 |-
@@ -17,11 +19,9 @@
 |-
 | <code>anglers_almanac</code> || 1 || {{{matcha:anglers_almanac|}}}
 |-
-| <code>imm_revoke</code> || 1 || {{{matcha:imm_revoke|}}}
-|-
 | <code>item_contingencies</code> || 1 || {{{matcha:item_contingencies|}}}
 |-
 | <code>update_vanilla_item</code> || 1 || {{{matcha:update_vanilla_item|}}}
 |-
-| '''Total''' || '''239''' || Of 415 advancement files; the other 176 are the visible advancements.
+| '''Total''' || '''656''' || Of 832 advancement files; the other 176 are the visible advancements.
 |}</includeonly><noinclude>Generated. Each folder's purpose is a note passed by its ID (<code>matcha:recipe_unlocks</code>). [[Category:Generated data]]</noinclude>

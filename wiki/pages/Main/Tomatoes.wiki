@@ -7,7 +7,7 @@
 == Obtaining ==
 
 === Farming ===
-Tomatoes grow from [[Tomato Seeds|tomato seeds]] like beetroots. A fully grown crop drops 1 to 3 tomatoes and no seeds; an unripe one drops 1 seed.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref> Seeds are made by crafting a tomato into 3 seeds.
+Tomatoes grow from [[Tomato Seeds|tomato seeds]] like beetroots. A fully grown crop drops 1 to 3 tomatoes and no seeds; an unripe one drops 1 seed. [[Fortune]] and the [[Electrum equipment|Electrum]] tool intrinsic each add up to 1 more tomato per level (0 to 3 at level III).<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref> Seeds are made by crafting a tomato into 3 seeds.
 
 {{Sources}}
 
@@ -25,11 +25,12 @@ Picking up tomatoes unlocks [[Grilled Tomatoes|grilled tomatoes]], [[Sun-dried T
 {{History|
 {{History line|0.6-alpha|Tomato soup renamed to grilled tomatoes, and pickled tomatoes to sun-dried tomatoes.}}
 {{History line|1.10|Tomato recipes unlock from raw tomatoes.}}
-{{History line|1.12.2|The release notes say Fortune now works on tomatoes, but the loot table's fixed count cancels it (see Trivia).}}
+{{History line|1.12.2|The release notes say Fortune now works on tomatoes, but the loot table's fixed count cancels it.}}
+{{History line|1.12.3|Fortune and the Electrum intrinsic add tomatoes: the table now sets the count before the bonuses.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref>}}
 }}
 
 == Trivia ==
-* The loot table applies Fortune and the Electrum tool intrinsic and then sets the count to 1 to 3, which overrides both bonuses, so neither actually increases the harvest.
+* In the 1.12.3 alpha for 26.3, and in the 26.3 port, the loot table applies Fortune and the Electrum tool intrinsic and then sets the count to 1 to 3, which overrides both bonuses, as in 1.12.2.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 
 == See also ==
 * [[Tomato Seeds]]

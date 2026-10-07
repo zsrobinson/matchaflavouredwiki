@@ -19,6 +19,8 @@
 |-
 | Stronghold crossing || 4–9 || 31.0% || 
 |-
+| Village / village temple || 1–4 || 88.0% || 
+|-
 | Woodland mansion || 1–4 || 19.7% || 
 |}
 
@@ -28,10 +30,6 @@
 |-
 | Bogged || 0–1 || 45.5% || player kill
 |-
-| Elder guardian || 5 || 3.55% || 
-|-
-| Elder guardian || 5 || 30.6% || only in [[Fishing#Other biomes|other biomes]]
-|-
 | Skeleton || 0–1 || 50.0% || player kill
 |-
 | Stray || 0–1 || 50.0% || player kill
@@ -39,19 +37,10 @@
 | Witch || 4–8 || 100% || player kill
 |}
 
-'''Fishing'''
-{| class="wikitable sortable loot-table"
-! Source !! Stack size !! Chance !! Notes
-|-
-| Fishing || 5 || 1.14% || 
-|-
-| Fishing || 5 || 10.9% || only in [[Fishing#Other biomes|other biomes]]
-|}
-
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Glowstone || 2–4 || 100% || without predicate minecraft:tool/can_silk_touch
+| Glowstone || 2–4 || 100% || without Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

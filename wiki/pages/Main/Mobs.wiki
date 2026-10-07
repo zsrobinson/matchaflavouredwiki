@@ -73,7 +73,7 @@ The pack also overrides the loot tables of these mobs:<ref>{{Source|MF_datapack/
 |-
 | Evoker || totem of undying, 0–1 {{ItemLink|Obol}}; 25% {{ItemLink|Divine Fragment}} (35% with Looting I, +10% per level) || totem, emerald
 |-
-| Fox || 1 {{ItemLink|Raw Flesh}}; 1 [[Fox Pelt|fox pelt]] || held item only
+| Fox || Nothing in 1.12.4: the table, meant to give 1 {{ItemLink|Raw Flesh}} and 1 [[Fox Pelt|fox pelt]], can't be loaded (see [[Known bugs]]) || held item only
 |-
 | Frog || 1 {{ItemLink|Raw Flesh}} || nothing
 |-
@@ -121,6 +121,7 @@ Several vanilla drops also appear under the pack's names: creepers and ghasts dr
 {{History line|1.10|Difficulty support: mob behavior, health and damage depend on difficulty. Husks spawn in all biomes. Creepers only spawn underground. Magma cubes drop magma blocks. Nautilus shell drop rates raised. Zombie horses made consistent with other undead.}}
 {{History line|1.12.1-alpha|Obols no longer drop from most undead mobs (bogged and zombie villagers still drop them). Camel husks drop leather. The creaking drops resin. Snowy foxes drop their own pelt.}}
 {{History line|1.12.2|Mobs from spawners drop nothing.}}
+{{History line|1.12.4|Foxes drop nothing: their rewritten loot table can't be loaded.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref>}}
 }}
 
 == Trivia ==

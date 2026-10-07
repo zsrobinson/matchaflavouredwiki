@@ -104,7 +104,7 @@ The pack overrides the loot tables of 91 blocks.<ref>{{Source|MF_datapack/data/m
 | [[Spawner]] || Drops a [[Divine Fragment|divine fragment]].
 |}
 Notes on the crop tables:
-* The 1.12.2 notes say Fortune now works on tomatoes, glow berry vines and chorus plants.<ref>{{Cite changelog|1.12.2|quote=Fortune now works on: Tomatoes, Glow berry vines, Chorus Plant}}</ref> In the tomato (beetroot) and chorus plant tables, however, a fixed count (1–3 tomatoes, 0–1 chorus fruit) is set ''after'' the Fortune bonus, which replaces it, so Fortune has no effect on those two.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/chorus_plant.json}}</ref> On cave vines it works.
+* The 1.12.2 notes say Fortune now works on tomatoes, glow berry vines and chorus plants.<ref>{{Cite changelog|1.12.2|quote=Fortune now works on: Tomatoes, Glow berry vines, Chorus Plant}}</ref> In 1.12.2 the tomato (beetroot) and chorus plant tables set a fixed count after the Fortune bonus, which replaced it; since 1.12.3 they set the count first, so Fortune works on both. (The 26.3 port still has the 1.12.2 order.)<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/chorus_plant.json}}</ref> On cave vines it works.
 * The cave vine tables have no check for whether the vine is carrying berries, unlike vanilla, so every broken cave vine block drops glow berries.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/cave_vines.json}}</ref>
 
 === Adamant auto-smelting ===
@@ -141,7 +141,7 @@ The pack edits several block tags:<ref>{{Source|MF_datapack/data/minecraft/tags/
 * '''Climbable''': every [[chain]] can be climbed like a ladder.
 * '''Endermen''' can only pick up melons, pumpkins and [[TNT]] (the tag is replaced, not extended).<ref>{{Source|MF_datapack/data/minecraft/tags/block/enderman_holdable.json}}</ref>
 * '''Mineable with a pickaxe''': glass and stained glass (blocks and panes), mob heads, the beacon, glowstone ([[Crystallized Estus|crystallized estus]]), [[Malachite#Malachite Lantern|malachite lanterns]], [[Electric Lamp|electric lamps]], [[Phosphor lamps|phosphor lamps]], the [[Copper Eye|copper eye]], levers and frosted ice.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
-* '''Mineable with a hoe''': wool (including wool slabs and stairs since 1.12.3), carpets, [[Glow Lichen|glow lichen]] and phosphor lamps.
+* '''Mineable with a hoe''': wool, carpets, [[Glow Lichen|glow lichen]] and phosphor lamps.
 * '''Mineable with an axe''': beds, candles, cactus and honeycomb blocks.
 * '''Mineable with a shovel''': [[Dirt Slab|dirt slabs]].
 * '''Supports vegetation''': sand, red sand and packed mud, so grass and flowers can be placed on them.<ref>{{Source|MF_datapack/data/minecraft/tags/block/supports_vegetation.json}}</ref>

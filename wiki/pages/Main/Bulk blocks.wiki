@@ -51,13 +51,13 @@ Bulk blocks are only sold by the [[Mason]], which has no other trades. All trade
 |}
 
 == Usage ==
-Using a bulk block (pressing use while holding it) unpacks it instantly: one bulk block is used up and replaced by 64 of its block, which go straight into the inventory.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/1/andesite.json}}</ref> Unpacking takes no time and plays the sound of a stone block falling. The tooltip shows what the bulk block holds (for example "x64 Andesite") and "Use to unpack".
+Using a bulk block (pressing use while holding it) unpacks it instantly: one bulk block is used up and replaced by 64 of its block, which go straight into the inventory.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/1/bulk_andesite.json}}</ref> Unpacking takes no time and plays the sound of a stone block falling. The tooltip shows what the bulk block holds (for example "x64 Andesite") and "Use to unpack".
 
 == Behavior ==
-A bulk block is a poisonous potato with its food properties removed. It is made "consumable" with a use time of 0 seconds and no effects, and the unpacked blocks are its use remainder, the item left behind after it is consumed.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/1/andesite.json}}</ref> As with any use remainder, if the inventory is full the blocks are dropped instead.
+A bulk block is a poisonous potato with its food properties removed. It is made "consumable" with a use time of 0 seconds and no effects, and the unpacked blocks are its use remainder, the item left behind after it is consumed.<ref>{{Source|MF_datapack/data/matcha/villager_trade/mason/1/bulk_andesite.json}}</ref> As with any use remainder, if the inventory is full the blocks are dropped instead.
 
 === Loot tables ===
-The data pack also has a loot table for each bulk block except dirt, under <code>matcha:bulk_block/</code> (for example <code>/loot give @s loot matcha:bulk_block/andesite</code>). No chest, mob or trade uses them. The items they give unpack the same way, but use the vanilla block's model as their icon instead of the bulk block model.<ref>{{Source|MF_datapack/data/matcha/loot_table/bulk_block/andesite.json}}</ref>
+The data pack also has a loot table for each bulk block except dirt, under <code>matcha:materials/bulk/</code> (for example <code>/loot give @s loot matcha:materials/bulk/andesite</code>). No chest, mob or trade uses them. The items they give unpack the same way, but use the vanilla block's model as their icon instead of the bulk block model.<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/bulk/andesite.json}}</ref>
 
 == History ==
 {{History|
@@ -67,6 +67,7 @@ All Mason trades are bulk blocks.
 Added Bulk Dirt.
 Bulk blocks have their own models.}}
 {{History line|1.12.3|Bulk terracotta, bulk malachite, bulk cinnabar, bulk blackstone, bulk smooth basalt and bulk smooth quartz now have English names and tooltips; before, the game showed their raw translation keys.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>}}
+{{History line|1.12.4|The bulk block loot tables moved from <code>matcha:bulk_block/</code> to <code>matcha:materials/bulk/</code>.<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/bulk/andesite.json}}</ref>}}
 }}
 
 == Trivia ==

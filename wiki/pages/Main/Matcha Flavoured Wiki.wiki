@@ -26,24 +26,24 @@ Welcome to the unofficial encyclopedia of '''[[Matcha Flavoured]]''' (also writt
 <div class="mp-highlight-wrapper">
 <h2 class="sr-only">Latest releases</h2>
 {{Mainpage update
-| name = [[Matcha Flavoured {{Current version}}|Death, Worldgen, & UX]]
+| name = [[Matcha Flavoured {{Current version}}|Intrinsic Hotfix]]
 | tag = Latest
 | features =
-* {{ItemLink|Crystal Heart}}
-* Reworked [[advancements]] and [[death]]
-* New [[Poplar]] trees and swamps
-* {{ItemLink|Electrum Alloy}}
+* [[Intrinsic]]s on armor and tools work again
+* [[Sleeping]] fixed in [[multiplayer]]
+* {{ItemLink|Chocolate}} stacks again
+* Old items [[Updating items|update themselves]]
 | bottom = Matcha Flavoured <b class="mp-highlight-version">{{Current version}}</b> for ''Minecraft'' <b class="mp-highlight-version">26.2</b> (26.3 port in alpha)
 }}{{#ifeq: {{Stable version}} | {{Current version}} || {{Mainpage update
-| name = [[Matcha Flavoured {{Stable version}}|Armour Performance Issue Hotfix]]
+| name = [[Matcha Flavoured {{Stable version}}|Intrinsic Hotfix]]
 | tag = Stable
 | tagtype = stable
 | bg = Main page background (lake).jpg
 | features =
-* [[Multiplayer]] armor lag fixed
-* Gentler [[husk]]s
-* Optional [[Darkness|true darkness]]
-* Brighter [[Hell]]
+* [[Intrinsic]]s on armor and tools work again
+* [[Sleeping]] fixed in [[multiplayer]]
+* {{ItemLink|Chocolate}} stacks again
+* Old items [[Updating items|update themselves]]
 | bottom = Matcha Flavoured <b class="mp-highlight-version">{{Stable version}}</b> for ''Minecraft'' <b class="mp-highlight-version">26.2</b>
 }} }}
 </div>

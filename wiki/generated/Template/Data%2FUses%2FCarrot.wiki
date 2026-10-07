@@ -25,10 +25,6 @@
 | [[Cooked Porkchop]] or [[Seitan]] +<br />[[Dough]] +<br />[[Oil]] +<br />[[Dried Kelp]] +<br />[[Carrot]]
 | {{Crafting|A1=Cooked Porkchop;Seitan|B1=Dough|C1=Oil|A2=Dried Kelp|B2=Carrot|Output=Lumpia,2|shapeless=1}}
 |-
-| [[Clear Mushroom Soup]]
-| [[Dried Kelp]] +<br />[[Carrot]] +<br />[[Braised Mushroom]] +<br />[[Bowl]]
-| {{Crafting|A1=Dried Kelp|B1=Carrot|C1=Braised Mushroom|A2=Bowl|Output=Clear Mushroom Soup|shapeless=1}}
-|-
 | [[Pad Thai]]
 | [[Dough]] +<br />[[Cooked Fish]] or [[Cooked Large Fish]] +<br />[[Sugar]] +<br />[[Carrot]] +<br /><span class="explain" title="Egg, Blue Egg, Brown Egg">Any eggs</span> +<br />[[Bowl]]
 | {{Crafting|A1=Dough|B1=Cooked Fish;Cooked Large Fish|C1=Sugar|A2=Carrot|B2=Any Eggs|C2=Bowl|Output=Pad Thai|shapeless=1}}
@@ -56,9 +52,5 @@
 | {{MCW|Carrot on a Stick}} <small>(vanilla recipe)</small>
 | [[Fishing Rod]] +<br />[[Carrot]]
 | {{Crafting|A1=Fishing Rod|B2=Carrot|Output=Carrot on a Stick}}
-|-
-| [[Rabbit Stew]] <small>(vanilla recipe)</small>
-| [[Baked Potato]] +<br />[[Cooked Flesh]] +<br />[[Bowl]] +<br />[[Carrot]] +<br />{{MCW|Shelf Mushroom}}
-| {{Crafting|A1=Baked Potato|B1=Cooked Flesh|C1=Bowl|A2=Carrot|B2=Shelf Mushroom|Output=Rabbit Stew|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

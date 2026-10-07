@@ -2,6 +2,6 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Pale Hanging Moss|mcw=Pale Hanging Moss}} || 1 || 100% || 100% || predicate minecraft:tool/can_shear, predicate minecraft:tool/can_silk_touch
+| {{ItemLink|Pale Hanging Moss|mcw=Pale Hanging Moss}} || 1 || 100% || 100% || tool: Iron Shears, Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

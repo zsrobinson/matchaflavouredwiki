@@ -32,7 +32,7 @@ The result is rounded down. Each sleeping player's remaining sleep goes down by 
 | 1 of 4 || 18 || 100 seconds
 |}
 
-A single player alone in the Overworld always sleeps at the full rate. In multiplayer, time still passes while only some players sleep, just more slowly, and players in [[Hell]] or the End count as neither sleeping nor awake.
+A single player alone in the Overworld always sleeps at the full rate. In multiplayer, time still passes while only some players sleep, just more slowly, and players in [[Hell]] or the End count as neither sleeping nor awake. A player who gets into bed while someone else is already asleep is counted from the next tick on; the pack marks them as just gone to bed so that it does not read them as awake before the game has given them their sleep timer.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/on_player_sleep.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/tick_sleeping_player.mcfunction}}</ref>
 
 === Weather ===
 Waking up at the end of a full sleep sets the [[weather]] to clear. Leaving the bed early does not.
@@ -41,6 +41,7 @@ Waking up at the end of a full sleep sets the [[weather]] to clear. Leaving the 
 {{History|
 {{History line|1.10|Beds work on first load-in. Sleeping for any amount of time sets the weather to clear.}}
 {{History line|1.12.2|Dynamic multiplayer sleep: sleeping at night wakes the player in the morning, while sleeping in the day still skips 12 hours.}}
+{{History line|1.12.4|Fixed multiplayer sleep speed: a player who went to bed while another player was already asleep was immediately treated as awake and not counted, so time passed as if only the first player were sleeping.<ref>{{Cite changelog|1.12.4|quote=Multiplayer Sleep speed}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/tick_sleeping_player.mcfunction}}</ref>}}
 }}
 
 == Trivia ==

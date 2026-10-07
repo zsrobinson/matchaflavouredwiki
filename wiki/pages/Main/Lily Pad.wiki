@@ -8,7 +8,7 @@ A '''lily pad''' is a flat plant that floats on water and can be walked on. It w
 One lily pad, a [[Glass Bottle#Water bottle|water bottle]] and a piece of bone meal make 4 lily pads, and the empty bottle is given back.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/clone_lily_pad.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref> The recipe unlocks when the player picks up bone meal.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/bonemeal.json}}</ref>
 
 === Fishing ===
-Lily pads are part of the [[Fishing junk|fishing junk]] pool and have an entry in the [[Angler's Almanac]].<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/junk/lily_pad.json}}</ref>
+Lily pads are part of the [[Fishing junk|fishing junk]] pool and have an entry in the [[Angler's Almanac]].<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/junk/lily_pad.json}}</ref> In 1.12.4 the junk table can't be loaded, so lily pads can't be fished up and the entry can't be unlocked (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
 
 === Natural generation ===
 Lily pads generate in swamps as in vanilla.

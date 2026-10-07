@@ -24,6 +24,7 @@ Its anvil cost multiplier is 2.
 == History ==
 {{History|
 {{History line|1.12.2|The hepatizon sword's Riposte raised from I to II.<ref>{{Source|MF_datapack/data/matcha/recipe/smithing/hepatizon_sword.json}}</ref>}}
+{{History line|1.12.4|2=Riposte works on the smithed hepatizon sword again: in 1.12.2-beta and 1.12.3 the intrinsics of smithed armor and tools were never applied (see [[Set bonus#Applying intrinsics after smithing|Set bonus]]).<ref>{{Cite changelog|1.12.4|quote=Armour/Tool Intrinsics not working}}</ref>}}
 }}
 
 == Trivia ==

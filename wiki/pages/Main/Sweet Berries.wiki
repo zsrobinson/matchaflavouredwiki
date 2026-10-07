@@ -7,7 +7,10 @@
 == Obtaining ==
 
 === Harvesting ===
-Sweet berry bushes drop and give the pack's sweet berries when harvested or broken. Harvesting a bush gives 2 or 3 berries whether or not it is fully grown: unlike vanilla, which gives 1 or 2 from a bush that is not fully grown, the pack's harvest table has no check for the bush's age.<ref>{{Source|MF_datapack/data/minecraft/loot_table/harvest/sweet_berry_bush.json}}</ref>
+Sweet berry bushes drop and give the pack's sweet berries when harvested or broken. Harvesting a bush gives 2 or 3 berries when it is fully grown and 1 or 2 when it is not, as in vanilla.<ref>{{Source|MF_datapack/data/minecraft/loot_table/harvest/sweet_berry_bush.json}}</ref>
+
+{{Upcoming|the 26.3 port}}
+In the 1.12.3 alpha for 26.3, and in the 26.3 port, the harvest table has no check for the bush's age, so a bush gives 2 or 3 berries whether or not it is fully grown, as in 1.12.2.<ref>{{Source|MF_datapack/data/minecraft/loot_table/harvest/sweet_berry_bush.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 
 {{Sources}}
 
@@ -27,6 +30,7 @@ Picking up sweet berries unlocks sweet berry mash. They are also used raw in the
 {{History line|1.12.1-alpha|Plain sweet berries from other sources are replaced with the pack's version.}}
 {{History line|1.12.3|Plain sweet berries from other sources are no longer replaced with the pack's version.}}
 {{History line|1.12.2|Harvesting a bush that is not fully grown gives 2–3 berries, like a fully grown one; 1.12.1-alpha's harvest table gave the extra berry only at full growth.<ref>{{Source|Matcha_Flavoured/data/minecraft/loot_table/harvest/sweet_berry_bush.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>}}
+{{History line|1.12.3|The harvest table checks the bush's age again: a bush that is not fully grown gives 1–2 berries.<ref>{{Source|MF_datapack/data/minecraft/loot_table/harvest/sweet_berry_bush.json}}</ref>}}
 }}
 
 == See also ==

@@ -5,7 +5,10 @@
 The pieces are the [[Sturdy Leather Helmet|helmet]], [[Sturdy Leather Gambeson|gambeson]], [[Sturdy Leather Leggings|leggings]] and [[Sturdy Leather Boots|boots]]. They are repaired with tattered leather.
 
 === Village tannery chests ===
-In 1.12.2, [[village]] tannery chests could hold a piece of sturdy leather armor from an older version of the set, which was invisible when worn and weaker than the crafted pieces. In 1.12.3 the tannery's loot table is empty,<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_tannery.json}}</ref> and no other table rolls the older pieces, which are still in the pack.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/sturdy_leather.json}}</ref> [[Shipwreck]] supply chests give the current pieces.<ref>{{Source|MF_datapack/data/matcha/loot_table/equipment/sturdy_leather/armour.json}}</ref>
+The [[village]] tannery's loot table can give a piece of sturdy leather armor from an older version of the set, which is invisible when worn and weaker than the crafted pieces.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_tannery.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/equipment/sturdy_leather.json}}</ref> The pack's [[abandoned village]]s have no loot chests, so the table isn't normally used. [[Shipwreck]] supply chests give the current pieces.<ref>{{Source|MF_datapack/data/matcha/loot_table/equipment/sturdy_leather/armour.json}}</ref>
+
+{{Upcoming|the 26.3 port}}
+In the 1.12.3 alpha for 26.3, and in the 26.3 port, the tannery's loot table is empty, and no other table rolls the older pieces.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_tannery.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 
 == Stats ==
 === Armor ===
@@ -19,7 +22,7 @@ Values are the item's real attributes; where the hand-written tooltip differs, t
 {{History line|0.4-alpha|Added sturdy leather armor.}}
 {{History line|1.10|The gambeson's armor was raised from 4 to 5, equal to the golden chestplate.}}
 {{History line|1.12.2|Safe fall distance raised from 1 to 2 per piece, and the armor can be repaired with tattered leather. Added the step height intrinsic.}}
-{{History line|1.12.3|Village tannery chests no longer contain sturdy leather armor.}}
+{{History line|Upcoming|2=Village tannery chests no longer contain sturdy leather armor (in the 1.12.3 alpha for 26.3).}}
 }}
 
 == References ==

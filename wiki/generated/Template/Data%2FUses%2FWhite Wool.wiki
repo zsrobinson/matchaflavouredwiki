@@ -17,22 +17,6 @@
 | 2 × [[White Wool]]
 | {{Crafting|A1=White Wool|B1=White Wool|Output=White Carpet,8}}
 |-
-| [[White Carpet]]
-| [[White Wool]]
-| {{Stonecutter|Input=White Wool|Output=White Carpet,4}}
-|-
-| [[White Cushion]]
-| [[White Wool]]
-| {{Stonecutter|Input=White Wool|Output=White Cushion,2}}
-|-
-| [[White Wool Slab]]
-| [[White Wool]]
-| {{Stonecutter|Input=White Wool|Output=White Wool Slab,2}}
-|-
-| [[White Wool Stairs]]
-| [[White Wool]]
-| {{Stonecutter|Input=White Wool|Output=White Wool Stairs}}
-|-
 | [[Black Wool]] <small>(vanilla recipe)</small>
 | [[Black Dye]] +<br />[[White Wool]] or [[Orange Wool]] or [[Magenta Wool]] or [[Light Blue Wool]] or [[Yellow Wool]] or [[Lime Wool]] or [[Pink Wool]] or [[Gray Wool]] or [[Light Gray Wool]] or [[Cyan Wool]] or [[Purple Wool]] or [[Blue Wool]] or [[Brown Wool]] or [[Green Wool]] or [[Red Wool]]
 | {{Crafting|A1=Black Dye|B1=White Wool;Orange Wool;Magenta Wool;Light Blue Wool;Yellow Wool;Lime Wool;Pink Wool;Gray Wool;Light Gray Wool;Cyan Wool;Purple Wool;Blue Wool;Brown Wool;Green Wool;Red Wool|Output=Black Wool|shapeless=1}}
@@ -98,19 +82,11 @@
 | {{Crafting|A1=Stick|A2=Stick|A3=Stick|B1=Stick|B2=Any Wool|B3=Stick|C1=Stick|C2=Stick|C3=Stick|Output=Painting}}
 |-
 | {{MCW|White Bed}} <small>(vanilla recipe)</small>
-| 3 × [[White Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks, Poplar Planks">Any planks</span>
+| 3 × [[White Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
 | {{Crafting|A1=White Wool|A2=Any Planks|B1=White Wool|B2=Any Planks|C1=White Wool|C2=Any Planks|Output=White Bed}}
 |-
 | {{MCW|White Harness}} <small>(vanilla recipe)</small>
 | 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[White Wool]]
 | {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=White Wool|C1=Sturdy Leather|C2=Glass|Output=White Harness}}
-|-
-| [[White Wool Slab]] <small>(vanilla recipe)</small>
-| 3 × [[White Wool]]
-| {{Crafting|A1=White Wool|B1=White Wool|C1=White Wool|Output=White Wool Slab,6}}
-|-
-| [[White Wool Stairs]] <small>(vanilla recipe)</small>
-| 6 × [[White Wool]]
-| {{Crafting|A1=White Wool|A2=White Wool|A3=White Wool|B2=White Wool|B3=White Wool|C3=White Wool|Output=White Wool Stairs,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

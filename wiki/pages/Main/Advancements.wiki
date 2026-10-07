@@ -46,7 +46,7 @@ The Tutorial tab, rooted in "From Earth", traces the pack's progression in sever
 |matcha:tutorial/obtain_steel=Have [[Steel Alloy|steel alloy]] in the inventory.
 |matcha:tutorial/obtain_smithing_table=Have a [[Smithing Table|smithing table]] in the inventory.
 |matcha:tutorial/obtain_smithing_upgrade=Have a [[Smithing Upgrade Template|smithing template]] in the inventory.
-|matcha:tutorial/upgrade_mattock=Smith a steel, shakudo or electrum mattock or dolabra.{{#tag:ref|The advancement has no criterion for the hepatizon recipes (<code>hepatizon_mattock</code> and <code>hepatizon_dolabra</code>), so smithing one does not grant it. In 1.12.2 it named recipe IDs that do not exist ({{Source|MF_datapack/data/matcha/advancement/tutorial/upgrade_mattock.json}}).|group=note}}
+|matcha:tutorial/upgrade_mattock=Smith a steel, shakudo or electrum mattock or dolabra.{{#tag:ref|The criteria for hepatizon use the recipe IDs <code>matcha:smithing/bronze_dolabra</code> and <code>bronze_mattock</code>, which do not exist; the recipes are named <code>hepatizon_dolabra</code> and <code>hepatizon_mattock</code>. Smithing a hepatizon mattock or dolabra therefore does not grant this advancement ({{Source|MF_datapack/data/matcha/advancement/tutorial/upgrade_mattock.json}}). In the 1.12.3 alpha for 26.3 the two hepatizon criteria are removed altogether ({{Source|MF_datapack/data/matcha/advancement/tutorial/upgrade_mattock.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}).|group=note}}
 |matcha:tutorial/obtain_adamant_tool=Smith any of 13 [[Adamant equipment|adamant]] items, including the claymore.
 |matcha:tutorial/obtain_bronze_tool=Smith any of 12 [[Hepatizon equipment|hepatizon]] items.
 |matcha:tutorial/obtain_electrum_tool=Smith any of 12 [[Electrum equipment|electrum]] items.
@@ -125,7 +125,7 @@ The End tab appears when the player first enters [[the End]].
 
 == Angler's Almanac ==
 {{Main|Angler's Almanac}}
-The Angler's Almanac tab is a catalog of catches, added by imtlx in [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]]. Its root can never be completed by play. Obtaining the [[Angler's Almanac]] item runs a function that unlocks it, and every entry requires the root.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/get_almanac.json}}</ref> Each entry is hidden until the player hooks the matching item with a fishing rod, and its description gives the catch's rarity in stars. No entry gives a reward. The Hot Saltwater pufferfish entry checks for the vanilla pufferfish model, which is what a caught pufferfish has.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>
+The Angler's Almanac tab is a catalog of catches, added by imtlx in [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]]. Its root can never be completed by play. Obtaining the [[Angler's Almanac]] item runs a function that unlocks it, and every entry requires the root.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/get_almanac.json}}</ref> Each entry is hidden until the player hooks the matching item with a fishing rod, and its description gives the catch's rarity in stars. No entry gives a reward. The Hot Saltwater pufferfish entry checks for the vanilla pufferfish model, which is what a caught pufferfish has.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref> In 1.12.4 nothing can be caught from the junk loot table, which the game can't load, so of the 15 junk entries only Fish Bones can be unlocked, with the fish bones caught in sulfur caves (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
 
 {| class="wikitable"
 ! Category !! Groups !! Entries
@@ -152,7 +152,8 @@ The generated list of every entry is on the [[Angler's Almanac]] page.
 Most of the pack's advancement files have no display. They are invisible to players and act as event triggers, a common datapack technique. They are grouped by folder:<ref>{{Source|MF_datapack/data/matcha/advancement}}</ref>
 {{Data/Advancements/technical
 |matcha:recipe_unlocks=Unlock recipes when the player obtains an item, for example logs unlock the kindling and chest recipes. The whole folder is revoked when the pack is updated.
-|matcha:mechanics=Trigger mechanics: using a [[Crystal Heart|crystal heart]], [[Amnestic|amnestic]] on a player or a villager, [[Asylum Seeker|asylum application]], [[Beacon Kindling|beacon kindling]], [[Bedrock Buster|bedrock buster]], clay fetishes or the happy ghast horn; eating glow berry foods (aura); sleeping; summoning the Wither; hitting a [[Copper Eye|copper eye]]; getting the Wither effect; entering a village or fortress; handling Estus and intrinsic enchantments.
+|matcha_item:trigger=The automatic item updater, added in 1.12.4: one advancement per pack item, which brings an outdated copy up to date when the player's inventory changes. See [[Updating items#Automatic updates]].
+|matcha:mechanics=Trigger mechanics: using a [[Crystal Heart|crystal heart]], placing an [[Amnestic|amnestic]], [[Asylum Seeker|asylum application]], [[Beacon Kindling|beacon kindling]], [[Bedrock Buster|bedrock buster]], clay fetishes or the happy ghast horn; eating glow berry foods (aura); sleeping; summoning the Wither; hitting a [[Copper Eye|copper eye]]; getting the Wither effect; entering a village or fortress; handling Estus and intrinsic enchantments.
 |matcha:fishing_sounds=Play a distinct sound for each kind of catch. See [[Fishing sounds]].
 |matcha:update_old_items=Replace old copies of the sacred texts and the "Golden" music disc with current ones. See [[Updating items]].
 |matcha:cooking_recipes=Unlock secret recipes ([[Chorus Mochi|chorus mochi]], [[gnocchi]], [[Sweet Berry Toast|sweet berry toast]] and [[Warped Stroganoff|warped stroganoff]]) when their recipe item is obtained.
@@ -161,8 +162,11 @@ Most of the pack's advancement files have no display. They are invisible to play
 |matcha:anglers_almanac=Unlock the [[#Angler's Almanac|Angler's Almanac]] tab when the player obtains the [[Angler's Almanac]].
 |matcha:item_contingencies=Turn unenchanted vanilla elytra into the pack's version.
 |matcha:update_vanilla_item=Turn vanilla water bottles into the pack's version.
-|matcha:imm_revoke=An impossible advancement that most of the <code>mechanics</code> advancements use as their parent. Whenever the world loads or a player joins, everything under it is revoked, so the triggers can fire again.
 }}
+A trigger advancement's reward function revokes the advancement again, so that it can fire the next time.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
+
+{{Upcoming|the 26.3 port}}
+In the 1.12.3 alpha for 26.3, most <code>mechanics</code> advancements hang under <code>matcha:imm_revoke</code>, an impossible advancement whose children are all revoked whenever the world loads or a player joins.<ref>{{Source|MF_datapack/data/matcha/advancement/imm_revoke.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref> The amnestic gets two trigger advancements there, for eating one and for using one on a villager, and milking a mooshroom gets one.
 
 == History ==
 {{History
@@ -175,7 +179,9 @@ Most of the pack's advancement files have no display. They are invisible to play
 {{History line|1.10|Added "Demonic Emissary", "A True Community", "Icarus' Folly", "A Miraculous Discovery!", "Archeologist in Training" and "Wings of Eros". Advancements became translatable. Removed the Estus flask advancement.}}
 {{History line|1.12.1-alpha|Advancements began rewarding obols and crystal hearts and lowering minimum hearts. Added "Bonfire Lit" and the Angler's Almanac tab. Reward advancements are revoked on update so they can be earned again.}}
 {{History line|1.12.2|"Bonfire Lit", "Icarus' Folly" and "Wings of Eros" can be earned; the two elytra advancements had named recipe IDs that didn't exist. The Warm Saltwater and axolotl entries of the Angler's Almanac can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/end/smith_bronze_elytra.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/warm/root.json}}</ref>}}
-{{History line|1.12.3|Advancements were reworked again. The revocation on update now takes away only a hand-picked list instead of most of the tutorial. "Crystal Heart!" and the pufferfish Angler's Almanac entry can be earned. The hepatizon entries were dropped from "Three in One?", the elytra translation key now exists, and the mechanics advancements that detect the Wither effect, [[amnestic]], aura foods and mooshroom milking were rewritten.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>}}
+{{History line|1.12.3|Advancements were reworked again. The revocation on update now takes away only a hand-picked list instead of most of the tutorial. "Crystal Heart!" and the pufferfish Angler's Almanac entry can be earned. The elytra translation key now exists, and the mechanics advancements that detect the Wither effect and aura foods were rewritten.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>}}
+{{History line|1.12.4|2=Added the <code>matcha_item:trigger</code> advancements of the automatic item updater.<ref>{{Source|MF_datapack/data/matcha_item/advancement/trigger/adamant_axe.json}}</ref> The advancement that applies equipment intrinsics after smithing matches the items again, so intrinsics work (see [[Set bonus#Applying intrinsics after smithing]]).<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/intrinsic_enchants_obtained.json}}</ref> The junk Angler's Almanac entries other than Fish Bones can't be unlocked, because the junk loot table fails to load.}}
+{{History line|Upcoming|2=In the 26.3 port: the hepatizon entries are dropped from "Three in One?", and the [[amnestic]] and mooshroom-milking mechanics get new trigger advancements under <code>matcha:imm_revoke</code>.<ref>{{Source|MF_datapack/data/matcha/advancement/imm_revoke.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>}}
 }}
 
 == Trivia ==

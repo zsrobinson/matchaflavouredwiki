@@ -11,11 +11,15 @@ As vanilla gold ore.
 === Breaking ===
 Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 1 raw gold; adamant tools drop a gold ingot. Needs an iron or better pickaxe. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json}}</ref>
 
-Both variants are meant to apply [[Fortune]] and the [[Electrum equipment|electrum]] intrinsic to the raw gold, one after the other, like other ores. Native deepslate gold does.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_gold_ore.json}}</ref> The raw gold entry of native gold is still written in the pre-26.3 loot format, so its bonuses are probably not applied. See [[Known bugs]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json}}</ref> Gold ingots from adamant tools get the Fortune and electrum bonuses from both blocks.
+Both variants apply [[Fortune]] and the [[Electrum equipment|electrum]] intrinsic to the raw gold, one after the other, like other ores.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_gold_ore.json}}</ref> Gold ingots from adamant tools get the Fortune and electrum bonuses from both blocks.
+
+{{Upcoming|the 26.3 port}}
+In the 1.12.3 alpha for 26.3, and in the 26.3 port, the raw gold entry of stone native gold is still written in the 26.2 loot format, so its bonuses are probably not applied there. See [[Known bugs#In the 26.3 port]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 
 == History ==
 {{History|
-{{History line|1.12.3|The table was corrected so that Fortune is no longer applied twice and the electrum intrinsic is included, as for native deepslate gold, but the raw gold entry itself is left in the pre-26.3 loot format, so its bonuses are probably not applied.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json}}</ref>}}
+{{History line|1.12.3|The table was corrected so that Fortune is no longer applied twice and the electrum intrinsic is included, as for native deepslate gold.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json}}</ref>}}
+{{History line|Upcoming|2=In the 1.12.3 alpha for 26.3, the raw gold entry of stone native gold is left in the 26.2 loot format, so its bonuses are probably not applied.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>}}
 }}
 
 == References ==

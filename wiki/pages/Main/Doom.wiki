@@ -57,6 +57,7 @@ Since removing the Weakness is part of the effect, each application of Weakness 
 {{History|
 {{History line|1.12.2|Added Doom, replacing adamant armor's earlier per-piece [[Divinity|divinity]] hearts. The release notes give {{G|Doom}} 3 as {{Hp|3}} and the full set's 16 as {{Hp|16}}.
 The adamant weapon intrinsic now applies Weakness, and the adamant tool intrinsic smelts mined blocks.}}
+{{History line|1.12.4|2=Doom works on adamant armor made in a smithing table: before, the intrinsics of smithed armor and tools were never applied (see [[Set bonus#Applying intrinsics after smithing|Set bonus]]).<ref>{{Cite changelog|1.12.4|quote=Armour/Tool Intrinsics not working}}</ref>}}
 }}
 
 == Trivia ==

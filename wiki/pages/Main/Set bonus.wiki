@@ -60,7 +60,7 @@ Under the hood, every equipment intrinsic is a custom enchantment in the pack's 
 
 === Applying intrinsics after smithing ===
 Alloy equipment is made in a [[Smithing Table|smithing table]] by upgrading a base item, and the upgraded item keeps the base item's enchantments. To keep those enchantments and add the alloy's intrinsics without one overwriting the other, smithed items leave the table with their intrinsics stored the way an enchanted book stores enchantments, plus a <code>has_intrinsic_enchants</code> marker. The intrinsics are then applied as soon as the item enters the player's inventory:<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/intrinsic_enchants_obtained.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
-# Picking up or crafting a marked item triggers a hidden advancement, which runs the processing function.
+# Any change to the inventory while it holds a marked item (picking up, crafting or moving an item) triggers a hidden advancement, which runs the processing function. The advancement checks the marker with a partial match of the item's custom data, so other custom data on the item doesn't stop it. In 1.12.2-beta and 1.12.3 it required an exact match and the intrinsics were not applied; see [[#History|History]].
 # The function takes the first marked item in the player's inventory and copies its current enchantments.
 # For each of the pack's intrinsics and each vanilla enchantment, it compares the level already on the item with the stored level, and keeps the higher one.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/select_higher_level.mcfunction}}</ref>
 # The item's enchantments are replaced with the merged set, the stored copy is deleted and the marker is cleared.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
@@ -86,6 +86,7 @@ Intrinsic enchantments became glyph-only in the tooltip.}}
 {{History line|1.12.2|Added new intrinsic and effect glyphs, made by Voxybuns.
 Adamant's intrinsic was reworked into [[Doom]], and the full electrum set was given {{G|Warding}} 4.
 Fixed the shakudo elytra bonus not working.<ref group="note">The shakudo elytra still only counts as one shakudo piece in the current code; see [[#Shakudo regeneration|Shakudo regeneration]].</ref>}}
+{{History line|1.12.4|2=Fixed armor and tool intrinsics not working: the advancement that applies them after smithing didn't match the smithed items, so their intrinsics were never applied.<ref>{{Cite changelog|1.12.4|quote=Armour/Tool Intrinsics not working}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/intrinsic_enchants_obtained.json}}</ref> Items made before the fix are repaired as soon as the player's inventory changes; see [[Updating items#Automatic updates]].}}
 }}
 
 == See also ==

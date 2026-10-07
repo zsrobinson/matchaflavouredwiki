@@ -9,11 +9,15 @@ The deepslate variant is '''deepslate hematite'''.
 As vanilla iron ore.
 
 === Breaking ===
-Mined with a pickaxe (see [[Tools#Mining levels]]), hematite drops 1 raw iron, affected by [[Fortune]] and the [[Electrum equipment|electrum]] intrinsic.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/iron_ore.json}}</ref> Deepslate hematite drops the same.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_iron_ore.json}}</ref> Tools with the adamant intrinsic drop an iron ingot instead (1 to 2 ingots from deepslate hematite), with the same Fortune and electrum bonuses. Silk Touch drops the block.
+Mined with a pickaxe (see [[Tools#Mining levels]]), hematite drops 1 raw iron, affected by [[Fortune]] and the [[Electrum equipment|electrum]] intrinsic.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/iron_ore.json}}</ref> Deepslate hematite drops 2 raw iron, with the same bonuses.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_iron_ore.json}}</ref> Tools with the adamant intrinsic drop iron ingots instead (1 from hematite, 2 from deepslate hematite), with the same Fortune and electrum bonuses. Silk Touch drops the block.
+
+{{Upcoming|the 26.3 port}}
+In the 1.12.3 alpha for 26.3, and in the 26.3 port, deepslate hematite drops 1 raw iron like hematite, and adamant tools get 1 to 2 ingots from it.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_iron_ore.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 
 == History ==
 {{History|
-{{History line|1.12.3|Hematite has its own loot table, applying Fortune and electrum like deepslate hematite. Deepslate hematite drops 1 raw iron instead of 2, and adamant tools drop 1 to 2 ingots instead of 2.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/iron_ore.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_iron_ore.json}}</ref>}}
+{{History line|1.12.3|Hematite has its own loot table, applying Fortune and electrum like deepslate hematite.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/iron_ore.json}}</ref>}}
+{{History line|Upcoming|2=Deepslate hematite drops 1 raw iron instead of 2, and adamant tools drop 1 to 2 ingots from it instead of 2 (in the 1.12.3 alpha for 26.3).<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_iron_ore.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>}}
 }}
 
 == References ==

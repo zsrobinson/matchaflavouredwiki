@@ -7,7 +7,10 @@ A '''carrot''' is a raw [[ingredient]] whose [[intrinsic]] is {{EffectLink|Night
 == Obtaining ==
 
 === Farming ===
-Carrot crops drop the pack's carrots. A fully grown crop drops 2 to 8 carrots, where vanilla drops 2 to 5: its extra carrots are rolled twice, once with Fortune's bonus and once with the Electrum tool intrinsic's, and each roll adds 0 to 3 carrots even without the enchantment. Each level of either enchantment adds one more chance of an extra carrot.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/carrots.json}}</ref>
+Carrot crops drop the pack's carrots. A fully grown crop drops 1 carrot plus 1 to 4 more, 2 to 5 in all, as in vanilla. [[Fortune]] and the [[Electrum equipment|Electrum]] tool intrinsic each multiply the extra carrots the way they multiply ore drops: each level adds a chance of a higher multiplier, up to one more than the level, and the two bonuses stack.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/carrots.json}}</ref>
+
+{{Upcoming|the 26.3 port}}
+In the 1.12.3 alpha for 26.3, and in the 26.3 port, the crop still drops 2 to 8 carrots, as in 1.12.2: its extra carrots are rolled twice, once with Fortune's bonus and once with the Electrum tool intrinsic's, and each roll adds 0 to 3 carrots even without the enchantment. Each level of either enchantment adds one more chance of an extra carrot.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/carrots.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 
 {{Sources}}
 
@@ -25,6 +28,7 @@ Picking up a carrot unlocks steamed carrots, pickled carrots, carrot cupcakes an
 {{History|
 {{History line|1.10|Carrot recipes unlock from raw carrots instead of only cooked ones.}}
 {{History line|1.12.2|The Electrum tool intrinsic adds carrots; a fully grown crop drops 2–8 carrots instead of 2–5.}}
+{{History line|1.12.3|A fully grown crop drops 2–5 carrots again; Fortune and the Electrum intrinsic multiply the extra carrots like ore drops.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/carrots.json}}</ref>}}
 }}
 
 == See also ==

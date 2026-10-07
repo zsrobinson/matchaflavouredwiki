@@ -14,7 +14,7 @@ This upgrade needs a [[smithing upgrade template]]; without one, the same copper
 == Usage ==
 
 === Mining ===
-It breaks shovel and hoe blocks at speed {{Value|Hepatizon Mattock|miningspeed}} and has {{Value|Hepatizon Mattock|durability}} durability. That is slower than the hepatizon shovel and hoe (20) and the same as the golden and adamant shovels. Hoes in Matcha Flavoured also break wool (including wool slabs and stairs), carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+It breaks shovel and hoe blocks at speed {{Value|Hepatizon Mattock|miningspeed}} and has {{Value|Hepatizon Mattock|durability}} durability. That is slower than the hepatizon shovel and hoe (20) and the same as the golden and adamant shovels. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Combat ===
 It deals {{Value|Hepatizon Mattock|damage}} damage at an attack speed of {{Value|Hepatizon Mattock|attackspeed}}. While held in the main hand it adds 0.005 to movement speed, 5% of the player's base speed.

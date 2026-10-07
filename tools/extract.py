@@ -40,17 +40,17 @@ def rel(path):
 
 # ---------------------------------------------------------------- format guard
 # This file reads specific keys. When the pack or a new Minecraft version changes a file format
-# (26.3 renamed loot "functions" to "modifier" and "conditions" to "condition"), the new keys would be
+# (26.3 renamed loot "functions" to "modifier" and "conditions" to "condition"; 1.12.4 went back to 26.2
+# and its format), the new keys would be
 # skipped without a word and the wiki would quietly lose drop counts, conditions and item identities.
 # So every key, type and function name read below is checked against this list of what the extractor
 # knows. Anything new fails the run (exit 3). Handle it, or add it here if it really doesn't matter.
 KNOWN = {
-    'loot table': {'type', 'pools', 'random_sequence', 'modifier'},
-    'loot pool': {'rolls', 'bonus_rolls', 'entries', 'condition', 'modifier'},
-    'loot entry': {'type', 'name', 'weight', 'quality', 'modifier', 'condition', 'children', 'value', 'expand',
-                   'items',
-                   # gold_ore.json still has one entry in the pre-26.3 format; the game doesn't read it, so neither do we
-                   'functions',
+    'loot table': {'type', 'pools', 'random_sequence', 'functions'},
+    'loot pool': {'rolls', 'bonus_rolls', 'entries', 'conditions', 'functions'},
+    'loot entry': {'type', 'name', 'weight', 'quality', 'functions', 'conditions', 'children', 'value', 'expand',
+                   # treasure/porkchop_classic.json has its function in the 26.3 format; 26.2 doesn't read it, so neither do we
+                   'modifier',
                    ''},  # '': a stray empty key in the pack's redstone_ore.json
     'loot entry type': {'minecraft:item', 'minecraft:loot_table', 'minecraft:empty', 'minecraft:alternatives',
                         'minecraft:group', 'minecraft:sequence', 'minecraft:tag', 'minecraft:dynamic'},
@@ -61,13 +61,12 @@ KNOWN = {
                       'minecraft:set_instrument', 'minecraft:set_contents', 'minecraft:apply_bonus',
                       'minecraft:explosion_decay', 'minecraft:set_enchantments', 'minecraft:limit_count',
                       'minecraft:enchanted_count_increase', 'minecraft:furnace_smelt', 'minecraft:set_stew_effect',
-                      'minecraft:copy_components', 'minecraft:copy_state', 'minecraft:filtered', 'minecraft:discard',
-                      'minecraft:sequence'},
+                      'minecraft:copy_components', 'minecraft:copy_state', 'minecraft:filtered', 'minecraft:discard'},
     # loot_enchantments(): what enchant_randomly, enchant_with_levels and set_enchantments give (Enchantment tables)
-    'loot enchant function': {'type', 'condition', 'options', 'levels', 'only_compatible', 'enchantments', 'add',
+    'loot enchant function': {'function', 'conditions', 'options', 'levels', 'only_compatible', 'enchantments', 'add',
                               'include_additional_cost_component'},
     # generate.py: cond_notes() turns these into drop-table notes and chances
-    'condition': {'minecraft:location_check', 'minecraft:entity_properties', 'minecraft:match_block',
+    'condition': {'minecraft:location_check', 'minecraft:entity_properties', 'minecraft:block_state_property',
                   'minecraft:match_tool', 'minecraft:survives_explosion', 'minecraft:random_chance',
                   'minecraft:any_of', 'minecraft:all_of', 'minecraft:inverted', 'minecraft:table_bonus',
                   'minecraft:killed_by_player', 'minecraft:random_chance_with_enchanted_bonus',
@@ -93,7 +92,7 @@ KNOWN = {
         'enchantments', 'entity_data', 'equippable', 'food', 'instrument', 'item_model', 'item_name',
         'jukebox_playable', 'lore', 'max_damage', 'max_stack_size', 'potion_contents', 'provides_trim_material',
         'rarity', 'repairable', 'stored_enchantments', 'tool', 'tooltip_display', 'unbreakable', 'use_remainder')},
-    'villager trade': {'wants', 'additional_wants', 'gives', 'given_item_modifier', 'max_uses', 'xp',
+    'villager trade': {'wants', 'additional_wants', 'gives', 'given_item_modifiers', 'max_uses', 'xp',
                        'reputation_discount', 'price_multiplier', 'merchant_predicate'},
     'trade set': {'amount', 'random_sequence', 'trades', 'allow_duplicates'},
     'enchantment': {'description', 'max_level', 'weight', 'anvil_cost', 'slots', 'supported_items', 'primary_items',
@@ -107,7 +106,7 @@ KNOWN = {
     # replacing another of vanilla's texts (end.txt, postcredits.txt, credits.json) is new content.
     'resource pack text': {'splashes.txt'},
     # mob_predicate(): the matcha:mob_checks predicates that pick which mobs a difficulty changes
-    'mob predicate': {'type', 'entity', 'predicate'},
+    'mob predicate': {'condition', 'entity', 'predicate'},
     'mob predicate test': {'minecraft:entity_type', 'minecraft:flags'},
     'mob predicate flag': {'is_baby'},
 }
@@ -120,34 +119,12 @@ def expect(kind, keys, src):
             UNKNOWN[(kind, k)].add(src)
 
 
-def conditions(c):
-    """A "condition" key holds one condition (all_of / any_of / inverted nest the others): as a list."""
-    return [] if c is None else list(c) if isinstance(c, list) else [c]
-
-
-def functions(m):
-    """A "modifier" key holds one loot function, a list of them, or a sequence of them: as a flat list."""
-    out = []
-    for f in [] if m is None else m if isinstance(m, list) else [m]:
-        if isinstance(f, dict) and norm_ns(f.get('type', '')) == 'minecraft:sequence':
-            out += functions(f.get('functions'))
-        else:
-            out.append(f)
-    return out
-
-
-def fn_name(f):
-    return f.get('type', '').split(':')[-1]
-
-
 def expect_conditions(conds, src):
-    for c in conditions(conds):
-        if isinstance(c, str):
-            continue  # a reference to a predicate file (a term of all_of / any_of)
-        if not isinstance(c, dict) or 'type' not in c:
-            UNKNOWN[('condition', 'without a "type" key')].add(src)
+    for c in conds or []:
+        if not isinstance(c, dict) or 'condition' not in c:
+            UNKNOWN[('condition', 'without a "condition" key')].add(src)
             continue
-        expect('condition', [norm_ns(c['type'])], src)
+        expect('condition', [norm_ns(c['condition'])], src)
         expect_conditions(c.get('terms'), src)
         if c.get('term'):
             expect_conditions([c['term']], src)
@@ -574,7 +551,7 @@ def stack_variant(stack, functions=()):
     if isinstance(inst, str) and base == 'goat_horn':
         return '%s (%s)' % (name, or_list(instrument_names(inst)))
     for fn in functions:
-        f = fn_name(fn)
+        f = fn.get('function', '').split(':')[-1]
         if f == 'set_potion' and fn.get('id'):
             return potion_label(base, fn['id'])
         if f == 'set_instrument' and fn.get('options'):
@@ -809,7 +786,7 @@ def pool_count(pool_fns):
     """The count a pool's own set_count gives every stack it yields (pool functions run after the
     entry's, so it replaces the entry's count), or None."""
     for fn in pool_fns:
-        if fn_name(fn) == 'set_count' and not fn.get('add'):
+        if fn.get('function', '').split(':')[-1] == 'set_count' and not fn.get('add'):
             return fn.get('count')
     return None
 
@@ -820,7 +797,7 @@ def loot_enchantments(ent, comps, fns, src):
     ('enchant_options', with 'enchant_from' the #tag or list the table names)."""
     fixed = dict(comps.get('minecraft:stored_enchantments') or comps.get('minecraft:enchantments') or {})
     for fn in fns:
-        f = fn_name(fn)
+        f = fn.get('function', '').split(':')[-1]
         if f not in ('enchant_randomly', 'enchant_with_levels', 'set_enchantments'):
             continue
         expect('loot enchant function', fn, src)
@@ -843,18 +820,16 @@ def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
     for e in entries:
         expect('loot entry', e, src)
         expect('loot entry type', [norm_ns(e.get('type', ''))], src)
-        efns = functions(e.get('modifier'))
-        expect('loot function', (norm_ns(fn.get('type', '')) for fn in efns), src)
-        for fn in efns:
-            expect_conditions(fn.get('condition'), src)
-        expect_conditions(e.get('condition'), src)
-        econd = conditions(e.get('condition'))
+        expect('loot function', (norm_ns(fn.get('function', '')) for fn in e.get('functions', [])), src)
+        for fn in e.get('functions', []):
+            expect_conditions(fn.get('conditions'), src)
+        expect_conditions(e.get('conditions'), src)
         t = e.get('type', '').split(':')[-1]
         if t == 'item':
             stack = {'id': e['name'], 'components': {}}
             count = None
-            for fn in efns:
-                fname = fn_name(fn)
+            for fn in e.get('functions', []):
+                fname = fn.get('function', '').split(':')[-1]
                 if fname == 'set_components':
                     stack['components'].update(fn.get('components', {}))
                 elif fname == 'set_name':
@@ -865,8 +840,8 @@ def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
                     stack['components']['minecraft:lore'] = fn.get('lore')
             if pool_count(pool_fns) is not None:
                 count = pool_count(pool_fns)
-            fns = efns + list(pool_fns)  # pool functions apply to every entry
-            fnames = {fn_name(fn) for fn in fns}
+            fns = e.get('functions', []) + list(pool_fns)  # pool functions apply to every entry
+            fnames = {fn.get('function', '').split(':')[-1] for fn in fns}
             if fnames & {'enchant_randomly', 'enchant_with_levels', 'set_enchantments'} and norm_id(stack['id']) == 'minecraft:book':
                 stack['id'] = 'minecraft:enchanted_book'  # enchanting a book turns it into an enchanted book
             if 'exploration_map' in fnames and norm_id(stack['id']) == 'minecraft:map':
@@ -874,7 +849,7 @@ def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
             key = register(stack, src, 'loot')
             ent = {'item': key, 'id': norm_id(stack['id']), 'weight': e.get('weight', 1),
                    'quality': e.get('quality'), 'count': count,
-                   'conditions': econd, 'functions': [f.get('type') for f in efns],
+                   'conditions': e.get('conditions'), 'functions': [f.get('function') for f in e.get('functions', [])],
                    **pool_ctx}
             variant = stack_variant(stack, fns)
             if variant:
@@ -891,13 +866,13 @@ def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
             out.append(ent)
         elif t == 'loot_table':
             # set_count on a loot_table entry applies to every stack the nested table yields
-            count = next((fn.get('count') for fn in efns
-                          if fn_name(fn) == 'set_count' and not fn.get('add')), None)
+            count = next((fn.get('count') for fn in e.get('functions', [])
+                          if fn.get('function', '').split(':')[-1] == 'set_count' and not fn.get('add')), None)
             if pool_count(pool_fns) is not None:
                 count = pool_count(pool_fns)  # e.g. the sweet berry bush: 2-3 berries from matcha:food/sweet_berries
             out.append({'loot_table': e.get('value') if isinstance(e.get('value'), str) else e.get('name'),
                         'count': count, 'weight': e.get('weight', 1), 'quality': e.get('quality'),
-                        'conditions': econd, **pool_ctx})
+                        'conditions': e.get('conditions'), **pool_ctx})
         elif t in ('alternatives', 'group', 'sequence'):
             # the children share the parent's single weighted slot in the pool (an alternatives entry
             # gives only its first child whose conditions pass, e.g. Silk Touch or else the normal drop)
@@ -906,37 +881,80 @@ def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
             slot = '%s/%d' % (pool_ctx.get('pool'), start)
             for child in out[start:]:  # nested alternatives flatten into the outer slot, in order
                 child['slot'], child['slot_kind'], child['weight'] = slot, t, e.get('weight', 1)
-                if econd:
-                    child['conditions'] = econd + (child.get('conditions') or [])
+                if e.get('conditions'):
+                    child['conditions'] = (e.get('conditions') or []) + (child.get('conditions') or [])
         elif t == 'tag':
-            out.append({'tag': e.get('name'), 'weight': e.get('weight', 1), 'conditions': econd, **pool_ctx})
+            out.append({'tag': e.get('name'), 'weight': e.get('weight', 1), 'conditions': e.get('conditions'), **pool_ctx})
         elif t == 'empty':
-            out.append({'empty': True, 'weight': e.get('weight', 1), 'conditions': econd, **pool_ctx})
+            out.append({'empty': True, 'weight': e.get('weight', 1), 'conditions': e.get('conditions'), **pool_ctx})
 
 
 def parse_loot(d, src):
     out = []
     expect('loot table', d, src)
-    expect('loot function', (norm_ns(fn.get('type', '')) for fn in functions(d.get('modifier'))), src)
+    expect('loot function', (norm_ns(fn.get('function', '')) for fn in d.get('functions', [])), src)
     for i, p in enumerate(d.get('pools', [])):
         expect('loot pool', p, src)
-        pfns = functions(p.get('modifier'))
-        expect('loot function', (norm_ns(fn.get('type', '')) for fn in pfns), src)
-        expect_conditions(p.get('condition'), src)
+        expect('loot function', (norm_ns(fn.get('function', '')) for fn in p.get('functions', [])), src)
+        expect_conditions(p.get('conditions'), src)
         ents = p.get('entries', [])
         total = sum(e.get('weight', 1) for e in ents)
         ctx = {'pool': i, 'rolls': p.get('rolls', 1), 'bonus_rolls': p.get('bonus_rolls', 0),
-               'pool_total_weight': total, 'pool_conditions': conditions(p.get('condition'))}
-        walk_entries(ents, ctx, out, src, pfns)
+               'pool_total_weight': total, 'pool_conditions': p.get('conditions')}
+        walk_entries(ents, ctx, out, src, p.get('functions') or ())
     return out
 
 
+VANILLA_ITEM_IDS = set(load(os.path.join(ROOT, 'source', 'vanilla-summary', 'item_components', 'data.json')))
+
+
+def loot_load_error(node):
+    """Why the game would refuse to load this loot table, or None: an item entry naming an item that
+    doesn't exist (1.12.4's fox.json names a loot table as an item), or a loot_table entry without its
+    "value" (the same file uses "name"). The game drops a table that fails to decode as a whole."""
+    if isinstance(node, list):
+        return next((e for e in map(loot_load_error, node) if e), None)
+    if not isinstance(node, dict):
+        return None
+    t = norm_ns(node.get('type', '')) if isinstance(node.get('type'), str) else ''
+    if t == 'minecraft:item' and 'name' in node:
+        ns, _, path = node['name'].partition(':') if ':' in node['name'] else ('minecraft', '', node['name'])
+        if ns != 'minecraft' or path not in VANILLA_ITEM_IDS:
+            return 'item entry names %s, which is not an item' % node['name']
+    if t == 'minecraft:loot_table' and 'value' not in node:
+        return 'loot_table entry without "value"'
+    for k in ('pools', 'entries', 'children'):
+        err = loot_load_error(node.get(k))
+        if err:
+            return err
+    return None
+
+
 LOOT = {}
+UNLOADABLE = {}  # loot tables the game can't parse
 for f in sorted(glob.glob(os.path.join(DP, '*', 'loot_table', '**', '*.json'), recursive=True)):
     ns = os.path.relpath(f, DP).split(os.sep)[0]
     lid = ns + ':' + os.path.relpath(f, os.path.join(DP, ns, 'loot_table'))[:-5]
-    d = load(f)
-    LOOT[lid] = {'id': lid, 'src': rel(f), 'type': d.get('type'), 'entries': parse_loot(d, rel(f)),
+    try:
+        d = load(f)
+    except json.JSONDecodeError as err:
+        # Not valid JSON (1.12.4's fishing/junk.json has a trailing comma). The game logs the error and
+        # loads nothing for this table, so it drops nothing. Its entries still define the pack's items
+        # (Frog, Tadpole), so read them past the commas for that, then give the table no entries and
+        # take it out of the items' sources.
+        print('loot table %s is not valid JSON (%s): the game loads it as empty' % (rel(f), err), file=sys.stderr)
+        UNLOADABLE[lid] = {'src': rel(f), 'error': str(err)}
+        with open(f, encoding='utf-8') as fh:
+            parse_loot(json.loads(re.sub(r',(\s*[}\]])', r'\1', fh.read())), rel(f))
+        for it in ITEMS.values():
+            it['sources'] = [x for x in it['sources'] if x['src'] != rel(f)]
+        d = {}
+    if lid not in UNLOADABLE and loot_load_error(d):
+        err = loot_load_error(d)
+        print('loot table %s can\'t load (%s): the game loads it as empty' % (rel(f), err), file=sys.stderr)
+        UNLOADABLE[lid] = {'src': rel(f), 'error': err}
+    LOOT[lid] = {'id': lid, 'src': rel(f), 'type': d.get('type'),
+                 'entries': [] if lid in UNLOADABLE else parse_loot(d, rel(f)),
                  'overrides_vanilla': ns == 'minecraft' and os.path.exists(
                      os.path.join(VDATA, 'loot_table', os.path.relpath(f, os.path.join(DP, ns, 'loot_table'))))}
     base = lid.rsplit('/', 1)[-1]
@@ -980,19 +998,19 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
             continue
         t = load(tfile)
         expect('villager trade', t, rel(tfile))
-        mods = functions(t.get('given_item_modifier'))
-        expect('loot function', (norm_ns(m.get('type', '')) for m in mods), rel(tfile))
+        mods = t.get('given_item_modifiers') or []
+        expect('loot function', (norm_ns(m.get('function', '')) for m in mods), rel(tfile))
         expect_conditions([t['merchant_predicate']] if t.get('merchant_predicate') else [], rel(tfile))
-        if any(fn_name(m) == 'discard' for m in mods):
+        if any(m.get('function', '').split(':')[-1] == 'discard' for m in mods):
             continue  # placeholder trade the game throws away (levels with no real trades)
         for m in mods:
-            if fn_name(m) == 'exploration_map' and 'gives' in t and norm_id(t['gives'].get('id', '')) == 'minecraft:map':
+            if m.get('function', '').split(':')[-1] == 'exploration_map' and 'gives' in t and norm_id(t['gives'].get('id', '')) == 'minecraft:map':
                 t['gives']['id'] = 'minecraft:filled_map'  # an explorer map is a filled map in-game
-            if fn_name(m) == 'set_name' and 'gives' in t:
+            if m.get('function', '').split(':')[-1] == 'set_name' and 'gives' in t:
                 t['gives'].setdefault('components', {})['minecraft:item_name' if m.get('target') == 'item_name' else 'minecraft:custom_name'] = m.get('name')
         biome = None
         mp = t.get('merchant_predicate') or {}
-        if mp.get('type', '').endswith('location_check'):
+        if mp.get('condition', '').endswith('location_check'):
             biome = (mp.get('predicate') or {}).get('biomes')
         for k in ('wants', 'gives', 'additional_wants'):
             if k in t:
@@ -1051,7 +1069,7 @@ def enchantment_relations():
                 for y in x:
                     walk(y)
             elif isinstance(x, dict):
-                if fn_name(x) == 'set_enchantments' and x.get('add'):
+                if x.get('function', '').split(':')[-1] == 'set_enchantments' and x.get('add'):
                     ench = {norm_id(k): v for k, v in (x.get('enchantments') or {}).items()}
                     old = [k for k, v in ench.items() if v == -1]
                     new = [k for k, v in ench.items() if v == 1]
@@ -1138,8 +1156,8 @@ def mob_predicate(pid):
     path = os.path.join(DP, ns, 'predicate', p + '.json')
     d, src = load(path), rel(path)
     expect('mob predicate', d.keys(), src)
-    if d.get('type') != 'minecraft:entity_properties' or d.get('entity') != 'this':
-        UNKNOWN[('mob predicate', '%s on %s' % (d.get('type'), d.get('entity')))].add(src)
+    if d.get('condition') != 'minecraft:entity_properties' or d.get('entity') != 'this':
+        UNKNOWN[('mob predicate', '%s on %s' % (d.get('condition'), d.get('entity')))].add(src)
     test = d.get('predicate', {})
     expect('mob predicate test', test.keys(), src)
     out = {'src': src}
@@ -1601,6 +1619,7 @@ data = {
     'blocked_vanilla': sorted(BLOCKED),
     'blocked_outputs': sorted(BLOCKED_OUTPUTS),
     'loot': LOOT,
+    'unloadable_loot': UNLOADABLE,
     'trades': {p: dict(v) for p, v in TRADES.items()},
     'professions': PROF_NAME,
     'enchantments': ENCH,
