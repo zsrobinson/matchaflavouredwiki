@@ -16,14 +16,17 @@ The release notes list four fixes:<ref>{{Cite changelog|1.12.4|quote=Armour/Tool
 * [[Intrinsic]] enchantments on armor and tools work again. In 1.12.3 the advancement that applies them looked for the wrong kind of data on the item, so it never fired. Items get their intrinsics as soon as the inventory changes (picking up or moving any item); they don't need <code>/trigger update_item</code>.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/intrinsic_enchants_obtained.json}}</ref>
 * [[Sleeping]] in multiplayer: a second player getting into bed while another was already asleep was counted as awake at once. They now sleep normally.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/tick_sleeping_player.mcfunction}}</ref>
 * [[Chocolate]] stacks again: the chocolate made in an [[oven]] or on a campfire was missing its stack size, unlike the chocolate from loot.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/chocolate.json}}</ref>
-* The [[Fox Pelt|fox pelt]] textures were fixed.
+* The [[Fox Pelt|fox pelt]] models were fixed. The fox loot table was rewritten for this, but the new table can't be loaded, so foxes drop nothing (see below).<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref>
 
 == Other changes ==
 * Items carry a version number, and an item updater (the <code>matcha_item</code> namespace) brings old copies of every pack item up to date when they are in the player's hands. See [[Updating items]].<ref>{{Source|MF_datapack/data/matcha_item/advancement/trigger/asylum_seeker.json}}</ref>
 * The archaeology loot of cold and warm ocean ruins names the rusty axe through a shared loot table.<ref>{{Source|MF_datapack/data/matcha/loot_table/equipment/misc/rusty_axe.json}}</ref>
 
 == Bugs ==
-The fishing junk table of this release isn't valid JSON, so the game can't load it and junk catches give nothing. See [[Known bugs]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
+Two loot tables of this release can't be loaded by the game, so they give nothing. See [[Known bugs]].
+* The fishing junk table isn't valid JSON (a trailing comma), so junk catches give nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
+* The fox table names a loot table as an item and uses the wrong key for another, so foxes drop no pelt and no [[Raw Flesh|raw flesh]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref>
+The new [[Updating items|item updater]] also can't restore enchantments, because it calls functions under a folder that doesn't exist.
 
 == References ==
 {{reflist}}

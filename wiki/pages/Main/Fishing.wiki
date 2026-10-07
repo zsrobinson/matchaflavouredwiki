@@ -122,7 +122,7 @@ Fish heal only once cooked. Raw fish can still be eaten, but they restore no hea
 |}
 
 == Other sources of fishing loot ==
-Two other loot tables roll the fishing table 3 times each: the [[Village|fisherman's house]] chest and the {{MCW|Elder Guardian|elder guardian}}'s drops. The biome is the one at the chest or at the elder guardian's death. Neither is a fishing bobber, so these rolls never give treasure.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json}}</ref>
+Two other loot tables roll the fishing table 3 times each: the [[Village|fisherman's house]] chest and the {{MCW|Elder Guardian|elder guardian}}'s drops. The biome is the one at the chest or at the elder guardian's death. Neither is a fishing bobber, so these rolls never give treasure. The pack's [[abandoned village]]s have no loot chests, so the fisherman's house table is not normally used.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json}}</ref>
 
 == Sounds ==
 {{Main|Fishing sounds}}
