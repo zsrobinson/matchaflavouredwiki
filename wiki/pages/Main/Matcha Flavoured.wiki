@@ -103,7 +103,7 @@ The developer responded to the reception in a second video, "How Criticism chang
 * The developer renamed emeralds to obols simply because "I like that more".<ref>{{Cite video|quote=Emeralds have been renamed to obols because I like that more.}}</ref>
 * The 1.10 release notes list "Removed Herobrine" among the major changes.
 * The music disc "Golden", composed by Ciren, was added in 1.0 in memory of the developer's dog, Dakota.<ref>{{Source|MF_datapack/CREDITS.txt}}</ref>
-* In 1.12.2, the chat message shown when the pack loads still reports version 1.12.1, although the internal version number is 1122.<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+* In 1.12.2, the chat message shown when the pack loads still reports version 1.12.1, although the internal version number is 1122.<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction|at=f6c6094c6bce90ccf9e0defcfaed315088bda62c}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction|at=f6c6094c6bce90ccf9e0defcfaed315088bda62c}}</ref>
 
 == See also ==
 * [[Guide for new players]]

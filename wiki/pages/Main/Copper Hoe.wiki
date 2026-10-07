@@ -12,7 +12,7 @@ A '''copper hoe''' is a [[Tools#Hoe|hoe]] of the [[Copper equipment|copper]] tie
 == Usage ==
 
 === Farming and mining ===
-The copper hoe breaks hoe blocks at speed {{Value|Copper Hoe|miningspeed}} (vanilla: 5) and has {{Value|Copper Hoe|durability}} durability. Hoes in Matcha Flavoured also break wool (including wool slabs and stairs), carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
+The copper hoe breaks hoe blocks at speed {{Value|Copper Hoe|miningspeed}} (vanilla: 5) and has {{Value|Copper Hoe|durability}} durability. Hoes in Matcha Flavoured also break wool, carpets, glow lichen and [[Phosphor lamps|phosphor lamps]] quickly.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/hoe.json}}</ref>
 
 === Combat ===
 It deals {{Value|Copper Hoe|damage}} damage at an attack speed of {{Value|Copper Hoe|attackspeed}}.

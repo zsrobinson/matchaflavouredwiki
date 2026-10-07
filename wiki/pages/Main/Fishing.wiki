@@ -138,7 +138,7 @@ Each catch plays a sound for its category: one per star rating, one each for jun
 |}
 <ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/catch_everything.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/trade_fish.json}}</ref>
 
-The [[Angler's Almanac]] adds its own advancement tab with an entry for every catch. Before 1.12.3 the pufferfish entry in Hot Saltwater couldn't be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>
+The [[Angler's Almanac]] adds its own advancement tab with an entry for every catch. Before 1.12.3 the pufferfish entry in Hot Saltwater couldn't be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref> In 1.12.4 the junk entries, apart from Fish Bones, can't be unlocked, because nothing can be caught from the junk table (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>
 
 == History ==
 {{History|

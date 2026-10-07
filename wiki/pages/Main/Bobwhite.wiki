@@ -1,29 +1,29 @@
+{{Upcoming|the 26.3 port|type=page}}
 {{Infobox
 |title=Bobwhite
-|invimage=Normal Bobwhite
 |type=Unfinished chicken variant
 }}
-The '''bobwhite''' is an unfinished chicken variant in [[Matcha Flavoured]]. The 1.12.3 release contains only leftovers of it: three debug spawn eggs in loot tables, the resource pack's spawn egg model and sounds, and names for them. There is no way to meet a bobwhite in a normal world.
+The '''bobwhite''' is an unfinished chicken variant in [[Matcha Flavoured]]. 1.12.4, the current release for ''Minecraft'' 26.2, has nothing of it but a few names in the language file: subtitles reading "Bobwhite Sings" and "Bobwhite Cries", and an item called "Small Egg" (<code>item.kleispack.bobwhite_egg</code>), which nothing uses.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> The 1.12.3 alpha for 26.3, and the 26.3 port that continues it, add more leftovers: three debug spawn eggs in loot tables, a spawn egg model and sounds. There is no way to meet a bobwhite in a normal world in either version.
 
 == Obtaining ==
-Three loot tables in the datapack's <code>debug/chicken</code> folder each give a chicken spawn egg with the bobwhite's spawn egg model and a custom name, for use with <code>/loot give</code> only. No chest, mob or trade uses them.<ref>{{Source|MF_datapack/data/matcha/loot_table/debug/chicken/normal_bobwhite.json}}</ref>
+In the 26.3 port, three loot tables in the datapack's <code>debug/chicken</code> folder each give a chicken spawn egg with the bobwhite's spawn egg model and a custom name, for use with <code>/loot give</code> only. No chest, mob or trade uses them.<ref>{{Source|MF_datapack/data/matcha/loot_table/debug/chicken/normal_bobwhite.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 {| class="wikitable"
 ! Egg !! Loot table !! Spawns
 |-
-| {{ItemLink|Normal Bobwhite}} || <code>matcha:debug/chicken/normal_bobwhite</code> || An adult chicken tagged <code>wild</code> at 0.8 times the normal size
+| Normal Bobwhite || <code>matcha:debug/chicken/normal_bobwhite</code> || An adult chicken tagged <code>wild</code> at 0.8 times the normal size
 |-
-| {{ItemLink|Mama Bobwhite}} || <code>matcha:debug/chicken/mama_bobwhite</code> || An adult chicken tagged <code>mama</code>
+| Mama Bobwhite || <code>matcha:debug/chicken/mama_bobwhite</code> || An adult chicken tagged <code>mama</code>
 |-
-| {{ItemLink|Baby Bobwhite}} || <code>matcha:debug/chicken/baby_bobwhite</code> || A chick tagged <code>wild</code> whose age is locked, so it never grows up
+| Baby Bobwhite || <code>matcha:debug/chicken/baby_bobwhite</code> || A chick tagged <code>wild</code> whose age is locked, so it never grows up
 |}
-Each egg asks for the chicken variant <code>matcha:bobwhite</code> and the sound variant <code>matcha:bobwhite</code>.<ref>{{Source|MF_datapack/data/matcha/loot_table/debug/chicken/baby_bobwhite.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/debug/chicken/mama_bobwhite.json}}</ref> The release has no definition for either variant, because the files that defined the chicken variants were removed before it, so the eggs cannot make a bobwhite.<ref>{{Source|MF_datapack/data/matcha/loot_table/debug/chicken/normal_bobwhite.json}}</ref>
+Each egg asks for the chicken variant <code>matcha:bobwhite</code> and the sound variant <code>matcha:bobwhite</code>.<ref>{{Source|MF_datapack/data/matcha/loot_table/debug/chicken/baby_bobwhite.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/debug/chicken/mama_bobwhite.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref> The port has no definition for either variant, so the eggs cannot make a bobwhite.<ref>{{Source|MF_datapack/data/matcha/loot_table/debug/chicken/normal_bobwhite.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
 
 == Resource pack ==
-The resource pack still has the bobwhite's sound events (ambient with four calls, and hurt), whose subtitles read "Bobwhite Sings" and "Bobwhite Cries", and a name for an item called "Small Egg" (<code>item.kleispack.bobwhite_egg</code>).<ref>{{Source|MF_resourcepack/assets/matcha/sounds.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> No datapack file gives that egg. The language file also names duck and seagull subtitles and green and teal eggs, in the same unfinished set.
+The 26.3 port's resource pack has the bobwhite's sound events (ambient with four calls, and hurt) and its spawn egg model.<ref>{{Source|MF_resourcepack/assets/matcha/sounds.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref><ref>{{Source|MF_resourcepack/assets/matcha/items/bobwhite_spawn_egg.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref> No datapack file gives the "Small Egg". The language file also names duck and seagull subtitles and green and teal eggs, in the same unfinished set.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
 
 == History ==
 {{History|
-{{History line|1.12.3|The debug spawn egg loot tables for the bobwhite were added. The files that defined the chicken variants and the chicken functions were removed.}}
+{{History line|Upcoming|2=The debug spawn egg loot tables, spawn egg model and sounds for the bobwhite were added in the 1.12.3 alpha for 26.3.}}
 }}
 
 == References ==

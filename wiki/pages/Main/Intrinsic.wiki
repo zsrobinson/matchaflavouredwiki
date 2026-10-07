@@ -6,7 +6,7 @@
 }}
 An '''intrinsic''' is a special ability hidden in an item. For [[food]], it is the status [[effect]] that an [[ingredient]] carries: raw, the ingredient does nothing special, but cooking it "awakens" the intrinsic, and every dish made from it grants the same effect for longer the more work goes into it.<ref>{{Cite video|quote=In Matcha Flavored, most ingredients have special abilities. I call them intrinsics. Cooking an ingredient can awaken whatever intrinsic is hidden in the raw food.}}</ref> [[Pumpkin]], for example, has no effect on its own, but [[Baked Pumpkin|baked pumpkin]] gives {{EffectLink|Resistance}} for {{Value|Baked Pumpkin|duration|effect=Resistance}}, [[Pumpkin Jam|pumpkin jam]] for {{Value|Pumpkin Jam|duration|effect=Resistance}} and a [[Pumpkin Empanada|pumpkin empanada]] for {{Value|Pumpkin Empanada|duration|effect=Resistance}}.
 
-The pack also uses the word for the built-in abilities of equipment, such as the [[Warding|warding]] of silver weapons or the auto-smelting of [[Adamant equipment|adamant tools]]. Those are covered on the pages of the equipment and on [[Set bonus]]; this page covers ingredients.
+The pack also uses the word for the built-in abilities of equipment, such as the [[Warding|warding]] of silver weapons or the auto-smelting of [[Adamant equipment|adamant tools]]. Those are covered on the pages of the equipment and on [[Set bonus]]; this page covers ingredients. Smithed alloy equipment, and the same equipment found as loot, carries its intrinsics stored on the item, and the pack turns them into working enchantments when the item is in a player's inventory. In 1.12.3 this step never ran, so armor and tool intrinsics did nothing until 1.12.4 fixed it.<ref>{{Cite changelog|1.12.4|quote=Armour/Tool Intrinsics not working}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/intrinsic_enchants_obtained.json}}</ref>
 
 == Mechanics ==
 Most intrinsic ingredients have at least three dishes:<ref>{{Cite video|quote=All ingredients with intrinsics have at least three corresponding foods. Simple preparation, preservation, and a meal.}}</ref>
@@ -93,6 +93,7 @@ Unlike other dishes, the oven meals' effects are set per meal rather than by the
 {{History|
 {{History line|0.7-alpha|Glow berry, sweet berry, apple, pumpkin, chorus fruit and cocoa dishes now require the cooked ingredient (for example baked apples instead of apples).}}
 {{History line|1.12.1-alpha|Baked pumpkin's Resistance extended from 10 seconds to 30 seconds. Pad Thai's Night Vision extended from 5:00 to 10:00. [[Pickled Warped Fungus|Pickled warped fungus]] became throwable.}}
+{{History line|1.12.4|2=Fixed the intrinsics of smithed armor and tools not being applied (see [[Set bonus#Applying intrinsics after smithing|Set bonus]]). Food intrinsics were not affected.}}
 }}
 
 == Trivia ==
