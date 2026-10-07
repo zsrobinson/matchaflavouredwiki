@@ -31,14 +31,14 @@ Items made in earlier versions can appear broken after the namespace move of 1.1
 * [[Quartz]] generates much higher and in much greater amounts.
 * [[Hellspore]] (nether wart) generates in nether wastes and soul sand valleys, so [[Nether Fortress|fortresses]] are only needed for wither skeletons and loot.
 * Beaches generate blue orchids and cornflowers.
-* The dappled forest's canopy moved up and is now closed, inspired by Conure's video of the same concept.
-* Swamps were made swampier, with a new tree type, shelf mushrooms and bushes.
+* The dappled forest's canopy moved up and is now closed, inspired by Conure's video of the same concept. This is only in the 26.3 alpha: the dappled forest is a ''Minecraft'' 26.3 biome.
+* Swamps were made swampier, with a new tree type, shelf mushrooms and bushes. This is also only in the 26.3 alpha; the 26.2 release's swamps are unchanged from 1.12.2.<ref>{{Source|MF_datapack/data/matcha/worldgen/feature/swamp_oak.json|at=95409aa6acc3f74d5673e305c92da8e37a30d02d}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/swamp.json|at=d7482cfd1cb9fbd4c633a6d030a954950c70f4d2}}</ref> See [[Upcoming features]].
 
 == Technical changes ==
 * Everything moved into the <code>matcha</code> namespace, with some exceptions, and the data and resource pack were split into two downloads.
 * More tooltips are translatable. Some items were still missed, because a datapack must repeat an item in many places (a crystal heart is in loot tables, several villager trades and a recipe).
 * The developer wants to move all non-vanilla items into the <code>matcha</code> namespace using item models over vanilla items, as was done for spawn eggs, and eventually move alloys to spawn eggs.
-* The [[Abbey]] and [[Papal Outpost]] were not moved over yet; they are for a planned structure update. Chest, spawner and similar loot tables are unfinished, and [[Village|village]] loot tables are empty because everything broke in 26.3; the developer plans to add them back, nerfed, since villages "were never meant to be a part of this pack".<ref>{{Cite changelog|1.12.3|quote=Village Loottables are empty}}</ref>
+* The [[Abbey]] and [[Papal Outpost]] were not moved over yet; they are for a planned structure update. Chest, spawner and similar loot tables are unfinished, and [[Village|village]] loot tables are empty because everything broke in 26.3; the developer plans to add them back, nerfed, since villages "were never meant to be a part of this pack".<ref>{{Cite changelog|1.12.3|quote=Village Loottables are empty}}</ref> This applies to the 26.3 alpha; the 26.2 release kept its village loot tables.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_tannery.json|at=d7482cfd1cb9fbd4c633a6d030a954950c70f4d2}}</ref>
 
 == Credits ==
 The release notes credit, in addition to the earlier versions: Hashiru (optimisations), NamlessJU (code, translations), Nat (translation lead), Imtlx (the new [[Angler's Almanac]], [[Fishing sounds]], translation), Vee Vaicekauskas (background music), DeBlezyBestie (music discs), Bingbongbooper (food ideas), HapppySpud, Linkershim, Pepurion, Fayranchia, ReinIsNOTaDev, Fpekal (a large part of the 26.3 port), FloofShade, EastMonster, Voxybuns, milo256 and the translation volunteers.

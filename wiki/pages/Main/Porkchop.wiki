@@ -19,7 +19,7 @@ The item is a vanilla porkchop with a changed model (<code>matcha:porkchop_class
 
 == History ==
 {{History|
-{{History line|1.12.3|Added a loot table, <code>matcha:treasure/porkchop_classic</code>, to give the item with <code>/loot</code>. The <code>update_item</code> trigger now converts old classic porkchops to the new model.<ref>{{Source|MF_datapack/data/matcha/item_modifier/porkchop_classic.json}}</ref>}}
+{{History line|1.12.3|Added a loot table, <code>matcha:treasure/porkchop_classic</code>, to give the item with <code>/loot</code>. The <code>update_item</code> trigger now converts old classic porkchops to the new model.<ref>{{Source|MF_datapack/data/matcha/item_modifier/porkchop_classic.json}}</ref> The 26.2 release's table already used the 26.3 <code>modifier</code> key, so there it gave a plain raw porkchop.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/porkchop_classic.json|at=d7482cfd1cb9fbd4c633a6d030a954950c70f4d2}}</ref>}}
 }}
 
 == See also ==
