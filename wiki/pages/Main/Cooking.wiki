@@ -67,6 +67,7 @@ Recipe unlocks are revoked when a player joins with a newer pack version, so cha
 {{History line|1.11|Restored the recipes, which had been accidentally deleted in 1.10.<ref>{{Cite changelog|1.11|quote=I accidentally deleted all the recipes...sorry}}</ref>}}
 {{History line|1.12.1-alpha|Cactus can be cooked again. Copper, ancient debris and stone can no longer be smelted in the oven. Cooking, kilning and blasting recipes reorganized.}}
 {{History line|1.12.3|Kindling cooks pumpkin curry, popped chorus fruit and dried kelp too, so it matches the oven. Small fish and large fish each cook with one recipe. The kiln chars any fish.}}
+{{History line|Upcoming|2=In the 26.3 port (first in the 1.12.3 alpha for 26.3), mud kiln recipes take twice as long (10 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>}}
 }}
 
 == See also ==

@@ -13,6 +13,11 @@ A potato becomes a charred potato in a mud kiln in {{Value|Charred Potato|cook_t
 === Food ===
 Eating a charred potato takes {{Value|Charred Potato|eat_time}} and heals {{Value|Charred Potato|heals}}.
 
+== History ==
+{{History|
+{{History line|Upcoming|2=In the 26.3 port (first in the 1.12.3 alpha for 26.3), firing takes 10 seconds instead of 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_potato.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>}}
+}}
+
 == See also ==
 * [[Cooking#Charring]]
 * [[Charred Meat]]

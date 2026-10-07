@@ -7,7 +7,7 @@
 == Obtaining ==
 
 === Breaking ===
-Chorus plants drop 0 or 1 of the pack's chorus fruit, as in vanilla. [[Fortune]] and the Electrum tool [[intrinsic]] each add 0 to 1 more fruit per level.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/chorus_plant.json}}</ref>
+Chorus plants drop 0 or 1 of the pack's chorus fruit, as in vanilla. [[Fortune]] and the Electrum tool [[intrinsic]] each add 0 to N more fruit at level N.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/chorus_plant.json}}</ref>
 
 {{Upcoming|the 26.3 port}}
 In the 1.12.3 alpha for 26.3, and in the 26.3 port, the table applies the two bonuses first and then sets the count to 0–1, which overrides them, as in 1.12.2.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/chorus_plant.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
