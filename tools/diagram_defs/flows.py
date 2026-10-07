@@ -295,7 +295,9 @@ def hell_bound_book():
     need(r'give @[sp] (?:minecraft:)?%s (\d+)' % ash_id, conv, 'Raw Estus turns into Estus Ash')
     need(r'clear @[sp] (?:minecraft:)?%s (\d+)' % raw_id, conv, 'Raw Estus cleared on pickup')
     raw_mobs, ash_mobs = one(mobs('Raw Estus'), 'undead dropping Raw Estus'), one(mobs('Estus Ash'), 'undead dropping Estus Ash')
-    void_mobs = one(sorted(mob_name(t) for t in loot_tables_giving(item='Stable Void') if t.startswith('minecraft:entities/')),
+    void_tables = set(loot_tables_giving(item='Stable Void'))  # mobs drop it directly or through a shared table
+    void_tables |= {t for v in list(void_tables) for t in loot_tables_giving(table=v)}
+    void_mobs = one(sorted(mob_name(t) for t in void_tables if t.startswith('minecraft:entities/')),
                     'mobs dropping Stable Void')
     benzene = ingredients(recipe('Benzene', 'Crafting Table'))
     stab = ingredients(recipe('Stabilized Estus', 'Crafting Table'))

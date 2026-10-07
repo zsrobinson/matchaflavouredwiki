@@ -762,7 +762,7 @@ BIOME_TAGS = DATA['biome_tags']  # biome tag -> biome ids
 
 def ctype(c):
     """A loot condition's type, bare: a term of all_of / any_of can also be a predicate's name."""
-    return (c if isinstance(c, str) else c.get('type', '')).split(':')[-1]
+    return (c if isinstance(c, str) else c.get('condition', '')).split(':')[-1]
 
 
 def entry_biome_list(e):
@@ -839,7 +839,7 @@ def cond_notes(conds):
             inner = cond_notes([c.get('term')])[1]
             if inner:
                 notes.append('not ' + inner[0])
-        elif t == 'match_block':
+        elif t == 'block_state_property':
             notes.append('block state property')
         elif t == 'survives_explosion':
             continue
@@ -2328,7 +2328,7 @@ def fishing_entries():
     ents = [e for e in LOOT[FISHING]['entries'] if not e.get('empty')]
     for e in ents:
         # the odds below know only these; anything else has to be taught to them, not skipped
-        other = [c.get('type') for c in e.get('conditions') or []
+        other = [c.get('condition') for c in e.get('conditions') or []
                  if ctype(c) != 'location_check' and not open_water_only({'conditions': [c]})]
         if other or e.get('pool') != 0 or e.get('rolls') != 1 or e.get('pool_conditions'):
             raise SystemExit('generate.py: %s changed shape (%s); update the fishing odds' % (FISHING, other or 'pools'))

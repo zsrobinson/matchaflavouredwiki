@@ -17,22 +17,6 @@
 | <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
 | {{Crafting|A1=Any Wool|Output=String,4|shapeless=1}}
 |-
-| [[Purple Carpet]]
-| [[Purple Wool]]
-| {{Stonecutter|Input=Purple Wool|Output=Purple Carpet,4}}
-|-
-| [[Purple Cushion]]
-| [[Purple Wool]]
-| {{Stonecutter|Input=Purple Wool|Output=Purple Cushion,2}}
-|-
-| [[Purple Wool Slab]]
-| [[Purple Wool]]
-| {{Stonecutter|Input=Purple Wool|Output=Purple Wool Slab,2}}
-|-
-| [[Purple Wool Stairs]]
-| [[Purple Wool]]
-| {{Stonecutter|Input=Purple Wool|Output=Purple Wool Stairs}}
-|-
 | [[Black Wool]] <small>(vanilla recipe)</small>
 | [[Black Dye]] +<br />[[White Wool]] or [[Orange Wool]] or [[Magenta Wool]] or [[Light Blue Wool]] or [[Yellow Wool]] or [[Lime Wool]] or [[Pink Wool]] or [[Gray Wool]] or [[Light Gray Wool]] or [[Cyan Wool]] or [[Purple Wool]] or [[Blue Wool]] or [[Brown Wool]] or [[Green Wool]] or [[Red Wool]]
 | {{Crafting|A1=Black Dye|B1=White Wool;Orange Wool;Magenta Wool;Light Blue Wool;Yellow Wool;Lime Wool;Pink Wool;Gray Wool;Light Gray Wool;Cyan Wool;Purple Wool;Blue Wool;Brown Wool;Green Wool;Red Wool|Output=Black Wool|shapeless=1}}
@@ -98,19 +82,11 @@
 | {{Crafting|A1=Stick|A2=Stick|A3=Stick|B1=Stick|B2=Any Wool|B3=Stick|C1=Stick|C2=Stick|C3=Stick|Output=Painting}}
 |-
 | {{MCW|Purple Bed}} <small>(vanilla recipe)</small>
-| 3 × [[Purple Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks, Poplar Planks">Any planks</span>
+| 3 × [[Purple Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
 | {{Crafting|A1=Purple Wool|A2=Any Planks|B1=Purple Wool|B2=Any Planks|C1=Purple Wool|C2=Any Planks|Output=Purple Bed}}
 |-
 | {{MCW|Purple Harness}} <small>(vanilla recipe)</small>
 | 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Purple Wool]]
 | {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Purple Wool|C1=Sturdy Leather|C2=Glass|Output=Purple Harness}}
-|-
-| [[Purple Wool Slab]] <small>(vanilla recipe)</small>
-| 3 × [[Purple Wool]]
-| {{Crafting|A1=Purple Wool|B1=Purple Wool|C1=Purple Wool|Output=Purple Wool Slab,6}}
-|-
-| [[Purple Wool Stairs]] <small>(vanilla recipe)</small>
-| 6 × [[Purple Wool]]
-| {{Crafting|A1=Purple Wool|A2=Purple Wool|A3=Purple Wool|B2=Purple Wool|B3=Purple Wool|C3=Purple Wool|Output=Purple Wool Stairs,4}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

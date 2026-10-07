@@ -17,22 +17,6 @@
 | <span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>
 | {{Crafting|A1=Any Wool|Output=String,4|shapeless=1}}
 |-
-| [[Light Blue Carpet]]
-| [[Light Blue Wool]]
-| {{Stonecutter|Input=Light Blue Wool|Output=Light Blue Carpet,4}}
-|-
-| [[Light Blue Cushion]]
-| [[Light Blue Wool]]
-| {{Stonecutter|Input=Light Blue Wool|Output=Light Blue Cushion,2}}
-|-
-| [[Light Blue Wool Slab]]
-| [[Light Blue Wool]]
-| {{Stonecutter|Input=Light Blue Wool|Output=Light Blue Wool Slab,2}}
-|-
-| [[Light Blue Wool Stairs]]
-| [[Light Blue Wool]]
-| {{Stonecutter|Input=Light Blue Wool|Output=Light Blue Wool Stairs}}
-|-
 | [[Black Wool]] <small>(vanilla recipe)</small>
 | [[Black Dye]] +<br />[[White Wool]] or [[Orange Wool]] or [[Magenta Wool]] or [[Light Blue Wool]] or [[Yellow Wool]] or [[Lime Wool]] or [[Pink Wool]] or [[Gray Wool]] or [[Light Gray Wool]] or [[Cyan Wool]] or [[Purple Wool]] or [[Blue Wool]] or [[Brown Wool]] or [[Green Wool]] or [[Red Wool]]
 | {{Crafting|A1=Black Dye|B1=White Wool;Orange Wool;Magenta Wool;Light Blue Wool;Yellow Wool;Lime Wool;Pink Wool;Gray Wool;Light Gray Wool;Cyan Wool;Purple Wool;Blue Wool;Brown Wool;Green Wool;Red Wool|Output=Black Wool|shapeless=1}}
@@ -94,20 +78,12 @@
 | {{Crafting|A1=Yellow Dye|B1=White Wool;Orange Wool;Magenta Wool;Light Blue Wool;Lime Wool;Pink Wool;Gray Wool;Light Gray Wool;Cyan Wool;Purple Wool;Blue Wool;Brown Wool;Green Wool;Red Wool;Black Wool|Output=Yellow Wool|shapeless=1}}
 |-
 | {{MCW|Light Blue Bed}} <small>(vanilla recipe)</small>
-| 3 × [[Light Blue Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks, Poplar Planks">Any planks</span>
+| 3 × [[Light Blue Wool]] +<br />3 × <span class="explain" title="Oak Planks, Spruce Planks, Birch Planks, Jungle Planks, Acacia Planks, Dark Oak Planks, Pale Oak Planks, Crimson Planks, Warped Planks, Mangrove Planks, Bamboo Planks, Cherry Planks">Any planks</span>
 | {{Crafting|A1=Light Blue Wool|A2=Any Planks|B1=Light Blue Wool|B2=Any Planks|C1=Light Blue Wool|C2=Any Planks|Output=Light Blue Bed}}
 |-
 | {{MCW|Light Blue Harness}} <small>(vanilla recipe)</small>
 | 3 × [[Sturdy Leather]] +<br />2 × [[Glass]] +<br />[[Light Blue Wool]]
 | {{Crafting|A1=Sturdy Leather|A2=Glass|B1=Sturdy Leather|B2=Light Blue Wool|C1=Sturdy Leather|C2=Glass|Output=Light Blue Harness}}
-|-
-| [[Light Blue Wool Slab]] <small>(vanilla recipe)</small>
-| 3 × [[Light Blue Wool]]
-| {{Crafting|A1=Light Blue Wool|B1=Light Blue Wool|C1=Light Blue Wool|Output=Light Blue Wool Slab,6}}
-|-
-| [[Light Blue Wool Stairs]] <small>(vanilla recipe)</small>
-| 6 × [[Light Blue Wool]]
-| {{Crafting|A1=Light Blue Wool|A2=Light Blue Wool|A3=Light Blue Wool|B2=Light Blue Wool|B3=Light Blue Wool|C3=Light Blue Wool|Output=Light Blue Wool Stairs,4}}
 |-
 | {{MCW|Painting}} <small>(vanilla recipe)</small>
 | 8 × [[Stick]] +<br /><span class="explain" title="White Wool, Orange Wool, Magenta Wool, Light Blue Wool, Yellow Wool, Lime Wool, Pink Wool, Gray Wool, Light Gray Wool, Cyan Wool, Purple Wool, Blue Wool, Brown Wool, Green Wool, Red Wool, Black Wool">Any wool</span>

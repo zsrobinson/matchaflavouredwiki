@@ -9,7 +9,7 @@
 |type={{#if:{{{type|}}}|{{{type}}}|Item}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
-|stackable=No
+|stackable=Yes (64)
 |id=<code>matcha:axolotl</code>
 |base=<code>minecraft:chicken_spawn_egg</code>
 |source={{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/fish/axolotl.json|axolotl.json}}

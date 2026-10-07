@@ -31,7 +31,7 @@
 |-
 | {{MCW|Fire Aspect}} || <code>minecraft:fire_aspect</code> || 2 || mainhand || Swords, spears and mace || Changed: anvil cost
 |-
-| {{MCW|Fire Protection}} || <code>minecraft:fire_protection</code> || 4 || armor || Helmets, chestplates, leggings, boots and poisonous potato || Changed: anvil cost, supported items, incompatibilities, effects
+| {{MCW|Fire Protection}} || <code>minecraft:fire_protection</code> || 4 || armor || Helmets, chestplates, leggings, boots and poisonous potato || Changed: anvil cost, supported items, incompatibilities
 |-
 | {{MCW|Flame}} || <code>minecraft:flame</code> || 1 || mainhand || Bow || Changed: anvil cost
 |-
@@ -41,7 +41,7 @@
 |-
 | [[Frost Protection]] (old id) || <code>main:freezing_protection</code> || 3 || armor || Chestplates || '''New'''
 |-
-| {{MCW|Frost Walker}} || <code>minecraft:frost_walker</code> || 2 || feet || Boots || Changed: anvil cost, effects
+| {{MCW|Frost Walker}} || <code>minecraft:frost_walker</code> || 2 || feet || Boots || Changed: anvil cost
 |-
 | {{MCW|Impaling}} || <code>minecraft:impaling</code> || 5 || mainhand || Trident || Changed: anvil cost, incompatibilities
 |-
@@ -93,17 +93,17 @@
 |-
 | {{MCW|Smite}} || <code>minecraft:smite</code> || 5 || mainhand || Swords, spears, axes and mace || Changed: anvil cost, incompatibilities
 |-
-| [[Soul Speed]] || <code>matcha:traversal</code> || 3 || feet || Boots || '''New'''
-|-
 | {{MCW|Soul Speed}} || <code>minecraft:soul_speed</code> || 3 || feet || Boots || Changed: anvil cost
-|-
-| [[Soul Speed]] (old id) || <code>main:traversal</code> || 3 || feet || Boots || '''New'''
 |-
 | {{MCW|Sweeping Edge}} || <code>minecraft:sweeping_edge</code> || 3 || mainhand || Swords || Changed: anvil cost
 |-
 | {{MCW|Swift Sneak}} || <code>minecraft:swift_sneak</code> || 3 || legs || Leggings || Changed: anvil cost
 |-
 | {{MCW|Thorns}} || <code>minecraft:thorns</code> || 3 || any || Helmets, chestplates, leggings, boots and poisonous potato || Changed: anvil cost, supported items
+|-
+| [[Trailblaze]] || <code>matcha:traversal</code> || 3 || feet || Boots || '''New'''
+|-
+| [[Trailblaze]] (old id) || <code>main:traversal</code> || 3 || feet || Boots || '''New'''
 |-
 | [[Unbreaking]] || <code>minecraft:unbreaking</code> || 3 || any || <code>#minecraft:enchantable/durability</code> || Changed: anvil cost
 |-

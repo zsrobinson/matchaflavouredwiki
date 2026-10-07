@@ -1,0 +1,13 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Materials/Fox Pelt Snowy}}
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>matcha:materials/fox_pelt_snowy</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json|fox.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>
