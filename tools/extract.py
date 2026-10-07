@@ -905,6 +905,31 @@ def parse_loot(d, src):
     return out
 
 
+VANILLA_ITEM_IDS = set(load(os.path.join(ROOT, 'source', 'vanilla-summary', 'item_components', 'data.json')))
+
+
+def loot_load_error(node):
+    """Why the game would refuse to load this loot table, or None: an item entry naming an item that
+    doesn't exist (1.12.4's fox.json names a loot table as an item), or a loot_table entry without its
+    "value" (the same file uses "name"). The game drops a table that fails to decode as a whole."""
+    if isinstance(node, list):
+        return next((e for e in map(loot_load_error, node) if e), None)
+    if not isinstance(node, dict):
+        return None
+    t = norm_ns(node.get('type', '')) if isinstance(node.get('type'), str) else ''
+    if t == 'minecraft:item' and 'name' in node:
+        ns, _, path = node['name'].partition(':') if ':' in node['name'] else ('minecraft', '', node['name'])
+        if ns != 'minecraft' or path not in VANILLA_ITEM_IDS:
+            return 'item entry names %s, which is not an item' % node['name']
+    if t == 'minecraft:loot_table' and 'value' not in node:
+        return 'loot_table entry without "value"'
+    for k in ('pools', 'entries', 'children'):
+        err = loot_load_error(node.get(k))
+        if err:
+            return err
+    return None
+
+
 LOOT = {}
 UNLOADABLE = {}  # loot tables the game can't parse
 for f in sorted(glob.glob(os.path.join(DP, '*', 'loot_table', '**', '*.json'), recursive=True)):
@@ -924,6 +949,10 @@ for f in sorted(glob.glob(os.path.join(DP, '*', 'loot_table', '**', '*.json'), r
         for it in ITEMS.values():
             it['sources'] = [x for x in it['sources'] if x['src'] != rel(f)]
         d = {}
+    if lid not in UNLOADABLE and loot_load_error(d):
+        err = loot_load_error(d)
+        print('loot table %s can\'t load (%s): the game loads it as empty' % (rel(f), err), file=sys.stderr)
+        UNLOADABLE[lid] = {'src': rel(f), 'error': err}
     LOOT[lid] = {'id': lid, 'src': rel(f), 'type': d.get('type'),
                  'entries': [] if lid in UNLOADABLE else parse_loot(d, rel(f)),
                  'overrides_vanilla': ns == 'minecraft' and os.path.exists(

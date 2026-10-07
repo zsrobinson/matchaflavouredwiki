@@ -269,7 +269,6 @@ return {
 	["Mangrove Hanging Sign"] = "Mangrove Hanging Sign",
 	["Mangrove Roots"] = "Mangrove Roots",
 	["Map"] = "Map",
-	["MaterialsFox Pelt Snowy"] = "Materials/Fox Pelt Snowy",
 	["Medium Amethyst Bud"] = "Medium Amethyst Bud",
 	["Melon Seeds"] = "Melon Seeds",
 	["Minecart with Chest"] = "Minecart with Chest",
