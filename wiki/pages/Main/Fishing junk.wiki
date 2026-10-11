@@ -43,7 +43,7 @@ Estus Ash was added to junk so that players on Peaceful can get it.<ref>{{Cite c
 {{History line|0.5-alpha|Swamps get their own junk.}}
 {{History line|1.10|Biomes without fish fall back to junk at weight 85.}}
 {{History line|1.12.1-alpha|Added Estus Ash.}}
-{{History line|1.12.4|Fish bones moved to their own loot table. The junk table was left with a trailing comma, so the game can't load it and junk catches give nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>}}
+{{History line|1.12.4|Fish bones moved to their own loot table. The junk table was left with a trailing comma, so the game can't load it and junk catches give nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
 {{History line|1.12.5|The trailing comma was removed, so the junk table loads and junk catches give items again.<ref>{{Cite changelog|1.12.5|quote=Fishing Junk LT Fixed (Not for modded biomes)}}</ref>}}
 }}
 

@@ -19,7 +19,7 @@ A placed lily pad randomly uses one of four models, and the item has its own tex
 == History ==
 {{History
 |{{History line|1.12.2|Lily pads can be cloned.<br />The lily pad item texture was fixed.}}
-{{History line|1.12.4|Lily pads can't be fished: the junk table can't be loaded.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>}}
+{{History line|1.12.4|Lily pads can't be fished: the junk table can't be loaded.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
 {{History line|1.12.5|Lily pads can be fished again.<ref>{{Cite changelog|1.12.5|quote=Fishing Junk LT Fixed (Not for modded biomes)}}</ref>}}
 }}
 

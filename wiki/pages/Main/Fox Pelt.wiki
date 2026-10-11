@@ -23,7 +23,7 @@ Recipes that take tattered leather accept fox pelts, because recipes check the i
 }}
 
 == Trivia ==
-* Until 1.12.4, the loot table gave the pelts the item models <code>fox_pelt</code> and <code>fox_pelt_snowy</code> without a namespace, which the game reads as <code>minecraft:fox_pelt</code>. The resource pack defines the models under the <code>matcha</code> namespace, so neither model was found and dropped pelts showed the missing-model texture.<ref>{{Source|MF_resourcepack/assets/matcha/items/fox_pelt.json}}</ref>
+* Before 1.12.4, the loot table gave the pelts the item models <code>fox_pelt</code> and <code>fox_pelt_snowy</code> without a namespace, which the game reads as <code>minecraft:fox_pelt</code>. The resource pack defines the models under the <code>matcha</code> namespace, so neither model was found and dropped pelts showed the missing-model texture.<ref>{{Source|MF_resourcepack/assets/matcha/items/fox_pelt.json}}</ref>
 
 == See also ==
 * [[Tattered Leather]]

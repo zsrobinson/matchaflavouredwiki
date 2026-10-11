@@ -11,7 +11,7 @@ Placing it spawns an axolotl. Using it on a [[spawner]] destroys every spawner a
 == History ==
 {{History|
 {{History line|1.12.2|The [[Angler's Almanac]] entry can be unlocked. In 1.12.1-alpha it checked for an item ID, <code>axolotl</code>, that doesn't exist.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/junk/axolotl.json}}</ref> Using it spawns an axolotl. In 1.12.1-alpha the fished item had no entity data, so, as a chicken spawn egg, it spawned a chicken.<ref>{{Source|Matcha_Flavoured/data/minecraft/loot_table/gameplay/fishing/junk.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>}}
-{{History line|1.12.4|Can't be caught: the junk table can't be loaded.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>}}
+{{History line|1.12.4|Can't be caught: the junk table can't be loaded.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
 {{History line|1.12.5|Can be caught again: the junk table loads.<ref>{{Cite changelog|1.12.5|quote=Fishing Junk LT Fixed (Not for modded biomes)}}</ref>}}
 }}
 

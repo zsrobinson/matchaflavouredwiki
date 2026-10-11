@@ -155,10 +155,10 @@ The bonus chest can be enabled when creating a world.
 
 == Village ==
 {{Main|Abandoned village}}
-The pack's [[abandoned village]]s have no loot-table chests, so these tables are not normally used.
+The pack's [[abandoned village]]s have no loot-table chests, so these tables are not normally used. In 1.12.3 and 1.12.4 their bread, apple and sweet berry entries named loot tables that didn't exist (<code>matcha:food/bread</code> and so on, moved to <code>matcha:food/minecraft/</code> before 1.12.3), so those entries gave nothing; {{Version|1.12.5}} points them at the moved tables.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json}}</ref>
 
 {{Upcoming|the 26.3 port}}
-In the 1.12.3 alpha for 26.3, and in the 26.3 port that continues it, the pack empties the loot tables of the village armorer, butcher, cartographer, desert house, fisher, mason, plains house, savanna house, snowy house, taiga house, tannery, temple, toolsmith and weaponsmith chests.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_toolsmith.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref> The release notes say they are empty because "everything was broken in 26.3, it was easier to nuke it all", and that they will be added back, much weaker, with the structure update.<ref>{{Cite changelog|1.12.3|quote=Village Loottables are empty, I will add these back during the structure update, but everything was broken in 26.3, it was easier to nuke it all}}</ref> The releases for 26.2 (1.12.3 and 1.12.4) keep the tables below. The fletcher and shepherd tables are not changed by the pack.
+In the 1.12.3 alpha for 26.3, and in the 26.3 port that continues it, the pack empties the loot tables of the village armorer, butcher, cartographer, desert house, fisher, mason, plains house, savanna house, snowy house, taiga house, tannery, temple, toolsmith and weaponsmith chests.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_toolsmith.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref> The release notes say they are empty because "everything was broken in 26.3, it was easier to nuke it all", and that they will be added back, much weaker, with the structure update.<ref>{{Cite changelog|1.12.3|quote=Village Loottables are empty, I will add these back during the structure update, but everything was broken in 26.3, it was easier to nuke it all}}</ref> The releases for 26.2 (1.12.3 to 1.12.5) keep the tables below. The fletcher and shepherd tables are not changed by the pack.
 === Armorer ===
 {{Data/Loot/minecraft/chests/village/village_armorer}}
 === Butcher ===
@@ -241,6 +241,8 @@ Shared tables that other chest tables call to pick a random piece of equipment.
 * Ruined portal loot nerfed so gold cannot be obtained before iron.
 * The Quran and The Tanakh added to Trial Chamber loot.
 * Trash removed from trial spawners and vaults.}}
+{{History line|1.12.3|date=October 2, 2026|Village chest tables name the bread, apple and sweet berry loot tables by their old IDs, so those entries give nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json|at=d7482cfd1cb9fbd4c633a6d030a954950c70f4d2}}</ref>}}
+{{History line|1.12.5|date=October 10, 2026|Village chests give bread, apples and sweet berries again.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json}}</ref>}}
 {{History line|Upcoming|2=All village chest loot tables are empty (in the 1.12.3 alpha for 26.3). Abandoned camp chests and barrels get their own loot tables.}}
 }}
 

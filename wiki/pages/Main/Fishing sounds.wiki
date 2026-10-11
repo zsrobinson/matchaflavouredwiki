@@ -39,7 +39,7 @@ The treasure sound checks the Crystal Heart for the item model <code>matcha:crys
 {{History|
 {{History line|1.12.1-alpha|Added.}}
 {{History line|1.12.3|The enchanted book subtitle was shortened from "Caught a Hell-Bound Book" to "Caught Hell-Bound Book".}}
-{{History line|1.12.4|Nothing could be caught from the junk table, which failed to load, so the junk sound played only for Deep Dark and Pale Garden items, and the axolotl, frog and nautilus shell sounds couldn't be heard.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>}}
+{{History line|1.12.4|Nothing could be caught from the junk table, which failed to load, so the junk sound played only for Deep Dark and Pale Garden items, and the axolotl, frog and nautilus shell sounds couldn't be heard.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
 {{History line|1.12.5|The junk table loads again, so its items play their sounds again, except fish bones, which the junk table now gives as ender pearls.<ref>{{Cite changelog|1.12.5|quote=Fishing Junk LT Fixed (Not for modded biomes)}}</ref>}}
 }}
 
