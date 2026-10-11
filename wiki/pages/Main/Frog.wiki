@@ -3,7 +3,7 @@ A '''frog''' is a [[fishing junk]] item caught in Swamp and Mangrove Swamp. It i
 
 == Obtaining ==
 === Fishing ===
-The junk table lists it at 5 of 93 junk weight in swamps: 5.38% of junk, about 0.54% of all catches.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref> It plays the frog [[fishing sounds|catch sound]]. In 1.12.4 the junk table can't be loaded, so it can't be caught (see [[Fishing junk]] and [[Known bugs]]).
+The junk table lists it at 5 of 93 junk weight in swamps: 5.38% of junk, about 0.54% of all catches.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref> It plays the frog [[fishing sounds|catch sound]].
 
 == Usage ==
 Placing it spawns a frog. Using it on a [[spawner]] outside Creative mode destroys every spawner and trial spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
@@ -11,6 +11,7 @@ Placing it spawns a frog. Using it on a [[spawner]] outside Creative mode destro
 == History ==
 {{History|
 {{History line|1.12.4|Can't be caught: the junk table can't be loaded.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref>}}
+{{History line|1.12.5|Can be caught again: the junk table loads.<ref>{{Cite changelog|1.12.5|quote=Fishing Junk LT Fixed (Not for modded biomes)}}</ref>}}
 }}
 
 == Trivia ==

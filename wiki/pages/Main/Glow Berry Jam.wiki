@@ -17,6 +17,8 @@ Eating glow berry jam takes {{Value|Glow Berry Jam|eat_time}} and heals {{Value|
 == History ==
 {{History|
 {{History line|0.5-alpha|Glow berry jam gives its glass bottle back when eaten.}}
+{{History line|1.12.4|2=Glow berry jam made or found in this version gave no aura. It carries a <code>version</code> number in their custom data, and the advancement that starts the aura required the custom data to be exactly the aura marker.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/30s.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/glow_jam.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
+{{History line|1.12.5|2=Fixed: the aura advancement only checks that the custom data contains the aura marker, so glow berry jam gives its aura again.<ref>{{Cite changelog|1.12.5|quote=Glow Berry Jam and Mash fixed}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/30s.json}}</ref>}}
 }}
 
 == See also ==

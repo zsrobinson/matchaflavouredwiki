@@ -27,10 +27,12 @@ Obtaining glow berry mash unlocks [[Glow Berry Jam|glow berry jam]] and [[Glow B
 {{History|
 {{History line|1.10|Glow berry mash works.}}
 {{History line|1.12.3|The aura is triggered by the mash's own custom data instead of the rotten flesh model, so vanilla rotten flesh no longer triggers it.}}
+{{History line|1.12.4|2=Glow berry mash made in this version gave no aura. It carries a <code>version</code> number in their custom data, and the advancement that starts the aura required the custom data to be exactly the aura marker.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/3s.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/glow_mash.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
+{{History line|1.12.5|2=Fixed: the aura advancement only checks that the custom data contains the aura marker, so glow berry mash gives its aura again.<ref>{{Cite changelog|1.12.5|quote=Glow Berry Jam and Mash fixed}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/3s.json}}</ref>}}
 }}
 
 == Trivia ==
-* Glow berry mash is a renamed rotten flesh. In 1.12.2 the aura was triggered by eating anything with the rotten flesh model, so vanilla rotten flesh also triggered it; since 1.12.3 it checks for the mash's own custom data.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/3s.json}}</ref>
+* Glow berry mash is a renamed rotten flesh. In 1.12.2 the aura was triggered by eating anything with the rotten flesh model, so vanilla rotten flesh also triggered it; since 1.12.3 it checks for the mash's own custom data.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/3s.json}}</ref> Since 1.12.4 the automatic item updater gives any rotten flesh held in a hand the mash's tooltip, effects and aura marker, so vanilla rotten flesh becomes a working glow berry mash.<ref>{{Source|MF_datapack/data/matcha_item/advancement/trigger/glow_mash.json}}</ref><ref>{{Source|MF_datapack/data/matcha_item/item_modifier/modify/glow_mash.json}}</ref>
 
 == See also ==
 * [[Glow Berries]]
