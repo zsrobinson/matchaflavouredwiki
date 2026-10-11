@@ -8,7 +8,7 @@ A '''fox pelt''' is a crafting material dropped by foxes. The pack gives it two 
 
 == Obtaining ==
 === Mob loot ===
-Every fox drops one fox pelt: red foxes the red pelt, through the loot table <code>matcha:materials/fox_pelt</code>, and snow foxes the snowy pelt, through <code>matcha:materials/fox_pelt_snowy</code>. Looting doesn't add pelts. A fox also drops 1 raw flesh (cooked if the fox was burning), plus 0–1 per level of Looting. In vanilla, foxes drop nothing but their held item.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref>
+Every fox drops one fox pelt: red foxes the red pelt, through the loot table <code>matcha:materials/fox_pelt</code>, and snow foxes the snowy pelt, through <code>matcha:materials/fox_pelt_snowy</code>. Looting doesn't add pelts. A fox also drops 1 [[Raw Flesh|raw flesh]] (cooked if the fox was burning or was killed with a weapon enchanted with Fire Aspect), plus 0–1 per level of Looting. In vanilla, foxes drop nothing but their held item.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref>
 
 The two pelt tables also work with the <code>/loot</code> command.<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fox_pelt.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fox_pelt_snowy.json}}</ref>
 

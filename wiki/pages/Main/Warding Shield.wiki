@@ -28,7 +28,7 @@ Smithing the warding shield grants ''Convoymaster'' ("Affix a Nazar to an Shield
 {{History line|1.12.1-alpha|The warding shield can now only be repaired with Nazars or lapis.}}
 {{History line|1.12.2|Reduced from {{G|Warding}} 2 to {{G|Warding}} 1, since warding from both hands now stacks.}}
 {{History line|1.12.4|The new [[Updating items|item updater]] turned any ordinary shield held in either hand into a warding shield.<ref>{{Source|MF_datapack/data/matcha_item/advancement/trigger/warding_shield.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
-{{History line|1.12.5|Ordinary shields are no longer turned into warding shields.<ref>{{Cite changelog|1.12.5|quote=Shields no longer turn into fake warding shields}}</ref>}}
+{{History line|1.12.5|Ordinary shields are no longer turned into warding shields, except one in the main hand while another ordinary shield is in the off hand (see [[Known bugs]]).<ref>{{Cite changelog|1.12.5|quote=Shields no longer turn into fake warding shields}}</ref><ref>{{Source|MF_datapack/data/matcha_item/advancement/trigger/warding_shield.json}}</ref><ref>{{Source|MF_datapack/data/matcha_item/predicate/mainhand/warding_shield.json}}</ref>}}
 }}
 
 == See also ==
