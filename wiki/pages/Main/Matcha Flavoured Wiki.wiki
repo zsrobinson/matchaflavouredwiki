@@ -26,24 +26,24 @@ Welcome to the unofficial encyclopedia of '''[[Matcha Flavoured]]''' (also writt
 <div class="mp-highlight-wrapper">
 <h2 class="sr-only">Latest releases</h2>
 {{Mainpage update
-| name = [[Matcha Flavoured {{Current version}}|Intrinsic Hotfix]]
+| name = [[Matcha Flavoured {{Current version}}|Minor Bug Fixes]]
 | tag = Latest
 | features =
-* [[Intrinsic]]s on armor and tools work again
-* [[Sleeping]] fixed in [[multiplayer]]
-* {{ItemLink|Chocolate}} stacks again
-* Old items [[Updating items|update themselves]]
+* [[Fishing junk]] can be caught again
+* Foxes drop [[Fox Pelt|fox pelts]] again
+* [[Aura]] foods work again
+* Curries and ramen no longer cook on [[Kindling|campfires]]
 | bottom = Matcha Flavoured <b class="mp-highlight-version">{{Current version}}</b> for ''Minecraft'' <b class="mp-highlight-version">26.2</b> (26.3 port in alpha)
 }}{{#ifeq: {{Stable version}} | {{Current version}} || {{Mainpage update
-| name = [[Matcha Flavoured {{Stable version}}|Intrinsic Hotfix]]
+| name = [[Matcha Flavoured {{Stable version}}|Minor Bug Fixes]]
 | tag = Stable
 | tagtype = stable
 | bg = Main page background (lake).jpg
 | features =
-* [[Intrinsic]]s on armor and tools work again
-* [[Sleeping]] fixed in [[multiplayer]]
-* {{ItemLink|Chocolate}} stacks again
-* Old items [[Updating items|update themselves]]
+* [[Fishing junk]] can be caught again
+* Foxes drop [[Fox Pelt|fox pelts]] again
+* [[Aura]] foods work again
+* Curries and ramen no longer cook on [[Kindling|campfires]]
 | bottom = Matcha Flavoured <b class="mp-highlight-version">{{Stable version}}</b> for ''Minecraft'' <b class="mp-highlight-version">26.2</b>
 }} }}
 </div>

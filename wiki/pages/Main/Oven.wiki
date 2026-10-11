@@ -10,12 +10,12 @@ The oven needs 3 iron ingots, 4 blocks of bricks and a [[kindling]].<ref>{{Sourc
 == Usage ==
 === Cooking food ===
 {{Main|Cooking}}
-The oven cooks the same foods as [[kindling]]:<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref>
+The oven cooks the same foods as [[kindling]], plus the oven meals, which only the oven cooks:<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref>
 * All simple preparations of [[intrinsic]] ingredients, such as [[Baked Pumpkin|baked pumpkin]], [[Steamed Carrots|steamed carrots]] and [[chocolate]].
 * [[Bread]] from [[dough]], [[Baked Potato|baked potato]]es, [[Fried Egg|fried egg]]s, [[nopales]] and cooked meat and [[Fish|fish]].
 * [[Molasses]] from sugar cane.
 * [[Popped Chorus Fruit|Popped chorus fruit]] and [[Dried Kelp|dried kelp]].
-* The oven meals: [[Green Curry|green curry]], [[Japanese Curry|Japanese curry]], [[Paneer Makhani|paneer makhani]], [[Tonkotsu Ramen|tonkotsu ramen]] and [[Pumpkin Curry|pumpkin curry]], cooked from their [[stock]]s.
+* The oven meals: [[Green Curry|green curry]], [[Japanese Curry|Japanese curry]], [[Paneer Makhani|paneer makhani]], [[Tonkotsu Ramen|tonkotsu ramen]] and [[Pumpkin Curry|pumpkin curry]], cooked from their [[stock]]s. These can't be cooked on kindling.
 
 Food takes 5 seconds and the oven meals 15 seconds. Each item gives 0.35 experience, except molasses (0.01).
 
@@ -31,6 +31,7 @@ The vanilla recipes marked in the table still work.<ref>{{Source|MF_datapack/dat
 {{History line|1.10|Food, except curries, cooks faster in the oven.}}
 {{History line|1.12.1-alpha|Ancient debris, copper and stone can no longer be smelted in the oven. Sponges can be dried (2.5 seconds).}}
 {{History line|1.12.3|Pumpkin curry, popped chorus fruit and dried kelp can also be cooked on kindling, so the oven no longer cooks anything kindling can't.}}
+{{History line|1.12.5|The oven meals can no longer be cooked on kindling, so the oven is the only station that cooks them.<ref>{{Cite changelog|1.12.5|quote=Ramen and Curries can no longer cooked on campfires}}</ref>}}
 }}
 
 == References ==

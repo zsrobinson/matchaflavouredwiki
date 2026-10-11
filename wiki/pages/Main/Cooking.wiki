@@ -10,16 +10,16 @@
 {| class="wikitable"
 ! Station !! Replaces !! Recipe type !! Food it cooks
 |-
-| {{BlockLink|Kindling}} || {{MCW|Campfire}} || Campfire cooking || All simple preparations (including [[Popped Chorus Fruit|popped chorus fruit]] and [[Dried Kelp|dried kelp]]), cooked meat and fish, bread, [[molasses]] and all five oven meals. Needs no fuel and cooks up to four items at once.
+| {{BlockLink|Kindling}} || {{MCW|Campfire}} || Campfire cooking || All simple preparations (including [[Popped Chorus Fruit|popped chorus fruit]] and [[Dried Kelp|dried kelp]]), cooked meat and fish, bread and [[molasses]], but not the five oven meals. Needs no fuel and cooks up to four items at once.
 |-
 | {{BlockLink|Soul Kindling}} || {{MCW|Soul Campfire}} || Campfire cooking || The same as kindling.
 |-
-| {{BlockLink|Oven}} || {{MCW|Furnace}} || Smelting || Everything kindling cooks. Needs fuel.
+| {{BlockLink|Oven}} || {{MCW|Furnace}} || Smelting || Everything kindling cooks, and the five oven meals, which only the oven cooks. Needs fuel.
 |-
 | {{BlockLink|Mud Kiln}} || {{MCW|Smoker}} || Smoking || Only [[naan]] and the charred foods. It is mainly a kiln for bricks, glass, terracotta and stone.
 |}
 
-Food recipes take 5 seconds (100 ticks) and give 0.35 experience, on kindling and in the oven, except molasses, which gives 0.01. The mud kiln's food recipes take 5 seconds as well.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/molasses.json}}</ref> The oven meals take 15 seconds (300 ticks), on kindling as well.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref> Kindling therefore cooks food much faster than a vanilla campfire (30 seconds), and the oven twice as fast as a vanilla furnace.
+Food recipes take 5 seconds (100 ticks) and give 0.35 experience, on kindling and in the oven, except molasses, which gives 0.01. The mud kiln's food recipes take 5 seconds as well.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/molasses.json}}</ref> The oven meals take 15 seconds (300 ticks) and cook only in the oven.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref> Kindling therefore cooks food much faster than a vanilla campfire (30 seconds), and the oven twice as fast as a vanilla furnace.
 
 The pack removes every vanilla cooking recipe for food (meat, fish, potatoes, kelp) and replaces it with its own, so vanilla cooked food can't be made.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
@@ -67,6 +67,7 @@ Recipe unlocks are revoked when a player joins with a newer pack version, so cha
 {{History line|1.11|Restored the recipes, which had been accidentally deleted in 1.10.<ref>{{Cite changelog|1.11|quote=I accidentally deleted all the recipes...sorry}}</ref>}}
 {{History line|1.12.1-alpha|Cactus can be cooked again. Copper, ancient debris and stone can no longer be smelted in the oven. Cooking, kilning and blasting recipes reorganized.}}
 {{History line|1.12.3|Kindling cooks pumpkin curry, popped chorus fruit and dried kelp too, so it matches the oven. Small fish and large fish each cook with one recipe. The kiln chars any fish.}}
+{{History line|1.12.5|The oven meals (the curries and tonkotsu ramen) can no longer be cooked on kindling, only in the oven.<ref>{{Cite changelog|1.12.5|quote=Ramen and Curries can no longer cooked on campfires}}</ref>}}
 {{History line|Upcoming|2=In the 26.3 port (first in the 1.12.3 alpha for 26.3), mud kiln recipes take twice as long (10 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>}}
 }}
 

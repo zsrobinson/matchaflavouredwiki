@@ -6,7 +6,7 @@
 
 === Cooking ===
 {{Recipes}}
-A [[curry stock]] cooks into Japanese curry in {{Value|Japanese Curry|cook_time}} in an [[oven]] or on [[kindling]]. Obtaining the stock unlocks the recipe.
+A [[curry stock]] cooks into Japanese curry in {{Value|Japanese Curry|cook_time}} in an [[oven]]; it can't be cooked on [[kindling]]. Obtaining the stock unlocks the recipe.
 
 == Usage ==
 
@@ -17,12 +17,13 @@ Eating it takes {{Value|Japanese Curry|eat_time}}, heals {{Value|Japanese Curry|
 It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_38.mcfunction}}</ref>
 
 == Advancements ==
-* ''Hearty Curry'': cook Japanese curry in an [[oven]] (1 [[obol]]). Curry cooked on kindling doesn't count.
+* ''Hearty Curry'': cook Japanese curry in an [[oven]] (1 [[obol]]).
 
 == History ==
 {{History|
 {{History line|1.12.1-alpha|The stock uses oil and accepts seitan.}}
 {{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.5|Japanese curry can no longer be cooked on kindling, only in an oven.<ref>{{Cite changelog|1.12.5|quote=Ramen and Curries can no longer cooked on campfires}}</ref>}}
 }}
 
 == See also ==
