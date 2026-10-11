@@ -31,6 +31,8 @@ Aura isn't a status effect. Eating [[Glow Berry Mash|glow berry mash]], [[Glow B
 {{History line|1.10|Glow berry mash works.}}
 {{History line|1.12.2|Fortune works on glow berry vines.}}
 {{History line|1.12.3|Fortune and the electrum intrinsic no longer add berries when the tip of a cave vine is broken; the vine blocks below it still do.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/cave_vines.json}}</ref>}}
+{{History line|1.12.4|2=Glow berry mash, jam and crumble made in this version gave no [[aura]], because the aura advancements didn't expect the item updater's <code>version</code> number in their custom data.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/3s.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
+{{History line|1.12.5|2=Fixed the aura of glow berry foods.<ref>{{Cite changelog|1.12.5|quote=Glow Berry Jam and Mash fixed}}</ref>}}
 }}
 
 == See also ==

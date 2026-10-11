@@ -3,15 +3,19 @@
 
 == Obtaining ==
 === Fishing ===
-* The junk table lists them at 10 of 78 weight in most biomes (12.82% of junk, about 1.28% of all catches), but in 1.12.4 that table can't be loaded, so they can't be caught as junk (see [[Fishing junk]] and [[Known bugs]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fish_bones.json}}</ref>
-* 90.91% of the Sulfur Caves table, 41.77% of catches in Sulfur Caves. This is the only way to fish them in 1.12.4.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
+* The junk table lists them at 10 of 78 weight in most biomes (12.82% of junk, about 1.28% of all catches). These come from the loot table <code>matcha:materials/fish_bones</code>, which builds them on an {{MCW|Ender Pearl|ender pearl}} instead of a bone (see [[#Junk fish bones]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fish_bones.json}}</ref>
+* 90.91% of the Sulfur Caves table, 41.77% of catches in Sulfur Caves. These are real bones.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
 
-Catching them plays their own [[fishing sounds|sound]].
+Catching bone-based fish bones plays their own [[fishing sounds|sound]].
+
+=== Junk fish bones ===
+Fish bones caught as junk look and are named the same as the others, but they are ender pearls: they can be thrown to teleport, stack to 16, don't stack with the fish bones from Sulfur Caves and can't be used as a bone. Their catch plays no sound, and they don't unlock the Fish Bones entry of the [[Angler's Almanac]], which checks for a bone. This is a bug (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fish_bones.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/fishing_sounds/fish_bones.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/junk/fish_bones.json}}</ref>
 
 == History ==
 {{History|
 {{History line|1.12.3|Fish bones from Sulfur Caves now have the correct texture, so they stack with fish bones from the junk table.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>}}
-{{History line|1.12.4|Junk fish bones come from their own loot table, <code>matcha:materials/fish_bones</code>. That table gives an {{MCW|Ender Pearl|ender pearl}} with the fish bones name and model instead of a bone (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fish_bones.json}}</ref>}}
+{{History line|1.12.4|Junk fish bones come from their own loot table, <code>matcha:materials/fish_bones</code>. That table gives an {{MCW|Ender Pearl|ender pearl}} with the fish bones name and model instead of a bone (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fish_bones.json}}</ref> The junk table couldn't be loaded, so they could only be caught in Sulfur Caves.}}
+{{History line|1.12.5|The junk table loads again, so fish bones can be caught as junk, as ender pearls.<ref>{{Cite changelog|1.12.5|quote=Fishing Junk LT Fixed (Not for modded biomes)}}</ref>}}
 }}
 
 == References ==

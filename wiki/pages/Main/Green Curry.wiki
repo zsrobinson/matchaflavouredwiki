@@ -6,7 +6,7 @@
 
 === Cooking ===
 {{Recipes}}
-A [[Green Curry Stock|green curry stock]] cooks into green curry in {{Value|Green Curry|cook_time}} in an [[oven]] or on [[kindling]]. Obtaining the stock unlocks the recipe.
+A [[Green Curry Stock|green curry stock]] cooks into green curry in {{Value|Green Curry|cook_time}} in an [[oven]]; it can't be cooked on [[kindling]]. Obtaining the stock unlocks the recipe.
 
 == Usage ==
 
@@ -17,12 +17,13 @@ Eating it takes {{Value|Green Curry|eat_time}}, heals {{Value|Green Curry|heals}
 It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_36.mcfunction}}</ref>
 
 == Advancements ==
-* ''Too Spicy!'': cook green curry in an [[oven]] (1 [[obol]]). Curry cooked on kindling doesn't count.
+* ''Too Spicy!'': cook green curry in an [[oven]] (1 [[obol]]).
 
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Removed an outdated green curry recipe. The stock uses oil and accepts seitan.}}
 {{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.5|Green curry can no longer be cooked on kindling, only in an oven.<ref>{{Cite changelog|1.12.5|quote=Ramen and Curries can no longer cooked on campfires}}</ref>}}
 }}
 
 == Trivia ==

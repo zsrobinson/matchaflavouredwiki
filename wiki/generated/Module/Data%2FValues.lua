@@ -887,7 +887,6 @@ return {
 	},
 	["Green Curry"] = {
 		["cook_time"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
-		["cook_time:Kindling"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
 		["cook_time:Oven"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
 		["duration:Speed"] = { "30 minutes", clock = "30:00", minutes = "30 minutes", seconds = "1800 seconds", secs = "1800", ticks = "36000" },
 		["eat_time"] = { "3 seconds", raw = "3" },
@@ -1101,7 +1100,6 @@ return {
 	},
 	["Japanese Curry"] = {
 		["cook_time"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
-		["cook_time:Kindling"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
 		["cook_time:Oven"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
 		["duration:Strength"] = { "30 minutes", clock = "30:00", minutes = "30 minutes", seconds = "1800 seconds", secs = "1800", ticks = "36000" },
 		["eat_time"] = { "3 seconds", raw = "3" },
@@ -1247,7 +1245,6 @@ return {
 	},
 	["Paneer Makhani"] = {
 		["cook_time"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
-		["cook_time:Kindling"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
 		["cook_time:Oven"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
 		["duration:Regeneration"] = { "10 minutes", clock = "10:00", minutes = "10 minutes", seconds = "600 seconds", secs = "600", ticks = "12000" },
 		["eat_time"] = { "3 seconds", raw = "3" },
@@ -1307,7 +1304,6 @@ return {
 	},
 	["Pumpkin Curry"] = {
 		["cook_time"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
-		["cook_time:Kindling"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
 		["cook_time:Oven"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
 		["duration:Resistance"] = { "20 minutes", clock = "20:00", minutes = "20 minutes", seconds = "1200 seconds", secs = "1200", ticks = "24000" },
 		["eat_time"] = { "3 seconds", raw = "3" },
@@ -1722,7 +1718,6 @@ return {
 	},
 	["Tonkotsu Ramen"] = {
 		["cook_time"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
-		["cook_time:Kindling"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
 		["cook_time:Oven"] = { "15 seconds", clock = "0:15", seconds = "15 seconds", secs = "15", ticks = "300" },
 		["duration:Haste"] = { "30 minutes", clock = "30:00", minutes = "30 minutes", seconds = "1800 seconds", secs = "1800", ticks = "36000" },
 		["eat_time"] = { "3 seconds", raw = "3" },

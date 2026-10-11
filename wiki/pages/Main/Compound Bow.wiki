@@ -8,6 +8,12 @@ A level 3 [[Fletcher|fletcher]] sells one for an [[Obol|obol]]: 600 durability a
 [[Abbey]] barracks and tower chests contain a damaged version with 500 durability and Power I.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/barracks.json}}</ref>
 {{Sources}}
 
+== History ==
+{{History|
+{{History line|1.12.4|The new [[Updating items|item updater]] turned any ordinary bow held in either hand into a compound bow.<ref>{{Source|MF_datapack/data/matcha_item/advancement/trigger/compound_bow.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
+{{History line|1.12.5|Ordinary bows are no longer turned into compound bows, except one in the main hand while another ordinary bow is in the off hand (see [[Known bugs]]).<ref>{{Cite changelog|1.12.5|quote=Bows no longer turn into Compound Bow}}</ref><ref>{{Source|MF_datapack/data/matcha_item/advancement/trigger/compound_bow.json}}</ref><ref>{{Source|MF_datapack/data/matcha_item/predicate/mainhand/compound_bow.json}}</ref>}}
+}}
+
 == References ==
 {{reflist}}
 

@@ -22,7 +22,7 @@
 Each food also heals the player; see its page.
 
 == Mechanics ==
-Aura is not a status effect on the player. Each aura food is marked with custom data, and eating one triggers a hidden advancement that runs the aura function for its duration (3, 30 or 60 seconds):<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/30s.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/aura/30s.mcfunction}}</ref>
+Aura is not a status effect on the player. Each aura food is marked with custom data, and eating one triggers a hidden advancement (it checks only that the custom data contains the marker, so other fields such as the item updater's <code>version</code> number don't matter) that runs the aura function for its duration (3, 30 or 60 seconds):<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/30s.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/aura/30s.mcfunction}}</ref>
 # A bell resonating sound plays at the player.
 # After 48 ticks (2.4 seconds), every entity within 50 blocks of the player, except the player, receives {{MCW|Glowing}} for the food's duration, with no particles.<ref>{{Source|MF_datapack/data/matcha/function/effects/aura/apply_glow.macro.mcfunction}}</ref>
 # The advancement is revoked, so it can trigger again.
@@ -37,6 +37,8 @@ Each player has their own scoreboard timer, so the pulse is centred on the playe
 {{History line|1.10|Fixed Glow Berry Mash not working.}}
 {{History line|1.12.2|Aura received its tooltip glyph with the new effect icons.}}
 {{History line|1.12.3|The aura functions were rewritten: the pulse is now centred on the player who ate the food instead of the player nearest the world spawn, and a second aura food eaten while one is charging only changes the pending pulse's duration.<ref>{{Source|MF_datapack/data/matcha/function/effects/aura/locate_players.mcfunction}}</ref>}}
+{{History line|1.12.4|2=Aura foods made or found in this version gave no aura. Every new glow berry mash, jam and crumble carries a <code>version</code> number in its custom data, and the aura advancements required the custom data to be exactly the aura marker. Aura foods made before updating, and rotten flesh converted by the item updater, have no version number and still worked.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/30s.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/glow_jam.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref><ref>{{Source|MF_datapack/data/matcha_item/item_modifier/modify/glow_jam.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
+{{History line|1.12.5|2=Fixed: the aura advancements only check that the custom data contains the aura marker, so every aura food works again.<ref>{{Cite changelog|1.12.5|quote=Glow Berry Jam and Mash fixed}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/aura_effect/30s.json}}</ref>}}
 }}
 
 == See also ==
