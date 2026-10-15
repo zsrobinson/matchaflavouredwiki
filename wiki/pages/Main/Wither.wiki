@@ -23,7 +23,7 @@ An invalid Wither is killed 1 second later, and every player sees "The Wither ca
 The Wither drops one {{ItemLink|Amalgamated Pith}}, the vanilla nether star renamed. The Wither's drop can't be changed by a datapack, as the pack's code notes.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/kill_star.mcfunction}}</ref> Amalgamated pith can be broken down into {{ItemLink|Pith}}.
 
 == Behavior ==
-The Wither's attacks apply the Wither effect. Except on Easy, a player who stays withered for 8 seconds loses 1 heart of maximum health (2 on Hard). See [[Wither effect]].
+The Wither's attacks apply the Wither effect. Except on Easy, a player who stays withered for 9 seconds (6 on Hard, longer in [[Shakudo equipment|shakudo armor]]) loses 1 heart of maximum health (2 on Hard). See [[Wither effect]].
 
 The Wither is undead and a target of [[warding]]. Warding equipment attacks copper-armored mobs first, then the Wither, then the nearest other undead mob.
 
