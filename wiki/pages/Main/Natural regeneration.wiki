@@ -4,7 +4,7 @@
 == Mechanics ==
 When a player first joins a world, the pack sets the game rule <code>natural_health_regeneration</code> to <code>false</code>.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref> The rule is set from the reward of the root advancement, so it can be turned back on with <code>/gamerule</code>. Since 1.12.3 it is set only once per world; in 1.12.2 it was set to <code>false</code> again whenever a new player joined or a player first joined after the pack was updated.<ref>{{Source|MF_datapack/data/matcha/function/setup/first_load.mcfunction}}</ref>
 
-The [[hunger]] bar is also hidden, and the pack refills the food level only when it falls to 8 or below, so it normally rests at 9 or 10, below the 18 vanilla needs for regeneration. Only vanilla foods that still restore food points could raise it that far.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
+The [[hunger]] bar is also hidden, and the pack refills the food level only when it falls to 8 or below, so once it has drained from the 20 a player spawns or respawns with, it rests at 9 or 10, below the 18 vanilla needs for regeneration. Only vanilla foods that still restore food points could raise it that far again.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
 
 === Healing instead ===
 * Most [[food]] heals through {{MCW|Instant Health}} or {{EffectLink|Regeneration}}.

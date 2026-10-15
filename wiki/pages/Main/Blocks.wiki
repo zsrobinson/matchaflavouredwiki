@@ -67,7 +67,7 @@ The datapack removes over 350 vanilla recipes in its <code>pack.mcmeta</code> fi
 The design video explains the intent: "I made a lot of tweaks to the recipes to make them kinder for players. Prismarine is craftable from copper. Stone cutters give you more bang for your buck. Can be used with almost all materials."<ref>{{Cite video|quote=I made a lot of tweaks to the recipes to make them kinder for players.}}</ref>
 
 == Drop changes ==
-The pack overrides the loot tables of 91 blocks.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks}}</ref> Apart from ores (see [[Ores]]) and crops (see the food articles), the changes are:
+The pack overrides the loot tables of 97 blocks.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks}}</ref> Apart from ores (see [[Ores]]) and crops (see the food articles), the changes are:
 {| class="wikitable sortable"
 ! Block !! Change
 |-
@@ -145,14 +145,14 @@ The pack edits several block tags:<ref>{{Source|MF_datapack/data/minecraft/tags/
 * '''Mineable with an axe''': beds, candles, cactus and honeycomb blocks.
 * '''Mineable with a shovel''': [[Dirt Slab|dirt slabs]].
 * '''Supports vegetation''': sand, red sand and packed mud, so grass and flowers can be placed on them.<ref>{{Source|MF_datapack/data/minecraft/tags/block/supports_vegetation.json}}</ref>
-* '''Nether portal frame''': the pack adds crying obsidian to the nether portal frame tag, but the developer notes it will only work after the autumn drop; Minecraft 26.2, which the pack runs on, has no such tag.<ref>{{Cite changelog|1.12.1-alpha|quote=Crying Obsidian is now a valid portal block (Will only work post-autumn drop)}}</ref><ref>{{Source|MF_datapack/data/minecraft/tags/block/nether_portal_frame.json}}</ref>
+* '''Nether portal frame''': the pack adds crying obsidian to the nether portal frame tag, so a nether portal can be built from crying obsidian as well as obsidian. The tag is new in ''Minecraft'' 26.3; the developer added it to the pack in 1.12.1-alpha, noting that it would only work after the autumn drop.<ref>{{Cite changelog|1.12.1-alpha|quote=Crying Obsidian is now a valid portal block (Will only work post-autumn drop)}}</ref><ref>{{Source|MF_datapack/data/minecraft/tags/block/nether_portal_frame.json}}</ref>
 The pack also defines its own tag of path blocks for the [[Trailblaze]] enchantment (coarse dirt, gravel, dirt paths, packed mud, mud bricks and their slabs and stairs, and dirt slabs), and tags of blocks that wooden, copper and iron tools cannot mine.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref>
 
 == Resource pack changes ==
 The resource pack retextures a large number of blocks. Changes with their own articles:
 * [[Vertical slabs]]: doubled wooden slabs show vertical planks.
 * [[Large bricks]]: doubled granite, polished granite, diorite, polished diorite, andesite, polished andesite, cut sandstone, cut red sandstone, smooth stone and brick slabs show large bricks.
-* [[Poplar]]: textures prepared for a future wood type.
+* [[Poplar]]: textures for the poplar wood type of ''Minecraft'' 26.3.
 * [[Glow Lichen]]: three-dimensional tufts on floors and worm-like strands on ceilings.
 * [[Rose]]: rose and cyan rose models for item frames.
 * Random texture variations for dirt, coarse dirt, [[Dirt Slab|dirt slabs]], gravel, rooted dirt, lily pads and several flowers.
@@ -165,6 +165,7 @@ The resource pack retextures a large number of blocks. Changes with their own ar
 {{History line|1.0|End stone bricks became brown sandstone, and froglights became phosphor lamps.}}
 {{History line|1.12.1-alpha|Stone, terracotta, quartz and other blocks can no longer be cooked in an oven; they are kilned or blasted instead.<br />Crying obsidian is added to the nether portal frame tag, which only takes effect in a later Minecraft version.}}
 {{History line|1.12.2|Chains are climbable, and endermen can only pick up melons, pumpkins and TNT.<br />Vertical slab and poplar textures added.}}
+{{History line|1.12.6-alpha|On ''Minecraft'' 26.3: crying obsidian works as a nether portal frame, and poplar logs, stripped poplar logs and poplar leaves get the pack's loot tables. Fortune and the electrum intrinsic no longer add tomatoes or chorus fruit.<ref>{{Source|MF_datapack/data/minecraft/tags/block/nether_portal_frame.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/poplar_log.json}}</ref>}}
 }}
 
 == See also ==

@@ -11,7 +11,7 @@
 {{Diagram|Food level|width=360|align=right|caption=The food level the pack refills at 8 or below, so it never falls to vanilla's sprinting threshold.}}
 Every tick, the pack checks each player's food level (0 to 20, where vanilla shows 2 points per drumstick). At 8 or below, the player is given {{MCW|Saturation}} II with a duration of 1, which refills it. Saturation is an instant effect, so the game reads that duration as 1 tick rather than 1 second: each time, the effect acts once and restores 2 food points, and it's given again on the next tick while the level is still 8 or below.<ref name="mh">{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
 
-The food level is therefore back at 9 or 10 within a tick of dropping to 8, well above 6, the vanilla threshold for sprinting, so the player can always sprint and never starves. Above the refill, the food level drains as in vanilla and isn't lowered by the pack. The effect is hidden from the HUD.
+The food level is therefore back at 9 or 10 within a tick of dropping to 8, well above 6, the vanilla threshold for sprinting, so the player can always sprint and never starves. After spawning or respawning, the food level starts at 20, as in vanilla; above the refill it drains as in vanilla and isn't lowered by the pack. The effect is hidden from the HUD.
 
 === Hunger bar ===
 The resource pack replaces every food icon on the HUD with a blank texture, so the hunger bar isn't shown.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/gui/sprites/hud/food_full.png}}</ref>
@@ -28,7 +28,7 @@ Natural regeneration is turned off with a game rule, so a high food level doesn'
 == Hunger effect ==
 On Normal and Hard, the {{EffectLink|Hunger}} status effect stops the player from healing: whenever a player with Hunger has {{EffectLink|Regeneration}}, the Regeneration is removed, whether it was given before or after the Hunger.<ref>{{Source|MF_datapack/data/matcha/function/effects/regeneration/mark_player.mcfunction}}</ref> Since [[food]] heals through a hidden Regeneration effect, eating doesn't heal until the Hunger ends. On Easy, Hunger does nothing beyond its vanilla drain on the food level, which the pack refills (above).
 
-While the effect lasts on Normal and Hard, the action bar shows a green timer that empties as the effect runs out, with a ticking sound every second; when the Hunger ends, the bar turns white and the experience orb pickup sound plays.<ref>{{Source|MF_datapack/data/matcha/function/effects/hunger/effect.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/hunger/mark_player.mcfunction}}</ref>
+While the effect lasts on Normal and Hard, the action bar shows a green timer that empties as the effect runs out, with a ticking sound every second once fewer than about 50 seconds remain; when the Hunger ends, the bar turns white and the experience orb pickup sound plays.<ref>{{Source|MF_datapack/data/matcha/function/effects/hunger/effect.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/hunger/mark_player.mcfunction}}</ref>
 
 Hunger is in the pack's list of harmful effects, so [[bread]], [[Honey Ginger Tea|honey ginger tea]] and [[ice cream]] remove it, and a [[milk bottle]] clears it with every other effect.<ref>{{Source|MF_datapack/data/matcha/tags/mob_effect/harmful.json}}</ref> [[Husk]]s inflict it with their hits, as in vanilla, and some foods and items apply it as a side effect:
 

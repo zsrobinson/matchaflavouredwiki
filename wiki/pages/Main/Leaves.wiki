@@ -28,7 +28,7 @@ With no enchantment both rolls use the base chance, so an unenchanted tool has t
 The 1.12.1-alpha notes describe the change as "base 0.5% -> 0.75% ; max fortune 2.5% -> 4%". The 4% chance applies at level IV or higher; Fortune III gives 2%.<ref>{{Cite changelog|1.12.1-alpha|quote=Apple drop rate is now higher than vanilla (base 0.5% -> 0.75% ; max fortune 2.5% -> 4%)}}</ref>
 
 == Appearance ==
-The resource pack gives every kind of leaves a bushier model: a full block of the leaf texture with small tufts that stick out past each face. A tuft is hidden when its face touches another block, so only the outside of a canopy is ragged.<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/cross_leaves.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/models/block/oak_leaves.json}}</ref> Until 1.12.6-alpha the model instead crossed two large planes through each block, reaching half a block beyond it on every side, which were drawn even inside a canopy; the developer changed it "for optimisation reasons".<ref>{{Cite changelog|1.12.6-alpha|quote=Leaf textures changed for optimisation reasons (Let me know what you think)}}</ref>
+The resource pack gives every kind of leaves a bushier model: a full block of the leaf texture with small tufts that stick out past each face. A tuft is hidden when its face touches another block, so only the outside of a canopy is ragged.<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/cross_leaves.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/models/block/oak_leaves.json}}</ref> Until 1.12.6-alpha the model instead crossed four large planes through each block, reaching half a block beyond it on every side, which were drawn even inside a canopy; the developer changed it "for optimisation reasons".<ref>{{Cite changelog|1.12.6-alpha|quote=Leaf textures changed for optimisation reasons (Let me know what you think)}}</ref>
 
 == Usage ==
 === Saplings ===
@@ -40,7 +40,7 @@ Every kind of leaves can be crafted into one of its sapling (for mangrove leaves
 {{History line|1.03|Sapling recipes unlock when the player picks up logs instead of leaves.}}
 {{History line|1.12.1-alpha|Apples drop more often: 0.75% base, up to 4%.}}
 {{History line|1.12.2|Oak and dark oak leaves also roll for apples with the electrum tool intrinsic.}}
-{{History line|1.12.6-alpha|2=Red, orange and yellow [[Poplar|poplar]] leaves, new with ''Minecraft'' 26.3, follow the same rules and craft into a poplar sapling (first in the 1.12.3 alpha for 26.3). Leaves get a new, lighter model: tufts at the edges that are hidden against other blocks, instead of two large crossed planes.<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/cross_leaves.json}}</ref>}}
+{{History line|1.12.6-alpha|2=Red, orange and yellow [[Poplar|poplar]] leaves, new with ''Minecraft'' 26.3, follow the same rules and craft into a poplar sapling (first in the 1.12.3 alpha for 26.3). Leaves get a new, lighter model: tufts at the edges that are hidden against other blocks, instead of four large crossed planes.<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/cross_leaves.json}}</ref>}}
 }}
 
 == References ==

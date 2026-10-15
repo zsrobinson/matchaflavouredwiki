@@ -31,11 +31,11 @@ No equipment cleanses the [[Wither effect]], which is especially dangerous in [[
 {| class="wikitable"
 ! Food !! Tooltip !! Effects removed when eaten
 |-
-| {{ItemLink|Bread}}, {{ItemLink|Honey Ginger Tea}}, {{ItemLink|Ice Cream}} || {{G|Cleanse}} Cleanse Maleffect || Poison, Mining Fatigue, Wither, Weakness, Bad Omen, Blindness, Darkness, Infested, Weaving, Nausea, Oozing, Slowness and {{MCW|Hunger (effect)|Hunger}}<ref>{{Source|MF_datapack/data/matcha/tags/mob_effect/harmful.json}}</ref>
+| {{ItemLink|Bread}}, {{ItemLink|Honey Ginger Tea}}, {{ItemLink|Ice Cream}} || {{G|Cleanse}} Cleanse Maleffect || Poison, Mining Fatigue, Wither, Weakness, Bad Omen, Blindness, Darkness, Infested, Weaving, Nausea, Oozing, Slowness and [[Hunger#Hunger effect|Hunger]]<ref>{{Source|MF_datapack/data/matcha/tags/mob_effect/harmful.json}}</ref>
 |-
 | {{ItemLink|Milk Bottle}} || {{G|Cleanse}} Cleanse || All effects, good and bad
 |}
-Food cleansing is a one-time removal, not an immunity. The food version of Cleanse Maleffect also removes {{MCW|Bad Omen}}, Wither and [[Hunger#Hunger effect|Hunger]], which the shakudo elytra does not.
+Food cleansing is a one-time removal, not an immunity. The food version of Cleanse Maleffect also removes {{MCW|Bad Omen}}, Wither and Hunger, which the shakudo elytra does not.
 
 == History ==
 {{History|
