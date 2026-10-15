@@ -5,22 +5,21 @@
 |renewable=Yes
 |stackable=Yes (64)
 }}
-{{Upcoming|the 26.3 port|type=page}}
-A '''cushion''' is a decorative item that comes in the 16 dye colors. Cushions were added in ''Minecraft'' 26.3; see {{MCW|Cushion}} for how they behave. They are not in [[Matcha Flavoured 1.12.5|1.12.5]], which is for 26.2; this page describes the pack's 26.3 port, released as the 1.12.3 alpha for 26.3. [[Matcha Flavoured]] adds a [[stonecutter]] recipe for every color, so wool can be cut straight into cushions.
+A '''cushion''' is a decorative item that comes in the 16 dye colors. Cushions were added in ''Minecraft'' 26.3; see {{MCW|Cushion}} for how they behave. [[Matcha Flavoured]] adds a [[stonecutter]] recipe for every color, so wool can be cut straight into cushions.
 
 == Obtaining ==
 === Stonecutting ===
-One block of wool of a color gives 2 cushions of the same color in the [[stonecutter]]. For example, a black wool gives 2 black cushions.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/black_cushion.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref> There is one recipe per color.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/white_cushion.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
+One block of wool of a color gives 2 cushions of the same color in the [[stonecutter]]. For example, a black wool gives 2 black cushions.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/black_cushion.json}}</ref> There is one recipe per color.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/white_cushion.json}}</ref>
 
 === Crafting ===
 The vanilla recipes still work: three slabs of one color of wool in a row make a cushion, and a cushion and a dye of another color make a cushion of that color. The wool slabs come from the stonecutter as well: see [[Stonecutter]].
 
 === Chest loot ===
-White cushions are found in the barrels of [[abandoned camp]]s, 1–2 at a time.<ref>{{Source|MF_datapack/data/minecraft/loot_table/barrels/abandoned_camp_barrel.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
+White cushions are found in the barrels of [[abandoned camp]]s, 1–2 at a time.<ref>{{Source|MF_datapack/data/minecraft/loot_table/barrels/abandoned_camp_barrel.json}}</ref>
 
 == History ==
 {{History|
-{{History line|Upcoming|2=The 26.3 port (the 1.12.3 alpha for 26.3) adds stonecutter recipes for all 16 colors of cushion, and white cushions to abandoned camp barrels.}}
+{{History line|1.12.6-alpha|Added stonecutter recipes for all 16 colors of cushion, and white cushions to abandoned camp barrels (first in the 1.12.3 alpha for 26.3).}}
 }}
 
 == References ==

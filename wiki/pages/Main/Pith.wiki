@@ -1,35 +1,35 @@
 {{Vanilla|Turtle Scute}}
 {{Infobox auto}}
-A '''Divine Fragment''' is a rare magic material that replaces the {{MCW|Turtle Scute|turtle scute}}. It comes from breaking [[spawner]]s and defeating powerful mobs, and is needed for late-game items: [[Adamant Alloy]], [[Electrum Alloy]], [[Crystal Heart]]s, [[Bedrock Buster]]s, [[Eye of Ender|eyes of ender]] and the [[Prayer of Prometheus]]. Nine fragments make a [[Divine Favor]].
+'''Pith''' (formerly '''Divine Fragment''') is a rare magic material that replaces the {{MCW|Turtle Scute|turtle scute}}. It comes from breaking [[spawner]]s and defeating powerful mobs, and is needed for late-game items: [[Adamant Alloy]], [[Electrum Alloy]], [[Crystal Heart]]s, [[Bedrock Buster]]s, [[Eye of Ender|eyes of ender]] and the [[Prayer of Prometheus]]. Nine pith make an [[amalgamated pith]].
 
 == Obtaining ==
-Divine fragments cannot be farmed from ordinary mobs. The developer's video describes them as the pack's main answer to mob grinders: every spawner broken gives one, so a spawner is worth more broken than built into a farm.<ref>{{Cite video|quote=I wanted to have a way to disincentivize mob grinders and I think this one mechanic does a lot of the heavy lifting. You could make a simple mob grinder, but the divine fragment is staring you in the face. If you want to get to the end, you need that fragment.}}</ref>
+Pith cannot be farmed from ordinary mobs. The developer's video describes it as the pack's main answer to mob grinders: every spawner broken gives one pith, so a spawner is worth more broken than built into a farm.<ref>{{Cite video|quote=I wanted to have a way to disincentivize mob grinders and I think this one mechanic does a lot of the heavy lifting. You could make a simple mob grinder, but the divine fragment is staring you in the face. If you want to get to the end, you need that fragment.}}</ref>
 
 === Sources ===
 {{Sources}}
-Every source uses the same fragment, which has rare (aqua) rarity and an enchantment glint.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/divine_fragment.json}}</ref> Spawners always drop exactly one: Fortune has no effect on them.
+Every source gives the same item, which has rare (aqua) rarity and an enchantment glint.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/divine_fragment.json}}</ref> Spawners always drop exactly one: Fortune has no effect on them.
 
 === Crafting ===
 {{Recipes}}
-A Divine Favor can be broken down into 9 fragments, and 9 fragments craft a Divine Favor.
+An amalgamated pith can be broken down into 9 pith, and 9 pith craft an amalgamated pith.
 
 === Trading ===
-A master-level [[Mouthpiece]] sells one Divine Fragment for 2 [[Crystal Heart]]s and an echo shard.<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/5/crystal_heart.json}}</ref>
+A master-level [[Mouthpiece]] sells one pith for 2 [[Crystal Heart]]s and an echo shard.<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/5/crystal_heart.json}}</ref>
 
 == Usage ==
 {{Uses}}
-One fragment and one [[Stabilized Estus]] make 16 eyes of ender, enough to fill an {{MCW|End Portal|end portal}}. A fragment and a {{MCW|Trial Key|trial key}} make an {{MCW|Ominous Trial Key|ominous trial key}}.
+One pith and one [[Stabilized Estus]] make 16 eyes of ender, enough to fill an {{MCW|End Portal|end portal}}. Pith and a {{MCW|Trial Key|trial key}} make an {{MCW|Ominous Trial Key|ominous trial key}}.
 
 == Behavior ==
-A Divine Fragment lying on the ground gives off small electric spark particles.<ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/item_particles.mcfunction}}</ref>
+Pith lying on the ground gives off small electric spark particles.<ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/item_particles.mcfunction}}</ref>
 
-The fragment is a turtle scute with rare rarity. Baby turtles drop a [[Turtle Shellmet]] instead of a scute when they grow up. The vanilla turtle shell recipe is removed.
+Pith is a turtle scute with rare rarity. Baby turtles drop a [[Turtle Shellmet]] instead of a scute when they grow up. The vanilla turtle shell recipe is removed.
 
 == Advancements ==
 {| class="wikitable"
 ! Advancement !! Description !! Requirement
 |-
-| A Vestige of Divinity || A Relic only obtained by breaking Spawners or vanquishing powerful Forces || Obtain a Divine Fragment. Rewards [[Obol]]s.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_divine_fragment.json}}</ref>
+| A Vestige of Divinity || A Relic only obtained by breaking Spawners or vanquishing powerful Forces || Obtain pith. Rewards [[Obol]]s.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_divine_fragment.json}}</ref>
 |}
 
 == History ==
@@ -43,10 +43,11 @@ The fragment is a turtle scute with rare rarity. Baby turtles drop a [[Turtle Sh
 {{History line|1.12.1-alpha|Can be bought from the Mouthpiece for Crystal Hearts and an echo shard. Turtle scutes that are not the pack's Divine Fragment are removed.}}
 {{History line|1.12.2|The Mouthpiece's trade costs 2 Crystal Hearts instead of 1.<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/5/crystal_heart.json}}</ref>}}
 {{History line|1.12.3|Turtle scutes that are not the pack's Divine Fragment are no longer removed.}}
+{{History line|1.12.6-alpha|Renamed from "Divine Fragment" to "Pith".<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>}}
 }}
 
 == See also ==
-* [[Divine Favor]]
+* [[Amalgamated Pith]]
 * [[Enchanting]]
 * [[Spawner]]
 

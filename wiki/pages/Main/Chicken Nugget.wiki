@@ -17,13 +17,14 @@ Each recipe makes 4 nuggets from [[Cooked Chicken|cooked chicken]] or [[seitan]]
 Eating a nugget takes 0.8 seconds and heals {{Value|Ptero Chicken Nugget|heals}}.
 
 === Trading ===
-All four are among the foods a villager can ask for as its [[favorite food]].
+All four are among the foods a villager can ask for as its [[favorite food]], buying 8 at a time.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_2.mcfunction}}</ref>
 
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Added the four "dino nuggets".}}
 {{History line|1.12.3|2=Crafting chicken nuggets returns the oil's glass bottle. In 1.12.2 the advancement behind this still used an old recipe ID, so the bottle was lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>}}
 {{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.6-alpha|2=Villagers that pick a nugget as their [[favorite food]] buy 8 for 1 obol instead of 1.}}
 }}
 
 == See also ==

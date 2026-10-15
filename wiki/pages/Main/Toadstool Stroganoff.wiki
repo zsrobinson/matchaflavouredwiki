@@ -20,6 +20,7 @@ It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{So
 {{History|
 {{History line|0.7-alpha|Added toadstool stroganoff.}}
 {{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.6-alpha|2=The [[favorite food]] trade can now be completed. Before, it asked for an item with a misspelled name key, which no toadstool stroganoff has.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_30.mcfunction}}</ref>}}
 }}
 
 == See also ==

@@ -2,7 +2,7 @@
 This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''Minecraft: Java Edition'' 26.2, with links to the detailed articles. Renamed items are listed on [[Renamed items]], removed features on [[Removed features]], and known problems in the pack on [[Known bugs]].
 
 == Health, death and survival ==
-* '''[[Hunger]]''' is effectively removed: the hunger bar is hidden and the food level is held just above the sprinting threshold, so sprinting is never limited and nobody starves.
+* '''[[Hunger]]''' is effectively removed: the hunger bar is hidden and the food level is refilled before it reaches the sprinting threshold, so sprinting is never limited and nobody starves. The Hunger effect instead stops healing while it lasts (on Normal and Hard).
 * '''[[Natural regeneration]]''' is off. Health is restored by eating [[food]], by picking up [[Raw Estus|raw Estus]], by [[Crystal Heart|crystal hearts]], near a [[Warding Stone|warding stone]] and by some equipment such as [[Shakudo equipment|shakudo]].
 * '''[[Death]]''' keeps the inventory and experience but permanently removes 1 heart of maximum health (2 on Hard). On Easy, maximum health never falls below 10 hearts; on Normal and Hard it falls to a per-player minimum that drops by a heart at each of seven progression milestones. See [[Death#Minimum hearts]].
 * '''[[Health]]''' starts at 10 hearts and can be raised to 30 hearts with crystal hearts.
@@ -21,7 +21,7 @@ This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''
 * {{MCW|Phantom}}s never spawn, and pillager patrols only start after 5 of the pack's longer days.
 * Zombie-type mobs drop [[Tattered Leather|tattered leather]] or [[Sturdy Leather|sturdy leather]] instead of rotten flesh, and most undead drop [[Raw Estus|raw Estus]] or [[Estus Ash|Estus ash]]. Hostile mobs don't drop the equipment they spawn with, and zombies, husks, skeletons and spiders from [[spawner]]s drop nothing. See [[Mobs]].
 * [[Enderman|Endermen]] killed by a player always drop a [[Stable Void|stable void]], and can only pick up melons, pumpkins and [[TNT]]. [[Blaze]]s drop fire charges instead of blaze rods.
-* [[Spawner]]s drop a [[Divine Fragment|divine fragment]] when broken; so do some strong mobs.
+* [[Spawner]]s drop [[pith]] when broken; so do some strong mobs.
 * The [[Wither]] can only be summoned on the Overworld surface.
 
 == Food and cooking ==

@@ -17,7 +17,7 @@
 == Behavior ==
 Fortune works as vanilla Fortune I. Its maximum level is lowered from III to I, so it cannot be raised by combining books in an [[anvil]].<ref>{{Source|MF_datapack/data/minecraft/enchantment/fortune.json}}</ref> The pack adds the electrum tool intrinsic to the same exclusive set as Fortune and Silk Touch, so a tool can have only one of the three.<ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/exclusive_set/mining.json}}</ref> The pack's block loot tables check for both Fortune and the electrum intrinsic. One table still has a problem: the raw gold entry of [[Native Gold|native gold]] is written in the pre-26.3 loot format, so its Fortune and electrum bonuses are probably not applied.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/gold_ore.json}}</ref> See [[Known bugs]].
 
-Fortune has no effect on [[spawner]]s: each gives exactly one [[Divine Fragment]].
+Fortune has no effect on [[spawner]]s: each gives exactly one [[pith]].
 
 Its anvil cost multiplier is 1, down from 4.
 

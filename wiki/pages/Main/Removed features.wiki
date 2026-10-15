@@ -5,7 +5,7 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 ; Stone tools
 : The vanilla stone tool recipes are blocked. Progression goes from wood straight to copper.<ref>{{Source|README.md}}</ref> See [[Progression]].
 ; Hunger
-: The food bar is hidden and held in a fixed range: the pack applies Hunger when the food level is 10 or more and Saturation when it falls to 7 or lower, so the player can always sprint and food matters only for healing and effects.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref> See [[Hunger]].
+: The food bar is hidden, and the pack gives Saturation whenever the food level falls to 8 or lower, so the player can always sprint and food matters only for healing and effects. Until 1.12.6-alpha it also gave Hunger at 10 or more to hold the level down.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref> See [[Hunger]].
 ; Natural regeneration
 : The <code>natural_health_regeneration</code> gamerule is set to false on first load. The player heals by eating.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref> See [[Natural regeneration]].
 ; Item loss on death
@@ -45,7 +45,7 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 |-
 | [[Cleaver]] (butcher's knife) smithing recipe || 1.12.1-alpha ||
 |-
-| [[Estus Flask]] || [[Matcha Flavoured 1.12.2|1.12.2]] || First removed in 1.10 because players were abusing it, kept in 1.12, and removed for good in 1.12.2 because the developer wanted food to matter most.<ref>{{Cite changelog|1.12.2|quote=Estus Flask, I want food to be most important}}</ref> A recipe unlock and particle trigger for it remain in the code, but the recipe no longer exists.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/estus_ash.json}}</ref>
+| [[Estus Flask]] || [[Matcha Flavoured 1.12.2|1.12.2]] || First removed in 1.10 because players were abusing it, kept in 1.12, and removed for good in 1.12.2 because the developer wanted food to matter most.<ref>{{Cite changelog|1.12.2|quote=Estus Flask, I want food to be most important}}</ref> A particle trigger for drinking it remains in the code; the unlock for its missing recipe was removed in 1.12.6-alpha.<ref>{{Source|MF_datapack/data/matcha/advancement/particle/estus_flask.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/estus_ash.json}}</ref>
 |-
 | Redstone particles || 1.12.2 ||
 |-

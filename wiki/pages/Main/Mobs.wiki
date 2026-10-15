@@ -69,9 +69,9 @@ The pack also overrides the loot tables of these mobs:<ref>{{Source|MF_datapack/
 |-
 | Creaking || 16–32 resin clumps || nothing
 |-
-| Elder guardian || 3 rolls of [[Fishing|fishing]] loot; 1–3 {{ItemLink|Divine Fragment|divine fragments}}, a tide armor trim, and an {{ItemLink|Opal}} (player kill) || prismarine, fish, wet sponge, a 20% trim
+| Elder guardian || 3 rolls of [[Fishing|fishing]] loot; 1–3 {{ItemLink|Pith}}, a tide armor trim, and an {{ItemLink|Opal}} (player kill) || prismarine, fish, wet sponge, a 20% trim
 |-
-| Evoker || totem of undying, 0–1 {{ItemLink|Obol}}; 25% {{ItemLink|Divine Fragment}} (35% with Looting I, +10% per level) || totem, emerald
+| Evoker || totem of undying, 0–1 {{ItemLink|Obol}}; 25% {{ItemLink|Pith}} (35% with Looting I, +10% per level) || totem, emerald
 |-
 | Fox || 1 {{ItemLink|Raw Flesh}} (+0–1 Looting); 1 [[Fox Pelt|fox pelt]], red or snowy to match the fox || held item only
 |-
@@ -91,7 +91,7 @@ The pack also overrides the loot tables of these mobs:<ref>{{Source|MF_datapack/
 |-
 | Parrot || feathers; 1 [[Raw Poultry|raw poultry]] || feathers
 |-
-| [[Piglin#Piglin brute|Piglin brute]] || 15% {{ItemLink|Divine Fragment}}, 30% {{ItemLink|Adamant Scrap}} (player kill) || nothing
+| [[Piglin#Piglin brute|Piglin brute]] || 15% {{ItemLink|Pith}}, 30% {{ItemLink|Adamant Scrap}} (player kill) || nothing
 |-
 | Rabbit || 1–2 {{ItemLink|Tattered Leather}}; raw flesh || 0–1 hide, rabbit's foot
 |-
@@ -111,7 +111,7 @@ The pack also overrides the loot tables of these mobs:<ref>{{Source|MF_datapack/
 |}
 The exact tables are generated on each mob's page, or as <code>Template:Data/Loot/minecraft/entities/''mob''</code>.
 
-Several vanilla drops also appear under the pack's names: creepers and ghasts drop {{ItemLink|Sulfur Chunk|sulfur chunks}} (gunpowder), phantoms drop {{ItemLink|Hepatizon Alloy}} (phantom membrane), and the Wither drops a {{ItemLink|Divine Favor}} (nether star). See [[Renamed items]].
+Several vanilla drops also appear under the pack's names: creepers and ghasts drop {{ItemLink|Sulfur Chunk|sulfur chunks}} (gunpowder), phantoms drop {{ItemLink|Hepatizon Alloy}} (phantom membrane), and the Wither drops an {{ItemLink|Amalgamated Pith}} (nether star). See [[Renamed items]].
 
 == History ==
 {{History|

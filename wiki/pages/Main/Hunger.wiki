@@ -4,16 +4,14 @@
 |invimage=Bread
 |type=Mechanic
 }}
-'''Hunger''' is effectively removed in [[Matcha Flavoured]]. The hunger bar is hidden, the player's food level is held at a value where sprinting is always possible, and [[food]] is eaten for its healing and status effects rather than to fill a bar.
+'''Hunger''' is effectively removed in [[Matcha Flavoured]]. The hunger bar is hidden, the player's food level is never allowed to fall to where sprinting stops, and [[food]] is eaten for its healing and status effects rather than to fill a bar. The {{EffectLink|Hunger}} status effect instead stops the player from healing while it lasts.
 
 == Mechanics ==
 === Food level ===
-{{Diagram|Food level|width=360|align=right|caption=The food level the pack refills at 7 or below and drains at 10 or above, so it sits at 8 or 9, above vanilla's sprinting threshold.}}
-Every tick, the pack checks each player's food level (0 to 20, where vanilla shows 2 points per drumstick):<ref name="mh">{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
-* At 10 or above, the player is given {{EffectLink|Hunger}} CCLVI (level 256) for 1 second, which drains the food level quickly.
-* At 7 or below, the player is given {{MCW|Saturation}} II with a duration of 1, which refills it. Saturation is an instant effect, so the game reads that duration as 1 tick rather than 1 second: each time, the effect acts once and restores 2 food points, and it's given again on the next tick while the level is still 7 or below.
+{{Diagram|Food level|width=360|align=right|caption=The food level the pack refills at 8 or below, so it never falls to vanilla's sprinting threshold.}}
+Every tick, the pack checks each player's food level (0 to 20, where vanilla shows 2 points per drumstick). At 8 or below, the player is given {{MCW|Saturation}} II with a duration of 1, which refills it. Saturation is an instant effect, so the game reads that duration as 1 tick rather than 1 second: each time, the effect acts once and restores 2 food points, and it's given again on the next tick while the level is still 8 or below.<ref name="mh">{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
 
-The food level therefore stays at 8 or 9, above 6, the vanilla threshold for sprinting, and never gets high enough for vanilla natural regeneration or low enough to cause starvation. Both effects are hidden from the HUD.
+The food level therefore never drops below 9, above 6, the vanilla threshold for sprinting, so the player can always sprint and never starves. Above the refill, the food level drains as in vanilla and isn't lowered by the pack. The effect is hidden from the HUD.
 
 === Hunger bar ===
 The resource pack replaces every food icon on the HUD with a blank texture, so the hunger bar isn't shown.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/gui/sprites/hud/food_full.png}}</ref>
@@ -21,14 +19,18 @@ The resource pack replaces every food icon on the HUD with a blank texture, so t
 === Eating ===
 The pack's cooked foods have no vanilla food component at all: they are consumables that can always be eaten and restore no hunger (before 1.12.3 they had a food component with 0 nutrition and 0 saturation and the <code>can_always_eat</code> option). For example, [[bread]] instead grants {{EffectLink|Regeneration}} and removes harmful effects.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref> What a food does is described by its [[intrinsic]] and its tooltip. See [[Food]] and [[Cooking]].
 
-Because the food level never reaches 20, vanilla foods that are not flagged <code>can_always_eat</code> can still be eaten at any time.
+Vanilla foods that still have a food component (from the Creative inventory, for example) restore food points as usual, and can't be eaten once the food level reaches 20.
 
 === Natural regeneration ===
 {{Main|Natural regeneration}}
-Natural regeneration is turned off with a game rule, so a high food level wouldn't heal the player even if it were reached.
+Natural regeneration is turned off with a game rule, so a high food level doesn't heal the player.
 
 == Hunger effect ==
-The {{EffectLink|Hunger}} status effect still exists and is used internally to drain the food level (above). Some foods and items also apply it as a side effect:
+On Normal and Hard, the {{EffectLink|Hunger}} status effect stops the player from healing: whenever a player with Hunger has {{EffectLink|Regeneration}}, the Regeneration is removed, whether it was given before or after the Hunger.<ref>{{Source|MF_datapack/data/matcha/function/effects/regeneration/mark_player.mcfunction}}</ref> Since [[food]] heals through a hidden Regeneration effect, eating doesn't heal until the Hunger ends. On Easy, Hunger does nothing beyond its vanilla drain on the food level, which the pack refills (above).
+
+While the effect lasts on Normal and Hard, the action bar shows a green timer that empties as the effect runs out, with a ticking sound every second; when the Hunger ends, the bar turns white and the experience orb pickup sound plays.<ref>{{Source|MF_datapack/data/matcha/function/effects/hunger/effect.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/hunger/mark_player.mcfunction}}</ref>
+
+Hunger is in the pack's list of harmful effects, so [[bread]], [[Honey Ginger Tea|honey ginger tea]] and [[ice cream]] remove it, and a [[milk bottle]] clears it with every other effect.<ref>{{Source|MF_datapack/data/matcha/tags/mob_effect/harmful.json}}</ref> [[Husk]]s inflict it with their hits, as in vanilla, and some foods and items apply it as a side effect:
 
 {{Data/Effect/Hunger}}
 
@@ -36,6 +38,7 @@ The {{EffectLink|Hunger}} status effect still exists and is used internally to d
 {{History|
 {{History line|0.4-alpha|Removed the "You cannot eat right now" warning.}}
 {{History line|1.12.3|The pack refills the food level at 7 or below instead of 6 or below, so it now rests at 8 or 9 instead of 7 or 8. Crafted and cooked foods lose their food component (which had 0 nutrition and 0 saturation) and are plain consumables.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref>}}
+{{History line|1.12.6-alpha|The pack no longer gives Hunger to drain the food level at 10 or above, and it refills the food level at 8 or below instead of 7 or below. On Normal and Hard, the Hunger effect now removes Regeneration, so it stops healing, and shows a timer in the action bar. Bread and other foods that remove harmful effects now remove Hunger too.<ref>{{Source|MF_datapack/data/matcha/function/effects/regeneration/mark_player.mcfunction}}</ref>}}
 }}
 
 == Trivia ==

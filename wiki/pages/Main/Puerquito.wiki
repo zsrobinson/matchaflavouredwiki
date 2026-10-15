@@ -14,12 +14,13 @@ A '''puerquito''' is a pig-shaped molasses cookie that heals {{Value|Puerquito|h
 Eating a puerquito takes {{Value|Puerquito|eat_time}}, heals {{Value|Puerquito|heals}} and gives Regeneration {{Value|Puerquito|level|effect=Regeneration}} for {{Value|Puerquito|duration|effect=Regeneration|format=clock}}.
 
 === Trading ===
-It is one of the foods a villager can ask for as its [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_28.mcfunction}}</ref>
+It is one of the foods a villager can ask for as its [[favorite food]], buying 4 at a time.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_28.mcfunction}}</ref>
 
 == History ==
 {{History|
 {{History line|1.10|Puerquito recipe unlock fixed and translatable name added.}}
 {{History line|1.12.3|2=The Regeneration lasts 10 seconds instead of 30; the tooltip still says 0:30.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/matcha/puerquito.json}}</ref> Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.6-alpha|2=Villagers that pick it as their [[favorite food]] buy 4 for 1 obol instead of 1.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_28.mcfunction}}</ref>}}
 }}
 
 == See also ==

@@ -4,7 +4,7 @@ A '''crystal heart''' is a rare item that permanently raises the player's maximu
 == Obtaining ==
 === Crafting ===
 {{Recipes}}
-The recipe needs a {{ItemLink|Divine Fragment}}, so every crafted heart competes with the other uses of fragments, such as [[Bedrock Buster|bedrock busters]] and alloys.
+The recipe needs {{ItemLink|Pith}}, so every crafted heart competes with the other uses of pith, such as [[Bedrock Buster|bedrock busters]] and alloys.
 
 === Advancements ===
 Four advancements in the tutorial tab reward crystal hearts:<ref>{{Source|MF_datapack/data/matcha/loot_table/advancement/crystal_heart_2.json}}</ref>
@@ -52,7 +52,7 @@ Obtaining a crystal heart for the first time grants '''Crystal Heart!''', which 
 {{History line|0.5-alpha|Added to fishing loot.}}
 {{History line|1.10|Recipe made cheaper, from 27 diamonds to 8. Added to mineshaft loot. Fixed crystal hearts in multiplayer.}}
 {{History line|1.12|Crystal hearts bought from villagers can no longer be eaten. Fixed a typo that stopped hearts being removed properly.}}
-{{History line|1.12.1-alpha|Can be traded to the Mouthpiece, with an echo shard, for a divine fragment. Advancements now reward crystal hearts.}}
+{{History line|1.12.1-alpha|Can be traded to the Mouthpiece, with an echo shard, for a [[Pith|divine fragment]]. Advancements now reward crystal hearts.}}
 {{History line|1.12.2|Crystal hearts are now used by the player instead of being applied as soon as they are picked up, and work as totems of undying. [[Ofuda]] trades now require crystal hearts.}}
 {{History line|1.12.3|2=The "Crystal Heart!" advancement can be earned.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref>}}
 }}

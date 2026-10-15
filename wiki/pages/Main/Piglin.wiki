@@ -8,7 +8,7 @@
 |health=Vanilla
 |spawn=[[Hell]], [[Bastion Remnant|bastion remnants]]
 }}
-A '''piglin''' in [[Matcha Flavoured]] barters from a changed list of items and ignores players wearing [[Adamant equipment|adamant]] or [[Electrum equipment|electrum]] armor as it would gold. Piglin brutes drop {{ItemLink|Divine Fragment|divine fragments}} and {{ItemLink|Adamant Scrap}}.
+A '''piglin''' in [[Matcha Flavoured]] barters from a changed list of items and ignores players wearing [[Adamant equipment|adamant]] or [[Electrum equipment|electrum]] armor as it would gold. Piglin brutes drop {{ItemLink|Pith}} and {{ItemLink|Adamant Scrap}}.
 
 == Bartering ==
 {{Data/Loot/minecraft/gameplay/piglin_bartering}}
@@ -23,7 +23,7 @@ The pack replaces the <code>#minecraft:piglin_loved</code> tag with the vanilla 
 
 == Piglin brute ==
 Piglin brutes have their own loot table in the pack. When killed by a player, a brute drops:<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/piglin_brute.json}}</ref>
-* a {{ItemLink|Divine Fragment}} with a 15% chance, raised to 25% with Looting I and by 10% per further level;
+* {{ItemLink|Pith}} with a 15% chance, raised to 25% with Looting I and by 10% per further level;
 * {{ItemLink|Adamant Scrap}} with a 30% chance, raised to 35% with Looting I and by 5% per further level.
 {{Data/Loot/minecraft/entities/piglin_brute}}
 
@@ -39,7 +39,7 @@ Piglin brutes have their own loot table in the pack. When killed by a player, a 
 == See also ==
 * [[Zombified Piglin]]
 * [[Adamant Scrap]]
-* [[Divine Fragment]]
+* [[Pith]]
 
 == References ==
 {{reflist}}

@@ -122,7 +122,7 @@ Fish heal only once cooked. Raw fish can still be eaten, but they restore no hea
 |}
 
 == Other sources of fishing loot ==
-Two other loot tables roll the fishing table 3 times each: the [[Village|fisherman's house]] chest and the {{MCW|Elder Guardian|elder guardian}}'s drops. The biome is the one at the chest or at the elder guardian's death. Neither is a fishing bobber, so these rolls never give treasure. The pack's [[abandoned village]]s have no loot chests, so the fisherman's house table is not normally used.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json}}</ref>
+The {{MCW|Elder Guardian|elder guardian}}'s drops roll the fishing table 3 times, using the biome where it dies. It isn't a fishing bobber, so these rolls never give treasure.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/elder_guardian.json}}</ref> The village fisherman's house chest table, which rolled it too, is empty.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json}}</ref>
 
 == Sounds ==
 {{Main|Fishing sounds}}
@@ -165,6 +165,7 @@ Old Growth Spruce Taiga added to cool freshwater.}}
 {{History line|1.12.3|2=Fish Bones caught in Sulfur Caves now have the correct texture.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref> The Angler's Almanac entry for pufferfish in Hot Saltwater can be unlocked.<ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>}}
 {{History line|1.12.4|The junk table can't be loaded, so junk catches give nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
 {{History line|1.12.5|The junk table loads again, so junk catches give items again.<ref>{{Cite changelog|1.12.5|quote=Fishing Junk LT Fixed (Not for modded biomes)}}</ref>}}
+{{History line|1.12.6-alpha|The village fisherman's house chest table no longer rolls the fishing table.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json}}</ref>}}
 }}
 <ref>{{Cite changelog|0.5-alpha|quote=Overhauled Fishing System}}</ref><ref>{{Cite changelog|1.10|quote=Fishing Balances}}</ref><ref>{{Cite changelog|1.12.1-alpha|quote=Fishing now gives 85/5 fish to junk in designated biomes (My patch made it worse and would give junk 50% of the time, sorry)}}</ref>
 

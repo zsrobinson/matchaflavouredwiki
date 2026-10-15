@@ -22,12 +22,7 @@ Many advancements give a reward, and their descriptions show it as a symbol befo
 The broken-heart milestones are Brazier (copper), The Stalwart Metal (iron), The Resilient Mineral (diamond), A Zealous Alloy (electrum), A Divine Alloy (adamant), Orpheus (entering Hell) and The End of Dreams (finding a stronghold). The system rewards slow progress: a player who rushes for iron and diamonds makes their deaths more costly sooner. See [[Death]] and [[Difficulty]].
 
 === Revocation on update ===
-When a player joins a world after it has been updated to a newer version of the pack, their recipe unlocks are reset, along with a hand-picked list of the advancements that give rewards or affect the heart system, so that they can be earned again under the new rules, and the player's minimum hearts reset to 10.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref> The list is meant to take away only what the update changed. In 1.12.3 it revokes:
-* in the Tutorial tab, the chain from "From Earth" through "[[You're Rich!]]", "Bonfire Lit", "A Good Samaritan" and "Fishmonger" to "A True Community"; "[[Hellish Powder]]" and everything after it (the four "Canto" advancements, the warding weapons and "Crystal Heart!"); "Hidden Flavors" and "Wait, you can make that?"; "Manners First" and the curry advancements; "Orpheus" and "The End of Dreams"; "Master Metallurge" and the tool and upgrade advancements under it; and, one at a time, "Doomsday Prepper", "A Miraculous Discovery!", "Two in One", "The Warding Metal", "A Zealous Alloy" and "A Divine Alloy";
-* in the Hell tab, "Through Hell" through "Apocrypha", plus "Holy Turret";
-* in the End tab, "Wax Wings", "Icarus' Folly" and "Wings of Eros".
-
-"No More Fish in the Sea", "[[God help you...]]", "Demonic Emissary", "Hidden in the Depths", "To Dreams" and "Iconoclast" are kept; the code notes that the fishing and prayer advancements are spared deliberately. Because "From Earth" is revoked, it is granted again on the next tick and reruns the pack's first-load setup (since 1.12.3 the game rules are only set the first time). The Brazier, The Stalwart Metal and The Resilient Mineral milestones are kept, so only four of the seven broken-heart milestones can be earned a second time. The Stalwart Metal is spared by accident: the list names <code>matcha:tutorial/obtain_iron</code>, which doesn't exist (the advancement is <code>obtain_iron_ingot</code>). The code marks the reset of the minimum to 10 hearts as temporary, to be removed after 1.12.3. See [[Updating items]].
+When a player joins a world after it has been updated to a newer version of the pack, their recipe unlocks are reset, so that recipes that were added or changed can be unlocked again.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref> Since 1.12.6-alpha nothing else is taken away: advancements that give rewards or affect the heart system are kept, and the player's minimum hearts are no longer reset to 10. From 1.12.1-alpha to 1.12.5 the update also revoked a list of those advancements so that they could be earned again under the new rules; in 1.12.3 to 1.12.5 it was a hand-picked list that spared the fishing and prayer advancements, and it reset the minimum to 10 hearts. See [[Updating items]].
 
 == Tutorial ==
 {{See also|Progression|Guide for new players}}
@@ -46,7 +41,7 @@ The Tutorial tab, rooted in "From Earth", traces the pack's progression in sever
 |matcha:tutorial/obtain_steel=Have [[Steel Alloy|steel alloy]] in the inventory.
 |matcha:tutorial/obtain_smithing_table=Have a [[Smithing Table|smithing table]] in the inventory.
 |matcha:tutorial/obtain_smithing_upgrade=Have a [[Smithing Upgrade Template|smithing template]] in the inventory.
-|matcha:tutorial/upgrade_mattock=Smith a steel, shakudo or electrum mattock or dolabra.{{#tag:ref|The criteria for hepatizon use the recipe IDs <code>matcha:smithing/bronze_dolabra</code> and <code>bronze_mattock</code>, which do not exist; the recipes are named <code>hepatizon_dolabra</code> and <code>hepatizon_mattock</code>. Smithing a hepatizon mattock or dolabra therefore does not grant this advancement ({{Source|MF_datapack/data/matcha/advancement/tutorial/upgrade_mattock.json}}). In the 1.12.3 alpha for 26.3 the two hepatizon criteria are removed altogether ({{Source|MF_datapack/data/matcha/advancement/tutorial/upgrade_mattock.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}).|group=note}}
+|matcha:tutorial/upgrade_mattock=Smith a steel, shakudo or electrum mattock or dolabra. Hepatizon and adamant ones don't count.{{#tag:ref|Until 1.12.5 the criteria also named the recipe IDs <code>matcha:smithing/bronze_dolabra</code> and <code>bronze_mattock</code>, which do not exist (the recipes are <code>hepatizon_dolabra</code> and <code>hepatizon_mattock</code>), so smithing a hepatizon mattock or dolabra never granted it. In 1.12.6-alpha the two criteria are removed ({{Source|MF_datapack/data/matcha/advancement/tutorial/upgrade_mattock.json}}).|group=note}}
 |matcha:tutorial/obtain_adamant_tool=Smith any of 13 [[Adamant equipment|adamant]] items, including the claymore.
 |matcha:tutorial/obtain_bronze_tool=Smith any of 12 [[Hepatizon equipment|hepatizon]] items.
 |matcha:tutorial/obtain_electrum_tool=Smith any of 12 [[Electrum equipment|electrum]] items.
@@ -86,7 +81,7 @@ The Tutorial tab, rooted in "From Earth", traces the pack's progression in sever
 |matcha:tutorial/obtain_ruby=Have a [[ruby]] in the inventory. Rubies are found in [[Bastion Remnant|bastion]] chests.
 |matcha:tutorial/obtain_amber=Have [[amber]] in the inventory. Amber comes from the rare [[archaeology]] loot of trail ruins.
 |matcha:tutorial/obtain_topaz=Have a [[topaz]] in the inventory. Topaz is found in [[Ancient City|ancient city]] chests.
-|matcha:tutorial/obtain_divine_fragment=Have a [[Divine Fragment|divine fragment]] in the inventory.
+|matcha:tutorial/obtain_divine_fragment=Have [[pith]] in the inventory.
 |matcha:tutorial/obtain_heart=Have a [[Crystal Heart|crystal heart]] in the inventory.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref>
 |matcha:tutorial/obtain_obol=Have an [[obol]] in the inventory.
 |matcha:tutorial/light_beacon=Use [[Beacon Kindling|beacon kindling]] on a block.
@@ -109,6 +104,7 @@ The Hell tab appears when the player first enters [[Hell]]. Its main line follow
 |matcha:hell/steal_all_prayers=Craft all 23 blessing recipes and the hell-bound book.
 |matcha:hell/obtain_warding_stone=Craft a [[Warding Stone|warding stone]].
 |matcha:hell/obtain_ancient_debris=Have ancient debris or [[Adamant Scrap|adamant scrap]] in the inventory.
+|matcha:hell/wither_breaks_heart=Granted by a function when the [[Wither effect]] runs its course on Normal or Hard and costs the player a heart.<ref>{{Source|MF_datapack/data/matcha/function/effects/wither/effect_normal.mcfunction}}</ref>
 }}
 
 == The End ==
@@ -117,7 +113,7 @@ The End tab appears when the player first enters [[the End]].
 {{Data/Advancements/end
 |matcha:end/root=Enter the End.
 |matcha:end/kill_dragon=Kill the [[Ender Dragon]].
-|matcha:end/kill_dragon reward={{#tag:ref|The reward function drops a divine favor at 0, 100, 0 in the End, announces "Evil has been banished from the surface." to every player, and turns on the safe-surface rule that stops hostile mobs spawning on the overworld surface. It runs once for each player who earns the advancement ({{Source|MF_datapack/data/matcha/function/mechanics/first_dragon_killed_reward.mcfunction}}).|group=note}}
+|matcha:end/kill_dragon reward={{#tag:ref|The reward function drops an amalgamated pith at 0, 100, 0 in the End, announces "Evil has been banished from the surface." to every player, and turns on the safe-surface rule that stops hostile mobs spawning on the overworld surface. It runs once for each player who earns the advancement ({{Source|MF_datapack/data/matcha/function/mechanics/first_dragon_killed_reward.mcfunction}}).|group=note}}
 |matcha:end/elytra=Have an elytra in the inventory.
 |matcha:end/smith_bronze_elytra=Smith a [[Hepatizon Elytra|hepatizon elytra]].
 |matcha:end/smith_shakudo_elytra=Smith a [[Shakudo Elytra|shakudo elytra]].
@@ -153,7 +149,7 @@ Most of the pack's advancement files have no display. They are invisible to play
 {{Data/Advancements/technical
 |matcha:recipe_unlocks=Unlock recipes when the player obtains an item, for example logs unlock the kindling and chest recipes. The whole folder is revoked when the pack is updated.
 |matcha_item:trigger=The automatic item updater, added in 1.12.4: one advancement per pack item, which brings an outdated copy up to date when the player's inventory changes. See [[Updating items#Automatic updates]].
-|matcha:mechanics=Trigger mechanics: using a [[Crystal Heart|crystal heart]], placing an [[Amnestic|amnestic]], [[Asylum Seeker|asylum application]], [[Beacon Kindling|beacon kindling]], [[Bedrock Buster|bedrock buster]], clay fetishes or the happy ghast horn; eating glow berry foods (aura); sleeping; summoning the Wither; hitting a [[Copper Eye|copper eye]]; getting the Wither effect; entering a village or fortress; handling Estus and intrinsic enchantments.
+|matcha:mechanics=Trigger mechanics: using a [[Crystal Heart|crystal heart]], eating an [[Amnestic|amnestic]] or giving one to a villager, [[Asylum Seeker|asylum application]], [[Beacon Kindling|beacon kindling]], [[Bedrock Buster|bedrock buster]], clay fetishes or the happy ghast horn; eating glow berry foods (aura); sleeping; summoning the Wither; hitting a [[Copper Eye|copper eye]]; getting the Wither effect; entering a village or fortress; handling Estus and intrinsic enchantments.
 |matcha:fishing_sounds=Play a distinct sound for each kind of catch. See [[Fishing sounds]].
 |matcha:update_old_items=Replace old copies of the sacred texts and the "Golden" music disc with current ones. See [[Updating items]].
 |matcha:cooking_recipes=Unlock secret recipes ([[Chorus Mochi|chorus mochi]], [[gnocchi]], [[Sweet Berry Toast|sweet berry toast]] and [[Warped Stroganoff|warped stroganoff]]) when their recipe item is obtained.
@@ -165,8 +161,7 @@ Most of the pack's advancement files have no display. They are invisible to play
 }}
 A trigger advancement's reward function revokes the advancement again, so that it can fire the next time.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
 
-{{Upcoming|the 26.3 port}}
-In the 1.12.3 alpha for 26.3, most <code>mechanics</code> advancements hang under <code>matcha:imm_revoke</code>, an impossible advancement whose children are all revoked whenever the world loads or a player joins.<ref>{{Source|MF_datapack/data/matcha/advancement/imm_revoke.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref> The amnestic gets two trigger advancements there, for eating one and for using one on a villager, and milking a mooshroom gets one.
+Since 1.12.6-alpha the trigger advancements in the <code>mechanics</code>, <code>fishing_sounds</code>, <code>particle</code>, <code>update_old_items</code>, <code>item_contingencies</code> and <code>update_vanilla_item</code> folders hang under <code>matcha:imm_revoke</code>, an advancement that can't be earned. All its children are revoked whenever the world loads or a player joins, a safety net in case a reward function fails to revoke one.<ref>{{Source|MF_datapack/data/matcha/advancement/imm_revoke.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction}}</ref> The [[amnestic]] has two of them, for eating one and for using one on a villager, which replace the single one for using it on a block.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/amnestic/villager.json}}</ref>
 
 == History ==
 {{History
@@ -182,7 +177,7 @@ In the 1.12.3 alpha for 26.3, most <code>mechanics</code> advancements hang unde
 {{History line|1.12.3|Advancements were reworked again. The revocation on update now takes away only a hand-picked list instead of most of the tutorial. "Crystal Heart!" and the pufferfish Angler's Almanac entry can be earned. The elytra translation key now exists, and the mechanics advancements that detect the Wither effect and aura foods were rewritten.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/anglers_almanac/saltwater/hot/pufferfish.json}}</ref>}}
 {{History line|1.12.4|2=Added the <code>matcha_item:trigger</code> advancements of the automatic item updater.<ref>{{Source|MF_datapack/data/matcha_item/advancement/trigger/adamant_axe.json}}</ref> The advancement that applies equipment intrinsics after smithing matches the items again, so intrinsics work (see [[Set bonus#Applying intrinsics after smithing]]).<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/intrinsic_enchants_obtained.json}}</ref> The junk Angler's Almanac entries other than Fish Bones can't be unlocked, because the junk loot table fails to load.}}
 {{History line|1.12.5|The junk loot table loads again, so the junk Angler's Almanac entries for its items can be unlocked, except Fish Bones by junk catches.<ref>{{Cite changelog|1.12.5|quote=Fishing Junk LT Fixed (Not for modded biomes)}}</ref>}}
-{{History line|Upcoming|2=In the 26.3 port: the hepatizon entries are dropped from "Three in One?", and the [[amnestic]] and mooshroom-milking mechanics get new trigger advancements under <code>matcha:imm_revoke</code>.<ref>{{Source|MF_datapack/data/matcha/advancement/imm_revoke.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>}}
+{{History line|1.12.6-alpha|2=Added the hidden advancement [[Heartbreaker]]. "Three in One?" gives two obols, as its description says, instead of one, and the hepatizon criteria that could never be met are removed. Updating the pack no longer revokes any reward advancements or resets minimum hearts. Trigger advancements moved under <code>matcha:imm_revoke</code>, and the [[amnestic]] got new ones.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/upgrade_mattock.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref>}}
 }}
 
 == Trivia ==

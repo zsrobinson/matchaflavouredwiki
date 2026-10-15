@@ -1,5 +1,5 @@
-{{Infobox auto|type=Placeable item|renewable=Yes}}
-An '''amnestic''' is an item that makes a [[villager]] forget its profession. Its tooltip reads "Causes a villager to forget who they are" and "Place on the ground next to them". It exists so that villagers can pick up new trades when an update of the pack changes them.<ref>{{Cite changelog|1.10|quote=Villager Amnestics reset villager trades, so they can change update-to-update when needed. If you already have a weaponsmith, pop him a little forget-me-not to unlock the new trades.}}</ref>
+{{Infobox auto|type=Consumable|renewable=Yes}}
+An '''amnestic''' is an item that makes a [[villager]] forget its profession. Its tooltip reads "Causes a villager to forget who they are". It exists so that villagers can pick up new trades when an update of the pack changes them.<ref>{{Cite changelog|1.10|quote=Villager Amnestics reset villager trades, so they can change update-to-update when needed. If you already have a weaponsmith, pop him a little forget-me-not to unlock the new trades.}}</ref>
 
 == Obtaining ==
 === Crafting ===
@@ -7,27 +7,29 @@ An '''amnestic''' is an item that makes a [[villager]] forget its profession. It
 The recipe is unlocked by picking up [[Estus Ash|Estus ash]] (glowstone dust).<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/estus_ash.json}}</ref> Amnestics stack to 64.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/amnestic.json}}</ref>
 
 == Usage ==
-Using an Amnestic on a block places an invisible marker there. The pack then finds the villager nearest to that spot and:<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/amnestic.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic_wrapped.mcfunction}}</ref>
-* sets its profession to none and its level to 1 (Novice), which removes its trades;
+=== On a villager ===
+An Amnestic is used by right-clicking a villager with it. The pack then finds the villager nearest to a point about 1.5 blocks in front of the player's eyes (normally the one clicked) and:<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/amnestic/villager.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic/give_villager.mcfunction}}</ref><ref name="vc">{{Source|MF_datapack/data/matcha/function/mechanics/amnestic/villager_consumed.mcfunction}}</ref>
+* plays a low-pitched villager sound;
+* sets its profession to none, its level to 1 (Novice) and its experience to 0, which removes its trades;
+* makes it forget its job site block;
 * resets its restock timer;
 * clears its [[favorite food]] flag, so it is given a new favorite food.
-The marker is then removed. The villager is chosen by distance alone, with no range limit, so the Amnestic should be placed right next to the intended villager.
+One Amnestic is used up, unless the player is in Creative mode.
 
-The villager's experience is not reset. It becomes unemployed and can take any profession from a nearby job site block, starting at Novice with the current trade lists. Because vanilla villagers gain only one level per trade, a villager that already has a lot of experience climbs back up one level each time the player trades with it, and only unlocks the next level's trades after that trade.<ref>{{Cite changelog|1.12.2|quote=Amnestics no longer reset villager XP BUT beucase of how villager trading work, they won't re-unlock the new items until you trade with them for each level at least once (Best I can do rn)}}</ref>
+The villager becomes unemployed and can take any profession from a nearby job site block, starting at Novice with the current trade lists.
+
+=== Eating ===
+An Amnestic can also be eaten, which takes 1.6 seconds and removes every recipe the player has unlocked, so recipes unlock afresh as items are picked up.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/amnestic.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic/player_consumed.mcfunction}}</ref>
 
 == Behavior ==
-The Amnestic is a chicken spawn egg that places an invisible armor stand instead of a chicken.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/amnestic.json}}</ref> As with other spawn eggs, using it on a [[spawner]] or trial spawner in Survival destroys every spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/no_eggs_on_spawners.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
-
-=== In the 26.3 port ===
-{{Upcoming|the 26.3 port}}
-In the 1.12.3 alpha for Minecraft 26.3, the Amnestic is reworked into a consumable item (based on a poisonous potato) that no longer places an armor stand. It is used by right-clicking a villager: the villager nearest to a point about 1.5 blocks in front of the player's eyes plays a villager sound, loses its profession, level and favorite food flag as above, and also has its experience set to 0. One Amnestic is used up, unless the player is in Creative mode. Eating one instead takes 1.6 seconds and removes every recipe the player has unlocked, so recipes unlock afresh as items are picked up.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/amnestic.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic/villager_consumed.mcfunction|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic/player_consumed.mcfunction|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
+The Amnestic is a poisonous potato with its food component removed, so eating it has no other effect.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/amnestic.json}}</ref>
 
 == History ==
 {{History|
 {{History line|1.10|Added.}}
 {{History line|1.12.2|No longer resets the villager's experience.}}
-{{History line|1.12.3|Clears the villager's [[favorite food]], so it is given a new one.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic_wrapped.mcfunction}}</ref>}}
-{{History line|Upcoming|2=In the 26.3 port, it is used by right-clicking a villager instead of being placed, plays a sound and resets the villager's experience to 0 again. It can also be eaten, which resets the player's unlocked recipes.}}
+{{History line|1.12.3|Clears the villager's [[favorite food]], so it is given a new one.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic_wrapped.mcfunction|at=d41ac64dd7efde6748884d02c75a46b8f4800797}}</ref>}}
+{{History line|1.12.6-alpha|Reworked from a chicken spawn egg that placed an invisible armor stand into a consumable. It is used by right-clicking a villager instead of being placed, plays a sound, resets the villager's experience to 0 again and makes it forget its job site. It can also be eaten, which resets the player's unlocked recipes. The tooltip loses its "Place on the ground next to them" line.<ref name="vc" />}}
 }}
 
 == Trivia ==

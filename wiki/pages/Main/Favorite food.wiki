@@ -14,13 +14,13 @@ For each such villager, the pack picks a random whole number from 0 to 41 and ru
 {| class="wikitable"
 ! Villager wants !! Villager gives !! Uses
 |-
-| 1 of the favorite food || 1 {{ItemLink|Obol}} || 1
+| The favorite food (1, or more for a few foods; see [[#Foods]]) || 1 {{ItemLink|Obol}} || 1
 |}
 Every one of the 42 foods has the same 1 in 42 chance. The food in the trade carries the full item data of the pack's current version of that food, so it has to be a food made or found in the current version; older copies with a different format do not match.
 
 Because the check needs the villager to have experience, the favorite food appears only after the first trade with a villager, and never on an unemployed villager or a nitwit. The favorite food is a villager trade only; the [[Wandering Trader]] does not get one.
 
-An [[Amnestic]] clears the villager's favorite food flag. It does not reset the villager's experience, so a villager that had traded before is given a new random favorite food within 30 seconds of taking a new profession, without needing a trade first.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic_wrapped.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref> In the 26.3 port the Amnestic also sets the experience back to 0, so the new favorite food appears only after the first trade in the new profession.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic/villager_consumed.mcfunction|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
+An [[Amnestic]] clears the villager's favorite food flag and sets its experience back to 0, so the new favorite food appears only after the first trade in the new profession.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic/villager_consumed.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref>
 
 == Foods ==
 {| class="wikitable sortable"
@@ -30,7 +30,7 @@ An [[Amnestic]] clears the villager's favorite food flag. It does not reset the 
 |-
 | 1 || {{ItemLink|Bokguk}} || 1
 |-
-| 2 || {{ItemLink|Brachio Chicken Nugget}} || 1
+| 2 || {{ItemLink|Brachio Chicken Nugget}} || 8
 |-
 | 3 || {{ItemLink|Brownie}} || 1
 |-
@@ -80,27 +80,27 @@ An [[Amnestic]] clears the villager's favorite food flag. It does not reset the 
 |-
 | 26 || {{ItemLink|Pad Thai}} || 1
 |-
-| 27 || {{ItemLink|Ptero Chicken Nugget}} || 1
+| 27 || {{ItemLink|Ptero Chicken Nugget}} || 8
 |-
-| 28 || {{ItemLink|Puerquito}} || 1
+| 28 || {{ItemLink|Puerquito}} || 4
 |-
 | 29 || {{ItemLink|Pumpkin Empanada}} || 1
 |-
 | 30 || {{ItemLink|Toadstool Stroganoff}} || 1
 |-
-| 31 || {{ItemLink|Stego Chicken Nugget}} || 1
+| 31 || {{ItemLink|Stego Chicken Nugget}} || 8
 |-
 | 32 || {{ItemLink|Stroganoff}} || 1
 |-
 | 33 || {{ItemLink|Sweet Berry Danish}} || 1
 |-
-| 34 || {{ItemLink|Tricero Chicken Nugget}} || 1
+| 34 || {{ItemLink|Tricero Chicken Nugget}} || 8
 |-
 | 35 || {{ItemLink|Warped Pizza}} || 1
 |-
 | 36 || {{ItemLink|Green Curry}} || 1
 |-
-| 37 || {{ItemLink|Honey Ginger Tea}} || 1
+| 37 || {{ItemLink|Honey Ginger Tea}} || 3
 |-
 | 38 || {{ItemLink|Japanese Curry}} || 1
 |-
@@ -110,11 +110,12 @@ An [[Amnestic]] clears the villager's favorite food flag. It does not reset the 
 |-
 | 41 || {{ItemLink|Tonkotsu Ramen}} || 1
 |}
-All 42 foods sell for 1 obol, including the curries and ramen, which take the most steps to cook.
+All 42 foods sell for 1 obol, including the curries and ramen, which take the most steps to cook. Most are bought one at a time, but the four chicken nuggets are bought 8 at a time, the puerquito 4 and the honey ginger tea 3.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_2.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_28.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_37.mcfunction}}</ref>
 
 == History ==
 {{History|
 {{History line|1.12.3|Added: every employed villager that has been traded with buys one random food, once. The villager wants 1 of the food, and an [[Amnestic]] gives it a new favorite.}}
+{{History line|1.12.6-alpha|The four chicken nuggets are bought 8 at a time, the puerquito 4 and the honey ginger tea 3. The toadstool stroganoff trade asked for an item with a misspelled name key, which no toadstool stroganoff has, and now asks for the real one. The Amnestic sets the villager's experience back to 0, so a new favorite appears only after a trade.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_30.mcfunction}}</ref>}}
 }}
 The favorite food was contributed by TankyAibem (pull request #193), as a rework of the "local flavors" add-on. It was merged into the repository's <code>main</code> branch about an hour and a half after [[Matcha Flavoured 1.12.2|1.12.2-beta]] was published on Modrinth and is part of 1.12.3.<ref>[https://github.com/kleiwright/matcha-flavoured/commit/139f198a Merge of pull request #193] (2026-09-19 04:50 UTC; the beta was published at 03:20 UTC)</ref>
 

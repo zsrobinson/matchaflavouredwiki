@@ -47,7 +47,7 @@ The 1.12.2 release notes ask players to "bring milk or bread to Hell, please its
 
 == Trivia ==
 * The developer's plans describe this as "Wither removing hearts on hit", part of making hearts easier to lose late in the game for experienced players, inspired by an attack in the Ganon fight in ''Tears of the Kingdom'' that removes a heart "WITHOUT killing them".<ref>{{Source|my_current_and_future_plans.md}}</ref>
-* The pack's code calls this mechanic "Heartbreaker".<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+* <span class="mfw-spoiler">The pack's code calls this mechanic "Heartbreaker", and since 1.12.6-alpha losing a heart to it grants the hidden advancement [[Heartbreaker]] ("Fail to clear the Wither effect before time runs out").</span><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/hell/wither_breaks_heart.json}}</ref>
 
 == See also ==
 * [[Death]]

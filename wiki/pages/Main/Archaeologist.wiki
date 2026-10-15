@@ -71,7 +71,7 @@ All trades can be used 999 times before restocking, and every level offers all o
 {{Main|Explorer maps}}
 Every map costs a single obol, with no compass, compared with 8 to 14 emeralds and a compass for a vanilla cartographer's explorer map. The Overgrown Abbey map is the exception: it costs a copy of [[Paradise Lost]] or [[The Divine Comedy]] instead of an obol.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_paradise_lost.json}}</ref>
 
-Each map searches for the nearest structure of its type within a radius of 100 chunks when the archaeologist reaches that level. If there is none, the map trade is not offered.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/mineshaft.json}}</ref> The Papal Outpost map targets pillager outposts, since papal outposts replace them.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/structure/on_papal_outpost_explorer_maps.json}}</ref>
+Each map searches for the nearest structure of its type within a radius of 100 chunks when the archaeologist reaches that level. If there is none, the map trade is not offered.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/mineshaft.json}}</ref> The Papal Outpost map targets pillager outposts, since papal outposts replace them.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/structure/on_papal_outpost_explorer_maps.json}}</ref> Each map shows its structure's marker; the pack draws its own markers for the papal outpost, shipwreck, trail ruins and abbey.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/shipwreck.json}}</ref>
 
 === Pottery sherds ===
 The archaeologist sells one pottery sherd per level for 1 obol: Sheaf, Howl, Snort, Mourner and Arms Up.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/sheaf_pottery_sherd.json}}</ref>
@@ -88,10 +88,10 @@ Like every villager, an archaeologist that has been traded with will also buy it
 {{History|
 {{History line|1.10|Sells Overgrown Abbey and Papal Outpost maps, with new map textures.
 Takes Clay Fetishes.}}
+{{History line|1.12.6-alpha|The maps are built on the separate map items of ''Minecraft'' 26.3, and most show their structure's marker instead of a red X.}}
 }}
 
 == Trivia ==
-* The Desert Temple Map uses the desert village map marker, and the Trail Ruins Map uses the plains village marker.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/2/desert_temple.json}}</ref>
 * The developer has described plans for the archaeologist to buy [[sacred texts]] in exchange for maps to structures: "The Moutpiece seeks wisdom, the Archaeologist seeks knowledge."<ref>{{Source|README.md}}</ref> The Overgrown Abbey map is the first trade of this kind.
 * Internally the profession is still <code>minecraft:cartographer</code>; only its displayed name changes.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
 
