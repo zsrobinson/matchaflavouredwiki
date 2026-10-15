@@ -2,7 +2,7 @@
 |title=Favorite food
 |type=Trading mechanic
 }}
-A villager's '''favorite food''' is a trade mechanic added in 1.12.3: every employed [[villager]] gets one extra trade after its first trade, in which it buys one serving of a randomly chosen [[food]] for an [[Obol]], once. It is the only way to sell most of the pack's foods.
+A villager's '''favorite food''' is a trade mechanic added in 1.12.3: every employed [[villager]] gets one extra trade after its first trade, in which it buys a randomly chosen [[food]] (usually one serving) for an [[Obol]]. The trade is meant to be used once, but for every food except the apple empanada the limit doesn't take effect (see [[Known bugs]]). It is the only way to sell most of the pack's foods.
 
 == Mechanics ==
 When the data pack loads, it starts a check that runs 3 seconds later and then every 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/favorite_food_setup.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref> Each check looks at every loaded villager that:
