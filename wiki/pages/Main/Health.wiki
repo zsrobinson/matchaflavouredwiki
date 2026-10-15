@@ -39,7 +39,7 @@ The <code>natural_health_regeneration</code> game rule is turned off, so a full 
 
 === Hunger ===
 {{Main|Hunger}}
-The hunger bar is hidden and held at a level where the player can always sprint. It has no effect on health.
+The hunger bar is hidden and refilled before the player would stop being able to sprint. The food level has no effect on health, but on Normal and Hard the {{EffectLink|Hunger}} effect, which [[husk]]s inflict, removes Regeneration, so the player can't heal while it lasts.<ref>{{Source|MF_datapack/data/matcha/function/effects/regeneration/mark_player.mcfunction}}</ref>
 
 == Difficulty ==
 {| class="wikitable"
