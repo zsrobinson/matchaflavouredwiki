@@ -6,7 +6,7 @@
 |id=<code>matcha:traversal</code>
 |source={{Source|MF_datapack/data/matcha/enchantment/traversal.json|traversal.json}}
 }}
-'''Trailblaze''' is an [[enchantment]] added by [[Matcha Flavoured]] for boots, meant to make the wearer faster on paths, gravel and mud bricks. Its internal name is ''Traversal''.
+'''Trailblaze''' is an [[enchantment]] added by [[Matcha Flavoured]] for boots that makes the wearer faster on paths, gravel and mud bricks. Its internal name is ''Traversal''.
 
 == Obtaining ==
 * [[Prayer of St. Clement]], a crafted [[blessing]] (Trailblaze III). It stores <code>matcha:traversal</code> directly, so applying it to boots that already have Trailblaze does not go past level III.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/traversal.json}}</ref>

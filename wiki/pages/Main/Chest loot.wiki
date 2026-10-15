@@ -4,7 +4,7 @@ This page lists every chest loot table in the pack. The tables are generated fro
 
 == General changes ==
 Across the pack's tables:<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json}}</ref>
-* In the mineshaft, buried treasure and desert pyramid tables, cut [[diamond]]s are replaced by [[raw diamond]]s, which must be smelted in a [[Blast Furnace]]. Some tables still contain cut diamonds: bastion treasure, end city, nether fortress, stronghold corridor, several Trial Chambers tables, and the village toolsmith and weaponsmith. The desert pyramid gives raw diamonds, in line with the {{Version|1.12.2}} release notes, which say that no "naturally-occuring free diamonds" should appear in surface structures.
+* In the mineshaft, buried treasure and desert pyramid tables, cut [[diamond]]s are replaced by [[raw diamond]]s, which must be smelted in a [[Blast Furnace]]. Some tables still contain cut diamonds: bastion treasure, end city, nether fortress, stronghold corridor and several Trial Chambers tables. The desert pyramid gives raw diamonds, in line with the {{Version|1.12.2}} release notes, which say that no "naturally-occuring free diamonds" should appear in surface structures.
 * Gold and iron ingots are mostly replaced by raw gold and raw iron.
 * Vanilla armor, tools and weapons are replaced by calls to shared equipment tables (see [[#Equipment tables]]) or to the pack's own equipment tables, which give the pack's versions of the items.
 * Vanilla foods such as bread, apples and golden apples are replaced by the pack's versions, so they stack with player-made food.
@@ -216,7 +216,7 @@ Shared tables that other chest tables call to pick a random piece of equipment.
 * The Quran and The Tanakh added to Trial Chamber loot.
 * Trash removed from trial spawners and vaults.}}
 {{History line|1.12.3|date=October 2, 2026|Village chest tables name the bread, apple and sweet berry loot tables by their old IDs, so those entries give nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json|at=d7482cfd1cb9fbd4c633a6d030a954950c70f4d2}}</ref>}}
-{{History line|1.12.5|date=October 10, 2026|Village chests give bread, apples and sweet berries again.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json}}</ref>}}
+{{History line|1.12.5|date=October 10, 2026|Village chests give bread, apples and sweet berries again.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json|at=d41ac64dd7efde6748884d02c75a46b8f4800797}}</ref>}}
 {{History line|1.12.6-alpha|date=October 14, 2026|All village chest loot tables are empty.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json}}</ref>
 * Abandoned camp chests and barrels get their own loot tables.}}
 }}
