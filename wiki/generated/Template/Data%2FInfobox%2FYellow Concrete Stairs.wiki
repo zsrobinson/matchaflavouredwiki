@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Yellow Concrete Stairs}}
+|image={{#if:{{{image|}}}|{{{image}}}|Yellow Concrete Stairs.png}}
+|imagesize=160px
+|invimage=Yellow Concrete Stairs
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:yellow_concrete_stairs</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/yellow_concrete_stairs.json|yellow_concrete_stairs.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

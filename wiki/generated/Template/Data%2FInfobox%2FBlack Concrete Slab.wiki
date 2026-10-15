@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Black Concrete Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Black Concrete Slab.png}}
+|imagesize=160px
+|invimage=Black Concrete Slab
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:black_concrete_slab</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/black_concrete_slab.json|black_concrete_slab.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

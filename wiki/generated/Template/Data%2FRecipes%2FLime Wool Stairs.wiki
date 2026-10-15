@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Lime Wool Stairs]] <small>(vanilla recipe)</small>
+| [[Lime Dye]] +<br />[[White Wool Stairs]] or [[Orange Wool Stairs]] or [[Magenta Wool Stairs]] or [[Light Blue Wool Stairs]] or [[Yellow Wool Stairs]] or [[Pink Wool Stairs]] or [[Gray Wool Stairs]] or [[Light Gray Wool Stairs]] or [[Cyan Wool Stairs]] or [[Purple Wool Stairs]] or [[Blue Wool Stairs]] or [[Brown Wool Stairs]] or [[Green Wool Stairs]] or [[Red Wool Stairs]] or [[Black Wool Stairs]]
+| {{Crafting|A1=Lime Dye|B1=White Wool Stairs;Orange Wool Stairs;Magenta Wool Stairs;Light Blue Wool Stairs;Yellow Wool Stairs;Pink Wool Stairs;Gray Wool Stairs;Light Gray Wool Stairs;Cyan Wool Stairs;Purple Wool Stairs;Blue Wool Stairs;Brown Wool Stairs;Green Wool Stairs;Red Wool Stairs;Black Wool Stairs|Output=Lime Wool Stairs|shapeless=1}}
+|-
+| [[Lime Wool Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Lime Wool]]
+| {{Crafting|A1=Lime Wool|A2=Lime Wool|A3=Lime Wool|B2=Lime Wool|B3=Lime Wool|C3=Lime Wool|Output=Lime Wool Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Lime Wool Stairs]]
+| [[Lime Wool]]
+| {{Stonecutter|Input=Lime Wool|Output=Lime Wool Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -3,7 +3,7 @@
 
 == Obtaining ==
 === Cooking ===
-Cooking takes {{Value|Cooked Pufferfish|cook_time}} in an [[Oven]] or on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pufferfish.json}}</ref>
+Cooking takes {{Value|Cooked Pufferfish|cook_time|station=Oven}} in an [[Oven]] and {{Value|Cooked Pufferfish|cook_time|station=Kindling}} on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_pufferfish.json}}</ref>
 {{Recipes}}
 
 == Usage ==
@@ -14,6 +14,7 @@ Cooked pufferfish is a cooked cod item underneath, so recipes that take [[Cooked
 == History ==
 {{History|
 {{History line|0.5-alpha|Added.}}
+{{History line|1.12.6-alpha|2=Cooking on [[kindling]] takes 10 seconds, up from 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_pufferfish.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref>}}
 }}
 
 == References ==

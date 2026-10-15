@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Windswept Forest Camp Map}}
+|image={{#if:{{{image|}}}|{{{image}}}|Windswept Forest Camp Map.png}}
+|imagesize=160px
+|invimage=Windswept Forest Camp Map
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:abandoned_camp_map</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_common_chest.json|abandoned_camp_common_chest.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

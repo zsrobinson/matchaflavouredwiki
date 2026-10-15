@@ -15,7 +15,7 @@ Kindling has to be lit, for example with [[tinder]] or a [[Fire Starter|fire sta
 
 === Cooking ===
 {{Main|Cooking}}
-Up to four items cook at once, each in 5 seconds, much faster than a vanilla campfire's 30 seconds. It cooks:
+Up to four items cook at once. Food takes 10 seconds (200 ticks), a third of a vanilla campfire's 30 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_beef.json}}</ref> It cooks:
 * The simple preparations of [[intrinsic]] ingredients, including [[Popped Chorus Fruit|popped chorus fruit]] and [[Dried Kelp|dried kelp]].
 * [[Bread]], [[Baked Potato|baked potato]]es, [[Fried Egg|fried egg]]s, [[nopales]], [[molasses]] and cooked meat and fish.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/molasses.json}}</ref>
 
@@ -23,7 +23,7 @@ The oven meals ([[Green Curry|green curry]], [[Japanese Curry|Japanese curry]], 
 
 It also dries grass and bushes and fires clay balls into bricks:<ref>{{Source|MF_datapack/data/matcha/recipe/campfire/short_dry_grass_campfire.json}}</ref>
 {{Data/Station/Kindling}}
-Drying grass grants ''Harvester''.
+Firing clay and drying tall grass, a large fern or a bush take 5 seconds, and drying short grass or a fern 10 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/campfire/brick_campfire.json}}</ref> Drying grass grants ''Harvester''.
 
 === Crafting ingredient ===
 {{Uses}}
@@ -38,6 +38,7 @@ Drying grass grants ''Harvester''.
 {{History line|1.03|Clay can be cooked on kindling into bricks.}}
 {{History line|1.12.3|Kindling now cooks everything an oven does: pumpkin curry, popped chorus fruit and dried kelp were added.}}
 {{History line|1.12.5|Kindling no longer cooks the oven meals (the curries and tonkotsu ramen); they cook only in an oven.<ref>{{Cite changelog|1.12.5|quote=Ramen and Curries can no longer cooked on campfires}}</ref>}}
+{{History line|1.12.6-alpha|2=Food takes 10 seconds to cook on kindling, up from 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_beef.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref>}}
 }}
 
 == See also ==

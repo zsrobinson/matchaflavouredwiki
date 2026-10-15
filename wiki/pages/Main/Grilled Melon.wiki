@@ -6,7 +6,7 @@
 
 === Cooking ===
 {{Recipes}}
-A melon slice cooks into grilled melon in an [[oven]] or on [[kindling]] in {{Value|Grilled Melon|cook_time}}. Picking up a melon slice unlocks the oven recipe.
+A melon slice cooks into grilled melon in an [[oven]] in {{Value|Grilled Melon|cook_time|station=Oven}} or on [[kindling]] in {{Value|Grilled Melon|cook_time|station=Kindling}}. Picking up a melon slice unlocks the oven recipe.
 
 == Usage ==
 
@@ -15,6 +15,11 @@ Eating grilled melon takes {{Value|Grilled Melon|eat_time}}, heals {{Value|Grill
 
 == Advancements ==
 * ''Powerful Flavors'': cook an intrinsic ingredient. Obtaining any of the 11 simple preparations of the ordinary intrinsic ingredients completes it.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/cook_food.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.6-alpha|2=Cooking on [[kindling]] takes 10 seconds, up from 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/grilled_melon.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref>}}
+}}
 
 == See also ==
 * [[Melon]]

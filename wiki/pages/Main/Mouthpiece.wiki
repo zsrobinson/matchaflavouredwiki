@@ -24,18 +24,18 @@ The Apprentice, Journeyman and Expert trades turn a sacred text and one or two c
 {{Data/Ofuda}}
 The Ofuda is applied to equipment with an [[anvil]], like a vanilla enchanted book; see [[Ofuda]].
 
-=== Divine Fragment ===
-At Master level the mouthpiece turns 2 crystal hearts and an echo shard into a [[Divine Fragment]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/5/crystal_heart.json}}</ref> The developer added this as a trade because divine fragments cannot be crafted directly.<ref>{{Cite changelog|1.12.1-alpha|quote=Divine Fragments can be bought from the Mouthpiece with a Crystal Heart and Echo Shard (Can't be done by crafting since they're poison potatoes)}}</ref>
+=== Pith ===
+At Master level the mouthpiece turns 2 crystal hearts and an echo shard into [[pith]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/5/crystal_heart.json}}</ref> The developer added this as a trade because pith cannot be crafted directly.<ref>{{Cite changelog|1.12.1-alpha|quote=Divine Fragments can be bought from the Mouthpiece with a Crystal Heart and Echo Shard (Can't be done by crafting since they're poison potatoes)}}</ref>
 
 Like every villager, a mouthpiece that has been traded with will also buy its [[favorite food]] once.
 
 == History ==
 {{History|
-{{History line|0.6-alpha|No longer sells Divine Fragments, to discourage mob farms.}}
+{{History line|0.6-alpha|No longer sells [[Pith|Divine Fragments]], to discourage mob farms.}}
 {{History line|1.10|Added the Ofuda trades for [[The Tanakh]] (Prayer of Exodus) and [[The Quran]] (Prayer of The Prophet).}}
 {{History line|1.12|Crystal hearts from trades can no longer be eaten.}}
 {{History line|1.12.1-alpha|Sells Divine Fragments for crystal hearts and an echo shard.}}
-{{History line|1.12.2|The Ofuda trades require crystal hearts. The Divine Fragment trade costs 2 crystal hearts instead of 1.<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/5/crystal_heart.json}}</ref>}}
+{{History line|1.12.2|The Ofuda trades require crystal hearts. The pith trade costs 2 crystal hearts instead of 1.<ref>{{Source|MF_datapack/data/matcha/villager_trade/librarian/5/crystal_heart.json}}</ref>}}
 }}
 
 == Trivia ==

@@ -21,10 +21,10 @@ All effects are checked every tick while the boots are worn.<ref>{{Source|MF_dat
 |-
 | II || As level I, and the wearer also has {{EffectLink|Slow Falling}} II while sneaking.
 |-
-| III || As level II, and the wearer can charge an updraft. After sneaking for a total of 45 ticks (2.25 seconds), a dust burst and a chime mark the charge as ready. Releasing sneak while in the air and under Slow Falling then plays a wind burst sound and gives {{EffectLink|Levitation}} XIII for 1 second, launching the wearer upward.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/zephyr_execute.mcfunction}}</ref> Releasing sneak in the air without enough charge only plays the sound. Any release in the air resets the charge.
+| III || As level II, and the wearer can charge an updraft. Each tick spent sneaking adds to the charge; after 45 ticks (2.25 seconds) of continuous sneaking, a dust burst and a chime mark it as ready.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/zephyr/charge.mcfunction}}</ref> Releasing sneak while in the air with a full charge plays a wind burst sound with gust and poof particles and gives {{EffectLink|Levitation}} XIII for 1 second, launching the wearer upward.<ref name="apply">{{Source|MF_datapack/data/matcha/function/enchantment_effects/zephyr/apply.mcfunction}}</ref> Releasing sneak before the charge is full, or while standing on the ground, cancels the charge.
 |}
 
-The sneak time is counted with the player's <code>sneak_time</code> statistic, so it builds up across separate sneaks until it is reset by a release in the air.<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+The usual way to use it is to sneak on the ground until the charge is ready, jump, and let go of sneak in mid-air. Since the charge is kept while sneaking, the wearer can also charge while drifting down under Slow Falling and release in the air.<ref name="apply" />
 
 Zephyr's anvil cost multiplier is 0.
 
@@ -34,6 +34,7 @@ Zephyr's anvil cost multiplier is 0.
 {{History line|1.12.1-alpha|No longer spams its sound while under Slow Falling. The wind burst is quieter.}}
 {{History line|1.12.2|Reworked into three levels.<ref>{{Cite changelog|1.12.2|quote=Zephyr enchantment reworked so that its 3 levels}}</ref> Moved from the <code>main</code> to the <code>matcha</code> namespace, although the Elegy of Hyacinthus still gave the old enchantment.}}
 {{History line|1.12.3|The Elegy of Hyacinthus stores Zephyr directly, so two elegies can be combined into a Zephyr II book.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/zephyr.json}}</ref>}}
+{{History line|1.12.6-alpha|The level III updraft was reworked. The charge must now be built in one continuous sneak, and it is cancelled by releasing sneak on the ground or before it is full; before, sneak time added up across separate sneaks. The launch no longer requires Slow Falling to still be active, and a release without a full charge no longer plays the wind burst sound.<ref name="apply" />}}
 }}
 
 == Trivia ==

@@ -9,13 +9,15 @@ The vanilla recipe is replaced: 4 polished deepslate, 2 smooth stone and a [[Kin
 == Usage ==
 It smelts raw iron, raw gold, [[Raw Silver|raw silver]], [[Raw Diamond|raw diamonds]], [[Carbon-Rich Iron|carbon-rich iron]], ancient debris and several stone blocks, and melts metal equipment back into ingots, diamonds or [[Adamant Alloy|adamant alloy]]. Obtaining one grants ''Burgeoning Metallurge''.
 
+Most recipes are set to 200 ticks. In ''Minecraft'' 26.3 a blast furnace cooks twice as fast as a furnace, so they take 5 seconds; raw iron, gold and copper blocks take 10 seconds and green dye 2.5 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/gravel.json}}</ref>
+
 {{Data/Station/Blast Furnace}}
 
 == History ==
 {{History|
 {{History line|1.10|New interface texture.}}
 {{History line|1.12.2|The recipe takes polished deepslate instead of stone bricks; raw diamonds require it.}}
-{{History line|Upcoming|2=In the 26.3 port (first in the 1.12.3 alpha for 26.3), every recipe takes twice as long: most 10 seconds instead of 5, and raw iron, gold and copper blocks 20 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_block_from_blasting_raw_iron_block.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>}}
+{{History line|1.12.6-alpha|2=For ''Minecraft'' 26.3, where a blast furnace cooks at double speed, every recipe has twice as many ticks (most 200 instead of 100), so smelting takes as long as before.<ref>{{Source|MF_datapack/data/matcha/recipe/blast/iron_block_from_blasting_raw_iron_block.json}}</ref>}}
 }}
 
 == References ==

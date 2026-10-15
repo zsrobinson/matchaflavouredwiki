@@ -8,9 +8,7 @@ A '''fox pelt''' is a crafting material dropped by foxes. The pack gives it two 
 
 == Obtaining ==
 === Mob loot ===
-Every fox drops one fox pelt: red foxes the red pelt, through the loot table <code>matcha:materials/fox_pelt</code>, and snow foxes the snowy pelt, through <code>matcha:materials/fox_pelt_snowy</code>. Looting doesn't add pelts. A fox also drops 1 [[Raw Flesh|raw flesh]] (cooked if the fox was burning or was killed with a weapon enchanted with Fire Aspect), plus 0–1 per level of Looting. In vanilla, foxes drop nothing but their held item.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref>
-
-The two pelt tables also work with the <code>/loot</code> command.<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fox_pelt.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fox_pelt_snowy.json}}</ref>
+Every fox drops one fox pelt: red foxes the red pelt and snow foxes the snowy pelt. Looting doesn't add pelts. A fox also drops 1 [[Raw Flesh|raw flesh]] (cooked if the fox was burning or was killed with a weapon enchanted with Fire Aspect), plus 0–1 per level of Looting. In vanilla, foxes drop nothing but their held item.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref>
 
 == Usage ==
 Recipes that take tattered leather accept fox pelts, because recipes check the item type, not its name. See [[tattered leather#Usage]].
@@ -18,8 +16,9 @@ Recipes that take tattered leather accept fox pelts, because recipes check the i
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Snowy foxes drop their own snowy pelt instead of the red one.}}
-{{History line|1.12.4|The pelts' item models now have the <code>matcha</code> namespace, which fixes their missing-model texture. The fox loot table was rewritten to use the new pelt tables, but the rewrite can't be loaded, so foxes drop nothing: the red pelt's entry names its table with <code>name</code> where the game expects <code>value</code>, and the snowy pelt's entry asks for an item called <code>matcha:materials/fox_pelt_snowy</code>, the name of a loot table.<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fox_pelt.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
-{{History line|1.12.5|The fox loot table was fixed, so foxes drop their pelt and raw flesh again.<ref>{{Cite changelog|1.12.5|quote=Fox Pelts actually fixed}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref>}}
+{{History line|1.12.4|The pelts' item models now have the <code>matcha</code> namespace, which fixes their missing-model texture. The fox loot table was rewritten to use the new pelt tables, but the rewrite can't be loaded, so foxes drop nothing: the red pelt's entry names its table with <code>name</code> where the game expects <code>value</code>, and the snowy pelt's entry asks for an item called <code>matcha:materials/fox_pelt_snowy</code>, the name of a loot table.<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fox_pelt.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
+{{History line|1.12.5|The fox loot table was fixed, so foxes drop their pelt and raw flesh again.<ref>{{Cite changelog|1.12.5|quote=Fox Pelts actually fixed}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json|at=d41ac64dd7efde6748884d02c75a46b8f4800797}}</ref>}}
+{{History line|1.12.6-alpha|The fox loot table names the pelts itself; the separate pelt loot tables, which also worked with the <code>/loot</code> command, are removed.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/fox.json}}</ref>}}
 }}
 
 == Trivia ==

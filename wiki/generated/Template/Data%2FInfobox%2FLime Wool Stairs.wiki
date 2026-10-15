@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Lime Wool Stairs}}
+|image={{#if:{{{image|}}}|{{{image}}}|Lime Wool Stairs.png}}
+|imagesize=160px
+|invimage=Lime Wool Stairs
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:lime_wool_stairs</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/lime_wool_stairs.json|lime_wool_stairs.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Green Wool Stairs}}
+|image={{#if:{{{image|}}}|{{{image}}}|Green Wool Stairs.png}}
+|imagesize=160px
+|invimage=Green Wool Stairs
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:green_wool_stairs</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/green_wool_stairs.json|green_wool_stairs.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -4,7 +4,7 @@
 
 == Obtaining ==
 === Cooking ===
-Cooked large fish is made from anything in the large fish group: [[salmon]] and the 24 custom fish that are salmon (see [[Fish]]). One recipe, with the group as its ingredient, replaces the salmon recipe of 1.12.2. Cooking takes {{Value|Cooked Large Fish|cook_time}} in an [[Oven]] or on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_large_fish.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/item/fish_large.json}}</ref> A [[Mud Kiln|mud kiln]] chars it instead.
+Cooked large fish is made from anything in the large fish group: [[salmon]] and the 24 custom fish that are salmon (see [[Fish]]). One recipe, with the group as its ingredient, replaces the salmon recipe of 1.12.2. Cooking takes {{Value|Cooked Large Fish|cook_time|station=Oven}} in an [[Oven]] and {{Value|Cooked Large Fish|cook_time|station=Kindling}} on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_large_fish.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/item/fish_large.json}}</ref> A [[Mud Kiln|mud kiln]] chars it instead.
 {{Recipes}}
 
 == Usage ==
@@ -12,6 +12,11 @@ Cooked large fish is made from anything in the large fish group: [[salmon]] and 
 Eating it gives a hidden Regeneration III for 60 ticks (3 seconds), which heals {{Value|Cooked Large Fish|heals}}.
 === Crafting ingredient ===
 {{Uses}}
+
+== History ==
+{{History|
+{{History line|1.12.6-alpha|2=Cooking on [[kindling]] takes 10 seconds, up from 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_large_fish.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref>}}
+}}
 
 == References ==
 {{Reflist}}

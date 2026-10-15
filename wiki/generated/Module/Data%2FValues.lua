@@ -92,11 +92,9 @@ return {
 	},
 	["Amber Earrings"] = {
 		["armor"] = { "1" },
-		["durability"] = { "Unbreakable" },
 	},
 	["Amethyst Earrings"] = {
 		["armor"] = { "1" },
-		["durability"] = { "Unbreakable" },
 	},
 	["Andesite"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -124,8 +122,8 @@ return {
 		["durability"] = { "Unbreakable" },
 	},
 	["Baked Apple"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Baked Apple cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Regeneration"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -133,8 +131,8 @@ return {
 		["level:Regeneration"] = { "I", raw = "1", roman = "I" },
 	},
 	["Baked Golden Apple"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Baked Golden Apple cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Absorption"] = { "2 minutes", clock = "2:00", minutes = "2 minutes", seconds = "120 seconds", secs = "120", ticks = "2400" },
 		["duration:Regeneration"] = { "1 minute", clock = "1:00", minutes = "1 minute", seconds = "60 seconds", secs = "60", ticks = "1200" },
@@ -144,15 +142,15 @@ return {
 		["level:Regeneration"] = { "I", raw = "1", roman = "I" },
 	},
 	["Baked Potato"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Baked Potato cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|5}}", hearts = "2.5 hearts", raw = "5" },
 	},
 	["Baked Pumpkin"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Baked Pumpkin cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Resistance"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -193,8 +191,8 @@ return {
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
 	},
 	["Braised Crimson Fungus"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Braised Crimson Fungus cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Weakness"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
@@ -202,15 +200,15 @@ return {
 		["level:Weakness"] = { "I", raw = "1", roman = "I" },
 	},
 	["Braised Mushroom"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Braised Mushroom cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
 	},
 	["Braised Toadstool"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Braised Toadstool cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Poison"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
@@ -218,8 +216,8 @@ return {
 		["level:Poison"] = { "I", raw = "1", roman = "I" },
 	},
 	["Braised Warped Fungus"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Braised Warped Fungus cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Invisibility"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
@@ -227,8 +225,8 @@ return {
 		["level:Invisibility"] = { "I", raw = "1", roman = "I" },
 	},
 	["Bread"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Bread cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
@@ -340,8 +338,8 @@ return {
 		["level:Strength"] = { "I", raw = "1", roman = "I" },
 	},
 	["Chocolate"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Chocolate cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Haste"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
@@ -364,6 +362,10 @@ return {
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 		["level:Levitation"] = { "30", raw = "30", roman = "XXX" },
 	},
+	["Clear Mushroom Soup"] = {
+		["eat_time"] = { "1.6 seconds", raw = "1.6" },
+		["heals"] = { "{{Hp|10}}", hearts = "5 hearts", raw = "10" },
+	},
 	["Cleaver"] = {
 		["attackspeed"] = { "1.6" },
 		["damage"] = { "{{Hp|6}}", raw = "6" },
@@ -383,50 +385,50 @@ return {
 		["durability"] = { "600" },
 	},
 	["Cooked Chicken"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Cooked Chicken cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
 	["Cooked Fish"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Cooked Fish cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
 	["Cooked Flesh"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Cooked Flesh cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
 	["Cooked Large Fish"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Cooked Large Fish cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|5}}", hearts = "2.5 hearts", raw = "5" },
 	},
 	["Cooked Mutton"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Cooked Mutton cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
 	["Cooked Porkchop"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Cooked Porkchop cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
 	["Cooked Pufferfish"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Cooked Pufferfish cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Conduit Power"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -586,7 +588,6 @@ return {
 	},
 	["Diamond Earrings"] = {
 		["armor"] = { "1" },
-		["durability"] = { "Unbreakable" },
 	},
 	["Diamond Helmet"] = {
 		["armor"] = { "3" },
@@ -650,8 +651,8 @@ return {
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Dried Kelp"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Dried Kelp cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Water Breathing"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["eat_time"] = { "0.5 seconds", raw = "0.5" },
@@ -739,8 +740,8 @@ return {
 		["heals"] = { "{{Hp|10}}", hearts = "5 hearts", raw = "10" },
 	},
 	["Fried Egg"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Fried Egg cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
@@ -776,8 +777,8 @@ return {
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
 	["Glow Berry Mash"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Glow Berry Mash cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
@@ -903,8 +904,8 @@ return {
 		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Grilled Melon"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Grilled Melon cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Fire Resistance"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
@@ -912,8 +913,8 @@ return {
 		["level:Fire Resistance"] = { "I", raw = "1", roman = "I" },
 	},
 	["Grilled Tomatoes"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Grilled Tomatoes cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Strength"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
@@ -968,7 +969,7 @@ return {
 	},
 	["Hepatizon Laurel"] = {
 		["armor"] = { "1" },
-		["durability"] = { "Unbreakable" },
+		["durability"] = { "407" },
 	},
 	["Hepatizon Leggings"] = {
 		["armor"] = { "6" },
@@ -1004,8 +1005,8 @@ return {
 		["miningspeed"] = { "1.5" },
 	},
 	["Honey Ginger Tea"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Honey Ginger Tea cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Speed"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
@@ -1116,7 +1117,6 @@ return {
 	},
 	["Lapis Earrings"] = {
 		["armor"] = { "1" },
-		["durability"] = { "Unbreakable" },
 	},
 	["Latke"] = {
 		["eat_time"] = { "2 seconds", raw = "2" },
@@ -1206,8 +1206,8 @@ return {
 		["level:Fire Resistance"] = { "I", raw = "1", roman = "I" },
 	},
 	["Molasses"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Molasses cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 	},
 	["Mushroom Pizza"] = {
@@ -1223,15 +1223,14 @@ return {
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
 	["Nopales"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Nopales cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.2 seconds", raw = "1.2" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
 	["Opal Earrings"] = {
 		["armor"] = { "1" },
-		["durability"] = { "Unbreakable" },
 	},
 	["Orange Glazed Terracotta"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -1263,7 +1262,7 @@ return {
 	},
 	["Pickled Potatoes"] = {
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
-		["heals"] = { "{{Hp|10}}", hearts = "5 hearts", raw = "10" },
+		["heals"] = { "{{Hp|8}}", hearts = "4 hearts", raw = "8" },
 	},
 	["Pink Glazed Terracotta"] = {
 		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
@@ -1275,13 +1274,17 @@ return {
 		["level:Poison"] = { "I", raw = "1", roman = "I" },
 	},
 	["Popped Chorus Fruit"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Popped Chorus Fruit cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Levitation"] = { "3 seconds", clock = "0:03", seconds = "3 seconds", secs = "3", ticks = "60" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
 		["level:Levitation"] = { "III", raw = "3", roman = "III" },
+	},
+	["Porkchop"] = {
+		["eat_time"] = { "0 seconds", raw = "0" },
+		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
 	["Ptero Chicken Nugget"] = {
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
@@ -1356,7 +1359,6 @@ return {
 	},
 	["Ruby Circlet"] = {
 		["armor"] = { "1" },
-		["durability"] = { "Unbreakable" },
 	},
 	["Rusty Axe"] = {
 		["attackspeed"] = { "0.9" },
@@ -1496,15 +1498,15 @@ return {
 		["cook_time:Oven"] = { "2.5 seconds", clock = "0:02", seconds = "2.5 seconds", secs = "2.5", ticks = "50" },
 	},
 	["Steak"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Steak cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 	},
 	["Steamed Carrots"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Steamed Carrots cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Night Vision"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
@@ -1512,8 +1514,8 @@ return {
 		["level:Night Vision"] = { "I", raw = "1", roman = "I" },
 	},
 	["Steamed Golden Carrots"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Steamed Golden Carrots cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Night Vision"] = { "1 minute", clock = "1:00", minutes = "1 minute", seconds = "60 seconds", secs = "60", ticks = "1200" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
@@ -1676,8 +1678,8 @@ return {
 		["level:Health Boost"] = { "I", raw = "1", roman = "I" },
 	},
 	["Sweet Berry Mash"] = {
-		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
-		["cook_time:Kindling"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time"] = { error = "Sweet Berry Mash cooks in different times at different stations: give station=" },
+		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["cook_time:Oven"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
 		["duration:Health Boost"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
@@ -1726,7 +1728,6 @@ return {
 	},
 	["Topaz Earrings"] = {
 		["armor"] = { "1" },
-		["durability"] = { "Unbreakable" },
 	},
 	["Tricero Chicken Nugget"] = {
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },

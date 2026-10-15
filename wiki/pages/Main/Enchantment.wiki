@@ -12,7 +12,7 @@ The pack also uses enchantments for the fixed [[intrinsic]] effects of equipment
 |matcha:reach=+2 block interaction range per level
 |matcha:riposte=Pushes the wielder backward after each hit
 |matcha:slaughter=+40 damage against livestock and slows nearby livestock
-|matcha:traversal=Meant to speed the wearer up on paths, gravel and mud bricks, but has no speed effect in 1.12.3; wears the boots down and kicks up dirt particles
+|matcha:traversal=Speeds the wearer up on paths, gravel and mud bricks, and for about a second after leaving them; wears the boots down and kicks up dirt particles
 |matcha:zephyr=Sneaking gives Jump Boost VII; higher levels add Slow Falling and a charged updraft
 }}
 
@@ -39,6 +39,7 @@ The table below is generated from the pack's enchantment files. It also lists th
 {{History line|1.12.1-alpha|Fortune's maximum level lowered to I. Warding enchantments made mutually exclusive.}}
 {{History line|1.12.2|Feather Falling's damage reduction doubled. [[Zephyr]] reworked into three levels. The pack's enchantments moved from the <code>main</code> to the <code>matcha</code> namespace.}}
 {{History line|1.12.3|The five blessings that gave old <code>main</code> enchantments give the <code>matcha</code> ones. [[Trailblaze]] lost its speed effect and its tooltip name became "Soul Speed". The enchantment files were converted to the 26.3 data format, which changes no other enchantment's effects.}}
+{{History line|1.12.6-alpha|[[Trailblaze]] has its speed boost and name back, now with a short buffer that keeps it for about a second after leaving a path. [[Zephyr]] III's updraft must be charged in one continuous sneak.}}
 }}
 
 == See also ==

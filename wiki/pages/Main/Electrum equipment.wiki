@@ -2,7 +2,7 @@
 '''Electrum equipment''' is [[Diamond equipment|diamond equipment]] upgraded with [[Electrum Alloy|electrum alloy]], a silver and gold alloy. Its tools are the only source of Fortune III, its weapons have Looting and Smite, and its armor adds [[Warding]].
 
 == Obtaining ==
-Electrum alloy is crafted from four gold ingots, four silver bullion and a [[Divine Fragment|divine fragment]]. Diamond equipment is upgraded at a [[Smithing Table|smithing table]] ([[Smithing Upgrade Template|template]] for the dolabra and mattock). It can only be repaired with blocks of diamond, which the 1.12.1-alpha notes explain is meant to keep players from always wearing it.
+Electrum alloy is crafted from four gold ingots, four silver bullion and [[pith]]. Diamond equipment is upgraded at a [[Smithing Table|smithing table]] ([[Smithing Upgrade Template|template]] for the dolabra and mattock). It can only be repaired with blocks of diamond, which the 1.12.1-alpha notes explain is meant to keep players from always wearing it.
 
 == Characteristics ==
 * Tools carry the electrum fortune intrinsic (level 3 on most, 2 on the mattock), which the pack's block loot tables treat like Fortune; it cannot be combined with Fortune or Silk Touch.<ref>{{Source|MF_datapack/data/matcha/enchantment/electrum_tool.json}}</ref>
@@ -32,7 +32,7 @@ Values are the item's real attributes; where the hand-written tooltip differs, t
 == History ==
 {{History|
 {{History line|0.4-alpha|Fixed electrum tools and weapons, whose Warding did not work. Added the electrum spear.}}
-{{History line|1.03|Electrum alloy now needs a [[Divine Fragment|divine fragment]], like adamant, and has an enchantment glint.}}
+{{History line|1.03|Electrum alloy now needs a [[Pith|divine fragment]], like adamant, and has an enchantment glint.}}
 {{History line|1.10|Buffed electrum, and made the set bonus clearer.}}
 {{History line|1.12|Fixed severe multiplayer lag caused by electrum armor.}}
 {{History line|1.12.1-alpha|Electrum became the only source of Fortune III, and it can only be repaired with blocks of diamond. The set bonus was nerfed from 4 to 2 hearts.}}

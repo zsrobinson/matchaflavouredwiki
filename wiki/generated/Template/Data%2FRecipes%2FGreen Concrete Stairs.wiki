@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Green Concrete Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Green Concrete]]
+| {{Crafting|A1=Green Concrete|A2=Green Concrete|A3=Green Concrete|B2=Green Concrete|B3=Green Concrete|C3=Green Concrete|Output=Green Concrete Stairs,4}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Green Concrete Stairs]]
+| [[Green Concrete]]
+| {{Stonecutter|Input=Green Concrete|Output=Green Concrete Stairs}}
+|-
+| [[Green Concrete Stairs]] <small>(vanilla recipe)</small>
+| [[Green Concrete]]
+| {{Stonecutter|Input=Green Concrete|Output=Green Concrete Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

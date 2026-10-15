@@ -1,0 +1,28 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[White Concrete Slab]]
+| [[White Concrete]]
+| {{Stonecutter|Input=White Concrete|Output=White Concrete Slab,2}}
+|-
+| [[White Concrete Stairs]]
+| [[White Concrete]]
+| {{Stonecutter|Input=White Concrete|Output=White Concrete Stairs}}
+|-
+| [[White Concrete Slab]] <small>(vanilla recipe)</small>
+| 3 × [[White Concrete]]
+| {{Crafting|A1=White Concrete|B1=White Concrete|C1=White Concrete|Output=White Concrete Slab,6}}
+|-
+| [[White Concrete Slab]] <small>(vanilla recipe)</small>
+| [[White Concrete]]
+| {{Stonecutter|Input=White Concrete|Output=White Concrete Slab,2}}
+|-
+| [[White Concrete Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[White Concrete]]
+| {{Crafting|A1=White Concrete|A2=White Concrete|A3=White Concrete|B2=White Concrete|B3=White Concrete|C3=White Concrete|Output=White Concrete Stairs,4}}
+|-
+| [[White Concrete Stairs]] <small>(vanilla recipe)</small>
+| [[White Concrete]]
+| {{Stonecutter|Input=White Concrete|Output=White Concrete Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

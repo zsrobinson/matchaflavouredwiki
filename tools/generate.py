@@ -504,10 +504,30 @@ def out_text(o):
     return safe(slot_name(o)) + (',%d' % o['count'] if o.get('count', 1) > 1 else '')
 
 
+def _cooking_speed():
+    """{recipe type: how many times faster than its cookingtime the station cooks}. Since 26.3 a smoker
+    (Mud Kiln) and a blast furnace divide every recipe's time by the fuel's speed provider, which for
+    all vanilla fuels is cooking/speed_default: fast_speed_multiplier on the blocks in
+    predicate/block/fast_cooking, else normal_speed_multiplier."""
+    base = os.path.join(ROOT, 'source', 'vanilla-data', 'data', 'minecraft')
+    try:
+        fast = json.load(open(os.path.join(base, 'context_float_provider', 'cooking', 'fast_speed_multiplier.json')))
+        blocks = json.load(open(os.path.join(base, 'predicate', 'block', 'fast_cooking.json')))['blocks']
+    except FileNotFoundError:
+        return {}  # before 26.3: cookingtime is the time
+    by_block = {'minecraft:smoker': 'smoking', 'minecraft:blast_furnace': 'blasting', 'minecraft:furnace': 'smelting'}
+    return {by_block[b]: float(fast) for b in blocks if b in by_block}
+
+
+COOKING_SPEED = _cooking_speed()
+
+
 def cook_ticks(r):
-    """A cooking recipe's time in ticks (the recipe type's default when the file gives none)."""
-    return r.get('cookingtime') or {'smelting': 200, 'smoking': 100, 'blasting': 100,
-                                    'campfire_cooking': 600}[r['type'].split(':')[-1]]
+    """A cooking recipe's time in ticks as the game runs it (the recipe type's default when the file
+    gives none), after the station's speed multiplier."""
+    t = r['type'].split(':')[-1]
+    raw = r.get('cookingtime') or {'smelting': 200, 'smoking': 100, 'blasting': 100, 'campfire_cooking': 600}[t]
+    return int(round(raw / COOKING_SPEED.get(t, 1)))
 
 
 def recipe_ui(r):
@@ -762,7 +782,7 @@ BIOME_TAGS = DATA['biome_tags']  # biome tag -> biome ids
 
 def ctype(c):
     """A loot condition's type, bare: a term of all_of / any_of can also be a predicate's name."""
-    return (c if isinstance(c, str) else c.get('condition', '')).split(':')[-1]
+    return (c if isinstance(c, str) else c.get('type', '')).split(':')[-1]
 
 
 def entry_biome_list(e):
@@ -839,7 +859,7 @@ def cond_notes(conds):
             inner = cond_notes([c.get('term')])[1]
             if inner:
                 notes.append('not ' + inner[0])
-        elif t == 'block_state_property':
+        elif t == 'match_block':
             notes.append('block state property')
         elif t == 'survives_explosion':
             continue
@@ -1957,7 +1977,7 @@ ADV_ICON_STANDINS = {'matcha:tutorial/cook_secret_food': 'Steamed Golden Carrots
                      'matcha:tutorial/smith_warding_shield': 'Warding Shield'}       # a shield with banner patterns
 # Reward functions in words. None: not a reward for the player (the root's setup is described in prose).
 ADV_FUNCTION_REWARDS = {'matcha:mechanics/heart_container/decrease_minimum_hearts': 'Minimum hearts −1',
-                        'matcha:mechanics/first_dragon_killed_reward': 'a {{ItemLink|Divine Favor}} and a safe [[surface]]',
+                        'matcha:mechanics/first_dragon_killed_reward': 'a {{ItemLink|Amalgamated Pith}} and a safe [[surface]]',
                         'matcha:setup/first_load': None}
 # Tabs (folders) in the order and under the section titles of the "Advancements" page; a new tab goes last.
 ADV_TAB_NAMES = {'tutorial': 'Tutorial', 'hell': 'Hell', 'end': 'The End', 'anglers_almanac': "Angler's Almanac"}
@@ -2328,7 +2348,7 @@ def fishing_entries():
     ents = [e for e in LOOT[FISHING]['entries'] if not e.get('empty')]
     for e in ents:
         # the odds below know only these; anything else has to be taught to them, not skipped
-        other = [c.get('condition') for c in e.get('conditions') or []
+        other = [c.get('type') for c in e.get('conditions') or []
                  if ctype(c) != 'location_check' and not open_water_only({'conditions': [c]})]
         if other or e.get('pool') != 0 or e.get('rolls') != 1 or e.get('pool_conditions'):
             raise SystemExit('generate.py: %s changed shape (%s); update the fishing odds' % (FISHING, other or 'pools'))
@@ -3541,6 +3561,7 @@ def release_name(version):
     names = []
     for fn in sorted(glob.glob(os.path.join(ROOT, 'source', 'changelogs', '*.md'))):
         name = os.path.basename(fn)[len('YYYY-MM-DD_'):-len('.md')]
+        name = name.split('+')[0]  # since 1.12.3 the files carry a suffix: "1.12.6-alpha+dp", "+mod", "+rp-rp"
         if not name.endswith('-rp') and (name == version or name.startswith(version + '-')):
             names.append(name)
     return names[-1] if names else version

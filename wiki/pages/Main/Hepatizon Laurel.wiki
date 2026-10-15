@@ -1,16 +1,17 @@
 {{Infobox auto|intrinsics=}}
-The '''hepatizon laurel''' is an unbreakable head piece that doubles the wearer's base movement speed.
+The '''hepatizon laurel''' is a head piece that never breaks and doubles the wearer's base movement speed.
 
 == Obtaining ==
 An expert-level [[Jeweler|jeweler]] sells it for 10 [[Obol|obols]] and 2 [[Hepatizon Alloy|hepatizon alloy]].<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/4/hepatizon_laurel.json}}</ref>
 {{Sources}}
 
 == Usage ==
-It gives 1 armor and adds 0.1 movement speed, equal to the player's whole base speed. It is unbreakable and fire-resistant (netherite helmet ID). Because it uses the netherite helmet ID, a blast furnace smelts it into an adamant alloy.
+It gives 1 armor and adds 0.1 movement speed, equal to the player's whole base speed. Like [[jewelry]], it is built on a poisonous potato that can't be eaten and doesn't stack, so it has no durability and never breaks. It burns in fire or lava when dropped, and it doesn't keep [[piglin]]s calm as adamant and electrum armor do.<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/4/hepatizon_laurel.json}}</ref>
 
 == History ==
 {{History|
 {{History line|1.10|Buffed the hepatizon laurel.}}
+{{History line|1.12.6-alpha|Now built on a poisonous potato instead of a netherite helmet. It still never breaks, but it burns in fire and lava, no longer counts as piglin-safe armor and can no longer be smelted in a blast furnace.<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/4/hepatizon_laurel.json}}</ref>}}
 }}
 
 == References ==

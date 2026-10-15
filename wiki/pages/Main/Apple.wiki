@@ -14,7 +14,7 @@ Oak and dark oak leaves drop apples. The leaves' loot table has two independent 
 == Usage ==
 
 === Food ===
-Eating an apple heals {{Value|Apple|heals}}. It keeps its vanilla nutrition, which has no lasting effect because [[hunger]] is removed.
+Eating an apple heals {{Value|Apple|heals}}. The pack's apple has no food component, so like the pack's other [[food]] it restores no food points and can be eaten at any time.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/apple.json}}</ref> A plain vanilla apple (from the Creative inventory, for example) keeps its nutrition and can't be eaten while the hidden food level is full; see [[Hunger#Eating]].
 
 Picking up an apple unlocks the [[Baked Apple|baked apple]] recipe. Apples are cooked into baked apples before they can be preserved or baked, and are also used raw in [[Golden Apple|golden apple]]s, [[Apple Cinnamon Oatmeal|apple cinnamon oatmeal]] and [[mead]].
 

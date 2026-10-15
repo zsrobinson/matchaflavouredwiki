@@ -5,7 +5,7 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 ; Stone tools
 : The vanilla stone tool recipes are blocked. Progression goes from wood straight to copper.<ref>{{Source|README.md}}</ref> See [[Progression]].
 ; Hunger
-: The food bar is hidden and held in a fixed range: the pack applies Hunger when the food level is 10 or more and Saturation when it falls to 7 or lower, so the player can always sprint and food matters only for healing and effects.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref> See [[Hunger]].
+: The food bar is hidden, and the pack gives Saturation whenever the food level falls to 8 or lower, so the player can always sprint and food matters only for healing and effects. Until 1.12.6-alpha it also gave Hunger at 10 or more to hold the level down.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref> See [[Hunger]].
 ; Natural regeneration
 : The <code>natural_health_regeneration</code> gamerule is set to false on first load. The player heals by eating.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref> See [[Natural regeneration]].
 ; Item loss on death
@@ -45,11 +45,11 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 |-
 | [[Cleaver]] (butcher's knife) smithing recipe || 1.12.1-alpha ||
 |-
-| [[Estus Flask]] || [[Matcha Flavoured 1.12.2|1.12.2]] || First removed in 1.10 because players were abusing it, kept in 1.12, and removed for good in 1.12.2 because the developer wanted food to matter most.<ref>{{Cite changelog|1.12.2|quote=Estus Flask, I want food to be most important}}</ref> A recipe unlock and particle trigger for it remain in the code, but the recipe no longer exists.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/estus_ash.json}}</ref>
+| [[Estus Flask]] || [[Matcha Flavoured 1.12.2|1.12.2]] || First removed in 1.10 because players were abusing it, kept in 1.12, and removed for good in 1.12.2 because the developer wanted food to matter most.<ref>{{Cite changelog|1.12.2|quote=Estus Flask, I want food to be most important}}</ref> A particle trigger for drinking it remains in the code; the unlock for its missing recipe was removed in 1.12.6-alpha.<ref>{{Source|MF_datapack/data/matcha/advancement/particle/estus_flask.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/estus_ash.json}}</ref>
 |-
 | Redstone particles || 1.12.2 ||
 |-
-| [[Poplar]] stonecutter and sapling recipes || 1.12.2 || Added in 1.12.1-alpha, ahead of the poplar wood type, which ''Minecraft'' 26.2 doesn't have. Both return in the pack's 26.3 port (the 1.12.3 alpha for 26.3), since ''Minecraft'' 26.3 has poplar wood; 1.12.5, for 26.2, still has neither.<ref>{{Source|Matcha_Flavoured/data/main/recipe/stonecutting/poplar_planks.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>
+| [[Poplar]] stonecutter and sapling recipes || 1.12.2 || Added in 1.12.1-alpha, ahead of the poplar wood type, which ''Minecraft'' 26.2 doesn't have. Both returned in {{Version|1.12.6-alpha}} (first in the 1.12.3 alpha for 26.3), since ''Minecraft'' 26.3 has poplar wood.<ref>{{Source|Matcha_Flavoured/data/main/recipe/stonecutting/poplar_planks.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>
 |-
 | Blind cave fish and blind minnow || 1.12.2 || Unused fish: 1.12.1-alpha had a loot table for each, but no fishing table rolled them.<ref>{{Source|Matcha_Flavoured/data/minecraft/loot_table/gameplay/fishing/fish/blind_cave_fish.json|at=027108abe5220f2c3c8252d8cd162b4c1e16174e}}</ref>
 |}

@@ -4,13 +4,14 @@
 == Mechanics ==
 When a player first joins a world, the pack sets the game rule <code>natural_health_regeneration</code> to <code>false</code>.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref> The rule is set from the reward of the root advancement, so it can be turned back on with <code>/gamerule</code>. Since 1.12.3 it is set only once per world; in 1.12.2 it was set to <code>false</code> again whenever a new player joined or a player first joined after the pack was updated.<ref>{{Source|MF_datapack/data/matcha/function/setup/first_load.mcfunction}}</ref>
 
-The [[hunger]] bar is also hidden and held just above the sprinting threshold, so even with the game rule on, the food level would not reach the level vanilla needs for regeneration.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
+The [[hunger]] bar is also hidden, and the pack refills the food level only when it falls to 8 or below, so once it has drained from the 20 a player spawns or respawns with, it rests at 9 or 10, below the 18 vanilla needs for regeneration. Only vanilla foods that still restore food points could raise it that far again.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
 
 === Healing instead ===
 * Most [[food]] heals through {{MCW|Instant Health}} or {{EffectLink|Regeneration}}.
 * {{ItemLink|Raw Estus}}, dropped by zombies and their variants, heals the player when picked up.
 * [[Warding Stone|Warding stones]] heal nearby players.
 * A [[Crystal Heart|crystal heart]] heals with Regeneration XI when used.
+On Normal and Hard, a player with the {{EffectLink|Hunger}} effect loses any Regeneration, so food and other Regeneration sources don't heal until the Hunger ends.<ref>{{Source|MF_datapack/data/matcha/function/effects/regeneration/mark_player.mcfunction}}</ref>
 
 == Trivia ==
 * The pack's README lists "Natural Regeneration has been removed" and "Hunger has been removed" among its major features.<ref>{{Source|README.md}}</ref>

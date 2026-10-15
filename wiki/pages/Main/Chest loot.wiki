@@ -4,11 +4,11 @@ This page lists every chest loot table in the pack. The tables are generated fro
 
 == General changes ==
 Across the pack's tables:<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/simple_dungeon.json}}</ref>
-* In the mineshaft, buried treasure and desert pyramid tables, cut [[diamond]]s are replaced by [[raw diamond]]s, which must be smelted in a [[Blast Furnace]]. Some tables still contain cut diamonds: bastion treasure, end city, nether fortress, stronghold corridor, several Trial Chambers tables, and the village toolsmith and weaponsmith. The desert pyramid gives raw diamonds, in line with the {{Version|1.12.2}} release notes, which say that no "naturally-occuring free diamonds" should appear in surface structures.
+* In the mineshaft, buried treasure and desert pyramid tables, cut [[diamond]]s are replaced by [[raw diamond]]s, which must be smelted in a [[Blast Furnace]]. Some tables still contain cut diamonds: bastion treasure, end city, nether fortress, stronghold corridor and several Trial Chambers tables. The desert pyramid gives raw diamonds, in line with the {{Version|1.12.2}} release notes, which say that no "naturally-occuring free diamonds" should appear in surface structures.
 * Gold and iron ingots are mostly replaced by raw gold and raw iron.
 * Vanilla armor, tools and weapons are replaced by calls to shared equipment tables (see [[#Equipment tables]]) or to the pack's own equipment tables, which give the pack's versions of the items.
 * Vanilla foods such as bread, apples and golden apples are replaced by the pack's versions, so they stack with player-made food.
-* [[Crystal Heart]]s, [[divine fragment]]s and [[sacred texts]] such as [[The Book of Enoch]], [[The Avesta]], [[The Quran]], [[The Tanakh]], [[The Divine Comedy]] and [[Paradise Lost]] appear in structure chests.
+* [[Crystal Heart]]s, [[pith]] and [[sacred texts]] such as [[The Book of Enoch]], [[The Avesta]], [[The Quran]], [[The Tanakh]], [[The Divine Comedy]] and [[Paradise Lost]] appear in structure chests.
 * Some entries have a <code>quality</code> value, so the {{MCW|Luck}} attribute affects them. The 1.12.1-alpha notes say the field was added to all chest tables, but in the current code only 14 chest tables use it, mostly on a few rare entries (the ancient city and bastion tables use it most).<ref>{{Cite changelog|1.12.1-alpha|quote=Luck works, I've added the quality field to all chest loottables and even some other things.}}</ref>
 * Rotten flesh, redstone and experience bottles are removed from all tables.
 
@@ -28,8 +28,13 @@ Across the pack's tables:<ref>{{Source|MF_datapack/data/minecraft/loot_table/che
 
 == Abandoned Camp ==
 {{Main|Abandoned camp}}
-{{Upcoming|the 26.3 port}}
-Abandoned camps are a ''Minecraft'' 26.3 structure, so 1.12.5 (for 26.2) has none. In the 1.12.3 alpha for 26.3, and in the 26.3 port that continues it, the pack gives the camp's common chests, secret chests and barrels their own loot tables, with camp maps and maps to buried structures.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_common_chest.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_secret_chest.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/barrels/abandoned_camp_barrel.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>
+Abandoned camps are a ''Minecraft'' 26.3 structure, new to the pack in {{Version|1.12.6-alpha}} (first in the 1.12.3 alpha for 26.3). The pack gives the camp's common chests, secret chests and barrels their own loot tables, with camp maps and maps to buried structures.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_common_chest.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_secret_chest.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/barrels/abandoned_camp_barrel.json}}</ref>
+=== Common chest ===
+{{Data/Loot/minecraft/chests/abandoned_camp_common_chest}}
+=== Secret chest ===
+{{Data/Loot/minecraft/chests/abandoned_camp_secret_chest}}
+=== Barrel ===
+{{Data/Loot/minecraft/barrels/abandoned_camp_barrel}}
 
 == Ancient City ==
 {{Main|Ancient City}}
@@ -155,38 +160,7 @@ The bonus chest can be enabled when creating a world.
 
 == Village ==
 {{Main|Abandoned village}}
-The pack's [[abandoned village]]s have no loot-table chests, so these tables are not normally used. In 1.12.3 and 1.12.4 their bread, apple and sweet berry entries named loot tables that didn't exist (<code>matcha:food/bread</code> and so on, moved to <code>matcha:food/minecraft/</code> before 1.12.3), so those entries gave nothing; {{Version|1.12.5}} points them at the moved tables.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json}}</ref>
-
-{{Upcoming|the 26.3 port}}
-In the 1.12.3 alpha for 26.3, and in the 26.3 port that continues it, the pack empties the loot tables of the village armorer, butcher, cartographer, desert house, fisher, mason, plains house, savanna house, snowy house, taiga house, tannery, temple, toolsmith and weaponsmith chests.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_toolsmith.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref> The release notes say they are empty because "everything was broken in 26.3, it was easier to nuke it all", and that they will be added back, much weaker, with the structure update.<ref>{{Cite changelog|1.12.3|quote=Village Loottables are empty, I will add these back during the structure update, but everything was broken in 26.3, it was easier to nuke it all}}</ref> The releases for 26.2 (1.12.3 to 1.12.5) keep the tables below. The fletcher and shepherd tables are not changed by the pack.
-=== Armorer ===
-{{Data/Loot/minecraft/chests/village/village_armorer}}
-=== Butcher ===
-{{Data/Loot/minecraft/chests/village/village_butcher}}
-=== Cartographer ===
-{{Data/Loot/minecraft/chests/village/village_cartographer}}
-=== Desert house ===
-{{Data/Loot/minecraft/chests/village/village_desert_house}}
-=== Fisher ===
-{{Data/Loot/minecraft/chests/village/village_fisher}}
-=== Mason ===
-{{Data/Loot/minecraft/chests/village/village_mason}}
-=== Plains house ===
-{{Data/Loot/minecraft/chests/village/village_plains_house}}
-=== Savanna house ===
-{{Data/Loot/minecraft/chests/village/village_savanna_house}}
-=== Snowy house ===
-{{Data/Loot/minecraft/chests/village/village_snowy_house}}
-=== Taiga house ===
-{{Data/Loot/minecraft/chests/village/village_taiga_house}}
-=== Tannery ===
-{{Data/Loot/minecraft/chests/village/village_tannery}}
-=== Temple ===
-{{Data/Loot/minecraft/chests/village/village_temple}}
-=== Toolsmith ===
-{{Data/Loot/minecraft/chests/village/village_toolsmith}}
-=== Weaponsmith ===
-{{Data/Loot/minecraft/chests/village/village_weaponsmith}}
+The pack empties the loot tables of the village armorer, butcher, cartographer, desert house, fisher, mason, plains house, savanna house, snowy house, taiga house, tannery, temple, toolsmith and weaponsmith chests, so they give nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_toolsmith.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json}}</ref> The release notes of the first 26.3 alpha say they are empty because "everything was broken in 26.3, it was easier to nuke it all", and that they will be added back, much weaker, with the structure update.<ref>{{Cite changelog|1.12.3|quote=Village Loottables are empty, I will add these back during the structure update, but everything was broken in 26.3, it was easier to nuke it all}}</ref> The pack's [[abandoned village]]s have no loot-table chests anyway, so these tables were not normally used before either. The fletcher and shepherd tables are not changed by the pack.
 === Fletcher ===
 {{Data/Loot/minecraft/chests/village/village_fletcher}}
 === Shepherd ===
@@ -242,8 +216,9 @@ Shared tables that other chest tables call to pick a random piece of equipment.
 * The Quran and The Tanakh added to Trial Chamber loot.
 * Trash removed from trial spawners and vaults.}}
 {{History line|1.12.3|date=October 2, 2026|Village chest tables name the bread, apple and sweet berry loot tables by their old IDs, so those entries give nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json|at=d7482cfd1cb9fbd4c633a6d030a954950c70f4d2}}</ref>}}
-{{History line|1.12.5|date=October 10, 2026|Village chests give bread, apples and sweet berries again.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json}}</ref>}}
-{{History line|Upcoming|2=All village chest loot tables are empty (in the 1.12.3 alpha for 26.3). Abandoned camp chests and barrels get their own loot tables.}}
+{{History line|1.12.5|date=October 10, 2026|Village chests give bread, apples and sweet berries again.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json|at=d41ac64dd7efde6748884d02c75a46b8f4800797}}</ref>}}
+{{History line|1.12.6-alpha|date=October 14, 2026|All village chest loot tables are empty.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_plains_house.json}}</ref>
+* Abandoned camp chests and barrels get their own loot tables.}}
 }}
 
 == See also ==

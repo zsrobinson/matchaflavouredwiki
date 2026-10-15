@@ -20,7 +20,7 @@ They give {{Value|Electrum Leggings|armor}} armor and {{Value|Electrum Leggings|
 === Set bonus ===
 Each piece counts one level towards [[Warding]], so the full set gives warding 4, the only way to reach that level: it slows undead within 24 blocks, damages the nearest within 12, and pierces the protection of copper armor. Held warding items never raise the total above 3.
 
-With all four pieces, the [[set bonus]] also grants {{Data/Set bonus|electrum_armour=4}}.<ref>{{Source|MF_datapack/data/matcha/function/timers/divinity/electrum_armour.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_4.mcfunction}}</ref>
+With all four pieces, the [[set bonus]] also grants [[Divinity|divinity]]: {{EffectLink|Absorption}} I (2 extra hearts) for 31 seconds every 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/divinity.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/power_4.mcfunction}}</ref>
 
 === Repairing ===
 They can be repaired in an [[anvil]] with {{MCW|Block of Diamond|blocks of diamond}}. The pack resets repair costs to zero, so they can be repaired indefinitely; see [[Repairing]].
@@ -35,7 +35,7 @@ An apprentice [[weaponsmith]] buys them for one [[electrum alloy]], so the alloy
 
 == History ==
 {{History|
-{{History line|1.03|Electrum alloy now needs a [[divine fragment]].}}
+{{History line|1.03|Electrum alloy now needs a [[Pith|divine fragment]].}}
 {{History line|1.10|Electrum was buffed. A [[weaponsmith]] now takes the item back in exchange for its alloy, so players can rebuild it with updated stats.}}
 {{History line|1.12|Fixed severe multiplayer lag caused by electrum armor.}}
 {{History line|1.12.1-alpha|Smithing no longer needs a base-metal item in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. Can only be repaired with blocks of diamond. The set bonus was reduced from 4 to 2 hearts.}}

@@ -66,8 +66,8 @@ Ofuda · Soul sight (the effect functions) · Holy things tied to undead
 ## Enchanting and magic (area: enchanting)
 Enchanting · Blessing · every Prayer/Elegy page (Prayer of Demeter … Elegy of Icarus) ·
 Hell-Bound Book · Estus (overview) · Raw Estus · Estus Ash · Stabilized Estus ·
-Crystallized Estus · Estus Flask (removed item) · Benzene · Stable Void · Divine Fragment ·
-Divine Favor · Eye of Ender · Anvil · Grindstone · Chemistry Stand · Brewing ·
+Crystallized Estus · Estus Flask (removed item) · Benzene · Stable Void · Pith ·
+Amalgamated Pith · Eye of Ender · Anvil · Grindstone · Chemistry Stand · Brewing ·
 Tipped arrows: Apotropaic Arrow · Nightshade Arrow · Splash potions the pack adds ·
 each custom enchantment: Anemos · Bloodrage · Frost Protection · Reach · Riposte ·
 Slaughter · Trailblaze · Zephyr · and every vanilla enchantment the pack changes, one

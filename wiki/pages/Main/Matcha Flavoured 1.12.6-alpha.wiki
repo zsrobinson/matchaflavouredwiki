@@ -1,0 +1,75 @@
+{{Meta version infobox
+|version=1.12.6-alpha
+|name=Poplar Drop
+|type=Alpha
+|date=October 14, 2026
+|game=26.3
+|files=<code>MFDP_1_12_6_26_3.zip</code> (datapack), <code>MFRP_1_12_6_26_3.zip</code> (resource pack), <code>matcha-flavoured-1.12.6-alpha+dp.jar</code> (mod)
+|prev=1.12.5
+}}
+'''Matcha Flavoured 1.12.6-alpha''', "Poplar Drop", is the current version of [[Matcha Flavoured]], published on October 14, 2026, four days after [[Matcha Flavoured 1.12.5|1.12.5]]. It is an alpha for ''Minecraft'' 26.3: its <code>pack.mcmeta</code> reports the version as "1.12.6 for 26.3", while 1.12.5 was a full release for 26.2.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> It is the first release of the pack's 26.3 port since the [[Matcha Flavoured 1.12.3|1.12.3]] alpha for 26.3, so besides the changes in its release notes it brings everything the port has that the 26.2 releases don't: [[poplar]] trees, [[cushion]]s, [[abandoned camp]]s, reworked swamps and more. The newest full release is still 1.12.5, for 26.2.
+
+The release notes say that an earlier upload was taken off Modrinth after a reported game-breaking bug, which turned out not to be real, and that the developer fixed other bugs while it was down.<ref>{{Cite changelog|1.12.6-alpha|quote=I deleted the old version off of modrinth, I had a major bug reported--game breaking--I feaked out, deleted it, and scrambled to fix it. Turns out actually it wasn't real. My bad}}</ref>
+
+== Major additions and changes ==
+=== Husks and Hunger ===
+* [[Husk]]s deal {{Hp|6}} of damage instead of {{Hp|10}} on Normal.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_husk.mcfunction}}</ref>
+* The Hunger effect, which husks inflict, now does something: on Normal and Hard, a player with Hunger can't regenerate, so [[food]] doesn't heal until it wears off. An action-bar meter counts down its remaining time. Easy is exempt.<ref>{{Source|MF_datapack/data/matcha/function/effects/regeneration/mark_player.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/hunger/effect.mcfunction}}</ref> To make room for this, the pack no longer gives players a hidden Hunger effect to hold their food bar down; it only tops the bar up with Saturation when it falls to 8 or lower.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref> See [[Hunger]].
+* Foods with the "Cleanse Maleffect" [[intrinsic]], such as [[bread]], [[Honey Ginger Tea|honey ginger tea]] and [[Ice Cream|ice cream]], also remove Hunger.<ref>{{Source|MF_datapack/data/matcha/tags/mob_effect/harmful.json}}</ref>
+
+=== Wither ===
+{{Main|Wither effect}}
+* The [[Wither effect]] takes a heart after 9 seconds on Normal and 6 seconds on Hard, instead of 8 seconds on both.<ref>{{Source|MF_datapack/data/matcha/function/effects/wither/effect_normal.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/wither/effect_hard.mcfunction}}</ref>
+* [[Shakudo equipment|Shakudo armor]] gives wither resistance, which adds time to that timer: each piece counts, up to four, and the [[Elytra#Shakudo Elytra|shakudo elytra]] gives the full amount by itself. On Normal, one piece outlasts a single [[Wither Skeleton|wither skeleton]] hit.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/shakudo_effects/wither_resistance/apply_resistance.mcfunction}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=One piece of shakudo is now enough to prevent heatbreaker from a wither skeleton hit (in normal), but if you are hit more than once while withered, it will not save you}}</ref>
+* Shakudo armor's [[Cleanse|cleanse]] no longer removes Wither.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/shakudo_effects/cleanse/maleffect.mcfunction}}</ref>
+* <span class="mfw-spoiler">Losing a heart this way grants a new hidden advancement, [[Heartbreaker]].</span><ref>{{Source|MF_datapack/data/matcha/advancement/hell/wither_breaks_heart.json}}</ref>
+* [[Milk Bottle|Milk bottles]] are drunk twice as fast (0.8 seconds instead of 1.6), which the notes suggest as preparation against the Wither.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/milk_bottle.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Milk Bottles are now fast to drink, good trade off for anti-wither prep}}</ref>
+
+=== Renamed items ===
+* Divine Fragment (the turtle scute) is renamed [[Pith]], and Divine Favor (the nether star) [[Amalgamated Pith]]. The release notes don't mention it.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> See [[Renamed items]].
+
+=== From the 26.3 port ===
+These come from the pack's 26.3 branch and are new compared with 1.12.5. Most were first published in the 1.12.3 alpha for 26.3:
+* [[Poplar]] trees and their wood, in red, orange and yellow, with stonecutter recipes, a sapling recipe from leaves and a [[Lumberjack|lumberjack]] trade. See [[Biomes]].
+* Swamps with their own trees, bushes and shelf [[Mushroom|mushrooms]], and the dappled forest's closed canopy.
+* [[Abandoned camp]]s, whose chests and barrels have the pack's own loot, with camp maps and buried structure maps. The Archaeologist's [[Explorer maps|explorer maps]] are built on ''Minecraft'' 26.3's separate map items, and most show their structure's marker.
+* [[Cushion]]s, and [[stonecutter]] recipes that cut wool and concrete into slabs and stairs, and wool into carpets and cushions.
+* [[Clear Mushroom Soup|Clear mushroom soup]], from milking a mooshroom with a bowl, and the 26.3 [[Rabbit Stew|rabbit stew]] recipe with a shelf mushroom.
+* The reworked [[Amnestic]], used on a villager instead of placed.
+* Reworked [[Trailblaze]], [[Zephyr]], [[Divinity]] and [[Set bonus|shakudo regeneration]] effects.
+* Empty village loot tables (see [[Chest loot#Village]]), changed [[Carrot|carrot]] and [[Hematite|deepslate hematite]] drops, and unfinished groundwork for [[Bobwhite|bobwhites]].
+
+=== Textures ===
+* New textures for the shipwreck, trail ruins, [[Papal Outpost|papal outpost]] and [[Abbey]] maps.<ref>{{Cite changelog|1.12.6-alpha|quote=Textures for Shipwreck, Trail ruin, papal outpost, and Abbey maps all updated}}</ref>
+* [[Leaves|Leaf]] textures changed "for optimisation reasons".<ref>{{Cite changelog|1.12.6-alpha|quote=Leaf textures changed for optimisation reasons}}</ref>
+* A jungle shelf texture, which was missing, and fixes to some emoji glyphs.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/block/jungle_shelf.png}}</ref>
+
+=== Other changes ===
+* [[Ice Cream|Ice cream]] no longer leaves a bowl.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/matcha/ice_cream.json}}</ref>
+* Food takes 10 seconds to cook on [[kindling]], up from 5; the notes call this a fix of campfire cooking times.<ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref> The [[Mud Kiln|mud kiln]]'s and the [[Blast Furnace|blast furnace]]'s recipes have twice as many ticks too, but since smokers and blast furnaces cook at double speed in ''Minecraft'' 26.3, they take as long as before.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_beef.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref>
+* The pack no longer revokes advancements when a world is updated; the notes say this was only needed for 1.12.3 and 1.12.4.<ref>{{Cite changelog|1.12.6-alpha|quote=Removed Advancment revokations on update, this was only needed for 1.12.3+4 so it has been removed}}</ref> Advancements that the pack uses as triggers are instead revoked when the pack loads and when a player joins.<ref>{{Source|MF_datapack/data/matcha/function/setup/player_joined.mcfunction}}</ref>
+* Some [[favorite food]] trades ask for more of the food than 1: 8 of each of the four chicken nuggets, 4 puerquitos or 3 honey ginger teas for an [[obol]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_2.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_28.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_37.mcfunction}}</ref> The [[Toadstool Stroganoff|toadstool stroganoff]] trade asks for the real dish; it used to ask for a misspelled name key, which no toadstool stroganoff has.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_30.mcfunction}}</ref>
+
+* [[Jewelry]] is built on a poisonous potato instead of a netherite helmet, so it can no longer be combined with a helmet in an anvil, and its gem intrinsics are exclusive with each other.<ref>{{Source|MF_datapack/data/matcha/loot_table/equipment/misc/amber_earrings.json}}</ref>
+* [[Crystal Heart|Crystal hearts]] no longer keep the poisonous potato's food component.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/crystal_heart.json}}</ref>
+* [[Fish Bones|Fish bones]] from junk catches are bones instead of ender pearls.<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fish_bones.json}}</ref> Crafting [[cheese]] gives the glass bottle back.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref> "Three in One?" gives the two obols its description shows instead of one.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/upgrade_mattock.json}}</ref> See [[Advancements]].
+
+== Fixes ==
+The release notes list these fixes. Most were bugs of the 1.12.3 alpha for 26.3 that the 26.2 releases had already fixed or never had:
+* Straw beds, a ''Minecraft'' 26.3 block, work with the pack's [[sleeping]] system, which now starts when a bed or straw bed is used instead of when the game reports that the player slept in a bed. The resource pack adds a texture for them.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/slept_in_bed.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/textures/block/straw_bed.png}}</ref>
+* Treasure maps from shipwrecks and ocean ruins are ''Minecraft'' 26.3's buried treasure map item, and the ocean ruins' maps lead to buried treasure; in the 26.3 alpha they led to woodland mansions.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_big.json}}</ref> See [[Explorer maps]].
+* [[Chocolate]] stacks, as it has on 26.2 since [[Matcha Flavoured 1.12.4|1.12.4]].
+* Curries and [[Tonkotsu Ramen|tonkotsu ramen]] can't be cooked on kindling, as on 26.2 since 1.12.5.
+
+== Known issues ==
+The release notes warn that some foods may be inedible: old foods "maybe", vanilla foods (from the creative menu) unless they update themselves, raw meats, and sometimes modded foods, which a datapack can't fix. They ask players who find a newly made food that can't be eaten to report it.<ref>{{Cite changelog|1.12.6-alpha|quote=Raw meats will be inedible}}</ref> The pack's own foods have no food component and can always be eaten, but vanilla foods keep theirs, and since the pack no longer holds the food bar down, they can't be eaten while it is full. See [[Known bugs]].<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
+
+== Credits ==
+The repository's changelog keeps the credits of 1.12.5, with more thanks to HapppySpud ("and much more"), Linkershim ("MANY other coding things") and Fpekal ("a TON on the 26.3 port"). See [[Credits]].<ref>{{Source|changelog.md}}</ref>
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Alpha versions]]

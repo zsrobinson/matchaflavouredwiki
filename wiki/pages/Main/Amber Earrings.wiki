@@ -13,7 +13,7 @@ The [[Jeweler]] sells amber earrings at Journeyman level for 8 [[Obol]]s and one
 Every tick, if the wearer has no Regeneration effect, the earrings give 3 seconds of Regeneration I with no particles. As soon as one application runs out, the next begins, so the wearer regenerates continuously. If the player already has Regeneration from another source, such as [[food]], the earrings don't replace it.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/regeneration.mcfunction}}</ref> Regeneration I heals whenever its remaining duration is a multiple of 50 ticks, so each 3-second application heals {{Hp|1}} once: about {{Hp|1}} every 3 seconds.
 
 === Armor ===
-Amber earrings are worn in the head slot and take the place of a helmet. They give 1 [[armor]] point and no armor toughness or knockback resistance. Like all jewelry, they are unbreakable and, being built on a netherite helmet, don't burn in fire or lava. See [[Jewelry]].
+Amber earrings are worn in the head slot and take the place of a helmet. They give 1 [[armor]] point and no armor toughness or knockback resistance. Like all jewelry, they have no durability, so they never break, but they burn in fire or lava when dropped and don't keep [[piglin]]s calm as adamant and electrum armor do. See [[Jewelry]].
 
 == History ==
 {{History|
@@ -21,6 +21,7 @@ Amber earrings are worn in the head slot and take the place of a helmet. They gi
 {{History line|1.10|Fixed Amber Earrings in multiplayer.}}
 {{History line|1.12|Amber Earrings could be crafted in a smithing table, a leftover from testing. This recipe was removed.}}
 {{History line|1.12.2|Earrings no longer give knockback resistance.}}
+{{History line|1.12.6-alpha|Now built on a poisonous potato instead of a netherite helmet. It still never breaks, but it burns in fire and lava and no longer counts as piglin-safe armor.<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/3/amber_earrings.json}}</ref>}}
 }}
 
 == See also ==

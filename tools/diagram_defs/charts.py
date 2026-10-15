@@ -53,8 +53,10 @@ MAX_FOOD = 20
 @diagram('Food level')
 def food_level():
     src = mcfunction('matcha/function/mechanics/manage_hunger.mcfunction')
-    hi = need(r'Hunger matches (\d+)\.\. run effect give @p minecraft:hunger', src, 'Hunger threshold', cast=int)
-    hunger_amp = need(r'minecraft:hunger \d+ (\d+)', src, 'Hunger level', cast=int)
+    # until 1.12.6 a Hunger effect also capped the bar from above; now only the Saturation floor is left
+    capped = re.search(r'Hunger matches \d+\.\. run effect give @p minecraft:hunger', src)
+    hi = need(r'Hunger matches (\d+)\.\. run effect give @p minecraft:hunger', src, 'Hunger threshold', cast=int) if capped else MAX_FOOD + 1
+    hunger_amp = need(r'minecraft:hunger \d+ (\d+)', src, 'Hunger level', cast=int) if capped else None
     lo = need(r'Hunger matches \.\.(\d+) run effect give @p minecraft:saturation', src, 'Saturation threshold', cast=int)
     sat_amp = need(r'minecraft:saturation \d+ (\d+)', src, 'Saturation level', cast=int)
     refill = sat_amp + 1          # Saturation restores amplifier + 1 food points each time it applies
@@ -63,27 +65,33 @@ def food_level():
     W = 360
     left, right = 14, 346
     cell = (right - left) / MAX_FOOD
-    svg = Svg(W, 0, 'The food level from 0 to 20: where the pack gives Saturation and Hunger, and the vanilla thresholds')
+    svg = Svg(W, 0, 'The food level from 0 to 20: where the pack gives Saturation%s, and the vanilla thresholds'
+              % (' and Hunger' if capped else ''))
     by = 56
     for i in range(1, MAX_FOOD + 1):  # one cell per food point, paired into the bar's ten icons
         x0 = left + (i - 1) * cell + (1.5 if i % 2 else 0.5)
         fill = '@green_soft' if i <= lo else '@red_soft' if i >= hi else '@panel'
         edge = '@green' if i <= lo else '@red' if i >= hi else '@panel_edge'
-        if held[0] <= i <= held[1]:
+        if capped and held[0] <= i <= held[1]:
             fill, edge = '@amber_soft', '@amber'
         svg.rect(x0, by, cell - 2, 22, fill=fill, stroke=edge, rx=2)
     cx = lambda v: left + v * cell  # the boundary after v points
     # what the pack does in each zone
     svg.text(cx(lo / 2), 18, 'Saturation %s' % roman(sat_amp + 1), anchor='middle', fill='@green', bold=True)
     svg.text(cx(lo / 2), 35, '+%d a tick' % refill, size=SMALL, anchor='middle', fill='@green')
-    mid = (hi - 1 + MAX_FOOD) / 2
-    svg.text(cx(mid), 18, 'Hunger %s' % roman(hunger_amp + 1), anchor='middle', fill='@red', bold=True)
-    svg.text(cx(mid), 35, 'drains it', size=SMALL, anchor='middle', fill='@red')
-    hx = cx((held[0] - 1 + held[1]) / 2)
-    svg.text(hx, 18, 'held', anchor='middle', fill='@amber', bold=True)
-    svg.line(hx, 28, hx, by - 5, stroke='@amber', sw=1.5, arrow=True)
+    if capped:
+        mid = (hi - 1 + MAX_FOOD) / 2
+        svg.text(cx(mid), 18, 'Hunger %s' % roman(hunger_amp + 1), anchor='middle', fill='@red', bold=True)
+        svg.text(cx(mid), 35, 'drains it', size=SMALL, anchor='middle', fill='@red')
+        hx = cx((held[0] - 1 + held[1]) / 2)
+        svg.text(hx, 18, 'held', anchor='middle', fill='@amber', bold=True)
+        svg.line(hx, 28, hx, by - 5, stroke='@amber', sw=1.5, arrow=True)
+    else:
+        mid = (lo + MAX_FOOD) / 2
+        svg.text(cx(mid), 18, 'Left as it is', anchor='middle', fill='@ink', bold=True)
+        svg.text(cx(mid), 35, 'drains as in vanilla', size=SMALL, anchor='middle', fill='@muted')
     # the levels and vanilla's thresholds underneath: cell i is food level i
-    for v in sorted({1, lo, hi, HEAL_LEVEL, MAX_FOOD}):
+    for v in sorted({1, lo, HEAL_LEVEL, MAX_FOOD} | ({hi} if capped else set())):
         svg.text(cx(v - 0.5), by + 36, str(v), size=SMALL, anchor='middle', fill='@muted')
     for row, (v, label, anchor) in enumerate(((SPRINT_LEVEL, 'Sprinting above %d' % SPRINT_LEVEL, 'start'),
                                               (HEAL_LEVEL - 1, 'Natural regeneration at %d+ (off)' % HEAL_LEVEL, 'end'))):

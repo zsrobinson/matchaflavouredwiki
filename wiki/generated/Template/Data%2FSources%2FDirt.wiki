@@ -11,12 +11,12 @@
 |-
 | Farmland || 1 || 100% || 
 |-
-| Grass block || 1 || 100% || without Silk Touch
+| Grass block || 1 || 100% || without predicate minecraft:tool/can_silk_touch
 |-
 | Gravel || 1 || 100% || not Silk Touch
 |-
-| Mycelium || 1 || 100% || without Silk Touch
+| Mycelium || 1 || 100% || without predicate minecraft:tool/can_silk_touch
 |-
-| Podzol || 1 || 100% || without Silk Touch
+| Podzol || 1 || 100% || without predicate minecraft:tool/can_silk_touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

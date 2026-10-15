@@ -5,7 +5,7 @@
 == Design ==
 The developer's introduction video describes enchantments as crafted, with the most wanted enchantments the hardest to get:
 <blockquote>Enchantments are no longer random or use XP to receive. Instead, you craft them, and the rarest, most difficult enchantments to obtain [are] efficiency, unbreaking, protection, sharpness, and mending.<ref>{{Cite video}}</ref></blockquote>
-Every magic recipe depends on [[Estus Ash]], [[Benzene]] and [[Stabilized Estus]], and the strongest blessings also need a [[Divine Fragment]] or a [[Divine Favor]]. Divine fragments come from breaking [[spawner]]s and defeating powerful mobs, so the pack gives the player a reason to break spawners rather than build mob grinders on them.<ref>{{Cite video|quote=You could make a simple mob grinder, but the divine fragment is staring you in the face. If you want to get to the end, you need that fragment. If you want to make an unbreaking book, Bedrock Busters, Crystal Hearts, or netherite, you need that fragment.}}</ref>
+Every magic recipe depends on [[Estus Ash]], [[Benzene]] and [[Stabilized Estus]], and the strongest blessings also need [[pith]] or an [[amalgamated pith]]. Pith comes from breaking [[spawner]]s and defeating powerful mobs, so the pack gives the player a reason to break spawners rather than build mob grinders on them.<ref>{{Cite video|quote=You could make a simple mob grinder, but the divine fragment is staring you in the face. If you want to get to the end, you need that fragment. If you want to make an unbreaking book, Bedrock Busters, Crystal Hearts, or netherite, you need that fragment.}}</ref>
 
 == Crafting enchantments ==
 === Hell-Bound Books ===
@@ -54,6 +54,7 @@ Besides the vanilla rules, the pack adds some incompatibilities:
 * [[Slaughter]] is exclusive with the vanilla damage enchantments (Sharpness, Smite, Bane of Arthropods, Impaling, Density and Breach).
 * The [[magic protection]] intrinsics of shakudo armor and the shakudo elytra use the vanilla armor exclusive set, so they are exclusive with Protection, Blast Protection, Fire Protection and Projectile Protection.<ref>{{Source|MF_datapack/data/matcha/enchantment/magic_protection.json}}</ref>
 * The [[intrinsic]] enchantments of alloy equipment are exclusive with the other intrinsics for the same kind of item: the armor intrinsics (adamant, electrum, shakudo and the shakudo elytra) with each other, and the weapon intrinsics (adamant, shakudo and the four [[Warding]] levels) with each other.<ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_armor.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/intrinsic_weapon.json}}</ref>
+* The gem intrinsics of [[jewelry]] (those of the Opal and Amber Earrings, the Ruby Circlet and the Topaz Earrings) are exclusive with each other.<ref>{{Source|MF_datapack/data/matcha/tags/enchantment/exclusive_set/permanent_effect.json}}</ref>
 * Anvils and book combining can still put these pairs on one item, so the pack also strips them when alloy equipment enters a player's inventory: an [[Electrum equipment|electrum]] tool loses Silk Touch and Fortune, a [[Shakudo equipment|shakudo]] tool (Silk Touch intrinsic) loses Fortune, and a weapon with the Smite intrinsic (electrum weapons, the silver sword) loses Sharpness. This was added in 1.12.3, but it is part of the step that applies alloy intrinsics, which did not run until 1.12.4 (see [[Set bonus#Applying intrinsics after smithing|Set bonus]]).<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/process_intrinsic_enchants.mcfunction}}</ref>
 
 == Enchanting table ==
@@ -70,6 +71,7 @@ The [[grindstone]] works as in vanilla, removing all non-curse enchantments. Bec
 {{History line|1.10|Removed the enchanting table and table enchanting.<ref>{{Cite changelog|1.10|quote=Enchanting Table (I thought this was blocked, I feel it may have made a lot of people confused)}}</ref> The anvil experience timer increased from 15 to 30 seconds and the levels given from 50 to 100. Added the Ofuda trades for The Tanakh and The Quran. Changed the recipes of the Prayer of The Light, the Prayer of Man and the Prayer of Aeolus.}}
 {{History line|1.12.1-alpha|Added the Prayer of Midas. Fortune is capped at level I.}}
 {{History line|1.12.2|Feather Falling buffed. [[Zephyr]] reworked into three levels. Ofuda trades now require Crystal Hearts.}}
+{{History line|1.12.6-alpha|The gem intrinsics of jewelry are exclusive with each other. [[Trailblaze]]'s anvil cost multiplier raised from 0 to 8.}}
 }}
 
 == See also ==

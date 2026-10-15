@@ -12,12 +12,13 @@ The [[Jeweler]] sells topaz earrings at Expert level for 14 [[Obol]]s and one [[
 While worn by a player, topaz earrings give Haste II, reapplied every tick for 1 second with no particles.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/haste.mcfunction}}</ref> Haste II increases mining speed by 40% and attack speed by 20%, as in vanilla.
 
 === Armor ===
-Topaz earrings are worn in the head slot and take the place of a helmet. They give 1 [[armor]] point and no armor toughness or knockback resistance. Like all jewelry, they are unbreakable and, being built on a netherite helmet, don't burn in fire or lava. See [[Jewelry]].
+Topaz earrings are worn in the head slot and take the place of a helmet. They give 1 [[armor]] point and no armor toughness or knockback resistance. Like all jewelry, they have no durability, so they never break, but they burn in fire or lava when dropped and don't keep [[piglin]]s calm as adamant and electrum armor do. See [[Jewelry]].
 
 == History ==
 {{History|
 {{History line|0.6-alpha|Jewelry became unbreakable.}}
 {{History line|1.12.2|Earrings no longer give knockback resistance.}}
+{{History line|1.12.6-alpha|Now built on a poisonous potato instead of a netherite helmet. It still never breaks, but it burns in fire and lava and no longer counts as piglin-safe armor.<ref>{{Source|MF_datapack/data/matcha/villager_trade/toolsmith/4/topaz_earrings.json}}</ref>}}
 }}
 
 == See also ==

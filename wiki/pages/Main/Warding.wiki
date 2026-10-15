@@ -21,12 +21,12 @@ The [[Prayer of Man]] blessing stores {{G|Warding}} 2 and [[Smite]] II, and can 
 
 == Mechanics ==
 === Warding level ===
-Every tick, each held item with warding adds its level to the player's held warding, and each worn piece of electrum armor adds 1 to a separate armor count.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/value/equipment_2.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/value/electrum_armour.mcfunction}}</ref> The player's effective level is then worked out as follows:<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/value/calculate.mcfunction}}</ref>
+Every tick, each held item with warding adds its level to the player's held warding, and each worn piece of electrum armor adds 1 to a separate armor count.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/add_power/equipment_2.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/add_power/electrum_armour.mcfunction}}</ref> The player's effective level is then worked out as follows:<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/warding/calculate_power.mcfunction}}</ref>
 # The levels of the items in the main hand and off hand are added together, and the total is capped at {{G|Warding}} 3.
 # The number of electrum armor pieces worn (0–4) is compared with that total, and the higher of the two is used.
 Held items therefore stack with each other: a {{G|Warding}} 1 [[Warding Sword]] in the main hand and a {{G|Warding}} 2 [[Nazar]] in the off hand give {{G|Warding}} 3. Held items and armor don't stack: a player wearing one electrum piece and holding a {{G|Warding}} 1 item still has {{G|Warding}} 1. {{G|Warding}} 4 is only reached by wearing the full set of electrum armor, which is why the electrum set bonus reads {{G|Apotropaic}} Max.
 
-Only players can ward. The level is only calculated for players, so a mob holding a warding item has no effect.<ref>{{Source|MF_datapack/data/matcha/function/timers/1s/warding_enchantment.mcfunction}}</ref>
+Only players can ward. Warding items and electrum armor only count for players and armor stands, and the level is only calculated for players, so a mob or armor stand holding a warding item has no effect.<ref>{{Source|MF_datapack/data/matcha/tags/entity_type/can_use_warding.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/1s/warding_enchantment.mcfunction}}</ref>
 
 === Effects by level ===
 Warding runs on a timer, not every tick. Levels 1 and 2 pulse once per second, and levels 3 and 4 pulse every 0.5 seconds.<ref>{{Source|MF_datapack/data/matcha/function/timers/1s/warding_enchantment.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/0_5/warding_enchantment.mcfunction}}</ref> On each pulse, warding does two things:

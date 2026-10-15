@@ -17,9 +17,10 @@ The upgrade needs no template. Enchantments on the copper item carry over; where
 They give {{Value|Shakudo Boots|armor}} armor with {{Value|Shakudo Boots|durability}} durability, the same armor as the matching diamond piece but with no toughness. The full shakudo set gives 20 armor.
 
 === Intrinsics ===
-* '''[[Cleanse]]''': removes Levitation from the wearer whenever it is applied.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/cleanse_armor_feet.mcfunction}}</ref>
+* '''[[Cleanse]]''': removes Levitation from the wearer whenever it is applied.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/shakudo_effects/cleanse/feet.mcfunction}}</ref>
 * '''Magic protection''': [[Magic protection]] adds 8 protection points against magic damage, such as Poison and Instant Damage.<ref>{{Source|MF_datapack/data/matcha/enchantment/magic_protection.json}}</ref>
-* '''Regeneration''': Every worn piece of shakudo armor counts towards the tier's regeneration: with one piece the wearer gets {{Data/Set bonus|shakudo_regen=1}}, and with two, three and four pieces the interval shortens to {{Data/Set bonus|shakudo_regen=2|show=every}}, {{Data/Set bonus|shakudo_regen=3|show=every}} and {{Data/Set bonus|shakudo_regen=4|show=every}} seconds. The [[Elytra#Shakudo Elytra|shakudo elytra]] counts as one piece. The pack defines an elytra bonus that would count five and grant Regeneration II, but the elytra does not carry it, so four worn pieces is the most that can be reached. The intrinsic also counts in the main hand, so holding a fifth shakudo piece raises the count to five: {{Data/Set bonus|shakudo_regen=5}} (see [[Set bonus#Shakudo regeneration]]).<ref>{{Source|MF_datapack/data/matcha/enchantment/shakudo_armour.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
+* '''Regeneration''': Every worn piece of shakudo armor counts towards the tier's regeneration: with one piece the wearer gets {{EffectLink|Regeneration}} I for 3 seconds every 30 seconds, and with two, three and four pieces the interval shortens to 26, 22 and 18 seconds. The [[Elytra#Shakudo Elytra|shakudo elytra]] counts as one piece. Each player has their own timer, which starts when the first piece is put on. The pack defines an elytra bonus that would count five and grant Regeneration II, but the elytra does not carry it, so four pieces is the most that can be reached (see [[Set bonus#Shakudo regeneration]]).<ref>{{Source|MF_datapack/data/matcha/enchantment/shakudo_armour.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/shakudo_effects/regeneration/set_cooldown.mcfunction}}</ref>
+* '''Wither resistance''': {{G|Wither resistance}} 1. Each worn piece of shakudo armor adds a level of wither resistance, up to 4, which delays the heart loss of the [[Wither effect]] by 2 seconds for the first level and 1 second for each further level (see [[Wither effect#Shakudo wither resistance]]).<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/shakudo_effects/wither_resistance/apply_resistance.mcfunction}}</ref>
 
 Intrinsics are stored on the item and applied as enchantments when it enters a player's inventory.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/intrinsic_enchants/apply_intrinsic_enchants.mcfunction}}</ref>
 
@@ -41,6 +42,7 @@ An apprentice [[weaponsmith]] buys it for one [[shakudo alloy]], which lets the 
 {{History line|1.12|Fixed severe multiplayer lag caused by shakudo armor.}}
 {{History line|1.12.1-alpha|Smithing no longer takes an ingot in the template slot, and the upgrade keeps the base item's enchantments. Added the "Repaired with" tooltip. Shakudo armor was nerfed, and its intrinsics became exclusive with the electrum and adamant ones.}}
 {{History line|1.12.2|Moved to the <code>matcha</code> namespace; older copies can be updated with <code>/trigger update_item</code>.}}
+{{History line|1.12.6-alpha|Added wither resistance. The regeneration timer is kept for each player and starts when the armor is put on, and a piece held in the main hand no longer counts toward it.}}
 }}
 
 == References ==

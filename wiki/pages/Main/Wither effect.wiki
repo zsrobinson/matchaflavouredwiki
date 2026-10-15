@@ -6,18 +6,40 @@
 |type=Status effect
 |caption=Harmful; takes maximum health
 }}
-The '''Wither effect''' in [[Matcha Flavoured]] still deals vanilla damage over time, but a player who stays withered for 8 seconds also loses maximum [[health]], exactly as if they had [[death|died]]. Easy difficulty is exempt. The effect is applied by [[Wither Skeleton|wither skeletons]], the [[Wither]] and wither roses, so [[Hell]] fortresses and the Wither fight can cost hearts without the player dying.
+The '''Wither effect''' in [[Matcha Flavoured]] still deals vanilla damage over time, but a player who stays withered too long also loses maximum [[health]], exactly as if they had [[death|died]]: after 9 seconds on Normal and 6 seconds on Hard. Easy difficulty is exempt, and [[Shakudo equipment|shakudo armor]] buys extra time. The effect is applied by [[Wither Skeleton|wither skeletons]], the [[Wither]] and wither roses, so [[Hell]] fortresses and the Wither fight can cost hearts without the player dying.
 
 == Mechanics ==
 Whenever a player's effects change to include Wither, the pack starts tracking that player unless the world is on Easy.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/has_wither_effect.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/wither/mark_player.mcfunction}}</ref> Once a second, for each tracked player:<ref name="timer">{{Source|MF_datapack/data/matcha/function/effects/wither/effect.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/1s/wither_effect.mcfunction}}</ref>
-* If they no longer have the Wither effect, tracking stops and the count resets.
-* If they are still withered, the count goes up by 1, an experience pickup sound plays, and a meter in the action bar fills up.
-* When the count reaches 8, the Wither effect is removed, the player loses maximum health as if they had died, a quiet totem sound plays, and the player takes a tiny amount of damage (0.1) so the hit registers.
+* If they no longer have the Wither effect, tracking stops and the timer is cleared.
+* On the first check, a timer is started. Its length depends on the player's [[#Shakudo wither resistance|shakudo wither resistance]].
+* Each check takes one second off the timer, and a meter in the action bar empties with an experience pickup sound every second.
+* When the timer runs out, the Wither effect is removed, the player loses maximum health as if they had died, a quiet totem sound plays, and the player takes a tiny amount of damage (0.1) so the hit registers.<ref name="normal">{{Source|MF_datapack/data/matcha/function/effects/wither/effect_normal.mcfunction}}</ref><ref name="hard">{{Source|MF_datapack/data/matcha/function/effects/wither/effect_hard.mcfunction}}</ref>
 
-The meter is shown with the pack's own glyphs: a Wither icon followed by a bar that fills over the 8 seconds.
+The meter is shown with the pack's own glyphs: a broken-heart icon followed by a bar, which is longer on Normal than on Hard.
+
+Hard runs out 3 seconds sooner than Normal: on Hard the heart is lost when the timer reaches 3, on Normal when it reaches 0.<ref name="normal" /><ref name="hard" /> Because the timer is only started once, being hit again while still withered doesn't add time: a longer Wither effect simply outlasts the timer.<ref name="timer" />
+
+{| class="wikitable"
+! Shakudo wither resistance !! Normal !! Hard
+|-
+| None || 9 seconds || 6 seconds
+|-
+| {{G|Wither resistance}} 1 || 11 seconds || 8 seconds
+|-
+| {{G|Wither resistance}} 2 || 12 seconds || 9 seconds
+|-
+| {{G|Wither resistance}} 3 || 13 seconds || 10 seconds
+|-
+| {{G|Wither resistance}} 4 (Max) || 14 seconds || 11 seconds
+|}
+
+=== Shakudo wither resistance ===
+Each [[Shakudo equipment|shakudo armor]] piece the player wears gives 1 level of wither resistance, up to 4, and the [[Shakudo Elytra]] gives the maximum of 4 by itself. The tooltips show it as {{G|Wither resistance}} 1 on each piece and {{G|Wither resistance}} Max on the elytra. The level is read when the timer starts, and each level adds time: 2 seconds for the first level and 1 second for each level after it.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/shakudo_effects/wither_resistance/apply_resistance.mcfunction}}</ref><ref name="timer" />
+
+The extra seconds are spent first. While they last, the action bar shows a second, aqua gauge and a lodestone-lock sound plays every second; when they run out the gauge turns red and breaks with a shield-break sound, and the normal meter starts emptying.<ref name="normal" /><ref name="hard" /> A wither skeleton's hit lasts 10 seconds, so on Normal a single piece of shakudo is enough to outlast one hit.<ref>{{Cite changelog|1.12.6-alpha|quote=One piece of shakudo is now enough to prevent heatbreaker from a wither skeleton hit (in normal), but if you are hit more than once while withered, it will not save you}}</ref>
 
 === Multiplayer ===
-The count, the meter and the sound are kept for each player separately: only the withered player sees their meter, hears the sound and loses hearts.<ref name="timer" /> In 1.12.2 they were shared, so every online player's count rose whenever anyone was withered.
+The timer, the meter and the sounds are kept for each player separately: only the withered player sees their meter, hears the sound and loses hearts.<ref name="timer" /> In 1.12.2 they were shared, so every online player's count rose whenever anyone was withered.
 
 === Hearts lost ===
 The heart loss uses the same function as a death:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/hpdown.mcfunction}}</ref>
@@ -33,7 +55,7 @@ The heart loss uses the same function as a death:<ref>{{Source|MF_datapack/data/
 The loss is limited by the player's minimum hearts, like any death. See [[Death#Minimum hearts]].
 
 === Curing ===
-The meter resets as soon as the effect is gone, so any cure used before the eighth second prevents the heart loss:
+The timer is cleared as soon as the effect is gone, so any cure used before it runs out prevents the heart loss:
 * {{MCW|Milk Bucket|Milk}} removes all effects.
 * [[Bread]] and other foods with the {{G|Cleanse}} Cleanse Maleffect tooltip remove Wither along with other harmful effects.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/bread.json}}</ref>
 
@@ -43,11 +65,12 @@ The 1.12.2 release notes ask players to "bring milk or bread to Hell, please its
 {{History|
 {{History line|1.12.2|The Wither effect now takes hearts after 8 seconds, except on Easy. The [[Shakudo equipment|Shakudo chestplate]] no longer cleanses Wither.}}
 {{History line|1.12.3|The Wither count, meter and sound are kept for each player separately; in 1.12.2 they were shared by all players.<ref name="timer" />}}
+{{History line|1.12.6-alpha|The heart is now lost after 9 seconds on Normal and 6 seconds on Hard, instead of 8 seconds on both. Shakudo armor and the shakudo elytra add up to 5 more seconds of wither resistance, shown as a second gauge in the action bar.<ref>{{Cite changelog|1.12.6-alpha|quote=Normal Hearbreaker timer is much longer than in hard now (Hard is very short)}}</ref><ref name="timer" />}}
 }}
 
 == Trivia ==
 * The developer's plans describe this as "Wither removing hearts on hit", part of making hearts easier to lose late in the game for experienced players, inspired by an attack in the Ganon fight in ''Tears of the Kingdom'' that removes a heart "WITHOUT killing them".<ref>{{Source|my_current_and_future_plans.md}}</ref>
-* The pack's code calls this mechanic "Heartbreaker".<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+* <span class="mfw-spoiler">The pack's code calls this mechanic "Heartbreaker", and since 1.12.6-alpha losing a heart to it grants the hidden advancement [[Heartbreaker]] ("Fail to clear the Wither effect before time runs out").</span><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/hell/wither_breaks_heart.json}}</ref>
 
 == See also ==
 * [[Death]]

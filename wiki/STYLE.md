@@ -32,7 +32,7 @@ Pages that use refs end with `== References ==` and `{{reflist}}`.
 
 - **American English**, as on minecraft.wiki ("armor", "color", "favor"), except in
   proper names that the pack spells otherwise. **Item names are exactly the in-game
-  `en_us` names** (e.g. *Divine Favor*, *Stabilized Estus*, *Sack*), even where the
+  `en_us` names** (e.g. *Amalgamated Pith*, *Stabilized Estus*, *Sack*), even where the
   pack's own prose says "armour".
 - Encyclopedic third person and present tense. Write "the player", never "you",
   "we" or "I". No exclamation marks, jokes, hype or opinion ("very useful", "amazing").

@@ -5,11 +5,11 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Weeping vines || 1 || 100% || tool: Iron Shears, Silk Touch
+| Weeping vines || 1 || 100% || predicate minecraft:tool/can_shear, predicate minecraft:tool/can_silk_touch
 |-
 | Weeping vines || 1 || 33.0% || Fortune increases chance
 |-
-| Weeping vines plant || 1 || 100% || tool: Iron Shears, Silk Touch
+| Weeping vines plant || 1 || 100% || predicate minecraft:tool/can_shear, predicate minecraft:tool/can_silk_touch
 |-
 | Weeping vines plant || 1 || 33.0% || Fortune increases chance
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

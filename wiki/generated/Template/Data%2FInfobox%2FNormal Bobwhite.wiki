@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Normal Bobwhite}}
+|image={{#if:{{{image|}}}|{{{image}}}|Normal Bobwhite.png}}
+|imagesize=160px
+|invimage=Normal Bobwhite
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:chicken_spawn_egg</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/debug/chicken/normal_bobwhite.json|normal_bobwhite.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

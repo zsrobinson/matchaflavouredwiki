@@ -14,16 +14,16 @@ Doom pairs with the adamant weapons, which apply Weakness on every hit: the weap
 
 == Mechanics ==
 === Level ===
-Each adamant armor piece the player wears raises their Doom level by 1, from 1 to 4. Only players count.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_armour.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_armour.mcfunction}}</ref> The tooltip shows {{G|Doom}} 3 on each piece and {{G|Doom set}} 4 as the set bonus, so a full set adds up to 3 × 4 + 4 = 16, which is the damage the full set deals.
+Each adamant armor piece the player wears raises their Doom level by 1, from 1 to 4. Only players count.<ref>{{Source|MF_datapack/data/matcha/enchantment/adamant_armour.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/doom/add_1_power.mcfunction}}</ref> The count is rebuilt every tick, so taking a piece off lowers the level straight away.<ref>{{Source|MF_datapack/data/matcha/function/timers/tick.mcfunction}}</ref> The tooltip shows {{G|Doom}} 3 on each piece and {{G|Doom set}} 4 as the set bonus, so a full set adds up to 3 × 4 + 4 = 16, which is the damage the full set deals.
 
 === Effect ===
 {{Diagram|Doom|width=360|align=right|caption=Doom's reach with one to four pieces of adamant armor, drawn to scale; the numbers are blocks.}}
-Every 3 seconds, for each player wearing adamant armor:<ref>{{Source|MF_datapack/data/matcha/function/timers/3s/adamant_armour.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/check_doom_4.mcfunction}}</ref>
+Every 3 seconds, for each player wearing adamant armor:<ref>{{Source|MF_datapack/data/matcha/function/timers/3s/on_restart.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/doom/find_targets.macro.mcfunction}}</ref>
 # Every entity within the radius that has Weakness and is not wearing any adamant armor becomes a Doom target.
 # If there is at least one target, a high-pitched raid omen sound plays at the player.
-# Each target shows a burst of flame particles, takes damage and has its Weakness removed.
+# Each target shows a small burst of flame particles (the same size at every level), takes damage and has its Weakness removed.
 
-The damage is of the <code>out_of_world</code> type, so it ignores armor and {{MCW|Resistance}}.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/apply_doom_4.mcfunction}}</ref>
+The damage is of the <code>out_of_world</code> type, so it ignores armor and {{MCW|Resistance}}.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/doom/apply.macro.mcfunction}}</ref>
 
 {| class="wikitable"
 ! Pieces worn !! Tooltip total !! Radius !! Damage per target
@@ -40,7 +40,7 @@ The damage is of the <code>out_of_world</code> type, so it ignores armor and {{M
 ! 4 (full set)
 | {{G|Doom}} 12 + {{G|Doom set}} 4 || 28 blocks || {{Hp|16}}
 |}
-<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/check_doom_1.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/apply_doom_1.mcfunction}}</ref>
+<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/doom/check_power.mcfunction}}</ref>
 
 Unlike [[warding]], Doom hits '''every''' target in range at once, not just the nearest.
 
@@ -58,6 +58,7 @@ Since removing the Weakness is part of the effect, each application of Weakness 
 {{History line|1.12.2|Added Doom, replacing adamant armor's earlier per-piece [[Divinity|divinity]] hearts. The release notes give {{G|Doom}} 3 as {{Hp|3}} and the full set's 16 as {{Hp|16}}.
 The adamant weapon intrinsic now applies Weakness, and the adamant tool intrinsic smelts mined blocks.}}
 {{History line|1.12.4|2=Doom works on adamant armor made in a smithing table: before, the intrinsics of smithed armor and tools were never applied (see [[Set bonus#Applying intrinsics after smithing|Set bonus]]).<ref>{{Cite changelog|1.12.4|quote=Armour/Tool Intrinsics not working}}</ref>}}
+{{History line|1.12.6-alpha|The four Doom levels were merged into one function that takes the radius and damage as arguments; the radii and damage are unchanged. The flame burst on each target is now the same small size at every level, where two to four pieces used to show a larger one.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/adamant_effects/doom/check_power.mcfunction}}</ref>}}
 }}
 
 == Trivia ==

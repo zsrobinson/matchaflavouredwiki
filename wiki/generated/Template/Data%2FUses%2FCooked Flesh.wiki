@@ -4,5 +4,9 @@
 | [[Meat Pizza]]
 | 2 × [[Cheese]] +<br />[[Cooked Flesh]] or [[Steak]] or [[Cooked Chicken]] or [[Cooked Porkchop]] or [[Cooked Mutton]] +<br />3 × [[Tomatoes]] +<br />3 × [[Dough]]
 | {{Crafting|A1=Cheese|A2=Tomatoes|A3=Dough|B1=Cooked Flesh;Steak;Cooked Chicken;Cooked Porkchop;Cooked Mutton|B2=Tomatoes|B3=Dough|C1=Cheese|C2=Tomatoes|C3=Dough|Output=Meat Pizza,4}}
+|-
+| [[Rabbit Stew]] <small>(vanilla recipe)</small>
+| [[Baked Potato]] +<br />[[Cooked Flesh]] +<br />[[Bowl]] +<br />[[Carrot]] +<br />{{MCW|Shelf Mushroom}}
+| {{Crafting|A1=Baked Potato|B1=Cooked Flesh|C1=Bowl|A2=Carrot|B2=Shelf Mushroom|Output=Rabbit Stew|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

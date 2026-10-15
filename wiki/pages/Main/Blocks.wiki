@@ -67,7 +67,7 @@ The datapack removes over 350 vanilla recipes in its <code>pack.mcmeta</code> fi
 The design video explains the intent: "I made a lot of tweaks to the recipes to make them kinder for players. Prismarine is craftable from copper. Stone cutters give you more bang for your buck. Can be used with almost all materials."<ref>{{Cite video|quote=I made a lot of tweaks to the recipes to make them kinder for players.}}</ref>
 
 == Drop changes ==
-The pack overrides the loot tables of 91 blocks.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks}}</ref> Apart from ores (see [[Ores]]) and crops (see the food articles), the changes are:
+The pack overrides the loot tables of 97 blocks.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks}}</ref> Apart from ores (see [[Ores]]) and crops (see the food articles), the changes are:
 {| class="wikitable sortable"
 ! Block !! Change
 |-
@@ -101,10 +101,10 @@ The pack overrides the loot tables of 91 blocks.<ref>{{Source|MF_datapack/data/m
 |-
 | [[Snow]], snow block || Snowballs stack to 64.
 |-
-| [[Spawner]] || Drops a [[Divine Fragment|divine fragment]].
+| [[Spawner]] || Drops [[pith]].
 |}
 Notes on the crop tables:
-* The 1.12.2 notes say Fortune now works on tomatoes, glow berry vines and chorus plants.<ref>{{Cite changelog|1.12.2|quote=Fortune now works on: Tomatoes, Glow berry vines, Chorus Plant}}</ref> In 1.12.2 the tomato (beetroot) and chorus plant tables set a fixed count after the Fortune bonus, which replaced it; since 1.12.3 they set the count first, so Fortune works on both. (The 26.3 port still has the 1.12.2 order.)<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/chorus_plant.json}}</ref> On cave vines it works.
+* The 1.12.2 notes say Fortune now works on tomatoes, glow berry vines and chorus plants.<ref>{{Cite changelog|1.12.2|quote=Fortune now works on: Tomatoes, Glow berry vines, Chorus Plant}}</ref> In 1.12.2 the tomato (beetroot) and chorus plant tables set a fixed count after the Fortune bonus, which replaced it; 1.12.3 set the count first, so Fortune worked on both, but 1.12.6-alpha went back to the 1.12.2 order, so it doesn't work on either.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/chorus_plant.json}}</ref> On cave vines it works on the vine body, not on the berry-bearing tip.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/cave_vines_plant.json}}</ref>
 * The cave vine tables have no check for whether the vine is carrying berries, unlike vanilla, so every broken cave vine block drops glow berries.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/cave_vines.json}}</ref>
 
 === Adamant auto-smelting ===
@@ -141,18 +141,18 @@ The pack edits several block tags:<ref>{{Source|MF_datapack/data/minecraft/tags/
 * '''Climbable''': every [[chain]] can be climbed like a ladder.
 * '''Endermen''' can only pick up melons, pumpkins and [[TNT]] (the tag is replaced, not extended).<ref>{{Source|MF_datapack/data/minecraft/tags/block/enderman_holdable.json}}</ref>
 * '''Mineable with a pickaxe''': glass and stained glass (blocks and panes), mob heads, the beacon, glowstone ([[Crystallized Estus|crystallized estus]]), [[Malachite#Malachite Lantern|malachite lanterns]], [[Electric Lamp|electric lamps]], [[Phosphor lamps|phosphor lamps]], the [[Copper Eye|copper eye]], levers and frosted ice.<ref>{{Source|MF_datapack/data/minecraft/tags/block/mineable/pickaxe.json}}</ref>
-* '''Mineable with a hoe''': wool, carpets, [[Glow Lichen|glow lichen]] and phosphor lamps.
+* '''Mineable with a hoe''': wool, carpets, wool slabs and stairs, [[Glow Lichen|glow lichen]] and phosphor lamps.
 * '''Mineable with an axe''': beds, candles, cactus and honeycomb blocks.
 * '''Mineable with a shovel''': [[Dirt Slab|dirt slabs]].
 * '''Supports vegetation''': sand, red sand and packed mud, so grass and flowers can be placed on them.<ref>{{Source|MF_datapack/data/minecraft/tags/block/supports_vegetation.json}}</ref>
-* '''Nether portal frame''': the pack adds crying obsidian to the nether portal frame tag, but the developer notes it will only work after the autumn drop; Minecraft 26.2, which the pack runs on, has no such tag.<ref>{{Cite changelog|1.12.1-alpha|quote=Crying Obsidian is now a valid portal block (Will only work post-autumn drop)}}</ref><ref>{{Source|MF_datapack/data/minecraft/tags/block/nether_portal_frame.json}}</ref>
+* '''Nether portal frame''': the pack adds crying obsidian to the nether portal frame tag, so a nether portal can be built from crying obsidian as well as obsidian. The tag is new in ''Minecraft'' 26.3; the developer added it to the pack in 1.12.1-alpha, noting that it would only work after the autumn drop.<ref>{{Cite changelog|1.12.1-alpha|quote=Crying Obsidian is now a valid portal block (Will only work post-autumn drop)}}</ref><ref>{{Source|MF_datapack/data/minecraft/tags/block/nether_portal_frame.json}}</ref>
 The pack also defines its own tag of path blocks for the [[Trailblaze]] enchantment (coarse dirt, gravel, dirt paths, packed mud, mud bricks and their slabs and stairs, and dirt slabs), and tags of blocks that wooden, copper and iron tools cannot mine.<ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref>
 
 == Resource pack changes ==
 The resource pack retextures a large number of blocks. Changes with their own articles:
 * [[Vertical slabs]]: doubled wooden slabs show vertical planks.
-* [[Large bricks]]: doubled granite, polished granite, polished diorite and brick slabs show large bricks (andesite, polished andesite, diorite, cut sandstone and cut red sandstone slabs are upcoming).
-* [[Poplar]]: textures prepared for a future wood type.
+* [[Large bricks]]: doubled granite, polished granite, diorite, polished diorite, andesite, polished andesite, cut sandstone, cut red sandstone, smooth stone and brick slabs show large bricks.
+* [[Poplar]]: textures for the poplar wood type of ''Minecraft'' 26.3.
 * [[Glow Lichen]]: three-dimensional tufts on floors and worm-like strands on ceilings.
 * [[Rose]]: rose and cyan rose models for item frames.
 * Random texture variations for dirt, coarse dirt, [[Dirt Slab|dirt slabs]], gravel, rooted dirt, lily pads and several flowers.
@@ -165,6 +165,7 @@ The resource pack retextures a large number of blocks. Changes with their own ar
 {{History line|1.0|End stone bricks became brown sandstone, and froglights became phosphor lamps.}}
 {{History line|1.12.1-alpha|Stone, terracotta, quartz and other blocks can no longer be cooked in an oven; they are kilned or blasted instead.<br />Crying obsidian is added to the nether portal frame tag, which only takes effect in a later Minecraft version.}}
 {{History line|1.12.2|Chains are climbable, and endermen can only pick up melons, pumpkins and TNT.<br />Vertical slab and poplar textures added.}}
+{{History line|1.12.6-alpha|On ''Minecraft'' 26.3: crying obsidian works as a nether portal frame, and poplar logs, stripped poplar logs and poplar leaves get the pack's loot tables. Fortune and the electrum intrinsic no longer add tomatoes or chorus fruit.<ref>{{Source|MF_datapack/data/minecraft/tags/block/nether_portal_frame.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/poplar_log.json}}</ref>}}
 }}
 
 == See also ==

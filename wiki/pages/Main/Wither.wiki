@@ -7,9 +7,9 @@
 |type=Boss mob, undead
 |health=Vanilla
 |spawn=Summoned; only on the Overworld surface
-|drops={{ItemLink|Divine Favor}}
+|drops={{ItemLink|Amalgamated Pith}}
 }}
-The '''Wither''' in [[Matcha Flavoured]] can only be summoned on the surface of the Overworld, in the open and at sea level or above. It drops a {{ItemLink|Divine Favor}} (the pack's name for the nether star), and the [[Wither effect]] it inflicts can permanently cost players maximum [[health]].
+The '''Wither''' in [[Matcha Flavoured]] can only be summoned on the surface of the Overworld, in the open and at sea level or above. It drops an {{ItemLink|Amalgamated Pith}} (the pack's name for the nether star), and the [[Wither effect]] it inflicts can permanently cost players maximum [[health]].
 
 == Summoning ==
 The Wither is built as in vanilla. Shortly after it is summoned, the pack checks where it is.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/schedule_check.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/check_wither_spawn.mcfunction}}</ref> The summon is invalid if any of these is true:<ref name="inv">{{Source|MF_datapack/data/matcha/predicate/wither/invalid_wither_spawn.json}}</ref>
@@ -17,13 +17,13 @@ The Wither is built as in vanilla. Shortly after it is summoned, the pack checks
 * it is below Y=63;
 * it is in [[Hell]] or the End.
 
-An invalid Wither is killed 1 second later, and every player sees "The Wither can only be summoned on the surface of the overworld". To stop the kill from rewarding a divine favor, the next tick the pack deletes every dropped item stack of exactly one divine favor, as long as some player is standing in a place where a Wither couldn't be summoned.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/forbid_wither.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/kill_star.mcfunction}}</ref> The soul sand and skulls used to build it are lost.
+An invalid Wither is killed 1 second later, and every player sees "The Wither can only be summoned on the surface of the overworld". To stop the kill from rewarding an amalgamated pith, the next tick the pack deletes every dropped item stack of exactly one amalgamated pith, as long as some player is standing in a place where a Wither couldn't be summoned.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/forbid_wither.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/kill_star.mcfunction}}</ref> The soul sand and skulls used to build it are lost.
 
 == Drops ==
-The Wither drops one {{ItemLink|Divine Favor}}, the vanilla nether star renamed. The Wither's drop can't be changed by a datapack, as the pack's code notes.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/kill_star.mcfunction}}</ref> Divine favors can be broken down into {{ItemLink|Divine Fragment|divine fragments}}.
+The Wither drops one {{ItemLink|Amalgamated Pith}}, the vanilla nether star renamed. The Wither's drop can't be changed by a datapack, as the pack's code notes.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/kill_star.mcfunction}}</ref> Amalgamated pith can be broken down into {{ItemLink|Pith}}.
 
 == Behavior ==
-The Wither's attacks apply the Wither effect. Except on Easy, a player who stays withered for 8 seconds loses 1 heart of maximum health (2 on Hard). See [[Wither effect]].
+The Wither's attacks apply the Wither effect. Except on Easy, a player who stays withered for 9 seconds (6 on Hard, longer in [[Shakudo equipment|shakudo armor]]) loses 1 heart of maximum health (2 on Hard). See [[Wither effect]].
 
 The Wither is undead and a target of [[warding]]. Warding equipment attacks copper-armored mobs first, then the Wither, then the nearest other undead mob.
 
@@ -41,7 +41,7 @@ The Wither is undead and a target of [[warding]]. Warding equipment attacks copp
 == See also ==
 * [[Wither effect]]
 * [[Wither Skeleton]]
-* [[Divine Favor]]
+* [[Amalgamated Pith]]
 
 == References ==
 {{reflist}}
