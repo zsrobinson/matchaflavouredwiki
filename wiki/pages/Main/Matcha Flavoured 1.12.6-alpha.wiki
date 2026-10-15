@@ -13,7 +13,7 @@ The release notes say that an earlier upload was taken off Modrinth after a repo
 
 == Major additions and changes ==
 === Husks and Hunger ===
-* [[Husk]]s deal 6 damage ({{Hp|6}}) instead of 10 on Normal.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_husk.mcfunction}}</ref>
+* [[Husk]]s deal {{Hp|6}} of damage instead of {{Hp|10}} on Normal.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/normal_modifications/modify_husk.mcfunction}}</ref>
 * The Hunger effect, which husks inflict, now does something: on Normal and Hard, a player with Hunger can't regenerate, so [[food]] doesn't heal until it wears off. An action-bar meter counts down its remaining time. Easy is exempt.<ref>{{Source|MF_datapack/data/matcha/function/effects/regeneration/mark_player.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/effects/hunger/effect.mcfunction}}</ref> To make room for this, the pack no longer gives players a hidden Hunger effect to hold their food bar down; it only tops the bar up with Saturation when it falls to 8 or lower.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref> See [[Hunger]].
 * Foods with the "Cleanse Maleffect" [[intrinsic]], such as [[bread]], [[Honey Ginger Tea|honey ginger tea]] and [[Ice Cream|ice cream]], also remove Hunger.<ref>{{Source|MF_datapack/data/matcha/tags/mob_effect/harmful.json}}</ref>
 
@@ -45,7 +45,7 @@ These come from the pack's 26.3 branch and are new compared with 1.12.5. Most we
 
 === Other changes ===
 * [[Ice Cream|Ice cream]] no longer leaves a bowl.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/matcha/ice_cream.json}}</ref>
-* Food recipes on [[kindling]] take 200 ticks instead of 100, as do the [[Mud Kiln|mud kiln]]'s and the [[Blast Furnace|blast furnace]]'s recipes. Vanilla 26.3 doubles its own smoker and blast furnace recipe times the same way.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_beef.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref>
+* Food takes 10 seconds to cook on [[kindling]], up from 5; the notes call this a fix of campfire cooking times.<ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref> The [[Mud Kiln|mud kiln]]'s and the [[Blast Furnace|blast furnace]]'s recipes have twice as many ticks too, but since smokers and blast furnaces cook at double speed in ''Minecraft'' 26.3, they take as long as before.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_beef.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref>
 * The pack no longer revokes advancements when a world is updated; the notes say this was only needed for 1.12.3 and 1.12.4.<ref>{{Cite changelog|1.12.6-alpha|quote=Removed Advancment revokations on update, this was only needed for 1.12.3+4 so it has been removed}}</ref> Advancements that the pack uses as triggers are instead revoked when the pack loads and when a player joins.<ref>{{Source|MF_datapack/data/matcha/function/setup/player_joined.mcfunction}}</ref>
 * Some [[favorite food]] trades ask for 4 or 8 of the food instead of 1, such as 8 brachio chicken nuggets for an emerald.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_2.mcfunction}}</ref>
 

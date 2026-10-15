@@ -39,7 +39,7 @@ The vanilla stonecutter recipes the pack does not block, listed under the pack's
 }}
 
 == Trivia ==
-* The 1.12.1-alpha release notes say poplar was added to the stonecutter, but poplar did not exist in ''Minecraft'' 26.2, so the recipes did nothing; they were removed in 1.12.2 and return in the pack's 26.3 port. See [[Poplar]].
+* The 1.12.1-alpha release notes say poplar was added to the stonecutter, but poplar did not exist in ''Minecraft'' 26.2, so the recipes did nothing; they were removed in 1.12.2 and returned in 1.12.6-alpha, for 26.3. See [[Poplar]].
 * Birch is the only wood whose planks can be cut into a pressure plate; for the other woods, pressure plates only come from logs.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/birch_pressure_plate_from_stonecutting_birch_planks.json}}</ref>
 * The pack has two identical recipes each for the {{Data/Stonecutting/Count|duplicated}}, which is why the tables list {{Data/Stonecutting/Count|listed}} of the {{Data/Stonecutting/Count|pack}} recipes.<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/exposed_copper_trapdoor_from_stonecutting_exposed_copper_block.json}}</ref>
 

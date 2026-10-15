@@ -3561,6 +3561,7 @@ def release_name(version):
     names = []
     for fn in sorted(glob.glob(os.path.join(ROOT, 'source', 'changelogs', '*.md'))):
         name = os.path.basename(fn)[len('YYYY-MM-DD_'):-len('.md')]
+        name = name.split('+')[0]  # since 1.12.3 the files carry a suffix: "1.12.6-alpha+dp", "+mod", "+rp-rp"
         if not name.endswith('-rp') and (name == version or name.startswith(version + '-')):
             names.append(name)
     return names[-1] if names else version
