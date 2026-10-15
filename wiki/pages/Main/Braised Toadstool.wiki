@@ -6,7 +6,7 @@ A '''braised toadstool''' is a cooked red [[mushroom]], the simple preparation o
 
 === Cooking ===
 {{Recipes}}
-A red mushroom cooks into a braised toadstool in an [[oven]] or on [[kindling]] in {{Value|Braised Toadstool|cook_time}}. Picking up a red mushroom unlocks the oven recipe.
+A red mushroom cooks into a braised toadstool in an [[oven]] in {{Value|Braised Toadstool|cook_time|station=Oven}} or on [[kindling]] in {{Value|Braised Toadstool|cook_time|station=Kindling}}. Picking up a red mushroom unlocks the oven recipe.
 
 == Usage ==
 
@@ -21,6 +21,7 @@ Obtaining a braised toadstool is meant to unlock [[Pickled Toadstools|pickled to
 == History ==
 {{History|
 {{History line|0.7-alpha|Added braised toadstools.}}
+{{History line|1.12.6-alpha|2=Cooking on [[kindling]] takes 10 seconds, up from 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/braised_red_mushroom.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref>}}
 }}
 
 == See also ==

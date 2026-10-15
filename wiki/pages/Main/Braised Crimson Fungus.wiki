@@ -17,6 +17,11 @@ Eating it takes {{Value|Braised Crimson Fungus|eat_time}}, heals {{Value|Braised
 
 It has no crafting use. Cooking one grants ''Hidden Flavors''.
 
+== History ==
+{{History|
+{{History line|1.12.6-alpha|2=Cooking on [[kindling]] takes 10 seconds, up from 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/braised_crimson_fungus.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref>}}
+}}
+
 == See also ==
 * [[Crimson Fungus]]
 * [[Secret recipes]]

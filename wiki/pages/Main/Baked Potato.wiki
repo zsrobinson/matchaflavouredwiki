@@ -8,7 +8,7 @@ A '''baked potato''' is a cooked [[potato]]. It heals {{Value|Baked Potato|heals
 
 === Cooking ===
 {{Recipes}}
-Potatoes cook into baked potatoes in an [[oven]] or on [[kindling]] in {{Value|Baked Potato|cook_time}}. The vanilla smelting, smoking and campfire recipes are replaced. In a [[Mud Kiln|mud kiln]], a potato becomes a [[Charred Potato|charred potato]] instead.
+Potatoes cook into baked potatoes in an [[oven]] in {{Value|Baked Potato|cook_time|station=Oven}} or on [[kindling]] in {{Value|Baked Potato|cook_time|station=Kindling}}. The vanilla smelting, smoking and campfire recipes are replaced. In a [[Mud Kiln|mud kiln]], a potato becomes a [[Charred Potato|charred potato]] instead.
 {{Sources}}
 
 == Usage ==
@@ -20,6 +20,11 @@ Obtaining a baked potato unlocks [[Pickled Potatoes|pickled potatoes]], [[latke]
 
 === Crafting ingredient ===
 {{Uses}}
+
+== History ==
+{{History|
+{{History line|1.12.6-alpha|2=Cooking on [[kindling]] takes 10 seconds, up from 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/baked_potato.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref>}}
+}}
 
 == See also ==
 * [[Potato]]

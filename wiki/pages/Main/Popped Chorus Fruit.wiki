@@ -8,7 +8,7 @@
 
 === Cooking ===
 {{Recipes}}
-Chorus fruit pops in an [[oven]] or on [[kindling]] ({{Value|Popped Chorus Fruit|cook_time|station=Oven}}). Picking up chorus fruit unlocks the oven recipe.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/chorus_fruit.json}}</ref>
+Chorus fruit pops in an [[oven]] in {{Value|Popped Chorus Fruit|cook_time|station=Oven}} or on [[kindling]] in {{Value|Popped Chorus Fruit|cook_time|station=Kindling}}. Picking up chorus fruit unlocks the oven recipe.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/chorus_fruit.json}}</ref>
 
 == Usage ==
 
@@ -23,6 +23,7 @@ Popped chorus fruit is used in [[Chorus Mochi|chorus mochi]] and, as in vanilla,
 == History ==
 {{History|
 {{History line|1.12.3|Can be cooked on kindling as well as in an oven. The recipe unlock now names the oven recipe correctly, so it appears in the recipe book.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/popped_chorus_fruit.json}}</ref>}}
+{{History line|1.12.6-alpha|2=Cooking on [[kindling]] takes 10 seconds, up from 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/popped_chorus_fruit.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref>}}
 }}
 
 == See also ==

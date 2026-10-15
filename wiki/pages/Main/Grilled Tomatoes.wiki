@@ -6,7 +6,7 @@
 
 === Cooking ===
 {{Recipes}}
-Tomatoes cook into grilled tomatoes in an [[oven]] or on [[kindling]] in {{Value|Grilled Tomatoes|cook_time}}. Picking up tomatoes unlocks the oven recipe.
+Tomatoes cook into grilled tomatoes in an [[oven]] in {{Value|Grilled Tomatoes|cook_time|station=Oven}} or on [[kindling]] in {{Value|Grilled Tomatoes|cook_time|station=Kindling}}. Picking up tomatoes unlocks the oven recipe.
 
 == Usage ==
 
@@ -19,6 +19,7 @@ Eating grilled tomatoes takes {{Value|Grilled Tomatoes|eat_time}}, heals {{Value
 == History ==
 {{History|
 {{History line|0.6-alpha|Tomato soup renamed to grilled tomatoes.}}
+{{History line|1.12.6-alpha|2=Cooking on [[kindling]] takes 10 seconds, up from 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/grilled_tomatoes.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref>}}
 }}
 
 == See also ==

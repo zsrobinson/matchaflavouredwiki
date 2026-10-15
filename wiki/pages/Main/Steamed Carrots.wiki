@@ -6,7 +6,7 @@
 
 === Cooking ===
 {{Recipes}}
-A carrot cooks into steamed carrots in an [[oven]] or on [[kindling]] in {{Value|Steamed Carrots|cook_time}}. Picking up a carrot unlocks the oven recipe.
+A carrot cooks into steamed carrots in an [[oven]] in {{Value|Steamed Carrots|cook_time|station=Oven}} or on [[kindling]] in {{Value|Steamed Carrots|cook_time|station=Kindling}}. Picking up a carrot unlocks the oven recipe.
 
 == Usage ==
 
@@ -19,6 +19,7 @@ Eating steamed carrots takes {{Value|Steamed Carrots|eat_time}}, heals {{Value|S
 == History ==
 {{History|
 {{History line|0.7-alpha|New texture.}}
+{{History line|1.12.6-alpha|2=Cooking on [[kindling]] takes 10 seconds, up from 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/steamed_carrots.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref>}}
 }}
 
 == See also ==

@@ -4,7 +4,7 @@
 
 == Obtaining ==
 === Cooking ===
-Cooked fish is made from anything in the small fish group: [[cod]], the 18 custom fish that are cod (see [[Fish]]) and the [[Tropical Fish|tropical fish]]. One recipe, with the group as its ingredient, replaces the separate cod and tropical fish recipes of 1.12.2. Cooking takes {{Value|Cooked Fish|cook_time}} in an [[Oven]] or on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_fish.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/item/fish_small.json}}</ref> A [[Mud Kiln|mud kiln]] chars it instead.
+Cooked fish is made from anything in the small fish group: [[cod]], the 18 custom fish that are cod (see [[Fish]]) and the [[Tropical Fish|tropical fish]]. One recipe, with the group as its ingredient, replaces the separate cod and tropical fish recipes of 1.12.2. Cooking takes {{Value|Cooked Fish|cook_time|station=Oven}} in an [[Oven]] and {{Value|Cooked Fish|cook_time|station=Kindling}} on [[Kindling]].<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_fish.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/item/fish_small.json}}</ref> A [[Mud Kiln|mud kiln]] chars it instead.
 {{Recipes}}
 
 == Usage ==
@@ -16,6 +16,7 @@ Eating it gives a hidden Regeneration III for 48 ticks (2.4 seconds), which heal
 == History ==
 {{History|
 {{History line|1.12.3|The cod and tropical fish recipes are merged into one recipe that takes any small fish. Kindling and the oven both cook it.}}
+{{History line|1.12.6-alpha|2=Cooking on [[kindling]] takes 10 seconds, up from 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_fish.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref>}}
 }}
 
 == References ==
