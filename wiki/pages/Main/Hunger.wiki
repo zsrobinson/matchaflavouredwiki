@@ -11,7 +11,7 @@
 {{Diagram|Food level|width=360|align=right|caption=The food level the pack refills at 8 or below, so it never falls to vanilla's sprinting threshold.}}
 Every tick, the pack checks each player's food level (0 to 20, where vanilla shows 2 points per drumstick). At 8 or below, the player is given {{MCW|Saturation}} II with a duration of 1, which refills it. Saturation is an instant effect, so the game reads that duration as 1 tick rather than 1 second: each time, the effect acts once and restores 2 food points, and it's given again on the next tick while the level is still 8 or below.<ref name="mh">{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref>
 
-The food level therefore never drops below 9, above 6, the vanilla threshold for sprinting, so the player can always sprint and never starves. Above the refill, the food level drains as in vanilla and isn't lowered by the pack. The effect is hidden from the HUD.
+The food level is therefore back at 9 or 10 within a tick of dropping to 8, well above 6, the vanilla threshold for sprinting, so the player can always sprint and never starves. Above the refill, the food level drains as in vanilla and isn't lowered by the pack. The effect is hidden from the HUD.
 
 === Hunger bar ===
 The resource pack replaces every food icon on the HUD with a blank texture, so the hunger bar isn't shown.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/gui/sprites/hud/food_full.png}}</ref>

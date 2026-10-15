@@ -88,7 +88,7 @@ def food_level():
         svg.line(hx, 28, hx, by - 5, stroke='@amber', sw=1.5, arrow=True)
     else:
         mid = (lo + MAX_FOOD) / 2
-        svg.text(cx(mid), 18, 'Eating fills it', anchor='middle', fill='@ink', bold=True)
+        svg.text(cx(mid), 18, 'Left as it is', anchor='middle', fill='@ink', bold=True)
         svg.text(cx(mid), 35, 'drains as in vanilla', size=SMALL, anchor='middle', fill='@muted')
     # the levels and vanilla's thresholds underneath: cell i is food level i
     for v in sorted({1, lo, HEAL_LEVEL, MAX_FOOD} | ({hi} if capped else set())):

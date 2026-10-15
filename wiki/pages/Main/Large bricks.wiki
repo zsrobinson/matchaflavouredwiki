@@ -16,14 +16,6 @@ The change is purely visual: the double slab is the vanilla <code>type=double</c
 | Brick slab || Large clay bricks
 |-
 | Smooth red sandstone slab || A polished smooth red sandstone panel
-|}
-<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/granite_slab_double.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/models/block/brick_slab_double.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/models/block/smooth_red_sandstone_slab_double.json}}</ref>
-
-=== Upcoming ===
-{{Upcoming|type=section}}
-The repository's <code>main</code> branch adds large-brick textures for five more double slabs, which are not in [[Matcha Flavoured 1.12.2|1.12.2-beta]]:<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/andesite_slab_double.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/andesite_slab.json|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
-{| class="wikitable"
-! Double slab !! Appearance
 |-
 | Andesite slab || Large andesite bricks
 |-
@@ -34,12 +26,15 @@ The repository's <code>main</code> branch adds large-brick textures for five mor
 | Cut sandstone slab || Large sandstone bricks
 |-
 | Cut red sandstone slab || Large red sandstone bricks
+|-
+| Smooth stone slab || Large smooth stone bricks
 |}
-It also redraws the granite and polished granite brick textures so that they tile better.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/block/granite_bricks.png|at=5bf7c3e22adaabf2416c83b709842cb9a053cb95}}</ref>
+<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/granite_slab_double.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/models/block/brick_slab_double.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/models/block/smooth_red_sandstone_slab_double.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/models/block/andesite_slab_double.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/andesite_slab.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/models/block/smooth_stone_slab_double.json}}</ref>
 
 == History ==
 {{History|
-{{History line|Upcoming|2=Added large bricks for andesite, polished andesite, diorite, cut sandstone and cut red sandstone double slabs. Granite and polished granite brick textures redrawn to tile better.}}
+{{History line|1.12.3|2=Added large bricks for andesite, polished andesite, diorite, cut sandstone and cut red sandstone double slabs. Granite and polished granite brick textures redrawn to tile better.}}
+{{History line|1.12.6-alpha|2=Only doubled smooth stone slabs show the brick texture; single slabs' sides no longer do.<ref>{{Source|MF_resourcepack/assets/minecraft/models/block/smooth_stone_slab_double.json}}</ref>}}
 }}
 
 == See also ==
