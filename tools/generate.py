@@ -504,10 +504,30 @@ def out_text(o):
     return safe(slot_name(o)) + (',%d' % o['count'] if o.get('count', 1) > 1 else '')
 
 
+def _cooking_speed():
+    """{recipe type: how many times faster than its cookingtime the station cooks}. Since 26.3 a smoker
+    (Mud Kiln) and a blast furnace divide every recipe's time by the fuel's speed provider, which for
+    all vanilla fuels is cooking/speed_default: fast_speed_multiplier on the blocks in
+    predicate/block/fast_cooking, else normal_speed_multiplier."""
+    base = os.path.join(ROOT, 'source', 'vanilla-data', 'data', 'minecraft')
+    try:
+        fast = json.load(open(os.path.join(base, 'context_float_provider', 'cooking', 'fast_speed_multiplier.json')))
+        blocks = json.load(open(os.path.join(base, 'predicate', 'block', 'fast_cooking.json')))['blocks']
+    except FileNotFoundError:
+        return {}  # before 26.3: cookingtime is the time
+    by_block = {'minecraft:smoker': 'smoking', 'minecraft:blast_furnace': 'blasting', 'minecraft:furnace': 'smelting'}
+    return {by_block[b]: float(fast) for b in blocks if b in by_block}
+
+
+COOKING_SPEED = _cooking_speed()
+
+
 def cook_ticks(r):
-    """A cooking recipe's time in ticks (the recipe type's default when the file gives none)."""
-    return r.get('cookingtime') or {'smelting': 200, 'smoking': 100, 'blasting': 100,
-                                    'campfire_cooking': 600}[r['type'].split(':')[-1]]
+    """A cooking recipe's time in ticks as the game runs it (the recipe type's default when the file
+    gives none), after the station's speed multiplier."""
+    t = r['type'].split(':')[-1]
+    raw = r.get('cookingtime') or {'smelting': 200, 'smoking': 100, 'blasting': 100, 'campfire_cooking': 600}[t]
+    return int(round(raw / COOKING_SPEED.get(t, 1)))
 
 
 def recipe_ui(r):
