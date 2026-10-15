@@ -39,7 +39,7 @@ The [[Archaeologist]] (the renamed cartographer) sells 13 maps across its five l
 |-
 | Mansion Map || [[Woodland Mansion]] || Master || 1 obol || Woodland mansion
 |}
-The Papal Outpost map searches for pillager outposts, because the papal outpost generates in their place.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/structure/on_papal_outpost_explorer_maps.json}}</ref> The Overgrown Abbey map is the only one bought with a book instead of an obol; there are two separate trades, one for each book.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_paradise_lost.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_divine_comedy.json}}</ref> The Papal Outpost, Shipwreck, Trail Ruins and Overgrown Abbey maps have their own item textures, and the pack draws its own map markers for the papal outpost, shipwreck, trail ruins and abbey (replacing the game's gray, brown, light gray and green banner markers).<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/shipwreck.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/textures/map/decorations/brown_banner.png}}</ref>
+The Papal Outpost map searches for pillager outposts, because the papal outpost generates in their place.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/structure/on_papal_outpost_explorer_maps.json}}</ref> The Overgrown Abbey map is the only one bought with a book instead of an obol; there are two separate trades, one for each book.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_paradise_lost.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_divine_comedy.json}}</ref> The Papal Outpost, Shipwreck, Trail Ruins and Overgrown Abbey maps have their own item textures, and the pack draws its own map markers for the papal outpost, shipwreck, trail ruins and abbey (replacing the game's gray, brown, light gray and green banner markers, so banners of those colors marked on any map show the same symbols; the light blue banner marker is redrawn too, though no map uses it).<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/shipwreck.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/textures/map/decorations/brown_banner.png}}</ref>
 
 === Wandering Trader ===
 A [[Wandering Trader]] offers 3 of these 6 maps, each for 1 obol and each usable once:<ref>{{Source|MF_datapack/data/matcha/tags/villager_trade/wandering_trader/maps.json}}</ref>
@@ -75,9 +75,9 @@ Compared with vanilla, where a cartographer's explorer maps cost 8 to 14 emerald
 {{History line|1.10|The Archaeologist sells Overgrown Abbey and Papal Outpost maps, with new map textures.
 The names of all explorer maps were updated.}}
 {{History line|1.12.6-alpha|2=The Archaeologist's maps are built on the separate map items of ''Minecraft'' 26.3 instead of on an empty map (first in the 1.12.3 alpha for 26.3).
-Most Archaeologist maps show their structure's marker instead of a red X; the Desert Temple Map shows a desert pyramid instead of a desert village, and the Trail Ruins Map the pack's own trail ruins marker instead of a plains village.
-New map markers for the papal outpost, shipwreck, trail ruins and abbey, and new item textures for the Shipwreck and Trail Ruins maps.
-Abandoned camp chests hold camp maps and buried structure maps.}}
+* The Mineshaft, Papal Outpost, Shipwreck, Warm Ocean Ruin, Overgrown Abbey and Ancient City maps show their structure's marker instead of a red X; the Desert Temple Map shows a desert pyramid instead of a desert village, and the Trail Ruins Map the pack's own trail ruins marker instead of a plains village.
+* New map markers for the papal outpost, shipwreck, trail ruins and abbey, and new item textures for the Shipwreck and Trail Ruins maps.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/map/decorations/brown_banner.png}}</ref><ref>{{Source|MF_resourcepack/assets/matcha/models/item/shipwreck_map.json}}</ref>
+* Abandoned camp chests hold camp maps and buried structure maps.}}
 }}
 
 == Trivia ==
