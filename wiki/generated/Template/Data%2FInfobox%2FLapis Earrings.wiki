@@ -10,11 +10,9 @@
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
 |stackable=No
-|durability=Unbreakable
 |armor=1
-|repair=[[Adamant Alloy]]
 |id=<code>matcha:lapis_earrings</code>
-|base=<code>minecraft:netherite_helmet</code>
-|source={{Source|MF_datapack/data/matcha/villager_trade/toolsmith/1/lapis_earrings.json|lapis_earrings.json}}
+|base=<code>minecraft:poisonous_potato</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/equipment/misc/lapis_earrings.json|lapis_earrings.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -14,6 +14,8 @@
 | {{Slot|Prayer of The Light|link=none}} || <span id="Demonic Emissary"></span>'''Demonic Emissary''' || 10 {{G|E00F}} Steal every prayer from every once-god || Apocrypha || {{{matcha:hell/steal_all_prayers|}}} || Challenge || 10 {{ItemLink|Obol}}{{{matcha:hell/steal_all_prayers reward|}}}
 |-
 | {{Slot|Warding Stone|link=none}} || <span id="Holy Turret"></span>'''Holy Turret''' || {{G|E00F}}{{G|E00F}} Construct a Warding Stone || Hellish Bindings || {{{matcha:hell/obtain_warding_stone|}}} || Goal || 2 {{ItemLink|Obol}}{{{matcha:hell/obtain_warding_stone reward|}}}
+|- class="mfw-spoiler"
+| {{Slot|Poisonous Potato|link=none}} || <span id="Heartbreaker"></span>'''Heartbreaker''' || Fail to clear the Wither effect before time runs out || Through Hell || {{{matcha:hell/wither_breaks_heart|}}} || Task (hidden) || —{{{matcha:hell/wither_breaks_heart reward|}}}
 |-
 | {{Slot|Ancient Debris|link=none}} || <span id="Hidden in the Depths"></span>'''Hidden in the Depths''' || Flesh from Long-Dead Gods || Through Hell || {{{matcha:hell/obtain_ancient_debris|}}} || Task || —{{{matcha:hell/obtain_ancient_debris reward|}}}
 |}</includeonly><noinclude>Generated from the advancement files. The actual requirements are notes passed by advancement ID, and "<ID> reward" is appended to the reward: <code><nowiki>{{Data/Advancements/hell|matcha:hell/root=...}}</nowiki></code>. [[Category:Generated data]]</noinclude>

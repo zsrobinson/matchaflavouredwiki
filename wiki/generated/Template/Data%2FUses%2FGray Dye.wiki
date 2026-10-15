@@ -1,4 +1,4 @@
-<includeonly>{| class="wikitable recipe-table"
+<includeonly>{| class="wikitable recipe-table mw-collapsible"
 ! Name !! Ingredients !! Recipe
 |-
 | {{MCW|Gray Bed}} <small>(vanilla recipe)</small>
@@ -9,6 +9,10 @@
 | [[Gray Dye]] +<br />[[White Carpet]] or [[Orange Carpet]] or [[Magenta Carpet]] or [[Light Blue Carpet]] or [[Yellow Carpet]] or [[Lime Carpet]] or [[Pink Carpet]] or [[Light Gray Carpet]] or [[Cyan Carpet]] or [[Purple Carpet]] or [[Blue Carpet]] or [[Brown Carpet]] or [[Green Carpet]] or [[Red Carpet]] or [[Black Carpet]]
 | {{Crafting|A1=Gray Dye|B1=White Carpet;Orange Carpet;Magenta Carpet;Light Blue Carpet;Yellow Carpet;Lime Carpet;Pink Carpet;Light Gray Carpet;Cyan Carpet;Purple Carpet;Blue Carpet;Brown Carpet;Green Carpet;Red Carpet;Black Carpet|Output=Gray Carpet|shapeless=1}}
 |-
+| [[Gray Cushion]] <small>(vanilla recipe)</small>
+| [[Gray Dye]] +<br />[[White Cushion]] or [[Orange Cushion]] or [[Magenta Cushion]] or [[Light Blue Cushion]] or [[Yellow Cushion]] or [[Lime Cushion]] or [[Pink Cushion]] or [[Light Gray Cushion]] or [[Cyan Cushion]] or [[Purple Cushion]] or [[Blue Cushion]] or [[Brown Cushion]] or [[Green Cushion]] or [[Red Cushion]] or [[Black Cushion]]
+| {{Crafting|A1=Gray Dye|B1=White Cushion;Orange Cushion;Magenta Cushion;Light Blue Cushion;Yellow Cushion;Lime Cushion;Pink Cushion;Light Gray Cushion;Cyan Cushion;Purple Cushion;Blue Cushion;Brown Cushion;Green Cushion;Red Cushion;Black Cushion|Output=Gray Cushion|shapeless=1}}
+|-
 | {{MCW|Gray Harness}} <small>(vanilla recipe)</small>
 | [[Gray Dye]] +<br />{{MCW|White Harness}} or {{MCW|Orange Harness}} or {{MCW|Magenta Harness}} or {{MCW|Light Blue Harness}} or {{MCW|Yellow Harness}} or {{MCW|Lime Harness}} or {{MCW|Pink Harness}} or {{MCW|Light Gray Harness}} or {{MCW|Cyan Harness}} or {{MCW|Purple Harness}} or {{MCW|Blue Harness}} or {{MCW|Brown Harness}} or {{MCW|Green Harness}} or {{MCW|Red Harness}} or {{MCW|Black Harness}}
 | {{Crafting|A1=Gray Dye|B1=White Harness;Orange Harness;Magenta Harness;Light Blue Harness;Yellow Harness;Lime Harness;Pink Harness;Light Gray Harness;Cyan Harness;Purple Harness;Blue Harness;Brown Harness;Green Harness;Red Harness;Black Harness|Output=Gray Harness|shapeless=1}}
@@ -16,6 +20,14 @@
 | [[Gray Wool]] <small>(vanilla recipe)</small>
 | [[Gray Dye]] +<br />[[White Wool]] or [[Orange Wool]] or [[Magenta Wool]] or [[Light Blue Wool]] or [[Yellow Wool]] or [[Lime Wool]] or [[Pink Wool]] or [[Light Gray Wool]] or [[Cyan Wool]] or [[Purple Wool]] or [[Blue Wool]] or [[Brown Wool]] or [[Green Wool]] or [[Red Wool]] or [[Black Wool]]
 | {{Crafting|A1=Gray Dye|B1=White Wool;Orange Wool;Magenta Wool;Light Blue Wool;Yellow Wool;Lime Wool;Pink Wool;Light Gray Wool;Cyan Wool;Purple Wool;Blue Wool;Brown Wool;Green Wool;Red Wool;Black Wool|Output=Gray Wool|shapeless=1}}
+|-
+| [[Gray Wool Slab]] <small>(vanilla recipe)</small>
+| [[Gray Dye]] +<br />[[White Wool Slab]] or [[Orange Wool Slab]] or [[Magenta Wool Slab]] or [[Light Blue Wool Slab]] or [[Yellow Wool Slab]] or [[Lime Wool Slab]] or [[Pink Wool Slab]] or [[Light Gray Wool Slab]] or [[Cyan Wool Slab]] or [[Purple Wool Slab]] or [[Blue Wool Slab]] or [[Brown Wool Slab]] or [[Green Wool Slab]] or [[Red Wool Slab]] or [[Black Wool Slab]]
+| {{Crafting|A1=Gray Dye|B1=White Wool Slab;Orange Wool Slab;Magenta Wool Slab;Light Blue Wool Slab;Yellow Wool Slab;Lime Wool Slab;Pink Wool Slab;Light Gray Wool Slab;Cyan Wool Slab;Purple Wool Slab;Blue Wool Slab;Brown Wool Slab;Green Wool Slab;Red Wool Slab;Black Wool Slab|Output=Gray Wool Slab|shapeless=1}}
+|-
+| [[Gray Wool Stairs]] <small>(vanilla recipe)</small>
+| [[Gray Dye]] +<br />[[White Wool Stairs]] or [[Orange Wool Stairs]] or [[Magenta Wool Stairs]] or [[Light Blue Wool Stairs]] or [[Yellow Wool Stairs]] or [[Lime Wool Stairs]] or [[Pink Wool Stairs]] or [[Light Gray Wool Stairs]] or [[Cyan Wool Stairs]] or [[Purple Wool Stairs]] or [[Blue Wool Stairs]] or [[Brown Wool Stairs]] or [[Green Wool Stairs]] or [[Red Wool Stairs]] or [[Black Wool Stairs]]
+| {{Crafting|A1=Gray Dye|B1=White Wool Stairs;Orange Wool Stairs;Magenta Wool Stairs;Light Blue Wool Stairs;Yellow Wool Stairs;Lime Wool Stairs;Pink Wool Stairs;Light Gray Wool Stairs;Cyan Wool Stairs;Purple Wool Stairs;Blue Wool Stairs;Brown Wool Stairs;Green Wool Stairs;Red Wool Stairs;Black Wool Stairs|Output=Gray Wool Stairs|shapeless=1}}
 |-
 | {{MCW|Gray Candle}} <small>(vanilla recipe)</small>
 | {{MCW|Candle}} +<br />[[Gray Dye]]

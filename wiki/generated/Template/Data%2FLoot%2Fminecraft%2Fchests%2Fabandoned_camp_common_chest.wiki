@@ -1,0 +1,73 @@
+<includeonly><small>Loot table <code>minecraft:chests/abandoned_camp_common_chest</code> ({{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_common_chest.json|source}}); pools roll 1; 2; 4–6 time(s). Overrides the vanilla table.</small>
+{| class="wikitable sortable loot-table"
+! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
+|-
+| {{ItemLink|Bamboo Camp Map}} || 1 || 12.5% || 12.5% || not only in Bamboo Jungle
+|-
+| {{ItemLink|Cherry Grove Camp Map}} || 1 || 12.5% || 12.5% || not only in Cherry Grove
+|-
+| {{ItemLink|Birch Forest Camp Map}} || 1 || 12.5% || 12.5% || not only in Birch Forest
+|-
+| {{ItemLink|Dappled Forest Camp Map}} || 1 || 12.5% || 12.5% || not only in Dappled Forest
+|-
+| {{ItemLink|Flower Forest Camp Map}} || 1 || 12.5% || 12.5% || not only in Flower Forest
+|-
+| {{ItemLink|Pale Garden Camp Map}} || 1 || 12.5% || 12.5% || not only in Pale Garden
+|-
+| {{ItemLink|Swamp Camp Map}} || 1 || 12.5% || 12.5% || not only in Swamp
+|-
+| {{ItemLink|Windswept Forest Camp Map}} || 1 || 12.5% || 12.5% || not only in Windswept Forest
+|-
+| {{ItemLink|Bow|mcw=Bow}} || 1 || 10.0% || 19.0% || 
+|-
+| {{ItemLink|Bucket}} || 1 || 10.0% || 19.0% || 
+|-
+| {{ItemLink|Copper Axe}} || 1 || 10.0% || 19.0% || 
+|-
+| {{ItemLink|Copper Boots}} || 1 || 10.0% || 19.0% || 
+|-
+| {{ItemLink|Copper Chestplate}} || 1 || 10.0% || 19.0% || 
+|-
+| {{ItemLink|Copper Leggings}} || 1 || 10.0% || 19.0% || 
+|-
+| {{ItemLink|Copper Spear}} || 1 || 10.0% || 19.0% || 
+|-
+| {{ItemLink|Copper Sword}} || 1 || 10.0% || 19.0% || 
+|-
+| {{ItemLink|Spyglass}} || 1 || 10.0% || 19.0% || 
+|-
+| {{ItemLink|Copper Shears}} || 1 || 10.0% || 19.0% || 
+|-
+| {{ItemLink|Arrow}} || 4 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Empty Map|mcw=Empty Map}} || 1 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Bone|mcw=Bone}} || 2–4 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Cobweb|mcw=Cobweb}} || 1 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Compass}} || 1 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Empty Map|mcw=Empty Map}} || 1–2 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Sulfur Chunk}} || 2–4 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Fishing Rod}} || 1 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Fire Starter}} || 1 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Glass Bottle}} || 1–4 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Lead|mcw=Lead}} || 1–3 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Sturdy Leather}} || 1–4 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Bundle}} || 1 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Tattered Leather}} || 1–4 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|Saddle|mcw=Saddle}} || 1 || 6.25% || 27.5% || 
+|-
+| {{ItemLink|White Candle|mcw=White Candle}} || 1–3 || 6.25% || 27.5% || 
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

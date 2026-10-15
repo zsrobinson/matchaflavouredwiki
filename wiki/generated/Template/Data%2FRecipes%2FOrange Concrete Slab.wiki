@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Orange Concrete Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Orange Concrete]]
+| {{Crafting|A1=Orange Concrete|B1=Orange Concrete|C1=Orange Concrete|Output=Orange Concrete Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Orange Concrete Slab]]
+| [[Orange Concrete]]
+| {{Stonecutter|Input=Orange Concrete|Output=Orange Concrete Slab,2}}
+|-
+| [[Orange Concrete Slab]] <small>(vanilla recipe)</small>
+| [[Orange Concrete]]
+| {{Stonecutter|Input=Orange Concrete|Output=Orange Concrete Slab,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

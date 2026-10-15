@@ -73,11 +73,12 @@ def warding():
 def doom():
     """A small aside beside the page's table: the four reaches to scale, each ring labelled at its top."""
     levels = []
+    power = mcfunction('matcha/function/enchantment_effects/adamant_effects/doom/check_power.mcfunction')
     for lv in range(1, 5):
-        check = mcfunction('matcha/function/enchantment_effects/adamant_effects/check_doom_%d.mcfunction' % lv)
-        apply = mcfunction('matcha/function/enchantment_effects/adamant_effects/apply_doom_%d.mcfunction' % lv)
-        levels.append((lv, int(need(r'distance=\.\.(\d+)', check, 'doom radius %d' % lv)),
-                       need(r'damage @s (\d+)', apply, 'doom damage %d' % lv)))
+        # one line per number of pieces: find_targets.macro {damage:D,range:R}
+        line = need(r'(adamant_armour matches %d\b.*find_targets\.macro .*)' % lv, power, 'doom level %d' % lv, cast=str)
+        levels.append((lv, int(need(r'range:(\d+)', line, 'doom radius %d' % lv)),
+                       need(r'damage:(\d+)', line, 'doom damage %d' % lv)))
     W, size = 360, 300
     biggest = max(r for _, r, _ in levels)
     scale = (size / 2 - 4) / (biggest + 2)

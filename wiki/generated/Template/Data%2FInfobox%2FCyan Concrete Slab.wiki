@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Cyan Concrete Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Cyan Concrete Slab.png}}
+|imagesize=160px
+|invimage=Cyan Concrete Slab
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:cyan_concrete_slab</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/cyan_concrete_slab.json|cyan_concrete_slab.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

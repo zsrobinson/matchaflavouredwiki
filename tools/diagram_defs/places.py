@@ -142,7 +142,7 @@ def fishing_climates():
         table = e.get('loot_table', '')
         biomes = None
         for c in e.get('conditions') or []:
-            if c['condition'] == 'minecraft:location_check':
+            if c['type'] == 'minecraft:location_check':
                 b = c['predicate']['biomes']
                 if isinstance(b, str) and b.startswith('#'):
                     listed = [v for v in tag_order('worldgen/biome', b[1:]) if not v.startswith('#')]

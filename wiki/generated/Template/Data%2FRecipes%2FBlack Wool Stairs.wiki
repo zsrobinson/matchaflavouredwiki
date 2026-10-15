@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Black Wool Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Black Wool]]
+| {{Crafting|A1=Black Wool|A2=Black Wool|A3=Black Wool|B2=Black Wool|B3=Black Wool|C3=Black Wool|Output=Black Wool Stairs,4}}
+|-
+| [[Black Wool Stairs]] <small>(vanilla recipe)</small>
+| [[Black Dye]] +<br />[[White Wool Stairs]] or [[Orange Wool Stairs]] or [[Magenta Wool Stairs]] or [[Light Blue Wool Stairs]] or [[Yellow Wool Stairs]] or [[Lime Wool Stairs]] or [[Pink Wool Stairs]] or [[Gray Wool Stairs]] or [[Light Gray Wool Stairs]] or [[Cyan Wool Stairs]] or [[Purple Wool Stairs]] or [[Blue Wool Stairs]] or [[Brown Wool Stairs]] or [[Green Wool Stairs]] or [[Red Wool Stairs]]
+| {{Crafting|A1=Black Dye|B1=White Wool Stairs;Orange Wool Stairs;Magenta Wool Stairs;Light Blue Wool Stairs;Yellow Wool Stairs;Lime Wool Stairs;Pink Wool Stairs;Gray Wool Stairs;Light Gray Wool Stairs;Cyan Wool Stairs;Purple Wool Stairs;Blue Wool Stairs;Brown Wool Stairs;Green Wool Stairs;Red Wool Stairs|Output=Black Wool Stairs|shapeless=1}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Black Wool Stairs]]
+| [[Black Wool]]
+| {{Stonecutter|Input=Black Wool|Output=Black Wool Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

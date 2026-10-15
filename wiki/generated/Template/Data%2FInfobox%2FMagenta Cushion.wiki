@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Magenta Cushion}}
+|image={{#if:{{{image|}}}|{{{image}}}|Magenta Cushion.png}}
+|imagesize=160px
+|invimage=Magenta Cushion
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Item}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (16)
+|id=<code>minecraft:magenta_cushion</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/magenta_cushion.json|magenta_cushion.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

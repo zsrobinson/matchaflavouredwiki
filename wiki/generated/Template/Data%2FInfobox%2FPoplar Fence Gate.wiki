@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Poplar Fence Gate}}
+|image={{#if:{{{image|}}}|{{{image}}}|Poplar Fence Gate.png}}
+|imagesize=160px
+|invimage=Poplar Fence Gate
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:poplar_fence_gate</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/poplar_fence_gate.json|poplar_fence_gate.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

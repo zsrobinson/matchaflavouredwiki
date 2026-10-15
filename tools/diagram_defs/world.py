@@ -120,11 +120,12 @@ def ore_lanes(pack=True):
         if not placed or not isinstance(placed['feature'], str):
             continue
         cns, cpath = _id(placed['feature'])
-        crel = '%s/worldgen/configured_feature/%s.json' % (cns, cpath)
+        crel = '%s/worldgen/feature/%s.json' % (cns, cpath)  # 26.3: was configured_feature/, its "config" unwrapped
         conf = _layered(crel, pack)
         if not conf or conf['type'] not in ('minecraft:ore', 'minecraft:scattered_ore'):
             continue
-        states = [t['state']['Name'].split(':')[1] for t in conf['config']['targets']]
+        # 26.3: a block ID, or {"id": ..., "properties": ...} for a block with properties
+        states = [(t['state'] if isinstance(t['state'], str) else t['state']['id']).split(':')[1] for t in conf['targets']]
         stone = next((s for s in states if s.endswith('_ore') and not s.startswith('deepslate_')), None)
         if not stone:
             continue  # dirt, gravel, tuff, infested stone...
@@ -157,7 +158,7 @@ def ore_heights():
     noise = pack_json('minecraft/worldgen/noise_settings/overworld.json')
     sea = noise['sea_level']
 
-    g = _gradient(noise['surface_rule'], 'minecraft:deepslate')  # the deepslate layer's vertical gradient
+    g = _gradient(noise['material_rule'], 'minecraft:deepslate')  # the deepslate layer's vertical gradient
     slate_full = _anchor(g['true_at_and_below'], bottom, top)
     slate_none = _anchor(g['false_at_and_above'], bottom, top)
 
@@ -362,10 +363,16 @@ def moon_phases():
 
 def _gradient(rule, name):
     """The surface rule's vertical gradient with this random name (bedrock floor and roof, deepslate)."""
+    if isinstance(rule, str):  # 26.3 names the rule's file under worldgen/material_rule/
+        ns, _, path = rule.partition(':')
+        try:
+            return _gradient(pack_json('%s/worldgen/material_rule/%s.json' % (ns, path)), name)
+        except FileNotFoundError:
+            return None  # not a rule's name (a biome list in a condition)
     if isinstance(rule, dict):
         if rule.get('random_name') == name:
             return rule
-        rule = list(rule.values())
+        rule = [v for k, v in rule.items() if not isinstance(v, str) or k == 'then_run']  # then_run names a rule
     for v in rule if isinstance(rule, list) else []:
         g = _gradient(v, name)
         if g:
@@ -385,8 +392,8 @@ def hell_water():
     noise = pack_json('minecraft/worldgen/noise_settings/nether.json')
     bottom = noise['noise']['min_y']
     top = bottom + noise['noise']['height'] - 1
-    floor = _gradient(noise['surface_rule'], 'minecraft:bedrock_floor')
-    roof = _gradient(noise['surface_rule'], 'minecraft:bedrock_roof')
+    floor = _gradient(noise['material_rule'], 'minecraft:bedrock_floor')
+    roof = _gradient(noise['material_rule'], 'minecraft:bedrock_roof')
 
     W = 360
     y_top = hi + 1 + 36  # a little of the space above the roof
@@ -456,7 +463,9 @@ def _entity_types(ref):
 
 def _test(cond, place, mob):
     """A predicate condition for a mob of type `mob` at `place` ({'sky', 'y', 'structures'})."""
-    kind = cond['condition'].split(':')[-1]
+    if isinstance(cond, str):  # a term can name a predicate file
+        return _predicate(cond, place, mob)
+    kind = cond['type'].split(':')[-1]
     if kind == 'all_of':
         return all(_test(t, place, mob) for t in cond['terms'])
     if kind == 'any_of':

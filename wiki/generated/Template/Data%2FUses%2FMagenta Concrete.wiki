@@ -1,0 +1,28 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Magenta Concrete Slab]]
+| [[Magenta Concrete]]
+| {{Stonecutter|Input=Magenta Concrete|Output=Magenta Concrete Slab,2}}
+|-
+| [[Magenta Concrete Stairs]]
+| [[Magenta Concrete]]
+| {{Stonecutter|Input=Magenta Concrete|Output=Magenta Concrete Stairs}}
+|-
+| [[Magenta Concrete Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Magenta Concrete]]
+| {{Crafting|A1=Magenta Concrete|B1=Magenta Concrete|C1=Magenta Concrete|Output=Magenta Concrete Slab,6}}
+|-
+| [[Magenta Concrete Slab]] <small>(vanilla recipe)</small>
+| [[Magenta Concrete]]
+| {{Stonecutter|Input=Magenta Concrete|Output=Magenta Concrete Slab,2}}
+|-
+| [[Magenta Concrete Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Magenta Concrete]]
+| {{Crafting|A1=Magenta Concrete|A2=Magenta Concrete|A3=Magenta Concrete|B2=Magenta Concrete|B3=Magenta Concrete|C3=Magenta Concrete|Output=Magenta Concrete Stairs,4}}
+|-
+| [[Magenta Concrete Stairs]] <small>(vanilla recipe)</small>
+| [[Magenta Concrete]]
+| {{Stonecutter|Input=Magenta Concrete|Output=Magenta Concrete Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

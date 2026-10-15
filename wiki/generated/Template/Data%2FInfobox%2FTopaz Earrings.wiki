@@ -10,11 +10,9 @@
 |intrinsics={{#if:{{{intrinsics|}}}|{{{intrinsics}}}|{{G|Mining speed}} [[Haste|∞ Haste]]}}
 |renewable={{{renewable|}}}
 |stackable=No
-|durability=Unbreakable
 |armor=1
-|repair=[[Adamant Alloy]]
 |id=<code>matcha:topaz_earrings</code>
-|base=<code>minecraft:netherite_helmet</code>
+|base=<code>minecraft:poisonous_potato</code>
 |source={{Source|MF_datapack/data/matcha/loot_table/equipment/misc/topaz_earrings.json|topaz_earrings.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

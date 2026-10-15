@@ -1,0 +1,21 @@
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[White Wool Slab]] <small>(vanilla recipe)</small>
+| [[White Dye]] +<br />[[Orange Wool Slab]] or [[Magenta Wool Slab]] or [[Light Blue Wool Slab]] or [[Yellow Wool Slab]] or [[Lime Wool Slab]] or [[Pink Wool Slab]] or [[Gray Wool Slab]] or [[Light Gray Wool Slab]] or [[Cyan Wool Slab]] or [[Purple Wool Slab]] or [[Blue Wool Slab]] or [[Brown Wool Slab]] or [[Green Wool Slab]] or [[Red Wool Slab]] or [[Black Wool Slab]]
+| {{Crafting|A1=White Dye|B1=Orange Wool Slab;Magenta Wool Slab;Light Blue Wool Slab;Yellow Wool Slab;Lime Wool Slab;Pink Wool Slab;Gray Wool Slab;Light Gray Wool Slab;Cyan Wool Slab;Purple Wool Slab;Blue Wool Slab;Brown Wool Slab;Green Wool Slab;Red Wool Slab;Black Wool Slab|Output=White Wool Slab|shapeless=1}}
+|-
+| [[White Wool Slab]] <small>(vanilla recipe)</small>
+| 3 × [[White Wool]]
+| {{Crafting|A1=White Wool|B1=White Wool|C1=White Wool|Output=White Wool Slab,6}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[White Wool Slab]]
+| [[White Wool]]
+| {{Stonecutter|Input=White Wool|Output=White Wool Slab,2}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -1,0 +1,28 @@
+<includeonly>{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Purple Concrete Slab]]
+| [[Purple Concrete]]
+| {{Stonecutter|Input=Purple Concrete|Output=Purple Concrete Slab,2}}
+|-
+| [[Purple Concrete Stairs]]
+| [[Purple Concrete]]
+| {{Stonecutter|Input=Purple Concrete|Output=Purple Concrete Stairs}}
+|-
+| [[Purple Concrete Slab]] <small>(vanilla recipe)</small>
+| 3 × [[Purple Concrete]]
+| {{Crafting|A1=Purple Concrete|B1=Purple Concrete|C1=Purple Concrete|Output=Purple Concrete Slab,6}}
+|-
+| [[Purple Concrete Slab]] <small>(vanilla recipe)</small>
+| [[Purple Concrete]]
+| {{Stonecutter|Input=Purple Concrete|Output=Purple Concrete Slab,2}}
+|-
+| [[Purple Concrete Stairs]] <small>(vanilla recipe)</small>
+| 6 × [[Purple Concrete]]
+| {{Crafting|A1=Purple Concrete|A2=Purple Concrete|A3=Purple Concrete|B2=Purple Concrete|B3=Purple Concrete|C3=Purple Concrete|Output=Purple Concrete Stairs,4}}
+|-
+| [[Purple Concrete Stairs]] <small>(vanilla recipe)</small>
+| [[Purple Concrete]]
+| {{Stonecutter|Input=Purple Concrete|Output=Purple Concrete Stairs}}
+|}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

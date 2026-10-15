@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Red Concrete Slab}}
+|image={{#if:{{{image|}}}|{{{image}}}|Red Concrete Slab.png}}
+|imagesize=160px
+|invimage=Red Concrete Slab
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Block}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=Yes (64)
+|id=<code>minecraft:red_concrete_slab</code>
+|source={{Source|MF_datapack/data/matcha/recipe/stonecutting/red_concrete_slab.json|red_concrete_slab.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>
