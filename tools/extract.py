@@ -1033,6 +1033,8 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
         for m in mods:
             if fn_name(m) == 'exploration_map' and 'gives' in t and norm_id(t['gives'].get('id', '')) == 'minecraft:map':
                 t['gives']['id'] = 'minecraft:filled_map'  # an explorer map is a filled map in-game
+            if fn_name(m) == 'set_components' and 'gives' in t:  # 26.3 trade maps set their item_model here
+                t['gives'].setdefault('components', {}).update(m.get('components') or {})
             if fn_name(m) == 'set_name' and 'gives' in t:
                 t['gives'].setdefault('components', {})['minecraft:item_name' if m.get('target') == 'item_name' else 'minecraft:custom_name'] = m.get('name')
         biome = None

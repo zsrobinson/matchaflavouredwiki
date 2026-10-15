@@ -11,7 +11,7 @@ Packed mud can be made from mud and [[straw]], or from dirt and short dry grass,
 
 == Usage ==
 === Kilning ===
-Most kiln recipes take 5 seconds, as in a vanilla smoker. Raw copper takes 10 seconds and a wet sponge 2.5. The table lists every recipe's time and experience.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json}}</ref>
+Most kiln recipes are set to 200 ticks. In ''Minecraft'' 26.3 a smoker cooks twice as fast as a furnace, so they take 5 seconds, as in a vanilla smoker. Raw copper takes 10 seconds and a wet sponge 2.5. The table lists every recipe and its experience.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json}}</ref>
 {{Data/Station/Mud Kiln}}
 
 === Food ===
@@ -26,6 +26,7 @@ The mud kiln cooks only four foods. [[Dough]] becomes [[naan]], and raw meat, fi
 {{History line|1.10|Quartz can be kilned into glass and amethyst into tinted glass.}}
 {{History line|1.12.1-alpha|Added stone, cobblestone, sand, sandstone, red sandstone, terracotta and sponge kilning.}}
 {{History line|1.12.3|The kiln chars any fish.}}
+{{History line|1.12.6-alpha|2=For ''Minecraft'' 26.3, where a smoker cooks at double speed, every kiln recipe has twice as many ticks (most 200 instead of 100), so kilning takes as long as before.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/brick_from_smoking_clay_ball.json}}</ref>}}
 }}
 
 == References ==

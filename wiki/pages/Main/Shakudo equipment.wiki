@@ -1,5 +1,5 @@
 {{Main|Equipment}}
-'''Shakudo equipment''' is [[Copper equipment|copper equipment]] upgraded with [[Shakudo Alloy|shakudo alloy]], a copper and gold alloy. Its tools have [[Silk Touch]], its axe, sword and spear steal life, and its armor regenerates health, [[Cleanse|cleanses]] effects and gives [[Magic protection|magic protection]].
+'''Shakudo equipment''' is [[Copper equipment|copper equipment]] upgraded with [[Shakudo Alloy|shakudo alloy]], a copper and gold alloy. Its tools have [[Silk Touch]], its axe, sword and spear steal life, and its armor regenerates health, [[Cleanse|cleanses]] effects, resists the [[Wither effect]] and gives [[Magic protection|magic protection]].
 
 == Obtaining ==
 Shakudo alloy is crafted from four blocks of copper and two blocks of gold. Copper equipment is upgraded at a [[Smithing Table|smithing table]] with no template ([[Smithing Upgrade Template|template]] for the dolabra and mattock). It is repaired with blocks of copper. There is also a [[Elytra#Shakudo Elytra|shakudo elytra]].
@@ -7,7 +7,7 @@ Shakudo alloy is crafted from four blocks of copper and two blocks of gold. Copp
 == Intrinsics ==
 * '''Tools''' have Silk Touch.
 * '''Axe, sword and spear''' give the wielder Regeneration III for 1 second on each hit.
-* '''Armor''': each piece cleanses one kind of effect (helmet: Blindness and Darkness; chestplate: Poison; leggings: Slowness; boots: Levitation), gives magic protection 8, and counts towards the regeneration bonus: {{Data/Set bonus|shakudo_regen=1}} with one piece, and every {{Data/Set bonus|shakudo_regen=2|show=every}}, {{Data/Set bonus|shakudo_regen=3|show=every}} or {{Data/Set bonus|shakudo_regen=4|show=every}} seconds with two, three or four.<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
+* '''Armor''': each piece cleanses one kind of effect (helmet: Blindness and Darkness; chestplate: Poison; leggings: Slowness; boots: Levitation), gives magic protection 8, and counts towards the regeneration bonus: {{EffectLink|Regeneration}} I for 3 seconds every 30 seconds with one piece, and every 26, 22 or 18 seconds with two, three or four (see [[Set bonus#Shakudo regeneration]]).<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/shakudo_effects/regeneration/set_cooldown.mcfunction}}</ref> Each piece also adds a level of [[Wither effect#Shakudo wither resistance|wither resistance]], which delays the Wither effect's heart loss; the [[Elytra#Shakudo Elytra|shakudo elytra]] gives the maximum on its own.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/shakudo_effects/wither_resistance/apply_resistance.mcfunction}}</ref>
 
 The video describes shakudo as "a gold-copper alloy that cleanses malefic, steals life from mobs, and whose tools have silk touch as an intrinsic."<ref>{{Cite video|quote=Shikudo, a gold-copper alloy that cleanses malefic, steals life from mobs, and whose tools have silk touch as an intrinsic.}}</ref>
 
@@ -32,6 +32,7 @@ Values are the item's real attributes; where the hand-written tooltip differs, t
 {{History line|1.12.1-alpha|Shakudo intrinsics are now exclusive with the electrum and adamant intrinsics. Shakudo armor was nerfed.}}
 {{History line|1.12.2|The shakudo chestplate no longer cleanses the [[Wither effect|Wither effect]]. The shakudo axe gained life steal, and the shakudo mattock's attack damage was lowered from 4 to 2. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
 {{History line|1.12.3|2=The weapons' life steal intrinsic shows its glyphs in the tooltip instead of its translation key.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>}}
+{{History line|1.12.6-alpha|Shakudo armor gained wither resistance, and the shakudo elytra gives the maximum. The regeneration timer is kept for each player and starts when the armor is put on.<ref>{{Cite changelog|1.12.6-alpha|quote=Shakudo provides wither resistance, but not cleansing}}</ref>}}
 }}
 
 == Trivia ==

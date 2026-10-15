@@ -5,11 +5,11 @@
 === Going to bed ===
 Beds in the Overworld can be used at any time, not only at night or during thunderstorms.<ref>{{Source|MF_datapack/data/minecraft/dimension_type/overworld.json}}</ref> The vanilla skip is disabled by setting the <code>players_sleeping_percentage</code> game rule to 200, which can never be reached.<ref>{{Source|MF_datapack/data/matcha/function/setup/gamerules.mcfunction}}</ref>
 
-When a player lies down, the pack works out how long they will sleep:<ref name="dur">{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/calculate_sleep_duration.mcfunction}}</ref>
+The pack's system starts when a player uses a bed or a straw bed (a block of ''Minecraft'' 26.3).<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/slept_in_bed.json}}</ref> When a player lies down, the pack works out how long they will sleep:<ref name="dur">{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/calculate_sleep_duration.mcfunction}}</ref>
 * If the time of day is between 36,000 and 69,000 (night, on the pack's [[Day and night|72,000-tick day]]), the player sleeps until the time reaches 72,000, the start of the next day.
 * At any other time, the player sleeps for 36,000 ticks, half a day ("12 hours").
 
-The vanilla "No amount of rest can pass this night" message is cleared, and every sleeping player sees how many players are asleep in the action bar, for example "1/2 players sleeping".<ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/on_player_sleep.mcfunction}}</ref>
+The vanilla "No amount of rest can pass this night" message is cleared, and every sleeping player sees how many players are asleep in the action bar, for example "1/2 players sleeping", using the game's own translated message.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/on_player_sleep.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/notify_sleeping_players.mcfunction}}</ref>
 
 === Passing time ===
 While at least one player is asleep, the time is advanced every tick by:<ref name="rate">{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/calculate_sleep_rate.mcfunction}}</ref>
@@ -42,6 +42,7 @@ Waking up at the end of a full sleep sets the [[weather]] to clear. Leaving the 
 {{History line|1.10|Beds work on first load-in. Sleeping for any amount of time sets the weather to clear.}}
 {{History line|1.12.2|Dynamic multiplayer sleep: sleeping at night wakes the player in the morning, while sleeping in the day still skips 12 hours.}}
 {{History line|1.12.4|Fixed multiplayer sleep speed: a player who went to bed while another player was already asleep was immediately treated as awake and not counted, so time passed as if only the first player were sleeping.<ref>{{Cite changelog|1.12.4|quote=Multiplayer Sleep speed}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/sleeping/tick_sleeping_player.mcfunction}}</ref>}}
+{{History line|1.12.6-alpha|Straw beds work with the pack's sleeping system: it now starts when a bed or straw bed is used, instead of when the game reports that the player slept in a bed. The players-sleeping message uses the game's translated text.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/slept_in_bed.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Straw Beds now work}}</ref>}}
 }}
 
 == Trivia ==

@@ -1,5 +1,5 @@
 {{See also|Renamed items|Removed features}}
-This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''Minecraft: Java Edition'' 26.2, with links to the detailed articles. Renamed items are listed on [[Renamed items]], removed features on [[Removed features]], and known problems in the pack on [[Known bugs]].
+This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''Minecraft: Java Edition'' 26.3 (the version of {{Version|1.12.6-alpha}}; the full release {{Version|1.12.5}} is for 26.2), with links to the detailed articles. Renamed items are listed on [[Renamed items]], removed features on [[Removed features]], and known problems in the pack on [[Known bugs]].
 
 == Health, death and survival ==
 * '''[[Hunger]]''' is effectively removed: the hunger bar is hidden and the food level is refilled before it reaches the sprinting threshold, so sprinting is never limited and nobody starves. The Hunger effect instead stops healing while it lasts (on Normal and Hard).
@@ -7,7 +7,7 @@ This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''
 * '''[[Death]]''' keeps the inventory and experience but permanently removes 1 heart of maximum health (2 on Hard). On Easy, maximum health never falls below 10 hearts; on Normal and Hard it falls to a per-player minimum that drops by a heart at each of seven progression milestones. See [[Death#Minimum hearts]].
 * '''[[Health]]''' starts at 10 hearts and can be raised to 30 hearts with crystal hearts.
 * '''[[Difficulty]]''' changes the health, speed and damage of common hostile mobs on every level, including Easy. Normal switches to Hard automatically once any player's minimum hearts falls to 5.
-* '''[[Wither effect|Wither]]''' that lasts 8 seconds removes maximum health as if the player had died (except on Easy). Milk and [[Cleanse|cleansing]] foods such as [[bread]] cure it in time.
+* '''[[Wither effect|Wither]]''' that lasts 9 seconds (6 on Hard) removes maximum health as if the player had died (except on Easy); [[Shakudo equipment|shakudo]] armor buys extra time. Milk and [[Cleanse|cleansing]] foods such as [[bread]] cure it in time.
 * '''[[Freezing water]]''' in frozen biomes gives Slowness and Darkness to, and damages, players whose head is underwater, unless their chestplate has [[Frost Protection]].
 * '''[[Day and night]]''' last three times as long: a full day is 72,000 ticks (60 minutes). The [[Moon]] has its own cycle.
 * '''[[Sleeping]]''' is possible at any time of day. Instead of skipping the night, time speeds up while players are in bed, faster the larger the share of players asleep, and waking up clears the weather.
@@ -59,7 +59,8 @@ This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''
 * Ores are renamed and redistributed: [[Native Silver|native silver]] (emerald ore) in almost every biome, [[Quartz Deposit|quartz deposits]] (lapis ore) far more common, [[Sulfurous Quartz Deposit|sulfurous quartz deposits]] (redstone ore) and large [[Coal Deposit|coal deposits]] under deserts. See [[Ores]] and [[World generation]].
 * New structure: the [[Abbey]], with its [[Copper Eye|copper eye]] doors and grates. Villages become [[Abandoned village|abandoned villages]] and are much rarer, and pillager outposts become [[Papal Outpost|papal outposts]]. Nearly every chest loot table is changed. See [[Structures]] and [[Chest loot]].
 * The Nether is renamed [[Hell]]. Water only stays on its roof, gravel no longer generates, and [[Hellspore|hellspore]] grows naturally.
-* Husks spawn in every biome, deserts have no flowers, beaches have blue flowers, and grass and foliage colors are redrawn. See [[Biomes]].
+* Husks spawn in every biome, deserts have no flowers, beaches have blue flowers, swamps have their own trees, and grass and foliage colors are redrawn. See [[Biomes]].
+* [[Abandoned camp]]s have the pack's own loot, with maps to camps in other biomes and to buried structures.
 * The [[Archaeologist]] sells [[Explorer maps|maps]] to most structures, and [[archaeology]] loot includes clay fetishes and [[Sacred texts|sacred texts]].
 * New [[music disc]]s and a new forest background track. See [[Music]].
 

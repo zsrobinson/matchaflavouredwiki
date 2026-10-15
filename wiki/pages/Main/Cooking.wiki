@@ -19,7 +19,7 @@
 | {{BlockLink|Mud Kiln}} || {{MCW|Smoker}} || Smoking || Only [[naan]] and the charred foods. It is mainly a kiln for bricks, glass, terracotta and stone.
 |}
 
-Food recipes take 5 seconds (100 ticks) and give 0.35 experience, on kindling and in the oven, except molasses, which gives 0.01. The mud kiln's food recipes take 5 seconds as well.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/molasses.json}}</ref> The oven meals take 15 seconds (300 ticks) and cook only in the oven.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref> Kindling therefore cooks food much faster than a vanilla campfire (30 seconds), and the oven twice as fast as a vanilla furnace.
+Food recipes give 0.35 experience, except molasses, which gives 0.01. They take 5 seconds (100 ticks) in the oven and 10 seconds (200 ticks) on kindling.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/cooked_beef.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_beef.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/molasses.json}}</ref> The mud kiln's food recipes are set to 200 ticks, but in ''Minecraft'' 26.3 a smoker (and a blast furnace) cooks twice as fast as a furnace, so they also take 5 seconds.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref> The oven meals take 15 seconds (300 ticks) and cook only in the oven.<ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/pumpkin_curry.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/food/oven/green_curry.json}}</ref> Kindling therefore cooks food three times as fast as a vanilla campfire (30 seconds), and the oven twice as fast as a vanilla furnace.
 
 The pack removes every vanilla cooking recipe for food (meat, fish, potatoes, kelp) and replaces it with its own, so vanilla cooked food can't be made.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
@@ -68,7 +68,7 @@ Recipe unlocks are revoked when a player joins with a newer pack version, so cha
 {{History line|1.12.1-alpha|Cactus can be cooked again. Copper, ancient debris and stone can no longer be smelted in the oven. Cooking, kilning and blasting recipes reorganized.}}
 {{History line|1.12.3|Kindling cooks pumpkin curry, popped chorus fruit and dried kelp too, so it matches the oven. Small fish and large fish each cook with one recipe. The kiln chars any fish.}}
 {{History line|1.12.5|The oven meals (the curries and tonkotsu ramen) can no longer be cooked on kindling, only in the oven.<ref>{{Cite changelog|1.12.5|quote=Ramen and Curries can no longer cooked on campfires}}</ref>}}
-{{History line|Upcoming|2=In the 26.3 port (first in the 1.12.3 alpha for 26.3), mud kiln recipes take twice as long (10 seconds).<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json|at=c8c13d7c0f57052846353ba8b0986896e9c95c4c}}</ref>}}
+{{History line|1.12.6-alpha|2=Food takes 10 seconds to cook on kindling, up from 5.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/cooked_beef.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Campfire Cooking times fixed}}</ref> For ''Minecraft'' 26.3, where smokers and blast furnaces cook at double speed, every mud kiln and blast furnace recipe has twice as many ticks, so they take as long as before.<ref>{{Source|MF_datapack/data/matcha/recipe/food/kiln/charred_meat.json}}</ref>}}
 }}
 
 == See also ==

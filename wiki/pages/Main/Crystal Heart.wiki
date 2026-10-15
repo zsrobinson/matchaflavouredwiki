@@ -55,6 +55,7 @@ Obtaining a crystal heart for the first time grants '''Crystal Heart!''', which 
 {{History line|1.12.1-alpha|Can be traded to the Mouthpiece, with an echo shard, for a [[Pith|divine fragment]]. Advancements now reward crystal hearts.}}
 {{History line|1.12.2|Crystal hearts are now used by the player instead of being applied as soon as they are picked up, and work as totems of undying. [[Ofuda]] trades now require crystal hearts.}}
 {{History line|1.12.3|2=The "Crystal Heart!" advancement can be earned.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref>}}
+{{History line|1.12.6-alpha|2=Crystal hearts from chests, fishing and advancement rewards no longer keep the poisonous potato's food component, like crafted and traded ones.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/crystal_heart.json}}</ref>}}
 }}
 
 == Trivia ==

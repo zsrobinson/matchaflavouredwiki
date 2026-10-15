@@ -20,9 +20,12 @@ Each egg asks for the chicken variant <code>matcha:bobwhite</code> and the sound
 == Resource pack ==
 The resource pack has the bobwhite's sound events (ambient with four calls, and hurt) and its spawn egg model.<ref>{{Source|MF_resourcepack/assets/matcha/sounds.json}}</ref><ref>{{Source|MF_resourcepack/assets/matcha/items/bobwhite_spawn_egg.json}}</ref> No datapack file gives the "Small Egg". The language file also names duck and seagull subtitles and green and teal eggs, in the same unfinished set.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
 
+== Roosts and habitats ==
+The datapack also has structure templates for bird roosts: nine for chicken roosts in plains (three bushes, two logs and four trees) and one small seagull roost. Biome tags name the badlands and wooded badlands as bobwhite habitats, the beach and stony shore as seagull habitats, and plains and sunflower plains as a plains habitat. No structure, template pool or feature uses any of them, so none of these roosts generate.<ref>{{Source|MF_datapack/data/matcha/structure/chicken_roosts/plains/tree_1.nbt}}</ref><ref>{{Source|MF_datapack/data/matcha/structure/seagull_roost/small_1.nbt}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/worldgen/biome/is_bobwhite_habitat.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/worldgen/biome/is_seagull_habitat.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/worldgen/biome/habitat/plains.json}}</ref> The developer's plans include "Roosts for all birds", with "different prefabs for each bird type".<ref>{{Source|changelog.md}}</ref>
+
 == History ==
 {{History|
-{{History line|1.12.6-alpha|2=Added debug spawn egg loot tables, a spawn egg model and sounds for the bobwhite (first in the 1.12.3 alpha for 26.3).}}
+{{History line|1.12.6-alpha|2=Added debug spawn egg loot tables, a spawn egg model and sounds for the bobwhite (first in the 1.12.3 alpha for 26.3), and unused roost templates and habitat biome tags.}}
 }}
 
 == References ==
