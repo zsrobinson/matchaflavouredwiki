@@ -14,7 +14,8 @@ The pack's recipe uses 8 gold nuggets instead of gold ingots. It is unlocked by 
 {{Sources}}
 
 ==== Enchanted variant ====
-Some chests (ancient cities, bastion treasure, desert pyramids, dungeons, mineshafts, ruined portals and woodland mansions) can instead contain a stronger golden apple, the pack's replacement for the {{MCW|Enchanted Golden Apple|enchanted golden apple}}. It has the same name and heals {{Value|Golden Apple|heals}}, but grants Regeneration II for 30 seconds, Absorption IV for 2 minutes, and {{EffectLink|Fire Resistance}} and {{EffectLink|Resistance}} for 5 minutes each.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/enchanted_golden_apple.json}}</ref> The vanilla enchanted golden apple doesn't generate.
+{{Main|Enchanted Golden Apple}}
+Some chests (ancient cities, bastion treasure, desert pyramids, dungeons, mineshafts, ruined portals and woodland mansions) can instead contain an [[enchanted golden apple]]. It heals {{Value|Enchanted Golden Apple|heals}}, but grants Regeneration {{Value|Enchanted Golden Apple|level|effect=Regeneration}}, Absorption {{Value|Enchanted Golden Apple|level|effect=Absorption}}, and {{EffectLink|Fire Resistance}} and {{EffectLink|Resistance}} for {{Value|Enchanted Golden Apple|duration|effect=Resistance}} each. Since {{Version|1.12.7-beta}} it is a separate item again; from 1.12.2 to 1.12.6-alpha it was a golden apple named "Golden Apple", so the chest chances in the table above included it.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/enchanted_golden_apple.json}}</ref>
 
 == Usage ==
 
@@ -30,11 +31,13 @@ Golden apples can be cooked into [[Baked Golden Apple|baked golden apple]]s, whi
 {{History line|0.5-alpha|Golden apples got a proper tooltip and texture. Golden apple foods buffed.}}
 {{History line|1.10|Fixed the golden apple in bastion chests. Enchanted golden apples from ruined portals got a proper tooltip.}}
 {{History line|1.12.1-alpha|Absorption now matches the tooltip. The golden apple in bastion hoglin stables is now the pack's version. Enchanted golden apples in ruined portals fixed.}}
-{{History line|1.12.2|The stronger chest-loot variant is now a golden apple item instead of an enchanted golden apple, so it is named "Golden Apple" and has no enchantment glint.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/enchanted_golden_apple.json}}</ref>}}
+{{History line|1.12.2|The stronger chest-loot variant is now a golden apple item instead of an enchanted golden apple, so it is named "Golden Apple" and has no enchantment glint.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/enchanted_golden_apple.json|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref>}}
+{{History line|1.12.7-beta|The stronger variant is an [[enchanted golden apple]] item again.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/enchanted_golden_apple.json}}</ref>}}
 }}
 
 == See also ==
 * [[Apple]]
+* [[Enchanted Golden Apple]]
 * [[Secret recipes]]
 
 == References ==

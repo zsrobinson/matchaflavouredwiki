@@ -26,13 +26,13 @@ Welcome to the unofficial encyclopedia of '''[[Matcha Flavoured]]''' (also writt
 <div class="mp-highlight-wrapper">
 <h2 class="sr-only">Latest releases</h2>
 {{Mainpage update
-| name = [[Matcha Flavoured {{Current version}}|Poplar Drop]]
-| tag = Alpha
+| name = [[Matcha Flavoured {{Current version}}|Poplar Pre-release]]
+| tag = Beta
 | features =
-* [[Poplar]] trees and [[abandoned camp]]s
-* Hunger stops healing; [[Husk]]s hit softer
-* [[Shakudo equipment|Shakudo]] resists the [[Wither effect|Wither]]
-* Divine Fragment is now [[Pith]]
+* Smoother [[anvil]] experience
+* [[Beacon Kindling]] survives reloads
+* One use per [[favorite food]] trade
+* [[Fishing]] fixed in more biomes
 | bottom = Matcha Flavoured <b class="mp-highlight-version">{{Current version}}</b> for ''Minecraft'' <b class="mp-highlight-version">26.3</b>
 }}{{#ifeq: {{Stable version}} | {{Current version}} || {{Mainpage update
 | name = [[Matcha Flavoured {{Stable version}}|Minor Bug Fixes]]

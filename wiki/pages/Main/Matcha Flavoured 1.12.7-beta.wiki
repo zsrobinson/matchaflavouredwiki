@@ -1,0 +1,61 @@
+{{Meta version infobox
+|version=1.12.7-beta
+|name=Poplar Pre-release
+|type=Beta (pre-release)
+|date=October 17, 2026
+|game=26.3
+|files=<code>MFDP_1_12_7_26_3.zip</code> (datapack), <code>MFRP_1_12_7_26_3.zip</code> (resource pack), <code>matcha-flavoured-1.12.7-beta+rdp.jar</code> (mod)
+|prev=1.12.6-alpha
+}}
+'''Matcha Flavoured 1.12.7-beta''', "Poplar Pre-release", is the current version of [[Matcha Flavoured]], published on October 17, 2026, three days after [[Matcha Flavoured 1.12.6-alpha|1.12.6-alpha]]. It is a beta for ''Minecraft'' 26.3: its <code>pack.mcmeta</code> files report the version as "1.12.7 for 26.3", and the internal version number is 1127.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref> It is a bug-fix update of the 26.3 port; the newest full release is still [[Matcha Flavoured 1.12.5|1.12.5]], for 26.2.
+
+The release notes say that no new major bugs had been reported, so unless something else came up this beta would become the full release. An added note says the developer had not realized that the alpha came out only three days earlier and might wait longer next time.<ref>{{Cite changelog|1.12.7-beta|quote=No new major bugs were reported, so if nothing else comes up, this beta will be the full release}}</ref>
+
+== Changes ==
+=== Anvil experience ===
+{{Main|Anvil#Experience}}
+* Right-clicking an [[anvil]] sets the player's experience level to 10,000, and the pack no longer takes experience away.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/require_xp.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/xp_handling/give_levels.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/block/grants_temp_levels.json}}</ref> In 1.12.6-alpha the pack set every player's experience to 0 each tick; after a player used an anvil, the next change to their inventory gave them 100 levels and spared them from the reset for about 31 seconds.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/set_xp.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref> The release notes say this should fix experience bugs, especially on servers, and that players are no longer "timed out after 30s".<ref>{{Cite changelog|1.12.7-beta|quote=Anvil system reworked, this should fix some XP bugs esp on servers and make it so that you won't be timed out after 30s}}</ref>
+* Players are also given 10,000 levels when they first join a world with this version.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref>
+* The resource pack has a new text shader that hides the experience level number, so the large level isn't shown.<ref>{{Source|MF_resourcepack/assets/minecraft/shaders/core/text.vsh}}</ref><ref>{{Cite changelog|1.12.7-beta|quote=XP is no longer removed, since HapppySpud made a shader to block the XP number}}</ref> See also [[Enchanting]] and [[Repairing]].
+
+=== Beacon Kindling ===
+{{Main|Beacon Kindling}}
+* [[Beacon Kindling]] is crafted from a single column of an emerald, a campfire and a hay bale, which no longer has to be in the middle of the crafting grid.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/beacon_kindling.json}}</ref><ref>{{Cite changelog|1.12.7-beta|quote=Beacon Kindling needs no longer to be placed in the centre of the crafting grid to craft}}</ref>
+* Its timers were rewritten. The beacon, the [[Wandering Trader|wandering trader]] it calls and each player's cooldown now keep their own time in scoreboards, which a repeating 10-second clock counts down.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/10s_loop.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/10s.mcfunction}}</ref> The timings are as before: the trader arrives after 10 minutes and leaves 5 minutes later, and a player can light another beacon after 15 minutes.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/beacon_kindling_used.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/summon_wandering_trader.mcfunction}}</ref> Reloading the datapack no longer removes every summoned trader and puts out every beacon, as it did in 1.12.6-alpha.<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref> The release notes say Beacon Kindling no longer breaks when reloading, relogging or going out of range.<ref>{{Cite changelog|1.12.7-beta|quote=Beacon Kindling no longer breaks when reloading/relogging or going out of range}}</ref>
+
+=== Favorite food trades ===
+* Every [[favorite food]] trade can be used once before the villager restocks. 41 of the 42 trades had written their limit under a key the game doesn't read (<code>max_uses</code> instead of <code>maxUses</code>), so the limit of 1 was ignored; only the apple empanada's trade had it right.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_1.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_1.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref> The release notes call it a bug "that resulted in high restock rates".<ref>{{Cite changelog|1.12.7-beta|quote=Villager trade favourite foods had a bug that resulted in high restock rates}}</ref>
+
+=== Fishing ===
+{{Main|Fishing}}
+* The fishing loot table picks a single fish table for each catch: the first climate group that the biome belongs to, and the [[Fishing junk|junk]] table for a biome in none.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref> Before, each group was a separate entry, so a biome outside all of them gave only junk and treasure, and the deep dark and sulfur caves, which were also in the pack's "unused" biome list, gave slightly more junk than fish.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref><ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/unused.json|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref>
+* The dappled forest is in the temperate freshwater group and the snowy beach in the cold freshwater group; neither was in any group before, so fishing there gave no fish.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/freshwater_temperate.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/freshwater_cold.json}}</ref>
+* Ocean and beach biomes that are in no group, such as those added by other mods, use the temperate saltwater table.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/fallback.json}}</ref>
+
+The release notes list these as "Fishing LT bugs fixed".<ref>{{Cite changelog|1.12.7-beta|quote=Fishing LT bugs fixed}}</ref>
+
+=== Other changes ===
+* Straw beds can be slept in at any time of day in the Overworld. The pack's Overworld dimension type, and the file that turns off true [[darkness]], set the straw bed rule to "always"; in vanilla 26.3 it allows sleeping only when it is dark.<ref>{{Source|MF_datapack/data/minecraft/dimension_type/overworld.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/dimension_type/overworld_no_true_darkness.txt}}</ref><ref>{{Cite changelog|1.12.7-beta|quote=Straw beds can now be slept in during day}}</ref> See [[Sleeping]].
+* The enchanted golden apple found in chests is an enchanted golden apple item again, as before 1.12.2: it is named "Enchanted Golden Apple" and has the enchantment glint. In 1.12.6-alpha it was built on a plain golden apple. Its effects are unchanged.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/enchanted_golden_apple.json}}</ref> See [[Enchanted Golden Apple]].
+* On Peaceful, maximum health no longer falls below 10 hearts, as on Easy, and lowered minimums aren't announced. In 1.12.6-alpha the code handled only Easy, so on Peaceful there was no lower limit at all.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/set_max_hp.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/decrease_minimum_hearts.mcfunction}}</ref> See [[Death#Minimum hearts]].
+* The British English language file gets the [[Raw Diamond|raw diamond]]'s name, which it lacked.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_gb.json}}</ref>
+* The dappled forest's grass is a darker orange (<code>#c5612b</code> instead of vanilla's <code>#df6827</code>).<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/dappled_forest.json}}</ref> See [[Biomes]].
+
+=== Mod file ===
+The mod file now contains the resource pack as well as the datapack, and is named <code>+rdp</code> instead of <code>+dp</code>; the release notes say the developer tested it and that it "seemed to work! Jank but its fine".<ref>{{Cite changelog|1.12.7-beta|quote=I added the RP to the mod folder, I tested it, it seemed to work! Jank but its fine}}</ref> The repository keeps the mod's manifests for Fabric, Quilt, Forge and NeoForge in an <code>Auxiliary/MF_mod</code> folder, and its nightly build copies both packs into it.<ref>{{Source|Auxiliary/MF_mod/fabric.mod.json}}</ref><ref>{{Source|.github/workflows/nightly.yml}}</ref> See [[Installation]].
+
+=== In the repository only ===
+The release commit also adds two optional resource packs to the repository's <code>Auxiliary</code> folder, which are not among the Modrinth files: an accessibility pack with its own textures for some Nether blocks, zombies, drowned, husks, the creeper, the crosshair and the heart containers, with a note on turning off true darkness; and a "fast leaves" pack with simpler models for every kind of [[leaves]]. The repository's nightly build publishes both as zip files.<ref>{{Source|Auxiliary/MF_Accesible_RP/pack.mcmeta}}</ref><ref>{{Source|Auxiliary/MF_Accesible_RP/BUT_ITS_STILL_DARK.txt}}</ref><ref>{{Source|Auxiliary/MF_FastLeaves_RP/pack.mcmeta}}</ref><ref>{{Source|.github/workflows/nightly.yml}}</ref>
+
+=== Repeated release notes ===
+The release notes also list a reworked Traversal enchantment (the internal name of [[Trailblaze]]), several [[Zephyr]] improvements, [[Luck of the Sea]] affecting the star rating of caught fish, and fixes to the [[Updating items|item updater]].<ref>{{Cite changelog|1.12.7-beta|quote=Luck of the Sea now affects the quality (Star rating) of fish caught}}</ref> None of the files behind these changed after 1.12.6-alpha, so whatever they describe was already in that version.
+
+== Credits ==
+The release notes credit Linkershim with the anvil code, both Beacon Kindling fixes and the Traversal and Zephyr work; HapppySpud with the anvil shader and the favorite food fix; ReinIsNOTaDev with the item updater, straw bed and fishing fixes; and Internet-Hyena with the Luck of the Sea change.<ref>{{Cite changelog|1.12.7-beta}}</ref> The credits list in the repository's changelog is unchanged from 1.12.6-alpha. See [[Credits]].<ref>{{Source|changelog.md}}</ref>
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Beta versions]]
