@@ -37,6 +37,8 @@ Replace both the datapack and resource pack files. Seeing a name such as <code>i
 |-
 | Textures work, but the pack's recipes, items and advancements are missing || Only the resource pack is installed; add the datapack to the world.
 |-
+| A level number of 10000 shows above the hotbar || The resource pack is not active, or another resource pack replaces its text shader. The datapack sets every player's level to 10,000 so that anvil work never lacks levels, and the resource pack hides the number. See [[Anvil#Experience]].<ref>{{Source|MF_datapack/data/matcha/function/mechanics/xp_handling/give_levels.mcfunction}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/shaders/core/text.vsh}}</ref>
+|-
 | Mobs behave differently from what the wiki describes || The pack reads the [[difficulty]] only when it loads. Reload the world or run <code>/reload</code> after changing it.
 |-
 | Everything works, but it is unclear what to do next || See [[Guide for new players]] and the [[advancements]].

@@ -2,7 +2,7 @@
 
 == Mechanics ==
 * Whenever an item with a repair cost enters the inventory, its repair cost is reset to 0.<ref>{{Source|MF_datapack/data/endless_repairs/function/reset_breakable_repair_cost.mcfunction}}</ref> This part is based on MiziraGamez's Repair Cost Remover.<ref>{{Source|MF_datapack/data/endless_repairs/README.txt}}</ref>
-* The pack removes all experience from players every tick. After a player uses an anvil, they are given 100 levels, which are removed again about 31 seconds after their inventory last changed.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction}}</ref> Repairs therefore cost nothing in practice.
+* Using an anvil sets the player's experience level to 10,000, and the levels are never taken away.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/require_xp.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/xp_handling/give_levels.mcfunction}}</ref> Repairs therefore cost nothing in practice. The resource pack hides the level number. See [[Anvil#Experience]].
 * Repairing by combining two items in the crafting grid is disabled.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
 == Repair materials ==
@@ -50,6 +50,7 @@ Alloy items show a "Repaired with" line in their tooltip.
 {{History line|1.12.1-alpha|Crafting-grid repair disabled; repair materials made consistent.}}
 {{History line|1.12.2|Sturdy leather armor can be repaired with tattered leather.}}
 {{History line|1.12.3|Shepherd's shears are repaired with blocks of copper and smithed adamant leggings with adamant scrap, matching their tooltips.}}
+{{History line|1.12.7-beta|Using an anvil sets the player's level to 10,000, which is no longer removed after 30 seconds.<ref>{{Cite changelog|1.12.7-beta|quote=Instead XP is given on anvil interaction}}</ref>}}
 }}
 
 == References ==

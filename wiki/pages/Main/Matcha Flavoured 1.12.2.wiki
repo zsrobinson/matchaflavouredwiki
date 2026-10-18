@@ -10,7 +10,7 @@
 }}
 '''Matcha Flavoured 1.12.2-beta''', "Progression, Polish, Prerelease", was the previous version of [[Matcha Flavoured]], published on September 19, 2026. It made the experimental [[death]] system from [[Matcha Flavoured 1.12.1-alpha|1.12.1-alpha]] permanent, moved almost all of the pack into the <code>matcha</code> namespace, reworked [[Electrum equipment|electrum]], [[warding]] and [[Adamant equipment|adamant]] (whose intrinsic became [[Doom]]), added [[Raw Diamond|raw diamonds]] that need a [[blast furnace]], and made the [[Wither effect|Wither effect]] far more dangerous.<ref>{{Cite changelog|1.12.2}}</ref>
 
-It is the first version released as two separate Modrinth files: a datapack and a companion resource pack, whose release notes only say "See DP Changelog for details".<ref>{{Cite changelog|1.12.2|quote=See DP Changelog for details}}</ref> The pack's <code>pack.mcmeta</code> files report the version as "1.12.2 for 26.2", and the internal version number is 1122.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
+It is the first version released as two separate Modrinth files: a datapack and a companion resource pack, whose release notes only say "See DP Changelog for details".<ref>{{Cite changelog|1.12.2|quote=See DP Changelog for details}}</ref> The pack's <code>pack.mcmeta</code> files report the version as "1.12.2 for 26.2", and the internal version number is 1122.<ref>{{Source|MF_datapack/pack.mcmeta|at=f6c6094c6bce90ccf9e0defcfaed315088bda62c}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction|at=f6c6094c6bce90ccf9e0defcfaed315088bda62c}}</ref>
 
 == Credits ==
 The release notes credit, in addition to those credited in 1.12.1-alpha:
@@ -136,7 +136,7 @@ The repository's <code>main</code> branch received the following fixes and addit
 == Trivia ==
 * The notes explain that 26.3 support was delayed because that ''Minecraft'' version changes datapack syntax, and that fpekal was working on the port.
 * The notes admit that "a lot got lost in the crossfire" during the namespace move, so some changes and fixes were not recorded.
-* The chat message shown when the pack loads reports version 1.12.1.<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction}}</ref>
+* The chat message shown when the pack loads reports version 1.12.1.<ref>{{Source|MF_datapack/data/matcha/function/setup/load.mcfunction|at=f6c6094c6bce90ccf9e0defcfaed315088bda62c}}</ref>
 
 == References ==
 {{reflist}}

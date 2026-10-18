@@ -17,7 +17,7 @@ The pack stores each player's maximum health in a scoreboard and sets the player
 |-
 | Maximum || {{Hp|60}} || 30 hearts; crystal hearts can't be used beyond this.<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
 |-
-| Floor on Easy || {{Hp|20}} || Death never lowers maximum health below 10 hearts.
+| Floor on Peaceful and Easy || {{Hp|20}} || Death never lowers maximum health below 10 hearts.
 |-
 | Floor on Normal and Hard || {{Hp|20}} down to {{Hp|6}} || The player's ''minimum hearts'', lowered by progression. See [[Death#Minimum hearts]].
 |}
@@ -49,7 +49,7 @@ The hunger bar is hidden and refilled before the player would stop being able to
 | {{Hp|2}} || {{Hp|2}} || {{Hp|2}} || {{Hp|4}}
 |-
 ! Lowest maximum health after deaths
-| no floor || {{Hp|20}} || {{Hp|20}} to {{Hp|6}} || {{Hp|20}} to {{Hp|6}}
+| {{Hp|20}} || {{Hp|20}} || {{Hp|20}} to {{Hp|6}} || {{Hp|20}} to {{Hp|6}}
 |}
 <ref name="set" />
 
@@ -58,6 +58,7 @@ The hunger bar is hidden and refilled before the player would stop being able to
 {{History line|0.3-alpha|Heart containers replaced by crystal hearts; health system refined.}}
 {{History line|1.12.1-alpha|Maximum health can fall below 10 hearts on Normal and Hard. Hardcore-style heart textures added.}}
 {{History line|1.12.2|Minimum hearts tracked per player.}}
+{{History line|1.12.7-beta|Maximum health never falls below 10 hearts on Peaceful, as on Easy; before, Peaceful had no floor.<ref name="set" />}}
 }}
 
 == Trivia ==
