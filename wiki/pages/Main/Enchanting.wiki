@@ -61,7 +61,7 @@ Besides the vanilla rules, the pack adds some incompatibilities:
 The enchanting table's crafting recipe is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> The pack also replaces the <code>#minecraft:in_enchanting_table</code> tag with curses only, so a table obtained in other ways can only offer Curse of Binding or Curse of Vanishing.<ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/in_enchanting_table.json}}</ref> Breaking an enchanting table drops 2 [[diamond]]s, 4 {{MCW|obsidian}} and a Hell-Bound Book with no enchantments.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/enchanting_table.json}}</ref>
 
 == Removing enchantments ==
-The [[grindstone]] works as in vanilla, removing all non-curse enchantments. Because experience is reset every tick, the experience it gives back is lost.
+The [[grindstone]] works as in vanilla, removing all non-curse enchantments. The experience it gives back is kept but hidden, like all experience (see [[#Experience]]).
 
 == History ==
 {{History|
