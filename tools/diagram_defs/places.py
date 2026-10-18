@@ -141,6 +141,7 @@ def fishing_climates():
     """{table: (biome ids, [fish names by weight])} from the fishing loot table and its climate tables."""
     loot = data()['loot']
     out = {}
+    claimed = set()  # an alternatives entry gives its first child that applies: later ones miss these biomes
     for e in loot[FISHING]['entries']:
         table = e.get('loot_table', '')
         biomes = None
@@ -154,6 +155,9 @@ def fishing_climates():
                     biomes = [b] if isinstance(b, str) else b
         if biomes is None:
             continue
+        if e.get('slot_kind') == 'alternatives':
+            biomes = [b for b in biomes if b not in claimed]
+            claimed.update(biomes)
         key = table.split('/')[-1]
         prev = out.get(key, ([], None))[0]
         fish = []
