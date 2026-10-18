@@ -7,9 +7,9 @@ A '''beacon kindling''' is an item that lights a signal fire to call a [[Wanderi
 The recipe is unlocked when the player obtains an [[Obol]].<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/obol.json}}</ref>
 
 == Usage ==
-Using a Beacon Kindling on a block places a lit signal-fire [[Kindling]] (campfire) there, with a burst of flame particles and the sound of a fire charge and a quieter Wither spawn sound.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/beacon_kindling_placed.mcfunction}}</ref> While the beacon is active, it gives off trial spawner detection particles every half second.<ref>{{Source|MF_datapack/data/matcha/function/particle/beacon_kindling.mcfunction}}</ref>
+Using a Beacon Kindling on a block places a lit signal-fire [[Kindling]] (campfire) there, with a burst of flame particles and the sound of a fire charge and a quieter Wither spawn sound.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/place_beacon_kindling.mcfunction}}</ref> While the beacon is active, it gives off trial spawner detection particles every half second.<ref>{{Source|MF_datapack/data/matcha/function/particle/beacon_kindling.mcfunction}}</ref>
 
-The fire then summons a wandering trader:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/check_wandering_trader_timer_loop.mcfunction}}</ref>
+The fire then summons a wandering trader:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/10s_loop.mcfunction}}</ref>
 {| class="wikitable"
 ! Time after placing !! Event !! Chat message
 |-
@@ -19,12 +19,11 @@ The fire then summons a wandering trader:<ref>{{Source|MF_datapack/data/matcha/f
 |-
 | 15:00 || Trader leaves and the fire goes out || The Wandering Trader has left
 |}
-The pack counts the time in 10-second steps (60 steps to arrive, 90 to leave), so each event can happen up to 10 seconds late.<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref> The messages are shown to players within 128 blocks of the fire.
+The pack counts down in 10-second steps. The fire starts at 90 steps (15 minutes) and summons the trader when 30 are left; the trader gets 30 steps (5 minutes) of its own. Each event can happen up to 10 seconds late.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/place_beacon_kindling.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/summon_wandering_trader.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/timers/10s.mcfunction}}</ref> The countdowns run only while the fire, or the trader, is in a loaded chunk, so a beacon left out of range waits and carries on when a player comes back. It also survives reloading the data pack and leaving the world.<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref> The first message goes to players within 128 blocks of the player who placed the kindling, the arrival message to players within 128 blocks of the fire, and "has left" to players within 128 blocks of the trader.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/beacon_kindling_used.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/kill_wandering_trader.mcfunction}}</ref>
 
-* If the fire stops being a lit campfire (put out with water, broken, or replaced), the beacon is cancelled with the message "The Wandering Trader has lost sight of your beacon...", and a trader that has already arrived is removed.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/kill_wandering_trader_early.mcfunction}}</ref>
-* A player can have one beacon waiting at a time. A second Beacon Kindling placed while the first is active is used up and leaves an ordinary lit signal fire, with the message "You have already summoned a Wandering Trader, please wait patiently while they travel".
-* Reloading the data pack cancels all active beacons and removes every summoned trader.
-* The summoned trader is invulnerable, and is removed without drops when it leaves.
+* The fire is checked every 10 seconds, before the trader is summoned. If it is no longer a lit campfire (put out with water, broken, or replaced), the beacon is cancelled: players within 128 blocks of it see "The Wandering Trader has lost sight of your beacon...", the campfire, if still there, is put out, and if the trader has already arrived, the summoned trader nearest to the fire leaves.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/kill_wandering_trader_early.mcfunction}}</ref>
+* Each player can light one beacon every 15 minutes. The cooldown starts when the beacon is placed, counts down only while the player is online, and isn't ended by cancelling the beacon. A Beacon Kindling placed during the cooldown is used up and leaves an ordinary lit signal fire, and only that player sees "You have already summoned a Wandering Trader, please wait patiently while they travel".<ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/beacon_kindling_used.mcfunction}}</ref> Other players can have their own beacons lit at the same time.
+* The summoned trader is invulnerable. When it leaves, it is teleported 1,000 blocks down and removed, so it drops nothing.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/summon_wandering_trader.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/kill_wandering_trader.mcfunction}}</ref>
 
 See [[Wandering Trader#Trades]] for what the trader sells and buys.
 
@@ -41,7 +40,9 @@ The Beacon Kindling is a chicken spawn egg that places an invisible marker inste
 Summoning items can no longer be used on spawners.}}
 {{History line|1.12.2|Removed from the rooted dirt recipe group.
 The ''Bonfire Lit'' advancement can be completed.}}
-{{History line|1.12.3|The timer keeps running while any player is still waiting for a trader. When there is no active beacon and no waiting player, the summoned traders are removed and each player who was waiting is told that the trader "has lost sight of your beacon...".<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/no_beacons_reset.mcfunction}}</ref>}}
+{{History line|1.12.3|The timer keeps running while any player is still waiting for a trader. When there is no active beacon and no waiting player, the summoned traders are removed and each player who was waiting is told that the trader "has lost sight of your beacon...".<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/no_beacons_reset.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref>}}
+{{History line|1.12.7-beta|Beacons no longer break when the data pack reloads, a player leaves the world or the fire goes out of range: their countdowns pause while unloaded. A player's 15-minute cooldown between beacons is no longer cleared for every player when any beacon is cancelled or the data pack reloads. The fire is checked before the trader is summoned, and the trader counts its own 5 minutes.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/10s_loop.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/kill_wandering_trader_early.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref><ref>{{Cite changelog|1.12.7-beta|quote=Beacon Kindling no longer breaks when reloading/relogging or going out of range}}</ref>
+The recipe works in any column of the crafting grid, not only the middle one.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/beacon_kindling.json}}</ref><ref>{{Cite changelog|1.12.7-beta|quote=Beacon Kindling needs no longer to be placed in the centre of the crafting grid to craft}}</ref>}}
 }}
 
 == References ==
