@@ -9,8 +9,9 @@ from diagrams import SMALL, VANILLA_DATA, PACK_DATA, SRC, Svg, data, diagram, mc
 # Tags and names, the way the game layers them: a pack tag adds to vanilla's unless it replaces it
 
 
-def tag_values(kind, tag):
-    """The block/item ids in #tag (resolved recursively), pack over vanilla."""
+def tag_values(kind, tag, required=True):
+    """The block/item ids in #tag (resolved recursively), pack over vanilla. A missing optional tag
+    ({"id": ..., "required": false}) is empty, as in the game."""
     ns, path = tag.lstrip('#').split(':')
     rel = os.path.join(ns, 'tags', kind, path + '.json')
     found, values = False, []
@@ -19,14 +20,16 @@ def tag_values(kind, tag):
         if os.path.exists(p):
             found = True
             t = json.load(open(p, encoding='utf-8'))
-            values += [v if isinstance(v, str) else v['id'] for v in t['values']]
+            values += [(v, True) if isinstance(v, str) else (v['id'], v.get('required', True)) for v in t['values']]
             if t.get('replace'):
                 break
     if not found:
+        if not required:
+            return set()
         raise FileNotFoundError('tag #%s' % tag.lstrip('#'))
     out = set()
-    for v in values:
-        out |= tag_values(kind, v) if v.startswith('#') else {v}
+    for v, req in values:
+        out |= tag_values(kind, v, req) if v.startswith('#') else {v}
     return out
 
 

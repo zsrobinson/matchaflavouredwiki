@@ -3,44 +3,30 @@
 
 '''Chest loot'''
 {| class="wikitable sortable loot-table"
-! Source !! Variant !! Stack size !! Chance !! Notes
+! Source !! Stack size !! Chance !! Notes
 |-
-| Abandoned mineshaft || Golden Apple || 1 || 35.7% || 
+| Abandoned mineshaft || 1 || 35.7% || 
 |-
-| Abandoned mineshaft || Golden Apple (replaces Enchanted Golden Apple) || 1 || 1.79% || 
+| Bastion hoglin stable || 1 || 21.7% || 
 |-
-| Ancient city || Golden Apple (replaces Enchanted Golden Apple) || 1 || 7.69% || 
+| Bastion other || 1 || 9.37% || 
 |-
-| Bastion hoglin stable || Golden Apple || 1 || 21.7% || 
+| Desert pyramid || 1 || 30.6% || 
 |-
-| Bastion other || Golden Apple || 1 || 9.37% || 
+| Igloo chest || 1 || 100% || 
 |-
-| Bastion treasure || Golden Apple (replaces Enchanted Golden Apple) || 1 || 19.3% || 
+| Ruined portal || 1 || 51.4% || 
 |-
-| Desert pyramid || Golden Apple || 1 || 30.6% || 
+| Simple dungeon || 1 || 19.4% || 
 |-
-| Desert pyramid || Golden Apple (replaces Enchanted Golden Apple) || 1 || 3.44% || 
+| Stronghold corridor || 1 || 12.2% || 
 |-
-| Igloo chest || Golden Apple || 1 || 100% || 
+| Trial chambers / reward || 1 || 5.56% || 
 |-
-| Ruined portal || Golden Apple || 1 || 51.4% || 
+| Trial chambers / reward ominous || 1 || 6.32% || 
 |-
-| Ruined portal || Golden Apple (replaces Enchanted Golden Apple) || 1 || 4.56% || 
+| Underwater ruin big || 1 || 4.35% || 
 |-
-| Simple dungeon || Golden Apple || 1 || 19.4% || 
-|-
-| Simple dungeon || Golden Apple (replaces Enchanted Golden Apple) || 1 || 2.75% || 
-|-
-| Stronghold corridor || Golden Apple || 1 || 12.2% || 
-|-
-| Trial chambers / reward || Golden Apple || 1 || 5.56% || 
-|-
-| Trial chambers / reward ominous || Golden Apple || 1 || 6.32% || 
-|-
-| Underwater ruin big || Golden Apple || 1 || 4.35% || 
-|-
-| Woodland mansion || Golden Apple || 1 || 34.1% || 
-|-
-| Woodland mansion || Golden Apple (replaces Enchanted Golden Apple) || 1 || 5.11% || 
+| Woodland mansion || 1 || 34.1% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>
