@@ -725,6 +725,18 @@ return {
 		["durability"] = { "3000" },
 		["miningspeed"] = { "1.5" },
 	},
+	["Enchanted Golden Apple"] = {
+		["duration:Absorption"] = { "2 minutes", clock = "2:00", minutes = "2 minutes", seconds = "120 seconds", secs = "120", ticks = "2400" },
+		["duration:Fire Resistance"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
+		["duration:Regeneration"] = { "30 seconds", clock = "0:30", minutes = "0.5 minutes", seconds = "30 seconds", secs = "30", ticks = "600" },
+		["duration:Resistance"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },
+		["eat_time"] = { "1.6 seconds", raw = "1.6" },
+		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
+		["level:Absorption"] = { "IV", raw = "4", roman = "IV" },
+		["level:Fire Resistance"] = { "I", raw = "1", roman = "I" },
+		["level:Regeneration"] = { "II", raw = "2", roman = "II" },
+		["level:Resistance"] = { "I", raw = "1", roman = "I" },
+	},
 	["Fire Starter"] = {
 		["durability"] = { "64" },
 	},

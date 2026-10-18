@@ -12,7 +12,9 @@ The pack has 47 different [[fish]] to catch, not counting the frogs, tadpoles an
 Casting, waiting, bite timing, {{MCW|Lure}} and the "open water" check all work as in vanilla. Only the loot tables are changed.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
 
 === Choosing the catch ===
-Each catch rolls the <code>gameplay/fishing</code> loot table once. It picks one of three categories, junk, treasure or the fish of the biome's table, and the biomes of <code>#minecraft:unused</code> add a second, fallback junk entry (see [[#Other biomes]]):
+Each catch rolls the <code>gameplay/fishing</code> loot table once. It picks one of three categories: junk, treasure or the biome's table. Since {{Version|1.12.7-beta}} the biome tables are the children of one <code>alternatives</code> entry, which gives the first table whose biome matches the bobber: the climate and special-biome tables in turn, then temperate saltwater for any biome in the pack's <code>#minecraft:fallback</code> tag, and otherwise the junk table (see [[#Other biomes]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
+
+The pack writes a weight of 85 and a quality of −1 on the <code>alternatives</code> entry, but in ''Minecraft'' 26.3 a composite entry has no weight or quality: only its children do, and the biome tables have none set, so the chosen one weighs 1 with quality 0.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref> In open water a catch is therefore junk 10 times in 16 (62.5%), treasure 5 times in 16 (31.25%) and from the biome's table only 1 time in 16 (6.25%). Out of open water it is junk 10 times in 11 (90.91%) and the biome's table 1 time in 11 (9.09%). This is listed on [[Known bugs]].
 
 {{Data/Fishing/Categories}}
 
@@ -22,7 +24,7 @@ Each level of {{MCW|Luck of the Sea}} adds the entry's quality to its weight, as
 
 {{Data/Fishing/Luck}}
 
-Luck of the Sea barely changes how often fish are caught. It mostly turns junk into treasure. Inside the climate tables the fish have no quality, so it doesn't change which fish is caught either.
+Luck of the Sea doesn't change how often fish are caught in open water: each level moves 2 weight from junk to treasure, and the biome's table keeps its weight of 1. With Luck of the Sea III a catch in open water is junk 25%, treasure 68.75% and fish 6.25% of the time. Inside the climate tables the fish have no quality, so it doesn't change which fish is caught or its star rating either. The {{Version|1.12.7-beta}} notes say that Luck of the Sea now affects the star rating of fish, but nothing in the pack does that.<ref>{{Cite changelog|1.12.7-beta|quote=Luck of the Sea now affects the quality (Star rating) of fish caught}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/freshwater_cold.json}}</ref>
 
 === Rarity ===
 Every caught fish has a rarity of 1 to 4 stars, shown as the first line of its tooltip (⭐☆☆☆, ⭐⭐☆☆, ⭐⭐⭐☆ or ⭐⭐⭐⭐, in gray, green, aqua and pink).<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Every freshwater and saltwater climate has the same layout:
@@ -87,14 +89,14 @@ Three biomes have small tables of their own. Pale Garden and Deep Dark mix one f
 {{Data/Fishing/Special biomes}}
 <ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/pale_garden.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/deep_dark.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
 
-Deep Dark and Sulfur Caves are also in the pack's <code>#minecraft:unused</code> biome tag, which adds a second junk entry of weight 85. In those two biomes about half of all catches are junk, and the "Per catch" columns above already account for it (see also [[#Choosing the catch]]). Pale Garden works like the climates.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/unused.json}}</ref>
+Until {{Version|1.12.7-beta}} Deep Dark and Sulfur Caves were also in the pack's <code>#minecraft:unused</code> biome tag, which added a second junk entry of weight 85, so about half of all catches there were junk. 1.12.7-beta deleted the tag, and the three special biomes now work like the climates.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/unused.json|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref>
 
 Before 1.12.3 the fish bones from the Sulfur Caves table had the wrong item model, so they showed the missing-model texture and didn't stack with fish bones from the junk table. See [[Fish Bones]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/sulfur_caves.json}}</ref>
 
 === Other biomes ===
-The other biomes in <code>#minecraft:unused</code> have no fish: Mushroom Fields, the [[Hell]] biomes and [[The End]] biomes. Their junk entry has weight 85, so nearly every catch there is junk (see [[#Choosing the catch]]).<ref>{{Cite changelog|1.10|quote=Fishing outside of pre-designated biomes no longer gives insane loot (junk pool at 85 weight as fallback)}}</ref>
+Mushroom Fields, the [[Hell]] biomes and [[The End]] biomes have no fish. They get the last child of the biome entry, the junk table, so in open water a catch there is junk 11 times in 16 (68.75%) and treasure 5 times in 16 (31.25%).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref> The {{Version|1.10}} notes meant this fallback junk to have a weight of 85.<ref>{{Cite changelog|1.10|quote=Fishing outside of pre-designated biomes no longer gives insane loot (junk pool at 85 weight as fallback)}}</ref>
 
-Snowy Beach is in no biome tag at all, so only the base junk (10) and treasure (5) entries apply there. A catch in open water at a snowy beach is treasure one time in three, and more often with Luck of the Sea (see [[#Choosing the catch]]). This looks like an oversight rather than a design choice.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref> Biomes added by other packs or mods are in none of the pack's biome tags either, so the same applies to them; the {{Version|1.12.5}} notes say the junk fix is "not for modded biomes".<ref>{{Cite changelog|1.12.5|quote=Fishing Junk LT Fixed (Not for modded biomes)}}</ref>
+Since {{Version|1.12.7-beta}} Snowy Beach is in the cold freshwater tag, and Dappled Forest in the temperate freshwater tag; before, they were in no biome tag, so only the base junk (10) and treasure (5) entries applied there.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/freshwater_cold.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/freshwater_temperate.json}}</ref> Biomes added by other packs or mods are in none of the pack's climate tags. Those in an ocean or beach tag (<code>#minecraft:is_ocean</code>, <code>#minecraft:is_beach</code> or the common <code>#c:is_ocean</code> and <code>#c:is_beach</code>) use the temperate saltwater table through <code>#minecraft:fallback</code>, and the others get the fallback junk.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/biome/fallback.json}}</ref> Every vanilla ocean and beach already has a climate, so the fallback tag only matters for modded biomes. The {{Version|1.12.5}} notes said the junk fix was "not for modded biomes".<ref>{{Cite changelog|1.12.5|quote=Fishing Junk LT Fixed (Not for modded biomes)}}</ref>
 
 == Junk and treasure ==
 {{Main|Fishing junk|Fishing treasure}}
@@ -166,6 +168,8 @@ Old Growth Spruce Taiga added to cool freshwater.}}
 {{History line|1.12.4|The junk table can't be loaded, so junk catches give nothing.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/junk.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
 {{History line|1.12.5|The junk table loads again, so junk catches give items again.<ref>{{Cite changelog|1.12.5|quote=Fishing Junk LT Fixed (Not for modded biomes)}}</ref>}}
 {{History line|1.12.6-alpha|The village fisherman's house chest table no longer rolls the fishing table.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/village/village_fisher.json}}</ref>}}
+{{History line|1.12.7-beta|The biome tables were put into one <code>alternatives</code> entry that picks the first matching table, with temperate saltwater for modded ocean and beach biomes (<code>#minecraft:fallback</code>) and junk for the rest. The <code>#minecraft:unused</code> tag was deleted. The game ignores the entry's weight, so the biome's table dropped from 85 to 1 of the weight: fish went from 85% to 6.25% of open-water catches, and treasure from 5% to 31.25%.
+Snowy Beach added to cold freshwater and Dappled Forest to temperate freshwater.<ref>{{Cite changelog|1.12.7-beta|quote=Fishing LT bugs fixed}}</ref>}}
 }}
 <ref>{{Cite changelog|0.5-alpha|quote=Overhauled Fishing System}}</ref><ref>{{Cite changelog|1.10|quote=Fishing Balances}}</ref><ref>{{Cite changelog|1.12.1-alpha|quote=Fishing now gives 85/5 fish to junk in designated biomes (My patch made it worse and would give junk 50% of the time, sorry)}}</ref>
 

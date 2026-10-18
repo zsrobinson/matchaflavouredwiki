@@ -1,0 +1,20 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Enchanted Golden Apple}}
+|image={{#if:{{{image|}}}|{{{image}}}|Enchanted Golden Apple.png}}
+|imagesize=160px
+|invimage=Enchanted Golden Apple
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|rarity=Rare
+|stackable=Yes (64)
+|heals={{Hp|4}}
+|effects={{EffectLink|Absorption}} IV (2:00)<br />{{EffectLink|Regeneration}} II (0:30)<br />{{EffectLink|Fire Resistance}} (5:00)<br />{{EffectLink|Resistance}} (5:00)
+|eat_time=1.6 seconds
+|id=<code>minecraft:enchanted_golden_apple</code>
+|source={{Source|MF_datapack/data/matcha/loot_table/food/minecraft/enchanted_golden_apple.json|enchanted_golden_apple.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

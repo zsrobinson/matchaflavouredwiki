@@ -10,6 +10,8 @@ The pack's Overworld dimension type differs from vanilla in these ways:<ref>{{So
 |-
 | Beds || Can always be slept in || Only when dark
 |-
+| Straw beds || Can always be slept in || Only when dark
+|-
 | Respawn anchors || Work || Do not work
 |}
 
@@ -34,6 +36,7 @@ The End's dimension type is unchanged.
 {{History line|1.10|True darkness returned. Respawn anchors work in the Overworld.}}
 {{History line|1.12|True darkness kept, with instructions to turn it off; Hell's ambient light raised from 0.1 to 0.3.}}
 {{History line|1.12.2|The day and night length uses timelines.}}
+{{History line|1.12.7-beta|Straw beds can always be slept in.<ref>{{Source|MF_datapack/data/minecraft/dimension_type/overworld.json}}</ref>}}
 }}
 
 == References ==

@@ -49,13 +49,15 @@ Versions are published on Modrinth. Until 1.12.1-alpha the datapack and resource
 | {{Version|1.12.5}} || Minor Bug Fixes || Release || 2026-10-10 || 26.2 || Fishing junk, fox drops and aura foods work again; no more curries or ramen on campfires.
 |-
 | {{Version|1.12.6-alpha}} || Poplar Drop || Alpha || 2026-10-14 || 26.3 || The 26.3 port: poplar, abandoned camps, cushions; Hunger blocks healing, shakudo resists the Wither; Pith renames.
+|-
+| {{Version|1.12.7-beta}} || Poplar Pre-release || Beta || 2026-10-17 || 26.3 || Bug fixes: anvil experience, Beacon Kindling timers, favorite food trade limits, fishing table reworked (fish now rare); mod file includes the resource pack.
 |}
 
 The resource pack of 1.12.2-beta was published as a separate Modrinth version with the same number, titled "See DP (This is the Resource Pack)".
 
 == In development ==
 {{Main|Upcoming features}}
-The repository's default branch, <code>26.3</code>, holds the ''Minecraft'' 26.3 port, released as [[Matcha Flavoured 1.12.6-alpha|1.12.6-alpha]], and work made after that release; [[Matcha Flavoured 1.12.5|1.12.5]], the newest full release, was made from the <code>26.2</code> branch. The developer plans a structure update that will revisit the [[Abbey]], the [[Papal Outpost]] and loot tables.
+The repository's default branch, <code>26.3</code>, holds the ''Minecraft'' 26.3 port, released as the alpha [[Matcha Flavoured 1.12.6-alpha|1.12.6-alpha]] and then the beta [[Matcha Flavoured 1.12.7-beta|1.12.7-beta]], and work made after that release; the 1.12.7-beta release notes say that, if no new major bugs come up, the beta will become the full release.<ref>{{Cite changelog|1.12.7-beta|quote=No new major bugs were reported, so if nothing else comes up, this beta will be the full release}}</ref> [[Matcha Flavoured 1.12.5|1.12.5]], the newest full release, was made from the <code>26.2</code> branch. The developer plans a structure update that will revisit the [[Abbey]], the [[Papal Outpost]] and loot tables.
 
 == References ==
 {{reflist}}

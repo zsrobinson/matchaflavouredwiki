@@ -5,17 +5,21 @@
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Elder guardian || 1 || 6.26% || only in [[Fishing#Temperate saltwater|temperate saltwater biomes]]
+| Elder guardian || 1 || 0.648% || only in [[Fishing#Temperate saltwater|temperate saltwater biomes]]
 |-
-| Elder guardian || 1 || 6.26% || only in [[Fishing#Warm saltwater|warm saltwater biomes]]
+| Elder guardian || 1 || 0.648% || only in [[Fishing#Warm saltwater|warm saltwater biomes]]
+|-
+| Elder guardian || 1 || 0.648% || only in Fallback
 |}
 
 '''Fishing'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Fishing || 1 || 2.02% || only in [[Fishing#Temperate saltwater|temperate saltwater biomes]]
+| Fishing || 1 || 0.149% || only in [[Fishing#Temperate saltwater|temperate saltwater biomes]]
 |-
-| Fishing || 1 || 2.02% || only in [[Fishing#Warm saltwater|warm saltwater biomes]]
+| Fishing || 1 || 0.149% || only in [[Fishing#Warm saltwater|warm saltwater biomes]]
+|-
+| Fishing || 1 || 0.149% || only in Fallback
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

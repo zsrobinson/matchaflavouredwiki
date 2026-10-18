@@ -2,7 +2,7 @@
 |title=Favorite food
 |type=Trading mechanic
 }}
-A villager's '''favorite food''' is a trade mechanic added in 1.12.3: every employed [[villager]] gets one extra trade after its first trade, in which it buys a randomly chosen [[food]] (usually one serving) for an [[Obol]]. The trade is meant to be used once, but for every food except the apple empanada the limit doesn't take effect (see [[Known bugs]]). It is the only way to sell most of the pack's foods.
+A villager's '''favorite food''' is a trade mechanic added in 1.12.3: every employed [[villager]] gets one extra trade after its first trade, in which it buys a randomly chosen [[food]] (usually one serving) for an [[Obol]]. The trade can be used once before the villager restocks. It is the only way to sell most of the pack's foods.
 
 == Mechanics ==
 When the data pack loads, it starts a check that runs 3 seconds later and then every 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/favorite_food_setup.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref> Each check looks at every loaded villager that:
@@ -115,7 +115,8 @@ All 42 foods sell for 1 obol, including the curries and ramen, which take the mo
 == History ==
 {{History|
 {{History line|1.12.3|Added: every employed villager that has been traded with buys one random food, once. The villager wants 1 of the food, and an [[Amnestic]] gives it a new favorite.}}
-{{History line|1.12.6-alpha|The four chicken nuggets are bought 8 at a time, the puerquito 4 and the honey ginger tea 3. The toadstool stroganoff trade asked for an item with a misspelled name key, which no toadstool stroganoff has, and now asks for the real one. The Amnestic sets the villager's experience back to 0, so a new favorite appears only after a trade.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_30.mcfunction}}</ref>}}
+{{History line|1.12.6-alpha|The four chicken nuggets are bought 8 at a time, the puerquito 4 and the honey ginger tea 3. The toadstool stroganoff trade asked for an item with a misspelled name key, which no toadstool stroganoff has, and now asks for the real one. The Amnestic sets the villager's experience back to 0, so a new favorite appears only after a trade.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_30.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref>}}
+{{History line|1.12.7-beta|Every favorite food trade is limited to one use before restocking. From 1.12.3 to 1.12.6-alpha, all but the apple empanada's trade wrote the limit under a key the game ignores (<code>max_uses</code> instead of <code>maxUses</code>), so the limit of 1 didn't apply; the release notes call it a bug "that resulted in high restock rates".<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_1.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref><ref>{{Cite changelog|1.12.7-beta|quote=Villager trade favourite foods had a bug that resulted in high restock rates}}</ref>}}
 }}
 The favorite food was contributed by TankyAibem (pull request #193), as a rework of the "local flavors" add-on. It was merged into the repository's <code>main</code> branch about an hour and a half after [[Matcha Flavoured 1.12.2|1.12.2-beta]] was published on Modrinth and is part of 1.12.3.<ref>[https://github.com/kleiwright/matcha-flavoured/commit/139f198a Merge of pull request #193] (2026-09-19 04:50 UTC; the beta was published at 03:20 UTC)</ref>
 

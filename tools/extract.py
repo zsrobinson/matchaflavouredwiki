@@ -900,13 +900,15 @@ def walk_entries(entries, pool_ctx, out, src, pool_fns=()):
                         'count': count, 'weight': e.get('weight', 1), 'quality': e.get('quality'),
                         'conditions': econd, **pool_ctx})
         elif t in ('alternatives', 'group', 'sequence'):
-            # the children share the parent's single weighted slot in the pool (an alternatives entry
-            # gives only its first child whose conditions pass, e.g. Silk Touch or else the normal drop)
+            # the children share one slot in the pool (an alternatives entry gives only its first child
+            # whose conditions pass, e.g. Silk Touch or else the normal drop). The slot is weighed by the
+            # children's own weight and quality: the game reads neither on a composite entry, so a
+            # weight there does nothing (1.12.7-beta's fishing table puts 85 on its alternatives).
             start = len(out)
             walk_entries(e.get('children', []), pool_ctx, out, src, pool_fns)
             slot = '%s/%d' % (pool_ctx.get('pool'), start)
             for child in out[start:]:  # nested alternatives flatten into the outer slot, in order
-                child['slot'], child['slot_kind'], child['weight'] = slot, t, e.get('weight', 1)
+                child['slot'], child['slot_kind'] = slot, t
                 if econd:
                     child['conditions'] = econd + (child.get('conditions') or [])
         elif t == 'tag':

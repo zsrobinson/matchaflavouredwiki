@@ -8,7 +8,7 @@ A '''grindstone''' is a block that repairs items and removes enchantments. [[Mat
 
 == Usage ==
 === Removing enchantments ===
-As in vanilla, placing an item or [[Hell-Bound Book]] in a grindstone removes all its enchantments except curses. The grindstone normally returns some experience, but the pack resets a player's experience to 0 each tick, except for about 31 seconds after they use an [[anvil]], so that experience is lost.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction}}</ref> Because curses stay, a blank Hell-Bound Book keeps its Curse of Binding.
+As in vanilla, placing an item or [[Hell-Bound Book]] in a grindstone removes all its enchantments except curses. The grindstone returns some experience, as in vanilla, and the player keeps it, although the pack hides the experience bar and level number. Experience matters little in the pack, since using an [[anvil]] sets the player's level to 10,000; see [[Anvil#Experience]].<ref>{{Source|MF_resourcepack/assets/minecraft/shaders/core/text.vsh}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/xp_handling/give_levels.mcfunction}}</ref> Up to 1.12.6-alpha, the pack reset a player's experience to 0 each tick outside a short window after using an anvil, so this experience was lost.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref> Because curses stay, a blank Hell-Bound Book keeps its Curse of Binding.
 
 === Job site ===
 The grindstone is the job site block of the Weaponsmith, which the release notes call the "Grindstone Villager".<ref>{{Cite changelog|1.10|quote=IF YOU WANT THE NEW WEAPON/ARMOUR TWEAKS, use a WEAPONSMITH (Grindstone Villager)}}</ref>

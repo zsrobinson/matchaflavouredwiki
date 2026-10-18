@@ -43,7 +43,7 @@ Blessings are applied like any enchanted book: combine the item and the book in 
 Before 1.12.3, the blessings for [[Anemos]], Frost Protection, [[Reach]], [[Trailblaze]] and [[Zephyr]] stored those enchantments under their old <code>main:</code> ids; they now store the current ones directly. See [[Blessing#Old enchantment ids]].
 
 === Experience ===
-The player cannot keep {{MCW|Experience|experience}}. Every tick, the pack sets the experience level and points of each player to 0.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction}}</ref> After a player opens an anvil, the next change to their inventory gives them 100 levels and exempts them from the reset until a shared 31-second timer runs out, so anvil work never lacks levels.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/set_xp.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/check_anvil_interaction.mcfunction}}</ref> The timer restarts whenever any player's inventory changes, and the check that ends the exemption applies to all players at once.
+Using an [[anvil]] sets the player's {{MCW|Experience|experience}} level to 10,000, so anvil work never lacks levels; players are also given 10,000 levels when they first join and after each pack update.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/require_xp.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/xp_handling/give_levels.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref> Experience is otherwise gained and kept as in vanilla, but the player can't see it: the resource pack draws the experience bar empty and hides the level number.<ref>{{Source|MF_resourcepack/assets/minecraft/shaders/core/text.vsh}}</ref> Up to 1.12.6-alpha, the pack set every player's experience to 0 each tick, except for 100 levels given for about 31 seconds after using an anvil.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref>
 
 === Repair cost ===
 Whenever the player's inventory changes, every item in the main inventory and hotbar has its prior-work penalty ({{MCW|Anvil mechanics#Prior work penalty|repair cost}}) reset to 0, so the penalty never builds up with repeated anvil use.<ref>{{Source|MF_datapack/data/endless_repairs/function/reset_breakable_repair_cost.mcfunction}}</ref> This part of the pack is based on MiziraGamez's "Repair Cost Remover" data pack.<ref>{{Source|MF_datapack/data/endless_repairs/README.txt}}</ref>
@@ -61,7 +61,7 @@ Besides the vanilla rules, the pack adds some incompatibilities:
 The enchanting table's crafting recipe is removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref> The pack also replaces the <code>#minecraft:in_enchanting_table</code> tag with curses only, so a table obtained in other ways can only offer Curse of Binding or Curse of Vanishing.<ref>{{Source|MF_datapack/data/minecraft/tags/enchantment/in_enchanting_table.json}}</ref> Breaking an enchanting table drops 2 [[diamond]]s, 4 {{MCW|obsidian}} and a Hell-Bound Book with no enchantments.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/enchanting_table.json}}</ref>
 
 == Removing enchantments ==
-The [[grindstone]] works as in vanilla, removing all non-curse enchantments. Because experience is reset every tick, the experience it gives back is lost.
+The [[grindstone]] works as in vanilla, removing all non-curse enchantments. The experience it gives back is kept but hidden, like all experience (see [[#Experience]]).
 
 == History ==
 {{History|
@@ -72,6 +72,7 @@ The [[grindstone]] works as in vanilla, removing all non-curse enchantments. Bec
 {{History line|1.12.1-alpha|Added the Prayer of Midas. Fortune is capped at level I.}}
 {{History line|1.12.2|Feather Falling buffed. [[Zephyr]] reworked into three levels. Ofuda trades now require Crystal Hearts.}}
 {{History line|1.12.6-alpha|The gem intrinsics of jewelry are exclusive with each other. [[Trailblaze]]'s anvil cost multiplier raised from 0 to 8.}}
+{{History line|1.12.7-beta|Experience is no longer removed. Using an anvil sets the player's level to 10,000, and the resource pack hides the level number.<ref>{{Cite changelog|1.12.7-beta|quote=Instead XP is given on anvil interaction}}</ref>}}
 }}
 
 == See also ==

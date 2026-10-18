@@ -26,9 +26,8 @@ The pack checks every tick for players whose death count has gone up. For each o
 |}
 
 Maximum health can't fall below a floor:<ref name="setmax">{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/set_max_hp.mcfunction}}</ref>
-* On '''Easy''', the floor is always 10 hearts ({{Hp|20}}), the vanilla starting health.
+* On '''Peaceful''' and '''Easy''', the floor is always 10 hearts ({{Hp|20}}), the vanilla starting health.
 * On '''Normal''' and '''Hard''', the floor is the player's own ''minimum hearts'' (see below).
-* On '''Peaceful''', the code applies no floor.
 
 Maximum health can never be higher than 30 hearts ({{Hp|60}}).<ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref>
 
@@ -57,7 +56,7 @@ Every player has their own minimum, which starts at 10 hearts.<ref>{{Source|MF_d
 | A Divine Alloy || Obtain an {{ItemLink|Adamant Alloy}}
 |}
 
-Each time the minimum drops, the player receives a red flavor message. On every difficulty except Easy, a gray message follows: "Minimum Hearts is now set to ''N''", where ''N'' is the new minimum in hearts. On Easy only the flavor message appears, since the floor there stays at 10 hearts.<ref name="dec" />
+Each time the minimum drops, the player receives a red flavor message. On Normal and Hard, a gray message follows: "Minimum Hearts is now set to ''N''", where ''N'' is the new minimum in hearts. On Peaceful and Easy only the flavor message appears, since the floor there stays at 10 hearts.<ref name="dec" />
 
 {| class="wikitable"
 ! Milestones earned !! Minimum hearts !! Flavor message
@@ -97,10 +96,10 @@ Using a crystal heart raises maximum health by 1 heart, up to 30. Crystal hearts
 | 1 || 1 || 1 || 2
 |-
 ! Lowest maximum health
-| no floor || 10 hearts || minimum hearts (10 to 3) || minimum hearts (10 to 3)
+| 10 hearts || 10 hearts || minimum hearts (10 to 3) || minimum hearts (10 to 3)
 |-
 ! "Minimum Hearts" message
-| yes || no || yes || yes
+| no || no || yes || yes
 |-
 ! Hearts lost to the [[Wither effect]]
 | 1 || none || 1 || 2
@@ -117,7 +116,8 @@ The difficulty the pack uses is read when the world loads, so after changing dif
 {{History line|1.12.2|The new death system is kept. Minimum hearts are tracked per player instead of per world. The [[Wither effect]] now takes hearts.}}
 {{History line|1.12.3|The Wither heart meter is tracked for each player separately.<ref>{{Source|MF_datapack/data/matcha/function/effects/wither/effect.mcfunction}}</ref>}}
 {{History line|1.12.3|2=Brazier, The Stalwart Metal and The Resilient Mineral are no longer revoked when the pack is updated.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref>}}
-{{History line|1.12.6-alpha|Updating the pack no longer resets the minimum to 10 hearts or revokes the milestones.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref>}}
+{{History line|1.12.6-alpha|Updating the pack no longer resets the minimum to 10 hearts or revokes the milestones.<ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref>}}
+{{History line|1.12.7-beta|Peaceful follows the Easy rules: maximum health never falls below 10 hearts, and lowering the minimum prints no "Minimum Hearts" message. Before, Peaceful had no floor at all.<ref name="setmax" /><ref name="dec" />}}
 }}
 
 == Trivia ==

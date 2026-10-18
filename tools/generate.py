@@ -2360,7 +2360,15 @@ def fishing_groups():
     ents = fishing_entries()
     groups = defaultdict(list)
     for b in sorted(BIOMES):
-        groups[tuple(i for i, e in enumerate(ents) if entry_biomes(e) is None or b in entry_biomes(e))].append(b)
+        key, taken = [], set()
+        for i, e in enumerate(ents):
+            if e.get('slot_kind') == 'alternatives' and e['slot'] in taken:
+                continue  # an alternatives entry gives only its first child that applies
+            if entry_biomes(e) is None or b in entry_biomes(e):
+                key.append(i)
+                if e.get('slot_kind') == 'alternatives':
+                    taken.add(e['slot'])
+        groups[tuple(key)].append(b)
     return [(bs, [ents[i] for i in key]) for key, bs in groups.items()]
 
 
@@ -2397,10 +2405,13 @@ def fishing_group_label(bs, ents):
     names = sorted(BIOMES[b] for b in bs)
     if len(bs) <= 3:
         return ', '.join(names)
+    gated = [r for e in ents for r in raw_biomes(e)]
     if any(fishing_kind(e) == 'table' for e in ents):
         text = 'Biomes with a table of their own'
+    elif gated:
+        text = 'Other biomes in ' + ', '.join('<code>%s</code>' % r for r in gated)
     else:
-        text = 'Other biomes in ' + ', '.join('<code>%s</code>' % r for e in ents for r in raw_biomes(e))
+        text = 'Biomes no table covers'
     return '<span class="explain" title="%s">%s</span> (%d)' % (', '.join(names), text, len(bs))
 
 
@@ -2433,9 +2444,13 @@ def fishing_categories_table():
         rows.setdefault(key, []).append(e)
     out = []
     for (kind, gated, w, q, ow), es in rows.items():
+        # the last, unconditioned child of an alternatives entry: taken where no child before it applies
+        fallback = not gated and any(x.get('slot_kind') == 'alternatives' for x in es)
         label = {'junk': '[[Fishing junk|Junk]]', 'treasure': '[[Fishing treasure|Treasure]]',
-                 'table': "Fish (the biome's table)"}[kind] + (' (fallback)' if gated and kind == 'junk' else '')
+                 'table': "Fish (the biome's table)"}[kind] + (' (fallback)' if (gated or fallback) and kind == 'junk' else '')
         conds = []
+        if fallback:
+            conds.append('The bobber is in a biome that has no table')
         if ow:
             conds.append('The bobber is in open water')
         if gated and kind == 'table':

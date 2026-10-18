@@ -181,7 +181,7 @@ return {
 		["Elegy of Hyacinthus"] = { t = "Blessing", c = "55FFFF", l = { { { "Elegy of Hyacinthus", "555555", "" } } } },
 		["Elegy of Icarus"] = { t = "Blessing", c = "55FFFF", l = { { { "Elegy of Icarus", "555555", "" } } } },
 		["Elytra"] = { c = "FF55FF" },
-		["Enchanted Golden Apple"] = { c = "55FFFF" },
+		["Enchanted Golden Apple"] = { c = "55FFFF", l = { { { "", "FF5555", "" } }, { { " (2:00)", "55FFFF", "" } }, { { " Regen II (0:30)", "E85E8F", "" } }, { { " Fire Resistance (5:00)", "FFAA00", "" } }, { { " Resistance (5:00)", "5555FF", "" } } } },
 		["European Eel"] = { l = { { { "⭐⭐⭐⭐", "FF55FF", "" } } } },
 		["Explorer Pottery Sherd"] = { c = "FFFF55" },
 		["Eye Armor Trim Smithing Template"] = { t = "Smithing Template", c = "55FFFF", l = { { { "Eye Armor Trim", "AAAAAA", "" } } } },

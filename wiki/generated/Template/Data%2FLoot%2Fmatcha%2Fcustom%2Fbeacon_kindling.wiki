@@ -1,7 +1,7 @@
-<includeonly><small>Loot table <code>matcha:materials/amnestic</code> ({{Source|MF_datapack/data/matcha/loot_table/materials/amnestic.json|source}}); pools roll 1 time(s).</small>
+<includeonly><small>Loot table <code>matcha:custom/beacon_kindling</code> ({{Source|MF_datapack/data/matcha/loot_table/custom/beacon_kindling.json|source}}); pools roll 1 time(s).</small>
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Amnestic}} || 1 || 100% || 100% || 
+| {{ItemLink|Beacon Kindling}} || 1 || 100% || 100% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

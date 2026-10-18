@@ -34,7 +34,7 @@ Food · Cooking · Intrinsic · Ingredient · Secret recipes · Oven · Mud Kiln
 Soul Kindling · every food item, including ingredients and intermediates (Dough, Flour,
 Bag of Flour, Cheese, Milk Bottle, Molasses, Oil, Seitan, the stocks, Wheat Grain,
 Straw, Tomatoes, Tomato Seeds, Chocolate, Sugar-related items, Cooking Recipe, the
-charred foods, Wooden Cross if it is food-related) · Pumpkin · Carrot · Potato · Apple ·
+charred foods, Wooden Cross if it is food-related) · Pumpkin · Carrot · Potato · Apple · Golden Apple · Enchanted Golden Apple ·
 Melon · Glow Berries · Sweet Berries · Chorus Fruit · Honey · Mushroom · Crimson Fungus ·
 Warped Fungus · Egg (and the vanilla ingredients with intrinsics)
 (Fish items belong to the fishing area; meats and cooked meats belong to food.)

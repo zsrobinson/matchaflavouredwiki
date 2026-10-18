@@ -1,1 +1,32 @@
-#REDIRECT [[Golden Apple#Enchanted variant]]
+{{Vanilla}}
+{{Infobox auto}}
+An '''enchanted golden apple''' is a rare [[food]] item found only in chests. It is the stronger form of the [[golden apple]]: it heals {{Value|Enchanted Golden Apple|heals}} and grants {{EffectLink|Absorption}} {{Value|Enchanted Golden Apple|level|effect=Absorption}} for {{Value|Enchanted Golden Apple|duration|effect=Absorption}}, {{EffectLink|Regeneration}} {{Value|Enchanted Golden Apple|level|effect=Regeneration}} for {{Value|Enchanted Golden Apple|duration|effect=Regeneration}}, and {{EffectLink|Fire Resistance}} and {{EffectLink|Resistance}} for {{Value|Enchanted Golden Apple|duration|effect=Resistance}} each.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/enchanted_golden_apple.json}}</ref>
+
+== Obtaining ==
+=== Chest loot ===
+{{Sources}}
+It can't be crafted. These chests give the pack's version through the loot table <code>matcha:food/minecraft/enchanted_golden_apple</code>.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/enchanted_golden_apple.json}}</ref> The ominous vaults of {{MCW|Trial Chambers|trial chambers}}, which can give one in vanilla, don't in the pack.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/trial_chambers/reward_ominous_unique.json}}</ref>
+
+== Usage ==
+=== Food ===
+Like the pack's other foods it has no food component, so it can be eaten at any time and restores no hunger. Its tooltip lists the hearts it heals, the Absorption hearts and the three effects. The healing comes from a short hidden Regeneration III, as for every food in the pack (see [[Food]]).<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/enchanted_golden_apple.json}}</ref>
+
+=== Crafting ingredient ===
+{{Uses}}
+
+== History ==
+{{History|
+{{History line|1.10|Enchanted golden apples from ruined portals got a proper tooltip.}}
+{{History line|1.12.1-alpha|Enchanted golden apples in ruined portals fixed.}}
+{{History line|1.12.2|The chest-loot enchanted golden apple became a [[golden apple]] item with the stronger effects, named "Golden Apple" and without the enchantment glint.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/enchanted_golden_apple.json|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref>}}
+{{History line|1.12.7-beta|It is an enchanted golden apple item again, named "Enchanted Golden Apple" with the glint, so it can be used to craft the {{MCW|Thing Banner Pattern|Thing banner pattern}} again. Its effects are unchanged.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/enchanted_golden_apple.json}}</ref>}}
+}}
+
+== See also ==
+* [[Golden Apple]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox food}}
+[[Category:Food]]

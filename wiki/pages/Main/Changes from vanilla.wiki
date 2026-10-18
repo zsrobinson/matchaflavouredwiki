@@ -1,10 +1,10 @@
 {{See also|Renamed items|Removed features}}
-This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''Minecraft: Java Edition'' 26.3 (the version of {{Version|1.12.6-alpha}}; the full release {{Version|1.12.5}} is for 26.2), with links to the detailed articles. Renamed items are listed on [[Renamed items]], removed features on [[Removed features]], and known problems in the pack on [[Known bugs]].
+This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''Minecraft: Java Edition'' 26.3 (the version of {{Version|1.12.7-beta}}; the full release {{Version|1.12.5}} is for 26.2), with links to the detailed articles. Renamed items are listed on [[Renamed items]], removed features on [[Removed features]], and known problems in the pack on [[Known bugs]].
 
 == Health, death and survival ==
 * '''[[Hunger]]''' is effectively removed: the hunger bar is hidden and the food level is refilled before it reaches the sprinting threshold, so sprinting is never limited and nobody starves. The Hunger effect instead stops healing while it lasts (on Normal and Hard).
 * '''[[Natural regeneration]]''' is off. Health is restored by eating [[food]], by picking up [[Raw Estus|raw Estus]], by [[Crystal Heart|crystal hearts]], near a [[Warding Stone|warding stone]] and by some equipment such as [[Shakudo equipment|shakudo]].
-* '''[[Death]]''' keeps the inventory and experience but permanently removes 1 heart of maximum health (2 on Hard). On Easy, maximum health never falls below 10 hearts; on Normal and Hard it falls to a per-player minimum that drops by a heart at each of seven progression milestones. See [[Death#Minimum hearts]].
+* '''[[Death]]''' keeps the inventory and experience but permanently removes 1 heart of maximum health (2 on Hard). On Peaceful and Easy, maximum health never falls below 10 hearts; on Normal and Hard it falls to a per-player minimum that drops by a heart at each of seven progression milestones. See [[Death#Minimum hearts]].
 * '''[[Health]]''' starts at 10 hearts and can be raised to 30 hearts with crystal hearts.
 * '''[[Difficulty]]''' changes the health, speed and damage of common hostile mobs on every level, including Easy. Normal switches to Hard automatically once any player's minimum hearts falls to 5.
 * '''[[Wither effect|Wither]]''' that lasts 9 seconds (6 on Hard) removes maximum health as if the player had died (except on Easy); [[Shakudo equipment|shakudo]] armor buys extra time. Milk and [[Cleanse|cleansing]] foods such as [[bread]] cure it in time.
@@ -39,7 +39,7 @@ This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''
 * New tools and weapons: [[mattock]], [[dolabra]], [[claymore]], [[Compound Bow|compound bow]], [[hatchet]], [[cleaver]], [[crook]], [[Snow Shovel|snow shovel]], several [[shears]] and [[compass]]es. See [[Tools]] and [[Weapons]].
 * New armor: [[Sturdy leather armor|sturdy leather]], [[Turtle Shellmet|turtle shellmet]], [[Golden Crown|golden crown]], [[Hepatizon Laurel|hepatizon laurel]] and alloy [[Elytra|elytra]]. See [[Armor]].
 * [[Jewelry]] from gems: earrings and circlets worn in the head slot, each with a permanent effect.
-* [[Repairing]] has no cost cap, and experience is not spent on it. Alloys are repaired with specific materials.
+* [[Repairing]] has no cost cap, and using an anvil gives the player 10,000 experience levels, so repairs cost nothing in practice. The experience bar and level number are hidden. Alloys are repaired with specific materials.
 
 == Magic ==
 * The enchanting table cannot be crafted. Enchantments are crafted as [[blessing]]s from [[Hell-Bound Book|hell-bound books]] and applied with an [[anvil]]. See [[Enchanting]].
