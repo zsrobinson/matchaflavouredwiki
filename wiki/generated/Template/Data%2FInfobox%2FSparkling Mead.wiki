@@ -1,8 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Desert Temple Map}}
-|image={{#if:{{{image|}}}|{{{image}}}|Desert Temple Map.png}}
+|title={{#if:{{{title|}}}|{{{title}}}|Sparkling Mead}}
+|image={{#if:{{{image|}}}|{{{image}}}|Sparkling Mead.png}}
 |imagesize=160px
-|invimage=Desert Temple Map
+|invimage=Sparkling Mead
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
@@ -10,7 +10,8 @@
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
 |stackable=Yes (64)
-|id=<code>minecraft:desert_pyramid_map</code>
-|source={{Source|MF_datapack/data/matcha/villager_trade/cartographer/2/desert_temple.json|desert_temple.json}}
+|id=<code>matcha:bubbling_mead</code>
+|base=<code>minecraft:splash_potion</code>
+|source={{Source|MF_datapack/data/matcha/recipe/food/crafting/bubbling_mead.json|bubbling_mead.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

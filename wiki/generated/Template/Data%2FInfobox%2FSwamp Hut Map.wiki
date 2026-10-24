@@ -1,8 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Buried Mineshaft Map}}
-|image={{#if:{{{image|}}}|{{{image}}}|Buried Mineshaft Map.png}}
+|title={{#if:{{{title|}}}|{{{title}}}|Swamp Hut Map}}
+|image={{#if:{{{image|}}}|{{{image}}}|Swamp Hut Map.png}}
 |imagesize=160px
-|invimage=Buried Mineshaft Map
+|invimage=Swamp Hut Map
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
@@ -10,7 +10,7 @@
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
 |stackable=Yes (64)
-|id=<code>minecraft:buried_mineshaft_map</code>
-|source={{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_secret_chest.json|abandoned_camp_secret_chest.json}}
+|id=<code>minecraft:swamp_hut_map</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/witch_hut.json|witch_hut.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

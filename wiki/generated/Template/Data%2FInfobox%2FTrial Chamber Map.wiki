@@ -9,8 +9,9 @@
 |type={{#if:{{{type|}}}|{{{type}}}|Item}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
+|vanilla={{MCW|Buried Trial Chambers Map}}
 |stackable=Yes (64)
 |id=<code>minecraft:buried_trial_chambers_map</code>
-|source={{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/trial_chamber.json|trial_chamber.json}}
+|source={{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_secret_chest.json|abandoned_camp_secret_chest.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,7 +1,7 @@
 <includeonly>{| class="wikitable sortable"
 ! Enchantment !! ID !! Max level !! Slots !! Applies to !! Compared with vanilla
 |-
-| [[Anemos]] || <code>matcha:anemos</code> || 1 || mainhand || Swords and stick || '''New'''
+| [[Anemos]] || <code>matcha:anemos</code> || 1 || mainhand || Swords, stick and mace || '''New'''
 |-
 | [[Anemos]] (old id) || <code>main:anemos</code> || 1 || mainhand || Swords (not copper or golden) and stick || '''New'''
 |-
@@ -109,7 +109,7 @@
 |-
 | {{MCW|Wind Burst}} || <code>minecraft:wind_burst</code> || 3 || mainhand || Mace || Changed: anvil cost
 |-
-| [[Zephyr]] || <code>matcha:zephyr</code> || 3 || feet || Boots || '''New'''
+| [[Zephyr]] || <code>matcha:zephyr</code> || 3 || feet || Leather boots || '''New'''
 |-
 | [[Zephyr]] (old id) || <code>main:zephyr</code> || 1 || feet || Boots || '''New'''
 |-

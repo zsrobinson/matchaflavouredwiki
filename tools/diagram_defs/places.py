@@ -287,14 +287,15 @@ HAUNTED_HOUSE = 'minecraft/structure/village_beta/buildings/extra_large_4.nbt'
 @diagram('Mannequin')
 def mannequin():
     from diagram_defs.areas import rings
-    env = 'matcha/function/environmental/'
-    eerie = mcfunction(env + 'village_eerie_sound.mcfunction')
-    music = need(r'tag=!music_played\] run execute if score @p\[distance=\.\.(\d+),gamemode=survival\] eerie >= 1 eerie '
-                 r'run function matcha:environmental/play_village_jukebox', eerie, 'mannequin music radius', cast=int)
-    near_box = need(r'@n\[type=marker,tag=jukebox\] run execute if entity @p\[distance=\.\.(\d+),gamemode=survival\] '
-                    r'run function matcha:environmental/kill_village_entity', eerie, 'jukebox vanish radius', cast=int)
-    near = need(r'tag=haunted\] run execute if entity @p\[distance=\.\.(\d+),gamemode=survival\] run function '
-                r'matcha:environmental/kill_village_entity', eerie, 'mannequin vanish radius', cast=int)
+    env = 'matcha/function/environmental/village/'
+    juke_fn, entity = mcfunction(env + 'jukebox.mcfunction'), mcfunction(env + 'entity.mcfunction')
+    # the jukebox marker runs the music check, so that distance is measured from it, not the mannequin
+    music = need(r'unless entity @p\[distance=\.\.(\d+),gamemode=survival\] run return fail', juke_fn,
+                 'mannequin music radius', cast=int)
+    near_box = need(r'@n\[type=marker,tag=jukebox\] if entity @p\[distance=\.\.(\d+),gamemode=survival\] '
+                    r'run return run tp @s ~ ~-1000 ~', entity, 'jukebox vanish radius', cast=int)
+    near = need(r'(?m)^execute if entity @p\[distance=\.\.(\d+),gamemode=survival\] run return run tp @s ~ ~-1000 ~',
+                entity, 'mannequin vanish radius', cast=int)
     door = need(r'@p\[distance=\.\.(\d+),gamemode=survival\] run tp @s ~ ~-1000 ~',
                 mcfunction(env + 'check_if_entity_should_die.mcfunction'), 'oak door vanish radius', cast=int)
     # where things stand in the house: the mannequin, the jukebox marker, the jukebox and the door
@@ -311,25 +312,26 @@ def mannequin():
     cx, cy = W / 2, W / 2 - 4
     svg = Svg(W, 0, "The haunted house's mannequin: the distances that start the music and make it vanish, to scale")
 
-    def at(p):  # template x/z to the drawing, the mannequin at the centre
-        return cx + (p[0] - man[0]) * scale, cy + (p[2] - man[2]) * scale
+    def at(p):  # template x/z to the drawing, the jukebox marker at the centre
+        return cx + (p[0] - marker[0]) * scale, cy + (p[2] - marker[2]) * scale
 
     rings(svg, cx, cy, scale, [(music, '@blue_soft', '@blue', None)])
     x0, y0 = at((0, 0, 0))
     svg.rect(x0, y0, sx * scale, sz * scale, fill='@panel', stroke='@panel_edge', rx=2)
     svg.text(x0 + sx * scale, y0 + sz * scale + 10, 'House', size=SMALL, fill='@muted', anchor='end')
-    rings(svg, cx, cy, scale, [(door, 'none', '@amber', '5 4'), (near, '@red_soft', '@red', None)])
-    mx, my = at(marker)
-    svg.circle(mx, my, near_box * scale, fill='@red_soft', stroke='@red', sw=1.5)
+    px, py = at(man)
+    for r, fill, edge, dash in [(door, 'none', '@amber', '5 4'), (near, '@red_soft', '@red', None)]:
+        svg.circle(px, py, r * scale, fill=fill, stroke=edge, sw=1.5, dash=dash)
+    svg.circle(cx, cy, near_box * scale, fill='@red_soft', stroke='@red', sw=1.5)
     dx, dy = at((oak[0] + 0.5, 0, oak[2] + 0.5))
     d = max(scale, 7)
     svg.rect(dx - d / 2, dy - d / 2, d, d, fill='@amber', rx=1)
     svg.icon('Jukebox', *at((juke[0] + 0.5, 0, juke[2] + 0.5)), 16)
-    svg.circle(cx, cy, 3.5, fill='@ink')
+    svg.circle(px, py, 3.5, fill='@ink')
     ring_label(svg, cx, cy, music * scale, '%d blocks' % music, '@blue')
-    svg.text(cx - door * scale + 6, cy, '%d' % door, size=SMALL, fill='@amber', bold=True)
+    svg.text(px - door * scale + 6, py, '%d' % door, size=SMALL, fill='@amber', bold=True)
     y = W - 4
-    rows = [(('@blue_soft', '@blue', None), 'Within %d: the jukebox starts Dry Hands' % music),
+    rows = [(('@blue_soft', '@blue', None), 'Within %d of the jukebox: Dry Hands starts' % music),
             (('none', '@amber', '5 4'), 'Within %d, opening an oak door: it vanishes' % door),
             (('@red_soft', '@red', None), 'Within %d of it, or %d of the jukebox: it vanishes' % (near, near_box))]
     for (fill, edge, dash), label in rows:

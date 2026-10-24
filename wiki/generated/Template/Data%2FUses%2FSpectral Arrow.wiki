@@ -1,10 +1,6 @@
 <includeonly>{| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Prayer of Paris]]
-| 7 × [[Spectral Arrow]] +<br />[[Stable Void]] +<br />[[Hell-Bound Book]]
-| {{Crafting|A1=Spectral Arrow|A2=Spectral Arrow|A3=Spectral Arrow|B1=Stable Void|B2=Hell-Bound Book|B3=Spectral Arrow|C1=Spectral Arrow|C2=Spectral Arrow|C3=Spectral Arrow|Output=Prayer of Paris}}
-|-
 | [[Prayer of Apollo]]
 | 4 × [[Spectral Arrow]] +<br />[[Disc Fragment]] +<br />3 × [[Gold Ingot]] +<br />[[Hell-Bound Book]]
 | {{Crafting|A1=Spectral Arrow|A2=Gold Ingot|A3=Spectral Arrow|B1=Disc Fragment|B2=Hell-Bound Book|B3=Gold Ingot|C1=Spectral Arrow|C2=Gold Ingot|C3=Spectral Arrow|Output=Prayer of Apollo}}
@@ -12,5 +8,9 @@
 | [[Prayer of Artemis]]
 | 4 × [[Spectral Arrow]] +<br />[[Silver Bullion]] +<br />3 × [[Raw Porkchop]] +<br />[[Hell-Bound Book]]
 | {{Crafting|A1=Spectral Arrow|A2=Raw Porkchop|A3=Spectral Arrow|B1=Silver Bullion|B2=Hell-Bound Book|B3=Raw Porkchop|C1=Spectral Arrow|C2=Raw Porkchop|C3=Spectral Arrow|Output=Prayer of Artemis}}
+|-
+| [[Prayer of Paris]]
+| 7 × [[Spectral Arrow]] +<br />[[Stable Void]] +<br />[[Hell-Bound Book]]
+| {{Crafting|A1=Spectral Arrow|A2=Spectral Arrow|A3=Spectral Arrow|B1=Stable Void|B2=Hell-Bound Book|B3=Spectral Arrow|C1=Spectral Arrow|C2=Spectral Arrow|C3=Spectral Arrow|Output=Prayer of Paris}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

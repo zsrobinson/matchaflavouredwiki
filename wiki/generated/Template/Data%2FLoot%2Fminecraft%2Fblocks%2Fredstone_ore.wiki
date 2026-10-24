@@ -2,10 +2,8 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Sulfurous Quartz Deposit}} || 1 || 100% || 100% || Silk Touch
+| {{ItemLink|Fossil}} || 1 || 100% || 100% || Silk Touch
 |-
-| {{ItemLink|Sulfur Chunk}} || 1 || 100% || 100% || without Silk Touch
-|-
-| {{ItemLink|Quartz}} || 2–3 || 100% || 100% || without Silk Touch
+| {{ItemLink|Bone|mcw=Bone}} || 2–5 || 100% || 100% || without Silk Touch
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

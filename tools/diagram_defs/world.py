@@ -381,11 +381,13 @@ def _gradient(rule, name):
 
 @diagram('Hell water')
 def hell_water():
-    pred = pack_json('matcha/predicate/invalid_nether_water.json')
-    pos = pred['terms'][0]['predicate']['minecraft:location']['position']['y']
+    # placing water from a bucket in the Nether grants an advancement; its location check is the placed block's
+    adv = pack_json('matcha/advancement/mechanics/place_water_in_nether.json')
+    terms = adv['criteria']['placed_water']['conditions']['location']['terms']
+    pos = next(t for t in terms if t['type'] == 'minecraft:location_check')['predicate']['position']['y']
     lo, hi = pos['min'], pos['max']
     src = mcfunction('matcha/function/environmental/nether_water.mcfunction')
-    # three fills (2, 10 and 20 blocks) run one after another; the largest covers the others
+    # several fills (2 to 20 blocks) run one after another; the largest covers the others
     fill = r'fill ~-(\d+) ~-\1 ~-\1 ~\1 ~\1 ~\1 air replace water'
     need(fill, src, 'the water fill', cast=int)
     reach = max(int(r) for r in re.findall(fill, src))

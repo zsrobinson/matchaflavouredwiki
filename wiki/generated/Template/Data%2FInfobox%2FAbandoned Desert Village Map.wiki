@@ -9,8 +9,9 @@
 |type={{#if:{{{type|}}}|{{{type}}}|Item}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
+|vanilla={{MCW|Desert Village Map}}
 |stackable=Yes (64)
-|id=<code>minecraft:filled_map</code>
+|id=<code>minecraft:desert_village_map</code>
 |source={{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/village_desert.json|village_desert.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

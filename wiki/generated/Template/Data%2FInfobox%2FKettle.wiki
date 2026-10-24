@@ -1,17 +1,17 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Sulfurous Quartz Deposit}}
-|image={{#if:{{{image|}}}|{{{image}}}|Sulfurous Quartz Deposit.png}}
+|title={{#if:{{{title|}}}|{{{title}}}|Kettle}}
+|image={{#if:{{{image|}}}|{{{image}}}|Kettle.png}}
 |imagesize=160px
-|invimage=Sulfurous Quartz Deposit
+|invimage=Kettle
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
 |type={{#if:{{{type|}}}|{{{type}}}|Block}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
-|vanilla={{MCW|Redstone Ore}}
+|vanilla={{MCW|Brewing Stand}}
 |stackable=Yes (64)
-|id=<code>minecraft:redstone_ore</code>
-|source={{Source|MF_datapack/data/minecraft/loot_table/blocks/redstone_ore.json|redstone_ore.json}}
+|id=<code>minecraft:brewing_stand</code>
+|source={{Source|MF_datapack/data/matcha/recipe/crafting/chemistry_stand.json|chemistry_stand.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

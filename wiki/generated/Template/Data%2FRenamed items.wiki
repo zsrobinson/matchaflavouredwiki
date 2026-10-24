@@ -27,9 +27,13 @@
 |-
 | {{ItemLink|Baked Pumpkin}} || {{MCW|Breeze Rod}} || <code>breeze_rod</code> || item
 |-
-| {{ItemLink|Chemistry Stand}} || {{MCW|Brewing Stand}} || <code>brewing_stand</code> || block
+| {{ItemLink|Kettle}} || {{MCW|Brewing Stand}} || <code>brewing_stand</code> || block
 |-
 | {{ItemLink|Brown Sack}} || {{MCW|Brown Shulker Box}} || <code>brown_shulker_box</code> || block
+|-
+| {{ItemLink|Mineshaft Map}} || {{MCW|Buried Mineshaft Map}} || <code>buried_mineshaft_map</code> || item
+|-
+| {{ItemLink|Trial Chamber Map}} || {{MCW|Buried Trial Chambers Map}} || <code>buried_trial_chambers_map</code> || item
 |-
 | [[Cook]] || {{MCW|Butcher}} || <code>villager.butcher</code> || villager profession
 |-
@@ -76,6 +80,8 @@
 | {{ItemLink|Natural Lapis Lazuli}} || {{MCW|Deepslate Lapis Lazuli Ore}} || <code>deepslate_lapis_ore</code> || block
 |-
 | {{ItemLink|Sulfur Deposit}} || {{MCW|Deepslate Redstone Ore}} || <code>deepslate_redstone_ore</code> || block
+|-
+| {{ItemLink|Abandoned Desert Village Map}} || {{MCW|Desert Village Map}} || <code>desert_village_map</code> || item
 |-
 | {{ItemLink|Flowstone}} || {{MCW|Dripstone Block}} || <code>dripstone_block</code> || block
 |-
@@ -219,6 +225,8 @@
 |-
 | {{ItemLink|Pink Sack}} || {{MCW|Pink Shulker Box}} || <code>pink_shulker_box</code> || block
 |-
+| {{ItemLink|Abandoned Plains Village Map}} || {{MCW|Plains Village Map}} || <code>plains_village_map</code> || item
+|-
 | {{ItemLink|Speleothem}} || {{MCW|Pointed Dripstone}} || <code>pointed_dripstone</code> || block
 |-
 | {{ItemLink|Malachite}} || {{MCW|Prismarine}} || <code>prismarine</code> || block
@@ -269,7 +277,7 @@
 |-
 | {{ItemLink|Electric Lamp}} || {{MCW|Redstone Lamp}} || <code>redstone_lamp</code> || block
 |-
-| {{ItemLink|Sulfurous Quartz Deposit}} || {{MCW|Redstone Ore}} || <code>redstone_ore</code> || block
+| {{ItemLink|Fossil}} || {{MCW|Redstone Ore}} || <code>redstone_ore</code> || block
 |-
 | {{ItemLink|Electric Repeater}} || {{MCW|Redstone Repeater}} || <code>repeater</code> || block
 |-
@@ -278,6 +286,8 @@
 | {{ItemLink|Steel Alloy}} || {{MCW|Resin Brick}} || <code>resin_brick</code> || item
 |-
 | {{ItemLink|Glow Berry Mash}} || {{MCW|Rotten Flesh}} || <code>rotten_flesh</code> || item
+|-
+| {{ItemLink|Abandoned Savanna Village Map}} || {{MCW|Savanna Village Map}} || <code>savanna_village_map</code> || item
 |-
 | {{ItemLink|Malachite Lantern}} || {{MCW|Sea Lantern}} || <code>sea_lantern</code> || block
 |-
@@ -289,9 +299,13 @@
 |-
 | {{ItemLink|Mud Kiln}} || {{MCW|Smoker}} || <code>smoker</code> || block
 |-
+| {{ItemLink|Abandoned Snowy Village Map}} || {{MCW|Snowy Village Map}} || <code>snowy_village_map</code> || item
+|-
 | {{ItemLink|Soul Kindling}} || {{MCW|Soul Campfire}} || <code>soul_campfire</code> || block
 |-
 | {{ItemLink|Limestone}} || {{MCW|Stone}} || <code>stone</code> || block
+|-
+| {{ItemLink|Abandoned Taiga Village Map}} || {{MCW|Taiga Village Map}} || <code>taiga_village_map</code> || item
 |-
 | {{ItemLink|Copper Eye}} || {{MCW|Target}} || <code>target</code> || block
 |-
@@ -308,6 +322,8 @@
 | {{ItemLink|Wheat Grain}} || {{MCW|Wheat Seeds}} || <code>wheat_seeds</code> || item
 |-
 | {{ItemLink|White Sack}} || {{MCW|White Shulker Box}} || <code>white_shulker_box</code> || block
+|-
+| {{ItemLink|Mansion Map}} || {{MCW|Woodland Mansion Map}} || <code>woodland_mansion_map</code> || item
 |-
 | {{ItemLink|Yellow Sack}} || {{MCW|Yellow Shulker Box}} || <code>yellow_shulker_box</code> || block
 |}</includeonly><noinclude>Generated. [[Category:Generated data]]</noinclude>

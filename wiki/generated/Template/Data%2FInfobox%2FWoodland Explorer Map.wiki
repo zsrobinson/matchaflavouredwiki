@@ -1,8 +1,8 @@
 <includeonly>{{Infobox
-|title={{#if:{{{title|}}}|{{{title}}}|Jungle Temple Map}}
-|image={{#if:{{{image|}}}|{{{image}}}|Jungle Temple Map.png}}
+|title={{#if:{{{title|}}}|{{{title}}}|Woodland Explorer Map}}
+|image={{#if:{{{image|}}}|{{{image}}}|Woodland Explorer Map.png}}
 |imagesize=160px
-|invimage=Jungle Temple Map
+|invimage=Woodland Explorer Map
 |caption={{{caption|}}}
 |extrarows={{{extrarows|}}}
 |bonus={{{bonus|}}}
@@ -10,7 +10,7 @@
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
 |stackable=Yes (64)
-|id=<code>minecraft:jungle_pyramid_map</code>
-|source={{Source|MF_datapack/data/matcha/villager_trade/cartographer/2/jungle_ruin.json|jungle_ruin.json}}
+|id=<code>minecraft:woodland_mansion_map</code>
+|source={{Source|MF_datapack/data/matcha/villager_trade/cartographer/5/woodland_mansion.json|woodland_mansion.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

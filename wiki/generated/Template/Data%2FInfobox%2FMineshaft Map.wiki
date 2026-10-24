@@ -9,8 +9,9 @@
 |type={{#if:{{{type|}}}|{{{type}}}|Item}}
 |intrinsics={{{intrinsics|}}}
 |renewable={{{renewable|}}}
+|vanilla={{MCW|Buried Mineshaft Map}}
 |stackable=Yes (64)
 |id=<code>minecraft:buried_mineshaft_map</code>
-|source={{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/mineshaft.json|mineshaft.json}}
+|source={{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_secret_chest.json|abandoned_camp_secret_chest.json}}
 }}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>
