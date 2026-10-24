@@ -1,6 +1,6 @@
 {{Vanilla|Brewing Stand}}
 {{Infobox auto}}
-A '''Chemistry Stand''' is the [[Matcha Flavoured]] name for the {{MCW|Brewing Stand|brewing stand}}. [[Brewing]] is effectively removed from the pack, so the Chemistry Stand serves mainly as the job site block of the [[Chemist]] (the pack's cleric) and as decoration.
+A '''kettle''' is the [[Matcha Flavoured]] name for the {{MCW|Brewing Stand|brewing stand}}. [[Brewing]] is effectively removed from the pack, so the kettle serves mainly as the job site block of the [[Chemist]] (the pack's cleric) and as decoration. Until {{Version|1.12.8-beta}} it was called the '''chemistry stand'''; the release notes list the new name as an expected issue: "Chemistry Stand name is messed up, don't worry about it (Shh)".<ref>{{Cite changelog|1.12.8-beta|quote=Chemistry Stand name is messed up, don't worry about it (Shh)}}</ref>
 
 == Obtaining ==
 === Crafting ===
@@ -9,16 +9,17 @@ The vanilla recipe, which needs a blaze rod, is replaced with one that uses an i
 
 == Usage ==
 === Job site ===
-The Chemistry Stand is the job site block of the [[Chemist]], who sells [[Splash Potion|splash potions]].
+The kettle is the job site block of the [[Chemist]], who sells [[Splash Potion|splash potions]].
 
 === Brewing ===
 {{Main|Brewing}}
-The Chemistry Stand opens the vanilla brewing interface, titled "Chemistry Stand", but it cannot be fueled: the pack empties the <code>#minecraft:brewing_fuel</code> item tag, which normally holds blaze powder ([[Raw Estus]]).<ref>{{Source|MF_datapack/data/minecraft/tags/item/brewing_fuel.json}}</ref>
+The kettle opens the vanilla brewing interface, which has no title since {{Version|1.12.8-beta}} (it was titled "Chemistry Stand" before),<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> but it cannot be fueled: the pack empties the <code>#minecraft:brewing_fuel</code> item tag, which normally holds blaze powder ([[Raw Estus]]).<ref>{{Source|MF_datapack/data/minecraft/tags/item/brewing_fuel.json}}</ref>
 
 == History ==
 {{History|
 {{History line|1.10|Fixed the recipe unlock.}}
 {{History line|1.12.1-alpha|Raw Estus no longer works as fuel.<ref>{{Cite changelog|1.12.1-alpha|quote=Raw Estus can no longer be used in brewing stands (👥) (#minecraft:item/brewing_fuel)}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|Renamed from chemistry stand to kettle. The brewing interface lost its "Chemistry Stand" title.}}
 }}
 
 == See also ==

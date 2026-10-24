@@ -11,7 +11,7 @@
 Cocoa beans roast into chocolate in an [[oven]] in {{Value|Chocolate|cook_time|station=Oven}} or on [[kindling]] in {{Value|Chocolate|cook_time|station=Kindling}}. Picking up cocoa beans unlocks the recipe. Cooked chocolate stacks to 64.<ref>{{Source|MF_datapack/data/matcha/recipe/food/campfire/chocolate.json}}</ref>
 
 === Milking a mooshroom ===
-Since 1.12.6-alpha, using a bowl on a mooshroom gives [[Clear Mushroom Soup|clear mushroom soup]] instead of chocolate.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/milked_mooshroom.json}}</ref> Before, it gave the vanilla mushroom stew, which the pack's resource pack names and draws as chocolate: a plain mushroom stew without the cooked chocolate's tooltip, Haste and stack size.<ref>{{Source|MF_resourcepack/assets/minecraft/models/item/mushroom_stew.json}}</ref>
+Since 1.12.6-alpha, using a bowl on a mooshroom gives [[suimono]] (called clear mushroom soup until {{Version|1.12.8-beta}}) instead of chocolate.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/milked_mooshroom.json}}</ref> Before, it gave the vanilla mushroom stew, which the pack's resource pack names and draws as chocolate: a plain mushroom stew without the cooked chocolate's tooltip, Haste and stack size.<ref>{{Source|MF_resourcepack/assets/minecraft/models/item/mushroom_stew.json}}</ref>
 
 == Usage ==
 

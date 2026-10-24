@@ -27,7 +27,7 @@ As a dropped item, Raw Estus gives off smoke particles.<ref>{{Source|MF_datapack
 
 Creative mode is excluded because the game refills items there, which would repeat the conversion forever.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/check_if_estus_should_be_processed.mcfunction}}</ref>
 
-Raw Estus does not work as fuel in a [[Chemistry Stand]]: the pack empties the <code>#minecraft:brewing_fuel</code> tag.<ref>{{Source|MF_datapack/data/minecraft/tags/item/brewing_fuel.json}}</ref>
+Raw Estus does not work as fuel in a [[kettle]]: the pack empties the <code>#minecraft:brewing_fuel</code> tag.<ref>{{Source|MF_datapack/data/minecraft/tags/item/brewing_fuel.json}}</ref>
 
 === Multiplayer ===
 In 1.12.2 the functions were written with nearest-player selectors, which worked in single player but not reliably on a server:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/check_if_estus_should_be_processed.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/estus/process_estus.mcfunction}}</ref>

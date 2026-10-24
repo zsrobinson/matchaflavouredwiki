@@ -1,6 +1,6 @@
 {{Infobox auto}}
 
-'''Bubbling mead''' is a throwable [[mead]]: a splash potion of {{EffectLink|Speed}} II lasting 5 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bubbling_mead.json}}</ref>
+'''Sparkling mead''' is a throwable [[mead]]: a splash potion of {{EffectLink|Speed}} II lasting 5 minutes.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/bubbling_mead.json}}</ref> It was called '''bubbling mead''' until {{Version|1.12.8-beta}}.
 
 == Obtaining ==
 
@@ -20,6 +20,7 @@ It is one of the items a villager can ask for as its [[favorite food]].<ref>{{So
 {{History|
 {{History line|1.12.1-alpha|Added bubbling mead.}}
 {{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
+{{History line|1.12.8-beta|date=October 23, 2026|Renamed from bubbling mead to sparkling mead.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>}}
 }}
 
 == See also ==

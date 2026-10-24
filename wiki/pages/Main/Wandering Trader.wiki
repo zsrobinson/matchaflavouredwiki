@@ -107,7 +107,7 @@ Each map costs 1 obol and can be bought 999 times. The village maps are ''Minecr
 |-
 | {{ItemLink|Swamp Hut Map|link=Explorer maps}} || Swamp hut
 |}
-A map trade is dropped if no such structure lies within 100 chunks. The Swamp Hut Map trade is always dropped: it is still built on an empty map, which ''Minecraft'' 26.3 no longer turns into a filled map, so it fails the trade's check for a filled map (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/witch_hut.json}}</ref>
+A map trade is dropped if no such structure lies within 100 chunks. The Swamp Hut Map trade is always dropped: it is still built on an empty map, which ''Minecraft'' 26.3 no longer turns into a filled map, so it fails the trade's check for a filled map and the trader draws another map trade instead; in practice a trader offers 3 of the 5 village maps (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/witch_hut.json}}</ref>
 
 == Advancements ==
 * '''Bonfire Lit''': use a Beacon Kindling to signal a Wandering Trader. Rewards 1 obol.
