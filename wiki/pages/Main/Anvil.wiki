@@ -39,8 +39,8 @@ The pack retextures the anvil with a brick-red color. The developer confirmed th
 {{History line|1.03|Added an error sprite for anvil smithing. The release notes say the anvil can no longer be crafted from blocks of iron.}}
 {{History line|1.10|Anvils and anvil experience work in multiplayer. The experience timer increased from 15 to 30 seconds, and the levels given from 50 to 100.<ref>{{Cite changelog|1.10|quote=Increased anvil xp timer from 15s to 30, and increased levels from 50 to 100}}</ref>}}
 {{History line|1.12.7-beta|Experience is no longer removed after using an anvil. Using an anvil sets the player's level to 10,000 instead of giving 100 levels for 30 seconds, and the resource pack hides the level number.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/xp_handling/give_levels.mcfunction}}</ref><ref>{{Cite changelog|1.12.7-beta|quote=XP is no longer removed, since HapppySpud made a shader to block the XP number}}</ref>}}
-{{History line|1.12.8-beta|date=October 23, 2026|The shader that hides the level number now only hides text near the bottom of the screen, so the text of signs and books shows again.<ref>{{Cite changelog|1.12.8-beta|quote=Signs and Books no longer appear blank}}</ref>}}
-{{History line|1.12.8-beta|date=October 23, 2026|The repair cost reset no longer rewrites items whose repair cost is already 0, so modded backpacks keep their contents.<ref>{{Source|MF_datapack/data/endless_repairs/function/reset_breakable_repair_cost.mcfunction}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|The shader that hides the level number now only hides text near the bottom of the screen, so the text of signs and books shows again.<ref>{{Cite changelog|1.12.8-beta|quote=Signs and Books no longer appear blank}}</ref>
+The repair cost reset no longer rewrites items whose repair cost is already 0, so modded backpacks keep their contents.<ref>{{Source|MF_datapack/data/endless_repairs/function/reset_breakable_repair_cost.mcfunction}}</ref>}}
 }}
 
 == Notes ==

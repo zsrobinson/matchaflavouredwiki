@@ -20,13 +20,13 @@ The release notes open with an apology for putting out 1.12.7-beta only three da
 === Renamed items ===
 * The chemistry stand (brewing stand) is renamed '''[[Kettle]]''', and the brewing screen has no title. The release notes list the name as an expected issue: "Chemistry Stand name is messed up, don't worry about it".<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Chemistry Stand name is messed up, don't worry about it (Shh)}}</ref>
 * Bubbling Mead is renamed '''[[Sparkling Mead]]''', and Clear Mushroom Soup '''[[Suimono]]'''.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
-* Several [[explorer maps]] show ''Minecraft'' 26.3's own names: the [[Archaeologist|archaeologist]] sells the Swamp Hut, Desert Pyramid, Jungle Pyramid, Warm Ocean Ruins and Woodland Explorer maps, and the [[Abandoned camp|abandoned camp]]'s chest holds Trial Chamber, Mineshaft and Mansion maps. The release notes warn that "some map names will be messed up" to future-proof later map changes.<ref>{{Cite changelog|1.12.8-beta|quote=Some map names will be messed up}}</ref>
+* Several [[explorer maps]] were renamed. The [[Archaeologist|archaeologist]]'s Witch Hut, Desert Temple, Jungle Temple, Warm Ocean Ruin and Mansion maps now show ''Minecraft'' 26.3's own names: Swamp Hut, Desert Pyramid, Jungle Pyramid, Warm Ocean Ruins and Woodland Explorer Map. The other way round, the Buried Trial Chambers, Buried Mineshaft and Woodland Mansion maps in the [[Abandoned camp|abandoned camp]]'s chest now show the pack's names: Trial Chamber, Mineshaft and Mansion Map.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/witch_hut.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> The release notes warn that "some map names will be messed up" to future-proof later map changes.<ref>{{Cite changelog|1.12.8-beta|quote=Some map names will be messed up}}</ref>
 
 === Blessings and enchantments ===
 {{Main|Blessing}}
 * [[Zephyr]] can be applied only to leather boots.<ref>{{Source|MF_datapack/data/matcha/enchantment/zephyr.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Zephyr is now only Supported on Leather Boots}}</ref>
 * The [[Elegy of Hyacinthus]] gives Wind Burst I along with Zephyr I, and the [[Prayer of Aeolus]] gives only [[Anemos]], which maces can take again.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/blessing/aeolus.json}}</ref>
-* "Demonic Emissary" needs the same 17 blessings as "Apocrypha"; six prayers and the [[Hell-Bound Book]] no longer count.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json}}</ref> See [[Advancements]].
+* "Demonic Emissary" needs only the 17 blessings that count for "Apocrypha" (which takes any one of them); six prayers and the [[Hell-Bound Book]] no longer count.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json}}</ref> See [[Advancements]].
 * The blessing recipes were renamed after their figures (<code>blessing/reach</code> became <code>blessing/will</code>, and so on); apart from the two above, they are unchanged.
 
 === Difficulty ===
@@ -47,7 +47,7 @@ The release notes open with an apology for putting out 1.12.7-beta only three da
 
 === Fishing ===
 {{Main|Fishing}}
-* The fishing table's weight of 85 is on each biome table instead of on the entry that holds them, so catches are again 85% fish, 10% [[Fishing junk|junk]] and 5% [[Fishing treasure|treasure]]; in 1.12.7-beta only 1 catch in 16 was a fish.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Fishing doesn't suck anymore (hopefully)}}</ref>
+* The fishing table's weight of 85 is on each biome table instead of on the entry that holds them, so catches in open water are again 85% fish, 10% [[Fishing junk|junk]] and 5% [[Fishing treasure|treasure]] before any Luck of the Sea; in 1.12.7-beta only 1 such catch in 16 was a fish.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Fishing doesn't suck anymore (hopefully)}}</ref>
 * Guardians have a 2 in 3 chance of dropping a roll of the fishing table instead of plain cod.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/guardian.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Guardians now drop matcha fish}}</ref>
 
 === Items and mechanics ===
