@@ -1,7 +1,7 @@
 {{Vanilla|Explorer Map}}
 {{Infobox
 |title=Explorer maps
-|invimage=Mineshaft Map;Witch Hut Map;Papal Outpost Map;Shipwreck Map;Desert Temple Map;Jungle Temple Map;Trail Ruins Map;Ocean Monument Map;Trial Chamber Map;Warm Ocean Ruin Map;Overgrown Abbey Map;Ancient City Map;Mansion Map
+|invimage=Mineshaft Map;Swamp Hut Map;Papal Outpost Map;Shipwreck Map;Desert Pyramid Map;Jungle Pyramid Map;Trail Ruins Map;Ocean Monument Map;Trial Chamber Map;Warm Ocean Ruins Map;Overgrown Abbey Map;Ancient City Map;Woodland Explorer Map
 |type=Map
 |renewable=Yes
 }}
@@ -9,21 +9,21 @@
 
 == Obtaining ==
 === Archaeologist ===
-The [[Archaeologist]] (the renamed cartographer) sells 13 maps across its five levels. Each map trade can be used 999 times. Each map is built on the matching named map item of ''Minecraft'' 26.3 (a Buried Mineshaft Map, a Swamp Hut Map and so on), renamed; maps to structures that have no map item of their own use a similar one, such as a Jungle Pyramid Map for the Papal Outpost Map.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/mineshaft.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/papal_outpost.json}}</ref>
+The [[Archaeologist]] (the renamed cartographer) sells 13 maps across its five levels. Each map trade can be used 999 times. Each map is built on the matching named map item of ''Minecraft'' 26.3 (a Buried Mineshaft Map, a Swamp Hut Map and so on); maps to structures that have no map item of their own use a similar one, such as a Jungle Pyramid Map for the Papal Outpost Map. The Mineshaft, Trial Chamber and Ancient City maps keep the pack's names, and the maps to the pack's own structures and to shipwrecks and trail ruins have names of their own. Since 1.12.8-beta the Swamp Hut, Desert Pyramid, Jungle Pyramid, Warm Ocean Ruins and Woodland Explorer maps show the names from ''Minecraft'' 26.3 instead of the pack's.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/mineshaft.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/papal_outpost.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
 {| class="wikitable sortable"
 ! Map !! Leads to !! Level !! Price !! Map marker
 |-
 | Mineshaft Map || [[Mineshaft]] || Novice || 1 obol || Mineshaft
 |-
-| Witch Hut Map || Swamp hut || Novice || 1 obol || Swamp hut
+| Swamp Hut Map || Swamp hut || Novice || 1 obol || Swamp hut
 |-
 | Papal Outpost Map || [[Papal Outpost]] || Novice || 1 obol || Papal outpost (the pack's own)
 |-
 | Shipwreck Map || [[Shipwreck]] || Novice || 1 obol || Shipwreck (the pack's own)
 |-
-| Desert Temple Map || [[Desert Pyramid]] || Apprentice || 1 obol || Desert pyramid
+| Desert Pyramid Map || [[Desert Pyramid]] || Apprentice || 1 obol || Desert pyramid
 |-
-| Jungle Temple Map || [[Jungle Pyramid]] || Apprentice || 1 obol || Jungle temple
+| Jungle Pyramid Map || [[Jungle Pyramid]] || Apprentice || 1 obol || Jungle temple
 |-
 | Trail Ruins Map || Trail ruins || Apprentice || 1 obol || Trail ruins (the pack's own)
 |-
@@ -31,18 +31,18 @@ The [[Archaeologist]] (the renamed cartographer) sells 13 maps across its five l
 |-
 | Trial Chamber Map || [[Trial Chambers]] || Journeyman || 1 obol || Trial chambers
 |-
-| Warm Ocean Ruin Map || Warm [[Ocean ruins|ocean ruin]] || Journeyman || 1 obol || Warm ocean ruins
+| Warm Ocean Ruins Map || Warm [[Ocean ruins|ocean ruin]] || Journeyman || 1 obol || Warm ocean ruins
 |-
 | Overgrown Abbey Map || [[Overgrown Abbey]] || Journeyman || [[Paradise Lost]] or [[The Divine Comedy]] || Overgrown abbey (the pack's own)
 |-
 | Ancient City Map || [[Ancient City]] || Expert || 1 obol || Ancient city
 |-
-| Mansion Map || [[Woodland Mansion]] || Master || 1 obol || Woodland mansion
+| Woodland Explorer Map || [[Woodland Mansion]] || Master || 1 obol || Woodland mansion
 |}
 The Papal Outpost map searches for pillager outposts, because the papal outpost generates in their place.<ref>{{Source|MF_datapack/data/minecraft/tags/worldgen/structure/on_papal_outpost_explorer_maps.json}}</ref> The Overgrown Abbey map is the only one bought with a book instead of an obol; there are two separate trades, one for each book.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_paradise_lost.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/3/abbey_divine_comedy.json}}</ref> The Papal Outpost, Shipwreck, Trail Ruins and Overgrown Abbey maps have their own item textures, and the pack draws its own map markers for the papal outpost, shipwreck, trail ruins and abbey (replacing the game's gray, brown, light gray and green banner markers, so banners of those colors marked on any map show the same symbols; the light blue banner marker is redrawn too, though no map uses it).<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/shipwreck.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/textures/map/decorations/brown_banner.png}}</ref>
 
 === Wandering Trader ===
-A [[Wandering Trader]] offers 3 of these 6 maps, each for 1 obol and each usable once:<ref>{{Source|MF_datapack/data/matcha/tags/villager_trade/wandering_trader/maps.json}}</ref>
+A [[Wandering Trader]] offers 3 of these 6 maps, each for 1 obol and each usable 999 times. The village maps are ''Minecraft'' 26.3's own village map items under the pack's names.<ref>{{Source|MF_datapack/data/matcha/tags/villager_trade/wandering_trader/maps.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/village_plains.json}}</ref>
 {| class="wikitable"
 ! Map !! Leads to !! Map marker
 |-
@@ -56,11 +56,12 @@ A [[Wandering Trader]] offers 3 of these 6 maps, each for 1 obol and each usable
 |-
 | Abandoned Taiga Village Map || Taiga village || Taiga village
 |-
-| Witch Hut Map || Swamp hut || Swamp hut
+| Swamp Hut Map || Swamp hut || Swamp hut
 |}
+The Swamp Hut Map trade is never offered (see [[Known bugs]]): it is still built on an empty map, which ''Minecraft'' 26.3 no longer turns into a filled map, so the trade's check for a filled map throws it away and the trader draws another map instead. A trader therefore offers 3 of the 5 village maps.<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/witch_hut.json}}</ref>
 
 === Abandoned camps ===
-The chests of an [[abandoned camp]] hold maps too. A common chest has a map to a camp in a different biome: the Bamboo Camp Map, Birch Forest Camp Map, Cherry Grove Camp Map, Dappled Forest Camp Map, Flower Forest Camp Map, Pale Garden Camp Map, Swamp Camp Map and Windswept Forest Camp Map. A camp never holds the map that leads to its own biome's camp.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_common_chest.json}}</ref> A secret chest has one map to a buried structure: Buried Ancient City Map, Buried Trial Chambers Map, Buried Mineshaft Map, Desert Pyramid Map, Jungle Pyramid Map, Warm Ocean Ruins Map or Woodland Mansion Map.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_secret_chest.json}}</ref> The secret chest's maps are named items of ''Minecraft'' 26.3 itself.
+The chests of an [[abandoned camp]] hold maps too. A common chest has a map to a camp in a different biome: the Bamboo Camp Map, Birch Forest Camp Map, Cherry Grove Camp Map, Dappled Forest Camp Map, Flower Forest Camp Map, Pale Garden Camp Map, Swamp Camp Map and Windswept Forest Camp Map. A camp never holds the map that leads to its own biome's camp.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_common_chest.json}}</ref> A secret chest has one map to a buried structure: Buried Ancient City Map, Trial Chamber Map, Mineshaft Map, Desert Pyramid Map, Jungle Pyramid Map, Warm Ocean Ruins Map or Mansion Map.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abandoned_camp_secret_chest.json}}</ref> The secret chest's maps are named items of ''Minecraft'' 26.3 itself, with their default names. Since 1.12.8-beta the pack's language file renames three of them (Trial Chamber Map, Mineshaft Map and Mansion Map, which were the Buried Trial Chambers Map, Buried Mineshaft Map and Woodland Mansion Map). All but two now share a name with the Archaeologist's map to the same structure: the woodland mansion map is the Mansion Map here and the Woodland Explorer Map from the Archaeologist, and the ancient city map is the Buried Ancient City Map here and the Ancient City Map from the Archaeologist.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
 
 === Other maps ===
 Buried treasure maps are found in shipwreck map chests, as in vanilla ''Minecraft''; see [[Buried treasure]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/shipwreck_map.json}}</ref> [[Ocean ruins]] chests also hold buried treasure maps, which lead to buried treasure.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_small.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/underwater_ruin_big.json}}</ref> In the 1.12.3 alpha for 26.3 these maps had a woodland mansion as their destination, so they led to the nearest [[Woodland Mansion|mansion]]; since 1.12.6-alpha they lead to buried treasure.
@@ -78,6 +79,9 @@ The names of all explorer maps were updated.}}
 * The Mineshaft, Papal Outpost, Shipwreck, Warm Ocean Ruin, Overgrown Abbey and Ancient City maps show their structure's marker instead of a red X; the Desert Temple Map shows a desert pyramid instead of a desert village, and the Trail Ruins Map the pack's own trail ruins marker instead of a plains village.
 * New map markers for the papal outpost, shipwreck, trail ruins and abbey, and new item textures for the Shipwreck and Trail Ruins maps.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/map/decorations/brown_banner.png}}</ref><ref>{{Source|MF_resourcepack/assets/matcha/models/item/shipwreck_map.json}}</ref>
 * Abandoned camp chests hold camp maps and buried structure maps.}}
+{{History line|1.12.8-beta|date=October 23, 2026|2=Five of the Archaeologist's maps take their names from ''Minecraft'' 26.3 instead of the pack's language file: the Witch Hut Map became the Swamp Hut Map, the Desert Temple Map the Desert Pyramid Map, the Jungle Temple Map the Jungle Pyramid Map, the Warm Ocean Ruin Map the Warm Ocean Ruins Map and the Mansion Map the Woodland Explorer Map.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/witch_hut.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Some map names will be messed up, just use the other RP (prev version) and place it beneath the newest one if it bothers you}}</ref>
+* In abandoned camp secret chests, the Buried Trial Chambers Map, Buried Mineshaft Map and Woodland Mansion Map are renamed Trial Chamber Map, Mineshaft Map and Mansion Map.
+* The Wandering Trader's five village maps are offered again, and each can be bought 999 times instead of once. They had been built on an empty map, which ''Minecraft'' 26.3 no longer turns into a filled map, so the trades were thrown away. The Swamp Hut Map trade still is.<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/village_desert.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Some Maps were broken (esp Wandering Trader) they're fixed now}}</ref>}}
 }}
 
 == Trivia ==

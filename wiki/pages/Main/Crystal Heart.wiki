@@ -23,6 +23,9 @@ Four advancements in the tutorial tab reward crystal hearts:<ref>{{Source|MF_dat
 === Chest loot, fishing and trading ===
 {{Sources}}
 
+=== Abbey ===
+Crystal hearts also lie as dropped items in an [[Abbey]]: one in the entrance shaft and one in the heart boon room. Since 1.12.8-beta they never despawn; before, they vanished within a few minutes of the area loading.<ref>{{Source|MF_datapack/data/minecraft/structure/abbey/default/entrances/entrance_0.nbt}}</ref><ref>{{Source|MF_datapack/data/minecraft/structure/abbey/default/rooms/boon_heart.nbt}}</ref>
+
 == Usage ==
 === Raising maximum health ===
 Using a crystal heart (pressing use while holding it) consumes it and raises maximum health by 1 heart ({{Hp|2}}).<ref name="use">{{Source|MF_datapack/data/matcha/function/mechanics/heart_container/use_crystal_heart.mcfunction}}</ref> The heart takes effect on the first tick of use, even though the item's use time is 60 seconds and it plays the spyglass animation.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/crystal_heart.json}}</ref> Internally, the pack deals the player 999 magic damage and lets the heart's own death protection absorb it, which consumes the heart and plays the totem animation. The player is then given:
@@ -56,6 +59,7 @@ Obtaining a crystal heart for the first time grants '''Crystal Heart!''', which 
 {{History line|1.12.2|Crystal hearts are now used by the player instead of being applied as soon as they are picked up, and work as totems of undying. [[Ofuda]] trades now require crystal hearts.}}
 {{History line|1.12.3|2=The "Crystal Heart!" advancement can be earned.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/obtain_heart.json}}</ref>}}
 {{History line|1.12.6-alpha|2=Crystal hearts, crafted or from chests, fishing and advancement rewards, no longer keep the poisonous potato's food component; those from the [[Archaeologist]]'s clay fetish trades still do.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/crystal_heart.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/crystal_heart.json}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|The crystal hearts lying in Abbeys no longer despawn.}}
 }}
 
 == Trivia ==

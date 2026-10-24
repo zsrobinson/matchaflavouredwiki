@@ -2,14 +2,17 @@
 |title=Zephyr
 |maxlevel=III
 |slots=Feet
-|items=Boots
+|items=Leather boots
 |id=<code>matcha:zephyr</code>
 |source={{Source|MF_datapack/data/matcha/enchantment/zephyr.json|zephyr.json}}
 }}
-'''Zephyr''' is an [[enchantment]] added by [[Matcha Flavoured]] for boots that turns sneaking into a high jump. Higher levels add a slow descent and a charged updraft.
+'''Zephyr''' is an [[enchantment]] added by [[Matcha Flavoured]] for leather boots that turns sneaking into a high jump. Higher levels add a slow descent and a charged updraft.
 
 == Obtaining ==
-The [[Elegy of Hyacinthus]] gives Zephyr I, stored directly, so two elegies can be combined in an [[anvil]] into a Zephyr II book. Higher levels also come from combining two boots with the same level of Zephyr.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/zephyr.json}}</ref>
+The [[Elegy of Hyacinthus]] gives Zephyr I (together with Wind Burst I, which only maces can take), stored directly, so two elegies can be combined in an [[anvil]] into a Zephyr II book. Higher levels also come from combining two boots with the same level of Zephyr.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref>
+
+== Usage ==
+Since 1.12.8-beta Zephyr can only be applied to {{MCW|Leather Boots|leather boots}}: the pack's [[Leather Boots]] and [[Sturdy Leather Boots]] both use that item. Before, it could go on any boots.<ref>{{Source|MF_datapack/data/matcha/enchantment/zephyr.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Zephyr is now only Supported on Leather Boots}}</ref>
 
 == Behavior ==
 All effects are checked every tick while the boots are worn.<ref>{{Source|MF_datapack/data/matcha/enchantment/zephyr.json}}</ref>
@@ -33,8 +36,9 @@ Zephyr's anvil cost multiplier is 0.
 {{History line|0.3-alpha|Re-added the "ping" sound.}}
 {{History line|1.12.1-alpha|No longer spams its sound while under Slow Falling. The wind burst is quieter.}}
 {{History line|1.12.2|Reworked into three levels.<ref>{{Cite changelog|1.12.2|quote=Zephyr enchantment reworked so that its 3 levels}}</ref> Moved from the <code>main</code> to the <code>matcha</code> namespace, although the Elegy of Hyacinthus still gave the old enchantment.}}
-{{History line|1.12.3|The Elegy of Hyacinthus stores Zephyr directly, so two elegies can be combined into a Zephyr II book.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/zephyr.json}}</ref>}}
+{{History line|1.12.3|The Elegy of Hyacinthus stores Zephyr directly, so two elegies can be combined into a Zephyr II book.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref>}}
 {{History line|1.12.6-alpha|The level III updraft was reworked. The charge must now be built in one continuous sneak, and it is cancelled by releasing sneak on the ground or before it is full; before, sneak time added up across separate sneaks. The launch no longer requires Slow Falling to still be active, and a release without a full charge no longer plays the wind burst sound.<ref name="apply" />}}
+{{History line|1.12.8-beta|date=October 23, 2026|Can only be applied to leather boots. The Elegy of Hyacinthus also gives Wind Burst I.<ref>{{Source|MF_datapack/data/matcha/enchantment/zephyr.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Zephyr is now only Supported on Leather Boots}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref>}}
 }}
 
 == Trivia ==

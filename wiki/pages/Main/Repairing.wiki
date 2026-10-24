@@ -51,6 +51,7 @@ Alloy items show a "Repaired with" line in their tooltip.
 {{History line|1.12.2|Sturdy leather armor can be repaired with tattered leather.}}
 {{History line|1.12.3|Shepherd's shears are repaired with blocks of copper and smithed adamant leggings with adamant scrap, matching their tooltips.}}
 {{History line|1.12.7-beta|Using an anvil sets the player's level to 10,000, which is no longer removed after 30 seconds.<ref>{{Cite changelog|1.12.7-beta|quote=Instead XP is given on anvil interaction}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|The repair cost reset only rewrites items whose repair cost isn't 0; rewriting every item had deleted the contents of Traveler's Backpacks and other modded backpacks.<ref>{{Source|MF_datapack/data/endless_repairs/function/reset_breakable_repair_cost.mcfunction}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Traveler’s Backpacks (and other backpack mods) now do not delete its contents in Matcha}}</ref>}}
 }}
 
 == References ==

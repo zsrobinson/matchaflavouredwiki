@@ -163,7 +163,7 @@ The tower's 20 decorated pots and every pot created by a processor use <code>pot
 === Other ===
 * Vaults: see [[Trial Chambers#Loot]].
 * Trial spawners drop keys from <code>spawners/trial_chamber/key</code>: an 80% chance of a trial key and a 20% chance of an ominous trial key per key drop.<ref>{{Source|MF_datapack/data/minecraft/loot_table/spawners/trial_chamber/key.json}}</ref>
-* A [[crystal heart]] item lies in the entrance shaft and in the heart boon room; [[silver bullion]] lies in the checkpoint boon room.
+* A [[crystal heart]] item lies in the entrance shaft and in the heart boon room; [[silver bullion]] lies in the checkpoint boon room. Since 1.12.8-beta the two crystal hearts never despawn (their item age is the game's "never despawn" value, -32768). Before, they were saved part-way through the 5-minute despawn timer, so the entrance shaft's heart vanished about 50 seconds after the area loaded and the boon room's after about 5 minutes.<ref>{{Source|MF_datapack/data/minecraft/structure/abbey/default/entrances/entrance_0.nbt}}</ref><ref>{{Source|MF_datapack/data/minecraft/structure/abbey/default/rooms/boon_heart.nbt}}</ref>
 
 == Mobs ==
 [[Warding]] has no effect on undead wearing copper armor, which makes the armored skeletons and zombies of the Abbey dangerous even to warded players.
@@ -224,6 +224,7 @@ The track "Abbey" by Vee Vaicekauskas replaces the forest background music, so i
 {{History line|1.12.2|date=September 19, 2026|Allays now generate with the structure; previously they did not spawn.
 * Abbey mobs no longer vanish after the Ender Dragon is killed, and Abbeys keep spawning mobs after the dragon.
 * Spawner mobs no longer drop anything.}}
+{{History line|1.12.8-beta|date=October 23, 2026|The crystal hearts in the entrance shaft and the heart boon room no longer despawn.}}
 }}
 
 == Trivia ==

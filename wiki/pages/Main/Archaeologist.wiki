@@ -21,18 +21,18 @@ The '''Archaeologist''' is a [[villager]] profession that sells [[explorer maps]
 |-
 | {{ItemLink|Obol}} || {{ItemLink|Sheaf Pottery Sherd}} || 10
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Witch Hut Map|link=Explorer maps}} || 10
+| {{ItemLink|Obol}} || {{ItemLink|Swamp Hut Map|link=Explorer maps}} || 10
 |-
 | {{ItemLink|Obol}} || {{ItemLink|Papal Outpost Map|link=Explorer maps}} || 40
 |-
 | {{ItemLink|Obol}} || {{ItemLink|Shipwreck Map|link=Explorer maps}} || 10
 |-
 ! rowspan="5" | Apprentice
-| {{ItemLink|Obol}} || {{ItemLink|Desert Temple Map|link=Explorer maps}} || 20
+| {{ItemLink|Obol}} || {{ItemLink|Desert Pyramid Map|link=Explorer maps}} || 20
 |-
 | {{ItemLink|Obol}} || {{ItemLink|Howl Pottery Sherd}} || 10
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Jungle Temple Map|link=Explorer maps}} || 20
+| {{ItemLink|Obol}} || {{ItemLink|Jungle Pyramid Map|link=Explorer maps}} || 20
 |-
 | {{ItemLink|Obol}} || {{ItemLink|Trail Ruins Map|link=Explorer maps}} || 20
 |-
@@ -45,7 +45,7 @@ The '''Archaeologist''' is a [[villager]] profession that sells [[explorer maps]
 |-
 | {{ItemLink|Obol}} || {{ItemLink|Trial Chamber Map|link=Explorer maps}} || 40
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Warm Ocean Ruin Map|link=Explorer maps}} || 40
+| {{ItemLink|Obol}} || {{ItemLink|Warm Ocean Ruins Map|link=Explorer maps}} || 40
 |-
 | {{ItemLink|Paradise Lost}} || {{ItemLink|Overgrown Abbey Map|link=Explorer maps}} || 40
 |-
@@ -59,7 +59,7 @@ The '''Archaeologist''' is a [[villager]] profession that sells [[explorer maps]
 ! rowspan="4" | Master
 | {{ItemLink|Obol}} || {{ItemLink|Arms Up Pottery Sherd}} || 10
 |-
-| {{ItemLink|Obol}} || {{ItemLink|Mansion Map|link=Explorer maps}} || 60
+| {{ItemLink|Obol}} || {{ItemLink|Woodland Explorer Map|link=Explorer maps}} || 60
 |-
 | {{ItemLink|Clay Fetish}}<br /><small>“Rejoice”</small> || {{ItemLink|Crystal Heart}} || 20
 |-
@@ -89,6 +89,7 @@ Like every villager, an archaeologist that has been traded with will also buy it
 {{History line|1.10|Sells Overgrown Abbey and Papal Outpost maps, with new map textures.
 Takes Clay Fetishes.}}
 {{History line|1.12.6-alpha|The maps are built on the separate map items of ''Minecraft'' 26.3, and six of them show their structure's marker instead of a red X. New markers for the papal outpost, shipwreck, trail ruins and abbey.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/mineshaft.json}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|Five maps now take their names from ''Minecraft'' 26.3 instead of the pack's language file: the Witch Hut Map is the Swamp Hut Map, the Desert Temple Map the Desert Pyramid Map, the Jungle Temple Map the Jungle Pyramid Map, the Warm Ocean Ruin Map the Warm Ocean Ruins Map and the Mansion Map the Woodland Explorer Map.<ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/1/witch_hut.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/cartographer/5/woodland_mansion.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Some map names will be messed up}}</ref>}}
 }}
 
 == Trivia ==

@@ -9,10 +9,13 @@ The '''mace''' is crafted from a heavy core, a stick and an iron ingot instead o
 == Usage ==
 It has {{Value|Mace|durability}} durability and is repaired with iron ingots; its tooltip shows 6 damage and 0.6 attack speed.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/mace.json}}</ref>
 
+Besides the vanilla mace enchantments, it can take the pack's [[Anemos]], from the [[Prayer of Aeolus]]. {{MCW|Wind Burst}} comes from the [[Elegy of Hyacinthus]].<ref>{{Source|MF_datapack/data/matcha/tags/item/enchantable/anemos.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref>
+
 == History ==
 {{History|
 {{History line|0.5-alpha|The mace was added properly and retextured.}}
 {{History line|1.03|Mace drops from trial chambers became more likely.}}
+{{History line|1.12.8-beta|date=October 23, 2026|Can take [[Anemos]] again, as before 1.10. The blessing with Wind Burst I is now the Elegy of Hyacinthus instead of the Prayer of Aeolus.<ref>{{Source|MF_datapack/data/matcha/tags/item/enchantable/anemos.json}}</ref><ref>{{Cite changelog|1.10|quote=Anemos is forbidden from being on a Mace}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref>}}
 }}
 
 == References ==

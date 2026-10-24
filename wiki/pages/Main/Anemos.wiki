@@ -2,19 +2,19 @@
 |title=Anemos
 |maxlevel=I
 |slots=Main hand
-|items=Swords; sticks
+|items=Swords; sticks; maces
 |id=<code>matcha:anemos</code>
 |source={{Source|MF_datapack/data/matcha/enchantment/anemos.json|anemos.json}}
 }}
 '''Anemos''' is an [[enchantment]] added by [[Matcha Flavoured]] that makes a sword fire a {{MCW|Wind Charge|wind charge}} with every hit.
 
 == Obtaining ==
-* [[Prayer of Aeolus]], a crafted [[blessing]] that also gives Wind Burst I. It stores Anemos directly, so it can be applied to copper swords.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/wind_burst_anemos.json}}</ref>
+* [[Prayer of Aeolus]], a crafted [[blessing]]. It stores Anemos directly, so it can be applied to copper swords. Until 1.12.7-beta the prayer also gave Wind Burst I.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/aeolus.json}}</ref>
 * Iron swords in the tower and barracks chests of the [[Abbey]] come with Anemos.<ref>{{Source|MF_datapack/data/minecraft/loot_table/chests/abbey/tower.json}}</ref>
 Anemos has a maximum level of I and cannot appear on random enchanted books.
 
 == Usage ==
-Anemos can be applied to any sword (the <code>#minecraft:swords</code> tag) and to sticks, through the pack's <code>#matcha:enchantable/anemos</code> tag. {{MCW|Mace|Maces}} cannot take it. Its anvil cost multiplier is 0.<ref>{{Source|MF_datapack/data/matcha/tags/item/enchantable/anemos.json}}</ref>
+Anemos can be applied to any sword (the <code>#minecraft:swords</code> tag), to sticks and, since 1.12.8-beta, to {{MCW|Mace|maces}}, through the pack's <code>#matcha:enchantable/anemos</code> tag. Its anvil cost multiplier is 0.<ref>{{Source|MF_datapack/data/matcha/tags/item/enchantable/anemos.json}}</ref>
 
 == Behavior ==
 When the wielder hits a mob, the enchantment runs a function that summons a wind charge in front of the player's eyes (0.75 blocks ahead) and launches it in the direction the player is looking at 2.5 blocks per tick.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/anemos.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/backend/apply_motion.mcfunction}}</ref> The same function is also attached to the enchantment's <code>hit_block</code> effect.
@@ -26,8 +26,9 @@ After each wind charge, Anemos has a cooldown of 10 ticks (0.5 seconds), the sam
 {{History line|1.10|Can no longer be applied to maces. The wind charge is now owned by the enchanted player, so kills with it count.<ref>{{Cite changelog|1.10|quote=Windcharges shot with Anemos now register enchanted player as the one who "Owns" it. (This means if you kill someone with Anemos, it will count)}}</ref>}}
 {{History line|1.12.1-alpha|Now affects only the wielder in multiplayer.}}
 {{History line|1.12.2|Moved from the <code>main</code> to the <code>matcha</code> namespace. Items with the old enchantment are converted when held. The Prayer of Aeolus still gave the old enchantment.}}
-{{History line|1.12.3|2=The Prayer of Aeolus stores Anemos directly, so it can be applied to copper swords.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/wind_burst_anemos.json}}</ref>}}
+{{History line|1.12.3|2=The Prayer of Aeolus stores Anemos directly, so it can be applied to copper swords.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/aeolus.json}}</ref>}}
 {{History line|1.12.6-alpha|Can now be applied to golden swords.<ref>{{Source|MF_datapack/data/matcha/tags/item/enchantable/anemos.json}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|Can be applied to maces again. The Prayer of Aeolus no longer also gives Wind Burst I.<ref>{{Source|MF_datapack/data/matcha/tags/item/enchantable/anemos.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/blessing/aeolus.json}}</ref>}}
 }}
 
 == See also ==

@@ -4,10 +4,19 @@
 
 == Obtaining ==
 === Natural generation ===
-The deepslate part of the vanilla redstone feature.
+Sulfur deposits come from the vanilla lower redstone veins, which the pack leaves unchanged: 8 attempts per chunk in veins of up to 8 blocks, from the world bottom up to y=−32, most common at the bottom. Since {{Version|1.12.8-beta}} the upper redstone veins generate between y=16 and y=56 as [[fossil]]s, so they place a sulfur deposit only where they meet deepslate.<ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/ore_redstone.json}}</ref> Before, those upper veins ran from the world bottom to y=15 and turned all the deepslate they reached into sulfur deposits, so sulfur deposits are now rarer.
 
 === Breaking ===
 Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 1–2 [[Sulfur Chunk|sulfur chunks]]. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_redstone_ore.json}}</ref>
+
+== Behavior ==
+Since {{Version|1.12.8-beta}}, a player standing on a sulfur deposit gives off puffs of noxious gas particles, as on [[Sulfurous Hellstone|sulfurous hellstone]].<ref>{{Source|MF_datapack/data/matcha/tags/block/emits_sulfur_particles.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/particle/sulfurous_hellstone.mcfunction}}</ref> The block has three textures of yellow veins in deepslate, which the game picks between at random for each block (the base texture on one block in five, each of the other two on two in five).<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/deepslate_redstone_ore.json}}</ref>
+
+== History ==
+{{History|
+{{History line|0.4-alpha|Texture changed to match the vanilla sulfur blocks.<ref>{{Cite changelog|0.4-alpha|quote=Sulfur ores changed to match vanilla sulfur blocks (including Sulfurous Hellstone)}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|New texture, in three random variants. Emits sulfur particles when stepped on. Rarer, as the upper redstone veins now generate as [[fossil]]s between y=16 and y=56.<ref>{{Cite changelog|1.12.8-beta|quote=Both Hell Sulfur and Overworld Sulfur ore now emits sulfur particles when stepped on}}</ref>}}
+}}
 
 == References ==
 {{reflist}}

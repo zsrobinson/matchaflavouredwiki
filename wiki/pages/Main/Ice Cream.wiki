@@ -22,6 +22,7 @@ It is one of the foods a villager can ask for as its [[favorite food]].
 {{History line|1.12.3|2=Crafting ice cream returns the milk bottle's glass bottle. In 1.12.2 the advancement behind this still used an old recipe ID, so the bottle was lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>}}
 {{History line|1.12.3|2=Villagers can pick it as their [[favorite food]] and buy it once for 1 obol.}}
 {{History line|1.12.6-alpha|2=Eating ice cream no longer leaves a [[bowl]], which the recipe never used.<ref>{{Cite changelog|1.12.6-alpha|quote=Ice Cream no longer gives bowls}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|2=Ice cream from older versions no longer leaves a bowl once updated; until then the item updater still added one.<ref>{{Source|MF_datapack/data/matcha_item/item_modifier/modify/ice_cream.json}}</ref>}}
 }}
 
 == See also ==

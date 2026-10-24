@@ -10,6 +10,12 @@ A level 2 archaeologist sells it for one [[Obol|obol]].<ref>{{Source|MF_datapack
 == Usage ==
 It works like a normal brush but never breaks. The name is spelled "Archeologist's" in game.
 
+== History ==
+{{History|
+{{History line|1.12.4|The item updater turned any plain brush held in either hand into an archeologist's brush, so crafted brushes became unbreakable.<ref>{{Source|MF_datapack/data/matcha_item/predicate/mainhand/brush.json|at=acec32328368f3985c45f8077732d92a664f3d13}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|Plain brushes are no longer turned into archeologist's brushes.<ref>{{Source|MF_datapack/data/matcha_item/predicate/mainhand/brush.json}}</ref>}}
+}}
+
 == References ==
 {{reflist}}
 

@@ -362,10 +362,6 @@ return {
 		["heals"] = { "{{Hp|4}}", hearts = "2 hearts", raw = "4" },
 		["level:Levitation"] = { "30", raw = "30", roman = "XXX" },
 	},
-	["Clear Mushroom Soup"] = {
-		["eat_time"] = { "1.6 seconds", raw = "1.6" },
-		["heals"] = { "{{Hp|10}}", hearts = "5 hearts", raw = "10" },
-	},
 	["Cleaver"] = {
 		["attackspeed"] = { "1.6" },
 		["damage"] = { "{{Hp|6}}", raw = "6" },
@@ -1666,6 +1662,10 @@ return {
 	["Sturdy Leather Leggings"] = {
 		["armor"] = { "3" },
 		["durability"] = { "350" },
+	},
+	["Suimono"] = {
+		["eat_time"] = { "1.6 seconds", raw = "1.6" },
+		["heals"] = { "{{Hp|10}}", hearts = "5 hearts", raw = "10" },
 	},
 	["Sun-dried Tomatoes"] = {
 		["duration:Strength"] = { "5 minutes", clock = "5:00", minutes = "5 minutes", seconds = "300 seconds", secs = "300", ticks = "6000" },

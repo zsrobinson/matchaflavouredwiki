@@ -4,7 +4,7 @@
 
 == Obtaining ==
 === Mining ===
-Quartz drops from [[Quartz Deposit|quartz deposits]] (vanilla lapis lazuli ore) and [[Sulfurous Quartz Deposit|sulfurous quartz deposits]] (vanilla redstone ore), which generate in the Overworld. See [[Ores]]. [[Sulfurous Hellstone|Sulfurous hellstone]], the old nether quartz ore, drops [[Sulfur Chunk|sulfur chunks]] instead.
+Quartz drops from [[Quartz Deposit|quartz deposits]] (vanilla lapis lazuli ore), which generate in the Overworld. See [[Ores]]. Until {{Version|1.12.8-beta}} the sulfurous quartz deposit (vanilla redstone ore) also dropped 2–3 quartz; that block is now the [[fossil]], which drops bones. [[Sulfurous Hellstone|Sulfurous hellstone]], the old nether quartz ore, drops [[Sulfur Chunk|sulfur chunks]] instead.
 
 === Cooking and crafting ===
 {{Recipes}}
@@ -28,6 +28,7 @@ Besides the vanilla uses (quartz blocks, the [[Electric Comparator|electric comp
 {{History line|1.0|Picking up sand or quartz blocks unlocks the quartz recipes.}}
 {{History line|1.10|Quartz can be fired into glass in a mud kiln.}}
 {{History line|1.12.1-alpha|Quartz generates at higher elevations and in larger amounts.}}
+{{History line|1.12.8-beta|date=October 23, 2026|Redstone ore, the sulfurous quartz deposit, became the [[fossil]] and no longer drops quartz, leaving quartz deposits as the only quartz ore.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/redstone_ore.json}}</ref>}}
 }}
 
 == References ==

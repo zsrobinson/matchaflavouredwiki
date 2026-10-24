@@ -136,6 +136,14 @@ def functions(m):
     return out
 
 
+def filter_matches(items, item_id):
+    """Whether a loot item filter's `items` can match item_id; tags and missing tests count as a match."""
+    if not items:
+        return True
+    items = [items] if isinstance(items, str) else items
+    return any(i.startswith('#') or norm_id(i) == norm_id(item_id) for i in items)
+
+
 def fn_name(f):
     t = f.get('type', '')
     return t.split(':')[-1] if isinstance(t, str) else ''  # other JSON can have a list under "type"
@@ -1032,6 +1040,10 @@ for f in sorted(glob.glob(os.path.join(DP, 'minecraft', 'trade_set', '*', '*.jso
         expect_conditions([t['merchant_predicate']] if t.get('merchant_predicate') else [], rel(tfile))
         if any(fn_name(m) == 'discard' for m in mods):
             continue  # placeholder trade the game throws away (levels with no real trades)
+        if any(fn_name(m) == 'filtered' and any(fn_name(f) == 'discard' for f in functions(m.get('on_fail')))
+               and not filter_matches((m.get('item_filter') or {}).get('items'), t.get('gives', {}).get('id', ''))
+               for m in mods):
+            continue  # its item test can never pass (26.3's exploration_map no longer turns a map into a filled map)
         for m in mods:
             if fn_name(m) == 'exploration_map' and 'gives' in t and norm_id(t['gives'].get('id', '')) == 'minecraft:map':
                 t['gives']['id'] = 'minecraft:filled_map'  # an explorer map is a filled map in-game

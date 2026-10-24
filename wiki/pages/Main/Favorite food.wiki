@@ -6,7 +6,7 @@ A villager's '''favorite food''' is a trade mechanic added in 1.12.3: every empl
 
 == Mechanics ==
 When the data pack loads, it starts a check that runs 3 seconds later and then every 30 seconds.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/favorite_food_setup.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref> Each check looks at every loaded villager that:
-* has a profession (any profession other than none), and
+* has a profession other than none or, since {{Version|1.12.8-beta}}, [[Fisherman]], and
 * has more than 0 villager experience, meaning the player has traded with it at least once, and
 * has not been given a favorite food yet.
 
@@ -18,7 +18,7 @@ For each such villager, the pack picks a random whole number from 0 to 41 and ru
 |}
 Every one of the 42 foods has the same 1 in 42 chance. The food in the trade carries the full item data of the pack's current version of that food, so it has to be a food made or found in the current version; older copies with a different format do not match.
 
-Because the check needs the villager to have experience, the favorite food appears only after the first trade with a villager, and never on an unemployed villager or a nitwit. The favorite food is a villager trade only; the [[Wandering Trader]] does not get one.
+Because the check needs the villager to have experience, the favorite food appears only after the first trade with a villager, and never on an unemployed villager, a nitwit or a fisherman. A fisherman that got one before 1.12.8-beta keeps it. The favorite food is a villager trade only; the [[Wandering Trader]] does not get one.
 
 An [[Amnestic]] clears the villager's favorite food flag and sets its experience back to 0, so the new favorite food appears only after the first trade in the new profession.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/amnestic/villager_consumed.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref>
 
@@ -36,7 +36,7 @@ An [[Amnestic]] clears the villager's favorite food flag and sets its experience
 |-
 | 4 || {{ItemLink|Bruschetta}} || 1
 |-
-| 5 || {{ItemLink|Bubbling Mead}} || 1
+| 5 || {{ItemLink|Sparkling Mead}} || 1
 |-
 | 6 || {{ItemLink|Buñuelo}} || 1
 |-
@@ -117,6 +117,7 @@ All 42 foods sell for 1 obol, including the curries and ramen, which take the mo
 {{History line|1.12.3|Added: every employed villager that has been traded with buys one random food, once. The villager wants 1 of the food, and an [[Amnestic]] gives it a new favorite.}}
 {{History line|1.12.6-alpha|The four chicken nuggets are bought 8 at a time, the puerquito 4 and the honey ginger tea 3. The toadstool stroganoff trade asked for an item with a misspelled name key, which no toadstool stroganoff has, and now asks for the real one. The Amnestic sets the villager's experience back to 0, so a new favorite appears only after a trade.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_30.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref>}}
 {{History line|1.12.7-beta|Every favorite food trade is limited to one use before restocking. From 1.12.3 to 1.12.6-alpha, all but the apple empanada's trade wrote the limit under a key the game ignores (<code>max_uses</code> instead of <code>maxUses</code>), so the limit of 1 didn't apply; the release notes call it a bug "that resulted in high restock rates".<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/food_trades/food_1.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref><ref>{{Cite changelog|1.12.7-beta|quote=Villager trade favourite foods had a bug that resulted in high restock rates}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|Fishermen no longer get a favorite food.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref>}}
 }}
 The favorite food was contributed by TankyAibem (pull request #193), as a rework of the "local flavors" add-on. It was merged into the repository's <code>main</code> branch about an hour and a half after [[Matcha Flavoured 1.12.2|1.12.2-beta]] was published on Modrinth and is part of 1.12.3.<ref>[https://github.com/kleiwright/matcha-flavoured/commit/139f198a Merge of pull request #193] (2026-09-19 04:50 UTC; the beta was published at 03:20 UTC)</ref>
 

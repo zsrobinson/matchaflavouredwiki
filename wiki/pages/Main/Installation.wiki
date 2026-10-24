@@ -19,7 +19,7 @@ The Modrinth app installs the pack only as a resource pack, because datapacks ar
 Place the datapack in the world's <code>datapacks</code> folder and have players use the resource pack. The README notes a known problem on Purpur servers, where keep inventory is set per dimension and must be set manually. See [[Multiplayer]].
 
 == Options ==
-* '''Difficulty''': the pack reads the world difficulty on load. After changing it, reload the world (or run <code>/reload</code>). The load message confirms the difficulty. See [[Difficulty]].
+* '''Difficulty''': the pack reads the world difficulty on load. After changing it, reload the world (or run <code>/reload</code>). The load message confirms the difficulty. A new world set to Hard is put on Normal when the first player joins, except in Hardcore.<ref>{{Source|MF_datapack/data/matcha/function/setup/disallow_hard_on_first_load.mcfunction}}</ref> See [[Difficulty#No Hard at the start]].
 * '''True darkness''': to turn it off, delete <code>data/minecraft/dimension_type/overworld.json</code> in the datapack and rename <code>overworld_no_true_darkness.txt</code> to <code>overworld.json</code>, then restart the world.<ref>{{Source|MF_datapack/data/minecraft/dimension_type/overworld_no_true_darkness.txt}}</ref>
 * '''Accessibility''': the README links an accessible version of the resource pack and a community resource pack with vanilla-style textures.
 * '''Gamerules''' such as keep inventory are set by the pack's first-load setup, which runs once, when the first player joins a new world. Since 1.12.3 the pack remembers that the rules were set, so they stay as the server owner changed them; in 1.12.2 they were set again whenever a new player joined or a player first joined after an update.<ref>{{Source|MF_datapack/data/matcha/function/setup/first_load.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/update_this_player.mcfunction}}</ref> See [[Death#Keeping items]].
@@ -38,6 +38,8 @@ Replace both the datapack and resource pack files. Seeing a name such as <code>i
 | Textures work, but the pack's recipes, items and advancements are missing || Only the resource pack is installed; add the datapack to the world.
 |-
 | A level number of 10000 shows above the hotbar || The resource pack is not active, or another resource pack replaces its text shader. The datapack sets every player's level to 10,000 so that anvil work never lacks levels, and the resource pack hides the number. See [[Anvil#Experience]].<ref>{{Source|MF_datapack/data/matcha/function/mechanics/xp_handling/give_levels.mcfunction}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/shaders/core/text.vsh}}</ref>
+|-
+| Signs being edited and books being read look blank || The resource pack from 1.12.7-beta is active. Its text shader, which hides the level number, also hid all solid black interface text; the 1.12.8-beta shader hides such text only near the bottom of the screen, where the level number is drawn.<ref>{{Source|MF_resourcepack/assets/minecraft/shaders/core/text.vsh}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Signs and Books no longer appear blank}}</ref>
 |-
 | Mobs behave differently from what the wiki describes || The pack reads the [[difficulty]] only when it loads. Reload the world or run <code>/reload</code> after changing it.
 |-
