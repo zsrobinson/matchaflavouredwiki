@@ -14,6 +14,8 @@ An egg and 2 [[flour]] make 4 [[dough]], the cheapest way to make dough. Eggs ar
 
 The [[Farmer]] sells fertilized eggs that hatch into chickens; see [[Livestock]].
 
+Chickens lay eggs that match their breed, as in vanilla: white from temperate, brown from warm and blue from cold chickens. Since {{Version|1.12.8-beta}} each laying also drops a {{MCW|Feather|feather}}.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/chicken_lay.json}}</ref>
+
 === Crafting ingredient ===
 {{Uses}}
 
@@ -21,7 +23,8 @@ The [[Farmer]] sells fertilized eggs that hatch into chickens; see [[Livestock]]
 {{History|
 {{History line|0.5-alpha|Added fried eggs.}}
 {{History line|1.10|Egg-derived dough buffed.}}
-}}
+{{History line|1.12.6-alpha|Chickens lay only eggs, as in vanilla: the pack's laying table, in which half of all layings were a feather instead of an egg, was left out of the ''Minecraft'' 26.3 version.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/chicken_lay.json|at=d41ac64dd7efde6748884d02c75a46b8f4800797}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|Chickens lay feathers again, now a feather together with every egg.<ref>{{Cite changelog|1.12.8-beta|quote=Chickens now lay feathers again}}</ref>}}
 
 == See also ==
 * [[Fried Egg]]

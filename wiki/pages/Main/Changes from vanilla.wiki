@@ -8,7 +8,7 @@ This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''
 * '''[[Health]]''' starts at 10 hearts and can be raised to 30 hearts with crystal hearts.
 * '''[[Difficulty]]''' changes the health, speed and damage of common hostile mobs on every level, including Easy. Normal switches to Hard automatically once any player's minimum hearts falls to 5.
 * '''[[Wither effect|Wither]]''' that lasts 9 seconds (6 on Hard) removes maximum health as if the player had died (except on Easy); [[Shakudo equipment|shakudo]] armor buys extra time. Milk and [[Cleanse|cleansing]] foods such as [[bread]] cure it in time.
-* '''[[Freezing water]]''' in frozen biomes gives Slowness and Darkness to, and damages, players whose head is underwater, unless their chestplate has [[Frost Protection]].
+* '''[[Freezing water]]''' in frozen biomes gives Slowness and Darkness to, and damages, players in the water, unless their chestplate has [[Frost Protection]].
 * '''[[Day and night]]''' last three times as long: a full day is 72,000 ticks (60 minutes). The [[Moon]] has its own cycle.
 * '''[[Sleeping]]''' is possible at any time of day. Instead of skipping the night, time speeds up while players are in bed, faster the larger the share of players asleep, and waking up clears the weather.
 * '''[[Darkness]]''': the Overworld uses "true darkness", so unlit places are completely black. It can be turned off by swapping a file in the datapack. [[Hell]] is slightly brighter than in vanilla.
@@ -46,7 +46,7 @@ This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''
 * [[Estus]], dropped by undead mobs, replaces blaze powder, blaze rods and glowstone as the core magic material.
 * New enchantments: [[Anemos]], [[Bloodrage]], [[Frost Protection]], [[Reach]], [[Riposte]], [[Slaughter]], [[Trailblaze]] and [[Zephyr]]. Several vanilla enchantments are changed, and Fortune is capped at level I; higher Fortune only comes from electrum tools. See [[Enchantment]].
 * [[Warding Stone|Warding stones]] burn undead and heal villagers, pets and players nearby.
-* [[Brewing]] is effectively removed: the [[Chemistry Stand|chemistry stand]] (brewing stand) cannot be fueled. The only potions are [[Splash Potion|splash potions]] from the [[Chemist]], tipped arrows from the [[Fletcher]] and vanilla potions in loot.
+* [[Brewing]] is effectively removed: the [[kettle]] (brewing stand) cannot be fueled. The only potions are [[Splash Potion|splash potions]] from the [[Chemist]], tipped arrows from the [[Fletcher]] and vanilla potions in loot.
 
 == Villagers and trading ==
 * [[Obol]]s replace emeralds and are rare. Villagers sell but mostly don't buy: only the [[fisherman]] (fish), the [[Jeweler|jeweler]] (gems) and the [[weaponsmith]] (diamonds, lapis blocks and hepatizon) pay obols. Each villager also buys one [[Favorite food|favorite food]] once, from 1.12.3.
@@ -56,7 +56,7 @@ This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''
 * [[Bulk blocks]] from the [[Mason|mason]] unpack into a stack of blocks.
 
 == World ==
-* Ores are renamed and redistributed: [[Native Silver|native silver]] (emerald ore) in almost every biome, [[Quartz Deposit|quartz deposits]] (lapis ore) far more common, [[Sulfurous Quartz Deposit|sulfurous quartz deposits]] (redstone ore) and large [[Coal Deposit|coal deposits]] under deserts. See [[Ores]] and [[World generation]].
+* Ores are renamed and redistributed: [[Native Silver|native silver]] (emerald ore) in almost every biome, [[Quartz Deposit|quartz deposits]] (lapis ore) far more common, [[Fossil|fossils]] (redstone ore) that drop bones higher up, and large [[Coal Deposit|coal deposits]] under deserts. See [[Ores]] and [[World generation]].
 * New structure: the [[Abbey]], with its [[Copper Eye|copper eye]] doors and grates. Villages become [[Abandoned village|abandoned villages]] and are much rarer, and pillager outposts become [[Papal Outpost|papal outposts]]. Nearly every chest loot table is changed. See [[Structures]] and [[Chest loot]].
 * The Nether is renamed [[Hell]]. Water only stays on its roof, gravel no longer generates, and [[Hellspore|hellspore]] grows naturally.
 * Husks spawn in every biome, deserts have no flowers, beaches have blue flowers, swamps have their own trees, and grass and foliage colors are redrawn. See [[Biomes]].

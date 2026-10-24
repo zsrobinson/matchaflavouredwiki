@@ -1,0 +1,55 @@
+{{Meta version infobox
+|version=1.12.8-beta
+|name=Poplar Drop
+|type=Beta (pre-release)
+|date=October 23, 2026
+|game=26.3
+|files=<code>MFDP_1_12_8_26_3.zip</code> (datapack), <code>MFRP_1_12_8_26_3.zip</code> (resource pack), <code>matcha-flavoured-1.12.8-beta+mod.jar</code> (mod)
+|prev=1.12.7-beta
+}}
+'''Matcha Flavoured 1.12.8-beta''', "Poplar Drop", is the current version of [[Matcha Flavoured]], published on October 23, 2026, six days after [[Matcha Flavoured 1.12.7-beta|1.12.7-beta]]. It is a beta for ''Minecraft'' 26.3: its <code>pack.mcmeta</code> files report the version as "1.12.8 for 26.3", and the internal version number is 1128.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction}}</ref> The newest full release is still [[Matcha Flavoured 1.12.5|1.12.5]], for 26.2.
+
+The release notes open with an apology for putting out 1.12.7-beta only three days after the alpha, and say that updates should now come about a week apart, with new features held back and bundled into bigger updates. They say this beta will become the full release if no new major bugs are reported over the next week.<ref>{{Cite changelog|1.12.8-beta|quote=This will be the full release if, over the next week, no new major bugs are reported}}</ref>
+
+== Changes ==
+=== Ores ===
+{{Main|Fossil|Ores}}
+* Redstone ore is now the '''[[fossil]]''' instead of the sulfurous quartz deposit. It drops 2–5 [[bone]]s instead of a sulfur chunk and quartz, and its veins generate higher, from Y=16 to 56 (4 per chunk).<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/redstone_ore.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/ore_redstone.json}}</ref> The release notes call it "Peaceful bones!".<ref>{{Cite changelog|1.12.8-beta|quote=Fossil "Ore" can now be found (Peaceful bones!)}}</ref>
+* The [[Sulfur Deposit|sulfur deposit]] (deepslate redstone ore) has a new texture in three variants, and it and [[Sulfurous Hellstone|sulfurous hellstone]] give off sulfur particles when stepped on.<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/deepslate_redstone_ore.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/block/emits_sulfur_particles.json}}</ref> With redstone ore taken over by fossils, ore [[quartz]] now comes only from [[Quartz Deposit|quartz deposits]].
+
+=== Renamed items ===
+* The chemistry stand (brewing stand) is renamed '''[[Kettle]]''', and the brewing screen has no title. The release notes list the name as an expected issue: "Chemistry Stand name is messed up, don't worry about it".<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Chemistry Stand name is messed up, don't worry about it (Shh)}}</ref>
+* Bubbling Mead is renamed '''[[Sparkling Mead]]''', and Clear Mushroom Soup '''[[Suimono]]'''.<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+* Several [[explorer maps]] show ''Minecraft'' 26.3's own names: the [[Archaeologist|archaeologist]] sells the Swamp Hut, Desert Pyramid, Jungle Pyramid, Warm Ocean Ruins and Woodland Explorer maps, and the [[Abandoned camp|abandoned camp]]'s chest holds Trial Chamber, Mineshaft and Mansion maps. The release notes warn that "some map names will be messed up" to future-proof later map changes.<ref>{{Cite changelog|1.12.8-beta|quote=Some map names will be messed up}}</ref>
+
+=== Blessings and enchantments ===
+{{Main|Blessing}}
+* [[Zephyr]] can be applied only to leather boots.<ref>{{Source|MF_datapack/data/matcha/enchantment/zephyr.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Zephyr is now only Supported on Leather Boots}}</ref>
+* The [[Elegy of Hyacinthus]] gives Wind Burst I along with Zephyr I, and the [[Prayer of Aeolus]] gives only [[Anemos]], which maces can take again.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/blessing/aeolus.json}}</ref>
+* "Demonic Emissary" needs the same 17 blessings as "Apocrypha"; six prayers and the [[Hell-Bound Book]] no longer count.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json}}</ref> See [[Advancements]].
+* The blessing recipes were renamed after their figures (<code>blessing/reach</code> became <code>blessing/will</code>, and so on); apart from the two above, they are unchanged.
+
+=== Difficulty ===
+{{Main|Difficulty}}
+* A new world that starts on Hard is set to Normal when its first player joins, with a title and a chat message explaining that Hard is not balanced for the early game. Hardcore worlds are left alone, and the difficulty can be changed back afterwards.<ref>{{Source|MF_datapack/data/matcha/function/setup/disallow_hard_on_first_load.mcfunction}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Hard is now disallowed on world start}}</ref>
+* On Hard, [[Husk|husks]] deal 10 damage instead of 15.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/spawn_mechanic/hard_modifications/modify_husk.mcfunction}}</ref>
+
+=== World ===
+* [[Freezing water]] affects players who are in the water at all, wading or swimming at the surface, not only those whose head is under it.<ref>{{Source|MF_datapack/data/matcha/predicate/in_frozen_water.json}}</ref>
+* Emptying a water bucket in [[Hell]] is detected by an advancement, which checks the height of the placed water instead of the player's, and plays an extinguishing sound.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/place_water_in_nether.json}}</ref>
+* [[Enderman|Endermen]] spawn in [[the End]] again.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/the_end.json}}</ref>
+* The two [[Crystal Heart|crystal hearts]] placed in the [[Abbey]] no longer despawn.<ref>{{Source|MF_datapack/data/minecraft/structure/abbey/default/rooms/boon_heart.nbt}}</ref>
+* The [[Abandoned village|abandoned village]]'s scripts run only for players inside villages, and its jukebox counts down a score instead of using a scheduled function.<ref>{{Source|MF_datapack/data/matcha/function/environmental/village/tick.mcfunction}}</ref>
+* [[Dirt|Podzol]] can be crafted from dirt and leaf litter.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/podzol.json}}</ref>
+
+=== Trades ===
+* The [[Wandering Trader|wandering trader]]'s five abandoned village maps are offered again, and each can be bought 999 times. The Swamp Hut Map trade is still never offered (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/village_desert.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Some Maps were broken (esp Wandering Trader) they're fixed now}}</ref>
+
+<!--ITEMS-->
+
+== References ==
+{{reflist}}
+
+{{Navbox meta}}
+[[Category:Versions]]
+[[Category:Beta versions]]

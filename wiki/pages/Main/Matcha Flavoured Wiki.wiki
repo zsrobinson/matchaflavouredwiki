@@ -26,13 +26,13 @@ Welcome to the unofficial encyclopedia of '''[[Matcha Flavoured]]''' (also writt
 <div class="mp-highlight-wrapper">
 <h2 class="sr-only">Latest releases</h2>
 {{Mainpage update
-| name = [[Matcha Flavoured {{Current version}}|Poplar Pre-release]]
+| name = [[Matcha Flavoured {{Current version}}|Poplar Drop]]
 | tag = Beta
 | features =
-* Smoother [[anvil]] experience
-* [[Beacon Kindling]] survives reloads
-* One use per [[favorite food]] trade
-* [[Fishing]] reworked; fish now rare
+* [[Fossil]]s: bones from ore
+* [[Zephyr]] only on leather boots
+* No Hard [[difficulty]] at the start
+* [[Wandering Trader]] village maps fixed
 | bottom = Matcha Flavoured <b class="mp-highlight-version">{{Current version}}</b> for ''Minecraft'' <b class="mp-highlight-version">26.3</b>
 }}{{#ifeq: {{Stable version}} | {{Current version}} || {{Mainpage update
 | name = [[Matcha Flavoured {{Stable version}}|Minor Bug Fixes]]
