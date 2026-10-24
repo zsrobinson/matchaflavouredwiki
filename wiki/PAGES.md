@@ -52,8 +52,8 @@ every individual tool/armor/weapon item page · Materials: Copper Ingot · Iron 
 Carbon-Rich Iron · Steel Alloy · Shakudo Alloy · Hepatizon Alloy · Electrum Alloy ·
 Adamant Alloy · Adamant Scrap · Raw Silver · Silver Bullion · Raw Diamond · Diamond ·
 Sturdy Leather · Ores (Ore overview page) and each ore block (Native Copper, Native
-Gold, Native Silver, Hematite, Coal Deposit, Quartz Deposit, Sulfur Deposit, Sulfurous
-Quartz Deposit, Gilded Hellstone, Sulfurous Hellstone and deepslate variants) ·
+Gold, Native Silver, Hematite, Coal Deposit, Quartz Deposit, Sulfur Deposit, Fossil
+(was Sulfurous Quartz Deposit), Gilded Hellstone, Sulfurous Hellstone and deepslate variants) ·
 Blast Furnace · Smithing Table · Smithing Upgrade Template · Trims (Smithing Trim Color)
 
 ## Intrinsics of equipment, jewelry and protection (area: protection)
@@ -67,7 +67,7 @@ Ofuda · Soul sight (the effect functions) · Holy things tied to undead
 Enchanting · Blessing · every Prayer/Elegy page (Prayer of Demeter … Elegy of Icarus) ·
 Hell-Bound Book · Estus (overview) · Raw Estus · Estus Ash · Stabilized Estus ·
 Crystallized Estus · Estus Flask (removed item) · Benzene · Stable Void · Pith ·
-Amalgamated Pith · Eye of Ender · Anvil · Grindstone · Chemistry Stand · Brewing ·
+Amalgamated Pith · Eye of Ender · Anvil · Grindstone · Kettle (was Chemistry Stand) · Brewing ·
 Tipped arrows: Apotropaic Arrow · Nightshade Arrow · Splash potions the pack adds ·
 each custom enchantment: Anemos · Bloodrage · Frost Protection · Reach · Riposte ·
 Slaughter · Trailblaze · Zephyr · and every vanilla enchantment the pack changes, one
@@ -117,6 +117,8 @@ Each has a generated source table `{{Data/Effect/<Effect>}}` listing every food,
 intrinsic that grants it. Link effects with `{{EffectLink|<Effect>}}`.
 
 ## Added in 1.12.3 (items)
-Abandoned camp · Bobwhite (Normal Bobwhite, Mama Bobwhite and Baby Bobwhite redirect to it) · Clear Mushroom Soup ·
+Abandoned camp · Bobwhite (Normal Bobwhite, Mama Bobwhite and Baby Bobwhite redirect to it) · Suimono (was Clear Mushroom Soup) ·
 Cushion · Porkchop · Raw Poultry (Raw Chicken redirects to it) · Rabbit Stew · Explorer maps (now also camp and
 buried-structure maps; every map is its own item). Bulk Prismarine is now named Bulk Malachite.
+In 1.12.8-beta the Witch Hut, Desert Temple, Jungle Temple, Warm Ocean Ruin and (Archaeologist's) Mansion maps were renamed
+Swamp Hut, Desert Pyramid, Jungle Pyramid, Warm Ocean Ruins and Woodland Explorer Map; hand redirects at the first four old titles point to Explorer maps.

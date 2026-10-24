@@ -9,12 +9,13 @@ The deepslate variant is '''deepslate diamond ore'''.
 As vanilla.
 
 === Breaking ===
-Mined with a pickaxe (see [[Tools#Mining levels]]), it drops [[Raw Diamond|raw diamond]], affected by Fortune and electrum; adamant tools do not smelt it. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/diamond_ore.json}}</ref>
+Mined with a pickaxe (see [[Tools#Mining levels]]), it drops [[Raw Diamond|raw diamond]], affected by Fortune and electrum. Since {{Version|1.12.8-beta}} a tool with the [[Adamant equipment|adamant]] tool intrinsic smelts it as it is mined and drops a [[diamond]] instead, also increased by Fortune and the electrum tool intrinsic with the ore formula. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/diamond_ore.json}}</ref>
 
 == History ==
 {{History|
 {{History line|0.6-alpha|Deepslate diamond ore texture made consistent.}}
 {{History line|1.12.2|Drops raw diamonds.}}
+{{History line|1.12.8-beta|date=October 23, 2026|Adamant tools smelt it into a diamond.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_diamond_ore.json}}</ref>}}
 }}
 
 == References ==

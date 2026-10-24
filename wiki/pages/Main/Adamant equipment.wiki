@@ -35,6 +35,7 @@ Values are the item's real attributes; where the hand-written tooltip differs, t
 {{History line|1.12.1-alpha|Reworked: each piece gives Health Boost hearts instead of soul hearts, and the set bonus gives 2 soul hearts. Armor durability lowered from 1500 to 1000. [[Divinity]] was removed from adamant tools and replaced with Efficiency. [[Divinity]] was removed from adamant weapons and replaced with Sharpness. The claymore's attack speed was raised from 0.5 to 1.0. The sword's and dolabra's real attack speed and damage now match the tooltip.}}
 {{History line|1.12.2|The armor intrinsic was reworked into [[Doom]]. Adamant tools now smelt the blocks they mine. Adamant weapons now inflict Weakness. Dolabras were redefined as axe (tool) and pickaxe hybrids rather than weapons: damage goes down and weapon intrinsics are removed over time.}}
 {{History line|1.12.3|Smithed leggings are repaired with blocks of diamond or adamant scrap, like the rest of the set, instead of blocks of diamond or gold.}}
+{{History line|1.12.8-beta|date=October 23, 2026|Adamant tools smelt diamond ore into diamonds.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/diamond_ore.json}}</ref>}}
 }}
 
 == References ==

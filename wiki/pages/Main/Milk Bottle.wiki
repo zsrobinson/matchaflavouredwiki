@@ -26,6 +26,7 @@ Milk bottles are used in [[cheese]], [[cake]], [[Ice Cream|ice cream]], [[Glow B
 {{History line|1.10|Milk got a new cleanse tooltip icon, so older milk bottles don't stack with new ones.}}
 {{History line|1.12.3|The milk bottle no longer carries 2 nutrition and 1.2 saturation, so drinking it restores no hunger.<ref>{{Source|MF_datapack/data/matcha/loot_table/food/matcha/milk_bottle.json}}</ref>}}
 {{History line|1.12.6-alpha|2=Drinking a milk bottle takes 0.8 seconds, down from 1.6.<ref>{{Source|MF_datapack/data/matcha/recipe/food/crafting/milk_bottle.json}}</ref><ref>{{Cite changelog|1.12.6-alpha|quote=Milk Bottles are now fast to drink}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|2=Milk bottles from older versions update to the 0.8-second drinking time; until then the item updater still gave them 1.6 seconds. Newly crafted milk bottles are also rewritten when first held (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha_item/item_modifier/modify/milk_bottle.json}}</ref>}}
 }}
 
 == See also ==

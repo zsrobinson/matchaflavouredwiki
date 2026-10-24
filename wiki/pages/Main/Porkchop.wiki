@@ -18,6 +18,7 @@ The item is a vanilla porkchop with a changed model (<code>matcha:porkchop_class
 {{History|
 {{History line|1.12.3|Added a loot table, <code>matcha:treasure/porkchop_classic</code>, to give the item with <code>/loot</code>. The <code>update_item</code> trigger now converts old classic porkchops to the new model.<ref>{{Source|MF_datapack/data/matcha/item_modifier/porkchop_classic.json}}</ref> The 26.2 release's table already used the 26.3 <code>modifier</code> key, so there it gave a plain raw porkchop.<ref>{{Source|MF_datapack/data/matcha/loot_table/treasure/porkchop_classic.json|at=d7482cfd1cb9fbd4c633a6d030a954950c70f4d2}}</ref>}}
 {{History line|1.12.6-alpha|The loot table gives the classic porkchop, because the pack is for ''Minecraft'' 26.3, which reads the table's <code>modifier</code> key (first in the 1.12.3 alpha for 26.3).}}
+{{History line|1.12.8-beta|date=October 23, 2026|The item updater no longer turns a plain raw porkchop held in either hand into this item, as it had since 1.12.6-alpha.<ref>{{Source|MF_datapack/data/matcha_item/predicate/mainhand/porkchop_classic.json}}</ref><ref>{{Source|MF_datapack/data/matcha_item/predicate/mainhand/porkchop_classic.json|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref>}}
 }}
 
 == See also ==

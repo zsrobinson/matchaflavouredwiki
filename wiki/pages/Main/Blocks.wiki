@@ -133,6 +133,8 @@ A tool with the [[Adamant equipment|adamant]] tool intrinsic smelts some blocks 
 | Logs and stripped logs || Charcoal (Fortune applies)
 |-
 | Raw iron, copper and gold blocks || Blocks of iron, copper and gold
+|-
+| Diamond ore, deepslate diamond ore || [[Diamond]] (Fortune applies; since 1.12.8-beta)<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/diamond_ore.json}}</ref>
 |}
 Where "Fortune applies", both [[Fortune]] and the electrum tool intrinsic increase the drop, using the ore formula.
 

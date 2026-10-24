@@ -16,10 +16,12 @@ The [[Mason]] sells 6 bulk dirt for 1 [[obol]] at the novice level; each unpacks
 * Eight dirt and a water bottle make 8 [[mud]].
 * Two dirt and two flint make 2 [[gravel]].
 * Three dirt make 6 [[Dirt Slab|dirt slabs]].
+* Two dirt and two {{MCW|Leaf Litter|leaf litter}}, placed diagonally, make 2 [[podzol]]. Picking up leaf litter unlocks the recipe.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/podzol.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/leaf_litter.json}}</ref>
 
 == History ==
 {{History
 |{{History line|1.12.2|Bulk dirt added to the Mason trades.}}
+{{History line|1.12.8-beta|date=October 23, 2026|Dirt and leaf litter can be crafted into podzol.<ref>{{Cite changelog|1.12.8-beta|quote=Podzol can now be crafted from dirt and leaf litter}}</ref>}}
 }}
 == References ==
 {{reflist}}

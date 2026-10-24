@@ -10,7 +10,7 @@ Sulfur deposits come from the vanilla lower redstone veins, which the pack leave
 Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 1–2 [[Sulfur Chunk|sulfur chunks]]. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_redstone_ore.json}}</ref>
 
 == Behavior ==
-Since {{Version|1.12.8-beta}}, a player standing on a sulfur deposit gives off puffs of noxious gas particles, as on [[Sulfurous Hellstone|sulfurous hellstone]].<ref>{{Source|MF_datapack/data/matcha/tags/block/emits_sulfur_particles.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/particle/sulfurous_hellstone.mcfunction}}</ref> The block has three textures of yellow veins in deepslate, which the game picks between at random for each block (the first half as often as the other two).<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/deepslate_redstone_ore.json}}</ref>
+Since {{Version|1.12.8-beta}}, a player standing on a sulfur deposit gives off puffs of noxious gas particles, as on [[Sulfurous Hellstone|sulfurous hellstone]].<ref>{{Source|MF_datapack/data/matcha/tags/block/emits_sulfur_particles.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/particle/sulfurous_hellstone.mcfunction}}</ref> The block has three textures of yellow veins in deepslate, which the game picks between at random for each block (the base texture on one block in five, each of the other two on two in five).<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/deepslate_redstone_ore.json}}</ref>
 
 == History ==
 {{History|
