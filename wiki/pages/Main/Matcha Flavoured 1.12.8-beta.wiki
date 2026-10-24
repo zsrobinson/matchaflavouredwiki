@@ -14,7 +14,7 @@ The release notes open with an apology for putting out 1.12.7-beta only three da
 == Changes ==
 === Ores ===
 {{Main|Fossil|Ores}}
-* Redstone ore is now the '''[[fossil]]''' instead of the sulfurous quartz deposit. It drops 2–5 [[bone]]s instead of a sulfur chunk and quartz, and its veins generate higher, from Y=16 to 56 (4 per chunk).<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/redstone_ore.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/ore_redstone.json}}</ref> The release notes call it "Peaceful bones!".<ref>{{Cite changelog|1.12.8-beta|quote=Fossil "Ore" can now be found (Peaceful bones!)}}</ref>
+* Redstone ore is now the '''[[fossil]]''' instead of the sulfurous quartz deposit. It drops 2–5 {{MCW|Bone|bones}} instead of a sulfur chunk and quartz, and its veins generate higher, from Y=16 to 56 (4 per chunk).<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/redstone_ore.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/ore_redstone.json}}</ref> The release notes call it "Peaceful bones!".<ref>{{Cite changelog|1.12.8-beta|quote=Fossil "Ore" can now be found (Peaceful bones!)}}</ref>
 * The [[Sulfur Deposit|sulfur deposit]] (deepslate redstone ore) has a new texture in three variants, and it and [[Sulfurous Hellstone|sulfurous hellstone]] give off sulfur particles when stepped on.<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/deepslate_redstone_ore.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/block/emits_sulfur_particles.json}}</ref> With redstone ore taken over by fossils, ore [[quartz]] now comes only from [[Quartz Deposit|quartz deposits]].
 
 === Renamed items ===
