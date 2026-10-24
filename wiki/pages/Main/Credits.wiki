@@ -1,22 +1,26 @@
-This page lists the people credited for [[Matcha Flavoured]], as given in the README, the datapack's <code>CREDITS.txt</code> and the release notes.<ref>{{Source|README.md}}</ref><ref>{{Source|MF_datapack/CREDITS.txt}}</ref> The pack's design, code and textures are by '''Klei Wright''' unless noted.
+This page lists the people credited for [[Matcha Flavoured]], as given in the README, the datapack's <code>CREDITS.md</code> (<code>CREDITS.txt</code> until 1.12.8-beta) and the release notes.<ref>{{Source|README.md}}</ref><ref>{{Source|MF_datapack/CREDITS.md}}</ref> The pack's design, code and textures are by '''Klei Wright''' unless noted.
 
 == Contributors ==
 === Music ===
 * '''Ciren''': the music disc "Golden", added in [[Matcha Flavoured 1.0|1.0]] in memory of the developer's dog, Dakota.
-* '''DeBlezyBestie''': the music discs "Malachite", "Crete" and "Elegy of The Abbey".
-* '''Vee Vaicekauskas''': the background tracks "Refuge", "Abbey", "Ruby", "Through Hell" and "Estus".
+* '''DeBlezyBestie''': music discs; the older credits file named "Malachite", "Crete" and "Elegy of The Abbey".
+* '''Vee Vaicekauskas''': background music; the older credits file named the tracks "Refuge", "Abbey", "Ruby", "Through Hell" and "Estus".<ref>{{Source|MF_datapack/CREDITS.txt|at=34a04e6571d9ee6f0cc1d8d50cdfa85980720156}}</ref>
 See [[Music]].
 
 === Art ===
-* '''imtlx''': fishing sounds and the [[Angler's Almanac]].
+* '''imtlx''': fishing sounds and the new [[Angler's Almanac]], translation and GitHub help.
 * '''Movpasd''': the gradated biome and foliage color maps.
-* '''Voxybuns''': custom effect and intrinsic icons.
+* '''Voxybuns''': custom effect and intrinsic icons ("custom emojis") and their implementation.
 * '''Pepurion''': rose models.
 * '''Zergologist''': the original lapis lazuli textures.
 * '''roliuu''': Axiom and Easy Shulkers interface textures.
 * '''MrHatsy''': chiseled sandstone texture.
 * '''LambS0up''': purple Nether portal texture.
-* '''IrrelevantGaymer''': brick, bed and sandstone texture work after 1.12.2.<ref>[https://github.com/kleiwright/matcha-flavoured/commits/{{Source/commit}} Commit history of the pack repository]</ref>
+* '''IrrelevantGaymer''': brick, bed and sandstone texture work after 1.12.2,<ref>[https://github.com/kleiwright/matcha-flavoured/commits/{{Source/commit}} Commit history of the pack repository]</ref> and the leatherback sea turtle.
+* '''ToastNeko''': the copper knife and the Wither tabula base.
+* '''TheGenderGoblin''': the 3D fish models.
+* '''Bobot-Dev''': all the 3D food models.
+* '''LambS0up''' is also credited for the withered heart asset.
 
 === Code ===
 * '''Linkershim''': optimizations, multiplayer support and other code.
@@ -24,7 +28,9 @@ See [[Music]].
 * '''HapppySpud''': removing gravel from Hell, keeping enchantments when smithing, random asylum seekers, hellspore generation, and several fixes.
 * '''FloofShade''': the item update trigger. See [[Updating items]].
 * '''Pepurion''': optimizations and many bug fixes.
-* '''ReinIsNOTaDev''': optimizations, the GitHub workflow and the timeline-based day length.
+* '''ReinIsNOTaDev''': optimizations, the GitHub workflow, the timeline-based day length and the item update system (see [[Updating items]]).
+* '''Internet-Hyena''': the new pig and chicken features; the 1.12.8-beta notes also credit them for crafting lanterns from steel.<ref>{{Cite changelog|1.12.8-beta|quote=Lanterns can now be crafted from Steel (Internet-Hyena)}}</ref> The released pack has no such recipe yet.
+* '''fautore''': toggleable [[heart container]] loss.
 * '''Fpekal''': bug fixes, optimizations and the 26.3 port.
 * '''milo256''': dynamic multiplayer sleep.
 * '''NamelessJu''': code suggestions, Modrinth issues and translation.
@@ -32,6 +38,11 @@ See [[Music]].
 * '''Tralomine''': trims on the pack's custom armor, and a fishing advancement fix.
 * '''Fayranchia''', '''EastMonster''' and '''CubertCuberton''': bug fixes and suggestions.
 * '''Bingbongbooper''': food ideas.
+
+=== Builds and structures ===
+* '''Linkershim'''.
+* '''TankyAibem''': chicken roosts.
+* '''Grim-O''': the plains and desert villages.
 
 === Translation ===
 The translation project is led by '''Natroute''', with the spreadsheet compiled into JSON by '''imtlx'''. The README credits: Zevran, Ithlil and Alaska (French); Pepurion (Russian); Fellter_CZ and Exmori (Czech); NamelessJu, Flix8 and Koguri3108 (German); Flix8 (Swiss German); Seba (Chilean Spanish); Joxer021 (Spanish); Phonem (Turkish); deneben (Canadian English); Vee (British English); EastMonster (Simplified Chinese); Knoctis and Sego_dk (Danish); imtlx and malberee (Ukrainian); Briefle and Yassin (Italian); Kuzuyukii (Polish); HapppySpud and imtlx (joke English variants).
@@ -46,6 +57,7 @@ The credits stress that none of the following people know of or endorse the pack
 * '''Gooporeal''', whose resource pack inspired the lichen models.
 * '''Vectorwing''', for inspiring many textures.
 * '''Rhythmic''' (PurpurMC), for the framework for looting shears.
+* '''alexin1337''', whose resource pack ''No XP Numbers'' gave the framework for the shader that hides the experience level number, added by HapppySpud in 1.12.7-beta (credited since 1.12.8-beta).
 
 == References ==
 {{reflist}}

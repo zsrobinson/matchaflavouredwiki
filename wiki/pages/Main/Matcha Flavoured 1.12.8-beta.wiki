@@ -45,7 +45,21 @@ The release notes open with an apology for putting out 1.12.7-beta only three da
 === Trades ===
 * The [[Wandering Trader|wandering trader]]'s five abandoned village maps are offered again, and each can be bought 999 times. The Swamp Hut Map trade is still never offered (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/village_desert.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Some Maps were broken (esp Wandering Trader) they're fixed now}}</ref>
 
-<!--ITEMS-->
+=== Fishing ===
+{{Main|Fishing}}
+* The fishing table's weight of 85 is on each biome table instead of on the entry that holds them, so catches are again 85% fish, 10% [[Fishing junk|junk]] and 5% [[Fishing treasure|treasure]]; in 1.12.7-beta only 1 catch in 16 was a fish.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Fishing doesn't suck anymore (hopefully)}}</ref>
+* Guardians have a 2 in 3 chance of dropping a roll of the fishing table instead of plain cod.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/guardian.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Guardians now drop matcha fish}}</ref>
+
+=== Items and mechanics ===
+* Chickens lay a feather with every egg.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/chicken_lay.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Chickens now lay feathers again}}</ref> See [[Egg]].
+* [[Adamant equipment|Adamant]] tools smelt diamond ore into diamonds.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/diamond_ore.json}}</ref> See [[Diamond Ore]].
+* The pack's repair-cost reset only rewrites items whose repair cost isn't already 0. Rewriting every item emptied backpacks from mods such as Traveler's Backpacks.<ref>{{Source|MF_datapack/data/endless_repairs/function/reset_breakable_repair_cost.mcfunction}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Traveler’s Backpacks (and other backpack mods) now do not delete its contents in Matcha}}</ref> See [[Repairing]].
+* The text shader that hides the experience level only hides interface text in the bottom quarter of the screen, so signs and books are no longer blank.<ref>{{Source|MF_resourcepack/assets/minecraft/shaders/core/text.vsh}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Signs and Books no longer appear blank}}</ref> See [[Anvil]].
+* Fishermen no longer get a [[favorite food]].<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref>
+* The [[Updating items|item updater]] no longer turns plain bones, raw porkchops and brushes into the pack's custom items, updates the old bronze items to hepatizon, and restores the models of blessings, Beacon Kindling, the Bedrock Buster and the Overgrown Abbey Map.<ref>{{Source|MF_datapack/data/matcha/function/update_old_items/update_held_item.mcfunction}}</ref><ref>{{Source|item_updater_db.json}}</ref>
+
+== Credits ==
+The release notes credit HapppySpud with the Hard-difficulty check (with the developer) and the sign and book fix, Madelinebug with the Abbey's crystal hearts and fishing, ReinIsNOTaDev with the backpack fix, and Internet-Hyena with the steel lanterns, which are not in the pack's files: the lantern recipe still uses iron nuggets.<ref>{{Cite changelog|1.12.8-beta}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/lantern.json}}</ref> The datapack's credits file is now <code>CREDITS.md</code>, with new contributors. See [[Credits]].<ref>{{Source|MF_datapack/CREDITS.md}}</ref>
 
 == References ==
 {{reflist}}

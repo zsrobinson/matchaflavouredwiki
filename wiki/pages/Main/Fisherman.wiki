@@ -36,6 +36,9 @@ The developer tied fish to levels to keep rarer fish from being "spoiled" in the
 === Angler's Almanac ===
 At Novice level the fisherman sells the [[Angler's Almanac]] for 1 obol.
 
+=== Favorite food ===
+Since {{Version|1.12.8-beta}} fishermen no longer get a [[favorite food]] trade.<ref>{{Source|MF_datapack/data/matcha/function/favorite_food/trader_update_init.mcfunction}}</ref>
+
 == Advancements ==
 * '''Fishmonger''': sell caught fish to a Fisherman. Rewards 1 obol.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/trade_fish.json}}</ref>
 
@@ -46,6 +49,7 @@ At Novice level the fisherman sells the [[Angler's Almanac]] for 1 obol.
 The fisherman buys the [[Opah]].}}
 {{History line|1.12.1-alpha|Sells the [[Angler's Almanac]].
 Fish caught in earlier versions can no longer be sold.}}
+{{History line|1.12.8-beta|date=October 23, 2026|No longer gets a favorite food trade.}}
 }}
 
 == See also ==
