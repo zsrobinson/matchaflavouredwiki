@@ -30,7 +30,7 @@ A wandering trader rolls three sets of trades when it spawns:<ref>{{Source|MF_da
 * 4 Asylum Seeker applications;
 * 6 of the 21 music disc trades;
 * 3 of the 6 map trades.
-Wandering trader trades give no villager XP.
+Wandering traders have no levels, so their trades give no villager XP.
 
 === Asylum Seekers ===
 {| class="wikitable"
@@ -91,7 +91,7 @@ The trades check only the disc's item type. The pack's own [[Music Disc|music di
 
 === Maps ===
 {{Main|Explorer maps}}
-Each map costs 1 obol and can be bought once.<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/village_plains.json}}</ref>
+Each map costs 1 obol and can be bought 999 times. The village maps are ''Minecraft'' 26.3's village map items under the pack's names.<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/village_plains.json}}</ref>
 {| class="wikitable"
 ! Map !! Leads to
 |-
@@ -105,9 +105,9 @@ Each map costs 1 obol and can be bought once.<ref>{{Source|MF_datapack/data/matc
 |-
 | {{ItemLink|Abandoned Taiga Village Map|link=Explorer maps}} || Taiga village
 |-
-| {{ItemLink|Witch Hut Map|link=Explorer maps}} || Swamp hut
+| {{ItemLink|Swamp Hut Map|link=Explorer maps}} || Swamp hut
 |}
-A map trade is dropped if no such structure lies within 100 chunks.
+A map trade is dropped if no such structure lies within 100 chunks. The Swamp Hut Map trade is always dropped: it is still built on an empty map, which ''Minecraft'' 26.3 no longer turns into a filled map, so it fails the trade's check for a filled map (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/witch_hut.json}}</ref>
 
 == Advancements ==
 * '''Bonfire Lit''': use a Beacon Kindling to signal a Wandering Trader. Rewards 1 obol.
@@ -124,6 +124,7 @@ Buys up to 6 discs and sells up to 4 Asylum Seekers.}}
 {{History line|1.12.1-alpha|Asylum Seeker applications are randomized.}}
 {{History line|1.12.3|When a [[Beacon Kindling]] summon is cancelled because no beacon is left and no player is still waiting, the players tagged as summoners now get the "lost sight of your beacon" message.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wandering_trader/no_beacons_reset.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref>}}
 {{History line|1.12.7-beta|Traders called with a [[Beacon Kindling]] are no longer lost when the data pack reloads, a player leaves the world or the beacon goes out of range. A summoned trader counts down its own 5 minutes instead of leaving with the beacon's timer.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/beacon_kindling/10s_loop.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/setup/scoreboard/create_scoreboards.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref><ref>{{Cite changelog|1.12.7-beta|quote=Beacon Kindling no longer breaks when reloading/relogging or going out of range}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|The five village maps are offered again, and each can be bought 999 times instead of once. They had been built on an empty map, which ''Minecraft'' 26.3 no longer turns into a filled map, so the trades were thrown away; the Swamp Hut Map trade still is. The Witch Hut Map is renamed Swamp Hut Map.<ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/village_desert.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/wandering_trader/witch_hut.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Some Maps were broken (esp Wandering Trader) they're fixed now}}</ref>}}
 }}
 
 == Trivia ==

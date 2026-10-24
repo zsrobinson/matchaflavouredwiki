@@ -1,0 +1,28 @@
+{{Vanilla|Redstone Ore}}
+{{Infobox auto}}
+A '''fossil''' is an [[Ores|ore]] that drops {{MCW|Bone|bones}}. It is the vanilla {{MCW|Redstone Ore|redstone ore}}, renamed and given new drops and generation in {{Version|1.12.8-beta}}; before that, the same block was the '''sulfurous quartz deposit''', which dropped [[Sulfur Chunk|sulfur]] and [[quartz]]. Fossils give a source of bones that doesn't depend on killing skeletons, which the release notes sum up as "Peaceful bones".<ref>{{Cite changelog|1.12.8-beta|quote=Fossil "Ore" can now be found (Peaceful bones!)}}</ref> The deepslate variant of the same ore is still the [[Sulfur Deposit|sulfur deposit]].
+
+== Obtaining ==
+=== Natural generation ===
+Fossils generate in every Overworld biome in veins of up to 8 blocks, 4 attempts per chunk, between y=16 and y=56, most often around y=36.<ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/ore_redstone.json}}</ref> This replaces the vanilla redstone placement (4 attempts per chunk spread evenly from the world bottom to y=15). The vein uses the vanilla redstone ore feature, which places fossils in stone, granite, diorite, andesite and tuff, and a [[Sulfur Deposit|sulfur deposit]] wherever it meets deepslate. The vanilla lower redstone veins, deep in the deepslate layer, are unchanged and only place sulfur deposits.
+
+=== Breaking ===
+Mined with a [[Copper Pickaxe|copper pickaxe]] or better (a [[Wooden Pickaxe|wooden pickaxe]] or [[Copper Dolabra|copper dolabra]] gets nothing; see [[Tools#Mining levels]]), it drops 2–5 bones. Fortune and [[Electrum equipment|electrum]] tools each add to the count with the usual ore bonus. Silk Touch drops the block itself.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/redstone_ore.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/block/non_mineable/wood.json}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_dolabra.json}}</ref>
+
+== Usage ==
+Bones from fossils are ordinary bones, used for bone meal and anything else that takes a bone.
+
+== History ==
+{{History|
+{{History line|0.4-alpha|As the sulfurous quartz deposit, now drops both sulfur and quartz,<ref>{{Cite changelog|0.4-alpha|quote=Fixed Sulfurous Quartz so that it drops both sulfur and quartz.}}</ref> and its texture matches the vanilla sulfur blocks.<ref>{{Cite changelog|0.4-alpha|quote=Sulfur ores changed to match vanilla sulfur blocks (including Sulfurous Hellstone)}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|Renamed from sulfurous quartz deposit to fossil, with a new texture of bones in stone. Drops 2–5 bones instead of 1 sulfur chunk and 2–3 quartz. Generates between y=16 and y=56 instead of as vanilla redstone ore.<ref>{{Source|MF_resourcepack/assets/minecraft/textures/block/redstone_ore.png}}</ref>}}
+}}
+
+== Trivia ==
+* The release notes add: "Yes I know fossils are actually mineralised bones and aren't really bones don't @ me".<ref>{{Cite changelog|1.12.8-beta|quote=Yes I know fossils are actually mineralised bones and aren't really bones don't @ me}}</ref>
+
+== References ==
+{{reflist}}
+
+{{Navbox equipment}}
+[[Category:Ores]]

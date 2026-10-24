@@ -1,21 +1,22 @@
 {{Infobox auto|title=Elegy of Hyacinthus|type=[[Blessing]]}}
-The '''Elegy of Hyacinthus''' is a [[blessing]], a crafted enchanted book that gives [[Zephyr]] I. It is crafted from four wind charges, three feathers and a [[Hyacinth]].
+The '''Elegy of Hyacinthus''' is a [[blessing]], a crafted enchanted book that gives [[Zephyr]] I and {{MCW|Wind Burst}} I. It is crafted from four wind charges, three feathers and a [[Hyacinth]].
 
 == Obtaining ==
 === Crafting ===
 {{Recipes}}
-The book in the center must be a [[Hell-Bound Book]].<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/zephyr.json}}</ref> The crafted item is named "Blessing", with "Elegy of Hyacinthus" as a dark gray lore line.
+The book in the center must be a [[Hell-Bound Book]].<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref> The crafted item is named "Blessing", with "Elegy of Hyacinthus" as a dark gray lore line.
 
 == Usage ==
-The Elegy of Hyacinthus is applied to equipment in an [[anvil]], like an {{MCW|Enchanted Book|enchanted book}}. Zephyr applies to boots. At level I, sneaking gives Jump Boost VII. Levels II and III, which add Slow Falling and a charged updraft, are not given by any recipe, trade or loot.
+The Elegy of Hyacinthus is applied to equipment in an [[anvil]], like an {{MCW|Enchanted Book|enchanted book}}. Zephyr applies only to leather boots (vanilla {{MCW|Leather Boots|leather boots}}, so also [[Leather Boots]] and [[Sturdy Leather Boots]]), while Wind Burst applies only to {{MCW|Mace|maces}}, so no single item can use both enchantments from one book: applying it to leather boots gives Zephyr, applying it to a mace gives Wind Burst.<ref>{{Source|MF_datapack/data/matcha/enchantment/zephyr.json}}</ref> At level I, Zephyr makes sneaking give Jump Boost VII. Levels II and III, which add Slow Falling and a charged updraft, are not given by any recipe, trade or loot.
 
-The book stores Zephyr I directly, so two elegies can be combined in an [[anvil]] into a Zephyr II book, and two boots with the same level of Zephyr can also be combined.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/zephyr.json}}</ref>
+The book stores Zephyr I directly, so two elegies can be combined in an [[anvil]] into a Zephyr II book, and two boots with the same level of Zephyr can also be combined.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref>
 
 == History ==
 {{History|
 {{History line|0.5-alpha|Texture added.<ref>{{Cite changelog|0.5-alpha|quote=All blessing textures}}</ref>}}
 {{History line|1.12.2|[[Zephyr]] reworked into three levels; the elegy gives level I, the sneak jump.<ref>{{Cite changelog|1.12.2|quote=Zephyr enchantment reworked so that its 3 levels}}</ref> Zephyr moved to the <code>matcha</code> namespace, but the elegy still gave the old <code>main:zephyr</code>, which turns into Zephyr when the boots are worn.}}
-{{History line|1.12.3|The elegy stores <code>matcha:zephyr</code> directly, so two elegies can be combined into a Zephyr II book.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/zephyr.json}}</ref>}}
+{{History line|1.12.3|The elegy stores <code>matcha:zephyr</code> directly, so two elegies can be combined into a Zephyr II book.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|The elegy also gives Wind Burst I, which the [[Prayer of Aeolus]] no longer gives. Zephyr can only be applied to leather boots.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Zephyr is now only Supported on Leather Boots}}</ref>}}
 }}
 
 == Trivia ==

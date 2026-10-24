@@ -7,10 +7,10 @@ The echo eel can be caught in this table.<ref>{{Source|MF_datapack/data/minecraf
 {| class="wikitable"
 ! Climate !! Biomes !! Weight !! Per catch (open water) !! Per catch (other water) !! Per catch ({{MCW|Luck of the Sea}} III)
 |-
-| [[Fishing#Special biomes|Deep Dark]] || Deep Dark || 7 of 28 || 1.56% || 2.27% || 1.56%
+| [[Fishing#Special biomes|Deep Dark]] || Deep Dark || 7 of 28 || 21.25% || 22.37% || 21.13%
 |}
 
-Since {{Version|1.12.7-beta}} the biome tables sit inside one <code>alternatives</code> entry that has no weight of its own, so the Deep Dark table is picked for only 1 catch in 16 in open water (see [[Fishing#Choosing the catch]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
+In {{Version|1.12.7-beta}} the biome tables had no weight of their own, so the Deep Dark table was picked for only 1 catch in 16 in open water (1.56% for an echo eel); {{Version|1.12.8-beta}} restored its weight of 85 (see [[Fishing#Choosing the catch]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
 
 The same tables are also rolled by the {{MCW|Elder Guardian|elder guardian}}'s drops, using the biome where the elder guardian dies.
 
@@ -47,7 +47,8 @@ The [[Angler's Almanac]] has an entry for the echo eel under Deep Dark (listed c
 {{History line|1.10|Buffed, since lakes don't generate in its biome.}}
 {{History line|1.12.1-alpha|Added an Angler's Almanac entry and a catch sound.
 The item format changed; fish caught before this version can no longer be sold.}}
-{{History line|1.12.7-beta|The Deep Dark no longer adds a second junk entry, but the reworked fishing table makes every biome's fish much rarer (see [[Fishing#History]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>}}
+{{History line|1.12.7-beta|The Deep Dark no longer adds a second junk entry, but the reworked fishing table makes every biome's fish much rarer (see [[Fishing#History]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|at=34a04e6571d9ee6f0cc1d8d50cdfa85980720156}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|The Deep Dark table weighs 85 again, so an echo eel is 21.25% of open-water catches there instead of 1.56%.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>}}
 }}
 
 == Trivia ==

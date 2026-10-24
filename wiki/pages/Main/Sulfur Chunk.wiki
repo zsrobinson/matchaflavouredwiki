@@ -4,7 +4,7 @@ A '''sulfur chunk''' is a yellow mineral used for explosives, fire and alchemy. 
 
 == Obtaining ==
 === Mining ===
-Sulfur chunks drop from the pack's sulfur ores: [[Sulfur Deposit|sulfur deposits]] and [[Sulfurous Hellstone|sulfurous hellstone]] (1–2 each), and [[Sulfurous Quartz Deposit|sulfurous quartz deposits]], which also drop [[quartz]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_redstone_ore.json}}</ref> See [[Ores]].
+Sulfur chunks drop from the pack's sulfur ores: [[Sulfur Deposit|sulfur deposits]] and [[Sulfurous Hellstone|sulfurous hellstone]], 1–2 each.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/deepslate_redstone_ore.json}}</ref> Until {{Version|1.12.8-beta}} the sulfurous quartz deposit (vanilla redstone ore) also dropped 1 sulfur chunk along with [[quartz]]; that block is now the [[fossil]], which drops bones. See [[Ores]].
 
 === Crafting ===
 {{Recipes}}
@@ -33,6 +33,7 @@ Picking up a sulfur chunk unlocks the TNT, fire charge, green dye, sulfur and po
 {{History
 |{{History line|0.4-alpha|Sulfur was renamed sulfur chunk, with a slightly changed texture.<br />Sulfur chunks work with the new vanilla sulfur blocks.<br />Sulfurous quartz deposits drop both sulfur and quartz.}}
 {{History line|1.12.1-alpha|The witch loot table no longer drops sulfur chunks.}}
+{{History line|1.12.8-beta|date=October 23, 2026|Redstone ore, the sulfurous quartz deposit, became the [[fossil]] and no longer drops sulfur chunks. [[Sulfur Deposit|Sulfur deposits]] became rarer.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/redstone_ore.json}}</ref>}}
 }}
 
 == References ==

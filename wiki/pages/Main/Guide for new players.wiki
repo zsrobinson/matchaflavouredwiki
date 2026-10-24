@@ -3,7 +3,7 @@ This '''guide for new players''' explains how to begin a world in [[Matcha Flavo
 
 == Before starting ==
 * Install the pack as both a datapack and a resource pack. On loading, chat shows "Matcha Flavoured is now loaded". See [[Installation]].
-* Choose the [[difficulty]] with care. On Easy, maximum health never falls below 10 hearts and the [[Wither effect]] takes no hearts. On Normal, each death costs one heart, down to a minimum that drops as the player progresses, and the world switches to Hard once any player's minimum hearts reaches 5. Hard is, in the developer's words, "meant to be unfair".<ref>{{Cite changelog|1.12.2|quote=Dont play on Hard! Hard is meant to be unfair.}}</ref> The pack only reads the difficulty when the world loads, so a change takes effect after a reload.
+* Choose the [[difficulty]] with care. On Easy, maximum health never falls below 10 hearts and the [[Wither effect]] takes no hearts. On Normal, each death costs one heart, down to a minimum that drops as the player progresses, and the world switches to Hard once any player's minimum hearts reaches 5. Hard is, in the developer's words, "meant to be unfair".<ref>{{Cite changelog|1.12.2|quote=Dont play on Hard! Hard is meant to be unfair.}}</ref> A new world can't start on Hard: the pack puts it on Normal when the first player joins (except in Hardcore).<ref>{{Source|MF_datapack/data/matcha/function/setup/disallow_hard_on_first_load.mcfunction}}</ref> The pack only reads the difficulty when the world loads, so a change takes effect after a reload.
 * Differences that matter immediately: there is no [[hunger]] bar and no [[Natural regeneration|natural regeneration]], so the player heals mainly by eating (except while a [[husk]]'s Hunger effect lasts, which stops healing on Normal and Hard); the inventory is kept on [[death]], but maximum health drops by a heart (two on Hard); [[zombie]]s are fast; [[Day and night|days and nights]] last three times as long; unlit places are pitch black ([[Darkness|true darkness]]); and there are no stone tools.
 
 == Step by step ==
@@ -50,7 +50,7 @@ The first time each player kills the [[Ender Dragon]], an [[amalgamated pith]] a
 * [[Raw Estus|Raw Estus]], dropped by zombies, husks, drowned and zombie villagers, heals the player the moment it is picked up.
 * [[Obol]]s are rare. Most villagers do not buy anything, but the [[fisherman]] buys caught [[fish]]. Villagers are not found in villages, which are [[Abandoned village|abandoned]]; they come from [[Asylum Seeker|asylum seeker]] applications sold by the [[Wandering Trader|wandering trader]].
 * Carry food suited to the trip: the developer suggests melons for [[Hell]], glow berries or carrots for caves, and chorus fruit for [[the End]].<ref>{{Cite video|quote=If they're planning a trip to hell, they'll want to find some melons first.}}</ref>
-* Cold water in snowy biomes is [[Freezing water|freezing]]: keep the head above it.
+* Cold water in snowy biomes is [[Freezing water|freezing]]: stay out of it, or cross it by boat.
 * There is no rush to reach the End. After the dragon is killed, the surface becomes safe from hostile mobs.
 
 == References ==

@@ -9,6 +9,9 @@ As vanilla nether quartz ore in [[Hell]].
 === Breaking ===
 Mined with a pickaxe (see [[Tools#Mining levels]]), it drops 1–2 [[Sulfur Chunk|sulfur chunks]]. Silk Touch drops the block.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/nether_quartz_ore.json}}</ref>
 
+== Behavior ==
+A player standing on sulfurous hellstone gives off puffs of noxious gas particles. Since {{Version|1.12.8-beta}} the [[Sulfur Deposit|sulfur deposit]] does the same.<ref>{{Source|MF_datapack/data/matcha/advancement/particle/on_sulfur.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/block/emits_sulfur_particles.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/particle/sulfurous_hellstone.mcfunction}}</ref>
+
 == History ==
 {{History|
 {{History line|0.4-alpha|Emits particles when stepped on; texture matched to vanilla sulfur blocks.}}

@@ -24,6 +24,7 @@ Endermen can only pick up {{MCW|Melon|melons}}, {{MCW|Pumpkin|pumpkins}} and [[T
 == History ==
 {{History|
 {{History line|1.12.2|Endermen can only pick up melons, pumpkins and TNT.}}
+{{History line|1.12.8-beta|date=October 23, 2026|Endermen spawn in the End again. Before, the End biome files kept their spawn list under a key the game does not read, so the End had no natural enderman spawns.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/the_end.json}}</ref>}}
 }}
 
 == Trivia ==

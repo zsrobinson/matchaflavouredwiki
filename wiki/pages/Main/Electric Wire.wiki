@@ -7,7 +7,7 @@
 {{Recipes}}
 Two copper ingots, one above the other, make 8 electric wire.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/copper_wire.json}}</ref> The recipe unlocks when the player picks up a copper ingot.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/copper_ingot.json}}</ref>
 
-Electric wire cannot be mined. Vanilla redstone ore is renamed [[Sulfurous Quartz Deposit|sulfurous quartz deposit]] and deepslate redstone ore [[Sulfur Deposit|sulfur deposit]], which drop [[Sulfur Chunk|sulfur chunks]] (and, from the former, [[quartz]]) instead. The vanilla recipes that smelt redstone ore and that break a block of redstone back into dust are removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
+Electric wire cannot be mined. Vanilla redstone ore is renamed [[fossil]], which drops bones, and deepslate redstone ore [[Sulfur Deposit|sulfur deposit]], which drops [[Sulfur Chunk|sulfur chunks]]. The vanilla recipes that smelt redstone ore and that break a block of redstone back into dust are removed.<ref>{{Source|MF_datapack/pack.mcmeta}}</ref>
 
 == Usage ==
 {{Uses}}

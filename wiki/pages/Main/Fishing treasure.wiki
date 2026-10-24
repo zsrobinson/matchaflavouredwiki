@@ -1,4 +1,4 @@
-'''Fishing treasure''' is the most valuable category of [[fishing]] loot. It can only be caught when the bobber is in open water. Its weight is 5 with quality +2. Since {{Version|1.12.7-beta}} the fish entries weigh only 1, so the chance per catch in open water is 31.25% with no luck and 68.75% with {{MCW|Luck of the Sea}} III, in any biome (see [[Fishing#Choosing the catch]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
+'''Fishing treasure''' is the most valuable category of [[fishing]] loot. It can only be caught when the bobber is in open water. Its weight is 5 with quality +2. The chance per catch in open water is 5% with no luck and 11.34% with {{MCW|Luck of the Sea}} III, in any biome (see [[Fishing#Choosing the catch]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
 
 == Loot ==
 Several entries have a quality, so Luck of the Sea shifts the odds toward chests and [[Crystal Heart]]s.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/treasure.json}}</ref>
@@ -33,7 +33,8 @@ The developer made treasure rarer in 1.10 so that players who don't enjoy fishin
 {{History line|1.10|Chests and Crystal Hearts made rarer, enchanted fishing rods more common. Buried treasure nerfed.}}
 {{History line|1.12|Buried treasure buffed slightly.}}
 {{History line|1.12.1-alpha|Treasure tweaked. Sacred texts made rarer in the buried treasure. The release notes also say nautilus shells were added to it, but the current fishing chest has none.}}
-{{History line|1.12.7-beta|Treasure went from 5% to 31.25% of open-water catches in biomes with fish, because the reworked biome entry has a weight of 1.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>}}
+{{History line|1.12.7-beta|Treasure went from 5% to 31.25% of open-water catches in biomes with fish, because the reworked biome entry has a weight of 1.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|at=34a04e6571d9ee6f0cc1d8d50cdfa85980720156}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|Back to 5% of open-water catches, as the biome tables weigh 85 again.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>}}
 }}
 
 == References ==

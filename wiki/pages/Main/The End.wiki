@@ -14,6 +14,7 @@ In the developer's plans, reaching The End will require visiting the main overwo
 {{History
 |{{History line|0.5-alpha|Fixed a bug that caused a major performance crash in The End.}}
 {{History line|1.10|Withers can no longer be spawned in The End.}}
+{{History line|1.12.8-beta|date=October 23, 2026|Endermen spawn in the End again. Before, the End biome files kept their spawn list under a key the game does not read, so the End had no natural enderman spawns.<ref>{{Source|MF_datapack/data/minecraft/worldgen/biome/the_end.json}}</ref>}}
 }}
 
 == References ==

@@ -101,16 +101,15 @@ The chests contain:
 The hopper holds a [[music disc]] of '''Dry Hands''' by C418, locked by the redstone block beside it.
 
 === Behavior ===
-{{Diagram|Mannequin|width=360|align=right|caption=The haunted house seen from above, with the distances from the mannequin that start the music and make it vanish, drawn to scale.}}
-The scene is run by functions that check every tick:<ref name="eerie">{{Source|MF_datapack/data/matcha/function/environmental/village_eerie_sound.mcfunction}}</ref>
-* Entering any village structure grants the hidden advancement <code>matcha:mechanics/enter_village</code>, which sets the player's <code>eerie</code> score to 1. Leaving the village resets the score and the advancement.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/enter_village.json}}</ref>
-* While a player's <code>eerie</code> score is 1, all background [[music]] is stopped for that player.
-* The mannequin turns to face the nearest player.<ref>{{Source|MF_datapack/data/matcha/function/environmental/village_entity_movement.mcfunction}}</ref>
-* When a survival player in the village comes within 30 blocks of the mannequin, the redstone block is removed. The hopper unlocks and pushes Dry Hands into the jukebox, which starts playing. Two ticks later the hopper disappears. This happens only once per mannequin.<ref>{{Source|MF_datapack/data/matcha/function/environmental/play_village_jukebox.mcfunction}}</ref>
-* The mannequin vanishes (it is teleported 1000 blocks down) when a survival player comes within 5 blocks of it or within 2 blocks of a marker entity near the jukebox (it stands at the redstone block, about 2 blocks from the jukebox),<ref name="eerie" /> or opens an oak door while within 11 blocks of it.<ref>{{Source|MF_datapack/data/matcha/function/environmental/check_if_entity_should_die.mcfunction}}</ref>
+{{Diagram|Mannequin|width=360|align=right|caption=The haunted house seen from above, drawn to scale and centred on the jukebox marker: the distance from the marker that starts the music, and the distances from the mannequin that make it vanish.}}
+The scene runs every tick for each player who is inside any village structure (the <code>#minecraft:village</code> structure tag); outside a village, nothing in the house happens.<ref name="tick">{{Source|MF_datapack/data/matcha/function/timers/tick.mcfunction}}</ref><ref name="vtick">{{Source|MF_datapack/data/matcha/function/environmental/village/tick.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/in_village.json}}</ref>
+* All background [[music]] is stopped for a player inside a village, whatever their game mode.<ref name="vtick" />
+* The nearest haunted mannequin turns to face the nearest player.<ref name="entity">{{Source|MF_datapack/data/matcha/function/environmental/village/entity.mcfunction}}</ref>
+* A marker entity tagged <code>jukebox</code> stands at the redstone block, about 2 blocks from the jukebox. When a survival player comes within 30 blocks of this marker, the redstone block is removed. The hopper unlocks and pushes Dry Hands into the jukebox, which starts playing. The marker then counts down a <code>Lifetime</code> score of 2 and, a few ticks later, removes the hopper and itself, so the music plays only once per house.<ref>{{Source|MF_datapack/data/matcha/function/environmental/village/jukebox.mcfunction}}</ref>
+* The mannequin vanishes (it is teleported 1000 blocks down) when a survival player comes within 5 blocks of it or within 2 blocks of the jukebox marker,<ref name="entity" /> or opens an oak door while within 11 blocks of it. The oak door check uses the hidden advancement <code>matcha:mechanics/opened_oak_door</code>, which works in any village or outside one.<ref>{{Source|MF_datapack/data/matcha/function/environmental/village/check_if_entity_should_die.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/opened_oak_door.json}}</ref>
 
 === Eerie sounds ===
-Players in a village also hear sounds that seem to come from nowhere. A 150-second stopwatch restarts continuously; shortly after each restart, and again 100 seconds in, a player hears a sound that depends on the block they are standing on:<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref>
+Players in a village also hear sounds that seem to come from nowhere. A 150-second stopwatch restarts continuously; shortly after each restart, and again 100 seconds in, a player hears a sound that depends on the block they are standing on:<ref>{{Source|MF_datapack/data/matcha/function/stopwatches.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/environmental/village/eerie_sound.mcfunction}}</ref>
 {| class="wikitable"
 ! Standing on !! Sounds
 |-
@@ -132,6 +131,7 @@ Because the stopwatch only matches for a fraction of a second, whether a player 
 * Added the Dry Hands music disc.
 * Added "a new secret recipe found in a chest somewhere".}}
 {{History line|1.10|date=August 10, 2026|Removed the old village predicates (<code>in_village_on_oak_*</code>).}}
+{{History line|1.12.8-beta|date=October 23, 2026|Changed what triggers the [[#The inhabited house|inhabited house]]'s secret: its scripts now run only while a player is inside a village, and one distance is now measured from a different point. Removed the hidden advancement <code>matcha:mechanics/enter_village</code> and the <code>eerie</code> score.}}
 }}
 
 == Trivia ==

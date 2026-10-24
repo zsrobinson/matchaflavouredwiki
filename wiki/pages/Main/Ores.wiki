@@ -1,4 +1,4 @@
-'''Ores''' in Matcha Flavoured are mostly renamed vanilla ores, some with new drops or generation. Emerald ore becomes [[Native Silver|native silver]], lapis ore splits into [[Quartz Deposit|quartz deposits]] and [[Natural Lapis Lazuli|natural lapis lazuli]], and redstone ore becomes [[Sulfurous Quartz Deposit|sulfurous quartz deposit]]. Adamant tools smelt the drops of several ores (see the table); electrum tools add Fortune.
+'''Ores''' in Matcha Flavoured are mostly renamed vanilla ores, some with new drops or generation. Emerald ore becomes [[Native Silver|native silver]], lapis ore splits into [[Quartz Deposit|quartz deposits]] and [[Natural Lapis Lazuli|natural lapis lazuli]], and redstone ore becomes the [[fossil]], a source of bones, while its deepslate variant is the [[Sulfur Deposit|sulfur deposit]]. Adamant tools smelt the drops of several ores (see the table); electrum tools add Fortune.
 
 {{Diagram|Ore heights|caption=Where each ore generates by Y level: grey is as in vanilla, teal is changed or added by the pack, and dashed shapes are extra veins in the biomes named.}}
 
@@ -19,18 +19,23 @@
 |-
 | {{BlockLink|Natural Lapis Lazuli}} || Deepslate Lapis Lazuli Ore || 4–9 lapis lazuli (vanilla table) || The deepslate part of the [[Quartz Deposit|quartz deposit]] feature, plus the vanilla buried lapis veins.
 |-
-| {{BlockLink|Sulfurous Quartz Deposit}} || Redstone Ore || 1 [[Sulfur Chunk|sulfur chunk]] and 2–3 quartz || As vanilla redstone ore; the deepslate variant is the [[Sulfur Deposit|sulfur deposit]].
+| {{BlockLink|Fossil}} || Redstone Ore || 2–5 {{MCW|Bone|bones}}, affected by Fortune and electrum || The upper vanilla redstone veins, moved to between y=16 and y=56 (vanilla: the world bottom to y=15), 4 attempts per chunk, most common around y=36.<ref>{{Source|MF_datapack/data/minecraft/worldgen/placed_feature/ore_redstone.json}}</ref> Where a vein meets deepslate it places a [[Sulfur Deposit|sulfur deposit]].
 |-
-| {{BlockLink|Sulfur Deposit}} || Deepslate Redstone Ore || 1–2 [[Sulfur Chunk|sulfur chunks]] || The deepslate part of the vanilla redstone feature.
+| {{BlockLink|Sulfur Deposit}} || Deepslate Redstone Ore || 1–2 [[Sulfur Chunk|sulfur chunks]] || The vanilla lower redstone veins, from the world bottom to y=−32, and any deepslate the [[fossil]] veins reach. Emits sulfur particles when stepped on.
 |-
 | {{BlockLink|Diamond Ore}} || Diamond Ore || [[Raw Diamond|raw diamond]], affected by Fortune and electrum; adamant tools do not smelt it || As vanilla.
 |-
 | {{BlockLink|Gilded Hellstone}} || Nether Gold Ore || 2–6 gold nuggets; adamant tools drop a gold ingot. Can be blasted into a gold ingot || As vanilla nether gold ore in [[Hell]].
 |-
-| {{BlockLink|Sulfurous Hellstone}} || Nether Quartz Ore || 1–2 [[Sulfur Chunk|sulfur chunks]] || As vanilla nether quartz ore in [[Hell]].
+| {{BlockLink|Sulfurous Hellstone}} || Nether Quartz Ore || 1–2 [[Sulfur Chunk|sulfur chunks]] || As vanilla nether quartz ore in [[Hell]]. Emits sulfur particles when stepped on.
 |}
 
 Worldgen changes are in the biome overrides and <code>worldgen/placed_feature</code>; biome details are on [[Biomes]].
+
+== History ==
+{{History|
+{{History line|1.12.8-beta|date=October 23, 2026|Redstone ore, until then the sulfurous quartz deposit that dropped sulfur and quartz, became the [[fossil]], which drops bones and generates higher up. Sulfur deposits got new textures, and they and sulfurous hellstone emit sulfur particles when stepped on.<ref>{{Cite changelog|1.12.8-beta|quote=Fossil "Ore" can now be found (Peaceful bones!)}}</ref>}}
+}}
 
 == References ==
 {{reflist}}

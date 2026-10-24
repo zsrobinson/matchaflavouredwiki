@@ -12,7 +12,7 @@ A '''blessing''' is an enchanted book crafted from a [[Hell-Bound Book]] and a s
 
 == Obtaining ==
 === Crafting ===
-Every blessing is a shaped [[Crafting Table|crafting]] recipe with a Hell-Bound Book in the center slot. The surrounding slots (up to eight) hold ingredients tied to the enchantment and the figure it is named after. The recipes are in the pack's <code>recipe/blessing</code> folder.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/unbreaking.json}}</ref>
+Every blessing is a shaped [[Crafting Table|crafting]] recipe with a Hell-Bound Book in the center slot. The surrounding slots (up to eight) hold ingredients tied to the enchantment and the figure it is named after. The recipes are in the pack's <code>recipe/blessing</code> folder.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/prometheus.json}}</ref>
 
 {{Data/Blessings}}
 
@@ -22,7 +22,7 @@ The Prayer of Daedalus and the Prayer of Lu Ban need an [[amalgamated pith]], an
 A blessing is combined with a piece of equipment in an [[anvil]], like any {{MCW|Enchanted Book|enchanted book}}. Blessings do not stack. Because the pack sets the anvil cost multiplier of every vanilla enchantment to 1 (and of most of its own to 0) and gives the player 10,000 experience levels when they use an anvil, applying a blessing is cheap; see [[Enchanting#Applying enchantments]].
 
 === Old enchantment ids ===
-All blessings store the pack's enchantments under their current <code>matcha</code> ids. Before 1.12.3, five blessings (the [[Prayer of Aeolus]], [[Prayer of Demeter]], [[Prayer of St. Clement]], [[Prayer of Will]] and [[Elegy of Hyacinthus]]) stored the ids from before the move to that namespace, which the pack converted when the item was worn or held. The pack keeps those old enchantments in a <code>main</code> namespace only to update items from earlier versions.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/reach.json}}</ref><ref>{{Source|MF_datapack/data/main/README.txt}}</ref>
+All blessings store the pack's enchantments under their current <code>matcha</code> ids. Before 1.12.3, five blessings (the [[Prayer of Aeolus]], [[Prayer of Demeter]], [[Prayer of St. Clement]], [[Prayer of Will]] and [[Elegy of Hyacinthus]]) stored the ids from before the move to that namespace, which the pack converted when the item was worn or held. The pack keeps those old enchantments in a <code>main</code> namespace only to update items from earlier versions.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/will.json}}</ref><ref>{{Source|MF_datapack/data/main/README.txt}}</ref>
 
 Blessings are not the Hell-Bound Book itself: the crafted book stores only the blessing's enchantments, not the Curse of Binding that a blank Hell-Bound Book carries.
 
@@ -39,7 +39,7 @@ The three elegies are named after tragic figures of Greek myth (Arachne, Hyacint
 |-
 | Apocrypha || Steal Prayers from a long-dead God || Craft any one of 17 blessings. The Prayers of Apollo, Ares, Artemis, Cronus, Glaucus and Talos do not count.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/craft_blessing.json}}</ref>
 |-
-| Demonic Emissary || Steal every prayer from every once-god || Craft a Hell-Bound Book and all 23 blessings. A challenge that rewards 10 [[Obol]]s.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json}}</ref>
+| Demonic Emissary || Steal every prayer from every once-god || Craft each of the same 17 blessings. Until 1.12.7-beta it needed all 23 blessings and a Hell-Bound Book. A challenge that rewards 10 [[Obol]]s.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json}}</ref>
 |}
 
 == History ==
@@ -51,6 +51,7 @@ The three elegies are named after tragic figures of Greek myth (Arachne, Hyacint
 {{History line|1.12.1-alpha|Added the Prayer of Midas. Fixed blessing recipe unlocks.}}
 {{History line|1.12.2|The pack's enchantments moved to the <code>matcha</code> namespace, but five blessings still gave the old <code>main:</code> enchantments, which are converted when the item is equipped.}}
 {{History line|1.12.3|All five blessings store the current enchantments directly, so they combine and apply like normal books.}}
+{{History line|1.12.8-beta|date=October 23, 2026|Wind Burst I moved from the [[Prayer of Aeolus]] to the [[Elegy of Hyacinthus]]. The recipe IDs are now named after each blessing's figure (<code>matcha:blessing/will</code> instead of <code>matcha:blessing/reach</code>, and so on); the recipes are otherwise unchanged.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref> "Demonic Emissary" needs only the 17 blessings that count for "Apocrypha", no longer the Prayers of Apollo, Ares, Artemis, Cronus, Glaucus and Talos or a Hell-Bound Book.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json}}</ref>}}
 }}
 
 == See also ==
