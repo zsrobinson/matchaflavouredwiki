@@ -101,7 +101,7 @@ The chests contain:
 The hopper holds a [[music disc]] of '''Dry Hands''' by C418, locked by the redstone block beside it.
 
 === Behavior ===
-{{Diagram|Mannequin|width=360|align=right|caption=The haunted house seen from above, drawn to scale and centred on the jukebox marker: the distance from the marker that starts the music, and the distances from the mannequin that make it vanish.}}
+{{Diagram|Mannequin|width=360|align=right|caption=The haunted house seen from above, drawn to scale and centred on the jukebox marker: the distance from the marker that starts the music, and the distances that make the mannequin vanish.}}
 The scene runs every tick for each player who is inside any village structure (the <code>#minecraft:village</code> structure tag); outside a village, nothing in the house happens.<ref name="tick">{{Source|MF_datapack/data/matcha/function/timers/tick.mcfunction}}</ref><ref name="vtick">{{Source|MF_datapack/data/matcha/function/environmental/village/tick.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/predicate/in_village.json}}</ref>
 * All background [[music]] is stopped for a player inside a village, whatever their game mode.<ref name="vtick" />
 * The nearest haunted mannequin turns to face the nearest player.<ref name="entity">{{Source|MF_datapack/data/matcha/function/environmental/village/entity.mcfunction}}</ref>

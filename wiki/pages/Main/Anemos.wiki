@@ -14,7 +14,7 @@
 Anemos has a maximum level of I and cannot appear on random enchanted books.
 
 == Usage ==
-Anemos can be applied to any sword (the <code>#minecraft:swords</code> tag) to sticks and, since 1.12.8-beta, to {{MCW|Mace|maces}}, through the pack's <code>#matcha:enchantable/anemos</code> tag. Its anvil cost multiplier is 0.<ref>{{Source|MF_datapack/data/matcha/tags/item/enchantable/anemos.json}}</ref>
+Anemos can be applied to any sword (the <code>#minecraft:swords</code> tag), to sticks and, since 1.12.8-beta, to {{MCW|Mace|maces}}, through the pack's <code>#matcha:enchantable/anemos</code> tag. Its anvil cost multiplier is 0.<ref>{{Source|MF_datapack/data/matcha/tags/item/enchantable/anemos.json}}</ref>
 
 == Behavior ==
 When the wielder hits a mob, the enchantment runs a function that summons a wind charge in front of the player's eyes (0.75 blocks ahead) and launches it in the direction the player is looking at 2.5 blocks per tick.<ref>{{Source|MF_datapack/data/matcha/function/enchantment_effects/anemos.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/backend/apply_motion.mcfunction}}</ref> The same function is also attached to the enchantment's <code>hit_block</code> effect.

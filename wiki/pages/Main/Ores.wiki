@@ -34,7 +34,7 @@ Worldgen changes are in the biome overrides and <code>worldgen/placed_feature</c
 
 == History ==
 {{History|
-{{History line|1.12.8-beta|date=October 23, 2026|Redstone ore, until then the sulfurous quartz deposit that dropped sulfur and quartz, became the [[fossil]], which drops bones and generates higher up. Sulfur deposits got new textures, and they and sulfurous hellstone emit sulfur particles when stepped on.<ref>{{Cite changelog|1.12.8-beta|quote=Fossil "Ore" can now be found (Peaceful bones!)}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|Redstone ore, until then the sulfurous quartz deposit that dropped sulfur and quartz, became the [[fossil]], which drops bones and generates higher up. Sulfur deposits got new textures, and they and sulfurous hellstone emit sulfur particles when stepped on. Adamant tools smelt diamond ore's drop into a [[diamond]].<ref>{{Cite changelog|1.12.8-beta|quote=Fossil "Ore" can now be found (Peaceful bones!)}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/diamond_ore.json}}</ref>}}
 }}
 
 == References ==

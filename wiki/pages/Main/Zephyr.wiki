@@ -38,7 +38,7 @@ Zephyr's anvil cost multiplier is 0.
 {{History line|1.12.2|Reworked into three levels.<ref>{{Cite changelog|1.12.2|quote=Zephyr enchantment reworked so that its 3 levels}}</ref> Moved from the <code>main</code> to the <code>matcha</code> namespace, although the Elegy of Hyacinthus still gave the old enchantment.}}
 {{History line|1.12.3|The Elegy of Hyacinthus stores Zephyr directly, so two elegies can be combined into a Zephyr II book.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref>}}
 {{History line|1.12.6-alpha|The level III updraft was reworked. The charge must now be built in one continuous sneak, and it is cancelled by releasing sneak on the ground or before it is full; before, sneak time added up across separate sneaks. The launch no longer requires Slow Falling to still be active, and a release without a full charge no longer plays the wind burst sound.<ref name="apply" />}}
-{{History line|1.12.8-beta|date=October 23, 2026|Can only be applied to leather boots. The Elegy of Hyacinthus also gives Wind Burst I.<ref>{{Cite changelog|1.12.8-beta|quote=Zephyr is now only Supported on Leather Boots}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|Can only be applied to leather boots. The Elegy of Hyacinthus also gives Wind Burst I.<ref>{{Source|MF_datapack/data/matcha/enchantment/zephyr.json}}</ref><ref>{{Cite changelog|1.12.8-beta|quote=Zephyr is now only Supported on Leather Boots}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref>}}
 }}
 
 == Trivia ==
