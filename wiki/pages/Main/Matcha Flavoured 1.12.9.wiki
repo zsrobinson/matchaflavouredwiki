@@ -15,6 +15,7 @@ The changes below are those since 1.12.8-beta.
 
 == Changes ==
 === Hero of the Village gifts ===
+{{Main|Hero of the Village}}
 * The pack has its own gift loot table for every villager profession, for baby villagers and for unemployed villagers, replacing all of the game's. Each profession gives things that suit the pack: for example, the [[Farmer|farmer]] gives seeds, crops, mushrooms and [[Fertilized Egg|fertilized eggs]], the fisherman fish, buckets of fish and fishing rods, the fletcher arrows including the pack's own, the mason [[bulk blocks]], the shepherd wool, the toolsmith plain [[Jewelry|earrings]], the weaponsmith copper tools and ingots, and the butcher the pack's cooked foods.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/farmer_gift.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/toolsmith_gift.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/butcher_gift.json}}</ref><ref>{{Cite changelog|1.12.9|quote=Villager Gifts updated}}</ref>
 * Pumpkin pie and the stone axe, hoe, pickaxe and shovel came only from the game's gift tables, which the pack had left in place; none of them can be crafted in the pack. With those tables replaced, they can no longer be obtained in survival. The toolsmith's stone tools had been on the pack's list of low-priority bugs (see [[Upcoming features]]).
 * The white fertilized egg in the farmer's gift has no name or model in the resource pack (see [[Known bugs]]).

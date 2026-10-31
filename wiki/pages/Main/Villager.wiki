@@ -60,6 +60,10 @@ An [[Amnestic]] used on a villager makes it forget its profession and return to 
 {{Main|Favorite food}}
 Every employed villager that has been traded with at least once is given one extra trade: it buys 1 of a randomly chosen [[food]] for 1 obol, once.
 
+=== Gifts ===
+{{Main|Hero of the Village}}
+Since {{Version|1.12.9}} villagers give the pack's own gifts to a player with the {{MCW|Hero of the Village}} effect: each profession throws items that fit its trades, such as seeds from farmers, dishes from cooks and earrings from jewelers.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/butcher_gift.json}}</ref>
+
 === Daily schedule ===
 The pack stretches the vanilla villager schedule over a 72,000-tick cycle, three times the length of the vanilla 24,000-tick day, to match its longer [[Day and night|days]]. Adult villagers wake at tick 30, work from tick 6,000, meet from tick 27,000, idle from tick 33,000 and sleep from tick 36,000; every keyframe is exactly three times its vanilla value.<ref>{{Source|MF_datapack/data/minecraft/timeline/villager_schedule.json}}</ref>
 {{Diagram|Villager schedule|caption=What adult and baby villagers do over one of the pack's days.}}
