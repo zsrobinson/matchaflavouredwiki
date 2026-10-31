@@ -13,7 +13,7 @@ Whenever a player's effects change to include Wither, the pack starts tracking t
 * If they no longer have the Wither effect, tracking stops and the timer is cleared.
 * On the first check, a timer is started. Its length depends on the player's [[#Shakudo wither resistance|shakudo wither resistance]].<ref name="settimer">{{Source|MF_datapack/data/matcha/function/effects/wither/set_timer.mcfunction}}</ref>
 * Each check takes one second off the timer, and a meter in the action bar empties with an experience pickup sound every second.
-* When the timer runs out, the Wither effect is removed, the player loses maximum health as if they had died, a quiet totem sound plays, and the player takes a tiny amount of damage (0.1) so the hit registers.<ref name="normal">{{Source|MF_datapack/data/matcha/function/effects/wither/effect_normal.mcfunction}}</ref><ref name="hard">{{Source|MF_datapack/data/matcha/function/effects/wither/effect_hard.mcfunction}}</ref><ref name="heartbreaker">{{Source|MF_datapack/data/matcha/function/effects/wither/heartbreaker.mcfunction}}</ref>
+* When the timer runs out, the Wither effect is removed, the player loses maximum health as if they had died, a quiet totem sound plays, and the player takes a tiny amount of damage (0.1) so the hit registers.<ref name="normal">{{Source|MF_datapack/data/matcha/function/effects/wither/effect_normal.mcfunction}}</ref><ref name="hard">{{Source|MF_datapack/data/matcha/function/effects/wither/effect_hard.mcfunction}}</ref><ref name="wither-end">{{Source|MF_datapack/data/matcha/function/effects/wither/heartbreaker.mcfunction}}</ref>
 
 The meter is shown with the pack's own glyphs: a broken-heart icon followed by a bar, which is longer on Normal than on Hard.
 

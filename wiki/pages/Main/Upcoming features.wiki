@@ -12,10 +12,10 @@ The developer plans a structure update that will move the [[Abbey]] and [[Papal 
 The 1.12.8-beta release notes, and the in-development changelog before them, list lanterns that can be crafted from [[Steel Alloy|steel]], by Internet-Hyena, but the lantern recipe in the pack is still the vanilla one, made from iron nuggets.<ref>{{Cite changelog|1.12.8-beta|quote=Lanterns can now be crafted from Steel}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/crafting/lantern.json}}</ref> Buckets made of copper instead of iron, listed in the in-development changelog before 1.12.8-beta, are no longer mentioned there.
 
 === Chicken overhaul ===
-The docket describes a chicken overhaul for the next update, "the update no one asked for": more kinds of "chicken", each spawning only at its own home; chickens no longer giving live birth; and four behaviours (such as the rascal, the curious and the home-builder), each with different drops. Its to-do list adds chickens that no longer spawn randomly on grass, home-builders that make a nest once and become a mother with three chicks, a way for the farmer to sell and "breed" cultivars, a farmer hat made from wheat, and a check against packing chickens too tightly. A separate "bird project" plans roosts for every bird and eggs as the only way to get chickens.<ref>{{Source|docket_and_checklist.md}}</ref> The groundwork for one such bird, the [[bobwhite]], is already in the pack; see also [[Livestock]].
+The docket describes a chicken overhaul for the next update, "the update no one asked for": more kinds of "chicken", each spawning only at its own home; chickens no longer giving live birth; and four behaviours (such as the rascal, the curious and the home-builder), each with different drops. Its to-do list adds chickens that no longer spawn randomly on grass, home-builders that make a nest once and become a mother with three chicks, a way for the farmer to sell and "breed" cultivars, a farmer hat made from wheat, and a check against packing chickens too tightly. A separate "bird project" plans roosts for every bird and eggs as the only way to get chickens.<ref>{{Source|docket_and_checklist.md|at=58e88dcec369fe3293fb25a15214249d116a100e}}</ref> The groundwork for one such bird, the [[bobwhite]], is already in the pack; see also [[Livestock]].
 
 === Other plans ===
-The docket lists these as planned for later updates:<ref>{{Source|docket_and_checklist.md}}</ref>
+The docket lists these as planned for later updates:<ref>{{Source|docket_and_checklist.md|at=58e88dcec369fe3293fb25a15214249d116a100e}}</ref>
 ; Aspects
 : Post-End enchanting that extracts an alloy's intrinsic as an "aspect", using a withered heart and dragon's breath. Planned pairings: bronze ([[Hepatizon equipment|hepatizon]]) gives Efficiency, [[Steel equipment|steel]] Unbreaking, [[Electrum equipment|electrum]] Fortune III, netherite ([[Adamant equipment|adamant]]) smelting, and [[Shakudo equipment|shakudo]] Silk Touch or life steal. An Unbreaking enchantment from the Wither's heart is also planned, and Protection may be replaced by more specific protections.
 ; Copper intrinsic
@@ -33,7 +33,7 @@ The docket lists these as planned for later updates:<ref>{{Source|docket_and_che
 
 == Stretch goals ==
 {{Planned|type=section}}
-The docket's back-burner list includes:<ref>{{Source|docket_and_checklist.md}}</ref>
+The docket's back-burner list includes:<ref>{{Source|docket_and_checklist.md|at=58e88dcec369fe3293fb25a15214249d116a100e}}</ref>
 * Foods: potatoes with molasses, French fries, jam bread, a secret meal using fermented spider eyes, and a bag of sugar.
 * Craftable Thorns.
 * More fishing junk from specific biomes (cinnabar, sulfur, dripstone, raw copper, raw gold, disc fragments), and more resin from pale garden fishing.
