@@ -17,10 +17,10 @@ The Wither is built as in vanilla. Shortly after it is summoned, the pack checks
 * it is below Y=63;
 * it is in [[Hell]] or the End.
 
-An invalid Wither is killed 1 second later, and every player sees "The Wither can only be summoned on the surface of the overworld". To stop the kill from rewarding an amalgamated pith, the next tick the pack deletes every dropped item stack of exactly one amalgamated pith, as long as some player is standing in a place where a Wither couldn't be summoned.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/forbid_wither.mcfunction}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/kill_star.mcfunction}}</ref> The soul sand and skulls used to build it are lost.
+About a second later, an invalid Wither that is still charging up after being summoned is teleported far below the world and killed, so its amalgamated pith falls into the void. Only a newly summoned Wither is checked, so one that flies somewhere invalid later is left alone. Players within 100 blocks see "The Wither can only be summoned on the surface of the overworld".<ref name="forbid">{{Source|MF_datapack/data/matcha/function/mechanics/wither/forbid_wither.mcfunction}}</ref> Red particles and the Wither's hurt sound mark the spot, and the three {{MCW|Wither Skeleton Skull|wither skeleton skulls}} used to build it drop there as a refund; the soul sand is lost.<ref name="kill">{{Source|MF_datapack/data/matcha/function/mechanics/wither/kill_wither.mcfunction}}</ref>
 
 == Drops ==
-The Wither drops one {{ItemLink|Amalgamated Pith}}, the vanilla nether star renamed. The Wither's drop can't be changed by a datapack, as the pack's code notes.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/wither/kill_star.mcfunction}}</ref> Amalgamated pith can be broken down into {{ItemLink|Pith}}.
+The Wither drops one {{ItemLink|Amalgamated Pith}}, the vanilla nether star renamed. Amalgamated pith can be broken down into {{ItemLink|Pith}}.
 
 == Behavior ==
 The Wither's attacks apply the Wither effect. Except on Easy, a player who stays withered for 9 seconds (6 on Hard, longer in [[Shakudo equipment|shakudo armor]]) loses 1 heart of maximum health (2 on Hard). See [[Wither effect]].
@@ -31,6 +31,7 @@ The Wither is undead and a target of [[warding]]. Warding equipment attacks copp
 {{History|
 {{History line|1.10|Withers can no longer be summoned in the End.}}
 {{History line|1.12.2|Withers can only be summoned on the surface of the Overworld. The Wither effect takes hearts. Warding prioritizes the Wither after copper-armored mobs.}}
+{{History line|1.12.9|date=October 31, 2026|An invalid Wither is now killed below the world, so its amalgamated pith is lost, and its three skulls are refunded. Before, the pack deleted dropped single amalgamated piths, but only while some player stood where a Wither couldn't be summoned. Only newly summoned Withers are checked, and only players within 100 blocks see the warning.}}
 }}
 
 == Trivia ==

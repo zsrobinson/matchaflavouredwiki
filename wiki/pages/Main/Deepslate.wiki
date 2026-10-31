@@ -15,11 +15,12 @@ The [[Mason]] sells 2 [[Bulk blocks|bulk deepslate]] for 1 [[obol]] at the appre
 
 == Usage ==
 {{Uses}}
-Cobbled deepslate, like cobblestone, can be blasted into [[gravel]]. Four cobbled deepslate make 4 polished deepslate, the main ingredient of the [[Blast Furnace|blast furnace]]; see [[Progression]].
+Cobbled deepslate, like cobblestone, can be blasted into [[gravel]]. Four cobbled deepslate make 4 polished deepslate, the main ingredient of the [[Blast Furnace|blast furnace]]; see [[Progression]]. Deepslate can also be fired into polished deepslate in a mud kiln ({{Value|Polished Deepslate|cook_time|station=Mud Kiln}}), one block for one.<ref>{{Source|MF_datapack/data/matcha/recipe/kiln/polished_deepslate.json}}</ref> Two cobbled deepslate slabs craft back into a cobbled deepslate block. Picking up cobbled deepslate unlocks both recipes, along with the kiln recipe for deepslate.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/cobbled_deepslate_from_slabs.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/cobbled_deepslate.json}}</ref>
 
 == History ==
 {{History
 |{{History line|1.12.1-alpha|Deepslate recipes and their unlocks were reworked; cracked deepslate bricks can be blasted into cobbled deepslate.}}
+{{History line|1.12.9|date=October 31, 2026|Deepslate can be fired into polished deepslate in a mud kiln, and two cobbled deepslate slabs craft back into cobbled deepslate.}}
 }}
 == References ==
 {{reflist}}

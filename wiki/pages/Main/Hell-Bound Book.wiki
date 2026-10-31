@@ -25,7 +25,7 @@ A blank Hell-Bound Book can be combined with equipment in an [[anvil]] like any 
 {| class="wikitable"
 ! Advancement !! Description !! Requirement
 |-
-| Unholy Knowledge || Craft a Hell-Bound Book || Craft a Hell-Bound Book. Rewards 1 [[Obol]].<ref>{{Source|MF_datapack/data/matcha/advancement/hell/craft_hell_bound_book.json}}</ref>
+| Unholy Knowledge || Craft a Hell-Bound Book || Craft a Hell-Bound Book. Rewards 1 [[Obol]] and, since 1.12.9, unlocks the recipes of all 23 [[blessing]]s, which crafting the book also unlocks through a recipe-unlock advancement.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/craft_hell_bound_book.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/hell_bound_book.json}}</ref>
 |}
 
 == History ==

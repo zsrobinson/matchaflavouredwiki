@@ -2344,8 +2344,38 @@ def luck_weight(e, luck):
     return max(int(math.floor(e['weight'] + (e.get('quality') or 0) * luck)), 0)
 
 
+def biome_dispatch(tid):
+    """True for a table that only picks another table by the bobber's biome: one roll of one alternatives entry
+    whose children are loot tables (minecraft:gameplay/fishing/biomes since 1.12.9)."""
+    ents = (LOOT.get(tid) or {}).get('entries') or []
+    return bool(ents) and all(e.get('slot_kind') == 'alternatives' and e.get('loot_table') and e.get('pool') == 0
+                              and e.get('rolls') == 1 and not e.get('pool_conditions') for e in ents) and \
+        any(ctype(c) == 'location_check' for e in ents for c in e.get('conditions') or [])
+
+
+_FISHING_ENTRIES = []
+
+
 def fishing_entries():
-    ents = [e for e in LOOT[FISHING]['entries'] if not e.get('empty')]
+    if not _FISHING_ENTRIES:  # built once: the tables below compare entries by identity
+        _FISHING_ENTRIES.extend(_fishing_entries())
+    return _FISHING_ENTRIES
+
+
+def _fishing_entries():
+    """The top-level fishing entries. An entry that rolls a biome-dispatch table stands for that table's
+    children: one roll of a one-roll table is the same catch, so each child keeps the entry's weight, quality
+    and conditions and adds its own biome condition (the first child that applies is taken)."""
+    ents = []
+    for e in LOOT[FISHING]['entries']:
+        if e.get('empty'):
+            continue
+        if biome_dispatch(e.get('loot_table')):
+            for c in LOOT[e['loot_table']]['entries']:
+                ents.append(dict(e, loot_table=c['loot_table'], slot='dispatch/' + c['slot'], slot_kind='alternatives',
+                                 conditions=list(e.get('conditions') or []) + list(c.get('conditions') or [])))
+        else:
+            ents.append(e)
     for e in ents:
         # the odds below know only these; anything else has to be taught to them, not skipped
         other = [c.get('type') for c in e.get('conditions') or []

@@ -10,6 +10,14 @@
 | 4 × [[Cobbled Deepslate]]
 | {{Crafting|A1=Cobbled Deepslate|A2=Cobbled Deepslate|B1=Cobbled Deepslate|B2=Cobbled Deepslate|Output=Polished Deepslate,4}}
 |}
+'''Cooking'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Polished Deepslate]]
+| [[Deepslate]]
+| {{Cooking|station=Mud Kiln|Input=Deepslate|Output=Polished Deepslate|time=5|note=5 s, 0.1 XP}}
+|}
 '''Stonecutting'''
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe

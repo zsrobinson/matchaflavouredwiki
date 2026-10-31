@@ -1,8 +1,17 @@
-<includeonly>{| class="wikitable recipe-table"
+<includeonly>'''Crafting'''
+{| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| {{MCW|Stripped Poplar Wood}} <small>(vanilla recipe)</small>
-| 4 × {{MCW|Stripped Poplar Log}}
+| [[Stripped Poplar Wood]] <small>(vanilla recipe)</small>
+| 4 × [[Stripped Poplar Log]]
 | {{Crafting|A1=Stripped Poplar Log|A2=Stripped Poplar Log|B1=Stripped Poplar Log|B2=Stripped Poplar Log|Output=Stripped Poplar Wood,3}}
+|}
+'''Stonecutting'''
+{| class="wikitable recipe-table"
+! Name !! Ingredients !! Recipe
+|-
+| [[Stripped Poplar Wood]]
+| [[Poplar Log]] or [[Poplar Wood]] or [[Stripped Poplar Log]]
+| {{Stonecutter|Input=Poplar Log;Poplar Wood;Stripped Poplar Log|Output=Stripped Poplar Wood}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

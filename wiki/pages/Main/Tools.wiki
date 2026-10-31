@@ -34,7 +34,7 @@ See also the [[Snow Shovel|snow shovel]].
 * [[Archeologist's Brush]], [[Hatchet]], [[Rusty Axe]], [[Crook]].
 
 == Removed ==
-Stone tools cannot be crafted; their item IDs are reused for steel, shakudo and hepatizon tools and for the [[Silver Sword|silver]] and [[Warding Sword|warding]] swords.<ref>{{Source|README.md}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_pickaxe.json}}</ref>
+Stone tools cannot be crafted, and since {{Version|1.12.9}}, when the pack replaced vanilla's [[Hero of the Village|hero-of-the-village]] gifts from toolsmiths and weaponsmiths, they can't be obtained at all.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/toolsmith_gift.json}}</ref> Their item IDs are reused for steel, shakudo and hepatizon tools and for the [[Silver Sword|silver]] and [[Warding Sword|warding]] swords.<ref>{{Source|README.md}}</ref><ref>{{Source|MF_datapack/data/matcha/recipe/smithing/steel_pickaxe.json}}</ref>
 
 == References ==
 {{reflist}}

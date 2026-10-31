@@ -47,7 +47,8 @@ Estus Ash was added to junk so that players on Peaceful can get it.<ref>{{Cite c
 {{History line|1.12.5|The trailing comma was removed, so the junk table loads and junk catches give items again.<ref>{{Cite changelog|1.12.5|quote=Fishing Junk LT Fixed (Not for modded biomes)}}</ref>}}
 {{History line|1.12.6-alpha|Junk fish bones are bones instead of ender pearls.<ref>{{Source|MF_datapack/data/matcha/loot_table/materials/fish_bones.json}}</ref>}}
 {{History line|1.12.7-beta|The biome tables and the fallback junk became one weightless entry, so junk went from 10% to 62.5% of open-water catches in biomes with fish.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|at=34a04e6571d9ee6f0cc1d8d50cdfa85980720156}}</ref>}}
-{{History line|1.12.8-beta|date=October 23, 2026|The biome tables and the fallback junk weigh 85 again, so junk is back to 10% of open-water catches in biomes with fish, and 95% in biomes without.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|The biome tables and the fallback junk weigh 85 again, so junk is back to 10% of open-water catches in biomes with fish, and 95% in biomes without.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|at=58e88dcec369fe3293fb25a15214249d116a100e}}</ref>}}
+{{History line|1.12.9|date=October 31, 2026|The fallback junk is reached through the new <code>gameplay/fishing/biomes</code> table, whose entry has a quality of +1 instead of −1, so in biomes without fish Luck of the Sea III leaves junk at 92% of open-water catches instead of 88.66%.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref> Guardians and elder guardians no longer drop junk in biomes with fish.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/guardian.json}}</ref>}}
 }}
 
 == References ==

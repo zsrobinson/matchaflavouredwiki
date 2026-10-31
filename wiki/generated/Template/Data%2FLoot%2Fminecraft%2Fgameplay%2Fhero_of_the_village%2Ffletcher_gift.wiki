@@ -1,33 +1,15 @@
-<includeonly><small>Loot table <code>minecraft:gameplay/hero_of_the_village/fletcher_gift</code> ({{Source|vanilla:loot_table/gameplay/hero_of_the_village/fletcher_gift.json|source}}); pools roll 1 time(s).</small>
+<includeonly><small>Loot table <code>minecraft:gameplay/hero_of_the_village/fletcher_gift</code> ({{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/fletcher_gift.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Arrow}} || 1 || 66.7% || 66.7% || 
+| {{ItemLink|Arrow}} || 16 || 23.8% || 23.8% || 
 |-
-| {{ItemLink|Tipped Arrow|Arrow of Swiftness|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
+| {{ItemLink|Apotropaic Arrow}} || 16 || 23.8% || 23.8% || 
 |-
-| {{ItemLink|Tipped Arrow|Arrow of Slowness|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
+| {{ItemLink|Nightshade Arrow}} || 16 || 23.8% || 23.8% || 
 |-
-| {{ItemLink|Tipped Arrow|Arrow of Strength|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
+| {{ItemLink|Spectral Arrow}} || 16 || 23.8% || 23.8% || 
 |-
-| {{ItemLink|Tipped Arrow|Arrow of Healing|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
-|-
-| {{ItemLink|Tipped Arrow|Arrow of Harming|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
-|-
-| {{ItemLink|Tipped Arrow|Arrow of Leaping|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
-|-
-| {{ItemLink|Tipped Arrow|Arrow of Regeneration|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
-|-
-| {{ItemLink|Tipped Arrow|Arrow of Fire Resistance|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
-|-
-| {{ItemLink|Tipped Arrow|Arrow of Water Breathing|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
-|-
-| {{ItemLink|Tipped Arrow|Arrow of Invisibility|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
-|-
-| {{ItemLink|Tipped Arrow|Arrow of Night Vision|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
-|-
-| {{ItemLink|Tipped Arrow|Arrow of Weakness|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
-|-
-| {{ItemLink|Tipped Arrow|Arrow of Poison|mcw=Tipped Arrow}} || 0–1 || 1.28% || 1.28% || 
+| {{ItemLink|Bow|Bow (enchanted)|mcw=Bow}} || 1 || 4.76% || 4.76% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

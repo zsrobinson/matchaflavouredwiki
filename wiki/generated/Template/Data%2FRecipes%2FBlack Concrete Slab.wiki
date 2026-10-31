@@ -2,7 +2,7 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Black Concrete Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Black Concrete Slab}} <small>(vanilla recipe)</small>
 | 3 × [[Black Concrete]]
 | {{Crafting|A1=Black Concrete|B1=Black Concrete|C1=Black Concrete|Output=Black Concrete Slab,6}}
 |}
@@ -10,11 +10,7 @@
 {| class="wikitable recipe-table"
 ! Name !! Ingredients !! Recipe
 |-
-| [[Black Concrete Slab]]
-| [[Black Concrete]]
-| {{Stonecutter|Input=Black Concrete|Output=Black Concrete Slab,2}}
-|-
-| [[Black Concrete Slab]] <small>(vanilla recipe)</small>
+| {{MCW|Black Concrete Slab}} <small>(vanilla recipe)</small>
 | [[Black Concrete]]
 | {{Stonecutter|Input=Black Concrete|Output=Black Concrete Slab,2}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

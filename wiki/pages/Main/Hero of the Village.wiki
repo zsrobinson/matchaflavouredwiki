@@ -1,0 +1,101 @@
+{{Vanilla|Hero of the Village}}
+{{Infobox
+|title=Hero of the Village
+|type=Trading mechanic
+|vanilla={{MCW|Hero of the Village}}
+}}
+'''Hero of the Village''' gifts are the items that [[villager]]s throw to a player who has the {{MCW|Hero of the Village}} effect, which is given for defending a village from a {{MCW|Raid|raid}}. Since {{Version|1.12.9}} Matcha Flavoured replaces every profession's gift with its own: seeds and crops from the [[Farmer]], dishes from the [[Cook]], [[Jewelry|earrings]] from the [[Jeweler]], [[Bulk blocks|bulk blocks]] from the [[Mason]] and so on.<ref>{{Cite changelog|1.12.9|quote=Villager Gifts updated (HapppySpud)}}</ref>
+
+== Mechanics ==
+The effect and the way villagers give gifts work as in vanilla: while the player has the effect, villagers near the player now and then throw a gift, rolled from the loot table of their profession. Only the loot tables are changed. Each table rolls once and gives one entry; the tables below list the chance of each.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/farmer_gift.json}}</ref>
+
+A raid starts when a player with {{MCW|Bad Omen}} or {{MCW|Raid Omen}} enters a village, and the pack lets players craft the [[Ominous Bottle|ominous bottle]] that gives it.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/ominous_bottle.json}}</ref> The pack's [[Village|villages]] generate without villagers, so the villagers that give gifts are ones the player has brought in or bred (see [[Villager#Spawning]]).
+
+== Gifts ==
+Each section is named after the pack's profession, with the vanilla profession it renames in brackets.
+
+=== Farmer ===
+A farmer gives seeds, crops, mushrooms, 16 bone meal or a [[livestock|fertilized egg]] of one of the three chicken breeds. The sweet berries, glow berries and carrots come from the pack's own food tables, so they heal and stack like harvested ones.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/farmer_gift.json}}</ref>
+
+The white egg is a bug: it places a baby temperate chicken like the [[Fertilized Egg|fertilized egg]] the farmer sells, but it asks for the name key <code>item.kleispack.fertilised_white_egg</code>, which no language file has, and the item model <code>minecraft:white_egg</code>, which doesn't exist. In game it shows the untranslated key and the missing-model texture, and it doesn't stack with the sold egg. The wiki calls it "Fertilised White Egg" (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/2/white_egg.json}}</ref><ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/farmer_gift}}
+
+=== Fisherman ===
+A fisherman gives 4 cod, salmon or tropical fish, a {{MCW|Bucket of Fish|bucket}} holding one of those fish, or, rarely, a [[Fishing Rod|fishing rod]] with one random enchantment. The fish are plain vanilla items without the rarity line that [[fishing]] adds, so the [[Fisherman]] won't buy them back.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/fisherman_gift.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/fisherman_gift}}
+
+=== Shepherd ===
+A shepherd gives 8 wool of a random color, where vanilla's shepherd gives 1.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/shepherd_gift.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/shepherd_gift}}
+
+=== Fletcher ===
+A fletcher gives 16 arrows, [[Apotropaic Arrow|apotropaic arrows]], [[Nightshade Arrow|nightshade arrows]] or spectral arrows, or, rarely, a bow with one random enchantment. The tipped arrows are the same items the fletcher sells.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/fletcher_gift.json}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/fletcher/1/apotropaic_arrow.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/fletcher_gift}}
+
+=== Lumberjack (leatherworker) ===
+A lumberjack gives logs or stems: 16 oak, birch or spruce logs, or 8 of any other wood, including [[poplar]], the mushroom stem and the [[Hell]] stems.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/leatherworker_gift.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/leatherworker_gift}}
+
+=== Archaeologist (cartographer) ===
+An archaeologist gives an empty map, a sheet of paper, a [[Nazar|nazar]], a [[Wooden Cross|wooden cross]] or a [[compass]]. The compass is a copper one 6 times in 10, a golden one 3 times in 10 and a titanium one 1 time in 10.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/cartographer_gift.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/equipment/compass/any_weighted.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/cartographer_gift}}
+
+=== Engineer (armorer) ===
+An engineer gives 8 of a redstone component, under the pack's names: [[Electric Inverter|electric inverters]], [[Electric Block|electric blocks]], [[Electric Repeater|repeaters]], [[Electric Comparator|comparators]], [[Electric Lamp|lamps]] and [[Copper Eye|copper eyes]], or crafters, pistons, hoppers, observers, dispensers, droppers, note blocks or waxed copper bulbs.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/armorer_gift.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/armorer_gift}}
+
+=== Chemist (cleric) ===
+A chemist always gives a [[Water Bottle|water bottle]], which the pack turns into its stackable water bottle when picked up.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/cleric_gift.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/cleric_gift}}
+
+=== Jeweler (toolsmith) ===
+A jeweler gives amethyst, diamond or lapis [[Jewelry|earrings]], each as likely as the others.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/toolsmith_gift.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/toolsmith_gift}}
+
+=== Cook (butcher) ===
+A cook gives one serving of a cooked [[food]]: one of 21 of the pack's dishes, a baked potato or cooked mutton. One dish is listed twice in the table, so it is twice as likely as the others.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/butcher_gift.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/butcher_gift}}
+
+=== Mouthpiece (librarian) ===
+A mouthpiece gives a book or a book and quill.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/librarian_gift.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/librarian_gift}}
+
+=== Mason ===
+A mason gives one [[Bulk blocks|bulk block]] of one of 17 kinds, which unpacks into 64 blocks.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/mason_gift.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/mason_gift}}
+
+=== Weaponsmith ===
+A weaponsmith gives 4–8 copper, 3–8 iron or 2–8 gold ingots, or one of the pack's [[Copper equipment|copper]] tools and weapons: an axe, sword, spear, shovel, shears, [[mattock]] or [[dolabra]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/weaponsmith_gift.json}}</ref>
+
+{{Data/Loot/minecraft/gameplay/hero_of_the_village/weaponsmith_gift}}
+
+=== Babies and unemployed villagers ===
+The pack's tables for baby and unemployed villagers give the same as vanilla's: a baby gives a poppy, and an unemployed villager one [[Wheat Grain|wheat grain]] (the renamed wheat seeds).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/baby_gift.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/unemployed_gift.json}}</ref>
+
+== History ==
+{{History|
+{{History line|1.12.9|date=October 31, 2026|Every profession gives the pack's own gifts. Until then villagers gave vanilla's: chainmail armor from engineers, cooked meats from cooks, stone tools from jewelers, stone, iron and golden axes from weaponsmiths, and bread, pumpkin pie or cookies from farmers, among others. Stone tools and pumpkin pie can't be obtained any more.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/toolsmith_gift.json}}</ref><ref>{{Cite changelog|1.12.9|quote=Villager Gifts updated (HapppySpud)}}</ref>}}
+}}
+
+== See also ==
+* [[Villager]]
+* [[Trading]]
+
+== References ==
+{{Reflist}}
+
+{{Navbox trading}}
+[[Category:Mechanics]]
+[[Category:Trading]]

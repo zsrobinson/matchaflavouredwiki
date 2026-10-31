@@ -18,7 +18,7 @@ All pre-filled bundles cost 1 [[Obol]] and can be bought 999 times before the vi
 |-
 | <span id="Floral Bundle"></span>{{ItemLink|Floral Bundle}} || [[Farmer]] (Novice) || 1 obol || [[File:Golden Dandelion.png|16px|link=]] Golden Dandelion × 1<br />[[File:Dandelion.png|16px|link=]] Dandelion × 3<br />Sunflower × 4<br />[[File:Poppy.png|16px|link=]] Poppy × 4<br />Rose Bush × 4<br />[[File:Cornflower.png|16px|link=]] Cornflower × 8<br />[[File:Hyacinth.png|16px|link=Hyacinth]] [[Hyacinth]] × 8<br />Lilac × 4<br />Peony × 4<br />[[File:Azure Bluet.png|16px|link=]] Azure Bluet × 8<br />[[File:Oxeye Daisy.png|16px|link=]] Oxeye Daisy × 8<br />[[File:Lily of the Valley.png|16px|link=]] Lily of the Valley × 8
 |-
-| <span id="Mushy Bundle"></span>{{ItemLink|Mushy Bundle}} || [[Farmer]] (Novice) || 1 obol || [[File:Red Mushroom.png|16px|link=Mushroom]] [[Mushroom|Red Mushroom]] × 21<br />[[File:Brown Mushroom.png|16px|link=Mushroom]] [[Mushroom|Brown Mushroom]] × 21<br />[[File:Glow Lichen.png|16px|link=]] Glow Lichen × 21
+| <span id="Mushy Bundle"></span>{{ItemLink|Mushy Bundle}} || [[Farmer]] (Novice) || 1 obol || [[File:Red Mushroom.png|16px|link=Mushroom]] [[Mushroom|Red Mushroom]] × 16<br />[[File:Brown Mushroom.png|16px|link=Mushroom]] [[Mushroom|Brown Mushroom]] × 16<br />[[File:Glow Lichen.png|16px|link=]] Glow Lichen × 16<br />[[File:Shelf Mushroom.png|16px|link=]] Shelf Mushroom × 16
 |-
 | <span id="Geothermal Bundle"></span>{{ItemLink|Geothermal Bundle}} || [[Engineer]] (Master) || 1 obol || [[File:Flowstone.png|16px|link=Flowstone]] [[Flowstone]] × 4<br />[[Speleothem]] × 4<br />Lava Bucket × 4<br />[[File:Cauldron.png|16px|link=Cauldron]] [[Cauldron]] × 4<br />[[File:Glass.png|16px|link=Glass]] [[Glass]] × 8
 |}
@@ -26,6 +26,7 @@ A Novice farmer offers 3 of its 5 trades, so not every farmer sells every bundle
 
 Notes:
 * The Seed Bundle holds the pack's renamed wheat seeds ([[Wheat Grain]]) and beetroot seeds ([[Tomato Seeds]]).
+* The carrots in the Seed Bundle and the berries in the Exotic Seed Bundle heal like harvested ones, with the same heart on their tooltip. They keep the vanilla food component and lack the version tag that harvested ones carry, though, so they don't stack with them.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/1/exotic_seed_bundle.json}}</ref><ref>{{Source|MF_datapack/data/matcha/loot_table/food/minecraft/sweet_berries.json}}</ref>
 * The Floral Bundle is exactly full: its 64 flowers fill a bundle's capacity.
 * The lava buckets in the Geothermal Bundle stack up to 64, unlike normal lava buckets.<ref>{{Source|MF_datapack/data/matcha/villager_trade/armorer/5/lava_kit.json}}</ref> The bundle holds the blocks for filling cauldrons with lava from dripping [[Speleothem|speleothems]].
 
@@ -34,8 +35,14 @@ An empty bundle is crafted from 1 string above 1 rabbit hide, instead of the van
 {{Recipes|Bundle}}
 
 == Trivia ==
-* The pre-filled bundles are vanilla bundles with a custom name and model. The Geothermal Bundle is a red bundle with no custom model, so it looks like a vanilla red bundle; its internal name is <code>lava_kit</code>.<ref>{{Source|MF_datapack/data/matcha/villager_trade/armorer/5/lava_kit.json}}</ref>
+* The pre-filled bundles are vanilla bundles with a custom name and model. The Geothermal Bundle is a red bundle with no custom model, so it looks like a vanilla red bundle; its internal name is <code>lava_kit</code>.<ref>{{Source|MF_datapack/data/matcha/villager_trade/armorer/5/lava_kit.json}}</ref> From 1.12.6-alpha to 1.12.8-beta, the [[Updating items|item updater]] turned any red bundle held in a hand into a full Geothermal Bundle; since 1.12.9 it recognizes the bundle by its name.<ref>{{Source|MF_datapack/data/matcha_item/predicate/mainhand/lava_kit.json}}</ref>
 * The Mushy Bundle's internal name is <code>mushroom</code>.
+
+== History ==
+{{History|
+{{History line|1.12.9|date=October 31, 2026|The Mushy Bundle holds 16 each of red mushrooms, brown mushrooms, glow lichen and {{MCW|Shelf Mushroom|shelf mushrooms}} instead of 21 each of the first three.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/1/mushy_bundle.json}}</ref>
+The carrots in the Seed Bundle and the sweet berries and glow berries in the Exotic Seed Bundle heal when eaten; before, they were vanilla items that healed nothing.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/1/seed_bundle.json}}</ref><ref>{{Cite changelog|1.12.9|quote=Carrots and Sweet Berries updated in farmer trade}}</ref>}}
+}}
 
 == References ==
 {{Reflist}}

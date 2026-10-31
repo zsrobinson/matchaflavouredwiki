@@ -1,11 +1,25 @@
-<includeonly><small>Loot table <code>minecraft:gameplay/hero_of_the_village/weaponsmith_gift</code> ({{Source|vanilla:loot_table/gameplay/hero_of_the_village/weaponsmith_gift.json|source}}); pools roll 1 time(s).</small>
+<includeonly><small>Loot table <code>minecraft:gameplay/hero_of_the_village/weaponsmith_gift</code> ({{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/weaponsmith_gift.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Stone Axe}} || 1 || 33.3% || 33.3% || 
+| {{ItemLink|Copper Ingot}} || 4–8 || 28.6% || 28.6% || 
 |-
-| {{ItemLink|Golden Axe}} || 1 || 33.3% || 33.3% || 
+| {{ItemLink|Iron Ingot}} || 3–8 || 14.3% || 14.3% || 
 |-
-| {{ItemLink|Iron Axe}} || 1 || 33.3% || 33.3% || 
+| {{ItemLink|Gold Ingot}} || 2–8 || 7.14% || 7.14% || 
+|-
+| {{ItemLink|Copper Axe}} || 1 || 7.14% || 7.14% || 
+|-
+| {{ItemLink|Copper Sword}} || 1 || 7.14% || 7.14% || 
+|-
+| {{ItemLink|Copper Spear}} || 1 || 7.14% || 7.14% || 
+|-
+| {{ItemLink|Copper Shovel}} || 1 || 7.14% || 7.14% || 
+|-
+| {{ItemLink|Copper Shears}} || 1 || 7.14% || 7.14% || 
+|-
+| {{ItemLink|Copper Mattock}} || 1 || 7.14% || 7.14% || 
+|-
+| {{ItemLink|Copper Dolabra}} || 1 || 7.14% || 7.14% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

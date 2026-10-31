@@ -3,7 +3,7 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 
 == Removed vanilla features ==
 ; Stone tools
-: The vanilla stone tool recipes are blocked. Progression goes from wood straight to copper.<ref>{{Source|README.md}}</ref> See [[Progression]].
+: The vanilla stone tool recipes are blocked. Progression goes from wood straight to copper.<ref>{{Source|README.md}}</ref> See [[Progression]]. Until {{Version|1.12.9}} toolsmiths and weaponsmiths could still give stone tools as hero-of-the-village gifts; since then nothing in the pack gives them.
 ; Hunger
 : The food bar is hidden, and the pack gives Saturation whenever the food level falls to 8 or lower, so the player can always sprint and food matters only for healing and effects. Until 1.12.6-alpha it also gave Hunger at 10 or more to hold the level down.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/manage_hunger.mcfunction}}</ref> See [[Hunger]].
 ; Natural regeneration
@@ -24,6 +24,8 @@ This page lists vanilla features that [[Matcha Flavoured]] removes or disables, 
 : The vanilla <code>repair_item</code> recipe is blocked; equipment is repaired in an [[anvil]], without the experience cap. See [[Repairing]].
 ; Blocked vanilla recipes
 : Besides the above, the filter blocks the vanilla recipes for ore smelting (replaced by kiln and blast furnace recipes), the furnace, smoker, blast furnace, campfire and smithing table, iron, gold, diamond and netherite equipment, rails, hoppers, buckets, cauldrons and other iron items, food such as bread, cake, cookies, stews and pumpkin pie, dyes, carpets, banners, chiseled blocks, glazed terracotta, glass, the shulker box, bundle, TNT, ender eye, ender chest, mace, wind charge, recovery compass and more. Most have pack replacements with different ingredients. These have no recipe left at all: {{Data/Blocked vanilla/No recipe}}.
+; Vanilla hero-of-the-village gifts
+: Since {{Version|1.12.9}} every villager profession gives the pack's own [[Hero of the Village|hero-of-the-village]] gifts instead of vanilla's.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/farmer_gift.json}}</ref> The vanilla gifts were the last source of pumpkin pie (from farmers) and stone tools (from toolsmiths and weaponsmiths), whose recipes the pack blocks, so neither can be obtained any more.
 ; Sapling and stick drops from leaves
 : Leaves drop neither; each sapling is crafted from one of its leaves, a recipe unlocked by picking up the matching log.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/oak_leaves.json}}</ref> Removed in [[Matcha Flavoured 0.5-alpha|0.5-alpha]].
 

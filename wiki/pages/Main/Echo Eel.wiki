@@ -7,7 +7,7 @@ The echo eel can be caught in this table.<ref>{{Source|MF_datapack/data/minecraf
 {| class="wikitable"
 ! Climate !! Biomes !! Weight !! Per catch (open water) !! Per catch (other water) !! Per catch ({{MCW|Luck of the Sea}} III)
 |-
-| [[Fishing#Special biomes|Deep Dark]] || Deep Dark || 7 of 28 || 21.25% || 22.37% || 21.13%
+| [[Fishing#Special biomes|Deep Dark]] || Deep Dark || 7 of 28 || 21.25% || 22.37% || 22%
 |}
 
 In {{Version|1.12.7-beta}} the biome tables had no weight of their own, so the Deep Dark table was picked for only 1 catch in 16 in open water (1.56% for an echo eel); {{Version|1.12.8-beta}} restored its weight of 85 (see [[Fishing#Choosing the catch]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>

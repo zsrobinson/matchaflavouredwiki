@@ -28,7 +28,7 @@ The pack counts down in 10-second steps. The fire starts at 90 steps (15 minutes
 See [[Wandering Trader#Trades]] for what the trader sells and buys.
 
 == Behavior ==
-The Beacon Kindling is a chicken spawn egg that places an invisible marker instead of a chicken. As with other spawn eggs, using it on a [[spawner]] or trial spawner in Survival destroys every spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/no_eggs_on_spawners.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
+The Beacon Kindling is a chicken spawn egg that places an invisible marker instead of a chicken. As with other spawn eggs, using it on a [[spawner]] or trial spawner in Survival destroys every spawner within 16 blocks and deals 1 damage to the player.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/no_eggs_on_spawners.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
 
 == Advancements ==
 * '''Bonfire Lit''': "Use a Beacon Kindling to signal a Wandering Trader". Rewards 1 obol.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/light_beacon.json}}</ref>

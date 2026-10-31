@@ -3,9 +3,9 @@
 |-
 | <code>matcha_item:trigger</code> || 415 || {{{matcha_item:trigger|}}}
 |-
-| <code>recipe_unlocks</code> || 182 || {{{matcha:recipe_unlocks|}}}
+| <code>recipe_unlocks</code> || 183 || {{{matcha:recipe_unlocks|}}}
 |-
-| <code>mechanics</code> || 29 || {{{matcha:mechanics|}}}
+| <code>mechanics</code> || 30 || {{{matcha:mechanics|}}}
 |-
 | <code>fishing_sounds</code> || 11 || {{{matcha:fishing_sounds|}}}
 |-
@@ -25,5 +25,5 @@
 |-
 | <code>update_vanilla_item</code> || 1 || {{{matcha:update_vanilla_item|}}}
 |-
-| '''Total''' || '''656''' || Of 833 advancement files; the other 177 are the visible advancements.
+| '''Total''' || '''658''' || Of 835 advancement files; the other 177 are the visible advancements.
 |}</includeonly><noinclude>Generated. Each folder's purpose is a note passed by its ID (<code>matcha:recipe_unlocks</code>). [[Category:Generated data]]</noinclude>

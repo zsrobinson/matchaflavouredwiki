@@ -13,13 +13,14 @@ The pack's recipe uses 2 [[Sweet Berries|sweet berries]], a [[Milk Bottle|milk b
 == Usage ==
 
 === Food ===
-Cake is placed and eaten a slice at a time, as in vanilla. Each tick, the pack checks every player's cake-slice statistic; after a slice, the player gets Instant Health I and {{EffectLink|Health Boost}} II (4 extra hearts of maximum health) for 3:00.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/cake_eaten.mcfunction}}</ref> Instant Health I heals {{Hp|4}}, but the item's tooltip shows 4 hearts ({{Hp|8}}).
+Cake is placed and eaten a slice at a time, as in vanilla, and only while the food bar isn't full (see [[Known bugs]]). When a player eats a slice, an advancement that fires on using a cake gives them Instant Health I and {{EffectLink|Health Boost}} II (4 extra hearts of maximum health) for 3:00.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/ate_cake_slice.json}}</ref><ref>{{Source|MF_datapack/data/matcha/tags/block/cakes.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/cake_eaten.mcfunction}}</ref> The game checks the block after the slice is eaten, so the last slice, which removes the cake, gives no effects; a slice from a cake with a candle counts, since the block is then a plain cake (see [[Known bugs]]). The {{Version|1.12.9}} release notes list "Cake can sometimes not be eaten" as an expected issue.<ref>{{Cite changelog|1.12.9|quote=Cake can sometimes not be eaten (A future fix will address this)}}</ref> Instant Health I heals {{Hp|4}}, but the item's tooltip shows 4 hearts ({{Hp|8}}).
 
 == History ==
 {{History|
 {{History line|0.7-alpha|Cakes heal when eaten. The recipe changed.}}
 {{History line|1.10|Cake effects work and have a proper tooltip.}}
 {{History line|1.12.3|2=Crafting a cake returns the milk bottle's glass bottle. In 1.12.2 the advancement behind this still used an old recipe ID, so the bottle was lost.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/glass_bottle_from_crafting.json}}</ref>}}
+{{History line|1.12.9|date=October 31, 2026|Eating a slice is detected when the player uses a cake, instead of by the cake-slice statistic checked each tick, so the last slice of a cake no longer gives effects.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/cake_eaten.mcfunction|at=58e88dcec369fe3293fb25a15214249d116a100e}}</ref><ref>{{Cite changelog|1.12.9|quote=Cake eating reworked}}</ref>}}
 }}
 
 == See also ==

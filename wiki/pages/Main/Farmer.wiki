@@ -22,9 +22,15 @@ All trades can be used 999 times before restocking.<ref>{{Source|MF_datapack/dat
 
 Like every villager, a farmer that has been traded with will also buy its [[favorite food]] once.
 
+== Behavior ==
+A farmer harvests and replants crops as in vanilla. Since {{Version|1.12.9}} a fully grown [[tomatoes|tomato]] crop broken by a villager drops 2 tomatoes and 2 [[Tomato Seeds|tomato seeds]], so farmers can replant tomatoes; before, the crop dropped no seeds.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref>
+
+A farmer gives a player with the {{MCW|Hero of the Village}} effect seeds, crops, mushrooms, bone meal or a fertilized egg (see [[Hero of the Village#Farmer]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/farmer_gift.json}}</ref>
+
 == History ==
 {{History|
 {{History line|1.12.1-alpha|Wheat drops [[Straw]] instead of tall dry grass, so that farmers can pick it up.}}
+{{History line|1.12.9|date=October 31, 2026|Farmers can replant tomatoes. The Mushy Bundle holds 16 each of red, brown and shelf mushrooms and glow lichen instead of 21 each of red and brown mushrooms and glow lichen, and the carrots and berries in the seed bundles heal. Hero of the Village gifts are the pack's own.<ref>{{Cite changelog|1.12.9|quote=Villagers can now replant tomatoes}}</ref><ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/1/mushy_bundle.json}}</ref>}}
 }}
 
 == References ==

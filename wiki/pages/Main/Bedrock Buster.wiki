@@ -1,5 +1,5 @@
 {{Infobox auto|type=Explosive|renewable=Yes}}
-A '''bedrock buster''' is a special charge of [[TNT]] that destroys {{MCW|Bedrock|bedrock}}. Placed on a block, it becomes a glowing primed TNT, and just before it explodes it clears a 3×7×3 column of bedrock around itself, letting players break through the floor of the Overworld or the roof and floor of [[Hell]].
+A '''bedrock buster''' is a special charge of [[TNT]] that destroys {{MCW|Bedrock|bedrock}}, {{MCW|Trial Spawner|trial spawners}} and {{MCW|Vault|vaults}}. Placed on a block, it becomes a glowing primed TNT, and just before it explodes it clears a 3×7×3 column of these blocks around itself, letting players break through the floor of the Overworld or the roof and floor of [[Hell]].
 
 == Obtaining ==
 === Crafting ===
@@ -9,18 +9,21 @@ Each bedrock buster costs {{ItemLink|Pith}}, the pack's scarcest progression mat
 == Usage ==
 The bedrock buster is a spawn egg that holds a primed TNT entity.<ref name="item">{{Source|MF_datapack/data/matcha/recipe/crafting/bedrock_buster.json}}</ref> Using it on a block:
 # spawns a primed, glowing TNT with an 80-tick (4-second) fuse and explosion power 4;
-# 79 ticks later, removes every bedrock block in a 3×7×3 area centered on the nearest glowing TNT (1 block to each side horizontally, 3 blocks up and down) and releases a burst of end rod particles;<ref name="use">{{Source|MF_datapack/data/matcha/function/mechanics/bedrock_buster_use.mcfunction}}</ref>
+# 79 ticks later, at every glowing TNT with 2 ticks of fuse left, removes every bedrock block, trial spawner and vault in a 3×7×3 area centered on the TNT (1 block to each side horizontally, 3 blocks up and down) and releases a burst of end rod particles;<ref name="use">{{Source|MF_datapack/data/matcha/function/mechanics/bedrock_buster/bedrock_buster_use.mcfunction}}</ref><ref name="effects">{{Source|MF_datapack/data/matcha/function/mechanics/bedrock_buster/bedrock_buster_effects.mcfunction}}</ref><ref name="tag">{{Source|MF_datapack/data/matcha/tags/block/bedrock_bustable.json}}</ref>
 # the TNT then explodes normally one tick later, damaging the surrounding blocks and entities.
 
-The bedrock removal is triggered by an advancement when the buster is used on a block.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/bedrock_buster.mcfunction}}</ref> Only the bedrock around one glowing TNT is removed per activation: if several busters are used within 79 ticks, the scheduled removal is replaced and only runs once, at the glowing TNT nearest to the world spawn point.
+The removal is triggered by an advancement when the buster is used on a block.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/bedrock_buster.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/bedrock_buster/bedrock_buster.mcfunction}}</ref> Each use schedules its own removal, so several busters used in quick succession each clear their own column.
+
+The 1.12.9 release notes give the reason trial spawners and vaults were added: "In case you want to live in an Abbey's basement".<ref>{{Cite changelog|1.12.9|quote=Bedrock busters can now bust Trial Spawners and vault (In case you want to live in an Abbey's basement)}}</ref>
 
 === Spawners ===
 {{Main|Spawner#Spawn eggs}}
-Because it is a spawn egg, using a bedrock buster on a spawner counts as putting a spawn egg on it: every spawner within 16 blocks is destroyed and the player takes 20 damage.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/no_eggs_on_spawners.json}}</ref>
+Because it is a spawn egg, using a bedrock buster on a spawner counts as putting a spawn egg on it: every spawner and trial spawner within 16 blocks is destroyed and the player takes 1 damage (20 until 1.12.8-beta).<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/no_eggs_on_spawners.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
 
 == History ==
 {{History|
 {{History line|0.5-alpha|Translation support added for the bedrock buster.}}
+{{History line|1.12.9|date=October 31, 2026|Bedrock busters also destroy trial spawners and vaults. Several busters used within 79 ticks now each clear their own column; before, only the last use's removal ran, at the glowing TNT nearest the world spawn.<ref name="tag" />}}
 }}
 
 == Trivia ==

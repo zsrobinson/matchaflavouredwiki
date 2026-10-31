@@ -1,5 +1,5 @@
 {{See also|Renamed items|Removed features}}
-This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''Minecraft: Java Edition'' 26.3 (the version of {{Version|1.12.7-beta}}; the full release {{Version|1.12.5}} is for 26.2), with links to the detailed articles. Renamed items are listed on [[Renamed items]], removed features on [[Removed features]], and known problems in the pack on [[Known bugs]].
+This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''Minecraft: Java Edition'' 26.3 (the version of {{Version|1.12.9}}), with links to the detailed articles. Renamed items are listed on [[Renamed items]], removed features on [[Removed features]], and known problems in the pack on [[Known bugs]].
 
 == Health, death and survival ==
 * '''[[Hunger]]''' is effectively removed: the hunger bar is hidden and the food level is refilled before it reaches the sprinting threshold, so sprinting is never limited and nobody starves. The Hunger effect instead stops healing while it lasts (on Normal and Hard).
@@ -22,7 +22,7 @@ This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''
 * Zombie-type mobs drop [[Tattered Leather|tattered leather]] or [[Sturdy Leather|sturdy leather]] instead of rotten flesh, and most undead drop [[Raw Estus|raw Estus]] or [[Estus Ash|Estus ash]]. Hostile mobs don't drop the equipment they spawn with, and zombies, husks, skeletons and spiders from [[spawner]]s drop nothing. See [[Mobs]].
 * [[Enderman|Endermen]] killed by a player always drop a [[Stable Void|stable void]], and can only pick up melons, pumpkins and [[TNT]]. [[Blaze]]s drop fire charges instead of blaze rods.
 * [[Spawner]]s drop [[pith]] when broken; so do some strong mobs.
-* The [[Wither]] can only be summoned on the Overworld surface.
+* The [[Wither]] can only be summoned on the Overworld surface; one built anywhere else is removed and its three wither skeleton skulls are given back.
 
 == Food and cooking ==
 * Over 90 new foods. Food heals through a hidden regeneration effect instead of filling a hunger bar, and grants the [[effect]]s that potions give in vanilla. See [[Food]].
@@ -54,6 +54,7 @@ This page summarizes every area in which [[Matcha Flavoured]] changes vanilla ''
 * Villages are [[Abandoned village|abandoned]]. Villagers come from [[Asylum Seeker|asylum seeker]] applications sold by the [[Wandering Trader|wandering trader]], who can be called with a [[Beacon Kindling|beacon kindling]] and buys music discs.
 * [[Amnestic]]s reset a villager's profession and trades.
 * [[Bulk blocks]] from the [[Mason|mason]] unpack into a stack of blocks.
+* Villagers' [[Hero of the Village]] gifts are the pack's own: for example, foods from the butcher, bulk blocks from the mason, plain [[Jewelry|earrings]] from the toolsmith and copper tools from the weaponsmith.
 
 == World ==
 * Ores are renamed and redistributed: [[Native Silver|native silver]] (emerald ore) in almost every biome, [[Quartz Deposit|quartz deposits]] (lapis ore) far more common, [[Fossil|fossils]] (redstone ore) that drop bones higher up, and large [[Coal Deposit|coal deposits]] under deserts. See [[Ores]] and [[World generation]].

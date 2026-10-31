@@ -1281,6 +1281,10 @@ return {
 		["eat_time"] = { "1.6 seconds", raw = "1.6" },
 		["level:Poison"] = { "I", raw = "1", roman = "I" },
 	},
+	["Polished Deepslate"] = {
+		["cook_time"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+		["cook_time:Mud Kiln"] = { "5 seconds", clock = "0:05", seconds = "5 seconds", secs = "5", ticks = "100" },
+	},
 	["Popped Chorus Fruit"] = {
 		["cook_time"] = { error = "Popped Chorus Fruit cooks in different times at different stations: give station=" },
 		["cook_time:Kindling"] = { "10 seconds", clock = "0:10", seconds = "10 seconds", secs = "10", ticks = "200" },
@@ -1615,33 +1619,9 @@ return {
 		["eat_time"] = { "0.8 seconds", raw = "0.8" },
 		["heals"] = { "{{Hp|2}}", hearts = "1 heart", raw = "2" },
 	},
-	["Stone Axe"] = {
-		["attackspeed"] = { "0.8" },
-		["damage"] = { "{{Hp|9}}", raw = "9" },
-		["durability"] = { "131" },
-		["miningspeed"] = { "4" },
-	},
 	["Stone Bricks"] = {
 		["cook_time"] = { "2.5 seconds", clock = "0:02", seconds = "2.5 seconds", secs = "2.5", ticks = "50" },
 		["cook_time:Oven"] = { "2.5 seconds", clock = "0:02", seconds = "2.5 seconds", secs = "2.5", ticks = "50" },
-	},
-	["Stone Hoe"] = {
-		["attackspeed"] = { "2" },
-		["damage"] = { "{{Hp|1}}", raw = "1" },
-		["durability"] = { "131" },
-		["miningspeed"] = { "4" },
-	},
-	["Stone Pickaxe"] = {
-		["attackspeed"] = { "1.2" },
-		["damage"] = { "{{Hp|3}}", raw = "3" },
-		["durability"] = { "131" },
-		["miningspeed"] = { "4" },
-	},
-	["Stone Shovel"] = {
-		["attackspeed"] = { "1" },
-		["damage"] = { "{{Hp|3.5}}", raw = "3.5" },
-		["durability"] = { "131" },
-		["miningspeed"] = { "4" },
 	},
 	["Stroganoff"] = {
 		["eat_time"] = { "1.8 seconds", raw = "1.8" },

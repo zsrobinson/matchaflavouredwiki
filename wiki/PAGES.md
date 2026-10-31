@@ -78,7 +78,7 @@ page with {{Data/Enchantments}})
 Trading · Villager · Farmer · Fisherman · Shepherd · Fletcher · Lumberjack · Archaeologist ·
 Engineer · Chemist · Jeweler · Cook · Mouthpiece · Mason · Weaponsmith · Butcher/Librarian
 etc. redirects as needed · Wandering Trader · Obol · Block of Obol · Asylum Seeker ·
-Amnestic · Favorite food · Bulk blocks (and each Bulk X item) · Bundles (Seed Bundle,
+Amnestic · Favorite food · Hero of the Village (the pack's gift tables) · Bulk blocks (and each Bulk X item) · Bundles (Seed Bundle,
 Exotic Seed Bundle, Floral Bundle, Mushy Bundle, Geothermal Bundle) · Livestock (Calf,
 Highland Calf, Sindhi Calf, Piglet, Mangalica Piglet, Bushpiglet, White Lamb, Black Lamb,
 Brown Lamb, Fertilized Egg variants) · Beacon Kindling · Explorer maps · Sacred texts

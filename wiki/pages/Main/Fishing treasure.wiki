@@ -1,23 +1,23 @@
-'''Fishing treasure''' is the most valuable category of [[fishing]] loot. It can only be caught when the bobber is in open water. Its weight is 5 with quality +2. The chance per catch in open water is 5% with no luck and 11.34% with {{MCW|Luck of the Sea}} III, in any biome (see [[Fishing#Choosing the catch]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
+'''Fishing treasure''' is the most valuable category of [[fishing]] loot. It can only be caught when the bobber is in open water. Its weight is 5 with quality +1. The chance per catch in open water is 5% with no luck and 8% with {{MCW|Luck of the Sea}} III, in any biome (see [[Fishing#Choosing the catch]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
 
 == Loot ==
 Several entries have a quality, so Luck of the Sea shifts the odds toward chests and [[Crystal Heart]]s.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/treasure.json}}</ref>
 {| class="wikitable sortable"
 ! Item !! Count !! Weight !! Quality !! No luck !! Luck of the Sea I !! II !! III
 |-
-| {{ItemLink|Obol}} || 1–2 || 24 || 0 || 39.34% || 37.5% || 35.82% || 34.29%
+| {{ItemLink|Obol}} || 1–2 || 72 || 0 || 42.11% || 41.38% || 40.68% || 40%
 |-
-| Enchanted {{ItemLink|Fishing Rod}} || 1 || 14 || 0 || 22.95% || 21.88% || 20.9% || 20%
+| Enchanted {{ItemLink|Fishing Rod}} || 1 || 42 || 0 || 24.56% || 24.14% || 23.73% || 23.33%
 |-
-| {{ItemLink|Hell-Bound Book}} || 1 || 10 || 0 || 16.39% || 15.62% || 14.93% || 14.29%
+| {{ItemLink|Hell-Bound Book}} || 1 || 30 || 0 || 17.54% || 17.24% || 16.95% || 16.67%
 |-
-| {{MCW|Angler Pottery Sherd}} || 1 || 5 || −1 || 8.2% || 6.25% || 4.48% || 2.86%
+| {{MCW|Angler Pottery Sherd}} || 1 || 15 || −1 || 8.77% || 8.05% || 7.34% || 6.67%
 |-
-| {{MCW|Goat Horn}} || 1 || 5 || −1 || 8.2% || 6.25% || 4.48% || 2.86%
+| {{MCW|Goat Horn}} || 1 || 5 || −1 || 2.92% || 2.3% || 1.69% || 1.11%
 |-
-| {{ItemLink|Crystal Heart}} || 1 || 2 || +2 || 3.28% || 6.25% || 8.96% || 11.43%
+| {{ItemLink|Crystal Heart}} || 1 || 6 || +2 || 3.51% || 4.6% || 5.65% || 6.67%
 |-
-| {{ItemLink|Chest}} of buried treasure || 1 || 1 || +3 || 1.64% || 6.25% || 10.45% || 14.29%
+| {{ItemLink|Chest}} of buried treasure || 1 || 1 || +3 || 0.58% || 2.3% || 3.95% || 5.56%
 |}
 
 * The fishing rod is enchanted as if at level 30 and has only 0–25% of its durability left.
@@ -34,7 +34,9 @@ The developer made treasure rarer in 1.10 so that players who don't enjoy fishin
 {{History line|1.12|Buried treasure buffed slightly.}}
 {{History line|1.12.1-alpha|Treasure tweaked. Sacred texts made rarer in the buried treasure. The release notes also say nautilus shells were added to it, but the current fishing chest has none.}}
 {{History line|1.12.7-beta|Treasure went from 5% to 31.25% of open-water catches in biomes with fish, because the reworked biome entry has a weight of 1.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|at=34a04e6571d9ee6f0cc1d8d50cdfa85980720156}}</ref>}}
-{{History line|1.12.8-beta|date=October 23, 2026|Back to 5% of open-water catches, as the biome tables weigh 85 again.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|Back to 5% of open-water catches, as the biome tables weigh 85 again.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json|at=58e88dcec369fe3293fb25a15214249d116a100e}}</ref>}}
+{{History line|1.12.9|date=October 31, 2026|Treasure's quality lowered from +2 to +1, so Luck of the Sea III raises it to 8% of open-water catches instead of 11.34%.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing.json}}</ref>
+Every treasure weight tripled except the goat horn's and the chest's, which makes those two rarer: a goat horn went from 8.2% to 2.92% of treasure and a chest from 1.64% to 0.58%.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/fishing/treasure.json}}</ref>}}
 }}
 
 == References ==
