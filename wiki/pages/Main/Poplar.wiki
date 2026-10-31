@@ -32,6 +32,10 @@ A [[stonecutter]] cuts any poplar log (a log, wood, or the stripped form of eith
 | Stripped poplar log, poplar wood or stripped poplar wood || 1 poplar log
 |-
 | Stripped poplar log, poplar log or stripped poplar wood || 1 poplar wood
+|-
+| Poplar log, poplar wood or stripped poplar wood || 1 stripped poplar log<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_poplar_log_from_stonecutting_poplar_logs.json}}</ref>
+|-
+| Poplar log, poplar wood or stripped poplar log || 1 stripped poplar wood<ref>{{Source|MF_datapack/data/matcha/recipe/stonecutting/stripped_poplar_wood_from_stonecutting_poplar_logs.json}}</ref>
 |}
 
 == Blocks and items ==
@@ -40,7 +44,7 @@ A [[stonecutter]] cuts any poplar log (a log, wood, or the stripped form of eith
 |-
 | Poplar Log, Stripped Poplar Log || Drops itself. With an adamant tool it drops charcoal instead.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/poplar_log.json}}</ref><ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/stripped_poplar_log.json}}</ref>
 |-
-| Poplar Planks || Pale grey. A vertical version of the texture is used for double slabs (see [[Vertical slabs]]).<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/poplar_slab.json}}</ref>
+| Poplar Planks || Pale grey. A vertical version of the texture is used for double slabs (see [[Vertical slabs]]).<ref>{{Source|MF_resourcepack/assets/minecraft/blockstates/poplar_slab.json}}</ref> Two poplar slabs craft back into one plank block, a recipe unlocked by picking up poplar planks.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/poplar_planks_from_slabs.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/poplar_planks.json}}</ref>
 |-
 | Poplar Slab, Poplar Stairs, Poplar Fence, Poplar Fence Gate, Poplar Door, Poplar Trapdoor, Poplar Button, Poplar Pressure Plate, Poplar Sign, Poplar Shelf || Cut in the stonecutter.
 |-
@@ -55,6 +59,7 @@ Poplar wood, stripped poplar wood, boats, boats with chests and hanging signs ar
 |{{History line|1.12.1-alpha|Poplar stonecutter recipes and a poplar sapling recipe added, naming items that don't exist in 26.2.}}
 {{History line|1.12.2|Added poplar leaf, log and plank textures. Removed the poplar stonecutter and sapling recipes.}}
 {{History line|1.12.6-alpha|2=Poplar is in the game with ''Minecraft'' 26.3 (first in the 1.12.3 alpha for 26.3). Poplar stonecutter recipes, the poplar sapling recipe and a Lumberjack trade for poplar logs are added again. Poplar trees are two blocks taller than in vanilla. Poplar leaves get new textures, like every leaf in the pack.<ref>{{Cite changelog|1.12.6-alpha|quote=Leaf textures changed for optimisation reasons (Let me know what you think)}}</ref>}}
+{{History line|1.12.9|Poplar logs and wood can be cut into stripped poplar logs and stripped poplar wood, and two poplar slabs craft back into planks, as for the other woods.}}
 }}
 
 == Trivia ==

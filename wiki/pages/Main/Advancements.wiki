@@ -104,7 +104,7 @@ The Hell tab appears when the player first enters [[Hell]]. Its main line follow
 |matcha:hell/steal_all_prayers=Craft each of the 17 blessings that count for Apocrypha. Since 1.12.8-beta the Prayers of Apollo, Ares, Artemis, Cronus, Glaucus and Talos and the hell-bound book are no longer needed (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json}}</ref>
 |matcha:hell/obtain_warding_stone=Craft a [[Warding Stone|warding stone]].
 |matcha:hell/obtain_ancient_debris=Have ancient debris or [[Adamant Scrap|adamant scrap]] in the inventory.
-|matcha:hell/wither_breaks_heart=Granted by a function when the [[Wither effect]] runs its course on Normal or Hard and costs the player a heart.<ref>{{Source|MF_datapack/data/matcha/function/effects/wither/effect_normal.mcfunction}}</ref>
+|matcha:hell/wither_breaks_heart=Granted by a function when the [[Wither effect]] runs its course on Normal or Hard and costs the player a heart.<ref>{{Source|MF_datapack/data/matcha/function/effects/wither/heartbreaker.mcfunction}}</ref>
 }}
 
 == The End ==
