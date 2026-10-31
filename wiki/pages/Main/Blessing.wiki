@@ -12,7 +12,7 @@ A '''blessing''' is an enchanted book crafted from a [[Hell-Bound Book]] and a s
 
 == Obtaining ==
 === Crafting ===
-Every blessing is a shaped [[Crafting Table|crafting]] recipe with a Hell-Bound Book in the center slot. The surrounding slots (up to eight) hold ingredients tied to the enchantment and the figure it is named after. The recipes are in the pack's <code>recipe/blessing</code> folder.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/prometheus.json}}</ref>
+Every blessing is a shaped [[Crafting Table|crafting]] recipe with a Hell-Bound Book in the center slot. The surrounding slots (up to eight) hold ingredients tied to the enchantment and the figure it is named after. The recipes are in the pack's <code>recipe/blessing</code> folder.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/prometheus.json}}</ref> Crafting a Hell-Bound Book unlocks all 23 blessing recipes; since 1.12.9 the "Unholy Knowledge" advancement for that craft unlocks them as well.<ref>{{Source|MF_datapack/data/matcha/advancement/recipe_unlocks/hell_bound_book.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/hell/craft_hell_bound_book.json}}</ref>
 
 {{Data/Blessings}}
 
@@ -37,9 +37,9 @@ The three elegies are named after tragic figures of Greek myth (Arachne, Hyacint
 |-
 | Unholy Knowledge || Craft a Hell-Bound Book || Craft a [[Hell-Bound Book]].
 |-
-| Apocrypha || Steal Prayers from a long-dead God || Craft any one of 17 blessings. The Prayers of Apollo, Ares, Artemis, Cronus, Glaucus and Talos do not count.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/craft_blessing.json}}</ref>
+| Apocrypha || Steal Prayers from a long-dead God || Craft any blessing. Until 1.12.8-beta the Prayers of Apollo, Ares, Artemis, Cronus, Glaucus and Talos did not count.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/craft_blessing.json}}</ref>
 |-
-| Demonic Emissary || Steal every prayer from every once-god || Craft each of the same 17 blessings. Until 1.12.7-beta it needed all 23 blessings and a Hell-Bound Book. A challenge that rewards 10 [[Obol]]s.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json}}</ref>
+| Demonic Emissary || Steal every prayer from every once-god || Craft each of the 23 blessings. Until 1.12.7-beta it also needed a Hell-Bound Book, and in 1.12.8-beta only 17 blessings counted. A challenge that rewards 10 [[Obol]]s.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json}}</ref>
 |}
 
 == History ==
@@ -51,7 +51,8 @@ The three elegies are named after tragic figures of Greek myth (Arachne, Hyacint
 {{History line|1.12.1-alpha|Added the Prayer of Midas. Fixed blessing recipe unlocks.}}
 {{History line|1.12.2|The pack's enchantments moved to the <code>matcha</code> namespace, but five blessings still gave the old <code>main:</code> enchantments, which are converted when the item is equipped.}}
 {{History line|1.12.3|All five blessings store the current enchantments directly, so they combine and apply like normal books.}}
-{{History line|1.12.8-beta|date=October 23, 2026|Wind Burst I moved from the [[Prayer of Aeolus]] to the [[Elegy of Hyacinthus]]. The recipe IDs are now named after each blessing's figure (<code>matcha:blessing/will</code> instead of <code>matcha:blessing/reach</code>, and so on); the recipes are otherwise unchanged.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref> "Demonic Emissary" needs only the 17 blessings that count for "Apocrypha", no longer the Prayers of Apollo, Ares, Artemis, Cronus, Glaucus and Talos or a Hell-Bound Book.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json}}</ref>}}
+{{History line|1.12.8-beta|date=October 23, 2026|Wind Burst I moved from the [[Prayer of Aeolus]] to the [[Elegy of Hyacinthus]]. The recipe IDs are now named after each blessing's figure (<code>matcha:blessing/will</code> instead of <code>matcha:blessing/reach</code>, and so on); the recipes are otherwise unchanged.<ref>{{Source|MF_datapack/data/matcha/recipe/blessing/hyacinthus.json}}</ref> "Demonic Emissary" needs only the 17 blessings that count for "Apocrypha", no longer the Prayers of Apollo, Ares, Artemis, Cronus, Glaucus and Talos or a Hell-Bound Book.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json|at=58e88dcec369fe3293fb25a15214249d116a100e}}</ref>}}
+{{History line|1.12.9|"Apocrypha" counts all 23 blessings, and "Demonic Emissary" needs all 23 again; in 1.12.8-beta both skipped the Prayers of Apollo, Ares, Artemis, Cronus, Glaucus and Talos. "Unholy Knowledge" also unlocks the blessing recipes.<ref>{{Source|MF_datapack/data/matcha/advancement/hell/craft_blessing.json}}</ref><ref>{{Source|MF_datapack/data/matcha/advancement/hell/steal_all_prayers.json}}</ref><ref>{{Cite changelog|1.12.9|quote=Blessing advs fixed}}</ref>}}
 }}
 
 == See also ==

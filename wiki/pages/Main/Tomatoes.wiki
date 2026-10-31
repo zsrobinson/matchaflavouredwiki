@@ -9,6 +9,8 @@
 === Farming ===
 Tomatoes grow from [[Tomato Seeds|tomato seeds]] like beetroots. A fully grown crop drops 1 to 3 tomatoes and no seeds; an unripe one drops 1 seed. The loot table applies [[Fortune]] and the [[Electrum equipment|Electrum]] tool intrinsic and then sets the count to 1 to 3, which overrides both bonuses, so neither adds tomatoes (see [[Known bugs]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref> Seeds are made by crafting a tomato into 3 seeds.
 
+A crop broken by a villager drops differently: a fully grown one gives exactly 2 tomatoes and 2 tomato seeds, and an unripe one 2 seeds. This lets a [[Farmer|farmer]] villager, who only plants seeds, replant the tomatoes he harvests.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref><ref>{{Cite changelog|1.12.9|quote=Villagers can now replant tomatoes}}</ref>
+
 {{Sources}}
 
 == Usage ==
@@ -27,7 +29,8 @@ Picking up tomatoes unlocks [[Grilled Tomatoes|grilled tomatoes]], [[Sun-dried T
 {{History line|1.10|Tomato recipes unlock from raw tomatoes.}}
 {{History line|1.12.2|The release notes say Fortune now works on tomatoes, but the loot table's fixed count cancels it.}}
 {{History line|1.12.3|Fortune and the Electrum intrinsic add tomatoes: the table now sets the count before the bonuses.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json|at=d41ac64dd7efde6748884d02c75a46b8f4800797}}</ref>}}
-{{History line|1.12.6-alpha|The table sets the count after the Fortune and Electrum bonuses again, so they no longer add tomatoes.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref>}}
+{{History line|1.12.6-alpha|The table sets the count after the Fortune and Electrum bonuses again, so they no longer add tomatoes.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json|at=58e88dcec369fe3293fb25a15214249d116a100e}}</ref>}}
+{{History line|1.12.9|date=October 31, 2026|A fully grown crop broken by a villager drops 2 tomatoes and 2 seeds, so farmer villagers can replant tomatoes.<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref>}}
 }}
 
 == See also ==

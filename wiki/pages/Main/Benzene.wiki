@@ -14,7 +14,7 @@ The recipe is shapeless: a [[Glass Bottle]], three [[Hellspore]] and a [[Sulfur 
 A Hell-Bound Book takes one Benzene directly and one more through its Stabilized Estus, so each blessing costs two Benzene. Benzene is also crafted with an echo shard and two sculk veins into an {{MCW|Ominous Bottle|ominous bottle}}, which is needed for the [[Prayer of Midas]].<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/ominous_bottle.json}}</ref>
 
 == Behavior ==
-Benzene is still a spawn egg item. Like any spawn egg in the pack, using it on a [[spawner]] or trial spawner outside Creative mode destroys every spawner and trial spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
+Benzene is still a spawn egg item. Like any spawn egg in the pack, using it on a [[spawner]] or trial spawner outside Creative mode destroys every spawner and trial spawner within 16 blocks and deals 1 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
 
 == Advancements ==
 {| class="wikitable"

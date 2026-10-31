@@ -1,5 +1,7 @@
 {{About|features that are not yet in a release|released versions|Version history}}
-This page collects features of [[Matcha Flavoured]] that are in development or planned, as recorded in the repository's <code>docket_and_checklist.md</code> and in-development <code>changelog.md</code>, the developer's <code>my_current_and_future_plans.md</code> and the README. None of it is in the current release, {{Version|{{Current version}}}}, and plans may change or be dropped. What the 26.3 branch held before that release is described on {{Version|1.12.8-beta}}.
+This page collects features of [[Matcha Flavoured]] that are in development or planned, as recorded in the repository's <code>docket_and_checklist.md</code> and in-development <code>changelog.md</code>, the developer's <code>my_current_and_future_plans.md</code> and the README. None of it is in the current release, {{Version|{{Current version}}}}, and plans may change or be dropped. The docket was deleted from the repository in that release, so its plans are as it last stood in {{Version|1.12.8-beta}}.
+
+The {{Version|1.12.9}} release notes say the pack is "on break": the developer will not add more features for some time. They plan to port the pack when the next ''Minecraft'' drop comes out and then to redo the [[freezing water]] effect, since the game now has a freezing effect, and say that this should be the only real change until they are ready to add more. They will make a new video when more is being added, and future versions will have a "recap" changelog of everything added since the last release.<ref>{{Cite changelog|1.12.9|quote=I will not add anymore features to matcha for some time. I do want to port when the new drop comes out, and when it does I'm going to re-do the frozen water effect since we now have access to the freezing effect.}}</ref>
 
 == Next update ==
 {{Planned|type=section}}
@@ -25,7 +27,7 @@ The docket lists these as planned for later updates:<ref>{{Source|docket_and_che
 ; Advancements
 : "Echoes" (restore an echo shard's memory), "Child of Moros" (smith a full adamant set) and "Harbinger of Fate" (smith adamant elytra).
 ; Low-priority bugs (see also [[Known bugs]])
-: Keep structures out of the safe-surface spawning check, fix Trailblaze's speed boost on mud brick slabs while running, and replace the toolsmith's gift of stone tools.
+: Keep structures out of the safe-surface spawning check and fix Trailblaze's speed boost on mud brick slabs while running. A third, replacing the toolsmith's gift of stone tools, was done in {{Version|1.12.9}}, whose toolsmith gives [[Jewelry|earrings]] instead.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/toolsmith_gift.json}}</ref>
 ; Language
 : Descriptions for each difficulty in the options menu.
 

@@ -15,7 +15,7 @@
 * Random enchanted books in chests and fishing treasure, and trial chamber vaults.
 
 == Behavior ==
-Mending repairs the item when the player picks up experience orbs, as in vanilla. Experience left over after the repair is kept, though the pack hides the experience bar and level number; see [[Anvil#Experience]].<ref>{{Source|MF_resourcepack/assets/minecraft/shaders/core/text.vsh}}</ref> Up to 1.12.6-alpha, the pack reset players' experience to 0 each tick outside a short window after using an anvil, so they didn't keep the experience they collected.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref> Items can also be repaired at an [[anvil]] indefinitely, since the pack removes the prior-work penalty; see [[Repairing]].
+Mending repairs the item when the player picks up experience orbs, as in vanilla. Experience left over after the repair is kept, though the pack hides the experience bar and level number; see [[Anvil#Experience]].<ref>{{Source|MF_resourcepack/assets/minecraft/lang/en_us.json}}</ref> Up to 1.12.6-alpha, the pack reset players' experience to 0 each tick outside a short window after using an anvil, so they didn't keep the experience they collected.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/anvil_xp/remove_xp.mcfunction|at=fe225857ed8af507b7f5755f4d41678f6862b1bd}}</ref> Items can also be repaired at an [[anvil]] indefinitely, since the pack removes the prior-work penalty; see [[Repairing]].
 
 Its anvil cost multiplier is 1, down from 4.
 

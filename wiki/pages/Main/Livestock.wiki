@@ -67,7 +67,7 @@ Using a livestock item on a block spawns a baby animal of that breed, which grow
 The calves, piglets and lambs are shown as crates and do not stack. The fertilized eggs use the vanilla egg textures of their color.<ref>{{Source|MF_datapack/data/matcha/villager_trade/farmer/3/baby_warm_pig.json}}</ref>
 
 == Behavior ==
-Livestock items are spawn eggs. Using one on a [[spawner]] or trial spawner in Survival destroys every spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
+Livestock items are spawn eggs. Using one on a [[spawner]] or trial spawner in Survival destroys every spawner within 16 blocks and deals 1 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
 
 == History ==
 {{History|

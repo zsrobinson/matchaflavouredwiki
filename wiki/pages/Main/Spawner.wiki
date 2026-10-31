@@ -35,7 +35,7 @@ As with any hostile mob, spawner mobs are also subject to the [[Spawning#Surface
 === Spawn eggs ===
 If a player who is not in Creative mode uses a spawn egg on a spawner or a trial spawner:<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
 * every spawner and trial spawner within 16 blocks of the player is destroyed (using the <code>destroy</code> mode of <code>/fill</code>, which drops their loot);
-* the player takes 20 damage ({{Hp|20}}), enough to kill a player with 10 hearts and no armor.
+* the player takes 1 damage ({{Hp|1}}). Until 1.12.8-beta it was 20 damage, enough to kill a player with 10 hearts and no armor; the 1.12.9 release notes say "Being naughty no longer kills you".<ref>{{Cite changelog|1.12.9|quote=Being naughty no longer kills you, because of a contingency I found}}</ref>
 
 The check matches item IDs, not item names, so it also applies to the pack's items that are built on spawn eggs, such as the [[Bedrock Buster|bedrock buster]], {{ItemLink|Flour}}, {{ItemLink|Dough}}, {{ItemLink|Raw Diamond}}, {{ItemLink|Nazar}} and the curry stocks.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/no_eggs_on_spawners.json}}</ref>
 
@@ -46,6 +46,7 @@ The check matches item IDs, not item names, so it also applies to the pack's ite
 {{History line|1.10|Trial chamber spawner loot tables changed.}}
 {{History line|1.12.1-alpha|Summoning items can no longer be used on spawners.}}
 {{History line|1.12.2|Mobs spawned from spawners no longer drop anything. Spawners no longer kill players who place a block on them, only those who use a spawn egg on them.}}
+{{History line|1.12.9|Using a spawn egg on a spawner deals 1 damage instead of 20, so it no longer kills the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>}}
 }}
 
 == Trivia ==

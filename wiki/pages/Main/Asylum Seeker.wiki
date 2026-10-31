@@ -59,7 +59,7 @@ The cause of emigration is descriptive only: it appears in the tooltip but does 
 == Behavior ==
 The Asylum Seeker is a villager spawn egg. The summoned villager is invisible for its first tick, so it appears together with the smoke.<ref name="trade" />
 
-Like other spawn eggs, using an Asylum Seeker on a [[spawner]] or trial spawner in Survival destroys every spawner within 16 blocks and deals 20 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
+Like other spawn eggs, using an Asylum Seeker on a [[spawner]] or trial spawner in Survival destroys every spawner within 16 blocks and deals 1 damage to the player.<ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
 
 == Advancements ==
 * '''A Good Samaritan''': "Cover the Relocation costs for an Asylum Seeker, and make a home for them here". Buy an Asylum Seeker from a wandering trader. Rewards 1 obol.<ref>{{Source|MF_datapack/data/matcha/advancement/tutorial/trade_for_asylum_seeker.json}}</ref>

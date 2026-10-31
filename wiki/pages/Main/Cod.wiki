@@ -28,7 +28,7 @@ The same tables are also rolled by the drops of {{MCW|Guardian|guardians}} and {
 {{Sources}}
 
 === Mob loot ===
-Mobs that drop cod in vanilla still do, and {{MCW|Cat|cats}} can bring cod as a morning gift. These cod have no rarity line, so the Fisherman won't buy them.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/cat_morning_gift.json}}</ref> Until {{Version|1.12.8-beta}} {{MCW|Guardian|guardians}} also dropped such cod (a 2 in 3 chance of 1, plus 0–1 per level of Looting); since then a guardian has a 2 in 3 chance of rolling the fishing table instead (see [[Fishing#Other sources of fishing loot]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/guardian.json}}</ref>
+Mobs that drop cod in vanilla still do, and {{MCW|Cat|cats}} can bring cod as a morning gift. These cod have no rarity line, so the Fisherman won't buy them.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/cat_morning_gift.json}}</ref> Until {{Version|1.12.8-beta}} {{MCW|Guardian|guardians}} also dropped such cod (a 2 in 3 chance of 1, plus 0–1 per level of Looting); since then a guardian has a 2 in 3 chance of rolling the fishing loot instead, and since {{Version|1.12.9}} only the biome's table, so in cold and cool oceans that roll is always one of the fish above (see [[Fishing#Other sources of fishing loot]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/guardian.json}}</ref>
 
 == Usage ==
 === Food ===
@@ -59,6 +59,7 @@ The [[Angler's Almanac]] has an entry for cod under Cold Saltwater (listed chanc
 {{History line|1.12.1-alpha|Added an Angler's Almanac entry and a catch sound.
 The item format changed; fish caught before this version can no longer be sold.}}
 {{History line|1.12.8-beta|date=October 23, 2026|Guardians no longer drop plain cod; they roll the fishing table instead.<ref>{{Cite changelog|1.12.8-beta|quote=Guardians now drop matcha fish}}</ref>}}
+{{History line|1.12.9|date=October 31, 2026|Guardians and elder guardians roll only the biome's fishing table, so they no longer drop junk in place of fish.<ref>{{Source|MF_datapack/data/minecraft/loot_table/entities/guardian.json}}</ref>}}
 }}
 
 == See also ==

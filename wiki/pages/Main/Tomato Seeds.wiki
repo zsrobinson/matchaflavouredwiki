@@ -8,7 +8,7 @@
 
 === Crafting ===
 {{Recipes}}
-One tomato crafts into 3 seeds.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/tomato_seeds_from_tomato.json}}</ref> A fully grown tomato crop drops no seeds, so replanting uses tomatoes.
+One tomato crafts into 3 seeds.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/tomato_seeds_from_tomato.json}}</ref> A fully grown tomato crop drops no seeds, so replanting uses tomatoes. The exception is a crop broken by a villager, which drops 2 seeds as well as its tomatoes, so farmer villagers can replant it (see [[Tomatoes#Farming]]).<ref>{{Source|MF_datapack/data/minecraft/loot_table/blocks/beetroots.json}}</ref>
 
 {{Sources}}
 

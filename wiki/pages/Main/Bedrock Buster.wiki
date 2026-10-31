@@ -18,7 +18,7 @@ The 1.12.9 release notes give the reason trial spawners and vaults were added: "
 
 === Spawners ===
 {{Main|Spawner#Spawn eggs}}
-Because it is a spawn egg, using a bedrock buster on a spawner counts as putting a spawn egg on it: every spawner within 16 blocks is destroyed and the player takes 20 damage.<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/no_eggs_on_spawners.json}}</ref>
+Because it is a spawn egg, using a bedrock buster on a spawner counts as putting a spawn egg on it: every spawner and trial spawner within 16 blocks is destroyed and the player takes 1 damage (20 until 1.12.8-beta).<ref>{{Source|MF_datapack/data/matcha/advancement/mechanics/no_eggs_on_spawners.json}}</ref><ref>{{Source|MF_datapack/data/matcha/function/mechanics/no_egg_on_spawner.mcfunction}}</ref>
 
 == History ==
 {{History|
