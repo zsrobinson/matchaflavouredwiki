@@ -7,7 +7,7 @@
 '''Hero of the Village''' gifts are the items that [[villager]]s throw to a player who has the {{MCW|Hero of the Village}} effect, which is given for defending a village from a {{MCW|Raid|raid}}. Since {{Version|1.12.9}} Matcha Flavoured replaces every profession's gift with its own: seeds and crops from the [[Farmer]], dishes from the [[Cook]], [[Jewelry|earrings]] from the [[Jeweler]], [[Bulk blocks|bulk blocks]] from the [[Mason]] and so on.<ref>{{Cite changelog|1.12.9|quote=Villager Gifts updated (HapppySpud)}}</ref>
 
 == Mechanics ==
-The effect and the way villagers give gifts work as in vanilla: while the player has the effect, a villager that sees the player now and then throws one gift, rolled from the loot table of its profession. Only the loot tables are changed. Each table rolls once and gives one entry; the tables below list the chance of each.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/farmer_gift.json}}</ref>
+The effect and the way villagers give gifts work as in vanilla: while the player has the effect, villagers near the player now and then throw a gift, rolled from the loot table of their profession. Only the loot tables are changed. Each table rolls once and gives one entry; the tables below list the chance of each.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/farmer_gift.json}}</ref>
 
 A raid starts when a player with {{MCW|Bad Omen}} or {{MCW|Raid Omen}} enters a village, and the pack lets players craft the [[Ominous Bottle|ominous bottle]] that gives it.<ref>{{Source|MF_datapack/data/matcha/recipe/crafting/ominous_bottle.json}}</ref> The pack's [[Village|villages]] generate without villagers, so the villagers that give gifts are ones the player has brought in or bred (see [[Villager#Spawning]]).
 
@@ -52,7 +52,7 @@ An engineer gives 8 of a redstone component, under the pack's names: [[Electric 
 {{Data/Loot/minecraft/gameplay/hero_of_the_village/armorer_gift}}
 
 === Chemist (cleric) ===
-A chemist always gives a [[Glass Bottle|water bottle]].<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/cleric_gift.json}}</ref>
+A chemist always gives a [[Water Bottle|water bottle]], which the pack turns into its stackable water bottle when picked up.<ref>{{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/cleric_gift.json}}</ref>
 
 {{Data/Loot/minecraft/gameplay/hero_of_the_village/cleric_gift}}
 
@@ -92,7 +92,6 @@ The pack's tables for baby and unemployed villagers give the same as vanilla's: 
 == See also ==
 * [[Villager]]
 * [[Trading]]
-* [[Removed features]]
 
 == References ==
 {{Reflist}}
