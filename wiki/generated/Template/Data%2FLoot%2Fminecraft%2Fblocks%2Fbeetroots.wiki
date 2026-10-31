@@ -2,8 +2,12 @@
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
+| {{ItemLink|Tomatoes}} || 2 || 100% || 100% || entity condition, block state property
+|-
+| {{ItemLink|Tomato Seeds}} || 2 || 100% || 100% || entity condition
+|-
 | {{ItemLink|Tomatoes}} || 1–3 || 100% || 100% || block state property
 |-
-| {{ItemLink|Tomato Seeds}} || 1 || 100% || 100% || without block state property
+| {{ItemLink|Tomato Seeds}} || 1 || 100% || 100% || without entity condition, block state property
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

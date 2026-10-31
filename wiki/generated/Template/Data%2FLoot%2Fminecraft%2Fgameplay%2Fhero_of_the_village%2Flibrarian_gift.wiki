@@ -1,7 +1,9 @@
-<includeonly><small>Loot table <code>minecraft:gameplay/hero_of_the_village/librarian_gift</code> ({{Source|vanilla:loot_table/gameplay/hero_of_the_village/librarian_gift.json|source}}); pools roll 1 time(s).</small>
+<includeonly><small>Loot table <code>minecraft:gameplay/hero_of_the_village/librarian_gift</code> ({{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/librarian_gift.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Book|mcw=Book}} || 1 || 100% || 100% || 
+| {{ItemLink|Book|mcw=Book}} || 1 || 50.0% || 50.0% || 
+|-
+| {{ItemLink|Book and Quill|mcw=Book and Quill}} || 1 || 50.0% || 50.0% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

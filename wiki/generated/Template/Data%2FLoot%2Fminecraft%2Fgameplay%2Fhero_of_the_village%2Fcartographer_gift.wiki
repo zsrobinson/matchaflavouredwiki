@@ -1,9 +1,19 @@
-<includeonly><small>Loot table <code>minecraft:gameplay/hero_of_the_village/cartographer_gift</code> ({{Source|vanilla:loot_table/gameplay/hero_of_the_village/cartographer_gift.json|source}}); pools roll 1 time(s).</small>
+<includeonly><small>Loot table <code>minecraft:gameplay/hero_of_the_village/cartographer_gift</code> ({{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/cartographer_gift.json|source}}); pools roll 1 time(s). Overrides the vanilla table.</small>
 {| class="wikitable sortable loot-table"
 ! Item !! Stack size !! Chance per roll !! Chance per table !! Notes
 |-
-| {{ItemLink|Empty Map|mcw=Empty Map}} || 1 || 50.0% || 50.0% || 
+| {{ItemLink|Empty Map|mcw=Empty Map}} || 1 || 20.0% || 20.0% || 
 |-
-| {{ItemLink|Paper|mcw=Paper}} || 1 || 50.0% || 50.0% || 
+| {{ItemLink|Paper|mcw=Paper}} || 1 || 20.0% || 20.0% || 
+|-
+| {{ItemLink|Nazar}} || 1 || 20.0% || 20.0% || 
+|-
+| {{ItemLink|Wooden Cross}} || 1 || 20.0% || 20.0% || 
+|-
+| {{ItemLink|Copper Compass}} || 1 || 12.0% || 12.0% || 
+|-
+| {{ItemLink|Golden Compass}} || 1 || 6.00% || 6.00% || 
+|-
+| {{ItemLink|Titanium Compass}} || 1 || 2.00% || 2.00% || 
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>

@@ -1,0 +1,16 @@
+<includeonly>{{Infobox
+|title={{#if:{{{title|}}}|{{{title}}}|Bucket of Tropical Fish}}
+|image={{#if:{{{image|}}}|{{{image}}}|Bucket of Tropical Fish.png}}
+|imagesize=160px
+|invimage=Bucket of Tropical Fish
+|caption={{{caption|}}}
+|extrarows={{{extrarows|}}}
+|bonus={{{bonus|}}}
+|type={{#if:{{{type|}}}|{{{type}}}|Food}}
+|intrinsics={{{intrinsics|}}}
+|renewable={{{renewable|}}}
+|stackable=No
+|id=<code>minecraft:tropical_fish_bucket</code>
+|source={{Source|MF_datapack/data/minecraft/loot_table/gameplay/hero_of_the_village/fisherman_gift.json|fisherman_gift.json}}
+}}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
+[[Category:Generated data]]</noinclude>

@@ -142,7 +142,15 @@ def fishing_climates():
     loot = data()['loot']
     out = {}
     claimed = set()  # an alternatives entry gives its first child that applies: later ones miss these biomes
+    entries = []
     for e in loot[FISHING]['entries']:
+        # an entry that rolls a table of biome alternatives (gameplay/fishing/biomes) stands for its children
+        inner = (loot.get(e.get('loot_table') or '') or {}).get('entries') or []
+        if inner and all(c.get('slot_kind') == 'alternatives' and c.get('loot_table') for c in inner):
+            entries += inner
+        else:
+            entries.append(e)
+    for e in entries:
         table = e.get('loot_table', '')
         biomes = None
         for c in e.get('conditions') or []:

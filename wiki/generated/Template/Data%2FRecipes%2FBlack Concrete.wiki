@@ -2,6 +2,10 @@
 ! Name !! Ingredients !! Recipe
 |-
 | [[Black Concrete]]
+| 2 × {{MCW|Black Concrete Slab}}
+| {{Crafting|A1=Black Concrete Slab|B1=Black Concrete Slab|Output=Black Concrete|shapeless=1}}
+|-
+| [[Black Concrete]]
 | {{MCW|Potion}} +<br />8 × {{MCW|Black Concrete Powder}}
 | {{Crafting|A1=Potion|B1=Black Concrete Powder|C1=Black Concrete Powder|A2=Black Concrete Powder|B2=Black Concrete Powder|C2=Black Concrete Powder|A3=Black Concrete Powder|B3=Black Concrete Powder|C3=Black Concrete Powder|Output=Black Concrete,8|shapeless=1}}
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.

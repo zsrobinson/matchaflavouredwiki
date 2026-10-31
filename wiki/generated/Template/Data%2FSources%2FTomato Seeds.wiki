@@ -19,10 +19,19 @@
 | Trail ruins common || 1 || 2.27% || 
 |}
 
+'''Gameplay'''
+{| class="wikitable sortable loot-table"
+! Source !! Stack size !! Chance !! Notes
+|-
+| Hero of the village / farmer gift || 8 || 6.25% || 
+|}
+
 '''Block drops'''
 {| class="wikitable sortable loot-table"
 ! Source !! Stack size !! Chance !! Notes
 |-
-| Beetroots || 1 || 100% || without block state property
+| Beetroots || 2 || 100% || entity condition
+|-
+| Beetroots || 1 || 100% || without entity condition, block state property
 |}</includeonly><noinclude>Generated from the pack source by <code>tools/generate.py</code>. Do not edit.
 [[Category:Generated data]]</noinclude>
