@@ -26,6 +26,7 @@ The datapack also has structure templates for bird roosts: nine for chicken roos
 == History ==
 {{History|
 {{History line|1.12.6-alpha|2=Added debug spawn egg loot tables, a spawn egg model and sounds for the bobwhite (first in the 1.12.3 alpha for 26.3), and unused roost templates and habitat biome tags.}}
+{{History line|Upcoming|2=The in-development <code>26.3-indev</code> branch defines the bobwhite chicken variant and generates plains roosts with bobwhites in them. See [[Upcoming features#Animal ecology]].<ref>{{Source|MF_datapack/data/matcha/chicken_variant/bobwhite.json|at=52de204ea52e49cb94a1f210c2518fd5dae09b2f}}</ref><ref>{{Source|MF_datapack/data/matcha/structure/chicken_roosts/plains/1.nbt|at=52de204ea52e49cb94a1f210c2518fd5dae09b2f}}</ref>}}
 }}
 
 == References ==
