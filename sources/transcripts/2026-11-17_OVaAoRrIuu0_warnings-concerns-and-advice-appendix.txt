@@ -1,0 +1,851 @@
+# Warnings, Concerns, and Advice | Appendix
+# https://www.youtube.com/watch?v=OVaAoRrIuu0 (uploaded 2026-11-17 by Klei_Wright)
+# Auto-generated captions: names are often misspelled; the pack's code is authoritative.
+
+Give me kisses. I want
+three kisses, four kisses,
+ten
+ten kisses.
+Is that a good song?
+Hello, hello everyone. Welcome. We are
+going to be talking today about [music]
+[applause]
+the video I just did, Sorry I'm
+Thinking.
+I'm going to give some advice and some
+warnings and I'm going to clarify some
+confusing confu- confusion. And at the
+end of the video I will talk about how
+I'm implementing this into the data
+pack, this design that I've been talking
+about. And
+stuff I've been doing with Matcha, but
+we're going to wait on that until the
+end because
+I uh
+I want to make sure we get all the good
+stuff out first so that people who only
+care about that
+can can learn it quickly and then move
+on. Let me pull up my notes. That's
+right. I have notes this time.
+So a lot of people seemed excited by the
+prospect of what I was proposing,
+but there are a lot of concerns as well.
+And [music] you know, a lot of those
+concerns were just uh But I do
+think that there were plenty of genuine
+concerns from people who were worried
+about
+certain design implications and
+they just wanted a better idea
+of [music] they wanted to know about
+like optimization was a really big one.
+And we're going to talk about that
+first.
+But I did want to give an opportunity to
+all of those people to kind of address
+some of those concerns and give my take
+on them.
+So first let's talk about optimization
+because there are a lot of optimization
+concerns and I did want to kind of talk
+about this.
+First of all,
+I think it's a non-issue guys. I don't
+think that optimization is something we
+have to worry about.
+The reason I say that is because
+optimization is not something you start
+off with. And this is only Look, I'm not
+a professional game designer, right?
+I've done a lot coding
+for fun.
+Uh-oh.
+That was scary.
+Sorry, I'm getting texts about a family
+member who just got out of surgery.
+Okay, so nothing crazy. It's fine.
+When we talk about optimization, this is
+something that happens after the fact.
+We don't go into something
+worrying about optimization, or at least
+not like we build the prototype first
+and then we worry about optimization,
+right? We want to make sure the design
+works before we worry about
+optimization. And there was also and
+look, I know that there could be
+concerns about this, especially with
+you know,
+people were seem to be really worried
+about unloaded chunks.
+So let's talk about that real quick. Let
+me illustrate this right here um
+so I can show you what I mean.
+If the torch is
+you know,
+where the player is and this stone block
+is the surrounding chunks,
+people were worried [music] about all of
+the chunks around it, right?
+They were saying
+if if we want this to feel alive, we are
+going to have to simulate
+an entire world, right? Many many many
+chunks outside of the player.
+I do not think that this is true. This
+is not something we have to worry about.
+This is not something that we need to to
+do.
+I do think that the recent Minecraft
+change of animals only happening close
+by is going to be an issue, and I will
+talk about that more at the end of the
+video when I take you over, guys, to my
+farm.
+But
+we don't actually need to simulate
+everything outside of the player. We
+only really need to simulate what's
+happening near the player because all of
+these changes
+they only function to help the player
+feel like the world is more alive,
+right?
+It's giving the illusion of life. And
+not just an illusion, there are
+obviously some mechanical changes that
+happen, but we don't need to actually
+have it so that even if the player has
+never been there, it's like all the
+things have been acting. Like don't, no,
+no, no.
+We just need to make it so that if the
+player is nearby, some things change.
+That's all. That's all we need.
+That little bit I think is really going
+to help.
+And the reason I'm I'm so like not
+concerned about optimization is because
+I've already kind of done a lot of the
+things I've been talking about in a data
+pack.
+I've noticed no concerns for
+optimization. But then again,
+my computer apparently is a little bit
+better than most people maybe.
+Uh I say that only because there were
+some optimization problems with Macha
+early in development that I did not
+catch at all because I I don't that is
+not something that I
+stumbled across. I don't think it's that
+big of a deal. I don't think whenever we
+have animal pathing, if we list more
+than one type of block that they can
+path to, that that's going to have a
+huge effect.
+I do think the polar like the running
+might have might have an effect. But
+again, this is all stuff that we figure
+out after the fact. This is not
+something that we go into worrying
+about.
+We have to make sure that this design
+works
+first, and then we can start worrying
+about optimization, and then we can get
+to the point where we're saying,
+well, you know, this might not be worth
+it due to the costs that we have and we
+can't seem to figure out a way to lessen
+those costs.
+There also seem to be concerns about
+tutorialization
+that
+you know, how would a player know that
+like
+doing this is going to Oh, nice.
+How is the player going to know that
+giving these certain conditions is going
+to let a musk ox have more
+more strength? And the answer is it
+doesn't matter, guys. It does not
+matter.
+If they are a technical player who's
+invested in those things, they will look
+at the wiki. If they are not a technical
+player who does not invest in those
+things, it doesn't matter.
+They're not going to notice, you know,
+a a plus one rate of string production
+per hour as opposed to not. Like they
+they don't they're not going to notice
+that. They're not going to care. And
+intuitively,
+players would casual players would just,
+you know, put them in a pen anyways. So
+they would already be producing the
+maximum amount for those people.
+Same with I I got another bullet point
+here. Like more concerns about
+population dynamics.
+This is not a simulation. We do not need
+to worry about every population dynamic
+of every
+possible
+cow and their relationship with the
+polar It doesn't matter.
+We're only trying to do something very
+simple here.
+We're not running a simulation. There's
+no
+I am not advocating for any sort of
+simulation and we don't need to worry
+about that at all. All we need
+is for the player to feel like the world
+is alive and that their animals are
+changing it and that the world
+is changing itself.
+That's all we need.
+Okay. Now I think I've covered most of
+the kind of concerns or at least the
+valid concerns. There are a lot of
+people who
+had real concerns. They're like this is
+a cool idea, but I'm worried about this
+and that's kind of what I want to talk
+about. There were other people who said
+I'm worried about this, but they
+actually meant I hate this idea because
+I hate you.
+Just fair, I guess.
+It is spooky down here, man.
+I just I would played a horror game for
+the members people um
+so I'm still
+a little bit spooked out. It it creeped
+me a bit.
+So my warning to people, I have some
+advice warnings that I wasn't able to
+get across in the video that I do want
+to get across here
+and it's that
+we really have to be careful when
+implementing this stuff that it isn't
+annoying because this can very easily
+cross the threshold from being cool to
+annoying, right? And it's okay for it to
+be a little bit annoying, right? There
+is a balance to be found there.
+It can be annoying in a cool way or it
+can be annoying in a bad way.
+I know that might sound counterintuitive
+and a little bit silly, but I do think
+it's true.
+And I think determining the
+determining the line between something
+being annoying and a Whoa! Oh my Jesus
+Christ, I'm so scared. Determining the
+line between something being annoying in
+a bad way and being annoying in a good
+way is really going to come down to play
+testing.
+It It really is because
+I've encountered some things when
+implementing this where
+it sounded cool in theory, but as I was
+playing, I realized that there's certain
+blocks that certain animals could affect
+that were just not fun.
+I I I would be careful with that and I
+would only say that the the only way
+that you can really determine if
+something is going to be bad or annoying
+in a bad way is if you is if you just
+you just have to play test it. You have
+to get people to try it out. I would
+really advocate for play testing it
+yourself. Like
+really take the time
+when you're making a mod to to sit down
+with it and play it just like a normal
+person would play it and see if you come
+across issues and see if things work and
+see if they don't. Okay, I think those
+are that's all the advice and [music]
+and warnings I have to give for this, so
+we're going to talk about how I
+implemented it now and I'm going to go
+show you guys uh how I did that. I'm
+going to head on up and show you
+what I've been working on and how I did
+it for myself.
+I guess the last thing I want to talk
+about and say is shut up about Vintage
+Story. Please God, stop talking about
+it. I
+I like Vintage Story. Vintage Story does
+not do what I am saying.
+I am sorry. It doesn't. No game really
+does what I'm talking about.
+And yes, I know about Rain World. Like
+these games do not
+Rain World gets close. I I do genuinely
+think that Rain World gets close, but I
+don't think it actually achieves what
+I'm trying to achieve here.
+And I'm really struggling to think of a
+game that does, that isn't, you know,
+trying to be a simulation, right?
+Like where the world is its own
+I would like to know because
+I People also said Rain World in the
+last ecology video I did, and that did
+excite me. So, I looked into it, and it
+just was not at all
+what I meant.
+And that's not to say it was bad. I
+think Rain World is really cool, and I
+think they did a lot of good stuff with
+it.
+I just don't think it
+it was quite what I was wanting.
+I think eichen means acorn. So, it's
+like acorn
+wood board.
+I I'm sorry. I'm talking about the the
+name of the block here. Okay, I'm going
+to stop stressing out as much and
+because all those people are gone, we
+can just kind of talk while I go up and
+show you the stuff that I've been
+working on.
+And I can around and talk about
+other stuff that no one else cares
+about.
+So, this is a new world, by the way.
+This is not my Forever world. I'm going
+to talk a little bit more about this in
+the next video,
+the next diary, probably not the next
+diary, but the next appendix. But
+I've essentially started a new world
+because I really got sick of
+vanilla generation.
+What I mean by that is Look at this map.
+I have a map mod cuz I want to show you
+guys what I'm talking about.
+I installed the continents data pack.
+All right? This is a large biomes world.
+And let's see. Can we see Yeah, okay.
+So, I did some seed scouting cuz I
+wanted to have a really good world for
+my Forever world.
+And I found this place, and it's
+absolutely gorgeous. Let me show you.
+Look at this place. There are
+Let me go over here in free cam.
+This beautiful valley. And I installed
+Streams Re-flowing because it really
+does add so much
+to the environment. Um
+it's it's I mean, it does get a little
+bit buggy. Let's I mean it is a it is a
+mod, right?
+So there are problems. Like right here
+you can see
+it it does bug out a little bit
+sometimes, but I do think it's worth it
+because it just adds
+adds a lot. It really does. And this is
+all vanilla terrain. I just added
+streams reflowing and it does so much.
+But when I was seed scouting, I found
+this area. I thought it was really
+pretty.
+Uh and I
+when I spawned in, I actually spawned in
+way way way down here on this other
+continent.
+And then across all the way to the north
+is this
+massive continent. You cannot see it,
+but this whole area I don't know if you
+can see my mouse. This whole area
+what I'm on right now is an isthmus
+isthmus.
+It's a it's a very small
+piece of land connecting two bigger
+pieces of the continent.
+And I set my spawn to be this one little
+island here.
+And it's been a really fun time. I
+I have
+You know what? I'll talk about this more
+in another video, but yeah, I'm uh I'm
+going to move over the nether
+and I'm going to just start
+in this world and kind of start over.
+Unfortunately, I it it did suck because
+I built a lot in that world and it does
+me a lot to me. But
+I got to the point where
+I was having to do so much terraforming
+that it wasn't actually that I ended up
+just not building in the overworld.
+And I I didn't want to do that anymore.
+All right, let's go look at my animals
+and let me show you what I've been
+working on for Matcha.
+I've been doing a lot of bug fixes and
+um
+someone named Internet Hyena one day
+just pushed a random thing that she said
+or they said
+you know pigs in Matcha are pretty
+useless because meat isn't very useful.
+And I made it so that pigs dig up
+mushrooms since people need mushrooms.
+And it just unlocked something in my
+mind that was like
+oh my god, there is so much we can do
+with this system.
+And I really went in. I really just
+I tend to think that like you can't do
+much in data packs.
+I don't know why.
+But there really is a lot of
+possibilities, especially when you just
+want to bend the game, break it, bend it
+to your will. You can do that.
+Now this is Casey.
+He's chilling. I haven't let him loose
+yet because I have some chickens and
+even though he's
+he doesn't run away from me, I do think
+that he'll kill them.
+So I'm going to try and disable animal
+murder in the data pack and then
+I'll let him off the leash and let him
+run around, have fun with his friends.
+So let's go check out the animals.
+Um
+this is my little farm I made. You can
+see the grass here is getting a little
+bit crazy.
+And the cow's glowing. It's a debug
+thing. Don't worry about it. I guess
+I'll talk about it. I'm going to this
+design that I'm mentioning is is not
+finalized. I still have a lot to do.
+But let me go over the basics right now
+and then
+in a future video I'll really lay it out
+clearly. I'll talk about more of their
+interactions in a scripted way
+and probably revise a lot.
+So right now I have it so that chickens
+can
+Let me show you actually.
+All right, come here guys. Hello. Oh,
+you might have seen it. Okay.
+So he did do a little bit of pecking.
+Basically, instead of breeding animals
+normally
+you instead feed them
+stuff
+and they will lay eggs, whatnot.
+And chickens have the special ability of
+planting grass. So you see that this
+grass is kind of having control here.
+And that's just because the chickens
+will make grass grow.
+I needed a way to have grass grow on its
+own.
+And
+obviously it would be insane to put
+marker entities under each block and ask
+for it to do checks and things like
+that. So I just made it so that on a
+cooldown chickens will randomly grow
+grow grass, grow like grass blocks into
+short grass and short grass into tall
+grass.
+Now you can see it's not distributed
+very well, right? There's a lot of high
+grass places and it's not much in
+between.
+This is just because of the changes that
+Mojang made, the terrible changes Mojang
+made. And yes, I do think that they're
+terrible
+because there's no way for me to change
+it.
+Uh they're if you get like a little bit
+away from your animals, they just stop
+moving all together. Like I think if I
+were on the dock, they would just
+completely freeze.
+It's really really bad.
+And it's not a problem in vanilla. It is
+a very big problem here and I do not
+know a way to fix that.
+If you know of a way
+to enable animal pathing with data
+packs, only data packs, please let me
+know.
+Um
+it was a really it really hurt
+when I figured this out because
+it means that you have to babysit your
+animals for them to do anything, which I
+really don't want. Like I want to be
+able to be up on that hill while these
+guys are still within simulation
+distance and for them to actually walk
+around.
+Uh a lot of people were talking about or
+not a lot, like a couple people
+mentioned that this is like very normal.
+And yes, I agree it is very normal and
+it works in vanilla. It does not work in
+this. And it's a really big shame.
+But anyways, that's what the chickens
+do. If you want eggs, you'll have to
+give them access to grass. They will not
+peck on hoppers, right? I'm not going to
+give away too much. All I'll say is that
+all the chickens have different
+personalities
+and
+you can
+they it will affect what what they drop
+based on their personality types and how
+they behave.
+Pigs uh obviously dig up mushrooms. Hi
+guys.
+Which is really really useful for the
+data pack. This isn't very useful for
+if you're wondering, yes, I named him
+Box because I thought that was cute.
+This is not a
+this is not this would not be a useful
+feature for vanilla, right? Mushrooms
+are not that needed in vanilla, in my
+data pack,
+mushrooms are very important. How did
+you get in here, dude?
+So I needed a way in order to get more
+mushrooms to the player without
+Mushrooms can be really
+hard to grow.
+Um I guess let me show it off. I have
+some eggs.
+So pigs will
+will dig up things. Let me show you
+here.
+Yay. They turn the block into dirt and
+they will also if they are on mud,
+they will play in the mud and become
+muddy.
+So here's an example of that and they
+turn the mud into dirt.
+So I filled this mud miss pig pen up
+with mud a lot earlier and obviously the
+mud's been going away because the pigs
+have been digging on it and when they
+are muddy, they have special loot
+that they drop.
+And it's just been really fun. I've been
+having to come in and upkeep the farm.
+It's been so cute. And unlike all the
+other animals, I have to keep the pigs
+locked up in a pig pen because if they
+get out, they will eat
+my tomatoes and my carrots and my
+potatoes and make babies. So it's really
+not a good idea to let them walk around.
+You have to kind of be careful about
+that. Same with the chickens actually.
+They will eat the wheat crops. So I've
+had to keep the chickens away from the
+wheat and kind of
+funnel them into that area.
+Uh I've changed around the animals a
+little bit so that when you feed them,
+they'll stick around to where you last
+fed them unless there are some
+exceptions like I'll come show you here.
+One of these chickens, I think it's
+probably this one,
+is a mama chicken and this was her nest.
+Uh she made this and
+I guess it got updated so the the dry
+grass block broke, but she's always
+going to stay near her nest, right?
+She's not going to go wander around like
+all the other chickens are.
+So I don't have to worry about her
+getting into the wheat field or anything
+like that. But some other guys, you
+know, I got to make sure that they stay
+over here and they don't get too far
+towards the wheat. Which has been really
+fun. It's been like I've actually been
+having to
+think about the animals and their roles
+and yeah, it's it's been really good so
+far.
+Um there are obviously still some
+changes I need to make, but
+it really does help. Um let's talk about
+the cows.
+So the cows are Where did Connor go?
+The cows are a little bit different from
+the rest of the animals because they
+have a very large home range, right?
+They need a lot of space.
+They need a lot of space to graze.
+They're big animals, right?
+Um this is their trough here.
+And yes, this is a block you can place.
+It's it's just a cauldron and I put a
+block display entity or item display
+entity inside.
+Um Joseph is currently flashing,
+is glowing because he needs to he's
+hungry,
+I think. So
+that that's not going to be in the final
+product, but I was using that for debug
+purposes.
+Cows will eat.
+If you place a trough,
+they will come to the trough. Oh, look
+at that. He was very happy about that.
+Good.
+You place a trough. All the cows in the
+area see that the trough is placed and
+they will come to the trough.
+When they come to the trough, they're
+going to be hungry. Now you can't feed
+them. You have to let them eat
+themselves. So if you place down hay
+blocks, if you place down wheat, they
+can eat it and when they eat it, they'll
+be happy and they'll want to go away
+from the trough.
+If they aren't able to get away from the
+trough after they eat, they're going to
+be upset about it and they're going to
+be little babies. They're very picky.
+Uh
+so you have to let them be free and once
+they're free and they graze on some
+grass, they can be happy. Like we saw
+Joseph, he had a lot of hearts. That
+means he's happy. That means he's going
+to drop unique meat and that also means
+that he can produce more milk. So here's
+an example. Cows love glass bottles
+because they love to be milked.
+And each cow has an amount of milk
+before they go dry. Let me show you. How
+much do you have? Oh my god, Joseph.
+Oh my god.
+[snorts] He's
+He's been here for a while, I guess.
+He's been munching on a bunch of grass,
+so
+he's nowhere near dry.
+Uh they get one milk bottle per grass
+they munch on, and they get nine milk
+bottles when they eat a hay block.
+I don't know where Connor went.
+He's probably way far away. I need to go
+grab him, huh? Again, a problem with his
+pathing is that if they go out of the
+player range, they stop altogether. So
+until I go and grab him, he's not going
+to come back home.
+Come here, buddy.
+And I think there's also some issues
+with the the home system that I have to
+work out some bugs for.
+Um but I do think that's currently
+what's happening.
+Cuz Joseph seems to be fine. It's just
+Connor that's being a little about
+it.
+Let me feed him so he stays nearby.
+Hey Connor. Aw, I love you too, buddy.
+Here.
+He should stay nearby now. Oh, I did
+want to ask any German viewers if if
+y'all are here, I wanted your help a
+little bit. So I noticed that
+poppies are called mon,
+like or mon, I guess, would be the
+singular.
+Monnen? I don't know what the plural
+would be.
+I named one of the pigs Monchen
+because I wanted it to be like
+he was or she's like my little baby, my
+little poppy,
+but also I wanted it to sound like
+affectionate. So I just added the chen
+in the end. Let me know if that works. I
+don't know if it works. Um
+but I I thought it might be cute. And
+also I named him Casa Casa
+because I I just thought of that word
+and found out that it meant box.
+I don't know if that works either. It is
+a pig, but I'm trying to think if there
+were any other changes to the animals,
+but I'm not sure there were. I think
+it's just that simple. Cows eat grass,
+chickens plant grass, chickens make eggs
+and stuff, and pigs eat everything.
+And
+they play in the mud. I don't want to
+give away too much right now. I just
+kind of wanted to show you guys an
+example of what that ecology-based
+design might look like, especially in a
+data pack where we're so limited
+by like we can't mess with the AI,
+right? We can only do a couple of
+things, and this was my best attempt to
+do that. But it seems to be working. It
+definitely feels like the Oh, see look,
+he ate way too close to the trough, and
+now he's sad cuz he's being he's being
+stupid and he isn't running away from
+it.
+Oh yeah, I changed the sugarcane model.
+Uh I'm messing around with it. I don't
+know how in love with it I am. If you do
+look up sugarcane online, you'll see it
+looks kind of similar to this.
+I couldn't get it exactly how I wanted
+to based on some of the limitations
+Minecraft has, but
+I do think it looks It certainly looks
+interesting. And it definitely looks
+different from bamboo now.
+But yeah,
+I'm going to have to sit with it. I do
+think I like it, but you know,
+we'll see.
+Hey Casey. Oh, I guess I should say I
+don't know what to do
+Oh, whoops. I don't know what to do
+about the sheep.
+I don't know how to make them
+interesting in the same way as the other
+animals. I did struggle with the cows
+too. They're a little bit picky,
+and uh
+yeah. So if you have ideas for sheep,
+let me know like what they would do for
+the local ecology. I I I am interested.
+I've been getting some ideas about
+goats. Um someone on the on the GitHub
+mentioned that, so I I am
+I'm thinking about goats, and I want to
+work on goats.
+You can still breed animals, by the way.
+I should mention that. Like for cows,
+instead of using wheat, you use hay
+bales. For chickens, you just crack
+their eggs or you let them eat some
+wheat. For pigs, you know,
+you can use golden carrots or whatever.
+Oh, I did I did want to show one more
+thing about the pigs that I added that I
+thought was cute.
+Pigs will [laughter]
+If you want to clean off the mud, you
+can with a water bottle. I don't want to
+because I like them when they're muddy,
+but I'll just show you. They get a
+little happy and make splash. I'm also
+running into an issue I would love help
+with.
+Um
+cows will not eat the buckets. I set
+this I set buckets to be cow food,
+but they won't eat it. So let me show
+you.
+Hey Joseph, come here buddy.
+So I milk him
+and he doesn't eat the bucket. It just
+lets me milk the bucket, unfortunately.
+So if you know a way around that, please
+let me know.
+I would like the cows to actually eat
+the buckets entirely.
+I don't know if it's a Minecraft bug or
+not. I'm hesitant to report those
+things. We did find a genuine Minecraft
+bug. If you make mud by splashing water
+on it in Matcha, because they stack,
+it'll duplicate the glass bottle. So
+here I'll show you.
+See, it gives me two glass bottles.
+That's uh
+that is a genuine Minecraft bug. That's
+not my fault, which is pretty cool and I
+haven't reported it yet because [music]
+I'm scared and I don't want to make
+Mojang mad.
+[laughter]
+[snorts] I really do admire the devs,
+guys.
+I think that Microsoft just has a a hold
+over them that they can't shake free of
+and until they manage to get their
+company back from them. Well, this was
+fun. Thank you guys for chatting with me
+and
+let me know if you have any ideas. Let
+me know if especially on the GitHub
+actually would be the best like I don't
+mind if you comment, but if you do have
+more than, you know, a little sentence,
+if you
+want to expand on it, I'd go to the
+GitHub.
+Um
+and if you have assets or anything you
+want to donate, any code you want to
+donate, I would also go to the GitHub
+and look there.
+I've been having a lot of fun.
+Look at him, he's happy.
+Ugh, it really does add a lot of
+character to these guys when they have
+these like unique interactions, [music]
+when they get picky and when they're
+annoying, you know. It's just fun. All
+right, hopefully I'll have a diary out
+next. We'll see what happens. It's going
+to be very busy
+because of the holidays are approaching
+and I'm not going to have power for the
+next two days.
+So I'm going to be pretty behind.
+I will be lucky if I can get this video
+posted today
+uh cuz if not it's going to have to wait
+another week cuz after the two days of
+no power I'm going to work for the next
+week. So
+All right guys, thank you guys for
+hanging out with me. I will see you
+later. Should I do the thing where I'm
+like oh bye.
